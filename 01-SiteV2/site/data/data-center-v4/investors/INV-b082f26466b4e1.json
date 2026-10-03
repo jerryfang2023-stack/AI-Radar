@@ -234,24 +234,24 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中信金石 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
+      "summary": "公开融资报道核实了其在具身智能、基础模型和智能眼镜公司的多项投资活动。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 本轮参投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "参与因克斯 B 轮融资。",
           "source_id": "FISRC-d0c3dca85d845330"
         },
         {
-          "description": "融资来源记录：北京面壁智能科技股份有限公司 · 历史轮次未披露 · 2026-02 · 2026年2月D轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "跟投面壁智能 D 轮融资。",
           "source_id": "FISRC-ca5c9f62e4d3f2f3"
         },
         {
-          "description": "融资来源记录：雷鸟创新 · 轮次未披露 · 2026-01-05 · 本轮领投 · 超 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "参与雷鸟创新新一轮融资。",
           "source_id": "FISRC-65e5af72dd9fd1d7"
         }
       ],
@@ -260,29 +260,33 @@
         {
           "source_id": "FISRC-d0c3dca85d845330",
           "source_url": "https://news.pedaily.cn/202609/569015.shtml",
-          "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
-          "source_content_hash": "e86bd6fffaf894b4",
-          "quote": "本轮投资方包括中信金石、纳爱斯、苏创投、华睿投资、南京交控、华瑞创投。",
-          "quote_hash": "6c4c7e786af8f1c6a645b416c03de78fe56dc7c68a3fec952cdda6d739fdd0b4"
+          "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组_投资界",
+          "source_content_hash": "5fac31e07a3b7ad3ec986e405b80a0ee5dba6f7b66ad8310aa0209eae57fe579",
+          "quote": "克斯智能科技有限公司（以下简称：因克斯）成立于2022年，是一家专注于机器人动力系统核心技术研发与制造的高科技企业。投资界（ID：pedaily2012）9月15日消息，因克斯 完成超3亿元人民币B轮融资。本轮投资方包括中信金石、纳爱斯、苏创投、华睿投资、南京交控、华瑞创投。 同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。 明论资本担任长期独 家财务顾问。 因克斯持续深耕具身智能关节模组，并逐步从核心零部件向整机硬件解决方案延伸。本轮融资将进一步支持公司在产品研发、制造能力及业务拓展方面的持续投入。 据公司官网，公司核心技术团队来自南京航空航天大学、华中科技大学等。团队自2019年起，经过3年技术积累，实现行星减速器、小型摆线减速器及高性能无刷电机驱动器等核心部件的自主研发与规模化",
+          "quote_hash": "692d398a486854ec55ac1d650895e5325ee9d8cabf788c9ccc7bee5c5fc31030"
         },
         {
           "source_id": "FISRC-ca5c9f62e4d3f2f3",
           "source_url": "https://news.pedaily.cn/202607/566303.shtml",
-          "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
-          "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
-          "quote": "由中国电信领投、中信金石、中信私募跟投",
-          "quote_hash": "fdf9af6cf9ddc851e8a4a990fb82a4b9f616486e204a050f5724acb62a9bead6"
+          "source_title": "首发| 面壁智能融资超50亿，估值超200亿_投资界",
+          "source_content_hash": "ce889fe2e46ae92f26474f083a9a92298409d26606978723c0b47684e796b06f",
+          "quote": "国中资本、清控金信联合投资了面壁智能新一轮融资。同年12月，面壁智能完成数亿元融资，由京国瑞、国科投资、中金保时捷基金、米聚资本与和基投资共同参与。 进入2026年，面壁智能在春节之后迅速完成数亿元融资，由中国电信领投、中信金石、中信私募跟投。今年4月，再度获得新一轮数亿元融资，由深创投和汇川产投联合领投，道禾长期投资、国泰君安创新投、武岳峰科创等跟投。 伴随着此次新融资浮出水面，面壁智能估值超过200亿元后，标志其已站在全新发展节点之上，摆脱了早期创业企业的诸多不确定性，具备了对接二级市场、接受公开市场检验的核心资质。 此刻，政策信号浮现——不久前，中国证监会主席吴清在陆家嘴论坛上明确提出，扩大第五套上市标准适用范围至人工智能领域，积极支持优质人工智能大模型企业上市。 毫无疑问，这一政策打通了国内优质大模型企",
+          "quote_hash": "3dabe6e72bb345fba7f79ea806ec485c8455d30492af5f92b48875d01db374d7"
         },
         {
           "source_id": "FISRC-65e5af72dd9fd1d7",
           "source_url": "https://www.ithome.com/0/910/387.htm",
-          "source_title": "雷鸟创新获移动、联通旗下基金投资，新一轮融资规模超 10 亿",
-          "source_content_hash": "55f6b3711b400c2514c71ca290d985e8b760d997f355e1fbf3782df15e43a5be",
-          "quote": "本轮融资由中国移动链长基金与中信金石（旗下茅台金石、金石成长等基金）领投",
-          "quote_hash": "76fd28339449e22791553783ee384b9f17c0279ae426975cd81299720810cd08"
+          "source_title": "雷鸟创新获移动、联通旗下基金投资，新一轮融资规模超 10 亿 - IT之家",
+          "source_content_hash": "500d94ed42be141f56afea88f63d72022a6e42b8228aa2cb2bf2c19779d24091",
+          "quote": "5 8:42:29 来源：之家网站 作者： - 责编： - 评论： 2026 年 1 月 5 日 —— 全球领先消费级 AR 品牌雷鸟创新（RayNeo）宣布近期完成新一轮超 10 亿元融资。本轮融资由中国移动链长基金与中信金石（旗下茅台金石、金石成长等基金）领投，中国联通旗下联创创新基金等机构共同参与。 此次融资标志着国内运营商首次战略投资智能眼镜赛道，意味着 AR 终端正式进入国家通信基础设施的战略视野。持续的资金注入，将为雷鸟创新的技术研发与全球市场拓展提供强劲动能，并推动公司加速跻身独角兽企业行列。 同期，雷鸟创新预告将于 CES 2026 期间展示首款搭载 eSIM 的 AR 智能眼镜“雷鸟 X3 Pro Project eSIM”，产品采用双目全彩 MicroLED 显示方案、集成了 eSIM 通信",
+          "quote_hash": "082fabdcadfbdd85ac2277db18978d2bf834586e64f739f6340048d06f1e825f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

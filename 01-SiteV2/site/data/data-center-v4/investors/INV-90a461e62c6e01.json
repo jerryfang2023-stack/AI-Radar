@@ -201,21 +201,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "合肥高投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
+      "summary": "合肥高投官方项目新闻介绍其参与智象未来 B 轮融资。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：九川智能 · 历史轮次未披露 · 天使轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9d452499b4ff68fd"
+          "description": "合肥高投官方项目新闻披露其参与智象未来 B 轮融资。",
+          "source_id": "FISRC-9670ee7c1fec7480"
         },
         {
-          "description": "融资来源记录：智象未来 · 历史轮次未披露 · B轮参与机构。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9670ee7c1fec7480"
+          "description": "融资来源记录：九川智能 · 历史轮次未披露 · 天使轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9d452499b4ff68fd"
         },
         {
           "description": "融资来源记录：中科类脑 · 历史轮次未披露 · 天使轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -225,20 +225,20 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "FISRC-9670ee7c1fec7480",
+          "source_url": "https://hfgxt.com.cn/index.php?a=show&c=content&id=3131",
+          "source_title": "超5亿元融资！智象未来完成B轮融资-企业新闻-新闻资讯-合肥高新创业投资管理合伙企业（有限合伙）",
+          "source_content_hash": "8bc3ef7257454ddb71599c7ea47d860aca24bd0cefa84c787bfa81851144b773",
+          "quote": "2026/04/16 4月15日，合肥高新区投资平台合肥高投投资企业智象未来（合肥）信息技术有限公司（简称“智象未来”）宣布完成超5亿元B轮融资，本轮融资由东方富海、峰华资本、安徽省产投、华安嘉业、合肥产投、兴泰创投、合肥高投等头部投资机构和国资机构联合参与。融资资金将主要用于公司独创的下一代原生全模态世界模型研发、企业服务智能体的产品建设以及全球市场拓展。 智象未来依托自主研发的“智象多模态大模型”构建技术壁垒——该模型是国内首批完成模型与算法双备案的多模态大模型，凭借全球首创的扩散自回归架构及稀疏扩散Transformer（Sparse DiT）架构，在生成质量与效率之间实现最优平衡，技术水平位居全球前列，高效破解人工智能技术落地“最后一公里”难题。 当前，智象未来",
+          "quote_hash": "48377ba8c69c6d0b06be1ab5d92139bb9d27627a936f0dbecf761485915779eb"
+        },
+        {
           "source_id": "FISRC-9d452499b4ff68fd",
           "source_url": "https://m.sohu.com/a/1064729786_120133855?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
           "source_title": "投资高新 | 九川智能完成近亿元A轮融资",
           "source_content_hash": "26f3b6c777913b5cb3b750f204504bb50b4af4ca74a51d55cb35e24e718ec782",
           "quote": "此前，高新区国资平台合肥高投已在天使轮阶段以1500万元资金予以支持",
           "quote_hash": "b9f41d1d316983b1308edfceef4774459220b1adb286edfc73cf3a79543bd54a"
-        },
-        {
-          "source_id": "FISRC-9670ee7c1fec7480",
-          "source_url": "https://hfgxt.com.cn/index.php?a=show&c=content&id=3131",
-          "source_title": "超5亿元融资！智象未来完成B轮融资-企业新闻-新闻资讯-合肥高新创业投资管理合伙企业（有限合伙）",
-          "source_content_hash": "9b3603000321e253",
-          "quote": "4月15日，合肥高新区投资平台合肥高投投资企业智象未来（合肥）信息技术有限公司（简称“智象未来”）宣布完成超5亿元B轮融资，本轮融资由东方富海、峰华资本、安徽省产投、华安嘉业、合肥产投、兴泰创投、合肥高投等头部投资机构和国资机构联合参与。",
-          "quote_hash": "de0c10abaf7f677dac65ec33c373785963c0a4250b2163affb6518bde3f24c4e"
         },
         {
           "source_id": "FISRC-4cd330eaa5f3d5fc",
@@ -249,7 +249,11 @@
           "quote_hash": "55d62889264315784a609c0d0191e5d48172a5fc184357bc2e23ecc6261867b1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

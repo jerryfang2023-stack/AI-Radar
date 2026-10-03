@@ -227,21 +227,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中国移动 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
+      "summary": "公开融资报道将中国移动列为月之暗面 2026 年 5 月融资的参与方。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Moonshot AI · D轮 · 2026-05-19 · 本轮参投 · 5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-aa17d1f1d8d04ffb"
+          "description": "参与月之暗面 2026 年 5 月融资。",
+          "source_id": "FISRC-c268e82669700804"
         },
         {
-          "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-05-07 · 本轮参投 · 约20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c268e82669700804"
+          "description": "融资来源记录：Moonshot AI · D轮 · 2026-05-19 · 本轮参投 · 5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa17d1f1d8d04ffb"
         },
         {
           "description": "融资来源记录：Moonshot AI · 历史轮次未披露 · 2026-05-02 · 2026年5月20亿美元融资参投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -251,20 +251,20 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "FISRC-c268e82669700804",
+          "source_url": "https://www.nbd.com.cn/articles/2026-05-07/4381686.html",
+          "source_title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元 | 每经网",
+          "source_content_hash": "e4eb4471be0871cab7a91ffe50ce50689ff0ef06ecfb08a75ab62c1d7421c10b",
+          "quote": "过200亿美元 每日经济新闻 2026-05-07 09:38:08 每经AI快讯，5月7日，据华峰资本官微消息，月之暗面（Kimi）已完成新一轮约20亿美元融资，投后估值超过200亿美元。本轮由美团龙珠领投，水木资本、中国移动、CPE（中信产业基金）等参投。华峰资本担任本次交易部分买方的财务顾问，在交易结构设计、投资方匹配及谈判中提供支持。 如需转载请与《每日经济新闻》报社联系。 未经《每日经济新闻》报社授权，严禁转载或镜像，违者必究。 读者热线：4008890008 特别提醒 ：如果我们使用了您的图片，请作者与 本站联系 索取稿酬。如您不希望作品出现在本站，可联系我们要求撤下您的作品。 上一篇文章 光伏设备板块早盘拉升，安彩高科直线涨停 返回每经网首页 下一篇文章 日本东证指数上涨3%至3840.63点 相",
+          "quote_hash": "969e110b7dfeb9659c2a4978ea48277c1cb5f07bf8b8dfec1a6b62325b526219"
+        },
+        {
           "source_id": "FISRC-aa17d1f1d8d04ffb",
           "source_url": "https://www.ithome.com/0/952/336.htm",
           "source_title": "月之暗面 Kimi 融资获国资加持，国智投、中国移动等央企巨头入场",
           "source_content_hash": "f553f501ef97ffe22a7ef739bbbbd513f64181437a09a8c1838a13bb3a75299e",
           "quote": "已加入国智投、北京人工智能基金等多家国资机构及中国移动等央企巨头",
           "quote_hash": "a0b8d621ed141fc38c7428f5472b750ac635b5ef9127b7a09c6447f0e9eb22d8"
-        },
-        {
-          "source_id": "FISRC-c268e82669700804",
-          "source_url": "https://www.nbd.com.cn/articles/2026-05-07/4381686.html",
-          "source_title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
-          "source_content_hash": "507968dd939d15c9e72b909ed7776ff0f48463fc1f6fbc9ce4b06d5da7eee3b2",
-          "quote": "水木资本、中国移动、CPE（中信产业基金）等参投",
-          "quote_hash": "c6adb2619bd02d40f0c0d511a0c184b7dee0d9e883a01905faea644191911821"
         },
         {
           "source_id": "FISRC-773362f4e07cd598",
@@ -275,7 +275,11 @@
           "quote_hash": "dcee290bad1bf3693aeb96575e5c165e1082ae7c245dd86ccef1ab0909600b8b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

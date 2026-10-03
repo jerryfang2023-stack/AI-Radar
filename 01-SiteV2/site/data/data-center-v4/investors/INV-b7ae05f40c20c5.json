@@ -232,14 +232,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Goldman Sachs 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
+      "summary": "TechCrunch 报道称 Goldman Sachs 参与 Prometheus 的 Series B 融资；NVIDIA 的融资平台合作不计作股权投资。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "参与 Prometheus Series B 融资。",
+          "source_id": "PROFILE-a751172959e7446d3988"
+        },
         {
           "description": "融资来源记录：NVIDIA · 基础设施融资 · 2026-08-15 · 本轮参投 · 超过 5000 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5514041be03e64ae"
@@ -255,6 +259,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-a751172959e7446d3988",
+          "source_url": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
+          "source_title": "Jeff Bezos&#039;s Prometheus raises $12B to build an &#039;artificial general engineer&#039; for the physical world | TechCrunch",
+          "source_content_hash": "251b701137bc445457f0f7e398e223a96bf888b9d46c997a88821f16cd655be9",
+          "quote": "raised $12 billion at a $41 billion valuation. The new funds came from Bezos, as well as from JPMorgan Chase, Goldman Sachs, and BlackRock, among others. This is the second fundraise round for Prometheus, which launched late last year with an initial raise of $6.2 billion, according to CNBC . Prometheus is building what it calls an “artificial general engine",
+          "quote_hash": "8251d317181480422a86d5510b04d0d114feba874df9a14d4dc5848a63e26e9a"
+        },
         {
           "source_id": "FISRC-5514041be03e64ae",
           "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Partners-With-Apollo-BlackRock-Blackstone-Brookfield-Goldman-Sachs-and-KKR-to-Establish-AI-Compute-Infrastructure-Financing-Platforms-to-Mobilize-Over-500-Billion-of-Third-Party-Capital/default.aspx",
@@ -280,7 +292,11 @@
           "quote_hash": "bedca6a5faa504970ac18d04c5590f3931153bc7e8cf49cb3dcaf62052477c13"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

@@ -191,14 +191,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Avenir 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
+      "summary": "Cognition 官方 Series E 公告将 Avenir 列为既有投资方及本轮参与方。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "参与 Cognition Series E。",
+          "source_id": "PROFILE-e52b297616faddd1bbfc"
+        },
         {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
@@ -210,6 +214,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-e52b297616faddd1bbfc",
+          "source_url": "https://cognition.com/blog/series-e",
+          "source_title": "Do it all with Devin: Announcing our Series E | Cognition",
+          "source_content_hash": "f2d5c7d50230b8017e9320f0a8344cbb1155c1483ca6977b8925a820177ab95e",
+          "quote": "ew investors Andreessen Horowitz and Accel, alongside existing investors Founders Fund, General Catalyst, and Avenir. Other investors in the round include Benchmark, Bessemer, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, Atreides, Valor, T. Rowe Price, Lux, 8VC, D1, 137 Ventures, DST, Positive Sum, HOF, Soma, BoxGroup, Battery, R",
+          "quote_hash": "89cde15a907adfa07eea11692b4dca6b058052091feb960b7e7475f70e70a7ab"
+        },
         {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
@@ -227,7 +239,11 @@
           "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
