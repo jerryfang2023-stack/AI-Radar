@@ -140,31 +140,14 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "目前只核实到 Arrakis 2026 年融资公告中的投资者身份和 OpenAI 职务，未补充完整履历或教育经历。",
-      "summary": "Arrakis 的 2026 年融资公告将 Olivier Godement 列为支持该公司的科技行业人士，并称其为 OpenAI 商业产品负责人。本档案只记录这项公开活动及公告所载职务。",
-      "current_roles": [
-        {
-          "title": "Head of business products",
-          "organization": "OpenAI",
-          "source_id": "olivier_arrakis"
-        }
-      ],
-      "career": [],
-      "education": [],
-      "experience_summary": "Arrakis 公告将 Olivier Godement 介绍为 OpenAI 商业产品负责人。",
-      "facts": [
-        {
-          "field": "investment_activity",
-          "label": "公开投资活动",
-          "value": "Arrakis 2026 年公告将 Olivier Godement 列入该公司支持者；未披露个人投资金额。",
-          "source_id": "olivier_arrakis"
-        }
-      ],
+      "coverage_note": "Arrakis 2026-07-22 的融资公告为公司发布的新闻稿，经 Business Wire 发布；它只证实该时点的职务描述和一项投资支持活动，不构成完整人物履历。",
+      "summary": "Arrakis 的 2026 年融资新闻稿将 Olivier Godement 描述为 OpenAI Business Products 负责人，并将其列为支持 Arrakis 融资的技术行业人士之一。本条只记录新闻稿发布时的信息。",
+      "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "Arrakis 2026 年融资公告将 Olivier Godement 列为公司支持者；公告未披露其个人投资金额。",
-          "source_id": "olivier_arrakis"
+          "description": "Arrakis 于 2026-07-22 发布的融资新闻稿将 Olivier Godement 列为公司融资的支持者之一；该公告没有披露其个人出资额。",
+          "source_id": "arrakis-olivier-backer-2026-10-03"
         },
         {
           "description": "融资来源记录：Arrakis · A轮 · 2026-07-22 · 本轮天使投资人 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -172,13 +155,25 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "OpenAI",
+          "title": "Head of Business Products（新闻稿发布时的描述）",
+          "period": "截至 2026-07-22 新闻稿发布时；起任时间未披露",
+          "description": "Arrakis 的融资公告以此职务介绍 Olivier Godement。",
+          "source_id": "arrakis-olivier-backer-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "本条只依据 Arrakis 融资公告记录一项投资支持活动及其发布时列出的 OpenAI 职务。",
       "sources": [
         {
-          "source_id": "olivier_arrakis",
-          "source_url": "https://via.ritzau.dk/pressemeddelelse/15058492/arrakis-comes-out-of-stealth-with-dollar38m-to-help-industrial-enterprises-compete-in-the-ai-era?publisherId=90456",
-          "quote": "Olivier Godement, OpenAI’s Head of business products",
+          "source_id": "arrakis-olivier-backer-2026-10-03",
+          "source_url": "https://via.tt.se/pressmeddelande/4480593/arrakis-comes-out-of-stealth-with-dollar38m-to-help-industrial-enterprises-compete-in-the-ai-era?publisherId=259167",
           "source_title": "Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | Business Wire",
-          "source_content_hash": "f6c5007d0b9e6329b9ceee78aa5ccbacf70f5a81d122cccd2ef149815d655743",
+          "source_content_hash": "367205d62aa60cdf3630bd3a36bdd1d3a01dc4eaba277731409537348eeec378",
+          "quote": "Olivier Godement, OpenAI’s Head of business products",
           "quote_hash": "da6ace4b35a3101932342706f84fe6eba8fb31bc0e29b93e50e40c45059bd529"
         },
         {
@@ -190,7 +185,7 @@
           "quote_hash": "31b35d92a4b8a42a9b1fba4d971e7ac3d8bbcc7ef89ffc4a0fe61c7e641b9764"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

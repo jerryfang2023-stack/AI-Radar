@@ -178,34 +178,14 @@
       }
     ],
     "public_profile": {
-      "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
       "profile_type": "person",
-      "coverage_note": "Koen Bok 的个人官网自述其目前参与 Framer，并与 Jorn 运营早期投资基金 Festina；Modem 官方融资公告将 Koen Bok 与 Jorn van Dijk 列入天使投资人名单。",
-      "summary": "Koen Bok 的个人官网自述其在 Framer 工作，并与 Jorn 运营早期基金 Festina。Modem 官方融资公告将 Koen Bok 与 Jorn van Dijk 列入天使投资人名单；本档案按本人公开简介记录其当前关联。",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "根据 Koen Bok 本人官网整理；页面未给出职务起止年份，故不推定任期。",
+      "summary": "Koen Bok 是 Framer 的创建者之一，也是早期基金 Festina 的共同管理者之一；其个人网站称他曾在 Facebook 从事产品设计，并共同创办 Sofa。",
       "facts": [],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [
-        {
-          "organization": "Framer",
-          "title": "个人官网自述目前在 Framer 工作",
-          "source_id": "koen_self_bio"
-        },
-        {
-          "organization": "Festina",
-          "title": "个人官网自述与 Jorn 运营早期基金",
-          "source_id": "koen_self_bio"
-        }
-      ],
-      "career": [],
-      "education": [],
-      "experience_summary": "已核实资料包括本人对 Framer 与 Festina 的自述，以及 Modem 官方公告披露的天使投资活动；未补写未经来源支持的任职日期或基金规模。",
       "track_record": [
-        {
-          "description": "Modem 官方融资公告将 Koen Bok 与 Jorn van Dijk 列入天使投资人名单。",
-          "source_id": "modem_angel"
-        },
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮天使投资人 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
@@ -215,30 +195,45 @@
           "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "在 Framer 工作（个人简介未列正式职衔）",
+          "organization": "Framer",
+          "source_id": "koen-bok-personal-site-2026-10-03"
+        },
+        {
+          "title": "共同管理早期基金（个人简介表述）",
+          "organization": "Festina",
+          "source_id": "koen-bok-personal-site-2026-10-03"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Facebook",
+          "title": "Product Designer",
+          "period": "任职起止年份未披露",
+          "description": "本人简介称曾负责 Messages、Ads 与 Video 产品设计。",
+          "source_id": "koen-bok-personal-site-2026-10-03"
+        },
+        {
+          "organization": "Sofa",
+          "title": "Co-founder",
+          "period": "任职起止年份未披露",
+          "description": "本人简介称曾共同创办 Sofa。",
+          "source_id": "koen-bok-personal-site-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "个人简介描述其经历涵盖网页产品、产品设计、创业及早期投资；页面没有列出学历。",
       "sources": [
         {
-          "source_id": "koen_self_bio",
+          "source_id": "koen-bok-personal-site-2026-10-03",
           "source_url": "https://koenbok.com/",
           "source_title": "Koen Bok",
           "source_content_hash": "5add6cd29a080202e171885da275ddb2d2be0e18fa8c088d723db4a31da94fac",
-          "quote": "I also run an early stage fund Festina with Jorn",
-          "quote_hash": "f2fa5b6fb71807fa20a2adfaca947a8ce6f6eb4b419f1d7ae6091d2fd8b20af9"
-        },
-        {
-          "source_id": "framer_feature",
-          "source_url": "https://www.framer.com/blog/koen-jorn-framer-reloaded-first-of-kind/",
-          "source_title": "Koen &amp; Jorn: Framer Reloaded — First of Kind",
-          "source_content_hash": "6232048e902ec2407d27575d6e90b59fe555678de187a6c9a297254002155bce",
-          "quote": "In this First of Kind conversation, Koen Bok and Jorn van Dijk reflect on how Framer evolved from a prototyping tool into a full website platform",
-          "quote_hash": "6655e299456be43a4ff54159e63f438c3d9e352de8a757f9821b925934d084e6"
-        },
-        {
-          "source_id": "modem_angel",
-          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
-          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
-          "source_content_hash": "1fcd6e8a5bd85e1de48de50d890272ea31481d5ec39d8296080c54e61386027b",
-          "quote": "Koen Bok and Jorn van Dijk (Framer)",
-          "quote_hash": "6924052e4067eb4a2eeeb8542068125fecde1b62dfdd7427afd77f9367652548"
+          "quote": "I also run an early stage fund Festina with Jorn .",
+          "quote_hash": "d72e6c17c0134451f80a67ae67bad0d83ea40cf4a7cac6d5099ad571557fa809"
         },
         {
           "source_id": "FISRC-ce83b857608dabeb",

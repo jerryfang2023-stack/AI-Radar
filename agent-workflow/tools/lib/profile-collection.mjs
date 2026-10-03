@@ -24,13 +24,17 @@ export class ProfileQueue {
       if(path.dirname(parent)===parent)break;
     }
     this.clock=clock;this.db=new DatabaseSync(path.join(this.stateDir,'queue.sqlite'));
-    this.db.exec(`PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;
-      CREATE TABLE IF NOT EXISTS jobs (key TEXT PRIMARY KEY, id TEXT NOT NULL, collection TEXT NOT NULL, lane TEXT NOT NULL, payload TEXT NOT NULL, priority INTEGER NOT NULL, base_hash TEXT NOT NULL, state TEXT NOT NULL DEFAULT 'pending', worker TEXT, token TEXT, lease_until INTEGER, attempts INTEGER NOT NULL DEFAULT 0, result TEXT, reviewer TEXT, error TEXT, updated INTEGER NOT NULL);
+    this.db.exec(`PRAGMA busy_timeout=5000; PRAGMA journal_mode=WAL;
+      CREATE TABLE IF NOT EXISTS jobs (key TEXT PRIMARY KEY, id TEXT NOT NULL, collection TEXT NOT NULL, lane TEXT NOT NULL, payload TEXT NOT NULL, priority INTEGER NOT NULL, base_hash TEXT NOT NULL, state TEXT NOT NULL DEFAULT 'pending', worker TEXT, token TEXT, lease_until INTEGER, lease_ms INTEGER NOT NULL DEFAULT 900000, attempts INTEGER NOT NULL DEFAULT 0, result TEXT, reviewer TEXT, error TEXT, updated INTEGER NOT NULL);
       CREATE TABLE IF NOT EXISTS events (seq INTEGER PRIMARY KEY, at INTEGER NOT NULL, job_key TEXT, event TEXT NOT NULL, detail TEXT);
       CREATE TABLE IF NOT EXISTS captures (url TEXT PRIMARY KEY, content_hash TEXT, captured_at INTEGER, title TEXT, lease_until INTEGER, token TEXT);
       CREATE TABLE IF NOT EXISTS capture_versions (url TEXT NOT NULL, content_hash TEXT NOT NULL, captured_at INTEGER NOT NULL, title TEXT NOT NULL, PRIMARY KEY(url,content_hash));
       INSERT OR IGNORE INTO capture_versions SELECT url,content_hash,captured_at,title FROM captures WHERE content_hash IS NOT NULL AND captured_at IS NOT NULL AND title IS NOT NULL;
       CREATE TABLE IF NOT EXISTS locks (name TEXT PRIMARY KEY, token TEXT NOT NULL, lease_until INTEGER NOT NULL);`);
+    const jobColumns=new Set(this.db.prepare('PRAGMA table_info(jobs)').all().map(row=>row.name));
+    if(!jobColumns.has('lease_ms'))try{this.db.exec('ALTER TABLE jobs ADD COLUMN lease_ms INTEGER NOT NULL DEFAULT 900000');}catch(error){
+      if(!this.db.prepare('PRAGMA table_info(jobs)').all().some(row=>row.name==='lease_ms'))throw error;
+    }
     const ajv=new Ajv({allErrors:true,strict:false});addFormats(ajv);this.validate=ajv.compile(readJson(path.join(this.repo,'agent-workflow/product/public-entity-profiles-v1.schema.json')));
   }
   close(){this.db.close();}
@@ -38,18 +42,24 @@ export class ProfileQueue {
   event(key,event,detail={}){this.db.prepare('INSERT INTO events(at,job_key,event,detail) VALUES(?,?,?,?)').run(this.clock(),key,event,JSON.stringify(detail));}
   source(){return readJson(path.join(this.repo,PROFILE_FILE));}
   seed(backlog){const source=this.source();return this.transaction(()=>{
-    let added=0;
+    let added=0,requeued=0;
     const lanes=[['pending_investor_research','institutions','research'],['pending_people_research','people','research'],['pending_identity_verification','institutions','identity']];
     for(const [field,collection,lane] of lanes)for(const row of backlog[field]||[]){
       const current=source[collection]?.[row.id];if(current?.coverage_status==='researched')continue;
       const key=`${collection}:${row.id}`;const priority=lane==='research'?1000+(row.website?100:0)+Math.min(row.activity_count||0,500):0;
-      const result=this.db.prepare(`INSERT INTO jobs(key,id,collection,lane,payload,priority,base_hash,updated) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(key) DO UPDATE SET payload=excluded.payload,priority=excluded.priority,base_hash=excluded.base_hash,updated=excluded.updated WHERE jobs.state='pending'`).run(key,row.id,collection,lane,JSON.stringify(row),priority,digest(current),this.clock());added+=Number(result.changes);
+      const existing=this.db.prepare('SELECT state FROM jobs WHERE key=?').get(key);
+      if(existing?.state==='integrated'){
+        this.db.prepare("UPDATE jobs SET lane=?,payload=?,priority=?,base_hash=?,state='pending',worker=NULL,token=NULL,lease_until=NULL,result=NULL,reviewer=NULL,error=NULL,updated=? WHERE key=?").run(lane,JSON.stringify(row),priority,digest(current),this.clock(),key);
+        this.event(key,'requeued_incomplete_coverage',{lane});requeued++;added++;
+      }else{
+        const result=this.db.prepare(`INSERT INTO jobs(key,id,collection,lane,payload,priority,base_hash,updated) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(key) DO UPDATE SET payload=excluded.payload,priority=excluded.priority,base_hash=excluded.base_hash,updated=excluded.updated WHERE jobs.state='pending'`).run(key,row.id,collection,lane,JSON.stringify(row),priority,digest(current),this.clock());added+=Number(result.changes);
+      }
     }
     for(const row of this.db.prepare("SELECT key,id,collection FROM jobs WHERE state IN ('pending','retry','leased','blocked')").all()){
       const profile=source[row.collection]?.[row.id];
       if(profile?.coverage_status==='researched')this.db.prepare("UPDATE jobs SET state='integrated',result=?,token=NULL,worker=NULL,lease_until=NULL,updated=? WHERE key=?").run(JSON.stringify(profile),this.clock(),row.key);
     }
-    this.event(null,'seed',{rows:added});return this.status();
+    this.event(null,'seed',{rows:added,requeued});return this.status(backlog);
   });}
   claim(worker,{limit=10,leaseMs=900000,lane='research'}={}){
     if(!worker||!Number.isInteger(limit)||limit<1||limit>30||leaseMs<1000||leaseMs>3600000||!['research','identity','all'].includes(lane))throw new Error('Invalid claim options');
@@ -57,13 +67,26 @@ export class ProfileQueue {
       this.db.prepare("UPDATE jobs SET state='retry',error='lease_expired',worker=NULL,token=NULL,lease_until=NULL WHERE state='leased' AND lease_until<=?").run(this.clock());
       this.db.prepare("UPDATE jobs SET state='blocked',error='retry_limit_reached',updated=? WHERE state='retry' AND attempts>=3").run(this.clock());
       const rows=this.db.prepare("SELECT * FROM jobs WHERE state IN ('pending','retry') AND (?='all' OR lane=?) ORDER BY priority DESC,key LIMIT ?").all(lane,lane,limit);
-      for(const row of rows){row.token=crypto.randomUUID();row.worker=worker;row.lease_until=this.clock()+leaseMs;row.attempts++;
-        this.db.prepare("UPDATE jobs SET state='leased',worker=?,token=?,lease_until=?,attempts=?,updated=? WHERE key=?").run(worker,row.token,row.lease_until,row.attempts,this.clock(),row.key);this.event(row.key,'claim',{worker,attempt:row.attempts});}
+      for(const row of rows){row.token=crypto.randomUUID();row.worker=worker;row.lease_ms=leaseMs;row.lease_until=this.clock()+leaseMs;row.attempts++;
+        this.db.prepare("UPDATE jobs SET state='leased',worker=?,token=?,lease_until=?,lease_ms=?,attempts=?,updated=? WHERE key=?").run(worker,row.token,row.lease_until,row.lease_ms,row.attempts,this.clock(),row.key);this.event(row.key,'claim',{worker,attempt:row.attempts,leaseMs});}
       return rows.map(row=>({...row,payload:JSON.parse(row.payload),state:'leased'}));
     });
   }
   lease(key,token){const job=this.db.prepare('SELECT * FROM jobs WHERE key=?').get(key);if(!job||job.state!=='leased'||job.token!==token||job.lease_until<=this.clock())throw new Error('Claim expired or belongs to another worker');return job;}
-  heartbeat(key,token){return this.transaction(()=>{this.lease(key,token);this.db.prepare('UPDATE jobs SET lease_until=?,updated=? WHERE key=?').run(this.clock()+900000,this.clock(),key);return {key,lease_until:this.clock()+900000};});}
+  heartbeatClaims(claims){
+    if(!Array.isArray(claims))throw new Error('Heartbeat claims must be an array');
+    return this.transaction(()=>claims.map(claim=>{
+      const key=claim?.key,token=claim?.token;
+      if(!key||!token)return {key,status:'invalid_claim'};
+      const now=this.clock(),job=this.db.prepare('SELECT * FROM jobs WHERE key=?').get(key);
+      if(!job||job.state!=='leased'||job.token!==token)return {key,status:'inactive'};
+      if(job.lease_until<=now)return {key,status:'expired'};
+      const leaseUntil=now+job.lease_ms;
+      this.db.prepare('UPDATE jobs SET lease_until=?,updated=? WHERE key=? AND token=? AND state=\'leased\'').run(leaseUntil,now,key,token);
+      this.event(key,'heartbeat',{leaseUntil});return {key,status:'renewed',lease_until:leaseUntil};
+    }));
+  }
+  heartbeat(key,token){const result=this.heartbeatClaims([{key,token}])[0];if(result.status!=='renewed')throw new Error('Claim expired or belongs to another worker');return {key,lease_until:result.lease_until};}
   fail(key,token,reason,{retry=false}={}){if(!reason)throw new Error('Record the blocking reason');return this.transaction(()=>{this.lease(key,token);this.db.prepare('UPDATE jobs SET state=?,error=?,worker=NULL,token=NULL,lease_until=NULL,updated=? WHERE key=?').run(retry?'retry':'blocked',reason,this.clock(),key);this.event(key,retry?'retry':'blocked',{reason});});}
   retry(key){return this.transaction(()=>{const job=this.db.prepare("SELECT * FROM jobs WHERE key=? AND state='blocked'").get(key);if(!job)throw new Error('Only blocked jobs can be explicitly retried');const source=this.source();this.db.prepare("UPDATE jobs SET state='retry',error=NULL,result=NULL,reviewer=NULL,attempts=0,base_hash=?,updated=? WHERE key=?").run(digest(source[job.collection]?.[job.id]),this.clock(),key);this.event(key,'retry');});}
   evidenceFile(hash){if(!/^[a-f0-9]{64}$/u.test(hash))throw new Error('Invalid capture hash');return path.join(this.stateDir,'evidence',hash+'.txt');}
@@ -125,7 +148,25 @@ export class ProfileQueue {
   approve(key,reviewer){if(!reviewer)throw new Error('Responsible reviewer required');return this.transaction(()=>{const row=this.db.prepare("SELECT * FROM jobs WHERE key=? AND state='candidate'").get(key);if(!row)throw new Error('No candidate to review');this.checkCandidate(row,JSON.parse(row.result));this.db.prepare("UPDATE jobs SET state='accepted',reviewer=?,updated=? WHERE key=?").run(reviewer,this.clock(),key);this.event(key,'accepted',{reviewer});});}
   lock(name,ttl=1800000){return this.transaction(()=>{const previous=this.db.prepare('SELECT * FROM locks WHERE name=?').get(name);if(previous?.lease_until>this.clock())throw new Error(`Stage already running: ${name}`);const token=crypto.randomUUID();this.db.prepare('INSERT INTO locks(name,token,lease_until) VALUES(?,?,?) ON CONFLICT(name) DO UPDATE SET token=excluded.token,lease_until=excluded.lease_until').run(name,token,this.clock()+ttl);return token;});}
   unlock(name,token){this.db.prepare('DELETE FROM locks WHERE name=? AND token=?').run(name,token);}
-  status(){const counts=Object.fromEntries(this.db.prepare('SELECT state,count(*) AS count FROM jobs GROUP BY state').all().map(r=>[r.state,r.count]));const lanes=this.db.prepare('SELECT lane,state,count(*) AS count FROM jobs GROUP BY lane,state').all();const hours=this.db.prepare("SELECT strftime('%Y-%m-%dT%H:00:00',at/1000,'unixepoch','+8 hours') AS hour,event,count(*) AS count,sum(json_extract(detail,'$.milliseconds')) AS milliseconds FROM events GROUP BY hour,event ORDER BY hour DESC LIMIT 80").all();const completed=this.db.prepare("SELECT collection,COALESCE(json_extract(result,'$.profile_type'),'person') AS profile_type,state,count(*) AS count FROM jobs WHERE state IN ('candidate','accepted','integrated') GROUP BY collection,profile_type,state").all();return {counts,lanes,completed,hours,cacheHits:this.db.prepare("SELECT count(*) AS count FROM events WHERE event='cache_hit'").get().count,blocked:this.db.prepare("SELECT key,error,attempts FROM jobs WHERE state='blocked'").all()};}
+  status(backlog){
+    const counts=Object.fromEntries(this.db.prepare('SELECT state,count(*) AS count FROM jobs GROUP BY state').all().map(r=>[r.state,r.count]));
+    const lanes=this.db.prepare('SELECT lane,state,count(*) AS count FROM jobs GROUP BY lane,state').all();
+    const hours=this.db.prepare("SELECT strftime('%Y-%m-%dT%H:00:00',at/1000,'unixepoch','+8 hours') AS hour,event,count(*) AS count,sum(json_extract(detail,'$.milliseconds')) AS milliseconds FROM events GROUP BY hour,event ORDER BY hour DESC LIMIT 80").all();
+    const completed=this.db.prepare("SELECT collection,COALESCE(json_extract(result,'$.profile_type'),'person') AS profile_type,state,count(*) AS count FROM jobs WHERE state IN ('candidate','accepted','integrated') GROUP BY collection,profile_type,state").all();
+    const result={counts,lanes,completed,hours,cacheHits:this.db.prepare("SELECT count(*) AS count FROM events WHERE event='cache_hit'").get().count,blocked:this.db.prepare("SELECT key,error,attempts FROM jobs WHERE state='blocked'").all()};
+    if(backlog){
+      const source=this.source(),queued=new Map(this.db.prepare('SELECT key,state FROM jobs').all().map(row=>[row.key,row.state]));
+      const rows=[];for(const [field,collection,lane] of [['pending_investor_research','institutions','research'],['pending_people_research','people','research'],['pending_identity_verification','institutions','identity']])for(const item of backlog[field]||[]){
+        if(!item?.id||source[collection]?.[item.id]?.coverage_status==='researched')continue;
+        const key=`${collection}:${item.id}`;rows.push({key,id:item.id,collection,lane,state:queued.get(key)||'missing'});
+      }
+      const tally=items=>items.reduce((counts,row)=>{counts[row.state]=(counts[row.state]||0)+1;return counts;},{});
+      const missing=[...new Map(rows.filter(row=>row.state==='missing').map(row=>[row.key,{key:row.key,id:row.id,collection:row.collection,lane:row.lane}])).values()];
+      const incompleteIntegrated=[...new Map(rows.filter(row=>row.state==='integrated').map(row=>[row.key,{key:row.key,id:row.id,collection:row.collection,lane:row.lane}])).values()];
+      result.reconciliation={remainingBacklog:rows.length,byCollection:{institutions:tally(rows.filter(row=>row.collection==='institutions')),people:tally(rows.filter(row=>row.collection==='people'))},byLane:{research:tally(rows.filter(row=>row.lane==='research')),identity:tally(rows.filter(row=>row.lane==='identity'))},missingCount:missing.length,missing,incompleteIntegratedCount:incompleteIntegrated.length,incompleteIntegrated};
+    }
+    return result;
+  }
 }
 
 export async function captureBatch(queue,urls,{concurrency=6,perHost=2,fetcher=fetch}={}){

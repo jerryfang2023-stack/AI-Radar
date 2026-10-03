@@ -139,23 +139,31 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档案仅确认被投公司融资公告列示的参投关系；机构官网提及的管理规模、团队和投资策略未作独立核实，未纳入。",
-      "summary": "Bland 的 Series C 公司公告将 Archerman Capital 列为参投机构之一；公告称该轮由 Dell Technologies Capital 领投，Archerman Capital 并非领投方。",
+      "coverage_status": "researched",
+      "coverage_note": "使用 Archerman Capital 官网自述资料；网站显示的资产管理规模未列入档案，因为页面未给出其统计日期。",
+      "summary": "Archerman Capital 官网将其描述为全球成长股权投资机构，重点关注 AI、数据基础设施和网络安全等成长阶段公司；官网记载机构成立于 2018 年，总部位于波士顿，并在纽约市和旧金山设有投资团队。",
       "facts": [
         {
-          "field": "public_investment",
-          "label": "公开投资案例",
-          "value": "Bland 公司公告列出 Archerman Capital 为 5000 万美元 Series C 参投方；该轮由 Dell Technologies Capital 领投。",
-          "source_id": "bland_series_c"
+          "field": "investment_strategy",
+          "label": "投资方向与阶段",
+          "value": "官网称其关注 AI、数据基础设施、网络安全等领域的成长阶段公司，并采用其所称的研究驱动方式。",
+          "source_id": "archerman-home-2026-10-03"
+        },
+        {
+          "field": "founded_year",
+          "label": "成立年份（官网自述）",
+          "value": "2018 年。",
+          "source_id": "archerman-home-2026-10-03"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部（官网自述）",
+          "value": "美国波士顿；官网同时称投资团队分布在纽约市和旧金山。",
+          "source_id": "archerman-home-2026-10-03"
         }
       ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "参投 Bland 的 5000 万美元 Series C；Bland 公告列明该轮由 Dell Technologies Capital 领投。",
-          "source_id": "bland_series_c"
-        },
         {
           "description": "融资来源记录：Bland · C轮 · 2026-06-16 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6233a9ab76850de"
@@ -164,12 +172,12 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "bland_series_c",
-          "source_url": "https://www.prnewswire.com/news-releases/bland-surpasses-100m-funding-with-new-series-c-to-advance-voice-ai-for-complex-high-stakes-conversations-302801583.html",
-          "source_title": "Bland Surpasses $100M Funding With New Series C to Advance Voice AI for Complex, High-Stakes Conversations",
-          "source_content_hash": "9dc77faf6936f9d751d45e084f61ffcc6a5df31f892b826d7ad11a977bbff51b",
-          "quote": "raised a $50 million Series C, underscoring its leadership position in voice AI for complex, real-world conversations. The round was led by Dell Technologies Capital, with participation from HubSpot Ventures, Archerman Capital, and Tribeca Venture Partners.",
-          "quote_hash": "244c90dada3286ff0a3f5e6df587562d6bb11ba50628fb7a255a5d444ac8a5b7"
+          "source_id": "archerman-home-2026-10-03",
+          "source_url": "https://www.archermancap.com/",
+          "source_title": "Archerman Capital - Research Driven",
+          "source_content_hash": "9f5465d7c21cefa2bc4c258c74f1d555a343156d8686e059392d96ed1cc55d22",
+          "quote": "Archerman Capital™ is a global growth equity investor",
+          "quote_hash": "1d261219e03d26b3769026c89925e54123f78c82e5ff119af34624a15b52e735"
         },
         {
           "source_id": "FISRC-a6233a9ab76850de",

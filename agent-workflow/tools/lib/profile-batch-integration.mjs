@@ -12,7 +12,7 @@ export function buildProfileBatch(repo){
   }
 }
 
-export function integrateProfileBatch(queue,{batchSize=30,flush=false,reviewer,build=buildProfileBatch,archive}={}){
+export function integrateProfileBatch(queue,{batchSize=30,flush=false,reviewer,build=buildProfileBatch,archive,backupRoot}={}){
   if(!Number.isInteger(batchSize)||batchSize<1||batchSize>50)throw new Error('Batch size must be 1..50');
   if(reviewer!==undefined&&(!String(reviewer).trim()||String(reviewer).length>120))throw new Error('Reviewer filter must be a non-empty name of at most 120 characters');
   const token=queue.lock('integrate');const planFile=path.join(queue.stateDir,'integration.json');
@@ -42,7 +42,7 @@ export function integrateProfileBatch(queue,{batchSize=30,flush=false,reviewer,b
       for(const job of plan.jobs)for(const source of JSON.parse(job.result).sources){const url=canonicalUrl(source.source_url),identity=digest([url,source.source_content_hash]);if(seen.has(identity))continue;seen.add(identity);const capture=queue.evidenceCapture(url,source.source_content_hash);if(!capture)throw new Error(`Accepted original missing: ${source.source_id}`);
         records.push({body:fs.readFileSync(queue.evidenceFile(source.source_content_hash),'utf8'),contentHash:source.source_content_hash,sourceUrl:url,collectedAt:new Date(capture.captured_at).toISOString(),dataDate:today(),snapshotRef:`profiles/${identity}.json`,metadata:{source_title:source.source_title,source_url:url,content_hash:source.source_content_hash}});
       }
-      if(archive)archive(records);else ingestPrivateEvidenceRecords({root:queue.repo,backupRoot:resolvePrivateEvidenceBackupRoot(queue.repo),records});
+      if(archive)archive(records);else ingestPrivateEvidenceRecords({root:queue.repo,backupRoot:resolvePrivateEvidenceBackupRoot(queue.repo,{backupRoot}),records});
       if(currentHash!==plan.afterHash)atomicJson(path.join(queue.repo,PROFILE_FILE),plan.next);
       plan.stage='building';atomicJson(planFile,plan);
     }
