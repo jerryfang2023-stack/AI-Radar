@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Silicon Catalyst Angels 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2022-12-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Silicon Catalyst Angels官网将其定位为由硅硬件投资者、工程师和高管组成的专项资金团体，成员具备投资能力并关注硅与硬件创业公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "专注硅与硬件领域创业公司的资金及天使投资团体。",
+          "source_id": "PROFILE-INV-77cfbdef23587f-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "硅、半导体与硬件创业公司。",
+          "source_id": "PROFILE-INV-77cfbdef23587f-1"
+        },
+        {
+          "field": "member_profile",
+          "label": "官网披露的成员",
+          "value": "包括具备投资能力的资深半导体从业者。",
+          "source_id": "PROFILE-INV-77cfbdef23587f-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-cb0549fad590a0ab"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据官网对其组织和成员的自述，不将孵化器与天使投资团体混为一体。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网首页",
+          "value": "Silicon Catalyst Angels",
+          "url": "https://www.siliconcatalystangels.com/?source_capture=2026-10-03&cycle=11",
+          "source_id": "PROFILE-INV-77cfbdef23587f-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-77cfbdef23587f-1",
+          "source_url": "https://www.siliconcatalystangels.com/?source_capture=2026-10-03&cycle=11",
+          "source_title": "Silicon Catalyst Angels",
+          "source_content_hash": "0794ef9992adf8cc915360ce61b59e416d8492b3f7b0ccf5838bf79a28eb1070",
+          "quote": "Silicon Catalyst Angels is a dedicated funding group created by silicon hardware investors, engineers, executives to accelerate startups in the next revolution in silicon and hardware.",
+          "quote_hash": "1416f55ab7a92635ac7383770ce91cec7dd56bb85f6d98e73b3128ae364f7643"
+        },
+        {
+          "source_id": "PROFILE-INV-77cfbdef23587f-2",
+          "source_url": "https://www.siliconcatalystangels.com/?source_capture=2026-10-03&cycle=11",
+          "source_title": "Silicon Catalyst Angels",
+          "source_content_hash": "0794ef9992adf8cc915360ce61b59e416d8492b3f7b0ccf5838bf79a28eb1070",
+          "quote": "our membership is comprised of seasoned semiconductor veterans who bring with them a wealth of knowledge along with their ability to invest.",
+          "quote_hash": "a3014448750c1ec2e2028827ff4c01990bde5cd182f739ec74ea86cf61920d6d"
+        },
         {
           "source_id": "FISRC-cb0549fad590a0ab",
           "source_url": "https://www.techtimes.com/articles/284896/20221214/encharge-ai-raises-21-7m-produce-hardware-edge-computing.htm",
@@ -161,7 +208,7 @@
           "quote_hash": "b99f0a2b7196b3b18420ffc6a155257fccb8adea7be2e2620c1daca7104040e6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

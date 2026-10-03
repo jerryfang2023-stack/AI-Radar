@@ -178,12 +178,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Nebular 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Nebular 官网称其关注非常早期、尚未显现的新市场与技术，并表示会快速决策和领投。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网定位",
+          "value": "关注非常早期的机会，并表示可领投。",
+          "source_id": "PROFILE-INV-999de7454264a9-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网定位",
+          "value": "强调快速决策及主动支持创始人。",
+          "source_id": "PROFILE-INV-999de7454264a9-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,8 +204,32 @@
           "source_id": "FISRC-64c63dc926fc8a24"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按机构官网投资定位建档，不将宣传性措辞转换为未披露的行业或基金数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Nebular",
+          "url": "https://www.nebular.vc/?source_capture=2026-10-03&cycle=14",
+          "source_id": "PROFILE-INV-999de7454264a9-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-999de7454264a9-1",
+          "source_url": "https://www.nebular.vc/?source_capture=2026-10-03&cycle=14",
+          "source_title": "Nebular",
+          "source_content_hash": "b27c598157729c2f613058fdb7e67e677d6040e944ea354ec294cc87c8e1fb6f",
+          "quote": "We’re drawn to what’s (very) early and unexpected—the uncommon people, ideas, and technologies where new markets and movements are on the brink of inevitable. We move fast. We write lead checks.",
+          "quote_hash": "91d5c1caa63fdb9db9caaa2d5ac30124d796a4ebdf3e0f739e508ea9c451534e"
+        },
         {
           "source_id": "FISRC-f80a0b6f2f7f63f8",
           "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
@@ -214,7 +247,7 @@
           "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

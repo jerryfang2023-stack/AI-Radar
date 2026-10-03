@@ -193,12 +193,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "上海半导体产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "“上海半导体产投”是上海半导体装备材料产业投资管理有限公司的官网简称，专注半导体装备、材料及零部件投资，并管理多支产业基金。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "机构官网",
+          "value": "上海半导体装备材料产业投资管理有限公司，简称“上海半导体产投”。",
+          "source_id": "PROFILE-INV-a4e897160e234e-1"
+        },
+        {
+          "field": "registration",
+          "label": "机构官网",
+          "value": "官网称2018年7月25日完成中国证券投资基金业协会登记备案。",
+          "source_id": "PROFILE-INV-a4e897160e234e-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "机构官网",
+          "value": "半导体装备、材料及零部件，兼顾产业链上下游。",
+          "source_id": "PROFILE-INV-a4e897160e234e-1"
+        },
+        {
+          "field": "fund_activity",
+          "label": "机构官网",
+          "value": "管理上海半导体装备材料产业投资基金及多支项目制基金。",
+          "source_id": "PROFILE-INV-a4e897160e234e-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -210,8 +231,40 @@
           "source_id": "FISRC-8972e9b03b93424b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "严格使用官网给出的品牌与管理人映射；管理规模和累计项目数为官网页面披露值。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "上海半导体产投",
+          "url": "https://www.pdsti.com/ssemc/?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a4e897160e234e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a4e897160e234e-1",
+          "source_url": "https://www.pdsti.com/ssemc/?source_capture=2026-10-03&cycle=16",
+          "source_title": "上海半导体装备材料产业投资管理有限公司（官网）",
+          "source_content_hash": "916bbb890c53ab7c9e1ba9d1d09d09dc66f6b62cb2120587c29dec5d68347281",
+          "quote": "上海半导体装备材料产业投资管理有限公司（简称“上海半导体产投”）",
+          "quote_hash": "dab2ee24e43f5462b9ea46b9dac5f030cb99428da13bc2a527d0ad6113bad9c1"
+        },
+        {
+          "source_id": "PROFILE-INV-a4e897160e234e-2",
+          "source_url": "https://www.pdsti.com/ssemc/?source_capture=2026-10-03&cycle=16",
+          "source_title": "上海半导体装备材料产业投资管理有限公司（官网）",
+          "source_content_hash": "916bbb890c53ab7c9e1ba9d1d09d09dc66f6b62cb2120587c29dec5d68347281",
+          "quote": "公司专注于管理和运营高科技产业投资基金，旗下管理上海半导体装备材料产业投资基金及多支项目制基金",
+          "quote_hash": "8f2db742715b195fd86af43273ad4704504228ca66ff0128b4fb04e53a3f8cb9"
+        },
         {
           "source_id": "FISRC-0d37e004ad816c7c",
           "source_url": "https://news.pedaily.cn/202609/568996.shtml",
@@ -229,7 +282,7 @@
           "quote_hash": "701337cfdc3c7df411585f8017f645e9f924273e626da90bdc3186b5cbdcba71"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

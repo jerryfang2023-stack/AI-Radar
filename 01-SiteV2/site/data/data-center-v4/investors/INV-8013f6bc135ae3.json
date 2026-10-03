@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Berkshire Hathaway 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "伯克希尔·哈撒韦2026年官方新闻索引列出其已完成对Taylor Morrison的收购。此条仅记录上市公司直接收购活动，不将其描述为风险投资基金或独立VC平台。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "公司官方公告索引披露的活动",
+          "value": "伯克希尔·哈撒韦列出已完成对Taylor Morrison的收购。",
+          "source_id": "PROFILE-INV-8013f6bc135ae3-1"
+        },
+        {
+          "field": "activity_scope",
+          "label": "来源范围",
+          "value": "该来源支持直接收购活动，不证明存在独立风险投资基金。",
+          "source_id": "PROFILE-INV-8013f6bc135ae3-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,32 @@
           "source_id": "FISRC-cb917372e663ab54"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "依据公司官方新闻索引的收购公告标题，限定为直接并购活动。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "2026 News Releases",
+          "value": "Berkshire Hathaway",
+          "url": "https://www.berkshirehathaway.com/news/2026news.html?source_capture=2026-10-03&cycle=12-browser",
+          "source_id": "PROFILE-INV-8013f6bc135ae3-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-8013f6bc135ae3-1",
+          "source_url": "https://www.berkshirehathaway.com/news/2026news.html?source_capture=2026-10-03&cycle=12-browser",
+          "source_title": "2026 News Menu",
+          "source_content_hash": "0b6bd981df8bf6c09faa8375fb1a53470abd3b49091642b4ef26bb7bca21e70e",
+          "quote": "Berkshire Hathaway Completes Acquisition of Taylor Morrison",
+          "quote_hash": "d03e1119ce87b9d16f26f0b15968c64c46320b5759df8057d0a7936d22f70b3e"
+        },
         {
           "source_id": "FISRC-cb917372e663ab54",
           "source_url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
@@ -161,7 +194,7 @@
           "quote_hash": "df21676237e3f182fb11711026514c94c150dbd22e91dd282d7fe142ea733457"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

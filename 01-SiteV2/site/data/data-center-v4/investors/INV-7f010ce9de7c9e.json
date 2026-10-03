@@ -162,12 +162,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "一村淞灵 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "一村淞灵官网介绍其为2013年成立、位于深圳并长期聚焦人工智能与数字经济的私募股权投资管理机构。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网披露的公司名称",
+          "value": "深圳一村淞灵私募创业投资基金管理有限公司。",
+          "source_id": "PROFILE-INV-7f010ce9de7c9e-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网披露成立时间",
+          "value": "2013年。",
+          "source_id": "PROFILE-INV-7f010ce9de7c9e-1"
+        },
+        {
+          "field": "location",
+          "label": "官网披露所在地",
+          "value": "深圳。",
+          "source_id": "PROFILE-INV-7f010ce9de7c9e-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露方向",
+          "value": "人工智能与数字经济。",
+          "source_id": "PROFILE-INV-7f010ce9de7c9e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -179,8 +200,32 @@
           "source_id": "FISRC-fa0e608145757727"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据官网完整主体名称与长期投资方向建档，不记录可能变化的在管规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "关于一村淞灵",
+          "value": "深圳一村淞灵私募创业投资基金管理有限公司",
+          "url": "https://ma.v-capital.cn/html/1449.html?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-7f010ce9de7c9e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7f010ce9de7c9e-1",
+          "source_url": "https://ma.v-capital.cn/html/1449.html?source_capture=2026-10-03&cycle=12",
+          "source_title": "一村淞灵5亿人工智能基金成功设立-一村资本官网-投资全球产业变革者",
+          "source_content_hash": "24fe5c146d4781e46cd7c7686ae3b7939c5b77e879cbe335864a0b41e38a88e5",
+          "quote": "深圳一村淞灵私募创业投资基金管理有限公司（简称“一村淞灵”或“公司”）成立于2013年，是一家位于深圳的长期聚焦人工智能、数字经济的私募股权投资管理机构。",
+          "quote_hash": "8cc6261f33c5cd22922454da2097257589eddb9bef0fbfbc6ba3c791b80e1e0c"
+        },
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",
@@ -198,7 +243,7 @@
           "quote_hash": "44c30a2a6f7890790b2be4be4fdcfb833f29a0da36056ff196fb2740acfb90d6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

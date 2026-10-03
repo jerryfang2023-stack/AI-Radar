@@ -191,12 +191,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "高信资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "高信资本官网将其定位为硬科技创投机构，披露基金管理主体为上海高信私募基金管理有限公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "硬科技创投机构。",
+          "source_id": "PROFILE-INV-8b2dff05f7cbaf-1"
+        },
+        {
+          "field": "legal_entity",
+          "label": "官网披露管理主体",
+          "value": "上海高信私募基金管理有限公司；页面标注登记编号 P1072179。",
+          "source_id": "PROFILE-INV-8b2dff05f7cbaf-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露方向",
+          "value": "半导体、先进制造、新能源及新材料。",
+          "source_id": "PROFILE-INV-8b2dff05f7cbaf-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +223,32 @@
           "source_id": "FISRC-1a358dfcb10fed1c"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "记录其官网披露的法律主体名称、管理人登记号及投资方向；页面所列管理规模和已投数量未采录为长期稳定事实。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "高信资本 / Focus Capital",
+          "url": "https://www.gaoxinpe.com/?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-8b2dff05f7cbaf-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-8b2dff05f7cbaf-1",
+          "source_url": "https://www.gaoxinpe.com/?source_capture=2026-10-03&cycle=13",
+          "source_title": "高信资本、Focus Capital、上海高信私募基金管理有限公司、曹斌、-高信资本，是一家专注于硬科技领域的专业投资机构，致力于在集成电路半导体、新材料、高端智造领域进行投资",
+          "source_content_hash": "e59ffa2a5d1890dd2891da990fcbbd4c65b9dd2b5c7f821d759f3d08c9e914e1",
+          "quote": "高信资本 Focus Capital（上海高信私募基金管理有限公司；基金业协会登记编号：P1072179）是一家专注于硬科技领域投资的创投机构，聚焦于半导体、先进制造、新能源及新材料等国家重点支持的战略新兴产业方向。",
+          "quote_hash": "c252f811efbb4a6f60513317fe4233dc90f75d54a7f9c78ae6a9fb3e5edff235"
+        },
         {
           "source_id": "FISRC-1ae72db61aa80327",
           "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
@@ -227,7 +266,7 @@
           "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -218,12 +218,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "靖亚资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "靖亚资本官网称其2017年成立并管理美元、人民币双币基金，聚焦早期企业软件、云计算及生成式 AI 驱动的新一代信息技术创业投资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网简介",
+          "value": "早期风险投资机构。",
+          "source_id": "PROFILE-INV-a1f03df5208fb9-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网简介",
+          "value": "2017年成立。",
+          "source_id": "PROFILE-INV-a1f03df5208fb9-1"
+        },
+        {
+          "field": "fund_structure",
+          "label": "官网简介",
+          "value": "管理美元和人民币双币基金。",
+          "source_id": "PROFILE-INV-a1f03df5208fb9-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网投资策略",
+          "value": "企业软件、云计算及生成式AI驱动的新一代信息技术创业项目。",
+          "source_id": "PROFILE-INV-a1f03df5208fb9-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -235,8 +256,40 @@
           "source_id": "FISRC-4c6320de89936c7b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按官网机构简介和投资主题建档；管理规模仅按官网概述保留，不扩展基金具体规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "靖亚资本",
+          "url": "https://www.emventures.cn/?source_capture=2026-10-03&cycle=15",
+          "source_id": "PROFILE-INV-a1f03df5208fb9-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a1f03df5208fb9-1",
+          "source_url": "https://www.emventures.cn/?source_capture=2026-10-03&cycle=15",
+          "source_title": "靖亚资本",
+          "source_content_hash": "91131ba8dd2796fdcf0787fe4dc9c00699f995b11398284af33b844f94d77e1f",
+          "quote": "靖亚资本成立于2017年",
+          "quote_hash": "51f3b0e072a77301d01fdd5fc283d3a0d1699a44751508b617750d242af4d3b8"
+        },
+        {
+          "source_id": "PROFILE-INV-a1f03df5208fb9-2",
+          "source_url": "https://www.emventures.cn/?source_capture=2026-10-03&cycle=15",
+          "source_title": "靖亚资本",
+          "source_content_hash": "91131ba8dd2796fdcf0787fe4dc9c00699f995b11398284af33b844f94d77e1f",
+          "quote": "聚焦早期以生成式AI驱动的新一代信息技术创业投资机会。重点关注AI赋能内容生成、AI 提高生产力、AI助力专业洞察、AI替代专业服务、AI与现实世界交互等生成式AI赋能数字经济的各个领域。",
+          "quote_hash": "061edb4e6c3a50f575156070d69a1aa34c9ccca60391742fef85e22c21af52ef"
+        },
         {
           "source_id": "FISRC-3a00c703054126cd",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
@@ -254,7 +307,7 @@
           "quote_hash": "894fcb124652ad17fbe125b89dc4b890efa090c699949b525f6dde33f3e38185"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

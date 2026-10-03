@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Apax Digital 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Apax Digital官网将其定位为Apax旗下增长投资策略，支持全球高成长科技企业，重点涉及SaaS、互联网及科技赋能服务。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "Apax平台下的数字科技增长投资策略。",
+          "source_id": "PROFILE-INV-7b6011bf4b6bee-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露方向",
+          "value": "全球SaaS、互联网及科技赋能服务企业。",
+          "source_id": "PROFILE-INV-7b6011bf4b6bee-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-5b1ac109014789f1"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据Apax官网对Apax Digital的业务描述建档，不将其与其他Apax策略混同。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Apax Digital",
+          "value": "Apax",
+          "url": "https://www.apax.com/digital/?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-7b6011bf4b6bee-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7b6011bf4b6bee-1",
+          "source_url": "https://www.apax.com/digital/?source_capture=2026-10-03&cycle=12",
+          "source_title": "Apax Digital Growth",
+          "source_content_hash": "670f8d08d75a4d36ce370fae25c3bf711a97f06a573ec10cfc0e2b1b577dfa82",
+          "quote": "Apax Digital helps high-growth tech leaders go farther, faster, leveraging the power of the global Apax platform.",
+          "quote_hash": "fc5b320661a1dd5e597a78313785af9dd131a14bd25614b668e90d10727e3fce"
+        },
+        {
+          "source_id": "PROFILE-INV-7b6011bf4b6bee-2",
+          "source_url": "https://www.apax.com/digital/?source_capture=2026-10-03&cycle=12",
+          "source_title": "Apax Digital Growth",
+          "source_content_hash": "670f8d08d75a4d36ce370fae25c3bf711a97f06a573ec10cfc0e2b1b577dfa82",
+          "quote": "We partner with exceptional founders and leadership teams of innovative SaaS, internet, and tech-enabled services companies worldwide to unlock their maximum potential.",
+          "quote_hash": "b07595b8a006ed48bf6e04d24110cb660b39ed8966439ca2df6d701ef6587f81"
+        },
         {
           "source_id": "FISRC-5b1ac109014789f1",
           "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
@@ -161,7 +202,7 @@
           "quote_hash": "7067b0f2a0ffecb0c09ed46fcb3bc2d25cf3cf0a4480de2e3ba2c23de4bb1a6c"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

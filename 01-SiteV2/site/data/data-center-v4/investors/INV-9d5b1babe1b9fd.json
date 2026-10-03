@@ -121,12 +121,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "泰岳梧桐资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "泰岳梧桐资本官网称其为2014年由北京神州泰岳集团发起的投资品牌，围绕上市公司战略设立基金并布局人工智能、云计算等领域。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "由北京神州泰岳集团发起的投资品牌。",
+          "source_id": "PROFILE-INV-9d5b1babe1b9fd-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网披露时间",
+          "value": "2014年。",
+          "source_id": "PROFILE-INV-9d5b1babe1b9fd-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露方向",
+          "value": "泛娱乐、大数据、云计算、人工智能及空天信息。",
+          "source_id": "PROFILE-INV-9d5b1babe1b9fd-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +149,40 @@
           "source_id": "FISRC-106f72a415fbb41c"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按管理团队官网记录品牌、基金及投资方向自述；项目数量和当前基金状态未作为长期事实保存。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "泰岳梧桐资本",
+          "url": "https://www.ultrapowerfund.com/?source_capture=2026-10-03&cycle=14",
+          "source_id": "PROFILE-INV-9d5b1babe1b9fd-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9d5b1babe1b9fd-1",
+          "source_url": "https://www.ultrapowerfund.com/?source_capture=2026-10-03&cycle=14",
+          "source_title": "泰岳梧桐资本",
+          "source_content_hash": "f4fb4828af7a62684a1b0ae7154217e79eadfdcafaf092354e9c7ccdb5eb272f",
+          "quote": "泰岳梧桐资本是2014年由北京神州泰岳集团发起，联合业内多家知名机构创立的投资品牌。",
+          "quote_hash": "f12b91d607f7bf2b4844b7456c4db1ee192c6bb4efcb7d84c5a2d9fca406c60a"
+        },
+        {
+          "source_id": "PROFILE-INV-9d5b1babe1b9fd-2",
+          "source_url": "https://www.ultrapowerfund.com/?source_capture=2026-10-03&cycle=14",
+          "source_title": "泰岳梧桐资本",
+          "source_content_hash": "f4fb4828af7a62684a1b0ae7154217e79eadfdcafaf092354e9c7ccdb5eb272f",
+          "quote": "目前已发行6支基金，在泛娱乐、大数据、云计算、人工智能及空天信息领域布局了60多个项目",
+          "quote_hash": "1f391cd510156615c657452626744bd42fbda4406ac5425b8c9eeabf160b8f3d"
+        },
         {
           "source_id": "FISRC-106f72a415fbb41c",
           "source_url": "https://www.tmtpost.com/7892206.html",
@@ -145,7 +192,7 @@
           "quote_hash": "eda8a96d050bd51da0403263b46a562720e0070f058b7ac0032f927d74f3f62f"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

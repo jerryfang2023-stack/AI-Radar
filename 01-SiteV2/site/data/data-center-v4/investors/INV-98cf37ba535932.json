@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Sebastian Knutsson 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Sweet Capital 官网团队页列出 Sebastian Knutsson，并称该基金专注早期投资；本档案仅记录其公开的机构关联。",
+      "facts": [
+        {
+          "field": "investor_affiliation",
+          "label": "官网团队页",
+          "value": "Sweet Capital 团队成员。",
+          "source_id": "PROFILE-INV-98cf37ba535932-1"
+        },
+        {
+          "field": "organization_focus",
+          "label": "基金官网定位",
+          "value": "Sweet Capital 专注早期投资。",
+          "source_id": "PROFILE-INV-98cf37ba535932-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,38 @@
           "source_id": "FISRC-5228f73ab8dc8458"
         }
       ],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "来源为基金官网团队页；不据此扩展个人投资组合、投资阶段或任职头衔。",
+      "current_roles": [
+        {
+          "title": "Team member",
+          "organization": "Sweet Capital",
+          "source_id": "PROFILE-INV-98cf37ba535932-1"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-98cf37ba535932-1",
+          "source_url": "https://sweetcapital.com/team/?source_capture=2026-10-03&cycle=14",
+          "source_title": "Sweet Capital - Team",
+          "source_content_hash": "4cec3a309154832015b5dbd0cd11be35d5c23e964d624b981305b3c65a49bd02",
+          "quote": "Sebastian Knutsson",
+          "quote_hash": "871531f322c900fa3c2af662565b812d49211081fc9ab726767d9cabbd11fe36"
+        },
+        {
+          "source_id": "PROFILE-INV-98cf37ba535932-2",
+          "source_url": "https://sweetcapital.com/team/?source_capture=2026-10-03&cycle=14",
+          "source_title": "Sweet Capital - Team",
+          "source_content_hash": "4cec3a309154832015b5dbd0cd11be35d5c23e964d624b981305b3c65a49bd02",
+          "quote": "We focus on early-stage investments.",
+          "quote_hash": "391802416ac0286cd2ce18a99d30f5233b8bff600e46c1b624d63f2543679d70"
+        },
         {
           "source_id": "FISRC-5228f73ab8dc8458",
           "source_url": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates",
@@ -161,7 +200,7 @@
           "quote_hash": "95e9e6c90dca9ce4709247d5b84ca596f0bc265c26c8bf9e155bc4813c3c1b9b"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

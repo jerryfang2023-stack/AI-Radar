@@ -122,12 +122,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "兴湘资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "湖南省国资委披露湖南兴湘资本管理有限公司以私募股权基金管理和股权投资为主业，统筹兴湘集团的基金投资及直投业务。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "湖南省国资委",
+          "value": "湖南兴湘资本管理有限公司。",
+          "source_id": "PROFILE-INV-9f54ba6fc004c9-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "湖南省国资委",
+          "value": "私募股权基金管理与股权投资机构。",
+          "source_id": "PROFILE-INV-9f54ba6fc004c9-1"
+        },
+        {
+          "field": "parent_relationship",
+          "label": "湖南省国资委",
+          "value": "统筹兴湘集团的基金投资和直接投资业务。",
+          "source_id": "PROFILE-INV-9f54ba6fc004c9-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,8 +150,24 @@
           "source_id": "FISRC-cd5b0b79e0cacd63"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "采用省国资委对该公司主业和集团关系的公开说明，不并入母集团汇总规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9f54ba6fc004c9-1",
+          "source_url": "https://gzw.hunan.gov.cn/gzjg/gqdt/202406/t20240625_33336002.html?source_capture=2026-10-03&cycle=15",
+          "source_title": "兴湘资本风控合规团队：专业专注当好风控合规守门人",
+          "source_content_hash": "85ccea994f518147462147b4628007350a37b6da4eeaf6eb3153ebbe9bf98b30",
+          "quote": "湖南兴湘资本管理有限公司以私募股权投资基金管理及股权投资为主业，统筹运作管理兴湘集团的基金投资和直投业务",
+          "quote_hash": "d80164035650a1c025e2ae6ca413e291acad3555397db75816118fde9bb25824"
+        },
         {
           "source_id": "FISRC-cd5b0b79e0cacd63",
           "source_url": "https://news.pedaily.cn/202503/547159.shtml",

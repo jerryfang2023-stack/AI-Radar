@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "8090 Industries 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "8090 Industries 官网将其定义为聚焦工业创新的投资公司，为关键行业创业者提供资本和商业支持，覆盖先进制造、能源基础设施、航空航天与国防。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构官网",
+          "value": "工业创新领域的投资公司。",
+          "source_id": "PROFILE-INV-a7345a5817e336-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "机构官网",
+          "value": "先进制造、能源与基础设施、航空航天与国防等关键工业领域。",
+          "source_id": "PROFILE-INV-a7345a5817e336-2"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "机构官网",
+          "value": "官网展示40余个工业合作伙伴、50余家组合公司。",
+          "source_id": "PROFILE-INV-a7345a5817e336-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-060d60f0bcc42b9d"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网显示的组合及资产规模按页面标注时间记录；不扩展到未披露的关联工业集团。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "8090 Industries",
+          "url": "https://8090industries.com/?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a7345a5817e336-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a7345a5817e336-1",
+          "source_url": "https://8090industries.com/?source_capture=2026-10-03&cycle=16",
+          "source_title": "Home | 8090 Industries",
+          "source_content_hash": "30426403cce11899e6497814ede27f2b2354d46b9f472cd8a318a0cac8cd849c",
+          "quote": "Investment firm at the frontier of industrial innovation, partnering with founders in mission-critical industries through capital and commercial support.",
+          "quote_hash": "b1c1ac3a45f240612ad5cc129768d1c3f0c416aa99eee9ea4f825614ffc54f5b"
+        },
+        {
+          "source_id": "PROFILE-INV-a7345a5817e336-2",
+          "source_url": "https://8090industries.com/?source_capture=2026-10-03&cycle=16",
+          "source_title": "Home | 8090 Industries",
+          "source_content_hash": "30426403cce11899e6497814ede27f2b2354d46b9f472cd8a318a0cac8cd849c",
+          "quote": "From energy systems to advanced manufacturing and defense technology",
+          "quote_hash": "0cee866998dcd1f2852eb56ddab88f49d1d78c55f7f82d4be4ebad5e372862d7"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -161,7 +208,7 @@
           "quote_hash": "fc5db38002b21b1decd438417bac1dfdc98b2900159b1d7b3161859e98a2e15a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

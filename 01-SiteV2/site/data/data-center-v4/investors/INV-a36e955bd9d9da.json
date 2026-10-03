@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Marc Casper 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2023-12-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Liquid AI 于2023年公布种子轮融资时，将 Marc Casper 列为参与该轮的个人投资者之一；本档案仅确认这一项公开投资行为。",
+      "facts": [
+        {
+          "field": "investor_activity",
+          "label": "Liquid AI 种子轮公告",
+          "value": "Liquid AI 2023年种子轮投资人之一；公告所列历史职务为 Thermo Fisher 总裁兼 CEO。",
+          "source_id": "PROFILE-INV-a36e955bd9d9da-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,24 @@
           "source_id": "FISRC-4e5f377f1837e2e5"
         }
       ],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资公告将其称为 Thermo Fisher 总裁兼 CEO（当时职务），不据此断言该职务或其其他个人投资在当前仍然有效。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅有一项已核实的个人投资记录。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a36e955bd9d9da-1",
+          "source_url": "https://www.liquid.ai/blog/new-generation-of-ai-models-from-first-principles?source_capture=2026-10-03&cycle=16",
+          "source_title": "Liquid AI: A New Generation of AI Models from First Principles | Blog | Liquid AI",
+          "source_content_hash": "8df0fab4548b6d02e671b4d036747b2c7a650625e653137c214d7abadcd3dffa",
+          "quote": "Marc Casper (President & CEO of Thermo Fisher)",
+          "quote_hash": "7575f228a37012a190983131ac45b4f63a267c76e1cc68a1cafe9ce4ada7ef23"
+        },
         {
           "source_id": "FISRC-4e5f377f1837e2e5",
           "source_url": "https://www.bostonglobe.com/2023/12/06/business/liquid-ai-boston-chatgpt/",
@@ -161,7 +180,7 @@
           "quote_hash": "2690b5c4339067c617ae3175d55b67ed4ba81ef190a3334486be85a7d6e4cad5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

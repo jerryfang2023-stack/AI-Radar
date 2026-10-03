@@ -191,12 +191,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "成为资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "成为资本官网称其成立于1999年，是中国较早的独立风险投资机构之一，并披露其投资了多个行业的企业。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "中国较早的独立风险投资机构之一。",
+          "source_id": "PROFILE-INV-9cfe7a0ebd1846-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网披露成立时间",
+          "value": "1999年。",
+          "source_id": "PROFILE-INV-9cfe7a0ebd1846-1"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "官网定位",
+          "value": "官网称已支持多个行业的领先企业。",
+          "source_id": "PROFILE-INV-9cfe7a0ebd1846-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +223,32 @@
           "source_id": "FISRC-760e793448781182"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "采用公司官网对自身历史和投资机构身份的介绍；未从官网组合列表推断当前基金或投资规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Chengwei Capital / 成为资本",
+          "url": "https://www.chengwei.com/?source_capture=2026-10-03&cycle=14",
+          "source_id": "PROFILE-INV-9cfe7a0ebd1846-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9cfe7a0ebd1846-1",
+          "source_url": "https://www.chengwei.com/?source_capture=2026-10-03&cycle=14",
+          "source_title": "Chengwei Capital",
+          "source_content_hash": "1b469f83c4538ed7f3517a604c51faf9516d67e151feed9d7efc027bbc97ac0b",
+          "quote": "Founded in 1999, Chengwei Capital is one of the earliest independent venture capital firms in China. Since then, we have backed many leading companies across different industries.",
+          "quote_hash": "6490837db1bfb74167aacd9b5c27a13923c4ef91ab50a44b7caee986183e36a4"
+        },
         {
           "source_id": "FISRC-642c04894404ccd5",
           "source_url": "https://news.pedaily.cn/202608/568123.shtml",
@@ -227,7 +266,7 @@
           "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

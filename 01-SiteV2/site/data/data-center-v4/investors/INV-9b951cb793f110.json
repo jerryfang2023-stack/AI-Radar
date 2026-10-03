@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Max Levchin 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "SciFi VC 官网称其为 Max 与 Nellie Levchin 的风险投资基金，并定位为关注金融科技、人工智能、科学及其他技术领域的早期综合型基金。",
+      "facts": [
+        {
+          "field": "investor_affiliation",
+          "label": "基金官网",
+          "value": "SciFi VC 官网将其描述为 Max 与 Nellie Levchin 的风险投资基金。",
+          "source_id": "PROFILE-INV-9b951cb793f110-1"
+        },
+        {
+          "field": "organization_focus",
+          "label": "基金官网",
+          "value": "基金聚焦早期综合投资，重点涉及金融科技、人工智能和科学。",
+          "source_id": "PROFILE-INV-9b951cb793f110-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-a6233a9ab76850de"
         }
       ],
-      "contacts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据基金官网记录 Max Levchin 与 SciFi VC 的公开关联；未将基金组合直接归为个人投资组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金官网",
+          "value": "SciFi VC",
+          "url": "https://scifi.vc/?source_capture=2026-10-03&cycle=14",
+          "source_id": "PROFILE-INV-9b951cb793f110-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9b951cb793f110-1",
+          "source_url": "https://scifi.vc/?source_capture=2026-10-03&cycle=14",
+          "source_title": "SciFi VC",
+          "source_content_hash": "c888be0252dfa7c59728380fc39dbb634f087d015af5772823ebcfc97952504f",
+          "quote": "SciFi is Max and Nellie Levchin's venture fund that partners with exceptional founders solving hard problems that require intense curiosity, intellectual depth, and often, science.",
+          "quote_hash": "25f2019ce4e9e8ed9ed9d22d0239919a8e9fa3317e6df34d720778e7f8d8270b"
+        },
+        {
+          "source_id": "PROFILE-INV-9b951cb793f110-2",
+          "source_url": "https://scifi.vc/?source_capture=2026-10-03&cycle=14",
+          "source_title": "SciFi VC",
+          "source_content_hash": "c888be0252dfa7c59728380fc39dbb634f087d015af5772823ebcfc97952504f",
+          "quote": "We're an early stage generalist firm with emphasis on fintech, artificial intelligence, and science.",
+          "quote_hash": "cb7624ba1950089488fc350d494d4017667cbdb2e5cbfc4d16a5426d8ca49713"
+        },
         {
           "source_id": "FISRC-a6233a9ab76850de",
           "source_url": "https://multiples.vc/private-comps/bland-ai",
@@ -161,7 +202,7 @@
           "quote_hash": "f95896f249945e60f276144d3c7e8fd95ced5417c65e48f78848e9689de9e4d9"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

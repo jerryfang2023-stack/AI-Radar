@@ -232,12 +232,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Orange Collective 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Orange Collective 官网将其定位为 YC 校友基金，支持在 AI 基础设施和应用 AI 领域创业的 YC 创始人。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "面向 YC 校友创始人的 AI 投资基金。",
+          "source_id": "PROFILE-INV-993d754e337f78-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露方向",
+          "value": "AI 基础设施和应用 AI。",
+          "source_id": "PROFILE-INV-993d754e337f78-1"
+        },
+        {
+          "field": "founder_scope",
+          "label": "官网披露范围",
+          "value": "官网称其投资对象限于 YC 创始人。",
+          "source_id": "PROFILE-INV-993d754e337f78-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -253,8 +268,32 @@
           "source_id": "FISRC-cc76e017a813c66e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构投资方向按官网首页自述记录；未加入未核验的基金规模或组合统计。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Orange Collective",
+          "url": "https://www.orangecollective.vc/?source_capture=2026-10-03&cycle=14",
+          "source_id": "PROFILE-INV-993d754e337f78-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-993d754e337f78-1",
+          "source_url": "https://www.orangecollective.vc/?source_capture=2026-10-03&cycle=14",
+          "source_title": "Orange Collective — The AI-native YC alumni fund",
+          "source_content_hash": "c61fcd4379b97e00892631f329e6afd326ae0bb5a693242c7274ee34d17aa040",
+          "quote": "The AI-native YC alumni fund. Backing breakout YC founders building in AI infra and applied AI.",
+          "quote_hash": "db389d2b42bc29469705fc0bb08c2ba0943b65bf384018d4b690531a0968b8be"
+        },
         {
           "source_id": "FISRC-4799c620c14fef7b",
           "source_url": "https://www.halluminate.ai/blog/series-a",
@@ -280,7 +319,7 @@
           "quote_hash": "35ec8bf18ee09527e3273be7273a2dcc21d41ab2a2b16400a6280e073174f7da"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

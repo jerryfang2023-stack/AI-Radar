@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Sambrinvest 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Sambrinvest 是比利时沙勒罗瓦大都会区的企业融资伙伴，官网称其为区域私营机构，提供融资方案，现有组合超过300家企业。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构官网",
+          "value": "沙勒罗瓦区域的私营企业融资机构。",
+          "source_id": "PROFILE-INV-aa074d2f793f2d-2"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "机构官网",
+          "value": "官网分别披露当前组合超过300家企业、参与或合作企业超过330家。",
+          "source_id": "PROFILE-INV-aa074d2f793f2d-3"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "机构官网",
+          "value": "主要服务比利时沙勒罗瓦大都会区中小企业。",
+          "source_id": "PROFILE-INV-aa074d2f793f2d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,56 @@
           "source_id": "FISRC-676054bb104d0746"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "组合数量及资产指标均为官网页面披露值，未将投资组合的经营业绩归因于管理人。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Sambrinvest",
+          "url": "https://www.sambrinvest.be/fr/?source_capture=2026-10-03&cycle=17",
+          "source_id": "PROFILE-INV-aa074d2f793f2d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-aa074d2f793f2d-1",
+          "source_url": "https://www.sambrinvest.be/fr/?source_capture=2026-10-03&cycle=17",
+          "source_title": "Sambrinvest soutient tous vos projets - Sambrinvest",
+          "source_content_hash": "2a44cd8e4852c49d1a99d1f7ca1b668bb80c7380b7385cc6625909d5e55f6b38",
+          "quote": "Sambrinvest est le partenaire financier des PME de Charleroi Métropole",
+          "quote_hash": "67fa6e49d6faddd064f6df397678a9acd6ea7651d0dd5893fdb2d7be9222df03"
+        },
+        {
+          "source_id": "PROFILE-INV-aa074d2f793f2d-2",
+          "source_url": "https://www.sambrinvest.be/fr/?source_capture=2026-10-03&cycle=17",
+          "source_title": "Sambrinvest soutient tous vos projets - Sambrinvest",
+          "source_content_hash": "2a44cd8e4852c49d1a99d1f7ca1b668bb80c7380b7385cc6625909d5e55f6b38",
+          "quote": "Sambrinvest est un acteur privé de la région de Charleroi",
+          "quote_hash": "acfdadf6fe23addd49a12a6b1177df7178aceb8bdbb743e3440454fff661bc52"
+        },
+        {
+          "source_id": "PROFILE-INV-aa074d2f793f2d-3",
+          "source_url": "https://www.sambrinvest.be/fr/?source_capture=2026-10-03&cycle=17",
+          "source_title": "Sambrinvest soutient tous vos projets - Sambrinvest",
+          "source_content_hash": "2a44cd8e4852c49d1a99d1f7ca1b668bb80c7380b7385cc6625909d5e55f6b38",
+          "quote": "Avec plus de 300 sociétés actuellement en portefeuille",
+          "quote_hash": "60fd201d3ac921e23aa2c183ee353b63f6ec8fd218c87ece80f8b8e9eb1646e9"
+        },
+        {
+          "source_id": "PROFILE-INV-aa074d2f793f2d-4",
+          "source_url": "https://www.sambrinvest.be/fr/galaxie/?source_capture=2026-10-03&cycle=17",
+          "source_title": "Entreprises - Sambrinvest",
+          "source_content_hash": "e69186bdc7d5214aa5c97d2ee1e3677e7c2837c871884bc72a2d37e9df33c582",
+          "quote": "Avec plus de 330 entreprises participées ou partenaires dans son portefeuille",
+          "quote_hash": "0c80514e35209727c91653ca5dac8ee3bc7f68e58fa0cdaa200b6d9738dc41a3"
+        },
         {
           "source_id": "FISRC-676054bb104d0746",
           "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
@@ -161,7 +224,7 @@
           "quote_hash": "a46a718a8e39c04b8200634f52ca5ea254f4a24f386762ffcb4f8d8381da59ae"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

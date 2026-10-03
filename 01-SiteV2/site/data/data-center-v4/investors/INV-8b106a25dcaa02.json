@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Alpha Square Group 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Alpha Square Group 官网将其定位为面向公开与非公开市场创造长期财富的投资公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "覆盖公开和非公开市场的投资公司。",
+          "source_id": "PROFILE-INV-8b106a25dcaa02-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-61f4ef734c265738"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据公司官网首页的组织定位建档；不从投资组合列表推断未披露的投资阶段或基金规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Alpha Square Group",
+          "url": "https://alphasquaregroup.com/?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-8b106a25dcaa02-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-8b106a25dcaa02-1",
+          "source_url": "https://alphasquaregroup.com/?source_capture=2026-10-03&cycle=13",
+          "source_title": "Alpha Square Group &#8211; Powering the Innovation of Tomorrow",
+          "source_content_hash": "5a86357cd38469acddab3885f0996fead9f6eeeb9d8775961a694fcfd8aa76b0",
+          "quote": "Backing the companies that shape tomorrow - an investment firm building endurable wealth across public and private markets.",
+          "quote_hash": "78e3d1530cb3b585d97369084a3344822aa4e6bf7eee6d8f66c8eab2b4e14a70"
+        },
         {
           "source_id": "FISRC-61f4ef734c265738",
           "source_url": "https://www.thesaasnews.com/news/menos-ai-raises-5-1m-pre-a/",
@@ -161,7 +188,7 @@
           "quote_hash": "c7a9c8495f0813a0092c7aa232203559ea77591f24d04308fc1f7d8a5e6272af"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

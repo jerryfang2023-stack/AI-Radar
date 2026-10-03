@@ -137,12 +137,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Sequoia Global Equities 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Sequoia Global Equities 官网称其为公私募跨市场投资机构，成立于2009年，是 Sequoia Capital 的关联机构，覆盖互联网、软件、半导体及金融科技。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "公私募跨市场投资机构。",
+          "source_id": "PROFILE-INV-9a62d02296443a-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网披露成立时间",
+          "value": "2009年。",
+          "source_id": "PROFILE-INV-9a62d02296443a-1"
+        },
+        {
+          "field": "parent_relationship",
+          "label": "官网披露关系",
+          "value": "Sequoia Capital 的关联机构。",
+          "source_id": "PROFILE-INV-9a62d02296443a-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露领域",
+          "value": "互联网、软件、半导体和金融科技。",
+          "source_id": "PROFILE-INV-9a62d02296443a-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,32 @@
           "source_id": "FISRC-5b6c7c4ae002a992"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网明确区分该机构与 Sequoia Capital；按其自述的公开、私募跨市场投资业务建档。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Sequoia Global Equities",
+          "url": "https://sequoiacap.com/sequoia-global-equities?source_capture=2026-10-03&cycle=14",
+          "source_id": "PROFILE-INV-9a62d02296443a-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9a62d02296443a-1",
+          "source_url": "https://sequoiacap.com/sequoia-global-equities?source_capture=2026-10-03&cycle=14",
+          "source_title": "Home - Sequoia Global Equities",
+          "source_content_hash": "780f0176420f051e7426bae0eb521b086f8a3024eaf4dfb256088b51d2d8d67d",
+          "quote": "Sequoia Global Equities is a public/private crossover firm that was founded in 2009 as an affiliate of Sequoia Capital. We extend Sequoia Capital’s technology investing into the public markets and apply the firm’s thematic investment approach across the internet, software, semiconductor and fintech sectors.",
+          "quote_hash": "a949990ebacdd5e69342e134499e1fddbd949aeb9532128202623e15cbd0b9f0"
+        },
         {
           "source_id": "FISRC-5b6c7c4ae002a992",
           "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
@@ -161,7 +206,7 @@
           "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -137,12 +137,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Better Angle 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Better Angle 官网披露其专注早期科技项目，通常在欧洲开展 Pre-Seed/Seed 投资，首笔支票约10万欧元。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "由创业者组成的早期投资机构。",
+          "source_id": "PROFILE-INV-9f379d451f904c-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网投资策略",
+          "value": "Pre-Seed及Seed。",
+          "source_id": "PROFILE-INV-9f379d451f904c-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网投资策略",
+          "value": "早期科技项目，行业不限，主要位于欧洲。",
+          "source_id": "PROFILE-INV-9f379d451f904c-2"
+        },
+        {
+          "field": "typical_check",
+          "label": "官网投资策略",
+          "value": "首笔约10万欧元，后续投资最高可达20万欧元。",
+          "source_id": "PROFILE-INV-9f379d451f904c-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,40 @@
           "source_id": "FISRC-115626db07e52373"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "数据按官网自述记录；机构同时明确表示以创始人为核心、行业不设限。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Better Angle",
+          "url": "https://www.better-angle.com/?source_capture=2026-10-03&cycle=15",
+          "source_id": "PROFILE-INV-9f379d451f904c-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9f379d451f904c-1",
+          "source_url": "https://www.better-angle.com/?source_capture=2026-10-03&cycle=15",
+          "source_title": "Better Angle - Angels at scale",
+          "source_content_hash": "4d67e326e6c7ff5239ed0c7f64de2ce8e7a43709e1c4adfd55fdf389d8f521ac",
+          "quote": "At Better Angle we focus on early stage tech opportunities.",
+          "quote_hash": "dc21a40309682b92ad10dfc3156fa12352b4cde86c185e6d8aea6063eca5a0f8"
+        },
+        {
+          "source_id": "PROFILE-INV-9f379d451f904c-2",
+          "source_url": "https://www.better-angle.com/?source_capture=2026-10-03&cycle=15",
+          "source_title": "Better Angle - Angels at scale",
+          "source_content_hash": "4d67e326e6c7ff5239ed0c7f64de2ce8e7a43709e1c4adfd55fdf389d8f521ac",
+          "quote": "We invest €100k first check in Pre-Seed/Seed mainly in Europe but opportunistically overseas with the capacity for follow-on investments up to 200k€.",
+          "quote_hash": "d08f904cd4171f9a36c8d0557621d42d06e82505aee5f6b852df39fa58ea67a4"
+        },
         {
           "source_id": "FISRC-115626db07e52373",
           "source_url": "https://www.linkedin.com/posts/toyota-ventures_ami-labs-activity-7437189879689629697-0_Rg",
@@ -161,7 +214,7 @@
           "quote_hash": "7f4614df7528b1e4625e6af7adfa980a2d129a34a918e2bd34a6b0ce6d3d411d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

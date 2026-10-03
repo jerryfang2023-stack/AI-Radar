@@ -122,12 +122,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "德宁资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "深交所招股说明书披露，德宁资本对应上海德宁资本投资管理有限公司，并列出其作为德宁智成执行事务合伙人及投资管理业务范围。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "深交所招股说明书",
+          "value": "上海德宁资本投资管理有限公司。",
+          "source_id": "PROFILE-INV-9c92d185ee84fc-1"
+        },
+        {
+          "field": "founded",
+          "label": "深交所招股说明书",
+          "value": "成立于2015年11月18日。",
+          "source_id": "PROFILE-INV-9c92d185ee84fc-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "深交所招股说明书",
+          "value": "被披露为德宁智成执行事务合伙人，经营范围包括投资管理和实业投资。",
+          "source_id": "PROFILE-INV-9c92d185ee84fc-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,8 +150,24 @@
           "source_id": "FISRC-08be95e2b95904af"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "来源为上市公司招股说明书中的关联基金与管理主体资料；登记号 P1070605 属于德宁智成，本档案不归到上海德宁资本。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9c92d185ee84fc-1",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202109/RAS_202109_00017BF40957533FEBF2A8C21BD3023F.pdf?source_capture=2026-10-03&cycle=14",
+          "source_title": "上海辛帕智能科技股份有限公司招股说明书（申报稿）",
+          "source_content_hash": "5ccb6073c520359045796716a2f3437f92e10258f89d3800745f7c4c0b09aa5d",
+          "quote": "德宁智成的执行事务合伙人为德宁资本，其基本情况如下： 基本情况 企业名称 上海德宁资本投资管理有限公司 成立时间 2015 年 11 月 18 日 统一社会信用代码 91310114MA1GT1TP32 法定代表人 吴代林 注册资本 1,000.00 万元 注册地址 上海市嘉定区南翔镇蕰北公路 1755 弄 5 号 3 层 B 区 3283 室 经营范围 投资管理，实业投资，投资咨询（除金融、证券）",
+          "quote_hash": "dd7a0976b83eef46132e70fc0655276cc8450b4ae2d07f7ee02042498d70631e"
+        },
         {
           "source_id": "FISRC-08be95e2b95904af",
           "source_url": "https://www.lejucaijing.com/news-7507630694257588011.html",
@@ -146,7 +177,7 @@
           "quote_hash": "621c802a71f1b2c288bde068c81d4012a765f5485c2b29c0ffb6827c9a4ecc73"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

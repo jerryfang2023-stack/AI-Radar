@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Mellody Hobson 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Ariel Investments 官方人物页列出 Mellody Hobson 为联合首席执行官及董事会主席，并介绍其创立 Ariel Alternatives 和 Project Black。",
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "官网人物页",
+          "value": "Ariel Investments 联合首席执行官、Ariel Investment Trust 董事会主席。",
+          "source_id": "PROFILE-INV-8bcc4c65c7bd18-1"
+        },
+        {
+          "field": "career",
+          "label": "官网人物页",
+          "value": "创立 Ariel Alternatives 及其首支私募股权基金 Project Black。",
+          "source_id": "PROFILE-INV-8bcc4c65c7bd18-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,48 @@
           "source_id": "FISRC-a8e6dd6c34cd416a"
         }
       ],
-      "contacts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职务和基金创立情况均以 Ariel 官方人物页为准；不扩展未经本页证实的投资经历。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网人物页",
+          "value": "Mellody Hobson",
+          "url": "https://www.arielinvestments.com/person/mellody-hobson/?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-8bcc4c65c7bd18-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-8bcc4c65c7bd18-1",
+          "source_url": "https://www.arielinvestments.com/person/mellody-hobson/?source_capture=2026-10-03&cycle=13",
+          "source_title": "Mellody Hobson - Ariel Investments",
+          "source_content_hash": "85710b845f5d57ac2ae7fd66f56a05340ef6df451cad6e4769860e85369603b8",
+          "quote": "Mellody Hobson Co-CEO Chairman of the Board of Trustees, Ariel Investment Trust",
+          "quote_hash": "193c396580c474261ea3269f96726e7fd304fc8409347712cfbd3b4da04afe99"
+        },
+        {
+          "source_id": "PROFILE-INV-8bcc4c65c7bd18-2",
+          "source_url": "https://www.arielinvestments.com/person/mellody-hobson/?source_capture=2026-10-03&cycle=13",
+          "source_title": "Mellody Hobson - Ariel Investments",
+          "source_content_hash": "85710b845f5d57ac2ae7fd66f56a05340ef6df451cad6e4769860e85369603b8",
+          "quote": "As Co-CEO, Mellody is responsible for management, strategic planning and growth for all areas of Ariel. Additionally, she chairs the board of Ariel Investments’ publicly traded mutual funds.",
+          "quote_hash": "2144a6566466930b7946e7a188686fb19c661aefd29bf36219c7d6f5b5db8d62"
+        },
+        {
+          "source_id": "PROFILE-INV-8bcc4c65c7bd18-3",
+          "source_url": "https://www.arielinvestments.com/person/mellody-hobson/?source_capture=2026-10-03&cycle=13",
+          "source_title": "Mellody Hobson - Ariel Investments",
+          "source_content_hash": "85710b845f5d57ac2ae7fd66f56a05340ef6df451cad6e4769860e85369603b8",
+          "quote": "Mellody founded Ariel Alternatives in 2021 and its inaugural private equity fund, Project Black®.",
+          "quote_hash": "9cce8167ba6088e975ee91d9b7deb7c4737878da24e81553a92aa6c5570b063e"
+        },
         {
           "source_id": "FISRC-a8e6dd6c34cd416a",
           "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
@@ -161,7 +210,7 @@
           "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

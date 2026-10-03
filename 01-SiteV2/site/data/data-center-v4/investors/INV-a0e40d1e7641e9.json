@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Universal Music Group 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Universal Music Group 是音乐娱乐运营集团；其2026年一季报披露持有 Spotify 股权，并宣布授权变现其中一半。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "2026年一季报",
+          "value": "持有 Spotify 股权；董事会授权变现其中一半。",
+          "source_id": "PROFILE-INV-a0e40d1e7641e9-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "2026年一季报",
+          "value": "音乐娱乐运营集团的股权投资活动记录。",
+          "source_id": "PROFILE-INV-a0e40d1e7641e9-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,32 @@
           "source_id": "FISRC-e825eacb926a575f"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "只记录官方披露的 Spotify 股权持有与变现安排，不把 UMG 描述成风险投资基金或延伸投资策略。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资者关系公告",
+          "value": "Universal Music Group",
+          "url": "https://www.universalmusic.com/universal-music-group-n-v-reports-financial-results-for-the-first-quarter-ended-march-31-2026/?source_capture=2026-10-03&cycle=15",
+          "source_id": "PROFILE-INV-a0e40d1e7641e9-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a0e40d1e7641e9-1",
+          "source_url": "https://www.universalmusic.com/universal-music-group-n-v-reports-financial-results-for-the-first-quarter-ended-march-31-2026/?source_capture=2026-10-03&cycle=15",
+          "source_title": "UNIVERSAL MUSIC GROUP N.V. REPORTS FINANCIAL RESULTS FOR THE FIRST QUARTER ENDED MARCH 31, 2026 - UMG",
+          "source_content_hash": "b75f541a5aa02f65d87427be9b8c8164e5549487ddc629c11bb9abfdffe7cad8",
+          "quote": "in March 2026 the Board authorized the monetization of half of the Company’s equity stake in Spotify.",
+          "quote_hash": "226323fc3f237ef44c00525fd30b848b25658de1aabc611d13d7b9878d6ab19d"
+        },
         {
           "source_id": "FISRC-e825eacb926a575f",
           "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
@@ -161,7 +194,7 @@
           "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

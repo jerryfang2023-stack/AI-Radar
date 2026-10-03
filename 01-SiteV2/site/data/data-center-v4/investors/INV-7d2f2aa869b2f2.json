@@ -192,12 +192,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "华勤技术 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "华勤技术官方新闻稿称公司参与优质产业项目投资，以布局AI前沿赛道并加强技术生态合作。此条仅记录上市公司披露的产业投资活动，不将其概括为专业投资机构。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "公司新闻稿披露的活动",
+          "value": "华勤技术称其参与优质产业项目投资，布局AI前沿赛道。",
+          "source_id": "PROFILE-INV-7d2f2aa869b2f2-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -209,8 +212,32 @@
           "source_id": "FISRC-de3bb93d57d25bdf"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "保留上市公司与其产业投资活动的主体边界。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司新闻稿",
+          "value": "华勤技术",
+          "url": "https://www.huaqin.com/about/news/206?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-7d2f2aa869b2f2-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7d2f2aa869b2f2-1",
+          "source_url": "https://www.huaqin.com/about/news/206?source_capture=2026-10-03&cycle=12",
+          "source_title": "A股上市三周年，华勤技术交出长期主义答卷 - 新闻资讯 - 华勤技术-智能产品_ODM_消费电子",
+          "source_content_hash": "21c33d3359318163b7089fc7d96ccc15c096ef752030ddfeaceb24648d86baa9",
+          "quote": "与此同时，公司积极前瞻布局 AI 前沿赛道，参与优质产业项目投资，深度绑定 AI 技术生态。",
+          "quote_hash": "39909df1be04512b3e1938f50973a68c6a2a59c9e78d2a5f80f35d24b21842ff"
+        },
         {
           "source_id": "FISRC-7896c13384a2de29",
           "source_url": "https://news.pedaily.cn/202606/565442.shtml",
@@ -228,7 +255,7 @@
           "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

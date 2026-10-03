@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "TheFounderVC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "The Founders VC 官网称其关注 Vertical AI，投资美国市场 Pre-Seed 和 Seed 阶段项目。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "Vertical AI 方向风险投资机构。",
+          "source_id": "PROFILE-INV-8a14286a8557fa-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露阶段",
+          "value": "Pre-Seed、Seed。",
+          "source_id": "PROFILE-INV-8a14286a8557fa-2"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "官网披露地区",
+          "value": "美国。",
+          "source_id": "PROFILE-INV-8a14286a8557fa-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-adb92a0723de45a1"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "保留官网采用的正式品牌拼写“The Founders VC”；阶段和地区据官网策略页。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "The Founders VC",
+          "url": "https://www.thefounder.vc/?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-8a14286a8557fa-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-8a14286a8557fa-1",
+          "source_url": "https://www.thefounder.vc/?source_capture=2026-10-03&cycle=13",
+          "source_title": "The Founders VC | Pre-Seed &amp; Seed Venture Capital for Visionary Product Builders | AI-Focused",
+          "source_content_hash": "ac56cb202c4824082c9cbca2f9c5630d60f5294dc5eecb1de532afedf94586db",
+          "quote": "We back visionary Founders leveraging Vertical AI to build the category leaders of tomorrow.",
+          "quote_hash": "ca5a4580fd98afa736c34093b4c08b79eea728cd148842a2c48de7d4dd8911da"
+        },
+        {
+          "source_id": "PROFILE-INV-8a14286a8557fa-2",
+          "source_url": "https://www.thefounder.vc/?source_capture=2026-10-03&cycle=13",
+          "source_title": "The Founders VC | Pre-Seed &amp; Seed Venture Capital for Visionary Product Builders | AI-Focused",
+          "source_content_hash": "ac56cb202c4824082c9cbca2f9c5630d60f5294dc5eecb1de532afedf94586db",
+          "quote": "INVESTMENT STAGE Pre-Seed and Seed INVESTMENT SIZE $100K - $250K MARKETS U.S. SECTORS Vertical AI",
+          "quote_hash": "58f997963e0a27d48b9d9a842382e98fda2c8dc41a06dd3e9052794cf63c2acd"
+        },
         {
           "source_id": "FISRC-adb92a0723de45a1",
           "source_url": "https://blog.logcat.ai/2026/07/16/logcat.ai-raises-2.55m-to-build-the-future-of-device-systems-engineering/",
@@ -161,7 +208,7 @@
           "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

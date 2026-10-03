@@ -121,12 +121,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "红杉中国 (HongShan) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "HongShan 官网称红杉中国成立于 2005 年，聚焦科技、医疗和消费，并覆盖从种子期到公开市场的多阶段投资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "私募股权投资机构。",
+          "source_id": "PROFILE-INV-8c335989bd27e0-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网披露成立时间",
+          "value": "2005年。",
+          "source_id": "PROFILE-INV-8c335989bd27e0-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露领域",
+          "value": "科技、医疗、消费。",
+          "source_id": "PROFILE-INV-8c335989bd27e0-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露阶段",
+          "value": "种子期、成长期、并购、新基建及公开市场。",
+          "source_id": "PROFILE-INV-8c335989bd27e0-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +155,40 @@
           "source_id": "FISRC-0199034a5417695f"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "使用红杉中国当前官网名称 HongShan / 红杉中国；数据不扩展到未经本页面确认的投资回报。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "HongShan / 红杉中国",
+          "url": "https://www.hongshan.com/about-us/?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-8c335989bd27e0-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-8c335989bd27e0-1",
+          "source_url": "https://www.hongshan.com/about-us/?source_capture=2026-10-03&cycle=13",
+          "source_title": "关于我们 - 红杉",
+          "source_content_hash": "4a9affde540e0b968a411bab342e13bffcb087e9d694268470600ac0415b2c35",
+          "quote": "红杉中国是专注于投资科技、医疗、消费三大领域的私募股权投资机构。 自2005年成立以来，红杉中国致力于发掘和培育创新和创业力量",
+          "quote_hash": "f790c7bc25d16b44f990f104a3705642bfc10ab9a8dc23a39387cec8ed2ea5fd"
+        },
+        {
+          "source_id": "PROFILE-INV-8c335989bd27e0-2",
+          "source_url": "https://www.hongshan.com/about-us/?source_capture=2026-10-03&cycle=13",
+          "source_title": "关于我们 - 红杉",
+          "source_content_hash": "4a9affde540e0b968a411bab342e13bffcb087e9d694268470600ac0415b2c35",
+          "quote": "20年来，红杉中国由早期的风险投资扩展到种子期投资、成长期投资、并购投资、新基建投资、 公开市场投资 等领域，成为具有全链条、全阶段和全周期投资能力的投资机构。",
+          "quote_hash": "b3f126f41581410647dd572e2b3aacef3f8c0ecb7caceb62f0fa4ecb5b640c62"
+        },
         {
           "source_id": "FISRC-0199034a5417695f",
           "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
@@ -145,7 +198,7 @@
           "quote_hash": "b504e61eec60781b12f2f7d0ebcc88f84bb77f38ef89dcd62878b996cfb02853"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

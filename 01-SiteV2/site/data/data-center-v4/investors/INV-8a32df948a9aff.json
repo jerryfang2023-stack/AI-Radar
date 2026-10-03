@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Mirae Asset Financial Group 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Mirae Asset 官方证券网站将其定位为全球金融集团，并称集团以投资管理服务客户的长期目标。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官方页面定位",
+          "value": "全球金融集团。",
+          "source_id": "PROFILE-INV-8a32df948a9aff-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官方页面定位",
+          "value": "以投资管理帮助客户实现长期目标。",
+          "source_id": "PROFILE-INV-8a32df948a9aff-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,32 @@
           "source_id": "FISRC-73d5b94aff1552cb"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "记录集团层面的金融与投资管理定位；不把集团关联公司的具体基金策略等同为集团自身策略。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "集团证券官网",
+          "value": "Mirae Asset Financial Group",
+          "url": "https://securities.miraeasset.com/newir/view/pc/en/about/whoweare.jsp?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-8a32df948a9aff-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-8a32df948a9aff-1",
+          "source_url": "https://securities.miraeasset.com/newir/view/pc/en/about/whoweare.jsp?source_capture=2026-10-03&cycle=13",
+          "source_title": "Who We Are | Mirae Asset Securities",
+          "source_content_hash": "e16e76a90f227179d72184fe106156211fdb3ca24930ba26a9af593625b93151",
+          "quote": "As a global financial group, we pursue excellence in investment management to help our clients achieve their long-term objectives.",
+          "quote_hash": "907693d9a9782a1a19269316de8c22a3018bef09b9ffa527a17d01057ec8d703"
+        },
         {
           "source_id": "FISRC-73d5b94aff1552cb",
           "source_url": "https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-at-2-3b-valuation-in-pre-ipo-round/",
@@ -161,7 +194,7 @@
           "quote_hash": "b506e6c157a6a5c1e9342051843002817ab8d7ee1bee5c9f2bee9b5fed765070"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

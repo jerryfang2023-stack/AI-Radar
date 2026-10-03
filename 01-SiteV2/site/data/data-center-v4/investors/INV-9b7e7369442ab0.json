@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "本田 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Honda Xcelerator Ventures 官网称其为 Honda 的全球开放创新及企业创投项目，并披露通过战略合作、共同开发和直接投资与创新者合作。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "Honda 官方项目页",
+          "value": "Honda 通过 Xcelerator Ventures 项目开展企业创投和直接投资。",
+          "source_id": "PROFILE-INV-9b7e7369442ab0-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "Honda 官方项目页",
+          "value": "项目面向碳中和移动出行相关创新。",
+          "source_id": "PROFILE-INV-9b7e7369442ab0-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,32 @@
           "source_id": "FISRC-990ec5e1d34ab9a7"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "记录范围限于 Honda 的企业投资项目，不将本田母公司描述成独立基金管理人。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方项目页",
+          "value": "Honda Xcelerator Ventures",
+          "url": "https://xcelerator.hondainnovations.com/?source_capture=2026-10-03&cycle=14",
+          "source_id": "PROFILE-INV-9b7e7369442ab0-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9b7e7369442ab0-1",
+          "source_url": "https://xcelerator.hondainnovations.com/?source_capture=2026-10-03&cycle=14",
+          "source_title": "Honda Xcelerator Ventures | Investment | Partnership | Open Innovation",
+          "source_content_hash": "7b2bb665f43bd589318685954f81b2a9b0ef7f4424bee44fefddcf63a6075694",
+          "quote": "Honda Xcelerator Ventures is the global Honda program for open innovation and corporate venturing, engaging innovators across all stages to build the carbon-neutral future of mobility through strategic partnership, co-development and direct investment.",
+          "quote_hash": "f2006c485fe6a9c57e3bf71e283546304c75f9fcf6cc97b474c57a756ce87441"
+        },
         {
           "source_id": "FISRC-990ec5e1d34ab9a7",
           "source_url": "https://www.ithome.com/0/980/066.htm",
@@ -161,7 +194,7 @@
           "quote_hash": "c683f4356fe03853973a47ec6e6d76dff0a7f36e81c6f3f3f2f2718013497185"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

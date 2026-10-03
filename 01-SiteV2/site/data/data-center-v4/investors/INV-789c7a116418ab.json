@@ -195,12 +195,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "鼎晖百孚 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "鼎晖投资官网称鼎晖百孚成立于2012年，是集团旗下聚焦科技投资的专业精品基金投资平台，布局半导体、高端装备、生物医药及其他科技领域。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "鼎晖投资旗下聚焦科技投资的专业基金投资平台。",
+          "source_id": "PROFILE-INV-789c7a116418ab-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网列示成立年份",
+          "value": "2012年。",
+          "source_id": "PROFILE-INV-789c7a116418ab-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资领域",
+          "value": "半导体、高端装备、生物医药、碳中和及科技出海。",
+          "source_id": "PROFILE-INV-789c7a116418ab-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,16 +223,44 @@
           "source_id": "FISRC-57de475f4ec2ac5a"
         },
         {
-          "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-270f085d1cb4d09f"
-        },
-        {
           "description": "融资来源记录：北京面壁智能科技股份有限公司 · 历史轮次未披露 · 2024-01 · 2024年12月融资联合领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ca5c9f62e4d3f2f3"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据鼎晖官网专题页定位，不将该平台与鼎晖其他业务板块合并。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "鼎晖百孚专题页",
+          "value": "鼎晖百孚",
+          "url": "https://www.cdhfund.com/bf/?source_capture=2026-10-03&cycle=11",
+          "source_id": "PROFILE-INV-789c7a116418ab-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-789c7a116418ab-1",
+          "source_url": "https://www.cdhfund.com/bf/?source_capture=2026-10-03&cycle=11",
+          "source_title": "鼎晖百孚-鼎晖投资 - CDH Investments",
+          "source_content_hash": "ee64535b155932a77302ef7057224e426eac90d5b7050eb113cac1f3241f9aca",
+          "quote": "鼎晖百孚成立于2012年，是鼎晖投资旗下聚焦科技投资的专业精品基金投资平台。",
+          "quote_hash": "26802b0a6f1748572034133e7981d4223d1b0ae1783cf83a90802e54c4c9e2e6"
+        },
+        {
+          "source_id": "PROFILE-INV-789c7a116418ab-2",
+          "source_url": "https://www.cdhfund.com/bf/?source_capture=2026-10-03&cycle=11",
+          "source_title": "鼎晖百孚-鼎晖投资 - CDH Investments",
+          "source_content_hash": "ee64535b155932a77302ef7057224e426eac90d5b7050eb113cac1f3241f9aca",
+          "quote": "围绕新趋势、拓区域、逆周期的策略开展投资，并在半导体、高端装备、生物医药、碳中和、科技出海等领域进行系统布局",
+          "quote_hash": "6eefc5b77809dec8de9aa07a50d445953a71a6c8e2ae4b7c8b33e3e6fb0a4f4a"
+        },
         {
           "source_id": "FISRC-57de475f4ec2ac5a",
           "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
@@ -243,7 +286,7 @@
           "quote_hash": "63a980f1ba127733849c97a30d0874700bd03202657aec194d72afc7a3a64b3d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

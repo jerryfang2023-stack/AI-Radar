@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Factorial Funds 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Factorial Funds官网称其投资于定义人工智能时代的企业，关注智能技术、芯片、基础设施及算力。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "人工智能相关的智能技术、芯片、基础设施及算力。",
+          "source_id": "PROFILE-INV-781fd7246e25a9-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-62071134d28f47b9"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据官网投资理念短述建档，不添加未公开确认的基金属性或地域信息。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网首页",
+          "value": "Factorial Funds",
+          "url": "https://www.factorialfunds.com/?source_capture=2026-10-03&cycle=11",
+          "source_id": "PROFILE-INV-781fd7246e25a9-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-781fd7246e25a9-1",
+          "source_url": "https://www.factorialfunds.com/?source_capture=2026-10-03&cycle=11",
+          "source_title": "Factorial Funds",
+          "source_content_hash": "d65fc5fab99c1c0f2718ecbca67bae86f2ce390221b3696cbf723bddfb5a2320",
+          "quote": "We invest in the companies defining the AI era: the intelligence, the silicon, the infrastructure, and the power to run it.",
+          "quote_hash": "1345fb1c8b392a54fdcb6daeaa1528bc7490381777e5d93af2a5bd0be43bc648"
+        },
         {
           "source_id": "FISRC-62071134d28f47b9",
           "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
@@ -161,7 +188,7 @@
           "quote_hash": "70d43a0dda6879daeefef7373eac8d92a1c46975d8c8284870ef7e5cc2e3112e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

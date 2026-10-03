@@ -191,12 +191,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "鼎晖投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "鼎晖投资官网将其介绍为成立于 2002 年、覆盖股权、夹层、证券及不动产投资的另类资产管理平台。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "另类资产管理公司、多资产管理平台。",
+          "source_id": "PROFILE-INV-86a56bd4b2f4bd-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露业务",
+          "value": "股权、夹层、证券及不动产投资。",
+          "source_id": "PROFILE-INV-86a56bd4b2f4bd-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网披露成立时间",
+          "value": "2002年。",
+          "source_id": "PROFILE-INV-86a56bd4b2f4bd-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +223,32 @@
           "source_id": "FISRC-80b46378aae68c24"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "仅采录官网可核验的组织定位和投资业务范围，不引用动态管理规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "鼎晖投资",
+          "url": "https://www.cdhfund.com/about/?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-86a56bd4b2f4bd-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-86a56bd4b2f4bd-1",
+          "source_url": "https://www.cdhfund.com/about/?source_capture=2026-10-03&cycle=13",
+          "source_title": "关于鼎晖-鼎晖投资 - CDH Investments",
+          "source_content_hash": "6b2645928996e6e8ffdd50757cb2f90ef337680c3e4da211cb00396de3153de2",
+          "quote": "鼎晖投资成立于2002年，是中国最早由专业的投资与金融人士，联合新加坡政府投资公司等机构投资者创立的专注于中国市场的另类资产管理公司，足迹已从中国扩展到东南亚地区。我们是拥有股权投资、夹层投资、证券投资、不动产投资的综合性多资产管理平台",
+          "quote_hash": "7914f93f6a78ce568de3276a65403538a7f5ba5daffe880483e9a967ce07fd77"
+        },
         {
           "source_id": "FISRC-6d442164db5f81db",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
@@ -227,7 +266,7 @@
           "quote_hash": "904259116e332ef4c86f2cc478e1db6d17dbdceb4821cfd2cc9566bdd5a5c3e5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
