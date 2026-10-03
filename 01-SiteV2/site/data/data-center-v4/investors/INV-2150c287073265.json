@@ -137,21 +137,36 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "JD Sherman 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Avidly公告称JD Sherman加入其顾问委员会并作为投资者，支持公司拓展美国市场；本档案仅记录该直接证据。",
+      "current_roles": [
+        {
+          "title": "Advisory Board Member and investor",
+          "organization": "Avidly",
+          "source_id": "PROFILE-2150c287073265-1"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开材料确认其在Avidly担任顾问委员会成员并参与投资。",
       "track_record": [
         {
           "description": "融资来源记录：Naïve · A轮 · 2026-08-06 · 本轮参投 · $28.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-29dadb15030915c7"
         }
       ],
-      "contacts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅按Avidly公司公告确认同名人员与该项投资关系，不合并其他同名人物的履历。",
       "sources": [
+        {
+          "source_id": "PROFILE-2150c287073265-1",
+          "source_url": "https://www.avidlyagency.com/insights-inspiration/news/tech-heavyweight-jd-sherman-joins-avidly-to-drive-global-growth",
+          "source_title": "Tech heavyweight JD Sherman joins Avidly to drive global growth",
+          "source_content_hash": "cbfe2214b9e77b5ad78d1ecbcbcb592c6d2adeb7465f692a7bb9663d13deb27a",
+          "quote": "JD Sherman has joined Avidly as an Advisory Board Member and investor",
+          "quote_hash": "3ab96ad9a1a0e45752632e7b3c4ccf2b6476dec86c09bbddc8383a587ca269e0"
+        },
         {
           "source_id": "FISRC-29dadb15030915c7",
           "source_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company",
@@ -161,7 +176,17 @@
           "quote_hash": "ce73d32713f0dee8a0286083a2713bdfb7f7f578ebd305799840c7c30f5f77fd"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "公司公告确认的投资身份",
+          "value": "Avidly公告称其为投资者",
+          "source_id": "PROFILE-2150c287073265-1"
+        }
+      ],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

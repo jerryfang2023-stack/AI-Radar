@@ -121,36 +121,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有生数科技官方融资公告将 LINK-X CAPITAL 列为本轮共同领投方；尚未找到能够独立核验机构背景、团队或公开组合的官方页面，因此仅保留活动证据。",
-      "summary": "生数科技官方公告将 LINK-X CAPITAL 列为 Series A+ 共同领投方。当前档案仅覆盖这一笔融资披露，不代表完整机构背景、业绩或组合。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "LinkX Capital 官网称其成立于2021年，专注于通用智能生态的人工智能风险投资。",
+      "facts": [
         {
-          "description": "生数科技官方公告称本轮由中关村科学城和 LINK-X CAPITAL 共同领投。",
-          "source_id": "PFSRC-INV-4e3fc46ecfa48b-1"
-        },
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "聚焦通用智能生态的人工智能风险投资。",
+          "source_id": "PROFILE-INV-4e3fc46ecfa48b-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "description": "官网披露的成立年份。",
+          "source_id": "PROFILE-INV-4e3fc46ecfa48b-1"
+        }
+      ],
+      "track_record": [
         {
           "description": "融资来源记录：生数科技 · 历史轮次未披露 · A+轮联合领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed80aa770ae50f7c"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向采用官网的概括性表述，不扩展为未经逐项核验的行业组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "LinkX Capital",
+          "url": "https://www.linkxcap.com/en/index.html",
+          "source_id": "PROFILE-INV-4e3fc46ecfa48b-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PFSRC-INV-4e3fc46ecfa48b-1",
-          "source_url": "https://www.prnewswire.com/news-releases/shengshu-technology-completes-series-a-funding-of-over-rmb-600-million-302679760.html",
-          "source_title": "ShengShu Technology Completes Series A+ Funding of Over RMB 600 Million",
-          "source_content_hash": "5d41aeb7106d175ddbe1278ecc6d65461bf9b81c756b4eb73f63c69f4eab3566",
-          "quote": "The round was co-led by Zhongguancun Science City and LINK-X CAPITAL",
-          "quote_hash": "a510cbf845b313b6fad4c53e5eef6d42e52ba0b482c9becd45d98d8849f7010e"
+          "source_id": "PROFILE-INV-4e3fc46ecfa48b-1",
+          "source_url": "https://www.linkxcap.com/en/index.html",
+          "source_title": "LinkX Capital | AI Venture Capital for the AGI Era",
+          "source_content_hash": "16e944ef21becb7a1c5bf689654741130c194025fcbaf3edfb0ccbf786688757",
+          "quote": "Founded in 2021, LinkX Capital is one of China’s earliest and most active AI venture funds focused on the general intelligence ecosystem.",
+          "quote_hash": "8f8922156d81a503537d872c2d8c1d99c7799e06c97a8c0be3a142dde07038cb"
         },
         {
           "source_id": "FISRC-ed80aa770ae50f7c",
@@ -161,7 +178,7 @@
           "quote_hash": "a510cbf845b313b6fad4c53e5eef6d42e52ba0b482c9becd45d98d8849f7010e"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -191,12 +191,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "imec.xpand 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "imec.xpand官网称其为独立全球风险投资基金，关注半导体与纳米技术创新。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资关注",
+          "value": "半导体及纳米技术创新",
+          "source_id": "PROFILE-1efd33ebae0b3a-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +211,32 @@
           "source_id": "FISRC-243f9a39823d6336"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构类型和投资方向均来自官方首页。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "imec.xpand",
+          "url": "https://imecxpand.com/en",
+          "source_id": "PROFILE-1efd33ebae0b3a-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-1efd33ebae0b3a-1",
+          "source_url": "https://imecxpand.com/en",
+          "source_title": "imec.xpand",
+          "source_content_hash": "f08b85b2d974a5eaab3d5d34e15c503ce7c2fee3af404456ccf54fc6a3f97c1a",
+          "quote": "independent global venture capital fund that focuses on transformative semiconductor and nanotechnology innovations",
+          "quote_hash": "12f4fef482b0d06c60c786757f728f585e133314faf37720261bf2907db7a48c"
+        },
         {
           "source_id": "FISRC-676054bb104d0746",
           "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
@@ -227,7 +254,7 @@
           "quote_hash": "e9a5b6742e4007d3cbaa425e00b2689f6d41ee721f7441ad8d2e931d5a24a794"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

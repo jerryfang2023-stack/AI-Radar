@@ -153,59 +153,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
-      "summary": "Dentsu Ventures 是电通集团的企业风险投资基金。电通集团官方公告称，Dentsu Ventures Fund II 已对美国生成式 AI 游戏平台 Astrocade 作出股权投资。",
+      "summary": "Dentsu Ventures 官网将其介绍为企业创投基金，支持创业者把创新带向世界。",
       "facts": [
         {
-          "field": "fund_type",
-          "label": "基金性质",
-          "value": "电通集团将 Dentsu Ventures Fund II 描述为企业风险投资基金。",
-          "source_id": "dentsu"
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "官网自述为 corporate venture capital fund。",
+          "source_id": "PROFILE-INV-2d9ffeb362fa26-1"
         },
         {
-          "field": "investment",
-          "label": "已披露投资",
-          "value": "电通官方公告确认该基金对 Astrocade 作出股权投资。",
-          "source_id": "dentsu"
+          "field": "stated_mission",
+          "label": "官网使命表述",
+          "value": "支持创业者将创新带向世界。",
+          "source_id": "PROFILE-INV-2d9ffeb362fa26-1"
         }
       ],
-      "milestones": [
-        {
-          "date": "2026-05-11",
-          "description": "电通集团宣布 Dentsu Ventures Fund II 投资 Astrocade。",
-          "source_id": "dentsu"
-        }
-      ],
+      "milestones": [],
       "track_record": [
-        {
-          "description": "电通官方公告披露对 Astrocade 的股权投资；此处不推断投资金额或持股比例。",
-          "source_id": "dentsu"
-        },
         {
           "description": "融资来源记录：Astrocade · 多轮融资 · 2026-05-05 · 本轮参投 · $56M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1811bc88b6a13090"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "仅记录官网的基金性质及使命表述；未补入未核验的基金规模或组合数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [
         {
           "kind": "website",
-          "label": "官方网站",
-          "value": "https://www.group.dentsu.com/en/news/release/001671.html",
-          "source_id": "dentsu",
-          "url": "https://www.group.dentsu.com/en/news/release/001671.html"
+          "label": "官网",
+          "value": "Dentsu Ventures",
+          "url": "https://www.dentsu-v.com/en/index.html",
+          "source_id": "PROFILE-INV-2d9ffeb362fa26-1"
         }
       ],
       "sources": [
         {
-          "source_id": "dentsu",
-          "source_url": "https://www.group.dentsu.com/en/news/release/001671.html",
-          "source_title": "Dentsu Ventures Invests in U.S.-based Astrocade, a Generative AI–Powered Entertainment Platform that Enables Anyone to Create and Publish Games Using Natural Language - Dentsu Group Inc.",
-          "source_content_hash": "69b374d2c92a4bd0770c8d5f5260d84f090b9bc7fd1cf32058f54cd3cd1d17f7",
-          "quote": "i Sano; Head Office: Tokyo; Capital: 74,609.81 million yen) announced that Dentsu Ventures Fund II (hereinafter \"Dentsu Ventures\"), the Company's corporate venture capital fund, has made an equity investment in Astrocade, Inc. (Headquarters: California, U.S.; CEO: Amir Sadeghian; hereinafter \"Astrocade\"), a company deve",
-          "quote_hash": "260ca8c9912d2c5167ec9fe8faf6838ea335ff19e9df67b00e5f65d93fa42bcc"
+          "source_id": "PROFILE-INV-2d9ffeb362fa26-1",
+          "source_url": "https://www.dentsu-v.com/en/index.html",
+          "source_title": "Dentsu Ventures",
+          "source_content_hash": "edcad45522d7fffe128d776671580af4f7af80522c6a55aa900ace03d3a3125a",
+          "quote": "Dentsu Ventures is a corporate venture capital fund that supports entrepreneurs to bring their innovation to the world.",
+          "quote_hash": "a6b8fdc0993b1fc010073af7ca6746408ed505bc6926c0da11591718bbd32912"
         },
         {
           "source_id": "FISRC-1811bc88b6a13090",

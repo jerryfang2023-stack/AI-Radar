@@ -137,35 +137,44 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
-      "summary": "Eliyan 官方公告将 Meta 列入其 5000 万美元战略投资方。当前只记录被投公司公告中的参投关系，不推断由 Meta 哪一内部基金或投资部门完成。",
-      "facts": [
-        {
-          "field": "public_investment",
-          "label": "公开投资披露",
-          "value": "Eliyan 官方公告将 Meta 列为战略投资方之一。",
-          "source_id": "FISRC-5618afd8046eeb4f"
-        }
-      ],
+      "summary": "Scale AI 官方公告称，公司收到 Meta Platforms, Inc. 的一笔重大新投资；本条只记录该公告所披露的单项投资关系，不延伸为 Meta 的完整投资档案。",
+      "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "Eliyan 官方公告将 Meta 列入其 5000 万美元战略投资方。",
+          "description": "Scale AI 公告披露其收到 Meta Platforms, Inc. 的一笔重大新投资。",
+          "source_id": "PROFILE-INV-5ff5d5346b4e9b-1"
+        },
+        {
+          "description": "融资来源记录：Eliyan Corporation · 战略融资 · 2026-01-28 · 本轮参投 · $50 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5618afd8046eeb4f"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "来源为被投公司 Scale AI 的原始公告；未录入金额或其他投资组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-INV-5ff5d5346b4e9b-1",
+          "source_url": "https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution",
+          "source_title": "Founder, Alexandr Wang, Joins Meta to Work on AI Efforts | Scale AI",
+          "source_content_hash": "1cc3b6155ef7bd2e2fbac4a608cf4751edb1bcc1dea2103f10561f81cfc99d1b",
+          "quote": "a significant new investment from Meta Platforms, Inc.",
+          "quote_hash": "0c1410ea362c2a5ccd351b84c34de020dcf422e98bb3efab0f31175229644520"
+        },
+        {
           "source_id": "FISRC-5618afd8046eeb4f",
           "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
-          "source_title": "Eliyan Secures $50 Million in Strategic Investments from Leading Hyperscalers and AI Infrastructure Providers to Accelerate Scalable AI Systems - Eliyan",
-          "source_content_hash": "11a719573d90d41fdcec01ceddc607ab194b94e5d8a0c7b0350c7d9d8252f4fc",
-          "quote": "ategic investments from major players across the AI and compute ecosystem, including AMD, Arm, Coherent, and Meta . In addition, existing strategic investors Samsung Catalyst Fund and Intel Capital also participated in the round, reinforcing broad support for Eliyan’s technology roadmap and accelerating commercial momentu",
-          "quote_hash": "e04ec6844194875cbc201bb33e9d2f2854f6fed97e731597875b241521345ad8"
+          "source_title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+          "source_content_hash": "aaa35dfa2124488a2276415976fd32309750a815bcc448299f98c4daba4e8086",
+          "quote": "including AMD, Arm, Coherent, and Meta",
+          "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
         }
       ],
       "last_verified_at": "2026-10-03"

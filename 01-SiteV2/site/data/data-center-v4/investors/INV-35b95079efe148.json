@@ -121,21 +121,58 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "兴泰创投 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "合肥兴泰金融控股集团官网将“兴泰创投”明确对应到合肥兴泰创业投资管理有限公司，并披露其成立年份、管理人登记编码及创投业务范围。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "主体名称",
+          "value": "合肥兴泰创业投资管理有限公司（简称“兴泰创投”）。",
+          "source_id": "PROFILE-INV-35b95079efe148-1"
+        },
+        {
+          "field": "manager_registration",
+          "label": "私募基金管理人登记编码",
+          "value": "P1071444。",
+          "source_id": "PROFILE-INV-35b95079efe148-1"
+        },
+        {
+          "field": "investment_business",
+          "label": "主营业务",
+          "value": "创业投资、创业投资基金管理、区域产业基金管理、投资咨询。",
+          "source_id": "PROFILE-INV-35b95079efe148-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020",
+          "description": "官网披露的成立年份。",
+          "source_id": "PROFILE-INV-35b95079efe148-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：智象未来 · 历史轮次未披露 · B轮参与机构。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9670ee7c1fec7480"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "来源为其母集团官网；金额和基金数量等易变数据未纳入。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-35b95079efe148-1",
+          "source_url": "https://www.xtkg.com/col128/index.html",
+          "source_title": "合肥兴泰金融控股（集团）有限公司",
+          "source_content_hash": "84b11b171370b585c5c8ae3eb255ac6fef703ada6383a7a1e59b202adab9e245",
+          "quote": "合肥兴泰创业投资管理有限公司（简称“兴泰创投”）成立于2020年，注册资本1亿元，是合肥市属金控平台合肥兴泰金融控股（集团）有限公司的全资子公司和市场化直接股权投资平台，私募基金管理人登记编码：P1071444，主营业务包括创业投资、创业投资基金管理、区域产业基金管理、投资咨询等。",
+          "quote_hash": "f0243e1281a7ac0bdb33f7be61df6b8022c6a735712594d69b83c63accb6fae8"
+        },
         {
           "source_id": "FISRC-9670ee7c1fec7480",
           "source_url": "https://hfgxt.com.cn/index.php?a=show&c=content&id=3131",
@@ -145,7 +182,7 @@
           "quote_hash": "de0c10abaf7f677dac65ec33c373785963c0a4250b2163affb6518bde3f24c4e"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

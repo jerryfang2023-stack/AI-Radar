@@ -121,53 +121,61 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
-      "summary": "DG Daiwa Ventures Inc. 官网投资组合页将 Relixir, Inc.（品牌 Naïve）列为现有组合企业，并介绍其开发 AI agent 编排平台。本条采用官网组合页作为公开披露案例，不推断未披露的投资日期与金额。",
+      "summary": "DG Daiwa Ventures 官网列明设立日为2016年7月1日，并将其业务描述为投资拥有下一代技术的初创企业及支持其业务发展。",
       "facts": [
         {
-          "field": "portfolio_company",
-          "label": "公开投资组合",
-          "value": "官网将 Relixir, Inc.（品牌 Naïve）列为现有组合企业。",
-          "source_id": "dgdv"
-        },
-        {
-          "field": "portfolio_company_business",
-          "label": "被投企业业务",
-          "value": "Relixir 提供自动化销售、营销、产品开发与运营工作的 AI agent 编排服务。",
-          "source_id": "dgdv"
+          "field": "investment_approach",
+          "label": "投资业务",
+          "value": "投资拥有下一代技术的初创企业，并提供业务培育支持。",
+          "source_id": "PROFILE-INV-2d3488ec907682-1"
         }
       ],
-      "milestones": [],
-      "track_record": [
+      "milestones": [
         {
-          "description": "官方组合页将 Relixir, Inc.（品牌 Naïve）列为现有组合企业；官网未在该页披露轮次或金额。",
-          "source_id": "dgdv"
-        },
+          "date": "2016-07-01",
+          "description": "官网列明的设立日。",
+          "source_id": "PROFILE-INV-2d3488ec907682-2"
+        }
+      ],
+      "track_record": [
         {
           "description": "融资来源记录：Naïve · 历史轮次未披露 · Seed轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce3d6a1d340a142b"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "档案范围限于官网披露的设立日期与投资业务描述。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [
         {
           "kind": "website",
-          "label": "官方网站",
-          "value": "https://dg-daiwa-v.com/en/portfolio/",
-          "source_id": "dgdv",
-          "url": "https://dg-daiwa-v.com/en/portfolio/"
+          "label": "官网",
+          "value": "DG Daiwa Ventures About Us",
+          "url": "https://dg-daiwa-v.com/about-us/",
+          "source_id": "PROFILE-INV-2d3488ec907682-1"
         }
       ],
       "sources": [
         {
-          "source_id": "dgdv",
-          "source_url": "https://dg-daiwa-v.com/en/portfolio/",
-          "source_title": "PORTFOLIO | DG Daiwa Ventures Inc.",
-          "source_content_hash": "4da473fef0886400fcfae854100e686e58e00bd201a518ab7d741b169b4e67a7",
-          "quote": "enabling direct bank payments for online commerce. Fintech Current Website Relixir, Inc.（Brand: Naïve） Headquarters：USA / Established：2024/ Representative director：Sean Dorje Providing an AI agent orchestration platform automating sales, marketing, product development, and operations. Current Website Kanaglee, ",
-          "quote_hash": "30bba7ea0d58cb15e43034f25b159ff1a17800c01521739622e8cc80fdd893a4"
+          "source_id": "PROFILE-INV-2d3488ec907682-1",
+          "source_url": "https://dg-daiwa-v.com/about-us/",
+          "source_title": "About Us | 株式会社 DG Daiwa Ventures",
+          "source_content_hash": "358b249668dcf0cbb84a88c8ba28ccfa41947b51a73580b2e282bd81194de008",
+          "quote": "次世代技術を有するスタートアップ企業への投資及び事業育成支援",
+          "quote_hash": "2bcf8d37e0a37d988fae7dc358d7d3abf7704e88e7f17f0e8889ec1ff5b79260"
+        },
+        {
+          "source_id": "PROFILE-INV-2d3488ec907682-2",
+          "source_url": "https://dg-daiwa-v.com/about-us/",
+          "source_title": "About Us | 株式会社 DG Daiwa Ventures",
+          "source_content_hash": "358b249668dcf0cbb84a88c8ba28ccfa41947b51a73580b2e282bd81194de008",
+          "quote": "2016年7月1日",
+          "quote_hash": "a4fbf060238e27b31b20a99cbce1e0a3bcd135e08e43c354bbeef4533b557ebf"
         },
         {
           "source_id": "FISRC-ce3d6a1d340a142b",

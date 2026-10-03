@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "World Innovation Lab 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "JVCKENWOOD披露WiL（World Innovation Lab）成立并管理风险投资基金；本档案限于合作方公告可证内容。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "合作方公告确认的机构属性",
+          "value": "风险投资机构，在硅谷和东京设有办公室",
+          "source_id": "PROFILE-1f4b1c469a6e0a-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-94676d99b2defaa4"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "使用合作方发布的原始新闻稿核实机构身份；未依据搜索摘要扩写法律实体或现行基金规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "JVCKENWOOD披露WiL（World Innovation Lab）成立并管理风险投资基金；本档案限于合作方公告可证内容。",
+          "url": "https://wilab.com/",
+          "source_id": "PROFILE-1f4b1c469a6e0a-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-1f4b1c469a6e0a-1",
+          "source_url": "https://www.hakuhodo-global.com/wp_admin/wp-content/uploads/2021/09/RL210901en_WiL-Ventures_F.pdf",
+          "source_title": "wil hakuhodo press",
+          "source_content_hash": "92c2100adf11c0d9a60ae8e72b02038ec3c96e4ebb6a9bc14aa68669fba3fa09",
+          "quote": "Established in 2013, WiL is a venture capital financier with offices in Silicon Valley and Tokyo.",
+          "quote_hash": "15fa14062a637c4e20b05badff5df8eef37f29bd8206d65bf57b07b8290dc7a2"
+        },
         {
           "source_id": "FISRC-94676d99b2defaa4",
           "source_url": "https://lovable.dev/blog/series-c",
@@ -161,7 +188,7 @@
           "quote_hash": "65256cbe24e687fbe64f7aa04cbc338e3a8d1fa61cb2828e035537449817738e"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
