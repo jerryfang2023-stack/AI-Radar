@@ -159,7 +159,8 @@ export function reviewedAiContextQuotes(candidate, body = "") {
       || candidate.review?.decision !== "accept" || !candidate.review?.reviewer
       || candidate.proposal?.action !== "extract_claim"
       || evaluateModelAssistCandidate(candidate, body).length) return [];
-  return (candidate.evidence || []).slice(1).map((item) => item.quote);
+  const claimIndices = new Set((candidate.proposal.claims || []).map((claim) => claim.evidence_index));
+  return (candidate.evidence || []).filter((_, index) => !claimIndices.has(index)).map((item) => item.quote);
 }
 
 export function withGateResult(candidate, body = "") {
