@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Creandum 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-08-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
+      "summary": "Maisa 官方种子轮公告及 Creandum 的项目页显示，Creandum 参与 Maisa 的 2500 万美元种子轮融资。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Maisa 官方公告披露其 2500 万美元种子轮由 Creandum 领投。",
+          "source_id": "PROFILE-ecff37d6c7b5a2c4eb04"
+        },
         {
           "description": "融资来源记录：Maisa AI · 种子轮 · 2025-08-27 · 本轮领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f154528a83a385f1"
@@ -152,6 +156,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-ecff37d6c7b5a2c4eb04",
+          "source_url": "https://maisa.ai/blog/maisa-raises-25m-seed-investment",
+          "source_title": "Maisa raises $25M seed investment - Maisa AI",
+          "source_content_hash": "33741233635e273eb97674694ab2afa7caa690e02da0ed03d785928aff79940a",
+          "quote": "I: making it reliable and safe to use in mission-critical business operations. Peter Specht, General Partner, Creandum Maisa's platform is purpose-built for compliance-conscious industries like finance, where decisions must be traceable and outcomes consistent. Alberto Yepez, Forgepoint Capital International Read Next Are AI agents ready",
+          "quote_hash": "762ff91b6fde6c73cda992c68449b9aea997c5cc471c35aae0fcc5e4bc81ad80"
+        },
+        {
+          "source_id": "PROFILE-fe89681f7f4b8b50051c",
+          "source_url": "https://creandum.com/commitments/maisa/",
+          "source_title": "maisa",
+          "source_content_hash": "6715d458bf9c7f45fba49feda0b0276be709f94866d59a739722a093c4727990",
+          "quote": "maisa Team Commitments Stories Talent Contact Linkedin X Euro Seed 50 Founder Compensation Calculator Legal Privacy policy Sustainability disclosure Our balanced ambition policy Zero tolerance policy TEAM COMMITMENTS STORIES TALEN",
+          "quote_hash": "614ef80200a22663d0f2310c809a84515ccf09ea728243c25f2237037eef4c33"
+        },
         {
           "source_id": "FISRC-f154528a83a385f1",
           "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
@@ -161,7 +181,11 @@
           "quote_hash": "0896f789168d0d998cf127f1803833931810c95ad9246dd6322088bfd9d3890d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

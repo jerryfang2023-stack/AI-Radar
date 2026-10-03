@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "TCV 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
+      "summary": "Fireworks 官方 Series D 公告和 TCV 的投资文章均将 TCV 列为本轮投资方。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Fireworks 官方 Series D 公告将 TCV 列为本轮投资方。",
+          "source_id": "PROFILE-dc7fb3c1965e0667db14"
+        },
         {
           "description": "融资来源记录：Fireworks AI Inc. · D轮 · 2026-07-16 · 本轮联合领投 · $1.505 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0d89e0712245c55b"
@@ -152,6 +156,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-dc7fb3c1965e0667db14",
+          "source_url": "https://fireworks.ai/blog/series-d-announcement",
+          "source_title": "Fireworks Secures $1.5 Billion in Series D Funding",
+          "source_content_hash": "79dee7745c08d127d6182d1603fea85b61fa99f9cdfd49ebe0b8bfff8eb2e8a8",
+          "quote": "unced a $1.505 billion Series D at a $17.5 billion valuation, led by Atreides Management, Index Ventures, and TCV, with participation from Evantic Capital, Lightspeed Venture Partners, Nvidia, 20VC, Bessemer Venture Partners, Menlo Ventures, and others. This milestone comes as Fireworks surpasses $1 billion in annualized revenue run rate",
+          "quote_hash": "7fb78a3d6694e6da291f6e5d30c999adeabec89ff80cbf4410b3b0b12a9a717a"
+        },
+        {
+          "source_id": "PROFILE-0a2381a0a344d901ab71",
+          "source_url": "https://www.tcv.com/news/entering-the-inference-era-our-investment-in-fireworks",
+          "source_title": "Entering the Inference Era: Our Investment in Fireworks | TCV",
+          "source_content_hash": "90380b40cd9114f08c2113f6fe0cc82cccaa435dba8d145cde49ea5f3023b57d",
+          "quote": "Entering the Inference Era: Our Investment in Fireworks | TCV Our Approach Our Partnerships Our Team News & Perspectives AI Perspectives Portfolio News TCV News Thought Leadership Focus Areas Search Contact Terms of Use and Regulatory Disclosures Privacy Policy Subscribe to N",
+          "quote_hash": "68f3d15546f2b68a3104c449e6ebfa3fc1f60c4d0ec90f4d9988b1fd80257951"
+        },
         {
           "source_id": "FISRC-0d89e0712245c55b",
           "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
@@ -161,7 +181,11 @@
           "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
