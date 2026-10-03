@@ -298,12 +298,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Evantic 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Evantic 官网自述为总部位于伦敦、面向全球的风险投资机构，专注投资人工智能公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "面向全球的风险投资机构，官网称其总部位于伦敦。",
+          "source_id": "PROFILE-INV-448f168bca6ce1-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": "人工智能公司。",
+          "source_id": "PROFILE-INV-448f168bca6ce1-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -319,8 +328,40 @@
           "source_id": "FISRC-d5d5c858ca2bcd66"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按官网现行品牌自述建档；不记录官网未披露的基金规模、阶段数量或投资业绩。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Evantic",
+          "url": "https://www.evantic.ai/",
+          "source_id": "PROFILE-INV-448f168bca6ce1-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-448f168bca6ce1-1",
+          "source_url": "https://www.evantic.ai/",
+          "source_title": "Evantic",
+          "source_content_hash": "b5bd819e21e3f6ee5950469dc8df2cd60cf98900776ac4da4f979fe6cfcd27bb",
+          "quote": "Evantic is a globally-focused venture capital firm based in London.",
+          "quote_hash": "100aa79a1da7b8b589cc7f61329e46699c5d03f0344621325fd54f069b352113"
+        },
+        {
+          "source_id": "PROFILE-INV-448f168bca6ce1-2",
+          "source_url": "https://www.evantic.ai/",
+          "source_title": "Evantic",
+          "source_content_hash": "b5bd819e21e3f6ee5950469dc8df2cd60cf98900776ac4da4f979fe6cfcd27bb",
+          "quote": "We aim to invest in and partner with the best rising AI companies in the world.",
+          "quote_hash": "509c804ddb4cc11f7b3dac8a404c45503ef6bd98128c0709eac4be0a6abdd1c4"
+        },
         {
           "source_id": "FISRC-3511f7baf76701e3",
           "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
@@ -346,7 +387,7 @@
           "quote_hash": "c935e5b3d87073d8b068adab229cced4f2d0b39685f471c2b175c6d6ff2d7993"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

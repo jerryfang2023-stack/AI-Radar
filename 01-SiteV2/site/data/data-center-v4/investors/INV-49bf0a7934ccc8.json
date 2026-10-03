@@ -178,12 +178,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "招银国际资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "招银国际资本管理（深圳）有限公司是招银国际境内私募股权投资团队所在主体；招银国际官网称其私募股权投资由境内外团队共同负责。",
+      "facts": [
+        {
+          "field": "parent_organization",
+          "label": "集团主体",
+          "value": "招银国际金融有限公司是招商银行股份有限公司的全资附属机构。",
+          "source_id": "PROFILE-INV-49bf0a7934ccc8-1"
+        },
+        {
+          "field": "investment_team",
+          "label": "境内私募股权主体",
+          "value": "招银国际资本管理（深圳）有限公司。",
+          "source_id": "PROFILE-INV-49bf0a7934ccc8-3"
+        },
+        {
+          "field": "investment_activity",
+          "label": "投资业务",
+          "value": "招银国际私募股权投资由境内外团队共同负责。",
+          "source_id": "PROFILE-INV-49bf0a7934ccc8-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,8 +210,48 @@
           "source_id": "FISRC-7ef228d0192ff7f5"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "官网同时介绍招银国际金融有限公司及其子公司。本档案聚焦官网明确提到的境内私募股权团队，不把集团、资管子公司和境内投资主体视为同一法律实体。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网资产管理介绍",
+          "value": "招银国际金融有限公司",
+          "url": "https://www.cmbi.com/zh-CN/assetManagement",
+          "source_id": "PROFILE-INV-49bf0a7934ccc8-2"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-49bf0a7934ccc8-1",
+          "source_url": "https://www.cmbi.com/zh-CN/about-us",
+          "source_title": "关于我们 - 招银国际金融有限公司",
+          "source_content_hash": "b5e6d610119789ab2bcc86e9f87ccf72874eaa6173db8c40179642e030dc5d08",
+          "quote": "招银国际金融有限公司",
+          "quote_hash": "10c0e92a7e3e1b73eb36721744f6fcb794d6eacd2b210fc94f573f9b3dd08075"
+        },
+        {
+          "source_id": "PROFILE-INV-49bf0a7934ccc8-2",
+          "source_url": "https://www.cmbi.com/zh-CN/assetManagement",
+          "source_title": "资产管理 - 招银国际金融有限公司",
+          "source_content_hash": "c224dfde5dbbdeea7ca57cdfb86a6b31bb17a5b17d03aa10135ad872b77ae0b9",
+          "quote": "招银国际私募股权投资由境内外团队共同负责",
+          "quote_hash": "84b103b41a1370ac53ae8d10910283477fbd8b16057f1614ca4bf792a6137435"
+        },
+        {
+          "source_id": "PROFILE-INV-49bf0a7934ccc8-3",
+          "source_url": "https://www.cmbi.com/zh-CN/assetManagement",
+          "source_title": "资产管理 - 招银国际金融有限公司",
+          "source_content_hash": "c224dfde5dbbdeea7ca57cdfb86a6b31bb17a5b17d03aa10135ad872b77ae0b9",
+          "quote": "境内团队设立在招银国际资本管理（深圳）有限公司",
+          "quote_hash": "d2fba86b5289fa6e084e58d6185ee6a9b91ca8217446be032f3dcb1a4e76a1a6"
+        },
         {
           "source_id": "FISRC-13a43855ea188967",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",

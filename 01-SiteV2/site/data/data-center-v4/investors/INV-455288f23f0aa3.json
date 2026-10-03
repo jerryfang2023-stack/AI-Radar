@@ -178,12 +178,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "道远资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "道远资本管理（北京）有限公司的法律名称、成立日期与投资管理经营范围见深圳证券交易所披露的上市公司招股说明书。该材料还列出其担任基金普通合伙人。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体",
+          "value": "道远资本管理（北京）有限公司。",
+          "source_id": "PROFILE-INV-455288f23f0aa3-1"
+        },
+        {
+          "field": "founded",
+          "label": "成立日期",
+          "value": "2013年8月30日（2022年招股说明书披露）。",
+          "source_id": "PROFILE-INV-455288f23f0aa3-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "披露的经营范围",
+          "value": "项目投资、投资管理、经济信息咨询。",
+          "source_id": "PROFILE-INV-455288f23f0aa3-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,8 +210,40 @@
           "source_id": "FISRC-f9c8fdd671d3e193"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "引用的是2022年招股说明书上会稿，事实仅按披露时点记录；不将历史注册资本、地址或单支基金活动外推为当前机构规模和策略。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "上市公司招股说明书",
+          "value": "深圳证券交易所披露文件",
+          "url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202207/RAS_202207_000181F821505D3FEF4FFB818AB5303F.pdf",
+          "source_id": "PROFILE-INV-455288f23f0aa3-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-455288f23f0aa3-1",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202207/RAS_202207_000181F821505D3FEF4FFB818AB5303F.pdf",
+          "source_title": "四川沃文特生物工程股份有限公司招股说明书（上会稿）—道远资本管理（北京）有限公司",
+          "source_content_hash": "a29f05f4a2923b9f262af8c60a1df82edc7a00106a9f582b793ac29c993d7a9c",
+          "quote": "道远资本管理（北京）有限公司 名称 道远资本管理（北京）有限公司 成立日期 2013 年 8 月 30 日",
+          "quote_hash": "31ec36bf1e538529ef8301e16cec02446dd67a4dbf5d07e4913a2d97c6b45216"
+        },
+        {
+          "source_id": "PROFILE-INV-455288f23f0aa3-2",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202207/RAS_202207_000181F821505D3FEF4FFB818AB5303F.pdf",
+          "source_title": "四川沃文特生物工程股份有限公司招股说明书（上会稿）—道远资本管理（北京）有限公司",
+          "source_content_hash": "a29f05f4a2923b9f262af8c60a1df82edc7a00106a9f582b793ac29c993d7a9c",
+          "quote": "项目投资；投资管理；经济信息咨询。",
+          "quote_hash": "91aa71a765a9aabc747f59e866b52ba0e6219d7bf9da25602f2d473693afa66c"
+        },
         {
           "source_id": "FISRC-cb7eea4a6bd98034",
           "source_url": "https://news.pedaily.cn/202606/565032.shtml",
@@ -214,7 +261,7 @@
           "quote_hash": "b8669b32ddc138938a94380ccc60055647f870685da1a45bec4f8ac2e9e3ffcd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

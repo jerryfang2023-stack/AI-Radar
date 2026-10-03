@@ -179,13 +179,34 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "杭州资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "杭州市国有资本投资运营有限公司以“杭州资本”为简称，是覆盖早期科创至中后期产业投资的市级国有资本投资运营公司。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体",
+          "value": "杭州市国有资本投资运营有限公司。",
+          "source_id": "PROFILE-INV-452838e1cd0ba7-1"
+        },
+        {
+          "field": "short_name",
+          "label": "官网简称",
+          "value": "杭州资本。",
+          "source_id": "PROFILE-INV-452838e1cd0ba7-1"
+        },
+        {
+          "field": "investment_positioning",
+          "label": "投资定位",
+          "value": "早期科创投资至中后期产业投资的全生命周期国有资本投资运营公司。",
+          "source_id": "PROFILE-INV-452838e1cd0ba7-2"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018-11",
+          "description": "官网记载组建时间。",
+          "source_id": "PROFILE-INV-452838e1cd0ba7-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：星动纪元 · 轮次未披露 · 2026-07-06 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -196,8 +217,40 @@
           "source_id": "FISRC-c87caae716bd4910"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "法律主体和简称由公司官网明确说明；仅记录业务定位与基金板块，不收录会随时点变化的合并资产、基金批复规模及项目数量。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "杭州市国有资本投资运营有限公司",
+          "url": "https://www.hzzbco.com/about",
+          "source_id": "PROFILE-INV-452838e1cd0ba7-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-452838e1cd0ba7-1",
+          "source_url": "https://www.hzzbco.com/about",
+          "source_title": "杭州市国有资本投资运营有限公司官网",
+          "source_content_hash": "f3aa64f50cf30751fbaed8e334280010c8f543d2fc1c678544ae78f284663f2d",
+          "quote": "杭州市国有资本投资运营有限公司（以下简称“杭州资本”）组建于2018年11月，注册资本100亿元。",
+          "quote_hash": "55e07afb4c1533d4ad9273f0cd5211bba2d2e3966c0742acb33c9c33f51604b3"
+        },
+        {
+          "source_id": "PROFILE-INV-452838e1cd0ba7-2",
+          "source_url": "https://www.hzzbco.com/about",
+          "source_title": "杭州市国有资本投资运营有限公司官网",
+          "source_content_hash": "f3aa64f50cf30751fbaed8e334280010c8f543d2fc1c678544ae78f284663f2d",
+          "quote": "从早期科创投资到中后期产业投资全生命周期的国有资本投资运营公司",
+          "quote_hash": "a4c3d3dcfbed8856fbfd395111af16a90f1258bd7d737dbf14683773659124d8"
+        },
         {
           "source_id": "FISRC-8c073d38e1f34758",
           "source_url": "https://news.pedaily.cn/202607/565883.shtml",
@@ -215,7 +268,7 @@
           "quote_hash": "d1782b6345ba31c76be82efecc33606551550f3fb19eb67c5bf09850c3e8a10a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Draper Associates 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Draper Associates 是面向高影响力公司的全球风险投资机构，官网列出的投资领域包括人工智能、机器人、医疗健康、航天及非常规创意。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "全球风险投资机构。",
+          "source_id": "PROFILE-INV-4dd9283d234e3e-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列出的投资领域",
+          "value": "人工智能、机器人与自动化、医疗健康与生物科技、航天，以及非常规创意等。",
+          "source_id": "PROFILE-INV-4dd9283d234e3e-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-199e9e6224efb819"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向按官网现行投资论述概括，不纳入官网展示的动态管理资产、投资数量等指标。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Draper Associates",
+          "url": "https://www.draper.vc/",
+          "source_id": "PROFILE-INV-4dd9283d234e3e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-4dd9283d234e3e-1",
+          "source_url": "https://www.draper.vc/",
+          "source_title": "DRAPER ASSOCIATES | 40+ Years Funding Transformative Tech",
+          "source_content_hash": "63ef5945980fb26d6a16174711f01d7498b5c02dc3491fa7080a88cef412585b",
+          "quote": "DRAPER ASSOCIATES is a global venture capital FIRM for world-shaping companies.",
+          "quote_hash": "0d67332ffbf19f0861e568e01e78fa74af7de326560603382dbef657f52e6811"
+        },
+        {
+          "source_id": "PROFILE-INV-4dd9283d234e3e-2",
+          "source_url": "https://www.draper.vc/",
+          "source_title": "DRAPER ASSOCIATES | 40+ Years Funding Transformative Tech",
+          "source_content_hash": "63ef5945980fb26d6a16174711f01d7498b5c02dc3491fa7080a88cef412585b",
+          "quote": "AI, Robotics & Automation Crypto & Blockchain Healthcare & Biotech Aerospace & Space Unconventional Ideas",
+          "quote_hash": "d4ebde68d8bbee96cf06b17fc43db745acd6ae91c8760cfc5c19dbd31562509b"
+        },
         {
           "source_id": "FISRC-199e9e6224efb819",
           "source_url": "https://www.globenewswire.com/news-release/2026/07/07/3323663/0/en/AIsa-Raises-6-5M-Co-Led-by-Alibaba-and-Tribe-Capital-to-Build-the-Transaction-Network-for-AI-Agents.html",
@@ -161,7 +202,7 @@
           "quote_hash": "87aab5143043930ac5e2cf2eb148ce1fbb223b98f5d5cf807eb2cd0c27cc865d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

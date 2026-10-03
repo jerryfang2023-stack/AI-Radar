@@ -121,12 +121,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "柯力传感 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "宁波柯力传感科技股份有限公司是传感器及工业物联网企业，官网另行披露其产业投资战略、三个投资中心以及生态投资成果。本条仅记录集团级产业投资活动，不将其描述为独立VC基金管理人。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网主体名称",
+          "value": "宁波柯力传感科技股份有限公司。",
+          "source_id": "PROFILE-INV-51293f7a23474b-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "集团级投资活动",
+          "value": "官网将产业投资及生态建设列入集团战略。",
+          "source_id": "PROFILE-INV-51293f7a23474b-2"
+        },
+        {
+          "field": "investment_centers",
+          "label": "投资组织",
+          "value": "官网列出宁波、深圳、郑州三个投资中心。",
+          "source_id": "PROFILE-INV-51293f7a23474b-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +149,48 @@
           "source_id": "FISRC-3bc1b2f58c3d4a86"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "投资活动由企业自身官网明确列为战略和业务布局；公司主营产品与集团产业投资活动分开表述。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网投资与生态页面",
+          "value": "柯力传感",
+          "url": "https://kelichina.com/invest/industry/",
+          "source_id": "PROFILE-INV-51293f7a23474b-2"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-51293f7a23474b-1",
+          "source_url": "https://kelichina.com/",
+          "source_title": "宁波柯力传感科技股份有限公司",
+          "source_content_hash": "11a4d602a33a0975e0d49c539d3ae7bc046cf397ad914683ccaf26cebb10b110",
+          "quote": "宁波柯力传感科技股份有限公司",
+          "quote_hash": "3f9b42ba513922fff1cc4215b197dbb5ac6d099937e60987257e8963ec82a4d4"
+        },
+        {
+          "source_id": "PROFILE-INV-51293f7a23474b-2",
+          "source_url": "https://kelichina.com/invest/industry/",
+          "source_title": "产业生态投资_宁波柯力传感科技股份有限公司",
+          "source_content_hash": "e56a8b6555e84ec465e6430ef96ae1c4f3c63a1710ab3682329d28bd72861df0",
+          "quote": "以产业投资化+产业集团化+产业园区化+产业生态化+产业资本化为核心，培育传感器森林",
+          "quote_hash": "24b5e54c3a68bc4d64699d37908a2d3bd6c5ecc43b5c573e8b6884375477e6c9"
+        },
+        {
+          "source_id": "PROFILE-INV-51293f7a23474b-3",
+          "source_url": "https://kelichina.com/invest/industry/",
+          "source_title": "产业生态投资_宁波柯力传感科技股份有限公司",
+          "source_content_hash": "e56a8b6555e84ec465e6430ef96ae1c4f3c63a1710ab3682329d28bd72861df0",
+          "quote": "三大投资中心",
+          "quote_hash": "7eb20dd7a6b220bab9807e5e050a260dd572e7e718cf64a6d160e478fc16dd8b"
+        },
         {
           "source_id": "FISRC-3bc1b2f58c3d4a86",
           "source_url": "https://news.pedaily.cn/202606/565268.shtml",

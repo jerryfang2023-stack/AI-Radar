@@ -180,12 +180,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "HongShan 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "红杉中国（HongShan）是专注科技、医疗和消费领域的私募股权投资机构。官网记载其成立于2005年，并覆盖早期、成长期、并购及公开市场投资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "私募股权投资机构。",
+          "source_id": "PROFILE-INV-501e548d4594c0-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网所述重点领域",
+          "value": "科技、医疗及消费。",
+          "source_id": "PROFILE-INV-501e548d4594c0-1"
+        },
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2005年。",
+          "source_id": "PROFILE-INV-501e548d4594c0-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -197,8 +212,40 @@
           "source_id": "FISRC-e424026c5a172d4b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按红杉中国官网现行自述记录机构定位和领域；不将动态被投企业数量写入稳定档案。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网关于页面",
+          "value": "红杉中国（HongShan）",
+          "url": "https://www.hongshan.com/about-us/",
+          "source_id": "PROFILE-INV-501e548d4594c0-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-501e548d4594c0-1",
+          "source_url": "https://www.hongshan.com/about-us/",
+          "source_title": "关于我们 - 红杉",
+          "source_content_hash": "4a9affde540e0b968a411bab342e13bffcb087e9d694268470600ac0415b2c35",
+          "quote": "红杉中国是专注于投资科技、医疗、消费三大领域的私募股权投资机构。",
+          "quote_hash": "d582835c8a3cc5c4d4d3d69c8d138230332fb8181b3ce0129738e2f9b2a602de"
+        },
+        {
+          "source_id": "PROFILE-INV-501e548d4594c0-2",
+          "source_url": "https://www.hongshan.com/about-us/",
+          "source_title": "关于我们 - 红杉",
+          "source_content_hash": "4a9affde540e0b968a411bab342e13bffcb087e9d694268470600ac0415b2c35",
+          "quote": "自2005年成立以来",
+          "quote_hash": "bed7239f20d9cc1bbe071916eed3aa2e46481b2ca963b6d17549d1574107243a"
+        },
         {
           "source_id": "FISRC-199e9ff185705c78",
           "source_url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
@@ -216,7 +263,7 @@
           "quote_hash": "befa1e37800e3a886b0b0ec2505289bc025eea4af0deec98f7350714854ab469"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -179,12 +179,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "浦耀信晔 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "上海浦耀信晔投资管理有限公司管理上海浦创华章私募股权基金。中国太平洋保险（集团）2025年关联交易披露列明其基金管理人身份、法定名称和主要业务范围。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体",
+          "value": "上海浦耀信晔投资管理有限公司。",
+          "source_id": "PROFILE-INV-430ea1b4227902-1"
+        },
+        {
+          "field": "fund_management",
+          "label": "基金管理活动",
+          "value": "2025年披露中被列为上海浦创华章私募股权基金管理人。",
+          "source_id": "PROFILE-INV-430ea1b4227902-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "披露的主营业务",
+          "value": "投资管理及咨询、资产管理、企业管理咨询等。",
+          "source_id": "PROFILE-INV-430ea1b4227902-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -196,8 +211,40 @@
           "source_id": "FISRC-fdfe58e2e68c7e9e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据保险公司监管披露确认法律主体与2025年基金管理活动；文中基金出资和管理费属于交易个案，不作为浦耀信晔自身规模或投资表现。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "监管关联交易披露",
+          "value": "中国太平洋保险（集团）披露公告",
+          "url": "https://www.cpic.com.cn/upload/resources/file/2025/06/25/87699.pdf",
+          "source_id": "PROFILE-INV-430ea1b4227902-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-430ea1b4227902-1",
+          "source_url": "https://www.cpic.com.cn/upload/resources/file/2025/06/25/87699.pdf",
+          "source_title": "中国太平洋保险（集团）股份有限公司关于投资上海浦创华章基金的关联交易信息披露公告",
+          "source_content_hash": "c9184b5493dce01e9cab3b6deae45449e7f8f1bd4e34437fce92e7605a24e900",
+          "quote": "上海浦创华章基金的基金管理人是上海浦耀信晔，为本公司的关联方。",
+          "quote_hash": "dc5a0164430131e274acd9951f9406be652c2ce93475331838bfbd5bb74fd671"
+        },
+        {
+          "source_id": "PROFILE-INV-430ea1b4227902-2",
+          "source_url": "https://www.cpic.com.cn/upload/resources/file/2025/06/25/87699.pdf",
+          "source_title": "中国太平洋保险（集团）股份有限公司关于投资上海浦创华章基金的关联交易信息披露公告",
+          "source_content_hash": "c9184b5493dce01e9cab3b6deae45449e7f8f1bd4e34437fce92e7605a24e900",
+          "quote": "投资管理及咨询，资产管理，企业管理咨询",
+          "quote_hash": "a69c82df9685e77f0d7a196415d6bbd93a6d8e31c58b92adfbf777bba8cce3a7"
+        },
         {
           "source_id": "FISRC-0fc87012f374b083",
           "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
@@ -215,7 +262,7 @@
           "quote_hash": "53c9480b4646fcc1fd65da934701618dc003988b0ef3135b3c5adca43f6da522"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

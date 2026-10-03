@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "MoreTech 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "MoreTech Ventures 官网称其成立于2020年，关注以色列及与以色列相关的成长期投资机会，覆盖多个市场领域。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2020年。",
+          "source_id": "PROFILE-INV-4811b08a9e7f4f-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "成长期。",
+          "source_id": "PROFILE-INV-4811b08a9e7f4f-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注范围",
+          "value": "以色列及与以色列相关的多个市场领域。",
+          "source_id": "PROFILE-INV-4811b08a9e7f4f-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-5b1ac109014789f1"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按机构官网自述记录品牌、设立年份及投资阶段；不补充官网未证实的法律主体或基金规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "MoreTech Ventures",
+          "url": "https://www.moretech.vc/",
+          "source_id": "PROFILE-INV-4811b08a9e7f4f-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-4811b08a9e7f4f-1",
+          "source_url": "https://www.moretech.vc/",
+          "source_title": "MoreTech VC",
+          "source_content_hash": "b1395cbca2cd8432c320ea7a887e671926f28fa6e516759abca5a4360f9d0692",
+          "quote": "MoreTech Ventures was founded in 2020",
+          "quote_hash": "2a6feb2853bfccb6b430928bff36b4259c934c708a842836cde485106124b8b8"
+        },
+        {
+          "source_id": "PROFILE-INV-4811b08a9e7f4f-2",
+          "source_url": "https://www.moretech.vc/",
+          "source_title": "MoreTech VC",
+          "source_content_hash": "b1395cbca2cd8432c320ea7a887e671926f28fa6e516759abca5a4360f9d0692",
+          "quote": "We focus on Israeli and Israeli-related growth-stage investment opportunities, across all market segments.",
+          "quote_hash": "19e18de3797faeef30f64f977f7ec2929ffc03b9f459aab1f5ec1334cf064c59"
+        },
         {
           "source_id": "FISRC-5b1ac109014789f1",
           "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
@@ -161,7 +208,7 @@
           "quote_hash": "7067b0f2a0ffecb0c09ed46fcb3bc2d25cf3cf0a4480de2e3ba2c23de4bb1a6c"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

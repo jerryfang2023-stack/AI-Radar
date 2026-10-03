@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Nikhil Kamath 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Nikhil Kamath 是 Zerodha 联合创始人兼首席财务官。Zerodha 官方人物介绍称他是有经验的投资者，并负责公司的财务规划。",
+      "facts": [
+        {
+          "field": "current_roles",
+          "label": "现任职务",
+          "value": "Zerodha联合创始人兼首席财务官。",
+          "source_id": "PROFILE-INV-48759ab08eca3c-2"
+        },
+        {
+          "field": "investment_experience",
+          "label": "官网人物描述",
+          "value": "有经验的投资者。",
+          "source_id": "PROFILE-INV-48759ab08eca3c-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,54 @@
           "source_id": "FISRC-7e709202ce99cc8e"
         }
       ],
-      "contacts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据Zerodha官方团队页面确认个人身份、公司职务和投资者身份；不推断其个人投资组合或未公开投资记录。",
+      "current_roles": [
+        {
+          "organization": "Zerodha",
+          "title": "联合创始人、首席财务官",
+          "source_id": "PROFILE-INV-48759ab08eca3c-2"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Zerodha团队介绍",
+          "value": "Nikhil Kamath",
+          "url": "https://zerodha.com/about",
+          "source_id": "PROFILE-INV-48759ab08eca3c-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-48759ab08eca3c-1",
+          "source_url": "https://zerodha.com/about",
+          "source_title": "Our company, history, and the people behind it",
+          "source_content_hash": "870dfe9c22ac48f5e368c9ebca6db6e720c187e9a4461573d34ed37ff0057bab",
+          "quote": "Nikhil Kamath",
+          "quote_hash": "7e7b3e97381518d036a6a8c2550e80714acf6388ad0f24b89c04a926ec59aa1d"
+        },
+        {
+          "source_id": "PROFILE-INV-48759ab08eca3c-2",
+          "source_url": "https://zerodha.com/about",
+          "source_title": "Our company, history, and the people behind it",
+          "source_content_hash": "870dfe9c22ac48f5e368c9ebca6db6e720c187e9a4461573d34ed37ff0057bab",
+          "quote": "Co-founder & CFO",
+          "quote_hash": "a3f469db82e7378899e965c44058d1366a302ecb82224001b8641509e9355ed6"
+        },
+        {
+          "source_id": "PROFILE-INV-48759ab08eca3c-3",
+          "source_url": "https://zerodha.com/about",
+          "source_title": "Our company, history, and the people behind it",
+          "source_content_hash": "870dfe9c22ac48f5e368c9ebca6db6e720c187e9a4461573d34ed37ff0057bab",
+          "quote": "Nikhil is an astute and experienced investor, and he heads financial planning at Zerodha.",
+          "quote_hash": "bc38bdd807cfdf08ef26eae44ecace1c31e1fefcb1645b65c1e43e843ec5376b"
+        },
         {
           "source_id": "FISRC-7e709202ce99cc8e",
           "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
@@ -161,7 +216,7 @@
           "quote_hash": "c255cf67574e4c0a61a71a835a9950747856dd3b6b1ee07474870bbba856720c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

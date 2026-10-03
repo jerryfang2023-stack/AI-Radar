@@ -193,12 +193,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "42CAP 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "42CAP 是欧洲风险投资合伙机构，官网称其以种子轮投资欧洲具有全球发展目标的B2B软件、数据和技术驱动型公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "风险投资合伙机构。",
+          "source_id": "PROFILE-INV-4c147c043d37de-2"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子轮。",
+          "source_id": "PROFILE-INV-4c147c043d37de-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": "欧洲具有全球发展目标的B2B软件、AI、数据和技术驱动型公司。",
+          "source_id": "PROFILE-INV-4c147c043d37de-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -210,8 +225,40 @@
           "source_id": "FISRC-4dc390804d079769"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据42CAP官网自述；不推断未经页面确认的法律登记名称或基金规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "42CAP",
+          "url": "https://www.42cap.com/",
+          "source_id": "PROFILE-INV-4c147c043d37de-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-4c147c043d37de-1",
+          "source_url": "https://www.42cap.com/",
+          "source_title": "42CAP",
+          "source_content_hash": "133f60991790cd3dbb6a41b0ef35d9d31511a470301de3e36d969514cb2a1ef3",
+          "quote": "We initially invest € 0.5 to 3m in seed-stage tech- and data-driven B2B software companies across Europe with global ambition.",
+          "quote_hash": "5256f3592a81beb1de64adca0a9e7d97d93fa8ecaef8df4f4f3e3e5e69cd2e10"
+        },
+        {
+          "source_id": "PROFILE-INV-4c147c043d37de-2",
+          "source_url": "https://www.42cap.com/point-of-view",
+          "source_title": "Point of View",
+          "source_content_hash": "bd8cc9b1d90bde6d741d95a963663095f906fba563ff976bd2e07677a01409ad",
+          "quote": "we started fresh as small VC partnership with a clear focus: B2B Software / AI",
+          "quote_hash": "5873a0dbbe02d2799a0387271d93515650802595e852ec5787f1b2cecfb933a7"
+        },
         {
           "source_id": "FISRC-57c1c364a7f270ee",
           "source_url": "https://tech.eu/2026/10/01/deepslate-secures-eur77m-for-its-european-voice-ai-platform/",
@@ -229,7 +276,7 @@
           "quote_hash": "7210a96814a82e3e8392379255027cb96e86dd45ca3f5dd0e7390c7c154ac689"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

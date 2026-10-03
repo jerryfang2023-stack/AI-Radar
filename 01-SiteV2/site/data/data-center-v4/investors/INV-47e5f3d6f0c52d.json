@@ -178,13 +178,34 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "紫竹科投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "上海紫竹科技产业投资有限公司是紫竹高新区的科创投资平台；园区官方报道记录其基金代表以投资机构身份参加技术成果对接活动。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体",
+          "value": "上海紫竹科技产业投资有限公司。",
+          "source_id": "PROFILE-INV-47e5f3d6f0c52d-1"
+        },
+        {
+          "field": "organization_role",
+          "label": "平台定位",
+          "value": "紫竹高新区的科创投资平台。",
+          "source_id": "PROFILE-INV-47e5f3d6f0c52d-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "公开活动",
+          "value": "紫竹科投基金代表参加园区技术成果对接活动。",
+          "source_id": "PROFILE-INV-47e5f3d6f0c52d-2"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023",
+          "description": "园区官方报道记载上海紫竹科技产业投资有限公司于2023年正式成立。",
+          "source_id": "PROFILE-INV-47e5f3d6f0c52d-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：索格智算 · 种子轮 · 2026-03-10 · 本轮参投 · 超千万元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -195,8 +216,40 @@
           "source_id": "FISRC-83520370495890c1"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "采用园区官方对科创投资平台及其投资活动的披露；仅确认主体与活动，不把该次活动外推为基金组合、投资策略或管理规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "园区官方报道",
+          "value": "紫竹国家高新技术产业开发区",
+          "url": "https://www.zizhupark.com/news/view/5264",
+          "source_id": "PROFILE-INV-47e5f3d6f0c52d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-47e5f3d6f0c52d-1",
+          "source_url": "https://www.zizhupark.com/news/view/5264",
+          "source_title": "“上海交大-紫竹高新区”概念验证合作协议签约仪式圆满举行 - 紫竹国家高新技术产业开发区",
+          "source_content_hash": "2cebfa241ea482920cf67fb0a82b4cf0a658a5a51f28e821bdb47b890274cfa2",
+          "quote": "高新区科创投资平台——上海紫竹科技产业投资有限公司已于2023年正式成立",
+          "quote_hash": "43904f2700dd4e8d6b99887036c581d2ae7ef9f542a126286471005af73a7930"
+        },
+        {
+          "source_id": "PROFILE-INV-47e5f3d6f0c52d-2",
+          "source_url": "https://www.zizhupark.cn/news/view/5597",
+          "source_title": "中国民航大学知识产权与成果转化中心上海紫竹分中心2026技术成果对接系列活动（第一期）举办 - 紫竹国家高新技术产业开发区",
+          "source_content_hash": "6bc600f0a436318a7a58c519a27f71245d6b0b4f760530c1ce52e6a76772887e",
+          "quote": "紫竹科投基金、香柏基金等多家投资机构代表参加",
+          "quote_hash": "546b6d2b7bfc3c5b340741db8c120714bf30de3ec953b6783924b32a1e6067a6"
+        },
         {
           "source_id": "FISRC-9f36031395f1eea5",
           "source_url": "https://www.sohu.com/a/994877486_121124378",
@@ -214,7 +267,7 @@
           "quote_hash": "f68ae3c633aad4ada07fd725346f8a5f981fb6968e48703ad8c4beb6d98800e5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

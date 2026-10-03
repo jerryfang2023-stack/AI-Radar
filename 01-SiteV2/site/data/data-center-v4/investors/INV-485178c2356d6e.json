@@ -121,21 +121,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Ron Baron 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Ron Baron 是 Baron Capital 的创始人、首席执行官和投资组合经理。其官方人物页记载，他于1982年创立该公司。",
+      "facts": [
+        {
+          "field": "current_roles",
+          "label": "现任职务",
+          "value": "Baron Capital 创始人、首席执行官及投资组合经理。",
+          "source_id": "PROFILE-INV-485178c2356d6e-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1982",
+          "description": "创立 Baron Capital。",
+          "source_id": "PROFILE-INV-485178c2356d6e-2"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：SpaceX · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0349532f469a6b45"
         }
       ],
-      "contacts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "采用Baron Capital官方人物介绍；不将其基金业绩或动态资产规模写入个人档案。",
+      "current_roles": [
+        {
+          "organization": "Baron Capital",
+          "title": "创始人、首席执行官、投资组合经理",
+          "source_id": "PROFILE-INV-485178c2356d6e-1"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Baron Capital人物页",
+          "value": "Ron Baron",
+          "url": "https://www.baroncapitalgroup.com/bio/ron-baron",
+          "source_id": "PROFILE-INV-485178c2356d6e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-485178c2356d6e-1",
+          "source_url": "https://www.baroncapitalgroup.com/bio/ron-baron",
+          "source_title": "| Baron Funds",
+          "source_content_hash": "7a5dd1a6e97589d13b16e55e5bb03e2961aaa8caa83420a50b6fcbc5bb48e69d",
+          "quote": "Ron Baron is Founder, Chief Executive Officer, and a Portfolio Manager at Baron Capital.",
+          "quote_hash": "5b7b5ff963f4e8c952ef5624011014f6431db1437db70a2cef5c1cc1edb80d4e"
+        },
+        {
+          "source_id": "PROFILE-INV-485178c2356d6e-2",
+          "source_url": "https://www.baroncapitalgroup.com/bio/ron-baron",
+          "source_title": "| Baron Funds",
+          "source_content_hash": "7a5dd1a6e97589d13b16e55e5bb03e2961aaa8caa83420a50b6fcbc5bb48e69d",
+          "quote": "He founded the Firm in 1982",
+          "quote_hash": "37953f94d0dc4de568dcb352054f8be59f82244be73b6c1c86453ba54cc542a7"
+        },
         {
           "source_id": "FISRC-0349532f469a6b45",
           "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",

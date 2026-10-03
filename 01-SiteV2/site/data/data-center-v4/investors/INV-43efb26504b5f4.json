@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "盈富泰克 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "盈富泰克创业投资有限公司是一家私募股权、创业投资基金管理人，公开披露的投资领域包括信息技术、集成电路和软件等。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构名称",
+          "value": "盈富泰克创业投资有限公司。",
+          "source_id": "PROFILE-INV-43efb26504b5f4-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开投资领域",
+          "value": "信息技术，包括集成电路、软件等及相关行业。",
+          "source_id": "PROFILE-INV-43efb26504b5f4-1"
+        },
+        {
+          "field": "fund_manager_status",
+          "label": "协会登记",
+          "value": "该公告称其登记为私募股权、创业投资基金管理人。",
+          "source_id": "PROFILE-INV-43efb26504b5f4-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-3561e00f46398605"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "主体名称、投资领域与协会登记信息依据上市公司投资公告；不与名称相近的“盈富泰克（北京）科技创新基金”或 IPV 香港基金主体混并。披露日期为2023年。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "上市公司投资披露",
+          "value": "CNINFO公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2023-02-17/1215888166.PDF",
+          "source_id": "PROFILE-INV-43efb26504b5f4-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-43efb26504b5f4-1",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-02-17/1215888166.PDF",
+          "source_title": "专业投资机构基本情况—盈富泰克创业投资有限公司（CNINFO披露）",
+          "source_content_hash": "2d0bc432aec8880d81ac1ff5a8177217bf2440fbdc9f72b3fa0f2fb26a900f84",
+          "quote": "主要投资领域：信息技术，包括集成电路、软件等及相关行业",
+          "quote_hash": "49e98a7222e0b66cd137ef12da5fead9696129c773084478bd5c515a097bc0c4"
+        },
+        {
+          "source_id": "PROFILE-INV-43efb26504b5f4-2",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-02-17/1215888166.PDF",
+          "source_title": "专业投资机构基本情况—盈富泰克创业投资有限公司（CNINFO披露）",
+          "source_content_hash": "2d0bc432aec8880d81ac1ff5a8177217bf2440fbdc9f72b3fa0f2fb26a900f84",
+          "quote": "盈富泰克创业投资有限公司已根据《私募投资基金监督管理办法》等法律法规的要求，在中国证券投资基金业协会登记为私募股权、创业投资基金管理人",
+          "quote_hash": "692e33a6da0d60b5c6ddb4e7898ecebc6bd8cff632e04839dffaee0c8fc74832"
+        },
         {
           "source_id": "FISRC-3561e00f46398605",
           "source_url": "https://m.pedaily.cn/news/569132",
@@ -161,7 +208,7 @@
           "quote_hash": "e587d3e629c52159cb3f9d0b0d6cfd6a32caaa8e53da41d8a0dcfecfe18a0140"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
