@@ -137,31 +137,56 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "浙创科技 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "基金管理人和母基金策略依据集团公示；融资参与依据被投企业融资报道，不代表完整投资组合。",
+      "summary": "浙江省创新投资集团的公示将“浙创科技”对应浙江省创新科技私募基金管理有限公司，并说明其管理浙江省科创母基金（二期）；蜂巢互联融资报道也将浙创科技列为区域国资股东。本档只覆盖已披露信息。",
+      "facts": [
+        {
+          "field": "fund_manager",
+          "label": "管理人",
+          "value": "浙江省创新科技私募基金管理有限公司",
+          "source_id": "PROFILE-94ae1ef56c044fe79623"
+        },
+        {
+          "field": "fund_strategy",
+          "label": "管理基金运作",
+          "value": "子基金与直投并行，重点支持早期科创企业",
+          "source_id": "PROFILE-94ae1ef56c044fe79623"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：蜂巢互联 · 多轮融资 · 2026-08-26 · 本轮参投 · 12亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "蜂巢互联融资报道将浙创科技列为区域国资股东。",
           "source_id": "FISRC-6d442164db5f81db"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-94ae1ef56c044fe79623",
+          "source_url": "https://www.zjfh.cn/publicDetail_9_1531",
+          "source_title": "浙江省创新投资集团有限公司-公示公告",
+          "source_content_hash": "f9295fd54104f3a4028b2aa7f44f1df21bde53fd16822553d2ff4693e429d6e8",
+          "quote": "管理人为浙江省创新科技私募基金管理有限公司（以下简称“浙创科技”）。浙江省科创母基金采用“子基金+直投”的运作模式，其中原则上80%投向子基金，20%投向直投项目（含定向基金），坚持政府引导、市场化运作，聚焦支持早期科创企业",
+          "quote_hash": "37ce00787158abd07050abd7efdf0c6cddff78e15ded74c81fb7d6307e94a8a5"
+        },
+        {
           "source_id": "FISRC-6d442164db5f81db",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
-          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
-          "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
-          "quote": "国资股东覆盖多省市重点产业投资平台，包括深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金等区域国资",
-          "quote_hash": "35ae44ccdff618ec98c46559a29250db0bd4e23281fdb1042ebad42b9f0efddb"
+          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎_新浪财经_新浪网",
+          "source_content_hash": "d14110eba1a1beea7dde559c57889ac1f2a323df193ce26a04c4cd7e8e38c735",
+          "quote": "结构进一步优化完善，形成国资CVC、市场化投资机构、产业资本三方互补、长期协同的战略股东体系。 国资股东覆盖多省市重点产业投资平台，包括 深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金 等区域国资，深度联动各地高端制造产业资源，助力区域工业数字化转型落地； 市场化专业投资机构汇聚 鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、 中信证券 、珂玺资本 等深耕硬科技智能制造赛道的头部投资机构，聚焦企业长期价值成长； 产业链投资方引入 海尔资本、 利元亨 、中软国际、 金百泽 等上下游，实现技术、客户、场景双",
+          "quote_hash": "806aa0bb50a135332dfe1c6dd0f47edcedc71c054f4276d5e26da06e7f81830d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

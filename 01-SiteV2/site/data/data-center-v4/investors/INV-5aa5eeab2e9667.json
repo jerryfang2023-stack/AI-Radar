@@ -137,31 +137,50 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Atlas SGR 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "基金类型和策略依据官网自述；参投案例依据融资公告。",
+      "summary": "Atlas SGR 官网介绍其管理另类投资基金，并列出聚焦 AI 初创公司的 Atlas AI^VB Fund I；ZeroDrift 的种子轮公告将 Atlas SGR 列为投资方。本档不视为完整基金业绩清单。",
+      "facts": [
+        {
+          "field": "fund_focus",
+          "label": "AI 风投基金",
+          "value": "Atlas AI^VB Fund I 聚焦人工智能初创公司",
+          "source_id": "PROFILE-803edc9f4a3f46d8102e"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：ZeroDrift · 种子轮 · 2026-06-02 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "ZeroDrift 2026 年种子轮公告将 Atlas SGR 列为投资方。",
           "source_id": "FISRC-5827c25c8bbe0d20"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-803edc9f4a3f46d8102e",
+          "source_url": "https://www.atlassgr.it/chisiamo/",
+          "source_title": "Chi siamo &ndash; Atlas Sgr",
+          "source_content_hash": "5ff927847ffb90fbfd62d2ba53d3e8c6deea5d35f1fd10640547550289bf8fa6",
+          "quote": "PMI, liberi professionisti e Terzo Settore e sul supporto alla transizione ESG. VENTURE CAPITAL &ndash; Atlas AI^VB Fund I : fondo di venture capital globale focalizzato su startup di intelligenza artificiale create dai migliori Venture Builders. REAL ESTATE &ndash; Fondo Terre Agric",
+          "quote_hash": "04362458c2edcfee893504f36907a67ef9990d4542dce0abb95d383117ea0301"
+        },
+        {
           "source_id": "FISRC-5827c25c8bbe0d20",
           "source_url": "https://www.globenewswire.com/news-release/2026/06/02/3305264/0/en/zerodrift-raises-10m-seed-round-to-build-the-compliance-firewall-for-ai.html",
-          "source_title": "ZeroDrift Raises $10M Seed Round to Build the Compliance Firewall for AI",
-          "source_content_hash": "9d95b1327146185c",
+          "source_title": "ZeroDrift Raises $10M Seed Round to Build the Compliance",
+          "source_content_hash": "c1c7332e1706365088147fb1de401298715a0f9996781c4a1d7ce32ea49d7b29",
           "quote": "Investors include a16z speedrun, Reign Ventures, PitchDrive Ventures, U&I Ventures, Active Capital, Geek Ventures, Converge Ventures, Atlas SGR, Founders Future, and others.",
           "quote_hash": "22c9303e353466cccbd29cc3afb3f0d00a300b56627951c3b941581be21673de"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
