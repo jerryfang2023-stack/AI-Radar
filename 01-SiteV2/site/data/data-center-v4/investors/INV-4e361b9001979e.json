@@ -121,21 +121,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "上汽资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "上海汽车集团股权投资有限公司是上汽集团披露的全资子公司。上汽官网记录该公司于2021年转为聚焦二级市场投资，不再开展一级市场投资业务。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网主体名称",
+          "value": "上海汽车集团股权投资有限公司。",
+          "source_id": "PROFILE-INV-4e361b9001979e-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网披露的业务调整",
+          "value": "2021年起聚焦二级市场投资业务，不再开展一级市场投资业务。",
+          "source_id": "PROFILE-INV-4e361b9001979e-2"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "description": "上汽官网记载尚颀资本、恒旭资本及上汽创投的相关权益和管理权划转，公司转向二级市场投资业务。",
+          "source_id": "PROFILE-INV-4e361b9001979e-2"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：无问芯穹 · 历史轮次未披露 · A+轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f3ef8441c682402c"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "严格按上汽官网披露的主体及2021年业务调整记录建档；历史私募基金投资业务与当前二级市场业务分开表述。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "上汽集团企业信息公开",
+          "value": "上海汽车集团股权投资有限公司",
+          "url": "https://www.saicmotor.com/chinese/xxgk/ssqyxxgk/shqcjtgqtzyxgs/index.shtml",
+          "source_id": "PROFILE-INV-4e361b9001979e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-4e361b9001979e-1",
+          "source_url": "https://www.saicmotor.com/chinese/xxgk/ssqyxxgk/shqcjtgqtzyxgs/index.shtml",
+          "source_title": "上汽集团官网",
+          "source_content_hash": "c318885fd8c892646c3d1dc56e59b4991edfc34ad98f9119fcd5c76d6fdf631a",
+          "quote": "企业名称：上海汽车集团股权投资有限公司",
+          "quote_hash": "35d8190ec821c34424903e78018567c8c09a6ac057a0b7788680893af0e79b77"
+        },
+        {
+          "source_id": "PROFILE-INV-4e361b9001979e-2",
+          "source_url": "https://www.saicmotor.com/chinese/xxgk/ssqyxxgk/shqcjtgqtzyxgs/index.shtml",
+          "source_title": "上汽集团官网",
+          "source_content_hash": "c318885fd8c892646c3d1dc56e59b4991edfc34ad98f9119fcd5c76d6fdf631a",
+          "quote": "2021年 按上汽集团要求，尚颀资本、恒旭资本及上汽创投的合伙份额/股权、管理权划转至上海汽车集团金控管理有限公司，公司聚焦二级市场投资业务，不再开展一级市场投资业务",
+          "quote_hash": "8f9667aafb30d95f59e3b6ac739c4111c9d43879220bd3c324390847b156b069"
+        },
         {
           "source_id": "FISRC-f3ef8441c682402c",
           "source_url": "https://en.tmtpost.com/post/7784584",
@@ -145,7 +192,7 @@
           "quote_hash": "b5930e51a545b2a0ac657244a6b239551b85ef525bf695bde397377c4a1b0a3a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

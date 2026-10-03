@@ -186,12 +186,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "武汉高科 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "武汉高科国有控股集团有限公司是武汉市国有资产管理及产业投资平台，通过直接投资和基金投资支持光谷高新技术产业。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网主体名称",
+          "value": "武汉高科国有控股集团有限公司。",
+          "source_id": "PROFILE-INV-468b7dddd5cade-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "经武汉市委、市政府批准组建的大型国有资产管理公司。",
+          "source_id": "PROFILE-INV-468b7dddd5cade-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "以直接投资、上市公司定向增发及专项产业投资基金开展投资业务。",
+          "source_id": "PROFILE-INV-468b7dddd5cade-2"
+        },
+        {
+          "field": "fund_management",
+          "label": "基金业务",
+          "value": "管理政府引导基金和母基金。",
+          "source_id": "PROFILE-INV-468b7dddd5cade-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -203,8 +224,48 @@
           "source_id": "FISRC-4782a6093d519a4d"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按官网确认的集团业务与产业投资定位建档；官网披露的资产、投资家数、基金数量与规模具有时点性，本档案不收录为稳定特征。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网产业投资介绍",
+          "value": "武汉高科国有控股集团有限公司",
+          "url": "https://www.whgk.com/business_investment.html",
+          "source_id": "PROFILE-INV-468b7dddd5cade-2"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-468b7dddd5cade-1",
+          "source_url": "https://www.whgk.com/about.html",
+          "source_title": "关于我们 武汉高科国有控股集团有限公司 武汉高科国有控股集团有限公司",
+          "source_content_hash": "f5233a8eaac33fce815d319b83e255fdfe39f8d916fe9af47ca2928beb51b3d4",
+          "quote": "武汉高科集团是经武汉市委、市政府批准组建的大型国有资产管理公司",
+          "quote_hash": "3669b4decaa130fec4dfd32fcdd0928072c31fb24a70924289460e12253c1545"
+        },
+        {
+          "source_id": "PROFILE-INV-468b7dddd5cade-2",
+          "source_url": "https://www.whgk.com/business_investment.html",
+          "source_title": "产业投资 武汉高科国有控股集团有限公司 武汉高科国有控股集团有限公司",
+          "source_content_hash": "f46ec2fc24fd9273ec097df7d3ffcfc66b1cce2ba1cde99b4d96397c901195e0",
+          "quote": "通过直接投资高新区重点产业项目、直接参与上市公司定向增发等方式开展投资业务",
+          "quote_hash": "01606c59004d6eafa8f378caa1054936664ae71054ffb4b347582113e45de5ae"
+        },
+        {
+          "source_id": "PROFILE-INV-468b7dddd5cade-3",
+          "source_url": "https://www.whgk.com/business_investment.html",
+          "source_title": "产业投资 武汉高科国有控股集团有限公司 武汉高科国有控股集团有限公司",
+          "source_content_hash": "f46ec2fc24fd9273ec097df7d3ffcfc66b1cce2ba1cde99b4d96397c901195e0",
+          "quote": "管理光谷创投引导基金、光谷长江激光北斗产业基金、高科产业投资基金、光谷科创基金等政府引导基金和母基金",
+          "quote_hash": "51a3dbe996b3a135f744a3de1e22eb54e399622c7c1acde49a83b303f5dd5797"
+        },
         {
           "source_id": "FISRC-a1fb846b5355af64",
           "source_url": "https://news.pedaily.cn/202604/562806.shtml",

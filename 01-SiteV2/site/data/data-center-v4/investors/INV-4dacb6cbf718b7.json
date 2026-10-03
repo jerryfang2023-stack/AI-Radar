@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Lightscape 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Lightscape Partners 是由运营者、创始人和投资人建立的早期投资机构，由 Jim Rowen 与 Sohail Khalid 创立。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "早期投资机构，由运营者、创始人和投资人建立。",
+          "source_id": "PROFILE-INV-4dacb6cbf718b7-1"
+        },
+        {
+          "field": "founders",
+          "label": "创始人",
+          "value": "Jim Rowen 与 Sohail Khalid。",
+          "source_id": "PROFILE-INV-4dacb6cbf718b7-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-7cafec2373293af1"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网自述记录其早期投资机构定位及创始人；不据此推断其法律登记形式或基金规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网关于页面",
+          "value": "Lightscape Partners",
+          "url": "https://www.lightscape.vc/about",
+          "source_id": "PROFILE-INV-4dacb6cbf718b7-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-4dacb6cbf718b7-1",
+          "source_url": "https://www.lightscape.vc/about",
+          "source_title": "About | Lightscape Partners",
+          "source_content_hash": "0e43e1b2bc48db9790600b00f6926efba118dddb8c9dfdff79dbc9b6338da174",
+          "quote": "An early-stage firm built by operators, founders, and investors.",
+          "quote_hash": "337abbfb573aab2e703156792ec6e191da993ed440702dc358b744ba54553d02"
+        },
+        {
+          "source_id": "PROFILE-INV-4dacb6cbf718b7-2",
+          "source_url": "https://www.lightscape.vc/about",
+          "source_title": "About | Lightscape Partners",
+          "source_content_hash": "0e43e1b2bc48db9790600b00f6926efba118dddb8c9dfdff79dbc9b6338da174",
+          "quote": "Lightscape Partners was founded by Jim Rowen and Sohail Khalid",
+          "quote_hash": "bcff389390c9759cd57868cb8ec26d8029a79eec5d9477eff38c75bc379cc346"
+        },
         {
           "source_id": "FISRC-7cafec2373293af1",
           "source_url": "https://www.synthefy.com/blog/synthefy-raises-6-5m-for-structured-data-foundation-models",
@@ -161,7 +202,7 @@
           "quote_hash": "2e8a4f8e24f840d26fc60d6dd7dbc9224ed86f10ac0b2e7a62fd136da1f2ed28"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

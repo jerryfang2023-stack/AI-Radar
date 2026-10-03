@@ -379,12 +379,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Samsung Next 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Samsung Next 是三星电子的企业风险投资部门，官网称其投资跨越多个科技阶段，并围绕三星生态中可形成协同的技术领域支持创业公司。",
+      "facts": [
+        {
+          "field": "parent_affiliation",
+          "label": "母公司关系",
+          "value": "三星电子旗下企业风险投资部门。",
+          "source_id": "PROFILE-INV-47ed8ff2439985-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网所述方式",
+          "value": "以少数股权、非领投方身份参与投资。",
+          "source_id": "PROFILE-INV-47ed8ff2439985-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -400,8 +409,40 @@
           "source_id": "FISRC-9c4c0f115d1f38be"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "根据三星 Next 官网自述描述其母公司关系和投资方式；不把部门独立成法律实体。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Samsung Next",
+          "url": "https://www.samsungnext.com/",
+          "source_id": "PROFILE-INV-47ed8ff2439985-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-47ed8ff2439985-1",
+          "source_url": "https://www.samsungnext.com/",
+          "source_title": "Main - New",
+          "source_content_hash": "513bb27c2bf9b900ba491a8f832a955d94a3c3388d1d2e5e62ee6f6a272374b1",
+          "quote": "Samsung Next is the corporate venture arm of Samsung Electronics.",
+          "quote_hash": "fb48cd42ec05a05fa582478c0f5b96224884d754a6e2e007e7d05c7e90c46fdc"
+        },
+        {
+          "source_id": "PROFILE-INV-47ed8ff2439985-2",
+          "source_url": "https://www.samsungnext.com/",
+          "source_title": "Main - New",
+          "source_content_hash": "513bb27c2bf9b900ba491a8f832a955d94a3c3388d1d2e5e62ee6f6a272374b1",
+          "quote": "We participate as a minority, non-lead investor.",
+          "quote_hash": "54fc0bd8a9e97beaa861f1d10e309e8b05342cb7dbce44b6de71f7cc7e71b508"
+        },
         {
           "source_id": "FISRC-7cafec2373293af1",
           "source_url": "https://www.synthefy.com/blog/synthefy-raises-6-5m-for-structured-data-foundation-models",
@@ -427,7 +468,7 @@
           "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Cambium 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Cambium Capital Management LP 专注先进计算技术领域。官网介绍其团队由在研发、企业经营和先进计算技术商业化方面有经验的投资人构成。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网显示的管理主体",
+          "value": "Cambium Capital Management LP。",
+          "source_id": "PROFILE-INV-503fb62a5392ee-3"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网定位",
+          "value": "先进计算技术。",
+          "source_id": "PROFILE-INV-503fb62a5392ee-1"
+        },
+        {
+          "field": "team_experience",
+          "label": "团队经验",
+          "value": "创业、研究及投资先进计算范式的研发和商业化。",
+          "source_id": "PROFILE-INV-503fb62a5392ee-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,48 @@
           "source_id": "FISRC-71f6a0b77ac7d607"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "以Cambium官网品牌及版权栏显示的管理主体名称为准；不推断基金规模或未公开投资阶段。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Cambium Capital",
+          "url": "https://www.cambium.vc/",
+          "source_id": "PROFILE-INV-503fb62a5392ee-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-503fb62a5392ee-1",
+          "source_url": "https://www.cambium.vc/",
+          "source_title": "Cambium Capital | Investing in Advanced Compute Technologies",
+          "source_content_hash": "a5e0542036d2b1d818556e429e5ace127eca660a45fd0abfaf8dff98b7e33660",
+          "quote": "Cambium Capital | Investing in Advanced Compute Technologies",
+          "quote_hash": "fa96449b13013c1ca337d0b3b77cc4ea38f282fa180fb9f3b6c2912158ea690f"
+        },
+        {
+          "source_id": "PROFILE-INV-503fb62a5392ee-2",
+          "source_url": "https://www.cambium.vc/",
+          "source_title": "Cambium Capital | Investing in Advanced Compute Technologies",
+          "source_content_hash": "a5e0542036d2b1d818556e429e5ace127eca660a45fd0abfaf8dff98b7e33660",
+          "quote": "Our team has decades of experience working as entrepreneurs, researchers, and investors on the development and commercialization of new computing paradigms",
+          "quote_hash": "aa7e0b6e18c64986dfccd3fdf68f046caa4bbfa162b2034dce01b8c28d8cd265"
+        },
+        {
+          "source_id": "PROFILE-INV-503fb62a5392ee-3",
+          "source_url": "https://www.cambium.vc/",
+          "source_title": "Cambium Capital | Investing in Advanced Compute Technologies",
+          "source_content_hash": "a5e0542036d2b1d818556e429e5ace127eca660a45fd0abfaf8dff98b7e33660",
+          "quote": "Cambium Capital Management LP.",
+          "quote_hash": "fa7b1d6ff3ba531ecb918b6f108ebf5ca81c14db818ad17dd06abed07cede650"
+        },
         {
           "source_id": "FISRC-71f6a0b77ac7d607",
           "source_url": "https://www.prnewswire.com/news-releases/aheadcomputing-inc-raises-additional-30m-seed2-round-to-reimagine-cpu-architecture-302666455.html",
@@ -161,7 +216,7 @@
           "quote_hash": "f8c1f320ac18f6f1650fba29ebc05ab4f6e3730385a3e2284a954a3ea70d5e0c"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

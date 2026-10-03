@@ -191,12 +191,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "M12 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "M12 是微软的风险投资基金，官网称其投资从种子轮到 B 轮的科技公司，微软 2023 年官方文章记录其当时聚焦 A、B 轮并强化与微软的协同。",
+      "facts": [
+        {
+          "field": "parent_affiliation",
+          "label": "母公司关系",
+          "value": "微软的风险投资基金。",
+          "source_id": "PROFILE-INV-46b0326b4c6b7c-1"
+        },
+        {
+          "field": "investment_stage_current",
+          "label": "官网现行阶段自述",
+          "value": "种子轮至B轮。",
+          "source_id": "PROFILE-INV-46b0326b4c6b7c-2"
+        },
+        {
+          "field": "investment_stage_2023",
+          "label": "2023年策略说明",
+          "value": "微软官方文章称M12当时将继续关注A轮和B轮初创公司。",
+          "source_id": "PROFILE-INV-46b0326b4c6b7c-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +223,48 @@
           "source_id": "FISRC-62dc6d17f09030c0"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "区分官网现行阶段自述与微软2023年对策略调整的历史说明；不将两个时点的阶段描述合并为单一固定策略。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "M12",
+          "url": "https://m12.vc/",
+          "source_id": "PROFILE-INV-46b0326b4c6b7c-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-46b0326b4c6b7c-1",
+          "source_url": "https://m12.vc/",
+          "source_title": "M12 - Microsoft’s Venture Capital Fund",
+          "source_content_hash": "177558c3c95624aba8b22e26a8ba86c866aae04b9ae08f9c5c23b389cad89afa",
+          "quote": "M12 - Microsoft’s Venture Capital Fund",
+          "quote_hash": "65647d9eb437abb3b8e48453b27263de1885664fd2f9dad27c231cdb212a6388"
+        },
+        {
+          "source_id": "PROFILE-INV-46b0326b4c6b7c-2",
+          "source_url": "https://m12.vc/",
+          "source_title": "M12 - Microsoft’s Venture Capital Fund",
+          "source_content_hash": "177558c3c95624aba8b22e26a8ba86c866aae04b9ae08f9c5c23b389cad89afa",
+          "quote": "We invest in promising seed through B-stage companies that are changing the way we live and work.",
+          "quote_hash": "c2c28468f133df0c0be6d56bc14d1b19534f7a8d51d0dc40ce2a7151a77e76d3"
+        },
+        {
+          "source_id": "PROFILE-INV-46b0326b4c6b7c-3",
+          "source_url": "https://blogs.microsoft.com/blog/2023/01/05/m12-ventures-down-a-new-path/",
+          "source_title": "M12 ventures down a new path - The Official Microsoft Blog",
+          "source_content_hash": "cecd07840389d73f5ed2ef9a5f092874caab59fa834c658525f3784ec5a0e565",
+          "quote": "will continue to focus on investing in Series A and B startups.",
+          "quote_hash": "2a80cccf8271557d50eef30a8b6236e86f675f4591d8c16d8ff8124d8c97a45f"
+        },
         {
           "source_id": "FISRC-1228d3e3db630042",
           "source_url": "https://techcrunch.com/2026/02/12/didero-lands-30m-to-put-manufacturing-procurement-on-agentic-autopilot/",
@@ -227,7 +282,7 @@
           "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

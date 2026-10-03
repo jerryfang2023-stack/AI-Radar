@@ -193,12 +193,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Prime Movers Lab 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Prime Movers Lab 官网称其投资由“Prime Movers”创建的科学创业公司，覆盖能源、交通、基础设施、制造、人类增强和农业。官网也明确表示其自我定位并非传统风险投资公司。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网所述投资方向",
+          "value": "能源、交通、基础设施、制造、人类增强及农业领域的科学创业项目。",
+          "source_id": "PROFILE-INV-447bb66541e913-1"
+        },
+        {
+          "field": "self_description",
+          "label": "官网组织形态自述",
+          "value": "官网称其不是风险投资公司，而是为推动创业项目发展的初创企业。",
+          "source_id": "PROFILE-INV-447bb66541e913-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -210,8 +219,40 @@
           "source_id": "FISRC-344b2fbfbe7b7c56"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "保留官网对自身组织形态的特殊表述；档案只描述可核实的创业投资活动与方向，不把它概括成传统VC。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Prime Movers Lab About",
+          "url": "https://www.primemoverslab.com/about/",
+          "source_id": "PROFILE-INV-447bb66541e913-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-447bb66541e913-1",
+          "source_url": "https://www.primemoverslab.com/about/",
+          "source_title": "Prime Movers Lab | About",
+          "source_content_hash": "e097b093aed3947ee7567a56dd583e8f89dfae4886feb78ff6f4eb0202660116",
+          "quote": "Prime Movers Lab invests in breakthrough scientific startups founded by Prime Movers",
+          "quote_hash": "ff64983a3c511661830e2f7c8e1aca80e770ac78baa4b73c58c94bc577f56077"
+        },
+        {
+          "source_id": "PROFILE-INV-447bb66541e913-2",
+          "source_url": "https://www.primemoverslab.com/about/",
+          "source_title": "Prime Movers Lab | About",
+          "source_content_hash": "e097b093aed3947ee7567a56dd583e8f89dfae4886feb78ff6f4eb0202660116",
+          "quote": "Prime Movers Lab is not a venture capital firm, we are a start-up created to spread massive abundance",
+          "quote_hash": "eda4334ea2c220074c366abc8f82e663ae13457d7fdd44ec003dad79726ca35d"
+        },
         {
           "source_id": "FISRC-9b94f245fa27a161",
           "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
@@ -229,7 +270,7 @@
           "quote_hash": "6f423dd184be9d755399ae047422b7a705f367da48d5cdf18cbf05eb4f93ddb8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

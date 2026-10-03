@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "The Rockefeller Foundation 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "The Rockefeller Foundation 是慈善基金会，其项目相关投资（PRI）包括债权、股权和担保，用于支持基金会的慈善目标。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "慈善基金会。",
+          "source_id": "PROFILE-INV-4cdd57beb2de9a-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "项目相关投资",
+          "value": "PRI包括债权、股权和担保，服务于基金会慈善目标。",
+          "source_id": "PROFILE-INV-4cdd57beb2de9a-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-ecd2ea74974f4ff3"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "按基金会官网人物介绍记录其PRI业务属性；这是使命导向的慈善投资活动，不将基金会概括为传统风险投资机构。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金会官方人物页",
+          "value": "The Rockefeller Foundation",
+          "url": "https://www.rockefellerfoundation.org/profiles/mike-muldoon/",
+          "source_id": "PROFILE-INV-4cdd57beb2de9a-2"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-4cdd57beb2de9a-1",
+          "source_url": "https://www.rockefellerfoundation.org/profiles/mike-muldoon/",
+          "source_title": "Mike Muldoon | RF",
+          "source_content_hash": "9ee325995e4c6094e65f7bd2025d2d3bd6600db4925fd70b71e019e63e13fe68",
+          "quote": "We are a philanthropic foundation",
+          "quote_hash": "299054b82547c96c27aa641efa168f80acafcb947ea522b24fd70838f5de68b7"
+        },
+        {
+          "source_id": "PROFILE-INV-4cdd57beb2de9a-2",
+          "source_url": "https://www.rockefellerfoundation.org/profiles/mike-muldoon/",
+          "source_title": "Mike Muldoon | RF",
+          "source_content_hash": "9ee325995e4c6094e65f7bd2025d2d3bd6600db4925fd70b71e019e63e13fe68",
+          "quote": "the Foundation’s Program Related Investment (PRI) work, which consists of a growing portfolio of investments (debt, equity, guarantees) that support the Foundation’s philanthropic goals.",
+          "quote_hash": "0fab70eaad38b15ea56b366e8a9e89c44cbdcb1b587c81422051e0cc9004c8a4"
+        },
         {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
@@ -161,7 +202,7 @@
           "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

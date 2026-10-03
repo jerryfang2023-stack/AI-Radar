@@ -122,12 +122,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "龙鼎投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "西安龙鼎投资管理有限公司是一家成立于2014年的投资管理公司，官网介绍其专注半导体、新能源和信息技术等硬科技领域。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网主体名称",
+          "value": "西安龙鼎投资管理有限公司。",
+          "source_id": "PROFILE-INV-507d2ccaaa1a20-1"
+        },
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2014年。",
+          "source_id": "PROFILE-INV-507d2ccaaa1a20-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "半导体、新能源、信息技术等硬科技领域。",
+          "source_id": "PROFILE-INV-507d2ccaaa1a20-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,8 +150,48 @@
           "source_id": "FISRC-fdfe58e2e68c7e9e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按官网公司介绍及投资方向建档；未收录时点性管理规模和项目数量。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网关于页面",
+          "value": "龙鼎投资",
+          "url": "https://www.longding.fund/about.html",
+          "source_id": "PROFILE-INV-507d2ccaaa1a20-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-507d2ccaaa1a20-1",
+          "source_url": "https://www.longding.fund/about.html",
+          "source_title": "关于我们 - 龙鼎投资",
+          "source_content_hash": "2969736a241715919402cd505aec92bcce1b66701f968653bcbe412f7c239669",
+          "quote": "西安龙鼎投资管理有限公司",
+          "quote_hash": "106516e3f61e3afe55c0541e93fcdb27085d27ef3b9089d4c4cb7b790691fa42"
+        },
+        {
+          "source_id": "PROFILE-INV-507d2ccaaa1a20-2",
+          "source_url": "https://www.longding.fund/about.html",
+          "source_title": "关于我们 - 龙鼎投资",
+          "source_content_hash": "2969736a241715919402cd505aec92bcce1b66701f968653bcbe412f7c239669",
+          "quote": "成立于2014年",
+          "quote_hash": "e2aa83f55655fe942c9b4a7ce821429d2b5eafcb12d9482976e614f8c7644baa"
+        },
+        {
+          "source_id": "PROFILE-INV-507d2ccaaa1a20-3",
+          "source_url": "https://www.longding.fund/about.html",
+          "source_title": "关于我们 - 龙鼎投资",
+          "source_content_hash": "2969736a241715919402cd505aec92bcce1b66701f968653bcbe412f7c239669",
+          "quote": "专注半导体、新能源、信息技术等硬科技赛道的精品投资管理公司",
+          "quote_hash": "88c8bd78548cc04b8f128837de35d21b02ac72c008dcab5ffef7d23c3bd2edfb"
+        },
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",

@@ -121,12 +121,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "山行资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "山行资本（HIKE Capital）官网称其成立于2015年，是面向早期和成长期双币基金的创业者基金，重点覆盖AI+、全球化出海、新消费、出行和新能源。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2015年。",
+          "source_id": "PROFILE-INV-4b454e567b671b-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "创业者基金。",
+          "source_id": "PROFILE-INV-4b454e567b671b-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "基金阶段",
+          "value": "早期及成长期双币基金。",
+          "source_id": "PROFILE-INV-4b454e567b671b-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网所述方向",
+          "value": "AI+、全球化出海、新消费、出行及新能源。",
+          "source_id": "PROFILE-INV-4b454e567b671b-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +155,40 @@
           "source_id": "FISRC-aa154cc5b05b6cb7"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "使用机构官网自述；动态投资案例和基金规模未作为稳定属性纳入。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网关于介绍",
+          "value": "山行资本",
+          "url": "https://www.hikecapital.com/about-us",
+          "source_id": "PROFILE-INV-4b454e567b671b-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-4b454e567b671b-1",
+          "source_url": "https://www.hikecapital.com/about-us",
+          "source_title": "关于山行",
+          "source_content_hash": "d9ae5d16a289f9cf8d647fc29744c6d068c9e5ee4b9dce666a77accb51cc56bd",
+          "quote": "山行资本（HIKE Capital）成立于2015年，是中国的创业者基金（Founders Fund）。",
+          "quote_hash": "af188ecd80dd345a76d34458508adca8d9e13d9d46c0073aecc8970c171bd005"
+        },
+        {
+          "source_id": "PROFILE-INV-4b454e567b671b-2",
+          "source_url": "https://www.hikecapital.com/about-us",
+          "source_title": "关于山行",
+          "source_content_hash": "d9ae5d16a289f9cf8d647fc29744c6d068c9e5ee4b9dce666a77accb51cc56bd",
+          "quote": "目前，山行资本管理多只覆盖早期及成长期的双币基金",
+          "quote_hash": "46b7cbcd299115c69af5c35e7aa4705eeb7833640b7821f57299c781b624e9e0"
+        },
         {
           "source_id": "FISRC-aa154cc5b05b6cb7",
           "source_url": "https://mp.weixin.qq.com/s/LtmQPVMNymdPz4zJxRsh1A",
@@ -145,7 +198,7 @@
           "quote_hash": "ad776e21d4521e1f57009a75b376dd8eb65db19f5cb0e49587d61b72de818fc3"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
