@@ -139,10 +139,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Realyze Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构简介仅记录其官网公开的投资主题与愿景，不补写基金规模、法律载体或完整投资组合。",
+      "summary": "Realyze Ventures 官网称其关注建成环境领域的气候影响、流程效率与回报，并以技术和创新推动地产及建筑行业转型。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述的关注主题",
+          "value": "关注建成环境领域的气候影响、流程效率与回报。",
+          "source_id": "realyze_official_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -152,6 +159,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "realyze_official_profile",
+          "source_url": "https://realyzeventures.com/",
+          "source_title": "Realyze Ventures &#8211; Investing in transition.",
+          "source_content_hash": "b372fc887123a5288949c7d07ffba2fb01c8be1194822b6344d6ee3e6afbb73d",
+          "quote": "Driving climate impact, process efficiency, and superior returns in the built world. THE WORLD IS CHANGING The industry needs to transform. Real Estate is responsible for 40% of global CO2 emission. The potential for energy savings in existing and new buildings r",
+          "quote_hash": "a0777575dc7fb5f797b89cc31ef28d1273940388fa43ff651a9705b918b4f8dc"
+        },
         {
           "source_id": "FISRC-8bd4513374ef496a",
           "source_url": "https://www.eu-startups.com/2026/10/berlin-based-kuro-raises-e10-million-to-build-the-ai-foundation-for-general-contractors/",

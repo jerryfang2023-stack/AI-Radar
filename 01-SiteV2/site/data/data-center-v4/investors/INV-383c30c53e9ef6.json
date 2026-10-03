@@ -137,12 +137,24 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "海愿资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "海愿资本官网称其成立于2014年，主要发起人具有投资、企业管理和工程技术背景，并将其投资历程概述为硬科技投资。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2014（官网自述）",
+          "source_id": "hai-founded"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资方向",
+          "value": "硬科技",
+          "source_id": "hai-focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +162,32 @@
           "source_id": "FISRC-8c121a58e2376a1d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.hyvccapital.com/",
+          "url": "https://www.hyvccapital.com/",
+          "source_id": "hai-founded"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hai-founded",
+          "source_url": "https://www.hyvccapital.com/",
+          "source_title": "海愿资本_深圳市海愿创业投资有限公司",
+          "source_content_hash": "f94ecab069b3690d6b15e8f7da9167f6196581be4c1ab1853343253c1d0b34ea",
+          "quote": "海愿资本成立于2014年",
+          "quote_hash": "4dcac822282e8213996bf41f518c61460972291dd829db859607a5d059639333"
+        },
+        {
+          "source_id": "hai-focus",
+          "source_url": "https://www.hyvccapital.com/",
+          "source_title": "海愿资本_深圳市海愿创业投资有限公司",
+          "source_content_hash": "f94ecab069b3690d6b15e8f7da9167f6196581be4c1ab1853343253c1d0b34ea",
+          "quote": "十余年硬科技投资史",
+          "quote_hash": "4a8a1054a8d0cbb64a8ed499eed895899c60df4a6f6fb87b8bfe3a1807f19435"
+        },
         {
           "source_id": "FISRC-8c121a58e2376a1d",
           "source_url": "https://news.pedaily.cn/202607/567057.shtml",
@@ -161,7 +197,8 @@
           "quote_hash": "ff461b4de9a151f7c7778808a0a9c2a3f868d86cf430955b92e3e044c11ad1ee"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

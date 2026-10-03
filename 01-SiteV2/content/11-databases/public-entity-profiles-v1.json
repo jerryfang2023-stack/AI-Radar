@@ -83774,30 +83774,44 @@
     "INV-6c4f75c29d4ad8": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前可由公司一手公告确认的资料限于 AgentMail 将 Taro Fukuyama 列入该轮天使投资人；没有把同名人士经历或投资方向外推到此档案。",
-      "summary": "AgentMail 官方 2026 年 3 月融资公告将 Taro Fukuyama 列为其 600 万美元种子轮天使投资人之一；其其他职业履历尚未在本次一手来源中核实。",
-      "current_roles": [],
+      "coverage_status": "researched",
+      "coverage_note": "当前职务来自 Rice Capital 官网；AgentMail 的融资公告确认一项天使投资活动。未扩写其余履历。",
+      "summary": "AgentMail 发行方融资公告将 Taro Fukuyama 列为该轮天使投资者之一；Rice Capital 官网将他列为创始合伙人。本档案仅记录这两项可直接核验的信息。",
+      "current_roles": [
+        {
+          "title": "Founding Partner",
+          "organization": "Rice Capital",
+          "source_id": "ricecapital_taro_role"
+        }
+      ],
       "career": [],
       "education": [],
       "experience_summary": "本条为融资活动级档案；当前来源不足以确认其其他任职或履历。",
       "track_record": [
         {
-          "description": "AgentMail 官方公告列 Taro Fukuyama 为其 2026 年 3 月 600 万美元种子轮天使投资人之一。",
-          "source_id": "PFSRC-INV-6c4f75c29d4ad8-1"
+          "description": "融资来源记录：AgentMail · 种子轮 · 2026-03-10 · 本轮天使投资人 · $6M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e1b0747a0117fec0"
         }
       ],
       "sources": [
         {
-          "source_id": "PFSRC-INV-6c4f75c29d4ad8-1",
-          "source_url": "https://www.agentmail.to/blog/agentmail-seed-launch",
-          "source_title": "We&#x27;ve raised $6M to build the first email inboxes for AI agents. | AgentMail",
-          "source_content_hash": "5dc46511f099c91e752c698f7ed5a42cbf1d913d74cf9fe092908698d6d047f6",
-          "quote": "and Taro Fukuyama.",
-          "quote_hash": "42f761207f1295ab84a36006e04ddf0cf4f5ac25783ba401690d83d476bf0667"
+          "source_id": "FISRC-e1b0747a0117fec0",
+          "source_url": "https://www.globenewswire.com/news-release/2026/03/10/3253159/0/en/AgentMail-Raises-6M-led-by-General-Catalyst-to-Build-the-First-Email-Provider-for-AI-Agents.html",
+          "source_title": "AgentMail Raises $6M led by General Catalyst to Build the",
+          "source_content_hash": "baf00923f0a9b047bef14dae22fbfc22e32233fd395b2a63ceaf44966eb86b4e",
+          "quote": "notable angel investors including Paul Graham, Taro Fukuyama, Dharmesh Shah",
+          "quote_hash": "11392f8a376d849ea009980b8ba2780a0f88797abbb6a939e9c1e1df1b4d51ed"
+        },
+        {
+          "source_id": "ricecapital_taro_role",
+          "source_url": "https://ricecapital.vc/",
+          "source_title": "RICE CAPITAL — Backing outlier founders in the US and Japan",
+          "source_content_hash": "fb5bdf9ca4f5e9240369481db0dcd348c1c1ac8559a4d45f592e0ce5dcbf867f",
+          "quote": "Founding Partner — Taro Fukuyama Founder of Fond (YC W12, acquired 2023). First Japanese founder accepted to Y Combinator. X X LinkedIn LinkedIn Backing 200+ founders in the US and Japan. US Japan Contact hello@ricecapit",
+          "quote_hash": "3179d8ded35e85b198fb32478dece07cfd35210e76b0d09bb1643f7a48629556"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-03",
       "facts": [],
       "milestones": [],
       "contacts": []
@@ -86093,6 +86107,10 @@
         {
           "description": "Archestra 于 2026 年 6 月 2 日宣布完成 1000 万美元种子轮，并将 Declan Kelly 列为参与投资者之一；公告同时称其为 Foreword 创始人兼 GP。",
           "source_id": "declan_archestra"
+        },
+        {
+          "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-50130a45d72291a2"
         }
       ],
       "contacts": [
@@ -86130,6 +86148,14 @@
           "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",
           "quote": "Declan Kelly (Founder & GP at Foreword).",
           "quote_hash": "ae8291e4f20aed024934100db6811e3406012654fe120be85c6d69e67b85f4b2"
+        },
+        {
+          "source_id": "FISRC-50130a45d72291a2",
+          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+          "source_title": "Archestra.AI announces $10M seed 🎉 | Blog | Archestra",
+          "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",
+          "quote": "Declan Kelly (Founder & GP at Foreword)",
+          "quote_hash": "08e5d559c6573af00c5354f06af32ab1a3d738e220720d140723e5d719a39abb"
         }
       ],
       "last_verified_at": "2026-10-02"
@@ -86314,6 +86340,10 @@
         {
           "description": "Mowito 官方页面在其支持者名单中列出 Adarsh Kulkarni。",
           "source_id": "adarsh_mowito"
+        },
+        {
+          "description": "融资来源记录：Mowito · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5667d54cc3421916"
         }
       ],
       "contacts": [],
@@ -86339,6 +86369,14 @@
           "source_content_hash": "2427072762d7b90f7af97589c5ec616087369d95040116f17806b2c49e0e74e6",
           "quote": "Backers We are supported by visionary individuals whose unwavering belief fuels our progress. They play a crucial role in our growth as we advance automation in manufacturing and warehousing watch animation Abhi Ramesh Founder - Misfits Market Achal Prabhakar CTO 1Password, Ex-VP at Landing AI Adarsh Kulkarni Head of Robotics at Scale AI",
           "quote_hash": "eb2437b63c7e3fe3549b753ed9414064fdf4d80c90b821fb368ae39bb1e78ea4"
+        },
+        {
+          "source_id": "FISRC-5667d54cc3421916",
+          "source_url": "https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing/",
+          "source_title": "Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures",
+          "source_content_hash": "59544b695ed6ee8218bc2d6f53d7b87188409de4e6d695ed8e107832954acc2f",
+          "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).",
+          "quote_hash": "e4135e332d37b9d3537f7d0afd52be9eed631285c4a2a1e7fc8ef9d278fc8fd4"
         }
       ]
     },
@@ -101735,15 +101773,15 @@
     "INV-6d6537488ff811": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "此条仅记录媒体披露的融资关系；机构官网正文未能留存。",
-      "summary": "36氪报道援引 BV Baidu Ventures 称，Tiiny AI 完成天使轮系列融资并列出 BV Baidu Ventures 为共同投资方之一。当前仅记录该公开参投披露；机构官网页面目前无法在共享缓存中留存。",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 Baidu Ventures 官网；单笔融资参与记录来自 36氪快讯，不推断完整投资组合或投资业绩。",
+      "summary": "Baidu Ventures 官网称，该机构由百度集团于 2017 年发起，聚焦 AI 领域早期投资；36氪的融资快讯另将 BV 列入 Tiiny AI 的天使轮投资者名单。",
       "facts": [
         {
-          "field": "public_investment",
-          "label": "公开投资披露",
-          "value": "36氪报道将 BV Baidu Ventures 列为 Tiiny AI 天使轮系列融资投资方。",
-          "source_id": "FISRC-dea11fc16cbc6f8b"
+          "field": "investment_focus",
+          "label": "官网自述的投资方向",
+          "value": "官网称 Baidu Ventures 由百度集团于 2017 年发起，聚焦 AI 领域早期投资。",
+          "source_id": "bv_official_profile"
         }
       ],
       "milestones": [],
@@ -101762,6 +101800,14 @@
           "source_content_hash": "f85b7466e83ae949af81e96a19bce13ff6a80008287bb7f0c6886de26c702f47",
           "quote": "g worth tens of millions of US dollars. 2026-07-30 16:41 36Kr learned from BV Baidu Ventures that Personal Agent OS company \"Tiiny AI\" has announced the completion of a multi-million US dollar angel series of financing. This round of financing was jointly participated by Shunwei Capital, Matrix Partne",
           "quote_hash": "4a35879e3510b9ac0e076557538ab803c470bad8f080c6acf31842fb8dd00ef5"
+        },
+        {
+          "source_id": "bv_official_profile",
+          "source_url": "https://www.baidu-ventures.com/about/",
+          "source_title": "Baidu Ventures",
+          "source_content_hash": "0b2ce31e78d51c16df3ca49a255b3dd7b51231cf9980ec1bfc6e47894b61e2bd",
+          "quote": "Initiated by Baidu Group in 2017, Baidu Ventures (BV) is a pioneering venture capital firm at the forefront of AI industry. As one of the earliest funds focusing on the artificial intelligence industry, our portfolios spans GenAI, em",
+          "quote_hash": "c0b6ed9984c3c875161bdb9b239e4625144d241646b723fc297ed12f62dbf10a"
         }
       ],
       "last_verified_at": "2026-10-03"
@@ -103527,7 +103573,12 @@
         }
       ],
       "milestones": [],
-      "track_record": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Neko Health · C轮 · 2026-07-15 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3581a245f48a1be6"
+        }
+      ],
       "contacts": [
         {
           "kind": "email",
@@ -103567,6 +103618,14 @@
           "source_content_hash": "af59914e6a79d256900b13a4ed92fa1f7c3f054bfa004fb1bbc2a0dbfe5922e3",
           "quote": "info@libertycityventures.com\nLIBERTY CITY VENTURES LEGAL INFORMATION\nThe information on these pages is intended solely for the benefit of issuers and entrepreneurs seeking seed stage investments, and not potential investors.",
           "quote_hash": "92466ce208835e355042e531ae92a70ecf8a273bf0867e258d76881ee4135340"
+        },
+        {
+          "source_id": "FISRC-3581a245f48a1be6",
+          "source_url": "https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/",
+          "source_title": "Daniel Ek&#039;s body-scanning startup Neko Health raises another $700M | TechCrunch",
+          "source_content_hash": "40ca924a819846d5287010aec297d731a005acb0641e045fed43f90723c67807",
+          "quote": "Other investors in Neko Health’s latest round include Atomico, General Catalyst, Lakestar, Liberty City Ventures, Positive Sum, and BDT & MSD.",
+          "quote_hash": "45b0acb47dea211ecb169731a68de716cb882c326671dfb0fee956f83a5ff028"
         }
       ],
       "last_verified_at": "2026-10-03"
@@ -103880,6 +103939,10 @@
         {
           "description": "Fish Audio 于 2026-07-28 公告完成 5200 万美元种子轮融资，并将 Alphalist Partners 列入参与方；公告未披露其具体出资额。",
           "source_id": "fish_pr"
+        },
+        {
+          "description": "融资来源记录：Fish Audio · 种子轮 · 2026-07-28 · 本轮参投 · $52 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e06e94375ec64ac4"
         }
       ],
       "contacts": [],
@@ -103891,6 +103954,14 @@
           "source_content_hash": "bb224a4aa73a8ef37adc081a47e176440e527bc15faa81af4a12ace9c06f3443",
           "quote": "PALO ALTO, Calif. , July 28, 2026 /PRNewswire/ -- Fish Audio , the AI voice platform for expressive real-time text-to-speech, voice cloning, and voice agents, today announced $52 million in seed funding led by Coreline Ventures and Capital Today , with participation from 359 Capital, Play Time, HF0, 645 Ventures, Parable, Carya Venture Partners, Alphalist Partners, and leading angel investors.",
           "quote_hash": "22e5a4d3e8f3956105aad36d52d0ea3006e3eaf0f324dfa9c1bfa2c5d6cbad78"
+        },
+        {
+          "source_id": "FISRC-e06e94375ec64ac4",
+          "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
+          "source_title": "Fish Audio raises $52M seed to build AI voice models for creators and enterprises | TechCrunch",
+          "source_content_hash": "d21804e6e3ffd6390c366cb17140fa627ac27226298ffc159cb555d135507094",
+          "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners, Bayhouse Ventures, Carya Venture Partners, and HF0.",
+          "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
         }
       ],
       "last_verified_at": "2026-10-03"
@@ -104383,7 +104454,12 @@
         }
       ],
       "milestones": [],
-      "track_record": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Positron AI · C轮 · 2026-09-10 · C轮联合领投 · $375 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3947ce709f26c22a"
+        }
+      ],
       "contacts": [],
       "sources": [
         {
@@ -104417,6 +104493,14 @@
           "source_content_hash": "af46c37d7e6a4759b3b6a691ceac3e6e4a523029661ebfaaee140b1071fa6892",
           "quote": "Dylan Patel Manager of the General Partner of the Issuer 2026-07-29 Persons who respond to the collection of information contained in this form are not required to respond unless the form displays a currently valid OMB number.",
           "quote_hash": "660225f39a8c2130f8b619878c5f8f2dcf28aec1fb1e5e7049149e7ff700a5d2"
+        },
+        {
+          "source_id": "FISRC-3947ce709f26c22a",
+          "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+          "source_title": "Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market",
+          "source_content_hash": "4779658a236855fa12a78be80bee8f07e77ab5c5f2b4de68313520570d04d491",
+          "quote": "The Series C, $375 million at a $3.5 billion pre-money valuation, was co-led by NEA, Andra Capital, Atreides Management, Valor Equity Partners, and Dylan Patel's SemiAnalysis Capital.",
+          "quote_hash": "4a268ef2dc6771c1b3575196421137a2e838d9a10dd583cd9ff1e57e059abe05"
         }
       ],
       "last_verified_at": "2026-10-03"
@@ -105065,6 +105149,10 @@
         {
           "description": "Modem 官方融资公告将 Chris Jennings（Sentry）列在支持该公司的天使投资者名单中。",
           "source_id": "modem_announcement"
+        },
+        {
+          "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（Sentry）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
       "sources": [
@@ -105083,6 +105171,14 @@
           "source_content_hash": "795309165c89beae2c0f10566341e38989cb94def4aec88cf6b0920808609e9a",
           "quote": "a group of incredible angels behind foundational developer tools and AI products:\nDavid Cramer and Chris Jennings (Sentry), Ivan Zhang (Cohere), Koen Bok and Jorn van Dijk (Framer), Lindsey Simon (Vercel), Armin Ronacher (Flask), Jacob Thornton (Bootstrap, Pierre Computer Co), John Laban and Kenneth Rose (OpsLevel), Dave Johnson (PhoneGap/Cordova), and others we're lucky to have behind us.",
           "quote_hash": "8a0ae2a2300ea1508e4daa7301f82091c76c612bc6366aacec21a90d89fb19cc"
+        },
+        {
+          "source_id": "FISRC-9fd6ba5210b37fed",
+          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
+          "source_content_hash": "795309165c89beae2c0f10566341e38989cb94def4aec88cf6b0920808609e9a",
+          "quote": "David Cramer and Chris Jennings (Sentry)",
+          "quote_hash": "1574c672f68e153fc5073128a6615aede0352b8bc39b3ede67b49b0db2483ec3"
         }
       ],
       "last_verified_at": "2026-10-03",
@@ -105165,6 +105261,10 @@
         {
           "description": "GMI Cloud 公告将 KB Investment 列为 Series B 参与方之一，未披露 KB Investment 的单独出资金额。",
           "source_id": "gmi_series_b"
+        },
+        {
+          "description": "融资来源记录：GMI Cloud · B轮 · 2026-10-01 · 本轮参投 · $223 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f5de203e610041a3"
         }
       ],
       "contacts": [],
@@ -105176,6 +105276,14 @@
           "source_content_hash": "06f8e383e7ff837655f0bcd818a7d4115a58e045f05e0dadf95dee5f72672016",
           "quote": "シリーズBは、AI・ロボティクス分野に特化したサンフランシスコ拠点の投資会社ARCHIVが主導し、NVIDIAに加え、DSC Investment、Trend Micro、KB Investment、Kyobo Life、KT Corporationなど、アジア太平洋地域の投資家も参加しました。",
           "quote_hash": "2169c4b3360129b121a86307684ebf30644f0f2d819b343683b7070c9dcff5a6"
+        },
+        {
+          "source_id": "FISRC-f5de203e610041a3",
+          "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
+          "source_title": "Asia Digest: Zeya Health acquires ConnectLah; Asian investors back GMI Cloud&#x27;s $668m funding",
+          "source_content_hash": "713f35db75c4fdb3bf9c474ce7a3cd94d6537d5289f825e111256fd184f305eb",
+          "quote": "Asia-Pacific investors, including DSC Investment, Trend Micro, KB Investment, Kyobo Life and KT Corporation, also participated in the funding round.",
+          "quote_hash": "57d129887176732facc5235cc0ab30eac4060c64a8586df4d5578d6ee22ec3c5"
         }
       ],
       "last_verified_at": "2026-10-03"
@@ -105319,6 +105427,10 @@
         {
           "description": "中投华创2026年4月发布的签约消息称，级数AI签约对接中广创投并引入超千万元天使轮；报道将郑强称为中广创投董事长兼总经理。",
           "source_id": "jishu_ai_financing"
+        },
+        {
+          "description": "融资来源记录：级数AI · 天使轮 · 2026-04-22 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-577050f06608d2f8"
         }
       ],
       "contacts": [],
@@ -105362,6 +105474,14 @@
           "source_content_hash": "7600c7249a770b19837eb7dcc0ae19667cb9fa0edcf9a496ae7e965325daaf60",
           "quote": "正式签约对接资方 中广创投，引入超1000万天使轮融资！ 项目至此将 迈入 技术创新、资本助力、产业生态协同发展 的全新阶段。 投资签约仪式现场，级数 AI 创始人兼执行董事陈柯利先生，与中广创投董事长兼总经理郑强先生签署投资协议。",
           "quote_hash": "772a9cd7a7d81f2b3b17f8ba6212ed64db40cd3d962b909dfa67cc63548abed5"
+        },
+        {
+          "source_id": "FISRC-577050f06608d2f8",
+          "source_url": "https://view.inews.qq.com/a/20260422A041U200",
+          "source_title": "教育大模型公司级数AI完成数千万元天使轮融资与战略合作_腾讯新闻",
+          "source_content_hash": "8cc0c1e3b29ad0740c8b3d054d0a894de41532246a8f3e73be3ffa3b6b027d6b",
+          "quote": "本轮融资由中广创投领投，森锐科技参与战略投资及合作。",
+          "quote_hash": "bb7d463b1abf135207563fea4a59505e992fa17d64caf81e8b5e8494512faa12"
         }
       ],
       "last_verified_at": "2026-10-03"
@@ -107641,6 +107761,10 @@
         {
           "description": "Nuveen 公告称，Nuveen 于 2023 年与 TIAA Ventures 合作投资 Brooklyn Investment Group，并涉及少数股权；公告未披露 TIAA Ventures 单独持股信息或份额。",
           "source_id": "tiaa_brooklyn"
+        },
+        {
+          "description": "融资来源记录：Reco · 历史轮次未披露 · B轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0d891f327f6f719c"
         }
       ],
       "contacts": [],
@@ -107652,6 +107776,14 @@
           "source_content_hash": "99fb8fe51d91cdb098a35e1557e3132622bf82da1fccd937c37a17fed5c716ed",
           "quote": "Further underscoring our conviction in the opportunity, Nuveen invested in Brooklyn in partnership with TIAA Ventures, taking on a minority stake in 2023.",
           "quote_hash": "71e91699838f2abff6fd5a111aac71d22dec5d4a868c4e92e7eeeacaa3ddf68b"
+        },
+        {
+          "source_id": "FISRC-0d891f327f6f719c",
+          "source_url": "https://www.reco.ai/blog/reco-raises-30m-b-round-for-a-total-of-85m-to-meet-rapidly-growing-demand-for-saas-ai-security-among-enterprises",
+          "source_title": "Reco Raises $30M Series B to Secure SaaS and AI Environments",
+          "source_content_hash": "c0ba7aa0874ee6e4aea01f5fa1194eddf81999ad1b23439bdcee802b58418f0a",
+          "quote": "while adding new corporate investors Workday Ventures , TIAA Ventures , S Ventures , and Quadrille Capital",
+          "quote_hash": "768ea10b4f225d9d73535388c1b11d52ef9e755c0780e9b3cbc83fc06177cd4a"
         }
       ],
       "last_verified_at": "2026-10-03"
@@ -113890,6 +114022,594 @@
           "source_content_hash": "56c0002ad3787fc9b10e96d00bb75f2a19c7a4ea06230384e7a04bd1faac1033",
           "quote": "focused broadly on the future of work",
           "quote_hash": "0636ed3dbcd58fc10e503de80cd7f4f4def1cd50531ce52be7ecdfb05a1832d9"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-379dcc34db6ee2": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "兴业证券官网披露，兴证创新资本管理有限公司简称兴证资本，是兴业证券全资设立、从事私募投资基金业务的子公司。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定主体名称",
+          "value": "兴证创新资本管理有限公司",
+          "source_id": "xing-identity"
+        },
+        {
+          "field": "parent_company",
+          "label": "设立方",
+          "value": "兴业证券股份有限公司（全资设立）",
+          "source_id": "xing-identity"
+        },
+        {
+          "field": "business_scope",
+          "label": "官网披露业务范围",
+          "value": "私募投资基金业务",
+          "source_id": "xing-business"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.xyzq.com.cn/",
+          "url": "https://www.xyzq.com.cn/",
+          "source_id": "xing-identity"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "xing-identity",
+          "source_url": "https://www.xyzq.com.cn/xysec/capital/aboutus/11234",
+          "source_title": "兴业证券官方网站",
+          "source_content_hash": "624d0f4bdc0f864a204ba850a7f38dce4050c68457dee89abfbbb30203634d22",
+          "quote": "兴证创新资本管理有限公司（以下简称“兴证资本”） 是兴业证券股份有限公司（SH601377）全资设立的子公司。",
+          "quote_hash": "68897f5e77a871ffda36570558f5068695fb39abb76aa463411484aaf6852d6b"
+        },
+        {
+          "source_id": "xing-business",
+          "source_url": "https://www.xyzq.com.cn/xysec/capital/aboutus/11234",
+          "source_title": "兴业证券官方网站",
+          "source_content_hash": "624d0f4bdc0f864a204ba850a7f38dce4050c68457dee89abfbbb30203634d22",
+          "quote": "业务范围为私募投资基金业务",
+          "quote_hash": "8a7b16b0d579b4424e450e241adb360bc4928c84401305425af0f6a34cb51716"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-38229b561579f0": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "依据本人署名文章与被投企业对其投资关系的记载；仅记录创办 Sheva 和一项投资活动，不扩展完整履历。",
+      "summary": "Upwind 发布的 Omri Casspi 署名文章称，他从职业篮球转向初创企业投资并参与创办 Sheva；文章记录了 Sheva 对 Upwind 的投资。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "omri-sheva",
+          "source_url": "https://www.upwind.io/feed/omri-casspis-vc-sheva-why-we-invested-in-upwind",
+          "source_title": "Omri Casspi&#039;s VC Sheva: Why We Invested in Upwind - Upwind",
+          "source_content_hash": "9daed33752d327f6e54a8438aa10c4664e5386a1431390904b002f6fa6d5044c",
+          "quote": "From my days on the basketball court to founding Sheva eighteen months ago",
+          "quote_hash": "975f15b52fa6a2d1a72ff97e9e1abf15d50a8bb9cc4f290ae996939dca5d28a9"
+        },
+        {
+          "source_id": "omri-investment",
+          "source_url": "https://www.upwind.io/feed/omri-casspis-vc-sheva-why-we-invested-in-upwind",
+          "source_title": "Omri Casspi&#039;s VC Sheva: Why We Invested in Upwind - Upwind",
+          "source_content_hash": "9daed33752d327f6e54a8438aa10c4664e5386a1431390904b002f6fa6d5044c",
+          "quote": "Our investment in Upwind truly reflects",
+          "quote_hash": "6e0eff35fc4557733811fc669f4d184a6b98477b60e51d3d66d7cfbe4bb06fa3"
+        }
+      ],
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Sheva",
+          "title": "创办者（本人署名文章自述）",
+          "period": "2023年文章发布前后",
+          "description": "本人署名文章称其参与创办 Sheva，并转向初创企业投资。",
+          "source_id": "omri-sheva"
+        }
+      ],
+      "education": [],
+      "experience_summary": "本人署名文章披露了其从职业篮球转向创业投资并创办 Sheva；其具体现任职务与完整投资组合未在本档案中推断。"
+    },
+    "INV-383c30c53e9ef6": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "海愿资本官网称其成立于2014年，主要发起人具有投资、企业管理和工程技术背景，并将其投资历程概述为硬科技投资。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2014（官网自述）",
+          "source_id": "hai-founded"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资方向",
+          "value": "硬科技",
+          "source_id": "hai-focus"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.hyvccapital.com/",
+          "url": "https://www.hyvccapital.com/",
+          "source_id": "hai-founded"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "hai-founded",
+          "source_url": "https://www.hyvccapital.com/",
+          "source_title": "海愿资本_深圳市海愿创业投资有限公司",
+          "source_content_hash": "f94ecab069b3690d6b15e8f7da9167f6196581be4c1ab1853343253c1d0b34ea",
+          "quote": "海愿资本成立于2014年",
+          "quote_hash": "4dcac822282e8213996bf41f518c61460972291dd829db859607a5d059639333"
+        },
+        {
+          "source_id": "hai-focus",
+          "source_url": "https://www.hyvccapital.com/",
+          "source_title": "海愿资本_深圳市海愿创业投资有限公司",
+          "source_content_hash": "f94ecab069b3690d6b15e8f7da9167f6196581be4c1ab1853343253c1d0b34ea",
+          "quote": "十余年硬科技投资史",
+          "quote_hash": "4a8a1054a8d0cbb64a8ed499eed895899c60df4a6f6fb87b8bfe3a1807f19435"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-385e3929a3dc1f": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Norwest 官网称其 Venture Capital 团队跨行业投资早期至后期企业，并提供股权投资和创业者支持。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期至后期",
+          "source_id": "nor-venture"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资范围",
+          "value": "跨行业",
+          "source_id": "nor-venture"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.norwest.com/",
+          "url": "https://www.norwest.com/",
+          "source_id": "nor-venture"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "nor-venture",
+          "source_url": "https://www.norwest.com/venture/",
+          "source_title": "Norwest Venture Capital | Early-Stage to Growth",
+          "source_content_hash": "bac0209c82e0d0bc9f7f2673f468e3c780a38a88a71f7a6cc0f085773682bdc9",
+          "quote": "Norwest’s Venture Capital (NVP) team invests in early- to late-stage companies across industries",
+          "quote_hash": "5a44e8a1a7a54e8b876864b2c0991562d2aac6981d0aff4a8260e9bbae882a2b"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-387d9f8fba8498": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "SignalFire 官网回顾其于2013年启动，并称其以数据和技术推动风险投资模式创新。",
+      "facts": [
+        {
+          "field": "started_year",
+          "label": "官网回顾的启动年份",
+          "value": "2013",
+          "source_id": "signal-about"
+        },
+        {
+          "field": "investment_model",
+          "label": "官网自述模式",
+          "value": "将数据、技术应用于风险投资",
+          "source_id": "signal-about"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.signalfire.com/",
+          "url": "https://www.signalfire.com/",
+          "source_id": "signal-about"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "signal-about",
+          "source_url": "https://www.signalfire.com/about",
+          "source_title": "About | SignalFire | Venture Capital",
+          "source_content_hash": "1c8455fc382da43a3e38c91f9c619d397a92f5192010e78033ea74c2fe7f7c58",
+          "quote": "We started in 2013 as a bootstrapped startup with one goal: disrupt venture capital",
+          "quote_hash": "d720d8cf34f84258328e733025fe52869cb239d494f91b20f2eed8856e956969"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-389cd7e12ad5ae": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "依据 Arm 新闻稿与 Build Collective 官方人物页；仅记录已核验职务和公开投资人身份，不扩展完整履历。",
+      "summary": "Arm 新闻稿称 Tony Fadell 是 Build Collective 的 Principal、活跃投资人与创业者；Build Collective 官方人物页也将其描述为投资人。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "tony-arm",
+          "source_url": "https://newsroom.arm.com/news/tony-fadell-joins-arm-board-of-directors",
+          "source_title": "Tony Fadell Joins Arm Board of Directors - Arm Newsroom",
+          "source_content_hash": "a8c9372b73aa0c82ad45e6b6b8c7e04b940f8621a2af544d808f26849fea34f6",
+          "quote": "Tony Fadell is the Principal at the Build Collective, an investment and advisory firm coaching deep tech startups.",
+          "quote_hash": "27f2d91fd562cf07cc08e82ae9b6261547cb800ef59eb2a4479c919112444176"
+        },
+        {
+          "source_id": "tony-investor",
+          "source_url": "https://newsroom.arm.com/news/tony-fadell-joins-arm-board-of-directors",
+          "source_title": "Tony Fadell Joins Arm Board of Directors - Arm Newsroom",
+          "source_content_hash": "a8c9372b73aa0c82ad45e6b6b8c7e04b940f8621a2af544d808f26849fea34f6",
+          "quote": "He is an active investor and entrepreneur",
+          "quote_hash": "44cf46338cf5235308441664562a7bd134e558a0a072d1ea350838957d663f40"
+        },
+        {
+          "source_id": "tony-arm-nest",
+          "source_url": "https://newsroom.arm.com/news/tony-fadell-joins-arm-board-of-directors",
+          "source_title": "Tony Fadell Joins Arm Board of Directors - Arm Newsroom",
+          "source_content_hash": "a8c9372b73aa0c82ad45e6b6b8c7e04b940f8621a2af544d808f26849fea34f6",
+          "quote": "Tony is the founder and former CEO of Nest, an IoT pioneer",
+          "quote_hash": "cfa5c4d16334e557936c8faa5e6e3beff5745673d975a2ea89a586c9dec011d7"
+        },
+        {
+          "source_id": "tony-build",
+          "source_url": "https://www.buildc.com/meet-tony",
+          "source_title": "Meet Tony | Build Collective",
+          "source_content_hash": "89b475f0d63004903ebecf17eb22b395a3779ba213d096cc43dc97064abc4757",
+          "quote": "an investor, mentor, and now an author",
+          "quote_hash": "61ca16c13a99a3cac8809c922bc6008cb250068483cc89114276c018c1ffe85d"
+        }
+      ],
+      "last_verified_at": "2026-10-03",
+      "current_roles": [
+        {
+          "title": "Principal",
+          "organization": "Build Collective",
+          "source_id": "tony-arm"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Nest",
+          "title": "创始人、前首席执行官",
+          "period": "Arm 新闻稿所述过往职务",
+          "description": "Arm 新闻稿称其为 Nest 创始人及前 CEO。",
+          "source_id": "tony-arm-nest"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Arm 新闻稿将其描述为活跃投资人和创业者；Build Collective 官方人物页亦称其为投资人。"
+    },
+    "INV-3a4877c6069ffa": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Madrona 官网描述其从孵化到种子阶段支持创业团队，并称在首次种子投资时关注问题来源和创始团队。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露阶段",
+          "value": "孵化至种子阶段",
+          "source_id": "mad-about"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.madrona.com/",
+          "url": "https://www.madrona.com/",
+          "source_id": "mad-about"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "mad-about",
+          "source_url": "https://www.madrona.com/about/",
+          "source_title": "Madrona | About",
+          "source_content_hash": "cbea7deedacd7d5f3d08f1b53e4ff269faa01e3be1e67f74b7e1caf71665d79b",
+          "quote": "Incubation to Seed These early partnerships are anchored in shared trust",
+          "quote_hash": "2f65188598201ce8275e672648d6244b3d42b098f38746c7487603e97d44144f"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-3addd7a2336a8c": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Upper90 官网将其描述为混合型投资机构，面向有可预测收入或抵押物的科技创业公司提供定制债权和股权资本。",
+      "facts": [
+        {
+          "field": "investment_type",
+          "label": "官网披露资本形式",
+          "value": [
+            "债权",
+            "股权"
+          ],
+          "source_id": "upper-about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "目标企业",
+          "value": "有可预测收入或抵押物的科技创业公司",
+          "source_id": "upper-about"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://upper90.io/",
+          "url": "https://upper90.io/",
+          "source_id": "upper-about"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "upper-about",
+          "source_url": "https://upper90.io/",
+          "source_title": "Upper90",
+          "source_content_hash": "a10a40494ff1ef1e4626923886dce97613cf95abcb206666836414307c7e5e54",
+          "quote": "Upper90 is a hybrid investment firm that seeks to leverage data to provide tailored debt and equity to technology startups with predictable revenue or collateral",
+          "quote_hash": "b38f6a59380a8695276c87a429a410316698637df6847d49e3a70a716ae29e7c"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-3b366289d9407c": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "依据联创投资集团股份有限公司2017年披露文件；仅记录当时披露的法定主体和基金普通合伙人身份，不推断其当前基金管理状态。",
+      "summary": "联创投资集团股份有限公司2017年公告列明，宁波联创永浚投资管理有限公司担任相关专项基金普通合伙人，并披露其经营范围为投资管理、资产管理。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "公告披露主体名称",
+          "value": "宁波联创永浚投资管理有限公司",
+          "source_id": "lian-gp"
+        },
+        {
+          "field": "fund_role",
+          "label": "公告披露基金角色",
+          "value": "中科金财-联创金融科技专项投资基金普通合伙人（2017年公告）",
+          "source_id": "lian-gp"
+        },
+        {
+          "field": "business_scope",
+          "label": "公告披露经营范围",
+          "value": "投资管理；资产管理（2017年披露）",
+          "source_id": "lian-scope"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "lian-gp",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2017-12-05/1204192009.PDF",
+          "source_title": "联创投资集团股份有限公司公告（CNINFO，2017-12-05）",
+          "source_content_hash": "efe0e5e65e5c57d0a0e1b63bf7d475c6aeb181651c8ce0da93fe12da4d96ec56",
+          "quote": "普通合伙人：宁波联创永浚投资管理有限公司",
+          "quote_hash": "9e1ec244453ff71b4fa18a1c6a8938ae5b8796ed6296401498099dde51f70e24"
+        },
+        {
+          "source_id": "lian-scope",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2017-12-05/1204192009.PDF",
+          "source_title": "联创投资集团股份有限公司公告（CNINFO，2017-12-05）",
+          "source_content_hash": "efe0e5e65e5c57d0a0e1b63bf7d475c6aeb181651c8ce0da93fe12da4d96ec56",
+          "quote": "经营范围： 投资管理；资产管理。",
+          "quote_hash": "a19d3822de7c72b798ca57a3e444ac98dfd15fd0fb18e2ad23ea1bdf3ca0ebd7"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-3b6824ae363acb": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "Zerodha 官网将 Rainmatter 描述为其金融科技基金和孵化器；本档案保留两者名称关系，不将品牌等同于独立法定主体，也不扩展投资组合。",
+      "summary": "Zerodha 官网称 Rainmatter 是其金融科技基金和孵化器，并已投资多家金融科技初创公司。",
+      "facts": [
+        {
+          "field": "investment_vehicle",
+          "label": "官网披露基金及孵化器",
+          "value": "Rainmatter（Zerodha 官网称）",
+          "source_id": "zerodha-about"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网披露投资活动",
+          "value": "已投资多家金融科技初创公司",
+          "source_id": "zerodha-about"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://zerodha.com/",
+          "url": "https://zerodha.com/",
+          "source_id": "zerodha-about"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "zerodha-about",
+          "source_url": "https://zerodha.com/about/",
+          "source_title": "Our company, history, and the people behind it",
+          "source_content_hash": "870dfe9c22ac48f5e368c9ebca6db6e720c187e9a4461573d34ed37ff0057bab",
+          "quote": "Rainmatter , our fintech fund and incubator, has invested in several fintech startups",
+          "quote_hash": "40fea66cc938c12ac01def5a72b57e2566f9471b3dc276d35ca6e6998ea842be"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-3b9d2d6ec2d84e": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Sixth Street Growth 是 Sixth Street 的成长投资平台；公司公告称其目标为中后期成长型企业。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "目标投资阶段",
+          "value": "中后期成长阶段",
+          "source_id": "sixth-growth"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://sixthstreet.com/",
+          "url": "https://sixthstreet.com/",
+          "source_id": "sixth-growth"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "sixth-growth",
+          "source_url": "https://sixthstreet.com/firm_news/sixth-street-closes-4-4-billion-in-flexible-long-term-capital-to-invest-in-fast-growing-companies/",
+          "source_title": "Sixth Street Closes $4.4 Billion in Flexible, Long-Term Capital to Invest in Fast-Growing Companies - Sixth Street",
+          "source_content_hash": "dcc1cecb92a9c93ccf20933d182f215700650fe8c5894fb4724f59f1046f1b05",
+          "quote": "Sixth Street Growth targets investments in late- and mid-stage growth companies",
+          "quote_hash": "b3ad47060a6e3ce4274f31ef7bfa4105360e51fd8d3890a4bee42aba0487e520"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-697190e2feecba": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Aero X Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Claros · 种子轮 · 2026-03-19 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2877a4b61010da1c"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-2877a4b61010da1c",
+          "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
+          "source_title": "Redefining Data Center Energy Infrastructure from Chip to Grid - Claros",
+          "source_content_hash": "eb7045e28cb8eed2d595772f7266d9e7b5ba6089d2283cda9760f0253f16a466",
+          "quote": "with participation from new and existing investors like Systemiq Capital, Aero X Ventures, Trenches Capital, a leading power semiconductor provider, and others",
+          "quote_hash": "75f250f9e1e2da232df857edf46f43289d46b239e77ace5b6dc2dad10a43e6e5"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-717d28fa2c48cc": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "富坤创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：全灵（深圳）网络有限公司 · Pre-A轮 · 2026-09-28 · 本轮参投 · 千万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-43cf2d3783cf0994"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-43cf2d3783cf0994",
+          "source_url": "https://www.163.com/dy/article/L7UNLELB05119FMA.html",
+          "source_title": "对话王诗沐：走出大厂创业，做 3D AI 游戏，瞄准新的内容平台机会|翻译|vr|互动娱乐|unity_网易订阅",
+          "source_content_hash": "b1c97175abea8328eec7f9b8160ec39c335f32a022e09f03c0becd302fceceb0",
+          "quote": "本轮融资由百度战投领投，投资方包括美图投资、富坤创投等机构，老股东 Webtime Information S&T 持续加持。",
+          "quote_hash": "c6df0dc4feed09080b996ab2c5820103657d51e833c479a5061b041332bc9f32"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-77d12c98cea14b": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构简介仅记录其官网公开的投资主题与愿景，不补写基金规模、法律载体或完整投资组合。",
+      "summary": "Realyze Ventures 官网称其关注建成环境领域的气候影响、流程效率与回报，并以技术和创新推动地产及建筑行业转型。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述的关注主题",
+          "value": "关注建成环境领域的气候影响、流程效率与回报。",
+          "source_id": "realyze_official_profile"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "realyze_official_profile",
+          "source_url": "https://realyzeventures.com/",
+          "source_title": "Realyze Ventures &#8211; Investing in transition.",
+          "source_content_hash": "b372fc887123a5288949c7d07ffba2fb01c8be1194822b6344d6ee3e6afbb73d",
+          "quote": "Driving climate impact, process efficiency, and superior returns in the built world. THE WORLD IS CHANGING The industry needs to transform. Real Estate is responsible for 40% of global CO2 emission. The potential for energy savings in existing and new buildings r",
+          "quote_hash": "a0777575dc7fb5f797b89cc31ef28d1273940388fa43ff651a9705b918b4f8dc"
         }
       ],
       "last_verified_at": "2026-10-03"

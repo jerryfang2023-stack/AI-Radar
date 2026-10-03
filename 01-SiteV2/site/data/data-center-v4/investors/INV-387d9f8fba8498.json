@@ -137,12 +137,24 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "SignalFire 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "SignalFire 官网回顾其于2013年启动，并称其以数据和技术推动风险投资模式创新。",
+      "facts": [
+        {
+          "field": "started_year",
+          "label": "官网回顾的启动年份",
+          "value": "2013",
+          "source_id": "signal-about"
+        },
+        {
+          "field": "investment_model",
+          "label": "官网自述模式",
+          "value": "将数据、技术应用于风险投资",
+          "source_id": "signal-about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +162,24 @@
           "source_id": "FISRC-1a2ad9b1108e3f59"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.signalfire.com/",
+          "url": "https://www.signalfire.com/",
+          "source_id": "signal-about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "signal-about",
+          "source_url": "https://www.signalfire.com/about",
+          "source_title": "About | SignalFire | Venture Capital",
+          "source_content_hash": "1c8455fc382da43a3e38c91f9c619d397a92f5192010e78033ea74c2fe7f7c58",
+          "quote": "We started in 2013 as a bootstrapped startup with one goal: disrupt venture capital",
+          "quote_hash": "d720d8cf34f84258328e733025fe52869cb239d494f91b20f2eed8856e956969"
+        },
         {
           "source_id": "FISRC-1a2ad9b1108e3f59",
           "source_url": "https://www.prnewswire.com/news-releases/outmarket-ai-raises-34-5m-series-b-to-solidify-position-as-the-1-ai-platform-for-insurance-302891583.html",
@@ -161,7 +189,8 @@
           "quote_hash": "9c4dfa4bd1f917cdee90a6d7b63e7f79e690df1508c925d76e125149ae2fbe18"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

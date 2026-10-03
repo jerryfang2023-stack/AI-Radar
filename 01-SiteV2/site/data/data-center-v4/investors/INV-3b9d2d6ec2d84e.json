@@ -138,12 +138,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Sixth Street Growth 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Sixth Street Growth 是 Sixth Street 的成长投资平台；公司公告称其目标为中后期成长型企业。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "目标投资阶段",
+          "value": "中后期成长阶段",
+          "source_id": "sixth-growth"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +157,24 @@
           "source_id": "FISRC-23f811fd2df5ab63"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://sixthstreet.com/",
+          "url": "https://sixthstreet.com/",
+          "source_id": "sixth-growth"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sixth-growth",
+          "source_url": "https://sixthstreet.com/firm_news/sixth-street-closes-4-4-billion-in-flexible-long-term-capital-to-invest-in-fast-growing-companies/",
+          "source_title": "Sixth Street Closes $4.4 Billion in Flexible, Long-Term Capital to Invest in Fast-Growing Companies - Sixth Street",
+          "source_content_hash": "dcc1cecb92a9c93ccf20933d182f215700650fe8c5894fb4724f59f1046f1b05",
+          "quote": "Sixth Street Growth targets investments in late- and mid-stage growth companies",
+          "quote_hash": "b3ad47060a6e3ce4274f31ef7bfa4105360e51fd8d3890a4bee42aba0487e520"
+        },
         {
           "source_id": "FISRC-23f811fd2df5ab63",
           "source_url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
@@ -162,7 +184,8 @@
           "quote_hash": "b233db421b569c9a4a4d161be9d7f8250496f79ea7110abbd433d88c071ba51d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

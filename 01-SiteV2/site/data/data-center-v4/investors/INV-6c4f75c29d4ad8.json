@@ -139,18 +139,20 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前可由公司一手公告确认的资料限于 AgentMail 将 Taro Fukuyama 列入该轮天使投资人；没有把同名人士经历或投资方向外推到此档案。",
-      "summary": "AgentMail 官方 2026 年 3 月融资公告将 Taro Fukuyama 列为其 600 万美元种子轮天使投资人之一；其其他职业履历尚未在本次一手来源中核实。",
-      "current_roles": [],
+      "coverage_status": "researched",
+      "coverage_note": "当前职务来自 Rice Capital 官网；AgentMail 的融资公告确认一项天使投资活动。未扩写其余履历。",
+      "summary": "AgentMail 发行方融资公告将 Taro Fukuyama 列为该轮天使投资者之一；Rice Capital 官网将他列为创始合伙人。本档案仅记录这两项可直接核验的信息。",
+      "current_roles": [
+        {
+          "title": "Founding Partner",
+          "organization": "Rice Capital",
+          "source_id": "ricecapital_taro_role"
+        }
+      ],
       "career": [],
       "education": [],
       "experience_summary": "本条为融资活动级档案；当前来源不足以确认其其他任职或履历。",
       "track_record": [
-        {
-          "description": "AgentMail 官方公告列 Taro Fukuyama 为其 2026 年 3 月 600 万美元种子轮天使投资人之一。",
-          "source_id": "PFSRC-INV-6c4f75c29d4ad8-1"
-        },
         {
           "description": "融资来源记录：AgentMail · 种子轮 · 2026-03-10 · 本轮天使投资人 · $6M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e1b0747a0117fec0"
@@ -158,23 +160,23 @@
       ],
       "sources": [
         {
-          "source_id": "PFSRC-INV-6c4f75c29d4ad8-1",
-          "source_url": "https://www.agentmail.to/blog/agentmail-seed-launch",
-          "source_title": "We&#x27;ve raised $6M to build the first email inboxes for AI agents. | AgentMail",
-          "source_content_hash": "5dc46511f099c91e752c698f7ed5a42cbf1d913d74cf9fe092908698d6d047f6",
-          "quote": "and Taro Fukuyama.",
-          "quote_hash": "42f761207f1295ab84a36006e04ddf0cf4f5ac25783ba401690d83d476bf0667"
-        },
-        {
           "source_id": "FISRC-e1b0747a0117fec0",
           "source_url": "https://www.globenewswire.com/news-release/2026/03/10/3253159/0/en/AgentMail-Raises-6M-led-by-General-Catalyst-to-Build-the-First-Email-Provider-for-AI-Agents.html",
-          "source_title": "AgentMail 获 General Catalyst 领投 600 万美元，打造首个面向 AI 智能体的邮件提供商",
-          "source_content_hash": "3211f0747780cab714787d1e1e425054285c54af65524fe6d750fcb76d6fe5ba",
+          "source_title": "AgentMail Raises $6M led by General Catalyst to Build the",
+          "source_content_hash": "baf00923f0a9b047bef14dae22fbfc22e32233fd395b2a63ceaf44966eb86b4e",
           "quote": "notable angel investors including Paul Graham, Taro Fukuyama, Dharmesh Shah",
           "quote_hash": "11392f8a376d849ea009980b8ba2780a0f88797abbb6a939e9c1e1df1b4d51ed"
+        },
+        {
+          "source_id": "ricecapital_taro_role",
+          "source_url": "https://ricecapital.vc/",
+          "source_title": "RICE CAPITAL — Backing outlier founders in the US and Japan",
+          "source_content_hash": "fb5bdf9ca4f5e9240369481db0dcd348c1c1ac8559a4d45f592e0ce5dcbf867f",
+          "quote": "Founding Partner — Taro Fukuyama Founder of Fond (YC W12, acquired 2023). First Japanese founder accepted to Y Combinator. X X LinkedIn LinkedIn Backing 200+ founders in the US and Japan. US Japan Contact hello@ricecapit",
+          "quote_hash": "3179d8ded35e85b198fb32478dece07cfd35210e76b0d09bb1643f7a48629556"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-03",
       "facts": [],
       "milestones": [],
       "contacts": []
