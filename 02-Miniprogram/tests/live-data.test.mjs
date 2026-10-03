@@ -9,7 +9,7 @@ const fallbackReports = require("../miniprogram/data/report-index.js");
 const fixtureDate = fallbackFunding.meta.latestDate;
 const reportFixtureDate = fallbackReports.meta.latestDate;
 
-for(const corrupt of [false,true]) test(`compact funding load with compatibility fallback: ${corrupt}`,async()=>{
+for(const scenario of ["success","malformed","network","stale","count"]) test(`compact funding load with compatibility fallback: ${scenario}`,async()=>{
   const requests=[],storage=new Map(),columns=[...new Set(fallbackFunding.cards.flatMap(card=>Object.keys(card)))];
   const compact={schemaVersion:'GUANLAN-COMPACT-INDEX-1',index:{...fallbackFunding},collections:{cards:{columns,dictionaries:{},omitted:{},rows:[]}}};
   delete compact.index.cards;
@@ -17,15 +17,16 @@ for(const corrupt of [false,true]) test(`compact funding load with compatibility
     compact.collections.cards.rows.push(columns.map(key=>Object.hasOwn(card,key)?card[key]:null));
     compact.collections.cards.omitted[i]=columns.flatMap((key,col)=>Object.hasOwn(card,key)?[]:[col]);
   });
-  global.wx={getStorageSync:key=>storage.get(key),setStorageSync:(key,value)=>storage.set(key,value),request:({url,success})=>{
+  global.wx={getStorageSync:key=>storage.get(key),setStorageSync:(key,value)=>storage.set(key,value),request:({url,success,fail})=>{
     requests.push(url);
-    const data=url.includes('manifest')?{version:`compact:${corrupt}`,latestDate:fixtureDate,fundingVersion:fallbackFunding.meta.fundingVersion,taxonomyVersion:fallbackFunding.meta.taxonomyVersion,cardCount:fallbackFunding.cards.length,indexPath:'/data/mini/funding-index.json',compactIndexPath:'/data/mini/domains/financing/compact-index.json'}:url.includes('compact-index')?(corrupt?{schemaVersion:'invalid'}:compact):fallbackFunding;
+    if(url.includes("compact-index") && scenario==="network") {fail(new Error("offline"));return;}
+    const data=url.includes('manifest')?{version:`compact:${scenario}`,latestDate:fixtureDate,fundingVersion:fallbackFunding.meta.fundingVersion,taxonomyVersion:fallbackFunding.meta.taxonomyVersion,cardCount:fallbackFunding.cards.length,indexPath:'/data/mini/funding-index.json',compactIndexPath:'/data/mini/domains/financing/compact-index.json'}:url.includes('compact-index')?(scenario==="malformed"?{schemaVersion:'invalid'}:scenario==="stale"?{...compact,index:{...compact.index,meta:{...compact.index.meta,latestDate:"2000-01-01"}}}:scenario==="count"?{...compact,collections:{cards:{columns,rows:[]}}}:compact):fallbackFunding;
     success({statusCode:200,data});
   }};
   try{
     const state=await refreshFundingData();assert.equal(state.refreshFailed,false);assert.deepEqual(state.index,fallbackFunding);
     assert.ok(requests.some(url=>url.includes('compact-index')));
-    assert.equal(requests.some(url=>url.includes('/data/mini/funding-index.json')),corrupt);
+    assert.equal(requests.some(url=>url.includes('/data/mini/funding-index.json')),scenario!=="success");
   }finally{delete global.wx;}
 });
 

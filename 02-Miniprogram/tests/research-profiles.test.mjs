@@ -6,7 +6,7 @@ import {createRequire} from 'node:module';
 const require=createRequire(import.meta.url);
 const read=p=>fs.readFileSync(new URL('../miniprogram/'+p,import.meta.url),'utf8');
 const profile={id:'EN-Test',key:'id:EN-Test',type:'people',name:'同名',markets:[],categories:[],summary:'简介'};
-function catalogHarness(){let queue=[];const ctx={module:{exports:{}},require:p=>p==="./compact-index.js"?require("../miniprogram/utils/compact-index.js"):(()=>{throw Error("unexpected require");})(),wx:{request(o){const value=queue.shift();value instanceof Error?o.fail(value):o.success({statusCode:200,data:value});}}};vm.runInNewContext(read('utils/research-profiles.js'),ctx);return {...ctx.module.exports,send(...r){queue.push(...r);}};}
+function catalogHarness(){let queue=[],requests=[];const ctx={module:{exports:{}},require:p=>p==="./compact-index.js"?require("../miniprogram/utils/compact-index.js"):(()=>{throw Error("unexpected require");})(),wx:{request(o){requests.push(o.url);const value=queue.shift();value instanceof Error?o.fail(value):o.success({statusCode:200,data:value});}}};vm.runInNewContext(read('utils/research-profiles.js'),ctx);return {...ctx.module.exports,requests,send(...r){queue.push(...r);}};}
 const manifest=(hash='a'.repeat(64),n=1)=>({schemaVersion:'MINI-ENTITY-PROFILES-V1',contentHash:hash,profileCount:n});
 test('public catalog retains sourced investment direction and rejects invalid field types',async()=>{const h=catalogHarness();h.send(manifest(),{...manifest(),profiles:[{...profile,type:'investors',investmentDirection:'人工智能、企业服务'}]});await h.refreshResearchProfiles();assert.equal(h.getResearchProfiles()[0].investmentDirection,'人工智能、企业服务');h.send(manifest('b'.repeat(64)),{...manifest('b'.repeat(64)),profiles:[{...profile,investmentDirection:{private:'invalid'}}]});await assert.rejects(h.refreshResearchProfiles());});
 test('institution home updates and child directory show the same investment direction instead of biography',()=>{const ctx={module:{exports:{}},require:p=>p.includes('research-profiles')?{getResearchProfiles:()=>[{...profile,type:'investors',investmentDirection:'人工智能',latestDate:'2026-10-01'},{...profile,type:'investors',id:'unknown',key:'unknown',latestDate:'2026-10-01'}]}:{buildEntityLibrary:()=>({})}};vm.runInNewContext(read('utils/directory.js'),ctx);const rows=ctx.module.exports.directory({index:{cards:[]}}, {market:'all',type:'investors'}).items;for(const row of rows){assert.equal(row.updateTitle,row.subtitle);assert.equal(row.updateLabel,'');assert.doesNotMatch(row.subtitle,/简介/);}assert.equal(rows.find(r=>r.id==='EN-Test').subtitle,'投资方向：人工智能');assert.equal(rows.find(r=>r.id==='unknown').subtitle,'投资方向暂未披露');});
@@ -17,3 +17,30 @@ function pageHarness(){let page,identity='a',resolve,reject;let profiles=[];cons
 test('shared ID-only entry has a visible preview and rejects cross-account late protected replies',async()=>{const h=pageHarness();h.page.onLoad({type:'people',key:'id:EN-A',from:'share'});assert.ok(h.page.data.entity);h.identity('b');h.resolve({name:'Old account',publicProfile:{sections:['secret']}});await new Promise(r=>setImmediate(r));assert.equal(h.page.data.entity.publicProfile,undefined);});
 test('expired or second guest detail clears full content and leaves gate and name visible',async()=>{for(const status of ['expired','unregistered']){const h=pageHarness();h.page.type='people';h.page.key='id:EN-A';h.page.name='人物';h.page.data.entity={name:'人物',publicProfile:{sections:['secret']}};const pending=h.page.verifyServerAccess();h.reject({statusCode:403,accessState:status});await pending;assert.equal(h.page.data.contentLocked,true);assert.equal(h.page.data.entity.publicProfile,undefined);assert.equal(h.page.data.entity.name,'人物');}});
 test('research directory deduplicates unique institution aliases without merging same-name people or unknown markets',()=>{const ctx={module:{exports:{}},require:p=>p.includes('research-profiles')?{getResearchProfiles:()=>[{...profile,type:'investors',legacyInvestorKey:'同名'},{...profile,id:'EN-B',key:'id:EN-B'}]}:{buildEntityLibrary:()=>({investors:[{type:'investors',key:'同名',name:'同名',markets:['china'],categories:[]}],people:[]})}};vm.runInNewContext(read('utils/directory.js'),ctx);assert.equal(ctx.module.exports.directory({index:{cards:[]}}, {market:'all'}).total,2);assert.equal(ctx.module.exports.directory({index:{cards:[]}}, {market:'global'}).total,0);});
+
+function compactProfiles(index) {
+  const {profiles, ...header}=index;
+  const columns=Object.keys(profiles[0]);
+  return {schemaVersion:'GUANLAN-COMPACT-INDEX-1',index:header,collections:{profiles:{columns,rows:profiles.map(p=>columns.map(k=>p[k]))}}};
+}
+for (const scenario of ['success','network','malformed','stale','invalid-entry']) test(`compact profiles use validated legacy fallback: ${scenario}`, async()=>{
+  const h=catalogHarness(), m={...manifest(),compactIndexPath:'/data/mini/domains/profiles/compact-index.json'};
+  const legacy={...manifest(),profiles:[profile]};
+  let compact=compactProfiles(legacy);
+  if(scenario==='network') compact=new Error('offline');
+  if(scenario==='malformed') compact={schemaVersion:'invalid'};
+  if(scenario==='stale') compact.index.contentHash='b'.repeat(64);
+  if(scenario==='invalid-entry') compact=compactProfiles({...legacy,profiles:[{...profile,markets:['unknown']}]});
+  h.send(m,compact,legacy);
+  const result=await h.refreshResearchProfiles();
+  assert.equal(result[0].id,profile.id);
+  assert.equal(h.requests.some(url=>url.includes('/profile-index.json')),scenario!=='success');
+});
+test('failed compact and legacy profiles retain the accepted catalog and allow recovery',async()=>{
+  const h=catalogHarness();h.send(manifest(),{...manifest(),profiles:[profile]});await h.refreshResearchProfiles();
+  const changed={...manifest('b'.repeat(64)),compactIndexPath:'/data/mini/domains/profiles/compact-index.json'};
+  h.send(changed,compactProfiles({...manifest(),profiles:[profile]}),{...changed,profiles:[]});
+  await assert.rejects(h.refreshResearchProfiles());assert.equal(h.getResearchProfiles()[0].id,profile.id);
+  h.send(changed,compactProfiles({...changed,profiles:[{...profile,name:'更新姓名'}]}));
+  await h.refreshResearchProfiles();assert.equal(h.getResearchProfiles()[0].name,'更新姓名');
+});
