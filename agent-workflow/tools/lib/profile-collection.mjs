@@ -13,6 +13,12 @@ export const today=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai'
 export function canonicalUrl(value){const url=new URL(value);if(url.protocol!=='https:'||url.username||url.password)throw new Error('Source must use public HTTPS');url.hash='';return url.href;}
 export const readJson=file=>JSON.parse(fs.readFileSync(file,'utf8').replace(/^\uFEFF/u,''));
 export function atomicJson(file,value){fs.mkdirSync(path.dirname(file),{recursive:true});const tmp=`${file}.${crypto.randomUUID()}.tmp`;fs.writeFileSync(tmp,JSON.stringify(value,null,2)+'\n');fs.renameSync(tmp,file);}
+function retrySqliteBusy(operation){
+  for(let attempt=0;;attempt++)try{return operation();}catch(error){
+    if(!/database is (?:locked|busy)/iu.test(error?.message||'')||attempt>=7)throw error;
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)),0,0,Math.min(25*2**attempt,500));
+  }
+}
 
 export class ProfileQueue {
   constructor(repo,stateDir,{clock=()=>Date.now()}={}){
@@ -24,13 +30,14 @@ export class ProfileQueue {
       if(path.dirname(parent)===parent)break;
     }
     this.clock=clock;this.db=new DatabaseSync(path.join(this.stateDir,'queue.sqlite'));
-    this.db.exec(`PRAGMA busy_timeout=5000; PRAGMA journal_mode=WAL;
+    this.db.exec('PRAGMA busy_timeout=5000');
+    retrySqliteBusy(()=>this.db.exec(`PRAGMA journal_mode=WAL;
       CREATE TABLE IF NOT EXISTS jobs (key TEXT PRIMARY KEY, id TEXT NOT NULL, collection TEXT NOT NULL, lane TEXT NOT NULL, payload TEXT NOT NULL, priority INTEGER NOT NULL, base_hash TEXT NOT NULL, state TEXT NOT NULL DEFAULT 'pending', worker TEXT, token TEXT, lease_until INTEGER, lease_ms INTEGER NOT NULL DEFAULT 900000, attempts INTEGER NOT NULL DEFAULT 0, result TEXT, reviewer TEXT, error TEXT, updated INTEGER NOT NULL);
       CREATE TABLE IF NOT EXISTS events (seq INTEGER PRIMARY KEY, at INTEGER NOT NULL, job_key TEXT, event TEXT NOT NULL, detail TEXT);
       CREATE TABLE IF NOT EXISTS captures (url TEXT PRIMARY KEY, content_hash TEXT, captured_at INTEGER, title TEXT, lease_until INTEGER, token TEXT);
       CREATE TABLE IF NOT EXISTS capture_versions (url TEXT NOT NULL, content_hash TEXT NOT NULL, captured_at INTEGER NOT NULL, title TEXT NOT NULL, PRIMARY KEY(url,content_hash));
       INSERT OR IGNORE INTO capture_versions SELECT url,content_hash,captured_at,title FROM captures WHERE content_hash IS NOT NULL AND captured_at IS NOT NULL AND title IS NOT NULL;
-      CREATE TABLE IF NOT EXISTS locks (name TEXT PRIMARY KEY, token TEXT NOT NULL, lease_until INTEGER NOT NULL);`);
+      CREATE TABLE IF NOT EXISTS locks (name TEXT PRIMARY KEY, token TEXT NOT NULL, lease_until INTEGER NOT NULL);`));
     const jobColumns=new Set(this.db.prepare('PRAGMA table_info(jobs)').all().map(row=>row.name));
     if(!jobColumns.has('lease_ms'))try{this.db.exec('ALTER TABLE jobs ADD COLUMN lease_ms INTEGER NOT NULL DEFAULT 900000');}catch(error){
       if(!this.db.prepare('PRAGMA table_info(jobs)').all().some(row=>row.name==='lease_ms'))throw error;
