@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Founders' Co-op 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Founders’ Co-op官网将其定位为太平洋西北地区的早期首轮投资机构，重点服务技术创业团队。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "太平洋西北地区的首轮投资机构。",
+          "source_id": "PROFILE-INV-556f01ad69d5f2-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网服务对象",
+          "value": "有雄心的技术创业团队。",
+          "source_id": "PROFILE-INV-556f01ad69d5f2-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-eb36ed84da37eceb"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网首页的自我介绍；不推断基金规模或未披露的法律实体名称。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Founders’ Co-op",
+          "url": "https://www.founderscoop.com/?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-556f01ad69d5f2-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-556f01ad69d5f2-1",
+          "source_url": "https://www.founderscoop.com/?source_capture=2026-10-03",
+          "source_title": "Founders&#039; Co-op &#8211; Seattle Venture Capital, Seed and Early Stage Investment Fund",
+          "source_content_hash": "bab78fad15cba79a705d9370ba69996df1ec3cc3a85ae6fa9239f26362dbbe35",
+          "quote": "THE BEST FIRST-CHECK INVESTOR IN THE PACIFIC NORTHWEST.",
+          "quote_hash": "984167a9317fc90c251dd2abe2af415af6e6fcceecc0257aae4604fd69707195"
+        },
+        {
+          "source_id": "PROFILE-INV-556f01ad69d5f2-2",
+          "source_url": "https://www.founderscoop.com/?source_capture=2026-10-03",
+          "source_title": "Founders&#039; Co-op &#8211; Seattle Venture Capital, Seed and Early Stage Investment Fund",
+          "source_content_hash": "bab78fad15cba79a705d9370ba69996df1ec3cc3a85ae6fa9239f26362dbbe35",
+          "quote": "Wildly ambitious technical founding teams.",
+          "quote_hash": "ff2a4a29048535a67ebf2348413425ac3da425b694c605e61bb528c57e493c00"
+        },
         {
           "source_id": "FISRC-eb36ed84da37eceb",
           "source_url": "https://angelinvestorsnetwork.com/crypto-digital-assets/venice-ai-65m-series-a-dragonfly-crypto-vc-ai-crossover-2026",
@@ -161,7 +202,7 @@
           "quote_hash": "064fbdbb20a3e9bd68317bf1c29628cda2750182e8bec774417157cec7e00f7c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -273,12 +273,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "亦庄国投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "北京亦庄国际投资发展有限公司（亦庄国投）官网称其成立于2009年，是国有资本投资运营公司和产业赋能型投资平台，聚焦新一代信息技术、生物技术、新能源汽车、机器人及智能制造等领域。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法人全称",
+          "value": "北京亦庄国际投资发展有限公司。",
+          "source_id": "PROFILE-INV-568e529f9f4785-1"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2009年2月。",
+          "source_id": "PROFILE-INV-568e529f9f4785-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "国有资本投资运营公司、产业赋能型投资平台。",
+          "source_id": "PROFILE-INV-568e529f9f4785-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点方向",
+          "value": "新一代信息技术、生物技术和大健康、新能源智能汽车、机器人和智能制造。",
+          "source_id": "PROFILE-INV-568e529f9f4785-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -294,8 +315,40 @@
           "source_id": "FISRC-7a614400d44a7041"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "使用官网披露的法人全称与投资运营定位；未引用会随时间变化的资产总额。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网概况",
+          "value": "北京亦庄国际投资发展有限公司",
+          "url": "https://www.etowncapital.com/profile.html?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-568e529f9f4785-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-568e529f9f4785-1",
+          "source_url": "https://www.etowncapital.com/profile.html?source_capture=2026-10-03",
+          "source_title": "概况 -北京亦庄国际投资发展有限公司",
+          "source_content_hash": "14ce54146f116e019b9100dd8027fdc1be69d37b1704376f7f4f7c34e25dd512",
+          "quote": "北京亦庄国际投资发展有限公司（以下简称“亦庄国投”）成立于2009年2月，是一家以促进北京产业发展和科技创新为使命的国有资本投资运营公司。",
+          "quote_hash": "ea96a79adb44daab880e3ec21caed73334550f083ec558b30b294efc852bb3a2"
+        },
+        {
+          "source_id": "PROFILE-INV-568e529f9f4785-2",
+          "source_url": "https://www.etowncapital.com/profile.html?source_capture=2026-10-03",
+          "source_title": "概况 -北京亦庄国际投资发展有限公司",
+          "source_content_hash": "14ce54146f116e019b9100dd8027fdc1be69d37b1704376f7f4f7c34e25dd512",
+          "quote": "亦庄国投紧紧围绕“专业化、市场化、价值化的产业赋能型投资平台”功能定位",
+          "quote_hash": "fdd9f28baf0d0f30e009bf262187285d841e884a4cdfe1e3e4470a291087a5b2"
+        },
         {
           "source_id": "FISRC-a4dbd49c64cb5834",
           "source_url": "https://news.pedaily.cn/202607/565779.shtml",
@@ -321,7 +374,7 @@
           "quote_hash": "ce0234246a9291f7b30971897c1b63d65888b8b395d41b136fd13f1d3a9ec9bf"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

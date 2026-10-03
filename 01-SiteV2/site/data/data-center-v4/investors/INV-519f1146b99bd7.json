@@ -342,12 +342,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "T. Rowe Price 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "T. Rowe Price 是一家独立的全球投资管理机构，官网称其提供股票、固定收益和多资产策略，并自1937年以来服务投资者。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "独立的全球投资管理机构。",
+          "source_id": "PROFILE-INV-519f1146b99bd7-1"
+        },
+        {
+          "field": "investment_capabilities",
+          "label": "官网介绍的投资策略",
+          "value": "股票、固定收益和多资产策略。",
+          "source_id": "PROFILE-INV-519f1146b99bd7-1"
+        },
+        {
+          "field": "founded",
+          "label": "服务投资者时间",
+          "value": "自1937年以来。",
+          "source_id": "PROFILE-INV-519f1146b99bd7-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -363,8 +378,40 @@
           "source_id": "FISRC-61aa8db010b34dfa"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据公司官网自述记录其投资管理业务定位；未采纳随日期变化的管理资产规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网介绍",
+          "value": "T. Rowe Price",
+          "url": "https://www.troweprice.com/institutional/us/en/about/global-story/global-section-1.html?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-519f1146b99bd7-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-519f1146b99bd7-1",
+          "source_url": "https://www.troweprice.com/institutional/us/en/about/global-story/global-section-1.html?source_capture=2026-10-03",
+          "source_title": "Global Section 1",
+          "source_content_hash": "1abb683d68a7cf0875918413e5b52124ce5a0a74909e9a46a084339532bd397a",
+          "quote": "We are an independent, global investment management firm, offering a full range of equity, fixed income, and multi-asset strategies",
+          "quote_hash": "9c5a52cd831d8a40b7a2d730391d0eba5b884a12232872ac2279eae7aaa95259"
+        },
+        {
+          "source_id": "PROFILE-INV-519f1146b99bd7-2",
+          "source_url": "https://www.troweprice.com/institutional/us/en/about/global-story/global-section-1.html?source_capture=2026-10-03",
+          "source_title": "Global Section 1",
+          "source_content_hash": "1abb683d68a7cf0875918413e5b52124ce5a0a74909e9a46a084339532bd397a",
+          "quote": "We have been serving investors since 1937.",
+          "quote_hash": "3a4b03036beed2d4ef2c38cdcc363784f84038a346846ea4fa9c36465ce30bcf"
+        },
         {
           "source_id": "FISRC-ecee7b20064e2761",
           "source_url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/",
@@ -390,7 +437,7 @@
           "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

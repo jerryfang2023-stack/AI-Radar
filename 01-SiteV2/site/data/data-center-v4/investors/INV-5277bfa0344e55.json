@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Decibel 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Decibel 官网将自身定位为技术创始人的早期投资伙伴，聚焦工程与安全软件所需的基础软件，并覆盖开发者平台、网络安全、数据与人工智能。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网所述投资领域",
+          "value": "工程与安全团队使用的关键软件，包括开发者平台、网络安全、数据与人工智能。",
+          "source_id": "PROFILE-INV-5277bfa0344e55-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "面向技术创业公司的早期投资机构。",
+          "source_id": "PROFILE-INV-5277bfa0344e55-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-c4bbfe8565d35dc2"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据 decibel.vc 官网当前品牌和投资介绍；该档案只映射到该官网所代表的Decibel品牌，不补充未披露的法律主体名称。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Decibel",
+          "url": "https://www.decibel.vc/",
+          "source_id": "PROFILE-INV-5277bfa0344e55-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-5277bfa0344e55-1",
+          "source_url": "https://www.decibel.vc/",
+          "source_title": "Decibel",
+          "source_content_hash": "f6c160a1794a3cfe98ccf353cf3a28eaaff244c19ce1db4434e4d2b3d5d8180c",
+          "quote": "We invest in essential software used by engineering and security teams to build and protect our digital world.",
+          "quote_hash": "5e6e11f911ccd8967fdcca2583f1c79bbe492e1ef810e4ac260dabba121348cf"
+        },
+        {
+          "source_id": "PROFILE-INV-5277bfa0344e55-2",
+          "source_url": "https://www.decibel.vc/why-decibel",
+          "source_title": "Why Decibel - Decibel",
+          "source_content_hash": "041aa8b502c56bdea662bc9e2b966735cb96216568b854a732439970217b59dc",
+          "quote": "Developer Platforms Empowering all digital builders Cyber Security Securing our digital world Data, ML, and AI Bringing insights and AI to all",
+          "quote_hash": "95d2a7d43c2ddc26684359c2e7742d9809e2f33c5bdc5014ed98b6e46f73bff5"
+        },
         {
           "source_id": "FISRC-c4bbfe8565d35dc2",
           "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
@@ -161,7 +202,7 @@
           "quote_hash": "3686dbc0922b46c496a27f39c9ac08f406f76e3eacaf69e3b9b530a4a7367694"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

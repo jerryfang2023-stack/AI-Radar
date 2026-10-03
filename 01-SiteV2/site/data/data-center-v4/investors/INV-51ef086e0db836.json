@@ -137,25 +137,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Visionaries Club 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Visionaries Club 是一家欧洲风险投资机构；官网2026年文章称其正与 Judith Dada 合作，继续建设面向创业者的风险投资公司。官网现行品牌页使用 Visionaries 名称。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网机构定位",
+          "value": "欧洲风险投资机构。",
+          "source_id": "PROFILE-INV-51ef086e0db836-2"
+        },
+        {
+          "field": "brand_update",
+          "label": "现行品牌信息",
+          "value": "官网现行主站使用 Visionaries 名称，2026年文章仍以 Visionaries Club 指称该机构。",
+          "source_id": "PROFILE-INV-51ef086e0db836-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "融资来源记录：Pivot · 种子轮 · 既有投资方（种子轮）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-58b2708f2adcb70e"
-        },
-        {
-          "description": "融资来源记录：Pivot · 种子轮 · 既有投资方（种子轮）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4db7c0e1c705be9a"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据其官网当前品牌页面及2026年机构更新；档案名称保留任务标签 Visionaries Club，并说明官网现行品牌写法。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网机构更新",
+          "value": "Visionaries Club",
+          "url": "https://visionaries.vc/editorial/from-shared-origins-to-compounding-ambition",
+          "source_id": "PROFILE-INV-51ef086e0db836-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-51ef086e0db836-1",
+          "source_url": "https://visionaries.vc/editorial/from-shared-origins-to-compounding-ambition",
+          "source_title": "Visionaries &ndash; Hungry Beats Big",
+          "source_content_hash": "b9c6227526919e83e96262c42e3debdf69e0d89eaa3efc4351957fa8db26ee66",
+          "quote": "Today marks the next chapter of Visionaries Club",
+          "quote_hash": "df98aa2eca16166aee91d4048a8a1a10fde8cd70d1df14574cbccbd33183e265"
+        },
+        {
+          "source_id": "PROFILE-INV-51ef086e0db836-2",
+          "source_url": "https://visionaries.vc/editorial/from-shared-origins-to-compounding-ambition",
+          "source_title": "Visionaries &ndash; Hungry Beats Big",
+          "source_content_hash": "b9c6227526919e83e96262c42e3debdf69e0d89eaa3efc4351957fa8db26ee66",
+          "quote": "building the leading venture capital firm of our generation",
+          "quote_hash": "0cd66d252ccad521e68866b202e38909e438775122426cc73473538a05db63aa"
+        },
         {
           "source_id": "FISRC-58b2708f2adcb70e",
           "source_url": "https://thenextweb.com/news/pivot-40m-series-b-agentic-ai-procurement-operating-system",
@@ -173,7 +210,7 @@
           "quote_hash": "bff2c27377a2c23bd21b238c84cbbc9d44a2be2ca1ea75456e53c1b1d181a0c6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

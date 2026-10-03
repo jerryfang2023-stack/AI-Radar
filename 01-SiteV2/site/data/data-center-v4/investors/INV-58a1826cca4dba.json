@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "武汉洪山资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "武汉市投资促进局转载并署名洪山资本的产业报道，记载洪山资本设立产业链投资基金及投资、引进项目；页面未提供“洪山资本”对应的单一法人全称。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "政府网站转载的投资活动",
+          "value": "设立产业链投资基金，并投资、引进新能源与智能网联汽车产业项目。",
+          "source_id": "PROFILE-INV-58a1826cca4dba-1"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "政府网站记载的项目活动",
+          "value": "2023年投资并引进苏州利来、孔辉汽车等重大项目。",
+          "source_id": "PROFILE-INV-58a1826cca4dba-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-1ae72db61aa80327"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "按政府网站公开使用的品牌称谓记录其投资活动，不将其误写成未经一手材料核实的法律主体。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "武汉市投资促进局转载页",
+          "value": "洪山资本活动报道",
+          "url": "https://tc.wuhan.gov.cn/tzwh/tzzx/202505/t20250523_2585120.shtml?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-58a1826cca4dba-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-58a1826cca4dba-1",
+          "source_url": "https://tc.wuhan.gov.cn/tzwh/tzzx/202505/t20250523_2585120.shtml?source_capture=2026-10-03",
+          "source_title": "又一华中总部，落户武汉！ - 武汉市投资促进局 武汉市政务服务局",
+          "source_content_hash": "1932123d3b09b00d154875a5c14633e41fdb4d6585e201e78d88dcee0ae98319",
+          "quote": "洪山资本在新能源与智能网联汽车产业的布局同样展现了前瞻性与战略性，聚焦高附加值赛道，通过深化与国内头部GP与产业资本合作，设立4支总规模超90亿元的产业链投资基金",
+          "quote_hash": "35a2f9c89973b6623839a1abb36e0683941e7fa14caf7a813f11c6510c83aabf"
+        },
+        {
+          "source_id": "PROFILE-INV-58a1826cca4dba-2",
+          "source_url": "https://tc.wuhan.gov.cn/tzwh/tzzx/202505/t20250523_2585120.shtml?source_capture=2026-10-03",
+          "source_title": "又一华中总部，落户武汉！ - 武汉市投资促进局 武汉市政务服务局",
+          "source_content_hash": "1932123d3b09b00d154875a5c14633e41fdb4d6585e201e78d88dcee0ae98319",
+          "quote": "2023年，洪山资本陆续投资并引进苏州利来、孔辉汽车等多个亿元以上重大项目。",
+          "quote_hash": "275ffd6db0d6ef9424f23c6219a4efd6bd4ea937073def11767b68dba5daa349"
+        },
         {
           "source_id": "FISRC-1ae72db61aa80327",
           "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",

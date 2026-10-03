@@ -138,12 +138,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "国汽投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "国汽研究院官网沿革记载其于2019年2月发起成立北京国汽智联投资管理有限公司（国汽投资/CICVC）。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网列示名称",
+          "value": "北京国汽智联投资管理有限公司。",
+          "source_id": "PROFILE-INV-5f77d2c4b41fbe-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网沿革节点",
+          "value": "2019年2月发起成立。",
+          "source_id": "PROFILE-INV-5f77d2c4b41fbe-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网简称",
+          "value": "国汽投资（CICVC）。",
+          "source_id": "PROFILE-INV-5f77d2c4b41fbe-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +166,40 @@
           "source_id": "FISRC-b4d6b7523ee32ad7"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按研究院官网记载名称及发起关系建档；未补入无法由该来源支持的投资数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "国汽研究院关于页面",
+          "value": "国汽（北京）智能网联汽车研究院有限公司",
+          "url": "https://www.china-icv.cn/about.html?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-5f77d2c4b41fbe-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-5f77d2c4b41fbe-1",
+          "source_url": "https://www.china-icv.cn/about.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "关于我们 CICV-国汽（北京）智能网联汽车研究院有限公司",
+          "source_content_hash": "7655eeb9318589ffa721c0272ef7bd87116188734ce3e6ac8e7b79186e0c2b51",
+          "quote": "2019年 02月 发起成立北京国汽智联投资管理有限公司（简称CICVC）",
+          "quote_hash": "58009d4eea5c557c06624c79b8d043a2e7f0c004b12bf3f7b8a377ef4a1cdfc7"
+        },
+        {
+          "source_id": "PROFILE-INV-5f77d2c4b41fbe-2",
+          "source_url": "https://www.china-icv.cn/about.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "关于我们 CICV-国汽（北京）智能网联汽车研究院有限公司",
+          "source_content_hash": "7655eeb9318589ffa721c0272ef7bd87116188734ce3e6ac8e7b79186e0c2b51",
+          "quote": "北京国汽智联投资管理有限公司（简称CICVC）",
+          "quote_hash": "2bbb9186247be391719044173ce8e09a191a46bfb7df45a34811b1cfad166046"
+        },
         {
           "source_id": "FISRC-b4d6b7523ee32ad7",
           "source_url": "https://news.pedaily.cn/202604/562863.shtml",

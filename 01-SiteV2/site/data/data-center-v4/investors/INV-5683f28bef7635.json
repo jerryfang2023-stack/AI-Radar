@@ -123,12 +123,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "清科控股 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "清科集团官网说明其由清科控股与清科投资两种业务模式构成；清科控股提供创业与投资行业服务，清科投资旗下另有创投、母基金和产业投资业务。",
+      "facts": [
+        {
+          "field": "business_structure",
+          "label": "官网披露的业务结构",
+          "value": "清科集团分为清科控股和清科投资两大业务模式。",
+          "source_id": "PROFILE-INV-5683f28bef7635-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "清科控股定位",
+          "value": "为创业与投资行业提供综合服务。",
+          "source_id": "PROFILE-INV-5683f28bef7635-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -136,8 +145,40 @@
           "source_id": "FISRC-5a92715d1392fa36"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "本条保留清科控股作为集团业务平台的身份，不把清科投资旗下的基金投资业务直接归到清科控股名下。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "清科集团关于页面",
+          "value": "清科控股 / 清科集团",
+          "url": "https://zero2ipo.com.cn/aboutus.html?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-5683f28bef7635-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-5683f28bef7635-1",
+          "source_url": "https://zero2ipo.com.cn/aboutus.html?source_capture=2026-10-03",
+          "source_title": "关于我们 - 清科集团 | Zero2IPO Group",
+          "source_content_hash": "ad2b7bafb7ab40aa68d86d3b200db804c37128e5f17719b699ff170b90ff6367",
+          "quote": "清科集团拥有清科控股与清科投资两大业务模式，双擎驱动战略布局股权投资市场。",
+          "quote_hash": "23dbb95189580c0c01f6d94e459ee03c7c3af793999c214351db3adeb09b4420"
+        },
+        {
+          "source_id": "PROFILE-INV-5683f28bef7635-2",
+          "source_url": "https://zero2ipo.com.cn/aboutus.html?source_capture=2026-10-03",
+          "source_title": "关于我们 - 清科集团 | Zero2IPO Group",
+          "source_content_hash": "ad2b7bafb7ab40aa68d86d3b200db804c37128e5f17719b699ff170b90ff6367",
+          "quote": "清科控股致力于为行业提供创业与投资综合服务",
+          "quote_hash": "f178bc6bb217d54c6063b3c2759a7650bed5be20649d3dcfbbf11b7adf7277b1"
+        },
         {
           "source_id": "FISRC-5a92715d1392fa36",
           "source_url": "https://finance.sina.com.cn/wm/2026-03-26/doc-inhsiqkn0105281.shtml",
@@ -147,7 +188,7 @@
           "quote_hash": "ad797fb27f2844c7ce3129a4889d312f976c874c9e9bafcf38fe6f63f94574e5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

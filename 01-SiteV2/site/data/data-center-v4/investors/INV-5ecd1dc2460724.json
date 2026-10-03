@@ -137,12 +137,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "K5 Global Tokyo Black 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "K5 Global官网将其定位为投资机构；官网团队页记载合伙人Keenan Rice加入K5前创办Tokyo Black。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "投资机构。",
+          "source_id": "PROFILE-INV-5ecd1dc2460724-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网列示成立年份",
+          "value": "2018年。",
+          "source_id": "PROFILE-INV-5ecd1dc2460724-2"
+        },
+        {
+          "field": "investment_scope",
+          "label": "官网列示投资阶段",
+          "value": "从初创至IPO及后续阶段。",
+          "source_id": "PROFILE-INV-5ecd1dc2460724-2"
+        },
+        {
+          "field": "affiliation_history",
+          "label": "团队成员关联经历",
+          "value": "Keenan Rice加入K5前创办Tokyo Black。",
+          "source_id": "PROFILE-INV-5ecd1dc2460724-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,48 @@
           "source_id": "FISRC-01d50cf4c52275e9"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "Tokyo Black是Keenan Rice此前创办的早期投资顾问机构；此处记录履历关联。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "K5 Global",
+          "url": "https://k5global.com/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-5ecd1dc2460724-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-5ecd1dc2460724-1",
+          "source_url": "https://k5global.com/?source_capture=2026-10-03&cycle=9",
+          "source_title": "K5 Global",
+          "source_content_hash": "be2648fa7553f56870e26509bb998fdf2e5f8508c8917ebc943088011a6cfeb6",
+          "quote": "K5 Global is an investment firm that partners with founders and operators across the business lifecycle.",
+          "quote_hash": "e797f6559e9656dfe4dffb9f777f8f169c132f430acab074c268c829a86f0892"
+        },
+        {
+          "source_id": "PROFILE-INV-5ecd1dc2460724-2",
+          "source_url": "https://k5global.com/?source_capture=2026-10-03&cycle=9",
+          "source_title": "K5 Global",
+          "source_content_hash": "be2648fa7553f56870e26509bb998fdf2e5f8508c8917ebc943088011a6cfeb6",
+          "quote": "The firm, founded in 2018 by Michael Kives and Bryan Baum, invests across sectors and funding stages, from inception to IPO and beyond.",
+          "quote_hash": "a790b7413b15c7c3f2e7fe54628cdf875ccdbb64568e78ae9cb62805a239696a"
+        },
+        {
+          "source_id": "PROFILE-INV-5ecd1dc2460724-3",
+          "source_url": "https://www.k5global.com/about/keenan-rice?source_capture=2026-10-03&cycle=9",
+          "source_title": "Keenan Rice",
+          "source_content_hash": "cd20546362e5ae377d7cd955f0a1ba3427a2e49ef0b68742a42464d8d599759f",
+          "quote": "Before joining K5 in 2023, Keenan founded Tokyo Black, an early-stage investment adviser.",
+          "quote_hash": "fe5682a0c9838af1043c749fa9aeb64d755ca149a5dc3f37fa96077028ab6933"
+        },
         {
           "source_id": "FISRC-01d50cf4c52275e9",
           "source_url": "https://thoughtly.com/blog/thoughtly-raises-usd8m-to-build-omnichannel-agents-for-revenue-teams",
@@ -161,7 +222,7 @@
           "quote_hash": "63561056d0c2f74c9124a4c223321dd7236b427b9eff82236d4e3d9e89ff78dd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

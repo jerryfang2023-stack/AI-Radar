@@ -259,12 +259,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "今日资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "今日资本官网展示其基金组合，并列出基金I、基金II及常青基金各期的年份。",
+      "facts": [
+        {
+          "field": "investment_vehicles",
+          "label": "官网展示的基金组合",
+          "value": "基金I（2006）、基金II（2010）及多期常青基金。",
+          "source_id": "PROFILE-INV-5ff84127eaef93-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -280,8 +283,32 @@
           "source_id": "FISRC-5d82f5dc9fc96ce5"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "仅记录官网可见的基金组合结构与年份，不将页面上的规模数字作为固定档案数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "今日资本 / Capital Today",
+          "url": "https://capitaltoday.com/zh/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-5ff84127eaef93-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-5ff84127eaef93-1",
+          "source_url": "https://capitaltoday.com/zh/?source_capture=2026-10-03&cycle=9",
+          "source_title": "今日资本",
+          "source_content_hash": "272d7b72cf2785273da5eab826b8a1c5f79d33e65da838c15304d7ac8d60f912",
+          "quote": "我们的基金 基金 I 年份 2006 基金规模 2.8 亿美元 基金 II 年份 2010",
+          "quote_hash": "a1fd83a858a71ebd810c9feb9f3a07a87e40f003dcea1cf7a97c78f20d9337e6"
+        },
         {
           "source_id": "FISRC-2707f48aa6e437b7",
           "source_url": "https://news.pedaily.cn/202602/560956.shtml",
@@ -307,7 +334,7 @@
           "quote_hash": "b7c2e93816b3c8eb44d51b5751b42075e849620248e6d988c9db1ee968bc1491"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

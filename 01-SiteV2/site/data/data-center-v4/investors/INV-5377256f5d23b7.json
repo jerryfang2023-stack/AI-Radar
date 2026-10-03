@@ -122,12 +122,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "国投招商 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "财政部资料确认国投招商投资管理有限公司担任先进制造产业投资基金管理人，并将其称为私募股权投资公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "私募股权投资公司。",
+          "source_id": "PROFILE-INV-5377256f5d23b7-2"
+        },
+        {
+          "field": "fund_role",
+          "label": "基金角色",
+          "value": "先进制造产业投资基金管理人。",
+          "source_id": "PROFILE-INV-5377256f5d23b7-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,8 +144,40 @@
           "source_id": "FISRC-c364124f44b3ece9"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据财政部及厦门市财政局页面记录基金管理关系和机构定位；未补充来源未披露的当前规模或股权关系。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "财政部机构介绍来源",
+          "value": "中华人民共和国财政部",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/xinwenlianbo/xiamencaizhengxinxilianbo/202104/t20210416_3687051.htm?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-5377256f5d23b7-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-5377256f5d23b7-1",
+          "source_url": "https://www.mof.gov.cn/zhengwuxinxi/xinwenlianbo/xiamencaizhengxinxilianbo/202104/t20210416_3687051.htm?source_capture=2026-10-03",
+          "source_title": "厦门市财政局举办先进制造业产业分析及投资经验分享交流讲座",
+          "source_content_hash": "fa273c39fba0ca94656501301192d4f6df21f919771bf04a4588855195e16532",
+          "quote": "先进制造产业投资基金是在加快发展先进制造业，推动制造业高质量发展的背景下，经国务院批准，由国家发展改革委、财政部、工业和信息化部牵头发起设立的国家级大基金，管理人为国投招商投资管理有限公司。",
+          "quote_hash": "9449311657f43c1a5b9f3744238ed674a298ec66ec3c2166038faa2a464e0c53"
+        },
+        {
+          "source_id": "PROFILE-INV-5377256f5d23b7-2",
+          "source_url": "https://www.mof.gov.cn/zhengwuxinxi/xinwenlianbo/xiamencaizhengxinxilianbo/202104/t20210416_3687051.htm?source_capture=2026-10-03",
+          "source_title": "厦门市财政局举办先进制造业产业分析及投资经验分享交流讲座",
+          "source_content_hash": "fa273c39fba0ca94656501301192d4f6df21f919771bf04a4588855195e16532",
+          "quote": "厦门市财政局邀请国内著名私募股权投资公司一——国投招商投资管理有限公司的董事总经理李潇分享交流先进制造业产业分析及投资经验。",
+          "quote_hash": "e90d580a5c1a5374fb8bcac46add98e34d13e48ad0f2e751433e36f58201c5ac"
+        },
         {
           "source_id": "FISRC-c364124f44b3ece9",
           "source_url": "https://www.36kr.com/p/1367188925416841",
@@ -146,7 +187,7 @@
           "quote_hash": "24ab9d478027698fceb0a3e40b4d7559aac3d9180493c9417dfdb792ea23b80b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

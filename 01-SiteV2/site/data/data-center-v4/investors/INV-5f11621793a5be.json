@@ -178,12 +178,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "拙朴投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "拙朴投资官网列明上海拙朴投资管理中心（有限合伙）为基金管理人，登记编号P1009441，专注早期股权投资。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网列明管理人名称",
+          "value": "上海拙朴投资管理中心（有限合伙）。",
+          "source_id": "PROFILE-INV-5f11621793a5be-2"
+        },
+        {
+          "field": "manager_registration",
+          "label": "官网列示管理人登记编号",
+          "value": "P1009441。",
+          "source_id": "PROFILE-INV-5f11621793a5be-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "早期股权投资。",
+          "source_id": "PROFILE-INV-5f11621793a5be-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,8 +210,40 @@
           "source_id": "FISRC-62bfb7c7dd37177e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "身份及投资方向均依据机构官网当前自述。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Zip Capital / 拙朴投资",
+          "url": "https://www.zipcapital.cn/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-5f11621793a5be-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-5f11621793a5be-1",
+          "source_url": "https://www.zipcapital.cn/?source_capture=2026-10-03&cycle=9",
+          "source_title": "Zip Capital 上海拙朴投资 官网",
+          "source_content_hash": "992eb2c2c2235e4b4eb10994e1c0e707624cd70f8826badd521a6f07da955997",
+          "quote": "上海拙朴投资管理中心（有限合伙） 立足上海，专注于早期股权投资",
+          "quote_hash": "84bf869016e59fbb9c5173fc6a9f2a5e1901dd5ca1c9984fce436098ced024ae"
+        },
+        {
+          "source_id": "PROFILE-INV-5f11621793a5be-2",
+          "source_url": "https://www.zipcapital.cn/?source_capture=2026-10-03&cycle=9",
+          "source_title": "Zip Capital 上海拙朴投资 官网",
+          "source_content_hash": "992eb2c2c2235e4b4eb10994e1c0e707624cd70f8826badd521a6f07da955997",
+          "quote": "基金管理人 上海拙朴投资管理中心（有限合伙） 登记编号:P1009441",
+          "quote_hash": "c480a0053db913b3b931030d863f3cade0fbd6c591b3a2a7e5270c6f4f5bd89a"
+        },
         {
           "source_id": "FISRC-04376bee59ee7c19",
           "source_url": "https://news.pedaily.cn/202601/559551.shtml",
@@ -214,7 +261,7 @@
           "quote_hash": "4ccd9855d3f084756e70a0931c0b6ef98ff6fa69d7984f565a57d23f9b436ed5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "砺思资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "砺思资本官网披露其设有关注技术驱动商业创新的VC基金，并以研究驱动的主题投资方式寻找创新创业机会。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露的业务",
+          "value": "设有VC基金并投资技术驱动的商业创新。",
+          "source_id": "PROFILE-INV-545c3b0b0f73a2-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的关注方向",
+          "value": "下一代数字产业与科技智造。",
+          "source_id": "PROFILE-INV-545c3b0b0f73a2-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,32 @@
           "source_id": "FISRC-5d82f5dc9fc96ce5"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据砺思资本官方页面对VC及公开市场业务的介绍；未据页面规模数字推导基金数量、法律主体或当前管理规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网关于页面",
+          "value": "Monolith / 砺思资本",
+          "url": "https://www.monolithmgt.com/products?lan=zh&source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-545c3b0b0f73a2-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-545c3b0b0f73a2-1",
+          "source_url": "https://www.monolithmgt.com/products?lan=zh&source_capture=2026-10-03",
+          "source_title": "关于我们 | Monolith",
+          "source_content_hash": "25fc901135906804ccac74c699aeeb4189f069b5f3326096276180bc04b6e241",
+          "quote": "砺思资本的VC基金，关注技术驱动的各类商业创新，将以研究驱动的主题式投资思路，投资革命性的创新创业机会。",
+          "quote_hash": "7381a65c861032e06ce686326497891ac2cf8e9268d6a4c74af08d07d406133f"
+        },
         {
           "source_id": "FISRC-5d82f5dc9fc96ce5",
           "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
@@ -161,7 +194,7 @@
           "quote_hash": "b7c2e93816b3c8eb44d51b5751b42075e849620248e6d988c9db1ee968bc1491"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

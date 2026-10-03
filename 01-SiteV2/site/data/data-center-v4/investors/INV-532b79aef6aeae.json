@@ -121,12 +121,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "祥峰中国(Vertex China) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "祥峰中国（Vertex China）自2009年起在中国开展早期创业投资业务，拥有美元及人民币基金，关注创新科技和生物医疗等领域。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期创业投资。",
+          "source_id": "PROFILE-INV-532b79aef6aeae-1"
+        },
+        {
+          "field": "founded",
+          "label": "在华投资起始年份",
+          "value": "2009年。",
+          "source_id": "PROFILE-INV-532b79aef6aeae-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网所述重点领域",
+          "value": "创新科技和生物医疗。",
+          "source_id": "PROFILE-INV-532b79aef6aeae-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +149,40 @@
           "source_id": "FISRC-fa0e608145757727"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按Vertex Ventures China官网自述记录中国团队的阶段及重点行业；管理规模等时点数字未写入稳定档案。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "中国官网",
+          "value": "Vertex Ventures China",
+          "url": "https://www.vertexventures.cn/",
+          "source_id": "PROFILE-INV-532b79aef6aeae-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-532b79aef6aeae-1",
+          "source_url": "https://www.vertexventures.cn/",
+          "source_title": "Vertex Ventures China",
+          "source_content_hash": "874fe09ad262460da226edd331baa9d4c3c2d2dc5942bf22b8f4a4451e86ca88",
+          "quote": "祥峰中国 (Vertex China) 于2009年开始在华开展早期创业投资业务",
+          "quote_hash": "244345d6322f4170b9003f39b8b106b6701f5f14a13fa7418e69ac0cddb95ebd"
+        },
+        {
+          "source_id": "PROFILE-INV-532b79aef6aeae-2",
+          "source_url": "https://www.vertexventures.cn/",
+          "source_title": "Vertex Ventures China",
+          "source_content_hash": "874fe09ad262460da226edd331baa9d4c3c2d2dc5942bf22b8f4a4451e86ca88",
+          "quote": "重点关注创新科技、生物医疗两大领域",
+          "quote_hash": "3d1bbb73114bafe6011d3d860f004c3b8b978a858a89e508f610a4d2a6d795b0"
+        },
         {
           "source_id": "FISRC-fa0e608145757727",
           "source_url": "https://www.pureblueai.com/about-us",
@@ -145,7 +192,7 @@
           "quote_hash": "44c30a2a6f7890790b2be4be4fdcfb833f29a0da36056ff196fb2740acfb90d6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
