@@ -139,19 +139,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "V1.VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "V1.VC 官网自述在创立阶段投资 AI 原生软件及深科技团队，可领投或跟投；其页面披露了投资阶段、方向、额度及管理合伙人信息。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述投资阶段",
+          "value": "创立阶段投资，目标成为创始人早期的首个支持者。",
+          "source_id": "INV-f963a923023b21_v1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资方向",
+          "value": "AI 原生软件与深科技，包括能源、航空航天、机器人和先进制造。",
+          "source_id": "INV-f963a923023b21_v1"
+        },
+        {
+          "field": "investment_check_size",
+          "label": "官网披露投资额度",
+          "value": "单笔 25 万至 50 万美元；可领投或跟投。",
+          "source_id": "INV-f963a923023b21_v1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "官网称管理合伙人 Brett Jackson 于 2015 年共同创立 V1VC。",
+          "source_id": "INV-f963a923023b21_v1team"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a587e714925b882"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "V1.VC",
+          "url": "https://www.v1.vc/",
+          "source_id": "INV-f963a923023b21_v1"
+        }
+      ],
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
       "sources": [
+        {
+          "source_id": "INV-f963a923023b21_v1",
+          "source_url": "https://www.v1.vc/",
+          "source_title": "V1VC",
+          "source_content_hash": "2264e01912607f2190db340ba7237571de1870b05fdcca2e9800b2e09a39837a",
+          "quote": "We invest at inception into AI‑native founders building the most important companies of tomorrow. We invest $250k–$500k. We can lead or follow.",
+          "quote_hash": "53e3426bb5adff7a0d94cfab9a482c49177d423068f4001b48969d7490c90643"
+        },
+        {
+          "source_id": "INV-f963a923023b21_v1team",
+          "source_url": "https://www.v1.vc/",
+          "source_title": "V1VC",
+          "source_content_hash": "2264e01912607f2190db340ba7237571de1870b05fdcca2e9800b2e09a39837a",
+          "quote": "Brett co-founded V1VC in 2015 and brings more than two decades of experience building and investing in companies.",
+          "quote_hash": "eace5effed093a1edd0a1fe834d50fd1250fdf52dfb005247a2730d39910b461"
+        },
         {
           "source_id": "FISRC-2a587e714925b882",
           "source_url": "https://www.morningstar.com/news/business-wire/20260728282605/throne-science-maker-of-smart-toilet-sensor-announces-10-million-series-a-fundraise",
@@ -161,7 +214,7 @@
           "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

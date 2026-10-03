@@ -139,19 +139,96 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Flanders Future Techfund 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "PMV英文产品页拼写为“Flanders Future Tech Fund”，其荷兰语融资公告使用“Flanders Future Techfund”；两页均由PMV发布，后者明确说明PMV管理该基金。",
+      "summary": "Flanders Future Techfund（PMV英文产品页拼作Flanders Future Tech Fund）由PMV管理，支持弗兰德斯技术成果商业化，重点覆盖医疗与护理、数字化转型以及气候与可持续发展。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "基金重点",
+          "value": [
+            "医疗与护理",
+            "数字化转型",
+            "气候与可持续发展"
+          ],
+          "source_id": "INV-ff2c0a18e53f05_fund"
+        },
+        {
+          "field": "fund_size",
+          "label": "官网披露基金规模",
+          "value": "2.5亿欧元。",
+          "source_id": "INV-ff2c0a18e53f05_fund_size"
+        },
+        {
+          "field": "financing_limit",
+          "label": "官网披露融资上限",
+          "value": "单笔最高3,750万欧元。",
+          "source_id": "INV-ff2c0a18e53f05_fund_size"
+        },
+        {
+          "field": "private_coinvestment",
+          "label": "官网披露私募共投要求",
+          "value": "每项投资须有至少50%的私人共同投资者资金。",
+          "source_id": "INV-ff2c0a18e53f05_coinvest"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "PMV于2026年3月披露Vertical Compute新增3,700万欧元融资，并列Flanders Future Techfund为种子轮参与方；PMV同时确认其管理该基金。",
+          "source_id": "INV-ff2c0a18e53f05_vertical_compute"
+        },
         {
           "description": "融资来源记录：Vertical Compute · 种子轮 · 2026-03-04 · 本轮参投 · €37 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-676054bb104d0746"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金产品页",
+          "value": "Flanders Future Tech Fund（PMV）",
+          "url": "https://www.pmv.eu/en/product/flanders-future-tech-fund/",
+          "source_id": "INV-ff2c0a18e53f05_fund"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "INV-ff2c0a18e53f05_fund",
+          "source_url": "https://www.pmv.eu/en/product/flanders-future-tech-fund/",
+          "source_title": "Flanders Future Tech Fund | PMV",
+          "source_content_hash": "0844e04e6d8ad64f2112fc9828b0cc8f8354d7bde85ad33d01abfcce71dd899e",
+          "quote": "With the investments, the Flanders Future Tech Fund aims to focus on the valorisation of technology developed by Flemish companies, with a particular focus on the spearhead domains of Care and Welfare, Digital Transformation and Climate & Sustainability.",
+          "quote_hash": "bce92c935aa0bf79c124aded96f98fda627e505077f2b56afc781fcbdce2987f"
+        },
+        {
+          "source_id": "INV-ff2c0a18e53f05_fund_size",
+          "source_url": "https://www.pmv.eu/en/product/flanders-future-tech-fund/",
+          "source_title": "Flanders Future Tech Fund | PMV",
+          "source_content_hash": "0844e04e6d8ad64f2112fc9828b0cc8f8354d7bde85ad33d01abfcce71dd899e",
+          "quote": "The Flanders Future Tech Fund has a fund size of 250 million euros and can enter into financings of up to 37,5 million euros.",
+          "quote_hash": "4cac155a5df22bc5daadacca9ee6d25868c10581ed5e7dc247f924db6adaaf68"
+        },
+        {
+          "source_id": "INV-ff2c0a18e53f05_coinvest",
+          "source_url": "https://www.pmv.eu/en/product/flanders-future-tech-fund/",
+          "source_title": "Flanders Future Tech Fund | PMV",
+          "source_content_hash": "0844e04e6d8ad64f2112fc9828b0cc8f8354d7bde85ad33d01abfcce71dd899e",
+          "quote": "Each Flanders Future Techfund investment requires the contribution of a private co-investor of at least 50 per cent.",
+          "quote_hash": "3248fef120aeec6a7bd152cc2b025ac545b3812f49588065b0210672ccfd36ee"
+        },
+        {
+          "source_id": "INV-ff2c0a18e53f05_vertical_compute",
+          "source_url": "https://www.pmv.eu/nieuws-item/57-miljoen-euro-om-ai-geheugenbottleneck-op-te-lossen/",
+          "source_title": "57 miljoen euro om AI-geheugenbottleneck op te lossen | PMV",
+          "source_content_hash": "5a033239a022d429284ee70067b1e2214b19db7f4eb820cf2abdc85450129644",
+          "quote": "Quantonation leidde de seed-ronde, met deelname van het Flanders Future Techfund (beheerd door PMV), Wallonie Entreprendre, Sambrinvest, Noshaq, InvestBW, Drysdale Ventures en Kima Ventures.",
+          "quote_hash": "343d6d748c5d0a8f03463fb5190a4cc7a0461c96af49254937ddd41ca25ae984"
+        },
         {
           "source_id": "FISRC-676054bb104d0746",
           "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
@@ -161,7 +238,7 @@
           "quote_hash": "a46a718a8e39c04b8200634f52ca5ea254f4a24f386762ffcb4f8d8381da59ae"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

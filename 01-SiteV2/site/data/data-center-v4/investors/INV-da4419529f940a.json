@@ -139,19 +139,65 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Macroscopic Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Macroscopic Ventures 是一家 2019 年成立的瑞士非营利组织，官网称其通过研究、资助和选择性影响力投资，支持建设更理性、更具同情心未来的项目与人员。官网将 Anthropic 列为其已投资的 AI 安全与研究公司之一。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露组织性质",
+          "value": "瑞士非营利组织，官网称成立于 2019 年。",
+          "source_id": "macroscopic_about"
+        },
+        {
+          "field": "programs",
+          "label": "官网披露活动方式",
+          "value": "进行研究、提供资助，并对具有社会效益的公司进行选择性影响力投资。",
+          "source_id": "macroscopic_grants"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "官网称 Macroscopic Ventures 于 2019 年成立。",
+          "source_id": "macroscopic_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Macroscopic Ventures 官网称其参与了 Anthropic 的 Series A 与 Series B，并将其列为 AI 安全与研究公司。",
+          "source_id": "macroscopic_grants"
+        },
         {
           "description": "融资来源记录：Inherent · 种子轮 · 2026-08-23 · 本轮参投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed8df2c3d21fb938"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Macroscopic Ventures",
+          "url": "https://macroscopic.org/",
+          "source_id": "macroscopic_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "macroscopic_about",
+          "source_url": "https://macroscopic.org/about",
+          "source_title": "About - Macroscopic Ventures",
+          "source_content_hash": "2e610d238b6bea48ae7f9ced2a7f0a7b0c0b88ddba90dc6ca5df03d1ab2d26ff",
+          "quote": "Macroscopic Ventures is a Swiss nonprofit founded in 2019. We make grants and investments to projects and people helping to build a future guided by reason and compassion, and carry out research into what our priorities should be. You can get in touch with us at info@macroscopic.org . Hiring Check",
+          "quote_hash": "d7f2163faf40391f5e9a712d0c23979794d64e3cc1d61cfe3bf5638abe7885c5"
+        },
+        {
+          "source_id": "macroscopic_grants",
+          "source_url": "https://macroscopic.org/grants",
+          "source_title": "Grants - Macroscopic Ventures",
+          "source_content_hash": "2594f55d6e8f03d9f06f5cedb9ad435f2310f4fff4866f0528272f2b54d28f01",
+          "quote": "In addition to grants, we also make selective impact investments in socially beneficial companies. Anthropic As part of their Series A and Series B, we invested in Anthropic, an AI safety and research company. They are working on making large machine learning models more reliable, interpretable, and steerable. Visit website → Apollo Research Apollo Research",
+          "quote_hash": "566a4d842ed0d01a1e7ce571080a84980e64df259cb68671140291df7d268d92"
+        },
         {
           "source_id": "FISRC-ed8df2c3d21fb938",
           "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
@@ -161,7 +207,8 @@
           "quote_hash": "3eaf37137bbf2e93fe23706845f4924135ac9dbedaa8912cdb760d52c8be7c19"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

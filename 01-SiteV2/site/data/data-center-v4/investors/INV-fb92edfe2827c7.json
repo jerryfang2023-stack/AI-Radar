@@ -139,19 +139,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Calculus Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "milestones": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Calculus Venture Capital",
+          "url": "https://calculusvc.com/",
+          "source_id": "INV-fb92edfe2827c7_themes"
+        }
+      ],
+      "last_verified_at": "2026-10-03",
+      "coverage_status": "researched",
+      "summary": "Calculus Venture Capital的创始合伙人Swati Chaturvedi将其描述为支持深科技初创企业的新基金，关注先进工业技术、计算与AI、计算生命科学。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "创始合伙人披露的投资主题",
+          "value": [
+            "先进工业技术",
+            "未来计算与AI",
+            "计算生命科学"
+          ],
+          "source_id": "INV-fb92edfe2827c7_themes"
+        }
+      ],
       "track_record": [
+        {
+          "description": "CloudNC于2026年9月9日宣布获得2000万美元新投资，公告列出Calculus Venture Capital为参与方之一。",
+          "source_id": "INV-fb92edfe2827c7_cloudnc"
+        },
         {
           "description": "融资来源记录：CloudNC · B轮 · 2026-09-09 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-583456b85ec1179e"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "INV-fb92edfe2827c7_themes",
+          "source_url": "https://calculusvc.com/the-future-of-computing-beyond-silicon-and-binary/",
+          "source_title": "The Future of Computing: Beyond Silicon and Binary - Calculus VC",
+          "source_content_hash": "45e0cca3a6388d2bab466d88474d0cb643566c96a50773836ab9c8dca9f91719",
+          "quote": "We invest in three main themes: Advanced industrial technologies The future of computing and AI Computational life sciences",
+          "quote_hash": "0a346884c0c83b20ea72370a584a687d0030abd0f95f3cdd7e903b47d534d9de"
+        },
+        {
+          "source_id": "INV-fb92edfe2827c7_cloudnc",
+          "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
+          "source_title": "CloudNC raises $20m to expand AI tools for precision machining",
+          "source_content_hash": "e50d348dd4894165d8008e57268e20fad7ae1fdcc8a77273b2552831c176085d",
+          "quote": "with participation from other investors including Calculus Venture Capital, Entrepreneur First and LM Ventures, Lockheed Martin’s venture capital fund.",
+          "quote_hash": "9527597c47fd7b87f841aeea5c22a098b45d4ed2b1ae43b3b1adcc925d8c6a42"
+        },
         {
           "source_id": "FISRC-583456b85ec1179e",
           "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
@@ -161,7 +204,7 @@
           "quote_hash": "341dd2bff3b4d4d01a56bd326a3c296e53dd77da66784f0c3238ffcf94dd4189"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

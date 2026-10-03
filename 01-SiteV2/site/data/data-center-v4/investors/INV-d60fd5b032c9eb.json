@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "嘉溢创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "“嘉溢创投→苏州嘉元丰溢投资管理有限公司”的对应关系来自36氪公开机构资料页，属第三方资料映射，并非机构官网自述。上市申请法律意见书独立确认后者是登记的私募股权、创业投资基金管理人。公开数据库对投资领域的描述不一致，故此档案只保留主体映射与可核验的管理人登记信息，不扩写投资赛道、基金规模或完整投资组合。",
+      "summary": "36氪公开机构资料页将“嘉溢创投”对应到苏州嘉元丰溢投资管理有限公司，并把其列为 VC。公开上市申请法律意见书另记载，苏州嘉元丰溢投资管理有限公司是私募股权、创业投资基金管理人，登记编号为 P1070247。机构名称与法律主体的对应关系采用第三方资料标注；官网及一手投资策略披露尚未找到。",
+      "facts": [
+        {
+          "field": "reported_legal_entity",
+          "label": "第三方资料页列出的法律主体",
+          "value": "36氪公开机构资料页将嘉溢创投对应为苏州嘉元丰溢投资管理有限公司。",
+          "source_id": "jiayi_36kr"
+        },
+        {
+          "field": "fund_manager_registration",
+          "label": "公开披露的管理人登记",
+          "value": "上市申请法律意见书记载苏州嘉元丰溢投资管理有限公司的基金管理人登记编号为 P1070247，类型为私募股权、创业投资基金管理人。",
+          "source_id": "jiayi_filing"
+        },
+        {
+          "field": "reported_founding_year",
+          "label": "第三方资料页所列成立年份",
+          "value": "36氪公开机构资料页列示成立时间为 2018 年；未在本轮公开法律披露中复核更精确日期。",
+          "source_id": "jiayi_36kr"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +172,22 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "jiayi_36kr",
+          "source_url": "https://pitchhub.36kr.com/organization/1678380095763458",
+          "source_title": "嘉溢创投 | 投资机构信息-36氪",
+          "source_content_hash": "a272b61c26a37b034b925aec9a6aa4cee6ce2fb60408ae4ebcce44ee7b6dd573",
+          "quote": "苏州嘉元丰溢投资管理有限公司 VC 成立时间：2018年 所在地：上海市 机构信息 投资信息 机构明细 投资团队 机构介绍 嘉溢创投是一家聚焦数据智能全产业链的解决方案型风险投资公司。嘉溢专注发掘数据智能全产业链细分环节和垂直场景投资机会，拥有高度互补、长期协作的核心团队和覆盖完整、深度协同的产业资源，秉持发现价值并创造价值的投资策略，持续坚定用产业投资的视角和方法打造深耕产业的解决方案型长青基金。 投资领域 先进制造 汽车出行 工具软件 能源环保 前沿技术 智能硬件 投资事件 平台收录的该机构过往投资行为 共",
+          "quote_hash": "f81f7c6228dfb3f1a2a47a37e3551527982da8c843f1a8a09731829902643b69"
+        },
+        {
+          "source_id": "jiayi_filing",
+          "source_url": "https://xinsanban.eastmoney.com/Article/NoticeContent?id=AN202602261820058819&pageIndex=6",
+          "source_title": "澳玛特:申请人律师关于公开转让并挂牌的法律意见书-新三板—东方财富网",
+          "source_content_hash": "319189929d285b3c97ccce300abca21e7ef27c5e9443d1cc79e8746fc648f2b1",
+          "quote": "苏州嘉元丰溢投资管理有限公司为其基金管理人，登记编号为 P1070247，类型为私募股权、创业投资基金管理人。 （5）嘉兴佳翼 嘉兴佳翼成立于 2025 年 5 月 29 日，现持有嘉兴市南湖区行政审批局核发的 统一社会信用代码为“91330402MAELCJKA81”的《营业执照》，主要经营场所 为浙江省嘉兴市南湖区东栅街道南江路 1856 号基金小镇 1 号楼 215 室-29（自主",
+          "quote_hash": "926919db89fd323436695203aa591b47ac0541aa5c25fdcf55273a53b0f22fe4"
+        },
+        {
           "source_id": "FISRC-ed5e30c1c99002a5",
           "source_url": "https://cn.chinadaily.com.cn/a/202605/29/WS6a195d2aa310942cc49af151.html",
           "source_title": "获近2亿元融资，这家公司用无损Micro-LED加速AI眼镜全彩化进程",
@@ -161,7 +196,7 @@
           "quote_hash": "b297133589d2692c52f20307da5ffbe714acd08fbae378784433c98ef1234f31"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

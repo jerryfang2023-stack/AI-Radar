@@ -123,19 +123,50 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pudong Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "milestones": [],
+      "contacts": [],
+      "last_verified_at": "2026-10-03",
+      "coverage_status": "activity_only",
+      "summary": "上海政府英文报道提及Shanghai Pudong Venture Capital Co Ltd；浦东新区政府报道另以“浦东创投集团”披露其向XREAL提供2亿元独家投资。现有来源未厘清公司与集团边界，因此仅记录公开活动口径。",
+      "facts": [
+        {
+          "field": "public_name_in_source",
+          "label": "上海政府英文报道中的机构称谓",
+          "value": "Shanghai Pudong Venture Capital Co Ltd（该报道并未将其与XREAL投资主体的法律关系说清）",
+          "source_id": "INV-fa00f95e4a5c36_name"
+        }
+      ],
       "track_record": [
+        {
+          "description": "浦东新区政府2025年报道以“浦东创投集团”称呼向XREAL提供2亿元独家投资的投资方；活动按公开称谓记录，未断言投资主体的法定名称。",
+          "source_id": "INV-fa00f95e4a5c36_xreal"
+        },
         {
           "description": "融资来源记录：XREAL · 历史轮次未披露 · 上一轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-15bb852c20e5a293"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "INV-fa00f95e4a5c36_name",
+          "source_url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260707/c7421943f8a24713872d934a2678cd36.html",
+          "source_title": "Pudong registered funds exceed 2 trillion yuan: Report",
+          "source_content_hash": "89f2098a355379ed2f1aa64466a049683caea03a2ed17704ee1c0bc5c74a51d9",
+          "quote": "board chairman of Shanghai Pudong Venture Capital Co Ltd",
+          "quote_hash": "34aa5a0d6f82ab1ebd30168179890330db815587ca53c88f62772cf1e5206499"
+        },
+        {
+          "source_id": "INV-fa00f95e4a5c36_xreal",
+          "source_url": "https://www.shanghai.gov.cn/nw15343/20250903/464d71c6b8804d649aa883aa5eb1b9cb.html",
+          "source_title": "持续发力智能眼镜赛道！浦东“硬科技成果”正深度嵌入全球产业链",
+          "source_content_hash": "dd2e3b1775e586ff47410a540e610b374884b3aeecec674a3e091a52fda7494c",
+          "quote": "XREAL随后得到了一笔来自浦东创投集团的2亿元独家投资",
+          "quote_hash": "8bfb10ecb489eeba407d820279018459c0497addebbf2b6b6fbb7d4b883cb62d"
+        },
         {
           "source_id": "FISRC-15bb852c20e5a293",
           "source_url": "https://roadtovr.com/google-android-xr-xreal-raises-100m-2026/",
@@ -145,7 +176,7 @@
           "quote_hash": "a1d625bb9b2f6e53aa2952d0e71a615ac176f6e15d8b391554ecda0d4d99b75a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "coverage_note": "政府来源分别使用“Shanghai Pudong Venture Capital Co Ltd”和“浦东创投集团”称谓，但未证明两者的法律主体关系。此处只保留报道中的投资者公开标签与活动，不把集团活动归属于特定公司或基金管理人。"
     }
   }
 }

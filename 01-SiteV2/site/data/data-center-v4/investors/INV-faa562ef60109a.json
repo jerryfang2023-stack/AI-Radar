@@ -139,19 +139,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sutter Hill Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "milestones": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构关联项目官网",
+          "value": "SHV Labs",
+          "url": "https://labs.shv.com/",
+          "source_id": "INV-faa562ef60109a_labs"
+        }
+      ],
+      "last_verified_at": "2026-10-03",
+      "coverage_status": "researched",
+      "summary": "SHV Labs表示，其产品为Sutter Hill Ventures提供对新兴技术的一手洞察，并与其投资组合公司和孵化项目协作；CScale在融资披露中称Sutter Hill自其成立以来投资并在后续融资中继续支持。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网披露的技术工作方式",
+          "value": "SHV Labs研发产品以获得新兴技术一手洞察，并与投资组合公司和孵化项目合作推进产品。",
+          "source_id": "INV-faa562ef60109a_labs"
+        }
+      ],
       "track_record": [
+        {
+          "description": "CScale于2026年9月披露1.45亿美元C轮融资，并称Sutter Hill Ventures自公司创立以来一直支持，且在该轮继续跟投。",
+          "source_id": "INV-faa562ef60109a_cscale"
+        },
         {
           "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮参投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f84ad840508b39"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "INV-faa562ef60109a_labs",
+          "source_url": "https://labs.shv.com/",
+          "source_title": "SHV Labs",
+          "source_content_hash": "f1a7146669cf9b753fb904e83f18922cc95b32d31ff17a49101af4d0b08b7f72",
+          "quote": "SHV Labs builds products that give Sutter Hill Ventures firsthand insight into emerging technologies.",
+          "quote_hash": "0fb6e3aeb9273618ec09222bee9c7469a3238836d543335e9629f25c0846dd74"
+        },
+        {
+          "source_id": "INV-faa562ef60109a_cscale",
+          "source_url": "https://www.cscale.ai/press/cscale-exits-stealth",
+          "source_title": "CScale Exits Stealth With $145 Million to Build the Interconnect for Gigawatt-Scale AI — CScale",
+          "source_content_hash": "9d28549d79b1244b6022efdeceb25eda47514d8b9b84f9557878aa8e143e8d13",
+          "quote": "Sutter Hill Ventures, which has backed CScale since its inception continued its support alongside existing investor Maverick Silicon.",
+          "quote_hash": "b8eea8ee4ecbaae43ff2471c0d0ae64b6552f5ca0ecccea0ad69b607252d2789"
+        },
         {
           "source_id": "FISRC-98f84ad840508b39",
           "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
@@ -161,7 +200,7 @@
           "quote_hash": "b24f4febcc9397478bcc6d9a518ee03fd847623529708cf4c467126a6cc7cf44"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "coverage_note": "可用的一手材料限于SHV Labs的工作方式介绍和CScale融资公告；未据此推断基金结构或更广的投资策略。"
     }
   }
 }

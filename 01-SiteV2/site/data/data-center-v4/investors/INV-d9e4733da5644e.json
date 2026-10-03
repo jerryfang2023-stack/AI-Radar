@@ -139,19 +139,67 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Big Pi Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Big Pi Ventures 是一家多阶段科技投资平台，通过早期基金和成长基金投资科技企业。官网称其组合公司主要位于欧洲和美国，并在希腊具有业务布局；该机构公开发布了对 ORamaVR 的投资公告。",
+      "facts": [
+        {
+          "field": "fund_stages",
+          "label": "官网披露基金阶段",
+          "value": "通过早期投资基金和成长股权基金开展投资。",
+          "source_id": "bigpi_who"
+        },
+        {
+          "field": "portfolio_geography",
+          "label": "官网披露组合地域",
+          "value": "投资对象为以科技为核心、位于欧洲和美国且在希腊有业务布局的公司。",
+          "source_id": "bigpi_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Big Pi 官网发布了其投资 ORamaVR 的公告；网页标题称该项目为 450 万欧元种子轮。",
+          "source_id": "oramavr_seed"
+        },
         {
           "description": "融资来源记录：ORamaVR · 种子轮 · 2026-01-30 · 本轮领投 · 4.5 million USD。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3290be19a3eb1c09"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Big Pi Ventures",
+          "url": "https://bigpi.vc/",
+          "source_id": "bigpi_who"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bigpi_who",
+          "source_url": "https://bigpi.vc/who-we-are/",
+          "source_title": "Who we are | Big Pi",
+          "source_content_hash": "67fed6ad961214e851b43454ece854e1748278a372838847659c473cab66a768",
+          "quote": "We invest out of our two funds (early stage and growth) both our capital and expertise, helping entrepreneurs & businesses navigate their paths to success. Nick Kalliagkopoulos Partner Nikos has been a Partner at Prime Ventures , a pan-European Venture Capital and",
+          "quote_hash": "5de5248c6d8c5dd55354bc3130d15eb508131207cd6998e936edb266e1cc095a"
+        },
+        {
+          "source_id": "bigpi_portfolio",
+          "source_url": "https://bigpi.vc/portfolio/",
+          "source_title": "Portfolio | Big Pi",
+          "source_content_hash": "3679d116716f9744388a8d3c112c3297909efab3c86436b31a1c2ad1028cc053",
+          "quote": "Big Pi invests across both its earlier stage and growth equity funds in tech-first companies based across Europe and the United States, all of them having presence in Greece. Filter by funding stage: Show all Early Stage Growth Exited Acquired by Meta Audio software General",
+          "quote_hash": "30c638417c41d0e6d72e4107d3a7b11103c80499c1b00fd4e8f777ce575b9374"
+        },
+        {
+          "source_id": "oramavr_seed",
+          "source_url": "https://bigpi.vc/blog/oramavr-raises-4.5-million-seed-round/",
+          "source_title": "ORamaVR raises a €4.5M seed round lead by Big Pi Ventures | Big Pi",
+          "source_content_hash": "544d2bcc6c1dc94fc3a0eeae5c759ee00f109a55159d345217e0767a1ac4aca4",
+          "quote": "ORamaVR raises a €4.5M seed round lead by Big Pi Ventures | Big Pi Open menu Who we are How we work Portfolio News & views Contact Copyright © 2019-2026 Big Pi Ventures. All rights reserved. Terms & Conditions Privacy Policy Who we are How we work",
+          "quote_hash": "8cd31bb64c9f7522086153eef351531a77034cf1d4cef20ea60f3b1abcaa987f"
+        },
         {
           "source_id": "FISRC-3290be19a3eb1c09",
           "source_url": "https://ggba.swiss/en/geneva-based-oramavr-raises-usd-4-5-million-to-scale-medical-xr-training-solutions/",
@@ -161,7 +209,8 @@
           "quote_hash": "21f491e0a93dc34d651c86420f068032f3506f739fd5db8c98d2d6314091ada1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

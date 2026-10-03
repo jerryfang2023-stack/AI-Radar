@@ -139,10 +139,26 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Davidson Kempner Capital Management 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Davidson Kempner Capital Management 官网将其描述为全球投资机构，侧重信用与事件驱动策略；官网还介绍了其跨资产、跨地域的研究型投资方式。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资重点",
+          "value": "全球投资机构，侧重信用与事件驱动投资。",
+          "source_id": "INV-f47eef01fd64fa_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方法",
+          "value": "官网称使用多元、灵活且以研究为基础的投资平台，覆盖多个资产类别、地区和市场周期。",
+          "source_id": "INV-f47eef01fd64fa_approach"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +166,33 @@
           "source_id": "FISRC-060d60f0bcc42b9d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Davidson Kempner Capital Management",
+          "url": "https://www.davidsonkempner.com/",
+          "source_id": "INV-f47eef01fd64fa_home"
+        }
+      ],
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
       "sources": [
+        {
+          "source_id": "INV-f47eef01fd64fa_home",
+          "source_url": "https://www.davidsonkempner.com/",
+          "source_title": "Home — Davidson Kempner",
+          "source_content_hash": "7e8cd4b2b59a3958b108eba10c0037de2a2c60ce3aa02b7f7bb78b302803da93",
+          "quote": "We are Davidson Kempner Capital Management, a global investment firm. Credit and event-driven focus.",
+          "quote_hash": "aa3ac40baae5174719cadb25f27289d123e69da23ed9df56bfd4561370c90e24"
+        },
+        {
+          "source_id": "INV-f47eef01fd64fa_approach",
+          "source_url": "https://www.davidsonkempner.com/approach",
+          "source_title": "Approach — Davidson Kempner",
+          "source_content_hash": "74fa4b8d8ba5cee80db8ca12da0dbc5d13e894f28a71ed91f2c57b214c777585",
+          "quote": "We apply our multi-dimensional, research-driven investment process to evaluate and execute a diverse range of transactions across asset classes, geographies and market cycles.",
+          "quote_hash": "73555c245e75d9696526e3ac509c28628fa8b6a2a2bdc8aada1d70616fd7bd99"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -161,7 +202,7 @@
           "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
