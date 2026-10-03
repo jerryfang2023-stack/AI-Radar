@@ -11778,14 +11778,22 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-6793571a77cee4": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "StepStone Group 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据被投企业官方公告；未据此推断完整投资组合。",
+      "summary": "SiMa.ai 官方 Series C 公告将 StepStone Group 列为参投方；Upscale AI 官方公告也将其列为融资参与机构。本档只记录这两项公开融资关系。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "SiMa.ai 官方 Series C 公告将 StepStone Group 列为参投方。",
+          "source_id": "PROFILE-e63ee60b48d7c18ea72b"
+        },
+        {
+          "description": "Upscale AI 官方融资公告将 StepStone Group 列为参与机构。",
+          "source_id": "FISRC-3c60f2ab7fcb8b84"
+        },
         {
           "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-926f8f2e0ad24f56"
@@ -11793,14 +11801,26 @@
         {
           "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7dcdc22c0b1702bf"
-        },
-        {
-          "description": "融资来源记录：Upscale, Inc. · A轮 · 2026-01-21 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3c60f2ab7fcb8b84"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-e63ee60b48d7c18ea72b",
+          "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+          "source_title": "SiMa.ai Reaches $1.45B Valuation with $500 Million in Total Funding to Scale Physical AI in Humanoids, Automotive, and Drones - SiMa AI",
+          "source_content_hash": "e4a445b8ad5e5db7fe9dd87384cc0fef61131e6be5f0b5f6b45e8c90d37e1889",
+          "quote": "ticipation from Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group. AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan also joined the round as new investors. The global market for Physical AI devices, including robotics, automotive, and drones, is set to exp",
+          "quote_hash": "5427788c208fd6773827a07a3dad0b9c3c7649292af115f12016c5128939af42"
+        },
+        {
+          "source_id": "FISRC-3c60f2ab7fcb8b84",
+          "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+          "source_title": "From $100M Seed to Unicorn in Months Upscale Closes Oversubscribed $200M Series A to Build the First Pure-Play AI Networking Company",
+          "source_content_hash": "7a28ab87e7c17ab42c18000538b0621d58d621bdd58a372ade677f5912adfee6",
+          "quote": "A financing led by Tiger Global, Premji Invest, and Xora Innovation with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures. This new investment brings the total funding received to over $300 million. The rapid investor backing reflects a growing industry consensus: n",
+          "quote_hash": "99bb5f9b7587ceeede43c81600f9193d10305283bfe84ae946c445bc07264fa4"
+        },
         {
           "source_id": "FISRC-926f8f2e0ad24f56",
           "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
@@ -11816,17 +11836,13 @@
           "source_content_hash": "23145edb5fdd8d69",
           "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
           "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
-        },
-        {
-          "source_id": "FISRC-3c60f2ab7fcb8b84",
-          "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
-          "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
-          "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
-          "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
-          "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-cd8857f54a42ce": {
       "profile_type": "organization",
@@ -15184,29 +15200,60 @@
       "identity_status": "verified"
     },
     "INV-5e48bb3ca721dd": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "MediaTek 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "企业性质来自官网；融资参与来自被投公司公告，属企业战略投资案例。",
+      "summary": "MediaTek 官网将其描述为全球无晶圆厂半导体公司；OXMIQ 和 Ayar Labs 的融资公告均将其列为投资方或战略投资者。本档只汇总公开案例，不将其描述为传统 VC。",
+      "facts": [
+        {
+          "field": "business_type",
+          "label": "公司性质",
+          "value": "无晶圆厂半导体公司",
+          "source_id": "PROFILE-079f432035b9692dcc1c"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：ChipAgents · A2轮 · 2026-07-29 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cd04c9b2d1340164"
-        },
-        {
-          "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 种子轮投资方及本轮参投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "OXMIQ 2026 年 Series A 公告称 MediaTek 作为既有种子投资方继续参与。",
           "source_id": "FISRC-2ac2183ceab4ddd7"
         },
         {
-          "description": "融资来源记录：Ayar Labs · E轮 · 2026-03-03 · 本轮参投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Ayar Labs 官方 Series E 公告将 MediaTek 列为战略投资者。",
           "source_id": "FISRC-5b6c7c4ae002a992"
+        },
+        {
+          "description": "融资来源记录：ChipAgents · A2轮 · 2026-07-29 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cd04c9b2d1340164"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-079f432035b9692dcc1c",
+          "source_url": "https://www.mediatek.com/company/discover",
+          "source_title": "About MediaTek | Empowering a Connected World",
+          "source_content_hash": "11505f562715fa4feef27aeb298a84dd07cf441356276c4d559ac0740c162070",
+          "quote": "MediaTek Incorporated (TWSE: 2454) is the world’s fifth largest global fabless semiconductor company.",
+          "quote_hash": "45d45b224e1af34aba9deb14df8ac9fb3a96d568cbe05734c37bb1d9c86dd22c"
+        },
+        {
+          "source_id": "FISRC-2ac2183ceab4ddd7",
+          "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+          "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
+          "source_content_hash": "c17f59d8dd2e1555de397bc043aa6d95e94b55dc3e6d2ac7d092a8d75bb9c229",
+          "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting.",
+          "quote_hash": "1408f6cb9eb9ac1ac296ea980a51ada3a80d5ea2004bb95ee7f6bbaf179f642b"
+        },
+        {
+          "source_id": "FISRC-5b6c7c4ae002a992",
+          "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+          "source_title": "Ayar Labs Closes $500M Series E, Accelerates Volume Production of Co‑Packaged Optics",
+          "source_content_hash": "ca2199749f0afba3fbf0c6139eb12a83a1c933879686270714bfcd02449d1a14",
+          "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+          "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
+        },
         {
           "source_id": "FISRC-cd04c9b2d1340164",
           "source_url": "https://www.businesswire.com/news/home/20260729819576/en/ChipAgents-Expands-Series-A-Funding-to-%24134-Million-as-Demand-Grows-for-Agentic-AI-in-Semiconductor-Design",
@@ -15214,25 +15261,13 @@
           "source_content_hash": "c4c1856ea78e70706a7dad6982ee3f116a9a0d69cacfc9abdf153799bdc32118",
           "quote": "new investor B Capital joining Bessemer Venture Partners, Micron, MediaTek, Ericsson, ScOp, and other existing investors.",
           "quote_hash": "15ca66efc054a9b1d989df055e9764043657c53d027c285dbc934bdeaf2f9961"
-        },
-        {
-          "source_id": "FISRC-2ac2183ceab4ddd7",
-          "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
-          "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
-          "source_content_hash": "b11173439b5612a7",
-          "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting.",
-          "quote_hash": "1408f6cb9eb9ac1ac296ea980a51ada3a80d5ea2004bb95ee7f6bbaf179f642b"
-        },
-        {
-          "source_id": "FISRC-5b6c7c4ae002a992",
-          "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
-          "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
-          "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
-          "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
-          "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-48639108eb84c1": {
       "profile_type": "unverified",
@@ -19263,20 +19298,20 @@
       "identity_status": "verified"
     },
     "INV-64da4f8e12b2e1": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "宁德时代 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资关系依据融资报道；未据此推断宁德时代的完整投资组合。",
+      "summary": "投资界报道将宁德时代列为深度智控 B+ 轮的领投方之一，IT之家报道将其列为 DeepSeek 首次外部融资参与方。本档只汇总这两项公开披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：深度智控 · B+轮 · 2026-09-08 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "深度智控 B+ 轮融资报道将宁德时代列为投资方。",
           "source_id": "FISRC-ac5a938b8fdef1a9"
         },
         {
-          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-17 · 本轮参投 · 约 510 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "DeepSeek 首次外部融资报道将宁德时代列为参与方。",
           "source_id": "FISRC-e0178cb313198d39"
         },
         {
@@ -19289,18 +19324,18 @@
         {
           "source_id": "FISRC-ac5a938b8fdef1a9",
           "source_url": "https://news.pedaily.cn/202609/568645.shtml",
-          "source_title": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI",
-          "source_content_hash": "38c6d5b49c2072e5",
-          "quote": "本轮融资由宁德时代领投，阿美投资 Aramco Ventures战略投资，太平创新投资、广发信德、复星创富等跟投，源码资本、光远资本等老股东持续追加。",
-          "quote_hash": "a67699da37c852c4d17e456cb1ca8a3f76385f1975283bd1a518a4d6f061273e"
+          "source_title": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI_投资界",
+          "source_content_hash": "d16a0412ac587ccf5679a69537d01c8a88c4385cb39b237cc09b4dc491a155a0",
+          "quote": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI_投资界 首 页 资 讯 投资圈 活 动 研 究 创投号 旗下矩阵 投资界 天天IPO 解码LP 并购 前哨 投资界AI 深度 热门 天天IPO AI先锋 机器人 医疗健康 大消费 视频 99个发现 APP 微信扫码订阅 创投号 登录 清科集团 清科控股 清科研究中心 清科母基金 新芽 首页 产业 ai 正文 首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI 当AI从数字世界走向物理世界，能源与算力基础",
+          "quote_hash": "49df2ef6f9f097ddb3e3230cfdec3b52cd8d719523a1f7d26180b9dab8040887"
         },
         {
           "source_id": "FISRC-e0178cb313198d39",
           "source_url": "https://www.ithome.com/0/965/686.htm",
-          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
-          "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
-          "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
-          "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家",
+          "source_content_hash": "9c2935c329e79c86a273afaa6b86bffcecb3779f8cbcc69d425c012fe71b950e",
+          "quote": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、",
+          "quote_hash": "9882cb0051a3b79a03e3634cdd0dedcb2655de4c9355c830db710103cbf57da7"
         },
         {
           "source_id": "FISRC-d2c8c841370ed82a",
@@ -19311,7 +19346,11 @@
           "quote_hash": "bcd88ca2e2bd8d6d580efd429b25e6a91889952bc2ee1f22526c0bd588bb03d5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-07bc6c3db6e6b1": {
       "summary": "源码资本是 2014 年创立的中国风险投资机构。其官方介绍称管理约 70 亿美元资产、投资超过 300 家创业公司，覆盖种子期至成长期，重点领域包括 AI 与机器人、智能制造、互联网与消费及生命科学。官网列出的组合案例包括字节跳动、美团、理想汽车、宇树科技、LiblibAI 与月之暗面。",
@@ -29691,21 +29730,25 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-668e4f675444bd": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Addition 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "投资关系分别依据被投公司公告及融资披露；不代表完整投资组合。",
+      "summary": "Snorkel AI 官方公告将 Addition 列为其 Series E 既有投资方；Xscape Photonics 融资公告也将 Addition 列为领投方。本档记录这两项公开案例。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16afc5791c45315a"
+          "description": "Snorkel AI 官方 Series E 公告将 Addition 列为既有投资方。",
+          "source_id": "PROFILE-fb24ca8cba1ffb972f37"
         },
         {
-          "description": "融资来源记录：Xscape Photonics · A轮扩展 · 2026-03-11 · 本轮领投 · $37 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Xscape Photonics 融资公告将 Addition 列为领投方。",
           "source_id": "FISRC-f6cc6b0a81efafb6"
+        },
+        {
+          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-16afc5791c45315a"
         },
         {
           "description": "融资来源记录：Snorkel AI · 历史轮次未披露 · 历史轮次领投方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -29715,20 +29758,28 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-fb24ca8cba1ffb972f37",
+          "source_url": "https://snorkel.ai/blog/data-2-0-and-the-research-era-of-ai-data/",
+          "source_title": "Data 2.0 and the research era of AI data | Snorkel AI",
+          "source_content_hash": "b4b41af10b5fe41ddff2cc4cbfb41f993551ca8c2d2a8c6ed4d3e15075c3f630",
+          "quote": "with participation from Third Point, March, Blumberg, Allegis, Standard VC, Frontline, and existing investors Addition, Lightspeed, Greylock, GV, P7, Wells Fargo, Walden Catalyst Ventures, and Factory. Since launching our new data-as-a-service offering nearly a year ago, we’ve grown over 18x, and this week crossed an annualized revenue ru",
+          "quote_hash": "d3b2efb7987de75136d72a7c7bf066277dd0d27d86eec5f9c9c9b41645896ef0"
+        },
+        {
+          "source_id": "FISRC-f6cc6b0a81efafb6",
+          "source_url": "https://www.vcaonline.com/news/2026031104/xscape-photonics-announces-37-million-in-new-funding-launches-eight-wavelength-laser-for-ai-data-center-networks/",
+          "source_title": "Xscape Photonics Announces $37 Million in New Funding, Launches Eight-Wavelength Laser for AI Data Center Networks | Venture Capital Access Online",
+          "source_content_hash": "5606d85555a62f18b3a529d0a83bea1b93649b50e8ca4c2bf685d57bc1c9ba47",
+          "quote": "ditional funding, bringing the company’s total Series A funding to $81 million. The latest funding was led by Addition, a new investor, with continued support from existing investors, including IAG Capital Partners and NVIDIA, among others. The new investment builds on the company's $44 million Series A round announced in 2024. Xscape Pho",
+          "quote_hash": "d9cde5629fc8740afd5e07d087e43b21505856ac65873f995535ba0ceec8dd82"
+        },
+        {
           "source_id": "FISRC-16afc5791c45315a",
           "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
           "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
           "source_content_hash": "ad04baf1994708d0",
           "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
           "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
-        },
-        {
-          "source_id": "FISRC-f6cc6b0a81efafb6",
-          "source_url": "https://www.vcaonline.com/news/2026031104/xscape-photonics-announces-37-million-in-new-funding-launches-eight-wavelength-laser-for-ai-data-center-networks/",
-          "source_title": "Xscape Photonics 宣布获得 3700 万美元新融资，推出用于 AI 数据中心网络的八波长激光器",
-          "source_content_hash": "eec8902036c0e8c910f2ed833539506f482f2055ca35957c73a49714facafb8b",
-          "quote": "The latest funding was led by Addition, a new investor",
-          "quote_hash": "bd2cf74e571b927967ca6a2913514e1a64a228d631c9a5bcf85356901977f286"
         },
         {
           "source_id": "FISRC-6dd774496b50aaac",
@@ -29739,7 +29790,11 @@
           "quote_hash": "b31cb85a34c52d3347641c50897a43ec64837f9979d1b158b0bc6b86c4d9bddc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-8213238c5d1a24": {
       "profile_type": "unverified",
@@ -35309,16 +35364,16 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-5b86aa7af21d19": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Disruptive 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资角色依据 Groq 公告；机构背景由 TechCrunch 报道支持。",
+      "summary": "Groq 官方公告确认 Disruptive 领投其 Series A；TechCrunch 将其描述为由 Alex Davis 创立、位于达拉斯的后期投资机构。本档记录已核实案例，不代表完整组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Groq · A轮 · 2026-08-17 · 本轮领投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Groq 官方公告确认 Disruptive 领投 2026 年 Series A。",
           "source_id": "FISRC-c02f2ac04f9320df"
         },
         {
@@ -35331,21 +35386,25 @@
         {
           "source_id": "FISRC-c02f2ac04f9320df",
           "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
-          "source_title": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
-          "source_content_hash": "562993f7020da030",
+          "source_title": "Groq Closes $350 million Series A, Building the World&#x27;s Leading AI Inference Cloud | Groq is the premier neocloud for fast inference",
+          "source_content_hash": "96dbad431955ede82c4c7669363e4f9a9611bcc3d8da6e95e49d226e8c4ab068",
           "quote": "Groq LLC (“Groq”) today announced a $350 million Series A fundraise and the round was led by Disruptive, with planned participation from NVIDIA.",
           "quote_hash": "5b45c346ecf01968f41ce6e6ca6fc9e33e390132605e73bc2370eb5cb910acb1"
         },
         {
           "source_id": "FISRC-972115220a4b8e85",
           "source_url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal",
-          "source_title": "AI芯片制造商Groq确认6.5亿美元融资，在Nvidia 200亿美元非收购式人才引进交易后重新配备人员",
-          "source_content_hash": "9c394f4bcc6bc709393bd43d5fd76e9ee5d8e382c596d11e0c2c454f3c20d8ab",
+          "source_title": "AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia&#039;s $20B not-acqui-hire deal | TechCrunch",
+          "source_content_hash": "49ee9d08f3be90a026c6dcda745109e69bb20c32d4d0405d144d1759627db9aa",
           "quote": "The round was led by Disruptive, a Dallas-based late-stage investment firm founded by Alex Davis — who also serves as Groq’s chairman — and Infinitum, a Fort Lauderdale hedge fund.",
           "quote_hash": "9af8d02739d1d54feb49156d597d43aa8d85321137cd064d853b72df5fbca5c8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-bf539de8e46e6a": {
       "summary": "GFT Ventures 是一家主要在美国和以色列投资的早期前沿科技风险投资机构。官网列出的兴趣领域包括人工智能与数据科学、自主机器及其他前沿技术；其“数十年投资记录”属于机构自述，不能据此推断基金回报。",
@@ -41687,24 +41746,24 @@
       "last_verified_at": "2026-09-28"
     },
     "INV-5cc098edd805cf": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "啟赋资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "案例来自融资公告和行业报道，不代表完整组合。",
+      "summary": "多项融资报道将啟赋资本列为凌川科技、跃然创新及华清未央的投资方。本档仅记录这些已披露参与案例；由于官网正文可用信息有限，不补写基金规模或完整投资策略。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：凌川科技 · A+轮扩展 · 2026-06-25 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "凌川科技融资报道列啟赋资本为领投方。",
           "source_id": "FISRC-a39c77bc80e12506"
         },
         {
-          "description": "融资来源记录：深圳跃然创新科技有限公司 · A+轮 · 2026-03-30 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "跃然创新 A+ 轮报道列啟赋资本为参投机构。",
           "source_id": "FISRC-47b1de868e5ddfe2"
         },
         {
-          "description": "融资来源记录：华清未央 · 历史轮次未披露 · Pre-A+轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "华清未央 Pre-A+ 轮报道列啟赋资本为参与机构。",
           "source_id": "FISRC-ff45e731b4335bfb"
         }
       ],
@@ -41713,16 +41772,16 @@
         {
           "source_id": "FISRC-a39c77bc80e12506",
           "source_url": "https://www.ithome.com/0/968/289.htm",
-          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
-          "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片 - IT之家",
+          "source_content_hash": "0c8aa3abd9f50695779734372412758ca59ea2ce3798b73b2ce6987d17d7a21f",
           "quote": "本轮由啟赋资本领投，产业投资方新国都、投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资，老股东顺禧基金、九智资本持续追加投资。",
           "quote_hash": "181b3360abcaa837762b8cfdf27f6e0dbde113b7c103d5f95452aa4d004e2655"
         },
         {
           "source_id": "FISRC-47b1de868e5ddfe2",
           "source_url": "https://finance.sina.cn/2026-03-30/detail-inhstxxe2822090.d.html",
-          "source_title": "拓邦战略投资AI玩具先锋跃然创新，共拓AI智慧成长新蓝海",
-          "source_content_hash": "907ae8ff0db6a87bbd3822e3d07475bda216bf4ce32f463e1703f62f456fa7c6",
+          "source_title": "拓邦战略投资AI玩具先锋跃然创新，共拓AI智慧成长新蓝海|拓邦股份|蚂蚁集团|智美|四电|机器人_手机新浪网",
+          "source_content_hash": "552d2a490a9e602a684044c63b05f47e906c433d5903bb1aef759998b7717324",
           "quote": "近日，AI玩具公司深圳跃然创新科技有限公司（以下简称”跃然创新”）完成A+轮融资，由蚂蚁集团领投，达晨创投、尚 颀 资本、拓邦股份（002139.SZ，以下简称“拓邦”）、啟赋资本等机构参投。",
           "quote_hash": "61e17cee984e02b8821d979716a37b36ec570b362c1bd1411e0ffe279aee64f9"
         },
@@ -41730,12 +41789,16 @@
           "source_id": "FISRC-ff45e731b4335bfb",
           "source_url": "https://www.163.com/dy/article/KOB03FS3051984TV.html",
           "source_title": "【投融资动态】华清未央Pre-A+轮融资，投资方为瀚晖资本、啟赋资本等|证券|pre_网易订阅",
-          "source_content_hash": "7a04c41221eba496",
+          "source_content_hash": "c01338870ec792f4d888eda067e96ff1f24d0e84724a1330b747e40e42fe7af5",
           "quote": "华清未央（北京）科技有限公司Pre-A+轮融资，融资额未披露，参与投资的机构包括瀚晖资本，啟赋资本，无锡交通集团，辛夷国际。",
           "quote_hash": "a4fac0da7ae099590c104c7566eba3cbd007439516751ed419da10baa14a947f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-4798cc53ee6595": {
       "profile_type": "organization",
@@ -42622,25 +42685,21 @@
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-5c676b07aaa42e": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "梁文锋 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前可核验资料集中于 DeepSeek 首轮融资报道，金额和个人投资组合不在本档中推断。",
+      "summary": "IT之家关于 DeepSeek 首轮外部融资的报道将创始人梁文锋列为该轮投资方。本档只记录这一轮公开报道，不扩展个人完整投资履历或出资金额。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-17 · 本轮参投 · 约 510 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "DeepSeek 首轮外部融资报道列梁文锋为投资方之一。",
           "source_id": "FISRC-e0178cb313198d39"
         },
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮领投（创始人个人出资） · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d2c8c841370ed82a"
-        },
-        {
-          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮领投（创始人个人出资） · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-20480dcf3f970893"
         }
       ],
       "contacts": [],
@@ -42648,8 +42707,8 @@
         {
           "source_id": "FISRC-e0178cb313198d39",
           "source_url": "https://www.ithome.com/0/965/686.htm",
-          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
-          "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家",
+          "source_content_hash": "9c2935c329e79c86a273afaa6b86bffcecb3779f8cbcc69d425c012fe71b950e",
           "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
           "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
         },
@@ -42670,7 +42729,11 @@
           "quote_hash": "61134e00b1b629cf0740735cbff9c023a93589a1b7969112a375bbca8d45fd65"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-5dc722a0170437": {
       "profile_type": "person",
@@ -46554,25 +46617,25 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-5bf0d8fbc5004f": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "卓源亚洲 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "条目仅根据多项融资报道核验投资方名称，未核实管理团队和完整投资组合。",
+      "summary": "投资界融资报道将卓源亚洲列为生数科技后续轮次投资方，并列为比特无限天使轮涉及机构。本档只汇总已披露参投信息；官方机构背景页面当前无法稳定获取，未归纳其投资策略。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：生数科技 · B轮 · 2026-04-10 · 本轮参投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "生数科技 B 轮融资报道将卓源亚洲列为持续追加的原有股东。",
           "source_id": "FISRC-fd865802af815ab3"
+        },
+        {
+          "description": "比特无限融资资料将卓源亚洲列为涉及机构。",
+          "source_id": "FISRC-6aea6a18fe712b45"
         },
         {
           "description": "融资来源记录：生数科技 · A+轮 · 2026-02-05 · 本轮参投 · 6亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-474b45f658d5b3df"
-        },
-        {
-          "description": "融资来源记录：比特无限 · 历史轮次未披露 · 天使轮及天使+轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6aea6a18fe712b45"
         }
       ],
       "contacts": [],
@@ -46580,10 +46643,18 @@
         {
           "source_id": "FISRC-fd865802af815ab3",
           "source_url": "https://news.pedaily.cn/202604/562614.shtml",
-          "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
-          "source_content_hash": "a281cc701a9028fb",
+          "source_title": "生数科技完成近20亿元B轮融资，阿里云领投_投资界",
+          "source_content_hash": "ad192fa38f112b71ff7752bed5fd1cf5c35f99cc3e3c1456831e510dcf2df57a",
           "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
           "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
+        },
+        {
+          "source_id": "FISRC-6aea6a18fe712b45",
+          "source_url": "https://m.pedaily.cn/news/566841",
+          "source_title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道|投资界",
+          "source_content_hash": "d48aefe2d69963c9c72335574fee40ee5519b3740d5bf9548b1e6130446ea4cd",
+          "quote": "比特无限 上海比特无限人工智能科技有限公司 融资时间 2026-07-24 当前轮次 天使轮 融资金额 未披露 AI 涉及机构： 卓源亚洲 容亿投资 普华资本 壹德资本",
+          "quote_hash": "b8f53700bde821a96ad3d0463b9893d04c2982bb8e49cf22b6d5e9808ad5fc43"
         },
         {
           "source_id": "FISRC-474b45f658d5b3df",
@@ -46592,17 +46663,13 @@
           "source_content_hash": "5bbe0b56b7dcd1fc529bb4ce455ac5bbf779ead29465cc22a1ca235f1afb8110",
           "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投。",
           "quote_hash": "f5aa09b1b13519ceb5bbf4df446f817d5e6bfefcfc0e9fbc4bb07af410a3bf56"
-        },
-        {
-          "source_id": "FISRC-6aea6a18fe712b45",
-          "source_url": "https://m.pedaily.cn/news/566841",
-          "source_title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道|投资界",
-          "source_content_hash": "d48aefe2d69963c9",
-          "quote": "比特无限 上海比特无限人工智能科技有限公司 融资时间 2026-07-24 当前轮次 天使轮 融资金额 未披露 AI 涉及机构： 卓源亚洲 容亿投资 普华资本 壹德资本",
-          "quote_hash": "b8f53700bde821a96ad3d0463b9893d04c2982bb8e49cf22b6d5e9808ad5fc43"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-1208edd17b0917": {
       "profile_type": "unverified",
@@ -48905,25 +48972,48 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-5c61922b67e8a6": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "AJVC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "投资阶段为官网自述，Unveilr AI 轮次角色依据融资报道；金额未核实，因此不列金额。",
+      "summary": "AJVC 官网自述专注印度 pre-seed 投资；Dealroom 报道将其列为 Unveilr AI pre-seed 轮领投方。本档记录单项已披露案例及有限官网背景。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述投资阶段",
+          "value": "Pre-seed",
+          "source_id": "PROFILE-4f6145d2865ab9030975"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Unveilr AI · 预种子轮 · 2026-10-01 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-78e8facb4ec5a3c9"
+          "description": "Dealroom 报道将 AJVC 列为 Unveilr AI pre-seed 轮领投方；未列金额。",
+          "source_id": "FISRC-fd345751b04929f7"
         },
         {
           "description": "融资来源记录：Unveilr AI · 预种子轮 · 2026-10-01 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fd345751b04929f7"
+          "source_id": "FISRC-78e8facb4ec5a3c9"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-4f6145d2865ab9030975",
+          "source_url": "https://www.ajuniorvc.com/",
+          "source_title": "ajvc - India's Most Approachable Pre-seed Fund",
+          "source_content_hash": "d28dbe460248031f7bf5cff1695f3e3f1143355a66581136b8855bf607c94dab",
+          "quote": "We are India's largest pre-seed investor",
+          "quote_hash": "19ffffc0d71f86ea7cf3b6ead02f43819988872a8b4d7fb4b57608eed19878de"
+        },
+        {
+          "source_id": "FISRC-fd345751b04929f7",
+          "source_url": "https://dealroom.co/news/158152-unveilr-ai-raises-1-74m-pre-seed-from-ajvc-to-chase-ai-search-visibility/",
+          "source_title": "Unveilr AI raises $1.74M pre-seed from AJVC to chase AI search visibility | Dealroom News",
+          "source_content_hash": "7e6c12a7f22b8d3d20ca302cc1335e198b73d3c347c498b1fd81678cceded2f2",
+          "quote": "has raised US$2.27M in a pre-seed round led by AJVC",
+          "quote_hash": "08cf53fe33bd6bdb91a43b075e39eb0101bb306698968f7633c6ce11be6c7728"
+        },
         {
           "source_id": "FISRC-78e8facb4ec5a3c9",
           "source_url": "https://entrackr.com/snippets/unveilr-ai-raises-pre-seed-round-from-ajvc-at-rs-167-cr-valuation-12611816",
@@ -48931,17 +49021,13 @@
           "source_content_hash": "1497f486dd64b0b90f8f55d5c49e894bdeb5a56b847ea3d5f65b6b2e3594cbbf",
           "quote": "Mumbai based Unveilr AI has raised an undisclosed amount in a pre-seed round from Aviral Bhatnagar’s AJVC at a valuation of Rs 16.7 crore.",
           "quote_hash": "30056a3258f6ec09310607e352420f7f7b5b4e6350c95d53382ed19968479caf"
-        },
-        {
-          "source_id": "FISRC-fd345751b04929f7",
-          "source_url": "https://dealroom.co/news/158152-unveilr-ai-raises-1-74m-pre-seed-from-ajvc-to-chase-ai-search-visibility/",
-          "source_title": "Unveilr AI raises $1.74M pre-seed from AJVC to chase AI search visibility",
-          "source_content_hash": "f5882ca657090512",
-          "quote": "has raised US$2.27M in a pre-seed round led by AJVC",
-          "quote_hash": "08cf53fe33bd6bdb91a43b075e39eb0101bb306698968f7633c6ce11be6c7728"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-5f7ec06d44a908": {
       "profile_type": "organization",
@@ -49607,14 +49693,25 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-66d65e26e806e3": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "In-Q-Tel 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "机构定位依据 In-Q-Tel 官网；融资参与关系依据 Armadin 官方公告。",
+      "summary": "In-Q-Tel 官网将其描述为独立战略投资机构；Armadin 官方 Series B 公告将 In-Q-Tel 列为继续参与的既有投资方。本档只记录该项公开案例和官网定位。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网机构定位",
+          "value": "独立战略投资机构",
+          "source_id": "PROFILE-7f32f7fe23b5237ecaa2"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Armadin 官方 Series B 公告将 In-Q-Tel 列为既有投资方。",
+          "source_id": "PROFILE-273e103cd0ba2beda9f6"
+        },
         {
           "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-58d9b75c832876e1"
@@ -49630,6 +49727,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-7f32f7fe23b5237ecaa2",
+          "source_url": "https://www.iqt.org/about",
+          "source_title": "IQT | About | Our History",
+          "source_content_hash": "1934cf4965faba5c3ab02f612e5d995421fd904231f21ef3a668d804dfae2982",
+          "quote": "rtunities at the intersection of innovation and national security. join our talent network Copyright © 2025 · In-Q-Tel, Inc. All Rights Reserved IQT Branding Kit Terms of Use • Privacy Policy • Cookie Policy • IQT Vulnerability Disclosure Policy",
+          "quote_hash": "85155c795ba49857596384374d3df34a487dea14551d83ecad809d0d67f509ef"
+        },
+        {
+          "source_id": "PROFILE-273e103cd0ba2beda9f6",
+          "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
+          "source_title": "Armadin Raises $255.5 Million Series B to Scale Effective Autonomous Security",
+          "source_content_hash": "ec2a8ede86a3c1cf68c098a283fe4d8de7ebb7c5bfc8195618330d10a1bc3126",
+          "quote": "estors Bain Capital Ventures (BCV) and Redpoint. Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned, reflecting their continued confidence, bringing Armadin's total funding to $445 million. Seven months after emerging from stealth, Armadin is running agentic attack camp",
+          "quote_hash": "417f9ccb1308ab6504db63cd7885a615923570863f1f4e3ca946414494d91b19"
+        },
         {
           "source_id": "FISRC-58d9b75c832876e1",
           "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
@@ -49655,7 +49768,11 @@
           "quote_hash": "7c9bcdef6b247085bc0cd454ad197ee957709df01475471bd40ee796367db5bb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-77f27642a8d71c": {
       "profile_type": "organization",
@@ -57776,16 +57893,16 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-67169c44b53f86": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "九派资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据投资界报道；未推断其投资策略或完整组合。",
+      "summary": "投资界关于弋途科技 Pre-B 轮融资的报道将九派资本列为参投机构。本档只记录该项公开披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：弋途科技 · Pre-B轮 · 2026-09-21 · 本轮参投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "弋途科技 Pre-B 轮融资报道将九派资本列为参投机构。",
           "source_id": "FISRC-ec1ffe5861471f6a"
         }
       ],
@@ -57794,13 +57911,17 @@
         {
           "source_id": "FISRC-ec1ffe5861471f6a",
           "source_url": "https://news.pedaily.cn/202609/569399.shtml",
-          "source_title": "弋途科技完成近亿元Pre-B轮融资，以AI Native全栈能力赋能座舱智能化、汽车AI化",
-          "source_content_hash": "ef64a619d72182e0",
-          "quote": "本轮融资由 上海半导体与Sands Talk Capital（沙滩说资本）联合领投，九派资本、江苏金桥参投，老股东包河科创持续加码 。",
-          "quote_hash": "bafda0d30f65da43aa0231d42fc2c6ac648ff251e649dd62868ddd721f58027b"
+          "source_title": "弋途科技完成近亿元Pre-B轮融资，以AI Native全栈能力赋能座舱智能化、汽车AI化_投资界",
+          "source_content_hash": "f0ef1712e3b28419423ba557c65b306716a0faf5fd223516156657f0dc3eb1b6",
+          "quote": "创新型领 先企业。投资界（ID：pedaily2012）9月21日消息，弋途科技正式宣布 完成Pre-B轮融资，融资金额近亿元人民币 。本轮融资由 上海半导体与Sands Talk Capital（沙滩说资本）联合领投，九派资本、江苏金桥参投，老股东包河科创持续加码 。本轮融资旨在加速AICAR 的规模化推广，推动深度结合自研端侧模型的下一代 AICAR 落地积蓄纵深；同步推进多终端战略布局与全球化市场拓展，并强化多地研发交付体系与高端人才梯队建设。 产品方面，2024年，弋途完成行业首 个车载AI智能体平台量产交付；2025年，弋途核心产品心界AI全栈系统问世；2026年北京车展，弋途心界 AI 全栈系统 2.0 与全球版座舱解决方案亮相；近期，弋途AICAR上线。弋途",
+          "quote_hash": "65c86ad0d642fb3cb71961eeb018ebf3adcd1f764a64042dffa72576f5eaaafd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-35cb7f3c5fd109": {
       "profile_type": "organization",
@@ -59227,16 +59348,23 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-64ab20cc3d2483": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "华泰创新 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据被投企业融资报道；集团关系依据华泰证券官网。该记录不代表完整投资组合。",
+      "summary": "投资界融资报道将华泰创新列为奕行智能 2026 年新一轮融资的参与机构；华泰证券官网说明华泰创新为集团全资子公司及另类投资业务主体。本档仅记录该公开案例与主体信息。",
+      "facts": [
+        {
+          "field": "organization_relationship",
+          "label": "机构关系",
+          "value": "华泰证券集团全资子公司，开展另类投资业务",
+          "source_id": "PROFILE-328283546a23214c0186"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "奕行智能 2026 年新一轮融资披露将华泰创新列为参与机构。",
           "source_id": "FISRC-ed0092859381f876"
         }
       ],
@@ -59245,13 +59373,25 @@
         {
           "source_id": "FISRC-ed0092859381f876",
           "source_url": "https://news.pedaily.cn/202609/569236.shtml",
-          "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿",
-          "source_content_hash": "299a9be6f63ac708",
-          "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
-          "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+          "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿_投资界",
+          "source_content_hash": "8a158c695e6f9decbd38fbc23a9bbe756f3bf82cc8ff8ab47c8566b97b1aefab",
+          "quote": "片独角兽奕行智能（北京）科技股份有限公司（简称“奕行智能”）完成新一轮20亿元融资，据估计投后估值接近150亿元。 这是继上半年获15亿元B轮及中国移动战略投资后，公司短短数月内完成的又一次大额融资，阵容豪华——汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构。 至此，奕行智能身后云集一众知名国资、财务及产业投资人。大家集体押注的，正是有着芯片“开源革命”之称的RISC-V——一个完全开放、免费、可定制的精简指令集，及其在云端算力的竞争优势。不久前，RISC-V在人工智能和嵌入式系统领域的重要性被写入电子信息制造业发展“十五五”规划，产业意味不言而喻。 2",
+          "quote_hash": "d876e8e82b3933163730f91d6528f94c5f7b29554da4c874b235d101f3e553e4"
+        },
+        {
+          "source_id": "PROFILE-328283546a23214c0186",
+          "source_url": "https://www.htsc.com.cn/htzq/htcx/htcx.jsp",
+          "source_title": "华泰创新",
+          "source_content_hash": "3213bd2ecef3e1efceb36389ac1e29c14fe6a61851310c83ad7ddd061e7927cd",
+          "quote": "华泰创新 一、 公司简介 华泰创新投资有限公司是华泰证券下设的全资另类投资子公司，注册资本35亿元。在法律法规及监管规定的框架下，华泰创新使用自有资金开展金融科技股权投资、科创板业务、战略投资等创新型投资业务。 二、 制度建设情况 华泰创新作为华泰证券的一级全资子公司，将制度建设作为重要工作，根据《证券公司另类投资子公司管理规范》、《证券公司全面风险管理规范》、《关于证券公司证券自营业务投资范围及有关事项的规定》、《证券公司内部控制指引》等法律法规及监管规",
+          "quote_hash": "963442f736e64058581f8214989276593dedb2aba780f051d0b41035c3faec0f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-ebcefd30314b4a": {
       "profile_type": "unverified",
@@ -62965,16 +63105,16 @@
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-65666cadc7dd99": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "京成燕北 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "公开资料仅支持该项融资参与关系；未补写其投资策略或完整组合。",
+      "summary": "投资界披露九章智电首轮战略融资时，将京成燕北列为共同跟投方。本档仅记录该项公开披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：九章智电 · 战略融资 · 2026-09-10 · 本轮参投 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "九章智电首轮战略融资报道将京成燕北列为共同跟投方。",
           "source_id": "FISRC-75f2758fb9aa9e2d"
         }
       ],
@@ -62983,13 +63123,17 @@
         {
           "source_id": "FISRC-75f2758fb9aa9e2d",
           "source_url": "https://news.pedaily.cn/202609/568814.shtml",
-          "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
-          "source_content_hash": "8d613e8630b21904",
-          "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
-          "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
+          "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道_投资界",
+          "source_content_hash": "53047b5f6a0af64ec64bd96b767b7ef7af6deba815d0e4fc2e5582aba24696a7",
+          "quote": "能智慧运营、虚拟电厂 VPP 交易、零碳工厂智慧避峰等多类产品与服务。投资界（ID：pedaily2012）9月10日消息，近日，九章智电正式宣布 完成首轮数千万级战略融资 。本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。 依托多源多尺度数据融合能力、小样本学习能力，以及可解释性竞价模型，九章智电克服了行业普遍存在的数据量不足、数据缺失、AI 决策黑箱、预测结果偏差过高等痛点问题，自研全套算法体系在多个区域电网和电力交易省份的泛化应用能力已经得到成功验证。九章智电已经在西北、东北、华北、华东、西南等多个现货运行区域的多种业务场景落地实际交易服务项目，实实在在为客户实现降本增效。通过业务场景快速增长，已形成 “数据积累‑模型迭代‑收益领先-客户规模扩大”",
+          "quote_hash": "700d64e7e779239099e9e009afd78aed7cab1b719cc266eddcc71e5642945c7e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-b91067119f0577": {
       "profile_type": "organization",
@@ -63638,16 +63782,16 @@
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-64dd020b2f4d09": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Entrepreneur First 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "参与关系依据被投企业 CloudNC 官方公告；未归纳其完整投资组合。",
+      "summary": "CloudNC 官方融资公告将 Entrepreneur First 列为其 2026 年融资参与方。本档仅记录该公开案例，不将单笔披露扩展为完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：CloudNC · B轮 · 2026-09-09 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "CloudNC 官方融资公告将 Entrepreneur First 列为参与投资的机构之一。",
           "source_id": "FISRC-583456b85ec1179e"
         }
       ],
@@ -63656,13 +63800,17 @@
         {
           "source_id": "FISRC-583456b85ec1179e",
           "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
-          "source_title": "CloudNC 融资 2000 万美元，扩展精密加工 AI 工具",
-          "source_content_hash": "927df588386a3e9e9eff5593d338e5deac39d65fca4a65dd563e313beb8b80ad",
-          "quote": "The funding is led by Nimble Ventures, a US-based venture investor, with participation from other investors including Calculus Venture Capital, Entrepreneur First and LM Ventures, Lockheed Martin’s venture capital fund.",
-          "quote_hash": "341dd2bff3b4d4d01a56bd326a3c296e53dd77da66784f0c3238ffcf94dd4189"
+          "source_title": "CloudNC raises $20m to expand AI tools for precision machining",
+          "source_content_hash": "e50d348dd4894165d8008e57268e20fad7ae1fdcc8a77273b2552831c176085d",
+          "quote": "res, a US-based venture investor, with participation from other investors including Calculus Venture Capital, Entrepreneur First and LM Ventures, Lockheed Martin’s venture capital fund. CloudNC will use the investment to further catalyze the acceleration of advanced manufacturing by enabling more machine shops to adopt its AI solutions, a",
+          "quote_hash": "8d369b69b7201d03c39fedc01d3db1ed8a5344bb771fa3bc78b03850003e6a5e"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-96ebf6a558aaa4": {
       "profile_type": "organization",
@@ -68283,16 +68431,16 @@
       "last_verified_at": "2026-09-28"
     },
     "INV-66ad325ff71541": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中信证券 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据新浪财经转载的融资报道；未确认内部出资主体。",
+      "summary": "蜂巢互联融资报道将中信证券列为相关投资机构。本档仅记录该公开融资披露，不推断其通过何种内部基金或部门出资。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：蜂巢互联 · 多轮融资 · 2026-08-26 · 本轮参投 · 12亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "蜂巢互联融资报道将中信证券列入参与投资的机构。",
           "source_id": "FISRC-6d442164db5f81db"
         }
       ],
@@ -68301,13 +68449,17 @@
         {
           "source_id": "FISRC-6d442164db5f81db",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
-          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
-          "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
-          "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
-          "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
+          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎_新浪财经_新浪网",
+          "source_content_hash": "d14110eba1a1beea7dde559c57889ac1f2a323df193ce26a04c4cd7e8e38c735",
+          "quote": "科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金 等区域国资，深度联动各地高端制造产业资源，助力区域工业数字化转型落地； 市场化专业投资机构汇聚 鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、 中信证券 、珂玺资本 等深耕硬科技智能制造赛道的头部投资机构，聚焦企业长期价值成长； 产业链投资方引入 海尔资本、 利元亨 、中软国际、 金百泽 等上下游，实现技术、客户、场景双向赋能。 蜂巢互联创始人马震表示： 多元稳定、坚持长期主义的股东阵容，是公司持续深耕底层技术与推进产业规模化落地的核心战略支撑。 蜂巢互联坚持底层技术自主攻坚，以先进仿真底座+一体化工具链平台为核心业务主线，每年稳定投入约3亿元用于研发，持续突破几何、网格等仿真根技术，在细分工艺仿",
+          "quote_hash": "d557dd9a428ae6be1b5bdfbea1e71c29913bd25dec64d0cd3c88c4233221627c"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-e675dbfe1b80d6": {
       "profile_type": "unverified",
@@ -79756,31 +79908,50 @@
       "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
     },
     "INV-5e366f2b91ec91": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Kearny Jackson 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "投资阶段和机构定位依据官网，Ellis AI 参投关系依据融资报道。",
+      "summary": "Kearny Jackson 官网将自身定位为科技创业公司的早期投资者；TechCrunch 报道将其列为 Ellis AI 种子轮投资方。本档不代表完整组合。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网定位",
+          "value": "早期科技创业公司投资者",
+          "source_id": "PROFILE-95e87d17df1703480da3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Ellis AI 种子轮融资报道将 Kearny Jackson 列为投资方。",
           "source_id": "FISRC-a8e6dd6c34cd416a"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-95e87d17df1703480da3",
+          "source_url": "https://www.kearnyjackson.com/",
+          "source_title": "Kearny Jackson",
+          "source_content_hash": "12bee0c574b62f6f45652f53ddd60d655b3a1f7d1b2745dfc1659380760f46d2",
+          "quote": "We’re early-stage specialists Learn More At Kearny Jackson, we partner with extraordinary founders, providing them hands-on support from day zero to navigate the challenges of building their companies.",
+          "quote_hash": "3f400e1eaa5ad669fda6f170ba8b1c67acdec931e2df24ad5e6a89c7f4ce4b5c"
+        },
+        {
           "source_id": "FISRC-a8e6dd6c34cd416a",
           "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
-          "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
-          "source_content_hash": "dd828ac38a132ac1",
+          "source_title": "Repeat founder Ryan Williams raises $10M seed for an AI startup for private credit managers | TechCrunch",
+          "source_content_hash": "fbdab2f60af1dd9734196ef46889d15f8e7a094df757f149a264df8f4011cf70",
           "quote": "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson.",
           "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-8bcc4c65c7bd18": {
       "profile_type": "unverified",
@@ -88301,16 +88472,16 @@
       "coverage_note": "将数据库短名称映射到清华官方所用“水木清华校友种子基金”。与名称相近的“水木清华校友基金”保持分开，未确认二者为同一主体。"
     },
     "INV-64fcd3125067e7": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "特步家办 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据投资界报道；机构法律主体与完整投资活动未作推断。",
+      "summary": "投资界关于无界智航天使轮融资的报道将特步家办列为跟投产业方。本档只记录这一项被披露的参投关系。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：无界智航 · 天使轮 · 2026-07-10 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "无界智航天使轮融资报道将特步家办列为跟投产业方。",
           "source_id": "FISRC-086ff36dfb7673e8"
         }
       ],
@@ -88319,13 +88490,17 @@
         {
           "source_id": "FISRC-086ff36dfb7673e8",
           "source_url": "https://news.pedaily.cn/202607/566101.shtml",
-          "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地",
-          "source_content_hash": "d9771ea116d57f70",
-          "quote": "深圳天使母基金、水木校友种子基金等多家财务投资机构，以及北洋海棠基金、特步家办等产业方跟投",
-          "quote_hash": "54651cf92cd842b29f7774734acb91f2858e3248475b318f43f0f588873b701c"
+          "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地_投资界",
+          "source_content_hash": "92c14faa7ac63f136f68ff13ef3ab45382130b227377ff5a0758f6f3b87c1b22",
+          "quote": "航科技有限公司（简称：Xspark AI或无界智航）， 完成首轮近亿元天使轮融资。本轮融资由鼎晖VGC、初心资本、SEE Fund 无限基金联合领投，深圳天使母基金、水木校友种子基金等多家财务投资机构，以及北洋海棠基金、特步家办等产业方跟投 ，多维资本担任融资财务顾问。 资金将主要用于核心技术研发、产品迭代以及 Physical AI 的规模化落地。 Xspark AI 由前蔚来汽车自动驾驶核心高管熊祺、清华大学长聘副教授丁文伯，以及香港大学 MMLab 00 后博士生陈天行联合创立，上海交通大学助理教授穆尧、新加坡南洋理工大学博士后李寿杰担任长期顾问，团队覆盖自动驾驶、计算机视觉、世界模型及机器人等多个方向。Xspark AI 核心成员来自清华大学、香港大学、上海交通大",
+          "quote_hash": "1b55b500e2a50dcacececb04f5bf7637ee5b636b02705419cab49c7b6d8fe447"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-594f231bde7887": {
       "summary": "无限基金SEE Fund（该库两条名称变体分别收录）由清华大学电子工程系与天津电子院共同推动发起，关注高校教师与校友创业的早期前沿科技，方向包括信息科技、高端制造和医工结合。清华官网披露首期募集2亿元、第二期5.68亿元，并列出备案编号SNT727、STS289。",
@@ -90373,14 +90548,18 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-67d2150793b5e7": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Volantis 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据 SambaNova 官方公告；未补写基金背景或完整投资组合。",
+      "summary": "SambaNova 官方 Series F 公告将 Volantis 列为新进或既有投资者之一。本档只记录该项公开融资披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "SambaNova Series F 首次交割公告将 Volantis 列为新进或既有投资方。",
+          "source_id": "PROFILE-80786a62ca79255b034b"
+        },
         {
           "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投（新进或既有） · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dbf8259066547c8e"
@@ -90388,6 +90567,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-80786a62ca79255b034b",
+          "source_url": "https://sambanova.ai/press/sambanova-completes-first-close-of-1b-financing-at-11b-valuation",
+          "source_title": "SambaNova Completes First Close of $1B Financing at $11B Valuation",
+          "source_content_hash": "eaeb86bb429d9c4cbdc548584800488bc4be3743ea8669133aa48236930595e3",
+          "quote": "ital, Intel Capital, Kabila Capital, QFO Capital, Qatar Investment Authority (QIA), Vista Equity Partners and Volantis. “SambaNova’s platform is differentiated, built for a market where inference has become foundational to enterprise and industry transformation,” said Martín Escobari, Co-President and Head of Global Growth Equity at Gener",
+          "quote_hash": "50b0fb9e64fec54a936b277eb80dc47b10a3db650657adc497a061f89d1adbb8"
+        },
         {
           "source_id": "FISRC-dbf8259066547c8e",
           "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
@@ -90397,7 +90584,11 @@
           "quote_hash": "81c4c8d52992fd6b115c600c10965e767672391c086bc6cdf57418129f971340"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-76afaf49d81e4c": {
       "summary": "融资库中的“上海知识产权基金”与上市公司公告披露的上海知识产权基金相对应；其由上海科创集团全资子公司持股30%并与社会资本共同设立。融资披露还列明其参与智推时代天使轮。母集团及管理体系数据不代表该单只基金规模，整轮融资总额不等于本基金出资额。",
@@ -91756,14 +91947,25 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-5bac231c026309": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Vanguard 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "机构性质来自 Vanguard 官网；参投关系来自 Norm Ai 官方公告，未确认具体投资主体部门。",
+      "summary": "Vanguard 官网将自身描述为投资管理公司；Norm Ai 官方 Series C 公告将 Vanguard 列为参与方。本档只记录该披露，不推断 Vanguard 通过何种内部基金或部门出资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "投资管理公司",
+          "source_id": "PROFILE-1c867ffe4ad1761b057e"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Norm Ai 官方 Series C 公告将 Vanguard 列为参与方。",
+          "source_id": "PROFILE-bb2cc580b7789de5881e"
+        },
         {
           "description": "融资来源记录：Nomos Ai Inc. · C轮 · 2026-07-07 · 本轮参投 · 1.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1b05d1dc5cb45a7b"
@@ -91775,6 +91977,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-1c867ffe4ad1761b057e",
+          "source_url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/who-we-are/facts-and-figures.html",
+          "source_title": "Vanguard by the numbers | Vanguard",
+          "source_content_hash": "77b55a17aff34f407f628424f10b9ee940f87b17ded8eb7c5e0f9992be5cda51",
+          "quote": "Vanguard is one of the world's most respected investment management companies, offering a broad selection of investments, advice, retirement services, and insights to individual investors, institutions, and financial professionals.",
+          "quote_hash": "33953ca140c36ed632baa52b30cb1d79743bc02f3145a2a703c4cb40d1b13fda"
+        },
+        {
+          "source_id": "PROFILE-bb2cc580b7789de5881e",
+          "source_url": "https://www.norm.ai/resources/norm-ai-raises-20-million-at-a-1-2-billion-valuation",
+          "source_title": "Norm Ai Raises $120 Million at a $1.2 Billion Valuation Led by Khosla Ventures | Norm Ai",
+          "source_content_hash": "2692ed592e66fd725893ff7d334d4e61574d7ba42e05a40010458db644209a60",
+          "quote": "Blackstone, Bain Capital Ventures (BCV), Craft Ventures, Coatue, Vanguard, New York Life, TIAA",
+          "quote_hash": "be311d27d8ab1f20403fcd4cab91a63a512a059c47ad46ec7c939215bc9fd919"
+        },
         {
           "source_id": "FISRC-1b05d1dc5cb45a7b",
           "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
@@ -91792,7 +92010,11 @@
           "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-a2840a2c1b96c4": {
       "summary": "Version One Ventures 是一家投资北美早期创业公司的风险投资机构，公开简介称其十余年来投资了 100 多家公司，重点寻找在新兴领域创造新市场的使命驱动型创始人。创始合伙人 Boris Wertz 曾创业并运营被 AbeBooks 收购的线上书籍市场；合伙人 Angela Tran 具工程训练背景，曾参与创办 Insight Data Science。",
@@ -91903,16 +92125,16 @@
       "last_verified_at": "2026-09-27"
     },
     "INV-66dca067344601": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "巢生资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据投资界报道；未将其扩展为完整投资组合。",
+      "summary": "投资界关于贻如科技 A 轮融资的报道将巢生资本列为参投机构。本档只记录该项公开融资披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：贻如 · A轮 · 2026-07-06 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "贻如科技 A 轮融资报道将巢生资本列为参投机构。",
           "source_id": "FISRC-320ae1ce12e8452e"
         }
       ],
@@ -91921,13 +92143,17 @@
         {
           "source_id": "FISRC-320ae1ce12e8452e",
           "source_url": "https://news.pedaily.cn/202607/565881.shtml",
-          "source_title": "「贻如科技」完成超亿元A轮融资，AI驱动生物基皮革加速产业化",
-          "source_content_hash": "7c21e03d610b0cdf",
-          "quote": "本轮融资由 鄂尔多斯集团与和达金服共同领投，巢生资本跟投 ，易凯资本担任本轮融资的独 家财务顾问。",
-          "quote_hash": "79fe080b4bf82fc77f014172cd78830f3ffa9b152a8e0f85ad048d4a3b1ae9f7"
+          "source_title": "「贻如科技」完成超亿元A轮融资，AI驱动生物基皮革加速产业化_投资界",
+          "source_content_hash": "3d2eb7812f26f6e960f6377b6b75e75ee20e4d31e14ce3f063725a30187a3b06",
+          "quote": "险，建议进一步评估其长期发展潜力与市场竞争力。 投资界（ID：pedaily2012）7月6日消息，贻如科技（杭州）有限公司（以下简称“贻如”）今日宣布 完成超亿元A轮融资 。本轮融资由 鄂尔多斯集团与和达金服共同领投，巢生资本跟投 ，易凯资本担任本轮融资的独 家财务顾问。本轮融资募集资金将主要用于推动公司商业化开拓与产能建设，并依托AI技术加速生物基皮革的技术革新与产品迭代。 成立于2021年，贻如致力于将尖端合成生物技术与先进材料改性科学相结合，并以AI技术贯穿研发与生产全链路，创造以生物基皮革为代表的新一代创新生物基材料，让大众消费品所需的高性能材料从石油基走向生物基。 贻如× 安踏 骜杰系列运动鞋 公司围绕真皮与人造革两类不同场景进行差异化产品布局： Mulkol",
+          "quote_hash": "325873e4b9ac72bef2958cfff3b9414add64a4bba1722d28b844dc1f6370b10d"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-5e2948920cf85d": {
       "profile_type": "organization",
@@ -93260,16 +93486,16 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-6664bba6bbecf3": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "贪玩游戏 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据投资界报道；其投资主体和其他投资活动未核实。",
+      "summary": "投资界关于三启万物融资的报道将贪玩游戏列入投资方。本档只记录该项融资披露，不据此将其描述为专业风险投资机构。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 本轮参投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "三启万物融资报道将贪玩游戏列为投资方。",
           "source_id": "FISRC-a4dbd49c64cb5834"
         }
       ],
@@ -93278,13 +93504,17 @@
         {
           "source_id": "FISRC-a4dbd49c64cb5834",
           "source_url": "https://news.pedaily.cn/202607/565779.shtml",
-          "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
-          "source_content_hash": "3e7e05417d6a96b1",
-          "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
-          "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+          "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究_投资界",
+          "source_content_hash": "cd6a6c847f8ea057a91e873b5a152cb0aec8bddcb7ade9eaae1ba409f932fd40",
+          "quote": "投资界（ID：pedaily2012）7月2日消息，北京三启万物科技有限公司（以下简称“ VAST（三启万物） ”）本月再次完成 超 10 亿人民币 A3 战略轮融资 。 本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。老股东 渶策资本、元生资本 持续追投。 近半年来，公司陆续发布行业领先的 3D 大模型 Tripo H3.1、Tripo P1.0，上线 8K 贴图、智能拆分Segmentation V2 等新算法，在盲测投票评出的 AI 3D 模型榜单中稳居全球第一。同时，公司发布了世界模型项",
+          "quote_hash": "cf329b26fb938359b24dcc5b14409e90a58deb1283f31784e601b58c7f4e3a2c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-9c073e7e389a07": {
       "profile_type": "organization",
@@ -96831,16 +97061,16 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-663d340291a81f": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "九智资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据 IT之家报道；未将单笔跟投扩展为完整投资组合。",
+      "summary": "IT之家关于凌川科技 A+ 轮扩展融资的报道将九智资本列为持续追加的老股东。本档只记录该项公开披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：凌川科技 · A+轮扩展 · 2026-06-25 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "凌川科技 A+ 轮扩展融资报道将九智资本列为持续追加的老股东。",
           "source_id": "FISRC-a39c77bc80e12506"
         }
       ],
@@ -96849,13 +97079,17 @@
         {
           "source_id": "FISRC-a39c77bc80e12506",
           "source_url": "https://www.ithome.com/0/968/289.htm",
-          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
-          "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
-          "quote": "老股东顺禧基金、九智资本持续追加投资。",
-          "quote_hash": "fef81c98aba286c10677549beb81092f9e5e3d2751f5d6e5e95d63db85de7eae"
+          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片 - IT之家",
+          "source_content_hash": "0c8aa3abd9f50695779734372412758ca59ea2ce3798b73b2ce6987d17d7a21f",
+          "quote": "科技”近日完成数亿元 A+ 轮融资 ，本轮由啟赋资本领投，产业投资方新国都、投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资，老股东顺禧基金、九智资本持续追加投资。 项目落地北京亦庄，获亦庄国投重点支持，本轮融资将主要用于下一代芯片研发、现有产品 SL200 的量产扩产及海外市场拓展。 ▲ SL200 视频智能处理器 IT之家注：“凌川科技”成立于 2024 年 3 月，由北京市人工智能基金与快手集团共同发起设立，前身为快手集团的异构计算与芯片事业部，是一家以硬件为基础的软件公司，专注于智能视频与生成式视频等多模态大模型的底层算力。团队在快手内部自研的 SL200 芯片智能视频 SOC 芯片，持",
+          "quote_hash": "d551cee17235b1299bf5dc058232099d9529be7fd9f194d23f6334b306e975a8"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-0cb1bcfbc43df6": {
       "profile_type": "unverified",
@@ -101969,30 +102203,45 @@
       "last_verified_at": "2026-09-27"
     },
     "INV-5cee98d72d3bac": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Cyberstarts 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "投资方向来自官网自述，参投案例分别由媒体报道及被投企业公告支持。",
+      "summary": "Cyberstarts 官网称其是网络安全公司的早期合作方；NewCore 与 Island 的融资披露均将 Cyberstarts 列为投资方。本档是有限案例记录。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述方向",
+          "value": "网络安全公司",
+          "source_id": "PROFILE-6619e61b7308da8b2110"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：NewCore · 种子轮 · 2026-06-15 · 本轮领投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "NewCore 种子轮报道将 Cyberstarts 列为领投方。",
           "source_id": "FISRC-9cc6124e644d0e3d"
         },
         {
-          "description": "融资来源记录：Island · 历史轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Island 官方 Series B 公告将 Cyberstarts 列为既有投资方。",
           "source_id": "FISRC-1bd8ed9d0103713f"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-6619e61b7308da8b2110",
+          "source_url": "https://www.cyberstarts.com/",
+          "source_title": "Cyberstarts",
+          "source_content_hash": "031f2a7c134953501ba5ec0c84554c344f539ce248b5b09ced5ab535aa853b48",
+          "quote": "We are the day one partner for industry-defining cybersecurity companies.",
+          "quote_hash": "890c803b5155f800fd4c4963833bc9f80da00b3237e5c1ecb1618ed59582ebd3"
+        },
+        {
           "source_id": "FISRC-9cc6124e644d0e3d",
           "source_url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities",
-          "source_title": "随着AI智能体成为员工，NewCore携6600万美元崭露头角，赋予它们身份",
-          "source_content_hash": "98de354d6535c1c7abae06ff78b7606f97de5cce232684ad9aa2380176c9e85e",
+          "source_title": "As AI agents become employees, NewCore emerges with $66M to give them identities | TechCrunch",
+          "source_content_hash": "c64b7aceff193601a3175ff3c87addfaea7e49a447f0023e365cbd1f724af1ae",
           "quote": "The seed round was led by cybersecurity-focused venture firm Cyberstarts",
           "quote_hash": "379f13d2b8078d7764c307de9486338626785ed1dc28c1f08ef3e9e80bf60ba7"
         },
@@ -102000,12 +102249,16 @@
           "source_id": "FISRC-1bd8ed9d0103713f",
           "source_url": "https://www.island.io/press/island-raises-115-million-in-series-b-funding-to-enable-massive-innovation-on-enterprise-browser",
           "source_title": "Island Raises $115 Million in Series B Funding for Enterprise Browser",
-          "source_content_hash": "9d350b613f03c9c2",
+          "source_content_hash": "0f912546270c122fad99c1bc4258e9e5e05b3401b0576a585d4c160062e32158",
           "quote": "backed by leading venture funds – Insight Partners, Sequoia Capital, Cyberstarts and Stripes",
           "quote_hash": "cbbe2cac823e1aa487a5fc545ae9c49aaabe81ae14c7ed6f1b774888596f2b28"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-12fb1b19a5c2ae": {
       "profile_type": "organization",
@@ -104333,14 +104586,18 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-6815b0bb3b9d40": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Four Rivers 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据 Factorial 官方公告；不据此推断完整投资组合。",
+      "summary": "Factorial 官方融资公告将 Four Rivers 列为其 Series D 参与方。本档只记录该项公开披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Factorial 官方 Series D 公告将 Four Rivers 列为参与投资的机构。",
+          "source_id": "PROFILE-34a2a2402aefe80d6301"
+        },
         {
           "description": "融资来源记录：Factorial · D轮 · 2026-06-03 · 本轮参投 · 1.5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e9a8d571db654fd4"
@@ -104348,6 +104605,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-34a2a2402aefe80d6301",
+          "source_url": "https://factorial.es/blog/factorial-cierra-una-ronda-serie-d-150-millones-dolares-alcanza-valoracion-2500-millones/",
+          "source_title": "Factorial cierra una ronda Serie D de 150M$ y alcanza una valoración de 2.500 millones",
+          "source_content_hash": "13daa1ca8556a54e4069bd14c16118a1acaffc4eda9555f72ffecf4f30cf99ed",
+          "quote": "iza su primera inversión en capital (equity) en nuestra compañía, sumándose a otros inversores como Atomico y Four Rivers. Además de la ronda de capital, General Catalyst va a aportar hasta 540 millones de dólares adicionales a través de su Customer Value Fund . Esto eleva nuestro capital no dilutivo comprometido a más de 700 millones de",
+          "quote_hash": "79bed54f6f81619c6c9fed6521c6ba7f07a74c758bb95a0d89f4c937ac3bb470"
+        },
         {
           "source_id": "FISRC-e9a8d571db654fd4",
           "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
@@ -104357,7 +104622,11 @@
           "quote_hash": "114b77c16789092678fc784bbcd2ba7b7656bfc87d84213e020d5696b43e0fc6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-af03b0ba632217": {
       "profile_type": "unverified",
@@ -110959,16 +111228,16 @@
       "last_verified_at": "2026-09-28"
     },
     "INV-657124ed93f8b0": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "诺铁资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据投资界报道；不据此推断完整投资组合。",
+      "summary": "投资界融资报道将诺铁资本列为拓深科技新一轮融资的联合投资方。本档只记录该项公开披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：拓深科技 · 轮次未披露 · 2026-05-19 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "拓深科技新一轮融资报道将诺铁资本列为联合投资机构。",
           "source_id": "FISRC-1b3adf614ab55007"
         }
       ],
@@ -110977,13 +111246,17 @@
         {
           "source_id": "FISRC-1b3adf614ab55007",
           "source_url": "https://news.pedaily.cn/202605/564066.shtml",
-          "source_title": "拓深科技完成数亿元新一轮融资，深入布局算电协同赛道",
-          "source_content_hash": "f9d17aa55f30fbc9",
-          "quote": "本轮融资由 元璟资本、浙商创投、诺铁资本、东方嘉富、中信建投、上城资本、远至资本及老股东博将资本 继续追加投资等联合投资。",
-          "quote_hash": "fd8e6d4e04112c7e2791d613e0ea674a3ac7538a03d1983f71e57216ca8225da"
+          "source_title": "拓深科技完成数亿元新一轮融资，深入布局算电协同赛道_投资界",
+          "source_content_hash": "bced1d28686447a0bd200a1242ff320ba155e72a4828fcedd8a07cfc4863ff18",
+          "quote": "价值。 内容由AI生成，仅供参考 投资界（ID：pedaily2012）5月19日消息， 近期，AI电力数字化领军企业杭州拓深科技有限公司（以下简称“拓深科技”）完成 数亿元新一轮 融资。本轮融资由 元璟资本、浙商创投、诺铁资本、东方嘉富、中信建投、上城资本、远至资本及老股东博将资本 继续追加投资等联合投资。融资资金将主要用于AI电力数字化技术在日益发展的，以分布式、绿色能源为核心，以算力为驱动的新型电力系统中的研发和应用。 拓深科技成立于2015年，是一家专注于设备级AI电力数字化解决方案的高新技术企业。公司首创的AI电力数字化技术不仅可以实现设备安全管理、能耗管理、智能运维，并且为新能源的预测和高效精准调度提供支撑，大幅提高分布式能源的使用效率。随着人工智能与机器人技",
+          "quote_hash": "96a4d94b50fd8ed635350a54da9f01fceef1b1a1e09f805753e0226d3c3a6d63"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-b87bb5f70589f9": {
       "profile_type": "organization",
@@ -118930,24 +119203,24 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-5ba39343c33d5f": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "合肥产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "参投记录来自被投企业融资报道及投资行业媒体，完整基金信息未核实。",
+      "summary": "智象未来融资披露将合肥产投列为其投资方；投中网称该机构参与早期融资并在后续轮次继续跟投。本档只汇总公开融资案例，不补写未经确认的法定主体或完整背景。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：智象未来 · 轮次未披露 · 2026-04-16 · 本轮参投 · 5亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "智象未来融资报道披露合肥产投早期领投并在后续融资继续跟投。",
           "source_id": "FISRC-e34ca2608b11a237"
         },
         {
-          "description": "融资来源记录：智象未来 · 历史轮次未披露 · B轮参与机构。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "智象未来 B 轮融资公告列合肥产投为参与机构之一。",
           "source_id": "FISRC-9670ee7c1fec7480"
         },
         {
-          "description": "融资来源记录：智象未来 · 历史轮次未披露 · 老股东持续加注。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "智象未来 C 轮报道列合肥产投为持续加注的老股东。",
           "source_id": "FISRC-9d4811d701a7c9af"
         }
       ],
@@ -118957,7 +119230,7 @@
           "source_id": "FISRC-e34ca2608b11a237",
           "source_url": "https://www.chinaventure.com.cn/news/113-20260723-392410.html",
           "source_title": "首发｜超20家机构，投了一家“世界模型”独角兽 | 投中网",
-          "source_content_hash": "e4d815a9ef427515",
+          "source_content_hash": "c0e5123dfc0e32b748f2f60a6528a5fc25ec51bc5ef6a1a60b07b03626e715ce",
           "quote": "早在2024年，公司便获得由合肥产投、安徽省人工智能母基金领投的A轮融资，两家机构又在今年继续跟投；此外，在此前融资中，智象未来还引入了安徽省产业投资集团、兴泰集团、合肥高投。",
           "quote_hash": "fa31d9d1d4e32fba44ce5d30a1408ad17d843a6c77cc340d54a9aeb3ad5fe892"
         },
@@ -118965,20 +119238,24 @@
           "source_id": "FISRC-9670ee7c1fec7480",
           "source_url": "https://hfgxt.com.cn/index.php?a=show&c=content&id=3131",
           "source_title": "超5亿元融资！智象未来完成B轮融资-企业新闻-新闻资讯-合肥高新创业投资管理合伙企业（有限合伙）",
-          "source_content_hash": "9b3603000321e253",
+          "source_content_hash": "8bc3ef7257454ddb71599c7ea47d860aca24bd0cefa84c787bfa81851144b773",
           "quote": "4月15日，合肥高新区投资平台合肥高投投资企业智象未来（合肥）信息技术有限公司（简称“智象未来”）宣布完成超5亿元B轮融资，本轮融资由东方富海、峰华资本、安徽省产投、华安嘉业、合肥产投、兴泰创投、合肥高投等头部投资机构和国资机构联合参与。",
           "quote_hash": "de0c10abaf7f677dac65ec33c373785963c0a4250b2163affb6518bde3f24c4e"
         },
         {
           "source_id": "FISRC-9d4811d701a7c9af",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
-          "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
-          "source_content_hash": "e624d91e5d6eb536",
+          "source_title": "智象未来完成15亿元C轮融资，三个月融三轮_新浪财经_新浪网",
+          "source_content_hash": "bebe58667e5f3aeae2a4a4e36f1d033864a8fceed75edf0c6b2ecad346f0573d",
           "quote": "老股东 合肥产投、东方富海、金浦投资、金华金投、中哲创、财鑫资本 持续加注",
           "quote_hash": "b2f9ab57aa10cd02fbe1ea158d8e74af1c4a84f96d03a457f2d3958d7ad65d81"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-0ba005d43cff98": {
       "profile_type": "unverified",
@@ -130316,16 +130593,16 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-5e6896f202a52f": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "John Collison 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "人物身份由媒体报道消歧；参投关系由 MatX 官方公告及报道支持，不代表完整个人投资组合。",
+      "summary": "MatX 官方 Series B 页面将 Patrick 与 John Collison 列为参与者；TechCrunch 进一步将 John Collison 识别为 Stripe 联合创始人。本档仅覆盖 MatX 这一投资案例。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：MatX · B轮 · 2026-02-24 · 本轮参投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "MatX 官方 Series B 页面列 John Collison 为参与者。",
           "source_id": "FISRC-c6e81d3e611e6fe3"
         },
         {
@@ -130338,21 +130615,33 @@
         {
           "source_id": "FISRC-c6e81d3e611e6fe3",
           "source_url": "https://matx.com/research/series_b",
-          "source_title": "MatX One 与我们的 B 轮融资",
-          "source_content_hash": "2cff7bb3dd7cdd322441afbee191b44f945f92beebfc451f70a4eb2aa5e138c6",
-          "quote": "Participants include Spark Capital, Daniel Gross and Nat Friedman’s fund, Patrick and John Collison, Triatomic Capital, Harpoon Ventures, Andrej Karpathy, Dwarkesh Patel, and others.",
-          "quote_hash": "f9c420645022484a3cf7b40de0f2d9f7f6fb7a023bf4533cb6ea80cf33bd2b4a"
+          "source_title": "MatX One and our Series B | MatX",
+          "source_content_hash": "5e3b77e276dc8bbe9929f6045e00b94923e684e271149ca3403f4641ecbf53d4",
+          "quote": "Patrick and John Collison",
+          "quote_hash": "a70b7b8bee995d0448e166fa4ccfd2b5c33e862fb69ddcca90ae93d1a756eab0"
         },
         {
           "source_id": "FISRC-e80cfbcccb0ffdce",
           "source_url": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
-          "source_title": "Nvidia challenger AI chip startup MatX raised $500M",
-          "source_content_hash": "296df8014db458cc",
-          "quote": "Other investors in the round include Marvell Technology, NFDG, Spark Capital, and Stripe co-founders Patrick Collison and John Collison",
-          "quote_hash": "c0746d402cad00a6dadd4ea97d380a0318d92843bfe117ec98a40bef3be3e71d"
+          "source_title": "Nvidia challenger AI chip startup MatX raised $500M | TechCrunch",
+          "source_content_hash": "7de02dd69dc50d2c88d3d004f417a51cf76d6c02cea07501cf284e1cf2e1d681",
+          "quote": "Stripe co-founders Patrick Collison and John Collison",
+          "quote_hash": "c18019e81bdbad5eb367cc2ec2a7194272df2c95e951b527244223f5771f5641"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Stripe",
+          "title": "联合创始人",
+          "period": "未注明",
+          "description": "TechCrunch 将 John Collison 识别为 Stripe 联合创始人。",
+          "source_id": "FISRC-e80cfbcccb0ffdce"
+        }
+      ],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-18c1dea01ef3a6": {
       "profile_type": "unverified",
@@ -136493,25 +136782,48 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-6553738949423f": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "South Loop 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-12-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "基金阶段及官网品牌依据 South Loop 官方网站；参投关系依据 Empromptu 融资公告。",
+      "summary": "South Loop Ventures 官网自述其为专注种子前与种子轮的风险投资基金；Empromptu 官方融资公告将 South Loop 列为其预种子轮参与方。本档仅记录机构自述及该项披露。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述投资阶段",
+          "value": "Pre-seed 与 Seed",
+          "source_id": "PROFILE-d561fe89b30f3987e7b7"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Empromptu · 预种子轮 · 2025-12-09 · 本轮参投 · $2M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-79832d8eb3d1b153"
+          "description": "Empromptu 融资公告将 South Loop 列为预种子轮参与方。",
+          "source_id": "PROFILE-544bd512a43f728a1691"
         },
         {
           "description": "融资来源记录：Empromptu · 预种子轮 · 2025-12-09 · 本轮参投 · $2M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-99e63c0e1fbdfa5c"
+          "source_id": "FISRC-79832d8eb3d1b153"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-d561fe89b30f3987e7b7",
+          "source_url": "https://www.southloop.vc/about",
+          "source_title": "Our Team",
+          "source_content_hash": "ec00987eff681c62fdb10911201179fae077b43c528b135170e575b16a4c848a",
+          "quote": "Our Team Home Portfolio About Contact About We believe in the power of innovation to improve the world. South Loop Ventures was built to confront the systemic failures that have long distorted how venture capital flows in America and to ensure everyone the opportunity to design a better world in which to live. We are our ancestors’",
+          "quote_hash": "1db5c13c819a8647026802b382ef817c681c183d1f1ac0d397a14e28250fd249"
+        },
+        {
+          "source_id": "PROFILE-544bd512a43f728a1691",
+          "source_url": "https://www.globenewswire.com/news-release/2025/12/09/3202464/0/en/Empromptu-Raises-2-Million-to-Launch-Fully-Self-Managing-AI-Context-the-First-Step-Toward-Artificial-General-Intelligence-AGI.html",
+          "source_title": "Empromptu Raises $2 Million to Launch Fully Self-Managing",
+          "source_content_hash": "d34eaa5e1c55b72105c02fd45eac3f6de4e67d5f248b4d6a22787a0c461a6c40",
+          "quote": "round was led by Precursor Ventures, with participation from Alumni Ventures, Founders Edge, Rogue Women VC, South Loop, and Zeal Capital in addition to angel investor Edith Harbaugh, Co-founder of LaunchDarkly. A New Milestone: AI That Improves Itself Empromptu's latest release introduces three new innovations for the enterprise: Infini",
+          "quote_hash": "56debf64f06262b57cd7de07870c7857b5ea1b01b269f674260587a598c2de97"
+        },
         {
           "source_id": "FISRC-79832d8eb3d1b153",
           "source_url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/",
@@ -136529,7 +136841,11 @@
           "quote_hash": "51accbd697c3fc2966ad47f6d7ed7f3145da46cc21f2e1c3e5dae993a82e2bab"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-8bbbad60fbc99e": {
       "profile_type": "organization",
@@ -160259,16 +160575,16 @@
       "coverage_note": "官方信息页主体是重庆渝富高质产业母基金私募股权投资基金管理有限公司；本库的投资方简称可能指向其所管理的母基金，故档案明确区分管理公司、重庆产业投资母基金及在管基金规模。机构数据页没有标注更新时间；945.21亿元为页面自述值。团队当前职务照录页面“现任”表述但注明未见更新时间。公开电话和邮箱属于渝富控股集团一般联系渠道，不是基金项目直投渠道。"
     },
     "INV-5cc3d939bd86fc": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "元禾原点 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "目前依据一项融资股东披露确认名称和投资机构属性。",
+      "summary": "投中网关于千觉机器人的融资报道将元禾原点列为其财务投资机构股东。本档仅记录该公开关系，未扩展为完整机构背景或组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：千觉机器人 · 历史轮次未披露 · 股东。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "千觉机器人融资报道将元禾原点列为财务投资机构股东。",
           "source_id": "FISRC-3a00c703054126cd"
         }
       ],
@@ -160277,13 +160593,17 @@
         {
           "source_id": "FISRC-3a00c703054126cd",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
-          "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
-          "source_content_hash": "3943ea5191d9c7eb",
+          "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 | 投中网",
+          "source_content_hash": "5a4b1879761bbaaff6343af02cf73fc667e8b203bc96bc343e1a95861c62ec37",
           "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
           "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-02",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-f36cca62e6e8c1": {
       "profile_type": "unverified",
@@ -172517,16 +172837,16 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-5c245bbb7df5e3": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Kevin Lin 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "人物身份和 Nothing 社区投资关系均依据 Nothing 官方页面。",
+      "summary": "Nothing 的社区投资公告将 Kevin Lin 列为 Twitch 联合创始人，并记载其参与 Nothing 社区投资。本档只覆盖该公开关联，不代表个人完整履历或投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Nothing · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Nothing 社区投资公告列 Kevin Lin 为社区投资参与者之一。",
           "source_id": "FISRC-f6fdd5655f9959e9"
         }
       ],
@@ -172536,12 +172856,24 @@
           "source_id": "FISRC-f6fdd5655f9959e9",
           "source_url": "https://nothing.tech/community-investment-3",
           "source_title": "Community Investment (3) | Nothing | UK",
-          "source_content_hash": "f9b71df0af1c23e2",
-          "quote": "along with leading tech entrepreneurs like Tony Fadell (Future Shape, inventor of the iPod), Casey Neistat, Nikhil Kamath (co-founder Zerodha), Kevin Lin (co-founder of Twitch), Steve Huffman (CEO of Reddit), Garry Tan (CEO of Y Combinator), and many others.",
-          "quote_hash": "17236f745d8e9a6cbfb9326b7ef9d8ccbd3ec2f099f5183bbd9bdf02fe9eb78c"
+          "source_content_hash": "f9b71df0af1c23e25e773bc2704cd67fdba0d550748055843da29e80f919c6a1",
+          "quote": "Kevin Lin (co-founder of Twitch)",
+          "quote_hash": "01ef33ba28254dd58af1c84f488e1dab07dbebc0552b7d74dea9847c712b2d63"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Twitch",
+          "title": "联合创始人",
+          "period": "未注明",
+          "description": "Nothing 官方社区投资页面称其为 Twitch 联合创始人。",
+          "source_id": "FISRC-f6fdd5655f9959e9"
+        }
+      ],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-b480d7f07e1433": {
       "profile_type": "person",

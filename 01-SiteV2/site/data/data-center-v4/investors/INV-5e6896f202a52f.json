@@ -153,16 +153,16 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "John Collison 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "人物身份由媒体报道消歧；参投关系由 MatX 官方公告及报道支持，不代表完整个人投资组合。",
+      "summary": "MatX 官方 Series B 页面将 Patrick 与 John Collison 列为参与者；TechCrunch 进一步将 John Collison 识别为 Stripe 联合创始人。本档仅覆盖 MatX 这一投资案例。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：MatX · B轮 · 2026-02-24 · 本轮参投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "MatX 官方 Series B 页面列 John Collison 为参与者。",
           "source_id": "FISRC-c6e81d3e611e6fe3"
         },
         {
@@ -175,21 +175,33 @@
         {
           "source_id": "FISRC-c6e81d3e611e6fe3",
           "source_url": "https://matx.com/research/series_b",
-          "source_title": "MatX One 与我们的 B 轮融资",
-          "source_content_hash": "2cff7bb3dd7cdd322441afbee191b44f945f92beebfc451f70a4eb2aa5e138c6",
-          "quote": "Participants include Spark Capital, Daniel Gross and Nat Friedman’s fund, Patrick and John Collison, Triatomic Capital, Harpoon Ventures, Andrej Karpathy, Dwarkesh Patel, and others.",
-          "quote_hash": "f9c420645022484a3cf7b40de0f2d9f7f6fb7a023bf4533cb6ea80cf33bd2b4a"
+          "source_title": "MatX One and our Series B | MatX",
+          "source_content_hash": "5e3b77e276dc8bbe9929f6045e00b94923e684e271149ca3403f4641ecbf53d4",
+          "quote": "Patrick and John Collison",
+          "quote_hash": "a70b7b8bee995d0448e166fa4ccfd2b5c33e862fb69ddcca90ae93d1a756eab0"
         },
         {
           "source_id": "FISRC-e80cfbcccb0ffdce",
           "source_url": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
-          "source_title": "Nvidia challenger AI chip startup MatX raised $500M",
-          "source_content_hash": "296df8014db458cc",
-          "quote": "Other investors in the round include Marvell Technology, NFDG, Spark Capital, and Stripe co-founders Patrick Collison and John Collison",
-          "quote_hash": "c0746d402cad00a6dadd4ea97d380a0318d92843bfe117ec98a40bef3be3e71d"
+          "source_title": "Nvidia challenger AI chip startup MatX raised $500M | TechCrunch",
+          "source_content_hash": "7de02dd69dc50d2c88d3d004f417a51cf76d6c02cea07501cf284e1cf2e1d681",
+          "quote": "Stripe co-founders Patrick Collison and John Collison",
+          "quote_hash": "c18019e81bdbad5eb367cc2ec2a7194272df2c95e951b527244223f5771f5641"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Stripe",
+          "title": "联合创始人",
+          "period": "未注明",
+          "description": "TechCrunch 将 John Collison 识别为 Stripe 联合创始人。",
+          "source_id": "FISRC-e80cfbcccb0ffdce"
+        }
+      ],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

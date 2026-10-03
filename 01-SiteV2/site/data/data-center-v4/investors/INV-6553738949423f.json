@@ -153,25 +153,48 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "South Loop 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-12-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "基金阶段及官网品牌依据 South Loop 官方网站；参投关系依据 Empromptu 融资公告。",
+      "summary": "South Loop Ventures 官网自述其为专注种子前与种子轮的风险投资基金；Empromptu 官方融资公告将 South Loop 列为其预种子轮参与方。本档仅记录机构自述及该项披露。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述投资阶段",
+          "value": "Pre-seed 与 Seed",
+          "source_id": "PROFILE-d561fe89b30f3987e7b7"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Empromptu · 预种子轮 · 2025-12-09 · 本轮参投 · $2M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-79832d8eb3d1b153"
+          "description": "Empromptu 融资公告将 South Loop 列为预种子轮参与方。",
+          "source_id": "PROFILE-544bd512a43f728a1691"
         },
         {
           "description": "融资来源记录：Empromptu · 预种子轮 · 2025-12-09 · 本轮参投 · $2M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-99e63c0e1fbdfa5c"
+          "source_id": "FISRC-79832d8eb3d1b153"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-d561fe89b30f3987e7b7",
+          "source_url": "https://www.southloop.vc/about",
+          "source_title": "Our Team",
+          "source_content_hash": "ec00987eff681c62fdb10911201179fae077b43c528b135170e575b16a4c848a",
+          "quote": "Our Team Home Portfolio About Contact About We believe in the power of innovation to improve the world. South Loop Ventures was built to confront the systemic failures that have long distorted how venture capital flows in America and to ensure everyone the opportunity to design a better world in which to live. We are our ancestors’",
+          "quote_hash": "1db5c13c819a8647026802b382ef817c681c183d1f1ac0d397a14e28250fd249"
+        },
+        {
+          "source_id": "PROFILE-544bd512a43f728a1691",
+          "source_url": "https://www.globenewswire.com/news-release/2025/12/09/3202464/0/en/Empromptu-Raises-2-Million-to-Launch-Fully-Self-Managing-AI-Context-the-First-Step-Toward-Artificial-General-Intelligence-AGI.html",
+          "source_title": "Empromptu Raises $2 Million to Launch Fully Self-Managing",
+          "source_content_hash": "d34eaa5e1c55b72105c02fd45eac3f6de4e67d5f248b4d6a22787a0c461a6c40",
+          "quote": "round was led by Precursor Ventures, with participation from Alumni Ventures, Founders Edge, Rogue Women VC, South Loop, and Zeal Capital in addition to angel investor Edith Harbaugh, Co-founder of LaunchDarkly. A New Milestone: AI That Improves Itself Empromptu's latest release introduces three new innovations for the enterprise: Infini",
+          "quote_hash": "56debf64f06262b57cd7de07870c7857b5ea1b01b269f674260587a598c2de97"
+        },
         {
           "source_id": "FISRC-79832d8eb3d1b153",
           "source_url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/",
@@ -189,7 +212,11 @@
           "quote_hash": "51accbd697c3fc2966ad47f6d7ed7f3145da46cc21f2e1c3e5dae993a82e2bab"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
