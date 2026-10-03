@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Maza Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Maza Ventures 官网称其希望成为技术团队的首位支票投资人，关注 AI、Agentic SaaS、企业软件、先进计算、生物科技与机器人等方向。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "首笔支票 / 早期",
+          "source_id": "PROFILE-0e3503-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "AI、Agentic SaaS、企业软件、先进计算、生物科技、机器人",
+          "source_id": "PROFILE-0e3503-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +160,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-0e3503-1",
+          "source_url": "https://maza.vc/",
+          "source_title": "Maza Ventures",
+          "source_content_hash": "410cb9ae9b97d32faa034ac9058ab59f348471bbb38385b3733581e47766daaa",
+          "quote": "We want to be your first check. We don’t care about hype or playing the VC game. We care about building places where real builders can do their best work. That’s why we back technical teams solving global problems, building Artificial Intelligence, Agentic SaaS, Enterprise Software, Advanced Computing, BioTech, or Robotics.",
+          "quote_hash": "0866fd57ccd95473e31945c216a80d2554ff0a4972bd08743b8a164bc9aad9cf"
+        },
         {
           "source_id": "FISRC-9e1446cb9cb3e95e",
           "source_url": "https://waya.media/sinai-ai-raises-usd-1-45m-pre-seed-to-turn-books-into-ai-powered-experiences/",
@@ -161,7 +186,7 @@
           "quote_hash": "77a70bb3a2725a51b4d51f7e35d324ee64367d6a4351cadd7b0bd8e452aabe5d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

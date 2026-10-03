@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sofmedica Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "SofMedica Ventures 官网自述其为 SofMedica Group 成员，聚焦医疗健康及医疗技术创新。",
+      "facts": [
+        {
+          "field": "group_affiliation",
+          "label": "集团关系",
+          "value": "官网自述为 SofMedica Group 成员",
+          "source_id": "PROFILE-9984d4-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "医疗健康、医疗技术",
+          "source_id": "PROFILE-9984d4-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +160,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "集团关系与投资方向采用 SofMedica Ventures 官网自述口径。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-9984d4-1",
+          "source_url": "https://sofmedicaventures.com/",
+          "source_title": "SofMedica Ventures",
+          "source_content_hash": "c41f9673d48998c451bf9f3c594e7453d632d25c9bc00bc5381a3a7d0c91665e",
+          "quote": "As the newest visionary member of the SofMedica Group, we are unleashing the future of healthcare. Building on over 30 years of exceptional success, we &#x27;t re here to revolutionize medical technology and transform lives across Greece, Romania, Cyprus, Bulgaria, Hungary, Croatia, and beyond. Our Mission: Empowering Access and Innovation where it Happens We seek groundbreaking medical technologies harnessing the power of precision.",
+          "quote_hash": "a00aa703274419803f42f4c04c207adb2b20fb7be95e5a18477fcdf831b070ab"
+        },
         {
           "source_id": "FISRC-3290be19a3eb1c09",
           "source_url": "https://ggba.swiss/en/geneva-based-oramavr-raises-usd-4-5-million-to-scale-medical-xr-training-solutions/",
@@ -161,7 +186,7 @@
           "quote_hash": "45f4be8089f409c4b51ae83057d68378fc65f657a60c752d71e71655a4dd9cf0"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

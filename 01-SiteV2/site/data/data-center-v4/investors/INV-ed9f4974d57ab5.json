@@ -137,13 +137,34 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Z Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Z Venture Capital 官网称其为 LY Corporation 的企业风险投资部门，2021 年由 YJ Capital 与 LINE Ventures 合并成立，在日本、韩国、美国和东南亚投资。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "所属公司",
+          "value": "LY Corporation",
+          "source_id": "PROFILE-d57ab5-1"
+        },
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2021",
+          "source_id": "PROFILE-d57ab5-1"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "日本、韩国、美国、东南亚",
+          "source_id": "PROFILE-d57ab5-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "description": "ZVC 官网称其于 YJ Capital 与 LINE Ventures 合并后成立",
+          "source_id": "PROFILE-d57ab5-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：LinqAlpha · A轮 · 2026-07-02 · 本轮参投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -151,7 +172,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-d57ab5-1",
+          "source_url": "https://zvc.vc/en/about/",
+          "source_title": "Z Venture Capital",
+          "source_content_hash": "2465fc0ea70b9f8ba833e439ffdebdc90f1e2348aab55400ef6a9b578eeffcb1",
+          "quote": "Z Venture Capital (ZVC) serves as the corporate venture capital arm of LY Corporation. Established in 2021 through the merger of YJ Capital and LINE Ventures, ZVC is strategically positioned with offices in Tokyo, Seoul, and San Francisco. We actively invest across Japan, Korea, the United States, and Southeast Asia.",
+          "quote_hash": "f6faed96544eaa44229d34e271320deb638292fa686a7b3e03a5d91f6e228c9b"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
@@ -161,7 +198,7 @@
           "quote_hash": "d2d62a79730a04564e5e41e0d39b4b4bfbc18df7d57c420cce119a5346804bf0"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

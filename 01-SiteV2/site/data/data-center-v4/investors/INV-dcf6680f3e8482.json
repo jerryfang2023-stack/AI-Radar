@@ -121,13 +121,34 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Grove Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Grove Ventures 官网资料页列出其成立于 2017 年，总部位于以色列特拉维夫，并关注 Pre-Seed/Seed 至 Series A 阶段。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2017",
+          "source_id": "PROFILE-3e8482-1"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "以色列特拉维夫",
+          "source_id": "PROFILE-3e8482-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-Seed/Seed 至 Series A",
+          "source_id": "PROFILE-3e8482-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017",
+          "description": "Grove Ventures 官网资料页列示的成立年份",
+          "source_id": "PROFILE-3e8482-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Alice · 历史轮次未披露 · 既有投资者（本轮回归）。这是本库收录的披露案例，不代表完整投资组合。",
@@ -135,7 +156,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-3e8482-1",
+          "source_url": "https://www.grovevc.com/ai-info-page/",
+          "source_title": "Official information about Grove Ventures - Grove Ventures",
+          "source_content_hash": "c6014674532a49f7a0ad1dd00edb8c7b4020384d340a2f3dc8cc66feaeff1634",
+          "quote": "Founded: 2017 Headquarters: 121 Derech Menachem Begin, Azrieli Sarona Tower, 56th Floor, Tel Aviv-Yafo, 6701203, Israel Partners: Dov Moran, Lotan Levkowitz, Lior Handelsman, Renana Ashkenazi, Liat Koren Website: https://www.grovevc.com AUM : $500+ million Investment Stage: Pre Seed-Seed to Series A",
+          "quote_hash": "53aefcd8d6e457c8576670a22cc00982518f59f78d20a6ab1b12754a7ecca399"
+        },
         {
           "source_id": "FISRC-7f8e788eab384554",
           "source_url": "https://valueaddvc.com/blog/alice-ai-security-valuation-2026-140m-raise-pushes-it-near-1b",
@@ -145,7 +182,7 @@
           "quote_hash": "b7bab8ca83243fe88ae21f49ee2ba4bf472391655f731e15e339d8048c80418e"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

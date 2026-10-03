@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Craft Ventures Management 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Craft Ventures 官网将其团队描述为资深运营者与投资人，目标是帮助创始人建设公司。",
+      "facts": [
+        {
+          "field": "team_background",
+          "label": "团队背景",
+          "value": "资深运营者与投资人",
+          "source_id": "PROFILE-995531-1"
+        },
+        {
+          "field": "value_add",
+          "label": "投后支持",
+          "value": "帮助创始人建设公司",
+          "source_id": "PROFILE-995531-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +160,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-995531-1",
+          "source_url": "https://craftventures.com/",
+          "source_title": "Craft Ventures",
+          "source_content_hash": "3cfd5168cf3c63ec6d38b77c1f8efbdf4d9bb0dfcf4beaa39d3661dcb67067bb",
+          "quote": "We are a team of senior operators and investors with one goal: to help founders build great companies.",
+          "quote_hash": "361a0dbcda80525e26885e0a10ece300112d797d4c8e5cfda4c43b013db87fef"
+        },
         {
           "source_id": "FISRC-dcf45e1aac1af636",
           "source_url": "https://siliconangle.com/2026/10/01/ai-driven-law-firm-arceus-legal-raises-17m-to-move-beyond-contract-work/",
@@ -161,7 +186,7 @@
           "quote_hash": "16e82e23b4fe6222edf4f1fa3be8ff168135fa6e47540af34ed00b3390db238e"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

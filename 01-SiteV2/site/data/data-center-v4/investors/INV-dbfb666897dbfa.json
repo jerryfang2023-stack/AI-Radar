@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Lunar Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Lunar Ventures 官网称其投资 pre-revenue 阶段的技术团队，并在 500K 至 2M 支票区间领投；页面未说明该支票区间币种。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-revenue",
+          "source_id": "PROFILE-97dbfa-1"
+        },
+        {
+          "field": "check_size",
+          "label": "支票区间",
+          "value": "500K–2M（官网未注明币种）",
+          "source_id": "PROFILE-97dbfa-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +160,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-97dbfa-1",
+          "source_url": "https://www.lunar.vc/about",
+          "source_title": "Lunar Ventures",
+          "source_content_hash": "2a27623a9e1c10d9c034cfdfb896775a3f8a9038562b3b6b4fd549f294d46ac4",
+          "quote": "We invest pre-revenue & help turn science fiction into reality. How we partner with you Zero BS. Standard terms. Clear feedback. The whole Lunar team at your side as you build a great business. We lead rounds with checks from 500K to 2M",
+          "quote_hash": "c38cdd56a955cb92d779d8a4d485b3d20b147f6bbeb10c38e8881e891f0960a8"
+        },
         {
           "source_id": "FISRC-51e4efce7466f2fd",
           "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
@@ -161,7 +186,7 @@
           "quote_hash": "4254c68c7c5a2d6453724232835c1fd6c67ca1b6edb33c677d6078e4b398539a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

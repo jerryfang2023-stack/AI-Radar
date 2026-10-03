@@ -121,13 +121,34 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "+ND Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "+ND Capital 官网称该机构（原名 NanoDimension）成立于 2002 年，投资生命科学、物理科学与数据科学领域的突破性技术。",
+      "facts": [
+        {
+          "field": "former_name",
+          "label": "曾用名",
+          "value": "NanoDimension",
+          "source_id": "PROFILE-1b7f00-1"
+        },
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2002",
+          "source_id": "PROFILE-1b7f00-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "生命科学、物理科学、数据科学",
+          "source_id": "PROFILE-1b7f00-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2002",
+          "description": "+ND Capital 官网列示机构成立于 2002 年",
+          "source_id": "PROFILE-1b7f00-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：SiMa.ai · 历史轮次未披露 · 既有投资者，本轮继续参与。这是本库收录的披露案例，不代表完整投资组合。",
@@ -135,7 +156,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-1b7f00-1",
+          "source_url": "https://nd.capital/",
+          "source_title": "ND Capital &#8211; Investing in Disruptive Technologies",
+          "source_content_hash": "f053470bc79929141982a5554382a91e225fe66382562baa06c64c466f20f2ec",
+          "quote": "+ND Capital (f.k.a. NanoDimension) is a venture capital firm founded in 2002 that invests in disruptive technologies across the life, physical, and data sciences.",
+          "quote_hash": "43365dbf12d4e31fbaf4b0b1438ebd339f1563cddcec51fa7a036d1af1b75c8d"
+        },
         {
           "source_id": "FISRC-284ec16980778f24",
           "source_url": "https://www.cxodigitalpulse.com/physical-ai-company-sima-ai-raises-150-mn-in-series-c-round/",
@@ -145,7 +182,7 @@
           "quote_hash": "58c100fd471e1350d829e77117467236d5dbb132f5843d37304bbd3202a897fc"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

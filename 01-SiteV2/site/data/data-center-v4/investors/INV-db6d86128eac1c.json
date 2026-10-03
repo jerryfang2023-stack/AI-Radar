@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mayfield Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Mayfield 官网自述其为早期风险投资机构，投资 AI 公司，并支持创始人从创意阶段至 Series B。该页面以 Mayfield 品牌呈现，本档案不扩展其法律实体名称。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期，支持创始人从首个想法到 Series B",
+          "source_id": "PROFILE-8eac1c-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "AI",
+          "source_id": "PROFILE-8eac1c-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +160,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "任务名称为 Mayfield Capital，证据页使用 Mayfield 品牌；仅记录该官网品牌页的策略信息，不据此确认法律实体别名。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-8eac1c-1",
+          "source_url": "https://www.mayfield.com/feel-our-ethos/",
+          "source_title": "Feel Our Ethos",
+          "source_content_hash": "cbd5fd627cff155b4d1060d942cfecdb0ee65f466620d0243dc13c5ca68f86ec",
+          "quote": "We’re an early-stage venture firm investing $3 billion in AI companies, with 70% of investments at inception. For more than 55 years, we’ve been the first institutional investor for founders, from their first idea to Series B, and beyond.",
+          "quote_hash": "294e7ca10b75d294a85e5d5b28f5004a482db1395a949b10db2a87a55a163670"
+        },
         {
           "source_id": "FISRC-d47a3aba63bc33dc",
           "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
@@ -161,7 +186,7 @@
           "quote_hash": "f90e829fe93e832b560ff3f7bba134c64c69b4c77b33d2e3e364525da3629553"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

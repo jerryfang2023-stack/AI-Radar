@@ -137,13 +137,34 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "宁波人才发展基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "中国宁波网 2023 年报道，宁波市人才发展基金由宁波人才发展集团独资设立，发布时总规模 100 亿元，围绕智能制造、新材料、生物医药等领域设立行业子基金。",
+      "facts": [
+        {
+          "field": "fund_size_at_launch",
+          "label": "发布时规模",
+          "value": "100 亿元",
+          "source_id": "PROFILE-396b0e-1"
+        },
+        {
+          "field": "founding_entity",
+          "label": "设立主体",
+          "value": "宁波人才发展集团",
+          "source_id": "PROFILE-396b0e-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "子基金覆盖方向",
+          "value": "智能制造、新材料、生物医药",
+          "source_id": "PROFILE-396b0e-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-10-31",
+          "description": "宁波市人才发展基金正式亮相",
+          "source_id": "PROFILE-396b0e-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：秋水半导体 · 多轮融资 · 2026-05-29 · 本轮参投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
@@ -151,7 +172,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "规模和子基金安排均按 2023-10-31 报道的发布时口径记录，不代表当前未核实规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-396b0e-1",
+          "source_url": "https://news.cnnb.com.cn/system/2023/10/31/030537276.shtml",
+          "source_title": "百亿人才发展基金正式亮相 如何赋能宁波人才事业？-新闻中心-中国宁波网",
+          "source_content_hash": "64f05000826e810bf77bd5f0f18a3a7835efc7183a7366fab947422d7e96c80a",
+          "quote": "总规模100亿元的宁波市人才发展基金正式亮相。基金分别与农银国际、交银投资、康君资本3家合作机构签约成立目标总规模60亿元的行业子基金，覆盖智能制造、新材料、生物医药等领域。 宁波市人才发展基金由宁波人才发展集团独资设立。",
+          "quote_hash": "22ec13d859dd8a643c5a0d3c6f2cbe0ea4222dfabb80afa0aa569d82b0f761a9"
+        },
         {
           "source_id": "FISRC-ed5e30c1c99002a5",
           "source_url": "https://cn.chinadaily.com.cn/a/202605/29/WS6a195d2aa310942cc49af151.html",
@@ -161,7 +198,7 @@
           "quote_hash": "b297133589d2692c52f20307da5ffbe714acd08fbae378784433c98ef1234f31"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

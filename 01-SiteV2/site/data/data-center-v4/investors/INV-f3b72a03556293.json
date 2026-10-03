@@ -121,12 +121,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Acacia Venture Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Acacia Venture Capital Partners 官网称其与早期团队合作，从创立阶段建设 AI 原生与技术驱动型公司。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期 / 创立阶段",
+          "source_id": "PROFILE-556293-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "AI 原生与技术驱动型企业",
+          "source_id": "PROFILE-556293-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,7 +144,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-556293-1",
+          "source_url": "https://acaciainvest.com/",
+          "source_title": "Acacia Venture Capital Partners",
+          "source_content_hash": "65bfe8b0b532e1c30231878ad3f60daf8af59e38aa5e2144f2af900da1620787",
+          "quote": "we partner with exceptional early-stage teams to build category-defining, AI-native and technology-driven businesses from inception.",
+          "quote_hash": "ca472fe81a2ed720798b16462b6936a5f8066403d51454b330fb1ac7ae568c2b"
+        },
         {
           "source_id": "FISRC-a6233a9ab76850de",
           "source_url": "https://multiples.vc/private-comps/bland-ai",
@@ -145,7 +170,7 @@
           "quote_hash": "9c2b2a90614757a548bd0a81d0f587f61b55f459be760bb3cf580b658cde6bab"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

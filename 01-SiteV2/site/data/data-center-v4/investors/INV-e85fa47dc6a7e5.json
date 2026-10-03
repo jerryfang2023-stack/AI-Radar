@@ -138,12 +138,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alkeon Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Alkeon Capital 官网称其拥有 20 多年投资经验，可在企业不同发展阶段投资；其风险投资组合包含 50 多家非上市公司。",
+      "facts": [
+        {
+          "field": "experience",
+          "label": "投资经验",
+          "value": "官网称 20 多年",
+          "source_id": "PROFILE-c6a7e5-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "覆盖企业全生命周期",
+          "source_id": "PROFILE-c6a7e5-1"
+        },
+        {
+          "field": "vc_portfolio",
+          "label": "风险投资组合",
+          "value": "官网称包含 50 多家非上市公司",
+          "source_id": "PROFILE-c6a7e5-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -152,7 +167,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-c6a7e5-1",
+          "source_url": "https://www.alkeoncapital.com/",
+          "source_title": "Alkeon Capital Management",
+          "source_content_hash": "f39771265f7aec82756c62d9f56b424af98ced59e1c650fea5a0b25f8980cd01",
+          "quote": "Building on 20+ years of experience, our platform has the flexibility to invest in transformative companies throughout their lifecycle. VC Portfolio: Includes 50+ private companies across multiple stages and industries.",
+          "quote_hash": "06fc7c936c13a4ad45837694970fd9ea79fb9c2008c521a74bb84486a329694d"
+        },
         {
           "source_id": "FISRC-92bdc04603fa5ff2",
           "source_url": "https://multiples.vc/private-comps/suno",
@@ -162,7 +193,7 @@
           "quote_hash": "a7a352f54d1103d662e3fd57611cc758f02f89ed829f5fc5a399cb020ec64fa6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

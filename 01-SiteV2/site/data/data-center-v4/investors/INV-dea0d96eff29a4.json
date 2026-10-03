@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cosmic Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Cosmic Venture Partners 官网将其定位为总部在美国、投资新一代早期创业公司的机构。",
+      "facts": [
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "美国",
+          "source_id": "PROFILE-ff29a4-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期",
+          "source_id": "PROFILE-ff29a4-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +160,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-ff29a4-1",
+          "source_url": "https://www.cosmicvp.com/",
+          "source_title": "Cosmic • About",
+          "source_content_hash": "26fef0cc4754394e0782bfcd082986c9c1d8d19af87e90e31d0fe726f12065b1",
+          "quote": "Based in the US Investing in next-gen early-stage startups",
+          "quote_hash": "a0c1b91b36f53aecd458b39258566e617b8028b8caabc72f34ee285ca8cc0f1a"
+        },
         {
           "source_id": "FISRC-2a587e714925b882",
           "source_url": "https://www.morningstar.com/news/business-wire/20260728282605/throne-science-maker-of-smart-toilet-sensor-announces-10-million-series-a-fundraise",
@@ -161,7 +186,7 @@
           "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

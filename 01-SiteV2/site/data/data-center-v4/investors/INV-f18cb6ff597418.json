@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Capria Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Capria Ventures 官网称其为全球南方科技企业提供资本与国际协作，支持建立可规模化、可盈利的业务。",
+      "facts": [
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "全球南方",
+          "source_id": "PROFILE-597418-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "科技企业",
+          "source_id": "PROFILE-597418-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +160,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-597418-1",
+          "source_url": "https://capria.vc/about/",
+          "source_title": "About Capria Ventures",
+          "source_content_hash": "742252132b95cdb188bb4a1407ca7d5647f54a17c08450eb2cb53b8adde7734a",
+          "quote": "We provide capital and global collaboration to tech companies in the Global South building scalable, profitable businesses that improve the lives of hundreds of millions.",
+          "quote_hash": "c3120d4d1ccc7d257b4d0650f998c3671d20677a314ce953a672a4f1d8eaa659"
+        },
         {
           "source_id": "FISRC-49cedc22c0b6ea4e",
           "source_url": "https://www.thesaasnews.com/news/thirdai-automation-raises-3m-seed-round/",
@@ -161,7 +186,7 @@
           "quote_hash": "2abe713d318778a8a7d15e50bc7774a3ea63d9b6525b327d1a8ee7a0c3d341f3"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
