@@ -14,9 +14,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const script = name => `agent-workflow/tools/${name}.mjs`;
 const site = name => `01-SiteV2/site/scripts/${name}.mjs`;
 
-export function financingExtractionScope(intake, collection) {
+export function financingExtractionScope(intake, collection, supplemental = {}) {
   const raws = new Map((intake?.raw_documents || []).map(raw => [raw.raw_id, raw]));
-  const ids = [...new Set(collection?.raw_ids || [])];
+  const ids = [...new Set([...(collection?.raw_ids || []), ...(supplemental?.raw_ids || [])])];
   if (ids.some(id => !raws.get(id)?.source_artifact_id)) throw new Error('financing_extraction_source_missing');
   return { source_refs: [...new Set(ids.map(id => raws.get(id).source_artifact_id))] };
 }
@@ -52,6 +52,7 @@ export function productionPlan(date, directory, { extract = true } = {}) {
     ], outputs: ['01-SiteV2/site/data/funding-insights-v1.json'] },
     { id: 'financing_tags', commands: [
       ['agent-workflow/financing/classify.mjs', '--write=true'],
+      [site('build-funding-insights-frontstage')],
       ['agent-workflow/financing/catalog.mjs'],
     ], outputs: ['01-SiteV2/site/data/financing-catalog-v1.json'] },
     { id: 'release_gate', commands: [
@@ -88,7 +89,9 @@ async function main() {
     if (!intake?.raw_documents?.length) {
       write(path.join(directory, 'publication.json'), { version: config.version, date, status: collection.counts.pending ? 'pending_verification' : 'no_new_financing', counts: collection.counts }); return;
     }
-    const extractionScope = financingExtractionScope(intake, collection);
+    const supplemental = read(path.join(directory, 'supplemental.json'));
+    if (supplemental && (supplemental.date !== date || supplemental.version !== 'FINANCING-SUPPLEMENT-1' || supplemental.accepted !== true)) throw new Error('accepted_financing_supplement_required');
+    const extractionScope = financingExtractionScope(intake, collection, supplemental);
     const scopeFile = path.join(directory, 'extraction-scope.json');
     write(scopeFile, extractionScope);
     const plans = productionPlan(date, directory, { extract: extractionScope.source_refs.length > 0 });

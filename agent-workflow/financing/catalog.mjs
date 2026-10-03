@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { taxonomy, classificationInput, classificationProblems, displayClassification } from './taxonomy.mjs';
 import { read,write } from './state.mjs';
 import { buildFundingSubjects } from './subjects.mjs';
+import { buildFundingInsightsFrontstage } from '../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs';
 
 export function publicationHold(card, review) {
   if (!review) return null;
@@ -17,7 +18,9 @@ export function publicationHold(card, review) {
 }
 
 export function buildFinancingCatalog(root) {
-  const source=read(path.join(root,'01-SiteV2/site/data/funding-insights-v1.json'));
+  // Classify against the complete reviewed research set. The public insights
+  // projection intentionally omits pending and excluded scope decisions.
+  const source=buildFundingInsightsFrontstage(root);
   const registry=read(path.join(root,'01-SiteV2/content/12-applications/financing-taxonomy/decisions.json'));
   if(!source || registry?.version!==taxonomy.version) throw new Error('financing_catalog_inputs_missing');
   const funding=path.join(root,'01-SiteV2/content/12-applications/funding-insights');

@@ -26333,7 +26333,160 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-03T00:39:31.599Z"
+    },
+    "EV-87d5c0b6feae5c57": {
+      "id": "EV-87d5c0b6feae5c57",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business",
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "rationale": "doxx.net 主营面向个人、企业与智能体的隐私安全网络平台，属企业网络安全风控。",
+      "input_hash": "882e139590b6ec368218c3d5d8ed4e0a28a035113a0462019235164fe6da4893",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e94be4fcbb396d33",
+          "quote": "doxx.net is the Agentic Defined Networking company, providing privacy-by-architecture networking for individuals, enterprises, and their agents."
+        },
+        {
+          "source_id": "FISRC-55e69e049cb9ed2b",
+          "quote": "doxx.net, a networking startup providing a privacy and security platform for people and AI agents"
+        },
+        {
+          "source_id": "FISRC-e94be4fcbb396d33",
+          "quote": "doxx.net, founded by Barrett Lyon, best known for pioneering the DDoS defense industry with Prolexic (acquired by Akamai) and other successful security and networking companies, today launched the open beta of its Agentic Defined Networking (ADN) platform, which lets people and their agents create their own private, secure networks, communicate with no servers in the middle, and get started with no personal information required."
+        },
+        {
+          "source_id": "FISRC-e94be4fcbb396d33",
+          "quote": "Agentic Defined Networking. Allow your agents to set up networks for you, call you, chat with you, lease your own IP addresses, and configure your firewall."
+        },
+        {
+          "source_id": "FISRC-e94be4fcbb396d33",
+          "quote": "DNS Protection combines 30 filter lists with a neural network that catches threats no static list has seen, automatically protecting you and your agents from malicious phishing and malware sites."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T04:23:05.458Z"
+    },
+    "EV-42b6bbea76f4c8cc": {
+      "id": "EV-42b6bbea76f4c8cc",
+      "scope": "review",
+      "exclusion_reason": "",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "融资已核实；公司自述主营为透明药品福利管理，AI审计仍用将来时描述，AI是否构成主营交付需进一步核验。",
+      "input_hash": "aa937f610cd10261ddde25958af848c574c2f390fe61482b685d93399a5527c7",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1dc6442d22a186e6",
+          "quote": "Kanurra is a healthcare technology company that provides a transparent, pass-through pharmacy benefit management platform for self-funded and level-funded employer plan sponsors."
+        },
+        {
+          "source_id": "FISRC-15295c11c2fd679b",
+          "quote": "Kanurra's AI-powered model will enable instant employer-side auditing of drug expenditures"
+        },
+        {
+          "source_id": "FISRC-1a0d34da5cf8fc7e",
+          "quote": "One flat fee per employee per month, in your contract before you sign, and nothing else: no spread, no rebate cut, no program or data fees."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-03T04:23:05.458Z",
+      "reviewed_at": "2026-10-03T04:49:42.068Z"
+    },
+    "EV-c680e02a02703c11": {
+      "id": "EV-c680e02a02703c11",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "productivity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Good Tape 提供 AI 转录与录音检索平台，属办公知识管理类企业应用。",
+      "input_hash": "d6d25f77faf4210b05d04cdf043fded7361f82389d8ae569b6b34feed30e534c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f4f28d07c46f9b89",
+          "quote": "Good Tape, the Copenhagen-based AI transcription company"
+        },
+        {
+          "source_id": "FISRC-21f9b4e4bcc52196",
+          "quote": "Good Tape is an AI-based transcription platform that enables users to convert audio and video recordings into text quickly, securely, and with high accuracy."
+        },
+        {
+          "source_id": "FISRC-f4f28d07c46f9b89",
+          "quote": "Alongside the ownership change, the company has launched Good Tape Explore, a new feature that links a user’s recordings together to surface patterns across past interviews."
+        },
+        {
+          "source_id": "FISRC-f4f28d07c46f9b89",
+          "quote": "The new Explore feature connects each new recording to a user’s full transcription history, surfacing contradictions, shifting positions, and supporting arguments, with every insight linked back to the original recording."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T04:23:05.458Z"
+    },
+    "EV-85f63371a81b394b": {
+      "id": "EV-85f63371a81b394b",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "SiMa.ai 明确以 Physical AI 软硬件平台为核心，属具身智能范畴，按规则排除。",
+      "input_hash": "cded350cfa6e303e97f052eb7a8a51d219d80da9cb44f6c731f2d5546426a155",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2209738fa8f6b1da",
+          "quote": "SiMa.ai, a leader in Physical AI, today announced $150 million in Series C financing, bringing the total capital raised to $500 million and valuing the company at $1.45 billion."
+        },
+        {
+          "source_id": "FISRC-03a98674081b0217",
+          "quote": "SiMa.ai has integrated Micron’s industry-leading LPDDR5X memory into the SiMa.ai Modalix MLSoC platform"
+        },
+        {
+          "source_id": "FISRC-2209738fa8f6b1da",
+          "quote": "This capital raise will accelerate the scaling of Palette Neat, the industry’s first agentic software environment for Physical AI"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T04:23:05.458Z"
     }
   },
-  "generated_at": "2026-10-03T00:39:31.599Z"
+  "generated_at": "2026-10-03T04:23:05.461Z"
 }

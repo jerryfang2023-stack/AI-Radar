@@ -18,6 +18,7 @@ import {
   writeJson,
 } from "../../../agent-workflow/tools/funding-insight-v1-utils.mjs";
 import { investmentInstitutionId } from "../../../agent-workflow/product/investment-institution-v1.mjs";
+import { classificationInput } from "../../../agent-workflow/financing/taxonomy.mjs";
 import {
   applyPublicZhTranslations,
   readPublicTranslationRegistry,
@@ -450,8 +451,11 @@ export function enrichFundingHistory(cards = []) {
   });
 }
 
-export function buildFundingInsightsFrontstage(projectRoot = root) {
+export function buildFundingInsightsFrontstage(projectRoot = root, { publicScope = false } = {}) {
   const bundles = listBundles(projectRoot);
+  const financingDecisions = publicScope
+    ? readJson(path.join(projectRoot, "01-SiteV2/content/12-applications/financing-taxonomy/decisions.json"), {}).decisions || {}
+    : {};
   const eventMarketScopes = fundingEventMarketScopes(projectRoot);
   const chinaAliases = chinaEntityAliasIndex(projectRoot);
   const directions = directionById(projectRoot);
@@ -478,6 +482,12 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
   for (const bundle of bundles) {
     for (const card of bundle.cards || []) {
       if (fundingInsightProblems(card).length) continue;
+      // Apply the financing scope gate to this workflow's new research cards.
+      // Earlier insight pages predate that gate and retain their existing archive.
+      if (publicScope && card.as_of_date >= "2026-10-03") {
+        const decision = financingDecisions[card.triggered_by_event_id];
+        if (decision?.scope !== "included" || decision.input_hash !== classificationInput(card).input_hash) continue;
+      }
       const current = cardByEvent.get(card.triggered_by_event_id);
       if (!current || card.published_at > current.published_at) cardByEvent.set(card.triggered_by_event_id, card);
     }
@@ -649,7 +659,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
 }
 
 export function writeFundingInsightsFrontstage(projectRoot = root) {
-  const data = buildFundingInsightsFrontstage(projectRoot);
+  const data = buildFundingInsightsFrontstage(projectRoot, { publicScope: true });
   const output = path.join(projectRoot, "01-SiteV2/site/data/funding-insights-v1.json");
   const entityIndex = readJson(
     path.join(projectRoot, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"),

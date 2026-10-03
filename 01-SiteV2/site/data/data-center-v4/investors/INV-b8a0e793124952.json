@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-03",
     "currentDate": "2026-10-03",
-    "eventCount": 3905,
+    "eventCount": 3909,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -64,9 +64,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 29,
+    "current_round_count": 30,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 26,
+    "portfolio_company_count": 27,
     "market_regions": [
       "GLOBAL"
     ],
@@ -77,7 +77,7 @@
     "role_counts": {
       "co_lead": 5,
       "historical_or_ambiguous": 8,
-      "lead": 18,
+      "lead": 19,
       "participant": 6
     },
     "round_codes": [
@@ -113,6 +113,11 @@
         "entity_id": "EN-4728b0c37dc84206",
         "canonical_entity_id": "",
         "name": "Convey"
+      },
+      {
+        "entity_id": "EN-5988a727e0b28b3d",
+        "canonical_entity_id": "",
+        "name": "doxx.net"
       },
       {
         "entity_id": "EN-e853b4e183ed0870",
@@ -263,6 +268,46 @@
             "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
             "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
             "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bfe032ce75ea8133",
+        "funding_insight_id": "FI-1559136b48b24cac",
+        "event_ids": [
+          "EV-87d5c0b6feae5c57"
+        ],
+        "company_entity_id": "EN-5988a727e0b28b3d",
+        "company_canonical_entity_id": "",
+        "company_name": "doxx.net",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$38 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 38000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3800 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e94be4fcbb396d33",
+            "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-10-1-doxxnet-raises-38-million-led-by-andreessen-horowitz-to-launch-agentic-defined-networking",
+            "source_title": "doxx.net 获 Andreessen Horowitz 领投 3800 万美元，用于推出智能体定义网络",
+            "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+            "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+            "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
           }
         ]
       },
@@ -1714,6 +1759,14 @@
         "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
       },
       {
+        "source_id": "FISRC-e94be4fcbb396d33",
+        "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-10-1-doxxnet-raises-38-million-led-by-andreessen-horowitz-to-launch-agentic-defined-networking",
+        "source_title": "doxx.net 获 Andreessen Horowitz 领投 3800 万美元，用于推出智能体定义网络",
+        "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+        "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+        "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
+      },
+      {
         "source_id": "FISRC-aae3c02b03fe09c9",
         "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
         "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
@@ -2111,12 +2164,12 @@
           "source_id": "FISRC-58d9b75c832876e1"
         },
         {
-          "description": "融资来源记录：EliseAI · F轮 · 2026-09-29 · 本轮联合领投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-aae3c02b03fe09c9"
+          "description": "融资来源记录：doxx.net · A轮 · 2026-10-01 · 本轮领投 · $38 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e94be4fcbb396d33"
         },
         {
-          "description": "融资来源记录：EliseAI · 轮次未披露 · 2026-09-29 · 本轮联合领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4f44cd6d16442bdc"
+          "description": "融资来源记录：EliseAI · F轮 · 2026-09-29 · 本轮联合领投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aae3c02b03fe09c9"
         }
       ],
       "contacts": [
@@ -2232,20 +2285,20 @@
           "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
         },
         {
+          "source_id": "FISRC-e94be4fcbb396d33",
+          "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-10-1-doxxnet-raises-38-million-led-by-andreessen-horowitz-to-launch-agentic-defined-networking",
+          "source_title": "doxx.net 获 Andreessen Horowitz 领投 3800 万美元，用于推出智能体定义网络",
+          "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+          "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+          "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
+        },
+        {
           "source_id": "FISRC-aae3c02b03fe09c9",
           "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
           "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
           "source_content_hash": "33c87e55e143bc09",
           "quote": "The funding round was co-led by existing investors Andreessen Horowitz (a16z) and Bessemer Venture Partners, as well as new investor Ontario Teachers’ Pension Plan, with participation from existing investors Sapphire Ventures and Navitas Capital.",
           "quote_hash": "7655e7fc298b7cfdca3c345e6fbbdc6c71541fedb1b9a8cecacf65a1609fe13b"
-        },
-        {
-          "source_id": "FISRC-4f44cd6d16442bdc",
-          "source_url": "https://www.otpp.com/en-ca/about-us/news-and-insights/2026/eliseai-raises-350-million-at-4-billion-valuation/",
-          "source_title": "EliseAI 以 40 亿美元估值融资 3.5 亿美元，将 AI 更深入引入住房与医疗运营",
-          "source_content_hash": "c4be8294b9475931eab4f291e805900850ae28a25cfeb6c54a03811033dccc00",
-          "quote": "The financing was led by Andreessen Horowitz (a16z) and Bessemer Venture Partners, with participation from Ontario Teachers' Pension Plan, Sapphire Ventures, and Navitas Capital.",
-          "quote_hash": "4351258f1b60a0bebd8d3c4264542973ef33354112aca6497c979fcf32c61458"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2256,7 +2309,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[30].role": {
+        "activities[31].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

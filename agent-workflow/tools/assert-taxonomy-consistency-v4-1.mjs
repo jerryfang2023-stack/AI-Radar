@@ -284,6 +284,7 @@ export function taxonomyConsistencyProblems(rootDir = root, { includeArchivedApp
   }
 
   const funding = readJson(path.join(rootDir, "01-SiteV2/site/data/funding-insights-v1.json"), {});
+  const financingScope = readJson(path.join(rootDir, "01-SiteV2/content/12-applications/financing-taxonomy/decisions.json"), {}).decisions || {};
   if (funding.meta?.taxonomy_version !== "TAG-V4.1") failures.push("funding application taxonomy version drift");
   const fundingByEvent = new Map();
   for (const card of funding.cards || []) if (card.triggered_by_event_id) {
@@ -300,6 +301,7 @@ export function taxonomyConsistencyProblems(rootDir = root, { includeArchivedApp
   for (const row of reviewed) {
     const card = fundingByEvent.get(row.decision_event_id);
     if (!card) {
+      if (["excluded", "review"].includes(financingScope[row.decision_event_id]?.scope)) continue;
       failures.push(`${row.reviewed_classification_id}: funding application card missing`);
       continue;
     }

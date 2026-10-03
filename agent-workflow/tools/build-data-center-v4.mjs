@@ -14,7 +14,7 @@ import {
   loadPrivateEvidenceEntries,
 } from "./lib/private-evidence-store.mjs";
 import { normalizeEvidenceBody } from "./lib/evidence-body-normalizer.mjs";
-import { evaluateModelAssistCandidate } from "./model-assist-v1.mjs";
+import { evaluateModelAssistCandidate, reviewedAiContextQuotes } from "./model-assist-v1.mjs";
 import { isWithdrawnFundingTitle, isPendingFundingTitle } from "./lib/funding-transaction-status.mjs";
 import {
   chinaMarketBasisType,
@@ -2101,7 +2101,10 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       }).map((entityMatch) => [entityMatch.canonicalName.toLocaleLowerCase(), entityMatch])).values()];
       const aiRelevance = eventAiRelevanceEvidence({
         title,
-        claims: eventClaimRows,
+        claims: [
+          ...eventClaimRows,
+          ...(reviewedRepair ? reviewedAiContextQuotes(modelClaimCandidate, bodyClean) : []),
+        ],
         entityNames: entityNames.map((item) => item.canonicalName),
         eventType: rule.eventType
       });

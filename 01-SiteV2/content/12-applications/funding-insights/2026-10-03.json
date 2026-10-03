@@ -2,21 +2,2585 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-10-03",
-    "generated_at": "2026-10-03T00:36:26.159Z",
+    "generated_at": "2026-10-03T05:05:46.793Z",
     "trigger": "accepted_financing_event_research",
     "research_provider": "search-gateway+direct-original+deepseek",
     "model": "deepseek-flash",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 29,
-      "auto_published": 10,
+      "funding_events": 33,
+      "auto_published": 14,
       "blocked": 2,
       "pending": 1,
       "deduplicated": 16
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-ba087b00597fce49",
+      "triggered_by_event_id": "EV-87d5c0b6feae5c57",
+      "as_of_date": "2026-10-03",
+      "company": {
+        "entity_id": "EN-5988a727e0b28b3d",
+        "name": "doxx.net",
+        "full_name": "doxx.net",
+        "website": "https://doxx.net",
+        "summary": "doxx.net 是一家提供隐私与安全网络平台的公司，其 Agentic Defined Networking（ADN）平台让个人及其 AI 智能体创建私密、安全的网络，无需中间服务器即可通信，并内置 DNS 级威胁防护。",
+        "headquarters": "美国",
+        "founders": [
+          {
+            "name": "Barrett Lyon",
+            "role": "创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94be4fcbb396d33",
+                "quote": "doxx.net, founded by Barrett Lyon, best known for pioneering the DDoS defense industry with Prolexic (acquired by Akamai) and other successful security and networking companies",
+                "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+                "quote_hash": "71cd8536a1a6e55df34af9b191f038bcdccd06ab86aa445482f92038b2641651"
+              },
+              {
+                "source_id": "FISRC-e94be4fcbb396d33",
+                "quote": "asked founder and CEO Barrett Lyon after the first call on the network",
+                "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+                "quote_hash": "0c9e794eec5d394f9e4bd957827b99554463b76c1fe4192ef99b2f561429ca4f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e94be4fcbb396d33",
+            "quote": "doxx.net is the Agentic Defined Networking company, providing privacy-by-architecture networking for individuals, enterprises, and their agents.",
+            "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+            "quote_hash": "8eebec0c4852697374c9b59c1fccdd660ad645b375eb184d4562da38f1587819"
+          },
+          {
+            "source_id": "FISRC-55e69e049cb9ed2b",
+            "quote": "doxx.net, a networking startup providing a privacy and security platform for people and AI agents",
+            "source_content_hash": "57229e771cd5ef48",
+            "quote_hash": "15c03c6e1c00d81d4f0fbed3fbd233d52135ba366bf16f334ac8d658f965ccf6"
+          }
+        ],
+        "application_entity_id": "EN-5988a727e0b28b3d",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$38 Million",
+        "total_raised": "",
+        "announced_at": "2026-10-01",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94be4fcbb396d33",
+                "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+                "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+                "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Animo Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94be4fcbb396d33",
+                "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+                "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+                "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Focal.vc",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94be4fcbb396d33",
+                "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+                "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+                "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e94be4fcbb396d33",
+            "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc. Joel De La Garza, partner at Andreessen Horowitz, joins the doxx.net board.",
+            "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+            "quote_hash": "50b6a8a90d4d86e811b42933ed5f014d870d09d16ca08f6e47d13d78cca7f212"
+          },
+          {
+            "source_id": "FISRC-e94be4fcbb396d33",
+            "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+            "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+            "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
+          },
+          {
+            "source_id": "FISRC-55e69e049cb9ed2b",
+            "quote": "This round was led by Andreessen Horowitz. Animo Ventures and Focal.vc also participated in the financing.",
+            "source_content_hash": "57229e771cd5ef48",
+            "quote_hash": "3004e299bfa4d7e832ee60b9e9414384b92d2570f16b654f07593f98bc322ee2"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$38 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 38000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3800 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-87d5c0b6feae5c57",
+            "round_original": "A轮",
+            "amount": "$38 Million",
+            "announced_at": "2026-10-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94be4fcbb396d33",
+                "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc. Joel De La Garza, partner at Andreessen Horowitz, joins the doxx.net board.",
+                "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+                "quote_hash": "50b6a8a90d4d86e811b42933ed5f014d870d09d16ca08f6e47d13d78cca7f212"
+              },
+              {
+                "source_id": "FISRC-e94be4fcbb396d33",
+                "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+                "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+                "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
+              },
+              {
+                "source_id": "FISRC-55e69e049cb9ed2b",
+                "quote": "This round was led by Andreessen Horowitz. Animo Ventures and Focal.vc also participated in the financing.",
+                "source_content_hash": "57229e771cd5ef48",
+                "quote_hash": "3004e299bfa4d7e832ee60b9e9414384b92d2570f16b654f07593f98bc322ee2"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Agentic Defined Networking (ADN) 平台",
+          "description": "一个让个人及其 AI 智能体创建私密、安全网络的平台，智能体可协助配置网络，通信无需中间服务器，并内置 DNS 级威胁防护。",
+          "target_customers": "个人用户、企业及其 AI 智能体",
+          "features": [
+            "智能体定义网络：允许智能体为用户设置网络、呼叫、聊天、租赁 IP 地址和配置防火墙",
+            "P2P 通信：端到端加密通话、视频、聊天和文件传输，无通信服务器中间环节",
+            "DNS 防护：结合 30 个过滤列表与神经网络，在连接前阻止已知和新兴恶意目的地",
+            "隐蔽网络：使用六种协议使私有网络流量看起来像普通网页浏览",
+            "反指纹：掩盖浏览器和设备的识别细节以防止跨网站跟踪",
+            "洋葱路由：流量通过多个服务器后再出口，使单一节点无法同时知道用户身份和活动",
+            "平行互联网生态：提供 196 个自定义 TLD 和自有证书颁发机构"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94be4fcbb396d33",
+              "quote": "doxx.net, founded by Barrett Lyon, best known for pioneering the DDoS defense industry with Prolexic (acquired by Akamai) and other successful security and networking companies, today launched the open beta of its Agentic Defined Networking (ADN) platform, which lets people and their agents create their own private, secure networks, communicate with no servers in the middle, and get started with no personal information required.",
+              "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+              "quote_hash": "78f101df2a85ff3f108cc705d11f96ee941a79df45ef92403c2540121557cc0f"
+            },
+            {
+              "source_id": "FISRC-e94be4fcbb396d33",
+              "quote": "Agentic Defined Networking. Allow your agents to set up networks for you, call you, chat with you, lease your own IP addresses, and configure your firewall.",
+              "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+              "quote_hash": "78aba8fcfd55625bd7dd93b848344f820eeac3bd8e1697154ac4c82d9cc6fcdc"
+            },
+            {
+              "source_id": "FISRC-e94be4fcbb396d33",
+              "quote": "P2P Comms connects you through end-to-end encrypted calls, video, chat, and file transfers, with no communications server in the middle.",
+              "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+              "quote_hash": "29ca2336350d92055bda5af497a9867c28125f243b85e0870975152d59ef2542"
+            },
+            {
+              "source_id": "FISRC-e94be4fcbb396d33",
+              "quote": "DNS Protection combines 30 filter lists with a neural network that catches threats no static list has seen, automatically protecting you and your agents from malicious phishing and malware sites.",
+              "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+              "quote_hash": "b757bcabe351e9522de62634fde0cdd2a0f9a0ca7a4669d158ea55e414125c5b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "已阻止威胁数",
+          "value": "超过 3800 万",
+          "observed_at": "2026-10-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94be4fcbb396d33",
+              "quote": "Since December 2025, doxx.net has blocked more than 38 million threats in closed beta.",
+              "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+              "quote_hash": "8cfa29ee1de9bb1e00d32a3a18841a4709f055c08cab96a5aeee2067820cba73"
+            }
+          ]
+        },
+        {
+          "label": "威胁拦截周增长量",
+          "value": "超过 120 万/周",
+          "observed_at": "2026-10-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5a9a22793797487a",
+              "quote": "Since December 2025 it has blocked more than 38 million threats, growing at more than 1.2 million a week by combining 30 filtering lists with neural-network detection that catches malicious destinations static lists have not seen yet.",
+              "source_content_hash": "bff492c6f5be76a7",
+              "quote_hash": "1a1a9e77e0f09f2617100fbe899d9bdff37024352f1a60eae799693762506d75"
+            }
+          ]
+        },
+        {
+          "label": "自定义 TLD 数",
+          "value": "196",
+          "observed_at": "2026-10-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94be4fcbb396d33",
+              "quote": "The Parallel Internet Ecosystem gives you 196 custom TLDs and your own certificate authority",
+              "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+              "quote_hash": "d5ac6618f4ca094d5738967e5c92787dce16b4955cba17cd81e630bf17145325"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Barrett Lyon",
+          "quote": "Have you ever had your agents configure your network, lease public IP addresses, and set up your security policy, to then discover you can call your friends through your own private network with no one in the middle? No record of the call? No phone company involved, where your phone is also the server?",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94be4fcbb396d33",
+              "quote": "Have you ever had your agents configure your network, lease public IP addresses, and set up your security policy, to then discover you can call your friends through your own private network with no one in the middle? No record of the call? No phone company involved, where your phone is also the server?",
+              "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+              "quote_hash": "8ae936a96fa87c8cee5499a53254c1ea4129bb4bc4e3073d3f051286bb128a8d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是：在 AI 智能体大规模代表用户浏览、通信和操作的时代，doxx.net 能否以自有端到端基础设施（自有 IP 空间、DNS 根、证书颁发机构、裸金属服务器）提供架构级隐私与安全，而非依赖公共云或营销承诺。已验证信号包括：自 2025 年 12 月封闭测试以来阻止超过 3800 万次威胁，且以每周超过 120 万次增长；平台已开放公测，覆盖 iOS、macOS、Android 并支持 Windows 和 Linux；创始人 Barrett Lyon 拥有 20 年以上互联网基础设施与安全经验。判断的证据边界在于：威胁阻止数是公司报告的数量而非检测率，智能体配置网络的实际安全边界与用户控制效果尚待公测验证。",
+        "validated_signals": [
+          "自 2025 年 12 月封闭测试以来阻止超过 3800 万次威胁",
+          "威胁拦截以每周超过 120 万次增长",
+          "平台已开放公测，提供 iOS、macOS、Android 原生应用并支持 Windows 和 Linux",
+          "创始人 Barrett Lyon 曾创立 Prolexic（被 Akamai 收购）等多家安全与网络公司"
+        ],
+        "risks": [
+          "威胁阻止数为公司报告的数量，并非经独立验证的检测率或成功率",
+          "智能体在用户策略下配置网络的实际权限边界与安全性尚待公测检验",
+          "公司未披露本轮资金的具体分配计划"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user",
+          "consumer"
+        ],
+        "sector": "网络安全",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是：在 AI 智能体大规模代表用户浏览、通信和操作的时代，doxx.net 能否以自有端到端基础设施（自有 IP 空间、DNS 根、证书颁发机构、裸金属服务器）提供架构级隐私与安全，而非依赖公共云或营销承诺。已验证信号包括：自 2025 年 12 月封闭测试以来阻止超过 3800 万次威胁，且以每周超过 120 万次增长；平台已开放公测，覆盖 iOS、macOS、Android 并支持 Windows 和 Linux；创始人 Barrett Lyon 拥有 20 年以上互联网基础设施与安全经验。判断的证据边界在于：威胁阻止数是公司报告的数量而非检测率，智能体配置网络的实际安全边界与用户控制效果尚待公测验证。",
+          "evidence_signals": [
+            "自 2025 年 12 月封闭测试以来阻止超过 3800 万次威胁",
+            "威胁拦截以每周超过 120 万次增长",
+            "平台已开放公测，提供 iOS、macOS、Android 原生应用并支持 Windows 和 Linux",
+            "创始人 Barrett Lyon 曾创立 Prolexic（被 Akamai 收购）等多家安全与网络公司"
+          ],
+          "risks": [
+            "威胁阻止数为公司报告的数量，并非经独立验证的检测率或成功率",
+            "智能体在用户策略下配置网络的实际权限边界与安全性尚待公测检验",
+            "公司未披露本轮资金的具体分配计划"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Agentic Defined Networking (ADN) 平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Barrett Lyon",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Animo Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Focal.vc",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-87d5c0b6feae5c57",
+          "date": "2026-10-01",
+          "title": "doxx.net 获 Andreessen Horowitz 领投 3800 万美元，用于推出智能体定义网络",
+          "amount": "$38 Million",
+          "source_refs": [
+            "SA-16a85a42d9f0881a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e94be4fcbb396d33",
+          "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-10-1-doxxnet-raises-38-million-led-by-andreessen-horowitz-to-launch-agentic-defined-networking",
+          "title": "doxx.net 获 Andreessen Horowitz 领投 3800 万美元，用于推出智能体定义网络",
+          "publisher": "markets.financialcontent.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-03T04:12:10.023Z",
+          "content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+          "source_artifact_id": "SA-16a85a42d9f0881a",
+          "raw_id": "RAW-840e7ca3d3d45008"
+        },
+        {
+          "source_id": "FISRC-55e69e049cb9ed2b",
+          "source_url": "https://www.thesaasnews.com/news/doxx-net-raises-38m-series-a",
+          "title": "doxx.net Raises $38M Series A",
+          "publisher": "thesaasnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-03T04:19:57.110Z",
+          "content_hash": "57229e771cd5ef48",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5a9a22793797487a",
+          "source_url": "https://www.doxx.net/blog/welcome-to-the-agentic-networking-era",
+          "title": "Welcome to the Agentic Networking Era: introducing doxx.net",
+          "publisher": "doxx.net",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-03T04:20:34.622Z",
+          "content_hash": "bff492c6f5be76a7",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-03T04:20:47.013Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-03T04:20:47.013Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Agentic Defined Networking (ADN) 平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Barrett Lyon"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-87d5c0b6feae5c57"
+      ],
+      "aggregation": {
+        "key": "EN-5988a727e0b28b3d|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-5958a933aa6b5be6",
+      "triggered_by_event_id": "EV-42b6bbea76f4c8cc",
+      "as_of_date": "2026-10-03",
+      "company": {
+        "entity_id": "EN-63c8d803cccb2222",
+        "name": "Kanurra, Inc.",
+        "full_name": "Kanurra, Inc.",
+        "website": "https://www.kanurra.com/",
+        "summary": "Kanurra是一家总部位于纽约的药品福利管理公司（PBM），面向自筹资金和水平资金雇主提供固定费用、直通式药品定价服务，重点服务中小企业。",
+        "headquarters": "New York City, New York",
+        "founders": [
+          {
+            "name": "Semih Gultekin",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-15295c11c2fd679b",
+                "quote": "Kanurra's founder, Semih Gultekin",
+                "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+                "quote_hash": "dd85a4ec87326e0cf6b2767e77b1a37d686a6e2b67adca886ded14c3ea163b11"
+              },
+              {
+                "source_id": "FISRC-7171b76514aac169",
+                "quote": "Kanurra, Inc. was founded by Semih Gultekin",
+                "source_content_hash": "89f41f11ab419131",
+                "quote_hash": "92922a059eee9ef8801918c251374d81670f7ded463fb5ce3cdc72d6254bf53e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-15295c11c2fd679b",
+            "quote": "Based in New York City, Kanurra's backers include Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
+            "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+            "quote_hash": "7bfbd19dff6b18e5bf7f689ffc6d47e025f7296f362c93dccddf61d974cff74e"
+          },
+          {
+            "source_id": "FISRC-1dc6442d22a186e6",
+            "quote": "Kanurra is a healthcare technology company that provides a transparent, pass-through pharmacy benefit management platform for self-funded and level-funded employer plan sponsors.",
+            "source_content_hash": "aec297d96d46d216",
+            "quote_hash": "35997a5bc5b2161e4741c634bbd5d9dd22b13854de9895a8015010dd6e3c6be8"
+          }
+        ],
+        "application_entity_id": "EN-63c8d803cccb2222",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$6.5 million",
+        "total_raised": "$6.5 million",
+        "announced_at": "2026-09-29",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Necessary Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-15295c11c2fd679b",
+                "quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
+                "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+                "quote_hash": "afac19b3581eb559391f5c5ae8aa67cc60e9d9e25cabf420d96e730dcce37f9b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Asylum Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-15295c11c2fd679b",
+                "quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
+                "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+                "quote_hash": "afac19b3581eb559391f5c5ae8aa67cc60e9d9e25cabf420d96e730dcce37f9b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Daybreak Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-15295c11c2fd679b",
+                "quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
+                "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+                "quote_hash": "afac19b3581eb559391f5c5ae8aa67cc60e9d9e25cabf420d96e730dcce37f9b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Virtue VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-15295c11c2fd679b",
+                "quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
+                "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+                "quote_hash": "afac19b3581eb559391f5c5ae8aa67cc60e9d9e25cabf420d96e730dcce37f9b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ford Street Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-15295c11c2fd679b",
+                "quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
+                "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+                "quote_hash": "afac19b3581eb559391f5c5ae8aa67cc60e9d9e25cabf420d96e730dcce37f9b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Browder Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-15295c11c2fd679b",
+                "quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
+                "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+                "quote_hash": "afac19b3581eb559391f5c5ae8aa67cc60e9d9e25cabf420d96e730dcce37f9b"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-15295c11c2fd679b",
+            "quote": "After its $6.5 million raise from six prominent venture capital firms",
+            "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+            "quote_hash": "8b6dc0cb9c1a1238cd309fd7fa0cc334db82a78770830660dea6741ba4c7a948"
+          },
+          {
+            "source_id": "FISRC-15295c11c2fd679b",
+            "quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
+            "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+            "quote_hash": "afac19b3581eb559391f5c5ae8aa67cc60e9d9e25cabf420d96e730dcce37f9b"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$6.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 万美元"
+        },
+        "total_raised_original": "$6.5 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 6500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-42b6bbea76f4c8cc",
+            "round_original": "Seed",
+            "amount": "$6.5 million",
+            "announced_at": "2026-09-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-15295c11c2fd679b",
+                "quote": "After its $6.5 million raise from six prominent venture capital firms",
+                "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+                "quote_hash": "8b6dc0cb9c1a1238cd309fd7fa0cc334db82a78770830660dea6741ba4c7a948"
+              },
+              {
+                "source_id": "FISRC-15295c11c2fd679b",
+                "quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
+                "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+                "quote_hash": "afac19b3581eb559391f5c5ae8aa67cc60e9d9e25cabf420d96e730dcce37f9b"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Kanurra PBM平台",
+          "description": "面向自筹资金和水平资金雇主的药品福利管理平台，采用固定每员工每月管理费和直通式药品定价，不收取价差、不保留返利。",
+          "target_customers": "自筹资金和水平资金雇主，重点服务中小企业",
+          "features": [
+            "固定每员工每月管理费",
+            "直通式药品定价，零价差",
+            "100%返利返还计划",
+            "AI驱动的即时雇主端药品支出审计",
+            "AI辅助事前授权，AI不拒绝，由持证临床医生审核"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-15295c11c2fd679b",
+              "quote": "Kanurra charges employers a flat administrative fee.",
+              "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+              "quote_hash": "00270fd9dda603a6290b892d5698066407b3f260e66b71d609605f8c24db0847"
+            },
+            {
+              "source_id": "FISRC-15295c11c2fd679b",
+              "quote": "Kanurra's AI-powered model will enable instant employer-side auditing of drug expenditures",
+              "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+              "quote_hash": "e85498a6a46ddb2d8540a8b585d7288a0b0ebb2f674f6d94f92ed737335fef73"
+            },
+            {
+              "source_id": "FISRC-1a0d34da5cf8fc7e",
+              "quote": "One flat fee per employee per month, in your contract before you sign, and nothing else: no spread, no rebate cut, no program or data fees.",
+              "source_content_hash": "7eded88d16725ca5",
+              "quote_hash": "4c1de417cea43d5a0c106dd43ff7edc4a47483c6a19dc49f1d9c15ba356a1e2a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "传统PBM",
+          "product": "价差定价和返利保留模式",
+          "scenario": "药品福利管理",
+          "target_customer": "保险计划雇主",
+          "funding_summary": "",
+          "core_difference": "传统PBM通过价差和保留返利盈利，Kanurra收取固定管理费且不保留返利。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-15295c11c2fd679b",
+              "quote": "PBMs generate revenue from the spread.",
+              "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+              "quote_hash": "f484e5727ad274fc2a5efc5062e8519f82991482a9f0e117733b7b22f5eb3edb"
+            },
+            {
+              "source_id": "FISRC-15295c11c2fd679b",
+              "quote": "Unlike traditional PBMs, Kanurra does not charge hidden, spread, or rebate-based fees",
+              "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+              "quote_hash": "427f7a6167c90697885cfd57624422bb7b945dbf20257328ed0f166c07e73244"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "直通式PBM",
+          "product": "直通式定价模式",
+          "scenario": "药品福利管理",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "其他直通式PBM专注于高端市场，优先服务大型企业，不与小型水平资金团体合作；Kanurra专注中小企业。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-15295c11c2fd679b",
+              "quote": "But these PBMs are heavily focused on the higher end of the market, prioritizing enterprise partners over small and medium-sized businesses.",
+              "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+              "quote_hash": "562ed81c2d8f938e37f2e9a18f012f7d498ed3d238118d5ba16fe53d7042cca3"
+            },
+            {
+              "source_id": "FISRC-15295c11c2fd679b",
+              "quote": "Other than Kanurra, transparent PBMs will not partner with small level-funded groups at all",
+              "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+              "quote_hash": "ab4a823cc4f656486031305aa231f2a8dd1594073dbd93f6774175474bef505f"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "融资额",
+          "value": "$6.5 million",
+          "observed_at": "2026-09-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-15295c11c2fd679b",
+              "quote": "After its $6.5 million raise from six prominent venture capital firms",
+              "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+              "quote_hash": "8b6dc0cb9c1a1238cd309fd7fa0cc334db82a78770830660dea6741ba4c7a948"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Semih Gultekin",
+          "quote": "eliminate confusion and increase the accessibility of prescription medications",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-15295c11c2fd679b",
+              "quote": "Kanurra's founder, Semih Gultekin, says he seeks to “eliminate confusion and increase the accessibility of prescription medications.”",
+              "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+              "quote_hash": "b2187da97d8e8429cebcba5ff73a61c9af8a85bc4867ce79b0529a0867fa5acc"
+            }
+          ]
+        },
+        {
+          "speaker": "Semih Gultekin",
+          "quote": "build the rails for personalized medicine and longevity",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-15295c11c2fd679b",
+              "quote": "Gultekin says his vision is to “build the rails for personalized medicine and longevity.”",
+              "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+              "quote_hash": "61f6311e14ee7a627417403e3e12ab457fc2d52657557237591e989cae935326"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Kanurra能否以固定费用和直通式药费定价吸引中小企业雇主。可核验的事实是公司披露650万美元融资、六家投资机构及其收费模式；原文中的药价节省属于假设示例，未披露已签客户、收入或实际节省结果，业务规模与AI审计能力仍待验证。",
+        "validated_signals": [
+          "公司披露650万美元融资及六家参投机构",
+          "公司公开说明固定管理费、直通式定价与返利返还规则"
+        ],
+        "risks": [
+          "来源未披露任何已签约客户或收入数据，商业模式规模化可行性未经证实",
+          "传统PBM市场高度集中且竞争激烈，Kanurra作为2026年新成立公司面临市场准入和客户获取风险",
+          "来源未披露估值信息，无法判断当前融资定价是否合理",
+          "AI审计能力与核心业务的关系仅见公司拟实施描述，尚无独立落地证据"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "healthcare_life_sciences",
+        "market_application_id": "",
+        "use_case_ids": [
+          "finance_accounting"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "医疗健康",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Kanurra能否以固定费用和直通式药费定价吸引中小企业雇主。可核验的事实是公司披露650万美元融资、六家投资机构及其收费模式；原文中的药价节省属于假设示例，未披露已签客户、收入或实际节省结果，业务规模与AI审计能力仍待验证。",
+          "evidence_signals": [
+            "公司披露650万美元融资及六家参投机构",
+            "公司公开说明固定管理费、直通式定价与返利返还规则"
+          ],
+          "risks": [
+            "来源未披露任何已签约客户或收入数据，商业模式规模化可行性未经证实",
+            "传统PBM市场高度集中且竞争激烈，Kanurra作为2026年新成立公司面临市场准入和客户获取风险",
+            "来源未披露估值信息，无法判断当前融资定价是否合理",
+            "AI审计能力与核心业务的关系仅见公司拟实施描述，尚无独立落地证据"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Kanurra PBM平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Semih Gultekin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Necessary Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Asylum Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Daybreak Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Virtue VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ford Street Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Browder Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "传统PBM",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "直通式PBM",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-42b6bbea76f4c8cc",
+          "date": "2026-09-29",
+          "title": "健康科技初创公司Kanurra融资650万美元，旨在削减药品成本",
+          "amount": "$6.5 million",
+          "source_refs": [
+            "SA-e981d2b740d5337b"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-15295c11c2fd679b",
+          "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-9-29-healthtech-startup-kanurra-raises-65m-to-slash-drug-costs",
+          "title": "健康科技初创公司Kanurra融资650万美元，旨在削减药品成本",
+          "publisher": "markets.financialcontent.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-03T04:12:10.037Z",
+          "content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
+          "source_artifact_id": "SA-e981d2b740d5337b",
+          "raw_id": "RAW-b90628752666aedf"
+        },
+        {
+          "source_id": "FISRC-1dc6442d22a186e6",
+          "source_url": "https://www.caplight.com/company/kanurra",
+          "title": "Kanurra Valuation & Funding History | Caplight",
+          "publisher": "caplight.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-03T04:19:56.679Z",
+          "content_hash": "aec297d96d46d216",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7171b76514aac169",
+          "source_url": "https://www.kanurra.com/about",
+          "title": "About Kanurra | Auditable Pharmacy Benefit Manager",
+          "publisher": "kanurra.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-03T04:20:01.604Z",
+          "content_hash": "89f41f11ab419131",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1a0d34da5cf8fc7e",
+          "source_url": "https://www.kanurra.com/",
+          "title": "Kanurra | Pharmacy Benefit Manager for Self-Funded Employers",
+          "publisher": "kanurra.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-03T04:20:04.239Z",
+          "content_hash": "7eded88d16725ca5",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-03T04:20:14.963Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-03T04:20:14.963Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Kanurra PBM平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Semih Gultekin"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-42b6bbea76f4c8cc"
+      ],
+      "aggregation": {
+        "key": "EN-63c8d803cccb2222|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-a8aa6335ceb0d7ea",
+      "triggered_by_event_id": "EV-c680e02a02703c11",
+      "as_of_date": "2026-10-03",
+      "company": {
+        "entity_id": "EN-0afb79034697e797",
+        "name": "Good Tape",
+        "full_name": "Good Tape",
+        "website": "goodtape.io",
+        "summary": "哥本哈根AI转录公司，由记者在丹麦会员制新闻编辑室Zetland内部孵化，2022年成立，将语音音频转化为可用文本，强调数据安全与隐私保护。",
+        "headquarters": "Copenhagen, Denmark",
+        "founders": [
+          {
+            "name": "Ýmir Gyðuson Gíslason",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4f28d07c46f9b89",
+                "quote": "With the buyout, co-founders Ýmir Gyðuson Gíslason and Lasse Finderup take control of Zetland’s stake in the company.",
+                "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+                "quote_hash": "bdbab3a41413b9874e08d1a92f4a3af1b2345fbb8af53a8a42e7f220352c4c44"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lasse Finderup",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4f28d07c46f9b89",
+                "quote": "said Finderup, co-founder and CEO, Good Tape.",
+                "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+                "quote_hash": "a8ba4237501ac8436a65ad73a222717cd35d67a111412b3abcb8575e5a445eae"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f4f28d07c46f9b89",
+            "quote": "Good Tape, the Copenhagen-based AI transcription company",
+            "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+            "quote_hash": "49b299d4da8ebfd7797aae4332249461aa486d264aaf9405a43187bf27b11b4d"
+          },
+          {
+            "source_id": "FISRC-f4f28d07c46f9b89",
+            "quote": "Founded in 2022, Good Tape began life as an internal tool at Zetland, the Danish member-funded newsroom, before spinning out as a standalone business.",
+            "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+            "quote_hash": "65f9b2674804232046d798ded150e59d6969fab1f4a22ce7bd596bc5a9f349ea"
+          }
+        ],
+        "application_entity_id": "EN-0afb79034697e797",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "早期融资",
+        "amount": "€600k",
+        "total_raised": "",
+        "announced_at": "2026-10-02",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Nordic Makers",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4f28d07c46f9b89",
+                "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers, an investment group founded by former unicorn founders that invests its own capital in early-stage Nordic startups, with an average ticket size of €500k.",
+                "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+                "quote_hash": "28f2c357fa1fd402baca7588ad6f8187763be332b0fde22f62fdaddef98ff657"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f4f28d07c46f9b89",
+            "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers, an investment group founded by former unicorn founders that invests its own capital in early-stage Nordic startups, with an average ticket size of €500k.",
+            "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+            "quote_hash": "28f2c357fa1fd402baca7588ad6f8187763be332b0fde22f62fdaddef98ff657"
+          },
+          {
+            "source_id": "FISRC-f4f28d07c46f9b89",
+            "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers",
+            "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+            "quote_hash": "75dbd8b89b4374934230ccb94cb8448ab6dd7c6ee53d887cdcd26b83077c2895"
+          },
+          {
+            "source_id": "FISRC-f4f28d07c46f9b89",
+            "quote": "Zendesk co-founder Alexander Aghassipour led the investment for Nordic Makers and has joined Good Tape’s board.",
+            "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+            "quote_hash": "e5b89646f33713e91058827f302432f230798d7ae35a4a15b9ca57bc6be18f86"
+          }
+        ],
+        "round_code": "early_stage",
+        "round_original": "早期融资",
+        "amount_original": "€600k",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 600000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "60 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c680e02a02703c11",
+            "round_original": "早期融资",
+            "amount": "€600k",
+            "announced_at": "2026-10-02",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4f28d07c46f9b89",
+                "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers, an investment group founded by former unicorn founders that invests its own capital in early-stage Nordic startups, with an average ticket size of €500k.",
+                "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+                "quote_hash": "28f2c357fa1fd402baca7588ad6f8187763be332b0fde22f62fdaddef98ff657"
+              },
+              {
+                "source_id": "FISRC-f4f28d07c46f9b89",
+                "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers",
+                "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+                "quote_hash": "75dbd8b89b4374934230ccb94cb8448ab6dd7c6ee53d887cdcd26b83077c2895"
+              },
+              {
+                "source_id": "FISRC-f4f28d07c46f9b89",
+                "quote": "Zendesk co-founder Alexander Aghassipour led the investment for Nordic Makers and has joined Good Tape’s board.",
+                "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+                "quote_hash": "e5b89646f33713e91058827f302432f230798d7ae35a4a15b9ca57bc6be18f86"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Good Tape",
+          "description": "AI驱动的自动转录平台，将音频和视频录音快速、安全、高精度地转换为文本，支持100多种语言，数据存储在欧盟，不用于训练AI模型。",
+          "target_customers": "记者、研究人员、律师、顾问、公共部门团队",
+          "features": [
+            "自动转录",
+            "支持100多种语言",
+            "数据加密存储于欧盟",
+            "GDPR合规",
+            "ISO 27001认证",
+            "不训练用户数据",
+            "AI摘要",
+            "转录聊天"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4f28d07c46f9b89",
+              "quote": "It transforms spoken audio into usable text while keeping full control of customer data, holds ISO 27001 certification, is GDPR-compliant, stores data in the EU, and does not train AI models on customer material.",
+              "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+              "quote_hash": "20f1ccf2b011ce35c15679cb1bd87b7d777489a3e091005499683d37ae8a7829"
+            },
+            {
+              "source_id": "FISRC-21f9b4e4bcc52196",
+              "quote": "Good Tape is an AI-based transcription platform that enables users to convert audio and video recordings into text quickly, securely, and with high accuracy.",
+              "source_content_hash": "5e40e95458864695",
+              "quote_hash": "9bf1a4b909978267145a48ab190dd75648d807460aa1baefbf0ca67c570c3fb1"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Good Tape Explore",
+          "description": "新功能，将用户的录音连接起来，在过往访谈中呈现模式，浮现矛盾、立场变化和支持论据，每个洞察都链接回原始录音。",
+          "target_customers": "记者、研究人员和团队",
+          "features": [
+            "连接录音",
+            "浮现矛盾",
+            "追踪立场变化",
+            "链接回原始录音",
+            "在私密欧盟托管工作区内运行"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4f28d07c46f9b89",
+              "quote": "Alongside the ownership change, the company has launched Good Tape Explore, a new feature that links a user’s recordings together to surface patterns across past interviews.",
+              "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+              "quote_hash": "2b3c231fdcec1cf4ecbf37ef07371a1a04e770c9c793cf0bc362b825ac6c87ec"
+            },
+            {
+              "source_id": "FISRC-f4f28d07c46f9b89",
+              "quote": "The new Explore feature connects each new recording to a user’s full transcription history, surfacing contradictions, shifting positions, and supporting arguments, with every insight linked back to the original recording.",
+              "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+              "quote_hash": "04a259b64a88d0c6ae33277611675ebd9a45bf4fa33e400843c4131cf792b530"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Court of Santiago de Chile",
+          "industry": "legal_services",
+          "use_case": "自动化转录，减少法官手动记录导致的病假",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f9b4e4bcc52196",
+              "quote": "we are working with the Court of Santiago de Chile, where they have reduced the number of sick days for their judges as they now don’t have to take notes manually",
+              "source_content_hash": "5e40e95458864695",
+              "quote_hash": "0186aa66622c3294df782f93ba8cbcd9a17e7f3c3e6f05077de67d14055c2ad6"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Wispr Flow",
+          "product": "AI-powered voice dictation software for seamless text creation",
+          "scenario": "",
+          "target_customer": "",
+          "funding_summary": "$81M",
+          "core_difference": "Good Tape专注于安全转录，数据存储在欧盟且不训练用户数据；Wispr Flow为AI语音听写软件。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fc933c28787120e1",
+              "quote": "Wispr Flow2021, San Francisco (United States), Series B",
+              "source_content_hash": "10035757963d15dd",
+              "quote_hash": "4c87271037d4a78b970544dc2d8c1779cf4a8504b7cd45f6748a536bbc84243c"
+            },
+            {
+              "source_id": "FISRC-fc933c28787120e1",
+              "quote": "Developer of AI-powered voice dictation software for seamless text creation",
+              "source_content_hash": "10035757963d15dd",
+              "quote_hash": "0656a12d95620eb43cf7b6b0e7ff4bc8c72abc409cfa8357014a6361cf5fab28"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Hear2Text",
+          "product": "speech-to-text software solution",
+          "scenario": "",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Good Tape强调安全性和欧盟数据存储；Hear2Text为语音转文本软件解决方案。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fc933c28787120e1",
+              "quote": "Hear2Text2024, Istanbul (Turkey), Unfunded",
+              "source_content_hash": "10035757963d15dd",
+              "quote_hash": "203b39a685f61880bbdfbc6b62cca1567ec8bca8a6cc262a40bb349469eda41b"
+            },
+            {
+              "source_id": "FISRC-fc933c28787120e1",
+              "quote": "Provider of a speech-to-text software solution",
+              "source_content_hash": "10035757963d15dd",
+              "quote_hash": "4f5dc0b0ce7f93d6ba5e32030477f974ecabec6f1cbf32debe8ef5a1e34c790b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "HoneySha Voice Typing",
+          "product": "app-based platform for speech-to-text converting",
+          "scenario": "",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Good Tape为专业用户提供安全转录；HoneySha Voice Typing为基于应用的语音转文本平台。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fc933c28787120e1",
+              "quote": "HoneySha Voice Typing2022, Bengaluru (India), Unfunded",
+              "source_content_hash": "10035757963d15dd",
+              "quote_hash": "4493ebf90c0af8aeaede12d724becbbcf237b47d85e42ef49a0ade5381e9c58d"
+            },
+            {
+              "source_id": "FISRC-fc933c28787120e1",
+              "quote": "Provider of an app-based platform for speech-to-text converting",
+              "source_content_hash": "10035757963d15dd",
+              "quote_hash": "94365426f384d1cdd8c6a42ea42e7e640c6c15c0a4e39edcc68dd2194951f802"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "累计转录次数",
+          "value": "超过1500万次",
+          "observed_at": "2026-10-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4f28d07c46f9b89",
+              "quote": "Since spinning out, Good Tape has completed more than 15 million transcriptions in over 100 languages",
+              "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+              "quote_hash": "b51c4e621482c2ce9d22fd5c0cb62d22b37f118aca50184523060a8293acd15c"
+            }
+          ]
+        },
+        {
+          "label": "用户数",
+          "value": "300万人",
+          "observed_at": "2026-10-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4f28d07c46f9b89",
+              "quote": "The company says it is now used by 3 million people across more than 150 countries.",
+              "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+              "quote_hash": "b8883b9a1218d0457c63feb11a49de040b61b1b26ad5717ecbe9c4570d796746"
+            }
+          ]
+        },
+        {
+          "label": "支持语言数",
+          "value": "超过100种",
+          "observed_at": "2026-10-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4f28d07c46f9b89",
+              "quote": "more than 15 million transcriptions in over 100 languages",
+              "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+              "quote_hash": "635262883100795ff997f7902e44e97ef90772da805f91c6eb072c5d7a1ef5e3"
+            }
+          ]
+        },
+        {
+          "label": "覆盖国家数",
+          "value": "超过150个",
+          "observed_at": "2026-10-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4f28d07c46f9b89",
+              "quote": "used by 3 million people across more than 150 countries",
+              "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+              "quote_hash": "4970a6075f09d93449dd629db3012660d4808356b163d1f6be52c06bb6b0703a"
+            }
+          ]
+        },
+        {
+          "label": "营收",
+          "value": "超过300万美元",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f9b4e4bcc52196",
+              "quote": "We have surpassed the golden number of $3 million in revenue and continue to grow.",
+              "source_content_hash": "5e40e95458864695",
+              "quote_hash": "ab6f5fdcdbe6cc780d2e42061602e9f16e37e38e3fbd86bb813749b33b9f1e77"
+            }
+          ]
+        },
+        {
+          "label": "营收来源集中度",
+          "value": "约40%来自丹麦、台湾和荷兰",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f9b4e4bcc52196",
+              "quote": "about 40% of our revenue currently comes from Denmark, Taiwan and The Netherlands (our top three markets)",
+              "source_content_hash": "5e40e95458864695",
+              "quote_hash": "e5185858a31f7ef161f6251391e6d85f21c3d4599670b7fa6f8448c370934894"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Alexander Aghassipour",
+          "quote": "There is so much uncertainty and scepticism around AI tools right now, that many people are getting too overwhelmed to use them effectively. We need to give people products that they don’t have to worry about, that still leverage the power of AI. Like being able to search and interact intelligently with years worth of interviews, in the way Explore allows",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4f28d07c46f9b89",
+              "quote": "There is so much uncertainty and scepticism around AI tools right now, that many people are getting too overwhelmed to use them effectively. We need to give people products that they don’t have to worry about, that still leverage the power of AI. Like being able to search and interact intelligently with years worth of interviews, in the way Explore allows",
+              "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+              "quote_hash": "1a2a6530d62d4085ce1d42e3f6e7f3054f2a9052a80a2c9a651a8111f9c24598"
+            }
+          ]
+        },
+        {
+          "speaker": "Lasse Finderup",
+          "quote": "Good Tape was built inside a newsroom by people who needed to trust where their interviews ended up. Zetland gave us the room to build it, and we owe them a lot. Now we’re going all in on that trust. With Explore, Good Tape goes from transcribing your interviews to also connecting them, and it’s still safe for your most sensitive material",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4f28d07c46f9b89",
+              "quote": "Good Tape was built inside a newsroom by people who needed to trust where their interviews ended up. Zetland gave us the room to build it, and we owe them a lot. Now we’re going all in on that trust. With Explore, Good Tape goes from transcribing your interviews to also connecting them, and it’s still safe for your most sensitive material",
+              "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+              "quote_hash": "04b0817c3926da4b8461db961a061b144773f761a94cf37194d385f19151a88b"
+            }
+          ]
+        },
+        {
+          "speaker": "Lasse Finderup",
+          "quote": "Good Tape has actually never taken external funding, meaning we have grown to where we are today organically with our own growth. We have surpassed the golden number of $3 million in revenue and continue to grow.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f9b4e4bcc52196",
+              "quote": "Good Tape has actually never taken external funding, meaning we have grown to where we are today organically with our own growth. We have surpassed the golden number of $3 million in revenue and continue to grow.",
+              "source_content_hash": "5e40e95458864695",
+              "quote_hash": "6b1c07b71302f81f70f68a486cedb20bd77cef9d73bfc8579b90ad0bd8d328fe"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Nordic Makers",
+            "speaker": "Alexander Aghassipour",
+            "speaker_role": "Zendesk联合创始人、Nordic Makers合伙人",
+            "rationale": "当前AI工具市场充满不确定性和怀疑，用户不堪重负，需要无需担忧且仍能利用AI能力的产品，如Explore允许智能搜索和交互多年访谈。",
+            "quote": "There is so much uncertainty and scepticism around AI tools right now, that many people are getting too overwhelmed to use them effectively. We need to give people products that they don’t have to worry about, that still leverage the power of AI. Like being able to search and interact intelligently with years worth of interviews, in the way Explore allows",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4f28d07c46f9b89",
+                "quote": "There is so much uncertainty and scepticism around AI tools right now, that many people are getting too overwhelmed to use them effectively. We need to give people products that they don’t have to worry about, that still leverage the power of AI. Like being able to search and interact intelligently with years worth of interviews, in the way Explore allows",
+                "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+                "quote_hash": "1a2a6530d62d4085ce1d42e3f6e7f3054f2a9052a80a2c9a651a8111f9c24598"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "Nordic Makers以60万欧元领投Good Tape管理层收购，核心押注变量是Good Tape在安全转录领域的差异化定位能否在AI工具信任危机中转化为持续增长。已验证信号包括：超过1500万次转录、300万用户、超过300万美元营收、ISO 27001认证和GDPR合规。证据边界：本轮为管理层收购融资，金额较小，来源未披露估值；公司此前未接受外部融资，营收数据来自创始人访谈而非审计报告。",
+        "validated_signals": [
+          "超过1500万次转录",
+          "300万用户",
+          "超过300万美元营收",
+          "ISO 27001认证",
+          "GDPR合规",
+          "数据存储在欧盟",
+          "不训练用户数据"
+        ],
+        "risks": [
+          "来源未披露本轮估值，无法判断融资定价合理性",
+          "营收数据来自创始人访谈，未经独立审计",
+          "转录市场竞争激烈，Tracxn显示98个活跃竞争对手",
+          "管理层收购后公司独立性增加，但需验证治理结构变化影响"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "knowledge_search"
+        ],
+        "industry_ids": [
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "researcher"
+        ],
+        "sector": "AI转录与生产力软件",
+        "investment_thesis": {
+          "statement": "Nordic Makers以60万欧元领投Good Tape管理层收购，核心押注变量是Good Tape在安全转录领域的差异化定位能否在AI工具信任危机中转化为持续增长。已验证信号包括：超过1500万次转录、300万用户、超过300万美元营收、ISO 27001认证和GDPR合规。证据边界：本轮为管理层收购融资，金额较小，来源未披露估值；公司此前未接受外部融资，营收数据来自创始人访谈而非审计报告。",
+          "evidence_signals": [
+            "超过1500万次转录",
+            "300万用户",
+            "超过300万美元营收",
+            "ISO 27001认证",
+            "GDPR合规",
+            "数据存储在欧盟",
+            "不训练用户数据"
+          ],
+          "risks": [
+            "来源未披露本轮估值，无法判断融资定价合理性",
+            "营收数据来自创始人访谈，未经独立审计",
+            "转录市场竞争激烈，Tracxn显示98个活跃竞争对手",
+            "管理层收购后公司独立性增加，但需验证治理结构变化影响"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Good Tape",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Good Tape Explore",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ýmir Gyðuson Gíslason",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Lasse Finderup",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nordic Makers",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Court of Santiago de Chile",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Wispr Flow",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Hear2Text",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "HoneySha Voice Typing",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-c680e02a02703c11",
+          "date": "2026-10-02",
+          "title": "哥本哈根的Good Tape从Nordic Makers筹集60万欧元完成管理层收购，Zendesk联合创始人加入董事会",
+          "amount": "€600k",
+          "source_refs": [
+            "SA-88aa0a19c94307bb"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-f4f28d07c46f9b89",
+          "source_url": "https://www.the1news.com/public/index.php/article/copenhagens-good-tape-raises-eur600k-from-nordic-makers-to-complete-management-bu",
+          "title": "哥本哈根的Good Tape从Nordic Makers筹集60万欧元完成管理层收购，Zendesk联合创始人加入董事会",
+          "publisher": "www.the1news.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-03T04:12:10.002Z",
+          "content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
+          "source_artifact_id": "SA-88aa0a19c94307bb",
+          "raw_id": "RAW-d69bef8358c5f91e"
+        },
+        {
+          "source_id": "FISRC-fc933c28787120e1",
+          "source_url": "https://tracxn.com/d/companies/good-tape/__A24xsasZxkd3084ptSCbv6nNxmgvs-04uj_2hRctuus",
+          "title": "Good Tape",
+          "publisher": "tracxn.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-03T04:19:29.304Z",
+          "content_hash": "10035757963d15dd",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-21f9b4e4bcc52196",
+          "source_url": "https://pulse2.com/good-tape-profile-lasse-finderup-interview",
+          "title": "Good Tape: Interview With Co-Founder &#038; CEO Lasse Finderup About The AI-Based Transcription Platform",
+          "publisher": "pulse2.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-03T04:19:37.434Z",
+          "content_hash": "5e40e95458864695",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-03T04:19:48.931Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-03T04:19:48.931Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Good Tape",
+            "Good Tape Explore"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Lasse Finderup",
+            "Ýmir Gyðuson Gíslason"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c680e02a02703c11"
+      ],
+      "aggregation": {
+        "key": "EN-0afb79034697e797|early_stage",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-829b47e3be6a1747",
+      "triggered_by_event_id": "EV-85f63371a81b394b",
+      "as_of_date": "2026-10-03",
+      "company": {
+        "entity_id": "EN-244595c58aaec73d",
+        "name": "SiMa.ai",
+        "full_name": "SiMa.ai",
+        "website": "https://sima.ai/",
+        "summary": "SiMa.ai 是一家 Physical AI 公司，提供软硬件协同的平台，包括面向物理 AI 应用的机器学习系统级芯片（MLSoC）和智能体软件开发环境，帮助客户将物理 AI 应用部署时间从数月缩短至数天或数小时。",
+        "headquarters": "San Jose, California, United States",
+        "founders": [
+          {
+            "name": "Krishna Rangasayee",
+            "role": "创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "Krishna Rangasayee, Founder and CEO at SiMa.ai",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "27f7be198cc1c620057b977c98987680e078ddee43636eb32b2252960aa60492"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "246",
+          "observed_at": "2026-08-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e295691694d4ac60",
+              "quote": "Employee Count 246 as on Aug 31, 2026",
+              "source_content_hash": "aa431d2765a64d0e",
+              "quote_hash": "d53bc813e0f0ed20e2794a6151fe9bbf7ffbd319c3c88b9d70d1c265b8d1f1d6"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2209738fa8f6b1da",
+            "quote": "SiMa.ai, a leader in Physical AI, today announced $150 million in Series C financing, bringing the total capital raised to $500 million and valuing the company at $1.45 billion.",
+            "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+            "quote_hash": "e8b4d5ce9f647399e1c85cc2a71954feff47a0ce2f1eed4a368e9813ad6a5dbb"
+          },
+          {
+            "source_id": "FISRC-e295691694d4ac60",
+            "quote": "SiMa.ai is a series C company based in San Jose (United States), founded in 2018.",
+            "source_content_hash": "aa431d2765a64d0e",
+            "quote_hash": "8926ffc4c64e00bf529f280b05f6c8904056fad786d3f61f429701d86c36f616"
+          }
+        ],
+        "application_entity_id": "EN-244595c58aaec73d",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "$150 million",
+        "total_raised": "$500 million",
+        "announced_at": "2026-09-28",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Fidelity Management & Research Company",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "Fidelity Management & Research Company and Amplify co-led the oversubscribed $150 million round",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "668554e7439a1a19347bdec7090e668293b75f49d074790cd48f99015a60e108"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Amplify",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "Fidelity Management & Research Company and Amplify co-led the oversubscribed $150 million round",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "668554e7439a1a19347bdec7090e668293b75f49d074790cd48f99015a60e108"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alter Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "with participation from Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "97310b374104c2cc70f0607da416747d721a557cc41a50b1233785f183be520f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dell Technologies Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "with participation from Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "97310b374104c2cc70f0607da416747d721a557cc41a50b1233785f183be520f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Maverick Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "with participation from Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "97310b374104c2cc70f0607da416747d721a557cc41a50b1233785f183be520f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "+ND Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "with participation from Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "97310b374104c2cc70f0607da416747d721a557cc41a50b1233785f183be520f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Point72",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "with participation from Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "97310b374104c2cc70f0607da416747d721a557cc41a50b1233785f183be520f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "StepStone Group",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "with participation from Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "97310b374104c2cc70f0607da416747d721a557cc41a50b1233785f183be520f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "AllianceBernstein",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan as new investors",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "7ab94b50383e1b542bb13937758b5bedfb275a181956bb484407efc2d5ad5fd4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Baron Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan as new investors",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "7ab94b50383e1b542bb13937758b5bedfb275a181956bb484407efc2d5ad5fd4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "J.P. Morgan",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan as new investors",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "7ab94b50383e1b542bb13937758b5bedfb275a181956bb484407efc2d5ad5fd4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "State of Michigan",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan as new investors",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "7ab94b50383e1b542bb13937758b5bedfb275a181956bb484407efc2d5ad5fd4"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Micron",
+            "role": "2026年4月战略投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03a98674081b0217",
+                "quote": "SiMa.ai, a leader in Physical AI, today announced a strategic investment from Micron Technology, Inc.",
+                "source_content_hash": "04258a4df646e5eb",
+                "quote_hash": "6f82c193350705a5975b72f986685cba76bace2a32a1462d2cb72c9518d2e991"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2209738fa8f6b1da",
+            "quote": "SiMa.ai, a leader in Physical AI, today announced $150 million in Series C financing, bringing the total capital raised to $500 million and valuing the company at $1.45 billion.",
+            "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+            "quote_hash": "e8b4d5ce9f647399e1c85cc2a71954feff47a0ce2f1eed4a368e9813ad6a5dbb"
+          },
+          {
+            "source_id": "FISRC-8287e19eb1bca77a",
+            "quote": "SiMa.ai has raised a total of $500M over 9 funding rounds: 6 Early-Stage and 3 Late-Stage rounds.",
+            "source_content_hash": "e6f8f8ee557410b5",
+            "quote_hash": "d1b6d3b970f3c137aa4d1f795a3af877fc9b323ee7ba7461775cd729f9c50028"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$150 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "total_raised_original": "$500 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-85f63371a81b394b",
+            "round_original": "C轮",
+            "amount": "$150 million",
+            "announced_at": "2026-09-28",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "SiMa.ai, a leader in Physical AI, today announced $150 million in Series C financing, bringing the total capital raised to $500 million and valuing the company at $1.45 billion.",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "e8b4d5ce9f647399e1c85cc2a71954feff47a0ce2f1eed4a368e9813ad6a5dbb"
+              },
+              {
+                "source_id": "FISRC-8287e19eb1bca77a",
+                "quote": "SiMa.ai has raised a total of $500M over 9 funding rounds: 6 Early-Stage and 3 Late-Stage rounds.",
+                "source_content_hash": "e6f8f8ee557410b5",
+                "quote_hash": "d1b6d3b970f3c137aa4d1f795a3af877fc9b323ee7ba7461775cd729f9c50028"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Modalix MLSoC",
+          "description": "面向物理 AI 应用的专用机器学习系统级芯片，提供 50 TOPS 算力、低于 10W 功耗，支持多种形态，可运行 CNN、ViT、LLM 等模型。",
+          "target_customers": "机器人、汽车、无人机、工业自动化、航空航天与国防、智能视觉、医疗等领域的设备制造商和系统集成商。",
+          "features": [
+            "50 TOPS 算力",
+            "低于 10W 功耗",
+            "支持 CNN、ViT、LLM",
+            "多种形态可选",
+            "集成 Micron LPDDR5X 内存"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03a98674081b0217",
+              "quote": "SiMa.ai has integrated Micron’s industry-leading LPDDR5X memory into the SiMa.ai Modalix MLSoC platform",
+              "source_content_hash": "04258a4df646e5eb",
+              "quote_hash": "2c941bffba848de9fa2b04f408f31c105c26f418b542793fcd00c4a82c556653"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Palette Neat",
+          "description": "面向物理 AI 的智能体软件开发环境，旨在将应用开发时间从数月缩短至数天或数小时，抽象异构计算复杂性。",
+          "target_customers": "物理 AI 应用开发者、机器人、汽车、无人机、工业自动化等领域的企业。",
+          "features": [
+            "智能体开发环境",
+            "从数月缩短至数天/小时的开发周期",
+            "抽象异构计算复杂性",
+            "支持从模型资产到工作应用的快速转化"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "This capital raise will accelerate the scaling of Palette Neat, the industry’s first agentic software environment for Physical AI",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "8b62f351b95ed4314ec410cd4e6acf69443cf689b8cf66a6fb428d9476854cb3"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "ARK Electronics",
+          "industry": "无人机",
+          "use_case": "加速智能自主无人机",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&T Technology Services, Micron, STIGA, Synopsys, TRUMPF SE, and Virya Autonomous Technologies, Bangalore.",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "8f0485fc2e368bc26182f6cacd7e25e470bbf90c0af7439e6aeaf44afd487da4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Bosch",
+          "industry": "汽车与工业",
+          "use_case": "物理 AI 应用",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&T Technology Services, Micron, STIGA, Synopsys, TRUMPF SE, and Virya Autonomous Technologies, Bangalore.",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "8f0485fc2e368bc26182f6cacd7e25e470bbf90c0af7439e6aeaf44afd487da4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Emerson",
+          "industry": "工业自动化",
+          "use_case": "工业边缘 AI 处理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&T Technology Services, Micron, STIGA, Synopsys, TRUMPF SE, and Virya Autonomous Technologies, Bangalore.",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "8f0485fc2e368bc26182f6cacd7e25e470bbf90c0af7439e6aeaf44afd487da4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Kontron",
+          "industry": "工业边缘计算",
+          "use_case": "工业边缘 AI 应用",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&T Technology Services, Micron, STIGA, Synopsys, TRUMPF SE, and Virya Autonomous Technologies, Bangalore.",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "8f0485fc2e368bc26182f6cacd7e25e470bbf90c0af7439e6aeaf44afd487da4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "STIGA",
+          "industry": "消费与户外动力设备",
+          "use_case": "机器人割草机 AI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&T Technology Services, Micron, STIGA, Synopsys, TRUMPF SE, and Virya Autonomous Technologies, Bangalore.",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "8f0485fc2e368bc26182f6cacd7e25e470bbf90c0af7439e6aeaf44afd487da4"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "NVIDIA",
+          "product": "GPU",
+          "scenario": "物理 AI 设备中的 AI 计算",
+          "target_customer": "机器人、汽车、无人机等物理 AI 设备制造商",
+          "funding_summary": "",
+          "core_difference": "SiMa.ai 提供全栈物理 AI 平台，结合专用芯片和软件，将部署时间从数月缩短至数天或数小时；而物理 AI 历史上依赖昂贵、复杂且高功耗的 NVIDIA GPU。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "While Physical AI has historically relied on expensive, complex, and power-hungry NVIDIA GPUs, SiMa.ai delivers the industry’s leading full-stack Physical AI platform combining purpose-built silicon and software to streamline deployments from months to days or hours.",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "30272dc35495a7fea007aa42f878210244d3342b891de5cd642facca7d2556b7"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$150 million",
+          "observed_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "today announced $150 million in Series C financing",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "250cc736ae3dd799bca34c1956671c23779c43ba5563bf6db31bd2738fb3fbd7"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$500 million",
+          "observed_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "bringing the total capital raised to $500 million",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "287b9ca3d55541cac6464b0ec9853263d224a8975e0a7ccf3c299b568ad3bb1a"
+            }
+          ]
+        },
+        {
+          "label": "估值",
+          "value": "$1.45 billion",
+          "observed_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "valuing the company at $1.45 billion",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "8dc79c6e0a1051b15e28e35103b0a08c4a0c322fdcd569843ef3ea3d40653076"
+            }
+          ]
+        },
+        {
+          "label": "营收增长",
+          "value": "2024 至 2025 年营收同比增长四倍",
+          "observed_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "Between 2024 and 2025, the company quadrupled year-over-year revenue growth",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "2aafb3fe55cca078230050df8c7df61e7592ebcc90726d78597a2e3b0ff7d094"
+            }
+          ]
+        },
+        {
+          "label": "物理 AI 设备累计出货量预测",
+          "value": "到 2035 年达 1.45 亿台",
+          "observed_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "cumulative shipments projected to hit 145 million units by 2035, according to Counterpoint Research",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "6dadf99eb5e8aa68efdcfa10578b24c34f18ddebda978fa2502ff426248f9c8b"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Krishna Rangasayee",
+          "quote": "Physical AI in humanoids, automotive, and drones is the gateway to a $50 trillion market that has remained largely untouched by modern innovation",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "Physical AI in humanoids, automotive, and drones is the gateway to a $50 trillion market that has remained largely untouched by modern innovation",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "e42a6298ad2bdf9e19a97bc08bfbb40535db56d549a32ac9b858d8d706fb3c1e"
+            }
+          ]
+        },
+        {
+          "speaker": "Mike Dauber",
+          "quote": "Since our initial partnership with SiMa.ai from day one, we have believed its vision was both clear and transformative: to build a fundamentally new architecture for Physical AI where software dictates the silicon.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "Since our initial partnership with SiMa.ai from day one, we have believed its vision was both clear and transformative: to build a fundamentally new architecture for Physical AI where software dictates the silicon.",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "2630c81c6ef37c973717a3d0d2debdf6abd91434732ad322e0b674101e725ed6"
+            }
+          ]
+        },
+        {
+          "speaker": "Scott Darling",
+          "quote": "As enterprise intelligence migrates into the physical world, it’s been challenged by the tradeoff between performance and power. SiMa.ai is shattering that barrier.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "As enterprise intelligence migrates into the physical world, it’s been challenged by the tradeoff between performance and power. SiMa.ai is shattering that barrier.",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "b7e97ac9ed687faa0d68f1f975eab0fdd25db40be11d271195452a824ad0bed1"
+            }
+          ]
+        },
+        {
+          "speaker": "John Avirett",
+          "quote": "Truly scaling physical AI requires more than just raw compute. It demands incredible power efficiency and seamless integration into highly constrained environments.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "Truly scaling physical AI requires more than just raw compute. It demands incredible power efficiency and seamless integration into highly constrained environments.",
+              "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+              "quote_hash": "6443ea22d104b61aa03dde3e55a2dfc97d67a24b818e8708085df4848b28aab6"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Amplify",
+            "speaker": "Mike Dauber",
+            "speaker_role": "General Partner, Amplify Partners",
+            "rationale": "Amplify 从第一天起就相信 SiMa.ai 的愿景清晰且具有变革性：构建一种软件主导芯片的全新物理 AI 架构。SiMa.ai 持续证明其创新能力与执行力优于市场其他参与者，大幅降低在物理边缘设备上部署先进 AI 模型的复杂性，并加速全球最复杂自主系统的上市时间。",
+            "quote": "Since our initial partnership with SiMa.ai from day one, we have believed its vision was both clear and transformative: to build a fundamentally new architecture for Physical AI where software dictates the silicon. SiMa.ai has consistently proven its ability to out-innovate and out-execute the rest of the market, dramatically reducing the complexity of deploying advanced AI models on physical edge devices, and accelerating time to market for the world’s most sophisticated autonomous systems.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "Since our initial partnership with SiMa.ai from day one, we have believed its vision was both clear and transformative: to build a fundamentally new architecture for Physical AI where software dictates the silicon. SiMa.ai has consistently proven its ability to out-innovate and out-execute the rest of the market, dramatically reducing the complexity of deploying advanced AI models on physical edge devices, and accelerating time to market for the world’s most sophisticated autonomous systems.",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "3253205fdec1b7442180d2cab2d3bacf5c962fe6d0eb86eec161687739a8bdd3"
+              }
+            ]
+          },
+          {
+            "institution": "Dell Technologies Capital",
+            "speaker": "Scott Darling",
+            "speaker_role": "President and Managing Director, Dell Technologies Capital",
+            "rationale": "Dell Technologies Capital 的核心优先事项之一是投资连接数据中心与远边缘的基础技术。随着企业智能向物理世界迁移，性能与功耗之间的权衡成为挑战，SiMa.ai 正在打破这一障碍。其平台提供现代企业扩展计算机视觉和自主能力所需的软件敏捷性和物理 AI 优化算力。",
+            "quote": "One of our core priorities at Dell Tech Capital is to back foundational technologies that bridge the gap between the data center and the far edge. As enterprise intelligence migrates into the physical world, it’s been challenged by the tradeoff between performance and power. SiMa.ai is shattering that barrier. Its platform delivers the software agility and Physical AI-optimized compute that modern enterprises require to scale computer vision and autonomous capabilities.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "One of our core priorities at Dell Tech Capital is to back foundational technologies that bridge the gap between the data center and the far edge. As enterprise intelligence migrates into the physical world, it’s been challenged by the tradeoff between performance and power. SiMa.ai is shattering that barrier. Its platform delivers the software agility and Physical AI-optimized compute that modern enterprises require to scale computer vision and autonomous capabilities.",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "951e074abf7e246096f2e9f0f3c6b8760325509dacc08ef637342e2a6f85a5ad"
+              }
+            ]
+          },
+          {
+            "institution": "StepStone Group",
+            "speaker": "John Avirett",
+            "speaker_role": "Partner, StepStone Group",
+            "rationale": "真正扩展物理 AI 不仅需要原始算力，还需要极高的能效和无缝集成到高度受限的环境中。SiMa.ai 创建了一个差异化的、专为物理 AI 构建的平台，满足现实世界应用的严格要求。",
+            "quote": "Truly scaling physical AI requires more than just raw compute. It demands incredible power efficiency and seamless integration into highly constrained environments. SiMa.ai has created a differentiated, purpose-built Physical AI platform that answers the rigorous demands of real-world applications.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "Truly scaling physical AI requires more than just raw compute. It demands incredible power efficiency and seamless integration into highly constrained environments. SiMa.ai has created a differentiated, purpose-built Physical AI platform that answers the rigorous demands of real-world applications.",
+                "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+                "quote_hash": "7b36dded719a434a9b323f3e2a86ff9f7b9deb2fb3c62f86744add7d1a049b18"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 SiMa.ai 能否以专用芯片加软件的全栈平台，在物理 AI 边缘计算场景中替代高功耗 GPU 方案，并实现规模化商业落地。当前 14.5 亿美元估值和 5 亿美元累计融资所依赖的已验证信号包括：2024 至 2025 年营收同比增长四倍、客户与合作伙伴网络覆盖多家财富 500 强和专业技术公司、以及 Modalix MLSoC 和 Palette Neat 已形成可交付产品。判断的证据边界在于：来源未披露本轮融资的具体估值条款、收入绝对值、毛利率或客户合同金额，因此无法评估估值倍数和收入质量。",
+        "validated_signals": [
+          "2024 至 2025 年营收同比增长四倍",
+          "客户与合作伙伴网络包括 ARK Electronics、AVerMedia、Bosch、Emerson、Intrinsic、Kontron、L&T Technology Services、Micron、STIGA、Synopsys、TRUMPF SE 和 Virya Autonomous Technologies",
+          "Modalix MLSoC 已集成 Micron LPDDR5X 内存并可供客户使用",
+          "Palette Neat 作为物理 AI 智能体软件环境已发布",
+          "累计融资 5 亿美元，估值 14.5 亿美元"
+        ],
+        "risks": [
+          "来源未披露本轮融资的具体估值条款和收入绝对值，无法验证 14.5 亿美元估值的收入倍数合理性。",
+          "物理 AI 边缘计算赛道竞争激烈，来源提及 SiMa.ai 有 247 个活跃竞争对手，包括 NVIDIA、SiFive、Groq 和 Ambarella 等。",
+          "来源未披露客户合同金额或订单保底收入，客户名单仅表明合作关系，不构成收入承诺。",
+          "下一代硬件计划于 2028 年上半年推出，存在技术执行和量产时间表风险。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "physical_automation",
+          "design_engineering"
+        ],
+        "industry_ids": [
+          "automotive_transportation",
+          "manufacturing",
+          "aerospace_defense",
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "半导体与物理 AI 基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 SiMa.ai 能否以专用芯片加软件的全栈平台，在物理 AI 边缘计算场景中替代高功耗 GPU 方案，并实现规模化商业落地。当前 14.5 亿美元估值和 5 亿美元累计融资所依赖的已验证信号包括：2024 至 2025 年营收同比增长四倍、客户与合作伙伴网络覆盖多家财富 500 强和专业技术公司、以及 Modalix MLSoC 和 Palette Neat 已形成可交付产品。判断的证据边界在于：来源未披露本轮融资的具体估值条款、收入绝对值、毛利率或客户合同金额，因此无法评估估值倍数和收入质量。",
+          "evidence_signals": [
+            "2024 至 2025 年营收同比增长四倍",
+            "客户与合作伙伴网络包括 ARK Electronics、AVerMedia、Bosch、Emerson、Intrinsic、Kontron、L&T Technology Services、Micron、STIGA、Synopsys、TRUMPF SE 和 Virya Autonomous Technologies",
+            "Modalix MLSoC 已集成 Micron LPDDR5X 内存并可供客户使用",
+            "Palette Neat 作为物理 AI 智能体软件环境已发布",
+            "累计融资 5 亿美元，估值 14.5 亿美元"
+          ],
+          "risks": [
+            "来源未披露本轮融资的具体估值条款和收入绝对值，无法验证 14.5 亿美元估值的收入倍数合理性。",
+            "物理 AI 边缘计算赛道竞争激烈，来源提及 SiMa.ai 有 247 个活跃竞争对手，包括 NVIDIA、SiFive、Groq 和 Ambarella 等。",
+            "来源未披露客户合同金额或订单保底收入，客户名单仅表明合作关系，不构成收入承诺。",
+            "下一代硬件计划于 2028 年上半年推出，存在技术执行和量产时间表风险。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Modalix MLSoC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Palette Neat",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Krishna Rangasayee",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fidelity Management & Research Company",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Amplify",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alter Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Dell Technologies Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Maverick Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "+ND Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Point72",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "StepStone Group",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AllianceBernstein",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Baron Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "J.P. Morgan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "State of Michigan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Micron",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "ARK Electronics",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Bosch",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Emerson",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Kontron",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "STIGA",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "NVIDIA",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-85f63371a81b394b",
+          "date": "2026-09-28",
+          "title": "SiMa.ai 估值达 14.5 亿美元，总融资 5 亿美元，以规模化人形机器人、汽车和无人机领域的物理 AI",
+          "amount": "$150 million",
+          "source_refs": [
+            "SA-3e3a1e675b742b6a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2209738fa8f6b1da",
+          "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+          "title": "SiMa.ai 估值达 14.5 亿美元，总融资 5 亿美元，以规模化人形机器人、汽车和无人机领域的物理 AI",
+          "publisher": "sima.ai",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-03T04:12:09.980Z",
+          "content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+          "source_artifact_id": "SA-3e3a1e675b742b6a",
+          "raw_id": "RAW-01780e867b9c822a"
+        },
+        {
+          "source_id": "FISRC-8287e19eb1bca77a",
+          "source_url": "https://tracxn.com/d/companies/sima.ai/__hrXbyBEFp-A08KOSB51lFFOxWAS7MJbrkfK_TATmjMo/funding-and-investors",
+          "title": "SiMa.ai",
+          "publisher": "tracxn.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-03T04:12:47.134Z",
+          "content_hash": "e6f8f8ee557410b5",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-e295691694d4ac60",
+          "source_url": "https://tracxn.com/d/companies/sima.ai/__hrXbyBEFp-A08KOSB51lFFOxWAS7MJbrkfK_TATmjMo",
+          "title": "SiMa.ai",
+          "publisher": "tracxn.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-03T04:12:49.038Z",
+          "content_hash": "aa431d2765a64d0e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-03a98674081b0217",
+          "source_url": "https://sima.ai/press-release/sima-ai-strategic-investment-from-micron-to-scale-physical-ai",
+          "title": "SiMa.ai Secures Strategic Investment from Micron to Scale High-Performance, Power-Efficient Physical AI",
+          "publisher": "sima.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-03T04:12:57.119Z",
+          "content_hash": "04258a4df646e5eb",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-03T04:13:15.312Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-03T04:13:15.312Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Modalix MLSoC",
+            "Palette Neat"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Krishna Rangasayee"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-85f63371a81b394b"
+      ],
+      "aggregation": {
+        "key": "EN-244595c58aaec73d|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-0cf7bc9c79f01e3f",
@@ -6553,7 +9117,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-f2950d2104e97163",
@@ -6562,7 +9126,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-936ef5bf2539b55a",
@@ -6635,7 +9199,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-df4a0504042552ae",
@@ -6697,7 +9261,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-03T00:36:26.155Z"
+      "updated_at": "2026-10-03T05:05:46.788Z"
     },
     {
       "event_id": "EV-9ea3912efd857ad8",
@@ -6706,7 +9270,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-861d4440dcbb9b09",
@@ -6715,7 +9279,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-1766b4df1b7011d7",
@@ -6924,7 +9488,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-657176fd0dff6209",
@@ -6933,7 +9497,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-bbea3352983c2033",
@@ -6942,7 +9506,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-80aeba0846bbd197",
@@ -6951,7 +9515,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-55581be112058bd5",
@@ -6960,7 +9524,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-4338fee0a1d75783",
@@ -7252,7 +9816,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-98ea446e097a9a95",
@@ -7261,7 +9825,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-e902cbe8df8a0b41",
@@ -7391,7 +9955,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-ef480d3fa3165905",
@@ -7400,7 +9964,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-201690debbddab65",
@@ -7409,7 +9973,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-b65546baa01e855b",
@@ -7550,7 +10114,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-6a63fabeceadc42b",
@@ -7568,7 +10132,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-6324ffde67e257fa",
@@ -7577,7 +10141,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-1ef8979f39a2ccc5",
@@ -7586,7 +10150,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
     },
     {
       "event_id": "EV-36a1333e9d930b31",
@@ -7666,7 +10230,305 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-03T00:36:26.156Z"
+      "updated_at": "2026-10-03T05:05:46.789Z"
+    },
+    {
+      "event_id": "EV-85f63371a81b394b",
+      "company_name": "SiMa.ai",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"SiMa.ai\" 2026 funding round investors",
+        "\"SiMa.ai\" official product customers",
+        "\"SiMa.ai\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"SiMa.ai\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"SiMa.ai\" $150 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"SiMa.ai\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "tavily",
+          "query": "\"SiMa.ai\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"SiMa.ai\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"SiMa.ai\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-03T05:05:46.789Z"
+    },
+    {
+      "event_id": "EV-c680e02a02703c11",
+      "company_name": "Good Tape",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Good Tape\" 2026 funding round investors",
+        "\"Good Tape\" official product customers",
+        "\"Good Tape\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Good Tape\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://app.fundz.net/fundings/good-tape-funding-round-253d57",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.finsmes.com/2026/10/good-tape-raises-usd600k-in-seed-funding.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Good Tape\" €600k funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Good Tape\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Good Tape\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Good Tape\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Good Tape\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-03T05:05:46.789Z"
+    },
+    {
+      "event_id": "EV-87d5c0b6feae5c57",
+      "company_name": "doxx.net",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"doxx.net\" 2026 funding round investors",
+        "\"doxx.net\" $38 Million funding announcement",
+        "site:config.doxx.net \"doxx.net\" official product customers",
+        "\"doxx.net\" \"why we invested\"",
+        "\"doxx.net\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"doxx.net\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://cryptobriefing.com/doxxnet-raises-38m-series-a-a16z",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.citybiz.co/article/912779/doxx-net-raises-38-million-series-a-led-by-andreessen-horowitz",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://pitchbook.com/profiles/company/1162891-45",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://traded.co/vc/articles/doxx-net-raises-38m-series-a",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.yahoo.com/technology/ai/articles/doxx-net-raises-38-million-160000646.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.finsmes.com/2026/10/doxx-net-raises-38m-in-series-a-funding.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.axios.com/pro/enterprise-software-deals/2026/10/01/doxxnet-a16z-lyon-networking",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.premieralts.com/companies/doxx-net/valuation",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"doxx.net\" $38 Million funding announcement",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.onebullex.com/news/articles/doxx-net-secures-38m-series-a-from-a16z-for-encrypted-ai-agent-networks-2",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/HostingJournalist/posts/ai-doxxnet-raises-38-million-for-ai-agent-networking-controls-doxxnet-has-raised/1721299010006025",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "tavily",
+          "query": "site:config.doxx.net \"doxx.net\" official product customers",
+          "status": "empty",
+          "count": 0
+        },
+        {
+          "provider": "exa",
+          "query": "site:config.doxx.net \"doxx.net\" official product customers",
+          "status": "empty",
+          "count": 0
+        },
+        {
+          "provider": "bing_rss",
+          "query": "site:config.doxx.net \"doxx.net\" official product customers",
+          "status": "empty",
+          "count": 0
+        },
+        {
+          "provider": "tavily",
+          "query": "\"doxx.net\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.networkworld.com/article/4230194/startup-doxx-net-hands-the-network-controls-to-ai.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"doxx.net\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"doxx.net\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-03T05:05:46.789Z"
+    },
+    {
+      "event_id": "EV-42b6bbea76f4c8cc",
+      "company_name": "Kanurra, Inc.",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Kanurra\" 2026 funding round investors",
+        "\"Kanurra\" official product customers",
+        "\"Kanurra\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Kanurra\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Kanurra\" $6.5 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Kanurra\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Kanurra\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.yahoo.com/healthcare/articles/healthtech-startup-kanurra-raises-6-170000014.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Kanurra\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Kanurra\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-03T05:05:46.789Z"
     }
   ]
 }

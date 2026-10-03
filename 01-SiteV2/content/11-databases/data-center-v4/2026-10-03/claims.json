@@ -1739,5 +1739,93 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
     "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dfe14054491f34f3",
+    "raw_id": "RAW-01780e867b9c822a",
+    "claim_type": "funding",
+    "subject": "SiMa.ai",
+    "predicate": "funding",
+    "object": "$150 million Series C financing",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a8ffcabd0746ca8b"
+    },
+    "source_span": {
+      "raw_id": "RAW-01780e867b9c822a",
+      "start": 468,
+      "end": 645
+    },
+    "source_quote": "SiMa.ai, a leader in Physical AI, today announced $150 million in Series C financing, bringing the total capital raised to $500 million and valuing the company at $1.45 billion.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b0af33a24411dacd",
+    "raw_id": "RAW-d69bef8358c5f91e",
+    "claim_type": "funding",
+    "subject": "Good Tape",
+    "predicate": "funding",
+    "object": "raised €600k from Nordic Makers",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-42ce05e84745e624"
+    },
+    "source_span": {
+      "raw_id": "RAW-d69bef8358c5f91e",
+      "start": 155,
+      "end": 248
+    },
+    "source_quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-50f5811a057adb8a",
+    "raw_id": "RAW-840e7ca3d3d45008",
+    "claim_type": "funding",
+    "subject": "doxx.net",
+    "predicate": "funding",
+    "object": "raised $38 Million in Series A funding",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-d4de81feff2f1fc9"
+    },
+    "source_span": {
+      "raw_id": "RAW-840e7ca3d3d45008",
+      "start": 1129,
+      "end": 1345
+    },
+    "source_quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc. Joel De La Garza, partner at Andreessen Horowitz, joins the doxx.net board.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-98e6f5f5184732a1",
+    "raw_id": "RAW-b90628752666aedf",
+    "claim_type": "funding",
+    "subject": "Kanurra",
+    "predicate": "funding",
+    "object": "raised $6.5 million from six venture capital firms",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-621ae35da431a247"
+    },
+    "source_span": {
+      "raw_id": "RAW-b90628752666aedf",
+      "start": 3816,
+      "end": 3962
+    },
+    "source_quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
   }
 ]
