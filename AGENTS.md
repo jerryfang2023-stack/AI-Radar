@@ -45,6 +45,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 - Project default: GPT-6 Astra with high reasoning; quality review uses the same model, experience review uses medium, and bounded evidence exploration retains GPT-5.6 Terra medium.
 - Complete authorized local changes with proportional validation; resolve routine gaps from current context and ask only for material missing information. A planning or audit-only request remains read-only.
+- For simultaneous module work in different windows, use [independent window submissions](docs/independent-window-submission.md). Keep each window's changes, commit and PR within its declared module scope; integrate shared outputs through their existing gates.
 - Resolve current versions from context rather than copying version pins into role prompts. Preserve accepted upstream artifacts and resume only the failed stage and its dependents.
 - Use scripts for deterministic computation and gates; keep evidence interpretation and final acceptance with the responsible agent. Static inventory coverage is not a successful model evaluation.
 - Skill migration ownership: `agent-workflow/skills/guanlan-skill-editor/references/gpt-6-astra-prompt-contract.md`. Production translation/report provider and V4 data contracts retain independent versions.

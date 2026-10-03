@@ -11,3 +11,5 @@ Effective 2026-10-01, the recurring monitor is financing-only and independently 
 - Main merge and successful Pages precede `financing/publish.mjs`, which updates the lake, knowledge base, financing website, Mini Program and authenticated operations surface; live parity is required.
 
 Existing financing weekly/monthly reports remain separately scheduled publication work and do not expand daily discovery. Historical data contracts and archives do not supply current execution rules.
+
+For parallel changes in different modules, use [independent window submissions](../docs/independent-window-submission.md): one scoped worktree, branch and PR per window. Module PRs do not wait for unrelated local main sync; shared generated outputs and production publication retain their existing acceptance gates.

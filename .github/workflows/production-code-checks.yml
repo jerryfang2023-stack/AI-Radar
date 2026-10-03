@@ -33,6 +33,7 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
+      - run: npm run test:workspace
       - name: Install verified DuckDB CLI for real query regressions
         shell: python
         run: |
