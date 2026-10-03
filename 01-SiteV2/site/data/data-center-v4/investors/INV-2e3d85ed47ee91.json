@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-01",
-    "latest_disclosed_at": "2026-09-29",
+    "latest_disclosed_at": "2026-09-01",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 1
     },
     "round_codes": [
       "seed"
@@ -83,54 +83,9 @@
         "entity_id": "EN-76eda8ba20686b8e",
         "canonical_entity_id": "",
         "name": "Aranya Inc."
-      },
-      {
-        "entity_id": "EN-63c8d803cccb2222",
-        "canonical_entity_id": "",
-        "name": "Kanurra, Inc."
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-d22c11cb3e50963c",
-        "funding_insight_id": "FI-1d05ec70bf3659f7",
-        "event_ids": [
-          "EV-42b6bbea76f4c8cc"
-        ],
-        "company_entity_id": "EN-63c8d803cccb2222",
-        "company_canonical_entity_id": "",
-        "company_name": "Kanurra, Inc.",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "Seed",
-        "amount_original": "$6.5 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 6500000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "650 万美元"
-        },
-        "announced_at": "2026-09-29",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-15295c11c2fd679b",
-            "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-9-29-healthtech-startup-kanurra-raises-65m-to-slash-drug-costs",
-            "source_title": "健康科技初创公司Kanurra融资650万美元，旨在削减药品成本",
-            "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
-            "quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
-            "quote_hash": "afac19b3581eb559391f5c5ae8aa67cc60e9d9e25cabf420d96e730dcce37f9b"
-          }
-        ]
-      },
       {
         "activity_id": "IA-6a719cf247981a9e",
         "funding_insight_id": "FI-47cbfa718574b335",
@@ -206,14 +161,6 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-15295c11c2fd679b",
-        "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-9-29-healthtech-startup-kanurra-raises-65m-to-slash-drug-costs",
-        "source_title": "健康科技初创公司Kanurra融资650万美元，旨在削减药品成本",
-        "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
-        "quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
-        "quote_hash": "afac19b3581eb559391f5c5ae8aa67cc60e9d9e25cabf420d96e730dcce37f9b"
-      },
-      {
         "source_id": "FISRC-89934e15127d3d0d",
         "source_url": "https://siliconangle.com/2026/09/01/aranya-raises-11m-to-turn-bare-metal-servers-into-ai-clusters-in-less-than-48-hours/",
         "source_title": "Aranya融资1100万美元，将裸机服务器在48小时内转化为AI集群",
@@ -267,10 +214,6 @@
           "source_id": "asylum_team"
         },
         {
-          "description": "融资来源记录：Kanurra, Inc. · 种子轮 · 2026-09-29 · 本轮参投 · $6.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-15295c11c2fd679b"
-        },
-        {
           "description": "融资来源记录：Aranya Inc. · 种子轮 · 2026-09-01 · 本轮参投 · $11M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-89934e15127d3d0d"
         }
@@ -308,14 +251,6 @@
           "source_content_hash": "621b06c7ee433ebd3a93029456c31c69b6660371692ea128b5b1ca95dc293f28",
           "quote": "Asylum公司组合页列出Ark Robotics的Seed II领投、The Clearing Company的Seed投资等案例；页面为选择性组合展示。",
           "quote_hash": "11882f045e50e7ba2132f11c0cb117ed06dda2fe4f9be2b635da3400a56cd66b"
-        },
-        {
-          "source_id": "FISRC-15295c11c2fd679b",
-          "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-9-29-healthtech-startup-kanurra-raises-65m-to-slash-drug-costs",
-          "source_title": "健康科技初创公司Kanurra融资650万美元，旨在削减药品成本",
-          "source_content_hash": "8c5e0678c6daba2016e6a355023c47914b6024e27b47b56f78aba380c7247184",
-          "quote": "Kanurra has raised $6.5 million from Necessary Ventures, Asylum Ventures, Daybreak Ventures, Virtue VC, Ford Street Ventures, and Browder Capital.",
-          "quote_hash": "afac19b3581eb559391f5c5ae8aa67cc60e9d9e25cabf420d96e730dcce37f9b"
         },
         {
           "source_id": "FISRC-89934e15127d3d0d",

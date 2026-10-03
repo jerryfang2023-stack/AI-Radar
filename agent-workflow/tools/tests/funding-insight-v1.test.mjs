@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import { taxonomyConsistencyProblems } from "../assert-taxonomy-consistency-v4-1.mjs";
+import { classificationInput } from "../../financing/taxonomy.mjs";
 import {
   FUNDING_INDUSTRY_IDS,
   FUNDING_INSIGHT_VERSION,
@@ -3120,12 +3121,14 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
     fs.mkdirSync(entityIndexDir, { recursive: true });
     fs.mkdirSync(productDir, { recursive: true });
     const blocked = validCard();
+    const publicCandidate = validCard();
+    publicCandidate.as_of_date = "2026-10-03";
     blocked.funding_insight_id = "FI-2";
     blocked.triggered_by_event_id = "EV-2";
     blocked.financing.investors = [];
     fs.writeFileSync(path.join(bundleDir, "2026-07-26.json"), JSON.stringify({
       meta: { date: "2026-07-26", generated_at: "2026-07-26T09:00:00.000Z" },
-      cards: [validCard(), blocked],
+      cards: [publicCandidate, blocked],
       queue: [],
     }));
     fs.writeFileSync(path.join(dataDir, "opportunity-evidence-v2.json"), JSON.stringify({
@@ -3190,6 +3193,15 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
     assert.match(data.cards[0].links.company, /detail=entity&id=EN-1/u);
     assert.match(data.cards[0].links.relation_map, /view=relations&entity=EN-1/u);
     assert.equal(data.cards[0].analysis.related_direction.title, "企业智能代理的可重复交付");
+    const decisionsFile = path.join(tempRoot, "01-SiteV2/content/12-applications/financing-taxonomy/decisions.json");
+    fs.mkdirSync(path.dirname(decisionsFile), { recursive: true });
+    const input = classificationInput(publicCandidate);
+    fs.writeFileSync(decisionsFile, JSON.stringify({ decisions: { [input.id]: { scope: "review", input_hash: input.input_hash } } }));
+    assert.equal(buildFundingInsightsFrontstage(tempRoot, { publicScope: true }).cards.length, 0);
+    fs.writeFileSync(decisionsFile, JSON.stringify({ decisions: { [input.id]: { scope: "included", input_hash: "stale" } } }));
+    assert.equal(buildFundingInsightsFrontstage(tempRoot, { publicScope: true }).cards.length, 0);
+    fs.writeFileSync(decisionsFile, JSON.stringify({ decisions: { [input.id]: { scope: "included", input_hash: input.input_hash } } }));
+    assert.equal(buildFundingInsightsFrontstage(tempRoot, { publicScope: true }).cards.length, 1);
   } finally {
     fs.rmSync(tempRoot, { recursive: true, force: true });
   }

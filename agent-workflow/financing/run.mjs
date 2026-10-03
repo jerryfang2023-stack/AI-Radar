@@ -52,6 +52,7 @@ export function productionPlan(date, directory, { extract = true } = {}) {
     ], outputs: ['01-SiteV2/site/data/funding-insights-v1.json'] },
     { id: 'financing_tags', commands: [
       ['agent-workflow/financing/classify.mjs', '--write=true'],
+      [site('build-funding-insights-frontstage')],
       ['agent-workflow/financing/catalog.mjs'],
     ], outputs: ['01-SiteV2/site/data/financing-catalog-v1.json'] },
     { id: 'release_gate', commands: [
