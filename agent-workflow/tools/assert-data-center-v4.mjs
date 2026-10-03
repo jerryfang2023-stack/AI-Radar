@@ -12,6 +12,7 @@ import { buildEventDisplayTitle } from "./event-public-title.mjs";
 import { validateTaxonomy } from "./assert-tag-taxonomy-v4.mjs";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 import { runtimeSourceSnapshot } from "./lib/runtime-source-snapshot.mjs";
+import { reviewedAiContextQuotes } from "./model-assist-v1.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -139,6 +140,9 @@ export function evaluateBundle(bundle, taxonomy, options = {}) {
   const rawById = new Map(hydratedRawDocuments.map((item) => [item.raw_id, item]));
   const rawBySourceId = new Map(hydratedRawDocuments.map((item) => [item.source_artifact_id, item]));
   const claimById = new Map(bundle.claims.map((item) => [item.claim_id, item]));
+  const assistFile = path.join(root, "01-SiteV2/content/11-databases/model-assist-v1", `${bundle.manifest.date}.json`);
+  const assistCandidates = new Map((options.modelAssist?.candidates || (fs.existsSync(assistFile) ? readJson(assistFile).candidates : []) || [])
+    .map((item) => [item.candidate_id, item]));
   const entityById = new Map(bundle.entities.map((item) => [item.entity_id, item]));
   const eventById = new Map(bundle.canonical_events.map((item) => [item.event_id, item]));
   const tagIds = new Set(taxonomy.tags.filter((tag) => tag.status === "active").map((tag) => tag.id));
@@ -214,7 +218,15 @@ export function evaluateBundle(bundle, taxonomy, options = {}) {
     if (titleIssue) failures.push(`${event.event_id}: canonical event uses an ineligible source title (${titleIssue})`);
     const relevance = eventAiRelevanceEvidence({
       title: sourceRaw?.title_zh || sourceRaw?.title_original || event.object,
-      claims: event.claim_refs.map((id) => claimById.get(id)).filter(Boolean),
+      claims: [
+        ...event.claim_refs.map((id) => claimById.get(id)).filter(Boolean),
+        ...event.claim_refs.flatMap((id) => {
+          const claim = claimById.get(id);
+          const candidate = assistCandidates.get(claim?.qualifiers?.model_candidate_id);
+          return candidate && candidate.raw_id === claim.raw_id
+            ? reviewedAiContextQuotes(candidate, rawById.get(claim.raw_id)?.body_clean || "") : [];
+        }),
+      ],
       entityNames: event.entities.map((id) => entityById.get(id)?.canonical_name).filter(Boolean),
       eventType: event.event_type
     });

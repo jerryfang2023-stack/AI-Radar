@@ -2847,3 +2847,31 @@ test("reviewed exact-span QA repairs replace headline recipients; stale and unre
     assert.notEqual(build(c).claims[0]?.subject, "上海喜梨信息科技有限公司");
   }
 });
+
+test("reviewed AI context establishes scope without adding unrelated funding metrics", () => {
+  const funding = "Kanurra has raised $6.5 million from venture capital firms.";
+  const ai = "Kanurra's AI-powered model audits drug expenditures.";
+  const body = `${funding} Drug costs may exceed $20. ${ai}`;
+  const source = entry("kanurra-reviewed-context", "Healthtech Startup Kanurra Raises $6.5M", body);
+  const candidate = {
+    ...acceptedModelCandidate(source, [{ event_type: "funding", subject: "Kanurra", object: "raised $6.5 million", evidence_index: 0 }], [
+      { start: 0, end: funding.length, quote: funding },
+      { start: body.indexOf(ai), end: body.indexOf(ai) + ai.length, quote: ai },
+    ]),
+    task_type: "qa_repair",
+    source_hash: crypto.createHash("sha256").update(body).digest("hex").slice(0, 16),
+    review: { decision: "accept", reviewer: "fixture" },
+  };
+  candidate.proposal.action = "extract_claim";
+  const bundle = buildBundle([source], taxonomy, date, "2026-07-16T00:00:00Z", { modelAssist: { candidates: [candidate] } });
+  const event = bundle.canonical_events.find((row) => row.event_type === "funding");
+  assert.ok(event);
+  assert.deepEqual(event.metrics, ["$6.5 million"]);
+  assert.equal(bundle.claims.find((row) => row.claim_type === "funding")?.source_quote, funding);
+  candidate.raw_id = bundle.claims.find((row) => row.claim_type === "funding").raw_id;
+  const hydratedRawDocuments = bundle.raw_documents.map((raw) => ({ ...raw, body_clean: body }));
+  const reviewed = evaluateBundle(bundle, taxonomy, { modelAssist: { candidates: [candidate] }, hydratedRawDocuments });
+  assert.equal(reviewed.failures.some((failure) => failure.includes("AI industry scope gate")), false, JSON.stringify(reviewed.failures));
+  const unreviewed = evaluateBundle(bundle, taxonomy, { modelAssist: { candidates: [{ ...candidate, review: undefined }] }, hydratedRawDocuments });
+  assert.equal(unreviewed.failures.some((failure) => failure.includes("AI industry scope gate")), true);
+});

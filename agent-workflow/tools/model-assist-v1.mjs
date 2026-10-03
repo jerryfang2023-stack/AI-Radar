@@ -153,6 +153,15 @@ export function evaluateModelAssistCandidate(candidate, body = "") {
   return [...new Set(problems)];
 }
 
+export function reviewedAiContextQuotes(candidate, body = "") {
+  // Extra reviewed spans establish industry scope; only claim spans carry event metrics.
+  if (candidate?.task_type !== "qa_repair" || candidate.status !== "accepted"
+      || candidate.review?.decision !== "accept" || !candidate.review?.reviewer
+      || candidate.proposal?.action !== "extract_claim"
+      || evaluateModelAssistCandidate(candidate, body).length) return [];
+  return (candidate.evidence || []).slice(1).map((item) => item.quote);
+}
+
 export function withGateResult(candidate, body = "") {
   const reviewedAccepted = REVIEW_REQUIRED_TASKS.has(candidate?.task_type)
     && candidate?.status === "accepted"
