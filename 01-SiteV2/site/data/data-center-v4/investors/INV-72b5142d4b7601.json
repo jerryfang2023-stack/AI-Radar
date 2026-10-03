@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "IQT 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
+      "summary": "Odyssey 官方融资公告将 IQT 列为 3.1 亿美元 Series B 参与方；IQT 官网提供该机构的官方介绍。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Odyssey 官方融资公告将 IQT 列为 Series B 参与方。",
+          "source_id": "PROFILE-af63a556131c47a96de1"
+        },
         {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c66141f186c9e128"
@@ -152,6 +156,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-af63a556131c47a96de1",
+          "source_url": "https://www.odyssey.systems/our-series-b",
+          "source_title": "Our $310 Million Fundraise to Accelerate World Simulation",
+          "source_content_hash": "0d0634656bd65a0f021e46eb5af4bf661e74ef1ec0c3d2a222dd4723442be6e7",
+          "quote": "B at a $1.45 billion valuation led by Natural Capital, with participation from Amazon, GV, AMD Ventures, EQT, IQT, and others. They join existing investors including Jeff Dean, Elad Gil, Qasar Younis, Kyle Vogt, Garry Tan, alongside researchers from OpenAI, DeepMind, MSL, Recursive, and Thinking Machines. This investment significantly acc",
+          "quote_hash": "511f146705b6467cc19e6d4a654a00315603a850f3c365ab8a723f63c3be4737"
+        },
+        {
+          "source_id": "PROFILE-77afd210297a3d00f1c8",
+          "source_url": "https://www.iqt.org/about",
+          "source_title": "IQT | About | Our History",
+          "source_content_hash": "1934cf4965faba5c3ab02f612e5d995421fd904231f21ef3a668d804dfae2982",
+          "quote": "IQT | About | Our History This website uses cookies, pixels, and similar technologies (“cookies”), some of which are provided by third parties, to enable website features and functionality; measure, analyze, and improve site perfo",
+          "quote_hash": "7c51d5dd6d88174f67305843edaf2eddbfda267762b4c6cd6873d79dde9049d4"
+        },
         {
           "source_id": "FISRC-c66141f186c9e128",
           "source_url": "https://the-decoder.com/amazon-nvidia-and-amd-bet-310-million-on-ai-startup-building-3d-world-models",
@@ -161,7 +181,11 @@
           "quote_hash": "2ecc36a6b793aed899f427b6e097e9eecefce0cef0729237eb10752bfea4790b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
