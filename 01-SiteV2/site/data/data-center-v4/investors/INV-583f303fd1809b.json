@@ -380,12 +380,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "三七互娱 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "三七互娱官网首页将“构建投资企业生态圈”列在公司的多元产业布局中；仅据此记录企业投资生态定位，不将其归类为专业基金管理人。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "官网首页呈现的投资定位",
+          "value": "在多元产业布局中构建投资企业生态圈。",
+          "source_id": "PROFILE-INV-583f303fd1809b-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -401,8 +404,32 @@
           "source_id": "FISRC-670f261d0c740ea4"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "所采页面未公开具体基金管理主体或投资组合明细，因此仅作 activity-only 记录。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网首页",
+          "value": "三七互娱",
+          "url": "https://www.37wan.net/index.html?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-583f303fd1809b-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-583f303fd1809b-1",
+          "source_url": "https://www.37wan.net/index.html?source_capture=2026-10-03",
+          "source_title": "三七互娱官方网站_三七互娱，玩心创造世界",
+          "source_content_hash": "b5875803316b0b8ab80661c0048f5d400ee68376554659abd92f07b97b9c93de",
+          "quote": "构建投资企业生态圈",
+          "quote_hash": "59fb4353082c99467351a8b67c1f8b1c86cdb0a6fcc253b2e3d14542fe07eb7e"
+        },
         {
           "source_id": "FISRC-85ff43aa8c582e53",
           "source_url": "https://m.caixin.com/m/2026-08-28/102478786.html",
@@ -428,7 +455,7 @@
           "quote_hash": "949e52ed7fc91c5c391dca3ae63929572d980eedeba18df216921656cc4e27f5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

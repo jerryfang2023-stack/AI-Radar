@@ -209,13 +209,22 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "腾讯 (Tencent) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "腾讯官网将投资列为公司核心战略之一，并说明其投资以创造用户价值为核心逻辑。此条记录腾讯的公司级投资活动，不将母公司等同于独立风险投资基金管理人。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "公司级投资定位",
+          "value": "腾讯将投资列为核心战略之一，核心逻辑为创造用户价值。",
+          "source_id": "PROFILE-INV-4f02a34efa5bda-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-03-10",
+          "description": "腾讯发布公司投资策略说明。",
+          "source_id": "PROFILE-INV-4f02a34efa5bda-2"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-06-08 · 2024年8月轮次领投；后续轮次参投 · 20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -224,14 +233,42 @@
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4595161c40aec2c1"
-        },
-        {
-          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6f84e84fa4821cb0"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "来源是腾讯官网对投资策略的官方说明；仅作为已公开的公司级投资定位记录，文中动态项目数量不纳入档案。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "腾讯官方投资策略文章",
+          "value": "创造价值是投资的关键",
+          "url": "https://www.tencent.com/zh-cn/value-creation-is-pivotal-to-our-investments/",
+          "source_id": "PROFILE-INV-4f02a34efa5bda-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-4f02a34efa5bda-1",
+          "source_url": "https://www.tencent.com/zh-cn/value-creation-is-pivotal-to-our-investments/",
+          "source_title": "创造价值是投资的关键 - Tencent",
+          "source_content_hash": "bc0af9eddd97b88c835abdca877fe6182c0c59f1f804c98ea3f86cd3a12c49d4",
+          "quote": "投资是腾讯的核心战略之一，我们投资的核心逻辑是“创造价值”",
+          "quote_hash": "d5e8f07b441a31e904f3d7d1ab6ee29fdb12a172c519f8fafb559bd26813be46"
+        },
+        {
+          "source_id": "PROFILE-INV-4f02a34efa5bda-2",
+          "source_url": "https://www.tencent.com/zh-cn/value-creation-is-pivotal-to-our-investments/",
+          "source_title": "创造价值是投资的关键 - Tencent",
+          "source_content_hash": "bc0af9eddd97b88c835abdca877fe6182c0c59f1f804c98ea3f86cd3a12c49d4",
+          "quote": "2020年03月10日",
+          "quote_hash": "4d66d53c74ba3cf71d43e274c7f52d673ac3c15988c422cae6b31179d2ea05ac"
+        },
         {
           "source_id": "FISRC-0199034a5417695f",
           "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
@@ -257,7 +294,7 @@
           "quote_hash": "963adcb5fcfc2c94b94fbcd5a1bd80a5c0e94a4714e420661e04196d57f245b3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

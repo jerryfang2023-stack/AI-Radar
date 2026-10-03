@@ -178,12 +178,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "杭州金投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "杭州市金融投资集团官网将集团定位为产业投资平台，覆盖金融服务、投资运营和数据产业，并介绍其自2012年组建。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "组建时间",
+          "value": "2012年。",
+          "source_id": "PROFILE-INV-539238840c39c2-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "产业投资平台。",
+          "source_id": "PROFILE-INV-539238840c39c2-2"
+        },
+        {
+          "field": "business_segments",
+          "label": "官网列出的业务板块",
+          "value": "金融服务、投资运营、数据产业。",
+          "source_id": "PROFILE-INV-539238840c39c2-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,8 +210,40 @@
           "source_id": "FISRC-b8b7d456eceee943"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按官网集团简介记录母集团定位及业务板块；页面所列并购基金数据具有时点性，未作为固定档案字段。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "集团简介",
+          "value": "杭州市金融投资集团",
+          "url": "https://www.hzfi.cn/jsp/walkintogold/groupintro.jsp?colId=1701&source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-539238840c39c2-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-539238840c39c2-1",
+          "source_url": "https://www.hzfi.cn/jsp/walkintogold/groupintro.jsp?colId=1701&source_capture=2026-10-03",
+          "source_title": "杭州市金融投资集团",
+          "source_content_hash": "cf1faff09db09f57de5fe5ed5d095510d984bd22a970b9f676160a12f737dffa",
+          "quote": "杭州市金融投资集团自2012年组建以来",
+          "quote_hash": "1f70fa45ae7f0fe3643a5fa1c94306d84e944f5de4204c4f6ee524d89aa14afc"
+        },
+        {
+          "source_id": "PROFILE-INV-539238840c39c2-2",
+          "source_url": "https://www.hzfi.cn/jsp/walkintogold/groupintro.jsp?colId=1701&source_capture=2026-10-03",
+          "source_title": "杭州市金融投资集团",
+          "source_content_hash": "cf1faff09db09f57de5fe5ed5d095510d984bd22a970b9f676160a12f737dffa",
+          "quote": "拥有金融服务、投资运营、数据产业三大板块。",
+          "quote_hash": "90bde8fdd1d287c752a77bc9c65e63d34982552fceef9aa510268c1393d3b59e"
+        },
         {
           "source_id": "FISRC-ee3064edf7c871f4",
           "source_url": "https://www.qbitai.com/2026/02/381766.html",

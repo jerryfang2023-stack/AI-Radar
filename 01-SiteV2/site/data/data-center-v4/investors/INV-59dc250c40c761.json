@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Param Hansa Values 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Param Hansa Values官网称其为Swapna和Dheeraj Pandey的私人投资公司，通过直接投资公私营企业及配置基金、风险投资和私募股权进行投资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "Swapna与Dheeraj Pandey的私人投资公司。",
+          "source_id": "PROFILE-INV-59dc250c40c761-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "直接投资公私营企业，并间接配置基金、风险投资和私募股权。",
+          "source_id": "PROFILE-INV-59dc250c40c761-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-212b01f9c4f8d05c"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网介绍记录公司定位及投资方式，不补充未公开的法律实体名称或基金规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Param Hansa Values",
+          "url": "https://phvalues.org/?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-59dc250c40c761-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-59dc250c40c761-1",
+          "source_url": "https://phvalues.org/?source_capture=2026-10-03",
+          "source_title": "PARAM HANSA VALUES",
+          "source_content_hash": "413538cf9ecb2284ea40c9aa2250b4dedba36209ac3b2bd71da5807601ba6171",
+          "quote": "Param Hansa Values is Swapna and Dheeraj Pandey's private investment firm.",
+          "quote_hash": "29acbdf963ebbe5da92687225912b80232516775a417177bd00d1ceedbb50d04"
+        },
+        {
+          "source_id": "PROFILE-INV-59dc250c40c761-2",
+          "source_url": "https://phvalues.org/?source_capture=2026-10-03",
+          "source_title": "PARAM HANSA VALUES",
+          "source_content_hash": "413538cf9ecb2284ea40c9aa2250b4dedba36209ac3b2bd71da5807601ba6171",
+          "quote": "Our approach combines direct investments in public and private companies with indirect capital allocations to funds, venture capital, and private equity.",
+          "quote_hash": "87a18d3474fd43af9e69f84087a891b4add9d423404e97d8420401769bdc0296"
+        },
         {
           "source_id": "FISRC-212b01f9c4f8d05c",
           "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
@@ -161,7 +202,7 @@
           "quote_hash": "59506ba0808ee0c2c8d9ac25f14f284dee11383679000e5830940658d2c79dd4"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

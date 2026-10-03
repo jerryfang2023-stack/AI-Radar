@@ -178,12 +178,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Entrepreneurs First 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Entrepreneurs First官网称其由Alice Bentinck和Matt Clifford创立，是一家投资创业人才的全球投资机构。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "投资创业人才的全球投资机构。",
+          "source_id": "PROFILE-INV-58bffea5a9fd6d-1"
+        },
+        {
+          "field": "founders",
+          "label": "官网列出的创始人",
+          "value": "Alice Bentinck 与 Matt Clifford。",
+          "source_id": "PROFILE-INV-58bffea5a9fd6d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,8 +204,32 @@
           "source_id": "FISRC-b8ac45c45da22b49"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据EF官网About页面自述；未记录随时间变化的组合公司估值总额。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网About页面",
+          "value": "Entrepreneurs First",
+          "url": "https://www.joinef.com/about/?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-58bffea5a9fd6d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-58bffea5a9fd6d-1",
+          "source_url": "https://www.joinef.com/about/?source_capture=2026-10-03",
+          "source_title": "Investing in Talent | Entrepreneurs First",
+          "source_content_hash": "b6a310cdad40fd7630f1066749ddb1712e0bf8fbe58f32abb57fc159d619e7be",
+          "quote": "Founded by Alice Bentinck and Matt Clifford, Entrepreneurs First is a category-defining global investor in entrepreneurial talent.",
+          "quote_hash": "7ba9b6814c21933cc886d0aec355799d096e72de90a29cdcf46185a1f3327a39"
+        },
         {
           "source_id": "FISRC-d5d5c858ca2bcd66",
           "source_url": "https://www.balderton.com/news/davis-raises-5-5-million-pre-seed-to-accelerate-early-stage-real-estate-development-from-months-to-days/",
@@ -214,7 +247,7 @@
           "quote_hash": "d40641b698e2fe5a5d8acdc9e6f890f4c2be6865312d99aa85c5e18e6972b91d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

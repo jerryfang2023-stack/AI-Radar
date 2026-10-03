@@ -233,12 +233,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "惠远资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "惠远资本官网将其定位为由专业投资团队与国资共同设立、面向生命科学和人工智能等硬科技领域的市场化投资机构。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2019年。",
+          "source_id": "PROFILE-INV-577add769941c7-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "市场化投资机构。",
+          "source_id": "PROFILE-INV-577add769941c7-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点领域",
+          "value": "生命科学、人工智能等硬科技领域。",
+          "source_id": "PROFILE-INV-577add769941c7-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -254,8 +269,32 @@
           "source_id": "FISRC-f3ef8441c682402c"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据惠远资本品牌官网自述；不推断“中民惠远山东股权投资管理有限公司”与全部关联主体之间的法律关系。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "惠远资本",
+          "url": "https://www.grandmountcapital.com/?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-577add769941c7-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-577add769941c7-1",
+          "source_url": "https://www.grandmountcapital.com/?source_capture=2026-10-03",
+          "source_title": "惠远资本-中民惠远山东股权投资管理有限公司",
+          "source_content_hash": "1efcf874fc865c98e864c59ffd6ff0fe3dba92bccedd1217de7657c7c38bbf95",
+          "quote": "惠远资本成立于2019年，由专业投资团队与国资共同设立",
+          "quote_hash": "8c1093d13996a4da0c262d92eecddb7971946d1eeeb2e9a21d81dfb57a89f241"
+        },
         {
           "source_id": "FISRC-9476e3eff9c1e8fe",
           "source_url": "https://news.pedaily.cn/202607/566238.shtml",
@@ -281,7 +320,7 @@
           "quote_hash": "b5930e51a545b2a0ac657244a6b239551b85ef525bf695bde397377c4a1b0a3a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

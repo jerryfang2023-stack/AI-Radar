@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "元禾辰坤 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "元禾辰坤官网将其定位为中国市场化专业母基金，由元禾辰坤团队受托管理；官网介绍其于2006年由元禾控股和国家开发银行共同发起设立。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "中国市场化的专业母基金。",
+          "source_id": "PROFILE-INV-53979299da5e99-1"
+        },
+        {
+          "field": "management_role",
+          "label": "管理关系",
+          "value": "由元禾辰坤团队受托管理。",
+          "source_id": "PROFILE-INV-53979299da5e99-2"
+        },
+        {
+          "field": "founded",
+          "label": "官网列示的设立年份",
+          "value": "2006年。",
+          "source_id": "PROFILE-INV-53979299da5e99-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,48 @@
           "source_id": "FISRC-957ccf12eb78ad84"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据官网首页关于设立背景及母基金定位的自述；不采纳页面随时间更新的管理规模数字。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "元禾辰坤",
+          "url": "https://www.orizafofs.com/?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-53979299da5e99-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-53979299da5e99-1",
+          "source_url": "https://www.orizafofs.com/?source_capture=2026-10-03",
+          "source_title": "元禾辰坤股权投资基金管理中心 | 专业母基金管理",
+          "source_content_hash": "835a83f9ed1661a94d02c235950af1531365286d03071dfb0fc0199fa84fe7da",
+          "quote": "中国市场化的专业母基金",
+          "quote_hash": "d6cc255d1f27d8d75ce40eacf7b9e236346e47447a0ae946167025ac0eda8b64"
+        },
+        {
+          "source_id": "PROFILE-INV-53979299da5e99-2",
+          "source_url": "https://www.orizafofs.com/?source_capture=2026-10-03",
+          "source_title": "元禾辰坤股权投资基金管理中心 | 专业母基金管理",
+          "source_content_hash": "835a83f9ed1661a94d02c235950af1531365286d03071dfb0fc0199fa84fe7da",
+          "quote": "由元禾辰坤团队受托管理",
+          "quote_hash": "7c4902fbda464d7dafd7e4d7742ccc2b1dd7c59e23b61bd8714d534abf84a081"
+        },
+        {
+          "source_id": "PROFILE-INV-53979299da5e99-3",
+          "source_url": "https://www.orizafofs.com/?source_capture=2026-10-03",
+          "source_title": "元禾辰坤股权投资基金管理中心 | 专业母基金管理",
+          "source_content_hash": "835a83f9ed1661a94d02c235950af1531365286d03071dfb0fc0199fa84fe7da",
+          "quote": "2006年",
+          "quote_hash": "6b0b792da4f937120fb352a0891caf5aa232d77f06ab7e6a54c58aab60e84132"
+        },
         {
           "source_id": "FISRC-957ccf12eb78ad84",
           "source_url": "https://news.pedaily.cn/202605/563918.shtml",

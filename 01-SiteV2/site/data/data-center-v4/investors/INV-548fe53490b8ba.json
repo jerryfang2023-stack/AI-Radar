@@ -121,12 +121,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中国平安 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "中国平安官网将集团描述为综合金融集团，并列出由多家子公司构成的资产管理平台；平安信托官网介绍其私募股权投资业务聚焦科技、高端制造、绿色能源和医疗健康。",
+      "facts": [
+        {
+          "field": "asset_management_structure",
+          "label": "集团架构",
+          "value": "官网所列资产管理业务平台由平安信托、平安证券、平安资产管理、平安海外控股、平安资产管理（香港）、平安基金和平安融资租赁等组成。",
+          "source_id": "PROFILE-INV-548fe53490b8ba-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "关联私募股权业务关注领域",
+          "value": "科技创新、高端制造、碳中和及绿色能源、医疗健康。",
+          "source_id": "PROFILE-INV-548fe53490b8ba-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +143,40 @@
           "source_id": "FISRC-d13c49d0024ccf9b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "此档案仅记录集团及关联业务事实。私募股权投资由具体业务平台开展，不据此把中国平安母集团等同于单一私募基金管理人。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "集团架构",
+          "value": "中国平安",
+          "url": "https://www.pingan.cn/about/corporate-architecture.shtml?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-548fe53490b8ba-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-548fe53490b8ba-1",
+          "source_url": "https://www.pingan.cn/about/corporate-architecture.shtml?source_capture=2026-10-03",
+          "source_title": "平安公司架构-我们是谁-关于平安-中国平安",
+          "source_content_hash": "aeac5f9d207b2ab8ca4a624e9ec088af2a7cffb71c2b2239c5c290fe976a2d3b",
+          "quote": "平安信托、平安证券、平安资产管理、平安海外控股、平安资产管理（香港）、平安基金和平安融资租赁共同构成本公司资产管理业务平台",
+          "quote_hash": "3aa32c150d6976d164529925ec12c266e546b06de92c8b8ab3533df2261afaa8"
+        },
+        {
+          "source_id": "PROFILE-INV-548fe53490b8ba-2",
+          "source_url": "https://trust.pingan.com/business-area/stock-invest?source_capture=2026-10-03",
+          "source_title": "业务领域 | 股权投资_中国平安",
+          "source_content_hash": "f9b4c43209dd3b09ce038ddedb6d7ab03a4a0d8956dbbf6d194f4bd9993ffff0",
+          "quote": "私募股权投资业务聚焦科技创新及高端制造、“碳中和”及绿色能源、医疗健康等核心领域。",
+          "quote_hash": "60f8b54683fa413161014eb6e38a87dc05e4fb5e64177b24d1c23229b3b2551e"
+        },
         {
           "source_id": "FISRC-d13c49d0024ccf9b",
           "source_url": "https://36kr.com/p/3225593100057736",
@@ -145,7 +186,7 @@
           "quote_hash": "37f36b74f042ee8b26b38b5e883e828ee3a8627a4d6d8c5c0db95451601e18c2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

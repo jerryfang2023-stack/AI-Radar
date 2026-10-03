@@ -138,12 +138,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "金雨茂物 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "金雨茂物官网列明金雨茂物投资管理股份有限公司的私募股权基金管理、直投及增值服务业务，并称私募股权基金管理为核心业务。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网列示名称",
+          "value": "金雨茂物投资管理股份有限公司。",
+          "source_id": "PROFILE-INV-6070762070ef1c-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网披露的业务类型",
+          "value": "私募股权基金管理、直接投资及增值服务。",
+          "source_id": "PROFILE-INV-6070762070ef1c-2"
+        },
+        {
+          "field": "core_business",
+          "label": "官网披露的核心业务",
+          "value": "私募股权投资基金管理。",
+          "source_id": "PROFILE-INV-6070762070ef1c-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +166,40 @@
           "source_id": "FISRC-fdfe58e2e68c7e9e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据公司官网自述；页面中的近期新闻和动态规模数字未作为稳定档案字段。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "金雨茂物",
+          "url": "https://www.jolmo.net/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-6070762070ef1c-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6070762070ef1c-1",
+          "source_url": "https://www.jolmo.net/?source_capture=2026-10-03&cycle=9",
+          "source_title": "金雨茂物",
+          "source_content_hash": "ebbf29bff100e4d34cc22dbceee9bad403887ec3ab0beb68235e20a8143f684d",
+          "quote": "金雨茂物投资管理股份有限公司 （原名：江苏金茂投资管理股份有限公司，简称“金雨茂物”，股票代码：834960）",
+          "quote_hash": "617942de3f3544e9efad88d1ce93307a135a6941dbfa42118e64b7e35e239688"
+        },
+        {
+          "source_id": "PROFILE-INV-6070762070ef1c-2",
+          "source_url": "https://www.jolmo.net/?source_capture=2026-10-03&cycle=9",
+          "source_title": "金雨茂物",
+          "source_content_hash": "ebbf29bff100e4d34cc22dbceee9bad403887ec3ab0beb68235e20a8143f684d",
+          "quote": "私募股权投资基金管理业务是公司目前的核心业务",
+          "quote_hash": "dc12b0797a1596f751ac597bd2200ca9a3d897a589b1c0398d689ff31c213b1f"
+        },
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",

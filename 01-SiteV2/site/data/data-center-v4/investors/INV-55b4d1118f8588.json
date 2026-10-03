@@ -121,12 +121,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "稼沃资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "稼沃资本官网称其创立于2015年，投资覆盖新能源与新材料、医疗健康、信息技术及企业服务等行业。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "创立年份",
+          "value": "2015年。",
+          "source_id": "PROFILE-INV-55b4d1118f8588-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "新能源与新材料、医疗健康、信息技术与企业服务。",
+          "source_id": "PROFILE-INV-55b4d1118f8588-2"
+        },
+        {
+          "field": "legal_name",
+          "label": "官网版权主体",
+          "value": "上海稼沃投资有限公司。",
+          "source_id": "PROFILE-INV-55b4d1118f8588-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +149,40 @@
           "source_id": "FISRC-c85560272b80b0a0"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据上海稼沃投资有限公司官网自述记录品牌及投资方向；未使用官网披露的累计管理规模作为时点字段。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "稼沃资本",
+          "url": "https://www.hvcap.cn/?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-55b4d1118f8588-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-55b4d1118f8588-1",
+          "source_url": "https://www.hvcap.cn/?source_capture=2026-10-03",
+          "source_title": "稼沃资本",
+          "source_content_hash": "e941895224236a100557f56d8e3775290a8fe2c00f1120f0d7062f73fe921363",
+          "quote": "稼沃资本创立于2015年",
+          "quote_hash": "6b08076a0a96cdea46a79705af0dc113de5e1d2ff3202c18fe3eb626a9b3745c"
+        },
+        {
+          "source_id": "PROFILE-INV-55b4d1118f8588-2",
+          "source_url": "https://www.hvcap.cn/?source_capture=2026-10-03",
+          "source_title": "稼沃资本",
+          "source_content_hash": "e941895224236a100557f56d8e3775290a8fe2c00f1120f0d7062f73fe921363",
+          "quote": "稼沃资本先后在新能源/新材料、医疗健康、信息技术/企业服务等行业成功布局并陆续成功退出。",
+          "quote_hash": "5750413b80203af8e66bb0ac55370a64770754bedbd2ef812546c0c39fadd335"
+        },
         {
           "source_id": "FISRC-c85560272b80b0a0",
           "source_url": "https://finance.sina.com.cn/stock/t/2026-01-05/doc-inhfhavn6757476.shtml",
@@ -145,7 +192,7 @@
           "quote_hash": "5c1ddc1c7182a4a2f5184146029c3c33367b858dbbeacf2e70466b9c3af58c9b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

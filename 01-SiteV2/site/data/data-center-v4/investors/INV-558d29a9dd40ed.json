@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BDT & MSD 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "BDT & MSD官网称其为面向家族企业创建者的商人银行，提供咨询、协同资本及投资解决方案，并于2023年由BDT & Company与MSD Partners合并形成。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "商人银行，提供咨询、协同资本和投资解决方案。",
+          "source_id": "PROFILE-INV-558d29a9dd40ed-1"
+        },
+        {
+          "field": "formed",
+          "label": "合并组建年份",
+          "value": "2023年。",
+          "source_id": "PROFILE-INV-558d29a9dd40ed-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-3581a245f48a1be6"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据合并后机构官网介绍；机构同时开展咨询和投资活动，未把商人银行整体简化为单一私募基金。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "BDT & MSD Partners",
+          "url": "https://bdtmsd.com/?source_capture=2026-10-03",
+          "source_id": "PROFILE-INV-558d29a9dd40ed-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-558d29a9dd40ed-1",
+          "source_url": "https://bdtmsd.com/?source_capture=2026-10-03",
+          "source_title": "BDT &amp; MSD Partners | Home",
+          "source_content_hash": "ac82f1153a62b53f6989cff2ecb87b9d1ba61fe03d85c84a5caf57a8ffa5b9e8",
+          "quote": "The merchant bank to generational builders providing trusted advice, aligned capital, and differentiated investment solutions to support enduring growth and impact",
+          "quote_hash": "3bc809e64fae9c96fe5f5b90ffafed283c661fadf84b2c326e584d8f6dcae062"
+        },
+        {
+          "source_id": "PROFILE-INV-558d29a9dd40ed-2",
+          "source_url": "https://bdtmsd.com/?source_capture=2026-10-03",
+          "source_title": "BDT &amp; MSD Partners | Home",
+          "source_content_hash": "ac82f1153a62b53f6989cff2ecb87b9d1ba61fe03d85c84a5caf57a8ffa5b9e8",
+          "quote": "BDT & MSD was formed in 2023",
+          "quote_hash": "178cdc90b81d6efe4313c0557ddcdb724ceef94be684c810aa08a830f66037bb"
+        },
         {
           "source_id": "FISRC-3581a245f48a1be6",
           "source_url": "https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/",
@@ -161,7 +202,7 @@
           "quote_hash": "45b0acb47dea211ecb169731a68de716cb882c326671dfb0fee956f83a5ff028"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

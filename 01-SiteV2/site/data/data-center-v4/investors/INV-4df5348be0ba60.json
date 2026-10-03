@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Dr. Julian Blessin 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "德国联邦议院游说登记册将 Dr. Julian Blessin 列为 DIF Management GmbH 的 Geschäftsführer。登记册称该公司管理一只投资国防与韧性领域创新早期企业的风险投资基金。",
+      "facts": [
+        {
+          "field": "current_roles",
+          "label": "登记的现任职务",
+          "value": "DIF Management GmbH Geschäftsführer（管理董事）。",
+          "source_id": "PROFILE-INV-4df5348be0ba60-1"
+        },
+        {
+          "field": "organization_activity",
+          "label": "所任职机构业务",
+          "value": "DIF Management GmbH 管理一只面向国防与韧性领域创新早期企业的风险投资基金。",
+          "source_id": "PROFILE-INV-4df5348be0ba60-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,46 @@
           "source_id": "FISRC-5497463d6c7b6acf"
         }
       ],
-      "contacts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职务及基金描述来自德国联邦议院登记册。仅记录登记所示的管理职务，不推断其个人投资组合或其他未披露身份。",
+      "current_roles": [
+        {
+          "organization": "DIF Management GmbH",
+          "title": "Geschäftsführer（管理董事）",
+          "source_id": "PROFILE-INV-4df5348be0ba60-1"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "德国联邦议院游说登记册",
+          "value": "DIF Management GmbH 登记记录",
+          "url": "https://www.lobbyregister.bundestag.de/suche/R007892/74892",
+          "source_id": "PROFILE-INV-4df5348be0ba60-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-4df5348be0ba60-1",
+          "source_url": "https://www.lobbyregister.bundestag.de/suche/R007892/74892",
+          "source_title": "Registereintrag &quot;DIF Management GmbH&quot; - Lobbyregister beim Deutschen Bundestag",
+          "source_content_hash": "317af77716152e3c7f159afd33f15e7a395d2d7b1e7cbb42a68d5551ad19045f",
+          "quote": "Dr. Julian Blessin Funktion: Geschäftsführer",
+          "quote_hash": "d2d6a86cfbbbc1bcaf16f3c54d2e9d4299a00dda1fc0e842614446bcc93f0db7"
+        },
+        {
+          "source_id": "PROFILE-INV-4df5348be0ba60-2",
+          "source_url": "https://www.lobbyregister.bundestag.de/suche/R007892/74892",
+          "source_title": "Registereintrag &quot;DIF Management GmbH&quot; - Lobbyregister beim Deutschen Bundestag",
+          "source_content_hash": "317af77716152e3c7f159afd33f15e7a395d2d7b1e7cbb42a68d5551ad19045f",
+          "quote": "Die DIF Management GmbH ist Management-Gesellschaft eines Venture Capital Fonds, der Frühphaseninvestitionen in junge innovative Unternehmen im Bereich Verteidigung und Resilienz tätigt.",
+          "quote_hash": "5cafcb2302421b0a5b1d2efc22816c1798da5b05a3ede618cbaa8c361692e427"
+        },
         {
           "source_id": "FISRC-5497463d6c7b6acf",
           "source_url": "https://www.linkedin.com/posts/poolday_introducing-pool-weve-raised-2m-in-activity-7470874080842285056-GzNS",
@@ -161,7 +208,7 @@
           "quote_hash": "f1e7ec5228f3eb91be682ce6d6229008b01e75fc596d42a30083fee56f24f08f"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
