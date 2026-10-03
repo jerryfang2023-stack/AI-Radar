@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "金百泽 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "深圳市金百泽电子科技股份有限公司主营电子互连与封装技术业务；其2026年交易所公告显示，全资子公司曾作为有限合伙人参与一支创业投资基金。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "主营业务",
+          "value": "电子互连及封装技术、印制电路板及集成产品设计制造。",
+          "source_id": "PROFILE-INV-432a45e971d91f-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "公开投资活动",
+          "value": "2026年公告披露其全资子公司参与创业投资基金，作为有限合伙人认缴出资。",
+          "source_id": "PROFILE-INV-432a45e971d91f-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-6d442164db5f81db"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "只记录一宗公告明确的子公司投资活动，不把子公司认缴行为扩大为母公司的基金管理业务或完整投资组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "深圳证券交易所公告",
+          "value": "金百泽公告",
+          "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-07-29/11805aa1-efcc-423a-b439-00371e112ae3.PDF",
+          "source_id": "PROFILE-INV-432a45e971d91f-2"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-432a45e971d91f-1",
+          "source_url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-21/92042183-72a6-449e-9f3b-efdc5cd0b003.PDF",
+          "source_title": "深圳市金百泽电子科技股份有限公司2025年年度报告摘要",
+          "source_content_hash": "2f60c22c76577eea21edb819636c3fe07681700d48d052669f3f0d3b116d8df5",
+          "quote": "金百泽成立于 1997 年，专注电子互连及封装技术，聚焦印制电路板 PCB、集成产品设计与制造 IPDM",
+          "quote_hash": "3b2d27212a715421c778fea64807ccaaa500a8d2f0a7f546e58a10e5948a4d23"
+        },
+        {
+          "source_id": "PROFILE-INV-432a45e971d91f-2",
+          "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-07-29/11805aa1-efcc-423a-b439-00371e112ae3.PDF",
+          "source_title": "深圳市金百泽电子科技股份有限公司关于全资子公司与专业投资机构共同投资的公告（2026-024）",
+          "source_content_hash": "58248c77bfbd5362e6cedce7e9511f9fa16ff34b0d229f677d1cd2722e1eba97",
+          "quote": "金百泽科技拟以自有资金认缴共青城曜基创业投资合伙企业（有限合伙）（以下简称“共青城曜基”或“合伙企业”）出资 1,000 万元，作为有限合伙人参与本次投资。",
+          "quote_hash": "633a983aee0facfbaf31fdbace7d2de2ce0e43fdd1ea19c59875b8f24cf085ed"
+        },
         {
           "source_id": "FISRC-6d442164db5f81db",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
@@ -161,7 +202,7 @@
           "quote_hash": "9475573b312fdb166b3eab03902b2da47b66ec9dd260be72c86edca85e0b5c00"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

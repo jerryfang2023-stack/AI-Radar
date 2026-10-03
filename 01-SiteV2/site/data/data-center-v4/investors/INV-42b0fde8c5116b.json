@@ -137,21 +137,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Operator Collective 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Operator Collective 官网称其于2019年推出 Collective Venture Model，并将自身描述为采用非传统结构的风险投资基金。",
+      "facts": [
+        {
+          "field": "fund_model",
+          "label": "官网自述基金模式",
+          "value": "非传统结构的风险投资基金。",
+          "source_id": "PROFILE-INV-42b0fde8c5116b-2"
+        },
+        {
+          "field": "launched",
+          "label": "模式推出年份",
+          "value": "官网记载为2019年。",
+          "source_id": "PROFILE-INV-42b0fde8c5116b-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "Operator Collective 官网记载 Collective Venture Model 于2019年推出。",
+          "source_id": "PROFILE-INV-42b0fde8c5116b-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Sapiom · 多轮融资 · 2026-08-05 · 本轮参投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-df6a9c9a32146320"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "使用机构官网自述；这里按品牌及基金模式介绍，不推断未在本页核实的法律主体或动态基金数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网模式介绍",
+          "value": "Collective Venture Model",
+          "url": "https://www.operatorcollective.com/collective-venture-model",
+          "source_id": "PROFILE-INV-42b0fde8c5116b-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-42b0fde8c5116b-1",
+          "source_url": "https://www.operatorcollective.com/collective-venture-model",
+          "source_title": "Collective Venture Model",
+          "source_content_hash": "ab17c3ea255ed565895a1281b853e5b8fa8779fab3df36f213dcee31eaea042a",
+          "quote": "Operator Collective launched in 2019 to turn the model on its head.",
+          "quote_hash": "30476dfba288e3518eafc1b0f41e4b1f33dde6cfc4e89da8ff98948d7ab2c828"
+        },
+        {
+          "source_id": "PROFILE-INV-42b0fde8c5116b-2",
+          "source_url": "https://www.operatorcollective.com/collective-venture-model",
+          "source_title": "Collective Venture Model",
+          "source_content_hash": "ab17c3ea255ed565895a1281b853e5b8fa8779fab3df36f213dcee31eaea042a",
+          "quote": "a venture fund structured in a non-traditional way.",
+          "quote_hash": "1c4f12c59051f53e79e1b098bf0bf5e00ed98f572e50d1716a034f7433e2d499"
+        },
         {
           "source_id": "FISRC-df6a9c9a32146320",
           "source_url": "https://www.sapiom.ai/resources/blog/series-a/",
@@ -161,7 +208,7 @@
           "quote_hash": "644554c16d4a0c3b35826e809f99d6cf04e8c4eaabff4be2a762bdabb02ecfe7"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

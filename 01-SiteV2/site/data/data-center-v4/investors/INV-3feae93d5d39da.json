@@ -137,21 +137,80 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "亳州产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "亳州产控集团官网将亳州市产业投资有限公司列为全资专业化投资平台，披露其成立时间、注册资本及主要投资产业。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体名称",
+          "value": "亳州市产业投资有限公司。",
+          "source_id": "PROFILE-INV-3feae93d5d39da-1"
+        },
+        {
+          "field": "parent_relationship",
+          "label": "集团关系",
+          "value": "亳州产控集团官网称其为全资专业化平台。",
+          "source_id": "PROFILE-INV-3feae93d5d39da-1"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "10亿元（官网披露）。",
+          "source_id": "PROFILE-INV-3feae93d5d39da-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点产业",
+          "value": "中医药、文化旅游、现代农业等。",
+          "source_id": "PROFILE-INV-3feae93d5d39da-2"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-12",
+          "description": "官网披露的成立时间。",
+          "source_id": "PROFILE-INV-3feae93d5d39da-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：深朴智能 · Pre-A+轮 · 2026-09-04 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a65ce425f6a14bd6"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "将队列简称“亳州产投”映射到官网明确命名的亳州市产业投资有限公司，不与亳州产控集团母公司混为一体；不采用在管基金规模等动态数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "产业投资业务页面",
+          "value": "亳州产控集团产业投资",
+          "url": "https://bzckjt.com/info.php?class_id=103102",
+          "source_id": "PROFILE-INV-3feae93d5d39da-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3feae93d5d39da-1",
+          "source_url": "https://bzckjt.com/info.php?class_id=103102",
+          "source_title": "产业投资 - 业务中心 - 亳州产控集团",
+          "source_content_hash": "3f7a7e9f6220f216f911c5916b04b3d4598e45ff6d930afbfb53bb71e31d499c",
+          "quote": "集团深耕产业投资领域，依托全资专业化平台--亳州市产业投资有限公司，赋能地方产业高质量发展。该平台成立于2021年12月，注册资本10亿元，具备私募基金管理人资质",
+          "quote_hash": "fd89c5600b32b7bb51ed6ed9f7ef8b755ce36747d9257c5cdd1dbb4456a58fce"
+        },
+        {
+          "source_id": "PROFILE-INV-3feae93d5d39da-2",
+          "source_url": "https://bzckjt.com/info.php?class_id=103102",
+          "source_title": "产业投资 - 业务中心 - 亳州产控集团",
+          "source_content_hash": "3f7a7e9f6220f216f911c5916b04b3d4598e45ff6d930afbfb53bb71e31d499c",
+          "quote": "聚焦中医药、文化旅游、现代农业等重点主导产业",
+          "quote_hash": "6ce25365033da008d413967de3302175acf96299f7645f61a2668a2861b607c7"
+        },
         {
           "source_id": "FISRC-a65ce425f6a14bd6",
           "source_url": "https://news.pedaily.cn/202609/568532.shtml",

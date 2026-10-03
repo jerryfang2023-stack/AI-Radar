@@ -294,11 +294,7 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Peter Thiel 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Palantir董事会页面将Peter Thiel列为公司联合创始人及董事会主席，并列出其在Thiel Capital和Founders Fund的角色。",
       "facts": [],
       "milestones": [],
       "track_record": [
@@ -315,8 +311,75 @@
           "source_id": "FISRC-93ad55204895a7ae"
         }
       ],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职位按Palantir当前董事会页面的表述记录；页面所列教育和PayPal经历按其原文范围整理。",
+      "current_roles": [
+        {
+          "title": "Chairman of the Board",
+          "organization": "Palantir",
+          "source_id": "PROFILE-INV-3fbe27006684a7-1"
+        },
+        {
+          "title": "President",
+          "organization": "Thiel Capital",
+          "source_id": "PROFILE-INV-3fbe27006684a7-1"
+        },
+        {
+          "title": "Partner",
+          "organization": "Founders Fund",
+          "source_id": "PROFILE-INV-3fbe27006684a7-1"
+        }
+      ],
+      "career": [
+        {
+          "organization": "PayPal",
+          "title": "Co-founder; CEO, President and Board Chairman",
+          "period": "共同创立于1998年；担任CEO、总裁及董事会主席期间为2000年至2002年",
+          "description": "Palantir董事会页面披露其共同创立PayPal及收购前的职位。",
+          "source_id": "PROFILE-INV-3fbe27006684a7-2"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Stanford University",
+          "qualification": "B.A. in Philosophy",
+          "source_id": "PROFILE-INV-3fbe27006684a7-3"
+        },
+        {
+          "institution": "Stanford Law School",
+          "qualification": "J.D.",
+          "source_id": "PROFILE-INV-3fbe27006684a7-3"
+        }
+      ],
+      "experience_summary": "Palantir公开页面列出其在科技公司、投资机构及创业公司的领导角色。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3fbe27006684a7-1",
+          "source_url": "https://investors.palantir.com/board.html",
+          "source_title": "investors.palantir.com",
+          "source_content_hash": "392b61bf4e24609a044beb7acc700ff0f420df68ed619dd81d8bc042e3685308",
+          "quote": "Mr. Thiel is one of our co-founders and has served as the Chairman of our Board of Directors since 2003. He has served as president of Thiel Capital, an investment firm, since 2011 and as a partner of Founders Fund, a venture capital firm, since 2005.",
+          "quote_hash": "d84dc31395225f3fd97007c123e4890626497710ca95af5039f5112edebc404c"
+        },
+        {
+          "source_id": "PROFILE-INV-3fbe27006684a7-2",
+          "source_url": "https://investors.palantir.com/board.html",
+          "source_title": "investors.palantir.com",
+          "source_content_hash": "392b61bf4e24609a044beb7acc700ff0f420df68ed619dd81d8bc042e3685308",
+          "quote": "In 1998, Mr. Thiel co-founded PayPal, Inc., an online payment company, where he served as Chief Executive Officer, President, and Chairman of its Board of Directors from 2000 until its acquisition by eBay in 2002.",
+          "quote_hash": "daab35c6354187ccd29b15376dd2366c8894a22921e58dc11cf1130705428d4c"
+        },
+        {
+          "source_id": "PROFILE-INV-3fbe27006684a7-3",
+          "source_url": "https://investors.palantir.com/board.html",
+          "source_title": "investors.palantir.com",
+          "source_content_hash": "392b61bf4e24609a044beb7acc700ff0f420df68ed619dd81d8bc042e3685308",
+          "quote": "Mr. Thiel holds a B.A. in Philosophy from Stanford University and a J.D. from Stanford Law School.",
+          "quote_hash": "001da32e3b3275a5ac65f3795eab7ee94f013b50ed6fe1a8263db617f1777440"
+        },
         {
           "source_id": "FISRC-9f1fb4617b322f70",
           "source_url": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
@@ -342,7 +405,7 @@
           "quote_hash": "f7778dff68e632669e8b937800711d2d98c703f9bd7112ee9061bbf15fec5fd5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -380,13 +380,34 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "钧山资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "钧山官网把钧山品牌描述为资产管理平台，业务包括私募股权、房地产基金和资本市场投资，并形成母基金、直投基金和二手份额基金体系。",
+      "facts": [
+        {
+          "field": "brand_history",
+          "label": "品牌起始年份",
+          "value": "官网称钧山品牌始建于2012年。",
+          "source_id": "PROFILE-INV-3ca4cc1381ab97-1"
+        },
+        {
+          "field": "business_lines",
+          "label": "业务板块",
+          "value": "私募股权投资、房地产基金投资和资本市场投资。",
+          "source_id": "PROFILE-INV-3ca4cc1381ab97-1"
+        },
+        {
+          "field": "fund_strategies",
+          "label": "基金策略",
+          "value": "母基金、直投基金和二手份额基金。",
+          "source_id": "PROFILE-INV-3ca4cc1381ab97-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2012",
+          "description": "官网披露的钧山品牌始建年份。",
+          "source_id": "PROFILE-INV-3ca4cc1381ab97-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：斜跃 · 天使+轮 · 2026-09-12 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -401,8 +422,38 @@
           "source_id": "FISRC-daccbed46498e19c"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网页面呈现品牌及多条业务线；本档案不把不同业务板块视作同一法律主体，且不记录页面版权年份为2023年的易变数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "官网商务计划书投递邮箱",
+          "value": "bp@peakvest.cn",
+          "source_id": "PROFILE-INV-3ca4cc1381ab97-1"
+        },
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "钧山官网",
+          "url": "https://www.peakvest.cn/about.html?page=2",
+          "source_id": "PROFILE-INV-3ca4cc1381ab97-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3ca4cc1381ab97-1",
+          "source_url": "https://www.peakvest.cn/about.html?page=2",
+          "source_title": "钧山官网 - 关于钧山",
+          "source_content_hash": "7407badd99f15b77dd61322c918aab76ccad8320b0f1b7c6e426ef8afac16685",
+          "quote": "钧山品牌始建于2012年，是专业的资产管理平台，致力于为客户提供优质的资产管理服务，实现资源联结，创造长期价值，推动行业和社会进步。作为资产管理行业的引领者，钧山聚焦于私募股权投资、房地产基金投资、资本市场投资三大板块，形成覆盖母基金、直投基金、二手份额基金的全链条体系。",
+          "quote_hash": "286a8513207bbe3ac4fe65731d5d75b254d801fa8f72e2f89078a324ebdfc81c"
+        },
         {
           "source_id": "FISRC-02a843e0049125fa",
           "source_url": "https://news.pedaily.cn/202609/568914.shtml",
@@ -428,7 +479,7 @@
           "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

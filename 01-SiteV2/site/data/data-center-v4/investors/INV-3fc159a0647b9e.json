@@ -121,12 +121,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Neotribe 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2023-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Neotribe的官方基金FAQ介绍其早期及成长阶段基金：Neotribe Ventures Fund I、II关注Seed和Series A，Ignite Fund面向具备产品市场匹配的早期成长企业。",
+      "facts": [
+        {
+          "field": "fund_strategy",
+          "label": "旗下基金阶段",
+          "value": "Neotribe Ventures Fund I和II关注Seed及Series A；Ignite面向早期成长阶段。",
+          "source_id": "PROFILE-INV-3fc159a0647b9e-1"
+        },
+        {
+          "field": "firm_sector_focus",
+          "label": "官网所述机构层面方向",
+          "value": "不限定单一行业，已涉及计算生物学、企业安全、AI和清洁技术等领域。",
+          "source_id": "PROFILE-INV-3fc159a0647b9e-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +143,32 @@
           "source_id": "FISRC-83e0933212b00c0f"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "依据Neotribe官方基金FAQ描述品牌及基金策略；基金规模、预期组合数量等易变指标未纳入。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3fc159a0647b9e-1",
+          "source_url": "https://blog.neotribe.vc/neotribe-ignite-fund-faq/",
+          "source_title": "Neotribe Ignite Fund FAQ",
+          "source_content_hash": "ba28a17e14634aaf56d2a86d6b30549e7d78e5ce3443432f8c761af2f75296b8",
+          "quote": "The Ignite Fund is a natural extension of our existing platform, which includes our first two funds (Neotribe Ventures Fund I and II) that are focused on Seed and Series A companies.",
+          "quote_hash": "2d6677a616c06244f7d0149d6cf03abbf7be54c84e1819f8d944ee323df779db"
+        },
+        {
+          "source_id": "PROFILE-INV-3fc159a0647b9e-2",
+          "source_url": "https://blog.neotribe.vc/neotribe-ignite-fund-faq/",
+          "source_title": "Neotribe Ignite Fund FAQ",
+          "source_content_hash": "ba28a17e14634aaf56d2a86d6b30549e7d78e5ce3443432f8c761af2f75296b8",
+          "quote": "We are sector agnostic and have invested across computational biology, enterprise security, AI, clean tech, and more as a firm.",
+          "quote_hash": "a309e52caf8bc86fcb4f631c2b9b78f07c9316658a6b2d879d7d9ef0a019c5fd"
+        },
         {
           "source_id": "FISRC-83e0933212b00c0f",
           "source_url": "https://archsys.io/hub/news/arch-systems-secures-new-funding-with-di-technology-and-neotribe/",
@@ -145,7 +178,7 @@
           "quote_hash": "c0262611753bac3cc7054c90e322c2e1dc96487d798604e2d77e123628c1ace0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -194,13 +194,28 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Advent 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Advent International 官网将其定位为全球私募股权投资机构，并记载其1984年由 Peter Brooke 在波士顿创立。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "全球私募股权投资机构。",
+          "source_id": "PROFILE-INV-43e2fbe07eea5e-1"
+        },
+        {
+          "field": "founded",
+          "label": "创立年份及地点",
+          "value": "1984年在波士顿创立。",
+          "source_id": "PROFILE-INV-43e2fbe07eea5e-2"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1984",
+          "description": "Advent官网记载的创立年份和地点。",
+          "source_id": "PROFILE-INV-43e2fbe07eea5e-2"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
@@ -211,8 +226,40 @@
           "source_id": "FISRC-98f1098c86cb2286"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网介绍；官网所列基金规模、在管资产及团队人数会变化，本档案不记录这些动态指标。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Advent International",
+          "url": "https://www.adventinternational.com/about-us/",
+          "source_id": "PROFILE-INV-43e2fbe07eea5e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-43e2fbe07eea5e-1",
+          "source_url": "https://www.adventinternational.com/about-us/",
+          "source_title": "About Us &mdash; Advent International",
+          "source_content_hash": "6878a8650883cd88e71914d920b74d1cf04c3b8cff8759a0c3a6f7d8ca7ec64c",
+          "quote": "global private equity investors",
+          "quote_hash": "6d7fae97afcb8d54d5510bb3363f3fcd89759c84ee916904f960260d3382485c"
+        },
+        {
+          "source_id": "PROFILE-INV-43e2fbe07eea5e-2",
+          "source_url": "https://www.adventinternational.com/about-us/",
+          "source_title": "About Us &mdash; Advent International",
+          "source_content_hash": "6878a8650883cd88e71914d920b74d1cf04c3b8cff8759a0c3a6f7d8ca7ec64c",
+          "quote": "1984 Founded in Boston by Peter Brooke, Advent International began with a team of five.",
+          "quote_hash": "b894f01f6d128f0ffd49b332b63c1748dc1ae26e8da7fb1ee8b64c10d6b52db5"
+        },
         {
           "source_id": "FISRC-4d11ed62a144a3f4",
           "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
@@ -230,7 +277,7 @@
           "quote_hash": "d89a64b44da20dbe76bb8b3497871ca6ca1e090e6ae51e89c17108ba3e119136"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

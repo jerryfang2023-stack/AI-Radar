@@ -138,12 +138,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "跃迁资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "跃迁资本的公司页自述为专注医疗健康行业的精品投行，为企业家提供私募股权融资服务；该资料说明其顾问服务，不证明其以自有资本直接投资。",
+      "facts": [
+        {
+          "field": "self_described_service",
+          "label": "公司页自述服务",
+          "value": "医疗健康行业精品投行，提供私募股权融资服务。",
+          "source_id": "PROFILE-INV-3d1c2f8223039e-1"
+        },
+        {
+          "field": "founded",
+          "label": "公司页列示成立年份",
+          "value": "2021年。",
+          "source_id": "PROFILE-INV-3d1c2f8223039e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +160,24 @@
           "source_id": "FISRC-30b12c73a020a729"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "队列标签来自投资方线索，但唯一可核验的公司页描述其为融资顾问；不把其标注为基金或直接投资机构。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3d1c2f8223039e-1",
+          "source_url": "https://www.linkedin.com/company/%E8%B7%83%E8%BF%81%E8%B5%84%E6%9C%AC",
+          "source_title": "跃迁资本 | LinkedIn",
+          "source_content_hash": "ae907fc1cdcd770ed771a371c21240971ffaee44633752566a1bbb14bd2209a1",
+          "quote": "跃迁资本是一家专注于医疗健康行业的精品投行，为企业家提供最专业的的私募股权融资专业金融服务。",
+          "quote_hash": "e5f78dfde18ef88916c287d730ba7aac37fa7457d00b8e7934e315aa3e72c889"
+        },
         {
           "source_id": "FISRC-30b12c73a020a729",
           "source_url": "https://www.cls.cn/detail/2478686",
@@ -162,7 +187,7 @@
           "quote_hash": "daf932f5455c6979927b7afedacc4a46915adc79bd39a2a9e4f22995db5d816e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

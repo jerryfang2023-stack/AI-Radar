@@ -121,12 +121,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Lockheed Martin 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Lockheed Martin Ventures 是洛克希德·马丁公司的战略投资部门，官网称其支持深科技与军民两用技术。",
+      "facts": [
+        {
+          "field": "investment_arm",
+          "label": "投资部门关联",
+          "value": "官网称Lockheed Martin Ventures为公司的战略投资部门。",
+          "source_id": "PROFILE-INV-43dcc3b0eab360-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网所述方向",
+          "value": "深科技及军民两用技术。",
+          "source_id": "PROFILE-INV-43dcc3b0eab360-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +143,32 @@
           "source_id": "FISRC-583456b85ec1179e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "队列标签是母公司 Lockheed Martin；档案仅记录官网明确的投资部门关联，不把母公司本身等同于该投资部门，也不采用易变基金规模数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资部门官网",
+          "value": "Lockheed Martin Ventures",
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures.html/",
+          "source_id": "PROFILE-INV-43dcc3b0eab360-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-43dcc3b0eab360-1",
+          "source_url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures.html/",
+          "source_title": "Lockheed Martin Ventures | Lockheed Martin",
+          "source_content_hash": "4a5c32c1c2c60eeb1b2e547bb4ee607bdcf1a7f9a3d99ac951e4b94317894153",
+          "quote": "Lockheed Martin Ventures is the strategic investment arm of Lockheed Martin, dedicated to identifying and accelerating deep-tech pioneers and dual-use technologies.",
+          "quote_hash": "e2eb37895aec963a7e01485a5fb73309d22ba733109031522c9af81b19951f7e"
+        },
         {
           "source_id": "FISRC-583456b85ec1179e",
           "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
@@ -145,7 +178,7 @@
           "quote_hash": "2903308aa2ec185dc490baa2f68db98bb0ebd35cac0545ca15394b44a5bd26ee"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

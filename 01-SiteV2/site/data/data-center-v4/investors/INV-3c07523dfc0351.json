@@ -137,12 +137,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "上海国投孚腾 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "上海国投孚腾官网将上海孚腾私募基金管理有限公司称为“孚腾资本”，并介绍其股权基金管理业务、共同设立背景及投资领域。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体名称",
+          "value": "上海孚腾私募基金管理有限公司。",
+          "source_id": "PROFILE-INV-3c07523dfc0351-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "市场化、专业化的股权基金管理公司（官网自述）。",
+          "source_id": "PROFILE-INV-3c07523dfc0351-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": "人工智能、医疗健康、集成电路、消费升级及先进制造。",
+          "source_id": "PROFILE-INV-3c07523dfc0351-1"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "官网称采取母基金、S基金和直投基金策略。",
+          "source_id": "PROFILE-INV-3c07523dfc0351-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,32 @@
           "source_id": "FISRC-e5d0583f94886034"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "沿用官网披露的法律主体名称；不纳入官网页面中可能随时间变化的管理规模和人员数量。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "上海国投孚腾介绍页",
+          "value": "上海国投孚腾官网",
+          "url": "https://www.sh-ssci.com/tdjs/gtft/index.html",
+          "source_id": "PROFILE-INV-3c07523dfc0351-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3c07523dfc0351-1",
+          "source_url": "https://www.sh-ssci.com/tdjs/gtft/index.html",
+          "source_title": "上海国投孚腾_上海国有资本投资有限公司",
+          "source_content_hash": "e3c6cd9e3f0d3d51e5dd7b9ecc2607f86f5d2127c105aababc3073a496a15347",
+          "quote": "上海孚腾私募基金管理有限公司（以下简称“孚腾资本”）是由上海国有资本投资有限公司联合临港集团、上汽集团、宁德时代、哔哩哔哩等领先的产业集团和投资机构共同设立的市场化、专业化的股权基金管理公司。",
+          "quote_hash": "f3c0610fbd3d7d38f1dcb1bf1510887b2a0329fb86b80023cd5cd6efbeff82c2"
+        },
         {
           "source_id": "FISRC-e5d0583f94886034",
           "source_url": "https://news.pedaily.cn/202605/563518.shtml",
@@ -161,7 +206,7 @@
           "quote_hash": "1105a4aaa66c3414e7d340016a6fe0224d7ddfa26159efcc2cac1df7b71fdef4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

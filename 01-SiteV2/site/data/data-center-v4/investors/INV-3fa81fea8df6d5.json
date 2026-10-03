@@ -138,21 +138,80 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "广州健康产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "广州市国资委资料称广州健康产投为广州金控下属全资企业，开展生命健康领域投资；另一份国资委披露记录其参与一项涉及达安基因股权的附生效条件协议。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体名称",
+          "value": "广州生物医药与健康产业投资有限公司，简称广州健康产投。",
+          "source_id": "PROFILE-INV-3fa81fea8df6d5-2"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系",
+          "value": "广州市国资委页面称其为广州金控下属全资子企业。",
+          "source_id": "PROFILE-INV-3fa81fea8df6d5-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "生命健康领域。",
+          "source_id": "PROFILE-INV-3fa81fea8df6d5-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "广州市国资委页面称其参与涉及达安基因股份的附生效条件交易协议；页面未证明交易已完成。",
+          "source_id": "PROFILE-INV-3fa81fea8df6d5-3"
+        },
         {
           "description": "融资来源记录：睿心医疗 · D轮 · 2026-05-27 · 本轮领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2afdddccd17bda89"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "融资交易按政府页面所述拟议协议记录，不推断交易已完成或相关持股目前仍然存在；历史投资示例归因于国资委页面。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "广州市国资委资料",
+          "value": "广州健康产投公开资料",
+          "url": "https://gzw.gz.gov.cn/gk/jyta/content/post_10355242.html",
+          "source_id": "PROFILE-INV-3fa81fea8df6d5-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3fa81fea8df6d5-1",
+          "source_url": "https://gzw.gz.gov.cn/gk/jyta/content/post_10355242.html",
+          "source_title": "广州市人民政府国有资产监督管理委员会网站-广州市国资委关于市政协十四届四次会议第2051号提案答复的函",
+          "source_content_hash": "9d164ccea89b0c0b393a81ef77c40c6f837aaecced2b671a2089a58de248b3dc",
+          "quote": "改组为下属全资子企业广州生物医药与健康产业投资有限公司",
+          "quote_hash": "0c915eae9c2ca9dbef4dd6d09554552c4bdad391f05ede093194f0dfa8e87b6a"
+        },
+        {
+          "source_id": "PROFILE-INV-3fa81fea8df6d5-2",
+          "source_url": "https://gzw.gz.gov.cn/qy/qydt/content/post_10819296.html",
+          "source_title": "广州市人民政府国有资产监督管理委员会网站-广药集团旗下广药资本公司将成为达安基因间接控股股东",
+          "source_content_hash": "af264aea67e1cb66d8e34d21223f0e7c2b464c1cbeaadd2045f575f6f5fa6eee",
+          "quote": "广州生物医药与健康产业投资有限公司（“广州健康产投”）",
+          "quote_hash": "86dd787834c5e383d9ea761ada5fd56ba063ac86cae490b6ff71f0c788f6efe7"
+        },
+        {
+          "source_id": "PROFILE-INV-3fa81fea8df6d5-3",
+          "source_url": "https://gzw.gz.gov.cn/qy/qydt/content/post_10819296.html",
+          "source_title": "广州市人民政府国有资产监督管理委员会网站-广药集团旗下广药资本公司将成为达安基因间接控股股东",
+          "source_content_hash": "af264aea67e1cb66d8e34d21223f0e7c2b464c1cbeaadd2045f575f6f5fa6eee",
+          "quote": "广州健康产投持有的达安基因70,172,304股股份",
+          "quote_hash": "57aa846d00deaa0d58ec39f2f631f30ad37eaf7663bdb473be969cc14582a6f9"
+        },
         {
           "source_id": "FISRC-2afdddccd17bda89",
           "source_url": "https://www.sohu.com/a/1028422830_120094924",
@@ -162,7 +221,7 @@
           "quote_hash": "8890a42edf470d7e4d4634b31cfe1d67d58fb787de35b6e0a8df65debc6fc9ae"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
