@@ -192,13 +192,40 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "静安资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "上海市政府页面披露上海静安资本投资运营有限公司于2025年成立，作为区级国有资本投资运营平台，将整合基金业务并采用政府引导基金、直投和市场化运作模式。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体名称",
+          "value": "上海静安资本投资运营有限公司。",
+          "source_id": "PROFILE-INV-3ceeae050a9511-1"
+        },
+        {
+          "field": "platform_role",
+          "label": "平台定位",
+          "value": "静安区国有资本投资运营平台。",
+          "source_id": "PROFILE-INV-3ceeae050a9511-1"
+        },
+        {
+          "field": "investment_mode",
+          "label": "运作模式",
+          "value": "政府引导基金、直投与市场化运作。",
+          "source_id": "PROFILE-INV-3ceeae050a9511-2"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "120亿元（2025年成立报道披露）。",
+          "source_id": "PROFILE-INV-3ceeae050a9511-2"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-10-10",
+          "description": "上海市政府页面报道其成立大会于当日举行。",
+          "source_id": "PROFILE-INV-3ceeae050a9511-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：影目科技 · C3轮 · 2026-09-09 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
@@ -209,8 +236,32 @@
           "source_id": "FISRC-ed4f088f02c38455"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "注册资本与投资安排均按2025年成立大会报道表述；未将战略合作基金等同于公司自身持有的投资组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3ceeae050a9511-1",
+          "source_url": "https://www.shanghai.gov.cn/nw15343/20251013/fe81559bc65c4644a229eac806985b04.html",
+          "source_title": "上海静安资本投资运营有限公司成立",
+          "source_content_hash": "2a84fa79605f2a157bc587dd2c59107d336b097a0a53ee3fc604a6a207375f14",
+          "quote": "10月10日，上海静安资本投资运营有限公司成立大会举行。",
+          "quote_hash": "f3e4beb54222918c31ab12f83c7ce20f01bbe6f688a5a5ce3806c77abc799b9a"
+        },
+        {
+          "source_id": "PROFILE-INV-3ceeae050a9511-2",
+          "source_url": "https://www.shanghai.gov.cn/nw15343/20251013/fe81559bc65c4644a229eac806985b04.html",
+          "source_title": "上海静安资本投资运营有限公司成立",
+          "source_content_hash": "2a84fa79605f2a157bc587dd2c59107d336b097a0a53ee3fc604a6a207375f14",
+          "quote": "新组建的上海静安资本投资运营有限公司注册资本120亿元，成立后将进一步整合国资基金业务",
+          "quote_hash": "f016aa4d13cc54073cc5a4d3a9219a1a9a1b630ba46b1947ef6f921e82504df9"
+        },
         {
           "source_id": "FISRC-6acf14b7549af590",
           "source_url": "https://www.36kr.com/p/3974730056757511",
@@ -228,7 +279,7 @@
           "quote_hash": "3a3539b13795473cf4cac7e484583e146dd047dd522351c629ff4d34202bc86f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

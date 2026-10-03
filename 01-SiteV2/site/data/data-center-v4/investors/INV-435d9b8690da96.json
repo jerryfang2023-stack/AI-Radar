@@ -137,21 +137,74 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "紫竹小苗 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "上海紫竹小苗股权投资基金有限公司（小苗基金）是上海紫竹高新区集团全资子公司。园区官网介绍其“基地+产业+投资”理念及区域布局。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体",
+          "value": "上海紫竹小苗股权投资基金有限公司。",
+          "source_id": "PROFILE-INV-435d9b8690da96-1"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系",
+          "value": "上海紫竹高新区（集团）有限公司全资子公司。",
+          "source_id": "PROFILE-INV-435d9b8690da96-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网表述理念",
+          "value": "“基地+产业+投资”。",
+          "source_id": "PROFILE-INV-435d9b8690da96-2"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015-07",
+          "description": "园区官网记载小苗基金成立时间。",
+          "source_id": "PROFILE-INV-435d9b8690da96-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：索格智算 · 种子轮 · 2026-03-10 · 本轮参投 · 超千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9f36031395f1eea5"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按园区官网明确给出的简称、主体名称与母子公司关系建档；不与上海小苗朗程投资管理有限公司混同。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "紫竹园区创新创业介绍",
+          "value": "小苗基金",
+          "url": "https://www.zizhupark.cn/innovation",
+          "source_id": "PROFILE-INV-435d9b8690da96-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-435d9b8690da96-1",
+          "source_url": "https://www.zizhupark.cn/innovation",
+          "source_title": "创新创业 - 紫竹国家高新技术产业开发区",
+          "source_content_hash": "86c2c84bdf29d05a74f7a31ea56e590b80ea0cbe14621c6adb2476ca6ebcabe8",
+          "quote": "上海紫竹小苗股权投资基金有限公司（以下简称“小苗基金”）成立于2015年7月，系上海紫竹高新区（集团）有限公司的全资子公司。",
+          "quote_hash": "cecd6ee79f376fe18b0af65ae08a6225db3049350ae17bba6399e33629996051"
+        },
+        {
+          "source_id": "PROFILE-INV-435d9b8690da96-2",
+          "source_url": "https://www.zizhupark.cn/innovation",
+          "source_title": "创新创业 - 紫竹国家高新技术产业开发区",
+          "source_content_hash": "86c2c84bdf29d05a74f7a31ea56e590b80ea0cbe14621c6adb2476ca6ebcabe8",
+          "quote": "小苗基金秉承“基地+产业+投资”理念",
+          "quote_hash": "837a1df8eb6f8a0f4f8a46d598d33ee23bb9a47d40f3a87ff12ad41981184d82"
+        },
         {
           "source_id": "FISRC-9f36031395f1eea5",
           "source_url": "https://www.sohu.com/a/994877486_121124378",
@@ -161,7 +214,7 @@
           "quote_hash": "129d86b0184100c219b0c2e396ec1fb59da10723e6a75851296b296835e7e142"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

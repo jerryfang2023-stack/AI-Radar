@@ -138,12 +138,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "南通投管 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "南通市国资委发布的2026年招聘公告将南通投资管理有限公司称为“南通投管”，并说明其从事股权投资、基金投资和资本市场运作。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体名称",
+          "value": "南通投资管理有限公司。",
+          "source_id": "PROFILE-INV-3c8f652c123713-1"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系",
+          "value": "南通市国资委公告称其为产控集团全资子公司。",
+          "source_id": "PROFILE-INV-3c8f652c123713-1"
+        },
+        {
+          "field": "investment_business",
+          "label": "业务范围",
+          "value": "股权投资、基金投资和资本市场运作。",
+          "source_id": "PROFILE-INV-3c8f652c123713-1"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "5亿元（2026年招聘公告披露）。",
+          "source_id": "PROFILE-INV-3c8f652c123713-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +172,32 @@
           "source_id": "FISRC-312cccaedbeb2478"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "采用2026年公告所列公司情况；公告中的基金规模、数量与奖项均可能变化，未纳入档案。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "南通市国资委公告",
+          "value": "南通投资管理有限公司招聘公告",
+          "url": "https://gzw.nantong.gov.cn/ntsgzw/rczp/content/76ded8be-f43b-4f00-9a54-559f0a58b718.html",
+          "source_id": "PROFILE-INV-3c8f652c123713-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3c8f652c123713-1",
+          "source_url": "https://gzw.nantong.gov.cn/ntsgzw/rczp/content/76ded8be-f43b-4f00-9a54-559f0a58b718.html",
+          "source_title": "南通投资管理有限公司2026年投资业务岗常态化公开招聘公告 - 人才招聘",
+          "source_content_hash": "f0e03f79f6a8369beb477553708f79fa7f99285b81ef907312ef5a5d6b85a8a5",
+          "quote": "南通投资管理有限公司（以下简称：南通投管）是产控集团全资子公司，注册资本5亿元，主要通过股权投资、基金投资和资本市场运作，为南通市新兴产业、中小企业、上市公司等提供资本与资源的支持。",
+          "quote_hash": "ae472fb78d01634d09b6081588e6594e572e814309bba1d0f2bf177290dd7d4f"
+        },
         {
           "source_id": "FISRC-312cccaedbeb2478",
           "source_url": "https://news.pedaily.cn/202608/567151.shtml",
@@ -162,7 +207,7 @@
           "quote_hash": "17ba19f965e577d2806b3596f71f9cdb2027edf1a97eca6e3322fd2145858f65"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

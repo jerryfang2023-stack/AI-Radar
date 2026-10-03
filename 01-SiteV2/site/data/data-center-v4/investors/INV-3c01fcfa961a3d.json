@@ -137,21 +137,66 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "启高资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "启高资本官网介绍其成立于2019年，定位为专注工业硬科技与未来科技的早期风险投资机构。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "官网披露为2019年。",
+          "source_id": "PROFILE-INV-3c01fcfa961a3d-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "人工智能、高端制造、新材料、新型能源等工业硬科技及未来科技。",
+          "source_id": "PROFILE-INV-3c01fcfa961a3d-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称重点布局早期和成长早期项目。",
+          "source_id": "PROFILE-INV-3c01fcfa961a3d-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "官网披露的成立年份。",
+          "source_id": "PROFILE-INV-3c01fcfa961a3d-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：索格智算 · 种子轮 · 2026-03-10 · 本轮领投 · 超千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9f36031395f1eea5"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "仅记录官网公开的成立年份、投资方向与阶段，不采用页面中的未经独立核验业绩描述。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "启高资本官网",
+          "url": "https://www.ins-vc.com/gyqg",
+          "source_id": "PROFILE-INV-3c01fcfa961a3d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3c01fcfa961a3d-1",
+          "source_url": "https://www.ins-vc.com/gyqg",
+          "source_title": "关于启高-启高资本",
+          "source_content_hash": "7984fe9c8357c53b515188cb55cbe20d89a0c06feab652f67f2df365ae32e5f3",
+          "quote": "启高资本 专注于人工智能、高端制造、新材料、新型能源等工业硬科技方向的早期投资 公司简介 启高资本成立于2019年，由启明创投原工业科技和绿色科技团队整体分拆成立，是长期专注于工业硬科技与未来科技领域的早期风险投资机构，致力于赋能兼具企业家精神与技术创新力的科技创业者，陪伴优秀团队从技术突破走向产业价值。 投资领域 启高资本重点布局工业硬科技与未来科技领域，并聚焦于项目的早期和成长早期（天使轮、Pre-A轮、A轮、B轮）投资。",
+          "quote_hash": "f4c733727a4d180a46d8199bb36705aaa29686d31259bcac1d51c7e16d96e616"
+        },
         {
           "source_id": "FISRC-9f36031395f1eea5",
           "source_url": "https://www.sohu.com/a/994877486_121124378",
@@ -161,7 +206,7 @@
           "quote_hash": "129d86b0184100c219b0c2e396ec1fb59da10723e6a75851296b296835e7e142"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

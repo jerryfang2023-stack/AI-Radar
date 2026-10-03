@@ -155,25 +155,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "PSG Equity 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "PSG Equity的2025年回顾将其长期策略描述为帮助建立能够扩张并持续发展的软件平台。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网所述长期策略",
+          "value": "帮助建立可扩张并能长期发展的软件平台。",
+          "source_id": "PROFILE-INV-3f35e3b6ed6665-1"
+        },
+        {
+          "field": "brand",
+          "label": "页面标识品牌",
+          "value": "PSG Equity。",
+          "source_id": "PROFILE-INV-3f35e3b6ed6665-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮联合领投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-056e24fe41ba3e93"
-        },
-        {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮联合领投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4d11ed62a144a3f4"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "只记录公司官网公开的业务取向；年度回顾中的投资额、管理规模与交易数量为2025年历史数据，未作为当前指标。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网年度回顾",
+          "value": "PSG Equity",
+          "url": "https://updates.psgequity.com/2025-year-in-review/",
+          "source_id": "PROFILE-INV-3f35e3b6ed6665-2"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3f35e3b6ed6665-1",
+          "source_url": "https://updates.psgequity.com/2025-year-in-review/",
+          "source_title": "PSG Equity 2025 Year in Review",
+          "source_content_hash": "2d5bd1a1d2c5394c0cea4d6bc921484bca09467cf8152a5748262565e81b84aa",
+          "quote": "reflecting our long-standing strategy of helping build software platforms that scale and endure over time.",
+          "quote_hash": "377c45ed25c507fde863acea909c3f8def436813db6570021ee3e1415e5f01b5"
+        },
+        {
+          "source_id": "PROFILE-INV-3f35e3b6ed6665-2",
+          "source_url": "https://updates.psgequity.com/2025-year-in-review/",
+          "source_title": "PSG Equity 2025 Year in Review",
+          "source_content_hash": "2d5bd1a1d2c5394c0cea4d6bc921484bca09467cf8152a5748262565e81b84aa",
+          "quote": "Copyright 2026, PSG Equity",
+          "quote_hash": "aed8502c61ac980fdcabe552a421e8ad54021d652216b8421057e75f65f7f39c"
+        },
         {
           "source_id": "FISRC-056e24fe41ba3e93",
           "source_url": "https://www.ithome.com/0/999/657.htm",
@@ -191,7 +228,7 @@
           "quote_hash": "bf15e9f88ac00a88606570b08a3efcc424ae66c4b81607e97906e6e2d8899846"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

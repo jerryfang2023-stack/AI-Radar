@@ -182,12 +182,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Belfius 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Belfius官网介绍其Private Equity业务投资基础设施、房地产、可再生能源和绿色技术领域的公司及基金；本档案仅覆盖该业务板块。",
+      "facts": [
+        {
+          "field": "business_unit",
+          "label": "业务板块",
+          "value": "Belfius Private Equity。",
+          "source_id": "PROFILE-INV-3e7322c011e37d-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示的投资领域",
+          "value": "基础设施、房地产、可再生能源和绿色技术领域的公司及基金。",
+          "source_id": "PROFILE-INV-3e7322c011e37d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -199,8 +208,32 @@
           "source_id": "FISRC-27e01480407caae0"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "Belfius为集团品牌，来源只确认其中的Belfius Private Equity业务；不将该业务板块描述为独立法律主体。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Belfius Private Equity介绍页",
+          "value": "Belfius",
+          "url": "https://www.belfius.be/corporate/NL/UEnWij/OnzeRealisaties/Structured-Corporate-Finance-Private-Equity/index.aspx",
+          "source_id": "PROFILE-INV-3e7322c011e37d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3e7322c011e37d-1",
+          "source_url": "https://www.belfius.be/corporate/NL/UEnWij/OnzeRealisaties/Structured-Corporate-Finance-Private-Equity/index.aspx",
+          "source_title": "Onze Structured finance, Corporate finance &amp; Private Equity-realisaties - U en wij - Belfius",
+          "source_content_hash": "deca08ed2d6bd5144ef7ada8c6b84556253bec34f0c49ea78bb2d513a5c66983",
+          "quote": "Belfius Private Equity investeert in bedrijven en fondsen die actief zijn in de sectoren infrastructuur, vastgoed, hernieuwbare energie en groene technologie.",
+          "quote_hash": "4b23350074ac68dfac5624c4a7d113f467b588e3b2b8f95c00dd93ec3ec7625a"
+        },
         {
           "source_id": "FISRC-4d11ed62a144a3f4",
           "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
@@ -218,7 +251,7 @@
           "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

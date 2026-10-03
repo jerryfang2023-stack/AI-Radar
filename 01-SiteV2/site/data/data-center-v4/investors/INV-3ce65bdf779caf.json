@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "DeVC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "DeVC官网自述为“去中心化风险投资”，依托创业者、运营者和行业专家组成的协作网络为创业团队提供早期支持。",
+      "facts": [
+        {
+          "field": "self_description",
+          "label": "官网自述",
+          "value": "去中心化风险投资，依托经验丰富的创始人、运营者及行业专家网络。",
+          "source_id": "PROFILE-INV-3ce65bdf779caf-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-6b1944359351ee14"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "依据DeVC官网品牌自述建档；未从该页面核实其完整法律主体或基金登记信息。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "DeVC",
+          "url": "https://www.devc.com/",
+          "source_id": "PROFILE-INV-3ce65bdf779caf-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3ce65bdf779caf-1",
+          "source_url": "https://www.devc.com/",
+          "source_title": "Your Idea to Infinity Partners",
+          "source_content_hash": "f15c39855f8a5ae833ce1aed6f620c634603a2e7dde52f9d600dc0c0de5a0eb5",
+          "quote": "DeVC is truly decentralized venture capital offering access to a collective of experienced founders, operators, and industry experts.",
+          "quote_hash": "10d7db600db24198a2f98b5567d6ea4f050ab80e34dc91c6075f7bbaa1daefd3"
+        },
         {
           "source_id": "FISRC-6b1944359351ee14",
           "source_url": "https://www.cmswire.com/customer-experience/smallestai-lands-13m-series-a-for-voice-ai/",
@@ -161,7 +188,7 @@
           "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

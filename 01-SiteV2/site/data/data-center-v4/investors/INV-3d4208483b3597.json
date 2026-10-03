@@ -121,12 +121,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Washington University in St. Louis 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "华盛顿大学圣路易斯分校校长办公室的endowment说明称，该校捐赠基金由Washington University Investment Management Company（WUIMC）独立管理；WUIMC是校内法律框架下的独立运营部门。",
+      "facts": [
+        {
+          "field": "endowment_management",
+          "label": "捐赠基金管理安排",
+          "value": "校长办公室说明大学捐赠基金由WUIMC管理。",
+          "source_id": "PROFILE-INV-3d4208483b3597-1"
+        },
+        {
+          "field": "manager_relationship",
+          "label": "管理机构关系",
+          "value": "WUIMC于2006年成立，是华盛顿大学法律框架内的独立运营部门。",
+          "source_id": "PROFILE-INV-3d4208483b3597-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +143,32 @@
           "source_id": "FISRC-0349532f469a6b45"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "本档案只说明大学捐赠基金的治理安排，不把WUIMC与大学视为同一投资管理法人，也不据此推断大学持有任何特定基金。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3d4208483b3597-1",
+          "source_url": "https://andrewdmartin.washu.edu/endowment-101-the-makeup-and-management-of-washus-endowment/",
+          "source_title": "Endowment 101: The makeup and management of WashU’s endowment - Office of the Chancellor",
+          "source_content_hash": "95e45a6adf31c6123e6a42e51f5e67267afcd32038af0a0d7f0292a0fbbb6917",
+          "quote": "our endowment is solely managed through the work of the Washington University Investment Management Company (WUIMC).",
+          "quote_hash": "c740900cd2ae42c88d75f0ea4db9ba131001256f602c10f398f6caac9651e32c"
+        },
+        {
+          "source_id": "PROFILE-INV-3d4208483b3597-2",
+          "source_url": "https://andrewdmartin.washu.edu/endowment-101-the-makeup-and-management-of-washus-endowment/",
+          "source_title": "Endowment 101: The makeup and management of WashU’s endowment - Office of the Chancellor",
+          "source_content_hash": "95e45a6adf31c6123e6a42e51f5e67267afcd32038af0a0d7f0292a0fbbb6917",
+          "quote": "Founded in 2006, WUIMC operates as its own business, a separate operating division within the legal framework of Washington University.",
+          "quote_hash": "785f968702da20d62d40a413a92a4adc7c39c91ce3a48062045db48fcf1daa93"
+        },
         {
           "source_id": "FISRC-0349532f469a6b45",
           "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",

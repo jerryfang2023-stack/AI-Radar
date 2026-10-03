@@ -121,12 +121,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "杭实产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "杭实集团的官方页面将“杭实产投”列为战略性产业投资与产业培育孵化平台，并在全资及控股企业名单中列出杭实产投控股（杭州）集团有限公司。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "集团名单所列企业名称",
+          "value": "杭实产投控股（杭州）集团有限公司。",
+          "source_id": "PROFILE-INV-3bb1c029f46bb0-2"
+        },
+        {
+          "field": "group_role",
+          "label": "平台定位",
+          "value": "杭实集团称其为战略性产业投资与产业培育孵化平台。",
+          "source_id": "PROFILE-INV-3bb1c029f46bb0-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +143,40 @@
           "source_id": "FISRC-b860ba28c7fca8f1"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案按集团公开的品牌平台名称与公司名单映射；不把集团其他基金或产业投资平台的数据合并进来。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "杭实集团产业投资页面",
+          "value": "杭实集团产业投资",
+          "url": "https://www.hziam.com/cytz.jhtml",
+          "source_id": "PROFILE-INV-3bb1c029f46bb0-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-3bb1c029f46bb0-1",
+          "source_url": "https://www.hziam.com/cytz.jhtml",
+          "source_title": "杭实集团",
+          "source_content_hash": "1f7f15e36e11f61fab2894101cb3201421358ff54e5bbd17405138d548fc0f74",
+          "quote": "杭实产投作为集团战略性产业投资与产业培育孵化平台",
+          "quote_hash": "d4261afbe5d84d957a0f311d6080fc7950e86ff30ed757b80faefe5594c87f35"
+        },
+        {
+          "source_id": "PROFILE-INV-3bb1c029f46bb0-2",
+          "source_url": "https://www.hziam.com/cgqy.jhtml",
+          "source_title": "杭州市实业投资集团有限公司（杭实集团）",
+          "source_content_hash": "0296652baa28b5fc4cbe5516a0b0bdd2d9c71e4f55db53d1582c89a325aac862",
+          "quote": "杭实产投控股（杭州）集团有限公司",
+          "quote_hash": "2598d6d3809537a512fd7292b895d4cfc0126afff43a488c7dfd1f3908613a9f"
+        },
         {
           "source_id": "FISRC-b860ba28c7fca8f1",
           "source_url": "https://www.tmtpost.com/7507888.html",
