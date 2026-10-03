@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,7 +63,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 5,
     "market_regions": [
@@ -77,7 +77,7 @@
       "co_lead": 2,
       "historical_or_ambiguous": 2,
       "lead": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "series_a",
@@ -116,10 +116,53 @@
     ],
     "activities": [
       {
+        "activity_id": "IA-0cb474b0a6640986",
+        "funding_insight_id": "FI-4b143304af694a92",
+        "event_ids": [
+          "EV-35fa913e4709b4d6",
+          "EV-df4a0504042552ae",
+          "EV-861d4440dcbb9b09"
+        ],
+        "company_entity_id": "FICO-instinct",
+        "company_canonical_entity_id": "",
+        "company_name": "Instinct",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-61d399294cc620a4",
+            "source_url": "https://www.ithome.com/1/008/060.htm",
+            "source_title": "AI 初创公司 Instinct 完成 10 亿美元融资，投后估值达 100 亿美元",
+            "source_content_hash": "c62e4fc4d501edfc55ba361b0d3c29a3f1ba1efa4f33edc8865db074f63a8cde",
+            "quote": "本轮融资由红杉资本、基准资本和 Coatue 参与。",
+            "quote_hash": "adb0cad199900f3abffc537b237613d60e90dbee78e123f36bc33e66fad71e8e"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-2564474cc866c8f4",
         "funding_insight_id": "FI-4b143304af694a92",
         "event_ids": [
           "EV-35fa913e4709b4d6",
+          "EV-df4a0504042552ae",
           "EV-861d4440dcbb9b09"
         ],
         "company_entity_id": "FICO-instinct",
@@ -433,6 +476,7 @@
         "funding_insight_id": "FI-4b143304af694a92",
         "event_ids": [
           "EV-35fa913e4709b4d6",
+          "EV-df4a0504042552ae",
           "EV-861d4440dcbb9b09"
         ],
         "company_entity_id": "FICO-instinct",
@@ -455,7 +499,7 @@
             "source_id": "FISRC-6ffdf43efe75ccde",
             "source_url": "https://multiples.vc/private-comps/instinct",
             "source_title": "Instinct Valuation, Funding & Investors | Multiples",
-            "source_content_hash": "ae9ae5e9661bb061",
+            "source_content_hash": "0d2ee7135192d938",
             "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
             "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
           }
@@ -463,6 +507,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-61d399294cc620a4",
+        "source_url": "https://www.ithome.com/1/008/060.htm",
+        "source_title": "AI 初创公司 Instinct 完成 10 亿美元融资，投后估值达 100 亿美元",
+        "source_content_hash": "c62e4fc4d501edfc55ba361b0d3c29a3f1ba1efa4f33edc8865db074f63a8cde",
+        "quote": "本轮融资由红杉资本、基准资本和 Coatue 参与。",
+        "quote_hash": "adb0cad199900f3abffc537b237613d60e90dbee78e123f36bc33e66fad71e8e"
+      },
       {
         "source_id": "FISRC-560cbbccadfe271d",
         "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
@@ -531,7 +583,7 @@
         "source_id": "FISRC-6ffdf43efe75ccde",
         "source_url": "https://multiples.vc/private-comps/instinct",
         "source_title": "Instinct Valuation, Funding & Investors | Multiples",
-        "source_content_hash": "ae9ae5e9661bb061",
+        "source_content_hash": "0d2ee7135192d938",
         "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
         "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
       }
@@ -586,15 +638,11 @@
         },
         {
           "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-560cbbccadfe271d"
+          "source_id": "FISRC-61d399294cc620a4"
         },
         {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
-        },
-        {
-          "description": "融资来源记录：Instinct · B轮 · 2026-08-26 · 本轮联合领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6050aa46cf9e60a2"
         }
       ],
       "contacts": [
@@ -646,6 +694,14 @@
           "quote_hash": "670df8237bdcca7f69e9383728e8fb609db69e4dc603334230596f80fba3706c"
         },
         {
+          "source_id": "FISRC-61d399294cc620a4",
+          "source_url": "https://www.ithome.com/1/008/060.htm",
+          "source_title": "AI 初创公司 Instinct 完成 10 亿美元融资，投后估值达 100 亿美元",
+          "source_content_hash": "c62e4fc4d501edfc55ba361b0d3c29a3f1ba1efa4f33edc8865db074f63a8cde",
+          "quote": "本轮融资由红杉资本、基准资本和 Coatue 参与。",
+          "quote_hash": "adb0cad199900f3abffc537b237613d60e90dbee78e123f36bc33e66fad71e8e"
+        },
+        {
           "source_id": "FISRC-560cbbccadfe271d",
           "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
           "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
@@ -660,14 +716,6 @@
           "source_content_hash": "274ba4a54870c633",
           "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
           "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
-        },
-        {
-          "source_id": "FISRC-6050aa46cf9e60a2",
-          "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
-          "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
-          "source_content_hash": "12db016e60d4c1b4",
-          "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
-          "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
         }
       ],
       "last_verified_at": "2026-09-26",
@@ -678,7 +726,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[7].role": {
+        "activities[8].role": {
           "text": "Venture Round 参投",
           "source_hash": "06c87ef49262ae10ee600994008f183c80d7e1cd9788cd80d3ef49509dceba0e",
           "provider": "deepseek",
@@ -686,7 +734,7 @@
           "translated_at": "2026-10-02T06:25:20.177Z",
           "status": "translated"
         },
-        "activities[8].role": {
+        "activities[9].role": {
           "text": "Series B 联合领投",
           "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
           "provider": "deepseek",

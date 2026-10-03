@@ -1,0 +1,636 @@
+{
+  "event_id": "EV-3a4ba26375b45669",
+  "company_name": "OpenAI",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-4a5389acc43de0fd",
+    "triggered_by_event_id": "EV-3a4ba26375b45669",
+    "as_of_date": "2026-10-03",
+    "company": {
+      "entity_id": "EN-7d3194f79e645c42",
+      "name": "OpenAI",
+      "full_name": "OpenAI",
+      "website": "",
+      "summary": "OpenAI 是一家人工智能研究与部署公司，提供一系列 AI 模型用于开发和构建下一代应用，产品包括 ChatGPT、GPT-3 以及图像、语言和代码生成模型。",
+      "headquarters": "",
+      "founders": [],
+      "team_size": {
+        "value": "770",
+        "observed_at": "2023-11-20",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b21993280079a26c",
+            "quote": "the number of signatures amounted to a majority of the company’s 770 employees",
+            "source_content_hash": "0a6056e962b91226",
+            "quote_hash": "9809a270de0f453a182d69cefe141156015b7bcb4f633ef530301d617a8a2dce"
+          }
+        ]
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-255ab290c6c7dec1",
+          "quote": "OpenAI is an AI (Artificial Intelligence) research and deployment company that offers a suite of AI models to develop and build next-gen apps.",
+          "source_content_hash": "a6c4c3d078dce12e",
+          "quote_hash": "04fff985504e74c20637f679bc88dca006215d7d0b8af654e3fd943349a8681f"
+        },
+        {
+          "source_id": "FISRC-ab5c50265c46487b",
+          "quote": "ChatGPT is a flagship artificial intelligence chatbot developed by OpenAI.",
+          "source_content_hash": "e5d99ee35da9fe16",
+          "quote_hash": "0af1d3c9db7437c1bb24c4288a8b4eea64a59df366b498f7a8b9ecdbfa281a9a"
+        }
+      ],
+      "application_entity_id": "EN-7d3194f79e645c42",
+      "canonical_entity_consistent": true
+    },
+    "financing": {
+      "round": "其他融资",
+      "amount": "1,220 亿美元",
+      "total_raised": "",
+      "announced_at": "2026-10-02",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "英伟达",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eddae300ed827c09",
+              "quote": "英伟达与软银已分别向 OpenAI 支付最后一笔 100 亿美元",
+              "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+              "quote_hash": "e528789713b7fbcc746a87e7d3fc6d805f1ce8b5cfb3ab675b50b4bb294d2731"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        },
+        {
+          "name": "软银",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eddae300ed827c09",
+              "quote": "英伟达与软银已分别向 OpenAI 支付最后一笔 100 亿美元",
+              "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+              "quote_hash": "e528789713b7fbcc746a87e7d3fc6d805f1ce8b5cfb3ab675b50b4bb294d2731"
+            }
+          ],
+          "entity_id": "EN-80d387ccb3289295"
+        },
+        {
+          "name": "亚马逊",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eddae300ed827c09",
+              "quote": "除英伟达和软银外，亚马逊此前已完成 500 亿美元",
+              "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+              "quote_hash": "76b77f3c1a00e76c0006774ab25d548cdb4bf7eee0adf125a3df0aed131c2cda"
+            }
+          ],
+          "entity_id": "EN-6d37feda49a46792"
+        }
+      ],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-eddae300ed827c09",
+          "quote": "本轮融资总承诺金额约为 1,220 亿美元（现汇率约合 8,191.75 亿元人民币），对 OpenAI 的估值约为 8,520 亿美元（现汇率约合 5.72 万亿元人民币）。",
+          "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+          "quote_hash": "0b8ea1a9c2c949b021f71ea9a19a4eee7b5a44e40324d8b9b03feafe75c904e6"
+        },
+        {
+          "source_id": "FISRC-eddae300ed827c09",
+          "quote": "本轮融资总承诺金额约为 1,220 亿美元",
+          "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+          "quote_hash": "bf726690540f62f06fc6dc1531aa75eff2e4af6fbbd6b16dd5e37e7bb9b2c394"
+        },
+        {
+          "source_id": "FISRC-eddae300ed827c09",
+          "quote": "对 OpenAI 的估值约为 8,520 亿美元",
+          "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+          "quote_hash": "2a7a059eaff4db62fdff498286ed884df7cfc7c8d77ee945f0c3b014227d0140"
+        },
+        {
+          "source_id": "FISRC-eddae300ed827c09",
+          "quote": "三家主要投资者累计投入约 1,100 亿美元",
+          "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+          "quote_hash": "430a48422ee31c4bfb9ca0c552f864056b3c253365abf44336ea3228dc93c7b0"
+        }
+      ],
+      "round_code": "other",
+      "round_original": "本轮融资",
+      "amount_original": "1,220 亿美元",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 122000000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "1220 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-3a4ba26375b45669",
+          "round_original": "本轮融资",
+          "amount": "1,220 亿美元",
+          "announced_at": "2026-10-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eddae300ed827c09",
+              "quote": "本轮融资总承诺金额约为 1,220 亿美元（现汇率约合 8,191.75 亿元人民币），对 OpenAI 的估值约为 8,520 亿美元（现汇率约合 5.72 万亿元人民币）。",
+              "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+              "quote_hash": "0b8ea1a9c2c949b021f71ea9a19a4eee7b5a44e40324d8b9b03feafe75c904e6"
+            },
+            {
+              "source_id": "FISRC-eddae300ed827c09",
+              "quote": "本轮融资总承诺金额约为 1,220 亿美元",
+              "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+              "quote_hash": "bf726690540f62f06fc6dc1531aa75eff2e4af6fbbd6b16dd5e37e7bb9b2c394"
+            },
+            {
+              "source_id": "FISRC-eddae300ed827c09",
+              "quote": "对 OpenAI 的估值约为 8,520 亿美元",
+              "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+              "quote_hash": "2a7a059eaff4db62fdff498286ed884df7cfc7c8d77ee945f0c3b014227d0140"
+            },
+            {
+              "source_id": "FISRC-eddae300ed827c09",
+              "quote": "三家主要投资者累计投入约 1,100 亿美元",
+              "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+              "quote_hash": "430a48422ee31c4bfb9ca0c552f864056b3c253365abf44336ea3228dc93c7b0"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "ChatGPT",
+        "description": "旗舰人工智能聊天机器人，能够以看似自然的方式回答问题并生成类人文本。",
+        "target_customers": "",
+        "features": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ab5c50265c46487b",
+            "quote": "ChatGPT is a flagship artificial intelligence chatbot developed by OpenAI.",
+            "source_content_hash": "e5d99ee35da9fe16",
+            "quote_hash": "0af1d3c9db7437c1bb24c4288a8b4eea64a59df366b498f7a8b9ecdbfa281a9a"
+          },
+          {
+            "source_id": "FISRC-b21993280079a26c",
+            "quote": "Altman helped catapult ChatGPT to global fame based on its ability to respond to questions and produce human-like passages of text in a seemingly natural way.",
+            "source_content_hash": "0a6056e962b91226",
+            "quote_hash": "cf75a317b5f5fc8e032a59e70e40703697ad904a4f26bc758de49a54b3929716"
+          }
+        ],
+        "entity_id": "EN-d1ad14d4ad57d207"
+      },
+      {
+        "name": "OpenAI API",
+        "description": "可应用于几乎所有涉及理解或生成自然语言或代码的任务，提供不同能力级别的模型以及微调自定义模型的能力。",
+        "target_customers": "",
+        "features": [
+          "可用于内容生成",
+          "可用于语义搜索和分类",
+          "支持微调自定义模型"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-255ab290c6c7dec1",
+            "quote": "The OpenAI API can be applied to virtually any task that involves understanding or generating natural language or code.",
+            "source_content_hash": "a6c4c3d078dce12e",
+            "quote_hash": "e32fb4840b8cc2a36611e9b8888c01a5a619e8a69f98f4620c38ea19b4dd5efe"
+          },
+          {
+            "source_id": "FISRC-255ab290c6c7dec1",
+            "quote": "It offers a spectrum of models with different levels of power suitable for different tasks, as well as the ability to fine-tune own custom models.",
+            "source_content_hash": "a6c4c3d078dce12e",
+            "quote_hash": "8bd7d9f28fc5756304ca6ff1552bb6179afff000dc11f78c8147e47fdc48fbd6"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "本轮融资总承诺金额",
+        "value": "1,220 亿美元",
+        "observed_at": "2026-10-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-eddae300ed827c09",
+            "quote": "本轮融资总承诺金额约为 1,220 亿美元",
+            "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+            "quote_hash": "bf726690540f62f06fc6dc1531aa75eff2e4af6fbbd6b16dd5e37e7bb9b2c394"
+          }
+        ]
+      },
+      {
+        "label": "估值",
+        "value": "8,520 亿美元",
+        "observed_at": "2026-10-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-eddae300ed827c09",
+            "quote": "对 OpenAI 的估值约为 8,520 亿美元",
+            "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+            "quote_hash": "2a7a059eaff4db62fdff498286ed884df7cfc7c8d77ee945f0c3b014227d0140"
+          }
+        ]
+      },
+      {
+        "label": "三家主要投资者累计投入",
+        "value": "约 1,100 亿美元",
+        "observed_at": "2026-10-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-eddae300ed827c09",
+            "quote": "三家主要投资者累计投入约 1,100 亿美元",
+            "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+            "quote_hash": "430a48422ee31c4bfb9ca0c552f864056b3c253365abf44336ea3228dc93c7b0"
+          }
+        ]
+      },
+      {
+        "label": "三家主要投资者占本轮融资承诺金额比例",
+        "value": "约 90%",
+        "observed_at": "2026-10-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-eddae300ed827c09",
+            "quote": "约占本轮融资承诺金额的 90%",
+            "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+            "quote_hash": "23da0e2ac995e742b1a14276dd9b9b68eefca199cb406420349b995e98213dd3"
+          }
+        ]
+      },
+      {
+        "label": "软银对 OpenAI 累计投资金额",
+        "value": "约 646 亿美元",
+        "observed_at": "2026-10-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-eddae300ed827c09",
+            "quote": "其对 OpenAI 的累计投资金额达到约 646 亿美元",
+            "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+            "quote_hash": "54128b1ca379b5875f16774ba78177fa0460e077c9484eb470a2d34b613b2324"
+          }
+        ]
+      },
+      {
+        "label": "软银持股比例",
+        "value": "约 13%",
+        "observed_at": "2026-10-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-eddae300ed827c09",
+            "quote": "持股比例约为 13%",
+            "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+            "quote_hash": "0cab4b0db8f1f2bad10dd3d861c3497f9e00a1667c37f7e0408173c32b31ef65"
+          }
+        ]
+      },
+      {
+        "label": "使用 OpenAI 的公司数量",
+        "value": "290,853",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-255ab290c6c7dec1",
+            "quote": "We have data on 290,853 companies that use OpenAI.",
+            "source_content_hash": "a6c4c3d078dce12e",
+            "quote_hash": "080c583e67080d7f52e8500e8d8bfa9c56d7edc2cd8df71364e5b4054a873b79"
+          }
+        ]
+      },
+      {
+        "label": "OpenAI 在 Conversational AI 的市场份额",
+        "value": "约 49.1%",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-255ab290c6c7dec1",
+            "quote": "OpenAI has a market share of about 49.1%",
+            "source_content_hash": "a6c4c3d078dce12e",
+            "quote_hash": "50d44adcd17f0c876b93f2a70542e24a5ec25da5af5f78363f5e6cd41dcb5270"
+          }
+        ]
+      }
+    ],
+    "quotes": [],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "本轮资本押注的核心变量是 OpenAI 在人工智能模型研发、算力基础设施建设及数据中心扩张方面的资金实力能否持续兑现。已验证信号包括：本轮融资总承诺金额约 1,220 亿美元，估值约 8,520 亿美元，英伟达、软银、亚马逊三家主要投资者累计投入约 1,100 亿美元，约占本轮承诺金额的 90%；软银累计投资约 646 亿美元，持股约 13%。证据边界在于：来源仅披露融资规模、出资进度与估值，未披露本轮资金的具体用途分配、收入或盈利数据，也未披露除三家主要投资者外的其他出资方明细。",
+      "validated_signals": [
+        "本轮融资总承诺金额约 1,220 亿美元",
+        "对 OpenAI 的估值约 8,520 亿美元",
+        "英伟达与软银已分别支付最后一笔 100 亿美元，完成各自 300 亿美元投资承诺",
+        "亚马逊此前已完成 500 亿美元投资",
+        "三家主要投资者累计投入约 1,100 亿美元，约占本轮融资承诺金额的 90%",
+        "软银对 OpenAI 累计投资约 646 亿美元，持股比例约 13%"
+      ],
+      "risks": [
+        "来源未披露本轮资金的具体用途分配，模型研发、算力基础设施建设及数据中心扩张的资金安排缺乏明细",
+        "来源未披露 OpenAI 的收入、盈利或现金流数据，无法验证估值与融资规模对应的商业化兑现程度",
+        "本轮融资承诺金额约 1,220 亿美元中，除三家主要投资者外的其余约 10% 出资方未披露，出资到位存在不确定性"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "model_api_service",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "use_case_ids": [
+        "content_creation",
+        "knowledge_search",
+        "data_analysis",
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "sector": "人工智能",
+      "investment_thesis": {
+        "statement": "本轮资本押注的核心变量是 OpenAI 在人工智能模型研发、算力基础设施建设及数据中心扩张方面的资金实力能否持续兑现。已验证信号包括：本轮融资总承诺金额约 1,220 亿美元，估值约 8,520 亿美元，英伟达、软银、亚马逊三家主要投资者累计投入约 1,100 亿美元，约占本轮承诺金额的 90%；软银累计投资约 646 亿美元，持股约 13%。证据边界在于：来源仅披露融资规模、出资进度与估值，未披露本轮资金的具体用途分配、收入或盈利数据，也未披露除三家主要投资者外的其他出资方明细。",
+        "evidence_signals": [
+          "本轮融资总承诺金额约 1,220 亿美元",
+          "对 OpenAI 的估值约 8,520 亿美元",
+          "英伟达与软银已分别支付最后一笔 100 亿美元，完成各自 300 亿美元投资承诺",
+          "亚马逊此前已完成 500 亿美元投资",
+          "三家主要投资者累计投入约 1,100 亿美元，约占本轮融资承诺金额的 90%",
+          "软银对 OpenAI 累计投资约 646 亿美元，持股比例约 13%"
+        ],
+        "risks": [
+          "来源未披露本轮资金的具体用途分配，模型研发、算力基础设施建设及数据中心扩张的资金安排缺乏明细",
+          "来源未披露 OpenAI 的收入、盈利或现金流数据，无法验证估值与融资规模对应的商业化兑现程度",
+          "本轮融资承诺金额约 1,220 亿美元中，除三家主要投资者外的其余约 10% 出资方未披露，出资到位存在不确定性"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "ChatGPT",
+        "canonical_entity_id": "EN-d1ad14d4ad57d207",
+        "canonical_name": "ChatGPT"
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "OpenAI API",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "英伟达",
+        "canonical_entity_id": "EN-8d4321d936320802",
+        "canonical_name": "NVIDIA"
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "软银",
+        "canonical_entity_id": "EN-80d387ccb3289295",
+        "canonical_name": "SoftBank"
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "亚马逊",
+        "canonical_entity_id": "EN-6d37feda49a46792",
+        "canonical_name": "亚马逊"
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-3a4ba26375b45669",
+        "date": "2026-10-02",
+        "title": "填充 AI 资金弹药：曝 OpenAI 融资再落袋 200 亿美元，英伟达、软银和亚马逊已出资约 90%",
+        "amount": "1,220 亿美元",
+        "source_refs": [
+          "SA-bda59a6534dad878",
+          "SA-8e9a908786a4a729"
+        ]
+      },
+      {
+        "event_id": "EV-c387c9717ee19670",
+        "date": "2026-04-01",
+        "title": "创纪录！OpenAI完成1220亿美元融资投后估值达8520亿美元",
+        "amount": "1220亿美元",
+        "source_refs": [
+          "SA-b3e42ad16d52c7fe"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-eddae300ed827c09",
+        "source_url": "https://www.ithome.com/1/009/270.htm",
+        "title": "填充 AI 资金弹药：曝 OpenAI 融资再落袋 200 亿美元，英伟达、软银和亚马逊已出资约 90%",
+        "publisher": "www.ithome.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-03T00:20:45.941Z",
+        "content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+        "source_artifact_id": "SA-bda59a6534dad878",
+        "raw_id": "RAW-8919ae659661b2c4"
+      },
+      {
+        "source_id": "FISRC-255ab290c6c7dec1",
+        "source_url": "https://enlyft.com/tech/products/openai",
+        "title": "OpenAI commands 49.06% market share in Conversational AI",
+        "publisher": "enlyft.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-03T00:28:51.134Z",
+        "content_hash": "a6c4c3d078dce12e",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-b21993280079a26c",
+        "source_url": "https://www.abc27.com/news/us-world/tech/ap-microsoft-hires-openai-founders-to-lead-ai-research-team-after-chatgpt-makers-shakeup/",
+        "title": "Company that created ChatGPT is thrown into turmoil after Microsoft hires its ousted CEO",
+        "publisher": "abc27.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-03T00:29:33.882Z",
+        "content_hash": "0a6056e962b91226",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-ab5c50265c46487b",
+        "source_url": "https://madeometer.com/p/698c682f8dcde244f7093022/ChatGPT-OpenAI-Services",
+        "title": "Who's behind ChatGPT / OpenAI Services? Check before you buy",
+        "publisher": "madeometer.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-03T00:29:45.484Z",
+        "content_hash": "e5d99ee35da9fe16",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-03T00:29:53.138Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-03T00:29:53.138Z",
+    "customer_research": {
+      "status": "no_verified_customer_found",
+      "verified_customer_count": 0,
+      "searched_source_count": 4
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 1,
+        "total": 2,
+        "unresolved_names": [
+          "OpenAI API"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 0,
+        "unresolved_names": []
+      }
+    },
+    "source_event_ids": [
+      "EV-3a4ba26375b45669"
+    ],
+    "aggregation": {
+      "key": "EN-7d3194f79e645c42|other",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"OpenAI\" official product customers",
+    "\"OpenAI\" \"why we invested\"",
+    "\"OpenAI\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "planner",
+      "query": "\"OpenAI\" 2026 funding round investors",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"OpenAI\" 1,220 亿美元 funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"OpenAI\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://openai.com/index/introducing-dots/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://openai.com/index/introducing-openai-presence/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.facebook.com/groups/698593531630485/posts/808432880646549/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.reddit.com/r/LinusTechTips/comments/1qkae55/openai_plans_to_take_a_cut_of_customers_aiaided/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"OpenAI\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://hofcapital.substack.com/p/why-we-invested-in-anthropic",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://x.com/InvestLikeBest/status/2054619183552381254",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.youtube.com/watch?v=-LnI3cL9atM",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"OpenAI\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"OpenAI\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.theinformation.com/articles/the-openai-coder-who-spun-tech-on-its-head",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://securitiex.substack.com/p/the-path-to-ipo-openai-timeline",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    }
+  ]
+}

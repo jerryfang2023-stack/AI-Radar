@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
@@ -72,11 +72,43 @@
     "first_disclosed_at": "",
     "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-45e8b7a78771b67d",
+        "funding_insight_id": "FI-890ae16f28de5d25",
+        "event_ids": [
+          "EV-936ef5bf2539b55a"
+        ],
+        "company_entity_id": "EN-e853b4e183ed0870",
+        "company_canonical_entity_id": "",
+        "company_name": "ElevenLabs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series D 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7bbfa0b0946953ff",
+            "source_url": "https://elevenlabs.io/blog/series-d",
+            "source_title": "ElevenLabs raises $500M Series D at $11B valuation",
+            "source_content_hash": "0ce881ccd5783eb1",
+            "quote": "Existing investors - BroadLight, NFDG, Valor Capital, AMP Coalition and Smash Capital are also continuing their support along with additional investor participation expected to be disclosed later in February.",
+            "quote_hash": "0f9def18765cbe3584eaafa080187015ade56e0f22317dbcebe29e06cd896af9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7ec222d2cd9b2275",
         "funding_insight_id": "FI-c5686c09063973a5",
@@ -114,6 +146,14 @@
       {
         "source_id": "FISRC-7bbfa0b0946953ff",
         "source_url": "https://elevenlabs.io/blog/series-d",
+        "source_title": "ElevenLabs raises $500M Series D at $11B valuation",
+        "source_content_hash": "0ce881ccd5783eb1",
+        "quote": "Existing investors - BroadLight, NFDG, Valor Capital, AMP Coalition and Smash Capital are also continuing their support along with additional investor participation expected to be disclosed later in February.",
+        "quote_hash": "0f9def18765cbe3584eaafa080187015ade56e0f22317dbcebe29e06cd896af9"
+      },
+      {
+        "source_id": "FISRC-7bbfa0b0946953ff",
+        "source_url": "https://elevenlabs.io/blog/series-d",
         "source_title": "ElevenLabs 以 110 亿美元估值完成 5 亿美元 D 轮融资",
         "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
         "quote": "Existing investors - BroadLight, NFDG, Valor Capital, AMP Coalition and Smash Capital are also continuing their support",
@@ -130,7 +170,7 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：ElevenLabs · 历史轮次未披露 · 既有投资者，本轮继续支持。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：ElevenLabs · 历史轮次未披露 · Series D 参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7bbfa0b0946953ff"
         }
       ],
@@ -139,13 +179,25 @@
         {
           "source_id": "FISRC-7bbfa0b0946953ff",
           "source_url": "https://elevenlabs.io/blog/series-d",
-          "source_title": "ElevenLabs 以 110 亿美元估值完成 5 亿美元 D 轮融资",
-          "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
-          "quote": "Existing investors - BroadLight, NFDG, Valor Capital, AMP Coalition and Smash Capital are also continuing their support",
-          "quote_hash": "b0dd762d2ae44b8d22dc705c80b34ca750c6e554bf703aa26b5f7d9d337c34fe"
+          "source_title": "ElevenLabs raises $500M Series D at $11B valuation",
+          "source_content_hash": "0ce881ccd5783eb1",
+          "quote": "Existing investors - BroadLight, NFDG, Valor Capital, AMP Coalition and Smash Capital are also continuing their support along with additional investor participation expected to be disclosed later in February.",
+          "quote_hash": "0f9def18765cbe3584eaafa080187015ade56e0f22317dbcebe29e06cd896af9"
         }
       ],
       "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Series D 参投",
+          "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

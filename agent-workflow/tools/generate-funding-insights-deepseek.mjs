@@ -233,17 +233,16 @@ export function reusableResearchCapture(cached = {}, url = '') {
     && cached.content_hash === sourceTextHash(cached.body_clean);
 }
 
-async function capturePage(result) {
-  const privateCache = args.get("research-seeds") ? path.join(resolvePrivateEvidenceBackupRoot(root, { required: true }), "funding-research", stableId("FISRC", result.url) + ".json") : "";
+export async function capturePage(result, { backupRoot = resolvePrivateEvidenceBackupRoot(root, { required: Boolean(args.get("research-seeds")) }), readPage = readOriginalPage } = {}) {
+  const privateCache = backupRoot ? path.join(backupRoot, "funding-research", stableId("FISRC", result.url) + ".json") : "";
   if (privateCache && fs.existsSync(privateCache)) {
     const cached = readJson(privateCache, {});
     if (reusableResearchCapture(cached, result.url)) return cached;
   }
   let page;
   try {
-    const backupRoot=resolvePrivateEvidenceBackupRoot(root,{required:false});
     const reader=backupRoot?createOriginalReader({directory:path.join(backupRoot,'financing-monitor-state','original-reader'),date}):null;
-    page=await readOriginalPage(result.url,{reader,timeoutMs:30000});
+    page=await readPage(result.url,{reader,timeoutMs:30000});
   } catch { return null; }
   const title=page.title||result.title,body=page.body,method=page.method==='original_http'?'direct_fetch':page.method;
   const source = {

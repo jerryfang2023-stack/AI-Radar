@@ -25960,7 +25960,380 @@
       "provider": "manual_review",
       "model": "Codex",
       "generated_at": "2026-10-02T09:34:47.492Z"
+    },
+    "EV-1766b4df1b7011d7": {
+      "id": "EV-1766b4df1b7011d7",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "全灵自研3D互动多模态大模型并交付AI游戏生成平台，属多模态基础模型。",
+      "input_hash": "2cc7ef82eda35902beeb2da12787e664994d6f0eea1731ce968ba05cce2ea665",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1ee9d0f0b5e8678c",
+          "quote": "全灵SEELE是一家多模态大模型和应用公司，专注于3D游戏AIGC领域，公司致力于通过自研游戏多模态大模型，革新游戏内容生产方式，打造AI游戏生成的内容平台，让每个人都能轻松创作出互动游戏。"
+        },
+        {
+          "source_id": "FISRC-f6ec129e8aeea8c4",
+          "quote": "SEELE AI致力于研发3D互动多模态大模型，通过简单的输入便能生成3D互动内容，旨在成为新一代的3D社交互动平台。其聚焦游戏内容生产，简化了游戏开发流程。有别于传统开发中繁琐的编程与美术制作环节，创作者只需通过文字描述，即可借助SEELE AI的多模态大模型，将创意转化为3D互动世界。系统不仅能自动生成3D场景与模型，更可创建互动动画、配乐音效，以及游戏玩法。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T00:39:30.827Z"
+    },
+    "EV-3a4ba26375b45669": {
+      "id": "EV-3a4ba26375b45669",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "OpenAI提供通用大模型及API供开发与消费应用，属通用基础模型。",
+      "input_hash": "e61851ebb23aa4adf4e8cf6acb443bdf9dd2598c71e2a338a03ecd47f253e5c6",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-255ab290c6c7dec1",
+          "quote": "OpenAI is an AI (Artificial Intelligence) research and deployment company that offers a suite of AI models to develop and build next-gen apps."
+        },
+        {
+          "source_id": "FISRC-255ab290c6c7dec1",
+          "quote": "The OpenAI API can be applied to virtually any task that involves understanding or generating natural language or code."
+        },
+        {
+          "source_id": "FISRC-255ab290c6c7dec1",
+          "quote": "It offers a spectrum of models with different levels of power suitable for different tasks, as well as the ability to fine-tune own custom models."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T00:39:30.827Z"
+    },
+    "EV-df4a0504042552ae": {
+      "id": "EV-df4a0504042552ae",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "Instinct开发面向个人的AI智能体，自主执行日常事务，属消费个人助手。",
+      "input_hash": "6201c91b50834ad0b11f49b6aebe61da40a54733cffef42017b05c92bc4bfd31",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-61d399294cc620a4",
+          "quote": "Instinct 公司正在开发一款个人 AI 智能体，可以自主执行日常任务。"
+        },
+        {
+          "source_id": "FISRC-6ffdf43efe75ccde",
+          "quote": "Instinct is a viral, invite-only personal AI assistant that operates phones and desktops like a human via text or phone calls."
+        },
+        {
+          "source_id": "FISRC-61d399294cc620a4",
+          "quote": "该公司还计划推出礼宾服务，将数字智能体进一步扩展至现实世界，让 AI 代替用户致电商家，完成订座等事务。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T00:39:30.827Z"
+    },
+    "EV-936ef5bf2539b55a": {
+      "id": "EV-936ef5bf2539b55a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "media-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "business",
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "ElevenLabs以语音生成模型为核心，提供语音API与语音智能体基础设施。",
+      "input_hash": "f6b1ed4fd7b5ec36dbda0b5f4173e5adaeb8084aa6f8bc82c972eea2fa5973cc",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ecee7b20064e2761",
+          "quote": "Founded in 2022, the company is known for generating ultra-realistic human voices and sound effects."
+        },
+        {
+          "source_id": "FISRC-7bbfa0b0946953ff",
+          "quote": "ElevenAgents, which enables enterprises to deploy voice and chat agents with the reliability, integrations, testing, and monitoring required for large-scale customer operations."
+        },
+        {
+          "source_id": "FISRC-7bbfa0b0946953ff",
+          "quote": "ElevenAPI, which provides low-latency, production-grade voice infrastructure for developers building interactive products and experiences."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T00:39:30.827Z"
+    },
+    "EV-36a1333e9d930b31": {
+      "id": "EV-36a1333e9d930b31",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "该公司以AI算法评估健康与衰老风险，并通过自营诊所交付预防医疗服务，属医疗健康行业AI。",
+      "input_hash": "5b6a03109cda479b765d3d00a67d03da6c9f31c16afe315f1e213b24a3f19eb0",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c8567b52c3776e28",
+          "quote": "Doctor-led longevity and preventive healthcare startup Vytalyou has raised Rs 9 crore in a pre-Series A round"
+        },
+        {
+          "source_id": "FISRC-659d31cd1de2f549",
+          "quote": "The company uses an AI-based algorithm to assess an individual's health profile, biological ageing and potential health risks."
+        },
+        {
+          "source_id": "FISRC-c8567b52c3776e28",
+          "quote": "The proceeds will be used to expand its network of Incremental Lifestyle Clinics in Mumbai"
+        },
+        {
+          "source_id": "FISRC-659d31cd1de2f549",
+          "quote": "The company offers a broad range of diagnostic and preventive healthcare services through its clinics. These include pathology, radiology, cardio-respiratory assessments and body composition evaluation."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T00:39:31.599Z"
+    },
+    "EV-b65546baa01e855b": {
+      "id": "EV-b65546baa01e855b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "public-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "public-sector"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "其AI平台面向北约与政府识别敌对信息威胁，属公共服务领域的行业AI软件。",
+      "input_hash": "a3c7a7ccc547990883f12e3c7e273498257fbf3f2a8fb5558d0b9db55ccd8f40",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4dc390804d079769",
+          "quote": "A startup launched in light of Russia’s invasion of Ukraine whose tech helps NATO and governments detect hostile threats before they escalate has raised €8.5m in a Series A funding round, it said today."
+        },
+        {
+          "source_id": "FISRC-4dc390804d079769",
+          "quote": "Osavul's AI platform identifies hostile activity, be…"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T00:39:31.599Z"
+    },
+    "EV-b35ee2ada485c7e4": {
+      "id": "EV-b35ee2ada485c7e4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "property",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Kuro为总承包商提供处理建筑文档、图纸与招标的AI平台，属建筑行业软件。",
+      "input_hash": "60205c73b46dfd33a14f3366228953b00677f5ffe7de8082c6eceb62e2229327",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8bd4513374ef496a",
+          "quote": "Kuro Technology, a Berlin-based ConTech startup that builds AI software to help general contractors, has raised €10 million in a funding round."
+        },
+        {
+          "source_id": "FISRC-8bd4513374ef496a",
+          "quote": "Kuro is built to fix that with a platform that processes these documents and links them into a single data model. On top of this model, Kuro builds a customer-specific rulebook covering their specific building components, review criteria and work packages. The platform flags contradictions between drawings and specifications before they become costly mistakes, assesses risk, improves 3D model components, processes public tenders and evaluates subcontractor bids."
+        },
+        {
+          "source_id": "FISRC-a3d45bf06df11947",
+          "quote": "The platform finds contradictions between drawings and building specifications, analyses what needs to be built and where the risks lie, enriches components in 3D models, processes public tenders and evaluates subcontractor bids. Corrections made by estimators stay in the rulebook and apply to the next project."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T00:39:31.599Z"
+    },
+    "EV-e902cbe8df8a0b41": {
+      "id": "EV-e902cbe8df8a0b41",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "audio-wearables",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Ultrahuman主营面向消费者的智能戒指等可穿戴健康设备，并配套AI健康洞察服务。",
+      "input_hash": "c11bc3f7974a794168567ae7d3b913336a4153aa16da6709c807a214062da1f8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-723dbfd85761e08d",
+          "quote": "Ultrahuman is a global health technology company building the world’s most comprehensive wearable and ambient health ecosystem."
+        },
+        {
+          "source_id": "FISRC-8b15db4ba47ce611",
+          "quote": "Ring AIR weighs about 2.4 grams and offers roughly 4–6 days of battery life, according to Ultrahuman. The company also introduced Ring PRO in 2026, with a redesigned architecture and up to 15 days of battery life."
+        },
+        {
+          "source_id": "FISRC-723dbfd85761e08d",
+          "quote": "Ring PRO moves more computation onto the wearable itself through a new sensing architecture, on-chip machine learning and expanded on-device storage."
+        },
+        {
+          "source_id": "FISRC-723dbfd85761e08d",
+          "quote": "Jade, Ultrahuman’s real-time biointelligence system, brings those signals together to make health information conversational, contextual and actionable."
+        },
+        {
+          "source_id": "FISRC-0eafc202ae93ec17",
+          "quote": "Jade AI reflects the company’s vision of transforming complex physiological signals into personalized insights and health recommendations, making health data more accessible and useful for everyday users."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T00:39:31.599Z"
+    },
+    "EV-a3de7b1a00fbf8a9": {
+      "id": "EV-a3de7b1a00fbf8a9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Volantis开发以光连接计算与内存、加速AI推理的光子内存层与系统，属AI芯片与加速器。",
+      "input_hash": "218b083ea31cefc661cc7a212f0f9373af54da8524350695638e76f017383c87",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-23ff312a843cd717",
+          "quote": "San Francisco-based semiconductor startup Volantis on Thursday said it has raised $88 million in venture capital"
+        },
+        {
+          "source_id": "FISRC-23ff312a843cd717",
+          "quote": "Volantis says it is developing a way to send data between computing chips and memory chips using beams of laser light, which eliminates the reach problem and would let it pack 220 memory chips around a GPU."
+        },
+        {
+          "source_id": "FISRC-8b039252a5538fd6",
+          "quote": "The company, founded by Tapa Ghosh and Roy Meade, aims to develop a photonic memory layer designed to accelerate AI inference by using light to connect compute and memory components."
+        },
+        {
+          "source_id": "FISRC-8b039252a5538fd6",
+          "quote": "The company's A-1 system is designed to support AI models with more than 20 trillion parameters, with a stated goal of achieving inference speeds of up to 10,000 tokens per second per user."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T00:39:31.599Z"
+    },
+    "EV-b88f1a2dd721d62d": {
+      "id": "EV-b88f1a2dd721d62d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "rationale": "EliseAI以AI智能体自动化住房与医疗机构的租赁、维护及行政流程，属企业业务流程智能体。",
+      "input_hash": "ee28991904032ed4b817827d0eaaf78da21a3d4fa8bba16d7e725897a1cce9e3",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7414811d518ee6cb",
+          "quote": "EliseAI, founded in 2017, automates administrative and operational work for housing and healthcare companies."
+        },
+        {
+          "source_id": "FISRC-aae3c02b03fe09c9",
+          "quote": "EliseAI, the artificial intelligence company that automates back-office work for landlords and health systems"
+        },
+        {
+          "source_id": "FISRC-aae3c02b03fe09c9",
+          "quote": "EliseAI’s software now automates leasing, resident services, maintenance requests, and lease renewals for landlords"
+        },
+        {
+          "source_id": "FISRC-aae3c02b03fe09c9",
+          "quote": "Apollo, a single AI agent designed to complete any task across the Elise platform rather than handle one narrow function."
+        },
+        {
+          "source_id": "FISRC-7414811d518ee6cb",
+          "quote": "EliseAI also helps automate the patient-related paperwork for specialty physician groups on the healthcare side, “from the first inbound call through referrals, scheduling, insurance verification, chart prep, and follow-up, so nothing falls through the cracks,” she said."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-03T00:39:31.599Z"
     }
   },
-  "generated_at": "2026-10-02T09:34:47.492Z"
+  "generated_at": "2026-10-03T00:39:31.599Z"
 }

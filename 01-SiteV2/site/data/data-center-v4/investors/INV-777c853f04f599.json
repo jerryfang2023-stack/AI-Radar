@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-03",
-    "latest_disclosed_at": "2026-09-03",
+    "latest_disclosed_at": "2026-10-02",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "early_stage",
       "seed"
     ],
     "portfolio_companies": [
@@ -82,9 +84,54 @@
         "entity_id": "FICO-6f92e043fe518e14",
         "canonical_entity_id": "",
         "name": "Atira"
+      },
+      {
+        "entity_id": "EN-bcdcf577ca136895",
+        "canonical_entity_id": "",
+        "name": "Kuro Technology"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a3b91baeae17c29f",
+        "funding_insight_id": "FI-adb01e49c7ab65c6",
+        "event_ids": [
+          "EV-b35ee2ada485c7e4"
+        ],
+        "company_entity_id": "EN-bcdcf577ca136895",
+        "company_canonical_entity_id": "",
+        "company_name": "Kuro Technology",
+        "round": "早期融资",
+        "round_code": "early_stage",
+        "round_original": "早期融资",
+        "amount_original": "€10 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万欧元"
+        },
+        "announced_at": "2026-10-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-8bd4513374ef496a",
+            "source_url": "https://www.eu-startups.com/2026/10/berlin-based-kuro-raises-e10-million-to-build-the-ai-foundation-for-general-contractors/",
+            "source_title": "柏林Kuro融资1000万欧元，为总承包商构建AI基础",
+            "source_content_hash": "0043e633bbe66788b9d287958129b6a7b731a0ce4cfad726406788613e638e0c",
+            "quote": "The round was led by UVC Partners, a Munich- and Berlin-based venture capital firm with more than €800 million in assets under management",
+            "quote_hash": "5811ffcbfa57619d3f4a89f3f7295b8245cfc2694ea9b05c80e520d0de5d3085"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f9b54122ea1ebe63",
         "funding_insight_id": "FI-78f364239a4fd7d3",
@@ -127,6 +174,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-8bd4513374ef496a",
+        "source_url": "https://www.eu-startups.com/2026/10/berlin-based-kuro-raises-e10-million-to-build-the-ai-foundation-for-general-contractors/",
+        "source_title": "柏林Kuro融资1000万欧元，为总承包商构建AI基础",
+        "source_content_hash": "0043e633bbe66788b9d287958129b6a7b731a0ce4cfad726406788613e638e0c",
+        "quote": "The round was led by UVC Partners, a Munich- and Berlin-based venture capital firm with more than €800 million in assets under management",
+        "quote_hash": "5811ffcbfa57619d3f4a89f3f7295b8245cfc2694ea9b05c80e520d0de5d3085"
+      },
       {
         "source_id": "FISRC-dfab45611a59a6cf",
         "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
@@ -223,6 +278,10 @@
         {
           "description": "Atira (September 2026): UVC says it first invested in the company’s $2.5 million pre-seed round and increased its commitment in the later seed round; no individual check size was disclosed.",
           "source_id": "uvc_atira_2026"
+        },
+        {
+          "description": "融资来源记录：Kuro Technology · 早期融资 · 2026-10-02 · 本轮领投 · €10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8bd4513374ef496a"
         }
       ],
       "contacts": [
@@ -368,6 +427,14 @@
           "source_content_hash": "2c19612efff8843e",
           "quote": "UVC Partners, Fortino, and BOOOM also invested, alongside individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
           "quote_hash": "a7350adc3548469bf9854d18554f075c91786719e60015be6c0830e47f511e8d"
+        },
+        {
+          "source_id": "FISRC-8bd4513374ef496a",
+          "source_url": "https://www.eu-startups.com/2026/10/berlin-based-kuro-raises-e10-million-to-build-the-ai-foundation-for-general-contractors/",
+          "source_title": "柏林Kuro融资1000万欧元，为总承包商构建AI基础",
+          "source_content_hash": "0043e633bbe66788b9d287958129b6a7b731a0ce4cfad726406788613e638e0c",
+          "quote": "The round was led by UVC Partners, a Munich- and Berlin-based venture capital firm with more than €800 million in assets under management",
+          "quote_hash": "5811ffcbfa57619d3f4a89f3f7295b8245cfc2694ea9b05c80e520d0de5d3085"
         }
       ]
     },

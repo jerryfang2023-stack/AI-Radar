@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -64,8 +64,8 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 28,
-    "historical_or_ambiguous_count": 7,
+    "current_round_count": 29,
+    "historical_or_ambiguous_count": 8,
     "portfolio_company_count": 26,
     "market_regions": [
       "GLOBAL"
@@ -75,8 +75,8 @@
     "first_disclosed_at": "2023-04-27",
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "co_lead": 4,
-      "historical_or_ambiguous": 7,
+      "co_lead": 5,
+      "historical_or_ambiguous": 8,
       "lead": 18,
       "participant": 6
     },
@@ -263,6 +263,46 @@
             "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
             "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
             "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-075f131a6a423493",
+        "funding_insight_id": "FI-8e89642c05a4fbe4",
+        "event_ids": [
+          "EV-b88f1a2dd721d62d"
+        ],
+        "company_entity_id": "EN-7f4fdb8eb6e82b27",
+        "company_canonical_entity_id": "",
+        "company_name": "EliseAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "announced_at": "2026-09-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-aae3c02b03fe09c9",
+            "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
+            "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
+            "source_content_hash": "33c87e55e143bc09",
+            "quote": "The funding round was co-led by existing investors Andreessen Horowitz (a16z) and Bessemer Venture Partners, as well as new investor Ontario Teachers’ Pension Plan, with participation from existing investors Sapphire Ventures and Navitas Capital.",
+            "quote_hash": "7655e7fc298b7cfdca3c345e6fbbdc6c71541fedb1b9a8cecacf65a1609fe13b"
           }
         ]
       },
@@ -1416,6 +1456,38 @@
         ]
       },
       {
+        "activity_id": "IA-7a7593afdaec2016",
+        "funding_insight_id": "FI-890ae16f28de5d25",
+        "event_ids": [
+          "EV-936ef5bf2539b55a"
+        ],
+        "company_entity_id": "EN-e853b4e183ed0870",
+        "company_canonical_entity_id": "",
+        "company_name": "ElevenLabs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series D 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7bbfa0b0946953ff",
+            "source_url": "https://elevenlabs.io/blog/series-d",
+            "source_title": "ElevenLabs raises $500M Series D at $11B valuation",
+            "source_content_hash": "0ce881ccd5783eb1",
+            "quote": "Andreessen Horowitz quadrupled down while ICONIQ tripled down, both with significant super pro-rata participation.",
+            "quote_hash": "dc002daf050b42ba6422d445f29a7b6528bdf5b58ce8d0f930a837049404ec6b"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-b4aad46fc64ded44",
         "funding_insight_id": "FI-1cf34218733257fd",
         "event_ids": [
@@ -1640,6 +1712,14 @@
         "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
         "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
         "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+      },
+      {
+        "source_id": "FISRC-aae3c02b03fe09c9",
+        "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
+        "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
+        "source_content_hash": "33c87e55e143bc09",
+        "quote": "The funding round was co-led by existing investors Andreessen Horowitz (a16z) and Bessemer Venture Partners, as well as new investor Ontario Teachers’ Pension Plan, with participation from existing investors Sapphire Ventures and Navitas Capital.",
+        "quote_hash": "7655e7fc298b7cfdca3c345e6fbbdc6c71541fedb1b9a8cecacf65a1609fe13b"
       },
       {
         "source_id": "FISRC-4f44cd6d16442bdc",
@@ -1876,8 +1956,8 @@
       {
         "source_id": "FISRC-7bbfa0b0946953ff",
         "source_url": "https://elevenlabs.io/blog/series-d",
-        "source_title": "ElevenLabs 以 110 亿美元估值完成 5 亿美元 D 轮融资",
-        "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
+        "source_title": "ElevenLabs raises $500M Series D at $11B valuation",
+        "source_content_hash": "0ce881ccd5783eb1",
         "quote": "Andreessen Horowitz quadrupled down while ICONIQ tripled down, both with significant super pro-rata participation.",
         "quote_hash": "dc002daf050b42ba6422d445f29a7b6528bdf5b58ce8d0f930a837049404ec6b"
       },
@@ -2031,12 +2111,12 @@
           "source_id": "FISRC-58d9b75c832876e1"
         },
         {
-          "description": "融资来源记录：EliseAI · 轮次未披露 · 2026-09-29 · 本轮联合领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4f44cd6d16442bdc"
+          "description": "融资来源记录：EliseAI · F轮 · 2026-09-29 · 本轮联合领投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aae3c02b03fe09c9"
         },
         {
-          "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮参投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3372eff279ee29db"
+          "description": "融资来源记录：EliseAI · 轮次未披露 · 2026-09-29 · 本轮联合领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4f44cd6d16442bdc"
         }
       ],
       "contacts": [
@@ -2152,20 +2232,20 @@
           "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
         },
         {
+          "source_id": "FISRC-aae3c02b03fe09c9",
+          "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
+          "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
+          "source_content_hash": "33c87e55e143bc09",
+          "quote": "The funding round was co-led by existing investors Andreessen Horowitz (a16z) and Bessemer Venture Partners, as well as new investor Ontario Teachers’ Pension Plan, with participation from existing investors Sapphire Ventures and Navitas Capital.",
+          "quote_hash": "7655e7fc298b7cfdca3c345e6fbbdc6c71541fedb1b9a8cecacf65a1609fe13b"
+        },
+        {
           "source_id": "FISRC-4f44cd6d16442bdc",
           "source_url": "https://www.otpp.com/en-ca/about-us/news-and-insights/2026/eliseai-raises-350-million-at-4-billion-valuation/",
           "source_title": "EliseAI 以 40 亿美元估值融资 3.5 亿美元，将 AI 更深入引入住房与医疗运营",
           "source_content_hash": "c4be8294b9475931eab4f291e805900850ae28a25cfeb6c54a03811033dccc00",
           "quote": "The financing was led by Andreessen Horowitz (a16z) and Bessemer Venture Partners, with participation from Ontario Teachers' Pension Plan, Sapphire Ventures, and Navitas Capital.",
           "quote_hash": "4351258f1b60a0bebd8d3c4264542973ef33354112aca6497c979fcf32c61458"
-        },
-        {
-          "source_id": "FISRC-3372eff279ee29db",
-          "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
-          "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
-          "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
-          "quote": "existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
-          "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2176,6 +2256,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[30].role": {
+          "text": "Series D 参投",
+          "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        },
         "public_profile.milestones[0].description": {
           "text": "Marc Andreessen 与 Ben Horowitz 创立该机构。",
           "source_hash": "6b0052befed79712c4d8d134448283ec9587b4df8b77555cab016e73e3bab9e6",
