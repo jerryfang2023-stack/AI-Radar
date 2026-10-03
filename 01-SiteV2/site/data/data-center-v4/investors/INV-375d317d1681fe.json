@@ -191,12 +191,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Oak HC/FT 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Oak HC/FT 官网称其与医疗健康和金融服务领域的创业者合作，并自称为成长股权投资机构。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": [
+            "医疗健康",
+            "金融服务"
+          ],
+          "source_id": "oak-about"
+        },
+        {
+          "field": "investment_type",
+          "label": "官网自述投资类型",
+          "value": "成长股权",
+          "source_id": "oak-about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +223,24 @@
           "source_id": "FISRC-51325930dfe170dc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.oakhcft.com/",
+          "url": "https://www.oakhcft.com/",
+          "source_id": "oak-about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "oak-about",
+          "source_url": "https://www.oakhcft.com/",
+          "source_title": "Oak HC/FT",
+          "source_content_hash": "c6b8db1b6edbfd6cd88598e14a20432b39c9f1e5d7335b1aa1d4a7fc721c748c",
+          "quote": "We work with founders driving structural change in two complex systems: healthcare and financial services. With unparalleled networks and decades of sector experience, we have become one of the best-performing growth equity firms in the world",
+          "quote_hash": "bd187afd972df5a1d27c462154ef53d40aa28428cc791fa13b3e3a851eda8779"
+        },
         {
           "source_id": "FISRC-4799c620c14fef7b",
           "source_url": "https://www.halluminate.ai/blog/series-a",
@@ -227,7 +258,8 @@
           "quote_hash": "d585dde896dfe8302f8104130d2a52de13e60e80d04c4febcb96be7c4d2b8028"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

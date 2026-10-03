@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Eximius Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据 Eximius Ventures 官网披露的阶段、投资地域和自述策略整理；未采用网页对自身的“best”等宣传性评价。",
+      "summary": "Eximius Ventures 官网自述为专注 pre-seed 的创投机构，投资从印度面向全球发展的创业者。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "专注 pre-seed 阶段",
+          "source_id": "eximius-official-preseed-thesis-2026-10-03"
+        },
+        {
+          "field": "investment_geography",
+          "label": "投资地域",
+          "value": "支持从印度面向全球市场发展的创业者",
+          "source_id": "eximius-official-preseed-thesis-2026-10-03"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +166,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "eximius-official-preseed-thesis-2026-10-03",
+          "source_url": "https://eximiusvc.com/",
+          "source_title": "Eximius Ventures | Pre-seed Stage Venture Capital in India",
+          "source_content_hash": "c2c6f5784d42f4ef87001161fa31e6ef6030688910c7631925fab50226032fad",
+          "quote": "We are a pre-seed focused venture capital firm investing in bold entrepreneurs and seasoned operators building transformative companies from India for the world.",
+          "quote_hash": "dfe68c317d283d05d7749fdcfbc246cb926371000e6492dad2b839a6b47c10ab"
+        },
+        {
           "source_id": "FISRC-4b309c6cf2daefde",
           "source_url": "https://businessnewsthisweek.com/education/prolearn-secures-inr-30-crore-pre-seed-round-led-by-beenext/",
           "source_title": "ProLearn 获得由 BEENEXT 领投的 INR 30 Crore 种子前轮融资",
@@ -161,7 +182,7 @@
           "quote_hash": "97bd7954dc0febba51afa9e4251eb4f088c74829d74ef2025c7aabc6f8ea5f21"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

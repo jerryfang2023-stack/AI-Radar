@@ -192,14 +192,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "金融街资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "主体身份及国资平台属性来自西城区政府页面；投资活动仅记录一项媒体披露的融资事件，未据此断言完整组合。",
+      "summary": "西城区政府页面将金融街资本的法定名称列为北京金融街资本运营集团有限公司，并称其为西城区国资委所属国有资本市场化运营专业平台；媒体报道将其列为中数睿智融资参与方。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "主体名称",
+          "value": "北京金融街资本运营集团有限公司",
+          "source_id": "xicheng-gov-financial-street-capital-2026-10-03"
+        },
+        {
+          "field": "ownership_and_role",
+          "label": "股东及职能",
+          "value": "西城区国资委所属国有资本市场化运营专业平台",
+          "source_id": "xicheng-gov-financial-street-capital-2026-10-03"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界报道将金融街资本列为中数睿智本轮融资联合投资方之一。",
+          "source_id": "zhongshu-ruizhi-financial-street-round-2026-10-03"
+        },
         {
           "description": "融资来源记录：中数睿智 · 战略融资 · 2026-08-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d2d4022c60030f2"
@@ -211,6 +228,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "xicheng-gov-financial-street-capital-2026-10-03",
+          "source_url": "https://www.bjxch.gov.cn/xcfw/lqfw/xxxq/pnidpv763564.html",
+          "source_title": "北京市西城区人民政府",
+          "source_content_hash": "8f2518b94abaee114a3fc2dda6b99a02cd34b8f2cdff6ecf3f7795968c9b8ba4",
+          "quote": "北京金融街资本运营集团有限公司（以下简称 “金融街资本”）是西城区国资委所属国有资本市场化运营专业平台。",
+          "quote_hash": "02fb0440a9fd7cdbb862f337af092c61168d9d157bce283ca016cfce15442967"
+        },
+        {
+          "source_id": "zhongshu-ruizhi-financial-street-round-2026-10-03",
+          "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+          "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了_投资界",
+          "source_content_hash": "19743249f998c3ab6e9806c7078c3c1faa772bb10860dbc4b43cfd6113b5ae09",
+          "quote": "本轮融资由中国互联网投资基金（下称中网投）、苏创投全国社保基金、金融街资本、工银资本、昆仑资本等联合投资",
+          "quote_hash": "91a97ee110f265e6340203f8fb1e2e9a0f0d6d94e451a5b2a3f7cae2b6225130"
+        },
         {
           "source_id": "FISRC-9d2d4022c60030f2",
           "source_url": "https://news.pedaily.cn/202608/568010.shtml",
@@ -228,7 +261,7 @@
           "quote_hash": "f0160cbd92aaab5212f5a7f0d68de10639d6dead2055a109429609d3b097827b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

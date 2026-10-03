@@ -192,12 +192,30 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "凯联资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "凯联资本官网称其成立于2002年，人民币基金成立于2015年，并提供多元化投资产品。档案保留官网当前可读取的机构信息，不将页面未标注日期的规模数字作为现时数据。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2002",
+          "source_id": "capitallink-home"
+        },
+        {
+          "field": "renminbi_fund_founded_year",
+          "label": "人民币基金成立年份",
+          "value": "2015",
+          "source_id": "capitallink-renminbi-fund"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资理念",
+          "value": "具有全球视野的价值投资",
+          "source_id": "capitallink-home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -209,8 +227,32 @@
           "source_id": "FISRC-b4d6b7523ee32ad7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.capitallink.cn/",
+          "url": "https://www.capitallink.cn/",
+          "source_id": "capitallink-home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "capitallink-home",
+          "source_url": "https://www.capitallink.cn/",
+          "source_title": "凯联资本",
+          "source_content_hash": "4373781c4d9a60296e927c884182117d69f6f73fb9ef0417ff7c52bdef6d7e99",
+          "quote": "凯联资本成立于2002年，致力于通过具有全球视野的价值投资，为客户提供多元化的投资产品。",
+          "quote_hash": "6bc5c96b204e91bf1a2d5a4cb21fdb141cde44a55064e121ddbf92fefaffa8fa"
+        },
+        {
+          "source_id": "capitallink-renminbi-fund",
+          "source_url": "https://www.capitallink.cn/",
+          "source_title": "凯联资本",
+          "source_content_hash": "4373781c4d9a60296e927c884182117d69f6f73fb9ef0417ff7c52bdef6d7e99",
+          "quote": "凯联资本人民币基金成立于2015年",
+          "quote_hash": "f270a872805bb1d8e47a4046d683849ca0433c706bbc94bd6298a4323e29084b"
+        },
         {
           "source_id": "FISRC-90f5ec745ecc9d6f",
           "source_url": "https://www.qbitai.com/2026/08/472060.html",
@@ -228,7 +270,8 @@
           "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -178,12 +178,24 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Bloomberg Beta 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2023-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Bloomberg Beta 的官方公开手册将其称为 Bloomberg L.P. 支持的早期风险投资机构，聚焦工作的未来。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期投资",
+          "source_id": "bb-stage"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露关注方向",
+          "value": "工作的未来",
+          "source_id": "bb-focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,8 +207,32 @@
           "source_id": "FISRC-c5138d9ca614d59c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.bloombergbeta.com/",
+          "url": "https://www.bloombergbeta.com/",
+          "source_id": "bb-stage"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bb-stage",
+          "source_url": "https://github.com/Bloomberg-Beta/Manual/blob/main/README.md",
+          "source_title": "Manual/README.md at main · Bloomberg-Beta/Manual · GitHub",
+          "source_content_hash": "56c0002ad3787fc9b10e96d00bb75f2a19c7a4ea06230384e7a04bd1faac1033",
+          "quote": "Bloomberg Beta is an early-stage venture firm",
+          "quote_hash": "df08c954ca628bb375baa6d681d33060bc69b10f49f7efd80661fd7426ebe888"
+        },
+        {
+          "source_id": "bb-focus",
+          "source_url": "https://github.com/Bloomberg-Beta/Manual/blob/main/README.md",
+          "source_title": "Manual/README.md at main · Bloomberg-Beta/Manual · GitHub",
+          "source_content_hash": "56c0002ad3787fc9b10e96d00bb75f2a19c7a4ea06230384e7a04bd1faac1033",
+          "quote": "focused broadly on the future of work",
+          "quote_hash": "0636ed3dbcd58fc10e503de80cd7f4f4def1cd50531ce52be7ecdfb05a1832d9"
+        },
         {
           "source_id": "FISRC-9b0f32fe01d091cc",
           "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
@@ -214,7 +250,8 @@
           "quote_hash": "caa1ea3b24b3a77337cab26c6a7c35cb925d85443e966f79ded5bcaebb507536"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

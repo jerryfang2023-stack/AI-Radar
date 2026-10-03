@@ -153,25 +153,55 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Asset Management One 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Asset Management One的官网称公司在瑞穗金融集团与第一生命集团旗下由四家资产管理业务整合设立。2026年9月29日公司公告称已与Blue Fire AI开展业务合作，并投资其控股公司。",
+      "facts": [
+        {
+          "field": "establishment_background",
+          "label": "设立背景",
+          "value": "在瑞穗金融集团与第一生命集团旗下由四家业务整合设立",
+          "source_id": "amone-quick-facts"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Blue Fire AI · 轮次未披露 · 2026-09-29 · 本轮参投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d69144b9e83a3521"
+          "description": "2026年9月29日公告：与Blue Fire AI Pte. Ltd.开展业务合作，并投资其控股公司Blue Fire AI Holdings Pte. Ltd。",
+          "source_id": "amone-bluefire-release"
         },
         {
           "description": "融资来源记录：Blue Fire AI · 轮次未披露 · 2026-09-29 · 本轮参投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-871d82cb3d4c702e"
+          "source_id": "FISRC-d69144b9e83a3521"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.am-one.co.jp/english/company/about/quick-facts/",
+          "url": "https://www.am-one.co.jp/english/company/about/quick-facts/",
+          "source_id": "amone-quick-facts"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "amone-quick-facts",
+          "source_url": "https://www.am-one.co.jp/english/company/about/quick-facts/",
+          "source_title": "Asset Management One at a Glance｜About AM-One｜Who We Are｜Asset Management One",
+          "source_content_hash": "c59babbb1351b0f410e02f1efaea654e348caff6dfd252727b3d0c883fdd7e4e",
+          "quote": "Asset Management One Co., Ltd. was established under the umbrella of the Mizuho Financial Group and the Dai-ichi Life Group through the integration of four companies: DIAM Asset Management, the asset management division of Mizuho Trust & Banking, Mizuho Investment Management, and Shinko Asset Management.",
+          "quote_hash": "cc1990a36925ea6bba06950ba67a08c4c8314bc8554dcacd0f2b6d74a245ede7"
+        },
+        {
+          "source_id": "amone-bluefire-release",
+          "source_url": "https://www.am-one.co.jp/company/newsroom/news/518.html",
+          "source_title": "Blue Fire AI 社との業務提携および出資について｜ニュースリリース｜ニュースルーム｜企業情報｜アセットマネジメントOne",
+          "source_content_hash": "e155512c9f6421bea5ada4dbf395f814276bd1111a3d67517e33e375458cac2b",
+          "quote": "資産運用に特化したシンガポールのAIソリューション企業であるBlue Fire AI Pte. Ltd.（以下「BFAI社」）との業務提携を行い、BFAI社の持株会社Blue Fire AI Holdings Pte. Ltd.に出資いたしました。",
+          "quote_hash": "76e671ff438ecebbfdc3cbd898b93fd8d9a1ae7c4ca2a245dd389f4d8e4df0cc"
+        },
         {
           "source_id": "FISRC-d69144b9e83a3521",
           "source_url": "https://www.dealstreetasia.com/stories/sg-digest-blue-fire-ai-bags-funding-1982-ventures-backs-us-fintech-firm-496546",
@@ -189,7 +219,8 @@
           "quote_hash": "6c657eab5c640648f51e6b5511bc1b331b86fef33bc772e1c34c708273620687"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

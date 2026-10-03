@@ -138,14 +138,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Lachy Groom 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "summary": "Volantis于2026年9月发布的Series A公告称该轮由Lachy Groom与Abstract共同领投；当前只记录这项公开投资活动，未推断其职位、职业经历或完整投资组合。",
       "facts": [],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Volantis官方融资公告将Lachy Groom列为Series A联合领投方。",
+          "source_id": "volantis-series-a"
+        },
         {
           "description": "融资来源记录：Volantis · A轮 · 2026-10-01 · 本轮领投 · $88 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-23ff312a843cd717"
@@ -153,6 +160,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "volantis-series-a",
+          "source_url": "https://volantissemi.ai/news-insights/our-88m-series-a-demolishing-the-memory-wall-with-photonics-post",
+          "source_title": "Our $88M Series A: Demolishing the Memory Wall With Photonics | Volantis",
+          "source_content_hash": "bb883050ca4b6c5dadfe86f5e5b7df9562dc3c5f9bf55d4e9b1c1bbcb1e6d473",
+          "quote": "Led by Lachy Groom and Abstract, totalling $97M raised to date, to break the memory wall with photonics.",
+          "quote_hash": "8c42829c7c8f5246b1da6be8aeddc927b67252931e2f87878e70bfe75c9bd440"
+        },
         {
           "source_id": "FISRC-23ff312a843cd717",
           "source_url": "https://manufacturing.economictimes.indiatimes.com/amp/news/hi-tech/volantis-raises-88-million-for-tech-to-connect-ai-memory-chips/134637121",
@@ -162,7 +177,8 @@
           "quote_hash": "a0593f77e01cfc703c1c9abdd298de910307816ef66fb91956d2145d794dcdc5"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

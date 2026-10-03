@@ -191,14 +191,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "超越摩尔 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构名称和王军职务/投资领域来自半导体行业会议主办方页面；融资参与活动来自发行方融资公告的媒体转载。",
+      "summary": "CSEAC 页面将上海超越摩尔私募基金管理有限公司列为王军的现任职务，并介绍其集成电路产业投资经验；地瓜机器人融资公告列出超越摩尔为跟投机构。",
+      "facts": [
+        {
+          "field": "organization_name",
+          "label": "页面所列主体",
+          "value": "上海超越摩尔私募基金管理有限公司",
+          "source_id": "cseac-supermoore-management-2026-10-03"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "集成电路产业投资与风险管理",
+          "source_id": "cseac-supermoore-management-2026-10-03"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "地瓜机器人融资公告将超越摩尔列为C轮联合跟投机构之一。",
+          "source_id": "diguas-robotics-supermoore-round-2026-10-03"
+        },
         {
           "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-517ef1b31eac6dd3"
@@ -210,6 +227,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "cseac-supermoore-management-2026-10-03",
+          "source_url": "https://www.cseac.org.cn/cn/category/event/detail-zhuantishiliu",
+          "source_title": "半导体设备与核心部件投融资论坛 | CSEAC半导体设备年会",
+          "source_content_hash": "6a980ea86c80792b3d6f1b1eb590b4063f951307829510b04673e51beb4f8969",
+          "quote": "王军先生现任超越摩尔投资董事长、创始合伙人，拥有超过二十年集成电路产业投资及风险管理经验。",
+          "quote_hash": "918305be7d38e7957dd883a6c8e2fd0a14dda04650d9c80e2fc773111bdcdcb0"
+        },
+        {
+          "source_id": "diguas-robotics-supermoore-round-2026-10-03",
+          "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
+          "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
+          "source_content_hash": "ca111ccf85bb6df9ee75284c418b51d9ae04091ecf97ffac8ca772b52c6c6ec1",
+          "quote": "凯辉基金、华美国际投资集团、广发信德、超越摩尔、启航投资芯创二期基金等机构联合跟投",
+          "quote_hash": "7bdc9a76799f80a936bb33aab97e75cdc6b2fb6eefbdb8fa5fd4e6dd135c0809"
+        },
         {
           "source_id": "FISRC-517ef1b31eac6dd3",
           "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
@@ -227,7 +260,7 @@
           "quote_hash": "2c7a017683a1b0f38e874bdd012938f92c6ee4e7adca7b335d3537ae2cd74b61"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

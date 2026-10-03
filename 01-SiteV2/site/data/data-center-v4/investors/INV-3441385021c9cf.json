@@ -191,12 +191,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Alecla7 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "策略、阶段和直接投资方式均依据 Alecla7 官网自述整理。",
+      "summary": "Alecla7 官网将其描述为直接风险投资机构，采取跨行业、阶段和地域的策略，重点关注 Pre-Seed 至 Series A。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "直接风险投资，行业、阶段和地域不设限（官网自述）",
+          "source_id": "alecla7-official-strategy-2026-10-03"
+        },
+        {
+          "field": "investment_stage",
+          "label": "重点阶段",
+          "value": "Pre-Seed 至 Series A；官网称也可投资其他阶段",
+          "source_id": "alecla7-official-stage-2026-10-03"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -210,6 +223,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "alecla7-official-strategy-2026-10-03",
+          "source_url": "https://www.alecla7.com/",
+          "source_title": "Alecla7",
+          "source_content_hash": "c358949af46295261d4ef5f3db9d5f4b0ff3ca7a0e798d391622d6d9867f8ccc",
+          "quote": "Alecla7 is a private investment firm that specializes in direct Venture Capital investments with an agnostic approach on companies' sector, stage and geography.",
+          "quote_hash": "de3fd1425ccf896305a27f79d65aee8301e8566117d27329173c9d31dffa2439"
+        },
+        {
+          "source_id": "alecla7-official-stage-2026-10-03",
+          "source_url": "https://www.alecla7.com/",
+          "source_title": "Alecla7",
+          "source_content_hash": "c358949af46295261d4ef5f3db9d5f4b0ff3ca7a0e798d391622d6d9867f8ccc",
+          "quote": "Our sweet-spot is Pre-Seed to Series A rounds, however we invest at any stage of a company and we also act as co-founding investors providing a 360° support.",
+          "quote_hash": "c8489ec81223accaf5aadb2c5e3b2fea1614ac2a0585478868889473605f8440"
+        },
         {
           "source_id": "FISRC-495f39954954d0bc",
           "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
@@ -227,7 +256,7 @@
           "quote_hash": "f5c18c6277f0aed3c91b9a6db5a0f53faadb5ba8cc13ac5dd581d682e3a75503"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
