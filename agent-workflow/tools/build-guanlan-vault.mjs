@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import fs from "node:fs";
+import {writeVaultIfChanged} from './lib/incremental-vault-write.mjs';
 import {rewriteVaultLinks} from "./lib/guanlan-vault-layout.mjs";
 import path from "node:path";
 import {
@@ -60,7 +61,7 @@ function write(relativePath, content) {
     throw new Error(`Refusing to write outside Guanlan Vault: ${relativePath}`);
   }
   fs.mkdirSync(path.dirname(output), { recursive: true });
-  fs.writeFileSync(output, `${rewriteVaultLinks(content).trimEnd()}\n`, "utf8");
+  writeVaultIfChanged(output, rewriteVaultLinks(content));
   generatedFiles.push(relativePath.replaceAll("\\", "/"));
 }
 

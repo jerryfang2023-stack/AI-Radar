@@ -81,13 +81,15 @@ try {
   const vaultRoot = resolveGuanlanVaultRoot(root);
   run("git", ["fetch", "origin", "main"]);
   payload.source_commit = run("git", ["rev-parse", "origin/main"]);
+  const requestedCommit=args.get('source-commit');
+  if(requestedCommit && (!/^[a-f0-9]{40}$/u.test(requestedCommit) || requestedCommit!==payload.source_commit)) throw new Error('accepted_main_changed_before_vault_projection');
 
   if (dryRun) {
     payload.ok = true;
     payload.status = "skipped_dry_run";
   } else {
     fs.mkdirSync(worktreesRoot, { recursive: true });
-    run("git", ["worktree", "add", "--detach", worktree, "origin/main"]);
+    run("git", ["worktree", "add", "--detach", worktree, payload.source_commit]);
     worktreeCreated = true;
     copyLocalConfig(".guanlan-vault.json");
     runVaultProjection(vaultRoot);

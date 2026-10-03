@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import {writeVaultIfChanged} from './incremental-vault-write.mjs';
 import path from "node:path";
 import { VAULT_SCAN_SKIP_DIRECTORIES } from "./guanlan-vault-scan.mjs";
 
@@ -243,7 +244,7 @@ function writeManaged(vaultRoot, relativePath, content) {
     throw new Error(`Evidence projection path escapes the Vault: ${relativePath}`);
   }
   fs.mkdirSync(path.dirname(target), { recursive: true });
-  fs.writeFileSync(target, `${content.trimEnd()}\n`, "utf8");
+  writeVaultIfChanged(target, content);
 }
 
 export function syncGuanlanEvidence({
