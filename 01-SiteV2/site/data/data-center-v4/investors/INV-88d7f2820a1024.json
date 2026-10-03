@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "日初资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "日初资本官网称其由 Allen Chen 于 2020 年创立，专注消费品细分领域投资，并披露一期美元基金。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "专注消费品细分领域的投资机构。",
+          "source_id": "PROFILE-INV-88d7f2820a1024-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网披露成立时间",
+          "value": "2020年。",
+          "source_id": "PROFILE-INV-88d7f2820a1024-1"
+        },
+        {
+          "field": "founder",
+          "label": "官网披露创始人",
+          "value": "Allen Chen（陈峰）。",
+          "source_id": "PROFILE-INV-88d7f2820a1024-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,32 @@
           "source_id": "FISRC-867a0916b6d45f09"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据管理团队官网的机构介绍和投资方向建档；未补入组合企业的未经逐项核验信息。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Dayone Capital / 日初资本",
+          "url": "https://www.dayonecap.com/?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-88d7f2820a1024-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-88d7f2820a1024-1",
+          "source_url": "https://www.dayonecap.com/?source_capture=2026-10-03&cycle=13",
+          "source_title": "日初资本 Dayone Capital",
+          "source_content_hash": "0ef7b3769c43da5bd0a3e958c0c4b2553bf400e74fa9ffee1fd162df890062b9",
+          "quote": "Founded in 2020 by Allen Chen, a proven entrepreneur and experienced investor, Dayone Capital is committed to becoming a value-creation driven investor in selective verticals of consumer goods.",
+          "quote_hash": "27fb30ad8afe455b0b734ebdd59f2995bceab411f539669c25968f5a5be928e1"
+        },
         {
           "source_id": "FISRC-867a0916b6d45f09",
           "source_url": "https://news.qq.com/rain/a/20260511A031PC00",
@@ -161,7 +200,7 @@
           "quote_hash": "a01a47d29a132533613120a8d2a72eec7f736eebf2c08fae6a403cbf8462ff3a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -138,12 +138,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "广发乾 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "广发证券官网将广发乾和投资有限公司介绍为其全资另类投资子公司及投资平台，使用自有资金开展股权投资和特殊机会投资。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网披露的公司名称",
+          "value": "广发乾和投资有限公司。",
+          "source_id": "PROFILE-INV-766259518f9d17-1"
+        },
+        {
+          "field": "parent_company",
+          "label": "官网披露的母公司",
+          "value": "广发证券股份有限公司。",
+          "source_id": "PROFILE-INV-766259518f9d17-1"
+        },
+        {
+          "field": "investment_business",
+          "label": "官网披露的业务",
+          "value": "以自有资金开展股权投资和特殊机会投资。",
+          "source_id": "PROFILE-INV-766259518f9d17-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +166,40 @@
           "source_id": "FISRC-dd387948ae711f72"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "以官网披露的完整名称“广发乾和投资有限公司”规范本条简称。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司简介",
+          "value": "广发乾和投资有限公司",
+          "url": "https://qh.gf.com.cn/about/intro?source_capture=2026-10-03&cycle=11",
+          "source_id": "PROFILE-INV-766259518f9d17-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-766259518f9d17-1",
+          "source_url": "https://qh.gf.com.cn/about/intro?source_capture=2026-10-03&cycle=11",
+          "source_title": "广发乾和",
+          "source_content_hash": "917405cfb359812af7d14614f60c618afff3500b4edc59b7317833510cca7050",
+          "quote": "广发乾和投资有限公司成立于2012年5月，是广发证券股份有限公司(股票代码：000776.SZ ，1776.HK)全资设立的证券公司另类投资子公司",
+          "quote_hash": "67c607d9500acc7c79ec2e382c03ee4b7c2eb16ffc18148b61f6f72e6ffd04dc"
+        },
+        {
+          "source_id": "PROFILE-INV-766259518f9d17-2",
+          "source_url": "https://qh.gf.com.cn/about/intro?source_capture=2026-10-03&cycle=11",
+          "source_title": "广发乾和",
+          "source_content_hash": "917405cfb359812af7d14614f60c618afff3500b4edc59b7317833510cca7050",
+          "quote": "公司是广发证券旗下全资另类投资平台，以自有资金积极开展股权投资业务和特殊机会投资业务",
+          "quote_hash": "7aebc07cf9f14236db6b5888b6413a1169306013a81a0f854e144be04b147b71"
+        },
         {
           "source_id": "FISRC-dd387948ae711f72",
           "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",

@@ -138,12 +138,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Balnord 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Balnord官网将其定位为专注前沿及军民两用技术的早期投资机构，主要支持波罗的海区域创业者。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "前沿及军民两用技术领域的早期投资机构。",
+          "source_id": "PROFILE-INV-77b9cf0430eb9d-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "Pre-seed及Seed阶段。",
+          "source_id": "PROFILE-INV-77b9cf0430eb9d-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资范围",
+          "value": "主要支持波罗的海地区及周边的前沿技术企业。",
+          "source_id": "PROFILE-INV-77b9cf0430eb9d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +166,40 @@
           "source_id": "FISRC-4dc390804d079769"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据官网稳定定位及投资阶段描述，不引用网页中的动态业绩指标。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "About us",
+          "value": "Balnord",
+          "url": "https://www.balnord.vc/about-us?source_capture=2026-10-03&cycle=11",
+          "source_id": "PROFILE-INV-77b9cf0430eb9d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-77b9cf0430eb9d-1",
+          "source_url": "https://www.balnord.vc/about-us?source_capture=2026-10-03&cycle=11",
+          "source_title": "Balnord - Helping founders achieve the remarkable. From pre-seed to exit and beyond.",
+          "source_content_hash": "ef25d79e3c051b53e9462281dc3f1e795884684aeb3e239d655540f7a7eedf31",
+          "quote": "Balnord is a high-conviction early-stage investor in frontier and dual-use technologies.",
+          "quote_hash": "918494e7c1630e39bd36e5aa11c1fe8315172a2a5e3ddda4549ddaec43470897"
+        },
+        {
+          "source_id": "PROFILE-INV-77b9cf0430eb9d-2",
+          "source_url": "https://www.balnord.vc/about-us?source_capture=2026-10-03&cycle=11",
+          "source_title": "Balnord - Helping founders achieve the remarkable. From pre-seed to exit and beyond.",
+          "source_content_hash": "ef25d79e3c051b53e9462281dc3f1e795884684aeb3e239d655540f7a7eedf31",
+          "quote": "We believe in adding value by being deeply involved with our companies, starting our partnership at pre-seed and seed stages.",
+          "quote_hash": "3241be36c0b0fd354492920ff16045febffd0670aea554a1d4add777388dc3df"
+        },
         {
           "source_id": "FISRC-4dc390804d079769",
           "source_url": "https://tech.eu/2026/10/01/hostile-threat-warning-startup-osavul-raises-8-5m/",
@@ -162,7 +209,7 @@
           "quote_hash": "7210a96814a82e3e8392379255027cb96e86dd45ca3f5dd0e7390c7c154ac689"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

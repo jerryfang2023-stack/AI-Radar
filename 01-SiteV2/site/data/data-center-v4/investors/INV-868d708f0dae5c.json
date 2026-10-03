@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Xora 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Xora 官网称其常在公司成立前与创始人合作，并可领投 Seed 或 Series A 轮。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "面向创业者的早期风险投资机构。",
+          "source_id": "PROFILE-INV-868d708f0dae5c-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露阶段",
+          "value": "Seed、Series A；也会在公司成立前与创始人合作。",
+          "source_id": "PROFILE-INV-868d708f0dae5c-1"
+        },
+        {
+          "field": "anchor_lp",
+          "label": "官网披露关系",
+          "value": "官网称其锚定 LP 为 Temasek。",
+          "source_id": "PROFILE-INV-868d708f0dae5c-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,32 @@
           "source_id": "FISRC-b861572f4d82c021"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据管理团队官网对阶段、创立前支持和锚定 LP 资源的说明建档。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Xora",
+          "url": "https://xora.vc/approach?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-868d708f0dae5c-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-868d708f0dae5c-1",
+          "source_url": "https://xora.vc/approach?source_capture=2026-10-03&cycle=13",
+          "source_title": "XORA | Approach",
+          "source_content_hash": "20ae160af4b493e7cef158e8998fba3386882040db1f234b473991f161780987",
+          "quote": "We often collaborate with founders before company formation, aligning on robust market theses and actively supporting the launch of high-velocity startups. We are equally comfortable leading Seed or Series A rounds.",
+          "quote_hash": "297f58ead9df18a61a96f8539042ea64f9942471ddaa85affd3e855dbe36c7d1"
+        },
         {
           "source_id": "FISRC-b861572f4d82c021",
           "source_url": "https://yourtechdiet.com/news/hang-ten-systems-raises-additional-53-million-led-by-xora-a-temasek-backed-fund-bringing-total-funding-to-85-million/",
@@ -161,7 +200,7 @@
           "quote_hash": "f9f8a52608f22ed9ee6da4c15442a72fd8067a53d3fc0711909dde56545656de"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

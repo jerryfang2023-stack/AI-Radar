@@ -137,12 +137,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "EDBI 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "EDBI 是新加坡政府投资平台 SG Growth Capital 下的投资业务，官网称其投资寻求在新加坡及亚洲扩张的全球高成长科技公司；其历史可追溯至1991年。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "EDBI 官网",
+          "value": "SG Growth Capital 下的政府投资业务单元。",
+          "source_id": "PROFILE-INV-a9595ed0b4251e-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "EDBI 官网",
+          "value": "全球高成长科技企业及计划在新加坡、亚洲扩张的行业领导者。",
+          "source_id": "PROFILE-INV-a9595ed0b4251e-2"
+        },
+        {
+          "field": "founded",
+          "label": "EDBI 官网",
+          "value": "投资历史始于1991年；最初名为 EDB Investments。",
+          "source_id": "PROFILE-INV-a9595ed0b4251e-1"
+        },
+        {
+          "field": "current_structure",
+          "label": "EDBI 官网",
+          "value": "EDBI 与 SEEDS 在 SG Growth Capital 下继续开展业务。",
+          "source_id": "PROFILE-INV-a9595ed0b4251e-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,48 @@
           "source_id": "FISRC-1661d3e646fd132d"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "EDBI 于2025年并入 SG Growth Capital 平台后继续以 EDBI 业务单元运作；档案按当前官网结构表述，不沿用旧机构架构。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "EDBI",
+          "url": "https://edbi.com/about/?source_capture=2026-10-03&cycle=17",
+          "source_id": "PROFILE-INV-a9595ed0b4251e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a9595ed0b4251e-1",
+          "source_url": "https://edbi.com/about/?source_capture=2026-10-03&cycle=17",
+          "source_title": "About - EDBI",
+          "source_content_hash": "e64f4e9ad7f9d4473d13949e64092ecc225cfec5446ac924f82f6d86bc6343aa",
+          "quote": "EDBI operates under SG Growth Capital, the investment platform of the Singapore Economic Development Board (EDB) and Enterprise Singapore.",
+          "quote_hash": "43da03724b8718054beeeeea8027e56e4f73fa8403d49cb49f1773855ae718b0"
+        },
+        {
+          "source_id": "PROFILE-INV-a9595ed0b4251e-2",
+          "source_url": "https://edbi.com/about/?source_capture=2026-10-03&cycle=17",
+          "source_title": "About - EDBI",
+          "source_content_hash": "e64f4e9ad7f9d4473d13949e64092ecc225cfec5446ac924f82f6d86bc6343aa",
+          "quote": "We invest in high-growth global technology companies and industry leaders looking to scale in Singapore and across Asia.",
+          "quote_hash": "e05529801fc596cda4a6b459ce5a6a50f3b5a538b0d4505dd23bf12e4aebfadf"
+        },
+        {
+          "source_id": "PROFILE-INV-a9595ed0b4251e-3",
+          "source_url": "https://edbi.com/formation-of-sg-growth-capital-to-bolster-singapores-efforts-in-building-innovative-enterprises/?source_capture=2026-10-03&cycle=17",
+          "source_title": "Formation of SG Growth Capital - EDBI",
+          "source_content_hash": "566518a241ccb6e12f959b9dcfcce7ca3a5292ffd4640c734b4d1068e5b6381b",
+          "quote": "EDBI and SEEDS will continue to work closely with EDB and Enterprise Singapore under SG Growth Capital.",
+          "quote_hash": "a52e5b2bbf60f9fd5d3b84a2262717a17489fe101157c83e6cd0c804fd9817d5"
+        },
         {
           "source_id": "FISRC-1661d3e646fd132d",
           "source_url": "https://www.financialcontent.com/article/bizwire-2026-8-6-lumilens-emerges-from-stealth-with-more-than-900-million-in-funding-to-break-ais-connectivity-bottlenecks-in-the-data-center",
@@ -161,7 +222,7 @@
           "quote_hash": "5c6dc8d8f04b41d8809db0a2dff73dab098ead2ec9aa2a5525d286176c5326f8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

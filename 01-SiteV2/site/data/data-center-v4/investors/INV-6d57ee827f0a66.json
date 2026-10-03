@@ -138,12 +138,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "吴中金控 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "苏州市国资委转载的吴中区国资办资料记载，吴中金控集团成立于2014年，资本运营体系包含股权投资和基金管理，并覆盖PE、VC及天使投资阶段。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "国资部门资料列示成立时间",
+          "value": "2014年6月。",
+          "source_id": "PROFILE-INV-6d57ee827f0a66-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "国资部门资料披露的业务体系",
+          "value": "包含股权投资、基金管理等业务。",
+          "source_id": "PROFILE-INV-6d57ee827f0a66-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "国资部门资料披露的投资阶段",
+          "value": "覆盖PE、VC及天使阶段。",
+          "source_id": "PROFILE-INV-6d57ee827f0a66-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +166,40 @@
           "source_id": "FISRC-fecad8ccb9a84a39"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "来源为地方国资部门发布的机构介绍；未纳入页面中的动态基金数量和规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "吴中金控集团介绍",
+          "value": "苏州市人民政府国有资产监督管理委员会",
+          "url": "https://guozw.suzhou.gov.cn/gzw/szgz/202507/44f480843acb4e2cb96da578273dda4d.shtml?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6d57ee827f0a66-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6d57ee827f0a66-1",
+          "source_url": "https://guozw.suzhou.gov.cn/gzw/szgz/202507/44f480843acb4e2cb96da578273dda4d.shtml?source_capture=2026-10-03&cycle=10",
+          "source_title": "吴中金控集团斩获双项TOP5殊荣_苏州市人民政府国有资产监督管理委员会",
+          "source_content_hash": "9d60aec1e413b0bedd2a01620001ff15bbbcf41483cef38776a152d1843dc5ec",
+          "quote": "吴中金控集团成立于2014年6月",
+          "quote_hash": "7ccf7200797fa94cd8ca19c393e8295cf3a48dca0b1c47b7d7c132b5c498f1d9"
+        },
+        {
+          "source_id": "PROFILE-INV-6d57ee827f0a66-2",
+          "source_url": "https://guozw.suzhou.gov.cn/gzw/szgz/202507/44f480843acb4e2cb96da578273dda4d.shtml?source_capture=2026-10-03&cycle=10",
+          "source_title": "吴中金控集团斩获双项TOP5殊荣_苏州市人民政府国有资产监督管理委员会",
+          "source_content_hash": "9d60aec1e413b0bedd2a01620001ff15bbbcf41483cef38776a152d1843dc5ec",
+          "quote": "覆盖PE、VC、天使等全阶段。",
+          "quote_hash": "b08c195c6b19c9692e181afe3d964a5b7d3b412fef7fb66e6f5a5941ad50f396"
+        },
         {
           "source_id": "FISRC-fecad8ccb9a84a39",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393359.html",

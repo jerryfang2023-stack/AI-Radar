@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "I2BF 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "I2BF Global Ventures 官方人才门户将相关职位标注为其投资组合招聘，并提供投资组合企业名录，支持其具有风险投资组合管理活动。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "官方投资组合门户",
+          "value": "官方门户明确以 I2BF 投资组合企业为招聘对象。",
+          "source_id": "PROFILE-INV-9a976896fd690d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-7e709202ce99cc8e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "证据来自 I2BF 品牌的人才门户；本档案只记录其公开显示的投资组合关系，不补入官网未提供的基金规模和策略。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资组合门户",
+          "value": "I2BF Global Ventures",
+          "url": "https://talent.i2bf.com/companies?source_capture=2026-10-03&cycle=14",
+          "source_id": "PROFILE-INV-9a976896fd690d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9a976896fd690d-1",
+          "source_url": "https://talent.i2bf.com/companies?source_capture=2026-10-03&cycle=14",
+          "source_title": "Companies | I2BF Global Ventures Job Board",
+          "source_content_hash": "de6153edda2aa6ab4295f22bd7dcc34d2eb3e790db52202c65a72b466b665a0b",
+          "quote": "Job Opportunities in the I2BF Portfolio",
+          "quote_hash": "114e64498f1b73c9c7c0fbcc33ab44632e14841ff3bb2d6637578728eff075e7"
+        },
         {
           "source_id": "FISRC-7e709202ce99cc8e",
           "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
@@ -161,7 +188,7 @@
           "quote_hash": "0e18ef143df443410be7bd64c5f3d44d18d83e7347e96dfa423d4f8a621c811a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

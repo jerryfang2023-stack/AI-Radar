@@ -187,12 +187,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Two Sigma 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Two Sigma官网介绍其以科学方法、数据科学与技术解决金融市场问题；其投资管理业务服务全球多元化、以机构为主的客户群。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露业务",
+          "value": "投资管理及其他金融服务业务。",
+          "source_id": "PROFILE-INV-7c7848bb0e0134-2"
+        },
+        {
+          "field": "approach",
+          "label": "官网披露的方法",
+          "value": "将数据科学与技术应用于金融服务和金融市场。",
+          "source_id": "PROFILE-INV-7c7848bb0e0134-1"
+        },
+        {
+          "field": "client_profile",
+          "label": "官网披露的客户群",
+          "value": "投资管理业务服务全球多元化且以机构为主的客户群。",
+          "source_id": "PROFILE-INV-7c7848bb0e0134-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -204,8 +219,40 @@
           "source_id": "FISRC-b750a2ea9e7c7b76"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据官网关于业务与方法的稳定介绍，不引用页面动态人员及技术基础设施统计。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "About Us",
+          "value": "Two Sigma",
+          "url": "https://www.twosigma.com/about-us/?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-7c7848bb0e0134-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7c7848bb0e0134-1",
+          "source_url": "https://www.twosigma.com/about-us/?source_capture=2026-10-03&cycle=12",
+          "source_title": "About Us - Two Sigma",
+          "source_content_hash": "1a328350ae194ce2d3db5e63e1fd203abb6b5446feab3563834261faa7c3200d",
+          "quote": "We bring science to finance. We follow principles rooted in technology and data science as much as those found in financial services.",
+          "quote_hash": "aea938fc4efebf28a2f71e65f9a8f0bc794e3292bded196c2ece8bd064fd0dd8"
+        },
+        {
+          "source_id": "PROFILE-INV-7c7848bb0e0134-2",
+          "source_url": "https://www.twosigma.com/businesses/?source_capture=2026-10-03&cycle=12-alt2",
+          "source_title": "Businesses - Two Sigma",
+          "source_content_hash": "d5302abb5b5404f640d31dc449ed398914d0dd6dafe7d669df69ae3809f13021",
+          "quote": "Brings a systematic approach to manage assets for a diversified and primarily institutional client base around the world.",
+          "quote_hash": "354745a118036f8aed04d1c7285c3d83102b5522cc16994680586a89a7f1d1d5"
+        },
         {
           "source_id": "FISRC-ec090e2bf0f8f6e9",
           "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
@@ -223,7 +270,7 @@
           "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

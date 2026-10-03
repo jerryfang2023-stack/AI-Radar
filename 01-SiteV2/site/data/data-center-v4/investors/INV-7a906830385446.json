@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BoldCap 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "BoldCap官网将其定位为面向Pre-Seed及Seed阶段的AI风险投资基金，支持构建通用人工智能方向的研究者与技术创业者。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "AI领域种子期风险投资基金。",
+          "source_id": "PROFILE-INV-7a906830385446-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露阶段",
+          "value": "Pre-Seed及Seed阶段。",
+          "source_id": "PROFILE-INV-7a906830385446-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露方向",
+          "value": "AI研究者与技术创业者，关注通用人工智能方向。",
+          "source_id": "PROFILE-INV-7a906830385446-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-35c5de2fa4b68376"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据官网对基金阶段、投资对象及投资方向的自述建档，不补入未核验的基金规模或投资组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网首页",
+          "value": "BoldCap",
+          "url": "https://www.boldcap.com/?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-7a906830385446-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7a906830385446-1",
+          "source_url": "https://www.boldcap.com/?source_capture=2026-10-03&cycle=12",
+          "source_title": "BoldCap - Early Stage Venture Capital Fund",
+          "source_content_hash": "1311e51615929bffb6c4f2769aaea02cebd740dd960480138eed300ed003222f",
+          "quote": "Boldcap is a seed stage fund backing outlier AI researchers and technical founders building towards AGI.",
+          "quote_hash": "51159ef28501d303bc8363872926e29f05f180f0ac22feda0a311a1a9c941577"
+        },
+        {
+          "source_id": "PROFILE-INV-7a906830385446-2",
+          "source_url": "https://www.boldcap.com/?source_capture=2026-10-03&cycle=12",
+          "source_title": "BoldCap - Early Stage Venture Capital Fund",
+          "source_content_hash": "1311e51615929bffb6c4f2769aaea02cebd740dd960480138eed300ed003222f",
+          "quote": "Stage Pre-Seed/Seed.",
+          "quote_hash": "82661aa420e40e2d0a74ec787a8ed35108580ebfa19dc1cb555c674a2b270cd8"
+        },
         {
           "source_id": "FISRC-35c5de2fa4b68376",
           "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
@@ -161,7 +208,7 @@
           "quote_hash": "5707995e0125446f72b54cb8538af044caf6d92968c671a474e9b91cf4b8b4b2"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

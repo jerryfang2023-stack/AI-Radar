@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "元禾控股 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "元禾控股官网称其为国有投资企业和股权投资机构，覆盖创新企业投资及科技企业全生命周期。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "苏州工业园区国资控股的国有股权投资机构。",
+          "source_id": "PROFILE-INV-8bbcfe67c4b57d-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露方向",
+          "value": "坚持投早、投小、投长期、投硬科技。",
+          "source_id": "PROFILE-INV-8bbcfe67c4b57d-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露领域",
+          "value": "创新企业投资、科技产业服务及科技金融。",
+          "source_id": "PROFILE-INV-8bbcfe67c4b57d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-957ccf12eb78ad84"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "采录官网关于股权投资、早期与硬科技投资的定位；管理规模与项目数量仅作为截至 2026 年 8 月的官网披露，本记录不保留为长期事实。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "苏州元禾控股股份有限公司",
+          "url": "https://www.oriza.com/p/web/bid-xrgct6iq3yf.html?source_capture=2026-10-03&cycle=13-browser",
+          "source_id": "PROFILE-INV-8bbcfe67c4b57d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-8bbcfe67c4b57d-1",
+          "source_url": "https://www.oriza.com/p/web/bid-xrgct6iq3yf.html?source_capture=2026-10-03&cycle=13-browser",
+          "source_title": "公司简介_关于元禾_元禾控股",
+          "source_content_hash": "d97589452d7d98e49db4b356d8aa42c86c4c759e452504769447d2ca45b5d7d9",
+          "quote": "苏州元禾控股股份有限公司（以下简称“元禾控股”）是苏州工业园区国资控股、江苏省国信集团参股的国有投资企业。自2001年成立以来，始终聚焦创新企业投资、科创产业服务、科技人才引育、科技金融融合，坚持国家使命、政府引领，坚持市场化、专业化、国际化，已成长为国内一流的股权投资机构",
+          "quote_hash": "929e7b31b58a27f9b5ecf767fc48a6cb5ec773b7133f4a3e745d73926e18e596"
+        },
+        {
+          "source_id": "PROFILE-INV-8bbcfe67c4b57d-2",
+          "source_url": "https://www.oriza.com/p/web/bid-xrgct6iq3yf.html?source_capture=2026-10-03&cycle=13-browser",
+          "source_title": "公司简介_关于元禾_元禾控股",
+          "source_content_hash": "d97589452d7d98e49db4b356d8aa42c86c4c759e452504769447d2ca45b5d7d9",
+          "quote": "元禾控股深耕股权投资领域，以服务实体经济、促进产业升级为使命，坚持投早、投小、投长期、投硬科技",
+          "quote_hash": "7718d8b66ffce23df6b81d700b02d48d166a8418ebb9d84564d379390012e358"
+        },
         {
           "source_id": "FISRC-957ccf12eb78ad84",
           "source_url": "https://news.pedaily.cn/202605/563918.shtml",

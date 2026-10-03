@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "King Philanthropies 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "King Philanthropies 官网明确披露其对社会影响型项目进行股权、债权和项目融资投资，方向是解决重大社会与环境问题。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "影响力投资页面",
+          "value": "从事慈善与影响力投资的机构。",
+          "source_id": "PROFILE-INV-9de15e6f042db6-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "影响力投资页面",
+          "value": "使用股权、债权和项目融资支持高影响力解决方案。",
+          "source_id": "PROFILE-INV-9de15e6f042db6-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "影响力投资页面",
+          "value": "聚焦解决重大社会与环境问题的项目。",
+          "source_id": "PROFILE-INV-9de15e6f042db6-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,32 @@
           "source_id": "FISRC-ecd2ea74974f4ff3"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "档案限于官网公开的影响力投资活动与代表性组合，不将其扩展为一般风险投资机构。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "King Philanthropies",
+          "url": "https://kingphilanthropies.org/impact-investments/?source_capture=2026-10-03&cycle=15",
+          "source_id": "PROFILE-INV-9de15e6f042db6-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9de15e6f042db6-1",
+          "source_url": "https://kingphilanthropies.org/impact-investments/?source_capture=2026-10-03&cycle=15",
+          "source_title": "King Philanthropies",
+          "source_content_hash": "5d401e13ae4ee576e1aed85d6dbc66b4d5e3444c9cff226ed743743047dd98b4",
+          "quote": "King Philanthropies backs high-performing ventures working to solve the world’s toughest challenges. We invest equity, debt and project finance in the most impactful and transformative solutions.",
+          "quote_hash": "adf6a5854cf4bb27949e8b60579d10f22c7528e67538e081b92754446570c87a"
+        },
         {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
@@ -161,7 +200,7 @@
           "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

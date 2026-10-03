@@ -240,12 +240,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "华仓资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "华仓资本官网确认其管理人是湖北华仓股权投资基金管理有限公司，登记编码 P1070041；管理VC/PE、并购及PIPE等基金，聚焦空天、数智、绿色经济和生命科技。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "机构官网",
+          "value": "湖北华仓股权投资基金管理有限公司；官网品牌为华仓资本。",
+          "source_id": "PROFILE-INV-a67cccab58fac3-1"
+        },
+        {
+          "field": "registration",
+          "label": "机构官网",
+          "value": "中国证券投资基金业协会登记备案编码 P1070041。",
+          "source_id": "PROFILE-INV-a67cccab58fac3-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "机构官网",
+          "value": "空天经济、数智经济、绿色经济及生命科技等硬科技领域。",
+          "source_id": "PROFILE-INV-a67cccab58fac3-2"
+        },
+        {
+          "field": "fund_types",
+          "label": "机构官网",
+          "value": "VC/PE基金、并购基金、PIPE基金。",
+          "source_id": "PROFILE-INV-a67cccab58fac3-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -257,8 +278,40 @@
           "source_id": "FISRC-0b807b7fa8b0845a"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "法律主体、管理人登记和业务范围依据官网；未把公开宣传中的排名作为投资能力结论。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "华仓资本",
+          "url": "https://hczb2019.com/about.html?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a67cccab58fac3-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a67cccab58fac3-1",
+          "source_url": "https://hczb2019.com/about.html?source_capture=2026-10-03&cycle=16",
+          "source_title": "华仓简介-华仓资本_湖北华仓股权投资基金管理有限公司",
+          "source_content_hash": "aefedd4174c081dfa53911042513b253917b0e76af24af866bab82b63f7b30fe",
+          "quote": "专注于硬科技投资的私募创投机构。",
+          "quote_hash": "227a32ba252470a144d3460611bb8c9b9aa55295a1e882b2b647a625a77bda92"
+        },
+        {
+          "source_id": "PROFILE-INV-a67cccab58fac3-2",
+          "source_url": "https://hczb2019.com/about.html?source_capture=2026-10-03&cycle=16",
+          "source_title": "华仓简介-华仓资本_湖北华仓股权投资基金管理有限公司",
+          "source_content_hash": "aefedd4174c081dfa53911042513b253917b0e76af24af866bab82b63f7b30fe",
+          "quote": "VC/PE基金、并购基金、PIPE基金等。",
+          "quote_hash": "9a076231109ccca45c98ef741fbb869e248a9ee6c6859e9c5108808aa71373cb"
+        },
         {
           "source_id": "FISRC-ce47b663ca256878",
           "source_url": "https://news.pedaily.cn/202606/565201.shtml",

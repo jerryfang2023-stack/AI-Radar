@@ -233,12 +233,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "东方嘉富 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "上交所债券文件将东方嘉富列为浙江东方基金管理业务开展主体之一，并称相关基金业务覆盖 VC、PE、PIPE 和夹层基金。",
+      "facts": [
+        {
+          "field": "organization_relationship",
+          "label": "债券发行文件",
+          "value": "浙江东方金融控股集团披露东方嘉富为其基金管理业务开展主体之一。",
+          "source_id": "PROFILE-INV-9d1d8e447b1e09-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "债券发行文件",
+          "value": "相关基金业务包括 VC、PE、PIPE 和夹层基金。",
+          "source_id": "PROFILE-INV-9d1d8e447b1e09-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -254,8 +263,24 @@
           "source_id": "FISRC-b96684face6f5223"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按发行文件记录集团基金管理业务与东方嘉富的关联，不把集团汇总的基金规模和牌照归到东方嘉富单体。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9d1d8e447b1e09-1",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2023-03-24/138898_20230324_7CXK.pdf?source_capture=2026-10-03&cycle=14",
+          "source_title": "东方嘉富相关公司债券发行文件",
+          "source_content_hash": "ca95782ad19ee19153c1d35bd35a55d8fe9c2a948ff3d40d270bb712c0e6233f",
+          "quote": "本、东方嘉富开展，主要管理 VC、PE、PIPE 和夹层基金。",
+          "quote_hash": "b68e86a110993498669111638602a4357847a76d34d76958d435956b12d61f93"
+        },
         {
           "source_id": "FISRC-1b3adf614ab55007",
           "source_url": "https://news.pedaily.cn/202605/564066.shtml",
@@ -281,7 +306,7 @@
           "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

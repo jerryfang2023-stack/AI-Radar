@@ -186,12 +186,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "山东产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "山东省产投私募基金管理有限公司（公告简称“山东产投”）被上市公司披露为私募基金管理人，登记编号 P1071716，并参与设立新能源产业投资基金。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "上市公司共同投资公告",
+          "value": "山东省产投私募基金管理有限公司，公告简称“山东产投”。",
+          "source_id": "PROFILE-INV-a1a69a4f713b19-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "上市公司共同投资公告",
+          "value": "私募基金管理人。",
+          "source_id": "PROFILE-INV-a1a69a4f713b19-2"
+        },
+        {
+          "field": "registration",
+          "label": "上市公司共同投资公告",
+          "value": "私募基金管理人登记编号 P1071716。",
+          "source_id": "PROFILE-INV-a1a69a4f713b19-2"
+        },
+        {
+          "field": "investment_activity",
+          "label": "上市公司共同投资公告",
+          "value": "作为私募基金管理人；具体基金投资活动未在本档案中延伸记录。",
+          "source_id": "PROFILE-INV-a1a69a4f713b19-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -203,8 +224,32 @@
           "source_id": "FISRC-4782a6093d519a4d"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "以发行人公告中的定义简称为依据核对队列名称；档案范围限于该管理人和公告披露的共同投资活动。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a1a69a4f713b19-1",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-11/1216380078.PDF?source_capture=2026-10-03&cycle=15",
+          "source_title": "泉为绿能共同投资公告",
+          "source_content_hash": "03e864399957442538e8b7cc524836b6b16c8eee2fccdfd328e47922e1e41dda",
+          "quote": "企业名称：山东省产投私募基金管理有限公司",
+          "quote_hash": "17928d5fbaed53ff47ed2198e7e28015de92beefb1e4e30660f11f530ac52b25"
+        },
+        {
+          "source_id": "PROFILE-INV-a1a69a4f713b19-2",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-11/1216380078.PDF?source_capture=2026-10-03&cycle=15",
+          "source_title": "泉为绿能共同投资公告",
+          "source_content_hash": "03e864399957442538e8b7cc524836b6b16c8eee2fccdfd328e47922e1e41dda",
+          "quote": "山东产投已于 2021 年 1 月 4 日登记为私募基金管理人",
+          "quote_hash": "4b0235b49ff125e9557f0a3fa56db32511da7cb07889dad04f692054316e3769"
+        },
         {
           "source_id": "FISRC-a1fb846b5355af64",
           "source_url": "https://news.pedaily.cn/202604/562806.shtml",

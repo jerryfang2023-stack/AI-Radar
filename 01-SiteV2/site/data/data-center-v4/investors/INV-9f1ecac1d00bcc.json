@@ -121,12 +121,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "NextEquity 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "NextEquity Partners 官网称其投资中期消费科技与企业科技公司，支持其进入下一阶段增长。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "科技成长投资机构。",
+          "source_id": "PROFILE-INV-9f1ecac1d00bcc-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网定位",
+          "value": "中期投资。",
+          "source_id": "PROFILE-INV-9f1ecac1d00bcc-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网定位",
+          "value": "消费科技与企业科技。",
+          "source_id": "PROFILE-INV-9f1ecac1d00bcc-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +149,40 @@
           "source_id": "FISRC-35d27946fd70aa42"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按机构官网定位记录投资阶段与领域；未加入官网未披露的基金规模或组合数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "NextEquity Partners",
+          "url": "https://www.nextequity.com/?source_capture=2026-10-03&cycle=15",
+          "source_id": "PROFILE-INV-9f1ecac1d00bcc-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9f1ecac1d00bcc-1",
+          "source_url": "https://www.nextequity.com/?source_capture=2026-10-03&cycle=15",
+          "source_title": "NextEquity Partners",
+          "source_content_hash": "d14c901a9e705a01623ab2a808aecdf8057f18ef7ecaa397800aee10c78a2bf1",
+          "quote": "NextEquity Partners backs innovative consumer and enterprise technology companies for their next phase of growth.",
+          "quote_hash": "58fb45e6e311bdfaea0c035033d4ab30e270dd341e716e2756cb189847cecaea"
+        },
+        {
+          "source_id": "PROFILE-INV-9f1ecac1d00bcc-2",
+          "source_url": "https://www.nextequity.com/?source_capture=2026-10-03&cycle=15",
+          "source_title": "NextEquity Partners",
+          "source_content_hash": "d14c901a9e705a01623ab2a808aecdf8057f18ef7ecaa397800aee10c78a2bf1",
+          "quote": "Investing mid-stage for next-level growth",
+          "quote_hash": "85a96bbe9c9196a4a486ca251549e39dc5b74d3a073858ea8b2a7bbb084ab9de"
+        },
         {
           "source_id": "FISRC-35d27946fd70aa42",
           "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
@@ -145,7 +192,7 @@
           "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

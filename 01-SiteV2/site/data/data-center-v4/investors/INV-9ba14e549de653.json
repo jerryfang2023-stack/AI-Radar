@@ -161,12 +161,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "相城金控 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "相城金控债券年度报告披露，其主要通过相城创投开展股权投资，既参与设立投资基金，也直接投资，并作为 LP 出资设立40支基金。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "债券年度报告",
+          "value": "主要通过相城创投开展股权投资，包括基金投资和直接投资。",
+          "source_id": "PROFILE-INV-9ba14e549de653-1"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "债券年度报告",
+          "value": "截至2024年末，作为 LP 出资设立的股权投资基金合计40支。",
+          "source_id": "PROFILE-INV-9ba14e549de653-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -178,8 +187,32 @@
           "source_id": "FISRC-9d2d4022c60030f2"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按2024年末年度报告记录业务模式和基金数；该集团通过子公司开展部分投资活动。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9ba14e549de653-1",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2025-10-14/243867_20251014_H4OY.pdf?source_capture=2026-10-03&cycle=14",
+          "source_title": "苏州市相城金融控股（集团）有限公司2025年公司债券年度报告",
+          "source_content_hash": "73e20ff9d4347b24893b08312316163f1ebe621963d40e9eec8eb66a7bb6d216",
+          "quote": "相城金控主要通过子公司相城创投开展股权投资业务。",
+          "quote_hash": "dc25de471b10565637902a52ccb56c02cd0a0714cadc3b16c79966027f67e338"
+        },
+        {
+          "source_id": "PROFILE-INV-9ba14e549de653-2",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2025-10-14/243867_20251014_H4OY.pdf?source_capture=2026-10-03&cycle=14",
+          "source_title": "苏州市相城金融控股（集团）有限公司2025年公司债券年度报告",
+          "source_content_hash": "73e20ff9d4347b24893b08312316163f1ebe621963d40e9eec8eb66a7bb6d216",
+          "quote": "截至 2024 年末，公司 作为 LP 出资设立的股权投资基金合计 40 支",
+          "quote_hash": "11bebec3bcc9c7e3b56fe3bacd25620e317bd1e221d957ed896bff5b27fb2d85"
+        },
         {
           "source_id": "FISRC-a57106724774253f",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-27/doc-inhvwwmk9150394.shtml",
@@ -197,7 +230,7 @@
           "quote_hash": "ce00fdb7ec135ede2663793c8b77c571b190f97a67145c1d8017b995a29dc1f8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

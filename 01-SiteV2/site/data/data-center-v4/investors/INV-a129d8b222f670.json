@@ -137,12 +137,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "乔贝资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "乔贝资本官网称其2016年创立、2017年登记为私募基金管理人，登记编码为 P1061185，专注股权投资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网",
+          "value": "私募基金管理公司。",
+          "source_id": "PROFILE-INV-a129d8b222f670-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网",
+          "value": "2016年9月创立。",
+          "source_id": "PROFILE-INV-a129d8b222f670-1"
+        },
+        {
+          "field": "registration",
+          "label": "官网",
+          "value": "私募基金管理人登记编号 P1061185，登记时间为2017年1月。",
+          "source_id": "PROFILE-INV-a129d8b222f670-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网",
+          "value": "专注股权投资。",
+          "source_id": "PROFILE-INV-a129d8b222f670-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,32 @@
           "source_id": "FISRC-1ae72db61aa80327"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "档案仅记录官网所述法定登记和股权投资定位，不扩展官网未披露的基金规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "乔贝资本",
+          "url": "https://www.chobe.cn/?source_capture=2026-10-03&cycle=15",
+          "source_id": "PROFILE-INV-a129d8b222f670-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a129d8b222f670-1",
+          "source_url": "https://www.chobe.cn/?source_capture=2026-10-03&cycle=15",
+          "source_title": "首页-乔贝资本",
+          "source_content_hash": "5a02f46b50751212eed367bf194a0d39a36794f9c0454f5830462b0e33ba1f8e",
+          "quote": "乔贝资本创立于2016年9月，总部位于上海，于 2017 年 1 月在中国证券投资基金业协会登记为私募基金管理人（登记编码：P1061185），是一家专注于股权投资的专业化基金管理公司。",
+          "quote_hash": "5a02f46b50751212eed367bf194a0d39a36794f9c0454f5830462b0e33ba1f8e"
+        },
         {
           "source_id": "FISRC-1ae72db61aa80327",
           "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",

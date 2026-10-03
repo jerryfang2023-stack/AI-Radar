@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "交大菡源资产 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "菡源资产是上海交通大学教育发展基金会旗下的市场化资产管理机构；基金会官网称其已投资多家VC/PE及二级市场基金，定位为长期LP。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "上海交通大学教育发展基金会",
+          "value": "基金会旗下市场化资产管理机构。",
+          "source_id": "PROFILE-INV-a68b7046ea1f5d-1"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "上海交通大学教育发展基金会",
+          "value": "通过基金配置管理捐赠资产，作为VC/PE和二级市场基金的LP。",
+          "source_id": "PROFILE-INV-a68b7046ea1f5d-2"
+        },
+        {
+          "field": "ecosystem_support",
+          "label": "上海交通大学教育发展基金会",
+          "value": "通过校友创业支持计划助力交大系创业和投资生态。",
+          "source_id": "PROFILE-INV-a68b7046ea1f5d-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-9f36031395f1eea5"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按基金会官网披露的基金配置及捐赠资产保值增值定位建档，不将其写成直接投资型VC。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "上海交通大学教育发展基金会",
+          "value": "菡源资产",
+          "url": "https://foundation.sjtu.edu.cn/announcement/view/1372?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a68b7046ea1f5d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a68b7046ea1f5d-1",
+          "source_url": "https://foundation.sjtu.edu.cn/announcement/view/1372?source_capture=2026-10-03&cycle=16",
+          "source_title": "实习生招聘|交大基金会旗下菡源资产诚聘英才 - 上海交通大学教育发展基金会",
+          "source_content_hash": "e3f564a071243669ad91def30431a1cb8f5a30f5fe6ae9ef0e0e5159b63557ff",
+          "quote": "上海交通大学教育发展基金会旗下的市场化资产管理机构",
+          "quote_hash": "d2e1bd4fe3e4109334f6dc5fdc4f8b308d9be865bf621cea1756ffcb6a250738"
+        },
+        {
+          "source_id": "PROFILE-INV-a68b7046ea1f5d-2",
+          "source_url": "https://foundation.sjtu.edu.cn/announcement/view/1372?source_capture=2026-10-03&cycle=16",
+          "source_title": "实习生招聘|交大基金会旗下菡源资产诚聘英才 - 上海交通大学教育发展基金会",
+          "source_content_hash": "e3f564a071243669ad91def30431a1cb8f5a30f5fe6ae9ef0e0e5159b63557ff",
+          "quote": "已投资数十家一流的VC/PE和二级市场基金",
+          "quote_hash": "3b86b5339f40d336ab2ebdb565570bf7102e4590dc3df7ca5006c3ec6d6ac586"
+        },
         {
           "source_id": "FISRC-9f36031395f1eea5",
           "source_url": "https://www.sohu.com/a/994877486_121124378",
@@ -161,7 +208,7 @@
           "quote_hash": "129d86b0184100c219b0c2e396ec1fb59da10723e6a75851296b296835e7e142"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

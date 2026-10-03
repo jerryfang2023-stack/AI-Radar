@@ -191,12 +191,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Creaegis 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "国际金融公司项目披露将 Creaegis Advisors LLP 列为 Creaegis Investment Fund-II 的管理人，负责投资管理及行政职责；该基金面向印度成长期股权投资。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "IFC 项目披露",
+          "value": "Creaegis Advisors LLP 是 Creaegis Investment Fund-II 的基金管理人。",
+          "source_id": "PROFILE-INV-9d55e75ec83fde-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "IFC 项目披露",
+          "value": "负责该基金的投资管理和行政职责。",
+          "source_id": "PROFILE-INV-9d55e75ec83fde-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "IFC 项目披露",
+          "value": "基金为印度成长期股权基金。",
+          "source_id": "PROFILE-INV-9d55e75ec83fde-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +223,40 @@
           "source_id": "FISRC-07d25b80d4335f93"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "采用 IFC 项目披露说明基金管理角色及投资范围；IFC 文件注明部分项目信息由赞助方提供且未必经过 IFC 独立核实。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "IFC 项目披露",
+          "value": "Creaegis Advisors LLP",
+          "url": "https://disclosures.ifc.org/project-detail/SII/43399/cifii-project?source_capture=2026-10-03&cycle=14",
+          "source_id": "PROFILE-INV-9d55e75ec83fde-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9d55e75ec83fde-1",
+          "source_url": "https://disclosures.ifc.org/project-detail/SII/43399/cifii-project?source_capture=2026-10-03&cycle=14",
+          "source_title": "43399 - CIF-II",
+          "source_content_hash": "81df3473aee3e450b1024d963e315adfd2aad5f716e27529f3945badce9b0741",
+          "quote": "The Fund will be managed by Creaegis Advisors LLP (“Fund Manager” or “Creaegis”)",
+          "quote_hash": "e33737af342149e28232c1fc97a6afdb505e60c4a8fbd177aa7a61a648040d2e"
+        },
+        {
+          "source_id": "PROFILE-INV-9d55e75ec83fde-2",
+          "source_url": "https://disclosures.ifc.org/project-detail/SII/43399/cifii-project?source_capture=2026-10-03&cycle=14",
+          "source_title": "43399 - CIF-II",
+          "source_content_hash": "81df3473aee3e450b1024d963e315adfd2aad5f716e27529f3945badce9b0741",
+          "quote": "The Fund will engage Creaegis to carry out investment management and administrative duties.",
+          "quote_hash": "6ef3007e63a17141b06cb217d6e067e5616e4b4d0dc46343256f7de015dc7d50"
+        },
         {
           "source_id": "FISRC-1898b8cd3bcc2449",
           "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
@@ -227,7 +274,7 @@
           "quote_hash": "ceb891ebdf3633eaa061f504fe9f8638efef68087b323b39588b10d20200619d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "01A 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "01A官网明确将其定位为风险投资公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "风险投资公司。",
+          "source_id": "PROFILE-INV-76db2bf98db0dc-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-62071134d28f47b9"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按官网对机构自身的简要定位建档，不补入缺少来源支持的基金规模或投资组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网首页",
+          "value": "01A",
+          "url": "https://01a.com/?source_capture=2026-10-03&cycle=11",
+          "source_id": "PROFILE-INV-76db2bf98db0dc-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-76db2bf98db0dc-1",
+          "source_url": "https://01a.com/?source_capture=2026-10-03&cycle=11",
+          "source_title": "01A",
+          "source_content_hash": "ab6f3d5027b4a71ab94e26688ba7a4056e158ab1f9cf069e347652653f53940f",
+          "quote": "01A is a Venture Capital Firm.",
+          "quote_hash": "8b43d0f03c885868091762d62760b20627285b10c7d8aa30295cf5cd994197bc"
+        },
         {
           "source_id": "FISRC-62071134d28f47b9",
           "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
@@ -161,7 +188,7 @@
           "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

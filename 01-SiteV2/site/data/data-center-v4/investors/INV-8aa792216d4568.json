@@ -178,12 +178,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "晶科能源 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "JinkoSolar 2026 年投资者公告披露其计划通过少数股权投资布局人工智能、新能源、先进材料、商业航天等高增长方向。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "投资者关系公告",
+          "value": "公司计划开展少数股权战略投资，关注 AI、新能源、先进材料、商业航天等领域。",
+          "source_id": "PROFILE-INV-8aa792216d4568-1"
+        },
+        {
+          "field": "name_change",
+          "label": "投资者关系公告",
+          "value": "公告时董事会已批准更名提案，拟将英文名改为 Jinko Holdings Limited。",
+          "source_id": "PROFILE-INV-8aa792216d4568-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -191,8 +200,32 @@
           "source_id": "FISRC-03cb69a63e7d787b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "公告当时拟将公司英文名改为 Jinko Holdings Limited；投资者关系公告显示其为产业集团的战略投资活动，不应视为独立 VC 管理机构。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资者关系公告",
+          "value": "JinkoSolar（更名提案：Jinko Holdings Limited）",
+          "url": "https://ir.jinkosolar.com/news-releases/news-release-details/jinkosolar-announces-proposed-change-company-name-jinko-holdings?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-8aa792216d4568-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-8aa792216d4568-1",
+          "source_url": "https://ir.jinkosolar.com/news-releases/news-release-details/jinkosolar-announces-proposed-change-company-name-jinko-holdings?source_capture=2026-10-03&cycle=13",
+          "source_title": "JinkoSolar Announces Proposed Change of Company Name to Jinko Holdings Limited and Provides Strategic Investment Update | JinkoSolar",
+          "source_content_hash": "e2004894364da4f5017366e5b79660ba75dbd66675056c0d05619d29e5c1a805",
+          "quote": "the Company will pursue minority investments in high-growth sectors benefiting from China's continued technological innovation, industrial upgrading and energy transition. Building on its industrial experience and insights in solar and energy storage, the Company will focus on artificial intelligence, renewable energy, advanced materials, commercial space and other frontier technologies.",
+          "quote_hash": "c8f8612d43dd1278ae3ab3ec32ce44e0a796b0d4b719d77de69ea2e5c7ad8e9a"
+        },
         {
           "source_id": "FISRC-03cb69a63e7d787b",
           "source_url": "https://news.pedaily.cn/202607/566034.shtml",
@@ -202,7 +235,7 @@
           "quote_hash": "76ef591c6d4ca616ce480398a2ba71d5279671714499b7bb2d71a8a86d3f652d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

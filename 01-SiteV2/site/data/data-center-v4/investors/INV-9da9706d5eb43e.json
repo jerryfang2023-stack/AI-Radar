@@ -121,12 +121,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "David Mytton 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "David Mytton 本人公开其天使投资方向为开发者作为主要用户的早期创业公司，并列出包括 Cyscale、Railway、Resend 等在内的投资组合。",
+      "facts": [
+        {
+          "field": "investor_type",
+          "label": "个人投资页面",
+          "value": "天使投资人。",
+          "source_id": "PROFILE-INV-9da9706d5eb43e-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "个人投资页面",
+          "value": "开发者为主要用户的早期项目，包括云、开发工具、API、DevOps、安全、SaaS及开源。",
+          "source_id": "PROFILE-INV-9da9706d5eb43e-1"
+        },
+        {
+          "field": "typical_check",
+          "label": "个人投资页面",
+          "value": "通常投资 1万至2.5万美元。",
+          "source_id": "PROFILE-INV-9da9706d5eb43e-3"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "个人投资页面",
+          "value": "本人列出 Cyscale、Railway、Resend 等投资项目。",
+          "source_id": "PROFILE-INV-9da9706d5eb43e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +155,48 @@
           "source_id": "FISRC-72c8859fe2a25c85"
         }
       ],
-      "contacts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基于本人投资页面自述；只记录其公开披露的投资方向、典型支票范围和组合示例。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "个人网站",
+          "value": "David Mytton",
+          "url": "https://davidmytton.blog/investments/?source_capture=2026-10-03&cycle=15",
+          "source_id": "PROFILE-INV-9da9706d5eb43e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9da9706d5eb43e-1",
+          "source_url": "https://davidmytton.blog/investments/?source_capture=2026-10-03&cycle=15",
+          "source_title": "Investments - David Mytton",
+          "source_content_hash": "1bc5c645efe702c45d60597f047dafda9410fb5f571752e8825c64865f8abb0c",
+          "quote": "I’m interested in angel investing in any early-stage startups where developers are the primary user.",
+          "quote_hash": "20c942b96800087b9e0cd02425a16ebaf90eaba200d3ee264a492bd16aec0a3a"
+        },
+        {
+          "source_id": "PROFILE-INV-9da9706d5eb43e-2",
+          "source_url": "https://davidmytton.blog/investments/?source_capture=2026-10-03&cycle=15",
+          "source_title": "Investments - David Mytton",
+          "source_content_hash": "1bc5c645efe702c45d60597f047dafda9410fb5f571752e8825c64865f8abb0c",
+          "quote": "I invest globally, although most of my investments are in the US.",
+          "quote_hash": "4fdb86b1fa61676913df58186175fff7dd8ee6633f3b64577e6288ea8d91404d"
+        },
+        {
+          "source_id": "PROFILE-INV-9da9706d5eb43e-3",
+          "source_url": "https://davidmytton.blog/investments/?source_capture=2026-10-03&cycle=15",
+          "source_title": "Investments - David Mytton",
+          "source_content_hash": "1bc5c645efe702c45d60597f047dafda9410fb5f571752e8825c64865f8abb0c",
+          "quote": "typically invest $10-25k.",
+          "quote_hash": "a2f9d263f744cb9892dae8e3fbb5887a5b6ad5d0f06e2531fa0edc0f8aeff945"
+        },
         {
           "source_id": "FISRC-72c8859fe2a25c85",
           "source_url": "https://multiples.vc/private-comps/railway",
@@ -145,7 +206,7 @@
           "quote_hash": "e5b7d69cd6dcc2662843a117e64397603e1ffe7da52a8a9cc2a1ce0a1d072193"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

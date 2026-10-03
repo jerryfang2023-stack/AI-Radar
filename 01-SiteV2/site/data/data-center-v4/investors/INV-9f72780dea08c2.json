@@ -182,12 +182,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "嘉程资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "嘉程资本官网将自身定位为科技领域早期投资机构，聚焦天使轮并强调为创业者提供“第一笔钱”。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "科技领域早期投资机构。",
+          "source_id": "PROFILE-INV-9f72780dea08c2-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网定位",
+          "value": "重点关注天使轮。",
+          "source_id": "PROFILE-INV-9f72780dea08c2-2"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网定位",
+          "value": "聚焦创新者早期的第一笔机构资金。",
+          "source_id": "PROFILE-INV-9f72780dea08c2-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -199,8 +214,40 @@
           "source_id": "FISRC-5a92715d1392fa36"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "只记录官网公开的早期投资定位，不据此推断基金规模或当前组合数量。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "嘉程资本",
+          "url": "https://www.jiachengcap.com/p/about-us?source_capture=2026-10-03&cycle=15",
+          "source_id": "PROFILE-INV-9f72780dea08c2-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9f72780dea08c2-1",
+          "source_url": "https://www.jiachengcap.com/p/about-us?source_capture=2026-10-03&cycle=15",
+          "source_title": "关于我们——嘉程资本",
+          "source_content_hash": "1d51a8b14fd94b5135f55aa830c0cfe4cc7cbb0257fb63dfe345875d4a67757c",
+          "quote": "嘉程资本专注科技领域的早期投资，我们关注传统行业的新玩家，以及新赛道的开拓者",
+          "quote_hash": "88be6b8454cd088058f41ac945d51b16f53d02cfa95532c679a2555a28a70fda"
+        },
+        {
+          "source_id": "PROFILE-INV-9f72780dea08c2-2",
+          "source_url": "https://www.jiachengcap.com/p/about-us?source_capture=2026-10-03&cycle=15",
+          "source_title": "关于我们——嘉程资本",
+          "source_content_hash": "1d51a8b14fd94b5135f55aa830c0cfe4cc7cbb0257fb63dfe345875d4a67757c",
+          "quote": "我们聚焦在“创新者的第一笔钱”的天使轮",
+          "quote_hash": "920e54bf1bdbfde129009d614e02a54f21b74191dcfbea2db1a79debd99000ee"
+        },
         {
           "source_id": "FISRC-9cb02e3c79eee3a9",
           "source_url": "https://www.chinaventure.com.cn/news/113-20260914-393253.html",
@@ -218,7 +265,7 @@
           "quote_hash": "932a4b5d9831c8152243bbf4f8aff0e190480024b66a391e1e88ceffd573048f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

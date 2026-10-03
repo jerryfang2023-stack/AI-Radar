@@ -137,12 +137,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "芯鑫租赁 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "芯鑫官网称芯鑫融资租赁集团股份有限公司简称“芯鑫租赁”，于2015年在上海自贸区注册，是专注服务集成电路等战略性新兴产业的综合金融服务平台，并在境内外投资设立多家子公司。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网列示公司名称",
+          "value": "芯鑫融资租赁集团股份有限公司。",
+          "source_id": "PROFILE-INV-6cab094136858b-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网列示注册成立时间",
+          "value": "2015年8月27日。",
+          "source_id": "PROFILE-INV-6cab094136858b-1"
+        },
+        {
+          "field": "business_type",
+          "label": "官网定位",
+          "value": "服务集成电路等战略性新兴产业的综合金融服务平台。",
+          "source_id": "PROFILE-INV-6cab094136858b-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网披露的投资活动",
+          "value": "在境内外投资设立10余家子公司。",
+          "source_id": "PROFILE-INV-6cab094136858b-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,40 @@
           "source_id": "FISRC-ed0092859381f876"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "该主体主要是产业金融服务平台；本条仅记录官网披露的子公司投资活动，不归类为私募基金管理人。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司简介",
+          "value": "芯鑫融资租赁集团股份有限公司",
+          "url": "https://www.ic-leasing.com/companyprofile/index.aspx?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6cab094136858b-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6cab094136858b-1",
+          "source_url": "https://www.ic-leasing.com/companyprofile/index.aspx?source_capture=2026-10-03&cycle=10",
+          "source_title": "芯鑫融资租赁集团股份有限公司",
+          "source_content_hash": "08bd82a11269410ab48ab971c442c5bcd0e4614a67816c00d4f4bf8fc039dca3",
+          "quote": "简称“芯鑫租赁”）于2015年8月27日在上海自贸区注册成立，是国内唯一专注服务以集成电路为代表的战略性新兴产业的综合金融服务平台。",
+          "quote_hash": "e85277c0d3f7fcecf77db5b2fdcd667f4a4c9f53af85d17ef3aa41ced57ca62c"
+        },
+        {
+          "source_id": "PROFILE-INV-6cab094136858b-2",
+          "source_url": "https://www.ic-leasing.com/companyprofile/index.aspx?source_capture=2026-10-03&cycle=10",
+          "source_title": "芯鑫融资租赁集团股份有限公司",
+          "source_content_hash": "08bd82a11269410ab48ab971c442c5bcd0e4614a67816c00d4f4bf8fc039dca3",
+          "quote": "在境内外投资设立10余家子公司",
+          "quote_hash": "ef16e707975e1a3c37ef467f0c130c4f6760e2716f1cbb84237b020d39db2a25"
+        },
         {
           "source_id": "FISRC-ed0092859381f876",
           "source_url": "https://news.pedaily.cn/202609/569236.shtml",
@@ -161,7 +214,7 @@
           "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

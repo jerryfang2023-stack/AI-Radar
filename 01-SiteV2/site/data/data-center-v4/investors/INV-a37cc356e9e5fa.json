@@ -121,12 +121,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "徐州产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "徐州市产业发展控股集团有限公司官网披露其设有金融投资及人才服务业务；集团新闻称其通过市场化基金投资苏州锴威特半导体股份有限公司。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "机构官网",
+          "value": "徐州市产业发展控股集团有限公司，官网简称“产业集团”。",
+          "source_id": "PROFILE-INV-a37cc356e9e5fa-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "机构官网",
+          "value": "通过市场化基金投资苏州锴威特半导体股份有限公司。",
+          "source_id": "PROFILE-INV-a37cc356e9e5fa-2"
+        },
+        {
+          "field": "business_scope",
+          "label": "机构官网",
+          "value": "集团官网列示“金融投资及人才服务”为业务板块之一。",
+          "source_id": "PROFILE-INV-a37cc356e9e5fa-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +149,40 @@
           "source_id": "FISRC-a22a437c0eb95829"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "候选简称按官网全称和官网自称“产业集团”归一；档案仅收录已披露的基金投资行为及集团投资业务，不延伸为专业VC机构画像。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "徐州市产业发展控股集团有限公司",
+          "url": "https://www.xzcykg.com/?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a37cc356e9e5fa-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a37cc356e9e5fa-1",
+          "source_url": "https://www.xzcykg.com/?source_capture=2026-10-03&cycle=16",
+          "source_title": "徐州市产业发展控股集团有限公司",
+          "source_content_hash": "3849135547e670d952933edcf0b6c28ccdcbf74caa540f2f86afa1ad9d701c71",
+          "quote": "徐州市产业发展控股集团有限公司（以下简称\"产业集团\"）由经开区原两大国投公司",
+          "quote_hash": "effcd2d82d05954d1a9391936d0898234ce16b987047c8018c814751d9a618b0"
+        },
+        {
+          "source_id": "PROFILE-INV-a37cc356e9e5fa-2",
+          "source_url": "https://www.xzcykg.com/company/62.html?source_capture=2026-10-03&cycle=16",
+          "source_title": "产业集团助力企业锴威特成功登陆科创板",
+          "source_content_hash": "ef623bf7ddcb14344de6d8311ec8083b3abb38214006f56b99fa753a14724a67",
+          "quote": "作为投资方之一的产业集团，通过市场化基金投资锴威特",
+          "quote_hash": "49558ab15319dbe842c57baf2cd963040e56fdb39dd92360ee9d693be9927560"
+        },
         {
           "source_id": "FISRC-a22a437c0eb95829",
           "source_url": "https://m.takefoto.cn/news/2026/09/30/11979075.shtml",
@@ -145,7 +192,7 @@
           "quote_hash": "ec883fd15176fa63f9c483974a67fa947057580ca12375a7a2f52d0db2c6d784"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -121,12 +121,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Itochu 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "伊藤忠商事2025年新闻稿披露其将向Technology Ventures VI风险投资基金出资25亿日元；该基金由其开展VC业务的子公司ITOCHU Technology Ventures设立。此条仅记录母公司的基金出资活动。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "官网披露的出资活动",
+          "value": "伊藤忠商事宣布向Technology Ventures VI风险投资基金出资25亿日元。",
+          "source_id": "PROFILE-INV-7ba98c438d6a2c-1"
+        },
+        {
+          "field": "affiliate_scope",
+          "label": "官网披露的主体关系",
+          "value": "ITOCHU Technology Ventures是伊藤忠商事旗下开展VC业务的子公司；TV6由该子公司设立。",
+          "source_id": "PROFILE-INV-7ba98c438d6a2c-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +143,40 @@
           "source_id": "FISRC-7dc8a65571f189f0"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "来源明确区分伊藤忠商事、开展VC业务的子公司及基金TV6；本档不将母公司描述为该VC管理人。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "新闻稿",
+          "value": "ITOCHU Corporation",
+          "url": "https://www.itochu.co.jp/en/news/press/2025/250331.html?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-7ba98c438d6a2c-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7ba98c438d6a2c-1",
+          "source_url": "https://www.itochu.co.jp/en/news/press/2025/250331.html?source_capture=2026-10-03&cycle=12",
+          "source_title": "ITOCHU Announces Completion of Establishment of Technology Ventures VI Venture Capital Investment Limited Partnership | Press Releases | ITOCHU Corporation",
+          "source_content_hash": "0b8418c096a37015363527912518956373677596ef84a8a0234910eb1a1c7ed1",
+          "quote": "ITOCHU will invest 2.5 billion yen in TV6, one-sixth of its total committed capital.",
+          "quote_hash": "534122af401640e6e3b3490a4b73fb66f2a6e9e0520fe2435d79bd7db518ceab"
+        },
+        {
+          "source_id": "PROFILE-INV-7ba98c438d6a2c-2",
+          "source_url": "https://www.itochu.co.jp/en/news/press/2025/250331.html?source_capture=2026-10-03&cycle=12",
+          "source_title": "ITOCHU Announces Completion of Establishment of Technology Ventures VI Venture Capital Investment Limited Partnership | Press Releases | ITOCHU Corporation",
+          "source_content_hash": "0b8418c096a37015363527912518956373677596ef84a8a0234910eb1a1c7ed1",
+          "quote": "ITOCHU Technology Ventures, Inc. (headquartered in Minato-ku, Tokyo; Suguru Yamaryo, President & CEO; hereinafter \"ITV\"), a subsidiary of ITOCHU that conducts a venture capital business, completed the establishment of Technology Ventures VI Venture Capital Investment Limited Partnership (hereinafter \"TV6\").",
+          "quote_hash": "a9424795f6ef0fa1188e414684ff0d37171d1f3b8bffc22200737b5983d65350"
+        },
         {
           "source_id": "FISRC-7dc8a65571f189f0",
           "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",

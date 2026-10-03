@@ -191,12 +191,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "S32 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "S32 官网称其创始人 Bill Maris 创立了这家风险投资机构，并将投资方向描述为创新前沿。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网团队页",
+          "value": "风险投资机构。",
+          "source_id": "PROFILE-INV-9f75b44276f08e-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网团队页",
+          "value": "创新前沿领域。",
+          "source_id": "PROFILE-INV-9f75b44276f08e-1"
+        },
+        {
+          "field": "founder",
+          "label": "官网团队页",
+          "value": "Bill Maris 创立 S32。",
+          "source_id": "PROFILE-INV-9f75b44276f08e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +223,32 @@
           "source_id": "FISRC-16afc5791c45315a"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "档案按 S32 官网团队页的机构与创始人自述建立，不扩展未核实的基金数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "S32",
+          "url": "https://www.s32.com/team?source_capture=2026-10-03&cycle=15",
+          "source_id": "PROFILE-INV-9f75b44276f08e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9f75b44276f08e-1",
+          "source_url": "https://www.s32.com/team?source_capture=2026-10-03&cycle=15",
+          "source_title": "S32 | Team",
+          "source_content_hash": "84d68faa50bb1c7fc5ed1b63af2557297ccf540c67367b15cae64f2f50d19811",
+          "quote": "He is the founder of S32, a venture capital firm investing at the frontiers of innovation.",
+          "quote_hash": "827459c1ca126c2fa1ea3e9aa305258e318e0f4c62eef625c1e393caf5e6a83e"
+        },
         {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
@@ -227,7 +266,7 @@
           "quote_hash": "570f3d38da98c770ed63b46c303f26eed84498a651974861af1f95116d94e3a2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

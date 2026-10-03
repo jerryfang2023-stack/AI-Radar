@@ -123,12 +123,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Phoenix Court 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Phoenix Court 是 LocalGlobe、Latitude、Solar 与 Basecamp 等投资基金和业务的母平台；官网将其描述为从早期基金发展而来的多阶段投资公司，可从种子阶段陪伴企业至成长及公开市场。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "Phoenix Court 官网",
+          "value": "多阶段投资公司及基金平台。",
+          "source_id": "PROFILE-INV-aabf3c9b25ed09-1"
+        },
+        {
+          "field": "fund_platform",
+          "label": "Phoenix Court 官网",
+          "value": "官网列示 LocalGlobe、Latitude、Solar 与 Basecamp。",
+          "source_id": "PROFILE-INV-aabf3c9b25ed09-3"
+        },
+        {
+          "field": "investment_stage",
+          "label": "Phoenix Court 官网",
+          "value": "从种子阶段支持企业成长至公开市场。",
+          "source_id": "PROFILE-INV-aabf3c9b25ed09-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -136,8 +151,48 @@
           "source_id": "FISRC-27e01480407caae0"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按 Phoenix Court 官网描述组织其平台与基金品牌；不将不同基金的投资数据合并为单只基金表现。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Phoenix Court",
+          "url": "https://www.phoenixcourt.vc/about?source_capture=2026-10-03&cycle=17",
+          "source_id": "PROFILE-INV-aabf3c9b25ed09-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-aabf3c9b25ed09-1",
+          "source_url": "https://www.phoenixcourt.vc/about?source_capture=2026-10-03&cycle=17",
+          "source_title": "About Us | Phoenix Court",
+          "source_content_hash": "4acb6dbffa906212542f31ac84eee996c958cece2e0e2eac3148da50a2ad6186",
+          "quote": "What began as an early-stage fund has grown into a multi-stage investment company",
+          "quote_hash": "3701a45087ec21705e6589adab150937460029567383e193a2b4ac449a417473"
+        },
+        {
+          "source_id": "PROFILE-INV-aabf3c9b25ed09-2",
+          "source_url": "https://www.phoenixcourt.vc/about?source_capture=2026-10-03&cycle=17",
+          "source_title": "About Us | Phoenix Court",
+          "source_content_hash": "4acb6dbffa906212542f31ac84eee996c958cece2e0e2eac3148da50a2ad6186",
+          "quote": "We are built to stay with you from seed through growth and into the public markets and beyond.",
+          "quote_hash": "c20a4c4853a88e9c9c4cc3980d32520ab1fc07de50fde6270bd24707dbc56f17"
+        },
+        {
+          "source_id": "PROFILE-INV-aabf3c9b25ed09-3",
+          "source_url": "https://www.phoenixcourt.vc/about?source_capture=2026-10-03&cycle=17",
+          "source_title": "About Us | Phoenix Court",
+          "source_content_hash": "4acb6dbffa906212542f31ac84eee996c958cece2e0e2eac3148da50a2ad6186",
+          "quote": "LocalGlobe Latitude Solar Basecamp",
+          "quote_hash": "cd1e7ef04b024cf59e9214e5b24063e1b5d97a2d6d5bfad0a964c916ca5e7f11"
+        },
         {
           "source_id": "FISRC-27e01480407caae0",
           "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
@@ -147,7 +202,7 @@
           "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

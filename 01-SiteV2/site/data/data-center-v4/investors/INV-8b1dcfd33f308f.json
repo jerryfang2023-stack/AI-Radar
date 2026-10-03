@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "钛铭资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "钛铭资本官网称其为私募基金管理公司，官网披露其于 2017 年在中基协登记，并关注智能科技、新能源、新材料和高端制造。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "私募基金管理公司。",
+          "source_id": "PROFILE-INV-8b1dcfd33f308f-1"
+        },
+        {
+          "field": "registration",
+          "label": "官网登记信息",
+          "value": "官网披露 2017 年 8 月在中基协登记为私募基金管理人，编号 P1064432。",
+          "source_id": "PROFILE-INV-8b1dcfd33f308f-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露领域",
+          "value": "智能科技、新能源、新材料、高端制造。",
+          "source_id": "PROFILE-INV-8b1dcfd33f308f-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,32 @@
           "source_id": "FISRC-10c7fcf01fad4e2f"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "登记时间及方向依据公司官网自述；未补入官网未披露的基金规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "钛铭资本",
+          "url": "https://www.timingcap.com/?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-8b1dcfd33f308f-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-8b1dcfd33f308f-1",
+          "source_url": "https://www.timingcap.com/?source_capture=2026-10-03&cycle=13",
+          "source_title": "钛铭资本",
+          "source_content_hash": "2f303ff5eba3dd2e4ff921f423109da8e7dc2b322b0fd43e4890b05fadc0de89",
+          "quote": "钛铭资本是一家精品私募基金管理公司，2017年8月在中国证券投资基金业协会登记为私募基金管理人，登记编号：P1064432。",
+          "quote_hash": "b217ec1365dce5d549758563556c481303a564e37577b5c108a41f4c1ac3cf33"
+        },
         {
           "source_id": "FISRC-10c7fcf01fad4e2f",
           "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",

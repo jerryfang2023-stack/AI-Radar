@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "奥克斯 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "奥克斯集团官网披露，集团于2009年进入投资业，成立汇金小贷公司并参股两家银行。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "集团官网时间线",
+          "value": "2009年进入投资业，成立汇金小贷公司并参股两家银行。",
+          "source_id": "PROFILE-INV-9c1a12ff6a63ae-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-a7ac3aedf1b697d8"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅按官网时间线记录企业集团的历史金融投资活动，不据此认定其为专业基金管理机构。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "集团官网",
+          "value": "奥克斯集团",
+          "url": "https://www.auxgroup.com/about.html?source_capture=2026-10-03&cycle=14",
+          "source_id": "PROFILE-INV-9c1a12ff6a63ae-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9c1a12ff6a63ae-1",
+          "source_url": "https://www.auxgroup.com/about.html?source_capture=2026-10-03&cycle=14",
+          "source_title": "奥克斯AUX集团介绍_发展战略_奥克斯集团官网",
+          "source_content_hash": "57583b9a18ec841ba08a7d38cd30c31e302edd6280f32a87449acfdb574ab64f",
+          "quote": "2009 进入投资业 成立汇金小贷公司，参股 2 家银行",
+          "quote_hash": "b8fa8665c23c65269a809c27a74bfcbec38c7b203f7979a067213b5237519669"
+        },
         {
           "source_id": "FISRC-a7ac3aedf1b697d8",
           "source_url": "https://news.pedaily.cn/202603/561585.shtml",

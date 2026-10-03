@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "迎驾贡酒 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "安徽迎驾贡酒股份有限公司作为白酒上市公司，公告披露其以有限合伙人身份认缴出资1亿元参与君联良道股权投资基金。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "公司公告",
+          "value": "以有限合伙人身份认缴1亿元参与杭州君联良道股权投资合伙企业。",
+          "source_id": "PROFILE-INV-a154792cd05d15-1"
+        },
+        {
+          "field": "fund_manager_relationship",
+          "label": "公司公告",
+          "value": "该基金管理人为君联资本管理股份有限公司。",
+          "source_id": "PROFILE-INV-a154792cd05d15-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-f5fa738edf400dda"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "只记录该笔私募基金有限合伙出资活动；基金管理人为君联资本，不将迎驾贡酒描述为基金管理人。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a154792cd05d15-1",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-05-19/1225314083.PDF?source_capture=2026-10-03&cycle=15",
+          "source_title": "迎驾贡酒私募基金合作投资公告",
+          "source_content_hash": "fdf3a05e4207747813fae8d2b1058826d7f4c2857758eb14f480e706f1df0a06",
+          "quote": "公司作为有限 合伙人以自有",
+          "quote_hash": "6bef7ebe2212f53b0cf5be6d52f3aab8e3ef12f5ec67ae751869d7e3c55e7826"
+        },
+        {
+          "source_id": "PROFILE-INV-a154792cd05d15-2",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-05-19/1225314083.PDF?source_capture=2026-10-03&cycle=15",
+          "source_title": "迎驾贡酒私募基金合作投资公告",
+          "source_content_hash": "fdf3a05e4207747813fae8d2b1058826d7f4c2857758eb14f480e706f1df0a06",
+          "quote": "10,000 万元。",
+          "quote_hash": "d0e8432c006e625548c674b4bb49c86852ee3517d7ce75c64aea371a02dd86f8"
+        },
+        {
+          "source_id": "PROFILE-INV-a154792cd05d15-3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-05-19/1225314083.PDF?source_capture=2026-10-03&cycle=15",
+          "source_title": "迎驾贡酒私募基金合作投资公告",
+          "source_content_hash": "fdf3a05e4207747813fae8d2b1058826d7f4c2857758eb14f480e706f1df0a06",
+          "quote": "君联资本管理股份有限公司（以下简称“管理人”）",
+          "quote_hash": "7f8c32ae45ec8a5d97de35942575c772fc066a1cc84a75fc6959711be18ca995"
+        },
         {
           "source_id": "FISRC-f5fa738edf400dda",
           "source_url": "https://news.pedaily.cn/202609/569430.shtml",
@@ -161,7 +202,7 @@
           "quote_hash": "4f7de3e000eb80419ec27fd750e26ba56642a4e0089dde436f1d526a46bd7eb4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

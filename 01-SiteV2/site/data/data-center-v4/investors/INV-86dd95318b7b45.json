@@ -138,12 +138,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "TCL产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "TCL 科技公告显示，其全资子公司厦门 TCL 科技产业投资有限公司拟以 9.9 亿元参与设立总认缴额 10 亿元的产业投资合伙企业。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "官方公告披露",
+          "value": "TCL 科技全资子公司拟出资 9.9 亿元，与专业机构设立认缴总额 10 亿元的有限合伙企业。",
+          "source_id": "PROFILE-INV-86dd95318b7b45-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官方公告披露",
+          "value": "合伙企业拟投资半导体显示技术与材料、新能源光伏、半导体材料及芯片等领域。",
+          "source_id": "PROFILE-INV-86dd95318b7b45-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +160,32 @@
           "source_id": "FISRC-f4259d29fd364076"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "只记录母公司子公司的自有资金投资及合伙企业设立计划，不据此认定其为基金管理人。引文为对官方公告 PDF 第 1 页图像的人工视觉转录。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方公告",
+          "value": "TCL 科技（公告所涉主体为其全资子公司）",
+          "url": "https://static.cninfo.com.cn/finalpage/2022-08-27/1214426179.PDF?source_capture=2026-10-03&cycle=13-pdftext",
+          "source_id": "PROFILE-INV-86dd95318b7b45-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-86dd95318b7b45-1",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2022-08-27/1214426179.PDF?source_capture=2026-10-03&cycle=13-pdftext",
+          "source_title": "TCL科技集团股份有限公司关于设立合伙企业的公告",
+          "source_content_hash": "fabfdacabd4f533af24262a2b1d746f8fc086fdbd2550b2f6808951327f5a51d",
+          "quote": "公司全资子公司厦门 TCL 科技产业投资有限公司拟与专业机构投资设立厦门 TCL 科技产业投资合伙企业（有限合伙）（以下简称“合伙企业”），合伙企业认缴出资额为 10 亿元人民币，其中公司认缴出资 9.9 亿元人民币。",
+          "quote_hash": "8d0c10a208a1ffc9da12319aa3683221f244e22ca2c6c5a0bfe70a16a1afe8ec"
+        },
         {
           "source_id": "FISRC-f4259d29fd364076",
           "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",

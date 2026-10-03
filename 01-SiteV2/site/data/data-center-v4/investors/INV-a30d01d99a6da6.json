@@ -137,21 +137,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Z Fellows 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Z Fellows 是面向早期创业者的一周项目；官网 FAQ 说明参与者可选择接受1万美元投资，按10亿美元估值上限转换为下一轮股份。",
+      "facts": [
+        {
+          "field": "investment_program",
+          "label": "机构官网",
+          "value": "项目参与者可选择接受1万美元投资，估值上限为10亿美元，并在下一轮定价时转换为股份。",
+          "source_id": "PROFILE-INV-a30d01d99a6da6-1"
+        },
+        {
+          "field": "program_type",
+          "label": "机构官网",
+          "value": "面向早期创业者的一周项目及持续创业支持。",
+          "source_id": "PROFILE-INV-a30d01d99a6da6-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "Current FAQ",
+          "description": "官网披露可选1万美元投资安排；参与者也可不接受投资。",
+          "source_id": "PROFILE-INV-a30d01d99a6da6-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Photon · 种子轮 · 2026-10-01 · 本轮参投 · $4.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-199e9ff185705c78"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "该记录仅覆盖官网披露的可选项目投资安排，不把创业者加速项目描述成传统风险投资基金。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Z Fellows",
+          "url": "https://www.zfellows.com/?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a30d01d99a6da6-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a30d01d99a6da6-1",
+          "source_url": "https://www.zfellows.com/?source_capture=2026-10-03&cycle=16",
+          "source_title": "Z Fellows | Get Fast-Tracked into Silicon Valley",
+          "source_content_hash": "97642eef34207893e2bfc4dee62df4202afdfab1265b1f1bee13a247cd65d0eb",
+          "quote": "investment at a $1B valuation cap",
+          "quote_hash": "685bbb49c866c15971612f8e4395452d9bb9488490096dbb06ee391b49c732b1"
+        },
+        {
+          "source_id": "PROFILE-INV-a30d01d99a6da6-2",
+          "source_url": "https://www.zfellows.com/?source_capture=2026-10-03&cycle=16",
+          "source_title": "Z Fellows | Get Fast-Tracked into Silicon Valley",
+          "source_content_hash": "97642eef34207893e2bfc4dee62df4202afdfab1265b1f1bee13a247cd65d0eb",
+          "quote": "This $10,000 investment will convert into stock at your next priced round.",
+          "quote_hash": "b4a440b3610642883990d504bd49ec1ffe65c7cadfc0938cbcf56c55e2bc790f"
+        },
         {
           "source_id": "FISRC-199e9ff185705c78",
           "source_url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
@@ -161,7 +208,7 @@
           "quote_hash": "ac15258cb66619a32697a75618de792e84a4ec14c9481f0569cbe019e775c33a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

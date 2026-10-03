@@ -138,12 +138,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "江苏金桥 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "上交所披露文件及律师核查材料确认，江苏金桥私募基金管理有限公司担任连云港高新基金管理人，登记编号为 P1072866。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "上交所披露及法律意见",
+          "value": "江苏金桥私募基金管理有限公司。",
+          "source_id": "PROFILE-INV-99bd77704c4fd6-2"
+        },
+        {
+          "field": "registration",
+          "label": "上交所披露及法律意见",
+          "value": "私募基金管理人登记编号 P1072866。",
+          "source_id": "PROFILE-INV-99bd77704c4fd6-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "上交所披露及法律意见",
+          "value": "担任连云港高新私募基金管理人及基金普通合伙人。",
+          "source_id": "PROFILE-INV-99bd77704c4fd6-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +166,32 @@
           "source_id": "FISRC-ec1ffe5861471f6a"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据上市公司专项核查文件记录法定管理人身份和登记号，不推断其基金规模或当前活跃程度。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-99bd77704c4fd6-1",
+          "source_url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-16/688535_20250816_IJO3.pdf?source_capture=2026-10-03&cycle=14",
+          "source_title": "江苏金桥私募基金管理有限公司相关专项核查意见",
+          "source_content_hash": "34008cbc471a0874042e95663cbca89584eaaf335334d4a178feee72ef6b1204",
+          "quote": "其管理人为江 苏金桥私募基金管理有限公司，登记编号为 P1072866。",
+          "quote_hash": "06efa80981cfa6e7fe5701db2bcfe523c92f2d8c50506256c90f70eb7bdf8a59"
+        },
+        {
+          "source_id": "PROFILE-INV-99bd77704c4fd6-2",
+          "source_url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-16/688535_20250816_IJO3.pdf?source_capture=2026-10-03&cycle=14",
+          "source_title": "江苏金桥私募基金管理有限公司相关专项核查意见",
+          "source_content_hash": "34008cbc471a0874042e95663cbca89584eaaf335334d4a178feee72ef6b1204",
+          "quote": "江苏金桥私募基金管理有限公司 普通合伙人 1,000.00 1.0417",
+          "quote_hash": "c42033116ac294844179e15ad00779de24cbe09a9a92c0cb31b9378745c6abf4"
+        },
         {
           "source_id": "FISRC-ec1ffe5861471f6a",
           "source_url": "https://news.pedaily.cn/202609/569399.shtml",
@@ -162,7 +201,7 @@
           "quote_hash": "bafda0d30f65da43aa0231d42fc2c6ac648ff251e649dd62868ddd721f58027b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -121,12 +121,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Jim Keller 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "AheadComputing官方新闻稿称Jim Keller加入其董事会，并称他是公司的早期支持者和天使投资人。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "公司新闻稿披露的投资关系",
+          "value": "Jim Keller是AheadComputing的早期支持者和天使投资人。",
+          "source_id": "PROFILE-INV-7bb91a282fcd1a-1"
+        },
+        {
+          "field": "board_role",
+          "label": "公司新闻稿披露的职务",
+          "value": "加入AheadComputing董事会。",
+          "source_id": "PROFILE-INV-7bb91a282fcd1a-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +143,24 @@
           "source_id": "FISRC-b57e758a492553d2"
         }
       ],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "仅记录该公司新闻稿可核验的董事及天使投资关系，不扩展为未经来源支持的投资组合或其他个人履历。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7bb91a282fcd1a-1",
+          "source_url": "https://www.aheadcomputing.com/blog/aheadcomputing-welcomes-jim-keller-to-board-of-directors?source_capture=2026-10-03&cycle=12",
+          "source_title": "AheadComputing Welcomes Jim Keller to Board of Directors | Ahead Computing",
+          "source_content_hash": "794972c927c58608f6ade0893430b579c50cfafe8de1485177c1b2926fd23f47",
+          "quote": "Jim has also been an early supporter and angel investor in AheadComputing, and his appointment marks a significant milestone for the company as it deepens its commitment to advancing the RISC-V ecosystem.",
+          "quote_hash": "64cd18e8b5aa75d8aaf36c677fc177673c49383e72500e4b6236a3bd9f2ae898"
+        },
         {
           "source_id": "FISRC-b57e758a492553d2",
           "source_url": "https://startupintros.com/orgs/aheadcomputing",
@@ -145,7 +170,7 @@
           "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

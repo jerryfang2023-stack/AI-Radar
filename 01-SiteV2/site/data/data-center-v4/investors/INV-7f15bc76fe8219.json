@@ -219,12 +219,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "海尔资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "海尔资本官网称其成立于2010年，是海尔集团旗下投资平台，业务覆盖风险投资与私募股权投资。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网披露成立时间",
+          "value": "2010年。",
+          "source_id": "PROFILE-INV-7f15bc76fe8219-1"
+        },
+        {
+          "field": "parent_company",
+          "label": "官网披露的母公司",
+          "value": "海尔集团。",
+          "source_id": "PROFILE-INV-7f15bc76fe8219-1"
+        },
+        {
+          "field": "investment_business",
+          "label": "官网披露的业务",
+          "value": "风险投资与私募股权投资。",
+          "source_id": "PROFILE-INV-7f15bc76fe8219-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -240,8 +255,32 @@
           "source_id": "FISRC-2707f48aa6e437b7"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按官网对平台定位及业务范围建档，不录入动态资产管理规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "资本简介",
+          "value": "海尔资本",
+          "url": "https://www.haiercapital.com/html/aboutus/intro.html?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-7f15bc76fe8219-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7f15bc76fe8219-1",
+          "source_url": "https://www.haiercapital.com/html/aboutus/intro.html?source_capture=2026-10-03&cycle=12",
+          "source_title": "海尔资本-资本简介",
+          "source_content_hash": "04af91dc4ad2af0a98e79882e5d8e43f7af0e9cb406de3695cf4a37f95c22b76",
+          "quote": "海尔资本成立于2010年，为海尔集团旗下投资平台，业务覆盖风险投资与私募股权投资等领域。",
+          "quote_hash": "20d6e0316f5de0946fd195dd14dfff4fd103a9b7721ad6db16682f36cc51f80d"
+        },
         {
           "source_id": "FISRC-6d442164db5f81db",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
@@ -267,7 +306,7 @@
           "quote_hash": "8e622a72802f5d73a1b103cd204741e0f65ec8b8dee45dfa8fd1147684be3580"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

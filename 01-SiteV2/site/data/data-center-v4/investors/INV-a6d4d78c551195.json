@@ -245,12 +245,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "洪山资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "洪山资本对应武汉洪创投资管理有限公司；武汉市政府转载报道明确将该简称用于该公司，政府投资资讯另披露其推进洪山区科技专项资金“先投后股”项目。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "武汉市人民政府门户网站",
+          "value": "武汉洪创投资管理有限公司，报道明确简称“洪山资本”。",
+          "source_id": "PROFILE-INV-a6d4d78c551195-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "武汉市投资促进局",
+          "value": "推进洪山区科技专项资金第五批“先投后股”项目；当批拟支持3个初创科技企业项目。",
+          "source_id": "PROFILE-INV-a6d4d78c551195-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "武汉市投资促进局",
+          "value": "官方资讯称其聚焦人工智能、泛半导体、量子科技等硬科技方向。",
+          "source_id": "PROFILE-INV-a6d4d78c551195-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -258,8 +273,40 @@
           "source_id": "FISRC-fecad8ccb9a84a39"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅覆盖洪山资本对应主体及已披露的区域产业基金/先投后股投资活动，不概括为独立市场化VC。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "政府投资资讯",
+          "value": "洪山资本",
+          "url": "https://tc.wuhan.gov.cn/tzwh/tzzx/202606/t20260611_2776080.shtml?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a6d4d78c551195-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a6d4d78c551195-1",
+          "source_url": "https://www.wuhan.gov.cn/whyw/gqdt/202506/t20250623_2599196.shtml?source_capture=2026-10-03&cycle=16",
+          "source_title": "百亿级早期基金群抢滩环大学创新带 洪山产业基金6年孕育22粒“金种子” - 武汉市人民政府门户网站",
+          "source_content_hash": "bd3d900298a7c75a56b87c1f2b461f17a8f60b696cb046b57d75d09d2bd51997",
+          "quote": "武汉洪创投资管理有限公司（以下简称洪山资本）",
+          "quote_hash": "1ff42b2fc842239a174a8fb714da5013f1358b911b9ac3624f15c5a747e43242"
+        },
+        {
+          "source_id": "PROFILE-INV-a6d4d78c551195-2",
+          "source_url": "https://tc.wuhan.gov.cn/tzwh/tzzx/202606/t20260611_2776080.shtml?source_capture=2026-10-03&cycle=16",
+          "source_title": "洪山区“先投后股”第五批项目落地，海内外高端人才硬科技项目加速集聚 - 武汉市投资促进局 武汉市政务服务局",
+          "source_content_hash": "8defb3b107c1e2bc8457c5823dd9daf0907b218278bfd62c91b42cd2702f3c70",
+          "quote": "近日，洪山资本完成洪山区科技专项资金第五批“先投后股”项目的全流程推进工作",
+          "quote_hash": "21f292c4d4091dfab065dd0ccc98d7d60d41e15f7e63705586aa34e7c38714a1"
+        },
         {
           "source_id": "FISRC-fecad8ccb9a84a39",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393359.html",
