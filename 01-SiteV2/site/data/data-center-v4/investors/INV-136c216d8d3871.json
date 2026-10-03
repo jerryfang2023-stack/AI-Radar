@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Menlo 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Menlo Ventures 官网称其为投资者与公司建设者，支持早期创始团队验证产品市场匹配并扩展业务。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "value": "早期创业阶段。",
+          "label": "官网披露的投资阶段",
+          "source_id": "PROFILE-136c216d8d3871-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-733016c3a34668d3"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段和支持范围按官网自述记录。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "value": "Menlo",
+          "source_id": "PROFILE-136c216d8d3871-1",
+          "kind": "website",
+          "label": "机构官网",
+          "url": "https://menlovc.com/about/"
+        }
+      ],
       "sources": [
+        {
+          "source_title": "Menlo Ventures | About Us",
+          "source_content_hash": "326047ea86522e202de45b58c33b70df39e7a54030d1a6bc977de82acfb17736",
+          "source_id": "PROFILE-136c216d8d3871-1",
+          "source_url": "https://menlovc.com/about/",
+          "quote": "We are investors and company builders—we know what it takes to turn a budding idea into a",
+          "quote_hash": "6875cca1eb0c934b4a05751aab85135981106b2a8309652d34192c0f84b96d31"
+        },
         {
           "source_id": "FISRC-733016c3a34668d3",
           "source_url": "https://modal.com/blog/modal-series-c",
@@ -161,7 +188,7 @@
           "quote_hash": "26e6009b8459219d19331dc45cf2d4d37148f81177808b3185c6b88f4c732cfe"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

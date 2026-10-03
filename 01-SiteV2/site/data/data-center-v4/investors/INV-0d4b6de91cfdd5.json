@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "SBVA 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "SBVA 官网称其于 2000 年作为 SoftBank Group 早期风险投资部门设立，并于 2023 年与 The Edgeof 结合后成为独立实体。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "value": "风险投资机构；官网称其目前为独立实体。",
+          "label": "官网披露的机构身份",
+          "source_id": "PROFILE-0d4b6de91cfdd5-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-6d4642fdc4a2457c"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网历史介绍明确区分 2000 年设立背景与 2023 年后的独立实体状态。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "value": "SBVA",
+          "source_id": "PROFILE-0d4b6de91cfdd5-1",
+          "kind": "website",
+          "label": "机构官网",
+          "url": "https://sbvacorp.com/en/company"
+        }
+      ],
       "sources": [
+        {
+          "source_title": "Company",
+          "source_content_hash": "6eaec552c266340edbcbdee078ee2090b881aae7f3e48f2acdce2de23f5eea5f",
+          "source_id": "PROFILE-0d4b6de91cfdd5-1",
+          "source_url": "https://sbvacorp.com/en/company",
+          "quote": "Established in 2000 as an early-stage venture capital arm of SoftBank Group, SBVA has a storied history of empowering extraordinary entrepreneurs across the globe.",
+          "quote_hash": "90afed2f9b2a3f795699249463e9f7cbc03456572c3688c7d970b7ad9671fa9a"
+        },
         {
           "source_id": "FISRC-6d4642fdc4a2457c",
           "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
@@ -161,7 +188,7 @@
           "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

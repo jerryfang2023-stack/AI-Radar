@@ -178,12 +178,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Hyperplane 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Hyperplane官网自述其2015年开始投资人工智能及相关领域的创业公司。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资关注",
+          "value": "人工智能及其重塑的行业",
+          "source_id": "PROFILE-1813e01c25d62e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,8 +198,32 @@
           "source_id": "FISRC-7b74a05d5a5acb08"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网自述；未扩写未披露的基金规模或投资回报。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Hyperplane",
+          "url": "https://www.hyperplane.vc/",
+          "source_id": "PROFILE-1813e01c25d62e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-1813e01c25d62e-1",
+          "source_url": "https://www.hyperplane.vc/",
+          "source_title": "Hyperplane | Early-Stage AI & Deep Tech Venture Capital",
+          "source_content_hash": "f117a19c5368e34cbc8de6fe4a3465d43b32cf493bcfdf9f7d41a9950bb90964",
+          "quote": "We started in 2015 with a core conviction: AI was ready to leave the lab and reshape the industries the world runs on.",
+          "quote_hash": "bf1436cf399f266ce71c5582c82767dd596373fc5228ec61f1368237ee8976c6"
+        },
         {
           "source_id": "FISRC-6ec519350686cbda",
           "source_url": "https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/",
@@ -214,7 +241,7 @@
           "quote_hash": "7cd2476ee59bce21c1307a818ab912e54b2264ed87ba277eb3fed2302291c8fe"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

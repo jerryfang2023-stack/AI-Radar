@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "光大控股 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "光大控股官网披露其管理一级市场基金、二级市场基金及结构性融资与投资业务。",
+      "facts": [
+        {
+          "field": "investment_business",
+          "label": "业务范围",
+          "value": "一级市场基金、二级市场基金、结构性融资及投资",
+          "source_id": "PROFILE-13f5805fef82c6-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-9d452499b4ff68fd"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按公司官网的业务概览记录其基金管理与投资业务。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "光大控股",
+          "url": "https://www.everbright.com/cn",
+          "source_id": "PROFILE-13f5805fef82c6-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-13f5805fef82c6-1",
+          "source_url": "https://www.everbright.com/cn/business2",
+          "source_title": "业务概览 | 光大控股",
+          "source_content_hash": "8248fe6d3b5256bfab8bb6f4f0665dbe49c0fa64f217fcdb17fc7264cf52339d",
+          "quote": "光大控股秉持「大资产管理」战略，专注发展一级市场基金、二级市场基金、结构性融资及投资等基金管理及投资业务",
+          "quote_hash": "362857327ad03ea12061929a74cb817a49aa0f2773482e812c0b527f624f7bbf"
+        },
         {
           "source_id": "FISRC-9d452499b4ff68fd",
           "source_url": "https://m.sohu.com/a/1064729786_120133855?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
@@ -161,7 +188,7 @@
           "quote_hash": "4e2296fb638dfceaf335f485c455e28f8f598f4e0e55dae43cde2e85671340ba"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

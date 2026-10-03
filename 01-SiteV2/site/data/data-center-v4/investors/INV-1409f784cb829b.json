@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Riccardo Zacconi 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "King 的 SEC F-1 文件以 CEO 和联合创始人身份署名 Riccardo Zacconi；这仅证明该历史文件中的身份，不代表其当前职位或投资活动。",
+      "facts": [
+        {
+          "field": "historical_identity",
+          "label": "来源核验",
+          "value": "SEC F-1 文件的 King CEO 与联合创始人致辞标题标注 Riccardo Zacconi。",
+          "source_id": "PROFILE-1409f784cb829b-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,24 @@
           "source_id": "FISRC-5228f73ab8dc8458"
         }
       ],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "King 的 SEC F-1 文件以 CEO 和联合创始人身份署名 Riccardo Zacconi；这仅证明该历史文件中的身份，不代表其当前职位或投资活动。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-1409f784cb829b-1",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1580732/000119312514094529/d564433df1a.htm",
+          "source_title": "Amendment No. 1 to Form F-1",
+          "source_content_hash": "e6c5df82dcb6402e8dbd9ecc4a889c849f52e4d24eef533b88e53c6db717449f",
+          "quote": "A MESSAGE FROM KING CEO AND CO-FOUNDER, RICCARDO ZACCONI",
+          "quote_hash": "ad3839027bf71f227ad971034c744e94276832782571704c53d1c9c72e98bc26"
+        },
         {
           "source_id": "FISRC-5228f73ab8dc8458",
           "source_url": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates",
@@ -161,7 +180,7 @@
           "quote_hash": "95e9e6c90dca9ce4709247d5b84ca596f0bc265c26c8bf9e155bc4813c3c1b9b"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

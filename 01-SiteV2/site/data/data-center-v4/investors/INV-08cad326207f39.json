@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Conviction Embed 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Conviction Partners 官网称其为面向 AI 原生 Software 3.0 公司的新风险投资机构。队列名称含 Embed；本档案只核实其所属品牌，不把项目名称当作独立法律实体。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "value": "AI 原生 Software 3.0 公司。",
+          "label": "官网披露的投资方向",
+          "source_id": "PROFILE-08cad326207f39-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-1811bc88b6a13090"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "队列名称为 Conviction Embed；官方页面将其置于 Conviction 品牌下，未确认其为独立法律实体。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "value": "Conviction Embed",
+          "source_id": "PROFILE-08cad326207f39-1",
+          "kind": "website",
+          "label": "机构官网",
+          "url": "https://www.conviction.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_title": "Conviction Partners",
+          "source_content_hash": "92fe26f69484624e7c77387df47e50cb9f7ca232205aaee77b1e6e61fc575716",
+          "source_id": "PROFILE-08cad326207f39-1",
+          "source_url": "https://www.conviction.com/",
+          "quote": "Conviction Partners&trade; is a new venture firm purpose-built to serve AI-Native, \"Software 3.0\" companies.",
+          "quote_hash": "04c403069876eda56ece60f091083c83ddc1a4ac082da173e024f78da023c742"
+        },
         {
           "source_id": "FISRC-1811bc88b6a13090",
           "source_url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
@@ -161,7 +188,7 @@
           "quote_hash": "15cdeb52626e3d0522d7cb1d21a7ed845e2cac856054fcdf352272c0d7fb4a8f"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

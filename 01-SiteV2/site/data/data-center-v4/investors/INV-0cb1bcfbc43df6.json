@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "君熠投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "新洁能招股说明书将君熠投资列为业内知名 PE 投资机构；这是历史交易文件中的身份佐证，不代表当前投资组合或基金规模。",
+      "facts": [
+        {
+          "field": "historical_investor_identity",
+          "label": "来源核验",
+          "value": "新洁能招股说明书称君熠投资为业内知名 PE 投资机构。",
+          "source_id": "PROFILE-0cb1bcfbc43df6-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,24 @@
           "source_id": "FISRC-dd4073b84f3b363b"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅核实历史身份，不推断当前投资组合或基金规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-0cb1bcfbc43df6-1",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2020-09-15/1208438905.PDF",
+          "source_title": "新洁能首次公开发行股票招股说明书",
+          "source_content_hash": "cd6c492077f005e2ac21b5d66f3a200aba811501a54753b171828fb0f1660727",
+          "quote": "易辰创投、君熠投资和武岳峰浦江为业内知名的 PE投资机构",
+          "quote_hash": "58e81342606535fe5132ccf8abbe98426d909af31c5837a8ea86bf9b966da698"
+        },
         {
           "source_id": "FISRC-dd4073b84f3b363b",
           "source_url": "https://artivila.com/cn_news/details-17.html",
@@ -161,7 +180,7 @@
           "quote_hash": "72c74f17250529d36a2ee10a0c9e994ac8b919420e86d07d9a22ee79d3e1151b"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

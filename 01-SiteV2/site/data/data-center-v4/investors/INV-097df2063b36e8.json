@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Morrison Seger 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Morrison Seger 官网以 Venture Capital Partners 名义介绍自身，并称其跨多个品牌募集了数千万美元。规模表述按官网原文保留，不外推基金或管理资产口径。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "value": "Venture Capital Partners；官网称曾跨多个品牌募集数千万美元。",
+          "label": "官网自述机构类型",
+          "source_id": "PROFILE-097df2063b36e8-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-2a587e714925b882"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "募集规模仅按官网自述记录，未推断其基金数量或当前管理规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "value": "Morrison Seger",
+          "source_id": "PROFILE-097df2063b36e8-1",
+          "kind": "website",
+          "label": "机构官网",
+          "url": "https://www.morrisonseger.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_title": "Home | Morrison Seger Venture Capital Partners",
+          "source_content_hash": "9d0b0df695fe5251dd113bbbd340ed10a0c3e604c9e50515bc82cb1328361cae",
+          "source_id": "PROFILE-097df2063b36e8-1",
+          "source_url": "https://www.morrisonseger.com/",
+          "quote": "Morrison Seger Venture Capital Partners has raised tens of millions of dollars across various brands, ranging from CPG to SaaS.",
+          "quote_hash": "0cbeadf1d883dc6d5f251eba2a86cf98ab7b01cd636dadbdcf6728bc4767a085"
+        },
         {
           "source_id": "FISRC-2a587e714925b882",
           "source_url": "https://www.morningstar.com/news/business-wire/20260728282605/throne-science-maker-of-smart-toilet-sensor-announces-10-million-series-a-fundraise",
@@ -161,7 +188,7 @@
           "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

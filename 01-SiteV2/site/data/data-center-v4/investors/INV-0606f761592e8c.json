@@ -138,12 +138,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "施罗德资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Schroders Capital 官网将其业务描述为覆盖全球私募市场的投资与组合管理平台，并强调专业化中端市场能力。",
+      "facts": [
+        {
+          "field": "market_focus",
+          "value": "全球私募市场；官网强调专业化中端市场能力。",
+          "label": "官网披露的市场范围",
+          "source_id": "PROFILE-0606f761592e8c-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +154,32 @@
           "source_id": "FISRC-8380bb7b0195ed3e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "当前公司关系以官网 2026 年 10 月 1 日发布的并入 Nuveen 说明为准；本档案不推断并购后的法律组织架构。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "value": "施罗德资本",
+          "source_id": "PROFILE-0606f761592e8c-1",
+          "kind": "website",
+          "label": "机构官网",
+          "url": "https://www.schroderscapital.com/en/global/professional/about-us/"
+        }
+      ],
       "sources": [
+        {
+          "source_title": "About Schroders Capital | Expert edge in private markets",
+          "source_content_hash": "6732ac7c284b7891f5bbb6a364152be11240cfea30060f52a13db0d153985647",
+          "source_id": "PROFILE-0606f761592e8c-1",
+          "source_url": "https://www.schroderscapital.com/en/global/professional/about-us/",
+          "quote": "At Schroders Capital, where we go, we lead. We harness our pioneering track record and specialist, expert edge to identify and transform areas of structural inefficiency and opportunity across",
+          "quote_hash": "9afb616f3b8935a06fcc4d4f23f009103b47b96c54e0ee8a40c341e6d7cf0c7d"
+        },
         {
           "source_id": "FISRC-8380bb7b0195ed3e",
           "source_url": "https://www.ithome.com/0/959/592.htm",
@@ -162,7 +189,7 @@
           "quote_hash": "c78820ac7ddca4cccce27c5fb11be0eed08d6424f794d8d3c1ecac059b716510"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -138,12 +138,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Schneider Electric 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Schneider Electric 2018 年新闻稿披露了面向孵化项目、创业者合作及专业基金的投资计划；仅确认历史创新投资活动，不据此推断当前项目状态。",
+      "facts": [
+        {
+          "field": "historical_investment_initiative",
+          "label": "来源核验",
+          "value": "Schneider Electric 2018 年新闻稿披露计划在孵化项目、创业者合作和专业基金上投资 3 亿至 5 亿欧元。",
+          "source_id": "PROFILE-12389f49f8e144-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +154,24 @@
           "source_id": "FISRC-b7537d2258bce6eb"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "Schneider Electric 2018 年新闻稿披露了面向孵化项目、创业者合作及专业基金的投资计划；仅确认历史创新投资活动，不据此推断当前项目状态。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-12389f49f8e144-1",
+          "source_url": "https://www.se.com/ww/en/about-us/newsroom/news/press-releases/schneider-electric-boosts-its-innovation-ecosystem-with-%E2%80%98schneider-electric-ventures%E2%80%99-to-identify-nurture-and-support-bold-ideas-5d91dd5680564a226033cb19/",
+          "source_title": "Schneider Electric boosts its innovation ecosystem with ‘Schneider Electric Ventures’ to identify, nurture and support bold ideas",
+          "source_content_hash": "fde2494002cc17f7e58fa4dc728f6b74f6f2eb87a733f016e419dbea91c7a683",
+          "quote": "Schneider Electric has committed to investing between 300 and 500 million euros in the coming years in incubation projects, partnerships with entrepreneurs, and specialized funds",
+          "quote_hash": "11dc6658fa5386a1fa729f10a94504ba1acda6c196ed3fa45a9f636495b4a490"
+        },
         {
           "source_id": "FISRC-b7537d2258bce6eb",
           "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
@@ -162,7 +181,7 @@
           "quote_hash": "9a7831070bdba5f579d20ed35e09eb940bab592d983a2cf655934c7fc8b4c706"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
