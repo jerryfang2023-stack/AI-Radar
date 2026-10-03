@@ -14,6 +14,14 @@ function git(cwd, args) {
   return result.stdout.trim();
 }
 
+function samePath(left, right) {
+  const normalize = (value) => {
+    const canonical = fs.realpathSync.native(value);
+    return process.platform === "win32" ? canonical.toLocaleLowerCase() : canonical;
+  };
+  return normalize(left) === normalize(right);
+}
+
 function createRepository() {
   const sandbox = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-workspace-audit-"));
   const repository = path.join(sandbox, "WaveSight");
@@ -44,7 +52,7 @@ test("audit reports a clean merged managed worktree as removable without deletin
 
   assert.equal(result.status, 0, result.stderr || result.stdout);
   const report = JSON.parse(result.stdout);
-  const candidate = report.worktrees.find((item) => item.path === worktree);
+  const candidate = report.worktrees.find((item) => samePath(item.path, worktree));
   assert.equal(report.apply, false);
   assert.equal(candidate.removable, true);
   assert.equal(fs.existsSync(worktree), true);
@@ -67,7 +75,8 @@ test("apply removes only a clean merged worktree inside the managed root", (t) =
 
   assert.equal(result.status, 0, result.stderr || result.stdout);
   const report = JSON.parse(result.stdout);
-  assert.deepEqual(report.removed, [worktree]);
+  assert.equal(report.removed.length, 1);
+  assert.equal(path.basename(report.removed[0]), path.basename(worktree));
   assert.equal(fs.existsSync(worktree), false);
 });
 
@@ -89,7 +98,7 @@ test("apply refuses to remove a dirty managed worktree", (t) => {
 
   assert.equal(result.status, 0, result.stderr || result.stdout);
   const report = JSON.parse(result.stdout);
-  const candidate = report.worktrees.find((item) => item.path === worktree);
+  const candidate = report.worktrees.find((item) => samePath(item.path, worktree));
   assert.equal(candidate.removable, false);
   assert.ok(candidate.blockers.includes("dirty"));
   assert.deepEqual(report.removed, []);
@@ -113,8 +122,8 @@ test("audit invoked inside a linked worktree still identifies the primary reposi
 
   assert.equal(result.status, 0, result.stderr || result.stdout);
   const report = JSON.parse(result.stdout);
-  const candidate = report.worktrees.find((item) => item.path === worktree);
-  assert.equal(report.repository, repository);
+  const candidate = report.worktrees.find((item) => samePath(item.path, worktree));
+  assert.equal(samePath(report.repository, repository), true);
   assert.equal(candidate.primary, false);
   assert.equal(candidate.current, true);
   assert.equal(candidate.removable, false);
@@ -142,7 +151,7 @@ test("apply preserves a clean managed worktree with unique commits", (t) => {
 
   assert.equal(result.status, 0, result.stderr || result.stdout);
   const report = JSON.parse(result.stdout);
-  const candidate = report.worktrees.find((item) => item.path === worktree);
+  const candidate = report.worktrees.find((item) => samePath(item.path, worktree));
   assert.equal(candidate.removable, false);
   assert.ok(candidate.blockers.includes("not_merged"));
   assert.ok(candidate.blockers.includes("unique_commits"));
@@ -190,7 +199,7 @@ test("ignored files prevent worktree removal", (t) => {
 
   assert.equal(result.status, 0, result.stderr || result.stdout);
   const report = JSON.parse(result.stdout);
-  const candidate = report.worktrees.find((item) => item.path === worktree);
+  const candidate = report.worktrees.find((item) => samePath(item.path, worktree));
   assert.equal(candidate.removable, false);
   assert.ok(candidate.blockers.includes("ignored_files"));
   assert.deepEqual(report.removed, []);
