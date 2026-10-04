@@ -246,14 +246,29 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Sea 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "Sea 官网提供集团业务简介；融资披露只列示其若干投资活动，不代表 Sea 设有独立风险投资基金或完整投资组合。",
+      "summary": "Sea Limited 官网称其为 2009 年在新加坡创立的全球科技公司，运营 Garena、Shopee 和 Monee。Astrocade 公告称其 Series A 由 Sea 领投；World Labs 也将 Sea 列为新融资投资者之一。",
+      "facts": [
+        {
+          "field": "company_profile",
+          "label": "公司简介（官网自述）",
+          "value": "Sea Limited（NYSE: SE）称其为 2009 年在新加坡创立的全球科技公司。",
+          "source_id": "PROFILE-7d82e6e9a81fc91a250a"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Astrocade 公告称其 Series A 由 Sea 领投；公告未披露 Sea 的出资金额。",
+          "source_id": "PROFILE-96b209528d3652ac7572"
+        },
+        {
+          "description": "World Labs 的新融资公告将 Sea 列入投资者名单，未说明其领投或出资金额。",
+          "source_id": "PROFILE-4d7b9a2501f1e65449b0"
+        },
         {
           "description": "融资来源记录：Astrocade · 多轮融资 · 2026-05-05 · 本轮领投 · $56M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1811bc88b6a13090"
@@ -269,6 +284,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-7d82e6e9a81fc91a250a",
+          "source_url": "https://www.sea.com/investor/home",
+          "source_title": "Sea | Investor Relations",
+          "source_content_hash": "9cad6c81001c3e3ae36dff92152d29d251d0b7c76ebaa59351ca0706cc1570e2",
+          "quote": "Sea Limited (NYSE: SE) is a global technology company founded in Singapore in 2009.",
+          "quote_hash": "4b73fb12241c75dbac620f07c10a2bec6d35ee8d9a64835be5cadc55a9e4fba0"
+        },
+        {
+          "source_id": "PROFILE-96b209528d3652ac7572",
+          "source_url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
+          "source_title": "Astrocade Raises $56M in New Funding to Build a New Era of Interactive Entertainment | Astrocade Blog",
+          "source_content_hash": "4d84c2a57412fde80ce4152cc28093887d8ba173ef96cb0d628e741997b5a302",
+          "quote": "The funding includes a Series B led by Sequoia Capital and a Series A led by Sea",
+          "quote_hash": "06b5a91a5ea650700f9bfce631406c1f0240eac75ab09bcacb6e82781c928a02"
+        },
+        {
+          "source_id": "PROFILE-4d7b9a2501f1e65449b0",
+          "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+          "source_title": "World Labs Announces New Funding | World Labs",
+          "source_content_hash": "219b5588b944697e8708dd86684a58e3be9e0deb4df332c606d3333db2ddf1a0",
+          "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+          "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
+        },
         {
           "source_id": "FISRC-1811bc88b6a13090",
           "source_url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
@@ -294,7 +333,11 @@
           "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

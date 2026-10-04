@@ -191,14 +191,22 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Team8 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份与投资策略依据 Team8 官网；融资披露只记录投资参与及轮次总额，不推断 Team8 的单独出资额或具体基金实体。",
+      "summary": "Team8 官网将其定位为风险投资基金，结合公司创建与投资，关注网络安全、软件基础设施、金融科技和数字医疗。融资报道显示其领投 Encore AI 的 Series A，Team8 自身也披露领投 Tribal 的种子轮。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 报道 Encore AI 的 3000 万美元 Series A 由 Team8 领投，未披露 Team8 单独出资额。",
+          "source_id": "team8-encore-seriesa-2026"
+        },
+        {
+          "description": "Team8 官网称其领投 Tribal 的 1000 万美元种子轮；未披露 Team8 单独出资额。",
+          "source_id": "team8-tribal-seed-2026"
+        },
         {
           "description": "融资来源记录：Encore AI · A轮 · 2026-07-29 · 本轮领投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3740369ba57f1602"
@@ -209,7 +217,35 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构身份与投资策略依据 Team8 官网；融资披露只记录投资参与及轮次总额，不推断 Team8 的单独出资额或具体基金实体。",
       "sources": [
+        {
+          "source_id": "team8-official-profile",
+          "source_url": "https://team8.vc/about/",
+          "source_title": "About - Team8",
+          "source_content_hash": "1307a20f65b3caefb5af36c8bb101740ce1fac69a6a4388b35d8f910323e008f",
+          "quote": "Team8 is a venture fund with $1.8B in AUM that builds and invests in companies",
+          "quote_hash": "66497dd509d55f536935dbd07a2d5323a57a9068bc8a23b2467c25ba63c898ff"
+        },
+        {
+          "source_id": "team8-encore-seriesa-2026",
+          "source_url": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls/",
+          "source_title": "Encore AI raises $30M to build AI agents that learn from customer calls | TechCrunch",
+          "source_content_hash": "1e8492097f7be84650bf22a225edf7d35e164cd29f5b2d713de9d0b0743b17f5",
+          "quote": "raised $30 million in a Series A round led by Team8",
+          "quote_hash": "bb10047cf1cfea36e847817d7fefba5848782a7c36d16a3ddff39214715b7a21"
+        },
+        {
+          "source_id": "team8-tribal-seed-2026",
+          "source_url": "https://team8.vc/why-we-invested-in-tribal/",
+          "source_title": "Why We Invested in Tribal - Team8",
+          "source_content_hash": "23662e50b046619178547144e33af64838e546772df3d33975ad986dac154c5b",
+          "quote": "We are proud to lead Tribal’s $10 million seed round",
+          "quote_hash": "db91e1993dc7fdcbaf59fcc55ca8092b8390e3e4e6b6306e8c38e0907b200638"
+        },
         {
           "source_id": "FISRC-3740369ba57f1602",
           "source_url": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls",
@@ -227,7 +263,7 @@
           "quote_hash": "1df284c79ca614c60c4a1b8e65ed1520bd918a1fcfcf4c2954e528688d217d4c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

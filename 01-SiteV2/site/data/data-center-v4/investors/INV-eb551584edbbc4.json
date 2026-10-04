@@ -191,14 +191,29 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "金沙江联合资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网明确标注“金沙江联合资本（GSR United Capital）”及其高科技股权投资方向；两则报道列出参投活动，未披露出资额。",
+      "summary": "金沙江联合资本官网称其自 2009 年起专注高科技产业股权投资，关注先进制造、新一代信息技术、产业互联网/数字化企业服务和生物医药等领域。公开报道记录其参与灵御智能和立妙达融资。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资领域",
+          "value": "高科技产业股权投资；官网列出的重点领域包括先进制造、新一代信息技术、产业互联网/数字化企业服务和生物医药。",
+          "source_id": "PROFILE-9111c7ad1387c68ba972"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资报道将金沙江联合资本列为灵御智能天使+轮跟投方；未披露出资额。",
+          "source_id": "PROFILE-1548d9c297ab25d472e6"
+        },
+        {
+          "description": "投资界将金沙江联合资本列为立妙达 A+ 轮共同出资方；未披露出资额。",
+          "source_id": "PROFILE-1727ce195bc8d2f2d093"
+        },
         {
           "description": "融资来源记录：灵御智能 · 天使+轮 · 2026-05-19 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0b807b7fa8b0845a"
@@ -208,8 +223,44 @@
           "source_id": "FISRC-f9d4572f4dc397ba"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "金沙江联合资本（GSR United Capital）",
+          "url": "https://www.gsrunited.com/",
+          "source_id": "PROFILE-9111c7ad1387c68ba972"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-9111c7ad1387c68ba972",
+          "source_url": "https://www.gsrunited.com/",
+          "source_title": "金沙江联合",
+          "source_content_hash": "6ce3c81835d8f4eb67e0a8dcce897b90564906fd2f39ed0a33c64d649a8d1405",
+          "quote": "金沙江联合资本（GSR United Capital）专注于高科技产业股权投资，重点关注先进制造、新一代信息技术、产业互联网/数字化企业服务、生物医药等领域",
+          "quote_hash": "5c195ba32f8441f01ea36cc895f8c3c7ac37a946a36104beaab7056ff34aff79"
+        },
+        {
+          "source_id": "PROFILE-1548d9c297ab25d472e6",
+          "source_url": "https://finance.sina.com.cn/roll/2026-05-19/doc-inhymumf2211979.shtml",
+          "source_title": "灵御智能完成近亿元天使+轮融资，加速具身智能基础设施布局_新浪财经_新浪网",
+          "source_content_hash": "b98bb44f69207edd1d0e1a9c5b9b31075ba0f48e9b59d02392bf84885de7b2b4",
+          "quote": "本轮融资由福田资本领投，力合创投、金沙江联合资本、复利多、楹辉创投、华仓资本跟投，老股东英诺基金、天鹰资本持续加注",
+          "quote_hash": "7e2eccb466a27ee65bf5e6dc9ba46669e8e2d59ae9cf4f59452db9847e45e152"
+        },
+        {
+          "source_id": "PROFILE-1727ce195bc8d2f2d093",
+          "source_url": "https://news.pedaily.cn/202603/561739.shtml",
+          "source_title": "打造AI+机器人全场景解决方案，立妙达完成亿元级A+轮融资_投资界",
+          "source_content_hash": "c11035ba46688fe36d392a3469a7ec6e69fd622c1eec7b8ed05c4a7b2337c957",
+          "quote": "本轮融资由 金沙江联合资本、宏沣资本、爱杭基金、嘉祐基金、鑫诚资本 共同出资。",
+          "quote_hash": "613435c511857287accb6916fdef6263d37bd1b277b20c11911d73730d4e54c0"
+        },
         {
           "source_id": "FISRC-0b807b7fa8b0845a",
           "source_url": "https://finance.sina.com.cn/roll/2026-05-19/doc-inhymumf2211979.shtml",

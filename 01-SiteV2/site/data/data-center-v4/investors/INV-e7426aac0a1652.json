@@ -161,14 +161,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "DCVC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
+      "summary": "DCVC官网介绍其投资深科技公司；Impulse Space官方公告将其列为Series C回归投资者。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Impulse Space官方公告将DCVC列为Series C回归投资者之一。",
+          "source_id": "PROFILE-6dbd8649ee5cbac012ac"
+        },
         {
           "description": "融资来源记录：Odyssey ML · 种子轮 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-413e994d081f8e0f"
@@ -176,6 +180,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-b0dc0cc74259d7554d7b",
+          "source_url": "https://www.dcvc.com/about/",
+          "source_title": "DCVC | About",
+          "source_content_hash": "21b68d06555433d663e48d205d42fdbc237be5f9d1b5a53c98157c6c6d8eb786",
+          "quote": "DCVC is deep tech venture capital. It always has been.",
+          "quote_hash": "11ec9e179c3b479efcd13f430ec95fb217d94393aff1bd9c7efc93cb262f7be9"
+        },
+        {
+          "source_id": "PROFILE-6dbd8649ee5cbac012ac",
+          "source_url": "https://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
+          "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
+          "source_content_hash": "2aed47dfed6a7c422570baf69650871383cf7c2a57e07ee9c583c2faf37ceae9",
+          "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures",
+          "quote_hash": "0d3d43209517e3e3d317885c23cc0c45a34dc5b44a26c0c3126e03ed5efbc22b"
+        },
         {
           "source_id": "FISRC-413e994d081f8e0f",
           "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
@@ -185,7 +205,11 @@
           "quote_hash": "c72c02150af958eba4fc5f78b4a6886cfc8ef25883e8c439f9b74e131010d193"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

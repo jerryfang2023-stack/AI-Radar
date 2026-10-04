@@ -193,14 +193,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "纪源资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位和领域依据纪源资本当前官网；媒体报道仅支持其参与硅基流动 B 轮，融资总额不是纪源资本单独出资额。",
+      "summary": "纪源资本官网介绍其成立于2005年，覆盖早期、成长期和中后期项目，关注工业科技、企业服务、环境与材料、医疗科技和消费科技；媒体报道将其列为硅基流动 B 轮联合投资机构。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "媒体报道硅基流动超20亿元 B 轮由多家机构联合投资，其中包括纪源资本；未披露单独出资额。",
+          "source_id": "jiyuan-siliconflow-seriesb-2026"
+        },
         {
           "description": "融资来源记录：硅基流动 · B轮 · 2026-06-16 · 本轮联合投资 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-879cc82306af58a1"
@@ -211,7 +215,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构定位和领域依据纪源资本当前官网；媒体报道仅支持其参与硅基流动 B 轮，融资总额不是纪源资本单独出资额。",
       "sources": [
+        {
+          "source_id": "jiyuan-official-profile",
+          "source_url": "https://www.jiyuancap.com/",
+          "source_title": "纪源资本",
+          "source_content_hash": "1d72c1b012f73a2b5f7c0d57e313a46f157c286f33955238f65898d3d2241a52",
+          "quote": "纪源资本团队管理规模约300亿人民币，全阶段布局，覆盖具备快速增长潜力的早期、成长期和中后期项目。",
+          "quote_hash": "171f04859dae8d13966c6e4fb9d7ceb4edb599f73f6687c485a48699b589414e"
+        },
+        {
+          "source_id": "jiyuan-siliconflow-seriesb-2026",
+          "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
+          "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”__财经头条",
+          "source_content_hash": "14a2ef39cb3ca39abef7dd53d2574aa95ed3b829fa60643e979daa0f17612c32",
+          "quote": "纪源资本、华登国际、华控基金",
+          "quote_hash": "07557ba9ff97b7df36e58365873c6e1e623d46d31d2756373ff6e96aebc49681"
+        },
         {
           "source_id": "FISRC-879cc82306af58a1",
           "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
@@ -229,7 +253,7 @@
           "quote_hash": "b66c51f927e3b697d5520929115dd73e1dc0a691e559c2552e7f6a867c0c05fc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -191,14 +191,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "First Harmonic 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资者定位来自机构自述；AIUC 活动来自发行人公告。公告未披露 First Harmonic 的出资额。",
+      "summary": "First Harmonic 的官方 LinkedIn 页面将其描述为面向 B2B 创始人的早期投资者，并称会运营 go-to-market 项目。AIUC 官方融资公告将其列为 4000 万美元 Series A 参与方。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官方账号自述的投资方式",
+          "value": "早期投资，并为 B2B 创始人运营 go-to-market 项目。",
+          "source_id": "PROFILE-ec5d4337b07789ad852a"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "AIUC 官方公告将 First Harmonic 列为其 4000 万美元 Series A 参与方；未披露金额。",
+          "source_id": "PROFILE-15e9f3e45ed80478f950"
+        },
         {
           "description": "融资来源记录：Artificial Intelligence Underwriting Company (AIUC) · A轮 · 2026-09-15 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-926b8b12b411de6f"
@@ -208,8 +219,44 @@
           "source_id": "FISRC-e9c3e7b8cb15af82"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官方账号",
+          "value": "First Harmonic",
+          "url": "https://www.linkedin.com/company/first-harmonic",
+          "source_id": "PROFILE-d9bf57e31407e0decad9"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-ec5d4337b07789ad852a",
+          "source_url": "https://www.linkedin.com/company/first-harmonic",
+          "source_title": "First Harmonic | LinkedIn",
+          "source_content_hash": "6958a5cc381a250ff8792ac94d204b61d88a53aa687a280bc0637406e70da513",
+          "quote": "We are early stage investors who run a go-to-market program for B2B founders.",
+          "quote_hash": "491e3445997accdd0df63a1181714aeda1b34008ef0d65c789471b576eec96d0"
+        },
+        {
+          "source_id": "PROFILE-15e9f3e45ed80478f950",
+          "source_url": "https://www.prnewswire.com/news-releases/aiuc-raises-40m-series-a-from-ribbit--first-harmonic-to-build-confidence-infrastructure-for-frontier-ai-302879036.html",
+          "source_title": "AIUC raises $40M Series A from Ribbit &amp; First Harmonic to build confidence infrastructure for frontier AI",
+          "source_content_hash": "a7d1a809bb3da54552da93f6f4731c332a1b7a5ecd6dc71ee3f0e2682540c2ed",
+          "quote": "Artificial Intelligence Underwriting Company (AIUC) has raised a $40 million Series A led by Ribbit Capital, with participation from First Harmonic.",
+          "quote_hash": "57b91a738543de75cc699b9ede90853a5cd1dc164affaebefd7c3ad040650605"
+        },
+        {
+          "source_id": "PROFILE-d9bf57e31407e0decad9",
+          "source_url": "https://www.linkedin.com/company/first-harmonic",
+          "source_title": "First Harmonic | LinkedIn",
+          "source_content_hash": "6958a5cc381a250ff8792ac94d204b61d88a53aa687a280bc0637406e70da513",
+          "quote": "First Harmonic",
+          "quote_hash": "6e22c8b2d36f1aebf300ab15434c66c237cb976dd6ef3195c64af5be5cdac91c"
+        },
         {
           "source_id": "FISRC-926b8b12b411de6f",
           "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
@@ -227,7 +274,7 @@
           "quote_hash": "116deb064ce74c5c8daf6f3b47cc6af150796cebd0c295c4a1dd356fac0bc631"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

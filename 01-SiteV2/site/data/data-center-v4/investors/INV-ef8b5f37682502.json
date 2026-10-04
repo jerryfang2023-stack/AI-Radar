@@ -121,21 +121,82 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "SMRK 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金身份与阶段来自 SMRK 官网自述；Osavul 活动来自被投企业官方文章，未披露 SMRK 单独出资金额。",
+      "summary": "SMRK 官网将其介绍为乌克兰创业投资基金，成立于 2013 年，关注 IT 初创公司的 pre-seed 和 seed 阶段。Osavul 官方融资文章将 SMRK 列入其种子轮投资方。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露的机构类型与成立时间",
+          "value": "乌克兰创业投资基金，官网称其成立于 2013 年。",
+          "source_id": "PROFILE-f0e239d8ba4c0ca401cb"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "重点关注 seed 与 pre-seed 阶段。",
+          "source_id": "PROFILE-b4997797f14feb43b08f"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Osavul 官方文章将 SMRK 列为其种子轮投资方；未披露 SMRK 单独出资额。",
+          "source_id": "PROFILE-8a7568b963167f069fe6"
+        },
         {
           "description": "融资来源记录：Osavul · 历史轮次未披露 · 种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6b10616666cf4c79"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "SMRK",
+          "url": "https://smrk.vc/en/about/",
+          "source_id": "PROFILE-83f84e4f7b7e20e77a95"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-f0e239d8ba4c0ca401cb",
+          "source_url": "https://smrk.vc/en/about/",
+          "source_title": "About us | smrk",
+          "source_content_hash": "85bcad131d821f19153ec02ee876010460750dd1017bf73227bb7135ca08b7c7",
+          "quote": "SMRK is a Ukrainian fund which provides venture investment in startups on different evolution stages. The company was founded in 2013",
+          "quote_hash": "06b32e5dfc226ef855342d5153ec806e1df608c4ba3443afb5a178ea47ffe26e"
+        },
+        {
+          "source_id": "PROFILE-b4997797f14feb43b08f",
+          "source_url": "https://smrk.vc/en/about/",
+          "source_title": "About us | smrk",
+          "source_content_hash": "85bcad131d821f19153ec02ee876010460750dd1017bf73227bb7135ca08b7c7",
+          "quote": "We’re focused on both seed and pre-seed stages.",
+          "quote_hash": "e733d939975e967d73b7f59128046f41030d44c4f351e89b290974d7b6916fdd"
+        },
+        {
+          "source_id": "PROFILE-8a7568b963167f069fe6",
+          "source_url": "https://www.osavul.cloud/blog/osavul-raises-the-next-round",
+          "source_title": "Osavul Raises the Next Round - 3 Million USD or €2.78M Euro",
+          "source_content_hash": "2b74e306af49c5aa84533f9c2cfee8300aca77cd4f39da6bf7a2b83aeda069af",
+          "quote": "receives a seed investment of $3 mln (€2.78 mln) from three European investors: 42CAP , u.ventures , and SMRK .",
+          "quote_hash": "9a8a1d947257d582c0b3e955eec44783cd78c8806697c5ea9df96b821e8f0d6e"
+        },
+        {
+          "source_id": "PROFILE-83f84e4f7b7e20e77a95",
+          "source_url": "https://smrk.vc/en/about/",
+          "source_title": "About us | smrk",
+          "source_content_hash": "85bcad131d821f19153ec02ee876010460750dd1017bf73227bb7135ca08b7c7",
+          "quote": "About us | smrk",
+          "quote_hash": "84a72a0c20aab564a6c1816410464e94023028bcc49c92073635b28cd7ecda85"
+        },
         {
           "source_id": "FISRC-6b10616666cf4c79",
           "source_url": "https://www.osavul.cloud/blog/osavul-raises-the-next-round",
@@ -145,7 +206,7 @@
           "quote_hash": "ddcda1dfa43bd6507551b69d74d929fa36daefb1238aabc289eedc0be6ce0367"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

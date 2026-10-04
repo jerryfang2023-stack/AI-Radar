@@ -139,14 +139,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Samsung Electronics 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录 Samsung 官方半导体新闻稿披露的 Mistral AI 融资活动与战略合作，不作其完整投资布局描述。",
+      "summary": "Samsung 官方公告称其领投 Mistral AI 的 Series D，并获得战略股权；公告将投资与长期技术合作联系起来。本档案仅记录这项公司公告。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Samsung 官方公告称其领投 Mistral AI 的 Series D 融资并取得战略股权。",
+          "source_id": "PROFILE-3e8f6c58599fd3ea467e"
+        },
         {
           "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮领投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4d11ed62a144a3f4"
@@ -154,6 +158,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-3e8f6c58599fd3ea467e",
+          "source_url": "https://semiconductor.samsung.com/news-events/news/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure/",
+          "source_title": "Samsung and Mistral AI Announce Strategic Partnership for Intelligence-Driven Semiconductor Infrastructure | Samsung Semiconductor Global",
+          "source_content_hash": "e2e15d30346818975354dc17f8c8c2cdbde562ff6d435482bd5f779e22a8f126",
+          "quote": "Samsung has also led Mistral AI’s Series D funding round, securing a strategic equity stake to support long-term technology collaboration.",
+          "quote_hash": "3e71a1fa06cae0da005e13eee842d9767029b7f50259db7eddc4e52a9feed90c"
+        },
         {
           "source_id": "FISRC-4d11ed62a144a3f4",
           "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
@@ -163,7 +175,11 @@
           "quote_hash": "bf15e9f88ac00a88606570b08a3efcc424ae66c4b81607e97906e6e2d8899846"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-04"
     }
   }
 }

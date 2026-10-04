@@ -191,14 +191,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Heartfelt 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "HEARTFELT 官网说明早期投资定位，法定声明披露运营网站的公司名称；Tech.eu 将其列入 Cato 2026 年 seed 轮参与方。",
+      "summary": "HEARTFELT 官网自述为面向欧洲和美国初创公司的早期投资基金，重点帮助创始团队从零到一并找到产品市场契合。Tech.eu 将 Heartfelt 列为 Cato 2026 年 seed 轮参与方；其出资额未披露。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述投资阶段与地区",
+          "value": "面向欧洲和美国初创公司进行早期投资。",
+          "source_id": "PROFILE-d9f1ad842601a3e75ff9"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网自述投资定位",
+          "value": "官网将团队描述为早期风险投资专业团队。",
+          "source_id": "PROFILE-512396148923ac6d834d"
+        },
+        {
+          "field": "legal_name",
+          "label": "网站法律声明中的运营主体",
+          "value": "Heartfelt Capital Management GmbH（官网法律声明所列主体）。",
+          "source_id": "PROFILE-a2b8a2fbf38b7ecfba52"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Tech.eu 将 Heartfelt 列为 Cato €6M seed 轮参与方；报道未披露其出资金额。",
+          "source_id": "PROFILE-f3c98b19a521d1c1783f"
+        },
         {
           "description": "融资来源记录：Cato · 种子轮 · 2026-09-07 · 本轮参投 · €6 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-495f39954954d0bc"
@@ -208,8 +231,60 @@
           "source_id": "FISRC-048a7851eadb0513"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "HEARTFELT",
+          "url": "https://heartfelt.capital/",
+          "source_id": "PROFILE-e342b7d55e7af544aecb"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-d9f1ad842601a3e75ff9",
+          "source_url": "https://heartfelt.capital/",
+          "source_title": "HEARTFELT | Europe&#x27;s First Cheque Fund",
+          "source_content_hash": "1f882d49bb1eae24f94b43aa668b7407b599afe66f272c839bc0e85691f7b557",
+          "quote": "We are the first investors for exceptional founders building transformative companies across Europe and the US. We’re passionate about helping founders go from 0 to 1, and achieving product-market fit.",
+          "quote_hash": "a5d196e4c78ed5302397e09a8d4081037ee468a2f1dfb8e1e43d2cab6ea33870"
+        },
+        {
+          "source_id": "PROFILE-512396148923ac6d834d",
+          "source_url": "https://heartfelt.capital/",
+          "source_title": "HEARTFELT | Europe&#x27;s First Cheque Fund",
+          "source_content_hash": "1f882d49bb1eae24f94b43aa668b7407b599afe66f272c839bc0e85691f7b557",
+          "quote": "Our team of 9 full-time investment professionals comes from around the world, bringing complementary backgrounds and extensive experience in early-stage venture capital.",
+          "quote_hash": "2ba38f1622d575165c94bfaf69c0e220a30b3e19f753dee9103740306d78d48e"
+        },
+        {
+          "source_id": "PROFILE-a2b8a2fbf38b7ecfba52",
+          "source_url": "https://heartfelt.vc/contact-legals/legal-notice",
+          "source_title": "Legal Notice",
+          "source_content_hash": "ee1be87485629f68caae8f4013f5d983e41f4f53f5ab890ef6e533ee28e71a1b",
+          "quote": "Provider: Heartfelt Capital Management GmbH",
+          "quote_hash": "4b61bb0cf35acd58930628f734084083d14f423132b36318bd624077d6e4699b"
+        },
+        {
+          "source_id": "PROFILE-f3c98b19a521d1c1783f",
+          "source_url": "https://tech.eu/2026/09/07/cato-raises-eur6m-to-expand-its-ai-platform-for-public-sector-sales/",
+          "source_title": "Cato raises €6M to expand its AI platform for public sector sales - Tech.eu",
+          "source_content_hash": "b1a32867f63b914115dfc8efd4f93c6872308b4819591989fc20284b629f60a5",
+          "quote": "with participation from existing investors Vento, Heartfelt, Moonstone, BHeroes, Alecla7 and Nova Venture, alongside angel investors including the founders of Lexroom, Sibill and Pillar.",
+          "quote_hash": "2b0c3c71ba6c85d8b8ec7e7dc09a1b8002d769941d6cf44ad24204732486fece"
+        },
+        {
+          "source_id": "PROFILE-e342b7d55e7af544aecb",
+          "source_url": "https://heartfelt.capital/",
+          "source_title": "HEARTFELT | Europe&#x27;s First Cheque Fund",
+          "source_content_hash": "1f882d49bb1eae24f94b43aa668b7407b599afe66f272c839bc0e85691f7b557",
+          "quote": "HEARTFELT | Europe’s First Cheque Fund",
+          "quote_hash": "e7f8eaae1bb286bc5c36e2e8966142638ef98d8ea6c263e21e46c49747384f5d"
+        },
         {
           "source_id": "FISRC-495f39954954d0bc",
           "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
@@ -227,7 +302,7 @@
           "quote_hash": "f5c18c6277f0aed3c91b9a6db5a0f53faadb5ba8cc13ac5dd581d682e3a75503"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

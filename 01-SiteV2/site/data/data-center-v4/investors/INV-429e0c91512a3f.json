@@ -139,15 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Pathwork 的发行人公告将 Logos Fund 列为其 seed 轮投资方。本档案只记录该条活动，不扩展到其他同名基金或投资机构。",
-      "summary": "Pathwork 官网的 350 万美元 seed 融资公告将 Logos Fund 列为投资方之一。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Pathwork 的发行公告将 Logos Fund 列为融资参与者；logosfund.com 官方网站展示该名称和“Future Fundamentals”用语。已查看的公开来源未说明其法律载体、管理团队、基金规模或完整投资策略。",
+      "summary": "Logos Fund 官方网站展示了该名称及“Future Fundamentals”主题；Pathwork 的发行公告将 Logos Fund 列为 2025 年种子轮参与者。现有来源不足以补写其法律结构、团队或基金规模，公开投资记录限于已披露的 Pathwork 一项。",
+      "facts": [
+        {
+          "field": "official_presence",
+          "label": "官网公开信息",
+          "value": "Logos Fund 官网展示“Future Fundamentals”主题，但所查看页面未披露更多机构结构信息。",
+          "source_id": "logosfund-official-site"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "公开融资活动",
+          "value": "Pathwork 发行公告列 Logos Fund 为其种子轮参与方之一；领投方为 Costanoa Ventures。",
+          "source_id": "logosfund-pathwork-seed-2025"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Pathwork 的 seed 融资公告将 Logos Fund 列为该轮投资方之一。",
-          "source_id": "pathwork-seed-logos-fund-2026-10-03"
+          "description": "Pathwork 于 2025 年 9 月披露 350 万美元种子轮，由 Costanoa Ventures 领投，Logos Fund 等机构参与；未披露 Logos Fund 的单独出资额。",
+          "source_id": "logosfund-pathwork-seed-2025"
         },
         {
           "description": "融资来源记录：Pathwork · 种子轮 · 2025-09-09 · 本轮参投 · $3.5M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -155,14 +168,26 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "本档案严格限于官网可见品牌信息和 Pathwork 发行人披露的一项融资活动，不将其他同名机构材料合并。",
       "sources": [
         {
-          "source_id": "pathwork-seed-logos-fund-2026-10-03",
-          "source_url": "https://www.pathwork.com/resources/announcing-pathworks-seed-investment",
-          "source_title": "Announcing Pathwork’s Seed Investment led by Costanoa Ventures",
-          "source_content_hash": "c2b6d6bceae7dd932c96bc80ab9ed7b4fb3362a22250a4bf6a69d4f276fe8175",
-          "quote": "Today, Blake and I are thrilled to announce our $3.5M seed investment round led by Costanoa Ventures and joined by Logos Fund, American Family Ventures, Meridian Ventures",
-          "quote_hash": "3470ac9deb03e186502e46e8fab782259de6e92767307805885586e805ba4942"
+          "source_id": "logosfund-official-site",
+          "source_url": "https://logosfund.com/",
+          "source_title": "Logos Fund",
+          "source_content_hash": "f0ba9c2245f0d1ad80ba0437e441c5bed95c8edee14a753e17b5e1ef63c584bb",
+          "quote": "Future Fundamentals",
+          "quote_hash": "c333b67785aa12c238bee4808b877110bdf771b26b77e4f24ea5f0131fe03408"
+        },
+        {
+          "source_id": "logosfund-pathwork-seed-2025",
+          "source_url": "https://www.prnewswire.com/news-releases/pathwork-raises-3-5m-to-replace-decades-old-insurance-workflows-with-ai-302550577.html",
+          "source_title": "Pathwork Raises $3.5M to Replace Decades-Old Insurance Workflows with AI",
+          "source_content_hash": "2f43cc30270d0c218042abcb5ab8c3618d1fc8dd74cb856b04f278bc7aa6b74b",
+          "quote": "with participation from Logos Fund, American Family Ventures, Meridian Ventures, and prominent industry angels",
+          "quote_hash": "dfb0bbb7bc04084d5faded0b15c0386e92c4226869274b86383dc3abbf3ca33e"
         },
         {
           "source_id": "FISRC-1bd630ac44028d8a",

@@ -191,14 +191,29 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "乾融资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网确认乾融投资控股集团及旗下私募基金管理公司；融资报道未披露“乾融资本”参与方对应的具体法人、基金载体或金额。",
+      "summary": "乾融控股官网称江苏乾融投资控股集团有限公司成立于 2010 年，业务覆盖天使、风险、股权投资、并购、母基金和产业基金，并披露旗下基金管理公司及基金情况。融资报道以“乾融资本”列出其参投活动；具体出资载体未披露。",
+      "facts": [
+        {
+          "field": "organization_and_fund_management",
+          "label": "官网披露的集团及基金业务",
+          "value": "2010 年成立；业务包括天使投资、风险投资、股权投资、并购、母基金和产业基金。官网列出旗下两家私募基金管理公司及管理的基金。",
+          "source_id": "PROFILE-e133a8a31ced4ec1ecb5"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界将“乾融资本”列为深朴智能 Pre-A+ 融资参与方；未披露出资额。",
+          "source_id": "PROFILE-0bf596b147188cd813fe"
+        },
+        {
+          "description": "融资报道将“乾融资本”列为极佳视界 B1 轮参与方；未披露出资额。",
+          "source_id": "PROFILE-9536bc9492dff25ff14e"
+        },
         {
           "description": "融资来源记录：深朴智能 · Pre-A+轮 · 2026-09-04 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a65ce425f6a14bd6"
@@ -208,8 +223,44 @@
           "source_id": "FISRC-4782a6093d519a4d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "乾融投资控股集团",
+          "url": "https://www.jsqr.com.cn/",
+          "source_id": "PROFILE-e133a8a31ced4ec1ecb5"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-e133a8a31ced4ec1ecb5",
+          "source_url": "https://www.jsqr.com.cn/",
+          "source_title": "乾融投资控股集团",
+          "source_content_hash": "f5c79e53ac39b0aca3046e66d1616c0c075a5144bc237b0796c54bcac31be12a",
+          "quote": "江苏乾融投资控股集团有限公司，于2010年正式成立，业务涵盖天使投资、风险投资、股权投资、并购、母基金、产业基金于一体，贯穿投资全产业链、全生命周期。旗下现有江苏乾融资本管理有限公司、苏州乾融创禾创新资本管理有限公司两家私募基金管理公司，并管理有二十三支私募投资基金。",
+          "quote_hash": "882c63a17d9fc3b269e6840f54b90a9c5504a387135b9f6af3e8c88cee0d81ef"
+        },
+        {
+          "source_id": "PROFILE-0bf596b147188cd813fe",
+          "source_url": "https://news.pedaily.cn/202609/568532.shtml",
+          "source_title": "深朴智能完成数亿元Pre-A+轮融资，面向人类生活空间打造AI原生具身智能_投资界",
+          "source_content_hash": "daa4da077b4ae8e63c2f6bca29db7322554f251f019b73686fae98bd969047d7",
+          "quote": "本轮融资获得 珂玺资本、上海科创旗下知识产权基金、金浦投资、亳州产投、上城资本、乾融资本，以及老股东线性资本的共同支持",
+          "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
+        },
+        {
+          "source_id": "PROFILE-9536bc9492dff25ff14e",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+          "source_title": "首发| 极佳视界，一个月融资25亿|融资|华为_新浪科技_新浪网",
+          "source_content_hash": "56bba06023f6b28b5a4241f2153bc4e108c0fce771a137f6e06098ae74757aea",
+          "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、乾融资本、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+          "quote_hash": "a9d3c79b14298f438828a94cf2eb3088528d6b88d628bc4f4c9fd7f3a826694e"
+        },
         {
           "source_id": "FISRC-a65ce425f6a14bd6",
           "source_url": "https://news.pedaily.cn/202609/568532.shtml",

@@ -137,21 +137,52 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Castleknight 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "Nscale 官方公告支持 Castleknight 品牌的参与记录；SEC 文件确认存在 CastleKnight Management LP，但未证明该笔 Nscale 活动由该 LP 或特定基金持有。",
+      "summary": "Nscale 官方融资公告将 Castleknight 列为其 2026 年 Pre-IPO 可转换融资参与方。美国证券申报文件列有名称相近的 CastleKnight Management LP；本档案按队列品牌记录单项活动，不把投资归属扩展到文件中的具体基金或关联实体。",
+      "facts": [
+        {
+          "field": "public_name",
+          "label": "SEC 申报文件列出的名称",
+          "value": "SEC Schedule 13G 中列有 CastleKnight Management LP。",
+          "source_id": "PROFILE-7d2a92a7006ba95c36bb"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Nscale 官方公告将 Castleknight 列为其 33.6 亿美元 Pre-IPO 可转换融资参与方；未披露其单独出资额。",
+          "source_id": "PROFILE-0b57c217d9149279c6b2"
+        },
         {
           "description": "融资来源记录：Nscale Limited · Pre-IPO · 2026-09-25 · 本轮参投 · $3.36b。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-060d60f0bcc42b9d"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-7d2a92a7006ba95c36bb",
+          "source_url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001776661/9a029b2e-fa6e-4e7f-b721-be2a558c79e3.pdf",
+          "source_title": "SEC Schedule 13G, Advantage Solutions Inc. (filing 0000919574-26-001905)",
+          "source_content_hash": "7642db17c16d38fa4b58886a05ddb88a103e0fa8fd1cb1c06fb0a9dec04746c6",
+          "quote": "Names of Reporting Persons: CastleKnight Management LP",
+          "quote_hash": "1dc5f5af07d78c37a719d9093e3dbf7cb8e223900e5ee109e1c11c31c355d73c"
+        },
+        {
+          "source_id": "PROFILE-0b57c217d9149279c6b2",
+          "source_url": "https://www.nscale.com/press-releases/pre-ipo-convertible-financing",
+          "source_title": "Nscale Raises $3.36 Billion in Pre-IPO Convertible Financing | Nscale",
+          "source_content_hash": "9194dea938db859cf719910c546c5b015923c76e8d81c3d2d8b5bd8731c3a490",
+          "quote": "Other investors that participated in the financing include Davidson Kempner Capital Management, Qube Research & Technologies (QRT), Context Capital Management, Longaeva Partners L.P., Wellington Management, Castleknight, Ghisallo Capital Management, LionTree Investment Fund, L.P., Javelin Venture Partners, and Irving Investors.",
+          "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -161,7 +192,7 @@
           "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

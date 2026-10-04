@@ -186,14 +186,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "贵阳金投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "以公开报道中“贵阳金投公司”与融资披露“贵阳金投”的品牌层级进行记录；没有把该名称映射到具体下属基金或出资主体。",
+      "summary": "贵阳人才集团报道使用“贵阳金投公司”名称，并称其与人才集团均为贵阳功能性国有企业；投资界报道在极佳视界融资公告中使用短名“贵阳金投”。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界报道将贵阳金投列为极佳视界 15 亿元 B1 轮共同投资方之一；未披露单独金额。",
+          "source_id": "guiyang-jintou-jiji-seriesb1-2026"
+        },
         {
           "description": "融资来源记录：极佳视界 · B1轮 · 2026-04-16 · 本轮参投 · 15亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a1fb846b5355af64"
@@ -204,7 +208,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "以公开报道中“贵阳金投公司”与融资披露“贵阳金投”的品牌层级进行记录；没有把该名称映射到具体下属基金或出资主体。",
       "sources": [
+        {
+          "source_id": "guiyang-jintou-public-identity",
+          "source_url": "https://www.gyrcjt.com/xwzx/gsxw/content_2161",
+          "source_title": "贵阳人才集团与贵阳金投公司开展交流座谈_集团要闻_新闻中心_贵阳人才集团",
+          "source_content_hash": "4ff41bf9046fd7e38fa00ce7ae0eb01c7da1473210389a4d42d93d8e56543290",
+          "quote": "此次座谈，标志着贵阳两家功能性国有企业在服务地方发展的关键要素",
+          "quote_hash": "4389ceff222991e46b7eead5f39a4f3741aa2af46f17d75bf11852f46011476e"
+        },
+        {
+          "source_id": "guiyang-jintou-jiji-seriesb1-2026",
+          "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+          "source_title": "首发| 极佳视界，一个月融资25亿_投资界",
+          "source_content_hash": "b7157b6db1da9d0f3fcf8c4355e250cb6450179ec51c4a40c306b1f752d3c332",
+          "quote": "贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+          "quote_hash": "4269df22edb11ec151162c7ad17fb892e1bbb55496b9246890750f56a9ae02d8"
+        },
         {
           "source_id": "FISRC-a1fb846b5355af64",
           "source_url": "https://news.pedaily.cn/202604/562806.shtml",
@@ -222,7 +246,7 @@
           "quote_hash": "a9d3c79b14298f438828a94cf2eb3088528d6b88d628bc4f4c9fd7f3a826694e"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -461,14 +461,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Maverick Silicon 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据法律顾问的交易公告记录 Maverick Silicon 品牌级身份和一笔明确投资参与；公告没有说明该名称对应的具体基金或单独支票金额。",
+      "summary": "Latham & Watkins 的2026年公告将 Maverick Silicon 描述为半导体基础设施投资者，并记载其参与 Point2 Technology 的 Series B 融资延展。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Latham & Watkins 于2026年8月10日称，Point2 Technology Series B 融资延展由 LB Investment 领投，并有 Maverick Silicon 等现有投资者继续参与；1.36亿美元为 Series B 累计融资额，不是 Maverick Silicon 出资额。",
+          "source_id": "maverick-silicon-point2-seriesb-2026"
+        },
         {
           "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮参投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f84ad840508b39"
@@ -483,7 +487,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据法律顾问的交易公告记录 Maverick Silicon 品牌级身份和一笔明确投资参与；公告没有说明该名称对应的具体基金或单独支票金额。",
       "sources": [
+        {
+          "source_id": "maverick-silicon-latham-investor-identity-2026",
+          "source_url": "https://www.lw.com/en/news/2026/08/latham-advises-on-leading-ai-infra-startup-point2-series-b-funding",
+          "source_title": "Latham Advises on Leading AI Infra Startup Point2 Series B Funding",
+          "source_content_hash": "3ad2b143435f272333d0ab6dbcdc25babade7b115dbb9a8c381a68fe05e45d7d",
+          "quote": "Firm represents the leading semiconductor infra investor Maverick Silicon on its investment in the interconnect solutions leader.",
+          "quote_hash": "5c6691aabbe2671c6dbb0f95f7557cdf07e007fcd2223bff5daae634eb2d7fdb"
+        },
+        {
+          "source_id": "maverick-silicon-point2-seriesb-2026",
+          "source_url": "https://www.lw.com/en/news/2026/08/latham-advises-on-leading-ai-infra-startup-point2-series-b-funding",
+          "source_title": "Latham Advises on Leading AI Infra Startup Point2 Series B Funding",
+          "source_content_hash": "3ad2b143435f272333d0ab6dbcdc25babade7b115dbb9a8c381a68fe05e45d7d",
+          "quote": "with new strategic participation from Arm and continued support from existing investors including Maverick Silicon.",
+          "quote_hash": "10368b42e68c635906e0fcea9b82e16ab1eb5031983e5fa6960a0112bb32500a"
+        },
         {
           "source_id": "FISRC-98f84ad840508b39",
           "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
@@ -509,7 +533,7 @@
           "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

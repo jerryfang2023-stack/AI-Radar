@@ -139,15 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本条依据 Starcloud 发布、经 Business Wire 分发的融资稿存档；其参与方名单列出 776 Ventures。本档案只确认这一轮活动，不扩写机构完整背景。",
-      "summary": "Starcloud 发布的一则 Series A 融资新闻稿列出 776 Ventures 为参与方之一。本档案仅记录该条公开融资活动，不补写机构团队、策略或管理规模。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "队列使用名称“776 Ventures”；Seven Seven Six 官方网站以“Seven Seven Six”及“776”呈现其早期 VC 品牌，并在组合页列出 Starcloud；Via Satellite 报道把 776 Ventures 列为 Starcloud 融资参与者。证据支持品牌与公开组合的关联，但不据此推定法律实体名称或基金结构。",
+      "summary": "Seven Seven Six 官网自述为部署风险投资的技术公司，官方组合页列出 Starcloud；Via Satellite 报道将 776 Ventures 列为 Starcloud 2026 年 1.7 亿美元 Series A 的参投方。投资份额未披露，融资总额不归为单一投资方出资。",
+      "facts": [
+        {
+          "field": "firm_description",
+          "label": "机构自述",
+          "value": "Seven Seven Six 官方首页将自身描述为“部署风险投资的技术公司”。",
+          "source_id": "776-sevensevensix-home"
+        },
+        {
+          "field": "portfolio_example",
+          "label": "公开组合样本",
+          "value": "Seven Seven Six 官方组合页列有 Starcloud。",
+          "source_id": "776-sevensevensix-portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Starcloud 发布的 Series A 新闻稿将 776 Ventures 列为 1.7 亿美元融资的参与方之一。",
-          "source_id": "starcloud-series-a-776-2026-10-03"
+          "description": "Via Satellite 将 776 Ventures 列为 Starcloud 2026 年 3 月 1.7 亿美元 Series A 的其他投资者之一；未披露其单独出资额。",
+          "source_id": "776-starcloud-seriesa-2026"
         },
         {
           "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮参投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -155,14 +168,34 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开来源支持其风险投资品牌和一项 Starcloud 组合/融资参与记录；没有据此推定法律实体、单独投资额或完整组合。",
       "sources": [
         {
-          "source_id": "starcloud-series-a-776-2026-10-03",
-          "source_url": "https://markets.financialcontent.com/lightport.lightport8/article/bizwire-2026-3-30-starcloud-raises-170m-series-a-at-11bn-valuation-led-by-benchmark-and-eqt-ventures",
-          "source_title": "CORRECTING and REPLACING Starcloud Raises $170M Series A at $1.1bn Valuation Led by Benchmark and EQT Ventures",
-          "source_content_hash": "cfc50432be3a626dea6bd0c9b47f31157f85daa28dc6bc79f4572b666a5aa658",
-          "quote": "The heavily oversubscribed round also saw participation from major global funds and strategic partners, including NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, FUSE, Manhattan West, and Monolith Power Systems.",
-          "quote_hash": "0e9476ec67d9da0d4b4384c7fe13371e175b75b01357bd4b3cf0ba4823c4ce04"
+          "source_id": "776-sevensevensix-home",
+          "source_url": "https://www.sevensevensix.com/",
+          "source_title": "Seven Seven Six — A technology company that deploys venture capital",
+          "source_content_hash": "d89352c14bf84cd18f5698910527d06d7979bf78340bb88c5f4dc753ca02b1cc",
+          "quote": "A Tech Company That Deploys Venture Capital",
+          "quote_hash": "9f4c2693a7ae56ae55259189c9f43346841858351180c00f2573e7955ba5377f"
+        },
+        {
+          "source_id": "776-sevensevensix-portfolio",
+          "source_url": "https://sevensevensix.com/portfolio/",
+          "source_title": "Seven Seven Six — The 776 Community is making things people love",
+          "source_content_hash": "a014c9253141a09cca8552461325191b44dfa5363bc0ed787b3c91c005c6b6a5",
+          "quote": "Starcloud www.starcloud.com",
+          "quote_hash": "2f148561613ba473677425c09b3234cfd9576a93d799fdbca827c612c93795ae"
+        },
+        {
+          "source_id": "776-starcloud-seriesa-2026",
+          "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+          "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans - Via Satellite",
+          "source_content_hash": "371dea10d0160b19f7af02856d9341032c72d638ef347dfaabbaaf6b82be34e8",
+          "quote": "Other investors included NFX , Nebular , Y Combinator , Adjacent , 776 Ventures , Fuse Ventures , Manhattan West , and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
+          "quote_hash": "018ee389325aac0cf89b073b78322826303329ed1f9a5d8a147f9008928211c7"
         },
         {
           "source_id": "FISRC-f80a0b6f2f7f63f8",

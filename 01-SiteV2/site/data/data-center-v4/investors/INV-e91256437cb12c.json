@@ -122,14 +122,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Sam Altman 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录 Volantis 官网当前对支持者的公开列示；页面没有说明投资日期、金额或投资载体，不代表完整履历或投资组合。",
+      "summary": "Volantis 官网当前将 Sam Altman 列入其支持者名单。该页面没有给出其投资时间、金额或投资载体，本档案仅保留这一项公司自述。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Volantis 官网将 Sam Altman 列入公司支持者名单；未披露对应投资的金额、日期或投资载体。",
+          "source_id": "PROFILE-aa80968da6210cb67526"
+        },
         {
           "description": "融资来源记录：Volantis · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-11814bcbad089244"
@@ -137,6 +141,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-aa80968da6210cb67526",
+          "source_url": "https://volantissemi.ai/",
+          "source_title": "Volantis | Photonic AI Infrastructure for 10T+ Model Inference",
+          "source_content_hash": "2c21a328dff7107bb3ec9b4bc79ffe5437f013dc832cf642c466f557cefeff22",
+          "quote": "Backed by Sam Altman",
+          "quote_hash": "6f07e55033eb0b071de3d16ddfacd5862d106d2c636a14cae6e3609380f76fdf"
+        },
         {
           "source_id": "FISRC-11814bcbad089244",
           "source_url": "https://valueaddvc.com/pulse/volantis-88m-series-a-photonic-ai-2026",
@@ -146,7 +158,11 @@
           "quote_hash": "033d2fddfcd9a13af0b6223abdcaca26023d13744e11337f5a63743f13eb507a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "本档案只记录 Volantis 官网公开列示的支持者身份，不构成完整职业履历。",
+      "last_verified_at": "2026-10-04"
     }
   }
 }

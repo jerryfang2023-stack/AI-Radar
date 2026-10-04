@@ -121,21 +121,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "建发新兴产业股权投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网与被投方融资公告；按公开品牌名称记录，不扩展到未披露的基金产品。",
+      "summary": "建发新兴投资官网以“C&D Emerging Industry Equity Investment”介绍建发集团旗下专业股权资产管理机构；ShengShu Technology公告将该机构列为A+轮追加投资方。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "ShengShu Technology融资公告将C&D Emerging Industry Equity Investment列为Series A+追加投资方。",
+          "source_id": "shengshu-series-a-plus-cnd"
+        },
         {
           "description": "融资来源记录：生数科技 · 历史轮次未披露 · A+轮原有股东追加投资。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed80aa770ae50f7c"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据机构官网与被投方融资公告；按公开品牌名称记录，不扩展到未披露的基金产品。",
       "sources": [
+        {
+          "source_id": "cnd-emerging-investment-official",
+          "source_url": "https://jianfacapital.com/en",
+          "source_title": "厦门建发新兴投资",
+          "source_content_hash": "ada87562f525bb2944478dd65861c4abacde56f900b9eaaaf6d5087bc672f9af",
+          "quote": "C&D Emerging Industry Equity Investment",
+          "quote_hash": "15aead046d81b1521db3890f99fced5c0bdd69879815d6749b78c232c4c33237"
+        },
+        {
+          "source_id": "shengshu-series-a-plus-cnd",
+          "source_url": "https://www.prnewswire.com/news-releases/shengshu-technology-completes-series-a-funding-of-over-rmb-600-million-302679760.html",
+          "source_title": "ShengShu Technology Completes Series A+ Funding of Over RMB 600 Million",
+          "source_content_hash": "5d41aeb7106d175ddbe1278ecc6d65461bf9b81c756b4eb73f63c69f4eab3566",
+          "quote": "C&D Emerging Industry Equity Investment",
+          "quote_hash": "15aead046d81b1521db3890f99fced5c0bdd69879815d6749b78c232c4c33237"
+        },
         {
           "source_id": "FISRC-ed80aa770ae50f7c",
           "source_url": "https://www.prnewswire.com/news-releases/shengshu-technology-completes-series-a-funding-of-over-rmb-600-million-302679760.html",
@@ -145,7 +169,7 @@
           "quote_hash": "b5865ae83ac1f25b7336da19c26c0d11c7f93195923efbad4a5eb836e3c4c176"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

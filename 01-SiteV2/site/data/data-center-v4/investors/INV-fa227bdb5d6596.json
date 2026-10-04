@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Rho 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据Rho官方简介及被投方Zenskar官方FAQ；只记录公开品牌名称和已披露交易，不推定具体基金或法律主体。",
+      "summary": "Rho官网称其自1981年起投资不同成长阶段的创新企业；Zenskar官方FAQ称Rho是其2026年4月1,500万美元Series A领投方之一。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Zenskar官方FAQ称其2026年4月完成1,500万美元Series A，并将Rho列为领投方之一。",
+          "source_id": "zenskar-series-a-rho"
+        },
         {
           "description": "融资来源记录：Zenskar · A轮 · 2026-04-17 · 本轮领投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d87b08783c0a062f"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据Rho官方简介及被投方Zenskar官方FAQ；只记录公开品牌名称和已披露交易，不推定具体基金或法律主体。",
       "sources": [
+        {
+          "source_id": "rho-official-investor",
+          "source_url": "https://www.rho.com/",
+          "source_title": "Rho.com",
+          "source_content_hash": "78ea7cc7c0168a68f9768e07898d30a476454c329fb3a25d1ae95c91dcd3caa0",
+          "quote": "Since 1981, Rho has been investing in innovation at all stages of growth.",
+          "quote_hash": "69146f2afcb564c4ee3555d367b114c8d6ab19aade4242391e62753e39c6fad3"
+        },
+        {
+          "source_id": "zenskar-series-a-rho",
+          "source_url": "https://www.zenskar.com/faq",
+          "source_title": "Zenskar FAQs | Everything You Need to Know",
+          "source_content_hash": "5c42d9e2d9b877de3326ecf45049ad9509bd7b6eee46f9df519069ad16c897c5",
+          "quote": "closed a $15 million Series A in April 2026 led by Susquehanna International Group, Bessemer Venture Partners, Shine Capital, and Rho",
+          "quote_hash": "50669f9d125475eb584f06f780a0c9aecedb7aa19f0c217307f470a51d1714d5"
+        },
         {
           "source_id": "FISRC-d87b08783c0a062f",
           "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
@@ -161,7 +185,7 @@
           "quote_hash": "13a213a58f9d56d4c606db97e416ac8976cfb1c4b35d7633d5d1c4e9a47b1895"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

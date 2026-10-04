@@ -191,16 +191,16 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "A* 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
+      "summary": "A*官网将其描述为早期风险投资机构；本档案只记录明确标为A*的Intelligence交易，不与A*z合并。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Intelligence · 种子轮 · 2026-08-03 · 本轮参投 · $7.9 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资来源将A*列为Intelligence相关融资的投资参与方。",
           "source_id": "FISRC-3fa34b4b7b9a1a77"
         },
         {
@@ -211,10 +211,18 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-da9e02b8376535ed308c",
+          "source_url": "https://www.a-star.co/",
+          "source_title": "A* - Guiding Outliers From Idea To IPO",
+          "source_content_hash": "5939baff9e5c6b54f5f284fcf1eccdcbc3e44ee0800753e92abf1685c820dc1e",
+          "quote": "A* is an early stage venture capital firm that is leading the shift from transactional capital to meaningful partnerships.",
+          "quote_hash": "6b3b3c53b2af2a234118e33d4f509d9804c4943dde3f33ec7fff50f5c09961bc"
+        },
+        {
           "source_id": "FISRC-3fa34b4b7b9a1a77",
           "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
-          "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
-          "source_content_hash": "0633a814981ef4fd",
+          "source_title": "Design Arena creators raise $7.9 million to bring taste to AI models | TechCrunch",
+          "source_content_hash": "1144f8198bc2da41e90c4d4bf22f4718b90931f2f9f678ef42b6438c7180f040",
           "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others",
           "quote_hash": "20be01adf24a3391c5fa5e6bebfa4ca95802560254df872449efba35e111922b"
         },
@@ -227,7 +235,11 @@
           "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

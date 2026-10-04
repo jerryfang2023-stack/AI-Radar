@@ -139,75 +139,47 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "coverage_note": "官网法律信息页为寻求种子阶段投资的发行人和创业者提供信息；未据此推断基金结构、团队或当前条款。",
-      "summary": "Liberty City Ventures 官网列示其位于纽约，页面面向寻求种子阶段投资的发行人和创业者。该页面未提供团队、策略或法律主体的完整资料。",
+      "coverage_status": "activity_only",
+      "coverage_note": "Neko Health 官方融资公告将 Liberty City Ventures 列为新投资者；目前只记录该公开交易参与，不据此扩写该机构的投资策略或基金信息。",
+      "summary": "Neko Health 官方公告称 Liberty City Ventures 是其 2026 年 7 月 700 百万美元 Series C 的新投资者之一。公告未披露 Liberty City Ventures 的单独投资金额。",
       "facts": [
         {
-          "field": "headquarters",
-          "label": "官网列示地点",
-          "value": "New York, New York",
-          "source_id": "lcv_location"
-        },
-        {
-          "field": "stage",
-          "label": "官网说明的募资阶段",
-          "value": "Seed stage",
-          "source_id": "lcv_home"
+          "field": "public_round_participation",
+          "label": "公开融资参与",
+          "value": "Neko Health 官方公告将 Liberty City Ventures 列为 Series C 新投资者。",
+          "source_id": "libertycity-neko-seriesc-2026"
         }
       ],
       "milestones": [],
       "track_record": [
         {
+          "description": "Neko Health 于 2026 年 7 月公布的 700 百万美元 Series C 将 Liberty City Ventures 列为新投资者之一；融资总额不代表该机构单独出资。",
+          "source_id": "libertycity-neko-seriesc-2026"
+        },
+        {
           "description": "融资来源记录：Neko Health · C轮 · 2026-07-15 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3581a245f48a1be6"
         }
       ],
-      "contacts": [
-        {
-          "kind": "email",
-          "label": "公开邮箱",
-          "value": "info@libertycityventures.com",
-          "source_id": "lcv_contact"
-        },
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "Liberty City Ventures 官网",
-          "url": "https://www.libertycityventures.com/",
-          "source_id": "lcv_home"
-        }
-      ],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "当前可核实信息限于 Neko Health 官方公告中的投资者披露。",
       "sources": [
         {
-          "source_id": "lcv_home",
-          "source_url": "https://www.libertycityventures.com/",
-          "source_title": "Liberty City Ventures | lcv-website",
-          "source_content_hash": "af59914e6a79d256900b13a4ed92fa1f7c3f054bfa004fb1bbc2a0dbfe5922e3",
-          "quote": "entrepreneurs seeking seed stage investments, and not potential investors.",
-          "quote_hash": "1ecc9aa9c1a9b0bf29a54b106985f8588a58729da37f550c3ef5ef4d5d029c24"
-        },
-        {
-          "source_id": "lcv_location",
-          "source_url": "https://www.libertycityventures.com/",
-          "source_title": "Liberty City Ventures | lcv-website",
-          "source_content_hash": "af59914e6a79d256900b13a4ed92fa1f7c3f054bfa004fb1bbc2a0dbfe5922e3",
-          "quote": "New York, New York\ninfo@libertycityventures.com\nLIBERTY CITY VENTURES LEGAL INFORMATION\nThe information on these pages is intended solely for the benefit of issuers and entrepreneurs seeking seed stage investments, and not potential investors.",
-          "quote_hash": "54ebcd11fa5895d3dfaa578487c364ad283e9436554fa6310c4c2c7c93b67bff"
-        },
-        {
-          "source_id": "lcv_contact",
-          "source_url": "https://www.libertycityventures.com/",
-          "source_title": "Liberty City Ventures | lcv-website",
-          "source_content_hash": "af59914e6a79d256900b13a4ed92fa1f7c3f054bfa004fb1bbc2a0dbfe5922e3",
-          "quote": "info@libertycityventures.com\nLIBERTY CITY VENTURES LEGAL INFORMATION\nThe information on these pages is intended solely for the benefit of issuers and entrepreneurs seeking seed stage investments, and not potential investors.",
-          "quote_hash": "92466ce208835e355042e531ae92a70ecf8a273bf0867e258d76881ee4135340"
+          "source_id": "libertycity-neko-seriesc-2026",
+          "source_url": "https://www.nekohealth.com/se/en/press/neko-health-raises-usd700m-series-c-ahead-of-us-launch",
+          "source_title": "Neko Health raises $700m Series C ahead of US launch",
+          "source_content_hash": "524c25d643f4103f813b7fde00992d271692c53f14348546bf64d36cf27e2e15",
+          "quote": "alongside new backers including Liberty City Ventures, Positive Sum, and BDT & MSD.",
+          "quote_hash": "36a5f9d287e4d0c6d6e4fe6153632a4134c99aeed68adfdf31662c99ff7fd306"
         },
         {
           "source_id": "FISRC-3581a245f48a1be6",
           "source_url": "https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/",
-          "source_title": "Daniel Ek&#039;s body-scanning startup Neko Health raises another $700M | TechCrunch",
-          "source_content_hash": "40ca924a819846d5287010aec297d731a005acb0641e045fed43f90723c67807",
+          "source_title": "Daniel Ek&#8217;s body-scanning startup Neko Health raises another $700M",
+          "source_content_hash": "84b4354178a09925",
           "quote": "Other investors in Neko Health’s latest round include Atomico, General Catalyst, Lakestar, Liberty City Ventures, Positive Sum, and BDT & MSD.",
           "quote_hash": "45b0acb47dea211ecb169731a68de716cb882c326671dfb0fee956f83a5ff028"
         }

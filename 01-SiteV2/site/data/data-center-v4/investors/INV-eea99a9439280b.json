@@ -137,21 +137,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "G Squared 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份与策略来自官网自述；Replit 融资公告仅支持其被列名为参与方，不补写该笔投资的工具或金额。",
+      "summary": "G Squared 官网称其成立于2011年，专注于成长阶段科技公司，并开创直接二级交易投资方式。Replit 官方融资公告将 G Squared 列为其投资方。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网披露的成立时间与策略",
+          "value": "官网称其成立于2011年，开创直接二级交易，并与成长中的科技公司合作。",
+          "source_id": "PROFILE-48c0507c38076585efe9"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Replit 官方融资公告将 G Squared 列入投资方；公告未披露其单独投资金额。",
+          "source_id": "PROFILE-1498ce1597bfd2e4025a"
+        },
         {
           "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投 · $400M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-00ed3d8fd701898b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "G Squared",
+          "url": "https://gsquared.com/",
+          "source_id": "PROFILE-8ef7a5ba22dd911b7224"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-48c0507c38076585efe9",
+          "source_url": "https://gsquared.com/",
+          "source_title": "Home - G Squared",
+          "source_content_hash": "953fe8c81b9a9cae60017972162bdc4cfa833cf9b9c7f880b2faf27b01352be3",
+          "quote": "G Squared was founded in 2011 to meet this moment – pioneering direct secondaries and partnering with companies as they navigate the path from breakthrough success to enduring leadership.",
+          "quote_hash": "de68b0f0cb07efb409d8cce1d09c6756234cddc7aad939e29f239c0ce1152a6a"
+        },
+        {
+          "source_id": "PROFILE-1498ce1597bfd2e4025a",
+          "source_url": "https://replit.com/blog/replit-raises-400-million-dollars",
+          "source_title": "The Future is Actually Very Human | Replit",
+          "source_content_hash": "d920d9a4e9b858eccf9dfaac555ebd303ce63a49a8da8028bd394526c24bdbd3",
+          "quote": "Investors include Georgian, G Squared, Prysm Capital, 1789 Capital, YC, Coatue, a16z, Craft Ventures, and Qatar Investment Authority (QIA), among others.",
+          "quote_hash": "cdb8d4f05ad2a0794f1ce34b05e02aa9c9d9117f4649d9effd2b9e5f90bb8d00"
+        },
+        {
+          "source_id": "PROFILE-8ef7a5ba22dd911b7224",
+          "source_url": "https://gsquared.com/",
+          "source_title": "Home - G Squared",
+          "source_content_hash": "953fe8c81b9a9cae60017972162bdc4cfa833cf9b9c7f880b2faf27b01352be3",
+          "quote": "Home - G Squared",
+          "quote_hash": "5aad9c174fdffb1e68bb230414fd7ff82eb98d72c26cddf77f446defa6bf5cae"
+        },
         {
           "source_id": "FISRC-00ed3d8fd701898b",
           "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
@@ -161,7 +208,7 @@
           "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

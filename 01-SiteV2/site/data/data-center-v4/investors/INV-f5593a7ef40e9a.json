@@ -191,14 +191,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Michael Dell 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "June AI 2026年8月融资公告以 Dell Technologies 创办人、董事长兼 CEO 身份识别 Michael Dell，并将其列为参与融资的个人之一；公告没有披露其个人出资额。",
+      "summary": "June AI 的2026年8月 Pre-Seed 融资公告将 Michael Dell 列为参与方，并在公告发布时称其为 Dell Technologies 创办人、董事长兼 CEO。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "June AI 公告列 Michael Dell 为其 Pre-Seed 融资的参与方之一，未披露他的个人出资额。",
+          "source_id": "michael-dell-june-ai-preseed-2026"
+        },
         {
           "description": "融资来源记录：Volta Infra Holdings Ltd. · A轮 · 2026-08-04 · 本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-21a1d5a2dbf2a3b1"
@@ -209,7 +213,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "现有公司公告支持其姓名、公开身份及融资参与；未推断出资金额。",
       "sources": [
+        {
+          "source_id": "michael-dell-june-ai-preseed-2026",
+          "source_url": "https://www.globenewswire.com/news-release/2026/08/03/3337641/0/en/june-ai-emerges-from-stealth-to-reinvent-enterprise-software-implementation-for-the-ai-era.html",
+          "source_title": "June AI Emerges From Stealth to Reinvent Enterprise",
+          "source_content_hash": "ca9eb0131cab35e6a65bf72b71802af86a595d775f50a10bdcb25eacce45081c",
+          "quote": "with participation from a group of major enterprise software leaders including Michael Dell, founder, chairman and CEO of Dell Technologies; Diane Greene",
+          "quote_hash": "4342316e0c4d5b3b8f1cb8785a34e6de86c7897ef1969d222cfb3429399e8305"
+        },
         {
           "source_id": "FISRC-21a1d5a2dbf2a3b1",
           "source_url": "https://news.bloomberglaw.com/artificial-intelligence/nvidia-dell-back-ai-cloud-startup-volta-at-2-4-billion-value",
@@ -227,7 +243,7 @@
           "quote_hash": "2da1801b6e6d65189c50cbae4b364a1131f6f08f7df143614e7c30aa55f3e4d1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -179,18 +179,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "summary": "“水木清华校友基金”与清华官方资料所称“水木清华校友种子基金”名称相近，但现有证据不足以确认二者为同一法律主体或基金产品。该记录在融资活动中与硅基流动、容芯致远等交易关联，不能仅凭名称相似合并至已核验的种子基金档案。",
-      "facts": [
-        {
-          "field": "identity_status",
-          "label": "主体身份",
-          "value": "待核验：需基金全称、管理人或官方披露确认与“水木清华校友种子基金”的关系。",
-          "source_id": "shuimu_name_candidate"
-        }
-      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按清华校友总会使用的“水木清华校友基金”名称记录；不将其与名称相近的“水木清华校友种子基金”合并为同一法律主体。容芯致远融资来源未披露单独出资额。",
+      "summary": "清华校友总会称水木清华校友基金是帮助在校学生和校友创业的“清华人自己的创业基金”，提供初始资金、创业辅导和投后咨询；投资界将其列为容芯致远天使轮跟投方。",
+      "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界报道水木清华校友基金参与容芯致远数亿元天使轮跟投；未披露单独出资额。",
+          "source_id": "shuimu-rongxin-angel-2026"
+        },
         {
           "description": "融资来源记录：容芯致远 · 天使轮 · 2026-05-08 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ceee1629da3e3cce"
@@ -201,17 +201,26 @@
         }
       ],
       "contacts": [],
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "名称近似仅作为核验线索；暂不复用相似基金的背景、联系方式或投资组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "按清华校友总会使用的“水木清华校友基金”名称记录；不将其与名称相近的“水木清华校友种子基金”合并为同一法律主体。容芯致远融资来源未披露单独出资额。",
       "sources": [
         {
-          "source_id": "shuimu_name_candidate",
-          "source_url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/1",
-          "source_title": "水木清华校友种子基金 - 清华校友三创大赛",
-          "source_content_hash": "7f13412f6a00aad1e56001ae286f6b67ee532078473cddc30cf494f199e1523d",
-          "quote": "清华官方页面使用的完整名称为“水木清华校友种子基金”；这不足以证明简称相似的其他数据库记录与其为同一基金。",
-          "quote_hash": "b64f06d2936d1d4929247e8dd14101b56133c60d0c69717f12ef69d9abecf06b"
+          "source_id": "shuimu-alumni-fund-tsinghua",
+          "source_url": "https://www.tsinghua.org.cn/info/1016/14511.htm",
+          "source_title": "校友走访｜汤和松：创业和投资的若干思考-清华校友总会",
+          "source_content_hash": "3a42f5ab9039e98ee08dfda604e8fbc983de78334c13aeabb890aaadcf401e0e",
+          "quote": "水木清华校友基金，清华人自己的创业基金，旨在帮助在校学生和校友创业",
+          "quote_hash": "ec3c508c1829d07148389c433fd2928cc0014f7bf418abc96824d6a29dc612ad"
+        },
+        {
+          "source_id": "shuimu-rongxin-angel-2026",
+          "source_url": "https://news.pedaily.cn/202605/563553.shtml",
+          "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资_投资界",
+          "source_content_hash": "29dcd08b2c1e67ab1702a6941deedb5e705d37f6240d44a71a254f7c793a89fd",
+          "quote": "水木清华校友基金、梅花创投等跟投",
+          "quote_hash": "74307603a265f4f4224044fd24bbf1576ed5dcc26ece59fd248c21633a4a6945"
         },
         {
           "source_id": "FISRC-ceee1629da3e3cce",
@@ -230,7 +239,7 @@
           "quote_hash": "ee72104da8e93385beaee36bae5f714884b696b63cb2cd5a5f5497a905763997"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

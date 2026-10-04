@@ -162,14 +162,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Daniel Gross 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅据个人网站和Suno官方融资公告记录身份及一项投资活动；未加入未核实的雇佣关系或履历。",
+      "summary": "Daniel Gross的个人网站自述为早期风险投资者；Suno官方2024年融资公告将Daniel Gross列入其1.25亿美元融资的合作伙伴名单。本档案只记录该公开投资活动，不补写其他职业或履历。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Suno官方公告称其于2024年5月完成1.25亿美元融资，并将Daniel Gross列入合作伙伴名单。",
+          "source_id": "suno-series-b-official"
+        },
         {
           "description": "融资来源记录：Suno · 历史轮次未披露 · 参投B轮融资。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-92bdc04603fa5ff2"
@@ -180,7 +184,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅据个人网站和Suno官方融资公告记录身份及一项投资活动；未加入未核实的雇佣关系或履历。",
       "sources": [
+        {
+          "source_id": "daniel-gross-personal-site",
+          "source_url": "https://danielgross.com/",
+          "source_title": "Daniel Gross",
+          "source_content_hash": "dd7cdc1904f8b855733c97de769e93846f937550173f7c40c873258fbc2b01ca",
+          "quote": "Early stage venture investor, often with Nat Friedman",
+          "quote_hash": "b362aee5f0eec98d60d0220875d182d49d47eecd5a1cde72e8793e9920907db2"
+        },
+        {
+          "source_id": "suno-series-b-official",
+          "source_url": "https://suno.com/blog/fundraising-announcement-may-2024",
+          "source_title": "Suno | Suno has raised $125 million",
+          "source_content_hash": "90d11a583dbe82b68dd213957381af80e47d6e959bc218bdf5e833bf69da1bd7",
+          "quote": "including Lightspeed Venture Partners, Nat Friedman and Daniel Gross, Matrix and Founder Collective",
+          "quote_hash": "71a678445696b05fbce3b3f26950ee5dacb189e0a652acbf1d69ee9b70fcced4"
+        },
         {
           "source_id": "FISRC-92bdc04603fa5ff2",
           "source_url": "https://multiples.vc/private-comps/suno",
@@ -198,7 +222,7 @@
           "quote_hash": "7943cec2d5e9d7c123b32e44f2ec6b48e8d2637141106ae3b7062aeb54fa4869"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

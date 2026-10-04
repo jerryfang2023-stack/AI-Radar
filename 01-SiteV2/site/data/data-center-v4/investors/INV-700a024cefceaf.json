@@ -139,36 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅按 ZeroDrift 发行方融资公告中的公开投资者名称保留参投记录；未将其映射到其他同名主体，也未补写未经确认的策略、基金或法律实体信息。",
-      "summary": "ZeroDrift 的发行方融资公告将“Active Capital”列为其 $10M 种子轮融资的投资者之一。本档案只保留公告中的原称及公开参投记录。",
+      "coverage_status": "researched",
+      "coverage_note": "Active Capital 官网将其定位为 pre-seed 风险投资机构；ZeroDrift 官方融资公告和公司投资者页面均列出 Active Capital。融资公告没有披露其单独投资金额。",
+      "summary": "Active Capital 是一家面向技术创始人的 pre-seed 风险投资机构，官网称通常在企业最早期投资。ZeroDrift 于 2026 年 6 月的 1,000 万美元 seed 公告将 Active Capital 列为参投方之一；此金额是整轮融资总额，不是该机构单独出资。",
       "facts": [
         {
-          "field": "public_investment",
-          "label": "公开参投披露",
-          "value": "ZeroDrift 发行方公告将 Active Capital 列为 $10M 种子轮参投方之一；公告未披露具体基金载体。",
-          "source_id": "FISRC-5827c25c8bbe0d20"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Active Capital 官网称其为 pre-seed 风险投资机构，通常较早参与企业融资。",
+          "source_id": "active-capital-official-profile"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "ZeroDrift 发行方公告称 Active Capital 参与其 $10M 种子轮融资；公告未说明对应的法律实体或基金载体。",
+          "description": "ZeroDrift 的 2026 年 6 月融资公告将 Active Capital 列为 1,000 万美元 seed round 的投资者之一；未披露其单独出资额。",
+          "source_id": "active-capital-zerodrift-seed-2026"
+        },
+        {
+          "description": "融资来源记录：ZeroDrift · 种子轮 · 2026-06-02 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5827c25c8bbe0d20"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构定位来自 Active Capital 官网；交易关系由 ZeroDrift 官方公告确认。",
       "sources": [
         {
-          "source_id": "FISRC-5827c25c8bbe0d20",
-          "source_url": "https://www.globenewswire.com/news-release/2026/06/02/3305264/0/en/ZeroDrift-Raises-10M-Seed-Round-to-Build-the-Compliance-Firewall-for-AI.html",
+          "source_id": "active-capital-official-profile",
+          "source_url": "https://active.vc/",
+          "source_title": "Active Capital",
+          "source_content_hash": "52225fe31e6df9359a9415cbf11024d174f8f0816848df9b3d14edd443e036ba",
+          "quote": "Active Capital is a pre-seed venture capital firm.",
+          "quote_hash": "18298c9c0a659349cf94d7e41efb874c41785ed98408b5cbc3bfbd13236d4e0b"
+        },
+        {
+          "source_id": "active-capital-zerodrift-seed-2026",
+          "source_url": "https://www.globenewswire.com/news-release/2026/06/02/3305264/0/en/zerodrift-raises-10m-seed-round-to-build-the-compliance-firewall-for-ai.html",
           "source_title": "ZeroDrift Raises $10M Seed Round to Build the Compliance",
           "source_content_hash": "c1c7332e1706365088147fb1de401298715a0f9996781c4a1d7ce32ea49d7b29",
           "quote": "Investors include a16z speedrun, Reign Ventures, PitchDrive Ventures, U&I Ventures, Active Capital, Geek Ventures, Converge Ventures, Atlas SGR, Founders Future, and others.",
           "quote_hash": "22c9303e353466cccbd29cc3afb3f0d00a300b56627951c3b941581be21673de"
+        },
+        {
+          "source_id": "FISRC-5827c25c8bbe0d20",
+          "source_url": "https://www.globenewswire.com/news-release/2026/06/02/3305264/0/en/zerodrift-raises-10m-seed-round-to-build-the-compliance-firewall-for-ai.html",
+          "source_title": "ZeroDrift Raises $10M Seed Round to Build the Compliance Firewall for AI",
+          "source_content_hash": "9d95b1327146185c",
+          "quote": "Investors include a16z speedrun, Reign Ventures, PitchDrive Ventures, U&I Ventures, Active Capital, Geek Ventures, Converge Ventures, Atlas SGR, Founders Future, and others.",
+          "quote_hash": "22c9303e353466cccbd29cc3afb3f0d00a300b56627951c3b941581be21673de"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

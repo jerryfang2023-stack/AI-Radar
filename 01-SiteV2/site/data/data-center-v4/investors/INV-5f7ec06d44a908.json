@@ -139,19 +139,50 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Animo Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "ANIMO 官网披露早期投资策略；doxx.net 的融资发行公告列出 Animo Ventures 为 Series A 参与方。该轮总额由 Andreessen Horowitz 领投，不归属为 Animo Ventures 单独出资。",
+      "summary": "ANIMO 官网称其主要在 ideation 到早期增长阶段进行 50 万至 250 万美元投资。doxx.net 于 2026 年 10 月披露的 3,800 万美元 Series A 由 Andreessen Horowitz 领投，Animo Ventures 参与；发行公告未披露该机构的个人份额。",
+      "facts": [
+        {
+          "field": "investment_stage_and_range",
+          "label": "投资阶段与金额范围",
+          "value": "ANIMO 官网自述其在 ideation 至早期 traction 阶段投资 50 万至 250 万美元。",
+          "source_id": "animo-investment-focus-2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "doxx.net 的 2026 年 10 月融资新闻稿列 Animo Ventures 为 3,800 万美元 Series A 参与方；该金额是融资总额。",
+          "source_id": "animo-doxx-seriesa-2026"
+        },
         {
           "description": "融资来源记录：doxx.net · A轮 · 2026-10-01 · 本轮参投 · $38 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e94be4fcbb396d33"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网策略和被投企业融资披露分别支持机构定位和一项投资记录；未把融资总额归属给 Animo Ventures。",
       "sources": [
+        {
+          "source_id": "animo-investment-focus-2026",
+          "source_url": "https://animo.vc/",
+          "source_title": "ANIMO VC",
+          "source_content_hash": "ba0fad5725f5e3865b4026ca85a461535aa4a3ae8bf9edfc422d722531a00a15",
+          "quote": "We go early and we go big, investing $500k to $2.5m from ideation to early traction.",
+          "quote_hash": "200a77116f0dc8b40f44f2ee76d222eb97da98763526fa44375c71758436aaff"
+        },
+        {
+          "source_id": "animo-doxx-seriesa-2026",
+          "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-10-1-doxxnet-raises-38-million-led-by-andreessen-horowitz-to-launch-agentic-defined-networking",
+          "source_title": "doxx.net Raises $38 Million, Led by Andreessen Horowitz, to Launch Agentic Defined Networking",
+          "source_content_hash": "4ba4a64a27ca934e67a3d76c0d252b99089d609cbccad8dbe48ca60877021291",
+          "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+          "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
+        },
         {
           "source_id": "FISRC-e94be4fcbb396d33",
           "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-10-1-doxxnet-raises-38-million-led-by-andreessen-horowitz-to-launch-agentic-defined-networking",

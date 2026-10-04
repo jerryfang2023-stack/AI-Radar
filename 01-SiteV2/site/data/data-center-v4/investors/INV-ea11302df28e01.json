@@ -179,14 +179,29 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "矽芯投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "上市公司公告披露主体简称及管理人登记；公开融资材料披露参与活动，未披露其出资额。",
+      "summary": "上市公司公告将杭州矽芯股权投资有限公司简称为“矽芯投资”，披露其从事股权投资并登记为私募基金管理人。晶能微电子官网和星海图融资报道记录了其参与 Pre-A 轮及 B+ 轮融资的公开案例。",
+      "facts": [
+        {
+          "field": "legal_identity_and_registration",
+          "label": "公告披露的主体与登记",
+          "value": "杭州矽芯股权投资有限公司（简称矽芯投资），2019 年成立，经营范围含股权投资，登记编码 P1070768。",
+          "source_id": "PROFILE-00a8c5e63c3b367f6bf2"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "晶能微电子官网披露 2022 年 Pre-A 轮由华登国际领投，矽芯投资跟投。",
+          "source_id": "PROFILE-d5681fd1fffd4e157c50"
+        },
+        {
+          "description": "星海图 B+ 轮融资报道将矽芯投资列入参与机构；未披露出资金额。",
+          "source_id": "PROFILE-c6045f2f46899837c4c9"
+        },
         {
           "description": "融资来源记录：星海图 · B+轮 · 2026-04-02 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a614400d44a7041"
@@ -197,7 +212,35 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-00a8c5e63c3b367f6bf2",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2020-12-25/1208981240.PDF",
+          "source_title": "英飞特电子（杭州）股份有限公司关于参与投资产业基金的公告",
+          "source_content_hash": "fc8bc250d44f534280d692bd9ba0b2bafb0441831bc045d7b83cce45fdcae01e",
+          "quote": "基金管理人名称：杭州矽芯股权投资有限公司（以下简称“矽芯投资”）。企业类型：有限责任公司（自然人投资或控股），注册资本1000万元人民币，成立日期2019年10月08日，经营范围：股权投资。矽芯投资已在中国证券投资基金业协会办理了私募基金管理人登记备案，登记编码为P1070768。",
+          "quote_hash": "552d265cd65c17d6f70b2ab6a33d1455b2deea4f0f3a526870b1c98085ee58d0"
+        },
+        {
+          "source_id": "PROFILE-d5681fd1fffd4e157c50",
+          "source_url": "https://www.geener.cn/energy/company",
+          "source_title": "公司概况-晶能微电子",
+          "source_content_hash": "5aa1305f5b4326afd842cbeac5a1953c5c4368555d3c33ca378c310fd5c0b72e",
+          "quote": "2022年11月，完成Pre-A轮融资由华登国际领投，高榕资本、矽芯投资等跟投",
+          "quote_hash": "3697720b74d995742a1df5cef51263dfd9ec45cff3495b1d2e2c0e7ad7a0ed02"
+        },
+        {
+          "source_id": "PROFILE-c6045f2f46899837c4c9",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-04-02/doc-inhtaktw2108873.shtml",
+          "source_title": "星海图又融资20亿，估值200亿_新浪财经_新浪网",
+          "source_content_hash": "ac08f5afdc4fa3a9ffa25b3dd85d6f67225cb06e068ad37238fc4eaccd4a4e57",
+          "quote": "华登科技、 蓝思科技 、矽芯投资、时代伯乐、航发基金等产业巨头",
+          "quote_hash": "38059a4bb6641b5fb937bd21850fc4d20985ad4b45f6a7c2643543f0234fd955"
+        },
         {
           "source_id": "FISRC-7a614400d44a7041",
           "source_url": "https://news.pedaily.cn/202604/562366.shtml",
@@ -215,7 +258,7 @@
           "quote_hash": "3697720b74d995742a1df5cef51263dfd9ec45cff3495b1d2e2c0e7ad7a0ed02"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

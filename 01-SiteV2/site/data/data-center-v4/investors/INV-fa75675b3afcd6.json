@@ -121,21 +121,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Alex Solomon 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据Supabase官方投资者页面和2021年Series A公告；仅记录来源明确给出的投资者身份及关联描述，不补写其他履历。",
+      "summary": "Supabase官网将Alex Solomon列为个人投资者，并标注PagerDuty联合创办人；Supabase的Series A官方博客也在本轮投资者名单中列出他。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Supabase官网将Alex Solomon列入个人投资者名单；其2021年Series A公告再次列出Alex Solomon，并标注PagerDuty联合创办人。",
+          "source_id": "supabase-series-a-alex-solomon"
+        },
         {
           "description": "融资来源记录：Supabase · 历史轮次未披露 · Series A 参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-06495943979d9573"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据Supabase官方投资者页面和2021年Series A公告；仅记录来源明确给出的投资者身份及关联描述，不补写其他履历。",
       "sources": [
+        {
+          "source_id": "supabase-investor-list",
+          "source_url": "https://supabase.com/company",
+          "source_title": "One of the world&#x27;s fastest-growing open source communities | Supabase",
+          "source_content_hash": "4160acb040b1a197cf6df76e81228f1c2335e8bdffb3bd210670ce16bcc9f145",
+          "quote": "Alex Solomon PagerDuty Cofounder",
+          "quote_hash": "6b50ae84e4495b7f3f99a24468eadede69b819c7038670d2bc4174079f64c1a7"
+        },
+        {
+          "source_id": "supabase-series-a-alex-solomon",
+          "source_url": "https://supabase.com/blog/series-a",
+          "source_title": "Supabase $30m Series A",
+          "source_content_hash": "a6b28d52610c17aa0e58cea8c1d5259cf13e95913840999ba2f24ae18c7af3b1",
+          "quote": "Alex Solomon (PagerDuty cofounder)",
+          "quote_hash": "5d1cab97d661cd4f010834cd16a75afde3075cebca87efe917aacb8e8afaf16e"
+        },
         {
           "source_id": "FISRC-06495943979d9573",
           "source_url": "https://tracxn.com/d/companies/supabase/__Eu-Qv0PGLlKKydFQbekQazgnqS4w5jeSDfFyg6oGPjg/funding-and-investors",
@@ -145,7 +169,7 @@
           "quote_hash": "89a8b625c71e9fa8a5847cde592bf5d2ab150b083a437599da71e581763c5c7d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

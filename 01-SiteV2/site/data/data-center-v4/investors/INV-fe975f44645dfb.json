@@ -137,21 +137,60 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "建投华科 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据建投华科官网和北京市投资促进服务局；按官网公开名称记录。",
+      "summary": "建投华科官网自述其于2015年转型为专注信息技术产业的专业股权投资企业，并称其专注于新一代信息技术的直接股权及私募股权投资。北京市投资促进服务局披露建投华科参与光轮智能2026年融资。本档案不扩展为完整投资组合。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "新一代信息技术；开展直接股权投资、私募股权投资及产业企业运营（官网自述）。",
+          "source_id": "jict-investment-profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "北京市投资促进服务局披露光轮智能完成10亿元A++及A+++轮融资，并列出建投华科为参与机构。",
+          "source_id": "guanglun-a-plus-plus"
+        },
         {
           "description": "融资来源记录：光轮智能 · A+++轮 · 2026-03-11 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a7ac3aedf1b697d8"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据建投华科官网和北京市投资促进服务局；按官网公开名称记录。",
       "sources": [
+        {
+          "source_id": "jict-official-identity",
+          "source_url": "https://www.jictinv.com/wap/about/introduction/",
+          "source_title": "公司简介-建投华科",
+          "source_content_hash": "689e2328a6ae20733c5cdb7b9a00b1b4718c373db272e41522df8eaa692aa227",
+          "quote": "建投华科投资股份有限公司（简称“建投华科”）是中国建银投资有限责任公司（简称“中国建投”）旗下的股权投资企业",
+          "quote_hash": "56da6026df19e9dde27ad79adb3dc97008efe4977f604ee6fb9418da53461d5b"
+        },
+        {
+          "source_id": "jict-investment-profile",
+          "source_url": "https://www.jictinv.com/wap/about/introduction/",
+          "source_title": "公司简介-建投华科",
+          "source_content_hash": "689e2328a6ae20733c5cdb7b9a00b1b4718c373db272e41522df8eaa692aa227",
+          "quote": "专注在新一代信息技术产业开展直接股权投资、私募股权投资、产业企业运营等",
+          "quote_hash": "cf7d31ab5af13992b7c6e61b110308adfc1c674643c3b25ebf67c6b49664ec12"
+        },
+        {
+          "source_id": "guanglun-a-plus-plus",
+          "source_url": "https://invest.beijing.gov.cn/zwgk/sqgzdt/202603/t20260313_4556669.html",
+          "source_title": "融资10亿！海淀诞生全球首个具身数据独角兽企业——_市区工作动态_北京市投资促进服务局",
+          "source_content_hash": "a2a99f8fc15d1ae2672134efaff8152c7fc115a657ebcd10dfe0cef2f0d273ef",
+          "quote": "本轮融资引入了新希望集团、鼎邦投资、奥克斯、鼎石资管等顶级产业方，以及建投华科、国方创新等政府及国资背景资本支持。",
+          "quote_hash": "efd3a507f7b083c35e195007260335697f7976b5d61d601b45535017fb4fd88e"
+        },
         {
           "source_id": "FISRC-a7ac3aedf1b697d8",
           "source_url": "https://news.pedaily.cn/202603/561585.shtml",
@@ -161,7 +200,7 @@
           "quote_hash": "41d6c3188c9986e479c68e45629be28b3168e3539bcec1e8c8610bf502d45a21"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

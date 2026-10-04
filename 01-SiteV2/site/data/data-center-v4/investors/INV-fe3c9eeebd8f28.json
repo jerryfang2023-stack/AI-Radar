@@ -138,21 +138,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Triatomic 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据Triatomic官方机构说明及Volantis发行方融资公告；未推断具体基金或投资金额。",
+      "summary": "Triatomic Capital官网将其介绍为早期投资转型科技公司的研究驱动型风险投资机构；Volantis公告列出Triatomic为2026年Series A参与方。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Volantis于2026年10月公布的8800万美元Series A将Triatomic列为参与方。",
+          "source_id": "volantis-series-a-triatomic"
+        },
         {
           "description": "融资来源记录：Volantis · A轮 · 2026-10-01 · 本轮参投 · $88 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-23ff312a843cd717"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据Triatomic官方机构说明及Volantis发行方融资公告；未推断具体基金或投资金额。",
       "sources": [
+        {
+          "source_id": "triatomic-official-profile",
+          "source_url": "https://www.triatomic.ai/",
+          "source_title": "Triatomic Capital | Venture Capital",
+          "source_content_hash": "0ead5c33cb4054b0aed2e297ece8cc1553cf84775fd438bf5d7e4d241442a445",
+          "quote": "Triatomic Capital is a research-driven venture firm that invests in transformative technology companies from their earliest stages.",
+          "quote_hash": "7161adb59c23e24dd47231e99f9d79aceda5f77e075e09aa3373901442ed3ad1"
+        },
+        {
+          "source_id": "volantis-series-a-triatomic",
+          "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+          "source_title": "Volantis Raises $88M Series A to Demolish the AI Memory Wall With Photonics",
+          "source_content_hash": "bf05c258251cc2a394818005201729517a13ba2799747e88ff3a48e355b1fa5f",
+          "quote": "with participation from John Doerr, VXI Capital, Triatomic and Susa Ventures",
+          "quote_hash": "2da44dbcebe4bfa9bb98c78f5e465ad49971edc1b5eb23e78d6ad9c6ceda7422"
+        },
         {
           "source_id": "FISRC-23ff312a843cd717",
           "source_url": "https://manufacturing.economictimes.indiatimes.com/amp/news/hi-tech/volantis-raises-88-million-for-tech-to-connect-ai-memory-chips/134637121",
@@ -162,7 +186,7 @@
           "quote_hash": "a1ef202bcb6d18d1a770246380dd9194312dc19a8dc29021582ba70d18cf47c1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

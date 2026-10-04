@@ -191,14 +191,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Apollo 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录Nscale公告所称“funds managed by Apollo”；未将其推断为单一基金或特定Apollo法律主体。",
+      "summary": "Apollo Global Management投资者关系官网以Apollo Global Management, Inc.标示集团；Nscale公告将其IPO前可转换融资的支持者表述为“funds managed by Apollo”。本档案保留该品牌层级表述，不指定具体Apollo基金或管理实体。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Nscale公告称其IPO前可转换融资获“funds managed by Apollo”支持。",
+          "source_id": "nscale-pre-ipo-apollo"
+        },
         {
           "description": "融资来源记录：Nscale Limited · Pre-IPO · 2026-09-25 · 本轮参投 · $3.36b。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-060d60f0bcc42b9d"
@@ -209,7 +213,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅记录Nscale公告所称“funds managed by Apollo”；未将其推断为单一基金或特定Apollo法律主体。",
       "sources": [
+        {
+          "source_id": "apollo-official-ir",
+          "source_url": "https://ir.apollo.com/",
+          "source_title": "Apollo Global Management, Inc. (APO)",
+          "source_content_hash": "3a5adb9e5a92276ce079cfe0ec155f37ec26247c3861827ab6bb560e2982ad78",
+          "quote": "Apollo Global Management, Inc. (APO)",
+          "quote_hash": "393d7b34b821364c008a101ddcea912e2ab81c610ffd59ec9d0a0714ac8fb416"
+        },
+        {
+          "source_id": "nscale-pre-ipo-apollo",
+          "source_url": "https://www.nscale.com/press-releases/pre-ipo-convertible-financing",
+          "source_title": "Nscale Raises $3.36 Billion in Pre-IPO Convertible Financing | Nscale",
+          "source_content_hash": "9194dea938db859cf719910c546c5b015923c76e8d81c3d2d8b5bd8731c3a490",
+          "quote": "funds managed by Apollo, Citadel, Hudson Bay Capital",
+          "quote_hash": "36504e0a953efd12adf4548a75b8eceb1ecfa919621958ffd078ecacc9ea0b76"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -227,7 +251,7 @@
           "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -139,18 +139,29 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Partech 官方融资新闻稿将 Cédric O 列为 NP Company 本轮天使投资人之一；本档案只记该项投资活动，不扩写其完整履历。",
-      "summary": "Partech 2026 年 6 月关于 NP Company 600 万欧元 pre-seed 的官方新闻稿，将 Cédric O 列为天使投资人之一。本档案只记录这项公开活动，不把新闻稿中的其他人物简介扩展为完整个人履历。",
-      "facts": [],
-      "milestones": [
+      "coverage_status": "researched",
+      "coverage_note": "Partech 的融资公告确认 Cédric O 是 NP Company 2026 年 6 月 €6M pre-seed 的天使投资人，但同一公告错误地称他为 Mistral AI 联合创始人。Mistral 官方创始人页列出 Arthur Mensch、Guillaume Lample 和 Timothee Lacroix；法国经济部官方页面确认 Cédric O 曾负责数字转型和电子通信事务。本档案保留有来源支持的投资与公职事实，并明确校正错误职衔。",
+      "summary": "Cédric O 曾任法国负责数字转型与电子通信事务的国务秘书。Partech 2026 年 6 月的融资公告将他列为 NP Company €6M pre-seed 的天使投资人。该公告同时错误称他为 Mistral AI 联合创始人；Mistral 官方创始人页列出的三人是 Arthur Mensch、Guillaume Lample 和 Timothee Lacroix，本档案不重复该错误归属。",
+      "facts": [
         {
-          "date": "2026-06-02",
-          "description": "Partech 关于 NP Company 600 万欧元 pre-seed 的官方公告将 Cédric O 列为天使投资人之一。",
-          "source_id": "partech-npco-cedric-o-2026-10-03"
+          "field": "public_service",
+          "label": "法国公职经历",
+          "value": "法国经济部公告确认 Cédric O 曾任负责数字转型与电子通信事务的国务秘书。",
+          "source_id": "cedric-government-role-2020"
+        },
+        {
+          "field": "identity_correction",
+          "label": "Mistral 创始人身份校正",
+          "value": "Mistral 官方页面将 Arthur Mensch、Guillaume Lample 和 Timothee Lacroix 列为创始人；该官方名单不含 Cédric O。",
+          "source_id": "cedric-mistral-founders-2026"
         }
       ],
+      "milestones": [],
       "track_record": [
+        {
+          "description": "Partech 的发行公告将 Cédric O 列为 NP Company 2026 年 6 月 €6M pre-seed 的天使投资人；个人投资金额未披露。该公告中的 Mistral 联合创始人描述与 Mistral 官方创始人名单冲突，本档案只记录其投资参与。",
+          "source_id": "cedric-npco-preseed-2026"
+        },
         {
           "description": "融资来源记录：NP Company · 预种子轮 · 2026-06-02 · 本轮天使投资人 · €6M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5c311f61df097447"
@@ -160,10 +171,26 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "已核实资料限于 Partech 公告所列的一项天使投资活动。",
+      "experience_summary": "法国政府官方页面支持其公职经历；Partech 融资公告支持 NP Company 天使投资参与。Partech 同一公告对其 Mistral 身份的描述与 Mistral 官方创始人名单冲突，档案已注明并校正。",
       "sources": [
         {
-          "source_id": "partech-npco-cedric-o-2026-10-03",
+          "source_id": "cedric-government-role-2020",
+          "source_url": "https://www.economie.gouv.fr/actualites/cedric-o-et-olivia-gregoire-nommes-secretaires-detat",
+          "source_title": "Cédric O et Olivia Grégoire nommés secrétaires d’Etat",
+          "source_content_hash": "cdfd1231035a9f3f7735b3569c557c66b94c67d2729ff54bc24cf7e7f8df1788",
+          "quote": "Cédric O, chargé de la Transition numérique et des Communications électroniques",
+          "quote_hash": "84508208f9cb0713bc71fe81f6b1f6040205a87f43d0b6f60180113413ac69af"
+        },
+        {
+          "source_id": "cedric-mistral-founders-2026",
+          "source_url": "https://mistral.ai/about/",
+          "source_title": "About Mistral | Open, frontier AI for all.",
+          "source_content_hash": "1613484e46bbf3d99ab8afc3eaffa95807f744e34d60110c23d37495c8bfc4ad",
+          "quote": "Arthur Mensch Co-founder and CEO. Guillaume Lample Co-founder and Chief Science Officer. Timothee Lacroix Co-founder and CTO.",
+          "quote_hash": "b5d501c1c7365b5099b894b0b0ea3ac9bdb191019f3f715a35b97a00bc845b9f"
+        },
+        {
+          "source_id": "cedric-npco-preseed-2026",
           "source_url": "https://partechpartners.com/news/np-co-raises-6m-pre-seed-to-bring-frontier-ai-to-industrial-engineering-backed-by-mistral-ai-founders",
           "source_title": "NP CO RAISES €6M PRE-SEED TO BRING FRONTIER AI TO INDUSTRIAL ENGINEERING, BACKED BY MISTRAL AI FOUNDERS",
           "source_content_hash": "dd82ed805afc7603227df9dd50648a12d6f530458856d956cf641c0349004ccf",

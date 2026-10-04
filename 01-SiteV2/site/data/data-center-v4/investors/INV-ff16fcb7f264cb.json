@@ -121,21 +121,60 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "广汽资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据广汽集团官方介绍及奕行智能融资报道；未将品牌扩展为具体基金或法律主体。",
+      "summary": "广汽集团官网将广汽资本列入集团金融板块，并称其聚焦汽车“新四化”、芯片、智能网联和新能源投资；投资界报道其2022年领投奕行智能Pre-A轮。本档案按公开投资者名称记录，不推断具体基金或出资主体。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "广汽集团称广汽资本聚焦汽车“新四化”，并在芯片、智能网联和新能源领域布局。",
+          "source_id": "gac-investment-focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界报道奕行智能2022年Pre-A轮由广汽资本与东方富海联合领投。",
+          "source_id": "yixing-pre-a-pedaily"
+        },
         {
           "description": "融资来源记录：奕行智能 · 历史轮次未披露 · Pre-A轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-afa0818eda6a6b72"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据广汽集团官方介绍及奕行智能融资报道；未将品牌扩展为具体基金或法律主体。",
       "sources": [
+        {
+          "source_id": "gac-parent-finance",
+          "source_url": "https://www.gacgroup.com/cn/csr/detail?baseid=18842",
+          "source_title": "广汽集团金融板块亮相第十三届金交会 - 广汽集团",
+          "source_content_hash": "411dba142af0803913a33e09908b63af58d42c75aa91275e06bf88e3a55981d4",
+          "quote": "广汽集团携旗下广汽资本、广汽汇理、众诚保险、广汽财务、中隆投资和广汽租赁六家金融板块企业参展",
+          "quote_hash": "7d3edbfb361821deb4d992c59e7f8e89540cd9c0dffa1b6a9543cb4d8d790e74"
+        },
+        {
+          "source_id": "gac-investment-focus",
+          "source_url": "https://www.gacgroup.com/cn/csr/detail?baseid=18842",
+          "source_title": "广汽集团金融板块亮相第十三届金交会 - 广汽集团",
+          "source_content_hash": "411dba142af0803913a33e09908b63af58d42c75aa91275e06bf88e3a55981d4",
+          "quote": "广汽资本以“投资赋能出行”为发展理念，聚焦汽车“新四化 ”发展方向，以硬科技为抓手，通过资本为纽带联动行业内外和上下游资源，在芯片、智能网联和新能源领域进行投资布局并赋能汽车产业，致力于成为智能出行领域专业的投资机构。",
+          "quote_hash": "55453bd6a2a427e320b920ac9ec222e1edbba511a17f39e19359b73f9674cc3e"
+        },
+        {
+          "source_id": "yixing-pre-a-pedaily",
+          "source_url": "https://news.pedaily.cn/202210/502518.shtml",
+          "source_title": "首发 | 「奕行智能」完成超3亿Pre-A轮融资，广汽资本、东方富海联合领投_投资界",
+          "source_content_hash": "0986ed7b291e361c9bcd8d191b1fae5e6dab6c5c5951fa99b3cadfd93b8cbbf6",
+          "quote": "本轮融资由 广汽资本 领投、 东方富海 联合领投",
+          "quote_hash": "2f57307a3f960d3b9eb292e180b55fc17d3a40bd876664581ad741cd3f95ad11"
+        },
         {
           "source_id": "FISRC-afa0818eda6a6b72",
           "source_url": "https://news.pedaily.cn/202210/502518.shtml",
@@ -145,7 +184,7 @@
           "quote_hash": "2f57307a3f960d3b9eb292e180b55fc17d3a40bd876664581ad741cd3f95ad11"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

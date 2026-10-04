@@ -139,27 +139,37 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Axelera AI 的官方融资公告将 SiteGround Capital 列为新投资方，并刊载 SiteGround 创办人 Ivo Tzenov 的支持引言。来源没有完整说明 SiteGround 与 SiteGround Capital 的法律关系或该机构的投资体系，本档案只记录融资活动。",
-      "summary": "Axelera AI 2026 年 2 月的官方融资公告将 SiteGround Capital 列为新投资方，并刊载 SiteGround 创办人 Ivo Tzenov 的支持引言。本档案仅确认这一条公开活动，不延伸推断机构关系或完整投资组合。",
-      "facts": [],
-      "milestones": [
+      "coverage_status": "researched",
+      "coverage_note": "Axelera AI 的官方融资公告将 SiteGround Capital 列为新投资者，并引述 SiteGround 创始人 Ivo Tzenov。现有来源不能支持基金法律载体、投资策略、管理规模或团队等更广泛档案字段，因此仅保留这项可验证的机构身份和融资参与。",
+      "summary": "Axelera AI 官方公告将 SiteGround Capital 列为其 2026 年 2 月融资的新投资者，并引述 SiteGround 创始人 Ivo Tzenov。公告未披露 SiteGround Capital 的单独投资金额、基金规模或法律结构。",
+      "facts": [
         {
-          "date": "2026-02-24",
-          "description": "Axelera AI 的官方融资公告将 SiteGround Capital 列为最新一轮融资的新投资方。",
-          "source_id": "axelera-new-investor-siteground-2026-10-03"
+          "field": "investment_participation",
+          "label": "公开融资参与",
+          "value": "Axelera AI 2026 年融资公告称 SiteGround Capital 加入其融资，并引述 SiteGround 创始人 Ivo Tzenov。",
+          "source_id": "siteground-axelera-2026"
         }
       ],
-      "track_record": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "SiteGround Capital 被 Axelera AI 官方公告列为 2026 年融资新投资者之一；超过 2.5 亿美元是该轮融资金额，并非 SiteGround Capital 单独出资额。",
+          "source_id": "siteground-axelera-2026"
+        }
+      ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅记录被投企业官方披露的融资参与，不推定基金规模、法律结构或投资组合完整性。",
       "sources": [
         {
-          "source_id": "axelera-new-investor-siteground-2026-10-03",
+          "source_id": "siteground-axelera-2026",
           "source_url": "https://axelera.ai/news/axelera-ai-secures-more-than-250-million-funding-on-global-commercial-growth",
           "source_title": "Axelera AI Secures More Than $250 Million Funding on Global Commercial Growth",
           "source_content_hash": "1f61bd0824c52ca39352864dec2ee5bc84ea61fc5e75d3baf4205f39a92c684e",
-          "quote": "with participation from prominent funds and accounts including BlackRock and SiteGround Capital as new investors",
-          "quote_hash": "845c57e1475c0209e52b9d739ebc47e1b9c908e53ef9964f291ae985be5418e9"
+          "quote": "SiteGround Capital is proud to join Axelera AI on this exciting journey",
+          "quote_hash": "643636cc2bba837a9488b6546aa19e3201841dc19bef7ead0914d64cab23a2d2"
         }
       ],
       "last_verified_at": "2026-10-03"

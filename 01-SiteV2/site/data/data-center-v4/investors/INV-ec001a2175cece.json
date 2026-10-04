@@ -137,21 +137,51 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Anshu Sharma 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "Skyflow 官方活动页介绍 Anshu Sharma 为联合创始人兼 CEO，并确认其天使投资者身份；Autoheal 官方融资公告将其列入该公司种子轮天使投资人。未推断其个人投资工具、金额或 Skyflow 持股关系。",
+      "summary": "Anshu Sharma 是 Skyflow 联合创始人兼 CEO，也从事天使投资。Autoheal 官方融资公告将他列为种子轮天使投资人；公告未披露其个人出资额。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Autoheal 官方融资公告将 Anshu Sharma 列为种子轮天使投资人，且仅披露其 Skyflow 职务；未披露个人出资金额。",
+          "source_id": "PROFILE-bbb7f99840b112eeaf5c"
+        },
         {
           "description": "融资来源记录：Autoheal · 种子轮 · 2026-09-28 · 本轮参投 · $7.9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-212b01f9c4f8d05c"
         }
       ],
       "contacts": [],
+      "current_roles": [
+        {
+          "title": "Co-founder and CEO",
+          "organization": "Skyflow",
+          "source_id": "PROFILE-f43e5eb4082a48e7d551"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "已核验其 Skyflow 联合创始人兼 CEO 身份及 Autoheal 种子轮天使投资者提及。",
       "sources": [
+        {
+          "source_id": "PROFILE-bbb7f99840b112eeaf5c",
+          "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
+          "source_title": "Autoheal raises $7.9M to build the self-improving software factory for enterprises",
+          "source_content_hash": "2b1272abb8d5c05c85d845301f84e59369d8a30887a705beed387411006e85cc",
+          "quote": "Joining them as angel investors are industry leaders Shawn Kung, Founder of GIT100; Sumeet Arora, Chief Product Officer of Teradata; Anshu Sharma, Co-Founder & CEO of Skyflow; Savin Goyal, Co-Founder & CTO of Outerbounds; and Srikant Gokulnatha, former SVP at ThoughtSpot.",
+          "quote_hash": "28c75d316bfb050fc5bafcd93b0ce23bce48ee9863fe41acc5e850a5edb316cf"
+        },
+        {
+          "source_id": "PROFILE-f43e5eb4082a48e7d551",
+          "source_url": "https://info.skyflow.com/nyc-engineering-leadership-dinner-may-2024",
+          "source_title": "New York Engineering Leadership Dinner",
+          "source_content_hash": "2c2c58eccee15bb6ea953c94169b8eb22637a839c34cd19040f8cb89ea4f326c",
+          "quote": "Anshu Sharma is the Co-founder and CEO of Skyflow, the data privacy vault company, a serial entrepreneur, and startup investor.",
+          "quote_hash": "9296df50b7483024b890e5c58f99b1079f85f6086a7922b19f1660e914393107"
+        },
         {
           "source_id": "FISRC-212b01f9c4f8d05c",
           "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
@@ -161,7 +191,7 @@
           "quote_hash": "28c75d316bfb050fc5bafcd93b0ce23bce48ee9863fe41acc5e850a5edb316cf"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

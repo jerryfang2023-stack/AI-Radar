@@ -139,15 +139,28 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Arrakis 2026-07-22 的融资公告为公司发布的新闻稿，经 Business Wire 发布；它只证实该时点的职务描述和一项投资支持活动，不构成完整人物履历。",
-      "summary": "Arrakis 的 2026 年融资新闻稿将 Olivier Godement 描述为 OpenAI Business Products 负责人，并将其列为支持 Arrakis 融资的技术行业人士之一。本条只记录新闻稿发布时的信息。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "OpenAI 官方贡献页面将 Olivier Godement 列入 GPT-4V 部署平台及产品/部署管理贡献名单；Arrakis 的 2026 年融资报道称其时任 OpenAI Business Products 负责人，并把他列入 Arrakis 融资支持者。本档案不把公司新闻稿中的职衔推广为独立官方任职证明。",
+      "summary": "OpenAI 官方 GPT-4V 贡献页列出 Olivier Godement 参与部署平台以及产品和部署管理；Arrakis 2026 年融资报道称他当时是 OpenAI Business Products 负责人，并将其列为 Arrakis 融资的个人支持者。Arrakis 未披露其个人出资金额。",
+      "facts": [
+        {
+          "field": "professional_contribution",
+          "label": "OpenAI 项目贡献",
+          "value": "OpenAI 官方贡献页将 Olivier Godement 列在 GPT-4V 的部署平台以及产品和部署管理工作中。",
+          "source_id": "olivier-openai-product-contribution-2023"
+        },
+        {
+          "field": "reported_role",
+          "label": "报道所述职务",
+          "value": "Arrakis 的融资报道在 2026 年 7 月将他描述为 OpenAI Business Products 负责人；此处按报道归属记录。",
+          "source_id": "olivier-arrakis-role-2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Arrakis 于 2026-07-22 发布的融资新闻稿将 Olivier Godement 列为公司融资的支持者之一；该公告没有披露其个人出资额。",
-          "source_id": "arrakis-olivier-backer-2026-10-03"
+          "description": "Arrakis 2026 年融资报道将 Olivier Godement 列为支持者之一；报道未披露其个人出资金额。",
+          "source_id": "olivier-arrakis-role-2026"
         },
         {
           "description": "融资来源记录：Arrakis · A轮 · 2026-07-22 · 本轮天使投资人 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -156,23 +169,23 @@
       ],
       "contacts": [],
       "current_roles": [],
-      "career": [
-        {
-          "organization": "OpenAI",
-          "title": "Head of Business Products（新闻稿发布时的描述）",
-          "period": "截至 2026-07-22 新闻稿发布时；起任时间未披露",
-          "description": "Arrakis 的融资公告以此职务介绍 Olivier Godement。",
-          "source_id": "arrakis-olivier-backer-2026-10-03"
-        }
-      ],
+      "career": [],
       "education": [],
-      "experience_summary": "本条只依据 Arrakis 融资公告记录一项投资支持活动及其发布时列出的 OpenAI 职务。",
+      "experience_summary": "OpenAI 官方贡献记录确认其产品/部署工作参与；Arrakis 发行公告提供其个人融资参与和当时职务的报道。",
       "sources": [
         {
-          "source_id": "arrakis-olivier-backer-2026-10-03",
-          "source_url": "https://via.tt.se/pressmeddelande/4480593/arrakis-comes-out-of-stealth-with-dollar38m-to-help-industrial-enterprises-compete-in-the-ai-era?publisherId=259167",
-          "source_title": "Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | Business Wire",
-          "source_content_hash": "367205d62aa60cdf3630bd3a36bdd1d3a01dc4eaba277731409537348eeec378",
+          "source_id": "olivier-openai-product-contribution-2023",
+          "source_url": "https://openai.com/contributions/gpt-4v/",
+          "source_title": "GPT-4V(ision) technical work and authors | OpenAI",
+          "source_content_hash": "182ceb40bb10d405451887f2f292e058befdafc604b4f3c7d0b8a10709f3de70",
+          "quote": "Olivier Godement, Joanne Jang, Angela Jiang, Raul Puri, Jessica Shieh, Natalie Staudacher, Nicholas Turley",
+          "quote_hash": "08e13c7e09dcabb91fbe23ce54bd2833b36991b62b7b5055506cf7b6bb20c41b"
+        },
+        {
+          "source_id": "olivier-arrakis-role-2026",
+          "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+          "source_title": "Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | FinancialContent",
+          "source_content_hash": "1251d1903aca50272f9830c9b518bc1c893804770b843aa088eb0838906648f5",
           "quote": "Olivier Godement, OpenAI’s Head of business products",
           "quote_hash": "da6ace4b35a3101932342706f84fe6eba8fb31bc0e29b93e50e40c45059bd529"
         },

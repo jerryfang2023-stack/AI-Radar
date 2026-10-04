@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "国方创新 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按上海国际集团公开使用的基金管理品牌名称收录，不把国方创新品牌映射到某一具体基金或有限合伙主体；融资披露没有给出单独出资额。",
+      "summary": "上海国际集团将国方创新列为集团基金管理品牌之一；投资界报道把国方创新列为光轮智能本轮融资的财务投资机构。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界报道将国方创新列入光轮智能 A+++ 轮投资机构名单；未披露其单独出资额。",
+          "source_id": "guofang-guanglun-round-2026"
+        },
         {
           "description": "融资来源记录：光轮智能 · A+++轮 · 2026-03-11 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a7ac3aedf1b697d8"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "按上海国际集团公开使用的基金管理品牌名称收录，不把国方创新品牌映射到某一具体基金或有限合伙主体；融资披露没有给出单独出资额。",
       "sources": [
+        {
+          "source_id": "guofang-sig-brand",
+          "source_url": "https://www.sigchina.com/site/news_details/3186",
+          "source_title": "上海国际集团 - 集团基金公司、子公司 荣获“2024年度投中榜”多个奖项",
+          "source_content_hash": "9c0ab2e3c53b57a8a7c9b7772dc665800a7630f67791d2e97e880e09559ff556",
+          "quote": "创设金浦、国和、赛领、科创、国方五大基金管理人品牌",
+          "quote_hash": "ce972e719d84042e8d0b1e6fc0d7346d98f2786d57ac4e9cacca20983817d1b0"
+        },
+        {
+          "source_id": "guofang-guanglun-round-2026",
+          "source_url": "https://news.pedaily.cn/202603/561585.shtml",
+          "source_title": "合成数据企业「光轮智能」完成10亿元融资_投资界",
+          "source_content_hash": "3511a4d25c291dcc16b67691056de621552a06e43c5ff514ea4afcda5a748501",
+          "quote": "建投华科、国方创新、道禾长期投资、清新资本 等财务投资机构",
+          "quote_hash": "2c51fb139b33b9bec79cf8463ed595ad9a4ff46a287bdd6d6b2cdd2b6e31fd1d"
+        },
         {
           "source_id": "FISRC-a7ac3aedf1b697d8",
           "source_url": "https://news.pedaily.cn/202603/561585.shtml",
@@ -161,7 +185,7 @@
           "quote_hash": "41d6c3188c9986e479c68e45629be28b3168e3539bcec1e8c8610bf502d45a21"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

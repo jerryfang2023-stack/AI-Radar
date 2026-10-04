@@ -140,32 +140,75 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投中网 2026 年 9 月融资报道将阿联酋 Stone Venture（磊石资本）列为智身科技 B 轮领投方。本档案限于该条报道，不将相似名称的其他机构合并，也不补写未经核实的投资策略和法律背景。",
-      "summary": "投中网 2026 年 9 月 20 日报道智身科技 B 轮融资，并称阿联酋 Stone Venture（磊石资本）领投。本档案仅记录该条公开融资活动。",
-      "facts": [],
-      "milestones": [
+      "coverage_status": "researched",
+      "coverage_note": "Stone Venture 自有官网本轮访问返回 503，公开背景主要来自投中网行业报道；智身科技和新石器官网分别确认融资参与方。未据此推定基金法律结构、管理规模或团队。",
+      "summary": "投中网将阿联酋 Stone Venture（磊石资本）描述为总部位于迪拜、重点布局亚洲新兴市场及中国硬科技的投资机构。智身科技官网确认其领投 2026 年 B 轮，新石器官网确认其领投 2025 年超过 6 亿美元 D 轮；机构背景中的市场定位来自行业报道，投资关系来自发行人官网。",
+      "facts": [
         {
-          "date": "2026-09-20",
-          "description": "投中网报道智身科技完成 B 轮融资，并称阿联酋 Stone Venture（磊石资本）领投。",
-          "source_id": "chinaventure-genisom-stone-2026-10-03"
+          "field": "headquarters_and_geography",
+          "label": "总部与布局",
+          "value": "投中网称 Stone Venture 总部位于阿联酋迪拜，重点布局亚洲新兴市场，特别是中国硬科技赛道。",
+          "source_id": "chinaventure-stone-geography-2026"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式与方向",
+          "value": "投中网将其描述为以直接投资方式关注亚洲新兴市场头部科技企业，并称其在中国集中于机器人、自动驾驶等科技赛道。",
+          "source_id": "chinaventure-stone-approach-2025"
         }
       ],
+      "milestones": [],
       "track_record": [
+        {
+          "description": "智身科技官网称，阿联酋 Stone Venture（磊石资本）领投该公司 2026 年数亿元人民币 B 轮融资。",
+          "source_id": "genisom-stone-series-b-2026"
+        },
+        {
+          "description": "新石器官网称，阿联酋磊石资本（Stone Venture）领投其 2025 年超过 6 亿美元 D 轮融资。",
+          "source_id": "neolix-stone-series-d-2025"
+        },
         {
           "description": "融资来源记录：智身科技（GENISOM AI） · B轮 · 2026-09-20 · 本轮领投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fecad8ccb9a84a39"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "两家被投企业官网支持融资参与记录，投资地域及方向由投中网报道；因未取得机构官网正文，不补写法律实体、基金规模或管理团队。",
       "sources": [
         {
-          "source_id": "chinaventure-genisom-stone-2026-10-03",
-          "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393359.html",
-          "source_title": "智身科技完成数亿元B轮融资 | 投中网",
-          "source_content_hash": "cb57a89ceda0683dc9af58cdb259edeac4d8fe02e5e568d87a42b8b875791b28",
-          "quote": "本轮融资由阿联酋Stone Venture（磊石资本）领投，洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。",
-          "quote_hash": "4252e2c9e4dc154dc45cb228c9960ebacaf654d7b89c5d7472cf9f31b37bbf38"
+          "source_id": "chinaventure-stone-geography-2026",
+          "source_url": "https://www.chinaventure.com.cn/news/114-20260513-391339.html",
+          "source_title": "全球资本，重仓中国机器人 | 投中网",
+          "source_content_hash": "f9ea65078968851bcba51bddc01ea86ea7c6b0de95724ac9e772cd13325b7c65",
+          "quote": "磊石资本（Stone Venture）总部位于阿联酋迪拜，重点布局亚洲新兴市场，特别是中国市场的硬科技赛道。",
+          "quote_hash": "55bd4458a3c10869d27632da898622a849d14796876d92bbc53c76300418c579"
+        },
+        {
+          "source_id": "chinaventure-stone-approach-2025",
+          "source_url": "https://m.chinaventure.com.cn/news/114-20251212-389302.html",
+          "source_title": "中东资本再投向众擎机器人 | 投中网",
+          "source_content_hash": "6f85f8fb8fde05955923abee3e3cb2fbd53e5a35438268328b5e5ebe127dfebd",
+          "quote": "该机构以直接投资的方式，重点布局亚洲新兴市场的头部科技企业",
+          "quote_hash": "efaa05679ba808e2825d620da93a13e2333e49b9a1d91c3cb375ea14fb3e2145"
+        },
+        {
+          "source_id": "genisom-stone-series-b-2026",
+          "source_url": "https://www.genisomai.com/news.html",
+          "source_title": "资讯动态",
+          "source_content_hash": "5765e1ca54fb537be562d1172b61cb40ed9840f03dc3ec2c20ad33d6e35c4969",
+          "quote": "本轮融资由阿联酋Stone Venture（磊石资本）领投",
+          "quote_hash": "3b4482b2426f6535e214554cc11cecd5659013822d0f1106390ffa7c1e7642d1"
+        },
+        {
+          "source_id": "neolix-stone-series-d-2025",
+          "source_url": "https://www.neolix.ai/zh/news/d-round-funding/",
+          "source_title": "新石器D轮融资超6亿美元，创中国自动驾驶领域融资纪录 | Neolix",
+          "source_content_hash": "1f7aeda0ae0a268ba5036cf900f03551820cc11b4c29a919d4fec6351554bc4f",
+          "quote": "本轮融资由阿联酋磊石资本（Stone Venture）领投",
+          "quote_hash": "67b7257d0d698c266b4ff79c7a79f39cfa69c17854cd012cd71647efa2bc2b14"
         },
         {
           "source_id": "FISRC-fecad8ccb9a84a39",

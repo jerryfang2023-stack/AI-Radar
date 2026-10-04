@@ -138,21 +138,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "豪鹏科技 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "档案对应豪鹏科技上市公司本身；投资文件披露的是公司层面的交易，不据此推断独立基金载体。",
+      "summary": "深圳市豪鹏科技股份有限公司官网将其投资者关系主体列为公司董事会办公室；公司2026年发行募集说明书记载其于2025年12月签署智身科技投资协议，并将这项投资归为产业链协同型产业投资。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "豪鹏科技募集说明书记载公司于2025年12月26日签署智身科技投资协议，以人民币2,000万元认购新增注册资本；该金额为公司披露的本笔投资金额。",
+          "source_id": "haopeng-zhishen-industrial-investment-2025"
+        },
         {
           "description": "融资来源记录：智身科技（GENISOM AI） · B轮 · 2026-09-20 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fecad8ccb9a84a39"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "档案对应豪鹏科技上市公司本身；投资文件披露的是公司层面的交易，不据此推断独立基金载体。",
       "sources": [
+        {
+          "source_id": "haopeng-official-investor-relations",
+          "source_url": "https://ir.highpowertech.com/",
+          "source_title": "投资者关系",
+          "source_content_hash": "6cd8427fde0055f9db3940711aa71fa2b6031df358a324e2db6274cd5ccad159",
+          "quote": "深圳市豪鹏科技股份有限公司董事会办公室",
+          "quote_hash": "596fcd84d85a0d2254249ac87c2654551a53cb690e0af002ea13870da75a7a57"
+        },
+        {
+          "source_id": "haopeng-zhishen-industrial-investment-2025",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-02-28/1224989183.PDF",
+          "source_title": "深圳市豪鹏科技股份有限公司2026年度向特定对象发行A股股票募集说明书",
+          "source_content_hash": "c83ab47745e5e41662b9b349f934c0e548bc8b323ed2d84bb8d0b030ea848030",
+          "quote": "2025 年 12 月 26 日，公司与智身科技及其原股东签署了《关于智身科技（北京）有限公司之投资协议》，公司以人民币 2,000 万元认购公司新增注册资本人民币 32.4880 万元，本次增资后，公司将持有智身科技 1.3158%的股权（暂定，最终以实际登记为准）。",
+          "quote_hash": "02049c481adaf7e354135f5c99cb74775e7dd422c4ad761e8c18be9e896ff9f8"
+        },
         {
           "source_id": "FISRC-fecad8ccb9a84a39",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393359.html",
@@ -162,7 +186,7 @@
           "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

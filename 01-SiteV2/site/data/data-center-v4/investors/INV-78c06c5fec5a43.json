@@ -140,14 +140,21 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "仅依据 Fish Audio 发行的融资公告记录一笔参与；未据投资者名称推断基金策略、法律主体或团队。",
-      "summary": "Fish Audio 于 2026 年 7 月 28 日发布的种子轮公告把 Alphalist Partners 列为本轮参与方之一。该来源只确认这一笔融资参与，未提供机构自身的团队或投资策略。",
-      "facts": [],
+      "coverage_note": "Fish Audio 官方博客将 Alphalist Partners 列为其种子轮参投方之一。博客称本轮融资 5,200 万美元；本档案仅记录发行方公布的数字，不把融资总额当作单家投资额。",
+      "summary": "Fish Audio 官方博客于 2026 年 7 月宣布完成 5,200 万美元 seed funding，并将 Alphalist Partners 列为参投方之一。公开博客未披露其单独出资额。",
+      "facts": [
+        {
+          "field": "public_round_participation",
+          "label": "公开融资参与",
+          "value": "Fish Audio 官方博客将 Alphalist Partners 列为种子轮参投方。",
+          "source_id": "alphalist-fishaudio-seed-2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Fish Audio 于 2026-07-28 公告完成 5200 万美元种子轮融资，并将 Alphalist Partners 列入参与方；公告未披露其具体出资额。",
-          "source_id": "fish_pr"
+          "description": "Fish Audio 于 2026 年 7 月的官方融资公告将 Alphalist Partners 列入 5,200 万美元 seed funding 的参投方；未披露其单独出资金额。",
+          "source_id": "alphalist-fishaudio-seed-2026"
         },
         {
           "description": "融资来源记录：Fish Audio · 种子轮 · 2026-07-28 · 本轮参投 · $52 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -155,20 +162,24 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "当前可核实信息限于 Fish Audio 官方融资公告所列参投方。",
       "sources": [
         {
-          "source_id": "fish_pr",
-          "source_url": "https://www.prnewswire.com/news-releases/fish-audio-raises-52m-in-seed-funding-after-turning-passion-project-into-one-of-voice-ais-fastest-growing-companies-302836233.html",
-          "source_title": "Fish Audio Raises $52M in Seed Funding After Turning Passion Project Into One of Voice AI's Fastest-Growing Companies",
-          "source_content_hash": "bb224a4aa73a8ef37adc081a47e176440e527bc15faa81af4a12ace9c06f3443",
-          "quote": "PALO ALTO, Calif. , July 28, 2026 /PRNewswire/ -- Fish Audio , the AI voice platform for expressive real-time text-to-speech, voice cloning, and voice agents, today announced $52 million in seed funding led by Coreline Ventures and Capital Today , with participation from 359 Capital, Play Time, HF0, 645 Ventures, Parable, Carya Venture Partners, Alphalist Partners, and leading angel investors.",
-          "quote_hash": "22e5a4d3e8f3956105aad36d52d0ea3006e3eaf0f324dfa9c1bfa2c5d6cbad78"
+          "source_id": "alphalist-fishaudio-seed-2026",
+          "source_url": "https://fish.audio/zh-CN/blog/fish-audio-52m-seed-funding/",
+          "source_title": "5 个模型，22 个人，1 年 - Fish Audio Blog",
+          "source_content_hash": "03a1de35c9f5ad81b7b447f9e2d5c8cc3eeb5f5731cebbdde9b0f14b44f988c5",
+          "quote": "Alphalist Partners，还有在项目初期就给予支持的天使投资人们。",
+          "quote_hash": "ce006e09ea70b3aee9c84a50c193d830af44c3ea4172262c49d70e6fcc5d5a82"
         },
         {
           "source_id": "FISRC-e06e94375ec64ac4",
           "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
-          "source_title": "Fish Audio raises $52M seed to build AI voice models for creators and enterprises | TechCrunch",
-          "source_content_hash": "d21804e6e3ffd6390c366cb17140fa627ac27226298ffc159cb555d135507094",
+          "source_title": "Fish Audio 融资 5200 万美元种子轮，为创作者和企业构建 AI 语音模型",
+          "source_content_hash": "a41c14ab44af8ba104136f93550190aef8e472c0b80b5d27cb60215833dc0035",
           "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners, Bayhouse Ventures, Carya Venture Partners, and HF0.",
           "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
         }

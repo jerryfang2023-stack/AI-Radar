@@ -140,15 +140,22 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Archestra 于 2026-06 的第一方融资公告仅确认一笔支持活动及一项既往职务；未找到足以整理其完整现任履历的第一方人物页面。",
-      "summary": "Archestra 官方 2026 年种子轮公告将 Gerhard Eschelbeck 列为该轮支持者，并称其曾任 Google 首席信息安全官（CISO）。本条只记录该笔支持活动和公告提到的既往职务。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Archestra 的融资公告和官网成员页均将 Gerhard Eschelbeck 描述为 Google 前 CISO，并披露其为 2026 年种子轮个人支持者。未披露其个人出资金额或进一步投资组合。",
+      "summary": "Archestra 将 Gerhard Eschelbeck 描述为 Google 前 CISO，并在 2026 年 6 月的 1,000 万美元种子轮公告中列他为支持者之一；个人出资金额未披露。",
+      "facts": [
+        {
+          "field": "career_background",
+          "label": "职业背景",
+          "value": "Archestra 官网成员页将 Gerhard Eschelbeck 标为 Google 前 CISO。",
+          "source_id": "gerhard-archestra-team-2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Archestra 2026-06-02 的官方公告将 Gerhard Eschelbeck 列入其 1,000 万美元种子轮支持者名单。",
-          "source_id": "archestra-seed-release-2026-10-03"
+          "description": "Archestra 的 2026 年 6 月 1,000 万美元种子轮公告将 Gerhard Eschelbeck 列为支持者之一；未披露其个人投资金额。",
+          "source_id": "gerhard-archestra-seed-2026"
         },
         {
           "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,20 +164,20 @@
       ],
       "contacts": [],
       "current_roles": [],
-      "career": [
-        {
-          "organization": "Google",
-          "title": "首席信息安全官（CISO；Archestra 公告称其为前任）",
-          "period": "起止年份未披露；2026-06-02 公告时为既往职务",
-          "description": "Archestra 的官方融资公告如此介绍其 Google 经历。",
-          "source_id": "archestra-seed-release-2026-10-03"
-        }
-      ],
+      "career": [],
       "education": [],
-      "experience_summary": "经核验的资料限于 Archestra 官方融资公告列出的投资支持身份及其曾任 Google CISO。",
+      "experience_summary": "身份和职业背景来自 Archestra 官网，投资活动来自 Archestra 发行公告。",
       "sources": [
         {
-          "source_id": "archestra-seed-release-2026-10-03",
+          "source_id": "gerhard-archestra-team-2026",
+          "source_url": "https://archestra.ai/about",
+          "source_title": "About Us | Team &amp; Mission | Archestra",
+          "source_content_hash": "3fc1ed89f77c7b1fae2861b7a3a2d7215109e274d4f0912eaa593faef274187e",
+          "quote": "Gerhard Eschelbeck Former CISO, Google",
+          "quote_hash": "0d7255d539238ba6e90a7e1db794d3be81ba540ce3184aed2d469b43c13a52d7"
+        },
+        {
+          "source_id": "gerhard-archestra-seed-2026",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
           "source_title": "Archestra.AI announces $10M seed 🎉 | Blog | Archestra",
           "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",

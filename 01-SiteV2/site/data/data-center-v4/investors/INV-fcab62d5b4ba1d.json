@@ -121,21 +121,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Pivotal 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据Pivotal Transformative Technologies官方投资介绍及Quadric发行方公告；未将其映射到其他同名投资机构。",
+      "summary": "Pivotal Transformative Technologies官网介绍其专注成长阶段科技投资，并将Quadric列为代表性投资；Quadric的融资公告也列出Pivotal为C轮新投资方。此处按官网所示品牌记录。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Quadric于2026年1月公布的3000万美元Series C将Pivotal列为新投资方；Pivotal官网将Quadric列入代表性投资。",
+          "source_id": "quadric-series-c-pivotal"
+        },
         {
           "description": "融资来源记录：Quadric · 历史轮次未披露 · C轮首关新投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9f9b41abcfe2abd0"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据Pivotal Transformative Technologies官方投资介绍及Quadric发行方公告；未将其映射到其他同名投资机构。",
       "sources": [
+        {
+          "source_id": "pivotal-official-strategy",
+          "source_url": "https://pivotaltransformativetech.com/",
+          "source_title": "Pivotal Transformative Technologies",
+          "source_content_hash": "e2636aeeb33eb70b6b6bc87b8a276b37802bd6b7ab6ae97a9d7b25345d4c7d02",
+          "quote": "Growth-Stage Technology Investing",
+          "quote_hash": "ecc66c6189d24116c3fd987b495b725b7b7a2cc5280f37f7d82b515355f48513"
+        },
+        {
+          "source_id": "pivotal-quadric-portfolio",
+          "source_url": "https://pivotaltransformativetech.com/",
+          "source_title": "Pivotal Transformative Technologies",
+          "source_content_hash": "e2636aeeb33eb70b6b6bc87b8a276b37802bd6b7ab6ae97a9d7b25345d4c7d02",
+          "quote": "Quadric Edge AI inference processors",
+          "quote_hash": "a68e6062166fba60ffe4aa2b5054d359262432332fb4a71f7dd94e9f7a1182d5"
+        },
+        {
+          "source_id": "quadric-series-c-pivotal",
+          "source_url": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
+          "source_title": "Quadric, Inference Engine for On-Device AI Chips, Raises $30M Series C as Design Wins Accelerate Across Edge LLMs, Automotive, and Enterprise | Quadric",
+          "source_content_hash": "22a0a62a7b96be3dc583d68b662344ffefa9368f8e7345bf271058a88eb0ccba",
+          "quote": "New investors include Volta, Gentree, Wanxiang America, Pivotal",
+          "quote_hash": "ba8a36958d9a8309077f1af1fca55327b3cc609beee0295098f49fc64f206c29"
+        },
         {
           "source_id": "FISRC-9f9b41abcfe2abd0",
           "source_url": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
@@ -145,7 +177,7 @@
           "quote_hash": "f5ce2d621f9ac250a9e41b51b95dc8f6aa163663e165009067632e538ad62da8"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

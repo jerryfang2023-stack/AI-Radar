@@ -139,21 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Relativity Networks 在 2026-08 的融资新闻稿列出 Bell Ventures Inc. 为新投资者之一。本条只确认这一命名活动，不建立机构完整档案或投资组合。",
-      "summary": "Relativity Networks 于 2026-08-19 发布的融资新闻稿称，Bell Ventures Inc. 参与其 2,200 万美元 SAFE 融资。本条仅覆盖该笔活动，尚无足够一手材料补充机构背景。",
-      "facts": [],
-      "milestones": [
+      "coverage_status": "researched",
+      "coverage_note": "BCE 官方页面把 Bell Ventures 描述为与早期及成长型公司合作的投资项目，并披露关注方向；被投企业新闻稿确认 Bell Ventures Inc. 参与 Relativity Networks 的 SAFE 融资。未据此补写单独基金的规模、条款或出资额。",
+      "summary": "Bell Ventures 是 BCE/Bell 面向早期及成长型公司的企业投资项目，重点关注网络、企业解决方案、媒体和数据。Relativity Networks 2026 年融资新闻稿将 Bell Ventures Inc. 列为其 2,200 万美元 SAFE 融资的新投资方，并引述 Bell Ventures 负责人 Martin Cossette。",
+      "facts": [
         {
-          "date": "2026-08-19",
-          "description": "Relativity Networks 公告 Bell Ventures Inc. 参与其 2,200 万美元 SAFE 融资。",
-          "source_id": "relativity-bell-raise-announcement-2026-10-03"
+          "field": "corporate_venture_role",
+          "label": "机构职能",
+          "value": "BCE 官方页面称 Bell Ventures 与利用 Bell 5G 和光纤网络的早期及成长型公司合作，并支持先进技术的商业化。",
+          "source_id": "bell-ventures-bce-overview-2026"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资关注方向",
+          "value": "BCE 官方组合页列出 Network、Enterprise solutions、Media and Data，并提及网络创新、企业及消费者解决方案、数字情报平台和内容分发技术。",
+          "source_id": "bell-ventures-bce-portfolio-2026"
         }
       ],
+      "milestones": [],
       "track_record": [
         {
-          "description": "Relativity Networks 的融资新闻稿将 Bell Ventures Inc. 列为 2026 年该轮融资的新投资者之一。",
-          "source_id": "relativity-bell-raise-announcement-2026-10-03"
+          "description": "Relativity Networks 的 2026 年 8 月新闻稿称，其 2,200 万美元 SAFE 融资由包括 Bell Ventures Inc. 在内的新投资方参与；不代表 Bell Ventures 单独出资2,200万美元。",
+          "source_id": "bell-ventures-relativity-networks-safe-2026"
         },
         {
           "description": "融资来源记录：Relativity Networks · 后续发行 · 2026-08-19 · 本轮参投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -161,14 +168,34 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "资料支持将其记录为 Bell/BCE 的企业投资项目；不把融资总额归为 Bell Ventures 的单独出资。",
       "sources": [
         {
-          "source_id": "relativity-bell-raise-announcement-2026-10-03",
+          "source_id": "bell-ventures-bce-overview-2026",
+          "source_url": "https://www.bce.ca/about-bce/bell-ventures",
+          "source_title": "Bell Ventures | BCE",
+          "source_content_hash": "a23693f56b9f3ca2c21e6995ad1d9a8d58d7b477f015d5c022a0e6d262b6ad2a",
+          "quote": "Bell Ventures drives innovation and supports Canadian entrepreneurship by partnering with early-stage and growth companies that are harnessing the power of our leading 5G and fibre networks.",
+          "quote_hash": "f4be31a6aa78330d094b101e36382833292d3bef16808d4052cfef3cb2cda1e9"
+        },
+        {
+          "source_id": "bell-ventures-bce-portfolio-2026",
+          "source_url": "https://www.bce.ca/about-bce/bell-ventures/portfolio",
+          "source_title": "Portfolio | Bell Ventures | BCE",
+          "source_content_hash": "ccb380cfb9181a0b10f353e6c262a5564810b90ee6f018b048c90d2fb7aed0a6",
+          "quote": "Our investments are focused in Network, Enterprise solutions and Media and Data, including opportunities that:",
+          "quote_hash": "1198a4af02caeb111bb896ecbb55ef01657be4db303324ccd94ddd6a6fac04d1"
+        },
+        {
+          "source_id": "bell-ventures-relativity-networks-safe-2026",
           "source_url": "https://www.prnewswire.com/news-releases/relativity-networks-raises-22m-and-lands-40m-hyperscaler-contract-to-power-the-ai-geography-era-302854769.html",
           "source_title": "Relativity Networks Raises $22M and Lands $40M Hyperscaler Contract to Power the AI Geography Era",
           "source_content_hash": "7b42a9ed074f0ac1a25a3a1f676ca8b7f6d3029b8a4a39f7ad1377b9d958b911",
-          "quote": "round drawn by new investors including Rhapsody Venture Partners, Bell Ventures Inc., and Faster Than Glass LLC",
-          "quote_hash": "ba62dbbfa63c2485f16947874374f77ccd19f212e6e990ff523c9114c21b2fba"
+          "quote": "Bell Ventures Inc.",
+          "quote_hash": "2465d82aeef26a2ce07e0d7292a2388f7a541be05837c8cbcd9a051db333a986"
         },
         {
           "source_id": "FISRC-e32f49cf414731d3",

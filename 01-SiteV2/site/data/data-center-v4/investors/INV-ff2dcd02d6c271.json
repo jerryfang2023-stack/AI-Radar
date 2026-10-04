@@ -418,14 +418,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "敦鸿资产 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据敦鸿资产官网及息壤开物融资报道；资金规模与完整投资组合未纳入。",
+      "summary": "敦鸿资产官网标示主体为上海敦鸿资产管理有限公司，称其成立于2015年、专注前沿科技私募股权投资，业务包含直投基金与母基金，并列出人工智能、机器人等重点方向。投资界报道其领投息壤开物种子轮及天使轮融资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "专注前沿科技赛道的私募股权投资机构；业务含直投基金和母基金（官网自述）。",
+          "source_id": "dunhong-official-profile"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点方向",
+          "value": "人工智能、机器人、AR、航天航空、脑机接口、量子计算、核聚变（官网自述）。",
+          "source_id": "dunhong-official-profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界报道息壤开物连续完成数亿元种子轮及天使轮融资，由敦鸿资产领投。",
+          "source_id": "xirra-seed-angel-pedaily"
+        },
         {
           "description": "融资来源记录：息壤开物 · 多轮融资 · 2026-09-23 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-41f074703465b30a"
@@ -440,7 +457,43 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据敦鸿资产官网及息壤开物融资报道；资金规模与完整投资组合未纳入。",
       "sources": [
+        {
+          "source_id": "dunhong-official-identity",
+          "source_url": "https://www.dh-capital.cn/",
+          "source_title": "上海敦鸿资产管理有限公司",
+          "source_content_hash": "0feda34b6d2bb9e366e9c4af94114243e258db41a724481dedaed8b1104f6eac",
+          "quote": "上海敦鸿资产管理有限公司",
+          "quote_hash": "02deaa5616ae945bc7ad66ac4517f7acebaaa15157a17895c02cf2c91efb8eeb"
+        },
+        {
+          "source_id": "dunhong-official-profile",
+          "source_url": "https://www.dh-capital.cn/",
+          "source_title": "上海敦鸿资产管理有限公司",
+          "source_content_hash": "0feda34b6d2bb9e366e9c4af94114243e258db41a724481dedaed8b1104f6eac",
+          "quote": "敦鸿资产成立于2015年，专注于前沿科技赛道投资，包括直投基金和母基金两大板块。",
+          "quote_hash": "5c2e4557639e1855bd45a78c50f5141840427fa3217893a78d375850cf37aa4b"
+        },
+        {
+          "source_id": "dunhong-official-focus",
+          "source_url": "https://www.dh-capital.cn/",
+          "source_title": "上海敦鸿资产管理有限公司",
+          "source_content_hash": "0feda34b6d2bb9e366e9c4af94114243e258db41a724481dedaed8b1104f6eac",
+          "quote": "目前主要投资人工智能、机器人、AR、航天航空、脑机接口、量子计算、核聚变等",
+          "quote_hash": "42b49dbba0ea14b28f0fa7f354187364482e6c05ff35d70231ab53f41a89b785"
+        },
+        {
+          "source_id": "xirra-seed-angel-pedaily",
+          "source_url": "https://m.pedaily.cn/news/569562",
+          "source_title": "Physical AI创业公司息壤开物连获数亿元融资|投资界",
+          "source_content_hash": "9fd73364fce0ab5e96a0f86f1aee824d3635c01c1997aa3e15891c12c1f5fc68",
+          "quote": "息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资 ，由 敦鸿资产领投",
+          "quote_hash": "fc0a353720f06f65359a13014106d36cc355bb9c2708b6d8b06834f022f99f43"
+        },
         {
           "source_id": "FISRC-41f074703465b30a",
           "source_url": "https://m.pedaily.cn/news/569562",
@@ -466,7 +519,7 @@
           "quote_hash": "887f835a1f6a2bc6d376d569bca051d652145042b31d851287c57ae9bbcd769e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

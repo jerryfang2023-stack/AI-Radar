@@ -121,21 +121,60 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "FPV 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "FPV 官网自述其为投资者；Enveda 官方公告将 FPV 列为一项 Series C 领投方，未披露其出资额。",
+      "summary": "FPV Ventures 官网自述为与使命驱动型创始人合作的投资机构。Enveda 官方公告称 FPV 与 Kinnevik 共同领投其 Series C 融资；公告未披露 FPV 出资额。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述投资定位",
+          "value": "官网称 FPV 是与使命驱动型创始人合作的投资者。",
+          "source_id": "PROFILE-d3fdf8c9f3d2430841f8"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Enveda 官方公告称 Series C 由 Kinnevik 与 FPV 领投；未披露 FPV 出资额。",
+          "source_id": "PROFILE-278ec733fd2a284a2a1d"
+        },
         {
           "description": "融资来源记录：Enveda · 历史轮次未披露 · 领投C轮。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-921d200ac951683e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "FPV Ventures",
+          "url": "https://fpvventures.com/",
+          "source_id": "PROFILE-d3fdf8c9f3d2430841f8"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-d3fdf8c9f3d2430841f8",
+          "source_url": "https://fpvventures.com/",
+          "source_title": "FPV",
+          "source_content_hash": "9991b8e247dcdf88aa6b8a57182454a4a09a40f4bfb5289d8c1dfe74a39c82ed",
+          "quote": "Weʼre investors working with mission-driven founders.",
+          "quote_hash": "c58b9a2c3bdade76d709993a04e4ae98ecd7bda6e343000dfd77b899fc5bc075"
+        },
+        {
+          "source_id": "PROFILE-278ec733fd2a284a2a1d",
+          "source_url": "https://enveda.com/news/enveda-closes-130m-series-c-funding-to-deliver-multiple-clinical-readouts-from-a-pipeline-of-10-development-candidates/",
+          "source_title": "Enveda Closes $130M Series C Funding to Deliver Multiple Clinical Readouts from a Pipeline of 10 Development Candidates - Enveda",
+          "source_content_hash": "35e46e0b7d563b7cca97ee5cd65117b645c3ef61c5bf5e0529f366730658ffc1",
+          "quote": "announced today an oversubscribed $130 million Series C funding round led by Kinnevik and FPV with participation from new and existing investors Baillie Gifford",
+          "quote_hash": "fe196f487ddaf0bd297952fefa9a8bbe718ccda3258351011f71001dfcff35b4"
+        },
         {
           "source_id": "FISRC-921d200ac951683e",
           "source_url": "https://enveda.com/news/enveda-closes-130m-series-c-funding-to-deliver-multiple-clinical-readouts-from-a-pipeline-of-10-development-candidates/",
@@ -145,7 +184,7 @@
           "quote_hash": "4f5f7abbd043a57151cc5c4f79582103b1a2f7ebcc3964b0ae567db9c4b85f1e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

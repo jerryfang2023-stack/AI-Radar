@@ -121,21 +121,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "领屹资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅据一则融资报道记录“领屹资本”这一投资者标签；未将其映射到相似名称的基金管理人或其他法律主体。",
+      "summary": "新华日报财经报道将“领屹资本”列为知跃空间智能融资参与方。现有材料未披露该标签对应的法律实体或基金产品，本档案只保留该项公开投资活动。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "新华日报财经报道知跃空间智能于2026年4月完成连续融资，并将领屹资本列为参与机构之一。",
+          "source_id": "lingyi-zhiyue-financing"
+        },
         {
           "description": "融资来源记录：知跃空间智能 · 历史轮次未披露 · 天使+++轮与天使++++轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a95bc04f597cc922"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅据一则融资报道记录“领屹资本”这一投资者标签；未将其映射到相似名称的基金管理人或其他法律主体。",
       "sources": [
+        {
+          "source_id": "lingyi-zhiyue-financing",
+          "source_url": "https://www.xhby.net/content/s69de2be0e4b0bea6a5ad2846.html",
+          "source_title": "创投观察站｜“赛博果蝇”引爆脑科学赛道，无锡这家类脑公司一个月连融两轮",
+          "source_content_hash": "600febcbb4617cb8323ba90c32985ee2c35200ea2850a39209143d9b24b8ab38",
+          "quote": "驰星资本、领屹资本等多家机构联合入局",
+          "quote_hash": "578da85479fa04524be62cfcd6f4f1dd2bc1bccebd22ba1a3c329fe4afb2879d"
+        },
         {
           "source_id": "FISRC-a95bc04f597cc922",
           "source_url": "https://www.xhby.net/content/s69de2be0e4b0bea6a5ad2846.html",
@@ -145,7 +161,7 @@
           "quote_hash": "54f0994a3c6d9edf8f68321c879b1339a4a22bcc4bc44b46bbc3408c6f366b93"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

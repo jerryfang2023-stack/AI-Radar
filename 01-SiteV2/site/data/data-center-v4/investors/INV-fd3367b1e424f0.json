@@ -178,14 +178,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Autodesk 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据Autodesk与World Labs双方的官方融资说明；未推断其投资部门、基金载体或完整投资组合。",
+      "summary": "Autodesk官方新闻稿确认公司对World Labs作出2亿美元战略投资；World Labs的融资公告也将Autodesk列为投资方。此档案仅记录已披露的战略投资案例。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Autodesk官方新闻稿称其对World Labs作出2亿美元战略投资。",
+          "source_id": "autodesk-worldlabs-official"
+        },
         {
           "description": "融资来源记录：World Labs · 其他融资 · 2026-02-18 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f911788bc29402eb"
@@ -196,7 +200,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据Autodesk与World Labs双方的官方融资说明；未推断其投资部门、基金载体或完整投资组合。",
       "sources": [
+        {
+          "source_id": "autodesk-worldlabs-official",
+          "source_url": "https://adsknews.autodesk.com/en/news/autodesk-invests-in-world-labs/",
+          "source_title": "Autodesk invests $200 million in World Labs | Autodesk News",
+          "source_content_hash": "572dda41c790765ed2a73dc1f435d21b3f98e48a887b539c083d83a59b778af4",
+          "quote": "Autodesk has made a strategic investment of $200 million in World Labs",
+          "quote_hash": "ca22f08e8b6a8ce9240c9207dd670a9cebfde2fc66f5cbb96fc4ae0a88a3c35c"
+        },
+        {
+          "source_id": "worldlabs-investor-list-autodesk",
+          "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+          "source_title": "World Labs Announces New Funding | World Labs",
+          "source_content_hash": "219b5588b944697e8708dd86684a58e3be9e0deb4df332c606d3333db2ddf1a0",
+          "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk",
+          "quote_hash": "e290ad97264d0f0a7668bd6b01e6fc1dcafc16983a5fc38feeb637e4be99528d"
+        },
         {
           "source_id": "FISRC-f911788bc29402eb",
           "source_url": "https://www.worldlabs.ai/blog/funding-2026",
@@ -214,7 +238,7 @@
           "quote_hash": "2903308aa2ec185dc490baa2f68db98bb0ebd35cac0545ca15394b44a5bd26ee"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

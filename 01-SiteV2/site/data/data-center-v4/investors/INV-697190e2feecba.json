@@ -139,24 +139,55 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Aero X Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Aero X Ventures 官网自述为投资深科技的 operator-led venture firm，并列出其技术投资领域。Claros 的公司公告列出 Aero X Ventures 为 Claros 融资参与方之一；未披露该机构的单独出资额。",
+      "summary": "Aero X Ventures 自述为投资深科技的 operator-led 风险投资机构，关注自主系统、人工智能、机器人、航空航天和太空基础设施。Claros 2026 年融资公告将 Aero X Ventures 列为新老投资者之一，未披露其单独出资金额。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "Aero X Ventures 官网列出的关注领域包括自主系统、人工智能、机器人、航空航天及太空基础设施。",
+          "source_id": "aerox-official-focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Claros 的官方融资报道列 Aero X Ventures 为其新老投资者之一；本条不推定该机构的个别投资金额。",
+          "source_id": "aerox-claros-round-2026"
+        },
         {
           "description": "融资来源记录：Claros · 种子轮 · 2026-03-19 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2877a4b61010da1c"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构方向取自 Aero X Ventures 官网自述；Claros 融资参与来自被投企业披露。",
       "sources": [
         {
-          "source_id": "FISRC-2877a4b61010da1c",
+          "source_id": "aerox-official-focus",
+          "source_url": "https://www.axv.vc/",
+          "source_title": "AXV · Aero X Ventures",
+          "source_content_hash": "5cca7f22b0d6c2cccf0ae92149cd1fd277c99acfda9ed7dcab4209d9400b4049",
+          "quote": "Aero X Ventures is an operator-led venture firm backing deep technology.",
+          "quote_hash": "fef536a40e1c2f7f7b33b8afd7bfbcd079c900c77bb1077701178a46e9b7e4cb"
+        },
+        {
+          "source_id": "aerox-claros-round-2026",
           "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
           "source_title": "Redefining Data Center Energy Infrastructure from Chip to Grid - Claros",
           "source_content_hash": "eb7045e28cb8eed2d595772f7266d9e7b5ba6089d2283cda9760f0253f16a466",
+          "quote": "with participation from new and existing investors like Systemiq Capital, Aero X Ventures, Trenches Capital, a leading power semiconductor provider, and others",
+          "quote_hash": "75f250f9e1e2da232df857edf46f43289d46b239e77ace5b6dc2dad10a43e6e5"
+        },
+        {
+          "source_id": "FISRC-2877a4b61010da1c",
+          "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
+          "source_title": "从芯片到电网重新定义数据中心能源基础设施",
+          "source_content_hash": "904713ab4fa86f2ea7546f7229f8bfca76272454fd1556e862479e67cf57708e",
           "quote": "with participation from new and existing investors like Systemiq Capital, Aero X Ventures, Trenches Capital, a leading power semiconductor provider, and others",
           "quote_hash": "75f250f9e1e2da232df857edf46f43289d46b239e77ace5b6dc2dad10a43e6e5"
         }

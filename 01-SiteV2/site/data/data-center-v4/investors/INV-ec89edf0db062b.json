@@ -137,21 +137,52 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Banc Sabadell 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "Banco Sabadell 官网介绍其为西班牙私人银行集团；NeuralTrust 官方融资公告列出 Banc Sabadell 为参与方，未说明具体投资工具或金额。",
+      "summary": "Banc Sabadell 是西班牙银行集团。NeuralTrust 官方公告将 Banc Sabadell 列为其 2026 年 seed 融资参与方；公告未披露其参与方式或金额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露的机构身份",
+          "value": "西班牙私人银行集团。",
+          "source_id": "PROFILE-bb0294613d70f5477d9f"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "NeuralTrust 官方公告将 Banc Sabadell 列为 2026 年 seed 轮参与方；未披露其出资金额。",
+          "source_id": "PROFILE-3dc64b02700afb52d60f"
+        },
         {
           "description": "融资来源记录：NeuralTrust · 种子轮 · 2026-06-17 · 本轮参投 · €17.2 million ($20 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a0d2741d3dddcef"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-bb0294613d70f5477d9f",
+          "source_url": "https://comunicacion.grupbancsabadell.com/en/about-us/",
+          "source_title": "About us - Banc Sabadell - Comunicación",
+          "source_content_hash": "5ee4a9cdf13183509980ef6d1423fe467d845b3f95be52bb6fc688914148c856",
+          "quote": "Banco Sabadell is the fourth largest private banking group in Spain .",
+          "quote_hash": "aa7e5067664e4c08c0284fb5eb3f1b6ca26e034f6413ea863c5fc00ff839fb2a"
+        },
+        {
+          "source_id": "PROFILE-3dc64b02700afb52d60f",
+          "source_url": "https://neuraltrust.ai/news/neuraltrust-raises-20m",
+          "source_title": "NeuralTrust raises $20M to secure the growing swarm of AI agents in the enterprise | NeuralTrust",
+          "source_content_hash": "2fb2a80a458d4e07ef6a2e1d26d967064b17ab43b719d7ae88a18554eb158343",
+          "quote": "The round was led by Alstin Capital, with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves, the venture capital fund of IESE Business School.",
+          "quote_hash": "b9f9ff5d85e76e71f3951a3c1ff47baa188b55a9dbf8ac4407d64e8e484f9a6f"
+        },
         {
           "source_id": "FISRC-7a0d2741d3dddcef",
           "source_url": "https://www.eu-startups.com/2026/06/barcelona-based-neuraltrust-raises-e17-2-million-to-secure-and-govern-enterprise-ai-agents/",
@@ -161,7 +192,7 @@
           "quote_hash": "ae1bb77e5a724b53c15c856ac390016abe90e7b84758fc53ffce26d2683c610d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
