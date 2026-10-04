@@ -1,6 +1,8 @@
 # Unified Operations Console
 
-Release baseline: OPS-V3.9.0-search-ai-growth / Skill Store v2.4.0
+Release baseline: OPS-V3.10.0-google-search-sync / Skill Store v2.4.0
+
+Google Search Console adds administrator-initiated read-only OAuth and daily 09:00 Asia/Shanghai synchronization for PC Search Analytics. See [setup, reporting and credential boundaries](google-search-console.md). The exact Google callback is an anonymous, one-time code staging page; completing the connection requires the initiating OPS session and CSRF. It does not expose dashboard data.
 
 Historical funding quality adds a separate monthly census view: discovery rows, captured originals, verified China events, corresponding-round cards, unresolved sources and secondary-search failures. Index rows and same-company cards cannot be reported as completed financing cases. Its completion status remains independent of the daily monitor.
 

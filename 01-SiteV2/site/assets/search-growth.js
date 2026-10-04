@@ -4,6 +4,8 @@
   const $ = selector => root.querySelector(selector);
   const state = {days:30, authenticated:false, csrf:'', epoch:0, readId:0, started:false, importing:false};
   let controller;
+  let googleBusy=false,googleTicket=new URL(location.href).searchParams.get('google_connect');
+  if(googleTicket){const u=new URL(location.href);u.searchParams.delete('google_connect');history.replaceState(null,'',u.pathname+u.search+u.hash);}
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const n = v => v == null ? '—' : new Intl.NumberFormat('zh-CN',{maximumFractionDigits:2}).format(v);
   const pct = v => v == null ? '—' : `${(v*100).toFixed(1)}%`;
@@ -23,11 +25,11 @@
     return reports.filter(r=>providers.includes(r.provider)).map(r=>{
       const m=r.metrics, date=r.dimensions.date;
       const values=r.provider.endsWith('_indexing') ? [['已收录',n(m.indexed)],['未收录',n(m.excluded)]] : r.provider==='bing_ai' ? [['引用次数',n(m.citations)],['被引用页面',n(m.citedPages)]] : r.provider==='google_ai' ? [['AI 搜索展现',n(m.impressions)]] : [['展现',n(m.impressions)],['点击',n(m.clicks)],['点击率',pct(m.ctr)],['平均排名',n(m.position)]];
-      const period=date ? `<p class="growth-note">报告周期 ${esc(date.startDate)} — ${esc(date.endDate)}${date.partialWindow?' · 当前周期覆盖不完整':''}<br>导入于 ${esc(stamp(date.importedAt))}</p>` : '';
+      const period=date ? `<p class="growth-note">报告周期 ${esc(date.startDate)} — ${esc(date.endDate)}${date.partialWindow?' · 当前周期覆盖不完整':''}<br>${date.source==='google_api'?'Google API 自动同步':'导入于'} ${esc(stamp(date.importedAt))}</p>` : '';
       const detail=['page','query'].filter(d=>r.dimensions[d]).map(d=>{const data=r.dimensions[d],rows=data.rows;
         const metrics=r.provider==='bing_ai'?['citations']:r.provider==='google_ai'?['impressions']:['clicks','impressions'];
-        return `<details><summary>${d==='page'?'页面':'关键词'}明细</summary><p class="growth-note">${esc(data.startDate)} — ${esc(data.endDate)} · ${esc(stamp(data.importedAt))}</p>${table([d==='page'?'页面':'关键词',...metrics.map(k=>({clicks:'点击',impressions:'展现',citations:'引用次数'})[k])],rows.slice(0,30).map(row=>[row[d],...metrics.map(k=>n(row[k]))]))}</details>`;}).join('');
-      const trend=date&&!r.provider.endsWith('_indexing')?table(['日期',r.provider==='bing_ai'?'引用次数':'展现'],date.rows.slice(-14).map(row=>[row.date,n(row.citations??row.impressions)])):'';
+        return `<details><summary>${d==='page'?'页面':'关键词'}明细</summary><p class="growth-note">${esc(data.startDate)} — ${esc(data.endDate)} · ${esc(stamp(data.importedAt))}${data.topRowsOnly?'<br>API 返回热门明细，可能省略部分记录':''}</p>${table([d==='page'?'页面':'关键词',...metrics.map(k=>({clicks:'点击',impressions:'展现',citations:'引用次数'})[k])],rows.slice(0,30).map(row=>[row[d],...metrics.map(k=>n(row[k]))]))}</details>`;}).join('');
+      const trend=date&&!r.provider.endsWith('_indexing')?(r.provider==='google_search'?`<details><summary>每日展现、点击、点击率及平均排名</summary>${table(['日期','展现','点击','点击率','平均排名'],date.rows.map(row=>[row.date,n(row.impressions),n(row.clicks),pct(row.impressions?row.clicks/row.impressions:null),n(row.position)]))}</details>`:table(['日期',r.provider==='bing_ai'?'引用次数':'展现'],date.rows.slice(-14).map(row=>[row.date,n(row.citations??row.impressions)]))):'';
       return `<article class="growth-card"><h3>${esc(r.label)}</h3><p class="growth-note">${esc(labels[r.status]||r.status)}</p><div class="growth-report-metrics">${values.map(([label,value])=>`<div>${esc(label)}<strong>${value}</strong></div>`).join('')}</div>${period}${detail}${trend}</article>`;
     }).join('');
   }
@@ -38,6 +40,7 @@
     const max=Math.max(1,...t.trend.map(r=>r.sessions));
     $('[data-growth-trend]').innerHTML=t.trend.length?`<div class="growth-chart" role="img" aria-label="每日访问会话趋势">${t.trend.map((r,i)=>`<div class="growth-day" title="${esc(r.date)}：${r.sessions} 会话"><i style="height:${Math.max(2,r.sessions/max*100)}px"></i><span>${i===0||i===t.trend.length-1?esc(r.date.slice(5)):''}</span></div>`).join('')}</div>`:'';
     $('[data-growth-search]').innerHTML=renderReports(data.reports,['google_search','bing_search','baidu_search']);
+    renderGoogle(data.googleConnection);
     $('[data-growth-ai-platforms]').innerHTML=renderReports(data.reports,['google_ai','bing_ai']);
     $('[data-growth-evaluations]').innerHTML=table(['平台','状态','已评测回答','网站引用率','事实已核验','核验正确','核验错误'],data.evaluation.engines.map(r=>[r.engine,labels[r.status],n(r.observations),pct(r.citationRate),n(r.accuracyReviewed),n(r.correct),n(r.incorrect)]))+
       data.evaluation.engines.filter(r=>r.citedPages.length).map(r=>`<details><summary>${esc(r.engine)} · 被引用页面 ${r.citedPages.length}</summary><p class="growth-note">最近观察 ${esc(stamp(r.lastObservedAt))}</p>${r.citedPages.map(u=>`<p>${safePageLink(u)}</p>`).join('')}</details>`).join('');
@@ -49,6 +52,34 @@
     $('[data-growth-content]').hidden=false;
   }
   function status(message,error=false) {const el=$('[data-growth-status]');el.textContent=message;el.classList.toggle('is-error',error);}
+  function renderGoogle(data={}) {
+    const statuses={not_configured:'未配置',not_connected:'待授权',connected:'已连接',reauthorize:'需重新授权',queued:'等待同步',syncing:'正在同步',failed:'同步失败'};
+    $('[data-growth-google-state]').textContent=statuses[data.status]||'未配置';
+    $('[data-growth-google-freshness]').textContent=`最近同步：${data.syncedAt?stamp(data.syncedAt):'尚未同步'} · 最新数据日期：${data.latestDataDate||'未记录'}`;
+    const connect=$('[data-growth-google=connect]');connect.textContent=data.connected?'重新授权':'连接 Google';connect.disabled=googleBusy||!data.configured;
+    for(const action of ['sync','disconnect'])$(`[data-growth-google=${action}]`).disabled=googleBusy||!data.connected||(action==='sync'&&['queued','syncing','reauthorize'].includes(data.status));
+    if(data.message)$('[data-growth-google-message]').textContent=data.message;
+    else if(!data.configured)$('[data-growth-google-message]').textContent='请先配置 Google OAuth 网页客户端。';
+  }
+  async function googleAction(action,ticket) {
+    if(!state.authenticated||googleBusy)return;
+    googleBusy=true;const epoch=state.epoch,current=()=>state.authenticated&&epoch===state.epoch;
+    root.querySelectorAll('[data-growth-google]').forEach(b=>b.disabled=true);
+    $('[data-growth-google-message]').textContent='正在处理…';
+    try {
+      const response=await fetch(`/ops/growth-api/google/${action}`,{method:'POST',credentials:'same-origin',cache:'no-store',headers:{'Content-Type':'application/json','X-CSRF-Token':state.csrf},body:JSON.stringify(ticket?{ticket}:{})});
+      const data=await response.json();if(!current())return;
+      if(response.status===401){document.dispatchEvent(new Event('operations:session-expired'));return;}
+      if(!response.ok)throw Error(data.error?.message||'操作失败，请重试');
+      if(action==='connect'){
+        const u=new URL(data.authorizationUrl);
+        if(u.origin!=='https://accounts.google.com'||u.pathname!=='/o/oauth2/auth'||u.username||u.password)throw Error('授权链接无效，请重试');
+        location.assign(u.href);return;
+      }
+      $('[data-growth-google-message]').textContent=({finish:'授权已完成，等待首次同步',sync:'已提交同步请求',disconnect:'已断开连接'})[action];
+    }catch(error){if(current())$('[data-growth-google-message]').textContent=error.message||'操作失败，请重试';}
+    finally{if(current()){googleBusy=false;await load();}}
+  }
   async function load() {
     if(!state.authenticated)return;
     state.started=true; const id=++state.readId,epoch=state.epoch;
@@ -126,10 +157,11 @@
   }
   root.querySelectorAll('[data-growth-days]').forEach(button=>button.addEventListener('click',()=>{state.days=Number(button.dataset.growthDays);root.querySelectorAll('[data-growth-days]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));load();}));
   $('[data-growth-refresh]').addEventListener('click',load);
+  root.querySelectorAll('[data-growth-google]').forEach(b=>b.addEventListener('click',()=>googleAction(b.dataset.growthGoogle)));
   $('[data-growth-form]').addEventListener('submit',importReport);
   $('[data-growth-template]').addEventListener('click',()=>{template().catch(()=>{if(state.authenticated)$('[data-growth-import-status]').textContent='模板读取失败，请重试';});});
   root.addEventListener('growth:open',()=>{if(!state.started)load();});
-  function clear(){state.epoch++;state.readId++;state.started=false;state.importing=false;controller?.abort();$('[data-growth-content]').hidden=true;for(const name of ['kpis','channels','trend','search','ai-platforms','evaluations','indexing','health'])$(`[data-growth-${name}]`).innerHTML='';$('[data-growth-updated]').textContent='';$('[data-growth-question-count]').textContent='';$('[data-growth-form]').reset();$('[data-growth-submit]').disabled=false;$('[data-growth-import-status]').textContent='';status('登录后可查看');}
+  function clear(){state.epoch++;state.readId++;state.started=false;state.importing=false;googleBusy=false;controller?.abort();$('[data-growth-content]').hidden=true;for(const name of ['kpis','channels','trend','search','ai-platforms','evaluations','indexing','health'])$(`[data-growth-${name}]`).innerHTML='';for(const name of ['state','freshness','message'])$(`[data-growth-google-${name}]`).textContent='';root.querySelectorAll('[data-growth-google]').forEach(b=>b.disabled=true);$('[data-growth-updated]').textContent='';$('[data-growth-question-count]').textContent='';$('[data-growth-form]').reset();$('[data-growth-submit]').disabled=false;$('[data-growth-import-status]').textContent='';status('登录后可查看');}
   document.addEventListener('operations:logout',()=>{state.authenticated=false;state.csrf='';clear();});
-  document.addEventListener('operations:authenticated',event=>{clear();state.authenticated=true;state.csrf=event.detail?.csrfToken||'';if(root.classList.contains('is-active'))load();});
+  document.addEventListener('operations:authenticated',event=>{clear();state.authenticated=true;state.csrf=event.detail?.csrfToken||'';if(googleTicket){const ticket=googleTicket;googleTicket=null;googleAction('finish',ticket);}else if(root.classList.contains('is-active'))load();});
 })();
