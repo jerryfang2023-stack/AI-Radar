@@ -6,7 +6,8 @@ export function planFundingResearch({ company, event = {}, amountHint = "", offi
   const name = clean(company.canonical_name || company.name);
   if (name.length < 2) throw new Error("research_company_identity_required");
   const aliases = (company.aliases || []).map(clean).filter((alias) => alias.length > 1 && alias !== name);
-  const short = name.replace(/(?:科技)?(?:有限责任公司|股份有限公司|有限公司)$/u, "");
+  const short = name.replace(/[（(][^()（）]{1,12}[)）](?=(?:科技)?(?:有限责任公司|股份有限公司|有限公司)$)/u, "")
+    .replace(/(?:科技)?(?:有限责任公司|股份有限公司|有限公司)$/u, "");
   if (short.length > 1 && short !== name) aliases.unshift(short);
   const year = clean(event.disclosed_at || event.event_time).slice(0, 4);
   const dateHint = /^\d{4}$/u.test(year) ? year : "";

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-03",
-    "currentDate": "2026-10-03",
-    "eventCount": 3909,
+    "latestDataDate": "2026-10-04",
+    "currentDate": "2026-10-04",
+    "eventCount": 3920,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -59,6 +59,7 @@
     "typeLabel": "行业",
     "valueId": "financial_services",
     "eventIds": [
+      "EV-7f10b7d013a91292",
       "EV-7f89984c1b858df2",
       "EV-1715439efc5423dd",
       "EV-f7c48f02fd8618a2",
@@ -169,6 +170,7 @@
       "EV-889f518dcce85a8f"
     ],
     "entityIds": [
+      "EN-6aa1fcea0024c6ce",
       "EN-72cf2441fa286574",
       "EN-02d6646fb8486fbd",
       "EN-c5ac1a63ca842842",
@@ -282,9 +284,169 @@
       "HW-a033b945449628d5"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-10-03"
+    "lastSeen": "2026-10-04"
   },
   "events": [
+    {
+      "id": "EV-7f10b7d013a91292",
+      "dataDate": "2026-10-04",
+      "date": "2026-10-01",
+      "updatedDate": "2026-10-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
+      "originalTitle": "GMI Cloud Raises Over $660 Million to Accelerate Global AI Infrastructure Expansion",
+      "subject": "GMI Cloud",
+      "action": "Raises",
+      "object": "Over $660 Million to Accelerate Global AI Infrastructure Expansion",
+      "metrics": [
+        "$668 million",
+        "$223 million",
+        "$445 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-6aa1fcea0024c6ce"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-6aa1fcea0024c6ce"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-6aa1fcea0024c6ce"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-6aa1fcea0024c6ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-6aa1fcea0024c6ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-6aa1fcea0024c6ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-6aa1fcea0024c6ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-6aa1fcea0024c6ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-6aa1fcea0024c6ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a45ef5d3ef7f13e0",
+        "EN-6aa1fcea0024c6ce",
+        "EN-8d4321d936320802",
+        "EN-99d3fd0fa8fe115e",
+        "EN-def8af4b884c8e3a"
+      ],
+      "entityNames": [
+        "MOUNTAIN VIEW",
+        "GMI Cloud",
+        "NVIDIA",
+        "KT",
+        "Alex Yeh"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+      "publisher": "www.prnewswire.com"
+    },
     {
       "id": "EV-7f89984c1b858df2",
       "dataDate": "2026-10-02",
@@ -609,7 +771,7 @@
     },
     {
       "id": "EV-bbea3352983c2033",
-      "dataDate": "2026-10-03",
+      "dataDate": "2026-10-04",
       "date": "2026-09-28",
       "updatedDate": "2026-09-28",
       "eventType": "funding",
@@ -38893,6 +39055,31 @@
   ],
   "entities": [
     {
+      "id": "EN-6aa1fcea0024c6ce",
+      "name": "GMI Cloud",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-72c91001092a54bd",
+        "EV-7f10b7d013a91292"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-use_case-physical_automation",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-04"
+    },
+    {
       "id": "EN-72cf2441fa286574",
       "name": "Halluminate",
       "entityType": "organization_candidate",
@@ -38977,7 +39164,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-04"
     },
     {
       "id": "EN-e7d56af70143fcd7",
@@ -39778,6 +39965,7 @@
         "EV-30f48175b61772d4",
         "EV-2a5803953f698f4c",
         "EV-3a27caf6bc0e0edb",
+        "EV-c382b1cd56a3251f",
         "EV-0eea367f43810ec7",
         "EV-9ebb69d4965d1f23",
         "EV-4a963531f57c551a",
@@ -39907,8 +40095,8 @@
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-target_user-developer",
-        "TX-product_form-chip_accelerator",
         "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
@@ -39966,7 +40154,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-04"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -39985,6 +40173,7 @@
         "EV-a3de7b1a00fbf8a9",
         "EV-39247400114d59dd",
         "EV-72c91001092a54bd",
+        "EV-7f10b7d013a91292",
         "EV-4c5dc2fc6d805b3f",
         "EV-eb2796fc4bcc5ac0",
         "EV-471bf7c00cc06c85",
@@ -40118,6 +40307,7 @@
         "EV-58c1cc3749294649",
         "EV-6f6d5ec3dab0651c",
         "EV-72a9b0250c1c9435",
+        "EV-f4da30e35343eda7",
         "EV-8061c8eb754e0542",
         "EV-857d7186b873e0ed",
         "EV-9ced0afc6d0d1f63",
@@ -40286,9 +40476,9 @@
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-product_form-chip_accelerator",
-        "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-physical_automation",
@@ -40362,7 +40552,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-04"
     },
     {
       "id": "EN-22f5eb5f2bfabefd",
@@ -42120,6 +42310,7 @@
         "EV-5c62ce9bd2be9f1b",
         "EV-830c323ebeca22d6",
         "EV-c0b05b1e6af8ec14",
+        "EV-f4da30e35343eda7",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -42535,9 +42726,9 @@
         "TX-target_user-consumer",
         "TX-target_user-developer",
         "TX-use_case-content_creation",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-product_form-chip_accelerator",
-        "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
@@ -42597,7 +42788,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-04"
     },
     {
       "id": "EN-376967c5f350003c",
@@ -43012,6 +43203,7 @@
       "eventIds": [
         "EV-a3de7b1a00fbf8a9",
         "EV-1c7050585c7f4791",
+        "EV-2aa827a397a551d1",
         "EV-42a74865c9b654bb",
         "EV-5b5237105fc868cd",
         "EV-98ea446e097a9a95",
@@ -43327,8 +43519,8 @@
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-target_user-developer",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
@@ -43380,7 +43572,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-04"
     },
     {
       "id": "EN-06b5472c16feae4c",
@@ -43464,8 +43656,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-product_form-chip_accelerator",
         "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-government_public_sector",

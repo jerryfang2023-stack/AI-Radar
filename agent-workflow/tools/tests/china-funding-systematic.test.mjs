@@ -74,10 +74,11 @@ test("historical funding cannot reuse another disclosure by company and round la
 
 test("domestic card research covers missing financing and company/product fields in Chinese", () => {
   const queries = domesticFundingResearchQueries("案例公司", "数亿元", "2026-03-01");
-  assert.equal(queries.length, 4);
+  assert.ok(queries.length <= 6);
+  assert.deepEqual(new Set(queries.map(item => item.intent)), new Set(['event_discovery', 'funding', 'product', 'investor_rationale']));
   assert.ok(domesticFundingResearchQueries("智子芯元(深圳)科技有限公司", "数千万元", "2026-03-01").some(item => item.query.includes('"智子芯元"')));
   assert.ok(queries.every((item) => item.query.includes("案例公司")));
-  for (const field of ["2026", "金额", "投资方", "产品", "总部", "融资用途"]) assert.ok(queries.map((item) => item.query).join(" ").includes(field));
+  for (const field of ["2026", "数亿元", "投资方", "产品", "总部", "融资用途"]) assert.ok(queries.map((item) => item.query).join(" ").includes(field));
 });
 
 const index = (day, name = "案例公司") => `<div id="invest-list"><div class="item"><div class="t"><span>A轮</span><span>数亿元</span></div><div class="d">${day}</div><h3><a href="https://vc.pedaily.cn/company/123.html">${name}</a></h3><div class="ai-summary">不可作为事实的生成摘要</div></div></div>`;

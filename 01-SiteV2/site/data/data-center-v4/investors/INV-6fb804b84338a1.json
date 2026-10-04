@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-03",
-    "currentDate": "2026-10-03",
-    "eventCount": 3909,
+    "latestDataDate": "2026-10-04",
+    "currentDate": "2026-10-04",
+    "eventCount": 3920,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
@@ -72,11 +72,43 @@
     "first_disclosed_at": "",
     "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-68b6bda928a8852d",
+        "funding_insight_id": "FI-e332024760e4f246",
+        "event_ids": [
+          "EV-7f10b7d013a91292"
+        ],
+        "company_entity_id": "EN-6aa1fcea0024c6ce",
+        "company_canonical_entity_id": "",
+        "company_name": "GMI Cloud",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "信贷融资领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+            "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote": "comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC",
+            "quote_hash": "a07d3b31932f08252a5d591cd545158a423441fe03a3d553dafc6d3652fce2aa"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0c65757f831b84a0",
         "funding_insight_id": "FI-f674fbdbe195b88e",
@@ -112,6 +144,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cf3eb2b83c7e750b",
+        "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+        "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
+        "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+        "quote": "comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC",
+        "quote_hash": "a07d3b31932f08252a5d591cd545158a423441fe03a3d553dafc6d3652fce2aa"
+      },
+      {
         "source_id": "FISRC-f5de203e610041a3",
         "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
         "source_title": "亚洲摘要：Zeya Health 收购 ConnectLah；亚洲投资者支持 GMI Cloud 的 6.68 亿美元融资",
@@ -145,6 +185,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：GMI Cloud · 历史轮次未披露 · 信贷融资领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf3eb2b83c7e750b"
+        },
+        {
           "description": "融资来源记录：GMI Cloud · 历史轮次未披露 · 信贷额度牵头方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f5de203e610041a3"
         }
@@ -174,6 +218,14 @@
           "source_content_hash": "afe3ed30e63a01d46fe1fcc6a3e0a44990d1df40701a287eb232d5c59bc7f23f",
           "quote": "中國信託創業投資股份有限公司成立於92年，為中信金控100%持股之子公司，主要業務為投資具有發展潛力之未上市櫃公司，對象包括資訊通訊產業、綠色科技產業、生技醫療產業、民生消費、文化創意產業、資訊軟體服務業與經營績效良好且具成長潛力之傳統產業等。",
           "quote_hash": "ca41b7efa0b14eaa2e81b8d42bf0790d28d7ef39d5a2e49ce1050986bb40c598"
+        },
+        {
+          "source_id": "FISRC-cf3eb2b83c7e750b",
+          "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+          "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
+          "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+          "quote": "comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC",
+          "quote_hash": "a07d3b31932f08252a5d591cd545158a423441fe03a3d553dafc6d3652fce2aa"
         },
         {
           "source_id": "FISRC-f5de203e610041a3",

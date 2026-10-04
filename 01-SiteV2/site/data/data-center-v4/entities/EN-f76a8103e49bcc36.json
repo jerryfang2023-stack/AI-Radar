@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-03",
-    "currentDate": "2026-10-03",
-    "eventCount": 3909,
+    "latestDataDate": "2026-10-04",
+    "currentDate": "2026-10-04",
+    "eventCount": 3920,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -77,7 +77,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-28",
-    "lastSeen": "2026-10-03",
+    "lastSeen": "2026-10-04",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -93,7 +93,7 @@
     "timeline": [
       {
         "id": "EV-1ef8979f39a2ccc5",
-        "dataDate": "2026-10-03",
+        "dataDate": "2026-10-04",
         "date": "2026-09-28",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -198,7 +198,9 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-9632fa302d64e821",
         "EV-1c7050585c7f4791",
+        "EV-2aa827a397a551d1",
         "EV-39247400114d59dd",
         "EV-42a74865c9b654bb",
         "EV-7c43338b102d18f2",
@@ -848,6 +850,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-4d7594e57f7d03f3",
         "EN-f8223ea5a9c41813",
         "EN-0d0dd4bc07420a2c",
         "EN-aeb82e4e68b4f60f",
@@ -1327,7 +1330,6 @@
         "EV-f2950d2104e97163",
         "EV-1ef8979f39a2ccc5",
         "EV-51221c8be7d20b5d",
-        "EV-9ea3912efd857ad8",
         "EV-bbea3352983c2033",
         "EV-3d0b9dcdf8daec4c",
         "EV-0d0b83c319d971b0",
@@ -1543,7 +1545,6 @@
         "EN-50d7f4250bdd8888",
         "EN-f76a8103e49bcc36",
         "EN-132106a20b11b49b",
-        "EN-40a9543b0f7b0cf9",
         "EN-f395aeb2c6e6abc8",
         "EN-190832408e35096c",
         "EN-ef5cac7907b28194",
@@ -1729,7 +1730,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-04"
     },
     {
       "id": "TX-use_case-physical_automation",
@@ -1739,6 +1740,7 @@
       "valueId": "physical_automation",
       "eventIds": [
         "EV-72c91001092a54bd",
+        "EV-7f10b7d013a91292",
         "EV-471bf7c00cc06c85",
         "EV-1ef8979f39a2ccc5",
         "EV-0d0b83c319d971b0",
@@ -2171,7 +2173,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-04"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -2432,7 +2434,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-04"
     },
     {
       "id": "TX-industry-aerospace_defense",
@@ -2537,7 +2539,7 @@
         "HW-5aa85a1a004480c8"
       ],
       "firstSeen": "2026-01-22",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-04"
     },
     {
       "id": "TX-industry-automotive_transportation",
@@ -2685,7 +2687,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-04"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -2935,7 +2937,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-04"
     }
   ],
   "fde": [],
@@ -2944,13 +2946,13 @@
     {
       "id": "HWC-44203d15d2d13a56",
       "snapshotKey": "44203d15d2d13a56",
-      "snapshotId": "HWS-24a583eadad4450a",
+      "snapshotId": "HWS-fbafa7d1e1ad73d5",
       "eventId": "EV-1ef8979f39a2ccc5",
       "eventIds": [
         "EV-1ef8979f39a2ccc5"
       ],
-      "dataDate": "2026-10-03",
-      "date": "2026-10-03",
+      "dataDate": "2026-10-04",
+      "date": "2026-10-04",
       "title": "Physical AI company SiMa.ai",
       "subject": "Physical AI company SiMa.ai",
       "productNames": [],
@@ -2962,12 +2964,21 @@
         "specification": {
           "metric_value": "1000",
           "unit": "TOPS",
-          "fact_ref": "HWF-25e58b0e53eb1c5f"
+          "fact_ref": "HWF-6ea991a91fe5d48d"
         }
       },
       "factCount": 1,
-      "snapshotCount": 2,
+      "snapshotCount": 3,
       "changes": [
+        {
+          "date": "2026-10-04",
+          "previousDate": "2026-10-03",
+          "snapshotId": "HWS-fbafa7d1e1ad73d5",
+          "previousSnapshotId": "HWS-24a583eadad4450a",
+          "changedFacts": [
+            "specification"
+          ]
+        },
         {
           "date": "2026-10-03",
           "previousDate": "2026-10-02",
@@ -2982,8 +2993,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-10-03",
-          "hardware_fact_id": "HWF-25e58b0e53eb1c5f",
+          "data_date": "2026-10-04",
+          "hardware_fact_id": "HWF-6ea991a91fe5d48d",
           "fact_type": "specification",
           "observed_at": "2026-09-28",
           "subject_entity_id": "EN-f76a8103e49bcc36",
@@ -2997,11 +3008,11 @@
           "event_refs": [
             "EV-1ef8979f39a2ccc5"
           ],
-          "claim_ref": "CL-1c12b40aecd5937b",
+          "claim_ref": "CL-aaefa6d7417c9940",
           "source_refs": [
             "SA-3acbf41a1b58d786"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-03/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-04/hardware-facts.json"
         }
       ],
       "capexFacts": [],
