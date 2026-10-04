@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-04",
     "currentDate": "2026-10-04",
-    "eventCount": 3920,
+    "eventCount": 3921,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -59,7 +59,6 @@
     "typeLabel": "技术",
     "valueId": "multimodal",
     "eventIds": [
-      "EV-ef480d3fa3165905",
       "EV-86838cc774b85116",
       "EV-06d2ebc330c7fc37",
       "EV-0e7e26604f059bd5",
@@ -163,7 +162,6 @@
       "EV-dd902b603e2e3dbc"
     ],
     "entityIds": [
-      "EN-35c294e2bd449f0a",
       "EN-573b998925ae7499",
       "EN-58e194f5f0d0d876",
       "EN-5d84834b49e22f3f",
@@ -241,92 +239,9 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-01-01",
-    "lastSeen": "2026-10-04"
+    "lastSeen": "2026-10-02"
   },
   "events": [
-    {
-      "id": "EV-ef480d3fa3165905",
-      "dataDate": "2026-10-04",
-      "date": "2026-09-30",
-      "updatedDate": "2026-09-30",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "从六名工程专业学生到1000万用户：Tryp.com 融资190万欧元",
-      "originalTitle": "From six engineering students to 10M users: Tryp.com raises €1.9M",
-      "subject": "From six engineering students to 10M users: Tryp.com",
-      "action": "raises",
-      "object": "€1.9M",
-      "metrics": [
-        "€1.9 million",
-        "€5.9 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态",
-          "entityIds": [
-            "EN-35c294e2bd449f0a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态",
-          "entityIds": [
-            "EN-35c294e2bd449f0a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态",
-          "entityIds": [
-            "EN-35c294e2bd449f0a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-35c294e2bd449f0a"
-      ],
-      "entityNames": [
-        "Traveltech Tryp.com"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://tech.eu/2026/09/30/from-six-engineering-students-to-10m-users-trypcom-raises-eur19m/",
-      "publisher": "tech.eu"
-    },
     {
       "id": "EV-86838cc774b85116",
       "dataDate": "2026-09-26",
@@ -20813,27 +20728,6 @@
   ],
   "entities": [
     {
-      "id": "EN-35c294e2bd449f0a",
-      "name": "Traveltech Tryp.com",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-ef480d3fa3165905"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-multimodal"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-04"
-    },
-    {
       "id": "EN-573b998925ae7499",
       "name": "深圳市范博特机器人有限公司",
       "entityType": "organization_candidate",
@@ -20852,12 +20746,12 @@
         "TX-target_user-consumer",
         "TX-use_case-physical_automation",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-multimodal",
         "TX-industry-education",
         "TX-target_user-student",
         "TX-use_case-education_learning",
         "TX-ai_market_category-physical_ai",
-        "TX-product_form-robotic_system"
+        "TX-product_form-robotic_system",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-22",
@@ -20879,11 +20773,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-consumer",
-        "TX-technology-multimodal",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-technology-multimodal",
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],
@@ -20961,10 +20855,10 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
-        "TX-technology-multimodal",
         "TX-industry-energy_utilities",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-use_case-data_analysis",
+        "TX-technology-multimodal",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-computing_infrastructure"
       ],
@@ -20995,9 +20889,9 @@
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
-        "TX-technology-multimodal",
         "TX-use_case-design_engineering",
         "TX-technology-embodied_ai",
+        "TX-technology-multimodal",
         "TX-product_form-ai_infrastructure_software",
         "TX-industry-logistics_supply_chain"
       ],
@@ -21047,8 +20941,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai"
+        "TX-technology-embodied_ai",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-27",
@@ -21095,8 +20989,8 @@
         "TX-target_user-consumer",
         "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-multimodal",
         "TX-industry-retail_ecommerce",
+        "TX-technology-multimodal",
         "TX-use_case-knowledge_search"
       ],
       "relatedEntityIds": [],
@@ -21141,8 +21035,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-multimodal",
-        "TX-product_form-end_user_application"
+        "TX-product_form-end_user_application",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-30",
@@ -21166,8 +21060,8 @@
         "TX-industry-media_entertainment",
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai"
+        "TX-technology-embodied_ai",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-23",
@@ -21206,10 +21100,10 @@
         "TX-target_user-consumer",
         "TX-target_user-developer",
         "TX-use_case-content_creation",
-        "TX-technology-multimodal",
         "TX-product_form-end_user_application",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
+        "TX-technology-multimodal",
         "TX-ai_market_subcategory-marketing",
         "TX-use_case-marketing"
       ],
@@ -21242,9 +21136,9 @@
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-technology-multimodal",
         "TX-use_case-data_analysis",
         "TX-industry-education",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-use_case-knowledge_search",
         "TX-industry-professional_services"
@@ -21276,10 +21170,10 @@
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
-        "TX-technology-multimodal",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-technology-multimodal",
         "TX-technology-video_generation"
       ],
       "relatedEntityIds": [],
@@ -21307,10 +21201,10 @@
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
-        "TX-technology-multimodal",
         "TX-industry-automotive_transportation",
         "TX-ai_market_category-physical_ai",
-        "TX-product_form-robotic_system"
+        "TX-product_form-robotic_system",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-30",
@@ -21335,8 +21229,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-physical_automation",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-multimodal",
-        "TX-use_case-research_discovery"
+        "TX-use_case-research_discovery",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-02",
@@ -21358,8 +21252,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai"
+        "TX-technology-embodied_ai",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-03",
@@ -21381,8 +21275,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-technology-multimodal",
-        "TX-use_case-education_learning"
+        "TX-use_case-education_learning",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-22",
@@ -21463,8 +21357,8 @@
         "TX-target_user-consumer",
         "TX-target_user-developer",
         "TX-use_case-content_creation",
-        "TX-technology-multimodal",
         "TX-industry-retail_ecommerce",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-product_form-model_api_service",
         "TX-technology-video_generation"
@@ -21559,9 +21453,9 @@
         "TX-target_user-public_sector_user",
         "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
-        "TX-technology-multimodal",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
+        "TX-technology-multimodal",
         "TX-industry-government_public_sector"
       ],
       "relatedEntityIds": [],
@@ -21610,11 +21504,11 @@
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
-        "TX-technology-multimodal",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-technology-multimodal",
         "TX-industry-telecommunications",
         "TX-product_form-ai_device",
         "TX-use_case-knowledge_search"
@@ -21683,8 +21577,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-multimodal",
         "TX-technology-embodied_ai",
+        "TX-technology-multimodal",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
@@ -21979,7 +21873,6 @@
       "eventIds": [
         "EV-a3de7b1a00fbf8a9",
         "EV-1c7050585c7f4791",
-        "EV-2aa827a397a551d1",
         "EV-42a74865c9b654bb",
         "EV-5b5237105fc868cd",
         "EV-98ea446e097a9a95",
@@ -22304,7 +22197,6 @@
         "TX-use_case-sales",
         "TX-use_case-legal_compliance",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
@@ -22313,6 +22205,7 @@
         "TX-technology-speech_audio",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-use_case-research_discovery",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
@@ -22505,10 +22398,10 @@
         "TX-target_user-business_user",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
-        "TX-technology-multimodal",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-speech_audio",
         "TX-use_case-data_analysis",
+        "TX-technology-multimodal",
         "TX-product_form-ai_device",
         "TX-technology-video_generation",
         "TX-technology-computer_use",
@@ -22619,9 +22512,9 @@
         "TX-product_form-model",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
-        "TX-technology-multimodal",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
@@ -22774,7 +22667,6 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
-        "EV-82cccfa64edb2c09",
         "EV-641d61c6b8506c06",
         "EV-a551ac76be0015af",
         "EV-b739349cfab7e41c",
@@ -22812,10 +22704,10 @@
         "TX-industry-manufacturing",
         "TX-use_case-sales",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-multimodal",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-use_case-data_analysis",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-ai_market_subcategory-sales",
         "TX-product_form-model_api_service",
@@ -22883,7 +22775,6 @@
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
         "TX-industry-financial_services",
-        "TX-technology-multimodal",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-industrials",
         "TX-industry-aerospace_defense",
@@ -22893,6 +22784,7 @@
         "TX-product_form-compute_cloud_service",
         "TX-industry-energy_utilities",
         "TX-use_case-data_analysis",
+        "TX-technology-multimodal",
         "TX-industry-government_public_sector",
         "TX-use_case-software_development",
         "TX-use_case-knowledge_search",
@@ -22945,8 +22837,8 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
-        "TX-technology-multimodal",
         "TX-use_case-data_analysis",
+        "TX-technology-multimodal",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-ai_development_orchestration",
         "TX-use_case-knowledge_search"
@@ -23207,7 +23099,6 @@
         "EV-4c5dc2fc6d805b3f",
         "EV-eb2796fc4bcc5ac0",
         "EV-471bf7c00cc06c85",
-        "EV-1ef8979f39a2ccc5",
         "EV-f53bfa2bb0275904",
         "EV-2470b13ea55496d0",
         "EV-6d92f16f6079fe38",
@@ -23518,12 +23409,10 @@
         "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
-        "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-technology-embodied_ai",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_support",
         "TX-technology-speech_audio",
         "TX-industry-energy_utilities",
         "TX-ai_market_application-chips",
@@ -23533,6 +23422,7 @@
         "TX-use_case-research_discovery",
         "TX-industry-education",
         "TX-product_form-robotic_system",
+        "TX-technology-multimodal",
         "TX-product_form-ai_infrastructure_software",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -23547,6 +23437,7 @@
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
         "TX-technology-long_context",
+        "TX-use_case-customer_support",
         "TX-technology-mixture_of_experts",
         "TX-technology-reasoning",
         "TX-deployment_model-cloud",
@@ -24011,12 +23902,10 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-82cccfa64edb2c09",
         "EV-5133905b22468322",
         "EV-8fd2621317a8a577",
         "EV-d7652e5b3dbe4620",
         "EV-641d61c6b8506c06",
-        "EV-30f48175b61772d4",
         "EV-2a5803953f698f4c",
         "EV-5961ed93ca6dae66",
         "EV-98a5bcde4600a029",
@@ -24161,18 +24050,17 @@
         "TX-industry-financial_services",
         "TX-industry-legal_services",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_support",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-technology-speech_audio",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
+        "TX-technology-multimodal",
         "TX-industry-government_public_sector",
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
@@ -24180,6 +24068,7 @@
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
         "TX-technology-long_context",
+        "TX-use_case-customer_support",
         "TX-technology-computer_use",
         "TX-technology-reasoning",
         "TX-technology-guardrails_safety",
@@ -24307,11 +24196,11 @@
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-physical_automation",
-        "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
         "TX-use_case-research_discovery",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -24347,8 +24236,8 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-use_case-content_creation",
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-17",
@@ -24482,8 +24371,8 @@
         "TX-use_case-content_creation",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
-        "TX-technology-multimodal",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-use_case-knowledge_search",
         "TX-technology-vision_language"

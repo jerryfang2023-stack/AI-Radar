@@ -61,7 +61,7 @@ export function productionPlan(date, directory, { extract = true } = {}) {
       [script('assert-funding-insights-v1'), '--all=true', '--frontstage=true'],
       [script('assert-investment-institutions-v1')],
       [script('assert-public-entity-profiles-v1')],
-      [script('assert-public-evidence-boundary')],
+      [script('assert-public-evidence-boundary'), d],
       [script('assert-taxonomy-consistency-v4-1')],
     ], outputs: ['01-SiteV2/site/data/funding-insights-v1.json'] },
   ];
