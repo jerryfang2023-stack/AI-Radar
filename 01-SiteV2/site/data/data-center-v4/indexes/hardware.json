@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-04",
     "currentDate": "2026-10-04",
-    "eventCount": 3920,
+    "eventCount": 3921,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -3654,6 +3654,67 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-6ac7b5370828f334",
+      "snapshotKey": "6ac7b5370828f334",
+      "snapshotId": "HWS-a5bf1025682f8812",
+      "eventId": "EV-7d2370277ab5ef6f",
+      "eventIds": [
+        "EV-7d2370277ab5ef6f"
+      ],
+      "dataDate": "2026-10-04",
+      "date": "2026-10-04",
+      "title": "Aignosis",
+      "subject": "Aignosis",
+      "productNames": [],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "4",
+          "unit": "₹crore",
+          "fact_ref": "HWF-c7afdf9f6af2b997"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-04",
+          "hardware_fact_id": "HWF-c7afdf9f6af2b997",
+          "fact_type": "specification",
+          "observed_at": "2026-10-01",
+          "subject_entity_id": "EN-c5a100d72ba4a90f",
+          "subject_name": "Aignosis",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_accelerator",
+          "metric_value": "4",
+          "unit": "₹crore",
+          "source_quote": "Aignosis has completed its CDSCO regulatory process and received Class B certification for its screening technology. It was also incubated at IIM Ahmedabad Ventures and selected for Google's 2025 Google for Startups Accelerator: AI First cohort.Healthtech startup Aignosis has raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures. The company plans to use the capital to expand its AI-assisted autism and developmental screening technology across India's healthcare ecosystem.Aignosis has completed its CDSCO regulatory process and received Class B certification for its screening technology. It was also incubated at IIM Ahmedabad Ventures and selected for Google's 2025 Google for Startups Accelerator: AI First cohort.“This funding marks a shift for Aignosis from building and validating the technology to taking it into the healthcare system at scale,” co-founder Raksheet Jain said. “Our focus now is to make autism screening more accessible, strengthen the referral pathway around it, and build a model that can work across both public and private healthcare settings.”Aignosis' system is designed to provide an initial screening layer for children aged 16 months to nine years. It uses a standard laptop and webcam to capture a short video built around nine stimulus modules, with computer vision analysing behavioural signals such as gaze, response to name and reactions to facial expressions.The resulting risk report indicates whether a formal clinical assessment may be warranted and is not intended to provide a diagnosis. According to the company, its technology has been evaluated against established clinical assessments and expert judgement.The startup primarily operates through a clinic-in-clinic model, equipping paediatricians to incorporate developmental screening into their practices rather than selling the technology as a standalone device.Aignosis has so far deployed its system across more than 20 government primary health centres in Rajasthan. It has also partnered with Mankind Pharma, whose nearly 1,300 medical representatives are supporting screening camps with paediatricians across India. The company is beginning operations with Apollo Shines, the Apollo Group's school infirmary division, across around 125 schools.“Most healthcare innovation in India is built for the top of the pyramid and never leaves it. Aignosis is going the other way, starting in government health centres and small clinics, not private hospitals in metros. That's distribution thinking that actually moves the needle at scale,” Kamath said.Aignosis has completed more than 8,000 screenings so far and is targeting at least 100,000 screenings by the end of FY27. It plans to expand into Punjab, the National Capital Region, Haryana, Tamil Nadu, Jharkhand, Karnataka and Maharashtra, using its experience in Rajasthan as a reference for wider government adoption.",
+          "event_refs": [
+            "EV-7d2370277ab5ef6f"
+          ],
+          "claim_ref": "CL-21f8f57fed1b8617",
+          "source_refs": [
+            "SA-a10a6c7b082654b3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-04/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
+      "entityIds": [
+        "EN-c5a100d72ba4a90f",
+        "EN-bbdefa2950f49882"
+      ]
+    },
     {
       "id": "HWC-44203d15d2d13a56",
       "snapshotKey": "44203d15d2d13a56",
@@ -21895,11 +21956,11 @@
       "lens": "hardware",
       "date": "2026-10-04",
       "monitoring_paths": [],
-      "raw_documents": 5,
-      "original_sources": 5,
-      "valid_claims": 3,
-      "observations": 1,
-      "canonical_events": 2,
+      "raw_documents": 6,
+      "original_sources": 6,
+      "valid_claims": 4,
+      "observations": 2,
+      "canonical_events": 3,
       "blocker_counts": {
         "rumor_requires_primary_confirmation": 1,
         "community_source_requires_original_event_source": 1,
@@ -21907,9 +21968,9 @@
       },
       "rates": {
         "original_source_rate": 1,
-        "valid_claim_rate": 0.6,
-        "observation_rate": 0.3333333333333333,
-        "event_conversion_rate": 0.6666666666666666
+        "valid_claim_rate": 0.6666666666666666,
+        "observation_rate": 0.5,
+        "event_conversion_rate": 0.75
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-04/monitoring-funnel.json"
     }

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-04",
     "currentDate": "2026-10-04",
-    "eventCount": 3920,
+    "eventCount": 3921,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -59,6 +59,7 @@
     "typeLabel": "行业",
     "valueId": "healthcare_life_sciences",
     "eventIds": [
+      "EV-7d2370277ab5ef6f",
       "EV-36a1333e9d930b31",
       "EV-846e5333ad31f647",
       "EV-bc9557a9936f727c",
@@ -186,6 +187,7 @@
       "EV-edb1ddb3a091ada4"
     ],
     "entityIds": [
+      "EN-c5a100d72ba4a90f",
       "EN-e52fc209b562d340",
       "EN-0ba89a138d533c1c",
       "EN-0ad82a994c723e71",
@@ -314,6 +316,92 @@
     "lastSeen": "2026-10-04"
   },
   "events": [
+    {
+      "id": "EV-7d2370277ab5ef6f",
+      "dataDate": "2026-10-04",
+      "date": "2026-10-01",
+      "updatedDate": "2026-10-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Aignosis 完成由 Antler、Nikhil Kamath 领投的 ₹4 crore 种子轮融资",
+      "originalTitle": "Aignosis raises ₹4 crore seed round led by Antler, Nikhil Kamath",
+      "subject": "Aignosis",
+      "action": "raises",
+      "object": "₹4 crore seed round led by Antler, Nikhil Kamath",
+      "metrics": [
+        "₹4 crore"
+      ],
+      "locations": [
+        "India"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-c5a100d72ba4a90f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-c5a100d72ba4a90f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-c5a100d72ba4a90f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c5a100d72ba4a90f",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Aignosis",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
+      "publisher": "entrepreneur.economictimes.indiatimes.com"
+    },
     {
       "id": "EV-36a1333e9d930b31",
       "dataDate": "2026-10-03",
@@ -40169,6 +40257,27 @@
   ],
   "entities": [
     {
+      "id": "EN-c5a100d72ba4a90f",
+      "name": "Aignosis",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7d2370277ab5ef6f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-healthcare_life_sciences"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-04"
+    },
+    {
       "id": "EN-e52fc209b562d340",
       "name": "Longevity startup Vytalyou",
       "entityType": "organization_candidate",
@@ -40248,8 +40357,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences"
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-30",
@@ -40455,8 +40564,8 @@
         "TX-target_user-business_user",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-industry-automotive_transportation",
         "TX-ai_market_application-chips",
         "TX-ai_market_subcategory-hardware_computing"
@@ -40618,9 +40727,9 @@
         "TX-use_case-content_creation",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-industry-aerospace_defense",
@@ -41300,9 +41409,9 @@
         "TX-product_form-chip_accelerator",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-embodied_ai",
@@ -41706,9 +41815,9 @@
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-technology-multimodal",
@@ -41797,9 +41906,9 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-industry-aerospace_defense",
@@ -41884,9 +41993,9 @@
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-industry-aerospace_defense",
@@ -42059,9 +42168,9 @@
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-industry-aerospace_defense",
@@ -42102,8 +42211,8 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-target_user-public_sector_user",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-ai_infrastructure_software",
@@ -42319,8 +42428,8 @@
         "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_application-ai_development_orchestration"
       ],
@@ -42376,8 +42485,8 @@
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-technology-open_weights"
@@ -42412,9 +42521,9 @@
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-industry-aerospace_defense",
@@ -42479,9 +42588,9 @@
         "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-industry-aerospace_defense",
@@ -42543,10 +42652,10 @@
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-use_case-sales",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-industry-aerospace_defense",
@@ -42719,8 +42828,8 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-ai_development_orchestration",
         "TX-industry-telecommunications",
@@ -42772,8 +42881,8 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-technology-agentic_execution",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-technology-multimodal",
         "TX-technology-vision_language"
       ],
@@ -42800,8 +42909,8 @@
         "TX-target_user-business_user",
         "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows"
@@ -42891,8 +43000,8 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-product_form-security_software",
         "TX-industry-government_public_sector",
         "TX-ai_market_application-model_agent_security",
@@ -42920,10 +43029,10 @@
         "TX-industry-media_entertainment",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-use_case-sales",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-industry-aerospace_defense",
@@ -42994,8 +43103,8 @@
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
@@ -43082,9 +43191,9 @@
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-industry-aerospace_defense",
@@ -43126,9 +43235,9 @@
         "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-use_case-sales",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_support",
@@ -43162,9 +43271,9 @@
         "TX-target_user-business_user",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-industry-aerospace_defense",
@@ -43229,8 +43338,8 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-industry-automotive_transportation",
         "TX-industry-energy_utilities",
         "TX-ai_market_subcategory-hardware_computing",
@@ -43474,8 +43583,8 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
-        "TX-use_case-legal_compliance",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-legal_compliance",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
@@ -43502,8 +43611,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-product_form-ai_compute_system"
       ],
@@ -43809,8 +43918,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-industry-government_public_sector"
       ],
       "relatedEntityIds": [],
@@ -43832,8 +43941,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences"
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-26",
@@ -43934,6 +44043,7 @@
         "EV-2aa827a397a551d1",
         "EV-42a74865c9b654bb",
         "EV-5b5237105fc868cd",
+        "EV-7d2370277ab5ef6f",
         "EV-98ea446e097a9a95",
         "EV-eb2796fc4bcc5ac0",
         "EV-bccd915b61c48911",
@@ -44252,10 +44362,10 @@
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-use_case-sales",
         "TX-use_case-legal_compliance",
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
@@ -44320,8 +44430,8 @@
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -44645,8 +44755,8 @@
         "TX-product_form-chip_accelerator",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
-        "TX-use_case-sales",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-sales",
         "TX-technology-multimodal",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
@@ -45251,9 +45361,9 @@
         "TX-product_form-chip_accelerator",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
@@ -46096,6 +46206,67 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-6ac7b5370828f334",
+      "snapshotKey": "6ac7b5370828f334",
+      "snapshotId": "HWS-a5bf1025682f8812",
+      "eventId": "EV-7d2370277ab5ef6f",
+      "eventIds": [
+        "EV-7d2370277ab5ef6f"
+      ],
+      "dataDate": "2026-10-04",
+      "date": "2026-10-04",
+      "title": "Aignosis",
+      "subject": "Aignosis",
+      "productNames": [],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "4",
+          "unit": "₹crore",
+          "fact_ref": "HWF-c7afdf9f6af2b997"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-04",
+          "hardware_fact_id": "HWF-c7afdf9f6af2b997",
+          "fact_type": "specification",
+          "observed_at": "2026-10-01",
+          "subject_entity_id": "EN-c5a100d72ba4a90f",
+          "subject_name": "Aignosis",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_accelerator",
+          "metric_value": "4",
+          "unit": "₹crore",
+          "source_quote": "Aignosis has completed its CDSCO regulatory process and received Class B certification for its screening technology. It was also incubated at IIM Ahmedabad Ventures and selected for Google's 2025 Google for Startups Accelerator: AI First cohort.Healthtech startup Aignosis has raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures. The company plans to use the capital to expand its AI-assisted autism and developmental screening technology across India's healthcare ecosystem.Aignosis has completed its CDSCO regulatory process and received Class B certification for its screening technology. It was also incubated at IIM Ahmedabad Ventures and selected for Google's 2025 Google for Startups Accelerator: AI First cohort.“This funding marks a shift for Aignosis from building and validating the technology to taking it into the healthcare system at scale,” co-founder Raksheet Jain said. “Our focus now is to make autism screening more accessible, strengthen the referral pathway around it, and build a model that can work across both public and private healthcare settings.”Aignosis' system is designed to provide an initial screening layer for children aged 16 months to nine years. It uses a standard laptop and webcam to capture a short video built around nine stimulus modules, with computer vision analysing behavioural signals such as gaze, response to name and reactions to facial expressions.The resulting risk report indicates whether a formal clinical assessment may be warranted and is not intended to provide a diagnosis. According to the company, its technology has been evaluated against established clinical assessments and expert judgement.The startup primarily operates through a clinic-in-clinic model, equipping paediatricians to incorporate developmental screening into their practices rather than selling the technology as a standalone device.Aignosis has so far deployed its system across more than 20 government primary health centres in Rajasthan. It has also partnered with Mankind Pharma, whose nearly 1,300 medical representatives are supporting screening camps with paediatricians across India. The company is beginning operations with Apollo Shines, the Apollo Group's school infirmary division, across around 125 schools.“Most healthcare innovation in India is built for the top of the pyramid and never leaves it. Aignosis is going the other way, starting in government health centres and small clinics, not private hospitals in metros. That's distribution thinking that actually moves the needle at scale,” Kamath said.Aignosis has completed more than 8,000 screenings so far and is targeting at least 100,000 screenings by the end of FY27. It plans to expand into Punjab, the National Capital Region, Haryana, Tamil Nadu, Jharkhand, Karnataka and Maharashtra, using its experience in Rajasthan as a reference for wider government adoption.",
+          "event_refs": [
+            "EV-7d2370277ab5ef6f"
+          ],
+          "claim_ref": "CL-21f8f57fed1b8617",
+          "source_refs": [
+            "SA-a10a6c7b082654b3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-04/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
+      "entityIds": [
+        "EN-c5a100d72ba4a90f",
+        "EN-bbdefa2950f49882"
+      ]
+    },
     {
       "id": "HWC-44203d15d2d13a56",
       "snapshotKey": "44203d15d2d13a56",
