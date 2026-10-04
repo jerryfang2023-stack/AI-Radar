@@ -240,6 +240,9 @@ def register(app, db, clock, admin_required):
         conn.execute("CREATE TABLE IF NOT EXISTS operations_growth_observations (observation_key TEXT PRIMARY KEY,payload_json TEXT NOT NULL,observed_at TEXT NOT NULL)")
         conn.commit()
 
+    from payment_service.google_search_console import register as register_google
+    register_google(app, db, clock, admin_required)
+
     @app.get("/api/v1/admin/growth/summary")
     @admin_required(touch=False)
     def growth_summary():
@@ -271,9 +274,13 @@ def register(app, db, clock, admin_required):
             health = {k: raw[k] for k in ("status", "verifiedAt", "portalCommit", "releaseId", "pagesChecked", "pagesPassed", "crawlerProbes", "crawlerProbesPassed", "indexNowStatus", "indexNowSubmitted", "indexNowAt") if k in raw}
         except (OSError, ValueError, TypeError):
             pass
+        google = app.extensions["google_search_console"]
+        automatic = google.report(int(days), start_day, end_day)
+        if automatic:
+            reports = [automatic if r["provider"] == "google_search" else r for r in reports]
         response = jsonify(schemaVersion=VERSION, dataSource="production", generatedAt=now.isoformat(),
                            window={"days": int(days), "from": start.isoformat(), "to": now.isoformat(), "timezone": "Asia/Shanghai"},
-                           traffic=traffic, reports=reports, evaluation={"baselineDate": questions["baselineDate"], "questions": len(questions["cases"]), "engines": engines}, health=health)
+                           traffic=traffic, reports=reports, googleConnection=google.status(), evaluation={"baselineDate": questions["baselineDate"], "questions": len(questions["cases"]), "engines": engines}, health=health)
         response.headers["Cache-Control"] = "private, no-store"
         return response
 

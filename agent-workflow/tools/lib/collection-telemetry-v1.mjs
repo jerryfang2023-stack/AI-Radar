@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 export const COLLECTION_TELEMETRY_VERSION = "COLLECTION-TELEMETRY-V1.0";
-export const OPS_VERSION = "OPS-V3.9.0-search-ai-growth";
+export const OPS_VERSION = "OPS-V3.10.0-google-search-sync";
 export const V3_RETIRED_COMPATIBILITY = Object.freeze({
   status: "retired_archive",
   production_write: "disabled",

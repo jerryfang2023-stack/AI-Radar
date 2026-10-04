@@ -1,0 +1,25 @@
+[Unit]
+Description=WaveSight read-only Google Search Console sync
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/wavesight-payment-service/current
+EnvironmentFile=/opt/wavesight-payment-service/shared/.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/wavesight-payment-service/shared/.venv/bin/python sync_google_search.py
+TimeoutStartSec=240
+UMask=0077
+PrivateTmp=true
+NoNewPrivileges=true
+PrivateDevices=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/opt/wavesight-payment-service/shared/data
+ReadOnlyPaths=/opt/wavesight-payment-service/shared/secrets
+ReadOnlyPaths=/opt/wavesight-payment-service/shared/content
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=

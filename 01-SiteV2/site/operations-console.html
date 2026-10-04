@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V3.9.0-search-ai-growth">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.10.0-google-search-sync">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -369,7 +369,7 @@
 <body class="page-operations-console">
   <main class="shell" data-ops-console tabindex="-1" hidden>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.9.0</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.10.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
@@ -445,7 +445,7 @@
           <p class="growth-status" data-growth-status role="status">登录后可查看</p>
           <div data-growth-content hidden>
             <section class="growth-section"><h2>来源流量</h2><div class="growth-kpis" data-growth-kpis></div><div data-growth-trend></div><div data-growth-channels></div><p class="growth-note">来源流量仅统计可识别的来访；入口点击代表意向。</p></section>
-            <section class="growth-section"><h2>搜索表现</h2><div class="growth-grid" data-growth-search></div><p class="growth-note">平台报告按原平台口径展示，Google 日期为太平洋时间。</p><p><a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">Google Search Console ↗</a> · <a href="https://www.bing.com/webmasters/" target="_blank" rel="noopener noreferrer">Bing Webmaster Tools ↗</a> · <a href="https://ziyuan.baidu.com/" target="_blank" rel="noopener noreferrer">百度搜索资源平台 ↗</a></p></section>
+            <section class="growth-section"><h2>搜索表现</h2><div class="growth-card growth-google"><h3>Google Search Console</h3><p data-growth-google-state></p><p class="growth-note" data-growth-google-freshness></p><div class="growth-toolbar"><button type="button" data-growth-google="connect">连接 Google</button><button type="button" data-growth-google="sync">立即同步</button><button type="button" data-growth-google="disconnect">断开连接</button></div><p class="growth-note">每天北京时间 09:00 同步。Google 报表按太平洋日期统计，仅包含 PC 主站。</p><p class="growth-note" data-growth-google-message role="status"></p></div><div class="growth-grid" data-growth-search></div><p class="growth-note">平台报告按原平台口径展示，Google 日期为太平洋时间。</p><p><a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">Google Search Console ↗</a> · <a href="https://www.bing.com/webmasters/" target="_blank" rel="noopener noreferrer">Bing Webmaster Tools ↗</a> · <a href="https://ziyuan.baidu.com/" target="_blank" rel="noopener noreferrer">百度搜索资源平台 ↗</a></p></section>
             <section class="growth-section"><h2>AI 引用</h2><div class="growth-grid" data-growth-ai-platforms></div><p class="growth-note" data-growth-question-count></p><div data-growth-evaluations></div><p class="growth-note">引用率仅针对已录入的题库回答。</p></section>
             <section class="growth-section"><h2>收录与发布</h2><div class="growth-grid" data-growth-indexing></div><div class="growth-card" data-growth-health></div><p class="growth-note">更新通知已接收不代表收录或引用。</p></section>
           </div>

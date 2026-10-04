@@ -123,6 +123,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         ),
         OPERATIONS_ADMIN_EMAILS=os.getenv("OPERATIONS_ADMIN_EMAILS", ""),
         OPERATIONS_ADMIN_SESSION_HOURS=int(os.getenv("OPERATIONS_ADMIN_SESSION_HOURS", "8")),
+        GSC_CLIENT_CONFIG_PATH=os.getenv("GSC_CLIENT_CONFIG_PATH", ""),
+        GSC_PROPERTY=os.getenv("GSC_PROPERTY", "sc-domain:zkdlj.vip"),
         PC_SESSION_DAYS=int(os.getenv("PC_SESSION_DAYS", "30")),
         VERIFICATION_WEBHOOK_URL=os.getenv("VERIFICATION_WEBHOOK_URL", ""),
         VERIFICATION_WEBHOOK_TOKEN=os.getenv("VERIFICATION_WEBHOOK_TOKEN", ""),
