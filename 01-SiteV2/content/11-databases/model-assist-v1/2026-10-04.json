@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-10-04T02:40:12.503Z",
+  "generated_at": "2026-10-04T03:27:13.920Z",
   "data_date": "2026-10-04",
   "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 92,
@@ -496,6 +496,71 @@
       "generated_at": "2026-10-04T00:24:14.744Z"
     },
     {
+      "candidate_id": "MAC-14b4cc1af801ebd5",
+      "task_type": "qa_repair",
+      "asset_id": "QA-e748d28464277a75",
+      "raw_id": "RAW-8f3f76e11614c706",
+      "source_ref": "SA-46dfdfbbc3914a14",
+      "source_hash": "6ce0e21d241f1e9e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete funding event for Tryp.com, which is described as an AI-native online travel agency, making the event AI-relevant.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Tryp.com",
+            "object": "€1.9 million",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 96,
+          "quote": "Traveltech Tryp.com has raised €1.9 million in funding in a round led by Point Capital Partners."
+        },
+        {
+          "start": 400,
+          "end": 494,
+          "quote": "Tryp.com is an AI-native online travel agency that builds and books complete multimodal trips…"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:11:50.320Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex financing evidence review",
+        "reviewed_at": "2026-10-04T03:23:35.751Z",
+        "note": "Exact source span establishes the funded company AI activity; the financing Claim keeps only its funding evidence and amount."
+      }
+    },
+    {
       "candidate_id": "MAC-18d5ee61e8b758c7",
       "task_type": "claim_extraction",
       "asset_id": "QA-789b0f0a561ad8ce",
@@ -734,6 +799,54 @@
         }
       ],
       "generated_at": "2026-10-04T00:24:52.126Z"
+    },
+    {
+      "candidate_id": "MAC-2471175f3c293fc1",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e78bdebae031095b",
+      "raw_id": "RAW-7799fae845513e05",
+      "source_ref": "SA-4cdc034b0fcdfaf4",
+      "source_hash": "2675d63c313077cd",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "SpaceX",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative. The source mentions SpaceX as an organization, but the identity-matching requirement cannot be satisfied without a verified alternative to compare against.",
+        "candidate_name": "SpaceX"
+      },
+      "evidence": [
+        {
+          "start": 66,
+          "end": 223,
+          "quote": "The Kenyan American engineer previously worked in Google’s cloud computing business before a brief stint at SpaceX’s Starlink communications network in 2024."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:11:48.428Z"
     },
     {
       "candidate_id": "MAC-2cd98cd8973adbc5",
@@ -1728,6 +1841,54 @@
       "generated_at": "2026-10-04T00:24:51.200Z"
     },
     {
+      "candidate_id": "MAC-54cc0fa911dfe8ba",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-b602ce9ef7402059",
+      "raw_id": "RAW-1bad2b266131bb44",
+      "source_ref": "SA-4566cfa777e34381",
+      "source_hash": "a501679c3caf66db",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Early-Stage Startup Tendrils Compute",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source describes Tendrils Compute as an early-stage chip startup but does not establish it as the same entity as the candidate label.",
+        "candidate_name": "Early-Stage Startup Tendrils Compute"
+      },
+      "evidence": [
+        {
+          "start": 205,
+          "end": 377,
+          "quote": "Benchmark has won out in a hot competition to lead a new funding round for early-stage chip startup Tendrils Compute, according to multiple people familiar with the matter."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:11:48.213Z"
+    },
+    {
       "candidate_id": "MAC-59c12d5749913dd6",
       "task_type": "entity_resolution",
       "asset_id": "EN-a0c2ad2ead13f74d",
@@ -2234,6 +2395,54 @@
       "generated_at": "2026-10-04T00:24:17.949Z"
     },
     {
+      "candidate_id": "MAC-6fc314552fc1f983",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-a835bd4cb6f3fdcd",
+      "raw_id": "RAW-46f7c950ae08af74",
+      "source_ref": "SA-f5fc58d75341b199",
+      "source_hash": "37661a3d9b0844a4",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "In April 2025",
+        "rationale": "The candidate mention 'In April 2025' is a date phrase, not an entity identity, and does not match the verified alternative 'KT'. The quote shows it refers to a time when DIG Ventures closed a fund, not to KT.",
+        "candidate_name": "In April 2025"
+      },
+      "evidence": [
+        {
+          "start": 802,
+          "end": 881,
+          "quote": "In April 2025, DIG Ventures closed a €90 million Fund for early-stage startups."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:11:47.312Z"
+    },
+    {
       "candidate_id": "MAC-6ff6b8a1b8b5e318",
       "task_type": "entity_resolution",
       "asset_id": "EN-9c8ae69b84f21a2e",
@@ -2444,6 +2653,71 @@
         }
       ],
       "generated_at": "2026-10-04T00:24:24.366Z"
+    },
+    {
+      "candidate_id": "MAC-76a8dc87596b6f19",
+      "task_type": "qa_repair",
+      "asset_id": "QA-59ec568b57d675cd",
+      "raw_id": "RAW-45ddb6cc08333d27",
+      "source_ref": "SA-a10a6c7b082654b3",
+      "source_hash": "2c11d79204059801",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant funding event: Aignosis raised ₹4 crore in a seed round, and the company's technology is described as AI-assisted/computer vision-based screening. The quote directly supports the funding claim.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Aignosis",
+            "object": "₹4 crore seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 245,
+          "end": 404,
+          "quote": "Healthtech startup Aignosis has raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures."
+        },
+        {
+          "start": 405,
+          "end": 550,
+          "quote": "The company plans to use the capital to expand its AI-assisted autism and developmental screening technology across India's healthcare ecosystem."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:11:49.381Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex financing evidence review",
+        "reviewed_at": "2026-10-04T03:16:33.480Z",
+        "note": "Original article directly follows the exact financing sentence with this AI-assisted screening sentence; use it only to establish company AI relevance, not as a financing amount Claim."
+      }
     },
     {
       "candidate_id": "MAC-77121d31dd4801a6",
@@ -2832,6 +3106,54 @@
         }
       ],
       "generated_at": "2026-10-04T00:31:49.336Z"
+    },
+    {
+      "candidate_id": "MAC-8413139d5a88945b",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-61848d026f2be26a",
+      "raw_id": "RAW-c32abbb02221ccf6",
+      "source_ref": "SA-f492f5c2bb55b491",
+      "source_hash": "e92078a4e61efac5",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Osavul",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative.",
+        "candidate_name": "Osavul"
+      },
+      "evidence": [
+        {
+          "start": 202,
+          "end": 377,
+          "quote": "The funding round in Osavul was led by\n33N Ventures, the Europe-based global cybersecurity investor, with participation\nfrom Balnord, G+D Ventures and existing investor 42CAP."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:23:48.466Z"
     },
     {
       "candidate_id": "MAC-8764881d7d5455c2",
@@ -3468,6 +3790,54 @@
       "generated_at": "2026-10-04T00:24:11.894Z"
     },
     {
+      "candidate_id": "MAC-a63931557670df44",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-739123b666a7b12e",
+      "raw_id": "RAW-1bad2b266131bb44",
+      "source_ref": "SA-4566cfa777e34381",
+      "source_hash": "a501679c3caf66db",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "SCOOP",
+        "rationale": "The candidate mention 'SCOOP' appears only as part of the article title and does not match the verified alternative 'Anthropic'. The source text does not establish that 'SCOOP' refers to Anthropic; Anthropic is mentioned separately as a chip customer of Fractile.",
+        "candidate_name": "SCOOP"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 83,
+          "quote": "SCOOP: Benchmark Backs Early-Stage Startup Tendrils Compute as Chip Momentum Builds"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:11:46.899Z"
+    },
+    {
       "candidate_id": "MAC-a6ac03faa8a58c88",
       "task_type": "qa_repair",
       "asset_id": "QA-ef27b92d34efd14e",
@@ -3520,6 +3890,54 @@
         }
       ],
       "generated_at": "2026-10-04T00:31:55.291Z"
+    },
+    {
+      "candidate_id": "MAC-a6e014e09cf21f33",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-20b33aa992cb3f93",
+      "raw_id": "RAW-1798767fd34d31c8",
+      "source_ref": "SA-b936853edc41c72f",
+      "source_hash": "5175b7f80165715e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "B Capital",
+        "rationale": "The candidate mention 'B Capital' is an existing shareholder participating in the Series C round, which is not the same entity as any verified alternative (NVIDIA). The quote does not prove identity with NVIDIA.",
+        "candidate_name": "B Capital"
+      },
+      "evidence": [
+        {
+          "start": 353,
+          "end": 452,
+          "quote": "B Capital, an existing shareholder, participated in the Series C along with other global investors."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:11:46.633Z"
     },
     {
       "candidate_id": "MAC-a982aafb66bb7e6d",
@@ -3683,6 +4101,128 @@
         }
       ],
       "generated_at": "2026-10-04T00:24:12.924Z"
+    },
+    {
+      "candidate_id": "MAC-b184cc8883af009b",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-b9bf871802cc6cc2",
+      "raw_id": "RAW-8f3f76e11614c706",
+      "source_ref": "SA-46dfdfbbc3914a14",
+      "source_hash": "6ce0e21d241f1e9e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Tryp.com",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative.",
+        "candidate_name": "Tryp.com"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 96,
+          "quote": "Traveltech Tryp.com has raised €1.9 million in funding in a round led by Point Capital Partners."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:23:48.188Z"
+    },
+    {
+      "candidate_id": "MAC-b251c0dc21bae6d1",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-19aea0208c1fb953",
+      "raw_id": "RAW-1bad2b266131bb44",
+      "source_ref": "SA-4566cfa777e34381",
+      "source_hash": "a501679c3caf66db",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Benchmark",
+            "object": "Tendrils Compute",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Etched",
+            "object": "$700 million fundraise",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "OLIX",
+            "object": "$312 million at a $3.3 billion valuation",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 205,
+          "end": 377,
+          "quote": "Benchmark has won out in a hot competition to lead a new funding round for early-stage chip startup Tendrils Compute, according to multiple people familiar with the matter."
+        },
+        {
+          "start": 2010,
+          "end": 2160,
+          "quote": "In August, Etched, which builds specialized chips and racks for AI inference, doubled its valuation to $21 billion off a fresh $700 million fundraise."
+        },
+        {
+          "start": 2305,
+          "end": 2411,
+          "quote": "OLIX, a U.K.-based inference chip startup, raised $312 million at a $3.3 billion valuation back in August."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:27:13.912Z"
     },
     {
       "candidate_id": "MAC-b2821e6c8e506cb0",
@@ -4328,6 +4868,71 @@
       "generated_at": "2026-10-04T00:24:17.191Z"
     },
     {
+      "candidate_id": "MAC-d1866487d93a9ef3",
+      "task_type": "qa_repair",
+      "asset_id": "QA-95d06ae8cd81a61c",
+      "raw_id": "RAW-c32abbb02221ccf6",
+      "source_ref": "SA-f492f5c2bb55b491",
+      "source_hash": "e92078a4e61efac5",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant funding event: Osavul, an AI platform startup, raised €8.5M in a Series A round.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Hostile threat warning startup Osavul",
+            "object": "€8.5m Series A funding round",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 142,
+          "end": 186,
+          "quote": "has raised €8.5m in a Series A funding round"
+        },
+        {
+          "start": 437,
+          "end": 490,
+          "quote": "Osavul's AI platform identifies hostile\nactivity, be…"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:11:50.319Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex financing evidence review",
+        "reviewed_at": "2026-10-04T03:23:35.753Z",
+        "note": "Exact original spans confirm the €8.5m financing and Osavul AI platform; retain the already accepted headline subject identity while keeping funding metrics limited to the funding sentence."
+      }
+    },
+    {
       "candidate_id": "MAC-d2ccdeb93e1f432b",
       "task_type": "entity_resolution",
       "asset_id": "EN-6939ead954610e54",
@@ -4838,6 +5443,54 @@
         }
       ],
       "generated_at": "2026-10-04T00:31:52.072Z"
+    },
+    {
+      "candidate_id": "MAC-de197a283354e7c9",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-fd82a8f7c5939466",
+      "raw_id": "RAW-1bad2b266131bb44",
+      "source_ref": "SA-4566cfa777e34381",
+      "source_hash": "a501679c3caf66db",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Backs Early-Stage Startup Tendrils",
+        "rationale": "The candidate name appears to be a malformed extraction combining the headline verb 'Backs' with the startup name 'Tendrils Compute.' No VERIFIED_ALTERNATIVES were supplied, so same_entity cannot be chosen. The source describes Benchmark backing Tendrils Compute, but the candidate's canonical_name does not exactly match any verified alternative, and the quote does not establish the candidate as a distinct named entity.",
+        "candidate_name": "Backs Early-Stage Startup Tendrils"
+      },
+      "evidence": [
+        {
+          "start": 205,
+          "end": 377,
+          "quote": "Benchmark has won out in a hot competition to lead a new funding round for early-stage chip startup Tendrils Compute, according to multiple people familiar with the matter."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-04T03:11:49.617Z"
     },
     {
       "candidate_id": "MAC-e03aa01813d7ffd9",

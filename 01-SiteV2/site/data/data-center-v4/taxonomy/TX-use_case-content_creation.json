@@ -586,9 +586,7 @@
       "subject": "AMD",
       "action": "acquires",
       "object": "World Labs AI startup, upping the ante against Nvidia",
-      "metrics": [
-        "$8.2 billion"
-      ],
+      "metrics": [],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
@@ -609,19 +607,7 @@
         "ai_market_category": [],
         "ai_market_subcategory": [],
         "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-240389f4b730bad4"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
+        "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
@@ -683,31 +669,9 @@
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-240389f4b730bad4"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         }
       ],
       "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-240389f4b730bad4"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
         {
           "dimensionId": "use_case",
           "dimensionName": "应用场景",
@@ -24043,9 +24007,9 @@
         "TX-use_case-content_creation",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
         "TX-industry-aerospace_defense",
@@ -24179,7 +24143,6 @@
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
         "TX-industry-financial_services",
-        "TX-technology-multimodal",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-industrials",
         "TX-industry-aerospace_defense",
@@ -24189,6 +24152,7 @@
         "TX-product_form-compute_cloud_service",
         "TX-industry-energy_utilities",
         "TX-use_case-data_analysis",
+        "TX-technology-multimodal",
         "TX-industry-government_public_sector",
         "TX-use_case-software_development",
         "TX-use_case-knowledge_search",
@@ -24610,10 +24574,10 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_support",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-use_case-knowledge_search"
+        "TX-use_case-knowledge_search",
+        "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-30",
@@ -24675,8 +24639,8 @@
         "TX-use_case-content_creation",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
-        "TX-technology-multimodal",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-use_case-knowledge_search",
         "TX-technology-vision_language"
@@ -24753,10 +24717,10 @@
         "TX-target_user-consumer",
         "TX-target_user-developer",
         "TX-use_case-content_creation",
-        "TX-technology-multimodal",
         "TX-product_form-end_user_application",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
+        "TX-technology-multimodal",
         "TX-ai_market_subcategory-marketing",
         "TX-use_case-marketing"
       ],
@@ -24870,10 +24834,10 @@
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
-        "TX-technology-multimodal",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-technology-multimodal",
         "TX-technology-video_generation"
       ],
       "relatedEntityIds": [],
@@ -25319,8 +25283,8 @@
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
@@ -25417,8 +25381,8 @@
         "TX-target_user-consumer",
         "TX-target_user-developer",
         "TX-use_case-content_creation",
-        "TX-technology-multimodal",
         "TX-industry-retail_ecommerce",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-product_form-model_api_service",
         "TX-technology-video_generation"
@@ -25947,12 +25911,10 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-82cccfa64edb2c09",
         "EV-5133905b22468322",
         "EV-8fd2621317a8a577",
         "EV-d7652e5b3dbe4620",
         "EV-641d61c6b8506c06",
-        "EV-30f48175b61772d4",
         "EV-2a5803953f698f4c",
         "EV-5961ed93ca6dae66",
         "EV-98a5bcde4600a029",
@@ -26094,21 +26056,20 @@
         "TX-product_form-chip_accelerator",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_support",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-technology-speech_audio",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
+        "TX-technology-multimodal",
         "TX-industry-government_public_sector",
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
@@ -26116,6 +26077,7 @@
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
         "TX-technology-long_context",
+        "TX-use_case-customer_support",
         "TX-technology-computer_use",
         "TX-technology-reasoning",
         "TX-technology-guardrails_safety",
@@ -26228,11 +26190,11 @@
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
-        "TX-technology-multimodal",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-technology-multimodal",
         "TX-industry-telecommunications",
         "TX-product_form-ai_device",
         "TX-use_case-knowledge_search"
@@ -26434,7 +26396,6 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
-        "EV-82cccfa64edb2c09",
         "EV-641d61c6b8506c06",
         "EV-a551ac76be0015af",
         "EV-b739349cfab7e41c",
@@ -26470,12 +26431,12 @@
         "TX-product_form-chip_accelerator",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-sales",
-        "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-use_case-data_analysis",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-ai_market_subcategory-sales",
         "TX-product_form-model_api_service",
@@ -26542,8 +26503,8 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-use_case-content_creation",
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-17",
