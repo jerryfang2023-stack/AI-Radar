@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Swish 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅据Swish Ventures公司页面和AIR官方公告确认机构名称及一项公开投资活动；交易载体与金额未披露。",
+      "summary": "Swish Ventures的LinkedIn公司页面将其归为风险投资与私募股权机构，并称基金代表机构投资者投资。AIR官方博客将Swish列为投资其融资的基金之一。本档案只记录AIR这一公开投资活动，不推断具体基金或出资额。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "AIR官方博客将Swish列为参与其融资的基金之一。",
+          "source_id": "air-funding-swish"
+        },
         {
           "description": "融资来源记录：AIR · 种子轮 · 2026-09-01 · 本轮参投 · $50M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0426e4b3b9347f4f"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅据Swish Ventures公司页面和AIR官方公告确认机构名称及一项公开投资活动；交易载体与金额未披露。",
       "sources": [
+        {
+          "source_id": "swish-company-profile",
+          "source_url": "https://www.linkedin.com/company/swish-ventures",
+          "source_title": "Swish Ventures | LinkedIn",
+          "source_content_hash": "d4d87dd9b9c7a6de8a8c9b4a44af04691b3373facb9d44925959716afadf07d1",
+          "quote": "Venture Capital and Private Equity Principals About us Swish Ventures partners with few exceptional founders each year to build category winners. The fund invests on behalf of leading endowments, pension funds",
+          "quote_hash": "41bb02a2a3e7580c883a8e996ffaaefd74be3d73ce540978cac356535a0a0de2"
+        },
+        {
+          "source_id": "air-funding-swish",
+          "source_url": "https://www.air.security/blog-posts/out-of-stealth",
+          "source_title": "AIR Comes Out of Stealth: A Firewall for AI Agent Context",
+          "source_content_hash": "2456bf2a5801596a340d78014bfa7bd695a019674d6bcc4ca050012bf49f9b5c",
+          "quote": "the funds who believed in us and invested in AIR - Sequoia, Greenoaks, Swish, Netz, and TTP",
+          "quote_hash": "0b006e9b198075faeb7be46c2516ab5c3d3b91fb084c46708f41205f2df4bb01"
+        },
         {
           "source_id": "FISRC-0426e4b3b9347f4f",
           "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
@@ -161,7 +185,7 @@
           "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

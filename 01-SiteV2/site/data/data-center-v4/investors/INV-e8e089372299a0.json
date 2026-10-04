@@ -124,14 +124,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Tenstorrent 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "Tenstorrent 官网支持其 AI 计算业务身份；投资活动来自 TechFundingNews 报道，只记录该披露样本，不推断其完整投资组合或独立基金架构。",
+      "summary": "Tenstorrent 官网称其为 AI 计算机开发商。TechFundingNews 报道称 Tenstorrent 与 MediaTek 支持了 OXMIQ 先前的 2,000 万美元种子轮融资；本档案将其作为一项媒体披露活动记录。",
+      "facts": [
+        {
+          "field": "business_description",
+          "label": "官网自述业务",
+          "value": "Tenstorrent 称其开发面向 AI 的计算机。",
+          "source_id": "PROFILE-b345e8319477133bc44c"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechFundingNews 报道 OXMIQ 先前 2,000 万美元种子轮由 Tenstorrent 与 MediaTek 支持；未披露 Tenstorrent 的出资金额。",
+          "source_id": "PROFILE-b9ee4d009f1e19b2524c"
+        },
         {
           "description": "融资来源记录：OXMIQ · 种子轮 · 种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-be62fe7bde52c3f0"
@@ -139,6 +150,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-b345e8319477133bc44c",
+          "source_url": "https://tenstorrent.com/vision",
+          "source_title": "About Tenstorrent",
+          "source_content_hash": "c2897e227a866ce9271423b032c245e176f7973661817314618c212a23b1a165",
+          "quote": "Tenstorrent builds computers for AI.",
+          "quote_hash": "a39a0892b46c9071823f3425c3fe22dc202d6cc51655f522b63996aa0761161a"
+        },
+        {
+          "source_id": "PROFILE-b9ee4d009f1e19b2524c",
+          "source_url": "https://techfundingnews.com/ex-intel-chiefs-oxmiq-raises-35m-to-license-ai-chips-instead-of-building-them/",
+          "source_title": "Ex-Intel chief&#039;s OXMIQ lands $35M to license AI chips instead of building them &#8212; TFN",
+          "source_content_hash": "9cd638feb41251136fb47c207660e12741147f81eb3ec8e3ba7fd9a0bd013809",
+          "quote": "It follows a $20 million seed round backed by Tenstorrent and MediaTek.",
+          "quote_hash": "92053557552855d14e48da99aa1237f895c25ed6d365f65454b758ceaba234da"
+        },
         {
           "source_id": "FISRC-be62fe7bde52c3f0",
           "source_url": "https://techfundingnews.com/ex-intel-chiefs-oxmiq-raises-35m-to-license-ai-chips-instead-of-building-them/",
@@ -148,7 +175,11 @@
           "quote_hash": "92053557552855d14e48da99aa1237f895c25ed6d365f65454b758ceaba234da"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-04"
     }
   }
 }

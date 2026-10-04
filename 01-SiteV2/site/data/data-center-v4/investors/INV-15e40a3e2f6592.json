@@ -139,19 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Aranya 发行人新闻稿将 900 万美元 seed 的领投方称为 First Round Capital；SiliconANGLE 对同轮次报道使用了 First Round Capital Holdings L.P. 这一更具体名称。本条保留两种来源表述，不推定其完整法律关系。",
-      "summary": "Aranya 的 1100 万美元融资包含 900 万美元 seed。发行人公告将领投方称为 First Round Capital；SiliconANGLE 对同一轮次报道使用了 First Round Capital Holdings L.P. 的名称。本档案限于这条投资活动，不扩写机构完整背景。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "First Round 官网法律条款和 SEC 文件确认 FR Capital Holdings, L.P. 的 First Round 品牌及基金管理关系；Aranya 的发行人新闻稿确认一项近期投资活动。未推定基金规模或完整组合。",
+      "summary": "First Round 官网将其定义为由 FR Capital Holdings, L.P. 所有并运营的 First Round；SEC 文件进一步将 FR Capital Holdings, L.P. 列为 First Round Capital VI、VIII-F 等基金的管理公司。Aranya 于 2026 年 9 月披露的融资中，First Round Capital 领投 900 万美元 seed 轮。",
+      "facts": [
+        {
+          "field": "brand_and_legal_operator",
+          "label": "品牌与运营主体",
+          "value": "First Round 官网称网站由 FR Capital Holdings, L.P. 所有并运营，并将该公司称为 First Round。",
+          "source_id": "firstround-terms-operator-2026"
+        },
+        {
+          "field": "fund_management",
+          "label": "基金管理关系",
+          "value": "SEC 联合申报文件将 FR Capital Holdings, L.P. 列为 First Round Capital VI, L.P. 的管理公司。",
+          "source_id": "sec-firstround-fund-manager-2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Aranya 发行人新闻稿称，其 900 万美元 seed 由 First Round Capital 领投。",
-          "source_id": "prnewswire-aranya-first-round-brand-2026-10-03"
-        },
-        {
-          "description": "SiliconANGLE 对 Aranya 融资的报道将同一 900 万美元 seed 的领投方称为 First Round Capital Holdings L.P.；发行人公告没有使用该 LP 后缀。",
-          "source_id": "siliconangle-aranya-first-round-holdings-2026-10-03"
+          "description": "Aranya 的发行人新闻稿称，First Round Capital 领投其 900 万美元 seed 轮。",
+          "source_id": "aranya-seed-first-round-2026"
         },
         {
           "description": "融资来源记录：Aranya Inc. · 种子轮 · 2026-09-01 · 本轮领投 · $11M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -159,22 +168,34 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官方法律条款、SEC 文件和发行人融资新闻稿支持机构及一项投资活动的描述；未扩展到未披露的基金规模和完整组合。",
       "sources": [
         {
-          "source_id": "siliconangle-aranya-first-round-holdings-2026-10-03",
-          "source_url": "https://siliconangle.com/2026/09/01/aranya-raises-11m-to-turn-bare-metal-servers-into-ai-clusters-in-less-than-48-hours/",
-          "source_title": "Aranya raises $11M to turn bare-metal servers into AI clusters in less than 48 hours - SiliconANGLE",
-          "source_content_hash": "068bc7dce570ff7f01e5b6bf1375d115b4cda262e5546f1b4b175ee65e153672",
-          "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P. with participation from BoxGroup Ventures LLC, Vermilion Cliffs Ventures LLC and Asylum Ventures and a $2 million pre-seed round led by Asylum Ventures.",
-          "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
+          "source_id": "firstround-terms-operator-2026",
+          "source_url": "https://www.firstround.com/terms",
+          "source_title": "Terms of Use | First Round",
+          "source_content_hash": "b8ff1c466e585dca508c8d1ce6247f77445b025661900b99f5e2f8ec01108dbb",
+          "quote": "owned and operated by FR Capital Holdings, L.P.",
+          "quote_hash": "4f41aa1d44fbaf189377f50da09426032f8df8d5d2e8285e8d56233f11a3bf3b"
         },
         {
-          "source_id": "prnewswire-aranya-first-round-brand-2026-10-03",
+          "source_id": "sec-firstround-fund-manager-2026",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1776703/000149315226012172/ex1.htm",
+          "source_title": "www.sec.gov",
+          "source_content_hash": "8783a0d46d8a8a4f1218f26b194dca74f6c9f85a815ff5cc801f523e877cd867",
+          "quote": "FR Capital Holdings, L.P., its Management Company",
+          "quote_hash": "8257067875fc6680bcbc1c8a2f0db1f0862f9d84c0c989ca9f3f7205c14b71c5"
+        },
+        {
+          "source_id": "aranya-seed-first-round-2026",
           "source_url": "https://www.prnewswire.com/news-releases/aranya-secures-11m-to-convert-bare-metal-into-custom-production-ready-clusters-in-48-hours-with-full-visibility-into-inference-and-training-management-302865915.html",
           "source_title": "Aranya Secures $11M to Convert Bare Metal into Custom, Production-Ready Clusters in 48 Hours with Full Visibility into Inference and Training Management",
           "source_content_hash": "a70a8c09c13c1416f666f04558a724896c391955506921188badc1aab2fcabd2",
-          "quote": "including a $9M seed round led by First Round Capital",
-          "quote_hash": "69b538a4ef7756cf37f3a7e850df83b51d8e35ce0dc8f08806f215c7bb6f3500"
+          "quote": "a $9M seed round led by First Round Capital",
+          "quote_hash": "00d3e199edfd5b73f7840f9006dc34a6b07c1c079a5719f639d1da67b24f399b"
         },
         {
           "source_id": "FISRC-89934e15127d3d0d",
@@ -185,7 +206,7 @@
           "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

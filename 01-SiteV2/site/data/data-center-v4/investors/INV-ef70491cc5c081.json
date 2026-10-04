@@ -209,14 +209,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "TPG 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构背景和 Zūm 投资信息均来自 TPG 官方公告；所列 1 亿美元为 Zūm 公告披露的整体交易额，不代表 TPG 单独出资金额。",
+      "summary": "TPG 官网将其介绍为全球另类资产管理公司，成立于 1992 年，投资策略覆盖私募股权、影响力投资、信贷、房地产和市场解决方案。TPG 官方公告披露其通过 The Rise Funds 向 Zūm 投资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露的机构身份",
+          "value": "全球另类资产管理公司，成立于 1992 年。",
+          "source_id": "PROFILE-47bb4da148b60e748795"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资策略",
+          "value": "私募股权、影响力投资、信贷、房地产和市场解决方案。",
+          "source_id": "PROFILE-d98508d07bbb4fb78dfe"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TPG 官方公告说明其通过 The Rise Funds 向 Zūm 投资。",
+          "source_id": "PROFILE-9142e951eb1c6443d9b1"
+        },
         {
           "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮参投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5fc65e3f4fb1b347"
@@ -224,14 +241,54 @@
         {
           "description": "融资来源记录：Zūm · 其他融资 · 2026-04-16 · 本轮领投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1d97f99b2bf1db30"
-        },
-        {
-          "description": "融资来源记录：Zūm · 其他融资 · 2026-04-16 · 本轮领投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dd82a86f0e9c67ca"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "TPG",
+          "url": "https://www.tpg.com/news-and-insights/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion",
+          "source_id": "PROFILE-9e7892c8433a80460ed1"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-47bb4da148b60e748795",
+          "source_url": "https://www.tpg.com/news-and-insights/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion",
+          "source_title": "Zum Raises $100 Million From TPG to Accelerate Zum’s Connected Mobility Experience (CMX) and for Continued Growth and Expansion | TPG",
+          "source_content_hash": "1bca77efa3c840a55308a526c188faedb3db6639ca35ac8957075f0dfb639829",
+          "quote": "TPG is a leading global alternative asset management firm, founded in San Francisco in 1992",
+          "quote_hash": "c649c8ec23c057b11f8ec4f2514dcab93994d7d37d8d3f952cf5a27071b1690b"
+        },
+        {
+          "source_id": "PROFILE-d98508d07bbb4fb78dfe",
+          "source_url": "https://www.tpg.com/news-and-insights/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion",
+          "source_title": "Zum Raises $100 Million From TPG to Accelerate Zum’s Connected Mobility Experience (CMX) and for Continued Growth and Expansion | TPG",
+          "source_content_hash": "1bca77efa3c840a55308a526c188faedb3db6639ca35ac8957075f0dfb639829",
+          "quote": "TPG invests across a broadly diversified set of strategies, including private equity, impact, credit, real estate, and market solutions",
+          "quote_hash": "fbbed90f462b8700d4e8d5c040b465059d4c4895255fa18c3dcefc01a0233ce3"
+        },
+        {
+          "source_id": "PROFILE-9142e951eb1c6443d9b1",
+          "source_url": "https://www.tpg.com/news-and-insights/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion",
+          "source_title": "Zum Raises $100 Million From TPG to Accelerate Zum’s Connected Mobility Experience (CMX) and for Continued Growth and Expansion | TPG",
+          "source_content_hash": "1bca77efa3c840a55308a526c188faedb3db6639ca35ac8957075f0dfb639829",
+          "quote": "TPG is making its investment through The Rise Funds, the multi-sector strategy of its global impact investing platform",
+          "quote_hash": "ea0e9bfea47da336e795f91a898b387327a46fe04cc95550314d31ebf2f19dd2"
+        },
+        {
+          "source_id": "PROFILE-9e7892c8433a80460ed1",
+          "source_url": "https://www.tpg.com/news-and-insights/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion",
+          "source_title": "Zum Raises $100 Million From TPG to Accelerate Zum’s Connected Mobility Experience (CMX) and for Continued Growth and Expansion | TPG",
+          "source_content_hash": "1bca77efa3c840a55308a526c188faedb3db6639ca35ac8957075f0dfb639829",
+          "quote": "TPG",
+          "quote_hash": "2b8b9010fb9815fcb17621df541d2807482a1e28992cdc184620b4797ad2ea97"
+        },
         {
           "source_id": "FISRC-5fc65e3f4fb1b347",
           "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
@@ -257,7 +314,7 @@
           "quote_hash": "aa30f748afae27d629622aa726cb18835a63070fcd2838d0d6ec7a358d740abc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

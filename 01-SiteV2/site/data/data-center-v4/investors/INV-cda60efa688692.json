@@ -121,66 +121,50 @@
       }
     ],
     "public_profile": {
+      "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "profile_type": "person",
-      "coverage_note": "人物背景来自 Y Combinator 页面，单笔投资活动来自融资报道；不补写页面没有支持的退休状态或其他现职。",
-      "summary": "Y Combinator 人物页介绍 Trevor Blackwell 是机器人研究者，并列出其哈佛大学计算机科学博士学历；TechCrunch 将他列为 Adam 种子轮天使投资人。",
       "facts": [],
       "milestones": [],
       "contacts": [],
-      "current_roles": [],
-      "career": [
+      "coverage_note": "公开资料仅支持本档案所列投资活动及来源明确记载的身份信息，不补写未经核实的职业经历或个人出资金额。",
+      "summary": "TechCrunch 报道将 Trevor Blackwell (YC) 列为支持 Adam 的天使投资者之一；Y Combinator 官方人物页将 Trevor Blackwell 标为其退休创始人。Adam 融资总额为 410 万美元，未披露其个人出资额。",
+      "current_roles": [
         {
+          "title": "Founder, Retired",
           "organization": "Y Combinator",
-          "title": "创始人（官网标注为退休）",
-          "period": "Y Combinator 创始人名录当前标注",
-          "description": "Y Combinator 创始人名录将 Trevor Blackwell 标注为 Founder, Retired，并介绍其机器人研究经历。",
-          "source_id": "yc_profile"
+          "source_id": "yc-trevor-blackwell-identity"
         }
       ],
-      "education": [
-        {
-          "institution": "哈佛大学",
-          "qualification": "计算机科学博士；另有 Carleton 工程学学士学位",
-          "source_id": "yc_education"
-        }
-      ],
-      "experience_summary": "Y Combinator 创始人名录介绍其为机器人研究者；目前核实到一项 Adam 融资中的天使投资活动。",
+      "career": [],
+      "education": [],
+      "experience_summary": "身份由 Y Combinator 官方人物页确认；TechCrunch 对天使投资者的标注为 “Trevor Blackwell (YC)”。不据此推断其在该轮的个人投资金额。",
       "track_record": [
         {
-          "description": "TechCrunch 报道将 Trevor Blackwell 列入 Adam 种子轮天使投资人名单。",
-          "source_id": "adam_seed"
+          "description": "TechCrunch 于 2025 年报道 Adam 的 410 万美元融资时，将 Trevor Blackwell (YC) 列为天使投资者之一；410 万美元为整轮融资额，未披露该投资者单独出资额。",
+          "source_id": "adam-trevor-blackwell-angel-2025"
         },
         {
           "description": "融资来源记录：Adam · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "adam_seed"
+          "source_id": "FISRC-1e12e93a65d54b9a"
         }
       ],
       "sources": [
         {
-          "source_id": "yc_profile",
-          "source_url": "https://www.ycombinator.com/people/?source=post_page---------------------------",
-          "source_title": "People | Y Combinator",
-          "source_content_hash": "fa40fe9670cebbd24d9f642085d1af385583b58281257ef09083baf77e1760e6",
-          "quote": "Trevor Blackwell is a roboticist who in 2007 built the first dynamically balancing biped robot",
-          "quote_hash": "4f546ccf661c04107c1b8480587ac70bba47b7b552a1423ede4d587619d0c4d3"
-        },
-        {
-          "source_id": "yc_education",
-          "source_url": "https://www.ycombinator.com/people/?source=post_page---------------------------",
-          "source_title": "People | Y Combinator",
-          "source_content_hash": "fa40fe9670cebbd24d9f642085d1af385583b58281257ef09083baf77e1760e6",
-          "quote": "He has a BEng from Carleton, and a PhD in Computer Science from Harvard.",
-          "quote_hash": "982c436ffbc0060ea5eea97dff95939021b5e8c78fa82963339b877ca034fe3f"
-        },
-        {
-          "source_id": "adam_seed",
+          "source_id": "adam-trevor-blackwell-angel-2025",
           "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
           "source_title": "YC alum Adam raises $4.1M to turn viral text-to-3D tool into AI copilot | TechCrunch",
           "source_content_hash": "63cb5b099086d25067bd01f8f8cad7771c34add03f753290733087497e22b7c5",
-          "quote": "Adam is also backed by angel investors, including Tim Glaser (PostHog), Trevor Blackwell (YC), and Theo Browne (T3 Chat)",
-          "quote_hash": "c236bbb9da99e74609afc935e94ce45c89e631d1524cbdc9a1cad10365051c71"
+          "quote": "Trevor Blackwell (YC)",
+          "quote_hash": "225d1f2fb12f13db6fb54c6efe189fc54b01b8149540e3052d1dadebb00a26c1"
+        },
+        {
+          "source_id": "yc-trevor-blackwell-identity",
+          "source_url": "https://www.ycombinator.com/people.html",
+          "source_title": "People | Y Combinator",
+          "source_content_hash": "fa40fe9670cebbd24d9f642085d1af385583b58281257ef09083baf77e1760e6",
+          "quote": "Trevor Blackwell Founder, Retired",
+          "quote_hash": "081eccb7eb525d180329f15344f1b9bc48bb20b612fb90ef8634d9583b91eb4b"
         },
         {
           "source_id": "FISRC-1e12e93a65d54b9a",
@@ -191,7 +175,7 @@
           "quote_hash": "c236bbb9da99e74609afc935e94ce45c89e631d1524cbdc9a1cad10365051c71"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

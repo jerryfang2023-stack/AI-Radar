@@ -121,21 +121,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "立讯精密产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资者名称与产业投资角色依据微纳核芯官网披露；本条保留“立讯精密产投”原标签，不推断独立法律主体、基金载体或单独投资金额。",
+      "summary": "立讯精密官网确认其品牌名称；微纳核芯官网把“立讯精密产投”列为此前投资机构及产业资本。档案按融资披露所用品牌级投资者名称记录。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "微纳核芯官网披露其此前获得立讯精密产投等机构及产业资本投资；未披露其单独金额。",
+          "source_id": "luxshare-nanocore-investment"
+        },
         {
           "description": "融资来源记录：微纳核芯 · 历史轮次未披露 · 老股东继续加持。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b96684face6f5223"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "投资者名称与产业投资角色依据微纳核芯官网披露；本条保留“立讯精密产投”原标签，不推断独立法律主体、基金载体或单独投资金额。",
       "sources": [
+        {
+          "source_id": "luxshare-official-site",
+          "source_url": "https://www.luxshare-ict.com/",
+          "source_title": "立讯精密-以科技连接未来",
+          "source_content_hash": "2b3a0c55be3083211b341659357dc76bbdd07ca55d7ab4b341f1a79b4a457ee4",
+          "quote": "立讯精密-以科技连接未来",
+          "quote_hash": "e93c3585de96e3237d27750a3914ae9df95505a30de125c7e54e0f7fbcaa3230"
+        },
+        {
+          "source_id": "luxshare-nanocore-investment",
+          "source_url": "https://www.nanocorechip.com/index/news/detail.html?id=7",
+          "source_title": "微纳核芯",
+          "source_content_hash": "e638c4a2e61622d61e6fdc34d673024cc044b952c178dfca8713be9ed23d937d",
+          "quote": "前期已获得红杉中国、北京大学科技成果转化基金、方正和生、小米、立讯精密产投、中航联创、毅达资本、联想创投等知名投资机构和产业资本的投资。",
+          "quote_hash": "1ca372a718b579e11d21ce335e85c6330dd19e115b4872c6f2cc49823cccee90"
+        },
         {
           "source_id": "FISRC-b96684face6f5223",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
@@ -145,7 +169,7 @@
           "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

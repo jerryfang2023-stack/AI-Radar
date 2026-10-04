@@ -138,21 +138,52 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "三花控股 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "三花官网介绍其为产业集团；投资界将三花控股列为息壤开物跟投方。本档案不将其描述为专业投资基金。",
+      "summary": "三花控股集团官网称其创业于 1984 年，主营制冷家电和新能源汽车热管理领域。投资界报道将三花控股列为息壤开物种子轮及天使轮跟投方；未披露出资载体或金额。",
+      "facts": [
+        {
+          "field": "company_profile",
+          "label": "官网披露的产业身份",
+          "value": "三花控股集团成立于 1984 年，官网将其定位于制冷家电和新能源汽车热管理领域。",
+          "source_id": "PROFILE-03ae9560c9471e609a5b"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界将三花控股列为息壤开物种子轮及天使轮跟投方；未披露出资额。",
+          "source_id": "PROFILE-3dd8a683543a97f2e86e"
+        },
         {
           "description": "融资来源记录：息壤开物 · 多轮融资 · 2026-09-23 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-41f074703465b30a"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-03ae9560c9471e609a5b",
+          "source_url": "https://www.sanhuagroup.com/about.html",
+          "source_title": "三花控股集团",
+          "source_content_hash": "d934659e9368f3aceddd3e306356d00dce09135e78c78bc4b9d8375c1dfca686",
+          "quote": "三花控股集团创业于1984年，以“管理之花，科技之花，人才之花”为内涵，坚持专业化经营，已成为全球制冷家电、新能源汽车热管理领域的行业领军企业",
+          "quote_hash": "90f002c9f48a5474b76da1612959b60d6fe1d59a6166137511534a9a88a9cf9b"
+        },
+        {
+          "source_id": "PROFILE-3dd8a683543a97f2e86e",
+          "source_url": "https://m.pedaily.cn/news/569562",
+          "source_title": "Physical AI创业公司息壤开物连获数亿元融资|投资界",
+          "source_content_hash": "9fd73364fce0ab5e96a0f86f1aee824d3635c01c1997aa3e15891c12c1f5fc68",
+          "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+          "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+        },
         {
           "source_id": "FISRC-41f074703465b30a",
           "source_url": "https://m.pedaily.cn/news/569562",
@@ -162,7 +193,7 @@
           "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

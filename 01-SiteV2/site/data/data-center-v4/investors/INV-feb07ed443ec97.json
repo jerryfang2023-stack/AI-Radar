@@ -137,21 +137,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "盛世投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录华清未央融资报道中的“盛世投资”公开投资者标签。投资界机构资料将其关联至北京盛世宏明投资基金管理有限公司；官方披露确认该公司管理其他私募基金，但未证明具体用于华清未央交易的基金载体。",
+      "summary": "新浪财经转载的投中网报道将盛世投资列为华清未央Pre-A轮投资方。投资界机构资料将该品牌关联到北京盛世宏明投资基金管理有限公司；港交所披露文件确认后者担任一支集成电路投资基金的管理人/执行事务合伙人。现有来源未确认华清未央交易的具体基金或出资载体。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "华清未央Pre-A轮融资报道将盛世投资列在投资方名单中；报道未披露具体基金载体。",
+          "source_id": "huaqing-pre-a-sina"
+        },
         {
           "description": "融资来源记录：华清未央 · Pre-A轮 · 2026-06-01 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c8f7d3c7af4bc00a"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅记录华清未央融资报道中的“盛世投资”公开投资者标签。投资界机构资料将其关联至北京盛世宏明投资基金管理有限公司；官方披露确认该公司管理其他私募基金，但未证明具体用于华清未央交易的基金载体。",
       "sources": [
+        {
+          "source_id": "huaqing-pre-a-sina",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-01/doc-inhzwisx2581224.shtml",
+          "source_title": "华清未央完成超亿元Pre-A轮融资_新浪科技_新浪网",
+          "source_content_hash": "9582eb19b5f75f65080b5711341db31540db1336c2ec6f32d92f5dda7c3e44a1",
+          "quote": "投资方包括安赐资本、华屹资本、盛世投资、芯能创投",
+          "quote_hash": "20627b41f27b12d25e4f7898ea2dc07bb2daf658dde4b4c9ad01952cfc89b510"
+        },
+        {
+          "source_id": "shengshi-brand-directory",
+          "source_url": "https://zdb.pedaily.cn/company/show8932/",
+          "source_title": "盛世投资_北京盛世宏明投资基金管理有限公司_投资界",
+          "source_content_hash": "946144d591c9225c107cbad49c873c1e499814d4eb78d0384f9d5d305a960e3d",
+          "quote": "北京盛世宏明投资基金管理有限公司 盛世投资",
+          "quote_hash": "cbef9ded7dc1fb30901b5b104d19393cfb7fc95ac46e13ae00192cd8a61a5856"
+        },
+        {
+          "source_id": "shengshi-manager-hkex",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0512/2026051200566_c.pdf",
+          "source_title": "中芯国际集成电路制造有限公司发行股份购买资产暨关联交易报告书",
+          "source_content_hash": "17900cffad5f75f89f32a0acd27521db99c61306c15f596a7eae288c169335cc",
+          "quote": "执行事务合伙人为北京盛世宏明投资基金管理有限公司",
+          "quote_hash": "a01797ac9e5da8d3583c247231ea9061f8537c2e929b2a66b3ddc8951cd533a5"
+        },
         {
           "source_id": "FISRC-c8f7d3c7af4bc00a",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-01/doc-inhzwisx2581224.shtml",
@@ -161,7 +193,7 @@
           "quote_hash": "e6f1ce4ea3834a3e001f0edae979a05a690aed6dd030ed064eee879a97c1273a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

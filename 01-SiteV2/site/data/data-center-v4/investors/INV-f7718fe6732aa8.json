@@ -138,21 +138,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "启明 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "身份、基金机构层级及投资领域依据启明创投官网；融资公告没有披露启明创投的单独出资额或法律出资主体。",
+      "summary": "启明创投官网称其成立于2006年，投资科技与医疗创新领域的早期和成长期企业；其2026年1月周报称阶跃星辰完成B+轮融资并写明启明创投进一步跟投。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "启明创投2026年1月27日周报称其投资企业阶跃星辰完成B+轮，启明创投进一步跟投；融资总额不是启明创投的单独出资额。",
+          "source_id": "qiming-stepfun-bplus-2026"
+        },
         {
           "description": "融资来源记录：StepFun · B+轮 · 2026-01-26 · 本轮参投 · 50 亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-de3bb93d57d25bdf"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "身份、基金机构层级及投资领域依据启明创投官网；融资公告没有披露启明创投的单独出资额或法律出资主体。",
       "sources": [
+        {
+          "source_id": "qiming-official-profile",
+          "source_url": "https://www.qimingvc.com/cn/about",
+          "source_title": "关于 | 启明创投",
+          "source_content_hash": "017d131d296a86a0bdbff729a99f8813b8e43f76483a185b3e909c6aab3042c9",
+          "quote": "启明创投成立于2006年。目前，启明创投旗下管理11只美元基金，7只人民币基金，已募管理资产总额达到95亿美元。自成立至今，专注于投资科技（Technology）、医疗创新（Healthcare）等行业早期和成长期的优秀企业。",
+          "quote_hash": "d3a39b1b163d43a5f9a88d76348ceb6db3e5cf1bd5e548965090d3d09fbe1b57"
+        },
+        {
+          "source_id": "qiming-stepfun-bplus-2026",
+          "source_url": "https://www.qimingvc.com/cn/news/%E3%80%90%E5%90%AF%E6%98%8E%E5%91%A8%E6%8A%A5%C2%B7%E6%8A%95%E8%B5%84%E4%BC%81%E4%B8%9A%E8%A6%81%E9%97%BB%E5%8D%81%E6%9D%A1%E3%80%91vol-03-2026127",
+          "source_title": "【启明周报·投资企业要闻十条】Vol. 03, 2026.1.27 | 启明创投",
+          "source_content_hash": "d95cd895aac126bbbd98aaf47431d590871f09a325294caf6ae79b169a75f20a",
+          "quote": "日前， 启明创投投资企业阶跃星辰（StepFun）完成超50 亿人民币B+轮融资，一举刷新过去12个月中国大模型赛道单笔最高融资纪录。启明创投进一步跟投。",
+          "quote_hash": "90cb98732c9f5da9b8d2975e59a35ae684467cfa75700635719d5624c0e09f1e"
+        },
         {
           "source_id": "FISRC-de3bb93d57d25bdf",
           "source_url": "https://www.cyzone.cn/article/822685.html",
@@ -162,7 +186,7 @@
           "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

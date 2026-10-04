@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "J.P. Morgan 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
+      "summary": "SiMa.ai官方公告将J.P. Morgan列为新投资者；本档案保留融资来源使用的品牌名称，不推断具体出资法人或基金。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "SiMa.ai官方公告将J.P. Morgan列为Series C新投资者；来源未披露具体出资法人或基金，本档案保留其品牌级表述。",
+          "source_id": "PROFILE-a6754063f6eeeed8aace"
+        },
         {
           "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-926f8f2e0ad24f56"
@@ -152,6 +156,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-052693809129fc532399",
+          "source_url": "https://www.jpmorgan.com/contact-us/media",
+          "source_title": "Media Center",
+          "source_content_hash": "014d58a9b92bb43e021572c9cd9bc33ec2609eb6dd5babbcd407357f66ab8932",
+          "quote": "J.P. Morgan and all related trademarks, logos and service marks displayed on this site belong to JPMorgan Chase & Co. (JPMC) and its affiliates.",
+          "quote_hash": "b7c0e7e39ba55cf85186a6e0de8f94bccc1d9003e1c0fdcf24afc7ed3ed52cbd"
+        },
+        {
+          "source_id": "PROFILE-a6754063f6eeeed8aace",
+          "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+          "source_title": "SiMa.ai Reaches $1.45B Valuation with $500 Million in Total Funding to Scale Physical AI in Humanoids, Automotive, and Drones - SiMa AI",
+          "source_content_hash": "e4a445b8ad5e5db7fe9dd87384cc0fef61131e6be5f0b5f6b45e8c90d37e1889",
+          "quote": "J.P. Morgan, and the State of Michigan as new investors",
+          "quote_hash": "5267e7edc90ddcbfe739153ea795f86fefd5b11c2b54802f4232d19babfab03e"
+        },
         {
           "source_id": "FISRC-926f8f2e0ad24f56",
           "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
@@ -161,7 +181,11 @@
           "quote_hash": "e47b49f692200b2912d7b385c181838dfe768e51836a4dc7381dbad873224021"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

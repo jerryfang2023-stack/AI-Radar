@@ -121,21 +121,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Brookfield Asset Management 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按 Brookfield 官网列明的资产管理业务记录机构级身份；PaleBlueDot AI 的报道支持其参与信贷融资安排，但没有披露 Brookfield 单独出资额或具体基金载体。",
+      "summary": "Brookfield 官网将 Asset Management 业务描述为代表全球机构与私人财富客户进行长期投资，并列出基础设施、能源、房地产、私募股权和信贷等业务能力。Unite.AI 报道称其与 Tor Investment Management 一同为 PaleBlueDot AI 提供融资。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Unite.AI 报道 Brookfield Asset Management 与 Tor Investment Management 为 PaleBlueDot AI 提供信贷融资；单独金额未披露。",
+          "source_id": "brookfield-paledot-credit-2026"
+        },
         {
           "description": "融资来源记录：PaleBlueDot AI · 历史轮次未披露 · 信贷融资提供方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-da12f9a4c84d5ed2"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "按 Brookfield 官网列明的资产管理业务记录机构级身份；PaleBlueDot AI 的报道支持其参与信贷融资安排，但没有披露 Brookfield 单独出资额或具体基金载体。",
       "sources": [
+        {
+          "source_id": "brookfield-official-asset-management",
+          "source_url": "https://www.brookfield.com/about-us/businesses/asset-management",
+          "source_title": "Asset Management | Brookfield",
+          "source_content_hash": "3b32da49c61bec93ae9fb40b8c3032b31a1b8618ee1e48fff95aa92c3c992af0",
+          "quote": "We invest on behalf of pension plans, endowments and foundations, sovereign wealth funds, financial institutions, insurance companies and private wealth investors worldwide for the long term.",
+          "quote_hash": "f35e3a379baf1ea88513246ae10ce68c9967f4d324405814c9c16a96245787e4"
+        },
+        {
+          "source_id": "brookfield-paledot-credit-2026",
+          "source_url": "https://www.unite.ai/palebluedot-ai-raises-200m-series-c-at-3-2b-valuation-to-expand-super-intelligence-compute/",
+          "source_title": "PaleBlueDot AI Raises $200M Series C at $3.2B Valuation &#8211; Unite.AI",
+          "source_content_hash": "8c4c82a9549b0563b76fd67e8d37bf12922d21c1343eadca176807b18e74d3b7",
+          "quote": "Brookfield Asset Management and Tor Investment Management provided the financing",
+          "quote_hash": "15a67ce17492a6bba0129613aa52a0d8fc3e76358bd71aa378be60258be77000"
+        },
         {
           "source_id": "FISRC-da12f9a4c84d5ed2",
           "source_url": "https://www.unite.ai/palebluedot-ai-raises-200m-series-c-at-3-2b-valuation-to-expand-super-intelligence-compute/",
@@ -145,7 +169,7 @@
           "quote_hash": "15a67ce17492a6bba0129613aa52a0d8fc3e76358bd71aa378be60258be77000"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

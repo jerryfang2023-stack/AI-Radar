@@ -137,21 +137,82 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Cathay Innovation 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份、投资阶段和地域来自官网自述；AMI Labs 活动来自机构官方账号。未推断出资额或其他未披露条款。",
+      "summary": "Cathay Innovation 官网将其介绍为2015年在巴黎创立的多阶段风险投资机构，投资地域覆盖欧洲、北美、中国、拉丁美洲、东南亚和非洲。其官方 LinkedIn 帖子称共同领投 AMI Labs €890M seed 轮。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露的机构类型",
+          "value": "多阶段风险投资机构。",
+          "source_id": "PROFILE-6184f2d9cd7ad2e2661f"
+        },
+        {
+          "field": "investment_geography",
+          "label": "官网披露的投资地域",
+          "value": "欧洲、北美、中国、拉丁美洲、东南亚和非洲。",
+          "source_id": "PROFILE-ff2b93d690040dbad539"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Cathay Innovation 官方账号称其共同领投 AMI Labs €890M seed 轮；该帖未披露其出资额。",
+          "source_id": "PROFILE-d1cffb6fc08b130080b7"
+        },
         {
           "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮联合领投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6c35525e379488bf"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Cathay Innovation",
+          "url": "https://cathayinnovation.com/",
+          "source_id": "PROFILE-aadb03ff6ac97f742433"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-6184f2d9cd7ad2e2661f",
+          "source_url": "https://cathayinnovation.com/",
+          "source_title": "Cathay Innovation",
+          "source_content_hash": "fc8b0145c33509d6b4387201fef61cd3bdcffd3d5d1b1b8b5dc6ec274f7bca06",
+          "quote": "Founded in Paris in 2015, Cathay Innovation is a multi-stage venture capital firm backed by industry.",
+          "quote_hash": "2865a0cb1662a4d9b746cd93a9ba52f4585e82c80766e30643431413c8c7d602"
+        },
+        {
+          "source_id": "PROFILE-ff2b93d690040dbad539",
+          "source_url": "https://cathayinnovation.com/",
+          "source_title": "Cathay Innovation",
+          "source_content_hash": "fc8b0145c33509d6b4387201fef61cd3bdcffd3d5d1b1b8b5dc6ec274f7bca06",
+          "quote": "Investing across Europe, North America, China, Latin America, Southeast Asia and Africa.",
+          "quote_hash": "677235a48864fad3a2fd7e567895c214c7caa47a03c77e4e2de30bb77447d246"
+        },
+        {
+          "source_id": "PROFILE-d1cffb6fc08b130080b7",
+          "source_url": "https://www.linkedin.com/posts/cathay-innovation_ami-labs-x-cathay-innovation-activity-7437049850921152513-l6Ou",
+          "source_title": "AMI Labs Secures €890M Seed Round Led by [Your Company] | Cathay Innovation posted on the topic | LinkedIn",
+          "source_content_hash": "c721d23dfbccfb235dd092965f16fe55f2b4b8b84591da73d9ca2dc30ba1dcb7",
+          "quote": "We’re proud to announce our co-leading of AMI Labs’ €890M seed round — Europe's largest AI seed round to date.",
+          "quote_hash": "3a1d5c3e08b34376fcddb02f7063078bb8d9421bce96a91e8186f35ceb4fb55d"
+        },
+        {
+          "source_id": "PROFILE-aadb03ff6ac97f742433",
+          "source_url": "https://cathayinnovation.com/",
+          "source_title": "Cathay Innovation",
+          "source_content_hash": "fc8b0145c33509d6b4387201fef61cd3bdcffd3d5d1b1b8b5dc6ec274f7bca06",
+          "quote": "Cathay Innovation",
+          "quote_hash": "218b754e4b5fa9d0de72f7f1b07bf56a04892752df4bf3d77093130c730da4bd"
+        },
         {
           "source_id": "FISRC-6c35525e379488bf",
           "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -161,7 +222,7 @@
           "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -248,25 +248,29 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中关村资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合，也不推断来源未披露的法人或基金归属。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资来源将其列为 鼎犀智创（Rhinovate™） Pre-A轮 本轮参投；仅记录来源直接支持的示例，不代表完整投资组合。",
           "source_id": "FISRC-57de475f4ec2ac5a"
+        },
+        {
+          "description": "公开融资来源将其列为 华毅瀛飞 Pre-A轮 本轮参投；仅记录来源直接支持的示例，不代表完整投资组合。",
+          "source_id": "FISRC-13a43855ea188967"
+        },
+        {
+          "description": "公开融资来源将其列为 卓世科技 历史轮次投资方；仅记录来源直接支持的示例，不代表完整投资组合。",
+          "source_id": "PROFILE-bebc7b513b3dce100094"
         },
         {
           "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-270f085d1cb4d09f"
-        },
-        {
-          "description": "融资来源记录：华毅瀛飞 · Pre-A轮 · 2026-04-13 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-13a43855ea188967"
         }
       ],
       "contacts": [],
@@ -274,10 +278,34 @@
         {
           "source_id": "FISRC-57de475f4ec2ac5a",
           "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
-          "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
-          "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+          "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员 | elsewhere",
+          "source_content_hash": "9a5337d23d812298351da8157b799d7483b0d650ba2804219f55b5499a93f954",
           "quote": "本轮融资由鼎晖百孚领投，九合创投、彬复资本、龙芯创投、顺禧基金、中关村资本跟投。",
           "quote_hash": "6e3524ad712d2909331022a4e1c1e84411d6bbacc8b5c3a07478c2b3bdfbf776"
+        },
+        {
+          "source_id": "FISRC-13a43855ea188967",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
+          "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资_新浪科技_新浪网",
+          "source_content_hash": "3083dbb3685e359ce6346027232c7772ed982294d1dd0803bc5858444cc1921c",
+          "quote": "跟投方包括京津冀创业投资引导基金、中关村资本、亦庄科创二期基金、招银国际资本以及鑫融邦资本等知名投资机构",
+          "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
+        },
+        {
+          "source_id": "PROFILE-bebc7b513b3dce100094",
+          "source_url": "https://www.maas.com.cn/news/830.html",
+          "source_title": "百度AI基因明星创业公司，卓世科技破局大模型商业落地-卓世科技-中国领先的企业级AI生产力产品技术提供商(Zoellent Technology)",
+          "source_content_hash": "cb0326e936afb5a2029c41c4c9d89f514ce5cce4a72a680a84d115ca3b9320a0",
+          "quote": "卓世科技投资人中既有知名投资机构同创伟业、中关村资本，也有用友集团等上市公司，还有清华系力合资本、启迪之星等机构，同时获得了海南省国资、青岛市国资等产业基金加持。",
+          "quote_hash": "2dd3de409c0e522a3cd73c194b879a2d7cce13233dc1dafb4cc042c1da905992"
+        },
+        {
+          "source_id": "PROFILE-d2526cbbf33fee0e755f",
+          "source_url": "https://www.zgcgroup.com.cn/xwzx/jtyw/art/2025/art_a13fc579544a4d0b8962aaa1bed81da1.html",
+          "source_title": "中关村发展集团用“耐心资本”赋能科技创新",
+          "source_content_hash": "ea97d9d16c647f9226b969202d8d791f0dc90b918d890dc674f98569cdc2582c",
+          "quote": "北京中关村资本基金管理有限公司（以下简称“中关村资本”）",
+          "quote_hash": "328fba76001447157b0c3617dcd9ada8eb220d65f7aaad35e0a51dc396b6ee50"
         },
         {
           "source_id": "FISRC-270f085d1cb4d09f",
@@ -286,17 +314,13 @@
           "source_content_hash": "cc2f801c9dac56e7",
           "quote": "本轮融资由鼎晖百孚领投, 龙芯创投、九合创投、彬复资本、顺禧基金、中关村资本跟投。",
           "quote_hash": "704d218ef28d120c58690ee29eacb0507cf6fc15901de05df20b1e2d55e0f9a4"
-        },
-        {
-          "source_id": "FISRC-13a43855ea188967",
-          "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
-          "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
-          "source_content_hash": "16a36ffc37b94da5",
-          "quote": "跟投方包括京津冀创业投资引导基金、中关村资本、亦庄科创二期基金、招银国际资本以及鑫融邦资本等知名投资机构",
-          "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

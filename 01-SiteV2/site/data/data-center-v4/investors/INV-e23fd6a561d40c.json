@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "风语筑 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
+      "summary": "风语筑上市公司公告披露其对松应科技的股权投资及战略合作安排；本档案只记录公告直接支持的投资事实。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "风语筑上市公司公告披露其拟以自有资金对上海松应科技有限公司进行不超过人民币2,000万元股权投资，并已签署股权投资暨战略合作框架协议。",
+          "source_id": "PROFILE-ef3c7882878ee0e38513"
+        },
         {
           "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ae72db61aa80327"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-ef3c7882878ee0e38513",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-06-13/1225366972.PDF",
+          "source_title": "上海风语筑文化科技股份有限公司关于新增对外投资暨累计对外投资的公告",
+          "source_content_hash": "e21158d5f40036046a6539748de24a211c7f0c4ef0ba16d9aa9f427f6aa08a85",
+          "quote": "投资标的名称：上海松应科技有限公司；投资金额：公司拟以自有资金对松应科技进行股权投资，交易对价不超过人民币2,000万元。",
+          "quote_hash": "31941ad04e250dceb722c7af152c33c8ce2e52492a5b988a42a7147e7dd120f9"
+        },
         {
           "source_id": "FISRC-1ae72db61aa80327",
           "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
@@ -161,7 +173,11 @@
           "quote_hash": "cfb09d31f4e2f345e414820b4806243896f0671821613a5ee1f48e5dfbed164a"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

@@ -138,21 +138,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "浦科投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份依据上海浦东科技投资有限公司官网标题及品牌用语。融资报道未披露浦科投资单独出资额，也未指出具体基金载体。",
+      "summary": "上海浦东科技投资有限公司官网页以“浦科投资”称其品牌，业务包括跨境并购高科技资产、并购境内上市公司及发起管理产业投资基金；投资界将浦科投资列为极佳视界 Pre-B 轮投资方之一。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界将浦科投资列为极佳视界近10亿元 Pre-B 轮投资方之一；报道未披露其单独金额。",
+          "source_id": "pdsti-jiji-preb-2026"
+        },
         {
           "description": "融资来源记录：极佳视界 · Pre-B轮 · 2026-03-05 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fdfe58e2e68c7e9e"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构身份依据上海浦东科技投资有限公司官网标题及品牌用语。融资报道未披露浦科投资单独出资额，也未指出具体基金载体。",
       "sources": [
+        {
+          "source_id": "pdsti-official-identity",
+          "source_url": "https://www.pdsti.com/Pc/index.html?state=ch",
+          "source_title": "关于我们-上海浦东科技投资有限公司",
+          "source_content_hash": "90947a52240c94ad9aa987322bb5e00989be9bc11f11074343d8bd5e47a6aaef",
+          "quote": "跨境并购高科技资产、并购境内上市公司、发起管理产业投资基金",
+          "quote_hash": "779b7bedccb016ba4c4a1b7e75ec58692149efc6c9d850656cf1b934dc084309"
+        },
+        {
+          "source_id": "pdsti-jiji-preb-2026",
+          "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+          "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿_投资界",
+          "source_content_hash": "999496916ab4da4f9513a18f2b966e8bfdc1d9daad283c092347a4b30748208f",
+          "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本",
+          "quote_hash": "702d133bb6f30cef0129aab945d2bb84841c52ae31b9ad5f8d942327c79652ca"
+        },
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",

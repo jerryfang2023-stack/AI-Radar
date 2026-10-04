@@ -153,25 +153,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Roelof Botha 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录 Flow Engineering 官方公告对其个人投资和董事角色的披露，不扩写完整履历或其他投资活动。",
+      "summary": "Flow Engineering 的 2026 年 B 轮公告称，Roelof Botha 加入其董事会担任独立董事并以个人身份投资。本档案只记录该项公司公告披露，不扩展其完整职业经历或投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-131c3b05243369a2"
+          "description": "Flow Engineering 官方公告披露 Roelof Botha 以个人身份投资该公司，并加入董事会任独立董事。",
+          "source_id": "PROFILE-f7c90640d65ff375ae8a"
         },
         {
           "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3511f7baf76701e3"
+          "source_id": "FISRC-131c3b05243369a2"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-f7c90640d65ff375ae8a",
+          "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+          "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
+          "source_content_hash": "40c9452232df5d4ee5c444e1a39668a4b19c2c2f59e43252f283a9188dd4f488",
+          "quote": "Roelof Botha has additionally joined Flow’s board as an independent director and personally invested in the company",
+          "quote_hash": "90ad24e81e59c8ce4377d61b4c24cc19f2fe4386fd822b8fa50d3adb4c25c647"
+        },
         {
           "source_id": "FISRC-131c3b05243369a2",
           "source_url": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
@@ -189,7 +197,17 @@
           "quote_hash": "90ad24e81e59c8ce4377d61b4c24cc19f2fe4386fd822b8fa50d3adb4c25c647"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "current_roles": [
+        {
+          "title": "Independent Director",
+          "organization": "Flow Engineering",
+          "source_id": "PROFILE-f7c90640d65ff375ae8a"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "现有来源仅支持 Flow Engineering 公告披露的个人投资和董事角色，不代表完整履历。",
+      "last_verified_at": "2026-10-03"
     }
   }
 }

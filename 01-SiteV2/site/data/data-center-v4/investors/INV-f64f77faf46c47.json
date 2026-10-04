@@ -137,21 +137,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Goldman Sachs Growth Equity 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按官方材料中的 Growth Equity 团队名称记录；来源没有披露该团队的单独出资额或具体法律基金。",
+      "summary": "Goldman Sachs Asset Management 的官方融资公告将 Growth Equity at Goldman Sachs Alternatives 列为 ORO Labs 2026 年 Series C 的领投方之一。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Goldman Sachs Asset Management 公告称 Growth Equity at Goldman Sachs Alternatives 与 Brighton Park Capital 共同领投 ORO Labs 的 Series C；公告未披露单独出资额。",
+          "source_id": "gs-growth-equity-oro-seriesc-2026"
+        },
         {
           "description": "融资来源记录：Oro Labs · C轮 · 2026-03-12 · 本轮领投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1347e63f3abd5d34"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "按官方材料中的 Growth Equity 团队名称记录；来源没有披露该团队的单独出资额或具体法律基金。",
       "sources": [
+        {
+          "source_id": "gs-growth-equity-oro-seriesc-2026",
+          "source_url": "https://am.gs.com/en-fi/advisors/news/press-release/2026/oro-labs-raises-100m-growth-equity-goldman-sachs-alternatives",
+          "source_title": "ORO Labs Raises $100M for Agentic Procurement - Goldman Sachs Asset Management",
+          "source_content_hash": "d96f4d7c9b66f427d19d346163fa898fa2d82d0dbdf91d4321de44a168eaea91",
+          "quote": "The round was led by Brighton Park Capital and Growth Equity at Goldman Sachs Alternatives, with participation from the following earlier investors: Norwest Venture Partners, B Capital, XYZ Capital and Felicis",
+          "quote_hash": "97571774ad078fecba46b66284ef00d59624ff25860165b37031340d0c729a1e"
+        },
         {
           "source_id": "FISRC-1347e63f3abd5d34",
           "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
@@ -161,7 +177,7 @@
           "quote_hash": "e47704b1a9ba8d2709ed19de2422a8c2ce98b2b3fde7686d5697e31b7e17f3cb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -121,21 +121,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "宁德时代旗下溥泉资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "平台归属采用省级投资促进网的公开报道，未把品牌映射到未被来源明确指认的独立法律实体。融资报道披露的是该轮总额，不是溥泉资本单独出资。",
+      "summary": "福建省投资促进网称溥泉资本是宁德时代旗下唯一产业投资平台；量子位报道宁德时代旗下溥泉资本领投达卯科技近亿元 A+ 轮。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "量子位报道宁德时代旗下溥泉资本领投达卯科技近亿元 A+ 轮；未披露单独出资额。",
+          "source_id": "puchuan-damao-seriesaplus-2025"
+        },
         {
           "description": "融资来源记录：上海达卯科技有限公司 · 历史轮次未披露 · A+轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-23e3875ee86bc918"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "平台归属采用省级投资促进网的公开报道，未把品牌映射到未被来源明确指认的独立法律实体。融资报道披露的是该轮总额，不是溥泉资本单独出资。",
       "sources": [
+        {
+          "source_id": "puchuan-fujian-gov-identity",
+          "source_url": "https://fdi.swt.fujian.gov.cn/show-22533.html",
+          "source_title": "斥资两亿元，宁德交投携手宁德时代发力碳中和-投资要闻-资讯中心-福建投资促进网",
+          "source_content_hash": "160c9a2a5503a7228bc4528c44d45e741838fdcbc7e67da3590ae87330ddca68",
+          "quote": "为宁德时代旗下唯一产业投资平台",
+          "quote_hash": "f49509d9b4fc1eaf8a1c68ea9be13f509fbcfa10bb56c39c448c735125d8b507"
+        },
+        {
+          "source_id": "puchuan-damao-seriesaplus-2025",
+          "source_url": "https://www.qbitai.com/2026/09/496494.html",
+          "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的” &#8211; 量子位",
+          "source_content_hash": "16062f13c4b14473b2c6b29fff50eab4bb833585e5060ca03f9b599acc0e101b",
+          "quote": "去年10月，达卯科技完成由宁德时代旗下溥泉资本领投的近亿元A+轮融资。",
+          "quote_hash": "087c388326eef9ae94e81eea702d5705c55b8dfc21ac3103809c27eab3e37ada"
+        },
         {
           "source_id": "FISRC-23e3875ee86bc918",
           "source_url": "https://www.qbitai.com/2026/09/496494.html",
@@ -145,7 +169,7 @@
           "quote_hash": "087c388326eef9ae94e81eea702d5705c55b8dfc21ac3103809c27eab3e37ada"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Koch Disruptive Technologies 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "身份和投资方式依据 Koch 官方介绍；OnRamp 的1,500万美元为整轮融资额，未写成 KDT 的单独出资额，也未映射到具体基金。",
+      "summary": "Koch 官方页面将 Koch Disruptive Technologies（KDT）称为 Koch 旗下的投资团队，并说明其投资范围从种子期到后期成长阶段。Koch 的 OnRamp 公告称 KDT 领投该公司的 Series A。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Koch 于2025年11月12日称 Koch Disruptive Technologies 领投 OnRamp 的 Series A；1,500万美元为整轮金额。",
+          "source_id": "koch-kdt-onramp-seriesa-2025"
+        },
         {
           "description": "融资来源记录：Gatik · D轮 · 2026-08-26 · 本轮联合领投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-36551c55b72c6244"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "身份和投资方式依据 Koch 官方介绍；OnRamp 的1,500万美元为整轮融资额，未写成 KDT 的单独出资额，也未映射到具体基金。",
       "sources": [
+        {
+          "source_id": "koch-kdt-official-identity",
+          "source_url": "https://www.kochinc.com/career-opportunities/koch-disruptive-technologies",
+          "source_title": "Koch Disruptive Technologies Careers | Jobs &amp; Opportunities | Koch",
+          "source_content_hash": "738f4caab831e7d22fbcfaad57809bba2921d8f3f8df84a9e3dec7b4cfd98d8d",
+          "quote": "Koch Disruptive Technologies (KDT) partners with principled entrepreneurs to unlock the long-term potential of transformative companies.",
+          "quote_hash": "6350a3b3be1440364a37f6f6bcf7dc840f5a19a2d84e7a71e3fb35578f71d7b8"
+        },
+        {
+          "source_id": "koch-kdt-onramp-seriesa-2025",
+          "source_url": "https://www.kochinc.com/news/koch-invests-koch-disruptive-technologies-leads-%2415m-series-a-funding-in-onramp",
+          "source_title": "KOCH INVESTS: Koch Disruptive Technologies Leads $15M Series A Funding in OnRamp, an AI-Driven Customer Onboarding and Engagement Platform | Koch",
+          "source_content_hash": "f15f2e026f74339db679ae7216cdfaec7e33173362a38b7edb2abef3a7a53e96",
+          "quote": "Koch Disruptive Technologies is leading a $15M series A funding round in OnRamp",
+          "quote_hash": "6ffda73376e1f8b7c48664f152be81764a10e933539cc4e2438d08555c60124b"
+        },
         {
           "source_id": "FISRC-36551c55b72c6244",
           "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
@@ -161,7 +185,7 @@
           "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

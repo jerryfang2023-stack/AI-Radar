@@ -121,14 +121,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Gentree 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网说明其支持东南亚企业拓展菲律宾市场；Quadric 的公告仅证明一项新投资活动，不代表完整投资组合。",
+      "summary": "Gentree Fund 官网表示其积极支持希望拓展菲律宾市场的高成长企业，也支持东南亚创始人探索菲律宾市场。Quadric 的 Series C 公告将 Gentree 列为新投资者。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述支持方向",
+          "value": "支持有意拓展菲律宾市场的高成长公司及希望探索菲律宾市场的东南亚创始人。",
+          "source_id": "PROFILE-d1719d8097da92491092"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Quadric 官方公告将 Gentree 列为其 Series C 的新投资者；公告未披露 Gentree 的出资金额。",
+          "source_id": "PROFILE-434aac6f2460a9a6b39e"
+        },
         {
           "description": "融资来源记录：Quadric · 历史轮次未披露 · C轮首关新投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9f9b41abcfe2abd0"
@@ -136,6 +147,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-d1719d8097da92491092",
+          "source_url": "https://www.gentree.asia/",
+          "source_title": "Gentree Fund",
+          "source_content_hash": "35b7626fbedc0c826d5796bd4695365c0a3d91d0cb2b1ee71edec9a8c3f25ec7",
+          "quote": "The Fund also seeks to support founders from across South East Asia looking to explore and learn about the potential of the Philippine market.",
+          "quote_hash": "456e81a4052f653e2b6d149aad85cf0c0b70605310dee1af1f321cc80e853780"
+        },
+        {
+          "source_id": "PROFILE-434aac6f2460a9a6b39e",
+          "source_url": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
+          "source_title": "Quadric, Inference Engine for On-Device AI Chips, Raises $30M Series C as Design Wins Accelerate Across Edge LLMs, Automotive, and Enterprise | Quadric",
+          "source_content_hash": "22a0a62a7b96be3dc583d68b662344ffefa9368f8e7345bf271058a88eb0ccba",
+          "quote": "New investors include Volta, Gentree, Wanxiang America, Pivotal, and Silicon Catalyst Ventures.",
+          "quote_hash": "f5ce2d621f9ac250a9e41b51b95dc8f6aa163663e165009067632e538ad62da8"
+        },
         {
           "source_id": "FISRC-9f9b41abcfe2abd0",
           "source_url": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
@@ -145,7 +172,11 @@
           "quote_hash": "f5ce2d621f9ac250a9e41b51b95dc8f6aa163663e165009067632e538ad62da8"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-03"
     }
   }
 }

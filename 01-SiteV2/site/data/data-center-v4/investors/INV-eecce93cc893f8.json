@@ -138,21 +138,60 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "五源 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "机构品牌来自官网；融资活动仅依据创业邦公开报道记录。未扩写完整投资组合、基金规模或管理人法律主体。",
+      "summary": "五源资本官网显示其投资品牌与被投企业；创业邦关于阶跃星辰 B+ 轮的报道将“五源”列为进一步跟投的老股东。",
+      "facts": [
+        {
+          "field": "organization_name",
+          "label": "官网显示的机构名称",
+          "value": "五源资本。",
+          "source_id": "PROFILE-274ca10b58b996e67e0e"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "创业邦关于阶跃星辰 B+ 轮的报道将“五源”列为进一步跟投的老股东；未披露金额。",
+          "source_id": "PROFILE-031b5ecb4f99e632685f"
+        },
         {
           "description": "融资来源记录：StepFun · B+轮 · 2026-01-26 · 本轮参投 · 50 亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-de3bb93d57d25bdf"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "五源资本",
+          "url": "https://www.5ycap.com/",
+          "source_id": "PROFILE-274ca10b58b996e67e0e"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-274ca10b58b996e67e0e",
+          "source_url": "https://www.5ycap.com/",
+          "source_title": "五源资本",
+          "source_content_hash": "0c74e1eaf51e5aa5b7945b7b6e6d184babd1777e67a8b6a23455790c254ff5e8",
+          "quote": "五源资本",
+          "quote_hash": "9199e54dd8156932226336f7575874450af54c487938444fdc4294ec79950636"
+        },
+        {
+          "source_id": "PROFILE-031b5ecb4f99e632685f",
+          "source_url": "https://www.cyzone.cn/article/822685.html",
+          "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
+          "source_content_hash": "cc8a99979976c5fbc3e61638e1787e1869b34def3d907b3aedf50d6eecbd71cc",
+          "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
+          "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+        },
         {
           "source_id": "FISRC-de3bb93d57d25bdf",
           "source_url": "https://www.cyzone.cn/article/822685.html",
@@ -162,7 +201,7 @@
           "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -137,14 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Basis Set 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金背景依据 Basis Set 官网自述；Entire 的融资公告仅证明一项已披露投资活动，不代表完整投资组合。",
+      "summary": "Basis Set 官网将其描述为总部位于旧金山的早期风险投资基金，并表示关注以人工智能扩展人类潜能的创始人。Entire 的种子轮公告将 Basis Set 列为参投方。",
+      "facts": [
+        {
+          "field": "fund_profile",
+          "label": "官网自述基金阶段与关注方向",
+          "value": "早期风险投资基金；官网称其投资以人工智能扩展人类潜能的创始人。",
+          "source_id": "PROFILE-e9bd860d1f43f1a5020d"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Entire 的种子轮融资公告将 Basis Set 列入参投机构；该公告未披露其出资金额。",
+          "source_id": "PROFILE-5fc7ff3c104281b490c2"
+        },
         {
           "description": "融资来源记录：Entire Inc. · 种子轮 · 2026-02-10 · 本轮参投 · 6000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-62dc6d17f09030c0"
@@ -152,6 +163,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-e9bd860d1f43f1a5020d",
+          "source_url": "https://www.basisset.com/basis-set-faq",
+          "source_title": "Basis Set FAQ",
+          "source_content_hash": "15c8f74312d917fef9f73cf08678c513c7ed907fe6b796f81641d4f093574db2",
+          "quote": "Basis Set is an early stage venture capital fund based in San Francisco, California. Basis Set invests in founders that are scaling human potential with artificial intelligence.",
+          "quote_hash": "2524528a2db5f5adcf6762e4405fb2d89350ccafef7897fbdba5c15680bf2f1e"
+        },
+        {
+          "source_id": "PROFILE-5fc7ff3c104281b490c2",
+          "source_url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
+          "source_title": "Former GitHub CEO Thomas Dohmke launches Entire with a landmark $60 million seed round to build the world&#x27;s next developer platform for the era of AI.",
+          "source_content_hash": "ae8d4241144e298ff494b110ee680f3535bbbf4ac5642cb12fe17ee91b6d6d7c",
+          "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+          "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
+        },
         {
           "source_id": "FISRC-62dc6d17f09030c0",
           "source_url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
@@ -161,7 +188,11 @@
           "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-04"
     }
   }
 }

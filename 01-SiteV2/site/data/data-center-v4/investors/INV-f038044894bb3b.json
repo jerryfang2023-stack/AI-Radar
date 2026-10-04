@@ -247,14 +247,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Forerunner 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "融资来源和机构官网均使用 “Forerunner” 名称；本档案不推断该轮的具体基金载体或单独出资额。",
+      "summary": "Forerunner 官网将其定位为早期风险投资机构；TechCrunch 报道将其创始人兼管理合伙人 Kirsten Green 列为 Natural 3000 万美元 A 轮领投者。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 报道称，Forerunner 创始人兼管理合伙人 Kirsten Green 领投 Natural 的 3000 万美元 A 轮；未披露该机构的单独出资额。",
+          "source_id": "forerunner-natural-seriesa-2026"
+        },
         {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e7a3713da8f3e54"
@@ -269,7 +273,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "融资来源和机构官网均使用 “Forerunner” 名称；本档案不推断该轮的具体基金载体或单独出资额。",
       "sources": [
+        {
+          "source_id": "forerunner-official-identity",
+          "source_url": "https://www.forerunnerventures.com/",
+          "source_title": "Forerunner Ventures",
+          "source_content_hash": "ef798855b1d6f2fcc232d92a404f9c34736b322a05780bffcdc3801398990eae",
+          "quote": "Forerunner is an early-stage venture firm",
+          "quote_hash": "c520b4bc448898b81392dbe2b58f75ec4c91fedd393d35325976dc67fea73443"
+        },
+        {
+          "source_id": "forerunner-natural-seriesa-2026",
+          "source_url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
+          "source_title": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe | TechCrunch",
+          "source_content_hash": "92a1f82e227bf25ca38cffa52bac29d36d1c042890a463a7202ee29801613409",
+          "quote": "VC firm Forerunner",
+          "quote_hash": "2dc6cf71023afca78289df27771c59fdb7be0622d45d1ac463c8ad840970d698"
+        },
         {
           "source_id": "FISRC-2e7a3713da8f3e54",
           "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
@@ -295,7 +319,7 @@
           "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

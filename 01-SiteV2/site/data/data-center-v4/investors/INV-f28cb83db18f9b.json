@@ -190,14 +190,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "New Enterprise Associates (NEA) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构名称以 NEA 官网及其全称为准；融资报道仅支持其在 Centralize A 轮的领投角色，不据此推断具体基金或单独份额。",
+      "summary": "NEA 官网将其投资阶段覆盖到从种子轮至 IPO；Crunchbase 对 Centralize 的报道列明 1500 万美元 A 轮由 New Enterprise Associates（NEA）领投。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Crunchbase 报道 Centralize 的 1500 万美元 A 轮由 New Enterprise Associates（NEA）领投；没有披露单独出资额。",
+          "source_id": "nea-centralize-seriesa-2026"
+        },
         {
           "description": "融资来源记录：Centralize · A轮 · 2026-07-29 · 本轮领投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0232cca5ca9bf922"
@@ -208,7 +212,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构名称以 NEA 官网及其全称为准；融资报道仅支持其在 Centralize A 轮的领投角色，不据此推断具体基金或单独份额。",
       "sources": [
+        {
+          "source_id": "nea-official-identity",
+          "source_url": "https://www.nea.com/",
+          "source_title": "NEA: New Enterprise Associates",
+          "source_content_hash": "ac25324f6c77aafc5e38335ea62525e43fd8e571b435a4d0cd6ac892df8e6974",
+          "quote": "We craft enduring partnerships with ambitious founders at every stage of company building.",
+          "quote_hash": "0992c03a2d7789288e71e6b60ff2a9ece63d342cfa3a8a7112c50f0dcb9bf608"
+        },
+        {
+          "source_id": "nea-centralize-seriesa-2026",
+          "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+          "source_title": "Exclusive: Former Meta And Slack Engineers Raise $15M For New Startup Centralize To Build A ‘Deal GPS’ For Enterprise Sales",
+          "source_content_hash": "e44d3cb5e872ca9fdec2a9e0f839457d623b64d03df96a5fca2c1e836c5d6144",
+          "quote": "a $15 million Series A funding round led by New Enterprise Associates (NEA)",
+          "quote_hash": "1c98aabdb9653e808fa074c13f803a272d0da6cf268813e13ca766f9604c15da"
+        },
         {
           "source_id": "FISRC-0232cca5ca9bf922",
           "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
@@ -226,7 +250,7 @@
           "quote_hash": "c30252c6c218fcb26ea03ef81c883477075c4742ebe5c2dcaa74c9ab854242da"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

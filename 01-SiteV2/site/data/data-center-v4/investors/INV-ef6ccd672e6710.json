@@ -137,21 +137,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Egis Technology 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "公司身份与业务范围来自 Egis Technology 官网；投资活动来自 TYLsemi 官方融资公告。本档案只记录该轮活动，不扩写为风险投资机构或完整组合。",
+      "summary": "Egis Technology 官网介绍其为无晶圆厂半导体集团；TYLsemi 的官方融资公告将 Egis Technology 列为 4300 万美元融资参与方。",
+      "facts": [
+        {
+          "field": "business_description",
+          "label": "官网披露的业务定位",
+          "value": "无晶圆厂半导体集团，提供连接 IP 与 chiplet 设计服务。",
+          "source_id": "PROFILE-98dbad610ac66da9f443"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TYLsemi 官方融资公告将 Egis Technology 列为 4300 万美元融资参与方；未披露其出资金额。",
+          "source_id": "PROFILE-54abd180b6fe9dbadc54"
+        },
         {
           "description": "融资来源记录：TYLsemi Inc. · 早期融资 · 2026-07-14 · 本轮参投 · $43 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4b585d907f1a939a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Egis Technology",
+          "url": "https://www.egistec.com/",
+          "source_id": "PROFILE-5a21319fd5cfa9f1b989"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-98dbad610ac66da9f443",
+          "source_url": "https://www.egistec.com/",
+          "source_title": "Egistec &#8211; A Global Fabless Semiconductor Group Offering Connectivity IPs and Chiplet Design Turnkey Services",
+          "source_content_hash": "8d521dc3efadcd047adbe65ff91ccf2e0fb252cf92f2dbd9d0d5f5050f95a633",
+          "quote": "A Global Fabless Semiconductor Group Offering Connectivity IPs and Chiplet Design Turnkey Services",
+          "quote_hash": "38eb66f60bc90ec99c610f61ee0fe60ff9f4993f3b0479dc377e51f9b434d139"
+        },
+        {
+          "source_id": "PROFILE-54abd180b6fe9dbadc54",
+          "source_url": "https://www.tylsemi.ai/press-releases/tylsemi-raises-43-million-to-launch-first-full-stack-chipletplatform-for-custom-ai-silicon/",
+          "source_title": "TYLsemi Raises $43 Million to Launch First Full-Stack Chiplet Platform for Custom AI&nbsp;Silicon - TYLsemi",
+          "source_content_hash": "77f478a33ec5723003bedebe89243d479264a5ddf69c5437115dac13afc87c38",
+          "quote": "The funding round was led by Matter Venture Partners with participation from Viola Ventures, GHOVC, Egis Technology, and strategic investment from leading companies across the global semiconductor and AI infrastructure ecosystem.",
+          "quote_hash": "64a771ba09b5475e8ad1ff7bff64d05ce3e15d9dac21f5acaab8888b9ab394aa"
+        },
+        {
+          "source_id": "PROFILE-5a21319fd5cfa9f1b989",
+          "source_url": "https://www.egistec.com/",
+          "source_title": "Egistec &#8211; A Global Fabless Semiconductor Group Offering Connectivity IPs and Chiplet Design Turnkey Services",
+          "source_content_hash": "8d521dc3efadcd047adbe65ff91ccf2e0fb252cf92f2dbd9d0d5f5050f95a633",
+          "quote": "Egistec",
+          "quote_hash": "7ce419baaf292f6a06ffb24d2aca09d0f679ed7da8ee8a9651675906f167a29d"
+        },
         {
           "source_id": "FISRC-4b585d907f1a939a",
           "source_url": "https://cryptobriefing.com/tylsemi-raises-43m-custom-ai-chips/",
@@ -161,7 +208,7 @@
           "quote_hash": "8b460ace5c444f00c79f8b380904245a82a6150a67190a219896b9441a03ddad"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

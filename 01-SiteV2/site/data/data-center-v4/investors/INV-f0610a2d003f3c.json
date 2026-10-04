@@ -435,14 +435,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Antler 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构性质以 Antler 官网的自我介绍为准；Lovable 公告仅支持其作为回归投资者的名称披露，不提供单独出资额。",
+      "summary": "Antler 官网将其定义为全球早期风险投资机构；Lovable 的 Series C 公告把 Antler 列为回归投资者之一。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Lovable 官方 Series C 公告将 Antler 列入回归投资者；未披露其单独出资金额。",
+          "source_id": "antler-lovable-seriesc-2026"
+        },
         {
           "description": "融资来源记录：Dodge AI · 种子轮 · 2026-09-29 · 本轮参投 · $2.65 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-79d7e597795281b6"
@@ -457,7 +461,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构性质以 Antler 官网的自我介绍为准；Lovable 公告仅支持其作为回归投资者的名称披露，不提供单独出资额。",
       "sources": [
+        {
+          "source_id": "antler-official-identity",
+          "source_url": "https://www.antler.co/about",
+          "source_title": "About | Antler",
+          "source_content_hash": "7eca77e78ec2528215a2c588f562b8ddee6c7cb2fe3cb0796cfc35f02e2c637c",
+          "quote": "Antler is a global early-stage VC firm",
+          "quote_hash": "4ad64b10e0b7837bec62b65f4394ea91dc62bf3ef868894315bb29f88640bb21"
+        },
+        {
+          "source_id": "antler-lovable-seriesc-2026",
+          "source_url": "https://lovable.dev/blog/series-c",
+          "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+          "source_content_hash": "b6e6a851334a228e21e33195defcc033393ccc72089fe9fb5e43e97a3fc1aa59",
+          "quote": "Antler, CapitalG, DST Global",
+          "quote_hash": "17dae6719011a6837f9411f516e259e06bc7e2d00a2aee6b64889f1afaf81e59"
+        },
         {
           "source_id": "FISRC-79d7e597795281b6",
           "source_url": "https://techfundingnews.com/dodge-ai-raises-2-65m-from-accel-and-googles-ai-fund-to-cut-reliance-on-sap-consultants/",
@@ -483,7 +507,7 @@
           "quote_hash": "97bd7954dc0febba51afa9e4251eb4f088c74829d74ef2025c7aabc6f8ea5f21"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

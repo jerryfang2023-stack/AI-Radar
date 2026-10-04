@@ -121,21 +121,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "The Nature Conservancy 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按非营利环境组织分类，不将其表述为风险投资机构。融资公告没有披露其投资载体、单独金额或参与形式。",
+      "summary": "The Nature Conservancy 官网将其界定为全球环境非营利组织；Enveda 的 Series C 公告将其列为参与该轮的投资者。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Enveda 公告列 The Nature Conservancy 为 1.3 亿美元 Series C 的参与方之一；未披露其单独金额或投资载体。",
+          "source_id": "tnc-enveda-seriesc-2024"
+        },
         {
           "description": "融资来源记录：Enveda · 历史轮次未披露 · 参投C轮。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-921d200ac951683e"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "按非营利环境组织分类，不将其表述为风险投资机构。融资公告没有披露其投资载体、单独金额或参与形式。",
       "sources": [
+        {
+          "source_id": "tnc-official-who-we-are",
+          "source_url": "https://www.nature.org/en-us/about-us/who-we-are/",
+          "source_title": "Who We Are | The Nature Conservancy",
+          "source_content_hash": "71c248110ab322952085ee465daf22c178151cf566c8ec3f26ca58e1fbe1fea9",
+          "quote": "The Nature Conservancy is a global environmental nonprofit working to create a world where people and nature can thrive.",
+          "quote_hash": "4fac01e43771eb8da09c02f9d9f9471157fdcc740ca614450050f7e47878d3f1"
+        },
+        {
+          "source_id": "tnc-enveda-seriesc-2024",
+          "source_url": "https://enveda.com/news/enveda-closes-130m-series-c-funding-to-deliver-multiple-clinical-readouts-from-a-pipeline-of-10-development-candidates/",
+          "source_title": "Enveda Closes $130M Series C Funding to Deliver Multiple Clinical Readouts from a Pipeline of 10 Development Candidates - Enveda",
+          "source_content_hash": "35e46e0b7d563b7cca97ee5cd65117b645c3ef61c5bf5e0529f366730658ffc1",
+          "quote": "The Nature Conservancy, and Henry R.",
+          "quote_hash": "ef7c2b95a78146834d0ec8049b5513f0037ee4794b25771ee623f2cbf7825564"
+        },
         {
           "source_id": "FISRC-921d200ac951683e",
           "source_url": "https://enveda.com/news/enveda-closes-130m-series-c-funding-to-deliver-multiple-clinical-readouts-from-a-pipeline-of-10-development-candidates/",
@@ -145,7 +169,7 @@
           "quote_hash": "29f6a39572c0dcee3d9f011f25267268cbf119efa2db305ac7fe55954575c41a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

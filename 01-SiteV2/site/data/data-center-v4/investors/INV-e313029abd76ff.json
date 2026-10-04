@@ -192,16 +192,16 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "AMP PBC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
+      "summary": "AMP官网称其为public benefit corporation，使命是支持独立前沿技术生态；融资来源列出其投资参与，本档案不将其归类为传统VC。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：River AI · 多轮融资 · 2026-08-11 · 本轮联合领投 · $1.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "TechCrunch将AMP PBC列为River AI Seed/Series A轮联合领投方；AMP官网将其描述为public benefit corporation，本档案不将其推断为传统VC。",
           "source_id": "FISRC-0deb7f666bec5423"
         },
         {
@@ -212,12 +212,20 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-c9b91f37f8f476006612",
+          "source_url": "https://www.amppublic.com/",
+          "source_title": "The Need for an Independent AI Grid - AMP PBC",
+          "source_content_hash": "f7b66f9b08313283f2afbdcdc439fad18da460c01b011c35c7296aeed3919163",
+          "quote": "AMP is a public benefit corporation that exists to maximize the world's frontier output.",
+          "quote_hash": "4cb150f039f27ed7374688e9828231e29c45c239daef605a1e87b8b6d8a07c6b"
+        },
+        {
           "source_id": "FISRC-0deb7f666bec5423",
           "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
-          "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
-          "source_content_hash": "a44322af824e0f8f",
-          "quote": "led by General Catalyst and AMP PBC",
-          "quote_hash": "013a3889f84a5ad377bf90a22775a82f1aa282b45db2c3cb0e6e2cae1fcfbe37"
+          "source_title": "General Catalyst leads $1.1B round into 2-month-old River AI | TechCrunch",
+          "source_content_hash": "e102466303253150d4be7d5091ef2465222545361b1f415e5c4ebc87144dcbe7",
+          "quote": "AI co-founder Igor Babuschkin, has secured $1.1 billion in funding in a seed/Series A round led by General Catalyst and AMP PBC, with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek. (AMP PBC is an AI-focused investment firm founded in 2026 by former Andreessen Horowitz general partner Anjney Midha, backer of companies",
+          "quote_hash": "ac14e8df5661aac73c59d1a38676e320e762983017994652d512eccab8562503"
         },
         {
           "source_id": "FISRC-b5e22ae086a6b353",
@@ -228,7 +236,11 @@
           "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

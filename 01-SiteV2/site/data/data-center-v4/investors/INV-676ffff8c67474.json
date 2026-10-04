@@ -139,33 +139,57 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
-      "summary": "Anthropic 官方 H 轮公告将 NX1 Capital 列入投资者名单。当前仅按公告原称记录投资关系，不补写未经一手来源确认的法律实体、投资策略或基金规模。",
+      "coverage_status": "researched",
+      "coverage_note": "Anthropic 官方融资公告将 NX1 Capital 列为 2026 年 H 轮重要投资者。SEC 的另一份 Form D 文件识别出 NX1 Capital Onshore Fund LP，并把 NX1 Capital LP 列为该申报的推广方；该 SEC 文件没有说明 Anthropic 投资由哪个具体基金实体完成。本档案不将该结构关联推断为具体交易载体。",
+      "summary": "Anthropic 官方公告将 NX1 Capital 列入其 2026 年 H 轮重要投资者。SEC Form D 另记录一只名为 NX1 Capital Onshore Fund LP 的基金，并列出 NX1 Capital LP；公开材料没有披露 Anthropic 投资对应的具体基金载体或 NX1 Capital 的单独出资额。",
       "facts": [
         {
-          "field": "public_investment",
-          "label": "公开投资披露",
-          "value": "Anthropic 官方公告将 NX1 Capital 列入 H 轮投资者名单。",
-          "source_id": "FISRC-b5e22ae086a6b353"
+          "field": "public_fund_filing",
+          "label": "公开基金申报背景",
+          "value": "SEC Form D 列有 NX1 Capital Onshore Fund LP，并把 NX1 Capital LP 列为推广方；该申报不证明具体 Anthropic 投资载体。",
+          "source_id": "nx1-sec-formd-2025"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Anthropic 官方公告将 NX1 Capital 列为 H 轮投资方之一。",
+          "description": "Anthropic 于 2026 年 5 月 28 日公布的 H 轮公告将 NX1 Capital 列为重要投资者之一；公告未披露其单独出资金额。",
+          "source_id": "nx1-anthropic-seriesh-2026"
+        },
+        {
+          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b5e22ae086a6b353"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开交易记录来自 Anthropic 官方公告。SEC 申报仅作同名基金结构背景，未用于推定其为 Anthropic 的具体投资载体。",
       "sources": [
         {
-          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_id": "nx1-sec-formd-2025",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2102143/000090266425005403/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "5556ffd5b20839c855259f80aee3a5c487bf80c2a68f53d594471cb655e33229",
+          "quote": "NX1 Capital Onshore Fund LP",
+          "quote_hash": "144889339e12b41973012af704dadb72b5a1e93588aee908a29587189e9def5b"
+        },
+        {
+          "source_id": "nx1-anthropic-seriesh-2026",
           "source_url": "https://www.anthropic.com/news/series-h",
           "source_title": "Anthropic raises $65B Series H at $965B valuation \\ Anthropic",
           "source_content_hash": "c00be615fd4e35832b47e33a715a08c58e5e3c7d7839c6775a6edc97ab162fd9",
-          "quote": "t, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek. It also includes $15 billion of previously committed investments from hyperscalers, including ",
-          "quote_hash": "25be0e9add9736cd1154a8f91051e7522538f2a44c65fcba0c41f3bb655fe673"
+          "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+          "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+        },
+        {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_url": "https://www.anthropic.com/news/series-h",
+          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+          "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+          "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
         }
       ],
       "last_verified_at": "2026-10-03"

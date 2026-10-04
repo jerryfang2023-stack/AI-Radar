@@ -208,21 +208,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Situational Awareness LP 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
+      "summary": "Situational Awareness LP官网称其为旧金山投资顾问机构，关注AI技术及受AI影响的公司；档案只保留有来源支持的投资活动。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b5e22ae086a6b353"
+          "description": "MatX官方公告称Series B由Jane Street和Situational Awareness LP领投。",
+          "source_id": "FISRC-c6e81d3e611e6fe3"
         },
         {
-          "description": "融资来源记录：MatX · B轮 · 2026-02-24 · 本轮联合领投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c6e81d3e611e6fe3"
+          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b5e22ae086a6b353"
         },
         {
           "description": "融资来源记录：MatX · B轮 · 2026-02-24 · 本轮联合领投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -232,20 +232,28 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-54be69b638cacf5aedf4",
+          "source_url": "https://situationalawarenesslp.com/about",
+          "source_title": "Situational Awareness",
+          "source_content_hash": "92b99d7945b46374fc9ac3f6c23c0662e916a68a7bfe11fd5cf1008e8294ab8c",
+          "quote": "About Situational Awareness LP (\"SALP\") is a San Francisco based investment advisor that invests in companies involved in the development of artificial intelligence (\"AI\") technology and in companies where AI may have a positive or negative impact.",
+          "quote_hash": "9808810b133f4d737fd74295def67df768c09c622ead54c70ddd3d74629af911"
+        },
+        {
+          "source_id": "FISRC-c6e81d3e611e6fe3",
+          "source_url": "https://matx.com/research/series_b",
+          "source_title": "MatX One and our Series B | MatX",
+          "source_content_hash": "5e3b77e276dc8bbe9929f6045e00b94923e684e271149ca3403f4641ecbf53d4",
+          "quote": "The round was led by Jane Street , one of the most tech-savvy Wall Street firms, and Situational Awareness LP , whose founder",
+          "quote_hash": "8496b467ce5f25057cf7e7c6b7a476dc8c78f0628b51a8bde64a1d918d10f284"
+        },
+        {
           "source_id": "FISRC-b5e22ae086a6b353",
           "source_url": "https://www.anthropic.com/news/series-h",
           "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
           "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
           "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
           "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
-        },
-        {
-          "source_id": "FISRC-c6e81d3e611e6fe3",
-          "source_url": "https://matx.com/research/series_b",
-          "source_title": "MatX One 与我们的 B 轮融资",
-          "source_content_hash": "2cff7bb3dd7cdd322441afbee191b44f945f92beebfc451f70a4eb2aa5e138c6",
-          "quote": "The round was led by Jane Street, one of the most tech-savvy Wall Street firms, and Situational Awareness LP, whose founder Leopold Aschenbrenner wrote the definitive memo on AGI.",
-          "quote_hash": "44e633fa45c6511ef12959c99cd10ffbce2eb40e48143cff92369b27ed2ffb33"
         },
         {
           "source_id": "FISRC-e80cfbcccb0ffdce",
@@ -256,7 +264,11 @@
           "quote_hash": "3e38221e2cc4291868bf717da8ed035babef1df3f4b0a2c0544d4c3616ddfaf6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

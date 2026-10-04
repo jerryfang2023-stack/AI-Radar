@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "CPE源峰 (CPE Yuanfeng) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份和业务类型依据 CPE源峰官网自述；月之暗面融资报道没有披露金额，因此不推断单独出资份额或基金实体。",
+      "summary": "CPE源峰官网将其定位为资产管理机构，覆盖 AI、先进制造、消费、医疗与基础设施等领域；亿欧报道月之暗面 2026 年 5 月战略融资由 CPE源峰、中国移动与美团龙珠联合投资。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "亿欧报道月之暗面 2026 年 5 月新一轮战略融资由 CPE源峰、中国移动、美团龙珠联合投资；具体金额未披露。",
+          "source_id": "cpe-yuanfeng-moonshot-2026"
+        },
         {
           "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-06-08 · 2026年5月轮次参投 · 20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0199034a5417695f"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构身份和业务类型依据 CPE源峰官网自述；月之暗面融资报道没有披露金额，因此不推断单独出资份额或基金实体。",
       "sources": [
+        {
+          "source_id": "cpe-yuanfeng-official-firm",
+          "source_url": "https://www.cpe-fund.com/abt_firm.html",
+          "source_title": "公司-CPE源峰官网",
+          "source_content_hash": "49becf35440c8e59176acf6dd190b495360de99824396e47faab04facce8a3f0",
+          "quote": "CPE源峰是一家具有国际视野和丰富中国经验的资产管理机构",
+          "quote_hash": "60af25b6b2fa73e4e20ad05b64310c32b816a1b978a96c1c8fcdfeafd34ec541"
+        },
+        {
+          "source_id": "cpe-yuanfeng-moonshot-2026",
+          "source_url": "https://www.sohu.com/a/1019114602_115035",
+          "source_title": "月之暗面获CPE源峰等战略投资_技术_融资_服务",
+          "source_content_hash": "7a2219e44822ffe3a7b1ff3526d0024f6fc4617bf42679fcb0bb7e869590ade8",
+          "quote": "本轮融资由CPE源峰、 中国移动 、 美团 龙珠联合投资，具体金额未披露。",
+          "quote_hash": "83323c1a171ada30b6c54de073be3d23b7bdb221baecb6b7131cac8429f1f00c"
+        },
         {
           "source_id": "FISRC-0199034a5417695f",
           "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
@@ -161,7 +185,7 @@
           "quote_hash": "c9b467c638b77387c1ffe08456c78843daed5c14757338641269f76f42b06d29"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

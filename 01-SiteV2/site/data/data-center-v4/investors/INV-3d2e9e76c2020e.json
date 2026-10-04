@@ -246,28 +246,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Vercel 官网确认其软件基础设施业务；Photon 的融资报道列出其参与一轮融资。该报道不足以证明 Vercel 运营独立投资部门或构成完整投资组合。",
-      "summary": "Vercel 官网将其描述为面向应用和智能体的基础设施平台。TechCrunch 于 2026-10 报道 Photon 种子轮时列出 Vercel 为参投方；本条只验证这项公开活动，不据此推断其存在独立 VC 部门。",
+      "coverage_status": "researched",
+      "coverage_note": "Vercel 官网将公司描述为软件基础设施平台，并以 Vercel Ventures 名义披露 AI 加速器的投资安排。本档案按企业风险投资项目记录，公开材料未说明独立基金法律结构、基金规模或与队列中其他投资线索的逐笔关系。",
+      "summary": "Vercel 是面向应用与 AI agent 的软件基础设施平台。其官方 AI Accelerator 页面以 Vercel Ventures 名义披露对首名获奖团队的投资安排，并称上一期支持过 Stably AI、Cervo、Bear AI 和 General Translation 等早期团队；现有公开资料显示的是企业加速器与投资职能，不足以把 Vercel Ventures描述成独立法律实体。",
       "facts": [
         {
-          "field": "business_description",
-          "label": "官网自述业务",
-          "value": "Vercel 官网称其提供面向应用和智能体的基础设施平台。",
-          "source_id": "vercel-about-2026-10-03"
-        }
-      ],
-      "milestones": [
+          "field": "company_description",
+          "label": "公司定位",
+          "value": "Vercel 官网将其描述为面向应用和 agent 的基础设施平台。",
+          "source_id": "vercel-about-platform-2026"
+        },
         {
-          "date": "2026-10-01",
-          "description": "TechCrunch 报道 Photon 的 450 万美元种子轮有 Vercel 参与。",
-          "source_id": "photon-seed-investment-2026-10-03"
+          "field": "corporate_investment_program",
+          "label": "企业投资安排",
+          "value": "Vercel 官方 AI Accelerator 公告称，首名获奖团队将获得 Vercel Ventures 投资；这是加速器安排，不代表公开披露了独立基金条款。",
+          "source_id": "vercel-accelerator-2026-venture-award"
         }
       ],
+      "milestones": [],
       "track_record": [
         {
-          "description": "TechCrunch 于 2026-10-01 报道 Photon 获得 450 万美元种子融资，并将 Vercel 列为参投方；该记录来自媒体报道。",
-          "source_id": "photon-seed-investment-2026-10-03"
+          "description": "Vercel 官方 2026 AI Accelerator 页面称，上一期获支持的早期团队包括 Stably AI、Cervo、Bear AI 和 General Translation。",
+          "source_id": "vercel-accelerator-previous-cohort-2026"
         },
         {
           "description": "融资来源记录：Photon · 种子轮 · 2026-10-01 · 本轮参投 · $4.5 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -283,9 +283,13 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开页面将投资职能放在 Vercel AI Accelerator 项目内；未推定独立基金、出资额或完整组合。",
       "sources": [
         {
-          "source_id": "vercel-about-2026-10-03",
+          "source_id": "vercel-about-platform-2026",
           "source_url": "https://vercel.com/about",
           "source_title": "About Us",
           "source_content_hash": "819767e37f04e7d78ebe984bd8fc36bebff9dd97443f5ebe06f7b9dc6a18ca14",
@@ -293,12 +297,20 @@
           "quote_hash": "af541b0ad0556095e7d108921790f45a40da896afd8ac566cf2e11c23befc453"
         },
         {
-          "source_id": "photon-seed-investment-2026-10-03",
-          "source_url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
-          "source_title": "Photon held a funeral for mobile apps. Now it has $4.5M to help replace them with agents. | TechCrunch",
-          "source_content_hash": "cf9279f41fa85a9948d0e9afa26458c4119e068d3b48d36805a5b054a85ec8d2",
-          "quote": "with participation from Vercel, HSG (HongShan in Chinese), Z Fellows, Llama Ventures, Karman, and other angel investors.",
-          "quote_hash": "ebafb0191de59d7e514d8636cc771e52e8d02b1d0177e9cc8d7dca6fafaab974"
+          "source_id": "vercel-accelerator-2026-venture-award",
+          "source_url": "https://vercel.com/blog/2026-vercel-ai-accelerator-cohort",
+          "source_title": "Meet the 2026 Vercel AI Accelerator Cohort - Vercel",
+          "source_content_hash": "1c57595d9468ca51fd114501affc2580b830ffdd60a3659918fcbcbd30d3984c",
+          "quote": "an investment from Vercel Ventures for the first-place team",
+          "quote_hash": "89f321f2ccf75ca8b42917e153799529e4348762a4986ffa5c62c4e54c6a8541"
+        },
+        {
+          "source_id": "vercel-accelerator-previous-cohort-2026",
+          "source_url": "https://vercel.com/blog/the-vercel-ai-accelerator-is-back-with-6-million-in-credits",
+          "source_title": "The Vercel AI Accelerator is back with $6m in credits - Vercel",
+          "source_content_hash": "2ca6b6b777847fec33c291000762ed63ffe590598fb8cc47a61525bd07906e36",
+          "quote": "In our last cohort we backed early-stage teams like Stably AI",
+          "quote_hash": "b19dcecbe360e3abf9b2155c100df608e4074ecc0b5752806c23eae2ba1005ba"
         },
         {
           "source_id": "FISRC-199e9ff185705c78",

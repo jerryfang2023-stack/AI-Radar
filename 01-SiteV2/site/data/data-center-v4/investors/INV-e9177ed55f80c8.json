@@ -153,25 +153,60 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Accomplice 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网将 Accomplice 定位为风险投资公司与家族办公室；Throne Science 官方融资公告将其列为一项参投方，未披露出资额。",
+      "summary": "Accomplice 官网自述为风险投资公司和现代家族办公室，并称其采用高确信度、集中且耐心的投资方式。Throne Science 的 Series A 公告将 Accomplice 列为参投方。",
+      "facts": [
+        {
+          "field": "organization_type_and_approach",
+          "label": "官网自述机构类型与方式",
+          "value": "风险投资公司与家族办公室；官网称其为高确信度、集中且耐心的投资者。",
+          "source_id": "PROFILE-f6a05c564524d77e2a0e"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2c2bafaec002c33e"
+          "description": "Throne Science 官方公告将 Accomplice 列为 Series A 参投方；公告未披露其出资金额。",
+          "source_id": "PROFILE-c03e95f5748a1255c6c5"
         },
         {
           "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2a587e714925b882"
+          "source_id": "FISRC-2c2bafaec002c33e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Accomplice",
+          "url": "https://accomplice.co/",
+          "source_id": "PROFILE-f6a05c564524d77e2a0e"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-f6a05c564524d77e2a0e",
+          "source_url": "https://accomplice.co/",
+          "source_title": "Accomplice",
+          "source_content_hash": "97a6914a917a2ec2b0ee7f2e4da210bad3851ac768f8c89e84ec424268aff161",
+          "quote": "Accomplice is a venture firm and contemporary family office. We are high conviction, concentrated, patient investors.",
+          "quote_hash": "15363a8fbc3720a80cb5f54e85426da973e8b481a277c814f211268bb1f6d942"
+        },
+        {
+          "source_id": "PROFILE-c03e95f5748a1255c6c5",
+          "source_url": "https://thronescience.com/blogs/signals/throne-raised-10-million-heres-what-its-for",
+          "source_title": "Throne Raised $10 Million. Here&#39;s What It&#39;s For &ndash; Throne Science",
+          "source_content_hash": "4fb68fdd53b571e0dd3981b821b3e879f7d3052e280d07837bf012800813ef29",
+          "quote": "Today we're thrilled to announce a $10 million Series A, led by Will Ventures, with Workshop, Emerson Collective, Accomplice, Moxxie, Salt VC, LEAD VC, Ventures Together, Symphony, Felix Capital, Cosmic Venture Partners, Offscript, V1.VC, and Morrison Seger participating.",
+          "quote_hash": "e3722ecc019e1f1b6c2b2dd1e5b45b0882e0a9c384e79e11872ce47e7d19568a"
+        },
         {
           "source_id": "FISRC-2c2bafaec002c33e",
           "source_url": "https://news.crunchbase.com/health-wellness-biotech/throne-science-microbiome-gut-health-toilet-camera-startup-john-capodilupo-whoop/",
@@ -189,7 +224,7 @@
           "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -139,21 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资被投企业 CloudNC 的 2026 年公告提供了可核验的机构描述和领投活动；这条记录不代表完整机构简介或完整投资组合。",
-      "summary": "CloudNC 于 2026-09-09 公告称，Nimble Ventures 是一家总部在美国的风险投资机构，并领投其 2,000 万美元融资。本条仅记录该笔融资活动及公告所提供的有限身份描述。",
-      "facts": [],
-      "milestones": [
+      "coverage_status": "researched",
+      "coverage_note": "CloudNC 的发行公告将 Nimble Ventures 描述为总部在美国的风险投资机构，并称 John Burbank 为其创始人。现有来源只支持该背景与 CloudNC 一项融资活动。",
+      "summary": "CloudNC 将 Nimble Ventures 描述为美国风险投资机构，并称其创始人为 John Burbank。Nimble Ventures 领投 CloudNC 于 2026 年 9 月公布的 2,000 万美元新融资；投资机构的单独出资额未披露。",
+      "facts": [
         {
-          "date": "2026-09-09",
-          "description": "CloudNC 公告 Nimble Ventures 领投其 2,000 万美元新一轮融资。",
-          "source_id": "cloudnc-nimble-round-2026-10-03"
+          "field": "investor_description",
+          "label": "机构描述",
+          "value": "CloudNC 将 Nimble Ventures 描述为美国风险投资机构。",
+          "source_id": "nimble-cloudnc-seriesb-2026"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "CloudNC 公告称 John Burbank 是 Nimble Ventures 创始人。",
+          "source_id": "nimble-cloudnc-seriesb-2026"
         }
       ],
+      "milestones": [],
       "track_record": [
         {
-          "description": "CloudNC 称 Nimble Ventures 领投其 2,000 万美元融资；公告还将其描述为总部在美国的风险投资机构。",
-          "source_id": "cloudnc-nimble-round-2026-10-03"
+          "description": "CloudNC 于 2026 年 9 月公布 2,000 万美元新融资，由 Nimble Ventures 领投；该金额是融资总额。",
+          "source_id": "nimble-cloudnc-seriesb-2026"
         },
         {
           "description": "融资来源记录：CloudNC · B轮 · 2026-09-09 · 本轮领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -161,14 +168,18 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "CloudNC 官方公告支持机构名称、美国风险投资机构描述、创始人和一项领投记录；未披露单独出资额。",
       "sources": [
         {
-          "source_id": "cloudnc-nimble-round-2026-10-03",
+          "source_id": "nimble-cloudnc-seriesb-2026",
           "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
           "source_title": "CloudNC raises $20m to expand AI tools for precision machining",
           "source_content_hash": "e50d348dd4894165d8008e57268e20fad7ae1fdcc8a77273b2552831c176085d",
-          "quote": "The funding is led by Nimble Ventures, a US-based venture investor",
-          "quote_hash": "ead80db5e5afc7242cf7c7175f7407e387b75ffbd4b3c6677d3d31799cc43244"
+          "quote": "The funding is led by Nimble Ventures, a US-based venture investor, with participation from other investors including Calculus Venture Capital, Entrepreneur First and LM Ventures, Lockheed Martin’s venture capital fund.",
+          "quote_hash": "341dd2bff3b4d4d01a56bd326a3c296e53dd77da66784f0c3238ffcf94dd4189"
         },
         {
           "source_id": "FISRC-583456b85ec1179e",

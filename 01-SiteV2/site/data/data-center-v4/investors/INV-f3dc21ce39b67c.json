@@ -184,11 +184,11 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "CDIB-TEN 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按官方基金名称把队列短名 CDIB-TEN 归入基金层级；来源未证明该基金就是 OXMIQ 融资披露中 CDIB-TEN 标签背后的具体法律出资主体，因此不记录该轮为其投资案例。",
+      "summary": "CDIB Capital Group 与 TEN Capital 的官方公告将 CDIB–TEN Capital Limited Partnership 称为双方设立的双 GP 风险投资基金，并披露其聚焦全球半导体产业。",
       "facts": [],
       "milestones": [],
       "track_record": [
@@ -202,7 +202,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "按官方基金名称把队列短名 CDIB-TEN 归入基金层级；来源未证明该基金就是 OXMIQ 融资披露中 CDIB-TEN 标签背后的具体法律出资主体，因此不记录该轮为其投资案例。",
       "sources": [
+        {
+          "source_id": "cdib-ten-official-fund-identity",
+          "source_url": "https://www.kgi.com/en/press/news-detail-content?dtlsrc=ce44e7f6813e4e76a4eacf65ef9388d8&id=0f56761ca6cb4883acd20c563cebc7d4",
+          "source_title": "News Detail content",
+          "source_content_hash": "853dac8b2bea40725d06bcae8f90f891b17a57958f8ed9f36cecd3b45f59e65e",
+          "quote": "a dual-GP venture capital fund established by CDIB and TEN Capital",
+          "quote_hash": "b87b154673f610c2e9a84a5afdbc9b42a4854b0106156f7d5e99ba41fcf50037"
+        },
         {
           "source_id": "FISRC-b7d7449114c23ca5",
           "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
@@ -220,7 +232,7 @@
           "quote_hash": "deea043200881bf1752c2259f1b5a40bbb311555b4293ab84edc70ea36e3ef53"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

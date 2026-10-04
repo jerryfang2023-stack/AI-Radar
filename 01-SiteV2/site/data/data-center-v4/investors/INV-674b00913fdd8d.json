@@ -180,18 +180,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Zenity 官网将 Vertex Ventures 列为其 Series C 公告中的既有投资方；来源没有标明地区分支或具体法律实体，本档案仅记录这一机构名称在该笔活动中的出现。",
-      "summary": "Zenity 的 1.25 亿美元 Series C 公告将 Vertex Ventures 列为既有投资方之一。公开材料没有说明所指的地区分支，因此本档案不扩展为某一特定 Vertex Ventures 关联实体的背景介绍。",
-      "facts": [],
-      "milestones": [
+      "coverage_status": "researched",
+      "coverage_note": "Vertex Holdings 将 Vertex 描述为由独立管理基金组成的全球 VC 平台；Zenity 案例明确指向 Vertex Ventures Israel。平台及其区域基金不视为同一法律实体，单个分支案例不代表整个平台的完整组合。",
+      "summary": "Vertex Holdings 官网将 Vertex 描述为由独立管理基金组成的全球 VC 平台。其关于 Zenity 的官方报道特别指出，Vertex Ventures Israel 自 Zenity Series A 起持续支持该公司；本档案把该案例保留在明确的区域分支名下。",
+      "facts": [
         {
-          "date": "2026-08-03",
-          "description": "Zenity 的 Series C 公告将 Vertex Ventures 列为既有投资方之一；公告未明确对应的地区分支。",
-          "source_id": "zenity-series-c-vertex-2026-10-03"
+          "field": "network_structure",
+          "label": "全球网络结构（Vertex Holdings 自述）",
+          "value": "Vertex Holdings 称其全球 VC 平台由独立管理的基金组成，分别投资科技与医疗健康企业；这描述的是平台结构，不意味着各区域基金由单一实体管理。",
+          "source_id": "PROFILE-ee17285e6fe82853a560"
         }
       ],
+      "milestones": [],
       "track_record": [
+        {
+          "description": "Vertex Holdings 官方报道指出，Vertex Ventures Israel 自 Zenity 的 Series A 起支持该公司。",
+          "source_id": "PROFILE-e536e22ce688ec856001"
+        },
         {
           "description": "融资来源记录：Zenity · C轮 · 2026-08-03 · 本轮参投 · $125 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7bf361b38b905ca3"
@@ -204,12 +209,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "zenity-series-c-vertex-2026-10-03",
-          "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
-          "source_title": "Zenity Raises $125 Million to Secure the Era of 1 Billion AI Agents",
-          "source_content_hash": "16db186cd8183b2a5071cc3d2563a05701f227c558b1884a28ffbc2803c86d25",
-          "quote": "alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital.",
-          "quote_hash": "bab294ba6119e5c82da13f0fdd35c43dfed8b9bd3f74b158b8cec68229210a51"
+          "source_id": "PROFILE-ee17285e6fe82853a560",
+          "source_url": "https://vertexholdings.com/",
+          "source_title": "Vertex Holdings | Leading Global VC | Vertex Holdings",
+          "source_content_hash": "9aa19e414f76df5aef9e86594c878901cc7cb54d3ced75c3dbded0d794476cb0",
+          "quote": "Today, Vertex is established as a global VC platform, where a network of separate and independently managed VC funds makes dedicated investments in technology and healthcare companies from around the world.",
+          "quote_hash": "831b95151256f6aa122c30455e8a1372479fff16ce7fd7ed9a58d92256c07ac6"
+        },
+        {
+          "source_id": "PROFILE-e536e22ce688ec856001",
+          "source_url": "https://vertexholdings.com/news/zenity-raises-us-125-million-to-secure-the-agentic-era/",
+          "source_title": "Zenity Raises US$125 Million to Secure the Agentic Era | Vertex Holdings",
+          "source_content_hash": "f12c393bf1f501486af9d3a5294a102750521ffae5585c5cccd256046766eeca",
+          "quote": "Vertex Ventures Israel has backed Zenity since its Series A.",
+          "quote_hash": "2eb4fe25ca1c461d7e44c8c3c3a9dba195f19c7c271ac71f55162624a42275fc"
         },
         {
           "source_id": "FISRC-7bf361b38b905ca3",
@@ -228,7 +241,11 @@
           "quote_hash": "d40641b698e2fe5a5d8acdc9e6f890f4c2be6865312d99aa85c5e18e6972b91d"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-04"
     }
   }
 }

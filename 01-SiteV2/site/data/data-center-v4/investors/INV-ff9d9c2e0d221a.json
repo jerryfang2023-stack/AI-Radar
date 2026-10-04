@@ -327,14 +327,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Altimeter 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据Altimeter官网和Cerebras官方融资公告；按Altimeter品牌记录。",
+      "summary": "Altimeter官网将其介绍为科技投资机构，并称其管理投资于公开市场和私募市场的多类基金。Cerebras官方H轮公告将Altimeter列为参与方。本档案仅整理官网及已披露案例，不代表完整组合。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资定位",
+          "value": "科技投资机构；官网称其管理投资于公开市场及私募市场的多类基金。",
+          "source_id": "altimeter-official-profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Cerebras官方H轮公告将Altimeter列为参与投资的机构之一。",
+          "source_id": "cerebras-series-h-altimeter"
+        },
         {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
@@ -349,7 +360,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据Altimeter官网和Cerebras官方融资公告；按Altimeter品牌记录。",
       "sources": [
+        {
+          "source_id": "altimeter-official-profile",
+          "source_url": "https://www.altimeter.com/",
+          "source_title": "Home : Altimeter",
+          "source_content_hash": "5466137977354edd5c68d52081de881b2bb61e72d0a4f95346bcdcd75afaf3de",
+          "quote": "Altimeter is a technology-focused investment firm built by a founder for founders. Altimeter’s mission is to help visionary entrepreneurs build iconic companies, disrupt markets and improve lives through all stages of growth. Altimeter manages a variety of funds that invest in the public and private markets",
+          "quote_hash": "a448367e80b4964f41dc5c44f60a999ef1a412e6c184389ebbf341ea4ef15450"
+        },
+        {
+          "source_id": "cerebras-series-h-altimeter",
+          "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+          "source_title": "Cerebras Raises $1 Billion Series H at $23 Billion Valuation",
+          "source_content_hash": "88f39621a13ded244d51ef093a18ffd7bf99b7c25ef7ec9c3bab01f78d872d51",
+          "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+          "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+        },
         {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
@@ -375,7 +406,7 @@
           "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

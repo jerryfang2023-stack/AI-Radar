@@ -178,25 +178,41 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Citi 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-11-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录公开来源使用的品牌名称和具体融资活动；不推断法律主体、基金归属或完整投资组合。",
+      "summary": "Citi 官方网站介绍该集团；Norm AI 融资报道将 Citi 列为 2025 年 1 月参与方。本档案保留融资来源使用的品牌名称，不推断具体出资法人或基金。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Procurement Sciences · B轮 · 2025-11-05 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fa41049d7cbdf303"
+          "description": "融资报道以“Citi”这一品牌名称披露其参与融资；来源没有说明具体出资法人或基金，本档案不映射到 Citi Ventures。",
+          "source_id": "FISRC-afaa91a6569d1f7a"
         },
         {
-          "description": "融资来源记录：Nomos Ai Inc. · 轮次未披露 · 2025-01 · 既有投资方（2025年1月参投）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-afaa91a6569d1f7a"
+          "description": "融资来源记录：Procurement Sciences · B轮 · 2025-11-05 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fa41049d7cbdf303"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-afaa91a6569d1f7a",
+          "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+          "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+          "source_content_hash": "81bf128bd7552037594ad8d7da65db26666324169396cfe480b1c2aabb48eeee",
+          "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
+          "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
+        },
+        {
+          "source_id": "PROFILE-a8075d3b394201c03660",
+          "source_url": "https://www.citigroup.com/citi/about/",
+          "source_title": "Citi | About Us",
+          "source_content_hash": "0281b029d2ea4083d7c42134d796714dd6e5e5d61aa160a7c8856588abb19f33",
+          "quote": "Citi | About Us About Us Businesses Our Impact News Insights Investors Careers My Account About US A bank built for a world of complexity We live in an increasingly complex world. Companies these days are either born global or are going global at rec",
+          "quote_hash": "1f8c679efdf67d7a310615b6f062999e058a140756053667bcd6868ae24786eb"
+        },
         {
           "source_id": "FISRC-fa41049d7cbdf303",
           "source_url": "https://finance.yahoo.com/news/procurement-sciences-closes-30-million-130000493.html",
@@ -204,17 +220,13 @@
           "source_content_hash": "3b1619e1efabd120",
           "quote": "alongside new strategic investors Bosch Ventures, Citi and prominent industry angels",
           "quote_hash": "fa8893112d87b7782b21a1bfe7fb38d3b508fcc351c4a8a60f17db326afb1933"
-        },
-        {
-          "source_id": "FISRC-afaa91a6569d1f7a",
-          "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
-          "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
-          "source_content_hash": "afe0afef4cf0ce8c",
-          "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
-          "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

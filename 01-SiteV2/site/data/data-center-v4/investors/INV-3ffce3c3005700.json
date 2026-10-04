@@ -139,32 +139,49 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Normal Computing 的公司融资公告将 Brevan Howard Macro Venture Fund 列为该轮新投资者。本档案仅记录此处公开活动，未补写该基金的完整组织背景或与其他 Brevan Howard 实体的关系。",
-      "summary": "Normal Computing 2026 年 3 月 25 日的融资公告将 Brevan Howard Macro Venture Fund 列为新投资者之一。本档案仅覆盖该条公开融资活动。",
-      "facts": [],
-      "milestones": [
+      "coverage_status": "researched",
+      "coverage_note": "Normal Computing 的官方融资新闻稿与 Foley & Lardner 交易公告均以“Brevan Howard Macro Venture Fund”这一完整标签列示投资者；Normal Computing 官网另将 Brevan Howard 列为投资者，但未指明相同的法律或基金关系。本档案不推定该标签的法律实体、组织结构或策略。",
+      "summary": "Normal Computing 官方公告和其交易顾问 Foley & Lardner 的公告，均将 “Brevan Howard Macro Venture Fund” 列入 2026 年 3 月融资的新投资者。Normal Computing 的官网另显示 Brevan Howard 为投资者，但未说明其与具名基金标签的法律关系。",
+      "facts": [
         {
-          "date": "2026-03-25",
-          "description": "Normal Computing 的公司公告将 Brevan Howard Macro Venture Fund 列入新投资者名单。",
-          "source_id": "normal-computing-series-f-brevan-howard-macro-2026-10-03"
+          "field": "reported_investor_label",
+          "label": "公开披露的投资者名称",
+          "value": "Normal Computing 与其交易顾问的公告均使用“Brevan Howard Macro Venture Fund”这一完整投资者标签；这不构成对其法律载体的确认。",
+          "source_id": "bhmacro-normal-seriesb-2026"
         }
       ],
+      "milestones": [],
       "track_record": [
+        {
+          "description": "Normal Computing 的 2026 年 3 月 5,000 万美元融资公告将 Brevan Howard Macro Venture Fund 列为新投资者之一；融资总额不归属为该投资者的单独出资。",
+          "source_id": "bhmacro-normal-seriesb-2026"
+        },
         {
           "description": "融资来源记录：Normal Computing · 其他融资 · 2026-03-25 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3c1b4f6326a3ee76"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "记录两个交易相关来源对同一投资者名称的披露，并保留法律结构和与 Brevan Howard 关系的不确定性。",
       "sources": [
         {
-          "source_id": "normal-computing-series-f-brevan-howard-macro-2026-10-03",
+          "source_id": "bhmacro-normal-seriesb-2026",
           "source_url": "https://www.prnewswire.com/news-releases/normal-computing-raises-50m-led-by-samsung-catalyst-to-accelerate-silicon-design-and-solve-ai-hardware-energy-crisis-302724819.html",
           "source_title": "NORMAL COMPUTING RAISES $50M LED BY SAMSUNG CATALYST TO ACCELERATE SILICON DESIGN AND SOLVE AI HARDWARE ENERGY CRISIS",
           "source_content_hash": "82274a635159b39ca0014f5c67a145d9bf7712c31d02a2519821f44be540a3e7",
           "quote": "New investors also include Galvanize, Brevan Howard Macro Venture Fund, and ArcTern Ventures",
           "quote_hash": "7d30848d4032bd6588bf5eec9e1f9d436c2dab2b7a64fff2b7059850819ce0e8"
+        },
+        {
+          "source_id": "bhmacro-normal-counsel-2026",
+          "source_url": "https://www.foley.com/news/2026/03/foley-represents-samsung-catalyst-as-lead-investor-in-50m-funding-round-for-normal-computing/",
+          "source_title": "Foley Represents Samsung Catalyst as Lead Investor in $50M Funding Round for Normal Computing",
+          "source_content_hash": "a375f0415437764d1aea03232643d9201b7777101693c071c03021fb1a68f79c",
+          "quote": "Additional investors include Galvanize, Brevan Howard Macro Venture Fund, and ArcTern Ventures",
+          "quote_hash": "67d178417d7500fde0c325f01b96bcabbb545965607aa5160aefbce519587754"
         },
         {
           "source_id": "FISRC-3c1b4f6326a3ee76",

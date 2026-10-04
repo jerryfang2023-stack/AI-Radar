@@ -137,21 +137,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Thomas Ricouard 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅据Pool官方LinkedIn公告记录个人投资者姓名；该来源未披露投资金额或其他个人背景。",
+      "summary": "Pool的官方LinkedIn融资公告将Thomas Ricouard列为参与其200万美元融资的个人投资者；本档案仅记录该公告中的投资活动，不附加其他职业或履历。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Pool官方LinkedIn公告称其完成200万美元融资，并将Thomas Ricouard列入参与者。",
+          "source_id": "pool-official-linkedin-thomas-ricouard"
+        },
         {
           "description": "融资来源记录：Pool · 预种子轮 · 2026-06-11 · 本轮参投 · over $2 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5497463d6c7b6acf"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅据Pool官方LinkedIn公告记录个人投资者姓名；该来源未披露投资金额或其他个人背景。",
       "sources": [
+        {
+          "source_id": "pool-official-linkedin-thomas-ricouard",
+          "source_url": "https://www.linkedin.com/company/poolday",
+          "source_title": "Pool | LinkedIn",
+          "source_content_hash": "f0f3b386a84f608da3c456640ccbf3a6f3264542965a60eaed994f01197113e0",
+          "quote": "participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard",
+          "quote_hash": "d1910f9526fadfcb28afebd099233093fa33c0d0309c44bfb042db2bf341a149"
+        },
         {
           "source_id": "FISRC-5497463d6c7b6acf",
           "source_url": "https://www.linkedin.com/posts/poolday_introducing-pool-weve-raised-2m-in-activity-7470874080842285056-GzNS",
@@ -161,7 +177,7 @@
           "quote_hash": "f1e7ec5228f3eb91be682ce6d6229008b01e75fc596d42a30083fee56f24f08f"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

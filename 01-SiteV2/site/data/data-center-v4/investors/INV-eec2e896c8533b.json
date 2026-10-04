@@ -137,21 +137,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Chemistry 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位与 Didero 投资活动均来自 Chemistry 官网；金额是被投公司本轮总额，不是 Chemistry 单独出资额。",
+      "summary": "Chemistry 官网将其介绍为专注种子轮和 A 轮软件公司的早期风险投资机构；其官方投资文章称其与 Headline 共同领投 Didero 的 3000 万美元 Series A。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段与领域",
+          "value": "早期风险投资，重点投资软件公司 Seed 与 Series A 阶段。",
+          "source_id": "PROFILE-4905a7104f48989a23ef"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Chemistry 官网称其与 Headline 共同领投 Didero 的 3000 万美元 Series A；未披露 Chemistry 单独出资额。",
+          "source_id": "PROFILE-0d056b3660b44ef537f0"
+        },
         {
           "description": "融资来源记录：Didero · A轮 · 2026-02-12 · 本轮联合领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1228d3e3db630042"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Chemistry",
+          "url": "https://www.chemistry.vc/post/introducing-chemistry",
+          "source_id": "PROFILE-1913b2a06b7c28a0d818"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-4905a7104f48989a23ef",
+          "source_url": "https://www.chemistry.vc/post/introducing-chemistry",
+          "source_title": "Introducing Chemistry…",
+          "source_content_hash": "3333ebd105ae204ac8264e7265d7a4151d3f233057805c00a42bdfe5755b809d",
+          "quote": "We’re excited to introduce Chemistry, an early-stage venture firm that leads investments in standout software companies at the Seed and Series A.",
+          "quote_hash": "fd0097640e3137d3e6774e8e3db097f14b2cd41c0ef4d050b1d5b930a126db06"
+        },
+        {
+          "source_id": "PROFILE-0d056b3660b44ef537f0",
+          "source_url": "https://www.chemistry.vc/post/our-series-a-in-didero",
+          "source_title": "Global Frictionless Trade: Our Series A in Didero",
+          "source_content_hash": "5f8f8884dfc04ead119223d1b4e01a349fcccfc8ea24a5307ee6155ec7b5a3b7",
+          "quote": "we’ve co-led a $30 million Series A in Didero",
+          "quote_hash": "d86b119b9078861216faf38abcbab4a55532dd1f3c63df602e0ef26161762c70"
+        },
+        {
+          "source_id": "PROFILE-1913b2a06b7c28a0d818",
+          "source_url": "https://www.chemistry.vc/post/introducing-chemistry",
+          "source_title": "Introducing Chemistry…",
+          "source_content_hash": "3333ebd105ae204ac8264e7265d7a4151d3f233057805c00a42bdfe5755b809d",
+          "quote": "We’re excited to introduce Chemistry, an early-stage venture firm",
+          "quote_hash": "f1db107ec6bbbfb889f172c4f61f630b56c87212e0053162c7db30d91b0b8527"
+        },
         {
           "source_id": "FISRC-1228d3e3db630042",
           "source_url": "https://techcrunch.com/2026/02/12/didero-lands-30m-to-put-manufacturing-procurement-on-agentic-autopilot/",
@@ -161,7 +208,7 @@
           "quote_hash": "09d8841f64722fba0e3362a136a241b6aad6454ed353cf1748156c789814bf1e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

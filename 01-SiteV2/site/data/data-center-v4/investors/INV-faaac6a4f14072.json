@@ -121,21 +121,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "InterVest 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据韩国Intervest官方公司页面与LinqAlpha官方融资公告，按公开品牌名称记录；现有公告未披露该交易使用的具体基金载体。",
+      "summary": "韩国Intervest官网介绍其为初创企业提供投资及后续融资支持；LinqAlpha官方公告称其6.6百万美元种子轮由InterVest和Atinum领投。该记录不映射到具体基金或法律实体。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "LinqAlpha官方公告称其6.6百万美元种子轮由InterVest和Atinum领投；公告未披露InterVest的具体基金载体。",
+          "source_id": "linqalpha-seed-intervest"
+        },
         {
           "description": "融资来源记录：LinqAlpha · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0e182e0dbb8bfda6"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据韩国Intervest官方公司页面与LinqAlpha官方融资公告，按公开品牌名称记录；现有公告未披露该交易使用的具体基金载体。",
       "sources": [
+        {
+          "source_id": "intervest-official",
+          "source_url": "https://intervest.co.kr/company",
+          "source_title": "회사소개 - 인터베스트",
+          "source_content_hash": "30c1eee7d0341720d72bbba6926bb8b282dfb72442a1ad08912afab1821c659b",
+          "quote": "인터베스트는 혁신적인 아이디어와 기술을 가진 스타트업이 유니콘기업으로 성장하도록 후속투자유치, 해외시장 진출, 대기업과의 협업 등을 지원합니다.",
+          "quote_hash": "bd472e4b9df2660782b6210d57e285fe220877216b4e34da5144dfd4b9689d2c"
+        },
+        {
+          "source_id": "linqalpha-seed-intervest",
+          "source_url": "https://linqalpha.com/blog/linqalpha-raises-6-6m-seed-round-to-accelerate-ai-copilot-for-financial-analysts",
+          "source_title": "LinqAlpha Raises $6.6M Seed Round to Accelerate AI Copilot for Financial Analysts",
+          "source_content_hash": "5c113635907f0840bdf5680cabfdd1cd081585b9de6fe9233ede709d5464c875",
+          "quote": "led by InterVest and Atinum",
+          "quote_hash": "23c353697da1a0e9cbe85e11b0ec426fc8780e1ce9143a13bdb3abbeda86622e"
+        },
         {
           "source_id": "FISRC-0e182e0dbb8bfda6",
           "source_url": "https://tracxn.com/d/companies/linqalpha/__J0YFmYO6eOoJbBjY2hr1-OblBhOvY8Fn97AhHyp_YgI",
@@ -145,7 +169,7 @@
           "quote_hash": "194cfe70b60398315fd4265f94559f46ba6e3d927b43f349996746ac304101a7"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

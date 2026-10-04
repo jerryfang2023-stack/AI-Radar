@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Tobi Lütke 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据投资项目方/主办方公告及Shopify官方董事会页面；不补写来源未披露的个人投资经历。",
+      "summary": "a16z官方公告将Tobi Lütke列为Horowitz Andreessen Academy的天使投资人；Shopify官方董事会页面确认其为Shopify联合创办人、董事会成员和CEO。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "a16z于2026年9月公布的Horowitz Andreessen Academy融资中，将Tobi Lütke列为个人天使投资人。",
+          "source_id": "haa-a16z-tobi-lutke"
+        },
         {
           "description": "融资来源记录：Horowitz Andreessen Academy · 其他融资 · 2026-09-22 · 本轮参投 · $42 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1f3aa9ba4c739ca7"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据投资项目方/主办方公告及Shopify官方董事会页面；不补写来源未披露的个人投资经历。",
       "sources": [
+        {
+          "source_id": "haa-a16z-tobi-lutke",
+          "source_url": "https://www.a16z.news/p/introducing-the-horowitz-andreessen",
+          "source_title": "Introducing the Horowitz Andreessen Academy",
+          "source_content_hash": "6975cd806bafed39b6e843d2d6dfb5946e8c899b28e3f541aff8f105c0db59ac",
+          "quote": "Tobi Lütke (CEO, Shopify)",
+          "quote_hash": "f685d76ff6d0019a888537fa8e3a8ba8112af35af440a199a708811ea8c4ad5a"
+        },
+        {
+          "source_id": "shopify-board-tobi",
+          "source_url": "https://www.shopify.com/investors/board-of-directors",
+          "source_title": "Board of Directors - Shopify",
+          "source_content_hash": "fcf83ac133b1419894e94f73cf8273a7fb93dd9771d7d4a5e402f954b7ad6204",
+          "quote": "Tobias Lütke co-founded Shopify in September 2004",
+          "quote_hash": "d2eef7b971cb4ca95feb339c6d9b62d77095b2287c224411bba0b57a1eb7b2c1"
+        },
         {
           "source_id": "FISRC-1f3aa9ba4c739ca7",
           "source_url": "https://pulse2.com/horowitz-andreessen-academy-raises-42-million-and-launches-tuition-free-fellowship-in-san-francisco/",
@@ -161,7 +185,7 @@
           "quote_hash": "66f075ad9a5112fbd5e30b27263196962b1250767ea2b56f8dae3803d67dd806"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -137,21 +137,52 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Dr A. Velumani Family Office 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "Prodoc AI 官方融资文章直接定义该家族办公室并记录其领投 seed 轮；未将其扩展为单独注册投资公司，也未披露出资金额。",
+      "summary": "Prodoc AI 官方融资文章将 Dr A. Velumani Family Office 描述为 Thyrocare 创办人 Dr A. Velumani 的家族投资办公室，并称其领投 Prodoc AI seed 轮。公开文章未披露出资金额或单独法律主体名称。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "融资公告披露的机构属性",
+          "value": "Dr A. Velumani 的家族投资办公室；公告称其为 Thyrocare Technologies 创办人。",
+          "source_id": "PROFILE-5dfc1888c0fa36908353"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Prodoc AI 官方公告称 Dr A. Velumani Family Office 领投其 seed 轮，未披露金额。",
+          "source_id": "PROFILE-0a033dd59f452ed6d7c0"
+        },
         {
           "description": "融资来源记录：Prodoc AI · 种子轮 · 2026-09-30 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c10bdfb5983aece2"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-5dfc1888c0fa36908353",
+          "source_url": "https://www.prodoc.ai/blog/prodoc-ai-raises-seed-funding-to-build-the-ai-layer-for-hospitals",
+          "source_title": "Prodoc AI Raises Seed Funding to Build the AI Layer for Hospitals | Prodoc AI Blog",
+          "source_content_hash": "e2b9adf5dad37607f6186c131165becb927a803bc6097cac22b882f25d813db5",
+          "quote": "The Dr A. Velumani Family Office is the family investment office of Dr A. Velumani, creator of Thyrocare Technologies.",
+          "quote_hash": "18ed91e354bfbbd7d8cdda3dca2b80a720c5238c9f49d41b406c9aae294a9de9"
+        },
+        {
+          "source_id": "PROFILE-0a033dd59f452ed6d7c0",
+          "source_url": "https://www.prodoc.ai/blog/prodoc-ai-raises-seed-funding-to-build-the-ai-layer-for-hospitals",
+          "source_title": "Prodoc AI Raises Seed Funding to Build the AI Layer for Hospitals | Prodoc AI Blog",
+          "source_content_hash": "e2b9adf5dad37607f6186c131165becb927a803bc6097cac22b882f25d813db5",
+          "quote": "Prodoc AI has raised seed funding led by the Dr A. Velumani Family Office, with participation from Dr Kunal Shet and Parth D. Bhasin.",
+          "quote_hash": "04d74d5688a87e52910185c4962b5d1262b1e02c59f0b05c7f945b1ac6ff14b6"
+        },
         {
           "source_id": "FISRC-c10bdfb5983aece2",
           "source_url": "https://allhealthtech.com/prodoc-ai-seed-funding-velumani/",
@@ -161,7 +192,7 @@
           "quote_hash": "51aa7b3787982959b1c04cb1562f0a0c7b43666f7e471bb33e1c249fa0388b5a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

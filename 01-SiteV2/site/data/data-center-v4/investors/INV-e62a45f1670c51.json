@@ -137,31 +137,43 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "HSG 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
+      "summary": "HSG官网称其为全球投资的风险投资与私募股权机构，前身名称为Sequoia China。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：OdyssLife · 多轮融资 · 2026-08-17 · 本轮领投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资来源将HSG列为OdyssLife相关融资的投资参与方。",
           "source_id": "FISRC-34ac4235c670177c"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-93b603ea87317432bb29",
+          "source_url": "https://www.hsgcap.com/about-us/",
+          "source_title": "About Us - HSG",
+          "source_content_hash": "202d4759aaf59ef4bde800fea7a4c3a6a9ba89cabcc2a09406da40764282b434",
+          "quote": "HSG, formerly known as Sequoia China, is a leading venture capital and private equity firm investing globally across technology, healthcare, and consumer sectors.",
+          "quote_hash": "417db83103b760395ee81eaa4132bcf41717e6850065404d3b9f63e20e733d73"
+        },
+        {
           "source_id": "FISRC-34ac4235c670177c",
           "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
           "source_title": "\"OdyssLife\" Closes Nearly 200 Million Yuan in New Funding, Linear Capital Continues to Double Down | Linear Portfolio | elsewhere",
-          "source_content_hash": "7da4915015fdb51b",
+          "source_content_hash": "3af457a29c17cfd00548fab0ca7cae1c7e6dd2ca30294c15c15b596a6ec09223",
           "quote": "The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes.",
           "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

@@ -139,19 +139,50 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Focal.vc 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "focal 官网介绍其早期 AI 投资策略；doxx.net 的融资新闻稿列出 Focal.vc 为投资参与方。轮次总额由 Andreessen Horowitz 领投，不代表 Focal.vc 单独出资 3,800 万美元。",
+      "summary": "focal 是一家专注早期 AI-native 技术创始人的风险投资机构；官网称其专门支持 AI 原生建设者。doxx.net 于 2026 年 10 月披露的 3,800 万美元 Series A 由 Andreessen Horowitz 领投，Focal.vc 参与，单家投资金额未披露。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "focal 官网称其专门投资 AI 原生建设者。",
+          "source_id": "focal-investment-focus-2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "doxx.net 的 2026 年 10 月融资新闻稿列 Focal.vc 为 3,800 万美元 Series A 参与方；该金额为融资总额。",
+          "source_id": "focal-doxx-seriesa-2026"
+        },
         {
           "description": "融资来源记录：doxx.net · A轮 · 2026-10-01 · 本轮参投 · $38 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e94be4fcbb396d33"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构策略来自官网自述；投资记录来自被投企业新闻稿，未把融资总额计作 Focal.vc 单独出资。",
       "sources": [
+        {
+          "source_id": "focal-investment-focus-2026",
+          "source_url": "https://focal.vc/",
+          "source_title": "focal — your first lead",
+          "source_content_hash": "14d36584b5c68bb3084a4f793e9975cd4b9b20efca66c70a5d3f575bf313cba2",
+          "quote": "We exclusively back AI native builders with speed and conviction.",
+          "quote_hash": "ff37bbf603a850e10acfd636a70132ebe9cfe008d7eba1c9c48a1c580842fecd"
+        },
+        {
+          "source_id": "focal-doxx-seriesa-2026",
+          "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-10-1-doxxnet-raises-38-million-led-by-andreessen-horowitz-to-launch-agentic-defined-networking",
+          "source_title": "doxx.net Raises $38 Million, Led by Andreessen Horowitz, to Launch Agentic Defined Networking",
+          "source_content_hash": "4ba4a64a27ca934e67a3d76c0d252b99089d609cbccad8dbe48ca60877021291",
+          "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+          "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
+        },
         {
           "source_id": "FISRC-e94be4fcbb396d33",
           "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-10-1-doxxnet-raises-38-million-led-by-andreessen-horowitz-to-launch-agentic-defined-networking",

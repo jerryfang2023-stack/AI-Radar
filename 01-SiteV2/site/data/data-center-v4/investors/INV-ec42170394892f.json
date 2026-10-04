@@ -137,21 +137,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "TTCER 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网自述投资方式为自有资金投资；TechCrunch 报道列出其参与 Savi Security 种子轮。",
+      "summary": "TTCER Partners 官网将其描述为与企业家合作的投资伙伴，并称其以自有资金投资企业。TechCrunch 将 TTCER 列入 Savi Security 种子轮参投方；未披露其出资额。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述投资方式",
+          "value": "使用自有资本投资，并由团队直接参与。",
+          "source_id": "PROFILE-0cb42bb40da29e093549"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 将 TTCER 列为 Savi Security 种子轮参投方；未披露出资额。",
+          "source_id": "PROFILE-0a4110c643be7a0e8de3"
+        },
         {
           "description": "融资来源记录：Savi Security · 种子轮 · 2026-07-07 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9e7066e699b3555c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "TTCER Partners",
+          "url": "https://ttcerpartners.com/",
+          "source_id": "PROFILE-036093632917492474e8"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-0cb42bb40da29e093549",
+          "source_url": "https://ttcerpartners.com/",
+          "source_title": "TTCER Partners - Your partners in growth.",
+          "source_content_hash": "2b3601e3faa948fd45b556dbc07e8a3057c8978faf493b5bf2612f2948b4f679",
+          "quote": "Our unique structure - investing only our own capital and doing the work ourselves - ensures we will always be at your side.",
+          "quote_hash": "4203cdda26f1f8730652f391df5d3d9c7bfb61e4068a5bd273e426c9c6bc0da9"
+        },
+        {
+          "source_id": "PROFILE-0a4110c643be7a0e8de3",
+          "source_url": "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom",
+          "source_title": "Savi&#039;s app aims to protect consumers from realistic AI scams like kidnappers demanding ransom | TechCrunch",
+          "source_content_hash": "b3ccfe102f964c08086b157beedb7abef671738d8a210b5950cc75c47676c340",
+          "quote": "The round was led by Acrew Capital, with participation from Magnify Ventures, TTCER, and Resolute Ventures.",
+          "quote_hash": "e0ccb001866e306c56bb8e179d65fc454ef4ef70ffdc7557ce049b87564ad95f"
+        },
+        {
+          "source_id": "PROFILE-036093632917492474e8",
+          "source_url": "https://ttcerpartners.com/",
+          "source_title": "TTCER Partners - Your partners in growth.",
+          "source_content_hash": "2b3601e3faa948fd45b556dbc07e8a3057c8978faf493b5bf2612f2948b4f679",
+          "quote": "TTCER Partners - Your partners in growth.",
+          "quote_hash": "150a8008d79e4ff5f4c235af28d963ccaff35258308b26428f6cad5892f71648"
+        },
         {
           "source_id": "FISRC-9e7066e699b3555c",
           "source_url": "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom",
@@ -161,7 +208,7 @@
           "quote_hash": "e0ccb001866e306c56bb8e179d65fc454ef4ef70ffdc7557ce049b87564ad95f"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

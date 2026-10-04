@@ -192,14 +192,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "德联资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构品牌与北京德联运通投资管理有限公司的对应关系采用新芽机构页的明确标注；融资报道没有披露德联资本的单独出资额。",
+      "summary": "新芽机构页将德联资本对应到北京德联运通投资管理有限公司，并称其从事股权投资和管理；投资界报道也列出其参与华超神控天使+轮联合领投。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界报道华超神控天使+轮由德联资本与道远资本联合领投；未披露德联资本单独金额。",
+          "source_id": "delian-huachao-angelplus-2026"
+        },
         {
           "description": "融资来源记录：华超神控 · 天使轮 · 2026-06-09 · 本轮联合领投 · 亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cb7eea4a6bd98034"
@@ -210,7 +214,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构品牌与北京德联运通投资管理有限公司的对应关系采用新芽机构页的明确标注；融资报道没有披露德联资本的单独出资额。",
       "sources": [
+        {
+          "source_id": "delian-newseed-profile",
+          "source_url": "https://www.newseed.cn/vc/39378",
+          "source_title": "德联资本_北京德联运通投资管理有限公司_投资机构_新芽NewSeed",
+          "source_content_hash": "ae44d8107057f6fb53b17361340af37a5d95d2e9707b8c516f79324cfb6a0406",
+          "quote": "北京德联运通投资管理有限公司（简称“德联资本”）系一家从事股权投资和管理的专业机构",
+          "quote_hash": "ca955e5655b57fd3a1018d1dd7dcfa8e1a7ea905bdde8c5d6dbe8859b6c4dc3c"
+        },
+        {
+          "source_id": "delian-huachao-angelplus-2026",
+          "source_url": "https://news.pedaily.cn/202606/565032.shtml",
+          "source_title": "华超神控完成亿元天使系列融资，加速打造新一代AI超声脑机接口平台_投资界",
+          "source_content_hash": "0ef420f87f9e350045f37f44073d02a83545692d0f9e8969e4e88b1fc9fe9ac0",
+          "quote": "天使轮融资由经纬创投领投，天使+轮由德联资本、道远资本联合领投",
+          "quote_hash": "2542036de1821f5046832f7c50bbdf2a03dabd50f99e97d9183ee496859af3f8"
+        },
         {
           "source_id": "FISRC-cb7eea4a6bd98034",
           "source_url": "https://news.pedaily.cn/202606/565032.shtml",
@@ -228,7 +252,7 @@
           "quote_hash": "5dd0eb31246f0328811c28a27bf8925921fad675eb9e93461a3505c71fdb68ce"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

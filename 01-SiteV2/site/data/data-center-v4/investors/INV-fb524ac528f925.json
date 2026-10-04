@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Play Time 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录一项公开投资活动；来源未说明用于该交易的具体基金或法律实体。",
+      "summary": "Play Time HoldCo官网将Fish Audio列入其首页展示的公司清单；TechCrunch报道Play Time参与Fish Audio的5200万美元种子轮。本档案只记录这一公开投资活动，不推断基金或法律实体。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch报道Fish Audio于2026年7月完成5200万美元种子轮，Play Time列在参与方中。",
+          "source_id": "fish-audio-seed-playtime"
+        },
         {
           "description": "融资来源记录：Fish Audio · 种子轮 · 2026-07-28 · 本轮参投 · $52 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e06e94375ec64ac4"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅记录一项公开投资活动；来源未说明用于该交易的具体基金或法律实体。",
       "sources": [
+        {
+          "source_id": "playtime-holdco-site",
+          "source_url": "https://www.playtime.vc/",
+          "source_title": "Play Time HoldCo",
+          "source_content_hash": "933368b604598a4794585d8c31cd319870b0d8c4bdf2e99effa29e33cc786adf",
+          "quote": "Fish Audio",
+          "quote_hash": "243024e3cf3f398c0703bed8bd4f1a6a6fb8f8b01d98868063a3ab8bc26f9d49"
+        },
+        {
+          "source_id": "fish-audio-seed-playtime",
+          "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/",
+          "source_title": "Fish Audio raises $52M seed to build AI voice models for creators and enterprises | TechCrunch",
+          "source_content_hash": "d21804e6e3ffd6390c366cb17140fa627ac27226298ffc159cb555d135507094",
+          "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners",
+          "quote_hash": "ba259d4e8e48716f76aa37ed16248f3d92414506617a0477397d5e947d746ef5"
+        },
         {
           "source_id": "FISRC-e06e94375ec64ac4",
           "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
@@ -161,7 +185,7 @@
           "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

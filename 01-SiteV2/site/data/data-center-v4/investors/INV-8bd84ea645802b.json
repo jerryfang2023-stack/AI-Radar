@@ -140,14 +140,14 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "仅依据 GMI Cloud 发布的融资公告记录一笔参投；未把该轮融资总额归为 KB Investment 的投资金额，也未推断机构背景。",
-      "summary": "GMI Cloud 的融资公告将 KB Investment 列为其 Series B 参与投资者之一；公告没有披露 KB Investment 的单独出资额。",
+      "coverage_note": "活动依据 GMI Cloud 的融资公告；公告未披露具体基金载体或 KB Investment 的单独出资金额。融资包中的授信与股权融资在档案中分开表述。",
+      "summary": "GMI Cloud 于 2026 年 10 月 1 日披露的 Series B 股权融资中，KB Investment 是参投机构之一。GMI 将融资包总额披露为 6.68 亿美元，其中 2.23 亿美元为 Series B 股权资金、4.45 亿美元为授信；未披露 KB Investment 的单独出资额。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "GMI Cloud 公告将 KB Investment 列为 Series B 参与方之一，未披露 KB Investment 的单独出资金额。",
-          "source_id": "gmi_series_b"
+          "description": "GMI Cloud 2026 年 Series B 股权融资公告列 KB Investment 为参投方之一；本轮股权融资为 2.23 亿美元，另有 4.45 亿美元授信，均不是 KB Investment 的单独出资金额。",
+          "source_id": "gmi-seriesb-kb-investment-2026"
         },
         {
           "description": "融资来源记录：GMI Cloud · B轮 · 2026-10-01 · 本轮参投 · $223 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -155,20 +155,24 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "活动依据 GMI Cloud 的融资公告；公告未披露具体基金载体或 KB Investment 的单独出资金额。融资包中的授信与股权融资在档案中分开表述。",
       "sources": [
         {
-          "source_id": "gmi_series_b",
-          "source_url": "https://prtimes.jp/main/html/rd/p/000000003.000188170.html",
-          "source_title": "GMI Cloud、NVIDIAが参加するシリーズBを含む総額6億6,800万ドル（約1,052億円）を調達 — グローバルなAIインフラの拡大を加速 | GMI Cloud Japan株式会社のプレスリリース",
-          "source_content_hash": "06f8e383e7ff837655f0bcd818a7d4115a58e045f05e0dadf95dee5f72672016",
-          "quote": "シリーズBは、AI・ロボティクス分野に特化したサンフランシスコ拠点の投資会社ARCHIVが主導し、NVIDIAに加え、DSC Investment、Trend Micro、KB Investment、Kyobo Life、KT Corporationなど、アジア太平洋地域の投資家も参加しました。",
-          "quote_hash": "2169c4b3360129b121a86307684ebf30644f0f2d819b343683b7070c9dcff5a6"
+          "source_id": "gmi-seriesb-kb-investment-2026",
+          "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+          "source_title": "GMI Cloud Raises Over $660 Million to Accelerate Global AI Infrastructure Expansion",
+          "source_content_hash": "61fb443d3f64de5064104912fff3c6038f3bc7f0886c9eac67649a365f62fb6f",
+          "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+          "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
         },
         {
           "source_id": "FISRC-f5de203e610041a3",
           "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
-          "source_title": "Asia Digest: Zeya Health acquires ConnectLah; Asian investors back GMI Cloud&#x27;s $668m funding",
-          "source_content_hash": "713f35db75c4fdb3bf9c474ce7a3cd94d6537d5289f825e111256fd184f305eb",
+          "source_title": "亚洲摘要：Zeya Health 收购 ConnectLah；亚洲投资者支持 GMI Cloud 的 6.68 亿美元融资",
+          "source_content_hash": "6f9fae4898bb4f10ab4e5c003449f2f9c04b6c292b4932a18191ec992f12be3a",
           "quote": "Asia-Pacific investors, including DSC Investment, Trend Micro, KB Investment, Kyobo Life and KT Corporation, also participated in the funding round.",
           "quote_hash": "57d129887176732facc5235cc0ab30eac4060c64a8586df4d5578d6ee22ec3c5"
         }

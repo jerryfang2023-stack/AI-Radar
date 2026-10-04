@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "George Kurtz 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "CrowdStrike 官方页面核实其个人身份；June AI 公告只支持参与融资这一事实，未披露 George Kurtz 的个人出资额。",
+      "summary": "CrowdStrike 官网将 George Kurtz 识别为公司创办人兼 CEO。June AI 于2026年8月发布的融资公告将他列为参与该公司 Pre-Seed 融资的企业软件行业人士之一。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "June AI 2026年8月3日公告将 George Kurtz 列入参与其 Pre-Seed 融资的企业软件行业人士；2,000万美元是整轮融资总额，公告没有披露其个人金额。",
+          "source_id": "george-kurtz-juneai-preseed-2026"
+        },
         {
           "description": "融资来源记录：June · 预种子轮 · 2026-08-03 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-09cf17eb199a2ae7"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "CrowdStrike 官方页面核实其个人身份；June AI 公告只支持参与融资这一事实，未披露 George Kurtz 的个人出资额。",
       "sources": [
+        {
+          "source_id": "george-kurtz-crowdstrike-bio",
+          "source_url": "https://www.crowdstrike.com/en-us/about-us/executive-team/george-kurtz/",
+          "source_title": "George Kurtz: CEO &amp; Founder | CrowdStrike",
+          "source_content_hash": "3fe38d025c4c4152d820b39deccaf051155aede2c3fe27e17eaf00c1324668dd",
+          "quote": "George Kurtz is the CEO and founder of CrowdStrike, a leading provider of next-generation endpoint protection, threat intelligence, and services.",
+          "quote_hash": "3db89439116a25fb8e880fa022589295ce9f2c5fc1954765b1dffae5cb152e75"
+        },
+        {
+          "source_id": "george-kurtz-juneai-preseed-2026",
+          "source_url": "https://www.globenewswire.com/news-release/2026/08/03/3337641/0/en/june-ai-emerges-from-stealth-to-reinvent-enterprise-software-implementation-for-the-ai-era.html",
+          "source_title": "June AI Emerges From Stealth to Reinvent Enterprise",
+          "source_content_hash": "ca9eb0131cab35e6a65bf72b71802af86a595d775f50a10bdcb25eacce45081c",
+          "quote": "with participation from a group of major enterprise software leaders including Michael Dell, founder, chairman and CEO of Dell Technologies; Diane Greene, co-founder and former CEO of VMware; Aaron Levie, co-founder and CEO of Box; and George Kurtz, founder and CEO of CrowdStrike.",
+          "quote_hash": "2febbda83e31042875388ed383d780361a4234f9f61222c2ce69bc073cec05c4"
+        },
         {
           "source_id": "FISRC-09cf17eb199a2ae7",
           "source_url": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
@@ -161,7 +185,7 @@
           "quote_hash": "2da1801b6e6d65189c50cbae4b364a1131f6f08f7df143614e7c30aa55f3e4d1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "PostScriptum 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按官网公开使用的品牌/集团层级记录，不将融资公告中的短名映射到某一具体法律实体或基金。Basecamp Research 未披露其单独出资额。",
+      "summary": "PostScriptum 官网将其描述为可持续投资领域的投资集团，并称 PostScriptum Ventures 投资创新技术和颠覆性商业模式；Basecamp Research 的更正公告将 PostScriptum 列为 Series C 参与方。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Basecamp Research 的更正公告列 PostScriptum 为1.4亿美元 Series C 参与方之一；未披露单独出资额。",
+          "source_id": "postscriptum-basecamp-seriesc-2026"
+        },
         {
           "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮参投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ecd2ea74974f4ff3"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "按官网公开使用的品牌/集团层级记录，不将融资公告中的短名映射到某一具体法律实体或基金。Basecamp Research 未披露其单独出资额。",
       "sources": [
+        {
+          "source_id": "postscriptum-official-identity",
+          "source_url": "https://www.postscriptum.com/",
+          "source_title": "PostScriptum Ventures",
+          "source_content_hash": "421659ed3950be8f32f3d6b41ba063df74703ed8347116a3a479d91a6e183c43",
+          "quote": "PostScriptum Ventures invests in innovative technology and disruptive business models.",
+          "quote_hash": "9f052f47e0f6646ee92d8c14184da6c5d12675496fab2f3b510a593986b34bf7"
+        },
+        {
+          "source_id": "postscriptum-basecamp-seriesc-2026",
+          "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
+          "source_title": "/C O R R E C T I O N -- Basecamp Research/",
+          "source_content_hash": "4e9c66123d0f871688da11a6f6403edff9d86e25c822636aeda63c774ce1b4d4",
+          "quote": "PostScriptum, Redalpine, The Rockefeller Foundation",
+          "quote_hash": "eb7350bc6d81dcf48a2d5ba938714822d62f32c8ccb10ef6c591480606dd3e6d"
+        },
         {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
@@ -161,7 +185,7 @@
           "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

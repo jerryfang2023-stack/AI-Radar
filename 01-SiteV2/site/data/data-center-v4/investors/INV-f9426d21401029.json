@@ -137,11 +137,11 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Layer Global 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "档案使用 Layer Global 官网的机构自述，不将其映射到 General Atlantic 或某一基金；官网中关于创办人的个人经历未作为机构事实扩写。",
+      "summary": "Layer Global 官网将其描述为面向创新与成长型公司的投资机构，并提出与创业者长期合作的投资定位。",
       "facts": [],
       "milestones": [],
       "track_record": [
@@ -151,7 +151,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "档案使用 Layer Global 官网的机构自述，不将其映射到 General Atlantic 或某一基金；官网中关于创办人的个人经历未作为机构事实扩写。",
       "sources": [
+        {
+          "source_id": "layer-global-official-about",
+          "source_url": "https://layerglobal.com/about",
+          "source_title": "Layer Global",
+          "source_content_hash": "99728790e4b05ac8b5eb8dfb201f0e6c16b120eb2f760767139329a12088e82a",
+          "quote": "Layer Global seeks to invest in and be the most important partner to the world’s highest-quality, most innovative, and fastest-growing companies.",
+          "quote_hash": "b19a5949341f5a0111359beb4888bc873505314954e4d8a13cae9b4ad1911630"
+        },
         {
           "source_id": "FISRC-c7d89f6e73a6fe5b",
           "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
@@ -161,7 +173,7 @@
           "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -137,21 +137,60 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Valkyrie 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "Valkyrie.vc 将机构定位为公司创立早期投资者；TechCrunch 在 Intelligence 种子轮报道中使用同一名称列示参投方。未核实基金载体或出资额。",
+      "summary": "Valkyrie 官网称其投资公司创建的最早阶段，并可从 day zero 持续陪伴至成长阶段。TechCrunch 将 Valkyrie 列为 Intelligence 种子轮参投方；未披露其出资额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述投资阶段",
+          "value": "官网称其从公司创建最早阶段投资，并支持至成长阶段。",
+          "source_id": "PROFILE-9fb3d78353d4eb349358"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 将 Valkyrie 列为 Intelligence 种子轮参投方；未披露出资额。",
+          "source_id": "PROFILE-b07050e9f27224434d54"
+        },
         {
           "description": "融资来源记录：Intelligence · 种子轮 · 2026-08-03 · 本轮参投 · $7.9 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3fa34b4b7b9a1a77"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Valkyrie",
+          "url": "https://www.valkyrie.vc/",
+          "source_id": "PROFILE-9fb3d78353d4eb349358"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-9fb3d78353d4eb349358",
+          "source_url": "https://www.valkyrie.vc/",
+          "source_title": "Valkyrie",
+          "source_content_hash": "1c50ba224db7b852cb109c7007d2ca716c47dffa5c8c0e26f85f12eb6f64c398",
+          "quote": "We invest in the earliest stages of company building, and partner from day zero to growth.",
+          "quote_hash": "13da4d72e415d6d01c4a0e0308295603999af609886574bb087c11c9377c7e08"
+        },
+        {
+          "source_id": "PROFILE-b07050e9f27224434d54",
+          "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+          "source_title": "Design Arena creators raise $7.9 million to bring taste to AI models | TechCrunch",
+          "source_content_hash": "1144f8198bc2da41e90c4d4bf22f4718b90931f2f9f678ef42b6438c7180f040",
+          "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others.",
+          "quote_hash": "9cd465f151d51687b6a4cc8caf7d3ad097a4577cec884e48856cb8be298ac055"
+        },
         {
           "source_id": "FISRC-3fa34b4b7b9a1a77",
           "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
@@ -161,7 +200,7 @@
           "quote_hash": "20be01adf24a3391c5fa5e6bebfa4ca95802560254df872449efba35e111922b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

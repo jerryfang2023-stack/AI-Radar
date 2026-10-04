@@ -178,14 +178,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "昆仑资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "中国石油公告将其关联公司简称定义为“昆仑资本”，并说明其私募基金及对外股权投资业务；融资报道仍按简称披露投资方，不扩展为完整投资组合。",
+      "summary": "中国石油天然气股份有限公司公告将“中国石油集团昆仑资本有限公司”简称为“昆仑资本”，并称其业务涉及私募股权投资基金及对外股权投资。投资界将“昆仑资本”列为中数睿智战略融资的联合投资方；该报道没有进一步列明出资载体。",
+      "facts": [
+        {
+          "field": "legal_identity_and_business",
+          "label": "中国石油公告披露的主体名称与业务",
+          "value": "中国石油公告将中国石油集团昆仑资本有限公司简称为“昆仑资本”，称其从事私募股权投资基金及对外股权投资业务。",
+          "source_id": "PROFILE-1a9018bbf88689680ecd"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界报道将“昆仑资本”列为中数睿智数亿元战略融资的联合投资方，未披露其出资金额或基金载体。",
+          "source_id": "PROFILE-e6f69dc7471907337eb0"
+        },
         {
           "description": "融资来源记录：中数睿智 · 战略融资 · 2026-08-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d2d4022c60030f2"
@@ -197,6 +208,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-1a9018bbf88689680ecd",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-31/1225535163.PDF",
+          "source_title": "中国石油天然气股份有限公司关于对中国石油集团昆仑资本有限公司增资暨关联交易的公告",
+          "source_content_hash": "5f7ca00076da5b433d89ac34096195212cd18e243f07901a443cd9a45e9157ce",
+          "quote": "中国石油天然气股份有限公司（以下简称公司、本公司或中石油股份）拟以自有资金出资42.05亿元，与中国石油天然气集团有限公司（以下简称中国石油集团）以自有资金共同向参股公司中国石油集团昆仑资本有限公司（以下简称昆仑资本）进行增资，合计增资116亿元，增资款主要用于昆仑资本的私募股权投资基金、对外股权投资业务等（以下简称本次交易或本次关联交易）。",
+          "quote_hash": "dfd9af5494c71006707827afe65e1ef3ab1cb93db96683cb1e8e26ed2ddbf8d6"
+        },
+        {
+          "source_id": "PROFILE-e6f69dc7471907337eb0",
+          "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+          "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了_投资界",
+          "source_content_hash": "19743249f998c3ab6e9806c7078c3c1faa772bb10860dbc4b43cfd6113b5ae09",
+          "quote": "本轮融资由中国互联网投资基金（下称中网投）、苏创投全国社保基金、金融街资本、工银资本、昆仑资本等联合投资，原有股东持续加码跟投。",
+          "quote_hash": "e71c1020a5ecddcd13e65a710e3aaa31148459e6980b06245cd286c37d7ff5fb"
+        },
         {
           "source_id": "FISRC-9d2d4022c60030f2",
           "source_url": "https://news.pedaily.cn/202608/568010.shtml",
@@ -214,7 +241,11 @@
           "quote_hash": "580844b4428583dd997e9b444d0af1853fb745851c2aaafb7e737d58c10c62d0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-03"
     }
   }
 }
