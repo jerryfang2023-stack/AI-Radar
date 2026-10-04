@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-03",
-    "currentDate": "2026-10-03",
-    "eventCount": 3909,
+    "latestDataDate": "2026-10-04",
+    "currentDate": "2026-10-04",
+    "eventCount": 3920,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 9,
-    "historical_or_ambiguous_count": 6,
+    "historical_or_ambiguous_count": 7,
     "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2023-08-24",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "historical_or_ambiguous": 6,
+      "historical_or_ambiguous": 7,
       "lead": 3,
       "participant": 6
     },
@@ -658,6 +658,38 @@
         ]
       },
       {
+        "activity_id": "IA-787ca36adf638aab",
+        "funding_insight_id": "FI-847970f93a915359",
+        "event_ids": [
+          "EV-9632fa302d64e821"
+        ],
+        "company_entity_id": "EN-4d7594e57f7d03f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Supabase",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series F 新投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-329a0525efb0e1f9",
+            "source_url": "https://supabase.com/blog/supabase-series-f",
+            "source_title": "Supabase Series F",
+            "source_content_hash": "f3319ceed36321e9",
+            "quote": "Georgian and Salesforce Ventures joined as new investors.",
+            "quote_hash": "b6812af23e6e357c139271884956d9b68c050e5a2a4bfdad69c1aee912114291"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-f3709edcdf90a7e8",
         "funding_insight_id": "FI-efe78d5245c912b4",
         "event_ids": [
@@ -726,8 +758,8 @@
       {
         "source_id": "FISRC-329a0525efb0e1f9",
         "source_url": "https://supabase.com/blog/supabase-series-f",
-        "source_title": "Supabase F 轮融资",
-        "source_content_hash": "f3319ceed36321e9026dd5f3453e90e2253fd2da7b9bc8ff0d6a6dbf703f7f14",
+        "source_title": "Supabase Series F",
+        "source_content_hash": "f3319ceed36321e9",
         "quote": "Georgian and Salesforce Ventures joined as new investors.",
         "quote_hash": "b6812af23e6e357c139271884956d9b68c050e5a2a4bfdad69c1aee912114291"
       },
@@ -946,6 +978,14 @@
           "provider": "deepseek",
           "model": "deepseek-v4-flash",
           "translated_at": "2026-09-18T02:49:06.821Z",
+          "status": "translated"
+        },
+        "activities[14].role": {
+          "text": "Series F 新投资方",
+          "source_hash": "06bf97aae7660f5f34f8621d4771e13e9ff74176637f7aaad508093ddffa8289",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-04T00:34:07.195Z",
           "status": "translated"
         },
         "public_profile.milestones[0].description": {

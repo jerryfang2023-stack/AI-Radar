@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-03",
-    "currentDate": "2026-10-03",
-    "eventCount": 3909,
+    "latestDataDate": "2026-10-04",
+    "currentDate": "2026-10-04",
+    "eventCount": 3920,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,7 +61,7 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
@@ -72,9 +72,10 @@
     "first_disclosed_at": "2026-10-01",
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "infrastructure",
       "series_b"
     ],
     "portfolio_companies": [
@@ -85,6 +86,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-461ae3d49f274ab6",
+        "funding_insight_id": "FI-e332024760e4f246",
+        "event_ids": [
+          "EV-7f10b7d013a91292"
+        ],
+        "company_entity_id": "EN-6aa1fcea0024c6ce",
+        "company_canonical_entity_id": "",
+        "company_name": "GMI Cloud",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "$668 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 668000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.68 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+            "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+            "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d2c2b36dea6f6071",
         "funding_insight_id": "FI-f674fbdbe195b88e",
@@ -127,6 +168,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-cf3eb2b83c7e750b",
+        "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+        "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
+        "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+        "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+        "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
+      },
       {
         "source_id": "FISRC-f5de203e610041a3",
         "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
@@ -171,6 +220,10 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：GMI Cloud · 基础设施融资 · 2026-10-01 · 本轮参投 · $668 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf3eb2b83c7e750b"
+        },
+        {
           "description": "融资来源记录：GMI Cloud · B轮 · 2026-10-01 · 本轮参投 · $223 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f5de203e610041a3"
         }
@@ -200,6 +253,14 @@
           "source_content_hash": "e7e19cfce5a9bc62f5a5fcf34483277239fd8368372a78e2f13265e356e3aa39",
           "quote": "invest in promising startups with technologies in the ESG field",
           "quote_hash": "2fe3eecfc6000993e85c4fe66125f681c74a47ae6237b1c56b541e6f8eda957d"
+        },
+        {
+          "source_id": "FISRC-cf3eb2b83c7e750b",
+          "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+          "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
+          "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+          "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+          "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
         },
         {
           "source_id": "FISRC-f5de203e610041a3",

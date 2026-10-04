@@ -1,0 +1,922 @@
+{
+  "event_id": "EV-7f10b7d013a91292",
+  "company_name": "GMI Cloud",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-8d89ca183da5cdf4",
+    "triggered_by_event_id": "EV-7f10b7d013a91292",
+    "as_of_date": "2026-10-04",
+    "company": {
+      "entity_id": "EN-6aa1fcea0024c6ce",
+      "name": "GMI Cloud",
+      "full_name": "GMI Cloud",
+      "website": "https://www.gmicloud.ai/",
+      "summary": "GMI Cloud 是一家 AI 原生云服务商，提供高性能 GPU 基础设施与推理服务，业务覆盖美国、台湾及亚太地区。",
+      "headquarters": "Mountain View, California",
+      "founders": [
+        {
+          "name": "Alex Yeh",
+          "role": "创始人兼 CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote": "said Alex Yeh, Founder and CEO of GMI Cloud",
+              "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+              "quote_hash": "f347fa6bcdfa45e0d081cbc0c3f1ba1c6ce13f8c2b9cf1ef2179346dc37b07ac"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "139",
+        "observed_at": "2026-08-15",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c7886d241de91af6",
+            "quote": "Aug 15, 2026Grew 23% QoQ, from 113 to 139 employees.",
+            "source_content_hash": "98d848ba2cfa8bf4",
+            "quote_hash": "b4b5fd700cfdce4cddd203609e87be282633d2af3163f045f8d3868522c37f76"
+          }
+        ]
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cf3eb2b83c7e750b",
+          "quote": "GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services",
+          "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+          "quote_hash": "3df7b2467498e4a30af58a7f8dc8914cfc108117917d42ce5a0acf3b064ba88f"
+        },
+        {
+          "source_id": "FISRC-c7886d241de91af6",
+          "quote": "HeadquartersMountain View, California",
+          "source_content_hash": "98d848ba2cfa8bf4",
+          "quote_hash": "60a56728d8f960ae2f30969bd358bbcb13d0492a40efb0c1d0a8a70f781f469c"
+        }
+      ],
+      "application_entity_id": "EN-6aa1fcea0024c6ce",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "基础设施融资",
+      "amount": "$668 million",
+      "total_raised": "$383M",
+      "announced_at": "2026-10-01",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "ARCHIV",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote": "The Series B was led by ARCHIV, a new investment firm based in San Francisco that specializes in AI and robotics, with participation from NVIDIA.",
+              "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+              "quote_hash": "c382f70272cc18b17856d19861b783e14008672ac0b37efadc25e0a33a0ec180"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "NVIDIA",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote": "The Series B was led by ARCHIV, a new investment firm based in San Francisco that specializes in AI and robotics, with participation from NVIDIA.",
+              "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+              "quote_hash": "c382f70272cc18b17856d19861b783e14008672ac0b37efadc25e0a33a0ec180"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        },
+        {
+          "name": "DSC Investment",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+              "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+              "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Trend Micro",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+              "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+              "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "KB Investment",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+              "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+              "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Kyobo Life",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+              "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+              "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "KT Corporation",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+              "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+              "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [
+        {
+          "name": "CTBC",
+          "role": "信贷融资领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote": "comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC",
+              "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+              "quote_hash": "a07d3b31932f08252a5d591cd545158a423441fe03a3d553dafc6d3652fce2aa"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Infinity Ventures",
+          "role": "历史轮次（Debt, Series A）",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c7886d241de91af6",
+              "quote": "GMI Cloud investorsInvestorRoundsInfinity VenturesDebt, Series ATranscend Capital PartnersSeries AHeadline AsiaSeries A",
+              "source_content_hash": "98d848ba2cfa8bf4",
+              "quote_hash": "d135b7c09569bf38ec28990fc428a0d49d18a7158023c73e4c818183b8fa8679"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Transcend Capital Partners",
+          "role": "历史轮次（Series A）",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c7886d241de91af6",
+              "quote": "GMI Cloud investorsInvestorRoundsInfinity VenturesDebt, Series ATranscend Capital PartnersSeries AHeadline AsiaSeries A",
+              "source_content_hash": "98d848ba2cfa8bf4",
+              "quote_hash": "d135b7c09569bf38ec28990fc428a0d49d18a7158023c73e4c818183b8fa8679"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Headline Asia",
+          "role": "历史轮次（Series A）",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c7886d241de91af6",
+              "quote": "GMI Cloud investorsInvestorRoundsInfinity VenturesDebt, Series ATranscend Capital PartnersSeries AHeadline AsiaSeries A",
+              "source_content_hash": "98d848ba2cfa8bf4",
+              "quote_hash": "d135b7c09569bf38ec28990fc428a0d49d18a7158023c73e4c818183b8fa8679"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cf3eb2b83c7e750b",
+          "quote": "MOUNTAIN VIEW, Calif., Oct. 1, 2026 /PRNewswire/ -- GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services, today announced $668 million in new financing, comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC. The Series B was led by ARCHIV, a new investment firm based in San Francisco that specializes in AI and robotics, with participation from NVIDIA. This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+          "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+          "quote_hash": "fa5d8f91f5d0172c33e31bf5c2e67ee5d742eaf51418a877a48515432adb43ec"
+        },
+        {
+          "source_id": "FISRC-cf3eb2b83c7e750b",
+          "quote": "today announced $668 million in new financing, comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC",
+          "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+          "quote_hash": "751725d26497f12631ccd291655826cd34fc9f2c12a3e06d2486c70d40efd05e"
+        }
+      ],
+      "round_code": "infrastructure",
+      "round_original": "基础设施融资",
+      "amount_original": "$668 million",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 668000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "6.68 亿美元"
+      },
+      "total_raised_original": "$383M",
+      "total_raised_normalized": {
+        "currency": "USD",
+        "value": 383000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "3.83 亿美元"
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-7f10b7d013a91292",
+          "round_original": "基础设施融资",
+          "amount": "$668 million",
+          "announced_at": "2026-10-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote": "MOUNTAIN VIEW, Calif., Oct. 1, 2026 /PRNewswire/ -- GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services, today announced $668 million in new financing, comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC. The Series B was led by ARCHIV, a new investment firm based in San Francisco that specializes in AI and robotics, with participation from NVIDIA. This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+              "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+              "quote_hash": "fa5d8f91f5d0172c33e31bf5c2e67ee5d742eaf51418a877a48515432adb43ec"
+            },
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote": "today announced $668 million in new financing, comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC",
+              "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+              "quote_hash": "751725d26497f12631ccd291655826cd34fc9f2c12a3e06d2486c70d40efd05e"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "GPU 云基础设施与推理服务",
+        "description": "AI 原生云平台，提供高性能 GPU 基础设施和推理服务，支持训练、微调与推理工作负载。",
+        "target_customers": "AI 初创公司、企业、开发者",
+        "features": [
+          "高性能 GPU 基础设施",
+          "推理服务",
+          "Serverless 推理",
+          "专用 GPU 集群",
+          "OpenAI 兼容端点"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "3df7b2467498e4a30af58a7f8dc8914cfc108117917d42ce5a0acf3b064ba88f"
+          },
+          {
+            "source_id": "FISRC-f2b7bd1a6ebcf5cb",
+            "quote": "Serverless inference by default. For early-stage products with unpredictable traffic, GMI Cloud's serverless inference scales to zero when there are no requests and scales up automatically when demand arrives.",
+            "source_content_hash": "ee727be96c8a766c",
+            "quote_hash": "5988705f6f3f67011d29aab89c2c3c0b28f695b89ee6405c3af503b17a642556"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Cluster Engine",
+        "description": "基于 Kubernetes 的编排工具，支持多集群管理和工作负载编排，用于管理 GPU 资源。",
+        "target_customers": "需要管理复杂分布式 AI 工作负载的团队",
+        "features": [
+          "多集群管理",
+          "工作负载编排",
+          "动态 GPU 分配"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1199686ea833a18a",
+            "quote": "GMI Cloud’s orchestration tool, the Cluster Engine, is the best part. Built on Kubernetes, this robust cloud platform allows you to manage your GPU resources whether you’re deploying workloads across multiple GPUs or running distributed training sessions on a large cluster.",
+            "source_content_hash": "536cb621c0ef2968",
+            "quote_hash": "6c9336d9b17c042be276ed7bb851d245e5f2c23b9062e4bf6ea42b3e4e787b91"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "Fireworks",
+        "industry": "AI",
+        "use_case": "使用 GMI Cloud 的 NVIDIA GB200 和 GB300 NVL72 系统进行 AI 工作负载",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "Notable customers include Fireworks, Higgsfield, Nous Research, OpenRouter, Reflection, Cartesia, Trend Micro, and Utopai Studios.",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "0b6186e08922582d1e047ed605b1e5d280d61dab1d72603425bea9f9420a4393"
+          },
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "said Chenyu Zhao, co-founder of Fireworks. \"GMI Cloud has been one of our strongest and most reliable providers across NVIDIA GB200 and GB300 NVL72 systems.\"",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "138d7b696b85fbe8a26f2ef6aee5f19b5d8f7d9a5822657414a1ee9eed0b5aa7"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Higgsfield",
+        "industry": "AI",
+        "use_case": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "Notable customers include Fireworks, Higgsfield, Nous Research, OpenRouter, Reflection, Cartesia, Trend Micro, and Utopai Studios.",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "0b6186e08922582d1e047ed605b1e5d280d61dab1d72603425bea9f9420a4393"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Nous Research",
+        "industry": "AI",
+        "use_case": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "Notable customers include Fireworks, Higgsfield, Nous Research, OpenRouter, Reflection, Cartesia, Trend Micro, and Utopai Studios.",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "0b6186e08922582d1e047ed605b1e5d280d61dab1d72603425bea9f9420a4393"
+          }
+        ],
+        "entity_id": "EN-3eee4f30151db45a"
+      },
+      {
+        "name": "OpenRouter",
+        "industry": "AI",
+        "use_case": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "Notable customers include Fireworks, Higgsfield, Nous Research, OpenRouter, Reflection, Cartesia, Trend Micro, and Utopai Studios.",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "0b6186e08922582d1e047ed605b1e5d280d61dab1d72603425bea9f9420a4393"
+          }
+        ],
+        "entity_id": "EN-7f871cbf905f6e0c"
+      },
+      {
+        "name": "Trend Micro",
+        "industry": "网络安全",
+        "use_case": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "Notable customers include Fireworks, Higgsfield, Nous Research, OpenRouter, Reflection, Cartesia, Trend Micro, and Utopai Studios.",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "0b6186e08922582d1e047ed605b1e5d280d61dab1d72603425bea9f9420a4393"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [
+      {
+        "name": "RunPod",
+        "product": "GPU 云服务",
+        "scenario": "AI 工作负载的 GPU 云服务",
+        "target_customer": "预算敏感用户、AI 开发者",
+        "funding_summary": "",
+        "core_difference": "GMI Cloud 提供 NVIDIA H100 GPU 与更高网络带宽和内存配置，RunPod 的 GPU 范围较有限且网络带宽和内存配置不如 GMI Cloud。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1199686ea833a18a",
+            "quote": "Runpod also has NVIDIA GPUs but their range is slightly limited compared to GMI. While Runpod has NVIDIA H100 GPUs, they don’t have the same network bandwidth or memory configurations as GMI.",
+            "source_content_hash": "536cb621c0ef2968",
+            "quote_hash": "3f6e0b3574c8343def2431feb8b07a93a7d7b5f88fb43fc525a2a995f92e5461"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "metrics": [
+      {
+        "label": "融资总额",
+        "value": "$668 million",
+        "observed_at": "2026-10-01",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "today announced $668 million in new financing",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "353a55d1dbd49920b0843552022cf69eb2994b56fd092633016ba8900c5c64dc"
+          }
+        ]
+      },
+      {
+        "label": "Series B 股权融资",
+        "value": "$223 million",
+        "observed_at": "2026-10-01",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "comprising $223 million in equity for Series B",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "dfef20eb71e7fe3cc4d349454fd337ea31dd890295f9635a71092d78de04a4b7"
+          }
+        ]
+      },
+      {
+        "label": "信贷融资",
+        "value": "$445 million",
+        "observed_at": "2026-10-01",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "a $445 million credit facility led by CTBC",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "82994afaf583b545f0a759bc952e10d33ec9c2fe445b8992b37cc02936d5fa0b"
+          }
+        ]
+      },
+      {
+        "label": "合同 ARR 增长",
+        "value": "超过 2025 年底水平的 9 倍",
+        "observed_at": "2026-10-01",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "GMI Cloud's contracted ARR has reached more than 9x its year-end 2025 level.",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "f4dd2282f585f80669491413b0a7d7dca1241c75dae39167a2ab64033ae60c20"
+          }
+        ]
+      },
+      {
+        "label": "生产环境 ARR 增长",
+        "value": "超过同期 4.5 倍",
+        "observed_at": "2026-10-01",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "Live ARR in production today has also grown more than 4.5x over the same period.",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "16dee69b48180b46169a4dfb78620473f63f2fe2d7cea06abfb5bdd58244efaa"
+          }
+        ]
+      },
+      {
+        "label": "推理平台每周处理 token 量",
+        "value": "约 4 万亿",
+        "observed_at": "2026-10-01",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "Its inference platform now processes approximately 4 trillion tokens per week.",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "ba54da306106810987a7e2bc4197d4c32c6ec6a8052e5621b27135dab125dda3"
+          }
+        ]
+      },
+      {
+        "label": "员工数",
+        "value": "139",
+        "observed_at": "2026-08-15",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c7886d241de91af6",
+            "quote": "Aug 15, 2026Grew 23% QoQ, from 113 to 139 employees.",
+            "source_content_hash": "98d848ba2cfa8bf4",
+            "quote_hash": "b4b5fd700cfdce4cddd203609e87be282633d2af3163f045f8d3868522c37f76"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Alex Yeh",
+        "quote": "Our customers are scaling faster than ever, and they need infrastructure that keeps pace. AI is driving a new renaissance, and reliable compute is its foundation. Our goal is to build that foundation across continents, with an ecosystem of products on top of it.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "\"Our customers are scaling faster than ever, and they need infrastructure that keeps pace,\" said Alex Yeh, Founder and CEO of GMI Cloud. \"AI is driving a new renaissance, and reliable compute is its foundation. Our goal is to build that foundation across continents, with an ecosystem of products on top of it.\"",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "a1d9db8af5c33c7efdcd1fe64e76d9be5e6e64695a1b31a04b3bbeb4ed3645f7"
+          }
+        ]
+      },
+      {
+        "speaker": "Alex Yeh",
+        "quote": "In AI infrastructure, a delivery date is a promise. Customers plan launches, hiring, and revenue around it. Our place in Taiwan's supply chain is how we keep that promise, cluster after cluster globally.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "\"In AI infrastructure, a delivery date is a promise. Customers plan launches, hiring, and revenue around it,\" said Yeh. \"Our place in Taiwan's supply chain is how we keep that promise, cluster after cluster globally.\"",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "873e7c8547991e9cfe0a61245eb44e5252d4d4b05e3462d8e9de5ce1bc51f949"
+          }
+        ]
+      },
+      {
+        "speaker": "Chenyu Zhao",
+        "quote": "Capacity that arrives late is capacity we can't use. GMI Cloud has been one of our strongest and most reliable providers across NVIDIA GB200 and GB300 NVL72 systems.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "quote": "\"Capacity that arrives late is capacity we can't use,\" said Chenyu Zhao, co-founder of Fireworks. \"GMI Cloud has been one of our strongest and most reliable providers across NVIDIA GB200 and GB300 NVL72 systems.\"",
+            "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote_hash": "1e9375010159f9a069e8a7f084b42c8874381b25863d072e0dc243da29790498"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "资本押注的核心变量是 GMI Cloud 能否在 AI 算力需求跨区域增长的背景下，同时服务美国与亚太市场，并依托台湾供应链实现可承诺的交付。已验证信号包括：合同 ARR 达到 2025 年底水平的 9 倍以上、生产环境 ARR 增长超过 4.5 倍、推理平台每周处理约 4 万亿 token，以及 Fireworks 等客户对其 GB200/GB300 NVL72 系统可靠性的公开背书。证据边界在于：估值未公开，本轮融资后的收入可持续性、产能扩张的实际利用率以及信贷融资的条款均未披露，无法据此判断资本回报。",
+      "validated_signals": [
+        "合同 ARR 达到 2025 年底水平的 9 倍以上",
+        "生产环境 ARR 增长超过同期 4.5 倍",
+        "推理平台每周处理约 4 万亿 token",
+        "客户 Fireworks 公开确认 GMI Cloud 是其在 NVIDIA GB200 和 GB300 NVL72 系统上最可靠供应商之一"
+      ],
+      "risks": [
+        "估值未公开，无法判断本轮融资的定价合理性",
+        "信贷融资的利率、期限和契约条款未披露，财务杠杆风险未知",
+        "产能扩张计划（美国、台湾、东南亚）的实际利用率和回报周期未披露",
+        "客户名单中部分公司未披露具体使用场景和合同金额，收入集中度未知"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "compute_cloud_service",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "use_case_ids": [
+        "software_development",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "sector": "AI 基础设施",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是 GMI Cloud 能否在 AI 算力需求跨区域增长的背景下，同时服务美国与亚太市场，并依托台湾供应链实现可承诺的交付。已验证信号包括：合同 ARR 达到 2025 年底水平的 9 倍以上、生产环境 ARR 增长超过 4.5 倍、推理平台每周处理约 4 万亿 token，以及 Fireworks 等客户对其 GB200/GB300 NVL72 系统可靠性的公开背书。证据边界在于：估值未公开，本轮融资后的收入可持续性、产能扩张的实际利用率以及信贷融资的条款均未披露，无法据此判断资本回报。",
+        "evidence_signals": [
+          "合同 ARR 达到 2025 年底水平的 9 倍以上",
+          "生产环境 ARR 增长超过同期 4.5 倍",
+          "推理平台每周处理约 4 万亿 token",
+          "客户 Fireworks 公开确认 GMI Cloud 是其在 NVIDIA GB200 和 GB300 NVL72 系统上最可靠供应商之一"
+        ],
+        "risks": [
+          "估值未公开，无法判断本轮融资的定价合理性",
+          "信贷融资的利率、期限和契约条款未披露，财务杠杆风险未知",
+          "产能扩张计划（美国、台湾、东南亚）的实际利用率和回报周期未披露",
+          "客户名单中部分公司未披露具体使用场景和合同金额，收入集中度未知"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "GPU 云基础设施与推理服务",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Cluster Engine",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Alex Yeh",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "ARCHIV",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "NVIDIA",
+        "canonical_entity_id": "EN-8d4321d936320802",
+        "canonical_name": "NVIDIA"
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "DSC Investment",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Trend Micro",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "KB Investment",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Kyobo Life",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "KT Corporation",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "CTBC",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Infinity Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Transcend Capital Partners",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Headline Asia",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Fireworks",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Higgsfield",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Nous Research",
+        "canonical_entity_id": "EN-3eee4f30151db45a",
+        "canonical_name": "Nous Research"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "OpenRouter",
+        "canonical_entity_id": "EN-7f871cbf905f6e0c",
+        "canonical_name": "OpenRouter"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Trend Micro",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "RunPod",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-7f10b7d013a91292",
+        "date": "2026-10-01",
+        "title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
+        "amount": "$668 million",
+        "source_refs": [
+          "SA-7cb14448084c38b4"
+        ]
+      },
+      {
+        "event_id": "EV-72c91001092a54bd",
+        "date": "2026-10-01",
+        "title": "亚洲摘要：Zeya Health 收购 ConnectLah；亚洲投资者支持 GMI Cloud 的 6.68 亿美元融资",
+        "amount": "$223 million",
+        "source_refs": [
+          "SA-2d34bc7f07c9ebd6"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-cf3eb2b83c7e750b",
+        "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+        "title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
+        "publisher": "www.prnewswire.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-04T00:23:16.532Z",
+        "content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+        "source_artifact_id": "SA-7cb14448084c38b4",
+        "raw_id": "RAW-162d2310510a15d9"
+      },
+      {
+        "source_id": "FISRC-f2b7bd1a6ebcf5cb",
+        "source_url": "https://www.gmicloud.ai/en/blog/gpu-credit-programs-for-ai-startups-from-prototype-to-production-without-dilution",
+        "title": "GPU Credit Programs for AI Startups: 2026 Funding Guide",
+        "publisher": "gmicloud.ai",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-04T00:25:53.810Z",
+        "content_hash": "ee727be96c8a766c",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-c7886d241de91af6",
+        "source_url": "https://www.caplight.com/company/gmicloud",
+        "title": "GMI Cloud Valuation & Funding History | Caplight",
+        "publisher": "caplight.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-04T00:25:54.584Z",
+        "content_hash": "98d848ba2cfa8bf4",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-1199686ea833a18a",
+        "source_url": "https://www.gmicloud.ai/ja/blog/runpod-alternative-why-gmi-cloud-is-the-better-choice",
+        "title": "RunPod Alternative: Why GMI Cloud is the Better Choice? - GMI Cloud Blog",
+        "publisher": "gmicloud.ai",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-04T00:26:00.942Z",
+        "content_hash": "536cb621c0ef2968",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-04T00:26:14.460Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-04T00:26:14.460Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 5,
+      "searched_source_count": 4
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "Cluster Engine",
+          "GPU 云基础设施与推理服务"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Alex Yeh"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-7f10b7d013a91292"
+    ],
+    "aggregation": {
+      "key": "EN-6aa1fcea0024c6ce|infrastructure",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"GMI Cloud\" 2026 funding round investors",
+    "\"GMI Cloud\" \"why we invested\""
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"GMI Cloud\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://tracxn.com/d/companies/gmi-cloud/__q1C9ggzHU2bjIBUhAg2IUNPWCcKtvNNZ_4c-voFqlAM",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.datacenterdynamics.com/en/news/gmi-cloud-raises-668m-in-funding/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://finance.yahoo.com/technology/ai/articles/gmi-cloud-raises-over-660-010500878.html",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"GMI Cloud\" $668 million funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"GMI Cloud\" official product customers",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"GMI Cloud\" \"why we invested\"",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"GMI Cloud\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"GMI Cloud\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"GMI Cloud\" founders headquarters product",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}

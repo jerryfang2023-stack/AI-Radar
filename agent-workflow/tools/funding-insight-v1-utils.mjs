@@ -481,7 +481,8 @@ export function normalizeFundingRound(value = "") {
   let code = "other";
   if (/首次外部|首轮外部|firstexternal/iu.test(compact)) code = "first_external";
   else if (/early[-\s]?stage|早期/iu.test(text)) code = "early_stage";
-  else if (/growth|成长/iu.test(text)) code = "growth";
+  // Investor names and “growth fund” describe the investor, not this round.
+  else if (/^(?:growth|成长)$/iu.test(text) || /\bgrowth\s+(?:round|funding|financing|investment)\b|成长轮/iu.test(text)) code = "growth";
   else if (/pre[-\s]?ipo/iu.test(text)) code = "pre_ipo";
   else if (/\bipo\b/iu.test(text)) code = "ipo";
   else if (/follow[-\s]?on|后续发行/iu.test(text)) code = "follow_on";

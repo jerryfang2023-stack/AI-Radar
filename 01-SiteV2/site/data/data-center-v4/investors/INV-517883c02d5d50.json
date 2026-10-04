@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-03",
-    "currentDate": "2026-10-03",
-    "eventCount": 3909,
+    "latestDataDate": "2026-10-04",
+    "currentDate": "2026-10-04",
+    "eventCount": 3920,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,8 +61,8 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
-    "historical_or_ambiguous_count": 3,
+    "current_round_count": 7,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
@@ -70,18 +70,19 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-12",
-    "latest_disclosed_at": "2026-09-17",
+    "latest_disclosed_at": "2026-10-02",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 3,
-      "lead": 4,
+      "historical_or_ambiguous": 4,
+      "lead": 5,
       "participant": 1
     },
     "round_codes": [
       "series_d",
       "series_f",
       "series_g",
-      "series_h"
+      "series_h",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -106,6 +107,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b77a135f3cb54a29",
+        "funding_insight_id": "FI-847970f93a915359",
+        "event_ids": [
+          "EV-9632fa302d64e821"
+        ],
+        "company_entity_id": "EN-4d7594e57f7d03f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Supabase",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$150 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-10-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-06b7dbbc3fab6c09",
+            "source_url": "https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html",
+            "source_title": "Supabase 宣布获得 1.5 亿美元新融资并收购 Turso",
+            "source_content_hash": "15b4fc697a8917ac6a6fd81eb2fab30c97274ac06ffa37275cc8080eadd5fd4f",
+            "quote": "today announced $150 million in new funding led by GIC",
+            "quote_hash": "727ff81063c40ae5dff3ec8e506e960661eccec18196d83cfcc90d7934b1c1d9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-746a3e9358c85a85",
         "funding_insight_id": "FI-72df07926e3369ef",
@@ -388,6 +429,38 @@
         ]
       },
       {
+        "activity_id": "IA-9e386ede9c27bb3b",
+        "funding_insight_id": "FI-847970f93a915359",
+        "event_ids": [
+          "EV-9632fa302d64e821"
+        ],
+        "company_entity_id": "EN-4d7594e57f7d03f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Supabase",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series F 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-329a0525efb0e1f9",
+            "source_url": "https://supabase.com/blog/supabase-series-f",
+            "source_title": "Supabase Series F",
+            "source_content_hash": "f3319ceed36321e9",
+            "quote": "Supabase has raised a $500M Series F at a $10B pre-money valuation. It’s led by GIC.",
+            "quote_hash": "1ed435f3fbd6d4d837f86928416597416c4ec095348ecb9113ea0f9eb07ade46"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-dfac1873a7fdbc23",
         "funding_insight_id": "FI-898cddb74dcff413",
         "event_ids": [
@@ -454,6 +527,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-06b7dbbc3fab6c09",
+        "source_url": "https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html",
+        "source_title": "Supabase 宣布获得 1.5 亿美元新融资并收购 Turso",
+        "source_content_hash": "15b4fc697a8917ac6a6fd81eb2fab30c97274ac06ffa37275cc8080eadd5fd4f",
+        "quote": "today announced $150 million in new funding led by GIC",
+        "quote_hash": "727ff81063c40ae5dff3ec8e506e960661eccec18196d83cfcc90d7934b1c1d9"
+      },
+      {
         "source_id": "FISRC-5fc65e3f4fb1b347",
         "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
         "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
@@ -516,6 +597,14 @@
         "source_content_hash": "a0ff76f6894f0267",
         "quote": "This investment builds upon GIC’s significant investment in Anthropic’s $13B Series F, exemplifying GIC’s lifecycle investment approach",
         "quote_hash": "88ada386b9a89ba03806fa6613b4fc8adda2326e794031cf77a4432f854d3099"
+      },
+      {
+        "source_id": "FISRC-329a0525efb0e1f9",
+        "source_url": "https://supabase.com/blog/supabase-series-f",
+        "source_title": "Supabase Series F",
+        "source_content_hash": "f3319ceed36321e9",
+        "quote": "Supabase has raised a $500M Series F at a $10B pre-money valuation. It’s led by GIC.",
+        "quote_hash": "1ed435f3fbd6d4d837f86928416597416c4ec095348ecb9113ea0f9eb07ade46"
       },
       {
         "source_id": "FISRC-cf83d78a216a5edf",
@@ -587,16 +676,16 @@
           "source_id": "gic_tech_official"
         },
         {
+          "description": "融资来源记录：Supabase · 轮次未披露 · 2026-10-02 · 本轮领投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-06b7dbbc3fab6c09"
+        },
+        {
           "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮参投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5fc65e3f4fb1b347"
         },
         {
           "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2d91b8c40e694677"
-        },
-        {
-          "description": "融资来源记录：Supabase · F轮 · 2026-06-04 · 本轮领投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-329a0525efb0e1f9"
         }
       ],
       "contacts": [
@@ -640,6 +729,14 @@
           "quote_hash": "81c23bdd2b3c8328757d2a64f09211a9d4586a1a477ea1fa1822428323a53bf8"
         },
         {
+          "source_id": "FISRC-06b7dbbc3fab6c09",
+          "source_url": "https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html",
+          "source_title": "Supabase 宣布获得 1.5 亿美元新融资并收购 Turso",
+          "source_content_hash": "15b4fc697a8917ac6a6fd81eb2fab30c97274ac06ffa37275cc8080eadd5fd4f",
+          "quote": "today announced $150 million in new funding led by GIC",
+          "quote_hash": "727ff81063c40ae5dff3ec8e506e960661eccec18196d83cfcc90d7934b1c1d9"
+        },
+        {
           "source_id": "FISRC-5fc65e3f4fb1b347",
           "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
           "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
@@ -654,18 +751,22 @@
           "source_content_hash": "a0ff76f6894f0267",
           "quote": "GIC, a global institutional investor, has led Anthropic’s $30 billion Series G alongside Coatue, valuing Anthropic at $380 billion post-money.",
           "quote_hash": "de507bc015d862739260e2ce19337e511d393916dd1bee9d748c8d93c7f22a72"
-        },
-        {
-          "source_id": "FISRC-329a0525efb0e1f9",
-          "source_url": "https://supabase.com/blog/supabase-series-f",
-          "source_title": "Supabase F 轮融资",
-          "source_content_hash": "f3319ceed36321e9026dd5f3453e90e2253fd2da7b9bc8ff0d6a6dbf703f7f14",
-          "quote": "It’s led by GIC.",
-          "quote_hash": "385cc86683082ff62eb9d23c0277054470883367dfa920e337eb24d600b69cca"
         }
       ],
       "last_verified_at": "2026-09-25",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[8].role": {
+          "text": "Series F 领投",
+          "source_hash": "c5845c2f40553b55d43810ad51bc7b1e3d60ffb7e511ae395a869003c56c1dfb",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

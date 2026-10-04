@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-03",
-    "currentDate": "2026-10-03",
-    "eventCount": 3909,
+    "latestDataDate": "2026-10-04",
+    "currentDate": "2026-10-04",
+    "eventCount": 3920,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -64,7 +64,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 30,
+    "current_round_count": 31,
     "historical_or_ambiguous_count": 8,
     "portfolio_company_count": 27,
     "market_regions": [
@@ -75,7 +75,7 @@
     "first_disclosed_at": "2023-04-27",
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "co_lead": 5,
+      "co_lead": 6,
       "historical_or_ambiguous": 8,
       "lead": 19,
       "participant": 6
@@ -232,10 +232,52 @@
     ],
     "activities": [
       {
+        "activity_id": "IA-3ce6541ebb989ce4",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791",
+          "EV-2aa827a397a551d1"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 255500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.555 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-dc8fb918b056c843",
+            "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
+            "quote": "today announced it has raised $255.5 million in Series B funding co-led by Andreessen Horowitz (a16z) and Accel",
+            "quote_hash": "5a0a2111252fab5f5d876738996841fc302cb4364773d762e40db424c18164d0"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-667f3e72d11e4164",
         "funding_insight_id": "FI-e7151a217bf0631d",
         "event_ids": [
-          "EV-1c7050585c7f4791"
+          "EV-1c7050585c7f4791",
+          "EV-2aa827a397a551d1"
         ],
         "company_entity_id": "EN-f8223ea5a9c41813",
         "company_canonical_entity_id": "",
@@ -1751,6 +1793,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-dc8fb918b056c843",
+        "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
+        "quote": "today announced it has raised $255.5 million in Series B funding co-led by Andreessen Horowitz (a16z) and Accel",
+        "quote_hash": "5a0a2111252fab5f5d876738996841fc302cb4364773d762e40db424c18164d0"
+      },
+      {
         "source_id": "FISRC-58d9b75c832876e1",
         "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
         "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
@@ -2161,15 +2211,11 @@
         },
         {
           "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮联合领投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-58d9b75c832876e1"
+          "source_id": "FISRC-dc8fb918b056c843"
         },
         {
           "description": "融资来源记录：doxx.net · A轮 · 2026-10-01 · 本轮领投 · $38 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e94be4fcbb396d33"
-        },
-        {
-          "description": "融资来源记录：EliseAI · F轮 · 2026-09-29 · 本轮联合领投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-aae3c02b03fe09c9"
         }
       ],
       "contacts": [
@@ -2277,6 +2323,14 @@
           "quote_hash": "e99e0a75d100056586e1a241fc521ff6d9da626d9a7fcf9ab6dd36440c63b9bb"
         },
         {
+          "source_id": "FISRC-dc8fb918b056c843",
+          "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
+          "quote": "today announced it has raised $255.5 million in Series B funding co-led by Andreessen Horowitz (a16z) and Accel",
+          "quote_hash": "5a0a2111252fab5f5d876738996841fc302cb4364773d762e40db424c18164d0"
+        },
+        {
           "source_id": "FISRC-58d9b75c832876e1",
           "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
           "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
@@ -2291,14 +2345,6 @@
           "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
           "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
           "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
-        },
-        {
-          "source_id": "FISRC-aae3c02b03fe09c9",
-          "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
-          "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
-          "source_content_hash": "33c87e55e143bc09",
-          "quote": "The funding round was co-led by existing investors Andreessen Horowitz (a16z) and Bessemer Venture Partners, as well as new investor Ontario Teachers’ Pension Plan, with participation from existing investors Sapphire Ventures and Navitas Capital.",
-          "quote_hash": "7655e7fc298b7cfdca3c345e6fbbdc6c71541fedb1b9a8cecacf65a1609fe13b"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2309,7 +2355,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[31].role": {
+        "activities[32].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

@@ -26486,7 +26486,307 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-03T04:23:05.458Z"
+    },
+    "EV-9632fa302d64e821": {
+      "id": "EV-9632fa302d64e821",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Supabase 提供面向开发者的 Postgres 后端与数据平台，含向量检索及面向智能体工作负载的数据库能力。",
+      "input_hash": "58a2395a1929cf08b6326902bef35688d71d87a78c6f28b518f57cc2aaae7ada",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-06b7dbbc3fab6c09",
+          "quote": "Supabase, the leader in agentic infrastructure and open source Postgres development platform"
+        },
+        {
+          "source_id": "FISRC-06b7dbbc3fab6c09",
+          "quote": "Founded in 2020, Supabase provides a complete backend — Postgres database, authentication, storage, edge functions, real-time subscriptions, and vector search — alongside a growing marketplace of 100+ integrated partner tools."
+        },
+        {
+          "source_id": "FISRC-06b7dbbc3fab6c09",
+          "quote": "Supabase provides a complete backend — Postgres database, authentication, storage, edge functions, real-time subscriptions, and vector search — alongside a growing marketplace of 100+ integrated partner tools."
+        },
+        {
+          "source_id": "FISRC-329a0525efb0e1f9",
+          "quote": "Multigres is a scalable operating system for Postgres that provides high availability and operational simplicity. In a future release it will provide Vitess-grade horizontal scaling."
+        },
+        {
+          "source_id": "FISRC-06b7dbbc3fab6c09",
+          "quote": "Supabase also announced it is acquiring Turso, a platform that allows developers to access higher volumes of databases for agentic workloads."
+        },
+        {
+          "source_id": "FISRC-06b7dbbc3fab6c09",
+          "quote": "Their architecture enables the provisioning of on-demand per-agent databases both in the public Cloud and BYOC, for customers like Superhuman, Sauna.ai, CTO.new, and Mastra."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-04T00:35:45.996Z"
+    },
+    "EV-2aa827a397a551d1": {
+      "id": "EV-2aa827a397a551d1",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business",
+        "public-sector"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Armadin 提供面向企业与政府安全团队的自主安全平台，属企业网络安全风控。",
+      "input_hash": "d2327584a05079b541d91ddf7431cc9e7f1dce13f70640da5ccf811e36dfde28",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dc8fb918b056c843",
+          "quote": "Armadin, an AI-native cybersecurity company building effective autonomous security"
+        },
+        {
+          "source_id": "FISRC-c92c399aa3899c0c",
+          "quote": "Armadin, based in Palo Alto, California, is an AI-native cybersecurity company that provides an autonomous security platform."
+        },
+        {
+          "source_id": "FISRC-dc8fb918b056c843",
+          "quote": "Armadin deploys an autonomous swarm of specialized agents that reason like a skilled adversary across the attack surface, chaining individually low-severity weaknesses into validated kill chains."
+        },
+        {
+          "source_id": "FISRC-dc8fb918b056c843",
+          "quote": "Enterprise and government security teams see the exact attack paths an adversary would use in production today, along with the blast radius of each, and sever them before they are exploited."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-04T00:35:45.996Z"
+    },
+    "EV-7f10b7d013a91292": {
+      "id": "EV-7f10b7d013a91292",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "GMI Cloud 提供 GPU 云基础设施与无服务器推理服务，属 AI 云与算力服务。",
+      "input_hash": "00270734b704d107ff6ee0db312eea8e65efa153097c8b4a693004e89db9989b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cf3eb2b83c7e750b",
+          "quote": "GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services"
+        },
+        {
+          "source_id": "FISRC-f2b7bd1a6ebcf5cb",
+          "quote": "Serverless inference by default. For early-stage products with unpredictable traffic, GMI Cloud's serverless inference scales to zero when there are no requests and scales up automatically when demand arrives."
+        },
+        {
+          "source_id": "FISRC-1199686ea833a18a",
+          "quote": "GMI Cloud’s orchestration tool, the Cluster Engine, is the best part. Built on Kubernetes, this robust cloud platform allows you to manage your GPU resources whether you’re deploying workloads across multiple GPUs or running distributed training sessions on a large cluster."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-04T00:35:45.996Z"
+    },
+    "EV-d087ccd71efc469d": {
+      "id": "EV-d087ccd71efc469d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "mobility",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "极豆科技自研垂类多模态大模型与智能体，面向车企交付汽车 AI 解决方案，属交通行业软件。",
+      "input_hash": "2695f65f3358f85dfa72249ce6b2db0033ce285f58738c7c5d0ce6db61b6309e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c0f4b27988fd5315",
+          "quote": "极豆科技是位于上海张江AI创新小镇的一家以垂类多模态大模型和智能体技术为核心的AI科技公司。"
+        },
+        {
+          "source_id": "FISRC-0878f600ac208553",
+          "quote": "极豆科技是位于上海张江AI创新小镇的一家以垂类多模态大模型和智能体技术为核心的AI科技公司、国家高新技术企业、上海市专精特新和科技小巨人企业，累计发明专利申请、软件著作权等知识产权超过500项。"
+        },
+        {
+          "source_id": "FISRC-c0f4b27988fd5315",
+          "quote": "极豆科技自研 “极豆沧海”大模型并完成国家备案，并围绕AIOS、AI Agent和AI Cloud构建端云协同体系，面向车企提供AI创新解决方案和全生命周期服务，持续赋能汽车智能化创新。"
+        },
+        {
+          "source_id": "FISRC-c0f4b27988fd5315",
+          "quote": "极豆将以汽车AI大脑为下一阶段研发重点，基于世界模型、物理AI 等技术实现舱内外多模态感知、多模态交互与功能执行，基于AI大脑实现整车自适应感知下的功能交互、全链路执行"
+        },
+        {
+          "source_id": "FISRC-4f922c7036a79d53",
+          "quote": "双方将整合生数科技在多模态大模型领域的技术能力，以及极豆科技在汽车AI解决方案、汽车前装量产交付和用户运营方面的积累，围绕场景共创、平台融合、运营赋能和生态共建展开合作，共同打造面向智能车联网的AI应用与汽车行业AIGC解决方案"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-04T00:35:45.996Z"
+    },
+    "EV-77a33d4e194d24ca": {
+      "id": "EV-77a33d4e194d24ca",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Atomic 是 AI 原生的供应链计划平台，属于电商零售与供应链行业软件。",
+      "input_hash": "4e77e21c37ba9e75e2827850eeb8e30acdcd11c370454b1b447ade1a815ca97c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d4e6ae2384112548",
+          "quote": "Atomic, the AI-native supply chain planning platform"
+        },
+        {
+          "source_id": "FISRC-fceaabfbd4dee5c0",
+          "quote": "AI models every unit you make, buy and move, tests every what-if, and explains every decision."
+        },
+        {
+          "source_id": "FISRC-d4e6ae2384112548",
+          "quote": "Companies can deploy Atomic's sales and operations planning layer in about 30 days using the data they already have."
+        },
+        {
+          "source_id": "FISRC-d4e6ae2384112548",
+          "quote": "Atomic's AI agent platform, Nucleus, is also in daily use by customers for tasks including S&OP preparation, inventory questions and supply-risk checks."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-04T00:45:08.159Z"
+    },
+    "EV-f11e79a99589efbd": {
+      "id": "EV-f11e79a99589efbd",
+      "scope": "review",
+      "exclusion_reason": "",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "rationale": "息壤开物主营物理基础模型并配套物理 AI 数据与评测平台，其是否属具身智能边界需人工复核。",
+      "input_hash": "6b084da8c788d2c70c0b186eae39db1fc69b932d815241c2d11c12bdc0aee141",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d2086267c3e72f78",
+          "quote": "息壤开物成立于2026年7月1日，是一家专注于物理基础模型研发的科技公司。"
+        },
+        {
+          "source_id": "FISRC-2737c1f3e0c4c724",
+          "quote": "息壤开物给出的答案很干脆：不做机器人本体，不做单点应用，而是自研物理基础模型（Large Physics Model，LPM）"
+        },
+        {
+          "source_id": "FISRC-8e74b2ec61a5eb17",
+          "quote": "按照公司的规划，其产品体系分为三个层级：底层物理基础模型提供可复用的物理理解和状态预测能力；在此基础上，结合机器人、自动驾驶等行业数据训练领域模型；最终再针对分拣、拆码垛和柔性装配等具体任务形成应用模型。"
+        },
+        {
+          "source_id": "FISRC-2737c1f3e0c4c724",
+          "quote": "XR 数据平台——面向物理 AI 研发，覆盖多模态数据接入、清洗、标注、质量检查、版本管理与发布的完整流程。它保持跨本体、跨模型的中立定位，把真机轨迹、人类示教、真实失败案例等物理世界经验，编译成可训练、可追溯、可迭代的高质量数据资产。"
+        },
+        {
+          "source_id": "FISRC-2737c1f3e0c4c724",
+          "quote": "XR评测平台——已实现从场景构建、质量检查、策略执行到报告生成的完整工作流程，支持评测场景复用，以及执行过程、评测报告的保存回查。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-04T00:35:45.996Z"
+    },
+    "EV-3cdf83cc6c60b2b8": {
+      "id": "EV-3cdf83cc6c60b2b8",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Relay 为一线员工提供结合 AI 与硬件的运营行动系统，属于企业业务流程与智能体。",
+      "input_hash": "ead44728d47d42269c830f7ab042b2e5bf205946d436611ca9a867bd3e3cc769",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c0d67da86b5ae704",
+          "quote": "Relay, the system of action for physical operations, today announced it has raised $36 million in new funding, bringing total capital raised to over $90 million."
+        },
+        {
+          "source_id": "FISRC-0fa745b79d77cfe5",
+          "quote": "Relay is the system of action for physical operations, serving the 80 percent of the world’s workforce that doesn’t sit behind a desk – the frontlines."
+        },
+        {
+          "source_id": "FISRC-c0d67da86b5ae704",
+          "quote": "With Relay, workers simply continue communicating how they have for decades — pick up a radio, wear it during their shift, and push to talk. But behind that familiar interaction is a robust system that combines the power of cloud communications, AI, real-time translation, location awareness, and automated workflows - all packaged in modern, durable, next-gen hardware built specifically for the frontlines."
+        },
+        {
+          "source_id": "FISRC-0fa745b79d77cfe5",
+          "quote": "Relay’s system combines its powerful software and AI platform with purpose-built next-gen hardware, to better connect frontline teams, overcome language barriers with support for 35 languages, and deliver rapid ROI for its customers."
+        },
+        {
+          "source_id": "FISRC-c0d67da86b5ae704",
+          "quote": "The new funding will accelerate Relay's software and AI platform capabilities – including its insights and agentic layer that will allow teams to query their shift data and act on it"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-04T00:45:08.159Z"
     }
   },
-  "generated_at": "2026-10-03T04:23:05.461Z"
+  "generated_at": "2026-10-04T00:45:08.162Z"
 }
