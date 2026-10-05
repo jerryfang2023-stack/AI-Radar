@@ -139,34 +139,86 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅据一则融资报道记录投资者标签；该报道未披露出资主体、基金载体或金额，不扩展为机构简介。",
-      "summary": "投资界融资报道将“小遛科技”列为Monstar梦塔科技种子+轮跟投方。现有材料未披露该名称对应的法律实体、基金载体或投资金额，本页仅记录公开报道中的投资者标签。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "小遛共享官网关于页称，宁波小遛共享信息科技有限公司以“小遛共享”为简称，运营共享电单车平台；投资界融资报道则将“小遛科技”列为梦塔科技种子+轮跟投方。官网公司名与报道投资者标签并不完全相同，因此本档案记录官方品牌背景和报道中的投资活动，不把该交易归属到某一法律主体或基金。",
+      "coverage_note": "官网页面未确认其与投资界所称“小遛科技”是否为同一法律出资主体，融资报道也未披露基金载体和单笔金额；不将品牌相似视作法律实体或投资工具的等同证明。",
+      "facts": [
+        {
+          "field": "organization_background",
+          "label": "官网公开的业务背景",
+          "value": "官网关于页将小遛共享描述为运营共享电单车平台的互联网科技公司，并列出历史主体名“宁波小遛共享信息科技有限公司”。",
+          "source_id": "b37_xiaoliu_business"
+        },
+        {
+          "field": "reported_investor_label",
+          "label": "融资报道中的投资者称呼",
+          "value": "投资界将“小遛科技”列为梦塔科技种子+轮的跟投方；没有据此认定官网所列公司就是实际出资主体。",
+          "source_id": "b37_xiaoliu_round"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-04",
+          "description": "官网关于页称小遛共享于2017年4月落户宁波鄞州科技信息孵化园。",
+          "source_id": "b37_xiaoliu_established"
+        }
+      ],
       "track_record": [
         {
-          "description": "2026年7月，投资界报道其以“小遛科技”名义跟投Monstar梦塔科技超千万元种子+轮；报道未披露该方的投资金额或载体。",
-          "source_id": "xiaoliu-monstar-2026"
+          "description": "投资界报道将“小遛科技”列为梦塔科技超千万元种子+轮融资的跟投方；未披露单笔投资额。",
+          "source_id": "b37_xiaoliu_round"
         },
         {
           "description": "融资来源记录：梦塔科技 · 种子+轮 · 2026-07-29 · 本轮参投 · 超千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c8eaea364bcdb2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网关于页",
+          "value": "小遛共享",
+          "url": "https://www.xlgxapp.com/05about-us.html",
+          "source_id": "b37_xiaoliu_official"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅据一则融资报道记录投资者标签；该报道未披露出资主体、基金载体或金额，不扩展为机构简介。",
+      "experience_summary": "公开资料可以描述小遛共享的共享电单车业务背景，以及以“小遛科技”名义披露的一项跟投；现有证据不足以把两种名称确认成同一出资法律主体。",
       "sources": [
         {
-          "source_id": "xiaoliu-monstar-2026",
+          "source_id": "b37_xiaoliu_official",
+          "source_url": "https://www.xlgxapp.com/05about-us.html",
+          "source_title": "关于我们",
+          "source_content_hash": "b3e4bc76493fb1c03f45f1b4f44c06b0abdb9a6f24b21ebca39d33383309b4ab",
+          "quote": "宁波小遛共享信息科技有限公司",
+          "quote_hash": "1fdba6f53dccaa84a1a17ae0e4f33214cc7af4cadfc596fe1da4edd42be9e513"
+        },
+        {
+          "source_id": "b37_xiaoliu_business",
+          "source_url": "https://www.xlgxapp.com/05about-us.html",
+          "source_title": "关于我们",
+          "source_content_hash": "b3e4bc76493fb1c03f45f1b4f44c06b0abdb9a6f24b21ebca39d33383309b4ab",
+          "quote": "运营共享电单车平台的互联网科技公司",
+          "quote_hash": "858e547d6c79cc12bcd8eb5fc415baf4365b45785b8b7ea4a0bc625648f9c31c"
+        },
+        {
+          "source_id": "b37_xiaoliu_established",
+          "source_url": "https://www.xlgxapp.com/05about-us.html",
+          "source_title": "关于我们",
+          "source_content_hash": "b3e4bc76493fb1c03f45f1b4f44c06b0abdb9a6f24b21ebca39d33383309b4ab",
+          "quote": "2017年4月落户于宁波鄞州科技信息孵化园",
+          "quote_hash": "0deb527e456191a36ee341c330dab9b5f2d326f94781abe0e71493ab75c49047"
+        },
+        {
+          "source_id": "b37_xiaoliu_round",
           "source_url": "https://news.pedaily.cn/202607/566967.shtml",
           "source_title": "Monstar梦塔科技完成超千万元种子+轮融资，构建AI数字生命新范式_投资界",
           "source_content_hash": "818cf9be32b450605fe0e3e058c6b6a16f9f8491b90dd3ecb592e61f52f6f537",
-          "quote": "小遛科技跟投",
-          "quote_hash": "c8b4d79f13037ced110dd710fec68397f0489d24d26aa46c32cab01c6b112c9d"
+          "quote": "Monstar梦塔科技已完成 超千万元种子+轮融资 ，由 合肥产投科创种子基金领投，小遛科技跟投，老股东奇绩创坛、启迪之星持续支持。",
+          "quote_hash": "37d1ec65c0044bab10ab122ddbca857a93366579cd3fdd3009924ca18ac010bb"
         },
         {
           "source_id": "FISRC-1c8eaea364bcdb2f",
@@ -176,8 +228,7 @@
           "quote": "Monstar梦塔科技已完成 超千万元种子+轮融资 ，由 合肥产投科创种子基金领投，小遛科技跟投，老股东奇绩创坛、启迪之星持续支持。",
           "quote_hash": "37d1ec65c0044bab10ab122ddbca857a93366579cd3fdd3009924ca18ac010bb"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     }
   }
 }

@@ -86540,31 +86540,53 @@
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-fb0720256a65c7": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "MVP Ventures 是一家早期风险投资机构，面向技术创业公司。Wispr 联合创始人 Tanay Kothari 在机构官网的创始人案例中介绍了 MVP 的合作支持；TechCrunch 报道称 MVP Ventures 参与了 Wispr 2026 年 8 月 2.8 亿美元 B 轮追加投资。",
-      "coverage_note": "机构身份与 Wispr 的历史合作线索来自 MVP 官网；当前 B 轮参与名单来自 TechCrunch 报道。没有证据显示 MVP Ventures 在该轮单独投资金额。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "MVP Ventures官网将其定位为投资技术创业者的早期风险投资机构，并公布联合创始人和管理合伙人团队。TechCrunch报道将MVP Ventures列为Wispr最新一轮融资中的既有投资者之一；报道没有披露其单笔出资金额。",
+      "coverage_note": "机构定位和管理团队来自MVP Ventures官网；Wispr的融资参与名单来自TechCrunch，未推断单笔投资额或MVP的完整投资组合。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网公布的投资定位",
+          "value": "早期投资技术创业者，重点支持具有差异化和防御性的技术。",
+          "source_id": "b37_mvp_official"
+        },
+        {
+          "field": "team",
+          "label": "官网公布的创始管理合伙人",
+          "value": "官网列Andre de Baubigny和Weston Moyer为联合创始人及管理合伙人。",
+          "source_id": "b37_mvp_team"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "机构身份与 Wispr 的历史合作线索来自 MVP 官网；当前 B 轮参与名单来自 TechCrunch 报道。没有证据显示 MVP Ventures 在该轮单独投资金额。",
       "track_record": [
         {
-          "description": "TechCrunch 报道将 MVP Ventures 列为 Wispr 2026 年 8 月 2.8 亿美元 B 轮追加投资的既有投资方。",
-          "source_id": "mvp_wispr_series_b"
+          "description": "TechCrunch报道将MVP Ventures列为Wispr最新一轮融资中追加投资的既有投资者之一；未披露单独投资金额。",
+          "source_id": "b37_mvp_wispr"
         },
         {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e7a3713da8f3e54"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "MVP Ventures",
+          "url": "https://www.mvp-vc.com/",
+          "source_id": "b37_mvp_official"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "MVP Ventures官网披露其早期技术投资定位及联合创始人管理团队；第三方融资报道确认其参与Wispr后续融资。",
       "sources": [
         {
-          "source_id": "mvp_official_identity",
+          "source_id": "b37_mvp_official",
           "source_url": "https://www.mvp-vc.com/",
           "source_title": "MVP Ventures — Your Most Valuable Partner",
           "source_content_hash": "704a47eee7888294940da5b8d33b7c49bad524ae32e61e0326aba9b18ff1ade5",
@@ -86572,15 +86594,15 @@
           "quote_hash": "87726ca2be70dfff687bf38dc2bba30cc96af87bd7fc20da97a0fb37850948d8"
         },
         {
-          "source_id": "mvp_wispr_founder_testimonial",
-          "source_url": "https://www.mvp-vc.com/",
-          "source_title": "MVP Ventures — Your Most Valuable Partner",
-          "source_content_hash": "704a47eee7888294940da5b8d33b7c49bad524ae32e61e0326aba9b18ff1ade5",
-          "quote": "Tanay Kothari CEO & Co-Founder, Wispr",
-          "quote_hash": "23df09384762690376857dbb1ddcfcdcca12ee56e436ed0031f2469e8628d337"
+          "source_id": "b37_mvp_team",
+          "source_url": "https://www.mvp-vc.com/about/team",
+          "source_title": "Our Team | MVP Ventures",
+          "source_content_hash": "7fd059db10ff43c5fe6e733685d5b2132e7e092dce870df54d2bf1911bd94d9a",
+          "quote": "Andre de Baubigny Co-Founder & Managing Partner Weston Moyer Co-Founder & Managing Partner",
+          "quote_hash": "b61faa5c8b6c072e2276ac1822451013be9cc7ea1c1edde1d745afebf04781ea"
         },
         {
-          "source_id": "mvp_wispr_series_b",
+          "source_id": "b37_mvp_wispr",
           "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/",
           "source_title": "Wispr raises $280M at $2B valuation as it looks beyond dictation | TechCrunch",
           "source_content_hash": "506649963a77e50322405fc40852df8eadb62f472f7f3d4087cde118e4447b39",
@@ -86595,8 +86617,7 @@
           "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
           "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-d6aa97e6511026": {
       "profile_type": "person",
@@ -95040,31 +95061,65 @@
       "last_verified_at": "2026-10-04"
     },
     "INV-fc1127541e09f1": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "Mission Street Capital 是一家总部位于旧金山、关注早期项目的综合型风险投资机构。Smallest AI 官方公告将其列入公司 2026 年 7 月 1300 万美元 Series A 投资方名单。",
-      "coverage_note": "投资机构身份由 Mission Street Capital 官网说明；融资关系和轮次来自 Smallest AI 官方融资公告。公告未披露其单独投资金额。",
-      "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "投资机构身份由 Mission Street Capital 官网说明；融资关系和轮次来自 Smallest AI 官方融资公告。公告未披露其单独投资金额。",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Mission Street Capital官网自述为总部位于旧金山的综合型早期风险投资公司，称其源自Thiel Fellows于2014年创立的Mission Control hacker house。Smallest AI官方Series A公告将Mission Street Capital列为参投方之一；该轮新闻稿没有披露单独出资额。",
+      "coverage_note": "机构定位和历史由Mission Street Capital官网自述；参投关系来自Smallest AI官方公告，不推断其完整投资组合或单笔金额。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网公布的机构定位",
+          "value": "Mission Street Capital自述为综合型早期风险投资机构，并称其源自2014年成立的Mission Control hacker house。",
+          "source_id": "b37_mission_official"
+        },
+        {
+          "field": "headquarters",
+          "label": "官网列出的所在地",
+          "value": "San Francisco, California。",
+          "source_id": "b37_mission_location"
+        },
+        {
+          "field": "reported_round_type",
+          "label": "发行方融资公告标题",
+          "value": "Smallest AI官网发布了Series A融资公告。",
+          "source_id": "b37_mission_series"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014",
+          "description": "官网称其来源Mission Control hacker house由Thiel Fellows于2014年创立；此为其自述的源起时间，不等同于管理公司的成立日期。",
+          "source_id": "b37_mission_official"
+        }
+      ],
       "track_record": [
         {
-          "description": "Smallest AI 官方公告将 Mission Street Capital 列入其 2026 年 7 月 1300 万美元 Series A 投资方名单。",
-          "source_id": "mission_street_smallest_series_a"
+          "description": "Smallest AI官方融资公告将Mission Street Capital列为参投方之一；公告未披露单笔出资金额。",
+          "source_id": "b37_mission_smallest"
         },
         {
           "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6b1944359351ee14"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Mission Street Capital",
+          "url": "https://www.missionstcapital.com/",
+          "source_id": "b37_mission_official"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构官网披露其早期综合型投资定位和旧金山所在地；Smallest AI官方融资公告记录一项Series A参投。",
       "sources": [
         {
-          "source_id": "mission_street_identity",
+          "source_id": "b37_mission_official",
           "source_url": "https://www.missionstcapital.com/",
           "source_title": "Mission Street Capital",
           "source_content_hash": "e673e635be2e965e07ff5550de2ea41eb78d5e594e77ecf5be6f372f3f2b9a33",
@@ -95072,7 +95127,23 @@
           "quote_hash": "139dd1e311c16d28fd2102059d6446c85d3a58d1ecfcfb885856d9699c9585b1"
         },
         {
-          "source_id": "mission_street_smallest_series_a",
+          "source_id": "b37_mission_location",
+          "source_url": "https://www.missionstcapital.com/",
+          "source_title": "Mission Street Capital",
+          "source_content_hash": "e673e635be2e965e07ff5550de2ea41eb78d5e594e77ecf5be6f372f3f2b9a33",
+          "quote": "San Francisco, CA",
+          "quote_hash": "5417a55717d2497cf83c3d42b6ff8d21c7efc15dac514052d030e1742d8d7b8b"
+        },
+        {
+          "source_id": "b37_mission_series",
+          "source_url": "https://smallest.ai/blog/series-a-funding-13m-next-generation-voice-ai",
+          "source_title": "Announcing our Series A funding - Smallest.ai",
+          "source_content_hash": "384d8d11b68d62e71cac0df0c45240cdc2780a65088a25ca0fde3bab08c3878a",
+          "quote": "Announcing our Series A funding",
+          "quote_hash": "59d20f09057612824cd39fc50ed65967ded38e22f680048530a6377c58763902"
+        },
+        {
+          "source_id": "b37_mission_smallest",
           "source_url": "https://smallest.ai/blog/series-a-funding-13m-next-generation-voice-ai",
           "source_title": "Announcing our Series A funding - Smallest.ai",
           "source_content_hash": "384d8d11b68d62e71cac0df0c45240cdc2780a65088a25ca0fde3bab08c3878a",
@@ -95087,8 +95158,7 @@
           "quote": "Additional backers included Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC and Mission Street Capital",
           "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-7a8f136f599bea": {
       "profile_type": "organization",
@@ -96082,34 +96152,86 @@
     "INV-f96bf6734e4283": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅据一则融资报道记录投资者标签；该报道未披露出资主体、基金载体或金额，不扩展为机构简介。",
-      "summary": "投资界融资报道将“小遛科技”列为Monstar梦塔科技种子+轮跟投方。现有材料未披露该名称对应的法律实体、基金载体或投资金额，本页仅记录公开报道中的投资者标签。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "小遛共享官网关于页称，宁波小遛共享信息科技有限公司以“小遛共享”为简称，运营共享电单车平台；投资界融资报道则将“小遛科技”列为梦塔科技种子+轮跟投方。官网公司名与报道投资者标签并不完全相同，因此本档案记录官方品牌背景和报道中的投资活动，不把该交易归属到某一法律主体或基金。",
+      "coverage_note": "官网页面未确认其与投资界所称“小遛科技”是否为同一法律出资主体，融资报道也未披露基金载体和单笔金额；不将品牌相似视作法律实体或投资工具的等同证明。",
+      "facts": [
+        {
+          "field": "organization_background",
+          "label": "官网公开的业务背景",
+          "value": "官网关于页将小遛共享描述为运营共享电单车平台的互联网科技公司，并列出历史主体名“宁波小遛共享信息科技有限公司”。",
+          "source_id": "b37_xiaoliu_business"
+        },
+        {
+          "field": "reported_investor_label",
+          "label": "融资报道中的投资者称呼",
+          "value": "投资界将“小遛科技”列为梦塔科技种子+轮的跟投方；没有据此认定官网所列公司就是实际出资主体。",
+          "source_id": "b37_xiaoliu_round"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-04",
+          "description": "官网关于页称小遛共享于2017年4月落户宁波鄞州科技信息孵化园。",
+          "source_id": "b37_xiaoliu_established"
+        }
+      ],
       "track_record": [
         {
-          "description": "2026年7月，投资界报道其以“小遛科技”名义跟投Monstar梦塔科技超千万元种子+轮；报道未披露该方的投资金额或载体。",
-          "source_id": "xiaoliu-monstar-2026"
+          "description": "投资界报道将“小遛科技”列为梦塔科技超千万元种子+轮融资的跟投方；未披露单笔投资额。",
+          "source_id": "b37_xiaoliu_round"
         },
         {
           "description": "融资来源记录：梦塔科技 · 种子+轮 · 2026-07-29 · 本轮参投 · 超千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c8eaea364bcdb2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网关于页",
+          "value": "小遛共享",
+          "url": "https://www.xlgxapp.com/05about-us.html",
+          "source_id": "b37_xiaoliu_official"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅据一则融资报道记录投资者标签；该报道未披露出资主体、基金载体或金额，不扩展为机构简介。",
+      "experience_summary": "公开资料可以描述小遛共享的共享电单车业务背景，以及以“小遛科技”名义披露的一项跟投；现有证据不足以把两种名称确认成同一出资法律主体。",
       "sources": [
         {
-          "source_id": "xiaoliu-monstar-2026",
+          "source_id": "b37_xiaoliu_official",
+          "source_url": "https://www.xlgxapp.com/05about-us.html",
+          "source_title": "关于我们",
+          "source_content_hash": "b3e4bc76493fb1c03f45f1b4f44c06b0abdb9a6f24b21ebca39d33383309b4ab",
+          "quote": "宁波小遛共享信息科技有限公司",
+          "quote_hash": "1fdba6f53dccaa84a1a17ae0e4f33214cc7af4cadfc596fe1da4edd42be9e513"
+        },
+        {
+          "source_id": "b37_xiaoliu_business",
+          "source_url": "https://www.xlgxapp.com/05about-us.html",
+          "source_title": "关于我们",
+          "source_content_hash": "b3e4bc76493fb1c03f45f1b4f44c06b0abdb9a6f24b21ebca39d33383309b4ab",
+          "quote": "运营共享电单车平台的互联网科技公司",
+          "quote_hash": "858e547d6c79cc12bcd8eb5fc415baf4365b45785b8b7ea4a0bc625648f9c31c"
+        },
+        {
+          "source_id": "b37_xiaoliu_established",
+          "source_url": "https://www.xlgxapp.com/05about-us.html",
+          "source_title": "关于我们",
+          "source_content_hash": "b3e4bc76493fb1c03f45f1b4f44c06b0abdb9a6f24b21ebca39d33383309b4ab",
+          "quote": "2017年4月落户于宁波鄞州科技信息孵化园",
+          "quote_hash": "0deb527e456191a36ee341c330dab9b5f2d326f94781abe0e71493ab75c49047"
+        },
+        {
+          "source_id": "b37_xiaoliu_round",
           "source_url": "https://news.pedaily.cn/202607/566967.shtml",
           "source_title": "Monstar梦塔科技完成超千万元种子+轮融资，构建AI数字生命新范式_投资界",
           "source_content_hash": "818cf9be32b450605fe0e3e058c6b6a16f9f8491b90dd3ecb592e61f52f6f537",
-          "quote": "小遛科技跟投",
-          "quote_hash": "c8b4d79f13037ced110dd710fec68397f0489d24d26aa46c32cab01c6b112c9d"
+          "quote": "Monstar梦塔科技已完成 超千万元种子+轮融资 ，由 合肥产投科创种子基金领投，小遛科技跟投，老股东奇绩创坛、启迪之星持续支持。",
+          "quote_hash": "37d1ec65c0044bab10ab122ddbca857a93366579cd3fdd3009924ca18ac010bb"
         },
         {
           "source_id": "FISRC-1c8eaea364bcdb2f",
@@ -96119,8 +96241,7 @@
           "quote": "Monstar梦塔科技已完成 超千万元种子+轮融资 ，由 合肥产投科创种子基金领投，小遛科技跟投，老股东奇绩创坛、启迪之星持续支持。",
           "quote_hash": "37d1ec65c0044bab10ab122ddbca857a93366579cd3fdd3009924ca18ac010bb"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "INV-04c1e7d2fb60f3": {
       "profile_type": "unverified",
@@ -96862,42 +96983,58 @@
     "INV-fb524ac528f925": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录一项公开投资活动；来源未说明用于该交易的具体基金或法律实体。",
-      "summary": "Play Time HoldCo官网将Fish Audio列入其首页展示的公司清单；TechCrunch报道Play Time参与Fish Audio的5200万美元种子轮。本档案只记录这一公开投资活动，不推断基金或法律实体。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Play Time HoldCo官网将自身介绍为处于体育与技术交叉领域的公司，并在官网展示Fish Audio。Fish Audio的融资公告称Play Time参与其5200万美元种子轮。本档案仅记录官网展示和一项公开投资披露，不把官网展示清单扩写为完整基金组合或特定法律基金。",
+      "coverage_note": "Play Time官网没有在本次核验中披露明确的基金法律载体、投资团队或完整组合；投资关系按Fish Audio融资公告原称记录。",
+      "facts": [
+        {
+          "field": "organization_scope",
+          "label": "官网公开的业务表述",
+          "value": "Play Time HoldCo官网以体育与技术交叉领域为定位，并展示Fish Audio等公司。",
+          "source_id": "b37_playtime_site"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "TechCrunch报道Fish Audio于2026年7月完成5200万美元种子轮，Play Time列在参与方中。",
-          "source_id": "fish-audio-seed-playtime"
+          "description": "Fish Audio融资新闻稿称该公司宣布获得5200万美元种子轮融资，并将Play Time列为参与方之一；未披露Play Time单笔金额或投资载体。",
+          "source_id": "b37_playtime_round"
         },
         {
           "description": "融资来源记录：Fish Audio · 种子轮 · 2026-07-28 · 本轮参投 · $52 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e06e94375ec64ac4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Play Time HoldCo",
+          "url": "https://www.playtime.vc/",
+          "source_id": "b37_playtime_site"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅记录一项公开投资活动；来源未说明用于该交易的具体基金或法律实体。",
+      "experience_summary": "官网公开的HoldCo页面展示其体育与技术定位及Fish Audio；发行方新闻稿确认Play Time参与Fish Audio种子轮。",
       "sources": [
         {
-          "source_id": "playtime-holdco-site",
+          "source_id": "b37_playtime_site",
           "source_url": "https://www.playtime.vc/",
           "source_title": "Play Time HoldCo",
           "source_content_hash": "933368b604598a4794585d8c31cd319870b0d8c4bdf2e99effa29e33cc786adf",
-          "quote": "Fish Audio",
-          "quote_hash": "243024e3cf3f398c0703bed8bd4f1a6a6fb8f8b01d98868063a3ab8bc26f9d49"
+          "quote": "At the intersection of Sports & Technology FieldAI Autonomous brains for field robots Fish Audio Realistic AI Voice Maker",
+          "quote_hash": "18d18f7fd7c6d57e61619ddeb977e7253f052273ee7ba346b9c6e2c2bada791e"
         },
         {
-          "source_id": "fish-audio-seed-playtime",
-          "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/",
-          "source_title": "Fish Audio raises $52M seed to build AI voice models for creators and enterprises | TechCrunch",
-          "source_content_hash": "d21804e6e3ffd6390c366cb17140fa627ac27226298ffc159cb555d135507094",
-          "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners",
-          "quote_hash": "ba259d4e8e48716f76aa37ed16248f3d92414506617a0477397d5e947d746ef5"
+          "source_id": "b37_playtime_round",
+          "source_url": "https://www.prnewswire.com/news-releases/fish-audio-raises-52m-in-seed-funding-after-turning-passion-project-into-one-of-voice-ais-fastest-growing-companies-302836233.html",
+          "source_title": "Fish Audio Raises $52M in Seed Funding After Turning Passion Project Into One of Voice AI's Fastest-Growing Companies",
+          "source_content_hash": "bb224a4aa73a8ef37adc081a47e176440e527bc15faa81af4a12ace9c06f3443",
+          "quote": "today announced $52 million in seed funding led by Coreline Ventures and Capital Today , with participation from 359 Capital, Play Time, HF0, 645 Ventures, Parable",
+          "quote_hash": "c6c8d8236dca84fbe855a77079d7cf3ed428ad984983218ff51cdba694817dc5"
         },
         {
           "source_id": "FISRC-e06e94375ec64ac4",
@@ -96907,8 +97044,7 @@
           "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners, Bayhouse Ventures, Carya Venture Partners, and HF0.",
           "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "INV-cc831bba99fd2d": {
       "profile_type": "organization",
@@ -107763,44 +107899,94 @@
       "experience_summary": ""
     },
     "INV-fb681eeac044f6": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "person",
-      "summary": "Tim Stannard 是 Bacchus Management Group 的餐饮经营者。Hostie 的 1200 万美元 Series A 新闻稿明确列出他作为餐饮运营者参与该轮投资。",
-      "coverage_note": "投资关系来自 Hostie 发布的融资新闻稿；Hostie 官方博客也将 Tim Stannard 与 Bacchus Management Group 关联。未披露个人投资金额。",
-      "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "投资关系来自 Hostie 发布的融资新闻稿；Hostie 官方博客也将 Tim Stannard 与 Bacchus Management Group 关联。未披露个人投资金额。",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Bacchus Management Group官网将Tim Stannard列为Founding Partner and President，并称他于2000年创办该餐饮管理集团。Hostie的Series A新闻稿将他列为本轮投资人之一；公开资料未披露其个人投资金额。",
+      "coverage_note": "职务和创业经历来自Bacchus官网；投资关系来自Hostie融资新闻稿，不扩展为未披露的个人投资组合或单笔投资额。",
+      "facts": [
+        {
+          "field": "career_background",
+          "label": "公开的创业经历",
+          "value": "Bacchus官网称Tim Stannard于2000年创办Bacchus Management Group。",
+          "source_id": "b37_tim_founded"
+        },
+        {
+          "field": "funding_round",
+          "label": "Hostie融资新闻稿所述轮次",
+          "value": "Hostie新闻稿标题标示其Series A融资额为1200万美元。",
+          "source_id": "b37_tim_round_details"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000",
+          "description": "Bacchus Management Group官网称Tim Stannard于2000年创办该集团。",
+          "source_id": "b37_tim_founded"
+        }
+      ],
       "track_record": [
         {
-          "description": "Hostie 2026 年 7 月 8 日 1200 万美元 Series A 新闻稿将 Tim Stannard 列为餐饮运营者投资人。",
-          "source_id": "tim_hostie_investment"
+          "description": "Hostie的Series A新闻稿将Bacchus Management Group的Tim Stannard列为餐饮业经营者投资人；未披露其单独投资金额。",
+          "source_id": "b37_tim_hostie"
         },
         {
           "description": "融资来源记录：Hostie · A轮 · 2026-07-08 · 本轮天使投资人 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "tim_hostie_investment"
+          "source_id": "FISRC-d81171d6c6910b85"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构团队页",
+          "value": "Bacchus Management Group",
+          "url": "https://www.bacchusmanagement.com/team",
+          "source_id": "b37_tim_bacchus"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Founding Partner and President",
+          "organization": "Bacchus Management Group",
+          "source_id": "b37_tim_bacchus"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Bacchus官网披露Tim Stannard的现任职务和创办集团的经历；Hostie新闻稿记录其参与一轮融资。",
       "sources": [
         {
-          "source_id": "tim_hostie_investment",
+          "source_id": "b37_tim_bacchus",
+          "source_url": "https://www.bacchusmanagement.com/team",
+          "source_title": "Team &mdash; Bacchus Management Group",
+          "source_content_hash": "0a97efb10ab72fc4882de9a202e67a4c788f03d94f81fc0f40f2b64608190561",
+          "quote": "FOUNDING PARTNER and president Tim Stannard",
+          "quote_hash": "08c7180e37856df4b2f72eb19504d500dd6e04b382dcc2679faf8bc4befa3b5c"
+        },
+        {
+          "source_id": "b37_tim_founded",
+          "source_url": "https://www.bacchusmanagement.com/team",
+          "source_title": "Team &mdash; Bacchus Management Group",
+          "source_content_hash": "0a97efb10ab72fc4882de9a202e67a4c788f03d94f81fc0f40f2b64608190561",
+          "quote": "In 2000, at the age of 31, Tim started Bacchus Management Group",
+          "quote_hash": "30b0c1c5a0d39deb1eecedaa8d8472d8193178c60ae5ef648d898e9a861faf16"
+        },
+        {
+          "source_id": "b37_tim_round_details",
+          "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
+          "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality",
+          "source_content_hash": "092c8022c5ecc67b43c42ddc70e993697186d6a2f718bc68ae900a27c7356e16",
+          "quote": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality",
+          "quote_hash": "444716cc8ec231c1a340f239c15c3571aebccd0deb29bfb16920a71cedfbc39b"
+        },
+        {
+          "source_id": "b37_tim_hostie",
           "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
           "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality",
           "source_content_hash": "092c8022c5ecc67b43c42ddc70e993697186d6a2f718bc68ae900a27c7356e16",
           "quote": "The round also includes investments from leading restaurant operators Tim Stannard of Bacchus Management Group",
           "quote_hash": "d4313fbbc6e6699588fc89fd32fbb849582357da651dc42e85d2a6836771920b"
-        },
-        {
-          "source_id": "tim_hostie_affiliation",
-          "source_url": "https://hostie.ai/blogs/hostie-news-seriesa",
-          "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality - Hostie Blog",
-          "source_content_hash": "f1afba08c75d7f44f06d38c8f0358393360006190faa37937a513dba5568c0e6",
-          "quote": "Tim Stannard from Bacchus Management Group",
-          "quote_hash": "1678e2c1e7c9ade58e29a96c0482c74c5ef169b8cd9a8b1927b2c80ccf6596f3"
         },
         {
           "source_id": "FISRC-d81171d6c6910b85",
@@ -107810,8 +107996,7 @@
           "quote": "The round also includes investments from leading restaurant operators Tim Stannard of Bacchus Management Group",
           "quote_hash": "d4313fbbc6e6699588fc89fd32fbb849582357da651dc42e85d2a6836771920b"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-633ea576cc0cbb": {
       "profile_type": "organization",
@@ -111380,29 +111565,115 @@
     "INV-fabbf2aa686be1": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "“国方创投”按报道原始称呼保留，不映射到未被来源明确识别的基金或管理主体；新华网称近30亿美元，The Decoder 称截至文章发布时约20亿美元已募并可能增至约30亿美元，金额口径保留来源差异。",
-      "milestones": [],
-      "contacts": [],
-      "last_verified_at": "2026-10-03",
-      "coverage_status": "activity_only",
-      "summary": "新华网按快手公告称，“国方创投”列为可灵AI融资联合领投方之一，并将融资描述为近30亿美元；The Decoder 同日报道称已募约20亿美元，后续若有更多投资者加入总额可能达到约30亿美元。本档案不把不同进度口径合并为单一最终金额。",
-      "facts": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "上海国际集团资产管理有限公司的官方页面介绍其旗下上海国方私募基金管理公司（“国际国方”）：成立于2017年，聚焦半导体、数字智能和生物医药，并管理多支产业基金。新华网报道将“国方创投”列为快手可灵AI融资联合领投方之一。资料支持国方品牌和投资活动，但没有披露该轮对应的具体基金载体或国方单笔出资额。",
+      "coverage_note": "官网资料介绍的是“国际国方”管理机构与其管理基金；融资新闻使用“国方创投”称呼。未把品牌、管理人、基金产品和实际出资主体视为同一法律实体。",
+      "facts": [
         {
-          "description": "新华网2026年7月3日按快手公告报道，“国方创投”列入可灵AI融资联合领投名单；报道将融资描述为近30亿美元。",
-          "source_id": "INV-fabbf2aa686be1_xinhua"
+          "field": "organization_identity",
+          "label": "官方机构背景",
+          "value": "上海国际集团资管官网称上海国方私募基金管理公司是集团旗下科技产业投资机构，成立于2017年6月。",
+          "source_id": "b37_guofang_official"
         },
         {
-          "description": "The Decoder 同日报道称，Kuaishou 已为 Kling 募资约20亿美元，更多投资者加入后总额可能达到约30亿美元；报道亦将 Guofang Investment 列为联合领投方之一。",
+          "field": "investment_focus",
+          "label": "官网公布的产业关注",
+          "value": "长期聚焦半导体、数字智能和生物医药等科技产业。",
+          "source_id": "b37_guofang_focus"
+        },
+        {
+          "field": "managed_funds",
+          "label": "官网披露的管理职责",
+          "value": "官网称其代表集团管理上海市级产业基金；不据此认定基金管理公司就是基金的实际出资主体。",
+          "source_id": "b37_guofang_funds"
+        },
+        {
+          "field": "managed_funds",
+          "label": "官网披露的区域基金职责",
+          "value": "官网称其代表集团管理长三角产业基金一期和二期。",
+          "source_id": "b37_guofang_funds_delta"
+        },
+        {
+          "field": "scale_and_portfolio",
+          "label": "截至2025年末的官网统计",
+          "value": "官网披露累计管理规模超过330亿元、布局培育超过100家科技企业。",
+          "source_id": "b37_guofang_scale"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-06",
+          "description": "上海国际集团资管官网称上海国方私募基金管理公司成立于2017年6月。",
+          "source_id": "b37_guofang_official"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "新华网按快手公告报道将“国方创投”列为可灵AI融资的联合领投方之一；该报道未确认具体管理人或基金载体。",
+          "source_id": "b37_guofang_kling"
+        },
+        {
+          "description": "融资来源记录：Kling · IPO · 2026-07-03 · 本轮领投 · $2 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b382348e8f96c9b9"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "上级机构资管官网",
+          "value": "上海国际集团资产管理有限公司",
+          "url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_id": "b37_guofang_official"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "上海国际集团资管官网提供国方管理机构、产业方向、管理基金和规模等公开信息；新闻来源另以“国方创投”称呼可灵AI融资参与方，具体法律出资主体未披露。",
       "sources": [
         {
-          "source_id": "INV-fabbf2aa686be1_xinhua",
+          "source_id": "b37_guofang_official",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "上海国方私募基金管理公司（以下简称&ldquo;国际国方&rdquo;)成立于2017年6月，是上海国际集团旗下兼具市场广度与产业深度的科技产业投资机构。",
+          "quote_hash": "2ba3ed356c1faf64a6a660e7defb5df0a70d35e281296e987cba64d10fe8c9aa"
+        },
+        {
+          "source_id": "b37_guofang_focus",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "半导体、数字智能、生物医药",
+          "quote_hash": "051078ea781c706db964184e4928b318ae46c1b61a511a440ada2a263321c5d4"
+        },
+        {
+          "source_id": "b37_guofang_funds",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "代表集团管理了上海市级基金",
+          "quote_hash": "dd33bc644d08947549f0727f9bcba0665eb8a862133fa2022e3e2b87e2690eac"
+        },
+        {
+          "source_id": "b37_guofang_funds_delta",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "长三角产业基金（一期、二期）",
+          "quote_hash": "0bbb080eba9775e5bf1369c6bc2f7001484957ce9d24ecbf922a80d677c8a512"
+        },
+        {
+          "source_id": "b37_guofang_scale",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "截至2025年末，国际国方累计管理规模超330亿元，共布局培育了超过100家拥有国际竞争力、产业引领力、市场影响力的优质科技企业",
+          "quote_hash": "d9b65068f73e235730f6b17e39c3f5dd5c98284650e544a0846a53caccdd6d9e"
+        },
+        {
+          "source_id": "b37_guofang_kling",
           "source_url": "https://www3.xinhuanet.com/digital/20260703/bc3f78f1564842758c0cb82e9e4e8aa5/c.html",
           "source_title": "快手旗下可灵AI落地近30亿美元融资，最新估值180亿美元-新华网",
           "source_content_hash": "a39ca2e0ecf2fc34a32dc95b6acf7d17945cd9efa2ab74152ed314eded3d0952",
@@ -111412,13 +111683,12 @@
         {
           "source_id": "FISRC-b382348e8f96c9b9",
           "source_url": "https://the-decoder.com/chinese-ai-video-maker-kling-raises-2-billion-as-it-gears-up-for-hong-kong-ipo",
-          "source_title": "Chinese AI video maker Kling raises $2 billion as it gears up for Hong Kong IPO",
-          "source_content_hash": "4cd436ebc88405edcb109d7b99c143ffc16c4e516babe208d8cde58619e37c4e",
-          "quote": "Kuaishou has raised about $2 billion from investors for its AI video division, Kling.",
-          "quote_hash": "5ff0c5881540740f5d7daa067c885ea1deae5a13c2d01335fa606b87c01a55d0"
+          "source_title": "中国AI视频制作公司Kling融资20亿美元，筹备香港IPO",
+          "source_content_hash": "eaca9d6201e4bb0267d7539d62f2d3665bd9900744effbb50a77b2a01dd19057",
+          "quote": "CPE, Guofang Investment, BlueFive, Tencent, and Citic Securities are leading the round.",
+          "quote_hash": "5888e5985b14641653ee65e4d3420c693c8d354d4bf2fc626e1bc2d956da8148"
         }
-      ],
-      "coverage_note": "“国方创投”按报道原始称呼保留，不映射到未被来源明确识别的基金或管理主体；新华网称近30亿美元，The Decoder 称截至文章发布时约20亿美元已募并可能增至约30亿美元，金额口径保留来源差异。"
+      ]
     },
     "INV-25cbc8958e7774": {
       "profile_type": "unverified",
@@ -129596,55 +129866,86 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-f98af55db9b92b": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "广州市政府的子基金管理人公示名单列出广州越富基金管理有限公司；中国医药报报道将其列为睿心医疗近亿元 D 轮跟投方。现有资料仅支持该管理主体和一项参投记录。",
-      "coverage_note": "机构名称来自广州市政府公示，融资活动来自中国医药报报道；未据此推断其完整投资组合或与其他同名主体的关系。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "广州越富基金管理有限公司出现在广州市国资委公布的广州国企创新投资基金拟合作子基金管理人名单中。中国医药报报道将其列为睿心医疗近亿元D轮融资跟投方；公开资料支持机构名称、基金管理角色线索和这项参投披露，但不能据此视为完整投资组合。",
+      "coverage_note": "官方名单使用“拟合作机构（子基金管理人）”口径；融资来源披露一项睿心医疗D轮跟投，未披露越富基金单笔出资金额或其完整基金组合。",
+      "facts": [
+        {
+          "field": "fund_management_role",
+          "label": "官方披露的基金管理角色",
+          "value": "广州市国资委公告将广州越富基金管理有限公司列入广州国企创新投资基金拟合作子基金管理人名单。",
+          "source_id": "b37_yuefu_gov"
+        },
+        {
+          "field": "reported_round",
+          "label": "融资轮次与金额口径",
+          "value": "中国医药报将睿心医疗该轮融资描述为近亿元D轮。",
+          "source_id": "b37_yuefu_amount"
+        },
+        {
+          "field": "reported_investor",
+          "label": "融资参投披露",
+          "value": "该报道将广州越富基金管理有限公司列为跟投方。",
+          "source_id": "b37_yuefu_round"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "机构名称来自广州市政府公示，融资活动来自中国医药报报道；未据此推断其完整投资组合或与其他同名主体的关系。",
       "track_record": [
         {
-          "description": "睿心医疗近亿元 D 轮融资公告报道将广州越富基金管理有限公司列为跟投方。",
-          "source_id": "yuefu_ruiXin_d_round"
+          "description": "中国医药报将睿心医疗D轮描述为近亿元融资。",
+          "source_id": "b37_yuefu_amount"
+        },
+        {
+          "description": "同一报道将广州越富基金管理有限公司列为跟投方；未披露其单笔金额。",
+          "source_id": "b37_yuefu_round"
         },
         {
           "description": "融资来源记录：睿心医疗 · D轮 · 2026-05-27 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2afdddccd17bda89"
         }
       ],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "广州市国资委公告提供拟合作子基金管理人身份线索，中国医药报记录一项睿心医疗D轮跟投；其他团队、管理规模和投资组合信息未在本轮材料中确认。",
       "sources": [
         {
-          "source_id": "yuefu_gz_gov_fund_manager",
+          "source_id": "b37_yuefu_gov",
           "source_url": "https://www.gz.gov.cn/zt/zzyyzq/tzgg/content/post_9627971.html",
           "source_title": "通知公告 - 广州市人民政府门户网站",
           "source_content_hash": "ac7f914437badcc36f1fe03debce5ef40c6a1333679bab1278c2614751d39c10",
-          "quote": "广州越富基金管理有限公司",
-          "quote_hash": "49a76fbde1df341495037dcb9bf617c91bf866c2105d618826e666e344db1f99"
+          "quote": "拟合作机构（子基金管理人）名单：广州产投私募基金管理有限公司、广州广药资本私募基金管理有限公司、广州市天河区投资基金管理有限公司、知识城（广州）创业投资基金管理有限公司、广州广花私募基金管理有限公司、广州越富基金管理有限公司。",
+          "quote_hash": "fafe0c1a43b420ba5768c8e6c5c943ee67948ff71d4c376b1fd8f8f43a0846c8"
         },
         {
-          "source_id": "yuefu_ruiXin_d_round",
+          "source_id": "b37_yuefu_amount",
           "source_url": "https://bk.cnpharm.com/zgyyb/2026/06/11/325046.html",
           "source_title": "近期医疗器械资讯速览--07产业链--2026-06-11--中国医药报",
           "source_content_hash": "a55760ae63cd9d9d2e85d9433b316cc255e1489e50c934cce4f287dce041572f",
-          "quote": "深圳睿心智能医疗科技有限公司（以下简称睿心医疗）宣布完成近亿元D轮融资。该轮融资实现广州市、区两级国有资本投资平台联动，由广州生物医药与健康产业投资有限公司领投、广州越富基金管理有限公司跟投。",
-          "quote_hash": "8ee1ce949ca72bc3f6afcd2eac84daf047154094bf0cb0e2bafcc39b066c3d58"
+          "quote": "睿心医疗）宣布完成近亿元D轮融资",
+          "quote_hash": "289e6fadafa6e0ca8eebfb5a0f014ac20df390d6bf45f33fa5455219a5017640"
+        },
+        {
+          "source_id": "b37_yuefu_round",
+          "source_url": "https://bk.cnpharm.com/zgyyb/2026/06/11/325046.html",
+          "source_title": "近期医疗器械资讯速览--07产业链--2026-06-11--中国医药报",
+          "source_content_hash": "a55760ae63cd9d9d2e85d9433b316cc255e1489e50c934cce4f287dce041572f",
+          "quote": "由广州生物医药与健康产业投资有限公司领投、广州越富基金管理有限公司跟投。",
+          "quote_hash": "af0c32b240dfe3cce534b4c16435a5ee4a6903688d57562b92164ac15e442f21"
         },
         {
           "source_id": "FISRC-2afdddccd17bda89",
           "source_url": "https://www.sohu.com/a/1028422830_120094924",
-          "source_title": "商道创投网・会员动态｜睿心医疗・完成近亿元D 轮融资_诊疗_布局_心血管",
-          "source_content_hash": "e6f90681cba7e6ff8a690554ca7812e7ceaf843beaacdd62347caf73da93099f",
+          "source_title": "商道创投网・会员动态｜睿心医疗・完成近亿元D 轮融资",
+          "source_content_hash": "540f96f9862b88b1",
           "quote": "深圳睿心智能医疗科技有限公司近日完成了由广州健康产投领投、越富基金跟投的近亿元D 轮融资。",
           "quote_hash": "8890a42edf470d7e4d4634b31cfe1d67d58fb787de35b6e0a8df65debc6fc9ae"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-d44c03471d8c5f": {
       "profile_type": "organization",
@@ -209143,31 +209444,65 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-f9c6f97d414e02": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "person",
-      "summary": "Ofir Ehrlich 是 Eon 联合创始人兼 CEO。Harmony 官方融资公告将他列为 2026 年 7 月 28 日 3400 万美元种子轮的天使投资人之一。",
-      "coverage_note": "人物身份由 Eon 官网确认；投资关系和融资事件由 Harmony 官方新闻稿确认，未补入来源未披露的单独投资金额。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Eon官网列Ofir Ehrlich为联合创始人兼CEO，并将Eon定位为云备份管理产品。Harmony官方融资公告称，Ofir Ehrlich作为Eon联合创始人兼CEO，是其一轮3400万美元融资中的天使投资人之一；公告未披露他的个人投资金额。",
+      "coverage_note": "人物身份与现任职务由Eon官网确认；投资关系来自Harmony公司公告，不推断个人投资金额或其他未公开投资。",
+      "facts": [
+        {
+          "field": "company_scope",
+          "label": "Eon官网公开的产品定位",
+          "value": "Eon将其产品描述为面向现代云基础设施的备份自动化工具。",
+          "source_id": "b37_ofir_eon"
+        },
+        {
+          "field": "funding_round",
+          "label": "Harmony公告所述轮次规模",
+          "value": "Harmony公告标题标示本轮融资为3400万美元。",
+          "source_id": "b37_ofir_harmony_amount"
+        },
+        {
+          "field": "angel_investment",
+          "label": "Harmony公告披露的天使投资活动",
+          "value": "公告将Ofir Ehrlich列为Harmony的天使投资人之一。",
+          "source_id": "b37_ofir_harmony"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "人物身份由 Eon 官网确认；投资关系和融资事件由 Harmony 官方新闻稿确认，未补入来源未披露的单独投资金额。",
       "track_record": [
         {
-          "description": "Harmony 官方新闻稿将 Eon 联合创始人兼 CEO Ofir Ehrlich 列为其 3400 万美元种子轮的天使投资人。",
-          "source_id": "ofir_harmony_seed"
+          "description": "Harmony官方公告将Eon联合创始人兼CEO Ofir Ehrlich列为该公司3400万美元融资中的天使投资人之一，未披露个人投资额。",
+          "source_id": "b37_ofir_harmony"
         },
         {
           "description": "融资来源记录：Harmony · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a6970c8768c84ff"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "Eon",
+          "url": "https://www.eon.io/about",
+          "source_id": "b37_ofir_eon"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "CEO & Co-founder",
+          "organization": "Eon",
+          "source_id": "b37_ofir_eon"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Eon官网确认Ofir Ehrlich为联合创始人兼CEO；Harmony公告另披露他参与该公司融资，未披露个人出资额。",
       "sources": [
         {
-          "source_id": "ofir_eon_founder",
+          "source_id": "b37_ofir_eon",
           "source_url": "https://www.eon.io/about",
           "source_title": "Meet The First-Ever Cloud Backup Posture Management Platform",
           "source_content_hash": "f36149ae844edcc0a399f40d6e8e3efe50b52140b36794f6af8d78673ec1f5ce",
@@ -209175,12 +209510,20 @@
           "quote_hash": "deb9f1c3693dc217efa585bf0b1da2318dd23af9e61889e3eb7de7fc30cf087b"
         },
         {
-          "source_id": "ofir_harmony_seed",
+          "source_id": "b37_ofir_harmony_amount",
           "source_url": "https://harmony.io/press/harmony-raises-34-million-to-reinvent-employee-experience",
           "source_title": "Harmony Raises $34 Million to Reinvent Employee Experience Powered by AI",
-          "source_content_hash": "cd22b74cf01ed846aa8edcfd6c247bdae3ce124eeba8bc00d3656c643218a68c",
-          "quote": "The funding round was led by Lightspeed Venture Partners, with participation from Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners, and angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io.",
-          "quote_hash": "5888540af4f516296d10c190d92b65fcafb2e43410ea2bcd2ac2a356d1cc7bfb"
+          "source_content_hash": "6b9f6887ea853b7ded116b1afd90a2b0bd66a7e09b923feb850390374686ca0e",
+          "quote": "Harmony Raises $34 Million to Reinvent Employee Experience Powered by AI",
+          "quote_hash": "e7f9a7faa8bdb750db56f60e0a299fc10aea445dc744b8f7b6b0f361c97909e3"
+        },
+        {
+          "source_id": "b37_ofir_harmony",
+          "source_url": "https://harmony.io/press/harmony-raises-34-million-to-reinvent-employee-experience",
+          "source_title": "Harmony Raises $34 Million to Reinvent Employee Experience Powered by AI",
+          "source_content_hash": "6b9f6887ea853b7ded116b1afd90a2b0bd66a7e09b923feb850390374686ca0e",
+          "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io.",
+          "quote_hash": "c725cbf954532e470bb40f379a37dac0f023ff939710965013f5956a41ea8e4a"
         },
         {
           "source_id": "FISRC-2a6970c8768c84ff",
@@ -209190,8 +209533,7 @@
           "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io",
           "quote_hash": "7f59260f697968fe60cac70e9d088db6d297bf26c685727446a8a7724311fc60"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-a9bb5d9d60063a": {
       "profile_type": "unverified",
@@ -210455,36 +210797,43 @@
     "INV-fa00f95e4a5c36": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "没有把 Shanghai Pudong Venture Capital Co., Ltd. 与“浦东创投集团”推定为同一法律出资主体。",
-      "milestones": [],
-      "contacts": [],
-      "last_verified_at": "2026-10-03",
-      "coverage_status": "activity_only",
-      "summary": "上海市政府英文报道提及 Shanghai Pudong Venture Capital Co., Ltd.；浦东新区政府报道另称 XREAL 获“浦东创投集团”2 亿元独家投资。现有来源未厘清公司与集团边界，因此仅保留报道原有称呼及活动。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "上海市政府英文报道明确使用“Shanghai Pudong Venture Capital Co Ltd”并提到其董事会主席；市国资委另有“上海浦东创新投资发展（集团）有限公司／浦东创投集团”的公开资料。XREAL投资报道所用称呼是“浦东创投集团”，现有材料没有证明它与队列中的Pudong Venture Capital公司为同一法律出资主体，因此分别呈现实体信息和报道中的活动，不做合并。",
+      "coverage_note": "上海浦东创业投资有限公司与上海浦东创新投资发展（集团）有限公司是来源使用的不同名称。本档案未找到两者法律关系或XREAL投资载体的直接证明，不将集团参投记成目标公司的确定投资组合。",
       "facts": [
         {
-          "field": "public_name_in_source",
-          "label": "上海政府英文报道中的机构称谓",
-          "value": "Shanghai Pudong Venture Capital Co Ltd（该报道并未将其与XREAL投资主体的法律关系说清）",
-          "source_id": "INV-fa00f95e4a5c36_name"
+          "field": "official_name_reference",
+          "label": "政府报道中的机构名称",
+          "value": "上海市政府英文报道提及Shanghai Pudong Venture Capital Co Ltd，并以该公司董事会主席身份引述其观点。",
+          "source_id": "b37_pdvc_company"
+        },
+        {
+          "field": "related_group_reference",
+          "label": "浦东创投集团公开定位",
+          "value": "市国资委报道介绍上海浦东创新投资发展（集团）有限公司挂牌运营，并称其使用引领区产业基金、科创母基金和天使基金服务科创企业；未据此确认其与Shanghai Pudong Venture Capital Co Ltd的法律关系。",
+          "source_id": "b37_pdvc_group_scope"
         }
       ],
+      "milestones": [],
       "track_record": [
         {
-          "description": "浦东新区政府2025年报道以“浦东创投集团”称呼向XREAL提供2亿元独家投资的投资方；活动按公开称谓记录，未断言投资主体的法定名称。",
-          "source_id": "INV-fa00f95e4a5c36_xreal"
+          "description": "上海市政府报道将XREAL获得的2亿元独家投资称为来自“浦东创投集团”；与目标英文机构名称的关系尚未证实。",
+          "source_id": "b37_pdvc_xreal"
         },
         {
           "description": "融资来源记录：XREAL · 历史轮次未披露 · 上一轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-15bb852c20e5a293"
         }
       ],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开政府材料确认存在Shanghai Pudong Venture Capital Co Ltd及浦东创投集团的不同名称记录，并分别报道了机构与集团信息；目标标签和XREAL投资方之间的法律主体对应关系仍不明确。",
       "sources": [
         {
-          "source_id": "INV-fa00f95e4a5c36_name",
+          "source_id": "b37_pdvc_company",
           "source_url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260707/c7421943f8a24713872d934a2678cd36.html",
           "source_title": "Pudong registered funds exceed 2 trillion yuan: Report",
           "source_content_hash": "89f2098a355379ed2f1aa64466a049683caea03a2ed17704ee1c0bc5c74a51d9",
@@ -210492,7 +210841,23 @@
           "quote_hash": "34aa5a0d6f82ab1ebd30168179890330db815587ca53c88f62772cf1e5206499"
         },
         {
-          "source_id": "INV-fa00f95e4a5c36_xreal",
+          "source_id": "b37_pdvc_group",
+          "source_url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_qxgz/20240108/668c3f571f1e44faa79e370a58ccd4cb.html",
+          "source_title": "服务引领区产业发展，浦东创投集团正式挂牌运营_区国资",
+          "source_content_hash": "ebb849cbe3dcfef3369e68fe69f9bab9f28dd79213341645df86fec3e9f534ef",
+          "quote": "上海浦东创新投资发展（集团）有限公司",
+          "quote_hash": "9bcaac16eea5dac10ef49fa9e82e62c407d1e352fc8004cc5e1cc2bfec179820"
+        },
+        {
+          "source_id": "b37_pdvc_group_scope",
+          "source_url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_qxgz/20240108/668c3f571f1e44faa79e370a58ccd4cb.html",
+          "source_title": "服务引领区产业发展，浦东创投集团正式挂牌运营_区国资",
+          "source_content_hash": "ebb849cbe3dcfef3369e68fe69f9bab9f28dd79213341645df86fec3e9f534ef",
+          "quote": "引领区产业基金、科创母基金、天使基金",
+          "quote_hash": "1614230872574408bf0ebdae6971a69709f1d258a35d79ff073c8ce96b43da50"
+        },
+        {
+          "source_id": "b37_pdvc_xreal",
           "source_url": "https://www.shanghai.gov.cn/nw15343/20250903/464d71c6b8804d649aa883aa5eb1b9cb.html",
           "source_title": "持续发力智能眼镜赛道！浦东“硬科技成果”正深度嵌入全球产业链",
           "source_content_hash": "dd2e3b1775e586ff47410a540e610b374884b3aeecec674a3e091a52fda7494c",
@@ -210502,13 +210867,12 @@
         {
           "source_id": "FISRC-15bb852c20e5a293",
           "source_url": "https://roadtovr.com/google-android-xr-xreal-raises-100m-2026/",
-          "source_title": "Google&#039;s Leading AR Glasses Partner XREAL Raises $100M | Road to VR",
-          "source_content_hash": "f2d794fd8dfc11c21e5bfbc2a34ff9462b3dbd2286000dcb171702294ad45103",
+          "source_title": "Google&#8217;s Leading AR Glasses Partner XREAL Raises $100M",
+          "source_content_hash": "f7923ebcdcbac9ef",
           "quote": "Its second most recent funding round came in May 2025 when Xreal secured ¥200 million RMB (~$28.6 million USD), led by Pudong Venture Capital.",
           "quote_hash": "a1d625bb9b2f6e53aa2952d0e71a615ac176f6e15d8b391554ecda0d4d99b75a"
         }
-      ],
-      "coverage_note": "没有把 Shanghai Pudong Venture Capital Co., Ltd. 与“浦东创投集团”推定为同一法律出资主体。"
+      ]
     },
     "INV-bfdaaf946f0177": {
       "profile_type": "organization",
@@ -211446,31 +211810,65 @@
       "last_verified_at": "2026-09-28"
     },
     "INV-fad48ef331fa50": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "Schematic Ventures 是位于旧金山的早期风险投资基金，关注供应链、制造业和软件基础设施。其官网及 P-1 AI 官网均将 Schematic Ventures 列为 P-1 AI 投资方；The AI Insider 报道将其列入 P-1 AI 2300 万美元种子轮投资者名单。",
-      "coverage_note": "机构定位和 P-1 AI 投资关系由双方官网确认；种子轮融资金额及本轮参投名单来自 The AI Insider 报道，未披露 Schematic 单独投资金额。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Schematic Ventures官网称其为位于旧金山的早期风险投资基金，关注供应链、制造业和软件基础设施；官网公布合伙人Julian Counihan。P-1 AI官网的机构投资者名单及其种子轮融资报道均列有Schematic Ventures。",
+      "coverage_note": "投资主题、阶段、团队和P-1 AI投资披露以机构及项目官网为主；公开来源未披露Schematic在该轮的单独投资金额。",
+      "facts": [
+        {
+          "field": "fund_scope",
+          "label": "基金阶段与地点",
+          "value": "官网称Schematic Ventures是位于旧金山的早期风险投资基金。",
+          "source_id": "b37_schematic_official"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网公布的投资方向",
+          "value": "关注供应链、制造业和软件基础设施技术公司。",
+          "source_id": "b37_schematic_focus"
+        },
+        {
+          "field": "portfolio_evidence",
+          "label": "P-1 AI官方投资者名单",
+          "value": "P-1 AI官网将Schematic Ventures列为机构投资者。",
+          "source_id": "b37_schematic_p1"
+        },
+        {
+          "field": "team",
+          "label": "官网公布的团队信息",
+          "value": "官网将Julian Counihan列为General Partner。",
+          "source_id": "b37_schematic_team"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "机构定位和 P-1 AI 投资关系由双方官网确认；种子轮融资金额及本轮参投名单来自 The AI Insider 报道，未披露 Schematic 单独投资金额。",
       "track_record": [
         {
-          "description": "P-1 AI 官网将 Schematic Ventures 列入其机构投资者；The AI Insider 报道其参与了 P-1 AI 2300 万美元种子轮。",
-          "source_id": "schematic_p1_seed_round"
+          "description": "P-1 AI的种子轮融资报道将Schematic Ventures列为参与方；报道未披露其单独出资额。",
+          "source_id": "b37_schematic_round"
         },
         {
           "description": "融资来源记录：P-1 AI, Inc. · 种子轮 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "schematic_p1_seed_round"
+          "source_id": "FISRC-699e40f6a1ab35eb"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Schematic Ventures",
+          "url": "https://www.schematicventures.com/",
+          "source_id": "b37_schematic_official"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构官网公开早期阶段、地点、投资主题和合伙人信息；P-1 AI官网及融资报道支持一项种子轮投资记录。",
       "sources": [
         {
-          "source_id": "schematic_official_identity",
+          "source_id": "b37_schematic_official",
           "source_url": "https://www.schematicventures.com/",
           "source_title": "Schematic Ventures",
           "source_content_hash": "5ba31eee2aaf81d328ff3c9250100545281425b2cab8d988c4083351293c5518",
@@ -211478,7 +211876,23 @@
           "quote_hash": "2043e0b98b69b872867674242d77ef89c27117cd0bc3735f91fc1f011063cc31"
         },
         {
-          "source_id": "p1_official_investor_list",
+          "source_id": "b37_schematic_focus",
+          "source_url": "https://www.schematicventures.com/",
+          "source_title": "Schematic Ventures",
+          "source_content_hash": "5ba31eee2aaf81d328ff3c9250100545281425b2cab8d988c4083351293c5518",
+          "quote": "We invest in technology companies within supply chain, manufacturing, and software infrastructure.",
+          "quote_hash": "d7155520efba621d18277b4906eab77c16335449427057ba4182b6a74607502b"
+        },
+        {
+          "source_id": "b37_schematic_team",
+          "source_url": "https://www.schematicventures.com/",
+          "source_title": "Schematic Ventures",
+          "source_content_hash": "5ba31eee2aaf81d328ff3c9250100545281425b2cab8d988c4083351293c5518",
+          "quote": "Julian Counihan General Partner",
+          "quote_hash": "fc9bb1f6d8ff00722bc63e8d44e6584c305e0fdad68f04f3681fd920a6ee0874"
+        },
+        {
+          "source_id": "b37_schematic_p1",
           "source_url": "https://p-1.ai/",
           "source_title": "P-1 AI",
           "source_content_hash": "1bb0f491fc37200b522e062abe8ad8051d9bddfb844a6b59aa343b161ccfdb8b",
@@ -211486,10 +211900,10 @@
           "quote_hash": "3b257192f679719e941cc025f9a5ad88ee7c229a38951057af087c3bfa02fdfc"
         },
         {
-          "source_id": "schematic_p1_seed_round",
+          "source_id": "b37_schematic_round",
           "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
           "source_title": "P-1 AI Raises $23 Million in Seed Funding to Develop Engineering AGI &#039;Archie&#039;",
-          "source_content_hash": "e139a5f61979de51552b1f4e663668fb1611402dde765eae6b6dc4e567df2224",
+          "source_content_hash": "6a043438b68005de7859673579cf18f8b1fee7145a42b4191ce3477769b960fc",
           "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
           "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
         },
@@ -211501,8 +211915,7 @@
           "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
           "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-5e4b29c28e0c8e": {
       "profile_type": "unverified",

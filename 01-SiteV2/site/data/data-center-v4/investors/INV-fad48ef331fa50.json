@@ -121,31 +121,65 @@
       }
     ],
     "public_profile": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "Schematic Ventures 是位于旧金山的早期风险投资基金，关注供应链、制造业和软件基础设施。其官网及 P-1 AI 官网均将 Schematic Ventures 列为 P-1 AI 投资方；The AI Insider 报道将其列入 P-1 AI 2300 万美元种子轮投资者名单。",
-      "coverage_note": "机构定位和 P-1 AI 投资关系由双方官网确认；种子轮融资金额及本轮参投名单来自 The AI Insider 报道，未披露 Schematic 单独投资金额。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Schematic Ventures官网称其为位于旧金山的早期风险投资基金，关注供应链、制造业和软件基础设施；官网公布合伙人Julian Counihan。P-1 AI官网的机构投资者名单及其种子轮融资报道均列有Schematic Ventures。",
+      "coverage_note": "投资主题、阶段、团队和P-1 AI投资披露以机构及项目官网为主；公开来源未披露Schematic在该轮的单独投资金额。",
+      "facts": [
+        {
+          "field": "fund_scope",
+          "label": "基金阶段与地点",
+          "value": "官网称Schematic Ventures是位于旧金山的早期风险投资基金。",
+          "source_id": "b37_schematic_official"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网公布的投资方向",
+          "value": "关注供应链、制造业和软件基础设施技术公司。",
+          "source_id": "b37_schematic_focus"
+        },
+        {
+          "field": "portfolio_evidence",
+          "label": "P-1 AI官方投资者名单",
+          "value": "P-1 AI官网将Schematic Ventures列为机构投资者。",
+          "source_id": "b37_schematic_p1"
+        },
+        {
+          "field": "team",
+          "label": "官网公布的团队信息",
+          "value": "官网将Julian Counihan列为General Partner。",
+          "source_id": "b37_schematic_team"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "机构定位和 P-1 AI 投资关系由双方官网确认；种子轮融资金额及本轮参投名单来自 The AI Insider 报道，未披露 Schematic 单独投资金额。",
       "track_record": [
         {
-          "description": "P-1 AI 官网将 Schematic Ventures 列入其机构投资者；The AI Insider 报道其参与了 P-1 AI 2300 万美元种子轮。",
-          "source_id": "schematic_p1_seed_round"
+          "description": "P-1 AI的种子轮融资报道将Schematic Ventures列为参与方；报道未披露其单独出资额。",
+          "source_id": "b37_schematic_round"
         },
         {
           "description": "融资来源记录：P-1 AI, Inc. · 种子轮 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "schematic_p1_seed_round"
+          "source_id": "FISRC-699e40f6a1ab35eb"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Schematic Ventures",
+          "url": "https://www.schematicventures.com/",
+          "source_id": "b37_schematic_official"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构官网公开早期阶段、地点、投资主题和合伙人信息；P-1 AI官网及融资报道支持一项种子轮投资记录。",
       "sources": [
         {
-          "source_id": "schematic_official_identity",
+          "source_id": "b37_schematic_official",
           "source_url": "https://www.schematicventures.com/",
           "source_title": "Schematic Ventures",
           "source_content_hash": "5ba31eee2aaf81d328ff3c9250100545281425b2cab8d988c4083351293c5518",
@@ -153,7 +187,23 @@
           "quote_hash": "2043e0b98b69b872867674242d77ef89c27117cd0bc3735f91fc1f011063cc31"
         },
         {
-          "source_id": "p1_official_investor_list",
+          "source_id": "b37_schematic_focus",
+          "source_url": "https://www.schematicventures.com/",
+          "source_title": "Schematic Ventures",
+          "source_content_hash": "5ba31eee2aaf81d328ff3c9250100545281425b2cab8d988c4083351293c5518",
+          "quote": "We invest in technology companies within supply chain, manufacturing, and software infrastructure.",
+          "quote_hash": "d7155520efba621d18277b4906eab77c16335449427057ba4182b6a74607502b"
+        },
+        {
+          "source_id": "b37_schematic_team",
+          "source_url": "https://www.schematicventures.com/",
+          "source_title": "Schematic Ventures",
+          "source_content_hash": "5ba31eee2aaf81d328ff3c9250100545281425b2cab8d988c4083351293c5518",
+          "quote": "Julian Counihan General Partner",
+          "quote_hash": "fc9bb1f6d8ff00722bc63e8d44e6584c305e0fdad68f04f3681fd920a6ee0874"
+        },
+        {
+          "source_id": "b37_schematic_p1",
           "source_url": "https://p-1.ai/",
           "source_title": "P-1 AI",
           "source_content_hash": "1bb0f491fc37200b522e062abe8ad8051d9bddfb844a6b59aa343b161ccfdb8b",
@@ -161,10 +211,10 @@
           "quote_hash": "3b257192f679719e941cc025f9a5ad88ee7c229a38951057af087c3bfa02fdfc"
         },
         {
-          "source_id": "schematic_p1_seed_round",
+          "source_id": "b37_schematic_round",
           "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
           "source_title": "P-1 AI Raises $23 Million in Seed Funding to Develop Engineering AGI &#039;Archie&#039;",
-          "source_content_hash": "e139a5f61979de51552b1f4e663668fb1611402dde765eae6b6dc4e567df2224",
+          "source_content_hash": "6a043438b68005de7859673579cf18f8b1fee7145a42b4191ce3477769b960fc",
           "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
           "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
         },
@@ -176,8 +226,7 @@
           "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
           "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

@@ -139,42 +139,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录一项公开投资活动；来源未说明用于该交易的具体基金或法律实体。",
-      "summary": "Play Time HoldCo官网将Fish Audio列入其首页展示的公司清单；TechCrunch报道Play Time参与Fish Audio的5200万美元种子轮。本档案只记录这一公开投资活动，不推断基金或法律实体。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Play Time HoldCo官网将自身介绍为处于体育与技术交叉领域的公司，并在官网展示Fish Audio。Fish Audio的融资公告称Play Time参与其5200万美元种子轮。本档案仅记录官网展示和一项公开投资披露，不把官网展示清单扩写为完整基金组合或特定法律基金。",
+      "coverage_note": "Play Time官网没有在本次核验中披露明确的基金法律载体、投资团队或完整组合；投资关系按Fish Audio融资公告原称记录。",
+      "facts": [
+        {
+          "field": "organization_scope",
+          "label": "官网公开的业务表述",
+          "value": "Play Time HoldCo官网以体育与技术交叉领域为定位，并展示Fish Audio等公司。",
+          "source_id": "b37_playtime_site"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "TechCrunch报道Fish Audio于2026年7月完成5200万美元种子轮，Play Time列在参与方中。",
-          "source_id": "fish-audio-seed-playtime"
+          "description": "Fish Audio融资新闻稿称该公司宣布获得5200万美元种子轮融资，并将Play Time列为参与方之一；未披露Play Time单笔金额或投资载体。",
+          "source_id": "b37_playtime_round"
         },
         {
           "description": "融资来源记录：Fish Audio · 种子轮 · 2026-07-28 · 本轮参投 · $52 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e06e94375ec64ac4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Play Time HoldCo",
+          "url": "https://www.playtime.vc/",
+          "source_id": "b37_playtime_site"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅记录一项公开投资活动；来源未说明用于该交易的具体基金或法律实体。",
+      "experience_summary": "官网公开的HoldCo页面展示其体育与技术定位及Fish Audio；发行方新闻稿确认Play Time参与Fish Audio种子轮。",
       "sources": [
         {
-          "source_id": "playtime-holdco-site",
+          "source_id": "b37_playtime_site",
           "source_url": "https://www.playtime.vc/",
           "source_title": "Play Time HoldCo",
           "source_content_hash": "933368b604598a4794585d8c31cd319870b0d8c4bdf2e99effa29e33cc786adf",
-          "quote": "Fish Audio",
-          "quote_hash": "243024e3cf3f398c0703bed8bd4f1a6a6fb8f8b01d98868063a3ab8bc26f9d49"
+          "quote": "At the intersection of Sports & Technology FieldAI Autonomous brains for field robots Fish Audio Realistic AI Voice Maker",
+          "quote_hash": "18d18f7fd7c6d57e61619ddeb977e7253f052273ee7ba346b9c6e2c2bada791e"
         },
         {
-          "source_id": "fish-audio-seed-playtime",
-          "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/",
-          "source_title": "Fish Audio raises $52M seed to build AI voice models for creators and enterprises | TechCrunch",
-          "source_content_hash": "d21804e6e3ffd6390c366cb17140fa627ac27226298ffc159cb555d135507094",
-          "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners",
-          "quote_hash": "ba259d4e8e48716f76aa37ed16248f3d92414506617a0477397d5e947d746ef5"
+          "source_id": "b37_playtime_round",
+          "source_url": "https://www.prnewswire.com/news-releases/fish-audio-raises-52m-in-seed-funding-after-turning-passion-project-into-one-of-voice-ais-fastest-growing-companies-302836233.html",
+          "source_title": "Fish Audio Raises $52M in Seed Funding After Turning Passion Project Into One of Voice AI's Fastest-Growing Companies",
+          "source_content_hash": "bb224a4aa73a8ef37adc081a47e176440e527bc15faa81af4a12ace9c06f3443",
+          "quote": "today announced $52 million in seed funding led by Coreline Ventures and Capital Today , with participation from 359 Capital, Play Time, HF0, 645 Ventures, Parable",
+          "quote_hash": "c6c8d8236dca84fbe855a77079d7cf3ed428ad984983218ff51cdba694817dc5"
         },
         {
           "source_id": "FISRC-e06e94375ec64ac4",
@@ -184,8 +200,7 @@
           "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners, Bayhouse Ventures, Carya Venture Partners, and HF0.",
           "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "translations": {
       "zh-CN": {

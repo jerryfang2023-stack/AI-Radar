@@ -139,29 +139,115 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "“国方创投”按报道原始称呼保留，不映射到未被来源明确识别的基金或管理主体；新华网称近30亿美元，The Decoder 称截至文章发布时约20亿美元已募并可能增至约30亿美元，金额口径保留来源差异。",
-      "milestones": [],
-      "contacts": [],
-      "last_verified_at": "2026-10-03",
-      "coverage_status": "activity_only",
-      "summary": "新华网按快手公告称，“国方创投”列为可灵AI融资联合领投方之一，并将融资描述为近30亿美元；The Decoder 同日报道称已募约20亿美元，后续若有更多投资者加入总额可能达到约30亿美元。本档案不把不同进度口径合并为单一最终金额。",
-      "facts": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "上海国际集团资产管理有限公司的官方页面介绍其旗下上海国方私募基金管理公司（“国际国方”）：成立于2017年，聚焦半导体、数字智能和生物医药，并管理多支产业基金。新华网报道将“国方创投”列为快手可灵AI融资联合领投方之一。资料支持国方品牌和投资活动，但没有披露该轮对应的具体基金载体或国方单笔出资额。",
+      "coverage_note": "官网资料介绍的是“国际国方”管理机构与其管理基金；融资新闻使用“国方创投”称呼。未把品牌、管理人、基金产品和实际出资主体视为同一法律实体。",
+      "facts": [
         {
-          "description": "新华网2026年7月3日按快手公告报道，“国方创投”列入可灵AI融资联合领投名单；报道将融资描述为近30亿美元。",
-          "source_id": "INV-fabbf2aa686be1_xinhua"
+          "field": "organization_identity",
+          "label": "官方机构背景",
+          "value": "上海国际集团资管官网称上海国方私募基金管理公司是集团旗下科技产业投资机构，成立于2017年6月。",
+          "source_id": "b37_guofang_official"
         },
         {
-          "description": "The Decoder 同日报道称，Kuaishou 已为 Kling 募资约20亿美元，更多投资者加入后总额可能达到约30亿美元；报道亦将 Guofang Investment 列为联合领投方之一。",
+          "field": "investment_focus",
+          "label": "官网公布的产业关注",
+          "value": "长期聚焦半导体、数字智能和生物医药等科技产业。",
+          "source_id": "b37_guofang_focus"
+        },
+        {
+          "field": "managed_funds",
+          "label": "官网披露的管理职责",
+          "value": "官网称其代表集团管理上海市级产业基金；不据此认定基金管理公司就是基金的实际出资主体。",
+          "source_id": "b37_guofang_funds"
+        },
+        {
+          "field": "managed_funds",
+          "label": "官网披露的区域基金职责",
+          "value": "官网称其代表集团管理长三角产业基金一期和二期。",
+          "source_id": "b37_guofang_funds_delta"
+        },
+        {
+          "field": "scale_and_portfolio",
+          "label": "截至2025年末的官网统计",
+          "value": "官网披露累计管理规模超过330亿元、布局培育超过100家科技企业。",
+          "source_id": "b37_guofang_scale"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-06",
+          "description": "上海国际集团资管官网称上海国方私募基金管理公司成立于2017年6月。",
+          "source_id": "b37_guofang_official"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "新华网按快手公告报道将“国方创投”列为可灵AI融资的联合领投方之一；该报道未确认具体管理人或基金载体。",
+          "source_id": "b37_guofang_kling"
+        },
+        {
+          "description": "融资来源记录：Kling · IPO · 2026-07-03 · 本轮领投 · $2 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b382348e8f96c9b9"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "上级机构资管官网",
+          "value": "上海国际集团资产管理有限公司",
+          "url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_id": "b37_guofang_official"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "上海国际集团资管官网提供国方管理机构、产业方向、管理基金和规模等公开信息；新闻来源另以“国方创投”称呼可灵AI融资参与方，具体法律出资主体未披露。",
       "sources": [
         {
-          "source_id": "INV-fabbf2aa686be1_xinhua",
+          "source_id": "b37_guofang_official",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "上海国方私募基金管理公司（以下简称&ldquo;国际国方&rdquo;)成立于2017年6月，是上海国际集团旗下兼具市场广度与产业深度的科技产业投资机构。",
+          "quote_hash": "2ba3ed356c1faf64a6a660e7defb5df0a70d35e281296e987cba64d10fe8c9aa"
+        },
+        {
+          "source_id": "b37_guofang_focus",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "半导体、数字智能、生物医药",
+          "quote_hash": "051078ea781c706db964184e4928b318ae46c1b61a511a440ada2a263321c5d4"
+        },
+        {
+          "source_id": "b37_guofang_funds",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "代表集团管理了上海市级基金",
+          "quote_hash": "dd33bc644d08947549f0727f9bcba0665eb8a862133fa2022e3e2b87e2690eac"
+        },
+        {
+          "source_id": "b37_guofang_funds_delta",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "长三角产业基金（一期、二期）",
+          "quote_hash": "0bbb080eba9775e5bf1369c6bc2f7001484957ce9d24ecbf922a80d677c8a512"
+        },
+        {
+          "source_id": "b37_guofang_scale",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "截至2025年末，国际国方累计管理规模超330亿元，共布局培育了超过100家拥有国际竞争力、产业引领力、市场影响力的优质科技企业",
+          "quote_hash": "d9b65068f73e235730f6b17e39c3f5dd5c98284650e544a0846a53caccdd6d9e"
+        },
+        {
+          "source_id": "b37_guofang_kling",
           "source_url": "https://www3.xinhuanet.com/digital/20260703/bc3f78f1564842758c0cb82e9e4e8aa5/c.html",
           "source_title": "快手旗下可灵AI落地近30亿美元融资，最新估值180亿美元-新华网",
           "source_content_hash": "a39ca2e0ecf2fc34a32dc95b6acf7d17945cd9efa2ab74152ed314eded3d0952",
@@ -171,13 +257,12 @@
         {
           "source_id": "FISRC-b382348e8f96c9b9",
           "source_url": "https://the-decoder.com/chinese-ai-video-maker-kling-raises-2-billion-as-it-gears-up-for-hong-kong-ipo",
-          "source_title": "Chinese AI video maker Kling raises $2 billion as it gears up for Hong Kong IPO",
-          "source_content_hash": "4cd436ebc88405edcb109d7b99c143ffc16c4e516babe208d8cde58619e37c4e",
-          "quote": "Kuaishou has raised about $2 billion from investors for its AI video division, Kling.",
-          "quote_hash": "5ff0c5881540740f5d7daa067c885ea1deae5a13c2d01335fa606b87c01a55d0"
+          "source_title": "中国AI视频制作公司Kling融资20亿美元，筹备香港IPO",
+          "source_content_hash": "eaca9d6201e4bb0267d7539d62f2d3665bd9900744effbb50a77b2a01dd19057",
+          "quote": "CPE, Guofang Investment, BlueFive, Tencent, and Citic Securities are leading the round.",
+          "quote_hash": "5888e5985b14641653ee65e4d3420c693c8d354d4bf2fc626e1bc2d956da8148"
         }
-      ],
-      "coverage_note": "“国方创投”按报道原始称呼保留，不映射到未被来源明确识别的基金或管理主体；新华网称近30亿美元，The Decoder 称截至文章发布时约20亿美元已募并可能增至约30亿美元，金额口径保留来源差异。"
+      ]
     }
   }
 }
