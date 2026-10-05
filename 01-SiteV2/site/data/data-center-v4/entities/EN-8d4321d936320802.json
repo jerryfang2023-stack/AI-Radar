@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-04",
-    "currentDate": "2026-10-04",
-    "eventCount": 3921,
+    "latestDataDate": "2026-10-05",
+    "currentDate": "2026-10-05",
+    "eventCount": 3934,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -447,7 +447,7 @@
       "EN-171fa23d27b5894b"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-10-04",
+    "lastSeen": "2026-10-05",
     "relationIds": [
       "REL2-4d903d795699d1b0",
       "REL2-ee25fecc7314abd4",
@@ -492,8 +492,8 @@
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-3a4ba26375b45669",
-        "EV-7f10b7d013a91292",
         "EV-471bf7c00cc06c85",
+        "EV-7f10b7d013a91292",
         "EV-a3de7b1a00fbf8a9",
         "EV-39247400114d59dd",
         "EV-72c91001092a54bd",
@@ -804,7 +804,7 @@
     "timeline": [
       {
         "id": "EV-3a4ba26375b45669",
-        "dataDate": "2026-10-04",
+        "dataDate": "2026-10-05",
         "date": "2026-10-02",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -820,6 +820,56 @@
           "EN-80d387ccb3289295",
           "EN-c70eca6b0f88f44d",
           "EN-6fcba5d96a4fadfd"
+        ]
+      },
+      {
+        "id": "EV-471bf7c00cc06c85",
+        "dataDate": "2026-10-05",
+        "date": "2026-09-29",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AMD 收购 World Labs AI 初创公司，加大对 Nvidia 的竞争压力",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-240389f4b730bad4",
+          "EN-8d4321d936320802"
         ]
       },
       {
@@ -873,56 +923,6 @@
           "EN-8d4321d936320802",
           "EN-99d3fd0fa8fe115e",
           "EN-def8af4b884c8e3a"
-        ]
-      },
-      {
-        "id": "EV-471bf7c00cc06c85",
-        "dataDate": "2026-10-04",
-        "date": "2026-09-29",
-        "eventType": "acquisition",
-        "eventTypeLabel": "并购",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "AMD 收购 World Labs AI 初创公司，加大对 Nvidia 的竞争压力",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "content_creation",
-            "name": "内容创作",
-            "entityIds": [
-              "EN-240389f4b730bad4"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [
-              "EN-240389f4b730bad4"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "embodied_ai",
-            "name": "具身智能",
-            "entityIds": [
-              "EN-240389f4b730bad4"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-240389f4b730bad4",
-          "EN-8d4321d936320802"
         ]
       },
       {
@@ -12424,7 +12424,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
@@ -13320,7 +13320,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-9bc22dcabf7f45b3",
@@ -13899,7 +13899,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-7dfafb44ee67bcd8",
@@ -14439,15 +14439,15 @@
       "object_type": "entity",
       "event_id": "EV-471bf7c00cc06c85",
       "claim_refs": [
-        "CL-acb2e4fe2aaf17e3",
-        "CL-7faf80284a837ae8",
-        "CL-37d54a8683bd5543",
-        "CL-95159cd2b22ed580"
+        "CL-f3500f968dd647b9",
+        "CL-3e7e509ca2b1d9ee",
+        "CL-bec86532a6d58a7f",
+        "CL-383a8faa688a7250"
       ],
       "source_refs": [
-        "SA-dfa2ddf0c3764696"
+        "SA-f76cd10f53c836a2"
       ],
-      "data_date": "2026-10-04",
+      "data_date": "2026-10-05",
       "status": "verified"
     },
     {
@@ -17540,7 +17540,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-target_user-developer",
@@ -18058,7 +18058,7 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -18079,6 +18079,7 @@
         "EV-f30a987e608c70ae",
         "EV-4c9c7ab2dded69b3",
         "EV-5bf410afc8aa8178",
+        "EV-a2c87acb12608019",
         "EV-bccd915b61c48911",
         "EV-35fa913e4709b4d6",
         "EV-3d0b9dcdf8daec4c",
@@ -18341,6 +18342,7 @@
         "EV-0990ee74c4bc9c1a",
         "EV-4a5240dedde301e6",
         "EV-06c2f2803729eae2",
+        "EV-4bc2b0f8a1ca9e66",
         "EV-b8eb460540c33d68",
         "EV-0d5a32aca724d30e",
         "EV-1873f3c6fa4bdedd",
@@ -18934,6 +18936,7 @@
         "EN-19e41212c0556603",
         "EN-6f7ac1823da81d2e",
         "EN-5e668f42eb6cf15d",
+        "EN-0705e4d613d04407",
         "EN-f9768e4769ec9d14",
         "EN-0ed9e4984f0e77cf",
         "EN-c70eca6b0f88f44d",
@@ -19321,6 +19324,7 @@
       "eventIds": [
         "EV-a3de7b1a00fbf8a9",
         "EV-7f10b7d013a91292",
+        "EV-e8f58ed488159c88",
         "EV-0f2e50fbc9af587a",
         "EV-3ca24f79062a359e",
         "EV-b9be18b12b1714f3",
@@ -19463,6 +19467,7 @@
       "entityIds": [
         "EN-0d0dd4bc07420a2c",
         "EN-6aa1fcea0024c6ce",
+        "EN-244595c58aaec73d",
         "EN-73c2f5aa8e632c19",
         "EN-92d14efa2f3f44b1",
         "EN-33d5a47fc56e4ba1",
@@ -19609,7 +19614,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -19621,6 +19626,7 @@
         "EV-1c7050585c7f4791",
         "EV-2aa827a397a551d1",
         "EV-5172f90d555f2781",
+        "EV-a2c87acb12608019",
         "EV-4238c51fcdad7bd4",
         "EV-b137470f59491f6a",
         "EV-3fdc9ad98818c36b",
@@ -19742,6 +19748,7 @@
       "entityIds": [
         "EN-f8223ea5a9c41813",
         "EN-61848d026f2be26a",
+        "EN-324a65940c9148ba",
         "EN-4149d125ad47155a",
         "EN-619245256126c075",
         "EN-d5857f6222f45275",
@@ -19819,7 +19826,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-29",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -20230,7 +20237,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-use_case-physical_automation",
@@ -20671,7 +20678,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -21114,7 +21121,7 @@
         "HW-ef547aa78d8d0ade"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-industry-financial_services",
@@ -21348,7 +21355,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-industry-legal_services",
@@ -21906,7 +21913,7 @@
         "HW-5aa85a1a004480c8"
       ],
       "firstSeen": "2026-01-22",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-industry-automotive_transportation",
@@ -22052,7 +22059,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -22302,7 +22309,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -22577,7 +22584,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-industry-energy_utilities",
@@ -24470,6 +24477,7 @@
         "EV-1dc482e2fe2f10bc",
         "EV-7bc2e6744a92c81f",
         "EV-5d50eb202b478bd4",
+        "EV-e51e65d60541df1b",
         "EV-09029303144c5e67",
         "EV-a67071a8550cb1be"
       ],
@@ -24499,6 +24507,7 @@
         "EN-adb4b0aa1de289f9",
         "EN-d7e81f6e7d39f00f",
         "EN-98502f8f7e5e64cd",
+        "EN-1f3ae135eaa964e0",
         "EN-070c562765b9ff05",
         "EN-a89a94ff38d4dc95"
       ],
@@ -24522,7 +24531,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-03-11",
-      "lastSeen": "2026-10-02"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "TX-ai_market_application-computing_infrastructure",

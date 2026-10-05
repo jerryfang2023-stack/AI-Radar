@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-04",
-    "currentDate": "2026-10-04",
-    "eventCount": 3921,
+    "latestDataDate": "2026-10-05",
+    "currentDate": "2026-10-05",
+    "eventCount": 3934,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -76,12 +76,12 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-01-14",
-    "lastSeen": "2026-10-04",
+    "lastSeen": "2026-10-05",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-55581be112058bd5",
         "EV-bbea3352983c2033",
+        "EV-55581be112058bd5",
         "EV-39247400114d59dd",
         "EV-224077c33b02562c",
         "EV-545bef6ff60cf3b2",
@@ -98,43 +98,8 @@
     },
     "timeline": [
       {
-        "id": "EV-55581be112058bd5",
-        "dataDate": "2026-10-04",
-        "date": "2026-09-30",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "hr_workforce",
-            "name": "人力与员工体验",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "construction_real_estate",
-            "name": "建筑与房地产",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-1a2290470e0aa754",
-          "EN-e3baa3a2daee23ae"
-        ]
-      },
-      {
         "id": "EV-bbea3352983c2033",
-        "dataDate": "2026-10-04",
+        "dataDate": "2026-10-05",
         "date": "2026-09-28",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -169,6 +134,41 @@
         "entityIds": [
           "EN-1a2290470e0aa754",
           "EN-f395aeb2c6e6abc8"
+        ]
+      },
+      {
+        "id": "EV-55581be112058bd5",
+        "dataDate": "2026-10-04",
+        "date": "2026-09-30",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "hr_workforce",
+            "name": "人力与员工体验",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "construction_real_estate",
+            "name": "建筑与房地产",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-e3baa3a2daee23ae"
         ]
       },
       {

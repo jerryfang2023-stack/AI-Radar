@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-04",
-    "currentDate": "2026-10-04",
-    "eventCount": 3921,
+    "latestDataDate": "2026-10-05",
+    "currentDate": "2026-10-05",
+    "eventCount": 3934,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,7 +63,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-1715439efc5423dd"
+      "EV-1715439efc5423dd",
+      "EV-7fb563f47cc29d8d"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -71,10 +72,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-30",
-    "lastSeen": "2026-10-02",
+    "lastSeen": "2026-10-05",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-7fb563f47cc29d8d",
         "EV-1715439efc5423dd"
       ],
       "deployments": [],
@@ -85,6 +87,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-7fb563f47cc29d8d",
+        "dataDate": "2026-10-05",
+        "date": "2026-09-30",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Kanu AI 结束隐身模式，获 1170 万美元，将员工工作流转化为定制软件",
+        "displayTags": [],
+        "entityIds": [
+          "EN-25ff672b5040766d",
+          "EN-02d6646fb8486fbd"
+        ]
+      },
       {
         "id": "EV-1715439efc5423dd",
         "dataDate": "2026-10-02",
@@ -350,7 +368,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     }
   ],
   "fde": [],
