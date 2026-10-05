@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "建信股权 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "来源为建设银行集团页面；页面路径显示于2021年发布，档案仅采用该页明确披露的主体关系和业务范围。",
+      "summary": "建设银行官网将建信股权投资管理有限责任公司介绍为建行旗下从事私募股权投资的专业子公司，由总行直接管理，并管理战新基金及其他私募股权基金。",
+      "facts": [
+        {
+          "field": "parent_group",
+          "label": "所属集团",
+          "value": "中国建设银行；官网称由总行直接管理",
+          "source_id": "ccb_equity"
+        },
+        {
+          "field": "business",
+          "label": "业务范围",
+          "value": "私募股权投资及战新基金、其他私募股权基金管理",
+          "source_id": "ccb_equity"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +163,24 @@
           "source_id": "FISRC-c87caae716bd4910"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://group3.ccb.com/cn/group/include/20211120_1637414771.html",
+          "url": "https://group3.ccb.com/cn/group/include/20211120_1637414771.html",
+          "source_id": "ccb_equity"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ccb_equity",
+          "source_url": "https://group3.ccb.com/cn/group/include/20211120_1637414771.html",
+          "source_title": "建信股权投资管理有限责任公司",
+          "source_content_hash": "cff441198d1f5b0bbc346f2fc103a7b4240f3f20dc24c45c0933cffde3fb879c",
+          "quote": "建信股权投资管理有限责任公司（以下简称“建信股权”）是建设银行旗下从事私募股权投资业务的专业子公司，作为建行集团的股权投资平台和投贷联动纽带，由中国建设银行总行直接管理，主要致力于国家级战略性新兴产业发展基金（以下简称“战新基金”）及其他私募股权基金的管理。",
+          "quote_hash": "8356c184d502c2dfb2d75a68a7c842c59ac63b9885716b9d481f27973b95aec8"
+        },
         {
           "source_id": "FISRC-c87caae716bd4910",
           "source_url": "https://eu.36kr.com/zh/p/3957213787995526",
@@ -161,7 +190,7 @@
           "quote_hash": "784124b958d355b23a2688faf990360342614b16d09b4a44fed885e21f866625"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

@@ -232,12 +232,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "庚辛资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份、策略和服务类型均按公司官网自述；FA顾问与自有资金投资需逐笔区分，不把顾问服务直接描述为投资。",
+      "summary": "庚辛资本（Glacier Capital）官网称其创立于2018年，聚焦Physical AI与前沿硬科技；业务包括财务顾问服务，并以自有资金投资部分深度服务过的公司。官网提醒，单笔交易角色须以该笔交易披露为准。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2018年",
+          "source_id": "glacier_identity"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注方向",
+          "value": "Physical AI与前沿硬科技",
+          "source_id": "glacier_identity"
+        },
+        {
+          "field": "services_and_investment",
+          "label": "业务范围",
+          "value": "为科技企业提供财务顾问服务，并以自有资金投资部分深度服务过的公司",
+          "source_id": "glacier_business"
+        },
+        {
+          "field": "transaction_role_caveat",
+          "label": "交易角色说明",
+          "value": "公司官网要求逐笔区分财务顾问与自有资金投资角色，以该笔交易公开报道为准",
+          "source_id": "glacier_role_note"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -253,8 +278,40 @@
           "source_id": "FISRC-b8b7d456eceee943"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://glacierchina.com/about",
+          "url": "https://glacierchina.com/about",
+          "source_id": "glacier_identity"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "glacier_identity",
+          "source_url": "https://glacierchina.com/about",
+          "source_title": "公司介绍｜庚辛资本 Glacier Capital 官网 glacier.mba",
+          "source_content_hash": "1de156aaacca17be476fbf3d2a2b0d0e3465cd45338cef8d6ae6c6ac7b0d2727",
+          "quote": "庚辛资本（英文品牌名 Glacier Capital ）创立于 2018 年，是一家聚焦 Physical AI 与前沿硬科技的精品投行与产业资本机构",
+          "quote_hash": "b294402fb007bc86db753100294d40c45b8df4f04d4806e2abe4344ac6e5b395"
+        },
+        {
+          "source_id": "glacier_business",
+          "source_url": "https://glacierchina.com/about",
+          "source_title": "公司介绍｜庚辛资本 Glacier Capital 官网 glacier.mba",
+          "source_content_hash": "1de156aaacca17be476fbf3d2a2b0d0e3465cd45338cef8d6ae6c6ac7b0d2727",
+          "quote": "业务分两块： 财务顾问（FA） ：为科技企业提供长期独家或战略财务顾问服务，包括资本战略、融资执行、复杂交易设计、产业协同与长期价值建设； 自有资金投资（Skin in the game） ：以自有资金投资自己深度服务过的公司。",
+          "quote_hash": "5f17505994f8aaf82927e55da61e279438c184a665ee41fb6705c0ae55678ada"
+        },
+        {
+          "source_id": "glacier_role_note",
+          "source_url": "https://glacierchina.com/about",
+          "source_title": "公司介绍｜庚辛资本 Glacier Capital 官网 glacier.mba",
+          "source_content_hash": "1de156aaacca17be476fbf3d2a2b0d0e3465cd45338cef8d6ae6c6ac7b0d2727",
+          "quote": "角色需逐笔区分：多数项目中担任财务顾问；部分项目同时以自有资金跟投；也有少数项目仅为投资方、并不担任财务顾问。引用具体案例时，请以该笔交易公开报道所写的角色为准。",
+          "quote_hash": "93f3ec1dba04521f91688678b6b74bbb18451a9bb3397501575e1a84d0596b15"
+        },
         {
           "source_id": "FISRC-d45f7a4d8fd76b88",
           "source_url": "https://www.sohu.com/a/1044130792_120109837",
@@ -280,7 +337,7 @@
           "quote_hash": "2a4211059643fbc9e0b2bd8196d125cfc74e96aa1738bf9dd6392dac770a147f"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

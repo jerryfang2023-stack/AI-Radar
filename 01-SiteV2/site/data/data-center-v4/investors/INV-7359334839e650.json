@@ -140,33 +140,63 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "投资界关于星动纪元融资的报道将弘毅投资列为跟投方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "业务板块和成立年份据弘毅投资官网自述；不把官网所列管理资金总规模作为当前数据发布。",
+      "summary": "弘毅投资官网介绍其成立于2003年，是中国投资管理集团，业务覆盖私募股权、对冲基金、公募基金和实业投资。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2003年",
+          "source_id": "hony_about"
+        },
+        {
+          "field": "business_lines",
+          "label": "业务板块",
+          "value": [
+            "私募股权投资",
+            "对冲基金",
+            "公募基金",
+            "实业投资"
+          ],
+          "source_id": "hony_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "星动纪元融资报道将弘毅投资列为跟投方。",
+          "description": "融资来源记录：星动纪元 · 轮次未披露 · 2026-07-06 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8c073d38e1f34758"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.honycapital.com/aboutus/index.aspx?nodeid=3",
+          "url": "https://www.honycapital.com/aboutus/index.aspx?nodeid=3",
+          "source_id": "hony_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hony_about",
+          "source_url": "https://www.honycapital.com/aboutus/index.aspx?nodeid=3",
+          "source_title": "了解弘毅 - 中文网站",
+          "source_content_hash": "24d61fd3fd0c5f3bda8f52e4cdc64137ad6ac7b98376d27f63f9d090aef1cd05",
+          "quote": "弘毅投资成立于 2003 年，是中国领先的投资管理集团，以 “ 智汇资本，创造价值 ” 为使命，拥有私募股权投资（天使、 VC 、 PE 、不动产投资）、对冲基金（金涌投资）、公募基金（弘毅远方基金）、实业投资（百福控股、弘和仁爱）等业务板块。",
+          "quote_hash": "5d567af3d2be0496fd2a2baf64bdeb079bec808971e117bc97277a36bf440f94"
+        },
         {
           "source_id": "FISRC-8c073d38e1f34758",
           "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-          "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场_投资界",
-          "source_content_hash": "947b6977b7321ae4e42fd4808c6b95d8e0bfcf4cc9e390ec918986335e6072ee",
-          "quote": "神之战—— 投资界获悉，今天（7月6日），星动纪元完成新一轮10亿元融资。本轮投资方由国务院国资委国有资本运营公司诚通基金领投，江西国控、国元股权、渝富中新基金、杭州资本等多家大型国资共同参与。此外，中金雷诺、九坤创投、弘毅投资、君泰资本、盛赫资本跟投；老股东厚雪资本、清控天诚、千山资本持续追加投资。 至此，星动纪元在两个月内密集融资25亿，构建起「国家级资本引领+顶 级财务赋能+产业生态协同」的三重资本矩阵，其中齐聚了行业最多产业资本注资，合计超20家。 在过往与投资人的交流中，星动纪元留给我们深刻印象：清华大学唯 一持股的具身公司，最早一批提出世界模型的具身公司，成立三年却已在物流场景已实现规模化交付。中国具身江湖门派林立，星动纪元悄然突围。 清华嫡系机器人 两个月融",
-          "quote_hash": "30ac19da28cf986beb16918697de81bd1b83d1c974a8ba79e4e58ef054a7cb34"
+          "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+          "source_content_hash": "38b0d26a979c4a8e",
+          "quote": "此外，中金雷诺、九坤创投、弘毅投资、君泰资本、盛赫资本跟投；老股东厚雪资本、清控天诚、千山资本持续追加投资。",
+          "quote_hash": "876e4f6e63198dd0f0fb9780f776e83c156cc3ad4dcb7441400840f3689cfea2"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

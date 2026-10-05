@@ -241,12 +241,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中车资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "身份关系、注册资本及经营范围仅按2016年中国中车公告记录；本档案不据该历史公告推断当前股权或经营状态。",
+      "summary": "中国中车2016年招聘公告称，中车资本控股有限公司当时为中国中车集团在北京设立的全资一级子公司，经营范围包括项目投资、投资管理、股权投资、资产管理和投资咨询。",
+      "facts": [
+        {
+          "field": "parent_group_2016",
+          "label": "历史所属关系",
+          "value": "中国中车集团在北京设立的全资一级子公司（2016年公告口径）",
+          "source_id": "crrc_2016_notice"
+        },
+        {
+          "field": "registered_capital_2016",
+          "label": "注册资本",
+          "value": "人民币20亿元（2016年公告口径）",
+          "source_id": "crrc_2016_notice"
+        },
+        {
+          "field": "business_2016",
+          "label": "经营范围",
+          "value": "项目投资、投资管理、股权投资、资产管理、投资咨询等（2016年公告口径）",
+          "source_id": "crrc_2016_notice"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -264,6 +283,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "crrc_2016_notice",
+          "source_url": "https://www.crrcgc.cc/crrcgc/2016-02/29/article_D49259C873044BFD9BB56F89B33D4235.html",
+          "source_title": "中国中车股份有限公司-中车资本控股有限公司招聘公告",
+          "source_content_hash": "21173e78763353a0519818bdfbbeff9d27122de16d6720db0653f254579d9708",
+          "quote": "中车资本控股有限公司是中国中车集团公司在北京设立的全资一级子公司，注册资本人民币20亿元。主要经营范围：项目投资、投资管理、股权投资、资产管理、投资咨询等。",
+          "quote_hash": "21173e78763353a0519818bdfbbeff9d27122de16d6720db0653f254579d9708"
+        },
         {
           "source_id": "FISRC-1ccc6923f9f7ac18",
           "source_url": "https://news.pedaily.cn/202609/568582.shtml",
@@ -289,7 +316,7 @@
           "quote_hash": "b7bfc4b1670290ef7843f08b9b77bb137831c80b06e105818fc5e8434c25b2da"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

@@ -27889,36 +27889,55 @@
     "INV-3425fcb8d7e5af": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本条仅记录可核验的公开参投披露，不推断机构未披露的策略、完整投资组合或回报。",
-      "summary": "Eridu 官方融资公告将 Capricorn Investment Group 列入其 Series A 领投方。当前档案仅记录这笔可核验的公开参投信息，不补写未取得原文支持的机构策略或完整组合。",
+      "coverage_status": "researched",
+      "coverage_note": "简介与服务范围依据机构官网自述，不延伸推断其投资组合或当前资产规模。",
+      "summary": "Capricorn Investment Group 自述为可持续投资平台，服务家庭、基金会和机构投资者，并提供 OCIO 服务及部分影响力投资产品。",
       "facts": [
         {
-          "field": "track_record_scope",
-          "label": "公开投资披露",
-          "value": "Eridu 官方公告将 Capricorn Investment Group 列入其 Series A 领投方。",
-          "source_id": "eridu"
+          "field": "platform_type",
+          "label": "平台定位",
+          "value": "可持续投资平台",
+          "source_id": "capricorn_about"
+        },
+        {
+          "field": "clients",
+          "label": "服务对象",
+          "value": [
+            "家庭",
+            "基金会",
+            "机构投资者"
+          ],
+          "source_id": "capricorn_about"
+        },
+        {
+          "field": "services",
+          "label": "服务与产品",
+          "value": "全服务外包首席投资官（OCIO）及部分影响力投资产品",
+          "source_id": "capricorn_about"
         }
       ],
       "milestones": [],
-      "track_record": [
+      "track_record": [],
+      "contacts": [
         {
-          "description": "Eridu 官方公告将 Capricorn Investment Group 列入 Series A 领投方。",
-          "source_id": "eridu"
+          "kind": "website",
+          "label": "官网",
+          "value": "https://capricornllc.com/about/",
+          "url": "https://capricornllc.com/about/",
+          "source_id": "capricorn_about"
         }
       ],
-      "contacts": [],
       "sources": [
         {
-          "source_id": "eridu",
-          "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
-          "source_title": "Eridu Emerges from Stealth with Over $200M in Funding To Break Through the Network Wall and Unlock Faster AI &#8211; Eridu &#8211; Faster AI",
-          "source_content_hash": "202be508dc6ef6408937696d2a107814ef1ee486ab6bb150fcf28a5bcc3210ea",
-          "quote": "Series A round led by Socratic Partners, John Doerr, Hudson River Trading, Capricorn Investment Group and Matter Venture Partners, with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others. “The disruptive demands of AI create a",
-          "quote_hash": "fd04ce31f204558f205281f86ed3063aa453654b7c86baa9987a412a892eadbe"
+          "source_id": "capricorn_about",
+          "source_url": "https://capricornllc.com/about/",
+          "source_title": "About Capricorn Investment Group",
+          "source_content_hash": "364a952e48cfdfa3e5d2acbf6c5b644ddbe82680d785ad6bc8fc8a52f2f2faa0",
+          "quote": "Capricorn is a sustainable investment platform serving families, foundations, and institutional investors for 25 years as a full-service Outsourced Chief Investment Officer and through select impact investment products.",
+          "quote_hash": "2b6dfb17f269c311c717a390df50cf350ab4ff83b3fbbca39914527930df73a4"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     },
     "INV-343ffdb4dcaafa": {
       "profile_type": "organization",
@@ -65700,33 +65719,50 @@
     "INV-7359334839e650": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "投资界关于星动纪元融资的报道将弘毅投资列为跟投方。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "业务板块和成立年份据弘毅投资官网自述；不把官网所列管理资金总规模作为当前数据发布。",
+      "summary": "弘毅投资官网介绍其成立于2003年，是中国投资管理集团，业务覆盖私募股权、对冲基金、公募基金和实业投资。",
+      "facts": [
         {
-          "description": "星动纪元融资报道将弘毅投资列为跟投方。",
-          "source_id": "FISRC-8c073d38e1f34758"
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2003年",
+          "source_id": "hony_about"
+        },
+        {
+          "field": "business_lines",
+          "label": "业务板块",
+          "value": [
+            "私募股权投资",
+            "对冲基金",
+            "公募基金",
+            "实业投资"
+          ],
+          "source_id": "hony_about"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.honycapital.com/aboutus/index.aspx?nodeid=3",
+          "url": "https://www.honycapital.com/aboutus/index.aspx?nodeid=3",
+          "source_id": "hony_about"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-8c073d38e1f34758",
-          "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-          "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场_投资界",
-          "source_content_hash": "947b6977b7321ae4e42fd4808c6b95d8e0bfcf4cc9e390ec918986335e6072ee",
-          "quote": "神之战—— 投资界获悉，今天（7月6日），星动纪元完成新一轮10亿元融资。本轮投资方由国务院国资委国有资本运营公司诚通基金领投，江西国控、国元股权、渝富中新基金、杭州资本等多家大型国资共同参与。此外，中金雷诺、九坤创投、弘毅投资、君泰资本、盛赫资本跟投；老股东厚雪资本、清控天诚、千山资本持续追加投资。 至此，星动纪元在两个月内密集融资25亿，构建起「国家级资本引领+顶 级财务赋能+产业生态协同」的三重资本矩阵，其中齐聚了行业最多产业资本注资，合计超20家。 在过往与投资人的交流中，星动纪元留给我们深刻印象：清华大学唯 一持股的具身公司，最早一批提出世界模型的具身公司，成立三年却已在物流场景已实现规模化交付。中国具身江湖门派林立，星动纪元悄然突围。 清华嫡系机器人 两个月融",
-          "quote_hash": "30ac19da28cf986beb16918697de81bd1b83d1c974a8ba79e4e58ef054a7cb34"
+          "source_id": "hony_about",
+          "source_url": "https://www.honycapital.com/aboutus/index.aspx?nodeid=3",
+          "source_title": "了解弘毅 - 中文网站",
+          "source_content_hash": "24d61fd3fd0c5f3bda8f52e4cdc64137ad6ac7b98376d27f63f9d090aef1cd05",
+          "quote": "弘毅投资成立于 2003 年，是中国领先的投资管理集团，以 “ 智汇资本，创造价值 ” 为使命，拥有私募股权投资（天使、 VC 、 PE 、不动产投资）、对冲基金（金涌投资）、公募基金（弘毅远方基金）、实业投资（百福控股、弘和仁爱）等业务板块。",
+          "quote_hash": "5d567af3d2be0496fd2a2baf64bdeb079bec808971e117bc97277a36bf440f94"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     },
     "INV-7368d2d7ac5730": {
       "profile_type": "organization",
@@ -106758,33 +106794,39 @@
     "INV-b04e9f96f2b3b2": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "公开融资报道列出其参与光子芯片公司 Olix 的融资。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "简介依据 Hudson River Trading 官方 Ventures 页面；这里只记录该页面明确披露的投资方向。",
+      "summary": "Hudson River Trading 的官方 Ventures 页面说明，其投资团队面向金融与科技领域中解决独特问题的成长型公司进行战略投资。",
+      "facts": [
         {
-          "description": "参与 Olix Computing 融资。",
-          "source_id": "FISRC-a6c18c7d2adec363"
+          "field": "investment_focus",
+          "label": "投资重点",
+          "value": "金融与科技领域的成长型公司",
+          "source_id": "hrt_ventures"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.hudsonrivertrading.com/ventures/",
+          "url": "https://www.hudsonrivertrading.com/ventures/",
+          "source_id": "hrt_ventures"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-a6c18c7d2adec363",
-          "source_url": "https://www.techtimes.com/articles/322816/20260803/olix-raises-312m-photonic-ai-chip-that-ditches-hbm-britains-biggest-semiconductor-bet.htm",
-          "source_title": "Olix Raises $312M for Photonic AI Chip That Ditches HBM: Britain's Biggest Semiconductor Bet",
-          "source_content_hash": "cfce99b37aac7c782c29b7069a31538c9a88c765020ef8bc270050a0a8894e63",
-          "quote": "t instead of copper is the way to fix it. The round was led by New York venture firm Fundomo and drew in Arm, Hudson River Trading, and Netflix co-founder Reed Hastings alongside the UK government's Sovereign AI Fund. Existing backers &mdash; Hummingbird Ventures, Crane, Plural, Creandum, Phoenix Court, and Transition &mdash; all expanded their positions. Al",
-          "quote_hash": "1cd24c2989d39a641d7fe580c6a6c0a017759ae4b5b89cd9a47678bdf201986e"
+          "source_id": "hrt_ventures",
+          "source_url": "https://www.hudsonrivertrading.com/ventures/",
+          "source_title": "Ventures | Hudson River Trading",
+          "source_content_hash": "218a73935cf2285e9c3dfedc8a15dabc6e5e622a296054b66ac7cb073bc56d0a",
+          "quote": "HRT Ventures is focused on making strategic investments in growth companies solving unique problems across the financial and technology landscapes.",
+          "quote_hash": "fcc12805a5db80ec3c7936ce8b1d553d157478a2e79d53ce2940608a068cad3f"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     },
     "INV-b05c4c29f2469c": {
       "summary": "五源资本（5Y Capital）官网将其定位为支持创业者的投资机构，并展示携程、小米、快手、微医、金山办公、地平线、小鹏汽车、小马智行等历史投资/陪伴案例；页面按“开始”年份标注相应企业与轮次，属于官网展示的品牌历史，不代表完整投资组合或基金回报。官网公开其在上海、北京、深圳和香港设有办公室；本次未找到可直接引用的公开募资/项目投递专用邮箱。",
@@ -166034,6 +166076,736 @@
           "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
           "quote": "Samsung Electronics to invest USD 500 million; five other affiliates investing the remainder",
           "quote_hash": "62c9faafde510629afbf8e4e9d3f1c0737e78402b84a5c9953c6e1a3ee45734b"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-187b27ffc68b1c": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "页面所载排名属于公司对2010年代历史的表述，不代表当前排名。",
+      "summary": "Shinhan Venture Investment 官网历史页记录，机构于2021年更名为该名称；官网将其在2010年代的行业位置描述为第15位。",
+      "facts": [
+        {
+          "field": "name_change",
+          "label": "名称变更",
+          "value": "官网历史页记录2021年更名为 Shinhan Venture Investment",
+          "source_id": "shinhan_name_change"
+        },
+        {
+          "field": "historical_industry_position",
+          "label": "历史行业位置",
+          "value": "官网自述该机构在2010年代发展至行业第15位；为历史自述",
+          "source_id": "shinhan_history"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://shinhanvc.com/en/aboutus/history",
+          "url": "https://shinhanvc.com/en/aboutus/history",
+          "source_id": "shinhan_name_change"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "shinhan_name_change",
+          "source_url": "https://shinhanvc.com/en/aboutus/history",
+          "source_title": "History : Shinhan Venture Investment",
+          "source_content_hash": "3135fae88545d84b0f201b50050c6a6c45575ca5ef37706d48cc4a749795b730",
+          "quote": "2021 Full fledged steps of Shinhan Venture Investment. Change Company Name to Shinhan Venture Investment.",
+          "quote_hash": "df700ea5410dad7c221692accc07522813f2a7cd16d959135f0cb6efe7ed1b4b"
+        },
+        {
+          "source_id": "shinhan_history",
+          "source_url": "https://shinhanvc.com/en/aboutus/history",
+          "source_title": "History : Shinhan Venture Investment",
+          "source_content_hash": "3135fae88545d84b0f201b50050c6a6c45575ca5ef37706d48cc4a749795b730",
+          "quote": "2010’s Venture capital has grown to 15th place in the industry with extensive investment experience.",
+          "quote_hash": "bfdbf25800bb88b5d4021a2e9e7274fcbc42b50031abca9a3077027f3d8abd77"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-3405a6e4f5ec66": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "定位与投资年限来自 Amino Capital 官方 About 页面自述；未将该页面用于确认某一具体融资交易的参与情况。",
+      "summary": "Amino Capital 官网将其团队描述为来自不同行业的创业者、运营者和科学家，致力于支持创业者；公司称已持续投资十余年。",
+      "facts": [
+        {
+          "field": "team_profile",
+          "label": "团队背景",
+          "value": "来自不同行业的 builders、operators 和 scientists",
+          "source_id": "amino_team"
+        },
+        {
+          "field": "stated_approach",
+          "label": "投资理念",
+          "value": "将每次投资视为创始人选择其参与创业旅程的信任",
+          "source_id": "amino_investing"
+        },
+        {
+          "field": "investment_history",
+          "label": "投资历史",
+          "value": "官网自述持续投资十余年",
+          "source_id": "amino_investing"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.aminocapital.com/about",
+          "url": "https://www.aminocapital.com/about",
+          "source_id": "amino_team"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "amino_team",
+          "source_url": "https://www.aminocapital.com/about",
+          "source_title": "Amino Capital — We back builders from day one",
+          "source_content_hash": "df2179427f6397452cf1c6e9d40fc3e014db19b6e6920c832b71a885a43a2934",
+          "quote": "We are a team of builders, operators, and scientists who come from different industries and unite over a shared passion for supporting entrepreneurs and tinkering with new technology.",
+          "quote_hash": "c442ef2fc50d679f58ddc264b1191469130b559db739a0ae61663933810bf6ed"
+        },
+        {
+          "source_id": "amino_investing",
+          "source_url": "https://www.aminocapital.com/about",
+          "source_title": "Amino Capital — We back builders from day one",
+          "source_content_hash": "df2179427f6397452cf1c6e9d40fc3e014db19b6e6920c832b71a885a43a2934",
+          "quote": "So we treat every investment as a privilege, because a founder is choosing to let us be a part of their journey. We have been doing this for over a decade and could not be more excited about the ideas founders are pursuing today.",
+          "quote_hash": "596d10f0b3a2e51f1cb893b62db8d382e90fa365d93f6960d05ea156e0182b06"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-b0a8e0e9179452": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "档案根据一篇官网投资文章及其AIF页脚信息整理；基金名称、类别和管理人仅说明该页列示内容，不推断其他法律主体之间更广泛的关系或完整投资策略。",
+      "summary": "Sorin Investments 官网文章披露其与 Aivar 合作建设面向企业的全球 AI 服务平台；文章所列AIF信息为 Sorin Trust、Sorin Investment Fund，管理人为 Sorin Advisors LLP。",
+      "facts": [
+        {
+          "field": "disclosed_investment_activity",
+          "label": "官网披露的合作",
+          "value": "Sorin Investments 表示与 Aivar 合作建设面向企业的全球AI服务平台",
+          "source_id": "sorin_aivar"
+        },
+        {
+          "field": "aif_name_on_page",
+          "label": "页面所列AIF名称",
+          "value": "Sorin Trust",
+          "source_id": "sorin_aif_details"
+        },
+        {
+          "field": "scheme_name_on_page",
+          "label": "页面所列计划名称",
+          "value": "Sorin Investment Fund",
+          "source_id": "sorin_aif_details"
+        },
+        {
+          "field": "aif_category_on_page",
+          "label": "页面所列AIF类别",
+          "value": "Category II",
+          "source_id": "sorin_aif_details"
+        },
+        {
+          "field": "manager_name_on_page",
+          "label": "页面所列管理人名称",
+          "value": "Sorin Advisors LLP",
+          "source_id": "sorin_aif_details"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.sorininvestments.com/insights/why-we-invested-in-aivar-innovations",
+          "url": "https://www.sorininvestments.com/insights/why-we-invested-in-aivar-innovations",
+          "source_id": "sorin_aivar"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "sorin_aivar",
+          "source_url": "https://www.sorininvestments.com/insights/why-we-invested-in-aivar-innovations",
+          "source_title": "Why We Invested in Aivar Innovations | Sorin Investments",
+          "source_content_hash": "ad81791c937b2498abd021b08f7c83ac4706567a19939ec069dc45efc95a3db2",
+          "quote": "We at Sorin Investments are excited to partner with Aivar as they build a global AI services platform focused on real, production-grade enterprise outcomes.",
+          "quote_hash": "75bb6e294b44e1cb8d81a40278a776d1a3de067aa866c6881775c3f9d89a4524"
+        },
+        {
+          "source_id": "sorin_aif_details",
+          "source_url": "https://www.sorininvestments.com/insights/why-we-invested-in-aivar-innovations",
+          "source_title": "Why We Invested in Aivar Innovations | Sorin Investments",
+          "source_content_hash": "ad81791c937b2498abd021b08f7c83ac4706567a19939ec069dc45efc95a3db2",
+          "quote": "AIF Details AIF Name: Sorin Trust Scheme Name: Sorin Investment Fund AIF Category: Category II SEBI Reg. No.: IN/AIF2/21-22/1015 Manager Name: Sorin Advisors LLP.",
+          "quote_hash": "f8eec2795f13c0d797ceba5f1b994b2244eb70a1bb1aa742519238dce7e4b162"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-00fbaa83af6a02": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据北京市政府门户2024年11月8日关于京国瑞基金的报道，描述京国瑞当时的管理人身份和机构定位。",
+      "summary": "北京市政府门户网站2024年报道将北京京国瑞投资管理有限公司称为北京国管旗下的PE投资平台，并说明京国瑞担任京国瑞基金管理人，管理基金面向市级重大项目和符合首都功能定位的市场化项目。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "报道所列管理人主体",
+          "value": "北京京国瑞投资管理有限公司",
+          "source_id": "jingguorui_identity"
+        },
+        {
+          "field": "fund_role",
+          "label": "基金角色",
+          "value": "京国瑞基金的管理人",
+          "source_id": "jingguorui_business"
+        },
+        {
+          "field": "parent_group",
+          "label": "所属平台",
+          "value": "北京国管旗下PE投资平台（2024年政府报道表述）",
+          "source_id": "jingguorui_business"
+        },
+        {
+          "field": "managed_fund_focus",
+          "label": "基金投资范围",
+          "value": "市级重大项目及符合首都功能定位的市场化项目",
+          "source_id": "jingguorui_business"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "jingguorui_identity",
+          "source_url": "https://www.beijing.gov.cn/gate/big5/www.beijing.gov.cn/ywdt/gzdt/202411/t20241108_3937086.html",
+          "source_title": "市區兩級投資平臺合作成立新基金 首期規模10億元全部可投資金額投于經開區_部門動態_首都之窗_北京市人民政府門戶網站",
+          "source_content_hash": "6ce0d965d87b3e2e5d5303a22c6bbbe76f4e66ea0105b24283b1ae67d2d14416",
+          "quote": "據悉，京國瑞基金由北京經開區政府投資引導基金、北京國有資本運營管理有限公司（以下簡稱“北京國管”）、北京京國瑞投資管理有限公司（以下簡稱“京國瑞”）共同出資設立，首期規模10億元，全部可投資金額投于經開區。",
+          "quote_hash": "f5d578e6da6025ab4c68b474ccca00327a4ca6631a4642d65c1fba274bdb218c"
+        },
+        {
+          "source_id": "jingguorui_business",
+          "source_url": "https://www.beijing.gov.cn/gate/big5/www.beijing.gov.cn/ywdt/gzdt/202411/t20241108_3937086.html",
+          "source_title": "市區兩級投資平臺合作成立新基金 首期規模10億元全部可投資金額投于經開區_部門動態_首都之窗_北京市人民政府門戶網站",
+          "source_content_hash": "6ce0d965d87b3e2e5d5303a22c6bbbe76f4e66ea0105b24283b1ae67d2d14416",
+          "quote": "該基金由京國瑞擔任管理人，京國瑞是北京國管旗下的PE投資平臺，具有豐富的投資管理經驗。其管理的基金主要投資于市委、市政府重大項目及符合首都功能定位、滿足投資要求的市場化項目。",
+          "quote_hash": "3b7bd5f535f2b0b58bfb2aab738ed6d29fcba820ccdd1f54044db693e9688037"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-0444da1378ee0e": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "主体关系、成立时间和业务定位据国家开发银行官方页面自述。",
+      "summary": "国家开发银行官网介绍，国开金融有限责任公司于2009年8月成立，是国开行全资子公司，主要从事投资和投资管理，并通过基金、股权投资支持企业。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2009年8月",
+          "source_id": "cdb_finance"
+        },
+        {
+          "field": "parent_group",
+          "label": "所属集团",
+          "value": "国家开发银行全资子公司",
+          "source_id": "cdb_finance"
+        },
+        {
+          "field": "business",
+          "label": "业务范围",
+          "value": "投资和投资管理；通过基金、股权投资支持企业",
+          "source_id": "cdb_finance"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.cdb.com.cn/cpfw/gsqykh/zytz/",
+          "url": "https://www.cdb.com.cn/cpfw/gsqykh/zytz/",
+          "source_id": "cdb_finance"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "cdb_finance",
+          "source_url": "https://www.cdb.com.cn/cpfw/gsqykh/zytz/",
+          "source_title": "国家开发银行",
+          "source_content_hash": "347334d749fd2bdb4adf476af1e0458d6639d23e2febddb7d0522efd6ea011d1",
+          "quote": "国开金融有限责任公司（以下简称“国开金融”）成立于2009年8月，是国家开发银行经国务院批准设立的全资子公司，主要从事投资和投资管理业务。国开金融坚持“国家战略性、开行协同性、机构可持续性”发展原则，主要通过基金、股权投资等方式，支持关乎国家经济命脉、具有行业领先地位、具备长期可持续发展能力的优质企业。",
+          "quote_hash": "347334d749fd2bdb4adf476af1e0458d6639d23e2febddb7d0522efd6ea011d1"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-04ec8d15c2250d": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "全部金额、项目数及上市统计均明确对应公司披露的截至2021年12月31日口径，不代表当前投资数据。",
+      "summary": "张江高科年报披露，截至2021年末公司累计产业投资77亿元，采用直投与参股基金相结合的方式，披露了对应项目数和资金撬动规模。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "直投、基金和895孵化器相结合",
+          "source_id": "zhangjiang_2021"
+        },
+        {
+          "field": "investment_total_as_of_2021",
+          "label": "截至2021年底累计产业投资",
+          "value": "77亿元；其中直投49个项目、投资17亿元；参股子基金23个，认缴60亿元并撬动537亿元",
+          "source_id": "zhangjiang_2021"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "年报披露截至2021年12月31日，“直投+基金”累计上市43家、拟上市23家；属于该日期的公司披露口径。",
+          "source_id": "zhangjiang_2021"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "zhangjiang_2021",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2022-05-12/1213323913.PDF",
+          "source_title": "上海张江高科技园区开发股份有限公司",
+          "source_content_hash": "9d3552aec23bd01d54646ae0321317d3f4fda5c8274ec0ead81841475e962f21",
+          "quote": "全方位融入产业链和产业生态，以“直投+基金+895孵化器”的方式，聚合市场资源助推产业发展。截至 2021 年 12 月 31 日，张江高科累计产业投资已达 77 亿元，其中直投项目 49 个，投资金额 17 亿元；参股投资的子基金 23 个，认缴出资 60 亿，撬动了 537 亿的资金规模；直投在张江的企业有 29 家，通过基金投资在张江的企业有 45 家。“直投+基金”累计已上市 43 家，拟上市 23 家，其中科创板上市企业有 6 家、主板 12 家、创业板 14 家、新三板 4 家、境外 7 家。",
+          "quote_hash": "9d3552aec23bd01d54646ae0321317d3f4fda5c8274ec0ead81841475e962f21"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-087f0d8aff0d91": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "此处的主体关系、服务范围和经营数据均据中国农业银行2023年度报告；财务数值只代表2023年度口径。",
+      "summary": "中国农业银行2023年年报披露，农银国际控股有限公司于2009年在香港成立，由农行全资持有，提供直接投资及资产管理等服务，并在内地从事私募基金管理和投资业务。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2009年11月在香港成立",
+          "source_id": "abci_2023"
+        },
+        {
+          "field": "parent_group",
+          "label": "所属集团",
+          "value": "中国农业银行持股100%（2023年年报表述）",
+          "source_id": "abci_2023"
+        },
+        {
+          "field": "business",
+          "label": "业务范围",
+          "value": "香港业务包括资产管理、直接投资等；内地业务包括私募基金管理、财务顾问和投资",
+          "source_id": "abci_2023"
+        },
+        {
+          "field": "financial_position_2023",
+          "label": "2023年财务数据",
+          "value": "2023年末总资产469.02亿港元、净资产104.82亿港元，全年净利润1.49亿港元",
+          "source_id": "abci_2023"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "abci_2023",
+          "source_url": "https://www.abchina.com.cn/cn/AboutABC/investor_relations/announcements/h-announcement/202403/P020240328741002137622.pdf",
+          "source_title": "中国农业银行股份有限公司2023年度报告",
+          "source_content_hash": "0a25b873a567c162776621ec87a665d370fc6ca63ec7c49e04e1bc20cebc9700",
+          "quote": "农银国际控股有限公司于2009年11月在香港成立，股本港币41.13亿元，本行持股100%。农银国际在香港可从事上市保荐承销、债券发行承销、财务顾问、资产管理、直接投资、机构销售、证券经纪、证券咨询等全方位、一体化的金融服务；在内地可从事私募基金管理、财务顾问、投资等业务。截至2023年末，农银国际总资产469.02亿港元，净资产104.82亿港元，全年实现净利润1.49亿港元。",
+          "quote_hash": "0a25b873a567c162776621ec87a665d370fc6ca63ec7c49e04e1bc20cebc9700"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-0bfe8722f8482f": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份、策略和服务类型均按公司官网自述；FA顾问与自有资金投资需逐笔区分，不把顾问服务直接描述为投资。",
+      "summary": "庚辛资本（Glacier Capital）官网称其创立于2018年，聚焦Physical AI与前沿硬科技；业务包括财务顾问服务，并以自有资金投资部分深度服务过的公司。官网提醒，单笔交易角色须以该笔交易披露为准。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2018年",
+          "source_id": "glacier_identity"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注方向",
+          "value": "Physical AI与前沿硬科技",
+          "source_id": "glacier_identity"
+        },
+        {
+          "field": "services_and_investment",
+          "label": "业务范围",
+          "value": "为科技企业提供财务顾问服务，并以自有资金投资部分深度服务过的公司",
+          "source_id": "glacier_business"
+        },
+        {
+          "field": "transaction_role_caveat",
+          "label": "交易角色说明",
+          "value": "公司官网要求逐笔区分财务顾问与自有资金投资角色，以该笔交易公开报道为准",
+          "source_id": "glacier_role_note"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://glacierchina.com/about",
+          "url": "https://glacierchina.com/about",
+          "source_id": "glacier_identity"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "glacier_identity",
+          "source_url": "https://glacierchina.com/about",
+          "source_title": "公司介绍｜庚辛资本 Glacier Capital 官网 glacier.mba",
+          "source_content_hash": "1de156aaacca17be476fbf3d2a2b0d0e3465cd45338cef8d6ae6c6ac7b0d2727",
+          "quote": "庚辛资本（英文品牌名 Glacier Capital ）创立于 2018 年，是一家聚焦 Physical AI 与前沿硬科技的精品投行与产业资本机构",
+          "quote_hash": "b294402fb007bc86db753100294d40c45b8df4f04d4806e2abe4344ac6e5b395"
+        },
+        {
+          "source_id": "glacier_business",
+          "source_url": "https://glacierchina.com/about",
+          "source_title": "公司介绍｜庚辛资本 Glacier Capital 官网 glacier.mba",
+          "source_content_hash": "1de156aaacca17be476fbf3d2a2b0d0e3465cd45338cef8d6ae6c6ac7b0d2727",
+          "quote": "业务分两块： 财务顾问（FA） ：为科技企业提供长期独家或战略财务顾问服务，包括资本战略、融资执行、复杂交易设计、产业协同与长期价值建设； 自有资金投资（Skin in the game） ：以自有资金投资自己深度服务过的公司。",
+          "quote_hash": "5f17505994f8aaf82927e55da61e279438c184a665ee41fb6705c0ae55678ada"
+        },
+        {
+          "source_id": "glacier_role_note",
+          "source_url": "https://glacierchina.com/about",
+          "source_title": "公司介绍｜庚辛资本 Glacier Capital 官网 glacier.mba",
+          "source_content_hash": "1de156aaacca17be476fbf3d2a2b0d0e3465cd45338cef8d6ae6c6ac7b0d2727",
+          "quote": "角色需逐笔区分：多数项目中担任财务顾问；部分项目同时以自有资金跟投；也有少数项目仅为投资方、并不担任财务顾问。引用具体案例时，请以该笔交易公开报道所写的角色为准。",
+          "quote_hash": "93f3ec1dba04521f91688678b6b74bbb18451a9bb3397501575e1a84d0596b15"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-511b22acdf58b3": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "身份关系、注册资本及经营范围仅按2016年中国中车公告记录；本档案不据该历史公告推断当前股权或经营状态。",
+      "summary": "中国中车2016年招聘公告称，中车资本控股有限公司当时为中国中车集团在北京设立的全资一级子公司，经营范围包括项目投资、投资管理、股权投资、资产管理和投资咨询。",
+      "facts": [
+        {
+          "field": "parent_group_2016",
+          "label": "历史所属关系",
+          "value": "中国中车集团在北京设立的全资一级子公司（2016年公告口径）",
+          "source_id": "crrc_2016_notice"
+        },
+        {
+          "field": "registered_capital_2016",
+          "label": "注册资本",
+          "value": "人民币20亿元（2016年公告口径）",
+          "source_id": "crrc_2016_notice"
+        },
+        {
+          "field": "business_2016",
+          "label": "经营范围",
+          "value": "项目投资、投资管理、股权投资、资产管理、投资咨询等（2016年公告口径）",
+          "source_id": "crrc_2016_notice"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "crrc_2016_notice",
+          "source_url": "https://www.crrcgc.cc/crrcgc/2016-02/29/article_D49259C873044BFD9BB56F89B33D4235.html",
+          "source_title": "中国中车股份有限公司-中车资本控股有限公司招聘公告",
+          "source_content_hash": "21173e78763353a0519818bdfbbeff9d27122de16d6720db0653f254579d9708",
+          "quote": "中车资本控股有限公司是中国中车集团公司在北京设立的全资一级子公司，注册资本人民币20亿元。主要经营范围：项目投资、投资管理、股权投资、资产管理、投资咨询等。",
+          "quote_hash": "21173e78763353a0519818bdfbbeff9d27122de16d6720db0653f254579d9708"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-55661feffe38cd": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "仅记录 Citadel 官网的机构自述，不将其自动等同于 Citadel Securities 或其他同名主体。",
+      "summary": "Citadel 官网将其定位为多策略另类投资管理机构，追求为投资者实现长期回报。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "多策略另类投资管理机构",
+          "source_id": "citadel_who"
+        },
+        {
+          "field": "stated_objective",
+          "label": "官网表述的目标",
+          "value": "为投资者追求长期回报",
+          "source_id": "citadel_who"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.citadel.com/who-we-are/",
+          "url": "https://www.citadel.com/who-we-are/",
+          "source_id": "citadel_who"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "citadel_who",
+          "source_url": "https://www.citadel.com/who-we-are/",
+          "source_title": "Who We Are - Citadel",
+          "source_content_hash": "9b989a905aff69c1d559c1f9c2d870a276e8f08057868503ad3b77364bab6ccb",
+          "quote": "We are a multi-strategy alternative investment manager, pursuing superior long-term returns for our investors.",
+          "quote_hash": "9b989a905aff69c1d559c1f9c2d870a276e8f08057868503ad3b77364bab6ccb"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-611090bbd37da0": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "来源为建设银行集团页面；页面路径显示于2021年发布，档案仅采用该页明确披露的主体关系和业务范围。",
+      "summary": "建设银行官网将建信股权投资管理有限责任公司介绍为建行旗下从事私募股权投资的专业子公司，由总行直接管理，并管理战新基金及其他私募股权基金。",
+      "facts": [
+        {
+          "field": "parent_group",
+          "label": "所属集团",
+          "value": "中国建设银行；官网称由总行直接管理",
+          "source_id": "ccb_equity"
+        },
+        {
+          "field": "business",
+          "label": "业务范围",
+          "value": "私募股权投资及战新基金、其他私募股权基金管理",
+          "source_id": "ccb_equity"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://group3.ccb.com/cn/group/include/20211120_1637414771.html",
+          "url": "https://group3.ccb.com/cn/group/include/20211120_1637414771.html",
+          "source_id": "ccb_equity"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "ccb_equity",
+          "source_url": "https://group3.ccb.com/cn/group/include/20211120_1637414771.html",
+          "source_title": "建信股权投资管理有限责任公司",
+          "source_content_hash": "cff441198d1f5b0bbc346f2fc103a7b4240f3f20dc24c45c0933cffde3fb879c",
+          "quote": "建信股权投资管理有限责任公司（以下简称“建信股权”）是建设银行旗下从事私募股权投资业务的专业子公司，作为建行集团的股权投资平台和投贷联动纽带，由中国建设银行总行直接管理，主要致力于国家级战略性新兴产业发展基金（以下简称“战新基金”）及其他私募股权基金的管理。",
+          "quote_hash": "8356c184d502c2dfb2d75a68a7c842c59ac63b9885716b9d481f27973b95aec8"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-6ae52a0ab635d8": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段和地域依据官网 How We Work 页面；团队与全球网络支持方式据同页自述。",
+      "summary": "Speedinvest 官网称其投资欧洲及其他地区的 pre-seed、seed 和 growth 阶段公司，并以团队和全球网络支持创业公司。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "pre-seed",
+            "seed",
+            "growth stage"
+          ],
+          "source_id": "speedinvest_approach"
+        },
+        {
+          "field": "investment_geography",
+          "label": "投资地域",
+          "value": "欧洲及其他地区",
+          "source_id": "speedinvest_approach"
+        },
+        {
+          "field": "founder_support",
+          "label": "创业支持",
+          "value": "官网称通过团队及全球网络（客户、人才、后续投资者、行业人士和创业者）从早期支持公司",
+          "source_id": "speedinvest_support"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.speedinvest.com/how-we-work",
+          "url": "https://www.speedinvest.com/how-we-work",
+          "source_id": "speedinvest_approach"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "speedinvest_approach",
+          "source_url": "https://www.speedinvest.com/how-we-work",
+          "source_title": "Pre-Seed, Seed, Growth Tech Startup VC | Speedinvest",
+          "source_content_hash": "4e7a3f8ffea48d04eed70284f4b13bb366813d6ad65560fedc7e4d9e7c9618c1",
+          "quote": "Investing in pre-seed, seed and growth-stage companies across Europe and beyond, our mission is to turn bold ideas into category-defining companies that drive global innovation — together.",
+          "quote_hash": "55e78947d49c8f7a3aeb7c4875c1ad8eee937a6d1ea6967616a40da406b5c080"
+        },
+        {
+          "source_id": "speedinvest_support",
+          "source_url": "https://www.speedinvest.com/how-we-work",
+          "source_title": "Pre-Seed, Seed, Growth Tech Startup VC | Speedinvest",
+          "source_content_hash": "4e7a3f8ffea48d04eed70284f4b13bb366813d6ad65560fedc7e4d9e7c9618c1",
+          "quote": "That’s why we commit the full power of our team and global network: customers, talent, top-tier follow-on investors, industry leaders, and experienced entrepreneurs, from day one.",
+          "quote_hash": "adcdded30c3736a6dc9dd7f9a89907d720148a9616d3341b2af47304bb497e84"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-7876dbdc58b79a": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "名称、注册资本及经营范围依据龙岗区国资监管部门2021年页面；金额、子公司和基金数量均按该页面发布时点理解。",
+      "summary": "龙岗区国资监管部门2021年发布的企业简介称，深圳市龙岗金融投资控股有限公司于2015年设立，为区属国有独资公司，业务涵盖政府引导基金、股权直投等综合金融服务。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2015年11月3日",
+          "source_id": "longgang_profile"
+        },
+        {
+          "field": "ownership",
+          "label": "所有权",
+          "value": "龙岗区属国有独资公司（2021年政府页面披露）",
+          "source_id": "longgang_profile"
+        },
+        {
+          "field": "business",
+          "label": "业务范围",
+          "value": "政府引导基金、股权直投及小额贷款、担保、融资租赁、资本对接等；按2021年页面披露",
+          "source_id": "longgang_profile"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "longgang_profile",
+          "source_url": "https://www.lg.gov.cn/bmzz/czj/xxgk/gyqy/qyjj/content/post_8759416.html",
+          "source_title": "深圳市龙岗区金融投资控股有限公司简介",
+          "source_content_hash": "f4bdd6afe0c83440fea3331414bde5d6fb32d7f6cfb935bdafb5f368c87e0a6a",
+          "quote": "深圳市龙岗金融投资控股有限公司（简称“金控公司”）成立于2015年11月3日，系经龙岗区政府批准设立的区属国有独资公司，注册资本40亿元，净资产超100亿元。经过5年多发展，公司已从单一的政府引导基金管理平台，发展成为涵盖引导基金、股权直投、小额贷款、融资担保、融资租赁、资本对接等多个重点业务板块的金融控股企业，逐步形成了多层次、全方位的综合金融服务格局，成长为深圳市、区国企系统里拥有金融牌照较齐全、提供金融服务全面的金融控股企业。",
+          "quote_hash": "bdbc105a6684eeae63398d09b5e09b4b594c86ac79154af16549d70e9cc1f318"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-80287ad5e70d32": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "登记备案与机构定位均为华民投官网自述；不引用该页面中的荣誉排名作为独立核实事实。",
+      "summary": "华民投官网介绍其围绕战略新兴产业开展股权投资，采用产业基金与策略基金并举、投资与投行业务协同的模式，并称已在中国证券投资基金业协会登记备案。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "战略新兴产业股权投资",
+          "source_id": "huamin_about"
+        },
+        {
+          "field": "fund_types",
+          "label": "基金类型",
+          "value": [
+            "产业基金",
+            "策略基金"
+          ],
+          "source_id": "huamin_about"
+        },
+        {
+          "field": "registration",
+          "label": "备案信息",
+          "value": "官网自述已在中国证券投资基金业协会登记备案",
+          "source_id": "huamin_about"
+        },
+        {
+          "field": "offices",
+          "label": "办公室",
+          "value": [
+            "北京",
+            "上海",
+            "深圳"
+          ],
+          "source_id": "huamin_about"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://people-capital.cn/",
+          "url": "https://people-capital.cn/",
+          "source_id": "huamin_about"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "huamin_about",
+          "source_url": "https://people-capital.cn/",
+          "source_title": "华民投官网 - 华民股权投资基金管理有限公司",
+          "source_content_hash": "d5fb14f4f1459a627d1d2c6d232ee450f9cb91e2e9c84c92e7beff41f43f70e3",
+          "quote": "华民投广泛延揽优质项目，链接资本市场和上市公司，围绕战略新兴产业开展股权投资，以产业基金与策略基金并举，投资与投行业务齐动的创新运营模式，成长为国内主流投资机构。华民投在中国证券投资基金业协会的登记备案，并在北京、上海、深圳均设有办公室。",
+          "quote_hash": "b2e33c4fdf45ca92bf454ddadb473b990e59a87e39a3128adc29f84d428745d1"
         }
       ],
       "last_verified_at": "2026-10-05"

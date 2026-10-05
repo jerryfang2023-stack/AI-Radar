@@ -123,10 +123,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Amino Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "定位与投资年限来自 Amino Capital 官方 About 页面自述；未将该页面用于确认某一具体融资交易的参与情况。",
+      "summary": "Amino Capital 官网将其团队描述为来自不同行业的创业者、运营者和科学家，致力于支持创业者；公司称已持续投资十余年。",
+      "facts": [
+        {
+          "field": "team_profile",
+          "label": "团队背景",
+          "value": "来自不同行业的 builders、operators 和 scientists",
+          "source_id": "amino_team"
+        },
+        {
+          "field": "stated_approach",
+          "label": "投资理念",
+          "value": "将每次投资视为创始人选择其参与创业旅程的信任",
+          "source_id": "amino_investing"
+        },
+        {
+          "field": "investment_history",
+          "label": "投资历史",
+          "value": "官网自述持续投资十余年",
+          "source_id": "amino_investing"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +153,32 @@
           "source_id": "FISRC-32ea4009329f1b5b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.aminocapital.com/about",
+          "url": "https://www.aminocapital.com/about",
+          "source_id": "amino_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "amino_team",
+          "source_url": "https://www.aminocapital.com/about",
+          "source_title": "Amino Capital — We back builders from day one",
+          "source_content_hash": "df2179427f6397452cf1c6e9d40fc3e014db19b6e6920c832b71a885a43a2934",
+          "quote": "We are a team of builders, operators, and scientists who come from different industries and unite over a shared passion for supporting entrepreneurs and tinkering with new technology.",
+          "quote_hash": "c442ef2fc50d679f58ddc264b1191469130b559db739a0ae61663933810bf6ed"
+        },
+        {
+          "source_id": "amino_investing",
+          "source_url": "https://www.aminocapital.com/about",
+          "source_title": "Amino Capital — We back builders from day one",
+          "source_content_hash": "df2179427f6397452cf1c6e9d40fc3e014db19b6e6920c832b71a885a43a2934",
+          "quote": "So we treat every investment as a privilege, because a founder is choosing to let us be a part of their journey. We have been doing this for over a decade and could not be more excited about the ideas founders are pursuing today.",
+          "quote_hash": "596d10f0b3a2e51f1cb893b62db8d382e90fa365d93f6960d05ea156e0182b06"
+        },
         {
           "source_id": "FISRC-32ea4009329f1b5b",
           "source_url": "https://www.techcompanynews.com/dazzle-ai-raises-8m-in-seed-funding-round/",
@@ -145,7 +188,7 @@
           "quote_hash": "e49ea152a40f80880afdf9a02557128d6ca936f46a33d5296425ed2172eab88c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }
