@@ -242,28 +242,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "summary": "中国建投发布的消息称其子公司“建投投资”完成对极佳视界的投资；建投控股网站的中国建银投资介绍页将“建投投资有限责任公司”列入关联企业名单。现按集团投资平台关系收录，不补写完整基金信息。",
-      "coverage_note": "现有来源支持其属于中国建投投资体系并参与公开投资案例；独立管理人的登记资料未在本轮核实。",
+      "coverage_status": "researched",
+      "coverage_note": "投资动态由新浪财经转载并注明来源为中国建投；未找到可访问的建投投资独立官网资料。",
+      "summary": "建投控股页面将建投投资有限责任公司列在中国建银投资体系关联企业中；标注来源为中国建投的融资动态称建投投资完成对北京极佳视界的投资，并表示将持续深耕硬科技与未来产业。本档据此记录主体关系、公开投资案例和公司表述的方向，不补写未能确认的基金清单。",
       "facts": [
         {
-          "field": "formal_affiliate_name",
-          "label": "集团页面列示名称",
+          "field": "formal_name",
+          "label": "主体名称",
           "value": "建投投资有限责任公司",
-          "source_id": "jiantou_parent"
+          "source_id": "jic_parent"
         },
         {
           "field": "group_affiliation",
           "label": "集团关系",
-          "value": "中国建投发布信息称其为中国建投子公司",
-          "source_id": "jiantou_affiliation"
+          "value": "建投控股页面将其列在中国建银投资有限责任公司关联企业中",
+          "source_id": "jic_parent"
+        },
+        {
+          "field": "stated_focus",
+          "label": "公开表述方向",
+          "value": "硬科技与未来产业",
+          "source_id": "jic_focus"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "中国建投发布消息称，建投投资完成对北京极佳视界科技有限公司的投资。",
-          "source_id": "jiantou_deal"
+          "description": "来源标注为中国建投的动态称，建投投资完成对北京极佳视界科技有限公司的投资。",
+          "source_id": "jic_activity"
         },
         {
           "description": "融资来源记录：光轮智能 · 基础设施融资 · 2026-07-01 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -277,7 +283,7 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "jiantou_parent",
+          "source_id": "jic_parent",
           "source_url": "https://www.jicholding.com/cate/356.html",
           "source_title": "股东简介-- 建投控股有限责任公司",
           "source_content_hash": "d5b8b250abd4b60f63da7b1a57201ca2d26175215260c6d94cb25392db4cf341",
@@ -285,20 +291,20 @@
           "quote_hash": "8f547858a2e825451182c4252cf1f04171b23084753b6c6dc43dade6eabb5b4e"
         },
         {
-          "source_id": "jiantou_deal",
+          "source_id": "jic_activity",
           "source_url": "https://finance.sina.com.cn/wm/2026-06-09/doc-iniavmyn3148907.shtml",
           "source_title": "建投动态｜建投投资完成对极佳视界投资，助力攀登物理AI产业制高点|AI_新浪财经_新浪网",
           "source_content_hash": "a9f388b915ad401b972c3e2f1c04d2ba7117b755ed29a0fe3deb6946c729c868",
-          "quote": "建投投资完成对北京极佳视界科技有限公司",
-          "quote_hash": "5bdffaec0065db437373b5c975fc13eb590d4f3dbbc77c0980bba42894aa2524"
+          "quote": "中国建投子公司建投投资完成对北京极佳视界科技有限公司",
+          "quote_hash": "09fbe584ae287baef6bbc72279074b81fed8e582899d4af864ab9ee4d5b817a0"
         },
         {
-          "source_id": "jiantou_affiliation",
+          "source_id": "jic_focus",
           "source_url": "https://finance.sina.com.cn/wm/2026-06-09/doc-iniavmyn3148907.shtml",
           "source_title": "建投动态｜建投投资完成对极佳视界投资，助力攀登物理AI产业制高点|AI_新浪财经_新浪网",
           "source_content_hash": "a9f388b915ad401b972c3e2f1c04d2ba7117b755ed29a0fe3deb6946c729c868",
-          "quote": "中国建投子公司",
-          "quote_hash": "73f55b9bcbfbad033960f74138aaa24e48ca81423fc22ea0228cf744b43415fa"
+          "quote": "持续深耕硬科技与未来产业赛道",
+          "quote_hash": "e7241984ffd7accc2fbe2718f1b822d3cd0dc41b3686d78ff3b3cc41ef471bad"
         },
         {
           "source_id": "FISRC-8787a3d3602feb17",

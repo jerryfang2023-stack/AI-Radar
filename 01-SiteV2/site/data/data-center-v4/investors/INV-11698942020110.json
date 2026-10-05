@@ -139,10 +139,41 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "EA Ventures Plug and Play Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金名称、规模、阶段和方向均按管理方官网公开表述收录；未将EA Ventures集团与该基金视作同一法律主体。",
+      "summary": "EA Ventures官网将其与Plug and Play共同设立的基金称为EA Ventures Plug and Play EMEA Fund，规模€20M，投资阶段覆盖Pre-Seed、Seed和Pre-Series A，关注金融科技、出行、企业服务、可持续发展及电商。",
+      "facts": [
+        {
+          "field": "fund_name",
+          "label": "基金名称",
+          "value": "EA Ventures Plug and Play EMEA Fund",
+          "source_id": "ea_fund"
+        },
+        {
+          "field": "fund_size",
+          "label": "目标规模",
+          "value": "€20M",
+          "source_id": "ea_stage"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-Seed、Seed、Pre-Series A",
+          "source_id": "ea_stage"
+        },
+        {
+          "field": "fund_relationship",
+          "label": "发起关系",
+          "value": "EA Ventures与Plug and Play共同基金",
+          "source_id": "ea_joint"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "金融科技、出行、企业服务、可持续发展、电商",
+          "source_id": "ea_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +181,48 @@
           "source_id": "FISRC-7a0d2741d3dddcef"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金官网",
+          "value": "EA Ventures",
+          "url": "https://eaventures.eu/",
+          "source_id": "ea_fund"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ea_fund",
+          "source_url": "https://eaventures.eu/",
+          "source_title": "EA Ventures",
+          "source_content_hash": "6f30511145f8088e387d5e5eedb91fc8b520d683072f95dfb366591e7e052690",
+          "quote": "EA Ventures Plug and Play EMEA Fund",
+          "quote_hash": "bc6cd75a7a1def8c71c872f4074fe1c9d397e4d0f67ff343c2444336f136f2de"
+        },
+        {
+          "source_id": "ea_stage",
+          "source_url": "https://eaventures.eu/",
+          "source_title": "EA Ventures",
+          "source_content_hash": "6f30511145f8088e387d5e5eedb91fc8b520d683072f95dfb366591e7e052690",
+          "quote": "A €20M Seed, Pre-Seed & Pre-Series A fund",
+          "quote_hash": "92f39aa816716c2a632d3eed53e3a9403b33eaf6a5ded712dc52fbbe35bc300c"
+        },
+        {
+          "source_id": "ea_joint",
+          "source_url": "https://eaventures.eu/",
+          "source_title": "EA Ventures",
+          "source_content_hash": "6f30511145f8088e387d5e5eedb91fc8b520d683072f95dfb366591e7e052690",
+          "quote": "Joint Fund of EA Ventures & global innovation platform Plug and Play",
+          "quote_hash": "91b70901e4f726441186f1a5e8813be320a3bd910899838d30189cee8b96d667"
+        },
+        {
+          "source_id": "ea_focus",
+          "source_url": "https://eaventures.eu/",
+          "source_title": "EA Ventures",
+          "source_content_hash": "6f30511145f8088e387d5e5eedb91fc8b520d683072f95dfb366591e7e052690",
+          "quote": "We invest in sectors where disruption is inevitable: Fintech, Mobility, Enterprise Software, Sustainability, E-commerce",
+          "quote_hash": "b15a30eb12e18f80e9129cd7273909fbf9157adb92ff90290eca504abdebeb2b"
+        },
         {
           "source_id": "FISRC-7a0d2741d3dddcef",
           "source_url": "https://www.eu-startups.com/2026/06/barcelona-based-neuraltrust-raises-e17-2-million-to-secure-and-govern-enterprise-ai-agents/",
@@ -161,7 +232,7 @@
           "quote_hash": "ae1bb77e5a724b53c15c856ac390016abe90e7b84758fc53ffce26d2683c610d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

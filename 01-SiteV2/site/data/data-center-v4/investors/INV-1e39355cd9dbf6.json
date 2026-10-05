@@ -139,10 +139,41 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "同杨基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档对应同济科技官网介绍的“上海同杨私募投资基金”品牌，未与新设的同名基金管理公司混为一体。",
+      "summary": "同济科技官网介绍，上海同杨私募投资基金由可可资本与同济科技共同发起，同济科技为基石投资人、可可资本为基金管理人；官网披露一期规模2亿元，落户上海杨浦，关注智能化和数字化方向的硬科技。",
+      "facts": [
+        {
+          "field": "fund_name",
+          "label": "基金名称",
+          "value": "上海同杨私募投资基金",
+          "source_id": "tongyang_name"
+        },
+        {
+          "field": "founders",
+          "label": "发起方",
+          "value": "可可资本与上海同济科技实业股份有限公司共同发起",
+          "source_id": "tongyang_name"
+        },
+        {
+          "field": "fund_manager",
+          "label": "基金管理人",
+          "value": "可可资本",
+          "source_id": "tongyang_manager"
+        },
+        {
+          "field": "fund_size",
+          "label": "一期规模",
+          "value": "2亿元",
+          "source_id": "tongyang_size"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "智能化、数字化为核心的硬科技",
+          "source_id": "tongyang_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +181,48 @@
           "source_id": "FISRC-0195a1b88a7ecb41"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "同济科技业务介绍",
+          "value": "上海同杨私募投资基金",
+          "url": "https://www.tjkjsy.com.cn/innovate2",
+          "source_id": "tongyang_name"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tongyang_name",
+          "source_url": "https://www.tjkjsy.com.cn/innovate2",
+          "source_title": "上海同济科技实业股份有限公司",
+          "source_content_hash": "475f5ff967d4c83c067dc951e87654a00dc9cb7bb4787ca7139e43b1a1680c0a",
+          "quote": "上海同杨私募投资基金由可可资本与同济科技（600846）共同发起",
+          "quote_hash": "33ec99c4f5db636e455d13d4dea45555f457d0cf13df8f28acfc8ed173a6292c"
+        },
+        {
+          "source_id": "tongyang_focus",
+          "source_url": "https://www.tjkjsy.com.cn/innovate2",
+          "source_title": "上海同济科技实业股份有限公司",
+          "source_content_hash": "475f5ff967d4c83c067dc951e87654a00dc9cb7bb4787ca7139e43b1a1680c0a",
+          "quote": "重点关注以智能化和数字化为核心的硬科技领域",
+          "quote_hash": "361aeabf896c655ec528a75caa9723a69249850d04b5e19992bf765027eb29f9"
+        },
+        {
+          "source_id": "tongyang_size",
+          "source_url": "https://www.tjkjsy.com.cn/innovate2",
+          "source_title": "上海同济科技实业股份有限公司",
+          "source_content_hash": "475f5ff967d4c83c067dc951e87654a00dc9cb7bb4787ca7139e43b1a1680c0a",
+          "quote": "本基金一期基金规模2亿元，落户在上海市杨浦区",
+          "quote_hash": "bb1f6d34cdc5dd9ce26b2642fd183969d1a0dd909e1ee3b41bc4033bd6ddc4bc"
+        },
+        {
+          "source_id": "tongyang_manager",
+          "source_url": "https://www.tjkjsy.com.cn/innovate2",
+          "source_title": "上海同济科技实业股份有限公司",
+          "source_content_hash": "475f5ff967d4c83c067dc951e87654a00dc9cb7bb4787ca7139e43b1a1680c0a",
+          "quote": "同济科技作为基石投资人，可可资本作为基金管理人",
+          "quote_hash": "9f2bf46454705fb8e3a7e95b830687374edc4889395eac28ddebe107948b7373"
+        },
         {
           "source_id": "FISRC-0195a1b88a7ecb41",
           "source_url": "https://news.pedaily.cn/202609/569157.shtml",
@@ -161,7 +232,7 @@
           "quote_hash": "3e54f30fc23c389889a06fa46c44ee9017a3591a35a78563fc5a8863d1e0b9df"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

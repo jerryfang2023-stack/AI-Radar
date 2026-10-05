@@ -140,21 +140,27 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "辽宁科技大学就业页面以江苏省镔鑫钢铁集团有限公司为企业主体，介绍其钢铁生产业务；投资界融资报道将镔鑫钢铁列为数巅智能一轮投资方。本档将其视为产业公司参与案例，不推定其设有独立基金管理人。",
-      "coverage_note": "主体背景由高校就业页面介绍，投资活动来自第三方融资报道。",
+      "coverage_note": "目前只找到企业招聘信息和一项媒体融资列名，不能据此推定存在独立基金或完整投资组合。",
+      "summary": "辽宁科技大学化学工程学院就业页面将镔鑫钢铁对应为江苏省镔鑫钢铁集团有限公司，并称其成立于2008年。投资界对数巅智能融资的报道把“镔鑫钢铁”列入投资方名单。本档只收录主体索引与这项公开列名。",
       "facts": [
         {
-          "field": "business",
-          "label": "主营业务",
-          "value": "钢铁生产",
-          "source_id": "binxin_university"
+          "field": "formal_name",
+          "label": "主体名称",
+          "value": "江苏省镔鑫钢铁集团有限公司",
+          "source_id": "binxin_identity"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2008年2月",
+          "source_id": "binxin_identity"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投资界报道将镔鑫钢铁列入数巅智能融资投资方名单。",
-          "source_id": "binxin_round"
+          "description": "投资界报道将镔鑫钢铁列为数巅智能多轮融资披露的参与方之一。",
+          "source_id": "binxin_activity"
         },
         {
           "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -164,7 +170,7 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "binxin_university",
+          "source_id": "binxin_identity",
           "source_url": "https://www.ustl.edu.cn/hgxy/info/1040/4272.htm",
           "source_title": "江苏省镔鑫钢铁集团有限公司招聘就业信息-辽宁科技 - 化学工程学院",
           "source_content_hash": "950349056431f1fca2ddc13661242fa3081244645298907a7520ee268cbd6c41",
@@ -172,12 +178,12 @@
           "quote_hash": "3a60d7444a7246dcfbd3b312916aa68655522890ea4ab08243c16155f5e5cbd6"
         },
         {
-          "source_id": "binxin_round",
+          "source_id": "binxin_activity",
           "source_url": "https://news.pedaily.cn/202609/569430.shtml",
           "source_title": "数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化_投资界",
           "source_content_hash": "8b03a9d7d0f177d479ba7379919a2b9f76a4ee8171835bb674fa9d0ba29585e2",
-          "quote": "中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒",
-          "quote_hash": "61c55016049cc06df35b85f13970f016b1f703d4786bf377c6230c564a5b10ad"
+          "quote": "中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒、财鑫资本",
+          "quote_hash": "dacc53b490c1a8e1d13febfec4ec1862737f8ba1548d68410f7ab9dd93d3316c"
         },
         {
           "source_id": "FISRC-f5fa738edf400dda",

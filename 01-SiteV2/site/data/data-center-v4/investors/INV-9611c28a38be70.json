@@ -187,30 +187,88 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "生数科技 B 轮融资报道将九安海棠列为战略投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网材料尚未核实母基金的法定名称、管理主体及独立投资策略；邮箱属于官网列示的子基金申报渠道。",
+      "summary": "北洋海棠基金官网申报中心列出“天开九安海河海棠母基金”及其申报指南，面向子基金管理人征集材料；同一官网介绍北洋海棠基金的投资生态聚焦天津大学师生校友硬科技项目。本档按公开基金品牌和母基金角色收录，不推断其具体法律实体或将北洋海棠基金与母基金等同。",
+      "facts": [
+        {
+          "field": "fund_name",
+          "label": "官网列示名称",
+          "value": "天开九安海河海棠母基金",
+          "source_id": "ninean_name"
+        },
+        {
+          "field": "fund_type",
+          "label": "基金角色",
+          "value": "母基金，设置子基金管理人申报流程",
+          "source_id": "ninean_process"
+        },
+        {
+          "field": "related_fund_context",
+          "label": "官网所述投资生态",
+          "value": "北洋海棠基金介绍其关注天津大学师生校友硬科技项目；未确认该方向是否全部适用于母基金",
+          "source_id": "ninean_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "生数科技 B 轮融资报道将九安海棠列入战略投资方。",
-          "source_id": "FISRC-fd865802af815ab3"
-        },
-        {
           "description": "融资来源记录：生数科技 · B轮 · 2026-04-10 · 本轮参投 · 近20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b07965e9cd2c01b5"
+        },
+        {
+          "description": "融资来源记录：生数科技 · B轮 · 2026-04-10 · 本轮参投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fd865802af815ab3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "子基金申报邮箱",
+          "value": "fof@byhtfund.com",
+          "url": "https://byhtfund.com/report",
+          "source_id": "ninean_email"
+        },
+        {
+          "kind": "website",
+          "label": "基金网站",
+          "value": "北洋海棠基金网站",
+          "url": "https://byhtfund.com/",
+          "source_id": "ninean_name"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-fd865802af815ab3",
-          "source_url": "https://news.pedaily.cn/202604/562614.shtml",
-          "source_title": "生数科技完成近20亿元B轮融资，阿里云领投_投资界",
-          "source_content_hash": "ad192fa38f112b71ff7752bed5fd1cf5c35f99cc3e3c1456831e510dcf2df57a",
-          "quote": "临竞争与研发挑战，后续发展需关注技术创新及市场拓展情况。 内容由AI生成，仅供参考 投资界（ID：pedaily2012）4月10日消息，生数科技宣布 完成近20亿元人民币B轮融资 。本轮融资由 阿里云领投 ， 中网投、九安海棠、好未来、光合创投等投资人战略投资，星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。 据官网，生数科技成立于2023年3月，专注于自主研发多模态通用大模型及应用。公司以技术创新为核心驱动力，通过SaaS、MaaS、APP等产品应用形态，为全球个人用户、专业创作者和企业客户提供视频生成及多模态生成产品。 Vidu系列模型实现了声画同出、长时长、高时空一致性与电影级视觉品质。Vidu系列模型通过MaaS（Vidu AI开",
-          "quote_hash": "b583edb445636d4fefef6372fd8fc116717dc89e54388b292bd159808eb57b30"
+          "source_id": "ninean_name",
+          "source_url": "https://byhtfund.com/report",
+          "source_title": "申报中心",
+          "source_content_hash": "21d419f13a4491ef5b944d9b2d5f1d2e45eb15aec1f78936ab07619084f808e5",
+          "quote": "天开九安海河海棠母基金申报指南",
+          "quote_hash": "16707cf7974464d65e5b1d11997aa5f65ca757fcb71d9c9bd399f787053a5683"
+        },
+        {
+          "source_id": "ninean_process",
+          "source_url": "https://byhtfund.com/report",
+          "source_title": "申报中心",
+          "source_content_hash": "21d419f13a4491ef5b944d9b2d5f1d2e45eb15aec1f78936ab07619084f808e5",
+          "quote": "子基金管理人对申请材料的合法性、真实性、有效性、一致性负完全责任",
+          "quote_hash": "63d827ba72f1c98fbba22d349910aabb08d82ad3c487be077779b949a8c5fc29"
+        },
+        {
+          "source_id": "ninean_email",
+          "source_url": "https://byhtfund.com/report",
+          "source_title": "申报中心",
+          "source_content_hash": "21d419f13a4491ef5b944d9b2d5f1d2e45eb15aec1f78936ab07619084f808e5",
+          "quote": "fof@byhtfund.com",
+          "quote_hash": "0de27b7450ea40574e7eb4b126f316710080b046116ffdef061d794ad251203e"
+        },
+        {
+          "source_id": "ninean_focus",
+          "source_url": "https://byhtfund.com/about",
+          "source_title": "关于我们",
+          "source_content_hash": "6a0ab1e7bf81d216e98d461a39d7e4566bedb91014d2b96cb9d16c2bd78d681d",
+          "quote": "专注于投资包括但不限于天津大学老师、校友、学生的硬科技项目",
+          "quote_hash": "f28223b187bc096b4837d58179df3a18568582032ec5bf913bb0de2f05a3b511"
         },
         {
           "source_id": "FISRC-b07965e9cd2c01b5",
@@ -219,13 +277,17 @@
           "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
           "quote": "本轮融资由阿里云领投，中网投、九安海棠、好未来、光合创投等投资人战略投资，星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
           "quote_hash": "230f47f6a031a4f9029cc5f7ca3584cd13bd7df9ab1e86d38dc113be4b35e678"
+        },
+        {
+          "source_id": "FISRC-fd865802af815ab3",
+          "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+          "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+          "source_content_hash": "a281cc701a9028fb",
+          "quote": "中网投、九安海棠、好未来、光合创投等投资人战略投资",
+          "quote_hash": "71a2fddcd5c92c28433ef41fe27846beb520a6982c85bc3dd400328d55e096e4"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-06"
     }
   }
 }

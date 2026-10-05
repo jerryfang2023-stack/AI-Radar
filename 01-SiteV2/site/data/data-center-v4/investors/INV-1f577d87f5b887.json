@@ -139,19 +139,68 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Hideki Otsuka 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "依据Speee官网可核验身份和职业经历；不把尚无一手确认的融资列名写入个人投资记录。",
+      "summary": "Speee官网人物页以“大塚英樹（おおつか ひでき）”介绍其为代表取締役CEO；页面记载他创立媒体相关企业并于2011年转让，同年出任Speee代表取締役。官网人物路径与队列英文姓名一致。本档未核实媒体报道所述dodoAI投资是否由同一人物完成。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "代表取締役CEO",
+          "organization": "株式会社Speee",
+          "source_id": "hideki_bio"
+        }
+      ],
+      "career": [
+        {
+          "organization": "媒体相关企业（官网未列名称）",
+          "title": "创办人",
+          "period": "2011年以前",
+          "description": "Speee官网人物页称其创办媒体相关企业并于2011年转让。",
+          "source_id": "hideki_founder"
+        },
+        {
+          "organization": "株式会社Speee",
+          "title": "代表取締役",
+          "period": "2011年起（官网人物页所载）",
+          "description": "官网记载其25岁时出任Speee代表取締役。",
+          "source_id": "hideki_ceo"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Speee官网所载履历显示其曾创办媒体相关企业，2011年起担任Speee代表取締役CEO。",
       "track_record": [
         {
           "description": "融资来源记录：dodoAI Inc. · 种子轮 · 2026-06-18 · 本轮参投（天使投资人） · 2.8亿日元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-93ed43eb62fcbfea"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "hideki_bio",
+          "source_url": "https://media.speee.jp/member/hideki-otsuka",
+          "source_title": "Speee 代表取締役 - 大塚 英樹",
+          "source_content_hash": "1165f4edd3a4dc6b35a34d8e2caf9c850392ac27ba26091a30f2837bad47e3a9",
+          "quote": "大塚 英樹（おおつか ひでき） 代表取締役CEO",
+          "quote_hash": "7a5c8d569a1e5aec04ababd3093b1e9ea852d08bc93ef41809a79fc72d352134"
+        },
+        {
+          "source_id": "hideki_founder",
+          "source_url": "https://media.speee.jp/member/hideki-otsuka",
+          "source_title": "Speee 代表取締役 - 大塚 英樹",
+          "source_content_hash": "1165f4edd3a4dc6b35a34d8e2caf9c850392ac27ba26091a30f2837bad47e3a9",
+          "quote": "メディア関連事業の会社を創業し、2011年に譲渡",
+          "quote_hash": "41a9ccb6eab215adf025c6e10715a3b35625d37ab07ba22b77360b9dc5afe8b8"
+        },
+        {
+          "source_id": "hideki_ceo",
+          "source_url": "https://media.speee.jp/member/hideki-otsuka",
+          "source_title": "Speee 代表取締役 - 大塚 英樹",
+          "source_content_hash": "1165f4edd3a4dc6b35a34d8e2caf9c850392ac27ba26091a30f2837bad47e3a9",
+          "quote": "同年、25歳で株式会社Speee代表取締役に就任",
+          "quote_hash": "3653a983bcfd2bc1d63f5901ecd9eac4faf457a1f8ae32760e32a40e85423c3c"
+        },
         {
           "source_id": "FISRC-93ed43eb62fcbfea",
           "source_url": "https://coverager.com/dodoai-raises-%c2%a5280m-seed-for-enterprise-ai-governance-platform/",
@@ -161,7 +210,7 @@
           "quote_hash": "62da8c66dda53abf2ba57c8cbbcf5742f4009ee5257be0daad0a6bdabaf7224b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }
