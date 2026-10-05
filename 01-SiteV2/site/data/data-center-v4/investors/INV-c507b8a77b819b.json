@@ -139,33 +139,86 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、深科技主题与地域范围采用Quantonation官网自述；未把Vertical Compute新闻标题的整轮总额写成该机构单独出资额。",
+      "summary": "Quantonation是专注于物理与计算领域深科技的早期风险投资基金。官网称其全球投资，初始投资覆盖pre-seed至A轮，并可继续支持至B轮；主题包括量子技术和深物理。Vertical Compute的公司公告称Quantonation领投其种子轮，但没有披露Quantonation单独出资额。",
+      "facts": [
+        {
+          "field": "entity_type",
+          "label": "机构类别",
+          "value": "Quantonation官网自述为早期风险投资基金。",
+          "source_id": "quantonation_profile"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称初始投资覆盖pre-seed至Series A，并可支持被投公司至Series B。",
+          "source_id": "quantonation_profile"
+        },
+        {
+          "field": "sector_focus",
+          "label": "投资主题",
+          "value": "物理与计算驱动的深科技，重点包括量子技术和深物理。",
+          "source_id": "quantonation_profile"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "地域范围",
+          "value": "官网称在欧洲、北美和亚太地区投资。",
+          "source_id": "quantonation_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为Vertical ComputeSeed领投。",
+          "description": "Vertical Compute公司公告称，Quantonation领投其种子轮；公告未披露Quantonation单独出资额。",
+          "source_id": "quantonation_vertical_compute"
+        },
+        {
+          "description": "融资来源记录：Vertical Compute · 种子轮 · 2026-03-04 · 本轮领投 · €37 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-676054bb104d0746"
         }
       ],
-      "contacts": [],
-      "sources": [
+      "contacts": [
         {
-          "source_id": "FISRC-676054bb104d0746",
-          "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
-          "source_title": "Vertical Compute raises €57M to solve the AI memory bottleneck with new high density memory | vertical compute",
-          "source_content_hash": "8caecaeb522b794ccb4db4c151d841dde1955c04b5560a215bd7870a384c0795",
-          "quote": " compute logic within a single 300mm wafer manufacturing process flow — a key technical validation milestone. Quantonation led the seed round, with participation from Flanders Future Techfund (managed by the Flemish investment company PMV), Wallonie Entreprendre , Sambrinvest , Noshaq , InvestBW , Drysdale Ventures and Kima Ventures . Existing investors Eura",
-          "quote_hash": "93c676c00f54f409dc356414071e0a2ec673524bbd19012facf0180a5b4e60da"
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Quantonation",
+          "url": "https://www.quantonation.com/team/",
+          "source_id": "quantonation_profile"
         }
       ],
-      "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": ""
+      "experience_summary": "投资阶段、深科技主题及地域范围均按机构官网自述记录。",
+      "sources": [
+        {
+          "source_id": "quantonation_profile",
+          "source_url": "https://www.quantonation.com/team/",
+          "source_title": "Quantonation - Team",
+          "source_content_hash": "8aec4fe26d4bf1d0c2e8aa8f1d9278fa237c97c0020a2714f4ab2a141963d24e",
+          "quote": "Quantonation is an early-stage venture capital fund investing globally in deep technologies based on advances in physics and computing. We invest initial tickets from pre-seed to Series A and provide support through to Series B.",
+          "quote_hash": "39efb7b2ca377cb58edb332eb451fb4e5741f10bca7c9141cc5e41914202fb05"
+        },
+        {
+          "source_id": "quantonation_vertical_compute",
+          "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
+          "source_title": "Vertical Compute raises €57M to solve the AI memory bottleneck with new high density memory | vertical compute",
+          "source_content_hash": "8caecaeb522b794ccb4db4c151d841dde1955c04b5560a215bd7870a384c0795",
+          "quote": "Quantonation led the seed round, with participation from Flanders Future Techfund (managed by the Flemish investment company PMV), Wallonie Entreprendre",
+          "quote_hash": "caaae16b3d340da2d950bf780480da416f5e2162150019e55b1a04691ed7ea93"
+        },
+        {
+          "source_id": "FISRC-676054bb104d0746",
+          "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
+          "source_title": "Vertical Compute 融资 5700 万欧元，以新型高密度内存解决 AI 内存瓶颈",
+          "source_content_hash": "f8b8c9f810df3f0ee026abeb15d344f81559d94a5baf84ed986447cfe3332805",
+          "quote": "Quantonation led the seed round, with participation from Flanders Future Techfund (managed by the Flemish investment company PMV), Wallonie Entreprendre, Sambrinvest, Noshaq, InvestBW, Drysdale Ventures and Kima Ventures.",
+          "quote_hash": "a46a718a8e39c04b8200634f52ca5ea254f4a24f386762ffcb4f8d8381da59ae"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

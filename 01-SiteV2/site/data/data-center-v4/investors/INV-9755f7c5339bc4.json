@@ -180,10 +180,23 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Flow Engineering 官方 Series B 公告列出一级方程式世界冠军 Nico Rosberg 为参与贡献者。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "个人身份由F1官方资料及 Flow Engineering 项目方公告核对；投资经历仅记录被投企业公开点名的融资参与，不推断个人出资额或组合完整性。",
+      "summary": "F1 官方资料确认 Nico Rosberg 是2016年世界冠军；Rosberg Ventures 介绍其通过该平台参与种子期共同投资。Flow Engineering 的 Series B 公告列出 Nico Rosberg 为参与者，但未披露其个人出资额。",
+      "facts": [
+        {
+          "field": "venture_platform",
+          "label": "个人官网介绍的风险投资平台",
+          "value": "Nico Rosberg 官网将 Rosberg Ventures 描述为连接欧洲投资者与全球科技创新的风险投资平台。",
+          "source_id": "PROFILE-COLLECT-INV-9755f7c5339bc4-J-2"
+        },
+        {
+          "field": "public_identity",
+          "label": "F1 官方人物资料",
+          "value": "F1 官方人物资料称 Nico Rosberg 为2016年世界冠军。",
+          "source_id": "PROFILE-COLLECT-INV-9755f7c5339bc4-J-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -206,6 +219,30 @@
           "quote_hash": "651e754bb501d299d5bb9715f9a206d5f97f089f3d2ea65ba2b746d35cff9062"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-9755f7c5339bc4-J-2",
+          "source_url": "https://www.nicorosberg.com/rosberg-ventures-1",
+          "source_title": "Rosberg Ventures &mdash; NR",
+          "source_content_hash": "1ac976ef674ed4c1bda2a58f86c00900abe09bc245c7ff5ad4dc9c6061a8b25e",
+          "quote": "Rosberg Ventures is a global venture capital platform",
+          "quote_hash": "8ce9e7413af3d14bff82ef880483169b0cc9c9440eb86fb8660ece7d338d99a5"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-9755f7c5339bc4-J-3",
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nico-rosberg.7ryzoUXKrxqhlcNlXEUaTf",
+          "source_title": "Nico Rosberg | Formula 1®",
+          "source_content_hash": "ea36d30b6fea5b7965a83787c6f54540308a9882c57fa343799c86d2a70dc96b",
+          "quote": "the 2016 World Champion",
+          "quote_hash": "6a1ffa86a2aaa7ae4229d652dafe944819aafded164bce72a3df3de74ec92bc6"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-9755f7c5339bc4-J-4",
+          "source_url": "https://rosberg.ventures/",
+          "source_title": "Rosberg Ventures",
+          "source_content_hash": "b4407dfb8e78ff23c9ed578f75e939b8cd2e72f6e5455212fd6fcaf58e8b171d",
+          "quote": "NICO strategically co-invests with leading VC funds at the seed stage.",
+          "quote_hash": "1a6f22866a6b3866ff6fe9893db365cd6fe127267289c1bfa88dd3211ba916d7"
+        },
+        {
           "source_id": "FISRC-ce83b857608dabeb",
           "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
           "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
@@ -215,10 +252,16 @@
         }
       ],
       "last_verified_at": "2026-10-03",
-      "current_roles": [],
+      "current_roles": [
+        {
+          "title": "Seed-stage angel investor",
+          "organization": "Rosberg Ventures",
+          "source_id": "PROFILE-COLLECT-INV-9755f7c5339bc4-J-4"
+        }
+      ],
       "career": [],
       "education": [],
-      "experience_summary": ""
+      "experience_summary": "F1 官方资料确认 Nico Rosberg 的2016年世界冠军身份；其官方 Rosberg Ventures 页面介绍种子期共同投资活动，Flow Engineering 公告列出其 Series B 参与记录。个人出资额未披露。"
     },
     "translations": {
       "zh-CN": {

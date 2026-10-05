@@ -140,29 +140,84 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合，也不推断来源未披露的法人或基金归属。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司背景来自中关村股权投资协会机构页面；融资参与记录来自新浪财经转载报道，未推断该轮具体出资额。",
+      "summary": "交银资本管理有限公司于2018年设立，是交通银行全资子公司；中关村股权投资协会资料称其于2020年完成私募股权基金管理人备案，并作为交银集团股权投资业务载体，重点参与临港及长三角相关的企业重组、股权投资和直接投资。2026年智象未来融资报道将交银资本列为C轮跟投机构，未披露单家金额。",
+      "facts": [
+        {
+          "field": "founded_and_parent",
+          "label": "成立及股东（协会机构档案）",
+          "value": "2018年12月29日成立；协会资料称为交通银行全资子公司，注册资本5亿元",
+          "source_id": "B29-BOCOM-ZVCA"
+        },
+        {
+          "field": "registration",
+          "label": "管理人备案（协会机构档案）",
+          "value": "2020年5月完成中国证券投资基金业协会私募股权基金管理人备案",
+          "source_id": "B29-BOCOM-MANAGER"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资业务定位（协会机构档案）",
+          "value": "交银集团股权投资业务载体，关注临港及长三角的企业重组、股权投资和直接投资",
+          "source_id": "B29-BOCOM-FOCUS"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "公开融资来源将其列为 智象未来 C轮 本轮参投；仅记录来源直接支持的示例，不代表完整投资组合。",
+          "source_id": "B29-BOCOM-SINA-FRESH"
+        },
+        {
+          "description": "融资来源记录：智象未来 · C轮 · 2026-07-23 · 本轮参投 · 15亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d4811d701a7c9af"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-9d4811d701a7c9af",
+          "source_id": "B29-BOCOM-ZVCA",
+          "source_url": "https://www.zvca.org/a/3698.html",
+          "source_title": "交银资本管理有限公司 - 中关村股权投资协会",
+          "source_content_hash": "25a9f904d47fabfe3ff24b2c59f0f315ec4ff295b9a21ccae9500169932179a3",
+          "quote": "交银资本成立于2018年12月29日，注册资本5亿元，是交通银行股份有限公司全资子公司。",
+          "quote_hash": "ab7607f1875760507f8bf3d746e9d6d929ffeb2ea686b57e95b4efe2faf69d30"
+        },
+        {
+          "source_id": "B29-BOCOM-MANAGER",
+          "source_url": "https://www.zvca.org/a/3698.html",
+          "source_title": "交银资本管理有限公司 - 中关村股权投资协会",
+          "source_content_hash": "25a9f904d47fabfe3ff24b2c59f0f315ec4ff295b9a21ccae9500169932179a3",
+          "quote": "2020年5月，交银资本完成中国证券基金业协会私募股权基金管理人备案。",
+          "quote_hash": "d02f4bcdcba2e66ca6db291dd6c3e7befca58c683dda54f85c7eeb1c2dd18c30"
+        },
+        {
+          "source_id": "B29-BOCOM-FOCUS",
+          "source_url": "https://www.zvca.org/a/3698.html",
+          "source_title": "交银资本管理有限公司 - 中关村股权投资协会",
+          "source_content_hash": "25a9f904d47fabfe3ff24b2c59f0f315ec4ff295b9a21ccae9500169932179a3",
+          "quote": "作为交银集团股权投资业务载体，交银资本立足服务上海国际金融中心建设，重点参与开展与上海自贸试验区临港新片区建设以及长三角经济结构调整、产业优化升级和协调发展相关的企业重组、股权投资、直接投资等业务",
+          "quote_hash": "4024f4990e7b1a7a7958fad86c4ee2629750bb3b1f877ba20dd59b4bdd3f1af7"
+        },
+        {
+          "source_id": "B29-BOCOM-SINA-FRESH",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
           "source_title": "智象未来完成15亿元C轮融资，三个月融三轮_新浪财经_新浪网",
           "source_content_hash": "bebe58667e5f3aeae2a4a4e36f1d033864a8fceed75edf0c6b2ecad346f0573d",
+          "quote": "交银资本、若松基金等 多家机构跟投",
+          "quote_hash": "df46f7a0c663c5efa08bc845ba0df09a24edaf7575281297046e57584e2130ba"
+        },
+        {
+          "source_id": "FISRC-9d4811d701a7c9af",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
+          "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
+          "source_content_hash": "e624d91e5d6eb536",
           "quote": "厦门国贸 资本、上影新视野基金、湖北长江产业投资集团、 华策影视 、航源资本、创云海资本、华福投资、余杭金控股份、交银资本、若松基金等 多家机构跟投",
           "quote_hash": "bd068025322f5afbcb8de752e20877f75655e2501a442bbe2a818d7c45ca4cc1"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

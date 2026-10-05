@@ -139,30 +139,107 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "按 Ridgeline Ventures 官网和其官方渠道建立档案；未推断法律注册名称、基金结构或对 LGND AI 的投资金额。",
+      "summary": "Ridgeline Ventures 官网将其描述为家族办公室，以自有资本进行长期投资，不受基金期限限制。官网称其关注 EBITDA 约 100 万至 800 万美元、具备增长潜力的公司，并可灵活采取多数或少数股权结构。Ridgeline 官方账号称其投资了 LGND AI；合伙人 Andrew McMahon 的文章介绍了投资理由。公开来源未披露对 LGND 的投资金额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "官网自称家族办公室。",
+          "source_id": "B25-RIDGE-HOME"
+        },
+        {
+          "field": "capital_source",
+          "label": "资本来源",
+          "value": "官网称只投资自有资本，不受基金期限限制。",
+          "source_id": "B25-RIDGE-HOME"
+        },
+        {
+          "field": "investment_profile",
+          "label": "投资标准",
+          "value": "关注 EBITDA 约 100 万至 800 万美元且具备增长潜力的公司。",
+          "source_id": "B25-RIDGE-HOME"
+        },
+        {
+          "field": "investment_structure",
+          "label": "投资方式",
+          "value": "投资规模和结构灵活，可采取多数或少数股权。",
+          "source_id": "B25-RIDGE-HOME"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "LGND AI 的融资公告将 Ridgeline 列为 900 万美元融资参投方。",
-          "source_id": "PROFILE-3abf3ce4446b3cfb2c67"
+          "description": "Ridgeline 官方账号确认投资 LGND AI, Inc.；其合伙人 Andrew McMahon 的文章说明了该项投资的团队与愿景考量，未披露投资金额。",
+          "source_id": "B25-RIDGE-LGND"
+        },
+        {
+          "description": "Ridgeline 官网列示 Cotopaxi、Bobo’s、KCN Campgrounds、Sahajan 等组合公司。",
+          "source_id": "B25-RIDGE-PORTFOLIO"
         },
         {
           "description": "融资来源记录：LGND AI, Inc. · 种子轮 · 2025-07-10 · 本轮参投 · $9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-295efcf234fa6b4b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://ridgelinevc.com/",
+          "url": "https://ridgelinevc.com/",
+          "source_id": "B25-RIDGE-HOME"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-3abf3ce4446b3cfb2c67",
-          "source_url": "https://www.prnewswire.com/news-releases/lgnd-raises-9m-to-make-earth-data-intuitive-and-actionable-302502527.html",
-          "source_title": "LGND Raises $9M to Make Earth Data Intuitive and Actionable",
-          "source_content_hash": "b40565487c9c54fc46cf5af6f5afd9d0f899d0e74081b216fd34fc3f679629b2",
-          "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture, Ridgeline, MCJ, Coalition Operators, Clocktower Ventures, and more.",
-          "quote_hash": "373ac9dc3c83fecd531c4ac61379c096bda00274c462fa64f092a118371fdb08"
+          "source_id": "B25-RIDGE-HOME",
+          "source_url": "https://ridgelinevc.com/",
+          "source_title": "Ridgeline Ventures - Investing with Intention",
+          "source_content_hash": "66ecc00f0a17ea7f3279e553e8181742d903c287b889a6874cd3c9cb6b2fc0fb",
+          "quote": "Because we are a family office, we are not restricted by artificial fund timelines and only invest our own capital",
+          "quote_hash": "52d31772b66b114a8e59644c1e7664a7611dfffdab2df19cdb4864db53ac78aa"
+        },
+        {
+          "source_id": "B25-RIDGE-CRITERIA",
+          "source_url": "https://ridgelinevc.com/",
+          "source_title": "Ridgeline Ventures - Investing with Intention",
+          "source_content_hash": "66ecc00f0a17ea7f3279e553e8181742d903c287b889a6874cd3c9cb6b2fc0fb",
+          "quote": "We seek to invest in companies that generate between $1M and $8M of EBITDA with strong growth potential.",
+          "quote_hash": "2bddadceb6af361cd81749a6f1ad41b48f5bffcb3033904733933b81c253961b"
+        },
+        {
+          "source_id": "B25-RIDGE-STRUCTURE",
+          "source_url": "https://ridgelinevc.com/",
+          "source_title": "Ridgeline Ventures - Investing with Intention",
+          "source_content_hash": "66ecc00f0a17ea7f3279e553e8181742d903c287b889a6874cd3c9cb6b2fc0fb",
+          "quote": "We are highly flexible in terms of investment size and structure (e.g., majority or minority stake).",
+          "quote_hash": "4f7d814a3ef41aee4d05f9a7192169f4bd9a7813c8b4e42c09078ffaef044845"
+        },
+        {
+          "source_id": "B25-RIDGE-PORTFOLIO",
+          "source_url": "https://ridgelinevc.com/",
+          "source_title": "Ridgeline Ventures - Investing with Intention",
+          "source_content_hash": "66ecc00f0a17ea7f3279e553e8181742d903c287b889a6874cd3c9cb6b2fc0fb",
+          "quote": "Cotopaxi Gear for good",
+          "quote_hash": "f792c7ddaefd92d6e141c7a6f1c416b1471997ad07fad143df5cf25ea109a291"
+        },
+        {
+          "source_id": "B25-RIDGE-LGND",
+          "source_url": "https://www.linkedin.com/posts/ridgelinevc_ai-earthobservation-geospatial-activity-7386763277466308608-mAFC",
+          "source_title": "LGND AI: Unlocking Earth Observation Data with AI | Ridgeline posted on the topic | LinkedIn",
+          "source_content_hash": "497a93ab7fd18bb24b1fc4737cbebbf360888cabbd75976ea42f2233d01eedab",
+          "quote": "Ridgeline backed LGND AI, Inc.",
+          "quote_hash": "5d32eddb41b7136e5adae23197767eb5fe323ee61c4ba894ff03617181f87fd9"
+        },
+        {
+          "source_id": "B25-RIDGE-THESIS",
+          "source_url": "https://ridgeline.substack.com/p/unlocking-earth-data-why-we-invested",
+          "source_title": "Unlocking Earth Data: Why We Invested in LGND",
+          "source_content_hash": "d10d07c128bbf9d34a8fed68db812cae1949758c3059a2f92a8903aae0f72305",
+          "quote": "By Andrew McMahon, General Partner at Ridgeline. What ultimately drew us to LGND was both team expertise coupled with their compelling vision.",
+          "quote_hash": "5aae6675604cccd282b404fe22437a1cc66f0d68413648c43c06612196b2f90d"
         },
         {
           "source_id": "FISRC-295efcf234fa6b4b",
@@ -173,11 +250,11 @@
           "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "Ridgeline Ventures 官网将其描述为家族办公室，以自有资本进行长期投资，不受基金期限限制。官网称其关注 EBITDA 约 100 万至 800 万美元、具备增长潜力的公司，并可灵活采取多数或少数股权结构。Ridgeline 官方账号称其投资了 LGND AI；合伙人 Andrew McMahon 的文章介绍了投资理由。公开来源未披露对 LGND 的投资金额。"
     }
   }
 }

@@ -194,10 +194,17 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "人物身份和公开职务依据 Kleiner Perkins 官方人物页；Eridu 投资活动按融资公告披露，不推断其个人投资载体或完整投资组合。",
-      "summary": "Kleiner Perkins 官方人物页将 John Doerr 介绍为工程师、风险投资人及该公司的董事长；Eridu 融资公告将 John Doerr 列入 Series A 领投名单。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "人物现职和职业描述来自 Kleiner Perkins 官网；Eridu融资参与来自发行人公告。本档记录 John Doerr 个人身份，不将其与 Kleiner Perkins 法律实体混为一体。",
+      "summary": "Kleiner Perkins 官方人物页将 John Doerr 介绍为工程师、风险投资人及该机构主席。Eridu 官方公告将 John Doerr 列为其超2亿美元融资的领投方之一。",
+      "facts": [
+        {
+          "field": "professional_identity",
+          "label": "Kleiner Perkins 官方人物介绍",
+          "value": "John Doerr 是工程师、风险投资人及 Kleiner Perkins 主席。",
+          "source_id": "PROFILE-5e8ac1b2c9dfdeb7c70d"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -214,7 +221,7 @@
         {
           "source_id": "FISRC-6d4642fdc4a2457c",
           "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
-          "source_title": "Eridu Emerges from Stealth with Over $200M in Funding To Break Through the Network Wall and Unlock Faster AI – Eridu – Faster AI",
+          "source_title": "Eridu Emerges from Stealth with Over $200M in Funding To Break Through the Network Wall and Unlock Faster AI &#8211; Eridu &#8211; Faster AI",
           "source_content_hash": "202be508dc6ef6408937696d2a107814ef1ee486ab6bb150fcf28a5bcc3210ea",
           "quote": "Eridu’s funding includes a new oversubscribed Series A round led by Socratic Partners, John Doerr, Hudson River Trading, Capricorn Investment Group and Matter Venture Partners",
           "quote_hash": "810c4f6e9b19faf2a3da39aa86063339eafbb50c384b80245e33932489493c50"
@@ -236,7 +243,7 @@
           "quote_hash": "a1ef202bcb6d18d1a770246380dd9194312dc19a8dc29021582ba70d18cf47c1"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [
         {
           "title": "Chairman",

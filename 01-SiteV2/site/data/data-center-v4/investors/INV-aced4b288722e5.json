@@ -139,29 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "Cognition 官方 Series D 公告将 Vitruvian 列为投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 Vitruvian Partners 官网；Cognition Series D 投资关系来自被投企业公告，未披露 Vitruvian 单独出资额。",
+      "summary": "Vitruvian Partners 官网将其描述为支持高成长企业家与公司的国际投资机构。Cognition 官方 Series D 公告将 Vitruvian 列为既有投资方之一。",
+      "facts": [
+        {
+          "field": "investment_mandate",
+          "label": "机构定位",
+          "value": "Vitruvian Partners 官网称其为支持高成长企业家的国际投资机构。",
+          "source_id": "PROFILE-B10-INV-aced4b288722e5-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Cognition 官方 Series D 公告将 Vitruvian 列入本轮投资方。",
+          "description": "Cognition 官方公告将 Vitruvian 列为其 Series D 既有投资方；未披露单独金额。",
+          "source_id": "PROFILE-B10-INV-aced4b288722e5-2"
+        },
+        {
+          "description": "融资来源记录：Cognition · D轮 · 2026-05-27 · 既有投资方，本轮参投 · 超过 10 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a7bbb48af7503bf0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.vitruvianpartners.com/",
+          "source_id": "PROFILE-B10-INV-aced4b288722e5-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B10-INV-aced4b288722e5-1",
+          "source_url": "https://www.vitruvianpartners.com/",
+          "source_title": "Vitruvian Partners | Vitruvian Partners",
+          "source_content_hash": "bc8218439b4d50ed70be9ab1dd7be39b031a660a59f283885e0bd4620a22a99a",
+          "quote": "Vitruvian Partners is an international investment firm that supports the most ambitious and talented entrepreneurs and higher growth companies to achieve their goals.",
+          "quote_hash": "e18b4bc5c1d5f9ece9abf6c1c9eac5de3ccb0d0e74775c1732dcc0dc589be758"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-aced4b288722e5-2",
+          "source_url": "https://cognition.com/blog/series-d",
+          "source_title": "More Devins in More Places | Cognition",
+          "source_content_hash": "fdf1da0bf21b758bc27c4024126ffd8a07474ee9a8e1d8b7653542d1f0d6cd7e",
+          "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+          "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
+        },
         {
           "source_id": "FISRC-a7bbb48af7503bf0",
           "source_url": "https://cognition.com/blog/series-d",
           "source_title": "More Devins in More Places | Cognition",
-          "source_content_hash": "fdf1da0bf21b758bc27c4024126ffd8a07474ee9a8e1d8b7653542d1f0d6cd7e",
-          "quote": "m existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi. We’re also excited to welcome new investors including Ribbit Capital, Atreides, and Layer Global. We launched Devin two years ago a",
-          "quote_hash": "5d023bb188ae7758022181e7b4c86b4d864a8d65c946d83f64d089be35ec4596"
+          "source_content_hash": "f64d20b5549e1b58",
+          "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+          "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

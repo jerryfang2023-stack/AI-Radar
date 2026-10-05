@@ -137,17 +137,36 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
+      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "按个人主体修正类型。联合国人口基金官方人物简介用于核验 Natalia Vodianova 的身份；Higgsfield 公司公告使用完整队列名称并记录其参投与顾问角色。",
+      "summary": "Natalia Vodianova Arnault 是个人影响力投资者与慈善家。联合国人口基金人物简介称 Natalia Vodianova 为模特、慈善家和影响力投资者，并记载其创立 Naked Heart Foundation。Higgsfield 官方 2026 年 Series B 公告将 Natalia Vodianova Arnault 列为投资者及顾问；公告未披露其个人投资金额。",
+      "facts": [
+        {
+          "field": "investor_type",
+          "label": "主体类型",
+          "value": "个人影响力投资者。",
+          "source_id": "B26-NATALIA-UNFPA"
+        },
+        {
+          "field": "career",
+          "label": "社会与公益经历",
+          "value": "创立 Naked Heart Foundation。",
+          "source_id": "B26-NATALIA-UNFPA-FOUNDATION"
+        },
+        {
+          "field": "current_role",
+          "label": "公开角色",
+          "value": "Higgsfield Series B 公告称其加入为投资者和顾问。",
+          "source_id": "B26-NATALIA-HIGGS"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Higgsfield 的融资公告将 Natalia Vodianova Arnault 列为 4 亿美元 B 轮投资人，并披露她将担任公司顾问。",
-          "source_id": "PROFILE-c7b37675ff7fcf62d6c3"
+          "description": "Higgsfield 官方公告称 Natalia Vodianova Arnault 参与其 2026 年 Series B 并担任顾问；公告未披露个人出资额。",
+          "source_id": "B26-NATALIA-HIGGS"
         },
         {
           "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,12 +176,28 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-c7b37675ff7fcf62d6c3",
+          "source_id": "B26-NATALIA-UNFPA",
+          "source_url": "https://www.unfpa.org/natalia-vodianova",
+          "source_title": "Natalia Vodianova | United Nations Population Fund",
+          "source_content_hash": "bbc9fc05206a7a814b95464c6feaf3ca96921db87fb1848e5b468187e1faf81b",
+          "quote": "Supermodel, philanthropist, impact investor, and mother of five, Natalia Vodianova",
+          "quote_hash": "6abc48384e3d33754033b0b0503a1f2ffe39983cc64820fe1d03ccbbc43c7a92"
+        },
+        {
+          "source_id": "B26-NATALIA-UNFPA-FOUNDATION",
+          "source_url": "https://www.unfpa.org/natalia-vodianova",
+          "source_title": "Natalia Vodianova | United Nations Population Fund",
+          "source_content_hash": "bbc9fc05206a7a814b95464c6feaf3ca96921db87fb1848e5b468187e1faf81b",
+          "quote": "In 2004, she founded The Naked Heart Foundation",
+          "quote_hash": "32b782aa8d5aaeadcc70271293baf64495c7409eea312c0af406ab9346e922ed"
+        },
+        {
+          "source_id": "B26-NATALIA-HIGGS",
           "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
           "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation with Annualized Revenue Reaching $700 Million",
           "source_content_hash": "3b1c17d0c2ac1b5a6934b4a1ebec2d52006e09a8656fce94c8b2ff18732c2bf5",
-          "quote": "Natalia Vodianova Arnault, supermodel and impact investor, has also joined the round as an investor and will serve as an advisor to Higgsfield, bringing more than 25 years of experience across the global fashion, beauty and creative industries.",
-          "quote_hash": "a473283c1640ac8a2dac3b00dadc2427e5cd218e5ed40941cc57e1f6b9404fee"
+          "quote": "Natalia Vodianova Arnault, supermodel and impact investor, has also joined the round as an investor and will serve as an advisor to Higgsfield",
+          "quote_hash": "57278b086d8450e8b56d044efee44d48f7e34772daf1408804c6f97eefa440b1"
         },
         {
           "source_id": "FISRC-7c15ac15bf3d0b1a",
@@ -173,11 +208,11 @@
           "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "Natalia Vodianova Arnault 是个人影响力投资者与慈善家。联合国人口基金人物简介称 Natalia Vodianova 为模特、慈善家和影响力投资者，并记载其创立 Naked Heart Foundation。Higgsfield 官方 2026 年 Series B 公告将 Natalia Vodianova Arnault 列为投资者及顾问；公告未披露其个人投资金额。"
     },
     "translations": {
       "zh-CN": {

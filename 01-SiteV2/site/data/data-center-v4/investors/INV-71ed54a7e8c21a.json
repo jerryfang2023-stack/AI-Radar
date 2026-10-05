@@ -194,10 +194,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "OpenCSG 的融资报道将市北高新列为 Pre-A 轮参与方；影目科技融资报道也披露其跟投。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司业务模式与2026年战略计划来自2025年年度报告；计划性表述保留为公司未来安排。融资报道仅作为具体项目活动证据。",
+      "summary": "上海市北高新股份有限公司2025年年报将公司运营的市北高新园区描述为产业园区，并披露公司采用“地产+投资”双轮驱动模式。年报中的2026经营计划列出区块链和超高清视听两条特色赛道。融资新闻中的参投记录不表示其是专业基金管理人。",
+      "facts": [
+        {
+          "field": "business_model",
+          "label": "年报披露的业务模式",
+          "value": "公司2025年年报称其深化“地产+投资”双轮驱动运营模式。",
+          "source_id": "PROFILE-COLLECT-INV-71ed54a7e8c21a-G-3"
+        },
+        {
+          "field": "planned_investment_focus",
+          "label": "年报所列2026年重点方向",
+          "value": "公司2025年年报中的2026经营计划称，公司将持续聚焦区块链和超高清视听两大特色赛道。",
+          "source_id": "PROFILE-COLLECT-INV-71ed54a7e8c21a-G-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -226,6 +239,22 @@
           "source_content_hash": "738942f456c4ccf0cf6c87000aa892da7cc7f31ab6db2af12f295bc98490e489",
           "quote": "氪首发 黄 楠 · 2026年09月09日 09:00 近年来影目科技营收增速连续保持200%以上。 作者｜黄楠 编辑｜袁斯来 硬氪获悉，全球智能眼镜品牌「影目科技」近日完成C3轮融资，由四川振兴科创基金领投，静安资本、市北高新、广州产投、四川中试、眉山中试及东坡国投跟投。继年初完成C1、C2轮融资后，公司C轮融资累计金额近10亿元。 本轮资金将主要用于新一代空间智能硬件产品线的研发落地，及INMO AIOS 系统的持续迭代升级，加强硬件与软件底层核心能力构建；同时，加大品牌建设与全渠道布局，完善商业化能力，推动产品破圈，实现业务加速增长。 目前，影目科技已正式启动上市筹备工作，近年来公司营收增速连续保持200%以上。 智能眼镜正在被推向消费电子领域最受关注的位置。IDC",
           "quote_hash": "f70d3b7110ee5ecc7cddd9c644c1cee31117bca348cf0a31d7e1e954cbec10bb"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-71ed54a7e8c21a-G-3",
+          "source_url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-04-18/600604_20260418_8CV6.pdf",
+          "source_title": "上海市北高新股份有限公司2025年年度报告",
+          "source_content_hash": "f9567dd33297f3f02727b6c93843bba421be7c9adfe8838ce2ef343d1cd9f4eb",
+          "quote": "公司秉持“创新驱动、转型发展”的核心理念，深化“地产+投资”双轮驱动运营模式",
+          "quote_hash": "cfca37a250e1b737227ffb1b37f7fcccfcd3dbd8c095697c9df3e0b33dc95642"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-71ed54a7e8c21a-G-4",
+          "source_url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-04-18/600604_20260418_8CV6.pdf",
+          "source_title": "上海市北高新股份有限公司2025年年度报告",
+          "source_content_hash": "f9567dd33297f3f02727b6c93843bba421be7c9adfe8838ce2ef343d1cd9f4eb",
+          "quote": "2026 年，公司将持续聚焦区块链、超高清视听两大特色赛道",
+          "quote_hash": "68a96b70f6e6848db34b40640cb08d33a0c675a724a329ee107b018b74442095"
         }
       ],
       "last_verified_at": "2026-10-03",

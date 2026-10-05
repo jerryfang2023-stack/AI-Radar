@@ -139,15 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "Fireworks 官方 Series D 公告和 TCV 的投资文章均将 TCV 列为本轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略采用 TCV 官网原文；融资角色采用被投企业 Fireworks 官方公告。",
+      "summary": "TCV 官网称其为科技公司的成长型股权投资者；Fireworks 官方公告将 TCV 列为 Series D 领投方之一。本档记录机构自述及该项融资关系。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "TCV 官网披露的投资定位",
+          "value": "TCV 自述为科技公司的成长型股权投资者。",
+          "source_id": "PROFILE-B2-INV-711d9aa3793145-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Fireworks 官方 Series D 公告将 TCV 列为本轮投资方。",
-          "source_id": "PROFILE-dc7fb3c1965e0667db14"
+          "description": "Fireworks Series D 公告将 TCV 列为领投方之一。",
+          "source_id": "PROFILE-B2-INV-711d9aa3793145-2"
         },
         {
           "description": "融资来源记录：Fireworks AI Inc. · D轮 · 2026-07-16 · 本轮联合领投 · $1.505 billion。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,20 +164,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-dc7fb3c1965e0667db14",
-          "source_url": "https://fireworks.ai/blog/series-d-announcement",
-          "source_title": "Fireworks Secures $1.5 Billion in Series D Funding",
-          "source_content_hash": "79dee7745c08d127d6182d1603fea85b61fa99f9cdfd49ebe0b8bfff8eb2e8a8",
-          "quote": "unced a $1.505 billion Series D at a $17.5 billion valuation, led by Atreides Management, Index Ventures, and TCV, with participation from Evantic Capital, Lightspeed Venture Partners, Nvidia, 20VC, Bessemer Venture Partners, Menlo Ventures, and others. This milestone comes as Fireworks surpasses $1 billion in annualized revenue run rate",
-          "quote_hash": "7fb78a3d6694e6da291f6e5d30c999adeabec89ff80cbf4410b3b0b12a9a717a"
+          "source_id": "PROFILE-B2-INV-711d9aa3793145-1",
+          "source_url": "https://www.tcv.com/approach",
+          "source_title": "Our Approach | TCV",
+          "source_content_hash": "1cfb1f0065ff0cb6bc370b7f3781d952f7687f109f5948c0440fed8ec61c56ee",
+          "quote": "For nearly thirty years, TCV has partnered with global, category-defining, technology companies as a leading growth equity investor.",
+          "quote_hash": "65455cdd484fe93b3ef381d15ee9250c2c19d809c25fa4f71d3700152f0e1e68"
         },
         {
-          "source_id": "PROFILE-0a2381a0a344d901ab71",
-          "source_url": "https://www.tcv.com/news/entering-the-inference-era-our-investment-in-fireworks",
-          "source_title": "Entering the Inference Era: Our Investment in Fireworks | TCV",
-          "source_content_hash": "90380b40cd9114f08c2113f6fe0cc82cccaa435dba8d145cde49ea5f3023b57d",
-          "quote": "Entering the Inference Era: Our Investment in Fireworks | TCV Our Approach Our Partnerships Our Team News & Perspectives AI Perspectives Portfolio News TCV News Thought Leadership Focus Areas Search Contact Terms of Use and Regulatory Disclosures Privacy Policy Subscribe to N",
-          "quote_hash": "68f3d15546f2b68a3104c449e6ebfa3fc1f60c4d0ec90f4d9988b1fd80257951"
+          "source_id": "PROFILE-B2-INV-711d9aa3793145-2",
+          "source_url": "https://fireworks.ai/blog/series-d-announcement",
+          "source_title": "Fireworks Secures $1.5 Billion in Series D Funding",
+          "source_content_hash": "24a680502de1a49ead047ec0c9ffdcc27db4a53899efdf1fed1c8194d05b635d",
+          "quote": "led by Atreides Management, Index Ventures, and TCV",
+          "quote_hash": "d357b0163827d3d3284310d37468a3e4d1e830942ee43e91d8e6090a5c690b96"
         },
         {
           "source_id": "FISRC-0d89e0712245c55b",
@@ -181,7 +188,7 @@
           "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

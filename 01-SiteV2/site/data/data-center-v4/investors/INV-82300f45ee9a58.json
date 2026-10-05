@@ -124,15 +124,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "投资界融资记录将惠友资本列为驰芯半导体 Pre-A+ 轮领投方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "实体名称与机构自述来自36氪机构页，属于第三方目录资料；融资关系来自投资界项目页。此轮为2025年Pre-A+轮，不与项目后续轮次混淆。",
+      "summary": "36氪机构页将惠友资本对应为深圳市惠友投资管理有限公司，并称其成立于 2013 年、从事股权投资；投资界项目页记录惠友资本领投驰芯半导体近亿元 Pre-A+ 轮。本档以第三方目录披露为依据，不据此扩写基金规模或管理团队。",
+      "facts": [
+        {
+          "field": "reported_entity_name",
+          "label": "第三方机构页所列公司名称",
+          "value": "36氪机构页将惠友资本列为深圳市惠友投资管理有限公司。",
+          "source_id": "PROFILE-B4-INV-82300f45ee9a58-1"
+        },
+        {
+          "field": "reported_investment_approach",
+          "label": "第三方机构页所述业务",
+          "value": "惠友资本机构介绍自述其以股权投资、风险投资或企业并购等形式与成长型公司合作。",
+          "source_id": "PROFILE-B4-INV-82300f45ee9a58-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投资界融资记录将惠友资本列为驰芯半导体 Pre-A+ 轮领投方。",
-          "source_id": "PROFILE-f671921dcdc3b1bd8d11"
+          "description": "投资界项目页记录惠友资本领投驰芯半导体近亿元 Pre-A+ 轮。",
+          "source_id": "PROFILE-B4-INV-82300f45ee9a58-2"
         },
         {
           "description": "融资来源记录：驰芯半导体 · 历史轮次未披露 · Pre-A轮投资。这是本库收录的披露案例，不代表完整投资组合。",
@@ -142,20 +155,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-2267eac8f3e7c4a24841",
-          "source_url": "https://vc.pedaily.cn/company/209398.html",
-          "source_title": "「 驰芯半导体」超宽带芯片供应商_投资界",
-          "source_content_hash": "fb7128f87ce1d0df173962795ca4a1f155325cc1c7887d00e9c21ec6a2c4263a",
-          "quote": "14:37 研微半导体完成15亿元B轮融资 融资大事件 2026-08-27 13:58 驰芯半导体获近2亿A轮融资，兴湘资本领投 融资大事件 2025-03-14 14:53 驰芯半导体完成近亿元Pre-A+轮融资，惠友资本领投 融资大事件 2022-10-08 08:25 清科控股（01945.HK）旗下 创业与投资资讯平台 关于我们 搜索 反馈 地图 订阅 对外合作 林女士 010-64158500转6310 ranlin@zero2ipo.com.cn 投稿邮箱 editor@zero2ipo.com.cn 联系我们 投资界微信 投资界APP 违法和不良信息举报电话：010-64158500-8113，18610056652 举报邮箱： infoweb@zero",
-          "quote_hash": "92e76321f4e0205e5f8317ad766fb01970e3eec0efc2282f8e32ba4bea9c38f6"
+          "source_id": "PROFILE-B4-INV-82300f45ee9a58-1",
+          "source_url": "https://pitchhub-test.36kr.com/organization/1664926905588992",
+          "source_title": "惠友资本 | 投资机构信息-36氪",
+          "source_content_hash": "2e96743dd28bbaf2d1dfd491fe56e5207d6469ba100a650415d8823a0daf52f5",
+          "quote": "惠友资本 深圳市惠友投资管理有限公司 成立时间：2013年",
+          "quote_hash": "f19590721298bde379f9803fc6c5dc6dbdacc6cd0f3af1d2051589f1f96c577d"
         },
         {
-          "source_id": "PROFILE-f671921dcdc3b1bd8d11",
+          "source_id": "PROFILE-B4-INV-82300f45ee9a58-2",
           "source_url": "https://vc.pedaily.cn/company/209398.html",
           "source_title": "「 驰芯半导体」超宽带芯片供应商_投资界",
           "source_content_hash": "fb7128f87ce1d0df173962795ca4a1f155325cc1c7887d00e9c21ec6a2c4263a",
-          "quote": "「 驰芯半导体」超宽带芯片供应商_投资界 首 页 资 讯 投资圈 活 动 研 究 创投号 旗下矩阵 投资界 天天IPO 解码LP 并购 前哨 投资界AI 投融资 企业洞察 天天IPO 创投机构 解码LP 人物 APP 微信扫码订阅 创投号 登录 清科集团 清科控股 清科研究中心 清科母基金 新芽 驰芯半导体 超宽带芯片供应商 最新轮次 A+ 轮 融资金额 超2亿人民币 融资时间 2026-09-23 企业简要 长沙驰芯半导体科技有限公司创立于2020年6月，总",
-          "quote_hash": "a81cabe0642f419a6588bd9d4924de475be546033462b8faf7fd7bea1abce83d"
+          "quote": "驰芯半导体完成近亿元Pre-A+轮融资，惠友资本领投",
+          "quote_hash": "d586ad681cb6c3bf494af494f19066d28269d7b463bb22fabdca233774e5486a"
         },
         {
           "source_id": "FISRC-d7c3cbdfafeaf4fc",
@@ -166,7 +179,7 @@
           "quote_hash": "c45b85546ad6f32730d3ddda7e98c94fecdb1521293edd70edf5a64509313071"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -139,29 +139,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Arch Systems 官方公告称 Vistara Growth 向公司投资 3000 万美元。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构介绍和交易金额来自 Arch Systems 官方公告中分别注明的融资信息与 Vistara 简介。",
+      "summary": "Vistara Growth 官网新闻稿称其向科技公司提供灵活的成长债务及股权解决方案，并由科技金融和运营领域人士创立、管理及出资。Arch Systems 公告披露其向 Arch 投资 3,000 万美元。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "Vistara Growth 简介称其提供成长债务及股权方案，并由科技金融与运营人士创立、管理和出资。",
+          "source_id": "PROFILE-B8-INV-95ad6354c25a39-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Arch Systems 官方公告披露来自 Vistara Growth 的 3000 万美元投资。",
+          "description": "Arch Systems 官方公告披露 Vistara Growth 向其投资 3,000 万美元。",
+          "source_id": "PROFILE-B8-INV-95ad6354c25a39-1"
+        },
+        {
+          "description": "融资来源记录：Arch Systems · 成长轮 · 2026-09-15 · 本轮参投 · $30 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-eff6a156810d9897"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-eff6a156810d9897",
+          "source_id": "PROFILE-B8-INV-95ad6354c25a39-1",
           "source_url": "https://archsys.io/hub/news/investment-vistara-accelerates-arch-agentic-ai-roadmap/",
           "source_title": "Arch Systems Secures $30 Million from Vistara Growth to Accelerate AI-Powered Manufacturing Intelligence",
           "source_content_hash": "0edcf4550354f54ce6413bead9e83344ddf527e31e9f14fe8beb4d0ab38a105d",
-          "quote": "September 15th – Arch Systems, a leader in manufacturing data and AI solutions, today announced a $30 million investment from Vistara Growth. Arch is trusted by many of the world’s largest Tier-1 electronics manufacturing services (EMS) providers to run its always-on digital factory experts across their global production networks. The new",
-          "quote_hash": "6bdcaa11fce0e9b9aff5746f150c219322f4bd64d9198c0de23e8bf4d0b82e69"
+          "quote": "a $30 million investment from Vistara Growth.",
+          "quote_hash": "9152b95e6ef25c4c6b60daaa3b2b506ae8dd5ce20c6c0ba686836c4a3c570bdf"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-95ad6354c25a39-2",
+          "source_url": "https://archsys.io/hub/news/investment-vistara-accelerates-arch-agentic-ai-roadmap/",
+          "source_title": "Arch Systems Secures $30 Million from Vistara Growth to Accelerate AI-Powered Manufacturing Intelligence",
+          "source_content_hash": "0edcf4550354f54ce6413bead9e83344ddf527e31e9f14fe8beb4d0ab38a105d",
+          "quote": "About Vistara Growth Vistara Growth provides highly flexible growth debt and equity solutions to leading technology companies across North America. Founded, managed and funded by seasoned technology finance and operating executives",
+          "quote_hash": "9c07f372b43b1f474e60c246940892650647116c51f3698c2698e9128a7d26f6"
+        },
+        {
+          "source_id": "FISRC-eff6a156810d9897",
+          "source_url": "https://archsys.io/hub/news/investment-vistara-accelerates-arch-agentic-ai-roadmap/",
+          "source_title": "Arch Systems 从 Vistara Growth 获得 3000 万美元，以加速 AI 驱动的制造智能",
+          "source_content_hash": "ae902a312150a491",
+          "quote": "today announced a $30 million investment from Vistara Growth",
+          "quote_hash": "bf30a26e3643ac350e6c6fb3b5df3ccb26e30c160bf24c7fcbfcfc32247ca441"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

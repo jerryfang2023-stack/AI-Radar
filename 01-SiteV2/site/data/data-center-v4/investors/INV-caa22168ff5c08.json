@@ -140,33 +140,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "集团官网资料与融资报道均可核验；15亿元为智象未来C轮整轮金额，未披露厦门国贸资本单独出资额。",
+      "summary": "厦门国贸资本集团有限公司官网称其为厦门国贸控股集团全资子公司，于2022年9月更名成立。新华网报道将厦门国贸资本列为智象未来2026年C轮跟投机构之一；15亿元为整轮融资额。",
+      "facts": [
+        {
+          "field": "identity",
+          "label": "机构身份",
+          "value": "厦门国贸资本官网称厦门国贸资本集团有限公司系厦门国贸控股集团有限公司全资子公司，于2022年9月更名成立。",
+          "source_id": "itg_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "智象未来融资报道以“厦门国贸 资本”列出其 C 轮跟投，名称间的空格来自原文排版。",
+          "description": "新华网报道厦门国贸资本参与智象未来2026年C轮跟投；15亿元为整轮融资金额，未披露该机构单独出资额。",
+          "source_id": "hidream_round"
+        },
+        {
+          "description": "融资来源记录：智象未来 · C轮 · 2026-07-23 · 本轮参投 · 15亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d4811d701a7c9af"
         }
       ],
       "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-9d4811d701a7c9af",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
-          "source_title": "智象未来完成15亿元C轮融资，三个月融三轮_新浪财经_新浪网",
-          "source_content_hash": "bebe58667e5f3aeae2a4a4e36f1d033864a8fceed75edf0c6b2ecad346f0573d",
-          "quote": "列大模型。 投资界（ID：pedaily2012）7月23日消息，近日，智象未来（HiDream.ai）宣布完成 15亿元人民币的C轮融资 。本轮融资由 社保基金四川振兴科创基金、工银资本、弘颐资管、敦鸿资本联合领投， 厦门国贸 资本、上影新视野基金、湖北长江产业投资集团、 华策影视 、航源资本、创云海资本、华福投资、余杭金控股份、交银资本、若松基金等 多家机构跟投。老股东 合肥产投、东方富海、金浦投资、金华金投、中哲创、财鑫资本 持续加注。 至此，智象近三个月内已完成三轮密集融资，累计融资超过21亿元人民币。随着本轮融资的完成，正式迈入独角兽企业行列。 智象未来创始人兼CEO梅涛 表示：“对AI发展技术的前瞻性和大模型底层架构的创新性始终是智象得以稳健发展的核心竞争力。多模态大模型技术还处在快速迭代的关键发展",
-          "quote_hash": "03d44bdbe9b129db718689e28f2d63f6a859e80a61ad310a394ad5115a486560"
-        }
-      ],
-      "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": ""
+      "experience_summary": "",
+      "sources": [
+        {
+          "source_id": "itg_official",
+          "source_url": "https://www.itgcapital.com.cn/company",
+          "source_title": "厦门国贸资本集团有限公司-公司概况",
+          "source_content_hash": "7a6fa58274a85103d27d9e6ab2ed5acc7f7d4365bd6ff8f9bf80d3c46abed165",
+          "quote": "厦门国贸资本集团有限公司系厦门国贸控股集团有限公司全资子公司，于2022年9月更名成立，注册资本46.5亿元。",
+          "quote_hash": "5765f246db5b423513f483545545330ae523baee94abd17761d3d8f4b197b182"
+        },
+        {
+          "source_id": "hidream_round",
+          "source_url": "https://www2.xinhuanet.com/tech/20260723/09cfc4a75f2348a69ae2470db7e505c9/c.html",
+          "source_title": "智象未来完成15亿元人民币C轮融资-新华网",
+          "source_content_hash": "6c5fca5bb3ddae01466ee0277e42de4841f45f09e5f0d6b183cf29b2b09a6192",
+          "quote": "本轮融资由社保基金四川振兴科创基金、工银资本、弘颐资管、敦鸿资本联合领投，厦门国贸资本、上影新视野基金、湖北长江产业投资集团、华策影视、航源资本、创云海资本、华福投资、余杭金控股份、交银资本、若松基金等多家机构跟投。",
+          "quote_hash": "923053e6b5047a689336a6ded62596dd6825c3b88d3bb5bd4ad461916d020419"
+        },
+        {
+          "source_id": "FISRC-9d4811d701a7c9af",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
+          "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
+          "source_content_hash": "e624d91e5d6eb536",
+          "quote": "厦门国贸 资本、上影新视野基金、湖北长江产业投资集团、 华策影视 、航源资本、创云海资本、华福投资、余杭金控股份、交银资本、若松基金等 多家机构跟投",
+          "quote_hash": "bd068025322f5afbcb8de752e20877f75655e2501a442bbe2a818d7c45ca4cc1"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
     }
   }
 }

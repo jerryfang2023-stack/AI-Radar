@@ -289,19 +289,19 @@
       }
     ],
     "public_profile": {
-      "summary": "湖南财鑫投资控股集团官网将“财鑫资本”列为集团投资活动相关品牌，并报道其入选政府引导基金退出与母基金榜单。本条仅记录该品牌的投资活动线索，页面未披露其独立法定主体。",
+      "summary": "湖南财鑫集团官网将集团说明为常德市国有全资企业，并在集团新闻中以“财鑫资本”称呼相关投资品牌、报道其获得的榜单。官网未披露“财鑫资本”独立法人名称，本档保留为集团旗下投资品牌线索。",
       "facts": [
         {
-          "field": "investment_activity",
-          "label": "集团官网披露的投资活动",
-          "value": "集团官网以“财鑫资本”称呼相关投资品牌，并报道其入选政府引导基金退出及母基金榜单。",
-          "source_id": "PROFILE-INV-761c49a8cac44f-1"
+          "field": "parent_group",
+          "label": "所属集团",
+          "value": "湖南财鑫投资控股集团有限公司是常德市国有全资企业。",
+          "source_id": "PROFILE-COLLECT-INV-761c49a8cac44f-1"
         },
         {
-          "field": "identity_scope",
-          "label": "主体范围说明",
-          "value": "该页面未披露“财鑫资本”的独立法定主体。",
-          "source_id": "PROFILE-INV-761c49a8cac44f-1"
+          "field": "investment_brand",
+          "label": "投资品牌披露",
+          "value": "集团官网将“财鑫资本”列入集团投资活动相关资讯。",
+          "source_id": "PROFILE-COLLECT-INV-761c49a8cac44f-2"
         }
       ],
       "milestones": [],
@@ -321,25 +321,25 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "来源为集团官网新闻；不据此推定“财鑫资本”的法定名称或管理人登记。",
+      "coverage_status": "researched",
+      "coverage_note": "主体背景与“财鑫资本”品牌提及均来自湖南财鑫投资控股集团官网；官网未证明该品牌是独立法人或某次融资的具体出资载体。",
       "current_roles": [],
       "career": [],
       "education": [],
       "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "湖南财鑫集团官网",
-          "value": "湖南财鑫投资控股集团",
-          "url": "https://www.cdcxjt.com/?source_capture=2026-10-03&cycle=11",
-          "source_id": "PROFILE-INV-761c49a8cac44f-1"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-INV-761c49a8cac44f-1",
-          "source_url": "https://www.cdcxjt.com/?source_capture=2026-10-03&cycle=11",
+          "source_id": "PROFILE-COLLECT-INV-761c49a8cac44f-1",
+          "source_url": "https://www.cdcxjt.com/",
+          "source_title": "湖南财鑫投资控股集团有限公司",
+          "source_content_hash": "87fe6b211e612e3dc371bae2c890857303f5f238d4cb053df92b52335f22de29",
+          "quote": "湖南财鑫投资控股集团有限公司是经常德市委、市政府批准在原常德财鑫投融资担保集团有限公司的基础上，于2020年整合原常德市现代工业投资集团有限公司、常德市现代农业投资集团有限公司、常德市财经投资开发公司后组建而成的国有全资企业，注册资本70亿元",
+          "quote_hash": "649ed071ccb1be39b97b19abf8953be2d2673a1fa277af3cf48a81c9643de7a0"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-761c49a8cac44f-2",
+          "source_url": "https://www.cdcxjt.com/",
           "source_title": "湖南财鑫投资控股集团有限公司",
           "source_content_hash": "87fe6b211e612e3dc371bae2c890857303f5f238d4cb053df92b52335f22de29",
           "quote": "财鑫资本荣登“2023年地市及区县级政府引导基金最佳退出TOP30强”榜单、“2023年最具潜力母基金TOP30”榜单",
@@ -370,7 +370,7 @@
           "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -154,13 +154,19 @@
       }
     ],
     "public_profile": {
-      "summary": "宁德时代在深交所发布公告称，作为有限合伙人参与设立海南时代绿色产业投资基金，认缴出资24.75亿元、占基金49.5%。",
+      "summary": "宁德时代公告披露，公司作为有限合伙人参与海南时代绿色产业投资基金，认缴人民币247,500万元、持有基金49.50%份额。该资料记录的是电池制造企业的一项战略基金投资，不将宁德时代描述为专业基金管理人。",
       "facts": [
         {
           "field": "investment_activity",
-          "label": "深交所公告披露的参投事项",
-          "value": "宁德时代作为有限合伙人参与海南时代绿色产业投资基金，认缴24.75亿元、占49.5%。",
-          "source_id": "PROFILE-INV-63b6306f9901ae-2"
+          "label": "宁德时代公告披露的基金参与方式",
+          "value": "宁德时代作为有限合伙人参与投资海南时代绿色产业投资基金。",
+          "source_id": "PROFILE-S-INV-63b6306f9901ae-3"
+        },
+        {
+          "field": "investment_amount",
+          "label": "宁德时代公告披露的认缴金额和基金份额",
+          "value": "公司认缴人民币247,500万元，持有基金49.50%的份额。",
+          "source_id": "PROFILE-S-INV-63b6306f9901ae-4"
         }
       ],
       "milestones": [
@@ -172,14 +178,18 @@
       ],
       "track_record": [
         {
+          "description": "宁德时代公告披露其认缴海南时代绿色产业投资基金人民币247,500万元，持有49.50%份额。",
+          "source_id": "PROFILE-S-INV-63b6306f9901ae-4"
+        },
+        {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4595161c40aec2c1"
         }
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "此条记录制造业公司的一项战略基金投资活动；宁德时代主营身份仍为电池企业，不将其描述为专业基金管理人。",
+      "coverage_status": "researched",
+      "coverage_note": "投资金额及基金份额来自宁德时代向深交所披露的公告；主体仍按上市公司宁德时代记录。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -211,6 +221,22 @@
           "quote_hash": "8c4c8ff0dc62d4a757eb648fc06528e2aee313b2366d59737c12bb89c1ae3056"
         },
         {
+          "source_id": "PROFILE-S-INV-63b6306f9901ae-3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-12/1225470687.PDF",
+          "source_title": "宁德时代新能源科技股份有限公司关于参与投资海南时代绿色产业投资基金的公告",
+          "source_content_hash": "8d7e259c5eb5a6fe88340348eb8c8e7eb32674fbce91b0f47d766aad0cd836fd",
+          "quote": "作为有限合伙人之一参与投资",
+          "quote_hash": "506bb1ec8b8b4c0e3fa5d4bd9dc2a6b0665ab1a4af7264eaf8069c9584142299"
+        },
+        {
+          "source_id": "PROFILE-S-INV-63b6306f9901ae-4",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-12/1225470687.PDF",
+          "source_title": "宁德时代新能源科技股份有限公司关于参与投资海南时代绿色产业投资基金的公告",
+          "source_content_hash": "8d7e259c5eb5a6fe88340348eb8c8e7eb32674fbce91b0f47d766aad0cd836fd",
+          "quote": "认缴出资金额为人民币247,500 万元，持有基金49.50%的份额",
+          "quote_hash": "af1a03ac64f1b8dbac0f9bbdb40d5221b05b2b3b5dac546c5803b131eccc288a"
+        },
+        {
           "source_id": "FISRC-4595161c40aec2c1",
           "source_url": "https://the-decoder.com/deepseek-takes-outside-money-for-the-first-time-at-a-50-billion-valuation",
           "source_title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
@@ -227,7 +253,7 @@
           "quote_hash": "54d9f83d4b316fb8e93876d2d2a6e78d33248875cd806edb542a09af8bd60950"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

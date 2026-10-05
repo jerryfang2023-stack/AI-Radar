@@ -139,29 +139,56 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "TechCrunch 报道将 Clay 联合创始人 Varun Anand 列为 AIR 融资参与者。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "职务来自Clay官方活动页面；AIR融资参与信息来自TechCrunch报道，未披露个人投资载体或金额。",
+      "summary": "Clay官方活动页将 Varun Anand 列为联合创始人；TechCrunch 对 AIR 2026年9月融资的报道将其列入参与该轮的天使投资人。现有公开证据支持其Clay联合创始人身份及一项投资活动示例，不代表其完整投资组合。",
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "公司职务",
+          "value": "Clay官方活动页将 Varun Anand 列为公司联合创始人。",
+          "source_id": "PROFILE-B11-INV-adada0197df8a6-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "TechCrunch 报道将 Clay 联合创始人 Varun Anand 列为 AIR 融资参与者。",
+          "description": "TechCrunch报道将 Varun Anand 列为参与 AIR 融资的天使投资人；报道未披露个人出资金额。",
+          "source_id": "PROFILE-B11-INV-adada0197df8a6-2"
+        },
+        {
+          "description": "融资来源记录：AIR · 种子轮 · 2026-09-01 · 本轮参投 · $50M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0426e4b3b9347f4f"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-0426e4b3b9347f4f",
+          "source_id": "PROFILE-B11-INV-adada0197df8a6-1",
+          "source_url": "https://events.clay.com/event/gtm-in-gmt",
+          "source_title": "GTM in GMT | Clay Events",
+          "source_content_hash": "c3b0d34f490e7ff7121772dbfba2426fadfa4ef083c275f16579c2a4d1e8503c",
+          "quote": "Clay Co-Founder, Varun Anand",
+          "quote_hash": "44db9c3017c6d68f0633d50d000644977915c02fa41822382c1fd2a64ef1e32c"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-adada0197df8a6-2",
           "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
           "source_title": "AIR raises $50M to help companies vet the skills and add-ons AI agents use | TechCrunch",
           "source_content_hash": "d7d2329ac77d8ae363f1d141c7ca53f0a8c131f02197ddb32c8c8e537c5d33be",
-          "quote": "f Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated. AIR’s pitch goes thusly: The way AI agents are used wholesale at companies is beginning to resemble operating systems, but the tools they use, or the s",
-          "quote_hash": "28edafea5cf597f73be6c3ef9148d233e8576ae3bbb556681e5d8513c088b21b"
+          "quote": "Varun Anand (co-founder of Clay), and other angel investors also participated.",
+          "quote_hash": "a794972d10377486582def4e5512cbab2105f9797e19e03b701a50af1cf5b8e2"
+        },
+        {
+          "source_id": "FISRC-0426e4b3b9347f4f",
+          "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
+          "source_title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
+          "source_content_hash": "f272d6219c1373f8",
+          "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
+          "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

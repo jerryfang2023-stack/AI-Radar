@@ -139,33 +139,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "36氪硬氪报道将瑞钰控股列为 SHAKEPEARE 莎士比亚天使轮共同投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "36氪报道将“瑞钰控股”描述为杨勋忠创办的珠宝品牌服务商，并列为莎士比亚天使轮共同出资方。现有来源未披露其完整工商名称、法律组织形式或本次投资对应的出资载体；本档仅按公开使用的业务集团名称记录。",
+      "summary": "36氪报道将瑞钰控股描述为由杨勋忠创办的头部品牌服务商，主要服务周大生、周大福、潮宏基、老庙等珠宝品牌，报道所称年销售额超过20亿元。报道还将瑞钰控股列为情感智能珠宝品牌莎士比亚天使轮共同出资方；完整法律主体和出资载体未披露。",
+      "facts": [
+        {
+          "field": "identity_and_founder",
+          "label": "公开名称及创办者",
+          "value": "瑞钰控股由杨勋忠创办，现有资料未披露完整工商名称。",
+          "source_id": "PROFILE-B13-INV-90a904fe211372-1"
+        },
+        {
+          "field": "business",
+          "label": "业务描述",
+          "value": "珠宝头部品牌服务商，报道所称年销售额超过20亿元，并服务周大生、周大福、潮宏基、老庙等品牌。",
+          "source_id": "PROFILE-B13-INV-90a904fe211372-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "36氪报道将瑞钰控股列为莎士比亚天使轮共同投资方。",
+          "description": "36氪将瑞钰控股列为莎士比亚数千万元天使轮共同出资方；没有披露瑞钰控股单独出资额或载体。",
+          "source_id": "PROFILE-B13-INV-90a904fe211372-2"
+        },
+        {
+          "description": "融资来源记录：SHAKESPEARE莎士比亚 · 天使轮 · 2026-09-12 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7c1f9318da0f156e"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-7c1f9318da0f156e",
+          "source_id": "PROFILE-B13-INV-90a904fe211372-1",
           "source_url": "https://www.36kr.com/p/3977590035119112",
           "source_title": "情感智能珠宝硬件公司完成天使轮融资，荣耀AI Connect生态企业等押注｜硬氪首发-36氪",
           "source_content_hash": "d1032c41aa0f83cfa43adfbcb45c4c69c49a14d4a71521f19ea904d8af21ae79",
-          "quote": "阶段性工具”到“长期陪伴信物”的跃迁。 作者｜黄楠 编辑｜袁斯来 硬氪获悉，情感智能珠宝硬件企业SHAKESPEARE莎士比亚近日完成数千万元天使轮融资，由荣耀AI Connect生态企业极选智能、国内头部珠宝DP服务商瑞钰控股共同出资。势能资本长期担任公司独家财务顾问。融资资金将主要用于核心算法迭代、多模态情感交互模型开发、新品类的珠宝工艺研发及全球化渠道拓展。 莎士比亚2025年成立于杭州，公司定位“情感智能珠宝”品牌，致力于将传统珠宝工艺与智能穿戴技术深度融合，为提供具备情感陪伴能力的智能珠宝产品。其首款产品为AI身心健康陪伴戒指，已于2026年4月在国内市场正式发售。 莎士比亚创始人杨勋忠历任茵曼COO，茵曼内衣创始人，韩束总经理，其创办的瑞钰控股作为年销售额超2",
-          "quote_hash": "20352b829cc2fdee0df504f90c9a5a659852bed6c1615a24fd7510f58faa9cdf"
+          "quote": "莎士比亚创始人杨勋忠历任茵曼COO，茵曼内衣创始人，韩束总经理，其创办的瑞钰控股作为年销售额超20亿元的头部品牌服务商，服务过周大生、周大福、潮宏基、老庙等国内主流珠宝品牌。",
+          "quote_hash": "c53aa6c60280623aac36e9bf816b13831a3cc39c6facf7d95e21d2825dbf612b"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-90a904fe211372-2",
+          "source_url": "https://www.36kr.com/p/3977590035119112",
+          "source_title": "情感智能珠宝硬件公司完成天使轮融资，荣耀AI Connect生态企业等押注｜硬氪首发-36氪",
+          "source_content_hash": "d1032c41aa0f83cfa43adfbcb45c4c69c49a14d4a71521f19ea904d8af21ae79",
+          "quote": "情感智能珠宝硬件企业SHAKESPEARE莎士比亚近日完成数千万元天使轮融资，由荣耀AI Connect生态企业极选智能、国内头部珠宝DP服务商瑞钰控股共同出资。",
+          "quote_hash": "b8a6a88e232988c20f566a752f539dd956f421557948e4293f38f69adac14a12"
+        },
+        {
+          "source_id": "FISRC-7c1f9318da0f156e",
+          "source_url": "https://www.36kr.com/p/3977590035119112",
+          "source_title": "情感智能珠宝硬件公司完成天使轮融资，荣耀AI Connect生态企业等押注｜硬氪首发-36氪",
+          "source_content_hash": "80dd006269f4eac8ab4b60eaf29cdf44570fce32ff64c8f29386a9d3239c1be8",
+          "quote": "由荣耀AI Connect生态企业极选智能、国内头部珠宝DP服务商瑞钰控股共同出资",
+          "quote_hash": "4ada30b9e1de348659ff4859049c4d670d56c73d8c8e5bf521523b388838b4cd"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-04"
     }
   }
 }

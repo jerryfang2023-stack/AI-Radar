@@ -139,15 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "Odyssey 官方融资公告将 IQT 列为 3.1 亿美元 Series B 参与方；IQT 官网提供该机构的官方介绍。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构使命来自 IQT 官网；投资关系来自 Odyssey 官方公告。没有推断该轮单独出资金额。",
+      "summary": "IQT 官网描述其通过全球投资平台支持国家安全领域的技术商业化；Odyssey 官方 Series B 公告将 IQT 列为参投方。本档记录其公开使命与单项融资关系。",
+      "facts": [
+        {
+          "field": "investment_mission",
+          "label": "官网披露的投资使命",
+          "value": "IQT 称其投资使命包括识别、资助并扩大支持美国及盟友国家安全的突破性技术。",
+          "source_id": "PROFILE-B2-INV-72b5142d4b7601-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Odyssey 官方融资公告将 IQT 列为 Series B 参与方。",
-          "source_id": "PROFILE-af63a556131c47a96de1"
+          "description": "Odyssey 官方 Series B 公告将 IQT 列为参与投资方。",
+          "source_id": "PROFILE-B2-INV-72b5142d4b7601-2"
         },
         {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,20 +164,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-af63a556131c47a96de1",
+          "source_id": "PROFILE-B2-INV-72b5142d4b7601-1",
+          "source_url": "https://www.iqt.org/mission",
+          "source_title": "IQT | Mission",
+          "source_content_hash": "3ff67a7e2c4c813b1e1e9fb6cf5660f3a4272dccaba8e9f147787a2e4df35450",
+          "quote": "Our mission drives how and why we invest: identifying, funding, and scaling breakthrough technologies that sustain U.S. and allied advantage in an increasingly competitive global landscape.",
+          "quote_hash": "d340d48ecfe8e124d40f9b2a1c08bffd0ecb9345758ec78764d4f3361162102e"
+        },
+        {
+          "source_id": "PROFILE-B2-INV-72b5142d4b7601-2",
           "source_url": "https://www.odyssey.systems/our-series-b",
           "source_title": "Our $310 Million Fundraise to Accelerate World Simulation",
           "source_content_hash": "0d0634656bd65a0f021e46eb5af4bf661e74ef1ec0c3d2a222dd4723442be6e7",
-          "quote": "B at a $1.45 billion valuation led by Natural Capital, with participation from Amazon, GV, AMD Ventures, EQT, IQT, and others. They join existing investors including Jeff Dean, Elad Gil, Qasar Younis, Kyle Vogt, Garry Tan, alongside researchers from OpenAI, DeepMind, MSL, Recursive, and Thinking Machines. This investment significantly acc",
-          "quote_hash": "511f146705b6467cc19e6d4a654a00315603a850f3c365ab8a723f63c3be4737"
-        },
-        {
-          "source_id": "PROFILE-77afd210297a3d00f1c8",
-          "source_url": "https://www.iqt.org/about",
-          "source_title": "IQT | About | Our History",
-          "source_content_hash": "1934cf4965faba5c3ab02f612e5d995421fd904231f21ef3a668d804dfae2982",
-          "quote": "IQT | About | Our History This website uses cookies, pixels, and similar technologies (“cookies”), some of which are provided by third parties, to enable website features and functionality; measure, analyze, and improve site perfo",
-          "quote_hash": "7c51d5dd6d88174f67305843edaf2eddbfda267762b4c6cd6873d79dde9049d4"
+          "quote": "with participation from Amazon, GV, AMD Ventures, EQT, IQT, and others",
+          "quote_hash": "63356bfda11ec8291fd3fd2cc12a4ea850347759a1d6526fbbee473d429c576d"
         },
         {
           "source_id": "FISRC-c66141f186c9e128",
@@ -181,7 +188,7 @@
           "quote_hash": "2ecc36a6b793aed899f427b6e097e9eecefce0cef0729237eb10752bfea4790b"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

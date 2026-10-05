@@ -182,10 +182,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "生数科技 Series A+ 融资公告列出 Wondershare 的战略投资；Wondershare 为万兴科技英文品牌名。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司法定中文名与英文名来自万兴科技官方投资者关系页面；投资参与来自生数科技融资公告。公告使用 Wondershare 名称，官方公司资料完成名称对应；未推断出资额或独立基金业务。",
+      "summary": "万兴科技集团股份有限公司官方投资者关系页面列出的英文名为 Wondershare Technology Group Co., Ltd. 生数科技 Series A+ 融资公告以 Wondershare 名义列出一笔战略投资；此处记录上市软件公司的战略投资案例，不据此将其定位为专业基金管理人。",
+      "facts": [
+        {
+          "field": "legal_name_and_english_name",
+          "label": "官方披露的中英文公司名",
+          "value": "万兴科技官方投资者关系页面列示中文名“万兴科技集团股份有限公司”，英文名“Wondershare Technology Group Co.,Ltd”。",
+          "source_id": "PROFILE-COLLECT-INV-bbddf1c45dff8c-K-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,6 +215,14 @@
           "quote_hash": "1e78d46071f1fce84f71820c259028ecfd6f9689328763d4688d94e935b04b62"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-bbddf1c45dff8c-K-2",
+          "source_url": "https://www.wondershare.cn/about/investor/",
+          "source_title": "投资者关系：公告信息、公司资料、管理层信息",
+          "source_content_hash": "683cdc51e6133f904fd675dacab8e1d35a730625cc1df48eed07b77ce4180f0c",
+          "quote": "万兴科技集团股份有限公司",
+          "quote_hash": "a1a54f14e931a268b030107864a0452b841312f2085ad1b0eac4b69b913b9975"
+        },
+        {
           "source_id": "FISRC-474b45f658d5b3df",
           "source_url": "https://mp.weixin.qq.com/s/YF__CZuyK691nOIP4KKITw",
           "source_title": "生数科技完成超6亿元A+轮融资：以多模态大模型为底座，重构AI在数字和物理世界的生产力",
@@ -216,7 +231,7 @@
           "quote_hash": "a25a649086fdd8c1a35495665bff6922aee570135b3424ba1e661da843411488"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

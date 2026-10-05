@@ -123,29 +123,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "36氪项目融资记录将国元股投列为中科类脑 A 轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "子公司关系与业务方向来自国元证券官网；中科类脑轮次及投资者名称来自 36 氪项目融资档案。",
+      "summary": "国元证券官方页面介绍，国元股权是国元证券全资子公司，专业从事私募股权投资基金业务，策略覆盖早期科技投资至成长期和并购投资。中科类脑项目融资档案将国元股投列为 A 轮投资方。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "国元证券全资的私募股权投资基金业务子公司",
+          "source_id": "PROFILE-B12-INV-ba037cf5367972-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官方介绍涵盖早期科技投资、成长期及并购投资",
+          "source_id": "PROFILE-B12-INV-ba037cf5367972-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "参与中科类脑 A 轮。",
+          "source_id": "PROFILE-B12-INV-ba037cf5367972-1"
+        },
+        {
+          "description": "融资来源记录：中科类脑 · 历史轮次未披露 · A轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4cd330eaa5f3d5fc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://survey.gyzq.com.cn/main/company_business/equity_business/gyequity/gyequityjj/index.html",
+          "source_id": "PROFILE-B12-INV-ba037cf5367972-2"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-4cd330eaa5f3d5fc",
+          "source_id": "PROFILE-B12-INV-ba037cf5367972-1",
           "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
           "source_title": "中科类脑 | 项目信息-36氪",
           "source_content_hash": "0568284884832b7d3a9e23cde4dd546743babcccd17da0c0836a444af70d8685",
           "quote": "-04 亿级人民币 中移和创 相关文章 A+轮 2021-08 未透露 东方富海 ， 华柏基金 ， 中融盈通 A轮 2020-10 亿元人民币 合肥产投集团 ， 金科君创 ， 创东方投资 ， 华安嘉业 ， 量子基金 ， 国元股投 ， 华文投资 ， 合肥创新投资 ， 安华创投基金 ， 安徽省量子科学产业发展基金 相关文章 天使轮 2019-02 未透露 合肥高投 工商信息 工商全称 合肥中科类脑智能技术有限公司 英文全称 Hefei Zhongke Brain Intelligence Technology Co., Ltd. 法定代表人 刘海峰 成立时间 2017-09-15 注册地址 中国（安徽）自由贸易试验区合肥市高新区望江西路5089号中国科大先进技术研究院一号嵌入式研发楼3楼 股东（发起人） 持股比例",
           "quote_hash": "0cf2a62379ea2de9344e1ffef7e40d1bf52b6e905c845307772598ff95aee88b"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-ba037cf5367972-2",
+          "source_url": "https://survey.gyzq.com.cn/main/company_business/equity_business/gyequity/gyequityjj/index.html",
+          "source_title": "survey.gyzq.com.cn",
+          "source_content_hash": "51c9219a6584ff0dc65828b9904dac013fe0e506859a3132018cde740661cbcc",
+          "quote": "专业从事私募股权投资基金业务的全资子公司",
+          "quote_hash": "475072477162887ba1a1aa38eda3ad41bd2f258deab48678147d8c84403b6515"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-ba037cf5367972-3",
+          "source_url": "https://survey.gyzq.com.cn/main/company_business/equity_business/gyequity/gyequityjj/index.html",
+          "source_title": "survey.gyzq.com.cn",
+          "source_content_hash": "51c9219a6584ff0dc65828b9904dac013fe0e506859a3132018cde740661cbcc",
+          "quote": "形成了覆盖天使、创业、PE、并购以及母基金等多阶段、多类型的基金矩阵。国元股权成立以来，成功投资了三七互娱、国盾量子、科大国创、工大高科、合锻智能、容知日新、本源量子、新凯来工业机器、珠海基石、泉意光罩、长鑫存储、晶合集成、新剑传动、星海图、腾盾科创、银河航天、阶跃星辰等一批重大项目。近年来，国元股权践行“投早投小投科技”与“投大投强投链主”相结合的策略，围绕人工智能、集成电路、芯片制造、量子科技、具身智能、人形机器人、低空经济、商业航天等硬科技赛道，高质量完成一批国内和行业稀缺标的投资。",
+          "quote_hash": "d0e207c2b18fe552eed336b7a4f57d255df18e2dfdaf480e2a6750fe6f4032db"
+        },
+        {
+          "source_id": "FISRC-4cd330eaa5f3d5fc",
+          "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
+          "source_title": "中科类脑 | 项目信息-36氪",
+          "source_content_hash": "172b52b0715adcdc",
+          "quote": "A轮 2020-10 亿元人民币 合肥产投集团 ， 金科君创 ， 创东方投资 ， 华安嘉业 ， 量子基金 ， 国元股投 ， 华文投资 ， 合肥创新投资 ， 安华创投基金 ， 安徽省量子科学产业发展基金",
+          "quote_hash": "8c4596a390f6ae35cba538d7b05477bf2548bb2231d5cabd716f22c6c1a630da"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

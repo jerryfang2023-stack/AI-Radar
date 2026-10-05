@@ -324,37 +324,44 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "网易业务背景来自公司投资者关系官网；DeepSeek 投资关系来自 IT之家报道，未找到官方公告确认具体出资主体或工具，因此保留为媒体披露案例。",
+      "summary": "网易官网将网易股份有限公司描述为互联网和游戏服务提供商。媒体报道将网易列入 DeepSeek 首轮外部融资投资方；本档记录已披露的投资活动，不据此推断网易拥有独立风险投资基金。",
+      "facts": [
+        {
+          "field": "reported_investment",
+          "label": "媒体披露投资活动",
+          "value": "IT之家将网易列入 DeepSeek 首轮外部融资投资方；这不证明网易运营独立 VC 基金。",
+          "source_id": "PROFILE-COLLECT-INV-bebb703d97b31a-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 DeepSeek 首次外部融资 本轮参投。",
-          "source_id": "FISRC-e0178cb313198d39"
-        },
-        {
-          "description": "公开融资来源将其列为 易启未来 A轮 本轮联合投资。",
-          "source_id": "FISRC-8dee449f158754f9"
-        },
-        {
-          "description": "公开融资来源将其列为 易启未来 天使股东，本轮继续提供资源支持。",
-          "source_id": "FISRC-8dee449f158754f9"
-        },
-        {
-          "description": "公开融资来源将其列为 DeepSeek 首轮投资方。",
+          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-17 · 本轮参投 · 约 510 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e0178cb313198d39"
         },
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cb79cada9cfde759"
+        },
+        {
+          "description": "融资来源记录：易启未来 · A轮 · 2026-05-29 · 本轮联合投资 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8dee449f158754f9"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-e0178cb313198d39",
+          "source_id": "PROFILE-COLLECT-INV-bebb703d97b31a-1",
+          "source_url": "https://ir.netease.com/zh-hans/company-overview/corporate-profile",
+          "source_title": "公司简介 | NetEase, Inc.",
+          "source_content_hash": "23de0996053f88ad432d81216346c181c93e3c6abe8f61de701a9dc2f7bdf99b",
+          "quote": "网易股份有限公司（纳斯达克代号：NTES及港交所代号：9999，“网易”）是一家领先的互联网和游戏服务提供商，致力于提供优质内容。",
+          "quote_hash": "902194b6fe5943bea0eaf5e7eb753f1ffb200fdec31d6812b9df7f3e600cbd71"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bebb703d97b31a-2",
           "source_url": "https://www.ithome.com/0/965/686.htm",
           "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家",
           "source_content_hash": "9c2935c329e79c86a273afaa6b86bffcecb3779f8cbcc69d425c012fe71b950e",
@@ -362,12 +369,12 @@
           "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
         },
         {
-          "source_id": "FISRC-8dee449f158754f9",
-          "source_url": "https://www.163.com/dy/article/KU5A7F9K05118K7K.html",
-          "source_title": "易启未来获A轮投资|融资|理疗|机器人|人工智能|a轮投资_网易订阅",
-          "source_content_hash": "030c9cdd254f876d67c31dc5bac86a6b494e78369b473d8d9980b506d14e5245",
-          "quote": "本轮融资由优山资本、同创伟业、杭州科创集团及网易联合投资",
-          "quote_hash": "935929a855326e91db9fbce28f1fdd3888c60666f0bb5405524e8f15668b7889"
+          "source_id": "FISRC-e0178cb313198d39",
+          "source_url": "https://www.ithome.com/0/965/686.htm",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+          "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+          "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+          "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
         },
         {
           "source_id": "FISRC-cb79cada9cfde759",
@@ -376,9 +383,17 @@
           "source_content_hash": "3082f211a1386051",
           "quote": "NetEase, e-commerce group JD.com, Hong Kong-based IDG Capital and Monolith Capital, and several state-backed artificial intelligence investment funds round out the prospective syndicate",
           "quote_hash": "db307e5b145a8b86319b89eff848bfbc3b3694c526c71f540478f14c3aaa3ad1"
+        },
+        {
+          "source_id": "FISRC-8dee449f158754f9",
+          "source_url": "https://www.163.com/dy/article/KU5A7F9K05118K7K.html",
+          "source_title": "易启未来获A轮投资|融资|理疗|机器人|人工智能|a轮投资_网易订阅",
+          "source_content_hash": "3a64774991d5c2f6",
+          "quote": "本轮融资由优山资本、同创伟业、杭州科创集团及网易联合投资",
+          "quote_hash": "935929a855326e91db9fbce28f1fdd3888c60666f0bb5405524e8f15668b7889"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

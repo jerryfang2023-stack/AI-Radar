@@ -139,33 +139,92 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Xora 与 Temasek 的关系采用 Temasek 自身公告表述；融资案例采用被投公司公告。",
+      "summary": "Xora Innovation 是 Temasek 全资子公司。官网称其常在公司成立前与创业者合作，也可领投种子轮或 A 轮；Upscale AI 的公告将 Xora 列为其 2 亿美元 A 轮领投方之一。",
+      "facts": [
+        {
+          "field": "parent_organization",
+          "label": "机构关系",
+          "value": "Temasek 全资子公司。",
+          "source_id": "B27-XORA-OWNERSHIP"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网称可在公司成立前与创业者合作。",
+          "source_id": "B27-XORA-APPROACH"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子轮及 A 轮。",
+          "source_id": "B27-XORA-STAGE"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Upscale, Inc. A轮 本轮领投。",
+          "description": "Upscale AI 公司公告称，其 2 亿美元 A 轮由 Tiger Global、Premji Invest 和 Xora Innovation 领投。",
+          "source_id": "B27-XORA-UPSCALE"
+        },
+        {
+          "description": "融资来源记录：Upscale, Inc. · A轮 · 2026-01-21 · 本轮领投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3c60f2ab7fcb8b84"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Xora Innovation",
+          "url": "https://xora.vc/",
+          "source_id": "B27-XORA-APPROACH"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "B27-XORA-APPROACH",
+          "source_url": "https://xora.vc/approach",
+          "source_title": "XORA | Approach",
+          "source_content_hash": "20ae160af4b493e7cef158e8998fba3386882040db1f234b473991f161780987",
+          "quote": "We often collaborate with founders before company formation",
+          "quote_hash": "525da36b7ba25ca29430172dbce00293184de808b12a7938a30e6607978455e9"
+        },
+        {
+          "source_id": "B27-XORA-STAGE",
+          "source_url": "https://xora.vc/approach",
+          "source_title": "XORA | Approach",
+          "source_content_hash": "20ae160af4b493e7cef158e8998fba3386882040db1f234b473991f161780987",
+          "quote": "We are equally comfortable leading Seed or Series A rounds",
+          "quote_hash": "9dcfdfd3e547019aec9e67b12ba7bffaf7b0cd088a1244a2ba43b19e2e440968"
+        },
+        {
+          "source_id": "B27-XORA-OWNERSHIP",
+          "source_url": "https://www.temasek.com.sg/en/news-and-resources/news-room/news/2023/NTU-NUS-Temasek-invest-75m-deep-tech-ventures",
+          "source_title": "NTU, NUS, and Temasek to invest S$75 million to accelerate the commercialisation of deep tech ventures - Temasek",
+          "source_content_hash": "331d68aeb1bb1590280dfb7681408311cbdb3ba76c81f8ad33513d91f59a9845",
+          "quote": "Xora Innovation, a wholly owned subsidiary of Temasek",
+          "quote_hash": "4579fa02b07e504c18f8b0e2859c56dd7c8a153c446449e0c7963e9d2a80c51b"
+        },
+        {
+          "source_id": "B27-XORA-UPSCALE",
+          "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company",
+          "source_title": "From $100M Seed to Unicorn in Months Upscale Closes Oversubscribed $200M Series A to Build the First Pure-Play AI Networking Company",
+          "source_content_hash": "7a28ab87e7c17ab42c18000538b0621d58d621bdd58a372ade677f5912adfee6",
+          "quote": "financing led by Tiger Global, Premji Invest, and Xora Innovation",
+          "quote_hash": "7ff95b4693ea8a741875bdf83f1ba0d9f3463f803dd3a4e0e57d0a835103873e"
+        },
         {
           "source_id": "FISRC-3c60f2ab7fcb8b84",
           "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
-          "source_title": "From $100M Seed to Unicorn in Months Upscale Closes Oversubscribed $200M Series A to Build the First Pure-Play AI Networking Company",
-          "source_content_hash": "7a28ab87e7c17ab42c18000538b0621d58d621bdd58a372ade677f5912adfee6",
+          "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+          "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
           "quote": "$200 million Series A financing led by Tiger Global, Premji Invest, and Xora Innovation",
           "quote_hash": "3e019e820247939f24cdb13d98a59bae43ec599929bc7218fc0ebe3216db2307"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

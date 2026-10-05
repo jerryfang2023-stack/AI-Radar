@@ -122,15 +122,27 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "队列名称“Lingotto Innovation”对应 Exor 股东信所称的 Lingotto Innovation Strategy。Exor 官网确认 Lingotto Investment Management LLP 是其全资拥有的独立投资管理公司；公开材料未证明 Innovation Strategy 是独立法律主体。",
-      "coverage_note": "按官方来源区分管理公司与策略名称：Lingotto 是独立投资管理公司，Innovation Strategy 是其投资策略标签；不将二者混作单独注册实体。",
+      "summary": "“Lingotto Innovation”对应 Lingotto Investment Management LLP 的 Innovation Strategy，而不是已证实的独立法律主体。Lingotto 官网披露该管理公司的法律注册信息；Exor 股东信将该策略描述为同时配置公开市场与私募市场。",
+      "coverage_note": "名称层级按公开证据区分：法律实体为 Lingotto Investment Management LLP；Innovation Strategy 是其投资策略名称。本档案不把策略另列为独立基金或法律公司。",
       "facts": [
         {
           "field": "entity_mapping",
           "label": "主体映射",
           "value": "“Lingotto Innovation”对应 Lingotto 的 Innovation Strategy；官方来源未确认其为独立法律主体。",
+          "source_id": "lingotto_innovation_strategy"
+        },
+        {
+          "field": "legal_entity_and_registration",
+          "label": "官网条款披露的运营实体",
+          "value": "Lingotto 官网披露网站由 Lingotto Investment Management LLP 运营；该实体在英格兰注册，编号 OC412688。",
+          "source_id": "PROFILE-S-INV-20f96f10a5b452-3"
+        },
+        {
+          "field": "strategy_mapping",
+          "label": "Exor 股东信披露的策略名称及投资范围",
+          "value": "Exor 股东信称 Innovation Strategy 的投资表现来自公开市场与私募市场配置；该名称是策略，而非材料确认的独立法律实体。",
           "source_id": "lingotto_innovation_strategy"
         }
       ],
@@ -151,7 +163,7 @@
           "source_id": "lingotto_legal_identity",
           "source_url": "https://www.exor.com/pages/lingotto",
           "source_title": "Lingotto | EXOR",
-          "source_content_hash": "b83d02e9ffa8b06419de042a0acf468b79a6fb0d2f55d635c824085545e2ce11",
+          "source_content_hash": "497637ab90e4f7a8d1135d8ce7a753bd9a3a0e67f2b1afaeb5752c5259f129f6",
           "quote": "Lingotto Investment Management LLP is an independent investment management company headquartered in London.",
           "quote_hash": "98776d50a97ee83d4f7d69babc508602c8f79a55d2270072020c60983e917309"
         },
@@ -159,9 +171,17 @@
           "source_id": "lingotto_innovation_strategy",
           "source_url": "https://www.exor.com/pages/investors-media/letter-shareholders",
           "source_title": "Letter to Shareholders | EXOR",
-          "source_content_hash": "7956efa2085e97d7548c656a1c051b57537d0b0df4aed25f83bd89127593014d",
+          "source_content_hash": "16439ef5347e6a7140bf203a9e7b5758fce74818f52d9729820fcf16ed3ebe19",
           "quote": "the Innovation Strategy’s investment performance has been led by both public and private exposure",
           "quote_hash": "58272cbab66cdfe212594cb9609d154a2a7f2dada9f2829260c4c65ab76f868a"
+        },
+        {
+          "source_id": "PROFILE-S-INV-20f96f10a5b452-3",
+          "source_url": "https://www.lingotto.com/terms-conditions",
+          "source_title": "Terms &amp; Conditions - Lingotto",
+          "source_content_hash": "e178bbc6d8d73a86ed2c41da38e8f1326b0bc97ade94f938a8ca165af68884ee",
+          "quote": "This Website is owned and operated by Lingotto Investment Management LLP",
+          "quote_hash": "1b6c3e49b49f84dc1a424f0b10b036ca5f925df239a58a73f9c78194f39cb1eb"
         },
         {
           "source_id": "FISRC-921d200ac951683e",
@@ -172,7 +192,7 @@
           "quote_hash": "29f6a39572c0dcee3d9f011f25267268cbf119efa2db305ac7fe55954575c41a"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

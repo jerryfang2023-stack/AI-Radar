@@ -137,13 +137,19 @@
       }
     ],
     "public_profile": {
-      "summary": "上交所披露的发行文件将浙江赛智伯乐股权投资管理有限公司列为多只基金的管理人。",
+      "summary": "上交所发行人文件将浙江赛智伯乐股权投资管理有限公司列为多只基金的管理人，登记编号为 P1001886。浙江省股权投资行业协会 2021 年会员页介绍其关注科技创新和模式创新；不把该历史介绍中的基金数量或规模当作现状。",
       "facts": [
         {
           "field": "fund_management",
           "label": "监管披露的基金管理身份",
           "value": "多只股权投资基金的管理人，登记编号P1001886",
           "source_id": "PROFILE-24b16b1c29bfce-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "行业协会会员页介绍的投资方向",
+          "value": "浙江省股权投资行业协会于 2021 年发布的会员介绍称，赛伯乐专注于科技创新和模式创新。",
+          "source_id": "PROFILE-S-INV-24b16b1c29bfce-2"
         }
       ],
       "milestones": [],
@@ -155,8 +161,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "基于发行人披露核验管理人名称和登记编号；未扩写其现行基金规模或策略。",
+      "coverage_status": "researched",
+      "coverage_note": "管理人身份和登记号由上交所披露文件确认；投资方向只采用协会 2021 年会员介绍，不推断当前基金规模或组合。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -174,10 +180,18 @@
         {
           "source_id": "PROFILE-24b16b1c29bfce-1",
           "source_url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202605/002190_20260518_6FXS.pdf",
-          "source_title": "sse saizhibole 2026 disclosure",
-          "source_content_hash": "1909f3bd84feccabebab0d570c2b6f28a0e0fda680edbc484b565a41900a6ea0",
+          "source_title": "SSE fund registration filing dated 2026-05-18",
+          "source_content_hash": "ec084f4fce20a4f775115312d48bf63fa93bbd3630d8f0fa4124a45efceab5b8",
           "quote": "浙江赛智伯乐股权投资管理有限公司 P1001886",
           "quote_hash": "b905a38b70d34e486b962f7a9cfbc878dd1b12589bc265f1413185b03e56ba3a"
+        },
+        {
+          "source_id": "PROFILE-S-INV-24b16b1c29bfce-2",
+          "source_url": "https://zpea.org/fuhuichangdanwei/66.html",
+          "source_title": "浙江赛智伯乐股权投资管理有限公司_浙江省股权投资行业协会",
+          "source_content_hash": "fe48d787533aaf7db915b17e4acac39b580a6aebcfa0c9a2b6361a81e1de24d7",
+          "quote": "专注于科技创新和模式创新",
+          "quote_hash": "820f40f48b37f4fb14ec7fd17f736814e4e2fd82677b086a8bfe703f9c9311a3"
         },
         {
           "source_id": "FISRC-0fc87012f374b083",
@@ -188,7 +202,7 @@
           "quote_hash": "c3b26edc54f5313f31b30a3ad82e1b18a69f93fb5fff78bdc0c0244e4ab13f91"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

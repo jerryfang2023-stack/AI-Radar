@@ -329,11 +329,18 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "恒旭资本是具有产业背景的市场化投资机构，网站公开列出中国证券投资基金业协会登记编号 P1070270。其官网新闻称参与奕行智能新一轮融资。",
-      "coverage_note": "机构定位、协会登记号和奕行智能融资参与均据恒旭资本官网；不将其他报道中的金额与单笔出资额等同。",
-      "facts": [],
+      "summary": "恒旭资本官网将其描述为具有产业背景支撑的市场化投资机构，并披露参与奕行智能新一轮融资。本档记录官网披露的参与关系，不将融资轮次规模视为恒旭资本的单笔出资额。",
+      "coverage_note": "机构定位和奕行智能融资信息均来自恒旭资本官网；“20亿元”是页面描述的融资轮次规模，不等于恒旭资本出资金额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "具有产业背景支撑的市场化投资机构。",
+          "source_id": "PROFILE-COLLECT-INV-0758315314873f-1"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -341,10 +348,6 @@
       "education": [],
       "experience_summary": "",
       "track_record": [
-        {
-          "description": "恒旭资本官网列出其参与奕行智能新一轮融资。",
-          "source_id": "hengxu_yixing_official"
-        },
         {
           "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed0092859381f876"
@@ -360,7 +363,7 @@
       ],
       "sources": [
         {
-          "source_id": "hengxu_identity",
+          "source_id": "PROFILE-COLLECT-INV-0758315314873f-1",
           "source_url": "https://hengxucapital.com/",
           "source_title": "恒旭资本",
           "source_content_hash": "187694da0c22e80bd8f2df1d1b82940c23d10d9a87c2fe46945c3be41f25ba99",
@@ -368,7 +371,7 @@
           "quote_hash": "632e1b47f90da1ed1196c3c0ca46a7b191adde729293dd3715dad1b53392da6b"
         },
         {
-          "source_id": "hengxu_yixing_official",
+          "source_id": "PROFILE-COLLECT-INV-0758315314873f-2",
           "source_url": "https://hengxucapital.com/",
           "source_title": "恒旭资本",
           "source_content_hash": "187694da0c22e80bd8f2df1d1b82940c23d10d9a87c2fe46945c3be41f25ba99",
@@ -400,7 +403,7 @@
           "quote_hash": "98283f62fdc1f099a463b6ddcadde3f558c7320eaabe074bee13e6968378fbb8"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

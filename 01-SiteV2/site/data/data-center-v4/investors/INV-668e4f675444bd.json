@@ -235,23 +235,32 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资关系分别依据被投公司公告及融资披露；不代表完整投资组合。",
-      "summary": "Snorkel AI 官方公告将 Addition 列为其 Series E 既有投资方；Xscape Photonics 融资公告也将 Addition 列为领投方。本档记录这两项公开案例。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构类型据官网标题自述，交易角色据融资公告；不推断单笔投资法律载体。",
+      "summary": "Addition 官网页面标题自述其为纽约风险投资机构；Xscape Photonics 融资公告将 Addition 列为该轮新投资者及领投方。现有来源未进一步识别其基金法律实体或投资策略。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网机构说明",
+          "value": "官网页面标题将 Addition 称为纽约风险投资机构。",
+          "source_id": "PROFILE-COLLECT-INV-668e4f675444bd-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "Xscape Photonics 融资公告将 Addition 列为该轮新投资者及领投方。",
+          "source_id": "PROFILE-COLLECT-INV-668e4f675444bd-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Snorkel AI 官方 Series E 公告将 Addition 列为既有投资方。",
-          "source_id": "PROFILE-fb24ca8cba1ffb972f37"
-        },
-        {
-          "description": "Xscape Photonics 融资公告将 Addition 列为领投方。",
-          "source_id": "FISRC-f6cc6b0a81efafb6"
-        },
-        {
           "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-16afc5791c45315a"
+        },
+        {
+          "description": "融资来源记录：Xscape Photonics · A轮扩展 · 2026-03-11 · 本轮领投 · $37 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f6cc6b0a81efafb6"
         },
         {
           "description": "融资来源记录：Snorkel AI · 历史轮次未披露 · 历史轮次领投方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -261,20 +270,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-fb24ca8cba1ffb972f37",
-          "source_url": "https://snorkel.ai/blog/data-2-0-and-the-research-era-of-ai-data/",
-          "source_title": "Data 2.0 and the research era of AI data | Snorkel AI",
-          "source_content_hash": "b4b41af10b5fe41ddff2cc4cbfb41f993551ca8c2d2a8c6ed4d3e15075c3f630",
-          "quote": "with participation from Third Point, March, Blumberg, Allegis, Standard VC, Frontline, and existing investors Addition, Lightspeed, Greylock, GV, P7, Wells Fargo, Walden Catalyst Ventures, and Factory. Since launching our new data-as-a-service offering nearly a year ago, we’ve grown over 18x, and this week crossed an annualized revenue ru",
-          "quote_hash": "d3b2efb7987de75136d72a7c7bf066277dd0d27d86eec5f9c9c9b41645896ef0"
+          "source_id": "PROFILE-COLLECT-INV-668e4f675444bd-1",
+          "source_url": "https://addition.com/",
+          "source_title": "Addition - Venture Capital Firm Based in New York",
+          "source_content_hash": "00c28f63f65865d663255c10668065dd17265eb4e91bd2765ecfb22bf9c9e662",
+          "quote": "Addition - Venture Capital Firm Based in New York",
+          "quote_hash": "c273444d49a9b8d26c810c9e862041ecdf58d379cc5c361fccd4a8578998d727"
         },
         {
-          "source_id": "FISRC-f6cc6b0a81efafb6",
+          "source_id": "PROFILE-COLLECT-INV-668e4f675444bd-2",
           "source_url": "https://www.vcaonline.com/news/2026031104/xscape-photonics-announces-37-million-in-new-funding-launches-eight-wavelength-laser-for-ai-data-center-networks/",
           "source_title": "Xscape Photonics Announces $37 Million in New Funding, Launches Eight-Wavelength Laser for AI Data Center Networks | Venture Capital Access Online",
           "source_content_hash": "5606d85555a62f18b3a529d0a83bea1b93649b50e8ca4c2bf685d57bc1c9ba47",
-          "quote": "ditional funding, bringing the company’s total Series A funding to $81 million. The latest funding was led by Addition, a new investor, with continued support from existing investors, including IAG Capital Partners and NVIDIA, among others. The new investment builds on the company's $44 million Series A round announced in 2024. Xscape Pho",
-          "quote_hash": "d9cde5629fc8740afd5e07d087e43b21505856ac65873f995535ba0ceec8dd82"
+          "quote": "The latest funding was led by Addition, a new investor",
+          "quote_hash": "bd2cf74e571b927967ca6a2913514e1a64a228d631c9a5bcf85356901977f286"
         },
         {
           "source_id": "FISRC-16afc5791c45315a",
@@ -283,6 +292,14 @@
           "source_content_hash": "ad04baf1994708d0",
           "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
           "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
+        },
+        {
+          "source_id": "FISRC-f6cc6b0a81efafb6",
+          "source_url": "https://www.vcaonline.com/news/2026031104/xscape-photonics-announces-37-million-in-new-funding-launches-eight-wavelength-laser-for-ai-data-center-networks/",
+          "source_title": "Xscape Photonics 宣布获得 3700 万美元新融资，推出用于 AI 数据中心网络的八波长激光器",
+          "source_content_hash": "eec8902036c0e8c910f2ed833539506f482f2055ca35957c73a49714facafb8b",
+          "quote": "The latest funding was led by Addition, a new investor",
+          "quote_hash": "bd2cf74e571b927967ca6a2913514e1a64a228d631c9a5bcf85356901977f286"
         },
         {
           "source_id": "FISRC-6dd774496b50aaac",

@@ -139,37 +139,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "GRC富华资本官网介绍其聚焦硬核科技投资；档案仅记录公开融资来源支持的投资活动。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "summary": "GRC富华资本官网介绍其管理私募创投基金，并聚焦自主创新高新技术及初创、成长期企业。投资界2026年报道将富华资本列为容芯致远天使轮跟投方；此处保留公开使用的机构品牌称呼，不据此推定特定基金或管理公司。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资领域与阶段（官网）",
+          "value": "自主创新高新技术领域；初创期和成长期企业",
+          "source_id": "B31-FUHUA-OFFICIAL"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将富华资本列为容芯致远相关融资的投资参与方。",
+          "description": "投资界2026年5月报道将富华资本列为容芯致远数亿元天使轮跟投方，未披露其单家投资金额。",
+          "source_id": "B31-FUHUA-RONGXIN"
+        },
+        {
+          "description": "融资来源记录：容芯致远 · 天使轮 · 2026-05-08 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ceee1629da3e3cce"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-2c30b96dfdc8b4295b6c",
-          "source_url": "https://www.grcfunds.com/",
+          "source_id": "B31-FUHUA-OFFICIAL",
+          "source_url": "https://www.grcfunds.com/news/448",
           "source_title": "GRC富华资本 - 助人兴业，兴利于益",
-          "source_content_hash": "8c82c7d456d6004e97fe2a564e27ac1957135c6b5810c26203e1fad7793aead0",
-          "quote": "专注硬核科技投资",
-          "quote_hash": "46f279936cddb667f12927b0382d88a225296eac9efaa10f229ebf511a3e14d0"
+          "source_content_hash": "04633f89449d1dcc5ce02fb55774ca525e592c980a927c02d39e3186363c6f7b",
+          "quote": "富华资本主要关注自主创新的高新技术领域，聚焦初创期、成长期企业，重点投资半导体、关键部件、数字转化、智能基础建设、智能制造、新能源、新材料、生物医疗等战略新兴行业。",
+          "quote_hash": "dadd9ad74094e7fcd4c4ca70c6bd5e69ee451cb21e9a42b44901e54764d30fd8"
+        },
+        {
+          "source_id": "B31-FUHUA-RONGXIN",
+          "source_url": "https://news.pedaily.cn/202605/563553.shtml",
+          "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资_投资界",
+          "source_content_hash": "29dcd08b2c1e67ab1702a6941deedb5e705d37f6240d44a71a254f7c793a89fd",
+          "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投。",
+          "quote_hash": "c3d6ab71cae9a40182cd9479167a934868b9b52d44a5e57accce697660bdbc27"
         },
         {
           "source_id": "FISRC-ceee1629da3e3cce",
           "source_url": "https://news.pedaily.cn/202605/563553.shtml",
-          "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资_投资界",
-          "source_content_hash": "29dcd08b2c1e67ab1702a6941deedb5e705d37f6240d44a71a254f7c793a89fd",
+          "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+          "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
           "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
           "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
         }
       ],
-      "last_verified_at": "2026-10-04",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

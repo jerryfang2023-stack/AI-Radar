@@ -122,11 +122,18 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "浙江吉利控股集团是汽车、科技及投资集团。新浪财经报道晶能微电子融资投资方包括吉利控股。",
-      "coverage_note": "集团身份与投资业务范围来自吉利控股官网；晶能微电子投资关系来自新浪财经报道。",
-      "facts": [],
+      "summary": "吉利控股集团官网将集团定位为汽车、科技和投资集团。新浪财经报道将吉利控股列为晶能微电子多轮融资投资方之一；报道未列明具体投资载体或单独金额。",
+      "coverage_note": "集团定位来自吉利控股官网；融资参与来自新浪财经报道。",
+      "facts": [
+        {
+          "field": "group_profile",
+          "label": "集团官网披露的集团定位",
+          "value": "吉利控股集团从事汽车、科技和投资业务。",
+          "source_id": "geely_identity"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -169,7 +176,7 @@
           "quote_hash": "86ac340beb005da05b72fdc061347188328775b4ca4473a0dd9bcdbfc22c3f0b"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

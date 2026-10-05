@@ -139,33 +139,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "已核实 Innosuisse 为瑞士联邦创新资助机构。Sparkli 融资报道所述为 funding；本档案将其记作公共创新资助，不将资助等同股权投资。",
+      "summary": "Innosuisse 是瑞士联邦创新局，依法支持基于科学的创新并促进学术研究与市场合作。Sparkli 预种子轮报道将 Innosuisse 记作资助来源之一；现有来源未显示其以股权投资人身份参投。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "瑞士联邦创新资助机构。",
+          "source_id": "B26-INNO-HOME"
+        },
+        {
+          "field": "activity_type",
+          "label": "支持方式",
+          "value": "研发与创新资助；不据此认定为股权投资。",
+          "source_id": "B26-INNO-SPARKLI"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Sparkli 预种子轮 本轮参投。",
+          "description": "Sparkli 预种子轮报道将 Innosuisse 列为资助来源之一；报道未称其为股权投资方。",
+          "source_id": "B26-INNO-SPARKLI"
+        },
+        {
+          "description": "融资来源记录：Sparkli · 预种子轮 · 2026-01-22 · 本轮参投 · 5 million USD。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-20a83c87c0b64e7f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "瑞士联邦创新局",
+          "value": "https://www.innosuisse.admin.ch/en",
+          "url": "https://www.innosuisse.admin.ch/en",
+          "source_id": "B26-INNO-HOME"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-20a83c87c0b64e7f",
+          "source_id": "B26-INNO-HOME",
+          "source_url": "https://www.innosuisse.admin.ch/en/mission-innosuisse",
+          "source_title": "The mission of Innosuisse",
+          "source_content_hash": "ba733f43c8706681bb4cbfe4ece7e9093a6b561574028c309c5e235c25c36a3c",
+          "quote": "Innosuisse is the Swiss Innovation Agency.",
+          "quote_hash": "40e9b6c9b2e28d9e9bfd16f7f57b369a2af2ad011127f4c181c827165f514c80"
+        },
+        {
+          "source_id": "B26-INNO-SPARKLI",
           "source_url": "https://www.trendingtopics.eu/sparkli-former-google-trio-raises-5-million-for-child-friendly-ai-learning-platform/",
           "source_title": "Sparkli: Former Google trio raises $5 million for child-friendly AI learning platform",
           "source_content_hash": "9e118f576dd842037ba7e4a1bdbf993887cafa276576062e8f6298ab3b0c536b",
+          "quote": "with participation from Arc Investors and funding from Innosuisse",
+          "quote_hash": "411c2c0446e16ace39de6668fee6f0ada00efcda8beba3c4f90b3f60b4ed4c7f"
+        },
+        {
+          "source_id": "FISRC-20a83c87c0b64e7f",
+          "source_url": "https://www.trendingtopics.eu/sparkli-former-google-trio-raises-5-million-for-child-friendly-ai-learning-platform/",
+          "source_title": "Sparkli：前谷歌三人组为儿童友好型AI学习平台融资500万美元",
+          "source_content_hash": "c24e7de0cd5898cdfbbf52a86093388ddec080752cf00de1d1c8ad3a3b68454b",
           "quote": "The pre-seed financing round is led by Founderful, with participation from Arc Investors and funding from Innosuisse.",
           "quote_hash": "64d5a3036f53bc29fdfd92c24b63b24e0524672511020668c1724c7fec3f631c"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "Innosuisse 是瑞士联邦创新局，依法支持基于科学的创新并促进学术研究与市场合作。Sparkli 预种子轮报道将 Innosuisse 记作资助来源之一；现有来源未显示其以股权投资人身份参投。"
     }
   }
 }

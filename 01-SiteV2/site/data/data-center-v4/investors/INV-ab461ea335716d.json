@@ -180,10 +180,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "GitHub 官方文章将 Datadog 列为开源安全项目的资金合作伙伴；该记录表示项目资助支持，不表示股权投资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司业务信息来自 Datadog 官网；开源项目支持身份来自 GitHub 官方文章。项目资金支持与股权投资、基金管理分别记录。",
+      "summary": "Datadog 官网将其定位为面向云时代开发、IT运营与业务用户的监控和安全平台；GitHub 的开源安全项目回顾把 Datadog 列入 Funding Partners。后者是项目资金支持记录，不表示股权投资或专业基金管理业务。",
+      "facts": [
+        {
+          "field": "company_business",
+          "label": "官网披露的公司业务",
+          "value": "Datadog 官网称其为面向云时代开发人员、IT运营团队和业务用户的监控与安全平台。",
+          "source_id": "PROFILE-COLLECT-INV-ab461ea335716d-J-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -206,6 +213,14 @@
           "quote_hash": "6e55972dc6f14c529617467116537e7b213de062467ee0d3e86d47d1f75dee21"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-ab461ea335716d-J-2",
+          "source_url": "https://www.datadoghq.com/",
+          "source_title": "Cloud Monitoring as a Service | Datadog",
+          "source_content_hash": "5497438ebea406f234bb99e02fb18239b0c39b2bddcef1e2ec5bc4bae3de7dca",
+          "quote": "We are building the monitoring and security platform for developers, IT operations teams and business users in the cloud age.",
+          "quote_hash": "41a52fcf159de274912fa4ddac12f9ce22d62a2fbed6f6cb3492a9ce835486a8"
+        },
+        {
           "source_id": "FISRC-944113caf8db4760",
           "source_url": "https://github.blog/security/supply-chain-security/investing-in-the-people-shaping-open-source-and-securing-the-future-together/",
           "source_title": "Investing in the people shaping open source and securing the future together - The GitHub Blog",
@@ -214,7 +229,7 @@
           "quote_hash": "7fc1ba5abad81f530029defb3991ea53bf9089b9fdb148d3d8430d6085cbe757"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

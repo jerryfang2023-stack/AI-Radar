@@ -140,33 +140,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "硅基流动 B 轮融资报道将壁仞战投列为联合投资机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "壁仞官网介绍公司主营通用智能计算解决方案；上海科技大学校园岗位转载显示壁仞科技“战投融”团队承担产业分析、投资策略、标的筛选、尽调和交易执行；36氪将“Biren Strategic Investment”列入硅基流动B轮投资方。公开资料未披露该轮对应的基金或法律出资主体，本档仅按公开使用的团队/投资标签记录。",
+      "summary": "壁仞科技官网将公司介绍为通用智能计算解决方案提供商。上海科技大学转载的岗位信息显示，壁仞科技“战投融”团队招聘实习生，工作涉及产业研究、投资策略、标的筛选、商业尽调及交易执行。36氪将“Biren Strategic Investment”列为硅基流动超20亿元融资的投资方；披露未指明独立基金或本轮具体出资载体。",
+      "facts": [
+        {
+          "field": "company_business",
+          "label": "公司业务",
+          "value": "壁仞科技官网称其提供通用智能计算解决方案，以自研壁砺系列GPU产品为核心。",
+          "source_id": "PROFILE-B13-INV-92fde2daf3d594-1"
+        },
+        {
+          "field": "investment_function",
+          "label": "战略投资职能",
+          "value": "上海科技大学发布的招聘转载称，壁仞科技“战投融”团队工作包括产业研究、投资策略、标的筛选、商业尽调和交易执行。",
+          "source_id": "PROFILE-B13-INV-92fde2daf3d594-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "硅基流动 B 轮融资报道直接列出壁仞战投为联合投资方。",
+          "description": "36氪报道将“Biren Strategic Investment”列入硅基流动超20亿元B轮融资的联合投资方；没有披露该标签所指的具体基金或法律出资主体。",
+          "source_id": "PROFILE-B13-INV-92fde2daf3d594-3"
+        },
+        {
+          "description": "融资来源记录：硅基流动 · B轮 · 2026-06-16 · 本轮联合投资 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-879cc82306af58a1"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "壁仞科技官网",
+          "value": "公司官网",
+          "url": "https://www.birentech.com/about/",
+          "source_id": "PROFILE-B13-INV-92fde2daf3d594-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B13-INV-92fde2daf3d594-1",
+          "source_url": "https://www.birentech.com/about/",
+          "source_title": "关于我们 - 壁仞科技官网",
+          "source_content_hash": "386a4e126ab6d8b003cae63ce1c895b1de272cc04cdfa7d8ffb1a6a11b91d589",
+          "quote": "壁仞科技是国内领先的通用智能计算解决方案提供商，以自主研发的壁砺™系列 GPU 产品为核心，为各行业提供强大、安全、高效的算力基础设施。自2019年成立以来，壁仞科技坚持原创核心架构，首创 Chiplet 大算力芯片，构建软硬协同创新的技术体系，致力于打造国产智能计算产业生态，成为中国人工智能产业发展的核心引擎。",
+          "quote_hash": "bb8d96cd0edbee98f408893a922c2c583868c3806a609df29b6c24fff51f2cbc"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-92fde2daf3d594-2",
+          "source_url": "https://career.shanghaitech.edu.cn/single/2021/04/19/2104191725201791002718120709220748410023.html",
+          "source_title": "壁仞科技 战投融实习生招聘",
+          "source_content_hash": "504f1c8d2624f18fc6e4765cc257c7aa87374d1e367c42c184bf1c21a7912b18",
+          "quote": "壁仞科技 战投融实习生招聘 发布时间： 编辑：上海科技大学学生生涯与发展中心 浏览次数： loading... 工作描述: 1. 根据团队确定的研究方向，进行产业分析，制订细分领域投资策略，形成行业研究报告，并进行投资标的筛选 2. 交易执行，进行项目对接、商业尽调、财务建模，投资/行业报告的撰写等具体工作",
+          "quote_hash": "5b494e1ca88d0465903b1e2c3e1b385df93d1d8b53d561e6638d2930cbc91873"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-92fde2daf3d594-3",
+          "source_url": "https://eu.36kr.com/en/p/3855461124389767",
+          "source_title": "Silicon Flow Completes New Round of Over 2 - Billion - Yuan Financing",
+          "source_content_hash": "68107d1156211670f621a1651b94163f01a68c31b4743800e9c7d40b096b161e",
+          "quote": "This round of financing was jointly invested by industrial capital, top financial institutions, and state-owned assets, including Ctrip Strategic Investment, JinkoSolar Holding, Kingdee International Software Group, Unicom Xinwo, United Innovation and Investment Fund under Unicom Capital, Shengyi Capital (Industrial Capital of Runze Group), Biren Strategic Investment, NIO Capital, SenseTime Strategic Investment, Giant Network, Guotai Junan Innovation Investment, GGV Capital, Huaxi Ruideng, Huakong Fund, China Development Financial, Beigong Investment, Zhongguancun Science City, etc.",
+          "quote_hash": "62257e7d9bcd9dd8dfae697492bcc584839cc072a2454ffef96389bb4327588e"
+        },
         {
           "source_id": "FISRC-879cc82306af58a1",
           "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
-          "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”__财经头条",
-          "source_content_hash": "14a2ef39cb3ca39abef7dd53d2574aa95ed3b829fa60643e979daa0f17612c32",
-          "quote": "腾讯QQ QQ空间 来源：钛媒体 6月16日，AI基础设施服务商硅基流动（SiliconFlow）宣布完成超20亿元B轮融资。本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资，华兴资本担任独家财务顾问。 至此，这家成立于2023年8月的公司，已获得覆盖能源、芯片、算力基础设施、云服务、大模型及场景应用全产业链的头部企业注资。 硅基流动将自己定位为“Token工厂”。这个概念的核心在于：将算力、算法与系统软件深度耦合，封装成标准化的Token输出能力。 用更通俗的话说，大模型应用开发者和企业客户不",
-          "quote_hash": "e20a629bc23e2c38547ceffa149bd0dec61df4f28cecb0e8b520e6474fee0bfa"
+          "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”",
+          "source_content_hash": "f1654d9235cc7fa8",
+          "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
+          "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

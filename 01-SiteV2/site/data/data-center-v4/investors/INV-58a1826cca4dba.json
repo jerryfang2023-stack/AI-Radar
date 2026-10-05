@@ -137,7 +137,7 @@
       }
     ],
     "public_profile": {
-      "summary": "武汉市投资促进局转载并署名洪山资本的产业报道，记载洪山资本设立产业链投资基金及投资、引进项目；页面未提供“洪山资本”对应的单一法人全称。",
+      "summary": "武汉洪山资本投资有限公司被上市公司公告列为湖北中洪通宇空间技术有限公司的共同出资方；洪山区国资局公开报道以“洪山资本”称呼当地投资机构，并记载其获得股权投资机构奖项。武汉市投资促进局转载并署名洪山资本的产业报道还介绍了其产业链基金及新能源、智能网联汽车项目活动。现有来源没有说明该公司与其他洪山系基金管理主体的法律关系。",
       "facts": [
         {
           "field": "investment_activity",
@@ -150,10 +150,26 @@
           "label": "政府网站记载的项目活动",
           "value": "2023年投资并引进苏州利来、孔辉汽车等重大项目。",
           "source_id": "PROFILE-INV-58a1826cca4dba-2"
+        },
+        {
+          "field": "legal_name",
+          "label": "上市公司公告披露的投资方名称",
+          "value": "上市公司公告将武汉洪山资本投资有限公司列为共同出资方。",
+          "source_id": "PROFILE-S-INV-58a1826cca4dba-3"
+        },
+        {
+          "field": "public_recognition",
+          "label": "洪山区国资局披露的机构荣誉",
+          "value": "洪山区国资局报道，洪山资本获评湖北最活跃股权投资机构、湖北最佳区域产业投资机构。",
+          "source_id": "PROFILE-S-INV-58a1826cca4dba-4"
         }
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "上市公司公告将武汉洪山资本投资有限公司列为与广东通宇通讯共同出资成立湖北中洪通宇空间技术有限公司的出资方。",
+          "source_id": "PROFILE-S-INV-58a1826cca4dba-5"
+        },
         {
           "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ae72db61aa80327"
@@ -161,8 +177,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "按政府网站公开使用的品牌称谓记录其投资活动，不将其误写成未经一手材料核实的法律主体。",
+      "coverage_status": "researched",
+      "coverage_note": "公司全称及共同出资信息采用上市公司公告原文；洪山区政府和武汉市投资促进局材料分别以“洪山资本”简称报道。未将其他名称相近的洪山系基金管理人并入本主体。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -194,6 +210,30 @@
           "quote_hash": "275ffd6db0d6ef9424f23c6219a4efd6bd4ea937073def11767b68dba5daa349"
         },
         {
+          "source_id": "PROFILE-S-INV-58a1826cca4dba-3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-03-24/1222882606.PDF",
+          "source_title": "广东通宇通讯股份有限公司投资者关系活动记录表",
+          "source_content_hash": "e0ab71a2540955db3160d528d2abfa7c353ca8e2bf9cd00b6835532564d85eb6",
+          "quote": "武汉洪山资本投资有限公司",
+          "quote_hash": "ed456d81867ade499d3942f9c419ddca424f7849e159d3dfea1bdaf81c138542"
+        },
+        {
+          "source_id": "PROFILE-S-INV-58a1826cca4dba-4",
+          "source_url": "https://www.hongshan.gov.cn/zfbm/qgzj/fdzdgknr/gzdt/202603/t20260327_2745732.shtml",
+          "source_title": "从 “稳基础” 到 “强突破”！洪山区国资国企用实干书写年度发展新篇章 - 武汉市洪山区人民政府门户网站",
+          "source_content_hash": "067a9069947354821ec0ae5f6b7db44952465df245b62b38f3ac4445da311574",
+          "quote": "洪山资本荣获湖北最活跃股权投资机构、湖北最佳区域产业投资机构",
+          "quote_hash": "f2d6cc247161d9a9ed632efb060502316ab01dec50be715923e57982117be2c5"
+        },
+        {
+          "source_id": "PROFILE-S-INV-58a1826cca4dba-5",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-03-24/1222882606.PDF",
+          "source_title": "广东通宇通讯股份有限公司投资者关系活动记录表",
+          "source_content_hash": "e0ab71a2540955db3160d528d2abfa7c353ca8e2bf9cd00b6835532564d85eb6",
+          "quote": "武汉洪山资本投资有限公司共同出资成立湖北中洪通宇空间技术有限公 司",
+          "quote_hash": "c189858b7322110256112b52a71506c1e1847e523c9f8609bad47de935e82ae5"
+        },
+        {
           "source_id": "FISRC-1ae72db61aa80327",
           "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
           "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
@@ -202,7 +242,7 @@
           "quote_hash": "dd9d75ad7cd01080ce06111b58af4c07b7a99db8d909dcc19dc94980c7f5c7d6"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

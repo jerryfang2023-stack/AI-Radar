@@ -121,13 +121,25 @@
       }
     ],
     "public_profile": {
-      "summary": "金时科技公告将汕韩光层私募基金管理（海南）有限公司列为基金管理人及普通合伙人。",
+      "summary": "汕韩光层私募基金管理（海南）有限公司被上市公司 2022 年公告列为海南汕韩智芯一号基金的管理人及普通合伙人。材料还记载其于 2022 年 3 月登记为私募基金管理人；该历史登记信息不代表当前状态。",
       "facts": [
         {
           "field": "manager_identity",
           "label": "公告披露的基金管理身份",
           "value": "海南汕韩智芯一号股权投资基金的管理人及普通合伙人",
           "source_id": "PROFILE-20da49691c281d-1"
+        },
+        {
+          "field": "fund_manager_registration_as_of_2022",
+          "label": "2022 年公告披露的管理人登记信息",
+          "value": "公告称汕韩光层于 2022 年 3 月 14 日登记为私募投资基金管理人，编号 P1073196；此为公告当时信息。",
+          "source_id": "PROFILE-S-INV-20da49691c281d-2"
+        },
+        {
+          "field": "managed_fund_relationship",
+          "label": "公告披露的基金管理关系",
+          "value": "公告将汕韩光层列为海南汕韩智芯一号股权投资基金的管理人。",
+          "source_id": "PROFILE-S-INV-20da49691c281d-3"
         }
       ],
       "milestones": [],
@@ -139,8 +151,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "按发行人公告核验法律主体及基金管理角色；当前资料仅覆盖该项历史基金活动。",
+      "coverage_status": "researched",
+      "coverage_note": "可核验的管理人备案及基金关系来自 2022 年上市公司公告。尚未取得该管理人当前登记状态的官方查询结果，因此只按公告披露日期表述。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -158,10 +170,26 @@
         {
           "source_id": "PROFILE-20da49691c281d-1",
           "source_url": "https://pdf.dfcfw.com/pdf/H2_AN202208011576765700_1.pdf?1659383225000.pdf=",
-          "source_title": "jinshi sahan fund 2022 announcement",
-          "source_content_hash": "c655a051f6632dca98f78ac133a9f62b061678f5b0b0bff5cd88c37f5913562f",
+          "source_title": "金时科技关于与专业投资机构共同投资的公告（2022-037）",
+          "source_content_hash": "9cc7c81e508781d8460262b51a2c46ca598a240fd16d0c27115f33c6f6959762",
           "quote": "基金管理人及普通合伙人的基本情况 企业名称：汕韩光层私募基金管理（海南）有限公司",
           "quote_hash": "d645200783d6a31618f58e9fc927c42ae453c982559105602fe3e12f54e6e6bf"
+        },
+        {
+          "source_id": "PROFILE-S-INV-20da49691c281d-2",
+          "source_url": "https://pdf.dfcfw.com/pdf/H2_AN202208011576765700_1.pdf?1659383225000.pdf=",
+          "source_title": "金时科技关于与专业投资机构共同投资的公告（2022-037）",
+          "source_content_hash": "9cc7c81e508781d8460262b51a2c46ca598a240fd16d0c27115f33c6f6959762",
+          "quote": "根据中国基金业协会查询信息，汕韩光层于 2022 年 3 月 14 日登记备案为私募投资基金管理人，备案编号为 P1073196。",
+          "quote_hash": "178248f8889474f11f3331cafc849eac857bbe991278d21701afa50a33f945f8"
+        },
+        {
+          "source_id": "PROFILE-S-INV-20da49691c281d-3",
+          "source_url": "https://pdf.dfcfw.com/pdf/H2_AN202208011576765700_1.pdf?1659383225000.pdf=",
+          "source_title": "金时科技关于与专业投资机构共同投资的公告（2022-037）",
+          "source_content_hash": "9cc7c81e508781d8460262b51a2c46ca598a240fd16d0c27115f33c6f6959762",
+          "quote": "基金名称：海南汕韩智芯一号股权投资基金合伙企业（有限合伙）",
+          "quote_hash": "2a3ac0e0464a8ae27d2df9733f31021bb912cecdbebf7f2c707ad822f6b119d1"
         },
         {
           "source_id": "FISRC-d5068f248b055320",
@@ -172,7 +200,7 @@
           "quote_hash": "a8f7ae303c0149216d3dd8438e6d7c796cfb9264c008e2b86a4fec91089ec06e"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

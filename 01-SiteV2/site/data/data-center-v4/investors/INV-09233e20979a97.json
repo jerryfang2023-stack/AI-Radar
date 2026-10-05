@@ -138,11 +138,18 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
       "summary": "涂鸦智能是全球 AI 云平台服务商；每经网报道其跟投珞博智能 2026 年 Pre-A 轮融资。",
       "coverage_note": "公司身份来自涂鸦智能投资者关系官网；融资参与来自每经网报道，未推断涂鸦智能通过独立 VC 子公司投资。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "company_profile",
+          "label": "官网披露的公司定位",
+          "value": "Tuya Inc. 是全球 AI 云平台服务商。",
+          "source_id": "tuya_identity"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -172,7 +179,7 @@
           "source_id": "tuya_robopoet_pre_a",
           "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
           "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局 | 每经网",
-          "source_content_hash": "11d8b301d21282e69144a5e79645631eb70b92623ae56992d43ca82e8659fd7f",
+          "source_content_hash": "be775caceefc83ae0b7a5325ad08aa2d5e635e1f1caf9255a75c2af7a46bc87b",
           "quote": "涂鸦智能跟投",
           "quote_hash": "b2c5ff99d1597ea5e96e143fb036f7cea637c75d35c125e1c1c4bae7ec481dca"
         },
@@ -185,7 +192,7 @@
           "quote_hash": "b2c5ff99d1597ea5e96e143fb036f7cea637c75d35c125e1c1c4bae7ec481dca"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

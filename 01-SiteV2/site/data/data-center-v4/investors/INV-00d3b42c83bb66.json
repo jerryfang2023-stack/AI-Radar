@@ -154,11 +154,18 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "分众传媒是上市户外媒体集团（股票代码 002027）。证券时报报道钛镁时代获得其数千万元独家战略投资。",
-      "coverage_note": "公司身份来自分众传媒官网；投资事件来自证券时报，金额按报道表述记录。",
-      "facts": [],
+      "summary": "分众传媒官网介绍其主营生活圈媒体的开发和运营，覆盖楼宇及影院媒体。证券时报报道该集团对钛镁时代进行了独家战略投资；档案记录为经营性企业的战略投资，不将其认定为专业基金。",
+      "coverage_note": "公司业务介绍来自分众传媒官网；投资关系及金额级别来自证券时报报道。",
+      "facts": [
+        {
+          "field": "company_business",
+          "label": "官网披露的主营业务",
+          "value": "分众传媒开发和运营生活圈媒体网络，主要包括楼宇媒体和影院银幕广告媒体。",
+          "source_id": "PROFILE-COLLECT-INV-00d3b42c83bb66-O-3"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -193,6 +200,14 @@
           "quote_hash": "0276150a678adac6cfc9f5762684c4fa00a52aa8b9741fc37b0db0ba8620676a"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-00d3b42c83bb66-O-3",
+          "source_url": "https://www.focusmedia.cn/investorinfo/",
+          "source_title": "投资者关系",
+          "source_content_hash": "06d8c13154021e5a0ec7173865ebc7e39a47238dc7774d8d5cebc37173fce68b",
+          "quote": "公司当前的主营业务为生活圈媒体的开发和运营，主要产品为楼宇媒体（包含电梯电视媒体和电梯海报媒体）和影院银幕广告媒体等",
+          "quote_hash": "84302671f86016c28b4cdb1facec7a99f1562bedb1015f751d69d82a3674f6ff"
+        },
+        {
           "source_id": "FISRC-50ba1a44528f419f",
           "source_url": "https://news.pedaily.cn/202605/564551.shtml",
           "source_title": "「钛镁时代」获数千万人民币投资，推进数字营销全域新业态布局",
@@ -209,7 +224,7 @@
           "quote_hash": "0276150a678adac6cfc9f5762684c4fa00a52aa8b9741fc37b0db0ba8620676a"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

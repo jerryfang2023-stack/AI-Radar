@@ -192,10 +192,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "PR Newswire 融资公告将 Irregular Expressions 列为 Modiqo Pre-Seed 轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资方式、阶段与领域来自机构官网；融资参与来自 Modiqo 项目方公告。",
+      "summary": "Irregular Expressions 官网将其描述为由软件工程和产品负责人支持、投资并辅导基础设施、数据和机器学习早期创业公司的团队，并称重点覆盖 pre-seed 与 seed 阶段。Modiqo 融资公告将其列为投资方；公开案例不代表完整组合。",
+      "facts": [
+        {
+          "field": "investment_focus_and_stage",
+          "label": "官网披露的投资方向与阶段",
+          "value": "Irregular Expressions 投资并辅导基础设施、数据和机器学习早期创业公司，重点覆盖 pre-seed 与 seed 阶段。",
+          "source_id": "PROFILE-COLLECT-INV-84899b73c9e8c4-H-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -216,6 +223,14 @@
           "source_content_hash": "a74db640a5df1d63c6fbe1ed75a4986ef82a7565325bdda571a4c8c93897145c",
           "quote": "they can actually depend on. The round was co-led by Heavybit and Seligman Ventures, with participation from Irregular Expressions and angel investors. Most companies have discovered that getting an AI agent to work once is easy. Getting it to work reliably — every day, across changing models and volatile APIs — is where the trouble star",
           "quote_hash": "f0dde1b18087e98784d6b1a7c88dd5e6b5bb85b5e33802c9236124bd47c6083b"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-84899b73c9e8c4-H-2",
+          "source_url": "https://www.irregex.vc/",
+          "source_title": "Irregular Expressions",
+          "source_content_hash": "3311f41be7ca7ad1d980dc0223b0eeac624f2a0dc35ff215c8f0c386e3d0c7ba",
+          "quote": "Engineer leaders investing in Infrastructure, Data Engineering, AI, DevOps, Security, Observability and Developer Productivity startups, at the pre-seed and seed stages Irregular Expressions ( IrregEx for short) , backed by a group of seasoned software engineering and product leaders, invests in and advises early stage infrastructure, data, and machine learning startups.",
+          "quote_hash": "7ebf7764ab1fab17473943141e3ab76616d3945942ed2b5c0fa8d595b0603d76"
         },
         {
           "source_id": "FISRC-efe4db4aff32c4ea",

@@ -163,10 +163,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司品牌与组合线索来自 LocalGlobe 官网；OLIX历史融资参与来自 SiliconANGLE，报道未披露金额、具体基金或日期。",
+      "summary": "LocalGlobe 官网将其描述为 Phoenix Court 旗下的早期投资基金，面向有强烈问题意识的创始人，领域为综合型。OLIX Computing融资报道将 LocalGlobe 列为过往投资方；LocalGlobe 官网组合列表亦列出 Olix。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的基金阶段与定位",
+          "value": "LocalGlobe 官网称其早期基金是 Phoenix Court 多数关系的起点，方向为综合型早期投资。",
+          "source_id": "PROFILE-COLLECT-INV-d6e33c8c4c10f3-M-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -184,9 +191,17 @@
           "source_id": "FISRC-b8ac45c45da22b49",
           "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment/",
           "source_title": "Photonic AI chip startup OLIX nabs $220M investment - SiliconANGLE",
-          "source_content_hash": "ab3ed9f099e16ab3bdaaa1f2fb0889e2c96228fd49ce0276ffb9e5d2080e52b8",
+          "source_content_hash": "4627b9d9b9fc83042b5fa7962d331f6373d46f3a2a11a0a23ee8f4c8396029e3",
           "quote": "The company previously raised an undisclosed amount of funding from Plural, Vertex Ventures, LocalGlobe and Entrepreneurs First.",
           "quote_hash": "d40641b698e2fe5a5d8acdc9e6f890f4c2be6865312d99aa85c5e18e6972b91d"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d6e33c8c4c10f3-M-2",
+          "source_url": "https://localglobecapital.com/",
+          "source_title": "LocalGlobe | Phoenix Court",
+          "source_content_hash": "943efe7049eb38c525b48f2db84c4190dca03f5881e2a968d22e10fdcd255fa6",
+          "quote": "Our early stage fund is where most Phoenix Court relationships begin.",
+          "quote_hash": "449b9daa8f1cdd2b26c92118e7f4d41639a39d0d53a2fb8b70dbe49b97bce4b3"
         },
         {
           "source_id": "FISRC-ff92324bbd437a73",
@@ -197,7 +212,7 @@
           "quote_hash": "355ba5e3576b4155ef5767a8e0887b01f14c3445807c3b53bd5627eed13d9c50"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

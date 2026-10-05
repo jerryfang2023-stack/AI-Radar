@@ -139,30 +139,71 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "GS Futures 官网列明其投资主题；Graphon AI 发布的融资消息经 HPCwire 发布渠道刊载，列 GS Futures 为 830 万美元 seed 轮参与者。830 万美元是整轮金额，未披露 GS Futures 单独出资额。",
+      "summary": "GS Futures 是 GS Group 的全球风险投资平台，官网披露其关注 physical AI、建筑环境、能源、工业转型及下一代数字基础设施。Graphon AI 公布的 830 万美元 seed 轮投资方名单包括 GS Futures；该金额为整轮融资。",
+      "facts": [
+        {
+          "field": "platform_identity",
+          "label": "机构定位",
+          "value": "官网将 GS Futures 定位为 GS Group 的全球风险投资机构。",
+          "source_id": "gs_futures_overview"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "官网称其与 physical AI、built environment、energy、industrial transition 和 next-generation digital infrastructure 领域的创业者合作。",
+          "source_id": "gs_futures_investment_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Graphon AI 的融资公告列出 GS Futures 为 830 万美元种子轮参投方。",
-          "source_id": "PROFILE-514267ee67da3cb596dd"
+          "description": "Graphon AI 的融资消息列 GS Futures 为 8,300,000 美元 seed 轮参与者之一；该金额为整轮金额，没有披露其单独出资额。",
+          "source_id": "graphon_seed_round"
         },
         {
           "description": "融资来源记录：Graphon AI · 种子轮 · 2026-05-14 · 本轮参投 · $8.3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9c4c0f115d1f38be"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "GS Futures 官网",
+          "value": "机构及投资主题介绍",
+          "url": "https://www.gsfutures.vc/",
+          "source_id": "gs_futures_overview"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网提供机构定位与投资主题；发行方融资消息提供一条投资案例，未披露单笔投资额。",
       "sources": [
         {
-          "source_id": "PROFILE-514267ee67da3cb596dd",
-          "source_url": "https://www.streetinsider.com/Business%2BWire/Former%2BAmazon,%2BMeta%2BScientists%2BUnveil%2BGraphon%2BAI,%2Bthe%2BFirst%2BPre-Model%2BIntelligence%2BLayer,%2Bwith%2B%248.3M%2Bin%2BSeed%2BFunding/26492061.html",
-          "source_title": "Former Amazon, Meta Scientists Unveil Graphon AI, the First Pre-Model Intelligence Layer, with $8.3M in Seed Funding",
-          "source_content_hash": "3a1c938bb03986b67fb05c11bbae0a2a5116c3100867af322f6e62122d7f57fe",
-          "quote": "n seed funding led by Arvind Gupta of Novera Ventures, with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners.\nSAN FRANCISCO--(BUSINESS WIRE)-- Graphon AI emerged from stealth today with $8.3 million in seed funding to build a new class of AI infrastructure: a pre-model intelligenc",
-          "quote_hash": "73fc24093e0edc38cc40029c5e9db4651769e9b5c7b09986c1b5eb54f25a4f29"
+          "source_id": "gs_futures_overview",
+          "source_url": "https://www.gsfutures.vc/",
+          "source_title": "GS Futures | Global venture capital arm of GS Group",
+          "source_content_hash": "551a1844689c685596cb9c4b70223bcb9f563dd49b5deb0f0ae3fee39e5b6daf",
+          "quote": "GS Futures | Global venture capital arm of GS Group",
+          "quote_hash": "c6f158e3ae6e74d7686aec5b28309d4d321c10e017754756604ff14dc52c7472"
+        },
+        {
+          "source_id": "graphon_seed_round",
+          "source_url": "https://www.hpcwire.com/bigdatawire/this-just-in/graphon-ai-emerges-from-stealth-with-8-3m-to-build-pre-model-intelligence-layer-for-enterprise-ai/",
+          "source_title": "Graphon AI Emerges from Stealth with $8.3M to Build Pre-Model Intelligence Layer for Enterprise AI",
+          "source_content_hash": "730de2baea1fa6dc4eb56e085c04aa07f980a2c448041cc3668e8efacb718410",
+          "quote": "The round was led by Arvind Gupta of Novera Ventures, with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners (the investment fund affiliated with the owners of the San Francisco 49ers and other strategic LPs).",
+          "quote_hash": "5b5aa3c012822835015d55c6dbe6405f8e5d9d8875c1daf1148807c6dd7fbb79"
+        },
+        {
+          "source_id": "gs_futures_investment_focus",
+          "source_url": "https://www.gsfutures.vc/",
+          "source_title": "GS Futures | Global venture capital arm of GS Group",
+          "source_content_hash": "551a1844689c685596cb9c4b70223bcb9f563dd49b5deb0f0ae3fee39e5b6daf",
+          "quote": "GS Futures partners with founders building transformative businesses across physical AI, the built environment, energy, industrial transition, and next-generation digital infrastructure.",
+          "quote_hash": "9ca246f8024c92d52421885d9931b0d333c91fdb9ab713ef96e11d990814d6fe"
         },
         {
           "source_id": "FISRC-9c4c0f115d1f38be",
@@ -173,11 +214,7 @@
           "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

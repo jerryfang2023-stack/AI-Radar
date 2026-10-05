@@ -139,21 +139,54 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "HSG官网称其为全球投资的风险投资与私募股权机构，前身名称为Sequoia China。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段与行业信息依据官网自述；融资案例为单个公开案例，不代表完整组合。",
+      "summary": "HSG 官网称其前身为 Sequoia China，是面向全球投资科技、医疗健康和消费领域的风险投资与私募股权机构；官网披露其成立于2005年，投资阶段覆盖种子至基础设施投资。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2005年",
+          "source_id": "b32-hsg-founded-stages"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资领域",
+          "value": [
+            "科技",
+            "医疗健康",
+            "消费"
+          ],
+          "source_id": "b32-hsg-about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "种子",
+            "风险投资",
+            "成长期",
+            "收购",
+            "基础设施"
+          ],
+          "source_id": "b32-hsg-stages"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将HSG列为OdyssLife相关融资的投资参与方。",
+          "description": "线性资本 portfolio 报道将 HSG 列为 OdyssLife 2026 年融资领投方之一；该例为单个案例。",
+          "source_id": "b32-hsg-odyss"
+        },
+        {
+          "description": "融资来源记录：OdyssLife · 多轮融资 · 2026-08-17 · 本轮领投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-34ac4235c670177c"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-93b603ea87317432bb29",
+          "source_id": "b32-hsg-about",
           "source_url": "https://www.hsgcap.com/about-us/",
           "source_title": "About Us - HSG",
           "source_content_hash": "202d4759aaf59ef4bde800fea7a4c3a6a9ba89cabcc2a09406da40764282b434",
@@ -161,15 +194,39 @@
           "quote_hash": "417db83103b760395ee81eaa4132bcf41717e6850065404d3b9f63e20e733d73"
         },
         {
+          "source_id": "b32-hsg-founded-stages",
+          "source_url": "https://www.hsgcap.com/about-us/",
+          "source_title": "About Us - HSG",
+          "source_content_hash": "202d4759aaf59ef4bde800fea7a4c3a6a9ba89cabcc2a09406da40764282b434",
+          "quote": "Since our founding in 2005, we have backed more than 1,800 companies led by entrepreneurs building transformative technologies and category-defining businesses.",
+          "quote_hash": "a5bcc68e0a795b14e3cc3db1939508f77758182972e7d24f75f2866f814408e8"
+        },
+        {
+          "source_id": "b32-hsg-stages",
+          "source_url": "https://www.hsgcap.com/about-us/",
+          "source_title": "About Us - HSG",
+          "source_content_hash": "202d4759aaf59ef4bde800fea7a4c3a6a9ba89cabcc2a09406da40764282b434",
+          "quote": "Our fully integrated platform spans seed, venture, growth, buyout, and infrastructure investing",
+          "quote_hash": "ce07c788b50fda6a6814972d1e0b6b37fdb46d9764e3fcff98ae9baa25c4b940"
+        },
+        {
+          "source_id": "b32-hsg-odyss",
+          "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
+          "source_title": "&quot;OdyssLife&quot; Closes Nearly 200 Million Yuan in New Funding, Linear Capital Continues to Double Down | Linear Portfolio | elsewhere",
+          "source_content_hash": "f89307938538a547c4653b0fc2b43da3c47a627937cfb54d2ce711e1d9109cfd",
+          "quote": "The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes.",
+          "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
+        },
+        {
           "source_id": "FISRC-34ac4235c670177c",
           "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
           "source_title": "\"OdyssLife\" Closes Nearly 200 Million Yuan in New Funding, Linear Capital Continues to Double Down | Linear Portfolio | elsewhere",
-          "source_content_hash": "3af457a29c17cfd00548fab0ca7cae1c7e6dd2ca30294c15c15b596a6ec09223",
+          "source_content_hash": "7da4915015fdb51b",
           "quote": "The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes.",
           "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

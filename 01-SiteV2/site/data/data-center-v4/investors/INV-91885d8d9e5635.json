@@ -452,10 +452,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Anthropic 官方 Series H 公告将 Temasek 列为本轮投资者。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构背景和投资方式来自 Temasek 官网；动态业绩和组合指标按页面披露日期呈现，不推断未披露的完整投资项目。",
+      "summary": "Temasek 官网称其于 1974 年成立，已由新加坡资产控股公司发展为全球投资公司；全球直接投资主要涵盖成熟和新兴市场领先企业的公开及非公开股权投资。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1974",
+          "source_id": "PROFILE-COLLECT-INV-91885d8d9e5635-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "全球投资公司",
+          "source_id": "PROFILE-COLLECT-INV-91885d8d9e5635-1"
+        },
+        {
+          "field": "investment_scope",
+          "label": "直接投资范围",
+          "value": "成熟和新兴市场领先企业的公开及非公开股权投资",
+          "source_id": "PROFILE-COLLECT-INV-91885d8d9e5635-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -482,6 +501,22 @@
           "quote_hash": "8c33e1230632771935f7e1ccdaf8d7e60f86d07ce01e5b20cc261c18139ff855"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-91885d8d9e5635-1",
+          "source_url": "https://www.temasek.com.sg/en/our-investments/investment-approach",
+          "source_title": "Investment Approach​ - Temasek",
+          "source_content_hash": "1c60949828cd57caec81a13a59818ad30a8db0b20863d02109f86d0987f88790",
+          "quote": "Since our incorporation in 1974, we have evolved from a holding company of Singapore-based assets into a global investment company.",
+          "quote_hash": "c0f876afe8fafb9d07d85dbf21aa54fa77e78ea9dacab50616ca9ff763455750"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-91885d8d9e5635-2",
+          "source_url": "https://www.temasek.com.sg/en/our-investments/investment-approach",
+          "source_title": "Investment Approach​ - Temasek",
+          "source_content_hash": "1c60949828cd57caec81a13a59818ad30a8db0b20863d02109f86d0987f88790",
+          "quote": "Our GDIs primarily comprise public and private equity investments in emerging and established market leaders.",
+          "quote_hash": "36002b6a139544b0d66f707c48031e47308df8f2ffb4e9b5926112e4ad2b770e"
+        },
+        {
           "source_id": "FISRC-0deb7f666bec5423",
           "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
           "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
@@ -498,7 +533,7 @@
           "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

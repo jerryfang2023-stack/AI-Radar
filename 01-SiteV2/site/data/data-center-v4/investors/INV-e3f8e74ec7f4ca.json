@@ -139,21 +139,32 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "Parable官网自述其为与科技创业者合作的风险投资公司。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "summary": "Parable官网将其描述为与科技创业者合作的风险投资机构。TechCrunch报道将Parable列为Fish Audio于2026年7月宣布的5200万美元种子轮参与方之一；该条仅为已披露案例，不代表完整投资组合。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网定位",
+          "value": "与科技创始人合作建设长期成长企业的风险投资机构",
+          "source_id": "B31-PARABLE-OFFICIAL"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将Parable列为Fish Audio相关融资的投资参与方。",
+          "description": "TechCrunch报道Parable参与Fish Audio于2026年7月宣布的5200万美元种子轮，未披露单家投资金额。",
+          "source_id": "B31-PARABLE-FISH"
+        },
+        {
+          "description": "融资来源记录：Fish Audio · 种子轮 · 2026-07-28 · 本轮参投 · $52 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e06e94375ec64ac4"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-5e85f6862b4b88dd6cbe",
+          "source_id": "B31-PARABLE-OFFICIAL",
           "source_url": "https://www.parablevc.com/",
           "source_title": "Parable - To miracles shaping humanity.",
           "source_content_hash": "0220fe6bf7c3cb366e403236cd2d0fca73a6991a4afed5967d63bdc39ee36d57",
@@ -161,15 +172,23 @@
           "quote_hash": "fa8fadb00a5fa5fc9a72e02cfd38f8eff32bcde3cbcb571d9afe156e0cb5709b"
         },
         {
+          "source_id": "B31-PARABLE-FISH",
+          "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/",
+          "source_title": "Fish Audio raises $52M seed to build AI voice models for creators and enterprises | TechCrunch",
+          "source_content_hash": "542515afa5517d8fa19387589526245b9ab42a39b53fe650b6f3879789ceabe3",
+          "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners, Bayhouse Ventures, Carya Venture Partners, and HF0.",
+          "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
+        },
+        {
           "source_id": "FISRC-e06e94375ec64ac4",
           "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
-          "source_title": "Fish Audio raises $52M seed to build AI voice models for creators and enterprises | TechCrunch",
-          "source_content_hash": "d21804e6e3ffd6390c366cb17140fa627ac27226298ffc159cb555d135507094",
+          "source_title": "Fish Audio 融资 5200 万美元种子轮，为创作者和企业构建 AI 语音模型",
+          "source_content_hash": "a41c14ab44af8ba104136f93550190aef8e472c0b80b5d27cb60215833dc0035",
           "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners, Bayhouse Ventures, Carya Venture Partners, and HF0.",
           "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

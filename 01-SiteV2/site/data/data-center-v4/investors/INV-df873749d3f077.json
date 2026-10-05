@@ -139,37 +139,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合，也不推断来源未披露的法人或基金归属。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "企业背景引用Fortino Capital官网；融资报道使用简称“Fortino”，不将单条活动扩展为完整投资组合。",
+      "summary": "Fortino Capital官网介绍其长期投资B2B软件，并称在欧洲投资软件企业，包含收购型投资。Fortune报道将“Fortino”列为Atira投资方之一；由于融资来源使用缩写，此处不扩展为完整法律主体或完整组合。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资领域（官网）",
+          "value": "B2B软件",
+          "source_id": "B30-FORTINO-WEBSITE"
+        },
+        {
+          "field": "strategy",
+          "label": "策略（官网）",
+          "value": "包括收购型投资，支持企业加速发展",
+          "source_id": "B30-FORTINO-STRATEGY"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Atira 种子轮 本轮参投；仅记录来源直接支持的示例，不代表完整投资组合。",
+          "description": "Fortune报道将“Fortino”列为Atira融资参与方之一；未披露金额。",
+          "source_id": "B30-FORTINO-ATIRA"
+        },
+        {
+          "description": "融资来源记录：Atira · 种子轮 · 2026-09-03 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dfab45611a59a6cf"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-dfab45611a59a6cf",
-          "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
-          "source_title": "Exclusive: German startup Atira raises $17.5 million to streamline industrial sales processes | Fortune",
-          "source_content_hash": "21e47f9c881b1865b835897a7c9db1b41ee536b60e9cfee08b1fdfccf188ffa5",
-          "quote": "UVC Partners, Fortino, and BOOOM also invested, alongside individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
-          "quote_hash": "a7350adc3548469bf9854d18554f075c91786719e60015be6c0830e47f511e8d"
-        },
-        {
-          "source_id": "PROFILE-3f40c34a4dc3986e42f7",
+          "source_id": "B30-FORTINO-WEBSITE",
           "source_url": "https://www.fortino.capital/about-fortino-capital",
           "source_title": "About Fortino Capital | Private Equity Firm for SaaS and AI | Fortino Capital",
           "source_content_hash": "9ce0765cef1245504c461c4741eab418698cca9070efd60cb9ef1e1877638084",
           "quote": "Fortino Capital has invested in B2B software for over a decade.",
           "quote_hash": "e9e567df9084096bcb773645fa2559974d95af36f6f6cae827246c8d5f36a3e9"
+        },
+        {
+          "source_id": "B30-FORTINO-STRATEGY",
+          "source_url": "https://www.fortino.capital/about-fortino-capital",
+          "source_title": "About Fortino Capital | Private Equity Firm for SaaS and AI | Fortino Capital",
+          "source_content_hash": "9ce0765cef1245504c461c4741eab418698cca9070efd60cb9ef1e1877638084",
+          "quote": "Focusing on buyouts, we offer a path that can secure a legacy, while accelerating growth.",
+          "quote_hash": "cf2453c82f707bafba1b1305aaea44e58c0c924a50d40665b50d8f85c04ec428"
+        },
+        {
+          "source_id": "B30-FORTINO-ATIRA",
+          "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
+          "source_title": "Exclusive: German startup Atira raises $17.5 million to streamline industrial sales processes | Fortune",
+          "source_content_hash": "0794478c749574f482cbc6b8bdd68fc331531c36ca7f5b4306144238c8e3161c",
+          "quote": "UVC Partners, Fortino, and BOOOM also invested",
+          "quote_hash": "ce1c047945fa1ccdc8b0021b650cb777a87ba0031a40babb065e31f97de76336"
+        },
+        {
+          "source_id": "FISRC-dfab45611a59a6cf",
+          "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
+          "source_title": "独家：德国初创公司Atira融资1750万美元，以简化工业销售流程",
+          "source_content_hash": "2c19612efff8843e",
+          "quote": "UVC Partners, Fortino, and BOOOM also invested, alongside individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
+          "quote_hash": "a7350adc3548469bf9854d18554f075c91786719e60015be6c0830e47f511e8d"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -137,35 +137,79 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
+      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Whirlpool 官网列出 Marc Bitzer 的 CEO 与董事长职务及任职时间；Atira 发行方公告称其为该公司新投资人之一，未披露其个人出资额。",
+      "summary": "Marc Bitzer 是 Whirlpool Corporation 的 CEO 和董事长。Whirlpool 官网记载他于 2017 年 10 月出任 CEO，并于 2019 年 1 月 1 日起任董事长。Atira 公告将其列为该公司融资的新投资人之一，未披露个人出资额。",
+      "facts": [
+        {
+          "field": "leadership_history",
+          "label": "管理职务",
+          "value": "Whirlpool 官网记载 Marc Bitzer 于 2017 年 10 月出任 CEO，并于 2019 年 1 月 1 日起担任董事长。",
+          "source_id": "whirlpool_marc_bitzer"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-10",
+          "description": "被任命为 Whirlpool CEO。",
+          "source_id": "whirlpool_marc_bitzer"
+        },
+        {
+          "date": "2019-01-01",
+          "description": "起任 Whirlpool 董事长。",
+          "source_id": "whirlpool_marc_bitzer"
+        }
+      ],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Atira 种子轮 本轮参投。",
+          "description": "Atira 的发行方公告将 Marc Bitzer 列为新投资人之一；未披露其个人出资额。",
+          "source_id": "atira_seed_investment"
+        },
+        {
+          "description": "融资来源记录：Atira · 种子轮 · 2026-09-03 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dfab45611a59a6cf"
         }
       ],
       "contacts": [],
+      "current_roles": [
+        {
+          "organization": "Whirlpool Corporation",
+          "title": "CEO and Chairman of the Board",
+          "source_id": "whirlpool_marc_bitzer"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Whirlpool 领导层页面支持当前管理职务及职业节点，Atira 公告支持其个人投资人身份；未推定其个人投资金额。",
       "sources": [
+        {
+          "source_id": "whirlpool_marc_bitzer",
+          "source_url": "https://www.whirlpoolcorp.com/project/marc-bitzer.html",
+          "source_title": "Marc Bitzer | Whirlpool Corporation",
+          "source_content_hash": "0d4edcf62c8d5337a22ddaac55f5ccf22b08f5fab1cdbe26ae1e76676c1f9dbe",
+          "quote": "Marc Bitzer was named chief executive officer effective October 2017 and was elected Chairman of the Board effective January 1, 2019.",
+          "quote_hash": "da796ab1c34f3720619345f3a24a2d393e024cea09c51db90e6f687e1273d7d4"
+        },
+        {
+          "source_id": "atira_seed_investment",
+          "source_url": "https://atira.ai/de/news",
+          "source_title": "Atira News",
+          "source_content_hash": "27441bfd46efa200c293a7e4001049f8fc90bfd8c0eaabccb68c447271331d3c",
+          "quote": "The round includes industry leaders like Ann-Kristin Achleitner, Marc Bitzer (CEO of the Whirlpool Corporation)",
+          "quote_hash": "de59a86935664ac23ec0af07e4cda24265dac32a8ddc5373b9d5b828926f7fd8"
+        },
         {
           "source_id": "FISRC-dfab45611a59a6cf",
           "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
-          "source_title": "Exclusive: German startup Atira raises $17.5 million to streamline industrial sales processes | Fortune",
-          "source_content_hash": "21e47f9c881b1865b835897a7c9db1b41ee536b60e9cfee08b1fdfccf188ffa5",
+          "source_title": "独家：德国初创公司Atira融资1750万美元，以简化工业销售流程",
+          "source_content_hash": "2c19612efff8843e",
           "quote": "individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
           "quote_hash": "ddd137cc1c0cfeb1f42b4b0c7f8c311a8c24c2be2514361527a2de2faa100d5c"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

@@ -139,29 +139,48 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Synthefy 官方公告称 Srinivas Narayanan 作为 operator angel 参与其种子轮。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "个人身份、过往职务与种子轮参与均来自 Synthefy 官方公告；未扩写未经核实的其他履历。",
+      "summary": "Synthefy 官方融资公告将 Srinivas Narayanan 列为 operator angel，并称其曾任 OpenAI B2B 业务 CTO；公告未披露个人投资金额。",
+      "facts": [
+        {
+          "field": "issuer_reported_prior_role",
+          "label": "融资公告列示的过往职务",
+          "value": "Synthefy 称 Srinivas Narayanan 曾任 OpenAI B2B 业务 CTO。",
+          "source_id": "PROFILE-B7-INV-8fb1f85db04835-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Synthefy 官方公告列出 Srinivas Narayanan 作为种子轮 operator angel。",
+          "description": "Synthefy 官方公告将 Srinivas Narayanan 列为种子轮 operator angel；未披露个人投资额。",
+          "source_id": "PROFILE-B7-INV-8fb1f85db04835-1"
+        },
+        {
+          "description": "融资来源记录：Synthefy · 种子轮 · 2026-08-18 · 本轮参投 · $6.5M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7cafec2373293af1"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-7cafec2373293af1",
+          "source_id": "PROFILE-B7-INV-8fb1f85db04835-1",
           "source_url": "https://www.synthefy.com/blog/synthefy-raises-6-5m-for-structured-data-foundation-models",
           "source_title": "Building Foundation Models for the World&#x27;s Structured Data | Synthefy",
           "source_content_hash": "10f6f636d3a02373c2dd4dd3d3b4cb9cd5253b89878073b53df4fcd8cd881a28",
           "quote": "onical, and Lightscape joining. We also brought in operator angels who have shaped modern AI from the inside: Srinivas Narayanan, former CTO of B2B at OpenAI; Aparna Chennapragada, CPO of Experiences + Devices at Microsoft; and Manohar Paluri, VP of AI at Meta. Foundation models changed what software can do with language. We are building",
           "quote_hash": "3f5645d79e9e70385bce0ce9565ab9e170ad04d4dec148b4ac6928a2ac765195"
+        },
+        {
+          "source_id": "FISRC-7cafec2373293af1",
+          "source_url": "https://www.synthefy.com/blog/synthefy-raises-6-5m-for-structured-data-foundation-models",
+          "source_title": "为全球结构化数据构建基础模型",
+          "source_content_hash": "613cce3b5c1e64d961a77840f2d688926de0f954fcc27059e3d24a65f8b0ee52",
+          "quote": "We also brought in operator angels who have shaped modern AI from the inside: Srinivas Narayanan, former CTO of B2B at OpenAI; Aparna Chennapragada, CPO of Experiences + Devices at Microsoft; and Manohar Paluri, VP of AI at Meta.",
+          "quote_hash": "487e6b1690c6d5be2733985f72bbd78474f317f66852f4a1c2ce330a24ed1d05"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

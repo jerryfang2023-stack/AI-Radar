@@ -236,53 +236,96 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "来源为 New Energy Nexus 的双碳投资人机构目录，不是公司自营官网；管理规模及基金数量严格标注为该页所载历史数据。",
+      "summary": "New Energy Nexus 的 ClimateInvestors 机构页将国泰君安创新投资有限公司列为国泰君安证券全资子公司，记录其股权投资业务、与多类合作方设立的40余支私募股权基金及100余个累计项目。该页标注的资产管理规模数据截至2019年末，不作为当前规模。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "目录收录的主体关系",
+          "value": "目录称国泰君安创新投资有限公司为国泰君安证券全资子公司，成立于2009年5月。",
+          "source_id": "PROFILE-COLLECT-INV-c3ac9951fd6565-1"
+        },
+        {
+          "field": "fund_management",
+          "label": "历史基金管理情况",
+          "value": "目录记录其截至页面所述时期共同设立私募股权基金40余支。",
+          "source_id": "PROFILE-COLLECT-INV-c3ac9951fd6565-2"
+        },
+        {
+          "field": "investment_history",
+          "label": "累计项目数",
+          "value": "目录记录累计投资项目100余个。",
+          "source_id": "PROFILE-COLLECT-INV-c3ac9951fd6565-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 硅基流动 B轮 本轮联合投资。",
+          "description": "融资来源记录：硅基流动 · B轮 · 2026-06-16 · 本轮联合投资 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-879cc82306af58a1"
         },
         {
-          "description": "公开融资来源将其列为 北京面壁智能科技股份有限公司 2026年4月D+轮跟投。",
+          "description": "融资来源记录：北京面壁智能科技股份有限公司 · 历史轮次未披露 · 2026-04 · 2026年4月D+轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ca5c9f62e4d3f2f3"
         },
         {
-          "description": "公开融资来源将其列为 卓世科技 Pre-IPO 本轮参投。",
+          "description": "融资来源记录：卓世科技 · Pre-IPO · 2026-02-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-60aa4fb60c7d6090"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-COLLECT-INV-c3ac9951fd6565-1",
+          "source_url": "https://climateinvestors.newenergynexus.cn/investors/24?locale=zh-CN",
+          "source_title": "ClimateInvestors",
+          "source_content_hash": "2145857870de05f83613287aa15d3935bd79a7b0467be49fc20176161cede90b",
+          "quote": "国泰君安创新投资有限公司是国泰君安证券股份有限公司全资子公司，成立于2009年5月，截至2019年末，公司管理资产规模超过300亿元。",
+          "quote_hash": "de362d78317285bdf45743cc9946383030f5fad0e8dd1093334ddcd3ea622e4b"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-c3ac9951fd6565-2",
+          "source_url": "https://climateinvestors.newenergynexus.cn/investors/24?locale=zh-CN",
+          "source_title": "ClimateInvestors",
+          "source_content_hash": "2145857870de05f83613287aa15d3935bd79a7b0467be49fc20176161cede90b",
+          "quote": "公司从事股权投资业务及中国证券监督管理委员会允许的其他业务，与政府基金、产业园区、产业集团、上市公司、金融机构、社会资本等共同设立私募股权投资基金40余支",
+          "quote_hash": "bf2a6db74c97e7c8e0d1c377918671c3afe6887b23ab3fd96cafc26e337021d7"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-c3ac9951fd6565-3",
+          "source_url": "https://climateinvestors.newenergynexus.cn/investors/24?locale=zh-CN",
+          "source_title": "ClimateInvestors",
+          "source_content_hash": "2145857870de05f83613287aa15d3935bd79a7b0467be49fc20176161cede90b",
+          "quote": "累计投资项目100余个，形成了多层次的私募股权投资业务体系。",
+          "quote_hash": "e33cfda1ea9045ffc0671d82d6d0a676a69ab855c0d01fa8b7c75576d57dbcff"
+        },
+        {
           "source_id": "FISRC-879cc82306af58a1",
           "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
-          "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”__财经头条",
-          "source_content_hash": "14a2ef39cb3ca39abef7dd53d2574aa95ed3b829fa60643e979daa0f17612c32",
+          "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”",
+          "source_content_hash": "f1654d9235cc7fa8",
           "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
           "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
         },
         {
           "source_id": "FISRC-ca5c9f62e4d3f2f3",
           "source_url": "https://news.pedaily.cn/202607/566303.shtml",
-          "source_title": "首发| 面壁智能融资超50亿，估值超200亿_投资界",
-          "source_content_hash": "ce889fe2e46ae92f26474f083a9a92298409d26606978723c0b47684e796b06f",
+          "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+          "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
           "quote": "道禾长期投资、国泰君安创新投、武岳峰科创等跟投",
           "quote_hash": "10e9be87017135ef7289d02fb8f8a47e963f486839185aa1a55cef7eb134c6e7"
         },
         {
           "source_id": "FISRC-60aa4fb60c7d6090",
           "source_url": "https://www.sohu.com/a/982704085_120773109",
-          "source_title": "卓世科技完成Pre-IPO轮融资，加速“AI大脑”赋能实体产业_模型_智能_行业",
-          "source_content_hash": "7b993e3e0c02b5ae21aa1490a477fc0db42abe6e34823223ad22016a3f51c742",
+          "source_title": "卓世科技完成Pre-IPO轮融资，加速“AI大脑”赋能实体产业",
+          "source_content_hash": "01300b7a97bff4c9",
           "quote": "本轮融资由国泰君安创新投、优必选科技、国新国证投资、浙江华宇等机构共同参与。",
           "quote_hash": "e8588604f33eb5b25111f976984492a8182aae5ebb86e9432dec3e8a1c6ad24f"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -121,7 +121,7 @@
       }
     ],
     "public_profile": {
-      "summary": "上海汽车集团股权投资有限公司是上汽集团披露的全资子公司。上汽官网记录该公司于2021年转为聚焦二级市场投资，不再开展一级市场投资业务。",
+      "summary": "上海汽车集团股权投资有限公司是上汽集团官网列示的所属企业，登记类型为非自然人投资或控股的法人独资。上汽官网记录，尚颀资本、恒旭资本及上汽创投的相关权益和管理权于2021年划转至上海汽车集团金控管理有限公司，此后该公司聚焦二级市场投资，不再开展一级市场投资业务。",
       "facts": [
         {
           "field": "legal_name",
@@ -134,6 +134,12 @@
           "label": "官网披露的业务调整",
           "value": "2021年起聚焦二级市场投资业务，不再开展一级市场投资业务。",
           "source_id": "PROFILE-INV-4e361b9001979e-2"
+        },
+        {
+          "field": "legal_form",
+          "label": "官网披露的企业类型",
+          "value": "上汽集团官网将该公司列为“有限责任公司（非自然人投资或控股的法人独资）”。",
+          "source_id": "PROFILE-S-INV-4e361b9001979e-3"
         }
       ],
       "milestones": [
@@ -151,8 +157,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "严格按上汽官网披露的主体及2021年业务调整记录建档；历史私募基金投资业务与当前二级市场业务分开表述。",
+      "coverage_status": "researched",
+      "coverage_note": "主体名称、登记类型及2021年业务调整均来自上汽集团官网；此条目与上汽投控、尚颀资本和恒旭资本等其他主体分开记录，不把集团其他投资平台的活动归入本公司。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -184,6 +190,14 @@
           "quote_hash": "8f9667aafb30d95f59e3b6ac739c4111c9d43879220bd3c324390847b156b069"
         },
         {
+          "source_id": "PROFILE-S-INV-4e361b9001979e-3",
+          "source_url": "https://www.saicmotor.com/chinese/xxgk/ssqyxxgk/shqcjtgqtzyxgs/index.shtml",
+          "source_title": "上汽集团官网",
+          "source_content_hash": "c318885fd8c892646c3d1dc56e59b4991edfc34ad98f9119fcd5c76d6fdf631a",
+          "quote": "企业类型：有限责任公司（非自然人投资或控股的法人独资）",
+          "quote_hash": "4a39c345e8e1557887c4a2a8bc9e2465b1f8dc40e1ed3d673e5edd2b1fcffb87"
+        },
+        {
           "source_id": "FISRC-f3ef8441c682402c",
           "source_url": "https://en.tmtpost.com/post/7784584",
           "source_title": "Infinigence AI Raises $69 Million in A+ Round to Expand Agentic Infrastructure| TMTPOST",
@@ -192,7 +206,7 @@
           "quote_hash": "b5930e51a545b2a0ac657244a6b239551b85ef525bf695bde397377c4a1b0a3a"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

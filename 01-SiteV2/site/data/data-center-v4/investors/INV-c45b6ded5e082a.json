@@ -124,15 +124,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体名称与投资关系由德睿智药官方公告支持；公告同时将相关基金称为“医疗早期基金”。本轮未从可访问的华盖官网取得机构页面，因此不扩写法律实体或完整机构背景。",
+      "summary": "发行人德睿智药在其融资公告中将华盖资本列为A轮联合领投方，并将邓量称为“华盖资本医疗早期基金合伙人”。本档案据此记录发行人使用的机构品牌和该项投资活动，不推断其具体管理法人、完整投资策略或完整组合。",
+      "facts": [
+        {
+          "field": "investment_focus_evidence",
+          "label": "公开交易中的基金描述",
+          "value": "德睿智药官方公告将邓量称为华盖资本医疗早期基金合伙人；该描述仅对应公告提及的基金，不外推为全机构投资策略。",
+          "source_id": "huagai_mindrank_series_a"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为德睿智药A轮联合领投。",
-          "source_id": "PROFILE-b1db5edfb6d17f7a84dd"
+          "description": "德睿智药官方公告称其数千万美元A轮由华盖资本与松禾资本联合领投；未披露华盖资本单独出资额。",
+          "source_id": "huagai_mindrank_series_a"
         },
         {
           "description": "融资来源记录：德睿智药 · 历史轮次未披露 · A轮联合领投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -140,14 +147,18 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
         {
-          "source_id": "PROFILE-b1db5edfb6d17f7a84dd",
+          "source_id": "huagai_mindrank_series_a",
           "source_url": "https://www.mindrank.ai/zh-CN/news/detail/9",
           "source_title": "新闻 - 德睿智药 MindRank",
-          "source_content_hash": "7c1f0c840071e5ed6542055511c067574c5a68a0b83c2c17ca9622f152a88168",
-          "quote": "# 德睿智药完成数千万美元A轮融资，AI助力药物管线研发\n2021-12-15\n近日，AI制药初创公司德睿智药（MindRank AI）完成数千万美元A轮融资，由华盖资本、松禾资本联合领投，老股东夏尔巴资本持续加码。本轮融资将支持公司的团队扩张、自研管线研发以及业务扩展。\n本轮领投方 华盖资本医疗早期基金合伙人邓量：德睿智药在新药研发和AI制药方向具有丰富的经验。\r\n",
-          "quote_hash": "9b5fcebd1c573e254994b6f54ea5075f891ef6ca39ef271a6b16e8faca9113d4"
+          "source_content_hash": "bd9cc2b4e60f523336bc98279ed954f8e968a061aac465e5af9212e59ccce2bd",
+          "quote": "华盖资本、松禾资本联合领投，老股东夏尔巴资本持续加码。本轮融资将支持公司的团队扩张、自研管线研发以及业务扩展。",
+          "quote_hash": "ce3549930cf3a3bc12bb286c7dd05163ad095ddce5d7696f289a65569a444bbc"
         },
         {
           "source_id": "FISRC-c8803e2f7419599f",
@@ -158,11 +169,7 @@
           "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

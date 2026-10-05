@@ -180,10 +180,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资参与关系依据融资报道；机构背景只按 Emergence 官网自述概括，未推断完整投资组合。",
-      "summary": "TechCrunch 关于 Arga Labs 种子轮融资的报道将 Emergence 列为投资方；Emergence 官网展示其面向科技公司的长期资本合作。本档只记录该项公开案例。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资方向来自 Emergence 官网自述；融资活动来自项目融资报道。官网所述投资主题按页面当前口径保留。",
+      "summary": "Emergence Capital 官网称其帮助建设 B2B 软件公司的创始团队，并将当前 AI 方向概括为 AI 基础设施、物理世界 AI 和 AI 原生服务。Arga Labs 融资报道将 Emergence 列为参与方；档案不延伸为完整投资组合。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网当前所列 AI 投资方向",
+          "value": "Emergence 官网列出的 AI 方向包括 AI 基础设施、物理世界 AI 和 AI 原生服务。",
+          "source_id": "PROFILE-COLLECT-INV-68268a09aa2ad0-G-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -212,6 +219,14 @@
           "source_content_hash": "5b78a70bcf336526a38fe11fd73f024a954c8159337cb3ea61627a6b36df8b3a",
           "quote": "Emergence | Bend the Odds from Emerging to Iconic The Definitive Guide to Building AI-Native Services Read the Beyond Benchmarks 2026 Report Portfolio Team Talent Thoughts Playbooks AI-Native Services Beyond Benchmarks 2026 415-80",
           "quote_hash": "1ebd394ae866b018a830e0159c075b8632a11f169197e4806e5fa909b40cc7ff"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-68268a09aa2ad0-G-3",
+          "source_url": "https://www.emcap.com/",
+          "source_title": "Emergence | Bend the Odds from Emerging to Iconic",
+          "source_content_hash": "5b78a70bcf336526a38fe11fd73f024a954c8159337cb3ea61627a6b36df8b3a",
+          "quote": "from AI infrastructure to physical world AI to AI-Native Services: companies that sell outcomes rather than software",
+          "quote_hash": "5b5af22fd76bcb30cecf389e1dc39e364909b8267be9a98bc26ca6b9d5e2dded"
         },
         {
           "source_id": "FISRC-926b8b12b411de6f",

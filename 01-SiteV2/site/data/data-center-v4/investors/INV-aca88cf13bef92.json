@@ -208,10 +208,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "Nexus 融资公告将 Transpose Platform 列为种子轮参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "平台定位与投资方式来自 Transpose Platform 官网；融资参与来自 Nexus 项目方公告。官网未披露的资金规模和完整组合不作推断。",
+      "summary": "Transpose Platform 官网将其描述为早期风险投资平台，支持前沿领域创始人及相关基金，并称其为基金和创始人提供首笔投资。Nexus 项目方的种子轮公告将 Transpose Platform 列为参与方。",
+      "facts": [
+        {
+          "field": "investment_platform",
+          "label": "官网披露的平台定位",
+          "value": "Transpose Platform 自述为支持前沿创始人与相关基金的早期风险投资平台。",
+          "source_id": "PROFILE-COLLECT-INV-aca88cf13bef92-J-2"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资方式",
+          "value": "官网称其为基金与创始人提供首笔投资。",
+          "source_id": "PROFILE-COLLECT-INV-aca88cf13bef92-J-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -236,6 +249,14 @@
           "source_content_hash": "2af31687c6e9e270339d07814bc63a90e1c5b42972c0b802013a1ccc0f3fca4b",
           "quote": "$4.3 million seed funding round. The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital, and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz. Nexus, a Y Combinator-backed company founded in 2024 by former McKinsey consultant Assem Chamm",
           "quote_hash": "d98df26f24a319b98ff044566556ec9e7a02967f035efa0ea93f77eb6c9b3810"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-aca88cf13bef92-J-2",
+          "source_url": "https://www.transposeplatform.vc/",
+          "source_title": "Transpose Platform ▪︎ Global Formation Stage VC Fund",
+          "source_content_hash": "c6d1a0ed80077f216c425fedecfcc75a9f24ad2863aadf4b258b166b567cb4f6",
+          "quote": "An early-stage venture platform backing frontier founders and the funds that accelerate them.",
+          "quote_hash": "793067f4d9616a1637f778fc6b19da3a81e798c320f28ed40fc8c405739d2538"
         },
         {
           "source_id": "FISRC-79bfe2072e509ad8",

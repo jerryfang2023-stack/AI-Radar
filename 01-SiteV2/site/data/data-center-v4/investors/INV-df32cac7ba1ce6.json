@@ -123,26 +123,20 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "facts": [],
       "milestones": [],
       "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动与来源明确记载的身份关联，不补写未经核实的职业经历或个人出资金额。",
-      "summary": "Modem 的融资公告将 Armin Ronacher (Flask) 列为个人支持者之一；其个人网站称他是 Flask 的创作者，并表示目前在 Earendil 开展新项目。公告未披露其个人出资金额。",
-      "current_roles": [
-        {
-          "title": "Builder",
-          "organization": "Earendil",
-          "source_id": "armin-ronacher-earendil"
-        }
-      ],
+      "coverage_note": "Earendil关系为本人网站自述，未补入未经证实的雇佣职位。",
+      "summary": "Armin Ronacher个人网站称其为Flask创作者，并表示正在Earendil开展新项目，但未说明正式职位。Modem的融资公告将其列为个人支持者之一，未披露个人出资金额。",
+      "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "个人身份依据 Armin Ronacher 本人网站；Modem 的融资公告仅以 “Armin Ronacher (Flask)” 标注其参与。",
+      "experience_summary": "开源软件开发者及Flask创作者；其个人网站还提到曾在Sentry投入十年，并称目前在Earendil开展新项目。正式职位未由来源确认。",
       "track_record": [
         {
-          "description": "Modem 的440万美元融资公告将 Armin Ronacher (Flask) 列入天使支持者名单；未披露其个人出资额。",
-          "source_id": "modem-armin-ronacher-angel-2026"
+          "description": "Modem融资公告将Armin Ronacher列为个人支持者之一；未披露个人出资额。",
+          "source_id": "B30-ARMIN-MODEM"
         },
         {
           "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（Flask）。这是本库收录的披露案例，不代表完整投资组合。",
@@ -151,15 +145,15 @@
       ],
       "sources": [
         {
-          "source_id": "modem-armin-ronacher-angel-2026",
+          "source_id": "B30-ARMIN-MODEM",
           "source_url": "https://modem.dev/blog/modem-raises-4-4m",
           "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
-          "source_content_hash": "1fcd6e8a5bd85e1de48de50d890272ea31481d5ec39d8296080c54e61386027b",
+          "source_content_hash": "c9e9aaded026e3e202c5f63bdf885b3efe145a86cabbd92d16c16a8d59f58153",
           "quote": "Armin Ronacher (Flask)",
           "quote_hash": "3b92f962adf9f12c3ac936150e30a300d9362f579c614e672d100f7c6beb6bd4"
         },
         {
-          "source_id": "armin-ronacher-self-identification",
+          "source_id": "B30-ARMIN-PERSONAL",
           "source_url": "https://ronacher.eu/",
           "source_title": "Armin Ronacher",
           "source_content_hash": "99de36bd7856ce5d1a1505045ed0053df1834b20f701e12b37cf5a9398848940",
@@ -167,7 +161,7 @@
           "quote_hash": "bb31ca1d9965ba99a39238467b5049591584b6ef3e0418d5da2d5a00ce193382"
         },
         {
-          "source_id": "armin-ronacher-earendil",
+          "source_id": "B30-ARMIN-EARENDEL",
           "source_url": "https://ronacher.eu/",
           "source_title": "Armin Ronacher",
           "source_content_hash": "99de36bd7856ce5d1a1505045ed0053df1834b20f701e12b37cf5a9398848940",
@@ -183,7 +177,7 @@
           "quote_hash": "3b92f962adf9f12c3ac936150e30a300d9362f579c614e672d100f7c6beb6bd4"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

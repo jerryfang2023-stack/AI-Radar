@@ -139,30 +139,59 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Flywheel 官网支持年度基金及历史汇总；单项 Optimly 金额来自 GeekWire 报道。",
+      "summary": "Flywheel Angel Network 通过年度基金投资华盛顿州创新企业；其官网回顾自 2018 年投资 14 家初创企业、累计超过 $1.8m。GeekWire 报道其向 Optimly 投资 $150,000。",
+      "facts": [
+        {
+          "field": "investment_model",
+          "label": "投资模式",
+          "value": "通过年度基金投资华盛顿州初创企业。",
+          "source_id": "flywheel_site"
+        },
+        {
+          "field": "track_record_summary",
+          "label": "历史汇总（自 2018 年）",
+          "value": "投资超过 $1.8m，覆盖 14 家华盛顿州初创企业。",
+          "source_id": "flywheel_site"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为Optimly预种子轮本轮参投。",
-          "source_id": "PROFILE-c4c959b157575cf3384b"
+          "description": "GeekWire 报道 Flywheel Angel Network 向 Optimly 投资 $150,000；报道未披露单独出资额。",
+          "source_id": "flywheel_optimly"
         },
         {
           "description": "融资来源记录：Optimly · 预种子轮 · 2026-07-08 · 本轮参投 · $800K。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3841e3507887d97d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.flywheelconference.com/invest",
+          "url": "https://www.flywheelconference.com/invest",
+          "source_id": "flywheel_site"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-c4c959b157575cf3384b",
+          "source_id": "flywheel_site",
+          "source_url": "https://www.flywheelconference.com/invest",
+          "source_title": "Invest | Flywheel Investment Conference",
+          "source_content_hash": "72c90b69fc9994fd3d471c1c3f03d2a74b671749409b38ad321497ef2b06f458",
+          "quote": "Since 2018, Flywheel investors have come together through annual funds to invest more than $1.8 million in fourteen Washington-based startups",
+          "quote_hash": "7f9a792b4beb602527760f6f32ab624130afc056454955ca106d120adaad08b0"
+        },
+        {
+          "source_id": "flywheel_optimly",
           "source_url": "https://www.geekwire.com/2026/this-startup-lets-companies-teach-ai-about-their-brands-and-the-chatbots-are-listening/",
           "source_title": "This startup lets companies teach AI about their brands — and the chatbots are listening",
-          "source_content_hash": "3877eaf920b96734ab40d9c196546edf35e92f3bd93242b4894b5cb5c6a550ab",
-          "quote": "that AI chatbots use to describe them — then measures whether it actually works.\nThe $150,000 investment from Flywheel Angel Network became part of a broader $800,000 pre-seed round that Optimly closed just recently. Also participating in the round were Mighty Capital and AI House, the Seattle startup incubator formerly known as AI2 Incubator.\n“The funny thi",
-          "quote_hash": "084e205bcd391b79376e9274e2388591a16d550a40854572373c046bac2b780a"
+          "source_content_hash": "a1244a2620b913b241fc3b9068f805b2a39a628f4e9ece7b147960118151099d",
+          "quote": "The $150,000 investment from Flywheel Angel Network",
+          "quote_hash": "502840e6e66009e2a8463121ff1018e9b02717396e84d5c925f2e55f85ac0da5"
         },
         {
           "source_id": "FISRC-3841e3507887d97d",
@@ -173,11 +202,7 @@
           "quote_hash": "e1e31cb866ac6b862b00785d75f304a319b3adf4d6b31ec1d63d8eec7fa1506a"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

@@ -139,30 +139,59 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "Procurement Sciences 官方公告称 Catalyst Investors 领投其 Series B。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位与关注对象来自 Catalyst Investors 官网；Series B活动来自被投公司公告，未披露 Catalyst Investors 单独出资额。",
+      "summary": "Catalyst Investors 官网将其定位为专注 B2B 企业成长资本的增长型投资机构，具有20年以上提供成长资本的经验。Procurement Sciences 官方公告称，Catalyst Investors 领投该公司3000万美元 Series B。",
+      "facts": [
+        {
+          "field": "investment_mandate",
+          "label": "投资定位",
+          "value": "Catalyst官网称其为专注 B2B 企业成长资本的增长型投资机构。",
+          "source_id": "PROFILE-B11-INV-b221770f779385-1"
+        },
+        {
+          "field": "track_record",
+          "label": "从业经验",
+          "value": "官网称其提供 B2B 成长资本超过20年。",
+          "source_id": "PROFILE-B11-INV-b221770f779385-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "领投 Procurement Sciences Series B。",
-          "source_id": "PROFILE-73936dcc758f7530ddc3"
+          "description": "Procurement Sciences官方公告称 Catalyst Investors 领投其3000万美元 Series B；未披露单独金额。",
+          "source_id": "PROFILE-B11-INV-b221770f779385-2"
         },
         {
           "description": "融资来源记录：Procurement Sciences · B轮 · 2025-11-05 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fa41049d7cbdf303"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.catalystinvestors.com/",
+          "source_id": "PROFILE-B11-INV-b221770f779385-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-73936dcc758f7530ddc3",
+          "source_id": "PROFILE-B11-INV-b221770f779385-1",
+          "source_url": "https://www.catalystinvestors.com/",
+          "source_title": "Catalyst Investors | Growth Equity | New York",
+          "source_content_hash": "f193b9e262f54f4811786af06fbc464aa9016d0e71da5e6f4e712dd9b05d9388",
+          "quote": "At Catalyst, We Are True Growth Investors With 20+ years of providing growth capital to B2B businesses",
+          "quote_hash": "d4ed86905d4f0d5c53bdb1388b23b762401fa507df6126d6ff09a3ede816c8eb"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-b221770f779385-2",
           "source_url": "https://www.procurementsciences.com/blog/series-b",
           "source_title": "The Next Chapter Begins: Procurement Sciences Raises $30M Series B to Accelerate the AI Revolution in Government Contracting - Procurement Sciences",
           "source_content_hash": "0bacaaad5d4f5f33c97acc3611727c82fc6b2d93339656b8f3f0b8ee21f0a5f3",
-          "quote": "that journey. We’re proud to announce that Procurement Sciences has closed $30 million in Series B funding , led by Catalyst Investors , with participation from Battery Ventures, Bosch Ventures, Citi, Tower Research Ventures, Blu Ventures, K Street Capital , and strategic angel investors. This milestone is not just about raising capital. It is about acceler",
-          "quote_hash": "1e0b947a0675bc1a4682ea520d64095ec5be95877f89834c817c9cbf33f18446"
+          "quote": "led by Catalyst Investors",
+          "quote_hash": "e84540b2d99584ea92bed5a6c034f7ee24ba925fe7792be95a265489c6005357"
         },
         {
           "source_id": "FISRC-fa41049d7cbdf303",
@@ -173,7 +202,7 @@
           "quote_hash": "12c062e3476c859cfb1fc6e8ca6b80c8421d7c408b8903f3a1d98af1f74e80fa"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

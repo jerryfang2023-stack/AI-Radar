@@ -137,20 +137,24 @@
       }
     ],
     "public_profile": {
+      "last_verified_at": "2026-10-05",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Claros 投资关系来自发行方公告，基金登记资料来自 SEC EDGAR。档案保留公司公告使用的投资者名称，不据名称相似断言该基金的管理人、管理团队或出资额。",
-      "summary": "Claros 的官方融资公告称其3000万美元种子轮有 Trenches Capital 参与。SEC EDGAR 的2024年 Form D 登记了名为 Trenches Capital Fund, LP 的有限合伙基金；现有材料未披露该基金与 Claros 所称投资品牌之间的管理关系、投资金额或具体出资主体。",
-      "facts": [],
+      "coverage_status": "self_declared_affiliation",
+      "summary": "Trenches Capital 的 LinkedIn 公司页自述为早期阶段 VC。Claros 的融资说明将其列为新老投资方之一；目前资料不足以补出管理主体、基金信息或更完整的策略。",
+      "coverage_note": "当前仅有机构自述和一项融资参与披露，依覆盖规则保留为有限资料并继续补采；未据此推断法律实体、投资组合或基金结构。",
+      "facts": [
+        {
+          "field": "self_description",
+          "label": "LinkedIn 公司页自述",
+          "value": "Early stage VC（早期阶段风险投资）",
+          "source_id": "b33-trenches-linkedin"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Claros 的官方融资页将 Trenches Capital 列为3000万美元种子轮参投方之一；公告未披露其单独出资金额。",
-          "source_id": "claros-trenches-capital-seed-2026"
-        },
-        {
-          "description": "融资来源记录：Claros · 种子轮 · 2026-03-19 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Claros 融资说明将 Trenches Capital 列入新老投资方；未披露其单独出资额。",
           "source_id": "FISRC-2877a4b61010da1c"
         }
       ],
@@ -158,34 +162,25 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "Claros 投资关系来自发行方公告，基金登记资料来自 SEC EDGAR。档案保留公司公告使用的投资者名称，不据名称相似断言该基金的管理人、管理团队或出资额。",
+      "experience_summary": "LinkedIn 公司页自述为早期阶段 VC；公开资料尚不足以确认管理主体或更完整的组织背景。",
       "sources": [
         {
-          "source_id": "claros-trenches-capital-seed-2026",
-          "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
-          "source_title": "Redefining Data Center Energy Infrastructure from Chip to Grid - Claros",
-          "source_content_hash": "eb7045e28cb8eed2d595772f7266d9e7b5ba6089d2283cda9760f0253f16a466",
-          "quote": "with participation from new and existing investors like Systemiq Capital, Aero X Ventures, Trenches Capital",
-          "quote_hash": "85043835348a4ce5bad648b60ece438446a19d81a3130ccc18e01ca35a64e1ca"
-        },
-        {
-          "source_id": "trenches-capital-sec-registration",
-          "source_url": "https://www.sec.gov/Archives/edgar/data/2014239/000201423924000001/primary_doc.xml",
-          "source_title": "www.sec.gov",
-          "source_content_hash": "c79889ac4ac9e4108ba931c9234691c17826767fc3f1d5e086fd003f0527c108",
-          "quote": "Trenches Capital Fund, LP",
-          "quote_hash": "18bd2fc3af1adb6b72276a05e3cace82d561cb1a5debad96bbdf815bb6a1656b"
+          "source_id": "b33-trenches-linkedin",
+          "source_url": "https://www.linkedin.com/company/trenches-capital/",
+          "source_title": "Trenches Capital | LinkedIn",
+          "source_content_hash": "d9ef223457716b4ac4477356fcca7b128c29c4d52c34ab83f28b27d680889aa9",
+          "quote": "Early stage VC",
+          "quote_hash": "5ea8e30caa770c9f923faebc3c88950f69237839c68633a612b4423179b4cb36"
         },
         {
           "source_id": "FISRC-2877a4b61010da1c",
           "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
-          "source_title": "从芯片到电网重新定义数据中心能源基础设施",
-          "source_content_hash": "904713ab4fa86f2ea7546f7229f8bfca76272454fd1556e862479e67cf57708e",
-          "quote": "with participation from new and existing investors like Systemiq Capital, Aero X Ventures, Trenches Capital, a leading power semiconductor provider, and others",
-          "quote_hash": "75f250f9e1e2da232df857edf46f43289d46b239e77ace5b6dc2dad10a43e6e5"
+          "source_title": "Redefining Data Center Energy Infrastructure from Chip to Grid - Claros",
+          "source_content_hash": "eb7045e28cb8eed2d595772f7266d9e7b5ba6089d2283cda9760f0253f16a466",
+          "quote": "with participation from new and existing investors like Systemiq Capital, Aero X Ventures, Trenches Capital, a leading power semiconductor provider, and others.",
+          "quote_hash": "4a7858f49e477485bfe56c34374069ac0bce566f11dc3d32ec10e21a40d93663"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

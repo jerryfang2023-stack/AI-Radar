@@ -139,29 +139,48 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Flow Engineering 官方公告称 Hugging Face 联合创始人 Thomas Wolf 参与其 Series B 融资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "人物关联及投资参与均来自 Flow Engineering 官方 Series B 公告；不依据第三方投资数据库补写其他项目。",
+      "summary": "Flow Engineering 官方 Series B 公告将 Thomas Wolf 称为 Hugging Face 联合创始人，并列为该轮个人出资者之一；公告未披露其出资金额。本档按发行方公开披露记录，不补充未核实的个人投资组合。",
+      "facts": [
+        {
+          "field": "reported_role",
+          "label": "融资公告标注的身份",
+          "value": "Flow Engineering 将 Thomas Wolf 标注为 Hugging Face 联合创始人。",
+          "source_id": "PROFILE-B6-INV-8cbd8544b83d9e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Flow Engineering 官方公告列出 Hugging Face 联合创始人 Thomas Wolf 参与 Series B 融资。",
+          "description": "Flow Engineering 官方 Series B 公告称 Thomas Wolf 对该轮作出个人出资；未披露金额。",
+          "source_id": "PROFILE-B6-INV-8cbd8544b83d9e-1"
+        },
+        {
+          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3511f7baf76701e3"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-3511f7baf76701e3",
+          "source_id": "PROFILE-B6-INV-8cbd8544b83d9e-1",
           "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
           "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
           "source_content_hash": "40c9452232df5d4ee5c444e1a39668a4b19c2c2f59e43252f283a9188dd4f488",
-          "quote": "und alongside Human Capital, Evantic, SV Angel, Odyssey, EQT, with contributions from Hugging Face co-founder Thomas Wolf, Mercedes-Benz CIO Jonas von Malottki, and Formula 1 world champion Nico Rosberg. Roelof Botha has additionally joined Flow’s board as an independent director and personally invested in the company. Over the past year,",
-          "quote_hash": "92bf560a24ae5b8f4ba569232234ebace6a49ec760e8a5f437a773ffdcf849a9"
+          "quote": "with contributions from Hugging Face co-founder Thomas Wolf, Mercedes-Benz CIO Jonas von Malottki, and Formula 1 world champion Nico Rosberg.",
+          "quote_hash": "9734a4024254d13fbb3f27bc1a933dc1db0c34db20a5bd3d05d07764c1ba3577"
+        },
+        {
+          "source_id": "FISRC-3511f7baf76701e3",
+          "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+          "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
+          "source_content_hash": "1ada124c6217cee1",
+          "quote": "with contributions from Hugging Face co-founder Thomas Wolf, Mercedes-Benz CIO Jonas von Malottki, and Formula 1 world champion Nico Rosberg",
+          "quote_hash": "5c36bdef248998ba184ff7bb0e79f5b157b27697426afa3ff7dbb47ccead4316"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

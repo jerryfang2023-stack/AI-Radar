@@ -163,11 +163,30 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "险峰长青的官方天使投资页面将其列为基金投资与管理团队的一部分；设序科技官网记录险峰长青参与其天使轮。",
-      "coverage_note": "机构关系来自 K2VC 官方页面，融资关系来自设序科技官网的融资历程；不补入投资金额。",
-      "facts": [],
+      "summary": "险峰长青官网将其定位为产业天使投资机构，覆盖科技创新、先进制造、新能源、产业数字化和新经济。官网团队页称管理合伙人赵阳负责险峰长青基金的投资及管理。",
+      "coverage_note": "机构成立时间、投资定位、覆盖领域及团队职责据险峰官网；被投企业列表属于机构自述的公开组合示例。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网披露的成立时间",
+          "value": "险峰官网称险峰长青创立于2010年。",
+          "source_id": "PROFILE-COLLECT-INV-161537c5d2386f-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网投资方向",
+          "value": "官网列出科技创新、先进制造、新能源、产业数字化和新经济。",
+          "source_id": "PROFILE-COLLECT-INV-161537c5d2386f-1"
+        },
+        {
+          "field": "current_roles",
+          "label": "基金投资管理职责",
+          "value": "官网称管理合伙人赵阳负责险峰长青基金投资及管理。",
+          "source_id": "PROFILE-COLLECT-INV-161537c5d2386f-2"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -175,10 +194,6 @@
       "education": [],
       "experience_summary": "",
       "track_record": [
-        {
-          "description": "设序科技官网披露其天使轮由险峰长青、高榕资本和联想创投投资。",
-          "source_id": "xianfeng_designorder_angel"
-        },
         {
           "description": "融资来源记录：设序科技 · 历史轮次未披露 · 天使轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-887f1542c828b426"
@@ -190,20 +205,20 @@
       ],
       "sources": [
         {
-          "source_id": "xianfeng_k2vc_identity",
+          "source_id": "PROFILE-COLLECT-INV-161537c5d2386f-1",
           "source_url": "https://www.k2vc.com/cn/angel",
           "source_title": "险峰长青 | 险峰",
           "source_content_hash": "0f24bd3541a4b8368ffbb31ac148bacd852cf906cbba103c0028cf5a51c39a2c",
-          "quote": "负责险峰长青基金投资及管理",
-          "quote_hash": "77c58fbe7845e633cab9ec52fb3b633c9076cb1e0a851619a825885ed92753c3"
+          "quote": "险峰长青创立于2010年，聚焦产业天使投资，覆盖科技创新、先进制造、新能源、产业数字化和新经济等领域。",
+          "quote_hash": "ca875e05c9b13defa6946aef71c409d32272144431df756b5fbc569daae589c7"
         },
         {
-          "source_id": "xianfeng_designorder_angel",
-          "source_url": "https://www.designorder.cn/zh/about",
-          "source_title": "设序科技-基于AI的新一代工业CAD",
-          "source_content_hash": "dac68def5b1823da1499b556dfbe4feb9c7a1c681dfb3ef3f82f6e5c7e708c7c",
-          "quote": "天使轮融资 险峰长青、高榕资本、联想创投",
-          "quote_hash": "321c753dc9b67c821733e616ded437ee27ad192cfee469d02d061922faa9e2e5"
+          "source_id": "PROFILE-COLLECT-INV-161537c5d2386f-2",
+          "source_url": "https://www.k2vc.com/cn/angel",
+          "source_title": "险峰长青 | 险峰",
+          "source_content_hash": "0f24bd3541a4b8368ffbb31ac148bacd852cf906cbba103c0028cf5a51c39a2c",
+          "quote": "赵阳 险峰长青·管理合伙人 负责险峰长青基金投资及管理",
+          "quote_hash": "6136a165bfbf63b3a01edb26c8ce29b2f1f01e180ead69e655a880833e5c9a93"
         },
         {
           "source_id": "FISRC-887f1542c828b426",
@@ -222,7 +237,7 @@
           "quote_hash": "6e0944605f10f53334f72bbd7c6dcd9d6bf0cbd4d7686337eb3b786f2b37ed8b"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

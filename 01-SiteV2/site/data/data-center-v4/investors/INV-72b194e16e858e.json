@@ -194,10 +194,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "SiliconANGLE 关于 Seltz 种子轮融资的报道将 Arc Investors 列为参与机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "法律名称仅按官网印记页分别记录，不把瑞士公司和卢森堡 AIFM 合并为同一法人或推断控制关系。融资案例来自对应融资报道。",
+      "summary": "Arc Investors 官方网站的版权和印记页列示瑞士公司 arc investors AG，并另行列出卢森堡的 arc capital partners GP S.à.r.l.，称后者为在 CSSF 注册的 AIFM。SiliconANGLE 的融资报道将 Arc Investors 列为 Seltz 的参与方；官网印记页没有说明瑞士与卢森堡两家法律实体之间的所有权关系。",
+      "facts": [
+        {
+          "field": "legal_entity_disclosure",
+          "label": "官网印记页列示的瑞士公司",
+          "value": "Arc Investors 官网印记页列示 arc investors AG，地址为苏黎世，并给出瑞士 UID 编号 CHE-470.091.487；同页另列出卢森堡 AIFM。",
+          "source_id": "PROFILE-COLLECT-INV-72b194e16e858e-G-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -218,6 +225,14 @@
           "source_content_hash": "b187fa9069387351ec0531ae84de444eff484a49c8b9fe61e57a5c1101cf5484",
           "quote": "peedinvest and B Capital. Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures, plus angel investors from Google LLC, Hugging Face Inc. and Ramp Network Inc. The startup was founded by Chief Executive Officer Antonio Mallia, who",
           "quote_hash": "0ca05b9c0dbcd5530150f3b432002dfa94a4ce163a75de5459f96300959e875b"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-72b194e16e858e-G-2",
+          "source_url": "https://www.arcinvestors.com/imprint",
+          "source_title": "arc investors | Imprint",
+          "source_content_hash": "d86390744c14326c31206f59419981af7d24f3e2d6936ad9590622006094427f",
+          "quote": "arc investors AG Mainaustrasse 2 8008 Zurich Switzerland UID: CHE-470.091.487",
+          "quote_hash": "62da3711ec88c570f4760a6ff9862f3799d9eb76c9e082153901273f27336096"
         },
         {
           "source_id": "FISRC-20a83c87c0b64e7f",

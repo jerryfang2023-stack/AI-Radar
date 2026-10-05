@@ -241,11 +241,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "宇信科技是上市金融科技服务商。中关村科学城发布的融资消息将其列为光轮智能新一轮融资的产业资本及财务投资机构。",
-      "coverage_note": "公司身份来自宇信科技官网；融资参与来自中关村科学城官方信息发布。",
-      "facts": [],
+      "summary": "宇信科技官网确认其为上市金融科技解决方案企业；中关村科学城发布的光轮智能融资消息将宇信科技列入产业资本及财务投资机构。档案记录公司作为企业投资方的公开案例，不将其归类为独立 VC 基金。",
+      "coverage_note": "公司身份及主营业务据宇信科技官网；融资参与名称据政府产业资讯。公开材料未说明其具体出资子公司或基金。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网公司名称",
+          "value": "北京宇信科技集团股份有限公司，A股上市公司，股票代码300674。",
+          "source_id": "PROFILE-COLLECT-INV-04b166a9112a49-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "中关村科学城发布的融资资讯将宇信科技列为光轮智能投资机构之一。",
+          "source_id": "PROFILE-COLLECT-INV-04b166a9112a49-2"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -253,10 +266,6 @@
       "education": [],
       "experience_summary": "",
       "track_record": [
-        {
-          "description": "中关村科学城 2026 年 7 月消息将宇信科技列入光轮智能新一轮融资投资方。",
-          "source_id": "yusys_guanglun_round"
-        },
         {
           "description": "融资来源记录：光轮智能 · 基础设施融资 · 2026-07-01 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8787a3d3602feb17"
@@ -272,15 +281,15 @@
       ],
       "sources": [
         {
-          "source_id": "yusys_identity",
-          "source_url": "https://www.yusys.com.cn/about-history.html",
+          "source_id": "PROFILE-COLLECT-INV-04b166a9112a49-1",
+          "source_url": "https://www.yusys.com.cn/about-introduction.html",
           "source_title": "宇信科技-中国银行业IT解决方案市场中领军企业之一",
-          "source_content_hash": "4edc0b1aa8d4acee71db07a12f62e7c38df4480aa23dd1abf6fc0d98914e418b",
-          "quote": "宇信科技",
-          "quote_hash": "d7a8856c4539eefe9dd16300769746e69cd2303155c8d04a4e1e19faedd40520"
+          "source_content_hash": "1f65b57396f2c753c23f5780300277a50f1b6a27797ea5f083e3443727ce58bf",
+          "quote": "北京宇信科技集团股份有限公司，A股上市公司（股票代码 300674）",
+          "quote_hash": "cabe7399f07fa519443085eb565df5308f7691314973705f988f28155d33c940"
         },
         {
-          "source_id": "yusys_guanglun_round",
+          "source_id": "PROFILE-COLLECT-INV-04b166a9112a49-2",
           "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
           "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
           "source_content_hash": "d27cab4f8d40474e5fbb7645a72bf14914fb35e53a73fde14f56a4cceadb74d7",
@@ -312,7 +321,7 @@
           "quote_hash": "b848920f19bc55c223f89d1d5d9ea16be1066dd0b6997163fa638a4301fe1850"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

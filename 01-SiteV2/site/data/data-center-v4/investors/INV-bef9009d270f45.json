@@ -139,33 +139,98 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Partech 官网支持机构历史、投资策略和总部信息；其 2026 年 6 月公告说明管理规模及组合规模，并确认 NP Co. 领投记录。",
+      "summary": "Partech 是总部位于巴黎的全球科技投资公司，官网列出 Seed、Venture、Africa、Growth 和 Impact 策略，并将创立年份记为 1982 年。2026 年 6 月，Partech 官方公告确认其领投 NP Co. 的 600 万欧元种子前轮。",
+      "facts": [
+        {
+          "field": "headquarters",
+          "label": "总部及办事处",
+          "value": "总部位于巴黎，另在柏林、达喀尔、迪拜、内罗毕和旧金山设有办公室。",
+          "source_id": "partech_about_2026"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "Seed、Venture、Africa、Growth、Impact。",
+          "source_id": "partech_funds"
+        },
+        {
+          "field": "assets_and_portfolio",
+          "label": "管理规模与组合（公司自述，2026-06）",
+          "value": "接近 30 亿欧元资产管理规模；当时组合包括 40 个国家的 220 家公司，覆盖四大洲。",
+          "source_id": "partech_about_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1982",
+          "description": "Partech 官网记载其于 1982 年在旧金山创立。",
+          "source_id": "partech_story"
+        }
+      ],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 NP Company 预种子轮 本轮领投。",
+          "description": "Partech 于 2026 年 6 月领投 NP Co. 的 600 万欧元种子前轮；该公告未披露 Partech 的单独出资额。",
+          "source_id": "partech_np_co_2026"
+        },
+        {
+          "description": "融资来源记录：NP Company · 预种子轮 · 2026-06-02 · 本轮领投 · €6M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5c311f61df097447"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Partech 官网",
+          "value": "https://partechpartners.com/",
+          "url": "https://partechpartners.com/",
+          "source_id": "partech_funds"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "partech_funds",
+          "source_url": "https://partechpartners.com/funds",
+          "source_title": "Funds | Partech",
+          "source_content_hash": "d91334ffdb327014a29d87be80382b17f48bcce62accd7a0dffef0b828b8eee1",
+          "quote": "01 Seed 02 Venture 03 Africa 04 Growth 05 Impact",
+          "quote_hash": "7b96e0c8a5723114c32eabf83e4cb0027b47452149c8e8ab71a604aff802becf"
+        },
+        {
+          "source_id": "partech_story",
+          "source_url": "https://partechpartners.com/story",
+          "source_title": "Story | Partech",
+          "source_content_hash": "8ba1d5bbb475ed3c9d4b488148c173b395b5059513e770b87be3e0dc965fd2e7",
+          "quote": "San Francisco 1982: Partech is born with a pioneering spirit and a global vision.",
+          "quote_hash": "29fb0f2dcdb99293224b9f18c05644e40c17045502674b316e611d92fb9e592f"
+        },
+        {
+          "source_id": "partech_np_co_2026",
+          "source_url": "https://partechpartners.com/news/np-co-raises-6m-pre-seed-to-bring-frontier-ai-to-industrial-engineering-backed-by-mistral-ai-founders",
+          "source_title": "NP CO RAISES €6M PRE-SEED TO BRING FRONTIER AI TO INDUSTRIAL ENGINEERING, BACKED BY MISTRAL AI FOUNDERS",
+          "source_content_hash": "dd82ed805afc7603227df9dd50648a12d6f530458856d956cf641c0349004ccf",
+          "quote": "The round was led by Partech",
+          "quote_hash": "cab8747d457c627ffdac6fdac0ac7b42885a8935e14b98544db02bfc0fcb8557"
+        },
+        {
+          "source_id": "partech_about_2026",
+          "source_url": "https://partechpartners.com/news/np-co-raises-6m-pre-seed-to-bring-frontier-ai-to-industrial-engineering-backed-by-mistral-ai-founders",
+          "source_title": "NP CO RAISES €6M PRE-SEED TO BRING FRONTIER AI TO INDUSTRIAL ENGINEERING, BACKED BY MISTRAL AI FOUNDERS",
+          "source_content_hash": "dd82ed805afc7603227df9dd50648a12d6f530458856d956cf641c0349004ccf",
+          "quote": "Partech is a global tech investment firm headquartered in Paris, with offices in Berlin, Dakar, Dubai, Nairobi, and San Francisco. We are a team made up of industry and technology experts who are independent thinkers. Partech brings together capital, operational experience, and strategic support to back entrepreneurs from seed to growth stage. Founded 40 years ago in San Francisco, Partech today manages close to €3 billion in assets for a current portfolio of 220 companies in 40 countries across four continents. For more on Partech",
+          "quote_hash": "cbb8b3d54104b44129def1f508577e120c5b3ae39f808189c2775155d9cc2492"
+        },
         {
           "source_id": "FISRC-5c311f61df097447",
           "source_url": "https://tech.eu/2026/06/02/backed-by-mistral-ai-founders-np-company-secures-eur6m-pre-seed-to-advance-ai-for-engineering/",
-          "source_title": "Backed by Mistral AI founders, NP Company secures €6M pre-seed to advance AI for engineering - Tech.eu",
-          "source_content_hash": "44325ba80a06f2302a386d62671a50c8558e3b1d2d77c94117b75bc4a760a5dc",
+          "source_title": "获 Mistral AI 创始人支持，NP Company 融资 600 万欧元种子轮前资金，推动工程领域 AI 发展",
+          "source_content_hash": "a21d576724e54306",
           "quote": "The round was led by Partech",
           "quote_hash": "cab8747d457c627ffdac6fdac0ac7b42885a8935e14b98544db02bfc0fcb8557"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

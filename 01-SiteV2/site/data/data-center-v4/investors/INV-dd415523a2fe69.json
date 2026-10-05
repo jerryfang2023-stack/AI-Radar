@@ -125,27 +125,23 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "facts": [],
       "milestones": [],
       "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动与来源明确记载的身份关联，不补写未经核实的职业经历或个人出资金额。",
-      "summary": "Sycamore 的官方种子轮公告将 Sachin Katti 列为投资者之一，并标注为 “Compute Infrastructure at OpenAI”；未披露其个人出资金额。",
+      "coverage_note": "投资活动只有 Sycamore 公告所列一例；公告中的 OpenAI 职务按历史标签处理，不推断为现职。",
+      "summary": "Stanford Computer Science currently lists Sachin Katti as Adjunct Professor, Emeritus. Sycamore’s seed-round announcement also names him as an investor and labels him “Compute Infrastructure at OpenAI”; that announcement does not establish a current OpenAI role or identify an investment vehicle.",
       "current_roles": [
         {
-          "title": "Compute Infrastructure",
-          "organization": "OpenAI",
-          "source_id": "sycamore-sachin-katti-seed-2026"
+          "title": "Adjunct Professor, Emeritus",
+          "organization": "Stanford University",
+          "source_id": "B29-SACHIN-STANFORD-CS"
         }
       ],
       "career": [],
       "education": [],
-      "experience_summary": "Sycamore 公告给出的身份标签为 “Compute Infrastructure at OpenAI”；档案仅记录该来源中的职务表述与投资关系。",
+      "experience_summary": "Stanford’s Computer Science faculty page lists his current emeritus affiliation. The OpenAI label is retained only as wording from the dated Sycamore financing announcement.",
       "track_record": [
-        {
-          "description": "Sycamore 官方公告列 Sachin Katti 为种子轮个人投资者之一，并标注其来自 OpenAI compute infrastructure；未披露个人出资额。",
-          "source_id": "sycamore-sachin-katti-seed-2026"
-        },
         {
           "description": "融资来源记录：Sycamore · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
@@ -161,6 +157,14 @@
           "quote_hash": "dd532c194b14aa636dfa1887fc729db9f353618746d72d34b02dba39f5faa4b9"
         },
         {
+          "source_id": "B29-SACHIN-STANFORD-CS",
+          "source_url": "https://www.cs.stanford.edu/people/sachin-katti-0",
+          "source_title": "Sachin Katti | Computer Science",
+          "source_content_hash": "08dafd106f36f9bb75df45972cb85ec4beeb86a0485a3c57e2134d2f25bbd7d2",
+          "quote": "Adjunct Professor, Emeritus",
+          "quote_hash": "ecc7816d014d5e78767c173b6462fe798a85d571c1b1aa0afe842120aa7c3710"
+        },
+        {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
           "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
@@ -169,7 +173,7 @@
           "quote_hash": "dd532c194b14aa636dfa1887fc729db9f353618746d72d34b02dba39f5faa4b9"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

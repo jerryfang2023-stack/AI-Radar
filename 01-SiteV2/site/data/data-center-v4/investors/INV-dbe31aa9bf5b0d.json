@@ -139,33 +139,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "三星证券官网用于机构业务描述；LinqAlpha 的新闻稿由公司提供给 PR Newswire，用于单笔融资参与记录。",
+      "summary": "Samsung Securities 官网介绍其投资银行服务，并称其 Investment Finance 业务向国内外公司及私募股权基金提供资本、投资有潜力的非上市企业。LinqAlpha 的 2,200 万美元融资公告将 Samsung Securities 列为韩国地区参与机构之一。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构业务",
+          "value": "证券及投资银行业务，包括投资融资和另类投资服务。",
+          "source_id": "B28-SAMSUNG-IB"
+        },
+        {
+          "field": "investment_activity",
+          "label": "企业投资业务",
+          "value": "官网称其投资有潜力的非上市公司。",
+          "source_id": "B28-SAMSUNG-CORPORATE"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 LinqAlpha A轮 本轮参投。",
+          "description": "LinqAlpha 公司融资公告将 Samsung Securities 列为其 2,200 万美元融资的韩国地区参与机构之一；未披露单独出资额。",
+          "source_id": "B28-SAMSUNG-LINQALPHA"
+        },
+        {
+          "description": "融资来源记录：LinqAlpha · A轮 · 2026-07-02 · 本轮参投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2967c8cb86b79dd2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Samsung Securities",
+          "url": "https://www.samsungsecurities.com/eng/main.do",
+          "source_id": "B28-SAMSUNG-IB"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "B28-SAMSUNG-IB",
+          "source_url": "https://www.samsungsecurities.com/eng/company/investment.do",
+          "source_title": "Samsung Securities [B3]",
+          "source_content_hash": "ce3acfb6ecd6c5acac542ce31a46fd928157ea81f531360077f3da54cbd16fc9",
+          "quote": "Investment Banking Offering a customized consulting for investing in stocks, bonds, OTC as well as alternative products",
+          "quote_hash": "3a95bb452da4974d34d87048a352c36c5a5609101a77b6f5d2830eae162cd97d"
+        },
+        {
+          "source_id": "B28-SAMSUNG-CORPORATE",
+          "source_url": "https://www.samsungsecurities.com/eng/company/investment.do",
+          "source_title": "Samsung Securities [B3]",
+          "source_content_hash": "ce3acfb6ecd6c5acac542ce31a46fd928157ea81f531360077f3da54cbd16fc9",
+          "quote": "Invests in sound non-listed companies with potential",
+          "quote_hash": "0ebe960cbf9c6fbf27bd512e24e4bfede05c23f1c3aac26313bf6bbbd909cfa2"
+        },
+        {
+          "source_id": "B28-SAMSUNG-LINQALPHA",
+          "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
+          "source_title": "LinqAlpha Raises $22 Million to Build the Alpha Intelligence Layer for Global Public Markets",
+          "source_content_hash": "6ace5b50091e3779525416e6f050ac495eebea9a6b5f412815ed55b5d1a72d9f",
+          "quote": "Samsung Securities, Mirae Asset Venture Investment, Mirae Asset Capital, NH Investment & Securities, Shinhan Venture Investment, and Hana Ventures in South Korea",
+          "quote_hash": "635226e5bbc13dc2401a8d1b21681f6e106ffa66c6dbd898c4b733e9f4fc2dd6"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
-          "source_title": "LinqAlpha Raises $22 Million to Build the Alpha Intelligence Layer for Global Public Markets",
-          "source_content_hash": "46fd8dc306376be8e4765c9865106bc3d748a05dea9b73c47ea7725b4da561f7",
+          "source_title": "LinqAlpha 融资 2200 万美元，为全球公开市场构建 Alpha 智能层",
+          "source_content_hash": "4a715b2a5964f624352304e70b67f66c9d6425a46e969e70ddc50f0999e19e3e",
           "quote": "Samsung Securities, Mirae Asset Venture Investment, Mirae Asset Capital, NH Investment & Securities, Shinhan Venture Investment, and Hana Ventures in South Korea",
           "quote_hash": "635226e5bbc13dc2401a8d1b21681f6e106ffa66c6dbd898c4b733e9f4fc2dd6"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

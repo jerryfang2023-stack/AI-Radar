@@ -188,10 +188,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "活动依据 GMI Cloud 的融资公告；公告未披露具体基金载体或 KB Investment 的单独出资金额。融资包中的授信与股权融资在档案中分开表述。",
-      "summary": "GMI Cloud 于 2026 年 10 月 1 日披露的 Series B 股权融资中，KB Investment 是参投机构之一。GMI 将融资包总额披露为 6.68 亿美元，其中 2.23 亿美元为 Series B 股权资金、4.45 亿美元为授信；未披露 KB Investment 的单独出资额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "VC业务描述与年度表现来自KB Financial Group 2024年年报；集团持股关系来自KBFG官网截至2026年6月30日的集团架构；项目参与来自GMI Cloud公告。不把该轮融资总额或授信额分摊为KB Investment的出资额。",
+      "summary": "KB Financial Group 2024 年报将 KB Investment 描述为韩国风险投资公司，称其孵化和加速科技型创业企业；集团官网截至2026年6月30日列示 KB Investment 为100%持有的集团公司。GMI Cloud 2026年融资公告将其列为参投方，未披露其单独出资金额。",
+      "facts": [
+        {
+          "field": "venture_capital_business",
+          "label": "集团年报披露的投资业务",
+          "value": "KB Investment 被 KB Financial Group 年报称为韩国风险投资公司，支持科技型创业企业的孵化和加速。",
+          "source_id": "PROFILE-COLLECT-INV-8bd84ea645802b-H-2"
+        },
+        {
+          "field": "parent_ownership",
+          "label": "集团官网披露的持股关系",
+          "value": "KB Financial Group 官网集团架构（更新于2026年6月30日）列出 KB Investment，持股比例为100%。",
+          "source_id": "PROFILE-COLLECT-INV-8bd84ea645802b-H-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -222,6 +235,22 @@
           "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-8bd84ea645802b-H-2",
+          "source_url": "https://www.kbfg.com/common/jsp/fileDownUtil.jsp?filepath=%2Fdata%2Fannual_report%2F2024+KB_ar_full+version.pdf",
+          "source_title": "KB Financial Group Annual Report 2024",
+          "source_content_hash": "c038712263b925fcfd70d0496a0b0595a25485f906052d2235c579f79abd962c",
+          "quote": "As a leading venture capital firm in Korea, KB Investment has consistently contributed to uncovering new growth engines for the national economy by incubating and accelerating high-potential, tech-driven startups.",
+          "quote_hash": "125c02f26c78da5dc2f342b9a93738902eef3e0285433ab4e55c8909f2fa85c5"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-8bd84ea645802b-H-3",
+          "source_url": "https://www.kbfg.com/eng/about/network/domestic.htm",
+          "source_title": "KB Financial Group Our Business | Network | About Us -",
+          "source_content_hash": "80ef15b722c96feadb21b737617d0c395e2ce83b90d3cfb71e047a85786c2e5c",
+          "quote": "KB Investment 100%",
+          "quote_hash": "c3f606fbc5fe06cc7c6c4bc0c0dd9c83de21926c51987faefedff530279c2749"
+        },
+        {
           "source_id": "FISRC-cf3eb2b83c7e750b",
           "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
           "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
@@ -238,7 +267,7 @@
           "quote_hash": "57d129887176732facc5235cc0ab30eac4060c64a8586df4d5578d6ee22ec3c5"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

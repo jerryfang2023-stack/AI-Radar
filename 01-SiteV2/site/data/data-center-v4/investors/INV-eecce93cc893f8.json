@@ -140,57 +140,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "机构品牌来自官网；融资活动仅依据创业邦公开报道记录。未扩写完整投资组合、基金规模或管理人法律主体。",
-      "summary": "五源资本官网显示其投资品牌与被投企业；创业邦关于阶跃星辰 B+ 轮的报道将“五源”列为进一步跟投的老股东。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "五源资本官网展示被投企业及其早期投资案例，并称其为创业者提供经营支持。无锡市政府转载的阶跃星辰 B+ 轮报道将五源列为跟投的老股东之一。",
+      "coverage_note": "机构介绍与被投企业名单来自五源资本官网；阶跃星辰融资关系来自地方政府转载的无锡日报报道，该报道未披露五源在本轮的单独出资额。",
       "facts": [
         {
-          "field": "organization_name",
-          "label": "官网显示的机构名称",
-          "value": "五源资本。",
-          "source_id": "PROFILE-274ca10b58b996e67e0e"
+          "field": "investment_approach",
+          "label": "官网对机构工作的自述",
+          "value": "寻找、支持创业者，并为其提供经营运作支持。",
+          "source_id": "b35-5y-about"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网列示的被投企业示例",
+          "value": "小米、快手、地平线、小鹏汽车等。",
+          "source_id": "b35-5y-portfolio"
+        },
+        {
+          "field": "offices",
+          "label": "官网披露办公地点",
+          "value": "上海、北京、深圳和香港。",
+          "source_id": "b35-5y-portfolio"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "创业邦关于阶跃星辰 B+ 轮的报道将“五源”列为进一步跟投的老股东；未披露金额。",
-          "source_id": "PROFILE-031b5ecb4f99e632685f"
+          "description": "无锡市政府转载的阶跃星辰报道将五源列为 B+ 轮进一步加码的老股东之一；未披露五源单独出资额。",
+          "source_id": "b35-5y-stepfun"
         },
         {
           "description": "融资来源记录：StepFun · B+轮 · 2026-01-26 · 本轮参投 · 50 亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-de3bb93d57d25bdf"
         }
       ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "机构官网",
-          "value": "五源资本",
-          "url": "https://www.5ycap.com/",
-          "source_id": "PROFILE-274ca10b58b996e67e0e"
-        }
-      ],
+      "contacts": [],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
+      "experience_summary": "公开网站展示其投资创业企业并提供经营支持。",
       "sources": [
         {
-          "source_id": "PROFILE-274ca10b58b996e67e0e",
-          "source_url": "https://www.5ycap.com/",
-          "source_title": "五源资本",
-          "source_content_hash": "0c74e1eaf51e5aa5b7945b7b6e6d184babd1777e67a8b6a23455790c254ff5e8",
-          "quote": "五源资本",
-          "quote_hash": "9199e54dd8156932226336f7575874450af54c487938444fdc4294ec79950636"
+          "source_id": "b35-5y-about",
+          "source_url": "https://www.5ycap.com/about/",
+          "source_title": "关于我们 | 五源资本",
+          "source_content_hash": "83040c754f166fde24b9928e7017ae2df34ae3248cd59270cb57ba443508e352",
+          "quote": "五源寻找、支持、激励孤独的创业者，为其提供从精神到所有经营运作的支持。",
+          "quote_hash": "7d5a0cbc6775047a5e65323bf1149192da68826a59c425e38648871df9d12c9e"
         },
         {
-          "source_id": "PROFILE-031b5ecb4f99e632685f",
-          "source_url": "https://www.cyzone.cn/article/822685.html",
-          "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
-          "source_content_hash": "cc8a99979976c5fbc3e61638e1787e1869b34def3d907b3aedf50d6eecbd71cc",
-          "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
-          "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+          "source_id": "b35-5y-portfolio",
+          "source_url": "https://www.5ycap.com/",
+          "source_title": "五源资本",
+          "source_content_hash": "d27ba6be1a3ba07a30763d4c911104d76e5ca79f2863fb9575c24e78e45291e9",
+          "quote": "被投企业：小米 (688111.SH)、快手、小马智行、地平线 (9660.HK)、小鹏汽车 (NYSE: XPEV / 9868.HK)。五源资本在上海、北京、深圳和香港都设有办公室。",
+          "quote_hash": "d27ba6be1a3ba07a30763d4c911104d76e5ca79f2863fb9575c24e78e45291e9"
+        },
+        {
+          "source_id": "b35-5y-stepfun",
+          "source_url": "https://www.wuxi.gov.cn/doc/2026/01/27/4723964.shtml",
+          "source_title": "阶跃星辰获超50亿元B+轮融资 梁溪基金参投赋能AI产业生态",
+          "source_content_hash": "4fac4ce80c9d8b6190ccacfe5b266a38c0ce1069688c2bf51881b568d9bbea12",
+          "quote": "昨日，入驻梁溪科技城的人工智能龙头企业阶跃星辰（StepFun）宣布完成超50亿元B+轮融资，一举刷新过去12个月中国大模型赛道单笔最高融资纪录。无锡市梁溪科技城溪沄数字经济创业投资基金参投3亿元，与上海国投先导基金、国寿股权、浦东创投、徐汇资本等投资机构，及腾讯、启明、五源等老股东携手加码，以资本赋能驱动新质生产力加速崛起。",
+          "quote_hash": "5cb8d1c4a4b9679542d203431c27124556acff7305a4a4f77c394857dc378b19"
         },
         {
           "source_id": "FISRC-de3bb93d57d25bdf",
@@ -200,8 +213,7 @@
           "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
           "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     }
   }
 }

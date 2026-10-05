@@ -139,29 +139,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "Seraphim Space 官方融资公告将 SOSV 列为 Zenithon 种子轮参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资定位及项目阶段来自 SOSV 官网；Zenithon 融资活动来自领投方 Seraphim Space 的公告，未披露 SOSV 单独出资额。",
+      "summary": "SOSV 官网将其定位为深科技、pre-seed 风险投资机构，通过 HAX、SOSV SF 和 SOSV NY 等项目从 pre-seed 开始投资，并可在项目结束后继续参与 Seed、A轮及以后阶段。Seraphim Space 的 Zenithon 种子轮公告将 SOSV 列为参投方。",
+      "facts": [
+        {
+          "field": "investment_mandate",
+          "label": "机构定位",
+          "value": "SOSV 官网将其定位为深科技 pre-seed 风险投资机构。",
+          "source_id": "PROFILE-B10-INV-ac9268f0f92f39-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其通过 HAX、SOSV SF、SOSV NY 从 pre-seed 开始投资，并继续参与 Seed、A轮及以后阶段。",
+          "source_id": "PROFILE-B10-INV-ac9268f0f92f39-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Seraphim Space 官方公告列出 SOSV 参与 Zenithon 种子轮融资。",
+          "description": "Seraphim Space 公告将 SOSV 列为 Zenithon 种子轮参投方；未披露单独金额。",
+          "source_id": "PROFILE-B10-INV-ac9268f0f92f39-3"
+        },
+        {
+          "description": "融资来源记录：Zenithon · 种子轮 · 2026-09-30 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-51e4efce7466f2fd"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://sosv.com/about/",
+          "source_id": "PROFILE-B10-INV-ac9268f0f92f39-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-51e4efce7466f2fd",
+          "source_id": "PROFILE-B10-INV-ac9268f0f92f39-1",
+          "source_url": "https://sosv.com/about/",
+          "source_title": "About SOSV - SOSV",
+          "source_content_hash": "d3ab1a14d35c732235668d91a73fa2e000eaf80cbb6a29b8bd3fd2109e4acf80",
+          "quote": "SOSV is the world’s most active deep tech, pre-seed venture capital firm",
+          "quote_hash": "a815dfa3f934b86a80354399dd86331bef97d51001138ac712f01cde93fff236"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-ac9268f0f92f39-2",
+          "source_url": "https://sosv.com/about/",
+          "source_title": "About SOSV - SOSV",
+          "source_content_hash": "d3ab1a14d35c732235668d91a73fa2e000eaf80cbb6a29b8bd3fd2109e4acf80",
+          "quote": "SOSV starts investing at pre-seed when companies join SOSV’s programs HAX, SOSV SF and SOSV NY. We continue investing post-program in series seed, A and beyond.",
+          "quote_hash": "d47fa1295ea5ada133044a2458efca99fc3b53b91acd45437a2beb8f5a49a7fa"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-ac9268f0f92f39-3",
           "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
           "source_title": "Zenithon Raises $10M For AI Engineering Models | Seraphim Space",
           "source_content_hash": "3b9e47f9376b40707339f5ac0b038a2624c0b79c5dc51d37dbf334ad75fd7a5b",
-          "quote": "ion in initial funding. The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more. The technology aims to accelerate engineering design across space, fusion, advanced propulsion and semiconductors. Funding will support model development, team growth and expansion into the US. Zenithon Raises $10M",
-          "quote_hash": "9247eb88fbfc3c1572947d70447e6c727c00efab940b686279617f8ec30702ac"
+          "quote": "Zenithon AI, a UK-based company developing AI world models for extreme physics has raised $10 million in initial funding. The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more.",
+          "quote_hash": "c768cd7de5e297ace014613c4f9d609ef43af4930e73a6b360f3c7f5d1dbb85a"
+        },
+        {
+          "source_id": "FISRC-51e4efce7466f2fd",
+          "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
+          "source_title": "Zenithon Raises $10M For AI Engineering Models",
+          "source_content_hash": "59434f301bde0537",
+          "quote": "The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more.",
+          "quote_hash": "4254c68c7c5a2d6453724232835c1fd6c67ca1b6edb33c677d6078e4b398539a"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

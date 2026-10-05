@@ -138,11 +138,18 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
       "summary": "博原资本是博世创投在中国设立的市场化投资平台；投资界报道博原资本参与博银合创 Pre-A 轮。",
       "coverage_note": "博原资本与博世创投的关系来自博世官网，具体融资关系来自投资界报道；未推断其单独投资金额。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "platform_identity",
+          "label": "博世官网披露的机构定位",
+          "value": "博世官网称博世创投在中国建立了市场化运作的投资平台博原资本，其他企业也可通过该平台基金进行风险投资。",
+          "source_id": "boyuan_bosch_identity"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -185,7 +192,7 @@
           "quote_hash": "5834c5ba243ef0633917ac76154b2c5b967c085df3dbe6e5017708196318f003"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

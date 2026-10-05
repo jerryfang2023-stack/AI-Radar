@@ -139,10 +139,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Thayer Investment Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "Thayer Investment Partners官网称其为专注旅游行业的战略风险投资机构。",
+          "source_id": "PROFILE-S-INV-55ffffee750e11-1"
+        },
+        {
+          "field": "investor_base",
+          "label": "官网披露的投资人类型",
+          "value": "官网称其投资人包括全球企业、高管、运营者及企业家。",
+          "source_id": "PROFILE-S-INV-55ffffee750e11-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +164,22 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-S-INV-55ffffee750e11-1",
+          "source_url": "https://thayer.vc/",
+          "source_title": "Thayer Investment Partners",
+          "source_content_hash": "99fc318dc4787511a85d51cdc2cea36c69de7872d217dc3eda1e1ac3bc0c2918",
+          "quote": "strategic venture capital firm focused on helping entrepreneurs navigate the dynamic, complex world of travel.",
+          "quote_hash": "b4034922ca9ffbfaf0c38bebec8da9ca5b446588de9f80727d893d5076a5fc6e"
+        },
+        {
+          "source_id": "PROFILE-S-INV-55ffffee750e11-2",
+          "source_url": "https://thayer.vc/",
+          "source_title": "Thayer Investment Partners",
+          "source_content_hash": "99fc318dc4787511a85d51cdc2cea36c69de7872d217dc3eda1e1ac3bc0c2918",
+          "quote": "Our investors are global corporations, executives, operators and accomplished entrepreneurs",
+          "quote_hash": "3ba9be7c24dae90c9e58a661552b62f8fbb4ba21f23d79347f5dc94057a2a85b"
+        },
+        {
           "source_id": "FISRC-0fa745b79d77cfe5",
           "source_url": "https://relaypro.com/press-releases/relay-raises-36-million-in-new-funding-from-industry-leaders-to-drive-frontline-safety-productivity-and-operational-intelligence/",
           "source_title": "Relay Raises $36 Million in New Funding from Industry Leaders to Drive Frontline Safety, Productivity, and Operational Intelligence",
@@ -161,6 +188,11 @@
           "quote_hash": "6c3d5f1546acbb46768861f1a24817bb0244db44973da5191105743ed3a0cb01"
         }
       ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "summary": "Thayer Investment Partners官网将其描述为专注旅游行业的战略风险投资机构，面向旅游领域创业者开展投资。官网称其投资人包括跨国公司、高管、运营者和企业家；现有资料不据此推断基金规模或法律结构。",
+      "coverage_note": "机构定位、行业方向及投资人类型均来自Thayer Investment Partners官网自述。",
       "last_verified_at": "2026-10-04"
     }
   }

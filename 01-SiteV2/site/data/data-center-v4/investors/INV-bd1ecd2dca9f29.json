@@ -121,36 +121,59 @@
       }
     ],
     "public_profile": {
+      "summary": "合肥高新创业投资管理合伙企业官网将“合肥天使基金”列为九川智能天使轮领投方之一。该披露证明了基金/品牌层面的投资活动；公开页面未给出其完整工商名称、规模或详细投资策略。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "身份与投资关系根据合肥高新创业投资管理合伙企业官网项目页中对投资方的具名披露；未找到该基金的具体法律载体或单独投资金额。",
-      "summary": "合肥高新创业投资管理合伙企业官网的九川智能项目页记载，该公司已完成天使轮融资，合肥天使基金为领投方之一；未披露该基金单独出资额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "按官网披露的基金名称记录，不推定其法律载体、管理人或出资额；官网投资案例是该品牌在天使阶段的一个公开案例。",
+      "facts": [
+        {
+          "field": "fund_category",
+          "label": "基金类型",
+          "value": "官网基金分类中包含天使基金；该基金/品牌被列为九川智能天使轮领投方之一。",
+          "source_id": "PROFILE-B14-INV-bd1ecd2dca9f29-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "九川智能项目页将合肥天使基金列为天使轮领投方之一，并同时列出凌云光、合肥高投。",
-          "source_id": "jiuchuan-angel-hefei-angel-fund"
+          "description": "合肥高新创投官网将合肥天使基金列为九川智能天使轮领投方之一，并列凌云光、合肥高投；未披露基金单独出资额。",
+          "source_id": "PROFILE-B14-INV-bd1ecd2dca9f29-1"
         },
         {
           "description": "融资来源记录：九川智能 · 历史轮次未披露 · 天使轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5fb234c4fe85bc54"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "合肥高新创业投资官网",
+          "value": "https://www.hfgxt.com.cn/",
+          "url": "https://www.hfgxt.com.cn/",
+          "source_id": "PROFILE-B14-INV-bd1ecd2dca9f29-2"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "身份与投资关系根据合肥高新创业投资管理合伙企业官网项目页中对投资方的具名披露；未找到该基金的具体法律载体或单独投资金额。",
+      "experience_summary": "",
       "sources": [
         {
-          "source_id": "jiuchuan-angel-hefei-angel-fund",
+          "source_id": "PROFILE-B14-INV-bd1ecd2dca9f29-1",
           "source_url": "https://www.hfgxt.com.cn/index.php?a=show&c=content&id=2900",
           "source_title": "九川智能-投资案例-合肥高新创业投资管理合伙企业（有限合伙）",
           "source_content_hash": "8f56abce4bcc6ea10cdb980ecf29339475cac10d0e6c8b5a064043e137c5f6c7",
           "quote": "已完成天使轮融资（凌云光、合肥高投、合肥天使基金领投）",
           "quote_hash": "010fc1c311e7570962e2d1ee251aa3abd0b7071236bc1b0467a0db3db119ed0c"
+        },
+        {
+          "source_id": "PROFILE-B14-INV-bd1ecd2dca9f29-2",
+          "source_url": "https://www.hfgxt.com.cn/",
+          "source_title": "合肥高新创业投资管理合伙企业（有限合伙）",
+          "source_content_hash": "0450c532cd9b6cc96d30819499251265ed40455242d527ff6ff43f7e322c8fc8",
+          "quote": "基金分类 种子基金 中科高新（创新院）基金 中科熠星基金 高新孵化二期基金 高新孵化基金 高新科转基金 天使基金 科创基金",
+          "quote_hash": "38549633cb1001b1a1d1266760bc375a54ed3b877d22def038c1ad38bccbfe79"
         },
         {
           "source_id": "FISRC-5fb234c4fe85bc54",
@@ -161,7 +184,7 @@
           "quote_hash": "010fc1c311e7570962e2d1ee251aa3abd0b7071236bc1b0467a0db3db119ed0c"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

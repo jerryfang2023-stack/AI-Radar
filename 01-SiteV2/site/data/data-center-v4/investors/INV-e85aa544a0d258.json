@@ -139,47 +139,53 @@
       }
     ],
     "public_profile": {
+      "last_verified_at": "2026-10-04",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录 Samsung 官方半导体新闻稿披露的 Mistral AI 融资活动与战略合作，不作其完整投资布局描述。",
-      "summary": "Samsung 官方公告称其领投 Mistral AI 的 Series D，并获得战略股权；公告将投资与长期技术合作联系起来。本档案仅记录这项公司公告。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Samsung 官方资料介绍其电子业务分为 DX 与 DS 两个事业部。Samsung Semiconductor 公告称 Samsung 领投 Mistral AI 的 Series D 并取得战略股权，作为长期技术合作的一部分。",
+      "coverage_note": "公司背景取自 Samsung 官方资料；融资活动仅按 Samsung 自己的公告记录，不扩展为完整战略投资组合。",
+      "facts": [
+        {
+          "field": "business_divisions",
+          "label": "官网披露事业部",
+          "value": [
+            "DX（Device eXperience）",
+            "DS（Device Solutions）"
+          ],
+          "source_id": "b33-samsung-fastfacts"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Samsung 官方公告称其领投 Mistral AI 的 Series D 融资并取得战略股权。",
-          "source_id": "PROFILE-3e8f6c58599fd3ea467e"
-        },
-        {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮领投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Samsung 官方公告称其领投 Mistral AI Series D 并获得战略股权，以支持长期技术合作。",
           "source_id": "FISRC-4d11ed62a144a3f4"
         }
       ],
       "contacts": [],
-      "sources": [
-        {
-          "source_id": "PROFILE-3e8f6c58599fd3ea467e",
-          "source_url": "https://semiconductor.samsung.com/news-events/news/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure/",
-          "source_title": "Samsung and Mistral AI Announce Strategic Partnership for Intelligence-Driven Semiconductor Infrastructure | Samsung Semiconductor Global",
-          "source_content_hash": "e2e15d30346818975354dc17f8c8c2cdbde562ff6d435482bd5f779e22a8f126",
-          "quote": "Samsung has also led Mistral AI’s Series D funding round, securing a strategic equity stake to support long-term technology collaboration.",
-          "quote_hash": "3e71a1fa06cae0da005e13eee842d9767029b7f50259db7eddc4e52a9feed90c"
-        },
-        {
-          "source_id": "FISRC-4d11ed62a144a3f4",
-          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-          "source_content_hash": "714c413ab36c1848",
-          "quote": "Samsung Electronics led the round, joined by co-leads Scaleup Europe Fund, managed by EQT, and existing investor PSG Equity.",
-          "quote_hash": "bf15e9f88ac00a88606570b08a3efcc424ae66c4b81607e97906e6e2d8899846"
-        }
-      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
-      "last_verified_at": "2026-10-04"
+      "experience_summary": "消费电子与半导体业务由 DX、DS 两个事业部构成；公开资料另披露其参与 Mistral AI 融资与技术合作。",
+      "sources": [
+        {
+          "source_id": "b33-samsung-fastfacts",
+          "source_url": "https://news.samsung.com/global/fast-facts",
+          "source_title": "FAST-FACTS &#8211; Samsung Global Newsroom",
+          "source_content_hash": "498831b4b189d5acdfe60e0768d3b5576a7c8261a80bad323b913e64a893643c",
+          "quote": "Samsung Electronics is divided into two divisions, DX (Device eXperience) and DS (Device Solutions), operated independently according to product characteristics.",
+          "quote_hash": "181ec658e2ca762c7a457cd587a2d0549a2bd15f3e8b27bf5bb6faaf0bfcf160"
+        },
+        {
+          "source_id": "FISRC-4d11ed62a144a3f4",
+          "source_url": "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
+          "source_title": "Samsung and Mistral AI Announce Strategic Partnership for Intelligence-Driven Semiconductor Infrastructure &#8211; Samsung Global Newsroom",
+          "source_content_hash": "85ed0f4b5e2e86a9b574752cbe5a918f0146c4703cd14dbff516e8f169140b66",
+          "quote": "Samsung has also led Mistral AI’s Series D funding round, securing a strategic equity stake to support long-term technology collaboration.",
+          "quote_hash": "3e71a1fa06cae0da005e13eee842d9767029b7f50259db7eddc4e52a9feed90c"
+        }
+      ]
     }
   }
 }

@@ -139,10 +139,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资参与关系依据新浪财经转载的融资报道；未确认内部出资主体。",
-      "summary": "蜂巢互联融资报道将中信证券列为相关投资机构。本档仅记录该公开融资披露，不推断其通过何种内部基金或部门出资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "集团的另类投资业务背景来自中信证券官网；蜂巢互联股东披露来自新浪财经转载报道，未把集团与某支基金等同。",
+      "summary": "中信证券官网介绍，其另类投资业务线以管理自营资金为主，负责投资交易管理。新浪财经转载的蜂巢互联融资报道将“中信证券”列为市场化投资机构；报道没有说明具体出资部门或基金，本档不作推定。",
+      "facts": [
+        {
+          "field": "alternative_investment_business",
+          "label": "官网披露的另类投资业务",
+          "value": "中信证券另类投资业务线主要管理自营资金，并负责多元策略跨境投资交易。",
+          "source_id": "PROFILE-S-INV-66ad325ff71541-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -159,9 +166,17 @@
           "source_content_hash": "d14110eba1a1beea7dde559c57889ac1f2a323df193ce26a04c4cd7e8e38c735",
           "quote": "科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金 等区域国资，深度联动各地高端制造产业资源，助力区域工业数字化转型落地； 市场化专业投资机构汇聚 鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、 中信证券 、珂玺资本 等深耕硬科技智能制造赛道的头部投资机构，聚焦企业长期价值成长； 产业链投资方引入 海尔资本、 利元亨 、中软国际、 金百泽 等上下游，实现技术、客户、场景双向赋能。 蜂巢互联创始人马震表示： 多元稳定、坚持长期主义的股东阵容，是公司持续深耕底层技术与推进产业规模化落地的核心战略支撑。 蜂巢互联坚持底层技术自主攻坚，以先进仿真底座+一体化工具链平台为核心业务主线，每年稳定投入约3亿元用于研发，持续突破几何、网格等仿真根技术，在细分工艺仿",
           "quote_hash": "d557dd9a428ae6be1b5bdfbea1e71c29913bd25dec64d0cd3c88c4233221627c"
+        },
+        {
+          "source_id": "PROFILE-S-INV-66ad325ff71541-2",
+          "source_url": "https://www.cs.ecitic.com/newsite/ywzx/lltz/ywjs/201710/t20171030_88825.html",
+          "source_title": "业务介绍_业务介绍_中信证券 CITIC Securities",
+          "source_content_hash": "7ffe18a8c18ab917a14a0142a58efe24ffe0740c78b5bf7b7d2f6ed9acc43945",
+          "quote": "以管理自营资金为主的多元策略跨境投资交易平台",
+          "quote_hash": "bf620b4fa1b2cefd813c3d8d391a3fe5e70bcf96348808843ceb7d800a1f36d4"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

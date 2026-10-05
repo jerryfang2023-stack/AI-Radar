@@ -139,33 +139,79 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "imec 与 imec.xpand 在融资公告中是两个独立列名主体；未推断其法律关系。",
+      "summary": "imec describes itself as an independent research and innovation center for nanoelectronics and digital technology. Vertical Compute separately named imec and imec.xpand as reinvestors in its financing announcement; this profile does not merge the research center with the investment fund.",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "独立的纳米电子与数字技术研究和创新中心。",
+          "source_id": "B27-IMEC-OFFICIAL"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构类型（官网自述）",
+          "value": "独立研究与创新中心",
+          "source_id": "B27-IMEC-OFFICIAL"
+        },
+        {
+          "field": "research_focus",
+          "label": "研究领域（官网自述）",
+          "value": [
+            "纳米电子",
+            "数字技术"
+          ],
+          "source_id": "B27-IMEC-OFFICIAL"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Vertical Compute 官方公告将 imec 列为本轮再投资方；公告未说明其具体投资载体或出资金额。",
+          "description": "Vertical Compute 公司公告称，既有投资者 imec.xpand 与 imec 均参与该轮再投资。",
+          "source_id": "B27-IMEC-VERTICAL"
+        },
+        {
+          "description": "融资来源记录：Vertical Compute · 种子轮 · 2026-03-04 · 本轮参投 · €37 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-676054bb104d0746"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "imec",
+          "url": "https://www.imec-int.com/",
+          "source_id": "B27-IMEC-OFFICIAL"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-676054bb104d0746",
+          "source_id": "B27-IMEC-OFFICIAL",
+          "source_url": "https://www.imec-int.com/en/about-us",
+          "source_title": "About imec | imec",
+          "source_content_hash": "fda6d32274466c72fa3d4eceaee8f519d226e494b323253b8ac110e5c69ba640",
+          "quote": "world’s largest independent research and innovation center for nanoelectronics and digital technology",
+          "quote_hash": "66f3c3e0352fe6cccea5a79324f8149a94e555e003011876cb0fea3de64c7024"
+        },
+        {
+          "source_id": "B27-IMEC-VERTICAL",
           "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
           "source_title": "Vertical Compute raises €57M to solve the AI memory bottleneck with new high density memory | vertical compute",
           "source_content_hash": "8caecaeb522b794ccb4db4c151d841dde1955c04b5560a215bd7870a384c0795",
-          "quote": "Existing investors Eurazeo , XAnge , Vector Gestion , imec.xpand and imec also reinvested in this round",
-          "quote_hash": "09da9995e3993ad963298a19c494d8f1519b26bf5eb1c2f234cefce4a1830e3b"
+          "quote": "imec.xpand and imec also reinvested in this round",
+          "quote_hash": "42dd279f68e0d9ee4cba326b83b480c7dddb68acb397b98450daf6d5c3d53532"
+        },
+        {
+          "source_id": "FISRC-676054bb104d0746",
+          "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
+          "source_title": "Vertical Compute 融资 5700 万欧元，以新型高密度内存解决 AI 内存瓶颈",
+          "source_content_hash": "f8b8c9f810df3f0ee026abeb15d344f81559d94a5baf84ed986447cfe3332805",
+          "quote": "Existing investors Eurazeo, XAnge, Vector Gestion, imec.xpand and imec also reinvested in this round",
+          "quote_hash": "edc1c07b67698212e9356e3f0ab0d3bb30e8cfee2577b34487cad7679f660b48"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

@@ -139,33 +139,82 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "XAnge 官网用于机构和投资阶段；Vertical Compute 官方公告将其列为既有投资者再投资，未披露单笔金额。",
+      "summary": "XAnge 是 Siparex Group 旗下欧洲早期风险投资品牌，官网称投资范围覆盖 Seed 至 Series B。Vertical Compute 官方公告将 XAnge 列为其 €57 million 融资中的既有投资方之一并称其继续投资；公告未披露 XAnge 的单笔金额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "欧洲早期风险投资机构。",
+          "source_id": "B26-XANGE-HOME"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资阶段",
+          "value": "Seed 至 Series B。",
+          "source_id": "B26-XANGE-STAGE"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Vertical Compute 官方公告将 XAnge 列为本轮再投资的既有投资人；公告未披露该融资的正式轮次名称。",
+          "description": "Vertical Compute 官方融资公告将 XAnge 列为本轮再投资者之一；融资包总额为 €57 million，未披露 XAnge 单笔金额。",
+          "source_id": "B26-XANGE-DEAL"
+        },
+        {
+          "description": "融资来源记录：Vertical Compute · 种子轮 · 2026-03-04 · 本轮参投 · €37 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-676054bb104d0746"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.xange.vc/",
+          "url": "https://www.xange.vc/",
+          "source_id": "B26-XANGE-HOME"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-676054bb104d0746",
+          "source_id": "B26-XANGE-DEAL",
           "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
           "source_title": "Vertical Compute raises €57M to solve the AI memory bottleneck with new high density memory | vertical compute",
           "source_content_hash": "8caecaeb522b794ccb4db4c151d841dde1955c04b5560a215bd7870a384c0795",
-          "quote": "Existing investors Eurazeo , XAnge , Vector Gestion , imec.xpand and imec also reinvested in this round",
-          "quote_hash": "09da9995e3993ad963298a19c494d8f1519b26bf5eb1c2f234cefce4a1830e3b"
+          "quote": "XAnge , Vector Gestion , imec.xpand and imec also reinvested in this round",
+          "quote_hash": "b9a9caf00d03c7a3eea43dbcc31ca4c2420f1d4fc2daee125b02a1193630b70d"
+        },
+        {
+          "source_id": "B26-XANGE-HOME",
+          "source_url": "https://www.xange.vc/vision",
+          "source_title": "Our Vision: Driving European Early‑Stage Innovation | XAnge",
+          "source_content_hash": "40f1f9f32628986242a6fc6e4d29e202d0f50efae3def15f291806960213a518",
+          "quote": "XAnge is the innovation-focused venture brand of the Siparex Group",
+          "quote_hash": "94b9430ac7bbbf49351f533541c39b6ffab09de29770f4fa890a2627a7e5adb7"
+        },
+        {
+          "source_id": "B26-XANGE-STAGE",
+          "source_url": "https://www.xange.vc/vision",
+          "source_title": "Our Vision: Driving European Early‑Stage Innovation | XAnge",
+          "source_content_hash": "40f1f9f32628986242a6fc6e4d29e202d0f50efae3def15f291806960213a518",
+          "quote": "From Seed to Series B",
+          "quote_hash": "0d9f256ab1e9a53d9654b84eea2c669d1128ae0268e49f4c849904947081c392"
+        },
+        {
+          "source_id": "FISRC-676054bb104d0746",
+          "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
+          "source_title": "Vertical Compute 融资 5700 万欧元，以新型高密度内存解决 AI 内存瓶颈",
+          "source_content_hash": "f8b8c9f810df3f0ee026abeb15d344f81559d94a5baf84ed986447cfe3332805",
+          "quote": "Existing investors Eurazeo, XAnge, Vector Gestion, imec.xpand and imec also reinvested in this round",
+          "quote_hash": "edc1c07b67698212e9356e3f0ab0d3bb30e8cfee2577b34487cad7679f660b48"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "XAnge 是 Siparex Group 旗下欧洲早期风险投资品牌，官网称投资范围覆盖 Seed 至 Series B。Vertical Compute 官方公告将 XAnge 列为其 €57 million 融资中的既有投资方之一并称其继续投资；公告未披露 XAnge 的单笔金额。"
     }
   }
 }

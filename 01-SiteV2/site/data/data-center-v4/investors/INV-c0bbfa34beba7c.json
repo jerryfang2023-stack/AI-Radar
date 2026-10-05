@@ -180,10 +180,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "简称对应、国资背景和业务来自福田区财政局官方信息公开；灵御智能投资参与来自新浪财经转载的融资稿件。官方披露时间为2025-08-21；不把集团下属具体基金与集团本体混同。",
+      "summary": "福田区政府公开信息将简称“福田资本”对应为深圳市福田资本运营集团有限公司，并披露其为福田区国资局全资控股的国有资本运营集团，经营基金管理、综合金融、直投和平台运营。融资报道将福田资本列入灵御智能的投资方。",
+      "facts": [
+        {
+          "field": "legal_identity_and_business",
+          "label": "福田区政府披露的主体和业务",
+          "value": "福田区政府将“福田资本”对应为深圳市福田资本运营集团有限公司，说明其由福田区国资局全资控股，业务包括基金管理、综合金融、直投和平台运营。",
+          "source_id": "PROFILE-COLLECT-INV-c0bbfa34beba7c-K-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -212,6 +219,14 @@
           "source_content_hash": "e9239a55b8ddf98ad6caa3ffc4c731df318ecb7394b729468e8bf23da3806f1a",
           "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
           "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-c0bbfa34beba7c-K-3",
+          "source_url": "https://www.szft.gov.cn/bmxx/qczj/gyqy/jbxx/content/post_12341286.html",
+          "source_title": "深圳市福田资本运营集团有限公司信息公开内容-福田政府在线",
+          "source_content_hash": "0f04bd7bff71d03b29ed24f292c4bd36b24c0926981597be680cff186d583b8f",
+          "quote": "主要业务板块包括基金管理业务、综合金融业务、直投业务、平台运营业务",
+          "quote_hash": "e7a0b00925344d29c15cbd9e20339a16c2092809fbe57554b11246a53668ef7e"
         }
       ],
       "last_verified_at": "2026-10-03",

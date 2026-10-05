@@ -139,30 +139,67 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "PXN 官网支持管理人、地区和基金条款；Revnu 公告披露的是融资总额及领投关系，未披露基金单独出资额。",
+      "summary": "NPIF II – PXN Equity Finance 是 Northern Powerhouse Investment Fund II 在英格兰西北地区的股权融资基金，由 PXN Ventures 管理。管理方页面称 2024 年获 £100m mandate、单笔最高可投 £5m；PXN 公告称该基金领投 Revnu 的 $3m 融资。",
+      "facts": [
+        {
+          "field": "manager",
+          "label": "基金管理人",
+          "value": "由 PXN Ventures 管理，属于 Northern Powerhouse Investment Fund II。",
+          "source_id": "pxn_npif"
+        },
+        {
+          "field": "mandate",
+          "label": "投资区域及额度（官网页面信息）",
+          "value": "西北地区 £100m mandate；股权投资最高 £5m。",
+          "source_id": "pxn_npif_ticket"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为Revnu融资本轮领投。",
-          "source_id": "PROFILE-4aca8305ac4d2f05e8e1"
+          "description": "PXN Ventures 报道 NPIF II – PXN Equity Finance 领投 Revnu 的 $3m 融资；未披露该基金单独出资额。",
+          "source_id": "pxn_revnu"
         },
         {
           "description": "融资来源记录：Revnu · 种子轮 · 2026-10-01 · 本轮领投 · $3m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ee1ac79a0f3dddbb"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.pxnventures.co.uk/npif/",
+          "url": "https://www.pxnventures.co.uk/npif/",
+          "source_id": "pxn_npif"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-4aca8305ac4d2f05e8e1",
+          "source_id": "pxn_npif",
+          "source_url": "https://www.pxnventures.co.uk/npif/",
+          "source_title": "NPIF Equity Finance | Northern Powerhouse Investment Fund",
+          "source_content_hash": "e187ce03a499bb8970fb2df0e8ade1bf201a88ad6e115a02123370a5c223c018",
+          "quote": "In spring 2024, we were named the fund manager for the North West region with a £100m mandate",
+          "quote_hash": "5e180814f76bcb5114342c44d5eb4f0b84730e7cedd980dd60e132a39484bafa"
+        },
+        {
+          "source_id": "pxn_npif_ticket",
+          "source_url": "https://www.pxnventures.co.uk/npif/",
+          "source_title": "NPIF Equity Finance | Northern Powerhouse Investment Fund",
+          "source_content_hash": "e187ce03a499bb8970fb2df0e8ade1bf201a88ad6e115a02123370a5c223c018",
+          "quote": "We can invest up to £5m of equity in businesses based in the North West",
+          "quote_hash": "50ddd48bbe1977ca63fb5673a9254a8ccc6fade0dca470a7e30a9dedf581deea"
+        },
+        {
+          "source_id": "pxn_revnu",
           "source_url": "https://www.pxnventures.co.uk/y-combinator-backed-revnu-raise-3m-to-build-ai-marketing-startup/",
           "source_title": "Y Combinator-backed Revnu raise $3m to build AI marketing startup | PXN Ventures",
           "source_content_hash": "f94c5a45fb8a321266563c4b63e5a827cf462b5910e87301a1931ff9168d9e9d",
-          "quote": "rarily to Silicon Valley to take part in the renowned accelerator. Revnu has now raised $3m in a round led by NPIF II – PXN Equity Finance, which is managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II. The company also received backing from Y Combinator. Despite considering building Revnu in San Francisco following the programme – a",
-          "quote_hash": "255ea38eb697aac2fc648d98a518692eb20e23efdb946312c6c64cb79ac70db9"
+          "quote": "round led by NPIF II – PXN Equity Finance, which is managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II.",
+          "quote_hash": "8afd62887081ccd745a8f8e5a0a7c86299ccfc2e612dda5fd92f4329c486722a"
         },
         {
           "source_id": "FISRC-ee1ac79a0f3dddbb",
@@ -173,11 +210,7 @@
           "quote_hash": "4e10d9bf3a9ef5e75273f895d8082d06ae8fd658d8808f228f34c4a8924820b7"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

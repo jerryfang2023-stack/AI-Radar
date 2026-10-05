@@ -123,33 +123,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "上海证券交易所披露平台的公告明确给出安徽省产投的法定全称、简称和产业投资平台宗旨；合肥高投公告将该机构列为智象未来超 5 亿元 B 轮参与方，未披露单独出资额。",
+      "summary": "安徽省产业发展投资有限责任公司，简称安徽省产投，是安徽省级产业投资平台。官方公告提出其面向重大产业项目及人才团队开展投资和招引，聚焦未来产业、投早投小及硬科技；合肥高投公告将其列为智象未来 2026 年超 5 亿元 B 轮参与方，未披露单家金额。",
+      "facts": [
+        {
+          "field": "legal_name_and_alias",
+          "label": "法定名称与简称",
+          "value": "官方公告列明中文全称为安徽省产业发展投资有限责任公司，中文简称为安徽省产投。",
+          "source_id": "anhui_platform_announcement"
+        },
+        {
+          "field": "investment_mandate",
+          "label": "平台投资方向",
+          "value": "公告称平台面向未来产业，开展重大产业项目与人才团队投资和招引，投早、投小、投长期、投硬科技。",
+          "source_id": "anhui_platform_mission"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 智象未来 B轮参与机构。",
+          "description": "合肥高投公告将安徽省产投列为智象未来融资的参与方之一；未披露其单独出资额。",
+          "source_id": "zhixiang_b_round"
+        },
+        {
+          "description": "融资来源记录：智象未来 · 历史轮次未披露 · B轮参与机构。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9670ee7c1fec7480"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "已核实法定名称、官方简称、政策定位与一笔融资参与；未将省级平台总规模推作机构资产管理规模或单笔投资额。",
       "sources": [
+        {
+          "source_id": "anhui_platform_announcement",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2025-09-09/243098_20250909_FIHL.pdf",
+          "source_title": "安徽省投资集团控股有限公司关于设立省级产业投资平台的公告",
+          "source_content_hash": "a7405b2367195eedfe307ec97cb8f53e0de88471862bf8237e8df102c87399a3",
+          "quote": "中文全称：安徽省产业发展投资有限责任公司 中文简称：安徽省产投",
+          "quote_hash": "659ca8eb77d0b174a09f7a7affe089612e031643b3a7946c9898f8d855158f48"
+        },
+        {
+          "source_id": "anhui_platform_mission",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2025-09-09/243098_20250909_FIHL.pdf",
+          "source_title": "安徽省投资集团控股有限公司关于设立省级产业投资平台的公告",
+          "source_content_hash": "a7405b2367195eedfe307ec97cb8f53e0de88471862bf8237e8df102c87399a3",
+          "quote": "瞄准未来产业方向，投早、投小、投长期、投硬科技。",
+          "quote_hash": "548cf4bbc36dab17543ca6337bf1a0cd3c937c7c313db703d2bf74eaa652482a"
+        },
+        {
+          "source_id": "zhixiang_b_round",
+          "source_url": "https://hfgxt.com.cn/index.php?a=show&c=content&id=3131",
+          "source_title": "超5亿元融资！智象未来完成B轮融资-企业新闻-新闻资讯-合肥高新创业投资管理合伙企业（有限合伙）",
+          "source_content_hash": "8bc3ef7257454ddb71599c7ea47d860aca24bd0cefa84c787bfa81851144b773",
+          "quote": "本轮融资由东方富海、峰华资本、安徽省产投",
+          "quote_hash": "6fffda5ab156d74d2529cae5d1ab1661bf2fa8d4b21d480dcb9e340ea824dd30"
+        },
         {
           "source_id": "FISRC-9670ee7c1fec7480",
           "source_url": "https://hfgxt.com.cn/index.php?a=show&c=content&id=3131",
           "source_title": "超5亿元融资！智象未来完成B轮融资-企业新闻-新闻资讯-合肥高新创业投资管理合伙企业（有限合伙）",
-          "source_content_hash": "8bc3ef7257454ddb71599c7ea47d860aca24bd0cefa84c787bfa81851144b773",
+          "source_content_hash": "9b3603000321e253",
           "quote": "4月15日，合肥高新区投资平台合肥高投投资企业智象未来（合肥）信息技术有限公司（简称“智象未来”）宣布完成超5亿元B轮融资，本轮融资由东方富海、峰华资本、安徽省产投、华安嘉业、合肥产投、兴泰创投、合肥高投等头部投资机构和国资机构联合参与。",
           "quote_hash": "de0c10abaf7f677dac65ec33c373785963c0a4250b2163affb6518bde3f24c4e"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

@@ -124,33 +124,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官方公司资料确认主体与投资平台、领域及阶段；融资报道金额为A2轮整轮金额，不代表华金资本单独出资额。",
+      "summary": "珠海华金资本股份有限公司是珠海科技产业集团控股的上市公司，以珠海华金创新投资有限公司等为核心投资运作平台，布局半导体、新能源、医疗健康等领域，投资以PE为主并覆盖VC。投资界报道其参与极佳视界A2轮跟投；该轮2亿元为整轮金额，未披露华金资本单独出资额。",
+      "facts": [
+        {
+          "field": "identity",
+          "label": "主体身份",
+          "value": "华金资本官网称珠海华金资本股份有限公司简称“华金资本”，为珠海科技产业集团控股上市公司。",
+          "source_id": "huajin_company"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资布局与阶段",
+          "value": "官网称其以珠海华金创新投资有限公司等为核心运作平台，重点布局半导体、新能源、医疗健康等领域，以PE为主并覆盖VC阶段。",
+          "source_id": "huajin_business"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 极佳视界 A2轮跟投方。",
+          "description": "投资界报道华金资本跟投极佳视界A2轮；报道所列2亿元是整轮融资金额，未披露华金资本单独出资额。",
+          "source_id": "huajin_round"
+        },
+        {
+          "description": "融资来源记录：极佳视界 · 历史轮次未披露 · A2轮跟投方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fdfe58e2e68c7e9e"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "huajin_company",
+          "source_url": "https://www.huajinct.com/about/Team.aspx?nav=2&p=6",
+          "source_title": "华金资本",
+          "source_content_hash": "9c3b86d8f3b64e11b9337a826b402dfb9350afe952596789a717e75c71314625",
+          "quote": "珠海华金资本股份有限公司（简称“华金资本”，股票代码“000532”）是珠海科技产业集团控股上市公司。公司成立于1992年10月",
+          "quote_hash": "f95e1c00ed889e44a416d92596eca026a3e06f88d080e6e9b9ca5753c1d62b3d"
+        },
+        {
+          "source_id": "huajin_business",
+          "source_url": "https://www.huajinct.com/business/Default.aspx",
+          "source_title": "华金资本",
+          "source_content_hash": "c923aab910b14c6422dd0d4c9c8bb3e6afb5090e9081cb05908f2427082b4326",
+          "quote": "以珠海华金创新投资有限公司等为核心运作平台，重点布局半导体、新能源、医疗健康等国家战略性新兴产业领域，投资阶段以PE为主，并覆盖VC等其他阶段，依托上市公司的独特优势，整合多方资源，丰富投资品种，创新管理模式，致力于打造全国领先的综合产业投资平台。",
+          "quote_hash": "f141aaf7e67d08eae6ebd443bda128f788c76fa0077287ff9905e4aaee1e1107"
+        },
+        {
+          "source_id": "huajin_round",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-04-16/doc-inhuryen7363521.shtml",
+          "source_title": "首发| 极佳视界，一个月融资25亿",
+          "source_content_hash": "ce374cd2f30339f3f9b63d98b5d8bc292f5302ad3ec9e50dd959cb3847fb5b50",
+          "quote": "时隔一个月后，极佳视界完成2亿元A2轮融资，由达晨财智领投，老股东华控基金联合领投，首发展创投、浦耀信晔、财鑫资本、华金资本、张科垚坤、复琢创投等知名机构跟投，老股东合鼎共资本超额跟投。",
+          "quote_hash": "98c219bff57f069fd265f07a361ec3130b8b77a58116a0656969b235bf42a8d5"
+        },
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",
-          "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿_投资界",
-          "source_content_hash": "999496916ab4da4f9513a18f2b966e8bfdc1d9daad283c092347a4b30748208f",
+          "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+          "source_content_hash": "7d9409a9ba1e94fc",
           "quote": "首发展创投、浦耀信晔、财鑫资本、华金资本、张科垚坤、复琢创投等知名机构跟投",
           "quote_hash": "53c9480b4646fcc1fd65da934701618dc003988b0ef3135b3c5adca43f6da522"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

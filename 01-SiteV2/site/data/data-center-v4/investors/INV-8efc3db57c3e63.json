@@ -181,10 +181,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "新浪财经融资报道将华登国际列为硅基流动 B 轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "成立时间、机构自述及深科技方向来自华登国际官网；硅基流动融资参与来自新浪财经报道。官网未披露的基金规模或完整投资组合不作推断。",
+      "summary": "华登国际官网称其成立于1987年，是在亚洲和美国开展业务的国际风险投资机构，聚焦 AI、数据、云、半导体等深科技；新浪财经融资报道将其列为硅基流动 B 轮投资方。",
+      "facts": [
+        {
+          "field": "firm_background",
+          "label": "官网披露的成立时间与机构定位",
+          "value": "华登国际官网称其成立于1987年，是在亚洲和美国有业务布局的国际风险投资机构。",
+          "source_id": "PROFILE-COLLECT-INV-8efc3db57c3e63-I-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的深科技投资方向",
+          "value": "官网称其聚焦 AI、数据、云、半导体及其他变革性技术。",
+          "source_id": "PROFILE-COLLECT-INV-8efc3db57c3e63-I-2"
+        },
+        {
+          "field": "reported_investment_activity",
+          "label": "公开披露的融资参与",
+          "value": "新浪财经报道将华登国际列为硅基流动 B 轮联合投资机构之一。",
+          "source_id": "FISRC-879cc82306af58a1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -207,6 +226,14 @@
           "quote_hash": "7617f95141b4c88999e0c5cb03e7c1743b026cbaaa1ef3f3ce8a559079249ef1"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-8efc3db57c3e63-I-2",
+          "source_url": "https://waldenintl.com.sg/",
+          "source_title": "Home | Walden International Singapore",
+          "source_content_hash": "5bdea3dfd319ae6d097af32dd7df79157a6c9b3993ef4ac02ee7b2786270ebad",
+          "quote": "Founded in 1987, Walden International is a leading international venture capital firm with a strong presence in Asia and the US.",
+          "quote_hash": "1524ac4a74d487f2b46b0e1895c918e0447b58548c4a80ff8a99241b53061ff6"
+        },
+        {
           "source_id": "FISRC-8ffab0ff3ac3652d",
           "source_url": "https://www.geener.cn/energy/company",
           "source_title": "公司概况-晶能微电子",
@@ -215,7 +242,7 @@
           "quote_hash": "3697720b74d995742a1df5cef51263dfd9ec45cff3495b1d2e2c0e7ad7a0ed02"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],

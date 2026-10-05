@@ -139,29 +139,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "Upstarts Media将Hillspire称为Eric Schmidt的family office，并在Adapter融资报道中列出该投资者；档案不扩展其未被来源证实的身份信息。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "summary": "Hillspire官方公司主页介绍其为Eric与Wendy Schmidt家族的综合家族办公室管理公司，支持该家庭的商业及公益活动。Upstarts报道将Hillspire称为Eric Schmidt的家族办公室并列入Adapter融资相关投资方；该条仅作为公开披露案例。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型（公司主页自述）",
+          "value": "为Eric与Wendy Schmidt家族管理商业及公益活动的综合家族办公室管理公司",
+          "source_id": "B31-HILL-LINKEDIN"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将Hillspire (Eric Schmidt家族办公室)列为Adapter相关融资的投资参与方。",
+          "description": "Upstarts报道将Hillspire列入Adapter 2026年7月17.8百万美元融资相关投资方，未披露其单家金额。",
+          "source_id": "B31-HILL-ADAPTER"
+        },
+        {
+          "description": "融资来源记录：Adapter · 种子轮 · 2026-07-14 · 种子轮参投 · 1780万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-74e051fb023f526b"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "B31-HILL-LINKEDIN",
+          "source_url": "https://www.linkedin.com/company/hillspire-llc",
+          "source_title": "Hillspire | LinkedIn",
+          "source_content_hash": "d70b565aa311879a3462eec931460518abd8918fb38198a2172833bbe6bfee0c",
+          "quote": "Hillspire, LLC, is an integrated family office management company that serves the business and philanthropic activities of Eric and Wendy Schmidt and their family",
+          "quote_hash": "1708b90a90f418fb665ef878c785c256dbcdba55b214eddbbc40a016c36a4df3"
+        },
+        {
+          "source_id": "B31-HILL-ADAPTER",
+          "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
+          "source_title": "Exclusive: Startup Adapter Launches With $17.8M To Bring New &#x27;Cognition&#x27; To AI Tools",
+          "source_content_hash": "167b43cd39e1597c49e9450ef3941c9694185fac3163c7af183bc800780fc249",
+          "quote": "Eric Schmidt’s family office Hillspire",
+          "quote_hash": "ce2cf0464802115e4b9bd39744eebe6b80b82dedba55724942af86a56167aa58"
+        },
+        {
           "source_id": "FISRC-74e051fb023f526b",
           "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
-          "source_title": "Exclusive: Startup Adapter Launches With $17.8M To Bring New 'Cognition' To AI Tools",
-          "source_content_hash": "167b43cd39e1597c49e9450ef3941c9694185fac3163c7af183bc800780fc249",
+          "source_title": "独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力",
+          "source_content_hash": "c4b4aec73019eeb8",
           "quote": "Eric Schmidt’s family office Hillspire",
           "quote_hash": "ce2cf0464802115e4b9bd39744eebe6b80b82dedba55724942af86a56167aa58"
         }
       ],
-      "last_verified_at": "2026-10-04",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

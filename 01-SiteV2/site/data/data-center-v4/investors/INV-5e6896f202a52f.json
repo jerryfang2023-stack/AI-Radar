@@ -155,10 +155,17 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "人物身份由媒体报道消歧；参投关系由 MatX 官方公告及报道支持，不代表完整个人投资组合。",
-      "summary": "MatX 官方 Series B 页面将 Patrick 与 John Collison 列为参与者；TechCrunch 进一步将 John Collison 识别为 Stripe 联合创始人。本档仅覆盖 MatX 这一投资案例。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Stripe 官网用于确认人物身份；MatX 官网确认参与该轮融资。未扩写其他个人投资活动。",
+      "summary": "MatX 官网 Series B 页面将 John Collison 列为参与者；Stripe 官网将他列为总裁及联合创始人。本档仅记录 MatX 这一公开投资案例，不代表个人完整投资组合。",
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "Stripe 官网披露的职务",
+          "value": "John Collison 是 Stripe 总裁及联合创始人。",
+          "source_id": "PROFILE-S-INV-5e6896f202a52f-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -184,12 +191,20 @@
           "source_id": "FISRC-e80cfbcccb0ffdce",
           "source_url": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
           "source_title": "Nvidia challenger AI chip startup MatX raised $500M | TechCrunch",
-          "source_content_hash": "7de02dd69dc50d2c88d3d004f417a51cf76d6c02cea07501cf284e1cf2e1d681",
+          "source_content_hash": "71d8062dadb33983c2378267dcc82a2e37cf2b13363b82539f0a68a3e0f04fc9",
           "quote": "Stripe co-founders Patrick Collison and John Collison",
           "quote_hash": "c18019e81bdbad5eb367cc2ec2a7194272df2c95e951b527244223f5771f5641"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5e6896f202a52f-3",
+          "source_url": "https://stripe.com/en-pl/newsroom/information",
+          "source_title": "Stripe Newsroom | Information and assets",
+          "source_content_hash": "ce413067f13d65bd4f8054129afdcc996c3ad41372c76d0f6c361c52ce674235",
+          "quote": "John Collison President and Co-founder, Stripe",
+          "quote_hash": "79210f4820146dd384738e6ca62de33afaf3fb587720c364facf902b367fc409"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [
         {

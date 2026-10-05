@@ -139,29 +139,70 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "Flam 融资报道将其列为 B 轮个人天使投资人。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "职业经历来自本人网站；Flam 投资活动来自 SiliconANGLE 报道，未披露金额或投资载体。",
+      "summary": "Martin Chavez 本人网站介绍他现任 Sixth Street 合伙人及副董事长，曾在 Goldman Sachs 担任 CIO、CFO 及证券业务全球联席主管。Flam Series B 报道将其列为个人天使投资人；目前仅有这一项可核实投资案例。",
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "现任职务",
+          "value": "Sixth Street 合伙人、副董事长",
+          "source_id": "PROFILE-B12-INV-b4fecd76de5f65-2"
+        },
+        {
+          "field": "career_summary",
+          "label": "职业经历",
+          "value": "曾在 Goldman Sachs 担任首席信息官、首席财务官及证券业务全球联席主管",
+          "source_id": "PROFILE-B12-INV-b4fecd76de5f65-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "以个人天使投资人身份参与 Flam Series B。",
+          "source_id": "PROFILE-B12-INV-b4fecd76de5f65-1"
+        },
+        {
+          "description": "融资来源记录：Flam · B轮 · 2026-09-14 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-83ab416cf84d3f07"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-83ab416cf84d3f07",
+          "source_id": "PROFILE-B12-INV-b4fecd76de5f65-1",
           "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
           "source_title": "Flam raises $40M in funding to make AI-enabled interactive content a reality - SiliconANGLE",
-          "source_content_hash": "76714921b28c31d79c64341dc3d41de2b4868f79891db212bc0e82a44d5a573e",
+          "source_content_hash": "6d018de7e5e1c5d37128cc617cd5d0e9a4dce8826b49448487bc86f3d5240e58",
           "quote": "saw the participation of Claypond Capital, Australian Gulf Capital, the SRK Family Office and angel investors Martin Chavez and Olivier Pomel, the Chief Executive Officer of Datadog Inc. Existing backers including RTP Global and Dovetail also participated in the round. Flam, which is based in San Francisco, has built a proprietary artificial intelligence inf",
           "quote_hash": "5f2f823c325c4081dbb50e382bd044fa23d472acf0b4164adfef7991594cbdb0"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b4fecd76de5f65-2",
+          "source_url": "https://www.rmartinchavez.com/coffee",
+          "source_title": "About &mdash; R. Martin Chavez",
+          "source_content_hash": "ad80c65a57a4423b403a9771bdf97d924358fd961d1ad952536633437fb6183e",
+          "quote": "He is a partner and vice chairman of Sixth Street Partners",
+          "quote_hash": "36b7d8e12856d5371bef87714117de96bab88bd1cf1a02acdf4119b654aa50af"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b4fecd76de5f65-3",
+          "source_url": "https://www.rmartinchavez.com/coffee",
+          "source_title": "About &mdash; R. Martin Chavez",
+          "source_content_hash": "ad80c65a57a4423b403a9771bdf97d924358fd961d1ad952536633437fb6183e",
+          "quote": "Before joining Sixth Street, Marty served in a variety of senior roles at Goldman Sachs, including Chief Information Officer, where he oversaw the firm’s 9,000 engineers; Chief Financial Officer; and global co-head of the firm’s Securities (now Global Markets) Division.",
+          "quote_hash": "3cf4a077e6fcf4c73b95105baed623b9142224603736f4274f33295c4027a163"
+        },
+        {
+          "source_id": "FISRC-83ab416cf84d3f07",
+          "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
+          "source_title": "Flam 融资 4000 万美元，让 AI 驱动的互动内容成为现实",
+          "source_content_hash": "ea0a07ec6b5bcc758a53526933b06ed9cdc0625470f1876cb084309d46f1a06b",
+          "quote": "saw the participation of Claypond Capital, Australian Gulf Capital, the SRK Family Office and angel investors Martin Chavez and Olivier Pomel",
+          "quote_hash": "5bbc687eb304c7f93ee48df3f9465221569a81f836df93acde2db9dad59a8219"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

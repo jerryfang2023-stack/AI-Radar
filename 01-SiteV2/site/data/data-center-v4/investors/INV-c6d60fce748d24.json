@@ -365,10 +365,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "成立时间、投资阶段、领域及台积电合作关系均来自 VentureTech Alliance 官网；没有把合作关系解释为台积电控制或背书。",
+      "summary": "VentureTech Alliance 官网称其于 2001 年成立，主要投资半导体及其他新兴技术领域的早期企业；官网同时说明其与台积电存在战略合作关系，但投资活动独立管理。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2001",
+          "source_id": "PROFILE-COLLECT-INV-c6d60fce748d24-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期",
+          "source_id": "PROFILE-COLLECT-INV-c6d60fce748d24-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "半导体及其他新兴技术",
+          "source_id": "PROFILE-COLLECT-INV-c6d60fce748d24-1"
+        },
+        {
+          "field": "strategic_relationship",
+          "label": "战略合作",
+          "value": "与 TSMC 有战略合作，投资活动独立管理",
+          "source_id": "PROFILE-COLLECT-INV-c6d60fce748d24-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -433,6 +458,22 @@
           "source_content_hash": "4779658a236855fa12a78be80bee8f07e77ab5c5f2b4de68313520570d04d491",
           "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures.",
           "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-c6d60fce748d24-1",
+          "source_url": "https://vtalliance.com/01about.php",
+          "source_title": "VentureTech Alliance",
+          "source_content_hash": "f0f630d16b9dbe0abbc993a8851725b09fcb9c1d10ae66750db9e3083e90193a",
+          "quote": "VentureTech Alliance was founded in 2001 as a venture investment management company targeting early-stage business investment in the semiconductor industry and other emerging technology areas.",
+          "quote_hash": "4f45e59ccb8597ca130d7e44163d00554514c8ecd319e0b72981f5fba08060cb"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-c6d60fce748d24-2",
+          "source_url": "https://vtalliance.com/01about.php",
+          "source_title": "VentureTech Alliance",
+          "source_content_hash": "f0f630d16b9dbe0abbc993a8851725b09fcb9c1d10ae66750db9e3083e90193a",
+          "quote": "VentureTech Alliance has a strong strategic partnership with TSMC, the IC foundry industry leader. However, VentureTech's investment activity is managed independently of this strategic partnership.",
+          "quote_hash": "281c8a85b5252f647eebafb6043ff221ff94481a91011242bd02bc377bd0f7cf"
         },
         {
           "source_id": "FISRC-ec090e2bf0f8f6e9",

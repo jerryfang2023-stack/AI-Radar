@@ -260,14 +260,33 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "深度智控 B 轮融资报道将招银国际列为联合领投方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构身份和业务范围来自招银国际官网；联合领投关系来自融资报道。未据此将招银国际归为单一风险投资基金或推定具体资金载体。",
+      "summary": "招银国际官网将 CMBI 描述为提供综合专业服务的金融机构，并确认其为招商银行全资子公司，业务涉及公司融资、资产管理及直接投资。深度智控融资报道将招银国际列为联合领投方；报道未披露具体出资子公司或基金。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "CMBI 是提供综合专业服务的金融机构。",
+          "source_id": "PROFILE-COLLECT-INV-ad86eefe039ed5-1"
+        },
+        {
+          "field": "parent_company",
+          "label": "股东关系",
+          "value": "CMBI 是招商银行全资子公司。",
+          "source_id": "PROFILE-COLLECT-INV-ad86eefe039ed5-2"
+        },
+        {
+          "field": "investment_scope",
+          "label": "业务范围",
+          "value": "官网披露业务包括公司融资、资产管理及直接投资。",
+          "source_id": "PROFILE-COLLECT-INV-ad86eefe039ed5-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投资界报道将招银国际列为深度智控 B 轮联合领投方。",
+          "description": "融资来源记录：深度智控 · B轮 · 2026-07-09 · 本轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-03cb69a63e7d787b"
         },
         {
@@ -282,12 +301,36 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-03cb69a63e7d787b",
+          "source_id": "PROFILE-COLLECT-INV-ad86eefe039ed5-1",
+          "source_url": "https://www.cmbi.com.hk/en-US/about-us",
+          "source_title": "About Us - CMB International Capital Corporation Limited",
+          "source_content_hash": "cfef4949603524e261f932c7f88390c917a822f563960ec363061c268c72f0ed",
+          "quote": "integrated financial institution providing comprehensive and professional services.",
+          "quote_hash": "57e389af9fdcd880b3cbe2aaa3a9f56e7c20500057cb2c3ec47714fde64c4fb8"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-ad86eefe039ed5-2",
+          "source_url": "https://www.cmbi.com.hk/en-US/about-us",
+          "source_title": "About Us - CMB International Capital Corporation Limited",
+          "source_content_hash": "cfef4949603524e261f932c7f88390c917a822f563960ec363061c268c72f0ed",
+          "quote": "wholly-owned subsidiary of China Merchants Bank",
+          "quote_hash": "6615408aa1d6d2b43336476554bdf49cfcb67699c0f6ab1bec576ef3d0fdc171"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-ad86eefe039ed5-3",
           "source_url": "https://news.pedaily.cn/202607/566034.shtml",
           "source_title": "物理 AI 企业深度智控（DeepCtrls）完成数亿元 B 轮融资_投资界",
           "source_content_hash": "9796822a57197577c67dac1b0e801d6d41f1d3283a2bc781d80e6314e4293ab7",
           "quote": "变化情况。 投资界（ID：pedaily2012）7月9日消息，近日，物理 AI 企业深圳市深度智控科技有限公司，简称：深度智控（DeepCtrls）， 完成数亿元 B 轮融资 。本轮融资由 晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续加码， 形成新能源龙头、国家级投资平台、一线投资机构、科技巨头共同加持的产业资本格局，全面加速物理 AI 在全球算力与能源基础设施的落地与重构。 深度智控率先提出并锚定「机理框架+AI」技术路线，自研核心PhyAI物理AI引擎，将物理机理与AI深度耦合，让AI真正“理解”物理世界，从根源上攻克纯AI“黑箱不可信、泛化性弱、跨场景迁移难”三大难题，使每一次控制决策过程可解释、可预测与高安全",
           "quote_hash": "51ca45cb2a51b23d8d1bd8e950fd4758647084aab70b132fb022913946a1bd9b"
+        },
+        {
+          "source_id": "FISRC-03cb69a63e7d787b",
+          "source_url": "https://news.pedaily.cn/202607/566034.shtml",
+          "source_title": "物理 AI 企业深度智控（DeepCtrls）完成数亿元 B 轮融资",
+          "source_content_hash": "549472ef08c4ac5a",
+          "quote": "本轮融资由 晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续加码",
+          "quote_hash": "76ef591c6d4ca616ce480398a2ba71d5279671714499b7bb2d71a8a86d3f652d"
         },
         {
           "source_id": "FISRC-c5b971b07e7344e1",

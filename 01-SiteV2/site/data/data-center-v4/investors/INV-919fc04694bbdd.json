@@ -140,33 +140,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "投资界报道将星源资本列为极佳视界 Pre-B 轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "被投企业披露将星源资本称为“吉利系基金”，但公开材料未确认基金管理人、法律实体或具体出资载体。本档按公开投资机构品牌记录，不映射同名或近似名称主体。",
+      "summary": "被投企业多伦科技在北云科技融资公告中将星源资本列为“吉利系基金”；投资界也将其列入极佳视界近10亿元Pre-B轮投资方。本档确认公开投资机构品牌与披露活动，不推断具体基金或管理人。",
+      "facts": [
+        {
+          "field": "public_identity",
+          "label": "公开身份",
+          "value": "被投企业公告称星源资本为“吉利系基金”；该来源未披露对应的法律实体或管理人。",
+          "source_id": "PROFILE-B13-INV-919fc04694bbdd-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投资界报道将星源资本列为极佳视界 Pre-B 轮投资方。",
+          "description": "多伦科技2023年公告称，星源资本作为“吉利系基金”参与北云科技数亿元战略融资。",
+          "source_id": "PROFILE-B13-INV-919fc04694bbdd-4"
+        },
+        {
+          "description": "投资界报道将星源资本列为极佳视界近10亿元Pre-B轮投资方；未披露该机构的出资额。",
+          "source_id": "PROFILE-B13-INV-919fc04694bbdd-5"
+        },
+        {
+          "description": "融资来源记录：极佳视界 · Pre-B轮 · 2026-03-05 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fdfe58e2e68c7e9e"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-fdfe58e2e68c7e9e",
+          "source_id": "PROFILE-B13-INV-919fc04694bbdd-4",
+          "source_url": "https://www.duoluntech.com/index.php/news/detail/207.html",
+          "source_title": "多伦科技参股企业北云科技获博世创投、长城、星航、吉利系基金等数亿元投资，产投携手布局高精定位-多伦科技",
+          "source_content_hash": "18109c5e36b50cc9cb0ef246d30ae2eed17e0d954b55b2c6d58418c88b89de65",
+          "quote": "星源资本 （吉利系基金）等 数亿元战略投资",
+          "quote_hash": "767006515ccbbc6c19e9701a5205e95efc05484fc20148b7efdec1b670197923"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-919fc04694bbdd-5",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",
           "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿_投资界",
           "source_content_hash": "999496916ab4da4f9513a18f2b966e8bfdc1d9daad283c092347a4b30748208f",
-          "quote": "竞争与能力短板等挑战，投资时需综合评估风险与前景。 内容由AI生成，仅供参考 我们正在亲历具身智能火爆一幕。 投资界获悉，极佳视界宣布完成近10亿元Pre-B轮融资，投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。其中，中金资本、华强资本、财鑫资本、张科垚坤等作为老股东持续超额重磅加持。 至此，又一笔具身智能融资诞生。乍看稍显陌生，极佳视界身后却是一位业界大牛——黄冠，清华博士，曾先后任职于地平线、鉴智机器人，并拥有微软亚洲研究院、三星中国研究院等机构工作经历。短短三年时间，他带",
-          "quote_hash": "a0291bf079a0646c1484fbe93f79b94fab79331ba55320d6f0bf2a780d52aeca"
+          "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本",
+          "quote_hash": "2de2b6d593bb0087dfaef6b6f0366475d68ee4991ae063eb18350607c7d159ac"
+        },
+        {
+          "source_id": "FISRC-fdfe58e2e68c7e9e",
+          "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+          "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+          "source_content_hash": "7d9409a9ba1e94fc",
+          "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
+          "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-04"
     }
   }
 }

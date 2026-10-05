@@ -138,11 +138,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "协创智慧科技有限公司的公开工商及上市公司披露将其业务列为创业投资和以自有资金投资；融资报道将“协创智慧”列为瞬适科技种子轮投资方。",
-      "coverage_note": "实体名称及投资经营范围来自巨潮资讯网正式披露的协创数据年报；具体投资关系来自投资界报道。未将其与协创数据上市公司主体混为一谈。",
-      "facts": [],
+      "summary": "协创智慧科技有限公司是协创数据的控股股东，上市公司披露其主要业务为创业投资及以自有资金从事投资活动；投资界报道将其列为瞬适科技种子轮投资方。",
+      "coverage_note": "法律身份及创投业务来自协创数据上市文件；瞬适科技融资参与来自投资界报道。",
+      "facts": [
+        {
+          "field": "legal_name_and_shareholder_status",
+          "label": "上市公司年报披露的法律名称和股东身份",
+          "value": "协创智慧科技有限公司为协创数据控股股东。",
+          "source_id": "PROFILE-COLLECT-INV-07aec2a0491d36-P-3"
+        },
+        {
+          "field": "business_scope",
+          "label": "上市公司披露的主要业务",
+          "value": "协创智慧主要从事创业投资及以自有资金投资活动。",
+          "source_id": "PROFILE-COLLECT-INV-07aec2a0491d36-P-4"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -161,18 +174,10 @@
       ],
       "sources": [
         {
-          "source_id": "xiechuang_legal_name",
-          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-01/1222975767.PDF",
-          "source_title": "协创数据技术股份有限公司2024年度报告（巨潮资讯网正式披露）",
-          "source_content_hash": "e3b0dfb9d7098715dccab5528643cdb708c4c73bd0c22a58cabc181436d1d1ea",
-          "quote": "公司名称：协创智慧科技有限公司",
-          "quote_hash": "c77d50e9971f6295d30a8850afbe3f81b538de4c252691c5499de4f52a8ab874"
-        },
-        {
           "source_id": "xiechuang_business_scope",
           "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-01/1222975767.PDF",
-          "source_title": "协创数据技术股份有限公司2024年度报告（巨潮资讯网正式披露）",
-          "source_content_hash": "e3b0dfb9d7098715dccab5528643cdb708c4c73bd0c22a58cabc181436d1d1ea",
+          "source_title": "协创数据关联交易披露文件（2025-04-01）",
+          "source_content_hash": "7cf2166c6452eedaa8202ecc57c5a576dab860b064aee175dde797939f64871d",
           "quote": "协创智慧主要业务为创业投资及以自有资金从事投资活动",
           "quote_hash": "f7bb1d546f0abd532bcd747433dde96b2a872f5f38859493203c23022204cc57"
         },
@@ -185,6 +190,22 @@
           "quote_hash": "63a1a6b5aa3ed48f6093048dc21d80e3dd6278ed51396e940144b3a1ceca8222"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-07aec2a0491d36-P-3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-01/1222975762.PDF",
+          "source_title": "协创数据技术股份有限公司2024年年度报告",
+          "source_content_hash": "014812a8c17c479021726da2781b041e8c14694424d756343394135bc28a58f3",
+          "quote": "协创智慧科技有限公司，为公司控股股东",
+          "quote_hash": "e3584d6b173a289da1aa01deb7e424076611ab6563f47e99a7227476a9800c1f"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-07aec2a0491d36-P-4",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-01/1222975767.PDF",
+          "source_title": "协创数据关联交易披露文件（2025-04-01）",
+          "source_content_hash": "7cf2166c6452eedaa8202ecc57c5a576dab860b064aee175dde797939f64871d",
+          "quote": "协创智慧主要业务为创业投资及以自有资金从事投资活动，近三年业务发展稳定。",
+          "quote_hash": "3bb991a05b62b4913f2cad698244cdf9b9a0281eccb0c4abe6fc76a63d83cc90"
+        },
+        {
           "source_id": "FISRC-918cf8d34c141df4",
           "source_url": "https://news.pedaily.cn/202608/568250.shtml",
           "source_title": "「瞬适科技」完成千万美元种子轮融资，加速物理AI数据基础设施建设",
@@ -193,7 +214,7 @@
           "quote_hash": "63a1a6b5aa3ed48f6093048dc21d80e3dd6278ed51396e940144b3a1ceca8222"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

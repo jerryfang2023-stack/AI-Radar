@@ -244,42 +244,77 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构名称及投资策略据 SEC 注册文件和官网；交易关系据被投公司公告。档案保留 Dragoneer 品牌层级，不据单轮参投推断基金法律主体。",
+      "summary": "Dragoneer Investment Group 是面向成长型企业的投资机构。其 SEC 注册文件描述了投资技术赋能、具长期成长性的企业的策略；Anthropic Series H 公告将 Dragoneer 列为参投方之一。该融资披露未说明具体基金载体。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官方名称",
+          "value": "SEC 文件中的赞助方 affiliate 名称为 Dragoneer Investment Group, LLC。",
+          "source_id": "PROFILE-COLLECT-INV-bde7dbb822eb89-2"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "SEC 注册文件中的策略",
+          "value": "文件称其寻求投资由优秀创始人与经营者建设、具世代成长潜力的技术赋能企业。",
+          "source_id": "PROFILE-COLLECT-INV-bde7dbb822eb89-2"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "Anthropic Series H 公告将 Dragoneer 列为投资方之一。",
+          "source_id": "PROFILE-COLLECT-INV-bde7dbb822eb89-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Anthropic H轮 本轮领投。",
+          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮领投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b5e22ae086a6b353"
-        },
-        {
-          "description": "公开融资来源将其列为 Anthropic G轮 本轮联合领投。",
-          "source_id": "FISRC-b58bb99dfec2e318"
         },
         {
           "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮参投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b86e0fbe62dfd3dc"
+        },
+        {
+          "description": "融资来源记录：Anthropic · G轮 · 2026-02-12 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b58bb99dfec2e318"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_id": "PROFILE-COLLECT-INV-bde7dbb822eb89-1",
+          "source_url": "https://dragoneer.com/",
+          "source_title": "Home",
+          "source_content_hash": "f374217a29beaef5b0f4df89939eda084b1b81c51c634df66bcf26f684cab6e8",
+          "quote": "Dragoneer Investment Group",
+          "quote_hash": "beb86f9f1997562bfec5784010ad1a07f50786802edad6b9448f0dd355282010"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bde7dbb822eb89-2",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1827076/000119312521092751/d922828d424b4.htm",
+          "source_title": "424B4",
+          "source_content_hash": "4c49eb44a5f47e72d1e0249c2753e6f812136478505f891938c4e45cb84a8ef2",
+          "quote": "seek the best founders and operators building technology-enabled, generational growth businesses",
+          "quote_hash": "0a1e12e510244a1032507946958d05338e426fbc4cf45b62ff032388092e73cf"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bde7dbb822eb89-3",
           "source_url": "https://www.anthropic.com/news/series-h",
           "source_title": "Anthropic raises $65B Series H at $965B valuation \\ Anthropic",
           "source_content_hash": "c00be615fd4e35832b47e33a715a08c58e5e3c7d7839c6775a6edc97ab162fd9",
-          "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital",
-          "quote_hash": "cd04bdd3a7f3b8bdc5c665fe98be28f4f33a81690ade9a2e41926d3627410f97"
+          "quote": "Dragoneer",
+          "quote_hash": "70532fd58332728e073b2a1552338ecd45e28d7d7d8ba528fff43d52d88800ff"
         },
         {
-          "source_id": "FISRC-b58bb99dfec2e318",
-          "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
-          "source_title": "Anthropic raises $30B Series G at $380B valuation \\ Anthropic",
-          "source_content_hash": "e9e58ad828d2451fdb86384ddd5294441590a20d2ca4b941e674e5dcc356df08",
-          "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
-          "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_url": "https://www.anthropic.com/news/series-h",
+          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+          "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital",
+          "quote_hash": "cd04bdd3a7f3b8bdc5c665fe98be28f4f33a81690ade9a2e41926d3627410f97"
         },
         {
           "source_id": "FISRC-b86e0fbe62dfd3dc",
@@ -288,9 +323,17 @@
           "source_content_hash": "4e51c91e5fc7160c",
           "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
           "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+        },
+        {
+          "source_id": "FISRC-b58bb99dfec2e318",
+          "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+          "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
+          "source_content_hash": "c231466686007dd5",
+          "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
+          "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

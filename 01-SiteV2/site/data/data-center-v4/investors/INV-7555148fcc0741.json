@@ -139,30 +139,73 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "光通信 Pro 对清程极智融资事件的整理将华胜天成列入 A++ 轮参与机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "企业全称、主营定位和投资公司数量来自华胜天成官网；清程极智融资参与来自行业媒体转引证券之星的公开报道，未推断具体投资子公司或基金。",
+      "summary": "华胜天成官网将其全称列为北京华胜天成科技股份有限公司，定位为云计算解决方案和行业数字化服务企业，并披露投资公司 20 余家；光通信 Pro 汇编的清程极智融资信息将华胜天成列为参与方。本档把它描述为有对外投资活动的企业集团，不称为 VC 管理人。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网披露的企业全称",
+          "value": "华胜天成官网将主体称为北京华胜天成科技股份有限公司。",
+          "source_id": "PROFILE-B3-INV-7555148fcc0741-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "官网披露的主营业务",
+          "value": "华胜天成官网称其提供云计算解决方案和基于行业的数字化服务。",
+          "source_id": "PROFILE-B3-INV-7555148fcc0741-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网披露的投资布局",
+          "value": "华胜天成官网称其投资公司 20 余家，其中包括 4 家上市公司。",
+          "source_id": "PROFILE-B3-INV-7555148fcc0741-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "清程极智 A++ 轮融资信息将华胜天成列为参与机构。",
-          "source_id": "PROFILE-ce02d9bd6875580bac6a"
+          "description": "清程极智融资信息列出华胜天成为参与投资方之一；公开材料未披露具体出资子公司。",
+          "source_id": "PROFILE-B3-INV-7555148fcc0741-3"
         },
         {
           "description": "融资来源记录：北京清程极智科技有限公司 · A++轮 · 2026-08-19 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5ffa5747cf097be6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "华胜天成官网",
+          "value": "华胜天成官网",
+          "url": "https://www.teamsun.com.cn/d/about/introduce",
+          "source_id": "PROFILE-B3-INV-7555148fcc0741-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-ce02d9bd6875580bac6a",
+          "source_id": "PROFILE-B3-INV-7555148fcc0741-1",
+          "source_url": "https://www.teamsun.com.cn/d/about/introduce",
+          "source_title": "华胜天成-做新一代数字化创新服务的领先企业",
+          "source_content_hash": "69f3114785f29e1c82e45b2240fdea73b8ca19228ef54c14c3246e7c89b1b102",
+          "quote": "北京华胜天成科技股份有限公司（以下简称华胜天成）面向全球客户提供领先的云计算解决方案和基于行业的数字化服务",
+          "quote_hash": "c044e99e1c4637b60106a91f0918bccc2da6fbee22127c2638a52d1f5c587ee3"
+        },
+        {
+          "source_id": "PROFILE-B3-INV-7555148fcc0741-2",
+          "source_url": "https://www.teamsun.com.cn/d/about/introduce",
+          "source_title": "华胜天成-做新一代数字化创新服务的领先企业",
+          "source_content_hash": "69f3114785f29e1c82e45b2240fdea73b8ca19228ef54c14c3246e7c89b1b102",
+          "quote": "投资公司20余家，包括4家上市公司",
+          "quote_hash": "db4d6e22e0ec8c4ec0c672e3607fb5340c0c50db054204b43931758ee28e0747"
+        },
+        {
+          "source_id": "PROFILE-B3-INV-7555148fcc0741-3",
           "source_url": "https://www.c114.net.cn/industry/121775.html",
           "source_title": "313起融资，小鹏机器人、帕西尼领跑，算力脑机企业接续发力，351.59亿同比翻四倍：2026年8月人工智能领域投融资分析 - 产业链 - 光通信Pro",
-          "source_content_hash": "a6c4b60053896b29401d7a1ded9e9843709c7ad492be3a6d1d9d77472064c584",
-          "quote": "22、清程极智完成数亿元股权投资，中国电信等入局 8 月 14 日，清华系国产算力软件企业清程极智完成数亿元股权融资，投资方包括中国电信 (601728)，瀚晖投资，商汤科技 (00020)，直真科技 (003007)，华胜天成 (600410)，建信信托，领阳投资。公司专注智能算力系统软件，提升国产芯片训练与推理效率。（证券之星） 23、寒序科技完成股权投资，国香资本入局 8 月 17 日，自旋芯片与概率计算企业寒序科技完成新一轮股权投资，由国香资本、中投国兴参与（金额未披露；亿欧数据将该笔融资记为 B 轮）。公司持续加码新型计算架构与芯片流片。（亿欧数据） 24、无问芯穹完成未披露股权投资，沛坤基金投资 8 月 17 日，大模型基础设施企业无问芯穹完成未披露金额的股权",
-          "quote_hash": "7c3b5c9ebfbabad15fc5d4e71c4058e00fbfc7df1e4c6794c90e5ca9af06192f"
+          "source_content_hash": "2e85da0ed711ac50d95425840d951e025db6632fc738d4103467f54030b4f08b",
+          "quote": "投资方包括中国电信 (601728)，瀚晖投资，商汤科技 (00020)，直真科技 (003007)，华胜天成 (600410)，建信信托",
+          "quote_hash": "a6cee1d00c130e8d1dc5215c346ee497c52539f858ae37f4e5761a478f35522c"
         },
         {
           "source_id": "FISRC-5ffa5747cf097be6",
@@ -173,7 +216,7 @@
           "quote_hash": "d68722d11d0246901b0bb4d3f70c9a8a2e075f7a122acde77028b978dab5b8f5"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

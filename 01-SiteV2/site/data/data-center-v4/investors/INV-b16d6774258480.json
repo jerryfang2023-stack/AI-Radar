@@ -139,29 +139,56 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "公开报道将其列为 SOND 种子轮的个人天使投资人。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "职业背景来自 Boston Scientific 官方资料；SOND投资活动来自融资报道，未披露 John Abele 的出资金额或投资载体。",
+      "summary": "Boston Scientific 官方资料确认 John Abele 是该公司的联合创始人之一。TechCrunch 对 SOND 融资的报道将其列为该公司700万美元融资的投资人之一。",
+      "facts": [
+        {
+          "field": "career_background",
+          "label": "职业背景",
+          "value": "Boston Scientific官方资料确认 John Abele 是公司联合创始人之一。",
+          "source_id": "PROFILE-B11-INV-b16d6774258480-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "以个人天使投资人身份参与 SOND 种子轮。",
+          "description": "TechCrunch报道将 John Abele 列为 SOND 700万美元融资投资人之一；未披露单独金额。",
+          "source_id": "PROFILE-B11-INV-b16d6774258480-2"
+        },
+        {
+          "description": "融资来源记录：SOND · 种子轮 · 2026-05-27 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d8f2f6d7fc0871dd"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-d8f2f6d7fc0871dd",
+          "source_id": "PROFILE-B11-INV-b16d6774258480-1",
+          "source_url": "https://www.bostonscientific.com/en-US/about-us/leadership/pete-nicholas.html",
+          "source_title": "Pete Nicholas - Boston Scientific",
+          "source_content_hash": "329d9d8ad6e939fea32176b8a05d6ee2e0f25b815ba354301833067bd1ed3439",
+          "quote": "Pete and co-founder John Abele built Boston Scientific",
+          "quote_hash": "52b200a79d78dd805ae48238c4aa9f68d227a66be64b5fce1b40086ec8adc2a4"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-b16d6774258480-2",
           "source_url": "https://techcrunch.com/2026/05/27/sond-a-sleep-tech-startup-from-boses-former-head-of-sleep-exits-stealth-with-7m/",
           "source_title": "SOND, a sleep tech startup from Bose&#039;s former head of sleep, exits stealth with $7M | TechCrunch",
           "source_content_hash": "89399433efd501ca4094d691c4b0a3ef155ddb7e510165a118acbe25c38ece5b",
-          "quote": "Crosslink Capital, Ubiquity Ventures, Alumni Ventures, Meach Cove Capital, and Boston Scientific co-founder, John Abele. To work, the device tracks signals like respiration, heart rate variability, cardiorespiratory coupling, sleep staging, body position, snoring, and seismocardiography (SCG, or the mechanical vibrations of the chest wall produced by the be",
-          "quote_hash": "25ca3941f39635d7b8223583e9c027310d1b17a75b1d4b0801eefe651df56947"
+          "quote": "and Boston Scientific co-founder, John Abele.",
+          "quote_hash": "d60a664039083488dbad583292b879bd2550ed1f753414aca4d2a6f3689138f1"
+        },
+        {
+          "source_id": "FISRC-d8f2f6d7fc0871dd",
+          "source_url": "https://techcrunch.com/2026/05/27/sond-a-sleep-tech-startup-from-boses-former-head-of-sleep-exits-stealth-with-7m/",
+          "source_title": "Bose 前睡眠业务负责人创立的睡眠科技初创公司 SOND 结束隐身模式，获 700 万美元融资",
+          "source_content_hash": "29820751dcab4ec5b5ce0cf030397688f6dfa3a330040840b8e553a189d4af39",
+          "quote": "Its initial investment of the $7 million comes from E14 Fund (an MIT-affiliated fund), Crosslink Capital, Ubiquity Ventures, Alumni Ventures, Meach Cove Capital, and Boston Scientific co-founder, John Abele.",
+          "quote_hash": "356707d0ca4066d08b4a0c5aca9f7f97ed784cdc0c538e7483478f1dc4eab20f"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

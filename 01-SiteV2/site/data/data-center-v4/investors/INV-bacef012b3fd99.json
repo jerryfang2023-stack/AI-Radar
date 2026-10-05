@@ -139,15 +139,22 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "a16z 官方公告将其列为 Horowitz Andreessen Academy $42M 融资中的个人天使投资人。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "现任职务来自 Palantir 官方管理层页面；个人投资活动来自 a16z 官方公告。",
+      "summary": "Palantir 官方将 Shyam Sankar 列为首席技术官及执行副总裁。a16z 官方公告将其列为 Horowitz Andreessen Academy 融资中的天使投资人；未披露个人出资金额。",
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "现任职务",
+          "value": "Palantir 首席技术官、执行副总裁",
+          "source_id": "PROFILE-B12-INV-bacef012b3fd99-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "以个人天使投资人身份参与 Horowitz Andreessen Academy 融资。",
-          "source_id": "PROFILE-e5a523ad22cbac519e0b"
+          "source_id": "PROFILE-B12-INV-bacef012b3fd99-1"
         },
         {
           "description": "融资来源记录：Horowitz Andreessen Academy · 其他融资 · 2026-09-22 · 本轮参投 · $42 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,12 +164,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-e5a523ad22cbac519e0b",
+          "source_id": "PROFILE-B12-INV-bacef012b3fd99-1",
           "source_url": "https://www.a16z.news/p/introducing-the-horowitz-andreessen",
           "source_title": "Introducing the Horowitz Andreessen Academy",
-          "source_content_hash": "5fb833e903263853eac0c54dd7a6840bc6bd856dc702d20a60e1ae4389d91eff",
-          "quote": "l of $42M in funding, led by a16z - with Marc Andreessen and Erik Torenberg joining the board. We also have a great group of angels such as Adam D’Angelo (co-founder, Quora), Tobi Lütke (CEO, Shopify), Tony Xu (CEO, DoorDash), Fidji Simo (recently CEO of Applications, OpenAI), Garry Tan (CEO, Y Combinator), Joe Liemandt (Principal, Alpha School), and Shyam S",
-          "quote_hash": "450949cefa726a3ce6c6db76623e1fdbeea244a550729558428ad145e558f5d5"
+          "source_content_hash": "6975cd806bafed39b6e843d2d6dfb5946e8c899b28e3f541aff8f105c0db59ac",
+          "quote": "We also have a great group of angels such as Adam D’Angelo (co-founder, Quora), Tobi Lütke (CEO, Shopify), Tony Xu (CEO, DoorDash), Fidji Simo (recently CEO of Applications, OpenAI), Garry Tan (CEO, Y Combinator), Joe Liemandt (Principal, Alpha School), and Shyam Sankar (CTO, Palantir).",
+          "quote_hash": "11eb385bb6759b38fa77375808ffcd0b5a2813f3392fc24a11c0b0714db8a3bc"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-bacef012b3fd99-2",
+          "source_url": "https://investors.palantir.com/management.html",
+          "source_title": "investors.palantir.com",
+          "source_content_hash": "c177bd3a6aa803d33dae1fe521722756cde559c0b2d8d3dfe01dd46482cbc0ee",
+          "quote": "Chief Technology Officer and Executive Vice President",
+          "quote_hash": "fd403bbc562fa542ab8b9ce7912e04ac5281e664428bbb00b2fe5b1c5629f3da"
         },
         {
           "source_id": "FISRC-1f3aa9ba4c739ca7",
@@ -173,7 +188,7 @@
           "quote_hash": "66f075ad9a5112fbd5e30b27263196962b1250767ea2b56f8dae3803d67dd806"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

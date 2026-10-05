@@ -139,29 +139,44 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "机构身份与 Pool 投资关系分别依据 Source Ventures 官网及 TechCrunch 报道。官网项目名为 Pool Social，新闻报道简称 Pool；本档案不补充基金法律载体或投资额。",
-      "summary": "Source Ventures 官网将其描述为面向科技初创公司的早期投资俱乐部，并在项目列表列出 Pool Social。TechCrunch 报道称该机构参与 Pool 超过 200 万美元的 pre-seed 融资；未披露其单独出资额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位及项目资料来自 Source Ventures 官网；融资参与信息来自 TechCrunch，未将整轮融资额记作单家出资。",
+      "summary": "Source Ventures 官网将其定位为面向科技初创公司的早期投资俱乐部，并列出 Pool Social 项目。TechCrunch 报道称该机构参与 Pool 超过 200 万美元的 pre-seed 融资；该金额为整轮规模，未披露 Source Ventures 单独出资额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "科技初创企业早期投资俱乐部",
+          "source_id": "PROFILE-B12-INV-bb7497b8e102e8-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "TechCrunch 报道称 Paris-based Source Ventures 参与 Pool 超过 200 万美元的 pre-seed 融资；该金额为整轮融资规模，未披露其单独出资额。",
-          "source_id": "pool-preseed-source-ventures-2026"
+          "source_id": "PROFILE-B12-INV-bb7497b8e102e8-3"
         },
         {
           "description": "融资来源记录：Pool · 预种子轮 · 2026-06-11 · 本轮参投 · over $2 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5497463d6c7b6acf"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://sourceventures.vc/",
+          "source_id": "PROFILE-B12-INV-bb7497b8e102e8-1"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "机构身份与 Pool 投资关系分别依据 Source Ventures 官网及 TechCrunch 报道。官网项目名为 Pool Social，新闻报道简称 Pool；本档案不补充基金法律载体或投资额。",
+      "experience_summary": "",
       "sources": [
         {
-          "source_id": "source-ventures-identity",
+          "source_id": "PROFILE-B12-INV-bb7497b8e102e8-1",
           "source_url": "https://sourceventures.vc/",
           "source_title": "Source Ventures - Micro VC fund for tech startups",
           "source_content_hash": "d04155f7ad578782e3f578bf812906031f6492d99ad3119e6d6a2e330b8dd825",
@@ -169,7 +184,7 @@
           "quote_hash": "a3140fb8b32732b4faca14b5c7f2f913d9f49da05fab514e8c51323538523aaf"
         },
         {
-          "source_id": "source-ventures-pool-portfolio",
+          "source_id": "PROFILE-B12-INV-bb7497b8e102e8-2",
           "source_url": "https://sourceventures.vc/",
           "source_title": "Source Ventures - Micro VC fund for tech startups",
           "source_content_hash": "d04155f7ad578782e3f578bf812906031f6492d99ad3119e6d6a2e330b8dd825",
@@ -177,7 +192,7 @@
           "quote_hash": "a6684ef440310bcbc6b89418d0f3b8433219c1735be4ae80dd209e8a36e0d2cb"
         },
         {
-          "source_id": "pool-preseed-source-ventures-2026",
+          "source_id": "PROFILE-B12-INV-bb7497b8e102e8-3",
           "source_url": "https://techcrunch.com/2026/06/11/pools-new-app-turns-your-screenshots-into-a-searchable-memory-bank/",
           "source_title": "Pool&#039;s new app turns your screenshots into something useful | TechCrunch",
           "source_content_hash": "d3aecafdcc36a81bbe78f0740c845b34fb25243e8f312863bd76fa720dcd1b21",
@@ -193,7 +208,7 @@
           "quote_hash": "f1e7ec5228f3eb91be682ce6d6229008b01e75fc596d42a30083fee56f24f08f"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

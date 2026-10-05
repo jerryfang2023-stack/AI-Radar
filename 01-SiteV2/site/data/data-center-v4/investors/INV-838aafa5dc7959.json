@@ -188,10 +188,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "投资界报道将万向钱潮列为极佳视界 B2 轮融资参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "发行主体名称来自万向钱潮官方投资者关系页；B2轮投资参与来自投资界报道。未将上市公司参与投资等同于基金管理业务。",
+      "summary": "万向钱潮官网投资者关系页以万向钱潮股份公司名义披露公司公告与投资者联络方式；投资界报道将万向钱潮列为极佳视界 B2 轮投资方。档案只记录公开交易活动，不据此认定公司设有专业 VC 管理机构或具体基金载体。",
+      "facts": [
+        {
+          "field": "issuer_identity",
+          "label": "公司官网列示的发行主体名称",
+          "value": "官网投资者关系页列示万向钱潮股份公司。",
+          "source_id": "PROFILE-COLLECT-INV-838aafa5dc7959-H-2"
+        },
+        {
+          "field": "reported_investment_activity",
+          "label": "公开报道披露的投资活动",
+          "value": "投资界将万向钱潮列入极佳视界 B2 轮投资方名单。",
+          "source_id": "PROFILE-COLLECT-INV-838aafa5dc7959-H-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,9 +221,25 @@
           "source_content_hash": "f1fa98fce1288b04fbd783e034907e97f4a5a66fc6bd4e5b3002a68c7c43f591",
           "quote": "2026-06-15 08:50 · 投资界 刘博 刘博 熟悉的一幕再度上演。 投资界获悉，极佳视界宣布又完成10亿元B2轮融资，由新加坡顶级跨境投资机构狮城资本（多轮持续追投）、中国-比利时基金（中比基金）、建投投资、万向钱潮、复星锐正、华盖创赢、金创投、德屹资本、华仓资本、元石基金等全球顶级国家队基金、产业资本、财务机构、国资平台共同投资，国中资本、达晨财智、图灵资管等多个老股东持续超额加注。 据知情人士透露，本轮市场投资意向远超原定融资目标。值得一提的是，这已是极佳视界三个月内第三笔融资，累计金额高达35亿元。 至此，极佳视界与身后掌舵者90后博士黄冠，缔造了今年创投圈火爆一幕。而投资人集体押注背后，也许是物理AGI的“GPT-3时刻”即将到来。 投资人排队赶来 三",
           "quote_hash": "5e4a63a878ad76905a061e11b91a01bd21bd540ff37526cb2d5a9a8a0bc3a337"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-838aafa5dc7959-H-2",
+          "source_url": "https://www.wxqc.com.cn/Investors.html",
+          "source_title": "投资者关系-万向钱潮股份公司",
+          "source_content_hash": "95d7292d22076a8856ce88a20c4aac737d543601afa2a0fda66c7e60e7fe1470",
+          "quote": "万向钱潮股份公司",
+          "quote_hash": "237c0aa8b03290450bd8033702396ffb27cd63c196c52112ea231f997bedb665"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-838aafa5dc7959-H-3",
+          "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+          "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI_投资界",
+          "source_content_hash": "f1fa98fce1288b04fbd783e034907e97f4a5a66fc6bd4e5b3002a68c7c43f591",
+          "quote": "万向钱潮、复星锐正、华盖创赢、金创投、德屹资本、华仓资本、元石基金等全球顶级国家队基金、产业资本、财务机构、国资平台共同投资",
+          "quote_hash": "ed39b24bad81badd27f1c5a3d0944a7b3f001f1716a39956d4a9f30e86110809"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -139,33 +139,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "启明创投官方公告称建源西证跟投佳量脑科学 C 轮。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "启明创投公告使用“建源西证”简称；西南证券交易所披露文件称西证股权与建信AIC共同发起设立“重庆建源西证股权投资基金”。本档按该公开简称对应基金记录，不补写未披露的认缴规模或基金管理实体细节。",
+      "summary": "西南证券发行文件称，作为其私募股权基金业务平台的西证股权与建信AIC共同发起设立重庆建源西证股权投资基金。启明创投公告将“建源西证”列为佳量脑科学C轮跟投方。本档按该简称记录基金层面的身份和披露活动。",
+      "facts": [
+        {
+          "field": "identity_and_sponsors",
+          "label": "身份及发起方",
+          "value": "重庆建源西证股权投资基金由西南证券私募股权基金业务平台西证股权与建信AIC共同发起设立。",
+          "source_id": "PROFILE-B13-INV-9838e66bc0ff97-4"
+        },
+        {
+          "field": "parent_platform",
+          "label": "所属业务平台",
+          "value": "西证股权是西南证券的私募股权基金业务平台。",
+          "source_id": "PROFILE-B13-INV-9838e66bc0ff97-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "启明创投公告将建源西证列为佳量脑科学 C 轮跟投机构。",
+          "description": "启明创投公告将建源西证列为佳量脑科学C轮跟投方，未披露该基金的单独出资额。",
+          "source_id": "PROFILE-B13-INV-9838e66bc0ff97-5"
+        },
+        {
+          "description": "融资来源记录：佳量脑科学 · 多轮融资 · 2026-09-08 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0fc87012f374b083"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-0fc87012f374b083",
+          "source_id": "PROFILE-B13-INV-9838e66bc0ff97-4",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-07-21/245748_20260721_WRBY.pdf",
+          "source_title": "西南证券股份有限公司2026年面向专业投资者公开发行公司债券（第五期）募集说明书",
+          "source_content_hash": "ead95587c62b37eb38bd60ae6a52f4adad82feaf0c4608975db3f78059168c25",
+          "quote": "西证股权作为私募股权基金业务平台，在做好存续基金运营的 基础上，持续融入国家和地方产业发展战略，在合规运行、风险可控的基础上， 积极拓展基金管理业务，扩大管理规模，联合建信 AIC 等共同发起设立重庆建 源西证股权投资基金。",
+          "quote_hash": "0d26a276156938309856f4cdd06cad7a61d6051e3b27e2bf8fdd79ea39745d02"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-9838e66bc0ff97-5",
           "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
           "source_title": "启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮 | 启明创投",
           "source_content_hash": "a51c585248897d932a8f4d0ca874c53a5992b5b2956ed607f0212f9ceb444913",
-          "quote": "控领域的巨大临床刚需，期待佳量脑科学能不断加速核心产品商业化落地，推进海外注册与全球临床合作，推动中国原创脑机接口技术服务国内外广大患者。” C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投。D轮融资由赛智伯乐、宽桥恒松及宁波国资等多家机构共同参与。 更多新闻 投资企业新闻 启明星 | Robochallenge全球化进展与生态共建发布| WAIC 2026 09/14 2026 投资企业新闻 启明星 | 单次治疗，长期获益：信玖凝®全国首方落地，血友病B诊疗步入基因治疗时代 09/14 2026 投资企业新闻 启明星 | 全球领先的机器人大脑企业梅卡曼德成功登陆香港交易所 09/01 202",
-          "quote_hash": "36b5596a55c12ba92dcc169a66db7a877a2d4330957d26df57e1aba53d836113"
+          "quote": "C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投",
+          "quote_hash": "83eedb162bbf7e71c7d054dd927a7029ea75baec84ec82a64070fc7eb03b299e"
+        },
+        {
+          "source_id": "FISRC-0fc87012f374b083",
+          "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
+          "source_title": "启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮 | 启明创投",
+          "source_content_hash": "421f431cbb5e84018cc04f18b116bd58447a3aa7183a44bd69dd78d338481f66",
+          "quote": "C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投。",
+          "quote_hash": "cc57f536c07b39a6ca04c83288ac32ea7348ed076980ecfdeddebef44ada2e0b"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-04"
     }
   }
 }

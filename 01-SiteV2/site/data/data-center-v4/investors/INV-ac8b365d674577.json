@@ -124,30 +124,67 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "金马游乐提交的交易所审核回复披露，其于 2025 年 12 月向智身科技投入 1,000 万元并持有 0.86% 股权。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司身份与业务以官网自述为准；对智身科技的投资金额、时间及持股比例以向深交所提交的审核回复为准。",
+      "summary": "广东金马游乐股份有限公司成立于2007年，2018年在A股上市，主营大型游乐设施及虚拟沉浸式游乐项目的研发、制造与文旅项目运营。公司向深交所提交的审核回复披露，2025年12月实缴投资智身科技1,000万元并持股0.86%。",
+      "facts": [
+        {
+          "field": "company_background",
+          "label": "企业背景",
+          "value": "广东金马游乐股份有限公司成立于2007年，2018年A股上市。",
+          "source_id": "PROFILE-B10-INV-ac8b365d674577-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "主营业务",
+          "value": "主营大型游乐设施、虚拟沉浸式游乐项目及文旅项目规划建设运营。",
+          "source_id": "PROFILE-B10-INV-ac8b365d674577-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "金马游乐向深交所提交的审核回复列明智身科技为投资标的，并披露 2025 年 12 月实缴投资 1,000 万元、持股 0.86%。",
-          "source_id": "PROFILE-318dc66f6210fa230835"
+          "description": "公司向深交所提交的审核回复披露，2025年12月对智身科技实缴投资1,000万元，持股0.86%。",
+          "source_id": "PROFILE-B10-INV-ac8b365d674577-3"
         },
         {
           "description": "融资来源记录：智身科技（GENISOM AI） · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-750c27d055174535"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://jinmabrand.com/index.aspx",
+          "source_id": "PROFILE-B10-INV-ac8b365d674577-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-318dc66f6210fa230835",
+          "source_id": "PROFILE-B10-INV-ac8b365d674577-1",
+          "source_url": "https://jinmabrand.com/index.aspx",
+          "source_title": "广东金马游乐股份有限公司",
+          "source_content_hash": "b0ffe3f1f771c089f8751075f21f188de9fa2bfa3ef9814408bc35ceb80d2bce",
+          "quote": "广东金马游乐股份有限公司成立于2007年，于2018年A股上市。",
+          "quote_hash": "d8ace0e48c270d156ad9e30d9f7cb81fc699a6229fcdc41a208b15ea4f17fa03"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-ac8b365d674577-2",
+          "source_url": "https://jinmabrand.com/index.aspx",
+          "source_title": "广东金马游乐股份有限公司",
+          "source_content_hash": "b0ffe3f1f771c089f8751075f21f188de9fa2bfa3ef9814408bc35ceb80d2bce",
+          "quote": "集高端大型游乐设施、高科技虚拟沉浸式游乐项目的研发、制造、安装到创意文旅项目的规划、设计、施工以及投资经营于一体的现代化大型文旅集团。",
+          "quote_hash": "3f7a47bc80443ead70b9a3dcfba07dcafc847c2545b4680fe517fd7505e1ca1e"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-ac8b365d674577-3",
           "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-11/1225468872.PDF",
           "source_title": "关于广东金马游乐股份有限公司申请向特定对象发行股票的审核问询函的回复",
           "source_content_hash": "7115798d6380daef2a261bfffaacb15d3412313fa4aed25325a7a4d93f73f062",
-          "quote": "关于广东金马游乐股份有限公司申请向特定对象发行股票的审核问询函的回复\n投资标的名称 标的公司主营业务 与发行人业务协同情况 实缴投资时点 投资金额（万元） 投资时点持股比例\n智身科技（北京）有限公司 具身智能全产业链技术服务商，专注具身智能领域，业务覆盖核心部件研发、整机制造到场景化落地全流程。标的公司为发行人机器人体验项目的机器人本体供应商。2025年12月 1,000 0.86%",
-          "quote_hash": "1ffb83599fb26b0fa488a0bffb8ffac174823136a123922cfc7580113fdf768c"
+          "quote": "智身科技（北京）有限公司 具身智能全产业链技术服务商，专注具身智能领域，业务覆盖核心部件研发、整机制造到场景化落地全流程。标的公司为发行人机器人体验项目的机器人本体供应商。2025年12月 1,000 0.86%",
+          "quote_hash": "7ed770f7b4268cb5f5c30eb4ec4304a677bf81dabce5581c97f8b33dfebfc30f"
         },
         {
           "source_id": "FISRC-750c27d055174535",
@@ -158,7 +195,7 @@
           "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

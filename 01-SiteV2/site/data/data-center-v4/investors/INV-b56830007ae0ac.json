@@ -139,29 +139,120 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "Tech.eu 融资报道称 Armilar 领投 FRANK 的 €2.9M 融资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略和阶段来自 Armilar 官网；FRANK 融资活动来自 Tech.eu 报道，未披露 Armilar 单独出资额。",
+      "summary": "Armilar 官网将其定位为欧洲早期科技投资基金管理人，主要投资 Seed、Pre-Seed 及后续 A、B 轮，并支持具有技术差异化的数字化企业。Tech.eu 报道称其领投葡萄牙 insurtech 公司 FRANK 的 €2.9M 融资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "风险投资基金管理人",
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-2"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-Seed、Seed",
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-3"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "欧洲为重点；Seed 阶段偏重伊比利亚地区",
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-5"
+        },
+        {
+          "field": "follow_on_stage",
+          "label": "后续投资阶段",
+          "value": "Series A、Series B",
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-4"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "具有技术差异化的数字化企业",
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-6"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "领投 FRANK €2.9M 融资。",
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-1"
+        },
+        {
+          "description": "融资来源记录：FRANK · 轮次未披露 · 2026-10-01 · 本轮领投 · €2.9 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-be723224266e1106"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.armilar.com/why-armilar",
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-2"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-be723224266e1106",
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-1",
           "source_url": "https://tech.eu/2026/10/01/frank-raises-eur29m-to-cut-paperwork-for-insurance-brokers/",
           "source_title": "FRANK raises €2.9M to cut paperwork for insurance brokers - Tech.eu",
           "source_content_hash": "88a87d86f347b8c3eaa5e5f6b14164e722bc6513a11633e1958a4a88a5f1bcd7",
           "quote": "kedin Share Send email Copy link Portuguese insurtech FRANK has raised €2.9 million in a funding round led by Armilar and Start Ventures to further develop its AI-powered platform for insurance brokers and prepare for international expansion. Founded by Antonio Castro , Ricardo Vallejo and Alexandre Silva , FRANK is targeting the administrative workload invo",
           "quote_hash": "278a96fbfd211cac152a723d5f7ef068771260b4039ed4eeb76cd1f852501f60"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-2",
+          "source_url": "https://www.armilar.com/why-armilar",
+          "source_title": "Armilar Venture Partners",
+          "source_content_hash": "f0f48a5656978f7b464ce02f55ac7b21c8304c0c8270fd06a4f37b4b74cf80ca",
+          "quote": "We are an early-stage venture capital fund manager",
+          "quote_hash": "831a740dab16374831ecced93946830ff9c9ce833fe35605c842ee3ae0231433"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-3",
+          "source_url": "https://www.armilar.com/why-armilar",
+          "source_title": "Armilar Venture Partners",
+          "source_content_hash": "f0f48a5656978f7b464ce02f55ac7b21c8304c0c8270fd06a4f37b4b74cf80ca",
+          "quote": "We invest in early stages Seed (and Pre-Seed)",
+          "quote_hash": "a8bb48c6e02ad3e833f35101b74aeee7328d046a03bcbd17830bc06ab119646c"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-4",
+          "source_url": "https://www.armilar.com/why-armilar",
+          "source_title": "Armilar Venture Partners",
+          "source_content_hash": "f0f48a5656978f7b464ce02f55ac7b21c8304c0c8270fd06a4f37b4b74cf80ca",
+          "quote": "Series A & B",
+          "quote_hash": "da7d9bbfe4618aeba330eed9b79e78b201f0d5709410d89044672eea8987ee0b"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-5",
+          "source_url": "https://www.armilar.com/why-armilar",
+          "source_title": "Armilar Venture Partners",
+          "source_content_hash": "f0f48a5656978f7b464ce02f55ac7b21c8304c0c8270fd06a4f37b4b74cf80ca",
+          "quote": "In Seed stages we usually focus on opportunities closer to home (i.e., Iberia), while in Series A+ rounds we look for the best companies throughout Europe",
+          "quote_hash": "afc2c79c0a4b585f8679274fc16827d86df7af2056aa2844fd458971a77531a2"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b56830007ae0ac-6",
+          "source_url": "https://www.armilar.com/why-armilar",
+          "source_title": "Armilar Venture Partners",
+          "source_content_hash": "f0f48a5656978f7b464ce02f55ac7b21c8304c0c8270fd06a4f37b4b74cf80ca",
+          "quote": "We invest in digital companies with a strong tech differentiation angle",
+          "quote_hash": "8cd6846279fadd7d2e9525f5e4823846125846f6a97d0863ad9fe20bb5756953"
+        },
+        {
+          "source_id": "FISRC-be723224266e1106",
+          "source_url": "https://tech.eu/2026/10/01/frank-raises-eur29m-to-cut-paperwork-for-insurance-brokers/",
+          "source_title": "FRANK 融资 290 万欧元，为保险经纪人减少文书工作",
+          "source_content_hash": "cacd42741e85d403c6fcd11db9badc6566248573b1ecab3a82a9f9efdbed8d64",
+          "quote": "led by Armilar and Start Ventures",
+          "quote_hash": "a3249d3c087957537aadbe9218a440edab2c91233bc8d32b1e01a7e0a22a8b32"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

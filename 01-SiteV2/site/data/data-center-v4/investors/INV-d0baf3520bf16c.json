@@ -123,33 +123,96 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录 GitHub 官方披露的开源资助计划支持或合作关系；不推断股权投资或单独出资额。",
-      "summary": "GitHub 官方博客将 Atlantic Council 列为 Secure Open Source Fund 新增合作伙伴；本档案记录项目合作，不作股权投资推断。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构性质及使命据Atlantic Council官网；GitHub来源明确列其为生态合作伙伴。本档案不将合作关系误记为股权投资。",
+      "summary": "Atlantic Council 是一家非营利、免税机构，官网称其致力于促进国际事务中的建设性领导与参与。GitHub 将其列为 Secure Open Source Fund 的生态合作伙伴；该关系属于项目合作，不代表股权投资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "非营利、免税机构。",
+          "source_id": "B23-ATLANTIC-ABOUT"
+        },
+        {
+          "field": "mission",
+          "label": "使命",
+          "value": "促进国际事务中的建设性领导与参与。",
+          "source_id": "B23-ATLANTIC-MISSION"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1961",
+          "description": "Atlantic Council 官网记载该机构于1961年成立。",
+          "source_id": "B23-ATLANTIC-HISTORY"
+        }
+      ],
       "track_record": [
         {
-          "description": "GitHub 官方博客将 Atlantic Council 列为 Secure Open Source Fund 新增合作伙伴；这是项目合作关系，不证明股权投资。",
+          "description": "GitHub 将 Atlantic Council 列为 Secure Open Source Fund 的 Ecosystem Partner；这是开放源代码安全项目合作，不构成股权投资证据。",
+          "source_id": "B23-ATLANTIC-GITHUB"
+        },
+        {
+          "description": "融资来源记录：GitHub Secure Open Source Fund · 历史轮次未披露 · 新增合作伙伴。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-944113caf8db4760"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.atlanticcouncil.org/",
+          "url": "https://www.atlanticcouncil.org/",
+          "source_id": "B23-ATLANTIC-ABOUT"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "B23-ATLANTIC-ABOUT",
+          "source_url": "https://www.atlanticcouncil.org/about/",
+          "source_title": "About the Atlantic Council - Atlantic Council",
+          "source_content_hash": "4f63a7af4d743dd2bfac999e72e7d409890213f9f1761529884faa1881fb1b55",
+          "quote": "The Atlantic Council is a not-for-profit, tax-exempt organization",
+          "quote_hash": "556d34eeb6da0303135dd66a47709daa2a3142cba8f9bf7aa0b9fb6f81ea1f11"
+        },
+        {
+          "source_id": "B23-ATLANTIC-GITHUB",
+          "source_url": "https://github.blog/open-source/maintainers/securing-the-ai-software-supply-chain-security-results-across-67-open-source-projects/",
+          "source_title": "Securing the AI software supply chain: Security results across 67 open source projects - The GitHub Blog",
+          "source_content_hash": "18189a83a796cf0d3454fbc835586b62e3a716f4ff1fa230957f967a4fdceaff",
+          "quote": "Ecosystem Partners: Atlantic Council, Ecosyste.ms, CURIOSS",
+          "quote_hash": "0a641b327f0d4e36fcf95f1eea04c9a9dceb9c71f1b93363dc1ad21cafb6e4a0"
+        },
+        {
+          "source_id": "B23-ATLANTIC-MISSION",
+          "source_url": "https://www.atlanticcouncil.org/about/",
+          "source_title": "About the Atlantic Council - Atlantic Council",
+          "source_content_hash": "4f63a7af4d743dd2bfac999e72e7d409890213f9f1761529884faa1881fb1b55",
+          "quote": "The Atlantic Council promotes constructive leadership and engagement in international affairs based on the Atlantic Community’s central role in meeting global challenges.",
+          "quote_hash": "9d443efa3dac0b9155feb5c56e395fd1021871deb36af41b41948b23abdb6433"
+        },
+        {
+          "source_id": "B23-ATLANTIC-HISTORY",
+          "source_url": "https://www.atlanticcouncil.org/about/",
+          "source_title": "About the Atlantic Council - Atlantic Council",
+          "source_content_hash": "4f63a7af4d743dd2bfac999e72e7d409890213f9f1761529884faa1881fb1b55",
+          "quote": "Since its inception in 1961, Atlantic Council has administered programs to examine political, economic, and security issues.",
+          "quote_hash": "dfabd5a43ec54735d9f2d32f7e0bdbf96c4f153b032cdd13180eb6e2d036a060"
+        },
         {
           "source_id": "FISRC-944113caf8db4760",
           "source_url": "https://github.blog/security/supply-chain-security/investing-in-the-people-shaping-open-source-and-securing-the-future-together/",
           "source_title": "Investing in the people shaping open source and securing the future together - The GitHub Blog",
-          "source_content_hash": "b88967acdd77519fb0ae32d3634b523ee52255af03d285ca385e899e1ea32a30",
+          "source_content_hash": "e72d41c69a6c730c",
           "quote": "GitHub Secure Open Source Fund is adding an additional $5.5 million in Azure credits and funding to provide training and expertise; community to improve outcomes; and new partners, including Datadog, Open WebUI, Atlantic Council, and OWASP.",
           "quote_hash": "7fc1ba5abad81f530029defb3991ea53bf9089b9fdb148d3d8430d6085cbe757"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "GitHub 官方博客将 Atlantic Council 列为 Secure Open Source Fund 新增合作伙伴；本档案记录项目合作，不作股权投资推断。"
+      "experience_summary": "Atlantic Council 是一家非营利、免税机构，官网称其致力于促进国际事务中的建设性领导与参与。GitHub 将其列为 Secure Open Source Fund 的生态合作伙伴；该关系属于项目合作，不代表股权投资。"
     },
     "translations": {
       "zh-CN": {

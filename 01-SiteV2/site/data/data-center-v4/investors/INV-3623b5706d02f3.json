@@ -139,15 +139,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "公司官网用于核对盈峰环境主体；融资报道将其列为曦望本轮产业资本参与方。本档案不把该上市环保企业描述为独立创投基金。",
-      "summary": "盈峰环境官网所列公司为盈峰环境科技集团股份有限公司；财新报道将盈峰环境列为曦望本轮产业资本投资方之一。",
+      "coverage_status": "researched",
+      "coverage_note": "公司名称与业务范围来自官网；曦望交易关系来自财新报道，未找到发行人公告单独核实该简称对应的具体投资主体。",
+      "summary": "盈峰环境官网确认主体为盈峰环境科技集团股份有限公司，主营业务包括智能装备、智慧服务和智云计算。财新报道将盈峰环境列为曦望融资的产业资本参与方；该上市环保企业不因此被描述为独立创投基金。",
       "facts": [
         {
           "field": "legal_name",
           "label": "主体名称",
           "value": "盈峰环境科技集团股份有限公司",
           "source_id": "infore-official-home-2026-10-03"
+        },
+        {
+          "field": "main_business",
+          "label": "公司官网披露的主营业务",
+          "value": "官网披露公司主营业务涵盖智能装备、智慧服务和智云计算。",
+          "source_id": "PROFILE-S-INV-3623b5706d02f3-3"
         }
       ],
       "milestones": [],
@@ -175,9 +181,17 @@
           "source_id": "sunrise-infore-round-2026-10-03",
           "source_url": "https://m.caixin.com/m/2026-08-28/102478786.html",
           "source_title": "AI芯片企业曦望完成20亿元融资 投后估值为200亿元",
-          "source_content_hash": "fef5dd3d54a9f2ec565389c629b2397db416e266f62ea892762bc1a316531707",
+          "source_content_hash": "c30c447d492b3f4af80d4c4b39dc8f74ad5ef5239124181ef82c469bdfe5ce2c",
           "quote": "以及 正大集团 、 九安医疗 、 盈峰环境 、 三七互娱 、 同程旅行 等产业资本。",
           "quote_hash": "76f42a2c46b823426a7f0e0f1eb711de212d6987b6279228b426949080d67588"
+        },
+        {
+          "source_id": "PROFILE-S-INV-3623b5706d02f3-3",
+          "source_url": "https://www.inforeenviro.com/col11/",
+          "source_title": "盈峰环境科技集团股份有限公司-环卫装备-智慧服务-环卫一体化-智能环卫机器人",
+          "source_content_hash": "69e4131949b1fff0d518d5fd8cb81d3796db0a8786b821153290ae05c3f9ad37",
+          "quote": "公司主营业务涵盖智能装备、智慧服务、智云计算",
+          "quote_hash": "609cb2f9fab73d8d602d9cc43f0b78e8d264712dfd658af29d044485ba194db6"
         },
         {
           "source_id": "FISRC-c87caae716bd4910",
@@ -188,7 +202,10 @@
           "quote_hash": "375dd00f55fb4e2798c653f7905e2b0ebc7ecc483208089af0b6a541411a18be"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": []
     }
   }
 }

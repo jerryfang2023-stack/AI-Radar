@@ -221,16 +221,25 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "36氪英文融资快讯称 Prosperity7 作为千寻智能既有股东继续跟投。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金策略与集团归属来自 Aramco Ventures 官网；不将品牌名称等同于特定投资组合基金的法定名称。",
+      "summary": "Aramco Ventures 官网将 Prosperity7 定位为面向全球高成长企业、以财务回报为目标的多元化成长基金，并说明其为 Aramco Ventures 旗下基金。",
+      "facts": [
+        {
+          "field": "fund_strategy",
+          "label": "基金策略",
+          "value": "官网称 Prosperity7 全球投资转型领域高成长企业，强调财务回报。",
+          "source_id": "PROFILE-COLLECT-INV-90c5510af92f27-1"
+        },
+        {
+          "field": "parent_company",
+          "label": "集团归属",
+          "value": "官网说明 Prosperity7 Ventures 是 Aramco Ventures 旗下多元化成长基金。",
+          "source_id": "PROFILE-COLLECT-INV-90c5510af92f27-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "36氪融资快讯将 Prosperity7 列为继续跟投的既有股东。",
-          "source_id": "PROFILE-6901bab3a51978b16201"
-        },
         {
           "description": "融资来源记录：千寻智能 · 其他融资 · 2026-02-24 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ee3064edf7c871f4"
@@ -247,12 +256,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-6901bab3a51978b16201",
-          "source_url": "https://eu.36kr.com/en/newsflashes/3696608854879879",
-          "source_title": "Qianxun Intelligence completed a financing round of nearly 2 billion yuan, and its valuation exceeded 10 billion yuan.-36氪",
-          "source_content_hash": "496e0782c7c5206875211b3f4b88641c8a75e22b7e0c3f57895d81c6857f3a8f",
-          "quote": "egic investment institutions like 360 Fund and Houxue Capital. Existing shareholders such as Shunwei Capital, Prosperity7, Fortune Capital, Borui Capital, Honghui Fund, Huatai Zijin, Dongfang Jiafu, Qiancheng Capital, and GF Xinde continued to make substantial follow - up investments. For media inquiries, interview requests, business coll",
-          "quote_hash": "94ad1fb5cae00f8ea869ba870222fadb19f14d88e56bccd1c10de10bc15d0cb1"
+          "source_id": "PROFILE-COLLECT-INV-90c5510af92f27-1",
+          "source_url": "https://aramcoventures.com/programs-fund/prosperity7-fund/",
+          "source_title": "Prosperity7 – Diversified Venturing - Aramco Ventures",
+          "source_content_hash": "422f7e2dc931afdd40ead9dba02e1925ff103e5a9e34cc34adc75d20ff9b5e0a",
+          "quote": "Invests globally in high-growth companies across transformative sectors with a financial-return-driven mandate.",
+          "quote_hash": "22196c3ade272a482eef6a08be0d27d903a2da55875f39018e40692fe80da704"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-90c5510af92f27-2",
+          "source_url": "https://aramcoventures.com/news/aramco-expands-global-venture-capital-program-with-4bn-funds-injection/",
+          "source_title": "Aramco expands global venture capital program with $4bn funds injection - Aramco Ventures",
+          "source_content_hash": "79a0adca9754ae90d5dab032d277b69f978b81b3ddbe7e0513b52204fe0ccda6",
+          "quote": "Prosperity7 Ventures (P7) is the diversified growth fund of Aramco Ventures, a subsidiary of Aramco",
+          "quote_hash": "09f2982654b89eac9693609747629fbc04f8f06d352e244fd5d1cb16a27e6f7e"
         },
         {
           "source_id": "FISRC-ee3064edf7c871f4",
@@ -279,7 +296,7 @@
           "quote_hash": "4c5196c549165535e6906f6ef24e7056ff4330c2f18db17d9de3a6dd5e2df430"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -139,29 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Nscale Pre-IPO 融资公告将 Irving Investors 列为参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资机构定位来自 Irving Investors 官网；融资活动来自 Nscale 官方公告。",
+      "summary": "Irving Investors 官网将其描述为跨行业的成长型基金，采用单一标的策略，并配置后期风险投资组合。Nscale 官方 Pre-IPO 公告将 Irving Investors 列为本轮参与者。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资策略",
+          "value": "官网称其为跨行业成长型基金，并说明其配置以长期持有为主的公开市场投资及后期风险投资。",
+          "source_id": "PROFILE-B8-INV-9552e3d4af1d74-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Nscale Pre-IPO 融资公告将 Irving Investors 列入参与融资的投资者。",
+          "description": "Nscale 官方公告将 Irving Investors 列为 2026 年 Pre-IPO 可转债融资参与方；未披露其单独出资额。",
+          "source_id": "PROFILE-B8-INV-9552e3d4af1d74-1"
+        },
+        {
+          "description": "融资来源记录：Nscale Limited · Pre-IPO · 2026-09-25 · 本轮参投 · $3.36b。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-060d60f0bcc42b9d"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-B8-INV-9552e3d4af1d74-1",
+          "source_url": "https://www.nscale.com/press-releases/pre-ipo-convertible-financing",
+          "source_title": "Nscale Raises $3.36 Billion in Pre-IPO Convertible Financing | Nscale",
+          "source_content_hash": "9194dea938db859cf719910c546c5b015923c76e8d81c3d2d8b5bd8731c3a490",
+          "quote": "Irving Investors",
+          "quote_hash": "be55e2b08af56ceb971de5431d070b48c8f5d05160c54f976ee59733dedb1263"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-9552e3d4af1d74-2",
+          "source_url": "https://www.irvinginvestors.com/",
+          "source_title": "Irving Investors",
+          "source_content_hash": "4febe5921ca3cc308b5fd7b103b0e67fb4b86b5f6f6dae0dd995e2c3e5825677",
+          "quote": "Irving Investors is a growth fund with a sector agnostic approach.",
+          "quote_hash": "255101cac321c51d0084bcaf1b60f5ab60a62e59dc92a8edf87abd3c24e17d95"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-9552e3d4af1d74-3",
+          "source_url": "https://www.irvinginvestors.com/",
+          "source_title": "Irving Investors",
+          "source_content_hash": "4febe5921ca3cc308b5fd7b103b0e67fb4b86b5f6f6dae0dd995e2c3e5825677",
+          "quote": "He runs Irving as a crossover fund with a predominantly long-only public equities strategy and an active late-stage venture portfolio.",
+          "quote_hash": "4b872c0aa1629c5fe27c2e6e0c3937a86021343cd98e6a7a15e13e6a3fc138b9"
+        },
+        {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
-          "source_title": "NSCALE RAISES $3.36B IN PRE-IPO CONVERTIBLE FINANCING",
-          "source_content_hash": "f4fe3307e8779335eb18e2af7ef056a29f7aa3a3faf9af431d5ef3e57ebaed94",
-          "quote": "ent, Castleknight, Ghisallo Capital Management, LionTree Investment Fund, L.P., Javelin Venture Partners, and Irving Investors. Nscale's full stack AI cloud platform serves hyperscalers, frontier model labs, AI natives, and enterprises building and scaling AI. With over $103bn in total contracted value (TCV), this capital will further acc",
-          "quote_hash": "dac0f7e4d30dd04088076ee4d794dcaac141696e402bc7e494abbb13e07b2153"
+          "source_title": "NSCALE 在 IPO 前可转换融资中筹集 $3.36B",
+          "source_content_hash": "5ebbe835664f567a51c54687b46ae2cf87e594d88de74ae878848a31a9e9f928",
+          "quote": "Other investors that participated in the financing include Davidson Kempner Capital Management, Qube Research & Technologies (QRT), Context Capital Management, Longaeva Partners L.P., Wellington Management, Castleknight, Ghisallo Capital Management, LionTree Investment Fund, L.P., Javelin Venture Partners, and Irving Investors.",
+          "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -137,43 +137,84 @@
       }
     ],
     "public_profile": {
+      "last_verified_at": "2026-10-05",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "LTS Growth官网介绍其支持企业家；Lovable官方C轮公告将其列为投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "LTS Growth 官网称其支持创业者，并列出伦敦、纽约和圣保罗。Startupz 的第三方档案将其策略描述为投资欧洲、美国和以色列的成长期科技企业；Lovable 官方 Series C 公告列出 LTS Growth。",
+      "coverage_note": "地点与品牌描述来自官网；阶段和地域策略来自 Startupz 第三方资料，按二手来源归属。现有材料未确认其基金管理法人或具体出资载体。",
+      "facts": [
+        {
+          "field": "listed_locations",
+          "label": "官网列示地点",
+          "value": [
+            "伦敦",
+            "纽约",
+            "圣保罗"
+          ],
+          "source_id": "b33-lts-official"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "第三方资料所述投资方向",
+          "value": "成长期科技企业，地域包括欧洲、美国和以色列。",
+          "source_id": "b33-lts-startupz"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将LTS Growth列为Lovable相关融资的投资参与方。",
+          "description": "Lovable 官方公告将 LTS Growth 列入其 Series C 投资方，未披露 LTS Growth 单独出资金额。",
           "source_id": "FISRC-94676d99b2defaa4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "LTS Growth 官网",
+          "value": "LTS Growth",
+          "url": "https://ltsgrowth.com/",
+          "source_id": "b33-lts-official"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网面向创业者提供支持；第三方资料将其投资方向描述为成长期科技企业。",
       "sources": [
         {
-          "source_id": "PROFILE-362e18ebeb19d49cf921",
+          "source_id": "b33-lts-official",
           "source_url": "https://ltsgrowth.com/",
           "source_title": "LTS Growth",
           "source_content_hash": "90d544070ac8a81fd9df121340ac23980f50543c9d4c047c061ed7e341331be4",
-          "quote": "LTS Growth We support extraordinary leaders and entrepreneurs in achieving their big dreams",
-          "quote_hash": "5c33d363f112d9cb07a1b7b9efb5a71b3fc478811f09ddeb3e8ed31e2563c635"
+          "quote": "We support extraordinary leaders and entrepreneurs in achieving their big dreams",
+          "quote_hash": "b956f18140afa1393b91b9233935af638be6c06b2f7e7db9f0a582b16a2fe25e"
+        },
+        {
+          "source_id": "b33-lts-official-locations",
+          "source_url": "https://ltsgrowth.com/",
+          "source_title": "LTS Growth",
+          "source_content_hash": "90d544070ac8a81fd9df121340ac23980f50543c9d4c047c061ed7e341331be4",
+          "quote": "London | New York | São Paulo",
+          "quote_hash": "4dc702993a0cc90e66d7c27e44ebd871d3680ae4267d1b15b4709dd2792f792e"
+        },
+        {
+          "source_id": "b33-lts-startupz",
+          "source_url": "https://www.startupz.com.br/vcs/lts-growth",
+          "source_title": "LTS Growth: investimentos em startups brasileiras | Startupz",
+          "source_content_hash": "5664792d215348c4517871540e6aad75dcadf7fbf32ff32a001cf57c58110a9f",
+          "quote": "Investe em empresas de tecnologia em fase de crescimento na Europa, nos EUA e em Israel",
+          "quote_hash": "93eec881855af3320f775a6054b9afaa5dcab2d4f0a674fab0e757c3786774fd"
         },
         {
           "source_id": "FISRC-94676d99b2defaa4",
           "source_url": "https://lovable.dev/blog/series-c",
           "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
           "source_content_hash": "b6e6a851334a228e21e33195defcc033393ccc72089fe9fb5e43e97a3fc1aa59",
-          "quote": "The round also welcomes Balderton Capital and Carmignac from Europe, Kaszek Ventures and LTS Growth from Latin America, Tencent and World Innovation Lab from Asia, and Regent from the United States",
-          "quote_hash": "65256cbe24e687fbe64f7aa04cbc338e3a8d1fa61cb2828e035537449817738e"
+          "quote": "Kaszek Ventures and LTS Growth from Latin America",
+          "quote_hash": "04b3370b482a178f2024a6d5ca73d54c9d70bdfbdf3ddb0a8670994cb7559b59"
         }
-      ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      ]
     }
   }
 }

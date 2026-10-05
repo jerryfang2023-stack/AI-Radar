@@ -139,33 +139,82 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "FCVC 官网将其说明为 FundersClub 旗下硅谷 VC 基金；Structured AI 官方融资公告用于验证其作为领投方的单一案例。",
+      "summary": "FCVC 是 FundersClub 建立的硅谷风险投资基金，官网称通过基金提供种子轮和后续融资资本，并结合 FundersClub 创业者网络。Structured AI 官方公告称，FCVC 领投其 420 万美元种子轮；金额为融资总额，未披露 FCVC 单独出资额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "风险投资基金。",
+          "source_id": "B26-FCVC-HOME"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称基金提供 Seed 及后续轮次投资。",
+          "source_id": "B26-FCVC-SEED"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Structured AI 种子轮 本轮领投。",
+          "description": "Structured AI 官方公告称 FCVC 领投其 420 万美元种子轮；未披露 FCVC 单独出资金额。",
+          "source_id": "B26-FCVC-STRUCTURED"
+        },
+        {
+          "description": "融资来源记录：Structured AI · 种子轮 · 2026-06-11 · 本轮领投 · $4.2M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7568031d64eac5fa"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.fcvc.com/",
+          "url": "https://www.fcvc.com/",
+          "source_id": "B26-FCVC-HOME"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-7568031d64eac5fa",
+          "source_id": "B26-FCVC-STRUCTURED",
           "source_url": "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/",
           "source_title": "Structured AI Raises $4.2M Seed to Build the Quality Layer for the Built World - Structured AI",
           "source_content_hash": "7ac8ee6255e3b7ba4ce9ba901c5ba936f7aedc7c5428578f18be1e17de724362",
           "quote": "The round was led by FCVC",
           "quote_hash": "7c831a22b4609648d56378229215caeb55a966628a367480158731726c74070c"
+        },
+        {
+          "source_id": "B26-FCVC-HOME",
+          "source_url": "https://www.fcvc.com/about",
+          "source_title": "FCVC",
+          "source_content_hash": "670b7294ea67bc748fa12a13008b35219c6fd6d0bc1d941b7f0a0a53012a26ad",
+          "quote": "Via our VC fund, FCVC",
+          "quote_hash": "6af7815899585aa93f39d998299036ce1e2c4cba738c3279c28d08ccc4431ecc"
+        },
+        {
+          "source_id": "B26-FCVC-SEED",
+          "source_url": "https://www.fcvc.com/about",
+          "source_title": "FCVC",
+          "source_content_hash": "670b7294ea67bc748fa12a13008b35219c6fd6d0bc1d941b7f0a0a53012a26ad",
+          "quote": "We support founders with Seed and follow-on capital, warm introductions, advice and connections.",
+          "quote_hash": "414b43c35440c3eb601ff5c7a7318ac623bc7316dbda1b1bc642bc2ad7e00145"
+        },
+        {
+          "source_id": "FISRC-7568031d64eac5fa",
+          "source_url": "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/",
+          "source_title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
+          "source_content_hash": "77fbdb6058a98d5e",
+          "quote": "The round was led by FCVC",
+          "quote_hash": "7c831a22b4609648d56378229215caeb55a966628a367480158731726c74070c"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "FCVC 是 FundersClub 建立的硅谷风险投资基金，官网称通过基金提供种子轮和后续融资资本，并结合 FundersClub 创业者网络。Structured AI 官方公告称，FCVC 领投其 420 万美元种子轮；金额为融资总额，未披露 FCVC 单独出资额。"
     }
   }
 }

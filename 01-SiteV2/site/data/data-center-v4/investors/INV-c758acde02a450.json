@@ -139,33 +139,68 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Wefunder 官方帮助中心将其描述为股权融资平台；Trace 的发行方文章将多名投资人标注为通过 WeFunder 参与。该证据表示平台/融资渠道，不表示 Wefunder 自有资金投资，也没有披露平台或任一投资人的单独出资额。",
+      "summary": "Wefunder 是面向创业公司的募资运营平台，而非据现有来源可确认的单一风险投资基金。Trace 的发行方文章列出 Benjamin Bryant、Kevin Moore 等投资人经 WeFunder 参与其 300 万美元融资；该金额为整轮金额，不能归作 Wefunder 自有投资。",
+      "facts": [
+        {
+          "field": "business_model",
+          "label": "业务模式",
+          "value": "Wefunder 官方帮助中心称其为募资运营平台，帮助创始人开展融资。",
+          "source_id": "wefunder_business_model"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Trace 种子轮 本轮参投。",
+          "description": "Trace 的发行方文章列出 Benjamin Bryant、Kevin Moore 及其他运营者“via WeFunder”参与其 3,000,000 美元融资；这是平台渠道关联，不是 Wefunder 自有出资的证据。",
+          "source_id": "trace_wefunder_channel"
+        },
+        {
+          "description": "融资来源记录：Trace · 种子轮 · 2026-02-26 · 本轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ea2a22594e77fd6a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Wefunder 帮助中心",
+          "value": "平台业务说明",
+          "url": "https://help.wefunder.com/article/ce3901d0-overview-what-is-wefunder",
+          "source_id": "wefunder_business_model"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "来源支持平台业务模式及一条通过平台发生的融资关联，未支持 Wefunder 自身作为基金出资。",
       "sources": [
+        {
+          "source_id": "wefunder_business_model",
+          "source_url": "https://help.wefunder.com/article/ce3901d0-overview-what-is-wefunder",
+          "source_title": "Overview: What is Wefunder?",
+          "source_content_hash": "c6b8b769555de48d0be05b52edb50e68e1796e5e60774c05300b699ee14539c1",
+          "quote": "is the operating system for fundraising.",
+          "quote_hash": "96004561f92778d17f413bb58b0800cfdc79da7ce18349bbc581f8961a7cb877"
+        },
+        {
+          "source_id": "trace_wefunder_channel",
+          "source_url": "https://www.trace.so/blog/trace-raised-dollar3m-to-build-the-context-layer-for-ai-at-work",
+          "source_title": "Trace raised $3M to build the context layer for AI at work - Trace",
+          "source_content_hash": "785f8ff4713a99f598fd744d4346fef9d68bfa2f690fe749b78db7cb8e974e91",
+          "quote": "Benjamin Bryant, Kevin Moore, and other operators via WeFunder",
+          "quote_hash": "6cb5543314a9e35959ffdd3314db026f862661c8e8b1e9d771d3b506e7b7a9dc"
+        },
         {
           "source_id": "FISRC-ea2a22594e77fd6a",
           "source_url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
-          "source_title": "Trace raises $3M to solve the AI agent adoption problem in enterprise | TechCrunch",
-          "source_content_hash": "2ae070604cdedb36f5308c1c26f83d7b020e157e8a688200763d844dd0abf6d3",
+          "source_title": "Trace 融资 300 万美元，解决企业 AI 智能体采用难题",
+          "source_content_hash": "601ebbbabea8fa71",
           "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder",
           "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

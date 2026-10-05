@@ -123,29 +123,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资参与关系依据钛媒体报道；未扩展为完整投资组合。",
-      "summary": "钛媒体关于原力无限 Pre-A 轮融资的报道将兴泰资本列为投资方。本档只记录该项公开融资披露。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体全称来自合肥兴泰金融控股集团官网；融资参与来自钛媒体报道。机构简称与法人全称通过集团网站页面核对，不外推具体基金关系。",
+      "summary": "合肥兴泰金融控股集团官网的成员企业页面列出合肥兴泰资本管理有限公司；钛媒体对 ELU.AI 原力无限 Pre-A 轮融资的报道将兴泰资本列为投资方。本档不推断具体出资基金或投资组合。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "集团官网成员企业页面所列名称",
+          "value": "合肥兴泰金融控股集团官网列示的成员企业包括合肥兴泰资本管理有限公司。",
+          "source_id": "PROFILE-A2-INV-69ec232798115f-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "原力无限 Pre-A 轮融资报道将兴泰资本列为投资方。",
+          "description": "钛媒体关于 ELU.AI（原力无限）Pre-A 轮融资的报道将兴泰资本列为投资方。",
+          "source_id": "PROFILE-A2-INV-69ec232798115f-2"
+        },
+        {
+          "description": "融资来源记录：原力无限 · 历史轮次未披露 · Pre-A轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b860ba28c7fca8f1"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-A2-INV-69ec232798115f-1",
+          "source_url": "https://xtkg.com/col196/692.html",
+          "source_title": "合肥兴泰资本管理有限公司-新闻发布 - 合肥兴泰金融控股（集团）有限公司",
+          "source_content_hash": "cd23f97011e1f541a163ed825ee1329fa5da9f4779b902d6ac14a2f5a4f5ae57",
+          "quote": "合肥兴泰资本管理有限公司-新闻发布 - 合肥兴泰金融控股（集团）有限公司",
+          "quote_hash": "5b01d804b374653298b60299d8520ebd909412d8ea8b04cd70a802bd15eb4ec4"
+        },
+        {
+          "source_id": "PROFILE-A2-INV-69ec232798115f-2",
+          "source_url": "https://www.tmtpost.com/7507888.html",
+          "source_title": "ELU.AI（原力无限）完成数亿元Pre-A轮融资，全栈布局具身智能产业｜融资首发-钛媒体官方网站",
+          "source_content_hash": "89e128ac980f396e4b7778ec20267648b34e3dbe3e21290451747492e94d8455",
+          "quote": "力鼎资本、杭实产投、兴泰资本等",
+          "quote_hash": "1ca87943d041bd89fe7126a3fff74d93808db839a755d8eefc80b7a84bdc014f"
+        },
+        {
           "source_id": "FISRC-b860ba28c7fca8f1",
           "source_url": "https://www.tmtpost.com/7507888.html",
           "source_title": "ELU.AI（原力无限）完成数亿元Pre-A轮融资，全栈布局具身智能产业｜融资首发-钛媒体官方网站",
-          "source_content_hash": "7aef8676221ea099cde91f98fdf1a2491b7d5bbade5de2cc78e87dd5a5af2602",
-          "quote": "rdquo;、&ldquo;通用大脑&rdquo;等前沿概念不断涌现，整个机器人产业正迎来一场深刻的细分演化。 钛媒体消息，ELU.AI（原力无限机器人）宣布完成数亿元人民币Pre-A轮融资，投资方为力鼎资本、杭实产投、兴泰资本等，以及天使轮投资方创世伙伴创投持续追投。 本轮融资资金将重点用于三大方向： 强化AI决策系统 。 优化机器人智能决策链路，提升AI Agent在复杂环境下的场景泛化能力与多模态数据融合的处理效率，让具身智能迈向更强自主性； 推进下一代智能机器人研发 ：在现有技术积累的基础上，通过面向不同场景深化产品力，推进下一代智能机器人产品的研发； 加速全球市场布局 ：推动具身智能在智慧出行、智能制造、医疗健康、智慧能源等关键行业规模化落地，实现技术价值的全球",
-          "quote_hash": "c118a368e0f9510e2743f96b8dd61850ad288c0958becad1c194889fa9caac48"
+          "source_content_hash": "43a13e6e312eadc7",
+          "quote": "ELU.AI（原力无限机器人）宣布完成数亿元人民币Pre-A轮融资，投资方为力鼎资本、杭实产投、兴泰资本等，以及天使轮投资方创世伙伴创投持续追投。",
+          "quote_hash": "92e1caac32f3c550ac42d89a191db76c4e6fd2671e71f64183a8c98d5bb80f8a"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -139,15 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "Magnetar 官方公告称其共同领投 TensorWave 的 3.5 亿美元 Series B。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位及融资关系来自 Magnetar 自有网站；本档不据单笔交易推断完整投资组合。",
+      "summary": "Magnetar 官网称其与 AMD Ventures 共同领投 TensorWave 3.5 亿美元 Series B；公司概览页面将 Magnetar 定位为另类资产管理机构。本档只记录官网披露的机构概览与该项融资关系。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网页面标题所示机构定位",
+          "value": "Magnetar 官网概览页将其定位为另类资产管理机构。",
+          "source_id": "PROFILE-B2-INV-70fb0fac6cc512-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Magnetar 官方公告披露其共同领投 TensorWave Series B。",
-          "source_id": "PROFILE-289a5e028d158281c50c"
+          "description": "Magnetar 官网称其与 AMD Ventures 共同领投 TensorWave Series B。",
+          "source_id": "PROFILE-B2-INV-70fb0fac6cc512-2"
         },
         {
           "description": "融资来源记录：TensorWave Inc. · B轮 · 2026-06-10 · 本轮联合领投 · 3.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,23 +164,31 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-289a5e028d158281c50c",
+          "source_id": "PROFILE-B2-INV-70fb0fac6cc512-1",
+          "source_url": "https://www.magnetar.com/who-we-are/firm-overview",
+          "source_title": "Magnetar Overview | Our Leading Alternative Asset Management Firm",
+          "source_content_hash": "51297cbf665942377e526a0b6e4e1fd057fa069c6bb1e975e7e71c1889d09c12",
+          "quote": "Magnetar Overview | Our Leading Alternative Asset Management Firm",
+          "quote_hash": "8891eedd1d2e5a73dabf9f5abb704d2ed601ebebe0ab4b50af4aa7d0fbcc3c95"
+        },
+        {
+          "source_id": "PROFILE-B2-INV-70fb0fac6cc512-2",
           "source_url": "https://www.magnetar.com/insights/tensorwave-raises-350-million-series-b-at-155b-valuation",
           "source_title": "Tensorwave Raises 350 Million Series B At 155b Valuation | Insights | Magnetar Capital",
           "source_content_hash": "c46da8111920084d2f1f8429072cfa0a323bbcdaabc8a38224bb0d21157afa7f",
-          "quote": "Tensorwave Raises 350 Million Series B At 155b Valuation | Insights | Magnetar Capital Skip Navigation Client Portal Login Who We Are Firm Overview Leadership Culture What We Do Business Overview Quantitative Investing Alternative Credit and Fixed Income Ventures Case Studies How We Help Ecosystem O",
-          "quote_hash": "63c71175214aef5a630812e9fcf8c7340f9907f9fab7b98104211a4d224f3ca2"
+          "quote": "The round was co-led by Magnetar and AMD Ventures, with continued participation from Maverick Silicon, Nexus Venture Partners, and Western Frontier.",
+          "quote_hash": "7878da8ead8942b2353c564285eee88f72df76c6f5b5001f1087abfd3b9d376f"
         },
         {
           "source_id": "FISRC-e98aedbd2eaa6410",
           "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
-          "source_title": "Data center infrastructure startup TensorWave raises $350M to help break Nvidia&#039;s AI chip monopoly - SiliconANGLE",
-          "source_content_hash": "14aacdb69e564059ea302abff10f2f425cee057318ebbc9320325fb4edd85b31",
-          "quote": "trives to meet demand for an alternative to Nvidia Corp.’s graphics processing units. The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc. Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round, which brings TensorWave’s valuation to $",
-          "quote_hash": "1c3a3b947e54e4ee4f964f2dca15b3db96c8b4270c1e7f75a114aa0060db1cee"
+          "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+          "source_content_hash": "1d75cf39c1185f55",
+          "quote": "The round was co-led by Magnetar and AMD Ventures",
+          "quote_hash": "eb9325c57080acd92f299e9e680f9b2150474061e7ee65a997d10cf79534552f"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

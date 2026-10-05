@@ -163,10 +163,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司业务及上市身份来自知乎官方投资者关系页面；面壁智能融资参与来自投资界报道，未披露集团内部具体投资主体或出资额。",
+      "summary": "知乎官方投资者关系页面介绍其为在线内容社区和纽约证券交易所、香港交易所双重主要上市公司。投资界报道记载知乎领投面壁智能2023年天使轮。本档将该记录表述为上市公司参与的战略性投资案例，不将知乎定位为专业基金管理人。",
+      "facts": [
+        {
+          "field": "company_profile_and_listing",
+          "label": "官方披露的业务及上市身份",
+          "value": "知乎官方介绍其为在线内容社区，并称其在纽约证券交易所和香港证券交易所双重主要上市。",
+          "source_id": "PROFILE-COLLECT-INV-d05c9bac280012-L-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -187,6 +194,14 @@
           "source_content_hash": "ce889fe2e46ae92f26474f083a9a92298409d26606978723c0b47684e796b06f",
           "quote": "2023年4月，面壁智能完成由知乎领投的数千万元天使轮融资，种子轮股东智谱AI继续跟投。",
           "quote_hash": "4cf78f50cbd5581287454100d3281fe589f2312e6e286a0767ea0ee98e6283ec"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d05c9bac280012-L-2",
+          "source_url": "https://ir.zhihu.com/cn/corporate-information/",
+          "source_title": "公司信息 | 知乎（投资者关系）",
+          "source_content_hash": "0061b6bd1977f74250160f541d3fd79a0fc98c9923a6be41a26ac34f54a85418",
+          "quote": "知乎是一家领先的在线内容社区，人们来到这里寻找解决方案、作出决定、寻求灵感并获得乐趣。自2010年首次上线以来，知乎已发展为中国最大的在线内容问答社区。同时，知乎目前是纽约证券交易所（NYSE: ZH）和香港证券交易所（HKEX: 2390）的双重主要上市公司。",
+          "quote_hash": "f1a73e3c3fd7ce84a363f32b5d888696707c69c833d8404a581a788e2a034c33"
         },
         {
           "source_id": "FISRC-5e868b9dacd5325c",

@@ -139,18 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "依据发行方公告，按其“additional commitments to date”表述记录为截至公告时已承诺的投资者，不将承诺写成已完成出资或最终交割。",
-      "summary": "Multiverse Computing 的官方 C 轮公告将 Santander Alternative Investments 列为截至公告时获得承诺的投资者之一；该轮目标融资规模最高为 5.7 亿美元，公告未披露 Santander 的承诺金额或最终交割状态。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Santander Alternative Investments 官网将其描述为另类投资平台，法律声明列示其在西班牙运营实体为 Santander Alternative Investments SGIIC, S.A.U.，并披露 CNMV 登记信息。Multiverse Computing 的融资公告将其列为截至公告时新增承诺投资者之一。",
+      "coverage_note": "平台业务与法定实体资料来自其官网法律声明及介绍；Multiverse Computing 的公告使用“additional commitments to date”，故按截至公告时的新增投资承诺记录，不写成已完成出资或最终交割。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "官网列示西班牙运营实体",
+          "value": "Santander Alternative Investments SGIIC, S.A.U.",
+          "source_id": "b34-santander-legal"
+        },
+        {
+          "field": "regulatory_registration",
+          "label": "官网法律声明所列登记",
+          "value": "西班牙 CNMV 注册编号 287。",
+          "source_id": "b34-santander-registration"
+        },
+        {
+          "field": "business_description",
+          "label": "官网自述业务",
+          "value": "为客户发掘另类资产投资机会的另类投资平台。",
+          "source_id": "b34-santander-platform"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Multiverse Computing 官方公告称，截至公告时已获得包括 Santander Alternative Investments 在内的投资者承诺；C 轮目标金额最高 5.7 亿美元，未披露 Santander 的单独承诺额或最终交割情况。",
-          "source_id": "multiverse-santander-alternative-investments-seriesc-2026"
-        },
-        {
-          "description": "融资来源记录：Multiverse Computing · C轮 · 2026-07-27 · 本轮参投 · $570 million (€500M)。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Multiverse Computing 公告称，Santander Alternative Investments 属于截至公告时已收到追加承诺的投资者之一；该表述不等于最终交割或已披露出资额。",
           "source_id": "FISRC-fa5aeddf845d651b"
         }
       ],
@@ -158,26 +174,41 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "依据发行方公告，按其“additional commitments to date”表述记录为截至公告时已承诺的投资者，不将承诺写成已完成出资或最终交割。",
+      "experience_summary": "Santander Asset Management 集团旗下另类投资平台，面向客户提供另类投资机会。",
       "sources": [
         {
-          "source_id": "multiverse-santander-alternative-investments-seriesc-2026",
-          "source_url": "https://multiversecomputing.com/resources/multiverse-computing-announces-series-c-fundraising-targeting-up-to-usd570m-eur500m-to-power",
-          "source_title": "Multiverse Computing Announces Series C Fundraising Targeting up to $570M (€500M) to Power Efficient AI from Edge to Cloud",
-          "source_content_hash": "1578e84d054dfd39c1c0735cb912761cc447c30148127ed2e28f7a450c5a5868",
-          "quote": "with additional commitments to date from investors including Santander Alternative Investments",
-          "quote_hash": "8a2027732a7fe36cd858e337f05f389c1f8d774e6f8078c3ce20538b75ad8b2a"
+          "source_id": "b34-santander-platform",
+          "source_url": "https://www.santanderalternatives.com/en/our-vision",
+          "source_title": "Our vision",
+          "source_content_hash": "8be509a7dca457f6584303b6216dce6f7399cf6197498e3e012b1bc1326ad432",
+          "quote": "We are an alternative investment platform with an innovative ethos, set up with the goal of capturing unique, exclusive investment opportunities",
+          "quote_hash": "b89ddef1baa72eeb545779b1059e63799de8c46b06720acb443b8f7bb3893f87"
+        },
+        {
+          "source_id": "b34-santander-legal",
+          "source_url": "https://www.santanderalternatives.com/en/legal-notice",
+          "source_title": "Legal Notice",
+          "source_content_hash": "93b5360b9dfd9fa249ada9a8fae107adc614a22530bf14a8a59f4f1cd6ea43e8",
+          "quote": "Santander Alternative Investments SGIIC, SAU: NIF A13823745",
+          "quote_hash": "92cd3a2c56c6f36993314de5fe050b6666501dbfaeb6bb06ca4538c4039729b9"
+        },
+        {
+          "source_id": "b34-santander-registration",
+          "source_url": "https://www.santanderalternatives.com/en/legal-notice",
+          "source_title": "Legal Notice",
+          "source_content_hash": "93b5360b9dfd9fa249ada9a8fae107adc614a22530bf14a8a59f4f1cd6ea43e8",
+          "quote": "Registration data with the National Securities Market Commission: Number 287",
+          "quote_hash": "f6cc945ecd0898794fac8d253f476bdb256265eb882bd2161c3bc1715f775bae"
         },
         {
           "source_id": "FISRC-fa5aeddf845d651b",
           "source_url": "https://www.globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
-          "source_title": "Multiverse Computing 宣布 C 轮融资，目标高达 5.7 亿美元（5 亿欧元），为从边缘到云端的高效 AI 提供动力",
-          "source_content_hash": "070cd1b0f627dcdf",
+          "source_title": "Multiverse Computing Announces Series C Fundraising",
+          "source_content_hash": "969a64a48171f8e26ac26ca685e316e86ec3e045fb1344acda9a869de44437d2",
           "quote": "additional commitments to date from investors including Santander Alternative Investments",
           "quote_hash": "d979a5971f22925fe5221ecf7317ff452d4fb0b8d42a5ac627e4bd40b1a156d4"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

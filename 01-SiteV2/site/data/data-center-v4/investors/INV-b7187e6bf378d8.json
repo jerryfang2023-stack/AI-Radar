@@ -139,30 +139,77 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "GeekWire 报道将 AI House 列为 Optimly $800,000 pre-seed 的参与方，并注明其为西雅图创业孵化器。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "更名及组织定位、投资方案均来自 AI House 官方页面；该 profile 记录其现行机构身份与投资方案，具体投资项目仍由独立融资活动记录承载。",
+      "summary": "AI House 官方公告称其由 AI2 Incubator 更名而来；官网介绍其为应用 AI 创业团队提供孵化，并披露 pre-seed 投资及最高 60 万美元、估值上限 1,000 万美元的现金支持。",
+      "facts": [
+        {
+          "field": "organization_history",
+          "label": "机构沿革",
+          "value": "原 AI2 Incubator 于 2026 年更名为 AI House",
+          "source_id": "PROFILE-B12-INV-b7187e6bf378d8-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed",
+          "source_id": "PROFILE-B12-INV-b7187e6bf378d8-3"
+        },
+        {
+          "field": "check_size",
+          "label": "官网披露的投资额度",
+          "value": "最高 $600,000（$10 million cap）",
+          "source_id": "PROFILE-B12-INV-b7187e6bf378d8-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "参与 Optimly $800,000 pre-seed。来源称 AI House 是创业孵化器，不据此扩展为独立基金。",
-          "source_id": "PROFILE-1a722ed50bdfb6ce7aa4"
-        },
         {
           "description": "融资来源记录：Optimly · 预种子轮 · 2026-07-08 · 本轮参投 · $800K。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3841e3507887d97d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://aihouse.vc/articles/the-next-chapter",
+          "source_id": "PROFILE-B12-INV-b7187e6bf378d8-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-1a722ed50bdfb6ce7aa4",
-          "source_url": "https://www.geekwire.com/2026/this-startup-lets-companies-teach-ai-about-their-brands-and-the-chatbots-are-listening/",
-          "source_title": "This startup lets companies teach AI about their brands — and the chatbots are listening",
-          "source_content_hash": "3877eaf920b96734ab40d9c196546edf35e92f3bd93242b4894b5cb5c6a550ab",
-          "quote": "000 pre-seed round that Optimly closed just recently. Also participating in the round were Mighty Capital and AI House, the Seattle startup incubator formerly known as AI2 Incubator.\n“The funny thing about winning at Flywheel is that it got us noticed by Seattle investors,” Luty explained. So even though she has decided to work out of AI House on Seattle’s P",
-          "quote_hash": "56ce7f94170e58f862f191afe3acd9c147a85d1b9a115adc2f263d77c85ad1bd"
+          "source_id": "PROFILE-B12-INV-b7187e6bf378d8-1",
+          "source_url": "https://aihouse.vc/articles/the-next-chapter",
+          "source_title": "AI2 Incubator Rebrands as AI House, Doubles Down on Seattle - AI House",
+          "source_content_hash": "ad7e8f503297bd6fb6b77763be6afc0f4bdf8d245f13db0c719f73f5fde10c99",
+          "quote": "Today, AI2 Incubator is becoming AI House",
+          "quote_hash": "972d8b10928e9da86251eb4c8e69ed5a6115eff2ee932b8450b117ddabfd8a4f"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b7187e6bf378d8-2",
+          "source_url": "https://aihouse.vc/incubator",
+          "source_title": "AI House Incubator",
+          "source_content_hash": "6be19e3938b1479f962f7e2ef11f14eddd7a9396ece1150a38030e1cd1c7f49a",
+          "quote": "The AI House Incubator helps founders build applied AI companies from the earliest stages.",
+          "quote_hash": "93c6d1b8723982819ececa0535750704a90c0dd71b59fd511c8c0a74ac53706a"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b7187e6bf378d8-3",
+          "source_url": "https://aihouse.vc/articles/the-next-chapter",
+          "source_title": "AI2 Incubator Rebrands as AI House, Doubles Down on Seattle - AI House",
+          "source_content_hash": "ad7e8f503297bd6fb6b77763be6afc0f4bdf8d245f13db0c719f73f5fde10c99",
+          "quote": "AI House Capital is where we write pre-seed checks into AI companies from our $80 million Fund III",
+          "quote_hash": "a016e5271e1ab9ce8a17790c698b7fc3d46fbac1c233da20141db6b2048e670d"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b7187e6bf378d8-4",
+          "source_url": "https://aihouse.vc/incubator",
+          "source_title": "AI House Incubator",
+          "source_content_hash": "6be19e3938b1479f962f7e2ef11f14eddd7a9396ece1150a38030e1cd1c7f49a",
+          "quote": "Cash investment Up to $600,000 in funding at a $10 million cap",
+          "quote_hash": "a257f1f8ff9be81b67883991bf42174ddf521b47771dbbca68e9aebd419dfb42"
         },
         {
           "source_id": "FISRC-3841e3507887d97d",
@@ -173,7 +220,7 @@
           "quote_hash": "e1e31cb866ac6b862b00785d75f304a319b3adf4d6b31ec1d63d8eec7fa1506a"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

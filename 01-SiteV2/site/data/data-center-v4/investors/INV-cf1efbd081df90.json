@@ -180,10 +180,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构概况来自公司官网；Prometheus 参与方信息来自 Multiples 二级数据库，具体法律实体和轮次角色未明确；Nvidia 债券角色来自 The Decoder 报道，不作为创业公司股权投资。",
+      "summary": "JPMorgan Chase 官网介绍其服务企业和个人客户，业务覆盖100多个国家。公开数据平台将 JPMorgan Chase 列入 Prometheus 一轮融资参与方，但未说明角色；另一篇报道将其列为 Nvidia 债券发行的承销管理银行之一。两种活动按股权融资参投与债券承销分别记录。",
+      "facts": [
+        {
+          "field": "company_profile",
+          "label": "公司官网披露的服务范围",
+          "value": "JPMorgan Chase 官网称其为企业和个人客户提供金融服务，服务覆盖100多个国家。",
+          "source_id": "PROFILE-COLLECT-INV-cf1efbd081df90-L-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -212,6 +219,14 @@
           "source_content_hash": "d1d8d65938b3e557bfbfdf110ffa3a2d36820a1140e4b733438737bc6cf2c319",
           "quote": "JPMorgan Chase, Morgan Stanley, and Goldman Sachs are among the banks managing the sale.",
           "quote_hash": "bedca6a5faa504970ac18d04c5590f3931153bc7e8cf49cb3dcaf62052477c13"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-cf1efbd081df90-L-3",
+          "source_url": "https://www.jpmorgan.com/about-us",
+          "source_title": "About us",
+          "source_content_hash": "c29be51d39377c305614a49a7d6a8e838f2a394aa55fb9df9ff2d4d61fa13552",
+          "quote": "We aim to be the most respected financial services firm in the world, serving corporations and individuals in more than 100 countries.",
+          "quote_hash": "055cc3aa2e75000d79fa67e05ee17771bdf53da5257b73b44f857e56f2c16d71"
         }
       ],
       "last_verified_at": "2026-10-03",

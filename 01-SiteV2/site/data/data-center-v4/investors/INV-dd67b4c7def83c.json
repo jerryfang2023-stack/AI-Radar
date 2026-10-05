@@ -140,29 +140,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合，也不推断来源未披露的法人或基金归属。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "企业背景来自官网简介；官网页尾标注版权年份2015–2020，不收录其办公室或联系方式作为现状。",
+      "summary": "千山资本官网将其定位为私募股权投资机构，介绍投资、投行和招商引资业务协同开展，并称专注股权投资、服务中国企业。2026年投资界融资报道列千山资本为星动纪元老股东之一并称其继续追加投资；官网版权信息较旧，未采用办公室等动态信息。",
+      "facts": [
+        {
+          "field": "investment_services",
+          "label": "业务（官网）",
+          "value": "投资、投行、招商引资三项业务协同开展",
+          "source_id": "B30-QIANSHAN-WEBSITE"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资定位（官网）",
+          "value": "专注股权投资，为中国企业服务",
+          "source_id": "B30-QIANSHAN-WEBSITE"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 星动纪元 本轮参投；仅记录来源直接支持的示例，不代表完整投资组合。",
+          "description": "投资界2026年报道列千山资本为星动纪元老股东并称其继续追加投资；报道未披露单家金额。",
+          "source_id": "B30-QIANSHAN-PEDAILY"
+        },
+        {
+          "description": "融资来源记录：星动纪元 · 轮次未披露 · 2026-07-06 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8c073d38e1f34758"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-8c073d38e1f34758",
+          "source_id": "B30-QIANSHAN-WEBSITE",
+          "source_url": "https://www.qianshancapital.com/",
+          "source_title": "千山资本官方网站",
+          "source_content_hash": "84d45fbbee4f802edb1331b0e4e4e7100093e1201f663d0649b2a23f6ac92caf",
+          "quote": "千山资本在北京、西安、神木、宿迁等地均设有办公室，公司在投资、投行、招商引资三项业务上协同发展",
+          "quote_hash": "322bbbd7d0ad64638cb2dd33b69dfefd85c93fc3877ad320ae08ce26b8843f5c"
+        },
+        {
+          "source_id": "B30-QIANSHAN-PEDAILY",
           "source_url": "https://news.pedaily.cn/202607/565883.shtml",
           "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场_投资界",
           "source_content_hash": "947b6977b7321ae4e42fd4808c6b95d8e0bfcf4cc9e390ec918986335e6072ee",
           "quote": "老股东厚雪资本、清控天诚、千山资本持续追加投资。",
           "quote_hash": "54ab0ad6e23513233ced0c8e50f16adbcb09ff8d47733787f9946eb54f682c51"
+        },
+        {
+          "source_id": "FISRC-8c073d38e1f34758",
+          "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+          "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+          "source_content_hash": "38b0d26a979c4a8e",
+          "quote": "老股东厚雪资本、清控天诚、千山资本持续追加投资。",
+          "quote_hash": "54ab0ad6e23513233ced0c8e50f16adbcb09ff8d47733787f9946eb54f682c51"
         }
       ],
-      "last_verified_at": "2026-10-04",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

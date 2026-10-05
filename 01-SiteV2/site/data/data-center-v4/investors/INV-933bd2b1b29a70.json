@@ -123,29 +123,43 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
+      "coverage_note": "履历仅包含一项公开职务及一项天使投资披露。",
+      "summary": "Anthropic 的公开活动页将 Adarsh Kulkarni 列为 Foundry Robotics CEO；Version One Ventures 的 Mowito 投资公告另将其列为个人天使投资者。现有来源不支持扩写其此前履历或教育经历。",
       "facts": [],
       "milestones": [],
-      "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动与明确署名的身份关联，不补写未经核实的职业经历或投资金额。",
-      "summary": "Version One Ventures 于 2026 年 7 月公布 Mowito 的 300 万美元 pre-seed 融资时，将 Adarsh Kulkarni（Foundry Robotics）列为个人天使投资者之一；未披露其个人出资额。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "当前公开资料仅支持 Version One Ventures 的 Mowito 投资公告中对 Adarsh Kulkarni 的具名列示及 Foundry Robotics 关联标注。",
       "track_record": [
         {
-          "description": "Version One Ventures 的 Mowito 融资公告将 Adarsh Kulkarni（Foundry Robotics）列为 300 万美元 pre-seed 轮的个人天使投资者之一；未披露其个人投资金额。",
-          "source_id": "mowito-adarsh-angel-2026"
+          "description": "Version One Ventures 将 Adarsh Kulkarni（Foundry Robotics）列为 Mowito 融资的个人天使投资者；来源未披露个人出资额。",
+          "source_id": "PROFILE-B13-INV-933bd2b1b29a70-2"
         },
         {
           "description": "融资来源记录：Mowito · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5667d54cc3421916"
         }
       ],
+      "current_roles": [
+        {
+          "title": "CEO",
+          "organization": "Foundry Robotics",
+          "source_id": "PROFILE-B13-INV-933bd2b1b29a70-1"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开资料确认其担任 Foundry Robotics CEO，并披露其曾以天使投资人身份参与 Mowito 融资。",
+      "contacts": [],
       "sources": [
         {
-          "source_id": "mowito-adarsh-angel-2026",
+          "source_id": "PROFILE-B13-INV-933bd2b1b29a70-1",
+          "source_url": "https://www.anthropic.com/events/claude-founder-house-san-francisco",
+          "source_title": "Claude Founder House San Francisco | Anthropic",
+          "source_content_hash": "e6a6f14747287ce740e6ebd00fb82880376fdf113c280bbc48043a1bb51eb2f6",
+          "quote": "Adarsh Kulkarni CEO, Foundry Robotics",
+          "quote_hash": "fb8d75e4402e47fd4b7210e00ff426029ec614ecc16a8fef4a5774ba2ada05a3"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-933bd2b1b29a70-2",
           "source_url": "https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing/",
           "source_title": "Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures",
           "source_content_hash": "59544b695ed6ee8218bc2d6f53d7b87188409de4e6d695ed8e107832954acc2f",
@@ -161,7 +175,7 @@
           "quote_hash": "e4135e332d37b9d3537f7d0afd52be9eed631285c4a2a1e7fc8ef9d278fc8fd4"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

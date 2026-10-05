@@ -140,57 +140,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "公司名称和证券简称依据巨潮资讯所载公司半年度报告；投资活动来自投资界报道，未披露出资金额或工具。",
-      "summary": "蓝思科技股份有限公司是深交所上市公司，证券代码 300433。投资界报道将蓝思科技列为星海图 B+ 轮产业投资方；本档案只记录该项公开活动。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "蓝思科技是以智能制造为驱动的智能终端精密制造企业。财新报道将蓝思科技列入星海图 20 亿元 B+ 轮投资方，并称其为星海图合作方及硬件供应链、大规模量产方。",
+      "coverage_note": "公司业务依据蓝思科技官网；融资关系依据财新报道。该轮总额为 20 亿元人民币，未披露蓝思科技单独出资额。",
       "facts": [
         {
-          "field": "legal_name",
-          "label": "巨潮资讯所载公司名称与证券简称",
-          "value": "蓝思科技股份有限公司，证券简称蓝思科技，证券代码 300433。",
-          "source_id": "PROFILE-6fc8003e7965cf5d16ca"
+          "field": "business_description",
+          "label": "公司官网披露业务定位",
+          "value": "以科技创新和智能智造为驱动的智能终端全栈式精密制造解决方案提供商。",
+          "source_id": "b35-lens-company"
+        },
+        {
+          "field": "strategic_cooperation",
+          "label": "公开报道披露的产业合作",
+          "value": "为星海图提供硬件供应链与大规模量产合作。",
+          "source_id": "b35-lens-xinghaitu-partner"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投资界报道将蓝思科技列入星海图 B+ 轮产业投资方；未披露金额。",
-          "source_id": "PROFILE-0bb0559df618bea6917f"
+          "description": "财新报道将蓝思科技列为星海图 B+ 轮投资方之一；未披露蓝思科技单独出资额。",
+          "source_id": "b35-lens-xinghaitu"
         },
         {
           "description": "融资来源记录：星海图 · B+轮 · 2026-04-02 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a614400d44a7041"
         }
       ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "公司年报",
-          "value": "蓝思科技股份有限公司 2026 年半年度报告摘要",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225491664.PDF",
-          "source_id": "PROFILE-6fc8003e7965cf5d16ca"
-        }
-      ],
+      "contacts": [],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
+      "experience_summary": "消费电子及智能终端产业链精密制造企业，公开资料显示其参与具身智能企业融资并开展供应链合作。",
       "sources": [
         {
-          "source_id": "PROFILE-6fc8003e7965cf5d16ca",
-          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225491664.PDF",
-          "source_title": "蓝思科技股份有限公司2026年半年度报告摘要",
-          "source_content_hash": "6efae3c57f96c3712461e74cf41721736e4ac8b05837294074440123b8fb1e47",
-          "quote": "蓝思科技股份有限公司 2026 年半年度报告摘要 证券代码：300433 证券简称：蓝思科技",
-          "quote_hash": "0fbaab1184c21b76a9ce78eff12907a478e99cec8dfc37348edd1c87b5f0b438"
+          "source_id": "b35-lens-company",
+          "source_url": "https://www.hnlens.com/category/about.html",
+          "source_title": "蓝思科技-公司介绍",
+          "source_content_hash": "26089193ef663fed61f06ef853b085a97cfa1363a085e7054a784a60ef014230",
+          "quote": "蓝思科技是以科技创新为核心、智能智造为驱动，业内领先的智能终端全栈式精密制造解决方案提供商。",
+          "quote_hash": "b2ff4dba205146190dd05b692505914ec6e53d84507208544d9c96dc6e1c1cbb"
         },
         {
-          "source_id": "PROFILE-0bb0559df618bea6917f",
-          "source_url": "https://news.pedaily.cn/202604/562366.shtml",
-          "source_title": "星海图又融资20亿，估值200亿_投资界",
-          "source_content_hash": "cc8e9b95d15c094ad4fb99ec61d5a8254cd9908e757dd28fb81147e2a8213ac4",
-          "quote": "华登科技、蓝思科技、矽芯投资、时代伯乐、航发基金等产业巨头",
-          "quote_hash": "5611fad94b66d75a05e003f36abef550d470513a780c07574174634457687201"
+          "source_id": "b35-lens-xinghaitu",
+          "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+          "source_title": "机器人公司星海图再获20亿元融资 估值超200亿元",
+          "source_content_hash": "7e11907a40f2a5ef582e7c2e42afeec8e6be5c3c53efbbd9a35a89bf2db9c9a5",
+          "quote": "参与投资的机构近20家，包括产业资本 华登科技 、 蓝思科技 、 矽芯投资",
+          "quote_hash": "dc589216b2de923480da11eb14fee9c69d8fb5055f0b7fae7df20ecb440b022c"
+        },
+        {
+          "source_id": "b35-lens-xinghaitu-scale",
+          "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+          "source_title": "机器人公司星海图再获20亿元融资 估值超200亿元",
+          "source_content_hash": "7e11907a40f2a5ef582e7c2e42afeec8e6be5c3c53efbbd9a35a89bf2db9c9a5",
+          "quote": "近日获20亿元B+轮融资，估值超200亿元。",
+          "quote_hash": "04d24f433754a5c38bdcec2f688cd2d64e805ed7f2ef1252fbb64bb25019ff27"
+        },
+        {
+          "source_id": "b35-lens-xinghaitu-partner",
+          "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+          "source_title": "机器人公司星海图再获20亿元融资 估值超200亿元",
+          "source_content_hash": "7e11907a40f2a5ef582e7c2e42afeec8e6be5c3c53efbbd9a35a89bf2db9c9a5",
+          "quote": "其中蓝思科技是星海图的合作方，蓝思为星海图硬件供应链和大规模量产方。",
+          "quote_hash": "5cb9a7239125edd48ca46dbd80d798103876440bd8d7973f045fadddeb3e7e1f"
         },
         {
           "source_id": "FISRC-7a614400d44a7041",
@@ -200,8 +215,7 @@
           "quote": "华登科技、蓝思科技、矽芯投资、时代伯乐、航发基金等产业巨头",
           "quote_hash": "5611fad94b66d75a05e003f36abef550d470513a780c07574174634457687201"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

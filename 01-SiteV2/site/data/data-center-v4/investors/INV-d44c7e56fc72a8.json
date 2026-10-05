@@ -395,10 +395,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体资料来自 36 氪机构档案（第三方）；页面未充分拆分的累计投资规模和项目数量未纳入，也不推断未披露的团队履历。",
+      "summary": "36 氪机构档案称星连资本由清华系资深团队创办，成立于 2021 年，定位为前沿科技早期投资机构，涉及 AI、芯片、算力、模型及应用层。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2021",
+          "source_id": "PROFILE-COLLECT-INV-d44c7e56fc72a8-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "前沿科技早期投资",
+          "source_id": "PROFILE-COLLECT-INV-d44c7e56fc72a8-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "人工智能、芯片、算力、模型及应用层",
+          "source_id": "PROFILE-COLLECT-INV-d44c7e56fc72a8-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -443,6 +462,22 @@
           "source_content_hash": "ad192fa38f112b71ff7752bed5fd1cf5c35f99cc3e3c1456831e510dcf2df57a",
           "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
           "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d44c7e56fc72a8-1",
+          "source_url": "https://www.36kr.com/organization/LINK_X_CAPITAL",
+          "source_title": "星连资本投资机构信息_36氪",
+          "source_content_hash": "06a180b3d96343bf350c9a76b9891309f6ac46812e84fc7298eafbc9b9f32e6c",
+          "quote": "星连资本是清华系资深团队创办的前沿科技早期投资机构，成立于2021年。",
+          "quote_hash": "ab64a483a423265e017044413ae4c1d32c64aa6d28f9c24bfd5094f87e2fbe8d"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d44c7e56fc72a8-2",
+          "source_url": "https://www.36kr.com/organization/LINK_X_CAPITAL",
+          "source_title": "星连资本投资机构信息_36氪",
+          "source_content_hash": "06a180b3d96343bf350c9a76b9891309f6ac46812e84fc7298eafbc9b9f32e6c",
+          "quote": "人工智能（泛AI） 芯片 算力 模型及应用层",
+          "quote_hash": "11fa5ec0317ba98a30c22d29f7ba28417276ad4e862a4d67d503630622dbafd5"
         },
         {
           "source_id": "FISRC-8f70de35939e4c3c",

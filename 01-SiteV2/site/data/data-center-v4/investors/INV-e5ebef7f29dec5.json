@@ -140,37 +140,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "蔚来资本官网称其为专业投资机构，关注低碳化、数字化、新能源、汽车及硬科技领域。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网列出的企业为部分投资项目，不视为完整投资组合。",
+      "summary": "蔚来资本官网介绍其成立于2016年，聚焦低碳化、数字化创新，重点投资新能源、汽车和硬科技，并列出若干投资项目。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2016年",
+          "source_id": "b32-nio-about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "低碳化",
+            "数字化",
+            "新能源",
+            "汽车",
+            "硬科技"
+          ],
+          "source_id": "b32-nio-about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将蔚来资本列为硅基流动相关融资的投资参与方。",
+          "description": "官网披露的投资项目包括宁德时代、容百科技等；该页面为所列项目示例，不代表完整投资组合。",
+          "source_id": "b32-nio-about"
+        },
+        {
+          "description": "蔚来资本官网将其列为硅基流动2026年融资的参与方。",
+          "source_id": "b32-nio-news"
+        },
+        {
+          "description": "融资来源记录：硅基流动 · B轮 · 2026-06-16 · 本轮联合投资 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-879cc82306af58a1"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-cad99634428e0361ee16",
+          "source_id": "b32-nio-about",
           "source_url": "https://niocapital.com/about",
           "source_title": "蔚来资本简介 - 关于我们 - NIO Capital",
           "source_content_hash": "713450449ffee4335af11de99a42ccac73c86c83448f942cc2311e8479a8018c",
-          "quote": "蔚来资本成立于2016年，是一家深耕产业的专业投资机构，聚焦低碳化、数字化的技术和模式创新所带来的产业变革，重点围绕新能源、汽车和硬科技领域投资。",
-          "quote_hash": "6e26bed1517f0c82c12d5f7ac65a2319fbe797593abf940b962b1b18215f9f28"
+          "quote": "蔚来资本成立于2016年，是一家深耕产业的专业投资机构，聚焦低碳化、数字化的技术和模式创新所带来的产业变革，重点围绕新能源、汽车和硬科技领域投资。投资项目包括宁德时代(300750.SZ)、容百科技(688005.SH)",
+          "quote_hash": "4b98e2c88f27b50ce151be6269289042a7c2d2906b84dada9afabb690d0e258d"
+        },
+        {
+          "source_id": "b32-nio-news",
+          "source_url": "https://niocapital.com/",
+          "source_title": "NIO Capital",
+          "source_content_hash": "b26be6da87895a307d7cc0ca39ca7428002ced650e9e351dfed3327a93802067",
+          "quote": "第三方MaaS平台「硅基流动」完成超20亿元融资，蔚来资本参与投资",
+          "quote_hash": "1511a5b19e773f601c81980880d2a17365dc1b31baff3c0d6d7e06f99a2f9072"
         },
         {
           "source_id": "FISRC-879cc82306af58a1",
           "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
-          "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”__财经头条",
-          "source_content_hash": "14a2ef39cb3ca39abef7dd53d2574aa95ed3b829fa60643e979daa0f17612c32",
+          "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”",
+          "source_content_hash": "f1654d9235cc7fa8",
           "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
           "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

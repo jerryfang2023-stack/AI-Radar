@@ -192,19 +192,25 @@
       }
     ],
     "public_profile": {
-      "summary": "上海小苗朗程投资管理有限公司曾负责紫竹小苗朗新基金的募集设立工作。园区官方2019年公告记录了其作为管理方启动基金募集的情况。",
+      "summary": "紫竹国家高新区官网披露，上海小苗朗程投资管理有限公司于2018年下半年启动紫竹小苗朗新基金募集，报道时基金总规模为人民币2亿元，已完成基金业协会备案并开始审议首批储备项目。档案将这些信息限定为该期基金设立情况。",
       "facts": [
         {
-          "field": "legal_name",
-          "label": "基金管理方",
-          "value": "上海小苗朗程投资管理有限公司。",
-          "source_id": "PROFILE-INV-4243b56be18a83-1"
+          "field": "fund_manager",
+          "label": "基金管理主体",
+          "value": "公告将上海小苗朗程投资管理有限公司列为紫竹小苗朗新基金的募集发起管理方。",
+          "source_id": "PROFILE-COLLECT-INV-4243b56be18a83-1"
         },
         {
-          "field": "fund_activity",
-          "label": "公开活动",
-          "value": "园区公告记载其启动紫竹小苗朗新基金募集设立，该基金完成备案并审议首批储备项目投资。",
-          "source_id": "PROFILE-INV-4243b56be18a83-2"
+          "field": "fund_size",
+          "label": "紫竹小苗朗新基金规模",
+          "value": "公告披露该基金总规模人民币2亿元。",
+          "source_id": "PROFILE-COLLECT-INV-4243b56be18a83-2"
+        },
+        {
+          "field": "fund_registration",
+          "label": "备案与初期投资进程",
+          "value": "公告称基金完成中基协备案并审议首批储备项目。",
+          "source_id": "PROFILE-COLLECT-INV-4243b56be18a83-3"
         }
       ],
       "milestones": [],
@@ -220,24 +226,16 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "只记录园区官方公告所载2018—2019年具体基金设立活动；不据此推断该管理人当前的基金规模、团队或投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "管理主体、募集进程和规模均据紫竹国家高新技术产业开发区官网历史公告；2亿元指紫竹小苗朗新基金，不代表小苗朗程当前总管理规模。",
       "current_roles": [],
       "career": [],
       "education": [],
       "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "园区官方公告",
-          "value": "紫竹国家高新技术产业开发区",
-          "url": "https://www.zizhupark.cn/news/view/3636",
-          "source_id": "PROFILE-INV-4243b56be18a83-1"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-INV-4243b56be18a83-1",
+          "source_id": "PROFILE-COLLECT-INV-4243b56be18a83-1",
           "source_url": "https://www.zizhupark.cn/news/view/3636",
           "source_title": "紫竹小苗朗新基金完成募集设立及备案工作 - 紫竹国家高新技术产业开发区",
           "source_content_hash": "48b47e0fdf5d6517e2c117d93f1643e431a4d7c84d78f9a37904045f8a1741c5",
@@ -245,12 +243,20 @@
           "quote_hash": "d51cfda63077a55bcd0f9d481a4021628119d75946d9d50f3e98954103e880b5"
         },
         {
-          "source_id": "PROFILE-INV-4243b56be18a83-2",
+          "source_id": "PROFILE-COLLECT-INV-4243b56be18a83-2",
           "source_url": "https://www.zizhupark.cn/news/view/3636",
           "source_title": "紫竹小苗朗新基金完成募集设立及备案工作 - 紫竹国家高新技术产业开发区",
           "source_content_hash": "48b47e0fdf5d6517e2c117d93f1643e431a4d7c84d78f9a37904045f8a1741c5",
-          "quote": "紫竹小苗朗新基金已完成中国证券投资基金业协会备案等工作，并于近期进行了首批储备项目的投决会审议与投资",
-          "quote_hash": "40c5f46dd8e8566913b8715dbd3fcaeec7533578f86eb08e74b76c922fb5f5cf"
+          "quote": "目前，总规模2亿元的紫竹小苗朗新基金已经完成工商注册及变更",
+          "quote_hash": "18b754118d00cb673bb38b048f626326d633b6fb88ad9336350f01c7ef8223db"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-4243b56be18a83-3",
+          "source_url": "https://www.zizhupark.cn/news/view/3636",
+          "source_title": "紫竹小苗朗新基金完成募集设立及备案工作 - 紫竹国家高新技术产业开发区",
+          "source_content_hash": "48b47e0fdf5d6517e2c117d93f1643e431a4d7c84d78f9a37904045f8a1741c5",
+          "quote": "截至目前，紫竹小苗朗新基金已完成中国证券投资基金业协会备案等工作，并于近期进行了首批储备项目的投决会审议与投资。",
+          "quote_hash": "961e1e9d0744d0388467a79259010bbc97632f2c073c8ad087c86f436b6ca4a6"
         },
         {
           "source_id": "FISRC-7c0e1d89cdf9af82",

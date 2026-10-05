@@ -245,25 +245,25 @@
       }
     ],
     "public_profile": {
-      "summary": "洪山资本对应武汉洪创投资管理有限公司；武汉市政府转载报道明确将该简称用于该公司，政府投资资讯另披露其推进洪山区科技专项资金“先投后股”项目。",
+      "summary": "武汉市政府转载的长江日报报道将洪山资本对应为武汉洪创投资管理有限公司；武汉市投资促进局随后报道其推进第五批“先投后股”项目并聚焦人工智能、泛半导体和量子科技。",
       "facts": [
         {
-          "field": "legal_entity",
-          "label": "武汉市人民政府门户网站",
-          "value": "武汉洪创投资管理有限公司，报道明确简称“洪山资本”。",
-          "source_id": "PROFILE-INV-a6d4d78c551195-1"
+          "field": "legal_name",
+          "label": "政府报道中的主体对应",
+          "value": "武汉市政府页面将武汉洪创投资管理有限公司称作洪山资本。",
+          "source_id": "PROFILE-COLLECT-INV-a6d4d78c551195-1"
         },
         {
           "field": "investment_activity",
-          "label": "武汉市投资促进局",
-          "value": "推进洪山区科技专项资金第五批“先投后股”项目；当批拟支持3个初创科技企业项目。",
-          "source_id": "PROFILE-INV-a6d4d78c551195-2"
+          "label": "官方项目动态",
+          "value": "武汉市投资促进局报道洪山资本推进第五批“先投后股”项目。",
+          "source_id": "PROFILE-COLLECT-INV-a6d4d78c551195-2"
         },
         {
           "field": "investment_focus",
-          "label": "武汉市投资促进局",
-          "value": "官方资讯称其聚焦人工智能、泛半导体、量子科技等硬科技方向。",
-          "source_id": "PROFILE-INV-a6d4d78c551195-2"
+          "label": "官方投资方向",
+          "value": "武汉市投资促进局列出人工智能、泛半导体、量子科技等重点方向。",
+          "source_id": "PROFILE-COLLECT-INV-a6d4d78c551195-3"
         }
       ],
       "milestones": [],
@@ -275,37 +275,37 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅覆盖洪山资本对应主体及已披露的区域产业基金/先投后股投资活动，不概括为独立市场化VC。",
+      "coverage_status": "researched",
+      "coverage_note": "法律名称对应关系和投资平台活动分别据武汉市政府、武汉市投资促进局页面；不将区级基金品牌等同于某只基金。",
       "current_roles": [],
       "career": [],
       "education": [],
       "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "政府投资资讯",
-          "value": "洪山资本",
-          "url": "https://tc.wuhan.gov.cn/tzwh/tzzx/202606/t20260611_2776080.shtml?source_capture=2026-10-03&cycle=16",
-          "source_id": "PROFILE-INV-a6d4d78c551195-1"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-INV-a6d4d78c551195-1",
-          "source_url": "https://www.wuhan.gov.cn/whyw/gqdt/202506/t20250623_2599196.shtml?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-COLLECT-INV-a6d4d78c551195-1",
+          "source_url": "https://www.wuhan.gov.cn/whyw/gqdt/202506/t20250623_2599196.shtml",
           "source_title": "百亿级早期基金群抢滩环大学创新带 洪山产业基金6年孕育22粒“金种子” - 武汉市人民政府门户网站",
           "source_content_hash": "bd3d900298a7c75a56b87c1f2b461f17a8f60b696cb046b57d75d09d2bd51997",
           "quote": "武汉洪创投资管理有限公司（以下简称洪山资本）",
           "quote_hash": "1ff42b2fc842239a174a8fb714da5013f1358b911b9ac3624f15c5a747e43242"
         },
         {
-          "source_id": "PROFILE-INV-a6d4d78c551195-2",
-          "source_url": "https://tc.wuhan.gov.cn/tzwh/tzzx/202606/t20260611_2776080.shtml?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-COLLECT-INV-a6d4d78c551195-2",
+          "source_url": "https://tc.wuhan.gov.cn/tzwh/tzzx/202606/t20260611_2776080.shtml",
           "source_title": "洪山区“先投后股”第五批项目落地，海内外高端人才硬科技项目加速集聚 - 武汉市投资促进局 武汉市政务服务局",
           "source_content_hash": "8defb3b107c1e2bc8457c5823dd9daf0907b218278bfd62c91b42cd2702f3c70",
           "quote": "近日，洪山资本完成洪山区科技专项资金第五批“先投后股”项目的全流程推进工作",
           "quote_hash": "21f292c4d4091dfab065dd0ccc98d7d60d41e15f7e63705586aa34e7c38714a1"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-a6d4d78c551195-3",
+          "source_url": "https://tc.wuhan.gov.cn/tzwh/tzzx/202606/t20260611_2776080.shtml",
+          "source_title": "洪山区“先投后股”第五批项目落地，海内外高端人才硬科技项目加速集聚 - 武汉市投资促进局 武汉市政务服务局",
+          "source_content_hash": "8defb3b107c1e2bc8457c5823dd9daf0907b218278bfd62c91b42cd2702f3c70",
+          "quote": "洪山资本持续聚焦硬科技赛道，重点布局人工智能、泛半导体、量子科技等前沿核心赛道",
+          "quote_hash": "540a33f8dc9daaf72bb4a5950b47aba11a0b605d54520381a7ae96d9ec2e20b3"
         },
         {
           "source_id": "FISRC-fecad8ccb9a84a39",
@@ -316,7 +316,7 @@
           "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

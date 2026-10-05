@@ -139,33 +139,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网支持其消费级光储业务和上市信息；融资案例来自投资界报道，轮次总额不等于该机构单独出资额。",
+      "summary": "华宝新能运营 Jackery 电小二消费级光储业务，官网称产品覆盖户外与家庭绿色用电场景，并记载其于 2022 年在深交所创业板上市。投资界报道其领投 Noumena 数千万元战略融资；未披露华宝新能单独出资额。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "业务",
+          "value": "运营 Jackery 电小二光充储能品牌，覆盖户外及家庭绿色用电场景。",
+          "source_id": "huabao_site"
+        },
+        {
+          "field": "listing",
+          "label": "上市信息",
+          "value": "2022 年 9 月在深交所创业板上市，股票代码 SZ301327。",
+          "source_id": "huabao_site"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 物自体科技 战略融资 本轮领投。",
+          "description": "投资界报道华宝新能领投物自体科技（Noumena）数千万元战略融资；报道未说明其单独出资额。",
+          "source_id": "huabao_deal"
+        },
+        {
+          "description": "融资来源记录：物自体科技 · 战略融资 · 2026-09-03 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4c6320de89936c7b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.hello-tech.com/",
+          "url": "https://www.hello-tech.com/",
+          "source_id": "huabao_site"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-4c6320de89936c7b",
+          "source_id": "huabao_site",
+          "source_url": "https://www.hello-tech.com/",
+          "source_title": "华宝新能",
+          "source_content_hash": "c00237e5e28cb165c5c100be84f7ef32b10c3782c243e2a90d72afd5e18a0c2a",
+          "quote": "全面覆盖从户外到家庭的绿色用电场景",
+          "quote_hash": "c04b7192d6b6615056d56b9916734be79945a89d8506801476a2780e8d9f56a2"
+        },
+        {
+          "source_id": "huabao_listing",
+          "source_url": "https://www.hello-tech.com/",
+          "source_title": "华宝新能",
+          "source_content_hash": "c00237e5e28cb165c5c100be84f7ef32b10c3782c243e2a90d72afd5e18a0c2a",
+          "quote": "华宝新能于2022年9月在中国创业板挂牌上市（SZ301327）",
+          "quote_hash": "2b2c80303b33e43b8bc536bfb4736c44e047c0b896726626426d19e4fe0cb40d"
+        },
+        {
+          "source_id": "huabao_deal",
           "source_url": "https://news.pedaily.cn/202609/568487.shtml",
           "source_title": "首发| 物自体科技完成新一轮战略融资，以 BOOT 推动企业级 AI 营销从工具走向增长系统_投资界",
           "source_content_hash": "1752b15474463a264f7a8eaf2f60062301830ec8a66efac302bf7f090753dd84",
+          "quote": "由全球便携储能与消费级光储龙头企业 华宝新能领投",
+          "quote_hash": "47b8f52cba0c2abf87a190259fd331f8ca88692e3bedcf29219f70c5696142bb"
+        },
+        {
+          "source_id": "FISRC-4c6320de89936c7b",
+          "source_url": "https://news.pedaily.cn/202609/568487.shtml",
+          "source_title": "「首发」物自体科技完成新一轮战略融资，以 BOOT 推动企业级 AI 营销从工具走向增长系统",
+          "source_content_hash": "4aab0c4984cc55f6",
           "quote": "近日，物自体科技（Noumena）宣布获得新一轮 战略融资数千万元 ，由全球便携储能与消费级光储龙头企业 华宝新能领投 。",
           "quote_hash": "d420a31ec41c2ba71e2009a9b16e897d9e0ed2048bc3764764b4e80431d0fc74"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

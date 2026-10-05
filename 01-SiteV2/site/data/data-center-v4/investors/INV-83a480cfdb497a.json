@@ -188,10 +188,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "GMI Cloud 融资公告将 Trend Micro 列为本轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "2017年基金设立信息来自 Trend Micro 官方新闻稿；近期融资参与来自被投企业公告。未把历史基金初始规模写成当前管理规模。",
+      "summary": "Trend Micro 官网2017年新闻稿披露公司发起初始投资额1亿美元的企业风险投资基金，这是有明确日期的历史信息。GMI Cloud 2026年融资公告将 Trend Micro 列为投资方；两项记录不代表该历史基金目前仍按原规模运营。",
+      "facts": [
+        {
+          "field": "historical_corporate_venture_fund",
+          "label": "2017年官方披露的企业风投基金",
+          "value": "Trend Micro 于2017年宣布设立初始投资额为1亿美元的企业风险投资基金。",
+          "source_id": "PROFILE-COLLECT-INV-83a480cfdb497a-H-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -218,6 +225,14 @@
           "quote_hash": "e5b6e129548c0493389ca6b6252fcf31c2bc2be7618fa12a6fae11cd9f637ef8"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-83a480cfdb497a-H-2",
+          "source_url": "https://www.trendmicro.com/en/about/newsroom/local-press-releases/hk/2017/2017-06-27.html",
+          "source_title": "Trend Micro Launches New $100 Million Venture Fund | Trend Micro",
+          "source_content_hash": "3b732a6aff0fca8badc9d18b674518facbdc7f9c6c885b4580c891584b9c4586",
+          "quote": "With an initial investment of $100 million, this venture fund will allow Trend Micro to nurture a portfolio of startups",
+          "quote_hash": "4d692b4e8b7bd9de7e0b6fa790f60450e2eb1579a3f255b643aa8a8f41d938b9"
+        },
+        {
           "source_id": "FISRC-cf3eb2b83c7e750b",
           "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
           "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
@@ -234,7 +249,7 @@
           "quote_hash": "57d129887176732facc5235cc0ab30eac4060c64a8586df4d5578d6ee22ec3c5"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

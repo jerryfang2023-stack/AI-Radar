@@ -302,19 +302,38 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "松应科技 A 轮/A1 轮融资报道将上海天使会列为跟投机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "平台性质和服务内容来自上海市政府页面；具体融资名单来自媒体报道。平台服务、会员联合投资和平台自身出资须区分。",
+      "summary": "上海市政府将上海天使会定义为专业化天使投资服务平台，公开介绍其提供硬科技早期投融资信息服务及“领投—跟投”信息服务。松应科技融资报道将上海天使会列为跟投机构；现有披露不足以确认其自身基金或法律主体直接出资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "平台性质",
+          "value": "上海天使会是专业化天使投资服务平台。",
+          "source_id": "PROFILE-COLLECT-INV-93f1a68c693363-1"
+        },
+        {
+          "field": "service_scope",
+          "label": "服务范围",
+          "value": "平台提供硬科技早期投融资信息服务，并以“领投—跟投”信息服务连接投资人与项目。",
+          "source_id": "PROFILE-COLLECT-INV-93f1a68c693363-2"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资报道",
+          "value": "媒体报道将上海天使会列为松应科技融资跟投方；未确认具体出资法律主体。",
+          "source_id": "PROFILE-COLLECT-INV-93f1a68c693363-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "松应科技融资报道将上海天使会列入跟投的财务和产业机构。",
-          "source_id": "FISRC-1ae72db61aa80327"
-        },
-        {
           "description": "融资来源记录：息壤开物 · 多轮融资 · 2026-09-23 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-41f074703465b30a"
+        },
+        {
+          "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1ae72db61aa80327"
         },
         {
           "description": "融资来源记录：以太之心 · 种子轮 · 2026-08-31 · 本轮参投 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
@@ -324,10 +343,26 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-1ae72db61aa80327",
+          "source_id": "PROFILE-COLLECT-INV-93f1a68c693363-1",
+          "source_url": "https://www.shanghai.gov.cn/nw4411/20250706/9a98f789abf8473195de3aa0e8b72e1a.html?siteId=1",
+          "source_title": "最前端到最末环 发力科创直接融资 上海股权投资基金募资增量显著 百亿国资撬动五倍社会资本",
+          "source_content_hash": "22f0854ceef3584998ae80bb59e3bf585bc220f2aa5cfe67b1030feb0f99ffb8",
+          "quote": "上海打造了专业化天使投资服务平台——上海天使会。",
+          "quote_hash": "df021c293e6d38834ab7c27e47b476473ece2d855e706414d9a76d05f6ab0b22"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-93f1a68c693363-2",
+          "source_url": "https://www.shanghai.gov.cn/nw4411/20250706/9a98f789abf8473195de3aa0e8b72e1a.html?siteId=1",
+          "source_title": "最前端到最末环 发力科创直接融资 上海股权投资基金募资增量显著 百亿国资撬动五倍社会资本",
+          "source_content_hash": "22f0854ceef3584998ae80bb59e3bf585bc220f2aa5cfe67b1030feb0f99ffb8",
+          "quote": "上海天使会搭建了一个提供硬科技早期投融资信息服务的平台",
+          "quote_hash": "2934afbbf53dc72840a09d8b4572abd3e1d48f86bb87fc15fcb7068cb464dc10"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-93f1a68c693363-3",
           "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
           "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」_仿真_中试基地_操作系统",
-          "source_content_hash": "3ba47ecf8f13a45cf67e24606ed4f7eead13a20ac58c345854f9e382e9275029",
+          "source_content_hash": "ae9425d66cf205e2f679ee1e09ef8c9a0f18e337782d5f6dc5c504aa0eb21f9b",
           "quote": "8-31 16:30 点击查看更多订阅内容> 公司情报专家《财经涂鸦》获悉，近日，物理AI操作系统领军企业松应科技正式宣布连续完成数亿元A轮、A1轮融资。 本轮由中金资本、武汉洪山资本领投，尚融资本、澳盛科技、高信资本、上海天使会、风语筑、乔贝资本等知名财务和产业机构跟投，中新基金等老股东超额加注。所获资金将重点投向ORCA OS物理AI操作系统的持续迭代、国产芯片生态的深度适配、开发者生态建设，以及重点产业场景的规模化落地。 这是松应科技今年 半年内完成的第三轮融资。 据松应科技公众号，今年2月，公司曾宣布连续完成 Pre-A、Pre-A+ 轮融资，由典实资本、易方达私募领投，丹贝资本、中新资本等跟投，一年左右时间累计融资额达数亿元人民币。资金主要用于 ORCA 物理A",
           "quote_hash": "e8bccd8ae27c26e0aecf025ca71473e649002cbefc5d0929c8dbba77a7d2ecdf"
         },
@@ -340,6 +375,14 @@
           "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
         },
         {
+          "source_id": "FISRC-1ae72db61aa80327",
+          "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+          "source_content_hash": "74d6b0dda1bd2148",
+          "quote": "尚融资本、澳盛科技、高信资本、上海天使会、风语筑、乔贝资本等知名财务和产业机构跟投",
+          "quote_hash": "cfb09d31f4e2f345e414820b4806243896f0671821613a5ee1f48e5dfbed164a"
+        },
+        {
           "source_id": "FISRC-1a358dfcb10fed1c",
           "source_url": "https://www.stcn.com/article/detail/4165239.html",
           "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
@@ -348,7 +391,7 @@
           "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

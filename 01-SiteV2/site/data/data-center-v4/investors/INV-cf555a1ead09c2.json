@@ -139,33 +139,102 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "已核验机构公开名称、成立年份及Starcloud投资活动；所列案例不代表完整投资组合。",
+      "summary": "Seven Seven Six（776）是一家由创始人建立、向创业公司部署风险资本的风险投资机构；机构页面列明成立于2020年。其官方账号自述参与Starcloud融资，另有公开融资报道将“776”列入Starcloud一轮融资的参与方。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资定位",
+          "value": "Technology company that deploys venture capital.",
+          "source_id": "B23-776-LINKEDIN"
+        },
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2020",
+          "source_id": "B23-776-FOUNDED"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Starcloud A轮扩展 本轮参投。",
+          "description": "Seven Seven Six 官方 LinkedIn 自述向 Starcloud 投入数百万美元；TechCrunch 将“776”列为 Starcloud A 轮扩展的参与方。",
+          "source_id": "B23-776-LINKEDIN-STARcloud"
+        },
+        {
+          "description": "TechCrunch 报道将 776 列为 Starcloud A 轮扩展的参与方；该公开案例不代表完整投资组合。",
+          "source_id": "B23-776-TECHCRUNCH"
+        },
+        {
+          "description": "融资来源记录：Starcloud · A轮扩展 · 2026-08-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05f582b31c0a37a3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://sevensevensix.com/",
+          "url": "https://sevensevensix.com/",
+          "source_id": "B23-776-WEBSITE"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_id": "B23-776-LINKEDIN",
+          "source_url": "https://www.linkedin.com/company/sevensevensix/",
+          "source_title": "Seven Seven Six 7️⃣7️⃣6️⃣ | LinkedIn",
+          "source_content_hash": "ad26134a8d86e8fdf27d71be8753ab96e76c6608e8225727a46431d71f4e412f",
+          "quote": "Technology company that deploys venture capital.",
+          "quote_hash": "6bea6d28b8b0a6702de6d071ab6789d494e980db84dd7e5280db57729186a6c9"
+        },
+        {
+          "source_id": "B23-776-LINKEDIN-STARcloud",
+          "source_url": "https://www.linkedin.com/company/sevensevensix/",
+          "source_title": "Seven Seven Six 7️⃣7️⃣6️⃣ | LinkedIn",
+          "source_content_hash": "ad26134a8d86e8fdf27d71be8753ab96e76c6608e8225727a46431d71f4e412f",
+          "quote": "Starcloud's answer is to put the data centers in orbit. That's why we invested millions of dollars at a time when the consensus-view in tech was that it would never work.",
+          "quote_hash": "a4f075dafbb9129da1a6c7d105dd892d55aa7dc4179fd4930cfc796d4b93c18c"
+        },
+        {
+          "source_id": "B23-776-TECHCRUNCH",
           "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
           "source_title": "Starcloud raises $250 million for orbital data centers as launch options dry up | TechCrunch",
           "source_content_hash": "a5f0517463ab3ed8eb4861c3580575330df858848bdc1424454207cc9c3f30dc",
           "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
           "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        },
+        {
+          "source_id": "B23-776-FOUNDED",
+          "source_url": "https://www.linkedin.com/company/sevensevensix/",
+          "source_title": "Seven Seven Six 7️⃣7️⃣6️⃣ | LinkedIn",
+          "source_content_hash": "ad26134a8d86e8fdf27d71be8753ab96e76c6608e8225727a46431d71f4e412f",
+          "quote": "Founded 2020",
+          "quote_hash": "92273227888052b63ca38f60e9db68517d956edb3b47357b3d149771fc771bff"
+        },
+        {
+          "source_id": "B23-776-WEBSITE",
+          "source_url": "https://www.linkedin.com/company/sevensevensix/",
+          "source_title": "Seven Seven Six 7️⃣7️⃣6️⃣ | LinkedIn",
+          "source_content_hash": "ad26134a8d86e8fdf27d71be8753ab96e76c6608e8225727a46431d71f4e412f",
+          "quote": "Website http://sevensevensix.com",
+          "quote_hash": "6033337b66f0fa88010384b9215ccb689993acf9ccb23d0a050b13fa68327652"
+        },
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "Seven Seven Six（776）是一家由创始人建立、向创业公司部署风险资本的早期投资机构；机构页面列明成立于2020年。其官方账号自述参与Starcloud融资，另有公开融资报道将“776”列入Starcloud一轮融资的参与方。"
     }
   }
 }

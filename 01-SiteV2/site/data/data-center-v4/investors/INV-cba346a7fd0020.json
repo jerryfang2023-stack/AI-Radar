@@ -139,50 +139,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "交易关系依据渶策资本官网的被投企业公告；Luminous Ventures 官网显示同名基金专注医疗与生命科学。档案按公告使用的名称记录，不推断投资额或法律主体。",
-      "summary": "华深智药及其投资方渶策资本的公告称，公司在多轮融资中累计募资 7.87 亿美元，并将 Luminous Ventures 列为本次公告披露的投资方之一。未披露该机构的单独出资额或具体基金载体。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Luminous Ventures 英文官网及其同一官网的中文页面分别使用 Luminous Ventures 与光合创投品牌，后者定位于中国早期及成长期科技投资。渶策资本的华深智药融资公告将 Luminous Ventures 列为投资方；该公告没有给出其单独出资额。此处按官网同域中英文品牌及该中国融资语境对应光合创投，不对其他同名投资机构作合并。",
+      "summary": "Luminous Ventures 的官网中英文页面分别使用 Luminous Ventures 与光合创投（光速光合）名称，中文页面将其定位为专注中国市场的早期及成长期科技基金。渶策资本关于华深智药融资的公告将 Luminous Ventures 列为本轮投资方之一，未披露该机构单独出资额。",
+      "facts": [
+        {
+          "field": "brand_and_focus",
+          "label": "官网品牌与投资方向",
+          "value": "官网英文页面使用 Luminous Ventures 品牌；同域中文页面称光合创投（光速光合）专注中国市场的早期和成长期投资。",
+          "source_id": "luminous_brand_en"
+        },
+        {
+          "field": "china_focus",
+          "label": "中文官网定位",
+          "value": "中文官网将光合创投（光速光合）定位为专注中国市场、覆盖早期和成长期的创业投资基金。",
+          "source_id": "luminous_brand_cn"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "渶策资本官网将 Luminous Ventures 列入华深智药 7.87 亿美元累计融资公告所列的本轮投资方；该金额是公司多轮累计融资披露，不是 Luminous Ventures 的个人或单独出资额。",
-          "source_id": "earendil-luminous-ventures-2026"
+          "description": "渶策资本发布的华深智药融资公告将 Luminous Ventures 列为本轮投资方之一；未披露该机构单独出资额。",
+          "source_id": "huashen_series_c"
         },
         {
           "description": "融资来源记录：华深智药 · 多轮融资 · 2026-03-25 · 本轮参投 · 7.87亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-972ef11d09af7ec8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Luminous Ventures 官网",
+          "value": "英文主页",
+          "url": "https://www.luminousvc.com/index?j=1",
+          "source_id": "luminous_brand_en"
+        },
+        {
+          "kind": "website",
+          "label": "光合创投官网",
+          "value": "中文主页",
+          "url": "https://luminousvc.com/cn",
+          "source_id": "luminous_brand_cn"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "交易关系依据渶策资本官网的被投企业公告；Luminous Ventures 官网显示同名基金专注医疗与生命科学。档案按公告使用的名称记录，不推断投资额或法律主体。",
+      "experience_summary": "官网确认中英文品牌页和中国投资定位，投资关系来自共同投资方渶策资本的融资公告；按整轮披露，不推定单家出资额。",
       "sources": [
         {
-          "source_id": "earendil-luminous-ventures-2026",
-          "source_url": "https://www.incecap.com.cn/news/detail/268",
-          "source_title": "新闻动态-渶策资本官网",
+          "source_id": "luminous_brand_en",
+          "source_url": "https://www.luminousvc.com/index?j=1",
+          "source_title": "Luminous Ventures | Innovators' Global Partner",
+          "source_content_hash": "e3f34375067d9e56e70868f003b4908acfd418d15e44490d524f18e540f5b096",
+          "quote": "Luminous Ventures is a leading venture capital firm focusing on supporting top startups in early and growth stages.",
+          "quote_hash": "f85def6c302450535541010552eb8033e1544ab7028230c3766aa8368e08c020"
+        },
+        {
+          "source_id": "luminous_brand_cn",
+          "source_url": "https://luminousvc.com/cn",
+          "source_title": "光合创投 | 光合创业投资基金官网",
+          "source_content_hash": "1ad122fe971b75b93f0a8790a26ae11fdd02dad83883a876950ba97185256ab7",
+          "quote": "光合创投（光速光合）是一家专注于中国市场的创业投资基金",
+          "quote_hash": "9e7616653d939217a053e76d2d2c0d9c5114504cdd80eb4926ef6d19ad0685ec"
+        },
+        {
+          "source_id": "huashen_series_c",
+          "source_url": "https://incecap.com.cn/news/detail/268",
+          "source_title": "华深智药完成7.87亿美元融资，刷新2026生物科技公司融资记录",
           "source_content_hash": "8db76bb9b75b6d9bcd340da0f74c6066d5a68e52b36ea779090b7ad623009361",
           "quote": "本轮投资方包括一批全球领先机构，如Dimension Capital、DST Global、INCE Capital、Luminous Ventures",
           "quote_hash": "821922c3bc6ef84b4d0149bf556ed86a87208d29001a24418a0f6a2cc4037dc6"
-        },
-        {
-          "source_id": "luminous-ventures-identity-about",
-          "source_url": "https://www.luminous.vc/",
-          "source_title": "Luminous Ventures",
-          "source_content_hash": "67d2e8d79a6aded658eb1431571ac9698d03439bb882968b51b5d751f879b6b3",
-          "quote": "Luminous Ventures is a London-based fund investing in Deep Tech",
-          "quote_hash": "ca55b2c35c93d85a65184dd29abf671475559b928653996b92047cc96c8ae288"
-        },
-        {
-          "source_id": "luminous-ventures-identity-sector",
-          "source_url": "https://www.luminous.vc/",
-          "source_title": "Luminous Ventures",
-          "source_content_hash": "67d2e8d79a6aded658eb1431571ac9698d03439bb882968b51b5d751f879b6b3",
-          "quote": "healthcare & life sciences",
-          "quote_hash": "5cda8b51c988b289839cadb55900944118f381a07fce188d9e5f145709726637"
         },
         {
           "source_id": "FISRC-972ef11d09af7ec8",
@@ -193,7 +221,7 @@
           "quote_hash": "50bd19105aa4ddc094866c630fa8f02864547d64102bd3c4636c35e7ee64bb72"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

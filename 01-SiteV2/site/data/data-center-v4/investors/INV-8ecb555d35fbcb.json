@@ -140,26 +140,27 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动与明确署名的身份关联，不补写未经核实的职业经历或投资金额。",
-      "summary": "Foreword 官网将 Declan Kelly 列为 Founder & General Partner；Archestra 于 2026 年 6 月公布 1,000 万美元种子轮，并将他列入个人支持者名单之一。未披露其个人投资额。",
-      "current_roles": [
+      "coverage_status": "researched",
+      "facts": [
         {
-          "title": "Founder & General Partner",
-          "organization": "Foreword",
-          "source_id": "foreword-declan-role"
+          "field": "reported_current_role",
+          "label": "Foreword 官网披露的职务",
+          "value": "Foreword 官网将 Declan Kelly 列为 Founder & General Partner。",
+          "source_id": "PROFILE-B7-INV-8ecb555d35fbcb-1"
         }
       ],
+      "milestones": [],
+      "contacts": [],
+      "coverage_note": "当前职位来自 Foreword 官网；个人参与活动及其披露身份来自 Archestra 官方公告。",
+      "summary": "Foreword 官网将 Declan Kelly 列为 Founder & General Partner；Archestra 官方 2026 年 6 月种子轮公告将“Declan Kelly (Founder & GP at Foreword)”列为个人支持者之一。未披露其个人投资金额。",
+      "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "Foreword 官网确认其职务。Archestra 的公司公告确认其参与该轮；公告未披露个人出资金额。",
+      "experience_summary": "",
       "track_record": [
         {
-          "description": "Archestra 于 2026 年 6 月公布 1,000 万美元种子轮，并将 Declan Kelly 列为参与者之一；公司未披露其个人投资额。",
-          "source_id": "archestra-declan-seed-2026"
+          "description": "Archestra 官方公告将 Declan Kelly（Founder & GP at Foreword）列为 1000 万美元种子轮个人支持者之一；未披露个人投资额。",
+          "source_id": "PROFILE-B7-INV-8ecb555d35fbcb-2"
         },
         {
           "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -168,7 +169,7 @@
       ],
       "sources": [
         {
-          "source_id": "foreword-declan-role",
+          "source_id": "PROFILE-B7-INV-8ecb555d35fbcb-1",
           "source_url": "https://foreword.vc/",
           "source_title": "Foreword",
           "source_content_hash": "ff6a789b2834ddb3b3bc3eab9df2f66132a8b5ba160d18faf6ce11c9260c49a3",
@@ -176,7 +177,7 @@
           "quote_hash": "b9f51bc23e0d8aaa227c75aefcbc3843da9b17144d8cf2e278e3f8f8c4f0f594"
         },
         {
-          "source_id": "archestra-declan-seed-2026",
+          "source_id": "PROFILE-B7-INV-8ecb555d35fbcb-2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
           "source_title": "Archestra.AI announces $10M seed 🎉 | Blog | Archestra",
           "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",
@@ -192,7 +193,7 @@
           "quote_hash": "08e5d559c6573af00c5354f06af32ab1a3d738e220720d140723e5d719a39abb"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

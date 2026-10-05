@@ -139,15 +139,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资阶段和机构定位依据官网，Ellis AI 参投关系依据融资报道。",
-      "summary": "Kearny Jackson 官网将自身定位为科技创业公司的早期投资者；TechCrunch 报道将其列为 Ellis AI 种子轮投资方。本档不代表完整组合。",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 Kearny Jackson 官网；Ellis AI 投资信息引用融资报道，不推断其为领投方。",
+      "summary": "Kearny Jackson 官网将其定位为早期投资机构，为科技创业者提供从创业初期开始的支持。TechCrunch 报道将其列为 Ellis AI 2026 年种子轮投资方；该条仅记录公开案例，不代表完整组合。",
       "facts": [
         {
           "field": "investment_stage",
-          "label": "官网定位",
-          "value": "早期科技创业公司投资者",
-          "source_id": "PROFILE-95e87d17df1703480da3"
+          "label": "官网披露的投资阶段",
+          "value": "Kearny Jackson 官网将其描述为专注早期投资的机构。",
+          "source_id": "PROFILE-S-INV-5e366f2b91ec91-3"
+        },
+        {
+          "field": "founder_support",
+          "label": "官网披露的创始人支持方式",
+          "value": "官网称其从创业第一天起与创始人合作并提供实际支持。",
+          "source_id": "PROFILE-S-INV-5e366f2b91ec91-4"
         }
       ],
       "milestones": [],
@@ -174,9 +180,25 @@
           "source_content_hash": "fbdab2f60af1dd9734196ef46889d15f8e7a094df757f149a264df8f4011cf70",
           "quote": "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson.",
           "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5e366f2b91ec91-3",
+          "source_url": "https://www.kearnyjackson.com/",
+          "source_title": "Kearny Jackson",
+          "source_content_hash": "12bee0c574b62f6f45652f53ddd60d655b3a1f7d1b2745dfc1659380760f46d2",
+          "quote": "We’re early-stage specialists",
+          "quote_hash": "4fa6065dec665c30c307f1515058708216ecbec93d15f2edae976e273ab177e7"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5e366f2b91ec91-4",
+          "source_url": "https://www.kearnyjackson.com/",
+          "source_title": "Kearny Jackson",
+          "source_content_hash": "12bee0c574b62f6f45652f53ddd60d655b3a1f7d1b2745dfc1659380760f46d2",
+          "quote": "At Kearny Jackson, we partner with extraordinary founders, providing them hands-on support from day zero",
+          "quote_hash": "754e234bbce2a92e90926fe293026ec5d3848013b4a4574b43df6afb6215b54f"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

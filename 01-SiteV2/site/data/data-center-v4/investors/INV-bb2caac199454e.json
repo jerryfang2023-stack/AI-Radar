@@ -180,10 +180,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "Norm Ai Series C 融资报道将 TIAA 列为参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "TIAA集团范围与相关金融实体业务来自 TIAA 官方隐私声明；融资参与来自 SiliconANGLE。来源没有披露参与投资的具体法律实体或个人出资额，按品牌层级记载。",
+      "summary": "Norm Ai Series C 融资报道将 TIAA 列为参与方。TIAA 官方隐私声明说明“TIAA”覆盖共享品牌的多家金融公司，包括保险公司和投资顾问；该融资报道未说明具体参与的 TIAA 法律实体，因此不将其归为创业投资基金。",
+      "facts": [
+        {
+          "field": "group_scope",
+          "label": "官方声明披露的 TIAA 品牌范围",
+          "value": "TIAA 官方声明指出，TIAA/TIAA Companies 指使用 TIAA 和/或 Nuveen 品牌且共享企业身份的多家金融公司；其列出的实体包括保险公司和投资顾问。",
+          "source_id": "PROFILE-COLLECT-INV-bb2caac199454e-K-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -204,6 +211,14 @@
           "source_content_hash": "f2d01520bacd9d7e666b0549ba635f09537e005225bb366ae17380bd51d202d8",
           "quote": "he business name Norm Ai. Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated. Notable individuals also joined in the round, including Tony James, former president, chief operating officer and executive vice chairman of Blackstone, and former Kirkland & Ellis Chairman Jeff Hammes. Today’",
           "quote_hash": "258625043ae915bcd537d51d7801b512fe8a971ee187e8b66e1a78884416789c"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bb2caac199454e-K-2",
+          "source_url": "https://www.tiaa.org/public/support/privacy/privacy-notice",
+          "source_title": "TIAA Privacy Notice | TIAA",
+          "source_content_hash": "0658ea138871334ef7057ba8ad2bdcd65d1282fd85dc0e36d6b813537433f235",
+          "quote": "As described in this notice, \"TIAA\", the \"TIAA Companies\" or \"we\" are financial companies using the TIAA and/or Nuveen brands that share a common corporate identity.",
+          "quote_hash": "ccd1a29b540c234f0881caefd6830a43e0a15c99d0054cb9c42c07aa419c17f4"
         },
         {
           "source_id": "FISRC-afaa91a6569d1f7a",

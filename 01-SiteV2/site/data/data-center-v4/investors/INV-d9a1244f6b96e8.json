@@ -124,33 +124,84 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "“金科文化”为融资项目页中的投资方称谓；业务背景依据公司官网，投资额依据发行人年报问询回复。",
+      "summary": "36氪融资信息以“金科文化”列为西湖心辰2023年战略轮投资方。汤姆猫官网介绍浙江金科汤姆猫文化产业股份有限公司为2015年上市的全栖IP运营商；该公司年报问询回复列有对西湖心辰1.18亿元股权投资。档案仅记录公开披露支持的企业投资活动，不扩展为完整投资组合。",
+      "facts": [
+        {
+          "field": "business_profile",
+          "label": "公司业务（官网）",
+          "value": "以“会说话的汤姆猫家族”为核心的全栖IP运营商",
+          "source_id": "B29-JINKE-OFFICIAL"
+        },
+        {
+          "field": "listing",
+          "label": "上市信息（官网）",
+          "value": "2015年在深圳证券交易所创业板上市，代码300459",
+          "source_id": "B29-JINKE-OFFICIAL"
+        },
+        {
+          "field": "disclosed_investment",
+          "label": "披露投资（年报问询回复）",
+          "value": "西湖心辰（杭州）科技有限公司股权投资人民币1.18亿元",
+          "source_id": "B29-JINKE-ISSUER"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 西湖心辰 战略融资投资方。",
+          "description": "36 氪项目信息页记载金科文化参与西湖心辰 2023 年 7 月战略融资，金额未披露。",
+          "source_id": "B27-JINKE-PITCHHUB"
+        },
+        {
+          "description": "融资来源记录：西湖心辰 · 历史轮次未披露 · 战略融资投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ad8bd3750bae6130"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "汤姆猫官网",
+          "value": "https://jinkejoy.com/",
+          "url": "https://jinkejoy.com/",
+          "source_id": "B29-JINKE-OFFICIAL"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-ad8bd3750bae6130",
+          "source_id": "B27-JINKE-PITCHHUB",
           "source_url": "https://pitchhub.36kr.com/project/1679745902351105",
           "source_title": "西湖心辰 | 项目信息-36氪",
           "source_content_hash": "c8fe2a6f80f901fb9f954880123fe83bd0fc36c9c9efee589fd631bbed13d227",
           "quote": "战略融资 2023-07 未透露 金科文化",
           "quote_hash": "2f8825bba341e5631f222cf56297d5afb2149e0fa75e559adb9c3ddf1d58e8fe"
+        },
+        {
+          "source_id": "B29-JINKE-OFFICIAL",
+          "source_url": "https://jinkejoy.com/home/about",
+          "source_title": "金科文化官网",
+          "source_content_hash": "9b60742e09c761dfb187fae711b89de9ae77aed1b9d275068623a0382adecced",
+          "quote": "浙江金科汤姆猫文化产业股份有限公司成立于2007年6月，2015年5月在深圳证券交易所创业板上市，股票代码为300459。公司是以“会说话的汤姆猫家族”为核心的全栖IP运营商",
+          "quote_hash": "13cfd422ed656839983ddcdd933af782ee1f7891b3f3180065a4ad35722715f4"
+        },
+        {
+          "source_id": "B29-JINKE-ISSUER",
+          "source_url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=10267784",
+          "source_title": "公司公告_汤姆猫关于2023年年报问询函回复说明",
+          "source_content_hash": "23f91e9010065e1cb82b456db239aaec654dea0c4b081b23d7dae5f415aa5e09",
+          "quote": "西湖心辰（杭州）科技有限公司 股权投资 118,000,000.00",
+          "quote_hash": "60a9c2b4de7a5910df21f516eb165c46291b05c493daf4dcad80cd9bedb700ad"
+        },
+        {
+          "source_id": "FISRC-ad8bd3750bae6130",
+          "source_url": "https://pitchhub.36kr.com/project/1679745902351105",
+          "source_title": "西湖心辰 | 项目信息-36氪",
+          "source_content_hash": "58c4dfa86c1346eb",
+          "quote": "战略融资 2023-07 未透露 金科文化",
+          "quote_hash": "2f8825bba341e5631f222cf56297d5afb2149e0fa75e559adb9c3ddf1d58e8fe"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

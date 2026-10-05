@@ -236,19 +236,32 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Anthropic 官方 Series H 公告将 Greenoaks 列为领投机构之一。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "法律名称线索来自 Greenoaks 官方隐私声明；本轮投资关系据 Anthropic 官方公告，不推断具体基金。",
+      "summary": "Greenoaks 官方隐私声明将其法律称谓写作 Greenoaks LLC 并提及关联公司及投资尽调；Anthropic Series H 官方公告将 Greenoaks 列为领投机构之一。融资材料未披露具体基金载体。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "官方隐私声明",
+          "value": "Greenoaks 官方声明使用法律称谓 Greenoaks LLC，并提及关联公司。",
+          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "Anthropic Series H 公告将 Greenoaks 列为领投机构之一。",
+          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Anthropic 官方 Series H 公告将 Greenoaks 列入领投机构。",
-          "source_id": "FISRC-b5e22ae086a6b353"
-        },
-        {
           "description": "融资来源记录：AIR · 种子轮 · 2026-09-01 · 本轮领投 · $50M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0426e4b3b9347f4f"
+        },
+        {
+          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮领投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b5e22ae086a6b353"
         },
         {
           "description": "融资来源记录：Instinct · 历史轮次未披露 · 早期轮次投资。这是本库收录的披露案例，不代表完整投资组合。",
@@ -258,12 +271,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-1",
+          "source_url": "https://greenoaks.com/privacy",
+          "source_title": "Privacy Notice | Greenoaks",
+          "source_content_hash": "0f790907790789cbeb9897d68d4ccdf48089c400c03949b37239876d7289941d",
+          "quote": "Greenoaks LLC (“Greenoaks”) and our affiliates",
+          "quote_hash": "1ff60a13926f50671d72e8b33513387e00ec655e271e9dc5409b520065a22f78"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-2",
           "source_url": "https://www.anthropic.com/news/series-h",
           "source_title": "Anthropic raises $65B Series H at $965B valuation \\ Anthropic",
           "source_content_hash": "c00be615fd4e35832b47e33a715a08c58e5e3c7d7839c6775a6edc97ab162fd9",
-          "quote": "uation May 28, 2026 Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, valuing the company at $965 billion post-money. Global enterprises across industries are deploying Claude in their core operations, and a growing number of people around the world use it for their e",
-          "quote_hash": "c7d5fb0f940d5933fe8b33bdafdd12cb9c4667edeb7433e48f8304e692e74954"
+          "quote": "Greenoaks, and Sequoia Capital",
+          "quote_hash": "fa24778cfd7c2d26c7f8ebda518fb1810040fd01beae0ea7f072d6d62cf75856"
         },
         {
           "source_id": "FISRC-0426e4b3b9347f4f",
@@ -274,6 +295,14 @@
           "quote_hash": "88c6d16a9401bf99e7028ca06409d2a5469bd0d04db4c7c63280de67702392ef"
         },
         {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_url": "https://www.anthropic.com/news/series-h",
+          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+          "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital",
+          "quote_hash": "cd04bdd3a7f3b8bdc5c665fe98be28f4f33a81690ade9a2e41926d3627410f97"
+        },
+        {
           "source_id": "FISRC-70f948c95dacb2f0",
           "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
           "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
@@ -282,7 +311,7 @@
           "quote_hash": "cd7a52e8deca10f64ffdc59fc062741108bb1c3996d4164a66e47a4a725417e0"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

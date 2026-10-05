@@ -153,17 +153,21 @@
       }
     ],
     "public_profile": {
-      "summary": "GV官网称Alphabet是GV的唯一有限合伙人。此条记录Alphabet与风投平台的有限合伙人关系，不将Alphabet等同于GV的直接投资管理人。",
+      "summary": "GV 官网称 Alphabet 是其唯一有限合伙人；Isomorphic Labs 官方融资公告也将 Alphabet 与 GV 并列列为既有投资方。本档区分 Alphabet 与独立运营的 GV，仅记录公开披露的有限合伙人关系和一笔项目方融资信息，不把 Alphabet 描述为 GV 的基金管理人。",
       "facts": [
         {
-          "field": "investment_relationship",
-          "label": "GV官网披露的关联关系",
-          "value": "Alphabet是GV的唯一有限合伙人；该来源未将Alphabet描述为GV的直接投资管理人。",
-          "source_id": "PROFILE-INV-7cba4d104aba24-1"
+          "field": "limited_partner_relationship",
+          "label": "GV披露的有限合伙人关系",
+          "value": "GV 官网称 Alphabet 是其唯一有限合伙人。",
+          "source_id": "PROFILE-B4-INV-7cba4d104aba24-2"
         }
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Isomorphic Labs 官方融资公告将 Alphabet 列为新一轮融资的既有投资方之一；公告未披露其单独投资额。",
+          "source_id": "PROFILE-B4-INV-7cba4d104aba24-1"
+        },
         {
           "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-05-12 · 本轮参投 · $2.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-618d95b339c7b308"
@@ -171,29 +175,29 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "依据GV官网披露的唯一LP关系限定关联活动范围。",
+      "coverage_status": "researched",
+      "coverage_note": "GV 与 Isomorphic Labs 的信息分别来自各自官网；未将母公司、风投平台和基金管理人角色混为一体。",
       "current_roles": [],
       "career": [],
       "education": [],
       "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "GV关于我们",
-          "value": "Alphabet / GV",
-          "url": "https://www.gv.com/about?source_capture=2026-10-03&cycle=12",
-          "source_id": "PROFILE-INV-7cba4d104aba24-1"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-INV-7cba4d104aba24-1",
-          "source_url": "https://www.gv.com/about?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-B4-INV-7cba4d104aba24-1",
+          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+          "source_title": "Isomorphic Labs 2.0",
+          "source_content_hash": "a07df13d4da3856b30e323f1634988ea0b4839b1a4c16d2132d48a43ac3296ab",
+          "quote": "participation from existing backers Alphabet and GV alongside new investors",
+          "quote_hash": "28508b96124083d5c6ffa6ffa523f0fdfc977d8bd363ccaf99b9fe63ee50493e"
+        },
+        {
+          "source_id": "PROFILE-B4-INV-7cba4d104aba24-2",
+          "source_url": "https://www.gv.com/about",
           "source_title": "GV - About GV",
           "source_content_hash": "c02f78e618c41bfff5af019447f825766bde31fa59ee42fad6295dbcf737d1de",
-          "quote": "With Alphabet as our sole limited partner, we focus all our energy on meeting and supporting founders at every stage of company-building.",
-          "quote_hash": "3511bdf0fd8c3bd0df5a8305ce7ac0bb4f5e4b0ef7d3b6bb4f9e03abb263b87f"
+          "quote": "originated as an independent venture capital firm for innovative founders. With Alphabet as our sole limited partner",
+          "quote_hash": "429f139a82e542ba1d06d6996563fd77881a09be573974405de9191973b59da6"
         },
         {
           "source_id": "FISRC-618d95b339c7b308",
@@ -212,7 +216,7 @@
           "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -123,33 +123,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "上市公司公告披露管理人全称、控制关系、登记编码及投资领域；融资报道披露其参投角色，未披露单独出资额。",
+      "summary": "北京国信中数投资管理有限公司成立于2019年，是中国证券投资基金业协会登记的私募基金管理人，登记编码P1070085；每日互动公告披露其实际控制人为国家信息中心，投资领域包括大数据、云计算和人工智能等。雷峰网报道该机构阶段性联合领投OpenCSG天使轮，未披露其单独出资额。",
+      "facts": [
+        {
+          "field": "identity_and_focus",
+          "label": "机构身份与领域",
+          "value": "每日互动公告列明北京国信中数投资管理有限公司的设立时间、私募管理人登记编码、实际控制人及投资领域。",
+          "source_id": "guoxin_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 开放传神（OpenCSG） 历史轮次投资方。",
+          "description": "雷峰网报道其与联想创投阶段性联合领投OpenCSG天使轮；来源未披露国信中数单独出资额。",
+          "source_id": "opencsg_round"
+        },
+        {
+          "description": "融资来源记录：开放传神（OpenCSG） · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed4f088f02c38455"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "guoxin_official",
+          "source_url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=9219878&stockid=300766",
+          "source_title": "每日互动：关于全资子公司拟与专业投资机构合作设立数安基金的公告",
+          "source_content_hash": "af4c692050f938a8d8384e767c289a0fff1f4122eb7b9b58130f4385ee2fca51",
+          "quote": "公司名称：北京国信中数投资管理有限公司成立时间：2019年3月15日注册地：北京市顺义区临空经济核心区融慧园6号楼9-43法定代表人：展钰堡实际控制人：国家信息中心控股股东：北京国信新创投资有限公司主要投资领域：大数据、云计算、人工智能、VR/AR/MR、量子通信、区块链、物联网、芯片、工业互联网。",
+          "quote_hash": "21237bbd3da0706e5422db8bcba7b42fd7aea770b8de10d64f15ac742802a7ae"
+        },
+        {
+          "source_id": "opencsg_round",
+          "source_url": "https://m.leiphone.com/category/ai/IF5SvEHfzjQxW8aM.html",
+          "source_title": "OpenCSG（开放传神）完成数千万元天使轮融资 | 雷峰网",
+          "source_content_hash": "6fcbbcf284cd172715767a37ba72d1e5be957fd9368770d81f905f9be0a90b0f",
+          "quote": "9月伊始，北京开放传神科技有限公司（以下简称OpenCSG）获数千万元天使轮融资，本轮投资由 联想创投集团（以下简称联想创投），北京国信中数投资管理有限公司（以下简称国信中数）阶段性联合领投。",
+          "quote_hash": "e096cf746f64fb939706106dc66f00417908db1a318fecaa420a0f15f6c6071f"
+        },
         {
           "source_id": "FISRC-ed4f088f02c38455",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
-          "source_title": "OpenCSG完成数亿元Pre-A轮融资_新浪科技_新浪网",
-          "source_content_hash": "bbacedd17cd7918ac59cb4abbe0d3d74dd41877f7a6ecb935b548c79dba198af",
+          "source_title": "OpenCSG完成数亿元Pre-A轮融资",
+          "source_content_hash": "4fa5b4b2071cbe25f6578f34ac0b632b0cd5ffb051655b692b67b3d70070ee5c",
           "quote": "此前，OpenCSG已获得联想创投、北京国信中数、中科升哲等机构投资。",
           "quote_hash": "766784dc98f1518b2251ec45fdc68713623806cb4f3866e9055254a93fcaacbd"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

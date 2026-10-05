@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资参与关系依据投资界报道；其投资主体和其他投资活动未核实。",
-      "summary": "投资界关于三启万物融资的报道将贪玩游戏列入投资方。本档只记录该项融资披露，不据此将其描述为专业风险投资机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司背景和AI投资战略来自贪玩官网；三启万物融资参与关系来自投资界报道，未推断具体出资子公司。",
+      "summary": "贪玩官网将其描述为中国网络游戏产品发行商，并称集团在 AI 产业采取“自研+投资”战略。投资界关于三启万物融资的报道将贪玩游戏列入投资方。本档记录公开披露的集团背景及该项融资参与，不将其归为专业风险投资机构。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露的主营身份",
+          "value": "贪玩官网称其为网络游戏产品发行商。",
+          "source_id": "PROFILE-S-INV-6664bba6bbecf3-2"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "官网披露的AI投资策略",
+          "value": "贪玩称其在AI产业采取“自研+投资”战略布局。",
+          "source_id": "PROFILE-S-INV-6664bba6bbecf3-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -159,9 +172,25 @@
           "source_content_hash": "cd6a6c847f8ea057a91e873b5a152cb0aec8bddcb7ade9eaae1ba409f932fd40",
           "quote": "投资界（ID：pedaily2012）7月2日消息，北京三启万物科技有限公司（以下简称“ VAST（三启万物） ”）本月再次完成 超 10 亿人民币 A3 战略轮融资 。 本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。老股东 渶策资本、元生资本 持续追投。 近半年来，公司陆续发布行业领先的 3D 大模型 Tripo H3.1、Tripo P1.0，上线 8K 贴图、智能拆分Segmentation V2 等新算法，在盲测投票评出的 AI 3D 模型榜单中稳居全球第一。同时，公司发布了世界模型项",
           "quote_hash": "cf329b26fb938359b24dcc5b14409e90a58deb1283f31784e601b58c7f4e3a2c"
+        },
+        {
+          "source_id": "PROFILE-S-INV-6664bba6bbecf3-2",
+          "source_url": "https://www.tanwan.cn/about/",
+          "source_title": "集团介绍 - 贪玩官方网站_贪玩游戏,找回年少时贪玩的你",
+          "source_content_hash": "8614918a8775dc765c7a515d4354e83cbcbf71215776af914f6f08561b7e2e6d",
+          "quote": "中国领先的网络游戏产品发行商",
+          "quote_hash": "ec55afe90d572ca922cd48c9750d8bbe6d9dd876d5113888e6ed964f70ed8fac"
+        },
+        {
+          "source_id": "PROFILE-S-INV-6664bba6bbecf3-3",
+          "source_url": "https://www.tanwan.cn/about/",
+          "source_title": "集团介绍 - 贪玩官方网站_贪玩游戏,找回年少时贪玩的你",
+          "source_content_hash": "8614918a8775dc765c7a515d4354e83cbcbf71215776af914f6f08561b7e2e6d",
+          "quote": "贪玩在AI产业发展方面，采取「自研+投资」战略布局",
+          "quote_hash": "36f7906b03c5a1d43a9af4f78ac6597ca9cfee3cae1a2259f9de21395c777b6d"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

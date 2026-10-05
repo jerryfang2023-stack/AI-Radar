@@ -139,22 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Astrocade 官方公告将 Rogue VC 列入参与其融资的机构。公告描述同一轮新资金包含由 Sea 领投的 Series A 和由 Sequoia 领投的 Series B，但没有说明 Rogue VC 具体参与其中哪一轮，因此不把该关系归到某一个轮次。",
-      "summary": "Astrocade 于 2026 年 5 月公布的新融资包含由 Sea 领投的 Series A 和由 Sequoia Capital 领投的 Series B，并在合并的投资者列表中列出 Rogue VC。公司公告未说明 Rogue VC 参与了哪一具体轮次，亦未披露其出资金额。",
+      "coverage_status": "researched",
+      "coverage_note": "现有官网页面未能采集到可核原文；机构背景仅采用 Shizune 第三方目录并明确归属，融资关系来自 Astrocade 官方公告。Astrocade 未披露 Rogue VC 对应轮次或金额。",
+      "summary": "第三方目录 Shizune 将 Rogue VC 描述为位于纽约、关注软件与元宇宙的 VC 基金；Astrocade 官方融资公告在未区分具体轮次的汇总投资方名单中列出 Rogue VC。本档将机构定位明确归属第三方目录，不与名称相近的 Rogue Venture Partners 合并。",
       "facts": [
         {
-          "field": "reported_investor",
-          "label": "公开披露的投资者名称",
-          "value": "Astrocade 官方公告在其 Series A 与 Series B 的合并融资披露中列出 Rogue VC；未说明具体轮次归属。",
-          "source_id": "rogue-astrocade-funding-2026"
+          "field": "reported_investment_focus",
+          "label": "第三方目录所述定位",
+          "value": "Shizune 将 Rogue VC 描述为纽约 VC 基金，关注软件与元宇宙。",
+          "source_id": "PROFILE-B4-INV-81e70378054c6d-1"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Astrocade 于 2026 年 5 月的融资公告在合并投资者列表中列出 Rogue VC。其公告分别说明 Sea 领投 Series A、Sequoia 领投 Series B，但没有细分 Rogue VC 的具体轮次。",
-          "source_id": "rogue-astrocade-funding-2026"
+          "description": "Astrocade 官方融资公告在汇总投资方名单中列出 Rogue VC；未说明对应融资轮次或投资额。",
+          "source_id": "PROFILE-B4-INV-81e70378054c6d-2"
         },
         {
           "description": "融资来源记录：Astrocade · 多轮融资 · 2026-05-05 · 本轮参投 · $56M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -165,10 +165,18 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "当前可核实信息限于 Astrocade 官方融资公告列出的投资者名称；具体轮次归属未披露。",
+      "experience_summary": "",
       "sources": [
         {
-          "source_id": "rogue-astrocade-funding-2026",
+          "source_id": "PROFILE-B4-INV-81e70378054c6d-1",
+          "source_url": "https://shizune.co/investors/profile/rogue-vc",
+          "source_title": "Rogue VC – VC Fund | Software Investor | Shizune",
+          "source_content_hash": "888ff6c7cdd41a6b2bd4dc4cd3c822ccfb7c686dcba2b80ff525589d6c8e377c",
+          "quote": "Rogue VC is a VC fund in New York focused on Software and Metaverse.",
+          "quote_hash": "5956c7b7a89ffe56c4e68f71cb3c8e7606b332d32b6f9d77b67bd5510844ab2f"
+        },
+        {
+          "source_id": "PROFILE-B4-INV-81e70378054c6d-2",
           "source_url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
           "source_title": "Astrocade Raises $56M in New Funding to Build a New Era of Interactive Entertainment | Astrocade Blog",
           "source_content_hash": "4d84c2a57412fde80ce4152cc28093887d8ba173ef96cb0d628e741997b5a302",
@@ -184,7 +192,7 @@
           "quote_hash": "15cdeb52626e3d0522d7cb1d21a7ed845e2cac856054fcdf352272c0d7fb4a8f"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

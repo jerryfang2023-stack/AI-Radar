@@ -140,29 +140,86 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "投中网融资报道将日盈电子列为智身科技 B 轮产业投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "经营背景及历史股权投资据公司官网；智身科技B轮参与身份来自投中网报道，未披露出资金额。",
+      "summary": "江苏日盈电子股份有限公司成立于1998年，总部位于江苏常州，主营汽车洗涤系统、精密注塑、汽车电子和车用线束，并于2017年在上交所主板上市。投中网2026年报道将日盈电子列为智身科技B轮产业投资方。",
+      "facts": [
+        {
+          "field": "company_background",
+          "label": "企业背景",
+          "value": "江苏日盈电子股份有限公司1998年成立，总部在江苏常州，并于2017年在上交所主板上市，证券代码603286。",
+          "source_id": "PROFILE-B9-INV-ab3eeaec406eb9-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "主营业务",
+          "value": "主营汽车洗涤系统、精密注塑、汽车电子和车用线束。",
+          "source_id": "PROFILE-B9-INV-ab3eeaec406eb9-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投中网报道将日盈电子列为智身科技 B 轮共同参与的产业投资方。",
+          "description": "投中网2026年报道将日盈电子列为智身科技B轮产业投资方；未披露单独出资额。",
+          "source_id": "PROFILE-B9-INV-ab3eeaec406eb9-4"
+        },
+        {
+          "description": "融资来源记录：智身科技（GENISOM AI） · B轮 · 2026-09-20 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fecad8ccb9a84a39"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.riyingcorp.com/index.php?r=about%2Fintro",
+          "source_id": "PROFILE-B9-INV-ab3eeaec406eb9-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B9-INV-ab3eeaec406eb9-1",
+          "source_url": "https://www.riyingcorp.com/index.php?r=about%2Fintro",
+          "source_title": "简介",
+          "source_content_hash": "83116ff7d77f91c6c1712ad3aff90e6e50b5ea6205244a937f7fa35af6f86fc8",
+          "quote": "江苏日盈电子股份有限公司成立于1998年，总部设在江苏省常州市",
+          "quote_hash": "9a5b4d9d30cd54ab108e495070e9d79c6476c772544ed6d7c572fe148d9f87df"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-ab3eeaec406eb9-2",
+          "source_url": "https://www.riyingcorp.com/index.php?r=about%2Fintro",
+          "source_title": "简介",
+          "source_content_hash": "83116ff7d77f91c6c1712ad3aff90e6e50b5ea6205244a937f7fa35af6f86fc8",
+          "quote": "公司主营洗涤系统、精密注塑、汽车电子、车用线束等四类产品",
+          "quote_hash": "4fc78a46e454107e42b19f169bbd16cd3b44781e8bd581287c9248fdb584875e"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-ab3eeaec406eb9-3",
+          "source_url": "https://www.riyingcorp.com/index.php?r=about%2Fintro",
+          "source_title": "简介",
+          "source_content_hash": "83116ff7d77f91c6c1712ad3aff90e6e50b5ea6205244a937f7fa35af6f86fc8",
+          "quote": "公司于2017年6月27日在上海证券交易所主板成功上市，股票代码603286。",
+          "quote_hash": "8fe53a33b35349c0d73fccb43033804163660996850bd67548ead8143c3531d3"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-ab3eeaec406eb9-4",
+          "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393359.html",
+          "source_title": "智身科技完成数亿元B轮融资 | 投中网",
+          "source_content_hash": "fe21752d75b4a0e4d7f5689e056cdd3bb966aa1ff5a8a4b9081943841d274526",
+          "quote": "以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。",
+          "quote_hash": "2a8d33a2b698c2c0402ce9781e9486f2473f5873db78dbea3ca41becaa66d5a8"
+        },
         {
           "source_id": "FISRC-fecad8ccb9a84a39",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393359.html",
-          "source_title": "智身科技完成数亿元B轮融资 | 投中网",
-          "source_content_hash": "cb57a89ceda0683dc9af58cdb259edeac4d8fe02e5e568d87a42b8b875791b28",
-          "quote": "成数亿元B轮融资 投中网 | 郭靖 2026-09-20 11:21:18 本轮融资由阿联酋Stone Venture（磊石资本）领投，洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。 2026年9月，具身智能机器人企业智身科技（GENISOM AI）宣布完成数亿元人民币B轮融资。本轮融资由阿联酋Stone Venture（磊石资本）领投，洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。 截至2026年6月，智身科技具身智能机器人累计量产突破15000台，单月产能较去年月均水平提升超10倍；产品已进入电力、石化、消防、安防、应急、教育等多个行",
-          "quote_hash": "dc6db6d6e39da0846bec9333d4226106615dddc5781a54e88e3ec2cda2e510ae"
+          "source_title": "智身科技完成数亿元B轮融资 本轮融资由阿联酋Stone Venture（磊石资本）领投，洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。 投中网 · 20小时前",
+          "source_content_hash": "8e85893a67ba1482",
+          "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+          "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

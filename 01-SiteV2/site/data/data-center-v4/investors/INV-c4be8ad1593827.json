@@ -123,33 +123,68 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公开资料可确认小红书平台运营主体及一笔历史融资关联；融资主体、单独出资额和持续对外投资策略未公开，因此不扩写完整投资组合。",
+      "summary": "小红书平台协议将“行吟信息科技（上海）有限公司及其关联公司”定义为平台运营方。每日经济新闻援引36氪报道称，小红书参与月之暗面一轮超10亿美元融资；该金额是整轮金额，报道未披露小红书的单独出资额或具体投资载体。",
+      "facts": [
+        {
+          "field": "platform_operator",
+          "label": "平台运营主体",
+          "value": "小红书平台协议将行吟信息科技（上海）有限公司及其关联公司定义为小红书平台运营方。",
+          "source_id": "xhs_platform_terms"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Moonshot AI A+轮 A+轮参投。",
+          "description": "每日经济新闻援引36氪报道称，小红书是月之暗面2024年2月超10亿美元融资的投资方之一；整轮金额不代表小红书单独出资额。",
+          "source_id": "xhs_moonshot_round"
+        },
+        {
+          "description": "融资来源记录：Moonshot AI · A+轮 · A+轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5d82f5dc9fc96ce5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "小红书小程序开放平台协议",
+          "value": "平台运营主体说明",
+          "url": "https://miniapp.xiaohongshu.com/doc/DC430242",
+          "source_id": "xhs_platform_terms"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开来源未披露独立投资团队、投资范围或对外融资申请渠道。",
       "sources": [
+        {
+          "source_id": "xhs_platform_terms",
+          "source_url": "https://miniapp.xiaohongshu.com/doc/DC430242",
+          "source_title": "小红书小程序开放平台第三方平台开发者服务协议",
+          "source_content_hash": "a5806a084eae9ca2d7a2962c6955c284d60067de3bb4ec7cb101778d95773c87",
+          "quote": "小红书公司：指小红书平台的运营方即行吟信息科技（上海）有限公司及其关联公司",
+          "quote_hash": "ff3fe07c0fbf409941e5ad755c4487bf9f5813ee10fb7926f72c1d2c22fb7ef4"
+        },
+        {
+          "source_id": "xhs_moonshot_round",
+          "source_url": "https://www.nbd.com.cn/articles/2024-02-19/3247754.html",
+          "source_title": "未来商业早参 | AI公司“月之暗面”获大厂新一轮超10亿美金投资，东方甄选京沪试水“小时达” | 每经网",
+          "source_content_hash": "a2cdf3774e740a4f6377ab4d82fda5147e11f4a82266e0930e52b05076b47feb",
+          "quote": "投资方包括红杉中国、小红书、美团、阿里",
+          "quote_hash": "00dd305834883676e0d17042ab8139254a40ec598adbcfeec182a66552dbb97a"
+        },
         {
           "source_id": "FISRC-5d82f5dc9fc96ce5",
           "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
           "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-          "source_content_hash": "e3022228bdf1b2f0abdbef84c7f8a6f5e41f725bc6000e078592beb40d04f30f",
+          "source_content_hash": "eeb091dd8db852e6",
           "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
           "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

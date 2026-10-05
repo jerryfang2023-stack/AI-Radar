@@ -139,9 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Optalysys的官方融资公告列Lingotto Horizon为其Series A extension轮的参与方；当前只记录这一项披露，不把该名称扩展解释为独立法律实体或完整基金档案。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Lingotto 官网将 Horizon 定义为其投资策略之一，采用直接私募投资与基金中基金两条路径，进行全球分散、机会型少数股权投资。该名称指策略，不据此视为独立法律实体。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "官网披露的 Horizon 策略",
+          "value": "Lingotto 官网称 Horizon 策略结合直接私募投资和基金中基金。",
+          "source_id": "PROFILE-S-INV-355da71b40aaf8-2"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资方法与地域",
+          "value": "Lingotto 将 Horizon 的方法描述为全球范围的分散、机会型少数股权投资。",
+          "source_id": "PROFILE-S-INV-355da71b40aaf8-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -164,6 +177,22 @@
           "quote_hash": "95d17ff6da78e1701929d203a3e2ddb778a29276730f960cce568f3b0f7d9e4b"
         },
         {
+          "source_id": "PROFILE-S-INV-355da71b40aaf8-2",
+          "source_url": "https://www.lingotto.com/our-strategies",
+          "source_title": "Our Strategies - Lingotto",
+          "source_content_hash": "2b08ab8961f2c241f65ae9b83fc2f92d683c9ed2e2113785bf67ba03be1e13c9",
+          "quote": "Strategy centred around two synergistic pillars: direct private investments and a fund of funds",
+          "quote_hash": "d054ec4291ef4a50ae33f6af33e9acb80e6fa8df969dd7d168462574da4a4230"
+        },
+        {
+          "source_id": "PROFILE-S-INV-355da71b40aaf8-3",
+          "source_url": "https://www.lingotto.com/our-strategies",
+          "source_title": "Our Strategies - Lingotto",
+          "source_content_hash": "2b08ab8961f2c241f65ae9b83fc2f92d683c9ed2e2113785bf67ba03be1e13c9",
+          "quote": "Diversified, opportunistic minority investments, leveraging a clear macro viewpoint and unique sourcing network GEOGRAPHY Global",
+          "quote_hash": "0dbdecb7cc452fedb2b0cea92863cef367027c429f3bf9507710bfd311759cee"
+        },
+        {
           "source_id": "FISRC-243f9a39823d6336",
           "source_url": "https://optalysys.com/resource/optalysys-secures-23m-funding-to-advance-photonic-computing/",
           "source_title": "Optalysys 获 2300 万英镑，推进光子计算与美国扩张",
@@ -172,8 +201,11 @@
           "quote_hash": "e9a5b6742e4007d3cbaa425e00b2689f6d41ee721f7441ad8d2e931d5a24a794"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-10-04",
+      "coverage_note": "策略性质、投资方法和全球范围来自 Lingotto 官网；Optalysys 融资公告仅支持其参与该轮融资，不推断 Horizon 的完整基金结构或法定主体。",
+      "current_roles": [],
+      "career": [],
+      "education": []
     },
     "translations": {
       "zh-CN": {

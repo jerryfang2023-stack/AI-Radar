@@ -139,15 +139,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资参与关系依据被投企业融资报道；集团关系依据华泰证券官网。该记录不代表完整投资组合。",
-      "summary": "投资界融资报道将华泰创新列为奕行智能 2026 年新一轮融资的参与机构；华泰证券官网说明华泰创新为集团全资子公司及另类投资业务主体。本档仅记录该公开案例与主体信息。",
+      "coverage_status": "researched",
+      "coverage_note": "华泰创新主体关系与业务描述采用华泰证券官网；奕行智能融资参与关系采用投资界报道。该记录不代表完整投资组合。",
+      "summary": "华泰证券官网将华泰创新投资有限公司列为其全资另类投资子公司，并称其使用自有资金开展金融科技股权投资、科创板业务和战略投资。投资界报道将华泰创新列为奕行智能一轮融资的参与机构。",
       "facts": [
         {
           "field": "organization_relationship",
           "label": "机构关系",
           "value": "华泰证券集团全资子公司，开展另类投资业务",
           "source_id": "PROFILE-328283546a23214c0186"
+        },
+        {
+          "field": "investment_business",
+          "label": "华泰证券官网披露的投资业务",
+          "value": "华泰创新使用自有资金开展金融科技股权投资、科创板业务及战略投资。",
+          "source_id": "PROFILE-S-INV-64ab20cc3d2483-3"
         }
       ],
       "milestones": [],
@@ -174,9 +180,17 @@
           "source_content_hash": "3213bd2ecef3e1efceb36389ac1e29c14fe6a61851310c83ad7ddd061e7927cd",
           "quote": "华泰创新 一、 公司简介 华泰创新投资有限公司是华泰证券下设的全资另类投资子公司，注册资本35亿元。在法律法规及监管规定的框架下，华泰创新使用自有资金开展金融科技股权投资、科创板业务、战略投资等创新型投资业务。 二、 制度建设情况 华泰创新作为华泰证券的一级全资子公司，将制度建设作为重要工作，根据《证券公司另类投资子公司管理规范》、《证券公司全面风险管理规范》、《关于证券公司证券自营业务投资范围及有关事项的规定》、《证券公司内部控制指引》等法律法规及监管规",
           "quote_hash": "963442f736e64058581f8214989276593dedb2aba780f051d0b41035c3faec0f"
+        },
+        {
+          "source_id": "PROFILE-S-INV-64ab20cc3d2483-3",
+          "source_url": "https://www.htsc.com.cn/htzq/htcx/htcx.jsp",
+          "source_title": "华泰创新",
+          "source_content_hash": "3213bd2ecef3e1efceb36389ac1e29c14fe6a61851310c83ad7ddd061e7927cd",
+          "quote": "使用自有资金开展金融科技股权投资、科创板业务、战略投资等创新型投资业务",
+          "quote_hash": "9d92ad041eaf845af03b61464e262f12726ba61b383307a1813df833cbdbfad2"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],

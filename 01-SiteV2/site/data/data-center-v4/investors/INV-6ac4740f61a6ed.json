@@ -139,29 +139,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资参与关系依据 TechCrunch 历史报道；机构法律主体和完整组合未作推断。",
-      "summary": "TechCrunch 报道将 Good Friends 列为 Parabola 2023 年 Series B 的参与投资方。本档保留该项历史融资披露，不延伸为完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资参与来自融资报道；被投组合线索来自 Good Friends 自有网站。本档不延伸为完整投资组合，也不补写未获官网支持的基金策略。",
+      "summary": "TechCrunch 关于 Parabola 2023 年 Series B 的报道将 Good Friends 列为参投方；Good Friends 官网组合列表也收录 Parabola。本档仅记录此项公开关系。",
+      "facts": [
+        {
+          "field": "portfolio_listing",
+          "label": "官网组合页列示的公司",
+          "value": "Good Friends 官网组合页列有 Parabola。",
+          "source_id": "PROFILE-A2-INV-6ac4740f61a6ed-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Parabola 2023 年 Series B 融资报道将 Good Friends 列为参与方。",
+          "description": "TechCrunch 将 Good Friends 列为 Parabola 2023 年 Series B 的参投方。",
+          "source_id": "PROFILE-A2-INV-6ac4740f61a6ed-2"
+        },
+        {
+          "description": "融资来源记录：Parabola · B轮 · 2023-06-28 · 本轮参投 · $24 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-20776ee2d93a4e99"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-20776ee2d93a4e99",
+          "source_id": "PROFILE-A2-INV-6ac4740f61a6ed-1",
+          "source_url": "https://www.goodfriends.com/portfolio",
+          "source_title": "Our Companies &mdash; Good Friends",
+          "source_content_hash": "45160c07137054720a10426d0c65d166f1a43d6f1e048e1081c91860af5bce4e",
+          "quote": "Parabola is an enterprise hub for building, sharing, and automating data workflows.",
+          "quote_hash": "4ee103cab025d261349d9e345b7bdaa2c60418a739d514cc9848c6e2a18ef7fc"
+        },
+        {
+          "source_id": "PROFILE-A2-INV-6ac4740f61a6ed-2",
           "source_url": "https://techcrunch.com/2023/06/28/parabola-workflow-automation-startup/",
           "source_title": "Workflow automation startup Parabola raises $24M | TechCrunch",
           "source_content_hash": "8270f8698ed54c93e111fe9c4ae50292df70eadd2faf17cfb4c1bc27ca6078cd",
-          "quote": "funding round led by OpenView, with participation from strategic investor Flexport alongside Matrix, Thrive, Good Friends, Webflow, Otherwise Fund, Abstract Ventures and Merus Capital. Alex Yaseen, Parabola’s founder and CEO, says the new capital will be put toward hiring and product R&D. To date, the company’s raised $34.2 million — inc",
-          "quote_hash": "ae39d8a9e6c477c390c7e61a9b2dbec127bc2c8e3bce7cdd87bab373459ff66b"
+          "quote": "with participation from strategic investor Flexport alongside Matrix, Thrive, Good Friends, Webflow",
+          "quote_hash": "03f3b60d8fab8f47a8e09c6699c40e9fcf14137a41e2555a1b7dcc56ac92438b"
+        },
+        {
+          "source_id": "FISRC-20776ee2d93a4e99",
+          "source_url": "https://techcrunch.com/2023/06/28/parabola-workflow-automation-startup/",
+          "source_title": "工作流自动化初创公司 Parabola 获 2400 万美元融资",
+          "source_content_hash": "3674f7931a74432f",
+          "quote": "Good Friends",
+          "quote_hash": "b59d199b1863f9edf34e0c764ab609794e671ef9e0c62a20393d8c84192ef502"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

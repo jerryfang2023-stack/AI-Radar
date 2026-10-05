@@ -184,18 +184,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "身份与家族办公室定位来自 Hillspire 自有 LinkedIn 公司页面；Mistral AI 参与记录来自二级融资信息页，尚未找到发行人公告确认其法律投资载体。",
+      "summary": "Hillspire, LLC 官方 LinkedIn 公司页面将其描述为服务 Eric 与 Wendy Schmidt 家庭商业和慈善活动的综合家族办公室管理公司。Mistral AI D 轮参投记录目前来自二级融资信息列表，档案不据此推断其基金结构、管理规模或完整投资组合。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "公司页面披露的机构性质",
+          "value": "Hillspire 自有公司页面称 Hillspire, LLC 是服务 Eric 与 Wendy Schmidt 及其家庭商业和慈善活动的综合家族办公室管理公司。",
+          "source_id": "PROFILE-COLLECT-INV-be8a7a7d93578d-K-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "公开融资来源将其列为 Mistral AI D轮 本轮参投。",
-          "source_id": "FISRC-27e01480407caae0"
-        },
-        {
-          "description": "公开融资来源将其列为 Mistral AI 历史轮次投资方。",
           "source_id": "FISRC-27e01480407caae0"
         },
         {
@@ -212,6 +215,14 @@
           "source_content_hash": "928c56a4ce1e5342d877c80418eee8ccb4c605592a736624528c27ad48f5afc7",
           "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
           "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-be8a7a7d93578d-K-2",
+          "source_url": "https://www.linkedin.com/company/hillspire-llc",
+          "source_title": "Hillspire | LinkedIn",
+          "source_content_hash": "5c063804e5c63d958e67e6985fa9b675753a2725fbc55137d68069cc40d2fe49",
+          "quote": "Hillspire, LLC, is an integrated family office management company that serves the business and philanthropic activities of Eric and Wendy Schmidt and their family.",
+          "quote_hash": "9bc0e3257581b060e5c467e84bc43923a96b559054f86592e06b3d1c491b920d"
         },
         {
           "source_id": "FISRC-4d11ed62a144a3f4",

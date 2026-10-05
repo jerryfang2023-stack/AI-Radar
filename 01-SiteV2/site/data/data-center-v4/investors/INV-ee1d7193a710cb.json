@@ -139,65 +139,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本条只记录公司官方简介和一项被融资报道确认的投资活动；佰维存储是产业公司，不据此扩展为风险投资机构或完整投资组合。",
-      "summary": "佰维存储官网介绍，深圳佰维存储科技股份有限公司是科创板上市公司，专注半导体存储器研发设计、封测、生产和销售。新浪财经转载投资界的融资报道引述佰维存储称其为微纳核芯投资方。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "佰维存储（深圳佰维存储科技股份有限公司，科创板 688525）主营半导体存储器研发设计、封测、生产和销售。微纳核芯官方公告将佰维存储列入其 B3、B4 两轮系列融资的产业投资方名单。",
+      "coverage_note": "佰维存储按上市半导体企业及产业投资方记录，不将其描述为风险投资机构；微纳核芯披露的是两轮合计超过 10 亿元融资，未披露佰维存储单独出资额。",
       "facts": [
         {
-          "field": "organization_type",
-          "label": "官网披露的公司身份与主营业务",
-          "value": "科创板上市公司，主营半导体存储器研发设计、封测、生产和销售。",
-          "source_id": "PROFILE-32e45d451843d722e8d1"
+          "field": "legal_name",
+          "label": "公司官网披露法定名称",
+          "value": "深圳佰维存储科技股份有限公司",
+          "source_id": "b35-biwin-company"
+        },
+        {
+          "field": "stock_code",
+          "label": "科创板股票代码",
+          "value": "688525",
+          "source_id": "b35-biwin-company"
+        },
+        {
+          "field": "business_description",
+          "label": "公司官网披露主营业务",
+          "value": "半导体存储器研发设计、封测、生产和销售，并提供先进封测服务。",
+          "source_id": "b35-biwin-company"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "新浪财经转载投资界的融资报道引述佰维存储自述其为微纳核芯投资方；未披露金额或投资工具。",
-          "source_id": "PROFILE-476c0754339c0c400ba3"
+          "description": "微纳核芯官方公告将佰维存储列为 B3、B4 两轮融资的产业投资方之一；未披露佰维存储单独出资额。",
+          "source_id": "b35-biwin-nanocore"
+        },
+        {
+          "description": "微纳核芯官方公告标题称其 B 轮系列融资超过 10 亿元；该金额为融资总额，不代表佰维存储出资额。",
+          "source_id": "b35-biwin-financing-title"
         },
         {
           "description": "融资来源记录：微纳核芯 · 多轮融资 · 2026-06-15 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b96684face6f5223"
         }
       ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "机构官网",
-          "value": "佰维存储",
-          "url": "https://www.biwin.com.cn/about/company",
-          "source_id": "PROFILE-e1c4d3f7bbe449e9d8f4"
-        }
-      ],
+      "contacts": [],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
+      "experience_summary": "半导体存储与先进封测上市企业，并有已披露的产业投资活动。",
       "sources": [
         {
-          "source_id": "PROFILE-32e45d451843d722e8d1",
+          "source_id": "b35-biwin-company",
           "source_url": "https://www.biwin.com.cn/about/company",
           "source_title": "公司简介 - 佰维存储-存储赋能万物智联",
-          "source_content_hash": "73f0c60add5a3f8fa693031b6b4e979285139a76098a8fc505412c7a822c1e82",
-          "quote": "深圳佰维存储科技股份有限公司 （科创板股票代码：688525）成立于2010年，公司专注于半导体存储器的研发设计、封测、生产和销售",
-          "quote_hash": "0a335f5bab7b5690aa4d32ba0144ac40f975439b74097c4fd3c9dbcf622bcc46"
+          "source_content_hash": "3b13dc936d7ab9e3e383918e5a036fddaff04f2e91211265ff4de3a2cf45e181",
+          "quote": "深圳佰维存储科技股份有限公司（科创板股票代码：688525）成立于2010年，公司专注于半导体存储器的研发设计、封测、生产和销售",
+          "quote_hash": "0dbccdebf4fa98e8325475712f3341e53929c265bd7497f525c9a4a13c967e5a"
         },
         {
-          "source_id": "PROFILE-476c0754339c0c400ba3",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
-          "source_title": "微纳核芯完成超10亿元B轮系列融资_新浪财经_新浪网",
-          "source_content_hash": "248ed3e8959326c9961aee4702bcf5726701e3edb613e6ecde8be0d0978a72aa",
-          "quote": "作为微纳核芯的投资方",
-          "quote_hash": "8cb423779f6a08f1c832b58dfe644b4fd288fa2b5adcdc337fcf24ea6dad3d3d"
+          "source_id": "b35-biwin-nanocore",
+          "source_url": "https://www.nanocorechip.com/index/news/detail/index?id=32",
+          "source_title": "微纳核芯",
+          "source_content_hash": "4194914f5b3cd2527bbdb1187eefd068ff7eca716090fcc7fd53b11a2c0dcf5c",
+          "quote": "两轮融资聚集央企产业资本中国移动链长基金、超越摩尔、江城基金、佰维存储、九坤创投",
+          "quote_hash": "e47b824cc03e4a604dabab6bc786eb5db95c6fc920dfd5025fc546171017b171"
         },
         {
-          "source_id": "PROFILE-e1c4d3f7bbe449e9d8f4",
-          "source_url": "https://www.biwin.com.cn/about/company",
-          "source_title": "公司简介 - 佰维存储-存储赋能万物智联",
-          "source_content_hash": "73f0c60add5a3f8fa693031b6b4e979285139a76098a8fc505412c7a822c1e82",
-          "quote": "公司简介 深圳佰维存储科技股份有限公司",
-          "quote_hash": "5f10a71c82147cc3b293ee812788c9f0145ff3104b4195f87e5b12a57a115532"
+          "source_id": "b35-biwin-financing-title",
+          "source_url": "https://www.nanocorechip.com/index/news/detail/index?id=32",
+          "source_title": "微纳核芯",
+          "source_content_hash": "4194914f5b3cd2527bbdb1187eefd068ff7eca716090fcc7fd53b11a2c0dcf5c",
+          "quote": "微纳核芯完成超10亿元B轮系列融资，加速三维存算一体LPU芯片的端-云协同",
+          "quote_hash": "4cc5b0b03e0b6298f804d84b6e7548ddf736852ef860e92f8954178e6dbcde4a"
         },
         {
           "source_id": "FISRC-b96684face6f5223",
@@ -207,8 +216,7 @@
           "quote": "两轮融资聚集央企产业资本 中国移动 链长基金、 超越摩尔 、 江城基金 、 佰维存储 、九坤创投、知名大模型公司等头部产业投资方",
           "quote_hash": "2c7a017683a1b0f38e874bdd012938f92c6ee4e7adca7b335d3537ae2cd74b61"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     }
   }
 }

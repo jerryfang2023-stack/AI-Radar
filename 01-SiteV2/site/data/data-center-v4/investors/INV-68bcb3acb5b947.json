@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资关系依据超维探索融资公告的转载报道；不据此补写完整投资组合。",
-      "summary": "深圳超维探索官方公告的转载报道将倚锋资本列为其种子轮联合领投方。本档仅记录这一公开案例。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资方向与机构历程来自倚锋资本官网；超维探索融资关系来自其融资公告的媒体转载。",
+      "summary": "倚锋资本官网称其专注生物医疗投资，并列出2012年转型为医疗投资机构、2014年募集并投资转型后首支基金的历程。DoNews 对深圳超维探索融资公告的转载将倚锋资本列为种子轮联合领投方。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "倚锋资本官网称其专注全球生物医药投资。",
+          "source_id": "PROFILE-S-INV-68bcb3acb5b947-2"
+        },
+        {
+          "field": "investment_history",
+          "label": "官网披露的机构历程",
+          "value": "倚锋资本官网记载其于2012年转型为专注生物医疗投资的机构。",
+          "source_id": "PROFILE-S-INV-68bcb3acb5b947-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -159,9 +172,25 @@
           "source_content_hash": "5f1df1b616546293cbdef69602b68c4e7c7e1af8fd6b832ea500d21f2e54456e",
           "quote": "，推进通用AI操作系统开发 超维探索N++完成数千万元种子轮融资，推进通用AI操作系统开发 推荐 2026-04-16 19:23:03 分享到 近日，深圳超维探索科技有限公司（NppStudio，简称N++）宣布完成由倚锋资本和深圳世钦投资联合领投的数千万元种子轮融资。资金将主要用于加速全球首个底层创新的通用Agentic操作系统（AI OS）的研发与推广。 N++平台系统于2026年4月15日正式上线，官网为www.npphub.com。其节点仓库已积累500余个经过验证、高度抽象且语义去冗余的AI原生能力节点，覆盖数据科学、算法模型开发、Office办公套件、图表制作等软件的AI原生等效功能。用户通过自然语言交互，即可驱动智能体（Agent）自主完成复杂任务的“语义",
           "quote_hash": "d0111af92f26ff519f1228eee2d3bf12408c222466c2fcb33d915fa6cd304198"
+        },
+        {
+          "source_id": "PROFILE-S-INV-68bcb3acb5b947-2",
+          "source_url": "https://www.efungcapital.com/",
+          "source_title": "倚锋资本 Efung Capital - 专注全球生物医药投资",
+          "source_content_hash": "cd9cd855e2782d17f9e79e7fde0dfee16d8499ecc8b5ca01e56d208c77d91d4e",
+          "quote": "专注全球生物医药投资",
+          "quote_hash": "0a87f493351b6ae8956e6b55a2868cccd13d95622f8c4e589328f79b6314163b"
+        },
+        {
+          "source_id": "PROFILE-S-INV-68bcb3acb5b947-3",
+          "source_url": "https://www.efungcapital.com/",
+          "source_title": "倚锋资本 Efung Capital - 专注全球生物医药投资",
+          "source_content_hash": "cd9cd855e2782d17f9e79e7fde0dfee16d8499ecc8b5ca01e56d208c77d91d4e",
+          "quote": "转型为专注投资生物医疗产业的倚锋资本",
+          "quote_hash": "68054062b61a59fabc88a92df5b23740f9840b72a561a1f6b3bd53a29937beb2"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

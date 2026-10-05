@@ -140,10 +140,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资参与关系依据投资界报道；未推断其投资策略或完整组合。",
-      "summary": "投资界关于弋途科技 Pre-B 轮融资的报道将九派资本列为参投机构。本档只记录该项公开披露。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资参与关系由投资界报道支持；机构官网抓取失败，未补写法律主体、策略或完整组合。",
+      "summary": "投资界关于弋途科技 Pre-B 轮融资的报道将“九派资本”列为参投方。本档仅保留该融资报道中的公开机构用名；九派资本官网在本次采集中无法访问，未把名称相近的九派基金管理主体并入。",
+      "facts": [
+        {
+          "field": "reported_investor_name",
+          "label": "融资报道披露的投资方名称",
+          "value": "弋途科技融资报道将“九派资本”列为参投方。",
+          "source_id": "PROFILE-S-INV-67169c44b53f86-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -160,9 +167,17 @@
           "source_content_hash": "f0ef1712e3b28419423ba557c65b306716a0faf5fd223516156657f0dc3eb1b6",
           "quote": "创新型领 先企业。投资界（ID：pedaily2012）9月21日消息，弋途科技正式宣布 完成Pre-B轮融资，融资金额近亿元人民币 。本轮融资由 上海半导体与Sands Talk Capital（沙滩说资本）联合领投，九派资本、江苏金桥参投，老股东包河科创持续加码 。本轮融资旨在加速AICAR 的规模化推广，推动深度结合自研端侧模型的下一代 AICAR 落地积蓄纵深；同步推进多终端战略布局与全球化市场拓展，并强化多地研发交付体系与高端人才梯队建设。 产品方面，2024年，弋途完成行业首 个车载AI智能体平台量产交付；2025年，弋途核心产品心界AI全栈系统问世；2026年北京车展，弋途心界 AI 全栈系统 2.0 与全球版座舱解决方案亮相；近期，弋途AICAR上线。弋途",
           "quote_hash": "65c86ad0d642fb3cb71961eeb018ebf3adcd1f764a64042dffa72576f5eaaafd"
+        },
+        {
+          "source_id": "PROFILE-S-INV-67169c44b53f86-2",
+          "source_url": "https://news.pedaily.cn/202609/569399.shtml",
+          "source_title": "弋途科技完成近亿元Pre-B轮融资，以AI Native全栈能力赋能座舱智能化、汽车AI化_投资界",
+          "source_content_hash": "f0ef1712e3b28419423ba557c65b306716a0faf5fd223516156657f0dc3eb1b6",
+          "quote": "九派资本、江苏金桥参投",
+          "quote_hash": "c1f61e65aacb3b04c46e34912141402ac987f31e3244b08b6ef7570e7d14ce51"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

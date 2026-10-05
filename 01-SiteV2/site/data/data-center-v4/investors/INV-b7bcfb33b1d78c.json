@@ -193,10 +193,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "ChipAgents Series A 扩展融资报道将 ScOp Venture Capital 列为既有投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资领域和阶段来自 ScOp 官网；ChipAgents 融资参与来自融资报道。官网关于投资金额的不同页面口径不一致，未纳入档案。",
+      "summary": "ScOp 官网称其由创业者和企业建设者组成，投资早期 SaaS 与 AI 公司，主要阶段为 pre-seed 和 seed。ChipAgents 融资公告将 ScOp Venture Capital 列为既有投资方；官网存在不同页面所列单笔投资区间不一致，本档不引用金额。",
+      "facts": [
+        {
+          "field": "investment_focus_and_stage",
+          "label": "官网披露的投资领域与阶段",
+          "value": "ScOp 官网列出的重点领域为 SaaS 和 AI，阶段为 pre-seed 与 seed。",
+          "source_id": "PROFILE-COLLECT-INV-b7bcfb33b1d78c-J-2"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资团队定位",
+          "value": "ScOp 将自身描述为公司建设者、投资人和长期合作伙伴。",
+          "source_id": "PROFILE-COLLECT-INV-b7bcfb33b1d78c-J-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -221,6 +234,14 @@
           "source_content_hash": "ba93b81890a8996f96f46d844434b6f3ed331431c0cdd92eef9771ced90b2e5d",
           "quote": "new investor, alongside existing backers Bessemer Venture Partners , Micron , MediaTek , Ericsson ( ERIC ) , ScOp Venture Capital , and others. The new capital arrives six months after the initial close of the company’s Series A and follows a sixfold increase in annual recurring revenue during the first half of 2026. ChipAgents says its technology has now b",
           "quote_hash": "f6b7db7f205be7398265151bd661c568ae76071d1975e12f8da3b81cbf0bce52"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b7bcfb33b1d78c-J-2",
+          "source_url": "https://scopvc.com/",
+          "source_title": "Pre-Seed &amp; Seed SaaS and AI Investors | ScOp Venture Capital",
+          "source_content_hash": "f239ee1fdce4aa5170aa125b1887beb307a708ca62c5dd99de49309b4926e110",
+          "quote": "Pre-seed & Seed Stage SaaS and AI",
+          "quote_hash": "b7dd1bee26db523c27cc5370d5c3b4b6b7e236d2a104dcf62b09751287502ccd"
         },
         {
           "source_id": "FISRC-cd04c9b2d1340164",

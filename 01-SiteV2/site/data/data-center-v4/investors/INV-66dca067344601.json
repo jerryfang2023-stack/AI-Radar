@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资参与关系依据投资界报道；未将其扩展为完整投资组合。",
-      "summary": "投资界关于贻如科技 A 轮融资的报道将巢生资本列为参投机构。本档只记录该项公开融资披露。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体类型与基金模式来自 Nest.Bio 官网；贻如科技的融资参与关系来自投资界报道。",
+      "summary": "Nest.Bio 巢生官网将其描述为生命科学领域的风险投资和创新孵化机构，并介绍巢生资本的美元与人民币双币基金。投资界关于贻如科技 A 轮融资的报道将巢生资本列为跟投机构。",
+      "facts": [
+        {
+          "field": "organization_model",
+          "label": "官网披露的机构模式",
+          "value": "Nest.Bio 巢生自述为专注生命科学的风险投资和创新孵化机构。",
+          "source_id": "PROFILE-S-INV-66dca067344601-2"
+        },
+        {
+          "field": "fund_structure",
+          "label": "官网披露的基金币种",
+          "value": "巢生资本官网介绍其美元与人民币双币基金。",
+          "source_id": "PROFILE-S-INV-66dca067344601-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -159,9 +172,25 @@
           "source_content_hash": "3d2eb7812f26f6e960f6377b6b75e75ee20e4d31e14ce3f063725a30187a3b06",
           "quote": "险，建议进一步评估其长期发展潜力与市场竞争力。 投资界（ID：pedaily2012）7月6日消息，贻如科技（杭州）有限公司（以下简称“贻如”）今日宣布 完成超亿元A轮融资 。本轮融资由 鄂尔多斯集团与和达金服共同领投，巢生资本跟投 ，易凯资本担任本轮融资的独 家财务顾问。本轮融资募集资金将主要用于推动公司商业化开拓与产能建设，并依托AI技术加速生物基皮革的技术革新与产品迭代。 成立于2021年，贻如致力于将尖端合成生物技术与先进材料改性科学相结合，并以AI技术贯穿研发与生产全链路，创造以生物基皮革为代表的新一代创新生物基材料，让大众消费品所需的高性能材料从石油基走向生物基。 贻如× 安踏 骜杰系列运动鞋 公司围绕真皮与人造革两类不同场景进行差异化产品布局： Mulkol",
           "quote_hash": "325873e4b9ac72bef2958cfff3b9414add64a4bba1722d28b844dc1f6370b10d"
+        },
+        {
+          "source_id": "PROFILE-S-INV-66dca067344601-2",
+          "source_url": "https://nestbio.net/",
+          "source_title": "_Nest.Bio 巢生_孵化革命性生命科学技术 从人类健康到可持续的未来",
+          "source_content_hash": "ff4cd9326188c070648e194ed03181015426f548b3e4ddf0129adbc39790a110",
+          "quote": "Nest.Bio 巢生 创始于美国波士顿，是一家专注于生命科学领域的风险投资和创新孵化机构",
+          "quote_hash": "7de187cbd4ab5db0b0b3dc4da67f0f54b3ca3bf6a203f09e957a49f6ca7bf9f6"
+        },
+        {
+          "source_id": "PROFILE-S-INV-66dca067344601-3",
+          "source_url": "https://nestbio.net/",
+          "source_title": "_Nest.Bio 巢生_孵化革命性生命科学技术 从人类健康到可持续的未来",
+          "source_content_hash": "ff4cd9326188c070648e194ed03181015426f548b3e4ddf0129adbc39790a110",
+          "quote": "巢生资本 美元-人民币双币基金",
+          "quote_hash": "2562b52706cae003bc14f5f9aaafa20060bbfce96529c828f04877b321c479a3"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -139,33 +139,82 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "MTR Corporation 官网确认 MTR Lab 为其全资子公司并列出投资协作领域；MTR Lab 自身公告确认其参与 Eagle Cloud 的近亿元人民币 B+ 轮，未披露单独出资额。",
+      "summary": "MTR Lab 是港铁公司（MTR Corporation Limited）全资子公司，围绕交通出行、零售、物业、金融与数据服务、智慧城市及可持续发展开展投资、合作和共创。其公告披露参与亿格云近亿元人民币 B+ 轮，未披露单独出资额。",
+      "facts": [
+        {
+          "field": "ownership",
+          "label": "股权关系",
+          "value": "MTR Lab 为 MTR Corporation Limited 全资子公司。",
+          "source_id": "mtr_lab_overview"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资及合作领域",
+          "value": "官网列出 mobility、retail、property、financial and data services、smart city technology 与 sustainability 等领域。",
+          "source_id": "mtr_lab_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 亿格云 基础设施融资 本轮联合投资。",
+          "description": "MTR Lab 公告称其与北极光创投联合投资亿格云近亿元人民币 B+ 轮；近亿元为整轮金额，单家出资额未披露。",
+          "source_id": "eagle_cloud_round"
+        },
+        {
+          "description": "融资来源记录：亿格云 · 基础设施融资 · 2026-09-14 · 本轮联合投资 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dace02c08d5e872a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "MTR Lab 业务介绍",
+          "value": "港铁公司官网",
+          "url": "https://www.mtr.com.hk/en/corporate/mtr-lab/business-overview.html",
+          "source_id": "mtr_lab_overview"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开官网披露其公司归属、投资协作范围及一个融资案例；没有公开的单笔支票金额。",
       "sources": [
+        {
+          "source_id": "mtr_lab_overview",
+          "source_url": "https://www.mtr.com.hk/en/corporate/mtr-lab/business-overview.html",
+          "source_title": "MTR > Business Overview",
+          "source_content_hash": "a21284a3eb791c54d1c061895368ff4275ff4037473b921291ea96471b9c497d",
+          "quote": "MTR Lab is a wholly owned subsidiary of MTR Corporation Limited. We create strategic value through investment in technologies and formulate innovative solutions that support the long-term growth of our communities.",
+          "quote_hash": "45a35f83388095f40125e54225f9e429af0094f367ce98324b8d85570ee08b84"
+        },
+        {
+          "source_id": "mtr_lab_focus",
+          "source_url": "https://www.mtr.com.hk/en/corporate/mtr-lab/business-overview.html",
+          "source_title": "MTR > Business Overview",
+          "source_content_hash": "a21284a3eb791c54d1c061895368ff4275ff4037473b921291ea96471b9c497d",
+          "quote": "MTR Lab looks to invest in, collaborate and co-create with like-minded partners working in mobility (MaaS, new mobility modes, rail tech), retail, property, financial and data services, smart city technology and sustainability.",
+          "quote_hash": "e0c9808780d795b850b649e0ab4d6835a5259d001b899181c19e3fed25c87bd2"
+        },
+        {
+          "source_id": "eagle_cloud_round",
+          "source_url": "https://www.mtrlab.com.hk/zh/news/eagle-cloud-raises-series-b-plus-backed-by-mtr-lab/",
+          "source_title": "億格雲完成近億元B+輪融資 MTR Lab與北極光創投聯合投資",
+          "source_content_hash": "5e9dec08108f0355e8f838e50a3ee6d958ecc15dc55f5a618fad3354c33fc2f2",
+          "quote": "億格雲（Eagle Cloud）宣布完成近億元人民幣B+輪融資，本輪由MTR Lab與北極光創投（Northern Light Venture Capital）聯合投資，航行資本（Voyagers Partners）擔任財務顧問。",
+          "quote_hash": "a7686264f491e7d4294995fc87fde1c9815376c4d4b9d6492a72283037942c19"
+        },
         {
           "source_id": "FISRC-dace02c08d5e872a",
           "source_url": "https://news.pedaily.cn/202609/568948.shtml",
-          "source_title": "亿格云完成近亿元B+轮融资，加速构建企业AI治理基础设施_投资界",
-          "source_content_hash": "e12095422534d9769f7b33d6c039abec27b3bb2318ff4d718731dff011a3d1ad",
+          "source_title": "亿格云完成近亿元B+轮融资，加速构建企业AI治理基础设施",
+          "source_content_hash": "aedae76347873519",
           "quote": "本轮由MTR Lab与北极光创投联合投资",
           "quote_hash": "897e8816cf42b51e40c6025ddc2fadca6a0def4816301850dd27ca223ad20a3a"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

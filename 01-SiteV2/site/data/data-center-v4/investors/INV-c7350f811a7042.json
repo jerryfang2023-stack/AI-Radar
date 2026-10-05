@@ -181,10 +181,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网材料说明其创业信用投资性质；星海图融资报道仅列投资方，未披露毅峰的单独出资额。",
+      "summary": "毅峰资本官网将 InnoVen Capital 定位为由星伟诺（淡马锡全资子公司）与大华银行联合发起、在亚洲开展早期及成长期创业信用投资的机构。星海图两轮融资报道均将毅峰资本列为投资方。",
+      "facts": [
+        {
+          "field": "organization_and_strategy",
+          "label": "官网披露的机构背景与投资方式",
+          "value": "InnoVen Capital（毅峰资本）由星伟诺与大华银行联合发起，覆盖亚洲，专注早期及成长期创业信用投资。",
+          "source_id": "PROFILE-COLLECT-INV-c7350f811a7042-L-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -213,6 +220,14 @@
           "source_content_hash": "cc8e9b95d15c094ad4fb99ec61d5a8254cd9908e757dd28fb81147e2a8213ac4",
           "quote": "在2月官宣了10亿元B轮融资，新进金鼎资本、北汽产投、碧鸿投资、正心谷资本、前海方舟、毅峰资本等投资方",
           "quote_hash": "360fdf1c182d8d3f25c378ae2cfc9fe9f5f673d8563b4a595dc1d0f4783c76e1"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-c7350f811a7042-L-3",
+          "source_url": "https://www.innovencapital.com/HomeUhy?lang=cn",
+          "source_title": "首页 - InnoVen Capital",
+          "source_content_hash": "4974786c629010f1aac6b2541ea77c2640e8b0297d650758f6ca4f8c21e012e6",
+          "quote": "InnoVen Capital（毅峰资本）是由星伟诺Seviora（淡马锡集团全资子公司）与大华银行（United Overseas Bank）联合发起的亚洲领先的创业信用投资机构",
+          "quote_hash": "991b1990f6b3a467196d583900daa366c7f1fd0579595ebc40a70ec4739797ab"
         }
       ],
       "last_verified_at": "2026-10-03",

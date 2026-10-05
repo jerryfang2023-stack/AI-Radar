@@ -304,16 +304,25 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "Isomorphic Labs 官方融资公告将 CapitalG 列为投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金定位来自 CapitalG 官网；投资关系来自 Isomorphic Labs 官方融资公告。官网资料仅说明公开的组织定位，不推断 Alphabet 其他投资团队的出资关系。",
+      "summary": "CapitalG 官网明确将其定位为 Alphabet 的独立成长基金；Isomorphic Labs 融资公告将 CapitalG 列为投资方。官网同时强调对组合企业的深入研究和公司支持。",
+      "facts": [
+        {
+          "field": "fund_identity",
+          "label": "基金定位",
+          "value": "CapitalG 官网称其为 Alphabet 的独立成长基金。",
+          "source_id": "PROFILE-COLLECT-INV-afc832a9562443-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "Isomorphic Labs 官方公告将 CapitalG 列为投资方。",
+          "source_id": "PROFILE-COLLECT-INV-afc832a9562443-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "Isomorphic Labs 官方公告将 CapitalG 列入本轮投资者。",
-          "source_id": "FISRC-82c9573ed9c6ba66"
-        },
         {
           "description": "融资来源记录：Supabase · 轮次未披露 · 2026-10-02 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-06b7dbbc3fab6c09"
@@ -330,7 +339,15 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-82c9573ed9c6ba66",
+          "source_id": "PROFILE-COLLECT-INV-afc832a9562443-1",
+          "source_url": "https://capitalg.com/",
+          "source_title": "CapitalG is Alphabet’s independent growth fund.",
+          "source_content_hash": "959b9cb6b7a212920e6fa36f518d9c598d42380c59f99e6790ba66dd23ea93ea",
+          "quote": "CapitalG is Alphabet’s independent growth fund.",
+          "quote_hash": "e4096dcab706a60c9fdad93d81657f4dee243592e1e16b6a99ee30b01a009127"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-afc832a9562443-2",
           "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
           "source_title": "Isomorphic Labs 2.0",
           "source_content_hash": "a07df13d4da3856b30e323f1634988ea0b4839b1a4c16d2132d48a43ac3296ab",
@@ -362,7 +379,7 @@
           "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

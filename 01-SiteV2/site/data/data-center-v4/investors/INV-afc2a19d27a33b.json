@@ -139,29 +139,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "SiliconANGLE 报道将 Sequel 列为 Valarian 融资支持者之一。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 Sequel 官网；参与 Valarian 融资的记录来自被投企业官网，未披露 Sequel 单独出资额。",
+      "summary": "Sequel 官网将自身描述为面向创业者、运动员及艺术家的数字家族办公室，并称为其支持的创始人提供资金、传播、人脉与专业支持。Valarian 官方融资页面将 Sequel 列为其 Series A 投资方之一。",
+      "facts": [
+        {
+          "field": "organization_identity",
+          "label": "机构定位",
+          "value": "Sequel官网将其描述为面向创业者、运动员及艺术家的数字家族办公室。",
+          "source_id": "PROFILE-B11-INV-afc2a19d27a33b-1"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "官网称其向创始人提供资金、传播、人脉、影响力及专业支持。",
+          "source_id": "PROFILE-B11-INV-afc2a19d27a33b-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "SiliconANGLE 报道将 Sequel 列入 Valarian 融资支持者。",
+          "description": "Valarian官网将 Sequel 列为其 Series A 投资方之一；未披露 Sequel 单独出资额。",
+          "source_id": "PROFILE-B11-INV-afc2a19d27a33b-2"
+        },
+        {
+          "description": "融资来源记录：Valarian Technologies Ltd. · A轮 · 2026-07-14 · 本轮参投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-03aa198ddff34236"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.sequel.co/",
+          "source_id": "PROFILE-B11-INV-afc2a19d27a33b-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B11-INV-afc2a19d27a33b-1",
+          "source_url": "https://www.sequel.co/",
+          "source_title": "Your legacy, made.",
+          "source_content_hash": "3445f4c676a1e682eb1e69e30905c98be6d605f4ae1fa0865aa1a1be61e25b55",
+          "quote": "The digital family office investing in founders shaping the future of humanity.",
+          "quote_hash": "374ad72575d3a3245c95189ecd55e197071569a3d1c154aec42b05af396039b2"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-afc2a19d27a33b-2",
+          "source_url": "https://www.valarian.com/about",
+          "source_title": "Valarian | About",
+          "source_content_hash": "015d7a205558535fc519533d5b497b17c75e1e43138c67aa5c1830b754ee8097",
+          "quote": "NEA Scout Ventures Artis Ventures Lightbank XTX Ventures Sequel Litquidity Ventures IQ Capital Molten Ventures",
+          "quote_hash": "d53880996435aae9f257ce5d8645af492a8a54ef1c02ec0e6dc330210b7bf2f6"
+        },
         {
           "source_id": "FISRC-03aa198ddff34236",
           "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
-          "source_title": "Sovereign AI infrastructure startup Valarian raises $50M to help nations secure their defense systems - SiliconANGLE",
-          "source_content_hash": "ddecada05230043dceceac21468664997bf6c27f290221ef5ceee40519625d47",
-          "quote": "in a European defense startup. It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC, plus Gokul Rajaram and Nikesh Arora, who participated as angels. In 2025, European defense spending reportedly topped €392 billion (around $447 billion), with a significant chunk of that money going to modern AI-",
-          "quote_hash": "9cdddec256eb5676cd0f65967fe884c25c48af66625af70673df95b71b6a61bb"
+          "source_title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
+          "source_content_hash": "ab99df0f3d10a2c4",
+          "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC",
+          "quote_hash": "59082d2970c48e7a02826f97133fcac56c34d999aad32d2da218f17c22247c22"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -163,10 +163,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "DCVC官网介绍其投资深科技公司；Impulse Space官方公告将其列为Series C回归投资者。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 DCVC 官网；Impulse Space 融资参与来自发行人官方公告。只记录该公司公开列出的投资关系，不推断单独出资额。",
+      "summary": "DCVC 官网将其定位为深科技风险投资机构，自2010年以来支持以计算方法解决现实世界重大问题的创业者。Impulse Space 官方公告将 DCVC 列为其Series C回投投资人之一。",
+      "facts": [
+        {
+          "field": "deep_tech_investment_focus",
+          "label": "官网披露的机构定位",
+          "value": "DCVC 自述为深科技风险投资机构，投资以计算方法解决现实世界重大问题的创业者。",
+          "source_id": "PROFILE-b0dc0cc74259d7554d7b"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {

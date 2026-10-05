@@ -248,19 +248,32 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "Anthropic 官方 Series H 公告将 Brookfield 列为本轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "资产管理业务定位来自 Brookfield 官网；融资参与方来自 Anthropic 官方公告。品牌名未映射为具体 Brookfield 基金。",
+      "summary": "Brookfield 官网将其资产管理业务描述为代表机构及个人投资者进行长期投资，覆盖基础设施、能源、私募股权、地产和信贷；Anthropic Series H 公告列出 Brookfield 为投资方。交易材料未披露具体关联基金或法律实体。",
+      "facts": [
+        {
+          "field": "investment_scope",
+          "label": "官网资产管理业务",
+          "value": "Brookfield 资产管理业务代表机构及个人投资者进行长期投资，覆盖多类资产。",
+          "source_id": "PROFILE-COLLECT-INV-86402224b56edd-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "Anthropic Series H 公告将 Brookfield 列为本轮投资方。",
+          "source_id": "PROFILE-COLLECT-INV-86402224b56edd-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Anthropic 官方 Series H 公告列出 Brookfield 为本轮投资方。",
-          "source_id": "FISRC-b5e22ae086a6b353"
-        },
-        {
           "description": "融资来源记录：NVIDIA · 基础设施融资 · 2026-08-15 · 本轮参投 · 超过 5000 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5514041be03e64ae"
+        },
+        {
+          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b5e22ae086a6b353"
         },
         {
           "description": "融资来源记录：Hark · A轮 · 2026-05-21 · 本轮参投 · $700M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -270,12 +283,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_id": "PROFILE-COLLECT-INV-86402224b56edd-1",
+          "source_url": "https://www.brookfield.com/about-us/businesses/asset-management",
+          "source_title": "Asset Management | Brookfield",
+          "source_content_hash": "3b32da49c61bec93ae9fb40b8c3032b31a1b8618ee1e48fff95aa92c3c992af0",
+          "quote": "We invest on behalf of pension plans, endowments and foundations, sovereign wealth funds, financial institutions, insurance companies and private wealth investors worldwide for the long term.",
+          "quote_hash": "f35e3a379baf1ea88513246ae10ce68c9967f4d324405814c9c16a96245787e4"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-86402224b56edd-2",
           "source_url": "https://www.anthropic.com/news/series-h",
           "source_title": "Anthropic raises $65B Series H at $965B valuation \\ Anthropic",
           "source_content_hash": "c00be615fd4e35832b47e33a715a08c58e5e3c7d7839c6775a6edc97ab162fd9",
-          "quote": "tners, GIC, ICONIQ, and XN. Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Ass",
-          "quote_hash": "e3cc4ebf142ee4184c6168404fc123a4b8ce716d9ae8aec2744d14178316d76d"
+          "quote": "Blackstone, Brookfield, D.E. Shaw Ventures",
+          "quote_hash": "020fb62f030688b03ddf8cee96558a9fff01e676b02eba8049cdc19081c706a7"
         },
         {
           "source_id": "FISRC-5514041be03e64ae",
@@ -286,6 +307,14 @@
           "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
         },
         {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_url": "https://www.anthropic.com/news/series-h",
+          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+          "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+          "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+        },
+        {
           "source_id": "FISRC-9b94f245fa27a161",
           "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
           "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
@@ -294,7 +323,7 @@
           "quote_hash": "48e1f12aa4de57192b035026b33cf2ca4aefc64e84a68b04b7fc279b35c5751b"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

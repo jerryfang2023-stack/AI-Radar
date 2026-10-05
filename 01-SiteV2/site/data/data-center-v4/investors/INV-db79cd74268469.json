@@ -288,69 +288,86 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位据 Village Global 官网；交易参与方来自融资报道，未披露具体基金载体。",
+      "summary": "Village Global 官网将其描述为投资早期、跨地域和行业的创始人；TechCrunch 将其列为 Legato 融资参与方之一。本档只记录公开案例，不表示完整组合。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网投资阶段",
+          "value": "官网称其投资跨地域和行业的早期创始人。",
+          "source_id": "PROFILE-COLLECT-INV-db79cd74268469-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "TechCrunch 将 Village Global 列为 Legato 融资参与方之一。",
+          "source_id": "PROFILE-COLLECT-INV-db79cd74268469-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Legato 轮次未披露 本轮参投。",
+          "description": "融资来源记录：Legato · 轮次未披露 · 2026-08-26 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a7bcfb1a7209676"
         },
         {
-          "description": "公开融资来源将其列为 Sazabi 种子轮 本轮领投。",
+          "description": "融资来源记录：Sazabi · 种子轮 · 2026-06-25 · 本轮领投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fbca80af0ef21f0d"
         },
         {
-          "description": "公开融资来源将其列为 Maisa AI 种子轮 既有投资方（种子轮前领投），本轮参投。",
+          "description": "融资来源记录：Maisa AI · 种子轮 · 2025-08-27 · 既有投资方（种子轮前领投），本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f154528a83a385f1"
-        },
-        {
-          "description": "公开融资来源将其列为 P-1 AI, Inc. 种子轮 种子轮参投。",
-          "source_id": "PROFILE-410628f8b4db273cf3fa"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-7a7bcfb1a7209676",
+          "source_id": "PROFILE-COLLECT-INV-db79cd74268469-1",
+          "source_url": "https://www.villageglobal.com/",
+          "source_title": "Village Global VC | Early-Stage Venture Capital with Top Entrepreneurs",
+          "source_content_hash": "3effae8b7dc207a2117ddf0dc5ffaec777f136e234449ad4d44437b33bac8803",
+          "quote": "We invest in relentlessly resourceful founders",
+          "quote_hash": "85b78b9dc5f94339bdb2970903aa7b6636eeb2358be910f31dda00e3a8069f92"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-db79cd74268469-2",
           "source_url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
           "source_title": "Hearing tech startup Legato emerges from stealth with $12M and a peek at its AI hearing glasses | TechCrunch",
           "source_content_hash": "0d37d97e12af2505b2e8291abd737419a4691c7f04b0c1d7e204061cf6b0ebff",
+          "quote": "The company’s funding, which is from Neotribe Ventures, Listen, and Village Global, has largely gone toward product development",
+          "quote_hash": "d85925f604bf4bd74e45cfe353dcb1252b9161d4e660e763d653c6dd212ce2af"
+        },
+        {
+          "source_id": "FISRC-7a7bcfb1a7209676",
+          "source_url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
+          "source_title": "听力科技初创公司Legato结束隐身模式，获1200万美元融资，并首度展示其AI助听眼镜",
+          "source_content_hash": "ee31f942397e1de2295d1acc38413e133d72d1ac12d4414155bb5587bfb4ad8b",
           "quote": "The company’s funding, which is from Neotribe Ventures, Listen, and Village Global, has largely gone toward product development, along with marketing efforts.",
           "quote_hash": "068e407153c0ee66fc1c27e152aa5c92b47d9f150426b70b3b9449b8699da6fa"
         },
         {
           "source_id": "FISRC-fbca80af0ef21f0d",
           "source_url": "https://www.prnewswire.com/news-releases/sazabi-raises-8-million-seed-round-to-build-the-ai-native-observability-platform-for-fast-moving-engineering-teams-302810085.html",
-          "source_title": "Sazabi Raises $8 Million Seed Round to Build the AI-Native Observability Platform for Fast-Moving Engineering Teams",
-          "source_content_hash": "551f995330d0f6b0a352ba9db0a70fdf46292cbe6721dae207b305f57127ae96",
+          "source_title": "Sazabi 完成 800 万美元种子轮融资，为快速发展的工程团队构建 AI 原生可观测性平台",
+          "source_content_hash": "ba2d7efd8fe4675920c21c93d4f1f1d1be23bebb8b4de1db51ede6b4be910bd8",
           "quote": "an $8 million seed financing led by J2 Ventures, Village Global, and Y Combinator",
           "quote_hash": "66231f250add3445a0eb787838465ec152c54b0d4c4bb1fc7a300b1e33e37a2e"
         },
         {
           "source_id": "FISRC-f154528a83a385f1",
           "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
-          "source_title": "Maisa AI gets $25M to fix enterprise AI's 95% failure rate | TechCrunch",
-          "source_content_hash": "70ca342ae90df2773bf45f361e76f96a41fc6dcca508a53a6057f4a5411998b9",
+          "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
+          "source_content_hash": "8c799b616e20ea1d",
           "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
           "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
-        },
-        {
-          "source_id": "PROFILE-410628f8b4db273cf3fa",
-          "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
-          "source_title": "P-1 AI Raises $23 Million in Seed Funding to Develop Engineering AGI 'Archie'",
-          "source_content_hash": "e139a5f61979de51552b1f4e663668fb1611402dde765eae6b6dc4e567df2224",
-          "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
-          "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
         }
       ],
       "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": ""
     }
   }
 }

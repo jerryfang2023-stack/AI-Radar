@@ -139,29 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "Coralogix 官方融资公告称 Greenfield 与 Advent、CPPIB 共同领投 Series F。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 Greenfield 官网；融资轮次与联合领投信息来自 Coralogix 公告，未披露 Greenfield 单独出资额。",
+      "summary": "Greenfield Partners 官网将其定位为全球 early-growth 阶段的投资机构。Coralogix 2026年 Series F 公告称该轮由 Advent、CPPIB 与 Greenfield 共同领投。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Greenfield 官网将其投资重点定位于全球 early-growth 阶段。",
+          "source_id": "PROFILE-B11-INV-af03b0ba632217-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Coralogix 融资公告称 Greenfield、Advent 与 CPPIB 共同领投 Series F。",
+          "description": "Coralogix 公告称 Greenfield 与 Advent、CPPIB 共同领投其2亿美元 Series F；未披露其单独投资额。",
+          "source_id": "PROFILE-B11-INV-af03b0ba632217-2"
+        },
+        {
+          "description": "融资来源记录：Coralogix · F轮 · 2026-06-03 · 本轮联合领投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f1098c86cb2286"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.greenfield-growth.com/intro/",
+          "source_id": "PROFILE-B11-INV-af03b0ba632217-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-98f1098c86cb2286",
+          "source_id": "PROFILE-B11-INV-af03b0ba632217-1",
+          "source_url": "https://www.greenfield-growth.com/intro/",
+          "source_title": "Greenfield Partners — Introduction",
+          "source_content_hash": "ce14546dfe3de3a353b50236bdde373065ace68e62e229c1dae468969915b539",
+          "quote": "We invest in visionary Early Growth companies, globally",
+          "quote_hash": "f2ba03fecdba1b05add417ec734c6b58b719152e4f64614faa49172d6c39eda6"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-af03b0ba632217-2",
           "source_url": "https://www.globenewswire.com/news-release/2026/06/03/3306135/0/en/coralogix-raises-200m-to-scale-the-observability-backbone-for-the-age-of-ai.html",
           "source_title": "Coralogix Raises $200M to Scale the Observability Backbone",
           "source_content_hash": "27161596ef089bb3e468f1635540a3380318e0deb11e7fa8a3ca122fc2747a22",
-          "quote": "y, today announced it has raised $200 million in Series F funding. The round was co-led by Advent, CPPIB, and Greenfield, with participation from Brighton Park Capital, bringing total funding in Coralogix to $550M. “AI is fundamentally changing the way enterprises operate, and observability is quickly evolving into a core layer of busines",
-          "quote_hash": "0977790c1ca0faefb6a43c3a4a44f35f5ddec3e8656f7e1e748da43848621e5e"
+          "quote": "The round was co-led by Advent, CPPIB, and Greenfield, with participation from Brighton Park Capital",
+          "quote_hash": "d89a64b44da20dbe76bb8b3497871ca6ca1e090e6ae51e89c17108ba3e119136"
+        },
+        {
+          "source_id": "FISRC-98f1098c86cb2286",
+          "source_url": "https://www.globenewswire.com/news-release/2026/06/03/3306135/0/en/coralogix-raises-200m-to-scale-the-observability-backbone-for-the-age-of-ai.html",
+          "source_title": "Coralogix 融资 2 亿美元，为 AI 时代扩展可观测性骨干",
+          "source_content_hash": "d20ed695940e0cb15ecd2d8bc0ac9cd1ad59744672f140cde649e21c0f78d2de",
+          "quote": "The round was co-led by Advent, CPPIB, and Greenfield, with participation from Brighton Park Capital",
+          "quote_hash": "d89a64b44da20dbe76bb8b3497871ca6ca1e090e6ae51e89c17108ba3e119136"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

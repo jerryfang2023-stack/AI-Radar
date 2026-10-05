@@ -165,10 +165,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "睿心医疗项目融资记录将华创资本列为 A+ 轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构背景来自21世纪经济报道对华创资本合伙人的专访；融资记录来自36氪项目融资表。公开资料未在本轮确认该品牌对应的现行管理法人，暂不补写法定管理主体、规模或完整组合。",
+      "summary": "公开报道将华创资本描述为2006年成立的早期投资机构，并介绍其早期TMT投资背景；36氪睿心医疗项目资料将其列为2020年A+轮投资方。当前可核对到的是机构品牌资料，未把品牌进一步映射到未核实的管理法人。",
+      "facts": [
+        {
+          "field": "institution_profile",
+          "label": "公开报道披露的机构背景",
+          "value": "21世纪经济报道称华创资本成立于2006年，并以早期TMT领域的投资为外界所熟知。该报道可确认机构品牌和早期投资定位，但未核实其现行法律管理主体。",
+          "source_id": "PROFILE-COLLECT-INV-b9cb37fb70186a-K-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -189,6 +196,14 @@
           "source_content_hash": "201162f9f0e559e0d0fea9a760fce560c2d0c1897789438eeaad163cf5b71661",
           "quote": "中丽基金 D轮 2026-05 近亿人民币 广州金控集团 ， 越富基金 C轮 2021-08 数亿人民币 国投招商 B轮 2021-01 近3亿元人民币 腾讯投资 ， 经纬创投 A+轮 2020-06 5000万人民币 华创资本 ， 经纬创投 ， 绿河投资 查看更多 工商信息 工商全称 深圳睿心智能医疗科技有限公司 英文全称 Shenzhen Ruixin Intelligent Medical Technology Co., Ltd. 法定代表人 郑凌霄 成立时间 2017-12-04 注册地址 深圳市南山区粤海街道高新区社区高新南环路46号留学生创业大厦二期1302 股东（发起人） 持股比例 认缴出资额 认缴出资日期 林芝腾讯科技有限公司 20.72% 45.56万人民币 2021-08-31 郑凌霄 16",
           "quote_hash": "531c408caba1d92e64b398fa74e58a600176566252bcf54a683d352b11bb1473"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b9cb37fb70186a-K-2",
+          "source_url": "https://m.21jingji.com/article/20210218/herald/d5f15b168977e60801cbb1bf39a3851d_zaker.html",
+          "source_title": "专访华创资本熊伟铭：一切审美向临床看齐，做专业化的生命科学投资 - 21世纪经济报道",
+          "source_content_hash": "66b1021e965530ab29ac755a743031dff42c931828525cb41315dc1839767628",
+          "quote": "成立于2006年的华创资本，过去常常因在早期TMT领域的出色投资而为人们所熟知",
+          "quote_hash": "ffbf47e8966f62b1a0934e58ccdd0c5da907951276b9322f986c79e92adceeb7"
         },
         {
           "source_id": "FISRC-50b5e9b4a45a40c4",

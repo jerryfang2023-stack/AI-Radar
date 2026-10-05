@@ -229,19 +229,32 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "公开融资报道将中国移动列为月之暗面 2026 年 5 月融资的参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "企业身份、股权投资表述及两项 2024 年投资案例据中国移动 2024 年可持续发展报告；报告未在该处披露投资金额或具体基金载体。",
+      "summary": "中国移动 2024 年可持续发展报告披露，公司运用股权投资促进产业链、创新链和资本链协同，并列举 2024 年投资广州视源创新科技有限公司及河钢数字技术股份有限公司。此档案记录中国移动的企业股权投资活动，不将其等同于独立风险投资基金。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "企业投资职能",
+          "value": "中国移动年报称公司运用股权投资促进产业链、创新链和资本链协同。",
+          "source_id": "PROFILE-COLLECT-INV-b31511b4223e35-1"
+        },
+        {
+          "field": "portfolio_history",
+          "label": "2024 年披露的投资案例",
+          "value": "报告列举中国移动 2024 年投资广州视源创新科技有限公司和河钢数字技术股份有限公司。",
+          "source_id": "PROFILE-COLLECT-INV-b31511b4223e35-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "参与月之暗面 2026 年 5 月融资。",
-          "source_id": "FISRC-c268e82669700804"
-        },
-        {
           "description": "融资来源记录：Moonshot AI · D轮 · 2026-05-19 · 本轮参投 · 5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-aa17d1f1d8d04ffb"
+        },
+        {
+          "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-05-07 · 本轮参投 · 约20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c268e82669700804"
         },
         {
           "description": "融资来源记录：Moonshot AI · 历史轮次未披露 · 2026-05-02 · 2026年5月20亿美元融资参投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -251,12 +264,28 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-c268e82669700804",
-          "source_url": "https://www.nbd.com.cn/articles/2026-05-07/4381686.html",
-          "source_title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元 | 每经网",
-          "source_content_hash": "e4eb4471be0871cab7a91ffe50ce50689ff0ef06ecfb08a75ab62c1d7421c10b",
-          "quote": "过200亿美元 每日经济新闻 2026-05-07 09:38:08 每经AI快讯，5月7日，据华峰资本官微消息，月之暗面（Kimi）已完成新一轮约20亿美元融资，投后估值超过200亿美元。本轮由美团龙珠领投，水木资本、中国移动、CPE（中信产业基金）等参投。华峰资本担任本次交易部分买方的财务顾问，在交易结构设计、投资方匹配及谈判中提供支持。 如需转载请与《每日经济新闻》报社联系。 未经《每日经济新闻》报社授权，严禁转载或镜像，违者必究。 读者热线：4008890008 特别提醒 ：如果我们使用了您的图片，请作者与 本站联系 索取稿酬。如您不希望作品出现在本站，可联系我们要求撤下您的作品。 上一篇文章 光伏设备板块早盘拉升，安彩高科直线涨停 返回每经网首页 下一篇文章 日本东证指数上涨3%至3840.63点 相",
-          "quote_hash": "969e110b7dfeb9659c2a4978ea48277c1cb5f07bf8b8dfec1a6b62325b526219"
+          "source_id": "PROFILE-COLLECT-INV-b31511b4223e35-1",
+          "source_url": "https://www.chinamobileltd.com/en/ir/reports/ar2024/sd2024.pdf",
+          "source_title": "China Mobile Limited 2024 Sustainability Report",
+          "source_content_hash": "c8adf18ccb53d684d051b0bc58514f84b26b7e6877e65b4bea865ff9e35c785f",
+          "quote": "We utilize equity investment as a bond to promote deep integration of industry chains, innovation chains and capital chains.",
+          "quote_hash": "da426c71154c72f80e8e5eef4634377a76f4c9bc24ac5fa9a2b35955ef38554e"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b31511b4223e35-2",
+          "source_url": "https://www.chinamobileltd.com/en/ir/reports/ar2024/sd2024.pdf",
+          "source_title": "China Mobile Limited 2024 Sustainability Report",
+          "source_content_hash": "c8adf18ccb53d684d051b0bc58514f84b26b7e6877e65b4bea865ff9e35c785f",
+          "quote": "China Mobile invested in Guangzhou Luxvisions",
+          "quote_hash": "371ad625b06d4e13c84de5e9a73d5c03c1453ed2899207f9f8b2f0ec326d6e94"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b31511b4223e35-3",
+          "source_url": "https://www.chinamobileltd.com/en/ir/reports/ar2024/sd2024.pdf",
+          "source_title": "China Mobile Limited 2024 Sustainability Report",
+          "source_content_hash": "c8adf18ccb53d684d051b0bc58514f84b26b7e6877e65b4bea865ff9e35c785f",
+          "quote": "China Mobile invested in HBIS Digital Technology",
+          "quote_hash": "243eee18370f725b0d7f5e73329b44faff5ba37549f2ac577ff992d6364f5111"
         },
         {
           "source_id": "FISRC-aa17d1f1d8d04ffb",
@@ -267,6 +296,14 @@
           "quote_hash": "a0b8d621ed141fc38c7428f5472b750ac635b5ef9127b7a09c6447f0e9eb22d8"
         },
         {
+          "source_id": "FISRC-c268e82669700804",
+          "source_url": "https://www.nbd.com.cn/articles/2026-05-07/4381686.html",
+          "source_title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
+          "source_content_hash": "507968dd939d15c9e72b909ed7776ff0f48463fc1f6fbc9ce4b06d5da7eee3b2",
+          "quote": "水木资本、中国移动、CPE（中信产业基金）等参投",
+          "quote_hash": "c6adb2619bd02d40f0c0d511a0c184b7dee0d9e883a01905faea644191911821"
+        },
+        {
           "source_id": "FISRC-773362f4e07cd598",
           "source_url": "https://news.pedaily.cn/202607/566986.shtml",
           "source_title": "月之暗面完成超35亿美元F轮融资",
@@ -275,7 +312,7 @@
           "quote_hash": "dcee290bad1bf3693aeb96575e5c165e1082ae7c245dd86ccef1ab0909600b8b"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

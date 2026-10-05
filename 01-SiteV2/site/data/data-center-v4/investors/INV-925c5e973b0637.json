@@ -139,33 +139,128 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "启明创投官方公告称，辰德资本作为佳量脑科学 C 轮老股东继续投资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资规模与组合数量为公司官网自报指标，按官网快照日期记录；本档不推断其法律注册实体名称。",
+      "summary": "辰德资本（CD Capital）官网将其描述为总部位于上海、聚焦医疗技术的风险投资机构，称成立于2013年，并披露美元及人民币基金管理规模逾14亿美元、累计90余项投资。启明创投公告将辰德资本列为佳量脑科学C轮继续投资的老股东。",
+      "facts": [
+        {
+          "field": "headquarters_and_focus",
+          "label": "总部及投资领域",
+          "value": "总部位于上海，聚焦医疗技术风险投资。",
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-1"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2013年（官网披露）",
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-2"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资理念",
+          "value": "官网称其以深入医疗行业研究寻找技术创新驱动的投资机会。",
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-6"
+        },
+        {
+          "field": "capital_managed",
+          "label": "基金管理规模",
+          "value": "官网披露管理美元及人民币基金合计超过14亿美元。",
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-4"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "累计投资",
+          "value": "官网披露累计超过90项组合投资。",
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-5"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "启明创投公告列明辰德资本作为佳量脑科学 C 轮继续投资的老股东。",
+          "description": "启明创投2026年9月公告称，辰德资本作为佳量脑科学老股东继续参与C轮融资；未披露其单独出资额。",
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-3"
+        },
+        {
+          "description": "融资来源记录：佳量脑科学 · 多轮融资 · 2026-09-08 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0fc87012f374b083"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "CD Capital（辰德资本）",
+          "url": "https://cd-healthinv.com/en/",
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-1",
+          "source_url": "https://cd-healthinv.com/en/",
+          "source_title": "CD Capital｜Healthcare Investment",
+          "source_content_hash": "4d45759d85706a4163ea98667c19d1b2900852697427315fb0dbdaa4606030b0",
+          "quote": "Headquartered in Shanghai, CD Capital is a MedTech-focused venture capital firm led by industry veterans",
+          "quote_hash": "1ca63530b1b6017eab94ddece740b49426c4e7a422e463f7f8a9cfd70488fcd5"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-2",
+          "source_url": "https://cd-healthinv.com/en/about.html",
+          "source_title": "About us - CD Capital",
+          "source_content_hash": "c9772ebf04f764c193f7f6e8f7ef913421b264474a1afb86e168eeefe7e6eebd",
+          "quote": "Founded in 2013",
+          "quote_hash": "1ef63466ff4de1b25a8e7d91949218f2d0728fa4b4fe9cc5e98cb3df6f01f07e"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-6",
+          "source_url": "https://cd-healthinv.com/en/about.html",
+          "source_title": "About us - CD Capital",
+          "source_content_hash": "c9772ebf04f764c193f7f6e8f7ef913421b264474a1afb86e168eeefe7e6eebd",
+          "quote": "With extensive industry resources and years of in-depth research in the healthcare sector, CD Capital seizes investment opportunities driven by technological innovation.",
+          "quote_hash": "3e9cf4466eef47397915b767f10dda1345608c2650f7cae6eebb99e74ec68c85"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-4",
+          "source_url": "https://cd-healthinv.com/en/about.html",
+          "source_title": "About us - CD Capital",
+          "source_content_hash": "c9772ebf04f764c193f7f6e8f7ef913421b264474a1afb86e168eeefe7e6eebd",
+          "quote": "Over $1.4 billion",
+          "quote_hash": "67f919f61e424ac2369a84b564f6fa6dbc1d037ea0d3c3c8b6c9dd227613f25f"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-5",
+          "source_url": "https://cd-healthinv.com/en/about.html",
+          "source_title": "About us - CD Capital",
+          "source_content_hash": "c9772ebf04f764c193f7f6e8f7ef913421b264474a1afb86e168eeefe7e6eebd",
+          "quote": "Over 90 portfolio investments",
+          "quote_hash": "f80f8a047187640845de439ee4cd29c599a9cbaa240916eed59c05bab46a2106"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-3",
+          "source_url": "https://www.qimingvc.com/en/node/7682",
+          "source_title": "启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮 | Qiming Venture Partners",
+          "source_content_hash": "de06e3fa4673b1c9ff12096263e0e904b33d7cefc7f7668460ab7a12b205efc7",
+          "quote": "C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投",
+          "quote_hash": "83eedb162bbf7e71c7d054dd927a7029ea75baec84ec82a64070fc7eb03b299e"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-925c5e973b0637-7",
+          "source_url": "https://cd-healthinv.com/en/news_id1437.html",
+          "source_title": "Evolution — 2025 CD Capital Annual Conference & Industry Forum - 辰德资本",
+          "source_content_hash": "3c9bfeb53e990f6503a7d237f1d98d713eaf8b7ed46fdf11efac8ea1eab97011",
+          "quote": "CD Capital has upgraded its investment philosophy",
+          "quote_hash": "6165767cb58fc211895de0bbe18930ef10026871abb8afa8363f8267cd1640ee"
+        },
         {
           "source_id": "FISRC-0fc87012f374b083",
           "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
           "source_title": "启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮 | 启明创投",
-          "source_content_hash": "a51c585248897d932a8f4d0ca874c53a5992b5b2956ed607f0212f9ceb444913",
-          "quote": "册与临床的协同推进。我们持续看好神经调控领域的巨大临床刚需，期待佳量脑科学能不断加速核心产品商业化落地，推进海外注册与全球临床合作，推动中国原创脑机接口技术服务国内外广大患者。” C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投。D轮融资由赛智伯乐、宽桥恒松及宁波国资等多家机构共同参与。 更多新闻 投资企业新闻 启明星 | Robochallenge全球化进展与生态共建发布| WAIC 2026 09/14 2026 投资企业新闻 启明星 | 单次治疗，长期获益：信玖凝®全国首方落地，血友病B诊疗步入基因治疗时代 09/14 2026 投资企业新闻 启明星 | 全球领先的机器人大脑企业梅卡曼德",
-          "quote_hash": "f0671f3bc2b4451abb10bd78b3a2663313ed612b4c8aa9e4f1ef4b756f373fac"
+          "source_content_hash": "421f431cbb5e84018cc04f18b116bd58447a3aa7183a44bd69dd78d338481f66",
+          "quote": "C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投。",
+          "quote_hash": "cc57f536c07b39a6ca04c83288ac32ea7348ed076980ecfdeddebef44ada2e0b"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-04"
     }
   }
 }

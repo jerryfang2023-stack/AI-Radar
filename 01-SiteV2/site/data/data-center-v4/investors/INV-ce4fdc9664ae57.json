@@ -137,35 +137,83 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
+      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "last_verified_at": "2026-10-05",
+      "coverage_status": "researched",
+      "coverage_note": "ElevenLabs官方作者页核实其联合创始人、研究与工程职责、Google机器学习经历和Cambridge MPhil学习经历；作者页没有说明其是否取得MPhil学位。融资稿仅证明一项公开投资关联，未披露个人出资额。",
+      "summary": "Piotr Dąbkowski 是 ElevenLabs 联合创始人，负责研究与工程团队。ElevenLabs 官方作者页还称他此前在 Google 从事机器学习，并曾在剑桥大学攻读 MPhil（来源未说明是否取得学位）。Bland 融资稿将其列为该公司 Series C 参与者之一，未披露个人出资额。",
+      "current_roles": [
+        {
+          "organization": "ElevenLabs",
+          "title": "联合创始人，负责研究与工程团队",
+          "source_id": "elevenlabs_piotr"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Google",
+          "title": "机器学习相关工作（具体职位未披露）",
+          "period": "官方作者页未披露",
+          "description": "ElevenLabs官方作者页称其此前在Google从事机器学习，未列出具体职务或任职时间。",
+          "source_id": "elevenlabs_piotr"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Cambridge",
+          "qualification": "曾攻读 MPhil；作者页未说明是否获授学位",
+          "source_id": "elevenlabs_piotr"
+        }
+      ],
+      "experience_summary": "ElevenLabs官方作者页列出其在机器学习、研究与工程方面的经历和剑桥学习经历；Bland融资稿提供一项公开投资关联。",
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Bland C轮 本轮参投。",
+          "description": "Bland发布稿称 Piotr Dąbkowski 参与其2026年5,000万美元Series C；个人出资额未披露。",
+          "source_id": "bland_series_c"
+        },
+        {
+          "description": "融资来源记录：Bland · C轮 · 2026-06-16 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6233a9ab76850de"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "elevenlabs_piotr",
+          "source_url": "https://elevenlabs.io/blog/authors/piotr-dabkowski",
+          "source_title": "Piotr Dabkowski",
+          "source_content_hash": "3f47b8fee0709655ee950d780f4c7f7b11ca7cd3cebd758827749a2d092e09cb",
+          "quote": "Piotr is the cofounder of ElevenLabs, where he leads research and engineering teams",
+          "quote_hash": "604f2f0b37c01ce77d78ee6de9bbbca90a521d5600ffc517b64f4ec877711ec9"
+        },
+        {
+          "source_id": "elevenlabs_piotr_career",
+          "source_url": "https://elevenlabs.io/blog/authors/piotr-dabkowski",
+          "source_title": "Piotr Dabkowski",
+          "source_content_hash": "3f47b8fee0709655ee950d780f4c7f7b11ca7cd3cebd758827749a2d092e09cb",
+          "quote": "Before ElevenLabs, Piotr worked on machine learning at Google and studied for an MPhil at the University of Cambridge",
+          "quote_hash": "e4bde93e606c26f7124dabb36422cc2ceeb0d222a0f088fa8f3132ceaf066e16"
+        },
+        {
+          "source_id": "bland_series_c",
+          "source_url": "https://www.prnewswire.com/news-releases/bland-surpasses-100m-funding-with-new-series-c-to-advance-voice-ai-for-complex-high-stakes-conversations-302801583.html",
+          "source_title": "Bland Surpasses $100M Funding With New Series C to Advance Voice AI for Complex, High-Stakes Conversations",
+          "source_content_hash": "9dc77faf6936f9d751d45e084f61ffcc6a5df31f892b826d7ad11a977bbff51b",
+          "quote": "All existing investors also participated, including Emergence Capital, Upfront Ventures, Scale Venture Partners, Y Combinator, Max Levchin, Piotr Dąbkowski, and Jeff Lawson.",
+          "quote_hash": "4dcc03d066d6f3b0455dcafff5f70769227023dfca7cf06ebe0887cbd72d5ea4"
+        },
         {
           "source_id": "FISRC-a6233a9ab76850de",
           "source_url": "https://multiples.vc/private-comps/bland-ai",
-          "source_title": "Bland AI Funding, Investors &amp; Competitors | Multiples",
-          "source_content_hash": "0ef4549cba25fe8d713981d526bda9e0ff9aeeb336c489237b6743a6bbe2a522",
+          "source_title": "Bland AI Funding, Investors & Competitors | Multiples",
+          "source_content_hash": "61e54f8481bb7570",
           "quote": "All existing investors, including Emergence Capital, Upfront Ventures, Scale Venture Partners, Y Combinator, Max Levchin, Piotr Dąbkowski, and Jeff Lawson, also participated.",
           "quote_hash": "f95896f249945e60f276144d3c7e8fd95ced5417c65e48f78848e9689de9e4d9"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

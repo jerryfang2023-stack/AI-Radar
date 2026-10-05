@@ -180,15 +180,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资方向来自官网自述，参投案例分别由媒体报道及被投企业公告支持。",
-      "summary": "Cyberstarts 官网称其是网络安全公司的早期合作方；NewCore 与 Island 的融资披露均将 Cyberstarts 列为投资方。本档是有限案例记录。",
+      "coverage_status": "researched",
+      "coverage_note": "网络安全方向与早期合作方式来自机构官网；融资参与来自项目方及媒体披露。未使用官网当前组合估值、管理规模等易变汇总数字。",
+      "summary": "Cyberstarts 官网称其与具有行业影响力的网络安全公司从早期建立合作关系。NewCore 和 Island 的融资披露将 Cyberstarts 列为投资方；档案只记录公开案例，不代表完整组合或基金规模。",
       "facts": [
         {
           "field": "investment_focus",
           "label": "官网自述方向",
           "value": "网络安全公司",
           "source_id": "PROFILE-6619e61b7308da8b2110"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网自述的早期合作方式",
+          "value": "官网称 Cyberstarts 是网络安全创业公司的早期合作伙伴。",
+          "source_id": "PROFILE-COLLECT-INV-5cee98d72d3bac-G-4"
         }
       ],
       "milestones": [],
@@ -227,6 +233,14 @@
           "source_content_hash": "0f912546270c122fad99c1bc4258e9e5e05b3401b0576a585d4c160062e32158",
           "quote": "backed by leading venture funds – Insight Partners, Sequoia Capital, Cyberstarts and Stripes",
           "quote_hash": "cbbe2cac823e1aa487a5fc545ae9c49aaabe81ae14c7ed6f1b774888596f2b28"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-5cee98d72d3bac-G-4",
+          "source_url": "https://www.cyberstarts.com/",
+          "source_title": "Cyberstarts",
+          "source_content_hash": "031f2a7c134953501ba5ec0c84554c344f539ce248b5b09ced5ab535aa853b48",
+          "quote": "We are the day one partner for industry-defining cybersecurity companies.",
+          "quote_hash": "890c803b5155f800fd4c4963833bc9f80da00b3237e5c1ecb1618ed59582ebd3"
         }
       ],
       "last_verified_at": "2026-10-03",

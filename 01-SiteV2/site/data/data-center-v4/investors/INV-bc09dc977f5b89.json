@@ -123,33 +123,98 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "36氪项目融资记录将创东方投资列为中科类脑 A 轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "summary": "创东方官网确认其主体为深圳市创东方投资有限公司，2007 年成立，专注中小型科技创新企业股权投资，以创业投资（含孵化投资）为重心，并开展并购及产业投资；主要领域包括 AI 与大数据、生物技术、科技消费品、新能源及新材料。36氪项目档案将创东方投资列为中科类脑 2020 年 A 轮投资方。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "法律主体",
+          "value": "深圳市创东方投资有限公司",
+          "source_id": "PROFILE-B13-INV-bc09dc977f5b89-1"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2007年8月",
+          "source_id": "PROFILE-B13-INV-bc09dc977f5b89-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资业务",
+          "value": "以创业投资（含孵化投资）为重心，并开展并购投资和产业投资",
+          "source_id": "PROFILE-B13-INV-bc09dc977f5b89-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "AI与大数据、生物技术、科技消费品、新能源、新材料",
+          "source_id": "PROFILE-B13-INV-bc09dc977f5b89-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "参与中科类脑 A 轮。",
+          "description": "36氪中科类脑项目档案记载，创东方投资参与其 2020 年 A 轮融资（该项目页称该轮为亿元人民币）。",
+          "source_id": "PROFILE-B13-INV-bc09dc977f5b89-4"
+        },
+        {
+          "description": "融资来源记录：中科类脑 · 历史轮次未披露 · A轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4cd330eaa5f3d5fc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "创东方官网",
+          "url": "https://www.cdfcn.com/",
+          "source_id": "PROFILE-B13-INV-bc09dc977f5b89-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B13-INV-bc09dc977f5b89-1",
+          "source_url": "https://www.cdfcn.com/aboutus/profile/",
+          "source_title": "创东方投资 | 同创东方 共享成长-公司简介",
+          "source_content_hash": "c47bb78321f18d74af6df9d2af8ee8e1e7672ea6d6e9e20b5da964f7c9eae1c7",
+          "quote": "深圳市创东方投资有限公司（以下简称“创东方”）成立于2007年8月，是一家专注于中小型科创型企业股权投资的专业机构",
+          "quote_hash": "8781b6076651fcc46a34e04e2da8dad5199f28d4e68301aaeaa2aabe81139044"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-bc09dc977f5b89-2",
+          "source_url": "https://www.cdfcn.com/aboutus/profile/",
+          "source_title": "创东方投资 | 同创东方 共享成长-公司简介",
+          "source_content_hash": "c47bb78321f18d74af6df9d2af8ee8e1e7672ea6d6e9e20b5da964f7c9eae1c7",
+          "quote": "以创业投资（含孵化投资）为重心，协同开展并购投资和产业投资等业务",
+          "quote_hash": "a5227fd63085aad04559d8e58f566fe5fa4b762fbf639f6a50c07c39c2e6945f"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-bc09dc977f5b89-3",
+          "source_url": "https://www.cdfcn.com/aboutus/profile/",
+          "source_title": "创东方投资 | 同创东方 共享成长-公司简介",
+          "source_content_hash": "c47bb78321f18d74af6df9d2af8ee8e1e7672ea6d6e9e20b5da964f7c9eae1c7",
+          "quote": "主要投资于以底层技术创新或创新应用驱动的 大AI（AI、大数据）、大健康（生物技术）、大消费（科技消费品）、 新制造（新能源、新材料） 等领域",
+          "quote_hash": "4b586edd3377681e1d9aed2569502a344466cd1886c08331dd6c16507abdcd21"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-bc09dc977f5b89-4",
+          "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
+          "source_title": "中科类脑 | 项目信息-36氪",
+          "source_content_hash": "0568284884832b7d3a9e23cde4dd546743babcccd17da0c0836a444af70d8685",
+          "quote": "A轮 2020-10 亿元人民币 合肥产投集团 ， 金科君创 ， 创东方投资",
+          "quote_hash": "d80e3102d08c518a6e71edc0aeff9cbe95c3a57ccecd008cf8ca70543f80340f"
+        },
         {
           "source_id": "FISRC-4cd330eaa5f3d5fc",
           "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
           "source_title": "中科类脑 | 项目信息-36氪",
-          "source_content_hash": "0568284884832b7d3a9e23cde4dd546743babcccd17da0c0836a444af70d8685",
-          "quote": "， 水木基金 ， 启迪基金 B轮 2025-04 亿级人民币 中移和创 相关文章 A+轮 2021-08 未透露 东方富海 ， 华柏基金 ， 中融盈通 A轮 2020-10 亿元人民币 合肥产投集团 ， 金科君创 ， 创东方投资 ， 华安嘉业 ， 量子基金 ， 国元股投 ， 华文投资 ， 合肥创新投资 ， 安华创投基金 ， 安徽省量子科学产业发展基金 相关文章 天使轮 2019-02 未透露 合肥高投 工商信息 工商全称 合肥中科类脑智能技术有限公司 英文全称 Hefei Zhongke Brain Intelligence Technology Co., Ltd. 法定代表人 刘海峰 成立时间 2017-09-15 注册地址 中国（安徽）自由贸易试验区合肥市高新区望江西路5089号中国科大先进技术研究院一号",
-          "quote_hash": "da296a469daa23c6f79f50af5c861c54264a6fafe1e004f580f68f317d4a4998"
+          "source_content_hash": "172b52b0715adcdc",
+          "quote": "A轮 2020-10 亿元人民币 合肥产投集团 ， 金科君创 ， 创东方投资 ， 华安嘉业 ， 量子基金 ， 国元股投 ， 华文投资 ， 合肥创新投资 ， 安华创投基金 ， 安徽省量子科学产业发展基金",
+          "quote_hash": "8c4596a390f6ae35cba538d7b05477bf2548bb2231d5cabd716f22c6c1a630da"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

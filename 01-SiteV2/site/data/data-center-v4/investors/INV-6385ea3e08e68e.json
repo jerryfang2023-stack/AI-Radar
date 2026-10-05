@@ -186,7 +186,7 @@
       }
     ],
     "public_profile": {
-      "summary": "教保生命官网（2026年4月关系企业表）列出其资产管理子公司及美国、日本当地资产管理法人；相关投资管理职能由这些子公司承担。",
+      "summary": "教保生命 2026 年 4 月关系企业表列出多家资产管理关联公司：教保AIM资产管理从事信托及集合投资业务，美国当地法人提供全权投资管理服务。日本当地业务的官网语言版本有差异：韩文表列为投资咨询，英文表列为证券投资；档案保留两种原文描述，不将其合并。",
       "facts": [
         {
           "field": "subsidiary_activity",
@@ -199,6 +199,12 @@
           "label": "官网列示的海外关联公司业务",
           "value": "美国当地法人开展投资一任业务，日本当地法人开展投资咨询业务。",
           "source_id": "PROFILE-INV-6385ea3e08e68e-2"
+        },
+        {
+          "field": "overseas_asset_management_affiliates",
+          "label": "官方列示的海外资产管理关联公司",
+          "value": "教保生命官方英文关系企业表列出其美国当地法人提供全权投资管理服务、日本当地法人从事证券投资；韩文版本对日本业务另有描述。",
+          "source_id": "PROFILE-COLLECT-INV-6385ea3e08e68e-G-4"
         }
       ],
       "milestones": [],
@@ -214,8 +220,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "此档案描述保险集团及其投资管理子公司关系，不把母公司与各资产管理法人视为同一主体。",
+      "coverage_status": "researched",
+      "coverage_note": "子公司名称、业务、设立时间及持股比例来自教保生命截至2026年4月的官方关系企业表；日本当地业务在官网韩文和英文版本中的描述不同，分别保留原文口径。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -253,6 +259,14 @@
           "source_content_hash": "ddfca5ea520d00206d72daf08049131c66540ddef6d966274e4d152d0be68059",
           "quote": "교보생명자산운용 (일본현지법인) 투자자문업",
           "quote_hash": "ffd764eab7e0c522eebbb57d10d50c9f2c49e5ae7d97a5ad7f674c6ba72eb542"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-6385ea3e08e68e-G-4",
+          "source_url": "https://www.kyobo.com/dgt/web/company-introduction/ir/corporate-governance/en-subsidiary-present-condition",
+          "source_title": "Affiliates-교보생명",
+          "source_content_hash": "9dfd38b0951dfdaf2f14403f4e3cc1a1a394933dd476170bc41172654c570a15",
+          "quote": "Kyobo Life Asset Management Co., Ltd. (America) Discretionary investment management service 1996. 10. 21 USD 1 100% Kyobo Life Asset Management Co., Ltd. (Japan) Securities investment 2016. 08. 26 JPY 0.1Bn 100%",
+          "quote_hash": "c756e133c1df69f2a902c3e5081e31291d6173709a7b75d4c7423720de4d01e8"
         },
         {
           "source_id": "FISRC-cf3eb2b83c7e750b",

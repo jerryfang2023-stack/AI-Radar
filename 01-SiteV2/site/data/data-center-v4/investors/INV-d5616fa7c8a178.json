@@ -139,33 +139,102 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金规模、管理人和投资主题来自 AEF 与 NextGen Partners 官方页面；无问芯穹案例来自中国金融信息网公开融资报道，作为单一案例而非完整组合。",
+      "summary": "AEF NextGen Fund 是阿里巴巴香港创业者基金旗下第三只创投成长基金，2024 年成立、规模 1.5 亿美元，由 NextGen Partners 管理。NextGen Partners 官网称其持有香港证监会 Type 9 牌照，并将基金投资方向描述为 AI 基础设施栈和智能体应用。2026 年无问芯穹再融资报道将 AEF NextGen 列为跟投方之一。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "基金定位",
+          "value": "阿里巴巴创业者基金旗下第三只创投成长基金。",
+          "source_id": "B25-AEF-MANAGER"
+        },
+        {
+          "field": "fund_manager",
+          "label": "基金管理人",
+          "value": "NextGen Partners。",
+          "source_id": "B25-AEF-MANAGER"
+        },
+        {
+          "field": "fund_size",
+          "label": "基金规模",
+          "value": "1.5 亿美元。",
+          "source_id": "B25-AEF-NEWS"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI 基础设施栈与智能体应用；官网列出多模态媒体、消费零售、金融科技等领域。",
+          "source_id": "B25-AEF-STRATEGY"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 无问芯穹 基础设施融资 本轮参投。",
+          "description": "中国金融信息网 2026 年 5 月报道，无问芯穹再获超 7 亿元融资，AEF NextGen 为跟投方之一。",
+          "source_id": "B25-AEF-WUWEN"
+        },
+        {
+          "description": "融资来源记录：无问芯穹 · 基础设施融资 · 2026-05-07 · 本轮参投 · 7 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5d0583f94886034"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "管理人官网",
+          "value": "https://nextgenpartners.vc/",
+          "url": "https://nextgenpartners.vc/",
+          "source_id": "B25-AEF-MANAGER"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "B25-AEF-MANAGER",
+          "source_url": "https://nextgenpartners.vc/about",
+          "source_title": "About us — NextGen Partners",
+          "source_content_hash": "41fed8a915aa4fdd8fb23f0493bd8e13ac5ac16d2bc184fc8515302f01926917",
+          "quote": "As a holder of a Type-9 license granted by the HK SFC, NextGen Partners is the investment manager of the AEF NextGen Fund, the third venture growth fund under Alibaba Entrepreneurs Fund.",
+          "quote_hash": "df5a8666a709d8e1254e05480e2c304ab0a9cb7d52ff03b988a652c127ead621"
+        },
+        {
+          "source_id": "B25-AEF-STRATEGY",
+          "source_url": "https://nextgenpartners.vc/about",
+          "source_title": "About us — NextGen Partners",
+          "source_content_hash": "41fed8a915aa4fdd8fb23f0493bd8e13ac5ac16d2bc184fc8515302f01926917",
+          "quote": "AEF NextGen Fund focuses on investments in enabling AI stacks and agentic applications that enhance productivity and fuel disruptions across sectors including multi-modal media, consumer retail, fintech and beyond.",
+          "quote_hash": "4f994b057e1c947f4c4d44c8176ff69d6d459b920c9e6e660489c8be6bd552d6"
+        },
+        {
+          "source_id": "B25-AEF-NEWS",
+          "source_url": "https://www.ent-fund.org/sc/news/details/469",
+          "source_title": "Funding, Fund, AI, Innovation",
+          "source_content_hash": "7214abdd9ef037c0a7e177b96875e950da4e58a30b17a7eceac5e4d158569e22",
+          "quote": "阿里巴巴香港创业者基金（AEF）宣布成立全新1.5 亿美元AEF NextGen 基金，由阿里巴巴香港创业者基金的投资团队NextGen Partners 负责管理，专注于投资人工智能初创公司。",
+          "quote_hash": "45285bedec0685f7f747e2ad1c7bb75e85b1ae5474c8d7d90f76ea30731b45f6"
+        },
+        {
+          "source_id": "B25-AEF-WUWEN",
+          "source_url": "https://www.cnfin.com/gs-lb/detail/20260507/4409002_1.html",
+          "source_title": "加速“从电能到生产力”价值转化 无问芯穹再获超7亿元融资 - 中国金融信息网",
+          "source_content_hash": "70686c141ce9eea966b0063f498736f738f7bd49e5c9c680cd7be7ed6756c768",
+          "quote": "跟投方包括国兴资本、秦淮数据、广发乾和、力合清瞳、中保投资、AEF NextGen、腾瑞资本、卡莱特、",
+          "quote_hash": "c1d89f0690a0a0c04c0e45676dae55fb73cd3ccde1f5e85d3c0016e57db42dc6"
+        },
         {
           "source_id": "FISRC-e5d0583f94886034",
           "source_url": "https://news.pedaily.cn/202605/563518.shtml",
-          "source_title": "无问芯穹再获超7亿融资，加码Token经济时代_投资界",
-          "source_content_hash": "aea901bd224bb6417342e026df991a6693195a04cd1992efe5a19f233e5a6724",
+          "source_title": "无问芯穹再获超7亿融资，加码Token经济时代",
+          "source_content_hash": "69550847bd779ae8",
           "quote": "跟投方包括 国兴资本、秦淮数据、广发乾和、力合清瞳、中保投资、AEF NextGen、腾瑞资本、卡莱特、中信建投资本和宽德智能学习实验室 (Will)",
           "quote_hash": "d1f4f980aceff974e80c0b6b6bc161a81c83e6e96a8de7bbe57e466be82f3880"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "AEF NextGen Fund 是阿里巴巴香港创业者基金旗下第三只创投成长基金，2024 年成立、规模 1.5 亿美元，由 NextGen Partners 管理。NextGen Partners 官网称其持有香港证监会 Type 9 牌照，并将基金投资方向描述为 AI 基础设施栈和智能体应用。2026 年无问芯穹再融资报道将 AEF NextGen 列为跟投方之一。"
     }
   }
 }

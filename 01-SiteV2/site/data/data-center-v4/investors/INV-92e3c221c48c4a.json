@@ -180,10 +180,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Ayar Labs 官方 E 轮公告称 Neuberger Berman 领投。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Venture Capital 策略及 Outpost Ventures 方向来自 Neuberger Berman 官网；Ayar Labs 官方融资公告披露 Neuberger Berman 领投。未推断该轮具体基金或车辆。",
+      "summary": "Neuberger Berman 官网将 Venture Capital 列入其私募股权特色策略，并称旗下 Outpost Ventures 投资金融软件与基础设施；Ayar Labs 官方公告称 Neuberger Berman 领投其 Series E。官网所述风险投资细分策略与该轮融资主体关系按公开名称记录，不延伸推断具体投资载体。",
+      "facts": [
+        {
+          "field": "venture_capital_strategy",
+          "label": "官网披露的风险投资特色策略",
+          "value": "Neuberger Berman 官网将 Venture Capital 列为私募股权特色策略，并称 Outpost Ventures 投资现代金融领域的软件与基础设施。",
+          "source_id": "PROFILE-COLLECT-INV-92e3c221c48c4a-I-2"
+        },
+        {
+          "field": "venture_capital_focus",
+          "label": "官网披露的风险投资方向",
+          "value": "Outpost Ventures 官网介绍覆盖借贷、支付、个人理财、房地产、资本市场和区块链/加密资产等领域。",
+          "source_id": "PROFILE-COLLECT-INV-92e3c221c48c4a-I-2"
+        },
+        {
+          "field": "reported_investment_activity",
+          "label": "公开披露的融资参与",
+          "value": "Ayar Labs 官方公告称 Neuberger Berman 领投其 Series E。",
+          "source_id": "FISRC-5b6c7c4ae002a992"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -206,6 +225,14 @@
           "quote_hash": "b111695202028f57cd5e2ab1f69badab251e358a349ab246f5faee73befc6f57"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-92e3c221c48c4a-I-2",
+          "source_url": "https://www.nb.com/what-we-do/private-markets-and-alternatives/private-equity",
+          "source_title": "Private Equity | Neuberger",
+          "source_content_hash": "560bae3572e31773af0432d63c42aebbabf5ede2f134d2721b5a709961b86208",
+          "quote": "Outpost Ventures backs the innovators of modern finance—the software and infrastructure that powers it.",
+          "quote_hash": "6a4567519d1300afce736764af0381cb25c3a91f8f4cf85a1bb11cb985c3caae"
+        },
+        {
           "source_id": "FISRC-28e142eb564f6762",
           "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
           "source_title": "Groq obtains $750m in funding for AI inference technology",
@@ -214,7 +241,7 @@
           "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

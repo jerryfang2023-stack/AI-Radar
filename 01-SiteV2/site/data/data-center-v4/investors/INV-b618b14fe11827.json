@@ -194,10 +194,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "公开融资报道列出华策影视参与智灵新境天使轮和智象未来 C 轮。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "企业业务介绍来自华策官网；两笔融资参与来自公开融资报道。只记录企业战略投资案例，不推断其管理独立风险投资基金。",
+      "summary": "华策官网称华策影视集团聚焦 AI+影视内容，经营影视内容与科技文化业务，并介绍自主研发影视垂类大模型。公开融资报道将华策影视列为智灵新境天使轮和智象未来 C 轮投资方；记录不把上市影视经营企业等同于专业基金管理人。",
+      "facts": [
+        {
+          "field": "company_business",
+          "label": "官网披露的集团业务",
+          "value": "华策影视官网称集团以 AI+影视内容为核心，涵盖 AI+内容生态、影视文创基地与影视职业教育。",
+          "source_id": "PROFILE-COLLECT-INV-b618b14fe11827-J-3"
+        },
+        {
+          "field": "technology_business",
+          "label": "官网披露的影视技术业务",
+          "value": "官网称华策成立 AIGC 应用研究院并自主研发影视垂类大模型。",
+          "source_id": "PROFILE-COLLECT-INV-b618b14fe11827-J-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -226,9 +239,17 @@
           "source_content_hash": "bebe58667e5f3aeae2a4a4e36f1d033864a8fceed75edf0c6b2ecad346f0573d",
           "quote": "3日消息，近日，智象未来（HiDream.ai）宣布完成 15亿元人民币的C轮融资 。本轮融资由 社保基金四川振兴科创基金、工银资本、弘颐资管、敦鸿资本联合领投， 厦门国贸 资本、上影新视野基金、湖北长江产业投资集团、 华策影视 、航源资本、创云海资本、华福投资、余杭金控股份、交银资本、若松基金等 多家机构跟投。老股东 合肥产投、东方富海、金浦投资、金华金投、中哲创、财鑫资本 持续加注。 至此，智象近三个月内已完成三轮密集融资，累计融资超过21亿元人民币。随着本轮融资的完成，正式迈入独角兽企业行列。 智象未来创始人兼CEO梅涛 表示：“对AI发展技术的前瞻性和大模型底层架构的创新性始终是智象得以稳健发展的核心竞争力。多模态大模型技术还处在快速迭代的关键发展期，我们认为，从多模态走向原生全模态世界模型是通往AGI",
           "quote_hash": "b7b530fc69590f0bed70e3e61818c0c81405fe2da70969a88a1832b724e49ad9"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b618b14fe11827-J-3",
+          "source_url": "https://www.huacemedia.com/about/index.html",
+          "source_title": "www.huacemedia.com",
+          "source_content_hash": "1a207780f8b334352d9507a1e29f0f9cdf36bc0ec69db10b9b794ec8f7fb0150",
+          "quote": "华策影视集团1992年初创，是国内影视行业龙头企业、中国电视剧第一股，以AI+影视内容为核心",
+          "quote_hash": "d7205d17b910f2234a1a43f7ef8a408d578a0acc8ea4033d0572c30c785c9a47"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],

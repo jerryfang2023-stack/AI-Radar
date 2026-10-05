@@ -123,45 +123,54 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资关系来源是被投企业卓世科技的官网回顾，使用披露名称“用友集团”。用友官网介绍用友品牌及业务，但本档案不据此映射到用友网络科技股份有限公司或其具体投资载体。",
-      "summary": "用友集团官网称用友创立于1988年，主营企业软件与智能服务。卓世科技官网的融资回顾将“用友集团”列为其历史投资人之一；未披露该投资对应轮次、具体出资主体或单独金额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构背景来自用友官网；卓世科技官网提供的是“用友集团”这一投资方表述，未据此推断具体出资法人或基金。",
+      "summary": "用友集团官网介绍，用友创立于 1988 年，长期从事企业与公共组织信息技术应用和服务，并将自身定位为企业软件与智能服务提供商。卓世科技官网披露其投资人包括“用友集团”；该页面未披露具体投资法人、基金载体或对应轮次。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "创立年份",
+          "value": "1988",
+          "source_id": "B24-YONYOU-OFFICIAL"
+        },
+        {
+          "field": "organization_type",
+          "label": "业务定位",
+          "value": "企业软件与智能服务提供商。",
+          "source_id": "B24-YONYOU-OFFICIAL"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "卓世科技官网回顾称，其投资人中包括“用友集团”等上市公司；未指明用友集团参与哪一轮或对应的出资法律主体。",
-          "source_id": "zoellent-yonyou-group-investor-history"
+          "description": "卓世科技官网称其投资人中包括用友集团等上市公司；公开页面未说明用友的具体投资主体或轮次。",
+          "source_id": "B24-YONYOU-ZOELLENT"
         },
         {
           "description": "融资来源记录：卓世科技 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0ef31ab978027876"
         }
       ],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "投资关系来源是被投企业卓世科技的官网回顾，使用披露名称“用友集团”。用友官网介绍用友品牌及业务，但本档案不据此映射到用友网络科技股份有限公司或其具体投资载体。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.yonyou.com/",
+          "url": "https://www.yonyou.com/",
+          "source_id": "B24-YONYOU-OFFICIAL"
+        }
+      ],
       "sources": [
         {
-          "source_id": "yonyou-official-background",
+          "source_id": "B24-YONYOU-OFFICIAL",
           "source_url": "https://www.yonyou.com/about/company.html",
           "source_title": "关于用友-企业数智化 用友BIP—用友集团官网",
           "source_content_hash": "e1d64a8d19d8a8070492eeb110e37206132d59261dc80faa2e0ae63621c20104",
-          "quote": "用友创立于1988年",
-          "quote_hash": "4ecbc1b8162ea91f4e43e6ac30904a9929039f3c19dc229153f4fe16fa7cf7a3"
+          "quote": "用友创立于1988年，一直专注于信息技术在企业与公共组织应用与服务领域，历经38年已发展为全球领先的企业软件与智能服务提供商。",
+          "quote_hash": "3a627d00c71763a74a350bdcb1528738de810920aeb1c1adbab0cff60da6c22f"
         },
         {
-          "source_id": "yonyou-business-description",
-          "source_url": "https://www.yonyou.com/about/company.html",
-          "source_title": "关于用友-企业数智化 用友BIP—用友集团官网",
-          "source_content_hash": "e1d64a8d19d8a8070492eeb110e37206132d59261dc80faa2e0ae63621c20104",
-          "quote": "全球领先的企业软件与智能服务提供商",
-          "quote_hash": "b83abb7e96bc2306595112ac896a434f83846e1c65cfe3e2b821ddcc225fa130"
-        },
-        {
-          "source_id": "zoellent-yonyou-group-investor-history",
+          "source_id": "B24-YONYOU-ZOELLENT",
           "source_url": "https://www.maas.com.cn/news/830.html",
           "source_title": "百度AI基因明星创业公司，卓世科技破局大模型商业落地-卓世科技-中国领先的企业级AI生产力产品技术提供商(Zoellent Technology)",
           "source_content_hash": "cb0326e936afb5a2029c41c4c9d89f514ce5cce4a72a680a84d115ca3b9320a0",
@@ -177,7 +186,11 @@
           "quote_hash": "2dd3de409c0e522a3cd73c194b879a2d7cce13233dc1dafb4cc042c1da905992"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "用友集团官网介绍，用友创立于 1988 年，长期从事企业与公共组织信息技术应用和服务，并将自身定位为企业软件与智能服务提供商。卓世科技官网披露其投资人包括“用友集团”；该页面未披露具体投资法人、基金载体或对应轮次。"
     }
   }
 }

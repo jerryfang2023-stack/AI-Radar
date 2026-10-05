@@ -186,10 +186,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "发行方公告支持其以该名称参与 OXMIQ 融资；机构组织结构和其他投资活动未核实。",
-      "summary": "OXMIQ 官方融资公告将 AM Intelligence Labs 列为 2026 年 7 月 Series A 参与方。本档仅记录这一项公开披露；尚无可靠来源说明其是否为独立基金、管理团队或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "采用发行方 OXMIQ 的公告确认融资参与及其对 AM Intelligence Labs 的集团关联表述；不将其推断为独立风险基金或将关联集团业务并入档案。",
+      "summary": "OXMIQ 官方融资公告将 AM Intelligence Labs 列为 2026 年 7 月 Series A 参与方，并称其为 AM Green Group 的一部分。当前资料仅支持该项融资参与及公告中的集团关联描述；尚无可靠来源说明其是否独立管理基金或拥有完整投资组合。",
+      "facts": [
+        {
+          "field": "organizational_affiliation",
+          "label": "发行方披露的集团关联",
+          "value": "OXMIQ 融资公告称 AM Intelligence Labs 是 AM Green Group 的一部分；该表述按公告原文归属。",
+          "source_id": "PROFILE-COLLECT-INV-59e24cd689995b-F2-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -214,6 +221,14 @@
           "source_content_hash": "c17f59d8dd2e1555de397bc043aa6d95e94b55dc3e6d2ac7d092a8d75bb9c229",
           "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
           "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-59e24cd689995b-F2-2",
+          "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+          "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
+          "source_content_hash": "c17f59d8dd2e1555de397bc043aa6d95e94b55dc3e6d2ac7d092a8d75bb9c229",
+          "quote": "AM Intelligence Labs, part of the AM Green Group",
+          "quote_hash": "138dc6b36d0db6d4368c28b2a432c0b90f1b6dc10bfdf731c1e65eb9d9f960f4"
         },
         {
           "source_id": "FISRC-b7d7449114c23ca5",

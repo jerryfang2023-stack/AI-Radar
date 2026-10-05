@@ -139,34 +139,46 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
+      "coverage_note": "Roles and fund totals are dated claims; the 2025 Onyx angel list alone is not treated as a current role or complete portfolio.",
+      "summary": "TechCrunch reports that Kulveer Taggar established Phosphor Capital, a venture firm focused on Y Combinator companies. Phosphor’s current website describes its focus as investing early in founders from each YC batch. The 2025 Onyx announcement also names Taggar as an angel investor; that disclosure does not identify an investment vehicle.",
       "facts": [],
       "milestones": [],
-      "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动与来源明确记载的身份关联，不补写未经核实的职业经历或个人出资金额。",
-      "summary": "Onyx 的2025年种子轮公告将 Kulveer Taggar 列入天使投资人，并标注为 “Kulveer Taggar (Zeus Living)”；未披露其个人出资金额。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "现有材料仅支持 Onyx 公告中的姓名与 Zeus Living 关联标注，不据此补写其当前职位或完整履历。",
       "track_record": [
         {
-          "description": "Onyx 2025年融资公告列 Kulveer Taggar (Zeus Living) 为天使投资者之一；未披露个人出资额。",
-          "source_id": "onyx-kulveer-taggar-seed-2025"
+          "description": "TechCrunch reported in July 2025 that Phosphor had raised $34 million across two funds.",
+          "source_id": "B29-KULVEER-TECHCRUNCH"
         },
         {
           "description": "融资来源记录：Onyx · 种子轮 · 2025-03-12 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-03b9d51b95b8c6ce"
         }
       ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "onyx-kulveer-taggar-seed-2025",
+          "source_id": "B27-KULVEER-ONYX",
           "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
           "source_title": "Onyx Raises $10M To Help Teams Find Knowledge Faster with",
           "source_content_hash": "e4e0ab4060cf0b1345ecbf26516a54991a30daf4726d62a20804af3b84870122",
           "quote": "Kulveer Taggar (Zeus Living)",
           "quote_hash": "616abbaf94dd0a4ad5a9c6a03c3ba0e59ca2e508a124624449e0f6c2d0f4a21f"
+        },
+        {
+          "source_id": "B29-KULVEER-TECHCRUNCH",
+          "source_url": "https://techcrunch.com/2025/07/03/y-combinator-alum-launched-a-new-34m-fund-dedicated-to-yc-startups-backed-by-garry-tan/",
+          "source_title": "Y Combinator alum launched a new $34M fund dedicated to YC startups, backed by Garry Tan | TechCrunch",
+          "source_content_hash": "759ccfcfc410975de682483d078a9fc78d5c6969db583b6f7b48d04892b30c8d",
+          "quote": "he established Phosphor Capital , a venture firm dedicated solely to investing in YC companies.",
+          "quote_hash": "2b50d71316147acaa40af8ae38f3816007f27b3b0fa9ed4a7b76e09ce2f5449b"
+        },
+        {
+          "source_id": "B29-KULVEER-PHOSPHOR",
+          "source_url": "https://phosphorcap.com/",
+          "source_title": "Phosphor Capital",
+          "source_content_hash": "d56dfd22875d4ea6385c66a66944e7976b2fc01e2dc76bb6283ead89046344a6",
+          "quote": "Phosphor Capital invests in the top founders in each Y Combinator batch.",
+          "quote_hash": "c6450a26d08006015dda551e6a92502993b382cfbfcc6fd7f23ac9f9bafdfbea"
         },
         {
           "source_id": "FISRC-03b9d51b95b8c6ce",
@@ -177,7 +189,32 @@
           "quote_hash": "616abbaf94dd0a4ad5a9c6a03c3ba0e59ca2e508a124624449e0f6c2d0f4a21f"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05",
+      "current_roles": [
+        {
+          "title": "Founder",
+          "organization": "Phosphor Capital",
+          "source_id": "B29-KULVEER-TECHCRUNCH"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Phosphor Capital",
+          "title": "Founder",
+          "period": "Founded by 2025; current website checked 2026-10-05",
+          "description": "TechCrunch reports Taggar established the firm; the firm website describes its YC-focused investment approach.",
+          "source_id": "B29-KULVEER-TECHCRUNCH"
+        },
+        {
+          "organization": "Zeus Living",
+          "title": "Founder",
+          "period": "YC S11; company sale reported in 2023",
+          "description": "TechCrunch identifies Taggar as a founder of Zeus Living.",
+          "source_id": "B29-KULVEER-TECHCRUNCH"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Entrepreneur and early-stage investor focused on Y Combinator companies, according to the firm website and TechCrunch."
     }
   }
 }

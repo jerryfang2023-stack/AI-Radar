@@ -386,31 +386,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "华映资本的投资披露来自投中网；管理人名称、登记类型和关联管理人来自中国证券投资基金业协会，该页所列机构信息最后更新时间为 2025-03-06。关联管理人信息不能单独证明某次融资由哪一基金或法律实体出资。",
+      "summary": "公开融资披露以“华映资本”名义将其列为机构投资方。中国证券投资基金业协会登记页记录苏州华映资本管理有限公司为私募股权、创业投资基金管理人，并列出华映资本管理有限公司为关联管理人。本档保留披露名称与登记信息，不把某一关联管理实体等同于每次融资的具体出资载体。",
+      "facts": [
+        {
+          "field": "registered_manager",
+          "label": "协会登记主体",
+          "value": "苏州华映资本管理有限公司；协会登记编号 P1005700。",
+          "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-1"
+        },
+        {
+          "field": "manager_type",
+          "label": "协会登记类型",
+          "value": "私募股权、创业投资基金管理人。",
+          "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-2"
+        },
+        {
+          "field": "affiliated_manager",
+          "label": "关联私募管理人",
+          "value": "协会页面将华映资本管理有限公司（P1001311）列为关联私募基金管理人。",
+          "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 芯光界 多轮融资 本轮参投。",
+          "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-09a0a8d8826c2cfe"
-        },
-        {
-          "description": "公开融资来源将其列为 晰见科技 多轮融资 本轮参投。",
-          "source_id": "FISRC-410928b8ba42b627"
-        },
-        {
-          "description": "公开融资来源将其列为 珞博智能 Pre-A轮 本轮联合领投。",
-          "source_id": "PROFILE-d310e65ee8e427ebb291"
-        },
-        {
-          "description": "公开融资来源将其列为 灵御智能 过往投资方。",
-          "source_id": "PROFILE-33030f4a63ab43042dc4"
-        },
-        {
-          "description": "公开融资来源将其列为 自变量机器人 Pre-A+++轮领投。",
-          "source_id": "PROFILE-f70734e08a8d953a528c"
         },
         {
           "description": "融资来源记录：晰见科技 · 多轮融资 · 2026-08-27 · 本轮参投 · 近5亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -420,44 +423,44 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-1",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000007358.html",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "d611f99964ebdc5d17a5d5494ea24a2fea4250561f3aab8f0d2e1e7ecaecf832",
+          "quote": "基金管理人全称(中文) 苏州华映资本管理有限公司 苏州华映资本管理有限公司 投诉 举报 基金管理人全称(英文) Su Zhou Meridian Capital Managerment Co.,Ltd 登记编号 P1005700",
+          "quote_hash": "5dfb61b2515246dad565a95e14fcc0893bd7ede8b85daaa5c65c3228b531f6c3"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-2",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000007358.html",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "d611f99964ebdc5d17a5d5494ea24a2fea4250561f3aab8f0d2e1e7ecaecf832",
+          "quote": "机构类型 私募股权、创业投资基金管理人",
+          "quote_hash": "cc3fffa181afbab9a35403aae0116e7fda015b2665e223697474e90cbcb14fb4"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-3",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000007358.html",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "d611f99964ebdc5d17a5d5494ea24a2fea4250561f3aab8f0d2e1e7ecaecf832",
+          "quote": "3 私募股权、创业投资基金管理人 华映资本管理有限公司 P1001311 91320581072762522J",
+          "quote_hash": "0556d3a49590570c0565776fd14bbb8ed290b69715355095cb6911f656c2ea3a"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-4",
           "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
           "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿 | 投中网",
-          "source_content_hash": "07769d7354864bacbc3aca99d89b0c60720a78c93e72560ce8ed28387a4b4245",
+          "source_content_hash": "a1fa7cec1c9f7c2a59cbe5ad258bce1d31de0cea3c1d39874e34347950bbc777",
+          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本",
+          "quote_hash": "0450d404b7d4986faea8c1e25c09c9c9cae769c488fb05dd3b569c25f40e30b0"
+        },
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
           "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
           "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
-        },
-        {
-          "source_id": "FISRC-410928b8ba42b627",
-          "source_url": "https://www.cls.cn/detail/2466861",
-          "source_title": "晰见科技完成近5亿元天使轮融资",
-          "source_content_hash": "de46a2004a6374fd9114575ea9d1cdcc1a98ff92b31ba68e0011c36bafe542e2",
-          "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
-          "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
-        },
-        {
-          "source_id": "PROFILE-d310e65ee8e427ebb291",
-          "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
-          "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局 | 每经网",
-          "source_content_hash": "be775caceefc83ae0b7a5325ad08aa2d5e635e1f1caf9255a75c2af7a46bc87b",
-          "quote": "本轮融资由华映资本与广和通联合领投",
-          "quote_hash": "5b4846a5d829bc8e76f19e1887636525b1114feb220e7c1c12fcadd948911d09"
-        },
-        {
-          "source_id": "PROFILE-33030f4a63ab43042dc4",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
-          "source_title": "「灵御智能」完成数亿元Pre-A轮融资_新浪财经_新浪网",
-          "source_content_hash": "e9239a55b8ddf98ad6caa3ffc4c731df318ecb7394b729468e8bf23da3806f1a",
-          "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
-          "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
-        },
-        {
-          "source_id": "PROFILE-f70734e08a8d953a528c",
-          "source_url": "https://www.36kr.com/p/3636080421586182",
-          "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-          "source_content_hash": "abe44b136cbfb22fc521f19f36bcdc7f89467c392c05f5e7fa2dfa7ffa26cf7e",
-          "quote": "在A轮之前，自变量还完成了 数亿元Pre-A+++轮 融资，由华映资本领投，云启资本、广发信德跟投。",
-          "quote_hash": "696d54613d642ed72622bb0ecc6918c4beef4c84998cac17f6b55c54db768c33"
         },
         {
           "source_id": "FISRC-7ae3651fb91fc1f1",
@@ -466,9 +469,17 @@
           "source_content_hash": "c5b71d91ca82e3f7a35c6ed1119b2c49f2be359e102c13b0b78c4ed76ac706b1",
           "quote": "投资方包括徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本，以及具身智能、汽车产业链龙头企业等",
           "quote_hash": "ece0f1d926cedbeba4071e2121c06f1c98a8a61a8f9fbd0ee5f7822d56e4ddac"
+        },
+        {
+          "source_id": "FISRC-410928b8ba42b627",
+          "source_url": "https://www.cls.cn/detail/2466861",
+          "source_title": "晰见科技完成近5亿元天使轮融资",
+          "source_content_hash": "addd4b9820ad617a",
+          "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
+          "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

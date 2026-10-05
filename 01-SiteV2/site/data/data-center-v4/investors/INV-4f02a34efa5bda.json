@@ -209,13 +209,25 @@
       }
     ],
     "public_profile": {
-      "summary": "腾讯官网将投资列为公司核心战略之一，并说明其投资以创造用户价值为核心逻辑。此条记录腾讯的公司级投资活动，不将母公司等同于独立风险投资基金管理人。",
+      "summary": "腾讯官网将投资列为核心战略，称其投资原则是用户第一、被投企业第二、腾讯第三，并描述了通过平台、技术和团队支持被投企业的方式。官网2020年文章所列投资企业数量和上市/独角兽数量属于历史时点，未作为当前数据。",
       "facts": [
         {
           "field": "investment_activity",
           "label": "公司级投资定位",
           "value": "腾讯将投资列为核心战略之一，核心逻辑为创造用户价值。",
           "source_id": "PROFILE-INV-4f02a34efa5bda-1"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资原则",
+          "value": "腾讯官网称投资是其核心战略之一，核心逻辑是创造用户价值，并遵循用户第一、被投企业第二、腾讯第三的原则。",
+          "source_id": "PROFILE-COLLECT-INV-4f02a34efa5bda-3"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "被投企业支持方式",
+          "value": "腾讯官网介绍其通过商业平台、技术能力和专业团队支持被投企业。",
+          "source_id": "PROFILE-COLLECT-INV-4f02a34efa5bda-4"
         }
       ],
       "milestones": [
@@ -237,8 +249,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "来源是腾讯官网对投资策略的官方说明；仅作为已公开的公司级投资定位记录，文中动态项目数量不纳入档案。",
+      "coverage_status": "researched",
+      "coverage_note": "投资原则、被投企业支持方式和规模数据来自腾讯官方文章；只将2020年数据标为文章时点，不把腾讯公司级投资活动表述为独立风险基金管理业务。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -268,6 +280,22 @@
           "source_content_hash": "bc0af9eddd97b88c835abdca877fe6182c0c59f1f804c98ea3f86cd3a12c49d4",
           "quote": "2020年03月10日",
           "quote_hash": "4d66d53c74ba3cf71d43e274c7f52d673ac3c15988c422cae6b31179d2ea05ac"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-4f02a34efa5bda-3",
+          "source_url": "https://www.tencent.com/zh-cn/value-creation-is-pivotal-to-our-investments/",
+          "source_title": "创造价值是投资的关键 - Tencent",
+          "source_content_hash": "bc0af9eddd97b88c835abdca877fe6182c0c59f1f804c98ea3f86cd3a12c49d4",
+          "quote": "投资是腾讯的核心战略之一，我们投资的核心逻辑是“创造价值”，首要的目标是创造用户价值。腾讯遵循用户第一，被投企业第二，腾讯第三的原则。",
+          "quote_hash": "b376aecdbdb80942805a425b3cb518de6355164d42ba3d62346bbb729452b75c"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-4f02a34efa5bda-4",
+          "source_url": "https://www.tencent.com/zh-cn/value-creation-is-pivotal-to-our-investments/",
+          "source_title": "创造价值是投资的关键 - Tencent",
+          "source_content_hash": "bc0af9eddd97b88c835abdca877fe6182c0c59f1f804c98ea3f86cd3a12c49d4",
+          "quote": "我们希望进行更多的科技赋能，把长时间积累下来的技术能力开放给被投企业。",
+          "quote_hash": "c9ab87046b660bb88dfb3abcf15c15015a9c56cf7dcd343f88a4ab3aa5929555"
         },
         {
           "source_id": "FISRC-0199034a5417695f",

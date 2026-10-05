@@ -242,16 +242,25 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "ChipAgents Series A 扩展融资报道将 Micron 列为既有投资方；Anthropic 官方所述战略基础设施合作不作为融资记录。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "企业创投业务及具体案例来自 Micron 官方文章；本档记录母公司投资职能与公开案例，不将 Micron 归为独立基金管理人。",
+      "summary": "Micron 通过其企业创投业务 Micron Ventures 进行初创企业投资。Micron 官方材料披露了对 Sphere 和 Volocopter 的投资案例，分别关联制造现场需求和人工智能、边缘计算；这些案例不代表完整投资组合。",
+      "facts": [
+        {
+          "field": "corporate_venture_activity",
+          "label": "企业创投职能",
+          "value": "Micron 官方文章称其 Micron Ventures 团队与 Smart Manufacturing 团队合作评估 Sphere，并作出投资。",
+          "source_id": "PROFILE-COLLECT-INV-ba990c40c58e73-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "公开投资案例",
+          "value": "Micron 官方文章记载公司以风险投资资金投资 Volocopter。",
+          "source_id": "PROFILE-COLLECT-INV-ba990c40c58e73-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "参与 ChipAgents Series A 扩展融资。",
-          "source_id": "PROFILE-a7dbcb27228e60131fab"
-        },
         {
           "description": "融资来源记录：ChipAgents · A2轮 · 2026-07-29 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cd04c9b2d1340164"
@@ -268,12 +277,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-a7dbcb27228e60131fab",
-          "source_url": "https://www.unite.ai/chipagents-expands-series-a-to-134-million-as-ai-agents-move-deeper-into-semiconductor-design/",
-          "source_title": "ChipAgents Expands Series A to $134 Million as AI Agents Move Deeper Into Semiconductor Design &#8211; Unite.AI",
-          "source_content_hash": "ba93b81890a8996f96f46d844434b6f3ed331431c0cdd92eef9771ced90b2e5d",
-          "quote": "les. B Capital joined the financing as a new investor, alongside existing backers Bessemer Venture Partners , Micron , MediaTek , Ericsson ( ERIC ) , ScOp Venture Capital , and others. The new capital arrives six months after the initial close of the company’s Series A and follows a sixfold increase in annual recurring revenue during the first half of 2026.",
-          "quote_hash": "552b7805c7001e7cbb33b61e8471a95d550484483f0da0634ef703c42560144c"
+          "source_id": "PROFILE-COLLECT-INV-ba990c40c58e73-1",
+          "source_url": "https://www.micron.com/about/blog/company/innovations/more-than-an-investment-sphere-shows-metaverse-has-business-angle-too",
+          "source_title": "More than an investment: Sphere shows the metaverse has a business angle too! | Micron Technology Inc.",
+          "source_content_hash": "e8e446453873e32329fa6d365dc815086db621d368477bf9726ac24f8e14da4f",
+          "quote": "our investment in Sphere was driven by real challenges we wanted to tackle on our manufacturing floor",
+          "quote_hash": "08476408aa725c0b41fe6d5d8bf485510dc40711fba2d6c4a394917836a64d3d"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-ba990c40c58e73-2",
+          "source_url": "https://www.micron.com/about/blog/applications/mobile/taking-mobility-into-the-third-dimension",
+          "source_title": "Taking mobility into the third dimension | Micron Technology Inc.",
+          "source_content_hash": "d89ca0c06004ced932f65833d4427e2cd842d554bc8fb4a75d23cbe5537c81ed",
+          "quote": "had invested venture capital funds in Volocopter",
+          "quote_hash": "608bd949d7d157548b39a23ac33f830f059f0b3b9964294855d4c052ff8c368c"
         },
         {
           "source_id": "FISRC-cd04c9b2d1340164",
@@ -300,7 +317,7 @@
           "quote_hash": "a8278de53198826272dc5c7045989ecb50ff2bdac47a68de9ac09adb8810b1c1"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

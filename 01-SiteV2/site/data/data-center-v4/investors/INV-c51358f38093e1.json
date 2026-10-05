@@ -139,33 +139,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资报道仅写“哈勃投资”，没有披露具体投资基金或出资主体；本档案确认的是该品牌相关的法定管理实体，不据此认定管理公司直接参与该轮或推断其管理资产规模。",
+      "summary": "“哈勃投资”是华为关联的创业投资品牌。汇顶科技的上市公司交易预案列明，哈勃科技创业投资有限公司经营创业投资及私募/创业投资基金管理业务，并由华为投资控股有限公司全资持有。跨赴科技融资报道仅以“哈勃投资”简称列示联合投资方，未披露具体出资载体或单独金额。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "法定管理主体",
+          "value": "汇顶科技上市公司公告列明哈勃科技创业投资有限公司，成立于2019年，注册资本30亿元，经营范围包含创业投资及私募股权/创业投资基金管理服务。",
+          "source_id": "hubble_legal_profile"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系",
+          "value": "同一公告记载，华为投资控股有限公司持有哈勃科技创业投资有限公司100%股权。",
+          "source_id": "hubble_legal_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019-04-23",
+          "description": "上市公司公告列明哈勃科技创业投资有限公司成立日期为2019年4月23日。",
+          "source_id": "hubble_legal_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 跨赴科技 Pre-A+轮 本轮参投。",
+          "description": "商道创投网报道跨赴科技Pre-A+轮由哈勃投资与正轩投资联合投资，称融资金额为数千万元；未披露哈勃投资对应的具体基金载体或单独出资额。",
+          "source_id": "hubble_crossfu_round"
+        },
+        {
+          "description": "融资来源记录：跨赴科技 · Pre-A+轮 · 2026-02-02 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61ee9829707c35ed"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开交易披露确认了品牌关联管理实体的法律属性与华为持股关系；单笔融资报道没有提供基金层级信息。",
       "sources": [
+        {
+          "source_id": "hubble_legal_profile",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-12-07/1221957790.PDF",
+          "source_title": "汇顶科技：发行股份及支付现金购买资产并募集配套资金预案",
+          "source_content_hash": "09fd20ccadfa86a93157bc202b379f22042234727619ef66e95f862acad3862f",
+          "quote": "公司名称 哈勃科技创业投资有限公司 公司类型 有限责任公司（自然人投资或控股的法人独资） 注册资本 3,000,000,000 元",
+          "quote_hash": "9ed751f11a3cfa7330731e934f783b8fdcbe69a864b36b4c09d95b78e1000dff"
+        },
+        {
+          "source_id": "hubble_crossfu_round",
+          "source_url": "https://www.sohu.com/a/982905847_120094924",
+          "source_title": "商道创投网·会员动态｜跨赴科技·完成数千万元Pre-A+轮融资_智能化_技术_绩创",
+          "source_content_hash": "f0d5dfd84666cd200ff2206c9c2ae42bc234527bfd44a380c8c4e0eb194faa39",
+          "quote": "跨赴科技近日完成了由哈勃投资、正轩投资联合投资的数千万元Pre-A+轮融资",
+          "quote_hash": "46af4e80c25c88176a639ff73da313eacd19c205feda9078d6bede6552e54d0b"
+        },
         {
           "source_id": "FISRC-61ee9829707c35ed",
           "source_url": "https://www.sohu.com/a/982756258_439726",
-          "source_title": "半年融两轮，跨赴科技再获数千万融资_开发_智能_投资界",
-          "source_content_hash": "8ca7d27bc4d56e448955f9eebd166355b87e2fac384db895b3ffcb65cd6c9afd",
+          "source_title": "半年融两轮，跨赴科技再获数千万融资",
+          "source_content_hash": "a503f3c825f30e2f",
           "quote": "本轮融资投资方为 哈勃投资和正轩投资 ，老股东 奇绩创坛 持续加注。",
           "quote_hash": "0de657f1bb636a004d8a14c20540cf6162536da48f108799e4bad51544901187"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

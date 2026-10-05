@@ -139,33 +139,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "WestCap 官网用于机构背景；Preply 官方融资公告经 PR Newswire 发布，仅按公告所述记录领投与总轮次规模。",
+      "summary": "WestCap 将自身描述为投资者、运营者和企业建设者组成的投资机构。Preply 官方公告称，WestCap 领投其 1.5 亿美元 D 轮融资。此处轮次金额是融资总额，不代表 WestCap 的单笔投资金额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "运营与投资机构，团队兼具投资和企业经营背景。",
+          "source_id": "B26-WEST-HOME"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "与被投公司团队协作，提供资本和运营支持。",
+          "source_id": "B26-WEST-HOME"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Preply D轮 本轮领投。",
+          "description": "Preply 官方公告称 WestCap 领投其 1.5 亿美元 D 轮融资；未披露 WestCap 单独出资金额。",
+          "source_id": "B26-WEST-PREPLY"
+        },
+        {
+          "description": "融资来源记录：Preply · D轮 · 2026-01-21 · 本轮领投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7e564fafd9f90842"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.westcap.com/",
+          "url": "https://www.westcap.com/",
+          "source_id": "B26-WEST-HOME"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "B26-WEST-PREPLY",
+          "source_url": "https://www.prnewswire.com/news-releases/preply-raises-150-million-to-shape-the-future-of-education-through-human-led-ai-enhanced-learning-302665890.html",
+          "source_title": "Preply Raises $150 Million to Shape the Future of Education through Human-Led, AI-Enhanced Learning",
+          "source_content_hash": "1bc193cedd2d34ce2865b17c02f6f4c860b467a9c2861be37ca28628bb26f04d",
+          "quote": "securing $150 million in funding led by WestCap",
+          "quote_hash": "153eb48bd4ef4aa97a614902743e0d951be3251b8a178c6cb4402c4d53f45e50"
+        },
+        {
+          "source_id": "B26-WEST-HOME",
+          "source_url": "https://www.westcap.com/about",
+          "source_title": "About WestCap | Leadership, Investors, Operators, and Advisors",
+          "source_content_hash": "12905a8a38f72709d8b525612130b9a5111971ce9778135fe8450a5b1cd7f075",
+          "quote": "Our firm brings together investors and world-class company builders to work side-by-side our portfolio companies — not just back them.",
+          "quote_hash": "5c7fe720cebe8fa75d48f04269348c78ef82b322ade44a1ad8c2ac33ae88a67c"
+        },
         {
           "source_id": "FISRC-7e564fafd9f90842",
           "source_url": "https://www.prnewswire.com/news-releases/preply-raises-150-million-to-shape-the-future-of-education-through-human-led-ai-enhanced-learning-302665890.html",
-          "source_title": "Preply Raises $150 Million to Shape the Future of Education through Human-Led, AI-Enhanced Learning",
-          "source_content_hash": "13d15df656afa510a129e6f55d548d863841cc65a547681c55ae5ce89f856f12",
+          "source_title": "Preply 融资 1.5 亿美元，通过人工主导、AI 增强的学习塑造教育未来",
+          "source_content_hash": "4a1687fe145470c9164f57faa8914ff76b9103a4d561ae04339f9d675919649a",
           "quote": "securing $150 million in funding led by WestCap",
           "quote_hash": "153eb48bd4ef4aa97a614902743e0d951be3251b8a178c6cb4402c4d53f45e50"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "WestCap 将自身描述为投资者、运营者和企业建设者组成的投资机构。Preply 官方公告称，WestCap 领投其 1.5 亿美元 D 轮融资。此处轮次金额是融资总额，不代表 WestCap 的单笔投资金额。"
     }
   }
 }

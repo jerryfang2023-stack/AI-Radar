@@ -139,33 +139,82 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "CMBI 官网名称标注为 CMB International Capital Corporation Limited，并介绍其综合金融服务。Whale 发行公告将 CMB International 列为领投方，但注明投资通过 CMBI 旗下一个专注 AI 与前沿科技的基金；公告没有给出基金名称或该基金的单独出资额。",
+      "summary": "CMB International（CMBI）官网使用名称 CMB International Capital Corporation Limited，提供企业融资、资产管理和财富管理等综合金融服务。Whale 的公告称 CMB International 通过旗下一个专注 AI 与前沿科技的基金领投其 4,000 万美元 Series C3 extension；基金名称及单独投资额未披露。",
+      "facts": [
+        {
+          "field": "official_name",
+          "label": "官网名称",
+          "value": "CMBI 官网标题列名 CMB International Capital Corporation Limited。",
+          "source_id": "cmbi_identity"
+        },
+        {
+          "field": "business_profile",
+          "label": "金融服务",
+          "value": "官网介绍 CMBI 为企业、机构及个人客户提供企业融资、资产管理和财富管理等综合金融服务。",
+          "source_id": "cmbi_services"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Whale C3轮扩展 本轮领投。",
+          "description": "Whale 公告称 CMB International 通过 CMBI 旗下一个专注 AI 与前沿科技的未具名基金领投；没有披露该基金的单独出资额。",
+          "source_id": "whale_series_c_extension"
+        },
+        {
+          "description": "融资来源记录：Whale · C3轮扩展 · 2026-07-16 · 本轮领投 · 4000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f9990b5df3232b99"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "CMBI 官网",
+          "value": "公司简介",
+          "url": "https://www.cmbi.com/en-US/",
+          "source_id": "cmbi_identity"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "已核实官网品牌名称、综合金融服务及一笔通过未具名旗下基金发生的融资关系；没有把 CMBI 直接等同为基金法律主体。",
       "sources": [
+        {
+          "source_id": "cmbi_identity",
+          "source_url": "https://www.cmbi.com/en-US/",
+          "source_title": "CMB International - CMB International Capital Corporation Limited",
+          "source_content_hash": "a83263d4bbeffe759c9d5575713ecbd162b7c83da51e0b4e0b024b0606f91432",
+          "quote": "CMB International Capital Corporation Limited",
+          "quote_hash": "b9f91e926199a496854a75893d8e9a3c6a34793743af7f1b6ff609688e6a6e44"
+        },
+        {
+          "source_id": "cmbi_services",
+          "source_url": "https://www.cmbi.com/en-US/",
+          "source_title": "CMB International - CMB International Capital Corporation Limited",
+          "source_content_hash": "a83263d4bbeffe759c9d5575713ecbd162b7c83da51e0b4e0b024b0606f91432",
+          "quote": "CMBI strives to provide quality and integrated financial services including corporate finance, asset management, wealth management",
+          "quote_hash": "ee3017a663df104b88837236a9b99e2be255fe1de22a1a7efa9762c1a317c165"
+        },
+        {
+          "source_id": "whale_series_c_extension",
+          "source_url": "https://www.prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html",
+          "source_title": "Whale Raises $40M Series C3 Extension, Bringing Total Series C to $100M to Scale Global Enterprise AI Operations",
+          "source_content_hash": "fd29af42c5533941d73e5d06dd5652d7804a4ce0686ac2e0b3affadb2aa5650b",
+          "quote": "The round was led by CMB International (via an investment fund under CMBI that focus on AI and frontier technology)",
+          "quote_hash": "af584909a7c9c7ef71fc668b181a8f85db5cb442c09a0387138643c1242085c2"
+        },
         {
           "source_id": "FISRC-f9990b5df3232b99",
           "source_url": "https://www.prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html",
-          "source_title": "Whale Raises $40M Series C3 Extension, Bringing Total Series C to $100M, to Scale Global Enterprise AI Operations",
-          "source_content_hash": "fd29af42c5533941d73e5d06dd5652d7804a4ce0686ac2e0b3affadb2aa5650b",
+          "source_title": "Whale 完成 4000 万美元 C3 轮扩展融资，C 轮总融资额达 1 亿美元，用于扩大全球企业 AI 运营规模",
+          "source_content_hash": "c127cd6c0e3152a6",
           "quote": "The round was led by CMB International (via an investment fund under CMBI that focus on AI and frontier technology)",
           "quote_hash": "af584909a7c9c7ef71fc668b181a8f85db5cb442c09a0387138643c1242085c2"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

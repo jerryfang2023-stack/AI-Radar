@@ -232,13 +232,13 @@
       }
     ],
     "public_profile": {
-      "summary": "Arm 的年度申报列出其对投后种子期深科技初创公司的间接投资；该披露仅证明产业公司的投资活动。",
+      "summary": "Arm 的 SEC 年度申报表列出其对投后种子期深科技初创企业的间接投资，并注明所列投资由公司间接持有。该档记录为产业公司自身投资活动，不将 Arm 归为独立 VC 基金。",
       "facts": [
         {
-          "field": "investment_activity",
-          "label": "SEC附表披露",
-          "value": "Arm 间接持有投向投后种子期深科技初创公司的投资。",
-          "source_id": "PROFILE-INV-867f52c38f2218-1"
+          "field": "corporate_investment",
+          "label": "SEC 年度披露",
+          "value": "Arm 披露对投后种子期深科技初创企业的间接投资。",
+          "source_id": "PROFILE-COLLECT-INV-867f52c38f2218-1"
         }
       ],
       "milestones": [],
@@ -258,24 +258,16 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "依据 Arm 向 SEC 提交的年度报告附表建档；原文明确相关投资由 Arm 间接持有，本记录不将其描述为风险投资管理人。",
+      "coverage_status": "researched",
+      "coverage_note": "投资活动及间接持有说明来自 Arm 向 SEC 提交的年度披露；表格项目不代表完整组合，也未披露基金管理结构。",
       "current_roles": [],
       "career": [],
       "education": [],
       "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "SEC年报",
-          "value": "Arm Holdings plc",
-          "url": "https://investors.arm.com/node/8451/html?source_capture=2026-10-03&cycle=13",
-          "source_id": "PROFILE-INV-867f52c38f2218-1"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-INV-867f52c38f2218-1",
+          "source_id": "PROFILE-COLLECT-INV-867f52c38f2218-1",
           "source_url": "https://investors.arm.com/node/8451/html?source_capture=2026-10-03&cycle=13",
           "source_title": "SEC Filing – Arm®",
           "source_content_hash": "578b32853a98dcea4940b029d0c4a53208b6e61353a369a9c434d07f3b28404b",

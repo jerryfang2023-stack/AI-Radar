@@ -137,23 +137,21 @@
       }
     ],
     "public_profile": {
-      "summary": "Universal Music Group 是音乐娱乐运营集团；其2026年一季报披露持有 Spotify 股权，并宣布授权变现其中一半。",
+      "summary": "Universal Music Group N.V. 的官方业绩公告披露其 Recorded Music 与 Music Publishing 业务板块；2026 年第一季度公告称董事会授权变现公司持有的 Spotify 股权的一半。该档案记录其音乐业务和股权资产，不将其描述为创投基金。",
       "facts": [
         {
-          "field": "investment_activity",
-          "label": "2026年一季报",
-          "value": "持有 Spotify 股权；董事会授权变现其中一半。",
-          "source_id": "PROFILE-INV-a0e40d1e7641e9-1"
-        },
-        {
-          "field": "organization_type",
-          "label": "2026年一季报",
-          "value": "音乐娱乐运营集团的股权投资活动记录。",
-          "source_id": "PROFILE-INV-a0e40d1e7641e9-1"
+          "field": "operating_segments",
+          "label": "业务板块",
+          "value": "UMG 官方业绩公告将 Recorded Music 与 Music Publishing 列为收入增长来源。",
+          "source_id": "PROFILE-B8-INV-a0e40d1e7641e9-2"
         }
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "UMG 2026 年第一季度业绩公告称董事会于 2026 年 3 月授权变现公司 Spotify 股权的一半；不代表全部已完成出售。",
+          "source_id": "PROFILE-B8-INV-a0e40d1e7641e9-1"
+        },
         {
           "description": "融资来源记录：Stability AI · B轮 · 2026-08-25 · 本轮参投 · $76 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e825eacb926a575f"
@@ -161,29 +159,29 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "只记录官方披露的 Spotify 股权持有与变现安排，不把 UMG 描述成风险投资基金或延伸投资策略。",
+      "coverage_status": "researched",
+      "coverage_note": "UMG 官方季度业绩公告披露其 Recorded Music 与 Music Publishing 业务，并记录 Spotify 股权变现授权；该运营集团并非因此被认定为专业创投机构。",
       "current_roles": [],
       "career": [],
       "education": [],
       "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "投资者关系公告",
-          "value": "Universal Music Group",
-          "url": "https://www.universalmusic.com/universal-music-group-n-v-reports-financial-results-for-the-first-quarter-ended-march-31-2026/?source_capture=2026-10-03&cycle=15",
-          "source_id": "PROFILE-INV-a0e40d1e7641e9-1"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-INV-a0e40d1e7641e9-1",
+          "source_id": "PROFILE-B8-INV-a0e40d1e7641e9-1",
           "source_url": "https://www.universalmusic.com/universal-music-group-n-v-reports-financial-results-for-the-first-quarter-ended-march-31-2026/?source_capture=2026-10-03&cycle=15",
           "source_title": "UNIVERSAL MUSIC GROUP N.V. REPORTS FINANCIAL RESULTS FOR THE FIRST QUARTER ENDED MARCH 31, 2026 - UMG",
           "source_content_hash": "b75f541a5aa02f65d87427be9b8c8164e5549487ddc629c11bb9abfdffe7cad8",
           "quote": "in March 2026 the Board authorized the monetization of half of the Company’s equity stake in Spotify.",
           "quote_hash": "226323fc3f237ef44c00525fd30b848b25658de1aabc611d13d7b9878d6ab19d"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-a0e40d1e7641e9-2",
+          "source_url": "https://www.universalmusic.com/universal-music-group-n-v-reports-financial-results-for-the-first-quarter-ended-march-31-2026/?source_capture=2026-10-03&cycle=15",
+          "source_title": "UNIVERSAL MUSIC GROUP N.V. REPORTS FINANCIAL RESULTS FOR THE FIRST QUARTER ENDED MARCH 31, 2026 - UMG",
+          "source_content_hash": "b75f541a5aa02f65d87427be9b8c8164e5549487ddc629c11bb9abfdffe7cad8",
+          "quote": "contributing to growth in Recorded Music and Music Publishing.",
+          "quote_hash": "6e29cd23a59b0a8b5de9722fb059f85edc213ebc66154b57a2df31b4a4eb491e"
         },
         {
           "source_id": "FISRC-e825eacb926a575f",
@@ -194,7 +192,7 @@
           "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

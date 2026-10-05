@@ -139,29 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "融资报道将中软国际列为蜂巢互联产业链投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司业务定位来自中软国际官网；蜂巢互联融资活动来自公开报道，未推定出资主体或金额。",
+      "summary": "中软国际官网将公司定位为全栈全场景 AI 产品与服务提供商。蜂巢互联融资报道将“中软国际”列为产业链投资方；报道未说明具体投资子公司或资金载体。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "全栈全场景 AI 产品与服务提供商",
+          "source_id": "PROFILE-B12-INV-b62358d624baf2-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "参与蜂巢互联融资。",
+          "source_id": "PROFILE-B12-INV-b62358d624baf2-1"
+        },
+        {
+          "description": "融资来源记录：蜂巢互联 · 多轮融资 · 2026-08-26 · 本轮参投 · 12亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6d442164db5f81db"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.chinasofti.com/",
+          "source_id": "PROFILE-B12-INV-b62358d624baf2-2"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-6d442164db5f81db",
+          "source_id": "PROFILE-B12-INV-b62358d624baf2-1",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
           "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎_新浪财经_新浪网",
           "source_content_hash": "d14110eba1a1beea7dde559c57889ac1f2a323df193ce26a04c4cd7e8e38c735",
           "quote": "落地； 市场化专业投资机构汇聚 鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、 中信证券 、珂玺资本 等深耕硬科技智能制造赛道的头部投资机构，聚焦企业长期价值成长； 产业链投资方引入 海尔资本、 利元亨 、中软国际、 金百泽 等上下游，实现技术、客户、场景双向赋能。 蜂巢互联创始人马震表示： 多元稳定、坚持长期主义的股东阵容，是公司持续深耕底层技术与推进产业规模化落地的核心战略支撑。 蜂巢互联坚持底层技术自主攻坚，以先进仿真底座+一体化工具链平台为核心业务主线，每年稳定投入约3亿元用于研发，持续突破几何、网格等仿真根技术，在细分工艺仿真赛道构建深厚垂直技术壁垒。产业整合加速是必然趋势，蜂巢互联将持续布局，全力打造新一代工业软件航母舰队。 目前蜂巢互联已深度服务电子信息、新能源汽车、高端装备、家电、",
           "quote_hash": "f40e17cf3c6e346c7cfe6b2575c0ce527890eb10841f2f981a567c6a065e5238"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b62358d624baf2-2",
+          "source_url": "https://www.chinasofti.com/",
+          "source_title": "中软国际 - 全栈全场景AI产品和服务提供商",
+          "source_content_hash": "db6407c02e1630fbf1705e66f192ad85cedf73988c8e3314c97a62d2c13b3ee3",
+          "quote": "全栈全场景AI产品和服务提供商",
+          "quote_hash": "de47bad12d999539516d2a82b4abb5c950d876e3c56f43a6f6f7c564d4ac40ac"
+        },
+        {
+          "source_id": "FISRC-6d442164db5f81db",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+          "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+          "quote": "产业链投资方引入海尔资本、利元亨、中软国际、金百泽等上下游，实现技术、客户、场景双向赋能。",
+          "quote_hash": "9475573b312fdb166b3eab03902b2da47b66ec9dd260be72c86edca85e0b5c00"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

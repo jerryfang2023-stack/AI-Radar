@@ -123,33 +123,98 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司法定名称、成立时间、登记号及领域来自上市公司公告；融资案例来自财联社报道。",
+      "summary": "银润资本对应银润（上海）私募基金管理有限公司。学大教育 2026 年公告记载其成立于 2010 年并列出中国基金业协会管理人登记号 P1062424，主要投资领域包括私募股权及创业投资；财联社报道其领投至格科技 C 轮。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "主体名称",
+          "value": "银润（上海）私募基金管理有限公司。",
+          "source_id": "yinrun_cninfo"
+        },
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2010 年 11 月 1 日。",
+          "source_id": "yinrun_established"
+        },
+        {
+          "field": "registration",
+          "label": "基金管理人登记",
+          "value": "中国基金业协会备案号 P1062424。",
+          "source_id": "yinrun_registration"
+        },
+        {
+          "field": "focus",
+          "label": "主要投资领域",
+          "value": "私募股权、创业投资，包括半导体、高端装备制造、新能源等。",
+          "source_id": "yinrun_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 至格科技 2025年第二轮领投。",
+          "description": "财联社报道至格科技于 2025 年完成的第二轮亿元级融资由银润资本领投；未披露单独出资额。",
+          "source_id": "yinrun_cls"
+        },
+        {
+          "description": "融资来源记录：至格科技 · 历史轮次未披露 · 2025年第二轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fa7b393bd0769b2e"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-fa7b393bd0769b2e",
+          "source_id": "yinrun_cninfo",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-27/1224951168.PDF",
+          "source_title": "学大（厦门）教育科技集团股份有限公司关于与关联方专业投资机构共同新设合伙企业及对外投资的公告",
+          "source_content_hash": "13ceb8811df43b5cab2c39ebe8cd650943e6b97db4acfe91013485fd29452eb4",
+          "quote": "公司名称：银润（上海）私募基金管理有限公司",
+          "quote_hash": "e4d929e7e58a3a2b86861d25309049f2add7de52174e3312400f43f5cd258df4"
+        },
+        {
+          "source_id": "yinrun_established",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-27/1224951168.PDF",
+          "source_title": "学大（厦门）教育科技集团股份有限公司关于与关联方专业投资机构共同新设合伙企业及对外投资的公告",
+          "source_content_hash": "13ceb8811df43b5cab2c39ebe8cd650943e6b97db4acfe91013485fd29452eb4",
+          "quote": "成立时间：2010 年 11 月 1 日",
+          "quote_hash": "f165b53d7177a8c083491705dd0a7fb6e50b57cda200d101639539491a81c305"
+        },
+        {
+          "source_id": "yinrun_registration",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-27/1224951168.PDF",
+          "source_title": "学大（厦门）教育科技集团股份有限公司关于与关联方专业投资机构共同新设合伙企业及对外投资的公告",
+          "source_content_hash": "13ceb8811df43b5cab2c39ebe8cd650943e6b97db4acfe91013485fd29452eb4",
+          "quote": "中国基金业协会备案号：P1062424",
+          "quote_hash": "401ec292c105d84f1adff721df581d78eefd794a6e92f07c04a9450e34d0d0a6"
+        },
+        {
+          "source_id": "yinrun_focus",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-27/1224951168.PDF",
+          "source_title": "学大（厦门）教育科技集团股份有限公司关于与关联方专业投资机构共同新设合伙企业及对外投资的公告",
+          "source_content_hash": "13ceb8811df43b5cab2c39ebe8cd650943e6b97db4acfe91013485fd29452eb4",
+          "quote": "主要投资领域：私募股权、创业投资，包括但不限于半导体、高端装备制造、新能源等领域。",
+          "quote_hash": "dbe70b652edf24def7537e3689c28bb7e99f916ed680f90894d3ce5b6096e94a"
+        },
+        {
+          "source_id": "yinrun_cls",
           "source_url": "https://www.cls.cn/detail/2105291",
           "source_title": "至格科技半年内再获亿元级融资",
           "source_content_hash": "98c581d744c30103807e707eed20e374e9f46c1916bacc5ece32dab8af2b1171",
+          "quote": "这是其2025年完成的第二轮亿元级融资。本轮融资由银润资本领投",
+          "quote_hash": "edc363600e80edd5f25c3b397f377cf829bd0a579c85bdd7f5f4dc8dc3594fbf"
+        },
+        {
+          "source_id": "FISRC-fa7b393bd0769b2e",
+          "source_url": "https://www.cls.cn/detail/2105291",
+          "source_title": "至格科技半年内再获亿元级融资",
+          "source_content_hash": "5794a911b3d00c78",
           "quote": "本轮融资由银润资本领投，老股东方广资本超额追投，久德投资、人才科创基金、易景科技跟投",
           "quote_hash": "49352a9586b837dd04579f12c1ee2eb32c9ecec27242de770e718cc0bb425841"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

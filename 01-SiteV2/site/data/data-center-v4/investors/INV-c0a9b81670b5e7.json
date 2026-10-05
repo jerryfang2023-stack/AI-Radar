@@ -139,33 +139,92 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构品牌和自述指标来自 KAYA 官网；官网组合及 E2B 融资公告支持主体消歧与投资案例，未披露 Kaya 的单独投资金额。",
+      "summary": "KAYA 官网将其描述为支持中东欧及其他地区早期创业者的投资机构，并自述成立于 2011 年、拥有 60 多家组合公司；其组合页列出 E2B，E2B 融资公告将 Kaya 列为 $21m Series A 参与方，未披露单独出资额。",
+      "facts": [
+        {
+          "field": "founding_and_scale",
+          "label": "成立时间与规模（官网自述，采集时）",
+          "value": "成立于 2011 年，官网列出 60 多家组合公司及 $500m AUM。",
+          "source_id": "kaya_site"
+        },
+        {
+          "field": "focus",
+          "label": "投资对象",
+          "value": "官网称支持来自中东欧及其他地区的创始人。",
+          "source_id": "kaya_focus"
+        },
+        {
+          "field": "portfolio",
+          "label": "组合公司",
+          "value": "KAYA 官网组合页列出 E2B。",
+          "source_id": "kaya_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 E2B A轮 本轮参投。",
+          "description": "E2B 融资公告称 Kaya 参与其 $21m Series A；未披露 Kaya 的单独出资额。",
+          "source_id": "kaya_e2b"
+        },
+        {
+          "description": "融资来源记录：E2B · A轮 · 2025-07-28 · 本轮参投 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4bbfe8565d35dc2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.kaya.vc/",
+          "url": "https://www.kaya.vc/",
+          "source_id": "kaya_site"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-c4bbfe8565d35dc2",
+          "source_id": "kaya_site",
+          "source_url": "https://www.kaya.vc/",
+          "source_title": "KAYA",
+          "source_content_hash": "1973c0e411801382d99eb07beb6f74924a2d8cbb4d035ee3c511a3be4592afbc",
+          "quote": "60+ Companies 2011 Founded $500M AUM Total $1–3M Ticket Pre+Seed Round",
+          "quote_hash": "85d693cc7da9f7bb0c6505ccfd024030099bb8f7acc6f20951b1a5be15ad86fd"
+        },
+        {
+          "source_id": "kaya_focus",
+          "source_url": "https://www.kaya.vc/",
+          "source_title": "KAYA",
+          "source_content_hash": "1973c0e411801382d99eb07beb6f74924a2d8cbb4d035ee3c511a3be4592afbc",
+          "quote": "We back ambitious founders from CEE and beyond - from inception to meaningful scale.",
+          "quote_hash": "042299bdc259804939b79523ab86d4de3a62b24e5f5a36c45e341dea16171dde"
+        },
+        {
+          "source_id": "kaya_portfolio",
+          "source_url": "https://www.kaya.vc/companies",
+          "source_title": "KAYA | Portfolio",
+          "source_content_hash": "b3c3770f69ae951d74451951ceda4e2853bbc8347ae782fb1ba1a73dd7ffb8bc",
+          "quote": "E2B Agentic Cloud",
+          "quote_hash": "564198322c1315b1adf700a2d12c77a2ea20b3d1445317c2a0a3423b7cf8c322"
+        },
+        {
+          "source_id": "kaya_e2b",
           "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
           "source_title": "E2B Raises a $21M Series A to Offer Cloud for AI Agents to Fortune 100",
           "source_content_hash": "0f4529730cf11290c7eba58faa5c9c2005ebbf499b52e379b826a46b93fff00d",
+          "quote": "with participation from Decibel, Sunflower Capital, and Kaya",
+          "quote_hash": "ecc329c679dac3ee81bd3cfabfd35ae86fdbcc7ffc17204599897764fca54da2"
+        },
+        {
+          "source_id": "FISRC-c4bbfe8565d35dc2",
+          "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
+          "source_title": "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务",
+          "source_content_hash": "db0c071a75daeddf",
           "quote": "and Kaya",
           "quote_hash": "1f7da1290d2cd9e5ad41b784f680f7526a284de607429529a002b6e5aafd6f89"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

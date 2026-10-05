@@ -138,11 +138,18 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
       "summary": "宝通科技是 2009 年起在创业板上市的科技企业；中关村科学城发布的融资信息将其列为光轮智能本轮产业资本参与方。",
       "coverage_note": "公司身份来自宝通科技官网，融资关系来自中关村科学城发布的公告；不推断其为独立 VC 基金。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "company_profile",
+          "label": "公司官网披露的成立与上市情况",
+          "value": "宝通成立于2000年，并于2009年在创业板上市。",
+          "source_id": "boton_identity"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -185,7 +192,7 @@
           "quote_hash": "71792afe8c027b27e57bfc0819ab1d5d99a6ee5f1e108cb5f6f6b312377c3cee"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

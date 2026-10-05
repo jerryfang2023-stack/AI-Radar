@@ -139,29 +139,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "投中网报道列出华虹虹芯参与芯光界融资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金全称、登记编号、管理人及存续资料来自上交所披露文件；融资参与来自投中网报道。未将管理人、基金出资人或投资方混为一体。",
+      "summary": "上交所披露的法律意见书载明，华虹虹芯对应上海华虹虹芯私募基金合伙企业（有限合伙），为私募股权投资基金，基金编号 SSZ628，管理人为上海国方私募基金管理有限公司；投中网将“华虹虹芯”列入芯光界融资机构名单。",
+      "facts": [
+        {
+          "field": "legal_identity_and_fund_type",
+          "label": "法律意见书披露的主体",
+          "value": "上交所披露的法律意见书将华虹虹芯识别为上海华虹虹芯私募基金合伙企业（有限合伙），并列明统一社会信用代码91310000MA7BFAFX4J。",
+          "source_id": "PROFILE-B6-INV-8cca1b7d088edb-1"
+        },
+        {
+          "field": "fund_registration",
+          "label": "律师核查的基金备案",
+          "value": "法律意见书记载，华虹虹芯为私募股权投资基金，基金编号为SSZ628，管理人为上海国方私募基金管理有限公司。",
+          "source_id": "PROFILE-B6-INV-8cca1b7d088edb-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投中网报道将华虹虹芯列为芯光界本轮融资参与方。",
+          "description": "投中网关于芯光界融资的报道在参投机构名单中列出华虹虹芯；该报道未披露其单独投资额。",
+          "source_id": "PROFILE-B6-INV-8cca1b7d088edb-2"
+        },
+        {
+          "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-09a0a8d8826c2cfe"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "source_id": "PROFILE-B6-INV-8cca1b7d088edb-1",
+          "source_url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202512/688206_20251225_0K9T.pdf",
+          "source_title": "上海市锦天城律师事务所关于华虹虹芯的法律意见书摘录",
+          "source_content_hash": "70f3ed1724920b070e74ad9f2c60a84e08002cced848dd174dfa30701eb3c5f6",
+          "quote": "名称为上海华虹虹芯私募基金合伙企业（有限合伙），统一社会信用代码91310000MA7BFAFX4J，类型为有限合伙企业，执行事务合伙人为上海虹方企业管理合伙企业（有限合伙），出资额101,000万元，成立日期2021年10月13日。",
+          "quote_hash": "729067fea5096e26f0e4b06c5c34a1223b7fb36246536faaf612b8744d68f382"
+        },
+        {
+          "source_id": "PROFILE-B6-INV-8cca1b7d088edb-2",
           "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
           "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿 | 投中网",
-          "source_content_hash": "07769d7354864bacbc3aca99d89b0c60720a78c93e72560ce8ed28387a4b4245",
-          "quote": "创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。其中，华映资本、Glory Ventures III以及松禾资本更是连押两轮。 关于芯光界的融资热度，还有几个细节值得分享： 其一，据了解，上述某国资背景基金从首次接触到最后完成协议签署只用了不到10天时间，这一流程速度直接创下了他们内部纪录，对方也戏称是“在光赛道创下了光的速度”。 其二，华映资本在两轮融资中，累计投资额近1.5亿元，据其董事总经理李岩透露，这是该机构在硬科技领域早期投资单笔金额最高",
-          "quote_hash": "45a91537e493a625b3f567ab330661651432c328dece66036a46a2217da7e340"
+          "source_content_hash": "a1fa7cec1c9f7c2a59cbe5ad258bce1d31de0cea3c1d39874e34347950bbc777",
+          "quote": "华虹虹芯、广州知识城、天津皓阳",
+          "quote_hash": "2bad805e08b13bb742c0dc7c8ab0f98cd768a27016b271f3177eee3ab89d568b"
+        },
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+          "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

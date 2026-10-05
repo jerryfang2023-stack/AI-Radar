@@ -137,35 +137,111 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
+      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "last_verified_at": "2026-10-05",
+      "coverage_status": "researched",
+      "coverage_note": "Panathēnea演讲者简介补充其Google Maps创业经历、Facebook管理职位、教育背景及天使投资身份；ORamaVR融资材料将其列为新投资人。该轮金额为整轮融资额，个人出资额未披露，公开投资案例不代表完整组合。",
+      "summary": "Lars Rasmussen 是 Google Maps 联合创始人和天使投资人。Panathēnea 讲者简介称他拥有 UC Berkeley 计算机科学博士学位，曾与兄弟出售地图创业公司并在 Google 领导 Google Maps 团队，之后担任 Facebook 工程总监。ORamaVR 将其列为 2026 年种子轮新投资人，个人出资额未披露。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "地图创业公司（讲者简介未列公司名称）",
+          "title": "联合创始人",
+          "period": "2004年出售给Google",
+          "description": "与兄弟共同创办地图创业公司，后将其出售给Google。",
+          "source_id": "B22-LARS-MAPS-CAREER"
+        },
+        {
+          "organization": "Google",
+          "title": "领导Google Maps团队",
+          "period": "讲者简介未披露",
+          "description": "讲者简介称其在出售地图创业公司后领导创建Google Maps的团队。",
+          "source_id": "B22-LARS-MAPS-CAREER"
+        },
+        {
+          "organization": "Facebook",
+          "title": "工程总监",
+          "period": "讲者简介未披露",
+          "description": "讲者简介称其曾在Menlo Park和London担任工程总监。",
+          "source_id": "B22-LARS-FACEBOOK"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of California, Berkeley",
+          "qualification": "计算机科学博士",
+          "source_id": "B22-LARS-PANATHENEA"
+        }
+      ],
+      "experience_summary": "讲者简介记载其地图创业公司出售给Google、Google Maps团队经历及Facebook工程管理经历；ORamaVR融资公告另列其为新投资人。",
       "track_record": [
         {
-          "description": "公开融资来源将其列为 ORamaVR 种子轮 本轮参投。",
+          "description": "ORamaVR融资公告将 Lars Rasmussen 列为公司450万美元种子轮的新投资人；该金额是整轮融资额。",
+          "source_id": "oramavr_round"
+        },
+        {
+          "description": "Panathēnea讲者简介列举其部分投资项目，包括Canva、Astranis、Neara、PhosPrint和ResQ Biotech。",
+          "source_id": "B22-LARS-INVESTMENTS"
+        },
+        {
+          "description": "融资来源记录：ORamaVR · 种子轮 · 2026-01-30 · 本轮参投 · 4.5 million USD。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3290be19a3eb1c09"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "oramavr_round",
+          "source_url": "https://oramavr.com/wordpress/wp-content/uploads/2026/01/2026-01-14-ORamaVR-Financing-Round-Announcement.pdf",
+          "source_title": "ORamaVR Secures $4.5M Late-Seed Funding to Lead the Computational Medical XR Revolution",
+          "source_content_hash": "20c9cac62c901240425801a7b576e3ca6b22db45e2640d642642b2f58e78cf74",
+          "quote": "The round added notable new investors including Sofmedica Ventures, the investment arm of leading medical device and training provider Sofmedica, Lars Rasmussen, co-founder of Google Maps and others.",
+          "quote_hash": "13eb03e3ef244d41f6ac581e973581f4ec19e778b809a46f485697189ff01d45"
+        },
+        {
+          "source_id": "B22-LARS-PANATHENEA",
+          "source_url": "https://www.panathenea.org/panathenea-2025/speakers/lars-rasmussen/",
+          "source_title": "Lars Rasmussen",
+          "source_content_hash": "29c7f60cda0b592a4d602a25fa9ea59a4b5b45639939765c267ccfd7af353de3",
+          "quote": "Panathēnea co-founder Lars Rasmussen is an angel investor in Athens, Greece with a computer science Ph.D. from UC Berkeley.",
+          "quote_hash": "4e08937c9167e53b5246f8cd27ca7ccc588e1be5290aea8a5f279b780f538f90"
+        },
+        {
+          "source_id": "B22-LARS-MAPS-CAREER",
+          "source_url": "https://www.panathenea.org/panathenea-2025/speakers/lars-rasmussen/",
+          "source_title": "Lars Rasmussen",
+          "source_content_hash": "29c7f60cda0b592a4d602a25fa9ea59a4b5b45639939765c267ccfd7af353de3",
+          "quote": "In 2004, Lars and his brother Jens sold their mapping startup to Google, and there lead the team that created Google Maps.",
+          "quote_hash": "8089c947991680d4337cf1b46fbb8c32988370ed8c92f4a2061cd0ac8947b836"
+        },
+        {
+          "source_id": "B22-LARS-FACEBOOK",
+          "source_url": "https://www.panathenea.org/panathenea-2025/speakers/lars-rasmussen/",
+          "source_title": "Lars Rasmussen",
+          "source_content_hash": "29c7f60cda0b592a4d602a25fa9ea59a4b5b45639939765c267ccfd7af353de3",
+          "quote": "Lars was next a director of engineering at Facebook in Menlo Park and London.",
+          "quote_hash": "89ddb7701cd39935462dd9ace2e354b8b9467b7281775ffd4f893d725f7024f9"
+        },
+        {
+          "source_id": "B22-LARS-INVESTMENTS",
+          "source_url": "https://www.panathenea.org/panathenea-2025/speakers/lars-rasmussen/",
+          "source_title": "Lars Rasmussen",
+          "source_content_hash": "29c7f60cda0b592a4d602a25fa9ea59a4b5b45639939765c267ccfd7af353de3",
+          "quote": "His favorite investments include Canva, Astranis, Neara, PhosPrint and ResQ biotech.",
+          "quote_hash": "6725f558854e40081e2b186452f3e775eed7f83d66f8765db6ad0f979be35108"
+        },
         {
           "source_id": "FISRC-3290be19a3eb1c09",
           "source_url": "https://ggba.swiss/en/geneva-based-oramavr-raises-usd-4-5-million-to-scale-medical-xr-training-solutions/",
-          "source_title": "ORamaVR raises USD 4.5 million to scale XR training solutions",
-          "source_content_hash": "978289be2cb5e35bef1178c5726f5f59972af9d8d19ecb9b61aa3f9ae101b831",
+          "source_title": "总部位于日内瓦的ORamaVR融资450万美元，以扩展医疗XR培训解决方案",
+          "source_content_hash": "414d00a661ddf10b8b837732f4d3ee3a340663992ee0445bbd603841ddc7ad24",
           "quote": "alongside new investors such as Sofmedica Ventures and Lars Rasmussen, co-founder of Google Maps",
           "quote_hash": "45f4be8089f409c4b51ae83057d68378fc65f657a60c752d71e71655a4dd9cf0"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

@@ -181,10 +181,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "公开融资报道分别将广州产投列为影目科技 C3 轮及极佳视界融资的参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体全称、组织定位和历史投资指标来自广东省国资委文章；具体项目参投来自公开融资报道。历史指标不写成当前数据。",
+      "summary": "广东省国资委文章确认广州产业投资控股集团有限公司于2021年改组运作，定位包括战略投资平台、国有股权持股平台和资本运作管理平台。该文章披露截至2023年产业投资额达144亿元、投资项目超50个；另有公开融资活动记录。金额与项目数均保留为文章发布时口径。",
+      "facts": [
+        {
+          "field": "organization_role",
+          "label": "省国资委披露的集团定位",
+          "value": "广州产投集团定位包括战略投资、国有股权持股和资本运作管理平台。",
+          "source_id": "PROFILE-COLLECT-INV-8d413162fbd292-H-3"
+        },
+        {
+          "field": "historical_investment_activity",
+          "label": "2023年文章披露的历史投资活动",
+          "value": "省国资委文章称截至当时广州产投集团产业投资额达144亿元、投资产业项目超50个。",
+          "source_id": "PROFILE-COLLECT-INV-8d413162fbd292-H-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -213,9 +226,25 @@
           "source_content_hash": "999496916ab4da4f9513a18f2b966e8bfdc1d9daad283c092347a4b30748208f",
           "quote": "。“ 随后在2025年8月，极佳视界又宣布完成Pre-A&Pre-A+连续两轮数亿元融资。其中Pre-A轮融资由国中资本领投，紫峰资本、老股东 PKSHA Algorithm Fund跟投；Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资。 作为领投方，国中资本执行总经理史新曾表示，极佳视界是国内世界模型和具身智能方向的引领者，不仅最早开始相关方向的技术布局和创新引领，更是快速实现了规模化的产业落地。“我们期待物理世界的ChatGPT时刻，更期待极佳视界能够引领中国的物理世界ChatGPT时刻。” 很快，华为也出手了——同年11月，极佳视界完成新一轮亿元级A1轮融资，由华为哈勃、华控基金联合投资。谈及这轮融资，黄冠曾直言：“华为将世界模型列为未来智能世界20",
           "quote_hash": "269e552eb3ad695a280df439146aaba8c70ba378d4e8c15868e2f33632d40c86"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-8d413162fbd292-H-3",
+          "source_url": "https://gzw.gd.gov.cn/dsgz/content/post_4089657.html",
+          "source_title": "广东省人民政府国有资产监督管理委员会",
+          "source_content_hash": "63ebbbd01689f728c1059030c9d5cae93575ca0d2b5cfde65202793300b109ff",
+          "quote": "立足战略投资发展平台、国有股权持股平台、资本运作管理平台三大功能定位",
+          "quote_hash": "01092275c4f483d5db644cf39e000d207b262cf6c1a87b9222c9e560e120b87a"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-8d413162fbd292-H-4",
+          "source_url": "https://gzw.gd.gov.cn/dsgz/content/post_4089657.html",
+          "source_title": "广东省人民政府国有资产监督管理委员会",
+          "source_content_hash": "63ebbbd01689f728c1059030c9d5cae93575ca0d2b5cfde65202793300b109ff",
+          "quote": "产业投资额达144亿元，投资产业项目超50个",
+          "quote_hash": "5d0b949cc22fe0c718f1131d892bbf99e0bece67cca973bdd33d99b1a3168f24"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],

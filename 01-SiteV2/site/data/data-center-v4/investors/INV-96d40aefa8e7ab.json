@@ -139,29 +139,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "哈啰 Robotaxi 融资报道将闵金投列为跟投方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构全称、区属国资属性和基金设立情况来自上海市政府答复；Robotaxi 投资参与来自投资界报道。",
+      "summary": "政府文件明确“闵金投”对应上海闵行金融投资发展有限公司，并将其称为闵行区属国资公司。闵行区已由其着手组建“大零号湾”创投系列基金；哈啰 Robotaxi 2026 年融资报道将闵金投列为跟投方。",
+      "facts": [
+        {
+          "field": "legal_name_and_mandate",
+          "label": "机构身份与职责",
+          "value": "上海市政府文件称上海闵行金融投资发展有限公司为闵行区属国资公司，已组建“大零号湾”创投系列基金。",
+          "source_id": "PROFILE-B8-INV-96d40aefa8e7ab-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "哈啰 Robotaxi 融资报道称闵金投参与跟投。",
+          "description": "投资界 2026 年哈啰 Robotaxi 融资报道将闵金投列为跟投方；未披露单独出资额。",
+          "source_id": "PROFILE-B8-INV-96d40aefa8e7ab-1"
+        },
+        {
+          "description": "融资来源记录：上海造父智能科技有限公司 · 轮次未披露 · 2026-09-16 · 本轮参投 · 约1亿美金。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fd74bfb93ef77cfc"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-fd74bfb93ef77cfc",
+          "source_id": "PROFILE-B8-INV-96d40aefa8e7ab-1",
           "source_url": "https://news.pedaily.cn/202609/569083.shtml",
           "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元_投资界",
           "source_content_hash": "c2155752241401279cdae870b9853fbd96854d4dcd15b6332595c248b7c56757",
-          "quote": "，虽面临挑战，但有望借行业发展机遇实现规模化商用，值得关注其后续发展与风险应对。 投资界AI独 家获悉，哈啰旗下Robotaxi业务（上海造父智能科技有限公司）宣布完成约1亿美金新一轮融资，本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投，投后估值接近30亿美金。 这距离哈啰官宣下场做Robotaxi，刚刚过去一年多。 这一年里，推进速度肉眼可见：首 款量产L4车型HR1今年7月量产下线，下线规模已超百台；国内多个城市相继获得测试准入资质，城市落地项目有序推进；研发团队超500人，万卡集群算力平台就位，日均回流数据十几万clips。 眼下，这条脱胎于哈啰出行平台的Robotaxi业务线，已正式告别筹备阶段，站在规模化放量的前夜。 哈啰投身智驾 上海国资出手，估值近",
-          "quote_hash": "b4e659977733bbf9bcbf6fac15677f065437cb2c65349b16acaf2336696de921"
+          "quote": "闵金投、创世伙伴创投 跟投",
+          "quote_hash": "052556233d6b7137c1603a9f526140b107963694f2352a1a10352d2c41041f91"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-96d40aefa8e7ab-2",
+          "source_url": "https://www.shanghai.gov.cn/gwk/search/content/52073f652a3c40cda0addaebfe81ad3c",
+          "source_title": "对市政协十四届三次会议第0372号提案的答复",
+          "source_content_hash": "627dc7617dd1e4a46246295d09b7e5c299d87693134d72a18117a648cf9a4b9f",
+          "quote": "闵行区区属国资公司——上海闵行金融投资发展有限公司已着手组建“大零号湾”创投系列基金",
+          "quote_hash": "ee25df6d3fea571612af769e06ebcf1b45a17f259512eb99d049d64b9b2608d0"
+        },
+        {
+          "source_id": "FISRC-fd74bfb93ef77cfc",
+          "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+          "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+          "source_content_hash": "d2ea27041b7714fd",
+          "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+          "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],
