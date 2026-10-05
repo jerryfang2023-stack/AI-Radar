@@ -123,19 +123,81 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pat Gelsinger 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Playground Global 官方公告称 Pat Gelsinger 于2025年加入并任 General Partner，拥有超过45年计算与半导体经验，曾任 Intel 和 VMware 首席执行官；公告称他会与其他合伙人共同投资、参与董事会并辅导 CEO。该职务支持其投资者身份，但不等于证明任何一笔个人直接出资。",
+      "coverage_note": "投资角色来自其任职机构公告。当前档案不把既有 Fractile 报道中的个人天使投资披露扩展成组合、金额或直接出资结论。",
+      "facts": [
+        {
+          "field": "professional_background",
+          "label": "任职机构公告中的职业背景",
+          "value": "Playground Global 公告称 Pat Gelsinger 曾任 Intel 和 VMware CEO，并拥有超过45年计算与半导体经验。",
+          "source_id": "b39_pat_appointment"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Playground Global 公告称 Gelsinger 将与其他 General Partners 共同投资；这说明其机构职责，不代表个人单笔出资。",
+          "source_id": "b39_pat_duties"
+        },
         {
           "description": "融资来源记录：Fractile · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a09bc7e6d17a0b0f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "任职机构官网",
+          "value": "Playground Global",
+          "url": "https://playgroundglobal.co/",
+          "source_id": "b39_pat_team"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "General Partner",
+          "organization": "Playground Global",
+          "source_id": "b39_pat_team"
+        }
+      ],
+      "career": [
+        {
+          "title": "General Partner",
+          "organization": "Playground Global",
+          "source_id": "b39_pat_appointment",
+          "period": "2025-03 onward",
+          "description": "Playground Global announced his appointment as General Partner in March 2025."
+        }
+      ],
+      "education": [],
+      "experience_summary": "Playground Global 公告提供 Pat Gelsinger 的 General Partner 职务、职业背景及在机构中的投资职责。",
       "sources": [
+        {
+          "source_id": "b39_pat_appointment",
+          "source_url": "https://www.playground.vc/playground-blogs/pat-gelsinger-joins-playground-global-as-general-partner",
+          "source_title": "Playground",
+          "source_content_hash": "616aa080b1292cf337f84c4fd393812e625a55d8ddb07e127ba9dd7848c33b23",
+          "quote": "Pat Gelsinger is joining the firm as General Partner.",
+          "quote_hash": "096191fd8785dab939cda1d0f62ce151dfba2c9b769146ccaf4e7ba919511a41"
+        },
+        {
+          "source_id": "b39_pat_duties",
+          "source_url": "https://www.playground.vc/playground-blogs/pat-gelsinger-joins-playground-global-as-general-partner",
+          "source_title": "Playground",
+          "source_content_hash": "616aa080b1292cf337f84c4fd393812e625a55d8ddb07e127ba9dd7848c33b23",
+          "quote": "At Playground, Gelsinger will invest alongside fellow General Partners Peter Barrett, Jory Bell and Bruce Leak",
+          "quote_hash": "4429be94e1f4fb6b145b5845546aabe0ffa7e8e3bbcd2155bcb503e1e75f0947"
+        },
+        {
+          "source_id": "b39_pat_team",
+          "source_url": "https://www.playground.vc/people",
+          "source_title": "Team",
+          "source_content_hash": "2f1c3fbb03ff915e5a7fbb8d2341dd1d308fda49c5ccbd762f1e25ac13feed77",
+          "quote": "Pat Gelsinger General Partner Investment",
+          "quote_hash": "ad6af2ce2d7e5f11876eb0fa3bf7239fedbfe09e5a6cc18376ac3a575e1842e9"
+        },
         {
           "source_id": "FISRC-a09bc7e6d17a0b0f",
           "source_url": "https://www.electronicsweekly.com/news/business/uks-fractile-raises-220m-for-inference-ics-2026-05/",
@@ -144,8 +206,7 @@
           "quote": "angel investors including Pat Gelsinger",
           "quote_hash": "af9dc27913bf11bb9edab6867f444ea303e1a1d6889fb1e67dc03883fb486a12"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

@@ -137,62 +137,60 @@
       }
     ],
     "public_profile": {
-      "summary": "Saga Ventures 的 LinkedIn 公司页自述行业为“Venture Capital and Private Equity Principals”，并列出 sagavc.com 官网链接；本条仅记录该公司页自述。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Saga Ventures 官网公开页面列有 Profound 等组合企业；Profound 自身的 Series D 公告确认 Saga Ventures 作为既有投资者参与本轮。当前捕获到的官网内容没有基金规模、团队或投资阶段信息，因此不作推断。",
+      "coverage_note": "官网公开内容主要为组合企业列表；发行方公告支持一项参投披露，未披露 Saga Ventures 的单独出资额。",
       "facts": [
         {
-          "field": "self_described_industry",
-          "label": "公司页自述行业",
-          "value": "Venture Capital and Private Equity Principals。",
-          "source_id": "PROFILE-INV-2fdd17c54bb17e-1"
+          "field": "portfolio_evidence",
+          "label": "官网组合页面",
+          "value": "Saga Ventures 官网页面列有 Profound；未据公开列表推断该机构的完整组合或基金配置。",
+          "source_id": "b39_saga_portfolio"
         }
       ],
       "milestones": [],
       "track_record": [
         {
+          "description": "Profound 官方公告称 Saga Ventures 参与其 2026 年 Series D；未披露该机构的单独出资额。",
+          "source_id": "b39_saga_profound"
+        },
+        {
           "description": "融资来源记录：Profound · D轮 · 2026-09-15 · 本轮参投 · $180M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-77525d98c652d74e"
         }
       ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "coverage_note": "身份与行业来自同名公司 LinkedIn 自述；未据此推断基金、投资阶段或投资组合。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
       "contacts": [
         {
           "kind": "website",
-          "label": "官网（公司页所列）",
-          "value": "https://www.sagavc.com",
-          "url": "https://www.sagavc.com",
-          "source_id": "PROFILE-INV-2fdd17c54bb17e-2"
-        },
-        {
-          "kind": "social",
-          "label": "LinkedIn",
-          "value": "Saga Ventures 官方公司页",
-          "url": "https://www.linkedin.com/company/sagavc",
-          "source_id": "PROFILE-INV-2fdd17c54bb17e-1"
+          "label": "机构官网",
+          "value": "Saga Ventures",
+          "url": "https://sagavc.com/",
+          "source_id": "b39_saga_portfolio"
         }
       ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Saga Ventures 官网组合列表与 Profound 官方融资公告分别提供组合线索和具体融资参与证据。",
       "sources": [
         {
-          "source_id": "PROFILE-INV-2fdd17c54bb17e-1",
-          "source_url": "https://www.linkedin.com/company/sagavc",
-          "source_title": "Saga Ventures | LinkedIn",
-          "source_content_hash": "548163daa20491cfa98ca026e8735d59f6275abf660d9896cd264851eca9c9a0",
-          "quote": "Venture Capital and Private Equity Principals",
-          "quote_hash": "c3f257083dc7ec0ac86d00feb7126e5963279859823e016c9fda927af3da6624"
+          "source_id": "b39_saga_portfolio",
+          "source_url": "https://sagavc.com/",
+          "source_title": "Saga Ventures",
+          "source_content_hash": "7e788fae423b4a2af61286e0f3c37442b515570dc70eb84807f68d7bd456d8cc",
+          "quote": "PROFOUND",
+          "quote_hash": "43af7278a8a5b6458c395f1bbe93ebbf1423f80289dc4bc0df9801ebd06dd2dc"
         },
         {
-          "source_id": "PROFILE-INV-2fdd17c54bb17e-2",
-          "source_url": "https://www.linkedin.com/company/sagavc",
-          "source_title": "Saga Ventures | LinkedIn",
-          "source_content_hash": "548163daa20491cfa98ca026e8735d59f6275abf660d9896cd264851eca9c9a0",
-          "quote": "Website https://www.sagavc.com",
-          "quote_hash": "cc7a4f6e9959bf979dc2b2737d5add5ef32b24efc38f87249bd3b0d17720b24a"
+          "source_id": "b39_saga_profound",
+          "source_url": "https://www.tryprofound.com/newsroom/profound-raises-usd180m-series-d-at-usd1-8b-valuation-to-build-the-ai-platform-for-marketing-teams",
+          "source_title": "Profound Raises $180M Series D at $1.8B Valuation to Build the AI Platform For Marketing Teams",
+          "source_content_hash": "1239bb45f0f7804d1b19e5cb283fa0d2d55fc26992a3c8cbd1614d32e84ce1c6",
+          "quote": "Existing investors Lightspeed Venture Partners, Khosla Ventures, Saga Ventures, Evantic, and South Park Commons all participated.",
+          "quote_hash": "0238028392d4aee43aae2403037e7fa32f63f156754b1a26f84871f00fd0f333"
         },
         {
           "source_id": "FISRC-77525d98c652d74e",
@@ -202,8 +200,7 @@
           "quote": "Existing investors Lightspeed Venture Partners, Khosla Ventures, Saga Ventures, Evantic, and South Park Commons all participated",
           "quote_hash": "019e9487717e313cf5236c2bcf7062e06342eef93833c279a9dc7586c55cdb7c"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

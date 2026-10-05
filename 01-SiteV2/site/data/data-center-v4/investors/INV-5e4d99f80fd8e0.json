@@ -137,36 +137,76 @@
       }
     ],
     "public_profile": {
-      "summary": "东莞市国资委官网称东莞科创集团获2026创投金鹰奖“年度国资投资机构”；本条只记录该政府页面披露的机构身份与奖项。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "东莞市国资委称东莞科创集团隶属东莞投控集团，并公开其“4+N+X”基金矩阵及深耕科技创业投资方向；政府页面还记录其获评“年度国资投资机构”。公开融资报道将其列入蜂巢互联的区域国资股东。本档案只记录这些可追溯信息。",
+      "coverage_note": "集团定位和基金矩阵来自东莞市国资委；蜂巢互联投资者名单来自新浪财经转载的融资报道。未将集团投资规模或获奖情况外推为投资回报。",
+      "facts": [
+        {
+          "field": "ownership_and_positioning",
+          "label": "国资委披露的归属与投资方向",
+          "value": "东莞市国资委称东莞科创集团隶属东莞投控集团，并依托“4+N+X”基金矩阵深耕科技创业投资。",
+          "source_id": "b39_dg_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "东莞市国资委页面报道其获2026创投金鹰奖“年度国资投资机构”。",
-          "source_id": "PROFILE-INV-5e4d99f80fd8e0-1"
+          "description": "融资报道将东莞科创集团列为蜂巢互联融资中的区域国资股东之一；未披露该集团的单独出资额。",
+          "source_id": "b39_dg_honeycomb"
         },
         {
           "description": "融资来源记录：蜂巢互联 · 多轮融资 · 2026-08-26 · 本轮参投 · 12亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6d442164db5f81db"
         }
       ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本条依据国资委公开页面作有限活动覆盖，不扩展集团投资范围或业绩。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "主管部门信息",
+          "value": "东莞市国资委",
+          "url": "https://www.dg.gov.cn/gzw/",
+          "source_id": "b39_dg_group"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
-      "contacts": [],
+      "experience_summary": "东莞市国资委公开材料支持其国资背景、科技创业投资方向及基金矩阵；财经报道提供一项被投企业披露。",
       "sources": [
         {
-          "source_id": "PROFILE-INV-5e4d99f80fd8e0-1",
+          "source_id": "b39_dg_group",
+          "source_url": "https://www.dg.gov.cn/gzw/qyjj/qydt/content/post_4570294.html",
+          "source_title": "国企荣耀丨东莞科创集团荣获2026创投金鹰奖“年度国资投资机构”_国资工作_东莞市国资委_“中国·东莞”政府门户网站",
+          "source_content_hash": "a535cb5f054a027dec010b0c0113c1afc19df0714191276f8d95bbbdbd57c5a4",
+          "quote": "东莞科创集团",
+          "quote_hash": "1bf2dfa4caa786ec6efbbff72e88b71ef53168b03b8d2713d1f0213c637ee7ff"
+        },
+        {
+          "source_id": "b39_dg_strategy",
+          "source_url": "https://www.dg.gov.cn/gzw/qyjj/qydt/content/post_4570294.html",
+          "source_title": "国企荣耀丨东莞科创集团荣获2026创投金鹰奖“年度国资投资机构”_国资工作_东莞市国资委_“中国·东莞”政府门户网站",
+          "source_content_hash": "a535cb5f054a027dec010b0c0113c1afc19df0714191276f8d95bbbdbd57c5a4",
+          "quote": "4+N+X” 基金矩阵 ，深耕科技创业投资",
+          "quote_hash": "499690dbb6406673272417b5b144e92bbc63b8f96dc8a96af9ba95fe4b1caf11"
+        },
+        {
+          "source_id": "b39_dg_award",
           "source_url": "https://www.dg.gov.cn/gzw/qyjj/qydt/content/post_4570294.html",
           "source_title": "国企荣耀丨东莞科创集团荣获2026创投金鹰奖“年度国资投资机构”_国资工作_东莞市国资委_“中国·东莞”政府门户网站",
           "source_content_hash": "a535cb5f054a027dec010b0c0113c1afc19df0714191276f8d95bbbdbd57c5a4",
           "quote": "东莞科创集团荣获2026创投金鹰奖“年度国资投资机构”",
           "quote_hash": "41d9e4249665189cecdadcef8636b9e6fcde210e745e5f2a80b91e7b94ca7cc1"
+        },
+        {
+          "source_id": "b39_dg_honeycomb",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎_新浪财经_新浪网",
+          "source_content_hash": "d14110eba1a1beea7dde559c57889ac1f2a323df193ce26a04c4cd7e8e38c735",
+          "quote": "东莞科创集团",
+          "quote_hash": "1bf2dfa4caa786ec6efbbff72e88b71ef53168b03b8d2713d1f0213c637ee7ff"
         },
         {
           "source_id": "FISRC-6d442164db5f81db",
@@ -176,8 +216,7 @@
           "quote": "国资股东覆盖多省市重点产业投资平台，包括深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金等区域国资",
           "quote_hash": "35ae44ccdff618ec98c46559a29250db0bd4e23281fdb1042ebad42b9f0efddb"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

@@ -153,25 +153,61 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "International Paper 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Relay 的 2026 年 9 月融资公告称，该轮由工业企业 International Paper 领投；International Paper 官网确认其纸品和包装业务主体。现有公开证据支持将其归类为企业投资方，未披露其单独出资金额或其他投资组合。",
+      "coverage_note": "本档案核实 International Paper 的企业身份及一项由被投企业披露的战略投资，不将其描述为风险投资基金，也不把融资总额当作其单独出资额。",
+      "facts": [
+        {
+          "field": "entity_type",
+          "label": "官网业务身份",
+          "value": "International Paper 官网将其业务介绍为可持续包装、纸浆和纸品企业。",
+          "source_id": "b39_ip_company"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Relay · 轮次未披露 · 2026-09-30 · 本轮领投 · $36 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c0d67da86b5ae704"
+          "description": "Relay 官方公告称其 2026 年 9 月新融资由工业企业 International Paper 领投；未披露 International Paper 的单独出资金额。",
+          "source_id": "b39_ip_relay"
         },
         {
           "description": "融资来源记录：Relay · 轮次未披露 · 2026-09-30 · 本轮领投 · $36 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0fa745b79d77cfe5"
+          "source_id": "FISRC-c0d67da86b5ae704"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "International Paper",
+          "url": "https://www.internationalpaper.com/",
+          "source_id": "b39_ip_company"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "International Paper 官网提供企业身份信息；Relay 官方新闻稿披露其领投 Relay 的新融资。未据此推断更广的投资策略。",
       "sources": [
+        {
+          "source_id": "b39_ip_company",
+          "source_url": "https://www.internationalpaper.com/",
+          "source_title": "Sustainable Packaging Solutions, Pulp &amp; Paper Products | International Paper",
+          "source_content_hash": "2e37c3bb57c8abd601416d5c35f788763f3020c25a293cd7d7b6afa0cc0f70f2",
+          "quote": "Sustainable Packaging Solutions, Pulp & Paper Products",
+          "quote_hash": "25fbc67fd08d1af1a28b093567e4cd89dbd56bb5719e1403cde460add94cd9db"
+        },
+        {
+          "source_id": "b39_ip_relay",
+          "source_url": "https://relaypro.com/press-releases/relay-raises-36-million-in-new-funding-from-industry-leaders-to-drive-frontline-safety-productivity-and-operational-intelligence/",
+          "source_title": "Relay Raises $36 Million in New Funding from Industry Leaders to Drive Frontline Safety, Productivity, and Operational Intelligence - Relay",
+          "source_content_hash": "43e7bc3d05f0af68cfd5fe890ea35f6cc2a3da1bc491948379fb2ba546836bc9",
+          "quote": "Investment round led by industrial leader International Paper, alongside other new investors Cerity Partners, Harmonic Growth Partners, and Thayer Investment Partners",
+          "quote_hash": "80e9ae2844ec17d9de289b89e95d43932197c8621651fcc20599c6e12a154232"
+        },
         {
           "source_id": "FISRC-c0d67da86b5ae704",
           "source_url": "https://www.prnewswire.com/news-releases/relay-raises-36-million-in-new-funding-from-industry-leaders-to-drive-frontline-safety-productivity-and-operational-intelligence-302893591.html",
@@ -188,8 +224,7 @@
           "quote": "As a signal of Relay’s growing leadership in industrial digital transformation, the round was led by International Paper, a Fortune 500 leader in sustainable packaging solutions, with more than 125 years of manufacturing experience.",
           "quote_hash": "d44205c8304c7290eaa819fabdae9d01b17830259d2b728f746ae9b819e40e09"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     }
   }
 }

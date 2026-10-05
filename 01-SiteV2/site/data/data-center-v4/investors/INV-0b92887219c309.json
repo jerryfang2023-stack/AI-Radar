@@ -139,19 +139,59 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pace Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-04",
+      "summary": "Pace Capital 官网投资组合列表包括 Overtone，并将其描述为 AI 辅助的配对服务；TechCrunch 对 Overtone 1800万美元融资的报道也将 Pace Capital 列为投资方。公开页面未披露 Pace 的支票规模或投资阶段。",
+      "coverage_note": "投资组合信息来自 Pace Capital 官网，交易参与来自媒体对 Overtone 融资的报道；未推断单独出资额。",
+      "facts": [
+        {
+          "field": "portfolio_evidence",
+          "label": "官网组合披露",
+          "value": "Pace Capital 官网组合列表列出 Overtone，并将其描述为 AI 辅助配对服务。",
+          "source_id": "b39_pace_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 报道称 Pace Capital 参与 Overtone 的1800万美元融资；报道未披露其单独出资额。",
+          "source_id": "b39_pace_overtone"
+        },
         {
           "description": "融资来源记录：Overtone · 种子轮 · 2026-07-14 · 本轮参投 · $18M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c9fd5fac8536f13d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构组合页面",
+          "value": "Pace Capital",
+          "url": "https://pacecapital.com/portfolio",
+          "source_id": "b39_pace_portfolio"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Pace Capital 官网提供组合企业列表，TechCrunch 提供 Overtone 融资中的投资者披露。",
       "sources": [
+        {
+          "source_id": "b39_pace_portfolio",
+          "source_url": "https://pacecapital.com/portfolio",
+          "source_title": "PACE CAPITAL",
+          "source_content_hash": "780808d1c4c65ea042e6988755970298f4d8914e94082af656cdb9f26780c85d",
+          "quote": "OVERTONE AI-ASSISTED MATCHMAKING SERVICE",
+          "quote_hash": "a9ef13ebcc2141c1c709075ec5e554b19caa3ea9de1878c36995b528248a6cd8"
+        },
+        {
+          "source_id": "b39_pace_overtone",
+          "source_url": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
+          "source_title": "The founder of Hinge raised $18M to build a new AI dating service, Overtone | TechCrunch",
+          "source_content_hash": "afc915e7046ac5d07291f6b9097c917ed0b5396f03e0631f52d04923dd9b297f",
+          "quote": "alongside FirstMark Capital and Pace Capital.",
+          "quote_hash": "c65b01825936944af8798e906100d29ec364d91ccc8fd6e471127d345da2ebe6"
+        },
         {
           "source_id": "FISRC-c9fd5fac8536f13d",
           "source_url": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
@@ -160,8 +200,7 @@
           "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital.",
           "quote_hash": "79fb93d20fd81722bbd472bc9a791046309a35a1498dd6c857f6fda3416906ea"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

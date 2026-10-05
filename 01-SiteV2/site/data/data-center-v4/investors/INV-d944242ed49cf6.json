@@ -123,10 +123,24 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sanabil Investments 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Sanabil Investments 官方组合页面称其投资创新商业模式的创业者及寻求规模化的成熟企业，并按直接投资、风险投资与成长基金、私募股权基金、加速器及创业工作室等类别介绍组合。现有资料仍将 Mistral AI 标为一条历史/歧义活动；本批不据此指定融资轮次或当前投资状态。",
+      "coverage_note": "机构定位与组合类别为 Sanabil 官方页面自述。Mistral AI 活动仍按既有资料中的历史/歧义标签保留，本次官网采集没有将其提升为新的或一手确认的投资记录。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网组合介绍",
+          "value": "官网称其投资创新型创业者和寻求规模化的成熟企业。",
+          "source_id": "b39_sanabil_focus"
+        },
+        {
+          "field": "investment_vehicles",
+          "label": "官网列示的组合类别",
+          "value": "官网页面区分直接投资组合、风投与成长基金、私募股权基金、加速器与创业工作室基金。",
+          "source_id": "b39_sanabil_vehicles"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +148,36 @@
           "source_id": "FISRC-ff92324bbd437a73"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网组合页",
+          "value": "Sanabil Investments",
+          "url": "https://www.sanabil.com/en/Our-Portfolio/",
+          "source_id": "b39_sanabil_focus"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Sanabil 官方组合页支持其直接投资和基金投资类别及目标企业阶段的概括；没有据此声称完整投资组合或业绩。",
       "sources": [
+        {
+          "source_id": "b39_sanabil_focus",
+          "source_url": "https://www.sanabil.com/en/Our-Portfolio/",
+          "source_title": "SANABIL",
+          "source_content_hash": "955204f910360696a030b8be63c6bdb00a646758375f6019e5a61aa6faa6d06e",
+          "quote": "We identify and invest in entrepreneurs with innovative business models as well as more established companies seeking to scale and achieve extraordinary impact.",
+          "quote_hash": "f7d7c5bf1627b54230eff99818eb1e6cf7155e1c5ce222c7f50e2aa8533a9450"
+        },
+        {
+          "source_id": "b39_sanabil_vehicles",
+          "source_url": "https://www.sanabil.com/en/Our-Portfolio/",
+          "source_title": "SANABIL",
+          "source_content_hash": "955204f910360696a030b8be63c6bdb00a646758375f6019e5a61aa6faa6d06e",
+          "quote": "Direct Investment Portfolio Venture Capital & Growth Funds Private Equity Funds Accelerators and Venture Studios Funds",
+          "quote_hash": "13bb8c80f0fa93817fd447b8ac1aeccc9c8b9d5b73b5e3fdb3b5bee4ec53e55c"
+        },
         {
           "source_id": "FISRC-ff92324bbd437a73",
           "source_url": "https://notice.co/c/mistral-ai",
@@ -144,8 +186,7 @@
           "quote": "Sanabil Investments Uniphore, Tamara, Alation, Hala, Caffeine, SingleStore, Nile, Gathern, Acceldata",
           "quote_hash": "4cdbf39394b396d18682e327994ef94a18f47d72c5674f171ce931e8343afbe3"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

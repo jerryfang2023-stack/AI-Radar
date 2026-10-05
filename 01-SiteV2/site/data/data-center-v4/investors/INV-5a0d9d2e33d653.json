@@ -137,44 +137,60 @@
       }
     ],
     "public_profile": {
-      "summary": "Picture Capital 官网公开页面仅展示若干企业名称及 Acq./IPO 标记，本档案只记录这组官网公开活动标识，不据此推断投资时间、投资关系或完整组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Picture Capital 官网展示多家企业名称及 IPO、收购等公开标记；Ocean Security 的发行方公告将 Picture Capital 列为其2800万美元融资参与方之一。官网未提供基金结构、投资阶段或完整业绩资料。",
+      "coverage_note": "官网页面上的 IPO/收购标记仅按页面呈现，不据此推断投资时间、回报倍数或完整组合。Ocean 公告未披露 Picture Capital 的单独出资额。",
+      "facts": [
+        {
+          "field": "public_portfolio_page",
+          "label": "官网公开页面",
+          "value": "Picture Capital 官网列出多家企业及 IPO、收购标记；未据此推算投资回报。",
+          "source_id": "b39_picture_site"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "官网页面列出 HPE、Check Point 与 Akamai 等名称及 Acq. 标记；该页面未提供交易日期、投资主体或完整组合说明。",
-          "source_id": "PROFILE-INV-5a0d9d2e33d653-1"
+          "description": "Ocean Security 官方公告将 Picture Capital 列为其2800万美元总融资的参与方之一；未披露 Picture Capital 单独出资额。",
+          "source_id": "b39_picture_ocean"
         },
         {
           "description": "融资来源记录：Ocean · 轮次未披露 · 2026-05-19 · 本轮参投 · $28 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0191618f7b8a168d"
         }
       ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "官网未提供机构介绍；页面只支持有限的公开活动记录。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
       "contacts": [
         {
           "kind": "website",
-          "label": "官网",
+          "label": "机构官网",
           "value": "Picture Capital",
           "url": "https://picture.capital/",
-          "source_id": "PROFILE-INV-5a0d9d2e33d653-1"
+          "source_id": "b39_picture_site"
         }
       ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构官网提供有限的组合及退出标记；Ocean Security 官方新闻稿支持一项近期投资披露。",
       "sources": [
         {
-          "source_id": "PROFILE-INV-5a0d9d2e33d653-1",
+          "source_id": "b39_picture_site",
           "source_url": "https://picture.capital/",
           "source_title": "PictureCapital",
           "source_content_hash": "6268f17ec2445fe9539b4b344e8b1d12837f178134689add410bab3f68deaa69",
-          "quote": "PictureCapital Picture Capital Contact us Acq. HPE Acq. Check Point Acq. Akami",
-          "quote_hash": "8c14817c576d9f98a22eb5839e161f91da9cd0faa22edc2b03e410004f6c4ad0"
+          "quote": "Picture Capital Contact us",
+          "quote_hash": "283ff1d14f21b66f9d99516d83120d3af5cbefda5958b3640804f85bd25cd8c1"
+        },
+        {
+          "source_id": "b39_picture_ocean",
+          "source_url": "https://www.globenewswire.com/news-release/2026/05/19/3297836/0/en/ocean-raises-28m-as-enterprises-confront-a-new-wave-of-ai-powered-email-attacks.html",
+          "source_title": "Ocean Raises $28M as Enterprises Confront a New Wave of",
+          "source_content_hash": "faa51d7775bc5d7341889715cf96a083ecb1556e631f9d5b4d63571e34038fbc",
+          "quote": "with participation from Picture Capital and Cerca Partners",
+          "quote_hash": "2f1efd25185ba6ab3a8889729eae1a61369b727e52aeba8e9702e91aac24cd09"
         },
         {
           "source_id": "FISRC-0191618f7b8a168d",
@@ -184,8 +200,7 @@
           "quote": "The round was led by Lightspeed Venture Partners, with participation from Picture Capital and Cerca Partners.",
           "quote_hash": "babcc47f7a265fac0a2cb70741b577202390ed5449ec4f97cfbd014e30dbc61d"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

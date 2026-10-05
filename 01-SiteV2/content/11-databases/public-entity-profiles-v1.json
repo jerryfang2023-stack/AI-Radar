@@ -23622,29 +23622,56 @@
     "INV-2cdbd1163ea2d9": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "中国金融信息网报道，景美作为长沙景嘉微电子股份有限公司全资子公司，于2026年6月独家领投昆仑元AI战略轮；本档案仅覆盖该次公开活动。",
-      "coverage_note": "仅记录中国金融信息网披露的2026年一笔融资活动，不扩展为完整公司介绍。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "长沙景嘉微官网沿革记载其于2015年设立全资子公司长沙景美集成电路设计有限公司；中国金融信息网报道称景美独家领投昆仑元AI战略轮并投入5000万元。公开证据支持将其作为上市公司旗下企业投资方记录，不据此扩写集团投资策略。",
+      "coverage_note": "子公司关系来自景嘉微官方页面；融资金额及领投信息来自中国金融信息网对发行方融资公告的报道。",
+      "facts": [
+        {
+          "field": "ownership",
+          "label": "上市公司披露的子公司关系",
+          "value": "景嘉微官网沿革记载，长沙景美集成电路设计有限公司为其于2015年设立的全资子公司。",
+          "source_id": "b39_jingmei_parent"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "2026年6月，中国金融信息网报道景美独家领投昆仑元AI新一轮战略融资。",
-          "source_id": "PFSRC-2cdbd1163ea2d9-1"
+          "description": "中国金融信息网报道称景美独家领投昆仑元AI战略轮，金额人民币5000万元；该金额为公开报道的投资额。",
+          "source_id": "b39_jingmei_round"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "母公司官网",
+          "value": "长沙景嘉微",
+          "url": "https://www.jingjiamicro.com/",
+          "source_id": "b39_jingmei_parent"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "景嘉微官网确认景美为全资子公司；中国金融信息网披露一笔由景美独家领投的战略融资。",
       "sources": [
         {
-          "source_id": "PFSRC-2cdbd1163ea2d9-1",
+          "source_id": "b39_jingmei_parent",
+          "source_url": "https://www.jingjiamicro.com/about.html",
+          "source_title": "关于我们-长沙景嘉微电子股份有限公司",
+          "source_content_hash": "0d507ae0dec28afb3d98828dbde4ff4de04ae25a169f94e8d53346fb8977a66b",
+          "quote": "成立全资子公司：长沙景美集成电路设计有限公司",
+          "quote_hash": "fe7306baa914594b3e34f3d3bf9177296ba158ae2b954025252fb2c01900ae3e"
+        },
+        {
+          "source_id": "b39_jingmei_round",
           "source_url": "https://www.cnfin.com/gs-lb/detail/20260608/4423270_1.html",
           "source_title": "昆仑元AI完成新一轮战略轮融资 景嘉微战略入股 - 中国金融信息网",
-          "source_content_hash": "452d518869fcc89322480f06e4666735587b4f67235f818f04ab89b864d48f9c",
-          "quote": "本轮融资由A股上市公司长沙 景嘉微 电子股份有限公司（300474.SZ）全资子公司——长沙景美集成电路设计有限公司（以下简称“景美”）独家领投，投资金额人民币5000万元",
-          "quote_hash": "4835d7f46a038560738bd240028d5aff6e16bbbcfa7b3c3deb093ed5396c941b"
+          "source_content_hash": "fd72be7153c9eba8638abc424a97f8ba3a1886ca598f6285b9b8d8eb59f36131",
+          "quote": "长沙景美集成电路设计有限公司（以下简称“景美”）独家领投，投资金额人民币5000万元",
+          "quote_hash": "65a3217e29181267935a2fd7c372a0596e45f0b8b070a7f3e0fb5e5d68881892"
         }
-      ],
-      "last_verified_at": "2026-10-02"
+      ]
     },
     "INV-2ceff77849b542": {
       "profile_type": "organization",
@@ -25240,60 +25267,58 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-2fdd17c54bb17e": {
-      "summary": "Saga Ventures 的 LinkedIn 公司页自述行业为“Venture Capital and Private Equity Principals”，并列出 sagavc.com 官网链接；本条仅记录该公司页自述。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Saga Ventures 官网公开页面列有 Profound 等组合企业；Profound 自身的 Series D 公告确认 Saga Ventures 作为既有投资者参与本轮。当前捕获到的官网内容没有基金规模、团队或投资阶段信息，因此不作推断。",
+      "coverage_note": "官网公开内容主要为组合企业列表；发行方公告支持一项参投披露，未披露 Saga Ventures 的单独出资额。",
       "facts": [
         {
-          "field": "self_described_industry",
-          "label": "公司页自述行业",
-          "value": "Venture Capital and Private Equity Principals。",
-          "source_id": "PROFILE-INV-2fdd17c54bb17e-1"
+          "field": "portfolio_evidence",
+          "label": "官网组合页面",
+          "value": "Saga Ventures 官网页面列有 Profound；未据公开列表推断该机构的完整组合或基金配置。",
+          "source_id": "b39_saga_portfolio"
         }
       ],
       "milestones": [],
-      "track_record": [],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "coverage_note": "身份与行业来自同名公司 LinkedIn 自述；未据此推断基金、投资阶段或投资组合。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
+      "track_record": [
+        {
+          "description": "Profound 官方公告称 Saga Ventures 参与其 2026 年 Series D；未披露该机构的单独出资额。",
+          "source_id": "b39_saga_profound"
+        }
+      ],
       "contacts": [
         {
           "kind": "website",
-          "label": "官网（公司页所列）",
-          "value": "https://www.sagavc.com",
-          "url": "https://www.sagavc.com",
-          "source_id": "PROFILE-INV-2fdd17c54bb17e-2"
-        },
-        {
-          "kind": "social",
-          "label": "LinkedIn",
-          "value": "Saga Ventures 官方公司页",
-          "url": "https://www.linkedin.com/company/sagavc",
-          "source_id": "PROFILE-INV-2fdd17c54bb17e-1"
+          "label": "机构官网",
+          "value": "Saga Ventures",
+          "url": "https://sagavc.com/",
+          "source_id": "b39_saga_portfolio"
         }
       ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Saga Ventures 官网组合列表与 Profound 官方融资公告分别提供组合线索和具体融资参与证据。",
       "sources": [
         {
-          "source_id": "PROFILE-INV-2fdd17c54bb17e-1",
-          "source_url": "https://www.linkedin.com/company/sagavc",
-          "source_title": "Saga Ventures | LinkedIn",
-          "source_content_hash": "548163daa20491cfa98ca026e8735d59f6275abf660d9896cd264851eca9c9a0",
-          "quote": "Venture Capital and Private Equity Principals",
-          "quote_hash": "c3f257083dc7ec0ac86d00feb7126e5963279859823e016c9fda927af3da6624"
+          "source_id": "b39_saga_portfolio",
+          "source_url": "https://sagavc.com/",
+          "source_title": "Saga Ventures",
+          "source_content_hash": "7e788fae423b4a2af61286e0f3c37442b515570dc70eb84807f68d7bd456d8cc",
+          "quote": "PROFOUND",
+          "quote_hash": "43af7278a8a5b6458c395f1bbe93ebbf1423f80289dc4bc0df9801ebd06dd2dc"
         },
         {
-          "source_id": "PROFILE-INV-2fdd17c54bb17e-2",
-          "source_url": "https://www.linkedin.com/company/sagavc",
-          "source_title": "Saga Ventures | LinkedIn",
-          "source_content_hash": "548163daa20491cfa98ca026e8735d59f6275abf660d9896cd264851eca9c9a0",
-          "quote": "Website https://www.sagavc.com",
-          "quote_hash": "cc7a4f6e9959bf979dc2b2737d5add5ef32b24efc38f87249bd3b0d17720b24a"
+          "source_id": "b39_saga_profound",
+          "source_url": "https://www.tryprofound.com/newsroom/profound-raises-usd180m-series-d-at-usd1-8b-valuation-to-build-the-ai-platform-for-marketing-teams",
+          "source_title": "Profound Raises $180M Series D at $1.8B Valuation to Build the AI Platform For Marketing Teams",
+          "source_content_hash": "1239bb45f0f7804d1b19e5cb283fa0d2d55fc26992a3c8cbd1614d32e84ce1c6",
+          "quote": "Existing investors Lightspeed Venture Partners, Khosla Ventures, Saga Ventures, Evantic, and South Park Commons all participated.",
+          "quote_hash": "0238028392d4aee43aae2403037e7fa32f63f156754b1a26f84871f00fd0f333"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-2fef436dbde053": {
       "profile_type": "person",
@@ -28534,38 +28559,74 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-35c76a0b1c5fb6": {
-      "summary": "Kantox 的产品公告将 Antonio Rami 称为公司联合创始人兼首席增长官；该页面未显示可确认的发布日期，因此此处只保存页面中的角色归属，不断言其当前仍在任。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [],
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "官方页面未确认发布日期及当前任职状态；档案不作现任判断。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Vertex Ventures Southeast Asia & India 将 Antonio Rami 列为 FORMAS.AI 预种子轮天使投资人，并称其为 Kantox 联合创始人；Kantox 自身公告将其称为联合创始人兼首席增长官。现有来源只支持这一笔公开投资披露，不含个人出资金额。",
+      "coverage_note": "Kantox 页面发表于 2024 年，保留当时披露的职务表述，不据此断言当前任职状态。FORMAS.AI 融资公告未披露 Rami 的个人出资额。",
+      "facts": [
+        {
+          "field": "career_role",
+          "label": "Kantox 公告中的职务",
+          "value": "Kantox 公告将 Antonio Rami 称为联合创始人兼首席增长官；该页面发表于2024年。",
+          "source_id": "b39_rami_role"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Vertex Ventures SEA & India 的 FORMAS.AI 融资公告将 Antonio Rami 列入天使投资人；未披露其个人投资额。",
+          "source_id": "b39_rami_context"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Kantox",
+          "value": "Kantox",
+          "url": "https://www.kantox.com/",
+          "source_id": "b39_rami_role"
+        }
+      ],
       "current_roles": [],
       "career": [
         {
-          "organization": "Kantox",
           "title": "Co-founder and Chief Growth Officer",
-          "period": "页面发布日期未核实",
-          "description": "Kantox 页面在介绍其产品时以该头衔称呼 Antonio Rami；当前任职状态未确认。",
-          "source_id": "PROFILE-INV-35c76a0b1c5fb6-1"
+          "organization": "Kantox",
+          "source_id": "b39_rami_role",
+          "period": "2024 public announcement",
+          "description": "Kantox announced its in-house FX service and described Antonio Rami as co-founder and Chief Growth Officer."
         }
       ],
       "education": [],
-      "experience_summary": "Kantox 官方页面提供一条未注明发布日期的联合创始人及首席增长官角色记录；不据此宣称为现任。",
-      "contacts": [],
+      "experience_summary": "本人任职相关信息来自 Kantox 官方产品公告；FORMAS.AI 投资披露来自领投机构 Vertex Ventures Southeast Asia & India。",
       "sources": [
         {
-          "source_id": "PROFILE-INV-35c76a0b1c5fb6-1",
+          "source_id": "b39_rami_role",
           "source_url": "https://www.kantox.com/blog/kantox-launches-kantox-in-house-fx-centralising-fx-management-for-global-businesses",
           "source_title": "Kantox Launches Kantox In-House FX: Centralising FX Management for Global Businesses - Kantox",
           "source_content_hash": "620d8acf6e858422711552e8f463368e6caaa4f0d6deebfa3cbd353980dfe38a",
           "quote": "Antonio Rami, co-founder and Chief Growth Officer at Kantox",
           "quote_hash": "52c09c815120a4fcc299354b1b763b521bcb1f31d7f02b5dbd5ea52308259ea5"
+        },
+        {
+          "source_id": "b39_rami_angel",
+          "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
+          "source_title": "FORMAS.AI Raises US$3.98 Million in Oversubscribed Pre-Seed Round to Build the AI-Native Design Workspace for Architecture | Vertex Ventures SEA",
+          "source_content_hash": "e536bc23534753ef217c69211cc0b970eb0249522333eb166fe691ee22ce2840",
+          "quote": "Antonio Rami, Co-founder of Kantox (acquired by BNP Paribas)",
+          "quote_hash": "f01cbbf795ecab619b766e9b720dd30d019767aea5dd32419420d3d35c85f8ea"
+        },
+        {
+          "source_id": "b39_rami_context",
+          "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
+          "source_title": "FORMAS.AI Raises US$3.98 Million in Oversubscribed Pre-Seed Round to Build the AI-Native Design Workspace for Architecture | Vertex Ventures SEA",
+          "source_content_hash": "e536bc23534753ef217c69211cc0b970eb0249522333eb166fe691ee22ce2840",
+          "quote": "alongside angel investors including enterprise SaaS unicorn founder",
+          "quote_hash": "d543dd3622cca4007d61cf8360207abdb8f727fe7e995e2154d3a2c25e69941f"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-35cb7f3c5fd109": {
       "profile_type": "organization",
@@ -48579,43 +48640,58 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-5a0d9d2e33d653": {
-      "summary": "Picture Capital 官网公开页面仅展示若干企业名称及 Acq./IPO 标记，本档案只记录这组官网公开活动标识，不据此推断投资时间、投资关系或完整组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Picture Capital 官网展示多家企业名称及 IPO、收购等公开标记；Ocean Security 的发行方公告将 Picture Capital 列为其2800万美元融资参与方之一。官网未提供基金结构、投资阶段或完整业绩资料。",
+      "coverage_note": "官网页面上的 IPO/收购标记仅按页面呈现，不据此推断投资时间、回报倍数或完整组合。Ocean 公告未披露 Picture Capital 的单独出资额。",
+      "facts": [
+        {
+          "field": "public_portfolio_page",
+          "label": "官网公开页面",
+          "value": "Picture Capital 官网列出多家企业及 IPO、收购标记；未据此推算投资回报。",
+          "source_id": "b39_picture_site"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "官网页面列出 HPE、Check Point 与 Akamai 等名称及 Acq. 标记；该页面未提供交易日期、投资主体或完整组合说明。",
-          "source_id": "PROFILE-INV-5a0d9d2e33d653-1"
+          "description": "Ocean Security 官方公告将 Picture Capital 列为其2800万美元总融资的参与方之一；未披露 Picture Capital 单独出资额。",
+          "source_id": "b39_picture_ocean"
         }
       ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "官网未提供机构介绍；页面只支持有限的公开活动记录。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
       "contacts": [
         {
           "kind": "website",
-          "label": "官网",
+          "label": "机构官网",
           "value": "Picture Capital",
           "url": "https://picture.capital/",
-          "source_id": "PROFILE-INV-5a0d9d2e33d653-1"
+          "source_id": "b39_picture_site"
         }
       ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构官网提供有限的组合及退出标记；Ocean Security 官方新闻稿支持一项近期投资披露。",
       "sources": [
         {
-          "source_id": "PROFILE-INV-5a0d9d2e33d653-1",
+          "source_id": "b39_picture_site",
           "source_url": "https://picture.capital/",
           "source_title": "PictureCapital",
           "source_content_hash": "6268f17ec2445fe9539b4b344e8b1d12837f178134689add410bab3f68deaa69",
-          "quote": "PictureCapital Picture Capital Contact us Acq. HPE Acq. Check Point Acq. Akami",
-          "quote_hash": "8c14817c576d9f98a22eb5839e161f91da9cd0faa22edc2b03e410004f6c4ad0"
+          "quote": "Picture Capital Contact us",
+          "quote_hash": "283ff1d14f21b66f9d99516d83120d3af5cbefda5958b3640804f85bd25cd8c1"
+        },
+        {
+          "source_id": "b39_picture_ocean",
+          "source_url": "https://www.globenewswire.com/news-release/2026/05/19/3297836/0/en/ocean-raises-28m-as-enterprises-confront-a-new-wave-of-ai-powered-email-attacks.html",
+          "source_title": "Ocean Raises $28M as Enterprises Confront a New Wave of",
+          "source_content_hash": "faa51d7775bc5d7341889715cf96a083ecb1556e631f9d5b4d63571e34038fbc",
+          "quote": "with participation from Picture Capital and Cerca Partners",
+          "quote_hash": "2f1efd25185ba6ab3a8889729eae1a61369b727e52aeba8e9702e91aac24cd09"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-5a198f69315a8d": {
       "profile_type": "organization",
@@ -49626,60 +49702,54 @@
       "last_verified_at": "2026-09-27"
     },
     "INV-5b2262f77ed6a3": {
-      "summary": "Sandberg Bernthal Venture Partners 的 LinkedIn 公司页自述其业务方向为与创业者共同投资、支持和扩大企业；本条只保留公司页自述。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Mona 的融资公告称，350万美元融资由 Sandberg Bernthal Venture Partners 领投；Atomic 的官方公告也将其列为公司支持方。两份发行方材料支持该机构身份及多项投资披露，未说明其基金规模或单独出资金额。",
+      "coverage_note": "仅记录两家被投公司的发行方公告；不从“Venture Partners”名称推断基金结构、投资阶段或规模。",
       "facts": [
         {
-          "field": "self_described_approach",
-          "label": "公司页自述",
-          "value": "与创业者并肩投资、支持并扩大业务。",
-          "source_id": "PROFILE-INV-5b2262f77ed6a3-1"
+          "field": "investment_evidence",
+          "label": "发行方公开的投资关系",
+          "value": "Mona 与 Atomic 的发行方公告均披露 Sandberg Bernthal Venture Partners 参与投资。",
+          "source_id": "b39_sbvp_atomic"
         }
       ],
       "milestones": [],
-      "track_record": [],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "coverage_note": "资料来自该名称对应的 LinkedIn 公司页自述，未由此推断基金规模、投资阶段或投资组合。",
+      "track_record": [
+        {
+          "description": "Mona 公告称其融资由 Sandberg Bernthal Venture Partners 领投；未披露该机构的单独出资额。",
+          "source_id": "b39_sbvp_mona"
+        },
+        {
+          "description": "Atomic 官方公告将 Sandberg Bernthal Venture Partners 列为公司支持方。",
+          "source_id": "b39_sbvp_atomic"
+        }
+      ],
+      "contacts": [],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官网（公司页所列）",
-          "value": "https://sbvp.com",
-          "url": "https://sbvp.com",
-          "source_id": "PROFILE-INV-5b2262f77ed6a3-2"
-        },
-        {
-          "kind": "social",
-          "label": "LinkedIn",
-          "value": "Sandberg Bernthal Venture Partners 公司页",
-          "url": "https://www.linkedin.com/company/sbvpartners",
-          "source_id": "PROFILE-INV-5b2262f77ed6a3-1"
-        }
-      ],
+      "experience_summary": "Mona 与 Atomic 的融资公告分别披露 Sandberg Bernthal Venture Partners 作为领投方和支持方。",
       "sources": [
         {
-          "source_id": "PROFILE-INV-5b2262f77ed6a3-1",
-          "source_url": "https://www.linkedin.com/company/sbvpartners",
-          "source_title": "Sandberg Bernthal Venture Partners | LinkedIn",
-          "source_content_hash": "65ef4b8481f384283ee7ba39000158f00a84c5d556cf80f55418eb66b9a2d55f",
-          "quote": "Investing, supporting and scaling alongside great entrepreneurs.",
-          "quote_hash": "98c1186748b9ec8cf2f317eff44bbc82e0466c09fd73c4e325b35a7fb351ba8c"
+          "source_id": "b39_sbvp_mona",
+          "source_url": "https://www.businesswire.com/news/home/20260928892666/en/Mona-Raises-%243.5M-to-Expand-Its-AI-Platform-for-Small-Business-Capital-Access-and-Financial-Coaching",
+          "source_title": "Mona Raises $3.5M to Expand Its AI Platform for Small Business Capital Access and Financial Coaching",
+          "source_content_hash": "e1b8312e89acc5c10e638a05c81449193c4b2cf48f91a49be0ab6a361abd450b",
+          "quote": "The round was led by Sandberg Bernthal Venture Partners",
+          "quote_hash": "9df18d1268b57f8fb58b1edfddb70f1ac582de112f82ead63e87ef7f1cfaf156"
         },
         {
-          "source_id": "PROFILE-INV-5b2262f77ed6a3-2",
-          "source_url": "https://www.linkedin.com/company/sbvpartners",
-          "source_title": "Sandberg Bernthal Venture Partners | LinkedIn",
-          "source_content_hash": "65ef4b8481f384283ee7ba39000158f00a84c5d556cf80f55418eb66b9a2d55f",
-          "quote": "Website https://sbvp.com",
-          "quote_hash": "8f8ca0058f5c7935041ca41697de71563fe905f19fe93546f83ab4e20918a50d"
+          "source_id": "b39_sbvp_atomic",
+          "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",
+          "source_title": "Atomic Raises $12.5M to Build the AI Control System for Physical Goods Companies",
+          "source_content_hash": "4407db855b53b27a11ae071df8065303eff58def7cc749555b224b191261ea35",
+          "quote": "Atomic is backed by DVx Ventures, Klass Capital, Madrona, Alumni Ventures, and Sandberg Bernthal Venture Partners.",
+          "quote_hash": "66468abb2cb6474446cda92500252a5959692e8108279cd231c03eb848adf144"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-5b254c14a17050": {
       "profile_type": "organization",
@@ -52703,35 +52773,74 @@
       "experience_summary": ""
     },
     "INV-5e4d99f80fd8e0": {
-      "summary": "东莞市国资委官网称东莞科创集团获2026创投金鹰奖“年度国资投资机构”；本条只记录该政府页面披露的机构身份与奖项。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "东莞市国资委称东莞科创集团隶属东莞投控集团，并公开其“4+N+X”基金矩阵及深耕科技创业投资方向；政府页面还记录其获评“年度国资投资机构”。公开融资报道将其列入蜂巢互联的区域国资股东。本档案只记录这些可追溯信息。",
+      "coverage_note": "集团定位和基金矩阵来自东莞市国资委；蜂巢互联投资者名单来自新浪财经转载的融资报道。未将集团投资规模或获奖情况外推为投资回报。",
+      "facts": [
+        {
+          "field": "ownership_and_positioning",
+          "label": "国资委披露的归属与投资方向",
+          "value": "东莞市国资委称东莞科创集团隶属东莞投控集团，并依托“4+N+X”基金矩阵深耕科技创业投资。",
+          "source_id": "b39_dg_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "东莞市国资委页面报道其获2026创投金鹰奖“年度国资投资机构”。",
-          "source_id": "PROFILE-INV-5e4d99f80fd8e0-1"
+          "description": "融资报道将东莞科创集团列为蜂巢互联融资中的区域国资股东之一；未披露该集团的单独出资额。",
+          "source_id": "b39_dg_honeycomb"
         }
       ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本条依据国资委公开页面作有限活动覆盖，不扩展集团投资范围或业绩。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "主管部门信息",
+          "value": "东莞市国资委",
+          "url": "https://www.dg.gov.cn/gzw/",
+          "source_id": "b39_dg_group"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
-      "contacts": [],
+      "experience_summary": "东莞市国资委公开材料支持其国资背景、科技创业投资方向及基金矩阵；财经报道提供一项被投企业披露。",
       "sources": [
         {
-          "source_id": "PROFILE-INV-5e4d99f80fd8e0-1",
+          "source_id": "b39_dg_group",
+          "source_url": "https://www.dg.gov.cn/gzw/qyjj/qydt/content/post_4570294.html",
+          "source_title": "国企荣耀丨东莞科创集团荣获2026创投金鹰奖“年度国资投资机构”_国资工作_东莞市国资委_“中国·东莞”政府门户网站",
+          "source_content_hash": "a535cb5f054a027dec010b0c0113c1afc19df0714191276f8d95bbbdbd57c5a4",
+          "quote": "东莞科创集团",
+          "quote_hash": "1bf2dfa4caa786ec6efbbff72e88b71ef53168b03b8d2713d1f0213c637ee7ff"
+        },
+        {
+          "source_id": "b39_dg_strategy",
+          "source_url": "https://www.dg.gov.cn/gzw/qyjj/qydt/content/post_4570294.html",
+          "source_title": "国企荣耀丨东莞科创集团荣获2026创投金鹰奖“年度国资投资机构”_国资工作_东莞市国资委_“中国·东莞”政府门户网站",
+          "source_content_hash": "a535cb5f054a027dec010b0c0113c1afc19df0714191276f8d95bbbdbd57c5a4",
+          "quote": "4+N+X” 基金矩阵 ，深耕科技创业投资",
+          "quote_hash": "499690dbb6406673272417b5b144e92bbc63b8f96dc8a96af9ba95fe4b1caf11"
+        },
+        {
+          "source_id": "b39_dg_award",
           "source_url": "https://www.dg.gov.cn/gzw/qyjj/qydt/content/post_4570294.html",
           "source_title": "国企荣耀丨东莞科创集团荣获2026创投金鹰奖“年度国资投资机构”_国资工作_东莞市国资委_“中国·东莞”政府门户网站",
           "source_content_hash": "a535cb5f054a027dec010b0c0113c1afc19df0714191276f8d95bbbdbd57c5a4",
           "quote": "东莞科创集团荣获2026创投金鹰奖“年度国资投资机构”",
           "quote_hash": "41d9e4249665189cecdadcef8636b9e6fcde210e745e5f2a80b91e7b94ca7cc1"
+        },
+        {
+          "source_id": "b39_dg_honeycomb",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎_新浪财经_新浪网",
+          "source_content_hash": "d14110eba1a1beea7dde559c57889ac1f2a323df193ce26a04c4cd7e8e38c735",
+          "quote": "东莞科创集团",
+          "quote_hash": "1bf2dfa4caa786ec6efbbff72e88b71ef53168b03b8d2713d1f0213c637ee7ff"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-5e67a0ab8f3544": {
       "profile_type": "organization",
@@ -53625,35 +53734,54 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-5ff5d5346b4e9b": {
-      "summary": "Scale AI 官方公告称，公司收到 Meta Platforms, Inc. 的一笔重大新投资；本条只记录该公告所披露的单项投资关系，不延伸为 Meta 的完整投资档案。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Scale AI 官方公告称其收到 Meta Platforms, Inc. 的重大新投资；Eliyan 官方公告又将 Meta 列为其战略投资方之一。两项发行方材料支持 Meta 的企业投资者身份，但不代表完整战略或投资组合。",
+      "coverage_note": "Scale AI 公告未在所引段落披露 Meta 的单独投资额；Eliyan 公布的是总额为5000万美元的战略融资，不把总额归为 Meta 出资。",
+      "facts": [
+        {
+          "field": "investor_type",
+          "label": "发行方公告中的投资角色",
+          "value": "两家被投公司均将 Meta 列为公司投资方或战略投资方。",
+          "source_id": "b39_meta_eliyan"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Scale AI 公告披露其收到 Meta Platforms, Inc. 的一笔重大新投资。",
-          "source_id": "PROFILE-INV-5ff5d5346b4e9b-1"
+          "description": "Scale AI 官方公告称 Meta Platforms, Inc. 对其作出重大新投资；公告在所引段落未披露 Meta 的单独出资额。",
+          "source_id": "b39_meta_scale"
+        },
+        {
+          "description": "Eliyan 官方公告将 Meta 列为2026年战略投资参与方之一；融资总额不代表 Meta 的单独投资额。",
+          "source_id": "b39_meta_eliyan"
         }
       ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "来源为被投公司 Scale AI 的原始公告；未录入金额或其他投资组合。",
+      "contacts": [],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
-      "contacts": [],
+      "experience_summary": "Scale AI 与 Eliyan 的官方融资公告分别支持 Meta 在两家公司的投资关系。",
       "sources": [
         {
-          "source_id": "PROFILE-INV-5ff5d5346b4e9b-1",
+          "source_id": "b39_meta_scale",
           "source_url": "https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution",
           "source_title": "Founder, Alexandr Wang, Joins Meta to Work on AI Efforts | Scale AI",
           "source_content_hash": "1cc3b6155ef7bd2e2fbac4a608cf4751edb1bcc1dea2103f10561f81cfc99d1b",
           "quote": "a significant new investment from Meta Platforms, Inc.",
           "quote_hash": "0c1410ea362c2a5ccd351b84c34de020dcf422e98bb3efab0f31175229644520"
+        },
+        {
+          "source_id": "b39_meta_eliyan",
+          "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+          "source_title": "Eliyan Secures $50 Million in Strategic Investments from Leading Hyperscalers and AI Infrastructure Providers to Accelerate Scalable AI Systems - Eliyan",
+          "source_content_hash": "11a719573d90d41fdcec01ceddc607ab194b94e5d8a0c7b0350c7d9d8252f4fc",
+          "quote": "including AMD, Arm, Coherent, and Meta",
+          "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-5ff84127eaef93": {
       "summary": "今日资本官网展示其基金组合，并列出基金I、基金II及常青基金各期的年份。",
@@ -164495,6 +164623,649 @@
           "source_content_hash": "2eb2b0e179e474cf8262dfd1f50ac31243c2db48e0331c48670ebf6ae02949a6",
           "quote": "led by Headline Asia",
           "quote_hash": "34fb0468e4bd4c8fa4fbca328966aa2aa772cffc01e76e94f1e5637e40ef756e"
+        }
+      ]
+    },
+    "INV-0b92887219c309": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-04",
+      "summary": "Pace Capital 官网投资组合列表包括 Overtone，并将其描述为 AI 辅助的配对服务；TechCrunch 对 Overtone 1800万美元融资的报道也将 Pace Capital 列为投资方。公开页面未披露 Pace 的支票规模或投资阶段。",
+      "coverage_note": "投资组合信息来自 Pace Capital 官网，交易参与来自媒体对 Overtone 融资的报道；未推断单独出资额。",
+      "facts": [
+        {
+          "field": "portfolio_evidence",
+          "label": "官网组合披露",
+          "value": "Pace Capital 官网组合列表列出 Overtone，并将其描述为 AI 辅助配对服务。",
+          "source_id": "b39_pace_portfolio"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "TechCrunch 报道称 Pace Capital 参与 Overtone 的1800万美元融资；报道未披露其单独出资额。",
+          "source_id": "b39_pace_overtone"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构组合页面",
+          "value": "Pace Capital",
+          "url": "https://pacecapital.com/portfolio",
+          "source_id": "b39_pace_portfolio"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Pace Capital 官网提供组合企业列表，TechCrunch 提供 Overtone 融资中的投资者披露。",
+      "sources": [
+        {
+          "source_id": "b39_pace_portfolio",
+          "source_url": "https://pacecapital.com/portfolio",
+          "source_title": "PACE CAPITAL",
+          "source_content_hash": "780808d1c4c65ea042e6988755970298f4d8914e94082af656cdb9f26780c85d",
+          "quote": "OVERTONE AI-ASSISTED MATCHMAKING SERVICE",
+          "quote_hash": "a9ef13ebcc2141c1c709075ec5e554b19caa3ea9de1878c36995b528248a6cd8"
+        },
+        {
+          "source_id": "b39_pace_overtone",
+          "source_url": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
+          "source_title": "The founder of Hinge raised $18M to build a new AI dating service, Overtone | TechCrunch",
+          "source_content_hash": "afc915e7046ac5d07291f6b9097c917ed0b5396f03e0631f52d04923dd9b297f",
+          "quote": "alongside FirstMark Capital and Pace Capital.",
+          "quote_hash": "c65b01825936944af8798e906100d29ec364d91ccc8fd6e471127d345da2ebe6"
+        }
+      ]
+    },
+    "INV-3cd7cfaf8cedc5": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Relay 的 2026 年 9 月融资公告称，该轮由工业企业 International Paper 领投；International Paper 官网确认其纸品和包装业务主体。现有公开证据支持将其归类为企业投资方，未披露其单独出资金额或其他投资组合。",
+      "coverage_note": "本档案核实 International Paper 的企业身份及一项由被投企业披露的战略投资，不将其描述为风险投资基金，也不把融资总额当作其单独出资额。",
+      "facts": [
+        {
+          "field": "entity_type",
+          "label": "官网业务身份",
+          "value": "International Paper 官网将其业务介绍为可持续包装、纸浆和纸品企业。",
+          "source_id": "b39_ip_company"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Relay 官方公告称其 2026 年 9 月新融资由工业企业 International Paper 领投；未披露 International Paper 的单独出资金额。",
+          "source_id": "b39_ip_relay"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "International Paper",
+          "url": "https://www.internationalpaper.com/",
+          "source_id": "b39_ip_company"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "International Paper 官网提供企业身份信息；Relay 官方新闻稿披露其领投 Relay 的新融资。未据此推断更广的投资策略。",
+      "sources": [
+        {
+          "source_id": "b39_ip_company",
+          "source_url": "https://www.internationalpaper.com/",
+          "source_title": "Sustainable Packaging Solutions, Pulp &amp; Paper Products | International Paper",
+          "source_content_hash": "2e37c3bb57c8abd601416d5c35f788763f3020c25a293cd7d7b6afa0cc0f70f2",
+          "quote": "Sustainable Packaging Solutions, Pulp & Paper Products",
+          "quote_hash": "25fbc67fd08d1af1a28b093567e4cd89dbd56bb5719e1403cde460add94cd9db"
+        },
+        {
+          "source_id": "b39_ip_relay",
+          "source_url": "https://relaypro.com/press-releases/relay-raises-36-million-in-new-funding-from-industry-leaders-to-drive-frontline-safety-productivity-and-operational-intelligence/",
+          "source_title": "Relay Raises $36 Million in New Funding from Industry Leaders to Drive Frontline Safety, Productivity, and Operational Intelligence - Relay",
+          "source_content_hash": "43e7bc3d05f0af68cfd5fe890ea35f6cc2a3da1bc491948379fb2ba546836bc9",
+          "quote": "Investment round led by industrial leader International Paper, alongside other new investors Cerity Partners, Harmonic Growth Partners, and Thayer Investment Partners",
+          "quote_hash": "80e9ae2844ec17d9de289b89e95d43932197c8621651fcc20599c6e12a154232"
+        }
+      ]
+    },
+    "INV-887ea6e273f963": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "中微公司官网将其全称列为中微半导体设备（上海）股份有限公司，湖北省经信厅公告称其华中总部落户武汉，并确认中微半导体是星辰技术投资方之一。来源链支持将队列简称对应到上市公司中微公司；未推断投资金额或具体出资主体。",
+      "coverage_note": "“中微半导体”按中微公司官方全称和省级部门披露的华中总部信息核验。公告没有说明投资是否由上市公司母体、武汉子公司或其基金完成。",
+      "facts": [
+        {
+          "field": "organization_identity",
+          "label": "官方全称",
+          "value": "中微公司官网载明其全称为中微半导体设备（上海）股份有限公司，证券简称中微公司、代码688012。",
+          "source_id": "b39_amec_identity"
+        },
+        {
+          "field": "corporate_activity",
+          "label": "投资披露",
+          "value": "武汉市科技局报道将中微半导体列为星辰技术投资方之一；投资工具及具体出资法人未披露。",
+          "source_id": "b39_amec_starcore"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "中微公司",
+          "url": "https://www.amec-inc.com/",
+          "source_id": "b39_amec_identity"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "中微公司官网确认上市公司全称及主营设备业务；湖北省经信厅确认其华中总部项目，并将中微半导体列为星辰技术投资方之一。",
+      "sources": [
+        {
+          "source_id": "b39_amec_identity",
+          "source_url": "https://www.amec-inc.com/",
+          "source_title": "中微公司",
+          "source_content_hash": "ba6becfcdcbdbf955d226f66a3e755769dd4df06eae6304b520107e1d7587b87",
+          "quote": "中微半导体设备（上海）股份有限公司（证券简称“中微公司”，证券代码“688012”）是一家以中国为基地、面向全球的微观加工高端设备公司",
+          "quote_hash": "1d14270d5693ecc886409190686e2e016230329b71330c13eaba5ac358a7833d"
+        },
+        {
+          "source_id": "b39_amec_hubei_hq",
+          "source_url": "https://jxt.hubei.gov.cn/bmdt/rdjj/202608/t20260806_5990263.shtml",
+          "source_title": "中微半导体华中总部落户武汉-湖北省经济和信息化厅",
+          "source_content_hash": "4cbfc4d0894985285e03b4073e330f581eb8f715e255ab8a71ad48408a02a2db",
+          "quote": "近日，中微半导体设备（上海）股份有限公司（简称中微公司）华中总部正式落户光谷",
+          "quote_hash": "0b788f41b63822c54560ca276610c019f658a8c585fa5fee9f755d7f481c33dd"
+        },
+        {
+          "source_id": "b39_amec_starcore",
+          "source_url": "https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202608/t20260826_2838787.html",
+          "source_title": "科技新闻",
+          "source_content_hash": "06125b37bf2d04dae8eb16268ef9cd840f4b9fe63eb71a8bb3556464a2c4f3dd",
+          "quote": "刚在光谷设立华中总部的中微半导体是星辰技术投资方之一。",
+          "quote_hash": "6ff1e417383d77b38181fc574942f0cd7ca671a7297b230b0df3308b842775fa"
+        }
+      ]
+    },
+    "INV-9b4d300a8acf27": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Playground Global 官方公告称 Pat Gelsinger 于2025年加入并任 General Partner，拥有超过45年计算与半导体经验，曾任 Intel 和 VMware 首席执行官；公告称他会与其他合伙人共同投资、参与董事会并辅导 CEO。该职务支持其投资者身份，但不等于证明任何一笔个人直接出资。",
+      "coverage_note": "投资角色来自其任职机构公告。当前档案不把既有 Fractile 报道中的个人天使投资披露扩展成组合、金额或直接出资结论。",
+      "facts": [
+        {
+          "field": "professional_background",
+          "label": "任职机构公告中的职业背景",
+          "value": "Playground Global 公告称 Pat Gelsinger 曾任 Intel 和 VMware CEO，并拥有超过45年计算与半导体经验。",
+          "source_id": "b39_pat_appointment"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Playground Global 公告称 Gelsinger 将与其他 General Partners 共同投资；这说明其机构职责，不代表个人单笔出资。",
+          "source_id": "b39_pat_duties"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "任职机构官网",
+          "value": "Playground Global",
+          "url": "https://playgroundglobal.co/",
+          "source_id": "b39_pat_team"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "General Partner",
+          "organization": "Playground Global",
+          "source_id": "b39_pat_team"
+        }
+      ],
+      "career": [
+        {
+          "title": "General Partner",
+          "organization": "Playground Global",
+          "source_id": "b39_pat_appointment",
+          "period": "2025-03 onward",
+          "description": "Playground Global announced his appointment as General Partner in March 2025."
+        }
+      ],
+      "education": [],
+      "experience_summary": "Playground Global 公告提供 Pat Gelsinger 的 General Partner 职务、职业背景及在机构中的投资职责。",
+      "sources": [
+        {
+          "source_id": "b39_pat_appointment",
+          "source_url": "https://www.playground.vc/playground-blogs/pat-gelsinger-joins-playground-global-as-general-partner",
+          "source_title": "Playground",
+          "source_content_hash": "616aa080b1292cf337f84c4fd393812e625a55d8ddb07e127ba9dd7848c33b23",
+          "quote": "Pat Gelsinger is joining the firm as General Partner.",
+          "quote_hash": "096191fd8785dab939cda1d0f62ce151dfba2c9b769146ccaf4e7ba919511a41"
+        },
+        {
+          "source_id": "b39_pat_duties",
+          "source_url": "https://www.playground.vc/playground-blogs/pat-gelsinger-joins-playground-global-as-general-partner",
+          "source_title": "Playground",
+          "source_content_hash": "616aa080b1292cf337f84c4fd393812e625a55d8ddb07e127ba9dd7848c33b23",
+          "quote": "At Playground, Gelsinger will invest alongside fellow General Partners Peter Barrett, Jory Bell and Bruce Leak",
+          "quote_hash": "4429be94e1f4fb6b145b5845546aabe0ffa7e8e3bbcd2155bcb503e1e75f0947"
+        },
+        {
+          "source_id": "b39_pat_team",
+          "source_url": "https://www.playground.vc/people",
+          "source_title": "Team",
+          "source_content_hash": "2f1c3fbb03ff915e5a7fbb8d2341dd1d308fda49c5ccbd762f1e25ac13feed77",
+          "quote": "Pat Gelsinger General Partner Investment",
+          "quote_hash": "ad6af2ce2d7e5f11876eb0fa3bf7239fedbfe09e5a6cc18376ac3a575e1842e9"
+        }
+      ]
+    },
+    "INV-af8d3ef4a7ebf7": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "HubSpot 董事会页面确认 Clara Shih 自2025年11月起担任其董事，并称她自2024年10月起领导 Meta Business AI Group；Qodo 的融资公告将 Clara Shih（Meta）列为其7000万美元融资的天使投资人。未披露她的个人出资额。",
+      "coverage_note": "职业信息来自 HubSpot 董事会披露；投资记录来自 Qodo 融资新闻稿。保留条目中的“Meta”身份标注，不推断个人支票金额。",
+      "facts": [
+        {
+          "field": "board_role",
+          "label": "HubSpot 董事会职务",
+          "value": "HubSpot 页面称 Clara Shih 自2025年11月起担任董事。",
+          "source_id": "b39_clara_board"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Qodo 官方融资公告将 Clara Shih（Meta）列为7000万美元融资中的天使投资人之一；未披露个人出资额。",
+          "source_id": "b39_clara_qodo"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "HubSpot 董事会资料",
+          "value": "Clara Shih",
+          "url": "https://www.hubspot.com/company/board-of-directors/clara-shih",
+          "source_id": "b39_clara_board"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Board Member",
+          "organization": "HubSpot",
+          "source_id": "b39_clara_board"
+        },
+        {
+          "title": "Head of Business AI Group",
+          "organization": "Meta",
+          "source_id": "b39_clara_meta_role"
+        }
+      ],
+      "career": [
+        {
+          "title": "Head of Business AI Group",
+          "organization": "Meta",
+          "source_id": "b39_clara_meta_role",
+          "period": "Since October 2024",
+          "description": "HubSpot states that she has led Meta’s Business AI Group since October 2024."
+        }
+      ],
+      "education": [],
+      "experience_summary": "HubSpot 官方董事会页面核实 Clara Shih 的身份及任职经历；Qodo 发行方公告支持一项天使投资披露。",
+      "sources": [
+        {
+          "source_id": "b39_clara_board",
+          "source_url": "https://www.hubspot.com/company/board-of-directors/clara-shih",
+          "source_title": "Clara Shih, HubSpot Board of Directors",
+          "source_content_hash": "f6cda005bf7359be173a9e0a4de939f8b3538d487f86303b3b217c849445dd0d",
+          "quote": "Clara Shih has served as a member of our board since November 2025.",
+          "quote_hash": "619d970036ee7af4d50ad687ee441f4a7e76acced7b06fc76b07cd21e3d22c6f"
+        },
+        {
+          "source_id": "b39_clara_meta_role",
+          "source_url": "https://www.hubspot.com/company/board-of-directors/clara-shih",
+          "source_title": "Clara Shih, HubSpot Board of Directors",
+          "source_content_hash": "f6cda005bf7359be173a9e0a4de939f8b3538d487f86303b3b217c849445dd0d",
+          "quote": "head of the Business AI Group at Meta since October 2024",
+          "quote_hash": "d83aa225172c52333e09230d19587c12e64dc7736ac4d324f42cb25a692f46c9"
+        },
+        {
+          "source_id": "b39_clara_qodo",
+          "source_url": "https://www.globenewswire.com/en/news-release/2026/03/30/3264740/0/en/Qodo-Raises-70M-to-Accelerate-Fight-Against-Software-Slop-From-OpenClaw-and-Claude-Code.html",
+          "source_title": "Qodo Raises $70M to Accelerate Fight Against Software Slop",
+          "source_content_hash": "b45aa474649ee06161bf55da18ddf98f7614d859593456c0954147548558873c",
+          "quote": "Peter Welender (OpenAI), and Clara Shih (Meta).",
+          "quote_hash": "3b32089e1db20d1241003307e7820f375733c51450fc2b8e6a38827792c59eb4"
+        }
+      ]
+    },
+    "INV-ccb7c8a40f14e0": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Factorial Capital 官网称其面向技术型创始人，关注基础设施、B2B 和消费领域，主要进行天使轮及预种子投资，也参与种子轮和精选 A 轮，通常投资额为50万至100万美元。NanoCo 融资报道将 Factorial Capital 列为种子轮参投方。",
+      "coverage_note": "投资阶段和金额区间为官网自述的一般口径；NanoCo 报道未披露 Factorial Capital 的单独出资额。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "官网称其关注技术型创始人及基础设施、B2B 和消费领域。",
+          "source_id": "b39_factorial_focus"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的阶段和金额区间",
+          "value": "官网称主要投天使轮和预种子轮，也投种子轮及精选 A 轮，通常投资额为50万至100万美元。",
+          "source_id": "b39_factorial_checks"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "NanoCo 的种子轮融资报道将 Factorial Capital 列入参投方；未披露单独出资额。",
+          "source_id": "b39_factorial_nanoco"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Factorial Capital",
+          "url": "https://factorialcap.com/",
+          "source_id": "b39_factorial_focus"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Factorial Capital 官网提供投资方向、阶段和自述支票区间；Ctech 报道支持其参与 NanoCo 种子轮。",
+      "sources": [
+        {
+          "source_id": "b39_factorial_focus",
+          "source_url": "https://factorialcap.com/",
+          "source_title": "Factorial Capital | Early-Stage Venture Capital for Technical Founders",
+          "source_content_hash": "4156d9d92b0f6fd1d4c41c610100ba8188815248a006996cb95c14cc5a646e4d",
+          "quote": "Factorial is a new kind of venture firm purpose-built for the AI era.",
+          "quote_hash": "908f7af18dbb034bec3075ee128cf110f22c6f6281c005139ad341f154845b17"
+        },
+        {
+          "source_id": "b39_factorial_stage",
+          "source_url": "https://factorialcap.com/",
+          "source_title": "Factorial Capital | Early-Stage Venture Capital for Technical Founders",
+          "source_content_hash": "4156d9d92b0f6fd1d4c41c610100ba8188815248a006996cb95c14cc5a646e4d",
+          "quote": "We focus on angel and pre-seed but also invest in seed & selective series A.",
+          "quote_hash": "594e8a020be8d546067a79dd25cd4821cc9439047a81475cfff52600682d0728"
+        },
+        {
+          "source_id": "b39_factorial_checks",
+          "source_url": "https://factorialcap.com/",
+          "source_title": "Factorial Capital | Early-Stage Venture Capital for Technical Founders",
+          "source_content_hash": "4156d9d92b0f6fd1d4c41c610100ba8188815248a006996cb95c14cc5a646e4d",
+          "quote": "We generally invest $500k-1m",
+          "quote_hash": "dd66b065104fe7643c67512b1bdbf31db393251af3551278402e22d34edb36ef"
+        },
+        {
+          "source_id": "b39_factorial_nanoco",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/r1rtwrjyme",
+          "source_title": "NanoClaw creator NanoCo lands $12 million in Seed funding to build enterprise AI agen | Ctech",
+          "source_content_hash": "a45ec887971748ee9b6f0fbd1c4a80839382aea33d0f0aac1e7d83c038100b0d",
+          "quote": "with participation from Docker, Vercel, monday.com, Slow Ventures, Clutch Capital, Factorial Capital and Clem Delangue",
+          "quote_hash": "a6d5eb7590c9f39ed5badd9104b389a96f5ab2eba06d95bf99ba8f794802585d"
+        }
+      ]
+    },
+    "INV-d13c9da2e72f8e": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Epakon Capital 官网称其与创始人合作，主要投资金融科技和 AI 领域的 pre-seed 与 seed 企业，通常投资额为5万至100万美元；官网列出40余家组合公司并将 Stack AI 列为组合企业。该机构公布的数据为自述口径。",
+      "coverage_note": "投资阶段、支票区间和组合数量来自 Epakon 官网自述；未据宣传数字推断基金业绩或回报。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资策略",
+          "value": "Epakon 官网自述主要投资金融科技和 AI 领域的 pre-seed 与 seed 项目，常见支票金额5万至100万美元。",
+          "source_id": "b39_epakon_focus"
+        },
+        {
+          "field": "portfolio_scale_self_reported",
+          "label": "官网自述组合规模",
+          "value": "Epakon 官网自述组合公司超过40家；该数字为机构自述。",
+          "source_id": "b39_epakon_count"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Epakon 官网组合页面列出 Stack AI；未将该组合页面信息扩展为未经核实的具体轮次或出资金额。",
+          "source_id": "b39_epakon_portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Epakon Capital",
+          "url": "https://epakon.com/",
+          "source_id": "b39_epakon_focus"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Epakon 官网提供投资阶段、行业方向、支票区间和组合信息，并在组合列表中列有 Stack AI。",
+      "sources": [
+        {
+          "source_id": "b39_epakon_focus",
+          "source_url": "https://epakon.com/",
+          "source_title": "Epakon Capital",
+          "source_content_hash": "7cd0c918d6b3dd86286f8baa682052384aed971d309d587c8d85e5c25e389fb4",
+          "quote": "We invest at pre-seed and seed stage, writing $50K to $1M checks in Fintech, AI, and anything built by what we consider best-in-class founders.",
+          "quote_hash": "a07a350ffeff1300f9d0f48e4fe26eaf52829052bd93e7331892879da27500cc"
+        },
+        {
+          "source_id": "b39_epakon_portfolio",
+          "source_url": "https://epakon.com/",
+          "source_title": "Epakon Capital",
+          "source_content_hash": "7cd0c918d6b3dd86286f8baa682052384aed971d309d587c8d85e5c25e389fb4",
+          "quote": "Stack AI",
+          "quote_hash": "0be0fffa875eec036aa320508d2c894b6c8014f6defdd64d03b721dcd127bc2b"
+        },
+        {
+          "source_id": "b39_epakon_count",
+          "source_url": "https://epakon.com/",
+          "source_title": "Epakon Capital",
+          "source_content_hash": "7cd0c918d6b3dd86286f8baa682052384aed971d309d587c8d85e5c25e389fb4",
+          "quote": "40+ PORTFOLIO COMPANIES",
+          "quote_hash": "b6b6b07c7c6cd05e20d90f014efd1907743dda484f55ebfb83fdc4db263a3b43"
+        }
+      ]
+    },
+    "INV-d23f40202598aa": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Flume Ventures 官网将自身描述为由运营者主导、由社群驱动并与使命一致的风险投资机构；Positron 官方公告将 Flume Ventures 列为其投资方。公开材料未披露 Flume 对 Positron 的单独出资额。",
+      "coverage_note": "机构定位来自 Flume 自身页面；Positron 公告支持其参与融资，但未披露单独出资额或基金载体。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述定位",
+          "value": "Flume Ventures 将其模式描述为运营者主导、社群驱动、使命一致。",
+          "source_id": "b39_flume_about"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Positron 官方公告将 Flume Ventures 列为公司投资方之一；公告未披露其单独出资额。",
+          "source_id": "b39_flume_positron"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Flume Ventures",
+          "url": "https://www.flume.ventures/",
+          "source_id": "b39_flume_about"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Flume 官方网站提供运营者主导的投资理念；Positron 发行方公告提供一项投资披露。",
+      "sources": [
+        {
+          "source_id": "b39_flume_about",
+          "source_url": "https://www.flume.ventures/about",
+          "source_title": "About | Flume Ventures",
+          "source_content_hash": "6977cb986ad768dde3bd982f0598348d34c845cc7ad9b23f41fc27b5b48d297e",
+          "quote": "At our core, we are operator-led, community-driven, and mission-aligned.",
+          "quote_hash": "68b70e6fc2d7657d7f48ab60926bbd5ce6c51fa7d5ce232e25665143d7222f6f"
+        },
+        {
+          "source_id": "b39_flume_positron",
+          "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+          "source_title": "Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market",
+          "source_content_hash": "4779658a236855fa12a78be80bee8f07e77ab5c5f2b4de68313520570d04d491",
+          "quote": "Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital",
+          "quote_hash": "bbd1c3452b1dd88dc33f8b8bc7835732091ffd83e008e90f73f2a632eb1cf348"
+        }
+      ]
+    },
+    "INV-d2b286cd84fac7": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "招商局集团关于招银投资开业的公告确认其全称为招银金融资产投资有限公司、由招商银行全资发起设立，并将其称为银行系金融资产投资公司。东方财富报道工商变更显示其持有星辰技术3.03%股权。",
+      "coverage_note": "官方公告用于核实机构全称、发起方和金融资产投资公司身份；星辰技术持股比例来自财经媒体对工商变更的报道。",
+      "facts": [
+        {
+          "field": "legal_name_and_type",
+          "label": "发起方与机构类型",
+          "value": "招商局集团公告称，招银投资由招商银行全资发起设立，是首批获准设立的股份制银行系金融资产投资公司之一。",
+          "source_id": "b39_cmbi_sponsor"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "东方财富报道工商变更显示，招银投资成为湖北星辰技术股东并持股3.03%；来源未披露具体投资金额。",
+          "source_id": "b39_cmbi_starcore"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "集团公告",
+          "value": "招商局集团",
+          "url": "https://www.cmhk.com/",
+          "source_id": "b39_cmbi_launch"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "招银投资是招商银行全资发起设立的银行系金融资产投资公司。东方财富报道其新晋成为星辰技术股东并持股3.03%；未把持股比例换算成出资金额。",
+      "sources": [
+        {
+          "source_id": "b39_cmbi_launch",
+          "source_url": "https://www.cmhk.com/main/xwzx/jtyw/content/1995849557166686210_1995849557183463425.html",
+          "source_title": "招银投资在深开业 招商银行综合化经营再添新平台-集团要闻-招商局集团",
+          "source_content_hash": "34b361bae1e49a09271e5e4faddb16a9da6425229d5696c0926c770d3edcb06e",
+          "quote": "招银金融资产投资有限公司（简称招银投资）开业活动在深圳举行",
+          "quote_hash": "74609b6545e614487b58093df0f849e99326d9f6af10e1eecab89930fb19d826"
+        },
+        {
+          "source_id": "b39_cmbi_sponsor",
+          "source_url": "https://www.cmhk.com/main/xwzx/jtyw/content/1995849557166686210_1995849557183463425.html",
+          "source_title": "招银投资在深开业 招商银行综合化经营再添新平台-集团要闻-招商局集团",
+          "source_content_hash": "34b361bae1e49a09271e5e4faddb16a9da6425229d5696c0926c770d3edcb06e",
+          "quote": "招银投资由招商银行全资发起设立，是国内首批获准设立的股份制银行系金融资产投资公司之一",
+          "quote_hash": "fe738674564be24f1ae948cc0cc552b45e94857d9544e058c502611174747c82"
+        },
+        {
+          "source_id": "b39_cmbi_starcore",
+          "source_url": "https://finance.eastmoney.com/a/202608193846338354.html",
+          "source_title": "招银投资入股“先进封装”企业，AI浪潮下AIC抢滩半导体 _ 东方财富网",
+          "source_content_hash": "efee1c9f2b2523dddaf22ced6a345afa3b2ea3dd34eab0ed05a8f96e90966422",
+          "quote": "招银金融资产投资有限公司（以下简称“招银投资”）新晋为股东，持股3.03%。",
+          "quote_hash": "48d0b86cf5207cae51ba4f79ebd16debe9b5388596791606fc107615b1a45b9b"
+        }
+      ]
+    },
+    "INV-d944242ed49cf6": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Sanabil Investments 官方组合页面称其投资创新商业模式的创业者及寻求规模化的成熟企业，并按直接投资、风险投资与成长基金、私募股权基金、加速器及创业工作室等类别介绍组合。现有资料仍将 Mistral AI 标为一条历史/歧义活动；本批不据此指定融资轮次或当前投资状态。",
+      "coverage_note": "机构定位与组合类别为 Sanabil 官方页面自述。Mistral AI 活动仍按既有资料中的历史/歧义标签保留，本次官网采集没有将其提升为新的或一手确认的投资记录。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网组合介绍",
+          "value": "官网称其投资创新型创业者和寻求规模化的成熟企业。",
+          "source_id": "b39_sanabil_focus"
+        },
+        {
+          "field": "investment_vehicles",
+          "label": "官网列示的组合类别",
+          "value": "官网页面区分直接投资组合、风投与成长基金、私募股权基金、加速器与创业工作室基金。",
+          "source_id": "b39_sanabil_vehicles"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网组合页",
+          "value": "Sanabil Investments",
+          "url": "https://www.sanabil.com/en/Our-Portfolio/",
+          "source_id": "b39_sanabil_focus"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Sanabil 官方组合页支持其直接投资和基金投资类别及目标企业阶段的概括；没有据此声称完整投资组合或业绩。",
+      "sources": [
+        {
+          "source_id": "b39_sanabil_focus",
+          "source_url": "https://www.sanabil.com/en/Our-Portfolio/",
+          "source_title": "SANABIL",
+          "source_content_hash": "955204f910360696a030b8be63c6bdb00a646758375f6019e5a61aa6faa6d06e",
+          "quote": "We identify and invest in entrepreneurs with innovative business models as well as more established companies seeking to scale and achieve extraordinary impact.",
+          "quote_hash": "f7d7c5bf1627b54230eff99818eb1e6cf7155e1c5ce222c7f50e2aa8533a9450"
+        },
+        {
+          "source_id": "b39_sanabil_vehicles",
+          "source_url": "https://www.sanabil.com/en/Our-Portfolio/",
+          "source_title": "SANABIL",
+          "source_content_hash": "955204f910360696a030b8be63c6bdb00a646758375f6019e5a61aa6faa6d06e",
+          "quote": "Direct Investment Portfolio Venture Capital & Growth Funds Private Equity Funds Accelerators and Venture Studios Funds",
+          "quote_hash": "13bb8c80f0fa93817fd447b8ac1aeccc9c8b9d5b73b5e3fdb3b5bee4ec53e55c"
         }
       ]
     }

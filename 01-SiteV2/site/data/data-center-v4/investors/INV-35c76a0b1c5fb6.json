@@ -137,40 +137,76 @@
       }
     ],
     "public_profile": {
-      "summary": "Kantox 的产品公告将 Antonio Rami 称为公司联合创始人兼首席增长官；该页面未显示可确认的发布日期，因此此处只保存页面中的角色归属，不断言其当前仍在任。",
-      "facts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Vertex Ventures Southeast Asia & India 将 Antonio Rami 列为 FORMAS.AI 预种子轮天使投资人，并称其为 Kantox 联合创始人；Kantox 自身公告将其称为联合创始人兼首席增长官。现有来源只支持这一笔公开投资披露，不含个人出资金额。",
+      "coverage_note": "Kantox 页面发表于 2024 年，保留当时披露的职务表述，不据此断言当前任职状态。FORMAS.AI 融资公告未披露 Rami 的个人出资额。",
+      "facts": [
+        {
+          "field": "career_role",
+          "label": "Kantox 公告中的职务",
+          "value": "Kantox 公告将 Antonio Rami 称为联合创始人兼首席增长官；该页面发表于2024年。",
+          "source_id": "b39_rami_role"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Vertex Ventures SEA & India 的 FORMAS.AI 融资公告将 Antonio Rami 列入天使投资人；未披露其个人投资额。",
+          "source_id": "b39_rami_context"
+        },
         {
           "description": "融资来源记录：FORMAS.AI · 预种子轮 · 2026-04-29 · 本轮天使投资人 · 398万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dc1378b0805f976c"
         }
       ],
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "官方页面未确认发布日期及当前任职状态；档案不作现任判断。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Kantox",
+          "value": "Kantox",
+          "url": "https://www.kantox.com/",
+          "source_id": "b39_rami_role"
+        }
+      ],
       "current_roles": [],
       "career": [
         {
-          "organization": "Kantox",
           "title": "Co-founder and Chief Growth Officer",
-          "period": "页面发布日期未核实",
-          "description": "Kantox 页面在介绍其产品时以该头衔称呼 Antonio Rami；当前任职状态未确认。",
-          "source_id": "PROFILE-INV-35c76a0b1c5fb6-1"
+          "organization": "Kantox",
+          "source_id": "b39_rami_role",
+          "period": "2024 public announcement",
+          "description": "Kantox announced its in-house FX service and described Antonio Rami as co-founder and Chief Growth Officer."
         }
       ],
       "education": [],
-      "experience_summary": "Kantox 官方页面提供一条未注明发布日期的联合创始人及首席增长官角色记录；不据此宣称为现任。",
-      "contacts": [],
+      "experience_summary": "本人任职相关信息来自 Kantox 官方产品公告；FORMAS.AI 投资披露来自领投机构 Vertex Ventures Southeast Asia & India。",
       "sources": [
         {
-          "source_id": "PROFILE-INV-35c76a0b1c5fb6-1",
+          "source_id": "b39_rami_role",
           "source_url": "https://www.kantox.com/blog/kantox-launches-kantox-in-house-fx-centralising-fx-management-for-global-businesses",
           "source_title": "Kantox Launches Kantox In-House FX: Centralising FX Management for Global Businesses - Kantox",
           "source_content_hash": "620d8acf6e858422711552e8f463368e6caaa4f0d6deebfa3cbd353980dfe38a",
           "quote": "Antonio Rami, co-founder and Chief Growth Officer at Kantox",
           "quote_hash": "52c09c815120a4fcc299354b1b763b521bcb1f31d7f02b5dbd5ea52308259ea5"
+        },
+        {
+          "source_id": "b39_rami_angel",
+          "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
+          "source_title": "FORMAS.AI Raises US$3.98 Million in Oversubscribed Pre-Seed Round to Build the AI-Native Design Workspace for Architecture | Vertex Ventures SEA",
+          "source_content_hash": "e536bc23534753ef217c69211cc0b970eb0249522333eb166fe691ee22ce2840",
+          "quote": "Antonio Rami, Co-founder of Kantox (acquired by BNP Paribas)",
+          "quote_hash": "f01cbbf795ecab619b766e9b720dd30d019767aea5dd32419420d3d35c85f8ea"
+        },
+        {
+          "source_id": "b39_rami_context",
+          "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
+          "source_title": "FORMAS.AI Raises US$3.98 Million in Oversubscribed Pre-Seed Round to Build the AI-Native Design Workspace for Architecture | Vertex Ventures SEA",
+          "source_content_hash": "e536bc23534753ef217c69211cc0b970eb0249522333eb166fe691ee22ce2840",
+          "quote": "alongside angel investors including enterprise SaaS unicorn founder",
+          "quote_hash": "d543dd3622cca4007d61cf8360207abdb8f727fe7e995e2154d3a2c25e69941f"
         },
         {
           "source_id": "FISRC-dc1378b0805f976c",
@@ -180,8 +216,7 @@
           "quote": "Antonio Rami, Co-founder of Kantox (acquired by BNP Paribas)",
           "quote_hash": "f01cbbf795ecab619b766e9b720dd30d019767aea5dd32419420d3d35c85f8ea"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }
