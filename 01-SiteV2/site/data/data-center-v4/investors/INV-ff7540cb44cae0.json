@@ -139,37 +139,53 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅据BlueFocus官网和PixVerse官方融资公告核验品牌身份与一项公开投资活动；未将其映射到未披露的投资部门或基金。",
-      "summary": "BlueFocus官网将其描述为营销科技公司；PixVerse官方公告称BlueFocus为其C轮扩展的新投资方之一。本档案按公开品牌名称记录该项投资，不推断具体子公司或基金载体。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "BlueFocus 官网将蓝色光标描述为营销科技公司，并介绍其营销服务、数字广告、国际业务和相关服务。PixVerse 官方融资公告将 BlueFocus 列为 C 轮扩展的新投资者之一。本档案按公告中的品牌名称记录活动，不推断具体投资部门或基金载体。",
+      "coverage_note": "PixVerse 公告未披露 BlueFocus 的具体出资法人、基金载体或单独投资额；官网业务介绍用于说明企业身份，不作为基金属性证明。",
+      "facts": [
+        {
+          "field": "organization_background",
+          "label": "官网公布的业务定位",
+          "value": "蓝色光标官网将公司定位为营销科技公司，并列出其营销服务及数字广告业务。",
+          "source_id": "b38_bluefocus_identity"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "PixVerse官方公告将BlueFocus列为C轮扩展的新投资方。",
-          "source_id": "pixverse-series-c-extension-bluefocus"
+          "description": "PixVerse 官方公告将 BlueFocus 列为 C 轮扩展的新投资者之一；未披露其单独投资额或基金载体。",
+          "source_id": "b38_bluefocus_pixverse"
         },
         {
           "description": "融资来源记录：PixVerse · C轮扩展 · 2026-07-13 · 本轮参投 · $439 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-002776ecfe7ba6a0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "BlueFocus",
+          "url": "https://www.bluefocus.com/about/",
+          "source_id": "b38_bluefocus_identity"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅据BlueFocus官网和PixVerse官方融资公告核验品牌身份与一项公开投资活动；未将其映射到未披露的投资部门或基金。",
+      "experience_summary": "BlueFocus 官网提供企业业务背景，PixVerse 官方公告确认一项融资参与记录。",
       "sources": [
         {
-          "source_id": "bluefocus-official-profile",
-          "source_url": "https://www.bluefocus.com/",
-          "source_title": "蓝色光标集团-BlueFocus",
-          "source_content_hash": "3898ef3473029d3ae427b3666a85333de5cf1617b35017f5fd50a192474981a5",
-          "quote": "致力于成为一家在大数据和社交网络时代为企业智慧经营全面赋能的营销科技公司",
-          "quote_hash": "f5d45aea50370f862f8ab5d601575b90b17f4b98cdd06c88e0ae9e6ff09ea9e0"
+          "source_id": "b38_bluefocus_identity",
+          "source_url": "https://www.bluefocus.com/about/",
+          "source_title": "关于蓝标_蓝色光标集团-BlueFocus",
+          "source_content_hash": "f79aa50875803a6fb9bceccc0b88d442539e49220512dd3d86aa773151cfea44",
+          "quote": "蓝色光标是一家为企业智慧经营全面赋能的营销科技公司。",
+          "quote_hash": "fcb7fc163dd5eee4f1c3e4e3c9d2cb03cce94bb47ac41e269ec33850037d792a"
         },
         {
-          "source_id": "pixverse-series-c-extension-bluefocus",
+          "source_id": "b38_bluefocus_pixverse",
           "source_url": "https://pixverse.blog/en/updates/pixverse-closes-series-c-extension-and-announces-expansion-into-interactive-entertainment/",
           "source_title": "PixVerse Closes Series C Extension, Bringing Total to USD 439 Million, and Announces Expansion Into Interactive Entertainment",
           "source_content_hash": "863f67776d8f5b99d2407ba462f4692c7466d82565b247eb01a0625b6f56f777",
@@ -184,8 +200,7 @@
           "quote": "PixVerse said that investors in the extension round include Alibaba, Lollapalooza Capital, Ivy Capital, Grand Mount Capital, Eastern Bell Capital, Mirae Asset, BlueFocus, and CloudAlpha, joining returning investors iGlobe Partners and OCBC’s Lion X Ventures.",
           "quote_hash": "e5a8e278829adf97feebafc8274fdaa9ac9b4ff38b56fb6bc45d2b16fb673068"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "translations": {
       "zh-CN": {
