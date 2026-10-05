@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 import { isReusableBusinessSignalsRun } from "../lib/business-signals-checkpoint.mjs";
 import { evaluateProjectionCoverage } from "../assert-data-center-projection-coverage.mjs";
 import { publicCatalogEntityIds } from "../../product/entity-history-v1.mjs";
-import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, fundingClaimCandidateRelevant, metricValues, modelAssistedEventEligibility, normalizeEventTitle, normalizedFundingMetric, organizationMentions, publicEventSourceTitleIssue, publicEventSourceUrlIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
+import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, fundingClaimCandidateRelevant, hardwareFactProjection, metricValues, modelAssistedEventEligibility, normalizeEventTitle, normalizedFundingMetric, organizationMentions, publicEventSourceTitleIssue, publicEventSourceUrlIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
 import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem, normalizedOriginFetchStatus, reconcileSourceFailureRecovery } from "../guanlan-monitor-quality-gate.mjs";
@@ -27,6 +27,28 @@ test('soft-wrapped funding amounts retain their scale and rupee metrics retain t
   assert.match(spans[0].quote,/€7\.7\s+million/u);
   assert.equal(metricValues(spans[0].quote)[0],'€7.7 million');
   assert.equal(metricValues('Vytalyou raised Rs 9 crore. Biopeak raised $2.7 million.')[0],'Rs 9 crore');
+});
+
+test('English article sentences become bounded source spans without splitting decimals', async () => {
+  const {sentenceSpans}=await import('../build-data-center-v4.mjs');
+  const body='Aignosis raised ₹4 crore in a seed round led by Antler. The AI startup builds tools for autism screening.Google for Startups Accelerator selected the team.';
+  const spans=sentenceSpans(body);
+  assert.equal(spans.length,3);
+  assert.equal(spans[0].quote,'Aignosis raised ₹4 crore in a seed round led by Antler.');
+  assert.equal(body.slice(spans[0].start,spans[0].end),spans[0].quote);
+  assert.equal(body.slice(spans[2].start,spans[2].end),spans[2].quote);
+  assert.equal(sentenceSpans('Acme raised $7.7 million. The round supports AI research.')[0].quote,'Acme raised $7.7 million.');
+});
+
+test('Benchmark the investor is not a research benchmark', () => {
+  assert.equal(findEventRule('SCOOP: Benchmark Backs Early-Stage Startup Tendrils Compute as Chip Momentum Builds'),null);
+  assert.equal(findEventRule('AI model benchmark shows new reasoning gap')?.eventType,'research_result');
+});
+
+test('a dated funding sentence does not turn its date into an organization', () => {
+  const quote='In April 2025, DIG Ventures raised €106 million for its third fund.';
+  const mentions=organizationMentions('DIG Ventures closes €106 million fund',{subject:'DIG Ventures'},'funding',quote,[{subject:'DIG Ventures',source_quote:quote}]);
+  assert.ok(!mentions.some((item)=>item.canonicalName==='In April 2025'));
 });
 
 test('a reviewed financing date requires a captured earlier disclosure of the same company and amount', async () => {
@@ -2336,6 +2358,17 @@ test("hardware Claims produce facts, dated snapshots, and monitored funnel rows"
   assert.ok(bundle.monitoring_funnel.every((item) => Object.values(item.rates).every((value) => value >= 0 && value <= 1)));
 });
 
+test("funding Claims do not turn accelerator mentions and rupee amounts into hardware facts", () => {
+  const claim = {
+    claim_id: "CL-aignosis",
+    claim_type: "funding",
+    verification_status: "accepted",
+    subject: "Aignosis",
+    source_quote: "Aignosis raised ₹4 crore in a seed round and joined the Google for Startups Accelerator with a healthcare product."
+  };
+  assert.equal(hardwareFactProjection(claim, { event_id: "EV-aignosis" }, []),null);
+});
+
 test("SourceArtifact retains a content-addressed private evidence locator", (t) => {
   const tempDir = fs.mkdtempSync(path.join(root, ".data-center-v4-test-"));
   t.after(() => fs.rmSync(tempDir, { recursive: true, force: true }));
@@ -2639,6 +2672,19 @@ test("Chinese related-article tails never enter accepted claims", () => {
 
   assert.equal(bundle.canonical_events.length, 1);
   assert.ok(bundle.claims.every((claim) => !/xAI|Grok Build/iu.test(claim.source_quote)));
+});
+
+test("English related stories cannot supply another company's financing amount", () => {
+  const body = "Ascerta has raised $18 million in new funding to expand its AI management platform.\nThe Series A round was led by Dell Technologies Capital.\n Related Stories\n Ascerta competitor NewAI raises $8.4M";
+  const bundle = buildBundle([
+    entry("ascerta-related-stories", "Ascerta raises $18M to help enterprises track AI business value", body)
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  assert.ok(bundle.claims.length > 0);
+  assert.ok(bundle.claims.every(claim => !/8\.4|NewAI/u.test(claim.source_quote)));
+  for (const claim of bundle.claims) {
+    assert.equal(body.slice(claim.source_span.start, claim.source_span.end), claim.source_quote);
+  }
+  assert.ok(bundle.canonical_events.every(event => !event.metrics.some(metric => /8\.4/u.test(metric))));
 });
 
 test("current funding language captures nabs and separates raised capital from valuation", () => {

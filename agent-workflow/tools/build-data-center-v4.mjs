@@ -100,7 +100,7 @@ const LEAD_EVENT_RULES = [
 
 const HIGH_SPECIFICITY_EVENT_RULES = [
   ["model_release", /\bGemini\s+Robotics\s+ER\s*2\b/iu],
-  ["research_result", /\b(?:benchmark|strict grading|failures?)\b|(?:基准测试|评测研究)/iu],
+  ["research_result", /\b(?:AI|model|LLM|agent|evaluation|performance)\b.{0,80}\bbenchmarks?\b|\bbenchmarks?\b.{0,80}\b(?:AI|model|LLM|agent|evaluation|performance|test(?:s|ing)?)\b|\b(?:strict grading|failures?)\b|(?:基准测试|评测研究)/iu],
   ["standard_specification", /(?:技术)?规范.{0,24}(?:发布|更新|生效)|(?:发布|更新).{0,30}(?:技术规范|开放规范|行业标准|技术标准|协议)/iu],
   ["policy_regulation", /(?:发布|制定).{0,40}(?:合规指引|监管指引)|(?:AI|人工智能|生成合成内容).{0,40}(?:须|必须|应当).{0,30}(?:标识|披露)|(?:AI|人工智能)法.{0,30}(?:立法|进程)|(?:立法|加快).{0,30}(?:AI|人工智能)法/iu],
   ["security_incident", /\b(?:cybersecurity|security)\s+incidents?\b|网络安全事件/iu],
@@ -831,6 +831,7 @@ function fundingClaimOrganizationMentions(eventClaims, claimEvidence, title) {
         || candidate.length < 2
          || candidate.length > 80
          || /^(?:the company|company|startup|firm|platform|provider)$/iu.test(candidate)
+         || /^(?:In|On|By)\s+(?:20\d{2}|Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\b/iu.test(candidate)
          || /^(?:CEO|CTO|CFO|COO|founder|co-founder|Series|Seed)\b/iu.test(candidate)
          || (chineseCandidate && /^(?:中国|国内|全球|业内|一家|这家|该公司)/u.test(candidate))
         || (!chineseCandidate && (!/[A-Za-z]/u.test(candidate) || !/^[A-Z0-9]/u.test(candidate)))) return;
@@ -1092,16 +1093,28 @@ export function sentenceSpans(body) {
   const spans = [];
   // HTML soft wrapping can put a currency magnitude on the next line.
   // Keep it with the amount rather than turning €7.7 million into €7.7.
-  const regex = /[^\n。！？!?]+(?:\n(?=\s*(?:million|billion|trillion|thousand|crores?|lakhs?)\b)[^\n。！？!?]+)*[。！？!?]?/giu;
-  for (const match of body.matchAll(regex)) {
-    const quote = normalizeSpace(match[0]);
-    if (quote.length < 20 || BOILERPLATE_TEXT.test(quote)) continue;
-    const rawStart = match.index || 0;
-    const leading = match[0].search(/\S/u);
-    const start = rawStart + Math.max(0, leading);
-    const end = start + match[0].trim().length;
+  const addSpan = (from, to) => {
+    const slice = body.slice(from, to);
+    const quote = normalizeSpace(slice);
+    if (quote.length < 20 || BOILERPLATE_TEXT.test(quote)) return;
+    const leading = slice.search(/\S/u);
+    const start = from + Math.max(0, leading);
+    const end = from + slice.trimEnd().length;
     spans.push({ quote, start, end });
+  };
+  let start = 0;
+  for (let index = 0; index < body.length; index += 1) {
+    const char = body[index];
+    const next = body.slice(index + 1);
+    const softWrappedMagnitude = char === "\n" && /^\s*(?:million|billion|trillion|thousand|crores?|lakhs?)\b/iu.test(next);
+    const englishPeriod = char === "." && /[\p{Ll}\p{N}]/u.test(body[index - 1] || "")
+      && (next.length === 0 || /^\s+[A-Z]/u.test(next) || /^[A-Z][a-z]/u.test(next));
+    if (/[。！？!?]/u.test(char) || (char === "\n" && !softWrappedMagnitude) || englishPeriod) {
+      addSpan(start, index + 1);
+      start = index + 1;
+    }
   }
+  addSpan(start, body.length);
   return spans;
 }
 
@@ -1181,7 +1194,10 @@ export function fundingClaimCandidateRelevant({ start = 0, quote = "" } = {}, ti
 }
 
 function claimCandidates(body, title, rule, subject = "") {
-  const all = sentenceSpans(body);
+  // Keep the immutable evidence body and its offsets, but never extract a
+  // financing amount from the publisher's recommendations after the article.
+  const relatedStart = body.search(/(?:^|\n)\s*(?:Related (?:Stories|Articles)|Previous article|Next article)\b/iu);
+  const all = sentenceSpans(relatedStart < 0 ? body : body.slice(0, relatedStart));
   const titleTokens = normalizeSpace(title).toLowerCase().split(/[^\p{L}\p{N}]+/u).filter((value) => value.length >= 3).slice(0, 8);
   const subjectTokens = normalizeSpace(subject).toLowerCase().split(/[^\p{L}\p{N}]+/u).filter((value) => value.length >= 3);
   const direct = all.filter((span) => rule.pattern.test(span.quote)).filter((span) => {
@@ -1574,8 +1590,9 @@ function hardwareFactType(text, component) {
   return "";
 }
 
-function hardwareFactProjection(claim, event, entities, sourceArtifactId = "") {
+export function hardwareFactProjection(claim, event, entities, sourceArtifactId = "") {
   if (!["accepted", "partial"].includes(claim.verification_status)) return null;
+  if (claim.claim_type === "funding") return null;
   const text = claim.source_quote;
   const component = componentType(text);
   const factType = hardwareFactType(text, component);

@@ -10,6 +10,7 @@ const fixture=()=>({schemaVersion:'SEARCH-AI-GROWTH-V1',dataSource:'production',
   traffic:{status:'available',totals:{searchSessions:2,aiSessions:3,pageViews:10,unattributedSessions:4},channels:[{source:'chatgpt',sessions:3,pageViews:6,contentViews:2,researchCtaSessions:1,applicationCtaSessions:0}],trend:[{date:'2026-10-01',sessions:3},{date:'2026-10-02',sessions:6}]},
   reports:Object.entries(providers).map(([provider,label])=>({provider,label,status:'not_connected',metrics:{impressions:null,clicks:null,ctr:null,position:null,citations:null,indexed:null,excluded:null},dimensions:{}})),
   evaluation:{baselineDate:'2026-10-02',questions:65,engines:[{engine:'ChatGPT Search',status:'not_measured',observations:null,citationRate:null,accuracyReviewed:null,correct:null,incorrect:null,citedPages:[]}]},
+  googleConnection:{configured:true,connected:true,status:'connected',syncedAt:'2026-10-02T10:29:00Z',latestDataDate:'2026-09-30',message:''},
   health:{status:'verified',portalCommit:'accepted-portal',releaseId:'FUNDING-PORTAL-V2.13.2',verifiedAt:'2026-10-02T10:29:00Z',pagesChecked:3574,pagesPassed:3574,crawlerProbes:44,crawlerProbesPassed:44,indexNowStatus:'accepted',indexNowSubmitted:3574,indexNowAt:'2026-10-02T10:27:00Z'}});
 
 async function open(browser,options={}) {
@@ -24,6 +25,7 @@ async function open(browser,options={}) {
     if(url.pathname==='/publication.json')return route.fulfill({json:{portalCommit:'accepted-portal'}});
     if(url.pathname==='/ops/growth-api/summary')return route.fulfill(options.fail?{status:503,json:{}}:{json:fixture()});
     if(url.pathname==='/ops/growth-api/import') {options.onImport?.(route.request().postDataJSON(),route.request().headers());return route.fulfill({status:201,json:{rows:1,replayed:false}});}
+    if(url.pathname.startsWith('/ops/growth-api/google/')){options.onGoogle?.(url.pathname,route.request().postDataJSON(),route.request().headers());return route.fulfill({status:202,json:{queued:true}});}
     return route.fulfill({json:{}});
   });
   await page.goto('https://growth-test.local/#growth');
@@ -50,6 +52,24 @@ test('growth sidebar, real states, typography and responsive overflow',async()=>
     await page.locator('[data-tab=analytics]').first().click();await page.locator('[data-tab=growth]').first().click();
     assert.equal(await page.locator('[data-growth-content]').isVisible(),true);
     assert.deepEqual(errors,[]);
+  }finally{await browser.close();}
+});
+
+test('Google controls send CSRF and logout blocks a late operation response',async()=>{
+  const browser=await chromium.launch();try{
+    let call;const {page}=await open(browser,{onGoogle:(path,body,headers)=>{call={path,body,headers};}});
+    await page.locator('[data-growth-content]').waitFor();
+    assert.equal(await page.locator('[data-growth-google-state]').innerText(),'已连接');
+    assert.match(await page.locator('[data-growth-google-freshness]').innerText(),/2026-09-30/);
+    await page.locator('[data-growth-google=sync]').click();
+    await page.getByText('已提交同步请求',{exact:true}).waitFor();
+    assert.equal(call.path,'/ops/growth-api/google/sync');assert.equal(call.headers['x-csrf-token'],'synthetic-csrf');
+    await page.evaluate(()=>{const original=fetch;window.fetch=async(...args)=>String(args[0]).endsWith('/google/disconnect')?{ok:true,status:200,json:()=>new Promise(resolve=>window.finishGoogle=resolve)}:original(...args);});
+    await page.locator('[data-growth-google=disconnect]').click();
+    await page.waitForFunction(()=>typeof window.finishGoogle==='function');
+    await page.evaluate(()=>{document.dispatchEvent(new Event('operations:logout'));document.dispatchEvent(new CustomEvent('operations:authenticated',{detail:{csrfToken:'new-session'}}));window.finishGoogle({connected:false});});
+    await page.locator('[data-growth-content]').waitFor();
+    assert.doesNotMatch(await page.locator('[data-growth-google-message]').innerText(),/已断开连接/);
   }finally{await browser.close();}
 });
 

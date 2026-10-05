@@ -2,13 +2,14 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { loadPrivateEvidenceStore } from "./lib/private-evidence-store.mjs";
+import { loadPrivateEvidenceStore, privateEvidenceBodyForRaw } from "./lib/private-evidence-store.mjs";
 
 const root = process.cwd();
 const originalsRoot = path.join(root, "01-SiteV2/content/01-raw/originals");
 const indexFile = path.join(root, "01-SiteV2/content/01-raw/source-index.jsonl");
 const dataCenterRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
 const problems = [];
+const requestedDate = process.argv.find((arg) => arg.startsWith("--date="))?.slice(7) || "";
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
@@ -104,6 +105,22 @@ for (const entry of fs.readdirSync(dataCenterRoot, { withFileTypes: true })) {
   for (const source of sources) {
     if (!(source.snapshot_refs || []).every((ref) => String(ref).startsWith("evidence://"))) {
       problems.push(`${source.source_artifact_id}: public snapshot_refs contain a repository body path`);
+    }
+  }
+  if (requestedDate === entry.name) {
+    const claimsFile = path.join(directory, "claims.json");
+    const rawsById = new Map(raws.map((raw) => [raw.raw_id, raw]));
+    if (fs.existsSync(claimsFile)) {
+      for (const claim of readJson(claimsFile)) {
+        const quote = String(claim.source_quote || "").replace(/\s+/gu, " ").trim();
+        if (quote.length < 500) continue;
+        const sourceRaw = rawsById.get(claim.raw_id);
+        if (!sourceRaw) continue;
+        const body = privateEvidenceBodyForRaw(root, sourceRaw, { required: false }).replace(/\s+/gu, " ").trim();
+        if (body.length >= 500 && body.includes(quote) && quote.length / body.length >= 0.9) {
+          problems.push(`${entry.name}: ${claim.claim_id} exposes nearly all of a private original in source_quote`);
+        }
+      }
     }
   }
 }

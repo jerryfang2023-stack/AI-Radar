@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-04",
-    "currentDate": "2026-10-04",
-    "eventCount": 3920,
+    "latestDataDate": "2026-10-05",
+    "currentDate": "2026-10-05",
+    "eventCount": 3934,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-16",
-    "latest_disclosed_at": "2025-09-16",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "seed",
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-c5a100d72ba4a90f",
+        "canonical_entity_id": "",
+        "name": "Aignosis"
+      },
       {
         "entity_id": "EN-1785cfc3bc6ac773",
         "canonical_entity_id": "",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f8ab1fb35c90c3fc",
+        "funding_insight_id": "FI-4e0842069b970e31",
+        "event_ids": [
+          "EV-7d2370277ab5ef6f"
+        ],
+        "company_entity_id": "EN-c5a100d72ba4a90f",
+        "company_canonical_entity_id": "",
+        "company_name": "Aignosis",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "₹4 crore",
+        "amount_normalized": {
+          "currency": "INR",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万印度卢比"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ff1952b8850f6680",
+            "source_url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
+            "source_title": "Aignosis 完成由 Antler、Nikhil Kamath 领投的 ₹4 crore 种子轮融资",
+            "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+            "quote": "raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures",
+            "quote_hash": "a89ec625e8ff809ede3d21d0982f8abd8b8b49aa1a1cf86e0d55f32ef7158ddf"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7f064603578f248d",
         "funding_insight_id": "FI-e5aed52f8dab81de",
@@ -128,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ff1952b8850f6680",
+        "source_url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
+        "source_title": "Aignosis 完成由 Antler、Nikhil Kamath 领投的 ₹4 crore 种子轮融资",
+        "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+        "quote": "raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures",
+        "quote_hash": "a89ec625e8ff809ede3d21d0982f8abd8b8b49aa1a1cf86e0d55f32ef7158ddf"
+      },
+      {
         "source_id": "FISRC-7e709202ce99cc8e",
         "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
         "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
@@ -154,6 +209,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Aignosis · 种子轮 · 2026-10-01 · 本轮领投 · ₹4 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ff1952b8850f6680"
+        },
         {
           "description": "融资来源记录：Nothing · C轮 · 2025-09-16 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7e709202ce99cc8e"
@@ -206,6 +265,14 @@
           "source_content_hash": "870dfe9c22ac48f5e368c9ebca6db6e720c187e9a4461573d34ed37ff0057bab",
           "quote": "Nikhil is an astute and experienced investor, and he heads financial planning at Zerodha.",
           "quote_hash": "bc38bdd807cfdf08ef26eae44ecace1c31e1fefcb1645b65c1e43e843ec5376b"
+        },
+        {
+          "source_id": "FISRC-ff1952b8850f6680",
+          "source_url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
+          "source_title": "Aignosis 完成由 Antler、Nikhil Kamath 领投的 ₹4 crore 种子轮融资",
+          "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+          "quote": "raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures",
+          "quote_hash": "a89ec625e8ff809ede3d21d0982f8abd8b8b49aa1a1cf86e0d55f32ef7158ddf"
         },
         {
           "source_id": "FISRC-7e709202ce99cc8e",

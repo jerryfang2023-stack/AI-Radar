@@ -53,6 +53,12 @@ export function productionPlan(date, directory, { extract = true } = {}) {
     { id: 'financing_tags', commands: [
       ['agent-workflow/financing/classify.mjs', '--write=true'],
       [site('build-funding-insights-frontstage')],
+      // Classification can admit newly researched cards after the earlier
+      // projection pass. Materialize their investor links from this final set.
+      [script('build-investment-institutions-v1')],
+      [site('build-data-center-v4-frontstage')],
+      [script('build-public-entity-profile-coverage-v1')],
+      [script('apply-public-entity-profiles-v1')],
       ['agent-workflow/financing/catalog.mjs'],
     ], outputs: ['01-SiteV2/site/data/financing-catalog-v1.json'] },
     { id: 'release_gate', commands: [
@@ -61,8 +67,9 @@ export function productionPlan(date, directory, { extract = true } = {}) {
       [script('assert-funding-insights-v1'), '--all=true', '--frontstage=true'],
       [script('assert-investment-institutions-v1')],
       [script('assert-public-entity-profiles-v1')],
-      [script('assert-public-evidence-boundary')],
+      [script('assert-public-evidence-boundary'), d],
       [script('assert-taxonomy-consistency-v4-1')],
+      [script('frontstage-regression-gate')],
     ], outputs: ['01-SiteV2/site/data/funding-insights-v1.json'] },
   ];
 }

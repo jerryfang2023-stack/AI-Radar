@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-04",
-    "currentDate": "2026-10-04",
-    "eventCount": 3920,
+    "latestDataDate": "2026-10-05",
+    "currentDate": "2026-10-05",
+    "eventCount": 3934,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -71,9 +71,9 @@
       "EV-f30a987e608c70ae",
       "EV-4c9c7ab2dded69b3",
       "EV-5bf410afc8aa8178",
+      "EV-a2c87acb12608019",
       "EV-bccd915b61c48911",
       "EV-35fa913e4709b4d6",
-      "EV-1ef8979f39a2ccc5",
       "EV-3d0b9dcdf8daec4c",
       "EV-4a045d3f9026286c",
       "EV-eadf57952ad76a26",
@@ -334,6 +334,7 @@
       "EV-0990ee74c4bc9c1a",
       "EV-4a5240dedde301e6",
       "EV-06c2f2803729eae2",
+      "EV-4bc2b0f8a1ca9e66",
       "EV-b8eb460540c33d68",
       "EV-0d5a32aca724d30e",
       "EV-1873f3c6fa4bdedd",
@@ -724,7 +725,6 @@
       "EN-4b49fcc30b9a847a",
       "EN-a89df13c958d37ea",
       "EN-b4c73396844f7d05",
-      "EN-f76a8103e49bcc36",
       "EN-190832408e35096c",
       "EN-8c15a763882d4862",
       "EN-5dd3b777303686d3",
@@ -928,6 +928,7 @@
       "EN-19e41212c0556603",
       "EN-6f7ac1823da81d2e",
       "EN-5e668f42eb6cf15d",
+      "EN-0705e4d613d04407",
       "EN-f9768e4769ec9d14",
       "EN-0ed9e4984f0e77cf",
       "EN-c70eca6b0f88f44d",
@@ -1469,8 +1470,7 @@
       "object": "$255.5 Million Series B to Scale Effective Autonomous Security",
       "metrics": [
         "$255.5 million",
-        "$2.5 billion",
-        "$445 million"
+        "$2.5 billion"
       ],
       "locations": [],
       "missingFields": [],
@@ -1560,13 +1560,11 @@
       ],
       "entityIds": [
         "EN-41a1b0e1074ae22f",
-        "EN-f8223ea5a9c41813",
-        "EN-bbdefa2950f49882"
+        "EN-f8223ea5a9c41813"
       ],
       "entityNames": [
         "PALO ALTO",
-        "Armadin",
-        "Google"
+        "Armadin"
       ],
       "productName": "",
       "products": [],
@@ -1869,7 +1867,7 @@
     },
     {
       "id": "EV-80aeba0846bbd197",
-      "dataDate": "2026-10-04",
+      "dataDate": "2026-10-05",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -1945,11 +1943,13 @@
       ],
       "entityIds": [
         "EN-41a1b0e1074ae22f",
-        "EN-6dcc023b5791108c"
+        "EN-6dcc023b5791108c",
+        "EN-20b33aa992cb3f93"
       ],
       "entityNames": [
         "PALO ALTO",
-        "PaleBlueDot AI"
+        "PaleBlueDot AI",
+        "B Capital"
       ],
       "productName": "",
       "products": [],
@@ -2619,6 +2619,123 @@
       "publisher": "www.thesaasnews.com"
     },
     {
+      "id": "EV-a2c87acb12608019",
+      "dataDate": "2026-10-05",
+      "date": "2026-09-29",
+      "updatedDate": "2026-09-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Reco 融资 5000 万美元以保障企业 AI 智能体安全，获 AT&T 支持",
+      "originalTitle": "Reco raises $50M to secure enterprise AI agents, with AT&T backing",
+      "subject": "Reco",
+      "action": "raises",
+      "object": "$50M to secure enterprise AI agents, with AT&T backing",
+      "metrics": [
+        "$50M",
+        "$50 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-324a65940c9148ba"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-324a65940c9148ba"
+      ],
+      "entityNames": [
+        "Reco"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dealroom.co/news/157635-reco-raises-50m-to-secure-enterprise-ai-agents-with-at-t-backing",
+      "publisher": "dealroom.co"
+    },
+    {
       "id": "EV-bccd915b61c48911",
       "dataDate": "2026-10-02",
       "date": "2026-09-29",
@@ -3013,295 +3130,6 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation",
       "publisher": "techcrunch.com"
-    },
-    {
-      "id": "EV-1ef8979f39a2ccc5",
-      "dataDate": "2026-10-04",
-      "date": "2026-09-28",
-      "updatedDate": "2026-09-28",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
-      "originalTitle": "Physical AI company SiMa.ai raises $150 Mn in Series C round",
-      "subject": "Physical AI company SiMa.ai",
-      "action": "raises",
-      "object": "$150 Mn in Series C round",
-      "metrics": [
-        "$150 million",
-        "$500 million",
-        "$1.45 billion",
-        "1,000 TOPS",
-        "145 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "enterprise_software_platform",
-            "name": "企业软件平台",
-            "entityIds": [
-              "EN-f76a8103e49bcc36"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [
-              "EN-f76a8103e49bcc36"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "healthcare_life_sciences",
-            "name": "医疗与生命科学",
-            "entityIds": [
-              "EN-f76a8103e49bcc36"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "automotive_transportation",
-            "name": "汽车与交通",
-            "entityIds": [
-              "EN-f76a8103e49bcc36"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "aerospace_defense",
-            "name": "航空航天与国防",
-            "entityIds": [
-              "EN-f76a8103e49bcc36"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "enterprise_software_platform",
-          "name": "企业软件平台",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "healthcare_life_sciences",
-          "name": "医疗与生命科学",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "automotive_transportation",
-          "name": "汽车与交通",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "aerospace_defense",
-          "name": "航空航天与国防",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "enterprise_software_platform",
-          "name": "企业软件平台",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "healthcare_life_sciences",
-          "name": "医疗与生命科学",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "automotive_transportation",
-          "name": "汽车与交通",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "aerospace_defense",
-          "name": "航空航天与国防",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-f76a8103e49bcc36",
-        "EN-8d4321d936320802"
-      ],
-      "entityNames": [
-        "Physical AI company SiMa.ai",
-        "NVIDIA"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
-      "publisher": "entrackr.com"
     },
     {
       "id": "EV-3d0b9dcdf8daec4c",
@@ -57804,6 +57632,133 @@
       "publisher": "IT之家"
     },
     {
+      "id": "EV-4bc2b0f8a1ca9e66",
+      "dataDate": "2026-10-05",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Menos AI 总融资额突破 1000 万美元，Copper Sky Capital 加倍投资",
+      "originalTitle": "Menos AI Surpasses $10 Million in Total Funding as Copper Sky Capital Doubles Down",
+      "subject": "Menos",
+      "action": "product_release",
+      "object": "Menos AI Surpasses $10 Million in Total Funding as Copper Sky Capital Doubles Down",
+      "metrics": [
+        "$10 Million"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0705e4d613d04407"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0705e4d613d04407"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0705e4d613d04407"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0705e4d613d04407"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-0705e4d613d04407",
+        "EN-bbdefa2950f49882",
+        "EN-cbc62794911ff31b",
+        "EN-18597aecc0b55a84",
+        "EN-fe415c076ee1d15a",
+        "EN-31a088056155d51b"
+      ],
+      "entityNames": [
+        "Menos",
+        "Google",
+        "Amazon",
+        "AI Surpasses",
+        "Total Funding",
+        "Copper Sky Capital Doubles"
+      ],
+      "productName": "AI Surpasses",
+      "products": [
+        {
+          "name": "AI Surpasses",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Amazon"
+          ]
+        },
+        {
+          "name": "Total Funding",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Amazon"
+          ]
+        },
+        {
+          "name": "Copper Sky Capital Doubles",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Amazon"
+          ]
+        }
+      ],
+      "sourceUrl": "https://pressreleasehub.pa.media/article/menos-ai-surpasses-10-million-in-total-funding-as-copper-sky-capital-doubles-down-84523.html",
+      "publisher": "pressreleasehub.pa.media"
+    },
+    {
       "id": "EV-b8eb460540c33d68",
       "dataDate": "2026-09-26",
       "date": "2026-09-24",
@@ -68188,16 +68143,12 @@
         {
           "name": "Grok AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "SpaceX"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Grok Bot",
           "type": "产品/服务",
-          "ownerNames": [
-            "SpaceX"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/989/237.htm",
@@ -105935,7 +105886,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -105952,7 +105903,6 @@
       "eventIds": [
         "EV-a3de7b1a00fbf8a9",
         "EV-1c7050585c7f4791",
-        "EV-2aa827a397a551d1",
         "EV-42a74865c9b654bb",
         "EV-5b5237105fc868cd",
         "EV-98ea446e097a9a95",
@@ -106039,6 +105989,7 @@
         "EV-247f10fef6269e4a",
         "EV-4a5240dedde301e6",
         "EV-5644bf8426cb730d",
+        "EV-4bc2b0f8a1ca9e66",
         "EV-1b912ec16c50fc0f",
         "EV-09898d5522f0db28",
         "EV-29c45021243dba2a",
@@ -106277,7 +106228,6 @@
         "TX-use_case-sales",
         "TX-use_case-legal_compliance",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
@@ -106286,6 +106236,7 @@
         "TX-technology-speech_audio",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-use_case-research_discovery",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
@@ -106321,7 +106272,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-8bacc14fb816a980",
@@ -106379,17 +106330,18 @@
       ],
       "eventIds": [
         "EV-4c9c7ab2dded69b3",
-        "EV-82c07208217f2af7"
+        "EV-82c07208217f2af7",
+        "EV-a2c87acb12608019"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-product_form-security_software",
-        "TX-use_case-customer_support"
+        "TX-use_case-security_operations",
+        "TX-product_form-security_software"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-29",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-4b49fcc30b9a847a",
@@ -106459,34 +106411,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-04"
-    },
-    {
-      "id": "EN-f76a8103e49bcc36",
-      "name": "Physical AI company SiMa.ai",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-1ef8979f39a2ccc5"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-physical_automation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-aerospace_defense",
-        "TX-industry-automotive_transportation",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-190832408e35096c",
@@ -107038,8 +106963,8 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
-        "TX-technology-multimodal",
         "TX-use_case-data_analysis",
+        "TX-technology-multimodal",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-ai_development_orchestration",
         "TX-use_case-knowledge_search"
@@ -107090,8 +107015,8 @@
         "TX-target_user-consumer",
         "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-multimodal",
         "TX-industry-retail_ecommerce",
+        "TX-technology-multimodal",
         "TX-use_case-knowledge_search"
       ],
       "relatedEntityIds": [],
@@ -107198,7 +107123,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-7ebe9a17c4d4c271",
@@ -107414,9 +107339,9 @@
         "TX-industry-financial_services",
         "TX-use_case-sales",
         "TX-product_form-end_user_application",
-        "TX-use_case-customer_support",
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-sales"
+        "TX-ai_market_subcategory-sales",
+        "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-29",
@@ -107523,8 +107448,8 @@
         "TX-industry-media_entertainment",
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai"
+        "TX-technology-embodied_ai",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-23",
@@ -107763,9 +107688,9 @@
         "TX-technology-agentic_execution",
         "TX-use_case-sales",
         "TX-product_form-end_user_application",
-        "TX-use_case-customer_support",
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-sales"
+        "TX-ai_market_subcategory-sales",
+        "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
@@ -108721,8 +108646,8 @@
         "TX-ai_market_category-industry_applications",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
-        "TX-use_case-customer_support",
-        "TX-ai_market_subcategory-healthcare_life_sciences"
+        "TX-ai_market_subcategory-healthcare_life_sciences",
+        "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-25",
@@ -109030,7 +108955,6 @@
         "EV-91eccd583f77528f",
         "EV-9009adaed650ddde",
         "EV-11a8e196deb21300",
-        "EV-82cccfa64edb2c09",
         "EV-46803ffdc054ae6d",
         "EV-0094ff6922e9d570",
         "EV-42b3196bf09fe88d",
@@ -109046,7 +108970,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-a9aff9e0737a5d4a",
@@ -109746,13 +109670,13 @@
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_support",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
         "TX-use_case-marketing",
-        "TX-industry-professional_services"
+        "TX-industry-professional_services",
+        "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -110963,10 +110887,10 @@
         "TX-target_user-business_user",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
-        "TX-technology-multimodal",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-speech_audio",
         "TX-use_case-data_analysis",
+        "TX-technology-multimodal",
         "TX-product_form-ai_device",
         "TX-technology-video_generation",
         "TX-technology-computer_use",
@@ -110982,7 +110906,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-04",
+      "lastSeen": "2026-10-05",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -111417,12 +111341,10 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-82cccfa64edb2c09",
         "EV-5133905b22468322",
         "EV-8fd2621317a8a577",
         "EV-d7652e5b3dbe4620",
         "EV-641d61c6b8506c06",
-        "EV-30f48175b61772d4",
         "EV-2a5803953f698f4c",
         "EV-5961ed93ca6dae66",
         "EV-98a5bcde4600a029",
@@ -111567,18 +111489,17 @@
         "TX-industry-financial_services",
         "TX-industry-legal_services",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_support",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-technology-speech_audio",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
+        "TX-technology-multimodal",
         "TX-industry-government_public_sector",
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
@@ -111586,6 +111507,7 @@
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
         "TX-technology-long_context",
+        "TX-use_case-customer_support",
         "TX-technology-computer_use",
         "TX-technology-reasoning",
         "TX-technology-guardrails_safety",
@@ -111621,7 +111543,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -111692,6 +111614,7 @@
       "eventIds": [
         "EV-4c9c7ab2dded69b3",
         "EV-eb2796fc4bcc5ac0",
+        "EV-141a1e90c0780daa",
         "EV-609da9983f836426",
         "EV-a2f902b9707ffd02",
         "EV-93c2515d50157281",
@@ -111772,7 +111695,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-d3565d297d476f10",
@@ -112030,7 +111953,6 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
-        "EV-82cccfa64edb2c09",
         "EV-641d61c6b8506c06",
         "EV-a551ac76be0015af",
         "EV-b739349cfab7e41c",
@@ -112068,10 +111990,10 @@
         "TX-industry-manufacturing",
         "TX-use_case-sales",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-multimodal",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-use_case-data_analysis",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-ai_market_subcategory-sales",
         "TX-product_form-model_api_service",
@@ -112096,7 +112018,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -112496,7 +112418,6 @@
         "EV-4c5dc2fc6d805b3f",
         "EV-eb2796fc4bcc5ac0",
         "EV-471bf7c00cc06c85",
-        "EV-1ef8979f39a2ccc5",
         "EV-f53bfa2bb0275904",
         "EV-2470b13ea55496d0",
         "EV-6d92f16f6079fe38",
@@ -112807,12 +112728,10 @@
         "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
-        "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-technology-embodied_ai",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_support",
         "TX-technology-speech_audio",
         "TX-industry-energy_utilities",
         "TX-ai_market_application-chips",
@@ -112822,6 +112741,7 @@
         "TX-use_case-research_discovery",
         "TX-industry-education",
         "TX-product_form-robotic_system",
+        "TX-technology-multimodal",
         "TX-product_form-ai_infrastructure_software",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -112836,6 +112756,7 @@
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
         "TX-technology-long_context",
+        "TX-use_case-customer_support",
         "TX-technology-mixture_of_experts",
         "TX-technology-reasoning",
         "TX-deployment_model-cloud",
@@ -112871,7 +112792,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -113523,6 +113444,7 @@
         "EV-4dfd7233c8c69b0b",
         "EV-657837763764c869",
         "EV-388a53fe918389b0",
+        "EV-770a599defdaf792",
         "EV-648208bc2a74cb56",
         "EV-c44f8fbab9e200ca",
         "EV-59b7ba3d079ad09a",
@@ -113541,16 +113463,16 @@
         "TX-product_form-model",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
-        "TX-technology-multimodal",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-24",
-      "lastSeen": "2026-10-02"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-5e668f42eb6cf15d",
@@ -113573,6 +113495,27 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-09-28",
       "lastSeen": "2026-09-28"
+    },
+    {
+      "id": "EN-0705e4d613d04407",
+      "name": "Menos",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4bc2b0f8a1ca9e66"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-28",
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-f9768e4769ec9d14",
@@ -114123,7 +114066,6 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-embodied_ai",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_support",
         "TX-product_form-compute_cloud_service",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -114136,6 +114078,7 @@
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
         "TX-technology-long_context",
+        "TX-use_case-customer_support",
         "TX-technology-computer_use",
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
@@ -114171,7 +114114,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -114259,7 +114202,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-ebefab0353686b57",
@@ -114775,11 +114718,11 @@
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-physical_automation",
-        "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
         "TX-use_case-research_discovery",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -115382,7 +115325,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-02-17",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-92df1be3e37c9268",
@@ -115655,7 +115598,7 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-01-13",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-d50883991bfc5a69",
@@ -118012,8 +117955,8 @@
         "TX-use_case-content_creation",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
-        "TX-technology-multimodal",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-use_case-knowledge_search",
         "TX-technology-vision_language"
@@ -123672,109 +123615,6 @@
     }
   ],
   "hardwareCatalog": [
-    {
-      "id": "HWC-44203d15d2d13a56",
-      "snapshotKey": "44203d15d2d13a56",
-      "snapshotId": "HWS-fbafa7d1e1ad73d5",
-      "eventId": "EV-1ef8979f39a2ccc5",
-      "eventIds": [
-        "EV-1ef8979f39a2ccc5"
-      ],
-      "dataDate": "2026-10-04",
-      "date": "2026-10-04",
-      "title": "Physical AI company SiMa.ai",
-      "subject": "Physical AI company SiMa.ai",
-      "productNames": [],
-      "hardwareType": "gpu",
-      "factTypes": [
-        "specification"
-      ],
-      "latestValues": {
-        "specification": {
-          "metric_value": "1000",
-          "unit": "TOPS",
-          "fact_ref": "HWF-6ea991a91fe5d48d"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 3,
-      "changes": [
-        {
-          "date": "2026-10-04",
-          "previousDate": "2026-10-03",
-          "snapshotId": "HWS-fbafa7d1e1ad73d5",
-          "previousSnapshotId": "HWS-24a583eadad4450a",
-          "changedFacts": [
-            "specification"
-          ]
-        },
-        {
-          "date": "2026-10-03",
-          "previousDate": "2026-10-02",
-          "snapshotId": "HWS-24a583eadad4450a",
-          "previousSnapshotId": "HWS-cf3c2b32bdaebeee",
-          "changedFacts": [
-            "specification"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-10-04",
-          "hardware_fact_id": "HWF-6ea991a91fe5d48d",
-          "fact_type": "specification",
-          "observed_at": "2026-09-28",
-          "subject_entity_id": "EN-f76a8103e49bcc36",
-          "subject_name": "Physical AI company SiMa.ai",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "gpu",
-          "metric_value": "1000",
-          "unit": "TOPS",
-          "source_quote": "&quot;Physical AI company SiMa.ai has raised $150 million in a Series C financing round, bringing its total capital raised to $500 million and valuing the company at $1.45 billion. The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group. AllianceBernstein, Baron Capital and J.P. Morgan also joined the round as new investors. The proceeds will be used to scale Palette Neat, an agentic software environment for Physical AI, and develop next-generation hardware capable of delivering 1,000 TOPS of compute through purpose-built Physical AI silicon, SiMa.ai said in a press release. Founded in 2018 by Krishna Rangasayee, SiMa.ai provides a software-centric platform for Physical AI applications. The company focuses on robotics, automotive, drones, industrial automation, aerospace and defence, smart vision and healthcare. SiMa.ai said it serves more than 150 customers across automotive, drones and robotics, including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&amp;amp;T Technology Services, Mistral, STIGA, Synopsys and Virya Autonomous Tech, among others. According to market research cited by the company, the global Physical AI devices market, including robotics, automotive and drones, is projected to reach 145 million cumulative shipments by 2035. SiMa.ai said Physical AI applications have traditionally relied on NVIDIA GPUs, which can be expensive and power intensive. The company offers a full-stack Physical AI platform that combines purpose-built silicon and software to simplify deployments. Slated for H1 2028, the next-generation hardware will include machine learning IP, chiplets and SoCs. The company plans to target medium to high-end drones, humanoid robotics, automotive advanced driver assistance systems (ADAS) and AI-powered cockpits. &quot;",
-          "event_refs": [
-            "EV-1ef8979f39a2ccc5"
-          ],
-          "claim_ref": "CL-aaefa6d7417c9940",
-          "source_refs": [
-            "SA-3acbf41a1b58d786"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-04/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-f76a8103e49bcc36"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
-      "entityIds": [
-        "EN-f76a8103e49bcc36",
-        "EN-8d4321d936320802"
-      ]
-    },
     {
       "id": "HWC-e7d145e26c37b627",
       "snapshotKey": "e7d145e26c37b627",

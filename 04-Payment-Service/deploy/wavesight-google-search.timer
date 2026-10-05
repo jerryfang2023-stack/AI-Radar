@@ -1,0 +1,11 @@
+[Unit]
+Description=Check requested syncs and the daily 09:00 Asia/Shanghai Google report
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+AccuracySec=10s
+Unit=wavesight-google-search.service
+
+[Install]
+WantedBy=timers.target

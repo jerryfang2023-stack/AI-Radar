@@ -1,7 +1,7 @@
 {
   "schema_version": "SOURCE-INTAKE-V1.1",
   "data_date": "2026-10-04",
-  "generated_at": "2026-10-04T00:23:54.588Z",
+  "generated_at": "2026-10-04T02:39:32.382Z",
   "collection_batches": [
     {
       "raw_ids": [
@@ -189,6 +189,14 @@
         "RAW-f0fb6231ddf1c17b",
         "RAW-f34817920d78141f",
         "RAW-f4da2624d707757a"
+      ]
+    },
+    {
+      "raw_ids": [
+        "RAW-45ddb6cc08333d27"
+      ],
+      "eligible_raw_ids": [
+        "RAW-45ddb6cc08333d27"
       ]
     }
   ],
@@ -1284,6 +1292,18 @@
         "evidence://d50abcfe5bd45ee9c2111a261563baa8e6560b13da071b872032e8923c024f53"
       ],
       "content_hash": "d50abcfe5bd45ee9c2111a261563baa8e6560b13da071b872032e8923c024f53"
+    },
+    {
+      "source_artifact_id": "SA-a10a6c7b082654b3",
+      "source_url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
+      "canonical_url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
+      "publisher": "entrepreneur.economictimes.indiatimes.com",
+      "capture_method": "original_http_reviewed",
+      "captured_at": "2026-10-04T02:39:31.515Z",
+      "snapshot_refs": [
+        "evidence://2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09"
+      ],
+      "content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09"
     }
   ],
   "raw_documents": [
@@ -5017,11 +5037,52 @@
         "key_excerpts": [],
         "eligible_for_v4_extraction": true
       }
+    },
+    {
+      "schema_version": "RAW-V4.0",
+      "raw_id": "RAW-45ddb6cc08333d27",
+      "source_artifact_id": "SA-a10a6c7b082654b3",
+      "source_url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
+      "canonical_url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
+      "publisher": "entrepreneur.economictimes.indiatimes.com",
+      "author": "",
+      "published_at": "2026-10-01",
+      "captured_at": "2026-10-04T02:39:31.515Z",
+      "language": "en",
+      "document_type": "article",
+      "title_original": "Aignosis raises ₹4 crore seed round led by Antler, Nikhil Kamath",
+      "title_zh": "",
+      "body_ref": "evidence://2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+      "content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+      "capture_method": "original_http_reviewed",
+      "extraction_status": "accepted",
+      "market_scope": {
+        "source_registry_id": "",
+        "source_region": "",
+        "market_region": "",
+        "china_market_match": false,
+        "china_market_match_basis": ""
+      },
+      "intake_diagnostics": {
+        "acquisition_channel": "financing",
+        "search_path": "",
+        "evidence_object_type": "original_full_text",
+        "evidence_object_usable": true,
+        "evidence_strength": "",
+        "raw_qc_decision": "accepted",
+        "raw_qc_downstream_use": "v4_claim_extraction",
+        "extraction_quality": "medium",
+        "readability_score": 0,
+        "has_full_text": true,
+        "origin_fetch_status": "success",
+        "key_excerpts": [],
+        "eligible_for_v4_extraction": true
+      }
     }
   ],
   "counts": {
-    "source_artifacts": 91,
-    "raw_documents": 91,
-    "eligible_documents": 91
+    "source_artifacts": 92,
+    "raw_documents": 92,
+    "eligible_documents": 92
   }
 }

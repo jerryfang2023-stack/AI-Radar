@@ -2,21 +2,645 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-10-04",
-    "generated_at": "2026-10-04T00:43:03.114Z",
+    "generated_at": "2026-10-04T03:34:21.413Z",
     "trigger": "accepted_financing_event_research",
     "research_provider": "search-gateway+direct-original+deepseek",
     "model": "deepseek-flash",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 29,
-      "auto_published": 7,
+      "funding_events": 30,
+      "auto_published": 8,
       "blocked": 1,
       "pending": 5,
       "deduplicated": 16
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-7790ea8e0906938d",
+      "triggered_by_event_id": "EV-7d2370277ab5ef6f",
+      "as_of_date": "2026-10-04",
+      "company": {
+        "entity_id": "EN-c5a100d72ba4a90f",
+        "name": "Aignosis",
+        "full_name": "Aignosis",
+        "website": "https://aignosis.in",
+        "summary": "Aignosis 是一家总部位于印度斋浦尔的健康科技初创公司，提供 AI 辅助的自闭症与发育筛查平台，面向 16 个月至 9 岁儿童，通过标准笔记本电脑和摄像头采集短视频，利用计算机视觉分析行为信号并生成风险报告。",
+        "headquarters": "Jaipur, India",
+        "founders": [
+          {
+            "name": "Raksheet Jain",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff1952b8850f6680",
+                "quote": "co-founder Raksheet Jain said",
+                "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+                "quote_hash": "5140334e70123dadcb399e3c8c88867ca7ca2ef93c23389585a957b78aa3752f"
+              },
+              {
+                "source_id": "FISRC-4853ff87e92cdb42",
+                "quote": "Founded in 2024 by Raksheet Jain and Divyansh Mangal",
+                "source_content_hash": "6f6036fab64bbe5e",
+                "quote_hash": "02d79ff0afa701bcc9ca571dab14b71860bf3ec540e5f794d6b9ab465d68a16a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Divyansh Mangal",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4853ff87e92cdb42",
+                "quote": "Founded in 2024 by Raksheet Jain and Divyansh Mangal",
+                "source_content_hash": "6f6036fab64bbe5e",
+                "quote_hash": "02d79ff0afa701bcc9ca571dab14b71860bf3ec540e5f794d6b9ab465d68a16a"
+              },
+              {
+                "source_id": "FISRC-757fedb841556354",
+                "quote": "Divyansh Mangal: Co-Founder & Director of Aignosis",
+                "source_content_hash": "d9d8ee70da9c9720",
+                "quote_hash": "d9635b125f0ff09410868d1a71e75530170b706adfd9558ef0a677b11bc195c6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ff1952b8850f6680",
+            "quote": "Healthtech startup Aignosis has raised ₹4 crore in a seed funding round",
+            "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+            "quote_hash": "883bbd29e2ec9f9967a4aa4c38b75d18860ca9f8089167cebbbe1236f29a39c5"
+          },
+          {
+            "source_id": "FISRC-4853ff87e92cdb42",
+            "quote": "Aignosis, a Jaipur-based healthtech startup that provides an AI-assisted autism and developmental screening platform",
+            "source_content_hash": "6f6036fab64bbe5e",
+            "quote_hash": "0ce0e2bdc5678155d78cddc4d942c1461a3b7fa36f1d4b8ed8a0e8ab9bb904da"
+          }
+        ],
+        "application_entity_id": "EN-c5a100d72ba4a90f",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "₹4 crore",
+        "total_raised": "",
+        "announced_at": "2026-10-01",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Antler",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff1952b8850f6680",
+                "quote": "raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures",
+                "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+                "quote_hash": "a89ec625e8ff809ede3d21d0982f8abd8b8b49aa1a1cf86e0d55f32ef7158ddf"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nikhil Kamath",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff1952b8850f6680",
+                "quote": "raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures",
+                "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+                "quote_hash": "a89ec625e8ff809ede3d21d0982f8abd8b8b49aa1a1cf86e0d55f32ef7158ddf"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Varun Dua",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff1952b8850f6680",
+                "quote": "raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures",
+                "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+                "quote_hash": "a89ec625e8ff809ede3d21d0982f8abd8b8b49aa1a1cf86e0d55f32ef7158ddf"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IIMA Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff1952b8850f6680",
+                "quote": "raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures",
+                "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+                "quote_hash": "a89ec625e8ff809ede3d21d0982f8abd8b8b49aa1a1cf86e0d55f32ef7158ddf"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ff1952b8850f6680",
+            "quote": "Healthtech startup Aignosis has raised ₹4 crore in a seed funding round",
+            "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+            "quote_hash": "883bbd29e2ec9f9967a4aa4c38b75d18860ca9f8089167cebbbe1236f29a39c5"
+          },
+          {
+            "source_id": "FISRC-ff1952b8850f6680",
+            "quote": "Healthtech startup Aignosis has raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures.",
+            "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+            "quote_hash": "b2d670d7663e07cdbb2a6823ee337881f82887db0ccf29147a09b67f3c25b3fb"
+          },
+          {
+            "source_id": "FISRC-4853ff87e92cdb42",
+            "quote": "The round was led by Antler and Nikhil Kamath. Additional participating investors included Varun Dua and IIMA Ventures.",
+            "source_content_hash": "6f6036fab64bbe5e",
+            "quote_hash": "676456c1c110d12660c93303f36a20c6cd3159fed5b7676fdee28265e1d0c898"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "₹4 crore",
+        "amount_normalized": {
+          "currency": "INR",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万印度卢比"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-7d2370277ab5ef6f",
+            "round_original": "种子轮",
+            "amount": "₹4 crore",
+            "announced_at": "2026-10-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff1952b8850f6680",
+                "quote": "Healthtech startup Aignosis has raised ₹4 crore in a seed funding round",
+                "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+                "quote_hash": "883bbd29e2ec9f9967a4aa4c38b75d18860ca9f8089167cebbbe1236f29a39c5"
+              },
+              {
+                "source_id": "FISRC-ff1952b8850f6680",
+                "quote": "Healthtech startup Aignosis has raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures.",
+                "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+                "quote_hash": "b2d670d7663e07cdbb2a6823ee337881f82887db0ccf29147a09b67f3c25b3fb"
+              },
+              {
+                "source_id": "FISRC-4853ff87e92cdb42",
+                "quote": "The round was led by Antler and Nikhil Kamath. Additional participating investors included Varun Dua and IIMA Ventures.",
+                "source_content_hash": "6f6036fab64bbe5e",
+                "quote_hash": "676456c1c110d12660c93303f36a20c6cd3159fed5b7676fdee28265e1d0c898"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "AI 辅助自闭症与发育筛查系统",
+          "description": "面向 16 个月至 9 岁儿童的初步筛查层，使用标准笔记本电脑和摄像头采集围绕九个刺激模块的短视频，通过计算机视觉分析注视、对名字的反应和面部表情反应等行为信号，生成风险报告以提示是否需要正式临床评估，不提供诊断。",
+          "target_customers": "儿科医生、政府初级卫生中心、学校医务室、私营医疗机构",
+          "features": [
+            "使用标准笔记本电脑和网络摄像头",
+            "九个刺激模块的短视频采集",
+            "计算机视觉分析注视、对名字的反应和面部表情反应",
+            "生成风险报告，提示是否需要正式临床评估",
+            "不提供诊断"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "Aignosis' system is designed to provide an initial screening layer for children aged 16 months to nine years. It uses a standard laptop and webcam to capture a short video built around nine stimulus modules, with computer vision analysing behavioural signals such as gaze, response to name and reactions to facial expressions.",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "007b3f876a6981e4cc721574aae6ece040da01759aee37846f93798fc6106012"
+            },
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "The resulting risk report indicates whether a formal clinical assessment may be warranted and is not intended to provide a diagnosis.",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "cb2ceca00f1eaa76c8b7c5ea9683a4ae5d00dedc0bc85efb35d83646bb4ddb83"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Rajasthan 政府初级卫生中心",
+          "industry": "government_public_sector",
+          "use_case": "在政府初级卫生中心部署筛查系统",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "Aignosis has so far deployed its system across more than 20 government primary health centres in Rajasthan.",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "9d9b4173243ccbfb7954a8f9b55c716f77b3b11e291dfd947ed638c9792f5396"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Mankind Pharma",
+          "industry": "healthcare_life_sciences",
+          "use_case": "近 1,300 名医药代表在全国支持与儿科医生合作的筛查营",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "It has also partnered with Mankind Pharma, whose nearly 1,300 medical representatives are supporting screening camps with paediatricians across India.",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "32144fff7f0becd8c7124b8b4a25a6ed85c3d5e54a2963a9ef29b2de12c33c2f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Apollo Shines",
+          "industry": "healthcare_life_sciences",
+          "use_case": "Apollo 集团学校医务室部门在约 125 所学校开展运营",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "The company is beginning operations with Apollo Shines, the Apollo Group's school infirmary division, across around 125 schools.",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "e8fa3ed3d9fbec93854c1bb2fca853197681b8f69c5862d19ae693e4ab5397a2"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "₹4 crore",
+          "observed_at": "2026-10-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "Healthtech startup Aignosis has raised ₹4 crore in a seed funding round",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "883bbd29e2ec9f9967a4aa4c38b75d18860ca9f8089167cebbbe1236f29a39c5"
+            }
+          ]
+        },
+        {
+          "label": "已完成筛查数",
+          "value": "超过 8,000 次",
+          "observed_at": "2026-10-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "Aignosis has completed more than 8,000 screenings so far",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "1069bd7bdcc6788753544ee7f5b385007bc3ebb945ffb2830347387b6622213d"
+            }
+          ]
+        },
+        {
+          "label": "政府初级卫生中心部署数",
+          "value": "超过 20 个",
+          "observed_at": "2026-10-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "Aignosis has so far deployed its system across more than 20 government primary health centres in Rajasthan.",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "9d9b4173243ccbfb7954a8f9b55c716f77b3b11e291dfd947ed638c9792f5396"
+            }
+          ]
+        },
+        {
+          "label": "Mankind Pharma 医药代表数",
+          "value": "近 1,300 名",
+          "observed_at": "2026-10-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "It has also partnered with Mankind Pharma, whose nearly 1,300 medical representatives are supporting screening camps with paediatricians across India.",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "32144fff7f0becd8c7124b8b4a25a6ed85c3d5e54a2963a9ef29b2de12c33c2f"
+            }
+          ]
+        },
+        {
+          "label": "Apollo Shines 计划覆盖学校数",
+          "value": "约 125 所",
+          "observed_at": "2026-10-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "The company is beginning operations with Apollo Shines, the Apollo Group's school infirmary division, across around 125 schools.",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "e8fa3ed3d9fbec93854c1bb2fca853197681b8f69c5862d19ae693e4ab5397a2"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Raksheet Jain",
+          "quote": "This funding marks a shift for Aignosis from building and validating the technology to taking it into the healthcare system at scale",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "This funding marks a shift for Aignosis from building and validating the technology to taking it into the healthcare system at scale",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "3e386835b3beec72feeb4a1a434696d50c7b14ebafd5172ee046f551a4ec3277"
+            }
+          ]
+        },
+        {
+          "speaker": "Raksheet Jain",
+          "quote": "Our focus now is to make autism screening more accessible, strengthen the referral pathway around it, and build a model that can work across both public and private healthcare settings.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "Our focus now is to make autism screening more accessible, strengthen the referral pathway around it, and build a model that can work across both public and private healthcare settings.",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "3daa76aa973dd2efd141f7a7e6760e259540129f1ed2a9769e89c382ad79ad4d"
+            }
+          ]
+        },
+        {
+          "speaker": "Nikhil Kamath",
+          "quote": "Most healthcare innovation in India is built for the top of the pyramid and never leaves it. Aignosis is going the other way, starting in government health centres and small clinics, not private hospitals in metros. That's distribution thinking that actually moves the needle at scale",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff1952b8850f6680",
+              "quote": "Most healthcare innovation in India is built for the top of the pyramid and never leaves it. Aignosis is going the other way, starting in government health centres and small clinics, not private hospitals in metros. That's distribution thinking that actually moves the needle at scale",
+              "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+              "quote_hash": "fa096cfe358e1742f98b6df5a7d8126b227a6e46318d591ad363cfc968be6a00"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Nikhil Kamath",
+            "speaker": "Nikhil Kamath",
+            "speaker_role": "本轮领投人",
+            "rationale": "Nikhil Kamath 认为 Aignosis 从政府卫生中心和基层诊所切入，而非大都市私立医院，这种分发思路能在规模上产生实际影响。",
+            "quote": "Most healthcare innovation in India is built for the top of the pyramid and never leaves it. Aignosis is going the other way, starting in government health centres and small clinics, not private hospitals in metros. That's distribution thinking that actually moves the needle at scale",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff1952b8850f6680",
+                "quote": "Most healthcare innovation in India is built for the top of the pyramid and never leaves it. Aignosis is going the other way, starting in government health centres and small clinics, not private hospitals in metros. That's distribution thinking that actually moves the needle at scale",
+                "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+                "quote_hash": "fa096cfe358e1742f98b6df5a7d8126b227a6e46318d591ad363cfc968be6a00"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "本轮资本押注的核心变量是 Aignosis 能否将已在拉贾斯坦邦超过 20 个政府初级卫生中心部署的筛查系统，通过诊所内嵌模式、Mankind Pharma 近 1,300 名医药代表和 Apollo Shines 约 125 所学校等分发渠道，扩展到更多邦的公共和私营医疗场景。已验证信号包括：完成 CDSCO 监管流程并获得 Class B 认证、已完成超过 8,000 次筛查、被 IIM Ahmedabad Ventures 孵化并入选 Google 2025 AI First 加速器。判断的证据边界在于：本轮为 ₹4 crore 种子轮；累计融资额与当前收入未见可核验披露，100,000 次筛查仍是 FY27 目标。",
+        "validated_signals": [
+          "完成 CDSCO 监管流程并获得 Class B 认证",
+          "已完成超过 8,000 次筛查",
+          "在拉贾斯坦邦超过 20 个政府初级卫生中心部署",
+          "与 Mankind Pharma 合作，近 1,300 名医药代表支持筛查营",
+          "开始与 Apollo Shines 在约 125 所学校运营",
+          "被 IIM Ahmedabad Ventures 孵化并入选 Google 2025 AI First 加速器"
+        ],
+        "risks": [
+          "本轮 ₹4 crore 种子轮资金规模有限，跨地区扩张仍需验证",
+          "100,000 次筛查目标是 FY27 目标，尚未实现，存在执行风险",
+          "未找到可核验的收入披露，商业化规模仍待观察",
+          "筛查系统不提供诊断，仅提示是否需要正式临床评估，依赖后续转诊路径的有效性",
+          "扩展至旁遮普、NCR、哈里亚纳、泰米尔纳德、贾坎德、卡纳塔克和马哈拉施特拉等邦的计划尚待执行"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "healthcare_life_sciences",
+        "market_application_id": "",
+        "use_case_ids": [
+          "research_discovery"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "public_sector_user"
+        ],
+        "sector": "健康科技",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是 Aignosis 能否将已在拉贾斯坦邦超过 20 个政府初级卫生中心部署的筛查系统，通过诊所内嵌模式、Mankind Pharma 近 1,300 名医药代表和 Apollo Shines 约 125 所学校等分发渠道，扩展到更多邦的公共和私营医疗场景。已验证信号包括：完成 CDSCO 监管流程并获得 Class B 认证、已完成超过 8,000 次筛查、被 IIM Ahmedabad Ventures 孵化并入选 Google 2025 AI First 加速器。判断的证据边界在于：本轮为 ₹4 crore 种子轮；累计融资额与当前收入未见可核验披露，100,000 次筛查仍是 FY27 目标。",
+          "evidence_signals": [
+            "完成 CDSCO 监管流程并获得 Class B 认证",
+            "已完成超过 8,000 次筛查",
+            "在拉贾斯坦邦超过 20 个政府初级卫生中心部署",
+            "与 Mankind Pharma 合作，近 1,300 名医药代表支持筛查营",
+            "开始与 Apollo Shines 在约 125 所学校运营",
+            "被 IIM Ahmedabad Ventures 孵化并入选 Google 2025 AI First 加速器"
+          ],
+          "risks": [
+            "本轮 ₹4 crore 种子轮资金规模有限，跨地区扩张仍需验证",
+            "100,000 次筛查目标是 FY27 目标，尚未实现，存在执行风险",
+            "未找到可核验的收入披露，商业化规模仍待观察",
+            "筛查系统不提供诊断，仅提示是否需要正式临床评估，依赖后续转诊路径的有效性",
+            "扩展至旁遮普、NCR、哈里亚纳、泰米尔纳德、贾坎德、卡纳塔克和马哈拉施特拉等邦的计划尚待执行"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI 辅助自闭症与发育筛查系统",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Raksheet Jain",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Divyansh Mangal",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Antler",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nikhil Kamath",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Varun Dua",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IIMA Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Rajasthan 政府初级卫生中心",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Mankind Pharma",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Apollo Shines",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-7d2370277ab5ef6f",
+          "date": "2026-10-01",
+          "title": "Aignosis 完成由 Antler、Nikhil Kamath 领投的 ₹4 crore 种子轮融资",
+          "amount": "₹4 crore",
+          "source_refs": [
+            "SA-a10a6c7b082654b3"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-ff1952b8850f6680",
+          "source_url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
+          "title": "Aignosis 完成由 Antler、Nikhil Kamath 领投的 ₹4 crore 种子轮融资",
+          "publisher": "entrepreneur.economictimes.indiatimes.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-04T02:39:31.515Z",
+          "content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
+          "source_artifact_id": "SA-a10a6c7b082654b3",
+          "raw_id": "RAW-45ddb6cc08333d27"
+        },
+        {
+          "source_id": "FISRC-4853ff87e92cdb42",
+          "source_url": "https://www.thesaasnews.com/news/aignosis-raises-4cr-seed/",
+          "title": "Aignosis Raises ₹4Cr Seed",
+          "publisher": "thesaasnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-04T02:40:26.585Z",
+          "content_hash": "6f6036fab64bbe5e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-757fedb841556354",
+          "source_url": "https://tracxn.com/d/companies/aignosis/__BUmJjWZqYZF7Pq7dUkBAfLv-YhSNYIWO9NjmOIdnOtE",
+          "title": "Aignosis",
+          "publisher": "tracxn.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-04T02:40:29.650Z",
+          "content_hash": "d9d8ee70da9c9720",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-04T02:41:55.082Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-04T02:41:55.082Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI 辅助自闭症与发育筛查系统"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Divyansh Mangal",
+            "Raksheet Jain"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7d2370277ab5ef6f"
+      ],
+      "aggregation": {
+        "key": "EN-c5a100d72ba4a90f|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-8034b3d40364c28b",
@@ -5679,7 +6303,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.410Z"
     },
     {
       "event_id": "EV-f2950d2104e97163",
@@ -5688,7 +6312,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.410Z"
     },
     {
       "event_id": "EV-3b424be9d0d68b87",
@@ -5706,7 +6330,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.410Z"
     },
     {
       "event_id": "EV-df4a0504042552ae",
@@ -5715,7 +6339,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.410Z"
     },
     {
       "event_id": "EV-9ea3912efd857ad8",
@@ -5724,7 +6348,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.410Z"
     },
     {
       "event_id": "EV-861d4440dcbb9b09",
@@ -5733,7 +6357,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.411Z"
     },
     {
       "event_id": "EV-34f58445170831ae",
@@ -5793,7 +6417,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.409Z"
     },
     {
       "event_id": "EV-d087ccd71efc469d",
@@ -5874,7 +6498,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.410Z"
     },
     {
       "event_id": "EV-7b11bc49074dd56a",
@@ -5894,7 +6518,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.411Z"
     },
     {
       "event_id": "EV-80aeba0846bbd197",
@@ -5903,7 +6527,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.411Z"
     },
     {
       "event_id": "EV-55581be112058bd5",
@@ -5912,7 +6536,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.411Z"
     },
     {
       "event_id": "EV-77a33d4e194d24ca",
@@ -5961,7 +6585,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.410Z"
     },
     {
       "event_id": "EV-4338fee0a1d75783",
@@ -6037,7 +6661,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.410Z"
     },
     {
       "event_id": "EV-7f10b7d013a91292",
@@ -6203,7 +6827,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.410Z"
     },
     {
       "event_id": "EV-9632fa302d64e821",
@@ -6258,7 +6882,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.410Z"
     },
     {
       "event_id": "EV-b35ee2ada485c7e4",
@@ -6267,7 +6891,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.411Z"
     },
     {
       "event_id": "EV-ef480d3fa3165905",
@@ -6276,7 +6900,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.411Z"
     },
     {
       "event_id": "EV-201690debbddab65",
@@ -6285,7 +6909,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.411Z"
     },
     {
       "event_id": "EV-b65546baa01e855b",
@@ -6294,7 +6918,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.411Z"
     },
     {
       "event_id": "EV-6a63fabeceadc42b",
@@ -6312,7 +6936,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.411Z"
     },
     {
       "event_id": "EV-6324ffde67e257fa",
@@ -6321,7 +6945,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.411Z"
     },
     {
       "event_id": "EV-1ef8979f39a2ccc5",
@@ -6330,7 +6954,16 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-04T00:43:03.111Z"
+      "updated_at": "2026-10-04T03:34:21.411Z"
+    },
+    {
+      "event_id": "EV-7d2370277ab5ef6f",
+      "company_name": "Aignosis",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-04T03:34:21.410Z"
     }
   ]
 }

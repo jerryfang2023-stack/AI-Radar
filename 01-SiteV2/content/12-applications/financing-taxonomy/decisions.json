@@ -26786,7 +26786,191 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-04T00:45:08.159Z"
+    },
+    "EV-7d2370277ab5ef6f": {
+      "id": "EV-7d2370277ab5ef6f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "该公司提供AI辅助自闭症与发育筛查平台，属于医疗健康行业AI产品。",
+      "input_hash": "9da3e3ac2541579687b51499fee61a9ca5f081cb011f7da48ee2b1081076deb3",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4853ff87e92cdb42",
+          "quote": "Aignosis, a Jaipur-based healthtech startup that provides an AI-assisted autism and developmental screening platform"
+        },
+        {
+          "source_id": "FISRC-ff1952b8850f6680",
+          "quote": "Aignosis' system is designed to provide an initial screening layer for children aged 16 months to nine years. It uses a standard laptop and webcam to capture a short video built around nine stimulus modules, with computer vision analysing behavioural signals such as gaze, response to name and reactions to facial expressions."
+        },
+        {
+          "source_id": "FISRC-ff1952b8850f6680",
+          "quote": "The resulting risk report indicates whether a formal clinical assessment may be warranted and is not intended to provide a diagnosis."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-04T02:44:51.610Z"
+    },
+    "EV-439c3a45abe7b514": {
+      "id": "EV-439c3a45abe7b514",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "主营为企业管理者衡量 AI 采用、业务价值和 ROI 的企业管理软件，属于业务流程与企业智能体；不以出现评测、监控词语自动归入开发者工具。",
+      "input_hash": "b3f1c0297cef5c84b995dfb8d7c6536e5f6007767b66c80adc5adc959e0b9f9b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b95b99b7dcaf913b",
+          "quote": "Bellevue, Wash.-based startup Pay-i is rebranding as Ascerta and raising $18 million in new funding to expand its platform beyond AI cost tracking into measuring overall business ROI."
+        },
+        {
+          "source_id": "FISRC-b95b99b7dcaf913b",
+          "quote": "Ascerta’s platform connects to existing systems and major enterprise AI tools — including Microsoft Copilot, Amazon Bedrock AgentCore, Salesforce Agentforce, and coding assistants like GitHub Copilot and Claude Code — to track adoption by person, team, and tool."
+        },
+        {
+          "source_id": "FISRC-d6f9792a9f249f04",
+          "quote": "Atlas measures AI value and ROI across workflows and portfolios"
+        },
+        {
+          "source_id": "FISRC-d6f9792a9f249f04",
+          "quote": "Forge tracks how engineering teams use coding agents"
+        },
+        {
+          "source_id": "FISRC-d6f9792a9f249f04",
+          "quote": "Convoy helps organisations running their own AI capacity allocate infrastructure without disrupting production."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "generated_at": "2026-10-05T00:45:44.262Z"
+    },
+    "EV-7fb563f47cc29d8d": {
+      "id": "EV-7fb563f47cc29d8d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Kanu AI 将员工任务自动转化为企业级软件，属企业业务流程智能体。",
+      "input_hash": "4b233db5a827fcbd64873eb6d91160b4d8a518ea057d3c5595051b1055860a53",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2600408f2e0d32d7",
+          "quote": "Seattle-based Kanu AI announced $11.7 million in new funding on Wednesday to expand a platform that automatically turns everyday employee tasks into custom, enterprise-grade software."
+        },
+        {
+          "source_id": "FISRC-fc5403edb4399492",
+          "quote": "Kanu AI, a Seattle-based company that automates employee workflows by turning them into custom enterprise-grade software, has raised $11.7 million in a seed funding round."
+        },
+        {
+          "source_id": "FISRC-2600408f2e0d32d7",
+          "quote": "Rather than forcing companies to buy rigid off-the-shelf software or spend months on custom engineering, Kanu lets staff demonstrate how they complete work. The platform then builds, deploys, and updates those workflows directly within the customer’s cloud."
+        },
+        {
+          "source_id": "FISRC-2600408f2e0d32d7",
+          "quote": "To meet enterprise security standards, Kanu runs entirely inside the client’s own cloud infrastructure, ensuring data stays behind existing firewalls. The platform also includes human approval steps and provides full audit trails for every automated output."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-05T00:43:28.648Z"
+    },
+    "EV-7bb7b9e293a852ca": {
+      "id": "EV-7bb7b9e293a852ca",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "主营无人平台的机载计算机和自主控制系统，是具身系统的核心软硬件部件；依据 AURA SBC 与 AURA OS 的主营产品证据排除。",
+      "input_hash": "f903e7911aec210970485b1b41921969882235f862c3cddcf79d20253af7bab8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-566685ff2dc19ee3",
+          "quote": "DOD Solution, an Estonian-Ukrainian DefenceTech company developing onboard autonomy for unmanned systems"
+        },
+        {
+          "source_id": "FISRC-566685ff2dc19ee3",
+          "quote": "Founded in 2023, DOD Solution develops onboard computers and autonomy systems for unmanned platforms."
+        },
+        {
+          "source_id": "FISRC-566685ff2dc19ee3",
+          "quote": "AURA AI, its flagship product, is an onboard autonomy platform combining the AURA SBC onboard computer with AURA OS, the company’s autonomy software stack."
+        },
+        {
+          "source_id": "FISRC-566685ff2dc19ee3",
+          "quote": "The platform enables autonomous navigation, perception, target recognition and tracking, and terminal guidance when GPS or communications are degraded or unavailable."
+        },
+        {
+          "source_id": "FISRC-566685ff2dc19ee3",
+          "quote": "It is designed for integration into different types of UAVs, including FPV drones, interceptor drones and fixed-wing UAVs."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "generated_at": "2026-10-05T00:45:44.264Z"
+    },
+    "EV-e8f58ed488159c88": {
+      "id": "EV-e8f58ed488159c88",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        2
+      ],
+      "rationale": "官方公告将主营定位为专用于 Physical AI 的芯片与软件平台，本轮用于扩大人形机器人、无人机和自主系统核心计算部件；依据主营和专用交付范围排除，不仅依据机器人客户关键词。",
+      "input_hash": "6082487f3399a840d3a5eb2e0009b1ac12be06af6f74853cc82443b27e9e9b1f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2209738fa8f6b1da",
+          "quote": "SiMa.ai is a leader in Physical AI, delivering a purpose-built, software-centric platform that brings best-in-class performance, power efficiency, and ease of use to Physical AI applications. The company is focused on scaling Physical AI across robotics, automotive, drones, industrial automation, aerospace and defense, smart vision, and healthcare."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "generated_at": "2026-10-05T00:45:44.265Z"
     }
   },
-  "generated_at": "2026-10-04T00:45:08.162Z"
+  "generated_at": "2026-10-05T00:43:28.651Z"
 }
