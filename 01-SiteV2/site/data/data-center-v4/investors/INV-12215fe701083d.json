@@ -121,12 +121,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Jefferies 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据Jefferies官网确认其为投资银行与资本市场服务机构；本来源不证明队列所指的任何具体融资事件或直接投资角色。",
+      "summary": "Jefferies官网将其定位为全球投资银行与资本市场公司，并介绍其服务类型及客户关系。该档案核实机构身份与业务类型，不据此确认其是否直接参与某一融资事件。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "投资银行与资本市场服务机构",
+          "source_id": "jefferies_official_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +141,24 @@
           "source_id": "FISRC-3b2454278fe6d93e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://www.jefferies.com/",
+          "url": "https://www.jefferies.com/",
+          "source_id": "jefferies_official_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jefferies_official_about",
+          "source_url": "https://www.jefferies.com/about/",
+          "source_title": "About Jefferies | Global Investment Banking & Capital Markets Firm",
+          "source_content_hash": "1787528824af18bc3ff3afdd1857cc2a66ad05d655af99ce6ee7d17d066c152e",
+          "quote": "Jefferies is the leading pure-play investment banking and capital markets firm. Insightful Ideas and advice to support our clients goals, drawn from our deep sector and product expertise. Driven Nimble, entrepreneurial structure and culture relentlessly focused on and designed to deliver for clients. High Touch It’s personal at Jefferies. We forge deep client partnerships built on trust and high-touch service. The Jefferies Difference Jefferies is defined by our partnership culture, the depth of insight we deliver to our clients, and our flat entrepreneurial structure define Jefferies. With our incredible consistency of leadership and strategy, these qualities have fueled our growth across all services. They continue to help us deliver for our clients at their most critical moments.",
+          "quote_hash": "d55fbbe7c40b4f2d637cfefdbf7bdffe822aa8aa2d312995d74036d8e01d4958"
+        },
         {
           "source_id": "FISRC-3b2454278fe6d93e",
           "source_url": "https://www.linkedin.com/posts/ccheng805_were-thrilled-to-announce-that-capital-49-activity-7454614909348229121-9ih0",
@@ -145,7 +168,7 @@
           "quote_hash": "8c7db12c96b68d50fdeea22cc20bb23b953bdb9421583ae9d3be923b20c6fadb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

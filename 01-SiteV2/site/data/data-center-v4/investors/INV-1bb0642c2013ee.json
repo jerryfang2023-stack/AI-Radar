@@ -122,13 +122,38 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "长沙群欣 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据蓝思科技2025年半年度报告核验长沙群欣的现名、曾用名和作为发起人的历史关系；不将该历史关系扩展为其当前投资管理业务。",
+      "summary": "蓝思科技2025年半年度报告将长沙群欣投资咨询有限公司列为公司发起人，并注明其曾用名为长沙群欣投资咨询股份有限公司。报告记载蓝思科技于2011年6月登记成立。此处只据此核实长沙群欣的机构身份与历史股东/发起人关系。",
+      "facts": [
+        {
+          "field": "name_as_disclosed",
+          "label": "报告披露现名",
+          "value": "长沙群欣投资咨询有限公司",
+          "source_id": "lens_technology_hy2025_report"
+        },
+        {
+          "field": "former_name",
+          "label": "报告披露曾用名",
+          "value": "长沙群欣投资咨询股份有限公司",
+          "source_id": "lens_technology_hy2025_report"
+        },
+        {
+          "field": "relationship",
+          "label": "与蓝思科技的历史关系",
+          "value": "作为发起人参与蓝思科技设立",
+          "source_id": "lens_technology_hy2025_report"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011-06-13",
+          "description": "蓝思科技半年度报告记载公司于该日登记成立，长沙群欣投资咨询有限公司为发起人之一。",
+          "source_id": "lens_technology_hy2025_report"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：驰芯半导体 · 历史轮次未披露 · 天使轮投资。这是本库收录的披露案例，不代表完整投资组合。",
@@ -138,6 +163,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "lens_technology_hy2025_report",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-08-26/1224573528.PDF",
+          "source_title": "蓝思科技股份有限公司 2025年半年度报告全文",
+          "source_content_hash": "7caceb251a8899a54a48a20ee85824fa935d7855478a47dd6562b4d6ed1907ec",
+          "quote": "蓝思科技股份有限公司（以下简称公司或本公司）系经湖南省商务厅、湖南省人民政府批准，由蓝思科技（香港）\r\n有限公司、长沙群欣投资咨询有限公司（曾用名：长沙群欣投资咨询股份有限公司）作为发起人发起设立，于2011年6\r\n月13日在长沙市工商行政管理局登记注册，总部位于湖南省浏阳生物医药园。公司现持有统一社会信用代码为\r\n91430000796852865Y的营业执照，截至2025年6月30日公司注册资本4,983,069,781.00元，实收资本4,982,772,171.00\r\n元，股份总数4,982,772,171股（每股面值1元）。其中，有限售条件的流通股份：A股16,723,283股；无限售条件的流\r\n通股份A股4,966,048,888股。公司股票于2015年3月18日在深圳证券交易所挂牌交易。",
+          "quote_hash": "e89ced800945d7710d5392962fdc646d2846ea3e64bc431237e868192f788780"
+        },
+        {
           "source_id": "FISRC-d7c3cbdfafeaf4fc",
           "source_url": "https://m.jobui.com/company/16905688/financing/",
           "source_title": "登录 - 职友集",
@@ -146,7 +179,7 @@
           "quote_hash": "0a35b08ee7ab61940749ca60dec8c3a8cf5a905fdeb8542cfd716078e34bb7f7"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

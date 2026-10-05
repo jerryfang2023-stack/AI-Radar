@@ -43793,12 +43793,53 @@
     "INV-9cadaf2a3821b5": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Carya Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体与基金类型依据SEC申报字段；申报内容未经SEC独立核实。投资活动仅限Fish Audio官网公告明确披露的一笔融资。",
+      "summary": "SEC于2023年Form D/A申报中列出Carya Venture Partners, LP - A4为特拉华州有限合伙企业及风险投资基金，主要营业地点在西雅图，并披露其普通合伙人及普通合伙人管理方。Fish Audio官网2026年融资公告将Carya Venture Partners列为参投方。",
+      "facts": [
+        {
+          "field": "issuer_name",
+          "label": "SEC申报基金名称",
+          "value": "Carya Venture Partners, LP - A4",
+          "source_id": "sec_form_da_carya_2023"
+        },
+        {
+          "field": "entity_type",
+          "label": "申报主体类型",
+          "value": "Delaware limited partnership",
+          "source_id": "sec_form_da_carya_2023"
+        },
+        {
+          "field": "fund_type",
+          "label": "SEC申报基金类别",
+          "value": "venture capital fund",
+          "source_id": "sec_form_da_carya_2023"
+        },
+        {
+          "field": "principal_place",
+          "label": "SEC申报主要营业地点",
+          "value": "Seattle, Washington 98104",
+          "source_id": "sec_form_da_carya_2023"
+        },
+        {
+          "field": "general_partner",
+          "label": "SEC申报普通合伙人",
+          "value": "Fund GP, LLC",
+          "source_id": "sec_form_da_carya_2023"
+        },
+        {
+          "field": "general_partner_manager",
+          "label": "SEC申报普通合伙人管理方",
+          "value": "Belltower Fund Group, Ltd.",
+          "source_id": "sec_form_da_carya_2023"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Fish Audio于2026年7月宣布获得5200万美元种子轮融资，Carya Venture Partners列为参投方。",
+          "source_id": "fish_audio_seed_2026"
+        },
         {
           "description": "融资来源记录：Fish Audio · 种子轮 · 2026-07-28 · 本轮参投 · $52 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e06e94375ec64ac4"
@@ -43810,6 +43851,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "fish_audio_seed_2026",
+          "source_url": "https://fish.audio/zh-CN/blog/fish-audio-52m-seed-funding/",
+          "source_title": "5 个模型，22 个人，1 年 - Fish Audio Blog",
+          "source_content_hash": "bf896d7f2424544100dbf0330e40efd54a015a67482d2e0f18f7ead929fb9e46",
+          "quote": "感谢领投方 Coreline Ventures 和 Capital Today ，以及参投方 359 Capital, Play Time, HF0, 645 Ventures, Parable, Carya Venture Partners, Alphalist Partners",
+          "quote_hash": "e52c975c61e2da699424f7922cf5de92bea9afdb9bd7aab34d7f2aa6da98331e"
+        },
+        {
+          "source_id": "sec_form_da_carya_2023",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1970960/000197096023000004/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D/A",
+          "source_content_hash": "875bfd294750488bb63697a7e66e8b0b9124c7a5aa9042a4578b6a44ba3babce",
+          "quote": "Name of Issuer Carya Venture Partners, LP - A4 Jurisdiction of Incorporation/Organization DELAWARE Year of Incorporation/Organization Over Five Years Ago X Within Last Five Years (Specify Year) 2023 Yet to Be Formed 2. Principal Place of Business and Contact Information Name of Issuer Carya Venture Partners, LP - A4 Street Address 1 Street Address 2 119 SOUTH MAIN STREET SUITE 220 City State/Province/Country ZIP/PostalCode Phone Number of Issuer SEATTLE WASHINGTON 98104 2068016359 3. Related Persons Last Name First Name Middle Name Fund GP, LLC Street Address 1 Street Address 2 PO Box 3217 City State/Province/Country ZIP/PostalCode Seattle WASHINGTON 98114 Relationship: Executive Officer X Director Promoter Clarification of Response (if Necessary): General partner of the Issuer Last Name First Name Middle Name Belltower Fund Group, Ltd. Street Address 1 Street Address 2 119 South Main St, Suite 220 City State/Province/Country ZIP/PostalCode Seattle WASHINGTON 98104 Relationship: Executive Officer X Director Promoter Clarification of Response (if Necessary): Manager of the general partner of the Issuer",
+          "quote_hash": "cf419c6a0f04b15bcf22166265854c297b4854ca25aa15a8a4764950d0e10416"
+        },
         {
           "source_id": "FISRC-e06e94375ec64ac4",
           "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
@@ -43827,7 +43884,7 @@
           "quote_hash": "4065ddd1bac0cc008baab2ea0cfbf12c017120cfee5ea4b2323c2d25b6dcbec9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     },
     "INV-d2169ee1ff9744": {
       "profile_type": "organization",
@@ -64268,19 +64325,86 @@
     "INV-1d636b76f59ac9": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Dash Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "SEC Form ADV以DASH FUND MANAGEMENT, LLC名义列报，AngelList另列Dash Fund Syndicate并称其与Ryan Sells有关联；现有来源未明确证明两者是同一法律载体，档案保留该边界。",
+      "summary": "SEC AdviserInfo留存的2022年Form ADV将DASH FUND MANAGEMENT, LLC列为申报投资顾问主体（CRD 315795）。AngelList另有Dash Fund Syndicate页面，列出典型投资额、年度预期交易数及LP参与数，并说明该syndicate与Ryan Sells有关联；页面未说明syndicate与管理公司的法律关系。Outmarket AI的官网公告则直接将Dash Fund列为种子轮支持方。",
+      "facts": [
+        {
+          "field": "adviser_name_as_filed",
+          "label": "2022年Form ADV申报名",
+          "value": "DASH FUND MANAGEMENT, LLC",
+          "source_id": "sec_adv_dash_fund_management_2022"
+        },
+        {
+          "field": "crd_number_as_filed",
+          "label": "Form ADV CRD编号",
+          "value": "315795",
+          "source_id": "sec_adv_dash_fund_management_2022"
+        },
+        {
+          "field": "typical_investment_as_listed",
+          "label": "AngelList syndicate页面列示典型投资额",
+          "value": "$633,000",
+          "source_id": "angellist_dash_fund_syndicate"
+        },
+        {
+          "field": "expected_deals_per_year_as_listed",
+          "label": "AngelList页面列示年度预期交易数",
+          "value": "5",
+          "source_id": "angellist_dash_fund_syndicate"
+        },
+        {
+          "field": "lp_count_as_listed",
+          "label": "AngelList页面列示已投资LP数",
+          "value": "79",
+          "source_id": "angellist_dash_fund_syndicate"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Outmarket AI官网发布称Dash Fund参与其470万美元种子轮融资。",
+          "source_id": "outmarket_seed_2024"
+        },
         {
           "description": "融资来源记录：Outmarket AI · B轮 · 2026-09-25 · 本轮参投 · $34.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1a2ad9b1108e3f59"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Dash Fund Syndicate AngelList页面",
+          "value": "https://venture.angellist.com/dash-fund/syndicate",
+          "url": "https://venture.angellist.com/dash-fund/syndicate",
+          "source_id": "angellist_dash_fund_syndicate"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "outmarket_seed_2024",
+          "source_url": "https://outmarket.ai/blog/introducing-outmarket",
+          "source_title": "Introducing Outmarket AI | Outmarket Blog",
+          "source_content_hash": "988302ae3a78e3cbfa8bea62e091461d6b306aa02ea372e740384c930d137064",
+          "quote": "Today we are excited to launch Outmarket AI with $4.7M in seed financing led by Fika Ventures and additional support from TTV and Dash Fund.",
+          "quote_hash": "ba2f10bd1862602bb5619ba9d08e2f9b06d467c3328890759f8569126ac7ce88"
+        },
+        {
+          "source_id": "sec_adv_dash_fund_management_2022",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/315795/PDF/315795.pdf",
+          "source_title": "FORM ADV — DASH FUND MANAGEMENT, LLC, CRD 315795",
+          "source_content_hash": "a64c4a7e7fb493b63ad1810d37133b37ad8c5d49c846120b1e7bd7fb603ffb9d",
+          "quote": "Primary Business Name:DASH FUND MANAGEMENT, LLC CRD Number: 315795",
+          "quote_hash": "c59f6f284660d5cee6f9a08723bb79828e766c18eab9783b2b193c4ae1014979"
+        },
+        {
+          "source_id": "angellist_dash_fund_syndicate",
+          "source_url": "https://venture.angellist.com/dash-fund/syndicate",
+          "source_title": "Invest with Dash Fund Syndicate | AngelList",
+          "source_content_hash": "ad801b15171911d5b249570ead81e5e873809fbfee5358f6be06700c8c5a337f",
+          "quote": "$633k Typical Investments 5 Expected Deals/Year 79 Unique LPs have invested Dealflow Team Ryan Sells Tom Seo Dash Fund Syndicate is a supervised person of or otherwise affiliated with Ryan Sells, a “Registered Investor Advisor” under the Investment Advisers Act of 1940.",
+          "quote_hash": "a0478c601cdfaf1e167337ed492633b4684fc18b918c34740854010503b2b747"
+        },
         {
           "source_id": "FISRC-1a2ad9b1108e3f59",
           "source_url": "https://www.prnewswire.com/news-releases/outmarket-ai-raises-34-5m-series-b-to-solidify-position-as-the-1-ai-platform-for-insurance-302891583.html",
@@ -64290,7 +64414,7 @@
           "quote_hash": "9c4dfa4bd1f917cdee90a6d7b63e7f79e690df1508c925d76e125149ae2fbe18"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     },
     "INV-f47eef01fd64fa": {
       "profile_type": "organization",
@@ -77356,14 +77480,43 @@
       "last_verified_at": "2026-09-28"
     },
     "INV-77a799da102086": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "余杭国投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "债券募集说明书明确定义“余杭国投”为杭州余杭国有资本投资运营集团有限公司；启明创投官方组合新闻记录其作为老股东继续参与佳量脑科学C轮。",
+      "summary": "杭州余杭国有资本投资运营集团有限公司在上海证券交易所披露的债券募集说明书中被明确定义为“余杭国投”，并作为发行人控股股东披露。杭州市国有资本投资运营有限公司官网以“余杭国投集团”称呼该集团并记录其参加基金业务交流；启明创投2026年组合新闻将余杭国投列为佳量脑科学C轮继续投资的老股东。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "债券文件定义的正式名称",
+          "value": "杭州余杭国有资本投资运营集团有限公司",
+          "source_id": "sse_qianjiang_bond_2024"
+        },
+        {
+          "field": "short_name",
+          "label": "债券文件定义的简称",
+          "value": "余杭国投",
+          "source_id": "sse_qianjiang_bond_2024"
+        },
+        {
+          "field": "organization_type",
+          "label": "主体名称所示机构类型",
+          "value": "国有资本投资运营集团",
+          "source_id": "sse_qianjiang_bond_2024"
+        },
+        {
+          "field": "relationship_to_qianjiang_issuer",
+          "label": "债券文件披露的关系",
+          "value": "杭州钱江开发区投资发展有限公司控股股东",
+          "source_id": "sse_qianjiang_bond_2024"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "启明创投官网称余杭国投作为老股东继续投资杭州佳量脑科学C轮。",
+          "source_id": "qiming_jialiang_series_c_2026"
+        },
         {
           "description": "融资来源记录：佳量脑科学 · 多轮融资 · 2026-09-08 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0fc87012f374b083"
@@ -77375,6 +77528,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "qiming_jialiang_series_c_2026",
+          "source_url": "https://www.qimingvc.com/en/node/7682",
+          "source_title": "启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮 | Qiming Venture Partners",
+          "source_content_hash": "de06e3fa4673b1c9ff12096263e0e904b33d7cefc7f7668460ab7a12b205efc7",
+          "quote": "C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投。",
+          "quote_hash": "cc57f536c07b39a6ca04c83288ac32ea7348ed076980ecfdeddebef44ada2e0b"
+        },
+        {
+          "source_id": "sse_qianjiang_bond_2024",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202402/040761_20240201_HQ8J.pdf",
+          "source_title": "杭州市钱江开发区投资发展有限公司2024年债券募集说明书",
+          "source_content_hash": "b87e7fecadff751ea9cf0d2f3c8883116aaf62149d7f2023404d6c3c83fc95d8",
+          "quote": "控股股东、余杭国投 指 指杭州余杭国有资本投资运营集团有限公司\r\n实际控制人、余杭区国资",
+          "quote_hash": "63bb3c39bfbc9ec817e3f1339d340d98b4df59c530b383d4f710f05cd3a307d6"
+        },
+        {
+          "source_id": "hangzhou_capital_yuhang_news_2024",
+          "source_url": "https://hzzbco.com/newDet_437_6",
+          "source_title": "杭州市国有资本投资运营有限公司官网",
+          "source_content_hash": "226ba568b68e943d2d0518b9e838cd4a3002a1ce49483111fff1fb1e095b45fa",
+          "quote": "以党建链赋能创新链 服务产业链——杭州资本与余杭国投、君联资本开展党建共建活动 2024年11月04日 为充分推动党建与业务融合发展，积极构建党建链与创新链、产业链融合共促的良好态势，10月25日，杭州资本与余杭国投、君联资本开展以“赓续中华文脉 传承红色基因”为主题的党建共建活动。杭州资本党委书记、董事长孙刚锋， 余杭国投集团党委书记、董事长孟志刚 ， 君联资本党支部书记、君联资本副董事长陈浩 ， 君联资本党支部副书记、君联资本总裁李家庆 一行出席活动。 在良渚博物馆，共建单位一行充分领略中华五千多年文明史，深入学习习近平总书记关于良渚文化的批示指示精神，深刻感悟习近平文化思想的博大内涵。在深睿医疗公司，充分了解企业积极响应“加快发展新质生产力”号召，通过突破性的人工智能“深度学习”技术及自主研发的核心算法，赋能医疗服务机构实现智能化升级与转型的具体实践。在座谈交流环节，共建单位各方分享了企业党建工作经验，并对后续投资形势和基金业务开展等进行了深入交流。",
+          "quote_hash": "f955abe3a748f180f827e2b6d54e8b1e9cb2917d916a6e86cd8dfbfe5c2769a1"
+        },
         {
           "source_id": "FISRC-0fc87012f374b083",
           "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
@@ -77392,7 +77569,7 @@
           "quote_hash": "cda0e063c803dad403d8dd31caac65412fa772c4a485dfe9b75c5a35cce15595"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     },
     "INV-6b34a57b4d446f": {
       "profile_type": "organization",
@@ -84452,12 +84629,37 @@
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-71c7c3ca21ca3e": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Metaplanet 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网确认该主体为东京上市公司并说明其Bitcoin Treasury主营定位；官网页面没有确认队列所指的任何具体创业投资关系，不将其描述为风险投资基金管理人。",
+      "summary": "Metaplanet官网将主体列为Metaplanet Inc.，东京证券交易所代码3350，并称其为公开上市的Bitcoin Treasury Company，以比特币作为核心储备资产。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网名称",
+          "value": "Metaplanet Inc.",
+          "source_id": "metaplanet_official_about"
+        },
+        {
+          "field": "listing",
+          "label": "官网列示证券代码",
+          "value": "Tokyo Stock Exchange: 3350; OTCQX: MTPLF",
+          "source_id": "metaplanet_official_about"
+        },
+        {
+          "field": "business",
+          "label": "官网自述主营定位",
+          "value": "公开上市的Bitcoin Treasury Company",
+          "source_id": "metaplanet_official_about"
+        },
+        {
+          "field": "treasury_asset",
+          "label": "官网披露核心储备资产",
+          "value": "Bitcoin",
+          "source_id": "metaplanet_official_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -84465,8 +84667,24 @@
           "source_id": "FISRC-ed8df2c3d21fb938"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://metaplanet.jp/en/about",
+          "url": "https://metaplanet.jp/en/about",
+          "source_id": "metaplanet_official_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "metaplanet_official_about",
+          "source_url": "https://metaplanet.jp/en/about",
+          "source_title": "About | Vision, Mission & Strategy | Metaplanet",
+          "source_content_hash": "024d5b07dd5d0cb442a03d1957910ec86ac5fd244ec3f28a2603439de9e0ec14",
+          "quote": "Metaplanet Inc. (Tokyo Stock Exchange: 3350 / OTCQX: MTPLF) is Japan&#x27;s first and only publicly listed Bitcoin Treasury Company. The company leverages Bitcoin as its core treasury reserve asset",
+          "quote_hash": "e753031a7eebd16630e270fcbbd8f000576d67dd33eb7402de2d7b9168a6fab7"
+        },
         {
           "source_id": "FISRC-ed8df2c3d21fb938",
           "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
@@ -84476,7 +84694,7 @@
           "quote_hash": "3eaf37137bbf2e93fe23706845f4924135ac9dbedaa8912cdb760d52c8be7c19"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-05"
     },
     "INV-fb161cca420cf9": {
       "profile_type": "organization",
@@ -85672,12 +85890,43 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-31e13baf749939": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中国电信投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据2021年发行人/保荐机构披露核验法定名称和当时披露的经营范围、股权信息；历史披露不等于实时工商状态。",
+      "summary": "2021年基金设立核查文件列明中国电信集团投资有限公司为有限合伙人，简称“中国电信”，并披露成立时间、企业类型、以自有资金投资的经营范围及中国电信集团有限公司持股信息。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "中国电信集团投资有限公司",
+          "source_id": "telecom_group_investment_filing_2021"
+        },
+        {
+          "field": "established",
+          "label": "成立日期",
+          "value": "2017-10-31（文件披露）",
+          "source_id": "telecom_group_investment_filing_2021"
+        },
+        {
+          "field": "organization_type",
+          "label": "文件披露的企业类型",
+          "value": "有限责任公司（非自然人投资或控股的法人独资）",
+          "source_id": "telecom_group_investment_filing_2021"
+        },
+        {
+          "field": "business_scope",
+          "label": "文件披露的经营范围",
+          "value": "以企业自有资金进行投资，并提供企业投资咨询、企业管理咨询及科技信息专业领域相关服务",
+          "source_id": "telecom_group_investment_filing_2021"
+        },
+        {
+          "field": "shareholder_as_disclosed",
+          "label": "文件披露的股权信息",
+          "value": "中国电信集团有限公司100%持股（文件披露）",
+          "source_id": "telecom_group_investment_filing_2021"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -85688,6 +85937,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "telecom_group_investment_filing_2021",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2021-12-29/1212046620.PDF",
+          "source_title": "华英证券有限责任公司 / 关于京东方科技集团股份有限公司参与设立北京京国管股权 / 投资基金（有限合伙）暨关联交易的核查意见",
+          "source_content_hash": "1babf13612b45436482b63cace388efa2a5663339d5b8c26c6f7a4efdf1c6f5f",
+          "quote": "公司名称：中国电信集团投资有限公司（以下简称“中国电信”）\r\n2、注册地址：河北省安新县安容公路东(建设大街279号)\r\n3、成立日期：2017-10-31\r\n4、注册资本：500,000万元人民币\r\n5、公司类型：有限责任公司(非自然人投资或控股的法人独资)\r\n6、法定代表人：李原\r\n7、经营范围：以企业自有资金进行投资，企业投资咨询服务，企业管理咨\r\n询，市场营销策划，从事科技信息专业领域内的技术咨询、技术开发、技术转让、\r\n技术服务等（依法须经批准的项目，经相关部门批准后方可开展经营活动）。\r\n8、股权结构：中国电信集团有限公司 100%持股",
+          "quote_hash": "ba46f351869da3ae0283930264e6a561389e361d944a0eb4ba3d32d85f4d762e"
+        },
+        {
           "source_id": "FISRC-5ffa5747cf097be6",
           "source_url": "https://stock.stockstar.com/RB2026081900036871.shtml",
           "source_title": "【投融资动态】清程极智A++轮融资，融资额数亿人民币，投资方为中国电信投资、瀚晖资本等",
@@ -85696,7 +85953,7 @@
           "quote_hash": "d68722d11d0246901b0bb4d3f70c9a8a2e075f7a122acde77028b978dab5b8f5"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-05"
     },
     "INV-10800b40544cab": {
       "profile_type": "unverified",
@@ -99216,12 +99473,19 @@
       "identity_status": "verified"
     },
     "INV-118e10a24fa869": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "余杭金控股份 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "身份依据交易所披露的历史债券主体跟踪评级报告；只记录报告中的更名信息，不推定当下股权或业务状态。",
+      "summary": "上海证券交易所披露的余杭金控主体跟踪评级报告记录债券主体更名为“杭州余杭金控控股股份有限公司”。该档案限于官方历史披露所能确认的名称信息。",
+      "facts": [
+        {
+          "field": "legal_name_as_disclosed",
+          "label": "报告披露的更名后名称",
+          "value": "杭州余杭金控控股股份有限公司",
+          "source_id": "yuhang_jinkong_name_history"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -99232,6 +99496,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "yuhang_jinkong_name_history",
+          "source_url": "https://www.sse.com.cn/disclosure/bond/announcement/corporate/c/2717024327890510.pdf",
+          "source_title": "跟踪评级报告 / 杭州余杭金融控股集团有限公司主体 / 及“16余杭金控小微债/16余金控”跟踪评级报告",
+          "source_content_hash": "d72a96ceb86de897e8e9ea4ee6b0b69eb6032e070292bbafb1a8e9593f6654dd",
+          "quote": "更名为“杭州余杭金控控股股份有限公司”。",
+          "quote_hash": "505f6454ad1cebfdbfdd440d58a1fff0d0580d495df0c2324d3d31ba176d4a00"
+        },
+        {
           "source_id": "FISRC-9d4811d701a7c9af",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
           "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
@@ -99240,7 +99512,7 @@
           "quote_hash": "bd068025322f5afbcb8de752e20877f75655e2501a442bbe2a818d7c45ca4cc1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     },
     "INV-3e574908cf31ad": {
       "profile_type": "person",
@@ -148375,13 +148647,50 @@
       "last_verified_at": "2026-10-05"
     },
     "INV-1ba06d944ea01c": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "集富亚洲 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "名称依据2026年官方更名公告；“JAFCO Asia”记录为历史品牌，当前主体名称使用JIF Capital。",
+      "summary": "JIF Capital官网于2026年3月11日公告，其由JAFCO Investment (Asia Pacific) Ltd.更名而来，历史品牌为“JAFCO Asia”；官网将其定位为面向亚洲的风险投资与成长投资平台，并说明总部位于新加坡。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "当前名称",
+          "value": "JIF Capital Ltd.",
+          "source_id": "jif_renaming_2026"
+        },
+        {
+          "field": "former_name",
+          "label": "更名前名称",
+          "value": "JAFCO Investment (Asia Pacific) Ltd.",
+          "source_id": "jif_renaming_2026"
+        },
+        {
+          "field": "former_brand",
+          "label": "历史品牌",
+          "value": "JAFCO Asia",
+          "source_id": "jif_renaming_2026"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资范围",
+          "value": "亚洲风险投资与成长投资",
+          "source_id": "jif_renaming_2026"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "新加坡",
+          "source_id": "jif_renaming_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-03-11",
+          "description": "JAFCO Asia正式更名为JIF Capital。",
+          "source_id": "jif_renaming_2026"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：开物纪 · 天使+轮 · 2026-03-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -148391,6 +148700,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "jif_renaming_2026",
+          "source_url": "https://www.jif.capital/news/p/jafco-asia-formally-renamed-jif-capital-reaffirms-leadership-continuity-and-regional-platform-stability",
+          "source_title": "JAFCO Asia Formally Renamed JIF Capital; Reaffirms Leadership Continuity and Regional Platform Stability",
+          "source_content_hash": "0ef160a6825ddcc6cae21b2f4ab5374b6c497038cee1840fca0200049c904df2",
+          "quote": "11 th Mar 2026 JIF Capital Ltd. (“JIF Capital”), formerly JAFCO Investment (Asia Pacific) Ltd. (“JAFCO Asia”), today formally announced its renaming to JIF Capital, marking the next phase of its development as an independent Asia-focused venture and growth investment platform. The firm confirmed that its investment team, country leadership and regional structure remain unchanged. JIF Capital will continue operating under the same investment philosophy, governance standards and fund mandates that have guided the platform over the past decades. JIF Capital is led by Chief Executive Officer Carmen Yuen, formerly a General Partner at Vertex Ventures Southeast Asia and India, and Managing Partner Koichi Saito, previously a General Partner at KK Fund. The regional leadership team includes: • Swee Ting Pan – Managing Director. With more than 18 years of investment experience, Swee Ting leads the firm’s Shanghai and Beijing activities and has delivered exits through U.S. IPOs, A-share IPOs and strategic trade sales across Internet, Fintech and Frontier Technology sectors. • Edward Lee – Managing Director. With over 15 years leading the investment team, Edward has shaped regional investment strategy and built high-impact portfolios across Artificial Intelligence, MedTech and Circular Energy. • Supriya Singh – Senior Director & Head of Investment in Southeast Asia and India. With 14 years of experience leading investments across India, Vietnam, Singapore, Indonesia and Malaysia, Supriya has spearheaded cross-border capital deployment aligned with regional fund mandates. She has worked closely with portfolio company AnyMind since 2017, supporting its acquisition of Pokkt in 2020 and leveraging the firm’s Japan network to contribute to its Tokyo Stock Exchange listing in March 2023. As part of this transition, the firm has undertaken a structured review of its regional operating model and governance framework, reaffirming its long-term mandate to deploy capital with discipline and insight to create durable value for limited partners across Asian markets. “The renaming to JIF Capital reflects continuity and institutional evolution,” said Carmen Yuen, Chief Executive Officer. “Our team, strategy and commitment to disciplined capital allocation remain unchanged.” “We remain committed to long-term partnerships with corporate leaders and institutional investors across Japan and the broader region,” said Koichi Saito, Managing Partner. “Governance, transparency and consistent regional execution continue to define our approach.” JIF Capital operates independently following its acquisition by Bee Alternatives Management Ltd. and remains headquartered in Singapore.",
+          "quote_hash": "9f70cc58926d0feec951da888d5518412620df70c2e1d3cf01a4846b274e9673"
+        },
+        {
           "source_id": "FISRC-3d10ec9bd5ef3ad4",
           "source_url": "https://news.pedaily.cn/202603/562002.shtml",
           "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
@@ -148399,7 +148716,7 @@
           "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     },
     "INV-9f5de9baa0543c": {
       "profile_type": "organization",
@@ -178876,29 +179193,60 @@
       "identity_status": "verified"
     },
     "INV-028328b69a35e8": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "辰韬资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "以上市公司披露映射队列品牌“辰韬资本”与上海辰韬资产管理有限公司；经营范围及关注领域沿用2021年公告表述。",
+      "summary": "宝通科技2021年公告将上海辰韬资产管理有限公司简称为“辰韬资本”，并说明双方拟共同发起设立产业基金；公告列明其资产管理、投资管理经营范围及当时披露的产业关注领域。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "公司名称",
+          "value": "上海辰韬资产管理有限公司",
+          "source_id": "chentao_baotong_filing_2021"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "辰韬资本成立于2014年10月",
+          "source_id": "chentao_baotong_filing_2021"
+        },
+        {
+          "field": "business_scope",
+          "label": "公告披露的经营范围",
+          "value": "资产管理、投资管理",
+          "source_id": "chentao_baotong_filing_2021"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公告披露的关注领域",
+          "value": "新能源汽车产业链、人工智能、智能驾驶、大数据应用和工业互联网",
+          "source_id": "chentao_baotong_filing_2021"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-07-30",
+          "description": "宝通科技公告拟由全资子公司与辰韬资本共同发起设立宝通辰韬新兴产业三期基金。",
+          "source_id": "chentao_baotong_filing_2021"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：极佳视界 · 历史轮次未披露 · 种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce47b663ca256878"
-        },
-        {
-          "description": "融资来源记录：极佳视界 · 历史轮次未披露 · 种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fdfe58e2e68c7e9e"
-        },
-        {
-          "description": "融资来源记录：极佳视界 · 历史轮次未披露 · 种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4782a6093d519a4d"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "chentao_baotong_filing_2021",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2021-07-30/1210612537.PDF",
+          "source_title": "证券代码：300031 证券简称：宝通科技 公告编号：2021-055 / 债券代码：123053 债券简称：宝通转债 / 无锡宝通科技股份有限公司",
+          "source_content_hash": "b493a8436c40a4b2d85fd415f2b4daabe3e1221168dde99e5666742e98616879",
+          "quote": "公司名称：上海辰韬资产管理有限公司\r\n注册地址：上海自由贸易试验区临港新片区新城路 2 号24 幢C2156 室\r\n注册资本：人民币 1,000 万元\r\n法定代表人：徐海英\r\n实际控制人、控股股东：徐海英\r\n经营范围：资产管理，投资管理。【依法须经批准的项目，经相关部门批准\r\n后方可开展经营活动】\r\n基本情况：辰韬资本成立于 2014 年 10 月，专注于国内外资本市场的资产管\r\n理、产业并购和实业投资，专注于新能源汽车产业链、人工智能、智能驾驶及未\r\n来人工智能产业带动的大数据应用和工业互联网等产业。",
+          "quote_hash": "08cbb78b9698af54cc0348c6fd63c837c32fd0728cac146d0204b86d6ebcc521"
+        },
         {
           "source_id": "FISRC-ce47b663ca256878",
           "source_url": "https://news.pedaily.cn/202606/565201.shtml",
@@ -178924,7 +179272,7 @@
           "quote_hash": "40e95924a271838c2fdfc640d4aecf7499cc0892710d1156466045b5509c4bcd"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     },
     "INV-f6a35043504d8c": {
       "profile_type": "person",
@@ -183439,12 +183787,25 @@
       "last_verified_at": "2026-09-27"
     },
     "INV-16b4024cdc06d2": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "惠友投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "类别依据深圳市创业投资同业公会页面的“活跃的早期投资机构”名单口径；本来源不证明任何具体融资项目关系。",
+      "summary": "深圳市创业投资同业公会将深圳市惠友投资管理有限公司列入其“活跃的早期投资机构”名单。此条用于核实机构身份与类型，不据此确认具体融资事件。",
+      "facts": [
+        {
+          "field": "organization_category",
+          "label": "行业公会名单类别",
+          "value": "活跃的早期投资机构（公会页面分类）",
+          "source_id": "szvca_early_investor_list"
+        },
+        {
+          "field": "legal_name",
+          "label": "名单所列名称",
+          "value": "深圳市惠友投资管理有限公司",
+          "source_id": "szvca_early_investor_list"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -183455,6 +183816,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "szvca_early_investor_list",
+          "source_url": "https://szvca.com/detail/active/4/1/1/cn",
+          "source_title": "深圳市创业投资同业公会",
+          "source_content_hash": "4c6a1615379df0e1439cb3a15cf57498c6772cdd637886e3e8e1a10a14138d79",
+          "quote": "活跃的早期投资机构63家 1 深圳市力合创业投资有限公司 2 海南嘉成创业投资有限公司（北京盛景嘉成） 3 深圳市分享成长投资管理有限公司 4 深圳市合创资本管理有限公司 5 湖南三一创业投资管理有限公司 6 深圳市悦享资本管理有限公司 7 深圳清源投资管理股份有限公司 8 深圳市力合科创创业投资有限公司 9 深圳前海三合股权基金管理有限公司（优山资本） 10 深圳市青橙资本股权投资管理股份公司 11 深圳中南弘远私募创业投资基金管理有限公司 12 启赋私募基金管理有限公司 13 前海长城基金管理（深圳）有限公司 14 联想创新（深圳）股权投资管理有限公司 15 深圳一村淞灵私募创业投资基金管理有限公司 16 盈富泰克创业投资有限公司 17 深圳前海勤智国际资本管理有限公司 18 深圳澳银资本管理有限公司 19 深圳市大米成长私募创业投资基金有限公司 20 深圳市鼎心资本管理有限公司 21 羲融善道（深圳）创业投资有限公司 22 深圳华业天成投资有限公司 23 深圳市聚合资本有限公司 24 深圳白杨投资管理有限公司 25 深圳微禾投资有限公司 26 深圳创维创业投资有限公司 27 复星创富（深圳）私募股权投资基金管理合伙企业（有限合伙） 28 深圳蓝海创业投资基金管理有限公司 29 君盛投资管理有限公司 30 深圳市融创创业投资有限公司 31 深圳市中美创兴资本管理有限公司 32 深圳华侨城康控私募基金管理有限公司 33 深圳前海中力股权投资基金管理有限公司 34 深圳市时代伯乐创业投资管理有限公司 35 国宏嘉信（深圳）股权投资管理有限公司 36 华盖资本有限责任公司 37 深圳仙瞳资本管理有限公司 38 深圳市倚锋投资管理企业(有限合伙） 39 深圳市前海青松创业投资基金企业（有限合伙） 40 深圳前海创享时代投资管理企业（有限合伙） 41 深圳极地信天创业投资有限公司 42 深圳市飞凡数联影响力创业投资合伙企业（有限合伙） 43 深圳市元生天使创业投资合伙企业（有限合伙） 44 深圳阿尔法天使创业投资管理有限公司 45 深圳市中科孵化股权投资基金管理有限公司 46 前海琥珀永裕股权投资（深圳）合伙企业（有限合伙） 47 北京星空投资管理有限公司 48 深圳市润土投资管理有限公司 49 深圳前海邦勤投资有限公司 50 深圳市世纪星河资本管理有限公司 51 明日星投资咨询（深圳）有限公司 52 深圳市紫金港资本管理有限公司 53 深圳英诺天使投资合伙企业(有限合伙） 54 深圳中科先进产业私募股权基金管理有限公司 55 深圳前海恒邦股权投资有限公司 56 深圳市福田区杉创中小微股权投资基金合伙企业（有限合伙） 57 深圳市保腾创业投资有限公司 58 深圳市正轩投资有限公司 59 深圳市惠友投资管理有限公司",
+          "quote_hash": "86bc28f2ae31dec9becb158132f63c60c49d209535492cfd6cefe859256241bd"
+        },
+        {
           "source_id": "FISRC-d7c3cbdfafeaf4fc",
           "source_url": "https://m.jobui.com/company/16905688/financing/",
           "source_title": "登录 - 职友集",
@@ -183463,7 +183832,7 @@
           "quote_hash": "b1a239b0605052452c0f8f64aa2ca4a1af1e238e475cc06de68d210bf758cca8"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     },
     "INV-82300f45ee9a58": {
       "profile_type": "organization",
@@ -194632,13 +195001,38 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-1bb0642c2013ee": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "长沙群欣 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据蓝思科技2025年半年度报告核验长沙群欣的现名、曾用名和作为发起人的历史关系；不将该历史关系扩展为其当前投资管理业务。",
+      "summary": "蓝思科技2025年半年度报告将长沙群欣投资咨询有限公司列为公司发起人，并注明其曾用名为长沙群欣投资咨询股份有限公司。报告记载蓝思科技于2011年6月登记成立。此处只据此核实长沙群欣的机构身份与历史股东/发起人关系。",
+      "facts": [
+        {
+          "field": "name_as_disclosed",
+          "label": "报告披露现名",
+          "value": "长沙群欣投资咨询有限公司",
+          "source_id": "lens_technology_hy2025_report"
+        },
+        {
+          "field": "former_name",
+          "label": "报告披露曾用名",
+          "value": "长沙群欣投资咨询股份有限公司",
+          "source_id": "lens_technology_hy2025_report"
+        },
+        {
+          "field": "relationship",
+          "label": "与蓝思科技的历史关系",
+          "value": "作为发起人参与蓝思科技设立",
+          "source_id": "lens_technology_hy2025_report"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011-06-13",
+          "description": "蓝思科技半年度报告记载公司于该日登记成立，长沙群欣投资咨询有限公司为发起人之一。",
+          "source_id": "lens_technology_hy2025_report"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：驰芯半导体 · 历史轮次未披露 · 天使轮投资。这是本库收录的披露案例，不代表完整投资组合。",
@@ -194648,6 +195042,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "lens_technology_hy2025_report",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-08-26/1224573528.PDF",
+          "source_title": "蓝思科技股份有限公司 2025年半年度报告全文",
+          "source_content_hash": "7caceb251a8899a54a48a20ee85824fa935d7855478a47dd6562b4d6ed1907ec",
+          "quote": "蓝思科技股份有限公司（以下简称公司或本公司）系经湖南省商务厅、湖南省人民政府批准，由蓝思科技（香港）\r\n有限公司、长沙群欣投资咨询有限公司（曾用名：长沙群欣投资咨询股份有限公司）作为发起人发起设立，于2011年6\r\n月13日在长沙市工商行政管理局登记注册，总部位于湖南省浏阳生物医药园。公司现持有统一社会信用代码为\r\n91430000796852865Y的营业执照，截至2025年6月30日公司注册资本4,983,069,781.00元，实收资本4,982,772,171.00\r\n元，股份总数4,982,772,171股（每股面值1元）。其中，有限售条件的流通股份：A股16,723,283股；无限售条件的流\r\n通股份A股4,966,048,888股。公司股票于2015年3月18日在深圳证券交易所挂牌交易。",
+          "quote_hash": "e89ced800945d7710d5392962fdc646d2846ea3e64bc431237e868192f788780"
+        },
+        {
           "source_id": "FISRC-d7c3cbdfafeaf4fc",
           "source_url": "https://m.jobui.com/company/16905688/financing/",
           "source_title": "登录 - 职友集",
@@ -194656,7 +195058,7 @@
           "quote_hash": "0a35b08ee7ab61940749ca60dec8c3a8cf5a905fdeb8542cfd716078e34bb7f7"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     },
     "INV-0ff86280123c17": {
       "profile_type": "unverified",
@@ -207690,12 +208092,19 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-12215fe701083d": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Jefferies 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据Jefferies官网确认其为投资银行与资本市场服务机构；本来源不证明队列所指的任何具体融资事件或直接投资角色。",
+      "summary": "Jefferies官网将其定位为全球投资银行与资本市场公司，并介绍其服务类型及客户关系。该档案核实机构身份与业务类型，不据此确认其是否直接参与某一融资事件。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "投资银行与资本市场服务机构",
+          "source_id": "jefferies_official_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -207703,8 +208112,24 @@
           "source_id": "FISRC-3b2454278fe6d93e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://www.jefferies.com/",
+          "url": "https://www.jefferies.com/",
+          "source_id": "jefferies_official_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jefferies_official_about",
+          "source_url": "https://www.jefferies.com/about/",
+          "source_title": "About Jefferies | Global Investment Banking & Capital Markets Firm",
+          "source_content_hash": "1787528824af18bc3ff3afdd1857cc2a66ad05d655af99ce6ee7d17d066c152e",
+          "quote": "Jefferies is the leading pure-play investment banking and capital markets firm. Insightful Ideas and advice to support our clients goals, drawn from our deep sector and product expertise. Driven Nimble, entrepreneurial structure and culture relentlessly focused on and designed to deliver for clients. High Touch It’s personal at Jefferies. We forge deep client partnerships built on trust and high-touch service. The Jefferies Difference Jefferies is defined by our partnership culture, the depth of insight we deliver to our clients, and our flat entrepreneurial structure define Jefferies. With our incredible consistency of leadership and strategy, these qualities have fueled our growth across all services. They continue to help us deliver for our clients at their most critical moments.",
+          "quote_hash": "d55fbbe7c40b4f2d637cfefdbf7bdffe822aa8aa2d312995d74036d8e01d4958"
+        },
         {
           "source_id": "FISRC-3b2454278fe6d93e",
           "source_url": "https://www.linkedin.com/posts/ccheng805_were-thrilled-to-announce-that-capital-49-activity-7454614909348229121-9ih0",
@@ -207714,7 +208139,7 @@
           "quote_hash": "8c7db12c96b68d50fdeea22cc20bb23b953bdb9421583ae9d3be923b20c6fadb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     },
     "INV-08e2ee4995b8d4": {
       "summary": "Sycamore 的 6500 万美元种子轮公告将 Jerry Tworek 列为知名天使投资人，并称其曾任 OpenAI Research Scientist。公告未披露任期、现职或学历。",
@@ -215225,30 +215650,43 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-5a3ac74b220594": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "activity_only",
-      "sources": [
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网自述核验主体名称、早期科技风险投资类型和投资标准；不据此确认队列中未给出原始公告的任何具体交易。",
+      "summary": "TCP Venture Capital官网自述其位于美国马里兰州巴尔的摩，是面向早期科技企业的风险投资机构，重点支持特色技术应用和巴尔的摩地区企业；官网列有Propel Baltimore Fund，并介绍投资标准与方式。",
+      "facts": [
         {
-          "source_id": "FISRC-3b2454278fe6d93e",
-          "source_url": "https://www.linkedin.com/posts/ccheng805_were-thrilled-to-announce-that-capital-49-activity-7454614909348229121-9ih0",
-          "source_title": "Capital 49 Backs Avoca in $125M Series B Raise",
-          "source_content_hash": "0eedb637d7c86cdc",
-          "quote": "Ian Feeney and Andy Linder ( TCP Venture Capital )",
-          "quote_hash": "c2f9a7919228c737dc53c5f5a9eeaec651a224ea2d638fa089a02518b9e2d69b"
+          "field": "organization_type",
+          "label": "官网自述机构类型",
+          "value": "早期科技风险投资机构",
+          "source_id": "tcp_vc_about"
         },
         {
-          "source_id": "tcp_vc_home",
-          "source_url": "https://tcp.vc/",
-          "source_title": "TCP Venture Capital",
-          "source_content_hash": "be8f42441d531ac13d9dc89146a763255938fb47295b67c3c8a826884d46afbc",
-          "quote": "TCP Venture Capital is a Baltimore, Maryland-based early-stage technology focused venture capital firm.",
-          "quote_hash": "4dcd3b655467b980a82840a33e79dfdab18b1375b3da06154a00295af3891ec7"
+          "field": "location",
+          "label": "官网自述地点",
+          "value": "Baltimore, Maryland, USA",
+          "source_id": "tcp_vc_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网投资方向",
+          "value": "巴尔的摩地区早期科技企业及特色技术应用",
+          "source_id": "tcp_vc_fund_strategy"
+        },
+        {
+          "field": "fund",
+          "label": "官网列出的基金",
+          "value": "Propel Baltimore Fund",
+          "source_id": "tcp_vc_fund_strategy"
+        },
+        {
+          "field": "investment_style",
+          "label": "官网自述投资方式",
+          "value": "主动少数股权投资，通常要求董事会观察员席位",
+          "source_id": "tcp_vc_fund_strategy"
         }
       ],
-      "summary": "The Avoca-related financing source names Ian Feeney and Andy Linder alongside “TCP Venture Capital.” The official TCP Venture Capital site reviewed here describes a Baltimore-based early-stage technology investor, but does not list those individuals or establish that it is the same entity named in the Avoca source.",
-      "coverage_note": "同名主体尚未完成核验。公开融资来源将 Ian Feeney、Andy Linder 与 TCP Venture Capital 放在 Avoca 的投资人/支持者语境中；tcp.vc 官网则描述一家以巴尔的摩为投资地域条件的科技基金，未列出这两人。未确认二者为同一主体前，不将该官网的团队、投资方向、业绩或联系方式写入本档案。",
-      "facts": [],
       "milestones": [],
       "track_record": [
         {
@@ -215256,8 +215694,42 @@
           "source_id": "FISRC-3b2454278fe6d93e"
         }
       ],
-      "contacts": [],
-      "last_verified_at": "2026-09-27"
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://tcp.vc/",
+          "url": "https://tcp.vc/",
+          "source_id": "tcp_vc_about"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "tcp_vc_about",
+          "source_url": "https://tcp.vc/",
+          "source_title": "TCP Venture Capital",
+          "source_content_hash": "735ab98752ed127cc778077f60cf013b26a2d8edb39287a2aaa74150c7d120f3",
+          "quote": "TCP Venture Capital is a Baltimore, Maryland-based early-stage technology focused venture capital firm. We partner with entrepreneurs to build great businesses. Please note that our focus is on unique technology applications; we do not invest in franchises, brick-and-mortar operations, or online retail sales.",
+          "quote_hash": "8c789b617510ab228275d47112be790c7609d74c352d43a7c2f51d12ee7059e4"
+        },
+        {
+          "source_id": "tcp_vc_fund_strategy",
+          "source_url": "https://tcp.vc/",
+          "source_title": "TCP Venture Capital",
+          "source_content_hash": "735ab98752ed127cc778077f60cf013b26a2d8edb39287a2aaa74150c7d120f3",
+          "quote": "The Propel Baltimore Fund makes investments in early-stage technology companies located in or willing to locate in Baltimore City. The Fund addresses the critical need for more early-stage capital in Baltimore City, encourages more entrepreneurial activity in the City, creates more high-paying jobs, and helps to realize Baltimore City&#x27;s full potential as a destination for growing businesses. What we look for Investment Criteria We&#x27;re investing in Baltimore&#x27;s best technology companies. Geography Located in Baltimore City or committed to headquartering in Baltimore City. Stage of Development Early revenue or have a product or service that can be evaluated for commercial readiness. Industry Focus High-growth technology companies (excluding bio-tech, medical device, and real estate). Business Plan High-growth, scalable, and capital efficient. Structure Typically convertible debt or preferred stock. Investment Duration Typically 5 years to exit or sale. Style Lead or value-added co-investor. Involvement Active minority investors; typically require a board observer seat.",
+          "quote_hash": "bf7d25567098f6d0cd220ed9c4a203ef5fd9975439a5bad038e7f4e4d5e7dd56"
+        },
+        {
+          "source_id": "FISRC-3b2454278fe6d93e",
+          "source_url": "https://www.linkedin.com/posts/ccheng805_were-thrilled-to-announce-that-capital-49-activity-7454614909348229121-9ih0",
+          "source_title": "Capital 49 Backs Avoca in $125M Series B Raise",
+          "source_content_hash": "0eedb637d7c86cdc",
+          "quote": "Ian Feeney and Andy Linder ( TCP Venture Capital )",
+          "quote_hash": "c2f9a7919228c737dc53c5f5a9eeaec651a224ea2d638fa089a02518b9e2d69b"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
     },
     "INV-f0839b8ee31e44": {
       "profile_type": "organization",

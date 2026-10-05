@@ -137,13 +137,50 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "集富亚洲 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "名称依据2026年官方更名公告；“JAFCO Asia”记录为历史品牌，当前主体名称使用JIF Capital。",
+      "summary": "JIF Capital官网于2026年3月11日公告，其由JAFCO Investment (Asia Pacific) Ltd.更名而来，历史品牌为“JAFCO Asia”；官网将其定位为面向亚洲的风险投资与成长投资平台，并说明总部位于新加坡。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "当前名称",
+          "value": "JIF Capital Ltd.",
+          "source_id": "jif_renaming_2026"
+        },
+        {
+          "field": "former_name",
+          "label": "更名前名称",
+          "value": "JAFCO Investment (Asia Pacific) Ltd.",
+          "source_id": "jif_renaming_2026"
+        },
+        {
+          "field": "former_brand",
+          "label": "历史品牌",
+          "value": "JAFCO Asia",
+          "source_id": "jif_renaming_2026"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资范围",
+          "value": "亚洲风险投资与成长投资",
+          "source_id": "jif_renaming_2026"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "新加坡",
+          "source_id": "jif_renaming_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-03-11",
+          "description": "JAFCO Asia正式更名为JIF Capital。",
+          "source_id": "jif_renaming_2026"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：开物纪 · 天使+轮 · 2026-03-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -153,6 +190,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "jif_renaming_2026",
+          "source_url": "https://www.jif.capital/news/p/jafco-asia-formally-renamed-jif-capital-reaffirms-leadership-continuity-and-regional-platform-stability",
+          "source_title": "JAFCO Asia Formally Renamed JIF Capital; Reaffirms Leadership Continuity and Regional Platform Stability",
+          "source_content_hash": "0ef160a6825ddcc6cae21b2f4ab5374b6c497038cee1840fca0200049c904df2",
+          "quote": "11 th Mar 2026 JIF Capital Ltd. (“JIF Capital”), formerly JAFCO Investment (Asia Pacific) Ltd. (“JAFCO Asia”), today formally announced its renaming to JIF Capital, marking the next phase of its development as an independent Asia-focused venture and growth investment platform. The firm confirmed that its investment team, country leadership and regional structure remain unchanged. JIF Capital will continue operating under the same investment philosophy, governance standards and fund mandates that have guided the platform over the past decades. JIF Capital is led by Chief Executive Officer Carmen Yuen, formerly a General Partner at Vertex Ventures Southeast Asia and India, and Managing Partner Koichi Saito, previously a General Partner at KK Fund. The regional leadership team includes: • Swee Ting Pan – Managing Director. With more than 18 years of investment experience, Swee Ting leads the firm’s Shanghai and Beijing activities and has delivered exits through U.S. IPOs, A-share IPOs and strategic trade sales across Internet, Fintech and Frontier Technology sectors. • Edward Lee – Managing Director. With over 15 years leading the investment team, Edward has shaped regional investment strategy and built high-impact portfolios across Artificial Intelligence, MedTech and Circular Energy. • Supriya Singh – Senior Director & Head of Investment in Southeast Asia and India. With 14 years of experience leading investments across India, Vietnam, Singapore, Indonesia and Malaysia, Supriya has spearheaded cross-border capital deployment aligned with regional fund mandates. She has worked closely with portfolio company AnyMind since 2017, supporting its acquisition of Pokkt in 2020 and leveraging the firm’s Japan network to contribute to its Tokyo Stock Exchange listing in March 2023. As part of this transition, the firm has undertaken a structured review of its regional operating model and governance framework, reaffirming its long-term mandate to deploy capital with discipline and insight to create durable value for limited partners across Asian markets. “The renaming to JIF Capital reflects continuity and institutional evolution,” said Carmen Yuen, Chief Executive Officer. “Our team, strategy and commitment to disciplined capital allocation remain unchanged.” “We remain committed to long-term partnerships with corporate leaders and institutional investors across Japan and the broader region,” said Koichi Saito, Managing Partner. “Governance, transparency and consistent regional execution continue to define our approach.” JIF Capital operates independently following its acquisition by Bee Alternatives Management Ltd. and remains headquartered in Singapore.",
+          "quote_hash": "9f70cc58926d0feec951da888d5518412620df70c2e1d3cf01a4846b274e9673"
+        },
+        {
           "source_id": "FISRC-3d10ec9bd5ef3ad4",
           "source_url": "https://news.pedaily.cn/202603/562002.shtml",
           "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
@@ -161,7 +206,7 @@
           "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

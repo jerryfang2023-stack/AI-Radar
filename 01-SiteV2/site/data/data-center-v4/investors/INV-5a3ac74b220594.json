@@ -121,30 +121,43 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "activity_only",
-      "sources": [
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网自述核验主体名称、早期科技风险投资类型和投资标准；不据此确认队列中未给出原始公告的任何具体交易。",
+      "summary": "TCP Venture Capital官网自述其位于美国马里兰州巴尔的摩，是面向早期科技企业的风险投资机构，重点支持特色技术应用和巴尔的摩地区企业；官网列有Propel Baltimore Fund，并介绍投资标准与方式。",
+      "facts": [
         {
-          "source_id": "FISRC-3b2454278fe6d93e",
-          "source_url": "https://www.linkedin.com/posts/ccheng805_were-thrilled-to-announce-that-capital-49-activity-7454614909348229121-9ih0",
-          "source_title": "Capital 49 Backs Avoca in $125M Series B Raise",
-          "source_content_hash": "0eedb637d7c86cdc",
-          "quote": "Ian Feeney and Andy Linder ( TCP Venture Capital )",
-          "quote_hash": "c2f9a7919228c737dc53c5f5a9eeaec651a224ea2d638fa089a02518b9e2d69b"
+          "field": "organization_type",
+          "label": "官网自述机构类型",
+          "value": "早期科技风险投资机构",
+          "source_id": "tcp_vc_about"
         },
         {
-          "source_id": "tcp_vc_home",
-          "source_url": "https://tcp.vc/",
-          "source_title": "TCP Venture Capital",
-          "source_content_hash": "be8f42441d531ac13d9dc89146a763255938fb47295b67c3c8a826884d46afbc",
-          "quote": "TCP Venture Capital is a Baltimore, Maryland-based early-stage technology focused venture capital firm.",
-          "quote_hash": "4dcd3b655467b980a82840a33e79dfdab18b1375b3da06154a00295af3891ec7"
+          "field": "location",
+          "label": "官网自述地点",
+          "value": "Baltimore, Maryland, USA",
+          "source_id": "tcp_vc_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网投资方向",
+          "value": "巴尔的摩地区早期科技企业及特色技术应用",
+          "source_id": "tcp_vc_fund_strategy"
+        },
+        {
+          "field": "fund",
+          "label": "官网列出的基金",
+          "value": "Propel Baltimore Fund",
+          "source_id": "tcp_vc_fund_strategy"
+        },
+        {
+          "field": "investment_style",
+          "label": "官网自述投资方式",
+          "value": "主动少数股权投资，通常要求董事会观察员席位",
+          "source_id": "tcp_vc_fund_strategy"
         }
       ],
-      "summary": "The Avoca-related financing source names Ian Feeney and Andy Linder alongside “TCP Venture Capital.” The official TCP Venture Capital site reviewed here describes a Baltimore-based early-stage technology investor, but does not list those individuals or establish that it is the same entity named in the Avoca source.",
-      "coverage_note": "同名主体尚未完成核验。公开融资来源将 Ian Feeney、Andy Linder 与 TCP Venture Capital 放在 Avoca 的投资人/支持者语境中；tcp.vc 官网则描述一家以巴尔的摩为投资地域条件的科技基金，未列出这两人。未确认二者为同一主体前，不将该官网的团队、投资方向、业绩或联系方式写入本档案。",
-      "facts": [],
       "milestones": [],
       "track_record": [
         {
@@ -152,8 +165,42 @@
           "source_id": "FISRC-3b2454278fe6d93e"
         }
       ],
-      "contacts": [],
-      "last_verified_at": "2026-09-27"
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://tcp.vc/",
+          "url": "https://tcp.vc/",
+          "source_id": "tcp_vc_about"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "tcp_vc_about",
+          "source_url": "https://tcp.vc/",
+          "source_title": "TCP Venture Capital",
+          "source_content_hash": "735ab98752ed127cc778077f60cf013b26a2d8edb39287a2aaa74150c7d120f3",
+          "quote": "TCP Venture Capital is a Baltimore, Maryland-based early-stage technology focused venture capital firm. We partner with entrepreneurs to build great businesses. Please note that our focus is on unique technology applications; we do not invest in franchises, brick-and-mortar operations, or online retail sales.",
+          "quote_hash": "8c789b617510ab228275d47112be790c7609d74c352d43a7c2f51d12ee7059e4"
+        },
+        {
+          "source_id": "tcp_vc_fund_strategy",
+          "source_url": "https://tcp.vc/",
+          "source_title": "TCP Venture Capital",
+          "source_content_hash": "735ab98752ed127cc778077f60cf013b26a2d8edb39287a2aaa74150c7d120f3",
+          "quote": "The Propel Baltimore Fund makes investments in early-stage technology companies located in or willing to locate in Baltimore City. The Fund addresses the critical need for more early-stage capital in Baltimore City, encourages more entrepreneurial activity in the City, creates more high-paying jobs, and helps to realize Baltimore City&#x27;s full potential as a destination for growing businesses. What we look for Investment Criteria We&#x27;re investing in Baltimore&#x27;s best technology companies. Geography Located in Baltimore City or committed to headquartering in Baltimore City. Stage of Development Early revenue or have a product or service that can be evaluated for commercial readiness. Industry Focus High-growth technology companies (excluding bio-tech, medical device, and real estate). Business Plan High-growth, scalable, and capital efficient. Structure Typically convertible debt or preferred stock. Investment Duration Typically 5 years to exit or sale. Style Lead or value-added co-investor. Involvement Active minority investors; typically require a board observer seat.",
+          "quote_hash": "bf7d25567098f6d0cd220ed9c4a203ef5fd9975439a5bad038e7f4e4d5e7dd56"
+        },
+        {
+          "source_id": "FISRC-3b2454278fe6d93e",
+          "source_url": "https://www.linkedin.com/posts/ccheng805_were-thrilled-to-announce-that-capital-49-activity-7454614909348229121-9ih0",
+          "source_title": "Capital 49 Backs Avoca in $125M Series B Raise",
+          "source_content_hash": "0eedb637d7c86cdc",
+          "quote": "Ian Feeney and Andy Linder ( TCP Venture Capital )",
+          "quote_hash": "c2f9a7919228c737dc53c5f5a9eeaec651a224ea2d638fa089a02518b9e2d69b"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

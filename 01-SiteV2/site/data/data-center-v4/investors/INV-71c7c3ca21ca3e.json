@@ -137,12 +137,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Metaplanet 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网确认该主体为东京上市公司并说明其Bitcoin Treasury主营定位；官网页面没有确认队列所指的任何具体创业投资关系，不将其描述为风险投资基金管理人。",
+      "summary": "Metaplanet官网将主体列为Metaplanet Inc.，东京证券交易所代码3350，并称其为公开上市的Bitcoin Treasury Company，以比特币作为核心储备资产。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网名称",
+          "value": "Metaplanet Inc.",
+          "source_id": "metaplanet_official_about"
+        },
+        {
+          "field": "listing",
+          "label": "官网列示证券代码",
+          "value": "Tokyo Stock Exchange: 3350; OTCQX: MTPLF",
+          "source_id": "metaplanet_official_about"
+        },
+        {
+          "field": "business",
+          "label": "官网自述主营定位",
+          "value": "公开上市的Bitcoin Treasury Company",
+          "source_id": "metaplanet_official_about"
+        },
+        {
+          "field": "treasury_asset",
+          "label": "官网披露核心储备资产",
+          "value": "Bitcoin",
+          "source_id": "metaplanet_official_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +175,24 @@
           "source_id": "FISRC-ed8df2c3d21fb938"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://metaplanet.jp/en/about",
+          "url": "https://metaplanet.jp/en/about",
+          "source_id": "metaplanet_official_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "metaplanet_official_about",
+          "source_url": "https://metaplanet.jp/en/about",
+          "source_title": "About | Vision, Mission & Strategy | Metaplanet",
+          "source_content_hash": "024d5b07dd5d0cb442a03d1957910ec86ac5fd244ec3f28a2603439de9e0ec14",
+          "quote": "Metaplanet Inc. (Tokyo Stock Exchange: 3350 / OTCQX: MTPLF) is Japan&#x27;s first and only publicly listed Bitcoin Treasury Company. The company leverages Bitcoin as its core treasury reserve asset",
+          "quote_hash": "e753031a7eebd16630e270fcbbd8f000576d67dd33eb7402de2d7b9168a6fab7"
+        },
         {
           "source_id": "FISRC-ed8df2c3d21fb938",
           "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
@@ -161,7 +202,7 @@
           "quote_hash": "3eaf37137bbf2e93fe23706845f4924135ac9dbedaa8912cdb760d52c8be7c19"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-05"
     }
   }
 }
