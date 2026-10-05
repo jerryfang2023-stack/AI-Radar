@@ -139,37 +139,57 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本条仅记录可核验的公开参投披露，不推断机构未披露的策略、完整投资组合或回报。",
-      "summary": "Eridu 官方融资公告将 Capricorn Investment Group 列入其 Series A 领投方。当前档案仅记录这笔可核验的公开参投信息，不补写未取得原文支持的机构策略或完整组合。",
+      "coverage_status": "researched",
+      "coverage_note": "简介与服务范围依据机构官网自述，不延伸推断其投资组合或当前资产规模。",
+      "summary": "Capricorn Investment Group 自述为可持续投资平台，服务家庭、基金会和机构投资者，并提供 OCIO 服务及部分影响力投资产品。",
       "facts": [
         {
-          "field": "track_record_scope",
-          "label": "公开投资披露",
-          "value": "Eridu 官方公告将 Capricorn Investment Group 列入其 Series A 领投方。",
-          "source_id": "eridu"
+          "field": "platform_type",
+          "label": "平台定位",
+          "value": "可持续投资平台",
+          "source_id": "capricorn_about"
+        },
+        {
+          "field": "clients",
+          "label": "服务对象",
+          "value": [
+            "家庭",
+            "基金会",
+            "机构投资者"
+          ],
+          "source_id": "capricorn_about"
+        },
+        {
+          "field": "services",
+          "label": "服务与产品",
+          "value": "全服务外包首席投资官（OCIO）及部分影响力投资产品",
+          "source_id": "capricorn_about"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Eridu 官方公告将 Capricorn Investment Group 列入 Series A 领投方。",
-          "source_id": "eridu"
-        },
-        {
           "description": "融资来源记录：Eridu · A轮 · 2026-03-10 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6d4642fdc4a2457c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://capricornllc.com/about/",
+          "url": "https://capricornllc.com/about/",
+          "source_id": "capricorn_about"
+        }
+      ],
       "sources": [
         {
-          "source_id": "eridu",
-          "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
-          "source_title": "Eridu Emerges from Stealth with Over $200M in Funding To Break Through the Network Wall and Unlock Faster AI &#8211; Eridu &#8211; Faster AI",
-          "source_content_hash": "202be508dc6ef6408937696d2a107814ef1ee486ab6bb150fcf28a5bcc3210ea",
-          "quote": "Series A round led by Socratic Partners, John Doerr, Hudson River Trading, Capricorn Investment Group and Matter Venture Partners, with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others. “The disruptive demands of AI create a",
-          "quote_hash": "fd04ce31f204558f205281f86ed3063aa453654b7c86baa9987a412a892eadbe"
+          "source_id": "capricorn_about",
+          "source_url": "https://capricornllc.com/about/",
+          "source_title": "About Capricorn Investment Group",
+          "source_content_hash": "364a952e48cfdfa3e5d2acbf6c5b644ddbe82680d785ad6bc8fc8a52f2f2faa0",
+          "quote": "Capricorn is a sustainable investment platform serving families, foundations, and institutional investors for 25 years as a full-service Outsourced Chief Investment Officer and through select impact investment products.",
+          "quote_hash": "2b6dfb17f269c311c717a390df50cf350ab4ff83b3fbbca39914527930df73a4"
         },
         {
           "source_id": "FISRC-6d4642fdc4a2457c",
@@ -180,7 +200,7 @@
           "quote_hash": "810c4f6e9b19faf2a3da39aa86063339eafbb50c384b80245e33932489493c50"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

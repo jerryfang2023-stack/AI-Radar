@@ -161,12 +161,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "京国瑞 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据北京市政府门户2024年11月8日关于京国瑞基金的报道，描述京国瑞当时的管理人身份和机构定位。",
+      "summary": "北京市政府门户网站2024年报道将北京京国瑞投资管理有限公司称为北京国管旗下的PE投资平台，并说明京国瑞担任京国瑞基金管理人，管理基金面向市级重大项目和符合首都功能定位的市场化项目。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "报道所列管理人主体",
+          "value": "北京京国瑞投资管理有限公司",
+          "source_id": "jingguorui_identity"
+        },
+        {
+          "field": "fund_role",
+          "label": "基金角色",
+          "value": "京国瑞基金的管理人",
+          "source_id": "jingguorui_business"
+        },
+        {
+          "field": "parent_group",
+          "label": "所属平台",
+          "value": "北京国管旗下PE投资平台（2024年政府报道表述）",
+          "source_id": "jingguorui_business"
+        },
+        {
+          "field": "managed_fund_focus",
+          "label": "基金投资范围",
+          "value": "市级重大项目及符合首都功能定位的市场化项目",
+          "source_id": "jingguorui_business"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -180,6 +205,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "jingguorui_identity",
+          "source_url": "https://www.beijing.gov.cn/gate/big5/www.beijing.gov.cn/ywdt/gzdt/202411/t20241108_3937086.html",
+          "source_title": "市區兩級投資平臺合作成立新基金 首期規模10億元全部可投資金額投于經開區_部門動態_首都之窗_北京市人民政府門戶網站",
+          "source_content_hash": "6ce0d965d87b3e2e5d5303a22c6bbbe76f4e66ea0105b24283b1ae67d2d14416",
+          "quote": "據悉，京國瑞基金由北京經開區政府投資引導基金、北京國有資本運營管理有限公司（以下簡稱“北京國管”）、北京京國瑞投資管理有限公司（以下簡稱“京國瑞”）共同出資設立，首期規模10億元，全部可投資金額投于經開區。",
+          "quote_hash": "f5d578e6da6025ab4c68b474ccca00327a4ca6631a4642d65c1fba274bdb218c"
+        },
+        {
+          "source_id": "jingguorui_business",
+          "source_url": "https://www.beijing.gov.cn/gate/big5/www.beijing.gov.cn/ywdt/gzdt/202411/t20241108_3937086.html",
+          "source_title": "市區兩級投資平臺合作成立新基金 首期規模10億元全部可投資金額投于經開區_部門動態_首都之窗_北京市人民政府門戶網站",
+          "source_content_hash": "6ce0d965d87b3e2e5d5303a22c6bbbe76f4e66ea0105b24283b1ae67d2d14416",
+          "quote": "該基金由京國瑞擔任管理人，京國瑞是北京國管旗下的PE投資平臺，具有豐富的投資管理經驗。其管理的基金主要投資于市委、市政府重大項目及符合首都功能定位、滿足投資要求的市場化項目。",
+          "quote_hash": "3b7bd5f535f2b0b58bfb2aab738ed6d29fcba820ccdd1f54044db693e9688037"
+        },
         {
           "source_id": "FISRC-ca5c9f62e4d3f2f3",
           "source_url": "https://news.pedaily.cn/202607/566303.shtml",
@@ -197,7 +238,7 @@
           "quote_hash": "b171e18df3cd6d12241ef96aee99b3091206f13fae2a4257a61623da16fd98ce"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

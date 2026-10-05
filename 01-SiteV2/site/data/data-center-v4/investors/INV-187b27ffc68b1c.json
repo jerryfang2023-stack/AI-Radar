@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Shinhan Venture Investment 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "页面所载排名属于公司对2010年代历史的表述，不代表当前排名。",
+      "summary": "Shinhan Venture Investment 官网历史页记录，机构于2021年更名为该名称；官网将其在2010年代的行业位置描述为第15位。",
+      "facts": [
+        {
+          "field": "name_change",
+          "label": "名称变更",
+          "value": "官网历史页记录2021年更名为 Shinhan Venture Investment",
+          "source_id": "shinhan_name_change"
+        },
+        {
+          "field": "historical_industry_position",
+          "label": "历史行业位置",
+          "value": "官网自述该机构在2010年代发展至行业第15位；为历史自述",
+          "source_id": "shinhan_history"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +163,32 @@
           "source_id": "FISRC-2967c8cb86b79dd2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://shinhanvc.com/en/aboutus/history",
+          "url": "https://shinhanvc.com/en/aboutus/history",
+          "source_id": "shinhan_name_change"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "shinhan_name_change",
+          "source_url": "https://shinhanvc.com/en/aboutus/history",
+          "source_title": "History : Shinhan Venture Investment",
+          "source_content_hash": "3135fae88545d84b0f201b50050c6a6c45575ca5ef37706d48cc4a749795b730",
+          "quote": "2021 Full fledged steps of Shinhan Venture Investment. Change Company Name to Shinhan Venture Investment.",
+          "quote_hash": "df700ea5410dad7c221692accc07522813f2a7cd16d959135f0cb6efe7ed1b4b"
+        },
+        {
+          "source_id": "shinhan_history",
+          "source_url": "https://shinhanvc.com/en/aboutus/history",
+          "source_title": "History : Shinhan Venture Investment",
+          "source_content_hash": "3135fae88545d84b0f201b50050c6a6c45575ca5ef37706d48cc4a749795b730",
+          "quote": "2010’s Venture capital has grown to 15th place in the industry with extensive investment experience.",
+          "quote_hash": "bfdbf25800bb88b5d4021a2e9e7274fcbc42b50031abca9a3077027f3d8abd77"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
@@ -161,7 +198,7 @@
           "quote_hash": "635226e5bbc13dc2401a8d1b21681f6e106ffa66c6dbd898c4b733e9f4fc2dd6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

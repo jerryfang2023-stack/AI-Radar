@@ -392,34 +392,49 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "公开融资报道列出其参与光子芯片公司 Olix 的融资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "简介依据 Hudson River Trading 官方 Ventures 页面；这里只记录该页面明确披露的投资方向。",
+      "summary": "Hudson River Trading 的官方 Ventures 页面说明，其投资团队面向金融与科技领域中解决独特问题的成长型公司进行战略投资。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资重点",
+          "value": "金融与科技领域的成长型公司",
+          "source_id": "hrt_ventures"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "参与 Olix Computing 融资。",
-          "source_id": "FISRC-a6c18c7d2adec363"
-        },
-        {
           "description": "融资来源记录：Vals · A轮 · 2026-09-19 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-404aba285b240b86"
+        },
+        {
+          "description": "融资来源记录：Olix Computing Ltd. · B轮 · 2026-08-03 · 本轮参投 · $312 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a6c18c7d2adec363"
         },
         {
           "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮参投（2025年12月5亿美元轮次） · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ec090e2bf0f8f6e9"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.hudsonrivertrading.com/ventures/",
+          "url": "https://www.hudsonrivertrading.com/ventures/",
+          "source_id": "hrt_ventures"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-a6c18c7d2adec363",
-          "source_url": "https://www.techtimes.com/articles/322816/20260803/olix-raises-312m-photonic-ai-chip-that-ditches-hbm-britains-biggest-semiconductor-bet.htm",
-          "source_title": "Olix Raises $312M for Photonic AI Chip That Ditches HBM: Britain's Biggest Semiconductor Bet",
-          "source_content_hash": "cfce99b37aac7c782c29b7069a31538c9a88c765020ef8bc270050a0a8894e63",
-          "quote": "t instead of copper is the way to fix it. The round was led by New York venture firm Fundomo and drew in Arm, Hudson River Trading, and Netflix co-founder Reed Hastings alongside the UK government's Sovereign AI Fund. Existing backers &mdash; Hummingbird Ventures, Crane, Plural, Creandum, Phoenix Court, and Transition &mdash; all expanded their positions. Al",
-          "quote_hash": "1cd24c2989d39a641d7fe580c6a6c0a017759ae4b5b89cd9a47678bdf201986e"
+          "source_id": "hrt_ventures",
+          "source_url": "https://www.hudsonrivertrading.com/ventures/",
+          "source_title": "Ventures | Hudson River Trading",
+          "source_content_hash": "218a73935cf2285e9c3dfedc8a15dabc6e5e622a296054b66ac7cb073bc56d0a",
+          "quote": "HRT Ventures is focused on making strategic investments in growth companies solving unique problems across the financial and technology landscapes.",
+          "quote_hash": "fcc12805a5db80ec3c7936ce8b1d553d157478a2e79d53ce2940608a068cad3f"
         },
         {
           "source_id": "FISRC-404aba285b240b86",
@@ -430,6 +445,14 @@
           "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
         },
         {
+          "source_id": "FISRC-a6c18c7d2adec363",
+          "source_url": "https://www.techtimes.com/articles/322816/20260803/olix-raises-312m-photonic-ai-chip-that-ditches-hbm-britains-biggest-semiconductor-bet.htm",
+          "source_title": "Olix Raises $312M for Photonic AI Chip That Ditches HBM: Britain's Biggest Semiconductor Bet",
+          "source_content_hash": "5a13ee222d9a2ed6",
+          "quote": "The round was led by New York venture firm Fundomo and drew in Arm, Hudson River Trading, and Netflix co-founder Reed Hastings",
+          "quote_hash": "a7fa871888210b71435b8557a41984a31510b8aa1ed30c0033b5014e5149109b"
+        },
+        {
           "source_id": "FISRC-ec090e2bf0f8f6e9",
           "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
           "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
@@ -438,11 +461,7 @@
           "quote_hash": "1dfff416174e07a43db5f6f5b53190faadafe8a50e93dc41fbc1bf09edb62f85"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

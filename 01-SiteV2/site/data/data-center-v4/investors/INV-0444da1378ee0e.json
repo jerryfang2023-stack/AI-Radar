@@ -193,12 +193,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "国开金融 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "主体关系、成立时间和业务定位据国家开发银行官方页面自述。",
+      "summary": "国家开发银行官网介绍，国开金融有限责任公司于2009年8月成立，是国开行全资子公司，主要从事投资和投资管理，并通过基金、股权投资支持企业。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2009年8月",
+          "source_id": "cdb_finance"
+        },
+        {
+          "field": "parent_group",
+          "label": "所属集团",
+          "value": "国家开发银行全资子公司",
+          "source_id": "cdb_finance"
+        },
+        {
+          "field": "business",
+          "label": "业务范围",
+          "value": "投资和投资管理；通过基金、股权投资支持企业",
+          "source_id": "cdb_finance"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -206,8 +225,24 @@
           "source_id": "FISRC-879cc82306af58a1"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.cdb.com.cn/cpfw/gsqykh/zytz/",
+          "url": "https://www.cdb.com.cn/cpfw/gsqykh/zytz/",
+          "source_id": "cdb_finance"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cdb_finance",
+          "source_url": "https://www.cdb.com.cn/cpfw/gsqykh/zytz/",
+          "source_title": "国家开发银行",
+          "source_content_hash": "347334d749fd2bdb4adf476af1e0458d6639d23e2febddb7d0522efd6ea011d1",
+          "quote": "国开金融有限责任公司（以下简称“国开金融”）成立于2009年8月，是国家开发银行经国务院批准设立的全资子公司，主要从事投资和投资管理业务。国开金融坚持“国家战略性、开行协同性、机构可持续性”发展原则，主要通过基金、股权投资等方式，支持关乎国家经济命脉、具有行业领先地位、具备长期可持续发展能力的优质企业。",
+          "quote_hash": "347334d749fd2bdb4adf476af1e0458d6639d23e2febddb7d0522efd6ea011d1"
+        },
         {
           "source_id": "FISRC-879cc82306af58a1",
           "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
@@ -217,7 +252,7 @@
           "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

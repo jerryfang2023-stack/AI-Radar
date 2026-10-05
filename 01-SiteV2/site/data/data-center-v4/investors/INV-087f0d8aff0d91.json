@@ -122,12 +122,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "农银国际 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "此处的主体关系、服务范围和经营数据均据中国农业银行2023年度报告；财务数值只代表2023年度口径。",
+      "summary": "中国农业银行2023年年报披露，农银国际控股有限公司于2009年在香港成立，由农行全资持有，提供直接投资及资产管理等服务，并在内地从事私募基金管理和投资业务。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2009年11月在香港成立",
+          "source_id": "abci_2023"
+        },
+        {
+          "field": "parent_group",
+          "label": "所属集团",
+          "value": "中国农业银行持股100%（2023年年报表述）",
+          "source_id": "abci_2023"
+        },
+        {
+          "field": "business",
+          "label": "业务范围",
+          "value": "香港业务包括资产管理、直接投资等；内地业务包括私募基金管理、财务顾问和投资",
+          "source_id": "abci_2023"
+        },
+        {
+          "field": "financial_position_2023",
+          "label": "2023年财务数据",
+          "value": "2023年末总资产469.02亿港元、净资产104.82亿港元，全年净利润1.49亿港元",
+          "source_id": "abci_2023"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -138,6 +163,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "abci_2023",
+          "source_url": "https://www.abchina.com.cn/cn/AboutABC/investor_relations/announcements/h-announcement/202403/P020240328741002137622.pdf",
+          "source_title": "中国农业银行股份有限公司2023年度报告",
+          "source_content_hash": "0a25b873a567c162776621ec87a665d370fc6ca63ec7c49e04e1bc20cebc9700",
+          "quote": "农银国际控股有限公司于2009年11月在香港成立，股本港币41.13亿元，本行持股100%。农银国际在香港可从事上市保荐承销、债券发行承销、财务顾问、资产管理、直接投资、机构销售、证券经纪、证券咨询等全方位、一体化的金融服务；在内地可从事私募基金管理、财务顾问、投资等业务。截至2023年末，农银国际总资产469.02亿港元，净资产104.82亿港元，全年实现净利润1.49亿港元。",
+          "quote_hash": "0a25b873a567c162776621ec87a665d370fc6ca63ec7c49e04e1bc20cebc9700"
+        },
+        {
           "source_id": "FISRC-cd5b0b79e0cacd63",
           "source_url": "https://news.pedaily.cn/202503/547159.shtml",
           "source_title": "驰芯半导体获近2亿A轮融资，兴湘资本领投_投资界",
@@ -146,7 +179,7 @@
           "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

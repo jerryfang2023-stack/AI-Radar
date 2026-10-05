@@ -191,14 +191,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "张江高科 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "全部金额、项目数及上市统计均明确对应公司披露的截至2021年12月31日口径，不代表当前投资数据。",
+      "summary": "张江高科年报披露，截至2021年末公司累计产业投资77亿元，采用直投与参股基金相结合的方式，披露了对应项目数和资金撬动规模。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "直投、基金和895孵化器相结合",
+          "source_id": "zhangjiang_2021"
+        },
+        {
+          "field": "investment_total_as_of_2021",
+          "label": "截至2021年底累计产业投资",
+          "value": "77亿元；其中直投49个项目、投资17亿元；参股子基金23个，认缴60亿元并撬动537亿元",
+          "source_id": "zhangjiang_2021"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "年报披露截至2021年12月31日，“直投+基金”累计上市43家、拟上市23家；属于该日期的公司披露口径。",
+          "source_id": "zhangjiang_2021"
+        },
         {
           "description": "融资来源记录：格通智联 · Pre-A轮 · 2026-08-25 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a3446f702110142"
@@ -210,6 +227,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "zhangjiang_2021",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2022-05-12/1213323913.PDF",
+          "source_title": "上海张江高科技园区开发股份有限公司",
+          "source_content_hash": "9d3552aec23bd01d54646ae0321317d3f4fda5c8274ec0ead81841475e962f21",
+          "quote": "全方位融入产业链和产业生态，以“直投+基金+895孵化器”的方式，聚合市场资源助推产业发展。截至 2021 年 12 月 31 日，张江高科累计产业投资已达 77 亿元，其中直投项目 49 个，投资金额 17 亿元；参股投资的子基金 23 个，认缴出资 60 亿，撬动了 537 亿的资金规模；直投在张江的企业有 29 家，通过基金投资在张江的企业有 45 家。“直投+基金”累计已上市 43 家，拟上市 23 家，其中科创板上市企业有 6 家、主板 12 家、创业板 14 家、新三板 4 家、境外 7 家。",
+          "quote_hash": "9d3552aec23bd01d54646ae0321317d3f4fda5c8274ec0ead81841475e962f21"
+        },
         {
           "source_id": "FISRC-2a3446f702110142",
           "source_url": "https://news.pedaily.cn/202608/568060.shtml",
@@ -227,7 +252,7 @@
           "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

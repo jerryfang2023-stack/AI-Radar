@@ -369,12 +369,44 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "华民投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "登记备案与机构定位均为华民投官网自述；不引用该页面中的荣誉排名作为独立核实事实。",
+      "summary": "华民投官网介绍其围绕战略新兴产业开展股权投资，采用产业基金与策略基金并举、投资与投行业务协同的模式，并称已在中国证券投资基金业协会登记备案。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "战略新兴产业股权投资",
+          "source_id": "huamin_about"
+        },
+        {
+          "field": "fund_types",
+          "label": "基金类型",
+          "value": [
+            "产业基金",
+            "策略基金"
+          ],
+          "source_id": "huamin_about"
+        },
+        {
+          "field": "registration",
+          "label": "备案信息",
+          "value": "官网自述已在中国证券投资基金业协会登记备案",
+          "source_id": "huamin_about"
+        },
+        {
+          "field": "offices",
+          "label": "办公室",
+          "value": [
+            "北京",
+            "上海",
+            "深圳"
+          ],
+          "source_id": "huamin_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -390,8 +422,24 @@
           "source_id": "FISRC-4782a6093d519a4d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://people-capital.cn/",
+          "url": "https://people-capital.cn/",
+          "source_id": "huamin_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "huamin_about",
+          "source_url": "https://people-capital.cn/",
+          "source_title": "华民投官网 - 华民股权投资基金管理有限公司",
+          "source_content_hash": "d5fb14f4f1459a627d1d2c6d232ee450f9cb91e2e9c84c92e7beff41f43f70e3",
+          "quote": "华民投广泛延揽优质项目，链接资本市场和上市公司，围绕战略新兴产业开展股权投资，以产业基金与策略基金并举，投资与投行业务齐动的创新运营模式，成长为国内主流投资机构。华民投在中国证券投资基金业协会的登记备案，并在北京、上海、深圳均设有办公室。",
+          "quote_hash": "b2e33c4fdf45ca92bf454ddadb473b990e59a87e39a3128adc29f84d428745d1"
+        },
         {
           "source_id": "FISRC-c0f4b27988fd5315",
           "source_url": "https://feng.ifeng.com/c/8wqBBl0sp3L",
@@ -417,7 +465,7 @@
           "quote_hash": "d6f3ed259dfbad2eb694eefadede8fe5ca28f642094e69dbf6e0d038d2bf81a5"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

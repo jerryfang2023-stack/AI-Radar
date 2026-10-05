@@ -139,10 +139,41 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sorin Investments 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "档案根据一篇官网投资文章及其AIF页脚信息整理；基金名称、类别和管理人仅说明该页列示内容，不推断其他法律主体之间更广泛的关系或完整投资策略。",
+      "summary": "Sorin Investments 官网文章披露其与 Aivar 合作建设面向企业的全球 AI 服务平台；文章所列AIF信息为 Sorin Trust、Sorin Investment Fund，管理人为 Sorin Advisors LLP。",
+      "facts": [
+        {
+          "field": "disclosed_investment_activity",
+          "label": "官网披露的合作",
+          "value": "Sorin Investments 表示与 Aivar 合作建设面向企业的全球AI服务平台",
+          "source_id": "sorin_aivar"
+        },
+        {
+          "field": "aif_name_on_page",
+          "label": "页面所列AIF名称",
+          "value": "Sorin Trust",
+          "source_id": "sorin_aif_details"
+        },
+        {
+          "field": "scheme_name_on_page",
+          "label": "页面所列计划名称",
+          "value": "Sorin Investment Fund",
+          "source_id": "sorin_aif_details"
+        },
+        {
+          "field": "aif_category_on_page",
+          "label": "页面所列AIF类别",
+          "value": "Category II",
+          "source_id": "sorin_aif_details"
+        },
+        {
+          "field": "manager_name_on_page",
+          "label": "页面所列管理人名称",
+          "value": "Sorin Advisors LLP",
+          "source_id": "sorin_aif_details"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +181,32 @@
           "source_id": "FISRC-ee4b884adb0877ed"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.sorininvestments.com/insights/why-we-invested-in-aivar-innovations",
+          "url": "https://www.sorininvestments.com/insights/why-we-invested-in-aivar-innovations",
+          "source_id": "sorin_aivar"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sorin_aivar",
+          "source_url": "https://www.sorininvestments.com/insights/why-we-invested-in-aivar-innovations",
+          "source_title": "Why We Invested in Aivar Innovations | Sorin Investments",
+          "source_content_hash": "ad81791c937b2498abd021b08f7c83ac4706567a19939ec069dc45efc95a3db2",
+          "quote": "We at Sorin Investments are excited to partner with Aivar as they build a global AI services platform focused on real, production-grade enterprise outcomes.",
+          "quote_hash": "75bb6e294b44e1cb8d81a40278a776d1a3de067aa866c6881775c3f9d89a4524"
+        },
+        {
+          "source_id": "sorin_aif_details",
+          "source_url": "https://www.sorininvestments.com/insights/why-we-invested-in-aivar-innovations",
+          "source_title": "Why We Invested in Aivar Innovations | Sorin Investments",
+          "source_content_hash": "ad81791c937b2498abd021b08f7c83ac4706567a19939ec069dc45efc95a3db2",
+          "quote": "AIF Details AIF Name: Sorin Trust Scheme Name: Sorin Investment Fund AIF Category: Category II SEBI Reg. No.: IN/AIF2/21-22/1015 Manager Name: Sorin Advisors LLP.",
+          "quote_hash": "f8eec2795f13c0d797ceba5f1b994b2244eb70a1bb1aa742519238dce7e4b162"
+        },
         {
           "source_id": "FISRC-ee4b884adb0877ed",
           "source_url": "https://www.cybernewscentre.com/ai-startup-indias-aivar-raises-4-6m-for-enterprise-ai-adoption-2/",
@@ -161,7 +216,7 @@
           "quote_hash": "cf323e641be5de730b7ba44647705bd8016d694fd85a7d9c6c3fb58aa8f47fec"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }
