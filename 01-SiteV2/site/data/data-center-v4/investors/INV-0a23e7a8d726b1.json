@@ -137,21 +137,56 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Coherent 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "summary": "Coherent投资者关系官网确认Coherent Corp.主体；Eliyan官方融资公告将Coherent列入该轮战略投资参与方。本档只记录这一项被投企业公告。",
+      "coverage_note": "记录的是公司参与一次战略融资的公开披露，不据此把Coherent描述为独立风险投资基金。",
+      "facts": [
+        {
+          "field": "issuer_identity",
+          "label": "公司主体",
+          "value": "Coherent Corp.",
+          "source_id": "coherent_ir"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Eliyan官方公告将Coherent列入其战略投资参与者。",
+          "source_id": "coherent_round"
+        },
         {
           "description": "融资来源记录：Eliyan Corporation · 战略融资 · 2026-01-28 · 本轮参投 · $50 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5618afd8046eeb4f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资者关系",
+          "value": "Coherent Corp.投资者关系",
+          "url": "https://ir.coherent.com/",
+          "source_id": "coherent_ir"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "coherent_ir",
+          "source_url": "https://ir.coherent.com/",
+          "source_title": "Investor Relations | Coherent Corp.",
+          "source_content_hash": "7d08b1886e083cdbb1d5fc043d6498b67ca7372e459521c1fe34d9a6bab25107",
+          "quote": "Investor Relations | Coherent Corp.",
+          "quote_hash": "9615d37c405159e1189494f8717f7cef4c983310e5c06339eef38ebec59ae9c2"
+        },
+        {
+          "source_id": "coherent_round",
+          "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+          "source_title": "Eliyan Secures $50 Million in Strategic Investments from Leading Hyperscalers and AI Infrastructure Providers to Accelerate Scalable AI Systems - Eliyan",
+          "source_content_hash": "11a719573d90d41fdcec01ceddc607ab194b94e5d8a0c7b0350c7d9d8252f4fc",
+          "quote": "including AMD, Arm, Coherent, and Meta",
+          "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
+        },
         {
           "source_id": "FISRC-5618afd8046eeb4f",
           "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
@@ -161,7 +196,7 @@
           "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

@@ -191,14 +191,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "慕华科创 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "清华校友三创大赛页面介绍慕华科创为科技产业投资平台，说明其发起关系、关注行业并列举部分已投企业。",
+      "coverage_note": "机构定位、发起关系和行业方向为该清华平台页面的公开介绍；企业列表按原文作为选列案例，不代表完整组合。",
+      "facts": [
+        {
+          "field": "institution_role",
+          "label": "机构定位",
+          "value": "科技产业投资平台",
+          "source_id": "muhua_origin"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "关注行业",
+          "value": "新能源及新能源车、半导体、人工智能",
+          "source_id": "muhua_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "该页面列出网易有道、哪吒汽车、Deepway、地平线等代表性已投企业。",
+          "source_id": "muhua_portfolio"
+        },
         {
           "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 本轮参投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a4dbd49c64cb5834"
@@ -210,6 +227,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "muhua_origin",
+          "source_url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/14",
+          "source_title": "清华校友三创大赛",
+          "source_content_hash": "c70afcf57d37c719843f827a74c8ea6d2ba921b1b383acdfbb7ee96911a67dee",
+          "quote": "科技产业投资平台",
+          "quote_hash": "2f3d930ad4f13ca1919e5aa3bff729eaa992548c3d016111783604d0b1068b8e"
+        },
+        {
+          "source_id": "muhua_focus",
+          "source_url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/14",
+          "source_title": "清华校友三创大赛",
+          "source_content_hash": "c70afcf57d37c719843f827a74c8ea6d2ba921b1b383acdfbb7ee96911a67dee",
+          "quote": "专注于新能源及新能源车、半导体、人工智能等行业的创新发展。",
+          "quote_hash": "558cc94afa546ce75381b83b005d99914c727fcc56e1e42feaffa41cfb3bd913"
+        },
+        {
+          "source_id": "muhua_portfolio",
+          "source_url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/14",
+          "source_title": "清华校友三创大赛",
+          "source_content_hash": "c70afcf57d37c719843f827a74c8ea6d2ba921b1b383acdfbb7ee96911a67dee",
+          "quote": "已投代表企业包括网易有道、哪吒汽车、Deepway、地平线、镁佳科技",
+          "quote_hash": "dbeb7caa137f95358887e26876051a8acadcb746cb82639b14921f6acdda9899"
+        },
         {
           "source_id": "FISRC-a4dbd49c64cb5834",
           "source_url": "https://news.pedaily.cn/202607/565779.shtml",
@@ -227,7 +268,7 @@
           "quote_hash": "c339f97068fae4fed428375d7d7d2247ab186257c87a3dc89b1ef9e256c737f3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

@@ -222,31 +222,66 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "参投记录来自被投企业融资报道及投资行业媒体，完整基金信息未核实。",
-      "summary": "智象未来融资披露将合肥产投列为其投资方；投中网称该机构参与早期融资并在后续轮次继续跟投。本档只汇总公开融资案例，不补写未经确认的法定主体或完整背景。",
-      "facts": [],
+      "summary": "中国货币网收录合肥市产业投资控股（集团）有限公司2024年度报告页面；合肥高新创业投资管理合伙企业发布的融资消息把“合肥产投”列为智象未来B轮参与方。本档只记录可核的主体索引和这项公开融资案例。",
+      "coverage_note": "集团名称与融资报道简称一致；资料只覆盖一项可查投资披露，不代表集团完整投资组合。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "报告主体",
+          "value": "合肥市产业投资控股（集团）有限公司",
+          "source_id": "hf_group_report"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "智象未来融资报道披露合肥产投早期领投并在后续融资继续跟投。",
+          "description": "合肥高投发布的融资消息将合肥产投列为智象未来B轮融资参与机构。",
+          "source_id": "hfgt_round"
+        },
+        {
+          "description": "融资来源记录：智象未来 · 轮次未披露 · 2026-04-16 · 本轮参投 · 5亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e34ca2608b11a237"
         },
         {
-          "description": "智象未来 B 轮融资公告列合肥产投为参与机构之一。",
+          "description": "融资来源记录：智象未来 · 历史轮次未披露 · B轮参与机构。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9670ee7c1fec7480"
         },
         {
-          "description": "智象未来 C 轮报道列合肥产投为持续加注的老股东。",
+          "description": "融资来源记录：智象未来 · 历史轮次未披露 · 老股东持续加注。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d4811d701a7c9af"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "年度报告索引",
+          "value": "中国货币网年度报告页面",
+          "url": "https://www.chinamoney.com.cn/chinese/cwbg/20250429/3103659.html",
+          "source_id": "hf_group_report"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hf_group_report",
+          "source_url": "https://www.chinamoney.com.cn/chinese/cwbg/20250429/3103659.html",
+          "source_title": "合肥市产业投资控股(集团)有限公司2024年年度报告_中国货币网",
+          "source_content_hash": "e69b3ff568ce38a1fb46f640099a38221f1c3c8ad49a5baf9a0af50615068850",
+          "quote": "合肥市产业投资控股(集团)有限公司2024年年度报告",
+          "quote_hash": "e6ee387c4907802eb44affde06cc47dcb1c98d8d22169a9e739c8402f5eff44c"
+        },
+        {
+          "source_id": "hfgt_round",
+          "source_url": "https://www.hfgxt.com.cn/index.php?a=show&c=content&id=3131",
+          "source_title": "超5亿元融资！智象未来完成B轮融资-企业新闻-新闻资讯-合肥高新创业投资管理合伙企业（有限合伙）",
+          "source_content_hash": "8bc3ef7257454ddb71599c7ea47d860aca24bd0cefa84c787bfa81851144b773",
+          "quote": "合肥产投、兴泰创投、合肥高投等头部投资机构和国资机构联合参与",
+          "quote_hash": "6b6c5388b45e6f4c7eeec69ff3ffc1755fcf26a29d0ebc263ee1cb765405d2a9"
+        },
         {
           "source_id": "FISRC-e34ca2608b11a237",
           "source_url": "https://www.chinaventure.com.cn/news/113-20260723-392410.html",
           "source_title": "首发｜超20家机构，投了一家“世界模型”独角兽 | 投中网",
-          "source_content_hash": "c0e5123dfc0e32b748f2f60a6528a5fc25ec51bc5ef6a1a60b07b03626e715ce",
+          "source_content_hash": "e4d815a9ef427515",
           "quote": "早在2024年，公司便获得由合肥产投、安徽省人工智能母基金领投的A轮融资，两家机构又在今年继续跟投；此外，在此前融资中，智象未来还引入了安徽省产业投资集团、兴泰集团、合肥高投。",
           "quote_hash": "fa31d9d1d4e32fba44ce5d30a1408ad17d843a6c77cc340d54a9aeb3ad5fe892"
         },
@@ -254,24 +289,20 @@
           "source_id": "FISRC-9670ee7c1fec7480",
           "source_url": "https://hfgxt.com.cn/index.php?a=show&c=content&id=3131",
           "source_title": "超5亿元融资！智象未来完成B轮融资-企业新闻-新闻资讯-合肥高新创业投资管理合伙企业（有限合伙）",
-          "source_content_hash": "8bc3ef7257454ddb71599c7ea47d860aca24bd0cefa84c787bfa81851144b773",
+          "source_content_hash": "9b3603000321e253",
           "quote": "4月15日，合肥高新区投资平台合肥高投投资企业智象未来（合肥）信息技术有限公司（简称“智象未来”）宣布完成超5亿元B轮融资，本轮融资由东方富海、峰华资本、安徽省产投、华安嘉业、合肥产投、兴泰创投、合肥高投等头部投资机构和国资机构联合参与。",
           "quote_hash": "de0c10abaf7f677dac65ec33c373785963c0a4250b2163affb6518bde3f24c4e"
         },
         {
           "source_id": "FISRC-9d4811d701a7c9af",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
-          "source_title": "智象未来完成15亿元C轮融资，三个月融三轮_新浪财经_新浪网",
-          "source_content_hash": "bebe58667e5f3aeae2a4a4e36f1d033864a8fceed75edf0c6b2ecad346f0573d",
+          "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
+          "source_content_hash": "e624d91e5d6eb536",
           "quote": "老股东 合肥产投、东方富海、金浦投资、金华金投、中哲创、财鑫资本 持续加注",
           "quote_hash": "b2f9ab57aa10cd02fbe1ea158d8e74af1c4a84f96d03a457f2d3958d7ad65d81"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-06"
     }
   }
 }

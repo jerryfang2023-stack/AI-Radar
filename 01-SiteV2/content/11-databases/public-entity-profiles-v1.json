@@ -1,6 +1,6 @@
 {
   "schema_version": "PUBLIC-ENTITY-PROFILES-V1.0",
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-06",
   "institutions": {
     "INV-004d21a4d97f88": {
       "summary": "BEENEXT 官网展示其投资组合，并称已投资多家初创企业。本档案仅记录官网披露的品牌投资活动，不扩展法律实体名称或未披露的投资策略。",
@@ -50055,56 +50055,51 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "参投记录来自被投企业融资报道及投资行业媒体，完整基金信息未核实。",
-      "summary": "智象未来融资披露将合肥产投列为其投资方；投中网称该机构参与早期融资并在后续轮次继续跟投。本档只汇总公开融资案例，不补写未经确认的法定主体或完整背景。",
-      "facts": [],
+      "summary": "中国货币网收录合肥市产业投资控股（集团）有限公司2024年度报告页面；合肥高新创业投资管理合伙企业发布的融资消息把“合肥产投”列为智象未来B轮参与方。本档只记录可核的主体索引和这项公开融资案例。",
+      "coverage_note": "集团名称与融资报道简称一致；资料只覆盖一项可查投资披露，不代表集团完整投资组合。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "报告主体",
+          "value": "合肥市产业投资控股（集团）有限公司",
+          "source_id": "hf_group_report"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "智象未来融资报道披露合肥产投早期领投并在后续融资继续跟投。",
-          "source_id": "FISRC-e34ca2608b11a237"
-        },
-        {
-          "description": "智象未来 B 轮融资公告列合肥产投为参与机构之一。",
-          "source_id": "FISRC-9670ee7c1fec7480"
-        },
-        {
-          "description": "智象未来 C 轮报道列合肥产投为持续加注的老股东。",
-          "source_id": "FISRC-9d4811d701a7c9af"
+          "description": "合肥高投发布的融资消息将合肥产投列为智象未来B轮融资参与机构。",
+          "source_id": "hfgt_round"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "年度报告索引",
+          "value": "中国货币网年度报告页面",
+          "url": "https://www.chinamoney.com.cn/chinese/cwbg/20250429/3103659.html",
+          "source_id": "hf_group_report"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-e34ca2608b11a237",
-          "source_url": "https://www.chinaventure.com.cn/news/113-20260723-392410.html",
-          "source_title": "首发｜超20家机构，投了一家“世界模型”独角兽 | 投中网",
-          "source_content_hash": "c0e5123dfc0e32b748f2f60a6528a5fc25ec51bc5ef6a1a60b07b03626e715ce",
-          "quote": "早在2024年，公司便获得由合肥产投、安徽省人工智能母基金领投的A轮融资，两家机构又在今年继续跟投；此外，在此前融资中，智象未来还引入了安徽省产业投资集团、兴泰集团、合肥高投。",
-          "quote_hash": "fa31d9d1d4e32fba44ce5d30a1408ad17d843a6c77cc340d54a9aeb3ad5fe892"
+          "source_id": "hf_group_report",
+          "source_url": "https://www.chinamoney.com.cn/chinese/cwbg/20250429/3103659.html",
+          "source_title": "合肥市产业投资控股(集团)有限公司2024年年度报告_中国货币网",
+          "source_content_hash": "e69b3ff568ce38a1fb46f640099a38221f1c3c8ad49a5baf9a0af50615068850",
+          "quote": "合肥市产业投资控股(集团)有限公司2024年年度报告",
+          "quote_hash": "e6ee387c4907802eb44affde06cc47dcb1c98d8d22169a9e739c8402f5eff44c"
         },
         {
-          "source_id": "FISRC-9670ee7c1fec7480",
-          "source_url": "https://hfgxt.com.cn/index.php?a=show&c=content&id=3131",
+          "source_id": "hfgt_round",
+          "source_url": "https://www.hfgxt.com.cn/index.php?a=show&c=content&id=3131",
           "source_title": "超5亿元融资！智象未来完成B轮融资-企业新闻-新闻资讯-合肥高新创业投资管理合伙企业（有限合伙）",
           "source_content_hash": "8bc3ef7257454ddb71599c7ea47d860aca24bd0cefa84c787bfa81851144b773",
-          "quote": "4月15日，合肥高新区投资平台合肥高投投资企业智象未来（合肥）信息技术有限公司（简称“智象未来”）宣布完成超5亿元B轮融资，本轮融资由东方富海、峰华资本、安徽省产投、华安嘉业、合肥产投、兴泰创投、合肥高投等头部投资机构和国资机构联合参与。",
-          "quote_hash": "de0c10abaf7f677dac65ec33c373785963c0a4250b2163affb6518bde3f24c4e"
-        },
-        {
-          "source_id": "FISRC-9d4811d701a7c9af",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
-          "source_title": "智象未来完成15亿元C轮融资，三个月融三轮_新浪财经_新浪网",
-          "source_content_hash": "bebe58667e5f3aeae2a4a4e36f1d033864a8fceed75edf0c6b2ecad346f0573d",
-          "quote": "老股东 合肥产投、东方富海、金浦投资、金华金投、中哲创、财鑫资本 持续加注",
-          "quote_hash": "b2f9ab57aa10cd02fbe1ea158d8e74af1c4a84f96d03a457f2d3958d7ad65d81"
+          "quote": "合肥产投、兴泰创投、合肥高投等头部投资机构和国资机构联合参与",
+          "quote_hash": "6b6c5388b45e6f4c7eeec69ff3ffc1755fcf26a29d0ebc263ee1cb765405d2a9"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-06"
     },
     "INV-5bac231c026309": {
       "profile_type": "organization",
@@ -77349,33 +77344,59 @@
     "INV-839f6a9744e59c": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "东方财富融资报道将力合中科列为无问智科 A 轮投资方。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "summary": "上市公司投资公告将“力合中科”明确为力合中科私募股权基金管理（深圳）有限公司，并记载其私募基金管理人登记编号。本档按该法定名称收录，未扩展其完整基金组合。",
+      "coverage_note": "主体名称、业务范围及登记编号来自交易公告中的管理人资料。",
+      "facts": [
         {
-          "description": "东方财富报道将力合中科列入无问智科 A 轮投资方。",
-          "source_id": "PROFILE-bc86fc2f5d9db9ed48bd"
+          "field": "legal_name",
+          "label": "法定主体",
+          "value": "力合中科私募股权基金管理（深圳）有限公司",
+          "source_id": "lihe_identity"
+        },
+        {
+          "field": "manager_registration",
+          "label": "基金管理人登记编号",
+          "value": "P1063408",
+          "source_id": "lihe_reg"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "私募股权投资基金管理、创业投资基金管理服务",
+          "source_id": "lihe_scope"
         }
       ],
+      "milestones": [],
+      "track_record": [],
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-bc86fc2f5d9db9ed48bd",
-          "source_url": "https://finance.eastmoney.com/a/202609093868717170.html",
-          "source_title": "无问智科完成数亿元A轮融资 _ 东方财富网",
-          "source_content_hash": "2e1be2b20ffbd793befbd0f91cd98a9c2ec901474452f31825cb2cc8f4e586b7",
-          "quote": "方便，快捷 手机查看财经快讯 专业，丰富 一手掌握市场脉搏 手机上阅读文章 提示： 微信扫一扫 分享到您的 朋友圈 无问智科宣布完成数亿元A轮融资，由洪泰基金领投，洪山资本、中电数融、狮城资本跟投，架桥资本、力合金融、力合中科、澄凯灵澄未来基金等老股东超额追投。 （文章来源：科创板日报） 文章来源：科创板日报 责任编辑：70 原标题：无问智科完成数亿元A轮融资 郑重声明： 东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。 举报 东方财富网 分享到微信朋友圈 打开微信， 点击底部的“发现” 使用“扫一扫” 即可将网页分享至朋友圈 扫描二维码关注 东方财富官网微信 沪股通 深股通 港股通(沪) 港股通(深) 热门资讯 英伟达新高 希捷",
-          "quote_hash": "c8baae73f63fb9debe0a28df10431e4ee4ab0a035f6308b90d45e37145fcd86b"
+          "source_id": "lihe_identity",
+          "source_url": "https://m.10jqka.com.cn/sn/20251223/55416873.shtml",
+          "source_title": "贝仕达克：关于与专业投资机构共同投资暨关联交易的公告_手机同花顺财经",
+          "source_content_hash": "3f19bce3d47125f270a279bc2c8b7f5d7d3410e62f342b9cb226d0d7d112cf7c",
+          "quote": "力合中科私募股权基金管理（深圳）有限公司",
+          "quote_hash": "72a06a9685ad1fbef25e688c11a0f1de4b7df8e2ea29e3d3335d1ab3efc8f496"
+        },
+        {
+          "source_id": "lihe_reg",
+          "source_url": "https://m.10jqka.com.cn/sn/20251223/55416873.shtml",
+          "source_title": "贝仕达克：关于与专业投资机构共同投资暨关联交易的公告_手机同花顺财经",
+          "source_content_hash": "3f19bce3d47125f270a279bc2c8b7f5d7d3410e62f342b9cb226d0d7d112cf7c",
+          "quote": "P1063408",
+          "quote_hash": "93528f7445eeab5d068c0016a8eb0da3f85d37e70af169d7b0a48244fc23b29a"
+        },
+        {
+          "source_id": "lihe_scope",
+          "source_url": "https://m.10jqka.com.cn/sn/20251223/55416873.shtml",
+          "source_title": "贝仕达克：关于与专业投资机构共同投资暨关联交易的公告_手机同花顺财经",
+          "source_content_hash": "3f19bce3d47125f270a279bc2c8b7f5d7d3410e62f342b9cb226d0d7d112cf7c",
+          "quote": "私募股权投资基金管理、创业投资基金管理服务",
+          "quote_hash": "4aaf17d11605ea17a2ff3cb101ae9109e47cc8f18c6a0f9b6f644be2deb7efd1"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-06"
     },
     "INV-83a480cfdb497a": {
       "profile_type": "organization",
@@ -85963,33 +85984,64 @@
     "INV-9009479fba21b2": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "新浪财经报道将领阳投资列为极佳视界近期融资参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "电子科技大学中山学院就业信息网列出广东领阳私募基金管理有限公司，登记编号P1063761，并注明“领阳投资”为简称及其私募股权、创业投资基金管理人类型。投资界报道将该简称列入极佳视界融资参与方名单。",
+      "coverage_note": "管理人身份来自高校就业信息页面；投资案例为媒体列举，不据此推断该机构全部投资活动。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "主体名称",
+          "value": "广东领阳私募基金管理有限公司",
+          "source_id": "lingyang_identity"
+        },
+        {
+          "field": "manager_registration",
+          "label": "管理人登记编号",
+          "value": "P1063761",
+          "source_id": "lingyang_identity"
+        },
+        {
+          "field": "business_scope",
+          "label": "主体类型",
+          "value": "私募股权、创业投资基金管理人",
+          "source_id": "lingyang_type"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "新浪财经报道将领阳投资列为极佳视界近期融资参与方。",
-          "source_id": "FISRC-4782a6093d519a4d"
+          "description": "投资界报道将领阳投资列入极佳视界融资参与机构。",
+          "source_id": "lingyang_deal"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-4782a6093d519a4d",
-          "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
-          "source_title": "首发| 极佳视界，一个月融资25亿|融资|华为_新浪科技_新浪网",
-          "source_content_hash": "56bba06023f6b28b5a4241f2153bc4e108c0fce771a137f6e06098ae74757aea",
-          "quote": "基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、乾融资本、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资，华控基金、华民投、一村资本、领阳投资等多个老股东持续超额加注。 这意味着，极佳视界短短一个月融资25亿元，节奏之快令人印象深刻。至此，极佳视界最新估值已突破百亿元，成为国内首个世界模型百亿独角兽。 身后掌舵者是一位90后清华博士——黄冠，他曾先后任职于地平线、鉴智机器人，并拥有微软亚洲研究院、三星中国研究院等机构工作经历。短短三年时间，他带领着极佳视界迅速崛起为一家世界模型全球领军企业。如此一幕，恰是AI火爆景象的一抹最生动写照。 融资25亿 新晋百亿独角兽诞生 这是创投圈又一个现象",
-          "quote_hash": "010a858f0fb10cbae2e6c1e6af27392ad5c523344683b678c43233469e5b0ac9"
+          "source_id": "lingyang_identity",
+          "source_url": "https://jyxx.zsc.edu.cn/web/Index/company-info?id=2907",
+          "source_title": "广东领阳私募基金管理有限公司 - 电子科技大学中山学院就业信息网",
+          "source_content_hash": "aa644d65cca86b729de58e278f653dde53b5f2253f85ac0b86a3aa0a9b0c79c1",
+          "quote": "广东领阳私募基金管理有限公司",
+          "quote_hash": "5ea735a9db69a16c9ed69675cfac44f27e1121209af16b6cfceb7ddd2add7577"
+        },
+        {
+          "source_id": "lingyang_type",
+          "source_url": "https://jyxx.zsc.edu.cn/web/Index/company-info?id=2907",
+          "source_title": "广东领阳私募基金管理有限公司 - 电子科技大学中山学院就业信息网",
+          "source_content_hash": "aa644d65cca86b729de58e278f653dde53b5f2253f85ac0b86a3aa0a9b0c79c1",
+          "quote": "私募股权、创业投资基金管理人",
+          "quote_hash": "2a92c88906fee98d1661cd018889b34279c1820fe7a18d3977264154795522e5"
+        },
+        {
+          "source_id": "lingyang_deal",
+          "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+          "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿_投资界",
+          "source_content_hash": "999496916ab4da4f9513a18f2b966e8bfdc1d9daad283c092347a4b30748208f",
+          "quote": "领阳投资、财鑫资本、张科垚坤、诚筑投资",
+          "quote_hash": "d0dbc5ada7869d56fae48154b5789e350c0daeda31e6b01a06bef10f0c0a3061"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-06"
     },
     "INV-901b0ed7b5c1cb": {
       "summary": "深圳市创新投资集团有限公司（深创投）是以创业投资为核心的综合性投资集团。其 2024 年度报告披露了注册地址、公开服务邮箱和总机等企业信息。",
@@ -119149,49 +119201,58 @@
     "INV-c02adfb990835e": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "self_declared_affiliation",
+      "summary": "中国建投发布的消息称其子公司“建投投资”完成对极佳视界的投资；建投控股网站的中国建银投资介绍页将“建投投资有限责任公司”列入关联企业名单。现按集团投资平台关系收录，不补写完整基金信息。",
+      "coverage_note": "现有来源支持其属于中国建投投资体系并参与公开投资案例；独立管理人的登记资料未在本轮核实。",
+      "facts": [
+        {
+          "field": "formal_affiliate_name",
+          "label": "集团页面列示名称",
+          "value": "建投投资有限责任公司",
+          "source_id": "jiantou_parent"
+        },
+        {
+          "field": "group_affiliation",
+          "label": "集团关系",
+          "value": "中国建投发布信息称其为中国建投子公司",
+          "source_id": "jiantou_affiliation"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 光轮智能 基础设施融资 本轮参投。",
-          "source_id": "FISRC-8787a3d3602feb17"
-        },
-        {
-          "description": "公开融资来源将其列为 极佳视界 B2轮 本轮参投。",
-          "source_id": "FISRC-ce47b663ca256878"
-        },
-        {
-          "description": "公开融资来源将其列为 极佳视界 多轮融资 本轮参投。",
-          "source_id": "FISRC-ce47b663ca256878"
+          "description": "中国建投发布消息称，建投投资完成对北京极佳视界科技有限公司的投资。",
+          "source_id": "jiantou_deal"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-8787a3d3602feb17",
-          "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
-          "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
-          "source_content_hash": "d27cab4f8d40474e5fbb7645a72bf14914fb35e53a73fde14f56a4cceadb74d7",
-          "quote": "老股东建投投资、三七互娱、森马投资等继续跟投。",
-          "quote_hash": "f2d1c0c055b9aafffdd907074fa7f7155fa30bf9dee117696c1502100811a778"
+          "source_id": "jiantou_parent",
+          "source_url": "https://www.jicholding.com/cate/356.html",
+          "source_title": "股东简介-- 建投控股有限责任公司",
+          "source_content_hash": "d5b8b250abd4b60f63da7b1a57201ca2d26175215260c6d94cb25392db4cf341",
+          "quote": "中国建银投资有限责任公司 建投投资有限责任公司",
+          "quote_hash": "8f547858a2e825451182c4252cf1f04171b23084753b6c6dc43dade6eabb5b4e"
         },
         {
-          "source_id": "FISRC-ce47b663ca256878",
-          "source_url": "https://news.pedaily.cn/202606/565201.shtml",
-          "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI_投资界",
-          "source_content_hash": "f1fa98fce1288b04fbd783e034907e97f4a5a66fc6bd4e5b3002a68c7c43f591",
-          "quote": "由新加坡顶级跨境投资机构狮城资本（多轮持续追投）、中国-比利时基金（中比基金）、建投投资、万向钱潮、复星锐正、华盖创赢、金创投、德屹资本、华仓资本、元石基金等全球顶级国家队基金、产业资本、财务机构、国资平台共同投资",
-          "quote_hash": "d65491949cddef8dbbeb83255e6b1186dbf2888d42525d5dc2353472077af0ed"
+          "source_id": "jiantou_deal",
+          "source_url": "https://finance.sina.com.cn/wm/2026-06-09/doc-iniavmyn3148907.shtml",
+          "source_title": "建投动态｜建投投资完成对极佳视界投资，助力攀登物理AI产业制高点|AI_新浪财经_新浪网",
+          "source_content_hash": "a9f388b915ad401b972c3e2f1c04d2ba7117b755ed29a0fe3deb6946c729c868",
+          "quote": "建投投资完成对北京极佳视界科技有限公司",
+          "quote_hash": "5bdffaec0065db437373b5c975fc13eb590d4f3dbbc77c0980bba42894aa2524"
+        },
+        {
+          "source_id": "jiantou_affiliation",
+          "source_url": "https://finance.sina.com.cn/wm/2026-06-09/doc-iniavmyn3148907.shtml",
+          "source_title": "建投动态｜建投投资完成对极佳视界投资，助力攀登物理AI产业制高点|AI_新浪财经_新浪网",
+          "source_content_hash": "a9f388b915ad401b972c3e2f1c04d2ba7117b755ed29a0fe3deb6946c729c868",
+          "quote": "中国建投子公司",
+          "quote_hash": "73f55b9bcbfbad033960f74138aaa24e48ca81423fc22ea0228cf744b43415fa"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-06"
     },
     "INV-c031c90c3694b6": {
       "identity_status": "verified",
@@ -167438,6 +167499,510 @@
         }
       ],
       "last_verified_at": "2026-10-05"
+    },
+    "INV-02acdf27cce8b5": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "清新资本官网及其动态页面介绍其为早中期投资机构，方向覆盖循环经济、清洁能源和消费科技，并披露双碳业务布局。",
+      "coverage_note": "策略与方向为机构自述；页面未构成完整基金、投资组合或业绩披露。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早中期投资",
+          "source_id": "fresh_profile"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资方向",
+          "value": "循环经济、清洁能源、消费科技及双碳产业",
+          "source_id": "fresh_business"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "清新资本",
+          "url": "https://www.freshcapital.cn/men/",
+          "source_id": "fresh_profile"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "fresh_profile",
+          "source_url": "https://www.freshcapital.cn/men/",
+          "source_title": "fresh capital",
+          "source_content_hash": "820d3e30af9e3c4098ddc5865dc513cc34cdc8f7e2c5312c8279d8960f3042ba",
+          "quote": "清新资本专注于循环经济、清洁能源、消费科技领域的早中期投资机会。",
+          "quote_hash": "18c446f8c55f87557cf2cb6ac14434594893f90653c9861a03cd602453659de7"
+        },
+        {
+          "source_id": "fresh_business",
+          "source_url": "https://www.freshcapital.cn/Home/News/indexcont/id/266.html",
+          "source_title": "清新资本-清新动态 | 清新资本胡宇晨：创新多元路径，助力双碳战略加速实现",
+          "source_content_hash": "291f428569c433cd2a1b486392740ceb266521a3c73a04e6802c484ff8bdcbea",
+          "quote": "清新资本 成立于 2017 年，现在是一个围绕双碳产业的综合性投资机构",
+          "quote_hash": "78f47269bf2521250de31140a98112713801ce481629ea2728046180893ea593"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-02cd9caf9767d5": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "summary": "Volta Energy Technologies官网投资组合页面列出Quadric；Quadric融资公告将Volta列为新投资方，两处一手资料共同支持本队列“Volta”与该机构的匹配。本档只记录已核实的投资活动。",
+      "coverage_note": "按Quadric公告与Volta官网组合进行身份匹配；不把同名的其他Volta机构并入。",
+      "facts": [
+        {
+          "field": "identity",
+          "label": "官网名称",
+          "value": "Volta Energy Technologies",
+          "source_id": "volta_brand"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Quadric官方融资公告将Volta列为C轮新投资方；Volta官网投资组合页亦列出Quadric。",
+          "source_id": "quadric_round"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Volta Energy Technologies",
+          "url": "https://www.volta.vc/",
+          "source_id": "volta_brand"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "volta_brand",
+          "source_url": "https://www.volta.vc/",
+          "source_title": "Volta Energy Technologies",
+          "source_content_hash": "2012d123a301d73046fe85c7d3500cc0b1296b9ce28939c6c9505e1258b0a51b",
+          "quote": "Volta Energy Technologies",
+          "quote_hash": "622a20b9872ce7fd78d7c72fc0be30a32ea9ccf8a6d95aa40f76b473de17075a"
+        },
+        {
+          "source_id": "volta_portfolio",
+          "source_url": "https://www.volta.vc/portfolio",
+          "source_title": "Portfolio",
+          "source_content_hash": "b8cc86c02df34317d5d6334e9cf64e8dbd136cd013c08653a3c24c22b1f7e74f",
+          "quote": "Quadric, Inc. is a semiconductor IP licensing company",
+          "quote_hash": "29014d165a588b7bb5b2c136cb2b20992546b8c559101bdb14c8dd2ef1679e4e"
+        },
+        {
+          "source_id": "quadric_round",
+          "source_url": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
+          "source_title": "Quadric, Inference Engine for On-Device AI Chips, Raises $30M Series C as Design Wins Accelerate Across Edge LLMs, Automotive, and Enterprise | Quadric",
+          "source_content_hash": "22a0a62a7b96be3dc583d68b662344ffefa9368f8e7345bf271058a88eb0ccba",
+          "quote": "New investors include Volta",
+          "quote_hash": "e0093c98ecf8e6df0060ad456d07356183ad103d18c22cbda43b18ac917a6542"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-040afce64900a3": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "清华校友三创大赛页面介绍慕华科创为科技产业投资平台，说明其发起关系、关注行业并列举部分已投企业。",
+      "coverage_note": "机构定位、发起关系和行业方向为该清华平台页面的公开介绍；企业列表按原文作为选列案例，不代表完整组合。",
+      "facts": [
+        {
+          "field": "institution_role",
+          "label": "机构定位",
+          "value": "科技产业投资平台",
+          "source_id": "muhua_origin"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "关注行业",
+          "value": "新能源及新能源车、半导体、人工智能",
+          "source_id": "muhua_focus"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "该页面列出网易有道、哪吒汽车、Deepway、地平线等代表性已投企业。",
+          "source_id": "muhua_portfolio"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "muhua_origin",
+          "source_url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/14",
+          "source_title": "清华校友三创大赛",
+          "source_content_hash": "c70afcf57d37c719843f827a74c8ea6d2ba921b1b383acdfbb7ee96911a67dee",
+          "quote": "科技产业投资平台",
+          "quote_hash": "2f3d930ad4f13ca1919e5aa3bff729eaa992548c3d016111783604d0b1068b8e"
+        },
+        {
+          "source_id": "muhua_focus",
+          "source_url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/14",
+          "source_title": "清华校友三创大赛",
+          "source_content_hash": "c70afcf57d37c719843f827a74c8ea6d2ba921b1b383acdfbb7ee96911a67dee",
+          "quote": "专注于新能源及新能源车、半导体、人工智能等行业的创新发展。",
+          "quote_hash": "558cc94afa546ce75381b83b005d99914c727fcc56e1e42feaffa41cfb3bd913"
+        },
+        {
+          "source_id": "muhua_portfolio",
+          "source_url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/14",
+          "source_title": "清华校友三创大赛",
+          "source_content_hash": "c70afcf57d37c719843f827a74c8ea6d2ba921b1b383acdfbb7ee96911a67dee",
+          "quote": "已投代表企业包括网易有道、哪吒汽车、Deepway、地平线、镁佳科技",
+          "quote_hash": "dbeb7caa137f95358887e26876051a8acadcb746cb82639b14921f6acdda9899"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-04c1e7d2fb60f3": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Cadenza官网将其定位为投资变革性技术的全球投资机构；其官方组合页面列出Pangram Labs等案例。本档仅采用机构官网公开信息。",
+      "coverage_note": "组合页标注为精选投资，不能据此推断完整投资组合或回报。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "机构定位",
+          "value": "投资变革性技术的全球投资机构",
+          "source_id": "cadenza_home"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Cadenza官方组合页列出Pangram Labs。",
+          "source_id": "cadenza_portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Cadenza",
+          "url": "https://cadenza.vc/",
+          "source_id": "cadenza_home"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "cadenza_home",
+          "source_url": "https://cadenza.vc/",
+          "source_title": "Cadenza",
+          "source_content_hash": "ac5b0691a2cf6d195a9605212a479d26c950102db572bb40fae48d624fb48e41",
+          "quote": "Cadenza Global Investors in Transformative Technologies",
+          "quote_hash": "5dbfce4b3c117c8d31fe7e22e26a54b8433d7e161c90831a9841005cb5d53997"
+        },
+        {
+          "source_id": "cadenza_portfolio",
+          "source_url": "https://cadenza.vc/portfolio",
+          "source_title": "Portfolio | Cadenza",
+          "source_content_hash": "ccbfc8cd3232d990186e2b66124a099511f5fbacc518e690249b033d63fbb9f7",
+          "quote": "Select investments from our portfolio. Together.ai Tensorwave Nous Research Pangram Labs",
+          "quote_hash": "1c5f128543d88d017b27cf4afd424548799d2f0b7d21592ecdca9a9b3dedd294"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-06c0487ef6e9a7": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "summary": "京东官方投资者关系页面确认京东（JD.COM）的企业身份；IT之家援引企查查数据报道将京东列入DeepSeek一轮外部融资投资方。本档只保留该媒体报道案例，不确认报道中的融资金额或估值。",
+      "coverage_note": "投资活动仅由媒体转述的企业查询信息支持，缺少公司或被投企业的一手融资公告。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "公司简介",
+          "value": "技术驱动型电商和零售基础设施服务商",
+          "source_id": "jd_ir"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "IT之家报道援引企查查，将京东列为DeepSeek首轮外部融资投资方；融资规模和估值未采信为已核实事实。",
+          "source_id": "jd_reported_round"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资者关系",
+          "value": "JD.com投资者关系",
+          "url": "https://ir.jd.com/zh-hans/investor-overview?items_per_page=25&page=0",
+          "source_id": "jd_ir"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "jd_ir",
+          "source_url": "https://ir.jd.com/zh-hans/investor-overview?items_per_page=25&page=0",
+          "source_title": "投资者首页 | JD.Com, Inc.",
+          "source_content_hash": "a7e44fe34b2b0a5afed217701438f8eda1392d1d8c86972c306cab6a39dc8238",
+          "quote": "京东（JD.COM）是中国领先的技术驱动型电商和零售基础设施服务商。",
+          "quote_hash": "58c591e0993956e0de5def77cab29e5f5f1b88724590a658f3afccf993bc8757"
+        },
+        {
+          "source_id": "jd_reported_round",
+          "source_url": "https://www.ithome.com/0/965/686.htm",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家",
+          "source_content_hash": "9c2935c329e79c86a273afaa6b86bffcecb3779f8cbcc69d425c012fe71b950e",
+          "quote": "具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本",
+          "quote_hash": "aea570ef584a72580547f1ff750d1100919b1b90d351fcb792372f7b4c75941d"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-06f9cf56e3bdb4": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "summary": "Lambda官网说明原域名lambdalabs.com迁移至lambda.ai，并说明公司法人名称为Lambda, Inc.；TechCrunch将Lambda Labs列为Stack AI的投资方。本档只确认一次公开报道的活动。",
+      "coverage_note": "投资案例来自媒体报道，未据此推断Lambda拥有独立对外基金。",
+      "facts": [
+        {
+          "field": "current_name",
+          "label": "当前品牌及主体",
+          "value": "Lambda, Inc.（原Lambda Labs品牌）",
+          "source_id": "lambda_rebrand"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "TechCrunch报道列出Lambda Labs为Stack AI的投资方之一。",
+          "source_id": "lambda_stackai"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Lambda",
+          "url": "https://lambda.ai/",
+          "source_id": "lambda_rebrand"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "lambda_rebrand",
+          "source_url": "https://lambda.ai/blog/lambdalabs.com-is-now-lambda.ai",
+          "source_title": "lambdalabs.com is now lambda.ai",
+          "source_content_hash": "44be6d552c53b0e3f060833a46036c64f595269fd4309031a326c1a38ccc0884",
+          "quote": "lambdalabs.com is now lambda.ai",
+          "quote_hash": "1fb26aaf29efb2112966cfb523e1efc331672ba5cf0451c060d7eb1523a58c70"
+        },
+        {
+          "source_id": "lambda_stackai",
+          "source_url": "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows/",
+          "source_title": "Stack AI wants to make it easier to build AI-fueled workflows | TechCrunch",
+          "source_content_hash": "6b21d3af2ac3d59ddf74c83bc3c7945059316a1b583b6a3b3194bcd3a89e7b43",
+          "quote": "along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital",
+          "quote_hash": "69cb70ce76a07a98babb43dfe741d63a49a40c516e4a12c3b0537324ce41f025"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-07267e14eb89a4": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "HSG官网确认其为风险投资与私募股权机构，公开说明HSG为Sequoia China原品牌，并披露其投资行业范围。",
+      "coverage_note": "档案使用HSG当前品牌；组合、业绩和单个投资者法律主体应以各自的官方资料为准。",
+      "facts": [
+        {
+          "field": "brand_history",
+          "label": "品牌沿革",
+          "value": "HSG formerly known as Sequoia China",
+          "source_id": "hsg_about"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "公开行业方向",
+          "value": "Technology, healthcare and consumer sectors",
+          "source_id": "hsg_about"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "HSG",
+          "url": "https://www.hsgcap.com/about-us/",
+          "source_id": "hsg_about"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "hsg_about",
+          "source_url": "https://www.hsgcap.com/about-us/",
+          "source_title": "About Us - HSG",
+          "source_content_hash": "202d4759aaf59ef4bde800fea7a4c3a6a9ba89cabcc2a09406da40764282b434",
+          "quote": "HSG, formerly known as Sequoia China, is a leading venture capital and private equity firm",
+          "quote_hash": "c4c1f205dc1db037c452a5d69504c914105c6b910d1cac5510e197101ffe51ed"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-0a23e7a8d726b1": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "summary": "Coherent投资者关系官网确认Coherent Corp.主体；Eliyan官方融资公告将Coherent列入该轮战略投资参与方。本档只记录这一项被投企业公告。",
+      "coverage_note": "记录的是公司参与一次战略融资的公开披露，不据此把Coherent描述为独立风险投资基金。",
+      "facts": [
+        {
+          "field": "issuer_identity",
+          "label": "公司主体",
+          "value": "Coherent Corp.",
+          "source_id": "coherent_ir"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Eliyan官方公告将Coherent列入其战略投资参与者。",
+          "source_id": "coherent_round"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资者关系",
+          "value": "Coherent Corp.投资者关系",
+          "url": "https://ir.coherent.com/",
+          "source_id": "coherent_ir"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "coherent_ir",
+          "source_url": "https://ir.coherent.com/",
+          "source_title": "Investor Relations | Coherent Corp.",
+          "source_content_hash": "7d08b1886e083cdbb1d5fc043d6498b67ca7372e459521c1fe34d9a6bab25107",
+          "quote": "Investor Relations | Coherent Corp.",
+          "quote_hash": "9615d37c405159e1189494f8717f7cef4c983310e5c06339eef38ebec59ae9c2"
+        },
+        {
+          "source_id": "coherent_round",
+          "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+          "source_title": "Eliyan Secures $50 Million in Strategic Investments from Leading Hyperscalers and AI Infrastructure Providers to Accelerate Scalable AI Systems - Eliyan",
+          "source_content_hash": "11a719573d90d41fdcec01ceddc607ab194b94e5d8a0c7b0350c7d9d8252f4fc",
+          "quote": "including AMD, Arm, Coherent, and Meta",
+          "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-0cbccc36813a35": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "中国证券投资基金业协会登记信息将该主体列为上海领屹私募基金管理有限公司（P1074912），机构类型为私募股权、创业投资基金管理人；财经网报道将上海领屹投资列为数巅智能融资参与方。",
+      "coverage_note": "监管公示核实管理人身份；融资报道仅作为公开案例，不等同于完整投资组合。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "管理人名称",
+          "value": "上海领屹私募基金管理有限公司",
+          "source_id": "linyi_amac"
+        },
+        {
+          "field": "manager_registration",
+          "label": "管理人登记编号",
+          "value": "P1074912",
+          "source_id": "linyi_amac"
+        },
+        {
+          "field": "institution_type",
+          "label": "机构类型",
+          "value": "私募股权、创业投资基金管理人",
+          "source_id": "linyi_amac"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "财经网报道将上海领屹投资列为数巅智能融资参与方。",
+          "source_id": "linyi_deal"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "linyi_amac",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2403041526106463.html",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "bf81d2ec56129a2e5728b7ca544ae6adb442d052420f2a43eb0b15d0cca042a6",
+          "quote": "上海领屹私募基金管理有限公司",
+          "quote_hash": "be3b4b897ac3b8a9cf40bf3235b22587e51031919f07a351bc2f78a8b16d64c8"
+        },
+        {
+          "source_id": "linyi_deal",
+          "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
+          "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
+          "source_content_hash": "ce865d6bdbed513507a71fe2029c26f68d48c5392f98b738223c92f92c0565c5",
+          "quote": "上海领屹投资等机构跟投",
+          "quote_hash": "edd407d15ce702fbe189a8bba737d1eb4ee28fdd47678fe390bdd1e19b4e7f65"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-0d549065b1add1": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "summary": "辽宁科技大学就业页面以江苏省镔鑫钢铁集团有限公司为企业主体，介绍其钢铁生产业务；投资界融资报道将镔鑫钢铁列为数巅智能一轮投资方。本档将其视为产业公司参与案例，不推定其设有独立基金管理人。",
+      "coverage_note": "主体背景由高校就业页面介绍，投资活动来自第三方融资报道。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "主营业务",
+          "value": "钢铁生产",
+          "source_id": "binxin_university"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "投资界报道将镔鑫钢铁列入数巅智能融资投资方名单。",
+          "source_id": "binxin_round"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "binxin_university",
+          "source_url": "https://www.ustl.edu.cn/hgxy/info/1040/4272.htm",
+          "source_title": "江苏省镔鑫钢铁集团有限公司招聘就业信息-辽宁科技 - 化学工程学院",
+          "source_content_hash": "950349056431f1fca2ddc13661242fa3081244645298907a7520ee268cbd6c41",
+          "quote": "江苏省镔鑫钢铁集团有限公司成立于2008年2月",
+          "quote_hash": "3a60d7444a7246dcfbd3b312916aa68655522890ea4ab08243c16155f5e5cbd6"
+        },
+        {
+          "source_id": "binxin_round",
+          "source_url": "https://news.pedaily.cn/202609/569430.shtml",
+          "source_title": "数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化_投资界",
+          "source_content_hash": "8b03a9d7d0f177d479ba7379919a2b9f76a4ee8171835bb674fa9d0ba29585e2",
+          "quote": "中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒",
+          "quote_hash": "61c55016049cc06df35b85f13970f016b1f703d4786bf377c6230c564a5b10ad"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     }
   },
   "people": {

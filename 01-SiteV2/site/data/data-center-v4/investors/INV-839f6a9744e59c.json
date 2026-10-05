@@ -246,16 +246,31 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "东方财富融资报道将力合中科列为无问智科 A 轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "上市公司投资公告将“力合中科”明确为力合中科私募股权基金管理（深圳）有限公司，并记载其私募基金管理人登记编号。本档按该法定名称收录，未扩展其完整基金组合。",
+      "coverage_note": "主体名称、业务范围及登记编号来自交易公告中的管理人资料。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定主体",
+          "value": "力合中科私募股权基金管理（深圳）有限公司",
+          "source_id": "lihe_identity"
+        },
+        {
+          "field": "manager_registration",
+          "label": "基金管理人登记编号",
+          "value": "P1063408",
+          "source_id": "lihe_reg"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "私募股权投资基金管理、创业投资基金管理服务",
+          "source_id": "lihe_scope"
+        }
+      ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "东方财富报道将力合中科列入无问智科 A 轮投资方。",
-          "source_id": "PROFILE-bc86fc2f5d9db9ed48bd"
-        },
         {
           "description": "融资来源记录：共绩科技 · Pre-A轮 · 2026-05-07 · 本轮参投 · 近亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3e0fde80ebf2a574"
@@ -264,12 +279,28 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-bc86fc2f5d9db9ed48bd",
-          "source_url": "https://finance.eastmoney.com/a/202609093868717170.html",
-          "source_title": "无问智科完成数亿元A轮融资 _ 东方财富网",
-          "source_content_hash": "2e1be2b20ffbd793befbd0f91cd98a9c2ec901474452f31825cb2cc8f4e586b7",
-          "quote": "方便，快捷 手机查看财经快讯 专业，丰富 一手掌握市场脉搏 手机上阅读文章 提示： 微信扫一扫 分享到您的 朋友圈 无问智科宣布完成数亿元A轮融资，由洪泰基金领投，洪山资本、中电数融、狮城资本跟投，架桥资本、力合金融、力合中科、澄凯灵澄未来基金等老股东超额追投。 （文章来源：科创板日报） 文章来源：科创板日报 责任编辑：70 原标题：无问智科完成数亿元A轮融资 郑重声明： 东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。 举报 东方财富网 分享到微信朋友圈 打开微信， 点击底部的“发现” 使用“扫一扫” 即可将网页分享至朋友圈 扫描二维码关注 东方财富官网微信 沪股通 深股通 港股通(沪) 港股通(深) 热门资讯 英伟达新高 希捷",
-          "quote_hash": "c8baae73f63fb9debe0a28df10431e4ee4ab0a035f6308b90d45e37145fcd86b"
+          "source_id": "lihe_identity",
+          "source_url": "https://m.10jqka.com.cn/sn/20251223/55416873.shtml",
+          "source_title": "贝仕达克：关于与专业投资机构共同投资暨关联交易的公告_手机同花顺财经",
+          "source_content_hash": "3f19bce3d47125f270a279bc2c8b7f5d7d3410e62f342b9cb226d0d7d112cf7c",
+          "quote": "力合中科私募股权基金管理（深圳）有限公司",
+          "quote_hash": "72a06a9685ad1fbef25e688c11a0f1de4b7df8e2ea29e3d3335d1ab3efc8f496"
+        },
+        {
+          "source_id": "lihe_reg",
+          "source_url": "https://m.10jqka.com.cn/sn/20251223/55416873.shtml",
+          "source_title": "贝仕达克：关于与专业投资机构共同投资暨关联交易的公告_手机同花顺财经",
+          "source_content_hash": "3f19bce3d47125f270a279bc2c8b7f5d7d3410e62f342b9cb226d0d7d112cf7c",
+          "quote": "P1063408",
+          "quote_hash": "93528f7445eeab5d068c0016a8eb0da3f85d37e70af169d7b0a48244fc23b29a"
+        },
+        {
+          "source_id": "lihe_scope",
+          "source_url": "https://m.10jqka.com.cn/sn/20251223/55416873.shtml",
+          "source_title": "贝仕达克：关于与专业投资机构共同投资暨关联交易的公告_手机同花顺财经",
+          "source_content_hash": "3f19bce3d47125f270a279bc2c8b7f5d7d3410e62f342b9cb226d0d7d112cf7c",
+          "quote": "私募股权投资基金管理、创业投资基金管理服务",
+          "quote_hash": "4aaf17d11605ea17a2ff3cb101ae9109e47cc8f18c6a0f9b6f644be2deb7efd1"
         },
         {
           "source_id": "FISRC-3e0fde80ebf2a574",
@@ -280,11 +311,7 @@
           "quote_hash": "1c0be9460d1841fea944178964559ae2d2e24f6b0f1d032c43f990f55be4b08e"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-06"
     }
   }
 }

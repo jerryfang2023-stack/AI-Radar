@@ -137,21 +137,56 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Lambda Labs 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2024-05-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "summary": "Lambda官网说明原域名lambdalabs.com迁移至lambda.ai，并说明公司法人名称为Lambda, Inc.；TechCrunch将Lambda Labs列为Stack AI的投资方。本档只确认一次公开报道的活动。",
+      "coverage_note": "投资案例来自媒体报道，未据此推断Lambda拥有独立对外基金。",
+      "facts": [
+        {
+          "field": "current_name",
+          "label": "当前品牌及主体",
+          "value": "Lambda, Inc.（原Lambda Labs品牌）",
+          "source_id": "lambda_rebrand"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch报道列出Lambda Labs为Stack AI的投资方之一。",
+          "source_id": "lambda_stackai"
+        },
         {
           "description": "融资来源记录：Stack AI · 种子轮 · 2024-05-21 · 种子轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3bb261b30faf2efa"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Lambda",
+          "url": "https://lambda.ai/",
+          "source_id": "lambda_rebrand"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "lambda_rebrand",
+          "source_url": "https://lambda.ai/blog/lambdalabs.com-is-now-lambda.ai",
+          "source_title": "lambdalabs.com is now lambda.ai",
+          "source_content_hash": "44be6d552c53b0e3f060833a46036c64f595269fd4309031a326c1a38ccc0884",
+          "quote": "lambdalabs.com is now lambda.ai",
+          "quote_hash": "1fb26aaf29efb2112966cfb523e1efc331672ba5cf0451c060d7eb1523a58c70"
+        },
+        {
+          "source_id": "lambda_stackai",
+          "source_url": "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows/",
+          "source_title": "Stack AI wants to make it easier to build AI-fueled workflows | TechCrunch",
+          "source_content_hash": "6b21d3af2ac3d59ddf74c83bc3c7945059316a1b583b6a3b3194bcd3a89e7b43",
+          "quote": "along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital",
+          "quote_hash": "69cb70ce76a07a98babb43dfe741d63a49a40c516e4a12c3b0537324ce41f025"
+        },
         {
           "source_id": "FISRC-3bb261b30faf2efa",
           "source_url": "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows/",
@@ -161,7 +196,7 @@
           "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

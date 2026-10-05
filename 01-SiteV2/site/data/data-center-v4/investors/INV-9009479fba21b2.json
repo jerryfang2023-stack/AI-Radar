@@ -230,14 +230,37 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "新浪财经报道将领阳投资列为极佳视界近期融资参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "电子科技大学中山学院就业信息网列出广东领阳私募基金管理有限公司，登记编号P1063761，并注明“领阳投资”为简称及其私募股权、创业投资基金管理人类型。投资界报道将该简称列入极佳视界融资参与方名单。",
+      "coverage_note": "管理人身份来自高校就业信息页面；投资案例为媒体列举，不据此推断该机构全部投资活动。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "主体名称",
+          "value": "广东领阳私募基金管理有限公司",
+          "source_id": "lingyang_identity"
+        },
+        {
+          "field": "manager_registration",
+          "label": "管理人登记编号",
+          "value": "P1063761",
+          "source_id": "lingyang_identity"
+        },
+        {
+          "field": "business_scope",
+          "label": "主体类型",
+          "value": "私募股权、创业投资基金管理人",
+          "source_id": "lingyang_type"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "新浪财经报道将领阳投资列为极佳视界近期融资参与方。",
+          "description": "投资界报道将领阳投资列入极佳视界融资参与机构。",
+          "source_id": "lingyang_deal"
+        },
+        {
+          "description": "融资来源记录：极佳视界 · 多轮融资 · 2026-04-16 · 本轮参投（老股东超额加注） · 近15亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4782a6093d519a4d"
         },
         {
@@ -252,12 +275,36 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "lingyang_identity",
+          "source_url": "https://jyxx.zsc.edu.cn/web/Index/company-info?id=2907",
+          "source_title": "广东领阳私募基金管理有限公司 - 电子科技大学中山学院就业信息网",
+          "source_content_hash": "aa644d65cca86b729de58e278f653dde53b5f2253f85ac0b86a3aa0a9b0c79c1",
+          "quote": "广东领阳私募基金管理有限公司",
+          "quote_hash": "5ea735a9db69a16c9ed69675cfac44f27e1121209af16b6cfceb7ddd2add7577"
+        },
+        {
+          "source_id": "lingyang_type",
+          "source_url": "https://jyxx.zsc.edu.cn/web/Index/company-info?id=2907",
+          "source_title": "广东领阳私募基金管理有限公司 - 电子科技大学中山学院就业信息网",
+          "source_content_hash": "aa644d65cca86b729de58e278f653dde53b5f2253f85ac0b86a3aa0a9b0c79c1",
+          "quote": "私募股权、创业投资基金管理人",
+          "quote_hash": "2a92c88906fee98d1661cd018889b34279c1820fe7a18d3977264154795522e5"
+        },
+        {
+          "source_id": "lingyang_deal",
+          "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+          "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿_投资界",
+          "source_content_hash": "999496916ab4da4f9513a18f2b966e8bfdc1d9daad283c092347a4b30748208f",
+          "quote": "领阳投资、财鑫资本、张科垚坤、诚筑投资",
+          "quote_hash": "d0dbc5ada7869d56fae48154b5789e350c0daeda31e6b01a06bef10f0c0a3061"
+        },
+        {
           "source_id": "FISRC-4782a6093d519a4d",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
-          "source_title": "首发| 极佳视界，一个月融资25亿|融资|华为_新浪科技_新浪网",
-          "source_content_hash": "56bba06023f6b28b5a4241f2153bc4e108c0fce771a137f6e06098ae74757aea",
-          "quote": "基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、乾融资本、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资，华控基金、华民投、一村资本、领阳投资等多个老股东持续超额加注。 这意味着，极佳视界短短一个月融资25亿元，节奏之快令人印象深刻。至此，极佳视界最新估值已突破百亿元，成为国内首个世界模型百亿独角兽。 身后掌舵者是一位90后清华博士——黄冠，他曾先后任职于地平线、鉴智机器人，并拥有微软亚洲研究院、三星中国研究院等机构工作经历。短短三年时间，他带领着极佳视界迅速崛起为一家世界模型全球领军企业。如此一幕，恰是AI火爆景象的一抹最生动写照。 融资25亿 新晋百亿独角兽诞生 这是创投圈又一个现象",
-          "quote_hash": "010a858f0fb10cbae2e6c1e6af27392ad5c523344683b678c43233469e5b0ac9"
+          "source_title": "极佳视界完成15亿元B1轮融资",
+          "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+          "quote": "华控基金、华民投、一村资本、领阳投资等多个老股东持续超额加注",
+          "quote_hash": "d6f3ed259dfbad2eb694eefadede8fe5ca28f642094e69dbf6e0d038d2bf81a5"
         },
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
@@ -276,11 +323,7 @@
           "quote_hash": "c85da4980414a31981422a897b72286447cacfc54f10dfb0335807fa4395208f"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-06"
     }
   }
 }
