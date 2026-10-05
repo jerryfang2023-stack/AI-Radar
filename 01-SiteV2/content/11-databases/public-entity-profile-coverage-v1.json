@@ -47520,42 +47520,87 @@
       "experience_summary": ""
     },
     "INV-5cc098edd805cf": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "案例来自融资公告和行业报道，不代表完整组合。",
-      "summary": "多项融资报道将啟赋资本列为凌川科技、跃然创新及华清未央的投资方。本档仅记录这些已披露参与案例；由于官网正文可用信息有限，不补写基金规模或完整投资策略。",
-      "facts": [],
-      "milestones": [],
+      "summary": "啟赋资本官网的投资组合页面列出多项投资案例，其官方媒体页面称其领投凌川科技 2026 年 A+ 轮融资。档案仅记录这些已披露活动，不推定基金规模或未公开投资策略。",
+      "facts": [
+        {
+          "field": "disclosed_investment_activity",
+          "label": "官网披露的融资活动",
+          "value": "啟赋资本于凌川科技 2026 年 A+ 轮领投。",
+          "source_id": "qifu_round"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-06-23",
+          "description": "官网发布凌川科技完成 A+ 轮融资、由啟赋资本领投的项目报道。",
+          "source_id": "qifu_round"
+        }
+      ],
       "track_record": [
         {
-          "description": "凌川科技融资报道列啟赋资本为领投方。",
+          "description": "官网“经典案例”页面列有高途集团案例；这不是完整投资组合。",
+          "source_id": "qifu_portfolio"
+        },
+        {
+          "description": "融资来源记录：凌川科技 · A+轮扩展 · 2026-06-25 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a39c77bc80e12506"
         },
         {
-          "description": "跃然创新 A+ 轮报道列啟赋资本为参投机构。",
+          "description": "融资来源记录：深圳跃然创新科技有限公司 · A+轮 · 2026-03-30 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-47b1de868e5ddfe2"
         },
         {
-          "description": "华清未央 Pre-A+ 轮报道列啟赋资本为参与机构。",
+          "description": "融资来源记录：华清未央 · 历史轮次未披露 · Pre-A+轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ff45e731b4335bfb"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据啟赋资本官网及其发布的项目报道核验品牌、投资案例和一项领投记录；基金法律结构及完整投资组合未披露。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://www.qfvc.cn/",
+          "url": "https://www.qfvc.cn/",
+          "source_id": "qifu_round"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "qifu_round",
+          "source_url": "https://www.qfvc.cn/newsDetail.page?id=395",
+          "source_title": "媒体报道",
+          "source_content_hash": "3d36b4f40f67de43f805447412254478291f98931a009bdcbf1e8d1eed01cc6e",
+          "quote": "凌川科技完成A+轮融资，本轮由啟赋资本领投。",
+          "quote_hash": "9837a531ebb000044507c26d531bb615c0eac19df65eb06809d8e51ee64b1bda"
+        },
+        {
+          "source_id": "qifu_portfolio",
+          "source_url": "https://www.qfvc.cn/investment.page",
+          "source_title": "投资组合",
+          "source_content_hash": "44778855eba8d308178ddf11bca3270cfc3c91d869cbfd62296b1a5e14dcf98d",
+          "quote": "高途集团（NYSE:GOTU）是一家兼具教育基因和科技驱动力的科技教育公司",
+          "quote_hash": "9081577ccf4a3cc1f133d6b463b584874c3f0e133362f91121f8c11ba5f45348"
+        },
         {
           "source_id": "FISRC-a39c77bc80e12506",
           "source_url": "https://www.ithome.com/0/968/289.htm",
-          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片 - IT之家",
-          "source_content_hash": "0c8aa3abd9f50695779734372412758ca59ea2ce3798b73b2ce6987d17d7a21f",
+          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+          "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
           "quote": "本轮由啟赋资本领投，产业投资方新国都、投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资，老股东顺禧基金、九智资本持续追加投资。",
           "quote_hash": "181b3360abcaa837762b8cfdf27f6e0dbde113b7c103d5f95452aa4d004e2655"
         },
         {
           "source_id": "FISRC-47b1de868e5ddfe2",
           "source_url": "https://finance.sina.cn/2026-03-30/detail-inhstxxe2822090.d.html",
-          "source_title": "拓邦战略投资AI玩具先锋跃然创新，共拓AI智慧成长新蓝海|拓邦股份|蚂蚁集团|智美|四电|机器人_手机新浪网",
-          "source_content_hash": "552d2a490a9e602a684044c63b05f47e906c433d5903bb1aef759998b7717324",
+          "source_title": "拓邦战略投资AI玩具先锋跃然创新，共拓AI智慧成长新蓝海",
+          "source_content_hash": "907ae8ff0db6a87bbd3822e3d07475bda216bf4ce32f463e1703f62f456fa7c6",
           "quote": "近日，AI玩具公司深圳跃然创新科技有限公司（以下简称”跃然创新”）完成A+轮融资，由蚂蚁集团领投，达晨创投、尚 颀 资本、拓邦股份（002139.SZ，以下简称“拓邦”）、啟赋资本等机构参投。",
           "quote_hash": "61e17cee984e02b8821d979716a37b36ec570b362c1bd1411e0ffe279aee64f9"
         },
@@ -47563,16 +47608,12 @@
           "source_id": "FISRC-ff45e731b4335bfb",
           "source_url": "https://www.163.com/dy/article/KOB03FS3051984TV.html",
           "source_title": "【投融资动态】华清未央Pre-A+轮融资，投资方为瀚晖资本、啟赋资本等|证券|pre_网易订阅",
-          "source_content_hash": "c01338870ec792f4d888eda067e96ff1f24d0e84724a1330b747e40e42fe7af5",
+          "source_content_hash": "7a04c41221eba496",
           "quote": "华清未央（北京）科技有限公司Pre-A+轮融资，融资额未披露，参与投资的机构包括瀚晖资本，啟赋资本，无锡交通集团，辛夷国际。",
           "quote_hash": "a4fac0da7ae099590c104c7566eba3cbd007439516751ed419da10baa14a947f"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     },
     "INV-4798cc53ee6595": {
       "profile_type": "organization",
@@ -61840,21 +61881,80 @@
       "last_verified_at": "2026-09-28"
     },
     "INV-4ee2f8e791b84e": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Samsung C&T 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Samsung C&T 官网介绍其 Trading & Investment Group 在化学品、钢铁、能源和材料领域开展业务。三星 2026 年公告将 Samsung C&T 列入共同投资 Helix 的集团主体；公告未披露该公司的单独投资金额。",
+      "facts": [
+        {
+          "field": "business_focus",
+          "label": "Trading & Investment Group 业务范围",
+          "value": "化学品、钢铁、能源和材料。",
+          "source_id": "samsungcnt_about"
+        },
+        {
+          "field": "helix_group_commitment",
+          "label": "集团共同投资披露",
+          "value": "被列为共同投资 Helix 的三星主体之一；公告披露集团合计 10 亿美元，未披露 Samsung C&T 单独金额。",
+          "source_id": "cnt_helix"
+        },
+        {
+          "field": "group_amount_allocation",
+          "label": "集团公告金额拆分口径",
+          "value": "Samsung Electronics 单独承诺 5 亿美元；其余五家子公司共同承担余额，公告未分别披露这五家各自金额。",
+          "source_id": "cnt_amount_split"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "三星公告列明 Samsung C&T 参与对 Helix Digital Infrastructure 的集团共同投资，合计金额为 10 亿美元，未分拆各子公司金额。",
+          "source_id": "cnt_helix"
+        },
         {
           "description": "融资来源记录：Helix Digital Infrastructure · 轮次未披露 · 2026-09-29 · 本次共同投资承诺方 · USD 1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构业务依据 Samsung C&T 新闻室介绍；Helix 投资仅按三星集团合计 10 亿美元披露，不将金额拆给 Samsung C&T。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://news.samsungcnt.com/en/about-us/",
+          "url": "https://news.samsungcnt.com/en/about-us/",
+          "source_id": "samsungcnt_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "samsungcnt_about",
+          "source_url": "https://news.samsungcnt.com/en/about-us/",
+          "source_title": "About Us - Samsung C&amp;T Newsroom",
+          "source_content_hash": "a4ce975b76f51b12ef3a24598218e1178952ba9e12e242ca52511b97211b0ca5",
+          "quote": "Samsung C&T Trading & Investment Group pursues and develops businesses around the world in the areas of chemicals, steel, energy, and materials",
+          "quote_hash": "c1cf09fee3e7ac9d689e5bff15d2e5b8fe3671ab5ca1d9d8dcf5b660b5eb65be"
+        },
+        {
+          "source_id": "cnt_helix",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+          "quote_hash": "07849e18d0c5da8bf17b36a6ca032079c51aa5a3a791c685682a1ebe03dc62ac"
+        },
+        {
+          "source_id": "cnt_amount_split",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung Electronics to invest USD 500 million; five other affiliates investing the remainder",
+          "quote_hash": "62c9faafde510629afbf8e4e9d3f1c0737e78402b84a5c9953c6e1a3ee45734b"
+        },
         {
           "source_id": "FISRC-9d03a17bbefffa61",
           "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
@@ -61867,21 +61967,80 @@
       "last_verified_at": "2026-10-05"
     },
     "INV-e1a42b2ec5823a": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Samsung Fire & Marine Insurance 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Samsung Fire & Marine Insurance 官网介绍其以保险产品和服务提供日常风险保障。三星公告将其列入共同投资 Helix 的集团主体；公告未披露该公司的单独投资金额。",
+      "facts": [
+        {
+          "field": "business_focus",
+          "label": "官网披露的业务",
+          "value": "通过保险产品及服务保障日常生活。",
+          "source_id": "sfmi_about"
+        },
+        {
+          "field": "helix_group_commitment",
+          "label": "集团共同投资披露",
+          "value": "被列为共同投资 Helix 的三星主体之一；公告披露集团合计 10 亿美元，未披露该公司的单独金额。",
+          "source_id": "sfmi_helix"
+        },
+        {
+          "field": "group_amount_allocation",
+          "label": "集团公告金额拆分口径",
+          "value": "Samsung Electronics 单独承诺 5 亿美元；其余五家子公司共同承担余额，公告未分别披露这五家各自金额。",
+          "source_id": "sfmi_amount_split"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "三星公告列明 Samsung Fire & Marine Insurance 参与对 Helix Digital Infrastructure 的集团共同投资，合计金额为 10 亿美元，未分拆各子公司金额。",
+          "source_id": "sfmi_helix"
+        },
         {
           "description": "融资来源记录：Helix Digital Infrastructure · 轮次未披露 · 2026-09-29 · 本次共同投资承诺方 · USD 1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "公司业务介绍来自自身官网；集团投资额只按合计披露，未向 Samsung Fire & Marine Insurance 单独分配。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://www.samsungfire.com/",
+          "url": "https://www.samsungfire.com/",
+          "source_id": "sfmi_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sfmi_about",
+          "source_url": "https://www.samsungfire.com/v2/html/company_eng/01/N_010_010_011.html",
+          "source_title": "Identity &gt; SFMI &gt; About Us | 삼성화재",
+          "source_content_hash": "2d6b432e30e9d81faa4ed141fa4701da57566ca48c298053ccc7ade3b26da3e3",
+          "quote": "We safeguard daily life with the best products and services, while creating new customer value through innovation.",
+          "quote_hash": "e60ed94ed55bf1140094835b0018794cbe920684fc7b055b4ad1cf0b4d6126c3"
+        },
+        {
+          "source_id": "sfmi_helix",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+          "quote_hash": "07849e18d0c5da8bf17b36a6ca032079c51aa5a3a791c685682a1ebe03dc62ac"
+        },
+        {
+          "source_id": "sfmi_amount_split",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung Electronics to invest USD 500 million; five other affiliates investing the remainder",
+          "quote_hash": "62c9faafde510629afbf8e4e9d3f1c0737e78402b84a5c9953c6e1a3ee45734b"
+        },
         {
           "source_id": "FISRC-9d03a17bbefffa61",
           "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
@@ -61894,21 +62053,94 @@
       "last_verified_at": "2026-10-05"
     },
     "INV-bd9f75a778ca9d": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Samsung Life Insurance 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "韩国金融监管院英文登记页将主体列为 Samsung Life Insurance Co., Ltd.，行业为人寿保险。三星公告将其列入共同投资 Helix 的集团主体；公告没有披露 Samsung Life Insurance 的单独金额。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "监管登记英文名称",
+          "value": "Samsung Life Insurance Co., Ltd.",
+          "source_id": "life_dart"
+        },
+        {
+          "field": "industry",
+          "label": "登记行业",
+          "value": "Life insurance（人寿保险）",
+          "source_id": "life_industry"
+        },
+        {
+          "field": "helix_group_commitment",
+          "label": "集团共同投资披露",
+          "value": "被列为共同投资 Helix 的三星主体之一；集团合计金额为 10 亿美元，未披露 Samsung Life Insurance 单独金额。",
+          "source_id": "life_helix"
+        },
+        {
+          "field": "group_amount_allocation",
+          "label": "集团公告金额拆分口径",
+          "value": "Samsung Electronics 单独承诺 5 亿美元；其余五家子公司共同承担余额，公告未分别披露这五家各自金额。",
+          "source_id": "life_amount_split"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "三星公告列明 Samsung Life Insurance 参与对 Helix Digital Infrastructure 的集团共同投资，合计金额为 10 亿美元，未分拆各子公司金额。",
+          "source_id": "life_helix"
+        },
         {
           "description": "融资来源记录：Helix Digital Infrastructure · 轮次未披露 · 2026-09-29 · 本次共同投资承诺方 · USD 1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "公司名称和行业来自韩国金融监管院公司资料；集团投资公告不披露其单体出资额，不作拆分推定。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://www.samsunglife.com/",
+          "url": "https://www.samsunglife.com/",
+          "source_id": "life_dart"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "life_dart",
+          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=00126256",
+          "source_title": "Company infomation Popup",
+          "source_content_hash": "e2f04338e6523a778f5af90fd785e8fddb0bd7595bf2af3531f53ff3a57f650b",
+          "quote": "Samsung Life Insurance co., Ltd",
+          "quote_hash": "becfe34277afef47fb318cc181a7f8018c332e21cd8dd9103552f58e23d634fe"
+        },
+        {
+          "source_id": "life_industry",
+          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=00126256",
+          "source_title": "Company infomation Popup",
+          "source_content_hash": "e2f04338e6523a778f5af90fd785e8fddb0bd7595bf2af3531f53ff3a57f650b",
+          "quote": "Life insurance",
+          "quote_hash": "43f531fcadc072299c0ce23b3b21c6c26d70a2c0eae1a9701b482d9da2754676"
+        },
+        {
+          "source_id": "life_helix",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+          "quote_hash": "07849e18d0c5da8bf17b36a6ca032079c51aa5a3a791c685682a1ebe03dc62ac"
+        },
+        {
+          "source_id": "life_amount_split",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung Electronics to invest USD 500 million; five other affiliates investing the remainder",
+          "quote_hash": "62c9faafde510629afbf8e4e9d3f1c0737e78402b84a5c9953c6e1a3ee45734b"
+        },
         {
           "source_id": "FISRC-9d03a17bbefffa61",
           "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
@@ -61921,21 +62153,100 @@
       "last_verified_at": "2026-10-05"
     },
     "INV-826af42ec05abf": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Samsung SDI 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Samsung SDI 官网确认法人名称为 SAMSUNG SDI Co., Ltd.，成立于 1970 年，业务聚焦绿色能源和尖端材料。三星公告将其列入共同投资 Helix 的主体；公告没有披露 Samsung SDI 的单独投资金额。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网所列名称",
+          "value": "SAMSUNG SDI Co., Ltd.",
+          "source_id": "sdi_about"
+        },
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "1970",
+          "source_id": "sdi_founded"
+        },
+        {
+          "field": "business_focus",
+          "label": "业务定位",
+          "value": "绿色能源和尖端材料解决方案。",
+          "source_id": "sdi_about"
+        },
+        {
+          "field": "helix_group_commitment",
+          "label": "集团共同投资披露",
+          "value": "被列为共同投资 Helix 的三星主体之一；集团合计金额为 10 亿美元，未披露 Samsung SDI 单独金额。",
+          "source_id": "sdi_helix"
+        },
+        {
+          "field": "group_amount_allocation",
+          "label": "集团公告金额拆分口径",
+          "value": "Samsung Electronics 单独承诺 5 亿美元；其余五家子公司共同承担余额，公告未分别披露这五家各自金额。",
+          "source_id": "sdi_amount_split"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "三星公告列明 Samsung SDI 参与对 Helix Digital Infrastructure 的集团共同投资，合计金额为 10 亿美元，未分拆各子公司金额。",
+          "source_id": "sdi_helix"
+        },
         {
           "description": "融资来源记录：Helix Digital Infrastructure · 轮次未披露 · 2026-09-29 · 本次共同投资承诺方 · USD 1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份、成立年份和业务定位来自公司官网；Helix 交易的金额口径为集团合计，不进行子公司分拆。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://www.samsungsdi.com/",
+          "url": "https://www.samsungsdi.com/",
+          "source_id": "sdi_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sdi_about",
+          "source_url": "https://www.samsungsdi.com/about-sdi/index.html",
+          "source_title": "www.samsungsdi.com",
+          "source_content_hash": "07a340f2d0dca2acc973764d99ba954758a5445c193952fcaad17363fb8bd2a6",
+          "quote": "SAMSUNG SDI Co., Ltd., President & CEO Joo Sun Choi",
+          "quote_hash": "08eba9e65db0ebde0d4a599a811a545181bf559a8b466f8283acc6a67ab3a384"
+        },
+        {
+          "source_id": "sdi_founded",
+          "source_url": "https://www.samsungsdi.com/about-sdi/index.html",
+          "source_title": "www.samsungsdi.com",
+          "source_content_hash": "07a340f2d0dca2acc973764d99ba954758a5445c193952fcaad17363fb8bd2a6",
+          "quote": "Founded in (1970)",
+          "quote_hash": "23117ada3b4395e5f27143606f488dc79d66c8c7180d81989f2c3e8d76efbcf9"
+        },
+        {
+          "source_id": "sdi_helix",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+          "quote_hash": "07849e18d0c5da8bf17b36a6ca032079c51aa5a3a791c685682a1ebe03dc62ac"
+        },
+        {
+          "source_id": "sdi_amount_split",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung Electronics to invest USD 500 million; five other affiliates investing the remainder",
+          "quote_hash": "62c9faafde510629afbf8e4e9d3f1c0737e78402b84a5c9953c6e1a3ee45734b"
+        },
         {
           "source_id": "FISRC-9d03a17bbefffa61",
           "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
@@ -61948,21 +62259,80 @@
       "last_verified_at": "2026-10-05"
     },
     "INV-69b6ba55302fb0": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Samsung SDS 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Samsung SDS 官网介绍其提供基于生成式 AI、云和数字物流的 IT 服务。三星 2026 年公告将 Samsung SDS 列入共同投资 Helix 的五家非电子子公司，集团投资合计 10 亿美元；公告未披露 Samsung SDS 的单独金额。",
+      "facts": [
+        {
+          "field": "business_focus",
+          "label": "官网披露的业务",
+          "value": "提供基于生成式 AI、云的 IT 服务及数字物流服务。",
+          "source_id": "sds_about"
+        },
+        {
+          "field": "helix_group_commitment",
+          "label": "集团共同投资披露",
+          "value": "被列为共同投资 Helix 的三星主体之一；公告所列三星主体合计承诺 10 亿美元，未披露 Samsung SDS 的单独金额。",
+          "source_id": "sds_helix"
+        },
+        {
+          "field": "group_amount_allocation",
+          "label": "集团公告金额拆分口径",
+          "value": "Samsung Electronics 单独承诺 5 亿美元；其余五家子公司共同承担余额，公告未分别披露这五家各自金额。",
+          "source_id": "sds_amount_split"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "三星公告列明 Samsung SDS 参与对 Helix Digital Infrastructure 的集团共同投资，合计金额为 10 亿美元，未分拆各子公司金额。",
+          "source_id": "sds_helix"
+        },
         {
           "description": "融资来源记录：Helix Digital Infrastructure · 轮次未披露 · 2026-09-29 · 本次共同投资承诺方 · USD 1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "业务介绍来自 Samsung SDS 官网；投资金额仅按 Samsung 集团公告所披露的合计口径记录，不向单一子公司分摊。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://www.samsungsds.com/",
+          "url": "https://www.samsungsds.com/",
+          "source_id": "sds_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sds_about",
+          "source_url": "https://www.samsungsds.com/ap/company/overview/company.html",
+          "source_title": "About Samsung SDS | Samsung SDS Asia Pacific",
+          "source_content_hash": "2f5d809c3ef53ff93b6a763b4d0b8e67e3e3251a6ca262368de8b62c61b87ad6",
+          "quote": "Samsung SDS provides IT services based on generative AI and cloud as well as digital logistics services.",
+          "quote_hash": "1427339eb2a03569181e9e4b6553230ae0bf2fa360aadf01598aa29a116588ea"
+        },
+        {
+          "source_id": "sds_helix",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+          "quote_hash": "07849e18d0c5da8bf17b36a6ca032079c51aa5a3a791c685682a1ebe03dc62ac"
+        },
+        {
+          "source_id": "sds_amount_split",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung Electronics to invest USD 500 million; five other affiliates investing the remainder",
+          "quote_hash": "62c9faafde510629afbf8e4e9d3f1c0737e78402b84a5c9953c6e1a3ee45734b"
+        },
         {
           "source_id": "FISRC-9d03a17bbefffa61",
           "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
@@ -86529,21 +86899,74 @@
       "last_verified_at": "2026-09-27"
     },
     "INV-00c392bc0a9f29": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Goodwater 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "SEC 投资顾问登记页将 GOODWATER CAPITAL, LLC 列为 GOODWATER CAPITAL 的登记主体，并标记为豁免报告顾问；该页明确说明其并非 SEC 注册顾问。Trace 的融资公告将 Goodwater Capital 列为投资方。",
+      "facts": [
+        {
+          "field": "regulatory_identity",
+          "label": "SEC 顾问登记页所列主体",
+          "value": "GOODWATER CAPITAL, LLC；CRD 172576，业务名称包含 GOODWATER CAPITAL。",
+          "source_id": "goodwater_sec"
+        },
+        {
+          "field": "regulatory_status",
+          "label": "SEC 顾问页面所列状态",
+          "value": "豁免报告顾问（Exempt Reporting Adviser）；页面同时标注 Not Currently Registered。",
+          "source_id": "goodwater_registration_status"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Trace 于 2026 年公布 300 万美元融资，并将 Goodwater Capital 列为投资方；未披露其单独投资金额。",
+          "source_id": "trace_round"
+        },
         {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e7a3713da8f3e54"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "队列品牌按 SEC CRD 172576 记录核验；监管页面将其状态标为 Exempt Reporting Adviser / Not Currently Registered，不能称其为 SEC 注册顾问或称备案获 SEC 批准。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "goodwater_sec",
+          "source_url": "https://adviserinfo.sec.gov/firm/summary/172576",
+          "source_title": "GOODWATER CAPITAL - Investment Adviser Firm",
+          "source_content_hash": "00faaa49441c47e41fdb57f53b935627f1300520e00be1714a78e511ff324439",
+          "quote": "GOODWATER CAPITAL ( CRD # 172576/SEC#:802-80285 ) GOODWATER CAPITAL, GOODWATER CAPITAL, LLC",
+          "quote_hash": "8e51597360ff48aa856adfee2688e5643e79efdc4805e9e4aab05dcd922cc5e8"
+        },
+        {
+          "source_id": "goodwater_era",
+          "source_url": "https://adviserinfo.sec.gov/firm/summary/172576",
+          "source_title": "GOODWATER CAPITAL - Investment Adviser Firm",
+          "source_content_hash": "00faaa49441c47e41fdb57f53b935627f1300520e00be1714a78e511ff324439",
+          "quote": "This adviser FILES REPORT(S) as an Exempt Reporting Adviser",
+          "quote_hash": "3178501812e2e6b9b9727b6ae15df9fbf1abd4962d1b3935c69b4ffb238047d1"
+        },
+        {
+          "source_id": "trace_round",
+          "source_url": "https://www.trace.so/blog/trace-raised-dollar3m-to-build-the-context-layer-for-ai-at-work",
+          "source_title": "Trace raised $3M to build the context layer for AI at work - Trace",
+          "source_content_hash": "785f8ff4713a99f598fd744d4346fef9d68bfa2f690fe749b78db7cb8e974e91",
+          "quote": "raised $3M from investors and operators who understand the space, including: Y Combinator Xeno Ventures Goodwater Capital",
+          "quote_hash": "fdc526b0a3b63a64bece57c8533c5b8661e55615c90f5706472c6a2950c7b480"
+        },
+        {
+          "source_id": "goodwater_registration_status",
+          "source_url": "https://adviserinfo.sec.gov/firm/summary/172576",
+          "source_title": "GOODWATER CAPITAL - Investment Adviser Firm",
+          "source_content_hash": "00faaa49441c47e41fdb57f53b935627f1300520e00be1714a78e511ff324439",
+          "quote": "REGISTRATION STATUS Not Currently Registered",
+          "quote_hash": "c7e152b9ee8f21666f757b60dffca7ada6f28b2b9ae7be17b412cac02f4faf24"
+        },
         {
           "source_id": "FISRC-2e7a3713da8f3e54",
           "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
@@ -86553,7 +86976,7 @@
           "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     },
     "INV-e62a45f1670c51": {
       "profile_type": "organization",
@@ -136366,21 +136789,78 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-00f9e2374b06cd": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "长江创新投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "长江证券官网 2024 年披露确认长江证券创新投资（湖北）有限公司为集团全资另类子公司，经营范围包括股权投资、项目投资；发行人公告将该公司简称为“长江创新投”。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "公司名称",
+          "value": "长江证券创新投资（湖北）有限公司",
+          "source_id": "cjsc_company_2024"
+        },
+        {
+          "field": "parent_relationship",
+          "label": "股权关系",
+          "value": "长江证券股份有限公司全资另类子公司。",
+          "source_id": "cjsc_company_2024"
+        },
+        {
+          "field": "business_scope",
+          "label": "经营范围",
+          "value": "股权投资、项目投资（2024-07-22 披露）。",
+          "source_id": "cjsc_scope_2024"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币 50 亿元（2024-07-22 披露）。",
+          "source_id": "cjsc_scope_2024"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "2017 年发行人公告使用“长江创新投”作为长江证券创新投资（湖北）有限公司的简称，并记录其参与共同认购国睿39号集合资金信托；该记录不扩展为其完整投资组合。",
+          "source_id": "issuer_alias_2017"
+        },
         {
           "description": "融资来源记录：容芯致远 · 天使轮 · 2026-05-08 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ceee1629da3e3cce"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "法人名称、母公司关系、经营范围和 50 亿元注册资本依据长江证券 2024 年正式披露；简称对应关系由发行人公告核验，注册资本按该披露日期表述。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "cjsc_company_2024",
+          "source_url": "https://www.cjsc.com.cn/main/a/20240722/33014.shtml",
+          "source_title": "关于长江证券创新投资（湖北）有限公司基本信息披露的说明",
+          "source_content_hash": "f9d0ec0f4403c748b60b32084ee9700cd1d475b8c3de3e174611bd0f739397ed",
+          "quote": "长江证券创新投资（湖北）有限公司为长江证券股份有限公司的全资另类子公司。",
+          "quote_hash": "1d48b4dd9f993fc8af151eec9b8dc221b74d75708cbb8f04e7d6a4d919d234f8"
+        },
+        {
+          "source_id": "cjsc_scope_2024",
+          "source_url": "https://www.cjsc.com.cn/main/a/20240722/33014.shtml",
+          "source_title": "关于长江证券创新投资（湖北）有限公司基本信息披露的说明",
+          "source_content_hash": "f9d0ec0f4403c748b60b32084ee9700cd1d475b8c3de3e174611bd0f739397ed",
+          "quote": "注册资本：伍拾亿元整 经营范围：股权投资、项目投资",
+          "quote_hash": "c9e42a7900ffe00f9750b062ae5812f812a84a299a14456fe7c536d1e26f46db"
+        },
+        {
+          "source_id": "issuer_alias_2017",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2017-07-01/1203671070.PDF",
+          "source_title": "对外公告",
+          "source_content_hash": "69d66ad58ec0111473fad8ca440d1f65726e9de60b60c42695235f1a8f1d3098",
+          "quote": "长江证券创新投资（湖北）有限公司 （简称“长江创新投”）",
+          "quote_hash": "c265147588326a0e739bb0edbfe65d770b9a934366a70b483824aa07995215a8"
+        },
         {
           "source_id": "FISRC-ceee1629da3e3cce",
           "source_url": "https://news.pedaily.cn/202605/563553.shtml",
@@ -136390,7 +136870,7 @@
           "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     },
     "INV-a5b1b416d5a392": {
       "profile_type": "organization",
@@ -139999,21 +140479,45 @@
       ]
     },
     "INV-084bb13acecca1": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bradley Tabone 当前按“个人投资者”收录。最新融资披露记录日期为 2026-04-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Vertex Ventures SEA 的 FORMAS.AI 融资公告将 Bradley Tabone 列为该轮天使投资人，并称其为 Hammertech 联合创始人。未找到该来源披露其教育经历、任期或其他完整履历。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Hammertech",
+          "title": "联合创始人（公告原文：Co-founder）",
+          "period": "融资公告披露；任职起止时间未披露",
+          "description": "Vertex Ventures SEA 的公告将 Bradley Tabone 与 Hammertech 联合创始人身份关联。",
+          "source_id": "bradley_formas"
+        }
+      ],
+      "education": [],
+      "experience_summary": "姓名、融资轮投资者身份及联合创始人关联均来自 Vertex Ventures SEA 的项目公告；没有据此推断任职日期、投资金额或教育经历。",
       "track_record": [
+        {
+          "description": "Vertex Ventures SEA 将 Bradley Tabone 列为 FORMAS.AI 融资轮天使投资人；个人出资金额未披露。",
+          "source_id": "bradley_formas"
+        },
         {
           "description": "融资来源记录：FORMAS.AI · 预种子轮 · 2026-04-29 · 本轮天使投资人 · 398万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dc1378b0805f976c"
         }
       ],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "姓名、融资轮投资者身份及联合创始人关联均来自 Vertex Ventures SEA 的项目公告；没有据此推断任职日期、投资金额或教育经历。",
+      "facts": [],
+      "milestones": [],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "bradley_formas",
+          "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture",
+          "source_title": "FORMAS.AI Raises US$3.98 Million in Oversubscribed Pre-Seed Round to Build the AI-Native Design Workspace for Architecture | Vertex Ventures SEA",
+          "source_content_hash": "e536bc23534753ef217c69211cc0b970eb0249522333eb166fe691ee22ce2840",
+          "quote": "Bradley Tabone, Co-founder of Hammertech, a construction technology platform",
+          "quote_hash": "0c1a2a14cfe0ded3ac490b1db1bf760d927e4b680c80538f0cb8e85aef35e532"
+        },
         {
           "source_id": "FISRC-dc1378b0805f976c",
           "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
@@ -140023,7 +140527,7 @@
           "quote_hash": "0c1a2a14cfe0ded3ac490b1db1bf760d927e4b680c80538f0cb8e85aef35e532"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     },
     "INV-c06a382c1196dc": {
       "profile_type": "person",
@@ -172167,21 +172671,80 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-d025dfee892642": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kuwait Investment Authority (KIA) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Kuwait Investment Authority（KIA）官网称其于 1982 年成立为 Kuwait Investment Office 的母机构，管理国家储备和 Future Generations Fund。官网将其定位为长期机构投资者；Helix 公告将其列为创始投资者。",
+      "facts": [
+        {
+          "field": "established",
+          "label": "成立年份",
+          "value": "1982",
+          "source_id": "kia_about"
+        },
+        {
+          "field": "funds_managed",
+          "label": "官网披露的管理职责",
+          "value": "管理国家储备、Future Generations Fund 及财政部长委托的其他资金。",
+          "source_id": "kia_about"
+        },
+        {
+          "field": "investment_mandate",
+          "label": "官网披露的使命",
+          "value": "长期投资者；使命为实现长期投资回报。",
+          "source_id": "kia_mandate"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Helix 于 2026-06-11 发布消息，将 KIA 列为创始投资者；未披露 KIA 单独投资金额。",
+          "source_id": "kia_helix"
+        },
         {
           "description": "融资来源记录：Helix Digital Infrastructure · 历史轮次未披露 · 2026-06 · 创始投资方（2026年6月）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构设立背景和长期投资使命来自 KIA 官网；Helix 公告未披露 KIA 的投资金额。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://www.kia.gov.kw/",
+          "url": "https://www.kia.gov.kw/",
+          "source_id": "kia_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "kia_about",
+          "source_url": "https://www.kia.gov.kw/about-kia/",
+          "source_title": "About &#8211; Kuwait Investment Authority",
+          "source_content_hash": "54f68341422aec81de8910dad187196a8e48f5656754622f3eba28b3ccd29d33",
+          "quote": "The Kuwait Investment Authority (KIA) was then established in 1982 as KIO’s parent organization.",
+          "quote_hash": "92891e83ea7aa883fef1245214ea9540a8f745522b65a716516fe4cbf0669440"
+        },
+        {
+          "source_id": "kia_mandate",
+          "source_url": "https://www.kia.gov.kw/about-kia/our-mandate/",
+          "source_title": "Our Mandate &#8211; Kuwait Investment Authority",
+          "source_content_hash": "0cbf1ec6048deb20f418e1795e036a0d228edf8f26661d55f89fdc33fd654ea0",
+          "quote": "We are a responsible and long term institutional investor",
+          "quote_hash": "80a0da1470e3504707a4f204ba33a0377c5b3b06b671986d21244237211dcb23"
+        },
+        {
+          "source_id": "kia_helix",
+          "source_url": "https://www.helixdi.com/news-insights/kkr-launches-helix-digital-infrastructure-to-finance-and-deliver-the-next-generation-of-ai-infrastructure/",
+          "source_title": "KKR Launches Helix Digital Infrastructure, a New Company to Finance and Deliver the Next Generation of AI Infrastructure | Helix Digital Infrastructure",
+          "source_content_hash": "ff8d78fafc2c85d83b3b3c1680f6773aeb5d6538948d23051aa31e88920ef465",
+          "quote": "Kuwait Investment Authority, NVIDIA and Vistra join KKR as founding investors",
+          "quote_hash": "63ff385106047586a7d9508017945eb22676f3da09cbb4dc6735ac84f1d9311c"
+        },
         {
           "source_id": "FISRC-9d03a17bbefffa61",
           "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
@@ -172194,21 +172757,74 @@
       "last_verified_at": "2026-10-05"
     },
     "INV-7b7371928e83f9": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Vistra 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Vistra Corp. 投资者关系官网将其标示为 NYSE: VST，并介绍其经营零售电力和发电业务。Helix 官方发布将 Vistra 列为创始投资者及优先电力合作伙伴；未披露投资金额。",
+      "facts": [
+        {
+          "field": "business_focus",
+          "label": "官网披露的主营业务",
+          "value": "美国综合零售电力与发电公司，股票代码 NYSE: VST。",
+          "source_id": "vistra_about"
+        },
+        {
+          "field": "helix_role",
+          "label": "Helix 项目角色",
+          "value": "创始投资者及 Helix 的优先电力合作伙伴；投资金额未披露。",
+          "source_id": "vistra_power"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Helix 官方公告将 Vistra 列为创始投资者；没有给出 Vistra 的投资金额。",
+          "source_id": "vistra_helix"
+        },
         {
           "description": "融资来源记录：Helix Digital Infrastructure · 历史轮次未披露 · 2026-06 · 创始投资方（2026年6月）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "企业身份和业务来自 Vistra Corp. 投资者关系官网；Helix 记录的电力合作与投资方身份来自 Helix 发布，未披露该笔投资金额。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://investor.vistracorp.com/overview",
+          "url": "https://investor.vistracorp.com/overview",
+          "source_id": "vistra_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "vistra_about",
+          "source_url": "https://investor.vistracorp.com/overview",
+          "source_title": "Vistra Corp. Investor Relations - Overview",
+          "source_content_hash": "bcd6b7524a5d7814dd3a21f2d1ff72103b5ae5d6649a276af190586e61c5166a",
+          "quote": "Vistra (NYSE: VST) is a leading Fortune 500 integrated retail electricity and power generation company based in Irving, Texas",
+          "quote_hash": "dfe1a7ce2082efbd444ab86962915395534c3848f546eca88390bc42fe80e0da"
+        },
+        {
+          "source_id": "vistra_helix",
+          "source_url": "https://www.helixdi.com/news-insights/kkr-launches-helix-digital-infrastructure-to-finance-and-deliver-the-next-generation-of-ai-infrastructure/",
+          "source_title": "KKR Launches Helix Digital Infrastructure, a New Company to Finance and Deliver the Next Generation of AI Infrastructure | Helix Digital Infrastructure",
+          "source_content_hash": "ff8d78fafc2c85d83b3b3c1680f6773aeb5d6538948d23051aa31e88920ef465",
+          "quote": "Kuwait Investment Authority, NVIDIA and Vistra join KKR as founding investors",
+          "quote_hash": "63ff385106047586a7d9508017945eb22676f3da09cbb4dc6735ac84f1d9311c"
+        },
+        {
+          "source_id": "vistra_power",
+          "source_url": "https://www.helixdi.com/news-insights/kkr-launches-helix-digital-infrastructure-to-finance-and-deliver-the-next-generation-of-ai-infrastructure/",
+          "source_title": "KKR Launches Helix Digital Infrastructure, a New Company to Finance and Deliver the Next Generation of AI Infrastructure | Helix Digital Infrastructure",
+          "source_content_hash": "ff8d78fafc2c85d83b3b3c1680f6773aeb5d6538948d23051aa31e88920ef465",
+          "quote": "Vistra as the preferred power partner to Helix",
+          "quote_hash": "330e33845c90230c48f21f23c8a831ddc7729d91a1cbf323ff2bb18bdac4de1b"
+        },
         {
           "source_id": "FISRC-9d03a17bbefffa61",
           "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
@@ -206499,21 +207115,45 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-08e2ee4995b8d4": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jerry Tworek 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Sycamore 的 6500 万美元种子轮公告将 Jerry Tworek 列为知名天使投资人，并称其曾任 OpenAI Research Scientist。公告未披露任期、现职或学历。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "OpenAI",
+          "title": "Research Scientist（来源称曾任）",
+          "period": "来源称 former；任职起止日期未披露",
+          "description": "Sycamore 融资公告将 Jerry Tworek 描述为曾任 OpenAI Research Scientist。",
+          "source_id": "jerry_sycamore"
+        }
+      ],
+      "education": [],
+      "experience_summary": "人物身份、过往研究职位及天使投资者身份均依据 Sycamore 自身融资公告；任职起止日期和目前角色未披露。",
       "track_record": [
+        {
+          "description": "Sycamore 将 Jerry Tworek 列为其 6500 万美元种子轮的知名天使投资人；个人投资金额未披露。",
+          "source_id": "jerry_sycamore"
+        },
         {
           "description": "融资来源记录：Sycamore · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "人物身份、过往研究职位及天使投资者身份均依据 Sycamore 自身融资公告；任职起止日期和目前角色未披露。",
+      "facts": [],
+      "milestones": [],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "jerry_sycamore",
+          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+          "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
+          "source_content_hash": "ebd89f06f7aac0e52ecdbbea0e88cbdee116486643a65781b7af4a27c01c9f44",
+          "quote": "Jerry Tworek (former Research Scientist at OpenAI)",
+          "quote_hash": "23ea087f24fa381cd4c294adae40bdaf9863815c740d4eea7e71919ba086eb4a"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -206523,7 +207163,7 @@
           "quote_hash": "23ea087f24fa381cd4c294adae40bdaf9863815c740d4eea7e71919ba086eb4a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     },
     "INV-f4a64904d632bb": {
       "profile_type": "person",

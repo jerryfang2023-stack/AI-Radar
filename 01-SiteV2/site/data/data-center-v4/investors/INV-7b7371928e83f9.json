@@ -121,21 +121,74 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Vistra 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Vistra Corp. 投资者关系官网将其标示为 NYSE: VST，并介绍其经营零售电力和发电业务。Helix 官方发布将 Vistra 列为创始投资者及优先电力合作伙伴；未披露投资金额。",
+      "facts": [
+        {
+          "field": "business_focus",
+          "label": "官网披露的主营业务",
+          "value": "美国综合零售电力与发电公司，股票代码 NYSE: VST。",
+          "source_id": "vistra_about"
+        },
+        {
+          "field": "helix_role",
+          "label": "Helix 项目角色",
+          "value": "创始投资者及 Helix 的优先电力合作伙伴；投资金额未披露。",
+          "source_id": "vistra_power"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Helix 官方公告将 Vistra 列为创始投资者；没有给出 Vistra 的投资金额。",
+          "source_id": "vistra_helix"
+        },
         {
           "description": "融资来源记录：Helix Digital Infrastructure · 历史轮次未披露 · 2026-06 · 创始投资方（2026年6月）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "企业身份和业务来自 Vistra Corp. 投资者关系官网；Helix 记录的电力合作与投资方身份来自 Helix 发布，未披露该笔投资金额。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://investor.vistracorp.com/overview",
+          "url": "https://investor.vistracorp.com/overview",
+          "source_id": "vistra_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "vistra_about",
+          "source_url": "https://investor.vistracorp.com/overview",
+          "source_title": "Vistra Corp. Investor Relations - Overview",
+          "source_content_hash": "bcd6b7524a5d7814dd3a21f2d1ff72103b5ae5d6649a276af190586e61c5166a",
+          "quote": "Vistra (NYSE: VST) is a leading Fortune 500 integrated retail electricity and power generation company based in Irving, Texas",
+          "quote_hash": "dfe1a7ce2082efbd444ab86962915395534c3848f546eca88390bc42fe80e0da"
+        },
+        {
+          "source_id": "vistra_helix",
+          "source_url": "https://www.helixdi.com/news-insights/kkr-launches-helix-digital-infrastructure-to-finance-and-deliver-the-next-generation-of-ai-infrastructure/",
+          "source_title": "KKR Launches Helix Digital Infrastructure, a New Company to Finance and Deliver the Next Generation of AI Infrastructure | Helix Digital Infrastructure",
+          "source_content_hash": "ff8d78fafc2c85d83b3b3c1680f6773aeb5d6538948d23051aa31e88920ef465",
+          "quote": "Kuwait Investment Authority, NVIDIA and Vistra join KKR as founding investors",
+          "quote_hash": "63ff385106047586a7d9508017945eb22676f3da09cbb4dc6735ac84f1d9311c"
+        },
+        {
+          "source_id": "vistra_power",
+          "source_url": "https://www.helixdi.com/news-insights/kkr-launches-helix-digital-infrastructure-to-finance-and-deliver-the-next-generation-of-ai-infrastructure/",
+          "source_title": "KKR Launches Helix Digital Infrastructure, a New Company to Finance and Deliver the Next Generation of AI Infrastructure | Helix Digital Infrastructure",
+          "source_content_hash": "ff8d78fafc2c85d83b3b3c1680f6773aeb5d6538948d23051aa31e88920ef465",
+          "quote": "Vistra as the preferred power partner to Helix",
+          "quote_hash": "330e33845c90230c48f21f23c8a831ddc7729d91a1cbf323ff2bb18bdac4de1b"
+        },
         {
           "source_id": "FISRC-9d03a17bbefffa61",
           "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",

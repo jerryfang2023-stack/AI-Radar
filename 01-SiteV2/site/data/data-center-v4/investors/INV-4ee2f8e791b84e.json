@@ -137,21 +137,80 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Samsung C&T 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Samsung C&T 官网介绍其 Trading & Investment Group 在化学品、钢铁、能源和材料领域开展业务。三星 2026 年公告将 Samsung C&T 列入共同投资 Helix 的集团主体；公告未披露该公司的单独投资金额。",
+      "facts": [
+        {
+          "field": "business_focus",
+          "label": "Trading & Investment Group 业务范围",
+          "value": "化学品、钢铁、能源和材料。",
+          "source_id": "samsungcnt_about"
+        },
+        {
+          "field": "helix_group_commitment",
+          "label": "集团共同投资披露",
+          "value": "被列为共同投资 Helix 的三星主体之一；公告披露集团合计 10 亿美元，未披露 Samsung C&T 单独金额。",
+          "source_id": "cnt_helix"
+        },
+        {
+          "field": "group_amount_allocation",
+          "label": "集团公告金额拆分口径",
+          "value": "Samsung Electronics 单独承诺 5 亿美元；其余五家子公司共同承担余额，公告未分别披露这五家各自金额。",
+          "source_id": "cnt_amount_split"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "三星公告列明 Samsung C&T 参与对 Helix Digital Infrastructure 的集团共同投资，合计金额为 10 亿美元，未分拆各子公司金额。",
+          "source_id": "cnt_helix"
+        },
         {
           "description": "融资来源记录：Helix Digital Infrastructure · 轮次未披露 · 2026-09-29 · 本次共同投资承诺方 · USD 1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构业务依据 Samsung C&T 新闻室介绍；Helix 投资仅按三星集团合计 10 亿美元披露，不将金额拆给 Samsung C&T。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://news.samsungcnt.com/en/about-us/",
+          "url": "https://news.samsungcnt.com/en/about-us/",
+          "source_id": "samsungcnt_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "samsungcnt_about",
+          "source_url": "https://news.samsungcnt.com/en/about-us/",
+          "source_title": "About Us - Samsung C&amp;T Newsroom",
+          "source_content_hash": "a4ce975b76f51b12ef3a24598218e1178952ba9e12e242ca52511b97211b0ca5",
+          "quote": "Samsung C&T Trading & Investment Group pursues and develops businesses around the world in the areas of chemicals, steel, energy, and materials",
+          "quote_hash": "c1cf09fee3e7ac9d689e5bff15d2e5b8fe3671ab5ca1d9d8dcf5b660b5eb65be"
+        },
+        {
+          "source_id": "cnt_helix",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+          "quote_hash": "07849e18d0c5da8bf17b36a6ca032079c51aa5a3a791c685682a1ebe03dc62ac"
+        },
+        {
+          "source_id": "cnt_amount_split",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix &#8211; Samsung Newsroom India",
+          "source_content_hash": "b3e8bb5d0263f7ed331a70a9b51543788fb628c6f34925f629e3dfc4a374591f",
+          "quote": "Samsung Electronics to invest USD 500 million; five other affiliates investing the remainder",
+          "quote_hash": "62c9faafde510629afbf8e4e9d3f1c0737e78402b84a5c9953c6e1a3ee45734b"
+        },
         {
           "source_id": "FISRC-9d03a17bbefffa61",
           "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",

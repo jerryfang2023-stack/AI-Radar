@@ -121,21 +121,80 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kuwait Investment Authority (KIA) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Kuwait Investment Authority（KIA）官网称其于 1982 年成立为 Kuwait Investment Office 的母机构，管理国家储备和 Future Generations Fund。官网将其定位为长期机构投资者；Helix 公告将其列为创始投资者。",
+      "facts": [
+        {
+          "field": "established",
+          "label": "成立年份",
+          "value": "1982",
+          "source_id": "kia_about"
+        },
+        {
+          "field": "funds_managed",
+          "label": "官网披露的管理职责",
+          "value": "管理国家储备、Future Generations Fund 及财政部长委托的其他资金。",
+          "source_id": "kia_about"
+        },
+        {
+          "field": "investment_mandate",
+          "label": "官网披露的使命",
+          "value": "长期投资者；使命为实现长期投资回报。",
+          "source_id": "kia_mandate"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Helix 于 2026-06-11 发布消息，将 KIA 列为创始投资者；未披露 KIA 单独投资金额。",
+          "source_id": "kia_helix"
+        },
         {
           "description": "融资来源记录：Helix Digital Infrastructure · 历史轮次未披露 · 2026-06 · 创始投资方（2026年6月）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构设立背景和长期投资使命来自 KIA 官网；Helix 公告未披露 KIA 的投资金额。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "https://www.kia.gov.kw/",
+          "url": "https://www.kia.gov.kw/",
+          "source_id": "kia_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "kia_about",
+          "source_url": "https://www.kia.gov.kw/about-kia/",
+          "source_title": "About &#8211; Kuwait Investment Authority",
+          "source_content_hash": "54f68341422aec81de8910dad187196a8e48f5656754622f3eba28b3ccd29d33",
+          "quote": "The Kuwait Investment Authority (KIA) was then established in 1982 as KIO’s parent organization.",
+          "quote_hash": "92891e83ea7aa883fef1245214ea9540a8f745522b65a716516fe4cbf0669440"
+        },
+        {
+          "source_id": "kia_mandate",
+          "source_url": "https://www.kia.gov.kw/about-kia/our-mandate/",
+          "source_title": "Our Mandate &#8211; Kuwait Investment Authority",
+          "source_content_hash": "0cbf1ec6048deb20f418e1795e036a0d228edf8f26661d55f89fdc33fd654ea0",
+          "quote": "We are a responsible and long term institutional investor",
+          "quote_hash": "80a0da1470e3504707a4f204ba33a0377c5b3b06b671986d21244237211dcb23"
+        },
+        {
+          "source_id": "kia_helix",
+          "source_url": "https://www.helixdi.com/news-insights/kkr-launches-helix-digital-infrastructure-to-finance-and-deliver-the-next-generation-of-ai-infrastructure/",
+          "source_title": "KKR Launches Helix Digital Infrastructure, a New Company to Finance and Deliver the Next Generation of AI Infrastructure | Helix Digital Infrastructure",
+          "source_content_hash": "ff8d78fafc2c85d83b3b3c1680f6773aeb5d6538948d23051aa31e88920ef465",
+          "quote": "Kuwait Investment Authority, NVIDIA and Vistra join KKR as founding investors",
+          "quote_hash": "63ff385106047586a7d9508017945eb22676f3da09cbb4dc6735ac84f1d9311c"
+        },
         {
           "source_id": "FISRC-9d03a17bbefffa61",
           "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",

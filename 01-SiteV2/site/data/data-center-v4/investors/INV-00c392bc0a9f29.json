@@ -137,21 +137,74 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Goodwater 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "SEC 投资顾问登记页将 GOODWATER CAPITAL, LLC 列为 GOODWATER CAPITAL 的登记主体，并标记为豁免报告顾问；该页明确说明其并非 SEC 注册顾问。Trace 的融资公告将 Goodwater Capital 列为投资方。",
+      "facts": [
+        {
+          "field": "regulatory_identity",
+          "label": "SEC 顾问登记页所列主体",
+          "value": "GOODWATER CAPITAL, LLC；CRD 172576，业务名称包含 GOODWATER CAPITAL。",
+          "source_id": "goodwater_sec"
+        },
+        {
+          "field": "regulatory_status",
+          "label": "SEC 顾问页面所列状态",
+          "value": "豁免报告顾问（Exempt Reporting Adviser）；页面同时标注 Not Currently Registered。",
+          "source_id": "goodwater_registration_status"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Trace 于 2026 年公布 300 万美元融资，并将 Goodwater Capital 列为投资方；未披露其单独投资金额。",
+          "source_id": "trace_round"
+        },
         {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e7a3713da8f3e54"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "队列品牌按 SEC CRD 172576 记录核验；监管页面将其状态标为 Exempt Reporting Adviser / Not Currently Registered，不能称其为 SEC 注册顾问或称备案获 SEC 批准。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "goodwater_sec",
+          "source_url": "https://adviserinfo.sec.gov/firm/summary/172576",
+          "source_title": "GOODWATER CAPITAL - Investment Adviser Firm",
+          "source_content_hash": "00faaa49441c47e41fdb57f53b935627f1300520e00be1714a78e511ff324439",
+          "quote": "GOODWATER CAPITAL ( CRD # 172576/SEC#:802-80285 ) GOODWATER CAPITAL, GOODWATER CAPITAL, LLC",
+          "quote_hash": "8e51597360ff48aa856adfee2688e5643e79efdc4805e9e4aab05dcd922cc5e8"
+        },
+        {
+          "source_id": "goodwater_era",
+          "source_url": "https://adviserinfo.sec.gov/firm/summary/172576",
+          "source_title": "GOODWATER CAPITAL - Investment Adviser Firm",
+          "source_content_hash": "00faaa49441c47e41fdb57f53b935627f1300520e00be1714a78e511ff324439",
+          "quote": "This adviser FILES REPORT(S) as an Exempt Reporting Adviser",
+          "quote_hash": "3178501812e2e6b9b9727b6ae15df9fbf1abd4962d1b3935c69b4ffb238047d1"
+        },
+        {
+          "source_id": "trace_round",
+          "source_url": "https://www.trace.so/blog/trace-raised-dollar3m-to-build-the-context-layer-for-ai-at-work",
+          "source_title": "Trace raised $3M to build the context layer for AI at work - Trace",
+          "source_content_hash": "785f8ff4713a99f598fd744d4346fef9d68bfa2f690fe749b78db7cb8e974e91",
+          "quote": "raised $3M from investors and operators who understand the space, including: Y Combinator Xeno Ventures Goodwater Capital",
+          "quote_hash": "fdc526b0a3b63a64bece57c8533c5b8661e55615c90f5706472c6a2950c7b480"
+        },
+        {
+          "source_id": "goodwater_registration_status",
+          "source_url": "https://adviserinfo.sec.gov/firm/summary/172576",
+          "source_title": "GOODWATER CAPITAL - Investment Adviser Firm",
+          "source_content_hash": "00faaa49441c47e41fdb57f53b935627f1300520e00be1714a78e511ff324439",
+          "quote": "REGISTRATION STATUS Not Currently Registered",
+          "quote_hash": "c7e152b9ee8f21666f757b60dffca7ada6f28b2b9ae7be17b412cac02f4faf24"
+        },
         {
           "source_id": "FISRC-2e7a3713da8f3e54",
           "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
@@ -161,7 +214,7 @@
           "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }
