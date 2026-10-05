@@ -26970,7 +26970,42 @@
       "provider": "manual_review",
       "model": "responsible-agent-evidence-review",
       "generated_at": "2026-10-05T00:45:44.265Z"
+    },
+    "EV-b9619bdde0bdc311": {
+      "id": "EV-b9619bdde0bdc311",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "该公司主营超大规模数据中心、电力与光纤等AI算力基础设施，属算力与芯片赛道的数据中心与算力基础设施细分。",
+      "input_hash": "a4826020661a76606e862dc06c09aa2604991e1d1d27cc73373be5b256de33f7",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a2b8036be101b776",
+          "quote": "Helix Digital Infrastructure finances, develops, and operates AI-enabling infrastructure that includes hyperscale data centers, power generation and transmission, fiber, and connectivity."
+        },
+        {
+          "source_id": "FISRC-9d03a17bbefffa61",
+          "quote": "Helix is an AI-enabling infrastructure provider that is designed to deliver integrated solutions across the entire value chain, including hyperscale data center development and operations, power generation (covering both baseload and flexible energy sources), transmission and distribution infrastructure, and fiber-optic networks."
+        },
+        {
+          "source_id": "FISRC-ead174b6e8a90910",
+          "quote": "The company aims to provide one-stop AI infrastructure solutions for hyperscale cloud providers."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-05T05:25:48.768Z"
     }
   },
-  "generated_at": "2026-10-05T00:43:28.651Z"
+  "generated_at": "2026-10-05T05:25:48.771Z"
 }

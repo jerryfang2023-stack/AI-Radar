@@ -5,7 +5,7 @@ export function isFundingDiscovery(item) {
   const text = `${title} ${item.summary || ""}`;
   if (/融资融券|融资余额|融资买入|基金.{0,10}(?:募资|募集)|(?:fund|funds)\s+(?:closes|raises)\b/iu.test(title)) return false;
   // High recall discovery: uncertain/rumored rounds remain leads for the original-source gate.
-  return /融资|获投|领投|跟投|投资.{0,18}(?:公司|创业)|\b(?:funding|fundraise|fundraising|raised|raises|series\s+[a-z]|seed\s+round|investing\s+in|investment\s+in)\b/iu.test(text);
+  return /融资|获投|领投|跟投|投资.{0,18}(?:公司|创业)|(?:向|对).{0,80}(?:公司|企业).{0,30}(?:投资|注资)|\b(?:funding|fundraise|fundraising|raised|raises|series\s+[a-z]|seed\s+round|investing\s+in|investment\s+in)\b|\binvest(?:s|ed|ing)?\b.{0,100}\b(?:million|billion|USD)\b.{0,40}\bin\b|\bcommits?\b.{0,50}\b(?:million|billion|USD)\b.{0,50}\bto\b/iu.test(text);
 }
 
 export function aihotCandidate(item) {

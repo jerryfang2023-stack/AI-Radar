@@ -1911,5 +1911,27 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-eb19cb4ba055e824",
+    "raw_id": "RAW-478adbc3b9071397",
+    "claim_type": "funding",
+    "subject": "Helix Digital Infrastructure",
+    "predicate": "funding",
+    "object": "USD 1 billion investment commitment from Samsung affiliates",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-535254ae70fa6be5"
+    },
+    "source_span": {
+      "raw_id": "RAW-478adbc3b9071397",
+      "start": 0,
+      "end": 283
+    },
+    "source_quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure, an AI infrastructure company established by global investment firm KKR.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
   }
 ]

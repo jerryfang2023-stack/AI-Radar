@@ -1119,7 +1119,7 @@ export function sentenceSpans(body) {
 }
 
 function metricValues(text) {
-  return [...text.matchAll(/(?:(?:₹|\bINR\s*|\bRs\.?\s+)\d[\d,]*(?:\.\d+)?\s*(?:crores?|cr\b|lakhs?|lacs?|million|billion|thousand|[MBK]\b)?|(?:超过|超|逾|至少)(?:千万元|亿元|千万|亿)(?:人民币|元)?|[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|thousand|m|b|t|k|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|thousand|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗)|数(?:十|百|千)?万(?:元|美元|人民币)?)/giu)]
+  return [...text.matchAll(/(?:(?:₹|\bINR\s*|\bRs\.?\s+)\d[\d,]*(?:\.\d+)?\s*(?:crores?|cr\b|lakhs?|lacs?|million|billion|thousand|[MBK]\b)?|\b(?:USD|EUR|GBP|CNY|RMB|JPY)\s*\d[\d,]*(?:\.\d+)?\s*(?:million|billion|trillion|thousand|[MBK]\b)?|(?:超过|超|逾|至少)(?:千万元|亿元|千万|亿)(?:人民币|元)?|[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|thousand|m|b|t|k|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|thousand|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗)|数(?:十|百|千)?万(?:元|美元|人民币)?)/giu)]
     .map((match) => match[0]).slice(0, 12);
 }
 

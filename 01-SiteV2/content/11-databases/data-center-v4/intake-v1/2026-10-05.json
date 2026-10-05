@@ -1,7 +1,7 @@
 {
   "schema_version": "SOURCE-INTAKE-V1.1",
   "data_date": "2026-10-05",
-  "generated_at": "2026-10-05T00:29:19.484Z",
+  "generated_at": "2026-10-05T05:11:06.249Z",
   "collection_batches": [
     {
       "raw_ids": [
@@ -183,6 +183,14 @@
         "RAW-f335887cda8e70b9",
         "RAW-f681b3f22249805a",
         "RAW-f9287dfe216077ea"
+      ]
+    },
+    {
+      "raw_ids": [
+        "RAW-478adbc3b9071397"
+      ],
+      "eligible_raw_ids": [
+        "RAW-478adbc3b9071397"
       ]
     }
   ],
@@ -1242,6 +1250,18 @@
         "evidence://52f0daba0451bdfcf6f1749a8efc86dc0a6723f48dbb9a49ee60c8ce990d8e66"
       ],
       "content_hash": "52f0daba0451bdfcf6f1749a8efc86dc0a6723f48dbb9a49ee60c8ce990d8e66"
+    },
+    {
+      "source_artifact_id": "SA-647793f236dbf26e",
+      "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+      "canonical_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+      "publisher": "news.samsung.com",
+      "capture_method": "original_http",
+      "captured_at": "2026-10-05T05:11:05.484Z",
+      "snapshot_refs": [
+        "evidence://628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7"
+      ],
+      "content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7"
     }
   ],
   "raw_documents": [
@@ -4852,11 +4872,52 @@
         "key_excerpts": [],
         "eligible_for_v4_extraction": true
       }
+    },
+    {
+      "schema_version": "RAW-V4.0",
+      "raw_id": "RAW-478adbc3b9071397",
+      "source_artifact_id": "SA-647793f236dbf26e",
+      "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+      "canonical_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+      "publisher": "news.samsung.com",
+      "author": "",
+      "published_at": "2026-09-29",
+      "captured_at": "2026-10-05T05:11:05.484Z",
+      "language": "en",
+      "document_type": "article",
+      "title_original": "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix",
+      "title_zh": "",
+      "body_ref": "evidence://628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+      "content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+      "capture_method": "original_http",
+      "extraction_status": "accepted",
+      "market_scope": {
+        "source_registry_id": "",
+        "source_region": "",
+        "market_region": "",
+        "china_market_match": false,
+        "china_market_match_basis": ""
+      },
+      "intake_diagnostics": {
+        "acquisition_channel": "financing",
+        "search_path": "",
+        "evidence_object_type": "original_full_text",
+        "evidence_object_usable": true,
+        "evidence_strength": "",
+        "raw_qc_decision": "accepted",
+        "raw_qc_downstream_use": "v4_claim_extraction",
+        "extraction_quality": "medium",
+        "readability_score": 0,
+        "has_full_text": true,
+        "origin_fetch_status": "success",
+        "key_excerpts": [],
+        "eligible_for_v4_extraction": true
+      }
     }
   ],
   "counts": {
-    "source_artifacts": 88,
-    "raw_documents": 88,
-    "eligible_documents": 88
+    "source_artifacts": 89,
+    "raw_documents": 89,
+    "eligible_documents": 89
   }
 }

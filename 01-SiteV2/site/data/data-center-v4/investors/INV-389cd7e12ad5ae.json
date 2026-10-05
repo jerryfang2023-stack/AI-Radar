@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-05",
     "currentDate": "2026-10-05",
-    "eventCount": 3934,
+    "eventCount": 3935,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -215,11 +215,19 @@
     "translations": {
       "zh-CN": {
         "public_profile.summary": {
-          "text": "Arm 新闻稿称 Tony Fadell 是 Build Collective 的 Principal、活跃投资人与创业者；Build Collective 官方人物页也将其描述为投资人。",
-          "source_hash": "98f28a145edc90b51ce787ef4f8dad53bec42d1d83892594677dcfec197131e5",
+          "text": "Arm新闻稿称Tony Fadell是Build Collective的Principal、活跃投资人与创业者；Build Collective官网亦将其列为投资人。Build Collective团队页将该机构自述为非VC机构，因此不把其等同于传统有限期限风险投资基金。",
+          "source_hash": "9655cdf9f4686a741171b370d84f338044a4e17826b8498abe49a3ccb7f9d0c9",
           "provider": "deepseek",
-          "model": "deepseek-flash",
-          "translated_at": "2026-10-04T00:34:49.211Z",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-05T05:14:54.689Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "Build Collective官网对机构自身的描述",
+          "source_hash": "56d0c16aebb4ebcd2aca9767ace33d1cda2a2a7ebf69a2df3397497b49fd1960",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-05T05:14:54.689Z",
           "status": "translated"
         }
       }

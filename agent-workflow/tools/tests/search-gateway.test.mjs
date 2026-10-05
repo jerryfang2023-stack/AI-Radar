@@ -1,10 +1,17 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createSearchGateway, providerRequest, normalizeSearchResults } from "../lib/search-gateway.mjs";
-import { collectAIHotFeed } from "../lib/aihot-feed.mjs";
+import { collectAIHotFeed, isFundingDiscovery } from "../lib/aihot-feed.mjs";
 import { planFundingResearch } from "../lib/funding-research-plan.mjs";
 
 const response = (data, status = 200) => ({ ok: status === 200, status, headers: new Headers(), json: async () => data });
+
+test("AIHOT retains a disclosed investment commitment to an AI infrastructure company", () => {
+  assert.equal(isFundingDiscovery({ title: "三星系 6 家企业向 KKR 旗下 AI 基础设施公司 Helix 合计投资 10 亿美元" }), true);
+  assert.equal(isFundingDiscovery({ title: "Samsung To Invest USD 1 Billion in AI Infrastructure Company Helix" }), true);
+  assert.equal(isFundingDiscovery({ title: "Samsung Commits USD 1 Billion to Helix" }), true);
+  assert.equal(isFundingDiscovery({ title: "南亚科技将在屏东科学园区投资设厂" }), false);
+});
 test("Chinese queries retain language and domain constraints across providers", () => {
   const query = 'AI 玩具 融资 (site:36kr.com OR site:stcn.com) -site:stock.stcn.com';
   const request = providerRequest("exa", query, 8, { EXA_API_KEY: "fixture" });

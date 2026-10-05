@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-05",
     "currentDate": "2026-10-05",
-    "eventCount": 3934,
+    "eventCount": 3935,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -225,11 +225,27 @@
     "translations": {
       "zh-CN": {
         "public_profile.summary": {
-          "text": "Goodfire 的 2026 年 2 月 B 轮公告将 Juniper Ventures 列为现有投资者之一，并称其参与本轮融资；未披露 Juniper Ventures 的单独出资金额。",
-          "source_hash": "3a336591b0566d7513370632207b28097dd51258a1236fc3898c4fa4301617c4",
+          "text": "Juniper Ventures Growth I, LP 的 SEC Form D 将 Juniper Ventures Management, LLC 列为投资顾问，并列明 Nick Fitz 为相关管理人员。Goodfire 的官方融资公告将 Juniper Ventures 列为 B 轮既有投资者；公告未说明具体投资载体或单独出资额。",
+          "source_hash": "32939a650d12f8a62966a013f2002cdc85b43ae5d116c0b80dd803ee315ad544",
           "provider": "deepseek",
-          "model": "deepseek-flash",
-          "translated_at": "2026-10-04T02:43:47.823Z",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-05T05:14:39.058Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "SEC Form D 披露基金主体",
+          "source_hash": "05d0cd7ea2f77f7c3e1f5cd4c89a84a99552897083a01b3fb655afcfb864cc52",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-05T05:14:39.058Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "SEC Form D 披露投资顾问",
+          "source_hash": "bc29650f6c2d1c1235501ab098ce8a6a35011a5cd1a0a8657aa0318589520667",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-05T05:14:39.058Z",
           "status": "translated"
         }
       }
