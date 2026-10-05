@@ -155,15 +155,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "基金阶段及官网品牌依据 South Loop 官方网站；参投关系依据 Empromptu 融资公告。",
-      "summary": "South Loop Ventures 官网自述其为专注种子前与种子轮的风险投资基金；Empromptu 官方融资公告将 South Loop 列为其预种子轮参与方。本档仅记录机构自述及该项披露。",
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、票面上限和领域来自 South Loop Ventures 官网自述；融资参与关系采用被投企业公告。",
+      "summary": "South Loop Ventures 官网将其描述为投资最高50万美元的 pre-seed 和 seed 阶段风险投资基金，并列出能源与气候科技、金融科技、健康科技、体育科技和航天科技等关注领域。Empromptu 官方融资公告将 South Loop 列为预种子轮参与方。",
       "facts": [
         {
           "field": "investment_stage",
-          "label": "官网自述投资阶段",
-          "value": "Pre-seed 与 Seed",
-          "source_id": "PROFILE-d561fe89b30f3987e7b7"
+          "label": "官网披露的投资阶段",
+          "value": "South Loop Ventures 官网称其投资 pre-seed 和 seed 阶段项目。",
+          "source_id": "PROFILE-S-INV-6553738949423f-3"
+        },
+        {
+          "field": "investment_ticket",
+          "label": "官网披露的单笔投资上限",
+          "value": "South Loop Ventures 官网称其投资金额最高为50万美元。",
+          "source_id": "PROFILE-S-INV-6553738949423f-4"
         }
       ],
       "milestones": [],
@@ -196,6 +202,22 @@
           "quote_hash": "56debf64f06262b57cd7de07870c7857b5ea1b01b269f674260587a598c2de97"
         },
         {
+          "source_id": "PROFILE-S-INV-6553738949423f-3",
+          "source_url": "https://www.southloop.vc/",
+          "source_title": "South Loop Ventures",
+          "source_content_hash": "aebf3368a54bab6ef9c4fa8c9ba53756b110b5f3d9793ccdfcb58326b2091497",
+          "quote": "We are a Pre-Seed and Seed stage venture fund",
+          "quote_hash": "b20ccc1f34255c9dd18925453e94da42ad497b087b62f751a8d1b227faa51a42"
+        },
+        {
+          "source_id": "PROFILE-S-INV-6553738949423f-4",
+          "source_url": "https://www.southloop.vc/",
+          "source_title": "South Loop Ventures",
+          "source_content_hash": "aebf3368a54bab6ef9c4fa8c9ba53756b110b5f3d9793ccdfcb58326b2091497",
+          "quote": "investing up to $500K in remarkable founding teams",
+          "quote_hash": "a3ea0a43ccf0767b60b7366643dd4cf65714ea45660f7d14cef0802e99226c6f"
+        },
+        {
           "source_id": "FISRC-79832d8eb3d1b153",
           "source_url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/",
           "source_title": "Empromptu 获 200 万美元种子轮融资，助力企业构建 AI 应用",
@@ -212,7 +234,7 @@
           "quote_hash": "51accbd697c3fc2966ad47f6d7ed7f3145da46cc21f2e1c3e5dae993a82e2bab"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

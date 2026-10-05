@@ -139,33 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网披露法定主体；公开融资报道将华泰紫金列为老股东继续认购者，但未披露单独出资额及对应分轮金额。",
+      "summary": "华泰紫金官网披露其法定主体为华泰紫金投资有限责任公司。量子位关于千寻智能融资的报道将华泰紫金列为选择继续认购的老股东之一；报道涉及近20亿元两轮融资总额，未披露华泰紫金的单独出资额或对应分轮金额。",
+      "facts": [
+        {
+          "field": "identity",
+          "label": "法定主体",
+          "value": "华泰紫金官网披露公司名称为华泰紫金投资有限责任公司。",
+          "source_id": "huatai_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 千寻智能 其他融资 本轮参投。",
+          "description": "量子位报道将华泰紫金列为千寻智能融资中继续认购的老股东之一；近20亿元为两轮合计融资金额，单独出资额未披露。",
+          "source_id": "qianxun_round"
+        },
+        {
+          "description": "融资来源记录：千寻智能 · 其他融资 · 2026-02-24 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ee3064edf7c871f4"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "huatai_official",
+          "source_url": "https://www.htzjtz.com.cn/htzjtz/zjtz/xxpl.jsp",
+          "source_title": "信息披露",
+          "source_content_hash": "d926d67159732106fab964634eb46e583e2ad4ae9354f0782be0e4fb83691dc6",
+          "quote": "公司名称：华泰紫金投资有限责任公司",
+          "quote_hash": "96d9e8265dd8b9e9f884e70d91f819210cb3e57bb7d7a100a08c47f5cab14542"
+        },
+        {
+          "source_id": "qianxun_round",
+          "source_url": "https://www.qbitai.com/2026/02/381766.html",
+          "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 – 量子位",
+          "source_content_hash": "1b875dc1ac34fa449832fd49199ea2f004227e8a18e511f7d5edac53c88f7f72",
+          "quote": "顺为资本、Prosperity7、达晨财智、柏睿资本、弘晖基金、华泰紫金、东方嘉富、千乘资本、广发信德等老股东全部选择继续大额认购",
+          "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
+        },
         {
           "source_id": "FISRC-ee3064edf7c871f4",
           "source_url": "https://www.qbitai.com/2026/02/381766.html",
-          "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 &#8211; 量子位",
-          "source_content_hash": "993cddd5728be14860b667a95092f97cd804ebc86f27cc360d6b318e5d2b1d14",
+          "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+          "source_content_hash": "0ad2701645471c8d",
           "quote": "顺为资本、Prosperity7、达晨财智、柏睿资本、弘晖基金、华泰紫金、东方嘉富、千乘资本、广发信德等老股东全部选择继续大额认购",
           "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

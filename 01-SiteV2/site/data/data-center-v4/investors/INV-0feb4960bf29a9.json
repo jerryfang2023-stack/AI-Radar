@@ -138,11 +138,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
       "summary": "Genesys 是全球客户体验编排软件公司；Genesys 官方公告确认其对 Scaled Cognition 进行了投资。",
       "coverage_note": "公司身份和投资关系均来自 Genesys 官方新闻稿；档案不把未在官方公告中说明的本轮金额、轮次或条款作为已确认信息。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "business_profile",
+          "label": "官网披露的主营平台",
+          "value": "Genesys 官网称其通过 AI-Powered Experience Orchestration 平台服务客户与员工体验。",
+          "source_id": "PROFILE-R-INV-0feb4960bf29a9-3"
+        },
+        {
+          "field": "customer_coverage",
+          "label": "官网披露的服务覆盖范围",
+          "value": "Genesys 官网称其服务 100 多个国家的 8,000 多家组织。",
+          "source_id": "PROFILE-R-INV-0feb4960bf29a9-4"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -177,6 +190,22 @@
           "quote_hash": "0e0d61f3b8286e263d5ca5fa7d455ad82ec1c8f22017983f7054faf9d0f6461c"
         },
         {
+          "source_id": "PROFILE-R-INV-0feb4960bf29a9-3",
+          "source_url": "https://www.genesys.com/company",
+          "source_title": "Who We Are | Genesys",
+          "source_content_hash": "f6197cc42e521df5d2d9abd7d179dafe9d92b0bf45432e805b680761e685faeb",
+          "quote": "Through our innovative AI-Powered Experience Orchestration platform, we empower organizations of all sizes to improve loyalty and business outcomes",
+          "quote_hash": "cb6b70aabf98f71c3f08275dd45312dd46882ff6e7d3909aaea5ad1089e429fe"
+        },
+        {
+          "source_id": "PROFILE-R-INV-0feb4960bf29a9-4",
+          "source_url": "https://www.genesys.com/company",
+          "source_title": "Who We Are | Genesys",
+          "source_content_hash": "f6197cc42e521df5d2d9abd7d179dafe9d92b0bf45432e805b680761e685faeb",
+          "quote": "Genesys empowers more than 8,000 organizations in over 100 countries to improve loyalty and business outcomes",
+          "quote_hash": "e149e4b9b1329310db5193b833dfa18fa3312d9fba80d23482f073d359999e3b"
+        },
+        {
           "source_id": "FISRC-72c797dbf1b03cc1",
           "source_url": "https://startuprise.io/scaled-cognition-raises-100m-in-series-a-funding-round/",
           "source_title": "Scaled Cognition Raises $100M in Series A Funding Round",
@@ -185,7 +214,7 @@
           "quote_hash": "b7b11314f4824154c9fbb8679d041fb601eddb3ec4db09612a5847b07b6bc53d"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

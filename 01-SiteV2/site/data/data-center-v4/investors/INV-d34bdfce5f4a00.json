@@ -155,30 +155,89 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录 Apollo 官方披露的 Broadcom AI XPV Platform 资本方案及其对 Anthropic 算力扩张的支持，不推断为对 Anthropic 的股权投资。",
-      "summary": "Apollo 官方公告称其管理基金与关联方牵头 Broadcom AI XPV Platform 的资本方案，该平台将支持 Anthropic 算力扩容；这不是对 Anthropic 的直接股权投资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位及策略来自 Apollo 官网；Broadcom AI XPV 是资本解决方案案例。公告只说明其为 Anthropic 扩充算力提供支持，不代表 Anthropic 股权投资。",
+      "summary": "Apollo Global Management 是一家另类资产管理和资本解决方案提供商，官网称公司成立于 1990 年，业务覆盖 Credit、Equity 和 Real Assets。2026 年，Apollo 管理的基金及关联方领衔 Broadcom AI XPV Platform 的初始资本方案，以支持 AI 计算基础设施扩容；官方公告将 Anthropic 描述为该平台将支持扩容的计算客户，并未称 Apollo 直接购买 Anthropic 股权。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1990",
+          "source_id": "B24-APOLLO-ABOUT"
+        },
+        {
+          "field": "investment_focus",
+          "label": "业务范围",
+          "value": "信用、股权及实物资产投资。",
+          "source_id": "B24-APOLLO-STRATEGY"
+        },
+        {
+          "field": "investment_approach",
+          "label": "资本方案",
+          "value": "为企业提供长期资本及跨资本结构融资解决方案。",
+          "source_id": "B24-APOLLO-STRATEGY"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Apollo 官方公告称其管理基金与关联方牵头 Broadcom AI XPV Platform 的 350 亿美元初始资本方案，并称该平台将支持 Anthropic 的算力扩容；这是基础设施融资安排，不代表对 Anthropic 的直接股权投资。",
-          "source_id": "FISRC-12d28955f3aa1a00"
+          "description": "Apollo 2026 年 6 月 9 日公告称，其管理基金及关联方领衔 Broadcom AI XPV Platform 的初始 350 亿美元资本方案；公告称该平台将支持 Anthropic 已宣布的算力扩张。这是 AI 基础设施资本方案，不能记为 Apollo 直接持有 Anthropic 股权。",
+          "source_id": "B24-APOLLO-XPV"
         },
         {
           "description": "融资来源记录：Anthropic · 基础设施融资 · 2026-06-10 · 本轮领投 · 350亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a689df7815b7bebf"
+          "source_id": "FISRC-12d28955f3aa1a00"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.apollo.com/",
+          "url": "https://www.apollo.com/",
+          "source_id": "B24-APOLLO-ABOUT"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "B24-APOLLO-ABOUT",
+          "source_url": "https://www.apollo.com/aboutus",
+          "source_title": "About Apollo | Apollo Global Management",
+          "source_content_hash": "137b0925dac4256bb246820b77567eba81991475832b3884a3ec9c5a1845084d",
+          "quote": "Since our founding in 1990, we have believed that adhering to our values is integral to our success.",
+          "quote_hash": "9b7cd405a6fca14dbe37ef97288d14039f4babe9492275c464e75bf731239dde"
+        },
+        {
+          "source_id": "B24-APOLLO-STRATEGY",
+          "source_url": "https://www.apollo.com/strategies",
+          "source_title": "Strategies | Apollo Global Management",
+          "source_content_hash": "73ede82569227b95fcee2567adfe4a906cceb928a9641a5753036d819bc8b266",
+          "quote": "We invest in private and public markets and across the full spectrum of Credit, Equity and Real Assets to seek excess returns for our clients",
+          "quote_hash": "03e2e4329891182397d79b4865a4645d18cf2639f6b4c4ba77b1ba71b5221f65"
+        },
+        {
+          "source_id": "B24-APOLLO-XPV",
+          "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
+          "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
+          "source_content_hash": "c6cabe1fdd048dc5cb003c6baec6aba61dc124f84e639557a78c2d7f803b2673",
+          "quote": "Apollo-managed funds and affiliates are leading an initial $35 billion capital solution as part of Broadcom’s new AI XPV Platform (the “Platform”), in partnership with Blackstone (NYSE: BX) and leading global banks.",
+          "quote_hash": "541d78eee1ae43d8800090e5235317a031c7630d96c88ebb8c4ff5bd80c3a20d"
+        },
+        {
+          "source_id": "B24-APOLLO-ANTHROPIC",
+          "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
+          "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
+          "source_content_hash": "c6cabe1fdd048dc5cb003c6baec6aba61dc124f84e639557a78c2d7f803b2673",
+          "quote": "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026.",
+          "quote_hash": "e4c0e73e3b60421cc8c3eeee6a46c8d628dcd8ead351e5a5266b314f708fb5e2"
+        },
         {
           "source_id": "FISRC-12d28955f3aa1a00",
           "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
           "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
-          "source_content_hash": "c6cabe1fdd048dc5cb003c6baec6aba61dc124f84e639557a78c2d7f803b2673",
-          "quote": "Apollo (NYSE: APO) today announced that Apollo-managed funds and affiliates are leading an initial $35 billion capital solution as part of Broadcom’s new AI XPV Platform (the “Platform”), in partnership with Blackstone (NYSE: BX) and leading global banks. The Platform is designed to enable over 20GW in compute capacity for leading frontier AI labs through 2028. The initial transaction is the product of a deeply collaborative relationship between Apollo and Broadcom, designed to deliver committed, certain capital across a multi-year draw schedule. It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026.",
-          "quote_hash": "aa0e75cb48b947074c59db4b8fe2a86bdffb09b3098884b32bad59aa36af7a36"
+          "source_content_hash": "c6cabe1fdd048dc5",
+          "quote": "Apollo (NYSE: APO) today announced that Apollo-managed funds and affiliates are leading an initial $35 billion capital solution",
+          "quote_hash": "5abeb14d93350c34a5fcca25aaa20c6bb10ce217d6931f75daa9db1b632c29b4"
         },
         {
           "source_id": "FISRC-a689df7815b7bebf",
@@ -189,11 +248,11 @@
           "quote_hash": "9cd11f1f01fe96fd799f5d5add5aa9b8f687f57dbe21aa034e6dcbd6a5086148"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "Apollo 官方公告称其管理基金与关联方牵头 Broadcom AI XPV Platform 的资本方案，该平台将支持 Anthropic 算力扩容；这不是对 Anthropic 的直接股权投资。"
+      "experience_summary": "Apollo Global Management 是一家另类资产管理和资本解决方案提供商，官网称公司成立于 1990 年，业务覆盖 Credit、Equity 和 Real Assets。2026 年，Apollo 管理的基金及关联方领衔 Broadcom AI XPV Platform 的初始资本方案，以支持 AI 计算基础设施扩容；官方公告将 Anthropic 描述为该平台将支持扩容的计算客户，并未称 Apollo 直接购买 Anthropic 股权。"
     },
     "translations": {
       "zh-CN": {

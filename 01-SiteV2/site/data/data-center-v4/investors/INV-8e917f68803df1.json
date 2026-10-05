@@ -196,10 +196,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Positron 官方新闻稿将 Resilience Reserve 列为其 Series C 融资的额外投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金阶段与投资方向来自 Resilience Reserve 官网自述，参投活动来自项目方融资稿。组合案例仅为公开披露，不代表完整组合。",
+      "summary": "官网将 Resilience Reserve 描述为多阶段投资基金，关注人工智能与前沿科技、能源安全、可持续食品、疫情韧性、人类健康和气候韧性；Positron AI 官方融资稿另将其列为 Series C 其他投资人。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "官网披露的投资策略",
+          "value": "Resilience Reserve 官网将其描述为多阶段投资基金，投资于能在重要方面增强世界韧性的公司。",
+          "source_id": "PROFILE-COLLECT-INV-8e917f68803df1-I-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "官网列出的方向包括人工智能与前沿科技、能源安全、更清洁和可持续食品、疫情韧性、人类健康与气候韧性。",
+          "source_id": "PROFILE-COLLECT-INV-8e917f68803df1-I-2"
+        },
+        {
+          "field": "reported_investment_activity",
+          "label": "公开披露的融资参与",
+          "value": "Positron AI 的 Series C 官方融资稿将 Resilience Reserve 列为追加投资方之一。",
+          "source_id": "PROFILE-606c84f919bdafe87478"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -224,6 +243,14 @@
           "source_content_hash": "4779658a236855fa12a78be80bee8f07e77ab5c5f2b4de68313520570d04d491",
           "quote": "ion, was led by NEA and Jim Clark. Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTec",
           "quote_hash": "6e063e6750512649c6eadbf8c8a31e27f4c1d07c263a7cbf81715788d7183f53"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-8e917f68803df1-I-2",
+          "source_url": "https://resiliencereserve.com/about",
+          "source_title": "About &mdash; Resilience Reserve",
+          "source_content_hash": "fd3bc383b5b66be6f335213222bf1c1a62e2aa885da7e1b0823449d0a1f090d4",
+          "quote": "Resilience Reserve is a multistage investment fund, backing companies which are making the world more resilient in some important way.",
+          "quote_hash": "6d70e80f53255d8ee179cae23cecac054e7b3e33678cee71b6e65fd28ee5aafb"
         },
         {
           "source_id": "FISRC-272c28400131d6f2",

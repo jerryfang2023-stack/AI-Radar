@@ -139,29 +139,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Seraphim 官网公告将 Seraphim 列为 Zenithon 种子轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 Seraphim 官网；融资参与来自其投资标的公告。",
+      "summary": "Seraphim 官网团队页将其定位为专注全球 SpaceTech 的投资机构；其 2026 年 9 月 30 日公告将 Seraphim 列为 Zenithon 初始融资参与方。公告未披露 Seraphim 单独出资额。",
+      "facts": [
+        {
+          "field": "official_investment_focus",
+          "label": "官网团队页披露的机构定位",
+          "value": "Seraphim 官网称其为专注全球 SpaceTech 的投资机构。",
+          "source_id": "PROFILE-B7-INV-8dc5e2ac3a2372-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Seraphim 官网公告披露其参与 Zenithon 种子轮融资。",
+          "description": "Seraphim 2026-09-30 公告将其列为 Zenithon 初始融资参与方；未披露单独出资额。",
+          "source_id": "PROFILE-B7-INV-8dc5e2ac3a2372-1"
+        },
+        {
+          "description": "融资来源记录：Zenithon · 种子轮 · 2026-09-30 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-51e4efce7466f2fd"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-51e4efce7466f2fd",
+          "source_id": "PROFILE-B7-INV-8dc5e2ac3a2372-1",
           "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
           "source_title": "Zenithon Raises $10M For AI Engineering Models | Seraphim Space",
           "source_content_hash": "3b9e47f9376b40707339f5ac0b038a2624c0b79c5dc51d37dbf334ad75fd7a5b",
           "quote": "rld models for extreme physics has raised $10 million in initial funding. The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more. The technology aims to accelerate engineering design across space, fusion, advanced propulsion and semiconductors. Funding will support model development, team growt",
           "quote_hash": "4ee735a7ab0fc61b9d2008cd61e2595400c9525fba1b02802b349249b9167379"
+        },
+        {
+          "source_id": "PROFILE-B7-INV-8dc5e2ac3a2372-2",
+          "source_url": "https://seraphim.vc/about/team/",
+          "source_title": "Team | Seraphim Space",
+          "source_content_hash": "1918d5fbf6247d469c992df4e33afdf12d799e27f556dc4545a01631de0e33bd",
+          "quote": "Mark Boggett is CEO and General Partner of Seraphim, the leading investment firm dedicated exclusively to the global SpaceTech sector.",
+          "quote_hash": "e00cee890d7ff93e79c10f712364f1837d8cf0d1d9dd5d9a0e8f7d2fed915e4e"
+        },
+        {
+          "source_id": "FISRC-51e4efce7466f2fd",
+          "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
+          "source_title": "Zenithon Raises $10M For AI Engineering Models",
+          "source_content_hash": "59434f301bde0537",
+          "quote": "The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more.",
+          "quote_hash": "4254c68c7c5a2d6453724232835c1fd6c67ca1b6edb33c677d6078e4b398539a"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

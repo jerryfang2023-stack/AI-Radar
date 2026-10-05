@@ -123,19 +123,80 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "高通 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "高通创投的部门身份及投资方向来自高通官方资料；极豆科技融资参与来自经济观察网报道，未披露载体或单独出资金额。",
+      "summary": "高通官方资料称高通创投是高通的风险投资部门，并介绍其对人工智能、汽车、物联网、机器人和移动领域的投资重点。极豆科技融资报道将“高通”列为投资方，但没有说明具体投资载体，因此不将该笔交易直接归属于高通创投。",
+      "facts": [
+        {
+          "field": "investment_affiliate",
+          "label": "投资部门",
+          "value": "高通创投是高通的风险投资部门",
+          "source_id": "PROFILE-B12-INV-bb59b01135e574-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "侧重 AI 在汽车、物联网、机器人和移动领域的应用",
+          "source_id": "PROFILE-B12-INV-bb59b01135e574-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "极豆科技融资报道将“高通”列为投资方；报道未披露是否通过高通创投或其他主体投资。",
+          "source_id": "PROFILE-B12-INV-bb59b01135e574-4"
+        },
         {
           "description": "融资来源记录：上海极豆科技有限公司 · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0878f600ac208553"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.qualcommventures.com/about/",
+          "source_id": "PROFILE-B12-INV-bb59b01135e574-3"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-B12-INV-bb59b01135e574-1",
+          "source_url": "https://www.qualcommventures.com/about/",
+          "source_title": "Global Venture Capital Funding | About Qualcomm Ventures",
+          "source_content_hash": "67dcd6224852d6e467c438f02e98e1cbeb191a8b387ce7069ce5df46f8df4c43",
+          "quote": "Qualcomm Ventures is the investment arm of Qualcomm Incorporated.",
+          "quote_hash": "8884dec450875ece41c3ca27f765fbbdc18cbeb0e9bc6c79f3dc16163df2cf79"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-bb59b01135e574-2",
+          "source_url": "https://www.qualcommventures.com/about/",
+          "source_title": "Global Venture Capital Funding | About Qualcomm Ventures",
+          "source_content_hash": "67dcd6224852d6e467c438f02e98e1cbeb191a8b387ce7069ce5df46f8df4c43",
+          "quote": "AI Applying AI to industry verticals, building AI enablement platforms, and those pushing the boundaries of fundamental AI tech. Learn More Automotive Next generation user experiences for cars, intelligent transportation systems and ADAS. Learn More Consumer Apps, communication and services that leverage mobile technology. Learn More Enterprise & Cloud Building technology for the next generation of enterprise, cloud, edge computing and security. Learn More IoT Smart and connected homes, enterprises and factories. Including AR/VR, robotics, sensors and more.",
+          "quote_hash": "7619535e051db247254e36a2c1cee3d36faa7c2bc07dee3227af3ffbd9dac1ec"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-bb59b01135e574-3",
+          "source_url": "https://www.qualcommventures.com/about/",
+          "source_title": "Global Venture Capital Funding | About Qualcomm Ventures",
+          "source_content_hash": "67dcd6224852d6e467c438f02e98e1cbeb191a8b387ce7069ce5df46f8df4c43",
+          "quote": "Next generation user experiences for cars, intelligent transportation systems and ADAS.",
+          "quote_hash": "764a56673d29e9a87a37b5166f3a9dc18c1b4eeb2ac830c33a49d31f408be20a"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-bb59b01135e574-4",
+          "source_url": "https://www.eeo.com.cn/2026/0930/1052933.shtml",
+          "source_title": "极豆科技完成新一轮超亿元战略融资，加速汽车AI大脑研发与全球化布局 - 经济观察网 － 专业财经新闻网站",
+          "source_content_hash": "7ec1971baf6f076256796116ea039f41b93b3a527b70602b3d99ea7851f59127",
+          "quote": "获得同创伟业、高通、建投资本、苏创投等众多知名机构投资",
+          "quote_hash": "7a75f76cb5ec0ac5ad5eeae1051f1b5d8038c0507b6dd0cb2bf81c99132a8a62"
+        },
         {
           "source_id": "FISRC-0878f600ac208553",
           "source_url": "https://www.eeo.com.cn/2026/0930/1052933.shtml",
@@ -145,7 +206,7 @@
           "quote_hash": "7a75f76cb5ec0ac5ad5eeae1051f1b5d8038c0507b6dd0cb2bf81c99132a8a62"
         }
       ],
-      "last_verified_at": "2026-10-04"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

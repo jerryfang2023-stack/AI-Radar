@@ -153,17 +153,18 @@
       }
     ],
     "public_profile": {
+      "last_verified_at": "2026-10-04",
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录 Flow Engineering 官方公告对其个人投资和董事角色的披露，不扩写完整履历或其他投资活动。",
-      "summary": "Flow Engineering 的 2026 年 B 轮公告称，Roelof Botha 加入其董事会担任独立董事并以个人身份投资。本档案只记录该项公司公告披露，不扩展其完整职业经历或投资组合。",
+      "coverage_status": "researched",
+      "summary": "Ethos 官方董事简介列 Roelof Botha 为 Sequoia Capital 合伙人，并介绍其 PayPal 财务负责人经历与教育背景。Flow Engineering 公告称其以独立董事身份加入董事会并个人投资。",
+      "coverage_note": "职业经历与教育按 Ethos 官方董事简介记录；Flow 的独立董事及个人投资信息来自 Flow 官方公告。投资参与仅记录该公司披露，不扩展其完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "Flow Engineering 官方公告披露 Roelof Botha 以个人身份投资该公司，并加入董事会任独立董事。",
-          "source_id": "PROFILE-f7c90640d65ff375ae8a"
+          "description": "Flow Engineering 官方公告称 Roelof Botha 加入董事会担任独立董事，并以个人身份投资。",
+          "source_id": "FISRC-3511f7baf76701e3"
         },
         {
           "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -171,9 +172,79 @@
         }
       ],
       "contacts": [],
+      "current_roles": [
+        {
+          "title": "合伙人",
+          "organization": "Sequoia Capital",
+          "source_id": "b33-roelof-ethos-role"
+        },
+        {
+          "title": "董事",
+          "organization": "Ethos",
+          "source_id": "b33-roelof-ethos-role"
+        },
+        {
+          "title": "独立董事",
+          "organization": "Flow Engineering",
+          "source_id": "FISRC-3511f7baf76701e3"
+        }
+      ],
+      "career": [
+        {
+          "organization": "PayPal",
+          "title": "首席财务官",
+          "period": "2001 年；加入 PayPal 时间为 2000 年 3 月",
+          "description": "Ethos 官方简介称其于 2000 年 3 月加入 PayPal，并于 2001 年出任首席财务官。",
+          "source_id": "b33-roelof-ethos-career"
+        },
+        {
+          "organization": "Sequoia Capital",
+          "title": "合伙人",
+          "period": "2003 年加入；截至 Ethos 简介核验时仍列为合伙人",
+          "description": "Ethos 官方简介称其于 2003 年加入 Sequoia。",
+          "source_id": "b33-roelof-ethos-career"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Cape Town",
+          "qualification": "Bachelor of Science in Actuarial Science, Economics, and Statistics",
+          "source_id": "b33-roelof-ethos-education"
+        },
+        {
+          "institution": "Stanford Graduate School of Business",
+          "qualification": "Master of Business Administration",
+          "source_id": "b33-roelof-ethos-education"
+        }
+      ],
+      "experience_summary": "长期从事科技公司建设与投资；Ethos 简介称其在硅谷参与企业建设逾 25 年。",
       "sources": [
         {
-          "source_id": "PROFILE-f7c90640d65ff375ae8a",
+          "source_id": "b33-roelof-ethos-role",
+          "source_url": "https://investors.ethos.com/board-member/roelof-botha",
+          "source_title": "Roelof Botha | Board Member | Ethos",
+          "source_content_hash": "a1473b1ef026f4609a99ddab5479582020e0148f29a618de1982d1eb226807d0",
+          "quote": "Roelof Botha has served on the board of directors since October 2018. He is a Partner at Sequoia Capital",
+          "quote_hash": "eeb42ea46f0d8305809032d17b050354a770497072e613560d7d14f195d9d34e"
+        },
+        {
+          "source_id": "b33-roelof-ethos-career",
+          "source_url": "https://investors.ethos.com/board-member/roelof-botha",
+          "source_title": "Roelof Botha | Board Member | Ethos",
+          "source_content_hash": "a1473b1ef026f4609a99ddab5479582020e0148f29a618de1982d1eb226807d0",
+          "quote": "He began within the walls of nascent PayPal, where he joined in March 2000 and was its Chief Financial Officer in 2001, leading the company through both its IPO and the subsequent acquisition by eBay. Roelof joined Sequoia in 2003 to help founders build enduring businesses.",
+          "quote_hash": "741cbb7d8048cba36d93b0dec762166e202c4db6b6ae4e03420ab18978082aef"
+        },
+        {
+          "source_id": "b33-roelof-ethos-education",
+          "source_url": "https://investors.ethos.com/board-member/roelof-botha",
+          "source_title": "Roelof Botha | Board Member | Ethos",
+          "source_content_hash": "a1473b1ef026f4609a99ddab5479582020e0148f29a618de1982d1eb226807d0",
+          "quote": "He holds a Bachelor of Science in Actuarial Science, Economics, and Statistics from the University of Cape Town and a Master of Business Administration from Stanford Graduate School of Business.",
+          "quote_hash": "a4237b47f7c9b82f30fcc47c0552f0dbd259b95b4c1a30c21c53f6d729930c15"
+        },
+        {
+          "source_id": "FISRC-3511f7baf76701e3",
           "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
           "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
           "source_content_hash": "40c9452232df5d4ee5c444e1a39668a4b19c2c2f59e43252f283a9188dd4f488",
@@ -187,27 +258,8 @@
           "source_content_hash": "0528dfbe7386cdee",
           "quote": "as did former Sequoia partner Roelof Botha, who invested as an individual investor",
           "quote_hash": "94ed795ad3e3e38d66f0c0a15b4fb9e04c439060d2e3f74bc0fccae3b3f07b38"
-        },
-        {
-          "source_id": "FISRC-3511f7baf76701e3",
-          "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
-          "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
-          "source_content_hash": "1ada124c6217cee1",
-          "quote": "Roelof Botha has additionally joined Flow’s board as an independent director and personally invested in the company",
-          "quote_hash": "90ad24e81e59c8ce4377d61b4c24cc19f2fe4386fd822b8fa50d3adb4c25c647"
         }
-      ],
-      "current_roles": [
-        {
-          "title": "Independent Director",
-          "organization": "Flow Engineering",
-          "source_id": "PROFILE-f7c90640d65ff375ae8a"
-        }
-      ],
-      "career": [],
-      "education": [],
-      "experience_summary": "现有来源仅支持 Flow Engineering 公告披露的个人投资和董事角色，不代表完整履历。",
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

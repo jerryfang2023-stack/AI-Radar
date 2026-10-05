@@ -139,10 +139,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "公开资料仅支持该项融资参与关系；未补写其投资策略或完整组合。",
-      "summary": "投资界披露九章智电首轮战略融资时，将京成燕北列为共同跟投方。本档仅记录该项公开披露。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "目前可核验的资料只确认公开融资报道中的这一名称及单笔参投关系；未识别其背后的登记主体。",
+      "summary": "投资界关于九章智电首轮战略融资的报道将“京成燕北”列为共同跟投方。本档只记录融资报道使用的投资方名称，不将其与名称相似的其他公司合并，也不推断法律形式或完整投资活动。",
+      "facts": [
+        {
+          "field": "reported_investor_name",
+          "label": "融资报道披露的投资方名称",
+          "value": "九章智电融资报道将“京成燕北”列为共同跟投方。",
+          "source_id": "PROFILE-S-INV-65666cadc7dd99-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -159,9 +166,17 @@
           "source_content_hash": "53047b5f6a0af64ec64bd96b767b7ef7af6deba815d0e4fc2e5582aba24696a7",
           "quote": "能智慧运营、虚拟电厂 VPP 交易、零碳工厂智慧避峰等多类产品与服务。投资界（ID：pedaily2012）9月10日消息，近日，九章智电正式宣布 完成首轮数千万级战略融资 。本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。 依托多源多尺度数据融合能力、小样本学习能力，以及可解释性竞价模型，九章智电克服了行业普遍存在的数据量不足、数据缺失、AI 决策黑箱、预测结果偏差过高等痛点问题，自研全套算法体系在多个区域电网和电力交易省份的泛化应用能力已经得到成功验证。九章智电已经在西北、东北、华北、华东、西南等多个现货运行区域的多种业务场景落地实际交易服务项目，实实在在为客户实现降本增效。通过业务场景快速增长，已形成 “数据积累‑模型迭代‑收益领先-客户规模扩大”",
           "quote_hash": "700d64e7e779239099e9e009afd78aed7cab1b719cc266eddcc71e5642945c7e"
+        },
+        {
+          "source_id": "PROFILE-S-INV-65666cadc7dd99-2",
+          "source_url": "https://news.pedaily.cn/202609/568814.shtml",
+          "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道_投资界",
+          "source_content_hash": "53047b5f6a0af64ec64bd96b767b7ef7af6deba815d0e4fc2e5582aba24696a7",
+          "quote": "京成燕北 共同跟投",
+          "quote_hash": "8177ccf992675bbd51109b280df53a5baa3fe40ae1740de66e6846368d8c6bc3"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -181,10 +181,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合，也不推断来源未披露的法人或基金归属。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "法律管理主体和行业方向来自上市公司披露文件，机构资料来自36氪；极佳视界融资方名称来自投资界，两条记录未披露临芯的单独出资金额。",
+      "summary": "上市公司披露文件将上海临芯投资管理有限公司简称为“临芯投资”，并介绍其聚焦集成电路领域投资和并购；36氪机构资料记载其于2015年在上海临港成立。极佳视界两篇融资报道将临芯投资/临芯资本列为参投方。",
+      "facts": [
+        {
+          "field": "legal_identity_and_focus",
+          "label": "上市公司披露的管理主体及行业方向",
+          "value": "临芯投资对应上海临芯投资管理有限公司，专注集成电路领域投资，并参与半导体产业链并购。",
+          "source_id": "PROFILE-COLLECT-INV-dfc88e3312c02f-N-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -213,6 +220,14 @@
           "source_content_hash": "f1fa98fce1288b04fbd783e034907e97f4a5a66fc6bd4e5b3002a68c7c43f591",
           "quote": "先是在今年3月初完成近10亿元Pre-B轮融资，投资方包括中芯聚源、上海半导体产投基金、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本",
           "quote_hash": "3b98336b325782885e9f0d273738cd088f0878a39496f13362ebfc0958287cd7"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-dfc88e3312c02f-N-3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2021-05-25/1210087556.PDF",
+          "source_title": "上市公司披露文件：临芯投资简介（巨潮资讯PDF文字摘录）",
+          "source_content_hash": "a92b653affbf10e51c713e72207990fe4d3d1c5302128dc5ec4bd7c3484edd98",
+          "quote": "上海临芯投资管理有限公司（以下简称“临芯投资”）于2015年5月在上海临港注册成立，是国内最早开展集成电路领域海外并购的投资机构之一",
+          "quote_hash": "99c07f8a4198728bb9259887ce23f12340e539b0cc017d61418b28d28a1cdcb0"
         }
       ],
       "last_verified_at": "2026-10-03",

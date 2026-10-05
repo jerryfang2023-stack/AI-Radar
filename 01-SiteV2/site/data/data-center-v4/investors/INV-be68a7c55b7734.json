@@ -137,35 +137,70 @@
       }
     ],
     "public_profile": {
+      "summary": "江苏黄海金融控股集团有限公司是盐城地方金融控股集团。集团官网称其投资服务由多家投资与私募基金管理子公司开展，覆盖天使、科创、VC/PE、S 基金及并购基金等；新浪科技报道将“黄海金控”列为 OpenCSG 2026 年 Pre-A 轮参与方之一。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资报道使用“黄海金控”简称，官网证明该称谓对应的集团主体及其投资业务版图；因未披露具体基金或子公司，本档不将该笔交易归入任何下属投资实体。",
+      "facts": [
+        {
+          "field": "investment_business",
+          "label": "投资业务",
+          "value": "集团官网列明投资服务涉及多家投资/私募基金管理子公司，并覆盖天使、人才、科创、VC/PE、S 基金和并购基金。",
+          "source_id": "PROFILE-B14-INV-be68a7c55b7734-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 开放传神（OpenCSG） Pre-A轮 本轮参投。",
+          "description": "新浪科技报道将黄海金控列为 OpenCSG 数亿元 Pre-A 轮共同参与方之一；未披露具体投资子公司或基金及单独金额。",
+          "source_id": "PROFILE-B14-INV-be68a7c55b7734-2"
+        },
+        {
+          "description": "融资来源记录：开放传神（OpenCSG） · Pre-A轮 · 2026-08-31 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed4f088f02c38455"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "江苏黄海金融控股集团官网",
+          "value": "https://www.jshhjkjt.com/",
+          "url": "https://www.jshhjkjt.com/",
+          "source_id": "PROFILE-B14-INV-be68a7c55b7734-1"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
         {
-          "source_id": "FISRC-ed4f088f02c38455",
+          "source_id": "PROFILE-B14-INV-be68a7c55b7734-1",
+          "source_url": "https://www.jshhjkjt.com/",
+          "source_title": "江苏黄海金融控股集团有限公司",
+          "source_content_hash": "f14a9e502e994300af17901cf19e126bb41755524e911e02cf7912ba8d37ca41",
+          "quote": "投资服务 主要包括盐城市创新创业投资有限公司、盐城战新私募基金管理有限公司、江苏黄海汇创私募基金管理有限公司、盐城金谷运营管理有限公司。",
+          "quote_hash": "662fbae2a12e630f573dcb8125861e3c783f63b10ef3d8557c26c50a12cdcd29"
+        },
+        {
+          "source_id": "PROFILE-B14-INV-be68a7c55b7734-2",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
           "source_title": "OpenCSG完成数亿元Pre-A轮融资_新浪科技_新浪网",
           "source_content_hash": "bbacedd17cd7918ac59cb4abbe0d3d74dd41877f7a6ecb935b548c79dba198af",
           "quote": "本轮融资由静安资本、市北高新、徐汇资本、黄海金控等共同参与。",
           "quote_hash": "3a3539b13795473cf4cac7e484583e146dd047dd522351c629ff4d34202bc86f"
+        },
+        {
+          "source_id": "FISRC-ed4f088f02c38455",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
+          "source_title": "OpenCSG完成数亿元Pre-A轮融资",
+          "source_content_hash": "4fa5b4b2071cbe25f6578f34ac0b632b0cd5ffb051655b692b67b3d70070ee5c",
+          "quote": "本轮融资由静安资本、市北高新、徐汇资本、黄海金控等共同参与。",
+          "quote_hash": "3a3539b13795473cf4cac7e484583e146dd047dd522351c629ff4d34202bc86f"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

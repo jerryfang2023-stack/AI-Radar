@@ -139,29 +139,56 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "TechCrunch 报道将其列为 Naïve A 轮个人天使投资人。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Apollo 职务来自公司官方公告；Naïve 融资参与信息来自 TechCrunch 报道，未披露个人投资金额。",
+      "summary": "Apollo 官方公告确认 Tim Zheng 是公司联合创始人，并在新任 CEO 上任后继续担任董事长；TechCrunch 报道将其列为 Naïve Series A 天使投资人。现有公开材料仅支持这一项投资活动，不代表其完整投资组合。",
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "现任职务",
+          "value": "Apollo 联合创始人、董事长",
+          "source_id": "PROFILE-B12-INV-b39119b70214eb-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "以个人天使投资人身份参与 Naïve Series A。",
+          "source_id": "PROFILE-B12-INV-b39119b70214eb-1"
+        },
+        {
+          "description": "融资来源记录：Naïve · A轮 · 2026-08-06 · 本轮参投 · $28.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-29dadb15030915c7"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-29dadb15030915c7",
+          "source_id": "PROFILE-B12-INV-b39119b70214eb-1",
           "source_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company",
           "source_title": "Naïve raises $28.5M to automate the grunt work of setting up and running a company | TechCrunch",
           "source_content_hash": "7b857cf10fb21f46724bbca94d1651f22f8b745efc481a98b5442ce19d5f5ee4",
           "quote": "rchestration. Y Combinator, Zetta, Liquid 2 and angel investors including Gokul Rajaram, Apollo.io co-founder Tim Zheng, and former HubSpot COO JD Sherman also participated in the Series A. The funding brings the company’s total capital raised to roughly $32 million. Topics AI , AI agents , AI infranstructure , Fundraising , Startups When you purchase throug",
           "quote_hash": "920bfa0dba56ac9eb3e884d4975a36cb7251130729cb7b8e9ac3bfdf81afe8f7"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b39119b70214eb-2",
+          "source_url": "https://www.apollo.io/newsroom/announcements/apollo-appoints-matt-curl-as-chief-executive-officer-co-founder-tim-zheng-to-continue-as-chairman",
+          "source_title": "Apollo Appoints Matt Curl as Chief Executive Officer; Co-Founder Tim Zheng to Continue as Chairman",
+          "source_content_hash": "a06d1a697df23eda43f28059d646d94bef3dfb3484825bdbd9420f73cd2e8214",
+          "quote": "Co-Founder Tim Zheng to Continue as Chairman",
+          "quote_hash": "a3cc7bb7205c91ef4b70b9fbf423385114b039f6b8de4c2603f1e6241b0f2eb0"
+        },
+        {
+          "source_id": "FISRC-29dadb15030915c7",
+          "source_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company",
+          "source_title": "Naïve 融资 2850 万美元，以自动化公司设立与运营中的繁琐工作",
+          "source_content_hash": "09692ed39033daa6ff86bd3559ffd4cfb5214f342cfd649b97237216c8d849d9",
+          "quote": "angel investors including Gokul Rajaram, Apollo.io co-founder Tim Zheng, and former HubSpot COO JD Sherman also participated in the Series A.",
+          "quote_hash": "ce73d32713f0dee8a0286083a2713bdfb7f7f578ebd305799840c7c30f5f77fd"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -180,10 +180,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构基本信息来自 LinkedIn 公司主页；Starcloud 参与记录来自 Via Satellite。未据此推断其基金规模、投资阶段或全部组合。",
+      "summary": "Adjacent 的公司主页将其行业标注为风险投资与私募股权，列示官网 adjacent.com、私营公司属性及2019年成立。Via Satellite 将 Adjacent 列为 Starcloud 融资参与方，但没有说明其属于两个融资 tranche 中的哪一部分。",
+      "facts": [
+        {
+          "field": "organization_profile",
+          "label": "公司主页披露的机构资料",
+          "value": "Adjacent 公司主页将行业列为风险投资与私募股权，列示官网 adjacent.com，成立年份为2019。",
+          "source_id": "PROFILE-COLLECT-INV-ccb176f47658b3-L-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -204,6 +211,14 @@
           "source_content_hash": "371dea10d0160b19f7af02856d9341032c72d638ef347dfaabbaaf6b82be34e8",
           "quote": " Ventures . Both investors co-led an extension round. Other investors included NFX , Nebular , Y Combinator , Adjacent , 776 Ventures , Fuse Ventures , Manhattan West , and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg. Starcloud, based in Redmond, Washington, recently filed with the FCC , seeking to deploy a syst",
           "quote_hash": "88c6b7803de09f52ccd6f2f0c69f2b43591b24642b18321e2477795fb5ee57a7"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-ccb176f47658b3-L-2",
+          "source_url": "https://www.adjacent.com/",
+          "source_title": "Adjacent | LinkedIn company profile",
+          "source_content_hash": "703335f100c87043aeddea0daf5c5b989ca09154ae7c662889074e565eb3d36d",
+          "quote": "Industry: Venture Capital and Private Equity Principals\nCompany size: 1 employee\nType: Privately Held\nFounded: 2019",
+          "quote_hash": "6c0c259dd2198f3660b8d9db719780e600aeb5e012204cce5c3ef31e3871c9b1"
         },
         {
           "source_id": "FISRC-64c63dc926fc8a24",

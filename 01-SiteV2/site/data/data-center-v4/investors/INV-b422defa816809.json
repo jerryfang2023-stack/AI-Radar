@@ -193,10 +193,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "Cognition 官方 Series E 公告将 Avenir 列为既有投资方及本轮参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资方法与当前公开组合示例来自 Avenir 官网；Cognition 融资参与来自 Cognition 项目方公告。只列公开案例，不视为完整组合或收益表现。",
+      "summary": "Avenir 官网自述以第一性原理筛选大市场中的长期变化，并与创始人合作建设类别定义型公司；官网列出 Cognition 等组合企业，Cognition 的 Series E 公告将 Avenir 列为既有投资人。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资方法",
+          "value": "Avenir 官网称其以第一性原理识别大市场中的长期变化，并建设由优秀经营者领导的集中组合。",
+          "source_id": "PROFILE-COLLECT-INV-b422defa816809-J-2"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网公开展示的组合案例",
+          "value": "Avenir 官网组合页列出 Cognition 作为其 AI 编程产品组合企业之一。",
+          "source_id": "PROFILE-COLLECT-INV-b422defa816809-J-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -221,6 +234,14 @@
           "source_content_hash": "f2d5c7d50230b8017e9320f0a8344cbb1155c1483ca6977b8925a820177ab95e",
           "quote": "ew investors Andreessen Horowitz and Accel, alongside existing investors Founders Fund, General Catalyst, and Avenir. Other investors in the round include Benchmark, Bessemer, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, Atreides, Valor, T. Rowe Price, Lux, 8VC, D1, 137 Ventures, DST, Positive Sum, HOF, Soma, BoxGroup, Battery, R",
           "quote_hash": "89cde15a907adfa07eea11692b4dca6b058052091feb960b7e7475f70e70a7ab"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b422defa816809-J-2",
+          "source_url": "https://www.avenirgrowth.com/",
+          "source_title": "www.avenirgrowth.com",
+          "source_content_hash": "afbf3abc2927069738cafe0860727528656dcb21ca29b3f6b3f4677bdc7d1857",
+          "quote": "We take a first-principles based approach to identify inevitable changes in large markets",
+          "quote_hash": "64bb7c90c06a87da8e8040ddceee1a397f6fa43352cccd1adc6974936ac12afc"
         },
         {
           "source_id": "FISRC-61aa8db010b34dfa",

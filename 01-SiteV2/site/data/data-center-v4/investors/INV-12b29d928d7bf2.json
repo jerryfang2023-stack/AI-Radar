@@ -138,11 +138,18 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
       "summary": "玖兆投资官网显示其对应玖兆康乾投资管理有限公司，主要围绕硬科技和大健康领域进行投资；融资报道将玖兆投资列为欧拉万象天使轮投资方。",
       "coverage_note": "主体名称与投资方向来自玖兆投资官网，投资关系来自搜狐融资报道；未推断独立基金实体或单独出资额。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资领域",
+          "value": "玖兆投资官网称其主要围绕硬科技和大健康领域开展投资。",
+          "source_id": "PROFILE-R-INV-12b29d928d7bf2-3"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -172,9 +179,17 @@
           "source_id": "jiuzhao_euler_angel",
           "source_url": "https://www.sohu.com/a/1041806074_120109837",
           "source_title": "成立3个月 家庭具身智能企业欧拉万象获第三轮融资_资本_创投_物理",
-          "source_content_hash": "9d260d9d0f976d809c394b478b65fbd6b78ffcd5f98df494c18465d9d261821e",
+          "source_content_hash": "adc55b33b785260ca4d19660cc973394176321db43b482982157b17c0d8c657c",
           "quote": "本轮融资由某产业资本、慕华科创、百度风投、玖兆投资、聚合资本联合投资，老股东持续跟投。",
           "quote_hash": "c339f97068fae4fed428375d7d7d2247ab186257c87a3dc89b1ef9e256c737f3"
+        },
+        {
+          "source_id": "PROFILE-R-INV-12b29d928d7bf2-3",
+          "source_url": "https://www.jiuzhaotz.com/",
+          "source_title": "玖兆投资-经玖至兆 为您投资",
+          "source_content_hash": "24356916d090082ba577f0054dbbab586f3f7b4bec6fc56560938896bc4c8833",
+          "quote": "在投资策略上，公司主要围绕硬科技、大健康领域开展投资",
+          "quote_hash": "51ce0df856e8987eb2bd5ddd909b8e1f214516df6085179ebed67240e4993103"
         },
         {
           "source_id": "FISRC-aad97c1f07ceb5c6",
@@ -185,7 +200,7 @@
           "quote_hash": "c339f97068fae4fed428375d7d7d2247ab186257c87a3dc89b1ef9e256c737f3"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

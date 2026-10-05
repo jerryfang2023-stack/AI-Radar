@@ -139,18 +139,45 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资关系依据 WOWTALE 对 Algorix 融资公告的报道。来源将 Kiwoom Investment 列为回归追加投资者，本档案不推断其具体法律主体或单独金额。",
-      "summary": "WOWTALE 报道 Algorix 完成 1150 万美元 A 轮融资，并称 Kiwoom Investment 与另外两家机构在参与 2024 年 9 月 pre-Series A 后回归继续投资；未披露 Kiwoom 的单独出资金额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Kiwoom 集团官网将 Kiwoom Investment 描述为管理创业投资基金的风险投资机构，称公司成立于 1999 年，并披露其投资领域由 IT、半导体扩展至能源、生物科技、医疗、先进材料和 AI。WOWTALE 报道其参与 Algorix 追加投资。",
+      "coverage_note": "机构背景与投资方向来自 Kiwoom 集团官网对 Kiwoom Investment 的介绍；融资关系来自 WOWTALE 报道。公开材料未披露 Kiwoom Investment 在 Algorix 轮次的单独出资额。",
+      "facts": [
+        {
+          "field": "founded_at",
+          "label": "官网披露成立时间",
+          "value": "1999 年",
+          "source_id": "b33-kiwoom-profile"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "官网披露投资领域",
+          "value": [
+            "IT",
+            "半导体",
+            "能源",
+            "生物科技",
+            "医疗",
+            "先进材料",
+            "人工智能"
+          ],
+          "source_id": "b33-kiwoom-strategy"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露投资阶段",
+          "value": [
+            "早期创业",
+            "上市公司夹层投资"
+          ],
+          "source_id": "b33-kiwoom-strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "WOWTALE 报道称，Kiwoom Investment 等曾参加 2024 年 9 月 pre-Series A 的机构，在 Algorix 后续 A 轮融资中回归追加投资；未披露 Kiwoom 的单独出资额。",
-          "source_id": "algorix-kiwoom-followon-seriesa-2026"
-        },
-        {
-          "description": "融资来源记录：Algorix · 多轮融资 · 2026-08-14 · 本轮参投 · $11.5M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "WOWTALE 报道称 Kiwoom Investment 曾参与 Algorix 2024 年 9 月 Pre-Series A，并回归参与后续追加融资；未披露其单独出资额。",
           "source_id": "FISRC-4e441239551a1fd6"
         }
       ],
@@ -158,26 +185,33 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "投资关系依据 WOWTALE 对 Algorix 融资公告的报道。来源将 Kiwoom Investment 列为回归追加投资者，本档案不推断其具体法律主体或单独金额。",
+      "experience_summary": "Kiwoom 集团官网称其为管理风险投资基金的机构，公开投资领域覆盖 IT、半导体及多个新兴行业。",
       "sources": [
         {
-          "source_id": "algorix-kiwoom-followon-seriesa-2026",
-          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
-          "source_title": "Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M - WOWTALE",
-          "source_content_hash": "6dabe585968da2b0c7eb8ddc5b545fa955f834177ae81f92a7181ff7c0648915",
-          "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
-          "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
+          "source_id": "b33-kiwoom-profile",
+          "source_url": "https://www.kiwoom.com/h/ir/engintroduce/VEngSubsidiaryView",
+          "source_title": "Profile/Shareholder Composition | Company Overview | About KIWOOM | KIWOOM",
+          "source_content_hash": "eab3fdf88b04531dbe0c0d6e552e5b9314b3daf5948768527de8d1b5eb6ae4bf",
+          "quote": "Kiwoom Investment is a venture capital firm managing venture investment funds. Since its establishment in 1999, the company has built a solid track record through accumulated investment experience and consistent performance.",
+          "quote_hash": "26a3e99771a1513245f882549a2088945c8b5cee442c98b7bef389f540e88558"
+        },
+        {
+          "source_id": "b33-kiwoom-strategy",
+          "source_url": "https://www.kiwoom.com/h/ir/engintroduce/VEngSubsidiaryView",
+          "source_title": "Profile/Shareholder Composition | Company Overview | About KIWOOM | KIWOOM",
+          "source_content_hash": "eab3fdf88b04531dbe0c0d6e552e5b9314b3daf5948768527de8d1b5eb6ae4bf",
+          "quote": "Originally specializing in IT and semiconductor investments, the company has expanded its investment scope to emerging industries such as energy, biotechnology, healthcare, advanced materials, and AI. Kiwoom Investment also demonstrates flexibility across investment stages - from early-stage startups to mezzanine investments in listed companies - executing optimal investment strategies across different growth phases.",
+          "quote_hash": "fa6c3113ea0fc9535291dcff188f901800d14ee2c6df096c13abf98851182820"
         },
         {
           "source_id": "FISRC-4e441239551a1fd6",
           "source_url": "https://en.wowtale.net/2026/08/14/234729/",
-          "source_title": "Algorix 完成1150万美元A轮融资，由K2 Investment Partners领投，总融资额达1400万美元",
-          "source_content_hash": "4e6014655ea683a8",
+          "source_title": "Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M - WOWTALE",
+          "source_content_hash": "84d34670d88cd511ff16f0a40b0f8e0fa7adbecc96b778c5a1ddb53cdedac678",
           "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
           "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

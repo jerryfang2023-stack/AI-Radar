@@ -137,35 +137,84 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
+      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "人物身份与 CEO 拼写由 Pentera 官网核对；投资关系来自第三方融资报道，未披露个人出资额。队列中的“Ratzzon”与官网“Ratzon”拼写不同，因同一 CEO 职务及公司信息吻合而按同一 ID 记录，不将队列字符串作为官方拼写。",
+      "summary": "Pentera 官网将 Amitai Ratzon 列为 CEO；他在公司回顾中称自己于2018年出任 CEO。RuntimeWire 的融资报道将拼写为“Amitai Ratzzon”的 Pentera CEO 列入 Arrakis 融资支持者。队列原名多一个 z，本档案按 Pentera 官网拼写标识人物，并记录该拼写差异。",
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "现任职务",
+          "value": "Pentera 官网将 Amitai Ratzon 列为 Chief Executive Officer。",
+          "source_id": "amitai_pentera_leadership"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Arrakis Security 种子轮 本轮参投。",
+          "description": "RuntimeWire 将 Pentera CEO Amitai Ratzzon 列为 Arrakis 融资的个人支持者；未披露个人出资额。",
+          "source_id": "amitai_arrakis_round"
+        },
+        {
+          "description": "融资来源记录：Arrakis Security · 种子轮 · 2026-08-02 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-370a65ed92921303"
         }
       ],
       "contacts": [],
+      "current_roles": [
+        {
+          "title": "Chief Executive Officer",
+          "organization": "Pentera",
+          "source_id": "amitai_pentera_leadership"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Pentera",
+          "title": "CEO",
+          "period": "2018年至今；官网当前将其列为CEO，2018年起任见CEO回顾",
+          "description": "Pentera官网当前管理团队列其为CEO；其CEO回顾称于2018年出任该职。",
+          "source_id": "amitai_ceo_history"
+        }
+      ],
+      "education": [],
+      "experience_summary": "公开资料确认其在 Pentera 的 CEO 职务及任职起始年份；其他履历和教育经历未在本轮核验来源中披露。",
       "sources": [
         {
-          "source_id": "FISRC-370a65ed92921303",
+          "source_id": "amitai_pentera_leadership",
+          "source_url": "https://pentera.io/about-us/",
+          "source_title": "About Pentera | Proactive Security Validation",
+          "source_content_hash": "29ce3d413c7c1f4d67ec8f9c24d712751e5f9ac1e8a12bf748f0142fd351f086",
+          "quote": "Amitai Ratzon Chief Executive Officer",
+          "quote_hash": "3b1fbb0c9ac947bc207f97f4a3d206e8389752fa6b39db191da3a7d5183b2cab"
+        },
+        {
+          "source_id": "amitai_ceo_history",
+          "source_url": "https://pentera.io/blog/pentera-at-100m-arr-a-ceo-reflection/",
+          "source_title": "Pentera at $100M ARR | CEO Reflection",
+          "source_content_hash": "7a7b496e98a5b456a682a31251a313583ef3f73a62a2180c966324746cec432c",
+          "quote": "When I joined forces with our Founder and CTO, Dr. Arik Liberzon, and stepped into the CEO role back in 2018",
+          "quote_hash": "af65c6a37c9e664818e0d6518ad87524646abf10b4f70163612c82b1ed90b822"
+        },
+        {
+          "source_id": "amitai_arrakis_round",
           "source_url": "https://runtimewire.com/article/arrakis-security-raises-8-million-ai-agent-runtime-controls",
           "source_title": "Arrakis raises $8 million for AI agent runtime security",
           "source_content_hash": "7390d679cb24348afb9204fbc44246266332e8435d2cbd6e8b23fac76890ddac",
+          "quote": "Pentera CEO Amitai Ratzzon",
+          "quote_hash": "1978cab3e0e7223f14dc18151dd7e26f38546db768e71c435b543d89b72a89bb"
+        },
+        {
+          "source_id": "FISRC-370a65ed92921303",
+          "source_url": "https://runtimewire.com/article/arrakis-security-raises-8-million-ai-agent-runtime-controls",
+          "source_title": "Arrakis 为 AI 智能体运行时安全筹集 800 万美元",
+          "source_content_hash": "895c7d4909879605",
           "quote": "The investors also included ElevenLabs CEO Mati Staniszewski, Torq CEO Ofer Smadari, Pentera CEO Amitai Ratzzon and several Palantir executives",
           "quote_hash": "1a9436e2461129344592c49d49488f0a5a1e7d580b3c4cfb443d5cf7cc193be4"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

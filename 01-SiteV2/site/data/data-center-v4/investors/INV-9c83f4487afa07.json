@@ -124,15 +124,30 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前只记录 Reco 公司公告明确披露的 Series B 参投关系，不据此推定具体基金载体、所属实体或投资策略。",
-      "summary": "Reco 于 2026 年 2 月公布 Series B 时，将 TIAA Ventures 列为新加入的企业投资者之一；公开公告未披露该机构的单独出资金额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Nuveen官网明确将TIAA Ventures, LLC称为其关联机构，并披露其持有Nestimate少数、非控股权益；Nuveen新闻稿称其于2023年与TIAA Ventures合作投资Brooklyn；Reco公告另将TIAA Ventures列为新加入的企业投资者。现有资料未披露完整投资授权、独立基金结构或全量组合，本档仅记录有出处的组织身份和已披露活动。",
+      "summary": "Nuveen官网将TIAA Ventures, LLC列为其关联机构，并披露其持有Nestimate的少数、非控股权益。Nuveen公告称其在2023年与TIAA Ventures合作投资Brooklyn；Reco的Series B公告也将TIAA Ventures列为新加入的企业投资者。公开材料未披露其完整投资授权、独立基金结构或全量组合。",
+      "facts": [
+        {
+          "field": "identity_and_affiliation",
+          "label": "组织身份",
+          "value": "Nuveen官网称TIAA Ventures, LLC是Nuveen的关联机构；该页面未披露其完整投资授权或基金结构。",
+          "source_id": "PROFILE-B13-INV-9c83f4487afa07-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Reco 的 2026 年 Series B 融资公告将 TIAA Ventures 列为新加入的企业投资者之一；公告未披露其单独出资金额。",
-          "source_id": "reco-tiaa-ventures-seriesb-2026"
+          "description": "Nuveen官网披露TIAA Ventures, LLC持有Nestimate少数、非控股权益；页面未披露投资日期或金额。",
+          "source_id": "PROFILE-B13-INV-9c83f4487afa07-2"
+        },
+        {
+          "description": "Nuveen 2025年公告称，Nuveen于2023年与TIAA Ventures合作投资Brooklyn并取得少数股权；未披露TIAA Ventures单独出资额。",
+          "source_id": "PROFILE-B13-INV-9c83f4487afa07-3"
+        },
+        {
+          "description": "Reco官方Series B公告将TIAA Ventures列为新加入的企业投资者；没有披露单独出资额。",
+          "source_id": "PROFILE-B13-INV-9c83f4487afa07-1"
         },
         {
           "description": "融资来源记录：Reco · 历史轮次未披露 · B轮参投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -140,18 +155,30 @@
         }
       ],
       "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "当前只记录 Reco 公司公告明确披露的 Series B 参投关系，不据此推定具体基金载体、所属实体或投资策略。",
       "sources": [
         {
-          "source_id": "reco-tiaa-ventures-seriesb-2026",
-          "source_url": "https://www.reco.ai/blog/reco-raises-30m-b-round-for-a-total-of-85m-to-meet-rapidly-growing-demand-for-saas-ai-security-among-enterprises",
+          "source_id": "PROFILE-B13-INV-9c83f4487afa07-1",
+          "source_url": "https://www.reco.ai/blog/reco-raises-30m-b-round-for-a-total-of-85m-to-meet-rapidly-growing-demand-for-saas-ai-security-among-enterprises?sourcecheck=20261005T1840Z",
           "source_title": "Reco Raises $30M Series B to Secure SaaS and AI Environments",
           "source_content_hash": "c0ba7aa0874ee6e4aea01f5fa1194eddf81999ad1b23439bdcee802b58418f0a",
-          "quote": "TIAA Ventures",
-          "quote_hash": "ee9264eff0aff7f219c6dffde476d4169fdc6b9ea7e737f0aac18b4bd65ef13a"
+          "quote": "while adding new corporate investors Workday Ventures , TIAA Ventures , S Ventures , and Quadrille Capital",
+          "quote_hash": "768ea10b4f225d9d73535388c1b11d52ef9e755c0780e9b3cbc83fc06177cd4a"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-9c83f4487afa07-2",
+          "source_url": "https://www.nuveen.com/en-us/insights/retirement/evaluating-lifetime-income-target-date-funds-with-nestimate",
+          "source_title": "Evaluating lifetime income target date funds with Nestimate | Nuveen",
+          "source_content_hash": "7d9c1ad99ae22db7a9a6160b323b9372821e66a77052ff92e7fb961ca416adf6",
+          "quote": "TIAA Ventures, LLC, an affiliate of Nuveen, has a minority, non-controlling ownership interest in Nestimate.",
+          "quote_hash": "036d9dc66b3bdb9f6708d0f422ef2ad961383a26a51e7e24f8a5dc0e038c2271"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-9c83f4487afa07-3",
+          "source_url": "https://www.prnewswire.com/news-releases/nuveen-acquires-leading-custom-multi-asset-direct-indexing-provider-brooklyn-investment-group-302483724.html",
+          "source_title": "Nuveen Acquires Leading Custom Multi-Asset Direct Indexing Provider, Brooklyn Investment Group",
+          "source_content_hash": "d0842a1aeae6949001b153a2a39373c3554e917f4e670550c2e8a26e78a0d110",
+          "quote": "Nuveen invested in Brooklyn in partnership with TIAA Ventures, taking on a minority stake in 2023.",
+          "quote_hash": "1b06ee3482625c96906cd7c9cbfb221b09b2fe525e82e1af0f77be9d2183c000"
         },
         {
           "source_id": "FISRC-0d891f327f6f719c",
@@ -162,7 +189,7 @@
           "quote_hash": "768ea10b4f225d9d73535388c1b11d52ef9e755c0780e9b3cbc83fc06177cd4a"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

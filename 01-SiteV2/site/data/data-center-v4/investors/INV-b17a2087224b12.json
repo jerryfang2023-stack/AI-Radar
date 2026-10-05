@@ -193,10 +193,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "Ayar Labs 与 MatX 的公开融资材料均列出 Alchip 作为供应链/产业投资参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司主营业务来自 Alchip 官网；Ayar Labs 和 MatX 的项目公告分别列出 Alchip 为商业战略或供应链投资参与方，未披露其独立基金或单独出资额。",
+      "summary": "Alchip 官网介绍其主营 ASIC/SoC 芯片设计与制造服务，重点服务 AI、HPC 等应用。Ayar Labs 与 MatX 的项目公告将 Alchip 列为供应链/产业投资参与方；不将这些产业合作记录概括为专业财务投资机构业务。",
+      "facts": [
+        {
+          "field": "company_business",
+          "label": "官网披露的公司主营业务",
+          "value": "Alchip 官网称其提供硅设计及制造服务，并为客户开发复杂、高产量 ASIC 与 SoC。",
+          "source_id": "PROFILE-COLLECT-INV-b17a2087224b12-J-3"
+        },
+        {
+          "field": "served_markets",
+          "label": "官网披露的重点市场",
+          "value": "官网列出的重点市场包括 AI、HPC/超级计算、移动设备、娱乐设备、网络设备等。",
+          "source_id": "PROFILE-COLLECT-INV-b17a2087224b12-J-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -225,9 +238,17 @@
           "source_content_hash": "5e3b77e276dc8bbe9929f6045e00b94923e684e271149ca3403f4641ecbf53d4",
           "quote": "rej Karpathy , Dwarkesh Patel , and others. We’re also welcoming investors across the supply chain, including Alchip and Marvell . Mike and I started MatX because we felt that the best chip for LLMs should be designed from first principles with a deep understanding of what LLMs need and how they will evolve. We are willing to give up on small-model performan",
           "quote_hash": "f645b71682729625267845ddc9ccfc411401399e54922e99a641d5aae7b718b8"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b17a2087224b12-J-3",
+          "source_url": "https://www.alchip.com/en/About_Alchip/company",
+          "source_title": "Company - Alchip",
+          "source_content_hash": "e6be2ce454be60616e14edd174a123240ffd1ef2312046b9046d3031642f3f7d",
+          "quote": "As a leading provider of silicon design and manufacturing services, Alchip is committed to partnering with our customers",
+          "quote_hash": "79b276f89f35b6474f2bddf61818feb8fc15756f2d656758cd91a3f71c584d28"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

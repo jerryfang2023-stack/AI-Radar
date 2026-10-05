@@ -123,10 +123,17 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "依据 Arm 新闻稿与 Build Collective 官方人物页；仅记录已核验职务和公开投资人身份，不扩展完整履历。",
-      "summary": "Arm 新闻稿称 Tony Fadell 是 Build Collective 的 Principal、活跃投资人与创业者；Build Collective 官方人物页也将其描述为投资人。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "人物身份与职务依据Arm和Build Collective官方页面；“非VC机构”是Build Collective对其自身的描述，不否定Tony Fadell个人投资者身份，也不代表其另行设立的专项基金。",
+      "summary": "Arm新闻稿称Tony Fadell是Build Collective的Principal、活跃投资人与创业者；Build Collective官网亦将其列为投资人。Build Collective团队页将该机构自述为非VC机构，因此不把其等同于传统有限期限风险投资基金。",
+      "facts": [
+        {
+          "field": "build_collective_description",
+          "label": "Build Collective官网对机构自身的描述",
+          "value": "Build Collective团队页称其不是VC机构，并说明没有需要汇报的LP、也不按五年期限关闭基金。",
+          "source_id": "PROFILE-S-INV-389cd7e12ad5ae-5"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -169,6 +176,14 @@
           "quote_hash": "61ca16c13a99a3cac8809c922bc6008cb250068483cc89114276c018c1ffe85d"
         },
         {
+          "source_id": "PROFILE-S-INV-389cd7e12ad5ae-5",
+          "source_url": "https://www.buildc.com/the-team",
+          "source_title": "Build, the Team | Build Collective",
+          "source_content_hash": "85de30651d311468edf756826bab75c71616aecb8e6e02db6aabda658b549c76",
+          "quote": "Not a VC firm We don&rsquo;t have LP&rsquo;s to report to and we don&rsquo;t close funds after 5 years",
+          "quote_hash": "bbb5fb19c56736b4e061c28e777b38b1aae4d765a981695c2cb36cf37459ff8e"
+        },
+        {
           "source_id": "FISRC-f6fdd5655f9959e9",
           "source_url": "https://nothing.tech/community-investment-3",
           "source_title": "Community Investment (3) | Nothing | UK",
@@ -177,7 +192,7 @@
           "quote_hash": "0d2ff2ed479c2a9fa3616f2cc4c64002eac55ec3ae7093414822902947425369"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [
         {
           "title": "Principal",

@@ -123,15 +123,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "威邦震电官方新闻将苏高新金控列为公司此前两轮融资的投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体全称、国有属性及业务板块来自上市公司招股相关文件；威邦震电历史投资活动来自其融资新闻，未把投资方简称延伸为未披露的轮次或金额。",
+      "summary": "苏州金合盛控股有限公司（苏高新金控）是苏州高新区管委会直属国有金融控股集团，业务覆盖股权投资、非银金融、资本市场服务与数字金融。威邦震电的融资新闻将苏高新金控列为该公司此前两轮融资投资方；报道未给出具体轮次与出资额。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "机构全称",
+          "value": "苏州金合盛控股有限公司，简称苏高新金控。",
+          "source_id": "PROFILE-B10-INV-ad6f8d6357e001-1"
+        },
+        {
+          "field": "ownership",
+          "label": "机构属性",
+          "value": "苏州高新区管委会直属国有金融控股集团。",
+          "source_id": "PROFILE-B10-INV-ad6f8d6357e001-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务板块",
+          "value": "业务包括股权投资、非银金融、资本市场服务及数字金融。",
+          "source_id": "PROFILE-B10-INV-ad6f8d6357e001-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "威邦震电官方新闻将苏高新金控列入公司此前两轮融资投资方。",
-          "source_id": "PROFILE-c9c1cd1a8df12ada0686"
+          "description": "威邦震电融资新闻称苏高新金控属于其此前两轮融资投资方；未披露具体轮次或金额。",
+          "source_id": "PROFILE-B10-INV-ad6f8d6357e001-3"
         },
         {
           "description": "融资来源记录：威邦震电 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -141,12 +160,28 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-c9c1cd1a8df12ada0686",
+          "source_id": "PROFILE-B10-INV-ad6f8d6357e001-1",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-08-02/1220776402.PDF",
+          "source_title": "static.cninfo.com.cn",
+          "source_content_hash": "6f206b3d7448853db4d29356d4541b4bde963700482865858b09a0eaf0321b7a",
+          "quote": "苏州金合盛控股有限公司（以下简称“苏高新金控”）是苏州高新区管委会直属国有金融控股集团",
+          "quote_hash": "d946e75b41c789a36fa34a1d25be10496442b26ff040e09c553eff9ba7e66dab"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-ad6f8d6357e001-2",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-08-02/1220776402.PDF",
+          "source_title": "static.cninfo.com.cn",
+          "source_content_hash": "6f206b3d7448853db4d29356d4541b4bde963700482865858b09a0eaf0321b7a",
+          "quote": "苏高新金控拥有股权投资、非银金融、资本市场服务和数字金融发展四大业务板块",
+          "quote_hash": "9be8a5671dfe751c314f2ebee7d5e5272d01c7930f3a38c15678b2b3b796d057"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-ad6f8d6357e001-3",
           "source_url": "https://www.instrument.com.cn/netshow/SH116328/news_977780.htm",
           "source_title": "威邦震电完成近亿元B轮融资，推进分子振动光谱技术在工业检测、临床及AI for Science商业化进程_振电（苏州）科技有限公司",
-          "source_content_hash": "995f740e5001050c29af728d9d9e32c3f6c1b09d7c81a866bd12ffc051ca275f",
-          "quote": "推进 产品在工业检测、临床、 AI for Science 等领域 的商业化。本轮融资由道彤 投资 领投， IDG资本 共同参与 。 此前，威邦震电已完成 两 轮融资，投资方包括道远资本、峰瑞资本、方正合生、纳通资本、苏高新金控等知名机构和个人。 威邦震电成立于 2017年， 是 一家专注于分子 振动 光谱技术创新 ， 致力于打造高端国产光谱分析与成像产品 的高新技术企业。 公司深耕非线性光学领域 ， 核心团队在光谱技术、光学成像、光电分析等领域具有多年研发积累。凭借自主研发的相干拉曼、瞬态吸收、瞬时激光红外三大光谱技术平台，威邦震电大幅提高了特异性、灵敏度、分辨率及成像速度等核心指标，具备替代现有进口解决方案和拓展新兴应用场景的巨大潜力。 随着 AI技术的爆发式发展，",
-          "quote_hash": "97ad9cf143b705b744c8dfe6b8937cee5e2208fc50dcd45cf3007dd280131b3a"
+          "source_content_hash": "3cdf08eba108337215a3e5e0fb229ec1982c821313f137653c74f3c085043c37",
+          "quote": "此前，威邦震电已完成 两 轮融资，投资方包括道远资本、峰瑞资本、方正合生、纳通资本、苏高新金控等知名机构和个人。",
+          "quote_hash": "31402d091140e97dd3f94620d02c48c03136aa4293d81f19a8f3f6587f65a9c2"
         },
         {
           "source_id": "FISRC-f9c8fdd671d3e193",
@@ -157,7 +192,7 @@
           "quote_hash": "b8669b32ddc138938a94380ccc60055647f870685da1a45bec4f8ac2e9e3ffcd"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

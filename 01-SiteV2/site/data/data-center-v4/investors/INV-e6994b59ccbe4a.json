@@ -139,20 +139,78 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
+      "coverage_note": "个人简介依据其机构官网；All Hands AI 天使投资记录未披露个人出资额。",
+      "summary": "Techammer 官网介绍 Jeff Hammerbacher 是创业者、投资人和董事会成员，并列出其现任董事会职务、此前经历及教育背景；TechCrunch 将其列为 All Hands AI 天使投资人之一。",
       "facts": [],
       "milestones": [],
       "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动与来源明确记载的身份关联；不补写未经核实的个人出资金额或完整履历。",
-      "summary": "TechCrunch 报道 All Hands AI 在 2024 年 9 月完成 500 万美元种子轮，并将 Cloudera 联合创始人 Jeff Hammerbacher 列为天使投资人；未披露其个人出资额。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "人物及投资关联依据 TechCrunch 对 All Hands AI 融资和投资者的报道；不补充未由本档案来源核实的其他履历。",
+      "current_roles": [
+        {
+          "title": "董事会成员",
+          "organization": "Datavant",
+          "source_id": "b32-jeff-bio"
+        },
+        {
+          "title": "董事会成员",
+          "organization": "PerkinElmer",
+          "source_id": "b32-jeff-bio"
+        },
+        {
+          "title": "董事会成员",
+          "organization": "emids",
+          "source_id": "b32-jeff-bio"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Hammer Lab",
+          "title": "Scientist",
+          "period": "此前；官网未注明具体年份",
+          "description": "Techammer 官网列为其此前经历。",
+          "source_id": "b32-jeff-bio"
+        },
+        {
+          "organization": "Cloudera",
+          "title": "Founder and Chief Scientist",
+          "period": "此前；官网未注明具体年份",
+          "description": "Techammer 官网列为其此前经历。",
+          "source_id": "b32-jeff-bio"
+        },
+        {
+          "organization": "Accel Partners",
+          "title": "Entrepreneur in Residence",
+          "period": "此前；官网未注明具体年份",
+          "description": "Techammer 官网列为其此前经历。",
+          "source_id": "b32-jeff-bio"
+        },
+        {
+          "organization": "Facebook",
+          "title": "Manager of the Data team",
+          "period": "此前；官网未注明具体年份",
+          "description": "Techammer 官网列为其此前经历。",
+          "source_id": "b32-jeff-bio"
+        },
+        {
+          "organization": "Bear Stearns",
+          "title": "Fixed income quant",
+          "period": "此前；官网未注明具体年份",
+          "description": "Techammer 官网列为其此前经历。",
+          "source_id": "b32-jeff-bio"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Harvard University",
+          "qualification": "Bachelor’s Degree in Mathematics",
+          "source_id": "b32-jeff-bio"
+        }
+      ],
+      "experience_summary": "官网自述其曾在数据科学、软件公司与金融量化领域任职；现任董事会名单以该官网本次核验内容为准。",
       "track_record": [
         {
-          "description": "TechCrunch 报道将 Cloudera 联合创始人 Jeff Hammerbacher 列为 All Hands AI 种子轮天使投资人之一；未披露个人出资额。",
-          "source_id": "all-hands-jeff-hammerbacher-seed-2024"
+          "description": "TechCrunch 报道将 Jeff Hammerbacher 列为 All Hands AI 种子轮天使投资人之一；未披露个人出资额。",
+          "source_id": "b32-jeff-round"
         },
         {
           "description": "融资来源记录：All Hands AI · 种子轮 · 2024-09-05 · 本轮天使投资人 · 500万美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -161,7 +219,23 @@
       ],
       "sources": [
         {
-          "source_id": "all-hands-jeff-hammerbacher-seed-2024",
+          "source_id": "b32-jeff-bio",
+          "source_url": "https://techammer.co/about",
+          "source_title": "About &mdash; Techammer",
+          "source_content_hash": "343f1546d723474bef4a09aac4bae09b8bdb8d8bb36b0f03d9f88d0af1365c28",
+          "quote": "Jeff Hammerbacher is a founder, investor, and board member. He currently serves on the boards of Datavant, PerkinElmer, and emids.",
+          "quote_hash": "f194b064c50279056c8d1be74dd016356bd841f11648728e231d01f5763aa00b"
+        },
+        {
+          "source_id": "b32-jeff-career-education",
+          "source_url": "https://techammer.co/about",
+          "source_title": "About &mdash; Techammer",
+          "source_content_hash": "343f1546d723474bef4a09aac4bae09b8bdb8d8bb36b0f03d9f88d0af1365c28",
+          "quote": "Previously, he was a scientist at Hammer Lab, the founder and Chief Scientist of Cloudera (IPO), an Entrepreneur in Residence at Accel Partners, manager of the Data team at Facebook, and a fixed income quant at Bear Stearns. Jeff earned his Bachelor's Degree in Mathematics from Harvard University.",
+          "quote_hash": "0e7ab529968d180903774bfb9250944ef607a586ed476c1356e9519d7fd59964"
+        },
+        {
+          "source_id": "b32-jeff-round",
           "source_url": "https://techcrunch.com/2024/09/05/all-hands-ai-raises-5m-to-build-open-source-agents-for-developers/",
           "source_title": "All Hands AI raises $5M to build open source agents for developers | TechCrunch",
           "source_content_hash": "bb0a34581094ded4c006e61afa52d50a1301aff69bd8fed22eed4cf5af799649",
@@ -177,7 +251,7 @@
           "quote_hash": "c75c91ca5b8d003b7bc3247958b876a62fd1ad3b68ba7cbc6d6726a6e2557114"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

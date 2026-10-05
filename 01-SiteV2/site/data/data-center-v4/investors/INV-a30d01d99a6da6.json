@@ -137,29 +137,27 @@
       }
     ],
     "public_profile": {
-      "summary": "Z Fellows 是面向早期创业者的一周项目；官网 FAQ 说明参与者可选择接受1万美元投资，按10亿美元估值上限转换为下一轮股份。",
+      "summary": "Z Fellows 官网将其称为一周项目，让创业者与十亿美元级公司创始人交流，并允许参与者选择接受1万美元、估值上限为10亿美元的投资。TechCrunch 报道其参与 Photon 的450万美元种子轮，未披露其单独投资金额。现有资料显示其兼有创业者项目与可选投资安排，不足以证明其为传统独立VC基金。",
       "facts": [
         {
-          "field": "investment_program",
-          "label": "机构官网",
-          "value": "项目参与者可选择接受1万美元投资，估值上限为10亿美元，并在下一轮定价时转换为股份。",
-          "source_id": "PROFILE-INV-a30d01d99a6da6-1"
+          "field": "program_format",
+          "label": "项目形式",
+          "value": "面向创业者的一周项目，提供与有经验创业者交流学习的机会。",
+          "source_id": "PROFILE-B9-INV-a30d01d99a6da6-1"
         },
         {
-          "field": "program_type",
-          "label": "机构官网",
-          "value": "面向早期创业者的一周项目及持续创业支持。",
-          "source_id": "PROFILE-INV-a30d01d99a6da6-1"
+          "field": "investment_option",
+          "label": "投资安排",
+          "value": "参与者可选择不接受资金，或接受1万美元投资，估值上限为10亿美元并在下一轮定价时转换为股份。",
+          "source_id": "PROFILE-B9-INV-a30d01d99a6da6-2"
         }
       ],
-      "milestones": [
-        {
-          "date": "Current FAQ",
-          "description": "官网披露可选1万美元投资安排；参与者也可不接受投资。",
-          "source_id": "PROFILE-INV-a30d01d99a6da6-1"
-        }
-      ],
+      "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 报道称 Z Fellows 参与 Photon 2026 年450万美元种子轮；未披露其单独投资金额。",
+          "source_id": "PROFILE-B9-INV-a30d01d99a6da6-3"
+        },
         {
           "description": "融资来源记录：Photon · 种子轮 · 2026-10-01 · 本轮参投 · $4.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-199e9ff185705c78"
@@ -167,8 +165,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "该记录仅覆盖官网披露的可选项目投资安排，不把创业者加速项目描述成传统风险投资基金。",
+      "coverage_status": "researched",
+      "coverage_note": "项目与可选投资安排依据 Z Fellows 官网自述；“非传统独立VC基金”是根据该项目形式作出的谨慎归类，不代表对其法律身份的确认。Photon 参与来自融资报道，未披露单独投资金额。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -177,27 +175,35 @@
         {
           "kind": "website",
           "label": "机构官网",
-          "value": "Z Fellows",
-          "url": "https://www.zfellows.com/?source_capture=2026-10-03&cycle=16",
-          "source_id": "PROFILE-INV-a30d01d99a6da6-1"
+          "value": "官网",
+          "url": "https://www.zfellows.com/",
+          "source_id": "PROFILE-B9-INV-a30d01d99a6da6-1"
         }
       ],
       "sources": [
         {
-          "source_id": "PROFILE-INV-a30d01d99a6da6-1",
-          "source_url": "https://www.zfellows.com/?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-B9-INV-a30d01d99a6da6-1",
+          "source_url": "https://www.zfellows.com/",
           "source_title": "Z Fellows | Get Fast-Tracked into Silicon Valley",
           "source_content_hash": "97642eef34207893e2bfc4dee62df4202afdfab1265b1f1bee13a247cd65d0eb",
-          "quote": "investment at a $1B valuation cap",
-          "quote_hash": "685bbb49c866c15971612f8e4395452d9bb9488490096dbb06ee391b49c732b1"
+          "quote": "A one-week experience bringing together ten builders with founders of billion dollar companies.",
+          "quote_hash": "11b217b48a520e8515761f3d4ea90ca32a73912fe75694ed89e091b8e5845445"
         },
         {
-          "source_id": "PROFILE-INV-a30d01d99a6da6-2",
-          "source_url": "https://www.zfellows.com/?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-B9-INV-a30d01d99a6da6-2",
+          "source_url": "https://www.zfellows.com/",
           "source_title": "Z Fellows | Get Fast-Tracked into Silicon Valley",
           "source_content_hash": "97642eef34207893e2bfc4dee62df4202afdfab1265b1f1bee13a247cd65d0eb",
-          "quote": "This $10,000 investment will convert into stock at your next priced round.",
-          "quote_hash": "b4a440b3610642883990d504bd49ec1ffe65c7cadfc0938cbcf56c55e2bc790f"
+          "quote": "a $10,000 investment at a $1B valuation cap",
+          "quote_hash": "fcdc6a18ae123338663cda020d162fff41e61df0c35f8dfcff8c7adfb145ee0c"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-a30d01d99a6da6-3",
+          "source_url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
+          "source_title": "Photon held a funeral for mobile apps. Now it has $4.5M to help replace them with agents. | TechCrunch",
+          "source_content_hash": "cf9279f41fa85a9948d0e9afa26458c4119e068d3b48d36805a5b054a85ec8d2",
+          "quote": "seed round was co-led by Gradient and A* with participation from Vercel, HSG (HongShan in Chinese), Z Fellows, Llama Ventures, Karman, and other angel investors.",
+          "quote_hash": "a01935246b715d6908aaa2448deaa194fd1f530168ecd9cd072daf0ca65b1de7"
         },
         {
           "source_id": "FISRC-199e9ff185705c78",
@@ -208,7 +214,7 @@
           "quote_hash": "ac15258cb66619a32697a75618de792e84a4ec14c9481f0569cbe019e775c33a"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -219,11 +219,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "华山资本（WestSummit Capital）专注全球科技领域的成长期投资。全球半导体观察报道其为灵睿智芯 Pre-A 轮投资方及早期天使轮老股东。",
-      "coverage_note": "机构定位来自华山资本官网，融资关系来自全球半导体观察报道，未披露单独投资金额。",
-      "facts": [],
+      "summary": "华山资本（WestSummit Capital）官网将其定位为全球化高科技成长投资基金；全球半导体观察报道其为灵睿智芯早期投资方并在 Pre-A 轮继续加码。",
+      "coverage_note": "机构定位据官网，交易角色来自产业媒体报道；报道未披露具体出资基金或法律主体。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网机构定位",
+          "value": "官网将华山资本描述为全球化高科技成长型投资基金。",
+          "source_id": "PROFILE-COLLECT-INV-02e436b16233a4-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "报道将华山资本列为灵睿智芯早期股东及持续加码投资方。",
+          "source_id": "PROFILE-COLLECT-INV-02e436b16233a4-2"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -231,10 +244,6 @@
       "education": [],
       "experience_summary": "",
       "track_record": [
-        {
-          "description": "灵睿智芯 Pre-A 轮披露华山资本为早期天使轮老股东并持续加码。",
-          "source_id": "huashan_lingrui_pre_a"
-        },
         {
           "description": "融资来源记录：灵睿智芯 · Pre-A轮 · 2026-07-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-760e793448781182"
@@ -246,7 +255,7 @@
       ],
       "sources": [
         {
-          "source_id": "huashan_identity",
+          "source_id": "PROFILE-COLLECT-INV-02e436b16233a4-1",
           "source_url": "https://www.westsummit.cn/",
           "source_title": "WestSummit Capital &#8211; Global Technology Growth Capital",
           "source_content_hash": "b0434febf57ae5738d66999b3c9d9f5290d3968bab3eb7d914cad76d0fc2dad6",
@@ -254,7 +263,7 @@
           "quote_hash": "1b3a03ecfa250d36ea62db1ee89077338725c8d95fd82f2d87276b9cc451c674"
         },
         {
-          "source_id": "huashan_lingrui_pre_a",
+          "source_id": "PROFILE-COLLECT-INV-02e436b16233a4-2",
           "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
           "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地-全球半导体观察",
           "source_content_hash": "c44258fd63dbcf3ad4e6df50fd480a2fc6370d3917ad0cdccc1fa91ad0ca3de8",
@@ -278,7 +287,7 @@
           "quote_hash": "c03ad7bf0c5c08ba90e3a3b1f2780303d379c56602f9b11f3c90a8e797667252"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

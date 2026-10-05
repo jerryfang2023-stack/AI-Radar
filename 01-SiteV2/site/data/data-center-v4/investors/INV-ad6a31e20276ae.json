@@ -123,33 +123,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "投中网报道将吉德电器列为千觉机器人此前一轮融资的产业投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网以 Jide Group 介绍吉德电器业务；千觉机器人融资报道将“吉德电器”列为战略投资方，但没有说明具体出资法律主体或金额。本档不推断其使用独立基金。",
+      "summary": "吉德集团官网称其为中国家电制造及品牌运营企业，业务包括洗衣机、制冷及空调产品的研发、制造和销售，始于1980年。投中网报道将吉德电器列为千觉机器人亿元融资的战略投资方；披露未说明具体投资载体或出资额。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "业务",
+          "value": "官网介绍其从事白色家电等产品的研发、制造与销售。",
+          "source_id": "PROFILE-B13-INV-ad6a31e20276ae-4"
+        },
+        {
+          "field": "founded",
+          "label": "发展沿革",
+          "value": "官网称企业自1980年建立。",
+          "source_id": "PROFILE-B13-INV-ad6a31e20276ae-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投中网报道将吉德电器列为千觉机器人此前一轮的投资方。",
+          "description": "投中网报道将吉德电器列为千觉机器人2026年亿元融资的战略投资方；未披露金额及具体出资主体。",
+          "source_id": "PROFILE-B13-INV-ad6a31e20276ae-5"
+        },
+        {
+          "description": "融资来源记录：千觉机器人 · 历史轮次未披露 · 此前亿元级融资投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3a00c703054126cd"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "NINGBO JIDE ELECTRICAL APPLIANCE CO.,LTD",
+          "url": "https://www.jide.cn/ABOUT",
+          "source_id": "PROFILE-B13-INV-ad6a31e20276ae-4"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B13-INV-ad6a31e20276ae-4",
+          "source_url": "https://www.jide.cn/ABOUT",
+          "source_title": "NINGBO JIDE ELECTRICAL APPLIANCE CO.,LTD ABOUT US",
+          "source_content_hash": "59379296afe868a951e2794f08ec91bf502fb6e1a60ac554fc18f50fb6a6669e",
+          "quote": "Jide Group is the leading MDA manufacturer and brand operator in China. Since its establishment in 1980, after over 4 decades of development, it has grown into a modern enterprise integrating R&D, manufacturing, and sales of MDA such as WM, RE & AC.",
+          "quote_hash": "f9b2b3d2a0234a163fccd2c343e0ac60d60f4e3362bd028af18cf1ddf17a33fb"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-ad6a31e20276ae-5",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-07-15/doc-inihwmia8026428.shtml",
+          "source_title": "千觉机器人完成亿元融资_新浪科技_新浪网",
+          "source_content_hash": "06f9f424c58a850f48ed42e77f33304bbead08a2952cb6969ed2636b41a3fd53",
+          "quote": "本轮融资由顶级具身智能产业方与吉德电器战略投资，天季资本共同投资。",
+          "quote_hash": "287d93909818c9ffaf285bb99871ed017e89cd43f4501ed0a01e2a90456f3807"
+        },
         {
           "source_id": "FISRC-3a00c703054126cd",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
-          "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 | 投中网",
-          "source_content_hash": "5a4b1879761bbaaff6343af02cf73fc667e8b203bc96bc343e1a95861c62ec37",
-          "quote": "金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。短短数月内连续完成两轮融资，反映出资本市场与产业方对触觉智能赛道及千觉商业化进展的持续关注。 此前，千觉已宣布完成亿元级融资，投资方包括顶级具身智能产业方、天季资本、吉德电器。目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构，以及理想汽车、智元机器人、吉德电器等具身与工业领域头部产业方，多家机构连续多轮加注。 本轮资金将重点用于产品升级、业务扩展与产业化落地，加快高精度视触觉传感器迭代与规模化交付，完善真实交互数据采集、触觉仿真与数据集建设，持续推进触觉具身模型和触觉世界模型研发，推动触觉智能技术在更多真实场景中的应用。 千觉成立于2024年5月，由上海交通大学教授、ICRA 2021全球唯一最佳",
-          "quote_hash": "7938ffd1e552813ef56ba96ab69e9d08541b8ecef5f7bf1feededd5ce0ff1857"
+          "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
+          "source_content_hash": "3943ea5191d9c7eb",
+          "quote": "此前，千觉已宣布完成亿元级融资，投资方包括顶级具身智能产业方、天季资本、吉德电器。",
+          "quote_hash": "09c4da88abb10fa422cb8edd951807aac09e7a98e16b591a02b49f66af0dec69"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-04"
     }
   }
 }

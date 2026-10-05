@@ -278,33 +278,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "法律名称与股东关系据杰华特微电子发行披露；融资参与名称据投资界报道。来源未披露本轮具体哈勃投资载体。",
+      "summary": "发行人上市披露将“哈勃投资”对应为哈勃科技创业投资有限公司，并记载该公司作为深圳哈勃普通合伙人、其唯一股东为华为投资控股有限公司。融资报道以“华为哈勃”名称列出面壁智能一轮投资。本档不将媒体简称推定为该轮具体出资基金或法律主体。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "发行披露中的管理人",
+          "value": "哈勃投资对应哈勃科技创业投资有限公司。",
+          "source_id": "PROFILE-COLLECT-INV-cb231f633f2f52-1"
+        },
+        {
+          "field": "parent_company",
+          "label": "股东关系",
+          "value": "发行披露记载哈勃科技创业投资有限公司的唯一股东为华为投资控股有限公司。",
+          "source_id": "PROFILE-COLLECT-INV-cb231f633f2f52-2"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "投资界将“华为哈勃”列为面壁智能新一轮融资领投方；未披露实际投资载体。",
+          "source_id": "PROFILE-COLLECT-INV-cb231f633f2f52-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 北京面壁智能科技股份有限公司 2024年4月新一轮融资领投。",
-          "source_id": "FISRC-ca5c9f62e4d3f2f3"
-        },
-        {
-          "description": "公开融资来源将其列为 极佳视界 A1轮联合投资方。",
-          "source_id": "FISRC-4782a6093d519a4d"
-        },
-        {
-          "description": "公开融资来源将其列为 面壁智能 2024年A轮领投方。",
+          "description": "融资来源记录：北京面壁智能科技股份有限公司 · 历史轮次未披露 · 2024-04 · 2024年4月新一轮融资领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ca5c9f62e4d3f2f3"
         },
         {
           "description": "融资来源记录：极佳视界 · 历史轮次未披露 · A1轮联合投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ce47b663ca256878"
+          "source_id": "FISRC-4782a6093d519a4d"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-ca5c9f62e4d3f2f3",
+          "source_id": "PROFILE-COLLECT-INV-cb231f633f2f52-1",
+          "source_url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202204/001131_20220416_LEWW.pdf",
+          "source_title": "杰华特微电子股份有限公司首次公开发行股票并在科创板上市招股说明书",
+          "source_content_hash": "bc5df2de3b63f52a3ac114ca36d131b5ec278038cf79bbf589afffe0026f824c",
+          "quote": "哈勃投资 指 哈勃科技创业投资有限公司",
+          "quote_hash": "1a042929355595fb2e3b1fb8bf5738a7049273d4990353ae7f73c0ed90f018c2"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-cb231f633f2f52-2",
+          "source_url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202204/001131_20220416_LEWW.pdf",
+          "source_title": "杰华特微电子股份有限公司首次公开发行股票并在科创板上市招股说明书",
+          "source_content_hash": "bc5df2de3b63f52a3ac114ca36d131b5ec278038cf79bbf589afffe0026f824c",
+          "quote": "公司的唯一股东为华为投资控股有限公司",
+          "quote_hash": "e2cfd42989c193e82d12f8f52cd43b1681b9efdb35796d095801fcbb20bb457a"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-cb231f633f2f52-3",
           "source_url": "https://news.pedaily.cn/202607/566303.shtml",
           "source_title": "首发| 面壁智能融资超50亿，估值超200亿_投资界",
           "source_content_hash": "ce889fe2e46ae92f26474f083a9a92298409d26606978723c0b47684e796b06f",
@@ -312,10 +339,18 @@
           "quote_hash": "e22e92fc338cc3ff9280fbddc77ebc74a0e50844a318c89af96b35f04891c717"
         },
         {
+          "source_id": "FISRC-ca5c9f62e4d3f2f3",
+          "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+          "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+          "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+          "quote": "时隔一年，面壁智能又获得新一轮数亿元融资，由春华创投、华为哈勃领投",
+          "quote_hash": "e22e92fc338cc3ff9280fbddc77ebc74a0e50844a318c89af96b35f04891c717"
+        },
+        {
           "source_id": "FISRC-4782a6093d519a4d",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
-          "source_title": "首发| 极佳视界，一个月融资25亿|融资|华为_新浪科技_新浪网",
-          "source_content_hash": "56bba06023f6b28b5a4241f2153bc4e108c0fce771a137f6e06098ae74757aea",
+          "source_title": "极佳视界完成15亿元B1轮融资",
+          "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
           "quote": "同年11月，极佳视界完成新一轮亿元级A1轮融资，由华为哈勃、华控基金联合投资",
           "quote_hash": "0ead8226c58fcc30b28c47bf2d64330458265611311a8af5bc1070a9de07e895"
         },

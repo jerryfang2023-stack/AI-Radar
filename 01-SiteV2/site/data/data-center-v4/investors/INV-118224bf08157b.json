@@ -138,11 +138,18 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "person",
       "summary": "Ofir Ehrlich 是 Eon 联合创始人及 CEO；TechCrunch 报道将其列为 AIR 种子轮参与的天使投资人之一。",
       "coverage_note": "现职来自 Eon 官网，融资参与来自 TechCrunch 报道；未据报道推断其投资载体或出资额。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "founder_background",
+          "label": "公司官方公告对创始团队经历的描述",
+          "value": "Eon 官方公告称，Ofir Ehrlich 等三位创始人组成的团队曾构建并领导 AWS Disaster Recovery and Migration services；公告未逐一说明其个人在 AWS 的岗位。",
+          "source_id": "PROFILE-R-INV-118224bf08157b-3"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [
@@ -178,9 +185,17 @@
           "source_id": "ofir_air_seed",
           "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
           "source_title": "AIR raises $50M to help companies vet the skills and add-ons AI agents use | TechCrunch",
-          "source_content_hash": "2795f209de1c94ed4c7ab84b73df9f7098cf8bfa2cbc53bc58cdef9cf5b963ac",
+          "source_content_hash": "d7d2329ac77d8ae363f1d141c7ca53f0a8c131f02197ddb32c8c8e537c5d33be",
           "quote": "Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
           "quote_hash": "8fc16986413fda9ef0624f9d10ed889febb4cb1c855268c0660b93211fe84c23"
+        },
+        {
+          "source_id": "PROFILE-R-INV-118224bf08157b-3",
+          "source_url": "https://www.eon.io/news-and-events/eon-brings-ai-ready-data-infrastructure-to-adtech-eliminating-the-data-bottlenecks-holding-back-ai-at-scale",
+          "source_title": "Eon Brings AI-Ready Data Infrastructure to AdTech, Eliminating the Data Bottlenecks Holding Back AI at Scale | Eon",
+          "source_content_hash": "03060f281ea2bde724bdb70f01a82859cd653d943ff5da1c292329ecd6ee8130",
+          "quote": "Founded by Ofir Ehrlich, Gonen Stein, and Ron Kimchi, the team that built and led AWS Disaster Recovery and Migration services",
+          "quote_hash": "a4fda7822c2f935fc1e43c9d2adb4b929086de5ba7ae5d067446bcf75f5b729e"
         },
         {
           "source_id": "FISRC-0426e4b3b9347f4f",
@@ -191,7 +206,7 @@
           "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

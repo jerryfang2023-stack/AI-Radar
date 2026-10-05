@@ -195,11 +195,30 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "上海国投先导私募基金管理有限公司是上海国有资本投资有限公司的全资子公司，管理上海三大先导产业母基金。新浪财经报道其与国投创新联合领投天鹜科技 A++ 轮。",
-      "coverage_note": "机构身份和基金管理定位来自官方官网；融资关系来自新浪财经报道，未披露单独投资金额。",
-      "facts": [],
+      "summary": "上海国投先导私募基金管理有限公司是上海国有资本投资有限公司全资设立的基金管理机构，官网称其通过三只母基金服务集成电路、生物医药和人工智能先导产业。其人工智能母基金的公开方向包括通用人工智能、智能算力、人形机器人和垂类大模型等。",
+      "coverage_note": "法定名称、股东关系、母基金管理职能和投资主题据上海国投先导官网；未将母基金规模或近期投决金额推作当前已投金额。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官方主体名称",
+          "value": "官网披露全称为上海国投先导私募基金管理有限公司，并称其为上海国有资本投资有限公司全资子公司。",
+          "source_id": "PROFILE-COLLECT-INV-023d61a9ea9c9b-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "基金管理职能",
+          "value": "官网称公司以专业基金管理组建三大先导产业母基金。",
+          "source_id": "PROFILE-COLLECT-INV-023d61a9ea9c9b-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "人工智能母基金方向",
+          "value": "官网列出通用人工智能、智能算力、人形机器人、垂类大模型等方向。",
+          "source_id": "PROFILE-COLLECT-INV-023d61a9ea9c9b-3"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -207,10 +226,6 @@
       "education": [],
       "experience_summary": "",
       "track_record": [
-        {
-          "description": "新浪财经 2026 年 7 月 13 日报道，上海国投先导与国投创新联合领投天鹜科技 A++ 轮。",
-          "source_id": "ssci_tianwu_a_plus_plus"
-        },
         {
           "description": "融资来源记录：天鹜科技 · A++轮 · 2026-07-13 · 本轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-899fa4d253299e85"
@@ -222,20 +237,28 @@
       ],
       "sources": [
         {
-          "source_id": "ssci_identity",
+          "source_id": "PROFILE-COLLECT-INV-023d61a9ea9c9b-1",
           "source_url": "https://www.ssci-leadingfund.com/",
           "source_title": "上海国投先导",
           "source_content_hash": "f3790cbb3796ef20fd135f9800d4d190dba63e4ead6760795fc73d161f03f9a1",
-          "quote": "上海国投先导私募基金管理有限公司（ 简称“上海国投先导” ）成立于2024年5月",
-          "quote_hash": "aaf67a0ecfa84355ad2b8f5e9203335f2c71f2d95de30cd1601e51cf24597095"
+          "quote": "上海国投先导私募基金管理有限公司（ 简称“上海国投先导” ）成立于2024年5月，是上海国有资本投资有限公司在市国资委指导下设立的全资子公司",
+          "quote_hash": "7cd45315c67ed97faedd623bb51c595390ce7b43cfa57b9e0868e360ff259c2c"
         },
         {
-          "source_id": "ssci_tianwu_a_plus_plus",
-          "source_url": "https://finance.sina.com.cn/wm/2026-07-13/doc-inihtewm4131588.shtml",
-          "source_title": "天鹜科技完成数亿元A++轮融资_新浪财经_新浪网",
-          "source_content_hash": "7fb14bca3a4b02f369b88382d5ee5ae981e556ee372282761e8e25006079abe5",
-          "quote": "本轮融资由上海国投先导、国投创新联合领投",
-          "quote_hash": "0661bf50e5b8d1581ada179824cbec4880666ed9fbbeeffd0326a4a0d969766c"
+          "source_id": "PROFILE-COLLECT-INV-023d61a9ea9c9b-2",
+          "source_url": "https://www.ssci-leadingfund.com/",
+          "source_title": "上海国投先导",
+          "source_content_hash": "f3790cbb3796ef20fd135f9800d4d190dba63e4ead6760795fc73d161f03f9a1",
+          "quote": "通过专业化的基金管理，组建三大先导产业母基金，发挥对上海市三大先导产业创新发展的战略引导功能。",
+          "quote_hash": "4fa3115ddbc8f0c5050e31ad2fdcace5d0dfa1a1fccf659c22e4cfe70ddc4e8e"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-023d61a9ea9c9b-3",
+          "source_url": "https://www.ssci-leadingfund.com/",
+          "source_title": "上海国投先导",
+          "source_content_hash": "f3790cbb3796ef20fd135f9800d4d190dba63e4ead6760795fc73d161f03f9a1",
+          "quote": "人工智能母基金 重点投向： 通用人工智能、智能算力系统、人形机器人、垂类大模型、端侧 AI等核心技术和跨学科应用领域。",
+          "quote_hash": "faf6cdc5d088ebe3cd40af6c5181c35ff0ea13399e38d0480c997dca5c83e7e8"
         },
         {
           "source_id": "FISRC-899fa4d253299e85",
@@ -254,7 +277,7 @@
           "quote_hash": "a48cd109e91e585e43e14a021c8d7a4ff9074e88cdb4d2c8d831f1ca129679ac"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

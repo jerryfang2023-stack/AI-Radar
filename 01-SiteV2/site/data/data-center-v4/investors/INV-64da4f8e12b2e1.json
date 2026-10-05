@@ -420,11 +420,30 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资关系依据融资报道；未据此推断宁德时代的完整投资组合。",
-      "summary": "投资界报道将宁德时代列为深度智控 B+ 轮的领投方之一，IT之家报道将其列为 DeepSeek 首次外部融资参与方。本档只汇总这两项公开披露。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网介绍的是新能源科技业务；本档融资参与记录不等于完整投资组合，也不代表其运营独立风险投资基金。",
+      "summary": "宁德时代官网将公司定位为零碳新能源科技企业，为全球新能源应用提供解决方案与服务。该档补充公司背景；不将其描述为专业风险投资基金，投资行为仍以各融资来源逐条为准。",
+      "facts": [
+        {
+          "field": "business_positioning",
+          "label": "业务定位",
+          "value": "零碳新能源科技公司",
+          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "为全球新能源应用提供解决方案和服务，并构建零碳能源生态",
+          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "创始团队创立宁德时代（CATL）。",
+          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-2"
+        }
+      ],
       "track_record": [
         {
           "description": "深度智控 B+ 轮融资报道将宁德时代列为投资方。",
@@ -456,6 +475,22 @@
           "source_content_hash": "9c2935c329e79c86a273afaa6b86bffcecb3779f8cbcc69d425c012fe71b950e",
           "quote": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、",
           "quote_hash": "9882cb0051a3b79a03e3634cdd0dedcb2655de4c9355c830db710103cbf57da7"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-1",
+          "source_url": "https://www.catl.com/about/profile/",
+          "source_title": "企业简介",
+          "source_content_hash": "82230e72a4d4630681721f425352cc0f5c2bc05d32e9716a3591c10e0a5a01f4",
+          "quote": "宁德时代新能源科技股份有限公司是全球领先的零碳新能源科技公司，致力于为全球新能源应用提供一流解决方案和服务，以全域增量战略构建零碳能源生态，推动能源转型与可持续发展。",
+          "quote_hash": "893ce302171dc68795fa0cbee9b83ecc88a5f46bea5c3cb90ad7402a5217dd52"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-2",
+          "source_url": "https://www.catl.com/about/profile/",
+          "source_title": "企业简介",
+          "source_content_hash": "82230e72a4d4630681721f425352cc0f5c2bc05d32e9716a3591c10e0a5a01f4",
+          "quote": "2011 创始团队二次创业, 创立宁德时代(CATL)",
+          "quote_hash": "bb678c6c49f251f19f81c68002037a382f0123e53a454058a85f81d0ec692638"
         },
         {
           "source_id": "FISRC-d2c8c841370ed82a",

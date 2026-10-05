@@ -22,7 +22,6 @@ const ajv = new Ajv2020({ allErrors: true, strict: false });
 addFormats(ajv);
 const validate = ajv.compile(schema);
 const problems = [];
-const organizationKinds = new Set(["investment_institution", "corporate_investor", "government_fund"]);
 if (!validate(data)) problems.push(ajv.errorsText(validate.errors));
 if (coverage) {
   const complete = {
@@ -46,10 +45,14 @@ if (!backlog || !coverage) {
 } else {
   const investors = investorData.institutions || [];
   const people = peopleIndex.people || [];
+  const unresolvedInvestorIds = investors
+    .filter((row) => !coverage.institutions?.[row.id])
+    .map((row) => row.id);
   assertSameIds("pending_identity_verification", backlog.pending_identity_verification,
-    investors.filter((row) => coverage.institutions?.[row.id]?.identity_status === "pending_verification").map((row) => row.id));
+    investors.filter((row) => coverage.institutions?.[row.id]?.identity_status === "pending_verification").map((row) => row.id)
+      .concat(unresolvedInvestorIds));
   assertSameIds("pending_investor_research", backlog.pending_investor_research,
-    investors.filter((row) => (row.investor_kind === "individual" || organizationKinds.has(row.investor_kind))
+    investors.filter((row) => ["organization", "person"].includes(coverage.institutions?.[row.id]?.profile_type)
       && coverage.institutions?.[row.id]?.identity_status !== "pending_verification"
       && coverage.institutions?.[row.id]?.coverage_status !== "researched").map((row) => row.id));
   assertSameIds("pending_people_research", backlog.pending_people_research,

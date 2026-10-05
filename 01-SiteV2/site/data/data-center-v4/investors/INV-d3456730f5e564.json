@@ -181,10 +181,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资理念来自 Tamarack Global 官网；Hark 参与记录来自 Intel Capital 公告，仅记录公开案例，不推断完整组合或收益表现。",
+      "summary": "Tamarack Global 官网以发现解决困难问题、开辟新市场的优秀创业者作为其投资理念。Intel Capital 发布的 Hark Series A 公告将 Tamarack Global 列为参与方；未披露其单独出资额。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资理念",
+          "value": "Tamarack Global 表示关注解决困难问题并开拓新市场的优秀创业者。",
+          "source_id": "PROFILE-COLLECT-INV-d3456730f5e564-L-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -201,6 +208,14 @@
           "source_content_hash": "3f9118500261d8becc447bd3a520ca46713ad61d754ac508ae556e27d7a099b1",
           "quote": "Tamarack Global",
           "quote_hash": "84bf894edf57cd784810bd4c12567665e006f598949adf664d9f7273c70fc7e4"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d3456730f5e564-L-2",
+          "source_url": "https://www.tamarackglobal.com/vision",
+          "source_title": "Vision &mdash; Tamarack Global",
+          "source_content_hash": "a4d028e1cafb0a93d3289e7a31041b13e65cb761e6d81464e3a8bed848abeb0f",
+          "quote": "exceptional people, solving difficult problems, whose work is opening new markets",
+          "quote_hash": "344bcb402a556d68476f452026a44c270e128158458a4cc8b58a11c19ed5cdc2"
         }
       ],
       "last_verified_at": "2026-10-03",

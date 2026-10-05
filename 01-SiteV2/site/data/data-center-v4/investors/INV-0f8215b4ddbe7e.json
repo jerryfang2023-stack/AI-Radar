@@ -194,11 +194,30 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "FutureX Capital 官网以“天际资本”为中文品牌，将自身定位为创办于亚洲的全球化投资平台，关注人工智能和前沿科技；投资界报道其领投万卷智能 Pre-A 轮。",
-      "coverage_note": "机构定位及中英文品牌对应来自官网；投资关系来自投资界报道。未推断天际资本单独出资金额。",
-      "facts": [],
+      "summary": "FutureX Capital（天际资本）自述为聚焦人工智能与前沿科技的全球化投资平台，投资方向涵盖基础模型、开发者基础设施、半导体、具身智能等。其官网问答页列出中美两地、从天使轮到 Pre-IPO 的部分被投企业，属机构自行披露的组合样本。",
+      "coverage_note": "机构定位、投资主题及组合样本均来自 FutureX Capital 官网；不将官网公开名字视为完整组合。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网机构定位",
+          "value": "FutureX Capital 官网称其为聚焦人工智能与前沿科技的全球化投资平台。",
+          "source_id": "PROFILE-COLLECT-INV-0f8215b4ddbe7e-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网投资方向",
+          "value": "官网列出基础模型、开发者基础设施、半导体、具身智能、企业软件、智能硬件和应用层等方向。",
+          "source_id": "PROFILE-COLLECT-INV-0f8215b4ddbe7e-2"
+        },
+        {
+          "field": "portfolio_history",
+          "label": "官网问答页的组合概述",
+          "value": "官网称其公开被投横跨中美、覆盖天使轮至 Pre-IPO。",
+          "source_id": "PROFILE-COLLECT-INV-0f8215b4ddbe7e-3"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -206,10 +225,6 @@
       "education": [],
       "experience_summary": "",
       "track_record": [
-        {
-          "description": "投资界报道万卷智能 Pre-A 轮由天际资本领投。",
-          "source_id": "futurex_wanjuan_pre_a"
-        },
         {
           "description": "融资来源记录：万卷智能 · Pre-A轮 · 2026-08-18 · 本轮领投 · 超千万。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ef8d3e6bdcd3b9fd"
@@ -221,20 +236,28 @@
       ],
       "sources": [
         {
-          "source_id": "futurex_identity",
-          "source_url": "https://futurex.capital/",
+          "source_id": "PROFILE-COLLECT-INV-0f8215b4ddbe7e-1",
+          "source_url": "https://futurex.capital/about",
           "source_title": "FutureX Capital · 天际资本 | 投资 AI 时代的构建者",
-          "source_content_hash": "7187cfd3f64eab163b39350ec2643e0834ebb4fb38e9662cd88433650a965b02",
-          "quote": "FutureX Capital 是创办于亚洲的全球化投资平台",
-          "quote_hash": "f4e45e0b78fc13155c9e4d78368802879df04afa08e8a10f1b6ca03c392ebb03"
+          "source_content_hash": "7cf1a4fe8eb1d64740430e02ca1cd9c1ff83ce7b3acb500162b3f5ef1924f7a7",
+          "quote": "FutureX Capital 是一家聚焦人工智能与前沿科技的全球化投资平台，创办于亚洲。",
+          "quote_hash": "3e715c29955aa84d6d6f4e0a6cd6df6e57e665dd2460da1e105e6486c1a10306"
         },
         {
-          "source_id": "futurex_wanjuan_pre_a",
-          "source_url": "https://news.pedaily.cn/202608/567787.shtml",
-          "source_title": "万卷智能完成超千万Pre-A轮融资，天际资本领投_投资界",
-          "source_content_hash": "980ff145c7820dc0ebdc4ff92013dccdb899edad9e477207e29b022a2cca5ed0",
-          "quote": "本轮融资由 天际资本领投",
-          "quote_hash": "bf1facdc4a9dd71825622d35a1725d1c69a3c4f99bea58a0dcc49da406498877"
+          "source_id": "PROFILE-COLLECT-INV-0f8215b4ddbe7e-2",
+          "source_url": "https://futurex.capital/about",
+          "source_title": "FutureX Capital · 天际资本 | 投资 AI 时代的构建者",
+          "source_content_hash": "7cf1a4fe8eb1d64740430e02ca1cd9c1ff83ce7b3acb500162b3f5ef1924f7a7",
+          "quote": "我们的投资覆盖基础模型、开发者基础设施、半导体、具身智能、企业软件、智能硬件与具有品类定义能力的应用层公司。",
+          "quote_hash": "f73e1bea2fb5156518b7a13a83806e060e7f3bd7652c948d61b1caef9c58922c"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-0f8215b4ddbe7e-3",
+          "source_url": "https://futurex.capital/answers/futurex-portfolio-companies",
+          "source_title": "天际资本投过哪些公司? · Which companies has FutureX Capital invested in? · FutureX Capital",
+          "source_content_hash": "45f6f2662cd813a1e3d75a45e1e459c3c8556ec31db386ddbdfddff38f8e80a4",
+          "quote": "天际的被投横跨中美,从天使轮到 Pre-IPO",
+          "quote_hash": "3ce809eb033875da7a4b1c214a3045207955aa85f934ef536a6fcb0978b4b762"
         },
         {
           "source_id": "FISRC-ef8d3e6bdcd3b9fd",
@@ -253,7 +276,7 @@
           "quote_hash": "d0dbb96aee7f328e9265044785e68897778ec2a2261dab27203e5a3087e10eb9"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -139,29 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "Vertical Compute 官方融资公告将 Noshaq 列为种子轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位及投资范围来自 Noshaq 官网；Vertical Compute 融资活动来自公司官方公告，未披露 Noshaq 单独出资额。",
+      "summary": "Noshaq 官网将其介绍为列日地区的投资基金，为企业创立与成长提供融资方案，并定位为企业基金管理人。Vertical Compute 官方融资公告将其列为种子轮投资方。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "比利时列日地区投资基金",
+          "source_id": "PROFILE-B12-INV-bb78161122585b-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "参与 Vertical Compute 种子轮。",
+          "source_id": "PROFILE-B12-INV-bb78161122585b-1"
+        },
+        {
+          "description": "融资来源记录：Vertical Compute · 种子轮 · 2026-03-04 · 本轮参投 · €37 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-676054bb104d0746"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://noshaq.be/en/?trk=public_post-text",
+          "source_id": "PROFILE-B12-INV-bb78161122585b-2"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-676054bb104d0746",
+          "source_id": "PROFILE-B12-INV-bb78161122585b-1",
           "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
           "source_title": "Vertical Compute raises €57M to solve the AI memory bottleneck with new high density memory | vertical compute",
           "source_content_hash": "8caecaeb522b794ccb4db4c151d841dde1955c04b5560a215bd7870a384c0795",
           "quote": "anders Future Techfund (managed by the Flemish investment company PMV), Wallonie Entreprendre , Sambrinvest , Noshaq , InvestBW , Drysdale Ventures and Kima Ventures . Existing investors Eurazeo , XAnge , Vector Gestion , imec.xpand and imec also reinvested in this round, underscoring their continued confidence in the company’s roadmap. In addition, Vertical",
           "quote_hash": "92fa96aebb2bcafe7ce9a54e6482d64fcf43f0887a02ad24aab5f79c190c6f13"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-bb78161122585b-2",
+          "source_url": "https://noshaq.be/en/?trk=public_post-text",
+          "source_title": "Welcome to Noshaq",
+          "source_content_hash": "6dabc1bfdf2c6220cba385c0299920296b57fc02bbaa8d2c4048c449cfa8d79f",
+          "quote": "Noshaq is a Liege investment fund that offers financing solutions for the creation and growth of your company Our DNA is capital minded. Noshaq is a fund manager serving your company",
+          "quote_hash": "24df4b0101ff45f2bc623b9697144ce60e417b1388c01672cdf40e360cee60e5"
+        },
+        {
+          "source_id": "FISRC-676054bb104d0746",
+          "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
+          "source_title": "Vertical Compute 融资 5700 万欧元，以新型高密度内存解决 AI 内存瓶颈",
+          "source_content_hash": "f8b8c9f810df3f0ee026abeb15d344f81559d94a5baf84ed986447cfe3332805",
+          "quote": "Quantonation led the seed round, with participation from Flanders Future Techfund (managed by the Flemish investment company PMV), Wallonie Entreprendre, Sambrinvest, Noshaq, InvestBW, Drysdale Ventures and Kima Ventures.",
+          "quote_hash": "a46a718a8e39c04b8200634f52ca5ea254f4a24f386762ffcb4f8d8381da59ae"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

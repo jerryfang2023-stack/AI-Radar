@@ -209,10 +209,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "Sapiom 官方 Series A 公告将 Dragonfly 列为领投方；Venice AI 融资报道也将其列为领投方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段和全球投资范围来自 Dragonfly 官网当前自述；领投案例分别来自融资发行方公告和媒体报道。未使用未标明时点的规模数据。",
+      "summary": "Dragonfly 官网称其团队由技术从业者和投资人组成，在全球投资，覆盖种子轮至 B 轮及之后阶段。Sapiom 与 Venice AI 融资公告和报道将 Dragonfly 列为领投方；案例不代表完整组合。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网所述投资阶段",
+          "value": "Dragonfly 官网称其全球投资，阶段从种子轮延伸至B轮及之后。",
+          "source_id": "PROFILE-COLLECT-INV-75ceb001432e9f-G-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -245,6 +252,14 @@
           "source_content_hash": "c3387ed39640e71f2aa476fe8ae6fed7ea873d3034c0cc186b4f83e795028597",
           "quote": "s A at a $1 billion valuation, its first external fundraise. The round was led by crypto-focused venture firm Dragonfly, with participation from Coinbase Ventures, North Island Ventures, and others. The overlap between Voorhees, Venice’s focus on privacy, and its new crypto investors is hard to miss, especially given the CEO’s background",
           "quote_hash": "acf15b804a9650ae85faadd3589eaeb808d26c67044f35a276096f6a5067b379"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-75ceb001432e9f-G-3",
+          "source_url": "https://www.dragonfly.xyz/",
+          "source_title": "Dragonfly",
+          "source_content_hash": "914eaa5276ade0f491b5d6e7131820f0d2c3e3f170a571bbd15bb4fc8d79f60b",
+          "quote": "We are a team of deeply technical operators and investors. We invest across stages, from seed to Series B and beyond.",
+          "quote_hash": "eaad7be4d0033d712f826429477853ad474a2753a7ff416a6b301d5684b2f86d"
         },
         {
           "source_id": "FISRC-831c2961f3373587",

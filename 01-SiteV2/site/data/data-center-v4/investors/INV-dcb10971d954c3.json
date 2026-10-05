@@ -139,33 +139,88 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合，也不推断来源未披露的法人或基金归属。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "AUM 等规模数据随时间变化，未作为长期静态事实收录。",
+      "summary": "Clearlake describes itself as a global private investment firm spanning private equity, liquid credit and private credit. Its stated core private-equity sectors are technology, industrials and consumer; its history page dates the firm to 2006. Factory separately names Clearlake in a financing announcement.",
+      "facts": [
+        {
+          "field": "investment_activities",
+          "label": "投资业务（官网自述）",
+          "value": "私募股权、流动性信贷及私人信贷等策略",
+          "source_id": "B29-CLEARLAKE-OFFICIAL"
+        },
+        {
+          "field": "sector_focus",
+          "label": "私募股权核心行业（官网自述）",
+          "value": [
+            "科技",
+            "工业",
+            "消费"
+          ],
+          "source_id": "B29-CLEARLAKE-SECTORS"
+        },
+        {
+          "field": "founded",
+          "label": "成立年份（官网历史）",
+          "value": "2006",
+          "source_id": "B29-CLEARLAKE-FOUNDED"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Factory 其他融资 本轮参投；仅记录来源直接支持的示例，不代表完整投资组合。",
+          "description": "Factory 官方页面将 Clearlake 列入其融资参与方，并称融资后累计融资超过 4 亿美元。",
+          "source_id": "B28-CLEARLAKE-FACTORY"
+        },
+        {
+          "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c7459d2ce055880"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-1c7459d2ce055880",
+          "source_id": "B28-CLEARLAKE-FACTORY",
           "source_url": "https://factory.ai/news/5-billion-valuation",
           "source_title": "Factory raises $200M at $5B valuation | Factory",
-          "source_content_hash": "ea99760631c53265a11b7718883c9a3ef1115bcc25416dca9d3a95df6251049a",
+          "source_content_hash": "0fc77b346998ffede3e972677523e4bb812130509ffd5bd76b165efc30c7f52b",
+          "quote": "Clearlake brings our total funding to over $400 million",
+          "quote_hash": "026cde49326809145480200aae4990023d49443046fc673c093e1973d2a5a2e7"
+        },
+        {
+          "source_id": "B29-CLEARLAKE-OFFICIAL",
+          "source_url": "https://clearlake.com/about/",
+          "source_title": "About Us | Clearlake Capital Group",
+          "source_content_hash": "bcfa7ffae8265739511ecaccb4d43399a130cf563cc2ec4941159317cf3ba8e8",
+          "quote": "Clearlake is a leading global private investment firm managing integrated business platforms spanning private equity, liquid and private credit and other related strategies.",
+          "quote_hash": "49f7cb1b80e749d85ad95dc3cb7e90e04f0d24c56f069e57634c4425fc841772"
+        },
+        {
+          "source_id": "B29-CLEARLAKE-SECTORS",
+          "source_url": "https://clearlake.com/about/",
+          "source_title": "About Us | Clearlake Capital Group",
+          "source_content_hash": "bcfa7ffae8265739511ecaccb4d43399a130cf563cc2ec4941159317cf3ba8e8",
+          "quote": "Our core private equity sectors are technology, industrials, and consumer.",
+          "quote_hash": "2d374029b3df8f7ce8074924b45122cf4502c2c7e72797382dae474bd29b573c"
+        },
+        {
+          "source_id": "B29-CLEARLAKE-FOUNDED",
+          "source_url": "https://clearlake.com/about/",
+          "source_title": "About Us | Clearlake Capital Group",
+          "source_content_hash": "bcfa7ffae8265739511ecaccb4d43399a130cf563cc2ec4941159317cf3ba8e8",
+          "quote": "2006 Founded firm.",
+          "quote_hash": "af2bbd89403289fd87341ab7a02e323b65d1f738bd396a43356ce3dee2d279db"
+        },
+        {
+          "source_id": "FISRC-1c7459d2ce055880",
+          "source_url": "https://factory.ai/news/5-billion-valuation",
+          "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+          "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
           "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
           "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

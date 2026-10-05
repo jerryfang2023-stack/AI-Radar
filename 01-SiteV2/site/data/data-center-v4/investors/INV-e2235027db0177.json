@@ -281,20 +281,25 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "Stripes 官网将 Etched 列入投资组合；TechCrunch 报道其领投 Etched 一笔 5 亿美元融资，Island 官方公告也将其列为 B 轮既有投资者。本档案仅记录这些来源披露的示例。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资方式据 Stripes 官网；Etched 交易角色据 TechCrunch 报道，不推断具体基金法律实体。",
+      "summary": "Stripes 官网称其在全球投资面向消费者和企业的产品公司，并在增长阶段提供运营支持；TechCrunch 报道其领投 Etched 一轮融资。档案保留机构品牌层级，不补写具体基金或每笔出资额。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网投资方式",
+          "value": "官网称其全球投资产品公司并协助其成长。",
+          "source_id": "PROFILE-COLLECT-INV-e2235027db0177-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "TechCrunch 报道 Stripes 领投 Etched 该轮融资。",
+          "source_id": "PROFILE-COLLECT-INV-e2235027db0177-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "TechCrunch 报道称 Stripes 领投 Etched 于 2025 年 12 月完成的 5 亿美元融资；此处保留报道描述，不采用其他二手页面不一致的轮次标签。",
-          "source_id": "FISRC-b750a2ea9e7c7b76"
-        },
-        {
-          "description": "Island 官方公告将 Stripes 列为其 B 轮既有投资者之一。",
-          "source_id": "PROFILE-f92b8bc03fa47b568e1c"
-        },
         {
           "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-134a8e8124653c90"
@@ -302,33 +307,29 @@
         {
           "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮（2025年12月$500M轮次）领投 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5b1fe7cfe0f0cbb5"
+        },
+        {
+          "description": "融资来源记录：Etched · 轮次未披露 · 2026-06-30 · 本轮领投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b750a2ea9e7c7b76"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-b750a2ea9e7c7b76",
+          "source_id": "PROFILE-COLLECT-INV-e2235027db0177-1",
+          "source_url": "https://www.stripes.co/our-approach",
+          "source_title": "Stripes | Global Growth Investors",
+          "source_content_hash": "069fdce7f6a2d5874166c4ff53c552b480c445ccd4f3d170f643af9ba7415c5d",
+          "quote": "We invest in companies with amazing products for consumers and businesses and act as an of-service partner to help accelerate growth",
+          "quote_hash": "394bfe2b696900242ddcea801557029316ff061f878bf7653a14f159c7fad9a4"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-e2235027db0177-2",
           "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
           "source_title": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch",
           "source_content_hash": "7d51f2249a5f20b48d86bd02e64c82433ec7cbb7d133246adf30e94ac21d0c42",
           "quote": "Stripes, who led the $500 million round",
           "quote_hash": "ea3b5e4ac58dae32c13cb789b74a3cd4d97d4e4ea8ed6358c00a91af8ef0dc43"
-        },
-        {
-          "source_id": "PROFILE-f92b8bc03fa47b568e1c",
-          "source_url": "https://www.island.io/press/island-raises-115-million-in-series-b-funding-to-enable-massive-innovation-on-enterprise-browser",
-          "source_title": "Island Raises $115 Million in Series B Funding for Enterprise Browser",
-          "source_content_hash": "0f912546270c122fad99c1bc4258e9e5e05b3401b0576a585d4c160062e32158",
-          "quote": "Existing investors Stripes and Sequoia Capital also participated in this round",
-          "quote_hash": "0db743559ffbdcee82409055d113f1214af7a14f117686b47504c37db0cc02d0"
-        },
-        {
-          "source_id": "PROFILE-c6940e42aef1aff114ca",
-          "source_url": "https://www.stripes.co/",
-          "source_title": "Stripes | Global Growth Investors",
-          "source_content_hash": "d912be61dbd9730c412555e7ce535d58d62819a9dc6ad52d57767d5988387dfa",
-          "quote": "Stripes | Global Growth Investors",
-          "quote_hash": "635d746355efc84e669708252d5af7250d2377c3426017c44c520a97b47d7cd7"
         },
         {
           "source_id": "FISRC-134a8e8124653c90",
@@ -345,6 +346,14 @@
           "source_content_hash": "62358e027589c8c5",
           "quote": "The latest, a $500 million round that closed in December 2025, set a $5 billion post-money valuation and was led by Stripes.",
           "quote_hash": "934542c199edb9397b07159395237ded9ce8f6cd8b7d5ae9f9b5b6fc29c49dbc"
+        },
+        {
+          "source_id": "FISRC-b750a2ea9e7c7b76",
+          "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
+          "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
+          "source_content_hash": "ae0a2fdbd54bc340",
+          "quote": "Stripes, who led the $500 million round",
+          "quote_hash": "ea3b5e4ac58dae32c13cb789b74a3cd4d97d4e4ea8ed6358c00a91af8ef0dc43"
         }
       ],
       "last_verified_at": "2026-10-03",

@@ -340,57 +340,63 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "企业性质来自官网；融资参与来自被投公司公告，属企业战略投资案例。",
-      "summary": "MediaTek 官网将其描述为全球无晶圆厂半导体公司；OXMIQ 和 Ayar Labs 的融资公告均将其列为投资方或战略投资者。本档只汇总公开案例，不将其描述为传统 VC。",
+      "coverage_status": "researched",
+      "coverage_note": "MediaTek 官网支持其企业创投业务定位；具体参投角色来自 Ayar Labs 公告。官网提到的投资资本规模未纳入，以免把历史或未标注日期的数据写成当前规模。",
+      "summary": "MediaTek 官网将 MediaTek 创投定位为开展战略投资、培育产业生态的企业投资业务，并称其面向新兴企业提供合作与发展支持。Ayar Labs 的融资公告将 MediaTek 列为战略投资者之一。本档将其记录为企业战略投资主体，不描述为独立传统 VC。",
       "facts": [
         {
-          "field": "business_type",
-          "label": "公司性质",
-          "value": "无晶圆厂半导体公司",
-          "source_id": "PROFILE-079f432035b9692dcc1c"
+          "field": "corporate_investment_role",
+          "label": "企业投资定位",
+          "value": "MediaTek 创投通过战略投资培育产业生态。",
+          "source_id": "PROFILE-COLLECT-INV-5e48bb3ca721dd-1"
+        },
+        {
+          "field": "investment_scope",
+          "label": "业务范围",
+          "value": "官网说明其支持新兴企业成长，并提供合作、市场研究及研发方面的支持。",
+          "source_id": "PROFILE-COLLECT-INV-5e48bb3ca721dd-2"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "OXMIQ 2026 年 Series A 公告称 MediaTek 作为既有种子投资方继续参与。",
+          "description": "融资来源记录：ChipAgents · A2轮 · 2026-07-29 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cd04c9b2d1340164"
+        },
+        {
+          "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 种子轮投资方及本轮参投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2ac2183ceab4ddd7"
         },
         {
-          "description": "Ayar Labs 官方 Series E 公告将 MediaTek 列为战略投资者。",
+          "description": "融资来源记录：Ayar Labs · E轮 · 2026-03-03 · 本轮参投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5b6c7c4ae002a992"
-        },
-        {
-          "description": "融资来源记录：ChipAgents · A2轮 · 2026-07-29 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cd04c9b2d1340164"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-079f432035b9692dcc1c",
-          "source_url": "https://www.mediatek.com/company/discover",
-          "source_title": "About MediaTek | Empowering a Connected World",
-          "source_content_hash": "11505f562715fa4feef27aeb298a84dd07cf441356276c4d559ac0740c162070",
-          "quote": "MediaTek Incorporated (TWSE: 2454) is the world’s fifth largest global fabless semiconductor company.",
-          "quote_hash": "45d45b224e1af34aba9deb14df8ac9fb3a96d568cbe05734c37bb1d9c86dd22c"
+          "source_id": "PROFILE-COLLECT-INV-5e48bb3ca721dd-1",
+          "source_url": "https://www.mediatek.com/zh-cn/company/ventures",
+          "source_title": "联发科技创业投资",
+          "source_content_hash": "45b815e68043e4f4325669a2a35e9a82deb0f19bd0231563dc8406ba2b355403",
+          "quote": "我们希望通过创新技术让每个人的生活更加美好，并通过加强对各行各业的战略性投资，培育崭新的生态系统。",
+          "quote_hash": "488739a90c9477f84f59349c8b53271c16bdc4615ce2950c1fdfabc2cc26fdf0"
         },
         {
-          "source_id": "FISRC-2ac2183ceab4ddd7",
-          "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
-          "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
-          "source_content_hash": "c17f59d8dd2e1555de397bc043aa6d95e94b55dc3e6d2ac7d092a8d75bb9c229",
-          "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting.",
-          "quote_hash": "1408f6cb9eb9ac1ac296ea980a51ada3a80d5ea2004bb95ee7f6bbaf179f642b"
+          "source_id": "PROFILE-COLLECT-INV-5e48bb3ca721dd-2",
+          "source_url": "https://www.mediatek.com/zh-cn/company/ventures",
+          "source_title": "联发科技创业投资",
+          "source_content_hash": "45b815e68043e4f4325669a2a35e9a82deb0f19bd0231563dc8406ba2b355403",
+          "quote": "MediaTek 创投着眼全球，致力于推动新兴企业的成长与发展。",
+          "quote_hash": "4b79bc3d663d7e13d1d398faf4d3ac1bec3368966c9a72c3e7c6d8f2f4732653"
         },
         {
-          "source_id": "FISRC-5b6c7c4ae002a992",
+          "source_id": "PROFILE-COLLECT-INV-5e48bb3ca721dd-3",
           "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
           "source_title": "Ayar Labs Closes $500M Series E, Accelerates Volume Production of Co‑Packaged Optics",
           "source_content_hash": "ca2199749f0afba3fbf0c6139eb12a83a1c933879686270714bfcd02449d1a14",
-          "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
-          "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
+          "quote": "key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+          "quote_hash": "a9ca6fd621dd0bbb167ea6f6a781653257af8188c46acae7690a5ccbf1111a13"
         },
         {
           "source_id": "FISRC-cd04c9b2d1340164",
@@ -399,9 +405,25 @@
           "source_content_hash": "c4c1856ea78e70706a7dad6982ee3f116a9a0d69cacfc9abdf153799bdc32118",
           "quote": "new investor B Capital joining Bessemer Venture Partners, Micron, MediaTek, Ericsson, ScOp, and other existing investors.",
           "quote_hash": "15ca66efc054a9b1d989df055e9764043657c53d027c285dbc934bdeaf2f9961"
+        },
+        {
+          "source_id": "FISRC-2ac2183ceab4ddd7",
+          "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+          "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
+          "source_content_hash": "b11173439b5612a7",
+          "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting.",
+          "quote_hash": "1408f6cb9eb9ac1ac296ea980a51ada3a80d5ea2004bb95ee7f6bbaf179f642b"
+        },
+        {
+          "source_id": "FISRC-5b6c7c4ae002a992",
+          "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+          "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+          "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+          "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+          "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

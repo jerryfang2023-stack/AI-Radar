@@ -187,10 +187,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司定位来自好未来官网；投资参与来自投资界融资报道。融资报道只使用“好未来”名称，未披露集团内具体投资法律主体。",
+      "summary": "好未来官网将其描述为以内容和科技能力为基础、以科教科创科普为战略方向的科技公司。生数科技B轮融资报道将好未来列为战略投资人；公开资料未说明单独投资主体或出资额，不将集团主体写成专业VC管理人。",
+      "facts": [
+        {
+          "field": "company_business",
+          "label": "官网披露的公司业务定位",
+          "value": "好未来官网称其以内容能力与科技能力为基础，以科教、科创、科普为战略方向，是一家持续探索创新的科技公司。",
+          "source_id": "PROFILE-COLLECT-INV-c60250dad85e62-K-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -211,6 +218,14 @@
           "source_content_hash": "ad192fa38f112b71ff7752bed5fd1cf5c35f99cc3e3c1456831e510dcf2df57a",
           "quote": "中网投、九安海棠、好未来、光合创投等投资人战略投资",
           "quote_hash": "71a2fddcd5c92c28433ef41fe27846beb520a6982c85bc3dd400328d55e096e4"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-c60250dad85e62-K-2",
+          "source_url": "https://www.tal.com/about",
+          "source_title": "好未来简介-好未来教育集团官网",
+          "source_content_hash": "69ffa594a685c53c671e1e9a6468dcb61d7eab190e0a14ca4e76b92d7e2804a0",
+          "quote": "好未来（NYSE：TAL）是一家以内容能力与科技能力为基础，以科教、科创、科普为战略方向",
+          "quote_hash": "f7040a989bf271f07ca6d8ff3c511e842996595a102bc13c80889871d83b6cf3"
         },
         {
           "source_id": "FISRC-b07965e9cd2c01b5",

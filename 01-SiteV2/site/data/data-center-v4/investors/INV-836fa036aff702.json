@@ -139,29 +139,48 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "Flow Engineering 官方 Series B 公告列出 Jonas von Malottki 作为本轮投资人。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "职务与融资参与均来自 Flow Engineering 官方 Series B 备忘录；职务按公告原文归属，未作额外身份推断。",
+      "summary": "Flow Engineering 官方 Series B 备忘录将 Jonas von Malottki 列为投资者，并在姓名后标注其为 Mercedes-Benz 的 CIO。本档只记录该公司公告所述角色和本轮投资关系，不据此补写个人经历。",
+      "facts": [
+        {
+          "field": "role_as_reported",
+          "label": "融资公告所标注的职务",
+          "value": "Flow Engineering 官方备忘录将 Jonas von Malottki 标注为 CIO, Mercedes-Benz。",
+          "source_id": "PROFILE-B4-INV-836fa036aff702-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Flow Engineering 官方公告列出 Jonas von Malottki 参与 Series B。",
+          "description": "Flow Engineering 官方 Series B 备忘录将 Jonas von Malottki 列为本轮投资者之一。",
+          "source_id": "PROFILE-B4-INV-836fa036aff702-1"
+        },
+        {
+          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3511f7baf76701e3"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-B4-INV-836fa036aff702-1",
+          "source_url": "https://www.flowengineering.com/blog/series-b-memo",
+          "source_title": "Letter from Pari: Hardware&#x27;s AI Moment Has Arrived — Flow Engineering",
+          "source_content_hash": "7c03dd3ec4fff71bf797a8b58c43808bea4bf26c00291231965f8a178ba237f4",
+          "quote": "Jonas von Malottki (CIO, Mercedes-Benz), Human Capital, and Evantic as investors.",
+          "quote_hash": "42825f1bae6de868b3e974e9f58cafbf802b55c18063740da57e08c03c4245fa"
+        },
+        {
           "source_id": "FISRC-3511f7baf76701e3",
           "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
           "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
-          "source_content_hash": "40c9452232df5d4ee5c444e1a39668a4b19c2c2f59e43252f283a9188dd4f488",
-          "quote": "antic, SV Angel, Odyssey, EQT, with contributions from Hugging Face co-founder Thomas Wolf, Mercedes-Benz CIO Jonas von Malottki, and Formula 1 world champion Nico Rosberg. Roelof Botha has additionally joined Flow’s board as an independent director and personally invested in the company. Over the past year, AI has changed how software is",
-          "quote_hash": "a9c9f1db4172d242d76996e52b83599631e8ba02bd53c581d6a18cb0a8993971"
+          "source_content_hash": "1ada124c6217cee1",
+          "quote": "with contributions from Hugging Face co-founder Thomas Wolf, Mercedes-Benz CIO Jonas von Malottki, and Formula 1 world champion Nico Rosberg",
+          "quote_hash": "5c36bdef248998ba184ff7bb0e79f5b157b27697426afa3ff7dbb47ccead4316"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

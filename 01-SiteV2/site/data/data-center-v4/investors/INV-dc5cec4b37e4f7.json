@@ -123,33 +123,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "策略信息来自第三方机构档案，未据此补入基金规模、当前团队或完整投资组合。",
+      "summary": "新芽（清科创业旗下）机构页将“昆仲资本”对应至“昆仲（深圳）股权投资管理有限公司”，并称其为早期高科技风险投资机构，关注中国和美国的TMT企业。该信息为第三方机构档案；项目投资记录另由九合系融资信息支持。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向（新芽机构档案）",
+          "value": "中国和美国TMT领域的商业模式创新或技术创新企业，偏早期及成长期；机构页特别提及创新技术、创新消费与企业服务",
+          "source_id": "B29-KINZON-NEWSEED"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构类型（新芽机构档案）",
+          "value": "早期高科技风险投资基金",
+          "source_id": "B29-KINZON-NEWSEED"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 鼎犀智创（Rhinovate™） 历史轮次投资方。",
+          "description": "鼎犀智创融资页面将昆仲资本列为此前投资者之一；未披露轮次及单独出资额。",
+          "source_id": "B28-KINZON-RHINOVATE"
+        },
+        {
+          "description": "融资来源记录：鼎犀智创（Rhinovate™） · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-57de475f4ec2ac5a"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-57de475f4ec2ac5a",
+          "source_id": "B28-KINZON-RHINOVATE",
           "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
           "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员 | elsewhere",
           "source_content_hash": "9a5337d23d812298351da8157b799d7483b0d650ba2804219f55b5499a93f954",
+          "quote": "继此前昆仲资本、元生创投、上海未来产业基金、晶泰科技等投资后",
+          "quote_hash": "2fb7e1bd83aee770cfdefb6df921a2cf8253abba237f901eb981c37096b41926"
+        },
+        {
+          "source_id": "B29-KINZON-NEWSEED",
+          "source_url": "https://www.newseed.cn/vc/39605",
+          "source_title": "昆仲资本_昆仲（深圳）股权投资管理有限公司_投资机构_新芽NewSeed",
+          "source_content_hash": "962d25c06218e83c03c14ad403fb7c53c5e42ae80a6e25d8dff8d42d6b0ad8f1",
+          "quote": "昆仲资本是一支早期高科技风险投资基金，由某VC基金管理团队发起设立，专注于投资中国和美国TMT领域具有商业模式创新或技术创新的早期及成长期企业",
+          "quote_hash": "a2efc43f7f13a14f8e36dc039135705bef6715ecff3056afc13703d965fc8254"
+        },
+        {
+          "source_id": "FISRC-57de475f4ec2ac5a",
+          "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+          "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+          "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
           "quote": "这是继此前昆仲资本、元生创投、上海未来产业基金、晶泰科技等投资后一年内完成的第三轮融资。",
           "quote_hash": "8789bd1eed49fe6256fa3c9423529cd18c841cfcd34c39e890d67b6a67fb455d"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

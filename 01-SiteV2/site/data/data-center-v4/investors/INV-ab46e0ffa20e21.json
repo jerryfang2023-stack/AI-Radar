@@ -139,29 +139,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "Crunchbase News 报道称 Northzone 领投 Blitzy 最新一轮融资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段定位来自 Northzone 官网；Blitzy 融资参与来自 Crunchbase News，按单个公开案例呈现，不视为完整投资组合。",
+      "summary": "Northzone 是跨欧洲及美国市场的风险投资机构，官网称其支持从创立到IPO阶段的公司，并列示伦敦、纽约、柏林、斯德哥尔摩和阿姆斯特丹办公室。Crunchbase News 报道 Northzone 领投 Blitzy 最新一轮融资；来源未披露其单独金额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其投资从公司创立阶段延伸至IPO阶段。",
+          "source_id": "PROFILE-B9-INV-ab46e0ffa20e21-1"
+        },
+        {
+          "field": "geographic_presence",
+          "label": "办公地点",
+          "value": "官网列示伦敦、纽约、柏林、斯德哥尔摩和阿姆斯特丹办公室。",
+          "source_id": "PROFILE-B9-INV-ab46e0ffa20e21-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Crunchbase News 报道称 Northzone 领投 Blitzy 最新一轮融资。",
+          "description": "Crunchbase News 报道 Northzone 领投 Blitzy 最新融资；未披露其单独金额。",
+          "source_id": "PROFILE-B9-INV-ab46e0ffa20e21-3"
+        },
+        {
+          "description": "融资来源记录：Blitzy · 成长轮 · 2026-05-05 · 本轮领投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2caf93b29d914f26"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.northzone.com/",
+          "source_id": "PROFILE-B9-INV-ab46e0ffa20e21-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B9-INV-ab46e0ffa20e21-1",
+          "source_url": "https://www.northzone.com/",
+          "source_title": "Northzone",
+          "source_content_hash": "cb1d19f19c6dd3771ed7faf76904b733ffa97329e15017d641f2da6e201a8f10",
+          "quote": "Backing world-changing companies from inception to IPO",
+          "quote_hash": "f4fedd2d0ecb7a705f4db2974670b0d4a63392e91bccf7572ede1e4a4eb15d12"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-ab46e0ffa20e21-2",
+          "source_url": "https://www.northzone.com/",
+          "source_title": "Northzone",
+          "source_content_hash": "cb1d19f19c6dd3771ed7faf76904b733ffa97329e15017d641f2da6e201a8f10",
+          "quote": "5 Offices: London · New York · Berlin · Stockholm · Amsterdam",
+          "quote_hash": "ab971fe8c5cb1dad8657ce3a6feb29c8cb8b75547618b8e05006eb7fa4431904"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-ab46e0ffa20e21-3",
+          "source_url": "https://news.crunchbase.com/ai/blitzy-funding-valuation-autonomous-software-development-vibe-coding-startups/",
+          "source_title": "Blitzy Raises $200M At $1.4B Valuation For Autonomous Software Development",
+          "source_content_hash": "ba7e61f3af6a8581dc1f966818d09451824b72b51677ed431938cf862fec50cf",
+          "quote": "Northzone led its latest financing.",
+          "quote_hash": "c72a8536ec3b4a1a9e72882540b67f5fdaf9019ab4e406c1b3cba5d5ab1ac3bd"
+        },
         {
           "source_id": "FISRC-2caf93b29d914f26",
           "source_url": "https://news.crunchbase.com/ai/blitzy-funding-valuation-autonomous-software-development-vibe-coding-startups/",
-          "source_title": "Blitzy Raises $200M At $1.4B Valuation For Autonomous Software Development",
-          "source_content_hash": "0790d109671657ba42818c99b39a9b9ccdfa4362888163275946d4e23f298b16",
-          "quote": "terprises with the help of AI. Cambridge, Massachusetts-based Blitzy has now raised more than $204.4 million. Northzone led its latest financing. New investors including PSG , Battery Ventures and Jump Capital also participated, as did existing backers such as NFX, Link Ventures and Flybridge . The company said it also received strategic",
-          "quote_hash": "cfcadc19de78ae866bd9cfdee2784821fe9b48fe75e6cae166f87763966ae109"
+          "source_title": "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发",
+          "source_content_hash": "9bcac210292cba82",
+          "quote": "Northzone led its latest financing.",
+          "quote_hash": "c72a8536ec3b4a1a9e72882540b67f5fdaf9019ab4e406c1b3cba5d5ab1ac3bd"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

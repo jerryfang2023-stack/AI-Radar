@@ -137,35 +137,67 @@
       }
     ],
     "public_profile": {
+      "last_verified_at": "2026-10-05",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "中国基金报将“天使清芬”称为聚焦硬科技早期项目的投资机构，称其服务种子轮、天使轮科创企业并联动上海未来产业研究院；证券时报报道其参与以太之心种子轮。现有公开来源没有确认其法律主体或基金管理人。",
+      "coverage_note": "研究对象按公开投资品牌“天使清芬”记录；融资报道与媒体介绍不能唯一确认其登记法律主体，未将“上海天使清芬基金”等近似称谓映射为同一管理人。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "公开报道所述投资方向",
+          "value": "硬科技早期项目",
+          "source_id": "b33-qingfen-background"
+        },
+        {
+          "field": "investment_stages",
+          "label": "公开报道所述服务阶段",
+          "value": [
+            "种子轮",
+            "天使轮"
+          ],
+          "source_id": "b33-qingfen-background"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 以太之心 种子轮 本轮参投。",
+          "description": "证券时报报道将天使清芬列为以太之心数千万元种子轮融资参与方；未披露其单独出资金额。",
           "source_id": "FISRC-1a358dfcb10fed1c"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开材料显示其关注硬科技早期项目；更完整的机构沿革、管理主体与投资组合尚未获可靠来源支持。",
       "sources": [
+        {
+          "source_id": "b33-qingfen-background",
+          "source_url": "https://www.chnfund.com/article/ARf5724c5d-4799-d185-b883-3a236829e828",
+          "source_title": "AI&#x667A;&#x80FD;&#x4F53;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x516C;&#x53F8;&#x201C;&#x4EE5;&#x592A;&#x4E4B;&#x5FC3;&#x201D;&#x5B8C;&#x6210;&#x6570;&#x5343;&#x4E07;&#x5143;&#x79CD;&#x5B50;&#x8F6E;&#x878D;&#x8D44; &#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;",
+          "source_content_hash": "77f15623cca76cba3d041e52b959b1ab1f0e6fa0aed9a00bcdea8260304670da",
+          "quote": "天使清芬是聚焦“硬科技”早期项目投资的机构",
+          "quote_hash": "eba5eaa5bd9f36262d50a6db2786ede68828954d8d45bd782d9cc85843cc92ee"
+        },
+        {
+          "source_id": "b33-qingfen-stage",
+          "source_url": "https://www.chnfund.com/article/ARf5724c5d-4799-d185-b883-3a236829e828",
+          "source_title": "AI&#x667A;&#x80FD;&#x4F53;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x516C;&#x53F8;&#x201C;&#x4EE5;&#x592A;&#x4E4B;&#x5FC3;&#x201D;&#x5B8C;&#x6210;&#x6570;&#x5343;&#x4E07;&#x5143;&#x79CD;&#x5B50;&#x8F6E;&#x878D;&#x8D44; &#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;",
+          "source_content_hash": "77f15623cca76cba3d041e52b959b1ab1f0e6fa0aed9a00bcdea8260304670da",
+          "quote": "专注服务于种子、天使轮科创企业，深度联动上海未来产业研究院",
+          "quote_hash": "aa60fd77fa66c447d398678c6426a5e797065c38b728719c9c8609175856d463"
+        },
         {
           "source_id": "FISRC-1a358dfcb10fed1c",
           "source_url": "https://www.stcn.com/article/detail/4165239.html",
           "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
           "source_content_hash": "f955efa5f0dbe1c126356ba273265d4dbdd4bc502e80eee96f8bde107485e596",
-          "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
-          "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+          "quote": "知名投资公司天使清芬等共同参与",
+          "quote_hash": "d61b1af32e1306bf40bbcdd1607ed7e8682c1f5e9834143e4a3a34045dbe7283"
         }
-      ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      ]
     }
   }
 }

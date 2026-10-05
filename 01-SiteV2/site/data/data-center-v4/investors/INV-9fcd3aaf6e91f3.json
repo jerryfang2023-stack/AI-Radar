@@ -139,34 +139,61 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "交易关系来自 Bland 的融资公告；未披露 Upfront Ventures 在本轮中的单独出资金额。",
-      "summary": "Bland 于 2026 年 6 月公布 5,000 万美元 Series C 时，列 Upfront Ventures 为继续参与的既有投资者之一；未披露其单独出资金额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "简介仅覆盖公开的 Founder Fellows 项目与一笔披露投资记录，不代表完整投资策略或组合。",
+      "summary": "Upfront Ventures 运营 Founder Fellows 项目，为新一代技术构建者和研究人员提供为期八周的项目支持，并在创业公司注册后提供 75,000 美元以上投资。Bland 的融资公告将其列为既有投资者之一；该记录不披露 Upfront 的单独出资额。",
+      "facts": [
+        {
+          "field": "founder_program",
+          "label": "创始人支持项目",
+          "value": "Founder Fellows 面向技术构建者和研究人员；符合条件的创业公司完成注册后可获得 75,000 美元以上投资。",
+          "source_id": "PROFILE-B13-INV-9fcd3aaf6e91f3-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Bland 的 2026 年 6 月 Series C 融资公告列 Upfront Ventures 为继续参与的既有投资者之一；5,000 万美元是整轮融资额，不是该机构单独出资。",
-          "source_id": "bland-upfront-seriesc-2026"
+          "description": "Bland 官方 Series C 融资新闻稿将 Upfront Ventures 列为继续参与的既有投资者，未披露其单独出资额。",
+          "source_id": "PROFILE-B13-INV-9fcd3aaf6e91f3-2"
         },
         {
           "description": "融资来源记录：Bland · C轮 · 2026-06-16 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6233a9ab76850de"
         }
       ],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "交易关系来自 Bland 的融资公告；未披露 Upfront Ventures 在本轮中的单独出资金额。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Founder Fellows项目页",
+          "value": "Upfront Founder Fellows",
+          "url": "https://fellows.upfront.com/",
+          "source_id": "PROFILE-B13-INV-9fcd3aaf6e91f3-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "bland-upfront-seriesc-2026",
+          "source_id": "PROFILE-B13-INV-9fcd3aaf6e91f3-1",
+          "source_url": "https://fellows.upfront.com/",
+          "source_title": "Founder Fellows",
+          "source_content_hash": "85e2c242c5802a87552ee793c56f72281cb237dc0a3c1b71739a4b6a521d1e94",
+          "quote": "Founder Fellows by Upfront Ventures",
+          "quote_hash": "96e72016ee4e0161e490faa8c3933a4eb35266f8b4e5135b8ac58989fd4fd3f4"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-9fcd3aaf6e91f3-3",
+          "source_url": "https://fellows.upfront.com/",
+          "source_title": "Founder Fellows",
+          "source_content_hash": "85e2c242c5802a87552ee793c56f72281cb237dc0a3c1b71739a4b6a521d1e94",
+          "quote": "Recieve a $75,000+ investment on incorporation of a venture-backable startup.",
+          "quote_hash": "177da45b2bf4db2a79e4b38c5299b7bbed1f4a56bdf2e2b955d58e4eabcd1806"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-9fcd3aaf6e91f3-2",
           "source_url": "https://www.prnewswire.com/news-releases/bland-surpasses-100m-funding-with-new-series-c-to-advance-voice-ai-for-complex-high-stakes-conversations-302801583.html",
           "source_title": "Bland Surpasses $100M Funding With New Series C to Advance Voice AI for Complex, High-Stakes Conversations",
           "source_content_hash": "9dc77faf6936f9d751d45e084f61ffcc6a5df31f892b826d7ad11a977bbff51b",
-          "quote": "All existing investors also participated, including Emergence Capital, Upfront Ventures, Scale Venture Partners",
-          "quote_hash": "cc4af986acca47236ff5780438bd003b7d5df059daa8424645311cca118c56ac"
+          "quote": "All existing investors also participated, including Emergence Capital, Upfront Ventures, Scale Venture Partners, Y Combinator",
+          "quote_hash": "b0126a5b64ca1654a67b00dbe5dca3f476c3b8cb48d2e362229932202921a985"
         },
         {
           "source_id": "FISRC-a6233a9ab76850de",
@@ -177,7 +204,7 @@
           "quote_hash": "f95896f249945e60f276144d3c7e8fd95ced5417c65e48f78848e9689de9e4d9"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -123,45 +123,70 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "PostHog 官方资料将 Tim Glaser 列为联合创始人和联合 CEO，并称他与 James Hawkins 于 2020 年 1 月创办公司。TechCrunch 报道将他列为 Adam 的天使投资人之一；报道未披露其个人投资金额。",
+      "coverage_note": "职位和 PostHog 创办信息来自公司官网；天使投资身份仅按 TechCrunch 对单个项目的报道记录，不推断出资金额或完整投资组合。",
       "facts": [],
       "milestones": [],
-      "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动与来源明确记载的身份关联；不补写未经核实的个人出资金额或完整履历。",
-      "summary": "TechCrunch 报道 Adam 获得 410 万美元融资，并将 PostHog 联合创始人 Tim Glaser 列为支持该公司的天使投资人；报道未披露其个人出资额。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "本档案记录 TechCrunch 在该融资报道中对 Tim Glaser 的姓名和 PostHog 关联标注，不补充个人出资金额或未核实履历。",
       "track_record": [
         {
-          "description": "TechCrunch 将 Tim Glaser (PostHog) 列为 Adam 的天使投资人之一；未披露个人出资金额。",
-          "source_id": "adam-tim-glaser-angel-2025"
-        },
-        {
-          "description": "融资来源记录：Adam · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "TechCrunch 报道将 Tim Glaser 列为 Adam 天使投资人之一；该报道未披露其个人出资金额。",
           "source_id": "FISRC-1e12e93a65d54b9a"
         }
       ],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "联合 CEO",
+          "organization": "PostHog",
+          "source_id": "b33-tim-current-role"
+        }
+      ],
+      "career": [
+        {
+          "organization": "PostHog",
+          "title": "联合创始人",
+          "period": "2020 年 1 月共同创办",
+          "description": "PostHog 官方媒体资料称 Tim Glaser 与 James Hawkins 于 2020 年 1 月创办公司。",
+          "source_id": "b33-tim-founder"
+        },
+        {
+          "organization": "PostHog",
+          "title": "联合 CEO",
+          "period": "截至 2026 年 10 月公司页面核验时列示；具体任职起始日期未披露",
+          "description": "PostHog 官方关于页面当前将 Tim Glaser 列为联合 CEO。",
+          "source_id": "b33-tim-current-role"
+        }
+      ],
+      "education": [],
+      "experience_summary": "PostHog 联合创始人及联合 CEO；公开资料显示其共同创办面向产品和数据团队的软件平台。",
       "sources": [
         {
-          "source_id": "adam-tim-glaser-angel-2025",
-          "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
-          "source_title": "YC alum Adam raises $4.1M to turn viral text-to-3D tool into AI copilot | TechCrunch",
-          "source_content_hash": "63cb5b099086d25067bd01f8f8cad7771c34add03f753290733087497e22b7c5",
-          "quote": "Tim Glaser (PostHog)",
-          "quote_hash": "2fbe1e7e2de76438ac639c277c8b7c4db35e069168110a234bcbb88502a595c8"
+          "source_id": "b33-tim-current-role",
+          "source_url": "https://posthog.com/about",
+          "source_title": "About PostHog",
+          "source_content_hash": "44b78b36bb63d510ae82af55dd994f3184e977f7ee5e883e1d73c9a53a7a1e58",
+          "quote": "Tim Glaser Co-CEO",
+          "quote_hash": "358ac06ecdc28db88a02101b62dc31f22b43bf7a9fe27363f1a1b86964f5bcd9"
+        },
+        {
+          "source_id": "b33-tim-founder",
+          "source_url": "https://posthog.com/media",
+          "source_title": "Media &amp; press - PostHog",
+          "source_content_hash": "1ddcd305d89df6ed9b1657971ea5017dd63d5394b619cb5250b3cb3947004d32",
+          "quote": "Founded in January 2020 by James Hawkins and Tim Glaser",
+          "quote_hash": "d14c7efd76f603b40dfb75e287f285ba002b7b0cc97d56bd4e10ff34800ca1ac"
         },
         {
           "source_id": "FISRC-1e12e93a65d54b9a",
           "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
-          "source_title": "YC 校友 Adam 获 410 万美元融资，将爆款文本转 3D 工具打造成 AI 智能体",
-          "source_content_hash": "49f3c01467bded27",
+          "source_title": "YC alum Adam raises $4.1M to turn viral text-to-3D tool into AI copilot | TechCrunch",
+          "source_content_hash": "63cb5b099086d25067bd01f8f8cad7771c34add03f753290733087497e22b7c5",
           "quote": "Adam is also backed by angel investors, including Tim Glaser (PostHog), Trevor Blackwell (YC), and Theo Browne (T3 Chat)",
           "quote_hash": "c236bbb9da99e74609afc935e94ce45c89e631d1524cbdc9a1cad10365051c71"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

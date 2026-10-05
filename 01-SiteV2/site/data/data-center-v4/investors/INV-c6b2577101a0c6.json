@@ -139,33 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "36氪机构资料可确认上海临芯投资管理有限公司及其集成电路投资定位；财新报道将“临芯投资”列为曦望 2026 年 8 月融资投资方。报道中的 20 亿元为融资总额，未披露临芯投资单独出资额。",
+      "summary": "上海临芯投资管理有限公司于 2015 年在上海临港设立，是集成电路领域的投资管理机构，开展海外并购投资。财新报道其参与曦望 2026 年 8 月 20 亿元融资；该金额为整轮融资，未披露临芯投资的单独出资额。",
+      "facts": [
+        {
+          "field": "identity_and_focus",
+          "label": "机构身份与领域",
+          "value": "36氪机构资料称上海临芯投资管理有限公司于 2015 年 5 月在上海临港注册成立，是集成电路领域的投资机构及投资管理机构。",
+          "source_id": "linxin_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为曦望融资投资方。",
+          "description": "财新报道将临芯投资列为曦望 2026 年 8 月融资的投资方之一；20 亿元为整轮金额，单独出资额未披露。",
+          "source_id": "sunrise_round"
+        },
+        {
+          "description": "融资来源记录：曦望 · 轮次未披露 · 2026-08-28 · 本轮参投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-85ff43aa8c582e53"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "现有来源足以核实机构名称、设立时间、领域及一笔投资关联；不引用未核实的资产管理规模或组合数量。",
       "sources": [
+        {
+          "source_id": "linxin_profile",
+          "source_url": "https://pitchhub.36kr.com/organization/1678246599603209",
+          "source_title": "临芯投资_投资机构信息-36氪",
+          "source_content_hash": "a9ed2ca394b76ac47e9e2fec2112a1605169108d40715992d246f29747b24dec",
+          "quote": "上海临芯投资管理有限公司于2015年5月在上海临港注册成立，是国内开展集成电路领域海外并购的投资机构，也是国内集成电路领域的投资管理机构之一。",
+          "quote_hash": "2dc01e8eff876d9ef0bf8ed53e898b08a7a8e66f63faa4d217f81f1986bdd03a"
+        },
+        {
+          "source_id": "sunrise_round",
+          "source_url": "https://m.caixin.com/m/2026-08-28/102478786.html",
+          "source_title": "曦望完成20亿元融资，车规级芯片赛道迎来新玩家-财新网",
+          "source_content_hash": "b0074d3ba65a6f31c606c9a00948b350de985bc9ad3b3f744d2d4811757ec4f3",
+          "quote": "本轮投资方包括 人保股权 、 建信股权 、东方国际资产、Janchor Partners、 中科创星 、 同创伟业 、进化论资本、 临芯投资 、 毅达资本 、湖畔基金、 弘晖基金 等投资机构，以及 正大集团 、 九安医疗 、 盈峰环境 、 三七互娱 、 同程旅行 等产业资本。",
+          "quote_hash": "8aa94c6ca620c1ce72d1a08fa4ec3905b27104c5a3113f34e2e2397fc8609999"
+        },
         {
           "source_id": "FISRC-85ff43aa8c582e53",
           "source_url": "https://m.caixin.com/m/2026-08-28/102478786.html",
           "source_title": "AI芯片企业曦望完成20亿元融资 投后估值为200亿元",
-          "source_content_hash": "fef5dd3d54a9f2ec565389c629b2397db416e266f62ea892762bc1a316531707",
-          "quote": "9月登陆科创板的 燧原 ，在2025年完成的最后一轮融资估值为182亿元。 据了解，曦望本轮投资方包括 人保股权 、 建信股权 、东方国际资产、Janchor Partners、 中科创星 、 同创伟业 、进化论资本、 临芯投资 、 毅达资本 、湖畔基金、 弘晖基金 等投资机构，以及 正大集团 、 九安医疗 、 盈峰环境 、 三七互娱 、 同程旅行 等产业资本。 责任编辑：屈运栩 | 版面编辑：邱祺璞 图片编辑：刘青 阅读英文报道 AI Chipmaker Sunrise Doubles Valuation After Raising 2 Billion Yuan 2026年08月28日 相关阅读 封面报道｜电力赋能算力 2026年06月18日 财新周刊｜算力的尽头是电力 2025年05月10日 AI需求外溢 ",
-          "quote_hash": "4a7f516c012d6861d4fba1ea4970d335cb26a71ac59c17549a9782d422583dc5"
+          "source_content_hash": "650e3db5a6cf8753",
+          "quote": "曦望本轮投资方包括人保股权、建信股权、东方国际资产、Janchor Partners、中科创星、同创伟业、进化论资本、临芯投资、毅达资本、湖畔基金、弘晖基金等投资机构，以及正大集团、九安医疗、盈峰环境、三七互娱、同程旅行等产业资本",
+          "quote_hash": "d5bf26ee91dab87ba845a747848b2023427f1e5129abb0c30b8d9b8ebdd4bbec"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

@@ -123,15 +123,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "硬氪报道将见识资本列为万卷智能天使轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体名称与业务概况来自 36氪机构页（第三方机构资料）；万卷智能融资参与来自硬氪报道。未推断其单独出资额。",
+      "summary": "36氪机构页将“见识资本”对应至浙江见识创业投资管理有限公司，并介绍其股权投资及管理业务；硬氪将见识资本列为万卷智能 1000 万元天使轮投资方。",
+      "facts": [
+        {
+          "field": "reported_entity_and_activity",
+          "label": "36氪机构页披露的主体及业务",
+          "value": "36氪将见识资本对应至浙江见识创业投资管理有限公司，并介绍其从事股权投资及管理业务。",
+          "source_id": "PROFILE-B7-INV-8f512b7bb83902-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "硬氪融资报道将见识资本列为万卷智能天使轮投资方。",
-          "source_id": "PROFILE-88518c3b345ffd37df72"
+          "description": "硬氪融资报道将见识资本列为万卷智能 1000 万元天使轮投资方；报道未披露其单独出资额。",
+          "source_id": "PROFILE-B7-INV-8f512b7bb83902-1"
         },
         {
           "description": "融资来源记录：万卷智能 · 历史轮次未披露 · 天使轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -141,12 +148,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-88518c3b345ffd37df72",
+          "source_id": "PROFILE-B7-INV-8f512b7bb83902-1",
           "source_url": "https://www.aitntnews.com/newDetail.html?newId=22128",
           "source_title": "浙大博士创业天使轮融资1000万，把工程师一半的工作交给AI｜硬氪首发",
-          "source_content_hash": "a1bceb51f38a9eb6a7e1dcd00c1657ca17daf4c09827b49041b0c75fde182b10",
+          "source_content_hash": "f34905feb45c7b9879838a14302f7ef4ab95e25d9af023cda636bfbb0abf4d95",
           "quote": "，专注于研究工程师智能体（Engineer Agent）的公司「万卷智能」近日完成1000万天使轮融资。我们总结了本轮融资信息和该公司几大亮点： 融资金额及投资机构 融资轮次： 天使轮 融资规模： 1000万 投资方： 见识资本 资金用途： 第一是扩充研发力量，进行研发人员的招聘；第二是市场拓展 公司基本信息 成立时间： 2024年10月 注册地址： 浙江宁波 技术亮点： 核心产品Colleague+（智能同事），是一个由“Engineer Agents”驱动的企业级工作平台，旨在将“人类+软硬件”的工作范式升级为“人类+Agents”的工作范式，大幅释放专业工程师的工作负荷。与传统软件不同，Colleague+的“Engineer Agents”能准确模拟业内资深工程师",
           "quote_hash": "38e7293b19fbde374ef56df65dfb6e04ad090c90912c96c3a50b7ebd2deb0008"
+        },
+        {
+          "source_id": "PROFILE-B7-INV-8f512b7bb83902-2",
+          "source_url": "https://pitchhub.36kr.com/organization/1828830911702003",
+          "source_title": "见识资本 | 投资机构信息-36氪",
+          "source_content_hash": "04ef4385261cb03c516c3d04adaeed5b159d425e36296ccb1bc5c08dde1f38b1",
+          "quote": "浙江见识创业投资管理有限公司)成立于2021年，是一家专注于股权投资及管理业务的投资机构",
+          "quote_hash": "e3474ce1e854fe332d172152fb7ba5356e70b619e6d316688561243c3bc3cb0f"
         },
         {
           "source_id": "FISRC-7f66bb9f079c7dc9",
@@ -157,7 +172,7 @@
           "quote_hash": "cddab002c4c2c1015f9e5d47e09df1a25106bd2487c167dff00c8b10d94c680f"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

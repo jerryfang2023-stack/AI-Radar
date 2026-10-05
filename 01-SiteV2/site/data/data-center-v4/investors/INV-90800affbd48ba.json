@@ -180,10 +180,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "投资界报道将千乘资本列为千寻智能融资投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体品牌与公司名称、成立时间及投资方向来自千乘资本官网；投资活动来自投资界报道。官网未标注统计时间的管理规模和组合数字未纳入。",
+      "summary": "千乘资本官网以“千乘资本（深圳白杨投资管理有限公司）”标识主体，称其成立于2016年3月，核心投资方向为工业科技；投资界报道将其列为千寻智能融资投资方。",
+      "facts": [
+        {
+          "field": "entity_identity",
+          "label": "官网列示的品牌与公司名称",
+          "value": "官网将千乘资本与深圳白杨投资管理有限公司并列标识。",
+          "source_id": "PROFILE-COLLECT-INV-90800affbd48ba-I-2"
+        },
+        {
+          "field": "fund_founding",
+          "label": "官网披露的成立时间",
+          "value": "千乘资本官网称其成立于2016年3月。",
+          "source_id": "PROFILE-COLLECT-INV-90800affbd48ba-I-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的核心投资方向",
+          "value": "官网称千乘资本核心投资方向为工业科技，重点关注新能源、智能汽车、人工智能和未来航天技术。",
+          "source_id": "PROFILE-COLLECT-INV-90800affbd48ba-I-2"
+        },
+        {
+          "field": "reported_investment_activity",
+          "label": "公开披露的融资参与",
+          "value": "投资界报道将千乘资本列为千寻智能早期融资投资方之一。",
+          "source_id": "FISRC-b8b7d456eceee943"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -206,6 +231,14 @@
           "quote_hash": "7dba2143a8d950aca3b0624c99dd89f70325af9afcd2b642212cd6fae8e09e52"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-90800affbd48ba-I-2",
+          "source_url": "https://www.qianshengvc.com/gywm",
+          "source_title": "深圳白杨投资管理有限公司-关于我们",
+          "source_content_hash": "0f477b8c9ab1430435f339016c033b90af9b2597fa8f71227ba15c16f855a0a3",
+          "quote": "千乘资本（深圳白杨投资管理有限公司）",
+          "quote_hash": "2ac1ff800c399a34ca697abc40d19469c61b58494d1d9304c621cc0ccc0f1942"
+        },
+        {
           "source_id": "FISRC-ee3064edf7c871f4",
           "source_url": "https://www.qbitai.com/2026/02/381766.html",
           "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
@@ -214,7 +247,7 @@
           "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

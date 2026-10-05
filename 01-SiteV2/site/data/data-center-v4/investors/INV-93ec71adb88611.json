@@ -139,29 +139,52 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "华深智药融资档案将赛诺菲列为投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "使用 Sanofi Ventures 官方页面补齐可核实的投资方向；融资来源披露的“赛诺菲 Biotech Development Fund”未与该基金建立同一性。",
+      "summary": "Sanofi Ventures 官网称其为服务于 Sanofi 创新生态的战略创投基金，投资早期生物医药与数字健康企业，并覆盖种子轮至 B 轮及以后。华深智药融资资料另将“赛诺菲 Biotech Development Fund”列作投资机构；公开资料未证明两者是同一投资载体，本档不将该轮计入 Sanofi Ventures 投资业绩。",
+      "facts": [
+        {
+          "field": "official_investment_focus",
+          "label": "投资方向",
+          "value": "Sanofi Ventures 官网称其投资早期 biotech 与 digital health 企业，覆盖 Seed 至 Series B 及以后。",
+          "source_id": "PROFILE-B8-INV-93ec71adb88611-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "华深智药融资页面在投资方名单中列出赛诺菲。",
+          "description": "融资来源记录：华深智药 · 多轮融资 · 2026-03-25 · 本轮参投 · 7.87亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-972ef11d09af7ec8"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-972ef11d09af7ec8",
+          "source_id": "PROFILE-B8-INV-93ec71adb88611-1",
           "source_url": "https://vc.pedaily.cn/company/205217.html",
           "source_title": "「 华深智药」华深智药是一家AI技术新药开发商_投资界",
           "source_content_hash": "d44be3f3cb895f838d15f97966174c98389bc3f8b9ab3fb4b3b9b14e331117bf",
-          "quote": "于北京市海淀区中关村东路1号院8号楼7层B701。 数据来源: 公开资料整理 当前轮次涉及机构 Dimension Capital DST Global 高瓴资本 渶策资本 Luminous Ventures 琦迹资本 赛诺菲 Biotech Development Fund AI市场洞察 企业基础信息「核心速览」 公司身份： 华深智药科技（北京）有限公司 （简称：华深智药），成立时间2021年6月，所在地北京市海淀区，工商登记信息：注册资本20.00万元，统一社会信用代码91110108MA04BAT61Y，法定代表人彭健； 业务根基：所属行业AI+医疗，核心业务为基于人工智能技术的新药开发，拥有自主研发的蛋白质结构预测算法OmegaFold； 资本轨迹：累计披露融资金",
-          "quote_hash": "6477dbe53ae1220f7abaa170d14fb3fa96fdb28b0ca1d1fd831596370097fda5"
+          "quote": "赛诺菲 Biotech Development Fund",
+          "quote_hash": "711ff1ffcc5dd6c06adbf86aa1fdb40376b00219befaa99aac28156e3dd14b9e"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-93ec71adb88611-2",
+          "source_url": "https://www.sanofiventures.com/",
+          "source_title": "Home | Sanofi Ventures",
+          "source_content_hash": "9ccf6b8c6eb86db20b70236f4aed721a5b11e6c98cde576bdd8b06dd246259e8",
+          "quote": "We invest in top-tier biotech and digital health companies that focus on helping patients and transforming the practice of medicine. We invest across all stages of the private company lifecycle, from Seed to Series B and beyond",
+          "quote_hash": "3e3293f0ad37e05400ae8dcf3656376f6d51b5dd5b5350e4fb60d2e03a86df57"
+        },
+        {
+          "source_id": "FISRC-972ef11d09af7ec8",
+          "source_url": "https://vc.pedaily.cn/company/205217.html",
+          "source_title": "华深智药完成7.87亿美元B轮融资",
+          "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+          "quote": "投资方为Dimension Capital、DST Global、高瓴资本、渶策资本、Luminous Ventures、琦迹资本、赛诺菲、Biotech Development Fund",
+          "quote_hash": "50bd19105aa4ddc094866c630fa8f02864547d64102bd3c4636c35e7ee64bb72"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

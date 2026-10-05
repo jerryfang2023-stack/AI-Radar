@@ -124,15 +124,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "投资界融资记录将民生证券投资列为驰芯半导体 Pre-A++ 轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "企业身份及业务范围据民生证券债券募集说明书核实；公开网站的投资业务介绍页当前无法直接读取。",
+      "summary": "民生证券2021年债券募集说明书将民生证券投资有限公司列为发行人民生证券股份有限公司的全资子公司，并说明其从事投资管理、股权投资及项目投资。投资界融资记录另将其列为驰芯半导体2023年Pre-A++轮投资方；报道未披露单独出资额。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "法律主体",
+          "value": "民生证券投资有限公司",
+          "source_id": "PROFILE-B13-INV-90a675d9d0e33d-1"
+        },
+        {
+          "field": "parent_company",
+          "label": "母公司关系",
+          "value": "民生证券股份有限公司全资子公司（按2021年募集说明书披露）",
+          "source_id": "PROFILE-B13-INV-90a675d9d0e33d-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "投资业务",
+          "value": "投资管理、股权投资、项目投资",
+          "source_id": "PROFILE-B13-INV-90a675d9d0e33d-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投资界融资记录将民生证券投资列为驰芯半导体 Pre-A++ 轮投资方。",
-          "source_id": "PROFILE-457be9a27e4f0a3d1195"
+          "description": "投资界融资记录将民生证券投资列为驰芯半导体2023年Pre-A++轮投资方，未披露单独金额。",
+          "source_id": "PROFILE-B13-INV-90a675d9d0e33d-3"
         },
         {
           "description": "融资来源记录：驰芯半导体 · 历史轮次未披露 · A轮投资。这是本库收录的披露案例，不代表完整投资组合。",
@@ -142,12 +161,28 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-457be9a27e4f0a3d1195",
+          "source_id": "PROFILE-B13-INV-90a675d9d0e33d-1",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202108/016381_20210811_CLLS.pdf",
+          "source_title": "民生证券股份有限公司2021年公开发行公司债券（面向专业投资者）募集说明书",
+          "source_content_hash": "da5f2d19c345d7407cf8bad92a6abdf9bf7bf7b44c3d18cb516ed345a4924e47",
+          "quote": "民生证券投资 指 民生证券投资有限公司，发行人的全资子公司",
+          "quote_hash": "dbac4f715b8009f95f299b6b791dfd1095e81cd6c7eb8df34a038922ecb34d88"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-90a675d9d0e33d-2",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202108/016381_20210811_CLLS.pdf",
+          "source_title": "民生证券股份有限公司2021年公开发行公司债券（面向专业投资者）募集说明书",
+          "source_content_hash": "da5f2d19c345d7407cf8bad92a6abdf9bf7bf7b44c3d18cb516ed345a4924e47",
+          "quote": "同时， 公司通过全资子公司民生股权投资基金管理有限公司、 民生证券投资 有限公司分别从事私募基金管理、 投资管理、 股权投资、 项目投资等业务",
+          "quote_hash": "e626ef750ad1f98c113d337059d9fab930eb668fea2d16d65bd8ea4ca1681c9f"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-90a675d9d0e33d-3",
           "source_url": "https://vc.pedaily.cn/company/209398.html",
           "source_title": "「 驰芯半导体」超宽带芯片供应商_投资界",
           "source_content_hash": "fb7128f87ce1d0df173962795ca4a1f155325cc1c7887d00e9c21ec6a2c4263a",
-          "quote": "七晟资本，日期2025年03月12日； 股权转让（金额：未披露），投资方力合科创，日期2025年02月27日； B轮（金额：未披露），投资方基石创投，日期2025年01月15日； Pre-A++轮（金额：未披露），投资方民生证券投资、安睿信杰，日期2023年04月03日； Pre-A+轮（金额：近亿人民币），投资方惠友投资、上海驭快、鸿石资本、鸿石联合，日期2022年09月30日； Pre-A轮（金额：数千万人民币），投资方联和资本、力合科创、惠州蓝微电子、麓谷发展集团、惠友投资、德赛电池，日期2021年08月03日； 天使轮（金额：数千万人民币），投资方君爵投资、长沙群欣，日期2020年08月18日。 资金用途 ：最新A+轮融资将加大UWB芯片研发，推动产品在多场景规模",
-          "quote_hash": "93a9b567db5e634a216072e9585c3ed4d23895bc7c2447d4c0e50a68260d9869"
+          "quote": "Pre-A++轮（金额：未披露），投资方民生证券投资、安睿信杰，日期2023年04月03日",
+          "quote_hash": "052d7135c348fad78fa6c2cae7d9cf56366ffdd08dab7b554cc8f1e1a85fdcfd"
         },
         {
           "source_id": "FISRC-d7c3cbdfafeaf4fc",
@@ -158,11 +193,7 @@
           "quote_hash": "a2f6fc222e4db97dd97c9a7a0c41e40ee0d6dbcf3715452cf459cf48e0d9d555"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-04"
     }
   }
 }

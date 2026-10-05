@@ -164,10 +164,17 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅据个人网站和Suno官方融资公告记录身份及一项投资活动；未加入未核实的雇佣关系或履历。",
-      "summary": "Daniel Gross的个人网站自述为早期风险投资者；Suno官方2024年融资公告将Daniel Gross列入其1.25亿美元融资的合作伙伴名单。本档案只记录该公开投资活动，不补写其他职业或履历。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "当前职业和个人介绍来自 Daniel Gross 本人网站；Suno融资参与来自发行人公告。姓名按个人档案记录，不与 NFDG 或任何基金法律实体合并。",
+      "summary": "Daniel Gross个人网站称其为早期阶段投资人，常与 Nat Friedman 合作，并列举其投资或支持案例。网站还列示其在 Meta 负责计算业务，并为 Safe Superintelligence 联合创始人。Suno官方公告将 Daniel Gross 列入2024年5月融资合作伙伴名单。",
+      "facts": [
+        {
+          "field": "investor_profile_and_current_roles",
+          "label": "个人网站披露的职业与合作方式",
+          "value": "Daniel Gross 自述为早期阶段投资人，常与 Nat Friedman 合作；本人网站同时列示其在 Meta 负责计算业务及为 Safe Superintelligence 联合创始人。",
+          "source_id": "daniel-gross-personal-site"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {

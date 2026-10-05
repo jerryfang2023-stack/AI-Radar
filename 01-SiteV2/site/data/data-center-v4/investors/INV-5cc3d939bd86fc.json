@@ -123,10 +123,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前依据一项融资股东披露确认名称和投资机构属性。",
-      "summary": "投中网关于千觉机器人的融资报道将元禾原点列为其财务投资机构股东。本档仅记录该公开关系，未扩展为完整机构背景或组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "管理平台全称、投资阶段及领域来自元禾控股官网；融资关系只按投中网报道记录。",
+      "summary": "苏州工业园区元禾原点创业投资管理有限公司是元禾控股的早期股权投资管理平台，官网称其重点关注科技和医疗领域。投中网关于千觉机器人的融资报道将元禾原点列为财务投资机构股东；该案例不代表完整组合。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "元禾控股官网披露的主体全称",
+          "value": "元禾控股官网将元禾原点全称列为苏州工业园区元禾原点创业投资管理有限公司。",
+          "source_id": "PROFILE-S-INV-5cc3d939bd86fc-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "元禾控股官网披露的投资领域和阶段",
+          "value": "元禾原点重点关注科技、医疗领域的早期创业企业。",
+          "source_id": "PROFILE-S-INV-5cc3d939bd86fc-3"
+        },
+        {
+          "field": "founding",
+          "label": "元禾控股官网披露的成立时间",
+          "value": "元禾原点自2013年成立。",
+          "source_id": "PROFILE-S-INV-5cc3d939bd86fc-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -140,12 +159,36 @@
           "source_id": "FISRC-3a00c703054126cd",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
           "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 | 投中网",
-          "source_content_hash": "5a4b1879761bbaaff6343af02cf73fc667e8b203bc96bc343e1a95861c62ec37",
+          "source_content_hash": "b29cb9e5fd4aab76b22009e8e4a2f04b7a62f3ebec008dfc205c2a5080865fbd",
           "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
           "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5cc3d939bd86fc-2",
+          "source_url": "https://www.oriza.com/p/busi/bid-3qsi17uihssi.html",
+          "source_title": "元禾原点_业务平台_元禾控股",
+          "source_content_hash": "365e33e115b19417e3520011bbb4fa27e672ec76d2441366d91c0e39e76502fe",
+          "quote": "苏州工业园区元禾原点创业投资管理有限公司",
+          "quote_hash": "a8af9721ddbc2989e4e77ea2be86f90caeaaa97c3e6eeb7e63f3bf2251c58128"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5cc3d939bd86fc-3",
+          "source_url": "https://www.oriza.com/p/busi/bid-3qsi17uihssi.html",
+          "source_title": "元禾原点_业务平台_元禾控股",
+          "source_content_hash": "365e33e115b19417e3520011bbb4fa27e672ec76d2441366d91c0e39e76502fe",
+          "quote": "重点关注科技和医疗两大领域内早期创业企业的投资机会",
+          "quote_hash": "ea437d23c926dffb22f365889309797301afe3774258a77a8a02f37fc9e8824e"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5cc3d939bd86fc-4",
+          "source_url": "https://www.oriza.com/p/busi/bid-3qsi17uihssi.html",
+          "source_title": "元禾原点_业务平台_元禾控股",
+          "source_content_hash": "365e33e115b19417e3520011bbb4fa27e672ec76d2441366d91c0e39e76502fe",
+          "quote": "元禾原点自2013年成立以来",
+          "quote_hash": "4023e712c704466a1d6e2e8649eabf75f161f6a4cb0698717a50d62543706cd5"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

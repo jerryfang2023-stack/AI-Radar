@@ -139,33 +139,26 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Sequoia 页面用于核对英文名与 Hugging Face 关联；TechCrunch 仅支持截至其 2026 年 5 月报道中的 CEO 职务和一次天使投资活动，不扩展其职业经历或完整投资组合。",
-      "summary": "Sequoia Capital 的人物页以 Clément Delangue 和 Hugging Face 关联；TechCrunch 报道称 Clem Delangue 是 Hugging Face CEO，并列为 NanoClaw 种子轮天使投资者之一。",
-      "current_roles": [
-        {
-          "title": "CEO（TechCrunch 于 2026 年 5 月报道）",
-          "organization": "Hugging Face",
-          "source_id": "nanoclaw-seed-clem-angel-2026-10-03"
-        }
-      ],
-      "career": [
-        {
-          "organization": "Hugging Face",
-          "title": "CEO（报道时）",
-          "period": "截至 2026 年 5 月报道",
-          "description": "TechCrunch 将 Clem Delangue 描述为 Hugging Face CEO。",
-          "source_id": "nanoclaw-seed-clem-angel-2026-10-03"
-        }
-      ],
+      "coverage_status": "researched",
+      "coverage_note": "人物关联来自 Sequoia 人物页；CEO 职务和 NanoClaw 投资关系的时间口径为 TechCrunch 2026 年 5 月报道，不据此推断完整职业经历或投资组合。",
+      "summary": "Sequoia Capital 人物页将 Clément Delangue 与 Hugging Face 关联；TechCrunch 2026 年 5 月的报道称其为 Hugging Face CEO，并将其列为 NanoClaw 种子轮天使投资者之一。本档案只记录这项可核对的投资活动。",
+      "current_roles": [],
+      "career": [],
       "education": [],
       "experience_summary": "现有来源仅支持一项 CEO 职务和一项公开的天使投资活动；未补入未经来源核实的教育或其他经历。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "reported_role_and_activity",
+          "label": "媒体于 2026 年 5 月披露的身份及投资活动",
+          "value": "TechCrunch 2026 年 5 月报道将 Clem Delangue 称为 Hugging Face CEO，并列为 NanoClaw 种子轮天使投资者之一。",
+          "source_id": "PROFILE-S-INV-2f82c15cce1a4d-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "TechCrunch 将 Clem Delangue 列为 NanoClaw 1200 万美元种子轮的天使投资者之一。",
-          "source_id": "nanoclaw-seed-clem-angel-2026-10-03"
+          "description": "TechCrunch 2026 年 5 月报道将 Clem Delangue 列为 NanoClaw 种子轮天使投资者之一。",
+          "source_id": "PROFILE-S-INV-2f82c15cce1a4d-3"
         },
         {
           "description": "融资来源记录：NanoCo · 种子轮 · 2026-05-20 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -183,12 +176,20 @@
           "quote_hash": "a3d0eb2ed42efde7e100b18ec11c20a2a53fd481b0e318f964295798d2ceaa95"
         },
         {
-          "source_id": "nanoclaw-seed-clem-angel-2026-10-03",
-          "source_url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead",
+          "source_id": "PROFILE-S-INV-2f82c15cce1a4d-2",
+          "source_url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead/",
           "source_title": "NanoClaw creator turns down $20M buyout offer, raises $12M seed instead | TechCrunch",
-          "source_content_hash": "5b936efdd2b11364b06b4a3a782cef700ce5b4f30548d2b3fea87cbb4477e58f",
+          "source_content_hash": "eb2ce0a3524b6bad08f10777d687ccd8781f84a5ab297dbb84f90810734a2736",
           "quote": "angels like Clem Delangue, CEO of Hugging Face.",
           "quote_hash": "f1abc544cb80a9e58096402f3087b2ffb84df14dd1530ae8e6d61390bd360b8d"
+        },
+        {
+          "source_id": "PROFILE-S-INV-2f82c15cce1a4d-3",
+          "source_url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead/",
+          "source_title": "NanoClaw creator turns down $20M buyout offer, raises $12M seed instead | TechCrunch",
+          "source_content_hash": "eb2ce0a3524b6bad08f10777d687ccd8781f84a5ab297dbb84f90810734a2736",
+          "quote": "eventually asked Delangue if he was interested in angel investing and secured a yes",
+          "quote_hash": "230f2be89875c7045f77eae177bc6029abc800f406976ef2fa7e56e6daedeafc"
         },
         {
           "source_id": "FISRC-056bd835d7bc912e",
@@ -199,7 +200,7 @@
           "quote_hash": "f19e506b82b1b918bdb7a06e640aa11deb246464c8b9f67fd17f635e8affe2d6"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

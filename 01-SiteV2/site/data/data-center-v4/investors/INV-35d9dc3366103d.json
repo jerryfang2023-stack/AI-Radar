@@ -140,15 +140,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "协会公开名单可将标朴投资对应至上海标朴投资管理有限公司；名单发布于2019年，仅证明当时名称记录，不用于推断当前管理人登记状态。活动来源为2026年融资报道。",
-      "summary": "上海标朴投资管理有限公司出现在中基协2019年投资者保护倡议名单中；2026年融资报道将标朴投资列为息壤开物种子及天使轮跟投机构。",
+      "coverage_status": "researched",
+      "coverage_note": "2019年中基协名单支持历史登记名称；2026年投资者关系记录支持该名称仍出现在机构调研名单中。种子及天使轮关系来自投资界报道，未取得被投企业或投资方原始公告；名称相同不单独构成法人映射证明。",
+      "summary": "中基协2019年倡议名单列有上海标朴投资管理有限公司；投资界2026年9月的息壤开物融资报道将标朴投资列为种子及天使轮跟投方。康强电子2026年半年度报告也列出“标朴投资”参加机构调研，但该记录本身不证明其与融资报道所用简称的法定主体映射。",
       "facts": [
         {
           "field": "listed_entity_name",
           "label": "名单所列机构名称",
           "value": "上海标朴投资管理有限公司（2019年协会名单）",
           "source_id": "amac-biaopu-listing-2026-10-03"
+        },
+        {
+          "field": "recent_public_mention",
+          "label": "发行人半年度报告列示的调研参与方",
+          "value": "康强电子2026年半年度报告列示的机构调研参与者中包括“标朴投资”；报告未给出其完整法定名称。",
+          "source_id": "PROFILE-S-INV-35d9dc3366103d-3"
         }
       ],
       "milestones": [],
@@ -181,6 +187,14 @@
           "quote_hash": "5a4aa3f662d71f56069044a704a102f9b607946b17d4eb25215b86b75463420c"
         },
         {
+          "source_id": "PROFILE-S-INV-35d9dc3366103d-3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-20/1225482625.PDF",
+          "source_title": "宁波康强电子股份有限公司2026年半年度报告全文（CNINFO）",
+          "source_content_hash": "806e2c5022ee850604efb3e0c58ce2a68f36402be7a7680e7cbb353c78366eeb",
+          "quote": "标朴投资",
+          "quote_hash": "ac84a583b6e64f845c15701c5f92c92c8d17a77f3abb131604897c94c55000a6"
+        },
+        {
           "source_id": "FISRC-41f074703465b30a",
           "source_url": "https://m.pedaily.cn/news/569562",
           "source_title": "Physical AI创业公司息壤开物连获数亿元融资 AI 2026-09-23 16:38",
@@ -189,7 +203,10 @@
           "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": []
     }
   }
 }

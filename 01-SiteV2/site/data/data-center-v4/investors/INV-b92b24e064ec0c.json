@@ -448,10 +448,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "公开报道将 NFX 列为 enso Series A 与 Starcloud 融资的参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "阶段、投资地域与筛选重点来自 NFX 官网；融资参与案例仍由相应融资来源支持。",
+      "summary": "NFX 官网称其通常投资种子前和种子阶段企业，在美国、以色列、拉丁美洲和欧洲开展投资，主要考察创始团队与市场机会。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子前与种子阶段",
+          "source_id": "PROFILE-COLLECT-INV-b92b24e064ec0c-1"
+        },
+        {
+          "field": "investment_geography",
+          "label": "投资地域",
+          "value": "美国、以色列、拉丁美洲和欧洲",
+          "source_id": "PROFILE-COLLECT-INV-b92b24e064ec0c-2"
+        },
+        {
+          "field": "investment_criteria",
+          "label": "投资考察重点",
+          "value": "创始团队与市场机会",
+          "source_id": "PROFILE-COLLECT-INV-b92b24e064ec0c-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -484,6 +503,30 @@
           "source_content_hash": "a5f0517463ab3ed8eb4861c3580575330df858848bdc1424454207cc9c3f30dc",
           "quote": "e deal said Nvidia ponied up $25 million to back Starcloud. Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital. Johnston points to the Nvidia investment as a key signal of Starcloud’s advantages in the nascent space compute sector. Starcloud is the only company (that we know of) currently operating",
           "quote_hash": "d34424a362c59383bf57de7346a202dea130c3a4029b37d69c02be9acd441864"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b92b24e064ec0c-1",
+          "source_url": "https://www.nfx.com/about",
+          "source_title": "NFX - About",
+          "source_content_hash": "28ed97d7d74124c003032e20d63275fefbff49752dd75caf5f818053db151d1f",
+          "quote": "We typically invest in seed and pre-seed companies.",
+          "quote_hash": "f2a14d2f01ab5ba622e65a7a60dc54725a71da0c6c66121cc76f266dec34aba8"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b92b24e064ec0c-2",
+          "source_url": "https://www.nfx.com/about",
+          "source_title": "NFX - About",
+          "source_content_hash": "28ed97d7d74124c003032e20d63275fefbff49752dd75caf5f818053db151d1f",
+          "quote": "Yes, we actively invest in the U.S., Israel, Latin America and Europe.",
+          "quote_hash": "22ed092eb097a3dc7f0b271bc72d2bd40d4097705e9ea3ca32115b924ee55dd9"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b92b24e064ec0c-3",
+          "source_url": "https://www.nfx.com/about",
+          "source_title": "NFX - About",
+          "source_content_hash": "28ed97d7d74124c003032e20d63275fefbff49752dd75caf5f818053db151d1f",
+          "quote": "We focus primarily on two areas when underwriting potential investments: the founding team and the market opportunity.",
+          "quote_hash": "4c78535e35e4411d5ea152a8ab9b1b482a6fa337106cb83ec9c439df2d648213"
         },
         {
           "source_id": "FISRC-f80a0b6f2f7f63f8",

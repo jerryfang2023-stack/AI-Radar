@@ -139,33 +139,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "General Atlantic 官网记载其自 1980 年以来投资并提供运营支持；SambaNova 发行方公告称该机构领投 10 亿美元 Series F 首次交割。10 亿美元为整轮首次交割总额，未披露 General Atlantic 单独出资额。",
+      "summary": "General Atlantic 是全球投资机构，官网称其自 1980 年以来以耐心资本、运营经验和全球平台支持企业家。SambaNova 2026 年 7 月宣布完成 10 亿美元 Series F 首次交割并称由 General Atlantic 领投；公告未披露其单独出资额。",
+      "facts": [
+        {
+          "field": "institution_profile",
+          "label": "机构定位与历史",
+          "value": "官网称 General Atlantic 自 1980 年以来投资具有潜力的技术与团队，并提供长期资本、运营专长和全球平台。",
+          "source_id": "general_atlantic_overview"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1980",
+          "description": "官网记载 General Atlantic 自 1980 年以来开展投资活动。",
+          "source_id": "general_atlantic_overview"
+        }
+      ],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 SambaNova Systems F轮 本轮领投。",
+          "description": "SambaNova 的发行方公告称 General Atlantic 领投该轮融资；未披露该机构单独出资额。",
+          "source_id": "sambanova_series_f"
+        },
+        {
+          "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮领投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dbf8259066547c8e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "General Atlantic 官网",
+          "value": "机构介绍",
+          "url": "https://www.generalatlantic.com/?lang=en",
+          "source_id": "general_atlantic_overview"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网提供机构沿革与投资方式，发行方公告提供一笔领投案例；没有推定单笔投资金额。",
       "sources": [
+        {
+          "source_id": "general_atlantic_overview",
+          "source_url": "https://www.generalatlantic.com/?lang=en",
+          "source_title": "General Atlantic | Global Investment Firm",
+          "source_content_hash": "5aae1060d419051af1545c28d766e026d00bb966d780939e419b9afa4d7017d1",
+          "quote": "Since 1980, we have identified talent and technologies with great potential — empowering innovators with patient capital, operational expertise, and a global platform to scale their ambitions.",
+          "quote_hash": "837c41f89b881599121946ed62d729b35a572d2a646f4c7e5643a1512859edd2"
+        },
+        {
+          "source_id": "sambanova_series_f",
+          "source_url": "https://sambanova.ai/press/sambanova-completes-first-close-of-1b-financing-at-11b-valuation",
+          "source_title": "SambaNova Completes First Close of $1B Financing at $11B Valuation",
+          "source_content_hash": "179875a654d6e0645d22a6ea6e1130cf61a732fc9fe39e706e2e9b4feea89c2b",
+          "quote": "This latest financing round was led by General Atlantic",
+          "quote_hash": "a14d78a389691c7f9bd59cae3cdc1ef053cadd4ce55196f89921c63128771458"
+        },
         {
           "source_id": "FISRC-dbf8259066547c8e",
           "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
-          "source_title": "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round | TechCrunch",
-          "source_content_hash": "41d7fc2d367052ed511dfa2e667a31421c105240ed11f1e889cefcf771e5ef11",
+          "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
+          "source_content_hash": "e79999ca03a0833e",
           "quote": "led by General Atlantic",
           "quote_hash": "483d12aa4b876dda26b896c2e54b36ba4dfe863949a6342ae7fb0e3f8123e753"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

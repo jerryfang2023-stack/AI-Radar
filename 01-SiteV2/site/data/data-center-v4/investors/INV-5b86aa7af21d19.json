@@ -189,10 +189,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资角色依据 Groq 公告；机构背景由 TechCrunch 报道支持。",
-      "summary": "Groq 官方公告确认 Disruptive 领投其 Series A；TechCrunch 将其描述为由 Alex Davis 创立、位于达拉斯的后期投资机构。本档记录已核实案例，不代表完整组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、创立年份、创始人和投资方向来自 Disruptive 官网；融资角色来自 Groq 官方公告。投资案例是已披露示例，不外推为完整组合。",
+      "summary": "Disruptive 官网将其描述为投资类别领先的私营科技公司的全球投资机构，称公司由 Alex Davis 于2012年创立，关注人工智能、基础设施、国防技术和企业软件等领域。Groq 官方公告确认 Disruptive 领投其 Series A；档案不代表完整组合。",
+      "facts": [
+        {
+          "field": "organization_profile",
+          "label": "官网机构定位及方向",
+          "value": "Disruptive 官网称其是专注类别领先私营科技公司的全球投资机构，由 Alex Davis 于2012年创立，关注人工智能、基础设施、国防技术和企业软件等领域。",
+          "source_id": "PROFILE-COLLECT-INV-5b86aa7af21d19-F2-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -221,6 +228,14 @@
           "source_content_hash": "49ee9d08f3be90a026c6dcda745109e69bb20c32d4d0405d144d1759627db9aa",
           "quote": "The round was led by Disruptive, a Dallas-based late-stage investment firm founded by Alex Davis — who also serves as Groq’s chairman — and Infinitum, a Fort Lauderdale hedge fund.",
           "quote_hash": "9af8d02739d1d54feb49156d597d43aa8d85321137cd064d853b72df5fbca5c8"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-5b86aa7af21d19-F2-3",
+          "source_url": "https://www.disruptive.tech/about-draft",
+          "source_title": "About | Disruptive",
+          "source_content_hash": "2398f33a3c5abeab225f1db441a36cb5956ec6e489ed5c4747dcab98ec7c396e",
+          "quote": "Disruptive is a global investment firm focused on backing category-leading private technology companies. Founded in 2012 by Alex Davis, Disruptive invests significant capital behind a select number of high-conviction opportunities across artificial intelligence, infrastructure, defense technology, enterprise software and other sectors shaping the future of technology.",
+          "quote_hash": "043854b564ad187fd021c829cd383d283ea2faff9a197c96df26b1e0277d26d1"
         }
       ],
       "last_verified_at": "2026-10-03",

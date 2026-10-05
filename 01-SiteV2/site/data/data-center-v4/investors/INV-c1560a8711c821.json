@@ -123,33 +123,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据中国保险资产管理业协会的机构分类及产品登记、融资项目资料核验。公开来源未披露该轮单独出资额，本档案不推断其完整基金规模或投资组合。",
+      "summary": "太平创新投资管理有限公司（简称“太平创新”）是公开登记与行业资料中可识别的保险资管关联投资主体。中国保险资产管理业协会将其列入保险机构子公司，并在产品登记中列出其对应的私募基金产品。36氪将太平创新列入深度智控2026年9月B+轮投资方；报道披露的是该轮数亿元人民币总额，未披露太平创新单独出资额。",
+      "facts": [
+        {
+          "field": "entity_type",
+          "label": "主体类别",
+          "value": "中国保险资产管理业协会将太平创新投资管理有限公司列入“保险机构子公司”。",
+          "source_id": "taiping_iamac_category"
+        },
+        {
+          "field": "fund_activity",
+          "label": "基金登记活动",
+          "value": "协会登记资料将太平创新投资管理有限公司列为“太平创新-太平数智健康（杭州）私募基金合伙企业（有限合伙）”对应机构。",
+          "source_id": "taiping_iamac_product"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 深度智控 B+轮投资方。",
+          "description": "36氪资料列太平创新为深度智控2026年9月B+轮投资方；该轮总额为数亿元人民币，未披露其单独出资额。",
+          "source_id": "taiping_deepctrls_round"
+        },
+        {
+          "description": "融资来源记录：深度智控 · 历史轮次未披露 · B+轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-67ccadc4294defd6"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
         {
-          "source_id": "FISRC-67ccadc4294defd6",
+          "source_id": "taiping_iamac_category",
+          "source_url": "https://www.iamac.org.cn/hyfw/hyfl/202506/t20250605_9642.html",
+          "source_title": "保险机构子公司 - 中国保险资产管理业协会",
+          "source_content_hash": "dc2bb8047289b928cf50403781a27d8ec9f1f2a501cc7cd7efe8af8f059f9ae6",
+          "quote": "10 太平创新投资管理有限公司",
+          "quote_hash": "91f9a86a13234a38daa1286f52ace5958537c1d041f087122dd98b198465d362"
+        },
+        {
+          "source_id": "taiping_iamac_product",
+          "source_url": "https://www.iamac.org.cn/cpzc/cpdjxx/202306/t20230602_8486.html",
+          "source_title": "2023年5月31日登记项目编号披露 - 中国保险资产管理业协会",
+          "source_content_hash": "7781267771d8f58e849840f311049692ec92ff9f6ae6f181fcca9ae0f2be8093",
+          "quote": "太平创新投资管理有限公司 太平创新-太平数智健康(杭州)私募基金合伙企业(有限合伙) PE012023050004 2023 年 5 月 31 日",
+          "quote_hash": "3239acea1c5c20c34ce10080858db33934f68e4cd7544a5a341e6f7873bb0abe"
+        },
+        {
+          "source_id": "taiping_deepctrls_round",
           "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
           "source_title": "深度智控 | 项目信息-36氪",
           "source_content_hash": "eea411f1e6a40c97f41f6d9e65fd6a7d61e11b8e070eec9da1d515203eb51436",
           "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
           "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
+        },
+        {
+          "source_id": "FISRC-67ccadc4294defd6",
+          "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+          "source_title": "深度智控 | 项目信息-36氪",
+          "source_content_hash": "ed75aafa3d8feb1d",
+          "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
+          "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

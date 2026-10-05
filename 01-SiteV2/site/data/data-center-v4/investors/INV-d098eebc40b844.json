@@ -124,33 +124,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "集团背景据官方披露；驰芯半导体融资名单按媒体报道所用“财信金控”名称记录，不推断到具体基金、子公司或出资法人。",
+      "summary": "湖南财信金控集团是湖南省级地方金融控股平台。集团官网披露其依托财信产业基金构建覆盖种子期、成长期到成熟期的基金生态；公开融资报道将“财信金控”列入驰芯半导体 A 轮投资方，具体执行基金或法人载体未披露。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "湖南省级地方金融控股平台。",
+          "source_id": "B23-CHASING-OFFICIAL"
+        },
+        {
+          "field": "investment_approach",
+          "label": "基金体系",
+          "value": "依托旗下财信产业基金，构建覆盖种子期、成长期和成熟期的基金生态。",
+          "source_id": "B23-CHASING-FUND"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 驰芯半导体 A轮参投。",
+          "description": "投资界报道将“财信金控”列入驰芯半导体 A 轮投资方名单；报道未披露具体出资法人或基金载体。",
+          "source_id": "B23-CHASING-PEDAILY"
+        },
+        {
+          "description": "融资来源记录：驰芯半导体 · 历史轮次未披露 · A轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cd5b0b79e0cacd63"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-cd5b0b79e0cacd63",
+          "source_id": "B23-CHASING-OFFICIAL",
+          "source_url": "https://stock.hnchasing.com/main/aboutUs/jtyw/detail/1940322254339891201.html",
+          "source_title": "集团要闻",
+          "source_content_hash": "1b3c135a4652e02c301d481610c4e2eb09c41ab0920e3745d443d7475a0a04c6",
+          "quote": "湖南财信金控集团（以下简称财信金控）作为湖南省唯一的省级地方金融控股平台",
+          "quote_hash": "b36dfcbb25b74e1d51dd663261b62c10f8843325a86ddd7e459bb88580f777b3"
+        },
+        {
+          "source_id": "B23-CHASING-FUND",
+          "source_url": "https://stock.hnchasing.com/main/aboutUs/jtyw/detail/1940322254339891201.html",
+          "source_title": "集团要闻",
+          "source_content_hash": "1b3c135a4652e02c301d481610c4e2eb09c41ab0920e3745d443d7475a0a04c6",
+          "quote": "依托旗下财信产业基金有限公司（在管基金规模连续多年稳居全省第一），构建覆盖企业“种子期—成长期—成熟期”的基金生态体系",
+          "quote_hash": "efade15d92eaec79cef8e419a8553b1e3949827a0e0617bf17de2ebea9b7c304"
+        },
+        {
+          "source_id": "B23-CHASING-PEDAILY",
           "source_url": "https://news.pedaily.cn/202503/547159.shtml",
           "source_title": "驰芯半导体获近2亿A轮融资，兴湘资本领投_投资界",
           "source_content_hash": "30ffca010d49d54de5db55666acbed74fb5558f29f6e0849c2c8421affc7bfcb",
           "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
           "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+        },
+        {
+          "source_id": "FISRC-cd5b0b79e0cacd63",
+          "source_url": "https://news.pedaily.cn/202503/547159.shtml",
+          "source_title": "驰芯半导体获近2亿A轮融资，兴湘资本领投_投资界",
+          "source_content_hash": "556acdb82a71c877",
+          "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+          "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "湖南财信金控集团是湖南省级地方金融控股平台。集团官网披露其依托财信产业基金构建覆盖种子期、成长期到成熟期的基金生态；公开融资报道将“财信金控”列入驰芯半导体 A 轮投资方，具体执行基金或法人载体未披露。"
     }
   }
 }

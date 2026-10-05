@@ -139,29 +139,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "数巅智能融资报道列出中石油昆仑资本为投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构全称、股东组成及投资方向来自投资界机构页；融资参与来自数巅智能融资报道，未披露单独出资额。",
+      "summary": "投资界机构页将该机构列为中国石油集团昆仑资本有限公司：2021 年成立，由中国石油天然气集团有限公司、中国石油天然气股份有限公司和中国石油集团资本股份有限公司共同出资，是中国石油集团直属一级企业。其采用基金加直投模式，重点布局能源转型及战略性新兴产业。数巅智能融资披露其为投资方。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "主体全称",
+          "value": "中国石油集团昆仑资本有限公司。",
+          "source_id": "PROFILE-B8-INV-943b51d8a373e8-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "投资界机构页称其采用基金加直投，关注新能源、新材料、节能环保、高端智能制造及CCS/CCUS等领域。",
+          "source_id": "PROFILE-B8-INV-943b51d8a373e8-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "数巅智能融资报道在投资方名单中列出中石油昆仑资本。",
+          "description": "数巅智能 2026 年融资报道列中石油昆仑资本为投资方；未披露其单独出资额。",
+          "source_id": "PROFILE-B8-INV-943b51d8a373e8-1"
+        },
+        {
+          "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f5fa738edf400dda"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-f5fa738edf400dda",
+          "source_id": "PROFILE-B8-INV-943b51d8a373e8-1",
           "source_url": "https://news.pedaily.cn/202609/569430.shtml",
           "source_title": "数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化_投资界",
           "source_content_hash": "8b03a9d7d0f177d479ba7379919a2b9f76a4ee8171835bb674fa9d0ba29585e2",
-          "quote": "用大模型向领域专精升级。投资界（ID：pedaily2012）9月21日消息，数巅智能今日宣布，继 2025 年 6 月完成数亿元 pre-A 轮融资后，公司再度 完成数亿元级多轮融资 。此次披露的投资方包括 中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒、财鑫资本、深圳力合等产业与金融资本，君联、赛富、红鸟启航资本等老股东则连续多轮追加 。本次融资资金将主要投向三大方向：一是持续攻坚X-Engine、行业语义层与山河元枢专家大模型等底层技术，加厚数据智能护城河；二是复制成熟的智能体与数字员工与标杆应用，拓宽主力赛道，加速从央国企向更广产业带渗透；三是持续引进高端人才，支撑组织能力跨越式提升。 数巅智能构建了端到端的企业数据智能体基础设施，包括ShanHe Y",
-          "quote_hash": "30d3136f4b6ca635fe43e18e599a93d59b74910f496acaf317515764cbf3286a"
+          "quote": "此次披露的投资方包括 中国中车、中石油昆仑资本、中关村科学城",
+          "quote_hash": "b0b55ef3ba591a400c04add930e77643672c0907f0759cc586ab442dd14303a3"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-943b51d8a373e8-2",
+          "source_url": "https://vc.pedaily.cn/vc/654429.html",
+          "source_title": "[中石油昆仑资本]中国石油集团昆仑资本有限公司_投资界",
+          "source_content_hash": "cf74184d3c6301a5b9c56db8075e14e4ed1eefee42937ca028141a6de494c8f1",
+          "quote": "中国石油集团昆仑资本有限公司（简称“昆仑资本”）于2021年6月注册成立，由中国石油天然气集团有限公司、中国石油天然气股份有限公司和中国石油集团资本股份有限公司共同出资组建，是中国石油天然气集团有限公司的直属一级企业。",
+          "quote_hash": "23a2f31e5a02f71659b3f6502f50ad78302b98fd478ad64d7ae8c67758e91838"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-943b51d8a373e8-3",
+          "source_url": "https://vc.pedaily.cn/vc/654429.html",
+          "source_title": "[中石油昆仑资本]中国石油集团昆仑资本有限公司_投资界",
+          "source_content_hash": "cf74184d3c6301a5b9c56db8075e14e4ed1eefee42937ca028141a6de494c8f1",
+          "quote": "采用基金+直投的模式，重点投资布局新能源、新材料、节能环保、高端智能制造等战略性新兴产业以及CCS/CCUS等新技术",
+          "quote_hash": "ee4f37aee518b7637d59dd3a717bca7df080dff5a279813ced43d7e2c666e94f"
+        },
+        {
+          "source_id": "FISRC-f5fa738edf400dda",
+          "source_url": "https://news.pedaily.cn/202609/569430.shtml",
+          "source_title": "数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化",
+          "source_content_hash": "8dda700ee0f559df",
+          "quote": "此次披露的投资方包括 中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒、财鑫资本、深圳力合等产业与金融资本，君联、赛富、红鸟启航资本等老股东则连续多轮追加",
+          "quote_hash": "4f7de3e000eb80419ec27fd750e26ba56642a4e0089dde436f1d526a46bd7eb4"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

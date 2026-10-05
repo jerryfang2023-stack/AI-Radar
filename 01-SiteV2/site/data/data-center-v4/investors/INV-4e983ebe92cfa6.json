@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "官方页面用于核验集团简称和国有资本投资运营定位；融资关系仅按报道披露记录，不推断具体基金、法律主体或出资金额。",
-      "summary": "中山投资控股集团有限公司官网以“中山投控”称呼该市属国有资本投资运营平台。新浪财经将其列入蜂巢互联股东结构中的区域国资平台名单；该报道未披露具体出资轮次或金额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "集团主体和资本运营定位来自中山投控官网；私募基金管理人身份属于其全资子公司“中山创投”，不能直接归到集团母公司。蜂巢互联股东线索来自新浪财经，未据此推断投资金额或轮次。",
+      "summary": "中山投资控股集团有限公司（中山投控）是中山市国有资本投资运营集团，2022年由当地国有企业重组设立，主业定位为“资本运营+产业投资”。集团股权投资和基金管理由其国有全资子公司中山创业投资有限公司具体开展；官网称该子公司为中基协登记的私募基金管理人。蜂巢互联融资报道另将中山投控列入区域国资股东名单。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "集团官网披露的主体及设立信息",
+          "value": "中山投控官网称集团于2022年12月挂牌，是由原中山中汇投资集团和中山金融投资控股重组设立的市属国有资本投资运营公司。",
+          "source_id": "PROFILE-S-INV-4e983ebe92cfa6-3"
+        },
+        {
+          "field": "investment_scope",
+          "label": "集团官网披露的主业定位",
+          "value": "中山投控官网将集团主业定位为资本运营和产业投资。",
+          "source_id": "PROFILE-S-INV-4e983ebe92cfa6-4"
+        },
+        {
+          "field": "fund_management_subsidiary",
+          "label": "集团全资创投子公司的业务和登记性质",
+          "value": "集团官网介绍，中山创业投资有限公司是中山投控国有全资创投机构，开展基金管理和股权投资，并登记为私募基金管理人。",
+          "source_id": "PROFILE-S-INV-4e983ebe92cfa6-5"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -163,10 +182,34 @@
         {
           "source_id": "PROFILE-4b51bcec8704e8cee308",
           "source_url": "https://zhongshantoukong.com/",
-          "source_title": "中山投资控股集团有限公司",
+          "source_title": "&#x4E2D;&#x5C71;&#x6295;&#x8D44;&#x63A7;&#x80A1;&#x96C6;&#x56E2;&#x6709;&#x9650;&#x516C;&#x53F8;",
           "source_content_hash": "25d3f007f72a60837d591182275090f45c054b3ec41a90a1c4698e48e139cf5c",
           "quote": "中山投控在市委、市政府和市国资委的大力支持下，抢抓国企机遇，强化党建引领，致力打造国有资本投资运营平台",
           "quote_hash": "88c3290c28a3a6a49ae3acaed62cdf2cb62adc734f007b5460357485b47a5a8f"
+        },
+        {
+          "source_id": "PROFILE-S-INV-4e983ebe92cfa6-3",
+          "source_url": "https://zhongshantoukong.com/",
+          "source_title": "&#x4E2D;&#x5C71;&#x6295;&#x8D44;&#x63A7;&#x80A1;&#x96C6;&#x56E2;&#x6709;&#x9650;&#x516C;&#x53F8;",
+          "source_content_hash": "25d3f007f72a60837d591182275090f45c054b3ec41a90a1c4698e48e139cf5c",
+          "quote": "通过实施战略性资源重组，整合原中山中汇投资集团有限公司和中山金融投资控股有限公司而设立的中山市首家国有资本投资运营公司改革试点企业",
+          "quote_hash": "00419d72fa9ca1f6a5252be6bc847a42f8d9710255f55b5f55d2a9c4dbdface2"
+        },
+        {
+          "source_id": "PROFILE-S-INV-4e983ebe92cfa6-4",
+          "source_url": "https://zhongshantoukong.com/",
+          "source_title": "&#x4E2D;&#x5C71;&#x6295;&#x8D44;&#x63A7;&#x80A1;&#x96C6;&#x56E2;&#x6709;&#x9650;&#x516C;&#x53F8;",
+          "source_content_hash": "25d3f007f72a60837d591182275090f45c054b3ec41a90a1c4698e48e139cf5c",
+          "quote": "资本运营+产业投资",
+          "quote_hash": "53746a2b8d7aad471ff6abfe38f04219efa60a2f5ac8ad3f23c25cde3a27063d"
+        },
+        {
+          "source_id": "PROFILE-S-INV-4e983ebe92cfa6-5",
+          "source_url": "https://zhongshantoukong.com/show/2211041614271393",
+          "source_title": "&#x4E2D;&#x5C71;&#x521B;&#x4E1A;&#x6295;&#x8D44;&#x6709;&#x9650;&#x516C;&#x53F8; | &#x4E2D;&#x5C71;&#x6295;&#x8D44;&#x63A7;&#x80A1;&#x96C6;&#x56E2;&#x6709;&#x9650;&#x516C;&#x53F8;",
+          "source_content_hash": "3b2330fc6f711fab8965325684f56eebc3d4ce8cda876726551a66dce586a969",
+          "quote": "中山创业投资有限公司（简称“中山创投”）是中山投资控股集团有限公司（简称“投控集团”）落实中山市委、市政府“培育发展股权投资旗舰企业”要求，整合组建的 国有全资创投机构，有针对性开展基金管理和股权投资等权益类投资业务，是中国证券投资基金业协会登记备案的私募基金管理人机构（中基协登记编号：1065108）",
+          "quote_hash": "91cb7e9af3baccf44eb199c0f07421b6fe95b6c71239b892a7364d22cf9ee1d7"
         }
       ],
       "last_verified_at": "2026-10-03",

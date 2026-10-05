@@ -139,33 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "无问芯穹融资报道将宽德智能学习实验室 (Will) 列为跟投方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "宽德官网招聘页确认“宽德智能学习实验室”是其对外使用的研究招聘单位；投资界报道将“宽德智能学习实验室（Will）”列入无问芯穹融资跟投方。现有材料没有确认该实验室是独立法人、基金或直接出资载体；本档按可核实的组织单元名称记录，不将其描述为独立VC管理人。",
+      "summary": "宽德官网招聘页面以“宽德智能学习实验室”名义招聘AI研究员和工程师。投资界报道将“宽德智能学习实验室（Will）”列为无问芯穹超7亿元融资的跟投方；公开材料未说明对应的法律主体或出资载体。",
+      "facts": [
+        {
+          "field": "organization_unit",
+          "label": "组织单元",
+          "value": "宽德官网招聘页面以“宽德智能学习实验室”名义招募AI研究员和工程师；现有页面未说明其实验室的独立法人身份。",
+          "source_id": "PROFILE-B13-INV-acf86822389612-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "无问芯穹融资报道将宽德智能学习实验室 (Will) 列入跟投方。",
+          "description": "投资界将“宽德智能学习实验室（Will）”列为无问芯穹超7亿元融资跟投方，未披露具体出资主体或金额。",
+          "source_id": "PROFILE-B13-INV-acf86822389612-2"
+        },
+        {
+          "description": "融资来源记录：无问芯穹 · 基础设施融资 · 2026-05-07 · 本轮参投 · 7 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5d0583f94886034"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "宽德官网",
+          "value": "宽德智能学习实验室招聘页面",
+          "url": "https://www.wizardquant.com/career",
+          "source_id": "PROFILE-B13-INV-acf86822389612-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-e5d0583f94886034",
+          "source_id": "PROFILE-B13-INV-acf86822389612-1",
+          "source_url": "https://www.wizardquant.com/career",
+          "source_title": "加入我们 - 探索计算奥义",
+          "source_content_hash": "b280478dc1bd6c63f0bb7cdc00723d182b509c8d2a68b04ad3fe579806f429f2",
+          "quote": "加入宽德智能学习实验室 AI研究员、工程师热招中",
+          "quote_hash": "276618bbc91c60e1727ecf3385fdb0ea5c3bd8fa429edaf80d7c39320a4c82fc"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-acf86822389612-2",
           "source_url": "https://news.pedaily.cn/202605/563518.shtml",
           "source_title": "无问芯穹再获超7亿融资，加码Token经济时代_投资界",
           "source_content_hash": "aea901bd224bb6417342e026df991a6693195a04cd1992efe5a19f233e5a6724",
-          "quote": "5月7日消息，无问芯穹宣布此前已 再获超 7 亿元融资 ，联合领投方为 杭州高新金投集团和惠远资本 ，跟投方包括 国兴资本、秦淮数据、广发乾和、力合清瞳、中保投资、AEF NextGen、腾瑞资本、卡莱特、中信建投资本和宽德智能学习实验室 (Will) ，老股东 君联资本、上海国投孚腾和元智未来 追加投资。 据悉，本轮融资已于数月前完成，资金将重点投向三大方向：一是夯实无问芯穹多元异构技术的领 先地位，扩大 Token （词元）经济时代，极 致优化的可用算力规模；二是持续强化软硬协同的技术优势，加快从“电能到 Token”的生产效率跃升；三是构建具备自主进化能力的 AI 基础设施，依托企业级智能体服务平台，面向不同行业场景提供解决方案，提升从“Token 到生产力”的价值",
-          "quote_hash": "1e5d5ff9e2a2e0a08a71b58684e38d5ca3efd32ba989c96bcf3bdc921829691a"
+          "quote": "中信建投资本和宽德智能学习实验室 (Will) ，老股东",
+          "quote_hash": "bac729fe7940b207ada6337bc8b76e5f0421572eba8944b4ffb9761ec77d8b01"
+        },
+        {
+          "source_id": "FISRC-e5d0583f94886034",
+          "source_url": "https://news.pedaily.cn/202605/563518.shtml",
+          "source_title": "无问芯穹再获超7亿融资，加码Token经济时代",
+          "source_content_hash": "69550847bd779ae8",
+          "quote": "跟投方包括 国兴资本、秦淮数据、广发乾和、力合清瞳、中保投资、AEF NextGen、腾瑞资本、卡莱特、中信建投资本和宽德智能学习实验室 (Will)",
+          "quote_hash": "d1f4f980aceff974e80c0b6b6bc161a81c83e6e96a8de7bbe57e466be82f3880"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-04"
     }
   }
 }

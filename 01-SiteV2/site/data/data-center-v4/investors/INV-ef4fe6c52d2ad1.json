@@ -139,65 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "公司业务介绍来自亚康万玮官网；投资活动来自 5Y News 融资报道，未披露出资额或投资工具。",
-      "summary": "亚康万玮官网介绍其提供算力设备集成销售、算力基础设施综合服务和云数字化解决方案。5Y News 对矩阵起源融资的报道将亚康股份（301085.SZ）列为共同注资方。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "亚康股份（北京亚康万玮信息技术股份有限公司，301085.SZ）是算力基础设施全产业链综合服务商，业务覆盖算力设备集成、数据中心运维和云及数字化解决方案。矩阵起源官方公告将亚康股份列为其超千万美元 A 轮共同投资方之一。",
+      "coverage_note": "公司身份和业务来自亚康股份官网；融资关系来自矩阵起源公告。融资总额超过 1,000 万美元，未披露亚康股份单独出资额。",
       "facts": [
         {
+          "field": "legal_name",
+          "label": "公司官网披露名称",
+          "value": "北京亚康万玮信息技术股份有限公司",
+          "source_id": "b35-yakang-company"
+        },
+        {
           "field": "business_description",
-          "label": "官网披露的业务定位",
-          "value": "算力基础设施全产业链综合服务商。",
-          "source_id": "PROFILE-0d7156ecf87fb222d365"
+          "label": "公司官网披露业务定位",
+          "value": "算力基础设施全产业链综合服务商，提供设备集成、基础设施运维及云和数字化解决方案。",
+          "source_id": "b35-yakang-company"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "5Y News 报道称亚康股份（301085.SZ）参与投资矩阵起源 A 轮；未披露其出资金额。",
-          "source_id": "PROFILE-b7fae7b19469629a1af9"
+          "description": "矩阵起源官方公告将亚康股份列为 A 轮共同注资方之一；未披露亚康股份单独出资额。",
+          "source_id": "b35-yakang-matrixorigin"
         },
         {
           "description": "融资来源记录：矩阵起源（MatrixOrigin） · A轮 · 2026-08-12 · 本轮参投 · 超千万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-903aa25f932bc468"
         }
       ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "机构官网",
-          "value": "亚康万玮",
-          "url": "https://www.asiacom.net.cn/about",
-          "source_id": "PROFILE-6b9085cc7c43a9ee57d9"
-        }
-      ],
+      "contacts": [],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
+      "experience_summary": "算力基础设施及数据中心服务上市企业，公开记录显示其参与企业级 AI 基础设施融资。",
       "sources": [
         {
-          "source_id": "PROFILE-0d7156ecf87fb222d365",
+          "source_id": "b35-yakang-company",
           "source_url": "https://www.asiacom.net.cn/about",
           "source_title": "亚康万玮",
           "source_content_hash": "7e4a6dbe9a6478f3df97a302ce2944b9db0852bc0e8dad4d8647e8f12be8819e",
-          "quote": "亚康万玮是一家以产品和服务能力覆盖全球主要数据中心的算力基础设施全产业链综合服务商",
-          "quote_hash": "e1e68d26a6b6db0dada7c54314baaa5c28cdca8e04db59ee0896a89359dcf654"
+          "quote": "亚康万玮是一家以产品和服务能力覆盖全球主要数据中心的算力基础设施全产业链综合服务商，主营业务是向互联网及企业客户提供计算、存储、网络等算力设备的销售服务，即算力设备集成销售；向算力园区、数据中心、智能计算中心、云计算厂商等提供算力基础设施综合服务，即算力基础设施综合服务，包括 IT 运维服务、基础设施运维和管理服务、园区运维和管理服务等；以及为企业数字化转型提供云和数字化解决方案服务",
+          "quote_hash": "158e7208d7fcbc9b4acd8ac30b4cef8928bfa81cbfbdc66dd7d98f2f54b6d84f"
         },
         {
-          "source_id": "PROFILE-b7fae7b19469629a1af9",
-          "source_url": "https://elsewhere.news/zh/5ycapital/matrixorigina-5y-news",
-          "source_title": "矩阵起源（MatrixOrigin）完成超千万美元A轮融资 | 5Y News | elsewhere",
-          "source_content_hash": "011f60dbf82744e6b3a3bd2c719331f87f1c52c1c3a9e86102397b7228074c19",
-          "quote": "算力全产业链综合服务商亚康股份（301085.SZ）与澳大利亚风险投资机构Artesian Venture Partners共同注资。",
-          "quote_hash": "87ed77d341fd7436a0c3a1824e0c11b8fffb185f6326ac29bbfe20c857a2cf4b"
+          "source_id": "b35-yakang-matrixorigin",
+          "source_url": "https://www.matrixorigin.io/blog/matrixorigin-series-a-financing?v=20260911_a894ca0",
+          "source_title": "矩阵起源完成超千万美元A轮融资，产业资本与国际资本联手押注企业级AI基础设施赛道 — MatrixOrigin",
+          "source_content_hash": "6fd08dc846bd3443a511ac6d9faf37ff94294ebb70715de7bc25f9361001d34b",
+          "quote": "本轮融资由企业级数智化产品和解决方案综合提供商汉得信息（300170.SZ）参与投资的基金、算力全产业链综合服务商亚康股份（301085.SZ）与澳大利亚风险投资机构 Artesian Venture Partners 共同注资。",
+          "quote_hash": "c7c73f3e330ed6cf7e644762c59fe6e44e4029f9a1a9ed532c6fb84856ddd89e"
         },
         {
-          "source_id": "PROFILE-6b9085cc7c43a9ee57d9",
-          "source_url": "https://www.asiacom.net.cn/about",
-          "source_title": "亚康万玮",
-          "source_content_hash": "7e4a6dbe9a6478f3df97a302ce2944b9db0852bc0e8dad4d8647e8f12be8819e",
-          "quote": "亚康万玮",
-          "quote_hash": "9a19a1977e9851d89a219952d296b4751ed14dc4c1311f48110c5d505c27cf9c"
+          "source_id": "b35-yakang-round",
+          "source_url": "https://www.matrixorigin.io/blog/matrixorigin-series-a-financing?v=20260911_a894ca0",
+          "source_title": "矩阵起源完成超千万美元A轮融资，产业资本与国际资本联手押注企业级AI基础设施赛道 — MatrixOrigin",
+          "source_content_hash": "6fd08dc846bd3443a511ac6d9faf37ff94294ebb70715de7bc25f9361001d34b",
+          "quote": "宣布完成超千万美元A轮融资",
+          "quote_hash": "7d5bcfd61316005c30b83088d8e32bf57b3e87a21b61f25200945c0ae96074bf"
         },
         {
           "source_id": "FISRC-903aa25f932bc468",
@@ -207,8 +206,7 @@
           "quote": "本轮融资由企业级数智化产品和解决方案综合提供商汉得信息（300170.SZ）参与投资的基金、算力全产业链综合服务商亚康股份（301085.SZ）与澳大利亚风险投资机构Artesian Venture Partners共同注资。",
           "quote_hash": "7b292223ffea3776b6ea4e886a29a5d7a8b4a018497e25d9df20ac6fa4665da0"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

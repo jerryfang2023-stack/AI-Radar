@@ -139,37 +139,85 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "Nordic Makers官网介绍其由创业者投资人组成，并以自有资金投资北欧初创企业。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略为官网自述；Good Tape 为公开融资案例，不代表完整投资组合。",
+      "summary": "Nordic Makers 官网称其由有创业经历的投资人组成并使用自有资金投资；其公开策略为向北欧 B2B 软件种子前及种子轮项目投资约 €500K–€1M。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网称由创业者以自有资金投资",
+          "source_id": "b32-nordic-about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "Pre-seed",
+            "Seed"
+          ],
+          "source_id": "b32-nordic-about"
+        },
+        {
+          "field": "investment_geography_and_sector",
+          "label": "地域与领域",
+          "value": "北欧 B2B 软件",
+          "source_id": "b32-nordic-about"
+        },
+        {
+          "field": "typical_ticket",
+          "label": "官网披露的单笔投资区间",
+          "value": "€500K–€1M",
+          "source_id": "b32-nordic-about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将Nordic Makers列为Good Tape相关融资的投资参与方。",
+          "description": "The1news 报道 Nordic Makers 向 Good Tape 投资 €600K 完成管理层收购；并称 Alexander Aghassipour 代表 Nordic Makers 领投。",
+          "source_id": "b32-nordic-round"
+        },
+        {
+          "description": "融资来源记录：Good Tape · 早期融资 · 2026-10-02 · 本轮领投 · €600k。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f4f28d07c46f9b89"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-301413c7d7277cbfe7ae",
+          "source_id": "b32-nordic-about",
           "source_url": "https://www.nordicmakers.vc/",
           "source_title": "Nordic Makers | Investing in Nordic Startups",
           "source_content_hash": "9f275a6feefdef467cbe706b590771338c531de89615738f3e152f9c7096f8e2",
-          "quote": "We are entrepreneurs who have built 🦄🦄🦄 and now invest our own money.",
-          "quote_hash": "36fde914d01b232d9a08329b603976f8be17b2b712cb30f3abd4d4fe1f8200e1"
+          "quote": "We are not venture capitalists. We are entrepreneurs who have built 🦄🦄🦄 and now invest our own money.",
+          "quote_hash": "daeb19fa556b15d08fff9c3734a59225b7aaf39a22eb9394a0d81b6c18896a64"
+        },
+        {
+          "source_id": "b32-nordic-ticket",
+          "source_url": "https://www.nordicmakers.vc/",
+          "source_title": "Nordic Makers | Investing in Nordic Startups",
+          "source_content_hash": "9f275a6feefdef467cbe706b590771338c531de89615738f3e152f9c7096f8e2",
+          "quote": "We invest €500K to €1M in Nordic B2B software companies in pre-seed/seed stage.",
+          "quote_hash": "9c84f94c32a806f7ed079c6b56eaf0807a3f8b96d0b528ba0bf74a26a4f78651"
+        },
+        {
+          "source_id": "b32-nordic-round",
+          "source_url": "https://www.the1news.com/public/index.php/article/copenhagens-good-tape-raises-eur600k-from-nordic-makers-to-complete-management-bu",
+          "source_title": "Copenhagen&#039;s Good Tape raises €600k from Nordic Makers to complete management buy-out, Zendesk co-founder joins board",
+          "source_content_hash": "3fd4b87bd319990f6b5bc27a36b1295a8eee1d13bd455295a3dfd68678d51fa6",
+          "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers,",
+          "quote_hash": "1139f7488bff3d9dc419390335d2ebe1ddd3c4063ffeb72810911351bf98824c"
         },
         {
           "source_id": "FISRC-f4f28d07c46f9b89",
           "source_url": "https://www.the1news.com/public/index.php/article/copenhagens-good-tape-raises-eur600k-from-nordic-makers-to-complete-management-bu",
-          "source_title": "Copenhagen's Good Tape raises €600k from Nordic Makers to complete management buy-out, Zendesk co-founder joins board",
-          "source_content_hash": "06dbb7683451bc15615a6f9ecf10e7d127f6963335a02e254534ad747ede42f2",
+          "source_title": "哥本哈根的Good Tape从Nordic Makers筹集60万欧元完成管理层收购，Zendesk联合创始人加入董事会",
+          "source_content_hash": "c5a680f8a4213d59eac02a2ccd10e6fa928fb688a30ba838edb27f705ae975f6",
           "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers, an investment group founded by former unicorn founders that invests its own capital in early-stage Nordic startups, with an average ticket size of €500k.",
           "quote_hash": "28f2c357fa1fd402baca7588ad6f8187763be332b0fde22f62fdaddef98ff657"
         }
       ],
-      "last_verified_at": "2026-10-04",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

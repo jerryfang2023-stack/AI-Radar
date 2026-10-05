@@ -139,15 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前核实仅限中投华创发布的级数 AI 融资签约信息；来源将郑强称为中广创投董事长兼总经理，但未给出其法律登记或管理主体信息。本档案不推断其与广东中广投资管理有限公司或其他相似名称机构的关系。",
-      "summary": "中投华创页面记载，级数 AI 与中广创投签署天使轮投资协议，并称该轮融资超过 1,000 万元。该页面将郑强称为中广创投董事长兼总经理。本档案仅保留“中广创投”这一交易披露名称，不将其映射为名称相近的其他机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "上市公司信息披露文件核验了广东中广创业投资管理有限公司的统一社会信用代码、登记编号P1002009及其作为基金管理人的身份；潮新闻将其公开交易简称写为“中广创投”，并报道其领投级数AI天使轮。公告还披露其担任温州中广精选三号基金管理人，但截至2026年8月该基金仍在募集且尚待备案，不能视为已投资组合。本档未将其管理基金的其他有限合伙人或相关投资实体并入该机构。",
+      "summary": "广东中广创业投资管理有限公司是一家珠海私募股权/创业投资基金管理机构，成立于2011年，法定代表人为郑强，私募基金管理人登记编号 P1002009。潮新闻在级数AI融资报道中将其简称为“中广创投”，称其领投2026年天使轮。粤海饲料2026年公告另披露该机构担任温州中广精选三号的普通合伙人和基金管理人；公告发布时该基金仍在募集，尚未完成备案。公开披露未提供完整策略或全量组合。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "法律主体",
+          "value": "统一社会信用代码91440400579983172G；企业类型为其他有限责任公司；成立于2011年8月9日，注册资本1,153.8万元，住所为珠海市横琴汇通三路108号1601办公，法定代表人为郑强。",
+          "source_id": "PROFILE-B13-INV-8cfa3a23263a5f-2"
+        },
+        {
+          "field": "manager_registration",
+          "label": "私募基金管理人登记",
+          "value": "上市公司公告载明该公司于2014年5月20日在中国证券投资基金业协 会完成私募基金管理人登记，编号P1002009。",
+          "source_id": "PROFILE-B13-INV-8cfa3a23263a5f-3"
+        },
+        {
+          "field": "fund_management",
+          "label": "基金管理活动",
+          "value": "上市公司公告披露该公司为温州中广精选三号的普通合伙人、执行事务合伙人和基金管理人；公告日基金仍处于募集期，尚待协会备案。",
+          "source_id": "PROFILE-B13-INV-8cfa3a23263a5f-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "中投华创于 2026 年 4 月的页面称，级数 AI 与中广创投签署天使轮投资协议，融资超过 1,000 万元，并将郑强称为中广创投董事长兼总经理；未披露其单独出资额。",
-          "source_id": "zhongguang-jishuai-angel-2026"
+          "description": "潮新闻报道，广东中广创业投资管理有限公司（中广创投）领投级数AI数千万元人民币天使轮融资，森锐科技参与战略投资与合作；未披露该机构单独出资额。",
+          "source_id": "PROFILE-B13-INV-8cfa3a23263a5f-1"
         },
         {
           "description": "融资来源记录：级数AI · 天使轮 · 2026-04-22 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -155,26 +174,38 @@
         }
       ],
       "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "当前核实仅限中投华创发布的级数 AI 融资签约信息；来源将郑强称为中广创投董事长兼总经理，但未给出其法律登记或管理主体信息。本档案不推断其与广东中广投资管理有限公司或其他相似名称机构的关系。",
       "sources": [
         {
-          "source_id": "zhongguang-jishuai-angel-2026",
-          "source_url": "https://www.zhongtouhuac.com/h-nd-4193.html",
-          "source_title": "喜讯 | 级数AI 智慧教育项目签约资方中广创投，引入超1000万天使轮融资 - 中投华创-不辜负每个创业梦想",
-          "source_content_hash": "7600c7249a770b19837eb7dcc0ae19667cb9fa0edcf9a496ae7e965325daaf60",
-          "quote": "投资签约仪式现场，级数 AI 创始人兼执行董事陈柯利先生，与中广创投董事长兼总经理郑强先生签署投资协议。",
-          "quote_hash": "8fa559480174366475a086e5500f8e20d7c932ee4397299f12e665c3f60ecc18"
+          "source_id": "PROFILE-B13-INV-8cfa3a23263a5f-1",
+          "source_url": "https://tidenews.com.cn/tmh_news.html?id=69fafce43854770001744a18",
+          "source_title": "4月数字教育：五部门印发“AI+教育”顶层设计文件 - 潮新闻",
+          "source_content_hash": "d0345849c55bb0e9ecaa0dc215582e0c6e771c3263fa763744569ba850bad071",
+          "quote": "4 月 13 日，广州级数人工智能科技有限公司（级数 AI）宣布完成数千万元人民币天使轮融资。本轮融资由广东中广创业投资管理有限公司（中广创投）领投，广州市森锐科技股份有限公司（森锐科技）参与战略投资与合作。",
+          "quote_hash": "a9efeeae4d11336a1d9838a013c64ff3079e979d36cb66f6f809fb2d0e92e1c5"
         },
         {
-          "source_id": "zhongguang-jishuai-round-size-2026",
-          "source_url": "https://www.zhongtouhuac.com/h-nd-4193.html",
-          "source_title": "喜讯 | 级数AI 智慧教育项目签约资方中广创投，引入超1000万天使轮融资 - 中投华创-不辜负每个创业梦想",
-          "source_content_hash": "7600c7249a770b19837eb7dcc0ae19667cb9fa0edcf9a496ae7e965325daaf60",
-          "quote": "超1000万天使轮融资",
-          "quote_hash": "077fa134da7df9aaf67acc8dbe462a03ae381589fa58e3a9356e3b69d9a6225d"
+          "source_id": "PROFILE-B13-INV-8cfa3a23263a5f-2",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225465045.PDF",
+          "source_title": "广东粤海饲料集团股份有限公司关于参与认购私募基金份额暨与专业投资机构合作投资的公告",
+          "source_content_hash": "5fbaef19aa96e49960da84d1c7998001749100ae65efdd7c79de1110c7f80cc2",
+          "quote": "二、拟合作各方基本情况 （一）普通合伙人/执行事务合伙人/基金管理人 1、企业名称：广东中广创业投资管理有限公司 2、统一社会信用代码：91440400579983172G 3、企业类型：其他有限责任公司 4、成立时间：2011 年8月9日 5、注册资本：1,153.8 万元人民币 6、住所：珠海市横琴汇通三路 108 号1601 办公 7、法定代表人：郑强",
+          "quote_hash": "e0b1c35d35b49df1fa698dff2173ceaef0272aa0953699cec26956fb2ddf137d"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-8cfa3a23263a5f-3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225465045.PDF",
+          "source_title": "广东粤海饲料集团股份有限公司关于参与认购私募基金份额暨与专业投资机构合作投资的公告",
+          "source_content_hash": "5fbaef19aa96e49960da84d1c7998001749100ae65efdd7c79de1110c7f80cc2",
+          "quote": "广东中广创业投资管理有限公司已于2014年5月20日在中国证券投资基金业协 会完成私募基金管理人登记，私募基金管理人登记编号 P1002009。",
+          "quote_hash": "2e012b23cff724187c74afd12c501d2c6621dfa44fbaae55d860bd6c210996d5"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-8cfa3a23263a5f-4",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225465045.PDF",
+          "source_title": "广东粤海饲料集团股份有限公司关于参与认购私募基金份额暨与专业投资机构合作投资的公告",
+          "source_content_hash": "5fbaef19aa96e49960da84d1c7998001749100ae65efdd7c79de1110c7f80cc2",
+          "quote": "全体合伙人一致同意，于本基金存续期间，由普通合伙人广东 中广创业投资管理有限公司担任本基金的基金管理人，其他合伙人不参与基金日常管 理事务。",
+          "quote_hash": "e8004bc9d0e151d21081b36212924f105b1fa7247484082ed936116bebc9bbf8"
         },
         {
           "source_id": "FISRC-577050f06608d2f8",
@@ -185,7 +216,7 @@
           "quote_hash": "bb7d463b1abf135207563fea4a59505e992fa17d64caf81e8b5e8494512faa12"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

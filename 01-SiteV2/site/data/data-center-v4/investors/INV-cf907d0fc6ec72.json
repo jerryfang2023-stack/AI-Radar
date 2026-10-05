@@ -139,33 +139,116 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略及基金信息据Betaworks官网；All Hands AI仅为公开融资报道支持的组合案例，不代表完整投资组合。",
+      "summary": "Betaworks 是一家以主题研究驱动的早期投资机构，官网称其投资 pre-seed 与 seed 阶段，关注 AI/ML、游戏和去中心化技术，并以 Camp 计划开展投资及产品孵化。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed、Seed。",
+          "source_id": "B23-BETA-COMPANIES"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "典型投资金额",
+          "value": "官网披露通常单笔为25万至75万美元。",
+          "source_id": "B23-BETA-COMPANIES"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI/ML、游戏和去中心化技术。",
+          "source_id": "B23-BETA-FOCUS"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资计划",
+          "value": "Camp为主题式分批投资与产品开发计划。",
+          "source_id": "B23-BETA-CAMP"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-07-22",
+          "description": "Betaworks 宣布完成 6600 万美元 Fund 3.0，定位为 pre-seed/seed 阶段基金。",
+          "source_id": "B23-BETA-FUND-DATE"
+        }
+      ],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 All Hands AI 种子轮 本轮参投。",
+          "description": "TechCrunch 报道 Betaworks 参与 All Hands AI 种子轮融资；这是公开报道的单一案例。",
+          "source_id": "B23-BETA-TECHCRUNCH"
+        },
+        {
+          "description": "融资来源记录：All Hands AI · 种子轮 · 2024-09-05 · 本轮参投 · 500万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9dd8630200082b4c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.betaworks.com/",
+          "url": "https://www.betaworks.com/",
+          "source_id": "B23-BETA-COMPANIES"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-9dd8630200082b4c",
+          "source_id": "B23-BETA-COMPANIES",
+          "source_url": "https://www.betaworks.com/companies",
+          "source_title": "Companies",
+          "source_content_hash": "165aede5d741b05c8f51cbe1aa7fa91329e25fb4505a9c8ced61ef071e4337b9",
+          "quote": "We invest at pre-seed and seed stage and our typical check size ranges from $250,000 to $750,000.",
+          "quote_hash": "f16f28b05218d6d9b18178e19f6424b5e6598b037820bd56ddcf38fe0f067a03"
+        },
+        {
+          "source_id": "B23-BETA-TECHCRUNCH",
           "source_url": "https://techcrunch.com/2024/09/05/all-hands-ai-raises-5m-to-build-open-source-agents-for-developers/",
           "source_title": "All Hands AI raises $5M to build open source agents for developers | TechCrunch",
           "source_content_hash": "bb0a34581094ded4c006e61afa52d50a1301aff69bd8fed22eed4cf5af799649",
           "quote": "Pillar VC, Betaworks and Rebellion also participated",
           "quote_hash": "509f9a56c7d4ae5e9b5da3ea43ab9db546d3708f1403925303c62b2dc7dd9fbe"
+        },
+        {
+          "source_id": "B23-BETA-FOCUS",
+          "source_url": "https://www.betaworks.com/companies",
+          "source_title": "Companies",
+          "source_content_hash": "165aede5d741b05c8f51cbe1aa7fa91329e25fb4505a9c8ced61ef071e4337b9",
+          "quote": "Betaworks is thematic by design, with a track record of investing in AI/ML technologies across a variety of subcategories and modalities.",
+          "quote_hash": "5e5e18e116ec8662d5c41f3c47d0b6779e00a933e0b060ad8890f0a15c401996"
+        },
+        {
+          "source_id": "B23-BETA-CAMP",
+          "source_url": "https://www.betaworks.com/companies",
+          "source_title": "Companies",
+          "source_content_hash": "165aede5d741b05c8f51cbe1aa7fa91329e25fb4505a9c8ced61ef071e4337b9",
+          "quote": "We also go deep into new categories through Camp , our cohort-based investment and product development program.",
+          "quote_hash": "4ab44e313de94c4c57d50a44f182113d4a301db20335245b4e22e88dcef99398"
+        },
+        {
+          "source_id": "B23-BETA-FUND-DATE",
+          "source_url": "https://www.betaworks.com/writing/announcing-betaworks-fund-3-0",
+          "source_title": "Announcing Betaworks Fund 3.0",
+          "source_content_hash": "19c53bdc1c7a5dd5c70b309c17779a81fe448664a3d9bd1b19e126ec16ad755b",
+          "quote": "7.22.2025 Announcing Betaworks Fund 3.0 Jordan Crook Today, we’re thrilled to announce that we’ve closed $66 million for Betaworks Fund 3.0 — a pre-seed/seed stage venture fund",
+          "quote_hash": "7d00167dbcb21830305c8900ac396f1b54d1a2794a3152f24e98509110274241"
+        },
+        {
+          "source_id": "FISRC-9dd8630200082b4c",
+          "source_url": "https://techcrunch.com/2024/09/05/all-hands-ai-raises-5m-to-build-open-source-agents-for-developers/",
+          "source_title": "All Hands AI 获 500 万美元融资，为开发者构建开源 AI 智能体",
+          "source_content_hash": "98fe8fb23998f253",
+          "quote": "Pillar VC, Betaworks and Rebellion also participated",
+          "quote_hash": "509f9a56c7d4ae5e9b5da3ea43ab9db546d3708f1403925303c62b2dc7dd9fbe"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "Betaworks 是一家以主题研究驱动的早期投资机构，官网称其投资 pre-seed 与 seed 阶段，关注 AI/ML、游戏和去中心化技术，并以 Camp 计划开展投资及产品孵化。"
     }
   }
 }

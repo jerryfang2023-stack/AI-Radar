@@ -139,15 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "UnternehmerTUM 官方消息将 helloworld 列为 Kuro 融资参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段来自 helloworld 公开公司页；融资活动来自被投企业 Kuro 的官方新闻稿。网站本身未提供足以确认管理人或法律实体的更多资料。",
+      "summary": "helloworld 的公开公司页自述为种子前及种子轮投资者；UnternehmerTUM 关于 Kuro 1,000 万欧元融资的公告列 helloworld 为参投方。",
+      "facts": [
+        {
+          "field": "self_described_investment_stage",
+          "label": "公开页面自述的投资阶段",
+          "value": "helloworld 的公开公司页将其定位为种子前及种子轮投资者。",
+          "source_id": "PROFILE-B5-INV-85ef2ff8a659e9-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "UnternehmerTUM 官方消息披露 helloworld 参与 Kuro 融资。",
-          "source_id": "PROFILE-621d50167b67a1dd7284"
+          "description": "UnternehmerTUM 关于 Kuro 融资的官方新闻稿将 helloworld 列为参投方之一；未披露其投资金额。",
+          "source_id": "PROFILE-B5-INV-85ef2ff8a659e9-2"
         },
         {
           "description": "融资来源记录：Kuro Technology · 早期融资 · 2026-10-02 · 本轮参投 · €10 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,12 +164,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-621d50167b67a1dd7284",
+          "source_id": "PROFILE-B5-INV-85ef2ff8a659e9-1",
+          "source_url": "https://lu.linkedin.com/company/helloworldvc",
+          "source_title": "helloworld | LinkedIn",
+          "source_content_hash": "bcd6cfe2fb5200bb3f5ba5a487a9df9f9a8359c233689b05f8526279a6e1989c",
+          "quote": "Pre-seed and seed investor",
+          "quote_hash": "6332dd0ad0634fa925982337b105c65182dbb7d164d205b6263b979f0a5b6c3c"
+        },
+        {
+          "source_id": "PROFILE-B5-INV-85ef2ff8a659e9-2",
           "source_url": "https://www.unternehmertum.de/presse/10-mio-eur-fuer-kuro-deutschlands-groesste-generalunternehmer-setzen-auf-das-berliner-ki-unternehmen",
           "source_title": "10 Mio. EUR für Kuro: Deutschlands größte… | UnternehmerTUM",
           "source_content_hash": "2f71cb78232e37114609c4bc2c6bccd13df1b7597e20ab17e3f69f42984c4f41",
-          "quote": "ament für Generalunternehmer weiter aus. An der Runde beteiligen sich auch Foundamental, Realyze Ventures und helloworld. Von den zwölf bestehenden Kunden zählen bereits sechs zu den 20 größten Generalunternehmern im deutschsprachigen Raum. Europa baut wieder: Straßen, Wohnungen, Rechenzentren, Energie, Verteidigung. Allein 2025 investier",
-          "quote_hash": "f1a14c66311be9021f9a475d050d7699df50378df86437ed3fdff11d198b9d1b"
+          "quote": "An der Runde beteiligen sich auch Foundamental, Realyze Ventures und helloworld.",
+          "quote_hash": "58bdfc0210b42d637d76832d4e70b84a1cde5af8a1af46df6cc27f94669b9af8"
         },
         {
           "source_id": "FISRC-8bd4513374ef496a",
@@ -173,7 +188,7 @@
           "quote_hash": "a6a5778a2aae0bc417fd88423220413aab5919ec269c19b9bbccd92eb4369f66"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "参与关系依据被投企业 CloudNC 官方公告；未归纳其完整投资组合。",
-      "summary": "CloudNC 官方融资公告将 Entrepreneur First 列为其 2026 年融资参与方。本档仅记录该公开案例，不将单笔披露扩展为完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构模式来自 Entrepreneurs First 官网自述；CloudNC 融资参与关系来自发行方公告。",
+      "summary": "Entrepreneurs First 官网将其描述为全球创业人才投资机构，并称其通过“Talent Investing”支持创始人。CloudNC 官方融资公告将 Entrepreneur First 列为2026年融资参与方；本档仅记录机构模式及该项公开案例。",
+      "facts": [
+        {
+          "field": "organization_model",
+          "label": "官网披露的机构模式",
+          "value": "Entrepreneurs First 自称为全球创业人才投资机构，并把该模式称为 Talent Investing。",
+          "source_id": "PROFILE-S-INV-64dd020b2f4d09-2"
+        },
+        {
+          "field": "founder_support",
+          "label": "官网披露的支持机制",
+          "value": "Entrepreneurs First 项目为每位创始人安排一位 Talent Investor，协助其提高创业成功机会。",
+          "source_id": "PROFILE-S-INV-64dd020b2f4d09-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -159,9 +172,25 @@
           "source_content_hash": "e50d348dd4894165d8008e57268e20fad7ae1fdcc8a77273b2552831c176085d",
           "quote": "res, a US-based venture investor, with participation from other investors including Calculus Venture Capital, Entrepreneur First and LM Ventures, Lockheed Martin’s venture capital fund. CloudNC will use the investment to further catalyze the acceleration of advanced manufacturing by enabling more machine shops to adopt its AI solutions, a",
           "quote_hash": "8d369b69b7201d03c39fedc01d3db1ed8a5344bb771fa3bc78b03850003e6a5e"
+        },
+        {
+          "source_id": "PROFILE-S-INV-64dd020b2f4d09-2",
+          "source_url": "https://www.joinef.com/about/",
+          "source_title": "Investing in Talent | Entrepreneurs First",
+          "source_content_hash": "b6a310cdad40fd7630f1066749ddb1712e0bf8fbe58f32abb57fc159d619e7be",
+          "quote": "Entrepreneurs First is a category-defining global investor in entrepreneurial talent",
+          "quote_hash": "d296f067e37c43a50739b83b129c8925f2dda6ed24963e0e7a2d9acf102507c8"
+        },
+        {
+          "source_id": "PROFILE-S-INV-64dd020b2f4d09-3",
+          "source_url": "https://www.joinef.com/faqs/",
+          "source_title": "Frequently Asked Questions | Entrepreneurs First",
+          "source_content_hash": "be3673c6e6519caceb1fcab51c704165475a0c909fdaffe0c4700f1501945f38",
+          "quote": "every founder on our programs will work with a Talent Investor to maximize their chances of success during the program",
+          "quote_hash": "7cf55006e1486fb2721e2ad96dcc7ce50453762082c58f6ffc3c0a6cfc3f41c9"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

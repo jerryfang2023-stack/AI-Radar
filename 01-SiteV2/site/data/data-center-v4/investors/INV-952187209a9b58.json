@@ -123,29 +123,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Ayar Labs 官方 E 轮公告将 Advent Global Opportunities 列为既有财务投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略来自 Advent 官网，Ayar Labs 的公告只支持其既有财务投资者身份。",
+      "summary": "Advent Global Opportunities 官网将其描述为 Advent 的全球投资平台，管理集中组合，覆盖公开市场及部分非上市公司。Ayar Labs 2026 年 Series E 公告将其列为既有财务投资者，而非本轮新投资者。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资策略",
+          "value": "Advent 官网称该平台以全球主题方式投资，持有精选上市及部分非上市公司。",
+          "source_id": "PROFILE-B8-INV-952187209a9b58-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Ayar Labs 官方公告将 Advent Global Opportunities 列为既有财务投资机构。",
+          "description": "Ayar Labs 2026 年 Series E 公告将 Advent Global Opportunities 列为既有财务投资者；未披露其是否参与该轮或其单独出资额。",
+          "source_id": "PROFILE-B8-INV-952187209a9b58-1"
+        },
+        {
+          "description": "融资来源记录：Ayar Labs · 历史轮次未披露 · 既有财务投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5b6c7c4ae002a992"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-5b6c7c4ae002a992",
+          "source_id": "PROFILE-B8-INV-952187209a9b58-1",
           "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
           "source_title": "Ayar Labs Closes $500M Series E, Accelerates Volume Production of Co‑Packaged Optics",
           "source_content_hash": "ca2199749f0afba3fbf0c6139eb12a83a1c933879686270714bfcd02449d1a14",
-          "quote": "Authority (QIA), Sequoia Global Equities, and 1789 Capital. They join existing financial institutions such as Advent Global Opportunities, Boardman Bay Capital Management, IAG Capital Partners, Light Street Capital, and Playground Global, and existing strategic investors, AMD Ventures, and NVIDIA. “Today’s AI infrastructure buildout is on",
-          "quote_hash": "234f230a17968b09368679ad7f338b4f775684ae5365991347497ed2e2f9670f"
+          "quote": "existing financial institutions such as Advent Global Opportunities, Boardman Bay Capital Management",
+          "quote_hash": "21d5cc595fac1ab39afdf41706577146b88c5e5c76ca5ee34cc84c9c9d620a2d"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-952187209a9b58-2",
+          "source_url": "https://www.adventinternational.com/investment-strategy/advent-global-opportunities/",
+          "source_title": "Advent Global Opportunities &mdash; Advent International",
+          "source_content_hash": "17ee0b2affbccadee4786c94b45a9fa5495ce885ab796f7fea274b9556f020af",
+          "quote": "Advent Global Opportunities is our global investment platform, focused on a concentrated portfolio of public and select private companies.",
+          "quote_hash": "4f3310f158624a593d532fc46034bf9634c76cd89211816fb99e62e12c95d136"
+        },
+        {
+          "source_id": "FISRC-5b6c7c4ae002a992",
+          "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+          "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+          "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+          "quote": "They join existing financial institutions such as Advent Global Opportunities, Boardman Bay Capital Management, IAG Capital Partners, Light Street Capital, and Playground Global",
+          "quote_hash": "66f916ca657af50c0ff86226d63523ee9d7017bbcb51c0eadbc6a69a5145aa1b"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

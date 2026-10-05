@@ -139,37 +139,56 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资关系依据 Pensive 融资报道；职务依据 Robinhood 投资者关系页面；不延伸为完整个人投资组合。",
-      "summary": "Pensive 融资报道将 Vlad Tenev 列为种子轮个人投资者，并称其为 Robinhood 联合创始人兼 CEO；Robinhood 投资者关系页面确认其现任董事长、CEO 与总裁。本档只记录该人物身份和此项投资披露。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "现职采用 Robinhood 官方投资者关系页面；Pensive 融资参与采用该融资报道。未把公开披露扩展为完整个人投资组合。",
+      "summary": "Robinhood 投资者关系页面称 Vlad Tenev 为公司董事长、CEO 与总裁；Pensive 种子轮融资报道将他列为个人投资者。本档只记录人物身份与这一项投资披露。",
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "Robinhood 官方页面列明的职务",
+          "value": "Vlad Tenev 是 Robinhood Markets 的董事长、CEO 与总裁。",
+          "source_id": "PROFILE-A2-INV-6944e7edf6d95e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "Pensive 种子轮融资报道将 Vlad Tenev 列为个人投资者。",
+          "source_id": "PROFILE-A2-INV-6944e7edf6d95e-2"
+        },
+        {
+          "description": "融资来源记录：Pensive · 种子轮 · 2026-02-27 · 本轮参投 · $6.8M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4c101bd2bd412982"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-4c101bd2bd412982",
-          "source_url": "https://en.wowtale.net/2026/02/27/233611/",
-          "source_title": "Pensive Raises $6.8M Seed Round to Scale AI-Assisted Grading and Personalized Learning - WOWTALE",
-          "source_content_hash": "16316c1346cd82f2527d5292937a3aa6f47d3eafc34d336b7ae5a61ec89e2ef9",
-          "quote": "Reach Capital , Anti Fund , a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures , Vela Partners , Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others. The company is also opening its platform to all instructors, following a closed beta period during wh",
-          "quote_hash": "3fea864a3a94cd1326cd3d333d4a6df7cbe04c20ded62c0bb6c1328fdf91742f"
-        },
-        {
-          "source_id": "PROFILE-d4a3e66e793ab8a8c8f0",
+          "source_id": "PROFILE-A2-INV-6944e7edf6d95e-1",
           "source_url": "https://investors.robinhood.com/management/vlad-tenev",
           "source_title": "Vlad Tenev | Management | Robinhood Markets, Inc.",
           "source_content_hash": "0d103870f1005428841e0b1617879d7083dbda491af068e62143fc15f971e846",
-          "quote": "Vlad Tenev | Management | Robinhood Markets, Inc. Skip to main navigation Overview Press Releases Events Financials Back Quarterly Results SEC Filings Annual Reports Monthly Metrics Stock Info Back Stock Quote & Chart Historical P",
-          "quote_hash": "6543c4c76e53a84156fb152def586b6f3a6f9de3a161c7aa03e24285949b6730"
+          "quote": "Vlad Tenev is Chairman, CEO, and President of Robinhood Markets",
+          "quote_hash": "74d4092694985fb73016f4f588f75c21507102bbe7f93bb9c3513c89a0c844db"
+        },
+        {
+          "source_id": "PROFILE-A2-INV-6944e7edf6d95e-2",
+          "source_url": "https://en.wowtale.net/2026/02/27/233611/",
+          "source_title": "Pensive Raises $6.8M Seed Round to Scale AI-Assisted Grading and Personalized Learning - WOWTALE",
+          "source_content_hash": "18ec0bb71fd5b2b35046c6a193e2400cb803a29352b91570852cfb301a85b4df",
+          "quote": "Vlad Tenev (co-founder and CEO of Robinhood)",
+          "quote_hash": "8545927c64766077236d267ab69d52f720e097405592fc32ba1fb6e555464f2a"
+        },
+        {
+          "source_id": "FISRC-4c101bd2bd412982",
+          "source_url": "https://en.wowtale.net/2026/02/27/233611/",
+          "source_title": "Pensive 完成 680 万美元种子轮融资，以扩展 AI 辅助评分与个性化学习",
+          "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
+          "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
+          "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [
         {
@@ -177,11 +196,11 @@
           "title": "董事长、CEO、总裁",
           "period": "现任（官网页面）",
           "description": "Robinhood 投资者关系页面列明的现任职务。",
-          "source_id": "PROFILE-d4a3e66e793ab8a8c8f0"
+          "source_id": "PROFILE-A2-INV-6944e7edf6d95e-1"
         }
       ],
       "education": [],
-      "experience_summary": ""
+      "experience_summary": "Robinhood Markets 官方页面列明的现任职务。"
     },
     "translations": {
       "zh-CN": {

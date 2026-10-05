@@ -139,15 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "NeuralTrust 官方公告将 Seaya 列为本轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位和融资参与分别来自 Seaya 官网与被投企业 NeuralTrust 的官方融资公告。",
+      "summary": "Seaya 官网将 Seaya Ventures 定位为面向欧洲科技公司的基金；NeuralTrust 官方公告将 Seaya 列为 2,000 万美元融资的参投方之一。",
+      "facts": [
+        {
+          "field": "self_described_focus",
+          "label": "官网自述的投资定位",
+          "value": "Seaya 官网称 Seaya Ventures 是面向欧洲使命驱动型创始人的科技基金。",
+          "source_id": "PROFILE-B5-INV-84ac9bd4d9da2b-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "NeuralTrust 官方融资公告将 Seaya 列为投资方。",
-          "source_id": "PROFILE-ac02caf74875794db83f"
+          "description": "NeuralTrust 官方公告称其 2,000 万美元融资由 Alstin Capital 领投，并有 Seaya 等机构参投；未披露 Seaya 单独出资额。",
+          "source_id": "PROFILE-B5-INV-84ac9bd4d9da2b-2"
         },
         {
           "description": "融资来源记录：NeuralTrust · 种子轮 · 2026-06-17 · 本轮参投 · €17.2 million ($20 million)。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,12 +164,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-ac02caf74875794db83f",
+          "source_id": "PROFILE-B5-INV-84ac9bd4d9da2b-1",
+          "source_url": "https://seaya.vc/",
+          "source_title": "Home - Seaya",
+          "source_content_hash": "99cdde0f795074fc6e70835b024594762192425d5c29d94b993250531f0682d4",
+          "quote": "Seaya Ventures is a technology-first fund investing in outstanding and mission driven founders of European companies.",
+          "quote_hash": "8db5bde39437e42b82b5e877c638c2843106ddadf5eb3fd0c5c85c9c7a115cf6"
+        },
+        {
+          "source_id": "PROFILE-B5-INV-84ac9bd4d9da2b-2",
           "source_url": "https://neuraltrust.ai/news/neuraltrust-raises-20m",
           "source_title": "NeuralTrust raises $20M to secure the growing swarm of AI agents in the enterprise | NeuralTrust",
           "source_content_hash": "2fb2a80a458d4e07ef6a2e1d26d967064b17ab43b719d7ae88a18554eb158343",
-          "quote": "mous AI systems into production. The round was led by Alstin Capital, with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves, the venture capital fund of IESE Business School. NeuralTrust is also backed by public funding from the European Innovation Council and Spain&#x27;s",
-          "quote_hash": "78cc44bb6f1914c34252f38bcbfc41388c499ba067277faafa5e9013f44b0357"
+          "quote": "The round was led by Alstin Capital, with participation from VentureFriends, Seaya, Kibo Ventures",
+          "quote_hash": "25f085e3ae65f34f21f84c217f0dc09086dd06a5ab746c24d56d71dea12581e5"
         },
         {
           "source_id": "FISRC-7a0d2741d3dddcef",
@@ -173,7 +188,7 @@
           "quote_hash": "ae1bb77e5a724b53c15c856ac390016abe90e7b84758fc53ffce26d2683c610d"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

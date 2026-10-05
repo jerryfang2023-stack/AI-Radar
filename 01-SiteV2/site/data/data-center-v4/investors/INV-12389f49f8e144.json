@@ -145,10 +145,26 @@
           "label": "来源核验",
           "value": "Schneider Electric 2018 年新闻稿披露计划在孵化项目、创业者合作和专业基金上投资 3 亿至 5 亿欧元。",
           "source_id": "PROFILE-12389f49f8e144-1"
+        },
+        {
+          "field": "venture_platform",
+          "label": "SE Ventures 官网披露的投资方式",
+          "value": "SE Ventures 官网称其通过传统风险投资和商业协同支持创业者，并依托能源管理与自动化企业生态。",
+          "source_id": "PROFILE-R-INV-12389f49f8e144-2"
+        },
+        {
+          "field": "venture_fund_metrics",
+          "label": "SE Ventures 官网当前披露的基金指标",
+          "value": "SE Ventures 官网当前页面展示承诺资本 €1B（10 亿欧元）、60 余家活跃组合公司及 12 项退出；该指标归属于 SE Ventures。",
+          "source_id": "PROFILE-R-INV-12389f49f8e144-3"
         }
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "SE Ventures 当前公开组合页面将 AIDash、Augury、AutoGrid 等列为组合公司。",
+          "source_id": "PROFILE-R-INV-12389f49f8e144-4"
+        },
         {
           "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮参投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b7537d2258bce6eb"
@@ -156,8 +172,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Schneider Electric 2018 年新闻稿披露了面向孵化项目、创业者合作及专业基金的投资计划；仅确认历史创新投资活动，不据此推断当前项目状态。",
+      "coverage_status": "researched",
+      "coverage_note": "通过当前 SE Ventures 官网补充核验 Schneider Electric 关联的风险投资平台和当前组合概况；页面披露的指标归属于 SE Ventures，不外推为母公司的直接投资金额。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -167,10 +183,34 @@
         {
           "source_id": "PROFILE-12389f49f8e144-1",
           "source_url": "https://www.se.com/ww/en/about-us/newsroom/news/press-releases/schneider-electric-boosts-its-innovation-ecosystem-with-%E2%80%98schneider-electric-ventures%E2%80%99-to-identify-nurture-and-support-bold-ideas-5d91dd5680564a226033cb19/",
-          "source_title": "Schneider Electric boosts its innovation ecosystem with ‘Schneider Electric Ventures’ to identify, nurture and support bold ideas",
-          "source_content_hash": "fde2494002cc17f7e58fa4dc728f6b74f6f2eb87a733f016e419dbea91c7a683",
+          "source_title": "Schneider Electric boosts its innovation ecosystem with ‘Schneider Electric Ventures’ to identify, nurture and support bold ideasSchneider Electric boosts its innovation ecosystem with ‘Schneider Electric Ventures’ to identify, nurture and support bold ideas",
+          "source_content_hash": "2f577e9f4ba0ed6926becb531e0e7ca6a79f2e2f4d76b1f60e3806efd93af8f5",
           "quote": "Schneider Electric has committed to investing between 300 and 500 million euros in the coming years in incubation projects, partnerships with entrepreneurs, and specialized funds",
           "quote_hash": "11dc6658fa5386a1fa729f10a94504ba1acda6c196ed3fa45a9f636495b4a490"
+        },
+        {
+          "source_id": "PROFILE-R-INV-12389f49f8e144-2",
+          "source_url": "https://www.seventures.com/home/",
+          "source_title": "SE Ventures | Climate Tech Industrial Tech | Venture Capital Fund | Schneider Electric",
+          "source_content_hash": "0633d96aeab227731c28f73e15194b97b88249b7d6a31c5c2c80478d5ab5d34b",
+          "quote": "We back big ideas and bold entrepreneurs seeking to gain commercial superpowers, combining traditional venture capital and financial alignment with the scale and customer access of a global energy management and automation leader.",
+          "quote_hash": "bb775ceb108486157f4cd45c6caa00ebebd632e80a84eaf40c127f7750ce5a90"
+        },
+        {
+          "source_id": "PROFILE-R-INV-12389f49f8e144-3",
+          "source_url": "https://www.seventures.com/home/",
+          "source_title": "SE Ventures | Climate Tech Industrial Tech | Venture Capital Fund | Schneider Electric",
+          "source_content_hash": "0633d96aeab227731c28f73e15194b97b88249b7d6a31c5c2c80478d5ab5d34b",
+          "quote": "€1B Committed Capital Committed Capital 60+ Active Companies Active Companies 12 Exits Exits",
+          "quote_hash": "8ea2ffaa40f3907661038ff498e49ca3d00cba801007555b83c998e1d6766102"
+        },
+        {
+          "source_id": "PROFILE-R-INV-12389f49f8e144-4",
+          "source_url": "https://www.seventures.com/portfolio/",
+          "source_title": "Startup Portfolio - SE Ventures Schneider Electric Venture Capital Fund | Schneider Electric",
+          "source_content_hash": "7781a2a943f489ea64434454695605301b3e7df3e5bb3f1f095f8e8bd6a86b5a",
+          "quote": "AIDash Learn More AlpSemi Learn More Aplines Aquant Learn More Augury Learn More AutoGrid Learn More",
+          "quote_hash": "a3abf8f0b7c2c3d5f6ee16f3ceb9217af1ed9f111168c8d850245b9bb20ff0ee"
         },
         {
           "source_id": "FISRC-b7537d2258bce6eb",
@@ -181,7 +221,7 @@
           "quote_hash": "9a7831070bdba5f579d20ed35e09eb940bab592d983a2cf655934c7fc8b4c706"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

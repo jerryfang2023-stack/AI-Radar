@@ -155,23 +155,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Harmonic Growth Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "investment_model",
+          "label": "官网披露的成长阶段投资模式",
+          "value": "Harmonic Growth Partners官网称其开展扩张阶段/成长型风险投资，由投资团队主导融资并配备前风险投资企业CEO参与董事会和管理建议。",
+          "source_id": "PROFILE-S-INV-564b49c5c6b41c-1"
+        },
+        {
+          "field": "fund_issuer",
+          "label": "SEC备案列示的基金发行人",
+          "value": "SEC Form D列示的发行人为Harmonic Growth Partners II, L.P.。",
+          "source_id": "PROFILE-S-INV-564b49c5c6b41c-2"
+        },
+        {
+          "field": "general_partner",
+          "label": "SEC备案列示的普通合伙人",
+          "value": "SEC Form D将Harmonic Advisors II, LLC列为Harmonic Growth Partners II, L.P.的普通合伙人。",
+          "source_id": "PROFILE-S-INV-564b49c5c6b41c-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "融资来源记录：Relay · 轮次未披露 · 2026-09-30 · 本轮参投 · $36 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c0d67da86b5ae704"
-        },
-        {
-          "description": "融资来源记录：Relay · 轮次未披露 · 2026-09-30 · 本轮参投 · $36 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0fa745b79d77cfe5"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-S-INV-564b49c5c6b41c-1",
+          "source_url": "https://harmonicgp.com/",
+          "source_title": "harmonicgp.com",
+          "source_content_hash": "ecbaaececbd6b5cb56190469dfc43203db0b56ce8c848963e54b7ebe1bcbf601",
+          "quote": "Harmonic Growth Partners offers a distinctive and advantaged model for expansion-stage/growth-venture investing: an experienced investment team to lead financings, paired with a former venture-backed CEO to join the board & advise management teams.",
+          "quote_hash": "871a453ab5805338d229c9fc9f17005f840e6b06e9c825402152c1d3b0701016"
+        },
+        {
+          "source_id": "PROFILE-S-INV-564b49c5c6b41c-2",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2063919/000206391926000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D/A",
+          "source_content_hash": "3f4683cdf653c4cfca9c702ea88e4d07bffecaeba46441270f8fd198b3c25dc8",
+          "quote": "Name of Issuer Harmonic Growth Partners II, L.P.",
+          "quote_hash": "8f192801544d5799eacce20b2311f4a15479887ce2bb9ed1b8fbed7dc726ebfd"
+        },
+        {
+          "source_id": "PROFILE-S-INV-564b49c5c6b41c-3",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2063919/000206391926000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D/A",
+          "source_content_hash": "3f4683cdf653c4cfca9c702ea88e4d07bffecaeba46441270f8fd198b3c25dc8",
+          "quote": "General Partner of the Issuer",
+          "quote_hash": "9fab65e2da82733506e185c1c51f3bf03a21953029a4bd33182cde6932694db0"
+        },
         {
           "source_id": "FISRC-c0d67da86b5ae704",
           "source_url": "https://www.prnewswire.com/news-releases/relay-raises-36-million-in-new-funding-from-industry-leaders-to-drive-frontline-safety-productivity-and-operational-intelligence-302893591.html",
@@ -189,6 +226,11 @@
           "quote_hash": "cd419d6dd96120c67c70dcd08f4b289c991cb2e098c13540d6c8739b6bd8e0d1"
         }
       ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "summary": "Harmonic Growth Partners官网将其投资模式描述为扩张阶段/成长型风险投资：由投资团队主导融资，并配备曾任风险投资企业CEO的CEO Partners参与董事会及经营建议。SEC Form D另列出基金发行人Harmonic Growth Partners II, L.P.及其普通合伙人Harmonic Advisors II, LLC；基金实体与管理品牌分别记录。",
+      "coverage_note": "投资策略和团队模式来自机构官网；基金名称及普通合伙人关系来自SEC Form D。未据此推断该基金的当前规模或将基金实体与品牌合并。",
       "last_verified_at": "2026-10-04"
     }
   }

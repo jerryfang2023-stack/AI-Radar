@@ -164,10 +164,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位和投资方向来自耀途资本官网；数巅智能融资参与来自中国日报报道。官网页面的基金支数、管理规模和组合数量未写入，以免将无明确统计日期的数据作为当前指标。",
+      "summary": "耀途资本官网将其定位为高科技领域风险投资基金，当前公开方向包括生成式 AI 硬件与软件基础设施及应用、自动驾驶、机器人、智能制造和 AI4S。中国日报报道将耀途资本列入数巅智能历轮融资投资方。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的基金定位和领域",
+          "value": "耀途资本官网自述为高科技风险投资基金，布局生成式 AI 硬件与软件基础设施及应用、自动驾驶、机器人、智能制造和 AI4S。",
+          "source_id": "PROFILE-COLLECT-INV-beba067ca6c724-K-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -188,6 +195,14 @@
           "source_content_hash": "83e6088999d661700704db78e4b7a2ce634ea60cd062431cda12fff77c8cc0f9",
           "quote": "数巅智能已完成数亿元多轮融资，投资方涵盖君联资本、赛富基金、中国中车、中石油昆仑资本、耀途资本、济和创投、红鸟基金、中关村科学城、北京市信息产业发展投资基金等知名机构。",
           "quote_hash": "e3549fb86c70ab59e7bba116769dd020a96e66db5bb6d6308113bffcc4df1b63"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-beba067ca6c724-K-2",
+          "source_url": "https://www.glory-ventures.com/",
+          "source_title": "耀途资本：与科技创新者同行",
+          "source_content_hash": "34cd807c83620c66b12b9e977de11896c758c0007e680eca7f05648b4ed4cca8",
+          "quote": "耀途资本致力于成为高科技赛道顶级风险投资基金",
+          "quote_hash": "7d7be88760842a6534d8f70b383285bacd238a9db5651bdb82ff5024b8d22c0c"
         },
         {
           "source_id": "FISRC-50b5e9b4a45a40c4",

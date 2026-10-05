@@ -138,11 +138,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "GitHub 官方文章将 American Express 列为开源安全项目的 Funding Partner。",
-      "coverage_note": "本档案只记录 GitHub 对其项目资助伙伴身份的列示，不将其描述为风险投资机构，也不采纳没有该来源支持的资助金额。",
-      "facts": [],
+      "summary": "American Express Ventures 是 American Express 的企业风险投资平台，官网说明其在战略相关技术领域投资初创公司并促进组合企业与业务部门合作。GitHub 官方文章另将 American Express 列为开源安全项目的 Funding Partner；该资助身份不等同于股权投资。",
+      "coverage_note": "Amex Ventures 官网确认其企业风险投资平台身份；GitHub Funding Partner 记录只说明 American Express 支持开源安全项目，不将其误记为该 CVC 的创业公司投资。",
+      "facts": [
+        {
+          "field": "venture_focus",
+          "label": "官网披露的投资方向",
+          "value": "Amex Ventures 通过投资与 American Express 业务具有战略关联的技术，支持企业创新。",
+          "source_id": "PROFILE-S-INV-13c045348ac4af-2"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "官网披露的重点领域",
+          "value": "Amex Ventures 官网列出消费金融、商业金融、商务、企业技术与软件、前沿技术等方向。",
+          "source_id": "PROFILE-S-INV-13c045348ac4af-3"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -153,6 +166,10 @@
         {
           "description": "GitHub 官方文章将 American Express 列入该开源安全项目 Funding Partners。",
           "source_id": "amex_github_funding_partner"
+        },
+        {
+          "description": "Amex Ventures 2025 年文章披露其 2024 年投资了 Mindtrip、BILT 与 Galileo；这属于投资方官网的组合示例。",
+          "source_id": "PROFILE-S-INV-13c045348ac4af-4"
         },
         {
           "description": "融资来源记录：GitHub · 其他融资 · 2026-08-13 · 本轮参投 · $500,000。这是本库收录的披露案例，不代表完整投资组合。",
@@ -169,6 +186,30 @@
           "quote_hash": "94fd39d3b5d25e3051d656fb131760b64919d4e380ad31e8ca93f974df50cacc"
         },
         {
+          "source_id": "PROFILE-S-INV-13c045348ac4af-2",
+          "source_url": "https://www.americanexpress.com/us/business/american-express-ventures/",
+          "source_title": "AMEX Ventures",
+          "source_content_hash": "eb20286b1d4a52aeef8ded394dc6fb4887bb35d3d5dfe4f9848b99ef690b6b7c",
+          "quote": "As a Fortune 500 global financial services provider, we invest in technologies that are strategically relevant to our business.",
+          "quote_hash": "82d5fadbe2ce9a273dd61c4191cb430e4fb6fdb6ae49efd31ef33b63452f85fd"
+        },
+        {
+          "source_id": "PROFILE-S-INV-13c045348ac4af-3",
+          "source_url": "https://www.americanexpress.com/us/business/american-express-ventures/",
+          "source_title": "AMEX Ventures",
+          "source_content_hash": "eb20286b1d4a52aeef8ded394dc6fb4887bb35d3d5dfe4f9848b99ef690b6b7c",
+          "quote": "Consumer Fintech Commerce Enterprise Technology & Software Frontier Technologies",
+          "quote_hash": "83e6b37156ec3bfce107e28c4e101c0b31c336e58f5f2bf58a81caab062d5036"
+        },
+        {
+          "source_id": "PROFILE-S-INV-13c045348ac4af-4",
+          "source_url": "https://www.americanexpress.com/us/business/american-express-ventures/articles/a-message-from-amex-ventures/",
+          "source_title": "American Express Ventures",
+          "source_content_hash": "1c0f89893414af797e42a6547e30e6c1a579f34da26c3ed6b9881b4b5cb8f3fb",
+          "quote": "We made a number of exciting investments during 2024 in our expanded focus areas. Mindtrip seeks to simplify consumers’ travel plans with AI that crafts personalized itineraries tailored for the user.",
+          "quote_hash": "ab43b164a9b9b12049d6b2f772091ade04d2aacc73a8a8981a5ccc70f93d38b9"
+        },
+        {
           "source_id": "FISRC-08365977cd80206b",
           "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
           "source_title": "50个开源项目教会我们的AI时代安全之道",
@@ -177,7 +218,7 @@
           "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

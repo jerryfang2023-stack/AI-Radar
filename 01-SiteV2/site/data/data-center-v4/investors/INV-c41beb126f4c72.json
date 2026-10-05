@@ -250,14 +250,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "Mistral 官方公告称 ASML 领投其 Series C。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司身份据 ASML 官网，融资关系据 Mistral 官方公告；页面未披露 ASML 的出资法律实体或基金载体。",
+      "summary": "ASML 是半导体设备供应商。Mistral 官方融资回顾记载 ASML 领投其 Series C，后续仍参与 Series D；Mistral 与 ASML 同时披露了面向半导体工程的合作。档案将其记录为产业企业投资者，不推断独立基金或具体出资工具。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网公司定位",
+          "value": "ASML 官网称其为半导体行业的创新企业，提供芯片制造设备、软件和服务。",
+          "source_id": "PROFILE-COLLECT-INV-c41beb126f4c72-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "Mistral 官方资料称其 Series C 由 ASML 领投。",
+          "source_id": "PROFILE-COLLECT-INV-c41beb126f4c72-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为MistralSeries C领投。",
+          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4d11ed62a144a3f4"
         },
         {
@@ -268,12 +281,28 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-4d11ed62a144a3f4",
+          "source_id": "PROFILE-COLLECT-INV-c41beb126f4c72-1",
+          "source_url": "https://www.asml.com/en/company/about-asml",
+          "source_title": "About ASML | Supplying the semiconductor industry",
+          "source_content_hash": "e03861c1c7c0bc911ed5312b00c18ede3c13468f01db07b0017d96eee994857e",
+          "quote": "ASML is an innovation leader in the semiconductor industry.",
+          "quote_hash": "081a6cc0ddd26e91087da95a42968176e110209151c89b1c1d74590a77eb3226"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-c41beb126f4c72-2",
           "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
           "source_title": "Making sovereign, open-weight AI the technology frontier | Mistral",
           "source_content_hash": "d4506507a5056a5585bc790a752d43945de9bf05a4dd63b3dab590c30704d58e",
-          "quote": "investors and existing shareholders that have supported Mistral’s development to date.\nWith a Series C led by ASML and a Series D led by Samsung Electronics, Mistral has attracted backing from companies at the forefront of advanced manufacturing, engineering and industrial technology.\nAdvent, funds and accounts managed by BlackRock as well as the Grand Duchy",
-          "quote_hash": "aea54356baf5ae54ca12f199a24970b7435c57dfc0d2e961bf88645e755c4d91"
+          "quote": "With a Series C led by ASML",
+          "quote_hash": "3d7bde57a58a0407cef3f84c1945005adff34ad40f8cc68c17f347cb51e193b4"
+        },
+        {
+          "source_id": "FISRC-4d11ed62a144a3f4",
+          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+          "source_content_hash": "714c413ab36c1848",
+          "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
+          "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
         },
         {
           "source_id": "FISRC-69c99e24132a43e4",

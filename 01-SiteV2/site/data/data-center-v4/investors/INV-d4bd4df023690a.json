@@ -139,33 +139,84 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "队列简称“海南南佰”按上市公司公告和法律意见披露的海南南佰算科技有限公司对应；该主体是佰维存储全资子公司，企业产业投资活动不等同于独立 VC 基金。",
+      "summary": "公开法律意见和佰维存储公告将队列简称“海南南佰”对应为海南南佰算科技有限公司，并记载其为佰维存储的全资子公司。公司披露其 2025 年向北京行云集成电路有限公司增资 1,000 万元并已完成，2026 年又拟追加 1,000 万元；2026 年半年度报告确认其参与臻宝科技战略配售，获配 468,146 股、认购金额约 2,086.06 万元。以上是上市公司产业协同投资案例，不代表其为独立基金管理人。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定主体名称",
+          "value": "海南南佰算科技有限公司。",
+          "source_id": "B25-HN-LEGAL"
+        },
+        {
+          "field": "parent_company",
+          "label": "股权关系",
+          "value": "佰维存储间接持有海南南佰100%股权。",
+          "source_id": "B25-HN-LEGAL"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "公开材料记录企业直接增资和 IPO 战略配售；未将其记作独立基金管理人。",
+          "source_id": "B25-HN-ZHENBAO"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 芯光界 多轮融资 本轮参投。",
+          "description": "佰维存储 2026 年 5 月公告记载，海南南佰算此前已完成向北京行云集成电路有限公司增资 1,000 万元，之后拟再增资 1,000 万元。",
+          "source_id": "B25-HN-XINGYUN"
+        },
+        {
+          "description": "佰维存储 2026 年半年度报告确认，海南南佰算作为战略配售投资者认购臻宝科技 468,146 股，金额为人民币 20,860,585.76 元。",
+          "source_id": "B25-HN-ZHENBAO"
+        },
+        {
+          "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-09a0a8d8826c2cfe"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "B25-HN-LEGAL",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-06-11/1225363589.PDF",
+          "source_title": "北京德恒律师事务所关于重庆臻宝科技股份有限公司首次公开发行股票并在科创板上市参与战略配售的法律意见",
+          "source_content_hash": "5dec15798a22d9f494a3d15c85a3cc29a0762e5433637b1f6e5aabf20298207a",
+          "quote": "佰维存储间接持有海南南佰100%的股权，为海南南佰的控股股东。",
+          "quote_hash": "c2f489b4450acc6a0388962ff06078e4e27d77768c32e7f326b6d93e24149cb7"
+        },
+        {
+          "source_id": "B25-HN-XINGYUN",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-05-27/1225332052.PDF",
+          "source_title": "深圳佰维存储科技股份有限公司关于公司拟与关联方继续共同对外投资暨关联交易的公告（2026-048）",
+          "source_content_hash": "dc2976e12e2b27299c20c77d974cefad5c63140d1ae1f45a9741e286a0b2fa08",
+          "quote": "公司的全资子公司海南南佰算科技有限公司（以下简称“海南南佰算”）与徐林仙女士（董事长孙成思先生之母亲）、董事兼总经理何瀚先生分别向北京行云集成电路有限公司（以下简称“行云”或“标的公司”）增资 1,000 万元、200 万元、470 万元，增资完成后分别持有行云股权比例为 1.0737%、0.2147%、0.5046%。",
+          "quote_hash": "bc70ea294bceda92b28f6146aa52379aa46ad9aec6461987e47f213e2720af9c"
+        },
+        {
+          "source_id": "B25-HN-ZHENBAO",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225497235.PDF",
+          "source_title": "深圳佰维存储科技股份有限公司 2026 年半年度报告",
+          "source_content_hash": "75d21e3c1bf65a44f0b237008c22d549da543d606211fce45514f88e210939fd",
+          "quote": "报告期内，公司全资子公司海南南佰算作为战略配售投资者参与臻宝科技的股份认购，获配股数 468,146 股，认购金额为人民币 20,860,585.76 元。",
+          "quote_hash": "e6b0ca6ee9e436b6c82e0772f0ad5f2443443c826b40c7178e8c8164aebc3b96"
+        },
+        {
           "source_id": "FISRC-09a0a8d8826c2cfe",
           "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
-          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿 | 投中网",
-          "source_content_hash": "07769d7354864bacbc3aca99d89b0c60720a78c93e72560ce8ed28387a4b4245",
+          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
           "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
           "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "公开法律意见和佰维存储公告将队列简称“海南南佰”对应为海南南佰算科技有限公司，并记载其为佰维存储的全资子公司。公司披露其 2025 年向北京行云集成电路有限公司增资 1,000 万元并已完成，2026 年又拟追加 1,000 万元；2026 年半年度报告确认其参与臻宝科技战略配售，获配 468,146 股、认购金额约 2,086.06 万元。以上是上市公司产业协同投资案例，不代表其为独立基金管理人。"
     }
   }
 }

@@ -122,35 +122,67 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
+      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "人物投资经历主要依据本人2021年文章的自述；Paper公司融资公告仅确认其作为既有投资者获得续投支持，未公开其个人支票金额。",
+      "summary": "David Hoang在本人博客中将自己描述为独立的operator angel，关注Design、Growth与Product方向的创业支持，并自述截至2021年已投资15家创业公司、成为一只基金的LP。Paper的Series A公告将他列为获得续投支持的既有投资者。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "One Medical",
+          "title": "Product Design负责人（本人自述）",
+          "period": "任职四年；具体年份未披露",
+          "description": "David Hoang本人称曾在One Medical负责产品设计四年；该文未列明具体职位名称或起止年份。",
+          "source_id": "david_angel_bio"
+        }
+      ],
+      "education": [],
+      "experience_summary": "本人文章称其以独立投资者方式进行早期创业投资，并主要在产品、增长和设计方面为被投公司提供支持；所列投资数量是2021年的自述时点。",
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Paper 轮次未披露 既有投资方。",
+          "description": "David Hoang本人于2021年自述已投资15家创业公司，并成为一只基金的LP；该数量不作为当前投资组合总数。",
+          "source_id": "david_angel_bio"
+        },
+        {
+          "description": "Paper的Series A公告将David Hoang列为获得续投支持的投资者之一；公告未披露其个人投资金额。",
+          "source_id": "david_paper_series_a"
+        },
+        {
+          "description": "融资来源记录：Paper · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-23493910baa1c861"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "david_angel_bio",
+          "source_url": "https://blog.davidhoang.com/2021/12/21/one-year-as-an-operator-angel/",
+          "source_title": "One year as an operator angel &#8211; David Hoang",
+          "source_content_hash": "21c314e324f49592347b01eaec159cc64d43082905e8678bedd6836feb8ce82f",
+          "quote": "Since that moment, I invested in 15 startups and became a Limited Parter (LP) in a fund.",
+          "quote_hash": "6927774f784bb00cca7a24c0c808e77ffb831ea85b8624e6138e9f3a6f8498eb"
+        },
+        {
+          "source_id": "david_paper_series_a",
+          "source_url": "https://paper.design/blog/series-a",
+          "source_title": "Paper raises $34M to build the next great design platform",
+          "source_content_hash": "b803663eb5a2557c8d9cb9dbb5e85c1b8cedcbab7d7086b2de4a3841eff309c5",
+          "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch .",
+          "quote_hash": "74523f6c089a64fbe7f9753f06a0790f75cb0c2efcff007d90fb3437c3e0768a"
+        },
         {
           "source_id": "FISRC-23493910baa1c861",
           "source_url": "https://paper.design/blog/series-a",
           "source_title": "Paper raises $34M to build the next great design platform",
-          "source_content_hash": "b803663eb5a2557c8d9cb9dbb5e85c1b8cedcbab7d7086b2de4a3841eff309c5",
+          "source_content_hash": "6bc97de07bc79d43",
           "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
           "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

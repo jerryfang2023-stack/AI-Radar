@@ -139,29 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "Linear Capital 的 OdyssLife 项目报道将 Creekstone 列为继续追加投资的既有股东。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "阶段与方向来自 Creekstone Ventures 官网；OdyssLife 融资参与采用 Linear Capital 发布的项目文章。没有据此推断完整组合或单笔金额。",
+      "summary": "Creekstone Ventures 官网将其定位为面向全球的早期 AI 投资机构，并在官网组合中列出 Odysslife；线性资本的 OdyssLife 融资文章称 Creekstone 继续追加投资。本档据此记录机构自述定位及一项组合关系。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "官网公开的投资定位",
+          "value": "Creekstone Ventures 官网自述聚焦中国至全球的早期 AI 投资。",
+          "source_id": "PROFILE-B3-INV-743159bede5ef2-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "OdyssLife 融资报道将 Creekstone 列为继续加注的既有投资方。",
+          "description": "Linear Capital 的 OdyssLife 融资文章称 Creekstone 继续追加投资。",
+          "source_id": "PROFILE-B3-INV-743159bede5ef2-2"
+        },
+        {
+          "description": "融资来源记录：OdyssLife · 多轮融资 · 2026-08-17 · 本轮参投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-34ac4235c670177c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Creekstone Ventures 官网",
+          "value": "Creekstone Ventures 官网",
+          "url": "https://creekstonevc.com/",
+          "source_id": "PROFILE-B3-INV-743159bede5ef2-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B3-INV-743159bede5ef2-1",
+          "source_url": "https://creekstonevc.com/",
+          "source_title": "Creekstone Ventures — Agent Native · Founder Friendly",
+          "source_content_hash": "78c5406781fe76420160ec0b75e4f3fda2f195ffe2ea4dc78487d4baae40382a",
+          "quote": "China → Global Early-stage AI Native",
+          "quote_hash": "4c3e013b36030743089f0241d4e2eca9642a7fc4cf04db6d3fee1350c00d1a40"
+        },
+        {
+          "source_id": "PROFILE-B3-INV-743159bede5ef2-2",
+          "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
+          "source_title": "&quot;OdyssLife&quot; Closes Nearly 200 Million Yuan in New Funding, Linear Capital Continues to Double Down | Linear Portfolio | elsewhere",
+          "source_content_hash": "f89307938538a547c4653b0fc2b43da3c47a627937cfb54d2ce711e1d9109cfd",
+          "quote": "with existing investors Linear Capital and Creekstone continuing to increase their stakes",
+          "quote_hash": "7fb08ded8646d9064cb3c9b41461327678e670f31e506e0ccd21e78bd74575bb"
+        },
         {
           "source_id": "FISRC-34ac4235c670177c",
           "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
-          "source_title": "&quot;OdyssLife&quot; Closes Nearly 200 Million Yuan in New Funding, Linear Capital Continues to Double Down | Linear Portfolio | elsewhere",
-          "source_content_hash": "3af457a29c17cfd00548fab0ca7cae1c7e6dd2ca30294c15c15b596a6ec09223",
-          "quote": "n new funding. The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes. OdyssLife was founded in the second half of 2025. Its founding team consists of post-95s generation members with frontline AI product and technical backgrounds at major domestic and",
-          "quote_hash": "fc0309547d190238182813a96cd85e2d10d1126ed08bc31c0e5941f9bf21151f"
+          "source_title": "\"OdyssLife\" Closes Nearly 200 Million Yuan in New Funding, Linear Capital Continues to Double Down | Linear Portfolio | elsewhere",
+          "source_content_hash": "7da4915015fdb51b",
+          "quote": "The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes.",
+          "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

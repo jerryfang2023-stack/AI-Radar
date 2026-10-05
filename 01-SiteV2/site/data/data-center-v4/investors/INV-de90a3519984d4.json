@@ -139,15 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "机构介绍来自 SofMedica Ventures 官网，参投关系来自 ORamaVR 融资公告；两者均未披露该机构的单独出资金额或具体基金载体。",
-      "summary": "SofMedica Ventures 官网称其为 SofMedica Group 的医疗科技投资与创新项目，聚焦医疗技术。Greater Geneva Bern area 发布的 ORamaVR 融资公告将 Sofmedica Ventures 列为 ORamaVR 450万美元 late-seed 轮的新投资者之一。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资焦点和集团关系来自机构官网自述；单一项目案例不代表完整组合。",
+      "summary": "SofMedica Ventures官网称其为SofMedica Group成员，聚焦精密医疗技术，并表示可结合集团商业经验支持医疗科技团队。Greater Geneva Bern Area的融资报道将其列为ORamaVR 450万美元late-seed轮新投资者之一。",
+      "facts": [
+        {
+          "field": "group_affiliation",
+          "label": "集团关系（官网自述）",
+          "value": "SofMedica Group成员",
+          "source_id": "B30-SOFMEDICA-GROUP"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域（官网自述）",
+          "value": "医疗技术",
+          "source_id": "B30-SOFMEDICA-FOCUS"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "ORamaVR 的450万美元 late-seed 融资公告将 Sofmedica Ventures 列为新投资者之一；未披露单独出资额。",
-          "source_id": "oramavr-sofmedica-ventures-2026"
+          "description": "Greater Geneva Bern Area报道将SofMedica Ventures列为ORamaVR 450万美元late-seed融资的新投资方之一。",
+          "source_id": "B30-SOFMEDICA-ORAMAVR"
         },
         {
           "description": "融资来源记录：ORamaVR · 种子轮 · 2026-01-30 · 本轮参投 · 4.5 million USD。这是本库收录的披露案例，不代表完整投资组合。",
@@ -158,10 +171,10 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "机构介绍来自 SofMedica Ventures 官网，参投关系来自 ORamaVR 融资公告；两者均未披露该机构的单独出资金额或具体基金载体。",
+      "experience_summary": "",
       "sources": [
         {
-          "source_id": "sofmedica-ventures-background",
+          "source_id": "B30-SOFMEDICA-GROUP",
           "source_url": "https://sofmedicaventures.com/",
           "source_title": "SofMedica Ventures",
           "source_content_hash": "c41f9673d48998c451bf9f3c594e7453d632d25c9bc00bc5381a3a7d0c91665e",
@@ -169,7 +182,7 @@
           "quote_hash": "e5ae8e7704daf8f7f435c79d7e90c3337156129e297994fcf86025df1fe6b956"
         },
         {
-          "source_id": "sofmedica-ventures-investment-focus",
+          "source_id": "B30-SOFMEDICA-FOCUS",
           "source_url": "https://sofmedicaventures.com/",
           "source_title": "SofMedica Ventures",
           "source_content_hash": "c41f9673d48998c451bf9f3c594e7453d632d25c9bc00bc5381a3a7d0c91665e",
@@ -177,7 +190,7 @@
           "quote_hash": "142a30d61b013a575097787f8741f3d173afad6e2d8eb3533ea62337d9cb2e8f"
         },
         {
-          "source_id": "oramavr-sofmedica-ventures-2026",
+          "source_id": "B30-SOFMEDICA-ORAMAVR",
           "source_url": "https://ggba.swiss/en/geneva-based-oramavr-raises-usd-4-5-million-to-scale-medical-xr-training-solutions/",
           "source_title": "ORamaVR raises USD 4.5 million to scale XR training solutions",
           "source_content_hash": "978289be2cb5e35bef1178c5726f5f59972af9d8d19ecb9b61aa3f9ae101b831",
@@ -193,7 +206,7 @@
           "quote_hash": "45f4be8089f409c4b51ae83057d68378fc65f657a60c752d71e71655a4dd9cf0"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

@@ -139,9 +139,9 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "山东发展官网披露集团法定名称和简称；融资报道将“山东发展”列为好心情本轮投资方。本档案不据此扩展其投资基金体系。",
-      "summary": "山东发展官网披露山东发展投资控股集团有限公司的简称为山东发展投资集团；好心情融资报道将“山东发展”列为投资方。",
+      "coverage_status": "researched",
+      "coverage_note": "集团法定名称、简称和国资投资方向依据官网披露；好心情交易关系来源为东方财富融资报道，未找到发行人公告单独核实该简称对应的投资主体。",
+      "summary": "山东发展投资控股集团有限公司官网披露简称“山东发展投资集团”，并将其定位为国有资本投资公司。东方财富 2026 年 9 月 30 日的好心情融资报道将“山东发展”列为投资方之一；该交易关系按媒体报道归属，不扩展为未核实的基金体系。",
       "facts": [
         {
           "field": "legal_name",
@@ -154,6 +154,18 @@
           "label": "官网简称",
           "value": "山东发展投资集团",
           "source_id": "shandong-development-official-disclosure-2026-10-03"
+        },
+        {
+          "field": "state_capital_profile",
+          "label": "官网披露的集团定位目标",
+          "value": "集团在官网重大信息公告中称其目标是建设国内一流国有资本投资公司。",
+          "source_id": "PROFILE-S-INV-3384a162f47d9c-3"
+        },
+        {
+          "field": "investment_scope",
+          "label": "官网披露的集团投资方向",
+          "value": "集团 2024 年重大信息公告称其实施战略性股权投资和经营性实业投资，覆盖功能性传统产业、战略性新兴产业及前瞻性未来产业。",
+          "source_id": "PROFILE-S-INV-3384a162f47d9c-4"
         }
       ],
       "milestones": [],
@@ -186,6 +198,22 @@
           "quote_hash": "4c78d8de1b18274ce3ee3373bea795e0815c1dce5530d772881b1b4f98d5d9b0"
         },
         {
+          "source_id": "PROFILE-S-INV-3384a162f47d9c-3",
+          "source_url": "https://www.sdfzjt.com.cn/xxgkxq/2431.html",
+          "source_title": "山东国惠投资控股集团有限公司、山东发展投资控股集团有限公司2024年度财务等重大信息公告-山东发展投资控股集团有限公司",
+          "source_content_hash": "0f661fa290e5d977ec8ddc7630e72980d00b1fe3d86dc42a76301d748a49126c",
+          "quote": "聚力打造国内一流国有资本投资公司",
+          "quote_hash": "411daf71fa7caa37e38875c99a27bd67a7ebe3f2f84f318b19fe6fc9264cee2b"
+        },
+        {
+          "source_id": "PROFILE-S-INV-3384a162f47d9c-4",
+          "source_url": "https://www.sdfzjt.com.cn/xxgkxq/2431.html",
+          "source_title": "山东国惠投资控股集团有限公司、山东发展投资控股集团有限公司2024年度财务等重大信息公告-山东发展投资控股集团有限公司",
+          "source_content_hash": "0f661fa290e5d977ec8ddc7630e72980d00b1fe3d86dc42a76301d748a49126c",
+          "quote": "投好功能性传统产业、战略性新兴产业、前瞻性未来产业",
+          "quote_hash": "0fbbc80963b2894ce6284f4a4ab8ce97701eb6946596ee790e98eb4aa624c653"
+        },
+        {
           "source_id": "FISRC-fd10d8d231daf83d",
           "source_url": "https://caifuhao.eastmoney.com/news/20260930080532421516720",
           "source_title": "【首发】好心情完成近3亿元新一轮融资，加速 AI 创新与国际化布局",
@@ -194,7 +222,10 @@
           "quote_hash": "4c78d8de1b18274ce3ee3373bea795e0815c1dce5530d772881b1b4f98d5d9b0"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": []
     }
   }
 }

@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资参与关系依据 IT之家报道；不推断其投资业务主体或完整投资组合。",
-      "summary": "IT之家关于凌川科技 A+ 轮扩展融资的报道将新国都列为产业投资方。本档只记录该项公开披露。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体业务定位来自新国都官网；凌川科技融资关系来自IT之家报道，未确认内部具体出资主体。",
+      "summary": "新国都官网将其描述为数字支付科技企业；IT之家关于凌川科技 A+ 轮扩展融资的报道将新国都列为产业投资方。本档不推断其内部出资主体。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露的业务定位",
+          "value": "新国都官网将集团描述为以创新为驱动的数字支付科技企业。",
+          "source_id": "PROFILE-S-INV-689858a36453d0-2"
+        },
+        {
+          "field": "reported_investor_name",
+          "label": "融资报道披露的投资方名称",
+          "value": "IT之家报道将新国都列为凌川科技A+轮融资的产业投资方。",
+          "source_id": "PROFILE-S-INV-689858a36453d0-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -159,9 +172,25 @@
           "source_content_hash": "0c8aa3abd9f50695779734372412758ca59ea2ce3798b73b2ce6987d17d7a21f",
           "quote": "编： 汪淼 评论： 感谢IT之家网友 不一样的体验 的线索投递！ IT之家 6 月 25 日消息，据硬氪 6 月 23 日报道， 人工智能芯片公司“凌川科技”近日完成数亿元 A+ 轮融资 ，本轮由啟赋资本领投，产业投资方新国都、投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资，老股东顺禧基金、九智资本持续追加投资。 项目落地北京亦庄，获亦庄国投重点支持，本轮融资将主要用于下一代芯片研发、现有产品 SL200 的量产扩产及海外市场拓展。 ▲ SL200 视频智能处理器 IT之家注：“凌川科技”成立于 2024 年 3 月，由北京市人工智能基金与快手集团共同发起设立，前身为快手集团的异构计算与芯片事",
           "quote_hash": "97b11c4246fe1912c72f1733d149760685d0248f351ef163706e999a66f5e7b3"
+        },
+        {
+          "source_id": "PROFILE-S-INV-689858a36453d0-2",
+          "source_url": "https://www.xgd.com/",
+          "source_title": "新国都集团_深圳市新国都股份有限公司",
+          "source_content_hash": "bbe1f56a30c80356d84ceb847979e8d831eb841ee1032395a9f9273c853b3e72",
+          "quote": "以创新为驱动的数字支付科技企业",
+          "quote_hash": "c3688733bde52d03234014b484b2de9f16aeb8f7df0ce61bd2349bfbf90471e1"
+        },
+        {
+          "source_id": "PROFILE-S-INV-689858a36453d0-3",
+          "source_url": "https://www.ithome.com/0/968/289.htm",
+          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片 - IT之家",
+          "source_content_hash": "0c8aa3abd9f50695779734372412758ca59ea2ce3798b73b2ce6987d17d7a21f",
+          "quote": "产业投资方新国都",
+          "quote_hash": "efdcb64ff4fef861afee68f3e3577cf986deb1be5e43ba4a23b56aa1b94f42f8"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

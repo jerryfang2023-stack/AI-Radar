@@ -192,10 +192,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金类别、阶段与投资地域来自土耳其官方投资促进机构资料；两项融资参与来自 The SaaS News 和 Tech.eu。未补写第三方未披露的单独出资额。",
+      "summary": "土耳其 Investment Office 的 e2vc 基金资料将其列为风险投资基金，覆盖Pre-Seed、Seed和Series A，地域偏好为土耳其及中东欧。公开报道将 e2vc 列为 Monogram 和 Mandel AI 两笔种子轮的参与方。",
+      "facts": [
+        {
+          "field": "fund_type_and_focus",
+          "label": "土耳其 Investment Office 基金资料",
+          "value": "该政府基金资料将 e2vc 列为风险投资基金，覆盖Pre-Seed、Seed、Series A，地域偏好为土耳其和中东欧。",
+          "source_id": "PROFILE-COLLECT-INV-d7e5d57277218e-M-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -224,6 +231,14 @@
           "source_content_hash": "ca61f3e2c73bd3fa64b9f7b72c30fa9485601e7c918412762105276f9f0644c1",
           "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
           "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d7e5d57277218e-M-3",
+          "source_url": "https://startinturkiye.gov.tr/en/funds/e2vc",
+          "source_title": "e2vc | Investment Office Türkiye",
+          "source_content_hash": "1fec3a486b5c3770125c734b94eb72ea20778165fc8615cdf96655c71532203a",
+          "quote": "Fund Stages: Pre-Seed; Seed; Series A\nFund Headquarters: İstanbul, Türkiye\nGeographical Investment Preference: Türkiye, Central Eastern Europe",
+          "quote_hash": "37ffd9c467e03a3e7a2c4b4638c5f2ada5e03929a8fbb96157e033871c95417a"
         }
       ],
       "last_verified_at": "2026-10-03",

@@ -138,11 +138,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
       "summary": "岩山科技是从事科技业务的上市公司；新浪财经转载的协会信息将其列为墨芯人工智能 C 轮投资方。",
       "coverage_note": "公司身份来自岩山科技官网，融资关系来自新浪财经转载的合肥市投资基金协会信息；不据此称其为独立投资基金。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "listed_identity",
+          "label": "官网投资者关系页披露的上市身份",
+          "value": "公司投资者关系页面披露其为深交所 A 股上市公司，页面标注股票代码 002195。",
+          "source_id": "PROFILE-R-INV-0f5537cd7b4176-3"
+        },
+        {
+          "field": "company_mission",
+          "label": "公司官网披露的愿景",
+          "value": "岩山科技官网称其以人工智能为核心，愿景是成为全球领先的人工智能、科技创新公司。",
+          "source_id": "PROFILE-R-INV-0f5537cd7b4176-4"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -177,6 +190,22 @@
           "quote_hash": "1b53e68cf7b37526e2b6bfa79e9bf191989c4082cfdaf0ed705b3abfe10ab184"
         },
         {
+          "source_id": "PROFILE-R-INV-0f5537cd7b4176-3",
+          "source_url": "https://news.stonehill-tech.com/Investor/Index/View?id=1247",
+          "source_title": "002195岩山科技投资者关系管理信息20240426_投资者关系",
+          "source_content_hash": "c7be1894ab800685e507b7d03547a6f8a33453c84457c9d83549877fd7291e8e",
+          "quote": "深圳交易所A股上市 （股票简称： 二三四五 股票代码： 002195 ）",
+          "quote_hash": "b80d6ca9c79bf6ea0a57ce5e0b63feb66286ceaf6a2d4ad1b124c787b6814b3e"
+        },
+        {
+          "source_id": "PROFILE-R-INV-0f5537cd7b4176-4",
+          "source_url": "https://www.stonehill-tech.com/",
+          "source_title": "岩山科技",
+          "source_content_hash": "ba471f28cb9b6d9b8f675f8957b6338557437b8d15cabd0b09a38e01393c855a",
+          "quote": "以人工智能为核心，建设一个更智慧、更美好、更和谐的世界。",
+          "quote_hash": "d93e2c2fb59f001eb35a92740ff623bee7eeeb845bdc3856f7b4c212e077dc7b"
+        },
+        {
           "source_id": "FISRC-6202f2642c216aa5",
           "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
           "source_title": "墨芯人工智能完成近10亿元C轮融资",
@@ -185,7 +214,7 @@
           "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -246,11 +246,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "Alpha Wave 是跨私募股权、私募信贷及保险和退休业务的另类资产管理机构。Cognition 官方 Series D 公告将 Alpha Wave 列为其既有投资方。",
-      "coverage_note": "机构身份由 Alpha Wave Global 官网确认；融资关系来自 Cognition 官方公告，未据此推断单独投资金额。",
-      "facts": [],
+      "summary": "Alpha Wave Global 官网将其定位为跨私募股权、私募信贷及保险与退休业务的另类资产管理机构；Cognition 官方融资公告列出 Alpha Wave 为既有投资方之一。",
+      "coverage_note": "机构业务定位来自官网；融资参与关系来自 Cognition 官方公告。该品牌同时覆盖多个资产类别，不等同于单一 VC 基金。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网机构定位",
+          "value": "官网将 Alpha Wave 定义为另类资产管理机构，业务包括私募股权、私募信贷及保险与退休。",
+          "source_id": "PROFILE-COLLECT-INV-016b038543360f-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "Cognition Series D 公告列出 Alpha Wave 为既有投资方。",
+          "source_id": "PROFILE-COLLECT-INV-016b038543360f-2"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -258,10 +271,6 @@
       "education": [],
       "experience_summary": "",
       "track_record": [
-        {
-          "description": "Cognition 官方 Series D 公告将 Alpha Wave 列入其既有投资方。",
-          "source_id": "alpha_wave_cognition_series_d"
-        },
         {
           "description": "融资来源记录：Ultrahuman · 其他融资 · 2026-09-30 · 本轮参投 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-723dbfd85761e08d"
@@ -277,7 +286,7 @@
       ],
       "sources": [
         {
-          "source_id": "alpha_wave_identity",
+          "source_id": "PROFILE-COLLECT-INV-016b038543360f-1",
           "source_url": "https://alphawaveglobal.com/",
           "source_title": "Alpha Wave Overview",
           "source_content_hash": "b27cfa937a604a6d71321ef4bf347f3c78ad78b438b5c9fbf2145efd44d6b0c5",
@@ -285,7 +294,7 @@
           "quote_hash": "661046c1b8cb6eb3f8d2ca2bfce21216880108a099080fe56613e454b1e93790"
         },
         {
-          "source_id": "alpha_wave_cognition_series_d",
+          "source_id": "PROFILE-COLLECT-INV-016b038543360f-2",
           "source_url": "https://cognition.com/blog/series-d",
           "source_title": "More Devins in More Places | Cognition",
           "source_content_hash": "fdf1da0bf21b758bc27c4024126ffd8a07474ee9a8e1d8b7653542d1f0d6cd7e",
@@ -317,7 +326,7 @@
           "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

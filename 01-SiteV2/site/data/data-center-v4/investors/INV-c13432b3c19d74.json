@@ -140,33 +140,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Geodesic 官网支持创立背景与美日投资定位；Together AI 公告支持投资者身份但未披露其出资金额。",
+      "summary": "Geodesic Capital 由前美国驻日大使 John Roos 于 2015 年创立，定位为连接硅谷与日本的投资机构。Together AI 公告将其列入一轮 Series C 投资者名单；未披露 Geodesic 单独出资额。",
+      "facts": [
+        {
+          "field": "founding",
+          "label": "创立背景",
+          "value": "John Roos 于 2015 年创建 Geodesic Capital，以连接硅谷与日本。",
+          "source_id": "geodesic_about"
+        },
+        {
+          "field": "strategy",
+          "label": "投资定位",
+          "value": "官网将其描述为连接硅谷与日本的桥梁。",
+          "source_id": "geodesic_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Together AI C轮 本轮参投。",
+          "description": "Together AI 公告将 Geodesic 列入其 Series C 投资者名单；公告公布融资额 $800m，但未披露 Geodesic 单独出资额。",
+          "source_id": "geodesic_together"
+        },
+        {
+          "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮参投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c76c0a4ea6adedb7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://geodesiccap.com/about/",
+          "url": "https://geodesiccap.com/about/",
+          "source_id": "geodesic_about"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-c76c0a4ea6adedb7",
+          "source_id": "geodesic_about",
+          "source_url": "https://geodesiccap.com/about/",
+          "source_title": "About | Geodesic",
+          "source_content_hash": "54138afc445596a823a71ae3c29b119006c2051cb6f1ce61d840972ec7ffb28d",
+          "quote": "In 2015, former U.S. Ambassador to Japan John Roos created Geodesic Capital to leverage the connections between Silicon Valley and Japan.",
+          "quote_hash": "a666ca8d593313c8d95f117ead896d8f0c6f1d57f35d3f3c4db9fbff8545a415"
+        },
+        {
+          "source_id": "geodesic_together",
           "source_url": "https://www.together.ai/blog/announcing-our-series-c",
           "source_title": "Announcing our $800M Series C to accelerate the shift to open-source AI",
           "source_content_hash": "7198081df0d210e6030fd412bc25ea5dc31cbf2fceb19796a17dafcc54144d8f",
+          "quote": "Today, I am excited to announce the next milestone in our journey with Series C funding of $800 million from an incredible group of investors including Aramco Ventures, NVIDIA, Vista Equity, General Catalyst, Emergence Capital, SE Ventures, Pegatron, Salesforce Ventures, March Capital, DTCP Growth, Lux Capital, Geodesic, PSP Partners, and others.",
+          "quote_hash": "84603f01549054736f29d93ec9f544ee3d4f0ae9fbc6e754e57c1037a677bd3e"
+        },
+        {
+          "source_id": "FISRC-c76c0a4ea6adedb7",
+          "source_url": "https://www.together.ai/blog/announcing-our-series-c",
+          "source_title": "宣布完成 8 亿美元 C 轮融资，加速向开源 AI 的转变",
+          "source_content_hash": "458ee8ff3e8d5ff41a8e17f5ed67badb7598d15dddac9f914e564d6daca98cd7",
           "quote": "Series C funding of $800 million from an incredible group of investors including Aramco Ventures, NVIDIA, Vista Equity, General Catalyst, Emergence Capital, SE Ventures, Pegatron, Salesforce Ventures, March Capital, DTCP Growth, Lux Capital, Geodesic, PSP Partners, and others.",
           "quote_hash": "99b67ba060973f701f51587964af955995f6615579746bc14cbe4a1cdccc04b8"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

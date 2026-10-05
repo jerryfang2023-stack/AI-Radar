@@ -139,15 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Wilson Sonsini 官方公告将 Ex/Ante 列为 Inherent 5000 万美元种子轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金定位来自 ex/ante 官网；融资参与来自 Startup.eu 对 Tech.eu 报道的记录。来源未披露 Ex/Ante 单独出资额。",
+      "summary": "ex/ante 官网将其称为专注 agentic technology 的风险投资基金；Startup.eu 的融资记录将 Ex/Ante 列为 Inherent 5000 万美元种子轮投资方。",
+      "facts": [
+        {
+          "field": "self_declared_investment_focus",
+          "label": "官网自述的基金定位",
+          "value": "ex/ante 官网称其为专注 agentic technology 的风险投资基金。",
+          "source_id": "PROFILE-B7-INV-91860c418d0932-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Wilson Sonsini 官方公告将 Ex/Ante 列为 Inherent 5000 万美元种子轮投资方。",
-          "source_id": "PROFILE-2f3137270051c5a03a68"
+          "description": "Startup.eu 将 Ex/Ante 列为 Inherent 5000 万美元种子轮投资方；未披露单独出资额。",
+          "source_id": "PROFILE-B7-INV-91860c418d0932-1"
         },
         {
           "description": "融资来源记录：Inherent · 种子轮 · 2026-08-23 · 本轮参投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,12 +164,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-2f3137270051c5a03a68",
-          "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html",
-          "source_title": "Wilson Sonsini Advises Inherent on $50 Million Seed Round as Company Emerges from Stealth | Wilson Sonsini",
-          "source_content_hash": "5c47d33a465d41842d8cf00c5bc02282a0621dc01b0252a37102b05ed51b4ced",
-          "quote": "s and Radical Ventures, with participation from investors including NVentures (NVIDIA's venture capital arm), Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. Wilson Sonsini Goodrich & Rosati advised Inherent on the transaction.",
-          "quote_hash": "dac52516feafedb735932c2d278d55362620c751162ca5886b53c6de4cdd77bb"
+          "source_id": "PROFILE-B7-INV-91860c418d0932-1",
+          "source_url": "https://www.preqin.com/data/profile/asset/inherent-laboratories-limited/802720",
+          "source_title": "Inherent Asset Profile | Preqin",
+          "source_content_hash": "5830ed8f93baa8712ee295988e0829526c19aec54012b829c96d32a1491ea4cf",
+          "quote": "In May 2026, Inherent raised USD 50 million in seed funding led by investor Index Ventures, and Radical Ventures with participation from another investor NVentures (NVIDIA's venture capital arm), Ex/Ante, Metaplanet, Macroscopic Ventures, Mythos Ventures.",
+          "quote_hash": "8c0548c74a3cd48d7b551ecb7271edf56a61631e3e3d269b780b4b8a6fb57af3"
+        },
+        {
+          "source_id": "PROFILE-B7-INV-91860c418d0932-2",
+          "source_url": "https://www.buildexante.com/",
+          "source_title": "ex/ante home",
+          "source_content_hash": "3419b136d3cca8993b3c1e84076a9a9d8122d9cb28d6960470fe60b359145e55",
+          "quote": "ex/ante is the first venture fund dedicated to agentic technology",
+          "quote_hash": "7a2703f845e66db9e4bfee4ffa0cd1957a2e8ec6d859fc3d515f9000fe5988dc"
         },
         {
           "source_id": "FISRC-ed8df2c3d21fb938",
@@ -173,7 +188,7 @@
           "quote_hash": "3eaf37137bbf2e93fe23706845f4924135ac9dbedaa8912cdb760d52c8be7c19"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

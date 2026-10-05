@@ -139,33 +139,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "XN 的机构背景和创立年份依据 Mellon Foundation 对其创始人/董事的介绍；Anthropic 官方公告支持其 Series H 联合领投身份。",
+      "summary": "Mellon Foundation 将 XN 描述为 Gaurav Kapadia 于 2018 年创立、投资公开和非公开市场的长期投资机构。Anthropic 官方公告列 XN 为 2026 年 Series H 联合领投方之一。",
+      "facts": [
+        {
+          "field": "founding_year",
+          "label": "创立年份",
+          "value": "2018 年。",
+          "source_id": "B27-XN-MELLON"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资范围",
+          "value": "公开市场与非公开市场。",
+          "source_id": "B27-XN-MARKETS"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Anthropic H轮 本轮联合领投。",
+          "description": "Anthropic 2026 年 Series H 公告列 XN 为联合领投方之一。",
+          "source_id": "B27-XN-ANTHROPIC"
+        },
+        {
+          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮联合领投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b5e22ae086a6b353"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_id": "B27-XN-MELLON",
+          "source_url": "https://www.mellon.org/news/melissa-gilliam-and-gaurav-kapadia-join-mellon-foundations-board",
+          "source_title": "Melissa Gilliam and Gaurav Kapadia Join Mellon Foundation’s Board | Mellon Foundation",
+          "source_content_hash": "9fcc51cc52989cacdd6751e6b4839a88c1415e6ad397d4ed62c829c7ab7f6662",
+          "quote": "founded the long-term-focused investment firm XN in 2018",
+          "quote_hash": "e988713f087a30d626f57c963647f476c4780e4a4c0fdacae5efcaf9b9a3f353"
+        },
+        {
+          "source_id": "B27-XN-MARKETS",
+          "source_url": "https://www.mellon.org/news/melissa-gilliam-and-gaurav-kapadia-join-mellon-foundations-board",
+          "source_title": "Melissa Gilliam and Gaurav Kapadia Join Mellon Foundation’s Board | Mellon Foundation",
+          "source_content_hash": "9fcc51cc52989cacdd6751e6b4839a88c1415e6ad397d4ed62c829c7ab7f6662",
+          "quote": "invests across public and private markets",
+          "quote_hash": "b46ac39e2b8ce15313838a12dc7d1f7d3e78dd904803d06339017877140a37cf"
+        },
+        {
+          "source_id": "B27-XN-ANTHROPIC",
           "source_url": "https://www.anthropic.com/news/series-h",
           "source_title": "Anthropic raises $65B Series H at $965B valuation \\ Anthropic",
           "source_content_hash": "c00be615fd4e35832b47e33a715a08c58e5e3c7d7839c6775a6edc97ab162fd9",
           "quote": "The round was co-led by Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, and XN.",
           "quote_hash": "1b22b552c9476b33e7d3fec3fb8ee93a12aa097bc9379c4f61a9e2e05f08b075"
+        },
+        {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_url": "https://www.anthropic.com/news/series-h",
+          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+          "quote": "The round was co-led by Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, and XN.",
+          "quote_hash": "1b22b552c9476b33e7d3fec3fb8ee93a12aa097bc9379c4f61a9e2e05f08b075"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

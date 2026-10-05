@@ -139,33 +139,94 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "TechCrunch 将 Sanjay Mehrotra 列入 Hang Ten Systems 种子融资投资者，并称其为 Micron CEO。本档案只记录报道中的个人投资者身份，不推断 Micron 参与投资或其个人投资载体。",
+      "coverage_status": "researched",
+      "coverage_note": "Hang Ten投资活动按个人身份记录，不推断Micron公司出资。",
+      "summary": "Micron官网列Sanjay Mehrotra为董事长兼CEO，介绍其曾任SanDisk联合创始人、总裁和CEO，并披露其加州大学伯克利分校学位。TechCrunch将他列为Hang Ten Systems种子轮个人投资者之一；报道没有表明Micron参与投资，也未披露其个人出资额。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "TechCrunch 将 Sanjay Mehrotra 列在 Hang Ten Systems 种子融资投资者中，并以 Micron CEO 身份介绍；来源未说明个人出资载体或金额。",
+          "description": "TechCrunch报道将Sanjay Mehrotra列为Hang Ten Systems种子融资的个人投资者之一；未披露金额。",
+          "source_id": "B30-SANJAY-INVESTOR"
+        },
+        {
+          "description": "融资来源记录：Hang Ten Systems · 种子轮 · 2026-09-16 · 本轮参投 · $53M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-def75ecd4873d016"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "B30-SANJAY-MICRON",
+          "source_url": "https://www.micron.com/about/company/leadership/sanjay-mehrotra",
+          "source_title": "Sanjay Mehrotra | Micron Technology Inc.",
+          "source_content_hash": "6f18cb20564e83fbbea9a68f2f1c6025e806621f7900b0ce85563e504b229219",
+          "quote": "Sanjay Mehrotra is Chairman and CEO at Micron Technology.",
+          "quote_hash": "689510c35b84eb348ddcf8fce893c47c931586be986db042373d61e2f605d293"
+        },
+        {
+          "source_id": "B30-SANJAY-CAREER",
+          "source_url": "https://www.micron.com/about/company/leadership/sanjay-mehrotra",
+          "source_title": "Sanjay Mehrotra | Micron Technology Inc.",
+          "source_content_hash": "6f18cb20564e83fbbea9a68f2f1c6025e806621f7900b0ce85563e504b229219",
+          "quote": "Sanjay joined Micron in 2017 after a distinguished career at SanDisk Corp.",
+          "quote_hash": "82ab3221053d30c10a8746510e597046a44a33059c90e2c43c62584fda89f2d5"
+        },
+        {
+          "source_id": "B30-SANJAY-EDUCATION",
+          "source_url": "https://www.micron.com/about/company/leadership/sanjay-mehrotra",
+          "source_title": "Sanjay Mehrotra | Micron Technology Inc.",
+          "source_content_hash": "6f18cb20564e83fbbea9a68f2f1c6025e806621f7900b0ce85563e504b229219",
+          "quote": "Sanjay earned bachelor’s and master’s degrees in electrical engineering and computer science from the University of California, Berkeley",
+          "quote_hash": "e2b0904f39b87db5a84a019f0b8d465e3a9a2ecc36d2bc33200631e11475c5ed"
+        },
+        {
+          "source_id": "B30-SANJAY-INVESTOR",
+          "source_url": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
+          "source_title": "Former Infosys chief’s AI startup nabs another $53M | TechCrunch",
+          "source_content_hash": "595bd14e3df324a66375e3a4d0dd21b8130c0308b76c48526a14a776cc2814f9",
+          "quote": "Other investors include Aramco Ventures, Intel CEO Lip-Bu Tan, Micron CEO Sanjay Mehrotra, and Yahoo co-founder Jerry Yang.",
+          "quote_hash": "46013d769c662ef27193457552b8567afb7e4d88cfaf789508aa96c83305e10b"
+        },
+        {
           "source_id": "FISRC-def75ecd4873d016",
           "source_url": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
-          "source_title": "Former Infosys chief's AI startup nabs another $53M | TechCrunch",
-          "source_content_hash": "f9e70b1f762465dc30f52a39f1f0e73977531e11b8174733749e7bfc98e0a4c6",
+          "source_title": "前印孚瑟斯首席执行官的AI初创公司再获5300万美元",
+          "source_content_hash": "6a0023459752d1bc",
           "quote": "Other investors include Aramco Ventures, Intel CEO Lip-Bu Tan, Micron CEO Sanjay Mehrotra, and Yahoo co-founder Jerry Yang",
           "quote_hash": "6a78b3d7a9c9ed703dacf820de4670ff34ec7b3d27d9f1672dcc26b95f1c72ad"
         }
       ],
-      "last_verified_at": "2026-10-04",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "TechCrunch 将 Sanjay Mehrotra 列入 Hang Ten Systems 种子融资投资者，并称其为 Micron CEO。本档案只记录报道中的个人投资者身份，不推断 Micron 参与投资或其个人投资载体。"
+      "last_verified_at": "2026-10-05",
+      "current_roles": [
+        {
+          "title": "Chairman and Chief Executive Officer",
+          "organization": "Micron Technology, Inc.",
+          "source_id": "B30-SANJAY-MICRON"
+        }
+      ],
+      "career": [
+        {
+          "organization": "SanDisk Corp.",
+          "title": "Co-founder; President and CEO",
+          "period": "President and CEO, 2011–2016; joined Micron in 2017",
+          "description": "Micron官网称其为SanDisk联合创始人，曾任总裁和CEO。",
+          "source_id": "B30-SANJAY-CAREER"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of California, Berkeley",
+          "qualification": "Bachelor’s and master’s degrees in electrical engineering and computer science",
+          "source_id": "B30-SANJAY-EDUCATION"
+        },
+        {
+          "institution": "Stanford Graduate School of Business",
+          "qualification": "Executive Program (SEP)",
+          "source_id": "B30-SANJAY-EDUCATION"
+        }
+      ],
+      "experience_summary": "Micron官网称其在半导体存储行业有超过40年经验，并列有70余项专利。"
     },
     "translations": {
       "zh-CN": {

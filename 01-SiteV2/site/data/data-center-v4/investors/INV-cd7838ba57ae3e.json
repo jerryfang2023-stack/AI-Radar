@@ -193,10 +193,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体简称、登记编号、成立时间与科沃斯关联关系来自上市公司公告；公告记载的是2025年拟设基金及当时股权关系，不能据此推断当前持股。两笔融资参与分别来自乐居财经和投资界。",
+      "summary": "科沃斯机器人股份有限公司向上交所披露，苏州隐峰私募基金管理有限公司简称“隐峰资本”，为私募股权投资基金管理、创业投资基金管理机构，2024年成立并在基金业协会登记。科沃斯披露其为参股公司并参与拟设基金的普通合伙人。融资报道另列隐峰资本为工至海洋及奇点智控天使轮领投方。",
+      "facts": [
+        {
+          "field": "legal_identity_and_registration",
+          "label": "上市公司公告披露的简称与管理人登记",
+          "value": "科沃斯公告将苏州隐峰私募基金管理有限公司简称为“隐峰资本”，披露其成立于2024年4月8日，协会登记编号为P1074864。",
+          "source_id": "PROFILE-COLLECT-INV-cd7838ba57ae3e-L-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -225,6 +232,14 @@
           "source_content_hash": "240c9400ee578ec5fa0bb1a922a841361ee9349c5660a83af2d9d0f0f9fe9387",
           "quote": "本轮融资由 隐峰资本领投，张江科投、浦东创投、傅利叶及两家上市公司共同跟投 。",
           "quote_hash": "da35727bf23a448a21c3b8ea789f80a1ab3383f5ae0a8ceea17714b912356539"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-cd7838ba57ae3e-L-3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-26/1223323885.PDF",
+          "source_title": "科沃斯机器人股份有限公司关于参与设立基金暨关联交易的公告（巨潮资讯PDF文字摘录）",
+          "source_content_hash": "d00a7d8d632a6884b1aa25858cfdda3fab381323607d80de13612f80adda3b0e",
+          "quote": "公告简称定义：苏州隐峰私募基金管理有限公司（以下简称“隐峰资本”）",
+          "quote_hash": "3e09b20bad5daeb6796b8ec3bb0ad5d1f597765e47fb83dc89180ed651b76349"
         }
       ],
       "last_verified_at": "2026-10-03",

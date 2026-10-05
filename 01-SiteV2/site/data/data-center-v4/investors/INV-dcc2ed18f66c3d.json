@@ -137,43 +137,114 @@
       }
     ],
     "public_profile": {
+      "last_verified_at": "2026-10-05",
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "Bland 融资资料将 Jeff Lawson 列为既有投资者；Bland 官方页面也将其称为天使投资人。本档案只记录公开投资活动，不推断其个人投资载体或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Twilio 官方作者页称 Jeff Lawson 于 2008 年联合创立 Twilio，并列出其此前在 NineStar、StubHub、Versity 和 Amazon Web Services 的经历；Twilio 于 2024 年公告其卸任 CEO 及董事。Bland 将其列为天使投资人，2026 年 Series C 公告列其为既有投资人。",
+      "coverage_note": "履历按 Twilio 官方页面逐项记录；已区分联合创始人身份与 2024 年结束的 CEO、董事职务。Bland 投资记录仅代表公开披露案例，不推断投资载体或完整组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Bland C轮 本轮参投；仅记录来源直接支持的示例，不代表完整投资组合。",
+          "description": "Multiples 的 Bland 投资者资料将 Jeff Lawson 列入既有投资者名单；该资料未显示单独投资金额。",
           "source_id": "FISRC-a6233a9ab76850de"
+        },
+        {
+          "description": "Bland 2026 年 Series C 新闻稿称既有投资者参与本轮，并将 Jeff Lawson 列入名单；未披露其单独投资金额。",
+          "source_id": "b33-jeff-prnewswire"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Twilio",
+          "title": "联合创始人",
+          "period": "2008 年联合创立；后续职务未由该页面说明",
+          "description": "Twilio 官方作者页称其于 2008 年联合创立公司。",
+          "source_id": "b33-jeff-twilio-bio"
+        },
+        {
+          "organization": "Twilio",
+          "title": "CEO 及董事",
+          "period": "至 2024 年 1 月卸任",
+          "description": "Twilio 2024 年 1 月公告称其卸任 CEO 并离开董事会。",
+          "source_id": "b33-jeff-twilio-transition"
+        },
+        {
+          "organization": "NineStar",
+          "title": "联合创始人兼 CTO",
+          "period": "Twilio 之前；时间未披露",
+          "description": "Twilio 官方作者页列出的此前经历。",
+          "source_id": "b33-jeff-twilio-bio"
+        },
+        {
+          "organization": "StubHub.com",
+          "title": "创始 CTO",
+          "period": "Twilio 之前；时间未披露",
+          "description": "Twilio 官方作者页列出的此前经历。",
+          "source_id": "b33-jeff-twilio-bio"
+        },
+        {
+          "organization": "Versity",
+          "title": "联合创始人、CEO 兼 CTO",
+          "period": "Twilio 之前；时间未披露",
+          "description": "Twilio 官方作者页列出的此前经历。",
+          "source_id": "b33-jeff-twilio-bio"
+        },
+        {
+          "organization": "Amazon Web Services",
+          "title": "早期产品经理",
+          "period": "Twilio 之前；时间未披露",
+          "description": "Twilio 官方作者页称其曾担任 Amazon Web Services 的早期产品经理。",
+          "source_id": "b33-jeff-twilio-bio"
+        }
+      ],
+      "education": [],
+      "experience_summary": "科技企业连续创业者；Twilio 官方履历涵盖通信软件、在线平台、产品管理及 CTO 工作。",
       "sources": [
+        {
+          "source_id": "b33-jeff-twilio-bio",
+          "source_url": "https://www.twilio.com/en-us/blog/authors/author.jeff-lawson",
+          "source_title": "Jeff Lawson | Twilio",
+          "source_content_hash": "01e7c5d2944261c066778795f9aedf26c731e7c9db3ff6482abaf8aa8a0adb7f",
+          "quote": "Jeff co-founded Twilio in 2008 to bring communications into the world of software. Prior to Twilio, Jeff was co-founder and CTO of NineStar, founding CTO of Stubhub.com, co-founder, CEO and CTO of Versity and one of the first product managers for Amazon Web Services.",
+          "quote_hash": "ad2212f50badc3116a3efe00fc1459ee5f8e4825051ecdf63fa33be44296d03c"
+        },
+        {
+          "source_id": "b33-jeff-twilio-transition",
+          "source_url": "https://www.twilio.com/en-us/press/releases/twilio-announces-ceo-transition-",
+          "source_title": "Twilio Announces CEO Transition | Twilio",
+          "source_content_hash": "c100fa6a2636a00bced9375e80a125500208ede8187e7d07cc58cd9f9629b86e",
+          "quote": "Shipchandler succeeds Jeff Lawson, Twilio’s co-founder, who is stepping down as CEO and as a member of the Twilio Board.",
+          "quote_hash": "6956e89606a452f0c45b4998bd18fadc3a5dbe370d3920712c0696e9519f68d7"
+        },
+        {
+          "source_id": "b33-jeff-bland",
+          "source_url": "https://www.bland.ai/about",
+          "source_title": "About | Bland AI",
+          "source_content_hash": "4442596a57792e3fd2ebf1d553a85fb78e14a204b805869074c656209ee1fb25",
+          "quote": "Angel investors include Max Levchin (PayPal) and Jeff Lawson (Twilio)",
+          "quote_hash": "36b8ad0a658f9b521ed80acc2d83bc50d1fc326a5c29ce0803141a460d457d20"
+        },
         {
           "source_id": "FISRC-a6233a9ab76850de",
           "source_url": "https://multiples.vc/private-comps/bland-ai",
-          "source_title": "Bland AI Funding, Investors & Competitors | Multiples",
-          "source_content_hash": "0ef4549cba25fe8d713981d526bda9e0ff9aeeb336c489237b6743a6bbe2a522",
+          "source_title": "Bland AI Funding, Investors &amp; Competitors | Multiples",
+          "source_content_hash": "aedc2f055691fad045e9f92b170174c41c50785374a590e7444866ceceb45ea8",
           "quote": "All existing investors, including Emergence Capital, Upfront Ventures, Scale Venture Partners, Y Combinator, Max Levchin, Piotr Dąbkowski, and Jeff Lawson, also participated.",
           "quote_hash": "f95896f249945e60f276144d3c7e8fd95ced5417c65e48f78848e9689de9e4d9"
         },
         {
-          "source_id": "PROFILE-2f1405d3ad687c889d65",
-          "source_url": "https://www.bland.ai/about",
-          "source_title": "About | Bland AI",
-          "source_content_hash": "358aafc1ab3547fa9578e6799f04fe1a529b4f97aebdc55f6e11ea245676aae5",
-          "quote": "Angel investors include Max Levchin (PayPal) and Jeff Lawson (Twilio).",
-          "quote_hash": "110beb75e723ff7f7d73f9f2ec15135d0b0c7f7e2db4080c0fba6dea9bbe6d05"
+          "source_id": "b33-jeff-prnewswire",
+          "source_url": "https://www.prnewswire.com/news-releases/bland-surpasses-100m-funding-with-new-series-c-to-advance-voice-ai-for-complex-high-stakes-conversations-302801583.html",
+          "source_title": "Bland Surpasses $100M Funding With New Series C to Advance Voice AI for Complex, High-Stakes Conversations",
+          "source_content_hash": "9dc77faf6936f9d751d45e084f61ffcc6a5df31f892b826d7ad11a977bbff51b",
+          "quote": "All existing investors also participated, including Emergence Capital, Upfront Ventures, Scale Venture Partners, Y Combinator, Max Levchin, Piotr Dąbkowski, and Jeff Lawson.",
+          "quote_hash": "4dcc03d066d6f3b0455dcafff5f70769227023dfca7cf06ebe0887cbd72d5ea4"
         }
-      ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "Bland 融资资料将 Jeff Lawson 列为既有投资者；Bland 官方页面也将其称为天使投资人。本档案只记录公开投资活动，不推断其个人投资载体或完整投资组合。"
+      ]
     }
   }
 }

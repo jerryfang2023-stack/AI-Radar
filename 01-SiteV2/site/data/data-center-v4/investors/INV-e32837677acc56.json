@@ -416,27 +416,26 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "MGX官网介绍其在AI与先进技术领域部署资本；档案仅记录公告直接支持的融资活动及每轮具体角色。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构投资方向来自 MGX 官网，融资参与角色来自 Anthropic 公告。只记录公开披露的投资示例，不代表完整投资组合。",
+      "summary": "MGX 官网介绍其在整个 AI 技术栈上部署资本，构建多元化投资组合；Anthropic 公告将 MGX 列为 Series G 联合领投方之一。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "官网称 MGX 在 AI 技术栈内进行投资。",
+          "source_id": "PROFILE-COLLECT-INV-e32837677acc56-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Anthropic公告将MGX列为Series G联合领投方之一。",
-          "source_id": "PROFILE-470ce22993e2ecae1161"
-        },
-        {
-          "description": "Databricks公告称本轮由Coatue领投，并将MGX列为参与方；本档案不把MGX描述为该轮领投方。",
-          "source_id": "FISRC-23f811fd2df5ab63"
-        },
-        {
-          "description": "Isomorphic Labs公告将MGX列为Series B新投资者之一。",
-          "source_id": "PROFILE-5c9e302feebbc230eb94"
-        },
-        {
           "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-077b1124fc8e9581"
+        },
+        {
+          "description": "融资来源记录：Databricks · 战略融资 · 2026-07-17 · 本轮联合领投 · 约 30 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-23f811fd2df5ab63"
         },
         {
           "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
@@ -446,7 +445,7 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-d56b888bad447da39570",
+          "source_id": "PROFILE-COLLECT-INV-e32837677acc56-1",
           "source_url": "https://www.mgx.ae/investment-strategy",
           "source_title": "Investment Strategy | MGX",
           "source_content_hash": "7024324b2be7cf2b7a21add43429f5e9d5053c567168e3fdae9fdf290ce372f1",
@@ -454,28 +453,12 @@
           "quote_hash": "d2fc985dba2adc48d5343cf21bbdacff2ca6f017ad3ebe2ab06a0df4bd9837a5"
         },
         {
-          "source_id": "PROFILE-470ce22993e2ecae1161",
+          "source_id": "PROFILE-COLLECT-INV-e32837677acc56-2",
           "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
           "source_title": "Anthropic raises $30B Series G at $380B valuation \\ Anthropic",
           "source_content_hash": "e9e58ad828d2451fdb86384ddd5294441590a20d2ca4b941e674e5dcc356df08",
           "quote": "The round was co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX.",
           "quote_hash": "cf6fe480d77b318b36bf58e1783e3178fd872598f719abd7c871a5ef1fd87be4"
-        },
-        {
-          "source_id": "FISRC-23f811fd2df5ab63",
-          "source_url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
-          "source_title": "Databricks Grows >80% YoY, Surpasses $7B Revenue Run-Rate, Scales Lakebase, Genie, and Unity AI Gateway - Databricks",
-          "source_content_hash": "66a1040756e518158d1d879cf053ec5f24200996fe6d1629e317b321d51b9771",
-          "quote": "led by Coatue, along with Blackstone, MGX, T. Rowe Price, and new investor Sixth Street Growth",
-          "quote_hash": "8c20b5c1c2fe256a40f3a6b27ecd4390d7bedaa3ba64d4e72218cecd524780b7"
-        },
-        {
-          "source_id": "PROFILE-5c9e302feebbc230eb94",
-          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
-          "source_title": "Isomorphic Labs 2.0",
-          "source_content_hash": "a07df13d4da3856b30e323f1634988ea0b4839b1a4c16d2132d48a43ac3296ab",
-          "quote": "alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
-          "quote_hash": "e407bddf1583866720d63a136f632b52471a46bfd23f1bd32d8c9076e9725a3f"
         },
         {
           "source_id": "FISRC-077b1124fc8e9581",
@@ -484,6 +467,14 @@
           "source_content_hash": "7ff9bbd6aca29214",
           "quote": "DE Shaw & Co, Dragoneer Investment Group, Peter Thiel’s Founders Fund, Iconiq and MGX co-led the round",
           "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
+        },
+        {
+          "source_id": "FISRC-23f811fd2df5ab63",
+          "source_url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+          "source_title": "Databricks 同比增长超80%，收入年化运行率突破$7B，扩展 Lakebase、Genie 和 Unity AI Gateway",
+          "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
+          "quote": "The round was led by Coatue, along with Blackstone, MGX, accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., and new investor Sixth Street Growth.",
+          "quote_hash": "b233db421b569c9a4a4d161be9d7f8250496f79ea7110abbd433d88c071ba51d"
         },
         {
           "source_id": "FISRC-b5e22ae086a6b353",

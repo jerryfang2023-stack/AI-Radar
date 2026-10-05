@@ -139,29 +139,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "Coralogix 官方融资公告称 CPPIB 与 Advent、Greenfield 共同领投其 Series F。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体名称、管理职能及投资使命来自 CPP Investments 官方年报；Coralogix 融资活动按发行人公告记录，未披露单独出资额。",
+      "summary": "Canada Pension Plan Investment Board（CPP Investments，队列简称 CPPIB）是管理加拿大养老金计划资金的全球投资管理机构。官方年报载明其法定使命为在不过度承担损失风险的前提下争取回报。Coralogix 2026年融资公告将 CPPIB 列为其2亿美元 Series F 联合领投方之一。",
+      "facts": [
+        {
+          "field": "organization_identity",
+          "label": "主体身份",
+          "value": "Canada Pension Plan Investment Board 以 CPP Investments 名义运营，是全球投资管理机构。",
+          "source_id": "PROFILE-B10-INV-acac98a6e29eb5-1"
+        },
+        {
+          "field": "investment_mandate",
+          "label": "投资使命",
+          "value": "官方年报称其使命是在不过度承担损失风险的前提下争取最大回报。",
+          "source_id": "PROFILE-B10-INV-acac98a6e29eb5-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Coralogix 融资公告称 CPPIB、Advent 与 Greenfield 共同领投 Series F。",
+          "description": "Coralogix 公告称其完成2亿美元Series F，CPPIB 与 Advent、Greenfield 共同领投；公告未披露 CPPIB 单独出资额。",
+          "source_id": "PROFILE-B10-INV-acac98a6e29eb5-4"
+        },
+        {
+          "description": "融资来源记录：Coralogix · F轮 · 2026-06-03 · 本轮联合领投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f1098c86cb2286"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-98f1098c86cb2286",
+          "source_id": "PROFILE-B10-INV-acac98a6e29eb5-1",
+          "source_url": "https://www.cppinvestments.com/wp-content/uploads/2024/05/CPP-Investments-F2024-Annual-Report.pdf",
+          "source_title": "Annual Report 2024 - CPP Investments",
+          "source_content_hash": "78dcf97b6c1394e00ac9481e6ceb6febd4138e35ebec74e4191596c64134452e",
+          "quote": "Canada Pension Plan Investment Board, which operates as CPP Investments, is a global investment management organization.",
+          "quote_hash": "e59f6d6884a4f923267f3217cb0e311cf4e40b9fd244569d4664f2ee1d8f0ed3"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-acac98a6e29eb5-2",
+          "source_url": "https://www.cppinvestments.com/wp-content/uploads/2024/05/CPP-Investments-F2024-Annual-Report.pdf",
+          "source_title": "Annual Report 2024 - CPP Investments",
+          "source_content_hash": "78dcf97b6c1394e00ac9481e6ceb6febd4138e35ebec74e4191596c64134452e",
+          "quote": "We prudently invest the amounts the CPP transfers to us",
+          "quote_hash": "7d4ca4309998208d4a676ebfd999c2090b601243114b477b52af1b76b49bb692"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-acac98a6e29eb5-3",
+          "source_url": "https://www.cppinvestments.com/wp-content/uploads/2024/05/CPP-Investments-F2024-Annual-Report.pdf",
+          "source_title": "Annual Report 2024 - CPP Investments",
+          "source_content_hash": "78dcf97b6c1394e00ac9481e6ceb6febd4138e35ebec74e4191596c64134452e",
+          "quote": "maximum rate of return, without undue risk of loss",
+          "quote_hash": "75e3b173d0c3e3ec6afe457c12c5f8c7fade11dde8db2e36709c4a98132d2d07"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-acac98a6e29eb5-4",
           "source_url": "https://www.globenewswire.com/news-release/2026/06/03/3306135/0/en/coralogix-raises-200m-to-scale-the-observability-backbone-for-the-age-of-ai.html",
           "source_title": "Coralogix Raises $200M to Scale the Observability Backbone",
           "source_content_hash": "27161596ef089bb3e468f1635540a3380318e0deb11e7fa8a3ca122fc2747a22",
-          "quote": "bservability, today announced it has raised $200 million in Series F funding. The round was co-led by Advent, CPPIB, and Greenfield, with participation from Brighton Park Capital, bringing total funding in Coralogix to $550M. “AI is fundamentally changing the way enterprises operate, and observability is quickly evolving into a core layer",
-          "quote_hash": "1d68098f665bec6ba99979472186acdca8eb6cbccb7dd99d5d78cbc970e6e55c"
+          "quote": "today announced it has raised $200 million in Series F funding. The round was co-led by Advent, CPPIB, and Greenfield, with participation from Brighton Park Capital",
+          "quote_hash": "6e83052f011518b9d94b4068eaf856ed1ee39127d30ac1a6416a3717752ec442"
+        },
+        {
+          "source_id": "FISRC-98f1098c86cb2286",
+          "source_url": "https://www.globenewswire.com/news-release/2026/06/03/3306135/0/en/coralogix-raises-200m-to-scale-the-observability-backbone-for-the-age-of-ai.html",
+          "source_title": "Coralogix 融资 2 亿美元，为 AI 时代扩展可观测性骨干",
+          "source_content_hash": "d20ed695940e0cb15ecd2d8bc0ac9cd1ad59744672f140cde649e21c0f78d2de",
+          "quote": "The round was co-led by Advent, CPPIB, and Greenfield, with participation from Brighton Park Capital",
+          "quote_hash": "d89a64b44da20dbe76bb8b3497871ca6ca1e090e6ae51e89c17108ba3e119136"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

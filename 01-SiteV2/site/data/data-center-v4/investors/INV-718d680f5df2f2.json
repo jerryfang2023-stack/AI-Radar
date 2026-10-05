@@ -194,10 +194,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "IT之家和中国日报分别将朝晖资本列为凌川科技 A+ 轮、秋水半导体融资的参与机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "法人名称和机构介绍来自36氪第三方机构资料页，不是企业或监管机构的一手登记。公开交易报道只支持对应活动，不据此推断已登记基金管理人身份或基金规模。",
+      "summary": "36氪机构资料页将朝晖资本对应为深圳市朝晖管理咨询有限公司，列示其2020年成立，并将其描述为聚焦数字科技与先进制造的精品投行，业务包括私募融资、并购重组、战略规划和股权投资基金。IT之家与中国日报报道分别将朝晖资本列入公开融资活动；法人登记仍需以官方登记材料进一步核验。",
+      "facts": [
+        {
+          "field": "reported_legal_entity",
+          "label": "第三方机构页列示的法人名称",
+          "value": "36氪机构资料页将“朝晖资本”对应为深圳市朝晖管理咨询有限公司，并列示成立于2020年、所在地为广东省。",
+          "source_id": "PROFILE-COLLECT-INV-718d680f5df2f2-G-3"
+        },
+        {
+          "field": "business_description",
+          "label": "第三方资料页所述业务",
+          "value": "36氪称其是聚焦数字科技和先进制造的精品投行，业务包括私募融资、并购重组、战略规划和股权投资基金。",
+          "source_id": "PROFILE-COLLECT-INV-718d680f5df2f2-G-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -226,9 +239,25 @@
           "source_content_hash": "a7e1cdf1b1d0c6e0ac0f16f8267b403eea553b300fb51a0943eb45efe4b20b02",
           "quote": "9 16:34 分享到微信 摘要：8英寸混合键合产线将于年内投产，突破AI眼镜显示功能量产瓶颈。 硬氪获悉，Micro-LED显示技术公司「秋水半导体」已于近期连续完成Pre-A及A轮融资，合计近2亿元人民币。本轮融资由朝晖资本领投，通商基金、盛宇投资、宁波人才发展基金、嘉溢创投、涌现科技、数字光芯及兴棠资本跟投，兴棠资本担任长期财务顾问。本轮融资资金将主要用于在宁波高新区建设8英寸混合键合量产线及后续研发投入。 「秋水半导体」成立于2022年11月，是一家专注于Micro-LED微显示芯片与模组的半导体公司，产品覆盖数字车灯、AR眼镜、微投影等应用领域。公司总部原在苏州，近期已整体搬迁至宁波。 Micro-LED常被认为是下一代显示技术的重要方向，但过去几年量产进程始终",
           "quote_hash": "9ab29b554b3a6dab629e2f26785b2da2b2b5c671c448726ab8c98f2aec114a10"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-718d680f5df2f2-G-3",
+          "source_url": "https://pitchhub.36kr.com/organization/1728263684423425",
+          "source_title": "朝晖资本 | 投资机构信息-36氪",
+          "source_content_hash": "98bc3341f0fd71eb8e036015d6f8c1089efe68e6b02b5d45ae42311bd8b538b1",
+          "quote": "朝晖资本 深圳市朝晖管理咨询有限公司 其他 成立时间：2020年 所在地：广东省",
+          "quote_hash": "e79e5e6a680390fdd4535b19ba2fe79584b15e83401e26dd1f2fa0a4035bf44e"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-718d680f5df2f2-G-4",
+          "source_url": "https://pitchhub.36kr.com/organization/1728263684423425",
+          "source_title": "朝晖资本 | 投资机构信息-36氪",
+          "source_content_hash": "98bc3341f0fd71eb8e036015d6f8c1089efe68e6b02b5d45ae42311bd8b538b1",
+          "quote": "朝晖资本是一家专注于“数字科技、先进制造”产业的精品投行，业务包括：私募融资、并购重组、战略规划、股权投资基金等。",
+          "quote_hash": "e717f1b488224fcd821df7a30782977a3f46c16f2d4e34aba95ff124f9b4ca41"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

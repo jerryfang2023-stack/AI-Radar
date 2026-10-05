@@ -182,10 +182,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "Target Global官网称其投资于转型型科技企业；档案仅记录已核对的融资活动示例。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "品牌定位来自 Target Global 官网；Alta 融资参与来自公司新闻稿。仅记录已披露的参投案例，不推断基金规模或完整组合。",
+      "summary": "Target Global 官网称其通过投资变革性科技来支持企业成长。Alta融资公告将其列为现有投资方之一；公告没有说明其在本轮的单独出资金额。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资主张",
+          "value": "Target Global 表示其通过投资变革性科技来支持增长。",
+          "source_id": "PROFILE-f8d26a252ff22a7aeff1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {

@@ -123,9 +123,16 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Figma官网将其产品定位为协作画布，面向设计、代码与AI工作。Supabase的Series E公告列明Figma参与该轮融资；这里只记录这一项已披露活动，不推断其投资策略或另设投资机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Figma 官网将其产品描述为面向设计、代码和 AI 的协作画布。Supabase 的 Series E 公告将 Figma 列为该轮参与者；目前只记录这项已披露的企业投资活动，不推断其设有独立风险投资机构。",
+      "facts": [
+        {
+          "field": "business_profile",
+          "label": "官网披露的产品定位",
+          "value": "Figma 官网将其定位为服务设计、代码与 AI 的协作画布。",
+          "source_id": "PROFILE-S-INV-2a067bfbe4587d-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -164,6 +171,14 @@
           "quote_hash": "3a3f7fb72db8bf0228d4e857855c638723d1b26bedb01003ec45269de18744b6"
         },
         {
+          "source_id": "PROFILE-S-INV-2a067bfbe4587d-3",
+          "source_url": "https://www.figma.com/about/",
+          "source_title": "Figma: The collaborative canvas for design, code, and AI",
+          "source_content_hash": "2d8b669242651334a47826ef333ac5ab89cc477349608baa9f02b4c4bd37150d",
+          "quote": "The collaborative canvas for design, code, and AI",
+          "quote_hash": "25a850873c2793b6a58668a686f93a15eba416ea60d2253aa30e937312c737ee"
+        },
+        {
           "source_id": "FISRC-82ffe0698cc49d27",
           "source_url": "https://supabase.com/blog/supabase-series-e",
           "source_title": "Supabase Series E",
@@ -172,8 +187,11 @@
           "quote_hash": "3a3f7fb72db8bf0228d4e857855c638723d1b26bedb01003ec45269de18744b6"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-10-04",
+      "coverage_note": "公司业务描述来自 Figma 官网；融资关系来自被投企业 Supabase 的公告。本档案未找到 Figma 独立 CVC 平台的官方资料。",
+      "current_roles": [],
+      "career": [],
+      "education": []
     },
     "translations": {
       "zh-CN": {

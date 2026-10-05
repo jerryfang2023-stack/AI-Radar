@@ -344,19 +344,32 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "芯光界融资报道将 Redpoint 列为参与机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "团队岗位来自 Redpoint 官网，融资参与来自投中网。档案不把个别团队成员关注方向推断为机构整体策略，也不把披露案例扩展为完整组合。",
+      "summary": "Redpoint 官网团队页列出 early 与 growth 职能的投资岗位；投中网将 Redpoint 列为芯光界融资参与机构。个人岗位说明不代表全机构的完整投资策略。",
+      "facts": [
+        {
+          "field": "investment_team_early",
+          "label": "早期投资团队",
+          "value": "官网将 Jordan Segall 标为 Partner, early。",
+          "source_id": "PROFILE-COLLECT-INV-9621fad4c05817-1"
+        },
+        {
+          "field": "investment_team_growth",
+          "label": "成长投资团队",
+          "value": "官网将 Scott Raney 标为 Managing Director, growth。",
+          "source_id": "PROFILE-COLLECT-INV-9621fad4c05817-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "芯光界融资报道将 Redpoint 列入本轮投资机构。",
-          "source_id": "FISRC-09a0a8d8826c2cfe"
-        },
-        {
           "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dc8fb918b056c843"
+        },
+        {
+          "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-09a0a8d8826c2cfe"
         },
         {
           "description": "融资来源记录：Modal · C轮 · 2026-05-21 · 本轮联合领投 · $355 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -366,12 +379,28 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "source_id": "PROFILE-COLLECT-INV-9621fad4c05817-1",
+          "source_url": "https://www.redpoint.com/our-people/",
+          "source_title": "Team | Redpoint Ventures",
+          "source_content_hash": "bbaf0e1ddb125cff80500a4b1a1c26a4a65b1d1ed54e76fa131762b399be7fc2",
+          "quote": "Jordan Segall Partner , early",
+          "quote_hash": "ae163d759fec4a180ed40c997556fd94980aa3ffafab8e16272f2ce8ed6fd35d"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-9621fad4c05817-2",
+          "source_url": "https://www.redpoint.com/our-people/",
+          "source_title": "Team | Redpoint Ventures",
+          "source_content_hash": "bbaf0e1ddb125cff80500a4b1a1c26a4a65b1d1ed54e76fa131762b399be7fc2",
+          "quote": "Scott Raney Managing Director , growth",
+          "quote_hash": "468798357b040a4ba59097696354b9c0205c3ad3c066eeaf653bd9f3dc5ae2d6"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-9621fad4c05817-3",
           "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
           "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿 | 投中网",
-          "source_content_hash": "07769d7354864bacbc3aca99d89b0c60720a78c93e72560ce8ed28387a4b4245",
-          "quote": "这距离公司宣布完成上一轮天使+融资，仅过去不到一个月时间。 融资节奏快还只是一方面，从资方看，这也是一起标准的Club Deal：两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。其中，华映资本、Glory Ventures III以及松禾资本更是连押两轮。 关于芯光界的融资热度，还有几个细节值得分享： 其一，据了解，上述某国资背景基金从首次接触到最后完成协议签署只用了不到10天时间，这一流程速度直接创下",
-          "quote_hash": "8f0ec6255fd132f9f5b90f730671dd3c5ccb9da97f29855c32745ccea399119c"
+          "source_content_hash": "a1fa7cec1c9f7c2a59cbe5ad258bce1d31de0cea3c1d39874e34347950bbc777",
+          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本",
+          "quote_hash": "0450d404b7d4986faea8c1e25c09c9c9cae769c488fb05dd3b569c25f40e30b0"
         },
         {
           "source_id": "FISRC-dc8fb918b056c843",
@@ -382,6 +411,14 @@
           "quote_hash": "822a3945748c96e0b198b8636dc8927a98d0b6a3a62939960ae30251cac425cb"
         },
         {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+          "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+        },
+        {
           "source_id": "FISRC-733016c3a34668d3",
           "source_url": "https://modal.com/blog/modal-series-c",
           "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
@@ -390,7 +427,7 @@
           "quote_hash": "eb1d354d77b77301b97269301f89be55e3aa7bd2f5428bd46a0423b8d83ed7e9"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

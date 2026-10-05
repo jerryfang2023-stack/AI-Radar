@@ -125,29 +125,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "基金身份依据清华大学电子工程系对“无限基金 SEE Fund”的介绍；具体种子轮参与关系来自量子位对基元律动后续融资的报道，尚未找到发行方原始种子轮公告。本档案不推断其具体投资管理公司或法律基金载体。",
-      "summary": "清华大学电子工程系介绍的基金品牌为“无限基金 SEE Fund”。量子位 2026 年 8 月关于基元律动后续融资的报道回溯其早期种子轮时，将“无限基金”列为参投方之一；种子轮公告未披露该机构的单独出资额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金发起方与投资方向来自清华大学电子工程系页面；TokenRhythm 投资活动来自公开融资资料。清华页面披露首期及二期目标规模，不在此写入时效性规模字段。",
+      "summary": "清华大学电子工程系介绍，无限基金 SEE Fund 由清华大学电子工程系与天津电子院共同推动设立，聚焦信息科技、高端制造及医工结合领域的早期项目。融资记录将其列为 TokenRhythm 种子轮投资方。",
+      "facts": [
+        {
+          "field": "fund_origin",
+          "label": "发起方",
+          "value": "由清华大学电子工程系与天津电子院共同推动设立",
+          "source_id": "PROFILE-B12-INV-b882dd235e65ce-3"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "信息科技、高端制造、医工结合",
+          "source_id": "PROFILE-B12-INV-b882dd235e65ce-4"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期项目",
+          "source_id": "PROFILE-B12-INV-b882dd235e65ce-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "量子位于 2026 年 8 月报道基元律动后续融资时，回溯称其此前种子轮由 Granite Asia 领投，鼎晖 VGC、元璟资本、无限基金参与；未披露无限基金的单独出资额。",
-          "source_id": "tokenrhythm-seed-infinite-fund"
+          "source_id": "PROFILE-B12-INV-b882dd235e65ce-2"
         },
         {
           "description": "融资来源记录：基元律动 · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f23d61f5ed1d1ac1"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.ee.tsinghua.edu.cn/info/1375/3052.htm",
+          "source_id": "PROFILE-B12-INV-b882dd235e65ce-3"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "基金身份依据清华大学电子工程系对“无限基金 SEE Fund”的介绍；具体种子轮参与关系来自量子位对基元律动后续融资的报道，尚未找到发行方原始种子轮公告。本档案不推断其具体投资管理公司或法律基金载体。",
+      "experience_summary": "",
       "sources": [
         {
-          "source_id": "see-fund-identity",
+          "source_id": "PROFILE-B12-INV-b882dd235e65ce-1",
           "source_url": "https://www.ee.tsinghua.edu.cn/info/1375/3052.htm",
           "source_title": "SEE FUND-清华大学电子工程系",
           "source_content_hash": "715c2914ab003b37d80783e946405bc59a7630c3fd14cfb927f5534078d40aeb",
@@ -155,12 +182,28 @@
           "quote_hash": "a0ddcc55f2ddce3be5b157502f47ad6e904cab1a5b4d6d506ec6be2b80e7528b"
         },
         {
-          "source_id": "tokenrhythm-seed-infinite-fund",
+          "source_id": "PROFILE-B12-INV-b882dd235e65ce-2",
           "source_url": "https://www.qbitai.com/2026/08/480079.html",
           "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter” &#8211; 量子位",
-          "source_content_hash": "5ba9611286c4ca3360acd75c3839c21edaa2c46445b9b2de47ab3058337349a8",
+          "source_content_hash": "bd957881bd1c91acdad18d1f82414c1b80485719c572dad3f9a17d64ff385807",
           "quote": "Granite Asia领投，鼎晖VGC、元璟资本、无限基金参与的种子轮融资",
           "quote_hash": "6b381c8f1c9579902f302eb8da544d900462debe50893be2bf5edfcc98338f2e"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b882dd235e65ce-3",
+          "source_url": "https://www.ee.tsinghua.edu.cn/info/1375/3052.htm",
+          "source_title": "SEE FUND-清华大学电子工程系",
+          "source_content_hash": "715c2914ab003b37d80783e946405bc59a7630c3fd14cfb927f5534078d40aeb",
+          "quote": "无限基金SEE Fund是由清华大学电子工程系和天津电子院共同推动发起设立",
+          "quote_hash": "a0ddcc55f2ddce3be5b157502f47ad6e904cab1a5b4d6d506ec6be2b80e7528b"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b882dd235e65ce-4",
+          "source_url": "https://www.ee.tsinghua.edu.cn/info/1375/3052.htm",
+          "source_title": "SEE FUND-清华大学电子工程系",
+          "source_content_hash": "715c2914ab003b37d80783e946405bc59a7630c3fd14cfb927f5534078d40aeb",
+          "quote": "围绕清华电子信息相关领域，主要针对清华大学及其它顶尖高校教授与校友创办的前沿科技类企业进行投资，瞄准“信息科技、高端制造、医工结合”三个方向的早期项目。",
+          "quote_hash": "dc61880738278e11eb05cef662cf9688f099ac086eddbc01522721e7145058ed"
         },
         {
           "source_id": "FISRC-f23d61f5ed1d1ac1",
@@ -171,7 +214,7 @@
           "quote_hash": "3fd204915d433415c506545b5de000a0746aa9ad3b55be436294053ae07244cf"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

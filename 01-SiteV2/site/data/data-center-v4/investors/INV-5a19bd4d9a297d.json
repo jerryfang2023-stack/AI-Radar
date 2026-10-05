@@ -139,9 +139,9 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "基金管理人和母基金策略依据集团公示；融资参与依据被投企业融资报道，不代表完整投资组合。",
-      "summary": "浙江省创新投资集团的公示将“浙创科技”对应浙江省创新科技私募基金管理有限公司，并说明其管理浙江省科创母基金（二期）；蜂巢互联融资报道也将浙创科技列为区域国资股东。本档只覆盖已披露信息。",
+      "coverage_status": "researched",
+      "coverage_note": "集团、管理人和基金为不同层级；基金运作方式引用管理人公告，不将集团或母基金等同于管理人。",
+      "summary": "“浙创科技”是浙江省创新科技私募基金管理有限公司的简称，属于浙江省创新投资集团旗下的基金管理平台。集团公告列明其负责浙江省科创母基金等基金的投资运作，相关基金采用“子基金+直投”模式并重点支持早期科创企业。蜂巢互联融资报道另将浙创科技列入区域国资股东。",
       "facts": [
         {
           "field": "fund_manager",
@@ -154,6 +154,24 @@
           "label": "管理基金运作",
           "value": "子基金与直投并行，重点支持早期科创企业",
           "source_id": "PROFILE-94ae1ef56c044fe79623"
+        },
+        {
+          "field": "legal_name",
+          "label": "集团官网披露的管理人全称",
+          "value": "浙江省创新投资集团官网将浙创科技对应为浙江省创新科技私募基金管理有限公司。",
+          "source_id": "PROFILE-S-INV-5a19bd4d9a297d-3"
+        },
+        {
+          "field": "fund_management",
+          "label": "管理人官网披露的受托基金",
+          "value": "浙创科技负责浙江省创投基金、浙江省社保未来基金、浙江省科创母基金等基金的投资运作。",
+          "source_id": "PROFILE-S-INV-5a19bd4d9a297d-4"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "管理人公告披露的基金运作方式",
+          "value": "浙江省科创母基金采用子基金和直投并行的运作模式。",
+          "source_id": "PROFILE-S-INV-5a19bd4d9a297d-5"
         }
       ],
       "milestones": [],
@@ -180,9 +198,33 @@
           "source_content_hash": "d14110eba1a1beea7dde559c57889ac1f2a323df193ce26a04c4cd7e8e38c735",
           "quote": "结构进一步优化完善，形成国资CVC、市场化投资机构、产业资本三方互补、长期协同的战略股东体系。 国资股东覆盖多省市重点产业投资平台，包括 深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金 等区域国资，深度联动各地高端制造产业资源，助力区域工业数字化转型落地； 市场化专业投资机构汇聚 鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、 中信证券 、珂玺资本 等深耕硬科技智能制造赛道的头部投资机构，聚焦企业长期价值成长； 产业链投资方引入 海尔资本、 利元亨 、中软国际、 金百泽 等上下游，实现技术、客户、场景双",
           "quote_hash": "806aa0bb50a135332dfe1c6dd0f47edcedc71c054f4276d5e26da06e7f81830d"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5a19bd4d9a297d-3",
+          "source_url": "https://mostshine.com/scxtzjt2025/index.html",
+          "source_title": "浙江省创新投资集团有限公司",
+          "source_content_hash": "4123872379443cc996d9581408a54526f2d7dfd05b94b97132a5fa1d108321db",
+          "quote": "浙江省创新科技私募基金管理有限公司 （简称“浙创科技”",
+          "quote_hash": "170d64adfa3fc73e15d8c07021ab0698581921e289c5132c6966452bfeb46431"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5a19bd4d9a297d-4",
+          "source_url": "https://mostshine.com/scxtzjt2025/index.html",
+          "source_title": "浙江省创新投资集团有限公司",
+          "source_content_hash": "4123872379443cc996d9581408a54526f2d7dfd05b94b97132a5fa1d108321db",
+          "quote": "主要负责浙江省创投基金、浙江省社保未来基金、浙江省科创母基金等投资运作",
+          "quote_hash": "b2a5bad19f96a7cfc8b500120539e7f36550c038b2f99580cd525a78b3cd5722"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5a19bd4d9a297d-5",
+          "source_url": "https://www.zjfh.cn/publicDetail_9_1531",
+          "source_title": "浙江省创新投资集团有限公司-公示公告",
+          "source_content_hash": "f9295fd54104f3a4028b2aa7f44f1df21bde53fd16822553d2ff4693e429d6e8",
+          "quote": "浙江省科创母基金采用“子基金+直投”的运作模式",
+          "quote_hash": "aa64515d63ebbe6e89c253d670880ad0cc797f155cf632d69130723af0e2ac34"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

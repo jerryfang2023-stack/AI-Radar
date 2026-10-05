@@ -139,10 +139,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资参与关系依据 SambaNova 官方公告；未补写基金背景或完整投资组合。",
-      "summary": "SambaNova 官方 Series F 公告将 Volantis 列为新进或既有投资者之一。本档只记录该项公开融资披露。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构类型与科技投资方向来自 Volantis 自有网站；SambaNova 融资关系采用发行方官方公告。未将其他同名 Volantis 机构混同。",
+      "summary": "Volantis 官网将其描述为专注于领先科技公司的私人投资机构。SambaNova 官方 Series F 首次交割公告将 Volantis 列入投资方，本档只记录该项披露。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露的机构类型",
+          "value": "Volantis 自称为私人投资机构，关注领先科技公司。",
+          "source_id": "PROFILE-S-INV-67d2150793b5e7-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -165,6 +172,14 @@
           "quote_hash": "50b0fb9e64fec54a936b277eb80dc47b10a3db650657adc497a061f89d1adbb8"
         },
         {
+          "source_id": "PROFILE-S-INV-67d2150793b5e7-2",
+          "source_url": "https://volantis.vc/",
+          "source_title": "Volantis Capital Management",
+          "source_content_hash": "d0b07a96dfd318beadea4c3f120808cba0e2d793f38db81b28e3fcee6d68314c",
+          "quote": "Volantis is a private investment firm pursuing select opportunities in leading technology companies",
+          "quote_hash": "11c9d6c0e5ea4096771b1496d84d06754e775628a5aa04cef3538094410d20e9"
+        },
+        {
           "source_id": "FISRC-dbf8259066547c8e",
           "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
           "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
@@ -173,7 +188,7 @@
           "quote_hash": "81c4c8d52992fd6b115c600c10965e767672391c086bc6cdf57418129f971340"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

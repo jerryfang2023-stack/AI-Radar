@@ -196,10 +196,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合，也不推断来源未披露的法人或基金归属。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构背景和创始人信息来自 Euronext 公告；General Intuition 融资参与来自 GamesBeat，未披露其具体出资主体或单独金额。",
+      "summary": "Euronext上市公告将 Hedosophia 描述为投资技术公司的全球投资者，由联合创始人 Ian Osborne 领导。GamesBeat 将 Hedosophia 列为 General Intuition 3.2亿美元融资参与方之一。",
+      "facts": [
+        {
+          "field": "firm_profile",
+          "label": "Euronext公告披露的投资机构定位",
+          "value": "Hedosophia 被描述为投资领先科技公司的全球投资者，由联合创始人兼CEO Ian Osborne领导。",
+          "source_id": "PROFILE-COLLECT-INV-e1605a818572cd-N-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -220,6 +227,14 @@
           "source_content_hash": "76f037daf7bc1164c0845ed23624db3555dd5816a6ba45e842ec6db0526d659c",
           "quote": "Others investors include General Catalyst, Hedosophia, Jeff Bezos, Eric Schmidt and Nico Rosberg.",
           "quote_hash": "6b3050dd8661320fbb8ffced70a7cb014cc88c29a30bcf6d163e33337e1e4286"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-e1605a818572cd-N-2",
+          "source_url": "https://www.euronext.com/sites/default/files/2021-05/PR%20-%20Listing%20Hedosphia%20Euronext%20Amsterdam%2020210512.pdf",
+          "source_title": "Hedosophia lists on Euronext Amsterdam — Euronext release extract",
+          "source_content_hash": "b9f2e43ede372067a6411e639121cc542bd7f7fd1674ca9c2079059546be3056",
+          "quote": "Hedosophia, a global investor in leading technology companies led by co-founder and current Chief Executive Officer Ian Osborne.",
+          "quote_hash": "7d49b526ba9efd99e753494b43625fc534032027819a5af595dd0eafb7b3e0e2"
         },
         {
           "source_id": "FISRC-58b2708f2adcb70e",

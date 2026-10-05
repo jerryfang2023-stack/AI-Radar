@@ -139,33 +139,82 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段和基金规模来自 Seedcamp 官方页面；Metaview 是发行方公布的单一参与案例，不代表完整投资组合。",
+      "summary": "Seedcamp 是欧洲早期投资基金。官网称其自 2007 年以来在最早期阶段支持超过 1,250 名创始人；其 Fund VII 包括 2.2 亿美元的 first-check 基金，以及用于为组合公司追加投资的 1 亿美元 Select 基金。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "开始运营年份",
+          "value": "2007",
+          "source_id": "B24-SEEDCAMP-PROFILE"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "欧洲早期、first-check 阶段；Select 基金可对组合公司追加投资至 Series B 及以后。",
+          "source_id": "B24-SEEDCAMP-FUND"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Metaview C轮 本轮参投。",
+          "description": "Metaview 官方公告称其 2026 年 9 月完成 6,000 万美元 Series C，Seedcamp 为参与投资方之一。",
+          "source_id": "B24-SEEDCAMP-METAVIEW"
+        },
+        {
+          "description": "融资来源记录：Metaview · C轮 · 2026-10-01 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-62e06e29d2d7be04"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://seedcamp.com/",
+          "url": "https://seedcamp.com/",
+          "source_id": "B24-SEEDCAMP-PROFILE"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "B24-SEEDCAMP-PROFILE",
+          "source_url": "https://seedcamp.com/head-of-founder-partnerships/",
+          "source_title": "Head of Founder Partnerships - Seedcamp",
+          "source_content_hash": "e7b62e295f2863618399aa5ac9bdea029cb5ae693a6a49b3223f5c5f4da20f73",
+          "quote": "Seedcamp is Europe’s seed fund. Since 2007, we have backed over 1,250 founders at the earliest stage, before most investors will look, when the idea is still raw and the team is still small.",
+          "quote_hash": "5a74a8c2a4502390c385a0ca5e2b7d141d3c769a624c7466a5f3a480d58ad9e0"
+        },
+        {
+          "source_id": "B24-SEEDCAMP-FUND",
+          "source_url": "https://seedcamp.com/fund-vii/",
+          "source_title": "Introducing Fund VII — Seedcamp",
+          "source_content_hash": "50ae894f2e332304506f3236fbda59103b704d2e41ee04dcc02ee8b59646d665",
+          "quote": "$220 million for Fund VII, our flagship first-check fund and $100 million for our Select fund, so we can double down on our portfolio through Series B and beyond.",
+          "quote_hash": "9b2b046a6127eccbb633f9e6017a73f89f023494997eab69ac3abbe87130b3dc"
+        },
+        {
+          "source_id": "B24-SEEDCAMP-METAVIEW",
+          "source_url": "https://www.metaview.ai/resources/blog/metaview-raised-an-additional-60m-to-lead-the-shift-to-agentic-recruiting",
+          "source_title": "We raised an additional $60M to lead the shift to Agentic Recruiting. · Metaview Blog",
+          "source_content_hash": "ee908027b705dc03df9928e218f5ca41ae7f8856d88837b785ff17e120be9b83",
+          "quote": "Metaview has raised a $60M Series C led by Insight Partners, with participation from GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
+          "quote_hash": "e7f36e1b8110c56a5be3639e18e7c38c570f33c5dba0af2f4b0fe94af0e29dba"
+        },
         {
           "source_id": "FISRC-62e06e29d2d7be04",
           "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
-          "source_title": "Metaview Raises $60M Series C",
-          "source_content_hash": "2d40f005fcc9e7180cc0d68e88b55dceeb607e3448dc1ed110509df983c1e94f",
+          "source_title": "Metaview 完成 6000 万美元 C 轮融资",
+          "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
           "quote": "Additional investors participating in the round include GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
           "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "Seedcamp 是欧洲早期投资基金。官网称其自 2007 年以来在最早期阶段支持超过 1,250 名创始人；其 Fund VII 包括 2.2 亿美元的 first-check 基金，以及用于为组合公司追加投资的 1 亿美元 Select 基金。"
     }
   }
 }

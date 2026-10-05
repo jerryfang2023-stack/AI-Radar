@@ -123,30 +123,81 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "WindBorne Systems 官方公告确认 Footwork VC 参与其 Series A。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、单笔金额及关注领域来自 Footwork 官网；WindBorne的融资活动来自被投公司公告，未披露 Footwork 单独出资额。",
+      "summary": "Footwork 官网将其定位为早期风险投资机构，主要领投或联合领投 Seed 与 Series A，初始投资额通常为100万至1500万美元，关注消费科技及企业科技的消费化。WindBorne 官方融资公告将 Footwork VC 列为其 Series A 参投方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Footwork官网称其领投或联合领投具有早期产品市场契合信号的 Seed 与 Series A。",
+          "source_id": "PROFILE-B11-INV-b1ba670a825f1e-1"
+        },
+        {
+          "field": "ticket_size",
+          "label": "投资规模",
+          "value": "官网称初始投资通常为100万至1500万美元。",
+          "source_id": "PROFILE-B11-INV-b1ba670a825f1e-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "官网称其关注消费科技及企业科技的消费化。",
+          "source_id": "PROFILE-B11-INV-b1ba670a825f1e-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "参与 WindBorne Systems Series A。",
-          "source_id": "PROFILE-5f0552069cda04a6d267"
+          "description": "WindBorne官方公告将 Footwork VC 列为其 Series A 参投方；未披露单独金额。",
+          "source_id": "PROFILE-B11-INV-b1ba670a825f1e-4"
         },
         {
           "description": "融资来源记录：WindBorne Systems · 历史轮次未披露 · 种子轮领投方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-08b1a89e7ab437e8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.footwork.vc/",
+          "source_id": "PROFILE-B11-INV-b1ba670a825f1e-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-5f0552069cda04a6d267",
+          "source_id": "PROFILE-B11-INV-b1ba670a825f1e-1",
+          "source_url": "https://www.footwork.vc/",
+          "source_title": "Footwork",
+          "source_content_hash": "8a83d1d58cb39476e5a1d5e17fb2691fe6604d9b817e748faf454207368bc533",
+          "quote": "We lead and co-lead Series A and Seed rounds, in companies with early signs of product-market fit.",
+          "quote_hash": "36b3338a6b3be3c576397f132eba4ea9b6282ed3409e251ea7c0cd841f78ac94"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-b1ba670a825f1e-2",
+          "source_url": "https://www.footwork.vc/",
+          "source_title": "Footwork",
+          "source_content_hash": "8a83d1d58cb39476e5a1d5e17fb2691fe6604d9b817e748faf454207368bc533",
+          "quote": "We typically invest between $1 and $15 million initially.",
+          "quote_hash": "2324d61a8ea6db0b7a68788e24c289a9826bcffe446bec619c67c54243286ded"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-b1ba670a825f1e-3",
+          "source_url": "https://www.footwork.vc/",
+          "source_title": "Footwork",
+          "source_content_hash": "8a83d1d58cb39476e5a1d5e17fb2691fe6604d9b817e748faf454207368bc533",
+          "quote": "We focus on consumer technology and the consumerization of enterprise technology.",
+          "quote_hash": "36226001cefd0a53edec2b1d4d003a72c26005b2b244b7c362e005c2d0b7136b"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-b1ba670a825f1e-4",
           "source_url": "https://windbornesystems.com/blog/windborne-raises-15-million-to-scale-its-balloon-constellation-and-bring-ai-weather-modeling-to-the-fight-against-climate-change",
           "source_title": "WindBorne Raises $15 Million to Scale Its Balloon Constellation and Bring AI Weather Modeling to the Fight Against Climate Change",
           "source_content_hash": "5c2d8147efc3d5e52b12871226dd277a2fda46ac63a6de6d14d18604c5836368",
-          "quote": "Ventures, which earlier led WindBorne’s pre-seed round in 2019 and will take a board seat. Existing investors Footwork VC, Pear VC, and Convective Capital also participated in the round. The funding round comes three months after WindBorne unveiled its deep learning-based weather forecast model, named WeatherMesh , which has unseated Google DeepMind’s GraphC",
-          "quote_hash": "39fbc4dc438480aad071b66ee796f17a19ae922854a734009cd2ab75986dccd6"
+          "quote": "Existing investors Footwork VC, Pear VC, and Convective Capital also participated in the round.",
+          "quote_hash": "e4562cd39f69a7f731064b69cdd5c6d94074cf32eea2cc61058a3bbf48c0d20c"
         },
         {
           "source_id": "FISRC-08b1a89e7ab437e8",
@@ -157,7 +208,7 @@
           "quote_hash": "b906315cd8f83b694c1c16e661dc18cd079d6edad775871e1bda9d46b255049d"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -137,61 +137,85 @@
       }
     ],
     "public_profile": {
-      "summary": "安徽迎驾贡酒股份有限公司作为白酒上市公司，公告披露其以有限合伙人身份认缴出资1亿元参与君联良道股权投资基金。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "主体简介据2026年半年度报告；投资记录据公司公告，为对合伙企业的认缴出资，不代表对项目公司的直接投资。",
+      "summary": "迎驾贡酒是白酒研发、生产和销售企业。公司2026年公告披露以自有资金认缴杭州君联良道股权投资合伙企业1亿元并作为有限合伙人参与；该款项是基金认缴，不等同于对具体项目公司的直接投资。",
       "facts": [
         {
-          "field": "investment_activity",
-          "label": "公司公告",
-          "value": "以有限合伙人身份认缴1亿元参与杭州君联良道股权投资合伙企业。",
-          "source_id": "PROFILE-INV-a154792cd05d15-1"
+          "field": "business_scope",
+          "label": "主营业务",
+          "value": "白酒研发、生产和销售",
+          "source_id": "PROFILE-B13-INV-a154792cd05d15-2"
         },
         {
-          "field": "fund_manager_relationship",
-          "label": "公司公告",
-          "value": "该基金管理人为君联资本管理股份有限公司。",
-          "source_id": "PROFILE-INV-a154792cd05d15-2"
+          "field": "investment_vehicle",
+          "label": "基金投资载体",
+          "value": "杭州君联良道股权投资合伙企业（有限合伙）；公告披露其投资范围包括股权投资及创业投资。",
+          "source_id": "PROFILE-B13-INV-a154792cd05d15-5"
         }
       ],
       "milestones": [],
       "track_record": [
         {
+          "description": "2026年公告披露，迎驾贡酒作为有限合伙人以自有资金认缴杭州君联良道股权投资合伙企业1亿元；认缴金额不表述为实缴。",
+          "source_id": "PROFILE-B13-INV-a154792cd05d15-4"
+        },
+        {
           "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f5fa738edf400dda"
         }
       ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "只记录该笔私募基金有限合伙出资活动；基金管理人为君联资本，不将迎驾贡酒描述为基金管理人。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "迎驾贡酒官网",
+          "url": "https://www.yingjia.cn/",
+          "source_id": "PROFILE-B13-INV-a154792cd05d15-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-INV-a154792cd05d15-1",
-          "source_url": "https://static.cninfo.com.cn/finalpage/2026-05-19/1225314083.PDF?source_capture=2026-10-03&cycle=15",
-          "source_title": "迎驾贡酒私募基金合作投资公告",
-          "source_content_hash": "fdf3a05e4207747813fae8d2b1058826d7f4c2857758eb14f480e706f1df0a06",
-          "quote": "公司作为有限 合伙人以自有",
-          "quote_hash": "6bef7ebe2212f53b0cf5be6d52f3aab8e3ef12f5ec67ae751869d7e3c55e7826"
+          "source_id": "PROFILE-B13-INV-a154792cd05d15-1",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225501933.PDF",
+          "source_title": "安徽迎驾贡酒股份有限公司2026年半年度报告",
+          "source_content_hash": "e3eb52403d5db8f7ad50490ae0205fbe175470ba98c383d4a9edd00c2e10f655",
+          "quote": "公司的中文简称 迎驾贡酒",
+          "quote_hash": "189e0f980547a22c9763b9bd8fd6f3eebcbd3807993a168588b43ae40db1e70b"
         },
         {
-          "source_id": "PROFILE-INV-a154792cd05d15-2",
-          "source_url": "https://static.cninfo.com.cn/finalpage/2026-05-19/1225314083.PDF?source_capture=2026-10-03&cycle=15",
-          "source_title": "迎驾贡酒私募基金合作投资公告",
-          "source_content_hash": "fdf3a05e4207747813fae8d2b1058826d7f4c2857758eb14f480e706f1df0a06",
-          "quote": "10,000 万元。",
-          "quote_hash": "d0e8432c006e625548c674b4bb49c86852ee3517d7ce75c64aea371a02dd86f8"
+          "source_id": "PROFILE-B13-INV-a154792cd05d15-2",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225501933.PDF",
+          "source_title": "安徽迎驾贡酒股份有限公司2026年半年度报告",
+          "source_content_hash": "e3eb52403d5db8f7ad50490ae0205fbe175470ba98c383d4a9edd00c2e10f655",
+          "quote": "公司主要从事白酒的研发、生产和销售",
+          "quote_hash": "257cdcfc684d44070eac1b3a3e9d6ae1e51ebe90381fae92444e1153676fde8e"
         },
         {
-          "source_id": "PROFILE-INV-a154792cd05d15-3",
-          "source_url": "https://static.cninfo.com.cn/finalpage/2026-05-19/1225314083.PDF?source_capture=2026-10-03&cycle=15",
-          "source_title": "迎驾贡酒私募基金合作投资公告",
-          "source_content_hash": "fdf3a05e4207747813fae8d2b1058826d7f4c2857758eb14f480e706f1df0a06",
-          "quote": "君联资本管理股份有限公司（以下简称“管理人”）",
-          "quote_hash": "7f8c32ae45ec8a5d97de35942575c772fc066a1cc84a75fc6959711be18ca995"
+          "source_id": "PROFILE-B13-INV-a154792cd05d15-3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-05-19/1225314083.PDF",
+          "source_title": "安徽迎驾贡酒股份有限公司与私募基金合作投资公告",
+          "source_content_hash": "26abdbd382bb2c0bc0ea2bf1c329d0d6106f4631400e10a44b61fce15370461c",
+          "quote": "杭州君联良道股权投资合伙企业（有限合伙）",
+          "quote_hash": "b73878b4dc45829dfed652fd214f1ef483eca3139ea39873d0e67a600957f7b5"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-a154792cd05d15-4",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-05-19/1225314083.PDF",
+          "source_title": "安徽迎驾贡酒股份有限公司与私募基金合作投资公告",
+          "source_content_hash": "26abdbd382bb2c0bc0ea2bf1c329d0d6106f4631400e10a44b61fce15370461c",
+          "quote": "作为有限合伙人以自有 资金认缴出资 10,000 万元",
+          "quote_hash": "40cfc6742b81670952828212dd34cd90620095801033053b456219612c113213"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-a154792cd05d15-5",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-05-19/1225314083.PDF",
+          "source_title": "安徽迎驾贡酒股份有限公司与私募基金合作投资公告",
+          "source_content_hash": "26abdbd382bb2c0bc0ea2bf1c329d0d6106f4631400e10a44b61fce15370461c",
+          "quote": "投资范围 为符合相关法律、法规要求及《合伙企业》约定的股权投资及创业投资",
+          "quote_hash": "c48cde29d642e444931074d3623b78c79eb0916b0bf1238811091ea37637813d"
         },
         {
           "source_id": "FISRC-f5fa738edf400dda",
@@ -202,7 +226,7 @@
           "quote_hash": "4f7de3e000eb80419ec27fd750e26ba56642a4e0089dde436f1d526a46bd7eb4"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -138,11 +138,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
       "summary": "Aiconic Ventures 是投资 AI 企业的风险投资机构，其官网将 Lumilens 列入投资组合。",
       "coverage_note": "机构身份和组合关系均来自 Aiconic Ventures 官网；不据媒体报道为 Lumilens 的具体融资轮次或 Aiconic 单独出资额背书。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "Aiconic Ventures 官网称其支持从 Pre-seed 到 Series B 的创业公司。",
+          "source_id": "PROFILE-R-INV-0da3f57abc5ef1-3"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "官网披露的投资主题",
+          "value": "官网称其聚焦技术含量高、由深度研究驱动的下一代 AI 公司，并帮助其连接东西方市场。",
+          "source_id": "aiconic_identity"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -177,6 +190,14 @@
           "quote_hash": "a253d10d4ba6f041ec600a1f825bbc165eaa911a25b44958e2244ab9f20ef32c"
         },
         {
+          "source_id": "PROFILE-R-INV-0da3f57abc5ef1-3",
+          "source_url": "https://www.aiconicventures.com/",
+          "source_title": "AI &amp; Deep Tech Venture Capital | AICONIC VENTURES",
+          "source_content_hash": "8d0e134244603274713cb724a2e11a28564285f09dc36e6236ceda4e79e3edd1",
+          "quote": "We back breakthrough innovations and iconic entrepreneurs from Pre-seed to Series B",
+          "quote_hash": "cafe6d266797d824e0f5296aef72d838b0b12ca0e4a7badd9ced9c8ecbcd301b"
+        },
+        {
           "source_id": "FISRC-1661d3e646fd132d",
           "source_url": "https://www.financialcontent.com/article/bizwire-2026-8-6-lumilens-emerges-from-stealth-with-more-than-900-million-in-funding-to-break-ais-connectivity-bottlenecks-in-the-data-center",
           "source_title": "Lumilens 携超9亿美元融资走出隐身模式，破解数据中心AI连接瓶颈",
@@ -185,7 +206,7 @@
           "quote_hash": "5c6dc8d8f04b41d8809db0a2dff73dab098ead2ec9aa2a5525d286176c5326f8"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

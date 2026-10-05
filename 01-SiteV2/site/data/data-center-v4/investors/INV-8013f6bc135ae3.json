@@ -137,23 +137,21 @@
       }
     ],
     "public_profile": {
-      "summary": "伯克希尔·哈撒韦2026年官方新闻索引列出其已完成对Taylor Morrison的收购。此条仅记录上市公司直接收购活动，不将其描述为风险投资基金或独立VC平台。",
+      "summary": "Alphabet 2026 年 6 月投资者材料披露 Berkshire Hathaway 投资 100 亿美元；SEC 文件显示相关股份购买协议由 Alphabet 与 Berkshire Hathaway 的关联方签订，交易为 100 亿美元私募配售。本档以公司文件记录该项投资，不将 Alphabet 整体增发金额误记为 Berkshire 的投资额。",
       "facts": [
         {
-          "field": "investment_activity",
-          "label": "公司官方公告索引披露的活动",
-          "value": "伯克希尔·哈撒韦列出已完成对Taylor Morrison的收购。",
-          "source_id": "PROFILE-INV-8013f6bc135ae3-1"
-        },
-        {
-          "field": "activity_scope",
-          "label": "来源范围",
-          "value": "该来源支持直接收购活动，不证明存在独立风险投资基金。",
-          "source_id": "PROFILE-INV-8013f6bc135ae3-1"
+          "field": "investment_amount",
+          "label": "Alphabet私募配售金额",
+          "value": "SEC 8-K 将该私募配售的总募集金额列为 100 亿美元。",
+          "source_id": "PROFILE-B4-INV-8013f6bc135ae3-2"
         }
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Alphabet 官方投资者材料称 Berkshire Hathaway 投资 100 亿美元；SEC 文件说明该交易通过其关联方完成。",
+          "source_id": "PROFILE-B4-INV-8013f6bc135ae3-1"
+        },
         {
           "description": "融资来源记录：Google · 后续发行 · 2026-06-03 · 本轮参投 · 850亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cb917372e663ab54"
@@ -161,29 +159,29 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "依据公司官方新闻索引的收购公告标题，限定为直接并购活动。",
+      "coverage_status": "researched",
+      "coverage_note": "金额及交易结构分别由 Alphabet 官方材料和 SEC 8-K 支持；协议签约方描述为 Berkshire Hathaway 的关联方，未推断具体关联方名称。",
       "current_roles": [],
       "career": [],
       "education": [],
       "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "2026 News Releases",
-          "value": "Berkshire Hathaway",
-          "url": "https://www.berkshirehathaway.com/news/2026news.html?source_capture=2026-10-03&cycle=12-browser",
-          "source_id": "PROFILE-INV-8013f6bc135ae3-1"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-INV-8013f6bc135ae3-1",
-          "source_url": "https://www.berkshirehathaway.com/news/2026news.html?source_capture=2026-10-03&cycle=12-browser",
-          "source_title": "2026 News Menu",
-          "source_content_hash": "0b6bd981df8bf6c09faa8375fb1a53470abd3b49091642b4ef26bb7bca21e70e",
-          "quote": "Berkshire Hathaway Completes Acquisition of Taylor Morrison",
-          "quote_hash": "d03e1119ce87b9d16f26f0b15968c64c46320b5759df8057d0a7936d22f70b3e"
+          "source_id": "PROFILE-B4-INV-8013f6bc135ae3-1",
+          "source_url": "https://blog.google/alphabet/investor-presentation-june-2026/",
+          "source_title": "Alphabet investor presentation: June 2026",
+          "source_content_hash": "c02acd9c486cc98fa05f20aaf38b661f985cb650646c735f460e391a729febf9",
+          "quote": "including a $10 billion investment from Berkshire Hathaway",
+          "quote_hash": "dbc25a9fa57341219287e1be0fb9e5e072a8d0e423419ed317c7fa3084d46c77"
+        },
+        {
+          "source_id": "PROFILE-B4-INV-8013f6bc135ae3-2",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526257724/d83560d8k.htm",
+          "source_title": "8-K",
+          "source_content_hash": "d51ec2fd0f7c37c9fc67b59029bfc724863692d16581524322f5d640a1b43182",
+          "quote": "the Company entered into a securities purchase agreement (the “Purchase Agreement”) with an affiliate of Berkshire Hathaway Inc. (“Berkshire Hathaway”) for the sale of 14,212,035 shares of Class A Common Stock at a price per share of approximately $351.81 and 14,359,656 shares of Class C Capital Stock at a price per share of approximately $348.20 (collectively, the “Private Placement Shares”), for gross proceeds of $10 billion.",
+          "quote_hash": "5ee37e131783837de1e93dc5fe3135a8f2d755aaa208ab7905399799088c33cc"
         },
         {
           "source_id": "FISRC-cb917372e663ab54",
@@ -194,7 +192,7 @@
           "quote_hash": "df21676237e3f182fb11711026514c94c150dbd22e91dd282d7fe142ea733457"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

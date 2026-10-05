@@ -137,35 +137,70 @@
       }
     ],
     "public_profile": {
+      "summary": "Listen 是一家自称专注消费者的风险投资机构，官网称其自 2010 年起与创业者合作打造品牌。TechCrunch 报道将 Listen 列为 Legato 融资参与方；新闻没有披露其具体基金或单独投资额。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网的 Listen 品牌与融资报道中的 Listen 名称一致；本档按品牌层级归档，不推断交易所用法律实体或基金。所列 Legato 交易是已披露案例，不代表完整投资组合。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "机构定位",
+          "value": "官网自述为消费者导向风险投资，并称成立于 2010 年。",
+          "source_id": "PROFILE-B14-INV-bcfd9179eaea74-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Legato 轮次未披露 本轮参投。",
+          "description": "TechCrunch 报道称 Legato 融资资金来自 Neotribe Ventures、Listen 和 Village Global；未披露 Listen 的具体载体或单独金额。",
+          "source_id": "PROFILE-B14-INV-bcfd9179eaea74-2"
+        },
+        {
+          "description": "融资来源记录：Legato · 轮次未披露 · 2026-08-26 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a7bcfb1a7209676"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Listen 官网",
+          "value": "https://listen.co/",
+          "url": "https://listen.co/",
+          "source_id": "PROFILE-B14-INV-bcfd9179eaea74-1"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-B14-INV-bcfd9179eaea74-1",
+          "source_url": "https://listen.co/",
+          "source_title": "LISTEN.co",
+          "source_content_hash": "5fb9df7b41d738c75d32b47f1d9f1edb63942fccc406dc5190606044df3cc89e",
+          "quote": "Consumer-obsessed venture capital. Founded in 2010, Listen partners with founders to build disruptive brands at the tipping point of behavior shifts.",
+          "quote_hash": "15f7703836b926a7bddd6d6f22791e14155f5a02a7deca9496a984f8edb4a4fd"
+        },
+        {
+          "source_id": "PROFILE-B14-INV-bcfd9179eaea74-2",
+          "source_url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses/",
+          "source_title": "Hearing tech startup Legato emerges from stealth with $12M and a peek at its AI hearing glasses | TechCrunch",
+          "source_content_hash": "0d37d97e12af2505b2e8291abd737419a4691c7f04b0c1d7e204061cf6b0ebff",
+          "quote": "The company’s funding, which is from Neotribe Ventures, Listen, and Village Global",
+          "quote_hash": "14adf43c2aad38603fa8533ada0678069be47cd986d9533570e7926e9a3f95fd"
+        },
         {
           "source_id": "FISRC-7a7bcfb1a7209676",
           "source_url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
-          "source_title": "Hearing tech startup Legato emerges from stealth with $12M and a peek at its AI hearing glasses | TechCrunch",
-          "source_content_hash": "0d37d97e12af2505b2e8291abd737419a4691c7f04b0c1d7e204061cf6b0ebff",
+          "source_title": "听力科技初创公司Legato结束隐身模式，获1200万美元融资，并首度展示其AI助听眼镜",
+          "source_content_hash": "ee31f942397e1de2295d1acc38413e133d72d1ac12d4414155bb5587bfb4ad8b",
           "quote": "The company’s funding, which is from Neotribe Ventures, Listen, and Village Global, has largely gone toward product development, along with marketing efforts.",
           "quote_hash": "068e407153c0ee66fc1c27e152aa5c92b47d9f150426b70b3b9449b8699da6fa"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

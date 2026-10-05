@@ -343,37 +343,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "法人主体、设立背景及基金管理关系来自机构官网；投资案例来自融资报道。金浦旗下基金和关联管理主体较多，未将某一主体自动映射到具体轮次。",
+      "summary": "金浦官网将金浦投资对应到金浦产业投资基金管理有限公司，介绍其由上海国际集团牵头设立并担任上海金融发展投资基金管理人。融资报道也以“金浦投资”名义列出多项参投；本档不将品牌名推断为每次出资的法律实体或基金。",
+      "facts": [
+        {
+          "field": "legal_manager",
+          "label": "官网主体名称",
+          "value": "金浦产业投资基金管理有限公司，官网称其简称“金浦投资”。",
+          "source_id": "PROFILE-COLLECT-INV-dcabcb6810bb8f-1"
+        },
+        {
+          "field": "fund_management",
+          "label": "基金管理关系",
+          "value": "官网称金浦投资是上海金融发展投资基金管理人。",
+          "source_id": "PROFILE-COLLECT-INV-dcabcb6810bb8f-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 深朴智能 Pre-A+轮 本轮参投。",
+          "description": "融资来源记录：深朴智能 · Pre-A+轮 · 2026-09-04 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a65ce425f6a14bd6"
         },
         {
-          "description": "公开融资来源将其列为 凌川科技 A+轮扩展 本轮参投。",
+          "description": "融资来源记录：凌川科技 · A+轮扩展 · 2026-06-25 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a39c77bc80e12506"
         },
         {
-          "description": "公开融资来源将其列为 智象未来 B+轮 本轮参投。",
+          "description": "融资来源记录：智象未来 · B+轮 · 2026-05-20 · 本轮参投 · 亿级人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-58b7882b379da6fd"
-        },
-        {
-          "description": "公开融资来源将其列为 星海图 B+轮 本轮参投。",
-          "source_id": "PROFILE-28ea32d15dbdd2750c0d"
-        },
-        {
-          "description": "公开融资来源将其列为 智象未来 老股东持续加注。",
-          "source_id": "PROFILE-1e4b55f7beee54f0037e"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-a65ce425f6a14bd6",
+          "source_id": "PROFILE-COLLECT-INV-dcabcb6810bb8f-1",
+          "source_url": "https://www.gpcapital.com.cn/index.php?a=lists&c=index&catid=12&m=content",
+          "source_title": "关于金浦 - 金浦产业投资基金管理有限公司",
+          "source_content_hash": "1a3ec525b9a56cd8ceddd7271ad646d7ef636cb4af37f42f6158cdece95f4213",
+          "quote": "2009年7月由国际集团牵头，联合沙钢集团、华泰证券、横店集团等基石投资人共同发起设立",
+          "quote_hash": "cc8458f082c0f69052fb88b16fc8801b4e0fb155919278e679dc215cf0da7af1"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-dcabcb6810bb8f-2",
+          "source_url": "https://www.gpcapital.com.cn/index.php?a=lists&c=index&catid=12&m=content",
+          "source_title": "关于金浦 - 金浦产业投资基金管理有限公司",
+          "source_content_hash": "1a3ec525b9a56cd8ceddd7271ad646d7ef636cb4af37f42f6158cdece95f4213",
+          "quote": "金浦投资是上海金融发展投资基金",
+          "quote_hash": "28992a6a78769b3c379b63d9589b31f3eea3036038a7bd2758532364f762ae07"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-dcabcb6810bb8f-3",
           "source_url": "https://news.pedaily.cn/202609/568532.shtml",
           "source_title": "深朴智能完成数亿元Pre-A+轮融资，面向人类生活空间打造AI原生具身智能_投资界",
           "source_content_hash": "daa4da077b4ae8e63c2f6bca29db7322554f251f019b73686fae98bd969047d7",
@@ -381,36 +402,28 @@
           "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
         },
         {
+          "source_id": "FISRC-a65ce425f6a14bd6",
+          "source_url": "https://news.pedaily.cn/202609/568532.shtml",
+          "source_title": "深朴智能完成数亿元Pre-A+轮融资，面向人类生活空间打造AI原生具身智能",
+          "source_content_hash": "34bcef102c1e755b",
+          "quote": "本轮融资获得 珂玺资本、上海科创旗下知识产权基金、金浦投资、亳州产投、上城资本、乾融资本，以及老股东线性资本的共同支持",
+          "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
+        },
+        {
           "source_id": "FISRC-a39c77bc80e12506",
           "source_url": "https://www.ithome.com/0/968/289.htm",
-          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片 - IT之家",
-          "source_content_hash": "0c8aa3abd9f50695779734372412758ca59ea2ce3798b73b2ce6987d17d7a21f",
+          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+          "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
           "quote": "投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资",
           "quote_hash": "b8b084f62166b01baa997d7ef8cc33abe227c38763f3e43a68024579cfe2cfa0"
         },
         {
           "source_id": "FISRC-58b7882b379da6fd",
           "source_url": "https://www.sohu.com/a/1025264778_114984",
-          "source_title": "智象未来（合肥）信息技术有限公司获“B+轮”融资，金额亿级人民币_企业_合伙_投资",
-          "source_content_hash": "8107f184a644c8342ccd28da9bf8c9f7afb06aec659bcfa9c795a746e292c8cc",
+          "source_title": "智象未来（合肥）信息技术有限公司获“B+轮”融资，金额亿级人民币",
+          "source_content_hash": "f596ec77bde2bb76b72aacf182209ce01d5af452db9f408835a879079f48c964",
           "quote": "5月20日，天眼查融资历程显示，智象未来（合肥）信息技术有限公司近日获得“B+轮”融资，涉及融资金额亿级人民币，投资机构为深创投，金浦投资，湖南财鑫集团，复聚投资。",
           "quote_hash": "71d391145b1e7abf801c31ce95f731a2a62161f8495e9c4a0223ad89493cf09a"
-        },
-        {
-          "source_id": "PROFILE-28ea32d15dbdd2750c0d",
-          "source_url": "https://news.pedaily.cn/202604/562366.shtml",
-          "source_title": "星海图又融资20亿，估值200亿_投资界",
-          "source_content_hash": "cc8e9b95d15c094ad4fb99ec61d5a8254cd9908e757dd28fb81147e2a8213ac4",
-          "quote": "金融街资本、金浦投资、北京科创、国元股权等国资机构",
-          "quote_hash": "f0160cbd92aaab5212f5a7f0d68de10639d6dead2055a109429609d3b097827b"
-        },
-        {
-          "source_id": "PROFILE-1e4b55f7beee54f0037e",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
-          "source_title": "智象未来完成15亿元C轮融资，三个月融三轮_新浪财经_新浪网",
-          "source_content_hash": "bebe58667e5f3aeae2a4a4e36f1d033864a8fceed75edf0c6b2ecad346f0573d",
-          "quote": "老股东 合肥产投、东方富海、金浦投资、金华金投、中哲创、财鑫资本 持续加注",
-          "quote_hash": "b2f9ab57aa10cd02fbe1ea158d8e74af1c4a84f96d03a457f2d3958d7ad65d81"
         }
       ],
       "last_verified_at": "2026-10-03",

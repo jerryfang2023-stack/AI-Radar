@@ -246,32 +246,75 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体策略、基金名称及出资上限据九安医疗2025年年度报告；35.6亿元为报告披露的出资上限，不能表述为已完成实缴。",
+      "summary": "九安医疗2025年年度报告披露，公司采取“投早、投小、投长期、投硬科技”的投资策略，并参与设立50亿元天开九安海河海棠科创母基金；报告所载九安医疗出资上限为35.6亿元。上述金额均为年度报告中的基金设立安排，并非已实缴金额。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "年度报告披露的投资策略",
+          "value": "公司采取投早、投小、投长期、投硬科技策略。",
+          "source_id": "PROFILE-COLLECT-INV-d201b8a6bea842-1"
+        },
+        {
+          "field": "fund_investment",
+          "label": "母基金投资安排",
+          "value": "年报披露九安医疗参与天开九安海河海棠科创母基金投资。",
+          "source_id": "PROFILE-COLLECT-INV-d201b8a6bea842-2"
+        },
+        {
+          "field": "capital_commitment",
+          "label": "出资上限",
+          "value": "年报披露公司出资不超过35.6亿元人民币或等值美元；此为上限，不等同于实缴金额。",
+          "source_id": "PROFILE-COLLECT-INV-d201b8a6bea842-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 奕行智能 轮次未披露 本轮参投。",
+          "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed0092859381f876"
         },
         {
-          "description": "公开融资来源将其列为 曦望 轮次未披露 本轮参投。",
+          "description": "融资来源记录：曦望 · 轮次未披露 · 2026-08-28 · 本轮参投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c87caae716bd4910"
         },
         {
-          "description": "公开融资来源将其列为 正行创新 天使轮 本轮参投。",
+          "description": "融资来源记录：正行创新 · 天使轮 · 2026-06-23 · 本轮参投 · 近亿。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7896c13384a2de29"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-COLLECT-INV-d201b8a6bea842-1",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225246455.PDF",
+          "source_title": "天津九安医疗电子股份有限公司2025年年度报告全文",
+          "source_content_hash": "c79bb792534d4484ee2c7b2143cf6528779a1d1670f3e9347ad1d46305349017",
+          "quote": "公司采取的“投早、投小、投长期、投硬科技”策略，旨在构建一个有活力的科技型企业创业生态系统",
+          "quote_hash": "7e0edf118eb105a3f242159aefb22a0bfa70c6a681494167c21369616f76b130"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d201b8a6bea842-2",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225246455.PDF",
+          "source_title": "天津九安医疗电子股份有限公司2025年年度报告全文",
+          "source_content_hash": "c79bb792534d4484ee2c7b2143cf6528779a1d1670f3e9347ad1d46305349017",
+          "quote": "公司参与了50亿人民币的天开九安海河海棠科创母基金（天津天开九 安海河海棠股权投资基金合伙企业（有限合伙））的投资",
+          "quote_hash": "5a586f72f06c7b29668a11b9743ad0e35905b2f38a81bed677e887953ed9bb62"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d201b8a6bea842-3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225246455.PDF",
+          "source_title": "天津九安医疗电子股份有限公司2025年年度报告全文",
+          "source_content_hash": "c79bb792534d4484ee2c7b2143cf6528779a1d1670f3e9347ad1d46305349017",
+          "quote": "其中公司出资不超过35.6亿元人民币或等值美元",
+          "quote_hash": "d88a1c49b0e2091643cf09fb88cfcc9e1fafbe5c2721860114fe8463101ed101"
+        },
+        {
           "source_id": "FISRC-ed0092859381f876",
           "source_url": "https://news.pedaily.cn/202609/569236.shtml",
-          "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿_投资界",
-          "source_content_hash": "8a158c695e6f9decbd38fbc23a9bbe756f3bf82cc8ff8ab47c8566b97b1aefab",
+          "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿",
+          "source_content_hash": "299a9be6f63ac708",
           "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
           "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
         },
@@ -279,24 +322,24 @@
           "source_id": "FISRC-c87caae716bd4910",
           "source_url": "https://eu.36kr.com/zh/p/3957213787995526",
           "source_title": "曦望再融20亿元 四个月估值翻倍至200亿「独家」",
-          "source_content_hash": "0c3bc8459b07fa6dda9fd12ea6c2601b4ec9a9fc1f1f8c3e895e88b6a963bd8d",
+          "source_content_hash": "09239a3cd7ca2ab09d1238c0c5781d7702b49ba8f60e89a2593f9f24d9140c79",
           "quote": "产业资本的名单继续扩大，包括正大集团、九安医疗、盈峰环境、同程旅行等",
           "quote_hash": "375dd00f55fb4e2798c653f7905e2b0ebc7ecc483208089af0b6a541411a18be"
         },
         {
           "source_id": "FISRC-7896c13384a2de29",
           "source_url": "https://news.pedaily.cn/202606/565442.shtml",
-          "source_title": "致力于探索物理智能的技术边界，「正行创新」完成近亿美元天使轮融资_投资界",
-          "source_content_hash": "13e07944a1678983f4beee1e7d5a723b6acc2583d3030c91d9456e9101cc4139",
+          "source_title": "致力于探索物理智能的技术边界，「正行创新」完成近亿美元天使轮融资",
+          "source_content_hash": "9d83916bd8fd460c",
           "quote": "投资方包括 正大集团、华勤技术、九安医疗等多家上市企业，多位国内外知名企业家，以及多家一线投资机构",
           "quote_hash": "9f481bbb69e5109c065fb5beccc9aa9b8e1256d4692f7ee95310151a70cb6e64"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": ""
     }
   }
 }

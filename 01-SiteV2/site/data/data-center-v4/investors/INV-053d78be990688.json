@@ -138,11 +138,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "person",
       "summary": "Anne Neuberger 于 2026 年加入 Andreessen Horowitz，担任 General Partner 和 Head of Global Affairs。TechCrunch 报道称她参与了 AIR 的天使轮融资。",
       "coverage_note": "人物身份和现职由 a16z 本人署名文章确认；融资关系来自 TechCrunch 报道，未补入来源未披露的投资金额。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "a16z官网披露的现职",
+          "value": "Andreessen Horowitz 官网列示 Anne Neuberger 为 General Partner 和 Head of Global Affairs。",
+          "source_id": "anne_a16z_role"
+        },
+        {
+          "field": "angel_investment",
+          "label": "AIR融资报道披露的天使投资",
+          "value": "TechCrunch 报道将 Anne Neuberger 列为参与 AIR 融资的天使投资人之一。",
+          "source_id": "anne_air_angel"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -164,7 +177,7 @@
           "source_id": "anne_a16z_role",
           "source_url": "https://a16z.com/technology-is-security-for-america-and-her-allies/",
           "source_title": "Technology is Security, for America and Her Allies | Andreessen Horowitz",
-          "source_content_hash": "8e1798dd00ee18d751355f5179573ad7299f5110b7aabbbf354e7f7f9506e5bf",
+          "source_content_hash": "1a79df3df537d185cdd671e1c681729f60d36b2b3a1eaebe96234805b2d66a6d",
           "quote": "General Partner and Head of Global Affairs",
           "quote_hash": "856ac5b64a94f320113bf5ddbcf7098d0a756e5e5f0d31606c45069c6e4d1b7d"
         },
@@ -172,7 +185,7 @@
           "source_id": "anne_air_angel",
           "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
           "source_title": "AIR raises $50M to help companies vet the skills and add-ons AI agents use | TechCrunch",
-          "source_content_hash": "2795f209de1c94ed4c7ab84b73df9f7098cf8bfa2cbc53bc58cdef9cf5b963ac",
+          "source_content_hash": "d7d2329ac77d8ae363f1d141c7ca53f0a8c131f02197ddb32c8c8e537c5d33be",
           "quote": "Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
           "quote_hash": "cdf293374f4d9a446ca155010bfc44b6988fca96101193fb17390e389493d713"
         },
@@ -185,7 +198,7 @@
           "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

@@ -164,10 +164,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网仅引用品牌标语；两项具体角色来自投资界和新浪科技融资报道，均按孵化/财务顾问服务记载，不推断为直接出资或映射到具体管理法人。",
+      "summary": "光源资本官网以“助力1%顶尖企业家改变世界”描述其品牌定位。公开融资报道分别记录其担任幻码跃迁的孵化方，以及星熠智能的孵化方和独家财务顾问；这些服务角色不等同于该两笔融资中的股权投资方。",
+      "facts": [
+        {
+          "field": "brand_position",
+          "label": "官网品牌标语",
+          "value": "光源资本官网使用“助力1%顶尖企业家改变世界”作为品牌表达。",
+          "source_id": "PROFILE-COLLECT-INV-cb6f26983f4e50-L-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -196,6 +203,14 @@
           "source_content_hash": "710e56e28a86a5ba9b084313c4b8a287d9c24db653c5fcf24440bf6bb69b8870",
           "quote": "光源资本担任孵化方及独家财务顾问",
           "quote_hash": "b2eec1ee1a47550ae81b701fd30b2eae4f6ad2d0b441d4603569e03303775559"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-cb6f26983f4e50-L-3",
+          "source_url": "https://www.lighthousecap.cn/",
+          "source_title": "光源资本",
+          "source_content_hash": "ac0e56d5b90d02142c1af41e215c15a8acd83c82ccbc142d1483d53b565ee0fc",
+          "quote": "助力1%顶尖企业家改变世界",
+          "quote_hash": "23720c432d291210a254206ed7756272cc82ae52fdf961c10624484d8f5ebc3b"
         }
       ],
       "last_verified_at": "2026-10-03",

@@ -138,11 +138,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
       "summary": "建发新兴投资是聚焦新兴产业的权益类资产管理机构；新浪财经报道其参与小雨智造 B+ 轮联合投资。",
       "coverage_note": "机构定位来自建发新兴投资官网，融资关系来自新浪财经报道；未推断单独出资金额。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资重点",
+          "value": "建发新兴投资官网聚焦先进制造、医疗健康、TMT/消费及 AI+ 等新兴产业方向。",
+          "source_id": "PROFILE-S-INV-143060d3258c7f-3"
+        },
+        {
+          "field": "asset_manager_profile",
+          "label": "官网披露的机构定位",
+          "value": "官网将建发新兴投资描述为具有产业背景的权益类资产管理机构，并称其已持续深耕股权投资十余年。",
+          "source_id": "PROFILE-S-INV-143060d3258c7f-4"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -177,6 +190,22 @@
           "quote_hash": "ac0161d399343ccd00f4ef57f57f7ccab85837dc32aa86b16f2d2118d8c700db"
         },
         {
+          "source_id": "PROFILE-S-INV-143060d3258c7f-3",
+          "source_url": "https://jianfacapital.com/",
+          "source_title": "厦门建发新兴投资",
+          "source_content_hash": "c48e6c522665027cc3ca9b7f44eeb07d1d37d025a453a27ba64d5af3e8cb8c2d",
+          "quote": "聚焦先进制造、医疗健康、TMT/消费、以及AI+与相关未来产业领域",
+          "quote_hash": "0a4a72bbe00cf33904d49fceb40eba60489f2284481e3e0ff16dfab2b9ac0463"
+        },
+        {
+          "source_id": "PROFILE-S-INV-143060d3258c7f-4",
+          "source_url": "https://jianfacapital.com/",
+          "source_title": "厦门建发新兴投资",
+          "source_content_hash": "c48e6c522665027cc3ca9b7f44eeb07d1d37d025a453a27ba64d5af3e8cb8c2d",
+          "quote": "建发新兴投资是具有深厚产业背景的权益类资产管理机构",
+          "quote_hash": "42612cd8210f2035c524165112b94937abe8d607df1c8f20e791aa9935ba5a53"
+        },
+        {
           "source_id": "FISRC-7cae6e0a712567de",
           "source_url": "https://finance.sina.com.cn/roll/2026-05-09/doc-inhxhuvc1441707.shtml",
           "source_title": "小雨智造完成数亿元B+轮融资",
@@ -185,7 +214,7 @@
           "quote_hash": "ac0161d399343ccd00f4ef57f57f7ccab85837dc32aa86b16f2d2118d8c700db"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

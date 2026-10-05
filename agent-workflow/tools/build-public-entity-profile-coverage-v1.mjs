@@ -73,6 +73,7 @@ const backlog = {
 for (const investor of investorData.institutions || []) {
   const activityEvidence = evidenceFor(investor);
   if (!activityEvidence.length) {
+    if (curated.institutions?.[investor.id]) continue;
     backlog.unresolved_investors.push({ id: investor.id, name: investor.name, reason: "no_source_linked_financing_evidence" });
     continue;
   }
@@ -199,14 +200,17 @@ for (const [id, profile] of Object.entries(curated.people || {})) {
   };
 }
 const pendingInvestors = (investorData.institutions || [])
-  .filter((investor) => (investor.investor_kind === "individual" || organizationKinds.has(investor.investor_kind))
-    && coverage.institutions[investor.id]?.identity_status !== "pending_verification"
-    && coverage.institutions[investor.id]?.coverage_status !== "researched")
+  .filter((investor) => {
+    const profile = coverage.institutions[investor.id];
+    return ["organization", "person"].includes(profile?.profile_type)
+      && profile?.identity_status !== "pending_verification"
+      && profile?.coverage_status !== "researched";
+  })
   .map((investor) => ({
     id: investor.id,
     name: investor.name,
     investor_kind: investor.investor_kind || "unclassified",
-    profile_type: coverage.institutions[investor.id]?.profile_type || "unverified",
+    profile_type: coverage.institutions[investor.id].profile_type,
     activity_count: (investor.activities || []).length,
     website: investor.website || "",
     reason: "official_background_and_track_record_not_yet_researched"
@@ -222,9 +226,20 @@ const pendingPeople = (entityData.people || [])
     reason: "first_party_career_and_education_sources_not_yet_researched"
   }))
   .sort((a, b) => b.source_count - a.source_count || a.name.localeCompare(b.name, "zh-Hans-CN"));
-backlog.pending_identity_verification = (investorData.institutions || [])
+const identityVerification = (investorData.institutions || [])
   .filter((investor) => coverage.institutions[investor.id]?.identity_status === "pending_verification")
-  .map((investor) => ({ id: investor.id, name: investor.name, investor_kind: investor.investor_kind || "unclassified", reason: "investor_identity_or_organization_type_not_independently_verified" }))
+  .map((investor) => ({
+    id: investor.id,
+    name: investor.name,
+    investor_kind: investor.investor_kind || "unclassified",
+    reason: "investor_identity_or_organization_type_not_independently_verified"
+  }));
+const missingEvidence = backlog.unresolved_investors.map((item) => ({
+  ...item,
+  investor_kind: investorById.get(item.id)?.investor_kind || "unverified_investor",
+  reason: item.reason
+}));
+backlog.pending_identity_verification = [...identityVerification, ...missingEvidence]
   .sort((a, b) => a.name.localeCompare(b.name, "zh-Hans-CN"));
 backlog.pending_investor_research = pendingInvestors;
 backlog.pending_people_research = pendingPeople;

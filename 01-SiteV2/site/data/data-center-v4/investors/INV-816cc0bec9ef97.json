@@ -489,10 +489,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "TechCrunch 对 Intelligence 种子轮的报道将 Conviction 列为本轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "背景和投资偏好来自机构官网；本档列出的融资活动仍按原始融资来源逐项展示，不代表完整投资组合。",
+      "summary": "Conviction Partners 官网将其描述为面向 AI-native 与 Software 3.0 企业的风险投资机构，偏好早期投资，常作首位投资人，单笔投资额为 100 万至 2,500 万美元。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI-native 与 Software 3.0 企业",
+          "source_id": "PROFILE-COLLECT-INV-816cc0bec9ef97-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "偏好早期，常作首位投资人",
+          "source_id": "PROFILE-COLLECT-INV-816cc0bec9ef97-2"
+        },
+        {
+          "field": "check_size",
+          "label": "单笔投资额",
+          "value": "100 万至 2,500 万美元",
+          "source_id": "PROFILE-COLLECT-INV-816cc0bec9ef97-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -517,6 +536,22 @@
           "source_content_hash": "1144f8198bc2da41e90c4d4bf22f4718b90931f2f9f678ef42b6438c7180f040",
           "quote": "ena — dubbed Intelligence — announced a $7.9 million seed round led by Index Ventures with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others. For non-enterprise users, using Design Arena is a lot like using a sophisticated model router. There’s a ChatGPT-style window for prompts, with separate dropdowns f",
           "quote_hash": "95f372a52a63e5ecf8bedff32b722714ac0d6b42408e5278b7ed44dc33bea1f5"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-816cc0bec9ef97-1",
+          "source_url": "https://www.conviction.com/",
+          "source_title": "Conviction Partners",
+          "source_content_hash": "92fe26f69484624e7c77387df47e50cb9f7ca232205aaee77b1e6e61fc575716",
+          "quote": "Conviction Partners&trade; is a new venture firm purpose-built to serve AI-Native, \"Software 3.0\" companies.",
+          "quote_hash": "04c403069876eda56ece60f091083c83ddc1a4ac082da173e024f78da023c742"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-816cc0bec9ef97-2",
+          "source_url": "https://www.conviction.com/",
+          "source_title": "Conviction Partners",
+          "source_content_hash": "92fe26f69484624e7c77387df47e50cb9f7ca232205aaee77b1e6e61fc575716",
+          "quote": "with $1 to $25M checks. We like to invest early, and are often the first investor.",
+          "quote_hash": "ce5ea03e28fd86c9883f2df930f3e6c84c5f888518ae8ef19b7dc7ec056191c0"
         },
         {
           "source_id": "FISRC-907e4297862ddd8c",

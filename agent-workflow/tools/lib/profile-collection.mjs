@@ -146,6 +146,7 @@ export class ProfileQueue {
     return true;
   }
   complete(key,token,profile){const job=this.lease(key,token);this.checkCandidate(job,profile,{requireFresh:true});return this.transaction(()=>{this.lease(key,token);this.db.prepare("UPDATE jobs SET state='candidate',result=?,token=NULL,lease_until=NULL,updated=? WHERE key=?").run(JSON.stringify(profile),this.clock(),key);const claim=this.db.prepare("SELECT at FROM events WHERE job_key=? AND event='claim' ORDER BY seq DESC LIMIT 1").get(key);this.event(key,'candidate',{worker:job.worker,milliseconds:claim?this.clock()-claim.at:null});});}
+  revise(key,profile){const job=this.db.prepare("SELECT * FROM jobs WHERE key=? AND state='candidate'").get(key);if(!job)throw new Error('Only an unapproved candidate can be revised');this.checkCandidate(job,profile,{requireFresh:true});return this.transaction(()=>{const current=this.db.prepare("SELECT state FROM jobs WHERE key=?").get(key);if(current?.state!=='candidate')throw new Error('Candidate state changed during revision');this.db.prepare("UPDATE jobs SET result=?,updated=? WHERE key=?").run(JSON.stringify(profile),this.clock(),key);this.event(key,'candidate_revised');return {key,status:'candidate_revised'};});}
   reopen(key,reason){if(!reason)throw new Error('Record why re-review is needed');return this.transaction(()=>{
     const planFile=path.join(this.stateDir,'integration.json');const plan=fs.existsSync(planFile)?readJson(planFile):null;
     if(plan&&plan.stage!=='done'&&plan.jobs.some(job=>job.key===key))throw new Error('Resume the existing integration before reopening its candidates');
@@ -163,14 +164,22 @@ export class ProfileQueue {
     const result={counts,lanes,completed,hours,cacheHits:this.db.prepare("SELECT count(*) AS count FROM events WHERE event='cache_hit'").get().count,blocked:this.db.prepare("SELECT key,error,attempts FROM jobs WHERE state='blocked'").all()};
     if(backlog){
       const source=this.source(),queued=new Map(this.db.prepare('SELECT key,state FROM jobs').all().map(row=>[row.key,row.state]));
+      const categoryFor=(item,collection,lane)=>{
+        if(collection==='people'||item.profile_type==='person'||(lane==='identity'&&item.investor_kind==='individual'))return 'people_and_individual_investors';
+        if(lane==='identity'||item.profile_type!=='organization')return 'type_pending_or_missing_evidence';
+        return 'institutions';
+      };
       const rows=[];for(const [field,collection,lane] of [['pending_investor_research','institutions','research'],['pending_people_research','people','research'],['pending_identity_verification','institutions','identity']])for(const item of backlog[field]||[]){
         if(!item?.id||source[collection]?.[item.id]?.coverage_status==='researched')continue;
-        const key=`${collection}:${item.id}`;rows.push({key,id:item.id,collection,lane,state:queued.get(key)||'missing'});
+        const key=`${collection}:${item.id}`;
+        const category=categoryFor(item,collection,lane);
+        rows.push({key,id:item.id,collection,lane,category,state:queued.get(key)||'missing'});
       }
       const tally=items=>items.reduce((counts,row)=>{counts[row.state]=(counts[row.state]||0)+1;return counts;},{});
+      const tallyCategories=items=>items.reduce((counts,row)=>{counts[row.category]=(counts[row.category]||0)+1;return counts;},{});
       const missing=[...new Map(rows.filter(row=>row.state==='missing').map(row=>[row.key,{key:row.key,id:row.id,collection:row.collection,lane:row.lane}])).values()];
       const incompleteIntegrated=[...new Map(rows.filter(row=>row.state==='integrated').map(row=>[row.key,{key:row.key,id:row.id,collection:row.collection,lane:row.lane}])).values()];
-      result.reconciliation={remainingBacklog:rows.length,byCollection:{institutions:tally(rows.filter(row=>row.collection==='institutions')),people:tally(rows.filter(row=>row.collection==='people'))},byLane:{research:tally(rows.filter(row=>row.lane==='research')),identity:tally(rows.filter(row=>row.lane==='identity'))},missingCount:missing.length,missing,incompleteIntegratedCount:incompleteIntegrated.length,incompleteIntegrated};
+      result.reconciliation={remainingBacklog:rows.length,byCategory:tallyCategories(rows),byCollection:{institutions:tally(rows.filter(row=>row.collection==='institutions')),people:tally(rows.filter(row=>row.collection==='people'))},byLane:{research:tally(rows.filter(row=>row.lane==='research')),identity:tally(rows.filter(row=>row.lane==='identity'))},missingCount:missing.length,missing,incompleteIntegratedCount:incompleteIntegrated.length,incompleteIntegrated};
     }
     return result;
   }

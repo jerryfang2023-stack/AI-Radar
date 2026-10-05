@@ -137,35 +137,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
+      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资界的智推时代融资报道直接将“魏巍”称为A股知名个人投资人并列为天使轮参投人。报道没有提供实名、任职机构或其他唯一标识；本档案只记录该报道所用姓名和这笔交易，不与其他同名人物或证券持仓资料合并。",
+      "summary": "投资界报道将魏巍称为A股知名个人投资人，并列其参与智推时代天使轮。报道还称其出现在27家上市公司前十大流通股东名单；未提供实名或唯一身份标识，因此本档案只保留该报道中的人物称谓和交易关联，不与其他同名者合并。",
+      "facts": [
+        {
+          "field": "reported_identity",
+          "label": "报道中的人物描述",
+          "value": "投资界将魏巍称为“A股知名个人投资人”，并称其出现于27家上市公司前十大流通股东名单；这些描述仅按该篇报道归属，未与其他同名人士的资料交叉匹配。",
+          "source_id": "wei_reported_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 智推时代 天使轮 本轮参投。",
+          "description": "投资界关于智推时代融资的报道将魏巍列为天使轮参投者；报道未披露其个人出资金额。",
+          "source_id": "wei_zhituishidai_round"
+        },
+        {
+          "description": "融资来源记录：智推时代 · 天使轮 · 2026-07-07 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-602fdc3dbd5462df"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅整理一篇融资报道直接提供的人物称谓与参投关系；实名、任职机构及其他职业经历没有独立核验。",
       "sources": [
+        {
+          "source_id": "wei_zhituishidai_round",
+          "source_url": "https://m.gelonghui.com/p/5474881",
+          "source_title": "首发| AI搜索诞生一个天使轮，智推时代融资数千万元",
+          "source_content_hash": "d8ecd2236353f7b1faede9a1d1678a9002a23e99269aeb614e7acf38b4b7e38d",
+          "quote": "由上海知识产权基金、天图投资、知名个人投资人魏巍等参与投资",
+          "quote_hash": "1a4c9b0b1e0dab5c62f81dfd839563d717895c04a4ad3d17a4240cca065c755c"
+        },
+        {
+          "source_id": "wei_reported_profile",
+          "source_url": "https://m.gelonghui.com/p/5474881",
+          "source_title": "首发| AI搜索诞生一个天使轮，智推时代融资数千万元",
+          "source_content_hash": "d8ecd2236353f7b1faede9a1d1678a9002a23e99269aeb614e7acf38b4b7e38d",
+          "quote": "这位A股知名个人投资人，持仓市值长期稳居个人投资者第一梯队，现身27家上市公司前十大流通股东名单。",
+          "quote_hash": "d335f8d257d869c425aecc3734d705efe6d0571f4e7a76566747d837f6eebb1b"
+        },
         {
           "source_id": "FISRC-602fdc3dbd5462df",
           "source_url": "https://news.pedaily.cn/202607/565918.shtml",
-          "source_title": "首发| AI搜索诞生一个天使轮，智推时代融资数千万元_投资界",
-          "source_content_hash": "fe0ec11bf2e42e8201772d2a95e3a1edff12ea6146274bede0aaeaadedb3fe62",
+          "source_title": "首发| AI搜索诞生一个天使轮，智推时代融资数千万元 - 投资界",
+          "source_content_hash": "939f8ade087f52a4",
           "quote": "由上海知识产权基金、天图投资、知名个人投资人魏巍等参与投资，老股东三七互娱继续跟投。",
           "quote_hash": "38a3453c6027233044d8f2e5fa4a5815ec37189fdb1c7083f4a6d3387a8a3ebf"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

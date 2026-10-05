@@ -139,15 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "机构背景来自 Eastern Bell Capital 的公开机构页，投资关系来自 TechCrunch 对 PixVerse 融资扩展的报道。未披露 Eastern Bell Capital 在该轮的单独出资金额。",
-      "summary": "Eastern Bell Capital（钟鼎资本）的公开机构介绍称其成立于2010年，专注早期及成长期投资，长期聚焦供应链主题。TechCrunch 报道将 Eastern Bell Capital 列为 PixVerse C 轮扩展的参投机构之一；未披露该机构单独出资额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "summary": "Eastern Bell Capital的机构主页使用中英文双语品牌“钟鼎资本”，自述聚焦早期及成长期投资，围绕供应链效率、安全与优势开展投资。TechCrunch报道将其列为PixVerse 2026年C轮扩展融资的投资方之一。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段（机构主页自述）",
+          "value": "早期及成长期",
+          "source_id": "B31-EB-LINKEDIN"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题（机构主页自述）",
+          "value": "供应链效率、供应链安全、优势供应链；涉及供应链创新、物流交通、零售与品牌、工业科技、企业服务",
+          "source_id": "B31-EB-LINKEDIN"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "TechCrunch 报道称 PixVerse C 轮扩展的投资者包括 Eastern Bell Capital；公告未披露其单独出资金额。",
-          "source_id": "pixverse-eastern-bell-seriesc-extension-2026"
+          "description": "TechCrunch报道将Eastern Bell Capital列为PixVerse 2026年C轮扩展融资的投资方之一。",
+          "source_id": "B31-EB-PIXVERSE"
         },
         {
           "description": "融资来源记录：PixVerse · C轮扩展 · 2026-07-13 · 本轮参投 · $439 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -155,34 +168,22 @@
         }
       ],
       "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "机构背景来自 Eastern Bell Capital 的公开机构页，投资关系来自 TechCrunch 对 PixVerse 融资扩展的报道。未披露 Eastern Bell Capital 在该轮的单独出资金额。",
       "sources": [
         {
-          "source_id": "eastern-bell-identity-and-thesis",
+          "source_id": "B31-EB-LINKEDIN",
           "source_url": "https://cn.linkedin.com/company/eastern-bell-capital",
           "source_title": "Eastern Bell Capital 钟鼎资本 | 领英",
-          "source_content_hash": "f3ec8044bc220c141e40bc37113f556ed9f1ff9fa4d4e64d0566c2775c62c0f5",
-          "quote": "钟鼎资本成立于2010年，一家专注早期及成长期投资的风险投资机构",
-          "quote_hash": "5f427c3abdfb78f74783a2653d00882a82ac7e3dfe55da5936e322907dd8cb17"
+          "source_content_hash": "716edc321c31d787c7d1ed06b545a7b953e9db2a4622779819be2908bbfa629e",
+          "quote": "钟鼎资本成立于2010年，一家专注早期及成长期投资的风险投资机构。钟鼎资本坚信科技的驱动力，并以此为抓手，长期聚焦“供应链”的投资主题，坚持“供应链效率、供应链安全、优势供应链”三大投资主线。",
+          "quote_hash": "c9f4053c64c8c34e5e4cd319759cf8c2878bf7bcc985f04614e723ef36c6503d"
         },
         {
-          "source_id": "eastern-bell-supply-chain-focus",
-          "source_url": "https://cn.linkedin.com/company/eastern-bell-capital",
-          "source_title": "Eastern Bell Capital 钟鼎资本 | 领英",
-          "source_content_hash": "f3ec8044bc220c141e40bc37113f556ed9f1ff9fa4d4e64d0566c2775c62c0f5",
-          "quote": "长期聚焦“供应链”的投资主题",
-          "quote_hash": "b1980f79cd597827c968e2c29f66cfd77880fd098a43c268a0ef55ac3c485637"
-        },
-        {
-          "source_id": "pixverse-eastern-bell-seriesc-extension-2026",
-          "source_url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b",
+          "source_id": "B31-EB-PIXVERSE",
+          "source_url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
           "source_title": "Video-generation startup PixVerse raises $439M, valuation soars past $2B | TechCrunch",
-          "source_content_hash": "6a0d4a53e84c10ddcf9bf2ebfc7275fdf00ae4ff910ccede830806c5f13fd901",
-          "quote": "PixVerse said that investors in the extension round include Alibaba, Lollapalooza Capital, Ivy Capital, Grand Mount Capital, Eastern Bell Capital",
-          "quote_hash": "408b9c20a2faaa7bf7895fc5cf4c727653e0bfed6e05eef454e46d364d348bcd"
+          "source_content_hash": "86d568a16ace19425344335e57ad5e046b6b7e16c87283ead3085209c5ff1da1",
+          "quote": "PixVerse said that investors in the extension round include Alibaba, Lollapalooza Capital, Ivy Capital, Grand Mount Capital, Eastern Bell Capital, Mirae Asset, BlueFocus, and CloudAlpha, joining returning investors iGlobe Partners and OCBC’s Lion X Ventures.",
+          "quote_hash": "e5a8e278829adf97feebafc8274fdaa9ac9b4ff38b56fb6bc45d2b16fb673068"
         },
         {
           "source_id": "FISRC-002776ecfe7ba6a0",
@@ -193,7 +194,11 @@
           "quote_hash": "e5a8e278829adf97feebafc8274fdaa9ac9b4ff38b56fb6bc45d2b16fb673068"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "translations": {
       "zh-CN": {

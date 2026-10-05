@@ -121,17 +121,33 @@
       }
     ],
     "public_profile": {
-      "summary": "Docker 官方页面将 Solomon Hykes 描述为创业者、dotcloud 创始人和 Docker 项目创建者；这只核实公开身份与历史经历，不证明当前投资活动。",
+      "summary": "Docker 官方人物页确认 Solomon Hykes 是 dotcloud 创始人及 Docker 项目创建者。GitGuardian 官方融资公告将他称为个人投资者，并称其参与 GitGuardian 2019 年 Series A 融资。",
       "facts": [
         {
           "field": "documented_background",
           "label": "来源核验",
           "value": "Docker 官方页面称 Solomon Hykes 是创业者、dotcloud 创始人和 Docker 项目创建者。",
           "source_id": "PROFILE-03499834a28ea4-1"
+        },
+        {
+          "field": "investor_role",
+          "label": "GitGuardian 官方公告披露的投资者身份",
+          "value": "GitGuardian 官方公告将 Solomon Hykes 称为该公司的投资者。",
+          "source_id": "PROFILE-COLLECT-INV-03499834a28ea4-O-2"
+        },
+        {
+          "field": "series_a_participation",
+          "label": "GitGuardian 官方公告披露的融资参与",
+          "value": "Solomon Hykes 参与了 GitGuardian 2019 年 Series A 融资。",
+          "source_id": "PROFILE-COLLECT-INV-03499834a28ea4-O-3"
         }
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "GitGuardian 官方公告称 Solomon Hykes 参与其 2019 年 Series A 融资。",
+          "source_id": "PROFILE-COLLECT-INV-03499834a28ea4-O-3"
+        },
         {
           "description": "融资来源记录：Supabase · 历史轮次未披露 · Series A 参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-06495943979d9573"
@@ -139,8 +155,8 @@
       ],
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Docker 官方页面将 Solomon Hykes 描述为创业者、dotcloud 创始人和 Docker 项目创建者；这只核实公开身份与历史经历，不证明当前投资活动。",
+      "coverage_status": "researched",
+      "coverage_note": "人物身份来自 Docker 官方页面；个人投资者身份及融资关系来自 GitGuardian 官方公告。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -156,6 +172,22 @@
           "quote_hash": "3a4d1cea04da1e1d635148454b6d464a062c35d8ec3ab588a095881dbb64405d"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-03499834a28ea4-O-2",
+          "source_url": "https://blog.gitguardian.com/gitguardian-raises-12million/",
+          "source_title": "GitGuardian raises $12M round to automate secrets detection in code - GitGuardian Blog",
+          "source_content_hash": "2a2c874edcdcb8ab07cf749236ce6bdf32aaee0066ca8dc8cceac08c865c37fc",
+          "quote": "investor at GitGuardian",
+          "quote_hash": "867ce93c459f4bd862739944e7290bd2767322d62ec047552e830dcd336146d3"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-03499834a28ea4-O-3",
+          "source_url": "https://blog.gitguardian.com/gitguardian-raises-12million/",
+          "source_title": "GitGuardian raises $12M round to automate secrets detection in code - GitGuardian Blog",
+          "source_content_hash": "2a2c874edcdcb8ab07cf749236ce6bdf32aaee0066ca8dc8cceac08c865c37fc",
+          "quote": "and Solomon Hykes, founder of Docker also participated in the round.",
+          "quote_hash": "1c4b345bcd34747e6bbff70a00343831ca1fcd63b174d85b0c3f17c789e8a8a4"
+        },
+        {
           "source_id": "FISRC-06495943979d9573",
           "source_url": "https://tracxn.com/d/companies/supabase/__Eu-Qv0PGLlKKydFQbekQazgnqS4w5jeSDfFyg6oGPjg/funding-and-investors",
           "source_title": "Supabase",
@@ -164,7 +196,7 @@
           "quote_hash": "89a8b625c71e9fa8a5847cde592bf5d2ab150b083a437599da71e581763c5c7d"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

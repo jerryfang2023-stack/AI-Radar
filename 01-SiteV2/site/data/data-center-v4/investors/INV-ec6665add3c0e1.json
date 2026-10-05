@@ -139,15 +139,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资关系依据 Goodfire 提供给 PR Newswire 的公告；本档案保留公告使用的投资者名称，不推断具体基金载体或出资额。",
-      "summary": "Goodfire 的 2026 年 2 月 B 轮公告将 Juniper Ventures 列为现有投资者之一，并称其参与本轮融资；未披露 Juniper Ventures 的单独出资金额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Juniper Ventures Growth I, LP 的 SEC Form D 将 Juniper Ventures Management, LLC 列为投资顾问，并列明 Nick Fitz 为相关管理人员。Goodfire 的官方融资公告将 Juniper Ventures 列为 B 轮既有投资者；公告未说明具体投资载体或单独出资额。",
+      "coverage_note": "SEC 文件验证了同名投资顾问及基金主体；Goodfire 公告只使用 Juniper Ventures 品牌名称，未证明该轮由哪支基金或哪个法律主体出资，因此不将两者作超出披露范围的法律实体归并。",
+      "facts": [
+        {
+          "field": "fund_name",
+          "label": "SEC Form D 披露基金主体",
+          "value": "Juniper Ventures Growth I, LP",
+          "source_id": "b35-juniper-sec-fund"
+        },
+        {
+          "field": "investment_adviser",
+          "label": "SEC Form D 披露投资顾问",
+          "value": "Juniper Ventures Management, LLC",
+          "source_id": "b35-juniper-sec-adviser"
+        },
+        {
+          "field": "related_person",
+          "label": "SEC Form D 披露相关管理人员",
+          "value": "Nick Fitz；文件将其列为发行人普通合伙人的管理成员。",
+          "source_id": "b35-juniper-sec-person"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Goodfire 的 1.5 亿美元 B 轮公告将 Juniper Ventures 列为参与本轮的现有投资者；未披露其单独出资额。",
-          "source_id": "goodfire-juniper-ventures-seriesb-2026"
+          "description": "Goodfire 官方公告将 Juniper Ventures 列为其 1.5 亿美元 B 轮既有投资者；公告未披露单独出资额或具体基金载体。",
+          "source_id": "b35-juniper-goodfire"
         },
         {
           "description": "融资来源记录：Goodfire AI · B轮 · 2026-02-05 · 既有投资方，本轮参投 · $150M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -158,15 +178,39 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "融资关系依据 Goodfire 提供给 PR Newswire 的公告；本档案保留公告使用的投资者名称，不推断具体基金载体或出资额。",
+      "experience_summary": "公开记录显示其存在风险投资基金及投资顾问主体；本档案只采用监管文件和被投公司公告披露的范围。",
       "sources": [
         {
-          "source_id": "goodfire-juniper-ventures-seriesb-2026",
+          "source_id": "b35-juniper-sec-fund",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2103975/000210397526000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "59174f7adb9200a8864f38efba67ea0aa93a5decbbf2ad6a8df7344fe10a8754",
+          "quote": "Juniper Ventures Growth I, LP",
+          "quote_hash": "e8e8ac9d562b95f2a0e392810d64397f32ee4d82fe2c309f4591f7e1868e9dcc"
+        },
+        {
+          "source_id": "b35-juniper-sec-adviser",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2103975/000210397526000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "59174f7adb9200a8864f38efba67ea0aa93a5decbbf2ad6a8df7344fe10a8754",
+          "quote": "Juniper Ventures Management, LLC Street Address 1 Street Address 2 1156 Detroit St City State/Province/Country ZIP/PostalCode Denver COLORADO 80206 Relationship: X Executive Officer Director Promoter Clarification of Response (if Necessary): Investment Adviser of the Issuer",
+          "quote_hash": "ef48dba4fee94053eb23eb5753c01dad7687299221dad6d0c90aab7031d68945"
+        },
+        {
+          "source_id": "b35-juniper-sec-person",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2103975/000210397526000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "59174f7adb9200a8864f38efba67ea0aa93a5decbbf2ad6a8df7344fe10a8754",
+          "quote": "Fitz Nick Street Address 1 Street Address 2 1156 Detroit St City State/Province/Country ZIP/PostalCode Denver COLORADO 80206 Relationship: X Executive Officer Director Promoter Clarification of Response (if Necessary): Managing Member of the General Partner of the Issuer",
+          "quote_hash": "ae9f4207d1281605aa87a46111f4097159b47da57b13f322df82c009f63b58d8"
+        },
+        {
+          "source_id": "b35-juniper-goodfire",
           "source_url": "https://www.prnewswire.com/news-releases/ai-lab-goodfire-raises-150m-at-1-25b-valuation-to-design-models-with-interpretability-302680120.html",
           "source_title": "AI Lab Goodfire Raises $150M at $1.25B Valuation to Design Models with Interpretability",
           "source_content_hash": "29d32bd0929268ce467622e862d3d8e085ced650380ded73a104e96819f950d5",
-          "quote": "existing investors Juniper Ventures",
-          "quote_hash": "8a8533cba42e7f63fa49669e1ecc03c48b06419124bf3afc33085a993cb3215e"
+          "quote": "announced a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital, with participation from existing investors Juniper Ventures",
+          "quote_hash": "cfd18067e50d7b460186e27b7329c5f756798e1133d844c413f07a66f8ae6b2a"
         },
         {
           "source_id": "FISRC-f0d4056113fd3650",
@@ -176,8 +220,7 @@
           "quote": "participation from existing investors Juniper Ventures",
           "quote_hash": "904e87dd7b5fbd2a3abf42f836e98d8758ad00acae59ddf7951ed42faf9437e6"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

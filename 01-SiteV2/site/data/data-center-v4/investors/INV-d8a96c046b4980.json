@@ -165,10 +165,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自CPE源峰官网；融资参与来自投资界二手报道，未披露CPE源峰单独出资额或其具体投资载体。",
+      "summary": "CPE源峰官网称其为专注私募股权投资的资产管理公司，并强调以行业和宏观研究为基础进行投资。投资界报道将 CPE 源峰列入月之暗面2026年5月融资参投方名单。",
+      "facts": [
+        {
+          "field": "firm_profile",
+          "label": "官网披露的机构类型",
+          "value": "CPE源峰官网将其描述为专注于私募股权投资的资产管理公司。",
+          "source_id": "PROFILE-COLLECT-INV-d8a96c046b4980-M-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -189,6 +196,14 @@
           "source_content_hash": "a5f868349aeb52bcb2075d54390f5dda66ea1099e819ff876c5626341c4f9feb",
           "quote": "今年5月，公司刚完成20亿美元融资，由美团龙珠领投，中国移动、CPE 源峰等机构参投",
           "quote_hash": "dcee290bad1bf3693aeb96575e5c165e1082ae7c245dd86ccef1ab0909600b8b"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d8a96c046b4980-M-2",
+          "source_url": "https://www.cpe-fund.com/approachs.html",
+          "source_title": "投资理念-CPE源峰官网",
+          "source_content_hash": "ef2538a936c34251291e95c71d530e59d62082805321be1670ea8ff4953ba5d3",
+          "quote": "十余年来，CPE源峰一直是中国领先的专注于私募股权投资的资产管理公司。",
+          "quote_hash": "03643a58ce26f11e8e46cceea82ec00819fb9620648c0abafe0077d225f5a142"
         },
         {
           "source_id": "FISRC-483eb7ff4aaec1c4",

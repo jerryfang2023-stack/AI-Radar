@@ -123,15 +123,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Relativity Networks 融资公告称 Prysmian 参与其种子轮融资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司背景及直接投资来自 Prysmian 官网，融资轮次与投资方名单来自被投公司融资公告；仅陈述来源披露，不推断出资额。",
+      "summary": "Prysmian 是能源与通信电缆系统领域的全球企业。其官网公告称直接投资 Relativity Networks；该公司融资公告也将 Prysmian 列入 6.1 百万美元种子轮投资方。",
+      "facts": [
+        {
+          "field": "industry",
+          "label": "主营领域",
+          "value": "Prysmian 官网称其为能源与通信电缆系统领域的全球企业。",
+          "source_id": "PROFILE-B8-INV-951f469bc3ac37-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Relativity Networks 融资公告称其种子轮包含 Prysmian 的参与。",
-          "source_id": "PROFILE-5ce609fc67e392842280"
+          "description": "Prysmian 官网公告其投资 Relativity Networks；被投公司融资公告将 Prysmian 列为 6.1 百万美元种子轮参与方，未披露其单独金额。",
+          "source_id": "PROFILE-B8-INV-951f469bc3ac37-2"
         },
         {
           "description": "融资来源记录：Relativity Networks · 历史轮次未披露 · 历史种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -141,12 +148,28 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-5ce609fc67e392842280",
+          "source_id": "PROFILE-B8-INV-951f469bc3ac37-1",
           "source_url": "https://www.prnewswire.com/news-releases/relativity-networks-secures-6m-seed-funding-to-power-the-next-generation-fiber-optic-cable-for-data-centers-raising-total-to-10-6m-302511362.html",
           "source_title": "Relativity Networks Secures $6M Seed Funding to Power the Next-Generation Fiber-Optic Cable for Data Centers, Raising Total to $10.6M",
           "source_content_hash": "8469e24689bd89544af4e652a7ecb21b17ec537b88b572603ba9df1d6f2e3412",
-          "quote": "ider of next-generation fiber-optic technology, has announced an oversubscribed $6.1M seed funding round that includes Prysmian, the global provider in energy and communications cables, GOVO Venture Partners, and a group of new and previous investors who invested in Relativity's pre-seed round. This brings the company's total amount raise",
-          "quote_hash": "a996de16593b65e472ec7af3860e84cf0104fcc64c91a282e382f6a9dc1c2565"
+          "quote": "has announced an oversubscribed $6.1M seed funding round that includes Prysmian",
+          "quote_hash": "96b83a8e8c4b1795a6839570258c7a77b2e139e2a56e29350cd2fd14ae73cda4"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-951f469bc3ac37-2",
+          "source_url": "https://www.prysmian.com/en/media/press-releases/prysmian-invests-in-relativity-networks-to-establish-a-long-term-partnership",
+          "source_title": "PRYSMIAN INVESTS IN RELATIVITY NETWORKS TO ESTABLISH A LONG-TERM PARTNERSHIP | Prysmian",
+          "source_content_hash": "dc53d1c9255543ba2a8efde95ab426f8867623ff742d63b0f69c5ca8c29e6da7",
+          "quote": "Prysmian has announced an investment in Relativity Networks, the leading at-scale provider of next-generation fiber-optic technology.",
+          "quote_hash": "6a53ccdd3309c9fdbcb043f61fc01d67d9ad7576e6635349d66e485ebc8934ed"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-951f469bc3ac37-3",
+          "source_url": "https://www.prysmian.com/en/investors/prysmian-as-investment",
+          "source_title": "Prysmian as an investment | Prysmian",
+          "source_content_hash": "017665977c221833d1a71918458b57db4be46d9924996df87f7985eef04a00d0",
+          "quote": "We are a world leader in the energy and telecom cable systems industry.",
+          "quote_hash": "3d3a7579faaad721c32f6b34887fcaca37b22c4e6a0acbfd773f1227551e4b46"
         },
         {
           "source_id": "FISRC-7d6c90badf296dee",
@@ -157,7 +180,7 @@
           "quote_hash": "381ffb1e6172901645be39df726e69cd9825a9fcd049dbc392ec65583f7ad3a6"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

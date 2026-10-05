@@ -123,33 +123,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "CNBC 报道将 Aramco 列为 Rebellions 的投资者。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "交易报道以 Aramco 名称列示投资方；Aramco 官方资料将 Wa’ed Ventures 确认为投资 Rebellions 的集团创投平台，公开来源未证明母公司直接出资。",
+      "summary": "Aramco 官网将 Wa’ed Ventures 描述为支持沙特初创生态的风险投资基金，并确认其投资了韩国 AI 芯片公司 Rebellions。融资记录使用 Aramco 这一集团名称；本档据官方资料补充集团创投平台背景，不把该平台与母公司直接出资混为一谈。",
+      "facts": [
+        {
+          "field": "investment_arm",
+          "label": "集团创投平台",
+          "value": "Aramco 将 Wa’ed Ventures 称为其支持沙特初创生态的风险投资基金。",
+          "source_id": "PROFILE-B13-INV-af9bf7a00f0754-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "CNBC 报道称 Aramco 是 Rebellions 的投资者。",
+          "description": "Aramco 官方资料确认，Wa’ed Ventures 投资了韩国 AI 芯片公司 Rebellions；这证明集团创投平台的投资活动，不单独确认母公司出资载体。",
+          "source_id": "PROFILE-B13-INV-af9bf7a00f0754-2"
+        },
+        {
+          "description": "融资来源记录：Rebellions Inc. · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0465de4e7032d422"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Wa’ed Ventures 官方页面",
+          "value": "Aramco Wa’ed Ventures",
+          "url": "https://www.aramco.com/en/what-we-do/commercial-ecosystems/waed-ventures",
+          "source_id": "PROFILE-B13-INV-af9bf7a00f0754-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B13-INV-af9bf7a00f0754-1",
+          "source_url": "https://www.aramco.com/en/what-we-do/commercial-ecosystems/waed-ventures",
+          "source_title": "Waed Ventures – Start-up venture capital financing and support in Saudi Arabia | Aramco",
+          "source_content_hash": "82b26a984784f2b3b9a55908e9e61d0c8605ca54b39e92e0963cec8bdb2367c0",
+          "quote": "Wa’ed Ventures is Aramco’s venture capital fund designed to support the start-up ecosystem in Saudi Arabia",
+          "quote_hash": "e52ddc2f31227dd0bed08cb22416a445af940f7911ff79ebdb3a4063335fd4be"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-af9bf7a00f0754-2",
+          "source_url": "https://www.aramco.com/en/news-media/elements-magazine/2025/waed-ventures",
+          "source_title": "Wa’ed Ventures: a decade of empowering entrepreneurs | Aramco",
+          "source_content_hash": "ea9c71f80dcd9e0bd007cea2960df7a0295e4e30125a0f9854c96a6a072c8a93",
+          "quote": "Rebellions, a Korean AI company focused on driving innovation in the AI semiconductor industry is another Wa’ed Ventures investment.",
+          "quote_hash": "1dd7aa470fb62d4b57ffdc199af36138b5d94e4f61c53b14d99d6b1468625ba8"
+        },
         {
           "source_id": "FISRC-0465de4e7032d422",
           "source_url": "https://www.cnbc.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-ipo.html",
           "source_title": "Samsung-backed AI chip firm Rebellions raises $400 million ahead of IPO",
-          "source_content_hash": "8833972df8d82f57e6201fe614209d593a0eeb44855c3aa556e6eb9f88312760",
-          "quote": "Korean won ($166 million), the government announced on Friday. Samsung, SK Hynix and Saudi Arabian oil giant Aramco are all investors in Rebellions. Choose CNBC as your preferred source on Google and never miss a moment from the most trusted name in business news. Subscribe to CNBC PRO Subscribe to Investing Club Licensing & Reprints CNB",
-          "quote_hash": "4909914f8729cd361a9153ae6044def95cc4965b8abc1406cec1b30bdcda6387"
+          "source_content_hash": "f43dd9ad9ae14a2c",
+          "quote": "Samsung, SK Hynix and Saudi Arabian oil giant Aramco are all investors in Rebellions.",
+          "quote_hash": "22c0af28bfbd8f1af6a3ee838684d38f911dec265f670bb1263680e8a4ca968e"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

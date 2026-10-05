@@ -123,29 +123,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Ringg 官方公告将 Capital2B 列为其 Series A 参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略来自 Capital 2B 官网；融资参与及轮次来自发行方 Ringg AI 公告。",
+      "summary": "Capital 2B 官网称其投资深科技及知识产权驱动的初创企业，阶段覆盖 pre-seed、seed 至 Series A；Ringg AI 官方公告将 Capital2B 列为 550 万美元 Series A 参与方，未披露单独出资额。",
+      "facts": [
+        {
+          "field": "self_declared_investment_focus",
+          "label": "官网自述的投资策略",
+          "value": "Capital 2B 官网称其投资深科技及 IP 驱动的初创企业，阶段为 pre-seed、seed 和 Series A。",
+          "source_id": "PROFILE-B7-INV-8ea47e7caa29fd-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Ringg 官方公告将 Capital2B 列为其 Series A 参与方。",
+          "description": "Ringg AI 官方公告将 Capital2B 列为 550 万美元 Series A 参与方；未披露单独出资额。",
+          "source_id": "PROFILE-B7-INV-8ea47e7caa29fd-1"
+        },
+        {
+          "description": "融资来源记录：Ringg · 历史轮次未披露 · Series A参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5d8eb24ecea69660"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-5d8eb24ecea69660",
+          "source_id": "PROFILE-B7-INV-8ea47e7caa29fd-1",
           "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
           "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
           "source_content_hash": "d2da1baa0ae75ef072f13217f7cd7df587f24aa9f072be2f934865523b7a3efe",
           "quote": "nd, led by Arkam Ventures , with participation from Groww Founder Fund , Kunal Shah , Whitecap Ventures , and Capital2B . We started Ringg with a simple belief: voice is the most natural interface for getting real work done . But in most enterprises, voice still lives in the wrong decade, plagued by brittle IVRs, disconnected contact-cent",
           "quote_hash": "22c035cf489695eda2f379f4ed2d0b45e25cc45b59979f1f786525d2e01c011d"
+        },
+        {
+          "source_id": "PROFILE-B7-INV-8ea47e7caa29fd-2",
+          "source_url": "https://www.capital2b.com/about",
+          "source_title": "Capital 2B",
+          "source_content_hash": "103740398fd0b98935fe36748673ca0f4baf311e0cdc46893879fe3b346c82ea",
+          "quote": "Investing in deep tech and IP led startups at pre-seed, seed and series A stages.",
+          "quote_hash": "57cb0d5736efa07f84d824b252f31c56120a963506707ff3bcb895dbd8a50e9c"
+        },
+        {
+          "source_id": "FISRC-5d8eb24ecea69660",
+          "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+          "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+          "source_content_hash": "64d3a17d3ff626b7",
+          "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+          "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

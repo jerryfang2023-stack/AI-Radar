@@ -180,10 +180,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司业务定位来自 Alpha Wave Global 官网；Cerebras融资参与来自被投公司公告。该档不推断其为本轮领投或披露未提供的出资金额。",
+      "summary": "Alpha Wave Global 官网将其描述为跨私募股权、私募信贷和保险/退休业务的另类资产管理机构。Cerebras官方Series H公告将其列为参投方。",
+      "facts": [
+        {
+          "field": "business_scope",
+          "label": "官网披露的业务范围",
+          "value": "Alpha Wave Global 官网称其为另类资产管理机构，业务覆盖私募股权、私募信贷及保险与退休方案。",
+          "source_id": "PROFILE-COLLECT-INV-d78ac57accd6bd-M-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -201,9 +208,17 @@
           "source_id": "FISRC-51b0427643bffd15",
           "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
           "source_title": "Cerebras Raises $1 Billion Series H at $23 Billion Valuation",
-          "source_content_hash": "533fd6a4c5919df78d78a63cf2c46c7daf79328f9cdf5ee073adcb6a4272d752",
+          "source_content_hash": "88f39621a13ded244d51ef093a18ffd7bf99b7c25ef7ec9c3bab01f78d872d51",
           "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
           "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d78ac57accd6bd-M-2",
+          "source_url": "https://alphawaveglobal.com/",
+          "source_title": "Alpha Wave Overview",
+          "source_content_hash": "b27cfa937a604a6d71321ef4bf347f3c78ad78b438b5c9fbf2145efd44d6b0c5",
+          "quote": "Alpha Wave is an alternative asset manager that operates across private equity, private credit, and insurance and retirement solutions.",
+          "quote_hash": "661046c1b8cb6eb3f8d2ca2bfce21216880108a099080fe56613e454b1e93790"
         },
         {
           "source_id": "FISRC-228c251a3236e4ab",
@@ -214,7 +229,7 @@
           "quote_hash": "389624e114c08c4a690f1f432b7141c096edb473654098cbbeba982fb75eac9a"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

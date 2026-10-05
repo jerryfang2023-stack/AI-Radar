@@ -139,30 +139,73 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "Kuro 融资报道列出 Foundamental 为 €10M 融资参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略和支票范围来自机构官网；Kuro 融资活动来自融资报道，未披露 Foundamental 单独出资额。",
+      "summary": "Foundamental 官网将其定位为建筑、工程与施工（AEC）科技领域的早期投资机构，投资范围从 Day 0 延伸至早期阶段，并披露初始支票规模为 50 万至 500 万美元。Kuro 融资报道将其列为 €10M 轮参与方。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "建筑、工程与施工（AEC）科技",
+          "source_id": "PROFILE-B12-INV-b3c8b0e0cc1709-2"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期阶段，包括 Day 0 项目",
+          "source_id": "PROFILE-B12-INV-b3c8b0e0cc1709-3"
+        },
+        {
+          "field": "initial_check_size",
+          "label": "首次支票规模",
+          "value": "$500,000–$5 million",
+          "source_id": "PROFILE-B12-INV-b3c8b0e0cc1709-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "参与 Kuro €10M 融资。",
-          "source_id": "PROFILE-adfb1ae1c15d7f35034f"
+          "source_id": "PROFILE-B12-INV-b3c8b0e0cc1709-1"
         },
         {
           "description": "融资来源记录：Kuro Technology · 早期融资 · 2026-10-02 · 本轮参投 · €10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8bd4513374ef496a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.foundamental.com/",
+          "source_id": "PROFILE-B12-INV-b3c8b0e0cc1709-2"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-adfb1ae1c15d7f35034f",
+          "source_id": "PROFILE-B12-INV-b3c8b0e0cc1709-1",
           "source_url": "https://www.konii.de/news/10-millionen-euro-fuer-kuro/",
           "source_title": "10 Millionen Euro für Kuro - Konii",
-          "source_content_hash": "a87604f12dc3115ea6c80abe7a0870fe2d7800671a9c730f4540987ddc89a330",
+          "source_content_hash": "a05a17b42d6948a0872de71f93767cbebbb006fb29b4ad6d451ba57e7a2bdd36",
           "quote": "ology sichert sich 10 Millionen Euro in einer von UVC Partners geführten Finanzierungsrunde, an der sich auch Foundamental, Realyze Ventures und helloworld beteiligen. Die KI-Plattform richtet sich an Generalunternehmer und unterstützt sie bei Kalkulation, Ausschreibungsanalyse und Wissensmanagement. Zu den zwölf Kunden zählen bereits sechs der 20 größten Ge",
           "quote_hash": "615b6747f396cd17ba5933e47814550e5c90d1182190220489e2847e433f7d60"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b3c8b0e0cc1709-2",
+          "source_url": "https://www.foundamental.com/",
+          "source_title": "Foundamental | The Global Investor in AEC and Construction Technology",
+          "source_content_hash": "426470af362b5032d72598af3747a7bb2ba8f4ac3f9cbc258ef5b3ab3aa90de3",
+          "quote": "The Global Investor in AEC and Construction Technology",
+          "quote_hash": "4f9dee6b71acebd5cace8b8c52147a2b8029d17d0ce20295f2110ca1f7d93a03"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b3c8b0e0cc1709-3",
+          "source_url": "https://www.foundamental.com/",
+          "source_title": "Foundamental | The Global Investor in AEC and Construction Technology",
+          "source_content_hash": "426470af362b5032d72598af3747a7bb2ba8f4ac3f9cbc258ef5b3ab3aa90de3",
+          "quote": "We invest as early as day zero, leading your first institutional rounds. Our first cheque ranges from $500k to $5 million.",
+          "quote_hash": "8e8771c15d370847ffdc89ac4d55c1fe29bee70236301c5403758a4ef07ebe14"
         },
         {
           "source_id": "FISRC-8bd4513374ef496a",
@@ -173,7 +216,7 @@
           "quote_hash": "a6a5778a2aae0bc417fd88423220413aab5919ec269c19b9bbccd92eb4369f66"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

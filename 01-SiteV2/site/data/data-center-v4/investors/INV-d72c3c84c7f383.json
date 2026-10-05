@@ -139,33 +139,88 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "合肥建投集团官网将“合肥国投”对应为合肥国有资本创业投资有限公司，并披露其取得私募基金管理人登记；第一财经报道记录其参投地瓜机器人 C 轮，但不披露单笔金额。",
+      "summary": "合肥国投的主体名称为合肥国有资本创业投资有限公司。其控股股东合肥市建设投资控股（集团）有限公司官网称，合肥国投于 2025 年取得中基协私募基金管理人登记，聚焦合肥战略性新兴产业并运用直投、产业基金及并购等工具。第一财经报道将其列为地瓜机器人 2026 年 4 亿美元 C 轮的政府投资平台跟投方；轮次总额不代表其单独出资额。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "主体名称",
+          "value": "合肥国有资本创业投资有限公司（合肥国投）。",
+          "source_id": "B26-HF-HOME"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "国有基金管理与产业投资平台。",
+          "source_id": "B26-HF-HOME"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资工具",
+          "value": "直投、产业基金、资本并购等。",
+          "source_id": "B26-HF-STRATEGY"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 地瓜机器人 C轮 本轮参投。",
+          "description": "第一财经报道将合肥国投列为地瓜机器人 2026 年 4 亿美元 C 轮政府投资平台跟投方；未披露单独投资金额。",
+          "source_id": "B26-HF-YICAI"
+        },
+        {
+          "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-517ef1b31eac6dd3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "控股股东官网",
+          "value": "https://www.hfjtjt.com/",
+          "url": "https://www.hfjtjt.com/",
+          "source_id": "B26-HF-HOME"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "B26-HF-YICAI",
+          "source_url": "https://www.yicai.com/news/103367744.html",
+          "source_title": "地瓜机器人融资4亿美元，合肥又出手了",
+          "source_content_hash": "8689838cd402a729e502017bd7b8d8fec917a159c25def7481f309d2c7812aa7",
+          "quote": "合肥国投、南山战新投等政府投资平台联合跟投",
+          "quote_hash": "dea49642d7c856c0fa030ed2a45f0d90380c4568e6039f128701fff6a3ae2fe6"
+        },
+        {
+          "source_id": "B26-HF-HOME",
+          "source_url": "https://www.hfjtjt.com/col14/974",
+          "source_title": "合肥市建设投资控股（集团）有限公司",
+          "source_content_hash": "f8bf72d78fdb084d54a9b082b08a8bfc32cb521fd035b9ad2fd0523cd8127bd4",
+          "quote": "合肥国有资本创业投资有限公司（简称“合肥国投”）成功通过中国证券投资基金业协会",
+          "quote_hash": "5898430d7b16420cec4f2c38f488c6c3b3b0660e68cf279f06b1879c70537c24"
+        },
+        {
+          "source_id": "B26-HF-STRATEGY",
+          "source_url": "https://www.hfjtjt.com/col14/974",
+          "source_title": "合肥市建设投资控股（集团）有限公司",
+          "source_content_hash": "f8bf72d78fdb084d54a9b082b08a8bfc32cb521fd035b9ad2fd0523cd8127bd4",
+          "quote": "合肥国投自成立以来，紧跟合肥市战略性新兴产业布局，聚焦重大项目及产业链关键环节，已储备项目近百个。下一步，合肥国投将筑牢新型显示、集成电路及新能源汽车产业发展优势，加大生物医药、合成生物及未来产业布局力度，灵活运用直投、产业基金、资本并购等市场化工具",
+          "quote_hash": "afd504a6ceade95b5193b117c626f4dff89d0ba8be7ececd0241c62973d725ff"
+        },
         {
           "source_id": "FISRC-517ef1b31eac6dd3",
           "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
           "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
-          "source_content_hash": "ca111ccf85bb6df9ee75284c418b51d9ae04091ecf97ffac8ca772b52c6c6ec1",
+          "source_content_hash": "ffc4d665dce6209d",
           "quote": "合肥国投、南山战新投、璟泉资本等地方国资投资平台",
           "quote_hash": "db6615f0bc6be64adc00905e8397a7987c5404414dc230c81d8ff62eff831a12"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "合肥国投的主体名称为合肥国有资本创业投资有限公司。其控股股东合肥市建设投资控股（集团）有限公司官网称，合肥国投于 2025 年取得中基协私募基金管理人登记，聚焦合肥战略性新兴产业并运用直投、产业基金及并购等工具。第一财经报道将其列为地瓜机器人 2026 年 4 亿美元 C 轮的政府投资平台跟投方；轮次总额不代表其单独出资额。"
     }
   }
 }

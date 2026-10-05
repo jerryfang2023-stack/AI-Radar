@@ -139,10 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "G2 Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "founding",
+          "label": "官网披露的创立时间和团队来源",
+          "value": "G2 Venture Partners官网称其创始团队于2016年创立该机构，当时均在Kleiner Perkins Green Growth Fund任高级合伙人。",
+          "source_id": "PROFILE-S-INV-51134f3a3ce01e-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "G2表示其支持快速规模化发展、致力于可持续未来的代表性企业。",
+          "source_id": "PROFILE-S-INV-51134f3a3ce01e-2"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的通常投资阶段",
+          "value": "G2官网称其通常投资于产品市场匹配已经建立、且商业牵引得到验证的Series B至IPO前企业。",
+          "source_id": "PROFILE-S-INV-51134f3a3ce01e-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +170,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-S-INV-51134f3a3ce01e-1",
+          "source_url": "https://www.g2vp.com/about-us/",
+          "source_title": "Team | G2 Venture Partners",
+          "source_content_hash": "a3eeb0875077546d72614230eb7733ec0624678be1f74ac1394eea8670ed4c50",
+          "quote": "founded G2 Venture Partners in 2016, while working together as Senior Partners at Kleiner Perkins’ Green Growth Fund.",
+          "quote_hash": "d9520a5ff9b1c2a70e7e9f3d7fb28151f358713dec0a4755db65d9c7b553ca09"
+        },
+        {
+          "source_id": "PROFILE-S-INV-51134f3a3ce01e-2",
+          "source_url": "https://www.g2vp.com/",
+          "source_title": "G2VP | Venture Capital for Climate &amp; Sustainability Tech",
+          "source_content_hash": "ba423912a7cc9e2173d76acd01a4022397c7b126da3e4908357cdd0d78d2470c",
+          "quote": "We back generational companies moving with speed and scale toward a sustainable future.",
+          "quote_hash": "63d167cd791e133617f5630e62cbe5ad029f947ee393f97f16f0267a06b929f3"
+        },
+        {
+          "source_id": "PROFILE-S-INV-51134f3a3ce01e-3",
+          "source_url": "https://www.g2vp.com/investment-focus",
+          "source_title": "Investment Focus | G2VP Climate Tech Venture Capital",
+          "source_content_hash": "6062666e5d2beabbf82a12624d7e84a1cc5a2053fbff8412fe74683dcf87e2e6",
+          "quote": "technology companies at their inflection point, usually from Series B to pre-IPO, once product-market fit is established and the business has demonstrated meaningful commercial traction.",
+          "quote_hash": "2c7cd0dde29a9479dfc6cdd3b42e0b51b7f80995c815a9063d7c16128d3d01c4"
+        },
+        {
           "source_id": "FISRC-c0d67da86b5ae704",
           "source_url": "https://www.prnewswire.com/news-releases/relay-raises-36-million-in-new-funding-from-industry-leaders-to-drive-frontline-safety-productivity-and-operational-intelligence-302893591.html",
           "source_title": "Relay 从行业领导者处新获 3600 万美元融资，以推动一线安全、生产力和运营智能",
@@ -161,6 +202,11 @@
           "quote_hash": "ca5d52d8837e7962df2c6eba70a4fd25b90e20d32d378c8ead009e103ea07bbd"
         }
       ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "summary": "G2 Venture Partners官网称其由原Kleiner Perkins Green Growth Fund团队成员于2016年创立，聚焦以技术改造传统产业、建设可持续未来的成长阶段投资。官网表示其通常在企业达到产品市场匹配和商业牵引后，于Series B至IPO前阶段投资。",
+      "coverage_note": "成立背景、投资方向及阶段来自G2 Venture Partners官网；“通常”阶段不构成每笔投资的刚性门槛。",
       "last_verified_at": "2026-10-04"
     }
   }

@@ -123,15 +123,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "36氪融资快讯将谊安医疗列为昆仑元AI天使轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "企业背景来自谊安官网；融资参投来自 36氪融资快讯。来源未披露谊安医疗具体出资额或投资法人名称。",
+      "summary": "谊安官网称北京谊安创立于 2001 年，主营围绕麻醉、呼吸等医疗器械及解决方案；36氪报道将谊安医疗列为昆仑元 AI 天使轮投资方。该项说明经营企业也参与了该轮投资，不将其归类为专业风投机构。",
+      "facts": [
+        {
+          "field": "self_described_company_business",
+          "label": "官网自述的企业业务",
+          "value": "谊安官网称其为医疗器械与解决方案供应商，业务涵盖麻醉、呼吸等领域。",
+          "source_id": "PROFILE-B6-INV-8cf067274e2693-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "36氪融资快讯列出谊安医疗参与昆仑元AI天使轮融资。",
-          "source_id": "PROFILE-77f6dd4ab954fa994c40"
+          "description": "36氪报道将谊安医疗列为昆仑元 AI 3000 万元天使轮投资方之一；未披露单独投资额。",
+          "source_id": "PROFILE-B6-INV-8cf067274e2693-2"
         },
         {
           "description": "融资来源记录：昆仑元AI · 历史轮次未披露 · 天使轮参投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -141,12 +148,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-77f6dd4ab954fa994c40",
+          "source_id": "PROFILE-B6-INV-8cf067274e2693-1",
+          "source_url": "https://www.aeonmed.com/",
+          "source_title": "heyer 谊安-一吸一呼&middot;谊安守护 - 谊安医疗",
+          "source_content_hash": "c9c1cd4b9002b04b0f3bcb777bbbe9e392eb22f740f8f21ef8929082b87af59e",
+          "quote": "北京谊安创立于 2001 年，始终坚持“产品可靠、服务贴心”的核心价值观，以“成为麻醉和呼吸的专家”做为品牌愿景，引领行业的发展。",
+          "quote_hash": "6ee951efb7f27d2b37783d536c0b35fffb1fa5d66b5c337fb6bf061036f7075a"
+        },
+        {
+          "source_id": "PROFILE-B6-INV-8cf067274e2693-2",
           "source_url": "https://eu.36kr.com/zh/newsflashes/3616479768445961",
           "source_title": "“昆仑元AI”完成3000万元天使轮融资-36氪",
           "source_content_hash": "ded8071e89b87c8f359c9feea9834e85c702387e19b245fbe2133cfd0c5f9790",
-          "quote": "I”完成3000万元天使轮融资 2025-12-29 18:33 36氪获悉，12月29日，专注于通用人工智能（AGI）全栈技术研发的“昆仑元AI”宣布完成3000万元天使轮融资，投后估值达5.3亿元。本轮融资投资方包括谊安医疗、中国中车旗下产业投资平台时代投资以及九颂山河基金。融资资金将重点投入TransformerX架构研发、医疗与工业场景标杆案例共建，同时加速拓展“一带一路”沿线国际市场。 寻求报道、内容合作、商务合作或是招揽全球生态伙伴等需求，请发送邮件至 business@36kr.com，我们将竭诚为您服务。 合作伙伴：startuprad.io 友情链接： ai.36kr.com 36氪欧洲总站（eu.36kr.com）是关注海外的行业媒体，为企业跨境提供海",
-          "quote_hash": "2bedff5dcfb71aeecad7ec41662c9c78dbf51260e2313ce4272850f9e2da7a99"
+          "quote": "本轮融资投资方包括谊安医疗、中国中车旗下产业投资平台时代投资以及九颂山河基金。",
+          "quote_hash": "50d5bd3cd006d9a26452ce094ee8bc1029891d1c0a9ea838f58609f87774f990"
         },
         {
           "source_id": "FISRC-6ce5cbd8a0a8ae8b",
@@ -157,7 +172,7 @@
           "quote_hash": "e6023b90fbeea193fe01e750ec2da8463226290de8488aa01988b87a4293d23a"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

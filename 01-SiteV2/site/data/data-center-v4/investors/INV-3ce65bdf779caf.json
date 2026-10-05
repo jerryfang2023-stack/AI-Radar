@@ -137,13 +137,25 @@
       }
     ],
     "public_profile": {
-      "summary": "DeVC官网自述为“去中心化风险投资”，依托创业者、运营者和行业专家组成的协作网络为创业团队提供早期支持。",
+      "summary": "DeVC官网将其描述为去中心化风险投资网络，连接经验丰富的创始人、运营者和行业专家，面向早期创业公司提供支持；官网列示首笔投资区间为5万至50万美元。DeVC基金详情页列出DeVC India I Manager LLP和SEBI注册编号；同页出现两个基金名称表述，本档案不据此确定单一法定基金名称。",
       "facts": [
         {
           "field": "self_description",
           "label": "官网自述",
           "value": "去中心化风险投资，依托经验丰富的创始人、运营者及行业专家网络。",
           "source_id": "PROFILE-INV-3ce65bdf779caf-1"
+        },
+        {
+          "field": "first_check_size",
+          "label": "DeVC官网披露的首笔投资区间",
+          "value": "官网列出的首笔投资金额为5万至50万美元。",
+          "source_id": "PROFILE-S-INV-3ce65bdf779caf-2"
+        },
+        {
+          "field": "registered_manager",
+          "label": "基金详情页列示的管理人和SEBI注册编号",
+          "value": "DeVC基金详情页表格列示管理人为DeVC India I Manager LLP，SEBI注册编号为IN/AIF2/22-23/1131；页面内基金名称表述不一致，未据此确定法定基金名称。",
+          "source_id": "PROFILE-S-INV-3ce65bdf779caf-3"
         }
       ],
       "milestones": [],
@@ -155,8 +167,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "coverage_note": "依据DeVC官网品牌自述建档；未从该页面核实其完整法律主体或基金登记信息。",
+      "coverage_status": "researched",
+      "coverage_note": "投资模式、票面金额和管理人信息来自DeVC官网自述；AIF表格与页脚对于基金名称分别出现“DeVC India I AIF”和“Matrix Partners India DeVC I AIF”，名称未在本档案中统一认定。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -180,6 +192,22 @@
           "quote_hash": "10d7db600db24198a2f98b5567d6ea4f050ab80e34dc91c6075f7bbaa1daefd3"
         },
         {
+          "source_id": "PROFILE-S-INV-3ce65bdf779caf-2",
+          "source_url": "https://www.devc.com/",
+          "source_title": "Your Idea to Infinity Partners",
+          "source_content_hash": "f15c39855f8a5ae833ce1aed6f620c634603a2e7dde52f9d600dc0c0de5a0eb5",
+          "quote": "First check size: $50K–$500K",
+          "quote_hash": "285551375f8058c909f9174bf2939e2c7577c9595f06686c48f65fe3c720fda5"
+        },
+        {
+          "source_id": "PROFILE-S-INV-3ce65bdf779caf-3",
+          "source_url": "https://www.devc.com/fund-details",
+          "source_title": "Fund Details",
+          "source_content_hash": "1a5fb8c74b54cec354977cf72878db61f9887646c55eec53c1db10c94d6a419e",
+          "quote": "DeVC India I AIF Category II AIF DeVC India I Manager LLP IN/AIF2/22-23/1131",
+          "quote_hash": "4bb35715e336c1725878633dfa888e8b9b30ed1a5397bc2c1cc8324ec6c283d8"
+        },
+        {
           "source_id": "FISRC-6b1944359351ee14",
           "source_url": "https://www.cmswire.com/customer-experience/smallestai-lands-13m-series-a-for-voice-ai/",
           "source_title": "Smallest.ai Raises $13M For Real-Time Enterprise Voice AI",
@@ -188,7 +216,7 @@
           "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

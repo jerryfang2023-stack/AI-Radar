@@ -138,11 +138,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
       "summary": "T. Rowe Price 是全球投资管理机构；美国 SEC 文件确认 T. Rowe Price Associates, Inc. 的法定名称。TechCrunch 将其列入 SambaNova F 轮参与方。",
       "coverage_note": "投资管理业务和法定实体名称分别来自公司官网及 SEC 文件；融资关系来自 TechCrunch 报道，未推断其单独投资金额。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "firm_history_and_headquarters",
+          "label": "公司官网披露的成立年份和总部城市",
+          "value": "T. Rowe Price Group 官网称公司成立于 1937 年，总部位于 Baltimore。",
+          "source_id": "PROFILE-R-INV-0ef9a5877865ab-4"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "公司官网披露的管理规模及统计日期",
+          "value": "T. Rowe Price Group 官网称截至 2026 年 7 月 31 日资产管理规模为 1.86 万亿美元。",
+          "source_id": "PROFILE-R-INV-0ef9a5877865ab-5"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -180,9 +193,25 @@
           "source_id": "trowe_sambanova_f",
           "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
           "source_title": "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round | TechCrunch",
-          "source_content_hash": "3c7f98ccfb26afc328abf5574b68caa0468cc3e744fff6a2b13954eb5c4fd7c0",
+          "source_content_hash": "41d7fc2d367052ed511dfa2e667a31421c105240ed11f1e889cefcf771e5ef11",
           "quote": "Other investors participating in the round include Seligman Ventures, T. Rowe Price Associates",
           "quote_hash": "9d29d40754a292e8eac7da571a54ddd4d0424b0c7d2420299f5b386fee583dcc"
+        },
+        {
+          "source_id": "PROFILE-R-INV-0ef9a5877865ab-4",
+          "source_url": "https://investors.troweprice.com/",
+          "source_title": "Investor Relations | T. Rowe Price Group, Inc.",
+          "source_content_hash": "8d85e58d39487a790b0cc6bd534db62fb82c2e9ca1cc96be1c82f20c1166af48",
+          "quote": "Founded in 1937, Baltimore-based T. Rowe Price Group, Inc. is a global investment management organization",
+          "quote_hash": "de8a82ceac782b2e032d89ee3d0b34229cf28cecccdb832b058cf1a4443347ca"
+        },
+        {
+          "source_id": "PROFILE-R-INV-0ef9a5877865ab-5",
+          "source_url": "https://investors.troweprice.com/",
+          "source_title": "Investor Relations | T. Rowe Price Group, Inc.",
+          "source_content_hash": "8d85e58d39487a790b0cc6bd534db62fb82c2e9ca1cc96be1c82f20c1166af48",
+          "quote": "$1.86 trillion in assets under management as of July 31, 2026",
+          "quote_hash": "054f697ccb93cb26285f68da6d233b00d35d508394b9e727f110e58a46df7721"
         },
         {
           "source_id": "FISRC-dbf8259066547c8e",
@@ -193,7 +222,7 @@
           "quote_hash": "9d29d40754a292e8eac7da571a54ddd4d0424b0c7d2420299f5b386fee583dcc"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

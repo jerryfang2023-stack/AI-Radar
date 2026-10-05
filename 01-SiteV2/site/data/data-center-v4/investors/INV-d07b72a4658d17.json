@@ -163,10 +163,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资人名称来自 ElevenLabs 官方融资公告；SEC Form ADV 结构单独作为同名关系线索，未将其推定为公告中投资者的确切法律主体。注意不要与美国电网导体行业的同名联盟混淆。",
+      "summary": "ElevenLabs Series D 官方公告将 AMP Coalition 列为持续支持公司的现有投资方。SEC Form ADV 另载 AMP Coalition GP PB LLC 为 AMP Infra PBC Holdings LP 的普通合伙人，并载 Anjney Midha 为其管理成员；该申报没有证明这两个名称与 ElevenLabs 投资者名单中的 AMP Coalition 品牌为同一法律实体。",
+      "facts": [
+        {
+          "field": "reported_investor_identity",
+          "label": "被投公司公告披露的投资方名称",
+          "value": "ElevenLabs 将 AMP Coalition 列为 Series D 持续支持公司的现有投资方。",
+          "source_id": "FISRC-7bbfa0b0946953ff"
+        },
+        {
+          "field": "related_sec_filing_structure",
+          "label": "SEC Form ADV 所载同名普通合伙人关系",
+          "value": "SEC Form ADV 列出 AMP COALITION GP PB LLC 为 AMP INFRA PBC HOLDINGS LP 的普通合伙人，并将 Anjney Midha 列为该 GP 的管理成员；申报未证明该实体就是 ElevenLabs 所称的 AMP Coalition。",
+          "source_id": "PROFILE-COLLECT-INV-d07b72a4658d17-L-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -183,6 +196,14 @@
           "source_content_hash": "adef1059449ccbfafac99bb04689c88ffb8cc748571206e0bc10a0fd3e25a8f4",
           "quote": "Existing investors - BroadLight, NFDG, Valor Capital, AMP Coalition and Smash Capital are also continuing their support along with additional investor participation expected to be disclosed later in February.",
           "quote_hash": "0f9def18765cbe3584eaafa080187015ade56e0f22317dbcebe29e06cd896af9"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d07b72a4658d17-L-2",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/341099/PDF/341099.pdf",
+          "source_title": "SEC Form ADV filing 341099 — Schedule B ownership excerpt",
+          "source_content_hash": "648524b9d26297e87e8bf8c4b1e3608e66e94065078debaeb7a9544bd7f3a9e9",
+          "quote": "FULL LEGAL NAME: AMP COALITION GP PB LLC; Entity in Which Interest is Owned: AMP INFRA PBC HOLDINGS LP; Status: GENERAL PARTNER; Date Status Acquired: 03/2026.",
+          "quote_hash": "18f467de66b98d884beecd8439544072ec9c919667b5747b690f7a23c321d6cd"
         }
       ],
       "last_verified_at": "2026-10-03",

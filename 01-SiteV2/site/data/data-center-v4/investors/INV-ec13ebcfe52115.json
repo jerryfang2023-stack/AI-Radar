@@ -139,25 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "深圳市国资委官方页面核实了集团全称、简称、所有制和产业投资平台属性；蜂巢互联融资报道将简称“深重投”列为国资股东，未披露具体基金载体及出资额。",
-      "summary": "深圳市重大产业投资集团有限公司（简称“深重投集团”）是深圳市国资委直管的国有独资产业投资平台，重点聚焦集成电路产业。蜂巢互联融资报道将“深重投”列入国资股东；报道没有说明具体出资载体或金额。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "深圳市国资委将深圳市重大产业投资集团有限公司（简称“深重投集团”）列为 2019 年成立、市国资委直接管理的国有独资产业投资平台。新浪财经报道将“深重投”列入蜂巢互联国资股东名单。",
+      "coverage_note": "集团法定名称、简称、所有制及平台定位来自深圳市国资委；融资报道只使用“深重投”简称，未披露具体投资载体或金额，因此不推断由集团本级或某支基金完成投资。",
       "facts": [
         {
-          "field": "organization_type",
-          "label": "市国资委披露的机构身份",
-          "value": "深圳市国资委直管的国有独资产业投资功能平台。",
-          "source_id": "PROFILE-079db5c69f90b000a3d8"
+          "field": "founded_at",
+          "label": "国资委披露成立时间",
+          "value": "2019 年 5 月",
+          "source_id": "b34-shenzhongtou-gzw"
+        },
+        {
+          "field": "ownership",
+          "label": "国资委披露所有制",
+          "value": "市国资委直接管理的国有独资企业。",
+          "source_id": "b34-shenzhongtou-gzw"
+        },
+        {
+          "field": "business_description",
+          "label": "国资委披露平台定位",
+          "value": "深圳市重大战略引领性产业投资功能平台，并服务国家集成电路产业创新与科技创新融合发展。",
+          "source_id": "b34-shenzhongtou-gzw"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "新浪财经转载投资界的蜂巢互联融资报道，将“深重投”列为国资股东；报道未披露投资主体载体或金额。",
-          "source_id": "PROFILE-d190de805d24d9c0371e"
-        },
-        {
-          "description": "融资来源记录：蜂巢互联 · 多轮融资 · 2026-08-26 · 本轮参投 · 12亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "新浪财经报道将“深重投”列入蜂巢互联融资后的国资股东名单；报道未说明具体基金载体、投资金额或持股比例。",
           "source_id": "FISRC-6d442164db5f81db"
         }
       ],
@@ -165,10 +174,10 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
+      "experience_summary": "深圳市国资委直管的国有独资产业投资平台，服务深圳市重大战略及集成电路相关产业发展。",
       "sources": [
         {
-          "source_id": "PROFILE-079db5c69f90b000a3d8",
+          "source_id": "b34-shenzhongtou-gzw",
           "source_url": "https://gzw.sz.gov.cn/szgq/content/post_9395747.html",
           "source_title": "深圳市重大产业投资集团有限公司-深圳国企-深圳市人民政府国有资产监督管理委员会网站",
           "source_content_hash": "012876ac51ed51e244edc00099ba1c0bf8e33445d424498a77498b2e6cede5be",
@@ -176,23 +185,14 @@
           "quote_hash": "ee8536067998064eafc71bb3c72ada6d98ef3134be83516be32faeca23a1e6e4"
         },
         {
-          "source_id": "PROFILE-d190de805d24d9c0371e",
+          "source_id": "FISRC-6d442164db5f81db",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
           "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎_新浪财经_新浪网",
           "source_content_hash": "d14110eba1a1beea7dde559c57889ac1f2a323df193ce26a04c4cd7e8e38c735",
           "quote": "国资股东覆盖多省市重点产业投资平台，包括 深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金 等区域国资",
           "quote_hash": "caadd5028daf1d1f6f80a0619e7ea892668c663c66ca70e73bf1b0908f08b475"
-        },
-        {
-          "source_id": "FISRC-6d442164db5f81db",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
-          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
-          "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
-          "quote": "国资股东覆盖多省市重点产业投资平台，包括深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金等区域国资",
-          "quote_hash": "35ae44ccdff618ec98c46559a29250db0bd4e23281fdb1042ebad42b9f0efddb"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     }
   }
 }

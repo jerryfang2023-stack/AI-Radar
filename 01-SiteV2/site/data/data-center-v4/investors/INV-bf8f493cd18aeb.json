@@ -343,19 +343,38 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开来源以 Fidelity 名义披露其参与部分融资；本档案保留来源披露名称，不推断为特定法人或基金。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Fidelity 品牌背景和私募市场产品来自官网，Taalas warrants 来自 SEC 投资组合报告；上述持仓不单独证明是哪一 Fidelity 载体参与原始融资轮次，具体法人及基金归属仍未披露。",
+      "summary": "融资报道以 Fidelity 名义列出 Taalas 投资方。Fidelity 官网公开私募市场投资产品，SEC 文件也列示 Fidelity VIP Growth Opportunities Portfolio 持有 Taalas warrants。现有原始融资披露没有说明具体 Fidelity 法人或基金载体，本档保留披露名称，不把该轮投资归给某一子公司或基金。",
+      "facts": [
+        {
+          "field": "company_history",
+          "label": "官网历史资料",
+          "value": "Fidelity 官网记载 Fidelity Management & Research 于 1946 年创立，最初担任 Fidelity Fund 的投资顾问。",
+          "source_id": "PROFILE-COLLECT-INV-bf8f493cd18aeb-1"
+        },
+        {
+          "field": "private_market_products",
+          "label": "私募市场产品",
+          "value": "Fidelity 官网提供私募股权、私募信贷及私募实物资产产品。",
+          "source_id": "PROFILE-COLLECT-INV-bf8f493cd18aeb-2"
+        },
+        {
+          "field": "portfolio_exposure",
+          "label": "公开持仓披露",
+          "value": "SEC 文件列出 Fidelity VIP Growth Opportunities Portfolio 对 Taalas Inc warrants 的持仓；这不用于推断原融资投资载体。",
+          "source_id": "PROFILE-COLLECT-INV-bf8f493cd18aeb-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Taalas Inc. 轮次未披露 本轮参投。",
-          "source_id": "FISRC-7a85c433c7dbed44"
-        },
-        {
           "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮参投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1e2b3bad243bd066"
+        },
+        {
+          "description": "融资来源记录：Taalas Inc. · 轮次未披露 · 2026-02-19 · 本轮参投 · $169M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7a85c433c7dbed44"
         },
         {
           "description": "融资来源记录：xAI · E轮 · 2026-01-06 · 本轮参投 · $20 billion。这是本库收录的披露案例，不代表完整投资组合。",
@@ -365,12 +384,44 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-7a85c433c7dbed44",
+          "source_id": "PROFILE-COLLECT-INV-bf8f493cd18aeb-1",
+          "source_url": "https://about.fidelity.com/",
+          "source_title": "Fidelity Investments | About Fidelity",
+          "source_content_hash": "2c2bd3fb68a73e6814ca4bd33e040e73f4f0ef7c7d8a56c738e05d901db9b8fd",
+          "quote": "After taking over the Fidelity Fund three years earlier, in 1946 Edward Johnson 2d founded a new company, Fidelity Management & Research, to act as the sole adviser to Fidelity Fund.",
+          "quote_hash": "343ba7660ab0fae22de6a4b64cd42c62c164c9d32469470eb53e4c2d84eb817b"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bf8f493cd18aeb-2",
+          "source_url": "https://www.fidelity.com/go/alternative-investments/overview",
+          "source_title": "Alternative Investments for Individual Investors | Fidelity Investments",
+          "source_content_hash": "f3df50d93a49ef65db26e14674c6140c159b3329a1d48ca77290bd28d4f3910c",
+          "quote": "Private market alternatives Add private assets to your portfolio, including investments in private equity, private credit, and private real assets, to significantly expand your investible opportunity set versus public markets alone.",
+          "quote_hash": "deda8b64da05a9498c39cf237d35f6a87192f8b06b5f21a7acd78ed8d44eca96"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bf8f493cd18aeb-3",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/927384/000003540226003483/QTLY_617_20260331.htm",
+          "source_title": "010 - Quarterly Front Cover",
+          "source_content_hash": "dc335c93dcfbba0937e183a2606f2f271dd6b74a23e05de7ab5daeb1d74590f1",
+          "quote": "Fidelity ® Variable Insurance Products: VIP Growth Opportunities Portfolio",
+          "quote_hash": "d3eb355370b59341788aaad5ad591d08320ca5dab432ea9d2b6ff11cdfcbe9d1"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bf8f493cd18aeb-4",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/927384/000003540226003483/QTLY_617_20260331.htm",
+          "source_title": "010 - Quarterly Front Cover",
+          "source_content_hash": "dc335c93dcfbba0937e183a2606f2f271dd6b74a23e05de7ab5daeb1d74590f1",
+          "quote": "Taalas Inc warrants (c)(d)(e) 34,625 48,129",
+          "quote_hash": "cc48be9feccda549a577ace8140c9e7ec42e3549b342c2dcc3519c82d8083690"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bf8f493cd18aeb-5",
           "source_url": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
           "source_title": "Taalas raises $169M in funding to develop model-specific AI chips - SiliconANGLE",
           "source_content_hash": "085715b1d2b1e483fe6f12d2f2a4a50f15cfa8e454eab2d1fbbcf5ba0bcad53b",
-          "quote": "Reuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
-          "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
+          "quote": "the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
+          "quote_hash": "96b94fa07f92926360b63889164be31b6546043d54254d05a659eea5fc9e7d0d"
         },
         {
           "source_id": "FISRC-1e2b3bad243bd066",
@@ -379,6 +430,14 @@
           "source_content_hash": "494969b64dc816f3",
           "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
           "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+        },
+        {
+          "source_id": "FISRC-7a85c433c7dbed44",
+          "source_url": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
+          "source_title": "Taalas 融资 1.69 亿美元，开发模型专用 AI 芯片",
+          "source_content_hash": "8df5a185c3d0c1bc47267eb9148dc417f9b5117d0d38a10f0d0ffeef2274858f",
+          "quote": "Reuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
+          "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
         },
         {
           "source_id": "FISRC-23bba75e0baa6d39",

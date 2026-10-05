@@ -139,11 +139,18 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "金蝶国际软件集团有限公司是香港联交所上市的企业管理云 SaaS 公司。财新报道其参与硅基流动 B 轮融资。",
-      "coverage_note": "公司身份来自金蝶投资者关系官网；融资参与来自财新报道，未披露金蝶股份单独投资金额。",
-      "facts": [],
+      "summary": "金蝶国际软件集团有限公司官网投资者关系页确认集团主体名称；财新报道将“金蝶股份”列为硅基流动 B 轮投资方之一。报道没有说明该投资的集团内出资法人或载体，本档保留该限定。",
+      "coverage_note": "集团名称来自金蝶官网；融资参与来自财新报道。没有将集团官网实体与报道中的“金蝶股份”进一步等同为特定子公司或基金。",
+      "facts": [
+        {
+          "field": "name_context",
+          "label": "官网披露的集团名称",
+          "value": "金蝶国际软件集团有限公司。",
+          "source_id": "kingdee_identity"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -173,7 +180,7 @@
           "source_id": "kingdee_silicore_b_round",
           "source_url": "https://companies.caixin.com/m/2026-06-16/102454794.html",
           "source_title": "硅基流动完成超20亿元B轮融资 智能体催热MaaS赛道",
-          "source_content_hash": "3f1ff5835968eaf51d326e7a0cd8aa3bcc7b7935cb7d8c991a331508ff61acd1",
+          "source_content_hash": "2093609c3fbcdadae99ac10cf46df70208b8c623d63f2d877b157484bd6f81d5",
           "quote": "金蝶股份、联通新沃",
           "quote_hash": "d4c834aac7e70e244bf86229f869e4d996d913a6de4720c21a83da975fdcdb03"
         },
@@ -186,7 +193,7 @@
           "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

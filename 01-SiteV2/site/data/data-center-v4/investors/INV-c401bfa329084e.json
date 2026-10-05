@@ -139,33 +139,68 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "策略信息来自 Lingotto 官网；投资活动来自 Lumilens 公司公告。融资公告所列为投资者参与关系，不代表披露 Lingotto 单独投资金额。",
+      "summary": "Lingotto 是全球投资管理机构，其官网介绍 Innovation 策略可从风险投资阶段延伸至公开市场。Lumilens 的公司公告将 Lingotto 列为其 Series C 参与方之一；公告未披露其单独出资额。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "官网称 Lingotto Innovation 采用多阶段成长策略，可从风险投资延伸至公开市场。",
+          "source_id": "lingotto_strategies"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Lumilens C轮 本轮参投。",
+          "description": "Lumilens 公司公告将 Lingotto 列为 Series C 参与投资者之一；未披露单独出资额。",
+          "source_id": "lingotto_lumilens_series_c"
+        },
+        {
+          "description": "融资来源记录：Lumilens · C轮 · 2026-08-06 · 本轮参投 · $700 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1661d3e646fd132d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Lingotto",
+          "url": "https://www.lingotto.com/",
+          "source_id": "lingotto_strategies"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "lingotto_strategies",
+          "source_url": "https://www.lingotto.com/our-strategies",
+          "source_title": "Our Strategies - Lingotto",
+          "source_content_hash": "2b08ab8961f2c241f65ae9b83fc2f92d683c9ed2e2113785bf67ba03be1e13c9",
+          "quote": "Lingotto Innovation Multi-stage growth-focused strategy with the ability to invest from venture through to public markets",
+          "quote_hash": "5548f447af9012ffe11c5536ae6173ee369c0bf075ae2710ce462872c21a5c26"
+        },
+        {
+          "source_id": "lingotto_lumilens_series_c",
+          "source_url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+          "source_title": "Lumilens emerges with $900M+ in Funding",
+          "source_content_hash": "7abae51b9e86e2421809ebfc388131d9abb7618d5de57d327bca07cb422a292f",
+          "quote": "Lingotto, Mayfield, Meritech, MVP Ventures, Peak XV",
+          "quote_hash": "d2d3390b2e8c99988d85cbd65c518e3c92aaa91a5a632f7ae97b1c4fe2dcdd8b"
+        },
         {
           "source_id": "FISRC-1661d3e646fd132d",
           "source_url": "https://www.financialcontent.com/article/bizwire-2026-8-6-lumilens-emerges-from-stealth-with-more-than-900-million-in-funding-to-break-ais-connectivity-bottlenecks-in-the-data-center",
-          "source_title": "Lumilens Emerges from Stealth with More Than $900 Million in Funding to Break AI’s Connectivity Bottlenecks in the Data Center | FinancialContent",
-          "source_content_hash": "7026c90a3d4a38c21ebda613ad4e6a39d2325ba00af8ed88df3e142e602bf05a",
+          "source_title": "Lumilens 携超9亿美元融资走出隐身模式，破解数据中心AI连接瓶颈",
+          "source_content_hash": "0056778d6a120938",
           "quote": "The Lumilens Series C funding round includes participation from a wide range of top-tier investors: Addition, Aiconic, Alkeon, Atreides Capital, Bain Capital Ventures, EDBI (arm of SG Growth Capital, the investment platform of EDB and Enterprise Singapore), Harbourvest, J.P. Morgan Private Capital, Lingotto, Mayfield, Meritech, MVP Ventures, Peak XV, Qualcomm Ventures, Redpoint Ventures, Seifdune, Seligman Ventures, Spark Capital and Thomvest Ventures.",
           "quote_hash": "5c6dc8d8f04b41d8809db0a2dff73dab098ead2ec9aa2a5525d286176c5326f8"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

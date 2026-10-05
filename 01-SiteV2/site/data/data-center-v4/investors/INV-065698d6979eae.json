@@ -179,11 +179,30 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "天图投资的香港上市发行人以 TIAN TU CAPITAL 名称在港交所披露信息；投资界报道其参与智推时代天使轮。",
-      "coverage_note": "发行人名称和代码来自港交所；融资关系来自投资界报道。来源未披露天图投资单独投资金额。",
-      "facts": [],
+      "summary": "天图投资的上市发行人天图资本（股票代码 01973）是中国消费领域的私募股权投资者和基金管理人。公司年报披露，2024 年投资 13 家组合企业，涉及生物技术、美丽健康和清洁技术等方向，投资总额为人民币 2.297 亿元；截至 2024 年 12 月 31 日管理资产规模为人民币 205 亿元。",
+      "coverage_note": "发行人身份、投资者/基金管理人定位、2024 年投资情况及年末 AUM 均据天图资本向港交所提交的 2024 年年报；时间性数据保留披露日期。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "发行人定位",
+          "value": "天图资本年报称其为中国消费领域的私募股权投资者和基金管理人。",
+          "source_id": "PROFILE-COLLECT-INV-065698d6979eae-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "2024 年投资活动",
+          "value": "年报披露 2024 年投资 13 家组合企业，覆盖生物技术、美丽健康及清洁技术等方向，投资总额人民币 2.297 亿元。",
+          "source_id": "PROFILE-COLLECT-INV-065698d6979eae-2"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "截至 2024 年末的管理规模",
+          "value": "年报披露截至 2024 年 12 月 31 日管理资产规模人民币 205 亿元。",
+          "source_id": "PROFILE-COLLECT-INV-065698d6979eae-3"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -191,10 +210,6 @@
       "education": [],
       "experience_summary": "",
       "track_record": [
-        {
-          "description": "投资界报道天图投资参与智推时代天使轮融资。",
-          "source_id": "tiantu_zhi_tui_seed"
-        },
         {
           "description": "融资来源记录：智推时代 · 天使轮 · 2026-07-07 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-602fdc3dbd5462df"
@@ -206,20 +221,28 @@
       ],
       "sources": [
         {
-          "source_id": "tiantu_hkex_identity",
-          "source_url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000202949",
-          "source_title": "Listed Company Information Title Search",
-          "source_content_hash": "035ad1de7fc10896ed72a98c9a110635a5931a882f4219f2d23d1bd8492d5e4e",
-          "quote": "Stock Code: 01973 Stock Short Name: TIAN TU CAPITAL",
-          "quote_hash": "5d71b7ac87114c641f7b613311afbe9884e25ab7e0492fb3db4f70405c1f062c"
+          "source_id": "PROFILE-COLLECT-INV-065698d6979eae-1",
+          "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0430/2025043003778.pdf",
+          "source_title": "Tian Tu Capital Co., Ltd. 2024 Annual Report",
+          "source_content_hash": "8ce9ed93e4550113a9eb1a423ff96c2cf729162791e0db5b7caefdd4999bdea1",
+          "quote": "Tian Tu Capital Co., Ltd. (Stock Exchange Stock Code: 01973) is a leading private equity investor and fund manager specializing in the consumer sector in China.",
+          "quote_hash": "0c37b79fa6c352294253d12d88b2abc30c361b0e14339a41fe8c24d069af5509"
         },
         {
-          "source_id": "tiantu_zhi_tui_seed",
-          "source_url": "https://news.pedaily.cn/202607/565918.shtml",
-          "source_title": "首发| AI搜索诞生一个天使轮，智推时代融资数千万元_投资界",
-          "source_content_hash": "fe0ec11bf2e42e8201772d2a95e3a1edff12ea6146274bede0aaeaadedb3fe62",
-          "quote": "天图投资、知名个人投资人魏巍等参与投资",
-          "quote_hash": "0c067f122165db73ab50b2f71a923539ed3713312f4d99e1fa780be1b1cc676c"
+          "source_id": "PROFILE-COLLECT-INV-065698d6979eae-2",
+          "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0430/2025043003778.pdf",
+          "source_title": "Tian Tu Capital Co., Ltd. 2024 Annual Report",
+          "source_content_hash": "8ce9ed93e4550113a9eb1a423ff96c2cf729162791e0db5b7caefdd4999bdea1",
+          "quote": "In 2024, we made investments in 13 portfolio companies across various future-focused sectors, including biotechnology, beauty and wellbeing, and clean technology, with a total capital of RMB229.7 million.",
+          "quote_hash": "4f58b03ec00395d1bfcbc6c83344c894e8eafdf7f1d1f33204803f2565d5dc16"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-065698d6979eae-3",
+          "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0430/2025043003778.pdf",
+          "source_title": "Tian Tu Capital Co., Ltd. 2024 Annual Report",
+          "source_content_hash": "8ce9ed93e4550113a9eb1a423ff96c2cf729162791e0db5b7caefdd4999bdea1",
+          "quote": "As of December 31, 2024, our total assets under management (“AUM”) amounted to RMB20.5 billion",
+          "quote_hash": "12b7fd3f92b2047824da69ea5a40c7592d9f2d1b190a0524b27668d9ea7e5cb0"
         },
         {
           "source_id": "FISRC-602fdc3dbd5462df",
@@ -238,7 +261,7 @@
           "quote_hash": "1ac21d296e9d45858e33702b8083d80ef4d3288b3d973093c06dbfb7751fb3ba"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

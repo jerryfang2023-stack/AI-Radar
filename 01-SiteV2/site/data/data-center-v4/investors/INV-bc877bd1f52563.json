@@ -238,14 +238,33 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Fundomo 官网项目列表与 OLIX 公司公告分别支持组合展示和融资参与；本档案不推断未公开的法律主体、投资额或其余组合。",
+      "summary": "Fundomo 官网项目页列有 Ahead Computing 和 OLIX，OLIX 的融资公告进一步将 Fundomo 列为 2026 年 Series B 参与方。现有一手资料确认其持续投资活动，但没有披露其法律主体、基金结构或投资策略。",
+      "facts": [
+        {
+          "field": "portfolio_history",
+          "label": "官网项目页",
+          "value": "Fundomo 官网项目列表包含 Ahead Computing 和 OLIX。",
+          "source_id": "PROFILE-COLLECT-INV-bc877bd1f52563-1"
+        },
+        {
+          "field": "portfolio_history",
+          "label": "官网另一组合条目",
+          "value": "Fundomo 官网项目列表包含 OLIX。",
+          "source_id": "PROFILE-COLLECT-INV-bc877bd1f52563-2"
+        },
+        {
+          "field": "reported_investment",
+          "label": "被投企业融资公告",
+          "value": "OLIX 官方公告将 Fundomo 列为 2026 年 Series B 参与方。",
+          "source_id": "PROFILE-COLLECT-INV-bc877bd1f52563-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Olix Computing Ltd. B轮 本轮领投。",
+          "description": "融资来源记录：Olix Computing Ltd. · B轮 · 2026-08-03 · 本轮领投 · $312 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6c18c7d2adec363"
         },
         {
@@ -260,10 +279,34 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-COLLECT-INV-bc877bd1f52563-1",
+          "source_url": "https://www.fundomo.com/",
+          "source_title": "Fundomo",
+          "source_content_hash": "2f3764ac1231d0b5bd45718953564de713c972dddadaab97f83fd51ba1270230",
+          "quote": "Ahead Computing ◄ Ahead Computing ×",
+          "quote_hash": "533a9fff8361a3ca07ebb893df0d7436a4b3044d2468b4febdd3d02d61f85e66"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bc877bd1f52563-2",
+          "source_url": "https://www.fundomo.com/",
+          "source_title": "Fundomo",
+          "source_content_hash": "2f3764ac1231d0b5bd45718953564de713c972dddadaab97f83fd51ba1270230",
+          "quote": "OLIX ◄ OLIX ×",
+          "quote_hash": "f98d4e9d6c045fc1adb56c03038d68b988d00a98f7fb9b8e58c760a479441f10"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bc877bd1f52563-3",
+          "source_url": "https://olix.com/news/company-raises-series-b",
+          "source_title": "OLIX raises $312m at a $3.3bn valuation and appoints Professor Nick McKeown to its board — OLIX",
+          "source_content_hash": "f203c86302216557ff4f4884d108349a1e8c8948b7a3a4e29cc57c7692986ea4",
+          "quote": "The round included Fundomo, Arm and Hudson River Trading, alongside angel investors including Reed Hastings, the co-founder of Netflix, with existing investors all increasing their commitments.",
+          "quote_hash": "cc5ea011569c4398f15adaddbce9e7baa485e8f6ade2fe00d57b54638d5892c3"
+        },
+        {
           "source_id": "FISRC-a6c18c7d2adec363",
           "source_url": "https://www.techtimes.com/articles/322816/20260803/olix-raises-312m-photonic-ai-chip-that-ditches-hbm-britains-biggest-semiconductor-bet.htm",
           "source_title": "Olix Raises $312M for Photonic AI Chip That Ditches HBM: Britain's Biggest Semiconductor Bet",
-          "source_content_hash": "cfce99b37aac7c782c29b7069a31538c9a88c765020ef8bc270050a0a8894e63",
+          "source_content_hash": "5a13ee222d9a2ed6",
           "quote": "The round was led by New York venture firm Fundomo",
           "quote_hash": "bf3a7b6f25818182067c37e135c8f151434e09f20fadb19a1af9db336c9a03da"
         },
@@ -284,7 +327,7 @@
           "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

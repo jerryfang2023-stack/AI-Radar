@@ -187,10 +187,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "投资界报道将中网投列为生数科技 B 轮融资参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体名称、发起部门、成立时间和职责来自中央网信办官网；项目参投来自投资界报道。",
+      "summary": "中央网信办网站称中国互联网投资基金（中网投）于2016年由中央网信办、财政部发起设立，2017年正式成立，采取市场化方式支持网信企业并实行专业化管理。投资界报道另将中网投列为生数科技 B 轮投资方；活动来源仅作案例，不代表完整组合。",
+      "facts": [
+        {
+          "field": "establishment",
+          "label": "中央网信办披露的发起设立",
+          "value": "中网投于2016年由中央网信办、财政部发起设立。",
+          "source_id": "PROFILE-COLLECT-INV-8e1c43b47ac1e0-H-2"
+        },
+        {
+          "field": "formal_establishment",
+          "label": "中央网信办披露的正式成立时间",
+          "value": "中网投于2017年1月正式成立。",
+          "source_id": "PROFILE-COLLECT-INV-8e1c43b47ac1e0-H-3"
+        },
+        {
+          "field": "investment_mandate",
+          "label": "中央网信办披露的投资方式",
+          "value": "中网投采取市场化方式支持网信企业发展。",
+          "source_id": "PROFILE-COLLECT-INV-8e1c43b47ac1e0-H-4"
+        },
+        {
+          "field": "management_model",
+          "label": "中央网信办披露的管理方式",
+          "value": "中网投坚持专业化管理，并组建专业化投资运营团队。",
+          "source_id": "PROFILE-COLLECT-INV-8e1c43b47ac1e0-H-5"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -211,6 +236,38 @@
           "source_content_hash": "ad192fa38f112b71ff7752bed5fd1cf5c35f99cc3e3c1456831e510dcf2df57a",
           "quote": "资。但面临竞争与研发挑战，后续发展需关注技术创新及市场拓展情况。 内容由AI生成，仅供参考 投资界（ID：pedaily2012）4月10日消息，生数科技宣布 完成近20亿元人民币B轮融资 。本轮融资由 阿里云领投 ， 中网投、九安海棠、好未来、光合创投等投资人战略投资，星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。 据官网，生数科技成立于2023年3月，专注于自主研发多模态通用大模型及应用。公司以技术创新为核心驱动力，通过SaaS、MaaS、APP等产品应用形态，为全球个人用户、专业创作者和企业客户提供视频生成及多模态生成产品。 Vidu系列模型实现了声画同出、长时长、高时空一致性与电影级视觉品质。Vidu系列模型通过MaaS（Vidu",
           "quote_hash": "15844f577d95ce4927d4948076d9f2a5c689e452f69c1ebbc31669480e2b8437"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-8e1c43b47ac1e0-H-2",
+          "source_url": "https://www.cac.gov.cn/2019-10/30/c_1573967258883096.htm",
+          "source_title": "中国互联网投资基金：资本助力网信企业行稳致远_中央网络安全和信息化委员会办公室",
+          "source_content_hash": "41228f2df0bfbce966571191fa52af7698dbb552a61c31508fd3b2e7cc6fe178",
+          "quote": "2016年1月，经国务院批复同意，中央网信办、财政部发起设立中国互联网投资基金(以下简称“中网投”)",
+          "quote_hash": "a59d2751f1aadb68de6cccf00482de92277062a1771c87e809329d26e3934a9d"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-8e1c43b47ac1e0-H-3",
+          "source_url": "https://www.cac.gov.cn/2019-10/30/c_1573967258883096.htm",
+          "source_title": "中国互联网投资基金：资本助力网信企业行稳致远_中央网络安全和信息化委员会办公室",
+          "source_content_hash": "41228f2df0bfbce966571191fa52af7698dbb552a61c31508fd3b2e7cc6fe178",
+          "quote": "2017年1月，中网投正式成立",
+          "quote_hash": "a9e44bfb457b0a11da4806f5af64b550379bb611879f1a3edd882f9dbce22a8d"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-8e1c43b47ac1e0-H-4",
+          "source_url": "https://www.cac.gov.cn/2019-10/30/c_1573967258883096.htm",
+          "source_title": "中国互联网投资基金：资本助力网信企业行稳致远_中央网络安全和信息化委员会办公室",
+          "source_content_hash": "41228f2df0bfbce966571191fa52af7698dbb552a61c31508fd3b2e7cc6fe178",
+          "quote": "采取市场化方式支持网信企业发展壮大",
+          "quote_hash": "61442f3dc5abe589bdf4ca33482e078f342862f97592d3809e5e30efebbee2a0"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-8e1c43b47ac1e0-H-5",
+          "source_url": "https://www.cac.gov.cn/2019-10/30/c_1573967258883096.htm",
+          "source_title": "中国互联网投资基金：资本助力网信企业行稳致远_中央网络安全和信息化委员会办公室",
+          "source_content_hash": "41228f2df0bfbce966571191fa52af7698dbb552a61c31508fd3b2e7cc6fe178",
+          "quote": "中网投坚持专业化管理",
+          "quote_hash": "b6e2f276e795049600ca0c5c6c4b2acdb730fb9340aa3cd73dc191992b17441b"
         },
         {
           "source_id": "FISRC-b07965e9cd2c01b5",

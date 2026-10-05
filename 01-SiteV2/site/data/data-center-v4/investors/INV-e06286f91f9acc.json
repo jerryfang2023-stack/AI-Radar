@@ -235,18 +235,37 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "Singular 官网将 Basecamp Research 列入其投资组合；公开融资资料还将 Singular 列为 Restate A 轮领投方。本档案只记录可核验的投资活动示例。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段与组合样本据 Singular 官网；融资角色据 TechCrunch 对 Restate 融资的报道。公开案例不代表完整组合。",
+      "summary": "Singular 是欧洲早期风险投资机构，官网称其从 Seed 投至 Series B，并列出 Basecamp Research 等组合公司。TechCrunch 报道其领投 Restate 的 2,000 万美元 Series A，另有 Redpoint Ventures 与 Capital One Ventures 参与。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网投资阶段",
+          "value": "Singular 官网称其投资 Seed 至 Series B 阶段、具全球发展愿景的创业者。",
+          "source_id": "PROFILE-COLLECT-INV-e06286f91f9acc-1"
+        },
+        {
+          "field": "portfolio_company",
+          "label": "官网组合示例",
+          "value": "Singular 官网组合列表列出 Basecamp Research。",
+          "source_id": "PROFILE-COLLECT-INV-e06286f91f9acc-2"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "TechCrunch 报道 Singular 领投 Restate 2,000 万美元 Series A，Redpoint Ventures 和 Capital One Ventures 参与。",
+          "source_id": "PROFILE-COLLECT-INV-e06286f91f9acc-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Restate A轮 本轮领投；仅记录来源直接支持的示例，不代表完整投资组合。",
+          "description": "融资来源记录：Restate · A轮 · 2026-09-30 · 本轮领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-32de5b12bdde4fb9"
         },
         {
-          "description": "公开融资来源将其列为 Basecamp Research C轮 本轮参投；仅记录来源直接支持的示例，不代表完整投资组合。",
+          "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮参投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ecd2ea74974f4ff3"
         },
         {
@@ -257,28 +276,44 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-32de5b12bdde4fb9",
+          "source_id": "PROFILE-COLLECT-INV-e06286f91f9acc-1",
+          "source_url": "https://www.singular.vc/",
+          "source_title": "Singular",
+          "source_content_hash": "3b7579339edf5c03642bf135c6f8913e0e2106ab0f41b032d5c280cd29f8f853",
+          "quote": "We are a European early-stage venture capital firm investing from Seed to Series B in founders with global ambitions, across all sectors",
+          "quote_hash": "b8a64678e683a02c9a84b777aba0e6ce9bef51d79077f997ca3ccf25e9792037"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-e06286f91f9acc-2",
+          "source_url": "https://www.singular.vc/",
+          "source_title": "Singular",
+          "source_content_hash": "3b7579339edf5c03642bf135c6f8913e0e2106ab0f41b032d5c280cd29f8f853",
+          "quote": "Basecamp Research Unlocking biology beyond known limits",
+          "quote_hash": "7354a3123787d212e3ecf6915ea4262c111acaa228e735f02e6903619af15480"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-e06286f91f9acc-3",
           "source_url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
           "source_title": "Restate lands $20M as the need for durable infrastructure increases with AI agents | TechCrunch",
           "source_content_hash": "9067ce1f37f3bc3d90d1177a2c297a7b16330c04569050a52cedc125a00b02f0",
+          "quote": "a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures",
+          "quote_hash": "c6b6d4640b8a9a59002f62ff7ef0dfb9935c1ac4e4aef46cece2c5ad57b87ec9"
+        },
+        {
+          "source_id": "FISRC-32de5b12bdde4fb9",
+          "source_url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
+          "source_title": "Restate 获 2000 万美元融资，随着 AI 智能体发展，对持久基础设施的需求日益增长",
+          "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
           "quote": "That momentum has led Restate to secure a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures.",
           "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
         },
         {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
-          "source_title": "/C O R R E C T I O N -- Basecamp Research/",
-          "source_content_hash": "4e9c66123d0f871688da11a6f6403edff9d86e25c822636aeda63c774ce1b4d4",
+          "source_title": "更正 -- Basecamp Research",
+          "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
           "quote": "with participation from Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, NVIDIA, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI and True Ventures.",
           "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
-        },
-        {
-          "source_id": "PROFILE-1206c689500c50d540ec",
-          "source_url": "https://www.singular.vc/",
-          "source_title": "Singular",
-          "source_content_hash": "3b7579339edf5c03642bf135c6f8913e0e2106ab0f41b032d5c280cd29f8f853",
-          "quote": "Singular",
-          "quote_hash": "64c445c3d1b1d3a52dd981bd47b9304ca3eedb9b279277d81d75f091999509c2"
         },
         {
           "source_id": "FISRC-6421d8860f804048",
@@ -289,7 +324,7 @@
           "quote_hash": "4fd6c20159de0081bc240a85daf8ede7522618927525f1598af658891dfd2277"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

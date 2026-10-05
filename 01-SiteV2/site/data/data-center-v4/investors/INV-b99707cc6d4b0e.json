@@ -139,15 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资方名称依据好心情官网公告。本档案按其披露的“爱美客集团”名称记录，不推断为爱美客香港有限公司或其他具体法律主体。",
-      "summary": "好心情官网于 2026 年 9 月 28 日公告完成近 3 亿元新一轮融资，并将爱美客集团列入本轮投资方名单；公告未披露其单独出资额或认购法律主体。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资公告披露“爱美客集团”这一名称，未说明具体投资载体；档案不把本笔投资归到特定子公司或基金。",
+      "summary": "爱美客官网确认其主体为爱美客技术发展股份有限公司，2004 年成立，专注生物医用软组织修复材料的研发和转化。好心情融资公告将“爱美客集团”列为投资方，但未披露具体出资法人、基金或管理主体；因此仅按报道名称记录该项活动。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "主体名称",
+          "value": "爱美客技术发展股份有限公司",
+          "source_id": "PROFILE-B12-INV-b99707cc6d4b0e-2"
+        },
+        {
+          "field": "founding_year",
+          "label": "成立年份",
+          "value": "2004年",
+          "source_id": "PROFILE-B12-INV-b99707cc6d4b0e-2"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务方向",
+          "value": "生物医用软组织修复材料的研发和转化",
+          "source_id": "PROFILE-B12-INV-b99707cc6d4b0e-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "好心情官网于 2026 年 9 月 28 日公告将爱美客集团列为新一轮融资投资方之一；公司未披露其单独出资金额。",
-          "source_id": "goodmood-aimeike-round-2026"
+          "source_id": "PROFILE-B12-INV-b99707cc6d4b0e-1"
         },
         {
           "description": "融资来源记录：好心情（Good Mood） · 轮次未披露 · 2026-09-30 · 本轮参投 · 近3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
@@ -158,15 +177,23 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "投资方名称依据好心情官网公告。本档案按其披露的“爱美客集团”名称记录，不推断为爱美客香港有限公司或其他具体法律主体。",
+      "experience_summary": "",
       "sources": [
         {
-          "source_id": "goodmood-aimeike-round-2026",
+          "source_id": "PROFILE-B12-INV-b99707cc6d4b0e-1",
           "source_url": "https://haoxinqing.cn/article/detail42025.html",
           "source_title": "好心情完成近3亿元新一轮融资 加速 AI 创新与国际化布局_好心情",
           "source_content_hash": "992ed73388e33a649e5480700fce6fa46821c92682e75f53375536b64d00b548",
           "quote": "本轮投资方包括爱美客集团、中信建投资本、无锡滨湖产业集团、山东发展、Unifuture Capital等。",
           "quote_hash": "4c78d8de1b18274ce3ee3373bea795e0815c1dce5530d772881b1b4f98d5d9b0"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b99707cc6d4b0e-2",
+          "source_url": "https://www.imeik.com/cn/pages/aboutus/?target=1",
+          "source_title": "关于我们 - 爱美客技术发展股份有限公司--爱美客 旗下有爱芙莱、嗨体、宝尼达、逸美、逸美一加一等产品",
+          "source_content_hash": "3ea58c713fb5eb7c889e5d6f79d6199762948b3bfcfcfd1b3308468725729f6c",
+          "quote": "爱美客技术发展股份有限公司（以下简称爱美客）成立于2004年，公司立足于生物医用软组织修复材料的研发和转化，是国内生物医用软组织材料创新型的领先企业",
+          "quote_hash": "144a50d199899e0b6b36e7823128909230aa82202a4782677e7efd568c20f2df"
         },
         {
           "source_id": "FISRC-fd10d8d231daf83d",
@@ -177,7 +204,7 @@
           "quote_hash": "4c78d8de1b18274ce3ee3373bea795e0815c1dce5530d772881b1b4f98d5d9b0"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

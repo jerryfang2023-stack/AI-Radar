@@ -139,15 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "SiMa.ai 官方公告将 AllianceBernstein 列为 2026 年 9 月 Series C 新投资方；本档案仅记录该笔公开融资活动。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "资产管理规模等指标具有时效性，此处不列入静态档案。",
+      "summary": "AllianceBernstein官网将AB描述为全球资产管理公司，覆盖股票、固定收益、另类和多资产策略。SiMa.ai在2026年C轮公告中将AllianceBernstein列为新投资方之一；公告未披露单家出资额。本档案不将其表述为风险投资管理人。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型（官网）",
+          "value": "全球资产管理公司",
+          "source_id": "B30-AB-WEBSITE"
+        },
+        {
+          "field": "strategies",
+          "label": "投资策略（官网）",
+          "value": "股票、固定收益、另类投资及多资产策略",
+          "source_id": "B30-AB-WEBSITE"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "SiMa.ai 官方公告将 AllianceBernstein 列为 2026 年 9 月 Series C 新投资方。",
-          "source_id": "PROFILE-2bcdd0ded93917ae95ab"
+          "description": "SiMa.ai 2026年C轮融资公告将AllianceBernstein列为新投资方之一；未披露单家金额。",
+          "source_id": "B30-AB-SIMA"
         },
         {
           "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,20 +170,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-2bcdd0ded93917ae95ab",
+          "source_id": "B30-AB-WEBSITE",
+          "source_url": "https://www.alliancebernstein.com/us/en-us/investments/about-us.html",
+          "source_title": "About Us | AB",
+          "source_content_hash": "2381e0e27db7c3eb91d08699a846b98b5311786915f425c0b40b25ac77596835",
+          "quote": "We’re a global asset-management firm committed to delivering better investment outcomes for our clients.",
+          "quote_hash": "51e1346dbedddd52a6fc15c4add37c22fe82f732d32c3bc40f755cdea8b0dd10"
+        },
+        {
+          "source_id": "B30-AB-SIMA",
           "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
           "source_title": "SiMa.ai Reaches $1.45B Valuation with $500 Million in Total Funding to Scale Physical AI in Humanoids, Automotive, and Drones - SiMa AI",
           "source_content_hash": "e4a445b8ad5e5db7fe9dd87384cc0fef61131e6be5f0b5f6b45e8c90d37e1889",
-          "quote": "AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan also joined the round as new investors.",
-          "quote_hash": "443b2dd946d3aa465220ae01617137c7035149e723ab6b329cedd6fb3e1f4543"
-        },
-        {
-          "source_id": "PROFILE-d3d3cee9651c6378ab03",
-          "source_url": "https://www.sec.gov/Archives/edgar/data/825313/000082531325000042/ex9901ab2025aprilaumrelease.htm",
-          "source_title": "Document",
-          "source_content_hash": "e1a9a9f11f4c6d1b8d1699937cd37663f6c924e5a5a7016eca62b5b20afa6e25",
-          "quote": "AllianceBernstein is a leading global investment management firm that offers diversified investment services to institutional investors, individuals and private wealth clients in major world markets.",
-          "quote_hash": "609add1f59b05ba3cb25e07628936e021c29ec070d67253427e8ae8c335aec72"
+          "quote": "AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan as new investors",
+          "quote_hash": "7ab94b50383e1b542bb13937758b5bedfb275a181956bb484407efc2d5ad5fd4"
         },
         {
           "source_id": "FISRC-926f8f2e0ad24f56",
@@ -181,7 +194,7 @@
           "quote_hash": "e47b49f692200b2912d7b385c181838dfe768e51836a4dc7381dbad873224021"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

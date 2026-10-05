@@ -320,29 +320,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "OpenCSG 与晰见科技的融资报道均将徐汇资本列为投资机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "平台定位和公司名称来自徐汇区政府公开页面；融资参与案例来自公开报道。基金矩阵的认缴总额与公司单体投资额需分别理解。",
+      "summary": "徐汇区政府将徐汇资本介绍为聚焦科技创新和产业发展的国有资本专业化投资平台，并以“上海徐汇资本投资有限公司副总经理”明确了公开使用名称对应的公司主体。融资报道另将徐汇资本列为相关项目投资方。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "平台性质",
+          "value": "徐汇区政府称徐汇资本是聚焦科技创新与产业发展的国有资本专业化投资平台。",
+          "source_id": "PROFILE-COLLECT-INV-722fc3660faf7f-1"
+        },
+        {
+          "field": "legal_name",
+          "label": "公开公司名称",
+          "value": "政府页面使用法律主体名称“上海徐汇资本投资有限公司”。",
+          "source_id": "PROFILE-COLLECT-INV-722fc3660faf7f-2"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "融资报道将徐汇资本列为相关科技企业融资参与方；报道未区分具体基金载体。",
+          "source_id": "PROFILE-COLLECT-INV-722fc3660faf7f-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "OpenCSG Pre-A 融资报道将徐汇资本列为参与方。",
+          "description": "融资来源记录：开放传神（OpenCSG） · Pre-A轮 · 2026-08-31 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed4f088f02c38455"
         },
         {
-          "description": "晰见科技融资报道将徐汇资本列入投资方。",
-          "source_id": "FISRC-7ae3651fb91fc1f1"
-        },
-        {
           "description": "融资来源记录：晰见科技 · 多轮融资 · 2026-08-27 · 本轮参投 · 近5亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2ac4a8f639049a65"
+          "source_id": "FISRC-7ae3651fb91fc1f1"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-ed4f088f02c38455",
+          "source_id": "PROFILE-COLLECT-INV-722fc3660faf7f-1",
+          "source_url": "https://www.xuhui.gov.cn/zfjg_qzfbm_gyzcjdgl_bndt/20251218/567309.html",
+          "source_title": "推动金融与科技深度链接，徐汇资本全周期布局点燃创新引擎",
+          "source_content_hash": "44f837b2aab2a5358f7d91c6a3687d6b0a8f890f1f643cae4f1461697007bd72",
+          "quote": "作为聚焦科技创新和产业发展的国有资本投资专业化平台，徐汇资本始终牢记使命",
+          "quote_hash": "b9f1a9ca0be4afc79775f812d25d2f11dda392f2ead7888519c15227061c7556"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-722fc3660faf7f-2",
+          "source_url": "https://www.xuhui.gov.cn/xwzx_bmlf/20260707/574979.html",
+          "source_title": "徐汇八大OPC社区亮相，这届“一人公司”迎来“最强辅助”",
+          "source_content_hash": "e4bd579827391c048d91fd3cafb520ae25853fd2534e30fed4e232ae010c2454",
+          "quote": "上海徐汇资本投资有限公司副总经理施蓓介绍",
+          "quote_hash": "affd2fce3cbcb521fa6b3aa7e2a0129ec4e892cc5a33b48c19fe7a5e045ec8b4"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-722fc3660faf7f-3",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
           "source_title": "OpenCSG完成数亿元Pre-A轮融资_新浪科技_新浪网",
           "source_content_hash": "bbacedd17cd7918ac59cb4abbe0d3d74dd41877f7a6ecb935b548c79dba198af",
@@ -350,12 +381,20 @@
           "quote_hash": "31b528afc720d8943b4421f2618cdec97169b6b00e81a8704e594abd40f5f39e"
         },
         {
+          "source_id": "FISRC-ed4f088f02c38455",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
+          "source_title": "OpenCSG完成数亿元Pre-A轮融资",
+          "source_content_hash": "4fa5b4b2071cbe25f6578f34ac0b632b0cd5ffb051655b692b67b3d70070ee5c",
+          "quote": "本轮融资由静安资本、市北高新、徐汇资本、黄海金控等共同参与。",
+          "quote_hash": "3a3539b13795473cf4cac7e484583e146dd047dd522351c629ff4d34202bc86f"
+        },
+        {
           "source_id": "FISRC-7ae3651fb91fc1f1",
           "source_url": "https://news.pedaily.cn/202608/568184.shtml",
-          "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代_投资界",
-          "source_content_hash": "17cee6a5a3c2adf6a87c1dfa9ba8e43268fa82c72f618b94796c617c780fb7e6",
-          "quote": "学类脑计算研究中心孵化的高新技术企业，专注类脑视觉芯片研发与产业化，是一家类脑视觉芯片公司。投资界（ID：pedaily2012）8月27日消息，近日，晰见科技 宣布连续完成3轮融资，累计融资金额近5亿元。 投资方包括 徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本 ，以及具身智能、汽车产业链龙头企业等，形成政府产业资本、市场化投资机构、高校系资本与产业资本协同参与的多元股东结构。募集资金将重点用于二代类脑视觉芯片的量产和行业化落地、下一代技术迭代、客户适配及团队建设，加速原创科研成果向产业端转化。 成立于2025年5月的晰见科技，聚焦类脑互补视觉芯片、视觉系统及前端算法的研发与产业化，是业内少有的兼具底层创新、成熟量产方案与全栈",
-          "quote_hash": "1e4156c1f4950f6b576c83ea65d4269b45759872291462d86df1410e35a05e30"
+          "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
+          "source_content_hash": "c5b71d91ca82e3f7a35c6ed1119b2c49f2be359e102c13b0b78c4ed76ac706b1",
+          "quote": "投资方包括徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本，以及具身智能、汽车产业链龙头企业等",
+          "quote_hash": "ece0f1d926cedbeba4071e2121c06f1c98a8a61a8f9fbd0ee5f7822d56e4ddac"
         },
         {
           "source_id": "FISRC-2ac4a8f639049a65",

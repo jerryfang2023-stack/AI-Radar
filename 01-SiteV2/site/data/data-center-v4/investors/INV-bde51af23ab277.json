@@ -163,10 +163,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "华安证券官网对华安嘉业的定位来自其子公司业务列表；融资参与来自合肥高新创业投资管理合伙企业及36氪项目资料。官方页面部分统计指标无当前日期，本档未引用规模数字。",
+      "summary": "华安证券官网将“华安嘉业（私募基金）”列为全资子公司。公开融资资料将华安嘉业列入智象未来B轮及中科类脑A轮投资方，本档记录其券商私募子公司属性，不推断独立风投管理业务。",
+      "facts": [
+        {
+          "field": "legal_entity_and_business",
+          "label": "母公司官网披露的主体和业务",
+          "value": "华安证券官网将华安嘉业列入全资拥有的私募基金子公司业务板块。",
+          "source_id": "PROFILE-COLLECT-INV-bde51af23ab277-K-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,6 +202,14 @@
           "source_content_hash": "0568284884832b7d3a9e23cde4dd546743babcccd17da0c0836a444af70d8685",
           "quote": "A轮 2020-10 亿元人民币 合肥产投集团 ， 金科君创 ， 创东方投资 ， 华安嘉业 ， 量子基金 ， 国元股投 ， 华文投资 ， 合肥创新投资 ， 安华创投基金 ， 安徽省量子科学产业发展基金",
           "quote_hash": "8c4596a390f6ae35cba538d7b05477bf2548bb2231d5cabd716f22c6c1a630da"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bde51af23ab277-K-3",
+          "source_url": "https://hahr.hazq.com/main/aboutus/companyprofile/companyprofile/index.shtml",
+          "source_title": "公司概况-华安证券官网",
+          "source_content_hash": "a7b37df76f781cc20d9a706913803d0546e12a47a27b8eba70edba7d516af091",
+          "quote": "全资拥有华安资管（资产管理）、华安嘉业（私募基金）",
+          "quote_hash": "70f0b9969cff47a6bf47b1157f7fd1ebf6e75d6434d41062be965f045468377b"
         }
       ],
       "last_verified_at": "2026-10-03",

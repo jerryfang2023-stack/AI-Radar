@@ -138,47 +138,87 @@
       }
     ],
     "public_profile": {
+      "last_verified_at": "2026-10-04",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档案保留融资报道使用的机构名称，未推断具体基金载体或该轮出资额。",
-      "summary": "SiliconANGLE 报道 Seltz 完成 1250 万美元种子轮融资，并将 Vento Ventures 列为参投机构之一；未披露 Vento Ventures 的单独出资金额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Vento Ventures 官网称其由 Exor 全资出资，面向意大利创业者投资早期项目，公开披露的投资策略包括 pre-seed 与 seed 阶段、行业和地域不限，并要求团队至少有一名意大利创始人。SiliconANGLE 报道其参与 Seltz 种子轮。",
+      "coverage_note": "投资策略、第二期基金与单笔投资区间按官网截至核验日的公开披露记录；融资报道未披露 Vento Ventures 的该轮单独出资金额，不代表完整投资组合。",
+      "facts": [
+        {
+          "field": "funding_source",
+          "label": "官网披露出资方",
+          "value": "Exor",
+          "source_id": "b33-vento-fund"
+        },
+        {
+          "field": "investment_ticket",
+          "label": "官网披露单笔投资区间",
+          "value": "初始投资 €150,000，后续投资最高可达 €1,000,000。",
+          "source_id": "b33-vento-thesis"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露投资阶段",
+          "value": [
+            "Pre-seed",
+            "Seed"
+          ],
+          "source_id": "b33-vento-thesis"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露投资方式",
+          "value": "行业不限、地域不限；团队至少有一名意大利创始人。",
+          "source_id": "b33-vento-thesis"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "SiliconANGLE 报道称，Vento Ventures 参与 Seltz 的 1250 万美元种子轮；未披露其单独出资金额。",
-          "source_id": "seltz-vento-ventures-seed-2026"
-        },
-        {
-          "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮参投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "SiliconANGLE 将 Vento Ventures 列为 Seltz 1,250 万美元种子轮参投方之一，未披露其单独出资金额。",
           "source_id": "FISRC-05007e2b6b43ffda"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Vento Ventures",
+          "url": "https://www.vento.ventures/",
+          "source_id": "b33-vento-fund"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "本档案保留融资报道使用的机构名称，未推断具体基金载体或该轮出资额。",
+      "experience_summary": "官网披露其投资意大利创始人主导的早期创业项目，范围覆盖 Pre-seed 与 Seed 阶段。",
       "sources": [
         {
-          "source_id": "seltz-vento-ventures-seed-2026",
-          "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
-          "source_title": "Agentic infrastructure startup Seltz raises $12.5M to help AI agents search the web for answers - SiliconANGLE",
-          "source_content_hash": "b187fa9069387351ec0531ae84de444eff484a49c8b9fe61e57a5c1101cf5484",
-          "quote": "Vento Ventures",
-          "quote_hash": "67b5944ff5ccdec1d770b13318e163d050baf2cba475153cb82d52428d700119"
+          "source_id": "b33-vento-fund",
+          "source_url": "https://www.vento.ventures/",
+          "source_title": "Backing the best Italian Founders, everywhere.",
+          "source_content_hash": "e7b2b6019138986a786169290e9d7175e608930d056cbb36c5ed63b955eadae9",
+          "quote": "Wholly funded by Exor, we are Italy's most active non-governmental early-stage fund. We are investing €75M with our second fund to empower exceptional Italian founders globally.",
+          "quote_hash": "2836829f4b1246ac07d5db6e0af6a589e7117a56b672623195b30f4a4cf6d43c"
+        },
+        {
+          "source_id": "b33-vento-thesis",
+          "source_url": "https://www.vento.ventures/",
+          "source_title": "Backing the best Italian Founders, everywhere.",
+          "source_content_hash": "e7b2b6019138986a786169290e9d7175e608930d056cbb36c5ed63b955eadae9",
+          "quote": "€150,000 initial investment with follow-on potential up to €1M Simple and clear process, outcome within 2 weeks Sector-agnostic, geography-independent Focus on pre-seed and seed stages There must be at least one Italian founder on the team",
+          "quote_hash": "eef0ea4b631665497f32828f5d311c01f72116e2453578915b4b1cd1cd71f49a"
         },
         {
           "source_id": "FISRC-05007e2b6b43ffda",
           "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
-          "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
-          "source_content_hash": "4affcb58ccdfce57",
+          "source_title": "Agentic infrastructure startup Seltz raises $12.5M to help AI agents search the web for answers - SiliconANGLE",
+          "source_content_hash": "6a81ec74dc966cd7e8b6dcbbd11c1201320318c83689cfa204aaf87a00699119",
           "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures",
           "quote_hash": "9317d27dcd44755a08a62438a5ebbfd6628ad5af27501300e72473c6cac0a332"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

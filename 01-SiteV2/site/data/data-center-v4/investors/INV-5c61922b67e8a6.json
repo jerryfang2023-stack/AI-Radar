@@ -155,15 +155,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资阶段为官网自述，Unveilr AI 轮次角色依据融资报道；金额未核实，因此不列金额。",
-      "summary": "AJVC 官网自述专注印度 pre-seed 投资；Dealroom 报道将其列为 Unveilr AI pre-seed 轮领投方。本档记录单项已披露案例及有限官网背景。",
+      "coverage_status": "researched",
+      "coverage_note": "基金阶段和定位来自 AJVC 官网自述；单项投资采用 Dealroom 报道，不据此推断未披露的基金规模或投资金额。",
+      "summary": "AJVC（A Junior VC）官网将其定位为印度 pre-seed 投资基金，强调早期创始人和快速决策。Dealroom 报道将 AJVC 列为 Unveilr AI pre-seed 轮领投方；该记录不代表完整投资组合。",
       "facts": [
         {
           "field": "investment_stage",
-          "label": "官网自述投资阶段",
-          "value": "Pre-seed",
-          "source_id": "PROFILE-4f6145d2865ab9030975"
+          "label": "官网披露的投资阶段",
+          "value": "AJVC 官网将其定位为 pre-seed 基金，并表示项目处于早期也可申请。",
+          "source_id": "PROFILE-S-INV-5c61922b67e8a6-3"
+        },
+        {
+          "field": "investment_process",
+          "label": "官网披露的申请决策方式",
+          "value": "AJVC 官网称申请通常会在48小时内收到是否进入下一步的回复。",
+          "source_id": "PROFILE-S-INV-5c61922b67e8a6-4"
         }
       ],
       "milestones": [],
@@ -191,9 +197,25 @@
           "source_id": "FISRC-fd345751b04929f7",
           "source_url": "https://dealroom.co/news/158152-unveilr-ai-raises-1-74m-pre-seed-from-ajvc-to-chase-ai-search-visibility/",
           "source_title": "Unveilr AI raises $1.74M pre-seed from AJVC to chase AI search visibility | Dealroom News",
-          "source_content_hash": "7e6c12a7f22b8d3d20ca302cc1335e198b73d3c347c498b1fd81678cceded2f2",
+          "source_content_hash": "c562d3e796ccac3e3d9da8c011b6edbab88e473aa499c05d1bbb7f36614580e9",
           "quote": "has raised US$2.27M in a pre-seed round led by AJVC",
           "quote_hash": "08cf53fe33bd6bdb91a43b075e39eb0101bb306698968f7633c6ce11be6c7728"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5c61922b67e8a6-3",
+          "source_url": "https://www.ajuniorvc.com/",
+          "source_title": "ajvc - India's Most Approachable Pre-seed Fund",
+          "source_content_hash": "d28dbe460248031f7bf5cff1695f3e3f1143355a66581136b8855bf607c94dab",
+          "quote": "Nothing is too early for us",
+          "quote_hash": "e27f3b3024ff7a08b3466735cb4bc8c863823e8103f9801e59aa09a08f0e0dd9"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5c61922b67e8a6-4",
+          "source_url": "https://www.ajuniorvc.com/",
+          "source_title": "ajvc - India's Most Approachable Pre-seed Fund",
+          "source_content_hash": "d28dbe460248031f7bf5cff1695f3e3f1143355a66581136b8855bf607c94dab",
+          "quote": "We reply with yes/no within 48 hours",
+          "quote_hash": "901a9af14417d9f5a3e61914e26d42b5119613d27e9212c7a0eb18de17c5f884"
         },
         {
           "source_id": "FISRC-78e8facb4ec5a3c9",
@@ -204,7 +226,7 @@
           "quote_hash": "30056a3258f6ec09310607e352420f7f7b5b4e6350c95d53382ed19968479caf"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

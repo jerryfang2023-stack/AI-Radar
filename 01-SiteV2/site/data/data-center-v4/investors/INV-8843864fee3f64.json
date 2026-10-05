@@ -139,17 +139,21 @@
       }
     ],
     "public_profile": {
-      "summary": "卢森堡政府发布的 Luxembourg Future Fund 3 计划可投资风险投资、私募股权及私募债基金。",
+      "summary": "卢森堡政府将其 Luxembourg Future Fund 3 计划描述为可覆盖风投、私募股权及私人债务基金；Mistral 官方融资公告另将 Grand Duchy of Luxembourg 列为该轮新投资者。本档不推定 Mistral 投资由 Future Fund 3 作出。",
       "facts": [
         {
-          "field": "investment_activity",
-          "label": "政府公告披露",
-          "value": "Luxembourg Future Fund 3 可投资风险投资、私募股权及私募债基金。",
-          "source_id": "PROFILE-INV-8843864fee3f64-1"
+          "field": "public_fund_scope",
+          "label": "政府披露的基金计划范围",
+          "value": "卢森堡政府称 Future Fund 3 可投资于风投、私募股权及私人债务基金。",
+          "source_id": "PROFILE-B5-INV-8843864fee3f64-1"
         }
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Mistral 官方公告将 Grand Duchy of Luxembourg 列为该轮新投资者；公告未披露投资载体或金额。",
+          "source_id": "PROFILE-B5-INV-8843864fee3f64-2"
+        },
         {
           "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4d11ed62a144a3f4"
@@ -157,29 +161,29 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "记录范围限于卢森堡政府发起的基金计划；这不表示卢森堡大公国本身是商业基金管理机构。",
+      "coverage_status": "researched",
+      "coverage_note": "政府项目定位来自卢森堡政府新闻稿；Mistral 轮次参与来自 Mistral 官方公告。两条事实分别记录，不将政府项目与 Mistral 投资载体合并。",
       "current_roles": [],
       "career": [],
       "education": [],
       "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "政府公告",
-          "value": "Luxembourg Future Fund 3（卢森堡政府计划）",
-          "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/09-septembre/04-roth-delles-future-fund.html?source_capture=2026-10-03&cycle=13",
-          "source_id": "PROFILE-INV-8843864fee3f64-1"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-INV-8843864fee3f64-1",
-          "source_url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/09-septembre/04-roth-delles-future-fund.html?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-B5-INV-8843864fee3f64-1",
+          "source_url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/09-septembre/04-roth-delles-future-fund.html",
           "source_title": "Lancement du Luxembourg Future Fund 3 - Le gouvernement luxembourgeois",
           "source_content_hash": "634d46c7f2847449fc4de2276b524b503ed23168542120073ff864a0085bfe09",
           "quote": "Flexible tout au long du cycle de développement des entreprises, le Programme pourra investir dans des fonds de capital-risque, de capital-investissement ainsi que de dette privée.",
           "quote_hash": "becba4f9bd6a239c71d955a4911b3a3e8ccdd761164030ca164ec2d09179281c"
+        },
+        {
+          "source_id": "PROFILE-B5-INV-8843864fee3f64-2",
+          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+          "source_title": "Making sovereign, open-weight AI the technology frontier | Mistral",
+          "source_content_hash": "3a423b33655cc634d619411399e7c3204acdde262873a2187d896204513b84b4",
+          "quote": "Advent, funds and accounts managed by BlackRock as well as the Grand Duchy of Luxembourg joined the round as new investors.",
+          "quote_hash": "b952b5e82744af45e69677c953c87b92547c5228ab46ab60eb90968b57012a92"
         },
         {
           "source_id": "FISRC-4d11ed62a144a3f4",
@@ -190,7 +194,7 @@
           "quote_hash": "b952b5e82744af45e69677c953c87b92547c5228ab46ab60eb90968b57012a92"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -181,18 +181,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司业务角色和融资信息来自 Groq 官方公告；TechCrunch 对其形容为 Fort Lauderdale 对冲基金。公开材料未确认具体出资法律主体或完整组织关系。",
+      "summary": "Groq 官方公告称 Infinitum 与 Disruptive 共同领投 Groq 6.5亿美元融资，并将 John Yetimoglu 称为 Groq 董事会成员及 Infinitum 创始人兼首席投资官。公告没有披露承担投资的具体法律实体；本档保留 Infinitum 品牌层级，不推定其为对冲基金之外的法律主体。",
+      "facts": [
+        {
+          "field": "investment_and_leadership",
+          "label": "被投公司公告披露的融资及管理人关系",
+          "value": "Groq 称 Infinitum 与 Disruptive 共同领投本轮，并称 John Yetimoglu 为其董事会成员及 Infinitum 创始人、首席投资官。",
+          "source_id": "PROFILE-COLLECT-INV-d5f21aed7a8f12-L-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "公开融资来源将其列为 Groq 轮次未披露 本轮领投。",
-          "source_id": "FISRC-972115220a4b8e85"
-        },
-        {
-          "description": "公开融资来源将其列为 Groq 历史轮次投资方。",
           "source_id": "FISRC-972115220a4b8e85"
         },
         {
@@ -209,6 +212,14 @@
           "source_content_hash": "49ee9d08f3be90a026c6dcda745109e69bb20c32d4d0405d144d1759627db9aa",
           "quote": "The round was led by Disruptive, a Dallas-based late-stage investment firm founded by Alex Davis — who also serves as Groq’s chairman — and Infinitum, a Fort Lauderdale hedge fund.",
           "quote_hash": "9af8d02739d1d54feb49156d597d43aa8d85321137cd064d853b72df5fbca5c8"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d5f21aed7a8f12-L-2",
+          "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business",
+          "source_title": "Groq Raises $650M to Scale Its AI Inference Cloud Business | Groq is the premier neocloud for fast inference",
+          "source_content_hash": "7c73051ba459907f1b611ba103a410fb962279c5e24cd1046b399f2d27e49c55",
+          "quote": "John Yetimoglu, Groq board member and Founder and Chief Investment Officer of Infinitum",
+          "quote_hash": "315b39cf8825ca7d87e42d3f92ffec7ec3be7f3b15ab22089d4567a9b86799db"
         },
         {
           "source_id": "FISRC-28e142eb564f6762",

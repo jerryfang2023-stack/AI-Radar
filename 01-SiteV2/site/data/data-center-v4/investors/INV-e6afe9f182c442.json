@@ -193,10 +193,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "A*官网将其描述为早期风险投资机构；本档案只记录明确标为A*的Intelligence交易，不与A*z合并。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 A* 官网；融资参与来自 TechCrunch报道。未将“A*”与其他同名公司或投资人混并。",
+      "summary": "A* 官网将其定位为早期风险投资公司，强调与创始人建立长期合作关系。TechCrunch 将 A* 列为 DesignArena融资参与方之一。",
+      "facts": [
+        {
+          "field": "stage_and_approach",
+          "label": "官网披露的机构阶段与合作方式",
+          "value": "A* 官网称其为早期风险投资机构，推动投资者与创业者从交易式资本转向实质合作。",
+          "source_id": "PROFILE-da9e02b8376535ed308c"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {

@@ -139,33 +139,82 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "BNP Paribas Asset Management 的基金官网将 BNPP SIVF 展开为 BNP Paribas Solar Impulse Venture Fund，并介绍其巴黎设立时间和生态转型投资主题。Multiverse Computing 的公告称 BNPP SIVF 共同领投 Series C；融资总额为 5 亿欧元，未披露 BNPP SIVF 单独出资额。",
+      "summary": "BNPP SIVF 是 BNP Paribas Solar Impulse Venture Fund，2022 年在巴黎推出，关注以创新技术加速生态转型的 scale-up 企业。Multiverse Computing 的发行方公告将其列为 Series C 共同领投方；该轮总额为 5 亿欧元，未披露该基金单独出资额。",
+      "facts": [
+        {
+          "field": "official_name_and_focus",
+          "label": "基金名称与投资主题",
+          "value": "官网将 BNPP SIVF 展开为 BNP Paribas Solar Impulse Venture Fund，定位于支持以创新技术加速生态转型的 scale-up 企业。",
+          "source_id": "bnpp_sivf_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022",
+          "description": "基金官网称 BNPP SIVF 于 2022 年在巴黎推出。",
+          "source_id": "bnpp_sivf_launch"
+        }
+      ],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Multiverse Computing C轮 本轮联合领投。",
+          "description": "Multiverse Computing 的发行方公告将 BNPP SIVF 列为共同领投方之一；未披露该基金单独出资额。",
+          "source_id": "multiverse_series_c"
+        },
+        {
+          "description": "融资来源记录：Multiverse Computing · C轮 · 2026-07-27 · 本轮联合领投 · $570 million (€500M)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fa5aeddf845d651b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "BNP Paribas Solar Impulse Venture Fund 官网",
+          "value": "基金介绍",
+          "url": "https://www.bnpparibas-am.com/fr-fr/solar-impulse/",
+          "source_id": "bnpp_sivf_profile"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "基金官网支持身份、目标企业阶段及主题，发行方公告支持一笔共同领投关系；未归属整轮金额为基金单独出资。",
       "sources": [
+        {
+          "source_id": "bnpp_sivf_profile",
+          "source_url": "https://www.bnpparibas-am.com/fr-fr/solar-impulse/",
+          "source_title": "BNP Paribas Solar Impulse Venture Fund",
+          "source_content_hash": "b32d2a6a3363dab24f0813a633514ea1f9e17026fa8f2a7a6e23f40a3b479d06",
+          "quote": "BNP Paribas Solar Impulse Venture Fund (BNPP SIVF) focuses on impactful scale-up companies to accelerate the ecological transition",
+          "quote_hash": "484017884ce8497e9293f065f04a7dbaa9d7c85d472daea9551f1493d378c9f4"
+        },
+        {
+          "source_id": "bnpp_sivf_launch",
+          "source_url": "https://www.bnpparibas-am.com/fr-fr/solar-impulse/",
+          "source_title": "BNP Paribas Solar Impulse Venture Fund",
+          "source_content_hash": "b32d2a6a3363dab24f0813a633514ea1f9e17026fa8f2a7a6e23f40a3b479d06",
+          "quote": "Launched in Paris in 2022, BNPP SIVF exclusively targets high potential growth start-up companies in the scale-up phase",
+          "quote_hash": "af1531706bd6bcaaf0fd8ac0d15331c0126e960ebb775093414c94b6d3283d61"
+        },
+        {
+          "source_id": "multiverse_series_c",
+          "source_url": "https://www.globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
+          "source_title": "Multiverse Computing Announces Series C Fundraising Targeting up to $570M (€500M) to Power Efficient AI from Edge to Cloud",
+          "source_content_hash": "969a64a48171f8e26ac26ca685e316e86ec3e045fb1344acda9a869de44437d2",
+          "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital",
+          "quote_hash": "8e85acd628b7f9917626d1564bf68dc436dcb460a29e0a465c331a2feb341ac1"
+        },
         {
           "source_id": "FISRC-fa5aeddf845d651b",
           "source_url": "https://www.globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
-          "source_title": "Multiverse Computing Announces Series C Fundraising",
-          "source_content_hash": "969a64a48171f8e26ac26ca685e316e86ec3e045fb1344acda9a869de44437d2",
+          "source_title": "Multiverse Computing 宣布 C 轮融资，目标高达 5.7 亿美元（5 亿欧元），为从边缘到云端的高效 AI 提供动力",
+          "source_content_hash": "070cd1b0f627dcdf",
           "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital",
           "quote_hash": "8e85acd628b7f9917626d1564bf68dc436dcb460a29e0a465c331a2feb341ac1"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

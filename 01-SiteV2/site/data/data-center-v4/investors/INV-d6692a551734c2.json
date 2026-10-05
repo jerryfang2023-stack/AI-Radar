@@ -251,54 +251,81 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资组合管理信息据 Atomico 官方报告，投资关系据被投企业 Factorial 官方融资公告；不将其角色写作领投，也不推断具体投资金额。",
+      "summary": "Atomico 的官方 Conscious Scaling 报告介绍其 Venture VI 与 Growth 投资组合，并跟踪不同阶段组合公司的可持续实践；Factorial 的2026年融资公告将 Atomico 列为 Series D 参投机构，未披露其独立投资金额。",
+      "facts": [
+        {
+          "field": "fund_portfolio",
+          "label": "官方报告提及的基金",
+          "value": "Atomico 报告列出 Venture VI 和 Growth 投资组合。",
+          "source_id": "PROFILE-COLLECT-INV-d6692a551734c2-2"
+        },
+        {
+          "field": "portfolio_management",
+          "label": "组合管理",
+          "value": "Atomico 称其持续关注各阶段组合公司的参与和可持续实践。",
+          "source_id": "PROFILE-COLLECT-INV-d6692a551734c2-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "被投企业公告中的投资关系",
+          "value": "Factorial 官方公告将 Atomico 列为2026年Series D投资者。",
+          "source_id": "PROFILE-COLLECT-INV-d6692a551734c2-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Neko Health C轮 本轮参投。",
+          "description": "融资来源记录：Neko Health · C轮 · 2026-07-15 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6442b5e548ad70ee"
         },
         {
-          "description": "公开融资来源将其列为 Factorial D轮 本轮参投；C 轮领投。",
-          "source_id": "FISRC-e9a8d571db654fd4"
-        },
-        {
-          "description": "公开融资来源将其列为 CloudNC 历史投资方。",
-          "source_id": "PROFILE-8dacee1817942736a5cc"
-        },
-        {
           "description": "融资来源记录：Factorial · D轮 · 2026-06-03 · 本轮参投；C 轮领投 · 1.5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a5223e0a738cb28f"
+          "source_id": "FISRC-e9a8d571db654fd4"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-COLLECT-INV-d6692a551734c2-1",
+          "source_url": "https://conscious-scaling.atomico.com/",
+          "source_title": "Conscious Scaling Review",
+          "source_content_hash": "70e389e98f4128f9adb6f415385a54b79e76f162f03dfb00063a1e07cded9026",
+          "quote": "The engagement we see across our portfolio, at every stage, continues to expand.",
+          "quote_hash": "7f48a88414d8adf9cc2db524db9b0596f80778978596942131138517bec43da2"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d6692a551734c2-2",
+          "source_url": "https://conscious-scaling.atomico.com/",
+          "source_title": "Conscious Scaling Review",
+          "source_content_hash": "70e389e98f4128f9adb6f415385a54b79e76f162f03dfb00063a1e07cded9026",
+          "quote": "Venture VI and Growth",
+          "quote_hash": "e30a8c2f0123bd254bd6f6dcfa927a1ad5276dcc4f63804c249ea3eb25e803e1"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d6692a551734c2-3",
+          "source_url": "https://factorialhr.com/blog/factorial-raises-150m-series-d-becoming-most-valuable-ai-scale-ups-europe/",
+          "source_title": "Factorial Raises $150M Series D to Reach $2.5 Billion Valuation",
+          "source_content_hash": "46dd517ffcaa9a8661d9b281d669354a4b34f597f4dfae880ef6e6db188aadd2",
+          "quote": "With this move, General Catalyst makes its first equity investment in our business, joined by other investors including Atomico and Four Rivers.",
+          "quote_hash": "aa5abfe0ef157e30aa863dd5b400f01f77eccc1def55a26f13a435376c57efb5"
+        },
+        {
           "source_id": "FISRC-6442b5e548ad70ee",
           "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
-          "source_title": "Neko Health raises $700m to expand preventative care model into US | IHH",
-          "source_content_hash": "1c097df4666aea6015f1f5dba9d808909ecb816da451ea26bc4222a9bd083697",
+          "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+          "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
           "quote": "with participation from existing investors including Atomico, General Catalyst, and Lakestar, alongside several new backers",
           "quote_hash": "defa0871f199f4cf29f81e0cbcbc359d5a165310a650dad2d3fedc0f764e960f"
         },
         {
           "source_id": "FISRC-e9a8d571db654fd4",
           "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
-          "source_title": "Factorial Raises $150M Series D, Reaches $2.5 Billion Valuation to Become One of the Most Valuable AI Scale-Ups in Europe",
-          "source_content_hash": "8e0820004d0b295b7fd234db3506250adc463e5d3d3da4a27610c225bfb0cc31",
+          "source_title": "Factorial 完成 1.5 亿美元 D 轮融资，估值达 25 亿美元，成为欧洲最具价值的 AI 智能体规模化企业之一",
+          "source_content_hash": "11af7531d19b66f0",
           "quote": "joined by other investors including Atomico and Four Rivers",
           "quote_hash": "114b77c16789092678fc784bbcd2ba7b7656bfc87d84213e020d5696b43e0fc6"
-        },
-        {
-          "source_id": "PROFILE-8dacee1817942736a5cc",
-          "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
-          "source_title": "CloudNC raises $20m to expand AI tools for precision machining",
-          "source_content_hash": "e50d348dd4894165d8008e57268e20fad7ae1fdcc8a77273b2552831c176085d",
-          "quote": "The technology company is backed by leading venture capital firms Atomico and Episode 1 Ventures, alongside Autodesk and Lockheed Martin as strategic partners.",
-          "quote_hash": "2903308aa2ec185dc490baa2f68db98bb0ebd35cac0545ca15394b44a5bd26ee"
         },
         {
           "source_id": "FISRC-a5223e0a738cb28f",
@@ -309,11 +336,11 @@
           "quote_hash": "50eabb913bd644ed706967e8b68450deefd41ffbf2e2fb521b06e585a4d1a6d6"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": ""
     }
   }
 }

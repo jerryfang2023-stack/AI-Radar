@@ -139,9 +139,9 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Zerodha 官网将 Rainmatter 描述为其金融科技基金和孵化器；本档案保留两者名称关系，不将品牌等同于独立法定主体，也不扩展投资组合。",
-      "summary": "Zerodha 官网称 Rainmatter 是其金融科技基金和孵化器，并已投资多家金融科技初创公司。",
+      "coverage_status": "researched",
+      "coverage_note": "主体关系来自Zerodha官网自述；投资方向、票面金额区间和治理方式来自Rainmatter官网自述。官网信息记录品牌披露，不代替法人或基金备案核验。",
+      "summary": "Zerodha官网称Rainmatter为其金融科技基金和孵化器；Rainmatter官网目前列出的投资方向为金融科技、气候、健康和媒体，并说明其采用长期投资方式、不设董事席位。官网显示Rainmatter与Zerodha有关联，不据此将该品牌认作独立法人。",
       "facts": [
         {
           "field": "investment_vehicle",
@@ -154,6 +154,18 @@
           "label": "官网披露投资活动",
           "value": "已投资多家金融科技初创公司",
           "source_id": "zerodha-about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "Rainmatter官网披露的当前投资方向",
+          "value": "Rainmatter官网称其支持金融科技、气候、健康和媒体领域的印度创业者。",
+          "source_id": "PROFILE-S-INV-3b6824ae363acb-2"
+        },
+        {
+          "field": "investment_terms",
+          "label": "Rainmatter官网披露的投资区间与治理方式",
+          "value": "官网称投资金额区间为₹50 lakhs至₹100 crores，并不担任被投企业董事。",
+          "source_id": "PROFILE-S-INV-3b6824ae363acb-3"
         }
       ],
       "milestones": [],
@@ -182,6 +194,22 @@
           "quote_hash": "40fea66cc938c12ac01def5a72b57e2566f9471b3dc276d35ca6e6998ea842be"
         },
         {
+          "source_id": "PROFILE-S-INV-3b6824ae363acb-2",
+          "source_url": "https://rainmatter.com/",
+          "source_title": "Rainmatter by Zerodha &ndash; Indian fintech and health fund",
+          "source_content_hash": "edff1836e81c507bf126eb256cbdfa489512794cfef4409b81d7e7570fb4725e",
+          "quote": "We back founders in fintech, climate, health, and media.",
+          "quote_hash": "31893c2725a69f547c1841f270e7c8849659bb9150c3e149bc3cccf0a76b80e4"
+        },
+        {
+          "source_id": "PROFILE-S-INV-3b6824ae363acb-3",
+          "source_url": "https://rainmatter.com/",
+          "source_title": "Rainmatter by Zerodha &ndash; Indian fintech and health fund",
+          "source_content_hash": "edff1836e81c507bf126eb256cbdfa489512794cfef4409b81d7e7570fb4725e",
+          "quote": "We invest anywhere between ₹50 lakhs to ₹100 crores and don’t take board seats",
+          "quote_hash": "b7e52b0097e9052e3dba8e93b970a9958ea282e8224c53ca47ee5c00f702fd3f"
+        },
+        {
           "source_id": "FISRC-08365977cd80206b",
           "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
           "source_title": "50个开源项目教会我们的AI时代安全之道",
@@ -190,7 +218,10 @@
           "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": []
     }
   }
 }

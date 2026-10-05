@@ -139,15 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Enveda 官方公告将 Alderline Group 列为 Series E 新投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资方向及资本结构来自 Alderline Group 官网；融资参与来自 Enveda 官方公告。",
+      "summary": "Alderline Group 官网称其投资并支持生命科学与医疗行业的创业团队，偏好长期资本和无外部出资人的结构。Enveda 的官方 Series E 公告将 Alderline Group 列入投资者名单。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网称其投资范围覆盖生命科学及医疗行业。",
+          "source_id": "PROFILE-B8-INV-972f57e753eb8f-3"
+        },
+        {
+          "field": "capital_structure",
+          "label": "资本结构",
+          "value": "官网称其采用长期投资期限且没有外部资本提供方。",
+          "source_id": "PROFILE-B8-INV-972f57e753eb8f-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Enveda 官方 Series E 公告将 Alderline Group 列为新投资方。",
-          "source_id": "PROFILE-68580c8fb77a4fc82d7d"
+          "description": "Enveda 官方融资公告将 Alderline Group 列为 Series E 投资方；未披露其单独出资额。",
+          "source_id": "PROFILE-B8-INV-972f57e753eb8f-1"
         },
         {
           "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,12 +170,28 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-68580c8fb77a4fc82d7d",
+          "source_id": "PROFILE-B8-INV-972f57e753eb8f-1",
           "source_url": "https://enveda.com/news/enveda-raises-311-million/",
           "source_title": "Enveda Raises $311 Million From Leading AI and Biotech Investors to Bring Pharma Into the 21st Century - Enveda",
           "source_content_hash": "9eef4c5232a05b8c26adb2c4959c67ac7156b931a2cc37c044a2f2d33c2f3b21",
-          "quote": "unts advised by T. Rowe Price Investment Management, Digitalis Ventures, a notable Sovereign Wealth Fund, and Alderline Group. Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated. Proceeds will advance three ongoing clinical-stage medicin",
-          "quote_hash": "2777d444889bbbc3b26a5e7bec23cd886dbeb5a38b00efa01877e75ee6735023"
+          "quote": "Alderline Group",
+          "quote_hash": "6ce64dfd72587ee615b59396a467c44af2a4a9ea8e690cce569c64adc0663cf1"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-972f57e753eb8f-2",
+          "source_url": "https://alderlinegroup.com/",
+          "source_title": "Alderline Group",
+          "source_content_hash": "c73198cbc6655b72fb7f3055a4dd0162284ac62a77b47f9b2f14547a4eb31927",
+          "quote": "We invest and partner with entrepreneurs who are driving breakthrough change often enabled by advances in technology, data, materials, or new business models and always underpinned by ethical and capable teams.",
+          "quote_hash": "34cad4efb30f6b0ad44830534d3ac7ba06de986a2453eb62d89f631d680014e1"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-972f57e753eb8f-3",
+          "source_url": "https://alderlinegroup.com/",
+          "source_title": "Alderline Group",
+          "source_content_hash": "c73198cbc6655b72fb7f3055a4dd0162284ac62a77b47f9b2f14547a4eb31927",
+          "quote": "Broad mandate across life sciences and the healthcare industry",
+          "quote_hash": "3158686a764eb574d8cb4fb3b0440bad49246d259658a6d7e74ebbec54f8d6ca"
         },
         {
           "source_id": "FISRC-852df50f4128c47b",
@@ -173,7 +202,7 @@
           "quote_hash": "3cbfe761b6de0bfc87604c270fdc50a1ccdfe84427307a732532acbdb8ace223"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

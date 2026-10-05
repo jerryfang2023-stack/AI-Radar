@@ -139,29 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "36氪报道将同程旅行列为曦望新一轮融资的产业投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司业务简介来自同程旅行官网；融资参与方名单来自财新报道，未推断该笔投资所用法人或基金。",
+      "summary": "同程旅行官网将其介绍为中国在线旅行服务平台，提供交通、住宿、景点等旅游预订服务。曦望融资报道将同程旅行列为产业资本参与方；报道没有披露其单独出资额或投资载体。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "在线旅行服务平台，经营交通、住宿及景点预订服务",
+          "source_id": "PROFILE-B12-INV-b9d2e92bb8a682-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "参与曦望融资。",
+          "source_id": "PROFILE-B12-INV-b9d2e92bb8a682-1"
+        },
+        {
+          "description": "融资来源记录：曦望 · 轮次未披露 · 2026-08-28 · 本轮参投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c87caae716bd4910"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.ly.com/public/about17u/intro",
+          "source_id": "PROFILE-B12-INV-b9d2e92bb8a682-2"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-c87caae716bd4910",
+          "source_id": "PROFILE-B12-INV-b9d2e92bb8a682-1",
           "source_url": "https://eu.36kr.com/zh/p/3957213787995526",
           "source_title": "曦望再融20亿元 四个月估值翻倍至200亿「独家」",
           "source_content_hash": "0c3bc8459b07fa6dda9fd12ea6c2601b4ec9a9fc1f1f8c3e895e88b6a963bd8d",
           "quote": "多模态视觉推理芯片S1、大模型推理GPU S2。在信奉“连续成功”的投资圈，这是重要加分项。 据知情方透露、结合工商变更信息等，2026年8月曦望的新一轮融资中，产业资本的名单继续扩大，包括正大集团、九安医疗、盈峰环境、同程旅行等。同时，人保股权、建信股权 “国家队”资金进场；Janchor Partners、中科创星、同创伟业等财务机构也参与投资。 为什么短短数月间，一家推理芯片公司的估值会接近翻倍？ 站在2026年中节点来看，AI算力需求结构的改变已比较明朗。过去几年，AI算力消耗最多的时刻是在大模型训练阶段；而今，Agent批量进入生产环节，一次任务可能会发生几十次模型调用，24小时不间断的推理和token生产，成为算力消耗增长的重点。 特别是今年夏天，Kimi K3、MiniMax H3、DeepSee",
           "quote_hash": "0a8e7710940f81b5ea3af19fc4349d04bc9163f3c63ebdb24a5ce8fbe9be8da2"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b9d2e92bb8a682-2",
+          "source_url": "https://www.ly.com/public/about17u/intro",
+          "source_title": "公司简介_关于同程_同程旅行",
+          "source_content_hash": "da1d231fe2cfc04d3440ff079eaa0bca909e78614fd23cbd093e0b0f4e22be9f",
+          "quote": "同程艺龙致力于打造在线旅行一站式平台，业务涵盖交通票务预订（机票、火车票、汽车票、船票等）、住宿预订、景点门票预订，及多个出行场景的增值服务",
+          "quote_hash": "6e9a35b63c56480d7eadb9a35cf22c521f0f0b003ea2c7a45090560420c1a8b7"
+        },
+        {
+          "source_id": "FISRC-c87caae716bd4910",
+          "source_url": "https://eu.36kr.com/zh/p/3957213787995526",
+          "source_title": "曦望再融20亿元 四个月估值翻倍至200亿「独家」",
+          "source_content_hash": "09239a3cd7ca2ab09d1238c0c5781d7702b49ba8f60e89a2593f9f24d9140c79",
+          "quote": "产业资本的名单继续扩大，包括正大集团、九安医疗、盈峰环境、同程旅行等",
+          "quote_hash": "375dd00f55fb4e2798c653f7905e2b0ebc7ecc483208089af0b6a541411a18be"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

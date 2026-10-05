@@ -161,7 +161,7 @@
       }
     ],
     "public_profile": {
-      "summary": "CTBC官网披露其100%持有中国信托创业投资股份有限公司；该子公司投资具有发展潜力的未上市柜公司。此条记录集团投资活动，不将控股公司与创投子公司混为同一主体。",
+      "summary": "CTBC 官网将 CTBC Venture Capital (CTBC Capital) 描述为 CTBC Holding 的全资子公司，称其成立于2003年，主要投资未上市或未在柜买市场交易的公司。档案只描述该创投子公司的官网披露业务，不据集团标签推断具体融资交易的法律主体。",
       "facts": [
         {
           "field": "subsidiary_relationship",
@@ -180,6 +180,18 @@
           "label": "官网列示的投资领域",
           "value": "资讯通讯、绿色科技、生技医疗、民生消费、文化创意、资讯软件服务及具成长潜力的传统产业。",
           "source_id": "PROFILE-INV-6fb804b84338a1-1"
+        },
+        {
+          "field": "legal_name_and_founding",
+          "label": "官网披露的创投主体与成立年份",
+          "value": "CTBC 官网将 CTBC Venture Capital (CTBC Capital) 列为 CTBC Holding 全资子公司，并称其成立于2003年。",
+          "source_id": "PROFILE-COLLECT-INV-6fb804b84338a1-G-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网所述投资业务",
+          "value": "该主体主要投资具有发展潜力的未上市或未在柜买市场交易的公司，领域包括资讯通讯、绿色科技、生技医疗、消费、文创及软件服务等。",
+          "source_id": "PROFILE-COLLECT-INV-6fb804b84338a1-G-3"
         }
       ],
       "milestones": [],
@@ -195,8 +207,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "依据CTBC集团子公司页面，投资领域为该页面披露的现况。",
+      "coverage_status": "researched",
+      "coverage_note": "公司关系、成立年份和投资方向来自 CTBC 官网；对 GMI Cloud 的信贷融资角色与股权融资分开记录，不推断具体贷款法律主体。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -218,6 +230,22 @@
           "source_content_hash": "afe3ed30e63a01d46fe1fcc6a3e0a44990d1df40701a287eb232d5c59bc7f23f",
           "quote": "中國信託創業投資股份有限公司成立於92年，為中信金控100%持股之子公司，主要業務為投資具有發展潛力之未上市櫃公司，對象包括資訊通訊產業、綠色科技產業、生技醫療產業、民生消費、文化創意產業、資訊軟體服務業與經營績效良好且具成長潛力之傳統產業等。",
           "quote_hash": "ca41b7efa0b14eaa2e81b8d42bf0790d28d7ef39d5a2e49ce1050986bb40c598"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-6fb804b84338a1-G-2",
+          "source_url": "https://www.ctbcholding.com/content/twhoo/en_tw/ctbc-bank/ctbc-investment.html",
+          "source_title": "CTBC Capital - 中國信託",
+          "source_content_hash": "ef3fa27e5f97fbd23d158f8243f4fe1dae2bd68de5925cfbc0f24494e62e3cd3",
+          "quote": "CTBC Venture Capital (CTBC Capital) is a 100% wholly owned subsidiary of CTBC Holding. Founded in 2003",
+          "quote_hash": "ca7bf0d539b60187bef480e59a09d6b4f2165b2aac69d53d827566e2c4461d72"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-6fb804b84338a1-G-3",
+          "source_url": "https://www.ctbcholding.com/content/twhoo/en_tw/ctbc-bank/ctbc-investment.html",
+          "source_title": "CTBC Capital - 中國信託",
+          "source_content_hash": "ef3fa27e5f97fbd23d158f8243f4fe1dae2bd68de5925cfbc0f24494e62e3cd3",
+          "quote": "its major business is investing in non-listed or non-OTC companies with development potential, including in ICT, green technology, biotech and health care, everyday consumer goods, cultural and creative, information software services, and traditional industries with excellent performance and growth potential.",
+          "quote_hash": "68f95903cf06c57493c618114868d4199ed08b40e927db2fd8c18a97df64df7f"
         },
         {
           "source_id": "FISRC-cf3eb2b83c7e750b",

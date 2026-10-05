@@ -138,11 +138,18 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
       "summary": "卧安机器人（深圳）股份有限公司（OneRobotics，6600.HK）是 AI 具身家庭机器人公司。新浪财经报道其跟投星际觅元种子轮融资。",
       "coverage_note": "公司身份来自卧安机器人官网；投资关系来自新浪财经融资报道，未披露其单独投资金额。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "issuer_identity_and_business",
+          "label": "公司官网披露的法律名称和主营方向",
+          "value": "卧安机器人（深圳）股份有限公司（OneRobotics，6600.HK）是 AI 具身家庭机器人企业。",
+          "source_id": "PROFILE-COLLECT-INV-058ea40e9bb574-P-3"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -177,6 +184,14 @@
           "quote_hash": "ef5c68d28cda5a6a4110c8be8137bd7bd70091e42cfd43ab884bbb70e895b033"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-058ea40e9bb574-P-3",
+          "source_url": "https://www.onerobot.com/cn/",
+          "source_title": "卧安机器人",
+          "source_content_hash": "e923fd935459c1bc6ffb2449bf1a2c4c0845c3352bbf043970be1eb3f4c2c4af",
+          "quote": "卧安机器人（深圳）股份有限公司（OneRobotics，6600.HK）是全球领先的AI具身家庭机器人公司",
+          "quote_hash": "faf0adfa3dbf2b19e8f257fd810a1b4e3727ccf198bda685430919799a01e148"
+        },
+        {
           "source_id": "FISRC-21d53f49c93ea68c",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-iniptnux5501287.shtml",
           "source_title": "「星际觅元」完成千万元种子轮融资",
@@ -185,7 +200,7 @@
           "quote_hash": "c818f14cd31e8b8e275f032629a9e2e10622e930a6de0bdd8347e2d754eaeeb0"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

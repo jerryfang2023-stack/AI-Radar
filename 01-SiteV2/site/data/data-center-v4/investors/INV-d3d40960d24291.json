@@ -140,33 +140,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "档案只描述公开来源确认的产品高管天使联合体名称与参投案例，不把它表述成已核实的注册基金或完整投资组合。",
+      "summary": "20 Product 在公开融资材料中作为产品高管相关的天使投资联合体出现。Archestra 官网将其列入 Angels and Followers，并写为“20 Product By Will Wu”；该官网同时将 Will Wu 标为 Match Group CPO、Snap 前产品副总裁。另一份融资公告明确称 20 Product 为 syndicate，并列出七位成员。现有公开材料没有披露该联合体的法律载体、基金管理人或完整投资条款。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "公开组织形态",
+          "value": "产品高管相关的天使投资联合体；报道称其为 syndicate。",
+          "source_id": "B25-20P-FOMO"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Archestra 种子轮 本轮参投。",
+          "description": "Archestra 的 1,000 万美元种子轮公告将 20 Product（Will Wu，Match Group CPO）列为参投方之一。",
+          "source_id": "B25-20P-ARCH-SEED"
+        },
+        {
+          "description": "fomo 融资公告把 20 Product 称作 Syndicate，并列出七位成员；资料未披露各成员的出资份额。",
+          "source_id": "B25-20P-FOMO"
+        },
+        {
+          "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-50130a45d72291a2",
+          "source_id": "B25-20P-ARCH-ABOUT",
+          "source_url": "https://archestra.ai/about",
+          "source_title": "About Us | Team &amp; Mission | Archestra",
+          "source_content_hash": "3fc1ed89f77c7b1fae2861b7a3a2d7215109e274d4f0912eaa593faef274187e",
+          "quote": "20 Product By Will Wu, CPO at Match Group, former VP Product at Snap",
+          "quote_hash": "36d6e6dadaf73cbfa8eac3914aca37bcb84e112c34fa8260fe0b312c3235b6fc"
+        },
+        {
+          "source_id": "B25-20P-ARCH-SEED",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
           "source_title": "Archestra.AI announces $10M seed 🎉 | Blog | Archestra",
           "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",
           "quote": "Joining are 20 Product (Will Wu, CPO at Match Group)",
           "quote_hash": "aa418a7c9ee76e5ae0c3f64a37f8924359ba8f36ccab073f8d32127a128dadf5"
+        },
+        {
+          "source_id": "B25-20P-FOMO",
+          "source_url": "https://the-ponzi-times.ghost.io/benchmark-leads-series-a-in-fomo/",
+          "source_title": "Benchmark leads Series A in fomo",
+          "source_content_hash": "937fc7cb649c6a2f85b2e987269be74a429dd953541b04efb94fe7881758cfad",
+          "quote": "20 Product (Syndicate) - Hugo Barra, Geoff Charles, Glen Coates, Tomer Cohen, Jag Duggal, Gustav Söderström and Will Wu",
+          "quote_hash": "de17ba68d7459509a4bfb2bd43fb7c987af6f63a364ce841bb7f7efd20e45157"
+        },
+        {
+          "source_id": "FISRC-50130a45d72291a2",
+          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+          "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
+          "source_content_hash": "65e55f883bf21e63",
+          "quote": "Joining are 20 Product (Will Wu, CPO at Match Group)",
+          "quote_hash": "aa418a7c9ee76e5ae0c3f64a37f8924359ba8f36ccab073f8d32127a128dadf5"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "20 Product 在公开融资材料中作为产品高管相关的天使投资联合体出现。Archestra 官网将其列入 Angels and Followers，并写为“20 Product By Will Wu”；该官网同时将 Will Wu 标为 Match Group CPO、Snap 前产品副总裁。另一份融资公告明确称 20 Product 为 syndicate，并列出七位成员。现有公开材料没有披露该联合体的法律载体、基金管理人或完整投资条款。"
     }
   }
 }

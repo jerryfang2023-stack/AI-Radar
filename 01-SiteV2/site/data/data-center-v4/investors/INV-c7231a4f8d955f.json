@@ -139,33 +139,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "福建省商务厅公告将“福建产投”列为银河通用一轮融资参与方；评级报告将“福建产投”明确映射为福建省产业投资有限公司，并记载该公司持有福建冶金 20% 股权。后者证明法律名称与国资投资控股属性，不代表该轮单独出资额。",
+      "summary": "“福建产投”对应福建省产业投资有限公司，是福建省属国有资本投资主体。评级报告记载其于 2024 年获划转福建冶金 20% 股权；福建省商务厅 2026 年公告另将福建产投列为银河通用融资参与方，未披露其单独出资额。",
+      "facts": [
+        {
+          "field": "legal_name_alias",
+          "label": "名称对应",
+          "value": "评级报告明确将福建省产业投资有限公司简称为“福建产投”。",
+          "source_id": "fujian_industry_investment_alias"
+        },
+        {
+          "field": "state_owned_equity_holding",
+          "label": "国有股权划转",
+          "value": "评级报告称福建省国资委于 2024 年将福建冶金 20% 股权无偿划转至福建省产业投资有限公司。",
+          "source_id": "fujian_industry_investment_alias"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 银河通用 轮次未披露 本轮参投。",
+          "description": "福建省商务厅公告称福建产投参与银河通用新一轮融资；报道未披露福建产投单独出资额。",
+          "source_id": "galaxy_round"
+        },
+        {
+          "description": "融资来源记录：银河通用 · 轮次未披露 · 2026-03-02 · 本轮参投 · 25亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-adaac360139469bd"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "现有官方披露可确认简称映射、国资股权投资身份及一笔融资参与；不将闽榕中银 AIC 基金的规模归属于福建产投。",
       "sources": [
+        {
+          "source_id": "fujian_industry_investment_alias",
+          "source_url": "https://www.chinamoney.com.cn/dqs/cm-s-notice-query/fileDownLoad.do?contentId=3244744&mode=save&priority=0",
+          "source_title": "福建省冶金（控股）有限责任公司信用评级报告",
+          "source_content_hash": "68267ea83c7012591968308ef53556cf0f3d342a14a157d2a249012138c34a3e",
+          "quote": "福建省产业投资有限公司（简称“福建产投”）",
+          "quote_hash": "6d69c14ccc9d1bf5fd2f615c910c3a151b72d4c135a12caa2787e425b9c643af"
+        },
+        {
+          "source_id": "galaxy_round",
+          "source_url": "https://swt.fujian.gov.cn/xxgk/jgzn/jgcs/zsxdc/tzdt/202603/t20260313_7109852.htm",
+          "source_title": "参投头部具身智能企业！全省首支试点AIC基金投出“开门红” _ 投资资讯 _ 福建省商务厅",
+          "source_content_hash": "4b7ec71aa17c4357ea1bb057368da727ecbba2e02091df00a0c0ac4cc2897c33",
+          "quote": "本轮融资由国家人工智能产业基金（大基金三期全资基金）、中国石化、中信集团投资控股、中国银行、福建产投等多家国资与产业资本联合注资。",
+          "quote_hash": "ce58e688f8f28ab5c485204d40010cb9e1bdd4b07ee12f2301377d22869c941a"
+        },
         {
           "source_id": "FISRC-adaac360139469bd",
           "source_url": "https://www.cls.cn/detail/2300238",
           "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
-          "source_content_hash": "15d7f3ac06a1951cbf379179cca0ae968b04be17401daebc1156d005bd34d56e",
+          "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
           "quote": "由国家人工智能产业基金（大基金三期全资基金）、中国石化、中信集团投资控股、中国银行、上汽集团金控、中芯聚源、亦庄国投、未来产业投资、鲲鹏基金、无锡创投、福建产投联合投资",
           "quote_hash": "96a3aef27d592b0706f6bf7a6b0f44a71d2e784c11c23523af9bf03b4f18a45d"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

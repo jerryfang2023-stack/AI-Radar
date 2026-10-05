@@ -48,11 +48,12 @@ try{
   case 'capture':{const urls=readJson(need('input'));if(!Array.isArray(urls))throw new Error('Capture input is a JSON array of canonical URLs');result=await captureBatch(queue,urls,{concurrency:Number(args.get('concurrency')||6),perHost:2});break;}
   case 'import-capture':{const input=readJson(need('input'));const capturedAt=Date.parse(input.captured_at);if(!input.title||!Number.isFinite(capturedAt)||capturedAt>Date.now())throw new Error('Capture metadata requires title and the actual captured_at');result=queue.remember(input.url,fs.readFileSync(path.resolve(need('body')),'utf8'),input.title,capturedAt);break;}
   case 'complete':result=queue.complete(need('key'),need('token'),readJson(need('input')))||{status:'candidate'};break;
+  case 'revise':result=queue.revise(need('key'),readJson(need('input')));break;
   case 'approve':result=queue.approve(need('key'),need('reviewer'))||{status:'accepted'};break;
   case 'reopen':result=queue.reopen(need('key'),need('reason'));break;
   case 'integrate':result=integrateProfileBatch(queue,{batchSize:Number(args.get('batch-size')||30),flush:args.get('flush')==='true',reviewer:args.get('reviewer')||undefined,backupRoot:evidenceRoot||undefined});break;
   case 'report':{result={date:today(),...queue.status(readBacklog())};break;}
-  default:throw new Error('Commands: seed, claim, heartbeat, watch, capture, import-capture, complete, approve, reopen, fail, retry, integrate, status, report');
+  default:throw new Error('Commands: seed, claim, heartbeat, watch, capture, import-capture, complete, revise, approve, reopen, fail, retry, integrate, status, report');
  }
  if(args.get('output')){const target=path.resolve(args.get('output'));const relative=path.relative(repo,target);if(!relative||(!relative.startsWith('..')&&!path.isAbsolute(relative)))throw new Error('Worker results and queue reports must stay outside the public repository');fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,JSON.stringify(result,null,2)+'\n');}
  if(!alreadyPrinted)console.log(JSON.stringify(result,null,2));

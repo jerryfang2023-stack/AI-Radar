@@ -317,19 +317,38 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "公开报道将 SK hynix 列为 Etched 2026 年 7 月 Series C 投资方；Anthropic 的战略基础设施合作关系不作为融资记录。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "风险投资部门身份和 CVC 投资方式来自 SK hynix 一手页面及新闻稿。所列融资案例只按相应融资来源记录，不视为完整投资组合。",
+      "summary": "SK hynix Ventures 官网将其称为 SK hynix 的风险投资部门。SK hynix 2026 年新闻稿称，公司自 2015 年起运营 CVC 团队，直接投资并通过基金承诺投资半导体及新兴技术领域的早期创业公司。",
+      "facts": [
+        {
+          "field": "parent_organization",
+          "label": "所属机构",
+          "value": "SK hynix Ventures 是 SK hynix 的风险投资部门。",
+          "source_id": "PROFILE-COLLECT-INV-b371a2fed03a09-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "公司披露自 2015 年起开展直接投资及基金承诺。",
+          "source_id": "PROFILE-COLLECT-INV-b371a2fed03a09-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "半导体与新兴技术领域的早期创业公司。",
+          "source_id": "PROFILE-COLLECT-INV-b371a2fed03a09-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "参与 Etched Series C。",
-          "source_id": "FISRC-f0a76ad07ec945fd"
-        },
-        {
           "description": "融资来源记录：Etched · C轮 · 2026-07-23 · 本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f34324e392a333c0"
+        },
+        {
+          "description": "融资来源记录：Etched · 历史轮次未披露 · 2026-07 · 2026年7月Series C参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f0a76ad07ec945fd"
         },
         {
           "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
@@ -339,12 +358,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-f0a76ad07ec945fd",
-          "source_url": "https://www.unite.ai/etched-raises-700m-series-d-at-21b-valuation-to-ramp-inference-hardware-production/",
-          "source_title": "Etched Raises $700M Series D at $21B Valuation to Ramp Inference Hardware Production &#8211; Unite.AI",
-          "source_content_hash": "8c6e3fe7e70d0215fcb038b56b239e3566674375672df5c8d7a9d2c276dfeae0",
-          "quote": "announced it had successfully manufactured its homegrown chips with TSMC and had booked $1 billion in orders. The July Series C brought in SK Hynix alongside the venture backers. Now Jane Street, a buyer with one of the most latency-sensitive computing problems in finance, has moved from testing the hardware to owning a rack to leading the round. That sequen",
-          "quote_hash": "b17b0d12146fe16869a3330470c9ce043f0f0ee8c389d64e5b291497a319f232"
+          "source_id": "PROFILE-COLLECT-INV-b371a2fed03a09-1",
+          "source_url": "https://m.skhynix.com/ventures/UI-FR-VT01/",
+          "source_title": "m.skhynix.com",
+          "source_content_hash": "311d1b2e38e1b2e7c3ead033459834083f532b1fb95fa2fa7968697a48bfd05e",
+          "quote": "SK hynix Ventures is the venture capital arm of SK hynix, the world's leading AI memory provider.",
+          "quote_hash": "b2d160074d236cfccd43c6b32999f304d7a28a0070563508e3e8cb461a8385ac"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b371a2fed03a09-2",
+          "source_url": "https://news.skhynix.com/en/sk-hynix-ventures/",
+          "source_title": "SK hynix Launches &#8216;SK hynix Ventures&#8217; in Silicon Valley to Expand Global AI Ecosystem Investment &#8211; SK hynix Newsroom",
+          "source_content_hash": "7c2322141da55b7cf4820bc5d78cbb4c436b445a22a7b401a50bf055efa89287",
+          "quote": "Since 2015, SK hynix has operated a CVC organization, pursuing both direct investments and indirect investments via fund commitments in promising early-stage startups within the semiconductor and emerging tech sectors.",
+          "quote_hash": "e58d9d277e0ec1d29db01e368da327b3a1ef828b59d5eaa855ed70e0581ca641"
         },
         {
           "source_id": "FISRC-f34324e392a333c0",
@@ -355,6 +382,14 @@
           "quote_hash": "0a0d3caf60c2b0229abdd07e7702391c8a86f14889ac1ea40c1e92a8235102ba"
         },
         {
+          "source_id": "FISRC-f0a76ad07ec945fd",
+          "source_url": "https://www.unite.ai/etched-raises-700m-series-d-at-21b-valuation-to-ramp-inference-hardware-production/",
+          "source_title": "Etched Raises $700M Series D at $21B Valuation to Ramp Inference Hardware Production – Unite.AI",
+          "source_content_hash": "481f49faf99a191d",
+          "quote": "The July Series C brought in SK Hynix alongside the venture backers.",
+          "quote_hash": "3f511384b5ab71f6164dda88e3c32ef74afdfd52d0b3b4c8056844395e6ff243"
+        },
+        {
           "source_id": "FISRC-b5e22ae086a6b353",
           "source_url": "https://www.anthropic.com/news/series-h",
           "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
@@ -363,7 +398,7 @@
           "quote_hash": "d234fc755255a6c0cf9808e2602c1842e9441b13f179294561bed037bdb0bc15"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

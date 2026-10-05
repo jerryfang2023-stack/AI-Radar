@@ -139,22 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Banco Sabadell 官网介绍其为西班牙私人银行集团；NeuralTrust 官方融资公告列出 Banc Sabadell 为参与方，未说明具体投资工具或金额。",
-      "summary": "Banc Sabadell 是西班牙银行集团。NeuralTrust 官方公告将 Banc Sabadell 列为其 2026 年 seed 融资参与方；公告未披露其参与方式或金额。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-04",
+      "summary": "Banc Sabadell 是西班牙银行集团；其官网将 Sabadell Venture Capital 定义为集团的风险投资部门，支持 seed、A 轮等早期项目。NeuralTrust 官方公告将 Banc Sabadell 列为融资参与方，但未说明具体投资主体或出资额。",
+      "coverage_note": "集团业务身份与风险投资部门分别依据官网表述；NeuralTrust 公告仅写 Banc Sabadell，不推断由银行本体或其哪一投资工具出资。",
       "facts": [
         {
           "field": "organization_type",
-          "label": "官网披露的机构身份",
+          "label": "官网披露集团身份",
           "value": "西班牙私人银行集团。",
-          "source_id": "PROFILE-bb0294613d70f5477d9f"
+          "source_id": "b35-banc-group"
+        },
+        {
+          "field": "venture_capital",
+          "label": "集团风险投资部门",
+          "value": "Sabadell Venture Capital 为 Banco Sabadell 的风险投资部门，官网称主要支持 seed 和 Series A 阶段创业公司。",
+          "source_id": "b35-banc-vc"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "NeuralTrust 官方公告将 Banc Sabadell 列为 2026 年 seed 轮参与方；未披露其出资金额。",
-          "source_id": "PROFILE-3dc64b02700afb52d60f"
+          "description": "NeuralTrust 官方公告将 Banc Sabadell 列为融资参与方；未披露其单独出资额或具体投资主体。",
+          "source_id": "b35-banc-neuraltrust"
         },
         {
           "description": "融资来源记录：NeuralTrust · 种子轮 · 2026-06-17 · 本轮参投 · €17.2 million ($20 million)。这是本库收录的披露案例，不代表完整投资组合。",
@@ -165,18 +172,26 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
+      "experience_summary": "西班牙银行集团，另设有风险投资部门。",
       "sources": [
         {
-          "source_id": "PROFILE-bb0294613d70f5477d9f",
+          "source_id": "b35-banc-group",
           "source_url": "https://comunicacion.grupbancsabadell.com/en/about-us/",
           "source_title": "About us - Banc Sabadell - Comunicación",
           "source_content_hash": "5ee4a9cdf13183509980ef6d1423fe467d845b3f95be52bb6fc688914148c856",
-          "quote": "Banco Sabadell is the fourth largest private banking group in Spain .",
-          "quote_hash": "aa7e5067664e4c08c0284fb5eb3f1b6ca26e034f6413ea863c5fc00ff839fb2a"
+          "quote": "Banco Sabadell is the fourth largest private banking group in Spain",
+          "quote_hash": "c404091abb84da9534675971427eecf56f4e15058ce177174cbd12f0813d1a41"
         },
         {
-          "source_id": "PROFILE-3dc64b02700afb52d60f",
+          "source_id": "b35-banc-vc",
+          "source_url": "https://sabadellventurecapital.com/vc-01-en.html",
+          "source_title": "Venture Capital",
+          "source_content_hash": "33c2cc5b88a95701cc42af64e953f4acdbfd189b6a170b4b1df897fd4ede3e54",
+          "quote": "Sabadell Venture Capital is the Venture Capital (vc) division of Banco Sabadell and our main purpose is to provide support to startups throughout their first phases (seed, series A).",
+          "quote_hash": "b0d3db08a4c5ea213d4de7a728c67beacea3398c287eb3ada10a0805f23268ef"
+        },
+        {
+          "source_id": "b35-banc-neuraltrust",
           "source_url": "https://neuraltrust.ai/news/neuraltrust-raises-20m",
           "source_title": "NeuralTrust raises $20M to secure the growing swarm of AI agents in the enterprise | NeuralTrust",
           "source_content_hash": "2fb2a80a458d4e07ef6a2e1d26d967064b17ab43b719d7ae88a18554eb158343",
@@ -191,8 +206,7 @@
           "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves",
           "quote_hash": "ae1bb77e5a724b53c15c856ac390016abe90e7b84758fc53ffce26d2683c610d"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

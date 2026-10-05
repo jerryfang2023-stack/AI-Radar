@@ -139,15 +139,33 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "基金类型和策略依据官网自述；参投案例依据融资公告。",
-      "summary": "Atlas SGR 官网介绍其管理另类投资基金，并列出聚焦 AI 初创公司的 Atlas AI^VB Fund I；ZeroDrift 的种子轮公告将 Atlas SGR 列为投资方。本档不视为完整基金业绩清单。",
+      "coverage_status": "researched",
+      "coverage_note": "机构授权、管理类别及基金方向均来自 Atlas SGR 官网；ZeroDrift 投资信息引用发行方新闻稿，不将单一基金与管理平台混为一谈。",
+      "summary": "Atlas SGR 是意大利另类投资基金管理平台。官网称其于2022年获意大利央行授权，并管理 private debt、venture capital 和 real estate 三类基金；其 Atlas AI^VB Fund I 聚焦由 Venture Builders 创立的人工智能初创公司。ZeroDrift 的种子轮公告将 Atlas SGR 列为投资方。",
       "facts": [
         {
           "field": "fund_focus",
           "label": "AI 风投基金",
           "value": "Atlas AI^VB Fund I 聚焦人工智能初创公司",
           "source_id": "PROFILE-803edc9f4a3f46d8102e"
+        },
+        {
+          "field": "authorization",
+          "label": "官网披露的监管授权",
+          "value": "Atlas SGR 官网称其于2022年9月获意大利央行授权。",
+          "source_id": "PROFILE-S-INV-5aa5eeab2e9667-3"
+        },
+        {
+          "field": "managed_assets",
+          "label": "官网披露的基金类别",
+          "value": "Atlas SGR 官网列出的管理类别包括 private debt、venture capital 和 real estate。",
+          "source_id": "PROFILE-S-INV-5aa5eeab2e9667-4"
+        },
+        {
+          "field": "venture_fund_focus",
+          "label": "官网披露的AI基金方向",
+          "value": "Atlas AI^VB Fund I 是聚焦人工智能初创公司的全球风险投资基金。",
+          "source_id": "PROFILE-S-INV-5aa5eeab2e9667-5"
         }
       ],
       "milestones": [],
@@ -174,9 +192,33 @@
           "source_content_hash": "c1c7332e1706365088147fb1de401298715a0f9996781c4a1d7ce32ea49d7b29",
           "quote": "Investors include a16z speedrun, Reign Ventures, PitchDrive Ventures, U&I Ventures, Active Capital, Geek Ventures, Converge Ventures, Atlas SGR, Founders Future, and others.",
           "quote_hash": "22c9303e353466cccbd29cc3afb3f0d00a300b56627951c3b941581be21673de"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5aa5eeab2e9667-3",
+          "source_url": "https://www.atlassgr.it/chisiamo/",
+          "source_title": "Chi siamo &ndash; Atlas Sgr",
+          "source_content_hash": "5ff927847ffb90fbfd62d2ba53d3e8c6deea5d35f1fd10640547550289bf8fa6",
+          "quote": "autorizzata da Banca d&rsquo;Italia nel settembre 2022",
+          "quote_hash": "62bb9cfebeecaf4e48f04206a6ad39f293aae65d2ea23341fdfc572113ab78b5"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5aa5eeab2e9667-4",
+          "source_url": "https://www.atlassgr.it/chisiamo/",
+          "source_title": "Chi siamo &ndash; Atlas Sgr",
+          "source_content_hash": "5ff927847ffb90fbfd62d2ba53d3e8c6deea5d35f1fd10640547550289bf8fa6",
+          "quote": "La Societ&agrave; gestisce FIA nelle tre Asset Class",
+          "quote_hash": "9827dfd5b4f098a209a0579a54dc4ce57c014a0e8023458434e5988c833f4f99"
+        },
+        {
+          "source_id": "PROFILE-S-INV-5aa5eeab2e9667-5",
+          "source_url": "https://www.atlassgr.it/chisiamo/",
+          "source_title": "Chi siamo &ndash; Atlas Sgr",
+          "source_content_hash": "5ff927847ffb90fbfd62d2ba53d3e8c6deea5d35f1fd10640547550289bf8fa6",
+          "quote": "fondo di venture capital globale focalizzato su startup di intelligenza artificiale create dai migliori Venture Builders",
+          "quote_hash": "95302a8d75cad46730fa2222523b36da4a569182435da1a7cb33a690378ab958"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

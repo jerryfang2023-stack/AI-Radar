@@ -139,29 +139,56 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "TechCrunch 报道将其列为 AIR 种子轮的个人投资者。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司职务来自 Wiz 官方页面；AIR 融资活动来自 TechCrunch 报道，未披露个人出资金额。",
+      "summary": "Wiz 官方将 Yinon Costica 列为公司联合创始人及产品副总裁。TechCrunch 对 AIR 融资的报道将其列为天使投资人；目前仅有这一项可核实投资案例。",
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "现任职务",
+          "value": "Wiz 联合创始人、产品副总裁",
+          "source_id": "PROFILE-B12-INV-b9d1780520f6d3-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "作为个人投资者参与 AIR 种子轮。",
+          "source_id": "PROFILE-B12-INV-b9d1780520f6d3-1"
+        },
+        {
+          "description": "融资来源记录：AIR · 种子轮 · 2026-09-01 · 本轮参投 · $50M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0426e4b3b9347f4f"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-0426e4b3b9347f4f",
+          "source_id": "PROFILE-B12-INV-b9d1780520f6d3-1",
           "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
           "source_title": "AIR raises $50M to help companies vet the skills and add-ons AI agents use | TechCrunch",
           "source_content_hash": "d7d2329ac77d8ae363f1d141c7ca53f0a8c131f02197ddb32c8c8e537c5d33be",
           "quote": "st round, while Greenoaks led the second, Saban said. Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated. AIR’s pitch goes thusly: The way AI agents are used wholesale at companies",
           "quote_hash": "c25f728132e6742aa28986d0dfda8d98804aa453d3447b10043472f885219e4d"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b9d1780520f6d3-2",
+          "source_url": "https://www.wiz.io/authors/yinon-costica",
+          "source_title": "Posts by Yinon Costica | Wiz",
+          "source_content_hash": "d6b6fabd8e00261aebc9d748022d5dc0bbbfc96b50f87311efec6b9e0fd7327c",
+          "quote": "Yinon Costica is Co-founder and Vice President of Product at Wiz.",
+          "quote_hash": "4adbb89c2ba0ffa9d2bdb83e79fd98a1d10de796eeb50adbaf4eb7890b5566f5"
+        },
+        {
+          "source_id": "FISRC-0426e4b3b9347f4f",
+          "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
+          "source_title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
+          "source_content_hash": "f272d6219c1373f8",
+          "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
+          "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

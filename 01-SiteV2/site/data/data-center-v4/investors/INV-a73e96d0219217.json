@@ -135,19 +135,108 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Transcend Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、方向及GMI Cloud组合信息来自Transcend 官网；外部融资数据库仅作为该轮参与的补充核对，不据此推断单笔金额。",
+      "summary": "Transcend Capital Partners 官网将其定位为面向亚洲及拓展亚洲企业的投资平台，关注自动化、AI智能体与深科技，覆盖早期至B轮，单笔投资上限为500万美元。官网将GMI Cloud列入投资组合并介绍其8200万美元A轮；Caplight亦将Transcend Capital Partners列在GMI Cloud A轮投资方中。",
+      "facts": [
+        {
+          "field": "investment_mandate",
+          "label": "投资范围",
+          "value": "官网称其投资亚洲及拓展亚洲市场的企业。",
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网列示投资上限至Series B。",
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-2"
+        },
+        {
+          "field": "ticket_size",
+          "label": "单笔投资上限",
+          "value": "官网列示最高500万美元。",
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-3"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网称其关注自动化、AI智能体与深科技。",
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Transcend 官网将 GMI Cloud 列入投资组合，并称该公司获得8200万美元A轮融资；Caplight亦将Transcend列为该轮投资方。",
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-5"
+        },
         {
           "description": "融资来源记录：GMI Cloud · 历史轮次未披露 · 历史轮次（Series A）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c7886d241de91af6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.transcendcp.com/",
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-1"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-1",
+          "source_url": "https://www.transcendcp.com/",
+          "source_title": "Transcend Capital Partners",
+          "source_content_hash": "488fd92dc52179608aca2c1d09d7e3ea9163715a44962a5b9ba7dac36b8ac250",
+          "quote": "We invest in Asia and companies expanding into Asia",
+          "quote_hash": "24ece8a6927dcf05a2608f1870719058abecc33a655527db800c18851e1e723d"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-2",
+          "source_url": "https://www.transcendcp.com/",
+          "source_title": "Transcend Capital Partners",
+          "source_content_hash": "488fd92dc52179608aca2c1d09d7e3ea9163715a44962a5b9ba7dac36b8ac250",
+          "quote": "Up to Series B",
+          "quote_hash": "33aae7b7b80005b02c19f32095598c8e4948228cee6d2edf567de49006cb8c0b"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-3",
+          "source_url": "https://www.transcendcp.com/",
+          "source_title": "Transcend Capital Partners",
+          "source_content_hash": "488fd92dc52179608aca2c1d09d7e3ea9163715a44962a5b9ba7dac36b8ac250",
+          "quote": "Up to US$5M",
+          "quote_hash": "63533a9ebe22e63bbe3c44f7ef7b5ad3c9ce84395346237d2b312947fe000aa9"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-4",
+          "source_url": "https://www.transcendcp.com/",
+          "source_title": "Transcend Capital Partners",
+          "source_content_hash": "488fd92dc52179608aca2c1d09d7e3ea9163715a44962a5b9ba7dac36b8ac250",
+          "quote": "automation, AI agents, and deep technology",
+          "quote_hash": "34831a565802291fb98bdea9b64b622ac647accdfeb394299f82fc6172b25b77"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-5",
+          "source_url": "https://www.transcendcp.com/",
+          "source_title": "Transcend Capital Partners",
+          "source_content_hash": "488fd92dc52179608aca2c1d09d7e3ea9163715a44962a5b9ba7dac36b8ac250",
+          "quote": "GMI Cloud High-performance GPU cloud infrastructure provider. Secured an US$82M Series A",
+          "quote_hash": "22196e35e7f76210f5e1fe081834b2cfd840116b263fd47b7dd48cc0c41168a3"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-a73e96d0219217-6",
+          "source_url": "https://www.caplight.com/company/gmicloud",
+          "source_title": "GMI Cloud Valuation &amp; Funding History | Caplight",
+          "source_content_hash": "4a0aecc6bad15386a0c4733df7c7a42eb823bda9e1f67219ebc836a5c67cd9a2",
+          "quote": "Transcend Capital Partners Series A",
+          "quote_hash": "f9471363e304e42ef0862ace234ea71c34427028c188696fb5c461aa417925d9"
+        },
         {
           "source_id": "FISRC-c7886d241de91af6",
           "source_url": "https://www.caplight.com/company/gmicloud",

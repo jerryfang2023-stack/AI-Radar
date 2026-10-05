@@ -124,25 +124,48 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录 Volantis 官网当前对支持者的公开列示；页面没有说明投资日期、金额或投资载体，不代表完整履历或投资组合。",
-      "summary": "Volantis 官网当前将 Sam Altman 列入其支持者名单。该页面没有给出其投资时间、金额或投资载体，本档案仅保留这一项公司自述。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "OpenAI 2025 年更新的治理介绍将 Sam Altman 列为 CEO。Volantis 官网称其获得 Sam Altman 等人支持；Value Add Pulse 将他列为 Volantis 较早期的支持者之一。",
+      "coverage_note": "OpenAI 官网支持其 CEO 职务；Volantis 官网及融资报道支持一项公司公开披露的支持者关联。来源没有给出 Sam Altman 的投资时间、金额或投资载体，不将其扩展为完整个人投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "Volantis 官网将 Sam Altman 列入公司支持者名单；未披露对应投资的金额、日期或投资载体。",
-          "source_id": "PROFILE-aa80968da6210cb67526"
-        },
-        {
-          "description": "融资来源记录：Volantis · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Value Add Pulse 报道称 Volantis 的早期支持者包括 Sam Altman；该报道没有披露其个人出资金额或载体。",
           "source_id": "FISRC-11814bcbad089244"
         }
       ],
       "contacts": [],
+      "current_roles": [
+        {
+          "title": "CEO",
+          "organization": "OpenAI",
+          "source_id": "b33-sam-openai-role"
+        }
+      ],
+      "career": [
+        {
+          "organization": "OpenAI",
+          "title": "CEO",
+          "period": "截至 OpenAI 2025 年治理页面核验时列为 CEO",
+          "description": "OpenAI 2025 年 10 月 28 日更新的治理页面将 Sam Altman 列为 CEO。",
+          "source_id": "b33-sam-openai-role"
+        }
+      ],
+      "education": [],
+      "experience_summary": "OpenAI CEO；公开企业页面另将其列为 Volantis 的支持者，但未披露个人投资细节。",
       "sources": [
         {
-          "source_id": "PROFILE-aa80968da6210cb67526",
+          "source_id": "b33-sam-openai-role",
+          "source_url": "https://openai.com/our-structure/",
+          "source_title": "Our Structure | OpenAI",
+          "source_content_hash": "007db3d25e4eb0eb2119034e7108f62eb826304dee9f9c972fb4b2aa4ca2b89a",
+          "quote": "as well as CEO Sam Altman.",
+          "quote_hash": "c6050c400b3e9862d0b708046df0854803b0d48ed1e8c58aa719b1adf26189c7"
+        },
+        {
+          "source_id": "b33-sam-volantis",
           "source_url": "https://volantissemi.ai/",
           "source_title": "Volantis | Photonic AI Infrastructure for 10T+ Model Inference",
           "source_content_hash": "2c21a328dff7107bb3ec9b4bc79ffe5437f013dc832cf642c466f557cefeff22",
@@ -152,17 +175,12 @@
         {
           "source_id": "FISRC-11814bcbad089244",
           "source_url": "https://valueaddvc.com/pulse/volantis-88m-series-a-photonic-ai-2026",
-          "source_title": "Volantis Raises $88M To Build Photonic AI Chips",
-          "source_content_hash": "e1ba4c5d8b07d757",
+          "source_title": "Volantis raises $88M Series A for photonic AI chips | Value Add Pulse",
+          "source_content_hash": "c27004e478597652bd6e13c239968dc127856c1bb22fe3da489a143f87bca8ac",
           "quote": "Volantis says the round brings its total funding to $97 million, including earlier backing from Sam Altman, Jeff Dean, Dylan Patel and John Doerr.",
           "quote_hash": "033d2fddfcd9a13af0b6223abdcaca26023d13744e11337f5a63743f13eb507a"
         }
-      ],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "本档案只记录 Volantis 官网公开列示的支持者身份，不构成完整职业履历。",
-      "last_verified_at": "2026-10-04"
+      ]
     }
   }
 }

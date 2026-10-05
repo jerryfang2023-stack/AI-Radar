@@ -123,20 +123,27 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "reported_founder_identity",
+          "label": "Accel 页面列示的身份",
+          "value": "Accel 的 Sentry 公司页面将 Chris Jennings 列为 Sentry 创始人之一。",
+          "source_id": "PROFILE-B6-INV-8acf2fd8935a81-1"
+        }
+      ],
       "milestones": [],
       "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动与明确署名的身份关联，不补写未经核实的职业经历或投资金额。",
-      "summary": "Modem 于 2026 年 2 月公布 440 万美元融资，并将 Chris Jennings（Sentry）列入其天使支持者名单之一；公告未披露其个人出资额。",
+      "coverage_note": "联合创始人身份来自 Accel 公司页；天使投资参与来自 Modem 官方融资公告。两处材料均未披露 Chris Jennings 的个人出资金额。",
+      "summary": "Accel 的 Sentry 公司页列 Chris Jennings 为 Sentry 联合创始人；Modem 官方融资公告将 Chris Jennings（Sentry）列入支持其 440 万美元融资的天使投资者名单。该两条来源共同限定了队列中同名个人的身份和投资披露。",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开资料仅确认 Modem 的融资公告将 Chris Jennings 与 Sentry 并列标注，未披露完整履历或个人投资金额。",
+      "experience_summary": "",
       "track_record": [
         {
-          "description": "Modem 于 2026 年 2 月公布的融资公告将 Chris Jennings（Sentry）列为天使支持者之一；公告没有披露其个人出资额。",
-          "source_id": "modem-angel-backer-2026"
+          "description": "Modem 官方融资公告将 Chris Jennings（Sentry）列为其天使投资者之一，未披露其个人投资额。",
+          "source_id": "PROFILE-B6-INV-8acf2fd8935a81-2"
         },
         {
           "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（Sentry）。这是本库收录的披露案例，不代表完整投资组合。",
@@ -145,12 +152,20 @@
       ],
       "sources": [
         {
-          "source_id": "modem-angel-backer-2026",
+          "source_id": "PROFILE-B6-INV-8acf2fd8935a81-1",
+          "source_url": "https://www.accel.com/companies/sentry",
+          "source_title": "Accel | Sentry",
+          "source_content_hash": "45f42907f9026372097f44689fb94d2d06e1dcd4f245b79147af882824a89908",
+          "quote": "Founders Milin Desai (CEO) Chris Jennings David Cramer",
+          "quote_hash": "eb62fba91b9d8bff14bc815d2e0d7d36d9d9d1c285e6a35b2f8ca1f3b4d5666b"
+        },
+        {
+          "source_id": "PROFILE-B6-INV-8acf2fd8935a81-2",
           "source_url": "https://modem.dev/blog/modem-raises-4-4m",
           "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
           "source_content_hash": "1fcd6e8a5bd85e1de48de50d890272ea31481d5ec39d8296080c54e61386027b",
-          "quote": "a group of incredible angels behind foundational developer tools and AI products: David Cramer and Chris Jennings (Sentry)",
-          "quote_hash": "5f9d69b580b211e93300cc2c334160b1e5b55bf816b913072d04c40f9a51e303"
+          "quote": "David Cramer and Chris Jennings (Sentry)",
+          "quote_hash": "1574c672f68e153fc5073128a6615aede0352b8bc39b3ede67b49b0db2483ec3"
         },
         {
           "source_id": "FISRC-9fd6ba5210b37fed",
@@ -161,7 +176,7 @@
           "quote_hash": "1574c672f68e153fc5073128a6615aede0352b8bc39b3ede67b49b0db2483ec3"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

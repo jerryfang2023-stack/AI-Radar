@@ -139,29 +139,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "Nscale 官方新闻稿将 Third Point 列为 Pre-IPO 可转债融资投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略来自 Third Point 官网；融资角色与总额来自 Nscale 官方新闻稿。未推断 Third Point 单独出资额。",
+      "summary": "Third Point 官网称其投资策略覆盖风险套利、信用及创业投资；Nscale 官方新闻稿将 Third Point 列为 33.6 亿美元 Pre-IPO 可转债融资的领投方。",
+      "facts": [
+        {
+          "field": "self_declared_strategy",
+          "label": "官网自述的投资策略",
+          "value": "Third Point 官网披露其投资策略涵盖权益、信用、结构化产品及创业投资。",
+          "source_id": "PROFILE-B7-INV-911e2d8c72372d-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Nscale 官方融资新闻稿将 Third Point 列为 Pre-IPO 融资投资方。",
+          "description": "Nscale 官方新闻稿将 Third Point 列为 33.6 亿美元 Pre-IPO 可转债融资领投方；未披露单独出资额。",
+          "source_id": "PROFILE-B7-INV-911e2d8c72372d-1"
+        },
+        {
+          "description": "融资来源记录：Nscale Limited · Pre-IPO · 2026-09-25 · 本轮领投 · $3.36b。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-060d60f0bcc42b9d"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-060d60f0bcc42b9d",
+          "source_id": "PROFILE-B7-INV-911e2d8c72372d-1",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
           "source_title": "NSCALE RAISES $3.36B IN PRE-IPO CONVERTIBLE FINANCING",
           "source_content_hash": "f4fe3307e8779335eb18e2af7ef056a29f7aa3a3faf9af431d5ef3e57ebaed94",
           "quote": "mited, the full-stack AI cloud platform, today announced its $3.36bn raise via convertible loan notes, led by Third Point. The convertible funding round was also supported by new and existing investors including NVIDIA, funds managed by Apollo, Citadel, Hudson Bay Capital, Abu Dhabi Investment Council, and 8090 Industries. Other investors",
           "quote_hash": "c19e6720390a28cb807f28cd4ae30d066a576de602b8ab4d1822ce948aa8dbaf"
+        },
+        {
+          "source_id": "PROFILE-B7-INV-911e2d8c72372d-2",
+          "source_url": "https://www.thirdpoint.com/investment-strategy/",
+          "source_title": "Investment Strategy - Third Point",
+          "source_content_hash": "153d691381cdb071c73e72e0caa0140cff2f41cfc77dc60936cf8eb148b04b04",
+          "quote": "Delivering returns by opportunistically investing in equities, corporate, structured, private credit, and CLO strategies, and venture capital.",
+          "quote_hash": "6706f3a4117240e9d6d1e461bc3e7a05bae1cef869a78948358ed431fa5ce232"
+        },
+        {
+          "source_id": "FISRC-060d60f0bcc42b9d",
+          "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
+          "source_title": "NSCALE 在 IPO 前可转换融资中筹集 $3.36B",
+          "source_content_hash": "5ebbe835664f567a51c54687b46ae2cf87e594d88de74ae878848a31a9e9f928",
+          "quote": "led by Third Point",
+          "quote_hash": "831cca66a6a54d5ee6152be85352a03142f849e753a120387eb4cdd97a54a561"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

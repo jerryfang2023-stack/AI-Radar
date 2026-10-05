@@ -155,28 +155,75 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略、投资阶段和首笔金额采用FoundersEdge官网自述；Empromptu融资信息来自TechCrunch，未披露FoundersEdge单独出资额。",
+      "summary": "FoundersEdge是一家由创业者创立、面向AI原生软件的pre-seed投资机构。官网称其首笔投资通常为10万至20万美元，重点在AI与用户体验交叉领域。TechCrunch报道其参与Empromptu的200万美元pre-seed融资，但未披露单独出资额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网定位为pre-seed首轮投资。",
+          "source_id": "foundersedge_profile"
+        },
+        {
+          "field": "sector_focus",
+          "label": "投资主题",
+          "value": "AI原生软件及人工智能与用户体验的交叉领域。",
+          "source_id": "foundersedge_profile"
+        },
+        {
+          "field": "check_size",
+          "label": "官网披露的首笔金额",
+          "value": "官网称首笔投资为10万至20万美元。",
+          "source_id": "foundersedge_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Empromptu 预种子轮 本轮参投。",
-          "source_id": "FISRC-79832d8eb3d1b153"
+          "description": "TechCrunch报道FoundersEdge参与Empromptu的200万美元pre-seed轮；该金额为整轮融资总额，未披露FoundersEdge单独出资额。",
+          "source_id": "foundersedge_empromptu_round"
         },
         {
           "description": "融资来源记录：Empromptu · 预种子轮 · 2025-12-09 · 本轮参投 · $2M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fa8af278845697e8"
+          "source_id": "FISRC-79832d8eb3d1b153"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "FoundersEdge",
+          "url": "https://www.foundersedge.com/",
+          "source_id": "foundersedge_profile"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "该机构官网自述由连续创业者发起，并强调与创始人直接合作。",
       "sources": [
         {
-          "source_id": "FISRC-79832d8eb3d1b153",
+          "source_id": "foundersedge_profile",
+          "source_url": "https://www.foundersedge.com/",
+          "source_title": "FoundersEdge — Pre-seed capital from founders, for founders",
+          "source_content_hash": "a4ab8d793f74b022502a92811c1031e4c9f4526b51d875a3882fee7a3345e9af",
+          "quote": "PRE-SEED · AI-NATIVE · $100–$200K FIRST CHECKS First checks into pre-seed software companies at the intersection of AI and UX.",
+          "quote_hash": "249cc2c6d781667791209c4689cf265199a7d2f288b4c9d511d60c7da80b0cd2"
+        },
+        {
+          "source_id": "foundersedge_empromptu_round",
           "source_url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/",
           "source_title": "Empromptu raises $2M pre-seed to help enterprises build AI apps | TechCrunch",
           "source_content_hash": "ec57bde521f5db6673e128543ac7c6e789b4f56558c653de94fee0f5911fd338",
+          "quote": "Zeal Capital, Alumni Ventures, FoundersEdge, and South Loop also participated.",
+          "quote_hash": "335035a545f17d505b7bd23acb4d79e69a2090a2266208a90d7bfbd9143a45ea"
+        },
+        {
+          "source_id": "FISRC-79832d8eb3d1b153",
+          "source_url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/",
+          "source_title": "Empromptu 获 200 万美元种子轮融资，助力企业构建 AI 应用",
+          "source_content_hash": "5799cff742ce8e79",
           "quote": "Zeal Capital, Alumni Ventures, FoundersEdge, and South Loop also participated.",
           "quote_hash": "335035a545f17d505b7bd23acb4d79e69a2090a2266208a90d7bfbd9143a45ea"
         },
@@ -189,11 +236,7 @@
           "quote_hash": "141db159ae846403722e399c6483599ec3f73f78718054fd23aa7253a257b1ab"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

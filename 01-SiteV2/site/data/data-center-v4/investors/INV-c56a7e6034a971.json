@@ -139,33 +139,84 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "科创中国机构主页提供管理人名称、登记编号、成立时间、投资领域和自列案例；融资报道未披露旭源资本单独出资额。",
+      "summary": "科创中国机构主页将旭源资本对应为广东旭源私募股权投资基金管理有限公司，列示其2021年2月成立、基金管理人编号P1072011，投资领域包括新能源、芯片半导体和先进制造。新浪财经报道将旭源资本列为星际觅元种子轮跟投方，未披露单独出资额。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "管理人名称",
+          "value": "科创中国机构主页列示主体为广东旭源私募股权投资基金管理有限公司。",
+          "source_id": "xuyuan_institution_profile"
+        },
+        {
+          "field": "registration",
+          "label": "基金管理人登记信息",
+          "value": "科创中国机构主页列示旭源资本成立于2021年2月，基金管理人编号P1072011。",
+          "source_id": "xuyuan_institution_profile"
+        },
+        {
+          "field": "sector_focus",
+          "label": "投资领域",
+          "value": "新能源、芯片半导体、先进制造；此为科创中国机构主页列示。",
+          "source_id": "xuyuan_institution_profile"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "主页所列案例",
+          "value": "科创中国机构主页列出麒麟软件、宇航软件、创芯人科技、象帝先、盛合晶微、国富氢能等案例。",
+          "source_id": "xuyuan_institution_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-02",
+          "description": "科创中国机构主页称旭源资本成立于2021年2月。",
+          "source_id": "xuyuan_institution_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 星际觅元 种子轮 本轮参投。",
+          "description": "新浪财经报道，旭源资本与卧安机器人跟投星际觅元千万元种子轮；报道未披露旭源资本单独出资额。",
+          "source_id": "xuyuan_xingji_round"
+        },
+        {
+          "description": "融资来源记录：星际觅元 · 种子轮 · 2026-08-27 · 本轮参投 · 千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-21d53f49c93ea68c"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "行业方向和案例按科创中国机构主页内容归属，不视为监管系统的独立核验结果。",
       "sources": [
         {
-          "source_id": "FISRC-21d53f49c93ea68c",
+          "source_id": "xuyuan_institution_profile",
+          "source_url": "https://www.kczg.org.cn/org/orgdetail?id=341434",
+          "source_title": "机构主页_科创中国",
+          "source_content_hash": "6662544d94299e2508804057e474245a1c30c6209282411550fc0c5f7c2400af",
+          "quote": "广东旭源私募股权投资基金管理有限公司 企业 广东省 | 深圳市 | 南山区 基本信息 旭源资本成立于2021年2月， 基金管理人编号P1072011。",
+          "quote_hash": "135a72c709d491430a7feb938bdf7be0c39a78479fc3bcdfa267cb09b3ff1ec4"
+        },
+        {
+          "source_id": "xuyuan_xingji_round",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-iniptnux5501287.shtml",
           "source_title": "「星际觅元」完成千万元种子轮融资_新浪财经_新浪网",
           "source_content_hash": "6c089b7df5f2b672e8fa10b9a7e475da6eb4515c2ba720a22355b12ee146bc8a",
+          "quote": "由同创伟业领投 ，家庭具身智能 机器人 企业 卧安机器人和旭源资本 跟投。",
+          "quote_hash": "0b64692226d424ce3847a2f391bbc3d428c27d7542f1bb920524684226b43d4b"
+        },
+        {
+          "source_id": "FISRC-21d53f49c93ea68c",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-iniptnux5501287.shtml",
+          "source_title": "「星际觅元」完成千万元种子轮融资",
+          "source_content_hash": "9d467a65d3cd4704",
           "quote": "由同创伟业领投 ，家庭具身智能 机器人 企业 卧安机器人和旭源资本 跟投",
           "quote_hash": "c818f14cd31e8b8e275f032629a9e2e10622e930a6de0bdd8347e2d754eaeeb0"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

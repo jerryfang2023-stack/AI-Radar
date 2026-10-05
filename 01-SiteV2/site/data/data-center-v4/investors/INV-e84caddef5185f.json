@@ -137,34 +137,49 @@
       }
     ],
     "public_profile": {
+      "last_verified_at": "2026-10-05",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "官网显示天壕能源是综合能源运营企业；本档案仅记录融资报道中的投资活动，不将其描述为风险投资基金或推断独立基金载体。",
-      "summary": "天壕能源官网将天壕能源股份有限公司介绍为天然气供应及管输、膜产品与水处理、余热发电等业务组成的产业集团。投资界将“天壕能源”列为趋境科技 Pre-A 轮跟投方；现有披露未说明出资法人或金额。",
+      "coverage_status": "researched",
+      "summary": "天壕能源官网介绍天壕能源股份有限公司从事天然气供应及管输、膜产品、水处理和余热发电等业务，成立于 2007 年。投资界融资报道将“天壕能源”列为趋境科技 Pre-A 轮跟投方，但未披露出资法人及金额。",
+      "coverage_note": "公司背景来自官网；投资记录按投资界报道中的“天壕能源”名称保留，不将其推断为独立基金或认定为某个未披露的集团子公司。",
       "facts": [
+        {
+          "field": "founded_at",
+          "label": "官网披露成立时间",
+          "value": "2007 年",
+          "source_id": "b33-tianhao-official"
+        },
         {
           "field": "business_description",
           "label": "官网自述主营业务",
           "value": "天然气供应及管输运营、膜产品研发生产销售、水处理工程服务和余热发电合同能源管理。",
-          "source_id": "PROFILE-9a264ccdf5cc4e742045"
+          "source_id": "b33-tianhao-official"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投资界报道将天壕能源列为趋境科技 Pre-A 轮跟投方，未披露其出资金额。",
-          "source_id": "PROFILE-0c5250664affc98c4642"
-        },
-        {
-          "description": "融资来源记录：趋境科技 · Pre-A轮 · 2026-05-20 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "投资界报道将天壕能源列为趋境科技 Pre-A 轮跟投机构之一，未披露单独出资金额。",
           "source_id": "FISRC-0a40102abd985684"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "天壕能源股份有限公司",
+          "url": "https://thny.cc/",
+          "source_id": "b33-tianhao-official"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "能源与工业服务企业，官网列示天然气管输、膜产品、水处理和余热发电等业务。",
       "sources": [
         {
-          "source_id": "PROFILE-9a264ccdf5cc4e742045",
+          "source_id": "b33-tianhao-official",
           "source_url": "https://thny.cc/",
           "source_title": "天壕能源股份有限公司",
           "source_content_hash": "5f9f90c06397cca81569ba8c9f8a031881ccf740a533ff0d2368dc548f7984eb",
@@ -172,27 +187,14 @@
           "quote_hash": "36f650df03e876d06a0057b05b38f3b406ca37d53bef954d79b442d43e35a868"
         },
         {
-          "source_id": "PROFILE-0c5250664affc98c4642",
-          "source_url": "https://news.pedaily.cn/202605/564126.shtml",
-          "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
-          "source_content_hash": "4331862d2103ec2c16fb90a9f330cbe33d70ab1b346d24f8a9badc51d7e64fc1",
-          "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
-          "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
-        },
-        {
           "source_id": "FISRC-0a40102abd985684",
           "source_url": "https://news.pedaily.cn/202605/564126.shtml",
           "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
-          "source_content_hash": "0ed32dd4d2b1a439",
-          "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
-          "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
+          "source_content_hash": "4331862d2103ec2c16fb90a9f330cbe33d70ab1b346d24f8a9badc51d7e64fc1",
+          "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投",
+          "quote_hash": "78cf8f1da5c0c1e2608aa492cd928c9c987fda423c020cc796e517243ab37c05"
         }
-      ],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

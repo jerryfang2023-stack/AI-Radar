@@ -123,11 +123,18 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
       "summary": "凯泰资本是风险资本管理机构；36 氪报道其作为西湖心辰老股东跟投。",
       "coverage_note": "机构定位来自凯泰资本官网，融资关系来自 36 氪报道；未将跟投金额或基金份额推断为已披露事实。",
-      "facts": [],
+      "facts": [
+        {
+          "field": "firm_profile",
+          "label": "官网披露的机构类型和业务",
+          "value": "凯泰资本是风险资本管理机构，主要从事创新投资管理。",
+          "source_id": "kaitai_identity"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -170,7 +177,7 @@
           "quote_hash": "9e2faf87506724208baa5563a20e6f1ec5283a695af61ea14779927444b0346d"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

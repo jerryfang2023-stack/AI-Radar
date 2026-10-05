@@ -139,29 +139,92 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "投资界融资报道将九方智投列为 PureblueAI 清蓝天使+轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司身份及业务来自九方智投官网；投资活动来自 PureblueAI 官方公告。档案不将证券咨询服务身份等同于传统 VC 身份。",
+      "summary": "九方智投官网介绍，上海九方云智能科技有限公司是证券投资咨询服务机构，面向个人投资者提供智能投顾、投研与证券工具服务。PureblueAI 官方融资公告将九方智投列为天使+轮共同投资方；公告未披露其具体出资载体或金额。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "公司主体",
+          "value": "上海九方云智能科技有限公司，九方智投品牌运营主体",
+          "source_id": "PROFILE-B12-INV-ba1570a3e37946-3"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "持牌证券投资咨询服务机构",
+          "source_id": "PROFILE-B12-INV-ba1570a3e37946-3"
+        },
+        {
+          "field": "public_services",
+          "label": "面向个人投资者的服务",
+          "value": "智能投顾、投研策略、股票投资工具及投资者教育",
+          "source_id": "PROFILE-B12-INV-ba1570a3e37946-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "参与 PureblueAI 清蓝天使+轮。",
+          "source_id": "PROFILE-B12-INV-ba1570a3e37946-1"
+        },
+        {
+          "description": "融资来源记录：PureblueAI清蓝 · 天使+轮 · 2026-08-28 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8972e9b03b93424b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.9fzt.com/introduce.html",
+          "source_id": "PROFILE-B12-INV-ba1570a3e37946-3"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-8972e9b03b93424b",
+          "source_id": "PROFILE-B12-INV-ba1570a3e37946-1",
           "source_url": "https://news.pedaily.cn/202608/568235.shtml",
           "source_title": "PureblueAI清蓝完成数千万元天使+轮融资，GEO数字员工正式上线_投资界",
           "source_content_hash": "08374bfea4ce3f8d9e3658e638905688f58b9d39752ce336203423cae988d9dc",
           "quote": "盖中外主流AI大模型平台，并持续参与GEO行业标准建设、可信治理及产业生态共建。 2026-08-28 09:57 · 投资界讯 投资人解读 · 北京清蓝智汇科技有限公司完成数千万元人民币天使 轮融资，由上海半导体产投、九方智投等机构投资。其依托自研算法与平台，构建“科学GEO”体系，服务众多行业头部企业。旗下数字员工“Mark”升级，实现全链路服务。 · 行业竞争激烈，技术迭代快，需持续投入研发。 总结：该公司技术优势明显，商业落地能力获认可，有投资潜力。但面临竞争与技术迭代挑战，后续需关注其研发投入与市场拓展情况。 北京清蓝智汇科技有限公司（简称： PureblueAI清蓝）是一家 AI营销技术服务商。投资界（ID：pedaily2012）8月28日消息，PureblueAI清蓝宣布 完成数千万元人民币天使",
           "quote_hash": "a743cc2420e194986e5a18920ea79c46e702f00cbab5a2318dbb17ffdaba8685"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-ba1570a3e37946-2",
+          "source_url": "https://www.pureblueai.com/about-us",
+          "source_title": "关于我们_公司简介_PureblueAI清蓝",
+          "source_content_hash": "549d568f3cdc77cbc955518897fa4b03ce0ac4ea9cb7778499e6487293a4a5ed",
+          "quote": "2026年7月，获得由上海半导体产投和九方智投共同投资的数千万元人民币天使+轮融资。",
+          "quote_hash": "122a35caacff9dc964407cfe98f727925122f971ed7a33fb1f7b5839edbad4f1"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-ba1570a3e37946-3",
+          "source_url": "https://www.9fzt.com/introduce.html",
+          "source_title": "九方云简介_关于我们_九方智投",
+          "source_content_hash": "2d19ef85fa0a8a2c9c434a672e65b8a36d905e6cbcd2d0fe42488856543604fe",
+          "quote": "上海九方云智能科技有限公司，简称：九方智投，成立于1996年，是首批获证监会批准的证券投资咨询持牌机构之一。",
+          "quote_hash": "5d59b210dffd6926ec0b2b543313b68e6bd74fc72cf296cfdec7faab3f54e76c"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-ba1570a3e37946-4",
+          "source_url": "https://www.9fzt.com/introduce.html",
+          "source_title": "九方云简介_关于我们_九方智投",
+          "source_content_hash": "2d19ef85fa0a8a2c9c434a672e65b8a36d905e6cbcd2d0fe42488856543604fe",
+          "quote": "为广大个人投资者提供智能投顾、投研策略、股票投资工具、投资者教育等产品与服务",
+          "quote_hash": "f66117596b56394449caadc4d90ea5930d7f04975d3e4bcca4a0ebbfb79a5c77"
+        },
+        {
+          "source_id": "FISRC-8972e9b03b93424b",
+          "source_url": "https://news.pedaily.cn/202608/568235.shtml",
+          "source_title": "PureblueAI清蓝完成数千万元天使+轮融资，GEO数字员工正式上线",
+          "source_content_hash": "e7174a459de024f7",
+          "quote": "本轮融资由 上海半导体产投、九方智投 等机构共同投资。",
+          "quote_hash": "701337cfdc3c7df411585f8017f645e9f924273e626da90bdc3186b5cbdcba71"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

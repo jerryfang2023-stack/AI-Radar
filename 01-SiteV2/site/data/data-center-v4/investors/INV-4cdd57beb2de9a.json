@@ -137,7 +137,7 @@
       }
     ],
     "public_profile": {
-      "summary": "The Rockefeller Foundation 是慈善基金会，其项目相关投资（PRI）包括债权、股权和担保，用于支持基金会的慈善目标。",
+      "summary": "The Rockefeller Foundation 是慈善基金会，其捐赠基金由内部投资团队管理，并通过投资经理配置美国及全球公开市场和私募市场。其项目相关投资（PRI）包括债权、股权和担保；Zero Gap Fund则是与MacArthur Foundation及Catalytic Capital Consortium合作开展的影响力投资项目。",
       "facts": [
         {
           "field": "organization_type",
@@ -150,6 +150,30 @@
           "label": "项目相关投资",
           "value": "PRI包括债权、股权和担保，服务于基金会慈善目标。",
           "source_id": "PROFILE-INV-4cdd57beb2de9a-2"
+        },
+        {
+          "field": "endowment_management",
+          "label": "官网披露的捐赠基金管理方式",
+          "value": "基金会官网称其捐赠基金由内部投资团队管理。",
+          "source_id": "PROFILE-S-INV-4cdd57beb2de9a-3"
+        },
+        {
+          "field": "endowment_markets",
+          "label": "官网披露的资产配置范围",
+          "value": "基金会官网称其通过经验丰富的管理人投资美国及全球公开市场和私募市场。",
+          "source_id": "PROFILE-S-INV-4cdd57beb2de9a-4"
+        },
+        {
+          "field": "zero_gap_strategy",
+          "label": "Zero Gap Fund官网披露的投资方式",
+          "value": "Zero Gap Fund部署灵活、长期且可承担风险的资本，以撬动支持联合国可持续发展目标的私人投资。",
+          "source_id": "PROFILE-S-INV-4cdd57beb2de9a-5"
+        },
+        {
+          "field": "zero_gap_collaboration",
+          "label": "Zero Gap Fund官网披露的合作关系",
+          "value": "该项目由The Rockefeller Foundation、MacArthur Foundation及Catalytic Capital Consortium合作开展。",
+          "source_id": "PROFILE-S-INV-4cdd57beb2de9a-6"
         }
       ],
       "milestones": [],
@@ -161,8 +185,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "按基金会官网人物介绍记录其PRI业务属性；这是使命导向的慈善投资活动，不将基金会概括为传统风险投资机构。",
+      "coverage_status": "researched",
+      "coverage_note": "基金会性质及PRI来自基金会官方人员页；捐赠基金配置和Zero Gap Fund合作关系来自基金会官网。Zero Gap Fund是合作项目，不等同于基金会自身的独立创投基金。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -194,6 +218,38 @@
           "quote_hash": "0fab70eaad38b15ea56b366e8a9e89c44cbdcb1b587c81422051e0cc9004c8a4"
         },
         {
+          "source_id": "PROFILE-S-INV-4cdd57beb2de9a-3",
+          "source_url": "https://www.rockefellerfoundation.org/our-grants/",
+          "source_title": "Our Grants | RF",
+          "source_content_hash": "fd8b3acce65ed9880e36ec2d7985e8977388c88245a23435ebdb6e48f3fce817",
+          "quote": "The Foundation’s endowment is managed internally by an investment team",
+          "quote_hash": "55e391c0fa7d8d4cb72d6e4b4068bfa85a9c8ca2278eb23b4f434e46895bc416"
+        },
+        {
+          "source_id": "PROFILE-S-INV-4cdd57beb2de9a-4",
+          "source_url": "https://www.rockefellerfoundation.org/our-grants/",
+          "source_title": "Our Grants | RF",
+          "source_content_hash": "fd8b3acce65ed9880e36ec2d7985e8977388c88245a23435ebdb6e48f3fce817",
+          "quote": "The Foundation works with experienced managers and invests in public and private markets in the United States and around the world.",
+          "quote_hash": "e97df169ae44c97b71134c99b02a6d5a06c4b974df4630efd18d14c805c5b7a2"
+        },
+        {
+          "source_id": "PROFILE-S-INV-4cdd57beb2de9a-5",
+          "source_url": "https://www.rockefellerfoundation.org/initiatives/zero-gap-fund/",
+          "source_title": "Zero Gap Fund | RF",
+          "source_content_hash": "43d0d42f99a9d017fcff4aa652d94b24d34584169b074e7c1f22829229ad4f3d",
+          "quote": "The Zero Gap Fund deploys flexible, patient, and risk-tolerant capital to catalyze private investment into strategies that address the UN Sustainable Development Goals.",
+          "quote_hash": "15da43f7ec8b43b802a772c6880165f5f05fdc77ace36ef35445fe7d1bebf44b"
+        },
+        {
+          "source_id": "PROFILE-S-INV-4cdd57beb2de9a-6",
+          "source_url": "https://www.rockefellerfoundation.org/initiatives/zero-gap-fund/",
+          "source_title": "Zero Gap Fund | RF",
+          "source_content_hash": "43d0d42f99a9d017fcff4aa652d94b24d34584169b074e7c1f22829229ad4f3d",
+          "quote": "an impact investing collaboration between The Rockefeller Foundation and the John D. and Catherine T. MacArthur Foundation and its Catalytic Capital Consortium",
+          "quote_hash": "85436ca2189b398fb4ced2c80b7d930e293ad9ccfe0261dbea2649ea4df0fd9a"
+        },
+        {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
           "source_title": "更正 -- Basecamp Research",
@@ -202,7 +258,7 @@
           "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

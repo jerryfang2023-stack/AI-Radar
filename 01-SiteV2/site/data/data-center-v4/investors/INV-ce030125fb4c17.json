@@ -139,33 +139,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "last_verified_at": "2026-10-05",
+      "coverage_status": "researched",
+      "coverage_note": "Manhattan West官网Form CRS及团队页支持其顾问实体、私募市场服务和风险投资团队背景。融资报道只列出品牌名称，未指明Starcloud投资涉及的具体基金、管理人或法律主体，也不代表完整组合。",
+      "summary": "Manhattan West 是提供财富管理和私募市场服务的金融机构品牌，官网披露其关联投资顾问 Manhattan West Asset Management, LLC（MWAM）及风险投资团队。Via Satellite 将 Manhattan West 列入 Starcloud 2026 年融资参与方，但没有识别具体出资载体。",
+      "facts": [
+        {
+          "field": "investment_adviser_disclosure",
+          "label": "投资顾问披露",
+          "value": "官网 Form CRS 将 Manhattan West Asset Management, LLC（MWAM）列为向 SEC 注册的投资顾问；这项法人披露本身不证明其为Starcloud的具体出资实体。",
+          "source_id": "mw_crs"
+        },
+        {
+          "field": "venture_team",
+          "label": "风险投资团队",
+          "value": "官网团队页列出 Aram Adajian 为 Venture Capital 执行董事，并称其关注人工智能、国防和太空等深科技公司。",
+          "source_id": "mw_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Via Satellite 报道将 Manhattan West 列为 Starcloud Series A 参投方；报道未说明其对应融资的哪一 tranche。",
+          "description": "Via Satellite 报道在 Starcloud 2026 年 A 轮投资人名单中列出 Manhattan West；报道未说明具体基金、投资额或法律主体。",
+          "source_id": "starcloud_series_a"
+        },
+        {
+          "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮参投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f80a0b6f2f7f63f8"
         }
       ],
       "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-f80a0b6f2f7f63f8",
-          "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
-          "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans - Via Satellite",
-          "source_content_hash": "371dea10d0160b19f7af02856d9341032c72d638ef347dfaabbaaf6b82be34e8",
-          "quote": "Other investors included NFX , Nebular , Y Combinator , Adjacent , 776 Ventures , Fuse Ventures , Manhattan West , and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
-          "quote_hash": "018ee389325aac0cf89b073b78322826303329ed1f9a5d8a147f9008928211c7"
-        }
-      ],
-      "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "官网披露其投资顾问及风险投资团队背景；公开融资名单中的投资载体仍未确认。",
+      "sources": [
+        {
+          "source_id": "mw_crs",
+          "source_url": "https://manhattanwest.com/form-crs",
+          "source_title": "Form CRS | Manhattan West",
+          "source_content_hash": "57d1528ce5e0cdaf48bfdaf4c58e70ec06b2b478e925e6af4753cab2526b4c32",
+          "quote": "Manhattan West Asset Management, LLC (“MWAM”) is registered with the Securities and Exchange Commission (SEC) as an investment adviser.",
+          "quote_hash": "c6b6f5c8a887c77330bcef3c537c489cd052ddbe43cde8a2ca79326282220011"
+        },
+        {
+          "source_id": "mw_team",
+          "source_url": "https://manhattanwest.com/team",
+          "source_title": "Team | Manhattan West",
+          "source_content_hash": "ae8d028709d9dabe59b25ba8d420d61a500869d027223ce427931dc053914ae8",
+          "quote": "Aram Adajian, Executive Director of Venture Capital, focuses on companies at the forefront of deep technology, including AI, defense, and space.",
+          "quote_hash": "1c1c1b013951e60e5cf903c525f3a59cf75d83c9551df3b16566984cf17917ed"
+        },
+        {
+          "source_id": "starcloud_series_a",
+          "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+          "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans - Via Satellite",
+          "source_content_hash": "371dea10d0160b19f7af02856d9341032c72d638ef347dfaabbaaf6b82be34e8",
+          "quote": "Fuse Ventures , Manhattan West , and Monolith Power Systems",
+          "quote_hash": "2c2d7bebc7268b190678f65719a08031c2443ce37913112629939fd1b6a73b5a"
+        },
+        {
+          "source_id": "FISRC-f80a0b6f2f7f63f8",
+          "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+          "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
+          "source_content_hash": "a7c980dcd5f3e30f",
+          "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
+          "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
+        }
+      ]
     },
     "translations": {
       "zh-CN": {

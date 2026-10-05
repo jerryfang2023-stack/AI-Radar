@@ -123,10 +123,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "参投关系依据晶能微电子官网；具体法律主体及其其他投资活动未确认。",
-      "summary": "晶能微电子官网披露其 2023 年 A 轮融资由高榕资本领投，厦门建发等机构跟投。本档只记录该项公司官网披露，不推断具体集团下属出资主体。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "参投关系采用晶能微电子官网；建发集团及其新兴投资平台背景采用建发集团官网。集团、上市公司和基金管理平台不互相替代。",
+      "summary": "晶能微电子官网披露，厦门建发参与其2023年A轮融资。建发集团官网将建发新兴投资描述为集团旗下专业权益类资产管理机构，但被投企业公告没有说明该笔投资由哪个建发主体出资，本档保留集团公开名称而不作子公司归因。",
+      "facts": [
+        {
+          "field": "reported_investor_name",
+          "label": "被投企业官网披露的投资方名称",
+          "value": "晶能微电子官网将“厦门建发”列为其A轮跟投机构。",
+          "source_id": "PROFILE-S-INV-691ace10d8893b-2"
+        },
+        {
+          "field": "group_investment_platform",
+          "label": "建发新兴投资官网披露的平台定位",
+          "value": "建发新兴投资官网称其是建发集团旗下专业的权益类资产管理机构。",
+          "source_id": "PROFILE-S-INV-691ace10d8893b-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -143,9 +156,25 @@
           "source_content_hash": "5aa1305f5b4326afd842cbeac5a1953c5c4368555d3c33ca378c310fd5c0b72e",
           "quote": "研车规级SiC产品流片成功 2023 2023年12月，完成A+轮融资，由温岭九龙汇领投，余杭国投、钱江摩托跟投 2023年7月，两款自研车规级FRD产品流片成功 2023年6月，完成A轮融资，由高榕资本领投，吉利资本、厦门建发等数十家机构跟投 2023年5月，温岭基地产线扩建、秀洲基地建设签约 2023年3月，首款自研车规级IGBT产品流片成功 2022 2022年11月，完成Pre-A轮融资由华登国际领投，高榕资本、矽芯投资等跟投 2022年6月，晶能与余杭区政府协议签署，以模块厂建设为起步业务，逐步拓展到芯片设计、系统集成等 公司荣誉 2024年4月24日～25日 由民建中央、中国科协指导，民建浙江省委会、中国投资发展促进会联合办的第八届万物生长大会在杭州举办。晶能",
           "quote_hash": "b0fda855c7540686341d81182fda50bf5b4dc76c920b0ceb908451dc9c5836eb"
+        },
+        {
+          "source_id": "PROFILE-S-INV-691ace10d8893b-2",
+          "source_url": "https://www.geener.cn/energy/company",
+          "source_title": "公司概况-晶能微电子",
+          "source_content_hash": "5aa1305f5b4326afd842cbeac5a1953c5c4368555d3c33ca378c310fd5c0b72e",
+          "quote": "完成A轮融资，由高榕资本领投，吉利资本、厦门建发等数十家机构跟投",
+          "quote_hash": "8f3dbabe31437ea80de2d8873f761f014ae9e708a086da4a8c5fd0b961768211"
+        },
+        {
+          "source_id": "PROFILE-S-INV-691ace10d8893b-3",
+          "source_url": "https://www.jianfacapital.com/",
+          "source_title": "厦门建发新兴投资",
+          "source_content_hash": "c48e6c522665027cc3ca9b7f44eeb07d1d37d025a453a27ba64d5af3e8cb8c2d",
+          "quote": "建发新兴投资是建发集团旗下专业的权益类资产管理机构",
+          "quote_hash": "25ca77b3fe5ec8f5680ce0bef4a83446d7fdb08b2d90bfc6920ca3267d75d0ec"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

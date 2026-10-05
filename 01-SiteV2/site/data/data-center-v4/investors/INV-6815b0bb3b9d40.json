@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "融资参与关系依据 Factorial 官方公告；不据此推断完整投资组合。",
-      "summary": "Factorial 官方融资公告将 Four Rivers 列为其 Series D 参与方。本档只记录该项公开披露。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资机构定位来自 Four Rivers 官网；Factorial 的投资关系来自被投企业官方公告。没有使用名称相近的房地产投资公司的资料。",
+      "summary": "Four Rivers 官网将其描述为管理多类基金的全球科技风险投资机构，业务覆盖早期投资、成长期投资和二级份额投资。Factorial 官方 Series D 公告将 Four Rivers 列为本轮投资方。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露的机构类型",
+          "value": "Four Rivers 官网称其为管理多类基金的全球科技风险投资机构。",
+          "source_id": "PROFILE-S-INV-6815b0bb3b9d40-2"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "官网披露的投资阶段",
+          "value": "Four Rivers 官网称其种子基金在公司成立早期提供首笔机构资本。",
+          "source_id": "PROFILE-S-INV-6815b0bb3b9d40-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -160,9 +173,25 @@
           "source_id": "PROFILE-34a2a2402aefe80d6301",
           "source_url": "https://factorial.es/blog/factorial-cierra-una-ronda-serie-d-150-millones-dolares-alcanza-valoracion-2500-millones/",
           "source_title": "Factorial cierra una ronda Serie D de 150M$ y alcanza una valoración de 2.500 millones",
-          "source_content_hash": "13daa1ca8556a54e4069bd14c16118a1acaffc4eda9555f72ffecf4f30cf99ed",
+          "source_content_hash": "b156cff746063d6f77eb4284ca60f78f0d562595baeb410a2221e9f394b53fcd",
           "quote": "iza su primera inversión en capital (equity) en nuestra compañía, sumándose a otros inversores como Atomico y Four Rivers. Además de la ronda de capital, General Catalyst va a aportar hasta 540 millones de dólares adicionales a través de su Customer Value Fund . Esto eleva nuestro capital no dilutivo comprometido a más de 700 millones de",
           "quote_hash": "79bed54f6f81619c6c9fed6521c6ba7f07a74c758bb95a0d89f4c937ac3bb470"
+        },
+        {
+          "source_id": "PROFILE-S-INV-6815b0bb3b9d40-2",
+          "source_url": "https://fourriversgroup.com/",
+          "source_title": "Home - Four Rivers Group",
+          "source_content_hash": "bd868e600857ecfee374baf3d3c9751a020cb42beb1ad56e113f28edc86e5d7d",
+          "quote": "Four Rivers is a technology focused global venture capital firm with multiple fund categories under management",
+          "quote_hash": "7688d1ec934251f44d6623e511e6f90fb26b5a59c003813501dac4a27926e8d4"
+        },
+        {
+          "source_id": "PROFILE-S-INV-6815b0bb3b9d40-3",
+          "source_url": "https://fourriversgroup.com/",
+          "source_title": "Home - Four Rivers Group",
+          "source_content_hash": "bd868e600857ecfee374baf3d3c9751a020cb42beb1ad56e113f28edc86e5d7d",
+          "quote": "Our seed funds invest first institutional capital at the earliest stages",
+          "quote_hash": "1376ff9f5ab28ddfffd23d85dc76aa49767dce794d04d16c2281e7b5055200cb"
         },
         {
           "source_id": "FISRC-e9a8d571db654fd4",
@@ -173,7 +202,7 @@
           "quote_hash": "114b77c16789092678fc784bbcd2ba7b7656bfc87d84213e020d5696b43e0fc6"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -123,19 +123,50 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "DVx Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 DVx 官网；对 Atomic 的孵化及支持关系来自 Atomic 融资公告，未推断该支持所对应的基金、轮次或金额。",
+      "summary": "DVx 官网将自身描述为从概念到规模化创建企业的平台；Atomic 融资公告称 DVx 孵化该公司，并从早期持续支持。本档记录公司创建平台定位及 Atomic 的公开支持关系，不将 DVx 描述成传统基金。",
+      "facts": [
+        {
+          "field": "self_described_model",
+          "label": "官网自述的组织模式",
+          "value": "DVx 官网将其定位为从概念到规模化创建企业的平台。",
+          "source_id": "PROFILE-B6-INV-88bf06f775c1cf-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Atomic 融资公告称 DVx 孵化了 Atomic，并从公司早期持续支持该企业；未公开具体投资载体和轮次金额。",
+          "source_id": "PROFILE-B6-INV-88bf06f775c1cf-2"
+        },
         {
           "description": "融资来源记录：Atomic · 历史轮次未披露 · 种子轮及早期投资方，本轮未明确披露继续参与。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d4e6ae2384112548"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-B6-INV-88bf06f775c1cf-1",
+          "source_url": "https://www.dvx.ventures/",
+          "source_title": "DVx Ventures | A Better Way To Build Companies",
+          "source_content_hash": "ba227ef409e5bb6d66fe28c216aad32757827cd92799298705798e955761d7ab",
+          "quote": "DVx is a company creation platform with a unique approach to building companies – from concept to scale.",
+          "quote_hash": "f8cbd7650e6cffc1f06ba04e9ebee8484e6ca7c3b84814ec9ac5da93747da905"
+        },
+        {
+          "source_id": "PROFILE-B6-INV-88bf06f775c1cf-2",
+          "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",
+          "source_title": "Atomic Raises $12.5M to Build the AI Control System for Physical Goods Companies",
+          "source_content_hash": "84d381c2c593cc932b50690ee153061eb96f0fa65aded47fff819d1f5a02f6f8",
+          "quote": "DVx incubated Atomic and has backed the company since its earliest days.",
+          "quote_hash": "ba4c4cc57ac12e37b867672513e3687aafcad590c4dd7f84ca724ae81f9370f6"
+        },
         {
           "source_id": "FISRC-d4e6ae2384112548",
           "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",

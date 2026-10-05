@@ -371,16 +371,31 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "背景来源为 36 氪投资机构库；松禾官网本次因 TLS/连接失败未能抓取，因此不采用页面中的管理规模等动态数据，待后续补充官方页面核验。",
+      "summary": "36 氪投资机构库将松禾资本列为 VC/LP，资料称其由厉伟、罗飞于 1997 年发起创立，主要投向早期和成长期的数字科技、精准医疗及创新材料项目。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1997",
+          "source_id": "PROFILE-COLLECT-INV-cf653bc36bca53-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期和成长期",
+          "source_id": "PROFILE-COLLECT-INV-cf653bc36bca53-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "数字科技、精准医疗、创新材料",
+          "source_id": "PROFILE-COLLECT-INV-cf653bc36bca53-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "公开融资来源将其列为 芯光界 多轮融资 本轮参投。",
-          "source_id": "FISRC-09a0a8d8826c2cfe"
-        },
         {
           "description": "公开融资来源将其列为 科辉智药（Artivila Biopharma） A轮 本轮领投。",
           "source_id": "FISRC-dd4073b84f3b363b"
@@ -394,20 +409,20 @@
           "source_id": "PROFILE-ce790663abce50b262f4"
         },
         {
+          "description": "36 氪投资机构库将商汤科技、华大基因、开拓药业、德方纳米和大疆列为松禾资本部分成员企业案例。",
+          "source_id": "PROFILE-COLLECT-INV-cf653bc36bca53-2"
+        },
+        {
+          "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-09a0a8d8826c2cfe"
+        },
+        {
           "description": "融资来源记录：壁仞科技 · 历史轮次未披露 · A轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-081c8476182d3ff7"
         }
       ],
       "contacts": [],
       "sources": [
-        {
-          "source_id": "FISRC-09a0a8d8826c2cfe",
-          "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
-          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿 | 投中网",
-          "source_content_hash": "07769d7354864bacbc3aca99d89b0c60720a78c93e72560ce8ed28387a4b4245",
-          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
-          "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
-        },
         {
           "source_id": "FISRC-dd4073b84f3b363b",
           "source_url": "https://artivila.com/cn_news/details-17.html",
@@ -431,6 +446,30 @@
           "source_content_hash": "764458712542e44d8e26779e2c875c832845778acfd3633274c85c2738c7148c",
           "quote": "本轮融资由同创伟业、钧山资本、英诺天使、松禾资本共同参与。",
           "quote_hash": "64e4bc61fd7f4a5db29a0372e26114b1c6efe9476ea1bfd24435644655fce9f4"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-cf653bc36bca53-1",
+          "source_url": "https://pitchhub.36kr.com/organization/1678220067648514",
+          "source_title": "松禾资本 | 投资机构信息-36氪",
+          "source_content_hash": "b2906d5d469dd2c4bec44721e41853da712658062e4921e64f300ba1951f4b1b",
+          "quote": "松禾资本，1997年由厉伟和罗飞先生发起创立。核心团队具有20多年的科技投资经历，亲历中国科技发展，对行业有着清晰研判。长期发掘并推动中国科技创新创业，致力于成为具有全球影响力的科技投资机构。松禾资本专注于早期和成长期投资，重点投资数字科技、精准医疗、创新材料三大硬科技领域。",
+          "quote_hash": "4aed0befb27937ceac7deb7f9360c9d2a731b20c4e99c3baf3ad06c1047c4c4d"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-cf653bc36bca53-2",
+          "source_url": "https://pitchhub.36kr.com/organization/1678220067648514",
+          "source_title": "松禾资本 | 投资机构信息-36氪",
+          "source_content_hash": "b2906d5d469dd2c4bec44721e41853da712658062e4921e64f300ba1951f4b1b",
+          "quote": "部分成员企业包括商汤科技（00020.HK）、华大基因（300676）、开拓药业（09939.HK）、德方纳米（300769）、大疆创新等。",
+          "quote_hash": "001f4a613711771dd479574d3fa999e30f91b8ece39ca5cd9d162b91ac9f22de"
+        },
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+          "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
         },
         {
           "source_id": "FISRC-081c8476182d3ff7",

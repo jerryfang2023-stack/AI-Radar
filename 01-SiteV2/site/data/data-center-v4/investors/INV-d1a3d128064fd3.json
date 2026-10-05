@@ -123,50 +123,73 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资关系与企业持股信息来自钛媒体报道，后者引用工商变更资料。来源把北京智谱华章科技有限公司标注为智谱 AI；未证实是否存在与该名称相独立的投资基金或出资载体。",
-      "summary": "钛媒体报道将“智谱 AI”列为清程极智首轮数千万元融资的参投方，并援引工商变更称北京智谱华章科技有限公司持股2.1673%。未披露该笔出资金额；本档案按报道使用的智谱 AI 名称记录。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司背景和当前法定公司名称据智谱官网；清程极智持股案例来自钛媒体报道，按单一公开案例记录，不代表完整投资组合。",
+      "summary": "智谱（Z.AI）是由清华大学计算机系知识工程实验室技术成果转化而来的人工智能公司，官网记载成立于 2019 年，并以大模型研发为核心。钛媒体报道将北京智谱华章科技有限公司（智谱 AI）列为清程极智股东之一；该报道显示的持股比例为 2.1673%。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2019",
+          "source_id": "B24-ZHIPU-OFFICIAL"
+        },
+        {
+          "field": "organization_type",
+          "label": "业务定位",
+          "value": "由清华大学知识工程实验室技术成果转化而来的大模型公司。",
+          "source_id": "B24-ZHIPU-OFFICIAL"
+        },
+        {
+          "field": "legal_name",
+          "label": "官网列示公司名称",
+          "value": "北京智谱华章科技股份有限公司。",
+          "source_id": "B24-ZHIPU-COMPANY"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "钛媒体称智谱 AI 参与清程极智首轮数千万元融资，并称工商变更显示北京智谱华章科技有限公司持股2.1673%；未披露智谱 AI 的单独出资金额。",
-          "source_id": "qingcheng-zhipu-angel-investment-2024"
+          "description": "钛媒体报道显示，北京智谱华章科技有限公司（智谱 AI）持有清程极智 2.1673% 股权；按该报道记录。",
+          "source_id": "B24-ZHIPU-INVESTMENT"
         },
         {
           "description": "融资来源记录：北京清程极智科技有限公司 · 历史轮次未披露 · 天使轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-178895bbb061ef5a"
         }
       ],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "投资关系与企业持股信息来自钛媒体报道，后者引用工商变更资料。来源把北京智谱华章科技有限公司标注为智谱 AI；未证实是否存在与该名称相独立的投资基金或出资载体。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.zhipuai.cn/",
+          "url": "https://www.zhipuai.cn/",
+          "source_id": "B24-ZHIPU-OFFICIAL"
+        }
+      ],
       "sources": [
         {
-          "source_id": "qingcheng-zhipu-investor-identity",
-          "source_url": "https://www.tmtpost.com/7009389.html",
-          "source_title": "钛媒体独家｜智谱 AI 参投“清程极智”首轮融资，其入股企业已超10家-钛媒体官方网站",
-          "source_content_hash": "d93de2f0d1a5ec12824354eba4ccc5d21cc19fe7d152e6c93c64f1577edddf0e",
-          "quote": "北京智谱华章科技有限公司（智谱 AI）",
-          "quote_hash": "a7da7f94449001a4b2295be14bb4a24ec5146e5bd930681962ba0017901852f7"
+          "source_id": "B24-ZHIPU-OFFICIAL",
+          "source_url": "https://www.zhipuai.cn/zh/about",
+          "source_title": "Z.ai - Inspiring AGI to Benefit Humanity",
+          "source_content_hash": "e2c92ee59d2e915af6f44f025aee576e976706e3a4f6439aa2416accf989956d",
+          "quote": "智谱（Z.AI）成立于 2019 年，由清华大学计算机系知识工程实验室（KEG）技术成果转化而来",
+          "quote_hash": "99074a1f02be6dd88fb6ff79c1377636bb037c99b41aa68c1ad9b1814c5ab76a"
         },
         {
-          "source_id": "qingcheng-zhipu-angel-investment-2024",
-          "source_url": "https://www.tmtpost.com/7009389.html",
-          "source_title": "钛媒体独家｜智谱 AI 参投“清程极智”首轮融资，其入股企业已超10家-钛媒体官方网站",
-          "source_content_hash": "d93de2f0d1a5ec12824354eba4ccc5d21cc19fe7d152e6c93c64f1577edddf0e",
-          "quote": "日前参与投资清华系 AI Infra 系统软件公司",
-          "quote_hash": "f555967f2dd11381b4bd30b4bb9db61fb055a2e2bbd417f0abdf7705ef5e61ea"
+          "source_id": "B24-ZHIPU-COMPANY",
+          "source_url": "https://www.zhipuai.cn/zh/about",
+          "source_title": "Z.ai - Inspiring AGI to Benefit Humanity",
+          "source_content_hash": "e2c92ee59d2e915af6f44f025aee576e976706e3a4f6439aa2416accf989956d",
+          "quote": "北京智谱华章科技股份有限公司",
+          "quote_hash": "a797dd8a29ef0fd70883927a5b82f9e6f253393681f3c38c68356ad8dbd7a18c"
         },
         {
-          "source_id": "qingcheng-zhipu-equity-record-2024",
+          "source_id": "B24-ZHIPU-INVESTMENT",
           "source_url": "https://www.tmtpost.com/7009389.html",
           "source_title": "钛媒体独家｜智谱 AI 参投“清程极智”首轮融资，其入股企业已超10家-钛媒体官方网站",
-          "source_content_hash": "d93de2f0d1a5ec12824354eba4ccc5d21cc19fe7d152e6c93c64f1577edddf0e",
-          "quote": "持股比例达2.1673%",
-          "quote_hash": "81f12bc2214343f219989f777f4999611877b627807b7a16a74bbbc7a2b656d1"
+          "source_content_hash": "d71514acf51a1770ea4bd3198f05da248fe9ad59eed1078083051c8f06a5c21d",
+          "quote": "北京智谱华章科技有限公司（智谱 AI）等实体，并显示智谱 AI 在该公司的持股比例达2.1673%。",
+          "quote_hash": "5df036e085c55fc08951f8cc8aad501c81fcb9fc283f28fdb6755cae500f463d"
         },
         {
           "source_id": "FISRC-178895bbb061ef5a",
@@ -177,7 +200,11 @@
           "quote_hash": "ecbb6e661efeeaa58a258a6042bb6452d716965644ca36b33e9ce80730d190f3"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "智谱（Z.AI）是由清华大学计算机系知识工程实验室技术成果转化而来的人工智能公司，官网记载成立于 2019 年，并以大模型研发为核心。钛媒体报道将北京智谱华章科技有限公司（智谱 AI）列为清程极智股东之一；该报道显示的持股比例为 2.1673%。"
     }
   }
 }

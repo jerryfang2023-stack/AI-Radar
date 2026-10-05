@@ -140,35 +140,65 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动及来源明确记载的身份信息，不补写未经核实的职业经历或个人出资金额。",
-      "summary": "Archestra 于 2026 年 6 月公布种子轮时，将 Mark Goldberger 列为个人支持者之一，并标注其为 Metaview 销售副总裁；未披露其个人出资额。",
-      "current_roles": [
+      "coverage_status": "researched",
+      "coverage_note": "姓名与 Metaview 职务由 Archestra 融资公告及 The Crew 访谈整理交叉核对。职业经历据访谈整理页所述；页面未给出各岗位的准确起止日期，也未披露教育机构或学历，故不补写。",
+      "summary": "Mark Goldberger 是 Metaview 销售副总裁。The Crew 的访谈整理介绍了他从葡萄酒行业转入科技销售、在 TripActions 与 Ramp 的工作经历。Archestra 的融资公告将其列为 2026 年 6 月种子轮个人支持者之一；未披露个人出资额。",
+      "facts": [
         {
-          "title": "VP Sales",
-          "organization": "Metaview",
-          "source_id": "archestra-mark-goldberger-seed-2026"
+          "field": "current_role",
+          "label": "现任职务",
+          "value": "The Crew 于2026年7月的访谈整理将 Mark Goldberger 列为 Metaview 销售副总裁。",
+          "source_id": "mark_crew_interview"
         }
       ],
-      "career": [],
-      "education": [],
-      "experience_summary": "Mark Goldberger 与 Metaview 的职务关联依据 Archestra 公司公告；未补充未经来源支持的任职时间或其他履历。",
+      "milestones": [],
       "track_record": [
         {
-          "description": "Archestra 的种子轮公告列 Mark Goldberger（VP Sales at Metaview）为个人支持者之一；未披露个人出资额。",
-          "source_id": "archestra-mark-goldberger-seed-2026"
+          "description": "Archestra 2026年6月融资公告将 Mark Goldberger（Metaview 销售副总裁）列为 $10M 种子轮支持者之一；未披露个人出资额。",
+          "source_id": "mark_archestra_seed"
         },
         {
           "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "VP of Sales",
+          "organization": "Metaview",
+          "source_id": "mark_crew_interview"
+        }
+      ],
+      "career": [
+        {
+          "organization": "TripActions (now Navan)",
+          "title": "Founding enterprise account executive",
+          "period": "起止时间未披露；经历涉及新冠疫情期间",
+          "description": "The Crew 访谈整理称其担任创始企业客户经理并负责商务旅行销售。",
+          "source_id": "mark_crew_interview"
+        },
+        {
+          "organization": "Ramp",
+          "title": "负责企业销售（报道未给正式职称）",
+          "period": "约两年半；起止时间未披露",
+          "description": "The Crew 访谈整理称其负责企业销售约两年半。",
+          "source_id": "mark_crew_interview"
+        }
+      ],
+      "education": [],
+      "experience_summary": "公开资料支持其企业软件销售经历，以及在 TripActions、Ramp 和 Metaview 的角色；教育经历未披露。",
       "sources": [
         {
-          "source_id": "archestra-mark-goldberger-seed-2026",
+          "source_id": "mark_crew_interview",
+          "source_url": "https://www.withcrew.blog/p/don-t-take-the-anthropic-sales-job-first-with-mark-goldberger-vp-of-sales-metaview",
+          "source_title": "Don’t Take The Anthropic Sales Job First with Mark Goldberger, VP of Sales @ Metaview - The Crew Podcast",
+          "source_content_hash": "e2b565d4e5fb4ab9206a500f1dad4e16a96b3e0cb22026032633f82efd500dfb",
+          "quote": "Mark Goldberger is the VP of Sales at Metaview",
+          "quote_hash": "e41629af7442d9e4cc7d79bc44080c48e60b8a32492b0f404b07d278bd2f8c00"
+        },
+        {
+          "source_id": "mark_archestra_seed",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
           "source_title": "Archestra.AI announces $10M seed 🎉 | Blog | Archestra",
           "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",
@@ -184,7 +214,7 @@
           "quote_hash": "c5a82a11e227f795051ce3c941eb38e58b0742626ad13da55457ebedb5a251f2"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

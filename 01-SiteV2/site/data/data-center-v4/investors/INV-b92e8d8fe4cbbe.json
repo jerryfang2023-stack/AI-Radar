@@ -139,30 +139,73 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "NeuralTrust 官方公告将 Finaves 列为种子轮投资方，并说明其为 IESE 商学院的风险投资基金。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构历史、阶段及策略来自 IESE 官网；NeuralTrust 融资活动来自公司官方公告，未披露 Finaves 单独金额。",
+      "summary": "IESE 商学院官网介绍，Finaves 自 2000 年起支持 IESE 社群及西班牙创业生态中的新企业；当前投资范围为 Seed 与 Pre-Series A，通常通过与其他 VC 联合投资。NeuralTrust 官方公告将其列为 2026 年 seed 轮参与方。",
+      "facts": [
+        {
+          "field": "fund_origin",
+          "label": "机构背景",
+          "value": "IESE 商学院创业生态中的风险投资平台，成立于 2000 年",
+          "source_id": "PROFILE-B12-INV-b92e8d8fe4cbbe-2"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Seed、Pre-Series A",
+          "source_id": "PROFILE-B12-INV-b92e8d8fe4cbbe-3"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资方式",
+          "value": "与其他 VC 联合投资",
+          "source_id": "PROFILE-B12-INV-b92e8d8fe4cbbe-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "参与 NeuralTrust 种子轮。",
-          "source_id": "PROFILE-bb68c829406573dabc5c"
+          "source_id": "PROFILE-B12-INV-b92e8d8fe4cbbe-1"
         },
         {
           "description": "融资来源记录：NeuralTrust · 种子轮 · 2026-06-17 · 本轮参投 · €17.2 million ($20 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a0d2741d3dddcef"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.iese.edu/entrepreneurship/finaves/",
+          "source_id": "PROFILE-B12-INV-b92e8d8fe4cbbe-2"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-bb68c829406573dabc5c",
+          "source_id": "PROFILE-B12-INV-b92e8d8fe4cbbe-1",
           "source_url": "https://neuraltrust.ai/news/neuraltrust-raises-20m",
           "source_title": "NeuralTrust raises $20M to secure the growing swarm of AI agents in the enterprise | NeuralTrust",
           "source_content_hash": "2fb2a80a458d4e07ef6a2e1d26d967064b17ab43b719d7ae88a18554eb158343",
           "quote": "h participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves, the venture capital fund of IESE Business School. NeuralTrust is also backed by public funding from the European Innovation Council and Spain&#x27;s State Research Agency (AEI). Agentic adoption is outpacing governance The investment arrives",
           "quote_hash": "cf4184dddeedadc7e88c2cfac44a91ff95834e548c38bfa247f5cca67b59e68b"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b92e8d8fe4cbbe-2",
+          "source_url": "https://www.iese.edu/entrepreneurship/finaves/",
+          "source_title": "Finaves | IESE Business School",
+          "source_content_hash": "a1681cf3845a2800733a995df0a459fceaa131a55c572c4e55b6658decc778ea",
+          "quote": "Since the year 2000, Finaves has served as a platform for ventures born within the IESE community",
+          "quote_hash": "320cdfd771683148b1f18d4c5b5220824643a0ec69c2f3276b9da56fed3a3f72"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b92e8d8fe4cbbe-3",
+          "source_url": "https://www.iese.edu/entrepreneurship/finaves/",
+          "source_title": "Finaves | IESE Business School",
+          "source_content_hash": "a1681cf3845a2800733a995df0a459fceaa131a55c572c4e55b6658decc778ea",
+          "quote": "Our investment thesis: Stage: Seed and Pre-Series A Tickets: €100k – €500k Strategy: Co-investment with other VCs Sector and business model: Agnostic Geography: Spain",
+          "quote_hash": "0b3f76cb502af1d6e529f02aea59230b614d2f2bda0ec150fa1e99a5ba4cf939"
         },
         {
           "source_id": "FISRC-7a0d2741d3dddcef",
@@ -173,7 +216,7 @@
           "quote_hash": "dca11ab868424ee1c0ff1f55ca217b2f805736f2e190b9c75d8a4b983e41efbb"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -140,15 +140,22 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "Paper 官方 Series A 公告将 WorkOS CEO Michael Grinich 列为新投资者。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "WorkOS创始人身份来自公司官方博客；对 Paper 的投资参与来自 Paper 官方融资公告，未披露个人出资金额。",
+      "summary": "WorkOS官方内容确认 Michael Grinich 是该公司的创始人；Paper 官方 Series A 公告将其列为该轮新投资者。此处仅记录公开可核实的公司身份与投资示例，不推定其使用个人或基金载体。",
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "公司职务",
+          "value": "WorkOS官方博客将 Michael Grinich 称为公司创始人。",
+          "source_id": "PROFILE-B11-INV-adcfa4feb7a7e4-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Paper 官方公告将 WorkOS CEO Michael Grinich 列为 Series A 新投资者。",
-          "source_id": "PROFILE-168e5dab26f9a71fb26c"
+          "description": "Paper官方公告将 Michael Grinich 列为 Series A 新投资者；未披露其单独投资金额。",
+          "source_id": "PROFILE-B11-INV-adcfa4feb7a7e4-2"
         },
         {
           "description": "融资来源记录：Paper · A轮 · 2026-07-23 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -158,12 +165,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-168e5dab26f9a71fb26c",
+          "source_id": "PROFILE-B11-INV-adcfa4feb7a7e4-1",
+          "source_url": "https://workos.com/blog/workos-aie-worlds-fair-2026-recap",
+          "source_title": "Lifestyles of the AI-Native: WorkOS at the AI Engineer World&#x27;s Fair 2026 — WorkOS",
+          "source_content_hash": "ac0e11b087b83430c2377cd4bbe652807a9ec6d46922293d5327b4d29b5c1161",
+          "quote": "WorkOS founder Michael Grinich gave a talk on the mainstage.",
+          "quote_hash": "538980bea0c2856112db14d7c853b9198b58f86390049b662a0229d9e1d43900"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-adcfa4feb7a7e4-2",
           "source_url": "https://paper.design/blog/series-a",
           "source_title": "Paper raises $34M to build the next great design platform",
-          "source_content_hash": "b803663eb5a2557c8d9cb9dbb5e85c1b8cedcbab7d7086b2de4a3841eff309c5",
-          "quote": "er has raised $34M in our Series A financing from Accel and ICONIQ . We welcome new investors Designer Fund , Michael Grinich (CEO WorkOS ), Anton Osika (CEO Lovable ), engineers and designers from Anthropic and OpenAI, and more, alongside renewed support from Basecase , David Hoang , and Guillermo Rauch . This brings Paper ’s total fundi",
-          "quote_hash": "0139d553065e0105b8ef66134989f836e95ccbabc9daa44469cc851a673834d4"
+          "source_content_hash": "e928b4740127d2f7c54a3c89ecc7fff30cbff2bb24da81e1bfc2ac005c377d94",
+          "quote": "We welcome new investors Designer Fund, Michael Grinich (CEO WorkOS), Anton Osika (CEO Lovable)",
+          "quote_hash": "02cb14f0982d5149f18331f620dbfeaff95c7108fe84c003b102ef768a7a3ed2"
         },
         {
           "source_id": "FISRC-545ac2658d68b038",
@@ -174,7 +189,7 @@
           "quote_hash": "06d37cff58cae8dfba7d4a86134b8a599d7d5558bcef8463419b907a16fb18bf"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

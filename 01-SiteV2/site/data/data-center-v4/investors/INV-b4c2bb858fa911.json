@@ -209,10 +209,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "公开材料分别核实其参与 Throne Science Series A 和 World Labs 新一轮融资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "风险投资业务与方向来自 Emerson Collective 官网；World Labs 融资参与来自项目方公告，Throne Science 参与记录来自 Crunchbase News。公开案例不代表完整组合。",
+      "summary": "Emerson Collective 官网将其风险投资团队描述为跨阶段投资者，关注能源与环境、数字健康、金融科技、教育、工作及媒体等领域。World Labs 官方公告将其列为新一轮融资的投资方；另有 Throne Science 融资报道。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露的风险投资阶段",
+          "value": "Emerson Collective 官网称其与跨阶段、带来长期影响且具备风险投资回报潜力的公司合作。",
+          "source_id": "PROFILE-COLLECT-INV-b4c2bb858fa911-J-3"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "官网列出的风险投资方向包括能源与环境、数字健康、金融科技、教育、工作和媒体。",
+          "source_id": "PROFILE-COLLECT-INV-b4c2bb858fa911-J-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -234,7 +247,7 @@
           "source_id": "FISRC-2c2bafaec002c33e",
           "source_url": "https://news.crunchbase.com/health-wellness-biotech/throne-science-microbiome-gut-health-toilet-camera-startup-john-capodilupo-whoop/",
           "source_title": "Exclusive: Co-Founded By Former Whoop CTO, Throne Science Raises $10M To Track Gut Health From The Toilet",
-          "source_content_hash": "ce8dcdfd1692288ccb76548855d5af5b76d23119cd647508374c01e28c0d3888",
+          "source_content_hash": "5b169ca1dfae8274e2f76a9a8a563a5374e5f94c6861e9cc052b3b4676893852",
           "quote": "ation, has raised $10 million in a Series A round led by Will Ventures , it told Crunchbase News exclusively. Emerson Collective , Workshop , LEAD VC , Salt VC , Accomplice , Moxxie Ventures , and several other investors also participated in the financing. The round brings Throne’s total funding to nearly $18 million since its 2023 inception. The startup was",
           "quote_hash": "605d9fc520717bb64a96349d37e835ec32ed5d6ac773370b4dd53be789302a05"
         },
@@ -247,6 +260,14 @@
           "quote_hash": "4f072ae0edcb0884f147556afdca4f49d8a2a79874b4150d96399f9dfdaf3873"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-b4c2bb858fa911-J-3",
+          "source_url": "https://www.emersoncollective.com/our-work/venture-capital",
+          "source_title": "Venture Capital",
+          "source_content_hash": "b89febf8c86f2df6ac5f0349f6976270e201af410dd27eb995be03ca4c6de44d",
+          "quote": "We partner with consequential companies delivering generational impact and venture-scale returns, across all stages.",
+          "quote_hash": "1b78ab9340fe7713e0df2c2db8f232d1d6d546a65930cfe9f55bd744751dccea"
+        },
+        {
           "source_id": "FISRC-2a587e714925b882",
           "source_url": "https://www.morningstar.com/news/business-wire/20260728282605/throne-science-maker-of-smart-toilet-sensor-announces-10-million-series-a-fundraise",
           "source_title": "Throne Science, Maker of Smart Toilet Sensor, Announces $10 Million Series A Fundraise",
@@ -255,7 +276,7 @@
           "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

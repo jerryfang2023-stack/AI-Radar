@@ -139,29 +139,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "Flam 融资报道将其列为 B 轮参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构类型和与 Shah Rukh Khan 的关联来自媒体报道，不是办公室自述或法人登记资料；不据此推断具体所有权、管理团队或全量投资组合。",
+      "summary": "TIGI 将“SRK Family Office”称为 Shah Rukh Khan 的 family office，并描述其涉及健康科技、教育娱乐、媒体技术、房地产和消费品牌等领域；SiliconANGLE 将 SRK Family Office 列为 Flam Series B 参与方。现有公开页面未披露该办公室的法律注册名称，档案只保留报道使用的名称及融资活动，不与其他关联公司合并。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "主体类型",
+          "value": "媒体报道所称的 Shah Rukh Khan family office；未披露法律注册名称",
+          "source_id": "PROFILE-B12-INV-b3d9e4831790ae-2"
+        },
+        {
+          "field": "reported_focus",
+          "label": "报道所述领域",
+          "value": "健康科技、教育娱乐、媒体技术、房地产及消费品牌",
+          "source_id": "PROFILE-B12-INV-b3d9e4831790ae-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "参与 Flam Series B。",
+          "source_id": "PROFILE-B12-INV-b3d9e4831790ae-1"
+        },
+        {
+          "description": "融资来源记录：Flam · B轮 · 2026-09-14 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-83ab416cf84d3f07"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-83ab416cf84d3f07",
+          "source_id": "PROFILE-B12-INV-b3d9e4831790ae-1",
           "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
           "source_title": "Flam raises $40M in funding to make AI-enabled interactive content a reality - SiliconANGLE",
-          "source_content_hash": "76714921b28c31d79c64341dc3d41de2b4868f79891db212bc0e82a44d5a573e",
+          "source_content_hash": "6d018de7e5e1c5d37128cc617cd5d0e9a4dce8826b49448487bc86f3d5240e58",
           "quote": "he round was led by QED Investors and saw the participation of Claypond Capital, Australian Gulf Capital, the SRK Family Office and angel investors Martin Chavez and Olivier Pomel, the Chief Executive Officer of Datadog Inc. Existing backers including RTP Global and Dovetail also participated in the round. Flam, which is based in San Francisco, has built a p",
           "quote_hash": "ab3a386dbcaa8282425626b61e7da4410db22579e754d3e04ff87749abc10ca4"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b3d9e4831790ae-2",
+          "source_url": "https://tigi.global/articles/numi-mythik-kidzania-the-surprising-startup-bets-of-shah-rukh-khan-s-family-office",
+          "source_title": "Numi, Mythik, KidZania — The Surprising Startup Bets of Shah Rukh Khan’s Family Office — TIGI - The Impactful Global Icon",
+          "source_content_hash": "24edff7b8ed46e7b4470952021cb2f89819c738f9211c71b9deb0b0bac1fc604",
+          "quote": "Shah Rukh Khan’s wealth isn’t just from films and IPL. His family office has been quietly building a portfolio across health tech, edutainment, media technology, real estate, and direct-to-consumer brands.",
+          "quote_hash": "2f2a6ba9d994ca1c23e4c03e20bd304006ed0fbc33ab341a08676de52f8e3f31"
+        },
+        {
+          "source_id": "FISRC-83ab416cf84d3f07",
+          "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
+          "source_title": "Flam 融资 4000 万美元，让 AI 驱动的互动内容成为现实",
+          "source_content_hash": "ea0a07ec6b5bcc758a53526933b06ed9cdc0625470f1876cb084309d46f1a06b",
+          "quote": "saw the participation of Claypond Capital, Australian Gulf Capital, the SRK Family Office and angel investors Martin Chavez and Olivier Pomel",
+          "quote_hash": "5bbc687eb304c7f93ee48df3f9465221569a81f836df93acde2db9dad59a8219"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

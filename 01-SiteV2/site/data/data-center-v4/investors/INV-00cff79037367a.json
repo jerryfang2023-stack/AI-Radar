@@ -123,11 +123,24 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "Archestra 官方资料将 Aloniq 列为早期投资伙伴，并注明其由 Mark Shmulevich 创立和管理。Archestra 的融资公告称其种子轮时获得 Aloniq 等前一轮投资者回投。",
-      "coverage_note": "机构品牌与管理者关系由被投公司官方团队页披露；历史投资关系来自 Archestra 官方融资公告。未推断 Aloniq 的法律主体名称。",
-      "facts": [],
+      "summary": "Aloniq 官网将其定位为早期深科技风险投资机构，支持从种子前到 A 轮的科技创业者，并列示 Mark Shmulevich 为普通合伙人。Archestra 官方融资公告称 Aloniq 参与其种子轮。",
+      "coverage_note": "机构定位和合伙人职务来自 Aloniq 官网；Archestra 融资关系来自发行人公告。",
+      "facts": [
+        {
+          "field": "stage_and_focus",
+          "label": "官网披露的投资阶段与方向",
+          "value": "Aloniq 支持从种子前至 A 轮的科技创业者，聚焦早期深科技。",
+          "source_id": "PROFILE-COLLECT-INV-00cff79037367a-O-3"
+        },
+        {
+          "field": "management",
+          "label": "官网披露的普通合伙人",
+          "value": "官网列示 Mark Shmulevich 为普通合伙人。",
+          "source_id": "PROFILE-COLLECT-INV-00cff79037367a-O-4"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -162,6 +175,22 @@
           "quote_hash": "3e7cca164357db212b651dbc6c66109abcc680599905b41e4fc218eadc97dbfb"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-00cff79037367a-O-3",
+          "source_url": "https://www.aloniq.com/",
+          "source_title": "Aloniq | Early-Stage Deep Tech Venture Capital",
+          "source_content_hash": "39e488a364d52720bdbaf5b8c0e0c109d57c9cfde669c1f655cae6452f06c951",
+          "quote": "Aloniq backs tech founders from pre-seed to round A",
+          "quote_hash": "ab3763451dad89d2655f294dac9ad15ede498b945136906a3121b559c53782bc"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-00cff79037367a-O-4",
+          "source_url": "https://www.aloniq.com/",
+          "source_title": "Aloniq | Early-Stage Deep Tech Venture Capital",
+          "source_content_hash": "39e488a364d52720bdbaf5b8c0e0c109d57c9cfde669c1f655cae6452f06c951",
+          "quote": "Mark Shmulevich ↗ General Partner",
+          "quote_hash": "d30568a942f65fce02d797ae9a0304a6857de18fed23256d277a4d78b7bf3d1d"
+        },
+        {
           "source_id": "FISRC-50130a45d72291a2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
           "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
@@ -170,7 +199,7 @@
           "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

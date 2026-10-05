@@ -139,41 +139,82 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "AI2 Incubator 官网说明其对外部 pre-seed/seed 公司投资；Dealroom 报道将 ai2 incubator 列为 Optimly 预种子轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网确认 AI2 Incubator 更名为 AI House，并公开孵化资金条件；GeekWire报道其参与 Optimly 的 80 万美元 pre-seed 轮。80 万美元是整轮金额，未披露 AI House 单独出资额。",
+      "summary": "AI House（前身为 AI2 Incubator）是西雅图面向 AI 创业团队的孵化器。官网公开孵化项目最高可获 60 万美元、按 1,000 万美元估值上限融资；媒体报道其参与 Optimly 的 80 万美元 pre-seed 轮，该金额为整轮融资。",
+      "facts": [
+        {
+          "field": "identity",
+          "label": "机构身份",
+          "value": "AI2 Incubator 已更名为 AI House。",
+          "source_id": "ai_house_rebrand"
+        },
+        {
+          "field": "incubator_funding_terms",
+          "label": "孵化资金条件",
+          "value": "官网称符合条件的孵化项目最高可获 600,000 美元资金，估值上限为 10,000,000 美元。",
+          "source_id": "ai_house_incubator"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为Optimly预种子轮投资方。",
+          "description": "GeekWire 报道 AI House 参与 Optimly 的 800,000 美元 pre-seed 轮；报道未披露 AI House 单独出资额。",
+          "source_id": "optimly_round"
+        },
+        {
+          "description": "融资来源记录：Optimly · 预种子轮 · 2026-07-08 · 本轮参投 · $800K。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3841e3507887d97d"
         }
       ],
-      "contacts": [],
-      "sources": [
+      "contacts": [
         {
-          "source_id": "FISRC-3841e3507887d97d",
-          "source_url": "https://app.dealroom.co/news/note/optimly-raises-800k-pre-seed-to-help-brands-shape-what-ai-says-about-them",
-          "source_title": "Optimly raises $800K pre-seed to help brands shape what AI says about them | Dealroom.co",
-          "source_content_hash": "c6896a23ec5dcc6f479d4894304a3b5a5b1df5adaa2647b05138b6b87032814a",
-          "quote": "at lets brands correct what AI chatbots say about them. Flywheel Angel Network, Mighty Capital, AI House, and ai2 incubator backed the round, which was announced in July 2026.\nThe problem: AI models rarely learn about a brand from its own website. They read Wikipedia, Reddit, reviews, and analyst write-ups, then synthesise a response when shoppers ask about ",
-          "quote_hash": "5866f5abafc303a33f53725ba74b1e382db7ef3f15051ddb7f391566940e49ac"
-        },
-        {
-          "source_id": "PROFILE-52fe193b82e12fc759b2",
-          "source_url": "https://www.ai2incubator.com/",
-          "source_title": "AI2 Incubator",
-          "source_content_hash": "8b873148fdd23548b7aaaefaff2394508a79529ef0367d04fca0ef3c2cf9f0f6",
-          "quote": "AI2 Incubator\nWe partner with top technical founders and deep domain experts to build applied AI startups that solve meaningful, real-world problems.\nOur primary focus is to collaborate with entrepreneurs on early-stage incubations. We also invest in",
-          "quote_hash": "8dd50f109a18952e5b22c9bd808e02b00a73d669adc6ee8c682a7f1ea620e9b3"
+          "kind": "website",
+          "label": "AI House 官网",
+          "value": "机构及孵化项目介绍",
+          "url": "https://aihouse.vc/",
+          "source_id": "ai_house_rebrand"
         }
       ],
-      "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": ""
+      "experience_summary": "公开资料显示其运营 AI 初创企业孵化项目；没有据此推断未公开的基金规模或单笔投资额。",
+      "sources": [
+        {
+          "source_id": "ai_house_rebrand",
+          "source_url": "https://aihouse.vc/articles/the-next-chapter",
+          "source_title": "The Next Chapter: AI2 Incubator Rebrands as AI House, Doubles Down on Seattle - AI House",
+          "source_content_hash": "ad7e8f503297bd6fb6b77763be6afc0f4bdf8d245f13db0c719f73f5fde10c99",
+          "quote": "Today, AI2 Incubator is becoming AI House ( aihouse.vc ).",
+          "quote_hash": "ae53bd6f928d2b618d31d0a058482c2bd81876ccbcd120275c9c76d02a3b294e"
+        },
+        {
+          "source_id": "ai_house_incubator",
+          "source_url": "https://aihouse.vc/incubator",
+          "source_title": "AI House Incubator",
+          "source_content_hash": "6be19e3938b1479f962f7e2ef11f14eddd7a9396ece1150a38030e1cd1c7f49a",
+          "quote": "Up to $600,000 in funding at a $10 million cap, giving founders early runway to hire, build, and validate.",
+          "quote_hash": "24b83efb92f982915fd913f10333497498e49e4319cbbbc3ea5a72cf556fbdbd"
+        },
+        {
+          "source_id": "optimly_round",
+          "source_url": "https://www.geekwire.com/2026/this-startup-lets-companies-teach-ai-about-their-brands-and-the-chatbots-are-listening/",
+          "source_title": "This startup lets companies teach AI about their brands — and the chatbots are listening",
+          "source_content_hash": "a1244a2620b913b241fc3b9068f805b2a39a628f4e9ece7b147960118151099d",
+          "quote": "Also participating in the round were Mighty Capital and AI House, the Seattle startup incubator formerly known as AI2 Incubator.",
+          "quote_hash": "d2facbdb070b7c80ebe47845265a62986def9fb0a4817889805c0a299073d695"
+        },
+        {
+          "source_id": "FISRC-3841e3507887d97d",
+          "source_url": "https://app.dealroom.co/news/note/optimly-raises-800k-pre-seed-to-help-brands-shape-what-ai-says-about-them",
+          "source_title": "Optimly 筹集 80 万美元种子前融资，帮助品牌塑造 AI 对它们的评价",
+          "source_content_hash": "590ac0f84ea7f5a7",
+          "quote": "Flywheel Angel Network, Mighty Capital , AI House , and ai2 incubator backed the round",
+          "quote_hash": "e1e31cb866ac6b862b00785d75f304a319b3adf4d6b31ec1d63d8eec7fa1506a"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

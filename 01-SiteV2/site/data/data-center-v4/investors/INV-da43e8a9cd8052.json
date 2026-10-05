@@ -180,10 +180,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构与基金顾问关系来自 Plural 官方法律页面；组合名单来自 Plural 官网。Metaview和OLIX具体融资记录来自 The SaaS News 与 SiliconANGLE，名称按官网品牌“Plural”记录。",
+      "summary": "Plural 官方法律页面将 Plural UK Management Limited 确认为其投资顾问，并说明其仅为私募风险投资基金提供投资顾问服务。其官网组合列表包含 OLIX 和 Metaview；二手融资报道也分别将 Plural 列为两家公司的投资方。",
+      "facts": [
+        {
+          "field": "legal_structure_and_business",
+          "label": "官网法律披露的投资顾问关系",
+          "value": "Plural UK Management Limited 是 Plural 的投资顾问，只为其私募风险投资基金提供投资顾问服务。",
+          "source_id": "PROFILE-COLLECT-INV-da43e8a9cd8052-M-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -209,9 +216,17 @@
           "source_id": "FISRC-b8ac45c45da22b49",
           "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment/",
           "source_title": "Photonic AI chip startup OLIX nabs $220M investment - SiliconANGLE",
-          "source_content_hash": "ab3ed9f099e16ab3bdaaa1f2fb0889e2c96228fd49ce0276ffb9e5d2080e52b8",
+          "source_content_hash": "4627b9d9b9fc83042b5fa7962d331f6373d46f3a2a11a0a23ee8f4c8396029e3",
           "quote": "The company previously raised an undisclosed amount of funding from Plural, Vertex Ventures, LocalGlobe and Entrepreneurs First.",
           "quote_hash": "d40641b698e2fe5a5d8acdc9e6f890f4c2be6865312d99aa85c5e18e6972b91d"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-da43e8a9cd8052-M-3",
+          "source_url": "https://www.pluralplatform.com/legal",
+          "source_title": "Legal | Plural",
+          "source_content_hash": "4f3676f9abf2f407bbd05dfe2d5bec8c63707264c1ca20559a4abc3fa6d0009e",
+          "quote": "provides certain investment advisory services only to privately offered venture capital funds",
+          "quote_hash": "f9a5a566928d3492aadf6240957e6aefc4a4db81e15395c668db4e7e681667c7"
         }
       ],
       "last_verified_at": "2026-10-03",

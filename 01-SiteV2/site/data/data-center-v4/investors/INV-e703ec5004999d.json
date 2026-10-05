@@ -163,10 +163,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "四川文投官网披露其全称为四川文化产业投资集团有限责任公司、为省管一级国有文化企业；本档案只记录来源支持的投资活动。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "集团主体与经营范围来自四川文投官网；中数睿智融资参与来自新浪财经转载报道，未披露其集团内具体投资载体或出资额。",
+      "summary": "四川文投集团官网将其介绍为四川省管一级国有文化企业，业务包括文化金融、数字文化、资产运营和文旅融合。新浪科技报道将四川文投列为中数睿智2025年A+轮跟投方；此处记录国有文化产业集团的投资参与，不将其归类为专业VC基金。",
+      "facts": [
+        {
+          "field": "state_owned_group_and_business",
+          "label": "集团官网披露的企业性质和业务板块",
+          "value": "四川文化产业投资集团是省管一级国有文化企业，业务包括文化金融、数字文化、资产运营和文旅融合。",
+          "source_id": "PROFILE-abd7cc935bade4e6668f"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {

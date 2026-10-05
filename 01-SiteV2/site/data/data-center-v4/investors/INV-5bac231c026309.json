@@ -180,15 +180,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "机构性质来自 Vanguard 官网；参投关系来自 Norm Ai 官方公告，未确认具体投资主体部门。",
-      "summary": "Vanguard 官网将自身描述为投资管理公司；Norm Ai 官方 Series C 公告将 Vanguard 列为参与方。本档只记录该披露，不推断 Vanguard 通过何种内部基金或部门出资。",
+      "coverage_status": "researched",
+      "coverage_note": "公司类型与所有权结构来自 Vanguard 官网；融资参与来自 Norm Ai 发行方公告。未将公司层面的参与记录推断为特定基金或内部团队的投资。",
+      "summary": "Vanguard 官网将其描述为投资管理公司，并称公司由成员基金持有，基金份额持有人因而间接成为所有者。Norm Ai 融资公告另将 Vanguard 列为参与方；没有来源说明该项出资来自 Vanguard 的哪一只基金或部门。",
       "facts": [
         {
           "field": "organization_type",
           "label": "机构类型",
           "value": "投资管理公司",
           "source_id": "PROFILE-1c867ffe4ad1761b057e"
+        },
+        {
+          "field": "ownership_structure",
+          "label": "官网披露的所有权结构",
+          "value": "Vanguard 官网称其由成员基金持有，基金份额持有人间接构成公司所有者。",
+          "source_id": "PROFILE-COLLECT-INV-5bac231c026309-G-3"
         }
       ],
       "milestones": [],
@@ -223,6 +229,14 @@
           "source_content_hash": "2692ed592e66fd725893ff7d334d4e61574d7ba42e05a40010458db644209a60",
           "quote": "Blackstone, Bain Capital Ventures (BCV), Craft Ventures, Coatue, Vanguard, New York Life, TIAA",
           "quote_hash": "be311d27d8ab1f20403fcd4cab91a63a512a059c47ad46ec7c939215bc9fd919"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-5bac231c026309-G-3",
+          "source_url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/sets-us-apart/ownership.html",
+          "source_title": "Ownership | Vanguard",
+          "source_content_hash": "1b3a2c3631ebdcf6d86f644ca2da794ce04a2e4bfbf04e6674b7e3124386c7e1",
+          "quote": "Vanguard is owned by its member funds, which in turn are owned by fund shareholders.",
+          "quote_hash": "4e3f64db6946bb782ea6bbf33aad0d1bab62071e9bc8fb6b8f86ea24d615c87c"
         },
         {
           "source_id": "FISRC-1b05d1dc5cb45a7b",

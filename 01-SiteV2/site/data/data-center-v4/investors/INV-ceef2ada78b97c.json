@@ -247,57 +247,86 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构身份、创立时间和基金平台定位据 Lakestar 官网；官网所示管理资产规模未纳入，以避免将页面动态数据当作明确报告期数值。",
+      "summary": "Lakestar 官网称其为 Klaus Hommels 于2012年创立的投资公司，平台包括机构风险投资基金和跨阶段、跨地区的个人投资。简介按机构官网公开口径整理，不把公开被投名单视为全部组合。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网披露的创立时间",
+          "value": "Lakestar 官网称其于2012年创立。",
+          "source_id": "PROFILE-COLLECT-INV-ceef2ada78b97c-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "投资平台结构",
+          "value": "官网称其平台覆盖机构风险投资基金和跨阶段、跨地区的个人投资。",
+          "source_id": "PROFILE-COLLECT-INV-ceef2ada78b97c-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Modulate 轮次未披露 本轮参投。",
+          "description": "融资来源记录：Modulate · 轮次未披露 · 2026-09-28 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6ec519350686cbda"
         },
         {
-          "description": "公开融资来源将其列为 Neko Health C轮 本轮参投。",
+          "description": "融资来源记录：Neko Health · C轮 · 2026-07-15 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6442b5e548ad70ee"
         },
         {
-          "description": "公开融资来源将其列为 Pitdotcom Sweden AB 种子轮 本轮参投。",
+          "description": "融资来源记录：Pitdotcom Sweden AB · 种子轮 · 2026-05-07 · 本轮参投 · $16 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ac5030ddaba00a3"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-COLLECT-INV-ceef2ada78b97c-1",
+          "source_url": "https://lakestar.com/",
+          "source_title": "Lakestar | Investing in Europe&#x27;s Future",
+          "source_content_hash": "c26fc4be1e28ff617864b9fe14f023515b8edce1d08e51202cf48f512bad519d",
+          "quote": "Lakestar is the investment firm founded by Dr. Klaus Hommels in 2012.",
+          "quote_hash": "4e184b818457955ce26c0d3f4a5e229ac7b874be130e7070015afd65f50e43e0"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-ceef2ada78b97c-2",
+          "source_url": "https://lakestar.com/",
+          "source_title": "Lakestar | Investing in Europe&#x27;s Future",
+          "source_content_hash": "c26fc4be1e28ff617864b9fe14f023515b8edce1d08e51202cf48f512bad519d",
+          "quote": "a platform that spans institutional venture capital funds and personal investments across stages and geographies.",
+          "quote_hash": "11c89f6ea1e64fdb6c0bd378c1ed06eccbf5432a02773e00a4cef80f33701549"
+        },
+        {
           "source_id": "FISRC-6ec519350686cbda",
           "source_url": "https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/",
-          "source_title": "Modulate raises $25M for its voice models and analysis suite | TechCrunch",
-          "source_content_hash": "52e067245fb74a5976ee8aaf81f5f93c9ee10e9671ebc3010c16813c5e13027f",
+          "source_title": "Modulate为其语音模型和分析套件融资2500万美元",
+          "source_content_hash": "9e972b90fef24b98d2f60cb378f78e88317d2c65c1d57d82bb346680ac8c97a2",
           "quote": "Modulate’s new funding was led by Future Ventures with participation from Hyperplane and Lakestar.",
           "quote_hash": "74f64b47ac286aaf6413d8cc24e567a010092fa0545e2ce869d5a3f70f1f3d76"
         },
         {
           "source_id": "FISRC-6442b5e548ad70ee",
           "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
-          "source_title": "Neko Health raises $700m to expand preventative care model into US | IHH",
-          "source_content_hash": "1c097df4666aea6015f1f5dba9d808909ecb816da451ea26bc4222a9bd083697",
+          "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+          "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
           "quote": "with participation from existing investors including Atomico, General Catalyst, and Lakestar, alongside several new backers",
           "quote_hash": "defa0871f199f4cf29f81e0cbcbc359d5a165310a650dad2d3fedc0f764e960f"
         },
         {
           "source_id": "FISRC-1ac5030ddaba00a3",
           "source_url": "https://siliconangle.com/2026/05/07/ai-product-team-startup-pit-raises-16m-a16z-others-automate-enterprise-workflows/",
-          "source_title": "AI product team startup Pit raises $16M from a16z and others to automate enterprise workflows - SiliconANGLE",
-          "source_content_hash": "9cb5e464705f455640b3d744d90b918d7717ef1f80f0b11f43bc6fd1569e7e74",
+          "source_title": "AI 产品团队初创公司 Pit 获 a16z 等投资 1600 万美元，用于自动化企业工作流",
+          "source_content_hash": "20d6f1f5cb5a6d21",
           "quote": "It also saw participation from Lakestar",
           "quote_hash": "5eaaa74b0372426800b797f9c61aa1b96a93a9eef2793fc1dfefb4d259c0bf5e"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": ""
     }
   }
 }

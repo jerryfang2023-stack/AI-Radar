@@ -123,15 +123,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "Natural 官方 Series A 公告将 Abstract 列为本轮投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略来自 Abstract 官网页面描述；融资参与来自被投企业 Natural 的官方公告。未沿用官网页面中的易变资产管理规模。",
+      "summary": "Abstract 官网称其为不限定行业、投资种子轮及早期公司的风险投资机构；Natural 的 Series A 公告将 Abstract 列入本轮参投方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "Abstract 官网称其投资种子轮和早期公司，且不限定行业。",
+          "source_id": "PROFILE-B5-INV-845fa61dc6d834-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Natural 官方 Series A 公告列出 Abstract 为本轮投资方。",
-          "source_id": "PROFILE-4711b8d6cf513c1c1a6f"
+          "description": "Natural 官方 Series A 公告将 Abstract 列为本轮参投方之一；未披露其投资金额。",
+          "source_id": "PROFILE-B5-INV-845fa61dc6d834-2"
         },
         {
           "description": "融资来源记录：Natural AI, Inc. · 历史轮次未披露 · 本轮参投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -141,12 +148,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-4711b8d6cf513c1c1a6f",
+          "source_id": "PROFILE-B5-INV-845fa61dc6d834-1",
+          "source_url": "https://www.abstract.com/",
+          "source_title": "About us - Abstract",
+          "source_content_hash": "228d7380fff5ca3326345bf482f6de431eda1885c14d734fd479b801eb01102c",
+          "quote": "We are sector-agnostic and invest in seed and early stage companies.",
+          "quote_hash": "c6d759162c6cf9e1dd500819bc725fa38d92032977e8e4affc6acfc25a21361e"
+        },
+        {
+          "source_id": "PROFILE-B5-INV-845fa61dc6d834-2",
           "source_url": "https://www.natural.com/blog/natural-series-a",
           "source_title": "$30M to build payments for AI agents — Natural",
           "source_content_hash": "4a58a6748da5245891d6fab518dd341fce8de6a27b49f43b2f54282683eae6bb",
-          "quote": "y was 193 days old and brings Natural’s total funding to over $40M. The round was supported by Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel, Darragh Buckley (CEO of Increase) , Pablo Palafox (CEO of HappyRobot) , Paul Klein IV (CEO of Browserbase) , Akshay Kothari (Co-founder of Notion) , Henri Stern and Max",
-          "quote_hash": "7cc5d47db2e81caecaf3f53ea6ac2e5ddafd20670be90f1fc02fd5fcbfa483d0"
+          "quote": "The round was supported by Human Capital, Abstract, Genius Ventures",
+          "quote_hash": "999026e9d8a6a2020974266ba6692da119e82354ed17ddd85f3b69fc8b50dcd2"
         },
         {
           "source_id": "FISRC-cbb8abca74aa20f4",
@@ -157,7 +172,7 @@
           "quote_hash": "66c3cf9d928a6bbd827db4c650b1fd9f842defe7b891542752f0999630cd3ab5"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

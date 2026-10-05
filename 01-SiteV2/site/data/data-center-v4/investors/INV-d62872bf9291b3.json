@@ -137,35 +137,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
+      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "已按个人主体修正类型。a16z 官方发布用于验证其作为个人天使的公开记录；OpenAI 页面只用于说明融资公告时点附近的过往任职，不代表现职。",
+      "summary": "Fidji Simo 是个人经营者与投资者。a16z 关于 Horowitz Andreessen Academy 融资的公告将她列为天使投资者，并以“近期担任 OpenAI 应用业务 CEO”描述她当时的经历。OpenAI 2025 年公告记载其加入公司担任应用业务 CEO；这属于历史任职，不在本档案中标作当前职务。",
+      "facts": [
+        {
+          "field": "investor_type",
+          "label": "主体类型",
+          "value": "个人天使投资者。",
+          "source_id": "B26-FIDJI-HAA"
+        },
+        {
+          "field": "career",
+          "label": "职业经历",
+          "value": "曾任 OpenAI 应用业务 CEO；该职务按 2025 年官方公告作历史记录。",
+          "source_id": "B26-FIDJI-OPENAI"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Horowitz Andreessen Academy 其他融资 本轮参投。",
+          "description": "a16z 关于 Horowitz Andreessen Academy 的公告将 Fidji Simo 列为天使投资者之一，未披露个人出资金额。",
+          "source_id": "B26-FIDJI-HAA"
+        },
+        {
+          "description": "融资来源记录：Horowitz Andreessen Academy · 其他融资 · 2026-09-22 · 本轮参投 · $42 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1f3aa9ba4c739ca7"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "B26-FIDJI-OPENAI",
+          "source_url": "https://openai.com/index/leadership-expansion-with-fidji-simo/",
+          "source_title": "OpenAI Expands Leadership with Fidji Simo",
+          "source_content_hash": "8ccb1cce6959ab585757a8eff362cd5a0e77d11a5f959bba7b25d08d51342cfa",
+          "quote": "Fidji Simo is joining as our CEO of Applications, reporting directly to me",
+          "quote_hash": "dc7fba00243c9e4ded4edea4bcd5514e1ef6265b2b00af3e56cdf3e0514fb780"
+        },
+        {
+          "source_id": "B26-FIDJI-HAA",
+          "source_url": "https://www.a16z.news/p/introducing-the-horowitz-andreessen",
+          "source_title": "Introducing the Horowitz Andreessen Academy",
+          "source_content_hash": "18ff2a8946788de6145662418c94eda812a40dd75442c7b324f71d6d7b4b5dcd",
+          "quote": "We also have a great group of angels such as Adam D’Angelo (co-founder, Quora), Tobi Lütke (CEO, Shopify), Tony Xu (CEO, DoorDash), Fidji Simo (recently CEO of Applications, OpenAI), Garry Tan (CEO, Y Combinator), Joe Liemandt (Principal, Alpha School), and Shyam Sankar (CTO, Palantir).",
+          "quote_hash": "11eb385bb6759b38fa77375808ffcd0b5a2813f3392fc24a11c0b0714db8a3bc"
+        },
+        {
           "source_id": "FISRC-1f3aa9ba4c739ca7",
           "source_url": "https://pulse2.com/horowitz-andreessen-academy-raises-42-million-and-launches-tuition-free-fellowship-in-san-francisco/",
           "source_title": "Horowitz Andreessen Academy Raises $42 Million And Launches Tuition-Free Fellowship In San Francisco",
-          "source_content_hash": "5a8d3e6af36c12f99935b77437d4499fcaf960c35db7244718cabd325a7ebc73",
+          "source_content_hash": "bb1048a5af39e427",
           "quote": "The $42 million financing comes from a16z and a group of individual investors, including Adam D’Angelo, co-founder of Quora; Tobi Lütke, CEO of Shopify; Tony Xu, CEO of DoorDash; Fidji Simo, who recently served as CEO of Applications at OpenAI; Garry Tan of Y Combinator; Joe Liemandt of Alpha School; and Shyam Sankar, CTO of Palantir.",
           "quote_hash": "66f075ad9a5112fbd5e30b27263196962b1250767ea2b56f8dae3803d67dd806"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "Fidji Simo 是个人经营者与投资者。a16z 关于 Horowitz Andreessen Academy 融资的公告将她列为天使投资者，并以“近期担任 OpenAI 应用业务 CEO”描述她当时的经历。OpenAI 2025 年公告记载其加入公司担任应用业务 CEO；这属于历史任职，不在本档案中标作当前职务。"
     },
     "translations": {
       "zh-CN": {

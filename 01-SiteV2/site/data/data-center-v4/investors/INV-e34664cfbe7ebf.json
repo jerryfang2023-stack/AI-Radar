@@ -210,10 +210,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "Situational Awareness LP官网称其为旧金山投资顾问机构，关注AI技术及受AI影响的公司；档案只保留有来源支持的投资活动。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资方向来自 Situational Awareness LP 官网；MatX融资角色来自发行人官方公告。档案使用该基金顾问品牌名称，未补写未公开的规模、基金结构或投资组合。",
+      "summary": "Situational Awareness LP 官网将其描述为总部位于旧金山的投资顾问机构，投资人工智能技术的开发企业以及可能受AI影响的企业。MatX官方Series B公告将其列为联合领投方。",
+      "facts": [
+        {
+          "field": "advisor_profile_and_focus",
+          "label": "官网披露的顾问机构定位与投资方向",
+          "value": "Situational Awareness LP 自述为旧金山投资顾问，投资人工智能技术开发企业及人工智能可能产生正面或负面影响的企业。",
+          "source_id": "PROFILE-54be69b638cacf5aedf4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {

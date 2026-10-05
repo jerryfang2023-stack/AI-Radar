@@ -140,19 +140,86 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bain Capital Ventures (BCV) 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、金额区间与领域来自 Bain Capital Ventures 官网；Armadin 融资活动来自发行人新闻稿，未披露 BCV 单独出资额。",
+      "summary": "Bain Capital Ventures（BCV）是覆盖多阶段的风险投资业务，官网列出种子期至成长阶段的投资，单笔投资范围从100万美元种子资本到1亿美元成长股权，并聚焦AI、商业、金融科技、产业、网络安全及医疗等领域。Armadin 的2.555亿美元 Series B 公告将 BCV 列为新投资方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其覆盖多阶段投资，从种子期到成长阶段。",
+          "source_id": "PROFILE-B10-INV-ad5acdd6207142-1"
+        },
+        {
+          "field": "ticket_size",
+          "label": "投资金额范围",
+          "value": "官网列出100万美元种子资本至1亿美元成长股权的范围。",
+          "source_id": "PROFILE-B10-INV-ad5acdd6207142-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "官网列有AI应用、AI基础设施、商业、金融科技、工业、安全及医疗。",
+          "source_id": "PROFILE-B10-INV-ad5acdd6207142-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Armadin 官方公告将 Bain Capital Ventures 列为其 Series B 新投资方；未披露单独出资额。",
+          "source_id": "PROFILE-B10-INV-ad5acdd6207142-4"
+        },
         {
           "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dc8fb918b056c843"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.baincapital.com/ventures",
+          "source_id": "PROFILE-B10-INV-ad5acdd6207142-1"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-B10-INV-ad5acdd6207142-1",
+          "source_url": "https://www.baincapital.com/ventures",
+          "source_title": "Venture | Bain Capital",
+          "source_content_hash": "9278dd39d04721adf968a341ab7a5a4c2838e1f1bdc8f4a31df197132576b877",
+          "quote": "Bain Capital Ventures is a multi-stage, domain-focused venture business with offices in the Bay Area, NYC, and Boston",
+          "quote_hash": "ff4cadf10d776a2110446b7fd55b2bc0ddaa96ef6a6dcd969654ab3e3bb32787"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-ad5acdd6207142-2",
+          "source_url": "https://www.baincapital.com/ventures",
+          "source_title": "Venture | Bain Capital",
+          "source_content_hash": "9278dd39d04721adf968a341ab7a5a4c2838e1f1bdc8f4a31df197132576b877",
+          "quote": "Our investments range from $1 million of seed capital through $100 million of growth equity.",
+          "quote_hash": "d6e6b86f3598a5166f96130596678c8b5dfd7e39214fc5fc5b64027057556dc4"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-ad5acdd6207142-3",
+          "source_url": "https://www.baincapital.com/ventures",
+          "source_title": "Venture | Bain Capital",
+          "source_content_hash": "9278dd39d04721adf968a341ab7a5a4c2838e1f1bdc8f4a31df197132576b877",
+          "quote": "Focused on AI Apps, AI Infrastructure, Commerce, Fintech, Industrials, Security, and Healthcare",
+          "quote_hash": "02a7789c878d219920cc068ba53da9e3beee8c8f117c357390eb6730b6187835"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-ad5acdd6207142-4",
+          "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
+          "source_title": "Armadin Raises $255.5 Million Series B to Scale Effective Autonomous Security",
+          "source_content_hash": "ec2a8ede86a3c1cf68c098a283fe4d8de7ebb7c5bfc8195618330d10a1bc3126",
+          "quote": "today announced it has raised $255.5 million in Series B funding co-led by Andreessen Horowitz (a16z) and Accel that brings the company's valuation to over $2.5 billion. The round includes participation from new investors Bain Capital Ventures (BCV) and Redpoint.",
+          "quote_hash": "6cbff6b0424664921d5015e27233ba423c6f5b18a54f9a9869c92ab46ad1b302"
+        },
         {
           "source_id": "FISRC-dc8fb918b056c843",
           "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",

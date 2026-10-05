@@ -140,32 +140,40 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "来源只支持家族级投资者标签；不推断成员、投资载体或完整投资组合。",
-      "summary": "Pit 官方公告将 Lundin 家族列为本轮参与投资者之一。本档案仅保留公告披露的家族级投资者标签，不映射到单个成员、家族办公室或具体法人。",
+      "coverage_note": "Pit 官方公告采用家族层级标签；来源没有确认具体成员、家族办公室、基金或个人出资额。",
+      "summary": "Pit 官方融资公告将 Lundin 家族列为参与其 1,600 万美元融资的投资者之一。本档案保留来源的家族层级称呼，不映射到具体个人或投资载体。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "Pit 官方公告将 Lundin 家族与 Stena 家族等列为本轮参与投资者；公告未披露具体成员或投资载体。",
+          "description": "Pit 官方公告称其融资参与方包括 Stena 和 Lundin 家族；未披露 Lundin 家族单独出资额。",
+          "source_id": "B28-LUNDIN-PIT"
+        },
+        {
+          "description": "融资来源记录：Pitdotcom Sweden AB · 种子轮 · 2026-05-07 · 本轮参投 · $16 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-beb618aa7d0b26eb"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-beb618aa7d0b26eb",
+          "source_id": "B28-LUNDIN-PIT",
           "source_url": "https://pit.com/press/pit-launches-with-16m",
           "source_title": "Pit Launches with $16M Led by Andreessen Horowitz to Bring AI-Native Software to Enterprise Operations - Pit",
           "source_content_hash": "963206c6ff2b05286976e12a38a4b6dd2a806b9a06a8c5f85015e0c1a8c00c48",
+          "quote": "as well as the Stena and Lundin families",
+          "quote_hash": "3535b73fdfc5cd9733e5a719b9072b0a12e1cc06549665929223ac211d8d0d1f"
+        },
+        {
+          "source_id": "FISRC-beb618aa7d0b26eb",
+          "source_url": "https://pit.com/press/pit-launches-with-16m",
+          "source_title": "Pit Launches with $16M Led by Andreessen Horowitz to Bring AI-Native Software to Enterprise Operations - Pit",
+          "source_content_hash": "2d2c0213efb994d7",
           "quote": "The round includes participation from Lakestar, the Pit founders and executives from OpenAI, Anthropic, Google, Deel, and Revolut, as well as the Stena and Lundin families.",
           "quote_hash": "677e97c648f6e1dcbf99703c808130d9b728216b2c8ac8594b943eb94fa3c277"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "Pit 官方公告将 Lundin 家族列为本轮参与投资者之一。本档案仅保留公告披露的家族级投资者标签，不映射到单个成员、家族办公室或具体法人。"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

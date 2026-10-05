@@ -139,29 +139,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "Arcade 融资报道将 Wipro 列为 Series A 参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "集团业务及 Wipro Ventures 定位来自 Wipro 官方页面；Arcade 融资活动来自 SiliconANGLE 报道，未披露单独出资额或内部投资主体。",
+      "summary": "Wipro 官方介绍其为技术服务与咨询公司，并说明 Wipro Ventures 是集团于 2015 年设立的早中期企业软件战略投资部门。Arcade 融资报道将 Wipro Ltd. 列为 Series A 参与方，但没有说明具体出资载体；不将该笔交易直接归到 Wipro Ventures。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "技术服务与咨询公司",
+          "source_id": "PROFILE-B12-INV-bb34ff182a0a36-3"
+        },
+        {
+          "field": "investment_affiliate",
+          "label": "投资部门",
+          "value": "Wipro Ventures 是其战略投资部门，专注早中期企业软件",
+          "source_id": "PROFILE-B12-INV-bb34ff182a0a36-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "参与 Arcade 融资。",
+          "source_id": "PROFILE-B12-INV-bb34ff182a0a36-1"
+        },
+        {
+          "description": "融资来源记录：Arcade AI Inc. · A轮 · 2026-06-15 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0e863445463ffc16"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.wipro.com/ventures/",
+          "source_id": "PROFILE-B12-INV-bb34ff182a0a36-2"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B12-INV-bb34ff182a0a36-1",
+          "source_url": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/",
+          "source_title": "AI agent authorization startup Arcade nabs $60M investment - SiliconANGLE",
+          "source_content_hash": "6239ab2d4385b4123074fad8974a11a41783ed020773efee11a6c22c1d84f313",
+          "quote": "t has raised $60 million in funding. SYN Ventures led the Series A round. It was joined by Morgan Stanley and Wipro Ltd., a publicly traded technology consulting firm. The process of giving an AI agent access to a business application comprises two steps. The first step verifies that the agent has permission to use the program. The second step, which is know",
+          "quote_hash": "82c29c24f837324d6d1098dd2a42d7835c3f19c9ef106d94eeab04c2c03e82a0"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-bb34ff182a0a36-2",
+          "source_url": "https://www.wipro.com/ventures/",
+          "source_title": "Wipro Ventures Driving Strategic Business Investments",
+          "source_content_hash": "94c4d9bbd7303e136c2c7409ed083f54fb75fc83c4cbe9f82f4e85f546849784",
+          "quote": "Established in 2015 as the strategic investment arm of Wipro Limited, we invest in early to mid-stage companies building innovative enterprise software solutions.",
+          "quote_hash": "d18f637373a092ef40ef6cf83e30d07c15ae226bfedf9d0ab711961c89742a6b"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-bb34ff182a0a36-3",
+          "source_url": "https://www.wipro.com/newsroom/press-releases/2025/wipro-commits-200dollar-million-in-fresh-investment-to-wipro-ventures/",
+          "source_title": "Wipro Invests $200 Million in Wipro Ventures for Startup Growth",
+          "source_content_hash": "2ffae2024b09c2e1745f00253da30b13f43a53bd36d758798b03130c27fc93ed",
+          "quote": "a leading technology services and consulting company",
+          "quote_hash": "5fcdb577da685678d9866128f21045fdf00763a7c68c619ea3aa0b879532e386"
+        },
         {
           "source_id": "FISRC-0e863445463ffc16",
           "source_url": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/",
-          "source_title": "AI agent authorization startup Arcade nabs $60M investment - SiliconANGLE",
-          "source_content_hash": "670032a84254395b56b4503f86b128629a18de0c87611bf729c1b7b8d34f025b",
-          "quote": "t has raised $60 million in funding. SYN Ventures led the Series A round. It was joined by Morgan Stanley and Wipro Ltd., a publicly traded technology consulting firm. The process of giving an AI agent access to a business application comprises two steps. The first step verifies that the agent has permission to use the program. The second step, which is know",
-          "quote_hash": "82c29c24f837324d6d1098dd2a42d7835c3f19c9ef106d94eeab04c2c03e82a0"
+          "source_title": "AI 智能体授权初创公司 Arcade 获 6000 万美元投资",
+          "source_content_hash": "025cb3fd28e66b8a",
+          "quote": "It was joined by Morgan Stanley and Wipro Ltd.",
+          "quote_hash": "ca5141ddac45bfd3148f0b2dcfb637af3f6eeea13387c1e15499af443be1d5f7"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

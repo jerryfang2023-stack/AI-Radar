@@ -193,15 +193,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "机构关注方向来自官网自述；参投关系来自 Cato 融资报道。",
-      "summary": "Moonstone 官网称其支持应对行星健康挑战的创业者；Startup Reporter 的 Cato 融资报道将 Moonstone 列入投资方联合体。本档仅覆盖该公开案例，不延伸为完整组合。",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向与组合示例来自 Moonstone 官网，Cato 参投关系来自 Startup Reporter 报道，不据此推断完整组合或基金规模。",
+      "summary": "Moonstone 官网称其支持应对行星健康挑战的创业者。官网组合页列出 Limenet 等项目；Startup Reporter 的 Cato 融资报道将 Moonstone 列入投资方联合体。本档仅覆盖已公开的方向和案例，不延伸为完整组合。",
       "facts": [
         {
           "field": "investment_focus",
           "label": "关注方向",
           "value": "行星健康挑战相关企业",
           "source_id": "PROFILE-2f43491943c39a7d27f1"
+        },
+        {
+          "field": "selected_portfolio_example",
+          "label": "官网展示的组合项目示例",
+          "value": "Moonstone 官网组合页列出 Limenet；该项目是官网展示的组合示例，不代表完整组合。",
+          "source_id": "PROFILE-COLLECT-INV-5a6d6709a4b4af-F2-3"
         }
       ],
       "milestones": [],
@@ -232,6 +238,14 @@
           "source_content_hash": "8fe813e009a4135c360cb425e3789c59c53106d8dd5e6922c1b180c91297673f",
           "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors",
           "quote_hash": "f5c18c6277f0aed3c91b9a6db5a0f53faadb5ba8cc13ac5dd581d682e3a75503"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-5a6d6709a4b4af-F2-3",
+          "source_url": "https://www.moonstone.fund/portfolio",
+          "source_title": "Portfolio | Moonstone",
+          "source_content_hash": "9a9c25923ecc199f9aa1fb09821c63aceb5957f7795810f02c9436df04500c03",
+          "quote": "Limenet captures and stores CO₂ in the form of calcium bicarbonate in the sea, fighting ocean acidification.",
+          "quote_hash": "838960ab0271564ff74dc714e902f1de0b8d0375e7c77fee823ac9407d467143"
         },
         {
           "source_id": "FISRC-495f39954954d0bc",

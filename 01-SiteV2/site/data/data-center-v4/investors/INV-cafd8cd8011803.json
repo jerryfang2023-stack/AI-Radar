@@ -124,33 +124,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网介绍投资阶段及策略；Suno官方公告列出Founder Collective为融资合作方之一，未披露其单独出资额。",
+      "summary": "Founder Collective官网称其专注种子及种子前期、行业不限，并会领投或跟投。Suno联合创始人兼CEO在2024年融资公告中将Founder Collective列为合作方之一；公告所称1.25亿美元为整轮融资额，未披露其单独出资额。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资阶段与策略",
+          "value": "Founder Collective官网自述专注seed及pre-seed阶段、行业不限，并可领投或跟投。",
+          "source_id": "fc_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Suno 参投B轮融资。",
+          "description": "Suno官方融资公告将Founder Collective列为合作方之一；1.25亿美元为整轮金额，未披露其单独出资额。",
+          "source_id": "suno_round"
+        },
+        {
+          "description": "融资来源记录：Suno · 历史轮次未披露 · 参投B轮融资。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-92bdc04603fa5ff2"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "fc_official",
+          "source_url": "https://foundercollective.com/",
+          "source_title": "Home | Founder Collective",
+          "source_content_hash": "c70876192179e36f6ff8315da6fba978c1137d4706e0ae494df540eccb0e33e1",
+          "quote": "Our mission is to build the most aligned vc fund for founders at the seed stage",
+          "quote_hash": "84f92798b8305dca0841d5a32723053d7c2bb6b502fae2f13d5a6dce4ad79aa0"
+        },
+        {
+          "source_id": "suno_round",
+          "source_url": "https://suno.com/blog/fundraising-announcement-may-2024",
+          "source_title": "Suno | Suno has raised $125 million",
+          "source_content_hash": "855be1060c8e155cdde82af5080a6550970f8e419784bdcad6d92b954b6ad4d5",
+          "quote": "Today, we are excited to announce we’ve raised $125 million to build a future of music where technology amplifies, rather than replaces, our most precious resource: human creativity. We have an incredible group of partners, including Lightspeed Venture Partners, Nat Friedman and Daniel Gross, Matrix and Founder Collective.",
+          "quote_hash": "855be1060c8e155cdde82af5080a6550970f8e419784bdcad6d92b954b6ad4d5"
+        },
         {
           "source_id": "FISRC-92bdc04603fa5ff2",
           "source_url": "https://multiples.vc/private-comps/suno",
-          "source_title": "Suno Revenue, Valuation, Funding &amp; Investors | Multiples",
-          "source_content_hash": "c64c02febd96b49bf374e45e51870f05fe6936e47dc7924c2cb6c60ac9b92eb6",
+          "source_title": "Suno Revenue, Valuation, Funding & Investors | Multiples",
+          "source_content_hash": "410c3c737fbffa4a",
           "quote": "raised a $125 million Series B funding round on May 21, 2024, led by Lightspeed Venture Partners with participation from Nat Friedman, Daniel Gross, Matrix, and Founder Collective.",
           "quote_hash": "c22714c76aea0223ddb37fa957ed0df2634d3bda436a8831dfabdc69b6108d1b"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

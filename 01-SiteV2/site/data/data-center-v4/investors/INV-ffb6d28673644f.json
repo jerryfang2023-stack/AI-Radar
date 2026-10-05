@@ -193,10 +193,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录Nscale公告所称“funds managed by Apollo”；未将其推断为单一基金或特定Apollo法律主体。",
-      "summary": "Apollo Global Management投资者关系官网以Apollo Global Management, Inc.标示集团；Nscale公告将其IPO前可转换融资的支持者表述为“funds managed by Apollo”。本档案保留该品牌层级表述，不指定具体Apollo基金或管理实体。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构背景来自 Apollo 官网；融资参与来自 Nscale 公司公告。公告使用“funds managed by Apollo”，本档不将管理基金泛化为 Apollo 自有资金。",
+      "summary": "Apollo 官方资料称该机构成立于1990年，经营另类资产管理、资本解决方案和退休服务。Nscale 公告披露其 IPO 前可转换融资获得 Apollo 管理基金支持；公告没有披露具体出资基金或金额。",
+      "facts": [
+        {
+          "field": "firm_profile",
+          "label": "官网披露的成立时间与业务",
+          "value": "Apollo 官网将其定位为创新型资本提供方、资产管理人及财富管理和退休解决方案提供者。",
+          "source_id": "PROFILE-COLLECT-INV-ffb6d28673644f-O-3"
+        },
+        {
+          "field": "founded",
+          "label": "官网披露的成立年份",
+          "value": "Apollo 于1990年成立。",
+          "source_id": "PROFILE-COLLECT-INV-ffb6d28673644f-O-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -233,6 +246,22 @@
           "source_content_hash": "9194dea938db859cf719910c546c5b015923c76e8d81c3d2d8b5bd8731c3a490",
           "quote": "funds managed by Apollo, Citadel, Hudson Bay Capital",
           "quote_hash": "36504e0a953efd12adf4548a75b8eceb1ecfa919621958ffd078ecacc9ea0b76"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-ffb6d28673644f-O-3",
+          "source_url": "https://www.apollo.com/aboutus",
+          "source_title": "About Apollo | Apollo Global Management",
+          "source_content_hash": "137b0925dac4256bb246820b77567eba81991475832b3884a3ec9c5a1845084d",
+          "quote": "innovative capital provider, future-focused asset manager and leader in wealth management and retirement solutions",
+          "quote_hash": "efece666dab048f557e0feacb411f32333d81cfcce9add23a02b7a9f5740f7cb"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-ffb6d28673644f-O-4",
+          "source_url": "https://www.apollo.com/aboutus",
+          "source_title": "About Apollo | Apollo Global Management",
+          "source_content_hash": "137b0925dac4256bb246820b77567eba81991475832b3884a3ec9c5a1845084d",
+          "quote": "Since our founding in 1990",
+          "quote_hash": "970043c20cf0668207de1650df5f6a07e246e4087a1a7b54b1fc1e3696b182a7"
         },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",

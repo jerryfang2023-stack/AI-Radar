@@ -379,19 +379,25 @@
       }
     ],
     "public_profile": {
-      "summary": "Samsung Next 是三星电子的企业风险投资部门，官网称其投资跨越多个科技阶段，并围绕三星生态中可形成协同的技术领域支持创业公司。",
+      "summary": "Samsung Next 官网确认其为三星电子的企业风险投资部门，围绕可利用三星技术、供应链与分发优势的领域投资，并通常以少数股权、非领投方身份参与。",
       "facts": [
         {
-          "field": "parent_affiliation",
-          "label": "母公司关系",
-          "value": "三星电子旗下企业风险投资部门。",
-          "source_id": "PROFILE-INV-47ed8ff2439985-1"
+          "field": "parent_organization",
+          "label": "所属机构",
+          "value": "Samsung Electronics（三星电子）",
+          "source_id": "PROFILE-COLLECT-INV-47ed8ff2439985-1"
         },
         {
           "field": "investment_approach",
-          "label": "官网所述方式",
-          "value": "以少数股权、非领投方身份参与投资。",
-          "source_id": "PROFILE-INV-47ed8ff2439985-2"
+          "label": "投资逻辑",
+          "value": "聚焦能利用三星技术、供应链和分发优势的领域",
+          "source_id": "PROFILE-COLLECT-INV-47ed8ff2439985-2"
+        },
+        {
+          "field": "investment_role",
+          "label": "投资方式",
+          "value": "以少数股权、非领投方参与",
+          "source_id": "PROFILE-COLLECT-INV-47ed8ff2439985-3"
         }
       ],
       "milestones": [],
@@ -411,8 +417,8 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "coverage_note": "根据三星 Next 官网自述描述其母公司关系和投资方式；不把部门独立成法律实体。",
+      "coverage_status": "researched",
+      "coverage_note": "投资部门身份、投资逻辑与参与方式均来自 Samsung Next 官网；档案不把官网展示的组合样例扩展为完整投资组合。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -437,6 +443,30 @@
         },
         {
           "source_id": "PROFILE-INV-47ed8ff2439985-2",
+          "source_url": "https://www.samsungnext.com/",
+          "source_title": "Main - New",
+          "source_content_hash": "513bb27c2bf9b900ba491a8f832a955d94a3c3388d1d2e5e62ee6f6a272374b1",
+          "quote": "We participate as a minority, non-lead investor.",
+          "quote_hash": "54fc0bd8a9e97beaa861f1d10e309e8b05342cb7dbce44b6de71f7cc7e71b508"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-47ed8ff2439985-1",
+          "source_url": "https://www.samsungnext.com/",
+          "source_title": "Main - New",
+          "source_content_hash": "513bb27c2bf9b900ba491a8f832a955d94a3c3388d1d2e5e62ee6f6a272374b1",
+          "quote": "Samsung Next is the corporate venture arm of Samsung Electronics.",
+          "quote_hash": "fb48cd42ec05a05fa582478c0f5b96224884d754a6e2e007e7d05c7e90c46fdc"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-47ed8ff2439985-2",
+          "source_url": "https://www.samsungnext.com/",
+          "source_title": "Main - New",
+          "source_content_hash": "513bb27c2bf9b900ba491a8f832a955d94a3c3388d1d2e5e62ee6f6a272374b1",
+          "quote": "We invest across six domains where the physics, the supply chain, and the distribution of Samsung Electronics become unfair advantages for our founders.",
+          "quote_hash": "8986019f9bd194ea1a712faeddef1eed88e03c51fd6d8bf656c984fe50579458"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-47ed8ff2439985-3",
           "source_url": "https://www.samsungnext.com/",
           "source_title": "Main - New",
           "source_content_hash": "513bb27c2bf9b900ba491a8f832a955d94a3c3388d1d2e5e62ee6f6a272374b1",

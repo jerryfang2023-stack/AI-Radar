@@ -137,13 +137,19 @@
       }
     ],
     "public_profile": {
-      "summary": "King 的 SEC F-1 文件以 CEO 和联合创始人身份署名 Riccardo Zacconi；这仅证明该历史文件中的身份，不代表其当前职位或投资活动。",
+      "summary": "SEC 文件及 Activision Blizzard 的收购公告确认 Riccardo Zacconi 曾任 King Digital Entertainment 联合创始人及 CEO。已核验材料没有确认其当前职务或可归属的个人投资组合。",
       "facts": [
         {
           "field": "historical_identity",
-          "label": "来源核验",
-          "value": "SEC F-1 文件的 King CEO 与联合创始人致辞标题标注 Riccardo Zacconi。",
+          "label": "SEC 文件披露的历史身份",
+          "value": "King Digital Entertainment 的 F-1 文件以 CEO 与联合创始人身份标注 Riccardo Zacconi。",
           "source_id": "PROFILE-1409f784cb829b-1"
+        },
+        {
+          "field": "historical_role_at_acquisition",
+          "label": "收购公告披露的历史职务",
+          "value": "Activision Blizzard 2016 年完成收购公告时，Riccardo Zacconi 仍被列为 King CEO。",
+          "source_id": "PROFILE-S-INV-1409f784cb829b-2"
         }
       ],
       "milestones": [],
@@ -155,8 +161,8 @@
       ],
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "King 的 SEC F-1 文件以 CEO 和联合创始人身份署名 Riccardo Zacconi；这仅证明该历史文件中的身份，不代表其当前职位或投资活动。",
+      "coverage_status": "researched",
+      "coverage_note": "本档案仅记录官方文件能够确认的历史身份。King CEO 身份来自 2014 年 SEC 文件和 2016 年收购公告；没有据此推断现职或投资活动。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -172,6 +178,14 @@
           "quote_hash": "ad3839027bf71f227ad971034c744e94276832782571704c53d1c9c72e98bc26"
         },
         {
+          "source_id": "PROFILE-S-INV-1409f784cb829b-2",
+          "source_url": "https://investor.activision.com/node/22586",
+          "source_title": "Activision Blizzard | Activision Blizzard completes King Acquisition",
+          "source_content_hash": "d2f9bb498488274511a07125920bb7090a505ff9f304727348422ad012267cf5",
+          "quote": "Riccardo Zacconi, Chief Executive Officer of King, said",
+          "quote_hash": "0254000e8531bebb66dd915476742df73dbef9082cc253b0501fcf9d055f3944"
+        },
+        {
           "source_id": "FISRC-5228f73ab8dc8458",
           "source_url": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates",
           "source_title": "Fika Jobs 融资 400 万美元，打造视频优先招聘平台，由 AI 智能体面试候选人",
@@ -180,7 +194,7 @@
           "quote_hash": "95e9e6c90dca9ce4709247d5b84ca596f0bc265c26c8bf9e155bc4813c3c1b9b"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

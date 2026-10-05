@@ -123,33 +123,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构背景与公开投资案例均有来源；案例融资金额按整轮披露口径记录，未推定本机构单独出资额。",
+      "summary": "36氪机构资料将合肥创新投资列为合肥市国资委系统的风险投资机构，业务包括直接投资、发起设立基金和受托管理基金。36氪记录该机构参与合肥中科类脑智能技术有限公司2020年A轮；页面显示的亿元人民币为整轮金额，未披露本机构单独出资额。",
+      "facts": [
+        {
+          "field": "institution_profile",
+          "label": "机构定位与业务",
+          "value": "合肥创新投资是合肥市国资委系统的风险投资机构，业务包括直接投资、发起设立基金及受托管理基金。",
+          "source_id": "hefei_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 中科类脑 A轮投资方。",
+          "description": "36氪项目页将合肥创新投资列为中科类脑2020年10月A轮投资方之一；页面金额为整轮融资金额，未披露该机构单独出资额。",
+          "source_id": "hefei_round"
+        },
+        {
+          "description": "融资来源记录：中科类脑 · 历史轮次未披露 · A轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4cd330eaa5f3d5fc"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
         {
-          "source_id": "FISRC-4cd330eaa5f3d5fc",
+          "source_id": "hefei_profile",
+          "source_url": "https://pitchhub.36kr.com/organization/1706642903015176",
+          "source_title": "合肥创新投资 | 投资机构信息-36氪",
+          "source_content_hash": "e33f27a687552ca940586e69b0b469b874b3da312696484dad4f2f6258245802",
+          "quote": "合肥创新投资是合肥市国资委系统专业化、市场化程度较高的风险投资机构。主营业务包括直接投资、发起设立基金、受托管理基金。",
+          "quote_hash": "6cdd2911b7f472c24fb338e45b6c79a4fab6bbeec0f2a6142751c61acbf6ff23"
+        },
+        {
+          "source_id": "hefei_round",
           "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
           "source_title": "中科类脑 | 项目信息-36氪",
           "source_content_hash": "0568284884832b7d3a9e23cde4dd546743babcccd17da0c0836a444af70d8685",
           "quote": "A轮 2020-10 亿元人民币 合肥产投集团 ， 金科君创 ， 创东方投资 ， 华安嘉业 ， 量子基金 ， 国元股投 ， 华文投资 ， 合肥创新投资 ， 安华创投基金 ， 安徽省量子科学产业发展基金",
           "quote_hash": "8c4596a390f6ae35cba538d7b05477bf2548bb2231d5cabd716f22c6c1a630da"
+        },
+        {
+          "source_id": "FISRC-4cd330eaa5f3d5fc",
+          "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
+          "source_title": "中科类脑 | 项目信息-36氪",
+          "source_content_hash": "172b52b0715adcdc",
+          "quote": "A轮 2020-10 亿元人民币 合肥产投集团 ， 金科君创 ， 创东方投资 ， 华安嘉业 ， 量子基金 ， 国元股投 ， 华文投资 ， 合肥创新投资 ， 安华创投基金 ， 安徽省量子科学产业发展基金",
+          "quote_hash": "8c4596a390f6ae35cba538d7b05477bf2548bb2231d5cabd716f22c6c1a630da"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

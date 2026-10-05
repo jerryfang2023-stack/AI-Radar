@@ -137,7 +137,7 @@
       }
     ],
     "public_profile": {
-      "summary": "NTTVC 官网将其描述为与 NTT 合作成立的独立投资机构，面向科技领域的多元创始人开展合作。",
+      "summary": "NTTVC 官网将其描述为与 NTT 合作成立的独立投资机构，面向科技领域的多元创始人开展投资。官网当前还列出其参与 Anthropic Series H 融资，并称其为该轮的重要投资者。",
       "facts": [
         {
           "field": "organization_type",
@@ -155,14 +155,18 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "NTTVC官网称其作为重要投资者参与Anthropic的Series H融资。",
+          "source_id": "PROFILE-S-INV-42be1c514c035c-2"
+        },
+        {
           "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b5e22ae086a6b353"
         }
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "coverage_note": "依机构官网自述记录 NTTVC 品牌定位；官网将其称为独立机构，不将其与 NTT 的其他投资或金融实体合并。",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位与融资参与情况均来自 NTTVC 官网；官网所述“$65B Series H”作为轮次原文记录，不视为 NTTVC 的投资金额或 Anthropic 估值。",
       "current_roles": [],
       "career": [],
       "education": [],
@@ -186,6 +190,14 @@
           "quote_hash": "550b3ddc73c3f2b3b7ff5d6a9280293657874b04493c0d9536011ed2997830cc"
         },
         {
+          "source_id": "PROFILE-S-INV-42be1c514c035c-2",
+          "source_url": "https://nttvc.com/",
+          "source_title": "NTTVC | Investing in brighter futures",
+          "source_content_hash": "4a6790f4614eeeb98bee0dba695220c53c882ad2db1af73d5582ab2f0c48c994",
+          "quote": "NTTVC participates as a significant investor in Anthropic’s $65B Series H Round",
+          "quote_hash": "bda078074c3ecc59da7d1ba0b7b55776bf45c1d952b21f352dc63579d11f1f08"
+        },
+        {
           "source_id": "FISRC-b5e22ae086a6b353",
           "source_url": "https://www.anthropic.com/news/series-h",
           "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
@@ -194,7 +206,7 @@
           "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

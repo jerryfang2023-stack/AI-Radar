@@ -139,29 +139,70 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "Taalas 融资报道援引 Reuters 称 Pierre Lamond 是公司支持者之一。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "个人投资经历依据其本人在 Computer History Museum 口述史中的陈述；Taalas 活动按新闻报道原文记录，不推定为当前个人直接出资。",
+      "summary": "Computer History Museum 口述史中，Pierre Lamond 回忆自己于2005年投资 YouTube，并称其聚焦硬件投资。SiliconANGLE 2026年报道援引 Reuters，将 Pierre Lamond 列为 Taalas 的支持者之一；该报道没有说明投资时间、出资载体或个人与基金的具体关系。",
+      "facts": [
+        {
+          "field": "personal_investment_example",
+          "label": "个人投资经历",
+          "value": "Pierre Lamond 在 Computer History Museum 口述史中称自己于2005年投资 YouTube。",
+          "source_id": "PROFILE-B10-INV-ac17aa3d05599f-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资关注",
+          "value": "口述史中 Pierre Lamond 称自己将投资重点放在硬件领域。",
+          "source_id": "PROFILE-B10-INV-ac17aa3d05599f-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "SiliconANGLE 援引 Reuters 报道称 Pierre Lamond 是 Taalas 融资支持者之一。",
+          "description": "SiliconANGLE 援引 Reuters 报道称 Pierre Lamond 是 Taalas 支持者之一；来源未披露其投资载体或单独金额。",
+          "source_id": "PROFILE-B10-INV-ac17aa3d05599f-3"
+        },
+        {
+          "description": "融资来源记录：Taalas Inc. · 轮次未披露 · 2026-02-19 · 本轮参投 · $169M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a85c433c7dbed44"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-7a85c433c7dbed44",
+          "source_id": "PROFILE-B10-INV-ac17aa3d05599f-1",
+          "source_url": "https://archive.computerhistory.org/resources/access/text/2018/02/102738291-05-01-acc.pdf",
+          "source_title": "Oral History of Pierre Lamond | Computer History Museum",
+          "source_content_hash": "9abcd51ce4cf192968c1075e4f25cdc0f4be5bf8a730858bd2c192c0a8f768b8",
+          "quote": "More recently, you know in 2005, I was an investor in YouTube, but I was coaching at that time or mentoring Roelof Botha, so he went on the Board, and I was attending Board meetings.",
+          "quote_hash": "66ed931748b51dc859873e05abd042d1b44a957eee986409df3d0849258d7587"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-ac17aa3d05599f-2",
+          "source_url": "https://archive.computerhistory.org/resources/access/text/2018/02/102738291-05-01-acc.pdf",
+          "source_title": "Oral History of Pierre Lamond | Computer History Museum",
+          "source_content_hash": "9abcd51ce4cf192968c1075e4f25cdc0f4be5bf8a730858bd2c192c0a8f768b8",
+          "quote": "And so, I focused on hardware. And I made a few investments, some of which look like they’re very successful.",
+          "quote_hash": "a46231fa069bab62d9bdf1a0ca203034592bbf15fd0a269fbcc737b7c85ef513"
+        },
+        {
+          "source_id": "PROFILE-B10-INV-ac17aa3d05599f-3",
           "source_url": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
           "source_title": "Taalas raises $169M in funding to develop model-specific AI chips - SiliconANGLE",
-          "source_content_hash": "085715b1d2b1e483fe6f12d2f2a4a50f15cfa8e454eab2d1fbbcf5ba0bcad53b",
-          "quote": "eported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond. The round brings Taalas’ total outside funding to more than $200 million.",
-          "quote_hash": "ffb9e58b2887f8f449ab4a9fa204da51da16877391beaa34662b0f35967c6d6f"
+          "source_content_hash": "1f5b5c3d4b37d70b0fdd7ae126668e445998f5f4a8ce4b814fb873fd5f86a062",
+          "quote": "Reuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
+          "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
+        },
+        {
+          "source_id": "FISRC-7a85c433c7dbed44",
+          "source_url": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
+          "source_title": "Taalas 融资 1.69 亿美元，开发模型专用 AI 芯片",
+          "source_content_hash": "8df5a185c3d0c1bc47267eb9148dc417f9b5117d0d38a10f0d0ffeef2274858f",
+          "quote": "Reuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
+          "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

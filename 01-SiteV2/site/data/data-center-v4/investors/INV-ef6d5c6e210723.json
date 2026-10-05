@@ -137,44 +137,84 @@
       }
     ],
     "public_profile": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "K Street Capital 是总部位于华盛顿特区的风险投资机构。Procurement Sciences 官方公告将其列为公司 3000 万美元 B 轮参投方。",
-      "coverage_note": "机构身份和投资策略来自 K Street Capital 官网；融资关系及轮次来自被投公司公告，未披露其单独投资金额。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-04",
+      "summary": "K Street Capital 是总部位于华盛顿特区的风险投资机构，通过基金、联合投资和聚焦华盛顿特区的基金中基金支持美国科技企业及基金管理人。Procurement Sciences 官方公告将其列入 3,000 万美元 B 轮融资投资方。",
+      "coverage_note": "机构介绍及投资策略来自 K Street Capital 官网；融资轮次和投资方名单来自被投公司公告，未披露 K Street Capital 的单独出资额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网披露机构身份",
+          "value": "总部位于华盛顿特区的风险投资机构。",
+          "source_id": "b35-kstreet-official"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露业务方式",
+          "value": "通过基金、联合投资和华盛顿特区聚焦的基金中基金进行投资。",
+          "source_id": "b35-kstreet-official"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露关注领域",
+          "value": "早期科技，重点包括医疗科技、金融科技、网络安全、气候科技和人工智能。",
+          "source_id": "b35-kstreet-focus"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "机构身份和投资策略来自 K Street Capital 官网；融资关系及轮次来自被投公司公告，未披露其单独投资金额。",
       "track_record": [
         {
-          "description": "Procurement Sciences 官方公告将 K Street Capital 列入其 3000 万美元 B 轮投资方名单；未披露该机构的单独投资金额。",
-          "source_id": "procurement_sciences_kstreet_series_b"
+          "description": "Procurement Sciences 官方公告将 K Street Capital 列为融资参与方；未披露该机构的单独投资金额。",
+          "source_id": "b35-kstreet-procurement"
+        },
+        {
+          "description": "Procurement Sciences 官方公告称该轮融资为 3,000 万美元 B 轮；该金额为融资总额，不代表 K Street Capital 的单独出资额。",
+          "source_id": "b35-kstreet-round"
         },
         {
           "description": "融资来源记录：Procurement Sciences · B轮 · 2025-11-05 · 既有投资方，本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fa41049d7cbdf303"
         }
       ],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "美国早期科技风险投资机构，同时管理基金中基金计划。",
       "sources": [
         {
-          "source_id": "kstreet_official_identity",
+          "source_id": "b35-kstreet-official",
           "source_url": "https://www.kstreet.vc/what-we-do",
           "source_title": "What We Do",
           "source_content_hash": "92e3140a900d3c41b121e8229eb8ae108a42e9b5cb552ef7c17d7d235040d36f",
-          "quote": "K Street Capital is a Washington, DC–based venture capital firm",
-          "quote_hash": "af0f4e10d2e65e5ffc8ad6d97c542a964f4c5b3c318e76094ff9cd9c713cc232"
+          "quote": "K Street Capital is a Washington, DC–based venture capital firm that invests across the U.S. through its Fund, Syndicate, and DC-focused Fund of Funds.",
+          "quote_hash": "1717b3b214e8c842a726d692c71ebde3e2e10ba124a42a765d8bb81abfc7c13e"
         },
         {
-          "source_id": "procurement_sciences_kstreet_series_b",
+          "source_id": "b35-kstreet-focus",
+          "source_url": "https://www.kstreet.vc/what-we-do",
+          "source_title": "What We Do",
+          "source_content_hash": "92e3140a900d3c41b121e8229eb8ae108a42e9b5cb552ef7c17d7d235040d36f",
+          "quote": "We back exceptional founders and fund managers focused on early-stage tech in high-growth markets with strong regulatory tailwinds (specifically healthtech, fintech, cybersecurity, climatetech, and AI).",
+          "quote_hash": "3d221dd4bb777bb037b3d05f9427d5e725688dea70ac374e8471bc06f285f0eb"
+        },
+        {
+          "source_id": "b35-kstreet-procurement",
           "source_url": "https://www.procurementsciences.com/blog/series-b",
           "source_title": "The Next Chapter Begins: Procurement Sciences Raises $30M Series B to Accelerate the AI Revolution in Government Contracting - Procurement Sciences",
           "source_content_hash": "0bacaaad5d4f5f33c97acc3611727c82fc6b2d93339656b8f3f0b8ee21f0a5f3",
-          "quote": "Battery Ventures, Bosch Ventures, Citi, Tower Research Ventures, Blu Ventures, K Street Capital , and strategic angel investors. This milestone is not just about raising capital. It is about accelerating our mission to transform how businesses find, win, and deliver governme",
-          "quote_hash": "5c8ea0d2bae7bf0ee50cf31a86c9d4a5852f3aff06fca95a17f20020421729e7"
+          "quote": "Battery Ventures, Bosch Ventures, Citi, Tower Research Ventures, Blu Ventures, K Street Capital",
+          "quote_hash": "de95329925f1af43d45be8cb446c77316ec87c70c914568d4125a22c26803097"
+        },
+        {
+          "source_id": "b35-kstreet-round",
+          "source_url": "https://www.procurementsciences.com/blog/series-b",
+          "source_title": "The Next Chapter Begins: Procurement Sciences Raises $30M Series B to Accelerate the AI Revolution in Government Contracting - Procurement Sciences",
+          "source_content_hash": "0bacaaad5d4f5f33c97acc3611727c82fc6b2d93339656b8f3f0b8ee21f0a5f3",
+          "quote": "The Next Chapter Begins: Procurement Sciences Raises $30M Series B to Accelerate the AI Revolution in Government Contracting",
+          "quote_hash": "0148adeccab0635141596a6fe55aa9a0a541f268d15318c4cb2ade9c4e8c5856"
         },
         {
           "source_id": "FISRC-fa41049d7cbdf303",
@@ -184,8 +224,7 @@
           "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round",
           "quote_hash": "8a3fe96ddb485842efdf9669e0bce45e77d6e1a311449ec23211c7ce9ace7da2"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

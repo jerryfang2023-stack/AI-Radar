@@ -139,33 +139,88 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "融资报道将白云建科列为九爪智能 Pre-A 轮联合投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "广州市白云区政府材料将“广州白云建科控股集团有限公司”简称为“白云建科”，并将其列为区属国企集团；投资界报道将“白云建科”列为九爪智能Pre-A轮共同投资方。公开材料未披露本次投资的具体基金、子公司或出资金额，因此不将该集团描述为独立VC管理人。",
+      "summary": "广州白云建科控股集团有限公司是广州市白云区区属国企集团之一。广州市白云区政府材料记录其成立四家二级子集团；投资界报道将“白云建科”列为九爪智能Pre-A轮共同投资方。现有公开材料没有说明本次投资对应的基金或具体出资主体。",
+      "facts": [
+        {
+          "field": "identity",
+          "label": "主体身份",
+          "value": "广州白云建科控股集团有限公司，简称“白云建科”，为广州市白云区区属国企集团之一。",
+          "source_id": "PROFILE-B13-INV-b38a734ba4519e-1"
+        },
+        {
+          "field": "group_structure",
+          "label": "集团架构",
+          "value": "2026年9月，集团新组建四家二级子集团。",
+          "source_id": "PROFILE-B13-INV-b38a734ba4519e-2"
+        },
+        {
+          "field": "investment_context",
+          "label": "投资披露口径",
+          "value": "融资报道将“白云建科”列为九爪智能Pre-A轮共同投资方，但未披露具体基金或出资主体。",
+          "source_id": "PROFILE-B13-INV-b38a734ba4519e-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "联合投资九爪智能 Pre-A 轮。",
+          "description": "投资界报道将白云建科列为九爪智能数千万元Pre-A轮共同投资方；九爪智能官网另记载与广州白云建科控股集团有限公司签署合作框架协议，未提供投资金额或出资载体。",
+          "source_id": "PROFILE-B13-INV-b38a734ba4519e-4"
+        },
+        {
+          "description": "九爪智能官网记载该集团与九爪智能签署大会合作框架协议；这项合作不作为独立的投资证明。",
+          "source_id": "PROFILE-B13-INV-b38a734ba4519e-3"
+        },
+        {
+          "description": "融资来源记录：九爪智能 · Pre-A轮 · 2026-01-12 · 本轮联合投资 · 数千万人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-11805a259de5b45c"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-11805a259de5b45c",
+          "source_id": "PROFILE-B13-INV-b38a734ba4519e-1",
+          "source_url": "https://www.by.gov.cn/zwgk/zdlyxxgkzl/gyqyxxgkzl/jbxx/content/post_10330890.html",
+          "source_title": "7年间总资产增长29倍，营业收入增长25倍-广州市白云区人民政府门户网站",
+          "source_content_hash": "49b14a95bd96bde82cb90b70d4092e602c359e991de6093618e27eb06c462743",
+          "quote": "区国资局新组建了广州白云城市发展集团有限公司（白云城发）、广州白云产业投资集团有限公司（白云投资）、广州白云建科控股集团有限公司（白云建科）、广州白云金科控股集团有限公司（白云金控）4家国企集团",
+          "quote_hash": "09895675dfd915fa867e7b90723f57b101535ce03af30b8dd685d675a86dac5f"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-b38a734ba4519e-2",
+          "source_url": "https://www.by.gov.cn/gkmlpt/content/10/10999/post_10999447.html",
+          "source_title": "白云建科集团四家二级子集团成立",
+          "source_content_hash": "a641a696762934ed51f746e5f4503d8bcc6f078dcd5b257c81aad45d8cc98a93",
+          "quote": "9月5日，广州白云建科控股集团有限公司（以下简称“白云建科集团”）举行二级子集团揭牌仪式，新组建的广州云建科技发展集团有限公司等四家二级子集团正式亮相。",
+          "quote_hash": "ebea2c70651a651eb2dcc3199e27243204d8058ad21fd3afe0407b718d8e45a3"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-b38a734ba4519e-3",
+          "source_url": "https://en.justra-gz.com/newsinfo4.html",
+          "source_title": "九爪智能成为2025全球智能机器人发展大会签约企业",
+          "source_content_hash": "894b75aebb5cfa78579e19d20e38ba807149b403eec62ad38c160bd4b8d9c78e",
+          "quote": "与大会主办方广州白云建科控股集团有限公司签署合作框架协议，成为大会签约企业",
+          "quote_hash": "42d2eedece7ca4152257eef2a79effac6bc9d5a5186404913c60c5bc669ec49a"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-b38a734ba4519e-4",
           "source_url": "https://news.pedaily.cn/202601/559747.shtml",
           "source_title": "九爪智能完成数千万Pre-A轮融资，白云金控、白云建科联合投资_投资界",
           "source_content_hash": "c0d671eccc909f2531e6142f4094578a16b69b07921cf074206ed4db923bbadb",
-          "quote": "九爪智能完成数千万Pre-A轮融资，白云金控、白云建科联合投资_投资界 首 页 资 讯 投资圈 活 动 研 究 创投号 旗下矩阵 投资界 天天IPO 解码LP 并购 前哨 投资界AI 深度 热门 天天IPO AI先锋 机器人 医疗健康 大消费 视频 99个发现 APP 微信扫码订阅 创投号 登录 清科集团 清科控股 清科研究中心 清科母基金 新芽 首页 产业 机器人 正文 九爪智能完成数千万Pre-A轮融资，白云金控、白云建科联合投资 资金将优先用于技术投入，包括模型迭代和核心算法升级，并推动技术在更多真实场景中的规模化应用。 2026-0",
-          "quote_hash": "6f3a7c0aef2df5581f8b3193a34f8a0fe153c1c5831f7eba6751cd19f481a859"
+          "quote": "由 白云金控、白云建科联合投资",
+          "quote_hash": "895fead99a3358d0ba37aaf9ef754e1e5e066f798a74ccbacc2835e9ea7971d0"
+        },
+        {
+          "source_id": "FISRC-11805a259de5b45c",
+          "source_url": "https://news.pedaily.cn/202601/559747.shtml",
+          "source_title": "九爪智能完成数千万Pre-A轮融资，白云金控、白云建科联合投资",
+          "source_content_hash": "0a3303471dd1ee69",
+          "quote": "由 白云金控、白云建科联合投资",
+          "quote_hash": "895fead99a3358d0ba37aaf9ef754e1e5e066f798a74ccbacc2835e9ea7971d0"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-04"
     }
   }
 }

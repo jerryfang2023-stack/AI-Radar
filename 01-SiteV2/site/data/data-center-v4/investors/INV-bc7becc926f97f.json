@@ -289,33 +289,50 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "管理人及 2015 年登记信息来自上市公司公开披露文件；近期“新鼎资本”投资活动来自融资报道。新鼎官网未能完成受信任 HTTPS 访问，未推断其当前登记状态或具体交易载体。",
+      "summary": "融资报道以“新鼎资本”名称列出近期投资活动；上市公司公开发行披露记录了北京新鼎荣盛资本管理有限公司作为私募基金管理人，并列出历史登记编号 P1018330。本档保留品牌披露和管理人登记的分别来源，不将特定基金或历史登记自动视为当前状态。",
+      "facts": [
+        {
+          "field": "historical_manager_registration",
+          "label": "管理人历史登记",
+          "value": "公开发行文件记载北京新鼎荣盛资本管理有限公司于2015年7月16日登记，编号 P1018330。",
+          "source_id": "PROFILE-COLLECT-INV-bc7becc926f97f-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "融资报道将新鼎资本列为格通智联融资参投方。",
+          "source_id": "PROFILE-COLLECT-INV-bc7becc926f97f-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 格通智联 Pre-A轮 本轮参投。",
+          "description": "融资来源记录：格通智联 · Pre-A轮 · 2026-08-25 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a3446f702110142"
         },
         {
-          "description": "公开融资来源将其列为 千寻智能 A+轮 本轮参投。",
+          "description": "融资来源记录：千寻智能 · A+轮 · 2026-04-07 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c7d67ad33d44d659"
         },
         {
-          "description": "公开融资来源将其列为 极佳视界 Pre-B轮 本轮参投。",
+          "description": "融资来源记录：极佳视界 · Pre-B轮 · 2026-03-05 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fdfe58e2e68c7e9e"
-        },
-        {
-          "description": "公开融资来源将其列为 千寻智能 2026年3月轮次投资方。",
-          "source_id": "FISRC-c7d67ad33d44d659"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-2a3446f702110142",
+          "source_id": "PROFILE-COLLECT-INV-bc7becc926f97f-1",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2017-10-18/1204059575.PDF",
+          "source_title": "关于北京亿华通科技股份有限公司股票发行合法合规性意见",
+          "source_content_hash": "c78e05795b3100b19d491370ede0f6c932859647af608c35b2f7a189e6d922ce",
+          "quote": "其管理人北京新鼎荣盛资本管理有限公司已于2015年7月16日在中国证券投资 基金业协会办理了私募基金管理人登记，登记编号为 P1018330。",
+          "quote_hash": "d63f1d803120ef620d12350bbffbfc81dd8fc4ab99c8861b2b16819cb15c8b5e"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-bc7becc926f97f-2",
           "source_url": "https://news.pedaily.cn/202608/568060.shtml",
           "source_title": "格通智联完成数亿元Pre A轮融资_投资界",
           "source_content_hash": "3ab0e92dadc5f0139bb3e9b5d7d60d2f885fb0451b24332ece4145c0fcf77bd4",
@@ -323,18 +340,26 @@
           "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
         },
         {
+          "source_id": "FISRC-2a3446f702110142",
+          "source_url": "https://news.pedaily.cn/202608/568060.shtml",
+          "source_title": "格通智联完成数亿元Pre A轮融资",
+          "source_content_hash": "98c49c9e9931e708",
+          "quote": "本轮融资由张江高科领投，壁仞科技、国开科创、新鼎资本、联想创投、尚融资本等知名产业方与投资机构跟投。",
+          "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
+        },
+        {
           "source_id": "FISRC-c7d67ad33d44d659",
           "source_url": "https://news.pedaily.cn/202604/562491.shtml",
           "source_title": "投资界24h | 首发|30天，千寻智能融资30亿；1000亿，武汉国资赚翻了；米哈游3位创始人捐钱了_投资界",
-          "source_content_hash": "0e9ca6e6e86a867fd22900b7401405ac68b6385058bcb569e54c0929c40d459c",
+          "source_content_hash": "0e9ca6e6e86a867f",
           "quote": "达晨财智、某头部人民币基金、银河源汇、图灵基金、新鼎资本、庚辛资本等重磅加持",
           "quote_hash": "2a4211059643fbc9e0b2bd8196d125cfc74e96aa1738bf9dd6392dac770a147f"
         },
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",
-          "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿_投资界",
-          "source_content_hash": "999496916ab4da4f9513a18f2b966e8bfdc1d9daad283c092347a4b30748208f",
+          "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+          "source_content_hash": "7d9409a9ba1e94fc",
           "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
           "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
         }

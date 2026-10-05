@@ -139,30 +139,67 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段和支票规模据 Acrew 官网；Wispr 为机构自述的单一投资案例，不代表完整组合。",
+      "summary": "Acrew Capital 是一家提供早期及成长阶段风险投资的机构。官网列出的 Early 策略聚焦 Seed 至 Series A，单笔规模为 100 万至 1,500 万美元；Inflection 策略面向 Series B 及之后的成长阶段，单笔规模为 1,000 万至 5,000 万美元。Acrew 自己发布的文章称其参与了 Wispr 的 2.8 亿美元 Series B。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Early：Seed 至 Series A；Inflection：成长阶段、Series B 及以后。",
+          "source_id": "B24-ACREW-HOME"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "披露的投资金额",
+          "value": "Early：100 万至 1,500 万美元；Inflection：1,000 万至 5,000 万美元。",
+          "source_id": "B24-ACREW-HOME"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "TechCrunch 报道将 Acrew 列为 Wispr 2.8 亿美元 B 轮新投资方。",
-          "source_id": "PROFILE-502b6a2b01b3483e1d2b"
+          "description": "Acrew 自述参与 Wispr 的 2.8 亿美元 Series B；Menlo Ventures 领投。",
+          "source_id": "B24-ACREW-WISPR"
         },
         {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e7a3713da8f3e54"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.acrewcapital.com/",
+          "url": "https://www.acrewcapital.com/",
+          "source_id": "B24-ACREW-HOME"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PROFILE-502b6a2b01b3483e1d2b",
-          "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/",
-          "source_title": "Wispr raises $280M at $2B valuation as it looks beyond dictation | TechCrunch",
-          "source_content_hash": "506649963a77e50322405fc40852df8eadb62f472f7f3d4087cde118e4447b39",
-          "quote": "The company also gained new investors such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital.",
-          "quote_hash": "bb474ea3098824be46b2b2ab9a0853ce66a9fb8461ede401c7aa84afb6b998fa"
+          "source_id": "B24-ACREW-HOME",
+          "source_url": "https://www.acrewcapital.com/",
+          "source_title": "Home",
+          "source_content_hash": "c88b77b5f3fe2d34fcf33324ca72211d457b99ca79397e44bd06e2391b1f236e",
+          "quote": "Early Seed - Series A Check size $1-15 MM Lead / Co-Lead",
+          "quote_hash": "b5d248ca4c01f4212f83b77b46e8bbb0aa0af99b0c95eb70f7162416ffa0f326"
+        },
+        {
+          "source_id": "B24-ACREW-INFLECTION",
+          "source_url": "https://www.acrewcapital.com/",
+          "source_title": "Home",
+          "source_content_hash": "c88b77b5f3fe2d34fcf33324ca72211d457b99ca79397e44bd06e2391b1f236e",
+          "quote": "Inflection Growth Stage / Series B+ Check size $10-50 MM",
+          "quote_hash": "6f3773b5586eab61666a14e12b6791feb1c66702d17dafd4155c71e1191b728f"
+        },
+        {
+          "source_id": "B24-ACREW-WISPR",
+          "source_url": "https://perspectives.acrewcapital.com/p/why-we-backed-wispr-the-interface",
+          "source_title": "Why We Backed Wispr: The Interface That Finally Listens",
+          "source_content_hash": "02cad822af762b67bc5b366b3b706a08051efd40155952a83cf95571f255f43f",
+          "quote": "We are proud to share that Acrew has joined Wispr’s $280 million Series B, led by Menlo Ventures, alongside Notable Capital, Forerunner, Goodwater, Peak XV, and new investors Together Fund and Plus Capital, valuing the company at $2 billion.",
+          "quote_hash": "bfc5607e3827d95350910ed4929dcfc3688e7172b40b2998901e2121c7ec4243"
         },
         {
           "source_id": "FISRC-2e7a3713da8f3e54",
@@ -173,11 +210,11 @@
           "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "Acrew Capital 是一家提供早期及成长阶段风险投资的机构。官网列出的 Early 策略聚焦 Seed 至 Series A，单笔规模为 100 万至 1,500 万美元；Inflection 策略面向 Series B 及之后的成长阶段，单笔规模为 1,000 万至 5,000 万美元。Acrew 自己发布的文章称其参与了 Wispr 的 2.8 亿美元 Series B。"
     },
     "translations": {
       "zh-CN": {

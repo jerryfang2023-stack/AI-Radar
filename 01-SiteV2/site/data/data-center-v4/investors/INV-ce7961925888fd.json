@@ -139,33 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "last_verified_at": "2026-10-05",
+      "coverage_status": "researched",
+      "coverage_note": "机构官网公开了AI与深科技投资方向及早期投资策略。爱诗科技融资报道将常春藤资本列为C+轮参与方，但没有披露其投资金额。",
+      "summary": "常春藤资本官网称其聚焦人工智能与深科技，主要进行早期投资并长期陪伴项目。投资界2026年7月的报道将常春藤资本列入爱诗科技C+轮参与方；报道未披露其出资金额。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向与策略",
+          "value": "官网介绍其聚焦AI与深科技，以早期投资为主，强调长期陪伴与连续加注。",
+          "source_id": "ivy_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 爱诗科技 C轮 本轮参投。",
+          "description": "投资界报道将常春藤资本列为爱诗科技2026年C+轮参与机构之一；没有披露机构的具体出资额。",
+          "source_id": "pixverse_cplus"
+        },
+        {
+          "description": "融资来源记录：爱诗科技 · C轮 · 2026-07-14 · 本轮参投 · 29.8亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9476e3eff9c1e8fe"
         }
       ],
       "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-9476e3eff9c1e8fe",
-          "source_url": "https://news.pedaily.cn/202607/566238.shtml",
-          "source_title": "爱诗科技完成29.8亿元C轮融资，专注AI视频生成大模型_投资界",
-          "source_content_hash": "8324c63d65050abcc0a8a5f7034d5601654dbf62b66c75d4b455434fd8e6be17",
-          "quote": "Lollapalooza Capital（王慧文家办）、常春藤资本、惠远资本、钟鼎资本、韩国未来资产、OCBC 生态下 Lion X 基金、蓝色光标、CloudAlpha、iGlobe Partners 等 十余家国内外机构参与投资",
-          "quote_hash": "9515d24c1ea60f07dd7e026f73095de5c8e568b800de1022cbbb69433d560b5c"
-        }
-      ],
-      "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "常春藤资本官网公开了其投资方向、阶段与方法；融资报道提供一项具体交易记录。",
+      "sources": [
+        {
+          "source_id": "ivy_strategy",
+          "source_url": "https://www.ivycapital.com/index.php",
+          "source_title": "常春藤资本 · Ivy Capital",
+          "source_content_hash": "76d57dfd7a5d43a1de96d421802521fc2ccad8d3b6bfc955a89003d7a07d23a8",
+          "quote": "常春藤资本聚焦人工智能与深科技两大板块，寻找具备长期技术壁垒与产业价值的创业团队。以早期投资为主，坚持长期陪伴与连续加注。",
+          "quote_hash": "714cd1eaa999b37f96b09757a25fe9401b2981a4c11bb8eb0e30ffc9db71ba05"
+        },
+        {
+          "source_id": "pixverse_cplus",
+          "source_url": "https://news.pedaily.cn/202607/566238.shtml",
+          "source_title": "爱诗科技完成29.8亿元C轮融资，专注AI视频生成大模型_投资界",
+          "source_content_hash": "8324c63d65050abcc0a8a5f7034d5601654dbf62b66c75d4b455434fd8e6be17",
+          "quote": "常春藤资本、惠远资本、钟鼎资本、韩国未来资产",
+          "quote_hash": "4f3f2741fd9b98a12652ba8e1e8a5fef01258b3040ed6644b55e06dcf2109288"
+        },
+        {
+          "source_id": "FISRC-9476e3eff9c1e8fe",
+          "source_url": "https://news.pedaily.cn/202607/566238.shtml",
+          "source_title": "爱诗科技完成29.8亿元C轮融资，专注AI视频生成大模型",
+          "source_content_hash": "31557c2904ef4cb8",
+          "quote": "Lollapalooza Capital（王慧文家办）、常春藤资本、惠远资本、钟鼎资本、韩国未来资产、OCBC 生态下 Lion X 基金、蓝色光标、CloudAlpha、iGlobe Partners 等 十余家国内外机构参与投资",
+          "quote_hash": "9515d24c1ea60f07dd7e026f73095de5c8e568b800de1022cbbb69433d560b5c"
+        }
+      ]
     }
   }
 }

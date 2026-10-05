@@ -139,33 +139,131 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、策略和Monogram组合关系据机构官网；融资报道仅作为该条融资关联的补充证据，档案不代表完整组合。",
+      "summary": "Maxitech 是一家专注企业级 AI 创业公司的投资机构。官网称其支持 B2B SaaS 与 AI 公司，并通过企业客户网络和市场拓展资源支持被投团队；其公开组合列有 Monogram。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Preseed、Seed、Series A；官网披露单笔投资范围为 5万至25万美元。",
+          "source_id": "B23-MAX-PITCH"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "使用 AI 提供企业软件的 B2B SaaS 公司。",
+          "source_id": "B23-MAX-FOCUS"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投后支持",
+          "value": "为创业公司提供企业客户线索、市场验证及企业增长渠道。",
+          "source_id": "B23-MAX-SUPPORT"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Monogram AI, Inc. 种子轮 本轮参投。",
+          "description": "Maxitech 官网将 Monogram 列为其 AI 初创公司组合成员；融资报道也将 Maxitech 列入 Monogram 种子轮投资方。",
+          "source_id": "B23-MAX-MONOGRAM"
+        },
+        {
+          "description": "SaaS News 将 Maxitech 列入 Monogram 种子轮投资方名单。",
+          "source_id": "B23-MAX-NEWS"
+        },
+        {
+          "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-907e4297862ddd8c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.maxitech.com/",
+          "url": "https://www.maxitech.com/",
+          "source_id": "B23-MAX-HOME"
+        },
+        {
+          "kind": "application",
+          "label": "项目申请",
+          "value": "https://maxitech.com/pitch-us",
+          "url": "https://maxitech.com/pitch-us",
+          "source_id": "B23-MAX-PITCH"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-907e4297862ddd8c",
+          "source_id": "B23-MAX-HOME",
+          "source_url": "https://www.maxitech.com/",
+          "source_title": "Empowering AI Startups for Global Enterprise Innovation | Maxitech",
+          "source_content_hash": "5b8cb1b6ea9a0973d56df7387ac0c3e416775e571d618ca756a857d343df5cb7",
+          "quote": "Maxitech bridges the gap between pioneering AI startups and global corporations seeking to rapidly adopt and implement the most effective software solutions.",
+          "quote_hash": "1f7811dfdb79e145942305c260a1eb8a40376adb7e795d371a0943f3b5d863c0"
+        },
+        {
+          "source_id": "B23-MAX-PITCH",
+          "source_url": "https://maxitech.com/pitch-us",
+          "source_title": "Pitch Us | Maxitech",
+          "source_content_hash": "a784732e115f751b21fc6d3abcbfc951fda1664e5873423461db303bd89e7c97",
+          "quote": "We invest in early-stage startups (Preseed, Seed, and Series A) by contributing checks ranging from $50K-$250K.",
+          "quote_hash": "984ad3dc6994f3f49d9466e1afe02eed505a5fcbb85c7966502af1f452c28b88"
+        },
+        {
+          "source_id": "B23-MAX-PORTFOLIO",
+          "source_url": "https://www.maxitech.com/portfolio",
+          "source_title": "Investing in AI Enterprise Solutions | Maxitech",
+          "source_content_hash": "40f302f353641c8e730d2ddb72382e3cbb3aff5017bce3a9157405a05f117603",
+          "quote": "Maxitech champions a portfolio of trailblazing AI startups reshaping the landscape of enterprise technology.",
+          "quote_hash": "8c8dd444e4f82d8960e7405c0f66ff2eb2aa404c19b981d98fa02c68ae1c0e07"
+        },
+        {
+          "source_id": "B23-MAX-NEWS",
           "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
           "source_title": "Monogram Raises $40M Seed",
           "source_content_hash": "4be79be5a887ca73de6abc2409f9b7f82e4046a8761c158ea3d869653f69f67a",
           "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
           "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
+        },
+        {
+          "source_id": "B23-MAX-FOCUS",
+          "source_url": "https://maxitech.com/pitch-us",
+          "source_title": "Pitch Us | Maxitech",
+          "source_content_hash": "a784732e115f751b21fc6d3abcbfc951fda1664e5873423461db303bd89e7c97",
+          "quote": "We invest exclusively in B2B SaaS startups that leverage AI to provide enterprises in any sector with leading-edge software",
+          "quote_hash": "cf3870797761cc13becad04fcdc7a86a517f71b911ec596f2bf3c9374252135f"
+        },
+        {
+          "source_id": "B23-MAX-SUPPORT",
+          "source_url": "https://www.maxitech.com/",
+          "source_title": "Empowering AI Startups for Global Enterprise Innovation | Maxitech",
+          "source_content_hash": "5b8cb1b6ea9a0973d56df7387ac0c3e416775e571d618ca756a857d343df5cb7",
+          "quote": "Unlike many VCs, Maxitech supports startups in finding their first proof-of-concept clients by providing unrestricted access to our vast network of enterprise customers and design partners.",
+          "quote_hash": "98ca4f60181077687936b16c45982df9392df636686bcd4d800fef7be25c52dd"
+        },
+        {
+          "source_id": "B23-MAX-MONOGRAM",
+          "source_url": "https://www.maxitech.com/portfolio",
+          "source_title": "Investing in AI Enterprise Solutions | Maxitech",
+          "source_content_hash": "40f302f353641c8e730d2ddb72382e3cbb3aff5017bce3a9157405a05f117603",
+          "quote": "Monogram User interface for the AGI.",
+          "quote_hash": "36f91328384f478a3c745a0bd22bce04eb999037089d7450ccfd6c9213b89afb"
+        },
+        {
+          "source_id": "FISRC-907e4297862ddd8c",
+          "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+          "source_title": "Monogram 获 4000 万美元种子轮融资",
+          "source_content_hash": "3a584a627e1535ff",
+          "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
+          "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "Maxitech 是一家专注企业级 AI 创业公司的投资机构。官网称其支持 B2B SaaS 与 AI 公司，并通过企业客户网络和市场拓展资源支持被投团队；其公开组合列有 Monogram。"
     }
   }
 }

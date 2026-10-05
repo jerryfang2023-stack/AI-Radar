@@ -137,29 +137,33 @@
       }
     ],
     "public_profile": {
-      "summary": "New York Life 的投资业务通过 NYL Investors 等关联投资机构开展；New York Life Ventures 官网披露其自2012年起投资并与科技公司合作，覆盖金融科技、保险科技、企业软件、数字健康和房地产科技。",
+      "summary": "New York Life 的投资体系包括管理公司一般账户的 NYL Investors，以及其企业创投部门 NYL Ventures；官方资料将 NYL Ventures 描述为 New York Life 的 corporate venture capital arm，覆盖金融服务科技及数据、云与网络安全等方向。Norm AI 2026年Series C公告将 New York Life 列为参与方，未说明具体投资部门或金额。",
       "facts": [
         {
-          "field": "investment_business",
-          "label": "NYL Investors 官网",
-          "value": "NYL Investors 为 New York Life 管理综合投资项目。",
-          "source_id": "PROFILE-INV-a9c2f70ac40b65-1"
+          "field": "corporate_venture_arm",
+          "label": "企业创投部门",
+          "value": "New York Life 官方称 NYL Ventures 是其企业创投部门；2022年资料显示其成立十周年。",
+          "source_id": "PROFILE-B9-INV-a9c2f70ac40b65-1"
         },
         {
-          "field": "venture_activity",
-          "label": "New York Life Ventures 官网",
-          "value": "自2012年起投资并与创新科技公司合作。",
-          "source_id": "PROFILE-INV-a9c2f70ac40b65-2"
+          "field": "investment_focus",
+          "label": "创投方向",
+          "value": "NYL Ventures 官方资料列有金融服务科技，以及数据分析、云架构和网络安全等方向。",
+          "source_id": "PROFILE-B9-INV-a9c2f70ac40b65-2"
         },
         {
-          "field": "venture_focus",
-          "label": "New York Life Ventures 官网",
-          "value": "金融科技、保险科技、企业软件、数字健康及房地产科技，阶段从种子到成长。",
-          "source_id": "PROFILE-INV-a9c2f70ac40b65-3"
+          "field": "general_account_management",
+          "label": "一般账户管理",
+          "value": "NYL Investors 官网称其为 New York Life 管理综合投资项目，服务公司一般账户。",
+          "source_id": "PROFILE-B9-INV-a9c2f70ac40b65-4"
         }
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Norm AI 2026年7月7日公告将 New York Life 列为其1.2亿美元Series C参与方；未披露单独金额或投资部门。",
+          "source_id": "PROFILE-B9-INV-a9c2f70ac40b65-5"
+        },
         {
           "description": "融资来源记录：Nomos Ai Inc. · C轮 · 2026-07-07 · 本轮参投 · 1.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1b05d1dc5cb45a7b"
@@ -167,45 +171,53 @@
       ],
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档案按母公司公开披露的投资业务范围建档，明确区分 New York Life、NYL Investors 与 New York Life Ventures；官网当前披露的规模只归于相应投资业务。",
+      "coverage_status": "researched",
+      "coverage_note": "按 New York Life、NYL Investors 与 NYL Ventures 的公开关系区分主体；不把其2026年 Norm AI 投资自动归为 NYL Ventures，也不把 NYL Investors 等同于创投基金。",
       "current_roles": [],
       "career": [],
       "education": [],
       "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "New York Life Ventures 官网",
-          "value": "New York Life Ventures",
-          "url": "https://www.nylventures.com/?source_capture=2026-10-03&cycle=17",
-          "source_id": "PROFILE-INV-a9c2f70ac40b65-1"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-INV-a9c2f70ac40b65-1",
-          "source_url": "https://www.nylim.com/who-we-are/our-global-boutiques/nyl-investors?source_capture=2026-10-03&cycle=17",
+          "source_id": "PROFILE-B9-INV-a9c2f70ac40b65-1",
+          "source_url": "https://www.newyorklife.com/newsroom/ventures-tenth-anniversary-surpasses-one-billion-aum",
+          "source_title": "New York Life Ventures surpasses $1 billion in assets under management and 250 proof-of-concept tests at 10-year mark",
+          "source_content_hash": "8980ec50db3df6e91c4e4cf932608253ed1105baa600cd3d24fbcefb8cc019d8",
+          "quote": "New York Life Ventures (NYL Ventures), the corporate venture capital arm of New York Life",
+          "quote_hash": "64b6d44bd6622391b1d0006efafa06cf02960bd9f81c8f130b3e48691727fc3b"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-a9c2f70ac40b65-2",
+          "source_url": "https://www.newyorklife.com/newsroom/ventures-tenth-anniversary-surpasses-one-billion-aum",
+          "source_title": "New York Life Ventures surpasses $1 billion in assets under management and 250 proof-of-concept tests at 10-year mark",
+          "source_content_hash": "8980ec50db3df6e91c4e4cf932608253ed1105baa600cd3d24fbcefb8cc019d8",
+          "quote": "financial services-related technologies, as well as industry-agnostic capabilities across data and analytics, cloud architecture, and cybersecurity.",
+          "quote_hash": "cb989acbbcc93f73c7983d39db0d76d2814a1f076ea060af0696bdf6a68ed3b8"
+        },
+        {
+          "source_id": "PROFILE-B9-INV-a9c2f70ac40b65-3",
+          "source_url": "https://www.nylim.com/who-we-are/our-global-boutiques/nyl-investors",
           "source_title": "NYL Investors | New York Life Investment Management",
           "source_content_hash": "a954dc545fa4bc849fa8656482befa38062eebb62b2352d63aa5d4f31e425637",
-          "quote": "For more than a century, NYL Investors has managed a comprehensive investment program for New York Life",
-          "quote_hash": "acd8a3270f9f7113abe18fe80f506fd7a521ce6d2534d64ff97978244560db96"
+          "quote": "For more than a century, NYL Investors has managed a comprehensive investment program for New York Life, the largest mutual life insurance company in the U.S.",
+          "quote_hash": "068d4628692e3344ccfbe4cc6e83f9c5574aaf1633079430728774f8594ddbc4"
         },
         {
-          "source_id": "PROFILE-INV-a9c2f70ac40b65-2",
-          "source_url": "https://www.nylventures.com/?source_capture=2026-10-03&cycle=17",
-          "source_title": "New York Life Ventures",
-          "source_content_hash": "0f87be470dd4e692b7934b3bf9f772883d4d792c475409f5f39aeaba7884d1aa",
-          "quote": "Investing and partnering with innovative technology companies since 2012.",
-          "quote_hash": "d3888ab7f4e14f2adaf9b04c2fffae8852d42bd30d151045fb9d12abd714c293"
+          "source_id": "PROFILE-B9-INV-a9c2f70ac40b65-4",
+          "source_url": "https://www.nylim.com/who-we-are/our-global-boutiques/nyl-investors",
+          "source_title": "NYL Investors | New York Life Investment Management",
+          "source_content_hash": "a954dc545fa4bc849fa8656482befa38062eebb62b2352d63aa5d4f31e425637",
+          "quote": "for the NYL General Account",
+          "quote_hash": "7dd3dfff0c7a7a1b4e73d97f812db5e3b0b7de3f6355361b1e8e6d5e746514eb"
         },
         {
-          "source_id": "PROFILE-INV-a9c2f70ac40b65-3",
-          "source_url": "https://www.nylventures.com/?source_capture=2026-10-03&cycle=17",
-          "source_title": "New York Life Ventures",
-          "source_content_hash": "0f87be470dd4e692b7934b3bf9f772883d4d792c475409f5f39aeaba7884d1aa",
-          "quote": "Focus Areas: Fintech, Insurtech, Enterprise Software, and adjacent categories such as Digital Health and Proptech",
-          "quote_hash": "19c4e54ddf2b2fbe9ced0fe2423d6b9193700dccb9a24cdc209deda71545abb4"
+          "source_id": "PROFILE-B9-INV-a9c2f70ac40b65-5",
+          "source_url": "https://www.norm.ai/resources/norm-ai-raises-20-million-at-a-1-2-billion-valuation",
+          "source_title": "Norm Ai Raises $120 Million at a $1.2 Billion Valuation Led by Khosla Ventures | Norm Ai",
+          "source_content_hash": "2692ed592e66fd725893ff7d334d4e61574d7ba42e05a40010458db644209a60",
+          "quote": "Blackstone, Bain Capital Ventures (BCV), Craft Ventures, Coatue, Vanguard, New York Life, TIAA, Tony James",
+          "quote_hash": "341b349b5f894182d806b18f7699ab534259fb15f4cf0fbe8c0a54806d657ce6"
         },
         {
           "source_id": "FISRC-1b05d1dc5cb45a7b",
@@ -216,7 +228,7 @@
           "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

@@ -139,29 +139,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "Zenity 官方公告将 DTCP 列为 Series C 既有投资方及参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构投资策略来自 DTCP 官网；Zenity 融资活动来自公司官方公告，未披露 DTCP 单独出资额。",
+      "summary": "DTCP 官网介绍其 Growth 策略面向 Series B 及之后的企业软件公司，重点覆盖网络安全、SaaS、DevOps、云和 AI。Zenity 官方公告将 DTCP 列为 Series C 既有投资方。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "企业软件，包含网络安全、SaaS、DevOps、云与 AI",
+          "source_id": "PROFILE-B12-INV-b7027addb5072a-3"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "增长阶段，重点为 Series B 及之后",
+          "source_id": "PROFILE-B12-INV-b7027addb5072a-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "参与 Zenity Series C。",
+          "source_id": "PROFILE-B12-INV-b7027addb5072a-1"
+        },
+        {
+          "description": "融资来源记录：Zenity · C轮 · 2026-08-03 · 本轮参投 · $125 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7bf361b38b905ca3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://www.dtcp.capital/investment-strategies/growth/",
+          "source_id": "PROFILE-B12-INV-b7027addb5072a-2"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-7bf361b38b905ca3",
+          "source_id": "PROFILE-B12-INV-b7027addb5072a-1",
           "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
           "source_title": "Zenity Raises $125 Million to Secure the Era of 1 Billion AI Agents",
           "source_content_hash": "4995a46341ba6a8b4344e27aeb37fd7e8eb17fb79b8d3701c41bc1a77b250ffe",
           "quote": "LG Technology Ventures joined the round, alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital. \"We have followed Zenity&#x27;s journey for years and have been impressed by the team&#x27;s vision and execution. As enterprises rapidly adopt AI agents across critical workflows, organizations need a new approach to security",
           "quote_hash": "58cbf02340ade6e2b16eb3264af57b69613ec23a34c61d96723da1a1e91d6111"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b7027addb5072a-2",
+          "source_url": "https://www.dtcp.capital/investment-strategies/growth/",
+          "source_title": "Growth | Scaling Enterprise SaaS Globally",
+          "source_content_hash": "061d79b99833e720d0a2f6eeaa504e90a63db856b1242c7a8e388a29810759f0",
+          "quote": "DTCP Growth is the partner of choice for enterprise SaaS companies pursuing Series B financing and beyond",
+          "quote_hash": "aa3f5491d15738695884ab5e2038008ae764a1f1b27170c7b9e38a95da3087b5"
+        },
+        {
+          "source_id": "PROFILE-B12-INV-b7027addb5072a-3",
+          "source_url": "https://www.dtcp.capital/investment-strategies/growth/",
+          "source_title": "Growth | Scaling Enterprise SaaS Globally",
+          "source_content_hash": "061d79b99833e720d0a2f6eeaa504e90a63db856b1242c7a8e388a29810759f0",
+          "quote": "We target early-growth and growth-stage innovators in sectors such as Cybersecurity, Vertical SaaS, DevOps, Cloud, AI, and Robotics across Europe, the US, and Israel.",
+          "quote_hash": "482b5d0441ba2aed0dc600dc6d614bb663ed5faf4d153e9a16c2c99830436c36"
+        },
+        {
+          "source_id": "FISRC-7bf361b38b905ca3",
+          "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+          "source_title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
+          "source_content_hash": "1335412447baff3bb277c848e9b44b65104b5c73a088edea02c4483b70164744",
+          "quote": "alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital",
+          "quote_hash": "3f04ae6390a8470ee7784d445965e2efd5568199fcb106ebc6ca971196da7664"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -139,40 +139,56 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动及来源明确记载的身份信息，不补写未经核实的职业经历或个人出资金额。",
-      "summary": "Vertex Ventures SEA 关于 FORMAS.AI 预种子轮的公告将 Jeffrey Tiong 列为天使投资者，并称其为 PatSnap 联合创始人；未披露其个人出资额。",
+      "coverage_status": "researched",
+      "coverage_note": "EY 确认其 PatSnap 职务，Vertex Ventures SEA 确认一项天使投资参与；公开材料未提供其完整履历或个人投资金额。",
+      "summary": "EY Singapore 将 Jeffrey Tiong 列为 PatSnap 创始人兼 CEO；Vertex Ventures SEA 的 FORMAS.AI 融资公告称他为 PatSnap 联合创始人并列入天使投资人名单。公告未披露其个人出资额。",
       "current_roles": [
         {
-          "title": "Co-founder",
+          "title": "Founder and CEO",
           "organization": "PatSnap",
-          "source_id": "formas-jeffrey-tiong-angel-2026"
+          "source_id": "jeffrey_ey"
         }
       ],
       "career": [],
       "education": [],
-      "experience_summary": "身份关联与交易关系均依据 Vertex Ventures SEA 对 FORMAS.AI 融资的公告；未补充来源未记载的经历。",
+      "experience_summary": "EY 官网确认其为 PatSnap 创始人兼 CEO；Vertex Ventures SEA 将其列为 FORMAS.AI 天使投资人，并称为 PatSnap 联合创始人。",
       "track_record": [
         {
-          "description": "Vertex Ventures SEA 将 Jeffrey Tiong（Co-founder of Patsnap）列为 FORMAS.AI 预种子轮天使投资者之一；未披露个人出资额。",
-          "source_id": "formas-jeffrey-tiong-angel-2026"
+          "description": "FORMAS.AI 官方融资公告将 Jeffrey Tiong 列为天使投资人之一，未披露个人出资额。",
+          "source_id": "jeffrey_vertex"
         },
         {
           "description": "融资来源记录：FORMAS.AI · 预种子轮 · 2026-04-29 · 本轮天使投资人 · 398万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dc1378b0805f976c"
         }
       ],
+      "facts": [],
+      "milestones": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "EY Singapore 人物页面",
+          "value": "https://www.ey.com/en_sg/ey-entrepreneur-of-the-year-singapore/judges-2025/jeffrey-tiong",
+          "url": "https://www.ey.com/en_sg/ey-entrepreneur-of-the-year-singapore/judges-2025/jeffrey-tiong",
+          "source_id": "jeffrey_ey"
+        }
+      ],
       "sources": [
         {
-          "source_id": "formas-jeffrey-tiong-angel-2026",
+          "source_id": "jeffrey_ey",
+          "source_url": "https://www.ey.com/en_sg/ey-entrepreneur-of-the-year-singapore/judges-2025/jeffrey-tiong",
+          "source_title": "Jeffrey Tiong​ | EY Singapore",
+          "source_content_hash": "3c008f3ae26e74ace13e6725005c627f732c287d436b67f38f57f359b44836de",
+          "quote": "Founder and CEO, Patsnap",
+          "quote_hash": "a4cff706ec2a481e92c22d7b00e5c31fb846ec13aeb1f1208887e2ee273bdb32"
+        },
+        {
+          "source_id": "jeffrey_vertex",
           "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
           "source_title": "FORMAS.AI Raises US$3.98 Million in Oversubscribed Pre-Seed Round to Build the AI-Native Design Workspace for Architecture | Vertex Ventures SEA",
           "source_content_hash": "e536bc23534753ef217c69211cc0b970eb0249522333eb166fe691ee22ce2840",
-          "quote": "angel investors including enterprise SaaS unicorn founder, Jeffrey Tiong, Co-founder of Patsnap",
-          "quote_hash": "45c4541c768d3092ec3a551c14c2c4004c9bc3ab9be2a0b77aec36605d090700"
+          "quote": "Jeffrey Tiong, Co-founder of Patsnap",
+          "quote_hash": "4d43b02df17646537e1c7f08228f01099ffeb67489d60dd9c964a00ef90dab4d"
         },
         {
           "source_id": "FISRC-dc1378b0805f976c",
@@ -183,7 +199,7 @@
           "quote_hash": "45c4541c768d3092ec3a551c14c2c4004c9bc3ab9be2a0b77aec36605d090700"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

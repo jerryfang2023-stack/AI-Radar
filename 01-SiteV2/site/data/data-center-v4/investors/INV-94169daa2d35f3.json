@@ -139,29 +139,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "华毅瀛飞 Pre-A 融资报道将华工投资列为战略投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体全称及华工科技全资子公司关系据上市公司公告核验；华毅瀛飞交易只记录公开披露的参与身份，未推断单笔金额。",
+      "summary": "华工科技公告明确，“华工投资”是其全资子公司武汉华工科技投资管理有限公司；公告披露该公司拟以不高于 9,800 万元参与发起华工未来基金，并持有 49% 财产份额。另一融资报道将“华工投资”列为华毅瀛飞 Pre-A 轮战略投资方。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "主体全称",
+          "value": "公告披露其拟以不高于人民币9,800万元参与发起华工未来基金，并持有49%财产份额。",
+          "source_id": "PROFILE-B8-INV-94169daa2d35f3-2"
+        },
+        {
+          "field": "investment_activity",
+          "label": "投资活动",
+          "value": "公告披露其拟以不高于人民币9,800万元作为有限合伙人发起设立华工未来基金。",
+          "source_id": "PROFILE-B8-INV-94169daa2d35f3-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资报道称华毅瀛飞战略投资方包括华工投资。",
+          "description": "2026年华毅瀛飞 Pre-A 轮报道将华工投资列为战略投资方；来源未披露其单独出资额。",
+          "source_id": "PROFILE-B8-INV-94169daa2d35f3-1"
+        },
+        {
+          "description": "融资来源记录：华毅瀛飞 · Pre-A轮 · 2026-04-13 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-13a43855ea188967"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-13a43855ea188967",
+          "source_id": "PROFILE-B8-INV-94169daa2d35f3-1",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
           "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资_新浪科技_新浪网",
           "source_content_hash": "3083dbb3685e359ce6346027232c7772ed982294d1dd0803bc5858444cc1921c",
-          "quote": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资_新浪科技_新浪网 新浪首页 新闻 体育 财经 娱乐 科技 博客 图片 专栏 更多 汽车 教育 时尚 女性 星座 健康 房产 历史 视频 收藏 育儿 读书 佛学 游戏 旅游 邮箱 导航 移动客户端 新浪微博 新浪新闻 新浪财经 新浪体育 新浪众测 新浪博客 新浪视频 新浪游戏 天气通 我的收藏 注册 登录 新浪科技 > 滚动新闻 > 正文 华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资 华工",
-          "quote_hash": "10bcc6762122780f68c77581d8c80d564c10ca2d25d3b1709fb15cb1e94f211a"
+          "quote": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
+          "quote_hash": "e2f6b04eeef52e936510c75ccfd86c0e86c5633d91e6228a70ca8716e09718ee"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-94169daa2d35f3-2",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-10-24/1224729439.PDF",
+          "source_title": "华工科技产业股份有限公司关于与专业投资机构共同投资暨关联交易的公告",
+          "source_content_hash": "7a0ab2d4e3eca26806d7025b36686f34fa1cd58c74e8acd3045890f0c24e5308",
+          "quote": "华工科技全资子公司武汉华工科技投资管理有限公司（以下简称“华工投资”）",
+          "quote_hash": "8c9af84e6496560b75f5c7550361c0a18df7d7930d0b651751dba983b56ba4c4"
+        },
+        {
+          "source_id": "PROFILE-B8-INV-94169daa2d35f3-3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-10-24/1224729439.PDF",
+          "source_title": "华工科技产业股份有限公司关于与专业投资机构共同投资暨关联交易的公告",
+          "source_content_hash": "7a0ab2d4e3eca26806d7025b36686f34fa1cd58c74e8acd3045890f0c24e5308",
+          "quote": "华工投资拟以自有资金不高于 9,800 万元与专业机构共同发起设立华工未 来（武汉）创业投资基金合伙企业（有限合伙）（暂定名，以工商注册为准，以 下简称“华工未来基金”），并持有华工未来基金 49%的财产份额。华工投资 作为华工未来基金有限合伙人",
+          "quote_hash": "23bcfceb0ab0e1175983e27f7ebc3e281cb05dfd202eac05f722f4185b7b2545"
+        },
+        {
+          "source_id": "FISRC-13a43855ea188967",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
+          "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
+          "source_content_hash": "16a36ffc37b94da5",
+          "quote": "战略投资方包括光通信及半导体行业龙头企业旗下投资机构华工投资、长飞基金、诺华资本，以及长江创投",
+          "quote_hash": "6a40b0e1a44b4528c79519cb2b1ce4c82c035d17ec2f1bcc6b571d66db4b422a"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

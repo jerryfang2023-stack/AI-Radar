@@ -123,26 +123,31 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动及来源明确记载的身份信息，不补写未经核实的职业经历或个人出资金额。",
-      "summary": "Blacksmith 的种子轮公告将 Theo Browne 列为天使支持者之一，并称其为 T3 Chat 创始人；公告未披露其个人出资额。",
+      "coverage_status": "researched",
+      "coverage_note": "Y Combinator 的 T3 Chat 公司页列出 Theo Browne 的创始人职务并提及此前在 Twitch 工作；Blacksmith 官方种子轮公告将其列为天使投资人。",
+      "summary": "Y Combinator 的 T3 Chat 公司页列 Theo Browne 为活跃创始人，职务标为 Ping Labs 创始人兼 CEO；该页称他曾在 Twitch 工作。Blacksmith 官方种子轮公告将 Theo Browne 列入天使投资人名单。",
       "current_roles": [
         {
-          "title": "Founder",
-          "organization": "T3 Chat",
-          "source_id": "blacksmith-theo-browne-seed-angel"
+          "title": "Founder and CEO",
+          "organization": "Ping Labs",
+          "source_id": "yc_t3"
         }
       ],
-      "career": [],
+      "career": [
+        {
+          "organization": "Twitch",
+          "title": "职位未披露",
+          "period": "未注明",
+          "description": "Y Combinator 公司页称 Theo Browne 曾在 Twitch 工作，未列具体职位或任职时间。",
+          "source_id": "yc_t3_career"
+        }
+      ],
       "education": [],
-      "experience_summary": "Theo Browne 与 T3 Chat 的关联仅按 Blacksmith 公告中 “Founder of T3 Chat” 的标注记录，未补充其他职业履历。",
+      "experience_summary": "公开资料支持其 Ping Labs 创始人兼 CEO 职务、此前在 Twitch 工作的经历，以及 Blacksmith 公告披露的一项天使投资参与。",
       "track_record": [
         {
-          "description": "Blacksmith 种子轮公告列 Theo Browne 为天使支持者之一，并以 Founder of T3 Chat 标注其身份；未披露其个人出资额。",
-          "source_id": "blacksmith-theo-browne-seed-angel"
+          "description": "Blacksmith 官方种子轮公告称 Theo Browne 是天使投资人之一，并将他标注为 T3 Chat 创始人；公告未披露个人投资金额。",
+          "source_id": "blacksmith_seed"
         },
         {
           "description": "融资来源记录：Blacksmith · 历史轮次未披露 · 种子轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
@@ -151,12 +156,28 @@
       ],
       "sources": [
         {
-          "source_id": "blacksmith-theo-browne-seed-angel",
+          "source_id": "yc_t3",
+          "source_url": "https://www.ycombinator.com/companies/t3-chat",
+          "source_title": "T3 Chat: The best AI chat you&#39;ve ever used | Y Combinator",
+          "source_content_hash": "5b9a0434f9815918a3eadccd14eae1280af48cfabb2fbcefc6a883e1cf71e1a3",
+          "quote": "Active Founders Theo Browne Founder CEO @ Ping Labs",
+          "quote_hash": "9cc4abb098067ffcb2ab0a2361cf7171f30d326f9176627d4b5d8601c497b3ad"
+        },
+        {
+          "source_id": "yc_t3_career",
+          "source_url": "https://www.ycombinator.com/companies/t3-chat",
+          "source_title": "T3 Chat: The best AI chat you&#39;ve ever used | Y Combinator",
+          "source_content_hash": "5b9a0434f9815918a3eadccd14eae1280af48cfabb2fbcefc6a883e1cf71e1a3",
+          "quote": "Used to work at Twitch.",
+          "quote_hash": "bb03ad68adf49f5d4ecefb2abda506e3cf62da49bb5a3a2488b34e4c5e440d02"
+        },
+        {
+          "source_id": "blacksmith_seed",
           "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
           "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
           "source_content_hash": "f0a8c6efed1593527cbcfd5d612329a573bbcbcca91bab3081f80abab8cf0840",
-          "quote": "Theo Browne (Founder of T3 Chat)",
-          "quote_hash": "da7a99420e560307952409a1269f5c7b8b78ecfdfd16b3ddb559dd5a97d5fca0"
+          "quote": "along with some prolific angels like Spencer Kimball (CEO of Cockroach Labs), Peter Mattis (CTO of Cockroach Labs), Rich Aberman (Co-founder of WePay), JJ Fliegelman (Co-founder of WayUp), Eli Brown (Founder of Guilded) and Theo Browne (Founder of T3 Chat).",
+          "quote_hash": "efe946d1b22bf18b4b86ef3de87b542522cac9b248dbbab5e17939dc25f51f2b"
         },
         {
           "source_id": "FISRC-ba55b463daced495",
@@ -167,7 +188,10 @@
           "quote_hash": "da7a99420e560307952409a1269f5c7b8b78ecfdfd16b3ddb559dd5a97d5fca0"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     },
     "translations": {
       "zh-CN": {

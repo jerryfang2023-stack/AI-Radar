@@ -194,10 +194,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "AMP官网称其为public benefit corporation，使命是支持独立前沿技术生态；融资来源列出其投资参与，本档案不将其归类为传统VC。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司性质与公开使命来自 AMP PBC 官网；River AI融资角色来自 TechCrunch。未将 AMP PBC 与名称相近的电网行业联盟或 AMP Coalition 混为一体。",
+      "summary": "AMP PBC 官网将其定位为公共利益公司，使命是最大化前沿技术产出。TechCrunch 将 AMP PBC 列为 River AI 种子/Series A 融资联合领投方。本档记录其公司和投资案例属性，不据此推断传统风险基金结构。",
+      "facts": [
+        {
+          "field": "corporate_form_and_mission",
+          "label": "官网披露的公司形式与使命",
+          "value": "AMP 官网称其为公共利益公司，旨在最大化前沿技术产出。",
+          "source_id": "PROFILE-c9b91f37f8f476006612"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {

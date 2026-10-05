@@ -180,10 +180,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "新浪财经报道将武岳峰科创列为面壁智能融资参与方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "黑芝麻智能公告于2026年1月披露投资意向及联合投资方预计金额；资金拟用于端侧AI和具身智能布局。未将联合金额归为武岳峰单独出资，也未描述为交割完成。另一项融资参与来自新浪财经报道。",
+      "summary": "黑芝麻智能官方公告称其与武岳峰科创及产业合作伙伴达成战略投资意向，武岳峰领投的联合投资方预计提供合计5亿元长期战略投资；公告称拟将该笔投资用于端侧 AI 和具身智能产业链布局。公告披露的是意向和联合投资金额，不等同于已完成交割或武岳峰单独出资额。",
+      "facts": [
+        {
+          "field": "strategic_investment_intent",
+          "label": "被投企业披露的战略投资意向",
+          "value": "黑芝麻智能称其与武岳峰科创及产业合作伙伴于2026年1月达成战略投资意向。",
+          "source_id": "PROFILE-COLLECT-INV-922eb77f54f6a3-I-2"
+        },
+        {
+          "field": "joint_investment_plan",
+          "label": "被投企业披露的联合投资计划",
+          "value": "公告称武岳峰领投的联合投资方预计向黑芝麻智能提供合计5亿元人民币的长期战略投资；这是联合投资方总额，不能据此确定武岳峰单独出资额。",
+          "source_id": "PROFILE-COLLECT-INV-922eb77f54f6a3-I-2"
+        },
+        {
+          "field": "announced_use_of_proceeds",
+          "label": "被投企业披露的拟定资金用途",
+          "value": "黑芝麻智能称拟将该笔投资用于端侧AI和具身智能产业链战略布局。",
+          "source_id": "PROFILE-COLLECT-INV-922eb77f54f6a3-I-2"
+        },
+        {
+          "field": "reported_investment_activity",
+          "label": "公开披露的融资参与",
+          "value": "新浪财经报道将武岳峰科创列为面壁智能2026年一轮融资的跟投机构之一。",
+          "source_id": "FISRC-5e868b9dacd5325c"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -206,6 +231,14 @@
           "quote_hash": "72694f80770a1f4a70b9d4a0a61f098e46444289c0eaaaa9814708dd1d443dfd"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-922eb77f54f6a3-I-2",
+          "source_url": "https://www.blacksesame.com/zh/list_9/942.html",
+          "source_title": "武岳峰将向黑芝麻智能战略投资5亿元，长期赋能端侧AI和具身智能生态布局-黑芝麻智能科技有限公司",
+          "source_content_hash": "8956d15b35f495f05f36bd8ad92d5f8faceae2f7fb0d135094b5aa320d774425",
+          "quote": "1月8日，黑芝麻智能与知名产业投资机构武岳峰科创及其产业合作伙伴（上海虹桥小镇投资集团）达成战略投资意向。",
+          "quote_hash": "40bab6c384340fbc96b3f933e6b3969dc0afde89b62d3868a6597799f3188aa6"
+        },
+        {
           "source_id": "FISRC-ca5c9f62e4d3f2f3",
           "source_url": "https://news.pedaily.cn/202607/566303.shtml",
           "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
@@ -214,7 +247,7 @@
           "quote_hash": "10e9be87017135ef7289d02fb8f8a47e963f486839185aa1a55cef7eb134c6e7"
         }
       ],
-      "last_verified_at": "2026-10-02",
+      "last_verified_at": "2026-10-03",
       "current_roles": [],
       "career": [],
       "education": [],

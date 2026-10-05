@@ -123,33 +123,100 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位和Alice组合关系来自Claltech官网；融资轮次中的具体投资者身份另据公开融资报道，所列案例不代表完整投资组合。",
+      "summary": "Claltech 是 Access Industries 在以色列的科技投资部门，官网称其关注消费与企业领域的中后期公司，并将 Alice（原 ActiveFence）列入其公开组合。媒体报道另将 Claltech 列为 Alice 2026 年融资的既有投资者。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资定位",
+          "value": "Access Industries 在以色列的科技投资部门。",
+          "source_id": "B23-CLAL-HOME"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "中后期。",
+          "source_id": "B23-CLAL-ABOUT"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "消费与企业领域。",
+          "source_id": "B23-CLAL-ABOUT"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Alice 既有投资者（本轮回归）。",
+          "description": "Claltech 官网将 Alice（原 ActiveFence）列为其公开组合公司。",
+          "source_id": "B23-CLAL-ALICE"
+        },
+        {
+          "description": "ValueAdd 报道将 Claltech 列为 Alice 2026 年融资的既有投资者；按该报道口径记录。",
+          "source_id": "B23-CLAL-VALUEADD"
+        },
+        {
+          "description": "融资来源记录：Alice · 历史轮次未披露 · 既有投资者（本轮回归）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7f8e788eab384554"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://claltech.com/",
+          "url": "https://claltech.com/",
+          "source_id": "B23-CLAL-HOME"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "B23-CLAL-HOME",
+          "source_url": "https://claltech.com/",
+          "source_title": "Home page - Claltech",
+          "source_content_hash": "0823da914082dd82b1034704b0dbbaba11d27b47f438d92f2f3cf322c8668a22",
+          "quote": "Claltech serves as Access’s technology investment arm in Israel.",
+          "quote_hash": "2ed38a345e63c578149871df35fde6e888d3e5c095523465451552d26ede8a3e"
+        },
+        {
+          "source_id": "B23-CLAL-ABOUT",
+          "source_url": "https://claltech.com/about/",
+          "source_title": "About - Claltech",
+          "source_content_hash": "d86fe3ec44ed2791b61f6771ee3a70504f25f1ce7c264ea513cf80fc7be30e7c",
+          "quote": "At Claltech, we’re looking to invest in leading mid & late-stage companies in the consumer and enterprise sectors that have the potential to disrupt their industries.",
+          "quote_hash": "50350f1e5bfeae35bf1d91d74f9b7726c456bb786c726e57e082be0ff04d509d"
+        },
+        {
+          "source_id": "B23-CLAL-ALICE",
+          "source_url": "https://claltech.com/",
+          "source_title": "Home page - Claltech",
+          "source_content_hash": "0823da914082dd82b1034704b0dbbaba11d27b47f438d92f2f3cf322c8668a22",
+          "quote": "OUR PORTFOLIO Here are just a few of the companies we’ve recently partnered with Perk, formerly TravelPerk, simplifies business travel by allowing companies to book, manage, and report on employee trips, while also streamlining expense management and reimbursement processes in one platform. Alice, formerly ActiveFence, helps enterprises and foundation model labs launch GenAI safely, combining real-time guardrails, pre-deployment testing, and continuous red-teaming with proprietary intelligence on adversarial behavior, abuse, and emerging AI threats.",
+          "quote_hash": "6e888a4e49bee6efb92929adc3955b21bd4854ecade2fbdaf17e62afcdd49226"
+        },
+        {
+          "source_id": "B23-CLAL-VALUEADD",
+          "source_url": "https://valueaddvc.com/blog/alice-ai-security-valuation-2026-140m-raise-pushes-it-near-1b",
+          "source_title": "Alice AI Security Valuation 2026: $140M Raise Pushes It Near $1B",
+          "source_content_hash": "01f562b9a9494b20e78535c18494264a64615e7ab18debe6f7dac6c590bf0cfa",
+          "quote": "A large bloc of existing investors also came back for the round: Resolute Ventures, Grove Ventures, CRV, Highland Europe, Vintage Investment Partners, Norwest, NFX, and Claltech.",
+          "quote_hash": "b7bab8ca83243fe88ae21f49ee2ba4bf472391655f731e15e339d8048c80418e"
+        },
         {
           "source_id": "FISRC-7f8e788eab384554",
           "source_url": "https://valueaddvc.com/blog/alice-ai-security-valuation-2026-140m-raise-pushes-it-near-1b",
           "source_title": "Alice AI Security Valuation 2026: $140M Raise Pushes It Near $1B",
-          "source_content_hash": "d6ea281534634012f17b7d49e89dcc6eb1e02a8f7aaae4cdff9c9c8e3d7d314b",
+          "source_content_hash": "5886e06ebf8ee4d0",
           "quote": "A large bloc of existing investors also came back for the round: Resolute Ventures, Grove Ventures, CRV, Highland Europe, Vintage Investment Partners, Norwest, NFX, and Claltech.",
           "quote_hash": "b7bab8ca83243fe88ae21f49ee2ba4bf472391655f731e15e339d8048c80418e"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "experience_summary": "Claltech 是 Access Industries 在以色列的科技投资部门，官网称其关注消费与企业领域的中后期公司，并将 Alice（原 ActiveFence）列入其公开组合。媒体报道另将 Claltech 列为 Alice 2026 年融资的既有投资者。"
     }
   }
 }

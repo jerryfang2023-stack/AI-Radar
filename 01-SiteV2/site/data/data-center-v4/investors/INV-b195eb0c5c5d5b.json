@@ -124,15 +124,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "驰芯半导体融资报道将力合科创创投列为 Pre-A 轮投资方；该条仅记录集团创投平台的已披露投资示例。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构投资业务定位、阶段和方式来自上市公司2025年年报；驰芯半导体历史融资报道所列的投资主体为“深圳力合科创创投”，不将其与集团内法律实体混同。",
+      "summary": "深圳市力合科创股份有限公司2025年年报披露，其科技创投业务以成果转化投资孵化为核心，投资阶段重点覆盖天使期与初创期，并通过直接投资及管理基金提供资金支持。驰芯半导体2021年融资报道将深圳力合科创创投列为其 Pre-A 轮投资方；该笔历史活动按报道中的平台名称记录。",
+      "facts": [
+        {
+          "field": "investment_mandate",
+          "label": "投资业务",
+          "value": "年报称公司科技创投以科技成果转化为核心，通过投资孵化支持科技企业。",
+          "source_id": "PROFILE-B11-INV-b195eb0c5c5d5b-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "年报称公司重点投资天使期和初创期项目，并延伸至概念验证、中试及成长期。",
+          "source_id": "PROFILE-B11-INV-b195eb0c5c5d5b-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "通过旗下创投平台参与驰芯半导体 Pre-A 轮。",
-          "source_id": "PROFILE-60824362173343e700c9"
+          "description": "驰芯半导体2021年 Pre-A 融资报道将深圳力合科创创投列为投资方之一；未披露单独出资额。",
+          "source_id": "PROFILE-B11-INV-b195eb0c5c5d5b-3"
         },
         {
           "description": "融资来源记录：驰芯半导体 · 历史轮次未披露 · Pre-A轮投资。这是本库收录的披露案例，不代表完整投资组合。",
@@ -142,12 +155,28 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-60824362173343e700c9",
+          "source_id": "PROFILE-B11-INV-b195eb0c5c5d5b-1",
+          "source_url": "https://static.szse.cn/disc/disk03/finalpage/2026-03-27/422316f0-0f83-4820-8aa7-0d9bbf76e7bb.PDF",
+          "source_title": "深圳市力合科创股份有限公司2025年年度报告全文",
+          "source_content_hash": "7b4f617e3899645622403bbba5336c5659bb7e4d5da27e6330a5eb3df8f6a6f6",
+          "quote": "公司科技创投业务以科技成果转化为核心，通过投资孵化加速创新成果产业化进程，为科技企业提供全周期资金支持。",
+          "quote_hash": "804b572dd449bcacbfd7e83afb7c0f2372e2ec8a7426c6afa019c3b65db145ef"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-b195eb0c5c5d5b-2",
+          "source_url": "https://static.szse.cn/disc/disk03/finalpage/2026-03-27/422316f0-0f83-4820-8aa7-0d9bbf76e7bb.PDF",
+          "source_title": "深圳市力合科创股份有限公司2025年年度报告全文",
+          "source_content_hash": "7b4f617e3899645622403bbba5336c5659bb7e4d5da27e6330a5eb3df8f6a6f6",
+          "quote": "投资阶段以天使期、初创期为重点",
+          "quote_hash": "c604864ee068c5bbde323b44b5f6bf83657fe6e6f0de0509b0bc498ba5d92f2b"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-b195eb0c5c5d5b-3",
           "source_url": "https://www.laoyaoba.com/n/797676",
           "source_title": "驰芯半导体获联和资本、德赛和清华系数千万元Pre-A轮融资",
-          "source_content_hash": "c8aea0fcda8f2bd8af78a34c5b7b8806ceb34047f922f2bcd343d92949b0fcbd",
-          "quote": "AI解读 生成海报 来源：驰芯半导体 #驰芯半导体# 评论 收藏 点赞 5.8w 聚焦于UWB芯片产品研发和销售的长沙驰芯半导体科技有限公司宣布公司已在2021年8月完成数千万元的Pre-A轮融资。本轮由厦门联和资本、深圳力合科创创投和德赛集团下属惠州蓝微电子共同投资。所获资金将用于团队建设、产品迭代演进和市场推广。 进入到2021年下半年以来，UWB的生态得到了进一步的发展。手机厂家都在积极布局UWB，围绕手机建立的物联网生态也开始支持UWB。汽车厂家和T1供应商都在研究通过UWB实现汽车数字钥匙方案。通过UWB技术，实现汽车和手机的安全交互的趋势已经确立，UWB的发展呈现一派欣欣向荣的景象。 驰芯半导体董事长景振海先生表示，UWB行业正在被众多消费市场所接受，这些市场已推动了巨大的业务量并由此带来了经济价",
-          "quote_hash": "853762e400786f0d0d2032cc7be0f9b4fc512f08cbc96ebfd56a5f232ed82424"
+          "source_content_hash": "23da75a7b6089bb2c2d76c7235a8c1677f4ebc6ba8b8a2501bc74bd98207881c",
+          "quote": "本轮由厦门联和资本、深圳力合科创创投和德赛集团下属惠州蓝微电子共同投资。",
+          "quote_hash": "9816a6ee9a3ad6aba3d84cc4e67795891549895ee5530911c77ee41a037ee55a"
         },
         {
           "source_id": "FISRC-d7c3cbdfafeaf4fc",
@@ -158,7 +187,7 @@
           "quote_hash": "060f851f4ecabbd02f43d78b7a5c3e14438976a439f01cc5d07b9702463ec114"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

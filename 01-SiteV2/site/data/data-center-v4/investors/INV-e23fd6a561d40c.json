@@ -139,15 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "风语筑上市公司公告披露其对松应科技的股权投资及战略合作安排；本档案只记录公告直接支持的投资事实。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "summary": "风语筑官网介绍其为A股数字文化展示企业，提供面向主题空间的数字化展示体验。上海证券交易所披露，风语筑董事会审议通过拟以自有资金投资上海松应科技不超过人民币2000万元；公告表述为产业业务协同安排，最终投资金额以实际投资为准。",
+      "facts": [
+        {
+          "field": "business_positioning",
+          "label": "官网定位",
+          "value": "A股主板上市数字文化展示企业，将数字化展示体验带到主题空间",
+          "source_id": "B31-FENG-WEBSITE"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "风语筑上市公司公告披露其拟以自有资金对上海松应科技有限公司进行不超过人民币2,000万元股权投资，并已签署股权投资暨战略合作框架协议。",
-          "source_id": "PROFILE-ef3c7882878ee0e38513"
+          "description": "上海证券交易所公告披露风语筑董事会审议通过拟以自有资金投资上海松应科技不超过人民币2000万元；最终投资金额以实际投资为准。",
+          "source_id": "B31-FENG-SSE"
         },
         {
           "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,12 +164,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-ef3c7882878ee0e38513",
-          "source_url": "https://static.cninfo.com.cn/finalpage/2026-06-13/1225366972.PDF",
-          "source_title": "上海风语筑文化科技股份有限公司关于新增对外投资暨累计对外投资的公告",
-          "source_content_hash": "e21158d5f40036046a6539748de24a211c7f0c4ef0ba16d9aa9f427f6aa08a85",
-          "quote": "投资标的名称：上海松应科技有限公司；投资金额：公司拟以自有资金对松应科技进行股权投资，交易对价不超过人民币2,000万元。",
-          "quote_hash": "31941ad04e250dceb722c7af152c33c8ce2e52492a5b988a42a7147e7dd120f9"
+          "source_id": "B31-FENG-WEBSITE",
+          "source_url": "https://fengyuzhu.com/",
+          "source_title": "风语筑-文化科技股份有限公司",
+          "source_content_hash": "f701b5cfc30c22c99b8809053f1370af9ddf5dfd23c9d3c76761c538842cfea9",
+          "quote": "风语筑，中国数字文化展示行业A股主板上市企业，将数字化展示的科技体验带到更广泛的主题空间领域，颠覆现实世界与虚拟世界的感知。",
+          "quote_hash": "8e36d7137f4e11eb50ca207e41d59bfb516746df07cd4c914b002b9b5d12268b"
+        },
+        {
+          "source_id": "B31-FENG-SSE",
+          "source_url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-06-13/603466_20260613_GCEM.pdf",
+          "source_title": "上海风语筑文化科技股份有限公司第四届董事会第十五次会议决议公告",
+          "source_content_hash": "adba185e63c14ee135a8d3217373c6ee9859cb7acaf9a6a37da6a29d44477e4d",
+          "quote": "公司以自有资金投资上海松应科技有限公司不超过2000万元，最终投资金额以实际投资为准。",
+          "quote_hash": "bc0267f7d5defd0afb4f7507912852306f81f1e7ca0984968b3400c4935102cd"
         },
         {
           "source_id": "FISRC-1ae72db61aa80327",
@@ -173,7 +188,7 @@
           "quote_hash": "cfb09d31f4e2f345e414820b4806243896f0671821613a5ee1f48e5dfbed164a"
         }
       ],
-      "last_verified_at": "2026-10-04",
+      "last_verified_at": "2026-10-05",
       "current_roles": [],
       "career": [],
       "education": [],

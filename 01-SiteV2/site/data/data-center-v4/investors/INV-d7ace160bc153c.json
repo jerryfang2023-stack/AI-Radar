@@ -125,33 +125,84 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网介绍用于机构定位与阶段；投资案例来自媒体对已披露融资的报道，不代表完整组合。",
+      "summary": "光合创投官网称其亦称“光速光合”，专注中国市场，覆盖早期和成长期。36氪报道其参与自变量机器人 Pre-A++ 轮融资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "专注中国市场的创业投资基金。",
+          "source_id": "B27-GUANGUANG-OFFICIAL"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期和成长期。",
+          "source_id": "B27-GUANGUANG-STAGE"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资关注",
+          "value": "中国科技赛道。",
+          "source_id": "B27-GUANGUANG-OFFICIAL"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 自变量机器人 Pre-A++轮领投。",
+          "description": "36氪报道自变量机器人 Pre-A++ 轮由光速光合、君联资本领投。",
+          "source_id": "B27-GUANGUANG-TRACK"
+        },
+        {
+          "description": "融资来源记录：自变量机器人 · 历史轮次未披露 · Pre-A++轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-449b969616ed1e95"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "光合创投（光速光合）",
+          "url": "https://luminousvc.com/cn",
+          "source_id": "B27-GUANGUANG-OFFICIAL"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "B27-GUANGUANG-OFFICIAL",
+          "source_url": "https://luminousvc.com/cn",
+          "source_title": "光合创投 | 光合创业投资基金官网",
+          "source_content_hash": "1ad122fe971b75b93f0a8790a26ae11fdd02dad83883a876950ba97185256ab7",
+          "quote": "光合创投（光速光合）是一家专注于中国市场的创业投资基金",
+          "quote_hash": "9e7616653d939217a053e76d2d2c0d9c5114504cdd80eb4926ef6d19ad0685ec"
+        },
+        {
+          "source_id": "B27-GUANGUANG-STAGE",
+          "source_url": "https://luminousvc.com/cn",
+          "source_title": "光合创投 | 光合创业投资基金官网",
+          "source_content_hash": "1ad122fe971b75b93f0a8790a26ae11fdd02dad83883a876950ba97185256ab7",
+          "quote": "覆盖早期和成长期",
+          "quote_hash": "5696a03cc72ca745fe59e3b56adbf941d598ff2d04de881feadbeec0a088119c"
+        },
+        {
+          "source_id": "B27-GUANGUANG-TRACK",
+          "source_url": "https://www.36kr.com/p/3636080421586182",
+          "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+          "source_content_hash": "92c1f7ba7a8af5e5feeec0dd7e7118993eed233e051d3930104ddaeaef5b1b44",
+          "quote": "由光速光合、君联资本领投",
+          "quote_hash": "29ebd7cbb5b23c8e4d1379a95f41088963e0b407f5a1bab73368fcbbcd4b0223"
+        },
         {
           "source_id": "FISRC-449b969616ed1e95",
           "source_url": "https://www.36kr.com/p/3636080421586182",
           "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-          "source_content_hash": "abe44b136cbfb22fc521f19f36bcdc7f89467c392c05f5e7fa2dfa7ffa26cf7e",
+          "source_content_hash": "abef77aff9b6b68f",
           "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
           "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

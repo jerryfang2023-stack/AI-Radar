@@ -180,10 +180,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录公开来源使用的品牌名称和具体融资活动；不推断法律主体、基金归属或完整投资组合。",
-      "summary": "Citi 官方网站介绍该集团；Norm AI 融资报道将 Citi 列为 2025 年 1 月参与方。本档案保留融资来源使用的品牌名称，不推断具体出资法人或基金。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "集团业务信息来自Citi官网；Norm AI融资参与来自 Just AI News，具体参与法人未披露，故按品牌层级记录。",
+      "summary": "Citi 官网将其定位为提供全球银行和金融服务的银行集团，服务范围覆盖180多个国家和地区。Norm AI 2025年融资报道以 Citi 品牌列出其参与方，但未明确集团内具体出资主体；本档不将其直接归入 Citi Ventures。",
+      "facts": [
+        {
+          "field": "company_profile",
+          "label": "Citi官网披露的银行业务与覆盖范围",
+          "value": "Citi官网介绍其为银行，并称其金融服务网络覆盖180多个国家和地区。",
+          "source_id": "PROFILE-a8075d3b394201c03660"
+        },
+        {
+          "field": "company_reported_investment",
+          "label": "Norm Ai 官方融资历史",
+          "value": "Norm Ai 官方网站列示，2025年1月的4800万美元融资由包括Citi在内的机构提供支持；未单列Citi内部具体出资主体。",
+          "source_id": "PROFILE-COLLECT-INV-ddc6cf6c97a29d-M-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -200,8 +213,8 @@
         {
           "source_id": "FISRC-afaa91a6569d1f7a",
           "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
-          "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
-          "source_content_hash": "81bf128bd7552037594ad8d7da65db26666324169396cfe480b1c2aabb48eeee",
+          "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation — Just AI News",
+          "source_content_hash": "a4cc5442ac3e5e661c2cc8aeee05a6ca9b78a7ff8c57dc97f165fdf79eacb125",
           "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
           "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
         },
@@ -214,6 +227,14 @@
           "quote_hash": "1f8c679efdf67d7a310615b6f062999e058a140756053667bcd6868ae24786eb"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-ddc6cf6c97a29d-M-3",
+          "source_url": "https://www.norm.ai/",
+          "source_title": "Norm Ai — Agentic Law",
+          "source_content_hash": "e719cc7bac6bc9aa67a096de75b136231b369bfe2f1cf0e9e4140a956f87eeb7",
+          "quote": "Backed by Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
+          "quote_hash": "3ce233a8c11580d7a5af37393d962703ad624dab6c75f495a50bd882802e09e3"
+        },
+        {
           "source_id": "FISRC-fa41049d7cbdf303",
           "source_url": "https://finance.yahoo.com/news/procurement-sciences-closes-30-million-130000493.html",
           "source_title": "Procurement Sciences Closes $30 Million Series B to Accelerate AI ...",
@@ -222,7 +243,7 @@
           "quote_hash": "fa8893112d87b7782b21a1bfe7fb38d3b508fcc351c4a8a60f17db326afb1933"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

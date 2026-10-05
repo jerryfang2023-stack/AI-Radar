@@ -180,10 +180,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构方向来自 Amplify Partners 官网；Temporal公告使用简称“Amplify”，与官网的Temporal组合/创始人案例相互印证，但公开公告未披露参与的具体基金或法律主体。",
+      "summary": "Amplify Partners 官网将其定位为面向技术创始人的风险投资机构，关注分布式计算、开发者工具、数据、机器学习及网络安全。Temporal 官方融资公告将 Amplify 列为其回投方；Amplify Partners 官网的创始人案例亦记载其曾是 Temporal 的早期投资方。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资定位",
+          "value": "Amplify Partners 称其为服务技术创始人的风险投资机构，覆盖分布式计算、开发者工具、数据、机器学习和网络安全。",
+          "source_id": "PROFILE-COLLECT-INV-dbcad58ec15837-M-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -206,6 +213,14 @@
           "quote_hash": "406f871b5d06e4b4aab82de8452e5e13f9eaf18cdfbf586ceed7170cae3e6dd2"
         },
         {
+          "source_id": "PROFILE-COLLECT-INV-dbcad58ec15837-M-2",
+          "source_url": "https://www.amplifypartners.com/blog-posts/amplify-partners-fund-v",
+          "source_title": "Amplify Partners Fund V — Amplify Partners",
+          "source_content_hash": "4252988d8513143c4f1350e88aad332cad014134f28b9b7ce2e078a704f0596a",
+          "quote": "design a venture capital firm purpose-built for the new generation of technical company-builders: the engineers, the researchers, the creatives, and other kindred spirits as they tackled foundational challenges in distributed computing, developer tooling, data, machine learning, and cybersecurity.",
+          "quote_hash": "5b92bf6fd2919a587f6395d75e050d45f618040b55aad044c1f35eb034da41e5"
+        },
+        {
           "source_id": "FISRC-926f8f2e0ad24f56",
           "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
           "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
@@ -214,7 +229,7 @@
           "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

@@ -153,30 +153,65 @@
       }
     ],
     "public_profile": {
+      "summary": "Balderton 是一家专注投资欧洲创立科技公司的风险投资机构。其官网披露 Davis 550 万美元 pre-seed 轮由 Heartcore Capital 与 Balderton 领投。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资方向来自机构官网；Davis 融资公告为该机构投资活动的一个公开案例，不代表完整投资组合。",
+      "facts": [
+        {
+          "field": "geography_and_focus",
+          "label": "投资范围",
+          "value": "官网自述专注欧洲创立的科技公司。",
+          "source_id": "PROFILE-B14-INV-bcd624326ae4d0-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Davis 预种子轮 本轮领投。",
-          "source_id": "FISRC-d5d5c858ca2bcd66"
+          "description": "Balderton 官网披露，Davis 550 万美元 pre-seed 轮由 Heartcore Capital 与 Balderton 领投。",
+          "source_id": "PROFILE-B14-INV-bcd624326ae4d0-2"
         },
         {
           "description": "融资来源记录：Davis · 预种子轮 · 2026-05-06 · 本轮领投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6a88f57902f30c9d"
+          "source_id": "FISRC-d5d5c858ca2bcd66"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Balderton 官网",
+          "value": "https://www.balderton.com/",
+          "url": "https://www.balderton.com/",
+          "source_id": "PROFILE-B14-INV-bcd624326ae4d0-1"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-B14-INV-bcd624326ae4d0-1",
+          "source_url": "https://www.balderton.com/",
+          "source_title": "Europe’s leading venture firm focused exclusively on backing European-founded tech companies",
+          "source_content_hash": "eb793ebb7d350c17a1a0a0471b6403ab7e50d7c1c098d2d82f8e1571c03a837c",
+          "quote": "Europe’s leading venture firm focused exclusively on backing European-founded tech companies",
+          "quote_hash": "a4a7151bc4d17bb3d0b34295d6f0dafbd4e5ef88d75e848e1227b14e06d39e16"
+        },
+        {
+          "source_id": "PROFILE-B14-INV-bcd624326ae4d0-2",
+          "source_url": "https://www.balderton.com/news/davis-raises-5-5-million-pre-seed-to-accelerate-early-stage-real-estate-development-from-months-to-days/?sourcecheck=20261005T0308",
+          "source_title": "Davis raises $5.5 million pre-seed - Balderton",
+          "source_content_hash": "92c1875a13f5d3968c438c1f8b97f78dfeb18e26069f9ae7bb705f348d09a34e",
+          "quote": "The round was led by Heartcore Capital and Balderton",
+          "quote_hash": "3da880c385cc289ecec6634df00ac0e1f2640d8450e8e2c64cbf936dc331c5be"
+        },
         {
           "source_id": "FISRC-d5d5c858ca2bcd66",
           "source_url": "https://www.balderton.com/news/davis-raises-5-5-million-pre-seed-to-accelerate-early-stage-real-estate-development-from-months-to-days/",
-          "source_title": "Davis raises $5.5 million pre-seed - Balderton",
-          "source_content_hash": "92c1875a13f5d3968c438c1f8b97f78dfeb18e26069f9ae7bb705f348d09a34e",
+          "source_title": "Davis 筹集 550 万美元预种子轮 - Balderton",
+          "source_content_hash": "e0d1baa182929cff",
           "quote": "The round was led by Heartcore Capital and Balderton",
           "quote_hash": "3da880c385cc289ecec6634df00ac0e1f2640d8450e8e2c64cbf936dc331c5be"
         },
@@ -189,11 +224,7 @@
           "quote_hash": "ca72b3fb65259fdd24ca6302900d504f46b9d80610badfd679ad53d00d748dc0"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

@@ -139,22 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Prodoc AI 官方融资文章直接定义该家族办公室并记录其领投 seed 轮；未将其扩展为单独注册投资公司，也未披露出资金额。",
-      "summary": "Prodoc AI 官方融资文章将 Dr A. Velumani Family Office 描述为 Thyrocare 创办人 Dr A. Velumani 的家族投资办公室，并称其领投 Prodoc AI seed 轮。公开文章未披露出资金额或单独法律主体名称。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Prodoc AI 官方公告将 Dr A. Velumani Family Office 定义为 Thyrocare Technologies 创办人 Dr A. Velumani 的家族投资办公室，并披露其领投 Prodoc AI 未披露金额的 seed 轮。",
+      "coverage_note": "主体称谓、Dr Velumani 与 Thyrocare 的关系及融资信息均来自被投公司公告；未推断该家族办公室为独立注册基金或披露个人出资金额。",
       "facts": [
         {
           "field": "organization_type",
-          "label": "融资公告披露的机构属性",
-          "value": "Dr A. Velumani 的家族投资办公室；公告称其为 Thyrocare Technologies 创办人。",
-          "source_id": "PROFILE-5dfc1888c0fa36908353"
+          "label": "被投公司披露的主体关系",
+          "value": "Dr A. Velumani 的家族投资办公室；Prodoc AI 称 Dr Velumani 为 Thyrocare Technologies 的创办人。",
+          "source_id": "b35-velumani-prodoc-identity"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Prodoc AI 官方公告称 Dr A. Velumani Family Office 领投其 seed 轮，未披露金额。",
-          "source_id": "PROFILE-0a033dd59f452ed6d7c0"
+          "description": "Prodoc AI 官方公告称其 seed 轮由 Dr A. Velumani Family Office 领投；融资金额及该办公室的单独出资额未披露。",
+          "source_id": "b35-velumani-prodoc-funding"
         },
         {
           "description": "融资来源记录：Prodoc AI · 种子轮 · 2026-09-30 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
@@ -165,10 +166,10 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
+      "experience_summary": "由 Thyrocare Technologies 创办人 Dr A. Velumani 设立的家族投资办公室。",
       "sources": [
         {
-          "source_id": "PROFILE-5dfc1888c0fa36908353",
+          "source_id": "b35-velumani-prodoc-identity",
           "source_url": "https://www.prodoc.ai/blog/prodoc-ai-raises-seed-funding-to-build-the-ai-layer-for-hospitals",
           "source_title": "Prodoc AI Raises Seed Funding to Build the AI Layer for Hospitals | Prodoc AI Blog",
           "source_content_hash": "e2b9adf5dad37607f6186c131165becb927a803bc6097cac22b882f25d813db5",
@@ -176,7 +177,7 @@
           "quote_hash": "18ed91e354bfbbd7d8cdda3dca2b80a720c5238c9f49d41b406c9aae294a9de9"
         },
         {
-          "source_id": "PROFILE-0a033dd59f452ed6d7c0",
+          "source_id": "b35-velumani-prodoc-funding",
           "source_url": "https://www.prodoc.ai/blog/prodoc-ai-raises-seed-funding-to-build-the-ai-layer-for-hospitals",
           "source_title": "Prodoc AI Raises Seed Funding to Build the AI Layer for Hospitals | Prodoc AI Blog",
           "source_content_hash": "e2b9adf5dad37607f6186c131165becb927a803bc6097cac22b882f25d813db5",
@@ -191,8 +192,7 @@
           "quote": "Bengaluru-based healthcare AI company Prodoc AI has raised an undisclosed amount in a seed round led by the Dr A. Velumani Family Office.",
           "quote_hash": "51aa7b3787982959b1c04cb1562f0a0c7b43666f7e471bb33e1c249fa0388b5a"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "translations": {
       "zh-CN": {

@@ -139,29 +139,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "投资界的华深智药项目页将琦迹资本列入当前轮次涉及机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构全称、性质和服务描述来自股融易的历史机构目录（页面标注 2016 年更新）；融资参与来自投资界项目页。未与名称相近的“奇迹资本”官网合并，法律登记状态未作推断。",
+      "summary": "股融易机构目录将琦迹资本对应为杭州琦迹投资管理有限公司，并称其提供精品投行、战略投资和基金管理服务；投资界华深智药项目页将琦迹资本列入 B 轮涉及机构。本档以目录所载主体映射为参考，保留其非官方来源属性。",
+      "facts": [
+        {
+          "field": "reported_entity_name",
+          "label": "第三方机构目录所载全称",
+          "value": "股融易目录将“琦迹资本”列为杭州琦迹投资管理有限公司。",
+          "source_id": "PROFILE-B3-INV-73d3ce71c35868-1"
+        },
+        {
+          "field": "reported_investment_services",
+          "label": "第三方目录所述机构性质",
+          "value": "股融易目录将杭州琦迹投资管理有限公司标为 VC、PE，并称其提供财务顾问及基金管理服务。",
+          "source_id": "PROFILE-B3-INV-73d3ce71c35868-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "华深智药项目页将琦迹资本列入当前轮次涉及机构。",
+          "description": "投资界华深智药项目页将琦迹资本列入当前 B 轮涉及机构。",
+          "source_id": "PROFILE-B3-INV-73d3ce71c35868-2"
+        },
+        {
+          "description": "融资来源记录：华深智药 · 多轮融资 · 2026-03-25 · 本轮参投 · 7.87亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-972ef11d09af7ec8"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-972ef11d09af7ec8",
+          "source_id": "PROFILE-B3-INV-73d3ce71c35868-1",
+          "source_url": "https://www.guronge.com/xq/2119",
+          "source_title": "琦迹资本主页-杭州琦迹投资管理有限公司--股融易投资机构",
+          "source_content_hash": "93559dc754f3bdfdbc2959820eb3bbfc691cbfe3c2157dc5911d212904b8bbde",
+          "quote": "杭州琦迹投资管理有限公司（Hangzhou Miracle Capital Management Co.,Ltd，简称“琦迹资本”）",
+          "quote_hash": "9f2091f3f8050ee742847eaae37fa9c4c76e59950abef051bac4b4de48d264a2"
+        },
+        {
+          "source_id": "PROFILE-B3-INV-73d3ce71c35868-2",
           "source_url": "https://vc.pedaily.cn/company/205217.html",
           "source_title": "「 华深智药」华深智药是一家AI技术新药开发商_投资界",
           "source_content_hash": "d44be3f3cb895f838d15f97966174c98389bc3f8b9ab3fb4b3b9b14e331117bf",
-          "quote": "注册地址位于北京市海淀区中关村东路1号院8号楼7层B701。 数据来源: 公开资料整理 当前轮次涉及机构 Dimension Capital DST Global 高瓴资本 渶策资本 Luminous Ventures 琦迹资本 赛诺菲 Biotech Development Fund AI市场洞察 企业基础信息「核心速览」 公司身份： 华深智药科技（北京）有限公司 （简称：华深智药），成立时间2021年6月，所在地北京市海淀区，工商登记信息：注册资本20.00万元，统一社会信用代码91110108MA04BAT61Y，法定代表人彭健； 业务根基：所属行业AI+医疗，核心业务为基于人工智能技术的新药开发，拥有自主研发的蛋白质结构预测算法OmegaFold； 资本轨迹：累计",
-          "quote_hash": "f0b28dac1c2da178616391be03eeb1f71afc6f8360ce5d256dbb59fd4a19de6c"
+          "quote": "当前轮次涉及机构 Dimension Capital DST Global 高瓴资本 渶策资本 Luminous Ventures 琦迹资本 赛诺菲 Biotech Development Fund",
+          "quote_hash": "dade8e9d22e6ec40c6d370f06efacaf56b01786d506b1547bf86a98fbefb7c97"
+        },
+        {
+          "source_id": "FISRC-972ef11d09af7ec8",
+          "source_url": "https://vc.pedaily.cn/company/205217.html",
+          "source_title": "华深智药完成7.87亿美元B轮融资",
+          "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+          "quote": "投资方为Dimension Capital、DST Global、高瓴资本、渶策资本、Luminous Ventures、琦迹资本、赛诺菲、Biotech Development Fund",
+          "quote_hash": "50bd19105aa4ddc094866c630fa8f02864547d64102bd3c4636c35e7ee64bb72"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

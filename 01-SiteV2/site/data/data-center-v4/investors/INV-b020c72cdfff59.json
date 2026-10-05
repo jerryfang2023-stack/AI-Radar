@@ -139,15 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
-      "summary": "Fortune 报道将 MainObject 列为 Arrakis Series A 的参与方之一，并称其为风险投资机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "SEC Form D identifies Main Object Capital Fund I LP and its manager, Main Object Capital Management Limited. Fortune separately lists the investor label MainObject in Arrakis’ Series A. Public sources do not confirm whether Fund I LP was the vehicle for that investment, and do not disclose its investment strategy, commitments, or portfolio beyond this reported deal.",
+      "summary": "SEC Form D identifies Main Object Capital Fund I LP as a Guernsey limited partnership and names Main Object Capital Management Limited as its manager. Fortune reports MainObject among the investors in Arrakis’ $30 million Series A. The specific vehicle behind that investment is not disclosed.",
+      "facts": [
+        {
+          "field": "legal_vehicle",
+          "label": "公开基金载体",
+          "value": "SEC Form D将 Main Object Capital Fund I LP 列为发行人，注册地为根西岛圣彼得港。",
+          "source_id": "PROFILE-B13-INV-b020c72cdfff59-4"
+        },
+        {
+          "field": "fund_manager",
+          "label": "基金管理人",
+          "value": "SEC Form D列示 Main Object Capital Management Limited 为该发行人的经理。",
+          "source_id": "PROFILE-B13-INV-b020c72cdfff59-5"
+        },
+        {
+          "field": "registered_address",
+          "label": "登记地址",
+          "value": "SEC文件列示地址位于根西岛圣彼得港。",
+          "source_id": "PROFILE-B13-INV-b020c72cdfff59-6"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Fortune 报道将 MainObject 列为 Arrakis Series A 参与机构，并称其为 venture capital firm。",
-          "source_id": "PROFILE-0d7c24d37855734d3439"
+          "description": "Fortune报道将 MainObject 列为 Arrakis 3000 万美元 Series A 的参投风险投资机构之一；未披露出资额或具体投资载体。",
+          "source_id": "PROFILE-B13-INV-b020c72cdfff59-7"
         },
         {
           "description": "融资来源记录：Arrakis · A轮 · 2026-07-22 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,12 +176,36 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-0d7c24d37855734d3439",
+          "source_id": "PROFILE-B13-INV-b020c72cdfff59-4",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2099726/000101297526000589/primary_doc.xml",
+          "source_title": "SEC EDGAR Form D: Main Object Capital Fund I LP",
+          "source_content_hash": "0856e380fb2c26486ad5a0c0946ef1a89e96664ad4c6fb57339bb343c013f554",
+          "quote": "Main Object Capital Fund I LP",
+          "quote_hash": "db34b6630b4d17a81a5cb96cf6ca244903b2260be6b20e3dca0011632690f869"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-b020c72cdfff59-5",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2099726/000101297526000589/primary_doc.xml",
+          "source_title": "SEC EDGAR Form D: Main Object Capital Fund I LP",
+          "source_content_hash": "0856e380fb2c26486ad5a0c0946ef1a89e96664ad4c6fb57339bb343c013f554",
+          "quote": "N/A Main Object Capital Management Limited Suite 1, First Floor The Energy Centre, Admiral Park St. Peter Port Y7 GUERNSEY GY1 2BB Director The Manager of the Issuer.",
+          "quote_hash": "dbfb396a088182e224d4104b8e9c093e5c35ccdf6a741d6a8eaa240a07b2bb0d"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-b020c72cdfff59-6",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2099726/000101297526000589/primary_doc.xml",
+          "source_title": "SEC EDGAR Form D: Main Object Capital Fund I LP",
+          "source_content_hash": "0856e380fb2c26486ad5a0c0946ef1a89e96664ad4c6fb57339bb343c013f554",
+          "quote": "ST. PETER PORT Y7 GUERNSEY GY1 2BB",
+          "quote_hash": "2b215a028505012001ef1045d1bebaeb92a639e2775c92b04a8626038df397e1"
+        },
+        {
+          "source_id": "PROFILE-B13-INV-b020c72cdfff59-7",
           "source_url": "https://fortune.com/2026/07/22/arrakis-a-startup-betting-ais-biggest-payoff-is-in-industrial-sectors-not-office-work-emerges-from-stealth-with-38-million-in-venture-funding/",
           "source_title": "Exclusive: Startup Arrakis emerges from stealth with $38 million in funding to bring AI to industry | Fortune",
           "source_content_hash": "0a5c382f967f6b8ba60449b6e2d655c4323fb31cea2fb306eaa56c66acf9ebeb",
-          "quote": "g is a $30 million Series A led by Blossom Capital, with participation from venture capital firms Accel, GFC, MainObject, and Rerail. Accel led an earlier $7.5 million seed round, and individual backers include Datadog CEO Olivier Pomel and OpenAI’s head of business products, Olivier Godement. The latest round values the company at $140 m",
-          "quote_hash": "d84d49229cc8effea69e138d3ad374aa13311da21197b1faf6a6128867c03e9b"
+          "quote": "participation from venture capital firms Accel, GFC, MainObject, and Rerail",
+          "quote_hash": "d76436e5c32532a44e906d75eb3dcda49130f6646604d896be4c1162954488cc"
         },
         {
           "source_id": "FISRC-ac4fd601f33650ff",
@@ -173,11 +216,7 @@
           "quote_hash": "30f26b7969f6acad7ca71f25be63138d54b9fac10153e9a22764e1b023419d53"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {

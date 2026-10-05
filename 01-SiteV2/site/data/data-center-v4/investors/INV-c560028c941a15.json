@@ -139,15 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资事件依据 36氪项目信息页，属于第三方项目数据库；本次未找到至格科技或基金管理方对该轮次的原始公告。因此仅记录数据库所列参投关系，不扩写资金规模或具体法律载体。",
-      "summary": "北京市新材料产业投资基金是北京公开资料列明的新材料产业基金。36氪项目信息页记录，该基金参与至格科技 2026 年 3 月的 C+ 轮融资；没有该基金单独出资额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "北京市经信局公告中的1000亿元是八支新设政府投资基金的合计初始规模，不能作为北京市新材料产业投资基金单只规模。至格科技报道未披露该基金单独出资额。",
+      "summary": "北京市新材料产业投资基金属于北京市产业领域政府投资基金体系。北京市经信局将新材料列入八支新设市级政府投资基金的产业领域，并公布八支基金合计初始规模1000亿元；该总额不是本基金单只规模。新浪财经报道将该基金列为至格科技新一轮亿元级融资的跟投方，未披露单独出资额。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "基金类别",
+          "value": "北京市经信局将新材料产业基金列入市级政府投资基金体系。",
+          "source_id": "beijing_new_materials_policy"
+        },
+        {
+          "field": "sector_focus",
+          "label": "产业领域",
+          "value": "新材料。",
+          "source_id": "beijing_new_materials_policy"
+        },
+        {
+          "field": "aggregate_initial_size",
+          "label": "八支基金合计初始规模",
+          "value": "北京市经信局公告称八支新设政府投资基金合计初始规模1000亿元；该数字并非本基金单只规模。",
+          "source_id": "beijing_new_materials_policy"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "36氪项目信息页将北京市新材料产业投资基金列为至格科技 2026 年 3 月 C+ 轮投资方之一；页面记载整轮融资为亿元级人民币，未披露本基金单独出资金额。",
-          "source_id": "greatar-cplus-investor-2026"
+          "description": "2026年3月新浪财经报道，至格科技新一轮亿元级融资由长江证券创新投资领投，北京市新材料产业投资基金跟投；未披露该基金单独金额。",
+          "source_id": "beijing_fund_zhige_round"
         },
         {
           "description": "融资来源记录：至格科技 · 轮次未披露 · 2026-03-24 · 本轮参投 · 亿元级。这是本库收录的披露案例，不代表完整投资组合。",
@@ -158,31 +177,23 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "投资事件依据 36氪项目信息页，属于第三方项目数据库；本次未找到至格科技或基金管理方对该轮次的原始公告。因此仅记录数据库所列参投关系，不扩写资金规模或具体法律载体。",
+      "experience_summary": "目前可确认的是政府投资基金类别与新材料方向；该基金单只规模、管理人及完整投资组合未由本次采用来源核实。",
       "sources": [
         {
-          "source_id": "beijing-new-materials-fund-identity",
-          "source_url": "https://www.beijing.gov.cn/ywdt/gzdt/202412/t20241211_3962621.html",
-          "source_title": "900余家新材料高新企业集聚 新材料生产线24小时不停歇_部门动态_首都之窗_北京市人民政府门户网站",
-          "source_content_hash": "cbadca47fdd098597444e0a9d865e823d7d1d1a5addb21bae183454e520b3785",
-          "quote": "5月，北京市新材料产业投资基金设立，整体规模100亿元。",
-          "quote_hash": "3ca0156cd50e4ff7b095a6f8545d49a4e3eff6fed018a6263c6b9c4eb1473191"
+          "source_id": "beijing_new_materials_policy",
+          "source_url": "https://jxj.beijing.gov.cn/jxdt/tzgg/202503/t20250306_4027900.html",
+          "source_title": "北京市经济和信息化局关于常态化组织企业申报我市新设八支政府投资基金储备项目的通知_通知公告_北京市经济和信息化局",
+          "source_content_hash": "ebeb9454311846de8c8bda7613fffa6b8c2ba14162a37d7d380ccf4e9cfab772",
+          "quote": "我市设立了信息产业、机器人、先进制造和智能装备、绿色能源和低碳、人工智能、医药健康、商业航天和低空经济、新材料等产业领域的8支政府投资基金（以下统称新设基金）；新设基金总初始规模1000亿元",
+          "quote_hash": "c92a1810f3794a729cf0ae6cbf19d0cee6d2a4d3193208fb725fafc57f1aa209"
         },
         {
-          "source_id": "greatar-cplus-round-size-2026",
-          "source_url": "https://pitchhub.36kr.com/project/1679714202882818",
-          "source_title": "至格科技 | 项目信息-36氪",
-          "source_content_hash": "0668703bb731c3c37df97344446b4d00510e374fe48854bc8181f43a9845fff4",
-          "quote": "C+轮 2026-03 亿级人民币 长江创新投资",
-          "quote_hash": "4828fb8bd29cc92e658ff91afd3717af7ee90603e4ab06ec7d5058e261ca716b"
-        },
-        {
-          "source_id": "greatar-cplus-investor-2026",
-          "source_url": "https://pitchhub.36kr.com/project/1679714202882818",
-          "source_title": "至格科技 | 项目信息-36氪",
-          "source_content_hash": "0668703bb731c3c37df97344446b4d00510e374fe48854bc8181f43a9845fff4",
-          "quote": "北京市新材料产业投资基金",
-          "quote_hash": "408cc3fd66ce96bf226b3b8019e55514549894f284554451f8913d5f88add61f"
+          "source_id": "beijing_fund_zhige_round",
+          "source_url": "https://finance.sina.com.cn/wm/2026-03-24/doc-inhsavws1704662.shtml?froms=ggmp",
+          "source_title": "AI眼镜光学公司至格科技完成新一轮亿元级融资|AI_新浪财经_新浪网",
+          "source_content_hash": "4e5440f146cbcc57daf54ec38c0e280bdef3e3658d64836033b5d942e41517fe",
+          "quote": "本轮融资由 长江证券 创新投资领投，北京市新材料产业投资基金、东科创资本跟投。",
+          "quote_hash": "c73023096357204d76eb4157b35f988aabee9ae318b085ba0d9dfa35ab5a12a6"
         },
         {
           "source_id": "FISRC-c5ff4d32946d43f2",
@@ -193,7 +204,7 @@
           "quote_hash": "39c243b0fd5293cebc77928547cbad7306a457072466bfb765d75b2c458adf11"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

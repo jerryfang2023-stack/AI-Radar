@@ -139,25 +139,40 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "中兴通讯公告界定基金正式名称并披露管理人和备案；投资界将简称“建广湛卢”列入奕行智能融资参与方，未披露其出资额。",
-      "summary": "中兴通讯公告披露，建广湛卢基金全称为北京顺义建广湛卢新兴产业股权投资合伙企业（有限合伙），管理人为北京建广顺创私募基金管理有限公司，已完成私募基金备案。投资界以“建广湛卢”列出其参与奕行智能 2026 年融资。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "中兴通讯公告披露，建广湛卢基金的全称为北京顺义建广湛卢新兴产业股权投资合伙企业（有限合伙），管理人为北京建广顺创私募基金管理有限公司，并于 2023 年 9 月完成私募基金备案。投资界在奕行智能新一轮融资参与者中列出“建广湛卢”。",
+      "coverage_note": "基金名称、管理人、备案信息及中兴通讯作为有限合伙人的认购披露来自上市公司公告；融资活动依据投资界使用的简称记录，不推断其该轮出资额或额外投资策略。",
       "facts": [
         {
-          "field": "legal_identity_and_registration",
-          "label": "公告披露的基金主体",
-          "value": "北京顺义建广湛卢新兴产业股权投资合伙企业（有限合伙），管理人为北京建广顺创私募基金管理有限公司，备案编码 SZK782。",
-          "source_id": "PROFILE-4354215a97e7c36d6eb8"
+          "field": "legal_name",
+          "label": "公告披露基金全称",
+          "value": "北京顺义建广湛卢新兴产业股权投资合伙企业（有限合伙）",
+          "source_id": "b34-zte-identity"
+        },
+        {
+          "field": "fund_manager",
+          "label": "公告披露管理人",
+          "value": "北京建广顺创私募基金管理有限公司",
+          "source_id": "b34-zte-identity"
+        },
+        {
+          "field": "fund_size",
+          "label": "公告披露基金规模",
+          "value": "8.51 亿元人民币",
+          "source_id": "b34-zte-fund-size"
+        },
+        {
+          "field": "registration",
+          "label": "协会备案",
+          "value": "中国证券投资基金业协会备案；备案日期 2023 年 9 月 28 日，编码 SZK782。",
+          "source_id": "b34-zte-registration"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投资界将“建广湛卢”列入奕行智能 2026 年 9 月融资参与方；未披露出资额。",
-          "source_id": "PROFILE-42b843e94349d4edef34"
-        },
-        {
-          "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "投资界报道将“建广湛卢”列入奕行智能新一轮 20 亿元融资参与机构名单；未披露其单独出资额。",
           "source_id": "FISRC-ed0092859381f876"
         }
       ],
@@ -165,34 +180,49 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
+      "experience_summary": "已备案的有限合伙股权投资基金；中兴通讯公告确认其为有限合伙人认购基金的主体。",
       "sources": [
         {
-          "source_id": "PROFILE-4354215a97e7c36d6eb8",
+          "source_id": "b34-zte-identity",
           "source_url": "https://static.cninfo.com.cn/finalpage/2023-10-09/1217994697.PDF",
           "source_title": "中兴通讯股份有限公司关于参与认购的建广湛卢基金完成备案登记的公告",
-          "source_content_hash": "70766d59a377f5306280ee9393ec63fd9dfd75c563bd13edcf127ae829abad25",
-          "quote": "基金名称：北京顺义建广湛卢新兴产业股权投资合伙企业（有限合伙）；管理人名称：北京建广顺创私募基金管理有限公司；备案日期：2023年9月28日；备案编码：SZK782。",
-          "quote_hash": "1b76e3c082d2581e5d78c5f8f283c19605fbcafe99deb2cda48a8f9dcc26b9a0"
+          "source_content_hash": "1d9438ca686bdf332b53bf3aa08f3cbd0995291cbe5a825fe886e09fad816ba4",
+          "quote": "基金名称：北京顺义建广湛卢新兴产业股权投资合伙企业（有限合伙）管理人名称：北京建广顺创私募基金管理有限公司",
+          "quote_hash": "9999969052575f0023da705a73278212e8a68562454eb4447937c8dca19a496f"
         },
         {
-          "source_id": "PROFILE-42b843e94349d4edef34",
+          "source_id": "b34-zte-fund-size",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-10-09/1217994697.PDF",
+          "source_title": "中兴通讯股份有限公司关于参与认购的建广湛卢基金完成备案登记的公告",
+          "source_content_hash": "1d9438ca686bdf332b53bf3aa08f3cbd0995291cbe5a825fe886e09fad816ba4",
+          "quote": "建广湛卢基金规模为 8.51 亿元人民币。",
+          "quote_hash": "792845919976766372c58687144e7a0c871db2cdaf00bcd1c6c9331aab82c098"
+        },
+        {
+          "source_id": "b34-zte-registration",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-10-09/1217994697.PDF",
+          "source_title": "中兴通讯股份有限公司关于参与认购的建广湛卢基金完成备案登记的公告",
+          "source_content_hash": "1d9438ca686bdf332b53bf3aa08f3cbd0995291cbe5a825fe886e09fad816ba4",
+          "quote": "备案日期：2023 年 9 月 28 日备案编码：SZK782",
+          "quote_hash": "6b6bae99d160832e8ab6c00ae2fac61aebb50f2f785b9335194ce1297de15f9a"
+        },
+        {
+          "source_id": "b34-zte-lp",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-10-09/1217994697.PDF",
+          "source_title": "中兴通讯股份有限公司关于参与认购的建广湛卢基金完成备案登记的公告",
+          "source_content_hash": "1d9438ca686bdf332b53bf3aa08f3cbd0995291cbe5a825fe886e09fad816ba4",
+          "quote": "本公司作为有限合伙人出资 5 亿元人民币认购北京顺义建广湛卢新兴产业股权投资合伙企业（有限合伙）",
+          "quote_hash": "dd010b09b6302f51283400144891ec5a5027ba747a57c54166bc1fd37f519f44"
+        },
+        {
+          "source_id": "FISRC-ed0092859381f876",
           "source_url": "https://news.pedaily.cn/202609/569236.shtml",
           "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿_投资界",
           "source_content_hash": "8a158c695e6f9decbd38fbc23a9bbe756f3bf82cc8ff8ab47c8566b97b1aefab",
           "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
           "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
-        },
-        {
-          "source_id": "FISRC-ed0092859381f876",
-          "source_url": "https://news.pedaily.cn/202609/569236.shtml",
-          "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿",
-          "source_content_hash": "299a9be6f63ac708",
-          "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
-          "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

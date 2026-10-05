@@ -162,11 +162,30 @@
     ],
     "public_profile": {
       "identity_status": "verified",
-      "coverage_status": "activity_only",
+      "coverage_status": "researched",
       "profile_type": "organization",
-      "summary": "启迪之星官网显示其采用“孵化+投资”模式，并运营面向早期硬科技企业的股权投资平台。梦塔科技及卓世科技披露的融资资料均将启迪之星列为投资方。",
-      "coverage_note": "机构能力和投资平台来自启迪之星官网；两家被投公司及投资界的融资材料用于记录投资关系，不推断启迪之星具体基金的法律主体。",
-      "facts": [],
+      "summary": "启迪之星创投是专注早期硬科技的投资管理平台，官网列出新一代信息技术、高端装备、生物医疗、新能源新材料和企业服务等方向，并披露其创投基金投资了数百家硬科技企业。该记录按官网“启迪之星创投”投资业务口径整理。",
+      "coverage_note": "机构定位、投资方向和组合范围均据启迪之星官网；官网列举的企业只作公开案例，不视为完整组合。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网机构定位",
+          "value": "启迪之星创投官网称其为专注早期硬科技的投资管理平台。",
+          "source_id": "PROFILE-COLLECT-INV-00dcc661b589fe-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网列出新一代信息技术、高端装备、生物医疗、新能源新材料和企业服务等方向。",
+          "source_id": "PROFILE-COLLECT-INV-00dcc661b589fe-2"
+        },
+        {
+          "field": "portfolio_history",
+          "label": "组合覆盖",
+          "value": "官网称启迪创投基金投资了数百家生命科学、环保新能源、芯片、人工智能和新材料企业。",
+          "source_id": "PROFILE-COLLECT-INV-00dcc661b589fe-3"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -174,10 +193,6 @@
       "education": [],
       "experience_summary": "",
       "track_record": [
-        {
-          "description": "梦塔科技融资材料称其老股东奇绩创坛和启迪之星持续支持。",
-          "source_id": "tusstar_monstar_seed_plus"
-        },
         {
           "description": "融资来源记录：梦塔科技 · 历史轮次未披露 · 老股东持续支持。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c8eaea364bcdb2f"
@@ -189,7 +204,7 @@
       ],
       "sources": [
         {
-          "source_id": "tusstar_investment_identity",
+          "source_id": "PROFILE-COLLECT-INV-00dcc661b589fe-1",
           "source_url": "https://www.tusstar.com/investment?type=one",
           "source_title": "启迪之星孵化器",
           "source_content_hash": "2bde2ad7a04e678974c76d56208a8e7f6cf9cecf40645cf45c9e5470a51093ec",
@@ -197,20 +212,20 @@
           "quote_hash": "c87f827235beb2934c00f7fc0ebda76534314fa9db6b3276a044d026171d7e57"
         },
         {
-          "source_id": "tusstar_monstar_seed_plus",
-          "source_url": "https://news.pedaily.cn/202607/566967.shtml",
-          "source_title": "Monstar梦塔科技完成超千万元种子+轮融资，构建AI数字生命新范式_投资界",
-          "source_content_hash": "818cf9be32b450605fe0e3e058c6b6a16f9f8491b90dd3ecb592e61f52f6f537",
-          "quote": "老股东奇绩创坛、启迪之星持续支持。",
-          "quote_hash": "59f487eefc46ba5e098dcb3c2bcdc978ecb136b7942e1ce4ecb4c3a549df80b4"
+          "source_id": "PROFILE-COLLECT-INV-00dcc661b589fe-2",
+          "source_url": "https://www.tusstar.com/investment?type=one",
+          "source_title": "启迪之星孵化器",
+          "source_content_hash": "2bde2ad7a04e678974c76d56208a8e7f6cf9cecf40645cf45c9e5470a51093ec",
+          "quote": "多年来，投资聚焦新一代信息技术、高端装备、生物医疗、新能源新材料、企业服务等领域",
+          "quote_hash": "83b693126735b1e4ddc8afc5868d8e68506cb01f08c728865b0e31ea30b61977"
         },
         {
-          "source_id": "tusstar_zhuoshi_investor",
-          "source_url": "https://www.maas.com.cn/news/830.html",
-          "source_title": "百度AI基因明星创业公司，卓世科技破局大模型商业落地-卓世科技-中国领先的企业级AI生产力产品技术提供商(Zoellent Technology)",
-          "source_content_hash": "cb0326e936afb5a2029c41c4c9d89f514ce5cce4a72a680a84d115ca3b9320a0",
-          "quote": "力合资本、启迪之星等机构",
-          "quote_hash": "bd565df020f0f37adb6e853028c99308c23f38aa2e35433c1223d4d1bb4f252a"
+          "source_id": "PROFILE-COLLECT-INV-00dcc661b589fe-3",
+          "source_url": "https://www.tusstar.com/investment?type=one",
+          "source_title": "启迪之星孵化器",
+          "source_content_hash": "2bde2ad7a04e678974c76d56208a8e7f6cf9cecf40645cf45c9e5470a51093ec",
+          "quote": "启迪创投基金投资了数百家生命科学、环保新能源、芯片、人工智能、新材料等硬科技企业",
+          "quote_hash": "6e36df280f438c678e77ea11cd7c0fd358d1de083f102970c3fc49f8197e42b8"
         },
         {
           "source_id": "FISRC-1c8eaea364bcdb2f",
@@ -229,7 +244,7 @@
           "quote_hash": "2dd3de409c0e522a3cd73c194b879a2d7cce13233dc1dafb4cc042c1da905992"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-04"
     }
   }
 }

@@ -140,33 +140,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资主题、阶段与地域依据 Forestay 官网；交易参与关系依据 Reco 公司公告。5,500万美元为 Reco 该轮总额，不代表 Forestay 单独出资额。",
+      "summary": "Forestay Capital 是面向企业软件的成长投资机构，官网重点关注 Enterprise AI 与 SaaS，通常参与 Series A–C，并覆盖欧洲、以色列及美国东海岸。Reco 公告将 Forestay 列为其 2026 年追加融资的新投资者之一；该轮总额为 5,500 万美元，未披露 Forestay 单独出资额。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "官网说明其重点关注 Enterprise AI 与 SaaS。",
+          "source_id": "forestay_focus"
+        },
+        {
+          "field": "stage_and_geography",
+          "label": "阶段与地域",
+          "value": "官网称其通常参与 Series A–C 成长期融资，地域覆盖欧洲、以色列和美国东海岸。",
+          "source_id": "forestay_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Reco B轮扩展 本轮参投。",
+          "description": "Reco 于2026年9月公布追加融资，公告将 Forestay 列为新投资者之一；该轮总额为 $55M，未披露 Forestay 单独金额。",
+          "source_id": "forestay_reco_round"
+        },
+        {
+          "description": "融资来源记录：Reco · B轮扩展 · 2026-09-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5ade874e36670280"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Forestay Capital",
+          "url": "https://www.forestay.vc/",
+          "source_id": "forestay_focus"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "forestay_focus",
+          "source_url": "https://www.forestay.vc/focus",
+          "source_title": "Focus – Forestay Capital",
+          "source_content_hash": "0eafb645fff8a315aab3d5f451697614fd04c56e548e8450ce036c931b7477c9",
+          "quote": "We target investments in early-growth stage companies (typically in Series A-C rounds) across Europe, Israel & the East Coast of the US.",
+          "quote_hash": "3413eedc495959f819618a9931f454fb97f13abcc6958639057f44dfbafcb9df"
+        },
+        {
+          "source_id": "forestay_reco_round",
+          "source_url": "https://www.reco.ai/blog/reco-raises-55-million-in-additional-funding-with-participation-from-at-t-ventures",
+          "source_title": "Reco Raises $55 Million in Additional Funding with Participation from",
+          "source_content_hash": "c963dcf418366129b34d21f46398020bf87ddaf974ab061c0d20c9dc160b14bc",
+          "quote": "including a strategic investment from AT&T Ventures and support from new investors Forestay and Quadrille Capital.",
+          "quote_hash": "ba22506f745fab3ad91038499f7dbf0baaf6b4895f67b6527c40d683ddfa61e5"
+        },
         {
           "source_id": "FISRC-5ade874e36670280",
           "source_url": "https://news.qq.com/rain/a/20260930A000JE00",
           "source_title": "Reco融资5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
-          "source_content_hash": "d3a9e5207dcc9ac9d50ab2a0808436cb815f01e79505c4642b7c001f60b0478e",
+          "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
           "quote": "作为客户之一的AT&T通过其风险投资部门参与了此次追加融资，Forestay和Quadrille Capital也参与其中。",
           "quote_hash": "e2c58ee9e16b1bf16d080c4dafab75fb6ef8610e495b146662a79ed1a62085fa"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

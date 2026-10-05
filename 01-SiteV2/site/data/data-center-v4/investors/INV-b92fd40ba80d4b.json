@@ -165,10 +165,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "公开融资报道将国科投资列为面壁智能融资参与方及自变量机器人 A+ 轮领投方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司名称、管理人定位及科技投资业务来自国科投资官网；面壁智能与自变量机器人融资参与来自公开报道。未将官网未标统计日期的规模指标写入档案。",
+      "summary": "国科投资官网列示主体为中国科技产业投资管理有限公司，并称其致力于成为国内领先的私募股权基金管理人，主要投资科技企业。投资界及36氪报道另列国科投资参与面壁智能和自变量机器人融资。",
+      "facts": [
+        {
+          "field": "legal_entity_and_role",
+          "label": "官网披露的公司全称与业务定位",
+          "value": "国科投资官网列示中国科技产业投资管理有限公司，并称其致力于成为国内领先的私募股权投资基金管理人。",
+          "source_id": "PROFILE-COLLECT-INV-b92fd40ba80d4b-J-3"
+        },
+        {
+          "field": "investment_mandate",
+          "label": "官网披露的投资使命",
+          "value": "官网称国科投资致力于为行业领先企业提供资金和增值服务，帮助其提升国际竞争力。",
+          "source_id": "PROFILE-COLLECT-INV-b92fd40ba80d4b-J-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -197,6 +210,14 @@
           "source_content_hash": "abe44b136cbfb22fc521f19f36bcdc7f89467c392c05f5e7fa2dfa7ffa26cf7e",
           "quote": "内已连续完成多轮融资，覆盖A+轮、A轮、Pre-A+++轮及Pre-A++轮。 从时间顺序来看，这是一条清晰的、随技术与产品推进而不断放大的融资曲线。 2025年9月8日，自变量完成近10亿元A+轮融资。 该轮由阿里云与国科投资领投，国开金融、红杉中国、渶策资本跟投，美团战投作为老股东选择超额加码，联想之星、君联资本持续追投。 融资资金主要用于全自研通用具身智能基础模型的持续训练、硬件产品研发迭代，以及开源具身大模型WALL-A的推进。 这一轮融资也有两个显著信号：一是阿里云首次明确布局具身智能赛道；二是，这是自变量第五次完成亿元级融资。 时间再往前， 2025年5月12日，自变量完成数亿元A轮融资 ，由美团战投领投，美团龙珠跟投。 该轮资金主要用于端到端通用具身智能大模型与机器人本体的同步迭代，并加速应用场景",
           "quote_hash": "d672d6528382e23822ea25db0e84e7e4adcbc821fcd0a47746972e8f89a0dc22"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-b92fd40ba80d4b-J-3",
+          "source_url": "https://www.casim.cn/",
+          "source_title": "国科投资",
+          "source_content_hash": "d672e135d09d1119f30f3dc51356b3fd4fd3a64da3f8fe9f07d366e7827dd0b3",
+          "quote": "About 中国科技产业投资管理有限公司 国科投资以“为居于行业领先地位的企业提供资金支持和增值服务，帮助其成为具有国际竞争力的优秀企业”为使命，致力于成为国内领先的私募股权投资基金管理人。",
+          "quote_hash": "718edaebe75d3578e881449bf28ba7e614ada1b5ec1de3a6d70bd048c3db0df7"
         }
       ],
       "last_verified_at": "2026-10-03",

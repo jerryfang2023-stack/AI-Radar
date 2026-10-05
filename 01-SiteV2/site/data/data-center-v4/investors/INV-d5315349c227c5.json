@@ -125,40 +125,73 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "coverage_note": "公开资料仅支持本档案所列投资活动与来源明确记载的身份关联，不补写未经核实的职业经历或个人出资金额。",
-      "summary": "Sycamore 的官方种子轮公告将 Jay Simons 列为天使投资者，并标注其为 BOND 的 General Partner；未披露其个人出资金额。",
-      "current_roles": [
+      "coverage_status": "researched",
+      "coverage_note": "BOND 官网用于职业经历，Sycamore 官方融资公告仅证明一次个人天使参投，不披露个人出资额。",
+      "summary": "Jay Simons 是 BOND 普通合伙人，关注企业软件和 SaaS 商业模式扩张。BOND 官网记载他曾任 Atlassian 总裁，参与公司由初创发展至 IPO。Sycamore 的 6,500 万美元种子轮公告将他列为天使支持者之一；公告没有披露个人支票金额。",
+      "facts": [
         {
-          "title": "General Partner",
-          "organization": "BOND",
-          "source_id": "sycamore-jay-simons-seed-2026"
+          "field": "current_role",
+          "label": "现职",
+          "value": "BOND 普通合伙人。",
+          "source_id": "B26-JAY-BOND"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资关注",
+          "value": "新兴企业软件公司和现代 SaaS 商业模式的全球扩张。",
+          "source_id": "B26-JAY-BOND"
+        },
+        {
+          "field": "career",
+          "label": "职业经历",
+          "value": "曾任 Atlassian 总裁，参与公司从初创发展至 IPO。",
+          "source_id": "B26-JAY-CAREER"
         }
       ],
-      "career": [],
-      "education": [],
-      "experience_summary": "Sycamore 公告将其称为 “Jay Simons (General Partner at BOND)”。本档案不补充公告未记载的投资金额或额外履历。",
+      "milestones": [],
       "track_record": [
         {
-          "description": "Sycamore 官方公告列 Jay Simons 为投资者之一，并将其标注为 BOND 的 General Partner；未披露个人出资额。",
-          "source_id": "sycamore-jay-simons-seed-2026"
+          "description": "Sycamore 官方 6,500 万美元种子轮公告将 Jay Simons 列为天使投资者之一，标注为 BOND 普通合伙人；未披露个人出资额。",
+          "source_id": "B26-JAY-SYCAMORE"
         },
         {
           "description": "融资来源记录：Sycamore · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "BOND 个人页",
+          "value": "https://www.bondcap.com/partners/jay-simons/",
+          "url": "https://www.bondcap.com/partners/jay-simons/",
+          "source_id": "B26-JAY-BOND"
+        }
+      ],
       "sources": [
         {
-          "source_id": "sycamore-jay-simons-seed-2026",
+          "source_id": "B26-JAY-BOND",
+          "source_url": "https://www.bondcap.com/partners/jay-simons/",
+          "source_title": "Jay Simons | BOND",
+          "source_content_hash": "793b25b999811d5d893a2ea3edad99b6e893c5765f64c3856e2c2a2181b43e1f",
+          "quote": "Jay focuses on emerging enterprise software companies",
+          "quote_hash": "33f94473782abfbe01a6c5a2057467a5020d3d3811c796fbe17e078a6b0c873a"
+        },
+        {
+          "source_id": "B26-JAY-SYCAMORE",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
           "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
           "source_content_hash": "ebd89f06f7aac0e52ecdbbea0e88cbdee116486643a65781b7af4a27c01c9f44",
           "quote": "Jay Simons (General Partner at BOND)",
           "quote_hash": "3c4670f3d28e38159e909561d10694ad0759200ba3aaa4f169e0fcf15879bce9"
+        },
+        {
+          "source_id": "B26-JAY-CAREER",
+          "source_url": "https://www.bondcap.com/partners/jay-simons/",
+          "source_title": "Jay Simons | BOND",
+          "source_content_hash": "793b25b999811d5d893a2ea3edad99b6e893c5765f64c3856e2c2a2181b43e1f",
+          "quote": "Prior to BOND, Jay was the President of Atlassian and part of the early leadership team that scaled the company from startup to IPO.",
+          "quote_hash": "201a93b19b2860e86975ffc43754567ff524c7fed6ee9174b3ea8bb1c524f42e"
         },
         {
           "source_id": "FISRC-d354011359557f2f",
@@ -169,7 +202,11 @@
           "quote_hash": "3c4670f3d28e38159e909561d10694ad0759200ba3aaa4f169e0fcf15879bce9"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-05",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Jay Simons 是 BOND 普通合伙人，关注企业软件和 SaaS 商业模式扩张。BOND 官网记载他曾任 Atlassian 总裁，参与公司由初创发展至 IPO。Sycamore 的 6,500 万美元种子轮公告将他列为天使支持者之一；公告没有披露个人支票金额。"
     },
     "translations": {
       "zh-CN": {

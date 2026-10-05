@@ -123,33 +123,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司高管资料说明FreeS Fund的管理主体及投资策略；融资报道仅将峰瑞资本列作机构投资方，未披露单笔金额。",
+      "summary": "哔哩哔哩公司治理页面称李倪为上海自友投资管理有限公司创始人兼CEO，该公司亦称FreeS Fund，主要投资中国及海外早期和成长期创业公司，关注消费升级、关键传感器、人工智能和生物科技。威邦震电融资报道将峰瑞资本列为其历史融资投资方之一。",
+      "facts": [
+        {
+          "field": "identity_and_focus",
+          "label": "机构身份与投资方向",
+          "value": "哔哩哔哩公司治理页面称上海自友投资管理有限公司亦称FreeS Fund，并介绍其投资阶段和关注领域。",
+          "source_id": "frees_official_bio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 威邦震电 历史轮次投资方。",
+          "description": "威邦震电报道将峰瑞资本列为其此前两轮融资投资方之一；未披露具体轮次和单笔金额。",
+          "source_id": "wibond_round"
+        },
+        {
+          "description": "融资来源记录：威邦震电 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f9c8fdd671d3e193"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "frees_official_bio",
+          "source_url": "https://ir.bilibili.com/en/corporate-information/management/ni-li/",
+          "source_title": "Corporate Information",
+          "source_content_hash": "5f1d62a40ab6db57f3c75259ef69e78b7e74325de5368358567beff79107a125",
+          "quote": "Mr. Li is the founder and CEO of Shanghai Ziyou Investment Management Limited, also known as FreeS Fund, a venture capital firm that manages funds primarily investing in early and growth stage startups in China and overseas, and focuses on the industries of upgraded consuming, key sensors, A.I. and biotech.",
+          "quote_hash": "4ef4c11edccabf525cc68cd6ec3bd03f9dafebbf433c0aeeab843464cb0504e3"
+        },
+        {
+          "source_id": "wibond_round",
+          "source_url": "https://www.instrument.com.cn/netshow/SH116328/news_976408.htm",
+          "source_title": "近亿元B轮融资！威邦震电加速推动分子振动光谱技术产业化_振电（苏州）科技有限公司",
+          "source_content_hash": "ca7843a154a5a56d5c1b23f8ba3dc126e829a25b3f87cf0eb8daf6fe8873181a",
+          "quote": "此前，威邦震电已完成两轮融资，投资方包括道远资本、峰瑞资本、方正合生、纳通资本、苏高新金控等知名机构和个人。",
+          "quote_hash": "b8669b32ddc138938a94380ccc60055647f870685da1a45bec4f8ac2e9e3ffcd"
+        },
         {
           "source_id": "FISRC-f9c8fdd671d3e193",
           "source_url": "https://elsewhere.news/zh/daltonventure/bai-for-sciencenews",
-          "source_title": "威邦震电完成近亿元B轮融资，道彤投资领投，推进工业检测、临床及AI for Science商业化进程｜道彤News | elsewhere",
-          "source_content_hash": "343859c1b7493479c92e639b51a7e62c57f0e66e08baf799d30dfd8b0a563b2b",
+          "source_title": "威邦震电完成近亿元B轮融资，道彤投资领投，推进工业检测、临床及AI for Science商业化进程｜道彤News",
+          "source_content_hash": "b77e2b4e3f147ce2a11962774d610e4452e112a260a22904f82729e47b346c49",
           "quote": "此前，威邦震电已完成两轮融资，投资方包括道远资本、峰瑞资本、方正合生、纳通资本、苏高新金控等知名机构和个人。",
           "quote_hash": "b8669b32ddc138938a94380ccc60055647f870685da1a45bec4f8ac2e9e3ffcd"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     }
   }
 }

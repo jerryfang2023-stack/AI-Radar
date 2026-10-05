@@ -139,29 +139,48 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
-      "summary": "Autoheal 官方融资公告将其列为种子轮天使投资人。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "职业身份及 Autoheal 种子轮参与均来自 Autoheal 官方公告；未披露个人出资金额。",
+      "summary": "Autoheal 官方融资公告将 Savin Goyal 称为 Outerbounds 联合创始人兼 CTO，并将其列为种子轮天使投资人。现有公开资料支持该职业身份和一项投资示例，不代表完整个人投资组合。",
+      "facts": [
+        {
+          "field": "current_role",
+          "label": "现任职务",
+          "value": "Outerbounds 联合创始人兼 CTO",
+          "source_id": "PROFILE-B12-INV-ba92b29bd23aab-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "以天使投资人身份参与 Autoheal 种子轮。",
+          "source_id": "PROFILE-B12-INV-ba92b29bd23aab-1"
+        },
+        {
+          "description": "融资来源记录：Autoheal · 种子轮 · 2026-09-28 · 本轮参投 · $7.9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-212b01f9c4f8d05c"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-212b01f9c4f8d05c",
+          "source_id": "PROFILE-B12-INV-ba92b29bd23aab-1",
           "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
           "source_title": "Autoheal raises $7.9M to build the self-improving software factory for enterprises",
           "source_content_hash": "2b1272abb8d5c05c85d845301f84e59369d8a30887a705beed387411006e85cc",
           "quote": "ounder of GIT100; Sumeet Arora, Chief Product Officer of Teradata; Anshu Sharma, Co-Founder & CEO of Skyflow; Savin Goyal, Co-Founder & CTO of Outerbounds; and Srikant Gokulnatha, former SVP at ThoughtSpot. We are grateful to our investors for backing our team and vision so early. Our team previously built and scaled the DevOps platform at Harness. That expe",
           "quote_hash": "2ea8ac9b90164010964488a06ed7396351c737d6102859983218b3a74f4d83d8"
+        },
+        {
+          "source_id": "FISRC-212b01f9c4f8d05c",
+          "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
+          "source_title": "Autoheal 融资 790 万美元，为企业构建自我改进的软件工厂",
+          "source_content_hash": "db9fc8dd24df889f563eb8b09a5c63dfa0a5b96918734e65c10e95c659e10e53",
+          "quote": "Joining them as angel investors are industry leaders Shawn Kung, Founder of GIT100; Sumeet Arora, Chief Product Officer of Teradata; Anshu Sharma, Co-Founder & CEO of Skyflow; Savin Goyal, Co-Founder & CTO of Outerbounds; and Srikant Gokulnatha, former SVP at ThoughtSpot.",
+          "quote_hash": "28c75d316bfb050fc5bafcd93b0ce23bce48ee9863fe41acc5e850a5edb316cf"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

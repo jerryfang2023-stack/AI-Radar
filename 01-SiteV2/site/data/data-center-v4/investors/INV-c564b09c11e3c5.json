@@ -180,10 +180,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段和方向来自渶策资本官网；VAST融资参与来自投资界报道。这里只记录一项公开案例，不代表完整组合或收益表现。",
+      "summary": "渶策资本官网将其定位为专注早期至扩张阶段、关注人工智能、科技、消费和生物技术的风险投资公司。投资界关于 VAST（公司品牌三启万物）的A3轮报道将渶策资本列为持续追投的老股东。",
+      "facts": [
+        {
+          "field": "investment_focus_and_stage",
+          "label": "官网披露的投资阶段与领域",
+          "value": "渶策资本官网称其专注投资早期至扩张阶段企业，关注人工智能、科技、消费和生物技术创新。",
+          "source_id": "PROFILE-COLLECT-INV-c564b09c11e3c5-K-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -204,6 +211,14 @@
           "source_content_hash": "cd6a6c847f8ea057a91e873b5a152cb0aec8bddcb7ade9eaae1ba409f932fd40",
           "quote": "老股东 渶策资本、元生资本 持续追投。",
           "quote_hash": "08ef92f098bf62a5aa936148c107ee1fa09fdbc1ff090e097b919bdd522b3dec"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-c564b09c11e3c5-K-2",
+          "source_url": "https://www.incecap.com.cn/",
+          "source_title": "渶策资本官网",
+          "source_content_hash": "d003600a0d824832403961569ceb8037f82996fce16c3c03cf8ac91ae2fe25ba",
+          "quote": "早期至扩张阶段企业的风险投资公司",
+          "quote_hash": "eced3b398ecfdf3e1f672dc58549051fa06e86c65fb3b96f0de4bffd0fbc5d0a"
         },
         {
           "source_id": "FISRC-972ef11d09af7ec8",

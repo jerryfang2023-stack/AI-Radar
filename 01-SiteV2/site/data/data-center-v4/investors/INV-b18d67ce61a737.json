@@ -139,29 +139,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
-      "summary": "FriendliAI 的融资公告将 KB Securities 列为本轮跟投机构。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构身份及业务范围来自 KB Securities 官网；FriendliAI融资活动来自融资新闻稿，未披露 KB Securities 单独出资额。",
+      "summary": "KB Securities 官网将其描述为总部位于首尔、提供综合金融服务的投资银行与证券公司。FriendliAI 融资公告将其列为该公司2000万美元 seed-extension 轮的跟投机构。",
+      "facts": [
+        {
+          "field": "organization_identity",
+          "label": "机构定位",
+          "value": "KB Securities官网将其描述为总部位于首尔的投资银行与证券公司。",
+          "source_id": "PROFILE-B11-INV-b18d67ce61a737-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "官网列出全球业务、财富管理、投资银行、销售与交易等金融服务。",
+          "source_id": "PROFILE-B11-INV-b18d67ce61a737-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "跟投 FriendliAI 种子轮扩展融资。",
+          "description": "FriendliAI公告将 KB Securities 列为其2000万美元 seed-extension 轮的跟投机构；未披露单独出资额。",
+          "source_id": "PROFILE-B11-INV-b18d67ce61a737-2"
+        },
+        {
+          "description": "融资来源记录：FriendliAI · 种子轮 · 2025-08-28 · 既有投资方（本轮跟投） · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-af74b747b4936196"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "官网",
+          "url": "https://en.kbsec.com/go.able?linkcd=m0101001",
+          "source_id": "PROFILE-B11-INV-b18d67ce61a737-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B11-INV-b18d67ce61a737-1",
+          "source_url": "https://en.kbsec.com/go.able?linkcd=m0101001",
+          "source_title": "KB Securities",
+          "source_content_hash": "25dad00a0bbc8a13d32c73a59eba0dd5b01a2abcd6da51286143ca3c267dbfee",
+          "quote": "KB Securities is a leading investment bank and securities firm headquartered in Seoul, providing full-spectrum financial services across Global Business, Wealth Management, Investment Banking, and Sales & Trading.",
+          "quote_hash": "237611b0fca23bf567906a8adebabbb87c47426f510071c0707b1d66e23cbbb8"
+        },
+        {
+          "source_id": "PROFILE-B11-INV-b18d67ce61a737-2",
+          "source_url": "https://www.einpresswire.com/article/843686113/friendliai-closes-20m-seed-extension-round-to-accelerate-ai-inference-platform-growth",
+          "source_title": "FriendliAI Closes $20M Seed Extension Round to Accelerate AI Inference Platform Growth",
+          "source_content_hash": "e0f97a61212bb47b2b326ea24f8cc5633092e73d7f41fc0ba412b40b7237de23",
+          "quote": "with participation from new investors from Sierra Ventures, Alumni Ventures, KDB, and follow-on investment from KB Securities.",
+          "quote_hash": "0dd10c5721a2d1a9436b4c4a1d05fa145a5e503d6c2edcd58d23712f6881fa4f"
+        },
         {
           "source_id": "FISRC-af74b747b4936196",
           "source_url": "https://www.einpresswire.com/article/843686113/friendliai-closes-20m-seed-extension-round-to-accelerate-ai-inference-platform-growth",
           "source_title": "FriendliAI Closes $20M Seed Extension Round to Accelerate AI Inference Platform Growth",
-          "source_content_hash": "dbc7df056cd6fd24605ec41e6d2561e6949bc7d1010550487825b0bce46a8a14",
-          "quote": "ided By GoodEye PR August 28, 2025, 14:00 GMT Share This Article Capstone Partners, Sierra Ventures, KDB, and KB Securities invest in FriendliAI’s high-performance GPU inference solution REDWOOD CITY, CA, UNITED STATES, August 28, 2025 / EINPresswire.com / -- FriendliAI , a rapidly growing AI inference platform company, today announced that it has closed a $",
-          "quote_hash": "77610351ba1bff9aa0bfb202a250d4b120c7587f7fb67c464478d6d0bef667eb"
+          "source_content_hash": "0571770aee5954df",
+          "quote": "follow-on investment from KB Securities",
+          "quote_hash": "e9343aa741a2b8768a7cc22e8652a814479397d5364d0e9dd96b911f7aa846a8"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],

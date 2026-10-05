@@ -139,12 +139,29 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "依据本人署名文章与被投企业对其投资关系的记载；仅记录创办 Sheva 和一项投资活动，不扩展完整履历。",
-      "summary": "Upwind 发布的 Omri Casspi 署名文章称，他从职业篮球转向初创企业投资并参与创办 Sheva；文章记录了 Sheva 对 Upwind 的投资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Upwind文章提供Sheva及Upwind投资的一手公司来源；Swish基金规模、管理资产和职务来自Ctech 2026年9月报道，分别区分新基金规模与机构管理资产。",
+      "summary": "Upwind的Omri Casspi署名文章记录了他创办Sheva及对Upwind的投资。Ctech于2026年9月报道，他完成Swish Ventures第三支基金2.5亿美元募集，募集后机构管理资产约8亿美元，并称他为创始人及唯一管理合伙人。",
+      "facts": [
+        {
+          "field": "swish_fund_iii",
+          "label": "Ctech于2026年9月披露的基金募集",
+          "value": "Ctech报道Omri Casspi完成Swish Ventures第三支基金2.5亿美元募集，募集后机构管理资产约8亿美元。",
+          "source_id": "PROFILE-S-INV-38229b561579f0-3"
+        },
+        {
+          "field": "current_role",
+          "label": "Ctech报道的管理职务",
+          "value": "Ctech于2026年9月报道，Casspi是Swish Ventures创始人及唯一管理合伙人。",
+          "source_id": "PROFILE-S-INV-38229b561579f0-4"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Upwind公司2024年融资公告引用Omri Casspi称其会持续支持Upwind团队。",
+          "source_id": "PROFILE-S-INV-38229b561579f0-5"
+        },
         {
           "description": "融资来源记录：Cognition · D轮 · 2026-05-27 · 既有投资方，本轮参投 · 超过 10 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c7d89f6e73a6fe5b"
@@ -156,7 +173,7 @@
           "source_id": "omri-sheva",
           "source_url": "https://www.upwind.io/feed/omri-casspis-vc-sheva-why-we-invested-in-upwind",
           "source_title": "Omri Casspi&#039;s VC Sheva: Why We Invested in Upwind - Upwind",
-          "source_content_hash": "9daed33752d327f6e54a8438aa10c4664e5386a1431390904b002f6fa6d5044c",
+          "source_content_hash": "de0717ccce13534b770a0135b8a664f38d818c3550a2d019f4cfb4346efd9734",
           "quote": "From my days on the basketball court to founding Sheva eighteen months ago",
           "quote_hash": "975f15b52fa6a2d1a72ff97e9e1abf15d50a8bb9cc4f290ae996939dca5d28a9"
         },
@@ -164,9 +181,33 @@
           "source_id": "omri-investment",
           "source_url": "https://www.upwind.io/feed/omri-casspis-vc-sheva-why-we-invested-in-upwind",
           "source_title": "Omri Casspi&#039;s VC Sheva: Why We Invested in Upwind - Upwind",
-          "source_content_hash": "9daed33752d327f6e54a8438aa10c4664e5386a1431390904b002f6fa6d5044c",
+          "source_content_hash": "de0717ccce13534b770a0135b8a664f38d818c3550a2d019f4cfb4346efd9734",
           "quote": "Our investment in Upwind truly reflects",
           "quote_hash": "6e0eff35fc4557733811fc669f4d184a6b98477b60e51d3d66d7cfbe4bb06fa3"
+        },
+        {
+          "source_id": "PROFILE-S-INV-38229b561579f0-3",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/bj11x7a800ge",
+          "source_title": "Omri Casspi raises $250 million after big wins with Cognition, Wonderful and Upwind | Ctech",
+          "source_content_hash": "8ae27639dc31865c54bd32966ced4534c75b4e9d502c0a97ee9129101f519128",
+          "quote": "has completed a $250 million fundraising round for his third fund, bringing Swish Ventures’ assets under management to $800 million",
+          "quote_hash": "55017a7e60a4edeb61b1b9d7b81b84017a97410a8f364af9b160c402b32b21ec"
+        },
+        {
+          "source_id": "PROFILE-S-INV-38229b561579f0-4",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/bj11x7a800ge",
+          "source_title": "Omri Casspi raises $250 million after big wins with Cognition, Wonderful and Upwind | Ctech",
+          "source_content_hash": "8ae27639dc31865c54bd32966ced4534c75b4e9d502c0a97ee9129101f519128",
+          "quote": "Swish began operations in 2025 with Casspi, the fund’s founder, as its sole managing partner",
+          "quote_hash": "66e29243d692c6d88fccc56e52882113f76e161af5c5f46e8dae79e8a0b3ccfb"
+        },
+        {
+          "source_id": "PROFILE-S-INV-38229b561579f0-5",
+          "source_url": "https://www.upwind.io/feed/upwind-secures-100m-to-power-next-generation-cloud-security",
+          "source_title": "Upwind Secures $100M to Power Next-Generation Cloud Security - Upwind",
+          "source_content_hash": "7f58b817ab7cccb7152914e6cc78b03152a9fe34c529c5da619a726e796ecf0c",
+          "quote": "I&rsquo;m incredibly proud to continue to back this team at each and every round.",
+          "quote_hash": "9b34a8a93b0205bb536a6f36b253069fcf01d93cd8d3e445b13b66eaaa90ca79"
         },
         {
           "source_id": "FISRC-c7d89f6e73a6fe5b",
@@ -177,7 +218,7 @@
           "quote_hash": "32a689c79ede37eda5c607e1327b2f71b761bb7b8abe6ff5a893009360891e98"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [
         {

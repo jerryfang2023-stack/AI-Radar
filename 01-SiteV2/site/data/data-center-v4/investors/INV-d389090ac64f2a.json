@@ -195,10 +195,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "公司业务定位来自香港交易所披露的2025年年报；两项投资事件来自投资界报道。集团参与融资不等于其下属特定基金管理法人，未作主体混同。",
+      "summary": "首程控股2025年年报介绍其以产业基金投资优秀企业，并配合资产管理和运营形成业务模式。投资界两篇融资报道分别将首程控股列为中科沌序种子轮领投方和它石智航 Pre-A 轮投资方。",
+      "facts": [
+        {
+          "field": "business_model",
+          "label": "年报披露的产业基金与资产管理模式",
+          "value": "首程控股称通过产业投资基金投资企业，并通过资产运营为被投企业创造价值。",
+          "source_id": "PROFILE-COLLECT-INV-d389090ac64f2a-L-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -227,6 +234,14 @@
           "source_content_hash": "9059328553af0202261e4a9fcb878e036a3d8b749795ed79c9a2637e2d5484e9",
           "quote": "TCL创投、孚腾资本、首程控股（0697.HK）、建发新兴投资、恒旭资本、国汽投资进一步投资入局",
           "quote_hash": "98283f62fdc1f099a463b6ddcadde3f558c7320eaabe074bee13e6968378fbb8"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-d389090ac64f2a-L-3",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032702882.pdf",
+          "source_title": "首程控股有限公司2025年年報（香港交易所披露易）",
+          "source_content_hash": "d9940a73c28018ed8558dde264292c7ac055aa1e46bc01717257019e29b62210",
+          "quote": "We invest in outstanding companies through industrial investment funds to control core assets; through in-depth asset operation, we create value for the invested enterprises and contribute to enhancing asset efficiency.",
+          "quote_hash": "f9c9087d8723721350c336759422af557fcc7dd1b290a4eeb34ac6df17007259"
         }
       ],
       "last_verified_at": "2026-10-03",

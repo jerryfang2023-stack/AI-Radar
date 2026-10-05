@@ -123,29 +123,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档仅记录已公开披露的融资参与关系，不据此推断完整投资组合。",
-      "summary": "SambaNova 官方融资公告将 A&E 列入其新一轮融资的既有投资方。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构名称以官网法律页与被投企业公告交叉核对；未使用名称相近的第三方投资数据库补写机构策略。",
+      "summary": "A&E Investment 官网隐私页将运营主体称为 A&E Investment, LLC；SambaNova 2026 年 Series F 首次交割公告将 A&E Investment 列为新/既有投资者之一。本档仅记录官网名称和公开融资参与，不推断其策略、基金规模或单独出资额。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网披露的主体名称",
+          "value": "A&E Investment 官网隐私页将主体称为 A&E Investment, LLC。",
+          "source_id": "PROFILE-B3-INV-732f1e2456a1dd-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "SambaNova 官方公告将 A&E 列为参与本轮融资的既有投资方。",
+          "description": "SambaNova 官方融资公告将 A&E Investment 列为 Series F 新/既有投资者之一；未披露其单独出资额。",
+          "source_id": "PROFILE-B3-INV-732f1e2456a1dd-2"
+        },
+        {
+          "description": "融资来源记录：SambaNova · 历史轮次未披露 · 既有投资者参与本轮。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d47a3aba63bc33dc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "A&E Investment 官网",
+          "value": "A&E Investment 官网",
+          "url": "https://www.aeinvestments.com/",
+          "source_id": "PROFILE-B3-INV-732f1e2456a1dd-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-B3-INV-732f1e2456a1dd-1",
+          "source_url": "https://www.aeinvestments.com/privacy-policy",
+          "source_title": "Privacy Policy",
+          "source_content_hash": "82c81066f44df887c27a3aa4c8078f1bfc452ef225daa130fe41f859f8d32061",
+          "quote": "A&E Investment, LLC",
+          "quote_hash": "95beae7910ec2d7814d57c9d533a8a60720e5a5d6cd804db6fb5ce3ae01e2a04"
+        },
+        {
+          "source_id": "PROFILE-B3-INV-732f1e2456a1dd-2",
+          "source_url": "https://sambanova.ai/press/sambanova-completes-first-close-of-1b-financing-at-11b-valuation",
+          "source_title": "SambaNova Completes First Close of $1B Financing at $11B Valuation",
+          "source_content_hash": "eaeb86bb429d9c4cbdc548584800488bc4be3743ea8669133aa48236930595e3",
+          "quote": "New and existing investors include A&E Investment, Assam Ventures",
+          "quote_hash": "f3d2e3f8bfedb12ed90271c08ee23ffa9d728d1412ad6e9dfde6f75adf81bf26"
+        },
         {
           "source_id": "FISRC-d47a3aba63bc33dc",
           "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
-          "source_title": "SambaNova Unveils Fastest Chip for Agentic AI, Collaborates with Intel, and Raises $350M+",
-          "source_content_hash": "cadc60f311853db35109d545e0aec6c37b00affb6cf777753b1cc37c7bc2af4f",
-          "quote": "Mayfield Capital, Saudi First Data, Seligman Ventures, and accounts advised by T. Rowe Price Associates, Inc. Existing investors participating include: A&E, 8Square, Atlantic Bridge, BlackRock, GV, Nepenthe, Nuri Capital, and Redline Capital. As agentic workloads expand, enterprises are discovering that infrastructure optimized for traini",
-          "quote_hash": "954d3e27e149f47c4f5c9103bff8bd7aea6fe35b83b1a9ee174f381deefc8e37"
+          "source_title": "SambaNova 推出面向智能体 AI 的最快芯片，与 Intel 合作，并融资 $350M+",
+          "source_content_hash": "a8a674a909a941b6f4eda47c45eb48d08d2c01be3e8f4e2038eb18121f8d3c3f",
+          "quote": "Existing investors participating include: A&E, 8Square, Atlantic Bridge, BlackRock, GV, Nepenthe, Nuri Capital, and Redline Capital.",
+          "quote_hash": "6a8a047c2802d955e749a731a26a2b27b5a2bede3a38a7b553c8955d9353f6d7"
         }
       ],
-      "last_verified_at": "2026-10-03",
+      "last_verified_at": "2026-10-04",
       "current_roles": [],
       "career": [],
       "education": [],
