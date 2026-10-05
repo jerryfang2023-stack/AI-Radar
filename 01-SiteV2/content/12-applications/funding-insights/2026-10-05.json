@@ -2,21 +2,589 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-10-05",
-    "generated_at": "2026-10-05T00:39:47.249Z",
+    "generated_at": "2026-10-05T05:22:28.428Z",
     "trigger": "accepted_financing_event_research",
     "research_provider": "search-gateway+direct-original+deepseek",
     "model": "deepseek-flash",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 26,
-      "auto_published": 4,
+      "funding_events": 27,
+      "auto_published": 5,
       "blocked": 1,
       "pending": 3,
       "deduplicated": 18
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-04d497b3dab2119b",
+      "triggered_by_event_id": "EV-b9619bdde0bdc311",
+      "as_of_date": "2026-10-05",
+      "company": {
+        "entity_id": "EN-b30579f8c2b65627",
+        "name": "Helix Digital Infrastructure",
+        "full_name": "Helix Digital Infrastructure",
+        "website": "helixdi.com",
+        "summary": "Helix是一家AI基础设施公司，由全球投资机构KKR联合KIA、NVIDIA和Vistra于2026年6月成立，旨在为超大规模云服务商提供涵盖数据中心、电力、输电配电和光纤网络的一站式AI基础设施解决方案。",
+        "headquarters": "",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9d03a17bbefffa61",
+            "quote": "Helix Digital Infrastructure, an AI infrastructure company established by global investment firm KKR",
+            "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+            "quote_hash": "3d1c0cb063b56c3d51ddd712c5ce7748534f9d4de31f451a3591b99475fa094f"
+          },
+          {
+            "source_id": "FISRC-a2b8036be101b776",
+            "quote": "Helix Digital Infrastructure finances, develops, and operates AI-enabling infrastructure that includes hyperscale data centers, power generation and transmission, fiber, and connectivity.",
+            "source_content_hash": "adba80ca4088dfdd",
+            "quote_hash": "eff64af4a4e8311d82fe219a1ffdeb6a6393d94667317ce3bb4db7dfea03c415"
+          }
+        ],
+        "application_entity_id": "EN-b30579f8c2b65627",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "轮次未披露",
+        "amount": "USD 1 billion",
+        "total_raised": "",
+        "announced_at": "2026-09-29",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Samsung Electronics",
+            "role": "本次共同投资承诺方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Samsung C&T",
+            "role": "本次共同投资承诺方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Samsung SDS",
+            "role": "本次共同投资承诺方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+              }
+            ],
+            "entity_id": "EN-c13e2f4a44bb01ed"
+          },
+          {
+            "name": "Samsung SDI",
+            "role": "本次共同投资承诺方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Samsung Life Insurance",
+            "role": "本次共同投资承诺方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Samsung Fire & Marine Insurance",
+            "role": "本次共同投资承诺方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "KKR",
+            "role": "创始投资方（2026年6月）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Alongside Samsung, KKR, the Kuwait Investment Authority (KIA), NVIDIA, and US power company Vistra are also founding investors in Helix.",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "fa584c1460aacb256b3b3f0a0b7dd5b64fb76cb8cca39b92a6fa02be691098b0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kuwait Investment Authority (KIA)",
+            "role": "创始投资方（2026年6月）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Alongside Samsung, KKR, the Kuwait Investment Authority (KIA), NVIDIA, and US power company Vistra are also founding investors in Helix.",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "fa584c1460aacb256b3b3f0a0b7dd5b64fb76cb8cca39b92a6fa02be691098b0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NVIDIA",
+            "role": "创始投资方（2026年6月）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Alongside Samsung, KKR, the Kuwait Investment Authority (KIA), NVIDIA, and US power company Vistra are also founding investors in Helix.",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "fa584c1460aacb256b3b3f0a0b7dd5b64fb76cb8cca39b92a6fa02be691098b0"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802"
+          },
+          {
+            "name": "Vistra",
+            "role": "创始投资方（2026年6月）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Alongside Samsung, KKR, the Kuwait Investment Authority (KIA), NVIDIA, and US power company Vistra are also founding investors in Helix.",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "fa584c1460aacb256b3b3f0a0b7dd5b64fb76cb8cca39b92a6fa02be691098b0"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9d03a17bbefffa61",
+            "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure, an AI infrastructure company established by global investment firm KKR.",
+            "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+            "quote_hash": "8f83411b553fc37a044ca0c1fa10db1bb3f0a4c251e1165201cffc33c0e61f39"
+          },
+          {
+            "source_id": "FISRC-9d03a17bbefffa61",
+            "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+            "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+            "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+          },
+          {
+            "source_id": "FISRC-9c4f25e067ce714a",
+            "quote": "Samsung Electronics committed $500 million and five other affiliates committed the remainder.",
+            "source_content_hash": "2ea18a0130a60a77",
+            "quote_hash": "bcf79db79d286bfd0480dca544399813a127480a9d30ee910a90e36c5ca51c81"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "USD 1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-b9619bdde0bdc311",
+            "round_original": "未披露",
+            "amount": "USD 1 billion",
+            "announced_at": "2026-09-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure, an AI infrastructure company established by global investment firm KKR.",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "8f83411b553fc37a044ca0c1fa10db1bb3f0a4c251e1165201cffc33c0e61f39"
+              },
+              {
+                "source_id": "FISRC-9d03a17bbefffa61",
+                "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+                "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+                "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "一站式AI基础设施解决方案",
+          "description": "Helix为超大规模云服务商提供涵盖超大规模数据中心开发与运营、发电（含基荷与灵活调峰电源）、输电配电基础设施以及光纤网络的一站式AI基础设施解决方案。",
+          "target_customers": "超大规模云服务商（hyperscalers）",
+          "features": [
+            "超大规模数据中心开发与运营",
+            "发电（基荷与灵活能源）",
+            "输电与配电基础设施",
+            "光纤网络"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9d03a17bbefffa61",
+              "quote": "Helix is an AI-enabling infrastructure provider that is designed to deliver integrated solutions across the entire value chain, including hyperscale data center development and operations, power generation (covering both baseload and flexible energy sources), transmission and distribution infrastructure, and fiber-optic networks.",
+              "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+              "quote_hash": "0c0a915e4a66094b3f960438997f15356645823c7e34b06b25842eb86a8217ac"
+            },
+            {
+              "source_id": "FISRC-ead174b6e8a90910",
+              "quote": "The company aims to provide one-stop AI infrastructure solutions for hyperscale cloud providers.",
+              "source_content_hash": "af9885841d5654cd",
+              "quote_hash": "1120a6ccd5b432bfbb4edd33bff5bdb47aacef17dfd7bc4ce14b4fe84f6d1606"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Nscale",
+          "product": "自有数据中心与高密度GPU集群，整合可再生能源发电、硬件与编排软件",
+          "scenario": "为企业和政府支持AI训练、微调与推理工作负载",
+          "target_customer": "企业和政府",
+          "funding_summary": "",
+          "core_difference": "Nscale自建并运营数据中心，选址于可再生能源丰富地区（如挪威水电、得州可再生能源），并在西弗吉尼亚拥有表后天然气发电厂；Helix则通过投资与战略合作获取能源容量，业务覆盖数据中心、发电、输电配电和光纤全价值链。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a2b8036be101b776",
+              "quote": "Nscale is an AI infrastructure company and global hyperscaler that builds, owns, and operates data centers and high-density GPU clusters.",
+              "source_content_hash": "adba80ca4088dfdd",
+              "quote_hash": "a0850e757998852941dd694c22c51da5354ab896058ff7b6ca4601a1426f8673"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Volta",
+          "product": "整合机构资本、已通电土地、数据中心、算力、软件与运营的AI工厂平台",
+          "scenario": "开发、融资、建设和运营AI工厂",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Volta定位为整合平台，结合机构资本、已通电土地、数据中心、算力、软件与运营来开发运营AI工厂；Helix则聚焦于数据中心、发电、输电配电和光纤网络等基础设施资产的投资、开发与运营。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a2b8036be101b776",
+              "quote": "Volta is an integrated platform for AI infrastructure that develops, finances, builds, and runs AI factories by combining institutional capital, powered land, data centers, compute, software, and operations.",
+              "source_content_hash": "adba80ca4088dfdd",
+              "quote_hash": "50346b6357961c69f0c1036106f361ddbcbe9a966df2d6f1bf467efbfe89bd51"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "三星关联公司合计投资承诺额",
+          "value": "USD 1 billion",
+          "observed_at": "2026-09-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9d03a17bbefffa61",
+              "quote": "investing a combined USD 1 billion in Helix Digital Infrastructure",
+              "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+              "quote_hash": "658da34f16a4990c028117938e98bffbe7b4adbb0ad42fe01f99b6d97e9681ac"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Samsung",
+          "quote": "Through this investment, Samsung Electronics and its affiliates aim to accelerate global AI data center deployment alongside Helix, while maximizing collaborative synergies among participating companies.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9d03a17bbefffa61",
+              "quote": "Through this investment, Samsung Electronics and its affiliates aim to accelerate global AI data center deployment alongside Helix, while maximizing collaborative synergies among participating companies.",
+              "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+              "quote_hash": "6dd282efeae8a36a4699083bc50a5d95564939805049926e2549d58be6f88241"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "三星六家关联公司宣布对 Helix 合计投资 10 亿美元。这是投资承诺；原始公告未披露资金是否已到账、正式融资轮次、估值或已签约客户。Helix 的数据中心、电力及网络基础设施能否形成实际交付，仍需后续公告验证。",
+        "validated_signals": [
+          "三星六家关联公司宣布合计投资 10 亿美元，公告未说明到账状态",
+          "Helix 提供数据中心、电力、输配电和光纤网络的一体化 AI 基础设施方案"
+        ],
+        "risks": [
+          "原始公告未披露投资承诺的实际拨付进度、估值和股权比例",
+          "原始公告未披露 Helix 已签约客户或基础设施交付规模"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI基础设施",
+        "investment_thesis": {
+          "statement": "三星六家关联公司宣布对 Helix 合计投资 10 亿美元。这是投资承诺；原始公告未披露资金是否已到账、正式融资轮次、估值或已签约客户。Helix 的数据中心、电力及网络基础设施能否形成实际交付，仍需后续公告验证。",
+          "evidence_signals": [
+            "三星六家关联公司宣布合计投资 10 亿美元，公告未说明到账状态",
+            "Helix 提供数据中心、电力、输配电和光纤网络的一体化 AI 基础设施方案"
+          ],
+          "risks": [
+            "原始公告未披露投资承诺的实际拨付进度、估值和股权比例",
+            "原始公告未披露 Helix 已签约客户或基础设施交付规模"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "一站式AI基础设施解决方案",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung Electronics",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung C&T",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung SDS",
+          "canonical_entity_id": "EN-c13e2f4a44bb01ed",
+          "canonical_name": "Samsung SDS"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung SDI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung Life Insurance",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung Fire & Marine Insurance",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "KKR",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Kuwait Investment Authority (KIA)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "NVIDIA",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Vistra",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Nscale",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Volta",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-b9619bdde0bdc311",
+          "date": "2026-09-29",
+          "title": "三星将向 AI 基础设施公司 Helix 投资 10 亿美元",
+          "amount": "USD 1 billion",
+          "source_refs": [
+            "SA-647793f236dbf26e"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-9d03a17bbefffa61",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "title": "三星将向 AI 基础设施公司 Helix 投资 10 亿美元",
+          "publisher": "news.samsung.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-05T05:11:05.484Z",
+          "content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+          "source_artifact_id": "SA-647793f236dbf26e",
+          "raw_id": "RAW-478adbc3b9071397"
+        },
+        {
+          "source_id": "FISRC-a2b8036be101b776",
+          "source_url": "https://multiples.vc/private-comps/helix-digital-infrastructure",
+          "title": "Helix Digital Infrastructure Funding, Investors & Competitors | Multiples",
+          "publisher": "multiples.vc",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-05T05:20:51.952Z",
+          "content_hash": "adba80ca4088dfdd",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9c4f25e067ce714a",
+          "source_url": "https://venturecapitaltracker.com/startup/helix-digital-infrastructure",
+          "title": "Helix Digital Infrastructure Funding, Valuation & Investors",
+          "publisher": "venturecapitaltracker.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-05T05:21:06.396Z",
+          "content_hash": "2ea18a0130a60a77",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ead174b6e8a90910",
+          "source_url": "https://baike.baidu.com/en/item/Helix%20Digital%20Infrastructure/4999746",
+          "title": "Helix Digital Infrastructure",
+          "publisher": "baike.baidu.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-05T05:21:55.171Z",
+          "content_hash": "af9885841d5654cd",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-05T05:22:28.073Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-05T05:22:28.073Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "一站式AI基础设施解决方案"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-b9619bdde0bdc311"
+      ],
+      "aggregation": {
+        "key": "EN-b30579f8c2b65627|undisclosed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-4376980a05474f74",
@@ -1087,7 +1655,7 @@
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
-          "research_name": "Andreessen Horowitz’s a16z speedrun",
+          "research_name": "a16z speedrun",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
@@ -2637,7 +3205,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-f2950d2104e97163",
@@ -2646,7 +3214,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-3b424be9d0d68b87",
@@ -2664,7 +3232,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-df4a0504042552ae",
@@ -2673,7 +3241,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-9ea3912efd857ad8",
@@ -2682,7 +3250,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-861d4440dcbb9b09",
@@ -2691,7 +3259,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-d087ccd71efc469d",
@@ -2700,7 +3268,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-f11e79a99589efbd",
@@ -2709,7 +3277,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-a6c2d9011b7b035e",
@@ -2718,7 +3286,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-141a1e90c0780daa",
@@ -2727,7 +3295,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-e8f58ed488159c88",
@@ -2788,7 +3356,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-b88f1a2dd721d62d",
@@ -2797,7 +3365,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-bbea3352983c2033",
@@ -2806,7 +3374,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-80aeba0846bbd197",
@@ -2815,7 +3383,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-7bb7b9e293a852ca",
@@ -2992,7 +3560,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-201690debbddab65",
@@ -3001,7 +3569,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-6a63fabeceadc42b",
@@ -3019,7 +3587,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-6324ffde67e257fa",
@@ -3028,7 +3596,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-7fb563f47cc29d8d",
@@ -3091,7 +3659,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-439c3a45abe7b514",
@@ -3159,7 +3727,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
     },
     {
       "event_id": "EV-1ef8979f39a2ccc5",
@@ -3168,7 +3736,179 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-05T00:39:47.245Z"
+      "updated_at": "2026-10-05T05:22:28.421Z"
+    },
+    {
+      "event_id": "EV-b9619bdde0bdc311",
+      "company_name": "Helix Digital Infrastructure",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Helix Digital Infrastructure\" 2026 funding round investors",
+        "\"Helix Digital Infrastructure\" USD 1 billion funding announcement",
+        "\"Helix Digital Infrastructure\" official product customers",
+        "\"Helix Digital Infrastructure\" \"why we invested\"",
+        "\"Helix Digital Infrastructure\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Helix Digital Infrastructure\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.yahoo.com/technology/ai/articles/samsung-commits-1-billion-helix-230000907.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.hpcwire.com/off-the-wire/kkr-launches-helix-digital-infrastructure-with-10b-to-accelerate-ai-infrastructure-buildout/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Helix Digital Infrastructure\" USD 1 billion funding announcement",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.threads.com/@rswebsols/post/Dd4h3HUo14j/samsung-invests-billion-in-helix-digital-infrastructure-to-aid-global-ai/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.instagram.com/p/Dd4AHXEGxtt/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.wsj.com/tech/ai/samsung-commits-1-billion-to-ai-infrastructure-firm-backed-by-kkr-nvidia-d1039c57",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/cnbc/posts/samsung-electronics-and-its-affiliates-will-invest-a-combined-1-billion-in-helix/1492035362797852/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.connectcre.com/stories/samsung-commits-1b-to-helixs-digital-infrastructure-strategy/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.yahoo.com/technology/ai/articles/kkr-kkr-portfolio-company-drew-131020294.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.investing.com/analysis/samsung-bets-1-billion-on-helix-as-ai-infrastructure-race-intensifies-200688585",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Helix Digital Infrastructure\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/kkr-launches-helix-digital-infrastructure-105000467.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/posts/kkr_kkr-launches-helix-digital-infrastructure-activity-7470803687167406080-bLcO",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.businesswire.com/news/home/20260928688153/en/Samsung-Commits-%241-Billion-to-Helix-Digital-Infrastructure-to-Support-Global-AI-Infrastructure-Buildout",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.youtube.com/watch?v=4mUYvtU9bOQ",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.datacenterfrontier.com/hyperscale/news/55384897/kkr-bets-big-on-ai-infrastructure-with-helix-launch-tapping-former-aws-ceo-adam-selipsky-to-build-a-new-hyperscale-model",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Helix Digital Infrastructure\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/posts/georgian_why-georgian-invested-in-eon-activity-7447651946414366720-VxB1",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/posts/the-impact-iq_privateequity-venturecapital-aiinfrastructure-activity-7467847760260595713-AJnG",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://tw.linkedin.com/company/kkr?trk=public_profile_experience-item_profile-section-card_subtitle-click",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://dk.linkedin.com/company/kkr?trk=parent-company_org_title",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/posts/coachlillie_aiinfrastructure-datacenters-hpc-activity-7468820591693869056-e8FP",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/posts/shivongunalan_blackstone-has-taken-a-significant-minority-activity-7449637573112815616-sd4j",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Helix Digital Infrastructure\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Helix Digital Infrastructure\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-05T05:22:28.421Z"
     }
   ]
 }

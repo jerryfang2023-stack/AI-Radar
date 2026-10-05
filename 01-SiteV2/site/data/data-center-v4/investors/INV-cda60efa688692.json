@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-05",
     "currentDate": "2026-10-05",
-    "eventCount": 3934,
+    "eventCount": 3935,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -200,12 +200,20 @@
     },
     "translations": {
       "zh-CN": {
-        "public_profile.summary": {
-          "text": "TechCrunch 报道将 Trevor Blackwell (YC) 列为支持 Adam 的天使投资者之一；Y Combinator 官方人物页将 Trevor Blackwell 标为其退休创始人。Adam 融资总额为 410 万美元，未披露其个人出资额。",
-          "source_hash": "16d0438770e3aa50d19d0f06626a0294475f76d8fd86bd32ff74012522c6abab",
+        "public_profile.career[0].description": {
+          "text": "Y Combinator人物页将其列为 Founder, Retired，未披露具体任期。",
+          "source_hash": "91a31857b6f514d0e6cfe55c5cec1f44fe865774b36de7e52b53a9ee6dc3200d",
           "provider": "deepseek",
-          "model": "deepseek-flash",
-          "translated_at": "2026-10-04T02:43:54.089Z",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-05T05:14:54.689Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "TechCrunch报道Adam的410万美元种子轮投资人包括 Trevor Blackwell（YC）；报道未披露他的个人出资额。",
+          "source_hash": "27fc5fe30ad23d529ac0face963b0e539841a81415acdfdbcfb7e5dac0e04e60",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-05T05:14:54.689Z",
           "status": "translated"
         }
       }

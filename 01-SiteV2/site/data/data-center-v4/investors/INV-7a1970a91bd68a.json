@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-05",
     "currentDate": "2026-10-05",
-    "eventCount": 3934,
+    "eventCount": 3935,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,16 +62,17 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-15",
+    "first_disclosed_at": "2026-06",
     "latest_disclosed_at": "2026-08-15",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
           }
         ]
+      },
+      {
+        "activity_id": "IA-1b8fcf0588e5dc7c",
+        "funding_insight_id": "FI-9d27f5dcb579f980",
+        "event_ids": [
+          "EV-b9619bdde0bdc311"
+        ],
+        "company_entity_id": "EN-b30579f8c2b65627",
+        "company_canonical_entity_id": "",
+        "company_name": "Helix Digital Infrastructure",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2026-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "创始投资方（2026年6月）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9d03a17bbefffa61",
+            "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+            "source_title": "三星将向 AI 基础设施公司 Helix 投资 10 亿美元",
+            "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+            "quote": "Alongside Samsung, KKR, the Kuwait Investment Authority (KIA), NVIDIA, and US power company Vistra are also founding investors in Helix.",
+            "quote_hash": "fa584c1460aacb256b3b3f0a0b7dd5b64fb76cb8cca39b92a6fa02be691098b0"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "281ec3c5199ae992",
         "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
         "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+      },
+      {
+        "source_id": "FISRC-9d03a17bbefffa61",
+        "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+        "source_title": "三星将向 AI 基础设施公司 Helix 投资 10 亿美元",
+        "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+        "quote": "Alongside Samsung, KKR, the Kuwait Investment Authority (KIA), NVIDIA, and US power company Vistra are also founding investors in Helix.",
+        "quote_hash": "fa584c1460aacb256b3b3f0a0b7dd5b64fb76cb8cca39b92a6fa02be691098b0"
       }
     ],
     "public_profile": {
@@ -157,6 +198,10 @@
         {
           "description": "融资来源记录：NVIDIA · 基础设施融资 · 2026-08-15 · 本轮参投 · 超过 5000 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5514041be03e64ae"
+        },
+        {
+          "description": "融资来源记录：Helix Digital Infrastructure · 历史轮次未披露 · 2026-06 · 创始投资方（2026年6月）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
       "profile_type": "organization",
@@ -200,6 +245,14 @@
           "source_content_hash": "281ec3c5199ae992",
           "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
           "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+        },
+        {
+          "source_id": "FISRC-9d03a17bbefffa61",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "三星将向 AI 基础设施公司 Helix 投资 10 亿美元",
+          "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+          "quote": "Alongside Samsung, KKR, the Kuwait Investment Authority (KIA), NVIDIA, and US power company Vistra are also founding investors in Helix.",
+          "quote_hash": "fa584c1460aacb256b3b3f0a0b7dd5b64fb76cb8cca39b92a6fa02be691098b0"
         }
       ],
       "last_verified_at": "2026-10-03"

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-05",
     "currentDate": "2026-10-05",
-    "eventCount": 3934,
+    "eventCount": 3935,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-08",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-29",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "other_current_round": 1
     },
     "round_codes": [
-      "series_d"
+      "series_d",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-b30579f8c2b65627",
+        "canonical_entity_id": "",
+        "name": "Helix Digital Infrastructure"
+      },
       {
         "entity_id": "EN-c04bd5ebd10ab696",
         "canonical_entity_id": "EN-c04bd5ebd10ab696",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b37b7385f91ffe3f",
+        "funding_insight_id": "FI-9d27f5dcb579f980",
+        "event_ids": [
+          "EV-b9619bdde0bdc311"
+        ],
+        "company_entity_id": "EN-b30579f8c2b65627",
+        "company_canonical_entity_id": "",
+        "company_name": "Helix Digital Infrastructure",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "USD 1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-09-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本次共同投资承诺方",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-9d03a17bbefffa61",
+            "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+            "source_title": "三星将向 AI 基础设施公司 Helix 投资 10 亿美元",
+            "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+            "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+            "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+          }
+        ]
+      },
       {
         "activity_id": "IA-adbe68e5a905026b",
         "funding_insight_id": "FI-e0e22d70a91e704e",
@@ -130,6 +177,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9d03a17bbefffa61",
+        "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+        "source_title": "三星将向 AI 基础设施公司 Helix 投资 10 亿美元",
+        "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+        "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+        "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+      },
+      {
         "source_id": "FISRC-4d11ed62a144a3f4",
         "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
         "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
@@ -161,6 +216,10 @@
         {
           "description": "Samsung 官方公告称其领投 Mistral AI Series D 并获得战略股权，以支持长期技术合作。",
           "source_id": "FISRC-4d11ed62a144a3f4"
+        },
+        {
+          "description": "融资来源记录：Helix Digital Infrastructure · 轮次未披露 · 2026-09-29 · 本次共同投资承诺方 · USD 1 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9d03a17bbefffa61"
         }
       ],
       "contacts": [],
@@ -184,17 +243,25 @@
           "source_content_hash": "85ed0f4b5e2e86a9b574752cbe5a918f0146c4703cd14dbff516e8f169140b66",
           "quote": "Samsung has also led Mistral AI’s Series D funding round, securing a strategic equity stake to support long-term technology collaboration.",
           "quote_hash": "3e71a1fa06cae0da005e13eee842d9767029b7f50259db7eddc4e52a9feed90c"
+        },
+        {
+          "source_id": "FISRC-9d03a17bbefffa61",
+          "source_url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "source_title": "三星将向 AI 基础设施公司 Helix 投资 10 亿美元",
+          "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+          "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+          "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
         }
       ]
     },
     "translations": {
       "zh-CN": {
-        "public_profile.track_record[0].description": {
-          "text": "Samsung 官方公告称其领投 Mistral AI 的 Series D 融资并取得战略股权。",
-          "source_hash": "6f48267cdac159d82420805cc3e3c5c1bcc88ec04de224e9499b7b2a9d7c418d",
+        "public_profile.summary": {
+          "text": "Samsung 官方资料介绍其电子业务分为 DX 与 DS 两个事业部。Samsung Semiconductor 公告称 Samsung 领投 Mistral AI 的 Series D 并取得战略股权，作为长期技术合作的一部分。",
+          "source_hash": "4aa9b3957bef2be1e6b9b5f1708e11c9bf9f80fab63b00ad89ea016c5453b0da",
           "provider": "deepseek",
-          "model": "deepseek-flash",
-          "translated_at": "2026-10-04T02:43:37.105Z",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-05T05:14:16.676Z",
           "status": "translated"
         }
       }

@@ -29,6 +29,11 @@ test('soft-wrapped funding amounts retain their scale and rupee metrics retain t
   assert.equal(metricValues('Vytalyou raised Rs 9 crore. Biopeak raised $2.7 million.')[0],'Rs 9 crore');
 });
 
+test('an ISO currency prefix stays attached to an investment commitment amount', () => {
+  assert.deepEqual(metricValues('Samsung announced an investment of USD 1 billion in Helix.'), ['USD 1 billion']);
+  assert.deepEqual(metricValues('A company invested 100 million in its own factory.'), ['100 million']);
+});
+
 test('English article sentences become bounded source spans without splitting decimals', async () => {
   const {sentenceSpans}=await import('../build-data-center-v4.mjs');
   const body='Aignosis raised ₹4 crore in a seed round led by Antler. The AI startup builds tools for autism screening.Google for Startups Accelerator selected the team.';

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-05",
     "currentDate": "2026-10-05",
-    "eventCount": 3934,
+    "eventCount": 3935,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -197,12 +197,28 @@
     },
     "translations": {
       "zh-CN": {
-        "public_profile.summary": {
-          "text": "Foreword 官网将 Declan Kelly 列为 Founder & General Partner；Archestra 于 2026 年 6 月公布 1,000 万美元种子轮，并将他列入个人支持者名单之一。未披露其个人投资额。",
-          "source_hash": "441268a8957ca0451d91dab9a7256fdd5a4aca6993a797d052b379f999e02612",
+        "public_profile.facts[0].label": {
+          "text": "Foreword 官网披露的职务",
+          "source_hash": "88c35a4f84ce61b597fc106b699b63875d82f1be3af020a8db3e6d0903640c32",
           "provider": "deepseek",
-          "model": "deepseek-flash",
-          "translated_at": "2026-10-04T02:43:44.342Z",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-05T05:14:32.660Z",
+          "status": "translated"
+        },
+        "public_profile.summary": {
+          "text": "Foreword 官网将 Declan Kelly 列为 Founder & General Partner；Archestra 官方 2026 年 6 月种子轮公告将“Declan Kelly (Founder & GP at Foreword)”列为个人支持者之一。未披露其个人投资金额。",
+          "source_hash": "99a6dd935b827be18694288ff7f6984c9d3ca8ddae395743cc540277e3a30782",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-05T05:14:32.660Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Archestra 官方公告将 Declan Kelly（Founder & GP at Foreword）列为 1000 万美元种子轮个人支持者之一；未披露个人投资额。",
+          "source_hash": "a70c2897eacfe2afd7126c66ebc35c88f12843d3dedae4bf9d2d6fbde08b4028",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-05T05:14:32.660Z",
           "status": "translated"
         }
       }

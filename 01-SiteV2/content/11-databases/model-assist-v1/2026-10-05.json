@@ -1,9 +1,9 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-10-05T00:38:48.796Z",
+  "generated_at": "2026-10-05T05:17:31.837Z",
   "data_date": "2026-10-05",
   "prompt_version": "model-assist-2026-07-18.2",
-  "source_count": 88,
+  "source_count": 89,
   "candidates": [
     {
       "candidate_id": "MAC-04247587a228892c",
@@ -1716,6 +1716,119 @@
         }
       ],
       "generated_at": "2026-10-05T00:30:01.536Z"
+    },
+    {
+      "candidate_id": "MAC-535254ae70fa6be5",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-478adbc3b9071397",
+      "raw_id": "RAW-478adbc3b9071397",
+      "source_ref": "SA-647793f236dbf26e",
+      "source_hash": "628ccc24f181bfa9",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "三星关联企业投资的接受方是 Helix；原文只确认长期资本承诺，未确认全额到账或新轮次名称。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Helix Digital Infrastructure",
+            "object": "USD 1 billion investment commitment from Samsung affiliates",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 283,
+          "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure, an AI infrastructure company established by global investment firm KKR."
+        },
+        {
+          "start": 284,
+          "end": 638,
+          "quote": "Launched in June 2026, Helix is an AI-enabling infrastructure provider that is designed to deliver integrated solutions across the entire value chain, including hyperscale data center development and operations, power generation (covering both baseload and flexible energy sources), transmission and distribution infrastructure, and fiber-optic networks."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-05T05:17:20.966Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex financing evidence review",
+        "reviewed_at": "2026-10-05T05:17:20.966Z",
+        "note": "原始公告核验三星六家公司对 Helix 的 10 亿美元资本承诺；公告日期 2026-09-29，避免写成已全部到账。"
+      }
+    },
+    {
+      "candidate_id": "MAC-5457474033ebf510",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-45e1b9efcd9fcb04",
+      "raw_id": "RAW-478adbc3b9071397",
+      "source_ref": "SA-647793f236dbf26e",
+      "source_hash": "628ccc24f181bfa9",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Samsung",
+        "rationale": "The candidate mention 'Samsung Electronics' is one of the Samsung affiliates referenced collectively as 'Samsung' in the source, and the verified alternative 'Samsung' is the matching canonical entity.",
+        "candidate_name": "Samsung Electronics"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 210,
+          "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-05T05:17:31.421Z"
     },
     {
       "candidate_id": "MAC-55f5ee2aac5eb6b4",
@@ -5321,6 +5434,54 @@
         }
       ],
       "generated_at": "2026-10-05T00:29:51.072Z"
+    },
+    {
+      "candidate_id": "MAC-ea29260c0b106284",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-b30579f8c2b65627",
+      "raw_id": "RAW-478adbc3b9071397",
+      "source_ref": "SA-647793f236dbf26e",
+      "source_hash": "628ccc24f181bfa9",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Helix Digital Infrastructure",
+        "rationale": "The candidate name 'Helix Digital Infrastructure' does not match any verified alternative (NVIDIA, Amazon, Samsung, Samsung SDS). The source describes Helix as an AI infrastructure company established by KKR, distinct from the verified entities.",
+        "candidate_name": "Helix Digital Infrastructure"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 283,
+          "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure, an AI infrastructure company established by global investment firm KKR."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-05T05:17:31.830Z"
     },
     {
       "candidate_id": "MAC-ecaf0b28d24bbbe4",
