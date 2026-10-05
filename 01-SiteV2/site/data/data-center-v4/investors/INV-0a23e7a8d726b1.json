@@ -139,27 +139,39 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资活动来自融资发行方Eliyan的官方公告；没有据此扩展Coherent的其他投资组合。",
-      "summary": "Coherent官网介绍其为全球光子技术企业，成立于1971年并在20多个国家开展业务。Eliyan官方战略融资公告将Coherent列为参与方。本档记录公司主体与这次公开战略投资披露，不将其描述为独立风险投资基金。",
+      "coverage_status": "researched",
+      "coverage_note": "公司背景来自 Coherent 官网。Eliyan 的发行方公告将 Coherent 列为战略投资者，但未披露 Coherent 的出资额；不将公司描述为独立风险投资基金。",
+      "summary": "Coherent 官网介绍其为光子技术企业，服务数据中心、通信和工业市场，并称公司成立于1971年、业务遍及20多个国家。Eliyan 官方战略融资公告将 Coherent 列为参与方；公告未披露 Coherent 的单独出资金额。",
       "facts": [
         {
-          "field": "founded",
-          "label": "成立时间",
-          "value": "1971年",
+          "field": "business_scope",
+          "label": "官网披露的业务领域",
+          "value": "光子技术；官网提到数据中心、通信和工业市场。",
           "source_id": "coherent_profile"
         },
         {
-          "field": "geographic_presence",
-          "label": "经营地区",
-          "value": "20多个国家",
+          "field": "founded",
+          "label": "成立年份",
+          "value": "官网称成立于1971年。",
+          "source_id": "coherent_profile"
+        },
+        {
+          "field": "geography",
+          "label": "经营范围",
+          "value": "官网称在20多个国家运营；按页面发布时信息记录。",
           "source_id": "coherent_profile"
         }
       ],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "1971",
+          "description": "Coherent 官网称公司成立于1971年。",
+          "source_id": "coherent_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "Eliyan官方公告将Coherent列入其战略投资参与者。",
+          "description": "Eliyan 官方公告称其获得包括 Coherent 在内的战略投资；公告未披露 Coherent 的单独投资金额。",
           "source_id": "coherent_activity"
         },
         {
@@ -170,8 +182,8 @@
       "contacts": [
         {
           "kind": "website",
-          "label": "公司介绍",
-          "value": "Coherent About Us",
+          "label": "公司官网",
+          "value": "Coherent",
           "url": "https://www.coherent.com/company/about-us",
           "source_id": "coherent_profile"
         }
@@ -182,16 +194,16 @@
           "source_url": "https://www.coherent.com/company/about-us",
           "source_title": "About Us | Coherent",
           "source_content_hash": "4220bf10995ef45340e78cc446cc4cf0382e439183ff80da2be2d7dc3cf4fc64",
-          "quote": "Founded in 1971 and operating in more than 20 countries",
-          "quote_hash": "486ece35d944d7fbbd5fdea2fe944522442417996c4e2dda147c66f43b8ce586"
+          "quote": "Coherent is the global photonics leader. We harness photons to drive innovation. Industry leaders in the datacenter, communications, and industrial markets rely on Coherent’s world-leading technology to fuel their own innovation and growth. Founded in 1971 and operating in more than 20 countries",
+          "quote_hash": "d7dfb9bf1f8b57d7013d8bdc9fbd698faae09d5a8e9b32be765bb9c2d6bb1d4d"
         },
         {
           "source_id": "coherent_activity",
           "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
           "source_title": "Eliyan Secures $50 Million in Strategic Investments from Leading Hyperscalers and AI Infrastructure Providers to Accelerate Scalable AI Systems - Eliyan",
           "source_content_hash": "11a719573d90d41fdcec01ceddc607ab194b94e5d8a0c7b0350c7d9d8252f4fc",
-          "quote": "including AMD, Arm, Coherent, and Meta",
-          "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
+          "quote": "it has secured $50 million in strategic investments from major players across the AI and compute ecosystem, including AMD, Arm, Coherent, and Meta",
+          "quote_hash": "f18dab2172ed08871d5a4b747e789a5a86d7d5b6c5de7d7de9cec6b752c0c122"
         },
         {
           "source_id": "FISRC-5618afd8046eeb4f",
@@ -202,7 +214,11 @@
           "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
         }
       ],
-      "last_verified_at": "2026-10-05"
+      "last_verified_at": "2026-10-06",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

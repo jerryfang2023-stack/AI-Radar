@@ -68618,27 +68618,39 @@
     "INV-0d549065b1add1": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只找到企业招聘信息和一项媒体融资列名，不能据此推定存在独立基金或完整投资组合。",
-      "summary": "辽宁科技大学化学工程学院就业页面将镔鑫钢铁对应为江苏省镔鑫钢铁集团有限公司，并称其成立于2008年。投资界对数巅智能融资的报道把“镔鑫钢铁”列入投资方名单。本档只收录主体索引与这项公开列名。",
+      "coverage_status": "researched",
+      "coverage_note": "主体背景摘自辽宁科技大学2025年招聘信息页所载公司简介，并非集团官网；融资活动仅由投资界报道列名，未取得集团或被投企业原始公告确认其实际出资主体及金额。招聘页联系方式未录入。",
+      "summary": "辽宁科技大学招聘信息页所载公司简介将“镔鑫钢铁”对应为江苏省镔鑫钢铁集团有限公司，介绍其以钢铁生产为主业，并涉足工业气体、发电、开发投资、贸易、物流和房地产。投资界报道曾将镔鑫钢铁列入数巅智能融资投资方名单；该投资关系尚无集团或发行方的一手公告确认。",
       "facts": [
         {
-          "field": "formal_name",
-          "label": "主体名称",
-          "value": "江苏省镔鑫钢铁集团有限公司",
+          "field": "public_entity_name",
+          "label": "公开资料中的主体名称",
+          "value": "江苏省镔鑫钢铁集团有限公司；名称见辽宁科技大学招聘信息页所载公司简介。",
           "source_id": "binxin_identity"
         },
         {
-          "field": "founded",
-          "label": "成立时间",
-          "value": "2008年2月",
+          "field": "business_scope",
+          "label": "公开资料介绍的业务",
+          "value": "以钢铁生产为主业，涉及工业气体制造、超高压煤气发电、开发投资、综合贸易、物流及房地产。",
+          "source_id": "binxin_identity"
+        },
+        {
+          "field": "registered_capital",
+          "label": "招聘资料所载注册资本",
+          "value": "人民币21亿元；为2025年招聘信息页所载数据，未由集团官网复核。",
           "source_id": "binxin_identity"
         }
       ],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "2008-02",
+          "description": "招聘信息页所载公司简介称江苏省镔鑫钢铁集团有限公司成立于2008年2月。",
+          "source_id": "binxin_identity"
+        }
+      ],
       "track_record": [
         {
-          "description": "投资界报道将镔鑫钢铁列为数巅智能多轮融资披露的参与方之一。",
+          "description": "投资界报道将镔鑫钢铁列入数巅智能公开融资投资方名单；报道未披露镔鑫的单笔投资金额，投资关系尚未由集团或发行方一手确认。",
           "source_id": "binxin_activity"
         },
         {
@@ -68653,16 +68665,16 @@
           "source_url": "https://www.ustl.edu.cn/hgxy/info/1040/4272.htm",
           "source_title": "江苏省镔鑫钢铁集团有限公司招聘就业信息-辽宁科技 - 化学工程学院",
           "source_content_hash": "950349056431f1fca2ddc13661242fa3081244645298907a7520ee268cbd6c41",
-          "quote": "江苏省镔鑫钢铁集团有限公司成立于2008年2月",
-          "quote_hash": "3a60d7444a7246dcfbd3b312916aa68655522890ea4ab08243c16155f5e5cbd6"
+          "quote": "江苏省镔鑫钢铁集团有限公司成立于 2008年2月，注册资本21亿元，坐落于连云港市赣榆区，占地5000余亩。经过十余年发展，现已成为以钢铁生产为主业，横跨工业气体制造、超高压煤气发电、开发投资、综合贸易、物流及房地产等领域的大型综合钢铁企业。",
+          "quote_hash": "79ada20ef812a9091b8a58870ec46e94efd166ea9865c87244fd9c398c00ae44"
         },
         {
           "source_id": "binxin_activity",
           "source_url": "https://news.pedaily.cn/202609/569430.shtml",
           "source_title": "数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化_投资界",
           "source_content_hash": "8b03a9d7d0f177d479ba7379919a2b9f76a4ee8171835bb674fa9d0ba29585e2",
-          "quote": "中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒、财鑫资本",
-          "quote_hash": "dacc53b490c1a8e1d13febfec4ec1862737f8ba1548d68410f7ab9dd93d3316c"
+          "quote": "此次披露的投资方包括 中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒、财鑫资本、深圳力合等产业与金融资本",
+          "quote_hash": "14387e92a6fc787e35678e4e0ddd4a9f490763b7b9737773620c75612541c65f"
         },
         {
           "source_id": "FISRC-f5fa738edf400dda",
@@ -68673,7 +68685,11 @@
           "quote_hash": "4f7de3e000eb80419ec27fd750e26ba56642a4e0089dde436f1d526a46bd7eb4"
         }
       ],
-      "last_verified_at": "2026-10-06"
+      "last_verified_at": "2026-10-06",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-13357080b7eaae": {
       "profile_type": "unverified",
@@ -118866,19 +118882,68 @@
     "INV-5212b4b2186450": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Crucible Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构官网公开投资方向和平台介绍；创始人官网确认 Meltem Demirors 的创始合伙人身份。未披露可核实的基金规模或业绩；Ornn 页面只证明公开投资方列名，不代表 Crucible 的单笔投资金额。",
+      "summary": "Crucible Capital 官网将自身描述为围绕能源、算力、材料及相关市场开展早期投资的平台。创始人 Meltem Demirors 的个人官网称她是 Crucible 的创始人兼普通合伙人；被投企业 Ornn 的官网将 Crucible Capital 列入投资方名单。",
+      "facts": [
+        {
+          "field": "investment_scope",
+          "label": "官网披露的投资方向",
+          "value": "能源、算力、材料，以及为这些领域提供融资和协调机制的市场；此为机构自述方向。",
+          "source_id": "b45_crucible_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024",
+          "description": "Crucible 官网称平台于2024年初启动。",
+          "source_id": "b45_crucible_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Ornn 官网将 Crucible Capital 列为投资方之一；该页面未披露 Crucible 的单笔投资额。",
+          "source_id": "b45_crucible_ornn"
+        },
         {
           "description": "融资来源记录：Ornn AI Inc. · 种子轮 · 2026-06-24 · 既有投资方（本轮参投） · $33M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-44c6debf2c528a2a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Crucible Capital",
+          "url": "https://cruciblecap.xyz/",
+          "source_id": "b45_crucible_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "b45_crucible_home",
+          "source_url": "https://cruciblecap.xyz/",
+          "source_title": "Crucible Capital",
+          "source_content_hash": "5b809f4ced7685eb12d663cbd705ca444434d3d550a981328184bd1c8ec0b552",
+          "quote": "We started in early 2024 with no name, no deck—just conviction and our own capital. Today, we manage a venture platform and operate a cluster of GPUs alongside our capital partners. Crucible invests from idea through inflection in companies driving structural shifts across energy, compute, materials, and the markets that finance and coordinate them.",
+          "quote_hash": "5844376e96e7e75cd9688f822e56bed4ec466064646f5a72a28f402d4fd0909d"
+        },
+        {
+          "source_id": "b45_crucible_meltem",
+          "source_url": "https://www.meltemdemirors.com/",
+          "source_title": "Meltem Demirors",
+          "source_content_hash": "e0a779dab2c0837e3375d1572723d9f20081aed43ecc964d141dad2690ea8faf",
+          "quote": "Meltem Demirors is Founder and General Partner at Crucible, an early-stage fund investing in the foundations of our digital future. Before launching Crucible in 2024, she served as Chief Strategy Officer at CoinShares",
+          "quote_hash": "84bd85eea1102d640389e9f68f16fc6caf7e473b57e8325992b439c24a92e5c4"
+        },
+        {
+          "source_id": "b45_crucible_ornn",
+          "source_url": "https://www.ornn.com/about",
+          "source_title": "Ornn | Financial Products for Compute",
+          "source_content_hash": "5ab95318d82a3db745a5a40871ec24c91a2cd68401206ce942c8d0987de0f656",
+          "quote": "Backed by leading AI companies, funds and angel investors. A16Z Galaxy Crucible Capital Vine Ventures Link Ventures Box Group",
+          "quote_hash": "a9c372bc27e918f6078fc25e0defe43f901a18631df81397e60b3d8f169eb679"
+        },
         {
           "source_id": "FISRC-44c6debf2c528a2a",
           "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
@@ -118888,7 +118953,17 @@
           "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "current_roles": [
+        {
+          "title": "Founder and General Partner",
+          "organization": "Crucible",
+          "source_id": "b45_crucible_meltem"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "创始人官网称 Meltem Demirors 于2024年创立 Crucible，之前曾任 CoinShares 首席战略官。这里的个人履历只用于标注机构负责人，不扩展为机构业绩。",
+      "last_verified_at": "2026-10-06"
     },
     "INV-48b33b2e0ecd38": {
       "profile_type": "organization",
@@ -126460,21 +126535,27 @@
     "INV-06c0487ef6e9a7": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "活动信息仅为媒体援引企业查询数据的报道，不据此确认投资金额、估值或京东作为直接出资主体的法律实体。",
-      "summary": "JD.com投资者关系页面将公司介绍为技术驱动的电商企业，并称其正转向以供应链为基础的技术与服务提供商。IT之家一篇援引企查查数据的报道把京东列入DeepSeek外部融资参与者名单；该投资关系尚未由京东或DeepSeek一手资料确认。",
+      "coverage_status": "researched",
+      "coverage_note": "JD.com 公司主体与业务介绍来自公司投资者关系官网。DeepSeek 融资关系只见 IT之家对企查查数据的转述；本次未找到 JD.com 或 DeepSeek 一手确认，不作为已核实投资项目。",
+      "summary": "JD.com 官网将公司介绍为技术驱动的电商企业，正向以供应链为基础的技术与服务提供商转型，并向合作伙伴、品牌及其他行业开放其零售基础设施。媒体曾将京东列入 DeepSeek 外部融资参与方，但该投资关系尚无 JD.com 或 DeepSeek 一手确认。",
       "facts": [
         {
-          "field": "business",
-          "label": "公司业务",
-          "value": "技术驱动的电商企业，正转向供应链技术与服务提供商",
+          "field": "business_description",
+          "label": "公司业务定位",
+          "value": "公司官网称其为技术驱动的电商企业，正转向供应链技术与服务提供商。",
+          "source_id": "jd_business"
+        },
+        {
+          "field": "platform_model",
+          "label": "零售基础设施",
+          "value": "官网称其零售基础设施服务消费者，并向合作伙伴、品牌及其他行业开放，作为 Retail as a Service 的组成部分。",
           "source_id": "jd_business"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "IT之家援引企查查数据报道，将京东列入DeepSeek外部融资投资方名单；尚未取得融资各方的一手确认。",
+          "description": "IT之家援引企查查称京东是 DeepSeek 外部融资参与方；该关系尚未由京东或 DeepSeek 一手确认，不作为核实投资案例。",
           "source_id": "jd_activity"
         },
         {
@@ -126485,8 +126566,8 @@
       "contacts": [
         {
           "kind": "website",
-          "label": "投资者关系网站",
-          "value": "JD.com Investor Relations",
+          "label": "公司投资者关系官网",
+          "value": "JD.com",
           "url": "https://ir.jd.com/about-JD",
           "source_id": "jd_business"
         }
@@ -126497,8 +126578,8 @@
           "source_url": "https://ir.jd.com/about-JD",
           "source_title": "About JD.com | JD.Com, Inc.",
           "source_content_hash": "e892c19f56c7f4d1bd2c77a40775d78e0f43f68e250593ba25e9d1451b7fb42d",
-          "quote": "JD.com is a leading technology driven e-commerce company transforming to become the leading supply chain based technology and service provider.",
-          "quote_hash": "a7e67dfd6343d87e75b79ae16698932d68f0182bdead71c4715992d92969c395"
+          "quote": "JD.com is a leading technology driven e-commerce company transforming to become the leading supply chain based technology and service provider. The company’s cutting-edge retail infrastructure seeks to enable consumers to buy whatever they want, whenever and wherever they want it. The company has opened its technology and infrastructure to partners, brands and other sectors, as part of its Retail as a Service offering to help drive productivity and innovation across a range of industries.",
+          "quote_hash": "cd2ea7fc7706fc4c9ffeb4fdafcb73687391718d35afae4f3412a8cc17960e35"
         },
         {
           "source_id": "jd_activity",
@@ -126517,7 +126598,11 @@
           "quote_hash": "a1f9c8e473298805311c145b991d7554c6260e6997163768b55052a58304aabf"
         }
       ],
-      "last_verified_at": "2026-10-06"
+      "last_verified_at": "2026-10-06",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-22e66f842c4d29": {
       "profile_type": "unverified",
@@ -162944,27 +163029,39 @@
     "INV-0a23e7a8d726b1": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "投资活动来自融资发行方Eliyan的官方公告；没有据此扩展Coherent的其他投资组合。",
-      "summary": "Coherent官网介绍其为全球光子技术企业，成立于1971年并在20多个国家开展业务。Eliyan官方战略融资公告将Coherent列为参与方。本档记录公司主体与这次公开战略投资披露，不将其描述为独立风险投资基金。",
+      "coverage_status": "researched",
+      "coverage_note": "公司背景来自 Coherent 官网。Eliyan 的发行方公告将 Coherent 列为战略投资者，但未披露 Coherent 的出资额；不将公司描述为独立风险投资基金。",
+      "summary": "Coherent 官网介绍其为光子技术企业，服务数据中心、通信和工业市场，并称公司成立于1971年、业务遍及20多个国家。Eliyan 官方战略融资公告将 Coherent 列为参与方；公告未披露 Coherent 的单独出资金额。",
       "facts": [
         {
-          "field": "founded",
-          "label": "成立时间",
-          "value": "1971年",
+          "field": "business_scope",
+          "label": "官网披露的业务领域",
+          "value": "光子技术；官网提到数据中心、通信和工业市场。",
           "source_id": "coherent_profile"
         },
         {
-          "field": "geographic_presence",
-          "label": "经营地区",
-          "value": "20多个国家",
+          "field": "founded",
+          "label": "成立年份",
+          "value": "官网称成立于1971年。",
+          "source_id": "coherent_profile"
+        },
+        {
+          "field": "geography",
+          "label": "经营范围",
+          "value": "官网称在20多个国家运营；按页面发布时信息记录。",
           "source_id": "coherent_profile"
         }
       ],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "1971",
+          "description": "Coherent 官网称公司成立于1971年。",
+          "source_id": "coherent_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "Eliyan官方公告将Coherent列入其战略投资参与者。",
+          "description": "Eliyan 官方公告称其获得包括 Coherent 在内的战略投资；公告未披露 Coherent 的单独投资金额。",
           "source_id": "coherent_activity"
         },
         {
@@ -162975,8 +163072,8 @@
       "contacts": [
         {
           "kind": "website",
-          "label": "公司介绍",
-          "value": "Coherent About Us",
+          "label": "公司官网",
+          "value": "Coherent",
           "url": "https://www.coherent.com/company/about-us",
           "source_id": "coherent_profile"
         }
@@ -162987,16 +163084,16 @@
           "source_url": "https://www.coherent.com/company/about-us",
           "source_title": "About Us | Coherent",
           "source_content_hash": "4220bf10995ef45340e78cc446cc4cf0382e439183ff80da2be2d7dc3cf4fc64",
-          "quote": "Founded in 1971 and operating in more than 20 countries",
-          "quote_hash": "486ece35d944d7fbbd5fdea2fe944522442417996c4e2dda147c66f43b8ce586"
+          "quote": "Coherent is the global photonics leader. We harness photons to drive innovation. Industry leaders in the datacenter, communications, and industrial markets rely on Coherent’s world-leading technology to fuel their own innovation and growth. Founded in 1971 and operating in more than 20 countries",
+          "quote_hash": "d7dfb9bf1f8b57d7013d8bdc9fbd698faae09d5a8e9b32be765bb9c2d6bb1d4d"
         },
         {
           "source_id": "coherent_activity",
           "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
           "source_title": "Eliyan Secures $50 Million in Strategic Investments from Leading Hyperscalers and AI Infrastructure Providers to Accelerate Scalable AI Systems - Eliyan",
           "source_content_hash": "11a719573d90d41fdcec01ceddc607ab194b94e5d8a0c7b0350c7d9d8252f4fc",
-          "quote": "including AMD, Arm, Coherent, and Meta",
-          "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
+          "quote": "it has secured $50 million in strategic investments from major players across the AI and compute ecosystem, including AMD, Arm, Coherent, and Meta",
+          "quote_hash": "f18dab2172ed08871d5a4b747e789a5a86d7d5b6c5de7d7de9cec6b752c0c122"
         },
         {
           "source_id": "FISRC-5618afd8046eeb4f",
@@ -163007,7 +163104,11 @@
           "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
         }
       ],
-      "last_verified_at": "2026-10-05"
+      "last_verified_at": "2026-10-06",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-5ff5d5346b4e9b": {
       "profile_type": "organization",
@@ -171942,27 +172043,39 @@
     "INV-06f9cf56e3bdb4": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "公司品牌更名由Lambda官网确认；Stack AI投资关系仅见TechCrunch报道，非发行方或投资方一手确认。",
-      "summary": "Lambda官网将其介绍为AI计算平台，并公告 lambdalabs.com 更名为 lambda.ai。TechCrunch对Stack AI早期融资的报道曾将Lambda Labs列为投资者；本档按公司历史品牌关联收录这一项媒体披露，不推定存在独立风险投资基金。",
+      "coverage_status": "researched",
+      "coverage_note": "公司官网介绍和品牌域名迁移来自 Lambda 自身页面。Stack AI 投资者列名来自 TechCrunch 报道，未由 Lambda 或 Stack AI 一手确认；不据此把 Lambda 描述为独立风险投资基金。",
+      "summary": "Lambda 官网称公司于2012年由机器学习工程师创立，专注 AI 工作负载和基础设施，提供模块化 AI 工厂。公司公告称 lambdalabs.com 现为 lambda.ai。TechCrunch 曾将 Lambda Labs 列为 Stack AI 投资者之一，但这项报道未由公司或被投企业一手确认。",
       "facts": [
         {
-          "field": "business",
-          "label": "公司业务",
-          "value": "AI计算平台",
+          "field": "founded_and_focus",
+          "label": "成立时间与业务重点",
+          "value": "官网称 Lambda 于2012年由机器学习工程师创立，所有工程、运营和支持均专注于 AI 工作负载与基础设施。",
           "source_id": "lambda_profile"
         },
         {
-          "field": "brand_history",
-          "label": "品牌变化",
-          "value": "Lambda官网公告 lambdalabs.com 更名为 lambda.ai",
+          "field": "products",
+          "label": "官网披露的产品方向",
+          "value": "面向训练和部署超智能系统的模块化 AI 工厂，包括电力、液冷和高带宽互连。",
+          "source_id": "lambda_products"
+        },
+        {
+          "field": "brand_domain",
+          "label": "官网域名迁移",
+          "value": "公司公告称 lambdalabs.com 现为 lambda.ai。该信息证明网站品牌迁移，不单独证明法律主体变更。",
           "source_id": "lambda_rebrand"
         }
       ],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "2012",
+          "description": "Lambda 官网称公司于2012年由机器学习工程师创立。",
+          "source_id": "lambda_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "TechCrunch报道将Lambda Labs列为Stack AI早期融资参与方之一。",
+          "description": "TechCrunch 将 Lambda Labs 列为 Stack AI 投资者之一；这项列名是媒体报道，未披露投资金额，也不证明其管理独立风险投资基金。",
           "source_id": "lambda_activity"
         },
         {
@@ -171975,7 +172088,7 @@
           "kind": "website",
           "label": "公司官网",
           "value": "Lambda",
-          "url": "https://lambda.ai/",
+          "url": "https://lambda.ai/about",
           "source_id": "lambda_profile"
         }
       ],
@@ -171985,8 +172098,16 @@
           "source_url": "https://lambda.ai/about",
           "source_title": "About Lambda | AI Computing Platform for Superintelligence",
           "source_content_hash": "fbfa172efd1b35a34aebfc3bbecce06eadd6f263802808904d94f406509006ef",
-          "quote": "AI Computing Platform for Superintelligence",
-          "quote_hash": "f21abe041a12ee700c3a0f7c1e20d73f5b08e0c2fbd1534ce975a6e24d771e8b"
+          "quote": "Lambda is an AI-only company founded by ML engineers in 2012. One hundred percent of our engineering, operations, and support is dedicated to AI workloads and infrastructure.",
+          "quote_hash": "503ec859dfd39ac4fbe8bbe199e86e265a5e089ee58b6a123e3fe48bffed6c56"
+        },
+        {
+          "source_id": "lambda_products",
+          "source_url": "https://lambda.ai/about",
+          "source_title": "About Lambda | AI Computing Platform for Superintelligence",
+          "source_content_hash": "fbfa172efd1b35a34aebfc3bbecce06eadd6f263802808904d94f406509006ef",
+          "quote": "Lambda builds modular AI factories — power, liquid cooling, and high-bandwidth interconnects — for labs training and deploying the next generation of superintelligence.",
+          "quote_hash": "246464dfaf4fe84c665e95567a9a4741ea77c65e805a4b2d6962c457c22ce980"
         },
         {
           "source_id": "lambda_rebrand",
@@ -172013,7 +172134,11 @@
           "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
         }
       ],
-      "last_verified_at": "2026-10-05"
+      "last_verified_at": "2026-10-06",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-78637e97655560": {
       "profile_type": "organization",
@@ -219078,19 +219203,24 @@
     "INV-0935c1e3ca5aa5": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "该页面未提供独立人物简介；括注不足以确认其现任职务、完整职业经历或教育背景。",
-      "summary": "P-1 AI官网在个人天使投资者名单中列出Zak Stone，并以“Google Cloud”作括注。本档仅记录公司公开页面中的投资者列名。",
-      "facts": [],
-      "milestones": [],
-      "contacts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Punahou 校友简介未标注发布时间和任职起止日期，故将 Google Brain 职务作为该页面所述时期的历史简介，不列为当前职位。简介未披露博士学位授予院校；不作推断。P-1 AI 将 Zak Stone 列入个人投资者名单，但未披露个人出资额。",
+      "summary": "Punahou School 的校友简介记载，Zak Stone 曾在 Google Brain 团队担任 Cloud TPU 产品经理，并有计算机视觉博士研究经历；页面还称他创办的一家移动深度学习初创公司后来被 Apple 收购。P-1 AI 官网将 Zak Stone 列入个人投资者名单，并以 Google Cloud 作括注。",
       "current_roles": [],
-      "career": [],
+      "career": [
+        {
+          "organization": "Google (Google Brain Team)",
+          "title": "Product Manager for Cloud TPUs",
+          "period": "Punahou 校友简介所述时期；页面未注明任职起止日期",
+          "description": "Punahou School 校友简介称其负责 Cloud TPU 产品；此为页面发表时的历史介绍，不代表当前职务。",
+          "source_id": "zak_punahou"
+        }
+      ],
       "education": [],
-      "experience_summary": "P-1 AI的投资者页面将其列作个人天使投资者；Google Cloud括注未进一步核验。",
+      "experience_summary": "Punahou School 页面所载简介称，Zak Stone 曾负责 Google Brain 团队 Cloud TPU 产品，并在加入 Google 前完成计算机视觉博士研究、创办一家后来被 Apple 收购的移动深度学习初创公司。页面没有注明其当前职务、博士院校或相关日期。",
       "track_record": [
         {
-          "description": "P-1 AI官网将Zak Stone列入个人天使投资者名单。",
+          "description": "P-1 AI 官网在“Individual”投资者名单中列出 Zak Stone，并以 Google Cloud 作括注；该页面未披露其出资金额。",
           "source_id": "zak_p1"
         },
         {
@@ -219108,6 +219238,14 @@
           "quote_hash": "545f9ded30c14471e54e3e8188d6129320a3d68be356a2cad2fe3982f236f8da"
         },
         {
+          "source_id": "zak_punahou",
+          "source_url": "https://www.punahou.edu/festival-of-ideas-detail?pk=179917",
+          "source_title": "Zak Stone ’00 | Punahou School",
+          "source_content_hash": "cfd27b8bd8aa3b6783dbd6f1ce584fcd1e13f2f58a2e8c43c793a985713a8f47",
+          "quote": "Zak Stone is the Product Manager for Cloud TPUs on the Google Brain Team, where he helps guide the development of cutting-edge supercomputers for machine learning that are available (sometimes for free!) to students, researchers, and businesses all over the world. Prior to joining Google, Zak completed a PhD in computer vision and founded a mobile-focused deep learning startup that was acquired by Apple.",
+          "quote_hash": "b38745adf99f8fed01fd430087aeb2d4f0a792e987ffdca9ba5d7287abfa59a1"
+        },
+        {
           "source_id": "FISRC-272ed2cd5b9ebcfa",
           "source_url": "https://p-1.ai/",
           "source_title": "P-1 AI",
@@ -219116,7 +219254,17 @@
           "quote_hash": "a8c3220ef29d938d12ffb3f3ed07ea610a4810ed8392fd56199e3e56266c7318"
         }
       ],
-      "last_verified_at": "2026-10-05"
+      "last_verified_at": "2026-10-06",
+      "facts": [
+        {
+          "field": "investor_list_mention",
+          "label": "公开投资者名单列名",
+          "value": "P-1 AI 官网将 Zak Stone 列于个人投资者名单，并以 Google Cloud 作括注；未披露出资金额。",
+          "source_id": "zak_p1"
+        }
+      ],
+      "milestones": [],
+      "contacts": []
     },
     "INV-e0fc83c23a5576": {
       "summary": "Zeev Ventures 官网披露其在 Houzz 的投资中担任首位外部董事成员，并领投种子轮、参与后续轮次。",

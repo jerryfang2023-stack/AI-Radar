@@ -139,19 +139,68 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Crucible Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构官网公开投资方向和平台介绍；创始人官网确认 Meltem Demirors 的创始合伙人身份。未披露可核实的基金规模或业绩；Ornn 页面只证明公开投资方列名，不代表 Crucible 的单笔投资金额。",
+      "summary": "Crucible Capital 官网将自身描述为围绕能源、算力、材料及相关市场开展早期投资的平台。创始人 Meltem Demirors 的个人官网称她是 Crucible 的创始人兼普通合伙人；被投企业 Ornn 的官网将 Crucible Capital 列入投资方名单。",
+      "facts": [
+        {
+          "field": "investment_scope",
+          "label": "官网披露的投资方向",
+          "value": "能源、算力、材料，以及为这些领域提供融资和协调机制的市场；此为机构自述方向。",
+          "source_id": "b45_crucible_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024",
+          "description": "Crucible 官网称平台于2024年初启动。",
+          "source_id": "b45_crucible_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Ornn 官网将 Crucible Capital 列为投资方之一；该页面未披露 Crucible 的单笔投资额。",
+          "source_id": "b45_crucible_ornn"
+        },
         {
           "description": "融资来源记录：Ornn AI Inc. · 种子轮 · 2026-06-24 · 既有投资方（本轮参投） · $33M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-44c6debf2c528a2a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Crucible Capital",
+          "url": "https://cruciblecap.xyz/",
+          "source_id": "b45_crucible_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "b45_crucible_home",
+          "source_url": "https://cruciblecap.xyz/",
+          "source_title": "Crucible Capital",
+          "source_content_hash": "5b809f4ced7685eb12d663cbd705ca444434d3d550a981328184bd1c8ec0b552",
+          "quote": "We started in early 2024 with no name, no deck—just conviction and our own capital. Today, we manage a venture platform and operate a cluster of GPUs alongside our capital partners. Crucible invests from idea through inflection in companies driving structural shifts across energy, compute, materials, and the markets that finance and coordinate them.",
+          "quote_hash": "5844376e96e7e75cd9688f822e56bed4ec466064646f5a72a28f402d4fd0909d"
+        },
+        {
+          "source_id": "b45_crucible_meltem",
+          "source_url": "https://www.meltemdemirors.com/",
+          "source_title": "Meltem Demirors",
+          "source_content_hash": "e0a779dab2c0837e3375d1572723d9f20081aed43ecc964d141dad2690ea8faf",
+          "quote": "Meltem Demirors is Founder and General Partner at Crucible, an early-stage fund investing in the foundations of our digital future. Before launching Crucible in 2024, she served as Chief Strategy Officer at CoinShares",
+          "quote_hash": "84bd85eea1102d640389e9f68f16fc6caf7e473b57e8325992b439c24a92e5c4"
+        },
+        {
+          "source_id": "b45_crucible_ornn",
+          "source_url": "https://www.ornn.com/about",
+          "source_title": "Ornn | Financial Products for Compute",
+          "source_content_hash": "5ab95318d82a3db745a5a40871ec24c91a2cd68401206ce942c8d0987de0f656",
+          "quote": "Backed by leading AI companies, funds and angel investors. A16Z Galaxy Crucible Capital Vine Ventures Link Ventures Box Group",
+          "quote_hash": "a9c372bc27e918f6078fc25e0defe43f901a18631df81397e60b3d8f169eb679"
+        },
         {
           "source_id": "FISRC-44c6debf2c528a2a",
           "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
@@ -161,7 +210,17 @@
           "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "current_roles": [
+        {
+          "title": "Founder and General Partner",
+          "organization": "Crucible",
+          "source_id": "b45_crucible_meltem"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "创始人官网称 Meltem Demirors 于2024年创立 Crucible，之前曾任 CoinShares 首席战略官。这里的个人履历只用于标注机构负责人，不扩展为机构业绩。",
+      "last_verified_at": "2026-10-06"
     }
   }
 }

@@ -139,27 +139,39 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "公司品牌更名由Lambda官网确认；Stack AI投资关系仅见TechCrunch报道，非发行方或投资方一手确认。",
-      "summary": "Lambda官网将其介绍为AI计算平台，并公告 lambdalabs.com 更名为 lambda.ai。TechCrunch对Stack AI早期融资的报道曾将Lambda Labs列为投资者；本档按公司历史品牌关联收录这一项媒体披露，不推定存在独立风险投资基金。",
+      "coverage_status": "researched",
+      "coverage_note": "公司官网介绍和品牌域名迁移来自 Lambda 自身页面。Stack AI 投资者列名来自 TechCrunch 报道，未由 Lambda 或 Stack AI 一手确认；不据此把 Lambda 描述为独立风险投资基金。",
+      "summary": "Lambda 官网称公司于2012年由机器学习工程师创立，专注 AI 工作负载和基础设施，提供模块化 AI 工厂。公司公告称 lambdalabs.com 现为 lambda.ai。TechCrunch 曾将 Lambda Labs 列为 Stack AI 投资者之一，但这项报道未由公司或被投企业一手确认。",
       "facts": [
         {
-          "field": "business",
-          "label": "公司业务",
-          "value": "AI计算平台",
+          "field": "founded_and_focus",
+          "label": "成立时间与业务重点",
+          "value": "官网称 Lambda 于2012年由机器学习工程师创立，所有工程、运营和支持均专注于 AI 工作负载与基础设施。",
           "source_id": "lambda_profile"
         },
         {
-          "field": "brand_history",
-          "label": "品牌变化",
-          "value": "Lambda官网公告 lambdalabs.com 更名为 lambda.ai",
+          "field": "products",
+          "label": "官网披露的产品方向",
+          "value": "面向训练和部署超智能系统的模块化 AI 工厂，包括电力、液冷和高带宽互连。",
+          "source_id": "lambda_products"
+        },
+        {
+          "field": "brand_domain",
+          "label": "官网域名迁移",
+          "value": "公司公告称 lambdalabs.com 现为 lambda.ai。该信息证明网站品牌迁移，不单独证明法律主体变更。",
           "source_id": "lambda_rebrand"
         }
       ],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "2012",
+          "description": "Lambda 官网称公司于2012年由机器学习工程师创立。",
+          "source_id": "lambda_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "TechCrunch报道将Lambda Labs列为Stack AI早期融资参与方之一。",
+          "description": "TechCrunch 将 Lambda Labs 列为 Stack AI 投资者之一；这项列名是媒体报道，未披露投资金额，也不证明其管理独立风险投资基金。",
           "source_id": "lambda_activity"
         },
         {
@@ -172,7 +184,7 @@
           "kind": "website",
           "label": "公司官网",
           "value": "Lambda",
-          "url": "https://lambda.ai/",
+          "url": "https://lambda.ai/about",
           "source_id": "lambda_profile"
         }
       ],
@@ -182,8 +194,16 @@
           "source_url": "https://lambda.ai/about",
           "source_title": "About Lambda | AI Computing Platform for Superintelligence",
           "source_content_hash": "fbfa172efd1b35a34aebfc3bbecce06eadd6f263802808904d94f406509006ef",
-          "quote": "AI Computing Platform for Superintelligence",
-          "quote_hash": "f21abe041a12ee700c3a0f7c1e20d73f5b08e0c2fbd1534ce975a6e24d771e8b"
+          "quote": "Lambda is an AI-only company founded by ML engineers in 2012. One hundred percent of our engineering, operations, and support is dedicated to AI workloads and infrastructure.",
+          "quote_hash": "503ec859dfd39ac4fbe8bbe199e86e265a5e089ee58b6a123e3fe48bffed6c56"
+        },
+        {
+          "source_id": "lambda_products",
+          "source_url": "https://lambda.ai/about",
+          "source_title": "About Lambda | AI Computing Platform for Superintelligence",
+          "source_content_hash": "fbfa172efd1b35a34aebfc3bbecce06eadd6f263802808904d94f406509006ef",
+          "quote": "Lambda builds modular AI factories — power, liquid cooling, and high-bandwidth interconnects — for labs training and deploying the next generation of superintelligence.",
+          "quote_hash": "246464dfaf4fe84c665e95567a9a4741ea77c65e805a4b2d6962c457c22ce980"
         },
         {
           "source_id": "lambda_rebrand",
@@ -210,7 +230,11 @@
           "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
         }
       ],
-      "last_verified_at": "2026-10-05"
+      "last_verified_at": "2026-10-06",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

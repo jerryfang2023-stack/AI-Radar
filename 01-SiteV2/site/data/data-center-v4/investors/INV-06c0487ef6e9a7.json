@@ -140,21 +140,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "活动信息仅为媒体援引企业查询数据的报道，不据此确认投资金额、估值或京东作为直接出资主体的法律实体。",
-      "summary": "JD.com投资者关系页面将公司介绍为技术驱动的电商企业，并称其正转向以供应链为基础的技术与服务提供商。IT之家一篇援引企查查数据的报道把京东列入DeepSeek外部融资参与者名单；该投资关系尚未由京东或DeepSeek一手资料确认。",
+      "coverage_status": "researched",
+      "coverage_note": "JD.com 公司主体与业务介绍来自公司投资者关系官网。DeepSeek 融资关系只见 IT之家对企查查数据的转述；本次未找到 JD.com 或 DeepSeek 一手确认，不作为已核实投资项目。",
+      "summary": "JD.com 官网将公司介绍为技术驱动的电商企业，正向以供应链为基础的技术与服务提供商转型，并向合作伙伴、品牌及其他行业开放其零售基础设施。媒体曾将京东列入 DeepSeek 外部融资参与方，但该投资关系尚无 JD.com 或 DeepSeek 一手确认。",
       "facts": [
         {
-          "field": "business",
-          "label": "公司业务",
-          "value": "技术驱动的电商企业，正转向供应链技术与服务提供商",
+          "field": "business_description",
+          "label": "公司业务定位",
+          "value": "公司官网称其为技术驱动的电商企业，正转向供应链技术与服务提供商。",
+          "source_id": "jd_business"
+        },
+        {
+          "field": "platform_model",
+          "label": "零售基础设施",
+          "value": "官网称其零售基础设施服务消费者，并向合作伙伴、品牌及其他行业开放，作为 Retail as a Service 的组成部分。",
           "source_id": "jd_business"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "IT之家援引企查查数据报道，将京东列入DeepSeek外部融资投资方名单；尚未取得融资各方的一手确认。",
+          "description": "IT之家援引企查查称京东是 DeepSeek 外部融资参与方；该关系尚未由京东或 DeepSeek 一手确认，不作为核实投资案例。",
           "source_id": "jd_activity"
         },
         {
@@ -165,8 +171,8 @@
       "contacts": [
         {
           "kind": "website",
-          "label": "投资者关系网站",
-          "value": "JD.com Investor Relations",
+          "label": "公司投资者关系官网",
+          "value": "JD.com",
           "url": "https://ir.jd.com/about-JD",
           "source_id": "jd_business"
         }
@@ -177,8 +183,8 @@
           "source_url": "https://ir.jd.com/about-JD",
           "source_title": "About JD.com | JD.Com, Inc.",
           "source_content_hash": "e892c19f56c7f4d1bd2c77a40775d78e0f43f68e250593ba25e9d1451b7fb42d",
-          "quote": "JD.com is a leading technology driven e-commerce company transforming to become the leading supply chain based technology and service provider.",
-          "quote_hash": "a7e67dfd6343d87e75b79ae16698932d68f0182bdead71c4715992d92969c395"
+          "quote": "JD.com is a leading technology driven e-commerce company transforming to become the leading supply chain based technology and service provider. The company’s cutting-edge retail infrastructure seeks to enable consumers to buy whatever they want, whenever and wherever they want it. The company has opened its technology and infrastructure to partners, brands and other sectors, as part of its Retail as a Service offering to help drive productivity and innovation across a range of industries.",
+          "quote_hash": "cd2ea7fc7706fc4c9ffeb4fdafcb73687391718d35afae4f3412a8cc17960e35"
         },
         {
           "source_id": "jd_activity",
@@ -197,7 +203,11 @@
           "quote_hash": "a1f9c8e473298805311c145b991d7554c6260e6997163768b55052a58304aabf"
         }
       ],
-      "last_verified_at": "2026-10-06"
+      "last_verified_at": "2026-10-06",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
