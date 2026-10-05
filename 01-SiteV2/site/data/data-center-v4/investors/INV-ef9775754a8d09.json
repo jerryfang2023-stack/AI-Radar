@@ -139,15 +139,16 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Bolt 官网确认 Markus Villig 为创始人兼 CEO；EU-Startups 报道将其列为 bilt.me pre-seed 轮个人支持者。本档案仅记公开身份与该项活动，不扩展为完整个人投资组合或个人出资额。",
-      "summary": "Markus Villig 是 Bolt 创始人兼 CEO。EU-Startups 报道称他支持了 bilt.me 的 pre-seed 融资；该报道未披露其个人投资金额。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Markus Villig 是 Bolt 创始人兼 CEO。Bolt 官网称他于 2013 年推出公司；Superhero Capital 的公司账号将他列为 bilt.me €615K pre-seed 轮的共同参与方之一，未披露他的个人出资额。",
+      "coverage_note": "已核实的背景限于 Bolt 创立及现任公开职务，以及一项由领投方自述的融资参与；没有把这些资料扩展为完整个人投资组合、个人财富或出资金额。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "EU-Startups 报道将 Markus Villig 列为 bilt.me pre-seed 轮支持者；未披露个人投资额。",
-          "source_id": "PROFILE-a9adbe82b6973af53f6a"
+          "description": "Superhero Capital 的公开公司账号称其领投 bilt.me €615K 融资，并列出 Markus Villig（Bolt）和 Martin Sokk（Lightyear）为共同参与方；未披露个人出资额。",
+          "source_id": "b36-markus-bilt"
         },
         {
           "description": "融资来源记录：bilt.me · 预种子轮 · 2026-09-28 · 本轮参投 · €615k。这是本库收录的披露案例，不代表完整投资组合。",
@@ -159,28 +160,36 @@
         {
           "title": "Founder and CEO",
           "organization": "Bolt",
-          "source_id": "PROFILE-2ba8193d546f9ddd4b03"
+          "source_id": "b36-markus-bolt"
         }
       ],
-      "career": [],
+      "career": [
+        {
+          "organization": "Bolt",
+          "title": "创始人",
+          "period": "2013 年创立；截至 2026-10-05 官网仍列为 Founder and CEO",
+          "description": "Bolt 官网称 Markus Villig 于 2013 年创立公司，并介绍他亲自制作首版网约车软件、招募首批司机。",
+          "source_id": "b36-markus-bolt"
+        }
+      ],
       "education": [],
-      "experience_summary": "已核实公开职位与一项投资活动；没有据此扩展其他履历。",
+      "experience_summary": "Bolt 官方领导团队页确认其创始人兼 CEO 身份；本次找到一项由领投机构披露的个人投资参与记录。",
       "sources": [
         {
-          "source_id": "PROFILE-a9adbe82b6973af53f6a",
-          "source_url": "https://www.eu-startups.com/2026/09/estonias-bilt-me-raises-e615k-with-backing-from-bolt-and-lightyear-founders-to-scale-its-ai-native-mobile-app-builder/",
-          "source_title": "Estonia’s bilt.me raises €615k with backing from Bolt and Lightyear founders to scale its AI-native mobile app builder | EU-Startups",
-          "source_content_hash": "f87028fb9b5077ba3208455560fe69ca955a19bf7e3ffb42d044a6de930d9bc0",
-          "quote": "The round also saw backing from Bolt founder Markus Villig and Lightyear founder Martin Sokk.",
-          "quote_hash": "7d21f3950f4c1c1ad2f52013595cd901699a6d8393c9517e40367dea73a98d39"
-        },
-        {
-          "source_id": "PROFILE-2ba8193d546f9ddd4b03",
+          "source_id": "b36-markus-bolt",
           "source_url": "https://bolt.eu/en/company/leadership/",
           "source_title": "Bolt leadership team",
           "source_content_hash": "bb33cd0d57dba8d1493c21172102da085da32e956e4c902e7c27a343279478d8",
-          "quote": "Markus Villig Founder and CEO of Bolt",
-          "quote_hash": "a37278740d38ff13a203026f4350ee0641e985c5ec848fd66d0f8ebf479b2621"
+          "quote": "Markus Villig Founder and CEO of Bolt Markus launched the company in 2013 at the age of 19",
+          "quote_hash": "0fc3578d1d5f8973b1d6ab032a2c9c788b8ca7c16ae84e421de2e4f48b7da21b"
+        },
+        {
+          "source_id": "b36-markus-bilt",
+          "source_url": "https://ee.linkedin.com/company/superhero-capital",
+          "source_title": "Superhero Capital | LinkedIn",
+          "source_content_hash": "a4b2c790509ab31de6118a353c4f15434110a95923f51d34f35029bde88eecf2",
+          "quote": "Exciting news from our newest portfolio addition: bilt.me raises €615K to let anyone build an app. Describe your idea, and bilt.me's AI agent builds a real native iOS and Android app. A year ago this was a hackathon project in Tallinn. Today revenue is doubling month over month, and thousands of people are building on it. We're proud to lead the round, alongside Markus Villig (Bolt) and Martin Sokk (Lightyear).",
+          "quote_hash": "16d5ff49d2d167fdc23cf74859f55050d35b6717948e7f6f1a929ef1f259f58a"
         },
         {
           "source_id": "FISRC-73a8427c95c14731",
@@ -190,8 +199,7 @@
           "quote": "The round also saw backing from Bolt founder Markus Villig and Lightyear founder Martin Sokk.",
           "quote_hash": "7d21f3950f4c1c1ad2f52013595cd901699a6d8393c9517e40367dea73a98d39"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "translations": {
       "zh-CN": {

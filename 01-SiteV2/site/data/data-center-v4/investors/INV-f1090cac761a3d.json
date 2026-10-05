@@ -139,10 +139,18 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Wind River Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Wind River Ventures 官网将自身描述为 “Diversified Investment Fund”，并提供投资机会联系表。当前公开页面没有给出可核实的管理团队、地域、具体投资策略或组合清单。",
+      "coverage_note": "仅记录同名官网的自我描述与公开联系渠道；本次未把其他同名基金、法人或 SEC 申报并入该档案，也不宣称存在完整组合。",
+      "facts": [
+        {
+          "field": "self_description",
+          "label": "官网自我描述",
+          "value": "Diversified Investment Fund（多元化投资基金）。",
+          "source_id": "b36-wind-site"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +158,43 @@
           "source_id": "FISRC-c0d67da86b5ae704"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Wind River Ventures",
+          "url": "https://windriverventures.com/",
+          "source_id": "b36-wind-site"
+        },
+        {
+          "kind": "contact_form",
+          "label": "投资机会联系表",
+          "value": "官网邀请有投资机会者通过页面联系表提交信息。",
+          "url": "https://windriverventures.com/",
+          "source_id": "b36-wind-contact"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网仅提供基金自我描述与投资机会联系入口；没有足够的一手材料描述其人员、策略、基金法律实体或已投项目。",
       "sources": [
+        {
+          "source_id": "b36-wind-site",
+          "source_url": "https://windriverventures.com/",
+          "source_title": "Wind River Ventures",
+          "source_content_hash": "26ce1123b129b965d2186ec5a76d5f86dbc3e15899aca916605e6102f273ddaf",
+          "quote": "Diversified Investment Fund",
+          "quote_hash": "c4820dfbc7a3a3790b8dd97aeb99a60d730a363bae395655c90e398086891807"
+        },
+        {
+          "source_id": "b36-wind-contact",
+          "source_url": "https://windriverventures.com/",
+          "source_title": "Wind River Ventures",
+          "source_content_hash": "26ce1123b129b965d2186ec5a76d5f86dbc3e15899aca916605e6102f273ddaf",
+          "quote": "Send us a message if you have an investment opportunity you would like to discuss.",
+          "quote_hash": "0411679eff881d003b186a9cbeff0d0c445189ca0660c57c21178dde852af77c"
+        },
         {
           "source_id": "FISRC-c0d67da86b5ae704",
           "source_url": "https://www.prnewswire.com/news-releases/relay-raises-36-million-in-new-funding-from-industry-leaders-to-drive-frontline-safety-productivity-and-operational-intelligence-302893591.html",
@@ -160,8 +203,7 @@
           "quote": "Earlier lead investors G2 Venture Partners and Wind River Ventures also increased their investments in this round.",
           "quote_hash": "ca5d52d8837e7962df2c6eba70a4fd25b90e20d32d378c8ead009e103ea07bbd"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     }
   }
 }

@@ -137,24 +137,52 @@
       }
     ],
     "public_profile": {
-      "last_verified_at": "2026-10-05",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "summary": "Trenches Capital 的 LinkedIn 公司页自述为早期阶段 VC。Claros 的融资说明将其列为新老投资方之一；目前资料不足以补出管理主体、基金信息或更完整的策略。",
-      "coverage_note": "当前仅有机构自述和一项融资参与披露，依覆盖规则保留为有限资料并继续补采；未据此推断法律实体、投资组合或基金结构。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Trenches Capital 的公司页自述为早期阶段 VC。SEC Form D 披露了关联基金 Trenches Capital Fund, LP 的组织及普通合伙人信息；Claros 官方融资说明将 Trenches Capital 列入其投资方。",
+      "coverage_note": "SEC 金额是表格所报的发行额度与申报时已售金额，不代表基金实际募资额、资产规模或投资业绩；Form D 中的人员身份按申报时点表述，不推为当前职务。",
       "facts": [
         {
           "field": "self_description",
-          "label": "LinkedIn 公司页自述",
-          "value": "Early stage VC（早期阶段风险投资）",
-          "source_id": "b33-trenches-linkedin"
+          "label": "公司页自述",
+          "value": "Early stage VC（早期阶段风险投资）。",
+          "source_id": "b36-trenches-linkedin"
+        },
+        {
+          "field": "fund_entity",
+          "label": "SEC Form D 发行主体",
+          "value": "Trenches Capital Fund, LP；申报列示为特拉华州有限合伙企业，成立年份为 2023。",
+          "source_id": "b36-trenches-sec"
+        },
+        {
+          "field": "offering_disclosure",
+          "label": "SEC Form D 发行金额口径",
+          "value": "2024 年 SEC 申报列示总发行金额 2,500 万美元、已售金额 0 美元；此额度不等于实际募资额。",
+          "source_id": "b36-trenches-sec-offering"
+        },
+        {
+          "field": "reported_related_person",
+          "label": "SEC Form D 所列普通合伙人相关人员",
+          "value": "申报将 Kelvin Beachum, Jr. 列为普通合伙人管理成员。",
+          "source_id": "b36-trenches-sec-kelvin"
+        },
+        {
+          "field": "reported_related_person",
+          "label": "SEC Form D 所列普通合伙人相关人员",
+          "value": "申报将 Larry Fitzgerald, Jr. 列为普通合伙人成员。",
+          "source_id": "b36-trenches-sec-larry"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Claros 融资说明将 Trenches Capital 列入新老投资方；未披露其单独出资额。",
+          "description": "Claros 官方融资说明将 Trenches Capital 列为新老投资方之一；该说明没有披露其单独投资金额。",
+          "source_id": "b36-trenches-claros"
+        },
+        {
+          "description": "融资来源记录：Claros · 种子轮 · 2026-03-19 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2877a4b61010da1c"
         }
       ],
@@ -162,10 +190,10 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "LinkedIn 公司页自述为早期阶段 VC；公开资料尚不足以确认管理主体或更完整的组织背景。",
+      "experience_summary": "当前一手资料核实到早期 VC 自述、关联基金的 SEC 申报和一项公司融资参与披露；没有据此推断其已募规模或完整组合。",
       "sources": [
         {
-          "source_id": "b33-trenches-linkedin",
+          "source_id": "b36-trenches-linkedin",
           "source_url": "https://www.linkedin.com/company/trenches-capital/",
           "source_title": "Trenches Capital | LinkedIn",
           "source_content_hash": "d9ef223457716b4ac4477356fcca7b128c29c4d52c34ab83f28b27d680889aa9",
@@ -173,12 +201,52 @@
           "quote_hash": "5ea8e30caa770c9f923faebc3c88950f69237839c68633a612b4423179b4cb36"
         },
         {
-          "source_id": "FISRC-2877a4b61010da1c",
+          "source_id": "b36-trenches-claros",
           "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
           "source_title": "Redefining Data Center Energy Infrastructure from Chip to Grid - Claros",
           "source_content_hash": "eb7045e28cb8eed2d595772f7266d9e7b5ba6089d2283cda9760f0253f16a466",
           "quote": "with participation from new and existing investors like Systemiq Capital, Aero X Ventures, Trenches Capital, a leading power semiconductor provider, and others.",
           "quote_hash": "4a7858f49e477485bfe56c34374069ac0bce566f11dc3d32ec10e21a40d93663"
+        },
+        {
+          "source_id": "b36-trenches-sec",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2014239/000201423924000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "4aa1c2802475b37814c7e75c3ae00ec6853e688a568338019a53b3741d51bd81",
+          "quote": "Trenches Capital Fund, LP Jurisdiction of Incorporation/Organization DELAWARE Year of Incorporation/Organization Over Five Years Ago X Within Last Five Years (Specify Year) 2023 Yet to Be Formed",
+          "quote_hash": "6f2e7ac495239e2dd93e217361e8f837b1cef2169c844c8b074b9591e4f71fe0"
+        },
+        {
+          "source_id": "b36-trenches-sec-offering",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2014239/000201423924000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "4aa1c2802475b37814c7e75c3ae00ec6853e688a568338019a53b3741d51bd81",
+          "quote": "Total Offering Amount $ 25,000,000 USD or Indefinite Total Amount Sold $ 0 USD Total Remaining to be Sold $ 25,000,000 USD",
+          "quote_hash": "316e91c76035dd04d83b829a5dbbeab786c29412cede1bf714fa1c302ae94d06"
+        },
+        {
+          "source_id": "b36-trenches-sec-kelvin",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2014239/000201423924000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "4aa1c2802475b37814c7e75c3ae00ec6853e688a568338019a53b3741d51bd81",
+          "quote": "Kelvin Beachum, Jr. Kelvin Beachum, Jr. Managing Member of the General Partner of the Issuer",
+          "quote_hash": "b97bd325e8cc484eeaa98845966313f72e94e3efeaf8bf74069b5518c96b6141"
+        },
+        {
+          "source_id": "b36-trenches-sec-larry",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2014239/000201423924000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "4aa1c2802475b37814c7e75c3ae00ec6853e688a568338019a53b3741d51bd81",
+          "quote": "Fitzgerald, Jr. Larry Street Address 1 Street Address 2 16192 Coastal Highway City State/Province/Country ZIP/PostalCode Lewes DELAWARE 19958 Relationship: X Executive Officer X Director X Promoter Clarification of Response (if Necessary): Member of General Partner of the Issuer",
+          "quote_hash": "8cf16dd70bde25af2fb978bb14d80562624955b60d4cecdcfb71973cf913b386"
+        },
+        {
+          "source_id": "FISRC-2877a4b61010da1c",
+          "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
+          "source_title": "从芯片到电网重新定义数据中心能源基础设施",
+          "source_content_hash": "904713ab4fa86f2ea7546f7229f8bfca76272454fd1556e862479e67cf57708e",
+          "quote": "with participation from new and existing investors like Systemiq Capital, Aero X Ventures, Trenches Capital, a leading power semiconductor provider, and others",
+          "quote_hash": "75f250f9e1e2da232df857edf46f43289d46b239e77ace5b6dc2dad10a43e6e5"
         }
       ]
     }

@@ -123,33 +123,79 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Modem 官方融资公告将一位天使投资者标注为“Dave Johnson (PhoneGap/Cordova)”；目前只能确认这条公开披露标签。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "Modem 的一手融资公告使用 PhoneGap/Cordova 作为该投资者的身份括注，但没有提供其具体职位或职业经历。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Modem 官方融资公告将天使投资者标注为 Dave Johnson（PhoneGap/Cordova）；Web Directions 的 PhoneGap 专题简介称 Dave 是 Nitobi 联合创始人，并列出其公开学历。",
+      "coverage_note": "人物匹配依赖融资公告的 PhoneGap/Cordova 括注与专题简介所述 PhoneGap 经历；Web Directions 页面为 2012 年历史简介，未用于推断其当前职务。Modem 未披露个人出资金额。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Modem 官方融资公告把 Dave Johnson（PhoneGap/Cordova）列为天使支持者之一；未披露其个人投资金额。",
+          "source_id": "b36-dave-modem"
+        },
         {
           "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（PhoneGap/Cordova）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
       "contacts": [],
-      "coverage_note": "仅对融资公告所列姓名和括注负责；现有一手材料没有核实其具体任职、履历或学历，不依据同名聚合补全。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Nitobi",
+          "title": "联合创始人",
+          "period": "Web Directions 2012 年简介披露；任期未注明",
+          "description": "Web Directions 的 PhoneGap 专题简介称 Dave Johnson 是 Nitobi 联合创始人。",
+          "source_id": "b36-dave-webdirections"
+        },
+        {
+          "organization": "PhoneGap",
+          "title": "参与 PhoneGap 项目相关工作",
+          "period": "2012 年简介所述；任期未注明",
+          "description": "Web Directions 专题简介称 Dave 当时把主要时间用于 PhoneGap 项目，未确认正式职位或雇佣关系。",
+          "source_id": "b36-dave-webdirections"
+        }
+      ],
+      "education": [
+        {
+          "institution": "UBC",
+          "qualification": "BASc in Electrical Engineering",
+          "source_id": "b36-dave-webdirections"
+        },
+        {
+          "institution": "Imperial College",
+          "qualification": "PhD in Solid State Physics",
+          "source_id": "b36-dave-webdirections"
+        }
+      ],
+      "experience_summary": "公开资料支持其 Nitobi 与 PhoneGap 历史经历及学历；本档案不延伸到同名人物的其他任职或投资。",
       "sources": [
+        {
+          "source_id": "b36-dave-modem",
+          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
+          "source_content_hash": "c9e9aaded026e3e202c5f63bdf885b3efe145a86cabbd92d16c16a8d59f58153",
+          "quote": "raised $4.4 million in funding , led by Accel , with participation from Inovia Capital and a group of incredible angels behind foundational developer tools and AI products: David Cramer and Chris Jennings (Sentry), Ivan Zhang (Cohere), Koen Bok and Jorn van Dijk (Framer), Lindsey Simon (Vercel), Armin Ronacher (Flask), Jacob Thornton (Bootstrap, Pierre Computer Co), John Laban and Kenneth Rose (OpsLevel), Dave Johnson (PhoneGap/Cordova)",
+          "quote_hash": "690c1c54f27e26133c6c38b7c0e9918577d71c3aac116a66ae466aa039c995dd"
+        },
+        {
+          "source_id": "b36-dave-webdirections",
+          "source_url": "https://webdirections.org/topic/html5",
+          "source_title": "HTML5, device APIs and PhoneGap &#8211; Dave Johnson &#8211; Web Directions",
+          "source_content_hash": "16916c0c7e62aa4dd8c5835b404a4a8250ec57f2408b55ded56174d77798ec4c",
+          "quote": "Dave is a co-founder of Nitobi. He holds a BASc in Electrical Engineering (UBC) and a PhD in Solid State Physics from London’s Imperial College which both have pretty much nothing to do with mobile phones or software development. Dave spends most of his time working on and talking about the PhoneGap project.",
+          "quote_hash": "9d981e3c1fa6a8b9ddfd3ce23c52f7b2bd06e273dd7317cd32bc8b8b111d6223"
+        },
         {
           "source_id": "FISRC-9fd6ba5210b37fed",
           "source_url": "https://modem.dev/blog/modem-raises-4-4m",
-          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
-          "source_content_hash": "1fcd6e8a5bd85e1de48de50d890272ea31481d5ec39d8296080c54e61386027b",
+          "source_title": "Modem 融资 440 万美元，为智能体编程时代打造自动分诊 PM",
+          "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
           "quote": "Dave Johnson (PhoneGap/Cordova)",
           "quote_hash": "8bb81f5e8ab5141be429522b8963ae3995fe9bda0c080164f4d3c64e22f94389"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

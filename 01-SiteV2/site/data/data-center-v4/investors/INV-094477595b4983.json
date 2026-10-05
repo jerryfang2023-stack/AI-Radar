@@ -139,19 +139,94 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "IIMA Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "IIMA Ventures 是设于 IIM Ahmedabad 的创业创新机构，官网介绍其开展孵化、加速、洞察及早期投资相关工作，并面向 Deeptech、Digitalization 与 Climatetech 项目提供支持。官网历史页称其创业中心于 2002 年在 IIM Ahmedabad 建立，团队页列出 CEO & Managing Partner Priyanka Chopra。",
+      "coverage_note": "机构自述资料支持其品牌、创业支持与投资活动；本档案不把孵化项目一概视作股权投资组合，也不推断各支基金的法律载体。",
+      "facts": [
+        {
+          "field": "organization_scope",
+          "label": "官网介绍的业务范围",
+          "value": "在创业生态中开展研究、教育、孵化、加速和早期投资相关工作。",
+          "source_id": "b36-iima-model"
+        },
+        {
+          "field": "support_themes",
+          "label": "官网公布的支持主题",
+          "value": "Deeptech、Digitalization、Climatetech。",
+          "source_id": "b36-iima-home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2002",
+          "description": "官网历史页面称 IIM Ahmedabad 创业中心于 2002 年建立。",
+          "source_id": "b36-iima-history"
+        },
+        {
+          "date": "2024",
+          "description": "官网时间线记录 IIMA-CIIE 于 2024 年更名为 IIMA Ventures。",
+          "source_id": "b36-iima-home"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Aignosis · 种子轮 · 2026-10-01 · 本轮参投 · ₹4 crore。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ff1952b8850f6680"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "IIMA Ventures",
+          "url": "https://iimaventures.com/",
+          "source_id": "b36-iima-home"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "CEO & Managing Partner",
+          "organization": "IIMA Ventures",
+          "source_id": "b36-iima-team"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网披露的组织工作包含创业孵化、加速、研究与早期投资支持；团队信息以其公开团队页为准。",
       "sources": [
+        {
+          "source_id": "b36-iima-home",
+          "source_url": "https://iimaventures.com/",
+          "source_title": "IIMA Ventures – Leading Startup Incubator &amp; Innovation Hub at IIM Ahmedabad",
+          "source_content_hash": "061d87cc827794c56885d57a2997bb5b39d785e0e3d93e8ef6c46db7c4293e76",
+          "quote": "We support innovation opportunities across three broad areas Deeptech Enabling game-changers who are building innovation-first ventures from India, for the world Digitalization Enabling passionate founders harnessing digitally inclusive solutions for India's next half billion Climatetech Enabling fearless entrepreneurs tackling climate change through their disruptive solutions",
+          "quote_hash": "ed632aa2a13ae7c4f4094de3c7eb816298a4d8544896cc6ae2ab106c4c531a45"
+        },
+        {
+          "source_id": "b36-iima-history",
+          "source_url": "https://iimaventures.com/building-for-consequential-companies/",
+          "source_title": "Building for Consequential Companies - IIMA VENTURES",
+          "source_content_hash": "04f7c9feaa474476c8c3fdce0da0655cc30086a7fe335dd57a4a8451031c0c9c",
+          "quote": "Built at IIM Ahmedabad in 2002 as an entrepreneurship centre and incorporated in 2007-08 as a section 8 company",
+          "quote_hash": "8e4008cc409c17ea90cf77ce53804fe8d2afed86621559db8ae66e1ad896e579"
+        },
+        {
+          "source_id": "b36-iima-team",
+          "source_url": "https://iimaventures.com/team/",
+          "source_title": "Team – IIMA Ventures Startup Program &amp; Innovation Initiative",
+          "source_content_hash": "def0519f7ac3ee9431db877bbf7123e63cef5f9db890c973cd0b9f7e6313f690",
+          "quote": "Priyanka Chopra CEO & Managing Partner",
+          "quote_hash": "1525d6ed1c1ac248ba05db02be263e9934bdcb3470794debb5b4dc18d667f647"
+        },
+        {
+          "source_id": "b36-iima-model",
+          "source_url": "https://iimaventures.com/building-for-consequential-companies/",
+          "source_title": "Building for Consequential Companies - IIMA VENTURES",
+          "source_content_hash": "04f7c9feaa474476c8c3fdce0da0655cc30086a7fe335dd57a4a8451031c0c9c",
+          "quote": "What started as an early effort to support entrepreneurs has today grown into an innovation continuum that works with startups, aspiring entrepreneurs and investors.",
+          "quote_hash": "aeeadfaa0d22443f880deaef013c057db9237ec5e866a20177b578a327101b2d"
+        },
         {
           "source_id": "FISRC-ff1952b8850f6680",
           "source_url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/aignosis-raises-4-crore-seed-round-led-by-antler-nikhil-kamath/134609302",
@@ -160,8 +235,7 @@
           "quote": "raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures",
           "quote_hash": "a89ec625e8ff809ede3d21d0982f8abd8b8b49aa1a1cf86e0d55f32ef7158ddf"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     }
   }
 }
