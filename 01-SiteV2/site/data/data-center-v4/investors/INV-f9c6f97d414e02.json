@@ -121,31 +121,65 @@
       }
     ],
     "public_profile": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "person",
-      "summary": "Ofir Ehrlich 是 Eon 联合创始人兼 CEO。Harmony 官方融资公告将他列为 2026 年 7 月 28 日 3400 万美元种子轮的天使投资人之一。",
-      "coverage_note": "人物身份由 Eon 官网确认；投资关系和融资事件由 Harmony 官方新闻稿确认，未补入来源未披露的单独投资金额。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Eon官网列Ofir Ehrlich为联合创始人兼CEO，并将Eon定位为云备份管理产品。Harmony官方融资公告称，Ofir Ehrlich作为Eon联合创始人兼CEO，是其一轮3400万美元融资中的天使投资人之一；公告未披露他的个人投资金额。",
+      "coverage_note": "人物身份与现任职务由Eon官网确认；投资关系来自Harmony公司公告，不推断个人投资金额或其他未公开投资。",
+      "facts": [
+        {
+          "field": "company_scope",
+          "label": "Eon官网公开的产品定位",
+          "value": "Eon将其产品描述为面向现代云基础设施的备份自动化工具。",
+          "source_id": "b37_ofir_eon"
+        },
+        {
+          "field": "funding_round",
+          "label": "Harmony公告所述轮次规模",
+          "value": "Harmony公告标题标示本轮融资为3400万美元。",
+          "source_id": "b37_ofir_harmony_amount"
+        },
+        {
+          "field": "angel_investment",
+          "label": "Harmony公告披露的天使投资活动",
+          "value": "公告将Ofir Ehrlich列为Harmony的天使投资人之一。",
+          "source_id": "b37_ofir_harmony"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "人物身份由 Eon 官网确认；投资关系和融资事件由 Harmony 官方新闻稿确认，未补入来源未披露的单独投资金额。",
       "track_record": [
         {
-          "description": "Harmony 官方新闻稿将 Eon 联合创始人兼 CEO Ofir Ehrlich 列为其 3400 万美元种子轮的天使投资人。",
-          "source_id": "ofir_harmony_seed"
+          "description": "Harmony官方公告将Eon联合创始人兼CEO Ofir Ehrlich列为该公司3400万美元融资中的天使投资人之一，未披露个人投资额。",
+          "source_id": "b37_ofir_harmony"
         },
         {
           "description": "融资来源记录：Harmony · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a6970c8768c84ff"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "Eon",
+          "url": "https://www.eon.io/about",
+          "source_id": "b37_ofir_eon"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "CEO & Co-founder",
+          "organization": "Eon",
+          "source_id": "b37_ofir_eon"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Eon官网确认Ofir Ehrlich为联合创始人兼CEO；Harmony公告另披露他参与该公司融资，未披露个人出资额。",
       "sources": [
         {
-          "source_id": "ofir_eon_founder",
+          "source_id": "b37_ofir_eon",
           "source_url": "https://www.eon.io/about",
           "source_title": "Meet The First-Ever Cloud Backup Posture Management Platform",
           "source_content_hash": "f36149ae844edcc0a399f40d6e8e3efe50b52140b36794f6af8d78673ec1f5ce",
@@ -153,12 +187,20 @@
           "quote_hash": "deb9f1c3693dc217efa585bf0b1da2318dd23af9e61889e3eb7de7fc30cf087b"
         },
         {
-          "source_id": "ofir_harmony_seed",
+          "source_id": "b37_ofir_harmony_amount",
           "source_url": "https://harmony.io/press/harmony-raises-34-million-to-reinvent-employee-experience",
           "source_title": "Harmony Raises $34 Million to Reinvent Employee Experience Powered by AI",
-          "source_content_hash": "cd22b74cf01ed846aa8edcfd6c247bdae3ce124eeba8bc00d3656c643218a68c",
-          "quote": "The funding round was led by Lightspeed Venture Partners, with participation from Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners, and angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io.",
-          "quote_hash": "5888540af4f516296d10c190d92b65fcafb2e43410ea2bcd2ac2a356d1cc7bfb"
+          "source_content_hash": "6b9f6887ea853b7ded116b1afd90a2b0bd66a7e09b923feb850390374686ca0e",
+          "quote": "Harmony Raises $34 Million to Reinvent Employee Experience Powered by AI",
+          "quote_hash": "e7f9a7faa8bdb750db56f60e0a299fc10aea445dc744b8f7b6b0f361c97909e3"
+        },
+        {
+          "source_id": "b37_ofir_harmony",
+          "source_url": "https://harmony.io/press/harmony-raises-34-million-to-reinvent-employee-experience",
+          "source_title": "Harmony Raises $34 Million to Reinvent Employee Experience Powered by AI",
+          "source_content_hash": "6b9f6887ea853b7ded116b1afd90a2b0bd66a7e09b923feb850390374686ca0e",
+          "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io.",
+          "quote_hash": "c725cbf954532e470bb40f379a37dac0f023ff939710965013f5956a41ea8e4a"
         },
         {
           "source_id": "FISRC-2a6970c8768c84ff",
@@ -168,8 +210,7 @@
           "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io",
           "quote_hash": "7f59260f697968fe60cac70e9d088db6d297bf26c685727446a8a7724311fc60"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

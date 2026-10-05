@@ -137,44 +137,94 @@
       }
     ],
     "public_profile": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "person",
-      "summary": "Tim Stannard 是 Bacchus Management Group 的餐饮经营者。Hostie 的 1200 万美元 Series A 新闻稿明确列出他作为餐饮运营者参与该轮投资。",
-      "coverage_note": "投资关系来自 Hostie 发布的融资新闻稿；Hostie 官方博客也将 Tim Stannard 与 Bacchus Management Group 关联。未披露个人投资金额。",
-      "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "投资关系来自 Hostie 发布的融资新闻稿；Hostie 官方博客也将 Tim Stannard 与 Bacchus Management Group 关联。未披露个人投资金额。",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Bacchus Management Group官网将Tim Stannard列为Founding Partner and President，并称他于2000年创办该餐饮管理集团。Hostie的Series A新闻稿将他列为本轮投资人之一；公开资料未披露其个人投资金额。",
+      "coverage_note": "职务和创业经历来自Bacchus官网；投资关系来自Hostie融资新闻稿，不扩展为未披露的个人投资组合或单笔投资额。",
+      "facts": [
+        {
+          "field": "career_background",
+          "label": "公开的创业经历",
+          "value": "Bacchus官网称Tim Stannard于2000年创办Bacchus Management Group。",
+          "source_id": "b37_tim_founded"
+        },
+        {
+          "field": "funding_round",
+          "label": "Hostie融资新闻稿所述轮次",
+          "value": "Hostie新闻稿标题标示其Series A融资额为1200万美元。",
+          "source_id": "b37_tim_round_details"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000",
+          "description": "Bacchus Management Group官网称Tim Stannard于2000年创办该集团。",
+          "source_id": "b37_tim_founded"
+        }
+      ],
       "track_record": [
         {
-          "description": "Hostie 2026 年 7 月 8 日 1200 万美元 Series A 新闻稿将 Tim Stannard 列为餐饮运营者投资人。",
-          "source_id": "tim_hostie_investment"
+          "description": "Hostie的Series A新闻稿将Bacchus Management Group的Tim Stannard列为餐饮业经营者投资人；未披露其单独投资金额。",
+          "source_id": "b37_tim_hostie"
         },
         {
           "description": "融资来源记录：Hostie · A轮 · 2026-07-08 · 本轮天使投资人 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "tim_hostie_investment"
+          "source_id": "FISRC-d81171d6c6910b85"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构团队页",
+          "value": "Bacchus Management Group",
+          "url": "https://www.bacchusmanagement.com/team",
+          "source_id": "b37_tim_bacchus"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Founding Partner and President",
+          "organization": "Bacchus Management Group",
+          "source_id": "b37_tim_bacchus"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Bacchus官网披露Tim Stannard的现任职务和创办集团的经历；Hostie新闻稿记录其参与一轮融资。",
       "sources": [
         {
-          "source_id": "tim_hostie_investment",
+          "source_id": "b37_tim_bacchus",
+          "source_url": "https://www.bacchusmanagement.com/team",
+          "source_title": "Team &mdash; Bacchus Management Group",
+          "source_content_hash": "0a97efb10ab72fc4882de9a202e67a4c788f03d94f81fc0f40f2b64608190561",
+          "quote": "FOUNDING PARTNER and president Tim Stannard",
+          "quote_hash": "08c7180e37856df4b2f72eb19504d500dd6e04b382dcc2679faf8bc4befa3b5c"
+        },
+        {
+          "source_id": "b37_tim_founded",
+          "source_url": "https://www.bacchusmanagement.com/team",
+          "source_title": "Team &mdash; Bacchus Management Group",
+          "source_content_hash": "0a97efb10ab72fc4882de9a202e67a4c788f03d94f81fc0f40f2b64608190561",
+          "quote": "In 2000, at the age of 31, Tim started Bacchus Management Group",
+          "quote_hash": "30b0c1c5a0d39deb1eecedaa8d8472d8193178c60ae5ef648d898e9a861faf16"
+        },
+        {
+          "source_id": "b37_tim_round_details",
+          "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
+          "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality",
+          "source_content_hash": "092c8022c5ecc67b43c42ddc70e993697186d6a2f718bc68ae900a27c7356e16",
+          "quote": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality",
+          "quote_hash": "444716cc8ec231c1a340f239c15c3571aebccd0deb29bfb16920a71cedfbc39b"
+        },
+        {
+          "source_id": "b37_tim_hostie",
           "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
           "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality",
           "source_content_hash": "092c8022c5ecc67b43c42ddc70e993697186d6a2f718bc68ae900a27c7356e16",
           "quote": "The round also includes investments from leading restaurant operators Tim Stannard of Bacchus Management Group",
           "quote_hash": "d4313fbbc6e6699588fc89fd32fbb849582357da651dc42e85d2a6836771920b"
-        },
-        {
-          "source_id": "tim_hostie_affiliation",
-          "source_url": "https://hostie.ai/blogs/hostie-news-seriesa",
-          "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality - Hostie Blog",
-          "source_content_hash": "f1afba08c75d7f44f06d38c8f0358393360006190faa37937a513dba5568c0e6",
-          "quote": "Tim Stannard from Bacchus Management Group",
-          "quote_hash": "1678e2c1e7c9ade58e29a96c0482c74c5ef169b8cd9a8b1927b2c80ccf6596f3"
         },
         {
           "source_id": "FISRC-d81171d6c6910b85",
@@ -184,8 +234,7 @@
           "quote": "The round also includes investments from leading restaurant operators Tim Stannard of Bacchus Management Group",
           "quote_hash": "d4313fbbc6e6699588fc89fd32fbb849582357da651dc42e85d2a6836771920b"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

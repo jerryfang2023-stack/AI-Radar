@@ -138,55 +138,86 @@
       }
     ],
     "public_profile": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "广州市政府的子基金管理人公示名单列出广州越富基金管理有限公司；中国医药报报道将其列为睿心医疗近亿元 D 轮跟投方。现有资料仅支持该管理主体和一项参投记录。",
-      "coverage_note": "机构名称来自广州市政府公示，融资活动来自中国医药报报道；未据此推断其完整投资组合或与其他同名主体的关系。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "广州越富基金管理有限公司出现在广州市国资委公布的广州国企创新投资基金拟合作子基金管理人名单中。中国医药报报道将其列为睿心医疗近亿元D轮融资跟投方；公开资料支持机构名称、基金管理角色线索和这项参投披露，但不能据此视为完整投资组合。",
+      "coverage_note": "官方名单使用“拟合作机构（子基金管理人）”口径；融资来源披露一项睿心医疗D轮跟投，未披露越富基金单笔出资金额或其完整基金组合。",
+      "facts": [
+        {
+          "field": "fund_management_role",
+          "label": "官方披露的基金管理角色",
+          "value": "广州市国资委公告将广州越富基金管理有限公司列入广州国企创新投资基金拟合作子基金管理人名单。",
+          "source_id": "b37_yuefu_gov"
+        },
+        {
+          "field": "reported_round",
+          "label": "融资轮次与金额口径",
+          "value": "中国医药报将睿心医疗该轮融资描述为近亿元D轮。",
+          "source_id": "b37_yuefu_amount"
+        },
+        {
+          "field": "reported_investor",
+          "label": "融资参投披露",
+          "value": "该报道将广州越富基金管理有限公司列为跟投方。",
+          "source_id": "b37_yuefu_round"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "机构名称来自广州市政府公示，融资活动来自中国医药报报道；未据此推断其完整投资组合或与其他同名主体的关系。",
       "track_record": [
         {
-          "description": "睿心医疗近亿元 D 轮融资公告报道将广州越富基金管理有限公司列为跟投方。",
-          "source_id": "yuefu_ruiXin_d_round"
+          "description": "中国医药报将睿心医疗D轮描述为近亿元融资。",
+          "source_id": "b37_yuefu_amount"
+        },
+        {
+          "description": "同一报道将广州越富基金管理有限公司列为跟投方；未披露其单笔金额。",
+          "source_id": "b37_yuefu_round"
         },
         {
           "description": "融资来源记录：睿心医疗 · D轮 · 2026-05-27 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2afdddccd17bda89"
         }
       ],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "广州市国资委公告提供拟合作子基金管理人身份线索，中国医药报记录一项睿心医疗D轮跟投；其他团队、管理规模和投资组合信息未在本轮材料中确认。",
       "sources": [
         {
-          "source_id": "yuefu_gz_gov_fund_manager",
+          "source_id": "b37_yuefu_gov",
           "source_url": "https://www.gz.gov.cn/zt/zzyyzq/tzgg/content/post_9627971.html",
           "source_title": "通知公告 - 广州市人民政府门户网站",
           "source_content_hash": "ac7f914437badcc36f1fe03debce5ef40c6a1333679bab1278c2614751d39c10",
-          "quote": "广州越富基金管理有限公司",
-          "quote_hash": "49a76fbde1df341495037dcb9bf617c91bf866c2105d618826e666e344db1f99"
+          "quote": "拟合作机构（子基金管理人）名单：广州产投私募基金管理有限公司、广州广药资本私募基金管理有限公司、广州市天河区投资基金管理有限公司、知识城（广州）创业投资基金管理有限公司、广州广花私募基金管理有限公司、广州越富基金管理有限公司。",
+          "quote_hash": "fafe0c1a43b420ba5768c8e6c5c943ee67948ff71d4c376b1fd8f8f43a0846c8"
         },
         {
-          "source_id": "yuefu_ruiXin_d_round",
+          "source_id": "b37_yuefu_amount",
           "source_url": "https://bk.cnpharm.com/zgyyb/2026/06/11/325046.html",
           "source_title": "近期医疗器械资讯速览--07产业链--2026-06-11--中国医药报",
           "source_content_hash": "a55760ae63cd9d9d2e85d9433b316cc255e1489e50c934cce4f287dce041572f",
-          "quote": "深圳睿心智能医疗科技有限公司（以下简称睿心医疗）宣布完成近亿元D轮融资。该轮融资实现广州市、区两级国有资本投资平台联动，由广州生物医药与健康产业投资有限公司领投、广州越富基金管理有限公司跟投。",
-          "quote_hash": "8ee1ce949ca72bc3f6afcd2eac84daf047154094bf0cb0e2bafcc39b066c3d58"
+          "quote": "睿心医疗）宣布完成近亿元D轮融资",
+          "quote_hash": "289e6fadafa6e0ca8eebfb5a0f014ac20df390d6bf45f33fa5455219a5017640"
+        },
+        {
+          "source_id": "b37_yuefu_round",
+          "source_url": "https://bk.cnpharm.com/zgyyb/2026/06/11/325046.html",
+          "source_title": "近期医疗器械资讯速览--07产业链--2026-06-11--中国医药报",
+          "source_content_hash": "a55760ae63cd9d9d2e85d9433b316cc255e1489e50c934cce4f287dce041572f",
+          "quote": "由广州生物医药与健康产业投资有限公司领投、广州越富基金管理有限公司跟投。",
+          "quote_hash": "af0c32b240dfe3cce534b4c16435a5ee4a6903688d57562b92164ac15e442f21"
         },
         {
           "source_id": "FISRC-2afdddccd17bda89",
           "source_url": "https://www.sohu.com/a/1028422830_120094924",
-          "source_title": "商道创投网・会员动态｜睿心医疗・完成近亿元D 轮融资_诊疗_布局_心血管",
-          "source_content_hash": "e6f90681cba7e6ff8a690554ca7812e7ceaf843beaacdd62347caf73da93099f",
+          "source_title": "商道创投网・会员动态｜睿心医疗・完成近亿元D 轮融资",
+          "source_content_hash": "540f96f9862b88b1",
           "quote": "深圳睿心智能医疗科技有限公司近日完成了由广州健康产投领投、越富基金跟投的近亿元D 轮融资。",
           "quote_hash": "8890a42edf470d7e4d4634b31cfe1d67d58fb787de35b6e0a8df65debc6fc9ae"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

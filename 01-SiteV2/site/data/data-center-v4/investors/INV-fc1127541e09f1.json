@@ -137,31 +137,65 @@
       }
     ],
     "public_profile": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "Mission Street Capital 是一家总部位于旧金山、关注早期项目的综合型风险投资机构。Smallest AI 官方公告将其列入公司 2026 年 7 月 1300 万美元 Series A 投资方名单。",
-      "coverage_note": "投资机构身份由 Mission Street Capital 官网说明；融资关系和轮次来自 Smallest AI 官方融资公告。公告未披露其单独投资金额。",
-      "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "投资机构身份由 Mission Street Capital 官网说明；融资关系和轮次来自 Smallest AI 官方融资公告。公告未披露其单独投资金额。",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Mission Street Capital官网自述为总部位于旧金山的综合型早期风险投资公司，称其源自Thiel Fellows于2014年创立的Mission Control hacker house。Smallest AI官方Series A公告将Mission Street Capital列为参投方之一；该轮新闻稿没有披露单独出资额。",
+      "coverage_note": "机构定位和历史由Mission Street Capital官网自述；参投关系来自Smallest AI官方公告，不推断其完整投资组合或单笔金额。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网公布的机构定位",
+          "value": "Mission Street Capital自述为综合型早期风险投资机构，并称其源自2014年成立的Mission Control hacker house。",
+          "source_id": "b37_mission_official"
+        },
+        {
+          "field": "headquarters",
+          "label": "官网列出的所在地",
+          "value": "San Francisco, California。",
+          "source_id": "b37_mission_location"
+        },
+        {
+          "field": "reported_round_type",
+          "label": "发行方融资公告标题",
+          "value": "Smallest AI官网发布了Series A融资公告。",
+          "source_id": "b37_mission_series"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014",
+          "description": "官网称其来源Mission Control hacker house由Thiel Fellows于2014年创立；此为其自述的源起时间，不等同于管理公司的成立日期。",
+          "source_id": "b37_mission_official"
+        }
+      ],
       "track_record": [
         {
-          "description": "Smallest AI 官方公告将 Mission Street Capital 列入其 2026 年 7 月 1300 万美元 Series A 投资方名单。",
-          "source_id": "mission_street_smallest_series_a"
+          "description": "Smallest AI官方融资公告将Mission Street Capital列为参投方之一；公告未披露单笔出资金额。",
+          "source_id": "b37_mission_smallest"
         },
         {
           "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6b1944359351ee14"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Mission Street Capital",
+          "url": "https://www.missionstcapital.com/",
+          "source_id": "b37_mission_official"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构官网披露其早期综合型投资定位和旧金山所在地；Smallest AI官方融资公告记录一项Series A参投。",
       "sources": [
         {
-          "source_id": "mission_street_identity",
+          "source_id": "b37_mission_official",
           "source_url": "https://www.missionstcapital.com/",
           "source_title": "Mission Street Capital",
           "source_content_hash": "e673e635be2e965e07ff5550de2ea41eb78d5e594e77ecf5be6f372f3f2b9a33",
@@ -169,7 +203,23 @@
           "quote_hash": "139dd1e311c16d28fd2102059d6446c85d3a58d1ecfcfb885856d9699c9585b1"
         },
         {
-          "source_id": "mission_street_smallest_series_a",
+          "source_id": "b37_mission_location",
+          "source_url": "https://www.missionstcapital.com/",
+          "source_title": "Mission Street Capital",
+          "source_content_hash": "e673e635be2e965e07ff5550de2ea41eb78d5e594e77ecf5be6f372f3f2b9a33",
+          "quote": "San Francisco, CA",
+          "quote_hash": "5417a55717d2497cf83c3d42b6ff8d21c7efc15dac514052d030e1742d8d7b8b"
+        },
+        {
+          "source_id": "b37_mission_series",
+          "source_url": "https://smallest.ai/blog/series-a-funding-13m-next-generation-voice-ai",
+          "source_title": "Announcing our Series A funding - Smallest.ai",
+          "source_content_hash": "384d8d11b68d62e71cac0df0c45240cdc2780a65088a25ca0fde3bab08c3878a",
+          "quote": "Announcing our Series A funding",
+          "quote_hash": "59d20f09057612824cd39fc50ed65967ded38e22f680048530a6377c58763902"
+        },
+        {
+          "source_id": "b37_mission_smallest",
           "source_url": "https://smallest.ai/blog/series-a-funding-13m-next-generation-voice-ai",
           "source_title": "Announcing our Series A funding - Smallest.ai",
           "source_content_hash": "384d8d11b68d62e71cac0df0c45240cdc2780a65088a25ca0fde3bab08c3878a",
@@ -184,8 +234,7 @@
           "quote": "Additional backers included Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC and Mission Street Capital",
           "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

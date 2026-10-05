@@ -137,31 +137,53 @@
       }
     ],
     "public_profile": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "MVP Ventures 是一家早期风险投资机构，面向技术创业公司。Wispr 联合创始人 Tanay Kothari 在机构官网的创始人案例中介绍了 MVP 的合作支持；TechCrunch 报道称 MVP Ventures 参与了 Wispr 2026 年 8 月 2.8 亿美元 B 轮追加投资。",
-      "coverage_note": "机构身份与 Wispr 的历史合作线索来自 MVP 官网；当前 B 轮参与名单来自 TechCrunch 报道。没有证据显示 MVP Ventures 在该轮单独投资金额。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "MVP Ventures官网将其定位为投资技术创业者的早期风险投资机构，并公布联合创始人和管理合伙人团队。TechCrunch报道将MVP Ventures列为Wispr最新一轮融资中的既有投资者之一；报道没有披露其单笔出资金额。",
+      "coverage_note": "机构定位和管理团队来自MVP Ventures官网；Wispr的融资参与名单来自TechCrunch，未推断单笔投资额或MVP的完整投资组合。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网公布的投资定位",
+          "value": "早期投资技术创业者，重点支持具有差异化和防御性的技术。",
+          "source_id": "b37_mvp_official"
+        },
+        {
+          "field": "team",
+          "label": "官网公布的创始管理合伙人",
+          "value": "官网列Andre de Baubigny和Weston Moyer为联合创始人及管理合伙人。",
+          "source_id": "b37_mvp_team"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "机构身份与 Wispr 的历史合作线索来自 MVP 官网；当前 B 轮参与名单来自 TechCrunch 报道。没有证据显示 MVP Ventures 在该轮单独投资金额。",
       "track_record": [
         {
-          "description": "TechCrunch 报道将 MVP Ventures 列为 Wispr 2026 年 8 月 2.8 亿美元 B 轮追加投资的既有投资方。",
-          "source_id": "mvp_wispr_series_b"
+          "description": "TechCrunch报道将MVP Ventures列为Wispr最新一轮融资中追加投资的既有投资者之一；未披露单独投资金额。",
+          "source_id": "b37_mvp_wispr"
         },
         {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e7a3713da8f3e54"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "MVP Ventures",
+          "url": "https://www.mvp-vc.com/",
+          "source_id": "b37_mvp_official"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "MVP Ventures官网披露其早期技术投资定位及联合创始人管理团队；第三方融资报道确认其参与Wispr后续融资。",
       "sources": [
         {
-          "source_id": "mvp_official_identity",
+          "source_id": "b37_mvp_official",
           "source_url": "https://www.mvp-vc.com/",
           "source_title": "MVP Ventures — Your Most Valuable Partner",
           "source_content_hash": "704a47eee7888294940da5b8d33b7c49bad524ae32e61e0326aba9b18ff1ade5",
@@ -169,15 +191,15 @@
           "quote_hash": "87726ca2be70dfff687bf38dc2bba30cc96af87bd7fc20da97a0fb37850948d8"
         },
         {
-          "source_id": "mvp_wispr_founder_testimonial",
-          "source_url": "https://www.mvp-vc.com/",
-          "source_title": "MVP Ventures — Your Most Valuable Partner",
-          "source_content_hash": "704a47eee7888294940da5b8d33b7c49bad524ae32e61e0326aba9b18ff1ade5",
-          "quote": "Tanay Kothari CEO & Co-Founder, Wispr",
-          "quote_hash": "23df09384762690376857dbb1ddcfcdcca12ee56e436ed0031f2469e8628d337"
+          "source_id": "b37_mvp_team",
+          "source_url": "https://www.mvp-vc.com/about/team",
+          "source_title": "Our Team | MVP Ventures",
+          "source_content_hash": "7fd059db10ff43c5fe6e733685d5b2132e7e092dce870df54d2bf1911bd94d9a",
+          "quote": "Andre de Baubigny Co-Founder & Managing Partner Weston Moyer Co-Founder & Managing Partner",
+          "quote_hash": "b61faa5c8b6c072e2276ac1822451013be9cc7ea1c1edde1d745afebf04781ea"
         },
         {
-          "source_id": "mvp_wispr_series_b",
+          "source_id": "b37_mvp_wispr",
           "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/",
           "source_title": "Wispr raises $280M at $2B valuation as it looks beyond dictation | TechCrunch",
           "source_content_hash": "506649963a77e50322405fc40852df8eadb62f472f7f3d4087cde118e4447b39",
@@ -192,8 +214,7 @@
           "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
           "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {
