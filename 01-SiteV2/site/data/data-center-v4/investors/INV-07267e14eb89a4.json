@@ -195,12 +195,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "HSG(原红杉中国) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "HSG官网确认其为风险投资与私募股权机构，公开说明HSG为Sequoia China原品牌，并披露其投资行业范围。",
+      "coverage_note": "档案使用HSG当前品牌；组合、业绩和单个投资者法律主体应以各自的官方资料为准。",
+      "facts": [
+        {
+          "field": "brand_history",
+          "label": "品牌沿革",
+          "value": "HSG formerly known as Sequoia China",
+          "source_id": "hsg_about"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "公开行业方向",
+          "value": "Technology, healthcare and consumer sectors",
+          "source_id": "hsg_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -212,8 +225,24 @@
           "source_id": "FISRC-e9b7c7aa8538dbf1"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "HSG",
+          "url": "https://www.hsgcap.com/about-us/",
+          "source_id": "hsg_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hsg_about",
+          "source_url": "https://www.hsgcap.com/about-us/",
+          "source_title": "About Us - HSG",
+          "source_content_hash": "202d4759aaf59ef4bde800fea7a4c3a6a9ba89cabcc2a09406da40764282b434",
+          "quote": "HSG, formerly known as Sequoia China, is a leading venture capital and private equity firm",
+          "quote_hash": "c4c1f205dc1db037c452a5d69504c914105c6b910d1cac5510e197101ffe51ed"
+        },
         {
           "source_id": "FISRC-55c913083e7dcd21",
           "source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
@@ -231,7 +260,7 @@
           "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

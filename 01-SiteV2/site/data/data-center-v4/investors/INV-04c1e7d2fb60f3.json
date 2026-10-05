@@ -137,21 +137,56 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Cadenza 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Cadenza官网将其定位为投资变革性技术的全球投资机构；其官方组合页面列出Pangram Labs等案例。本档仅采用机构官网公开信息。",
+      "coverage_note": "组合页标注为精选投资，不能据此推断完整投资组合或回报。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "机构定位",
+          "value": "投资变革性技术的全球投资机构",
+          "source_id": "cadenza_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Cadenza官方组合页列出Pangram Labs。",
+          "source_id": "cadenza_portfolio"
+        },
         {
           "description": "融资来源记录：Pangram Labs · 轮次未披露 · 2026-07-29 · 本轮参投 · $9,000,000。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d8e4be597a9ace83"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Cadenza",
+          "url": "https://cadenza.vc/",
+          "source_id": "cadenza_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cadenza_home",
+          "source_url": "https://cadenza.vc/",
+          "source_title": "Cadenza",
+          "source_content_hash": "ac5b0691a2cf6d195a9605212a479d26c950102db572bb40fae48d624fb48e41",
+          "quote": "Cadenza Global Investors in Transformative Technologies",
+          "quote_hash": "5dbfce4b3c117c8d31fe7e22e26a54b8433d7e161c90831a9841005cb5d53997"
+        },
+        {
+          "source_id": "cadenza_portfolio",
+          "source_url": "https://cadenza.vc/portfolio",
+          "source_title": "Portfolio | Cadenza",
+          "source_content_hash": "ccbfc8cd3232d990186e2b66124a099511f5fbacc518e690249b033d63fbb9f7",
+          "quote": "Select investments from our portfolio. Together.ai Tensorwave Nous Research Pangram Labs",
+          "quote_hash": "1c5f128543d88d017b27cf4afd424548799d2f0b7d21592ecdca9a9b3dedd294"
+        },
         {
           "source_id": "FISRC-d8e4be597a9ace83",
           "source_url": "https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it",
@@ -161,7 +196,7 @@
           "quote_hash": "23f2bea538a26d72cef7666f71e0842a8f814ce4e13ba2350d226f7c3e58e3db"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

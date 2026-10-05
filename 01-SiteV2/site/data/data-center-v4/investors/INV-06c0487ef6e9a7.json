@@ -138,21 +138,56 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "京东 (JD.com) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "summary": "京东官方投资者关系页面确认京东（JD.COM）的企业身份；IT之家援引企查查数据报道将京东列入DeepSeek一轮外部融资投资方。本档只保留该媒体报道案例，不确认报道中的融资金额或估值。",
+      "coverage_note": "投资活动仅由媒体转述的企业查询信息支持，缺少公司或被投企业的一手融资公告。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "公司简介",
+          "value": "技术驱动型电商和零售基础设施服务商",
+          "source_id": "jd_ir"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "IT之家报道援引企查查，将京东列为DeepSeek首轮外部融资投资方；融资规模和估值未采信为已核实事实。",
+          "source_id": "jd_reported_round"
+        },
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6f84e84fa4821cb0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资者关系",
+          "value": "JD.com投资者关系",
+          "url": "https://ir.jd.com/zh-hans/investor-overview?items_per_page=25&page=0",
+          "source_id": "jd_ir"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jd_ir",
+          "source_url": "https://ir.jd.com/zh-hans/investor-overview?items_per_page=25&page=0",
+          "source_title": "投资者首页 | JD.Com, Inc.",
+          "source_content_hash": "a7e44fe34b2b0a5afed217701438f8eda1392d1d8c86972c306cab6a39dc8238",
+          "quote": "京东（JD.COM）是中国领先的技术驱动型电商和零售基础设施服务商。",
+          "quote_hash": "58c591e0993956e0de5def77cab29e5f5f1b88724590a658f3afccf993bc8757"
+        },
+        {
+          "source_id": "jd_reported_round",
+          "source_url": "https://www.ithome.com/0/965/686.htm",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家",
+          "source_content_hash": "9c2935c329e79c86a273afaa6b86bffcecb3779f8cbcc69d425c012fe71b950e",
+          "quote": "具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本",
+          "quote_hash": "aea570ef584a72580547f1ff750d1100919b1b90d351fcb792372f7b4c75941d"
+        },
         {
           "source_id": "FISRC-6f84e84fa4821cb0",
           "source_url": "https://www.gadgetscout.co.uk/articles/deepseek-valued-at-52bn-after-first-external-funding-round.html",
@@ -162,7 +197,7 @@
           "quote_hash": "a1f9c8e473298805311c145b991d7554c6260e6997163768b55052a58304aabf"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

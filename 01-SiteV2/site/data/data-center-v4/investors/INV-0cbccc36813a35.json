@@ -133,14 +133,37 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "上海领屹投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "中国证券投资基金业协会登记信息将该主体列为上海领屹私募基金管理有限公司（P1074912），机构类型为私募股权、创业投资基金管理人；财经网报道将上海领屹投资列为数巅智能融资参与方。",
+      "coverage_note": "监管公示核实管理人身份；融资报道仅作为公开案例，不等同于完整投资组合。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "管理人名称",
+          "value": "上海领屹私募基金管理有限公司",
+          "source_id": "linyi_amac"
+        },
+        {
+          "field": "manager_registration",
+          "label": "管理人登记编号",
+          "value": "P1074912",
+          "source_id": "linyi_amac"
+        },
+        {
+          "field": "institution_type",
+          "label": "机构类型",
+          "value": "私募股权、创业投资基金管理人",
+          "source_id": "linyi_amac"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "财经网报道将上海领屹投资列为数巅智能融资参与方。",
+          "source_id": "linyi_deal"
+        },
         {
           "description": "融资来源记录：数巅智能 · 历史轮次未披露 · pre-A轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9ebda1057c2926b3"
@@ -148,6 +171,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "linyi_amac",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2403041526106463.html",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "bf81d2ec56129a2e5728b7ca544ae6adb442d052420f2a43eb0b15d0cca042a6",
+          "quote": "上海领屹私募基金管理有限公司",
+          "quote_hash": "be3b4b897ac3b8a9cf40bf3235b22587e51031919f07a351bc2f78a8b16d64c8"
+        },
+        {
+          "source_id": "linyi_deal",
+          "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
+          "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
+          "source_content_hash": "ce865d6bdbed513507a71fe2029c26f68d48c5392f98b738223c92f92c0565c5",
+          "quote": "上海领屹投资等机构跟投",
+          "quote_hash": "edd407d15ce702fbe189a8bba737d1eb4ee28fdd47678fe390bdd1e19b4e7f65"
+        },
         {
           "source_id": "FISRC-9ebda1057c2926b3",
           "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
@@ -157,7 +196,7 @@
           "quote_hash": "fcd45a3c282bf9b19a1d8d9e69340a6f4c6018575e8aa1d26a10e45b7159d87b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

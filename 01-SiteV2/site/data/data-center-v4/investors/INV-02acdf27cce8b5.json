@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "清新资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "清新资本官网及其动态页面介绍其为早中期投资机构，方向覆盖循环经济、清洁能源和消费科技，并披露双碳业务布局。",
+      "coverage_note": "策略与方向为机构自述；页面未构成完整基金、投资组合或业绩披露。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早中期投资",
+          "source_id": "fresh_profile"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资方向",
+          "value": "循环经济、清洁能源、消费科技及双碳产业",
+          "source_id": "fresh_business"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +163,32 @@
           "source_id": "FISRC-a7ac3aedf1b697d8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "清新资本",
+          "url": "https://www.freshcapital.cn/men/",
+          "source_id": "fresh_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "fresh_profile",
+          "source_url": "https://www.freshcapital.cn/men/",
+          "source_title": "fresh capital",
+          "source_content_hash": "820d3e30af9e3c4098ddc5865dc513cc34cdc8f7e2c5312c8279d8960f3042ba",
+          "quote": "清新资本专注于循环经济、清洁能源、消费科技领域的早中期投资机会。",
+          "quote_hash": "18c446f8c55f87557cf2cb6ac14434594893f90653c9861a03cd602453659de7"
+        },
+        {
+          "source_id": "fresh_business",
+          "source_url": "https://www.freshcapital.cn/Home/News/indexcont/id/266.html",
+          "source_title": "清新资本-清新动态 | 清新资本胡宇晨：创新多元路径，助力双碳战略加速实现",
+          "source_content_hash": "291f428569c433cd2a1b486392740ceb266521a3c73a04e6802c484ff8bdcbea",
+          "quote": "清新资本 成立于 2017 年，现在是一个围绕双碳产业的综合性投资机构",
+          "quote_hash": "78f47269bf2521250de31140a98112713801ce481629ea2728046180893ea593"
+        },
         {
           "source_id": "FISRC-a7ac3aedf1b697d8",
           "source_url": "https://news.pedaily.cn/202603/561585.shtml",
@@ -161,7 +198,7 @@
           "quote_hash": "41d6c3188c9986e479c68e45629be28b3168e3539bcec1e8c8610bf502d45a21"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-06"
     }
   }
 }
