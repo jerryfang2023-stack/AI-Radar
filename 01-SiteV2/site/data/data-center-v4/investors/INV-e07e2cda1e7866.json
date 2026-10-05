@@ -123,19 +123,68 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Harvest Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Harvest Ventures 队列标签与官网品牌 Harvest Venture Partners 对应于其官网自述的 WindBorne 种子轮投资。未推断其法律实体、所有权或与其他 Harvest 名称机构的关系。",
+      "summary": "Harvest Venture Partners 官网自述是一支早期风险投资基金，优先支持金融科技、保险和商业领域的创始团队。其官网投资文章宣布参与 WindBorne 种子轮。队列名称为 Harvest Ventures；此档案依据双方官网对同一投资事件的明确对应，仅描述其品牌披露。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述投资阶段",
+          "value": "早期风险投资。",
+          "source_id": "harvest_profile"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "官网自述关注领域",
+          "value": "金融科技、保险和商业。",
+          "source_id": "harvest_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Harvest Venture Partners 官方文章称参与 WindBorne 种子轮，并列出共同参投方。",
+          "source_id": "harvest_windborne"
+        },
         {
           "description": "融资来源记录：WindBorne Systems · 历史轮次未披露 · 种子轮参投方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-08b1a89e7ab437e8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Harvest Venture Partners",
+          "url": "https://harvest.ventures/",
+          "source_id": "harvest_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "harvest_profile",
+          "source_url": "https://harvest.ventures/",
+          "source_title": "Harvest Venture Partners",
+          "source_content_hash": "6ad4d36eaf0f83356fa07ae6387232ddd30852f451ebe41e76f2fd1027f4d1c0",
+          "quote": "We're an early-stage venture fund with one belief: the future of financial technology belongs to the people building it — and we're all in on them, from the very first check.",
+          "quote_hash": "ab3b4ccc1d0d222476fbb3630644f19792f5b70a73ef1b1bdbe0d686073471ae"
+        },
+        {
+          "source_id": "harvest_windborne",
+          "source_url": "https://harvest.ventures/thoughts/our-partnership-with-windborne",
+          "source_title": "Our Partnership with Windborne — Harvest Venture Partners",
+          "source_content_hash": "f11d01fcf5086dbbf570ad6cffbe2f66674a5978ec0d1e621097d7bf4a655b22",
+          "quote": "We joined WindBorne&rsquo;s Seed financing round with Footwork VC, Khosla Ventures, Ubiquity, and Pear VC.",
+          "quote_hash": "59636d154af5ac9ae68bd69313b3f4b8cce92932bf8641aac008f7ce9c3eef4a"
+        },
+        {
+          "source_id": "harvest_team",
+          "source_url": "https://harvest.ventures/",
+          "source_title": "Harvest Venture Partners",
+          "source_content_hash": "6ad4d36eaf0f83356fa07ae6387232ddd30852f451ebe41e76f2fd1027f4d1c0",
+          "quote": "Alex Gold Founder & General Partner Two-time founder — Myia Health, Traction — and venture builder at BCG Digital Ventures. Adam Froese Venture Partner",
+          "quote_hash": "10436aa5dd3869a2da19602306b042242237d99013910fcea253a3a83ac8c291"
+        },
         {
           "source_id": "FISRC-08b1a89e7ab437e8",
           "source_url": "https://susaventures.substack.com/p/our-investment-in-windborne-systems-c6dcc0c3519d",
@@ -145,7 +194,22 @@
           "quote_hash": "b6fa3131e1a1b22027a2fbfe50b77482a8b6c98df355475896b39b6b285d4279"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06",
+      "current_roles": [
+        {
+          "title": "Founder & General Partner",
+          "organization": "Harvest Venture Partners",
+          "source_id": "harvest_team"
+        },
+        {
+          "title": "Venture Partner",
+          "organization": "Harvest Venture Partners",
+          "source_id": "harvest_team"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

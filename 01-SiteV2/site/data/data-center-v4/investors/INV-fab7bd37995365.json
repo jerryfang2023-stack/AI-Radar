@@ -123,19 +123,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Genius Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位据 Genius Ventures 官网自述；Natural AI 的官方公告确认其参与该公司种子融资。这里记录官网披露的策略与一项明确融资案例，不代表完整投资组合。",
+      "summary": "Genius Ventures 官网称其为面向早期公司的风险投资基金，目标是在创办初期成为首位投资方，并与创始团队共同参与招聘、销售、融资和战略工作。Natural AI 官方种子轮公告将 Genius Ventures 列为投资方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述投资阶段",
+          "value": "早期；官网称专注于 first check。",
+          "source_id": "genius_profile"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网自述合作方式",
+          "value": "与创始团队共同参与招聘、销售、融资和战略工作。",
+          "source_id": "genius_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Natural AI 官方种子轮公告将 Genius Ventures 列为投资方；不据此扩展为完整投资组合。",
+          "source_id": "genius_activity"
+        },
         {
           "description": "融资来源记录：Natural AI, Inc. · 历史轮次未披露 · 本轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6fe11d1e74b865b4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Genius Ventures",
+          "url": "https://www.geniusventures.com/",
+          "source_id": "genius_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "genius_profile",
+          "source_url": "https://www.geniusventures.com/",
+          "source_title": "Genius Ventures",
+          "source_content_hash": "3e3adde6715b6ca4df93f9865e151ea3fc031c672ed12d7d7243b55ac1402e67",
+          "quote": "Genius Ventures is an early stage venture capital fund focused on being the first check in to founders and being their closest partner from 0 to 1.",
+          "quote_hash": "c51310b9d6ea72bdbb32908f12bdf180f904bced06a6b89060bee74a7d76023e"
+        },
+        {
+          "source_id": "genius_activity",
+          "source_url": "https://www.natural.com/blog/natural-seed-round",
+          "source_title": "$9.8M to build payments for AI agents — Natural",
+          "source_content_hash": "b63a305f694ff9380f4e163117018b0283dd0f1ed09d17f0d987ba5e375deb4a",
+          "quote": "investors: Abstract, Human Capital, Forerunner, Terrain, Restive, and Genius Ventures, along with some of the best founders and operators in the world",
+          "quote_hash": "89ba2ee06d30e4e8bd87874851f64bbbe90fa0b4908f45b396e9fd86813c95e6"
+        },
         {
           "source_id": "FISRC-6fe11d1e74b865b4",
           "source_url": "https://www.linkedin.com/posts/jake-moross_big-day-for-the-natural-team-congrats-activity-7485041411692638208-9ph-",
@@ -145,7 +186,11 @@
           "quote_hash": "7c8df6a22b12012dacd720cfb0d553ad5e2dbd59a437f04268d2e808f3ce8c8c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
