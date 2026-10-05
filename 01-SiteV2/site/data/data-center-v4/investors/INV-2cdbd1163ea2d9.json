@@ -139,30 +139,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "中国金融信息网报道，景美作为长沙景嘉微电子股份有限公司全资子公司，于2026年6月独家领投昆仑元AI战略轮；本档案仅覆盖该次公开活动。",
-      "coverage_note": "仅记录中国金融信息网披露的2026年一笔融资活动，不扩展为完整公司介绍。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "长沙景嘉微官网沿革记载其于2015年设立全资子公司长沙景美集成电路设计有限公司；中国金融信息网报道称景美独家领投昆仑元AI战略轮并投入5000万元。公开证据支持将其作为上市公司旗下企业投资方记录，不据此扩写集团投资策略。",
+      "coverage_note": "子公司关系来自景嘉微官方页面；融资金额及领投信息来自中国金融信息网对发行方融资公告的报道。",
+      "facts": [
+        {
+          "field": "ownership",
+          "label": "上市公司披露的子公司关系",
+          "value": "景嘉微官网沿革记载，长沙景美集成电路设计有限公司为其于2015年设立的全资子公司。",
+          "source_id": "b39_jingmei_parent"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "2026年6月，中国金融信息网报道景美独家领投昆仑元AI新一轮战略融资。",
-          "source_id": "PFSRC-2cdbd1163ea2d9-1"
+          "description": "中国金融信息网报道称景美独家领投昆仑元AI战略轮，金额人民币5000万元；该金额为公开报道的投资额。",
+          "source_id": "b39_jingmei_round"
         },
         {
           "description": "融资来源记录：昆仑元AI · 战略融资 · 2026-06-08 · 本轮领投 · 5000万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-be65c4b40e430455"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "母公司官网",
+          "value": "长沙景嘉微",
+          "url": "https://www.jingjiamicro.com/",
+          "source_id": "b39_jingmei_parent"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "景嘉微官网确认景美为全资子公司；中国金融信息网披露一笔由景美独家领投的战略融资。",
       "sources": [
         {
-          "source_id": "PFSRC-2cdbd1163ea2d9-1",
+          "source_id": "b39_jingmei_parent",
+          "source_url": "https://www.jingjiamicro.com/about.html",
+          "source_title": "关于我们-长沙景嘉微电子股份有限公司",
+          "source_content_hash": "0d507ae0dec28afb3d98828dbde4ff4de04ae25a169f94e8d53346fb8977a66b",
+          "quote": "成立全资子公司：长沙景美集成电路设计有限公司",
+          "quote_hash": "fe7306baa914594b3e34f3d3bf9177296ba158ae2b954025252fb2c01900ae3e"
+        },
+        {
+          "source_id": "b39_jingmei_round",
           "source_url": "https://www.cnfin.com/gs-lb/detail/20260608/4423270_1.html",
           "source_title": "昆仑元AI完成新一轮战略轮融资 景嘉微战略入股 - 中国金融信息网",
-          "source_content_hash": "452d518869fcc89322480f06e4666735587b4f67235f818f04ab89b864d48f9c",
-          "quote": "本轮融资由A股上市公司长沙 景嘉微 电子股份有限公司（300474.SZ）全资子公司——长沙景美集成电路设计有限公司（以下简称“景美”）独家领投，投资金额人民币5000万元",
-          "quote_hash": "4835d7f46a038560738bd240028d5aff6e16bbbcfa7b3c3deb093ed5396c941b"
+          "source_content_hash": "fd72be7153c9eba8638abc424a97f8ba3a1886ca598f6285b9b8d8eb59f36131",
+          "quote": "长沙景美集成电路设计有限公司（以下简称“景美”）独家领投，投资金额人民币5000万元",
+          "quote_hash": "65a3217e29181267935a2fd7c372a0596e45f0b8b070a7f3e0fb5e5d68881892"
         },
         {
           "source_id": "FISRC-be65c4b40e430455",
@@ -172,8 +200,7 @@
           "quote": "本轮融资由A股上市公司长沙 景嘉微 电子股份有限公司（300474.SZ）全资子公司——长沙景美集成电路设计有限公司（以下简称“景美”）独家领投，投资金额人民币5000万元，投前估值达人民币10亿元。",
           "quote_hash": "484a72882fb9664785a37784813d1e65ef6c0e580a8cbd3496d0f9a2a60c7eca"
         }
-      ],
-      "last_verified_at": "2026-10-02"
+      ]
     }
   }
 }

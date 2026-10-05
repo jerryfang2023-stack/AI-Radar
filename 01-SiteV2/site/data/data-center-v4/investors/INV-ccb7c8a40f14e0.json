@@ -139,19 +139,81 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Factorial Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Factorial Capital 官网称其面向技术型创始人，关注基础设施、B2B 和消费领域，主要进行天使轮及预种子投资，也参与种子轮和精选 A 轮，通常投资额为50万至100万美元。NanoCo 融资报道将 Factorial Capital 列为种子轮参投方。",
+      "coverage_note": "投资阶段和金额区间为官网自述的一般口径；NanoCo 报道未披露 Factorial Capital 的单独出资额。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "官网称其关注技术型创始人及基础设施、B2B 和消费领域。",
+          "source_id": "b39_factorial_focus"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的阶段和金额区间",
+          "value": "官网称主要投天使轮和预种子轮，也投种子轮及精选 A 轮，通常投资额为50万至100万美元。",
+          "source_id": "b39_factorial_checks"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "NanoCo 的种子轮融资报道将 Factorial Capital 列入参投方；未披露单独出资额。",
+          "source_id": "b39_factorial_nanoco"
+        },
         {
           "description": "融资来源记录：NanoCo · 种子轮 · 2026-05-20 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2982fb466bfffcad"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Factorial Capital",
+          "url": "https://factorialcap.com/",
+          "source_id": "b39_factorial_focus"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Factorial Capital 官网提供投资方向、阶段和自述支票区间；Ctech 报道支持其参与 NanoCo 种子轮。",
       "sources": [
+        {
+          "source_id": "b39_factorial_focus",
+          "source_url": "https://factorialcap.com/",
+          "source_title": "Factorial Capital | Early-Stage Venture Capital for Technical Founders",
+          "source_content_hash": "4156d9d92b0f6fd1d4c41c610100ba8188815248a006996cb95c14cc5a646e4d",
+          "quote": "Factorial is a new kind of venture firm purpose-built for the AI era.",
+          "quote_hash": "908f7af18dbb034bec3075ee128cf110f22c6f6281c005139ad341f154845b17"
+        },
+        {
+          "source_id": "b39_factorial_stage",
+          "source_url": "https://factorialcap.com/",
+          "source_title": "Factorial Capital | Early-Stage Venture Capital for Technical Founders",
+          "source_content_hash": "4156d9d92b0f6fd1d4c41c610100ba8188815248a006996cb95c14cc5a646e4d",
+          "quote": "We focus on angel and pre-seed but also invest in seed & selective series A.",
+          "quote_hash": "594e8a020be8d546067a79dd25cd4821cc9439047a81475cfff52600682d0728"
+        },
+        {
+          "source_id": "b39_factorial_checks",
+          "source_url": "https://factorialcap.com/",
+          "source_title": "Factorial Capital | Early-Stage Venture Capital for Technical Founders",
+          "source_content_hash": "4156d9d92b0f6fd1d4c41c610100ba8188815248a006996cb95c14cc5a646e4d",
+          "quote": "We generally invest $500k-1m",
+          "quote_hash": "dd66b065104fe7643c67512b1bdbf31db393251af3551278402e22d34edb36ef"
+        },
+        {
+          "source_id": "b39_factorial_nanoco",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/r1rtwrjyme",
+          "source_title": "NanoClaw creator NanoCo lands $12 million in Seed funding to build enterprise AI agen | Ctech",
+          "source_content_hash": "a45ec887971748ee9b6f0fbd1c4a80839382aea33d0f0aac1e7d83c038100b0d",
+          "quote": "with participation from Docker, Vercel, monday.com, Slow Ventures, Clutch Capital, Factorial Capital and Clem Delangue",
+          "quote_hash": "a6d5eb7590c9f39ed5badd9104b389a96f5ab2eba06d95bf99ba8f794802585d"
+        },
         {
           "source_id": "FISRC-2982fb466bfffcad",
           "source_url": "https://www.calcalistech.com/ctechnews/article/r1rtwrjyme",
@@ -160,8 +222,7 @@
           "quote": "The funding was led by Valley Capital Partners, with participation from Docker, Vercel, monday.com, Slow Ventures, Clutch Capital, Factorial Capital and Clem Delangue, CEO of Hugging Face.",
           "quote_hash": "e0999314b62d29ca41a85d93a2336b20c7d9922ec66cf9a4b41e1d233ffdf7d6"
         }
-      ],
-      "last_verified_at": "2026-09-28"
+      ]
     }
   }
 }

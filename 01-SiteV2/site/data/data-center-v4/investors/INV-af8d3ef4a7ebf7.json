@@ -139,19 +139,86 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Clara Shih (Meta) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "HubSpot 董事会页面确认 Clara Shih 自2025年11月起担任其董事，并称她自2024年10月起领导 Meta Business AI Group；Qodo 的融资公告将 Clara Shih（Meta）列为其7000万美元融资的天使投资人。未披露她的个人出资额。",
+      "coverage_note": "职业信息来自 HubSpot 董事会披露；投资记录来自 Qodo 融资新闻稿。保留条目中的“Meta”身份标注，不推断个人支票金额。",
+      "facts": [
+        {
+          "field": "board_role",
+          "label": "HubSpot 董事会职务",
+          "value": "HubSpot 页面称 Clara Shih 自2025年11月起担任董事。",
+          "source_id": "b39_clara_board"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Qodo 官方融资公告将 Clara Shih（Meta）列为7000万美元融资中的天使投资人之一；未披露个人出资额。",
+          "source_id": "b39_clara_qodo"
+        },
         {
           "description": "融资来源记录：Qodo · B轮 · 2026-03-30 · 本轮天使投资人 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f001682a294672d5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "HubSpot 董事会资料",
+          "value": "Clara Shih",
+          "url": "https://www.hubspot.com/company/board-of-directors/clara-shih",
+          "source_id": "b39_clara_board"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Board Member",
+          "organization": "HubSpot",
+          "source_id": "b39_clara_board"
+        },
+        {
+          "title": "Head of Business AI Group",
+          "organization": "Meta",
+          "source_id": "b39_clara_meta_role"
+        }
+      ],
+      "career": [
+        {
+          "title": "Head of Business AI Group",
+          "organization": "Meta",
+          "source_id": "b39_clara_meta_role",
+          "period": "Since October 2024",
+          "description": "HubSpot states that she has led Meta’s Business AI Group since October 2024."
+        }
+      ],
+      "education": [],
+      "experience_summary": "HubSpot 官方董事会页面核实 Clara Shih 的身份及任职经历；Qodo 发行方公告支持一项天使投资披露。",
       "sources": [
+        {
+          "source_id": "b39_clara_board",
+          "source_url": "https://www.hubspot.com/company/board-of-directors/clara-shih",
+          "source_title": "Clara Shih, HubSpot Board of Directors",
+          "source_content_hash": "f6cda005bf7359be173a9e0a4de939f8b3538d487f86303b3b217c849445dd0d",
+          "quote": "Clara Shih has served as a member of our board since November 2025.",
+          "quote_hash": "619d970036ee7af4d50ad687ee441f4a7e76acced7b06fc76b07cd21e3d22c6f"
+        },
+        {
+          "source_id": "b39_clara_meta_role",
+          "source_url": "https://www.hubspot.com/company/board-of-directors/clara-shih",
+          "source_title": "Clara Shih, HubSpot Board of Directors",
+          "source_content_hash": "f6cda005bf7359be173a9e0a4de939f8b3538d487f86303b3b217c849445dd0d",
+          "quote": "head of the Business AI Group at Meta since October 2024",
+          "quote_hash": "d83aa225172c52333e09230d19587c12e64dc7736ac4d324f42cb25a692f46c9"
+        },
+        {
+          "source_id": "b39_clara_qodo",
+          "source_url": "https://www.globenewswire.com/en/news-release/2026/03/30/3264740/0/en/Qodo-Raises-70M-to-Accelerate-Fight-Against-Software-Slop-From-OpenClaw-and-Claude-Code.html",
+          "source_title": "Qodo Raises $70M to Accelerate Fight Against Software Slop",
+          "source_content_hash": "b45aa474649ee06161bf55da18ddf98f7614d859593456c0954147548558873c",
+          "quote": "Peter Welender (OpenAI), and Clara Shih (Meta).",
+          "quote_hash": "3b32089e1db20d1241003307e7820f375733c51450fc2b8e6a38827792c59eb4"
+        },
         {
           "source_id": "FISRC-f001682a294672d5",
           "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
@@ -160,8 +227,7 @@
           "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
           "quote_hash": "8289c1808e0026857041e47dfeb94545f74d2ebfe9a2e13ff06705bb2a5a71b6"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

@@ -178,17 +178,30 @@
       }
     ],
     "public_profile": {
-      "summary": "Sandberg Bernthal Venture Partners 的 LinkedIn 公司页自述其业务方向为与创业者共同投资、支持和扩大企业；本条只保留公司页自述。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Mona 的融资公告称，350万美元融资由 Sandberg Bernthal Venture Partners 领投；Atomic 的官方公告也将其列为公司支持方。两份发行方材料支持该机构身份及多项投资披露，未说明其基金规模或单独出资金额。",
+      "coverage_note": "仅记录两家被投公司的发行方公告；不从“Venture Partners”名称推断基金结构、投资阶段或规模。",
       "facts": [
         {
-          "field": "self_described_approach",
-          "label": "公司页自述",
-          "value": "与创业者并肩投资、支持并扩大业务。",
-          "source_id": "PROFILE-INV-5b2262f77ed6a3-1"
+          "field": "investment_evidence",
+          "label": "发行方公开的投资关系",
+          "value": "Mona 与 Atomic 的发行方公告均披露 Sandberg Bernthal Venture Partners 参与投资。",
+          "source_id": "b39_sbvp_atomic"
         }
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Mona 公告称其融资由 Sandberg Bernthal Venture Partners 领投；未披露该机构的单独出资额。",
+          "source_id": "b39_sbvp_mona"
+        },
+        {
+          "description": "Atomic 官方公告将 Sandberg Bernthal Venture Partners 列为公司支持方。",
+          "source_id": "b39_sbvp_atomic"
+        },
         {
           "description": "融资来源记录：Mona · 轮次未披露 · 2026-09-28 · 本轮领投 · $3.5M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-22cce00c604ac941"
@@ -198,46 +211,27 @@
           "source_id": "FISRC-d4e6ae2384112548"
         }
       ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "coverage_note": "资料来自该名称对应的 LinkedIn 公司页自述，未由此推断基金规模、投资阶段或投资组合。",
+      "contacts": [],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官网（公司页所列）",
-          "value": "https://sbvp.com",
-          "url": "https://sbvp.com",
-          "source_id": "PROFILE-INV-5b2262f77ed6a3-2"
-        },
-        {
-          "kind": "social",
-          "label": "LinkedIn",
-          "value": "Sandberg Bernthal Venture Partners 公司页",
-          "url": "https://www.linkedin.com/company/sbvpartners",
-          "source_id": "PROFILE-INV-5b2262f77ed6a3-1"
-        }
-      ],
+      "experience_summary": "Mona 与 Atomic 的融资公告分别披露 Sandberg Bernthal Venture Partners 作为领投方和支持方。",
       "sources": [
         {
-          "source_id": "PROFILE-INV-5b2262f77ed6a3-1",
-          "source_url": "https://www.linkedin.com/company/sbvpartners",
-          "source_title": "Sandberg Bernthal Venture Partners | LinkedIn",
-          "source_content_hash": "65ef4b8481f384283ee7ba39000158f00a84c5d556cf80f55418eb66b9a2d55f",
-          "quote": "Investing, supporting and scaling alongside great entrepreneurs.",
-          "quote_hash": "98c1186748b9ec8cf2f317eff44bbc82e0466c09fd73c4e325b35a7fb351ba8c"
+          "source_id": "b39_sbvp_mona",
+          "source_url": "https://www.businesswire.com/news/home/20260928892666/en/Mona-Raises-%243.5M-to-Expand-Its-AI-Platform-for-Small-Business-Capital-Access-and-Financial-Coaching",
+          "source_title": "Mona Raises $3.5M to Expand Its AI Platform for Small Business Capital Access and Financial Coaching",
+          "source_content_hash": "e1b8312e89acc5c10e638a05c81449193c4b2cf48f91a49be0ab6a361abd450b",
+          "quote": "The round was led by Sandberg Bernthal Venture Partners",
+          "quote_hash": "9df18d1268b57f8fb58b1edfddb70f1ac582de112f82ead63e87ef7f1cfaf156"
         },
         {
-          "source_id": "PROFILE-INV-5b2262f77ed6a3-2",
-          "source_url": "https://www.linkedin.com/company/sbvpartners",
-          "source_title": "Sandberg Bernthal Venture Partners | LinkedIn",
-          "source_content_hash": "65ef4b8481f384283ee7ba39000158f00a84c5d556cf80f55418eb66b9a2d55f",
-          "quote": "Website https://sbvp.com",
-          "quote_hash": "8f8ca0058f5c7935041ca41697de71563fe905f19fe93546f83ab4e20918a50d"
+          "source_id": "b39_sbvp_atomic",
+          "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",
+          "source_title": "Atomic Raises $12.5M to Build the AI Control System for Physical Goods Companies",
+          "source_content_hash": "4407db855b53b27a11ae071df8065303eff58def7cc749555b224b191261ea35",
+          "quote": "Atomic is backed by DVx Ventures, Klass Capital, Madrona, Alumni Ventures, and Sandberg Bernthal Venture Partners.",
+          "quote_hash": "66468abb2cb6474446cda92500252a5959692e8108279cd231c03eb848adf144"
         },
         {
           "source_id": "FISRC-22cce00c604ac941",
@@ -255,8 +249,7 @@
           "quote": "Atomic is backed by DVx Ventures, Klass Capital, Madrona, Alumni Ventures, and Sandberg Bernthal Venture Partners.",
           "quote_hash": "66468abb2cb6474446cda92500252a5959692e8108279cd231c03eb848adf144"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {
