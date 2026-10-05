@@ -180,12 +180,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Natural Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "只确认 Odyssey 公开披露的 Natural Capital 品牌、领投事实和该机构合伙人的具名陈述；不与其他同名机构合并，也不推断法律实体或完整业绩。",
+      "summary": "Odyssey Systems 官方公告称其 2026 年 B 轮由 Natural Capital 领投；该公告还以 Natural Capital 普通合伙人 Jay Zaveri 的名义介绍其与技术团队合作的投资方式。公开材料没有披露品牌对应的法律实体、基金结构或完整组合。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资方式（由合伙人在被投方公告中陈述）",
+          "value": "Natural Capital 合伙人表示，机构与建设下一阶段技术的团队合作。",
+          "source_id": "natural_partner"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Odyssey Systems 官方公告将 Natural Capital 列为 2026 年 B 轮领投方；融资估值、参投方与轮次均按该次公告记录，不扩展为完整业绩。",
+          "source_id": "natural_odyssey"
+        },
         {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮领投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e94365d0212a78f3"
@@ -197,6 +208,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "natural_odyssey",
+          "source_url": "https://odyssey.systems/our-series-b",
+          "source_title": "Our $310 Million Fundraise to Accelerate World Simulation",
+          "source_content_hash": "0d0634656bd65a0f021e46eb5af4bf661e74ef1ec0c3d2a222dd4723442be6e7",
+          "quote": "we’re thrilled to announce our $310 million Series B at a $1.45 billion valuation led by Natural Capital, with participation from Amazon, GV, AMD Ventures, EQT, IQT, and others.",
+          "quote_hash": "a4ffb25233228463f0c3d76e86cea06e8ac93cf1507b0415eaf2ef0284cddf2e"
+        },
+        {
+          "source_id": "natural_partner",
+          "source_url": "https://odyssey.systems/our-series-b",
+          "source_title": "Our $310 Million Fundraise to Accelerate World Simulation",
+          "source_content_hash": "0d0634656bd65a0f021e46eb5af4bf661e74ef1ec0c3d2a222dd4723442be6e7",
+          "quote": "At Natural Capital, we partner with ambitious technical teams building what comes next. We developed deep conviction in Odyssey’s research direction, technical leadership, and execution, which made this our largest investment to date. We believe they have the potential to help define AI beyond language models.” —Jay Zaveri, General Partner at Natural Capital",
+          "quote_hash": "601d23e5bd0e1779682225ea57dc7f345bfac8b2e8743a6a331571ca5825f012"
+        },
         {
           "source_id": "FISRC-e94365d0212a78f3",
           "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
@@ -214,7 +241,17 @@
           "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06",
+      "current_roles": [
+        {
+          "title": "普通合伙人",
+          "organization": "Natural Capital",
+          "source_id": "natural_partner"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
