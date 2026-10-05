@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-04",
-    "currentDate": "2026-10-04",
-    "eventCount": 3921,
+    "latestDataDate": "2026-10-05",
+    "currentDate": "2026-10-05",
+    "eventCount": 3934,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -71,6 +71,7 @@
       "EV-f30a987e608c70ae",
       "EV-4c9c7ab2dded69b3",
       "EV-5bf410afc8aa8178",
+      "EV-a2c87acb12608019",
       "EV-bccd915b61c48911",
       "EV-35fa913e4709b4d6",
       "EV-3d0b9dcdf8daec4c",
@@ -333,6 +334,7 @@
       "EV-0990ee74c4bc9c1a",
       "EV-4a5240dedde301e6",
       "EV-06c2f2803729eae2",
+      "EV-4bc2b0f8a1ca9e66",
       "EV-b8eb460540c33d68",
       "EV-0d5a32aca724d30e",
       "EV-1873f3c6fa4bdedd",
@@ -926,6 +928,7 @@
       "EN-19e41212c0556603",
       "EN-6f7ac1823da81d2e",
       "EN-5e668f42eb6cf15d",
+      "EN-0705e4d613d04407",
       "EN-f9768e4769ec9d14",
       "EN-0ed9e4984f0e77cf",
       "EN-c70eca6b0f88f44d",
@@ -1864,7 +1867,7 @@
     },
     {
       "id": "EV-80aeba0846bbd197",
-      "dataDate": "2026-10-04",
+      "dataDate": "2026-10-05",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -2614,6 +2617,123 @@
       "products": [],
       "sourceUrl": "https://www.thesaasnews.com/news/menos-ai-raises-5-1m-pre-a/",
       "publisher": "www.thesaasnews.com"
+    },
+    {
+      "id": "EV-a2c87acb12608019",
+      "dataDate": "2026-10-05",
+      "date": "2026-09-29",
+      "updatedDate": "2026-09-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Reco 融资 5000 万美元以保障企业 AI 智能体安全，获 AT&T 支持",
+      "originalTitle": "Reco raises $50M to secure enterprise AI agents, with AT&T backing",
+      "subject": "Reco",
+      "action": "raises",
+      "object": "$50M to secure enterprise AI agents, with AT&T backing",
+      "metrics": [
+        "$50M",
+        "$50 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-324a65940c9148ba"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-324a65940c9148ba"
+      ],
+      "entityNames": [
+        "Reco"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dealroom.co/news/157635-reco-raises-50m-to-secure-enterprise-ai-agents-with-at-t-backing",
+      "publisher": "dealroom.co"
     },
     {
       "id": "EV-bccd915b61c48911",
@@ -57512,6 +57632,133 @@
       "publisher": "IT之家"
     },
     {
+      "id": "EV-4bc2b0f8a1ca9e66",
+      "dataDate": "2026-10-05",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Menos AI 总融资额突破 1000 万美元，Copper Sky Capital 加倍投资",
+      "originalTitle": "Menos AI Surpasses $10 Million in Total Funding as Copper Sky Capital Doubles Down",
+      "subject": "Menos",
+      "action": "product_release",
+      "object": "Menos AI Surpasses $10 Million in Total Funding as Copper Sky Capital Doubles Down",
+      "metrics": [
+        "$10 Million"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0705e4d613d04407"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0705e4d613d04407"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0705e4d613d04407"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0705e4d613d04407"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-0705e4d613d04407",
+        "EN-bbdefa2950f49882",
+        "EN-cbc62794911ff31b",
+        "EN-18597aecc0b55a84",
+        "EN-fe415c076ee1d15a",
+        "EN-31a088056155d51b"
+      ],
+      "entityNames": [
+        "Menos",
+        "Google",
+        "Amazon",
+        "AI Surpasses",
+        "Total Funding",
+        "Copper Sky Capital Doubles"
+      ],
+      "productName": "AI Surpasses",
+      "products": [
+        {
+          "name": "AI Surpasses",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Amazon"
+          ]
+        },
+        {
+          "name": "Total Funding",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Amazon"
+          ]
+        },
+        {
+          "name": "Copper Sky Capital Doubles",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Amazon"
+          ]
+        }
+      ],
+      "sourceUrl": "https://pressreleasehub.pa.media/article/menos-ai-surpasses-10-million-in-total-funding-as-copper-sky-capital-doubles-down-84523.html",
+      "publisher": "pressreleasehub.pa.media"
+    },
+    {
       "id": "EV-b8eb460540c33d68",
       "dataDate": "2026-09-26",
       "date": "2026-09-24",
@@ -105639,7 +105886,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -105742,6 +105989,7 @@
         "EV-247f10fef6269e4a",
         "EV-4a5240dedde301e6",
         "EV-5644bf8426cb730d",
+        "EV-4bc2b0f8a1ca9e66",
         "EV-1b912ec16c50fc0f",
         "EV-09898d5522f0db28",
         "EV-29c45021243dba2a",
@@ -106024,7 +106272,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-8bacc14fb816a980",
@@ -106082,16 +106330,18 @@
       ],
       "eventIds": [
         "EV-4c9c7ab2dded69b3",
-        "EV-82c07208217f2af7"
+        "EV-82c07208217f2af7",
+        "EV-a2c87acb12608019"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-use_case-security_operations",
         "TX-product_form-security_software"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-29",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-4b49fcc30b9a847a",
@@ -106161,7 +106411,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-190832408e35096c",
@@ -106873,7 +107123,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-7ebe9a17c4d4c271",
@@ -110656,7 +110906,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-04",
+      "lastSeen": "2026-10-05",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -111293,7 +111543,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -111364,6 +111614,7 @@
       "eventIds": [
         "EV-4c9c7ab2dded69b3",
         "EV-eb2796fc4bcc5ac0",
+        "EV-141a1e90c0780daa",
         "EV-609da9983f836426",
         "EV-a2f902b9707ffd02",
         "EV-93c2515d50157281",
@@ -111444,7 +111695,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-d3565d297d476f10",
@@ -111767,7 +112018,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -112541,7 +112792,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -113193,6 +113444,7 @@
         "EV-4dfd7233c8c69b0b",
         "EV-657837763764c869",
         "EV-388a53fe918389b0",
+        "EV-770a599defdaf792",
         "EV-648208bc2a74cb56",
         "EV-c44f8fbab9e200ca",
         "EV-59b7ba3d079ad09a",
@@ -113220,7 +113472,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-24",
-      "lastSeen": "2026-10-02"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-5e668f42eb6cf15d",
@@ -113243,6 +113495,27 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-09-28",
       "lastSeen": "2026-09-28"
+    },
+    {
+      "id": "EN-0705e4d613d04407",
+      "name": "Menos",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4bc2b0f8a1ca9e66"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-28",
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-f9768e4769ec9d14",
@@ -113841,7 +114114,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -113929,7 +114202,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-ebefab0353686b57",
@@ -115052,7 +115325,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-02-17",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-92df1be3e37c9268",
@@ -115325,7 +115598,7 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-01-13",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-d50883991bfc5a69",

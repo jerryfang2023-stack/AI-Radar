@@ -2674,6 +2674,19 @@ test("Chinese related-article tails never enter accepted claims", () => {
   assert.ok(bundle.claims.every((claim) => !/xAI|Grok Build/iu.test(claim.source_quote)));
 });
 
+test("English related stories cannot supply another company's financing amount", () => {
+  const body = "Ascerta has raised $18 million in new funding to expand its AI management platform.\nThe Series A round was led by Dell Technologies Capital.\n Related Stories\n Ascerta competitor NewAI raises $8.4M";
+  const bundle = buildBundle([
+    entry("ascerta-related-stories", "Ascerta raises $18M to help enterprises track AI business value", body)
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  assert.ok(bundle.claims.length > 0);
+  assert.ok(bundle.claims.every(claim => !/8\.4|NewAI/u.test(claim.source_quote)));
+  for (const claim of bundle.claims) {
+    assert.equal(body.slice(claim.source_span.start, claim.source_span.end), claim.source_quote);
+  }
+  assert.ok(bundle.canonical_events.every(event => !event.metrics.some(metric => /8\.4/u.test(metric))));
+});
+
 test("current funding language captures nabs and separates raised capital from valuation", () => {
   const bundle = buildBundle([
     entry("microagi-funding", "Microagi nabs $55M to teach factory robots how to work", "Microagi today announced it has raised $55 million in seed funding for its AI robotics platform.", {

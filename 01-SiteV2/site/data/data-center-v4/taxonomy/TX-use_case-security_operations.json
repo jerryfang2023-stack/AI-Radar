@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-04",
-    "currentDate": "2026-10-04",
-    "eventCount": 3921,
+    "latestDataDate": "2026-10-05",
+    "currentDate": "2026-10-05",
+    "eventCount": 3934,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,6 +62,7 @@
       "EV-1c7050585c7f4791",
       "EV-2aa827a397a551d1",
       "EV-5172f90d555f2781",
+      "EV-a2c87acb12608019",
       "EV-4238c51fcdad7bd4",
       "EV-b137470f59491f6a",
       "EV-3fdc9ad98818c36b",
@@ -183,6 +184,7 @@
     "entityIds": [
       "EN-f8223ea5a9c41813",
       "EN-61848d026f2be26a",
+      "EN-324a65940c9148ba",
       "EN-4149d125ad47155a",
       "EN-619245256126c075",
       "EN-d5857f6222f45275",
@@ -260,7 +262,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-01-29",
-    "lastSeen": "2026-10-04"
+    "lastSeen": "2026-10-05"
   },
   "events": [
     {
@@ -690,6 +692,123 @@
       "products": [],
       "sourceUrl": "https://tech.eu/2026/10/01/hostile-threat-warning-startup-osavul-raises-8-5m/",
       "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-a2c87acb12608019",
+      "dataDate": "2026-10-05",
+      "date": "2026-09-29",
+      "updatedDate": "2026-09-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Reco 融资 5000 万美元以保障企业 AI 智能体安全，获 AT&T 支持",
+      "originalTitle": "Reco raises $50M to secure enterprise AI agents, with AT&T backing",
+      "subject": "Reco",
+      "action": "raises",
+      "object": "$50M to secure enterprise AI agents, with AT&T backing",
+      "metrics": [
+        "$50M",
+        "$50 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-324a65940c9148ba"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-324a65940c9148ba"
+      ],
+      "entityNames": [
+        "Reco"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dealroom.co/news/157635-reco-raises-50m-to-secure-enterprise-ai-agents-with-at-t-backing",
+      "publisher": "dealroom.co"
     },
     {
       "id": "EV-4238c51fcdad7bd4",
@@ -24568,6 +24687,31 @@
       "lastSeen": "2026-10-02"
     },
     {
+      "id": "EN-324a65940c9148ba",
+      "name": "Reco",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4c9c7ab2dded69b3",
+        "EV-82c07208217f2af7",
+        "EV-a2c87acb12608019"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-security_operations",
+        "TX-product_form-security_software"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-10-05"
+    },
+    {
       "id": "EN-4149d125ad47155a",
       "name": "深度内核",
       "entityType": "organization_candidate",
@@ -26253,7 +26397,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-449777124b1466a8",
@@ -26829,7 +26973,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -27226,7 +27370,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-22152786a70738a1",
@@ -27564,6 +27708,7 @@
         "EV-247f10fef6269e4a",
         "EV-4a5240dedde301e6",
         "EV-5644bf8426cb730d",
+        "EV-4bc2b0f8a1ca9e66",
         "EV-1b912ec16c50fc0f",
         "EV-09898d5522f0db28",
         "EV-29c45021243dba2a",
@@ -27846,7 +27991,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-cbdc46f896784f98",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-04",
-    "currentDate": "2026-10-04",
-    "eventCount": 3921,
+    "latestDataDate": "2026-10-05",
+    "currentDate": "2026-10-05",
+    "eventCount": 3934,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -92,6 +92,7 @@
       "EV-1dc482e2fe2f10bc",
       "EV-7bc2e6744a92c81f",
       "EV-5d50eb202b478bd4",
+      "EV-e51e65d60541df1b",
       "EV-09029303144c5e67",
       "EV-a67071a8550cb1be"
     ],
@@ -121,6 +122,7 @@
       "EN-adb4b0aa1de289f9",
       "EN-d7e81f6e7d39f00f",
       "EN-98502f8f7e5e64cd",
+      "EN-1f3ae135eaa964e0",
       "EN-070c562765b9ff05",
       "EN-a89a94ff38d4dc95"
     ],
@@ -144,7 +146,7 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-03-11",
-    "lastSeen": "2026-10-02"
+    "lastSeen": "2026-10-05"
   },
   "events": [
     {
@@ -7601,6 +7603,88 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-e51e65d60541df1b",
+      "dataDate": "2026-10-05",
+      "date": "2026-09-30",
+      "updatedDate": "2026-09-30",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "投资者如何通过就地供电融资，破解AI算力瓶颈",
+      "originalTitle": "",
+      "subject": "布鲁克菲尔德资管",
+      "action": "capital_investment",
+      "object": "Bloom Energy 后续 AI 数据中心电力项目融资承诺",
+      "metrics": [
+        "50 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-1f3ae135eaa964e0"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-1f3ae135eaa964e0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-1f3ae135eaa964e0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1f3ae135eaa964e0"
+      ],
+      "entityNames": [
+        "布鲁克菲尔德资管"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/stock/usstock/c/2026-09-30/doc-initqzkv6921108.shtml?finpagefr=p_108",
+      "publisher": "finance.sina.com.cn"
+    },
+    {
       "id": "EV-09029303144c5e67",
       "dataDate": "2026-09-14",
       "date": "2026-09-14",
@@ -8347,7 +8431,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-0995103010d39563",
@@ -8508,6 +8592,7 @@
         "EV-247f10fef6269e4a",
         "EV-4a5240dedde301e6",
         "EV-5644bf8426cb730d",
+        "EV-4bc2b0f8a1ca9e66",
         "EV-1b912ec16c50fc0f",
         "EV-09898d5522f0db28",
         "EV-29c45021243dba2a",
@@ -8790,7 +8875,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-cecdd8369134f75e",
@@ -9092,7 +9177,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-10-04"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-bb144c85d7f4652d",
@@ -9226,6 +9311,27 @@
       ],
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-06-25"
+    },
+    {
+      "id": "EN-1f3ae135eaa964e0",
+      "name": "布鲁克菲尔德资管",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e51e65d60541df1b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-ai_compute_system"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "EN-070c562765b9ff05",

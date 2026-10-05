@@ -1,0 +1,3174 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-10-05",
+    "generated_at": "2026-10-05T00:39:47.249Z",
+    "trigger": "accepted_financing_event_research",
+    "research_provider": "search-gateway+direct-original+deepseek",
+    "model": "deepseek-flash",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 26,
+      "auto_published": 4,
+      "blocked": 1,
+      "pending": 3,
+      "deduplicated": 18
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-4376980a05474f74",
+      "triggered_by_event_id": "EV-439c3a45abe7b514",
+      "as_of_date": "2026-10-05",
+      "company": {
+        "entity_id": "EN-70729a266daea738",
+        "name": "Ascerta",
+        "full_name": "Ascerta",
+        "website": "https://ascerta.com",
+        "summary": "Ascerta 是一家总部位于美国华盛顿州贝尔维尤的企业 AI 管理平台公司，前身为 Pay-i，由微软资深人士于 2024 年创立。公司最初专注于 AI 成本管理，后更名为 Ascerta 并扩展为衡量企业 AI 整体商业回报的平台。",
+        "headquarters": "Bellevue, Wash.",
+        "founders": [
+          {
+            "name": "David Tepper",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b95b99b7dcaf913b",
+                "quote": "Ascerta was founded in 2024 by Microsoft veterans David Tepper, Doron Holan, and Erik Winters. Tepper, the CEO, spent 19 years at Microsoft leading generative AI strategy for internal use across Azure",
+                "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+                "quote_hash": "db4060842f8ab5be0fccd1cf4c22e821cd7bc12d300584b1375fd4348af8d9bf"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Doron Holan",
+            "role": "CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b95b99b7dcaf913b",
+                "quote": "Ascerta co-founders, from left: CTO Doron Holan, CEO David Tepper, and COO Erik Winters.",
+                "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+                "quote_hash": "ed3c5ff3950e2c809ab4323ecc8c0de79f6a77d955eb8c15e7c5778f52278218"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Erik Winters",
+            "role": "COO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b95b99b7dcaf913b",
+                "quote": "Ascerta co-founders, from left: CTO Doron Holan, CEO David Tepper, and COO Erik Winters.",
+                "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+                "quote_hash": "ed3c5ff3950e2c809ab4323ecc8c0de79f6a77d955eb8c15e7c5778f52278218"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "15",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b95b99b7dcaf913b",
+              "quote": "Ascerta currently employs 15 people and plans to nearly triple its headcount to roughly 40 by the end of 2027.",
+              "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+              "quote_hash": "d261ede78e17242b306a95232bfc116f938213c5f91dbba3b36af6f4dba9cedb"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b95b99b7dcaf913b",
+            "quote": "Bellevue, Wash.-based startup Pay-i is rebranding as Ascerta and raising $18 million in new funding to expand its platform beyond AI cost tracking into measuring overall business ROI.",
+            "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+            "quote_hash": "610bc3e2cbdfce608df69e2f957bb9bc54ef3ea7255abff4f78f91916c653a77"
+          },
+          {
+            "source_id": "FISRC-d6f9792a9f249f04",
+            "quote": "Ascerta was founded in 2024 by Microsoft veterans David Tepper, Doron Holan, and Erik Winters.",
+            "source_content_hash": "703878dbeed4ebb3",
+            "quote_hash": "1970255997438cad12721a9c55c3f18c7473b8bd52aceec8a9904e4d7b44fccc"
+          }
+        ],
+        "application_entity_id": "EN-70729a266daea738",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$18 million",
+        "total_raised": "$22.9 million",
+        "announced_at": "2026-09-30",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Dell Technologies Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b95b99b7dcaf913b",
+                "quote": "The Series A round was led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and existing backers.",
+                "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+                "quote_hash": "d7045b0f964d5ac2122b23c5ff003a5f3ed7bea91d7b39f0b7df9c5c67575382"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hitachi Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b95b99b7dcaf913b",
+                "quote": "The Series A round was led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and existing backers.",
+                "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+                "quote_hash": "d7045b0f964d5ac2122b23c5ff003a5f3ed7bea91d7b39f0b7df9c5c67575382"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BGV",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b95b99b7dcaf913b",
+                "quote": "The Series A round was led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and existing backers.",
+                "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+                "quote_hash": "d7045b0f964d5ac2122b23c5ff003a5f3ed7bea91d7b39f0b7df9c5c67575382"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Wipro Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b95b99b7dcaf913b",
+                "quote": "The Series A round was led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and existing backers.",
+                "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+                "quote_hash": "d7045b0f964d5ac2122b23c5ff003a5f3ed7bea91d7b39f0b7df9c5c67575382"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b95b99b7dcaf913b",
+            "quote": "Bellevue, Wash.-based startup Pay-i is rebranding as Ascerta and raising $18 million in new funding to expand its platform beyond AI cost tracking into measuring overall business ROI.",
+            "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+            "quote_hash": "610bc3e2cbdfce608df69e2f957bb9bc54ef3ea7255abff4f78f91916c653a77"
+          },
+          {
+            "source_id": "FISRC-b95b99b7dcaf913b",
+            "quote": "The Series A round was led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and existing backers. The fresh capital brings total funding to $22.9 million for the startup, which launched in May 2025 with a $4.9 million seed round.",
+            "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+            "quote_hash": "ed7ef7346f195b2895f4ec6a77f5558ace661c9bd0809debc1d98994b6aab879"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$18 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 18000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1800 万美元"
+        },
+        "total_raised_original": "$22.9 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 22900000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2290 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-439c3a45abe7b514",
+            "round_original": "Series A",
+            "amount": "$18 million",
+            "announced_at": "2026-09-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b95b99b7dcaf913b",
+                "quote": "Bellevue, Wash.-based startup Pay-i is rebranding as Ascerta and raising $18 million in new funding to expand its platform beyond AI cost tracking into measuring overall business ROI.",
+                "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+                "quote_hash": "610bc3e2cbdfce608df69e2f957bb9bc54ef3ea7255abff4f78f91916c653a77"
+              },
+              {
+                "source_id": "FISRC-b95b99b7dcaf913b",
+                "quote": "The Series A round was led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and existing backers. The fresh capital brings total funding to $22.9 million for the startup, which launched in May 2025 with a $4.9 million seed round.",
+                "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+                "quote_hash": "ed7ef7346f195b2895f4ec6a77f5558ace661c9bd0809debc1d98994b6aab879"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Ascerta Enterprise AI Management Platform",
+          "description": "Ascerta 的企业 AI 管理平台，连接企业现有 AI 系统，追踪 AI 成本、采用情况和业务成果，为 CIO 和 CFO 提供统一视图。",
+          "target_customers": "大型企业，包括 CIO、CFO 和其他 AI 领导者",
+          "features": [
+            "追踪 AI 成本、采用情况和业务成果",
+            "连接 Microsoft Copilot、Amazon Bedrock AgentCore、Salesforce Agentforce、GitHub Copilot、Claude Code 等企业 AI 工具",
+            "按人员、团队和工具细分数据",
+            "测量子 token 成本、隐藏费用和企业折扣"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b95b99b7dcaf913b",
+              "quote": "Ascerta’s platform connects to existing systems and major enterprise AI tools — including Microsoft Copilot, Amazon Bedrock AgentCore, Salesforce Agentforce, and coding assistants like GitHub Copilot and Claude Code — to track adoption by person, team, and tool.",
+              "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+              "quote_hash": "89dd1b786cd78fa32f507e727b2eb9138bd3d9be16481a5e7879e7f5633a6a7c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Atlas",
+          "description": "衡量跨工作流和投资组合的 AI 价值和 ROI。",
+          "target_customers": "企业 AI 领导者",
+          "features": [
+            "衡量 AI 价值和 ROI",
+            "跨工作流和投资组合"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d6f9792a9f249f04",
+              "quote": "Atlas measures AI value and ROI across workflows and portfolios",
+              "source_content_hash": "703878dbeed4ebb3",
+              "quote_hash": "fbd4f7c0c2694e737375d919d77d10de48d336e431328c7208637275566c4913"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Forge",
+          "description": "追踪工程团队如何使用编码代理。",
+          "target_customers": "工程团队",
+          "features": [
+            "追踪编码代理使用情况"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d6f9792a9f249f04",
+              "quote": "Forge tracks how engineering teams use coding agents",
+              "source_content_hash": "703878dbeed4ebb3",
+              "quote_hash": "6419f6d1c85ce12a217acf9b3505210c7cdade805e70a1d700abe1f0ad532adf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Convoy",
+          "description": "帮助运行自有 AI 容量的组织在不中断生产的情况下分配基础设施。",
+          "target_customers": "运行自有 AI 容量的组织",
+          "features": [
+            "分配基础设施",
+            "不中断生产"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d6f9792a9f249f04",
+              "quote": "Convoy helps organisations running their own AI capacity allocate infrastructure without disrupting production.",
+              "source_content_hash": "703878dbeed4ebb3",
+              "quote_hash": "ffec63f8a8f374841ca57f2e0485d2cd434d52169f1d34c14c72621c743a6b2d"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Atos",
+          "industry": "",
+          "use_case": "将代理式 AI 项目从试点阶段推进到生产环境，需要可衡量的业务价值。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b95b99b7dcaf913b",
+              "quote": "The startup currently counts Atos, Wipro, and several global financial institutions among its customers.",
+              "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+              "quote_hash": "f3928d7b96d11d7a210bc77b18441f91dbeebae289d1ecc5810668024309dd54"
+            },
+            {
+              "source_id": "FISRC-b4a9a1e1cdaa837d",
+              "quote": "Atos is using the software as it seeks to move agentic AI projects from pilot stages into production across its operations.",
+              "source_content_hash": "7e96acced67683c3",
+              "quote_hash": "4bbf43b44b0ed9f85fea57567338e40945a30309698708b8a04ceea38733395f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Wipro",
+          "industry": "",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b95b99b7dcaf913b",
+              "quote": "The startup currently counts Atos, Wipro, and several global financial institutions among its customers.",
+              "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+              "quote_hash": "f3928d7b96d11d7a210bc77b18441f91dbeebae289d1ecc5810668024309dd54"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "global insurance carriers",
+          "industry": "insurance",
+          "use_case": "使用平台调整 AI 容量承诺，通过整合多个代理到共享容量预留，在最初几个月节省约 300 万美元。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b95b99b7dcaf913b",
+              "quote": "In another instance, a global insurance carrier used the platform to right-size its AI capacity commitments with a hyperscale cloud provider. By consolidating multiple agents onto shared capacity reservations rather than reserving them independently, the insurer saved approximately $3 million within its first few months.",
+              "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+              "quote_hash": "6923b0abf4faff61f71f667a0086a5b29ebb05d377a7151ecc6cbbe05c9df754"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "总融资额",
+          "value": "$22.9 million",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b95b99b7dcaf913b",
+              "quote": "The fresh capital brings total funding to $22.9 million for the startup, which launched in May 2025 with a $4.9 million seed round.",
+              "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+              "quote_hash": "b70c268ffdf7584a53fa7ada9d9cc1d3baf688d6d7c7c72ae712671761a7b221"
+            }
+          ]
+        },
+        {
+          "label": "本轮融资额",
+          "value": "$18 million",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b95b99b7dcaf913b",
+              "quote": "Bellevue, Wash.-based startup Pay-i is rebranding as Ascerta and raising $18 million in new funding",
+              "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+              "quote_hash": "0f6b0372ceff56fa0beb1b4d8367701d830913767564131a093fdb018e228c40"
+            }
+          ]
+        },
+        {
+          "label": "种子轮融资额",
+          "value": "$4.9 million",
+          "observed_at": "2025-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b95b99b7dcaf913b",
+              "quote": "which launched in May 2025 with a $4.9 million seed round",
+              "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+              "quote_hash": "fa67ab9c004ab5cf1e8afdf10ecf7dca92c78bdf48bb91eb79f4090a45039e69"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "15",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b95b99b7dcaf913b",
+              "quote": "Ascerta currently employs 15 people and plans to nearly triple its headcount to roughly 40 by the end of 2027.",
+              "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+              "quote_hash": "d261ede78e17242b306a95232bfc116f938213c5f91dbba3b36af6f4dba9cedb"
+            }
+          ]
+        },
+        {
+          "label": "客户 AI 投资回报率提升",
+          "value": "47%",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b4a9a1e1cdaa837d",
+              "quote": "Ascerta said customers using its platform have, on average, improved return on investment on AI initiatives by 47%, reduced launch times by 24% and cut wasted AI spending by 86%. Those figures were not independently verified.",
+              "source_content_hash": "7e96acced67683c3",
+              "quote_hash": "531f329c163a37cd8c408b3e082b19394e7fac76f33145e5578a77729e0d1cfa"
+            }
+          ]
+        },
+        {
+          "label": "客户 AI 启动时间缩短",
+          "value": "24%",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b4a9a1e1cdaa837d",
+              "quote": "Ascerta said customers using its platform have, on average, improved return on investment on AI initiatives by 47%, reduced launch times by 24% and cut wasted AI spending by 86%. Those figures were not independently verified.",
+              "source_content_hash": "7e96acced67683c3",
+              "quote_hash": "531f329c163a37cd8c408b3e082b19394e7fac76f33145e5578a77729e0d1cfa"
+            }
+          ]
+        },
+        {
+          "label": "客户 AI 浪费支出削减",
+          "value": "86%",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b4a9a1e1cdaa837d",
+              "quote": "Ascerta said customers using its platform have, on average, improved return on investment on AI initiatives by 47%, reduced launch times by 24% and cut wasted AI spending by 86%. Those figures were not independently verified.",
+              "source_content_hash": "7e96acced67683c3",
+              "quote_hash": "531f329c163a37cd8c408b3e082b19394e7fac76f33145e5578a77729e0d1cfa"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "David Tepper",
+          "quote": "Pay-i reflected our starting point in AI cost management, but customers increasingly use the platform to understand adoption, measure business outcomes and decide which AI initiatives to scale. Ascerta reflects that broader role in helping enterprises manage their entire AI investment, including its people.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b95b99b7dcaf913b",
+              "quote": "“Pay-i reflected our starting point in AI cost management, but customers increasingly use the platform to understand adoption, measure business outcomes and decide which AI initiatives to scale,” Tepper told GeekWire via email. “Ascerta reflects that broader role in helping enterprises manage their entire AI investment, including its people.”",
+              "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+              "quote_hash": "69071829fe117b1b4937b1f3cd2264956f15454cd493489d0be30dea678ba664"
+            }
+          ]
+        },
+        {
+          "speaker": "Florin Rotar",
+          "quote": "At Atos, our Sovereign Agentic Studios operating model is built on moving agentic AI from pilot to production at global scale. That requires measurable business value, not just technical capability. Ascerta has been instrumental in delivering on that promise, giving us the visibility and control we need to scale AI initiatives with confidence.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b4a9a1e1cdaa837d",
+              "quote": "\"At Atos, our Sovereign Agentic Studios operating model is built on moving agentic AI from pilot to production at global scale,\" said Florin Rotar, Group Chief Technology Officer and Chief AI Officer at Atos. \"That requires measurable business value, not just technical capability. Ascerta has been instrumental in delivering on that promise, giving us the visibility and control we need to scale AI initiatives with confidence.\"",
+              "source_content_hash": "7e96acced67683c3",
+              "quote_hash": "ce9657916b0b5c99784a3caae027bf37cfeb8c3301ccff80c2539059074cb258"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是企业能否将 AI 支出与可衡量的业务成果挂钩，从而决定哪些 AI 项目值得扩大、哪些应停止。当前融资所依赖的已验证信号包括：Ascerta 已从 AI 成本管理扩展到企业 AI 管理，拥有 Atos、Wipro 和全球保险机构等客户，并连接了 Microsoft Copilot、Amazon Bedrock AgentCore、Salesforce Agentforce 等主流企业 AI 工具。判断的证据边界在于：客户 ROI 提升 47%、启动时间缩短 24%、浪费支出削减 86% 等数据由公司自述且未经独立验证；全球保险机构节省约 300 万美元的案例为单一客户实例，不能推广为所有客户的保底收益。",
+        "validated_signals": [
+          "Ascerta 已从 Pay-i 更名为 Ascerta，并将平台从 AI 成本追踪扩展到衡量整体业务 ROI。",
+          "Ascerta 的客户包括 Atos、Wipro 和多家全球金融机构。",
+          "Ascerta 的平台已连接 Microsoft Copilot、Amazon Bedrock AgentCore、Salesforce Agentforce、GitHub Copilot 和 Claude Code 等企业 AI 工具。",
+          "Ascerta 目前有 15 名员工，计划到 2027 年底增至约 40 人。"
+        ],
+        "risks": [
+          "Ascerta 自述的客户 ROI 提升 47%、启动时间缩短 24%、浪费支出削减 86% 等数据未经独立验证，不能作为已验证的业务实绩。",
+          "全球保险机构节省约 300 万美元的案例为单一客户实例，不能推广为所有客户的保底收益或合同金额。",
+          "Ascerta 计划到 2027 年底将员工人数增至约 40 人，该扩编计划尚未发生，存在执行风险。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "data_analysis",
+          "productivity_enterprise_workflows",
+          "finance_accounting"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "企业 AI 管理软件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是企业能否将 AI 支出与可衡量的业务成果挂钩，从而决定哪些 AI 项目值得扩大、哪些应停止。当前融资所依赖的已验证信号包括：Ascerta 已从 AI 成本管理扩展到企业 AI 管理，拥有 Atos、Wipro 和全球保险机构等客户，并连接了 Microsoft Copilot、Amazon Bedrock AgentCore、Salesforce Agentforce 等主流企业 AI 工具。判断的证据边界在于：客户 ROI 提升 47%、启动时间缩短 24%、浪费支出削减 86% 等数据由公司自述且未经独立验证；全球保险机构节省约 300 万美元的案例为单一客户实例，不能推广为所有客户的保底收益。",
+          "evidence_signals": [
+            "Ascerta 已从 Pay-i 更名为 Ascerta，并将平台从 AI 成本追踪扩展到衡量整体业务 ROI。",
+            "Ascerta 的客户包括 Atos、Wipro 和多家全球金融机构。",
+            "Ascerta 的平台已连接 Microsoft Copilot、Amazon Bedrock AgentCore、Salesforce Agentforce、GitHub Copilot 和 Claude Code 等企业 AI 工具。",
+            "Ascerta 目前有 15 名员工，计划到 2027 年底增至约 40 人。"
+          ],
+          "risks": [
+            "Ascerta 自述的客户 ROI 提升 47%、启动时间缩短 24%、浪费支出削减 86% 等数据未经独立验证，不能作为已验证的业务实绩。",
+            "全球保险机构节省约 300 万美元的案例为单一客户实例，不能推广为所有客户的保底收益或合同金额。",
+            "Ascerta 计划到 2027 年底将员工人数增至约 40 人，该扩编计划尚未发生，存在执行风险。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Ascerta Enterprise AI Management Platform",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Atlas",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Forge",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Convoy",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "David Tepper",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Doron Holan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Erik Winters",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Dell Technologies Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hitachi Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BGV",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Wipro Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Atos",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Wipro",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "global insurance carriers",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-439c3a45abe7b514",
+          "date": "2026-09-30",
+          "title": "Pay-i 更名为 Ascerta 并融资 1800 万美元，帮助企业追踪 AI 商业价值",
+          "amount": "$18 million",
+          "source_refs": [
+            "SA-e8f3e80968167931"
+          ]
+        },
+        {
+          "event_id": "EV-2ab7252166b42c03",
+          "date": "2026-09-30",
+          "title": "Ascerta 融资 1800 万美元，帮助企业最大化 AI 投资回报率",
+          "amount": "$18 million",
+          "source_refs": [
+            "SA-be3c38bcf0f97992"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-b95b99b7dcaf913b",
+          "source_url": "https://www.geekwire.com/2026/pay-i-rebrands-as-ascerta-and-raises-18m-to-help-enterprises-track-ai-business-value/",
+          "title": "Pay-i 更名为 Ascerta 并融资 1800 万美元，帮助企业追踪 AI 商业价值",
+          "publisher": "www.geekwire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-05T00:29:04.453Z",
+          "content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+          "source_artifact_id": "SA-e8f3e80968167931",
+          "raw_id": "RAW-720cb1e74bb56b87"
+        },
+        {
+          "source_id": "FISRC-d6f9792a9f249f04",
+          "source_url": "https://dealroom.co/news/157954-ascerta-lands-18m-series-a-to-tie-enterprise-ai-spend-to-roi/",
+          "title": "Ascerta lands $18M Series A to tie enterprise AI spend to ROI",
+          "publisher": "dealroom.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-05T00:38:59.176Z",
+          "content_hash": "703878dbeed4ebb3",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b4a9a1e1cdaa837d",
+          "source_url": "https://cfotech.co.uk/story/ascerta-raises-usd-18-million-in-series-a-funding",
+          "title": "Ascerta raises USD $18 million in Series A funding",
+          "publisher": "cfotech.co.uk",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-05T00:39:00.707Z",
+          "content_hash": "7e96acced67683c3",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-05T00:39:41.112Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-05T00:39:41.112Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "Ascerta Enterprise AI Management Platform",
+            "Atlas",
+            "Convoy",
+            "Forge"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "David Tepper",
+            "Doron Holan",
+            "Erik Winters"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-439c3a45abe7b514"
+      ],
+      "aggregation": {
+        "key": "EN-70729a266daea738|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-72459322e962c600",
+      "triggered_by_event_id": "EV-7fb563f47cc29d8d",
+      "as_of_date": "2026-10-05",
+      "company": {
+        "entity_id": "EN-02d6646fb8486fbd",
+        "name": "Kanu AI",
+        "full_name": "Kanu AI",
+        "website": "https://getkanu.com",
+        "summary": "西雅图企业AI平台，将员工日常工作流程转化为定制企业级软件，部署在客户自有云环境中。",
+        "headquarters": "Seattle, Washington",
+        "founders": [
+          {
+            "name": "Karan Grover",
+            "role": "创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2600408f2e0d32d7",
+                "quote": "Karan Grover is CEO of the new Seattle startup Kanu AI.",
+                "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+                "quote_hash": "4c05a424806c0625cb7ebf33a34f17bc12281af8fc1c99ae263700e745c07721"
+              },
+              {
+                "source_id": "FISRC-fc5403edb4399492",
+                "quote": "Founded in 2025 by CEO Karan Grover",
+                "source_content_hash": "3ce070b4a9a38912",
+                "quote_hash": "a406f2bedc84cb1fbff9ba8a3b830a2c75f915230fd96f281d2581e3c859971c"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "10",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2600408f2e0d32d7",
+              "quote": "The company employs 10 people, with plans to reach about 15 employees by the end of the year.",
+              "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+              "quote_hash": "bfdb30b9c64f78bd33c98cff0a97b9e12f74695caabc60e1d6265215f52e5cdf"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2600408f2e0d32d7",
+            "quote": "Seattle-based Kanu AI announced $11.7 million in new funding on Wednesday to expand a platform that automatically turns everyday employee tasks into custom, enterprise-grade software.",
+            "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+            "quote_hash": "60b19c26160e15a29223b324d0b48e686e66d327ee05a771b4eead76bdbe24a2"
+          },
+          {
+            "source_id": "FISRC-fc5403edb4399492",
+            "quote": "Kanu AI, a Seattle-based company that automates employee workflows by turning them into custom enterprise-grade software, has raised $11.7 million in a seed funding round.",
+            "source_content_hash": "3ce070b4a9a38912",
+            "quote_hash": "bd3f78cafd56cbafa7dd39e20517180f0acff0dbf2de4948666eeb33b505b663"
+          }
+        ],
+        "application_entity_id": "EN-02d6646fb8486fbd",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$11.7 million",
+        "total_raised": "",
+        "announced_at": "2026-09-30",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Trilogy Equity Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2600408f2e0d32d7",
+                "quote": "Trilogy Equity Partners led the round, with participation from Andreessen Horowitz’s a16z speedrun, BMW i Ventures, and Accel.",
+                "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+                "quote_hash": "b8e2a52ffb09045701fa83a2302679430bd9f2fc61890479b80241c7a7572dfe"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Andreessen Horowitz’s a16z speedrun",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2600408f2e0d32d7",
+                "quote": "Trilogy Equity Partners led the round, with participation from Andreessen Horowitz’s a16z speedrun, BMW i Ventures, and Accel.",
+                "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+                "quote_hash": "b8e2a52ffb09045701fa83a2302679430bd9f2fc61890479b80241c7a7572dfe"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BMW i Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2600408f2e0d32d7",
+                "quote": "Trilogy Equity Partners led the round, with participation from Andreessen Horowitz’s a16z speedrun, BMW i Ventures, and Accel.",
+                "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+                "quote_hash": "b8e2a52ffb09045701fa83a2302679430bd9f2fc61890479b80241c7a7572dfe"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Accel",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2600408f2e0d32d7",
+                "quote": "Trilogy Equity Partners led the round, with participation from Andreessen Horowitz’s a16z speedrun, BMW i Ventures, and Accel.",
+                "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+                "quote_hash": "b8e2a52ffb09045701fa83a2302679430bd9f2fc61890479b80241c7a7572dfe"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2600408f2e0d32d7",
+            "quote": "Seattle-based Kanu AI announced $11.7 million in new funding on Wednesday to expand a platform that automatically turns everyday employee tasks into custom, enterprise-grade software.",
+            "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+            "quote_hash": "60b19c26160e15a29223b324d0b48e686e66d327ee05a771b4eead76bdbe24a2"
+          },
+          {
+            "source_id": "FISRC-fc5403edb4399492",
+            "quote": "The round was led by Trilogy Equity Partners, with participation from a16z speedrun, BMW i Ventures, and Accel.",
+            "source_content_hash": "3ce070b4a9a38912",
+            "quote_hash": "0c1b1c3b188c995ab11af0ea295793abfb975a73eb8f9bca130ff0f53a52becd"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$11.7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1170 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-7fb563f47cc29d8d",
+            "round_original": "Seed",
+            "amount": "$11.7 million",
+            "announced_at": "2026-09-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2600408f2e0d32d7",
+                "quote": "Seattle-based Kanu AI announced $11.7 million in new funding on Wednesday to expand a platform that automatically turns everyday employee tasks into custom, enterprise-grade software.",
+                "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+                "quote_hash": "60b19c26160e15a29223b324d0b48e686e66d327ee05a771b4eead76bdbe24a2"
+              },
+              {
+                "source_id": "FISRC-fc5403edb4399492",
+                "quote": "The round was led by Trilogy Equity Partners, with participation from a16z speedrun, BMW i Ventures, and Accel.",
+                "source_content_hash": "3ce070b4a9a38912",
+                "quote_hash": "0c1b1c3b188c995ab11af0ea295793abfb975a73eb8f9bca130ff0f53a52becd"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Kanu AI 平台",
+          "description": "自动将员工日常工作流程转化为定制企业级软件，在客户自有云环境中构建、部署和更新工作流。",
+          "target_customers": "企业客户，覆盖商业地产、保险、金融服务和科技行业。",
+          "features": [
+            "员工演示工作方式，平台自动构建工作流",
+            "在客户自有云基础设施内运行，数据保留在现有防火墙后",
+            "包含人工审批步骤，为每个自动化输出提供完整审计追踪",
+            "通过 AWS 和 Google Cloud 市场提供"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2600408f2e0d32d7",
+              "quote": "Rather than forcing companies to buy rigid off-the-shelf software or spend months on custom engineering, Kanu lets staff demonstrate how they complete work. The platform then builds, deploys, and updates those workflows directly within the customer’s cloud.",
+              "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+              "quote_hash": "c3bebcec82256adaae54a137a8176666ff9e617d55c4d7cbddd702d7b25df5ac"
+            },
+            {
+              "source_id": "FISRC-2600408f2e0d32d7",
+              "quote": "To meet enterprise security standards, Kanu runs entirely inside the client’s own cloud infrastructure, ensuring data stays behind existing firewalls. The platform also includes human approval steps and provides full audit trails for every automated output.",
+              "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+              "quote_hash": "b31eaa3d345854070d3c75da3a011cdcc053acb4541cb7de31bc5fc3cbc01a7d"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "一家全国性客户",
+          "industry": "商业地产",
+          "use_case": "将跨 PDF、邮件、CRM 和 GIS 系统的复杂数据分析流程从八周压缩到十分钟以内。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2600408f2e0d32d7",
+              "quote": "In one deployment for a national customer, Kanu said it compressed a complex data-analysis process spanning PDFs, emails, CRMs, and GIS systems from eight weeks down to under 10 minutes.",
+              "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+              "quote_hash": "eead15119c8f2e355378d036b7249a96b16df2399ff34d7418a7f17340544aba"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "融资额",
+          "value": "$11.7M",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2600408f2e0d32d7",
+              "quote": "Seattle-based Kanu AI announced $11.7 million in new funding on Wednesday",
+              "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+              "quote_hash": "9b410e98ad9b21f03c50cfb3fbc41f079de68dd5a9289a7efce5f73560113a88"
+            }
+          ]
+        },
+        {
+          "label": "员工数",
+          "value": "10",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2600408f2e0d32d7",
+              "quote": "The company employs 10 people, with plans to reach about 15 employees by the end of the year.",
+              "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+              "quote_hash": "bfdb30b9c64f78bd33c98cff0a97b9e12f74695caabc60e1d6265215f52e5cdf"
+            }
+          ]
+        },
+        {
+          "label": "收入增长",
+          "value": "自推出以来每季度收入翻倍以上",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2600408f2e0d32d7",
+              "quote": "Kanu reports that it has more than doubled its revenue in every quarter since launch.",
+              "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+              "quote_hash": "17466431e40344b1002ca01fbc819203ba80e760fbd39c83a9c16a6210431734"
+            }
+          ]
+        },
+        {
+          "label": "流程压缩效果",
+          "value": "从八周压缩到十分钟以内",
+          "observed_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2600408f2e0d32d7",
+              "quote": "compressed a complex data-analysis process spanning PDFs, emails, CRMs, and GIS systems from eight weeks down to under 10 minutes.",
+              "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+              "quote_hash": "8c81cc6e799b7ce32ea54b17f435569365c4751372ca31712801e1365db53a00"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Karan Grover",
+          "quote": "Companies have spent decades buying software built around someone else’s idea of how they should work. Instead of renting generic intelligence from another vendor, companies can use Kanu to turn their own data, judgment, and operating expertise into an asset they own.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2600408f2e0d32d7",
+              "quote": "“Companies have spent decades buying software built around someone else’s idea of how they should work,” said Karan Grover, founder and CEO of Kanu AI. “Instead of renting generic intelligence from another vendor, companies can use Kanu to turn their own data, judgment, and operating expertise into an asset they own.”",
+              "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+              "quote_hash": "4345b8fd4f712b8f9362998ec6565afce59e09c66c673a7201ac79f710b3202d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮融资的核心变量是Kanu AI能否将“员工演示工作流→自动生成企业级软件”的模式在客户自有云中规模化复制。已验证信号包括：自推出以来每季度收入翻倍以上、平台已在商业地产、保险、金融服务和科技行业的企业中使用、一个全国性客户的数据分析流程从八周压缩到十分钟以内。证据边界在于：收入增长和流程压缩效果均为公司自行披露，未经独立审计；客户名称未披露，无法交叉验证。",
+        "validated_signals": [
+          "自推出以来每季度收入翻倍以上",
+          "平台已在商业地产、保险、金融服务和科技行业的企业中使用",
+          "一个全国性客户的数据分析流程从八周压缩到十分钟以内"
+        ],
+        "risks": [
+          "收入增长和流程压缩效果均为公司自行披露，未经独立审计",
+          "客户名称未披露，无法交叉验证部署效果",
+          "公司预计该工具每年削减超过100万美元软件成本并驱动数百万新收入，该预期尚未实现"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "construction_real_estate",
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "企业软件",
+        "investment_thesis": {
+          "statement": "本轮融资的核心变量是Kanu AI能否将“员工演示工作流→自动生成企业级软件”的模式在客户自有云中规模化复制。已验证信号包括：自推出以来每季度收入翻倍以上、平台已在商业地产、保险、金融服务和科技行业的企业中使用、一个全国性客户的数据分析流程从八周压缩到十分钟以内。证据边界在于：收入增长和流程压缩效果均为公司自行披露，未经独立审计；客户名称未披露，无法交叉验证。",
+          "evidence_signals": [
+            "自推出以来每季度收入翻倍以上",
+            "平台已在商业地产、保险、金融服务和科技行业的企业中使用",
+            "一个全国性客户的数据分析流程从八周压缩到十分钟以内"
+          ],
+          "risks": [
+            "收入增长和流程压缩效果均为公司自行披露，未经独立审计",
+            "客户名称未披露，无法交叉验证部署效果",
+            "公司预计该工具每年削减超过100万美元软件成本并驱动数百万新收入，该预期尚未实现"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Kanu AI 平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Karan Grover",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Trilogy Equity Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz’s a16z speedrun",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BMW i Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家全国性客户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-7fb563f47cc29d8d",
+          "date": "2026-09-30",
+          "title": "Kanu AI 结束隐身模式，获 1170 万美元，将员工工作流转化为定制软件",
+          "amount": "$11.7 million",
+          "source_refs": [
+            "SA-9498b05bc1b02e37"
+          ]
+        },
+        {
+          "event_id": "EV-1715439efc5423dd",
+          "date": "2026-09-30",
+          "title": "Kanu 走出隐身模式，为企业构建 AGI",
+          "amount": "$11.7 million",
+          "source_refs": [
+            "SA-f3e3c8f58bc5d615"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2600408f2e0d32d7",
+          "source_url": "https://www.geekwire.com/2026/kanu-ai-emerges-from-stealth-with-11-7m-to-turn-employee-workflows-into-custom-software/",
+          "title": "Kanu AI 结束隐身模式，获 1170 万美元，将员工工作流转化为定制软件",
+          "publisher": "www.geekwire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-05T00:29:04.466Z",
+          "content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+          "source_artifact_id": "SA-9498b05bc1b02e37",
+          "raw_id": "RAW-85301c2a6ac7855a"
+        },
+        {
+          "source_id": "FISRC-fc5403edb4399492",
+          "source_url": "https://www.thesaasnews.com/news/kanu-ai-raises-11-7m-seed/",
+          "title": "Kanu AI Raises $11.7M Seed",
+          "publisher": "thesaasnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-05T00:31:37.706Z",
+          "content_hash": "3ce070b4a9a38912",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-05T00:32:06.476Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-05T00:32:06.476Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Kanu AI 平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Karan Grover"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7fb563f47cc29d8d"
+      ],
+      "aggregation": {
+        "key": "EN-02d6646fb8486fbd|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-d142d96dae5139f6",
+      "triggered_by_event_id": "EV-7bb7b9e293a852ca",
+      "as_of_date": "2026-10-05",
+      "company": {
+        "entity_id": "EN-e08dc6ffe1473692",
+        "name": "DOD Solution",
+        "full_name": "DOD Solution",
+        "website": "",
+        "summary": "DOD Solution 是一家爱沙尼亚-乌克兰国防科技公司，为无人系统开发机载自主能力，其旗舰产品 AURA AI 已在乌克兰实战中使用。",
+        "headquarters": "爱沙尼亚",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-566685ff2dc19ee3",
+            "quote": "DOD Solution, an Estonian-Ukrainian DefenceTech company developing onboard autonomy for unmanned systems",
+            "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+            "quote_hash": "094b55502b373638edce49fc309638c79a726dfed3101ecd7fb0f8e518ee6e94"
+          },
+          {
+            "source_id": "FISRC-566685ff2dc19ee3",
+            "quote": "Founded in 2023, DOD Solution develops onboard computers and autonomy systems for unmanned platforms.",
+            "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+            "quote_hash": "331efb3d7d5d864d00c2813bab26601db3ab9dc7e607e9b1fa14d9b0f9b6b9c3"
+          }
+        ],
+        "application_entity_id": "EN-e08dc6ffe1473692",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "€1.8 million",
+        "total_raised": "",
+        "announced_at": "2026-09-28",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Angel One Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-566685ff2dc19ee3",
+                "quote": "The round includes participation from Angel One Fund, Better Angle, Defence Builder Fund, Network VC, Newfund, UAID Fund, WildField Ventures and 4C-Next Holding AG.",
+                "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+                "quote_hash": "96c10cc55e72d63d3f3487ecc881b59836bb7e715a72a6720857edb59c7d7970"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Better Angle",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-566685ff2dc19ee3",
+                "quote": "The round includes participation from Angel One Fund, Better Angle, Defence Builder Fund, Network VC, Newfund, UAID Fund, WildField Ventures and 4C-Next Holding AG.",
+                "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+                "quote_hash": "96c10cc55e72d63d3f3487ecc881b59836bb7e715a72a6720857edb59c7d7970"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Defence Builder Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-566685ff2dc19ee3",
+                "quote": "The round includes participation from Angel One Fund, Better Angle, Defence Builder Fund, Network VC, Newfund, UAID Fund, WildField Ventures and 4C-Next Holding AG.",
+                "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+                "quote_hash": "96c10cc55e72d63d3f3487ecc881b59836bb7e715a72a6720857edb59c7d7970"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Network VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-566685ff2dc19ee3",
+                "quote": "The round includes participation from Angel One Fund, Better Angle, Defence Builder Fund, Network VC, Newfund, UAID Fund, WildField Ventures and 4C-Next Holding AG.",
+                "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+                "quote_hash": "96c10cc55e72d63d3f3487ecc881b59836bb7e715a72a6720857edb59c7d7970"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Newfund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-566685ff2dc19ee3",
+                "quote": "The round includes participation from Angel One Fund, Better Angle, Defence Builder Fund, Network VC, Newfund, UAID Fund, WildField Ventures and 4C-Next Holding AG.",
+                "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+                "quote_hash": "96c10cc55e72d63d3f3487ecc881b59836bb7e715a72a6720857edb59c7d7970"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "UAID Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-566685ff2dc19ee3",
+                "quote": "The round includes participation from Angel One Fund, Better Angle, Defence Builder Fund, Network VC, Newfund, UAID Fund, WildField Ventures and 4C-Next Holding AG.",
+                "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+                "quote_hash": "96c10cc55e72d63d3f3487ecc881b59836bb7e715a72a6720857edb59c7d7970"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "WildField Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-566685ff2dc19ee3",
+                "quote": "The round includes participation from Angel One Fund, Better Angle, Defence Builder Fund, Network VC, Newfund, UAID Fund, WildField Ventures and 4C-Next Holding AG.",
+                "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+                "quote_hash": "96c10cc55e72d63d3f3487ecc881b59836bb7e715a72a6720857edb59c7d7970"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "4C-Next Holding AG",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-566685ff2dc19ee3",
+                "quote": "The round includes participation from Angel One Fund, Better Angle, Defence Builder Fund, Network VC, Newfund, UAID Fund, WildField Ventures and 4C-Next Holding AG.",
+                "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+                "quote_hash": "96c10cc55e72d63d3f3487ecc881b59836bb7e715a72a6720857edb59c7d7970"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Draganfly",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-566685ff2dc19ee3",
+                "quote": "Canadian drone technology company Draganfly joined the round as a strategic investor.",
+                "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+                "quote_hash": "616d4cd18ef71f7d21e1128bc20471e856cea26197213f18150c4e50b3b82a22"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-566685ff2dc19ee3",
+            "quote": "HomeEstonia-StartupsCombat-tested in Ukraine, DOD Solution raises €1.8 million to scale AI autonomy...",
+            "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+            "quote_hash": "911717f647f0034805c6edfebb3e572146afd4b9f845b2ce88b758df801582f3"
+          },
+          {
+            "source_id": "FISRC-566685ff2dc19ee3",
+            "quote": "DOD Solution, an Estonian-Ukrainian DefenceTech company developing onboard autonomy for unmanned systems, has closed a €1.8 million ($2.1 million) pre-Seed funding round to accelerate the development and scaling of its AURA AI autonomy platform.",
+            "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+            "quote_hash": "43d982a2b1b807cf62c4acf0d29a593197b783c27471a20d2e1438d29784fa3f"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€1.8 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "180 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-7bb7b9e293a852ca",
+            "round_original": "pre-Seed",
+            "amount": "€1.8 million",
+            "announced_at": "2026-09-28",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-566685ff2dc19ee3",
+                "quote": "HomeEstonia-StartupsCombat-tested in Ukraine, DOD Solution raises €1.8 million to scale AI autonomy...",
+                "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+                "quote_hash": "911717f647f0034805c6edfebb3e572146afd4b9f845b2ce88b758df801582f3"
+              },
+              {
+                "source_id": "FISRC-566685ff2dc19ee3",
+                "quote": "DOD Solution, an Estonian-Ukrainian DefenceTech company developing onboard autonomy for unmanned systems, has closed a €1.8 million ($2.1 million) pre-Seed funding round to accelerate the development and scaling of its AURA AI autonomy platform.",
+                "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+                "quote_hash": "43d982a2b1b807cf62c4acf0d29a593197b783c27471a20d2e1438d29784fa3f"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "AURA AI",
+          "description": "AURA AI 是 DOD Solution 的旗舰产品，一个机载自主平台，结合 AURA SBC 机载计算机与 AURA OS 自主软件栈，可在 GPS 或通信降级或不可用时实现自主导航、感知、目标识别与跟踪以及末制导。",
+          "target_customers": "无人平台制造商",
+          "features": [
+            "自主导航",
+            "感知",
+            "目标识别与跟踪",
+            "末制导",
+            "在 GPS 或通信降级或不可用时工作",
+            "可集成到 FPV 无人机、拦截无人机和固定翼无人机"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-566685ff2dc19ee3",
+              "quote": "AURA AI, its flagship product, is an onboard autonomy platform combining the AURA SBC onboard computer with AURA OS, the company’s autonomy software stack.",
+              "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+              "quote_hash": "b8500087e745a1f007c3019ce74e931e2bf6ffd712bf4797dbf8dfa24b1b62d7"
+            },
+            {
+              "source_id": "FISRC-566685ff2dc19ee3",
+              "quote": "The platform enables autonomous navigation, perception, target recognition and tracking, and terminal guidance when GPS or communications are degraded or unavailable.",
+              "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+              "quote_hash": "cd88f031e88ba869aa7a52591f5b06e9065d6adbdb356eac450b133c807efc80"
+            },
+            {
+              "source_id": "FISRC-566685ff2dc19ee3",
+              "quote": "It is designed for integration into different types of UAVs, including FPV drones, interceptor drones and fixed-wing UAVs.",
+              "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+              "quote_hash": "9d85619fc278f9d2ddc6ae13bf44910ca7426a732cb3b6dd6cfa693ae0220286"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AURA SBC",
+          "description": "AURA SBC 是 AURA AI 平台中的机载计算机，下一代产品正在为规模化生产而开发，并目标满足 NDAA 合规要求。",
+          "target_customers": "无人平台制造商",
+          "features": [
+            "机载计算机",
+            "下一代产品为规模化生产而开发",
+            "目标满足 NDAA 合规要求"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-566685ff2dc19ee3",
+              "quote": "AURA AI, its flagship product, is an onboard autonomy platform combining the AURA SBC onboard computer with AURA OS, the company’s autonomy software stack.",
+              "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+              "quote_hash": "b8500087e745a1f007c3019ce74e931e2bf6ffd712bf4797dbf8dfa24b1b62d7"
+            },
+            {
+              "source_id": "FISRC-566685ff2dc19ee3",
+              "quote": "The next generation of AURA SBC is being developed for production at scale, supported by a robust component supply chain and with the goal of meeting NDAA-compliance requirements.",
+              "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+              "quote_hash": "70991eff11e3ae646a04ceba7f90d40db8986d91ccfb5371ef8c735e57da1842"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AURA OS",
+          "description": "AURA OS 是 DOD Solution 的自主软件栈，与 AURA SBC 机载计算机共同构成 AURA AI 平台。",
+          "target_customers": "无人平台制造商",
+          "features": [
+            "自主软件栈"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-566685ff2dc19ee3",
+              "quote": "AURA AI, its flagship product, is an onboard autonomy platform combining the AURA SBC onboard computer with AURA OS, the company’s autonomy software stack.",
+              "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+              "quote_hash": "b8500087e745a1f007c3019ce74e931e2bf6ffd712bf4797dbf8dfa24b1b62d7"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "€1.8 million",
+          "observed_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-566685ff2dc19ee3",
+              "quote": "has closed a €1.8 million ($2.1 million) pre-Seed funding round",
+              "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+              "quote_hash": "fecd7412cb25fbea9728a02f99f3a03b39d5cf8157668cd24e005a890ef7dcd1"
+            }
+          ]
+        },
+        {
+          "label": "本轮融资金额（美元）",
+          "value": "$2.1 million",
+          "observed_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-566685ff2dc19ee3",
+              "quote": "has closed a €1.8 million ($2.1 million) pre-Seed funding round",
+              "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+              "quote_hash": "fecd7412cb25fbea9728a02f99f3a03b39d5cf8157668cd24e005a890ef7dcd1"
+            }
+          ]
+        },
+        {
+          "label": "公司成立年份",
+          "value": "2023",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-566685ff2dc19ee3",
+              "quote": "Founded in 2023, DOD Solution develops onboard computers and autonomy systems for unmanned platforms.",
+              "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+              "quote_hash": "331efb3d7d5d864d00c2813bab26601db3ab9dc7e607e9b1fa14d9b0f9b6b9c3"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Roman Hapachylo",
+          "quote": "Autonomy needs to work across different unmanned systems and operational environments, rather than remain a capability tied to a single platform. Our focus now is to make AURA AI easier to integrate, faster to scale and capable of supporting increasingly demanding onboard applications. This round gives us the resources and the right partners to accelerate that transition",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-566685ff2dc19ee3",
+              "quote": "“Autonomy needs to work across different unmanned systems and operational environments, rather than remain a capability tied to a single platform. Our focus now is to make AURA AI easier to integrate, faster to scale and capable of supporting increasingly demanding onboard applications. This round gives us the resources and the right partners to accelerate that transition,” says Roman Hapachylo, CEO of DOD Solution.",
+              "source_content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+              "quote_hash": "f756b55bb4dacfa6c2df153b2d8700c703ee6d6ce3eb71942b3009b433c44f80"
+            }
+          ]
+        },
+        {
+          "speaker": "tendergrants.com",
+          "quote": "Combat-tested in Ukraine, DOD Solution raises €1.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9688205d25bdfa0b",
+              "quote": "Combat-tested in Ukraine, DOD Solution raises €1.",
+              "source_content_hash": "decf4df6a1fb3437",
+              "quote_hash": "b4666cc60b72ed6043dc94518e4301dded042ecbce8f11621a867e1340a646d6"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是 DOD Solution 的 AURA AI 自主平台能否从乌克兰战场的单一验证环境，扩展为可跨多种无人平台集成、并进入欧洲和北美市场的规模化产品。已验证信号包括：AURA AI 已在乌克兰实战中使用；公司已与 Lantronix、Axelera AI 和 Defsecintel Solutions 建立合作；本轮融资将用于下一代 AURA SBC 量产、推进 AURA OS 与机载 AI 能力，以及加速与乌克兰和国际市场无人平台制造商的集成。证据边界在于：来源未披露本轮估值、累计融资额、客户合同金额或收入，也未披露投资方公开投资逻辑，因此无法判断资本回报预期或商业化收入验证程度。",
+        "validated_signals": [
+          "AURA AI 已在乌克兰实战中使用",
+          "公司已与 Lantronix、Axelera AI 和 Defsecintel Solutions 建立合作",
+          "本轮融资将支持下一代 AURA SBC 进入生产、推进 AURA OS 与机载 AI 能力，并加速与无人平台制造商的集成",
+          "下一代 AURA SBC 正在为规模化生产而开发，目标满足 NDAA 合规要求"
+        ],
+        "risks": [
+          "来源未披露本轮估值或累计融资额，无法评估资本结构与估值合理性",
+          "来源未披露任何客户合同金额、收入或订单，商业化收入尚未验证",
+          "来源未披露投资方公开投资逻辑，无法确认机构对回报路径的判断",
+          "公司计划扩展至欧洲和北美市场，但来源未披露具体客户或采购承诺，市场拓展仍待验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "model_deployment",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "aerospace_defense"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "国防科技",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是 DOD Solution 的 AURA AI 自主平台能否从乌克兰战场的单一验证环境，扩展为可跨多种无人平台集成、并进入欧洲和北美市场的规模化产品。已验证信号包括：AURA AI 已在乌克兰实战中使用；公司已与 Lantronix、Axelera AI 和 Defsecintel Solutions 建立合作；本轮融资将用于下一代 AURA SBC 量产、推进 AURA OS 与机载 AI 能力，以及加速与乌克兰和国际市场无人平台制造商的集成。证据边界在于：来源未披露本轮估值、累计融资额、客户合同金额或收入，也未披露投资方公开投资逻辑，因此无法判断资本回报预期或商业化收入验证程度。",
+          "evidence_signals": [
+            "AURA AI 已在乌克兰实战中使用",
+            "公司已与 Lantronix、Axelera AI 和 Defsecintel Solutions 建立合作",
+            "本轮融资将支持下一代 AURA SBC 进入生产、推进 AURA OS 与机载 AI 能力，并加速与无人平台制造商的集成",
+            "下一代 AURA SBC 正在为规模化生产而开发，目标满足 NDAA 合规要求"
+          ],
+          "risks": [
+            "来源未披露本轮估值或累计融资额，无法评估资本结构与估值合理性",
+            "来源未披露任何客户合同金额、收入或订单，商业化收入尚未验证",
+            "来源未披露投资方公开投资逻辑，无法确认机构对回报路径的判断",
+            "公司计划扩展至欧洲和北美市场，但来源未披露具体客户或采购承诺，市场拓展仍待验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AURA AI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AURA SBC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AURA OS",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Angel One Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Better Angle",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Defence Builder Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Network VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Newfund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "UAID Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "WildField Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "4C-Next Holding AG",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Draganfly",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-7bb7b9e293a852ca",
+          "date": "2026-09-28",
+          "title": "经乌克兰实战检验，DOD Solution 融资 180 万欧元，以扩展无人系统的 AI 自主能力",
+          "amount": "€1.8 million",
+          "source_refs": [
+            "SA-45a77f6d016e5e76"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-566685ff2dc19ee3",
+          "source_url": "https://www.eu-startups.com/2026/09/combat-tested-in-ukraine-dod-solution-raises-e1-8-million-to-scale-ai-autonomy-for-unmanned-systems/",
+          "title": "经乌克兰实战检验，DOD Solution 融资 180 万欧元，以扩展无人系统的 AI 自主能力",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-05T00:28:05.400Z",
+          "content_hash": "dad2d25a17b7f6f66995d352cf347dc1f10d752001e7bb078dbee92ae933a26d",
+          "source_artifact_id": "SA-45a77f6d016e5e76",
+          "raw_id": "RAW-5ff720bafe9ef233"
+        },
+        {
+          "source_id": "FISRC-9688205d25bdfa0b",
+          "source_url": "https://tendergrants.com/o/funding/5018286/combat-tested-in-ukraine-dod-solution",
+          "title": "Combat-tested in Ukraine, DOD Solution · Funding round · TenderGrants",
+          "publisher": "tendergrants.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-05T00:31:02.932Z",
+          "content_hash": "decf4df6a1fb3437",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-05T00:31:34.689Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-05T00:31:34.689Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AURA AI",
+            "AURA OS",
+            "AURA SBC"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-7bb7b9e293a852ca"
+      ],
+      "aggregation": {
+        "key": "EN-e08dc6ffe1473692|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-7ecddc1cd6c08389",
+      "triggered_by_event_id": "EV-e8f58ed488159c88",
+      "as_of_date": "2026-10-05",
+      "company": {
+        "entity_id": "EN-244595c58aaec73d",
+        "name": "SiMa.ai",
+        "full_name": "SiMa.ai",
+        "website": "sima.ai",
+        "summary": "SiMa.ai 成立于 2018 年，主要开发芯片和软件方案，使机器人、无人机、摄像头等设备能够在本地运行 AI，而不必持续将数据传回云端再返回结果。",
+        "headquarters": "San Jose, CA",
+        "founders": [
+          {
+            "name": "Krishna Rangasayee",
+            "role": "创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2da08c69340f862",
+                "quote": "SiMa.ai 成立于 2018 年，由 Krishna Rangasayee 创办",
+                "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+                "quote_hash": "8628f3eb5852dc225463c306002bebcc14e918657021c3a0ebd60844ea1659c2"
+              },
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "said Krishna Rangasayee, Founder and CEO at SiMa.ai",
+                "source_content_hash": "c6e26e690136fc5a",
+                "quote_hash": "0bd0e1972551ce722bf3e6b04c67c5dae068c806fadc5844a6a538d5ee3ca4c4"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c2da08c69340f862",
+            "quote": "SiMa.ai 成立于 2018 年，由 Krishna Rangasayee 创办",
+            "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+            "quote_hash": "8628f3eb5852dc225463c306002bebcc14e918657021c3a0ebd60844ea1659c2"
+          },
+          {
+            "source_id": "FISRC-ae62f24427edea9b",
+            "quote": "SiMa.ai is a San Jose-headquartered semiconductor company founded in 2018.",
+            "source_content_hash": "abfbf80661111b13",
+            "quote_hash": "e547f755bb5ffb6f6250a40e8397b9f9a649d715182f61dcf54ab2beecd187ba"
+          },
+          {
+            "source_id": "FISRC-2209738fa8f6b1da",
+            "quote": "SiMa.ai is a leader in Physical AI, delivering a purpose-built, software-centric platform that brings best-in-class performance, power efficiency, and ease of use to Physical AI applications. The company is focused on scaling Physical AI across robotics, automotive, drones, industrial automation, aerospace and defense, smart vision, and healthcare.",
+            "source_content_hash": "c6e26e690136fc5a",
+            "quote_hash": "e2afdcf1e4afd58ccd21b973e2b42ade8f53bac550e5d3f1110f7dfea03941d5"
+          }
+        ],
+        "application_entity_id": "EN-244595c58aaec73d",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "1.5亿美元",
+        "total_raised": "超过 5 亿美元",
+        "announced_at": "2026-09-29",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Fidelity Management & Research Company",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2da08c69340f862",
+                "quote": "本轮融资由富达管理与研究公司（Fidelity Management & Research Company）和 Amplify 联合领投",
+                "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+                "quote_hash": "2b54619461f4af7e4409d507e8a945120949b924590751aaa8ad3f31e1a1ed94"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Amplify",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2da08c69340f862",
+                "quote": "本轮融资由富达管理与研究公司（Fidelity Management & Research Company）和 Amplify 联合领投",
+                "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+                "quote_hash": "2b54619461f4af7e4409d507e8a945120949b924590751aaa8ad3f31e1a1ed94"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alter Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2da08c69340f862",
+                "quote": "Alter Venture Partners、戴尔科技资本（Dell Technologies Capital）以及 StepStone Group 参投",
+                "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+                "quote_hash": "9393b072398bb6b3ba8ecff1fa62fa5a9e5052b9b50280287d92661604751c80"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dell Technologies Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2da08c69340f862",
+                "quote": "Alter Venture Partners、戴尔科技资本（Dell Technologies Capital）以及 StepStone Group 参投",
+                "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+                "quote_hash": "9393b072398bb6b3ba8ecff1fa62fa5a9e5052b9b50280287d92661604751c80"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "StepStone Group",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2da08c69340f862",
+                "quote": "Alter Venture Partners、戴尔科技资本（Dell Technologies Capital）以及 StepStone Group 参投",
+                "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+                "quote_hash": "9393b072398bb6b3ba8ecff1fa62fa5a9e5052b9b50280287d92661604751c80"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "AllianceBernstein",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan also joined the round as new investors",
+                "source_content_hash": "c6e26e690136fc5a",
+                "quote_hash": "466ac514d7d297a757510cef5c851fbd7b2aadb19abb5e78a629b3c3870adac3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Baron Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan also joined the round as new investors",
+                "source_content_hash": "c6e26e690136fc5a",
+                "quote_hash": "466ac514d7d297a757510cef5c851fbd7b2aadb19abb5e78a629b3c3870adac3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "J.P. Morgan",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan also joined the round as new investors",
+                "source_content_hash": "c6e26e690136fc5a",
+                "quote_hash": "466ac514d7d297a757510cef5c851fbd7b2aadb19abb5e78a629b3c3870adac3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "State of Michigan",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan also joined the round as new investors",
+                "source_content_hash": "c6e26e690136fc5a",
+                "quote_hash": "466ac514d7d297a757510cef5c851fbd7b2aadb19abb5e78a629b3c3870adac3"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Maverick Capital",
+            "role": "2025 年 8 月 C 轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ae62f24427edea9b",
+                "quote": "The company raised $85 million in an oversubscribed Series C round on August 1, 2025, led by Maverick Capital",
+                "source_content_hash": "abfbf80661111b13",
+                "quote_hash": "5c0c5063a1a154594e25eb9b1aa19148ca8d3f0d1927e45247650c0ff8b24689"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Micron",
+            "role": "2026 年 4 月战略投资领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ae62f24427edea9b",
+                "quote": "Apr 2026Strategic investmentMicronMicron (lead)",
+                "source_content_hash": "abfbf80661111b13",
+                "quote_hash": "09ff0c2835ca02d636a6e299ce6110e53bea35e65d352ff63d45ccb41027d567"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c2da08c69340f862",
+            "quote": "物理 AI 芯片开发商 SiMa.ai 已完成 1.5 亿美元 C 轮融资，估值达到 14.5 亿美元。",
+            "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+            "quote_hash": "4447690de46d24532f276344eca98e0ff6ba43aa87e92e2f153a0d7dda1111dc"
+          },
+          {
+            "source_id": "FISRC-c2da08c69340f862",
+            "quote": "物理 AI 芯片开发商 SiMa.ai 已完成 1.5 亿美元 C 轮融资，估值达到 14.5 亿美元",
+            "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+            "quote_hash": "13e97ba93bc30a2d6e9a3a748717f7e47dd09bc077e88749846a510aef51df83"
+          },
+          {
+            "source_id": "FISRC-2209738fa8f6b1da",
+            "quote": "SiMa.ai, a leader in Physical AI, today announced $150 million in Series C financing, bringing the total capital raised to $500 million and valuing the company at $1.45 billion.",
+            "source_content_hash": "c6e26e690136fc5a",
+            "quote_hash": "e8b4d5ce9f647399e1c85cc2a71954feff47a0ce2f1eed4a368e9813ad6a5dbb"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "1.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "total_raised_original": "超过 5 亿美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": 500000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-e8f58ed488159c88",
+            "round_original": "C轮",
+            "amount": "1.5亿美元",
+            "announced_at": "2026-09-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2da08c69340f862",
+                "quote": "物理 AI 芯片开发商 SiMa.ai 已完成 1.5 亿美元 C 轮融资，估值达到 14.5 亿美元。",
+                "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+                "quote_hash": "4447690de46d24532f276344eca98e0ff6ba43aa87e92e2f153a0d7dda1111dc"
+              },
+              {
+                "source_id": "FISRC-c2da08c69340f862",
+                "quote": "物理 AI 芯片开发商 SiMa.ai 已完成 1.5 亿美元 C 轮融资，估值达到 14.5 亿美元",
+                "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+                "quote_hash": "13e97ba93bc30a2d6e9a3a748717f7e47dd09bc077e88749846a510aef51df83"
+              },
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "SiMa.ai, a leader in Physical AI, today announced $150 million in Series C financing, bringing the total capital raised to $500 million and valuing the company at $1.45 billion.",
+                "source_content_hash": "c6e26e690136fc5a",
+                "quote_hash": "e8b4d5ce9f647399e1c85cc2a71954feff47a0ce2f1eed4a368e9813ad6a5dbb"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Modalix MLSoC",
+          "description": "面向边缘计算场景的芯片，旨在减少设备与云端之间频繁的数据往返，从而降低功耗并提升实时响应能力。",
+          "target_customers": "机器人、无人机、摄像头等物理 AI 设备制造商",
+          "features": [
+            "能效",
+            "低延迟",
+            "本地推理"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c2da08c69340f862",
+              "quote": "其芯片面向边缘计算场景，试图减少设备与云端之间频繁的数据往返，从而降低功耗并提升实时响应能力",
+              "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+              "quote_hash": "42e021c9554eed74707ec047c13e11046318c7fb4f21becd3c50237161626e87"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "ARK Electronics",
+          "industry": "",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&T Technology Services, Micron, STIGA, Synopsys, TRUMPF SE, and Virya Autonomous Technologies, Bangalore",
+              "source_content_hash": "c6e26e690136fc5a",
+              "quote_hash": "c8b083e173443f867e03aa63397f27f86db226e06d8477c6fab3bfc57c262452"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AVerMedia",
+          "industry": "",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&T Technology Services, Micron, STIGA, Synopsys, TRUMPF SE, and Virya Autonomous Technologies, Bangalore",
+              "source_content_hash": "c6e26e690136fc5a",
+              "quote_hash": "c8b083e173443f867e03aa63397f27f86db226e06d8477c6fab3bfc57c262452"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Bosch",
+          "industry": "",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&T Technology Services, Micron, STIGA, Synopsys, TRUMPF SE, and Virya Autonomous Technologies, Bangalore",
+              "source_content_hash": "c6e26e690136fc5a",
+              "quote_hash": "c8b083e173443f867e03aa63397f27f86db226e06d8477c6fab3bfc57c262452"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Emerson",
+          "industry": "",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&T Technology Services, Micron, STIGA, Synopsys, TRUMPF SE, and Virya Autonomous Technologies, Bangalore",
+              "source_content_hash": "c6e26e690136fc5a",
+              "quote_hash": "c8b083e173443f867e03aa63397f27f86db226e06d8477c6fab3bfc57c262452"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "L&T Technology Services",
+          "industry": "",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&T Technology Services, Micron, STIGA, Synopsys, TRUMPF SE, and Virya Autonomous Technologies, Bangalore",
+              "source_content_hash": "c6e26e690136fc5a",
+              "quote_hash": "c8b083e173443f867e03aa63397f27f86db226e06d8477c6fab3bfc57c262452"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "NVIDIA",
+          "product": "GPU",
+          "scenario": "物理 AI 设备推理",
+          "target_customer": "机器人、无人机、汽车等物理 AI 设备制造商",
+          "funding_summary": "",
+          "core_difference": "SiMa.ai 强调其芯片具有更低延迟和更可负担的价格，而 NVIDIA GPU 被描述为昂贵、复杂且功耗高。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c2da08c69340f862",
+              "quote": "SiMa.ai 将自身与英伟达（NVIDIA）GPU 进行对比，强调其芯片具有更低延迟和更可负担的价格",
+              "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+              "quote_hash": "91adfe969024889a30eab72bc6102b4811f50825c694cba0a1963bb7f912dec1"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "C 轮融资金额",
+          "value": "1.5 亿美元",
+          "observed_at": "2026-09-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c2da08c69340f862",
+              "quote": "物理 AI 芯片开发商 SiMa.ai 已完成 1.5 亿美元 C 轮融资",
+              "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+              "quote_hash": "07517155e956e14f4dba49ae3fab5418521d68aea75a24bcb595967b5257a02d"
+            }
+          ]
+        },
+        {
+          "label": "估值",
+          "value": "14.5 亿美元",
+          "observed_at": "2026-09-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c2da08c69340f862",
+              "quote": "估值达到 14.5 亿美元",
+              "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+              "quote_hash": "7073103f2df89d33cf517144364f5b4f4d86232bbc60f7c805eaa6768d024988"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "超过 5 亿美元",
+          "observed_at": "2026-09-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c2da08c69340f862",
+              "quote": "SiMa.ai 在本轮完成后累计融资额已超过 5 亿美元",
+              "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+              "quote_hash": "d17a55337ec3df6d26389ee5fd9c247ecead2976679575e4bd5a49bbbcda90fa"
+            }
+          ]
+        },
+        {
+          "label": "2025 年 7 月 B 轮融资金额",
+          "value": "8500 万美元",
+          "observed_at": "2025-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c2da08c69340f862",
+              "quote": "该公司此前在 2025 年 7 月完成 8500 万美元 B 轮融资",
+              "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+              "quote_hash": "4bb22556ea350121ccb49a5c9f71d3555bb8d7334b05ae12eb09d6a1641e82b8"
+            }
+          ]
+        },
+        {
+          "label": "2025 年 7 月 B 轮估值",
+          "value": "9.6 亿美元",
+          "observed_at": "2025-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c2da08c69340f862",
+              "quote": "当时估值为 9.6 亿美元",
+              "source_content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+              "quote_hash": "6c4f4c00984b8524b975d9180f396e15dafd2b4dfe189b0b2f358d1c7d40d8ae"
+            }
+          ]
+        },
+        {
+          "label": "2024 至 2025 年收入增长",
+          "value": "同比增长四倍",
+          "observed_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "Between 2024 and 2025, the company quadrupled year-over-year revenue growth",
+              "source_content_hash": "c6e26e690136fc5a",
+              "quote_hash": "2aafb3fe55cca078230050df8c7df61e7592ebcc90726d78597a2e3b0ff7d094"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Krishna Rangasayee",
+          "quote": "Physical AI in humanoids, automotive, and drones is the gateway to a $50 trillion market that has remained largely untouched by modern innovation",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "Physical AI in humanoids, automotive, and drones is the gateway to a $50 trillion market that has remained largely untouched by modern innovation",
+              "source_content_hash": "c6e26e690136fc5a",
+              "quote_hash": "e42a6298ad2bdf9e19a97bc08bfbb40535db56d549a32ac9b858d8d706fb3c1e"
+            }
+          ]
+        },
+        {
+          "speaker": "Mike Dauber",
+          "quote": "Since our initial partnership with SiMa.ai from day one, we have believed its vision was both clear and transformative: to build a fundamentally new architecture for Physical AI where software dictates the silicon.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "Since our initial partnership with SiMa.ai from day one, we have believed its vision was both clear and transformative: to build a fundamentally new architecture for Physical AI where software dictates the silicon.",
+              "source_content_hash": "c6e26e690136fc5a",
+              "quote_hash": "2630c81c6ef37c973717a3d0d2debdf6abd91434732ad322e0b674101e725ed6"
+            }
+          ]
+        },
+        {
+          "speaker": "Scott Darling",
+          "quote": "One of our core priorities at Dell Tech Capital is to back foundational technologies that bridge the gap between the data center and the far edge.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "One of our core priorities at Dell Tech Capital is to back foundational technologies that bridge the gap between the data center and the far edge.",
+              "source_content_hash": "c6e26e690136fc5a",
+              "quote_hash": "8c7b47e33f3b75d112409a20651d6fe419a60de6c128518d6784540c9f002ca6"
+            }
+          ]
+        },
+        {
+          "speaker": "John Avirett",
+          "quote": "Truly scaling physical AI requires more than just raw compute. It demands incredible power efficiency and seamless integration into highly constrained environments.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2209738fa8f6b1da",
+              "quote": "Truly scaling physical AI requires more than just raw compute. It demands incredible power efficiency and seamless integration into highly constrained environments.",
+              "source_content_hash": "c6e26e690136fc5a",
+              "quote_hash": "6443ea22d104b61aa03dde3e55a2dfc97d67a24b818e8708085df4848b28aab6"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "StepStone Group",
+            "speaker": "John Avirett",
+            "speaker_role": "Partner, StepStone Group",
+            "rationale": "StepStone Group 认为真正扩展物理 AI 不仅需要原始算力，还需要极高的能效和无缝集成到高度受限的环境中。SiMa.ai 创建了一个差异化的、专为物理 AI 构建的平台，满足了现实世界应用的严格要求。",
+            "quote": "Truly scaling physical AI requires more than just raw compute. It demands incredible power efficiency and seamless integration into highly constrained environments. SiMa.ai has created a differentiated, purpose-built Physical AI platform that answers the rigorous demands of real-world applications.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2209738fa8f6b1da",
+                "quote": "Truly scaling physical AI requires more than just raw compute. It demands incredible power efficiency and seamless integration into highly constrained environments. SiMa.ai has created a differentiated, purpose-built Physical AI platform that answers the rigorous demands of real-world applications.",
+                "source_content_hash": "c6e26e690136fc5a",
+                "quote_hash": "7b36dded719a434a9b323f3e2a86ff9f7b9deb2fb3c62f86744add7d1a049b18"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 SiMa.ai 能否在物理 AI 设备市场（机器人、无人机、汽车等）中，以专为边缘推理设计的芯片和软件平台，替代英伟达 GPU 在功耗、延迟和成本上的劣势。当前 14.5 亿美元估值和 1.5 亿美元 C 轮融资所依赖的已验证信号包括：2024 至 2025 年收入同比增长四倍、客户和合作伙伴网络覆盖多家财富 500 强及专业技术创新者、以及累计融资额超过 5 亿美元。判断的证据边界在于：来源未披露本轮融资的具体收入或订单金额，收入增长数据来自公司新闻稿，且下一代硬件（1000 dense TOPS）计划于 2028 年上半年推出，尚未验证。",
+        "validated_signals": [
+          "2024 至 2025 年收入同比增长四倍",
+          "客户和合作伙伴网络覆盖 ARK Electronics、AVerMedia、Bosch、Emerson、Intrinsic、Kontron、L&T Technology Services、Micron、STIGA、Synopsys、TRUMPF SE 和 Virya Autonomous Technologies 等",
+          "累计融资额超过 5 亿美元",
+          "C 轮融资 1.5 亿美元，估值 14.5 亿美元"
+        ],
+        "risks": [
+          "下一代硬件（1000 dense TOPS）计划于 2028 年上半年推出，尚未验证，存在执行风险。",
+          "来源未披露本轮融资的具体收入或订单金额，收入增长数据来自公司新闻稿，缺乏独立验证。",
+          "物理 AI 设备市场（包括机器人、无人机、汽车）的采用速度和规模存在不确定性，可能影响 SiMa.ai 的商业化进展。",
+          "与英伟达 GPU 的竞争激烈，SiMa.ai 需持续证明其能效和延迟优势能转化为客户大规模采用。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "automotive_transportation",
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "AI 芯片与硬件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 SiMa.ai 能否在物理 AI 设备市场（机器人、无人机、汽车等）中，以专为边缘推理设计的芯片和软件平台，替代英伟达 GPU 在功耗、延迟和成本上的劣势。当前 14.5 亿美元估值和 1.5 亿美元 C 轮融资所依赖的已验证信号包括：2024 至 2025 年收入同比增长四倍、客户和合作伙伴网络覆盖多家财富 500 强及专业技术创新者、以及累计融资额超过 5 亿美元。判断的证据边界在于：来源未披露本轮融资的具体收入或订单金额，收入增长数据来自公司新闻稿，且下一代硬件（1000 dense TOPS）计划于 2028 年上半年推出，尚未验证。",
+          "evidence_signals": [
+            "2024 至 2025 年收入同比增长四倍",
+            "客户和合作伙伴网络覆盖 ARK Electronics、AVerMedia、Bosch、Emerson、Intrinsic、Kontron、L&T Technology Services、Micron、STIGA、Synopsys、TRUMPF SE 和 Virya Autonomous Technologies 等",
+            "累计融资额超过 5 亿美元",
+            "C 轮融资 1.5 亿美元，估值 14.5 亿美元"
+          ],
+          "risks": [
+            "下一代硬件（1000 dense TOPS）计划于 2028 年上半年推出，尚未验证，存在执行风险。",
+            "来源未披露本轮融资的具体收入或订单金额，收入增长数据来自公司新闻稿，缺乏独立验证。",
+            "物理 AI 设备市场（包括机器人、无人机、汽车）的采用速度和规模存在不确定性，可能影响 SiMa.ai 的商业化进展。",
+            "与英伟达 GPU 的竞争激烈，SiMa.ai 需持续证明其能效和延迟优势能转化为客户大规模采用。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Modalix MLSoC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Krishna Rangasayee",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fidelity Management & Research Company",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Amplify",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alter Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Dell Technologies Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "StepStone Group",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AllianceBernstein",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Baron Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "J.P. Morgan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "State of Michigan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Maverick Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Micron",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "ARK Electronics",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "AVerMedia",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Bosch",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Emerson",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "L&T Technology Services",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "NVIDIA",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-e8f58ed488159c88",
+          "date": "2026-09-29",
+          "title": "物理AI芯片商SiMa.ai获1.5亿美元融资",
+          "amount": "1.5亿美元",
+          "source_refs": [
+            "SA-36d78d7de0a8836b"
+          ]
+        },
+        {
+          "event_id": "EV-85f63371a81b394b",
+          "date": "2026-09-28",
+          "title": "SiMa.ai 估值达 14.5 亿美元，总融资 5 亿美元，以规模化人形机器人、汽车和无人机领域的物理 AI",
+          "amount": "$150 million",
+          "source_refs": [
+            "SA-3e3a1e675b742b6a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-c2da08c69340f862",
+          "source_url": "https://www.163.com/dy/article/L81AF8RL0511CTRI.html",
+          "title": "物理AI芯片商SiMa.ai获1.5亿美元融资",
+          "publisher": "www.163.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-05T00:27:31.480Z",
+          "content_hash": "52994f281f2011b29c4015d3ca753304bbb7461e5e18a6f44b52c63707694b94",
+          "source_artifact_id": "SA-36d78d7de0a8836b",
+          "raw_id": "RAW-ee2ca12a51705757"
+        },
+        {
+          "source_id": "FISRC-2209738fa8f6b1da",
+          "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+          "title": "SiMa.ai Reaches $1.45B Valuation with $500 Million in Total Funding to Scale Physical AI in Humanoids, Automotive, and Drones",
+          "publisher": "sima.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-05T00:31:00.201Z",
+          "content_hash": "c6e26e690136fc5a",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ae62f24427edea9b",
+          "source_url": "https://multiples.vc/private-comps/sima-ai",
+          "title": "SiMa.ai Valuation, Funding & Investors | Multiples",
+          "publisher": "multiples.vc",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-05T00:31:01.072Z",
+          "content_hash": "abfbf80661111b13",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-05T00:31:21.579Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-05T00:31:21.579Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Modalix MLSoC"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Krishna Rangasayee"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-e8f58ed488159c88"
+      ],
+      "aggregation": {
+        "key": "EN-244595c58aaec73d|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-3a4ba26375b45669",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-5b5237105fc868cd",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-f2950d2104e97163",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-3b424be9d0d68b87",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-82c07208217f2af7",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-df4a0504042552ae",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-9ea3912efd857ad8",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-861d4440dcbb9b09",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-d087ccd71efc469d",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-f11e79a99589efbd",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-a6c2d9011b7b035e",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-141a1e90c0780daa",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-e8f58ed488159c88",
+      "company_name": "SiMa.ai",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"SiMa.ai\" 2026 funding round investors",
+        "\"SiMa.ai\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"SiMa.ai\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"SiMa.ai\" 1.5亿美元 funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"SiMa.ai\" official product customers",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"SiMa.ai\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://theaiinsider.tech/2023/09/29/alphasense-grows-to-2-5b-valuation-securing-150m-in-series-e-funding-led-by-bond/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.delltechnologiescapital.com/resources?731b2c0c_page=2",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"SiMa.ai\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"SiMa.ai\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-b88f1a2dd721d62d",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-bbea3352983c2033",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-80aeba0846bbd197",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-7bb7b9e293a852ca",
+      "company_name": "Combat-tested in Ukraine, DOD Solution",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Combat-tested in Ukraine, DOD Solution\" 2026 funding round investors",
+        "\"Combat-tested in Ukraine, DOD Solution\" official product customers",
+        "\"Combat-tested in Ukraine, DOD Solution\" \"why we invested\"",
+        "\"Combat-tested in Ukraine, DOD Solution\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Combat-tested in Ukraine, DOD Solution\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://seedtable.com/companies/dod-solution",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Combat-tested in Ukraine, DOD Solution\" €1.8 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Combat-tested in Ukraine, DOD Solution\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/posts/harry-mcdonough-456341107_combat-tested-in-ukraine-dod-solution-raises-activity-7510356795773689856--vgZ",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/EUStartups/posts/dod-solution-an-estonian-ukrainian-defencetech-company-developing-onboard-autono/1517048167116454/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://peterson.ventureradar.com/organisation/DOD%20Solution/1068f577-0867-4900-8813-3542dc5f970b",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Combat-tested in Ukraine, DOD Solution\" \"why we invested\"",
+          "status": "empty",
+          "count": 0
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Combat-tested in Ukraine, DOD Solution\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Combat-tested in Ukraine, DOD Solution\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Combat-tested in Ukraine, DOD Solution\" founders headquarters product",
+          "status": "completed",
+          "count": 5
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Combat-tested in Ukraine, DOD Solution\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://siliconvalleyinvestclub.com/pt/companies/scale/team/jason-droege/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.eu-startups.com/2026/09/paris-based-rayon-raises-e10-million-to-build-the-drawing-layer-for-interior-designs-ai-era/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/directory/posts/s-49",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/directory/posts/s-51",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        }
+      ],
+      "updated_at": "2026-10-05T00:32:17.549Z"
+    },
+    {
+      "event_id": "EV-a2c87acb12608019",
+      "company_name": "Reco",
+      "status": "blocked",
+      "problems": [
+        "deepseek_json_quality_failed:investors_missing"
+      ],
+      "queries": [
+        "\"Reco\" 2026 funding round investors",
+        "\"Reco\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Reco\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://tracxn.com/d/companies/reco/__9lmZAO_GTKGXiaSGY3s9f2XfCj8SOlfEvgdKGuKIVSs/funding-and-investors",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Reco\" $50M funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Reco\" official product customers",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Reco\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Reco\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Reco\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-05T00:32:17.549Z"
+    },
+    {
+      "event_id": "EV-c680e02a02703c11",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-201690debbddab65",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-6a63fabeceadc42b",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-c8a803c1bdfde04c",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-6324ffde67e257fa",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-7fb563f47cc29d8d",
+      "company_name": "Kanu AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Kanu AI\" 2026 funding round investors",
+        "\"Kanu AI\" official product customers",
+        "\"Kanu AI\" \"why we invested\"",
+        "\"Kanu AI\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Kanu AI\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Kanu AI\" $11.7 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Kanu AI\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.wsgr.com/en/insights/firm-advises-kanu-ai-on-dollar117-million-seed-funding.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Kanu AI\" \"why we invested\"",
+          "status": "completed",
+          "count": 7
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Kanu AI\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Kanu AI\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Kanu AI\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-439c3a45abe7b514",
+      "company_name": "Ascerta",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Ascerta\" 2026 funding round investors",
+        "\"Ascerta\" official product customers",
+        "\"Ascerta\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Ascerta\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Ascerta\" $18 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Ascerta\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://markets.businessinsider.com/news/stocks/ascerta-raises-18m-to-help-enterprises-maximize-ai-roi-1036585387",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Ascerta\" \"why we invested\"",
+          "status": "completed",
+          "count": 2
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ascerta\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.yahoo.com/technology/ai/articles/ascerta-raises-18m-help-enterprises-130000701.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Ascerta\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Ascerta\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    },
+    {
+      "event_id": "EV-1ef8979f39a2ccc5",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-05T00:39:47.245Z"
+    }
+  ]
+}

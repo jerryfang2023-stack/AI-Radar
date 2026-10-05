@@ -1,0 +1,56 @@
+{
+  "event_id": "EV-a2c87acb12608019",
+  "company_name": "Reco",
+  "status": "blocked",
+  "problems": [
+    "deepseek_json_quality_failed:investors_missing"
+  ],
+  "queries": [
+    "\"Reco\" 2026 funding round investors",
+    "\"Reco\" \"why we invested\""
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Reco\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://tracxn.com/d/companies/reco/__9lmZAO_GTKGXiaSGY3s9f2XfCj8SOlfEvgdKGuKIVSs/funding-and-investors",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Reco\" $50M funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Reco\" official product customers",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Reco\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Reco\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Reco\" founders headquarters product",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}
