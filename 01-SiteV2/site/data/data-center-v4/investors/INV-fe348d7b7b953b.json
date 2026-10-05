@@ -121,31 +121,53 @@
       }
     ],
     "public_profile": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "person",
-      "summary": "Evantic 官网将 Matt Miller 列为创始人兼管理合伙人，并称他有 13 年 Sequoia Capital 从业经历；n8n 官方公告将 Evantic 列为其 1.8 亿美元 Series C 参投方。此处记录机构参与，不把基金融资金额归为个人出资。",
-      "coverage_note": "人物背景来自 Evantic 官网，机构参投来自 n8n 官方公告。无法复核的旧 LinkedIn 种子轮线索不纳入人物投资履历。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Evantic 官网将 Matt Miller 列为创始人兼管理合伙人，并称他有 13 年 Sequoia Capital 从业经历。n8n 官方融资公告将 Evantic 列为其 1.8 亿美元 Series C 的参与方。本档案区分 Matt Miller 的个人经历与 Evantic 的机构投资，不将公司融资额视作个人出资。",
+      "coverage_note": "人物职务和经历来自 Evantic 自身介绍；n8n 公告确认的是机构 Evantic 参与融资，没有披露 Matt Miller 个人投资额。",
+      "facts": [
+        {
+          "field": "founder_background",
+          "label": "官网披露的创立及从业经历",
+          "value": "Evantic 官网称 Matt Miller 创立 Evantic，并有 13 年 Sequoia Capital 从业经历。",
+          "source_id": "b38_matt_background"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "人物背景来自 Evantic 官网，机构参投来自 n8n 官方公告。无法复核的旧 LinkedIn 种子轮线索不纳入人物投资履历。",
       "track_record": [
         {
-          "description": "Matt Miller 创立并管理 Evantic Capital；n8n 官方公告将 Evantic 列为其 2025 年 10 月 1.8 亿美元 Series C 的参投方。",
-          "source_id": "matt_evantic_n8n_series_c"
+          "description": "n8n 官方公告将 Evantic 列为其 Series C 参投方；此为机构投资记录，不代表 Matt Miller 的个人投资。",
+          "source_id": "b38_matt_n8n"
         },
         {
           "description": "融资来源记录：n8n GmbH · 种子轮 · 种子轮联合领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f6319614d583c9a4"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "任职机构官网",
+          "value": "Evantic",
+          "url": "https://www.evantic.ai/",
+          "source_id": "b38_matt_role"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Founder & Managing Partner",
+          "organization": "Evantic",
+          "source_id": "b38_matt_role"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Evantic 官网核验了 Matt Miller 的创始及管理职务、从业背景；n8n 官方公告补充一项由 Evantic 参与的融资记录。",
       "sources": [
         {
-          "source_id": "matt_evantic_role",
+          "source_id": "b38_matt_role",
           "source_url": "https://www.evantic.ai/",
           "source_title": "Evantic",
           "source_content_hash": "b5bd819e21e3f6ee5950469dc8df2cd60cf98900776ac4da4f979fe6cfcd27bb",
@@ -153,7 +175,7 @@
           "quote_hash": "ef4bb5240efe02128d2bd69aa0154058d03d86e94c3e4d624a4ed642dd9ee845"
         },
         {
-          "source_id": "matt_evantic_background",
+          "source_id": "b38_matt_background",
           "source_url": "https://www.evantic.ai/",
           "source_title": "Evantic",
           "source_content_hash": "b5bd819e21e3f6ee5950469dc8df2cd60cf98900776ac4da4f979fe6cfcd27bb",
@@ -161,7 +183,7 @@
           "quote_hash": "9922cfe027eca62f47d2a8bdb550b8a3dbb8ae2898f242fb06b4beca57ce8caf"
         },
         {
-          "source_id": "matt_evantic_n8n_series_c",
+          "source_id": "b38_matt_n8n",
           "source_url": "https://blog.n8n.io/series-c/",
           "source_title": "n8n raises $180m to get AI closer to value with orchestration – n8n Blog",
           "source_content_hash": "8d60729cef8f36b823c7267a41e668ab6c31771992d45c99d3d9daa11d8fe613",
@@ -176,8 +198,7 @@
           "quote": "alongside Matt Miller (Sequoia Capital, Evantic Capital)",
           "quote_hash": "af2641764cee7324d653b90d802c3dd1635f6f181c4fa05d940b697419949259"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

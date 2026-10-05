@@ -61632,19 +61632,79 @@
     "INV-fde66c44f2dd13": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Klass Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Klass Capital 官网称其关注成长阶段、年收入不超过 1,500 万美元的 B2B 科技企业，并披露其软件投资与创始人支持取向。Atomic 的融资新闻稿称其 1,250 万美元 A 轮由 Klass Capital 和 Madrona 领投，并有 Klass 的 Adrian Schauer 加入董事会。此处仅记录公开的机构方向和一项投资披露。",
+      "coverage_note": "Atomic 新闻稿未披露 Klass Capital 的单独出资金额或具体基金载体；机构官网公布的投资指标为自述资料，不等于完整组合或业绩核验。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网公布的投资标准",
+          "value": "Klass Capital 官网称其关注年收入不超过 1,500 万美元的成长阶段 B2B 科技企业。",
+          "source_id": "b38_klass_strategy"
+        },
+        {
+          "field": "board_role",
+          "label": "Atomic 董事会参与",
+          "value": "Atomic 新闻稿称 Klass Capital 的 Adrian Schauer 加入公司董事会。",
+          "source_id": "b38_klass_board"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-09-29",
+          "description": "Atomic 新闻稿披露其完成 1,250 万美元 A 轮融资，由 Klass Capital 和 Madrona 领投。",
+          "source_id": "b38_klass_round"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Atomic 新闻稿称其 1,250 万美元 A 轮由 Klass Capital 和 Madrona 领投；融资总额不代表 Klass 的单独出资额。",
+          "source_id": "b38_klass_round"
+        },
         {
           "description": "融资来源记录：Atomic · A轮 · 2026-09-29 · 本轮领投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d4e6ae2384112548"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Klass Capital",
+          "url": "https://www.klass.com/",
+          "source_id": "b38_klass_strategy"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构官网提供成长阶段 B2B 科技投资标准；Atomic 新闻稿披露 Klass 参与并领投其 A 轮。未将融资总额归为 Klass 的投资额。",
       "sources": [
+        {
+          "source_id": "b38_klass_strategy",
+          "source_url": "https://www.klass.com/",
+          "source_title": "Klass Capital",
+          "source_content_hash": "36b98be378a6feb8c8ebc35e0d993e91fe235bbca84a94b89ec09895e028b37d",
+          "quote": "Growth-stage B2B technology businesses with up to $15M of revenue.",
+          "quote_hash": "97cd1cc580239178bada149cd2a4c71fe855da3f6a5763badd444386f4f5dbd4"
+        },
+        {
+          "source_id": "b38_klass_round",
+          "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",
+          "source_title": "Atomic Raises $12.5M to Build the AI Control System for Physical Goods Companies",
+          "source_content_hash": "4407db855b53b27a11ae071df8065303eff58def7cc749555b224b191261ea35",
+          "quote": "a $12.5 million Series A led by Klass Capital and Madrona.",
+          "quote_hash": "f3a62ae792f65a1ad6950aa58b9bece96976a34356318798dd92a0a217c9c7c6"
+        },
+        {
+          "source_id": "b38_klass_board",
+          "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",
+          "source_title": "Atomic Raises $12.5M to Build the AI Control System for Physical Goods Companies",
+          "source_content_hash": "4407db855b53b27a11ae071df8065303eff58def7cc749555b224b191261ea35",
+          "quote": "Adrian Schauer of Klass Capital and Matt McIlwain of Madrona join Atomic's board.",
+          "quote_hash": "86f01579929bb3cddf02c17ba7e2c23e64f19259624dd86530ac01aae1986c83"
+        },
         {
           "source_id": "FISRC-d4e6ae2384112548",
           "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",
@@ -61653,8 +61713,7 @@
           "quote": "a $12.5 million Series A led by Klass Capital and Madrona",
           "quote_hash": "eb3e22a379bd9ff21198d97a8805a59cdddb29f1a8f100076c8ba6c9f5742cb4"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "INV-5f919c9f4955d4": {
       "profile_type": "organization",
@@ -62364,30 +62423,88 @@
     "INV-fe133b4df1e5e9": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前来源支持单笔参投活动，不足以扩写机构背景、完整组合或业绩。",
-      "summary": "Autoheal 官方公告称，公司 790 万美元种子轮融资由 Innovation Endeavors 领投，并将 Emergent Ventures 列为参投方；本档案仅记录该笔披露。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Emergent Ventures 官网将自身定位为面向企业 AI 创业者的种子阶段投资机构，阶段范围为项目创立至 Pre-Series A。Autoheal 官方公告称其 790 万美元种子轮由 Innovation Endeavors 领投，并将 Emergent Ventures 列为参投方。",
+      "coverage_note": "Autoheal 公告未披露 Emergent Ventures 的单独投资金额或基金载体；官网定位为机构自述，本档案不视作完整投资组合。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网公布的投资阶段",
+          "value": "官网称其投资范围覆盖种子阶段至 Pre-Series A。",
+          "source_id": "b38_emergent_stage"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网公布的投资方向",
+          "value": "官网将 Emergent Ventures 描述为企业 AI 创业者的早期投资机构。",
+          "source_id": "b38_emergent_positioning"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-09-28",
+          "description": "Autoheal 官方公告披露其宣布完成 790 万美元种子轮，Emergent Ventures 参与其中。",
+          "source_id": "b38_emergent_autoheal"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Autoheal 官方公告将 Emergent Ventures 列为其 790 万美元种子轮参投方之一；未披露该机构的单独出资额。",
+          "source_id": "b38_emergent_autoheal"
+        },
         {
           "description": "融资来源记录：Autoheal · 种子轮 · 2026-09-28 · 本轮参投 · $7.9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-212b01f9c4f8d05c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Emergent Ventures",
+          "url": "https://www.emergent.vc/",
+          "source_id": "b38_emergent_positioning"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Emergent Ventures 官网提供阶段、赛道及地域定位；Autoheal 官方融资公告记录一项参投披露。",
       "sources": [
+        {
+          "source_id": "b38_emergent_positioning",
+          "source_url": "https://www.emergent.vc/",
+          "source_title": "Emergent Ventures | Seed-Stage VC for Enterprising Founders",
+          "source_content_hash": "2373c1d59bc7e85bbe9e32f7469b92b1f1a0beb4205deb6583c7493521c317cd",
+          "quote": "The First Choice of Enterprise AI Founders Since 2016",
+          "quote_hash": "34b062b86c28905a81300ac4e6d8efc05fe1f15f73f6559eda1c07424c1b19c3"
+        },
+        {
+          "source_id": "b38_emergent_stage",
+          "source_url": "https://www.emergent.vc/",
+          "source_title": "Emergent Ventures | Seed-Stage VC for Enterprising Founders",
+          "source_content_hash": "2373c1d59bc7e85bbe9e32f7469b92b1f1a0beb4205deb6583c7493521c317cd",
+          "quote": "Seed Inception to Pre-Series A",
+          "quote_hash": "c4b3fe23aaa0c04df533c3d75afc7d280615008cfee60c4110e3a94b140dc202"
+        },
+        {
+          "source_id": "b38_emergent_autoheal",
+          "source_url": "https://autoheal.ai/press-releases/autoheal-funding-to-build-the-self-improving-software-factory",
+          "source_title": "Autoheal raises $7.9M to build a self-improving software factory for enterprises - Autoheal AI",
+          "source_content_hash": "7064fc3c8c80556d7312d1218a2c8cc39938f968186546632b39092cf7a740e7",
+          "quote": "alongside participation from Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures, and Param Hansa Values.",
+          "quote_hash": "9b027c9f2f473f1cc79c5bfd61de6637e3ff551cc7ddca3a9a567f629132090c"
+        },
         {
           "source_id": "FISRC-212b01f9c4f8d05c",
           "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
-          "source_title": "Autoheal raises $7.9M to build the self-improving software factory for enterprises",
-          "source_content_hash": "2b1272abb8d5c05c85d845301f84e59369d8a30887a705beed387411006e85cc",
+          "source_title": "Autoheal 融资 790 万美元，为企业构建自我改进的软件工厂",
+          "source_content_hash": "db9fc8dd24df889f563eb8b09a5c63dfa0a5b96918734e65c10e95c659e10e53",
           "quote": "Today, we are announcing our $7.9M seed round, led by Harpinder Singh at Innovation Endeavors, with participation from Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures (CTO Fund) and Param Hansa Values.",
           "quote_hash": "59506ba0808ee0c2c8d9ac25f14f284dee11383679000e5830940658d2c79dd4"
         }
-      ],
-      "last_verified_at": "2026-10-03",
-      "experience_summary": "当前来源支持单笔参投活动，不足以扩写机构背景、完整组合或业绩。"
+      ]
     },
     "INV-1813e01c25d62e": {
       "summary": "Hyperplane官网自述其2015年开始投资人工智能及相关领域的创业公司。",
@@ -79499,40 +79616,70 @@
     "INV-ff53f8d73b820c": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅据Swish Ventures公司页面和AIR官方公告确认机构名称及一项公开投资活动；交易载体与金额未披露。",
-      "summary": "Swish Ventures的LinkedIn公司页面将其归为风险投资与私募股权机构，并称基金代表机构投资者投资。AIR官方博客将Swish列为投资其融资的基金之一。本档案只记录AIR这一公开投资活动，不推断具体基金或出资额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "IVC Data & Insights 将 Swish Ventures 标注为风险投资管理公司，并列出创始合伙人 Omri Casspi；AIR 官方博客将 Swish 列为投资该公司的基金之一。机构数据页注明的联系方式和部分资本数据含占位值，因此本档案仅采用可读的机构类别、团队姓名和发行方融资披露。",
+      "coverage_note": "Swish 官网未提供可用的机构正文；机构背景来自 IVC Data & Insights，AIR 的官方博客确认投资者名称，但均未披露 Swish 对该轮的基金载体或单笔金额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构目录中的类别",
+          "value": "IVC Data & Insights 将 Swish Ventures 标注为风险投资管理公司。",
+          "source_id": "b38_swish_ivc_identity"
+        },
+        {
+          "field": "team",
+          "label": "机构目录列示的创始合伙人",
+          "value": "IVC Data & Insights 将 Omri Casspi 列为创始合伙人。",
+          "source_id": "b38_swish_ivc_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "AIR官方博客将Swish列为参与其融资的基金之一。",
-          "source_id": "air-funding-swish"
+          "description": "AIR 官方博客将 Swish 列为投资 AIR 的基金之一；该公告未披露 Swish 的单笔投资金额。",
+          "source_id": "b38_swish_air"
         },
         {
           "description": "融资来源记录：AIR · 种子轮 · 2026-09-01 · 本轮参投 · $50M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0426e4b3b9347f4f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Swish Ventures",
+          "url": "https://www.swish.vc/",
+          "source_id": "b38_swish_ivc_identity"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅据Swish Ventures公司页面和AIR官方公告确认机构名称及一项公开投资活动；交易载体与金额未披露。",
+      "experience_summary": "机构目录提供了基本机构类别和一项团队信息，AIR 官方资料提供一项参投记录；不采用目录中显示为占位符的管理资本数据。",
       "sources": [
         {
-          "source_id": "swish-company-profile",
-          "source_url": "https://www.linkedin.com/company/swish-ventures",
-          "source_title": "Swish Ventures | LinkedIn",
-          "source_content_hash": "d4d87dd9b9c7a6de8a8c9b4a44af04691b3373facb9d44925959716afadf07d1",
-          "quote": "Venture Capital and Private Equity Principals About us Swish Ventures partners with few exceptional founders each year to build category winners. The fund invests on behalf of leading endowments, pension funds",
-          "quote_hash": "41bb02a2a3e7580c883a8e996ffaaefd74be3d73ce540978cac356535a0a0de2"
+          "source_id": "b38_swish_ivc_identity",
+          "source_url": "https://www.ivc-online.com/Google-Card?ID=74cfdc26-09ac-ef11-b817-9319f1798f89&type=1",
+          "source_title": "Swish Ventures - IVC Data & Insights",
+          "source_content_hash": "1815792aed301cc6ca6b4a0a3b88cdd136b7d6e15c6cd71413d255bc1c3fc2c9",
+          "quote": "Swish Ventures www.swish.vc Venture Capital Management Company",
+          "quote_hash": "2d2d519f64829b626c63182af6e498098b02864abb231c096704065f8f6dd7a8"
         },
         {
-          "source_id": "air-funding-swish",
+          "source_id": "b38_swish_ivc_team",
+          "source_url": "https://www.ivc-online.com/Google-Card?ID=74cfdc26-09ac-ef11-b817-9319f1798f89&type=1",
+          "source_title": "Swish Ventures - IVC Data & Insights",
+          "source_content_hash": "1815792aed301cc6ca6b4a0a3b88cdd136b7d6e15c6cd71413d255bc1c3fc2c9",
+          "quote": "Mr. Omri Casspi Founding Partner",
+          "quote_hash": "a5d5d8a0d87ec07e74f595399b6fdc8441f1826b65fa2f84205b3aa07dbc13ec"
+        },
+        {
+          "source_id": "b38_swish_air",
           "source_url": "https://www.air.security/blog-posts/out-of-stealth",
           "source_title": "AIR Comes Out of Stealth: A Firewall for AI Agent Context",
-          "source_content_hash": "2456bf2a5801596a340d78014bfa7bd695a019674d6bcc4ca050012bf49f9b5c",
+          "source_content_hash": "b686772588a5a5c9bc748204015aaf283ec7275039f722a4d3ab9a6f4ae87c23",
           "quote": "the funds who believed in us and invested in AIR - Sequoia, Greenoaks, Swish, Netz, and TTP",
           "quote_hash": "0b006e9b198075faeb7be46c2516ab5c3d3b91fb084c46708f41205f2df4bb01"
         },
@@ -79544,8 +79691,7 @@
           "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
           "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "INV-adada0197df8a6": {
       "profile_type": "person",
@@ -104999,37 +105145,53 @@
     "INV-ff7540cb44cae0": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅据BlueFocus官网和PixVerse官方融资公告核验品牌身份与一项公开投资活动；未将其映射到未披露的投资部门或基金。",
-      "summary": "BlueFocus官网将其描述为营销科技公司；PixVerse官方公告称BlueFocus为其C轮扩展的新投资方之一。本档案按公开品牌名称记录该项投资，不推断具体子公司或基金载体。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "BlueFocus 官网将蓝色光标描述为营销科技公司，并介绍其营销服务、数字广告、国际业务和相关服务。PixVerse 官方融资公告将 BlueFocus 列为 C 轮扩展的新投资者之一。本档案按公告中的品牌名称记录活动，不推断具体投资部门或基金载体。",
+      "coverage_note": "PixVerse 公告未披露 BlueFocus 的具体出资法人、基金载体或单独投资额；官网业务介绍用于说明企业身份，不作为基金属性证明。",
+      "facts": [
+        {
+          "field": "organization_background",
+          "label": "官网公布的业务定位",
+          "value": "蓝色光标官网将公司定位为营销科技公司，并列出其营销服务及数字广告业务。",
+          "source_id": "b38_bluefocus_identity"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "PixVerse官方公告将BlueFocus列为C轮扩展的新投资方。",
-          "source_id": "pixverse-series-c-extension-bluefocus"
+          "description": "PixVerse 官方公告将 BlueFocus 列为 C 轮扩展的新投资者之一；未披露其单独投资额或基金载体。",
+          "source_id": "b38_bluefocus_pixverse"
         },
         {
           "description": "融资来源记录：PixVerse · C轮扩展 · 2026-07-13 · 本轮参投 · $439 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-002776ecfe7ba6a0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "BlueFocus",
+          "url": "https://www.bluefocus.com/about/",
+          "source_id": "b38_bluefocus_identity"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅据BlueFocus官网和PixVerse官方融资公告核验品牌身份与一项公开投资活动；未将其映射到未披露的投资部门或基金。",
+      "experience_summary": "BlueFocus 官网提供企业业务背景，PixVerse 官方公告确认一项融资参与记录。",
       "sources": [
         {
-          "source_id": "bluefocus-official-profile",
-          "source_url": "https://www.bluefocus.com/",
-          "source_title": "蓝色光标集团-BlueFocus",
-          "source_content_hash": "3898ef3473029d3ae427b3666a85333de5cf1617b35017f5fd50a192474981a5",
-          "quote": "致力于成为一家在大数据和社交网络时代为企业智慧经营全面赋能的营销科技公司",
-          "quote_hash": "f5d45aea50370f862f8ab5d601575b90b17f4b98cdd06c88e0ae9e6ff09ea9e0"
+          "source_id": "b38_bluefocus_identity",
+          "source_url": "https://www.bluefocus.com/about/",
+          "source_title": "关于蓝标_蓝色光标集团-BlueFocus",
+          "source_content_hash": "f79aa50875803a6fb9bceccc0b88d442539e49220512dd3d86aa773151cfea44",
+          "quote": "蓝色光标是一家为企业智慧经营全面赋能的营销科技公司。",
+          "quote_hash": "fcb7fc163dd5eee4f1c3e4e3c9d2cb03cce94bb47ac41e269ec33850037d792a"
         },
         {
-          "source_id": "pixverse-series-c-extension-bluefocus",
+          "source_id": "b38_bluefocus_pixverse",
           "source_url": "https://pixverse.blog/en/updates/pixverse-closes-series-c-extension-and-announces-expansion-into-interactive-entertainment/",
           "source_title": "PixVerse Closes Series C Extension, Bringing Total to USD 439 Million, and Announces Expansion Into Interactive Entertainment",
           "source_content_hash": "863f67776d8f5b99d2407ba462f4692c7466d82565b247eb01a0625b6f56f777",
@@ -105044,8 +105206,7 @@
           "quote": "PixVerse said that investors in the extension round include Alibaba, Lollapalooza Capital, Ivy Capital, Grand Mount Capital, Eastern Bell Capital, Mirae Asset, BlueFocus, and CloudAlpha, joining returning investors iGlobe Partners and OCBC’s Lion X Ventures.",
           "quote_hash": "e5a8e278829adf97feebafc8274fdaa9ac9b4ff38b56fb6bc45d2b16fb673068"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "INV-e36b6c578d3ec4": {
       "profile_type": "organization",
@@ -122826,34 +122987,72 @@
     "INV-fe742256ee98a4": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅据Pool官方LinkedIn公告记录个人投资者姓名；该来源未披露投资金额或其他个人背景。",
-      "summary": "Pool的官方LinkedIn融资公告将Thomas Ricouard列为参与其200万美元融资的个人投资者；本档案仅记录该公告中的投资活动，不附加其他职业或履历。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Thomas Ricouard 的个人网站自述其从事 Developer Experience 工作、参与 Codex @ OpenAI，并开发 iOS/macOS 应用。TechCrunch 对 Pool 融资的报道将 Thomas Ricouard 列为参与其超过 200 万美元 pre-seed 的天使投资人之一。公开来源未披露其个人出资金额。",
+      "coverage_note": "人物身份与公开职业简介来自本人网站；投资记录来自 TechCrunch 对 Pool 融资的报道，未据此扩展其他个人投资组合或推断金额。",
+      "facts": [
+        {
+          "field": "public_role",
+          "label": "本人网站自述的职业信息",
+          "value": "本人网站自述从事 Developer Experience 工作，并写有 Codex @ OpenAI。",
+          "source_id": "b38_thomas_role"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Pool官方LinkedIn公告称其完成200万美元融资，并将Thomas Ricouard列入参与者。",
-          "source_id": "pool-official-linkedin-thomas-ricouard"
+          "description": "TechCrunch 报道将 Thomas Ricouard 列为 Pool 超过 200 万美元 pre-seed 融资中的天使投资人之一；未披露其个人投资金额。",
+          "source_id": "b38_thomas_pool"
         },
         {
           "description": "融资来源记录：Pool · 预种子轮 · 2026-06-11 · 本轮参投 · over $2 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5497463d6c7b6acf"
         }
       ],
-      "contacts": [],
-      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "个人网站",
+          "value": "Thomas Ricouard",
+          "url": "https://www.dimillian.app/",
+          "source_id": "b38_thomas_identity"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Developer Experience",
+          "organization": "OpenAI",
+          "source_id": "b38_thomas_role"
+        }
+      ],
       "career": [],
       "education": [],
-      "experience_summary": "仅据Pool官方LinkedIn公告记录个人投资者姓名；该来源未披露投资金额或其他个人背景。",
+      "experience_summary": "本人网站提供身份与职业简介，TechCrunch 报道支持一项 Pool 融资中的天使投资人记录。",
       "sources": [
         {
-          "source_id": "pool-official-linkedin-thomas-ricouard",
-          "source_url": "https://www.linkedin.com/company/poolday",
-          "source_title": "Pool | LinkedIn",
-          "source_content_hash": "f0f3b386a84f608da3c456640ccbf3a6f3264542965a60eaed994f01197113e0",
-          "quote": "participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard",
-          "quote_hash": "d1910f9526fadfcb28afebd099233093fa33c0d0309c44bfb042db2bf341a149"
+          "source_id": "b38_thomas_identity",
+          "source_url": "https://www.dimillian.app/",
+          "source_title": "About me",
+          "source_content_hash": "d6806980efb76e5c18823c71912c8ab1ffef838dcf05dd90e39672a288fd7a67",
+          "quote": "Thomas Ricouard",
+          "quote_hash": "7d5a13b0159296c8c9b66730c2bbcde1b0d5e1793a7d5e6769a997b5948cf820"
+        },
+        {
+          "source_id": "b38_thomas_role",
+          "source_url": "https://www.dimillian.app/",
+          "source_title": "About me",
+          "source_content_hash": "d6806980efb76e5c18823c71912c8ab1ffef838dcf05dd90e39672a288fd7a67",
+          "quote": "Developer Experience, Builder, Codex @OpenAI",
+          "quote_hash": "8a34515d20df182326e44a7e460fd7853791287ae02ba66dfad92b5887ec3c51"
+        },
+        {
+          "source_id": "b38_thomas_pool",
+          "source_url": "https://techcrunch.com/2026/06/11/pools-new-app-turns-your-screenshots-into-a-searchable-memory-bank/",
+          "source_title": "Pool&#039;s new app turns your screenshots into something useful | TechCrunch",
+          "source_content_hash": "5fbf6cf322f2644c1387b470575859ca7751b8a52f513279f9ca791213195432",
+          "quote": "other angels, including Winston Du, Julian Blessin, and Thomas Ricouard.",
+          "quote_hash": "9eaa032f5b741af0b24ae01894c7f02389d90c1838cc6e0572b1558587e83781"
         },
         {
           "source_id": "FISRC-5497463d6c7b6acf",
@@ -122863,8 +123062,7 @@
           "quote": "We've raised $2M in funding led by General Catalyst with participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard",
           "quote_hash": "f1e7ec5228f3eb91be682ce6d6229008b01e75fc596d42a30083fee56f24f08f"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "INV-61b007fd09b9ea": {
       "profile_type": "unverified",
@@ -127758,15 +127956,29 @@
     "INV-feb07ed443ec97": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录华清未央融资报道中的“盛世投资”公开投资者标签。投资界机构资料将其关联至北京盛世宏明投资基金管理有限公司；官方披露确认该公司管理其他私募基金，但未证明具体用于华清未央交易的基金载体。",
-      "summary": "新浪财经转载的投中网报道将盛世投资列为华清未央Pre-A轮投资方。投资界机构资料将该品牌关联到北京盛世宏明投资基金管理有限公司；港交所披露文件确认后者担任一支集成电路投资基金的管理人/执行事务合伙人。现有来源未确认华清未央交易的具体基金或出资载体。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "新浪财经转引的投中网报道将“盛世投资”列为华清未央 Pre-A 轮投资方。投资界机构资料将该品牌关联至北京盛世宏明投资基金管理有限公司；基金业协会另有基金公示记录确认该公司担任其他基金的管理人。本档案不认定该管理公司或其某只基金就是华清未央交易的出资主体。",
+      "coverage_note": "盛世投资与北京盛世宏明的对应关系依据投资界机构资料；基金业协会公示的是另一支基金的管理人，不能证明华清未央交易使用该载体。融资报道没有披露单笔出资额。",
+      "facts": [
+        {
+          "field": "reported_identity_mapping",
+          "label": "行业机构资料中的品牌对应关系",
+          "value": "投资界机构资料将“盛世投资”与北京盛世宏明投资基金管理有限公司并列对应。",
+          "source_id": "b38_shengshi_brand"
+        },
+        {
+          "field": "registered_manager",
+          "label": "基金业协会公示的管理人记录",
+          "value": "基金业协会一支基金的公示信息列北京盛世宏明投资基金管理有限公司为基金管理人；该记录不对应华清未央的投资载体。",
+          "source_id": "b38_shengshi_amac"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "华清未央Pre-A轮融资报道将盛世投资列在投资方名单中；报道未披露具体基金载体。",
-          "source_id": "huaqing-pre-a-sina"
+          "description": "新浪财经转引的投中网报道将盛世投资列入华清未央 Pre-A 轮投资方；未披露出资基金或单笔金额。",
+          "source_id": "b38_shengshi_round"
         },
         {
           "description": "融资来源记录：华清未央 · Pre-A轮 · 2026-06-01 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -127777,18 +127989,18 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅记录华清未央融资报道中的“盛世投资”公开投资者标签。投资界机构资料将其关联至北京盛世宏明投资基金管理有限公司；官方披露确认该公司管理其他私募基金，但未证明具体用于华清未央交易的基金载体。",
+      "experience_summary": "来源支持盛世投资的公开参投标签、品牌与管理机构的第三方对应信息，以及管理人担任其他基金管理人的监管记录；交易载体仍未确认。",
       "sources": [
         {
-          "source_id": "huaqing-pre-a-sina",
+          "source_id": "b38_shengshi_round",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-01/doc-inhzwisx2581224.shtml",
           "source_title": "华清未央完成超亿元Pre-A轮融资_新浪科技_新浪网",
           "source_content_hash": "9582eb19b5f75f65080b5711341db31540db1336c2ec6f32d92f5dda7c3e44a1",
-          "quote": "投资方包括安赐资本、华屹资本、盛世投资、芯能创投",
-          "quote_hash": "20627b41f27b12d25e4f7898ea2dc07bb2daf658dde4b4c9ad01952cfc89b510"
+          "quote": "投资方包括安赐资本、华屹资本、盛世投资、芯能创投、洪泰基金、辛夷投资、海德资本、瀚晖资本等",
+          "quote_hash": "e6f1ce4ea3834a3e001f0edae979a05a690aed6dd030ed064eee879a97c1273a"
         },
         {
-          "source_id": "shengshi-brand-directory",
+          "source_id": "b38_shengshi_brand",
           "source_url": "https://zdb.pedaily.cn/company/show8932/",
           "source_title": "盛世投资_北京盛世宏明投资基金管理有限公司_投资界",
           "source_content_hash": "946144d591c9225c107cbad49c873c1e499814d4eb78d0384f9d5d305a960e3d",
@@ -127796,12 +128008,12 @@
           "quote_hash": "cbef9ded7dc1fb30901b5b104d19393cfb7fc95ac46e13ae00192cd8a61a5856"
         },
         {
-          "source_id": "shengshi-manager-hkex",
-          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0512/2026051200566_c.pdf",
-          "source_title": "中芯国际集成电路制造有限公司发行股份购买资产暨关联交易报告书",
-          "source_content_hash": "17900cffad5f75f89f32a0acd27521db99c61306c15f596a7eae288c169335cc",
-          "quote": "执行事务合伙人为北京盛世宏明投资基金管理有限公司",
-          "quote_hash": "a01797ac9e5da8d3583c247231ea9061f8537c2e929b2a66b3ddc8951cd533a5"
+          "source_id": "b38_shengshi_amac",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/fund/351000141887.html",
+          "source_title": "私募基金公示 - 中国证券投资基金业协会",
+          "source_content_hash": "73f8d5acba63d2b1024113f443627c7289e19961f94b13ab368693b0f0ad6dc7",
+          "quote": "基金管理人名称: 北京盛世宏明投资基金管理有限公司",
+          "quote_hash": "6f9b18f65bf9f4618b426ed79b0d9b00e31215a5ce0dc0948d95abe9f19fad7f"
         },
         {
           "source_id": "FISRC-c8f7d3c7af4bc00a",
@@ -127811,8 +128023,7 @@
           "quote": "投资方包括安赐资本、华屹资本、盛世投资、芯能创投、洪泰基金、辛夷投资、海德资本、瀚晖资本等",
           "quote_hash": "e6f1ce4ea3834a3e001f0edae979a05a690aed6dd030ed064eee879a97c1273a"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "INV-b3a03d30985f67": {
       "profile_type": "organization",
@@ -185029,15 +185240,23 @@
     "INV-fe96ba2aa41114": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅据一则融资报道记录“领屹资本”这一投资者标签；未将其映射到相似名称的基金管理人或其他法律主体。",
-      "summary": "新华日报财经报道将“领屹资本”列为知跃空间智能融资参与方。现有材料未披露该标签对应的法律实体或基金产品，本档案只保留该项公开投资活动。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "新华日报财经报道将“领屹资本”列为知跃空间连续融资的参与机构之一。本档案保留来源明确使用的机构名称及这项投资者披露；现有证据没有确认对应法律实体、管理人、基金产品或出资金额。",
+      "coverage_note": "该来源只提供“领屹资本”这一投资者标签，未给出法律名称或基金载体；未将其与名称相似的其他机构、管理人合并。",
+      "facts": [
+        {
+          "field": "reported_investor_label",
+          "label": "媒体披露的投资机构名称",
+          "value": "新华日报财经将“领屹资本”列入知跃空间融资的联合参与机构名单。",
+          "source_id": "b38_lingyi_zhiyue"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "新华日报财经报道知跃空间智能于2026年4月完成连续融资，并将领屹资本列为参与机构之一。",
-          "source_id": "lingyi-zhiyue-financing"
+          "description": "新华日报财经报道知跃空间于 2026 年 4 月连续完成融资，并将“领屹资本”列为联合参与机构之一；未披露具体基金或出资金额。",
+          "source_id": "b38_lingyi_zhiyue"
         },
         {
           "description": "融资来源记录：知跃空间智能 · 历史轮次未披露 · 天使+++轮与天使++++轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -185048,15 +185267,15 @@
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅据一则融资报道记录“领屹资本”这一投资者标签；未将其映射到相似名称的基金管理人或其他法律主体。",
+      "experience_summary": "当前可核实的资料限于新华日报财经关于一项融资的机构名单；法律主体和完整机构背景仍待独立来源确认。",
       "sources": [
         {
-          "source_id": "lingyi-zhiyue-financing",
+          "source_id": "b38_lingyi_zhiyue",
           "source_url": "https://www.xhby.net/content/s69de2be0e4b0bea6a5ad2846.html",
           "source_title": "创投观察站｜“赛博果蝇”引爆脑科学赛道，无锡这家类脑公司一个月连融两轮",
           "source_content_hash": "600febcbb4617cb8323ba90c32985ee2c35200ea2850a39209143d9b24b8ab38",
-          "quote": "驰星资本、领屹资本等多家机构联合入局",
-          "quote_hash": "578da85479fa04524be62cfcd6f4f1dd2bc1bccebd22ba1a3c329fe4afb2879d"
+          "quote": "驰星资本、领屹资本等多家机构联合入局。",
+          "quote_hash": "54f0994a3c6d9edf8f68321c879b1339a4a22bcc4bc44b46bbc3408c6f366b93"
         },
         {
           "source_id": "FISRC-a95bc04f597cc922",
@@ -185066,8 +185285,7 @@
           "quote": "驰星资本、领屹资本等多家机构联合入局。",
           "quote_hash": "54f0994a3c6d9edf8f68321c879b1339a4a22bcc4bc44b46bbc3408c6f366b93"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "INV-507d2ccaaa1a20": {
       "summary": "西安龙鼎投资管理有限公司是一家成立于2014年的投资管理公司，官网介绍其专注半导体、新能源和信息技术等硬科技领域。",
@@ -204318,21 +204536,75 @@
       ]
     },
     "INV-0d4b78e303c9c6": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Headline Asia 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Headline 官网将其亚洲业务称为 Asia Early Fund，称该基金在日本、台湾、韩国和东南亚早期投资，并覆盖 Seed 至 Series A。GMI Cloud 的官方融资公告将 Headline Asia 列为其 8,200 万美元 Series A 的领投方。官方资料足以核验其亚洲风险投资基金身份及一项公开参投活动。",
+      "coverage_note": "GMI Cloud 公告披露的 8,200 万美元同时包含股权和债务融资，未披露 Headline Asia 的单笔投资额或具体基金载体。",
+      "facts": [
+        {
+          "field": "fund_identity",
+          "label": "官网公布的亚洲基金名称",
+          "value": "Headline 官网将其亚洲业务称为 Asia Early Fund。",
+          "source_id": "b38_headline_asia_fund"
+        },
+        {
+          "field": "investment_scope",
+          "label": "官网公布的区域投资范围",
+          "value": "官网称该亚洲基金面向日本、台湾、韩国和东南亚的创业公司。",
+          "source_id": "b38_headline_asia_scope"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "GMI Cloud 官方公告将 Headline Asia 列为其 8,200 万美元 Series A 的领投方；融资总额含股权和债务，不代表 Headline Asia 的单独投资额。",
+          "source_id": "b38_headline_gmi"
+        },
         {
           "description": "融资来源记录：GMI Cloud · 历史轮次未披露 · 历史轮次（Series A）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c7886d241de91af6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "亚洲基金官网页面",
+          "value": "Headline Asia Early Fund",
+          "url": "https://headline.com/funds/asia-early-fund/",
+          "source_id": "b38_headline_asia_fund"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Headline 官网确认亚洲早期基金的名称、地域和阶段；GMI Cloud 官方公告确认一项由 Headline Asia 领投的 Series A。",
       "sources": [
+        {
+          "source_id": "b38_headline_asia_fund",
+          "source_url": "https://headline.com/funds/asia-early-fund/",
+          "source_title": "Asia | Headline",
+          "source_content_hash": "f7f93803680e8f377c88f6e98f873c7cc87fbc1c32478016c34d0cc003ceed8d",
+          "quote": "Asia Early Fund",
+          "quote_hash": "e01cc5150a16412086784843b6d9e9bd2274a085653e115258b3f20d01cc97ec"
+        },
+        {
+          "source_id": "b38_headline_asia_scope",
+          "source_url": "https://headline.com/funds/asia-early-fund/",
+          "source_title": "Asia | Headline",
+          "source_content_hash": "f7f93803680e8f377c88f6e98f873c7cc87fbc1c32478016c34d0cc003ceed8d",
+          "quote": "partners early with founders across Japan, Taiwan, Korea, and Southeast Asia",
+          "quote_hash": "eafbb154161f983f22314dced1d316d7da2eaf9c6f5e2eee847c425c9eb431fd"
+        },
+        {
+          "source_id": "b38_headline_gmi",
+          "source_url": "https://www.gmicloud.ai/ko/blog/gmi-cloud-secures-82-million-series-a-funding",
+          "source_title": "GMI Cloud Raises $82M Series A | GMI Cloud Blog",
+          "source_content_hash": "2eb2b0e179e474cf8262dfd1f50ac31243c2db48e0331c48670ebf6ae02949a6",
+          "quote": "led by Headline Asia",
+          "quote_hash": "34fb0468e4bd4c8fa4fbca328966aa2aa772cffc01e76e94f1e5637e40ef756e"
+        },
         {
           "source_id": "FISRC-c7886d241de91af6",
           "source_url": "https://www.caplight.com/company/gmicloud",
@@ -204341,8 +204613,7 @@
           "quote": "GMI Cloud investorsInvestorRoundsInfinity VenturesDebt, Series ATranscend Capital PartnersSeries AHeadline AsiaSeries A",
           "quote_hash": "d135b7c09569bf38ec28990fc428a0d49d18a7158023c73e4c818183b8fa8679"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "INV-503002d3286a01": {
       "summary": "HELIAD 采用常青投资结构；官网称其通过全资早期投资工具 Collective Ventures 投资种子前至 A 轮，并以资产负债表投资成长阶段企业。",
@@ -207072,34 +207343,78 @@
     "INV-fd263b70357a88": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录Korea Investment Partners官网组合页列出的Good Mood Holdings Limited；页面未披露投资基金、日期或条款。",
-      "summary": "Korea Investment Partners官方组合页列出Good Mood Holdings Limited。本档案只保留官网公开的组合关系，不推断具体基金、出资时间或法律载体。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Korea Investment Holdings 官网将 Korea Investment Partners 列为集团业务之一；KIP 官方组合数据列出 Good Mood Holdings Limited。东方财富对好心情融资历程的报道也将 KIP 列入此前六轮融资的二十余家投资方。本档案确认机构品牌和公开披露的组合线索，不推断具体基金载体、单轮出资时间或金额。",
+      "coverage_note": "KIP 官方组合数据列有 Good Mood Holdings Limited；东方财富按六轮融资汇总投资者，未将 KIP 对应到单一轮次或投资工具。",
+      "facts": [
+        {
+          "field": "organization_identity",
+          "label": "集团官网列示的投资业务",
+          "value": "Korea Investment Holdings 官网的集团业务列表包含 Korea Investment Partners。",
+          "source_id": "b38_kip_group"
+        },
+        {
+          "field": "portfolio_evidence",
+          "label": "官方组合数据",
+          "value": "KIP 官方组合数据列出 Good Mood Holdings Limited。",
+          "source_id": "b38_kip_portfolio"
+        },
+        {
+          "field": "reported_investor",
+          "label": "融资历程中的投资者披露",
+          "value": "东方财富报道将 KIP 列为好心情此前六轮融资的二十余家投资方之一，未对应至某一轮。",
+          "source_id": "b38_kip_goodmood_rounds"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Korea Investment Partners官方组合页列出Good Mood Holdings Limited。",
-          "source_id": "kip-official-good-mood"
+          "description": "东方财富报道将 KIP 列入好心情此前六轮融资的二十余家投资方；KIP 官方组合数据亦列出 Good Mood Holdings Limited。来源未披露 KIP 的单笔金额、基金载体或具体轮次。",
+          "source_id": "b38_kip_goodmood_rounds"
         },
         {
           "description": "融资来源记录：好心情（Good Mood） · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fd10d8d231daf83d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方组合数据",
+          "value": "Korea Investment Partners",
+          "url": "https://kipvc.co.kr",
+          "source_id": "b38_kip_portfolio"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅记录Korea Investment Partners官网组合页列出的Good Mood Holdings Limited；页面未披露投资基金、日期或条款。",
+      "experience_summary": "集团官网确认 Korea Investment Partners 的集团关联，KIP 官方组合数据列出 Good Mood Holdings Limited；第三方融资报道提供跨轮次投资者披露。未扩写为完整组合。",
       "sources": [
         {
-          "source_id": "kip-official-good-mood",
-          "source_url": "https://partners.koreainvestment.com/portfolio",
-          "source_title": "Korea Investment Partners",
-          "source_content_hash": "2ed8a23f03117ccfb2120434d56df7f7327693dae9552dc9d2aaca1278252d8e",
+          "source_id": "b38_kip_group",
+          "source_url": "https://www.koreainvestment.com/en/index",
+          "source_title": "Korea Investment Holdings Co., Ltd.",
+          "source_content_hash": "16fbf42dd5119efc34d8276767444e842adef9930fe86db170874b648a8fd84a",
+          "quote": "Korea Investment Partners",
+          "quote_hash": "00d85a46099a652dd4ef84c5de76479e136aa7c979019a1ff8b8e5c7102fa9f8"
+        },
+        {
+          "source_id": "b38_kip_portfolio",
+          "source_url": "https://kipvc.co.kr/api/portfolio-mysql.php",
+          "source_title": "Korea Investment Partners Portfolio",
+          "source_content_hash": "6c9c23feb309da47010e1bdd58968a7318e2964473a71236de32300ed20351bd",
           "quote": "Good Mood Holdings Limited",
           "quote_hash": "2ed8a23f03117ccfb2120434d56df7f7327693dae9552dc9d2aaca1278252d8e"
+        },
+        {
+          "source_id": "b38_kip_goodmood_rounds",
+          "source_url": "https://caifuhao.eastmoney.com/news/20260930080532421516720",
+          "source_title": "【首发】好心情完成近3亿元新一轮融资，加速 AI 创新与国际化布局_财富号_东方财富网",
+          "source_content_hash": "9d39dde567d7d186e3a836ac321d94eaec4181b6a9f280f008c6189a4ebce7fe",
+          "quote": "此前，好心情已经完成六轮融资，投资方包括字节跳动、中信医疗基金、恩华药业、复星健康、通和毓承、KIP等二十余家机构。",
+          "quote_hash": "e9440b3c6f0c7b8e2cf505d9d8676a49ce8f59e2813a282bede88e46d3298b09"
         },
         {
           "source_id": "FISRC-fd10d8d231daf83d",
@@ -207109,8 +207424,7 @@
           "quote": "此前，好心情已经完成六轮融资，投资方包括字节跳动、中信医疗基金、恩华药业、复星健康、通和毓承、KIP等二十余家机构。",
           "quote_hash": "e9440b3c6f0c7b8e2cf505d9d8676a49ce8f59e2813a282bede88e46d3298b09"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "INV-aae603dade95c8": {
       "summary": "Koch Disruptive Technologies（KDT）是 Koch 公司体系内的技术投资部门，官方资料称其可从种子期投资至后期成长阶段，关注网络安全、半导体、企业软件与能源。Gatik 的2021年官方公告确认，8500万美元B轮由新投资方 KDT 领投；Koch 官网仍将 Gatik 列为 KDT 投资组合公司。",
@@ -208733,31 +209047,53 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-fe348d7b7b953b": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "person",
-      "summary": "Evantic 官网将 Matt Miller 列为创始人兼管理合伙人，并称他有 13 年 Sequoia Capital 从业经历；n8n 官方公告将 Evantic 列为其 1.8 亿美元 Series C 参投方。此处记录机构参与，不把基金融资金额归为个人出资。",
-      "coverage_note": "人物背景来自 Evantic 官网，机构参投来自 n8n 官方公告。无法复核的旧 LinkedIn 种子轮线索不纳入人物投资履历。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Evantic 官网将 Matt Miller 列为创始人兼管理合伙人，并称他有 13 年 Sequoia Capital 从业经历。n8n 官方融资公告将 Evantic 列为其 1.8 亿美元 Series C 的参与方。本档案区分 Matt Miller 的个人经历与 Evantic 的机构投资，不将公司融资额视作个人出资。",
+      "coverage_note": "人物职务和经历来自 Evantic 自身介绍；n8n 公告确认的是机构 Evantic 参与融资，没有披露 Matt Miller 个人投资额。",
+      "facts": [
+        {
+          "field": "founder_background",
+          "label": "官网披露的创立及从业经历",
+          "value": "Evantic 官网称 Matt Miller 创立 Evantic，并有 13 年 Sequoia Capital 从业经历。",
+          "source_id": "b38_matt_background"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "人物背景来自 Evantic 官网，机构参投来自 n8n 官方公告。无法复核的旧 LinkedIn 种子轮线索不纳入人物投资履历。",
       "track_record": [
         {
-          "description": "Matt Miller 创立并管理 Evantic Capital；n8n 官方公告将 Evantic 列为其 2025 年 10 月 1.8 亿美元 Series C 的参投方。",
-          "source_id": "matt_evantic_n8n_series_c"
+          "description": "n8n 官方公告将 Evantic 列为其 Series C 参投方；此为机构投资记录，不代表 Matt Miller 的个人投资。",
+          "source_id": "b38_matt_n8n"
         },
         {
           "description": "融资来源记录：n8n GmbH · 种子轮 · 种子轮联合领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f6319614d583c9a4"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "任职机构官网",
+          "value": "Evantic",
+          "url": "https://www.evantic.ai/",
+          "source_id": "b38_matt_role"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Founder & Managing Partner",
+          "organization": "Evantic",
+          "source_id": "b38_matt_role"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Evantic 官网核验了 Matt Miller 的创始及管理职务、从业背景；n8n 官方公告补充一项由 Evantic 参与的融资记录。",
       "sources": [
         {
-          "source_id": "matt_evantic_role",
+          "source_id": "b38_matt_role",
           "source_url": "https://www.evantic.ai/",
           "source_title": "Evantic",
           "source_content_hash": "b5bd819e21e3f6ee5950469dc8df2cd60cf98900776ac4da4f979fe6cfcd27bb",
@@ -208765,7 +209101,7 @@
           "quote_hash": "ef4bb5240efe02128d2bd69aa0154058d03d86e94c3e4d624a4ed642dd9ee845"
         },
         {
-          "source_id": "matt_evantic_background",
+          "source_id": "b38_matt_background",
           "source_url": "https://www.evantic.ai/",
           "source_title": "Evantic",
           "source_content_hash": "b5bd819e21e3f6ee5950469dc8df2cd60cf98900776ac4da4f979fe6cfcd27bb",
@@ -208773,7 +209109,7 @@
           "quote_hash": "9922cfe027eca62f47d2a8bdb550b8a3dbb8ae2898f242fb06b4beca57ce8caf"
         },
         {
-          "source_id": "matt_evantic_n8n_series_c",
+          "source_id": "b38_matt_n8n",
           "source_url": "https://blog.n8n.io/series-c/",
           "source_title": "n8n raises $180m to get AI closer to value with orchestration – n8n Blog",
           "source_content_hash": "8d60729cef8f36b823c7267a41e668ab6c31771992d45c99d3d9daa11d8fe613",
@@ -208788,8 +209124,7 @@
           "quote": "alongside Matt Miller (Sequoia Capital, Evantic Capital)",
           "quote_hash": "af2641764cee7324d653b90d802c3dd1635f6f181c4fa05d940b697419949259"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-1bd5c74a920c89": {
       "profile_type": "organization",

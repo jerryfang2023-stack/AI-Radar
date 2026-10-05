@@ -139,19 +139,79 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Klass Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Klass Capital 官网称其关注成长阶段、年收入不超过 1,500 万美元的 B2B 科技企业，并披露其软件投资与创始人支持取向。Atomic 的融资新闻稿称其 1,250 万美元 A 轮由 Klass Capital 和 Madrona 领投，并有 Klass 的 Adrian Schauer 加入董事会。此处仅记录公开的机构方向和一项投资披露。",
+      "coverage_note": "Atomic 新闻稿未披露 Klass Capital 的单独出资金额或具体基金载体；机构官网公布的投资指标为自述资料，不等于完整组合或业绩核验。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网公布的投资标准",
+          "value": "Klass Capital 官网称其关注年收入不超过 1,500 万美元的成长阶段 B2B 科技企业。",
+          "source_id": "b38_klass_strategy"
+        },
+        {
+          "field": "board_role",
+          "label": "Atomic 董事会参与",
+          "value": "Atomic 新闻稿称 Klass Capital 的 Adrian Schauer 加入公司董事会。",
+          "source_id": "b38_klass_board"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-09-29",
+          "description": "Atomic 新闻稿披露其完成 1,250 万美元 A 轮融资，由 Klass Capital 和 Madrona 领投。",
+          "source_id": "b38_klass_round"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Atomic 新闻稿称其 1,250 万美元 A 轮由 Klass Capital 和 Madrona 领投；融资总额不代表 Klass 的单独出资额。",
+          "source_id": "b38_klass_round"
+        },
         {
           "description": "融资来源记录：Atomic · A轮 · 2026-09-29 · 本轮领投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d4e6ae2384112548"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Klass Capital",
+          "url": "https://www.klass.com/",
+          "source_id": "b38_klass_strategy"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构官网提供成长阶段 B2B 科技投资标准；Atomic 新闻稿披露 Klass 参与并领投其 A 轮。未将融资总额归为 Klass 的投资额。",
       "sources": [
+        {
+          "source_id": "b38_klass_strategy",
+          "source_url": "https://www.klass.com/",
+          "source_title": "Klass Capital",
+          "source_content_hash": "36b98be378a6feb8c8ebc35e0d993e91fe235bbca84a94b89ec09895e028b37d",
+          "quote": "Growth-stage B2B technology businesses with up to $15M of revenue.",
+          "quote_hash": "97cd1cc580239178bada149cd2a4c71fe855da3f6a5763badd444386f4f5dbd4"
+        },
+        {
+          "source_id": "b38_klass_round",
+          "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",
+          "source_title": "Atomic Raises $12.5M to Build the AI Control System for Physical Goods Companies",
+          "source_content_hash": "4407db855b53b27a11ae071df8065303eff58def7cc749555b224b191261ea35",
+          "quote": "a $12.5 million Series A led by Klass Capital and Madrona.",
+          "quote_hash": "f3a62ae792f65a1ad6950aa58b9bece96976a34356318798dd92a0a217c9c7c6"
+        },
+        {
+          "source_id": "b38_klass_board",
+          "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",
+          "source_title": "Atomic Raises $12.5M to Build the AI Control System for Physical Goods Companies",
+          "source_content_hash": "4407db855b53b27a11ae071df8065303eff58def7cc749555b224b191261ea35",
+          "quote": "Adrian Schauer of Klass Capital and Matt McIlwain of Madrona join Atomic's board.",
+          "quote_hash": "86f01579929bb3cddf02c17ba7e2c23e64f19259624dd86530ac01aae1986c83"
+        },
         {
           "source_id": "FISRC-d4e6ae2384112548",
           "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",
@@ -160,8 +220,7 @@
           "quote": "a $12.5 million Series A led by Klass Capital and Madrona",
           "quote_hash": "eb3e22a379bd9ff21198d97a8805a59cdddb29f1a8f100076c8ba6c9f5742cb4"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     }
   }
 }

@@ -139,40 +139,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅据Swish Ventures公司页面和AIR官方公告确认机构名称及一项公开投资活动；交易载体与金额未披露。",
-      "summary": "Swish Ventures的LinkedIn公司页面将其归为风险投资与私募股权机构，并称基金代表机构投资者投资。AIR官方博客将Swish列为投资其融资的基金之一。本档案只记录AIR这一公开投资活动，不推断具体基金或出资额。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "IVC Data & Insights 将 Swish Ventures 标注为风险投资管理公司，并列出创始合伙人 Omri Casspi；AIR 官方博客将 Swish 列为投资该公司的基金之一。机构数据页注明的联系方式和部分资本数据含占位值，因此本档案仅采用可读的机构类别、团队姓名和发行方融资披露。",
+      "coverage_note": "Swish 官网未提供可用的机构正文；机构背景来自 IVC Data & Insights，AIR 的官方博客确认投资者名称，但均未披露 Swish 对该轮的基金载体或单笔金额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构目录中的类别",
+          "value": "IVC Data & Insights 将 Swish Ventures 标注为风险投资管理公司。",
+          "source_id": "b38_swish_ivc_identity"
+        },
+        {
+          "field": "team",
+          "label": "机构目录列示的创始合伙人",
+          "value": "IVC Data & Insights 将 Omri Casspi 列为创始合伙人。",
+          "source_id": "b38_swish_ivc_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "AIR官方博客将Swish列为参与其融资的基金之一。",
-          "source_id": "air-funding-swish"
+          "description": "AIR 官方博客将 Swish 列为投资 AIR 的基金之一；该公告未披露 Swish 的单笔投资金额。",
+          "source_id": "b38_swish_air"
         },
         {
           "description": "融资来源记录：AIR · 种子轮 · 2026-09-01 · 本轮参投 · $50M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0426e4b3b9347f4f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Swish Ventures",
+          "url": "https://www.swish.vc/",
+          "source_id": "b38_swish_ivc_identity"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅据Swish Ventures公司页面和AIR官方公告确认机构名称及一项公开投资活动；交易载体与金额未披露。",
+      "experience_summary": "机构目录提供了基本机构类别和一项团队信息，AIR 官方资料提供一项参投记录；不采用目录中显示为占位符的管理资本数据。",
       "sources": [
         {
-          "source_id": "swish-company-profile",
-          "source_url": "https://www.linkedin.com/company/swish-ventures",
-          "source_title": "Swish Ventures | LinkedIn",
-          "source_content_hash": "d4d87dd9b9c7a6de8a8c9b4a44af04691b3373facb9d44925959716afadf07d1",
-          "quote": "Venture Capital and Private Equity Principals About us Swish Ventures partners with few exceptional founders each year to build category winners. The fund invests on behalf of leading endowments, pension funds",
-          "quote_hash": "41bb02a2a3e7580c883a8e996ffaaefd74be3d73ce540978cac356535a0a0de2"
+          "source_id": "b38_swish_ivc_identity",
+          "source_url": "https://www.ivc-online.com/Google-Card?ID=74cfdc26-09ac-ef11-b817-9319f1798f89&type=1",
+          "source_title": "Swish Ventures - IVC Data & Insights",
+          "source_content_hash": "1815792aed301cc6ca6b4a0a3b88cdd136b7d6e15c6cd71413d255bc1c3fc2c9",
+          "quote": "Swish Ventures www.swish.vc Venture Capital Management Company",
+          "quote_hash": "2d2d519f64829b626c63182af6e498098b02864abb231c096704065f8f6dd7a8"
         },
         {
-          "source_id": "air-funding-swish",
+          "source_id": "b38_swish_ivc_team",
+          "source_url": "https://www.ivc-online.com/Google-Card?ID=74cfdc26-09ac-ef11-b817-9319f1798f89&type=1",
+          "source_title": "Swish Ventures - IVC Data & Insights",
+          "source_content_hash": "1815792aed301cc6ca6b4a0a3b88cdd136b7d6e15c6cd71413d255bc1c3fc2c9",
+          "quote": "Mr. Omri Casspi Founding Partner",
+          "quote_hash": "a5d5d8a0d87ec07e74f595399b6fdc8441f1826b65fa2f84205b3aa07dbc13ec"
+        },
+        {
+          "source_id": "b38_swish_air",
           "source_url": "https://www.air.security/blog-posts/out-of-stealth",
           "source_title": "AIR Comes Out of Stealth: A Firewall for AI Agent Context",
-          "source_content_hash": "2456bf2a5801596a340d78014bfa7bd695a019674d6bcc4ca050012bf49f9b5c",
+          "source_content_hash": "b686772588a5a5c9bc748204015aaf283ec7275039f722a4d3ab9a6f4ae87c23",
           "quote": "the funds who believed in us and invested in AIR - Sequoia, Greenoaks, Swish, Netz, and TTP",
           "quote_hash": "0b006e9b198075faeb7be46c2516ab5c3d3b91fb084c46708f41205f2df4bb01"
         },
@@ -184,8 +214,7 @@
           "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
           "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     }
   }
 }

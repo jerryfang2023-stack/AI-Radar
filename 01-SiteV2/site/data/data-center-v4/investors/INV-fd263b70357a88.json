@@ -123,34 +123,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录Korea Investment Partners官网组合页列出的Good Mood Holdings Limited；页面未披露投资基金、日期或条款。",
-      "summary": "Korea Investment Partners官方组合页列出Good Mood Holdings Limited。本档案只保留官网公开的组合关系，不推断具体基金、出资时间或法律载体。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Korea Investment Holdings 官网将 Korea Investment Partners 列为集团业务之一；KIP 官方组合数据列出 Good Mood Holdings Limited。东方财富对好心情融资历程的报道也将 KIP 列入此前六轮融资的二十余家投资方。本档案确认机构品牌和公开披露的组合线索，不推断具体基金载体、单轮出资时间或金额。",
+      "coverage_note": "KIP 官方组合数据列有 Good Mood Holdings Limited；东方财富按六轮融资汇总投资者，未将 KIP 对应到单一轮次或投资工具。",
+      "facts": [
+        {
+          "field": "organization_identity",
+          "label": "集团官网列示的投资业务",
+          "value": "Korea Investment Holdings 官网的集团业务列表包含 Korea Investment Partners。",
+          "source_id": "b38_kip_group"
+        },
+        {
+          "field": "portfolio_evidence",
+          "label": "官方组合数据",
+          "value": "KIP 官方组合数据列出 Good Mood Holdings Limited。",
+          "source_id": "b38_kip_portfolio"
+        },
+        {
+          "field": "reported_investor",
+          "label": "融资历程中的投资者披露",
+          "value": "东方财富报道将 KIP 列为好心情此前六轮融资的二十余家投资方之一，未对应至某一轮。",
+          "source_id": "b38_kip_goodmood_rounds"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Korea Investment Partners官方组合页列出Good Mood Holdings Limited。",
-          "source_id": "kip-official-good-mood"
+          "description": "东方财富报道将 KIP 列入好心情此前六轮融资的二十余家投资方；KIP 官方组合数据亦列出 Good Mood Holdings Limited。来源未披露 KIP 的单笔金额、基金载体或具体轮次。",
+          "source_id": "b38_kip_goodmood_rounds"
         },
         {
           "description": "融资来源记录：好心情（Good Mood） · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fd10d8d231daf83d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方组合数据",
+          "value": "Korea Investment Partners",
+          "url": "https://kipvc.co.kr",
+          "source_id": "b38_kip_portfolio"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "仅记录Korea Investment Partners官网组合页列出的Good Mood Holdings Limited；页面未披露投资基金、日期或条款。",
+      "experience_summary": "集团官网确认 Korea Investment Partners 的集团关联，KIP 官方组合数据列出 Good Mood Holdings Limited；第三方融资报道提供跨轮次投资者披露。未扩写为完整组合。",
       "sources": [
         {
-          "source_id": "kip-official-good-mood",
-          "source_url": "https://partners.koreainvestment.com/portfolio",
-          "source_title": "Korea Investment Partners",
-          "source_content_hash": "2ed8a23f03117ccfb2120434d56df7f7327693dae9552dc9d2aaca1278252d8e",
+          "source_id": "b38_kip_group",
+          "source_url": "https://www.koreainvestment.com/en/index",
+          "source_title": "Korea Investment Holdings Co., Ltd.",
+          "source_content_hash": "16fbf42dd5119efc34d8276767444e842adef9930fe86db170874b648a8fd84a",
+          "quote": "Korea Investment Partners",
+          "quote_hash": "00d85a46099a652dd4ef84c5de76479e136aa7c979019a1ff8b8e5c7102fa9f8"
+        },
+        {
+          "source_id": "b38_kip_portfolio",
+          "source_url": "https://kipvc.co.kr/api/portfolio-mysql.php",
+          "source_title": "Korea Investment Partners Portfolio",
+          "source_content_hash": "6c9c23feb309da47010e1bdd58968a7318e2964473a71236de32300ed20351bd",
           "quote": "Good Mood Holdings Limited",
           "quote_hash": "2ed8a23f03117ccfb2120434d56df7f7327693dae9552dc9d2aaca1278252d8e"
+        },
+        {
+          "source_id": "b38_kip_goodmood_rounds",
+          "source_url": "https://caifuhao.eastmoney.com/news/20260930080532421516720",
+          "source_title": "【首发】好心情完成近3亿元新一轮融资，加速 AI 创新与国际化布局_财富号_东方财富网",
+          "source_content_hash": "9d39dde567d7d186e3a836ac321d94eaec4181b6a9f280f008c6189a4ebce7fe",
+          "quote": "此前，好心情已经完成六轮融资，投资方包括字节跳动、中信医疗基金、恩华药业、复星健康、通和毓承、KIP等二十余家机构。",
+          "quote_hash": "e9440b3c6f0c7b8e2cf505d9d8676a49ce8f59e2813a282bede88e46d3298b09"
         },
         {
           "source_id": "FISRC-fd10d8d231daf83d",
@@ -160,8 +204,7 @@
           "quote": "此前，好心情已经完成六轮融资，投资方包括字节跳动、中信医疗基金、恩华药业、复星健康、通和毓承、KIP等二十余家机构。",
           "quote_hash": "e9440b3c6f0c7b8e2cf505d9d8676a49ce8f59e2813a282bede88e46d3298b09"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "translations": {
       "zh-CN": {

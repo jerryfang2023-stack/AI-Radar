@@ -133,21 +133,75 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Headline Asia 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Headline 官网将其亚洲业务称为 Asia Early Fund，称该基金在日本、台湾、韩国和东南亚早期投资，并覆盖 Seed 至 Series A。GMI Cloud 的官方融资公告将 Headline Asia 列为其 8,200 万美元 Series A 的领投方。官方资料足以核验其亚洲风险投资基金身份及一项公开参投活动。",
+      "coverage_note": "GMI Cloud 公告披露的 8,200 万美元同时包含股权和债务融资，未披露 Headline Asia 的单笔投资额或具体基金载体。",
+      "facts": [
+        {
+          "field": "fund_identity",
+          "label": "官网公布的亚洲基金名称",
+          "value": "Headline 官网将其亚洲业务称为 Asia Early Fund。",
+          "source_id": "b38_headline_asia_fund"
+        },
+        {
+          "field": "investment_scope",
+          "label": "官网公布的区域投资范围",
+          "value": "官网称该亚洲基金面向日本、台湾、韩国和东南亚的创业公司。",
+          "source_id": "b38_headline_asia_scope"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "GMI Cloud 官方公告将 Headline Asia 列为其 8,200 万美元 Series A 的领投方；融资总额含股权和债务，不代表 Headline Asia 的单独投资额。",
+          "source_id": "b38_headline_gmi"
+        },
         {
           "description": "融资来源记录：GMI Cloud · 历史轮次未披露 · 历史轮次（Series A）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c7886d241de91af6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "亚洲基金官网页面",
+          "value": "Headline Asia Early Fund",
+          "url": "https://headline.com/funds/asia-early-fund/",
+          "source_id": "b38_headline_asia_fund"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Headline 官网确认亚洲早期基金的名称、地域和阶段；GMI Cloud 官方公告确认一项由 Headline Asia 领投的 Series A。",
       "sources": [
+        {
+          "source_id": "b38_headline_asia_fund",
+          "source_url": "https://headline.com/funds/asia-early-fund/",
+          "source_title": "Asia | Headline",
+          "source_content_hash": "f7f93803680e8f377c88f6e98f873c7cc87fbc1c32478016c34d0cc003ceed8d",
+          "quote": "Asia Early Fund",
+          "quote_hash": "e01cc5150a16412086784843b6d9e9bd2274a085653e115258b3f20d01cc97ec"
+        },
+        {
+          "source_id": "b38_headline_asia_scope",
+          "source_url": "https://headline.com/funds/asia-early-fund/",
+          "source_title": "Asia | Headline",
+          "source_content_hash": "f7f93803680e8f377c88f6e98f873c7cc87fbc1c32478016c34d0cc003ceed8d",
+          "quote": "partners early with founders across Japan, Taiwan, Korea, and Southeast Asia",
+          "quote_hash": "eafbb154161f983f22314dced1d316d7da2eaf9c6f5e2eee847c425c9eb431fd"
+        },
+        {
+          "source_id": "b38_headline_gmi",
+          "source_url": "https://www.gmicloud.ai/ko/blog/gmi-cloud-secures-82-million-series-a-funding",
+          "source_title": "GMI Cloud Raises $82M Series A | GMI Cloud Blog",
+          "source_content_hash": "2eb2b0e179e474cf8262dfd1f50ac31243c2db48e0331c48670ebf6ae02949a6",
+          "quote": "led by Headline Asia",
+          "quote_hash": "34fb0468e4bd4c8fa4fbca328966aa2aa772cffc01e76e94f1e5637e40ef756e"
+        },
         {
           "source_id": "FISRC-c7886d241de91af6",
           "source_url": "https://www.caplight.com/company/gmicloud",
@@ -156,8 +210,7 @@
           "quote": "GMI Cloud investorsInvestorRoundsInfinity VenturesDebt, Series ATranscend Capital PartnersSeries AHeadline AsiaSeries A",
           "quote_hash": "d135b7c09569bf38ec28990fc428a0d49d18a7158023c73e4c818183b8fa8679"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     }
   }
 }

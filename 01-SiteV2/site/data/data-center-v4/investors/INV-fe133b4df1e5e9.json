@@ -139,30 +139,88 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前来源支持单笔参投活动，不足以扩写机构背景、完整组合或业绩。",
-      "summary": "Autoheal 官方公告称，公司 790 万美元种子轮融资由 Innovation Endeavors 领投，并将 Emergent Ventures 列为参投方；本档案仅记录该笔披露。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Emergent Ventures 官网将自身定位为面向企业 AI 创业者的种子阶段投资机构，阶段范围为项目创立至 Pre-Series A。Autoheal 官方公告称其 790 万美元种子轮由 Innovation Endeavors 领投，并将 Emergent Ventures 列为参投方。",
+      "coverage_note": "Autoheal 公告未披露 Emergent Ventures 的单独投资金额或基金载体；官网定位为机构自述，本档案不视作完整投资组合。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网公布的投资阶段",
+          "value": "官网称其投资范围覆盖种子阶段至 Pre-Series A。",
+          "source_id": "b38_emergent_stage"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网公布的投资方向",
+          "value": "官网将 Emergent Ventures 描述为企业 AI 创业者的早期投资机构。",
+          "source_id": "b38_emergent_positioning"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-09-28",
+          "description": "Autoheal 官方公告披露其宣布完成 790 万美元种子轮，Emergent Ventures 参与其中。",
+          "source_id": "b38_emergent_autoheal"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Autoheal 官方公告将 Emergent Ventures 列为其 790 万美元种子轮参投方之一；未披露该机构的单独出资额。",
+          "source_id": "b38_emergent_autoheal"
+        },
         {
           "description": "融资来源记录：Autoheal · 种子轮 · 2026-09-28 · 本轮参投 · $7.9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-212b01f9c4f8d05c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Emergent Ventures",
+          "url": "https://www.emergent.vc/",
+          "source_id": "b38_emergent_positioning"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Emergent Ventures 官网提供阶段、赛道及地域定位；Autoheal 官方融资公告记录一项参投披露。",
       "sources": [
+        {
+          "source_id": "b38_emergent_positioning",
+          "source_url": "https://www.emergent.vc/",
+          "source_title": "Emergent Ventures | Seed-Stage VC for Enterprising Founders",
+          "source_content_hash": "2373c1d59bc7e85bbe9e32f7469b92b1f1a0beb4205deb6583c7493521c317cd",
+          "quote": "The First Choice of Enterprise AI Founders Since 2016",
+          "quote_hash": "34b062b86c28905a81300ac4e6d8efc05fe1f15f73f6559eda1c07424c1b19c3"
+        },
+        {
+          "source_id": "b38_emergent_stage",
+          "source_url": "https://www.emergent.vc/",
+          "source_title": "Emergent Ventures | Seed-Stage VC for Enterprising Founders",
+          "source_content_hash": "2373c1d59bc7e85bbe9e32f7469b92b1f1a0beb4205deb6583c7493521c317cd",
+          "quote": "Seed Inception to Pre-Series A",
+          "quote_hash": "c4b3fe23aaa0c04df533c3d75afc7d280615008cfee60c4110e3a94b140dc202"
+        },
+        {
+          "source_id": "b38_emergent_autoheal",
+          "source_url": "https://autoheal.ai/press-releases/autoheal-funding-to-build-the-self-improving-software-factory",
+          "source_title": "Autoheal raises $7.9M to build a self-improving software factory for enterprises - Autoheal AI",
+          "source_content_hash": "7064fc3c8c80556d7312d1218a2c8cc39938f968186546632b39092cf7a740e7",
+          "quote": "alongside participation from Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures, and Param Hansa Values.",
+          "quote_hash": "9b027c9f2f473f1cc79c5bfd61de6637e3ff551cc7ddca3a9a567f629132090c"
+        },
         {
           "source_id": "FISRC-212b01f9c4f8d05c",
           "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
-          "source_title": "Autoheal raises $7.9M to build the self-improving software factory for enterprises",
-          "source_content_hash": "2b1272abb8d5c05c85d845301f84e59369d8a30887a705beed387411006e85cc",
+          "source_title": "Autoheal 融资 790 万美元，为企业构建自我改进的软件工厂",
+          "source_content_hash": "db9fc8dd24df889f563eb8b09a5c63dfa0a5b96918734e65c10e95c659e10e53",
           "quote": "Today, we are announcing our $7.9M seed round, led by Harpinder Singh at Innovation Endeavors, with participation from Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures (CTO Fund) and Param Hansa Values.",
           "quote_hash": "59506ba0808ee0c2c8d9ac25f14f284dee11383679000e5830940658d2c79dd4"
         }
-      ],
-      "last_verified_at": "2026-10-03",
-      "experience_summary": "当前来源支持单笔参投活动，不足以扩写机构背景、完整组合或业绩。"
+      ]
     },
     "translations": {
       "zh-CN": {

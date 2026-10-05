@@ -139,34 +139,72 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅据Pool官方LinkedIn公告记录个人投资者姓名；该来源未披露投资金额或其他个人背景。",
-      "summary": "Pool的官方LinkedIn融资公告将Thomas Ricouard列为参与其200万美元融资的个人投资者；本档案仅记录该公告中的投资活动，不附加其他职业或履历。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Thomas Ricouard 的个人网站自述其从事 Developer Experience 工作、参与 Codex @ OpenAI，并开发 iOS/macOS 应用。TechCrunch 对 Pool 融资的报道将 Thomas Ricouard 列为参与其超过 200 万美元 pre-seed 的天使投资人之一。公开来源未披露其个人出资金额。",
+      "coverage_note": "人物身份与公开职业简介来自本人网站；投资记录来自 TechCrunch 对 Pool 融资的报道，未据此扩展其他个人投资组合或推断金额。",
+      "facts": [
+        {
+          "field": "public_role",
+          "label": "本人网站自述的职业信息",
+          "value": "本人网站自述从事 Developer Experience 工作，并写有 Codex @ OpenAI。",
+          "source_id": "b38_thomas_role"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Pool官方LinkedIn公告称其完成200万美元融资，并将Thomas Ricouard列入参与者。",
-          "source_id": "pool-official-linkedin-thomas-ricouard"
+          "description": "TechCrunch 报道将 Thomas Ricouard 列为 Pool 超过 200 万美元 pre-seed 融资中的天使投资人之一；未披露其个人投资金额。",
+          "source_id": "b38_thomas_pool"
         },
         {
           "description": "融资来源记录：Pool · 预种子轮 · 2026-06-11 · 本轮参投 · over $2 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5497463d6c7b6acf"
         }
       ],
-      "contacts": [],
-      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "个人网站",
+          "value": "Thomas Ricouard",
+          "url": "https://www.dimillian.app/",
+          "source_id": "b38_thomas_identity"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Developer Experience",
+          "organization": "OpenAI",
+          "source_id": "b38_thomas_role"
+        }
+      ],
       "career": [],
       "education": [],
-      "experience_summary": "仅据Pool官方LinkedIn公告记录个人投资者姓名；该来源未披露投资金额或其他个人背景。",
+      "experience_summary": "本人网站提供身份与职业简介，TechCrunch 报道支持一项 Pool 融资中的天使投资人记录。",
       "sources": [
         {
-          "source_id": "pool-official-linkedin-thomas-ricouard",
-          "source_url": "https://www.linkedin.com/company/poolday",
-          "source_title": "Pool | LinkedIn",
-          "source_content_hash": "f0f3b386a84f608da3c456640ccbf3a6f3264542965a60eaed994f01197113e0",
-          "quote": "participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard",
-          "quote_hash": "d1910f9526fadfcb28afebd099233093fa33c0d0309c44bfb042db2bf341a149"
+          "source_id": "b38_thomas_identity",
+          "source_url": "https://www.dimillian.app/",
+          "source_title": "About me",
+          "source_content_hash": "d6806980efb76e5c18823c71912c8ab1ffef838dcf05dd90e39672a288fd7a67",
+          "quote": "Thomas Ricouard",
+          "quote_hash": "7d5a13b0159296c8c9b66730c2bbcde1b0d5e1793a7d5e6769a997b5948cf820"
+        },
+        {
+          "source_id": "b38_thomas_role",
+          "source_url": "https://www.dimillian.app/",
+          "source_title": "About me",
+          "source_content_hash": "d6806980efb76e5c18823c71912c8ab1ffef838dcf05dd90e39672a288fd7a67",
+          "quote": "Developer Experience, Builder, Codex @OpenAI",
+          "quote_hash": "8a34515d20df182326e44a7e460fd7853791287ae02ba66dfad92b5887ec3c51"
+        },
+        {
+          "source_id": "b38_thomas_pool",
+          "source_url": "https://techcrunch.com/2026/06/11/pools-new-app-turns-your-screenshots-into-a-searchable-memory-bank/",
+          "source_title": "Pool&#039;s new app turns your screenshots into something useful | TechCrunch",
+          "source_content_hash": "5fbf6cf322f2644c1387b470575859ca7751b8a52f513279f9ca791213195432",
+          "quote": "other angels, including Winston Du, Julian Blessin, and Thomas Ricouard.",
+          "quote_hash": "9eaa032f5b741af0b24ae01894c7f02389d90c1838cc6e0572b1558587e83781"
         },
         {
           "source_id": "FISRC-5497463d6c7b6acf",
@@ -176,8 +214,7 @@
           "quote": "We've raised $2M in funding led by General Catalyst with participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard",
           "quote_hash": "f1e7ec5228f3eb91be682ce6d6229008b01e75fc596d42a30083fee56f24f08f"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "translations": {
       "zh-CN": {
