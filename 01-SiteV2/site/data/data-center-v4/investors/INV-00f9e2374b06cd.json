@@ -137,21 +137,78 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "长江创新投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "长江证券官网 2024 年披露确认长江证券创新投资（湖北）有限公司为集团全资另类子公司，经营范围包括股权投资、项目投资；发行人公告将该公司简称为“长江创新投”。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "公司名称",
+          "value": "长江证券创新投资（湖北）有限公司",
+          "source_id": "cjsc_company_2024"
+        },
+        {
+          "field": "parent_relationship",
+          "label": "股权关系",
+          "value": "长江证券股份有限公司全资另类子公司。",
+          "source_id": "cjsc_company_2024"
+        },
+        {
+          "field": "business_scope",
+          "label": "经营范围",
+          "value": "股权投资、项目投资（2024-07-22 披露）。",
+          "source_id": "cjsc_scope_2024"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币 50 亿元（2024-07-22 披露）。",
+          "source_id": "cjsc_scope_2024"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "2017 年发行人公告使用“长江创新投”作为长江证券创新投资（湖北）有限公司的简称，并记录其参与共同认购国睿39号集合资金信托；该记录不扩展为其完整投资组合。",
+          "source_id": "issuer_alias_2017"
+        },
         {
           "description": "融资来源记录：容芯致远 · 天使轮 · 2026-05-08 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ceee1629da3e3cce"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "法人名称、母公司关系、经营范围和 50 亿元注册资本依据长江证券 2024 年正式披露；简称对应关系由发行人公告核验，注册资本按该披露日期表述。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "cjsc_company_2024",
+          "source_url": "https://www.cjsc.com.cn/main/a/20240722/33014.shtml",
+          "source_title": "关于长江证券创新投资（湖北）有限公司基本信息披露的说明",
+          "source_content_hash": "f9d0ec0f4403c748b60b32084ee9700cd1d475b8c3de3e174611bd0f739397ed",
+          "quote": "长江证券创新投资（湖北）有限公司为长江证券股份有限公司的全资另类子公司。",
+          "quote_hash": "1d48b4dd9f993fc8af151eec9b8dc221b74d75708cbb8f04e7d6a4d919d234f8"
+        },
+        {
+          "source_id": "cjsc_scope_2024",
+          "source_url": "https://www.cjsc.com.cn/main/a/20240722/33014.shtml",
+          "source_title": "关于长江证券创新投资（湖北）有限公司基本信息披露的说明",
+          "source_content_hash": "f9d0ec0f4403c748b60b32084ee9700cd1d475b8c3de3e174611bd0f739397ed",
+          "quote": "注册资本：伍拾亿元整 经营范围：股权投资、项目投资",
+          "quote_hash": "c9e42a7900ffe00f9750b062ae5812f812a84a299a14456fe7c536d1e26f46db"
+        },
+        {
+          "source_id": "issuer_alias_2017",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2017-07-01/1203671070.PDF",
+          "source_title": "对外公告",
+          "source_content_hash": "69d66ad58ec0111473fad8ca440d1f65726e9de60b60c42695235f1a8f1d3098",
+          "quote": "长江证券创新投资（湖北）有限公司 （简称“长江创新投”）",
+          "quote_hash": "c265147588326a0e739bb0edbfe65d770b9a934366a70b483824aa07995215a8"
+        },
         {
           "source_id": "FISRC-ceee1629da3e3cce",
           "source_url": "https://news.pedaily.cn/202605/563553.shtml",
@@ -161,7 +218,7 @@
           "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

@@ -123,21 +123,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jerry Tworek 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Sycamore 的 6500 万美元种子轮公告将 Jerry Tworek 列为知名天使投资人，并称其曾任 OpenAI Research Scientist。公告未披露任期、现职或学历。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "OpenAI",
+          "title": "Research Scientist（来源称曾任）",
+          "period": "来源称 former；任职起止日期未披露",
+          "description": "Sycamore 融资公告将 Jerry Tworek 描述为曾任 OpenAI Research Scientist。",
+          "source_id": "jerry_sycamore"
+        }
+      ],
+      "education": [],
+      "experience_summary": "人物身份、过往研究职位及天使投资者身份均依据 Sycamore 自身融资公告；任职起止日期和目前角色未披露。",
       "track_record": [
+        {
+          "description": "Sycamore 将 Jerry Tworek 列为其 6500 万美元种子轮的知名天使投资人；个人投资金额未披露。",
+          "source_id": "jerry_sycamore"
+        },
         {
           "description": "融资来源记录：Sycamore · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "人物身份、过往研究职位及天使投资者身份均依据 Sycamore 自身融资公告；任职起止日期和目前角色未披露。",
+      "facts": [],
+      "milestones": [],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "jerry_sycamore",
+          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+          "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
+          "source_content_hash": "ebd89f06f7aac0e52ecdbbea0e88cbdee116486643a65781b7af4a27c01c9f44",
+          "quote": "Jerry Tworek (former Research Scientist at OpenAI)",
+          "quote_hash": "23ea087f24fa381cd4c294adae40bdaf9863815c740d4eea7e71919ba086eb4a"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -147,7 +171,7 @@
           "quote_hash": "23ea087f24fa381cd4c294adae40bdaf9863815c740d4eea7e71919ba086eb4a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }
