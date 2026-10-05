@@ -123,47 +123,111 @@
       }
     ],
     "public_profile": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "person",
-      "summary": "Sycamore 官方介绍将 BJ Jenkins 列为 Palo Alto Networks 总裁及 Sycamore 天使投资人。",
-      "coverage_note": "人物身份和对 Sycamore 的天使投资关系均由 Sycamore 官方页面支持；本档案限于这一可核实活动。",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "BJ Jenkins 是 Palo Alto Networks 总裁。该公司官方简介记录他此前担任 Barracuda Networks 总裁兼 CEO、在 EMC 担任多个业务领导职务，并披露其伊利诺伊大学工程学位及 Harvard Business School MBA；Sycamore 官方页面将他列入天使投资人。",
+      "coverage_note": "当前职务按 Palo Alto Networks 截至核验日的领导页面记录；其投资资料仅限 Sycamore 官方披露，不延伸为完整个人投资组合或投资金额。",
       "facts": [],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "人物身份和对 Sycamore 的天使投资关系均由 Sycamore 官方页面支持；本档案限于这一可核实活动。",
       "track_record": [
         {
-          "description": "Sycamore 官方页面将 BJ Jenkins 列在其天使投资人名单中。",
-          "source_id": "bj_jenkins_sycamore"
+          "description": "Sycamore 官方页面将 BJ Jenkins（Palo Alto Networks 总裁）列入该公司的天使投资人名单。",
+          "source_id": "b36-bj-sycamore"
         },
         {
           "description": "融资来源记录：Sycamore · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "President",
+          "organization": "Palo Alto Networks",
+          "source_id": "b36-bj-paloalto"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Barracuda Networks",
+          "title": "President and CEO",
+          "period": "此前任职；官方简介未列任期",
+          "description": "Palo Alto Networks 官方简介称其曾领导 Barracuda Networks，并推动该公司 IPO 与多项战略收购。",
+          "source_id": "b36-bj-career"
+        },
+        {
+          "organization": "EMC",
+          "title": "业务部门与销售、市场领导职务；曾任 Backup Recovery Systems 部门总裁",
+          "period": "更早经历；官方简介未列任期",
+          "description": "Palo Alto Networks 官方简介列出其在 EMC 的多项业务部门、销售和市场领导岗位。",
+          "source_id": "b36-bj-emc"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Illinois",
+          "qualification": "Engineering degree",
+          "source_id": "b36-bj-education"
+        },
+        {
+          "institution": "Harvard Business School",
+          "qualification": "MBA",
+          "source_id": "b36-bj-education"
+        }
+      ],
+      "experience_summary": "官方履历来源核验其现任职务、此前企业管理经历及公开学历；投资资料只确认 Sycamore 一项。",
       "sources": [
         {
-          "source_id": "bj_jenkins_sycamore",
+          "source_id": "b36-bj-paloalto",
+          "source_url": "https://www.paloaltonetworks.com/about-us",
+          "source_title": "About Us - Palo Alto Networks",
+          "source_content_hash": "df8b3853b2a2b7ae7ef3595d5c63e2d15501d5dfac342dccc5be333271180668",
+          "quote": "BJ Jenkins President",
+          "quote_hash": "b3eaa21e953d723152a54478cde1f230a11897dd47d0a12799fee4dd56608f1c"
+        },
+        {
+          "source_id": "b36-bj-career",
+          "source_url": "https://www.paloaltonetworks.com/about-us",
+          "source_title": "About Us - Palo Alto Networks",
+          "source_content_hash": "df8b3853b2a2b7ae7ef3595d5c63e2d15501d5dfac342dccc5be333271180668",
+          "quote": "Previously, BJ served as president and CEO of Barracuda Networks",
+          "quote_hash": "965d9c7c0252c16cae3c8b85342692726a1aabcfb410dc11f70721dfb7622fac"
+        },
+        {
+          "source_id": "b36-bj-education",
+          "source_url": "https://www.paloaltonetworks.com/about-us",
+          "source_title": "About Us - Palo Alto Networks",
+          "source_content_hash": "df8b3853b2a2b7ae7ef3595d5c63e2d15501d5dfac342dccc5be333271180668",
+          "quote": "engineering degree from the University of Illinois and an M.B.A. from Harvard Business School",
+          "quote_hash": "f6c434a6b2cc9ea994d3674880b691b6fccba26bfd65bdbf970221b9c9184c49"
+        },
+        {
+          "source_id": "b36-bj-sycamore",
           "source_url": "https://sycamorelab.org/about/",
           "source_title": "About / Sycamore",
           "source_content_hash": "dd64e86b9ee7fd88944b592035f9257eec3ff27fc96a67d01c2ebd7bfec082f9",
-          "quote": "BJ Jenkins President, Palo Alto Networks",
-          "quote_hash": "77a1f7259383993f36b6cfc6c7cd4f74b8b0418730640ec31c46d954813e6061"
+          "quote": "Angel investors: - Lip-Bu Tan, CEO, Intel - Ali Ghodsi, CEO, Databricks - Bob McGrew, Former Chief Research Officer, OpenAI - Frederic Kerrest, Co-founder, Okta - BJ Jenkins, President, Palo Alto Networks",
+          "quote_hash": "1e0e932161c5ac5440831e8cd1edc5dfdcd46b23830a26c93d1264a1ae612bf0"
+        },
+        {
+          "source_id": "b36-bj-emc",
+          "source_url": "https://www.paloaltonetworks.com/about-us",
+          "source_title": "About Us - Palo Alto Networks",
+          "source_content_hash": "df8b3853b2a2b7ae7ef3595d5c63e2d15501d5dfac342dccc5be333271180668",
+          "quote": "Prior to joining Barracuda, BJ held multiple business unit and sales and marketing leadership roles at EMC, including president of EMC’s Backup Recovery Systems (BRS) Division.",
+          "quote_hash": "0a48d34a129f26696124ec4fabc330eb938dff125fad283d497b8a9c905fbd9f"
         },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
-          "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
-          "source_content_hash": "ebd89f06f7aac0e52ecdbbea0e88cbdee116486643a65781b7af4a27c01c9f44",
+          "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+          "source_content_hash": "7c851906b2d8f45f",
           "quote": "BJ Jenkins (President of Palo Alto Networks)",
           "quote_hash": "3897b8cb338bf248602bfa83b80973ba0422553612e5855d9c62691abd74ac5b"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

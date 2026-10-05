@@ -123,18 +123,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Hawk Hill Ventures 官网投资组合页列出 Sazabi 为 2025 年种子项目，并说明其为 AI 原生可观测性平台；本档案仅覆盖官网公开的投资组合信息。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "当前可核实的一手资料仅为官网投资组合页及项目披露；尚未取得足以描述机构策略、团队或基金结构的一手信息。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Hawk Hill Ventures 的官方团队页介绍 Paul Klein IV，官网投资页列出 Sazabi 的 2025 年 Seed 项目及其 AI 原生可观测性产品定位。",
+      "coverage_note": "已核实的团队背景及投资案例取自机构官网；页面未披露本档案所需的基金结构或完整业绩口径，因此不据单个项目推断完整组合。",
+      "facts": [
+        {
+          "field": "public_team_information",
+          "label": "官网团队页披露",
+          "value": "Paul Klein IV 的个人简介聚焦开发者工具与基础设施；页面未据此说明他在 Hawk Hill Ventures 的具体职务。",
+          "source_id": "b36-hawk-team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "官网投资组合页将 Sazabi 列为 2025 年种子项目，并将其描述为 AI 原生可观测性平台。",
-          "source_id": "INV-f6a8e7d4dcc371_hawk"
+          "description": "Hawk Hill Ventures 官网投资页列出 Sazabi（Seed，2025），并称其为面向软件开发者的 AI 原生可观测性平台。",
+          "source_id": "b36-hawk-investment"
         },
         {
           "description": "融资来源记录：Sazabi · 历史轮次未披露 · Seed轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -144,21 +149,32 @@
       "contacts": [
         {
           "kind": "website",
-          "label": "投资组合页面",
+          "label": "机构官网",
           "value": "Hawk Hill Ventures",
-          "url": "https://hawkhill.vc/investments",
-          "source_id": "INV-f6a8e7d4dcc371_hawk"
+          "url": "https://hawkhill.ventures/",
+          "source_id": "b36-hawk-team"
         }
       ],
-      "coverage_note": "当前可核实的一手资料仅为官网投资组合页及项目披露；尚未取得足以描述机构策略、团队或基金结构的一手信息。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网提供团队人物简介与投资组合案例；未将团队成员的创业经历等同为机构自身业绩。",
       "sources": [
         {
-          "source_id": "INV-f6a8e7d4dcc371_hawk",
+          "source_id": "b36-hawk-investment",
           "source_url": "https://hawkhill.vc/investments",
           "source_title": "Hawk Hill Ventures",
           "source_content_hash": "1f05d7896ac1a6c1fb77adb6c5b6eefe9f91ae43d878e6ce27c111261465d317",
           "quote": "Sazabi ( Seed , 2025 ) An AI-native observability platform built to address the unique challenges facing software developers in the AI era.",
           "quote_hash": "8eca8932097a20a82e31432d4d0ece06ec299a390cc929a5f0426998e4e62c85"
+        },
+        {
+          "source_id": "b36-hawk-team",
+          "source_url": "https://hawkhill.ventures/team",
+          "source_title": "Hawk Hill Ventures",
+          "source_content_hash": "752085c7da01d21d39dd13c0278e6a60de1e7f635aa65bcfa6920f9c0c8c637e",
+          "quote": "Hawk Hill Ventures Team Investments Memos Paul Klein IV Paul is a software engineer and startup founder focused on developer tools and infrastructure.",
+          "quote_hash": "ec12b1d34285333a7b8d06c28eb08209ef28d4715ab16408e4f6aaf19ce4d588"
         },
         {
           "source_id": "FISRC-1d31cc70866958e8",
@@ -168,8 +184,7 @@
           "quote": "Hawk Hill VenturesSeed",
           "quote_hash": "3ea2f3658c2af83ef939a11d9bd115f2a3b2fa4c5d2d281566a2d2bbfc81b4f0"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

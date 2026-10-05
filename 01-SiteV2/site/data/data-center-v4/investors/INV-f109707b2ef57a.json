@@ -137,31 +137,66 @@
       }
     ],
     "public_profile": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "Beat Ventures 是旧金山的早期风险投资机构。其官网将 Stack AI 列为投资组合公司，TechCrunch 亦将 Beat Ventures 列为 Stack AI 300 万美元种子轮投资方。",
-      "coverage_note": "机构定位及投资组合关系来自 Beat Ventures 官网；融资轮次和参投名单来自 TechCrunch 报道，未披露其单独投资金额。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Beat Ventures 是位于旧金山、专注 pre-seed 阶段的早期风险投资机构。官网称其投资应用 AI 增强人类能力，尤其关注硅谷较少覆盖的行业；官网投资组合页列出 Stack AI 等项目。",
+      "coverage_note": "投资阶段、策略、合伙人和组合均按机构官网口径描述；Stack AI 作为官网列示案例，不代表完整投资组合或 Beat Ventures 的单独出资额。",
+      "facts": [
+        {
+          "field": "stage_and_geography",
+          "label": "官网公布的阶段与所在地",
+          "value": "小额、高附加值的 pre-seed 投资；总部位于 San Francisco。",
+          "source_id": "b36-beat-home"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "官网公布的投资主题",
+          "value": "应用 AI 增强人的能力，尤其关注硅谷较少覆盖的行业。",
+          "source_id": "b36-beat-thesis"
+        },
+        {
+          "field": "founding_partners",
+          "label": "官网公布的 General Partners",
+          "value": "Colin Rogister、Dave Anderson。",
+          "source_id": "b36-beat-founders"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "机构定位及投资组合关系来自 Beat Ventures 官网；融资轮次和参投名单来自 TechCrunch 报道，未披露其单独投资金额。",
       "track_record": [
         {
-          "description": "TechCrunch 将 Beat Ventures 列为 Stack AI 300 万美元种子轮投资方之一。",
-          "source_id": "beat_stack_seed"
+          "description": "Beat Ventures 官网组合页将 Stack AI 列为其投资组合公司。",
+          "source_id": "b36-beat-portfolio"
         },
         {
           "description": "融资来源记录：Stack AI · 种子轮 · 2024-05-21 · 种子轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "beat_stack_seed"
+          "source_id": "FISRC-3bb261b30faf2efa"
         }
       ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Beat Ventures",
+          "url": "https://www.beatventures.com/home",
+          "source_id": "b36-beat-home"
+        },
+        {
+          "kind": "application",
+          "label": "项目提交",
+          "value": "官网提供 Submit a Pitch 入口。",
+          "url": "https://www.beatventures.com/home",
+          "source_id": "b36-beat-founders"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "机构官网披露其 pre-seed 投资定位、应用 AI 主题、两位 General Partner 与组合案例。",
       "sources": [
         {
-          "source_id": "beat_official_identity",
+          "source_id": "b36-beat-home",
           "source_url": "https://www.beatventures.com/home",
           "source_title": "Beat Ventures | Investing in Human-AI Collaboration",
           "source_content_hash": "67fb5156cbcbb4c10389cfb057e108cdcea689071af60103f711ae11539f16de",
@@ -169,20 +204,28 @@
           "quote_hash": "9d28bf909b47707931cb0778cc30302c8f00abf0e6cdb6794bc9e671605e4f22"
         },
         {
-          "source_id": "beat_stack_portfolio",
+          "source_id": "b36-beat-portfolio",
+          "source_url": "https://www.beatventures.com/portfolio-1",
+          "source_title": "Portfolio | Beat Ventures",
+          "source_content_hash": "dca805de14429329745fae62f9d3d2c43968a6a5948e6faea051bde2f8b8eb05",
+          "quote": "Stack AI No-code platform to build AI agents for enterprise",
+          "quote_hash": "e19500a295cc915f63c380d593207201b2c697f8f2ef1378c542c5aa5ded6547"
+        },
+        {
+          "source_id": "b36-beat-thesis",
           "source_url": "https://www.beatventures.com/home",
           "source_title": "Beat Ventures | Investing in Human-AI Collaboration",
           "source_content_hash": "67fb5156cbcbb4c10389cfb057e108cdcea689071af60103f711ae11539f16de",
-          "quote": "Stack AI enables any developer to build and deploy production-ready enterprise-level large language model (LLM) applications in minutes",
-          "quote_hash": "652b3495655f218c5ce4f675141eada1be39e2c19432b6dfb78fde6ab7f1e190"
+          "quote": "We invest in companies that use applied AI to enhance human performance, especially in industries overlooked by Silicon Valley.",
+          "quote_hash": "7561f255497dabb8140e374f11acbcbdc8367206c219e05aed20c9038b458192"
         },
         {
-          "source_id": "beat_stack_seed",
-          "source_url": "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows/",
-          "source_title": "Stack AI wants to make it easier to build AI-fueled workflows | TechCrunch",
-          "source_content_hash": "4f1d48f5d3f41df7f005975160ed4f8d67f7c8abf471720b9157e2210fc8ef5f",
-          "quote": "Investors include Gradient Ventures, Beat Ventures and True Capital along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital.",
-          "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
+          "source_id": "b36-beat-founders",
+          "source_url": "https://www.beatventures.com/home",
+          "source_title": "Beat Ventures | Investing in Human-AI Collaboration",
+          "source_content_hash": "67fb5156cbcbb4c10389cfb057e108cdcea689071af60103f711ae11539f16de",
+          "quote": "Colin Rogister General Partner Dave Anderson General Partner Start Now Tell us about your startup by completing the form below Submit a Pitch",
+          "quote_hash": "851160e9666ebf251c46483a8d1501aed395c13b315d437f07a2a8f896c4945b"
         },
         {
           "source_id": "FISRC-3bb261b30faf2efa",
@@ -192,8 +235,7 @@
           "quote": "Investors include Gradient Ventures, Beat Ventures and True Capital along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital.",
           "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "translations": {
       "zh-CN": {

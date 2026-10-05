@@ -123,29 +123,77 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "矩阵起源官方融资公告将“微光创投”列为其此前获得投资的机构之一；当前可确认范围限于这条投资者披露。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "一手资料仅将“微光创投”列为矩阵起源此前投资机构之一，未确认其法律主体、团队或投资策略；未与同名机构合并。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "微光创投官网以 Welight Capital 为英文品牌，自述成立于 2015 年，主要覆盖企业服务、B2B、电商、金融、教育、新零售与消费升级，投资轮次以 A-B 轮为主。矩阵起源官网另列出名称为“微光创投”的既有投资方。",
+      "coverage_note": "微光创投官网的品牌资料、策略、公开案例及 BP 联系方式可核验。矩阵起源公告仅使用中文投资方名称，未明确其与 Welight Capital 英文品牌的对应关系；该融资披露按原文标签记录，不作为官网组合已交叉确认的案例。",
+      "facts": [
+        {
+          "field": "organization_background",
+          "label": "官网自述成立时间",
+          "value": "官网称微光创投成立于 2015 年。",
+          "source_id": "b36-welight-site"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资方向",
+          "value": "企业服务、B2B、电商、金融、教育、新零售、消费升级；投资轮次以 A-B 轮为主。",
+          "source_id": "b36-welight-site"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "矩阵起源官方融资公告称，公司此前获得过微光创投等机构投资。",
-          "source_id": "INV-f71d7f2d4920ea_matrixorigin"
+          "description": "官网公开投资案例包括小鹏汽车等项目；官网可见案例不是完整组合。",
+          "source_id": "b36-welight-portfolio"
+        },
+        {
+          "description": "矩阵起源官方融资公告将“微光创投”列为其此前投资机构之一；公告未给出 Welight Capital 英文名或管理实体对应关系，因此这里只记录公告原文标签。",
+          "source_id": "b36-welight-matrixorigin"
         },
         {
           "description": "融资来源记录：矩阵起源（MatrixOrigin） · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-903aa25f932bc468"
         }
       ],
-      "contacts": [],
-      "coverage_note": "一手资料仅将“微光创投”列为矩阵起源此前投资机构之一，未确认其法律主体、团队或投资策略；未与同名机构合并。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "微光创投 · Welight Capital",
+          "url": "https://welightcapital.com/",
+          "source_id": "b36-welight-site"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投稿",
+          "value": "bp@welightcapital.com",
+          "source_id": "b36-welight-contact"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网自述和项目方融资公告分别支持品牌策略、官网案例和同名投资方披露；名称映射的边界已在简介与备注中说明。",
       "sources": [
         {
-          "source_id": "INV-f71d7f2d4920ea_matrixorigin",
+          "source_id": "b36-welight-site",
+          "source_url": "https://welightcapital.com/",
+          "source_title": "微光创投 Welight Capital",
+          "source_content_hash": "7419f5adb2ee3baf8e12d874f19f525e577e1e0a916641291a73677b004446e6",
+          "quote": "微光创投成立于2015年，投资领域含企业服务、B2B、电商、金融、教育、新零售、消费升级等，投资轮次以A-B轮为主。",
+          "quote_hash": "f1a83d0e75bbda5e74c8c1503d2cc2b2657589940fcb9f27ac8379aebe87d4a1"
+        },
+        {
+          "source_id": "b36-welight-portfolio",
+          "source_url": "https://welightcapital.com/",
+          "source_title": "微光创投 Welight Capital",
+          "source_content_hash": "7419f5adb2ee3baf8e12d874f19f525e577e1e0a916641291a73677b004446e6",
+          "quote": "小鹏汽车 做更懂中国的智能汽车",
+          "quote_hash": "fe93fdcde6cb7950f145bf6acab951e67b51d11c1b7c25db6f56387f3b37adb0"
+        },
+        {
+          "source_id": "b36-welight-matrixorigin",
           "source_url": "https://matrixorigin.cn/blog/matrixorigin-series-a-financing?v=20260812_7b35296",
           "source_title": "矩阵起源完成超千万美元A轮融资，产业资本与国际资本联手押注企业级AI基础设施赛道 — MatrixOrigin",
           "source_content_hash": "0d414dbcc27faf3a53b02591557bf023cda6e5aeaaabedd83d3be588dd461390",
@@ -153,15 +201,22 @@
           "quote_hash": "8340bbf3684ac1e8af04abae524c10ef9f744c6b9811c57192ae101b63d57b90"
         },
         {
+          "source_id": "b36-welight-contact",
+          "source_url": "https://welightcapital.com/",
+          "source_title": "微光创投 Welight Capital",
+          "source_content_hash": "7419f5adb2ee3baf8e12d874f19f525e577e1e0a916641291a73677b004446e6",
+          "quote": "商业计划书 bp@welightcapital.com",
+          "quote_hash": "dfad0db08b46e20cb507205db9cf5317bef7a3df3a2ede2406ab75607b67929b"
+        },
+        {
           "source_id": "FISRC-903aa25f932bc468",
           "source_url": "https://elsewhere.news/zh/5ycapital/matrixorigina-5y-news",
-          "source_title": "矩阵起源（MatrixOrigin）完成超千万美元A轮融资 | 5Y News | elsewhere",
-          "source_content_hash": "011f60dbf82744e6b3a3bd2c719331f87f1c52c1c3a9e86102397b7228074c19",
+          "source_title": "矩阵起源（MatrixOrigin）完成超千万美元A轮融资 | 5Y News",
+          "source_content_hash": "c60b3444d1bfa8b9383a52bfb9abb3314bd6d87f0305e809c176acb10b77dd78",
           "quote": "在本轮融资之前，矩阵起源已先后获得五源资本、险峰K2VC、钟鼎资本、微光创投、源来资本、世纪互联等知名机构投资。",
           "quote_hash": "8340bbf3684ac1e8af04abae524c10ef9f744c6b9811c57192ae101b63d57b90"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     }
   }
 }

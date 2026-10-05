@@ -140340,35 +140340,59 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-e362a36672731a": {
-      "last_verified_at": "2026-10-05",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "summary": "Trenches Capital 的 LinkedIn 公司页自述为早期阶段 VC。Claros 的融资说明将其列为新老投资方之一；目前资料不足以补出管理主体、基金信息或更完整的策略。",
-      "coverage_note": "当前仅有机构自述和一项融资参与披露，依覆盖规则保留为有限资料并继续补采；未据此推断法律实体、投资组合或基金结构。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Trenches Capital 的公司页自述为早期阶段 VC。SEC Form D 披露了关联基金 Trenches Capital Fund, LP 的组织及普通合伙人信息；Claros 官方融资说明将 Trenches Capital 列入其投资方。",
+      "coverage_note": "SEC 金额是表格所报的发行额度与申报时已售金额，不代表基金实际募资额、资产规模或投资业绩；Form D 中的人员身份按申报时点表述，不推为当前职务。",
       "facts": [
         {
           "field": "self_description",
-          "label": "LinkedIn 公司页自述",
-          "value": "Early stage VC（早期阶段风险投资）",
-          "source_id": "b33-trenches-linkedin"
+          "label": "公司页自述",
+          "value": "Early stage VC（早期阶段风险投资）。",
+          "source_id": "b36-trenches-linkedin"
+        },
+        {
+          "field": "fund_entity",
+          "label": "SEC Form D 发行主体",
+          "value": "Trenches Capital Fund, LP；申报列示为特拉华州有限合伙企业，成立年份为 2023。",
+          "source_id": "b36-trenches-sec"
+        },
+        {
+          "field": "offering_disclosure",
+          "label": "SEC Form D 发行金额口径",
+          "value": "2024 年 SEC 申报列示总发行金额 2,500 万美元、已售金额 0 美元；此额度不等于实际募资额。",
+          "source_id": "b36-trenches-sec-offering"
+        },
+        {
+          "field": "reported_related_person",
+          "label": "SEC Form D 所列普通合伙人相关人员",
+          "value": "申报将 Kelvin Beachum, Jr. 列为普通合伙人管理成员。",
+          "source_id": "b36-trenches-sec-kelvin"
+        },
+        {
+          "field": "reported_related_person",
+          "label": "SEC Form D 所列普通合伙人相关人员",
+          "value": "申报将 Larry Fitzgerald, Jr. 列为普通合伙人成员。",
+          "source_id": "b36-trenches-sec-larry"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Claros 融资说明将 Trenches Capital 列入新老投资方；未披露其单独出资额。",
-          "source_id": "FISRC-2877a4b61010da1c"
+          "description": "Claros 官方融资说明将 Trenches Capital 列为新老投资方之一；该说明没有披露其单独投资金额。",
+          "source_id": "b36-trenches-claros"
         }
       ],
       "contacts": [],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "LinkedIn 公司页自述为早期阶段 VC；公开资料尚不足以确认管理主体或更完整的组织背景。",
+      "experience_summary": "当前一手资料核实到早期 VC 自述、关联基金的 SEC 申报和一项公司融资参与披露；没有据此推断其已募规模或完整组合。",
       "sources": [
         {
-          "source_id": "b33-trenches-linkedin",
+          "source_id": "b36-trenches-linkedin",
           "source_url": "https://www.linkedin.com/company/trenches-capital/",
           "source_title": "Trenches Capital | LinkedIn",
           "source_content_hash": "d9ef223457716b4ac4477356fcca7b128c29c4d52c34ab83f28b27d680889aa9",
@@ -140376,12 +140400,44 @@
           "quote_hash": "5ea8e30caa770c9f923faebc3c88950f69237839c68633a612b4423179b4cb36"
         },
         {
-          "source_id": "FISRC-2877a4b61010da1c",
+          "source_id": "b36-trenches-claros",
           "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
           "source_title": "Redefining Data Center Energy Infrastructure from Chip to Grid - Claros",
           "source_content_hash": "eb7045e28cb8eed2d595772f7266d9e7b5ba6089d2283cda9760f0253f16a466",
           "quote": "with participation from new and existing investors like Systemiq Capital, Aero X Ventures, Trenches Capital, a leading power semiconductor provider, and others.",
           "quote_hash": "4a7858f49e477485bfe56c34374069ac0bce566f11dc3d32ec10e21a40d93663"
+        },
+        {
+          "source_id": "b36-trenches-sec",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2014239/000201423924000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "4aa1c2802475b37814c7e75c3ae00ec6853e688a568338019a53b3741d51bd81",
+          "quote": "Trenches Capital Fund, LP Jurisdiction of Incorporation/Organization DELAWARE Year of Incorporation/Organization Over Five Years Ago X Within Last Five Years (Specify Year) 2023 Yet to Be Formed",
+          "quote_hash": "6f2e7ac495239e2dd93e217361e8f837b1cef2169c844c8b074b9591e4f71fe0"
+        },
+        {
+          "source_id": "b36-trenches-sec-offering",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2014239/000201423924000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "4aa1c2802475b37814c7e75c3ae00ec6853e688a568338019a53b3741d51bd81",
+          "quote": "Total Offering Amount $ 25,000,000 USD or Indefinite Total Amount Sold $ 0 USD Total Remaining to be Sold $ 25,000,000 USD",
+          "quote_hash": "316e91c76035dd04d83b829a5dbbeab786c29412cede1bf714fa1c302ae94d06"
+        },
+        {
+          "source_id": "b36-trenches-sec-kelvin",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2014239/000201423924000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "4aa1c2802475b37814c7e75c3ae00ec6853e688a568338019a53b3741d51bd81",
+          "quote": "Kelvin Beachum, Jr. Kelvin Beachum, Jr. Managing Member of the General Partner of the Issuer",
+          "quote_hash": "b97bd325e8cc484eeaa98845966313f72e94e3efeaf8bf74069b5518c96b6141"
+        },
+        {
+          "source_id": "b36-trenches-sec-larry",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2014239/000201423924000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "4aa1c2802475b37814c7e75c3ae00ec6853e688a568338019a53b3741d51bd81",
+          "quote": "Fitzgerald, Jr. Larry Street Address 1 Street Address 2 16192 Coastal Highway City State/Province/Country ZIP/PostalCode Lewes DELAWARE 19958 Relationship: X Executive Officer X Director X Promoter Clarification of Response (if Necessary): Member of General Partner of the Issuer",
+          "quote_hash": "8cf16dd70bde25af2fb978bb14d80562624955b60d4cecdcfb71973cf913b386"
         }
       ]
     },
@@ -146072,47 +146128,99 @@
       "coverage_note": "基于机构官网或机构本人公开资料核验；机构自述业绩和规模已注明口径。"
     },
     "INV-f05a9a9fef05f1": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "person",
-      "summary": "Sycamore 官方介绍将 BJ Jenkins 列为 Palo Alto Networks 总裁及 Sycamore 天使投资人。",
-      "coverage_note": "人物身份和对 Sycamore 的天使投资关系均由 Sycamore 官方页面支持；本档案限于这一可核实活动。",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "BJ Jenkins 是 Palo Alto Networks 总裁。该公司官方简介记录他此前担任 Barracuda Networks 总裁兼 CEO、在 EMC 担任多个业务领导职务，并披露其伊利诺伊大学工程学位及 Harvard Business School MBA；Sycamore 官方页面将他列入天使投资人。",
+      "coverage_note": "当前职务按 Palo Alto Networks 截至核验日的领导页面记录；其投资资料仅限 Sycamore 官方披露，不延伸为完整个人投资组合或投资金额。",
       "facts": [],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "人物身份和对 Sycamore 的天使投资关系均由 Sycamore 官方页面支持；本档案限于这一可核实活动。",
       "track_record": [
         {
-          "description": "Sycamore 官方页面将 BJ Jenkins 列在其天使投资人名单中。",
-          "source_id": "bj_jenkins_sycamore"
-        },
-        {
-          "description": "融资来源记录：Sycamore · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d354011359557f2f"
+          "description": "Sycamore 官方页面将 BJ Jenkins（Palo Alto Networks 总裁）列入该公司的天使投资人名单。",
+          "source_id": "b36-bj-sycamore"
         }
       ],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "President",
+          "organization": "Palo Alto Networks",
+          "source_id": "b36-bj-paloalto"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Barracuda Networks",
+          "title": "President and CEO",
+          "period": "此前任职；官方简介未列任期",
+          "description": "Palo Alto Networks 官方简介称其曾领导 Barracuda Networks，并推动该公司 IPO 与多项战略收购。",
+          "source_id": "b36-bj-career"
+        },
+        {
+          "organization": "EMC",
+          "title": "业务部门与销售、市场领导职务；曾任 Backup Recovery Systems 部门总裁",
+          "period": "更早经历；官方简介未列任期",
+          "description": "Palo Alto Networks 官方简介列出其在 EMC 的多项业务部门、销售和市场领导岗位。",
+          "source_id": "b36-bj-emc"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Illinois",
+          "qualification": "Engineering degree",
+          "source_id": "b36-bj-education"
+        },
+        {
+          "institution": "Harvard Business School",
+          "qualification": "MBA",
+          "source_id": "b36-bj-education"
+        }
+      ],
+      "experience_summary": "官方履历来源核验其现任职务、此前企业管理经历及公开学历；投资资料只确认 Sycamore 一项。",
       "sources": [
         {
-          "source_id": "bj_jenkins_sycamore",
+          "source_id": "b36-bj-paloalto",
+          "source_url": "https://www.paloaltonetworks.com/about-us",
+          "source_title": "About Us - Palo Alto Networks",
+          "source_content_hash": "df8b3853b2a2b7ae7ef3595d5c63e2d15501d5dfac342dccc5be333271180668",
+          "quote": "BJ Jenkins President",
+          "quote_hash": "b3eaa21e953d723152a54478cde1f230a11897dd47d0a12799fee4dd56608f1c"
+        },
+        {
+          "source_id": "b36-bj-career",
+          "source_url": "https://www.paloaltonetworks.com/about-us",
+          "source_title": "About Us - Palo Alto Networks",
+          "source_content_hash": "df8b3853b2a2b7ae7ef3595d5c63e2d15501d5dfac342dccc5be333271180668",
+          "quote": "Previously, BJ served as president and CEO of Barracuda Networks",
+          "quote_hash": "965d9c7c0252c16cae3c8b85342692726a1aabcfb410dc11f70721dfb7622fac"
+        },
+        {
+          "source_id": "b36-bj-education",
+          "source_url": "https://www.paloaltonetworks.com/about-us",
+          "source_title": "About Us - Palo Alto Networks",
+          "source_content_hash": "df8b3853b2a2b7ae7ef3595d5c63e2d15501d5dfac342dccc5be333271180668",
+          "quote": "engineering degree from the University of Illinois and an M.B.A. from Harvard Business School",
+          "quote_hash": "f6c434a6b2cc9ea994d3674880b691b6fccba26bfd65bdbf970221b9c9184c49"
+        },
+        {
+          "source_id": "b36-bj-sycamore",
           "source_url": "https://sycamorelab.org/about/",
           "source_title": "About / Sycamore",
           "source_content_hash": "dd64e86b9ee7fd88944b592035f9257eec3ff27fc96a67d01c2ebd7bfec082f9",
-          "quote": "BJ Jenkins President, Palo Alto Networks",
-          "quote_hash": "77a1f7259383993f36b6cfc6c7cd4f74b8b0418730640ec31c46d954813e6061"
+          "quote": "Angel investors: - Lip-Bu Tan, CEO, Intel - Ali Ghodsi, CEO, Databricks - Bob McGrew, Former Chief Research Officer, OpenAI - Frederic Kerrest, Co-founder, Okta - BJ Jenkins, President, Palo Alto Networks",
+          "quote_hash": "1e0e932161c5ac5440831e8cd1edc5dfdcd46b23830a26c93d1264a1ae612bf0"
         },
         {
-          "source_id": "FISRC-d354011359557f2f",
-          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
-          "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
-          "source_content_hash": "ebd89f06f7aac0e52ecdbbea0e88cbdee116486643a65781b7af4a27c01c9f44",
-          "quote": "BJ Jenkins (President of Palo Alto Networks)",
-          "quote_hash": "3897b8cb338bf248602bfa83b80973ba0422553612e5855d9c62691abd74ac5b"
+          "source_id": "b36-bj-emc",
+          "source_url": "https://www.paloaltonetworks.com/about-us",
+          "source_title": "About Us - Palo Alto Networks",
+          "source_content_hash": "df8b3853b2a2b7ae7ef3595d5c63e2d15501d5dfac342dccc5be333271180668",
+          "quote": "Prior to joining Barracuda, BJ held multiple business unit and sales and marketing leadership roles at EMC, including president of EMC’s Backup Recovery Systems (BRS) Division.",
+          "quote_hash": "0a48d34a129f26696124ec4fabc330eb938dff125fad283d497b8a9c905fbd9f"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-f05ee56bf92bf4": {
       "profile_type": "organization",
@@ -146325,31 +146433,62 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-f109707b2ef57a": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "Beat Ventures 是旧金山的早期风险投资机构。其官网将 Stack AI 列为投资组合公司，TechCrunch 亦将 Beat Ventures 列为 Stack AI 300 万美元种子轮投资方。",
-      "coverage_note": "机构定位及投资组合关系来自 Beat Ventures 官网；融资轮次和参投名单来自 TechCrunch 报道，未披露其单独投资金额。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Beat Ventures 是位于旧金山、专注 pre-seed 阶段的早期风险投资机构。官网称其投资应用 AI 增强人类能力，尤其关注硅谷较少覆盖的行业；官网投资组合页列出 Stack AI 等项目。",
+      "coverage_note": "投资阶段、策略、合伙人和组合均按机构官网口径描述；Stack AI 作为官网列示案例，不代表完整投资组合或 Beat Ventures 的单独出资额。",
+      "facts": [
+        {
+          "field": "stage_and_geography",
+          "label": "官网公布的阶段与所在地",
+          "value": "小额、高附加值的 pre-seed 投资；总部位于 San Francisco。",
+          "source_id": "b36-beat-home"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "官网公布的投资主题",
+          "value": "应用 AI 增强人的能力，尤其关注硅谷较少覆盖的行业。",
+          "source_id": "b36-beat-thesis"
+        },
+        {
+          "field": "founding_partners",
+          "label": "官网公布的 General Partners",
+          "value": "Colin Rogister、Dave Anderson。",
+          "source_id": "b36-beat-founders"
+        }
+      ],
       "milestones": [],
-      "contacts": [],
+      "track_record": [
+        {
+          "description": "Beat Ventures 官网组合页将 Stack AI 列为其投资组合公司。",
+          "source_id": "b36-beat-portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Beat Ventures",
+          "url": "https://www.beatventures.com/home",
+          "source_id": "b36-beat-home"
+        },
+        {
+          "kind": "application",
+          "label": "项目提交",
+          "value": "官网提供 Submit a Pitch 入口。",
+          "url": "https://www.beatventures.com/home",
+          "source_id": "b36-beat-founders"
+        }
+      ],
       "current_roles": [],
       "career": [],
       "education": [],
-      "experience_summary": "机构定位及投资组合关系来自 Beat Ventures 官网；融资轮次和参投名单来自 TechCrunch 报道，未披露其单独投资金额。",
-      "track_record": [
-        {
-          "description": "TechCrunch 将 Beat Ventures 列为 Stack AI 300 万美元种子轮投资方之一。",
-          "source_id": "beat_stack_seed"
-        },
-        {
-          "description": "融资来源记录：Stack AI · 种子轮 · 2024-05-21 · 种子轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "beat_stack_seed"
-        }
-      ],
+      "experience_summary": "机构官网披露其 pre-seed 投资定位、应用 AI 主题、两位 General Partner 与组合案例。",
       "sources": [
         {
-          "source_id": "beat_official_identity",
+          "source_id": "b36-beat-home",
           "source_url": "https://www.beatventures.com/home",
           "source_title": "Beat Ventures | Investing in Human-AI Collaboration",
           "source_content_hash": "67fb5156cbcbb4c10389cfb057e108cdcea689071af60103f711ae11539f16de",
@@ -146357,23 +146496,30 @@
           "quote_hash": "9d28bf909b47707931cb0778cc30302c8f00abf0e6cdb6794bc9e671605e4f22"
         },
         {
-          "source_id": "beat_stack_portfolio",
+          "source_id": "b36-beat-portfolio",
+          "source_url": "https://www.beatventures.com/portfolio-1",
+          "source_title": "Portfolio | Beat Ventures",
+          "source_content_hash": "dca805de14429329745fae62f9d3d2c43968a6a5948e6faea051bde2f8b8eb05",
+          "quote": "Stack AI No-code platform to build AI agents for enterprise",
+          "quote_hash": "e19500a295cc915f63c380d593207201b2c697f8f2ef1378c542c5aa5ded6547"
+        },
+        {
+          "source_id": "b36-beat-thesis",
           "source_url": "https://www.beatventures.com/home",
           "source_title": "Beat Ventures | Investing in Human-AI Collaboration",
           "source_content_hash": "67fb5156cbcbb4c10389cfb057e108cdcea689071af60103f711ae11539f16de",
-          "quote": "Stack AI enables any developer to build and deploy production-ready enterprise-level large language model (LLM) applications in minutes",
-          "quote_hash": "652b3495655f218c5ce4f675141eada1be39e2c19432b6dfb78fde6ab7f1e190"
+          "quote": "We invest in companies that use applied AI to enhance human performance, especially in industries overlooked by Silicon Valley.",
+          "quote_hash": "7561f255497dabb8140e374f11acbcbdc8367206c219e05aed20c9038b458192"
         },
         {
-          "source_id": "beat_stack_seed",
-          "source_url": "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows/",
-          "source_title": "Stack AI wants to make it easier to build AI-fueled workflows | TechCrunch",
-          "source_content_hash": "4f1d48f5d3f41df7f005975160ed4f8d67f7c8abf471720b9157e2210fc8ef5f",
-          "quote": "Investors include Gradient Ventures, Beat Ventures and True Capital along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital.",
-          "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
+          "source_id": "b36-beat-founders",
+          "source_url": "https://www.beatventures.com/home",
+          "source_title": "Beat Ventures | Investing in Human-AI Collaboration",
+          "source_content_hash": "67fb5156cbcbb4c10389cfb057e108cdcea689071af60103f711ae11539f16de",
+          "quote": "Colin Rogister General Partner Dave Anderson General Partner Start Now Tell us about your startup by completing the form below Submit a Pitch",
+          "quote_hash": "851160e9666ebf251c46483a8d1501aed395c13b315d437f07a2a8f896c4945b"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-f15261d51b7f00": {
       "summary": "+ND Capital 官网称该机构（原名 NanoDimension）成立于 2002 年，投资生命科学、物理科学与数据科学领域的突破性技术。",
@@ -149023,41 +149169,56 @@
     "INV-f6a8e7d4dcc371": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Hawk Hill Ventures 官网投资组合页列出 Sazabi 为 2025 年种子项目，并说明其为 AI 原生可观测性平台；本档案仅覆盖官网公开的投资组合信息。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "当前可核实的一手资料仅为官网投资组合页及项目披露；尚未取得足以描述机构策略、团队或基金结构的一手信息。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Hawk Hill Ventures 的官方团队页介绍 Paul Klein IV，官网投资页列出 Sazabi 的 2025 年 Seed 项目及其 AI 原生可观测性产品定位。",
+      "coverage_note": "已核实的团队背景及投资案例取自机构官网；页面未披露本档案所需的基金结构或完整业绩口径，因此不据单个项目推断完整组合。",
+      "facts": [
+        {
+          "field": "public_team_information",
+          "label": "官网团队页披露",
+          "value": "Paul Klein IV 的个人简介聚焦开发者工具与基础设施；页面未据此说明他在 Hawk Hill Ventures 的具体职务。",
+          "source_id": "b36-hawk-team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "官网投资组合页将 Sazabi 列为 2025 年种子项目，并将其描述为 AI 原生可观测性平台。",
-          "source_id": "INV-f6a8e7d4dcc371_hawk"
+          "description": "Hawk Hill Ventures 官网投资页列出 Sazabi（Seed，2025），并称其为面向软件开发者的 AI 原生可观测性平台。",
+          "source_id": "b36-hawk-investment"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "投资组合页面",
+          "label": "机构官网",
           "value": "Hawk Hill Ventures",
-          "url": "https://hawkhill.vc/investments",
-          "source_id": "INV-f6a8e7d4dcc371_hawk"
+          "url": "https://hawkhill.ventures/",
+          "source_id": "b36-hawk-team"
         }
       ],
-      "coverage_note": "当前可核实的一手资料仅为官网投资组合页及项目披露；尚未取得足以描述机构策略、团队或基金结构的一手信息。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网提供团队人物简介与投资组合案例；未将团队成员的创业经历等同为机构自身业绩。",
       "sources": [
         {
-          "source_id": "INV-f6a8e7d4dcc371_hawk",
+          "source_id": "b36-hawk-investment",
           "source_url": "https://hawkhill.vc/investments",
           "source_title": "Hawk Hill Ventures",
           "source_content_hash": "1f05d7896ac1a6c1fb77adb6c5b6eefe9f91ae43d878e6ce27c111261465d317",
           "quote": "Sazabi ( Seed , 2025 ) An AI-native observability platform built to address the unique challenges facing software developers in the AI era.",
           "quote_hash": "8eca8932097a20a82e31432d4d0ece06ec299a390cc929a5f0426998e4e62c85"
+        },
+        {
+          "source_id": "b36-hawk-team",
+          "source_url": "https://hawkhill.ventures/team",
+          "source_title": "Hawk Hill Ventures",
+          "source_content_hash": "752085c7da01d21d39dd13c0278e6a60de1e7f635aa65bcfa6920f9c0c8c637e",
+          "quote": "Hawk Hill Ventures Team Investments Memos Paul Klein IV Paul is a software engineer and startup founder focused on developer tools and infrastructure.",
+          "quote_hash": "ec12b1d34285333a7b8d06c28eb08209ef28d4715ab16408e4f6aaf19ce4d588"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-f6da221585bf1b": {
       "summary": "Greylock 是一家长期专注早期企业的软件和科技风险投资机构。官网称其多数投资支持首次创业者，并从企业构想阶段开始提供产品、市场、招聘及客户拓展支持。机构公开资料列举了 Airbnb、Coinbase、Discord、Figma、LinkedIn、Meta、Roblox 等早期合作案例。",
@@ -149153,29 +149314,73 @@
     "INV-f71d7f2d4920ea": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "矩阵起源官方融资公告将“微光创投”列为其此前获得投资的机构之一；当前可确认范围限于这条投资者披露。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "一手资料仅将“微光创投”列为矩阵起源此前投资机构之一，未确认其法律主体、团队或投资策略；未与同名机构合并。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "微光创投官网以 Welight Capital 为英文品牌，自述成立于 2015 年，主要覆盖企业服务、B2B、电商、金融、教育、新零售与消费升级，投资轮次以 A-B 轮为主。矩阵起源官网另列出名称为“微光创投”的既有投资方。",
+      "coverage_note": "微光创投官网的品牌资料、策略、公开案例及 BP 联系方式可核验。矩阵起源公告仅使用中文投资方名称，未明确其与 Welight Capital 英文品牌的对应关系；该融资披露按原文标签记录，不作为官网组合已交叉确认的案例。",
+      "facts": [
+        {
+          "field": "organization_background",
+          "label": "官网自述成立时间",
+          "value": "官网称微光创投成立于 2015 年。",
+          "source_id": "b36-welight-site"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资方向",
+          "value": "企业服务、B2B、电商、金融、教育、新零售、消费升级；投资轮次以 A-B 轮为主。",
+          "source_id": "b36-welight-site"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "矩阵起源官方融资公告称，公司此前获得过微光创投等机构投资。",
-          "source_id": "INV-f71d7f2d4920ea_matrixorigin"
+          "description": "官网公开投资案例包括小鹏汽车等项目；官网可见案例不是完整组合。",
+          "source_id": "b36-welight-portfolio"
         },
         {
-          "description": "融资来源记录：矩阵起源（MatrixOrigin） · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-903aa25f932bc468"
+          "description": "矩阵起源官方融资公告将“微光创投”列为其此前投资机构之一；公告未给出 Welight Capital 英文名或管理实体对应关系，因此这里只记录公告原文标签。",
+          "source_id": "b36-welight-matrixorigin"
         }
       ],
-      "contacts": [],
-      "coverage_note": "一手资料仅将“微光创投”列为矩阵起源此前投资机构之一，未确认其法律主体、团队或投资策略；未与同名机构合并。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "微光创投 · Welight Capital",
+          "url": "https://welightcapital.com/",
+          "source_id": "b36-welight-site"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投稿",
+          "value": "bp@welightcapital.com",
+          "source_id": "b36-welight-contact"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网自述和项目方融资公告分别支持品牌策略、官网案例和同名投资方披露；名称映射的边界已在简介与备注中说明。",
       "sources": [
         {
-          "source_id": "INV-f71d7f2d4920ea_matrixorigin",
+          "source_id": "b36-welight-site",
+          "source_url": "https://welightcapital.com/",
+          "source_title": "微光创投 Welight Capital",
+          "source_content_hash": "7419f5adb2ee3baf8e12d874f19f525e577e1e0a916641291a73677b004446e6",
+          "quote": "微光创投成立于2015年，投资领域含企业服务、B2B、电商、金融、教育、新零售、消费升级等，投资轮次以A-B轮为主。",
+          "quote_hash": "f1a83d0e75bbda5e74c8c1503d2cc2b2657589940fcb9f27ac8379aebe87d4a1"
+        },
+        {
+          "source_id": "b36-welight-portfolio",
+          "source_url": "https://welightcapital.com/",
+          "source_title": "微光创投 Welight Capital",
+          "source_content_hash": "7419f5adb2ee3baf8e12d874f19f525e577e1e0a916641291a73677b004446e6",
+          "quote": "小鹏汽车 做更懂中国的智能汽车",
+          "quote_hash": "fe93fdcde6cb7950f145bf6acab951e67b51d11c1b7c25db6f56387f3b37adb0"
+        },
+        {
+          "source_id": "b36-welight-matrixorigin",
           "source_url": "https://matrixorigin.cn/blog/matrixorigin-series-a-financing?v=20260812_7b35296",
           "source_title": "矩阵起源完成超千万美元A轮融资，产业资本与国际资本联手押注企业级AI基础设施赛道 — MatrixOrigin",
           "source_content_hash": "0d414dbcc27faf3a53b02591557bf023cda6e5aeaaabedd83d3be588dd461390",
@@ -149183,15 +149388,14 @@
           "quote_hash": "8340bbf3684ac1e8af04abae524c10ef9f744c6b9811c57192ae101b63d57b90"
         },
         {
-          "source_id": "FISRC-903aa25f932bc468",
-          "source_url": "https://elsewhere.news/zh/5ycapital/matrixorigina-5y-news",
-          "source_title": "矩阵起源（MatrixOrigin）完成超千万美元A轮融资 | 5Y News | elsewhere",
-          "source_content_hash": "011f60dbf82744e6b3a3bd2c719331f87f1c52c1c3a9e86102397b7228074c19",
-          "quote": "在本轮融资之前，矩阵起源已先后获得五源资本、险峰K2VC、钟鼎资本、微光创投、源来资本、世纪互联等知名机构投资。",
-          "quote_hash": "8340bbf3684ac1e8af04abae524c10ef9f744c6b9811c57192ae101b63d57b90"
+          "source_id": "b36-welight-contact",
+          "source_url": "https://welightcapital.com/",
+          "source_title": "微光创投 Welight Capital",
+          "source_content_hash": "7419f5adb2ee3baf8e12d874f19f525e577e1e0a916641291a73677b004446e6",
+          "quote": "商业计划书 bp@welightcapital.com",
+          "quote_hash": "dfad0db08b46e20cb507205db9cf5317bef7a3df3a2ede2406ab75607b67929b"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-f72c43776f566c": {
       "profile_type": "organization",
@@ -149251,33 +149455,67 @@
     "INV-f745d02c38582f": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Modem 官方融资公告将一位天使投资者标注为“Dave Johnson (PhoneGap/Cordova)”；目前只能确认这条公开披露标签。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "Modem 的一手融资公告使用 PhoneGap/Cordova 作为该投资者的身份括注，但没有提供其具体职位或职业经历。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Modem 官方融资公告将天使投资者标注为 Dave Johnson（PhoneGap/Cordova）；Web Directions 的 PhoneGap 专题简介称 Dave 是 Nitobi 联合创始人，并列出其公开学历。",
+      "coverage_note": "人物匹配依赖融资公告的 PhoneGap/Cordova 括注与专题简介所述 PhoneGap 经历；Web Directions 页面为 2012 年历史简介，未用于推断其当前职务。Modem 未披露个人出资金额。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（PhoneGap/Cordova）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9fd6ba5210b37fed"
+          "description": "Modem 官方融资公告把 Dave Johnson（PhoneGap/Cordova）列为天使支持者之一；未披露其个人投资金额。",
+          "source_id": "b36-dave-modem"
         }
       ],
       "contacts": [],
-      "coverage_note": "仅对融资公告所列姓名和括注负责；现有一手材料没有核实其具体任职、履历或学历，不依据同名聚合补全。",
-      "sources": [
+      "current_roles": [],
+      "career": [
         {
-          "source_id": "FISRC-9fd6ba5210b37fed",
-          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
-          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
-          "source_content_hash": "1fcd6e8a5bd85e1de48de50d890272ea31481d5ec39d8296080c54e61386027b",
-          "quote": "Dave Johnson (PhoneGap/Cordova)",
-          "quote_hash": "8bb81f5e8ab5141be429522b8963ae3995fe9bda0c080164f4d3c64e22f94389"
+          "organization": "Nitobi",
+          "title": "联合创始人",
+          "period": "Web Directions 2012 年简介披露；任期未注明",
+          "description": "Web Directions 的 PhoneGap 专题简介称 Dave Johnson 是 Nitobi 联合创始人。",
+          "source_id": "b36-dave-webdirections"
+        },
+        {
+          "organization": "PhoneGap",
+          "title": "参与 PhoneGap 项目相关工作",
+          "period": "2012 年简介所述；任期未注明",
+          "description": "Web Directions 专题简介称 Dave 当时把主要时间用于 PhoneGap 项目，未确认正式职位或雇佣关系。",
+          "source_id": "b36-dave-webdirections"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "education": [
+        {
+          "institution": "UBC",
+          "qualification": "BASc in Electrical Engineering",
+          "source_id": "b36-dave-webdirections"
+        },
+        {
+          "institution": "Imperial College",
+          "qualification": "PhD in Solid State Physics",
+          "source_id": "b36-dave-webdirections"
+        }
+      ],
+      "experience_summary": "公开资料支持其 Nitobi 与 PhoneGap 历史经历及学历；本档案不延伸到同名人物的其他任职或投资。",
+      "sources": [
+        {
+          "source_id": "b36-dave-modem",
+          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
+          "source_content_hash": "c9e9aaded026e3e202c5f63bdf885b3efe145a86cabbd92d16c16a8d59f58153",
+          "quote": "raised $4.4 million in funding , led by Accel , with participation from Inovia Capital and a group of incredible angels behind foundational developer tools and AI products: David Cramer and Chris Jennings (Sentry), Ivan Zhang (Cohere), Koen Bok and Jorn van Dijk (Framer), Lindsey Simon (Vercel), Armin Ronacher (Flask), Jacob Thornton (Bootstrap, Pierre Computer Co), John Laban and Kenneth Rose (OpsLevel), Dave Johnson (PhoneGap/Cordova)",
+          "quote_hash": "690c1c54f27e26133c6c38b7c0e9918577d71c3aac116a66ae466aa039c995dd"
+        },
+        {
+          "source_id": "b36-dave-webdirections",
+          "source_url": "https://webdirections.org/topic/html5",
+          "source_title": "HTML5, device APIs and PhoneGap &#8211; Dave Johnson &#8211; Web Directions",
+          "source_content_hash": "16916c0c7e62aa4dd8c5835b404a4a8250ec57f2408b55ded56174d77798ec4c",
+          "quote": "Dave is a co-founder of Nitobi. He holds a BASc in Electrical Engineering (UBC) and a PhD in Solid State Physics from London’s Imperial College which both have pretty much nothing to do with mobile phones or software development. Dave spends most of his time working on and talking about the PhoneGap project.",
+          "quote_hash": "9d981e3c1fa6a8b9ddfd3ce23c52f7b2bd06e273dd7317cd32bc8b8b111d6223"
+        }
+      ]
     },
     "INV-f79d8ccc3d3503": {
       "summary": "蓝驰创投是一家专注早期创业公司的风险投资机构。官网介绍页称其于2008年设立，而品牌历史文章称陈维广于2005年在中国创立团队；两种日期表述对应不同官方页面口径，本档案并列保留。官网列出人工智能、硬科技、消费科技和生物科技等投资领域，披露累计投资超过200家企业及在管资金规模超过人民币200亿元。其英文品牌于2023年改为 Lanchi Ventures；官网明确说明该品牌与硅谷 BlueRun Ventures 不再同名共享。",
@@ -149643,37 +149881,84 @@
     "INV-f8c0b98eb926ce": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "启明创投官网的佳量脑科学融资公告将“临港蓝湾基金”列为 C 轮跟投方；本档案仅覆盖该轮次披露。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "启明创投官网仅在被投企业融资公告中列出“临港蓝湾基金”为 C 轮跟投方；目前未核实该标签对应的管理人、法律主体或投资策略。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "上海临港集团所属临港奉贤园区的官方服务页设有“临港蓝湾基金”介绍，称生命蓝湾产业基金一期规模约 10 亿元，主要投向生物技术与制药、医疗器械、医疗服务。启明创投官方公告将临港蓝湾基金列为佳量脑科学 C 轮跟投方。",
+      "coverage_note": "基金规模、出资 LP 和投资方向均按园区官方页面口径记录；未据此推断基金管理人、实际已投资金额或完整组合。佳量脑科学案例采用启明创投官方原文所列轮次。",
+      "facts": [
+        {
+          "field": "fund_scale_and_operation",
+          "label": "园区官方资料披露",
+          "value": "生命蓝湾产业基金一期规模约 10 亿元人民币，采用市场化方式运作。",
+          "source_id": "b36-lingang-park"
+        },
+        {
+          "field": "lp_disclosure",
+          "label": "园区官方资料披露的出资 LP",
+          "value": "临港集团、泰格医药、临港管委会、道禾配置基金等。",
+          "source_id": "b36-lingang-lps"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的主要投资领域",
+          "value": "生物技术与制药、医疗器械、医疗服务。",
+          "source_id": "b36-lingang-sectors"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "佳量脑科学 C 轮公告将临港蓝湾基金列为跟投方。",
-          "source_id": "INV-f8c0b98eb926ce_qiming"
-        },
-        {
-          "description": "融资来源记录：佳量脑科学 · 多轮融资 · 2026-09-08 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "INV-f8c0b98eb926ce_qiming"
+          "description": "启明创投官方公告将临港蓝湾基金列为佳量脑科学 C 轮跟投方；未披露单独出资金额。",
+          "source_id": "b36-lingang-qiming"
         }
       ],
-      "contacts": [],
-      "coverage_note": "启明创投官网仅在被投企业融资公告中列出“临港蓝湾基金”为 C 轮跟投方；目前未核实该标签对应的管理人、法律主体或投资策略。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "临港奉贤园区官方基金介绍页",
+          "value": "临港蓝湾基金",
+          "url": "https://fx.shlingang.com/fx/yuanqufuwu/zcfw/",
+          "source_id": "b36-lingang-park"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "园区官方基金介绍页核实了基金规模口径、LP 与投资领域；启明创投公告核实一项具名跟投披露。",
       "sources": [
         {
-          "source_id": "INV-f8c0b98eb926ce_qiming",
+          "source_id": "b36-lingang-park",
+          "source_url": "https://fx.shlingang.com/fx/yuanqufuwu/zcfw/",
+          "source_title": "临港奉贤园区",
+          "source_content_hash": "c801468dbc3dff9336b7ff8c9153a8225cf79969307c3b36bcce0a7fec24832f",
+          "quote": "临港蓝湾基金 • 生命蓝湾产业基金一期规模约10亿元人民币，采用市场化方式运作",
+          "quote_hash": "d0126b67aa593ed4b70c7a97445c8b10aae58fddb9798c2aa81d044360e729f2"
+        },
+        {
+          "source_id": "b36-lingang-sectors",
+          "source_url": "https://fx.shlingang.com/fx/yuanqufuwu/zcfw/",
+          "source_title": "临港奉贤园区",
+          "source_content_hash": "c801468dbc3dff9336b7ff8c9153a8225cf79969307c3b36bcce0a7fec24832f",
+          "quote": "主要投资领域包括生物技术与制药、医疗器械、医疗服务等。",
+          "quote_hash": "2bc40bdfcfaae48ac3785551060c72fb2ab798ff838c771a95e04430912b01d5"
+        },
+        {
+          "source_id": "b36-lingang-qiming",
           "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
           "source_title": "启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮 | 启明创投",
           "source_content_hash": "a51c585248897d932a8f4d0ca874c53a5992b5b2956ed607f0212f9ceb444913",
           "quote": "C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投。",
           "quote_hash": "cc57f536c07b39a6ca04c83288ac32ea7348ed076980ecfdeddebef44ada2e0b"
+        },
+        {
+          "source_id": "b36-lingang-lps",
+          "source_url": "https://fx.shlingang.com/fx/yuanqufuwu/zcfw/",
+          "source_title": "临港奉贤园区",
+          "source_content_hash": "c801468dbc3dff9336b7ff8c9153a8225cf79969307c3b36bcce0a7fec24832f",
+          "quote": "出资LP包括临港集团、泰格医药、临港管委会、道禾配置基金等",
+          "quote_hash": "d3370f9f99ef53bc11ac6b837cd64bf1d3a836ddf596aa83f3d1086b5cc3beab"
         }
-      ],
-      "last_verified_at": "2026-10-03"
+      ]
     },
     "INV-f8c28c4683906d": {
       "summary": "Fei-Fei Li 是斯坦福大学计算机科学教授、斯坦福以人为本人工智能研究院（HAI）联合创始主任，并共同创办空间智能公司 World Labs。她的公开履历覆盖计算机视觉与机器学习研究、斯坦福学术领导，以及 Google Cloud AI/ML 工作。",
@@ -160324,15 +160609,16 @@
     "INV-ef9775754a8d09": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Bolt 官网确认 Markus Villig 为创始人兼 CEO；EU-Startups 报道将其列为 bilt.me pre-seed 轮个人支持者。本档案仅记公开身份与该项活动，不扩展为完整个人投资组合或个人出资额。",
-      "summary": "Markus Villig 是 Bolt 创始人兼 CEO。EU-Startups 报道称他支持了 bilt.me 的 pre-seed 融资；该报道未披露其个人投资金额。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Markus Villig 是 Bolt 创始人兼 CEO。Bolt 官网称他于 2013 年推出公司；Superhero Capital 的公司账号将他列为 bilt.me €615K pre-seed 轮的共同参与方之一，未披露他的个人出资额。",
+      "coverage_note": "已核实的背景限于 Bolt 创立及现任公开职务，以及一项由领投方自述的融资参与；没有把这些资料扩展为完整个人投资组合、个人财富或出资金额。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "EU-Startups 报道将 Markus Villig 列为 bilt.me pre-seed 轮支持者；未披露个人投资额。",
-          "source_id": "PROFILE-a9adbe82b6973af53f6a"
+          "description": "Superhero Capital 的公开公司账号称其领投 bilt.me €615K 融资，并列出 Markus Villig（Bolt）和 Martin Sokk（Lightyear）为共同参与方；未披露个人出资额。",
+          "source_id": "b36-markus-bilt"
         }
       ],
       "contacts": [],
@@ -160340,31 +160626,38 @@
         {
           "title": "Founder and CEO",
           "organization": "Bolt",
-          "source_id": "PROFILE-2ba8193d546f9ddd4b03"
+          "source_id": "b36-markus-bolt"
         }
       ],
-      "career": [],
+      "career": [
+        {
+          "organization": "Bolt",
+          "title": "创始人",
+          "period": "2013 年创立；截至 2026-10-05 官网仍列为 Founder and CEO",
+          "description": "Bolt 官网称 Markus Villig 于 2013 年创立公司，并介绍他亲自制作首版网约车软件、招募首批司机。",
+          "source_id": "b36-markus-bolt"
+        }
+      ],
       "education": [],
-      "experience_summary": "已核实公开职位与一项投资活动；没有据此扩展其他履历。",
+      "experience_summary": "Bolt 官方领导团队页确认其创始人兼 CEO 身份；本次找到一项由领投机构披露的个人投资参与记录。",
       "sources": [
         {
-          "source_id": "PROFILE-a9adbe82b6973af53f6a",
-          "source_url": "https://www.eu-startups.com/2026/09/estonias-bilt-me-raises-e615k-with-backing-from-bolt-and-lightyear-founders-to-scale-its-ai-native-mobile-app-builder/",
-          "source_title": "Estonia’s bilt.me raises €615k with backing from Bolt and Lightyear founders to scale its AI-native mobile app builder | EU-Startups",
-          "source_content_hash": "f87028fb9b5077ba3208455560fe69ca955a19bf7e3ffb42d044a6de930d9bc0",
-          "quote": "The round also saw backing from Bolt founder Markus Villig and Lightyear founder Martin Sokk.",
-          "quote_hash": "7d21f3950f4c1c1ad2f52013595cd901699a6d8393c9517e40367dea73a98d39"
-        },
-        {
-          "source_id": "PROFILE-2ba8193d546f9ddd4b03",
+          "source_id": "b36-markus-bolt",
           "source_url": "https://bolt.eu/en/company/leadership/",
           "source_title": "Bolt leadership team",
           "source_content_hash": "bb33cd0d57dba8d1493c21172102da085da32e956e4c902e7c27a343279478d8",
-          "quote": "Markus Villig Founder and CEO of Bolt",
-          "quote_hash": "a37278740d38ff13a203026f4350ee0641e985c5ec848fd66d0f8ebf479b2621"
+          "quote": "Markus Villig Founder and CEO of Bolt Markus launched the company in 2013 at the age of 19",
+          "quote_hash": "0fc3578d1d5f8973b1d6ab032a2c9c788b8ca7c16ae84e421de2e4f48b7da21b"
+        },
+        {
+          "source_id": "b36-markus-bilt",
+          "source_url": "https://ee.linkedin.com/company/superhero-capital",
+          "source_title": "Superhero Capital | LinkedIn",
+          "source_content_hash": "a4b2c790509ab31de6118a353c4f15434110a95923f51d34f35029bde88eecf2",
+          "quote": "Exciting news from our newest portfolio addition: bilt.me raises €615K to let anyone build an app. Describe your idea, and bilt.me's AI agent builds a real native iOS and Android app. A year ago this was a hackathon project in Tallinn. Today revenue is doubling month over month, and thousands of people are building on it. We're proud to lead the round, alongside Markus Villig (Bolt) and Martin Sokk (Lightyear).",
+          "quote_hash": "16d5ff49d2d167fdc23cf74859f55050d35b6717948e7f6f1a929ef1f259f58a"
         }
-      ],
-      "last_verified_at": "2026-10-04"
+      ]
     },
     "INV-1ee81eef123866": {
       "profile_type": "organization",
@@ -163338,6 +163631,150 @@
         }
       ],
       "last_verified_at": "2026-10-05"
+    },
+    "INV-094477595b4983": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "IIMA Ventures 是设于 IIM Ahmedabad 的创业创新机构，官网介绍其开展孵化、加速、洞察及早期投资相关工作，并面向 Deeptech、Digitalization 与 Climatetech 项目提供支持。官网历史页称其创业中心于 2002 年在 IIM Ahmedabad 建立，团队页列出 CEO & Managing Partner Priyanka Chopra。",
+      "coverage_note": "机构自述资料支持其品牌、创业支持与投资活动；本档案不把孵化项目一概视作股权投资组合，也不推断各支基金的法律载体。",
+      "facts": [
+        {
+          "field": "organization_scope",
+          "label": "官网介绍的业务范围",
+          "value": "在创业生态中开展研究、教育、孵化、加速和早期投资相关工作。",
+          "source_id": "b36-iima-model"
+        },
+        {
+          "field": "support_themes",
+          "label": "官网公布的支持主题",
+          "value": "Deeptech、Digitalization、Climatetech。",
+          "source_id": "b36-iima-home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2002",
+          "description": "官网历史页面称 IIM Ahmedabad 创业中心于 2002 年建立。",
+          "source_id": "b36-iima-history"
+        },
+        {
+          "date": "2024",
+          "description": "官网时间线记录 IIMA-CIIE 于 2024 年更名为 IIMA Ventures。",
+          "source_id": "b36-iima-home"
+        }
+      ],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "IIMA Ventures",
+          "url": "https://iimaventures.com/",
+          "source_id": "b36-iima-home"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "CEO & Managing Partner",
+          "organization": "IIMA Ventures",
+          "source_id": "b36-iima-team"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网披露的组织工作包含创业孵化、加速、研究与早期投资支持；团队信息以其公开团队页为准。",
+      "sources": [
+        {
+          "source_id": "b36-iima-home",
+          "source_url": "https://iimaventures.com/",
+          "source_title": "IIMA Ventures – Leading Startup Incubator &amp; Innovation Hub at IIM Ahmedabad",
+          "source_content_hash": "061d87cc827794c56885d57a2997bb5b39d785e0e3d93e8ef6c46db7c4293e76",
+          "quote": "We support innovation opportunities across three broad areas Deeptech Enabling game-changers who are building innovation-first ventures from India, for the world Digitalization Enabling passionate founders harnessing digitally inclusive solutions for India's next half billion Climatetech Enabling fearless entrepreneurs tackling climate change through their disruptive solutions",
+          "quote_hash": "ed632aa2a13ae7c4f4094de3c7eb816298a4d8544896cc6ae2ab106c4c531a45"
+        },
+        {
+          "source_id": "b36-iima-history",
+          "source_url": "https://iimaventures.com/building-for-consequential-companies/",
+          "source_title": "Building for Consequential Companies - IIMA VENTURES",
+          "source_content_hash": "04f7c9feaa474476c8c3fdce0da0655cc30086a7fe335dd57a4a8451031c0c9c",
+          "quote": "Built at IIM Ahmedabad in 2002 as an entrepreneurship centre and incorporated in 2007-08 as a section 8 company",
+          "quote_hash": "8e4008cc409c17ea90cf77ce53804fe8d2afed86621559db8ae66e1ad896e579"
+        },
+        {
+          "source_id": "b36-iima-team",
+          "source_url": "https://iimaventures.com/team/",
+          "source_title": "Team – IIMA Ventures Startup Program &amp; Innovation Initiative",
+          "source_content_hash": "def0519f7ac3ee9431db877bbf7123e63cef5f9db890c973cd0b9f7e6313f690",
+          "quote": "Priyanka Chopra CEO & Managing Partner",
+          "quote_hash": "1525d6ed1c1ac248ba05db02be263e9934bdcb3470794debb5b4dc18d667f647"
+        },
+        {
+          "source_id": "b36-iima-model",
+          "source_url": "https://iimaventures.com/building-for-consequential-companies/",
+          "source_title": "Building for Consequential Companies - IIMA VENTURES",
+          "source_content_hash": "04f7c9feaa474476c8c3fdce0da0655cc30086a7fe335dd57a4a8451031c0c9c",
+          "quote": "What started as an early effort to support entrepreneurs has today grown into an innovation continuum that works with startups, aspiring entrepreneurs and investors.",
+          "quote_hash": "aeeadfaa0d22443f880deaef013c057db9237ec5e866a20177b578a327101b2d"
+        }
+      ]
+    },
+    "INV-f1090cac761a3d": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-10-05",
+      "summary": "Wind River Ventures 官网将自身描述为 “Diversified Investment Fund”，并提供投资机会联系表。当前公开页面没有给出可核实的管理团队、地域、具体投资策略或组合清单。",
+      "coverage_note": "仅记录同名官网的自我描述与公开联系渠道；本次未把其他同名基金、法人或 SEC 申报并入该档案，也不宣称存在完整组合。",
+      "facts": [
+        {
+          "field": "self_description",
+          "label": "官网自我描述",
+          "value": "Diversified Investment Fund（多元化投资基金）。",
+          "source_id": "b36-wind-site"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Wind River Ventures",
+          "url": "https://windriverventures.com/",
+          "source_id": "b36-wind-site"
+        },
+        {
+          "kind": "contact_form",
+          "label": "投资机会联系表",
+          "value": "官网邀请有投资机会者通过页面联系表提交信息。",
+          "url": "https://windriverventures.com/",
+          "source_id": "b36-wind-contact"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网仅提供基金自我描述与投资机会联系入口；没有足够的一手材料描述其人员、策略、基金法律实体或已投项目。",
+      "sources": [
+        {
+          "source_id": "b36-wind-site",
+          "source_url": "https://windriverventures.com/",
+          "source_title": "Wind River Ventures",
+          "source_content_hash": "26ce1123b129b965d2186ec5a76d5f86dbc3e15899aca916605e6102f273ddaf",
+          "quote": "Diversified Investment Fund",
+          "quote_hash": "c4820dfbc7a3a3790b8dd97aeb99a60d730a363bae395655c90e398086891807"
+        },
+        {
+          "source_id": "b36-wind-contact",
+          "source_url": "https://windriverventures.com/",
+          "source_title": "Wind River Ventures",
+          "source_content_hash": "26ce1123b129b965d2186ec5a76d5f86dbc3e15899aca916605e6102f273ddaf",
+          "quote": "Send us a message if you have an investment opportunity you would like to discuss.",
+          "quote_hash": "0411679eff881d003b186a9cbeff0d0c445189ca0660c57c21178dde852af77c"
+        }
+      ]
     }
   },
   "people": {
