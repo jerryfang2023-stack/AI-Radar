@@ -192,12 +192,53 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Carya Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体与基金类型依据SEC申报字段；申报内容未经SEC独立核实。投资活动仅限Fish Audio官网公告明确披露的一笔融资。",
+      "summary": "SEC于2023年Form D/A申报中列出Carya Venture Partners, LP - A4为特拉华州有限合伙企业及风险投资基金，主要营业地点在西雅图，并披露其普通合伙人及普通合伙人管理方。Fish Audio官网2026年融资公告将Carya Venture Partners列为参投方。",
+      "facts": [
+        {
+          "field": "issuer_name",
+          "label": "SEC申报基金名称",
+          "value": "Carya Venture Partners, LP - A4",
+          "source_id": "sec_form_da_carya_2023"
+        },
+        {
+          "field": "entity_type",
+          "label": "申报主体类型",
+          "value": "Delaware limited partnership",
+          "source_id": "sec_form_da_carya_2023"
+        },
+        {
+          "field": "fund_type",
+          "label": "SEC申报基金类别",
+          "value": "venture capital fund",
+          "source_id": "sec_form_da_carya_2023"
+        },
+        {
+          "field": "principal_place",
+          "label": "SEC申报主要营业地点",
+          "value": "Seattle, Washington 98104",
+          "source_id": "sec_form_da_carya_2023"
+        },
+        {
+          "field": "general_partner",
+          "label": "SEC申报普通合伙人",
+          "value": "Fund GP, LLC",
+          "source_id": "sec_form_da_carya_2023"
+        },
+        {
+          "field": "general_partner_manager",
+          "label": "SEC申报普通合伙人管理方",
+          "value": "Belltower Fund Group, Ltd.",
+          "source_id": "sec_form_da_carya_2023"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Fish Audio于2026年7月宣布获得5200万美元种子轮融资，Carya Venture Partners列为参投方。",
+          "source_id": "fish_audio_seed_2026"
+        },
         {
           "description": "融资来源记录：Fish Audio · 种子轮 · 2026-07-28 · 本轮参投 · $52 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e06e94375ec64ac4"
@@ -209,6 +250,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "fish_audio_seed_2026",
+          "source_url": "https://fish.audio/zh-CN/blog/fish-audio-52m-seed-funding/",
+          "source_title": "5 个模型，22 个人，1 年 - Fish Audio Blog",
+          "source_content_hash": "bf896d7f2424544100dbf0330e40efd54a015a67482d2e0f18f7ead929fb9e46",
+          "quote": "感谢领投方 Coreline Ventures 和 Capital Today ，以及参投方 359 Capital, Play Time, HF0, 645 Ventures, Parable, Carya Venture Partners, Alphalist Partners",
+          "quote_hash": "e52c975c61e2da699424f7922cf5de92bea9afdb9bd7aab34d7f2aa6da98331e"
+        },
+        {
+          "source_id": "sec_form_da_carya_2023",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1970960/000197096023000004/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D/A",
+          "source_content_hash": "875bfd294750488bb63697a7e66e8b0b9124c7a5aa9042a4578b6a44ba3babce",
+          "quote": "Name of Issuer Carya Venture Partners, LP - A4 Jurisdiction of Incorporation/Organization DELAWARE Year of Incorporation/Organization Over Five Years Ago X Within Last Five Years (Specify Year) 2023 Yet to Be Formed 2. Principal Place of Business and Contact Information Name of Issuer Carya Venture Partners, LP - A4 Street Address 1 Street Address 2 119 SOUTH MAIN STREET SUITE 220 City State/Province/Country ZIP/PostalCode Phone Number of Issuer SEATTLE WASHINGTON 98104 2068016359 3. Related Persons Last Name First Name Middle Name Fund GP, LLC Street Address 1 Street Address 2 PO Box 3217 City State/Province/Country ZIP/PostalCode Seattle WASHINGTON 98114 Relationship: Executive Officer X Director Promoter Clarification of Response (if Necessary): General partner of the Issuer Last Name First Name Middle Name Belltower Fund Group, Ltd. Street Address 1 Street Address 2 119 South Main St, Suite 220 City State/Province/Country ZIP/PostalCode Seattle WASHINGTON 98104 Relationship: Executive Officer X Director Promoter Clarification of Response (if Necessary): Manager of the general partner of the Issuer",
+          "quote_hash": "cf419c6a0f04b15bcf22166265854c297b4854ca25aa15a8a4764950d0e10416"
+        },
         {
           "source_id": "FISRC-e06e94375ec64ac4",
           "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
@@ -226,7 +283,7 @@
           "quote_hash": "4065ddd1bac0cc008baab2ea0cfbf12c017120cfee5ea4b2323c2d25b6dcbec9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

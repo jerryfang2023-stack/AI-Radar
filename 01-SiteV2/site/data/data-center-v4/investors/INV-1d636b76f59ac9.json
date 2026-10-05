@@ -139,19 +139,86 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Dash Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "SEC Form ADV以DASH FUND MANAGEMENT, LLC名义列报，AngelList另列Dash Fund Syndicate并称其与Ryan Sells有关联；现有来源未明确证明两者是同一法律载体，档案保留该边界。",
+      "summary": "SEC AdviserInfo留存的2022年Form ADV将DASH FUND MANAGEMENT, LLC列为申报投资顾问主体（CRD 315795）。AngelList另有Dash Fund Syndicate页面，列出典型投资额、年度预期交易数及LP参与数，并说明该syndicate与Ryan Sells有关联；页面未说明syndicate与管理公司的法律关系。Outmarket AI的官网公告则直接将Dash Fund列为种子轮支持方。",
+      "facts": [
+        {
+          "field": "adviser_name_as_filed",
+          "label": "2022年Form ADV申报名",
+          "value": "DASH FUND MANAGEMENT, LLC",
+          "source_id": "sec_adv_dash_fund_management_2022"
+        },
+        {
+          "field": "crd_number_as_filed",
+          "label": "Form ADV CRD编号",
+          "value": "315795",
+          "source_id": "sec_adv_dash_fund_management_2022"
+        },
+        {
+          "field": "typical_investment_as_listed",
+          "label": "AngelList syndicate页面列示典型投资额",
+          "value": "$633,000",
+          "source_id": "angellist_dash_fund_syndicate"
+        },
+        {
+          "field": "expected_deals_per_year_as_listed",
+          "label": "AngelList页面列示年度预期交易数",
+          "value": "5",
+          "source_id": "angellist_dash_fund_syndicate"
+        },
+        {
+          "field": "lp_count_as_listed",
+          "label": "AngelList页面列示已投资LP数",
+          "value": "79",
+          "source_id": "angellist_dash_fund_syndicate"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Outmarket AI官网发布称Dash Fund参与其470万美元种子轮融资。",
+          "source_id": "outmarket_seed_2024"
+        },
         {
           "description": "融资来源记录：Outmarket AI · B轮 · 2026-09-25 · 本轮参投 · $34.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1a2ad9b1108e3f59"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Dash Fund Syndicate AngelList页面",
+          "value": "https://venture.angellist.com/dash-fund/syndicate",
+          "url": "https://venture.angellist.com/dash-fund/syndicate",
+          "source_id": "angellist_dash_fund_syndicate"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "outmarket_seed_2024",
+          "source_url": "https://outmarket.ai/blog/introducing-outmarket",
+          "source_title": "Introducing Outmarket AI | Outmarket Blog",
+          "source_content_hash": "988302ae3a78e3cbfa8bea62e091461d6b306aa02ea372e740384c930d137064",
+          "quote": "Today we are excited to launch Outmarket AI with $4.7M in seed financing led by Fika Ventures and additional support from TTV and Dash Fund.",
+          "quote_hash": "ba2f10bd1862602bb5619ba9d08e2f9b06d467c3328890759f8569126ac7ce88"
+        },
+        {
+          "source_id": "sec_adv_dash_fund_management_2022",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/315795/PDF/315795.pdf",
+          "source_title": "FORM ADV — DASH FUND MANAGEMENT, LLC, CRD 315795",
+          "source_content_hash": "a64c4a7e7fb493b63ad1810d37133b37ad8c5d49c846120b1e7bd7fb603ffb9d",
+          "quote": "Primary Business Name:DASH FUND MANAGEMENT, LLC CRD Number: 315795",
+          "quote_hash": "c59f6f284660d5cee6f9a08723bb79828e766c18eab9783b2b193c4ae1014979"
+        },
+        {
+          "source_id": "angellist_dash_fund_syndicate",
+          "source_url": "https://venture.angellist.com/dash-fund/syndicate",
+          "source_title": "Invest with Dash Fund Syndicate | AngelList",
+          "source_content_hash": "ad801b15171911d5b249570ead81e5e873809fbfee5358f6be06700c8c5a337f",
+          "quote": "$633k Typical Investments 5 Expected Deals/Year 79 Unique LPs have invested Dealflow Team Ryan Sells Tom Seo Dash Fund Syndicate is a supervised person of or otherwise affiliated with Ryan Sells, a “Registered Investor Advisor” under the Investment Advisers Act of 1940.",
+          "quote_hash": "a0478c601cdfaf1e167337ed492633b4684fc18b918c34740854010503b2b747"
+        },
         {
           "source_id": "FISRC-1a2ad9b1108e3f59",
           "source_url": "https://www.prnewswire.com/news-releases/outmarket-ai-raises-34-5m-series-b-to-solidify-position-as-the-1-ai-platform-for-insurance-302891583.html",
@@ -161,7 +228,7 @@
           "quote_hash": "9c4dfa4bd1f917cdee90a6d7b63e7f79e690df1508c925d76e125149ae2fbe18"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

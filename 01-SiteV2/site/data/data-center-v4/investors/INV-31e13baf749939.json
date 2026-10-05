@@ -137,12 +137,43 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中国电信投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据2021年发行人/保荐机构披露核验法定名称和当时披露的经营范围、股权信息；历史披露不等于实时工商状态。",
+      "summary": "2021年基金设立核查文件列明中国电信集团投资有限公司为有限合伙人，简称“中国电信”，并披露成立时间、企业类型、以自有资金投资的经营范围及中国电信集团有限公司持股信息。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "中国电信集团投资有限公司",
+          "source_id": "telecom_group_investment_filing_2021"
+        },
+        {
+          "field": "established",
+          "label": "成立日期",
+          "value": "2017-10-31（文件披露）",
+          "source_id": "telecom_group_investment_filing_2021"
+        },
+        {
+          "field": "organization_type",
+          "label": "文件披露的企业类型",
+          "value": "有限责任公司（非自然人投资或控股的法人独资）",
+          "source_id": "telecom_group_investment_filing_2021"
+        },
+        {
+          "field": "business_scope",
+          "label": "文件披露的经营范围",
+          "value": "以企业自有资金进行投资，并提供企业投资咨询、企业管理咨询及科技信息专业领域相关服务",
+          "source_id": "telecom_group_investment_filing_2021"
+        },
+        {
+          "field": "shareholder_as_disclosed",
+          "label": "文件披露的股权信息",
+          "value": "中国电信集团有限公司100%持股（文件披露）",
+          "source_id": "telecom_group_investment_filing_2021"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +184,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "telecom_group_investment_filing_2021",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2021-12-29/1212046620.PDF",
+          "source_title": "华英证券有限责任公司 / 关于京东方科技集团股份有限公司参与设立北京京国管股权 / 投资基金（有限合伙）暨关联交易的核查意见",
+          "source_content_hash": "1babf13612b45436482b63cace388efa2a5663339d5b8c26c6f7a4efdf1c6f5f",
+          "quote": "公司名称：中国电信集团投资有限公司（以下简称“中国电信”）\r\n2、注册地址：河北省安新县安容公路东(建设大街279号)\r\n3、成立日期：2017-10-31\r\n4、注册资本：500,000万元人民币\r\n5、公司类型：有限责任公司(非自然人投资或控股的法人独资)\r\n6、法定代表人：李原\r\n7、经营范围：以企业自有资金进行投资，企业投资咨询服务，企业管理咨\r\n询，市场营销策划，从事科技信息专业领域内的技术咨询、技术开发、技术转让、\r\n技术服务等（依法须经批准的项目，经相关部门批准后方可开展经营活动）。\r\n8、股权结构：中国电信集团有限公司 100%持股",
+          "quote_hash": "ba46f351869da3ae0283930264e6a561389e361d944a0eb4ba3d32d85f4d762e"
+        },
+        {
           "source_id": "FISRC-5ffa5747cf097be6",
           "source_url": "https://stock.stockstar.com/RB2026081900036871.shtml",
           "source_title": "【投融资动态】清程极智A++轮融资，融资额数亿人民币，投资方为中国电信投资、瀚晖资本等",
@@ -161,7 +200,7 @@
           "quote_hash": "d68722d11d0246901b0bb4d3f70c9a8a2e075f7a122acde77028b978dab5b8f5"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-05"
     }
   }
 }

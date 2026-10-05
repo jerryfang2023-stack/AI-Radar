@@ -178,14 +178,43 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "余杭国投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "债券募集说明书明确定义“余杭国投”为杭州余杭国有资本投资运营集团有限公司；启明创投官方组合新闻记录其作为老股东继续参与佳量脑科学C轮。",
+      "summary": "杭州余杭国有资本投资运营集团有限公司在上海证券交易所披露的债券募集说明书中被明确定义为“余杭国投”，并作为发行人控股股东披露。杭州市国有资本投资运营有限公司官网以“余杭国投集团”称呼该集团并记录其参加基金业务交流；启明创投2026年组合新闻将余杭国投列为佳量脑科学C轮继续投资的老股东。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "债券文件定义的正式名称",
+          "value": "杭州余杭国有资本投资运营集团有限公司",
+          "source_id": "sse_qianjiang_bond_2024"
+        },
+        {
+          "field": "short_name",
+          "label": "债券文件定义的简称",
+          "value": "余杭国投",
+          "source_id": "sse_qianjiang_bond_2024"
+        },
+        {
+          "field": "organization_type",
+          "label": "主体名称所示机构类型",
+          "value": "国有资本投资运营集团",
+          "source_id": "sse_qianjiang_bond_2024"
+        },
+        {
+          "field": "relationship_to_qianjiang_issuer",
+          "label": "债券文件披露的关系",
+          "value": "杭州钱江开发区投资发展有限公司控股股东",
+          "source_id": "sse_qianjiang_bond_2024"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "启明创投官网称余杭国投作为老股东继续投资杭州佳量脑科学C轮。",
+          "source_id": "qiming_jialiang_series_c_2026"
+        },
         {
           "description": "融资来源记录：佳量脑科学 · 多轮融资 · 2026-09-08 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0fc87012f374b083"
@@ -197,6 +226,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "qiming_jialiang_series_c_2026",
+          "source_url": "https://www.qimingvc.com/en/node/7682",
+          "source_title": "启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮 | Qiming Venture Partners",
+          "source_content_hash": "de06e3fa4673b1c9ff12096263e0e904b33d7cefc7f7668460ab7a12b205efc7",
+          "quote": "C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投。",
+          "quote_hash": "cc57f536c07b39a6ca04c83288ac32ea7348ed076980ecfdeddebef44ada2e0b"
+        },
+        {
+          "source_id": "sse_qianjiang_bond_2024",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202402/040761_20240201_HQ8J.pdf",
+          "source_title": "杭州市钱江开发区投资发展有限公司2024年债券募集说明书",
+          "source_content_hash": "b87e7fecadff751ea9cf0d2f3c8883116aaf62149d7f2023404d6c3c83fc95d8",
+          "quote": "控股股东、余杭国投 指 指杭州余杭国有资本投资运营集团有限公司\r\n实际控制人、余杭区国资",
+          "quote_hash": "63bb3c39bfbc9ec817e3f1339d340d98b4df59c530b383d4f710f05cd3a307d6"
+        },
+        {
+          "source_id": "hangzhou_capital_yuhang_news_2024",
+          "source_url": "https://hzzbco.com/newDet_437_6",
+          "source_title": "杭州市国有资本投资运营有限公司官网",
+          "source_content_hash": "226ba568b68e943d2d0518b9e838cd4a3002a1ce49483111fff1fb1e095b45fa",
+          "quote": "以党建链赋能创新链 服务产业链——杭州资本与余杭国投、君联资本开展党建共建活动 2024年11月04日 为充分推动党建与业务融合发展，积极构建党建链与创新链、产业链融合共促的良好态势，10月25日，杭州资本与余杭国投、君联资本开展以“赓续中华文脉 传承红色基因”为主题的党建共建活动。杭州资本党委书记、董事长孙刚锋， 余杭国投集团党委书记、董事长孟志刚 ， 君联资本党支部书记、君联资本副董事长陈浩 ， 君联资本党支部副书记、君联资本总裁李家庆 一行出席活动。 在良渚博物馆，共建单位一行充分领略中华五千多年文明史，深入学习习近平总书记关于良渚文化的批示指示精神，深刻感悟习近平文化思想的博大内涵。在深睿医疗公司，充分了解企业积极响应“加快发展新质生产力”号召，通过突破性的人工智能“深度学习”技术及自主研发的核心算法，赋能医疗服务机构实现智能化升级与转型的具体实践。在座谈交流环节，共建单位各方分享了企业党建工作经验，并对后续投资形势和基金业务开展等进行了深入交流。",
+          "quote_hash": "f955abe3a748f180f827e2b6d54e8b1e9cb2917d916a6e86cd8dfbfe5c2769a1"
+        },
         {
           "source_id": "FISRC-0fc87012f374b083",
           "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
@@ -214,7 +267,7 @@
           "quote_hash": "cda0e063c803dad403d8dd31caac65412fa772c4a485dfe9b75c5a35cce15595"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-05"
     }
   }
 }
