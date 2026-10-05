@@ -139,27 +139,39 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只找到企业招聘信息和一项媒体融资列名，不能据此推定存在独立基金或完整投资组合。",
-      "summary": "辽宁科技大学化学工程学院就业页面将镔鑫钢铁对应为江苏省镔鑫钢铁集团有限公司，并称其成立于2008年。投资界对数巅智能融资的报道把“镔鑫钢铁”列入投资方名单。本档只收录主体索引与这项公开列名。",
+      "coverage_status": "researched",
+      "coverage_note": "主体背景摘自辽宁科技大学2025年招聘信息页所载公司简介，并非集团官网；融资活动仅由投资界报道列名，未取得集团或被投企业原始公告确认其实际出资主体及金额。招聘页联系方式未录入。",
+      "summary": "辽宁科技大学招聘信息页所载公司简介将“镔鑫钢铁”对应为江苏省镔鑫钢铁集团有限公司，介绍其以钢铁生产为主业，并涉足工业气体、发电、开发投资、贸易、物流和房地产。投资界报道曾将镔鑫钢铁列入数巅智能融资投资方名单；该投资关系尚无集团或发行方的一手公告确认。",
       "facts": [
         {
-          "field": "formal_name",
-          "label": "主体名称",
-          "value": "江苏省镔鑫钢铁集团有限公司",
+          "field": "public_entity_name",
+          "label": "公开资料中的主体名称",
+          "value": "江苏省镔鑫钢铁集团有限公司；名称见辽宁科技大学招聘信息页所载公司简介。",
           "source_id": "binxin_identity"
         },
         {
-          "field": "founded",
-          "label": "成立时间",
-          "value": "2008年2月",
+          "field": "business_scope",
+          "label": "公开资料介绍的业务",
+          "value": "以钢铁生产为主业，涉及工业气体制造、超高压煤气发电、开发投资、综合贸易、物流及房地产。",
+          "source_id": "binxin_identity"
+        },
+        {
+          "field": "registered_capital",
+          "label": "招聘资料所载注册资本",
+          "value": "人民币21亿元；为2025年招聘信息页所载数据，未由集团官网复核。",
           "source_id": "binxin_identity"
         }
       ],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "2008-02",
+          "description": "招聘信息页所载公司简介称江苏省镔鑫钢铁集团有限公司成立于2008年2月。",
+          "source_id": "binxin_identity"
+        }
+      ],
       "track_record": [
         {
-          "description": "投资界报道将镔鑫钢铁列为数巅智能多轮融资披露的参与方之一。",
+          "description": "投资界报道将镔鑫钢铁列入数巅智能公开融资投资方名单；报道未披露镔鑫的单笔投资金额，投资关系尚未由集团或发行方一手确认。",
           "source_id": "binxin_activity"
         },
         {
@@ -174,16 +186,16 @@
           "source_url": "https://www.ustl.edu.cn/hgxy/info/1040/4272.htm",
           "source_title": "江苏省镔鑫钢铁集团有限公司招聘就业信息-辽宁科技 - 化学工程学院",
           "source_content_hash": "950349056431f1fca2ddc13661242fa3081244645298907a7520ee268cbd6c41",
-          "quote": "江苏省镔鑫钢铁集团有限公司成立于2008年2月",
-          "quote_hash": "3a60d7444a7246dcfbd3b312916aa68655522890ea4ab08243c16155f5e5cbd6"
+          "quote": "江苏省镔鑫钢铁集团有限公司成立于 2008年2月，注册资本21亿元，坐落于连云港市赣榆区，占地5000余亩。经过十余年发展，现已成为以钢铁生产为主业，横跨工业气体制造、超高压煤气发电、开发投资、综合贸易、物流及房地产等领域的大型综合钢铁企业。",
+          "quote_hash": "79ada20ef812a9091b8a58870ec46e94efd166ea9865c87244fd9c398c00ae44"
         },
         {
           "source_id": "binxin_activity",
           "source_url": "https://news.pedaily.cn/202609/569430.shtml",
           "source_title": "数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化_投资界",
           "source_content_hash": "8b03a9d7d0f177d479ba7379919a2b9f76a4ee8171835bb674fa9d0ba29585e2",
-          "quote": "中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒、财鑫资本",
-          "quote_hash": "dacc53b490c1a8e1d13febfec4ec1862737f8ba1548d68410f7ab9dd93d3316c"
+          "quote": "此次披露的投资方包括 中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒、财鑫资本、深圳力合等产业与金融资本",
+          "quote_hash": "14387e92a6fc787e35678e4e0ddd4a9f490763b7b9737773620c75612541c65f"
         },
         {
           "source_id": "FISRC-f5fa738edf400dda",
@@ -194,7 +206,11 @@
           "quote_hash": "4f7de3e000eb80419ec27fd750e26ba56642a4e0089dde436f1d526a46bd7eb4"
         }
       ],
-      "last_verified_at": "2026-10-06"
+      "last_verified_at": "2026-10-06",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
