@@ -140,21 +140,27 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "Coherent投资者关系官网确认Coherent Corp.主体；Eliyan官方融资公告将Coherent列入该轮战略投资参与方。本档只记录这一项被投企业公告。",
-      "coverage_note": "记录的是公司参与一次战略融资的公开披露，不据此把Coherent描述为独立风险投资基金。",
+      "coverage_note": "投资活动来自融资发行方Eliyan的官方公告；没有据此扩展Coherent的其他投资组合。",
+      "summary": "Coherent官网介绍其为全球光子技术企业，成立于1971年并在20多个国家开展业务。Eliyan官方战略融资公告将Coherent列为参与方。本档记录公司主体与这次公开战略投资披露，不将其描述为独立风险投资基金。",
       "facts": [
         {
-          "field": "issuer_identity",
-          "label": "公司主体",
-          "value": "Coherent Corp.",
-          "source_id": "coherent_ir"
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1971年",
+          "source_id": "coherent_profile"
+        },
+        {
+          "field": "geographic_presence",
+          "label": "经营地区",
+          "value": "20多个国家",
+          "source_id": "coherent_profile"
         }
       ],
       "milestones": [],
       "track_record": [
         {
           "description": "Eliyan官方公告将Coherent列入其战略投资参与者。",
-          "source_id": "coherent_round"
+          "source_id": "coherent_activity"
         },
         {
           "description": "融资来源记录：Eliyan Corporation · 战略融资 · 2026-01-28 · 本轮参投 · $50 Million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -164,23 +170,23 @@
       "contacts": [
         {
           "kind": "website",
-          "label": "投资者关系",
-          "value": "Coherent Corp.投资者关系",
-          "url": "https://ir.coherent.com/",
-          "source_id": "coherent_ir"
+          "label": "公司介绍",
+          "value": "Coherent About Us",
+          "url": "https://www.coherent.com/company/about-us",
+          "source_id": "coherent_profile"
         }
       ],
       "sources": [
         {
-          "source_id": "coherent_ir",
-          "source_url": "https://ir.coherent.com/",
-          "source_title": "Investor Relations | Coherent Corp.",
-          "source_content_hash": "7d08b1886e083cdbb1d5fc043d6498b67ca7372e459521c1fe34d9a6bab25107",
-          "quote": "Investor Relations | Coherent Corp.",
-          "quote_hash": "9615d37c405159e1189494f8717f7cef4c983310e5c06339eef38ebec59ae9c2"
+          "source_id": "coherent_profile",
+          "source_url": "https://www.coherent.com/company/about-us",
+          "source_title": "About Us | Coherent",
+          "source_content_hash": "4220bf10995ef45340e78cc446cc4cf0382e439183ff80da2be2d7dc3cf4fc64",
+          "quote": "Founded in 1971 and operating in more than 20 countries",
+          "quote_hash": "486ece35d944d7fbbd5fdea2fe944522442417996c4e2dda147c66f43b8ce586"
         },
         {
-          "source_id": "coherent_round",
+          "source_id": "coherent_activity",
           "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
           "source_title": "Eliyan Secures $50 Million in Strategic Investments from Leading Hyperscalers and AI Infrastructure Providers to Accelerate Scalable AI Systems - Eliyan",
           "source_content_hash": "11a719573d90d41fdcec01ceddc607ab194b94e5d8a0c7b0350c7d9d8252f4fc",

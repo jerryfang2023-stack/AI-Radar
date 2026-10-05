@@ -140,21 +140,27 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "Lambda官网说明原域名lambdalabs.com迁移至lambda.ai，并说明公司法人名称为Lambda, Inc.；TechCrunch将Lambda Labs列为Stack AI的投资方。本档只确认一次公开报道的活动。",
-      "coverage_note": "投资案例来自媒体报道，未据此推断Lambda拥有独立对外基金。",
+      "coverage_note": "公司品牌更名由Lambda官网确认；Stack AI投资关系仅见TechCrunch报道，非发行方或投资方一手确认。",
+      "summary": "Lambda官网将其介绍为AI计算平台，并公告 lambdalabs.com 更名为 lambda.ai。TechCrunch对Stack AI早期融资的报道曾将Lambda Labs列为投资者；本档按公司历史品牌关联收录这一项媒体披露，不推定存在独立风险投资基金。",
       "facts": [
         {
-          "field": "current_name",
-          "label": "当前品牌及主体",
-          "value": "Lambda, Inc.（原Lambda Labs品牌）",
+          "field": "business",
+          "label": "公司业务",
+          "value": "AI计算平台",
+          "source_id": "lambda_profile"
+        },
+        {
+          "field": "brand_history",
+          "label": "品牌变化",
+          "value": "Lambda官网公告 lambdalabs.com 更名为 lambda.ai",
           "source_id": "lambda_rebrand"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "TechCrunch报道列出Lambda Labs为Stack AI的投资方之一。",
-          "source_id": "lambda_stackai"
+          "description": "TechCrunch报道将Lambda Labs列为Stack AI早期融资参与方之一。",
+          "source_id": "lambda_activity"
         },
         {
           "description": "融资来源记录：Stack AI · 种子轮 · 2024-05-21 · 种子轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -164,13 +170,21 @@
       "contacts": [
         {
           "kind": "website",
-          "label": "机构官网",
+          "label": "公司官网",
           "value": "Lambda",
           "url": "https://lambda.ai/",
-          "source_id": "lambda_rebrand"
+          "source_id": "lambda_profile"
         }
       ],
       "sources": [
+        {
+          "source_id": "lambda_profile",
+          "source_url": "https://lambda.ai/about",
+          "source_title": "About Lambda | AI Computing Platform for Superintelligence",
+          "source_content_hash": "fbfa172efd1b35a34aebfc3bbecce06eadd6f263802808904d94f406509006ef",
+          "quote": "AI Computing Platform for Superintelligence",
+          "quote_hash": "f21abe041a12ee700c3a0f7c1e20d73f5b08e0c2fbd1534ce975a6e24d771e8b"
+        },
         {
           "source_id": "lambda_rebrand",
           "source_url": "https://lambda.ai/blog/lambdalabs.com-is-now-lambda.ai",
@@ -180,12 +194,12 @@
           "quote_hash": "1fb26aaf29efb2112966cfb523e1efc331672ba5cf0451c060d7eb1523a58c70"
         },
         {
-          "source_id": "lambda_stackai",
+          "source_id": "lambda_activity",
           "source_url": "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows/",
           "source_title": "Stack AI wants to make it easier to build AI-fueled workflows | TechCrunch",
           "source_content_hash": "6b21d3af2ac3d59ddf74c83bc3c7945059316a1b583b6a3b3194bcd3a89e7b43",
-          "quote": "along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital",
-          "quote_hash": "69cb70ce76a07a98babb43dfe741d63a49a40c516e4a12c3b0537324ce41f025"
+          "quote": "Investors include Gradient Ventures, Beat Ventures and True Capital along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital.",
+          "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
         },
         {
           "source_id": "FISRC-3bb261b30faf2efa",

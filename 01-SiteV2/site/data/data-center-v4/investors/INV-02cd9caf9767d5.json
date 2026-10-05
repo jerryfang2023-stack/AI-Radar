@@ -123,22 +123,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Volta Energy Technologies官网投资组合页面列出Quadric；Quadric融资公告将Volta列为新投资方，两处一手资料共同支持本队列“Volta”与该机构的匹配。本档只记录已核实的投资活动。",
-      "coverage_note": "按Quadric公告与Volta官网组合进行身份匹配；不把同名的其他Volta机构并入。",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向和成立信息来自机构官网；投资案例由被投企业Quadric的官方公告披露。",
+      "summary": "Volta官网介绍其为专注能源转型的风险投资机构，投资支持全球能源系统电气化和脱碳的先进技术企业；官网称其于2016年由阿贡国家实验室团队创立。Quadric官方融资公告将Volta列为新投资者。",
       "facts": [
         {
-          "field": "identity",
-          "label": "官网名称",
-          "value": "Volta Energy Technologies",
-          "source_id": "volta_brand"
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "电气化与全球能源系统脱碳相关先进技术",
+          "source_id": "volta_profile"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2016年",
+          "source_id": "volta_origin"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Quadric官方融资公告将Volta列为C轮新投资方；Volta官网投资组合页亦列出Quadric。",
-          "source_id": "quadric_round"
+          "description": "Quadric官方公告将Volta列入Series C新投资者。",
+          "source_id": "volta_activity"
         },
         {
           "description": "融资来源记录：Quadric · 历史轮次未披露 · C轮首关新投资方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -151,33 +157,33 @@
           "label": "机构官网",
           "value": "Volta Energy Technologies",
           "url": "https://www.volta.vc/",
-          "source_id": "volta_brand"
+          "source_id": "volta_profile"
         }
       ],
       "sources": [
         {
-          "source_id": "volta_brand",
+          "source_id": "volta_profile",
           "source_url": "https://www.volta.vc/",
           "source_title": "Volta Energy Technologies",
           "source_content_hash": "2012d123a301d73046fe85c7d3500cc0b1296b9ce28939c6c9505e1258b0a51b",
-          "quote": "Volta Energy Technologies",
-          "quote_hash": "622a20b9872ce7fd78d7c72fc0be30a32ea9ccf8a6d95aa40f76b473de17075a"
+          "quote": "We are a specialist venture capital firm investing in companies building advanced technologies essential to the electrification and decarbonization of the global energy system.",
+          "quote_hash": "811aebb277b9b4e20de48ede45005ee08878f99bc6103bca9a015b096ddbd17e"
         },
         {
-          "source_id": "volta_portfolio",
-          "source_url": "https://www.volta.vc/portfolio",
-          "source_title": "Portfolio",
-          "source_content_hash": "b8cc86c02df34317d5d6334e9cf64e8dbd136cd013c08653a3c24c22b1f7e74f",
-          "quote": "Quadric, Inc. is a semiconductor IP licensing company",
-          "quote_hash": "29014d165a588b7bb5b2c136cb2b20992546b8c559101bdb14c8dd2ef1679e4e"
+          "source_id": "volta_origin",
+          "source_url": "https://www.volta.vc/",
+          "source_title": "Volta Energy Technologies",
+          "source_content_hash": "2012d123a301d73046fe85c7d3500cc0b1296b9ce28939c6c9505e1258b0a51b",
+          "quote": "Volta was founded in 2016 by a team from Argonne National Laboratory",
+          "quote_hash": "9f39c65397ea6abb6466a238b7c0eacf9e4798e975e3caa293fee02fe46d3719"
         },
         {
-          "source_id": "quadric_round",
+          "source_id": "volta_activity",
           "source_url": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
           "source_title": "Quadric, Inference Engine for On-Device AI Chips, Raises $30M Series C as Design Wins Accelerate Across Edge LLMs, Automotive, and Enterprise | Quadric",
           "source_content_hash": "22a0a62a7b96be3dc583d68b662344ffefa9368f8e7345bf271058a88eb0ccba",
-          "quote": "New investors include Volta",
-          "quote_hash": "e0093c98ecf8e6df0060ad456d07356183ad103d18c22cbda43b18ac917a6542"
+          "quote": "New investors include Volta, Gentree, Wanxiang America, Pivotal, and Silicon Catalyst Ventures.",
+          "quote_hash": "f5ce2d621f9ac250a9e41b51b95dc8f6aa163663e165009067632e538ad62da8"
         },
         {
           "source_id": "FISRC-9f9b41abcfe2abd0",

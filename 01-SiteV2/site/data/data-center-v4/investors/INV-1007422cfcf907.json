@@ -139,19 +139,51 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Scott Johnston 当前按“个人投资者”收录。最新融资披露记录日期为 2025-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "当前任职、教育背景及完整投资记录未核实。",
+      "summary": "Docker公告将Scott Johnston列为卸任CEO的前任；E2B官方融资页面称其为Docker前CEO并将其列入天使投资者。公开来源支持其任职履历片段和一项天使投资活动，未形成完整个人履历。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Docker",
+          "title": "CEO（前任）",
+          "period": "截至Docker宣布继任时",
+          "description": "Docker公告称Don Johnson接任CEO，接替Scott Johnston。",
+          "source_id": "scott_docker"
+        }
+      ],
+      "education": [],
+      "experience_summary": "公开来源支持其曾任Docker CEO，并被E2B列为天使投资者；未核实其当前职位。",
       "track_record": [
+        {
+          "description": "E2B官方Series A页面将Scott Johnston列为天使投资者。",
+          "source_id": "scott_investment"
+        },
         {
           "description": "融资来源记录：E2B · A轮 · 2025-07-28 · 本轮天使投资人 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4bbfe8565d35dc2"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "scott_docker",
+          "source_url": "https://www.docker.com/press-release/docker-announces-don-johnson-as-new-ceo-succeeding-scott-johnston/",
+          "source_title": "Docker Announces Don Johnson as New CEO, Succeeding Scott Johnston | Docker",
+          "source_content_hash": "75854c28a8e6ce30895254dcb5e46ab401b52939ad64075ce26f224a8106c9fe",
+          "quote": "Succeeding Scott Johnston",
+          "quote_hash": "f2819323a90a7b1bee14e823f2cc7da0e170ae21145655c98c7f7726b3b692b7"
+        },
+        {
+          "source_id": "scott_investment",
+          "source_url": "https://changelog.e2b.dev/resources/series-a",
+          "source_title": "We Raised $21M to Give Fortune 100 Cloud for AI Agents | E2B",
+          "source_content_hash": "e31bb26f9453ed15f067eb2f0cbb258db3e12d4d5c48113d9e3b39f912d5b45d",
+          "quote": "prominent angels such as Docker&#x27;s former CEO Scott Johnston",
+          "quote_hash": "6d5e2ce91e71dc55b200082a89c6a836e4fcab2a7923248761f8c428df52378d"
+        },
         {
           "source_id": "FISRC-c4bbfe8565d35dc2",
           "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
@@ -161,7 +193,7 @@
           "quote_hash": "6d5e40f7fa16a656d3837aecd8d5f1707b60ee2be5fc9a2dd5a9007b9ef9ef46"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

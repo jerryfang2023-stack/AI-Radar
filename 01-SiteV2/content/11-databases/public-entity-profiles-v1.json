@@ -50054,49 +50054,67 @@
     "INV-5ba39343c33d5f": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "中国货币网收录合肥市产业投资控股（集团）有限公司2024年度报告页面；合肥高新创业投资管理合伙企业发布的融资消息把“合肥产投”列为智象未来B轮参与方。本档只记录可核的主体索引和这项公开融资案例。",
-      "coverage_note": "集团名称与融资报道简称一致；资料只覆盖一项可查投资披露，不代表集团完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "平台介绍取自大学就业网站转载的集团招聘公告；融资活动由合肥高新创业投资管理合伙企业披露。",
+      "summary": "合肥市产业投资控股（集团）有限公司在集团招聘公告中介绍为国有资本投资平台，成立于2015年，业务兼有产业投融资和创新推进；同一公告列出其参与管理的省级产业主题母基金。合肥高新创业投资管理合伙企业发布的智象未来融资消息将“合肥产投”列为参与机构。",
       "facts": [
         {
-          "field": "legal_name",
-          "label": "报告主体",
+          "field": "formal_name",
+          "label": "主体名称",
           "value": "合肥市产业投资控股（集团）有限公司",
-          "source_id": "hf_group_report"
+          "source_id": "hf_identity"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2015年3月",
+          "source_id": "hf_identity"
+        },
+        {
+          "field": "organization_type",
+          "label": "平台定位",
+          "value": "国有资本投资平台，定位于产业投融资和创新推进",
+          "source_id": "hf_identity"
+        },
+        {
+          "field": "fund_management",
+          "label": "母基金管理",
+          "value": "公告列为安徽省新材料产业主题母基金等省级母基金管理机构",
+          "source_id": "hf_funds"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "合肥高投发布的融资消息将合肥产投列为智象未来B轮融资参与机构。",
-          "source_id": "hfgt_round"
+          "description": "合肥高新创业投资管理合伙企业发布的智象未来B轮融资消息将合肥产投列为参与机构。",
+          "source_id": "hf_activity"
         }
       ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "年度报告索引",
-          "value": "中国货币网年度报告页面",
-          "url": "https://www.chinamoney.com.cn/chinese/cwbg/20250429/3103659.html",
-          "source_id": "hf_group_report"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "hf_group_report",
-          "source_url": "https://www.chinamoney.com.cn/chinese/cwbg/20250429/3103659.html",
-          "source_title": "合肥市产业投资控股(集团)有限公司2024年年度报告_中国货币网",
-          "source_content_hash": "e69b3ff568ce38a1fb46f640099a38221f1c3c8ad49a5baf9a0af50615068850",
-          "quote": "合肥市产业投资控股(集团)有限公司2024年年度报告",
-          "quote_hash": "e6ee387c4907802eb44affde06cc47dcb1c98d8d22169a9e739c8402f5eff44c"
+          "source_id": "hf_identity",
+          "source_url": "https://www.ahjzu.edu.cn/hnxy/2026/0507/c6234a269599/page.htm",
+          "source_title": "合肥市产业投资控股（集团）有限公司 2026（第二批）校园招聘公告",
+          "source_content_hash": "a0e8e3f23f8eec59f80749d1ef54e75cf1bcf010de2f1e64a6bb2210944c66ea",
+          "quote": "合肥市产业投资控股（集团）有限公司成立于 2015 年 3 月，定位于产业投融资和创新推进的国有资本投资平台",
+          "quote_hash": "9c56366f5d469e437a8af38121548b610268fbde14584c28b059d848987b8232"
         },
         {
-          "source_id": "hfgt_round",
+          "source_id": "hf_funds",
+          "source_url": "https://www.ahjzu.edu.cn/hnxy/2026/0507/c6234a269599/page.htm",
+          "source_title": "合肥市产业投资控股（集团）有限公司 2026（第二批）校园招聘公告",
+          "source_content_hash": "a0e8e3f23f8eec59f80749d1ef54e75cf1bcf010de2f1e64a6bb2210944c66ea",
+          "quote": "安徽省新材料产业主题母基金",
+          "quote_hash": "7450eee7c750297279cc82e8ff3e04a0b43f39312d830e5f84581397f7da557b"
+        },
+        {
+          "source_id": "hf_activity",
           "source_url": "https://www.hfgxt.com.cn/index.php?a=show&c=content&id=3131",
           "source_title": "超5亿元融资！智象未来完成B轮融资-企业新闻-新闻资讯-合肥高新创业投资管理合伙企业（有限合伙）",
           "source_content_hash": "8bc3ef7257454ddb71599c7ea47d860aca24bd0cefa84c787bfa81851144b773",
-          "quote": "合肥产投、兴泰创投、合肥高投等头部投资机构和国资机构联合参与",
-          "quote_hash": "6b6c5388b45e6f4c7eeec69ff3ffc1755fcf26a29d0ebc263ee1cb765405d2a9"
+          "quote": "本轮融资由东方富海、峰华资本、安徽省产投、华安嘉业、合肥产投、兴泰创投、合肥高投等头部投资机构和国资机构联合参与",
+          "quote_hash": "fe4d2456157c60afb8fc6f3200b85c5f69fe12c310abf050731ad8c440c97590"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -90338,33 +90356,82 @@
     "INV-9611c28a38be70": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "生数科技 B 轮融资报道将九安海棠列为战略投资方。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "官网材料尚未核实母基金的法定名称、管理主体及独立投资策略；邮箱属于官网列示的子基金申报渠道。",
+      "summary": "北洋海棠基金官网申报中心列出“天开九安海河海棠母基金”及其申报指南，面向子基金管理人征集材料；同一官网介绍北洋海棠基金的投资生态聚焦天津大学师生校友硬科技项目。本档按公开基金品牌和母基金角色收录，不推断其具体法律实体或将北洋海棠基金与母基金等同。",
+      "facts": [
         {
-          "description": "生数科技 B 轮融资报道将九安海棠列入战略投资方。",
-          "source_id": "FISRC-fd865802af815ab3"
+          "field": "fund_name",
+          "label": "官网列示名称",
+          "value": "天开九安海河海棠母基金",
+          "source_id": "ninean_name"
+        },
+        {
+          "field": "fund_type",
+          "label": "基金角色",
+          "value": "母基金，设置子基金管理人申报流程",
+          "source_id": "ninean_process"
+        },
+        {
+          "field": "related_fund_context",
+          "label": "官网所述投资生态",
+          "value": "北洋海棠基金介绍其关注天津大学师生校友硬科技项目；未确认该方向是否全部适用于母基金",
+          "source_id": "ninean_focus"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "子基金申报邮箱",
+          "value": "fof@byhtfund.com",
+          "url": "https://byhtfund.com/report",
+          "source_id": "ninean_email"
+        },
+        {
+          "kind": "website",
+          "label": "基金网站",
+          "value": "北洋海棠基金网站",
+          "url": "https://byhtfund.com/",
+          "source_id": "ninean_name"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-fd865802af815ab3",
-          "source_url": "https://news.pedaily.cn/202604/562614.shtml",
-          "source_title": "生数科技完成近20亿元B轮融资，阿里云领投_投资界",
-          "source_content_hash": "ad192fa38f112b71ff7752bed5fd1cf5c35f99cc3e3c1456831e510dcf2df57a",
-          "quote": "临竞争与研发挑战，后续发展需关注技术创新及市场拓展情况。 内容由AI生成，仅供参考 投资界（ID：pedaily2012）4月10日消息，生数科技宣布 完成近20亿元人民币B轮融资 。本轮融资由 阿里云领投 ， 中网投、九安海棠、好未来、光合创投等投资人战略投资，星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。 据官网，生数科技成立于2023年3月，专注于自主研发多模态通用大模型及应用。公司以技术创新为核心驱动力，通过SaaS、MaaS、APP等产品应用形态，为全球个人用户、专业创作者和企业客户提供视频生成及多模态生成产品。 Vidu系列模型实现了声画同出、长时长、高时空一致性与电影级视觉品质。Vidu系列模型通过MaaS（Vidu AI开",
-          "quote_hash": "b583edb445636d4fefef6372fd8fc116717dc89e54388b292bd159808eb57b30"
+          "source_id": "ninean_name",
+          "source_url": "https://byhtfund.com/report",
+          "source_title": "申报中心",
+          "source_content_hash": "21d419f13a4491ef5b944d9b2d5f1d2e45eb15aec1f78936ab07619084f808e5",
+          "quote": "天开九安海河海棠母基金申报指南",
+          "quote_hash": "16707cf7974464d65e5b1d11997aa5f65ca757fcb71d9c9bd399f787053a5683"
+        },
+        {
+          "source_id": "ninean_process",
+          "source_url": "https://byhtfund.com/report",
+          "source_title": "申报中心",
+          "source_content_hash": "21d419f13a4491ef5b944d9b2d5f1d2e45eb15aec1f78936ab07619084f808e5",
+          "quote": "子基金管理人对申请材料的合法性、真实性、有效性、一致性负完全责任",
+          "quote_hash": "63d827ba72f1c98fbba22d349910aabb08d82ad3c487be077779b949a8c5fc29"
+        },
+        {
+          "source_id": "ninean_email",
+          "source_url": "https://byhtfund.com/report",
+          "source_title": "申报中心",
+          "source_content_hash": "21d419f13a4491ef5b944d9b2d5f1d2e45eb15aec1f78936ab07619084f808e5",
+          "quote": "fof@byhtfund.com",
+          "quote_hash": "0de27b7450ea40574e7eb4b126f316710080b046116ffdef061d794ad251203e"
+        },
+        {
+          "source_id": "ninean_focus",
+          "source_url": "https://byhtfund.com/about",
+          "source_title": "关于我们",
+          "source_content_hash": "6a0ab1e7bf81d216e98d461a39d7e4566bedb91014d2b96cb9d16c2bd78d681d",
+          "quote": "专注于投资包括但不限于天津大学老师、校友、学生的硬科技项目",
+          "quote_hash": "f28223b187bc096b4837d58179df3a18568582032ec5bf913bb0de2f05a3b511"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-06"
     },
     "INV-9621fad4c05817": {
       "profile_type": "organization",
@@ -119201,34 +119268,40 @@
     "INV-c02adfb990835e": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "summary": "中国建投发布的消息称其子公司“建投投资”完成对极佳视界的投资；建投控股网站的中国建银投资介绍页将“建投投资有限责任公司”列入关联企业名单。现按集团投资平台关系收录，不补写完整基金信息。",
-      "coverage_note": "现有来源支持其属于中国建投投资体系并参与公开投资案例；独立管理人的登记资料未在本轮核实。",
+      "coverage_status": "researched",
+      "coverage_note": "投资动态由新浪财经转载并注明来源为中国建投；未找到可访问的建投投资独立官网资料。",
+      "summary": "建投控股页面将建投投资有限责任公司列在中国建银投资体系关联企业中；标注来源为中国建投的融资动态称建投投资完成对北京极佳视界的投资，并表示将持续深耕硬科技与未来产业。本档据此记录主体关系、公开投资案例和公司表述的方向，不补写未能确认的基金清单。",
       "facts": [
         {
-          "field": "formal_affiliate_name",
-          "label": "集团页面列示名称",
+          "field": "formal_name",
+          "label": "主体名称",
           "value": "建投投资有限责任公司",
-          "source_id": "jiantou_parent"
+          "source_id": "jic_parent"
         },
         {
           "field": "group_affiliation",
           "label": "集团关系",
-          "value": "中国建投发布信息称其为中国建投子公司",
-          "source_id": "jiantou_affiliation"
+          "value": "建投控股页面将其列在中国建银投资有限责任公司关联企业中",
+          "source_id": "jic_parent"
+        },
+        {
+          "field": "stated_focus",
+          "label": "公开表述方向",
+          "value": "硬科技与未来产业",
+          "source_id": "jic_focus"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "中国建投发布消息称，建投投资完成对北京极佳视界科技有限公司的投资。",
-          "source_id": "jiantou_deal"
+          "description": "来源标注为中国建投的动态称，建投投资完成对北京极佳视界科技有限公司的投资。",
+          "source_id": "jic_activity"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "jiantou_parent",
+          "source_id": "jic_parent",
           "source_url": "https://www.jicholding.com/cate/356.html",
           "source_title": "股东简介-- 建投控股有限责任公司",
           "source_content_hash": "d5b8b250abd4b60f63da7b1a57201ca2d26175215260c6d94cb25392db4cf341",
@@ -119236,20 +119309,20 @@
           "quote_hash": "8f547858a2e825451182c4252cf1f04171b23084753b6c6dc43dade6eabb5b4e"
         },
         {
-          "source_id": "jiantou_deal",
+          "source_id": "jic_activity",
           "source_url": "https://finance.sina.com.cn/wm/2026-06-09/doc-iniavmyn3148907.shtml",
           "source_title": "建投动态｜建投投资完成对极佳视界投资，助力攀登物理AI产业制高点|AI_新浪财经_新浪网",
           "source_content_hash": "a9f388b915ad401b972c3e2f1c04d2ba7117b755ed29a0fe3deb6946c729c868",
-          "quote": "建投投资完成对北京极佳视界科技有限公司",
-          "quote_hash": "5bdffaec0065db437373b5c975fc13eb590d4f3dbbc77c0980bba42894aa2524"
+          "quote": "中国建投子公司建投投资完成对北京极佳视界科技有限公司",
+          "quote_hash": "09fbe584ae287baef6bbc72279074b81fed8e582899d4af864ab9ee4d5b817a0"
         },
         {
-          "source_id": "jiantou_affiliation",
+          "source_id": "jic_focus",
           "source_url": "https://finance.sina.com.cn/wm/2026-06-09/doc-iniavmyn3148907.shtml",
           "source_title": "建投动态｜建投投资完成对极佳视界投资，助力攀登物理AI产业制高点|AI_新浪财经_新浪网",
           "source_content_hash": "a9f388b915ad401b972c3e2f1c04d2ba7117b755ed29a0fe3deb6946c729c868",
-          "quote": "中国建投子公司",
-          "quote_hash": "73f55b9bcbfbad033960f74138aaa24e48ca81423fc22ea0228cf744b43415fa"
+          "quote": "持续深耕硬科技与未来产业赛道",
+          "quote_hash": "e7241984ffd7accc2fbe2718f1b822d3cd0dc41b3686d78ff3b3cc41ef471bad"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -167554,22 +167627,28 @@
     "INV-02cd9caf9767d5": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Volta Energy Technologies官网投资组合页面列出Quadric；Quadric融资公告将Volta列为新投资方，两处一手资料共同支持本队列“Volta”与该机构的匹配。本档只记录已核实的投资活动。",
-      "coverage_note": "按Quadric公告与Volta官网组合进行身份匹配；不把同名的其他Volta机构并入。",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向和成立信息来自机构官网；投资案例由被投企业Quadric的官方公告披露。",
+      "summary": "Volta官网介绍其为专注能源转型的风险投资机构，投资支持全球能源系统电气化和脱碳的先进技术企业；官网称其于2016年由阿贡国家实验室团队创立。Quadric官方融资公告将Volta列为新投资者。",
       "facts": [
         {
-          "field": "identity",
-          "label": "官网名称",
-          "value": "Volta Energy Technologies",
-          "source_id": "volta_brand"
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "电气化与全球能源系统脱碳相关先进技术",
+          "source_id": "volta_profile"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2016年",
+          "source_id": "volta_origin"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Quadric官方融资公告将Volta列为C轮新投资方；Volta官网投资组合页亦列出Quadric。",
-          "source_id": "quadric_round"
+          "description": "Quadric官方公告将Volta列入Series C新投资者。",
+          "source_id": "volta_activity"
         }
       ],
       "contacts": [
@@ -167578,33 +167657,33 @@
           "label": "机构官网",
           "value": "Volta Energy Technologies",
           "url": "https://www.volta.vc/",
-          "source_id": "volta_brand"
+          "source_id": "volta_profile"
         }
       ],
       "sources": [
         {
-          "source_id": "volta_brand",
+          "source_id": "volta_profile",
           "source_url": "https://www.volta.vc/",
           "source_title": "Volta Energy Technologies",
           "source_content_hash": "2012d123a301d73046fe85c7d3500cc0b1296b9ce28939c6c9505e1258b0a51b",
-          "quote": "Volta Energy Technologies",
-          "quote_hash": "622a20b9872ce7fd78d7c72fc0be30a32ea9ccf8a6d95aa40f76b473de17075a"
+          "quote": "We are a specialist venture capital firm investing in companies building advanced technologies essential to the electrification and decarbonization of the global energy system.",
+          "quote_hash": "811aebb277b9b4e20de48ede45005ee08878f99bc6103bca9a015b096ddbd17e"
         },
         {
-          "source_id": "volta_portfolio",
-          "source_url": "https://www.volta.vc/portfolio",
-          "source_title": "Portfolio",
-          "source_content_hash": "b8cc86c02df34317d5d6334e9cf64e8dbd136cd013c08653a3c24c22b1f7e74f",
-          "quote": "Quadric, Inc. is a semiconductor IP licensing company",
-          "quote_hash": "29014d165a588b7bb5b2c136cb2b20992546b8c559101bdb14c8dd2ef1679e4e"
+          "source_id": "volta_origin",
+          "source_url": "https://www.volta.vc/",
+          "source_title": "Volta Energy Technologies",
+          "source_content_hash": "2012d123a301d73046fe85c7d3500cc0b1296b9ce28939c6c9505e1258b0a51b",
+          "quote": "Volta was founded in 2016 by a team from Argonne National Laboratory",
+          "quote_hash": "9f39c65397ea6abb6466a238b7c0eacf9e4798e975e3caa293fee02fe46d3719"
         },
         {
-          "source_id": "quadric_round",
+          "source_id": "volta_activity",
           "source_url": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
           "source_title": "Quadric, Inference Engine for On-Device AI Chips, Raises $30M Series C as Design Wins Accelerate Across Edge LLMs, Automotive, and Enterprise | Quadric",
           "source_content_hash": "22a0a62a7b96be3dc583d68b662344ffefa9368f8e7345bf271058a88eb0ccba",
-          "quote": "New investors include Volta",
-          "quote_hash": "e0093c98ecf8e6df0060ad456d07356183ad103d18c22cbda43b18ac917a6542"
+          "quote": "New investors include Volta, Gentree, Wanxiang America, Pivotal, and Silicon Catalyst Ventures.",
+          "quote_hash": "f5ce2d621f9ac250a9e41b51b95dc8f6aa163663e165009067632e538ad62da8"
         }
       ],
       "last_verified_at": "2026-10-05"
@@ -167719,48 +167798,48 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "京东官方投资者关系页面确认京东（JD.COM）的企业身份；IT之家援引企查查数据报道将京东列入DeepSeek一轮外部融资投资方。本档只保留该媒体报道案例，不确认报道中的融资金额或估值。",
-      "coverage_note": "投资活动仅由媒体转述的企业查询信息支持，缺少公司或被投企业的一手融资公告。",
+      "coverage_note": "活动信息仅为媒体援引企业查询数据的报道，不据此确认投资金额、估值或京东作为直接出资主体的法律实体。",
+      "summary": "JD.com投资者关系页面将公司介绍为技术驱动的电商企业，并称其正转向以供应链为基础的技术与服务提供商。IT之家一篇援引企查查数据的报道把京东列入DeepSeek外部融资参与者名单；该投资关系尚未由京东或DeepSeek一手资料确认。",
       "facts": [
         {
           "field": "business",
-          "label": "公司简介",
-          "value": "技术驱动型电商和零售基础设施服务商",
-          "source_id": "jd_ir"
+          "label": "公司业务",
+          "value": "技术驱动的电商企业，正转向供应链技术与服务提供商",
+          "source_id": "jd_business"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "IT之家报道援引企查查，将京东列为DeepSeek首轮外部融资投资方；融资规模和估值未采信为已核实事实。",
-          "source_id": "jd_reported_round"
+          "description": "IT之家援引企查查数据报道，将京东列入DeepSeek外部融资投资方名单；尚未取得融资各方的一手确认。",
+          "source_id": "jd_activity"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "投资者关系",
-          "value": "JD.com投资者关系",
-          "url": "https://ir.jd.com/zh-hans/investor-overview?items_per_page=25&page=0",
-          "source_id": "jd_ir"
+          "label": "投资者关系网站",
+          "value": "JD.com Investor Relations",
+          "url": "https://ir.jd.com/about-JD",
+          "source_id": "jd_business"
         }
       ],
       "sources": [
         {
-          "source_id": "jd_ir",
-          "source_url": "https://ir.jd.com/zh-hans/investor-overview?items_per_page=25&page=0",
-          "source_title": "投资者首页 | JD.Com, Inc.",
-          "source_content_hash": "a7e44fe34b2b0a5afed217701438f8eda1392d1d8c86972c306cab6a39dc8238",
-          "quote": "京东（JD.COM）是中国领先的技术驱动型电商和零售基础设施服务商。",
-          "quote_hash": "58c591e0993956e0de5def77cab29e5f5f1b88724590a658f3afccf993bc8757"
+          "source_id": "jd_business",
+          "source_url": "https://ir.jd.com/about-JD",
+          "source_title": "About JD.com | JD.Com, Inc.",
+          "source_content_hash": "e892c19f56c7f4d1bd2c77a40775d78e0f43f68e250593ba25e9d1451b7fb42d",
+          "quote": "JD.com is a leading technology driven e-commerce company transforming to become the leading supply chain based technology and service provider.",
+          "quote_hash": "a7e67dfd6343d87e75b79ae16698932d68f0182bdead71c4715992d92969c395"
         },
         {
-          "source_id": "jd_reported_round",
+          "source_id": "jd_activity",
           "source_url": "https://www.ithome.com/0/965/686.htm",
           "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家",
           "source_content_hash": "9c2935c329e79c86a273afaa6b86bffcecb3779f8cbcc69d425c012fe71b950e",
-          "quote": "具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本",
-          "quote_hash": "aea570ef584a72580547f1ff750d1100919b1b90d351fcb792372f7b4c75941d"
+          "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东",
+          "quote_hash": "d4abcf48abaec5c0ce079c22fb32b103d3ac9eb093f10a3feff7aa67dc979b1f"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -167769,33 +167848,47 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "Lambda官网说明原域名lambdalabs.com迁移至lambda.ai，并说明公司法人名称为Lambda, Inc.；TechCrunch将Lambda Labs列为Stack AI的投资方。本档只确认一次公开报道的活动。",
-      "coverage_note": "投资案例来自媒体报道，未据此推断Lambda拥有独立对外基金。",
+      "coverage_note": "公司品牌更名由Lambda官网确认；Stack AI投资关系仅见TechCrunch报道，非发行方或投资方一手确认。",
+      "summary": "Lambda官网将其介绍为AI计算平台，并公告 lambdalabs.com 更名为 lambda.ai。TechCrunch对Stack AI早期融资的报道曾将Lambda Labs列为投资者；本档按公司历史品牌关联收录这一项媒体披露，不推定存在独立风险投资基金。",
       "facts": [
         {
-          "field": "current_name",
-          "label": "当前品牌及主体",
-          "value": "Lambda, Inc.（原Lambda Labs品牌）",
+          "field": "business",
+          "label": "公司业务",
+          "value": "AI计算平台",
+          "source_id": "lambda_profile"
+        },
+        {
+          "field": "brand_history",
+          "label": "品牌变化",
+          "value": "Lambda官网公告 lambdalabs.com 更名为 lambda.ai",
           "source_id": "lambda_rebrand"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "TechCrunch报道列出Lambda Labs为Stack AI的投资方之一。",
-          "source_id": "lambda_stackai"
+          "description": "TechCrunch报道将Lambda Labs列为Stack AI早期融资参与方之一。",
+          "source_id": "lambda_activity"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "机构官网",
+          "label": "公司官网",
           "value": "Lambda",
           "url": "https://lambda.ai/",
-          "source_id": "lambda_rebrand"
+          "source_id": "lambda_profile"
         }
       ],
       "sources": [
+        {
+          "source_id": "lambda_profile",
+          "source_url": "https://lambda.ai/about",
+          "source_title": "About Lambda | AI Computing Platform for Superintelligence",
+          "source_content_hash": "fbfa172efd1b35a34aebfc3bbecce06eadd6f263802808904d94f406509006ef",
+          "quote": "AI Computing Platform for Superintelligence",
+          "quote_hash": "f21abe041a12ee700c3a0f7c1e20d73f5b08e0c2fbd1534ce975a6e24d771e8b"
+        },
         {
           "source_id": "lambda_rebrand",
           "source_url": "https://lambda.ai/blog/lambdalabs.com-is-now-lambda.ai",
@@ -167805,12 +167898,12 @@
           "quote_hash": "1fb26aaf29efb2112966cfb523e1efc331672ba5cf0451c060d7eb1523a58c70"
         },
         {
-          "source_id": "lambda_stackai",
+          "source_id": "lambda_activity",
           "source_url": "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows/",
           "source_title": "Stack AI wants to make it easier to build AI-fueled workflows | TechCrunch",
           "source_content_hash": "6b21d3af2ac3d59ddf74c83bc3c7945059316a1b583b6a3b3194bcd3a89e7b43",
-          "quote": "along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital",
-          "quote_hash": "69cb70ce76a07a98babb43dfe741d63a49a40c516e4a12c3b0537324ce41f025"
+          "quote": "Investors include Gradient Ventures, Beat Ventures and True Capital along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital.",
+          "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
         }
       ],
       "last_verified_at": "2026-10-05"
@@ -167862,43 +167955,49 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "Coherent投资者关系官网确认Coherent Corp.主体；Eliyan官方融资公告将Coherent列入该轮战略投资参与方。本档只记录这一项被投企业公告。",
-      "coverage_note": "记录的是公司参与一次战略融资的公开披露，不据此把Coherent描述为独立风险投资基金。",
+      "coverage_note": "投资活动来自融资发行方Eliyan的官方公告；没有据此扩展Coherent的其他投资组合。",
+      "summary": "Coherent官网介绍其为全球光子技术企业，成立于1971年并在20多个国家开展业务。Eliyan官方战略融资公告将Coherent列为参与方。本档记录公司主体与这次公开战略投资披露，不将其描述为独立风险投资基金。",
       "facts": [
         {
-          "field": "issuer_identity",
-          "label": "公司主体",
-          "value": "Coherent Corp.",
-          "source_id": "coherent_ir"
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1971年",
+          "source_id": "coherent_profile"
+        },
+        {
+          "field": "geographic_presence",
+          "label": "经营地区",
+          "value": "20多个国家",
+          "source_id": "coherent_profile"
         }
       ],
       "milestones": [],
       "track_record": [
         {
           "description": "Eliyan官方公告将Coherent列入其战略投资参与者。",
-          "source_id": "coherent_round"
+          "source_id": "coherent_activity"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "投资者关系",
-          "value": "Coherent Corp.投资者关系",
-          "url": "https://ir.coherent.com/",
-          "source_id": "coherent_ir"
+          "label": "公司介绍",
+          "value": "Coherent About Us",
+          "url": "https://www.coherent.com/company/about-us",
+          "source_id": "coherent_profile"
         }
       ],
       "sources": [
         {
-          "source_id": "coherent_ir",
-          "source_url": "https://ir.coherent.com/",
-          "source_title": "Investor Relations | Coherent Corp.",
-          "source_content_hash": "7d08b1886e083cdbb1d5fc043d6498b67ca7372e459521c1fe34d9a6bab25107",
-          "quote": "Investor Relations | Coherent Corp.",
-          "quote_hash": "9615d37c405159e1189494f8717f7cef4c983310e5c06339eef38ebec59ae9c2"
+          "source_id": "coherent_profile",
+          "source_url": "https://www.coherent.com/company/about-us",
+          "source_title": "About Us | Coherent",
+          "source_content_hash": "4220bf10995ef45340e78cc446cc4cf0382e439183ff80da2be2d7dc3cf4fc64",
+          "quote": "Founded in 1971 and operating in more than 20 countries",
+          "quote_hash": "486ece35d944d7fbbd5fdea2fe944522442417996c4e2dda147c66f43b8ce586"
         },
         {
-          "source_id": "coherent_round",
+          "source_id": "coherent_activity",
           "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
           "source_title": "Eliyan Secures $50 Million in Strategic Investments from Leading Hyperscalers and AI Infrastructure Providers to Accelerate Scalable AI Systems - Eliyan",
           "source_content_hash": "11a719573d90d41fdcec01ceddc607ab194b94e5d8a0c7b0350c7d9d8252f4fc",
@@ -167966,27 +168065,33 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "辽宁科技大学就业页面以江苏省镔鑫钢铁集团有限公司为企业主体，介绍其钢铁生产业务；投资界融资报道将镔鑫钢铁列为数巅智能一轮投资方。本档将其视为产业公司参与案例，不推定其设有独立基金管理人。",
-      "coverage_note": "主体背景由高校就业页面介绍，投资活动来自第三方融资报道。",
+      "coverage_note": "目前只找到企业招聘信息和一项媒体融资列名，不能据此推定存在独立基金或完整投资组合。",
+      "summary": "辽宁科技大学化学工程学院就业页面将镔鑫钢铁对应为江苏省镔鑫钢铁集团有限公司，并称其成立于2008年。投资界对数巅智能融资的报道把“镔鑫钢铁”列入投资方名单。本档只收录主体索引与这项公开列名。",
       "facts": [
         {
-          "field": "business",
-          "label": "主营业务",
-          "value": "钢铁生产",
-          "source_id": "binxin_university"
+          "field": "formal_name",
+          "label": "主体名称",
+          "value": "江苏省镔鑫钢铁集团有限公司",
+          "source_id": "binxin_identity"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2008年2月",
+          "source_id": "binxin_identity"
         }
       ],
       "milestones": [],
       "track_record": [
         {
-          "description": "投资界报道将镔鑫钢铁列入数巅智能融资投资方名单。",
-          "source_id": "binxin_round"
+          "description": "投资界报道将镔鑫钢铁列为数巅智能多轮融资披露的参与方之一。",
+          "source_id": "binxin_activity"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "binxin_university",
+          "source_id": "binxin_identity",
           "source_url": "https://www.ustl.edu.cn/hgxy/info/1040/4272.htm",
           "source_title": "江苏省镔鑫钢铁集团有限公司招聘就业信息-辽宁科技 - 化学工程学院",
           "source_content_hash": "950349056431f1fca2ddc13661242fa3081244645298907a7520ee268cbd6c41",
@@ -167994,12 +168099,445 @@
           "quote_hash": "3a60d7444a7246dcfbd3b312916aa68655522890ea4ab08243c16155f5e5cbd6"
         },
         {
-          "source_id": "binxin_round",
+          "source_id": "binxin_activity",
           "source_url": "https://news.pedaily.cn/202609/569430.shtml",
           "source_title": "数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化_投资界",
           "source_content_hash": "8b03a9d7d0f177d479ba7379919a2b9f76a4ee8171835bb674fa9d0ba29585e2",
-          "quote": "中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒",
-          "quote_hash": "61c55016049cc06df35b85f13970f016b1f703d4786bf377c6230c564a5b10ad"
+          "quote": "中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒、财鑫资本",
+          "quote_hash": "dacc53b490c1a8e1d13febfec4ec1862737f8ba1548d68410f7ab9dd93d3316c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-1007422cfcf907": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "当前任职、教育背景及完整投资记录未核实。",
+      "summary": "Docker公告将Scott Johnston列为卸任CEO的前任；E2B官方融资页面称其为Docker前CEO并将其列入天使投资者。公开来源支持其任职履历片段和一项天使投资活动，未形成完整个人履历。",
+      "facts": [],
+      "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Docker",
+          "title": "CEO（前任）",
+          "period": "截至Docker宣布继任时",
+          "description": "Docker公告称Don Johnson接任CEO，接替Scott Johnston。",
+          "source_id": "scott_docker"
+        }
+      ],
+      "education": [],
+      "experience_summary": "公开来源支持其曾任Docker CEO，并被E2B列为天使投资者；未核实其当前职位。",
+      "track_record": [
+        {
+          "description": "E2B官方Series A页面将Scott Johnston列为天使投资者。",
+          "source_id": "scott_investment"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "scott_docker",
+          "source_url": "https://www.docker.com/press-release/docker-announces-don-johnson-as-new-ceo-succeeding-scott-johnston/",
+          "source_title": "Docker Announces Don Johnson as New CEO, Succeeding Scott Johnston | Docker",
+          "source_content_hash": "75854c28a8e6ce30895254dcb5e46ab401b52939ad64075ce26f224a8106c9fe",
+          "quote": "Succeeding Scott Johnston",
+          "quote_hash": "f2819323a90a7b1bee14e823f2cc7da0e170ae21145655c98c7f7726b3b692b7"
+        },
+        {
+          "source_id": "scott_investment",
+          "source_url": "https://changelog.e2b.dev/resources/series-a",
+          "source_title": "We Raised $21M to Give Fortune 100 Cloud for AI Agents | E2B",
+          "source_content_hash": "e31bb26f9453ed15f067eb2f0cbb258db3e12d4d5c48113d9e3b39f912d5b45d",
+          "quote": "prominent angels such as Docker&#x27;s former CEO Scott Johnston",
+          "quote_hash": "6d5e2ce91e71dc55b200082a89c6a836e4fcab2a7923248761f8c428df52378d"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-0935c1e3ca5aa5": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "该页面未提供独立人物简介；括注不足以确认其现任职务、完整职业经历或教育背景。",
+      "summary": "P-1 AI官网在个人天使投资者名单中列出Zak Stone，并以“Google Cloud”作括注。本档仅记录公司公开页面中的投资者列名。",
+      "facts": [],
+      "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "P-1 AI的投资者页面将其列作个人天使投资者；Google Cloud括注未进一步核验。",
+      "track_record": [
+        {
+          "description": "P-1 AI官网将Zak Stone列入个人天使投资者名单。",
+          "source_id": "zak_p1"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "zak_p1",
+          "source_url": "https://p-1.ai/",
+          "source_title": "P-1 AI",
+          "source_content_hash": "1bb0f491fc37200b522e062abe8ad8051d9bddfb844a6b59aa343b161ccfdb8b",
+          "quote": "Individual: Jeff Dean (Google DeepMind), Zak Stone (Google Cloud), Peter Welinder (OpenAI)",
+          "quote_hash": "545f9ded30c14471e54e3e8188d6129320a3d68be356a2cad2fe3982f236f8da"
+        }
+      ],
+      "last_verified_at": "2026-10-05"
+    },
+    "INV-11698942020110": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金名称、规模、阶段和方向均按管理方官网公开表述收录；未将EA Ventures集团与该基金视作同一法律主体。",
+      "summary": "EA Ventures官网将其与Plug and Play共同设立的基金称为EA Ventures Plug and Play EMEA Fund，规模€20M，投资阶段覆盖Pre-Seed、Seed和Pre-Series A，关注金融科技、出行、企业服务、可持续发展及电商。",
+      "facts": [
+        {
+          "field": "fund_name",
+          "label": "基金名称",
+          "value": "EA Ventures Plug and Play EMEA Fund",
+          "source_id": "ea_fund"
+        },
+        {
+          "field": "fund_size",
+          "label": "目标规模",
+          "value": "€20M",
+          "source_id": "ea_stage"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-Seed、Seed、Pre-Series A",
+          "source_id": "ea_stage"
+        },
+        {
+          "field": "fund_relationship",
+          "label": "发起关系",
+          "value": "EA Ventures与Plug and Play共同基金",
+          "source_id": "ea_joint"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "金融科技、出行、企业服务、可持续发展、电商",
+          "source_id": "ea_focus"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金官网",
+          "value": "EA Ventures",
+          "url": "https://eaventures.eu/",
+          "source_id": "ea_fund"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "ea_fund",
+          "source_url": "https://eaventures.eu/",
+          "source_title": "EA Ventures",
+          "source_content_hash": "6f30511145f8088e387d5e5eedb91fc8b520d683072f95dfb366591e7e052690",
+          "quote": "EA Ventures Plug and Play EMEA Fund",
+          "quote_hash": "bc6cd75a7a1def8c71c872f4074fe1c9d397e4d0f67ff343c2444336f136f2de"
+        },
+        {
+          "source_id": "ea_stage",
+          "source_url": "https://eaventures.eu/",
+          "source_title": "EA Ventures",
+          "source_content_hash": "6f30511145f8088e387d5e5eedb91fc8b520d683072f95dfb366591e7e052690",
+          "quote": "A €20M Seed, Pre-Seed & Pre-Series A fund",
+          "quote_hash": "92f39aa816716c2a632d3eed53e3a9403b33eaf6a5ded712dc52fbbe35bc300c"
+        },
+        {
+          "source_id": "ea_joint",
+          "source_url": "https://eaventures.eu/",
+          "source_title": "EA Ventures",
+          "source_content_hash": "6f30511145f8088e387d5e5eedb91fc8b520d683072f95dfb366591e7e052690",
+          "quote": "Joint Fund of EA Ventures & global innovation platform Plug and Play",
+          "quote_hash": "91b70901e4f726441186f1a5e8813be320a3bd910899838d30189cee8b96d667"
+        },
+        {
+          "source_id": "ea_focus",
+          "source_url": "https://eaventures.eu/",
+          "source_title": "EA Ventures",
+          "source_content_hash": "6f30511145f8088e387d5e5eedb91fc8b520d683072f95dfb366591e7e052690",
+          "quote": "We invest in sectors where disruption is inevitable: Fintech, Mobility, Enterprise Software, Sustainability, E-commerce",
+          "quote_hash": "b15a30eb12e18f80e9129cd7273909fbf9157adb92ff90290eca504abdebeb2b"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-1e39355cd9dbf6": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档对应同济科技官网介绍的“上海同杨私募投资基金”品牌，未与新设的同名基金管理公司混为一体。",
+      "summary": "同济科技官网介绍，上海同杨私募投资基金由可可资本与同济科技共同发起，同济科技为基石投资人、可可资本为基金管理人；官网披露一期规模2亿元，落户上海杨浦，关注智能化和数字化方向的硬科技。",
+      "facts": [
+        {
+          "field": "fund_name",
+          "label": "基金名称",
+          "value": "上海同杨私募投资基金",
+          "source_id": "tongyang_name"
+        },
+        {
+          "field": "founders",
+          "label": "发起方",
+          "value": "可可资本与上海同济科技实业股份有限公司共同发起",
+          "source_id": "tongyang_name"
+        },
+        {
+          "field": "fund_manager",
+          "label": "基金管理人",
+          "value": "可可资本",
+          "source_id": "tongyang_manager"
+        },
+        {
+          "field": "fund_size",
+          "label": "一期规模",
+          "value": "2亿元",
+          "source_id": "tongyang_size"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "智能化、数字化为核心的硬科技",
+          "source_id": "tongyang_focus"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "同济科技业务介绍",
+          "value": "上海同杨私募投资基金",
+          "url": "https://www.tjkjsy.com.cn/innovate2",
+          "source_id": "tongyang_name"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "tongyang_name",
+          "source_url": "https://www.tjkjsy.com.cn/innovate2",
+          "source_title": "上海同济科技实业股份有限公司",
+          "source_content_hash": "475f5ff967d4c83c067dc951e87654a00dc9cb7bb4787ca7139e43b1a1680c0a",
+          "quote": "上海同杨私募投资基金由可可资本与同济科技（600846）共同发起",
+          "quote_hash": "33ec99c4f5db636e455d13d4dea45555f457d0cf13df8f28acfc8ed173a6292c"
+        },
+        {
+          "source_id": "tongyang_focus",
+          "source_url": "https://www.tjkjsy.com.cn/innovate2",
+          "source_title": "上海同济科技实业股份有限公司",
+          "source_content_hash": "475f5ff967d4c83c067dc951e87654a00dc9cb7bb4787ca7139e43b1a1680c0a",
+          "quote": "重点关注以智能化和数字化为核心的硬科技领域",
+          "quote_hash": "361aeabf896c655ec528a75caa9723a69249850d04b5e19992bf765027eb29f9"
+        },
+        {
+          "source_id": "tongyang_size",
+          "source_url": "https://www.tjkjsy.com.cn/innovate2",
+          "source_title": "上海同济科技实业股份有限公司",
+          "source_content_hash": "475f5ff967d4c83c067dc951e87654a00dc9cb7bb4787ca7139e43b1a1680c0a",
+          "quote": "本基金一期基金规模2亿元，落户在上海市杨浦区",
+          "quote_hash": "bb1f6d34cdc5dd9ce26b2642fd183969d1a0dd909e1ee3b41bc4033bd6ddc4bc"
+        },
+        {
+          "source_id": "tongyang_manager",
+          "source_url": "https://www.tjkjsy.com.cn/innovate2",
+          "source_title": "上海同济科技实业股份有限公司",
+          "source_content_hash": "475f5ff967d4c83c067dc951e87654a00dc9cb7bb4787ca7139e43b1a1680c0a",
+          "quote": "同济科技作为基石投资人，可可资本作为基金管理人",
+          "quote_hash": "9f2bf46454705fb8e3a7e95b830687374edc4889395eac28ddebe107948b7373"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-1f577d87f5b887": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据Speee官网可核验身份和职业经历；不把尚无一手确认的融资列名写入个人投资记录。",
+      "summary": "Speee官网人物页以“大塚英樹（おおつか ひでき）”介绍其为代表取締役CEO；页面记载他创立媒体相关企业并于2011年转让，同年出任Speee代表取締役。官网人物路径与队列英文姓名一致。本档未核实媒体报道所述dodoAI投资是否由同一人物完成。",
+      "facts": [],
+      "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "代表取締役CEO",
+          "organization": "株式会社Speee",
+          "source_id": "hideki_bio"
+        }
+      ],
+      "career": [
+        {
+          "organization": "媒体相关企业（官网未列名称）",
+          "title": "创办人",
+          "period": "2011年以前",
+          "description": "Speee官网人物页称其创办媒体相关企业并于2011年转让。",
+          "source_id": "hideki_founder"
+        },
+        {
+          "organization": "株式会社Speee",
+          "title": "代表取締役",
+          "period": "2011年起（官网人物页所载）",
+          "description": "官网记载其25岁时出任Speee代表取締役。",
+          "source_id": "hideki_ceo"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Speee官网所载履历显示其曾创办媒体相关企业，2011年起担任Speee代表取締役CEO。",
+      "track_record": [],
+      "sources": [
+        {
+          "source_id": "hideki_bio",
+          "source_url": "https://media.speee.jp/member/hideki-otsuka",
+          "source_title": "Speee 代表取締役 - 大塚 英樹",
+          "source_content_hash": "1165f4edd3a4dc6b35a34d8e2caf9c850392ac27ba26091a30f2837bad47e3a9",
+          "quote": "大塚 英樹（おおつか ひでき） 代表取締役CEO",
+          "quote_hash": "7a5c8d569a1e5aec04ababd3093b1e9ea852d08bc93ef41809a79fc72d352134"
+        },
+        {
+          "source_id": "hideki_founder",
+          "source_url": "https://media.speee.jp/member/hideki-otsuka",
+          "source_title": "Speee 代表取締役 - 大塚 英樹",
+          "source_content_hash": "1165f4edd3a4dc6b35a34d8e2caf9c850392ac27ba26091a30f2837bad47e3a9",
+          "quote": "メディア関連事業の会社を創業し、2011年に譲渡",
+          "quote_hash": "41a9ccb6eab215adf025c6e10715a3b35625d37ab07ba22b77360b9dc5afe8b8"
+        },
+        {
+          "source_id": "hideki_ceo",
+          "source_url": "https://media.speee.jp/member/hideki-otsuka",
+          "source_title": "Speee 代表取締役 - 大塚 英樹",
+          "source_content_hash": "1165f4edd3a4dc6b35a34d8e2caf9c850392ac27ba26091a30f2837bad47e3a9",
+          "quote": "同年、25歳で株式会社Speee代表取締役に就任",
+          "quote_hash": "3653a983bcfd2bc1d63f5901ecd9eac4faf457a1f8ae32760e32a40e85423c3c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-218308266052bf": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向、阶段及地区为官网自述；队列记录中的爱诗科技融资活动未在本档作为已核实事实。",
+      "summary": "Lion X官网将其称为创投基金，关注东南亚数字创新；投资组合页称其投资AI、深科技和数字基础设施领域，阶段覆盖A至C轮及早期成长期，地区覆盖东南亚和东北亚。页脚列示法律主体Lion X Ventures Pte. Ltd.。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网列示主体",
+          "value": "Lion X Ventures Pte. Ltd.",
+          "source_id": "lion_entity"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "AI、深科技、数字基础设施",
+          "source_id": "lion_focus"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Series A–C及早期成长期",
+          "source_id": "lion_stage"
+        },
+        {
+          "field": "geography",
+          "label": "投资地区",
+          "value": "东南亚及东北亚",
+          "source_id": "lion_focus"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Lion X Ventures",
+          "url": "https://www.lionxventures.com/",
+          "source_id": "lion_identity"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "lion_identity",
+          "source_url": "https://www.lionxventures.com/",
+          "source_title": "Lion X Ventures",
+          "source_content_hash": "7838835a526ed0d95ceb2034cf9a5744751789a19a35573f93d7f8d49d241223",
+          "quote": "We are a dynamic, forward‑thinking VC fund with a mission to accelerate digital innovation across Southeast Asia.",
+          "quote_hash": "5d75308e7c691f04668ca7cfc361403b80d8cf741ef2cb076aca35085460d368"
+        },
+        {
+          "source_id": "lion_focus",
+          "source_url": "https://www.lionxventures.com/portfolio",
+          "source_title": "Portfolio",
+          "source_content_hash": "9bce5cabca9b3ba5a2aafc8a3aea8a85618606cf1b93be8e0aca0c6321a06e93",
+          "quote": "We invest in category‑defining founders across AI, deep tech, and digital infrastructure",
+          "quote_hash": "b020211d5988297ce0fd85cda01a4499159e4061956a16d788b0dde2d16a06f2"
+        },
+        {
+          "source_id": "lion_stage",
+          "source_url": "https://www.lionxventures.com/portfolio",
+          "source_title": "Portfolio",
+          "source_content_hash": "9bce5cabca9b3ba5a2aafc8a3aea8a85618606cf1b93be8e0aca0c6321a06e93",
+          "quote": "Stage focus Series A - C • Early-Growth Stage",
+          "quote_hash": "487562e1487ea1d287d564545b29c8caa925cf5582d8cb07deb3fa8dcb34dcae"
+        },
+        {
+          "source_id": "lion_entity",
+          "source_url": "https://www.lionxventures.com/",
+          "source_title": "Lion X Ventures",
+          "source_content_hash": "7838835a526ed0d95ceb2034cf9a5744751789a19a35573f93d7f8d49d241223",
+          "quote": "Lion X Ventures Pte. Ltd.",
+          "quote_hash": "b03f50b1a675d3b7e34caca93c753cd45c39e8a8eb59924bdb51369f5b236f60"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-24cd3f4ffadc97": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "官网没有提供可采集的机构介绍或法律主体信息；投融资活动由被投企业公告确认。",
+      "summary": "BANNER VC官网呈现该投资品牌；Impulse Space官方Series D公告称本轮由137 Ventures与BANNER VC共同领投。本档仅记录品牌索引和这一项发行方披露，不扩展法律实体、基金策略或完整组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Impulse Space官方公告称BANNER VC与137 Ventures共同领投其Series D。",
+          "source_id": "banner_activity"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构网站",
+          "value": "BANNER VC",
+          "url": "https://www.bannervc.com/",
+          "source_id": "banner_brand"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "banner_brand",
+          "source_url": "https://www.bannervc.com/",
+          "source_title": "Accelerating the GDP of America",
+          "source_content_hash": "238f2b0ef36f8a5fb96c5a0bdd825d5b892040a4fa36b53d184f71c19a9d6598",
+          "quote": "Accelerating the GDP of America + BANNER VC",
+          "quote_hash": "34626861043042b2d77addd8659dd1138a2ef3495cc7ba27092e5fcc7a21adc7"
+        },
+        {
+          "source_id": "banner_activity",
+          "source_url": "https://www.impulsespace.com/updates/impulse-space-raises-500-million-dollar-series-d-to-build-in-space-mobility-infrastructure-for-the-space-economy",
+          "source_title": "Impulse Space Raises $500M Series D to Build In-Space Mobility Infrastructure for the Space Economy",
+          "source_content_hash": "70cdb23076bb626e3eca4bb8ee19a029d532e42cea03ced4b46c8dda4b380410",
+          "quote": "The round was co-led by 137 Ventures and BANNER VC",
+          "quote_hash": "5dba8369071231cd950513ebb717592c1dcfba8b5089124963bb9a3681664059"
         }
       ],
       "last_verified_at": "2026-10-06"

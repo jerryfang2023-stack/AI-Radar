@@ -139,10 +139,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Lion X基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资方向、阶段及地区为官网自述；队列记录中的爱诗科技融资活动未在本档作为已核实事实。",
+      "summary": "Lion X官网将其称为创投基金，关注东南亚数字创新；投资组合页称其投资AI、深科技和数字基础设施领域，阶段覆盖A至C轮及早期成长期，地区覆盖东南亚和东北亚。页脚列示法律主体Lion X Ventures Pte. Ltd.。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网列示主体",
+          "value": "Lion X Ventures Pte. Ltd.",
+          "source_id": "lion_entity"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "AI、深科技、数字基础设施",
+          "source_id": "lion_focus"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Series A–C及早期成长期",
+          "source_id": "lion_stage"
+        },
+        {
+          "field": "geography",
+          "label": "投资地区",
+          "value": "东南亚及东北亚",
+          "source_id": "lion_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +175,48 @@
           "source_id": "FISRC-9476e3eff9c1e8fe"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Lion X Ventures",
+          "url": "https://www.lionxventures.com/",
+          "source_id": "lion_identity"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "lion_identity",
+          "source_url": "https://www.lionxventures.com/",
+          "source_title": "Lion X Ventures",
+          "source_content_hash": "7838835a526ed0d95ceb2034cf9a5744751789a19a35573f93d7f8d49d241223",
+          "quote": "We are a dynamic, forward‑thinking VC fund with a mission to accelerate digital innovation across Southeast Asia.",
+          "quote_hash": "5d75308e7c691f04668ca7cfc361403b80d8cf741ef2cb076aca35085460d368"
+        },
+        {
+          "source_id": "lion_focus",
+          "source_url": "https://www.lionxventures.com/portfolio",
+          "source_title": "Portfolio",
+          "source_content_hash": "9bce5cabca9b3ba5a2aafc8a3aea8a85618606cf1b93be8e0aca0c6321a06e93",
+          "quote": "We invest in category‑defining founders across AI, deep tech, and digital infrastructure",
+          "quote_hash": "b020211d5988297ce0fd85cda01a4499159e4061956a16d788b0dde2d16a06f2"
+        },
+        {
+          "source_id": "lion_stage",
+          "source_url": "https://www.lionxventures.com/portfolio",
+          "source_title": "Portfolio",
+          "source_content_hash": "9bce5cabca9b3ba5a2aafc8a3aea8a85618606cf1b93be8e0aca0c6321a06e93",
+          "quote": "Stage focus Series A - C • Early-Growth Stage",
+          "quote_hash": "487562e1487ea1d287d564545b29c8caa925cf5582d8cb07deb3fa8dcb34dcae"
+        },
+        {
+          "source_id": "lion_entity",
+          "source_url": "https://www.lionxventures.com/",
+          "source_title": "Lion X Ventures",
+          "source_content_hash": "7838835a526ed0d95ceb2034cf9a5744751789a19a35573f93d7f8d49d241223",
+          "quote": "Lion X Ventures Pte. Ltd.",
+          "quote_hash": "b03f50b1a675d3b7e34caca93c753cd45c39e8a8eb59924bdb51369f5b236f60"
+        },
         {
           "source_id": "FISRC-9476e3eff9c1e8fe",
           "source_url": "https://news.pedaily.cn/202607/566238.shtml",
@@ -161,7 +226,7 @@
           "quote_hash": "7f6be6b9d1ba078ede5e5cf7d9ee4051a52a3dcbba2967bb7bd62fcb5c4f762e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }
