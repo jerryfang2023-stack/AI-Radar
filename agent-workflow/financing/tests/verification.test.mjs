@@ -158,14 +158,16 @@ test('private attempt reservations still consume capture budget when public chec
   assert.equal(state.entries[url].reason, 'capture_budget_exhausted');
 });
 
-test('pending legacy lead searches one alternative original and feeds it to existing fact review', async t => {
+test('pending legacy lead captures one alternative but requires identity binding before fact admission', async t => {
   const options=fixture(t);seed(options);
   write(path.join(options.directory,'lead-review.json'),{version:'FINANCING-LEAD-REVIEW-1',date,rows:[{id:1,url,title:'Acme AI raises seed funding',status:'pending_ai_scope',reason:'AI product unclear',reviewed_at:'2026-10-06T00:00:00Z'}]});
   let searches=0,captures=0;
   const alternative='https://example.com/issuer-announcement';
   const state=await verifyPending({...options,search:async title=>{searches++;assert.match(title,/Acme/);return{status:'completed',items:[{url:alternative}]};},capture:async lead=>{captures++;assert.equal(lead.url,alternative);return capture(lead);}});
   assert.equal(searches,1);assert.equal(captures,1);
-  assert.equal(state.entries[url].status,'awaiting_fact_review');
+  assert.equal(state.entries[url].status,'pending');
+  assert.equal(state.entries[url].reason,'alternate_original_requires_identity_review');
+  assert.equal(read(path.join(options.directory,'supplemental.json')),null);
   assert.equal(state.entries[url].evidence_source_url,alternative);
   assert.equal(state.entries[url].alternate_source,true);
   await verifyPending({...options,search:forbidden,capture:forbidden});
@@ -191,8 +193,23 @@ test('new responsible review evidence changes reactivate only that lead, preserv
   const file=path.join(options.directory,'lead-review.json');
   const review={version:'FINANCING-LEAD-REVIEW-1',date,rows:[{id:1,url,title:'Acme AI raises funding',status:'pending_ai_scope',reason:'unknown',reviewed_at:'2026-10-06'}]};write(file,review);
   await verifyPending({...options,search:async()=>({status:'completed',items:[]}),capture:forbidden});
-  review.rows[0].additional_source='https://example.com/new-original';review.rows[0].reason='new issuer evidence supplied';write(file,review);
+  review.rows[0].additional_source='https://example.com/new-original';review.rows[0].source_binding={source_url:'https://example.com/new-original',reviewed_by:'test reviewer',reviewed_at:date,reason:'same company and round confirmed'};review.rows[0].reason='new issuer evidence supplied';write(file,review);
   let calls=0;
   const state=await verifyPending({...options,search:forbidden,capture:async lead=>{calls++;return capture(lead);}});
   assert.equal(calls,1);assert.equal(state.entries[url].status,'awaiting_fact_review');
+});
+
+test('alternate source identity survives missing public checkpoint with and without queue', async t => {
+  for(const removeQueue of [false,true]) {
+    const options=fixture(t);seed(options);
+    const alternative='https://example.com/alternate';
+    write(path.join(options.directory,'lead-review.json'),{version:'FINANCING-LEAD-REVIEW-1',date,rows:[{id:1,url,title:'Acme AI financing',status:'pending_ai_scope',reason:'unknown',reviewed_at:date,additional_source:alternative,source_binding:{source_url:alternative,reviewed_by:'test reviewer',reviewed_at:date,reason:'same company and round confirmed'}}]});
+    const first=await verifyPending({...options,capture});
+    assert.equal(first.entries[url].alternate_source,true);
+    fs.unlinkSync(path.join(options.directory,'verification.json'));
+    if(removeQueue)fs.unlinkSync(path.join(options.backupRoot,'financing-monitor-state/verification-queue.json'));
+    const resumed=await verifyPending({...options,search:forbidden,capture:forbidden});
+    assert.equal(resumed.entries[url].alternate_source,true);
+    assert.equal(resumed.entries[url].evidence_source_url,alternative);
+  }
 });

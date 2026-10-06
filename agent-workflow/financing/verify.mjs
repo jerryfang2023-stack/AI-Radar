@@ -64,7 +64,8 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
         stop_after_date: queued?.stop_after_date || new Date(Date.parse(date)+7*86400000).toISOString().slice(0,10) };
       if (queued && !followupDue(queued,date) && (!priorReview || queued.review_hash === digest(priorReview))) {
         Object.assign(row, {reason:queued.reason,followup:queued});
-        if(queued.raw_ids?.length && queued.last_processed_date===date)Object.assign(row,{raw_ids:queued.raw_ids,content_hash:queued.content_hash,status:'awaiting_fact_review'});
+        if(queued.raw_ids?.length && queued.last_processed_date===date)Object.assign(row,{raw_ids:queued.raw_ids,content_hash:queued.content_hash,status:'awaiting_fact_review',
+          evidence_source_url:queued.evidence_source_url || url,alternate_source:queued.alternate_source ?? true,source_identity_reviewed:queued.source_identity_reviewed,source_binding:queued.source_binding});
         write(file,state); return;
       }
       if (priorReview) {
@@ -80,14 +81,20 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
           row.status = 'pending'; row.reason = 'accepted_source_missing_restore_supplement';
         }
         if (!priorReview.status.startsWith('pending')) {
-          history.entries[url] ||= { date, status: 'reviewed', reason: row.reason, content_hash: row.content_hash };
+          history.entries[url] ||= { date, status: 'reviewed', reason: row.reason, content_hash: row.content_hash, evidence_source_url:row.evidence_source_url,alternate_source:row.alternate_source };
           write(historyFile, history); write(file, state); return;
         }
         // A prior pending disposition is input to actual follow-up, not a skip.
         row.prior_reason = priorReview.reason;
       }
       if (row.raw_ids?.length) { write(file,state); return; }
-      const cachedOriginal = legacy.originals.get(url) || legacy.originals.get(priorReview?.additional_source) || legacy.byId.get(String(priorReview?.id));
+      let cachedOriginal = legacy.originals.get(url) || legacy.originals.get(priorReview?.additional_source) || legacy.byId.get(String(priorReview?.id));
+      if(!cachedOriginal && queued?.content_hash && !queued.raw_ids?.length) {
+        try {
+          const saved=loadPrivateEvidenceRecord(root,`evidence://${queued.content_hash}`,queued.content_hash,{backupRoot,sourceUrl:queued.evidence_source_url || url});
+          cachedOriginal={url:saved.entry.source_url,title:saved.raw.title,body:saved.body,date:saved.raw.published_at,date_evidence:saved.raw.publication_date_evidence,article_like:saved.raw.source_type==='article',content_hash:saved.entry.content_hash};
+        } catch {row.evidence_problem='private_original_missing_restore_evidence';}
+      }
       if (cachedOriginal) {
         const recovered = legacyCapture(cachedOriginal, date);
         if (recovered.record) {
@@ -101,7 +108,7 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
       if (!queued && receipt.content_hash && previous && previous.date !== date && previous.content_hash === receipt.content_hash) {
         Object.assign(row, { reason: 'unchanged_original_previously_reviewed', previous_date: previous.date });
       } else if (previous?.date === date && previous.content_hash && ['captured', 'awaiting_fact_review'].includes(previous.status)) {
-        Object.assign(row, { content_hash: previous.content_hash, status: 'captured', reason: previous.reason || 'original_recovered' });
+        Object.assign(row, { content_hash: previous.content_hash, status: 'captured', reason: previous.reason || 'original_recovered',evidence_source_url:previous.evidence_source_url,alternate_source:previous.alternate_source });
       } else if (receipt.content_hash && !priorReview && !queued) {
         Object.assign(row, { content_hash: receipt.content_hash, status: 'captured' });
       } else if (previous && !priorReview && !receipt.backlog && !queued) {
@@ -137,7 +144,7 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
           ingestPrivateEvidenceRecords({ root, backupRoot, records: [{ snapshotRef: `financing/${date}/${digest(targetUrl).slice(0,16)}.json`, sourceUrl: targetUrl, dataDate: date, contentHash: record.content_hash, body: record.clean_text, metadata: record }] });
           Object.assign(row, { content_hash: record.content_hash, status: 'captured', reason: result.reason || 'original_recovered' });
         } else Object.assign(row, { status: result.status === 'excluded' && targetUrl===url ? 'excluded' : 'pending', reason: targetUrl===url ? result.reason : `alternate_original_unusable:${result.reason}` });
-        history.entries[url] = { ...history.entries[url], date, status: row.status, reason: row.reason, content_hash: row.content_hash };
+        history.entries[url] = { ...history.entries[url], date, status: row.status, reason: row.reason, content_hash: row.content_hash, evidence_source_url:row.evidence_source_url,alternate_source:row.alternate_source };
         write(historyFile, history);
       }
       }
@@ -150,6 +157,17 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
     catch { row.status='pending';row.reason='private_original_missing_restore_evidence';write(file,state);return; }
     // Only structurally usable, dated originals reach the existing semantic
     // extraction/research gates. Scope ambiguity is NOT a scope approval.
+    row.evidence_source_url = loaded.entry.source_url;
+    row.alternate_source = row.alternate_source === true || loaded.entry.source_url !== url;
+    const binding = priorReview?.source_binding;
+    row.source_identity_reviewed = binding?.source_url === loaded.entry.source_url && Boolean(binding.reviewed_by && binding.reviewed_at && binding.reason);
+    if(row.source_identity_reviewed)row.source_binding={...binding};
+    if(row.alternate_source && !row.source_identity_reviewed) {
+      row.status='pending';row.reason='alternate_original_requires_identity_review';
+      row.evidence_ref=`evidence://${row.content_hash}`;
+      history.entries[url]={...history.entries[url],date,status:'captured',content_hash:row.content_hash,evidence_source_url:row.evidence_source_url,alternate_source:true};
+      write(historyFile,history);write(file,state);return;
+    }
     const record = loaded.raw;
     if (!record.published_at || (row.reason !== 'original_recovered' && !semanticReasons.has(row.original_reason) && !semanticReasons.has(row.reason))) {
       row.status = 'pending'; row.reason = 'original_requires_manual_review'; write(file, state); return;
@@ -162,7 +180,7 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
     write(supplementalFile, supplemental);
     indexFinancingEvidence({ root, backupRoot, date, collection: { captures: { [url]: { status: 'accepted', source_url: sourceUrl, content_hash: row.content_hash } } } });
     Object.assign(row, { status: 'awaiting_fact_review', reason: 'existing_fact_research_and_taxonomy_gates_required', raw_ids: intake.raw_documents.map(item => item.raw_id), evidence_ref: `evidence://${row.content_hash}` });
-    history.entries[url] = { ...history.entries[url], date, status: row.status, reason: 'original_recovered', content_hash: row.content_hash };
+    history.entries[url] = { ...history.entries[url], date, status: row.status, reason: 'original_recovered', content_hash: row.content_hash, evidence_source_url:row.evidence_source_url,alternate_source:row.alternate_source };
     write(historyFile, history); write(file, state);
   };
   const leads = Object.entries(collection.captures || {});
@@ -177,7 +195,12 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
     if (failed) throw failed.reason;
   }
   for(const [url,row] of Object.entries(state.entries)) {
-    if(row.status === 'reviewed' || row.status === 'excluded' || row.status === 'verified') { delete queue.entries[url];continue; }
+    if(row.status === 'reviewed' || row.status === 'excluded' || row.status === 'verified' || row.reviewed_status === 'accepted_original') { delete queue.entries[url];continue; }
+    if(row.reason==='alternate_original_requires_identity_review') {
+      row.followup={...row,status:'needs_attention',next_due_date:null,last_processed_date:date,
+        prior_review:reviewed.get(url) || queue.entries[url]?.prior_review,owner:'responsible_financing_reviewer',
+        next_action:'review_original_company_and_round_binding_before_supplement'};
+    }
     if(!row.followup) {
       row.followup=deferredFollowup({...row,status:'pending',last_processed_date:date,prior_review:reviewed.get(url) || queue.entries[url]?.prior_review}, date,
         {attempted:row.status==='awaiting_fact_review' || row.attempted === true,reason:row.reason});
@@ -225,9 +248,9 @@ export function finishVerification({ root, directory, date, backupRoot }) {
         // No total_raised fallback. References point to gated exact-span evidence.
         evidence_refs: [...(card.company?.evidence_refs || []), ...(card.financing?.evidence_refs || [])].map(({source_id, quote_hash}) => ({source_id, quote_hash})) };
     });
-    const complete = !row.alternate_source && !row.unresolved_event_ids.length && row.results.length > 0 && row.results.every(result => result.accepted || result.scope === 'excluded');
+    const complete = (!row.alternate_source || row.source_identity_reviewed) && !row.unresolved_event_ids.length && row.results.length > 0 && row.results.every(result => result.accepted || result.scope === 'excluded');
     row.status = complete ? row.results.some(result => result.accepted) ? 'verified' : 'excluded' : 'pending';
-    row.reason = row.alternate_source && cards.length ? 'alternate_event_requires_original_lead_identity_review' : complete ? 'existing_gates_reconciled' : cards.length ? 'funding_or_taxonomy_gate_pending' : 'no_accepted_financing_event_manual_review_required';
+    row.reason = row.alternate_source && !row.source_identity_reviewed && cards.length ? 'alternate_event_requires_original_lead_identity_review' : complete ? 'existing_gates_reconciled' : cards.length ? 'funding_or_taxonomy_gate_pending' : 'no_accepted_financing_event_manual_review_required';
     row.checks = Object.fromEntries(dimensions.map(key => [key, row.status === 'verified' ? 'accepted_by_existing_gates_not_full_disclosure' : 'pending']));
     row.review_refs = [`01-SiteV2/content/11-databases/data-center-v4/${date}/qa-queue.json`, `01-SiteV2/content/12-applications/funding-insights/${date}.json`];
   }
