@@ -121,14 +121,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "嘉道资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "无锡市国资监管页面确认“嘉道资本”参与地方QFLP项目；未披露足以确认具体法律登记主体的信息，档案限定于该品牌及项目活动。",
+      "summary": "无锡市国资监管页面称嘉道QFLP基金由锡创投、惠山区国资和嘉道资本联合发起，并介绍嘉道资本在大健康及CGT领域的布局。页面未确认嘉道资本的具体法律登记主体。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "政府页面所述重点方向",
+          "value": "大健康、CGT",
+          "source_id": "jiadao_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "政府页面披露嘉道资本参与共同发起嘉道QFLP基金项目；15亿元为该基金目标总规模。",
+          "source_id": "jiadao_project"
+        },
         {
           "description": "融资来源记录：利德健康 · 历史轮次未披露 · Pre-A+轮追加投资。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2692de47ca3d60ba"
@@ -136,6 +147,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "jiadao_project",
+          "source_url": "https://gzw.wuxi.gov.cn/doc/2026/04/10/4758136.shtml",
+          "source_title": "嘉道CGT制备中心和QFLP基金项目落户无锡",
+          "source_content_hash": "a5d3c27712a7a481ec353640c7822ec9b6f244828d8f9b0bea8200678a9799c3",
+          "quote": "嘉道QFLP基金由锡创投、惠山区国资、嘉道资本三方联合发起，目标总规模15亿元",
+          "quote_hash": "ff6b20c32a046bae0267455e521202c898993a807efb551dc91b4e9deba2aab9"
+        },
+        {
+          "source_id": "jiadao_focus",
+          "source_url": "https://gzw.wuxi.gov.cn/doc/2026/04/10/4758136.shtml",
+          "source_title": "嘉道CGT制备中心和QFLP基金项目落户无锡",
+          "source_content_hash": "a5d3c27712a7a481ec353640c7822ec9b6f244828d8f9b0bea8200678a9799c3",
+          "quote": "成立于2014年的嘉道资本近年来将大健康列为核心布局方向",
+          "quote_hash": "6f3e657429b1a3af45f3a795db249f538105e7c5c92c2491da7e3126eb182447"
+        },
         {
           "source_id": "FISRC-2692de47ca3d60ba",
           "source_url": "https://media.qimingpian.cn/2026/07/16/980dc5b4bbcea1570908cc654e109362.html",

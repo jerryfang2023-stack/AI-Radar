@@ -140,25 +140,56 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Wind Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "官网团队页可核实合伙人资料，首页只提供宽泛投资自述；融资范围限于Fleuret公告具名披露的一笔投资。",
+      "summary": "Wind Capital官网称其寻找创新项目并支持创业者；团队页将Thierry Vandewalle列为创始合伙人。Fleuret公告将Wind Capital列为€4M pre-seed轮投资方之一。",
+      "facts": [
+        {
+          "field": "founding_partner",
+          "label": "创始合伙人",
+          "value": "Thierry Vandewalle",
+          "source_id": "wind_partner"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Fleuret AI · 预种子轮 · 2026-10-05 · 本轮参投 · €4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Fleuret公告将Wind Capital列为该公司€4M pre-seed轮投资方之一。",
           "source_id": "FISRC-d53e6de7830c8d74"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Wind Capital官网",
+          "value": "Wind Capital",
+          "url": "https://wind.capital/",
+          "source_id": "wind_approach"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-d53e6de7830c8d74",
           "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
           "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
-          "source_content_hash": "b7f15ba9a80ac1c7",
+          "source_content_hash": "0ef491fc388899ac0c53e83be9a31c61ef10dddadb754ff579cfdd7f7941f0f9",
           "quote": "has closed a €4M pre-seed round led by RAISE Ventures, alongside Auriga Cyber Ventures, Wind Capital, Better Angle and leading business angels from the cybersecurity world.",
           "quote_hash": "23d98227a7268569101571c113168cbd672c226a4c73f5cddea9fef105c8223a"
+        },
+        {
+          "source_id": "wind_approach",
+          "source_url": "https://wind.capital/",
+          "source_title": "wind.capital",
+          "source_content_hash": "fb3a0c3e04abac39c09f52fc3fc32ca8b7f6dd52198437f1f9c534f177e6971d",
+          "quote": "We tirelessly seek game-changing innovators and new ways to support them. We boldly invest where others fear to tread.",
+          "quote_hash": "0d180fcb29b055b0d2f3252320c1a1413d293271f2a8842109e38e91db7300f5"
+        },
+        {
+          "source_id": "wind_partner",
+          "source_url": "https://wind.capital/team/",
+          "source_title": "wind.capital",
+          "source_content_hash": "5ac206d5a3084477e487ffe1e01be561dead62a593c2553c129129e0fb5bf7e4",
+          "quote": "Thierry Vandewalle Founding Partner",
+          "quote_hash": "f828ac9c0971dedc41a0b196cbf63a5c846a0082dc20bbdf7ae3d43bb1f960de"
         }
       ],
       "last_verified_at": "2026-10-06"

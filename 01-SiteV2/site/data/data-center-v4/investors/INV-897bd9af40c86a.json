@@ -124,28 +124,48 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jean-François Aliotti 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "仅记录Fleuret 2026-10-06公告中的Almond联合创始人身份及该笔投资；2023年共同负责人头衔按历史资料标注，不推作当前职务。",
+      "summary": "Fleuret公告将Jean-François Aliotti列为Almond联合创始人及本轮天使投资人。Almond在2023年收购公告中称他与Olivier Pantaleo为公司共同负责人。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Almond",
+          "title": "共同负责人（co-dirigeant）",
+          "period": "2023年收购公告",
+          "description": "Almond公告称Jean-François Aliotti与Olivier Pantaleo为共同负责人；未证明此职务目前仍在延续。",
+          "source_id": "almond_prior_role"
+        }
+      ],
+      "education": [],
+      "experience_summary": "公开材料确认其与Almond的联合创始人关系及2023年职务称谓。",
       "track_record": [
         {
-          "description": "融资来源记录：Fleuret AI · 历史轮次未披露 · 本轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Fleuret公告将其列为该公司€4M pre-seed轮天使投资人之一；未披露个人投资金额。",
           "source_id": "FISRC-d53e6de7830c8d74"
         }
       ],
-      "contacts": [],
       "sources": [
         {
           "source_id": "FISRC-d53e6de7830c8d74",
           "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
           "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
-          "source_content_hash": "b7f15ba9a80ac1c7",
-          "quote": "Jean-François AliottiCo-founder, Almond",
-          "quote_hash": "fed464de30f96855c26d094b4185c951dee7567b37d7fd968dea63a3fa0955ac"
+          "source_content_hash": "0ef491fc388899ac0c53e83be9a31c61ef10dddadb754ff579cfdd7f7941f0f9",
+          "quote": "Jean-François Aliotti Co-founder, Almond",
+          "quote_hash": "c5563617c2fae2183a879fedee7e28d9dcd4d8a1df4972fc9ab4758586e7b848"
+        },
+        {
+          "source_id": "almond_prior_role",
+          "source_url": "https://almond.eu/communique-de-presse/almond-annonce-lacquisition-damossys-et-renforce-ses-positions-dans-la-cybersecurite/",
+          "source_title": "Almond annonce l’acquisition d’Amossys et renforce ses positions dans la cybersécurité - Almond",
+          "source_content_hash": "2e83d84808cd02ff395f8e5872135483334ba21e20f2574509101e547d5c0d5c",
+          "quote": "Jean-François Aliotti et Olivier Pantaleo, co-dirigeants d’Almond",
+          "quote_hash": "49367ecabaecbaae96b4ce6eb47a14f1e7a091171fad23929f2e00e3983fe69f"
         }
       ],
-      "last_verified_at": "2026-10-06"
+      "last_verified_at": "2026-10-06",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

@@ -135,26 +135,49 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Avataar Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略据公司官网自述；组合示例限官网列出的QpiAI，不代表完整组合。",
+      "summary": "Avataar Venture Partners官网称其支持在高增长市场构建AI平台的B2B创始团队，方向包括physical intelligence、vertical software和服务转型；官网组合页列有QpiAI。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向（官网自述）",
+          "value": "B2B平台；physical intelligence、vertical software及服务转型",
+          "source_id": "avataar_thesis"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：QpiAI · 历史轮次未披露 · Series A轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Avataar官网组合页将QpiAI列为组合公司；不推断具体轮次或金额。",
           "source_id": "FISRC-a6bcefafa0e61f49"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Avataar Venture Partners官网",
+          "value": "Avataar Venture Partners",
+          "url": "https://www.avataar.vc/",
+          "source_id": "avataar_thesis"
+        }
+      ],
       "sources": [
         {
+          "source_id": "avataar_thesis",
+          "source_url": "https://www.avataar.vc/",
+          "source_title": "Avataar Venture Partners – Empowering Growth - Stage B2B and SaaS Companies.",
+          "source_content_hash": "3ef50ce66fb986906755e8a299f27391b01d0749740df5a746e61fcd80aa0ff4",
+          "quote": "We back B2B founders building the next generation of AI-enabled platforms across physical intelligence, vertical software, and service transformation across high growth markets.",
+          "quote_hash": "00ad1a83f4792bd01e5c6bca3f5e85eadcdf1641f8b84b3320d763ec304bc305"
+        },
+        {
           "source_id": "FISRC-a6bcefafa0e61f49",
-          "source_url": "https://yourstory.com/2026/10/qpiai-secures-rs-50-cr-debt-financing-from-innoven-capital",
-          "source_title": "量子计算与AI公司QpiAI从InnoVen Capital获得Rs 50 Cr债务融资",
-          "source_content_hash": "4b5d8ddd72162c79742ecacaef800b1c506f7c576282bdada59b31da6816dd8e",
-          "quote": "followed by a $32 million Series A in July 2025 led by Avataar Ventures and the National Quantum Mission",
-          "quote_hash": "fe53e0cc0912d04261d7da4f46d86c4376f0f847f7129a5ff0bf3d67108f6d37"
+          "source_url": "https://www.avataar.vc/portfolio/qpiai",
+          "source_title": "QpiAI | Avataar VC Portfolio Company",
+          "source_content_hash": "9e43211b1c1c374bf38f2ff9ee5f261e1cc0d2d3dce475daa9b6c8371aea4f96",
+          "quote": "QpiAI | Avataar VC Portfolio Company",
+          "quote_hash": "037721bd391e2cde79c3dd68eaf990d3bf9cd97a178d8df5fc11cc860fd477b7"
         }
       ],
       "last_verified_at": "2026-10-06"

@@ -140,9 +140,16 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "InnoVen Capital India Fund II 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "官网确认基金与信托关系及印度监管类别；未使用直接抓取失败的融资报道扩写组合。",
+      "summary": "InnoVen Capital官网将InnoVen Capital India Fund II列为InnoVen Capital India Trust项下的Category II另类投资基金。",
+      "facts": [
+        {
+          "field": "fund_structure",
+          "label": "基金结构",
+          "value": "InnoVen Capital India Trust项下；SEBI Category II另类投资基金",
+          "source_id": "fund_structure"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +157,32 @@
           "source_id": "FISRC-a6bcefafa0e61f49"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "InnoVen Capital官网",
+          "value": "InnoVen Capital",
+          "url": "https://www.innovencapital.com/",
+          "source_id": "fund_structure"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "fund_structure",
+          "source_url": "https://www.innovencapital.com/index.php/Contactus_in?lang=in",
+          "source_title": "Contact us - InnoVen Capital",
+          "source_content_hash": "b7df9372da7efddb7881d5d2a82b80ebc9d0cef57fc4043abea432e25a7bfeb1",
+          "quote": "Innoven Capital India Fund II (a scheme of Innoven Capital India Trust)",
+          "quote_hash": "6a14f75596b4776e9b8cd0d9dbe05afde999d8c5429ef3e262874eb4f7fc39aa"
+        },
+        {
+          "source_id": "fund_registration",
+          "source_url": "https://www.innovencapital.com/index.php/Contactus_in?lang=in",
+          "source_title": "Contact us - InnoVen Capital",
+          "source_content_hash": "b7df9372da7efddb7881d5d2a82b80ebc9d0cef57fc4043abea432e25a7bfeb1",
+          "quote": "registered with SEBI as a Category II Alternative Investment Fund",
+          "quote_hash": "de5ea8223cbed53c6d6d101ff287593e41f36721b22bcb9f13a96a127b663cd4"
+        },
         {
           "source_id": "FISRC-a6bcefafa0e61f49",
           "source_url": "https://yourstory.com/2026/10/qpiai-secures-rs-50-cr-debt-financing-from-innoven-capital",

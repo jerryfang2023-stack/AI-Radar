@@ -136,9 +136,16 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Greenoaks Capital 当前按“投资组织”收录。最新融资披露记录日期为 2025-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "官网2026年隐私声明确认法律主体名称，并提及对潜在投资开展尽调；该页未说明投资策略或组合。",
+      "summary": "Greenoaks官网隐私声明将主体称为Greenoaks LLC，并提及对现有或潜在投资开展投资相关研究与尽调。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "官网隐私声明主体",
+          "value": "Greenoaks LLC",
+          "source_id": "greenoaks_identity"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -146,8 +153,32 @@
           "source_id": "FISRC-062aa9e732f0aba2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Greenoaks官网",
+          "value": "Greenoaks",
+          "url": "https://greenoaks.com/",
+          "source_id": "greenoaks_identity"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "greenoaks_identity",
+          "source_url": "https://greenoaks.com/privacy",
+          "source_title": "Privacy Notice | Greenoaks",
+          "source_content_hash": "0f790907790789cbeb9897d68d4ccdf48089c400c03949b37239876d7289941d",
+          "quote": "Your privacy is important to Greenoaks LLC",
+          "quote_hash": "df4facf221091975d7148caeb0b200bb59c0c575bed1cf89f2592a684cc38f48"
+        },
+        {
+          "source_id": "greenoaks_activity",
+          "source_url": "https://greenoaks.com/privacy",
+          "source_title": "Privacy Notice | Greenoaks",
+          "source_content_hash": "0f790907790789cbeb9897d68d4ccdf48089c400c03949b37239876d7289941d",
+          "quote": "investment-related research or due diligence activities in respect of current or potential investments",
+          "quote_hash": "aa0b91a793eb0fcacab364838113368f7ad3f7c7b49c4b1cd401c45443b2ef8f"
+        },
         {
           "source_id": "FISRC-062aa9e732f0aba2",
           "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",

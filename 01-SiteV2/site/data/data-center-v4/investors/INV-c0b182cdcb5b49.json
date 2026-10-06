@@ -124,28 +124,48 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Georges Lotigier 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "Fleuret公告称其为Vade联合创始人及Auriga GP；Auriga团队页对其Vade职务另有表述，本档案不认定当前职务。",
+      "summary": "Fleuret官方公告将Georges Lotigier介绍为Vade联合创始人、Auriga Cyber Ventures普通合伙人及本轮天使投资人；Auriga团队页另称其曾任Vade CEO。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Vade",
+          "title": "联合创始人（Fleuret公告）",
+          "period": "Fleuret 2026-10-06公告",
+          "description": "Auriga团队页另称其曾任Vade CEO；来源口径不同，未推断当前职务。",
+          "source_id": "georges_auriga_bio"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Auriga团队页介绍其曾担任Vade CEO；其当前职务未在本档案中认定。",
       "track_record": [
         {
-          "description": "融资来源记录：Fleuret AI · 历史轮次未披露 · 本轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Fleuret公告将其列为该公司€4M pre-seed轮天使投资人之一；未披露个人投资金额。",
           "source_id": "FISRC-d53e6de7830c8d74"
         }
       ],
-      "contacts": [],
       "sources": [
         {
           "source_id": "FISRC-d53e6de7830c8d74",
           "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
           "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
-          "source_content_hash": "b7f15ba9a80ac1c7",
-          "quote": "Georges LotigierCo-founder, Vade",
-          "quote_hash": "4e7774bc8e1937d476b1b3b2eba57ef7ff74dfa55af66b3fc89931bfc79d90db"
+          "source_content_hash": "0ef491fc388899ac0c53e83be9a31c61ef10dddadb754ff579cfdd7f7941f0f9",
+          "quote": "Georges Lotigier Co-founder, Vade",
+          "quote_hash": "01a445805e3d61e3effe22253ca9cc46be4fb4da8ecbadb2fab6baba462bc00f"
+        },
+        {
+          "source_id": "georges_auriga_bio",
+          "source_url": "https://www.aurigacyberventures.com/more-about-our-founding-partners",
+          "source_title": "More about our Founding Partners",
+          "source_content_hash": "e3da969fbe27a331926f1a56a5c709e5637501523a82a75b84e463a47f15442e",
+          "quote": "Georges Lotigier As CEO of Vade",
+          "quote_hash": "9ee111307a8c36d7a61ea34a02fce769afb438ca219a193e67a21abc5b861a30"
         }
       ],
-      "last_verified_at": "2026-10-06"
+      "last_verified_at": "2026-10-06",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

@@ -133,13 +133,38 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "National Quantum Mission 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "印度科技部年报确认其为政府国家使命及量子科技研发计划；该来源不足以将其称作风险投资基金。",
+      "summary": "印度科技与技术部2025–26年年报称，National Quantum Mission于2023年4月19日获内阁批准，预算₹6,003.65 crore、计划期八年，旨在推进量子技术科学与产业研发。本档案确认项目身份，不把它称作VC基金。",
+      "facts": [
+        {
+          "field": "entity_type",
+          "label": "主体性质",
+          "value": "印度政府国家量子技术研发使命",
+          "source_id": "nqm_identity"
+        },
+        {
+          "field": "approved_budget",
+          "label": "年报披露总预算",
+          "value": "₹6,003.65 crore",
+          "source_id": "nqm_identity"
+        },
+        {
+          "field": "duration",
+          "label": "计划期",
+          "value": "八年",
+          "source_id": "nqm_identity"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-04-19",
+          "description": "印度内阁批准National Quantum Mission。",
+          "source_id": "nqm_identity"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：QpiAI · 历史轮次未披露 · Series A轮领投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -148,6 +173,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "nqm_identity",
+          "source_url": "https://dst.gov.in/sites/default/files/DST%20AR%20%202025-26%20ENG_Web.pdf",
+          "source_title": "Annual Report 2025-26 - Department of Science & Technology (National Quantum Mission section)",
+          "source_content_hash": "292d1e5d1f3559a173c7578cc964c774314408b313af9a537988e24d0c924bf7",
+          "quote": "The Union Cabinet, approved National Quantum Mission (NQM) on 19th April 2023 at a total cost of ₹6003.65 crore for a period of eight years",
+          "quote_hash": "81856a8722936984c9a3e3c7c039bdd87c9da719d1f02143404807fd9c91191a"
+        },
         {
           "source_id": "FISRC-a6bcefafa0e61f49",
           "source_url": "https://yourstory.com/2026/10/qpiai-secures-rs-50-cr-debt-financing-from-innoven-capital",
