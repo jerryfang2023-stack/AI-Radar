@@ -124,28 +124,62 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alexandre Andreini 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "仅记录官方公司资料所述职务、过往经历，以及Fleuret具名披露的一笔天使投资；Stoïk当前团队页称Risk Director，Fleuret公告称Chief Risk Officer。",
+      "summary": "Fleuret公告列Alexandre Andreini为Stoïk风险负责人及本轮天使投资人；Stoïk团队页称其为Risk Director，并称其曾在Wavestone从事网络安全咨询。",
+      "current_roles": [
+        {
+          "title": "Risk Director",
+          "organization": "Stoïk",
+          "source_id": "alex_current_role"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Wavestone",
+          "title": "网络安全顾问",
+          "period": "Stoïk官网所述过往经历",
+          "description": "Stoïk官网称其曾在Wavestone从事网络安全咨询；未给出任职日期。",
+          "source_id": "alex_current_role"
+        }
+      ],
+      "education": [],
+      "experience_summary": "公司团队资料称其负责Stoïk风险团队。",
       "track_record": [
         {
-          "description": "融资来源记录：Fleuret AI · 历史轮次未披露 · 本轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Fleuret公告将其列为该公司€4M pre-seed轮网络安全行业天使投资人之一；未披露个人投资金额。",
           "source_id": "FISRC-d53e6de7830c8d74"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "alex_round_role",
+          "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
+          "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
+          "source_content_hash": "0ef491fc388899ac0c53e83be9a31c61ef10dddadb754ff579cfdd7f7941f0f9",
+          "quote": "Alexandre Andreini Chief Risk Officer, Stoïk",
+          "quote_hash": "7e92ef7c83d2f12cead6853e4350b38c7c0d2918f48b571dc07995b832b2464b"
+        },
+        {
+          "source_id": "alex_current_role",
+          "source_url": "https://www.stoik.com/en-us/about",
+          "source_title": "CISO of Europe | Stoïk",
+          "source_content_hash": "414e3935ed38a7389e50b0ac2799c3bb039ce40d9c167c0d7125337f5a090fde",
+          "quote": "Alexandre Andreini Risk Director A former cybersecurity consultant at Wavestone",
+          "quote_hash": "aa0008b9c635b4a1560ed168489c3971d5341e35d2f3c54a0717c85045b8d922"
+        },
         {
           "source_id": "FISRC-d53e6de7830c8d74",
           "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
           "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
-          "source_content_hash": "b7f15ba9a80ac1c7",
-          "quote": "Alexandre AndreiniChief Risk Officer, Stoïk",
-          "quote_hash": "735ac0a46f43e64205f09538cb6b600aa8632fee36d42010d30c73f3e8c2ed92"
+          "source_content_hash": "0ef491fc388899ac0c53e83be9a31c61ef10dddadb754ff579cfdd7f7941f0f9",
+          "quote": "has closed a €4M pre-seed round led by RAISE Ventures, alongside Auriga Cyber Ventures, Wind Capital, Better Angle and leading business angels from the cybersecurity world.",
+          "quote_hash": "23d98227a7268569101571c113168cbd672c226a4c73f5cddea9fef105c8223a"
         }
       ],
-      "last_verified_at": "2026-10-06"
+      "last_verified_at": "2026-10-06",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

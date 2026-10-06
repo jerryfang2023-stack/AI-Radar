@@ -140,9 +140,16 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海国际集团投资有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "官网可核实该法人为上海国际集团旗下专业化直投公司及披露的业务方向；未把媒体所述具体融资关系标记为集团官网确认。",
+      "summary": "上海国际集团官网称上海国际集团投资有限公司是集团旗下专业化直投公司，并介绍其围绕集团战略开展股权投资及创新业务。",
+      "facts": [
+        {
+          "field": "group_relationship",
+          "label": "集团关系",
+          "value": "上海国际集团旗下专业化直投公司",
+          "source_id": "sig_identity"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -152,6 +159,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "sig_identity",
+          "source_url": "https://www.sigchina.com/site/introduction",
+          "source_title": "上海国际集团 - 集团简介",
+          "source_content_hash": "b746a4a2590f2aad67d72f5a1129fbba1ccb67030e05896f63507607b0bc1c83",
+          "quote": "上海国际集团投资有限公司是集团旗下的专业化直投公司",
+          "quote_hash": "48a8b4e5868b421010acc058923ced384ee86f438a8039f15f9f9fcf6922054f"
+        },
         {
           "source_id": "FISRC-de0f78d8bca00f33",
           "source_url": "https://www.sohu.com/a/1082809892_121071031",

@@ -137,28 +137,85 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "PROfounders 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网法律声明确认英国管理公司身份和FCA编号；投资策略及融资活动来自官网自述与Pandektes官方公告。",
+      "summary": "PROfounders官网称其自2009年起投资欧洲创业者，初始投资通常为€500k–€3m；官网法律声明确认PROfounders Capital Partners Limited在英格兰与威尔士注册并受FCA监管（编号997987）。Pandektes公告记录其参与€13.5M Series A。",
+      "facts": [
+        {
+          "field": "investment_scope",
+          "label": "投资范围（官网自述）",
+          "value": "欧洲创业者",
+          "source_id": "profounders_ticket"
+        },
+        {
+          "field": "initial_investment",
+          "label": "官网列示初始投资规模",
+          "value": "€500k–€3m",
+          "source_id": "profounders_ticket"
+        },
+        {
+          "field": "legal_entity",
+          "label": "官网披露管理公司",
+          "value": "PROfounders Capital Partners Limited",
+          "source_id": "profounders_legal"
+        },
+        {
+          "field": "fca_number",
+          "label": "FCA编号",
+          "value": "997987",
+          "source_id": "profounders_fca"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Pandektes · A轮 · 2026-10-05 · 本轮参投 · €13.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Pandektes官方公告将PROfounders列为其€13.5M Series A参与方。",
           "source_id": "FISRC-0a4dc95c5969e68e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "PROfounders官网",
+          "value": "PROfounders",
+          "url": "https://www.profounderscapital.com/",
+          "source_id": "profounders_legal"
+        }
+      ],
       "sources": [
         {
+          "source_id": "profounders_ticket",
+          "source_url": "https://www.profounderscapital.com/",
+          "source_title": "PROfounders | Home",
+          "source_content_hash": "2d58c889184c9de42f3f45347cda383c0ec81f76841e6ae6cdd78ec312304766",
+          "quote": "We invest an initial €500k to €3m",
+          "quote_hash": "8e07f7826af1f0b874cff2746e4e28476ef75066231b2a8c4b769e81a8ef264e"
+        },
+        {
+          "source_id": "profounders_legal",
+          "source_url": "https://www.profounderscapital.com/",
+          "source_title": "PROfounders | Home",
+          "source_content_hash": "2d58c889184c9de42f3f45347cda383c0ec81f76841e6ae6cdd78ec312304766",
+          "quote": "PROfounders Capital Partners Limited (Company Number 14925987) is registered in England and Wales",
+          "quote_hash": "bb5e27e95abb2fd642a0ed6a6bb953b0b8af23b8e598685780d27b1367763141"
+        },
+        {
+          "source_id": "profounders_fca",
+          "source_url": "https://www.profounderscapital.com/",
+          "source_title": "PROfounders | Home",
+          "source_content_hash": "2d58c889184c9de42f3f45347cda383c0ec81f76841e6ae6cdd78ec312304766",
+          "quote": "FCA number 997987",
+          "quote_hash": "0a0130b8e3a567f9558bfa6436e934e6bfa14af8e72aca9381880486f7740ec7"
+        },
+        {
           "source_id": "FISRC-0a4dc95c5969e68e",
-          "source_url": "https://www.eu-startups.com/2026/10/copenhagens-pandektes-raises-e13-5-million-to-build-the-data-infrastructure-for-ai-powered-legal-research",
-          "source_title": "哥本哈根的 Pandektes 融资 1350 万欧元，用于构建 AI 驱动法律研究的数据基础设施",
-          "source_content_hash": "90e2d1d372d58dce340d332ed715d3a3ac5c006e2e82a9db53cf3da514a170b8",
-          "quote": "The round also saw participation from PROfounders, Scale Capital, and existing investors.",
-          "quote_hash": "a540799a858a6ee8fca0e34f4737529168988f7a99ad8087b9913cbda55a7566"
+          "source_url": "https://pandektes.com/blog/pandektes-13-5m-series-a",
+          "source_title": "Pandektes raises €13.5M in Series A funding — Pandektes",
+          "source_content_hash": "5628906d8dbcb9c316e7e281dfa37a41bbba46843e451556800624407adf86a8",
+          "quote": "Today, we’re announcing a €13.5 million Series A led by Alstin Capital, with participation from PROfounders, Scale Capital",
+          "quote_hash": "3dbd41fdb0a5be99120839a58092374d532e03554e833c36e253710023c83d63"
         }
       ],
       "last_verified_at": "2026-10-06"

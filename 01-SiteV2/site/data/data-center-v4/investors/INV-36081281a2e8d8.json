@@ -124,28 +124,46 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Eric Fourrier 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "仅记录Fleuret 2026-10-06公告所列任职和天使投资身份；未披露个人投资金额。",
+      "summary": "Fleuret官方融资公告将Eric Fourrier列为GitGuardian CEO，并列入该轮网络安全行业天使投资人。",
+      "current_roles": [
+        {
+          "title": "CEO",
+          "organization": "GitGuardian",
+          "source_id": "eric_role"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "本档案只记录公告具名披露的任职和融资活动。",
       "track_record": [
         {
-          "description": "融资来源记录：Fleuret AI · 历史轮次未披露 · 本轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Fleuret公告将Eric Fourrier列为该公司€4M pre-seed轮天使投资人之一；未披露个人投资金额。",
           "source_id": "FISRC-d53e6de7830c8d74"
         }
       ],
-      "contacts": [],
       "sources": [
         {
           "source_id": "FISRC-d53e6de7830c8d74",
           "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
           "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
-          "source_content_hash": "b7f15ba9a80ac1c7",
-          "quote": "Eric FourrierCEO, GitGuardian",
-          "quote_hash": "c7f0e8fbb349e5c0ef99170c005d7e76e9fcacd1c7aefa69d72dd37444e3a738"
+          "source_content_hash": "0ef491fc388899ac0c53e83be9a31c61ef10dddadb754ff579cfdd7f7941f0f9",
+          "quote": "has closed a €4M pre-seed round led by RAISE Ventures, alongside Auriga Cyber Ventures, Wind Capital, Better Angle and leading business angels from the cybersecurity world.",
+          "quote_hash": "23d98227a7268569101571c113168cbd672c226a4c73f5cddea9fef105c8223a"
+        },
+        {
+          "source_id": "eric_role",
+          "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
+          "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
+          "source_content_hash": "0ef491fc388899ac0c53e83be9a31c61ef10dddadb754ff579cfdd7f7941f0f9",
+          "quote": "Eric Fourrier CEO, GitGuardian",
+          "quote_hash": "6a820eda71aed4599fe67972f87bf2db6e0d0f8bd1fd97bdcd6149ce7d643d24"
         }
       ],
-      "last_verified_at": "2026-10-06"
+      "last_verified_at": "2026-10-06",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }
