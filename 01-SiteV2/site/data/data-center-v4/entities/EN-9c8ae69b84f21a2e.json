@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-05",
-    "currentDate": "2026-10-05",
-    "eventCount": 3935,
+    "latestDataDate": "2026-10-06",
+    "currentDate": "2026-10-06",
+    "eventCount": 3952,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -68,6 +68,7 @@
       "EV-4c9c7ab2dded69b3",
       "EV-eb2796fc4bcc5ac0",
       "EV-141a1e90c0780daa",
+      "EV-e6780925e189903c",
       "EV-609da9983f836426",
       "EV-a2f902b9707ffd02",
       "EV-93c2515d50157281",
@@ -148,7 +149,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-01-26",
-    "lastSeen": "2026-10-05",
+    "lastSeen": "2026-10-06",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -158,6 +159,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-e6780925e189903c",
         "EV-141a1e90c0780daa",
         "EV-eb2796fc4bcc5ac0",
         "EV-609da9983f836426",
@@ -239,24 +241,24 @@
     },
     "timeline": [
       {
-        "id": "EV-141a1e90c0780daa",
-        "dataDate": "2026-10-05",
+        "id": "EV-e6780925e189903c",
+        "dataDate": "2026-10-06",
         "date": "2026-09-29",
         "eventType": "funding",
         "eventTypeLabel": "融资",
         "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "又一物理AI芯片独角兽诞生！刚融资10亿_腾讯新闻",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "恩华药业：参股公司好欣晴拟引入2.62亿元增资 加码人工智能心理陪伴机器人",
         "displayTags": [],
         "entityIds": [
-          "EN-9c8ae69b84f21a2e",
-          "EN-244595c58aaec73d"
+          "EN-ba0a8867f5889966",
+          "EN-9c8ae69b84f21a2e"
         ]
       },
       {
         "id": "EV-f4da30e35343eda7",
-        "dataDate": "2026-10-04",
+        "dataDate": "2026-10-06",
         "date": "2026-09-29",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -279,6 +281,22 @@
           "EN-7d3194f79e645c42",
           "EN-9c8ae69b84f21a2e",
           "EN-8d4321d936320802"
+        ]
+      },
+      {
+        "id": "EV-141a1e90c0780daa",
+        "dataDate": "2026-10-05",
+        "date": "2026-09-29",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "又一物理AI芯片独角兽诞生！刚融资10亿_腾讯新闻",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9c8ae69b84f21a2e",
+          "EN-244595c58aaec73d"
         ]
       },
       {
@@ -2832,6 +2850,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-product_form-model",
         "TX-target_user-business_user",
@@ -2843,7 +2862,7 @@
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
         "TX-use_case-sales",
-        "TX-industry-healthcare_life_sciences",
+        "TX-deployment_model-cloud",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-use_case-data_analysis",
@@ -2855,7 +2874,6 @@
         "TX-technology-long_context",
         "TX-technology-computer_use",
         "TX-technology-reasoning",
-        "TX-deployment_model-cloud",
         "TX-technology-image_generation",
         "TX-technology-tool_use",
         "TX-technology-quantization",
@@ -2872,7 +2890,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-05"
+      "lastSeen": "2026-10-06"
     },
     {
       "id": "EN-be1a3c9420d88ea5",
@@ -3832,7 +3850,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-09-16",
-      "lastSeen": "2026-10-05"
+      "lastSeen": "2026-10-06"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -5204,7 +5222,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-10-05"
+      "lastSeen": "2026-10-06"
     },
     {
       "id": "TX-technology-long_context",

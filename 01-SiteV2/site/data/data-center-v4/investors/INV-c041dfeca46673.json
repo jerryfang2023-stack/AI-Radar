@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-05",
-    "currentDate": "2026-10-05",
-    "eventCount": 3935,
+    "latestDataDate": "2026-10-06",
+    "currentDate": "2026-10-06",
+    "eventCount": 3952,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,12 +72,18 @@
     "first_disclosed_at": "2026-10-01",
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
+      "other",
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-24167971104a276a",
+        "canonical_entity_id": "",
+        "name": "Revnu"
+      },
       {
         "entity_id": "EN-2235ec582ab306e6",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-03f259851894d1f9",
+        "funding_insight_id": "FI-d44eb7b782650821",
+        "event_ids": [
+          "EV-6a0883e9d1aa2e69"
+        ],
+        "company_entity_id": "EN-24167971104a276a",
+        "company_canonical_entity_id": "",
+        "company_name": "Revnu",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "Venture Funding",
+        "amount_original": "€2.6 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2600000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "260 万欧元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e10bc08f4f6b317f",
+            "source_url": "https://www.eu-startups.com/2026/10/ai-sales-startup-revnu-raises-e2-6-million-to-build-team-and-accelerate-international-growth/",
+            "source_title": "AI 销售初创公司 Revnu 融资 260 万欧元，用于组建团队并加速国际增长",
+            "source_content_hash": "465cc9845980a16b4be508a8659be0aae636b0c765d785dc2e067c08cfec8283",
+            "quote": "The round was led by NPIF II – PXN Equity Finance, which is managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II.",
+            "quote_hash": "defb8b0d0efaf90c51688a9b3c3d3b9d03f988d9ad1c5253939749b7137e1f02"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e844d08a2011ce0f",
         "funding_insight_id": "FI-e57b9730bfc14b51",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e10bc08f4f6b317f",
+        "source_url": "https://www.eu-startups.com/2026/10/ai-sales-startup-revnu-raises-e2-6-million-to-build-team-and-accelerate-international-growth/",
+        "source_title": "AI 销售初创公司 Revnu 融资 260 万欧元，用于组建团队并加速国际增长",
+        "source_content_hash": "465cc9845980a16b4be508a8659be0aae636b0c765d785dc2e067c08cfec8283",
+        "quote": "The round was led by NPIF II – PXN Equity Finance, which is managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II.",
+        "quote_hash": "defb8b0d0efaf90c51688a9b3c3d3b9d03f988d9ad1c5253939749b7137e1f02"
+      },
+      {
         "source_id": "FISRC-ee1ac79a0f3dddbb",
         "source_url": "https://www.prolificnorth.co.uk/news/21-year-old-founders-choose-manchester-over-silicon-valley-after-raising-3m/",
         "source_title": "21岁创始人融资300万美元后选择曼彻斯特而非硅谷",
@@ -161,6 +215,10 @@
         {
           "description": "PXN Ventures 报道 NPIF II – PXN Equity Finance 领投 Revnu 的 $3m 融资；未披露该基金单独出资额。",
           "source_id": "pxn_revnu"
+        },
+        {
+          "description": "融资来源记录：Revnu · 其他融资 · 2026-10-01 · 本轮领投 · €2.6 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e10bc08f4f6b317f"
         },
         {
           "description": "融资来源记录：Revnu · 种子轮 · 2026-10-01 · 本轮领投 · $3m。这是本库收录的披露案例，不代表完整投资组合。",
@@ -200,6 +258,14 @@
           "source_content_hash": "f94c5a45fb8a321266563c4b63e5a827cf462b5910e87301a1931ff9168d9e9d",
           "quote": "round led by NPIF II – PXN Equity Finance, which is managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II.",
           "quote_hash": "8afd62887081ccd745a8f8e5a0a7c86299ccfc2e612dda5fd92f4329c486722a"
+        },
+        {
+          "source_id": "FISRC-e10bc08f4f6b317f",
+          "source_url": "https://www.eu-startups.com/2026/10/ai-sales-startup-revnu-raises-e2-6-million-to-build-team-and-accelerate-international-growth/",
+          "source_title": "AI 销售初创公司 Revnu 融资 260 万欧元，用于组建团队并加速国际增长",
+          "source_content_hash": "465cc9845980a16b4be508a8659be0aae636b0c765d785dc2e067c08cfec8283",
+          "quote": "The round was led by NPIF II – PXN Equity Finance, which is managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II.",
+          "quote_hash": "defb8b0d0efaf90c51688a9b3c3d3b9d03f988d9ad1c5253939749b7137e1f02"
         },
         {
           "source_id": "FISRC-ee1ac79a0f3dddbb",

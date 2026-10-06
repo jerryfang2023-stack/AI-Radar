@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-05",
-    "currentDate": "2026-10-05",
-    "eventCount": 3935,
+    "latestDataDate": "2026-10-06",
+    "currentDate": "2026-10-06",
+    "eventCount": 3952,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -64,9 +64,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 32,
+    "current_round_count": 33,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 31,
+    "portfolio_company_count": 32,
     "market_regions": [
       "GLOBAL"
     ],
@@ -77,10 +77,11 @@
     "role_counts": {
       "historical_or_ambiguous": 8,
       "lead": 4,
-      "participant": 28
+      "participant": 29
     },
     "round_codes": [
       "multi_round",
+      "other",
       "pre_seed",
       "seed",
       "series_a",
@@ -186,6 +187,11 @@
         "name": "Replit"
       },
       {
+        "entity_id": "EN-24167971104a276a",
+        "canonical_entity_id": "",
+        "name": "Revnu"
+      },
+      {
         "entity_id": "EN-2235ec582ab306e6",
         "canonical_entity_id": "",
         "name": "Revnu"
@@ -284,6 +290,46 @@
             "source_content_hash": "d6cd6d2cc6fbb3d215d709d3b622c3a54794cdc369d5b3d82a9e948c3a1a3ed4",
             "quote": "we've raised $30 million in Series A funding led by Oak HC/FT with participation from YCombinator, Orange Collective, FT Partners, and Heavybit.",
             "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-061dc5a0bf5dde16",
+        "funding_insight_id": "FI-d44eb7b782650821",
+        "event_ids": [
+          "EV-6a0883e9d1aa2e69"
+        ],
+        "company_entity_id": "EN-24167971104a276a",
+        "company_canonical_entity_id": "",
+        "company_name": "Revnu",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "Venture Funding",
+        "amount_original": "€2.6 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2600000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "260 万欧元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e10bc08f4f6b317f",
+            "source_url": "https://www.eu-startups.com/2026/10/ai-sales-startup-revnu-raises-e2-6-million-to-build-team-and-accelerate-international-growth/",
+            "source_title": "AI 销售初创公司 Revnu 融资 260 万欧元，用于组建团队并加速国际增长",
+            "source_content_hash": "465cc9845980a16b4be508a8659be0aae636b0c765d785dc2e067c08cfec8283",
+            "quote": "The company also received backing from Y Combinator.",
+            "quote_hash": "dfda2b2dd8390e4cfa9a340af8fed83a2e794fcc674c969afbb1c1cba789c341"
           }
         ]
       },
@@ -1818,6 +1864,14 @@
         "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
       },
       {
+        "source_id": "FISRC-e10bc08f4f6b317f",
+        "source_url": "https://www.eu-startups.com/2026/10/ai-sales-startup-revnu-raises-e2-6-million-to-build-team-and-accelerate-international-growth/",
+        "source_title": "AI 销售初创公司 Revnu 融资 260 万欧元，用于组建团队并加速国际增长",
+        "source_content_hash": "465cc9845980a16b4be508a8659be0aae636b0c765d785dc2e067c08cfec8283",
+        "quote": "The company also received backing from Y Combinator.",
+        "quote_hash": "dfda2b2dd8390e4cfa9a340af8fed83a2e794fcc674c969afbb1c1cba789c341"
+      },
+      {
         "source_id": "FISRC-ee1ac79a0f3dddbb",
         "source_url": "https://www.prolificnorth.co.uk/news/21-year-old-founders-choose-manchester-over-silicon-valley-after-raising-3m/",
         "source_title": "21岁创始人融资300万美元后选择曼彻斯特而非硅谷",
@@ -2195,12 +2249,12 @@
           "source_id": "FISRC-4799c620c14fef7b"
         },
         {
-          "description": "融资来源记录：Revnu · 种子轮 · 2026-10-01 · 本轮参投 · $3m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ee1ac79a0f3dddbb"
+          "description": "融资来源记录：Revnu · 其他融资 · 2026-10-01 · 本轮参投 · €2.6 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e10bc08f4f6b317f"
         },
         {
-          "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮参投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f80a0b6f2f7f63f8"
+          "description": "融资来源记录：Revnu · 种子轮 · 2026-10-01 · 本轮参投 · $3m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ee1ac79a0f3dddbb"
         }
       ],
       "contacts": [
@@ -2252,20 +2306,20 @@
           "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
         },
         {
+          "source_id": "FISRC-e10bc08f4f6b317f",
+          "source_url": "https://www.eu-startups.com/2026/10/ai-sales-startup-revnu-raises-e2-6-million-to-build-team-and-accelerate-international-growth/",
+          "source_title": "AI 销售初创公司 Revnu 融资 260 万欧元，用于组建团队并加速国际增长",
+          "source_content_hash": "465cc9845980a16b4be508a8659be0aae636b0c765d785dc2e067c08cfec8283",
+          "quote": "The company also received backing from Y Combinator.",
+          "quote_hash": "dfda2b2dd8390e4cfa9a340af8fed83a2e794fcc674c969afbb1c1cba789c341"
+        },
+        {
           "source_id": "FISRC-ee1ac79a0f3dddbb",
           "source_url": "https://www.prolificnorth.co.uk/news/21-year-old-founders-choose-manchester-over-silicon-valley-after-raising-3m/",
           "source_title": "21岁创始人融资300万美元后选择曼彻斯特而非硅谷",
           "source_content_hash": "9e473dfe8da950af126dbbf2c1ba0ddeac7aa62b318ef3582dbc19a49eab246b",
           "quote": "Revnu also received backing from Y Combinator.",
           "quote_hash": "a64a4c7318a4083b60fc808ee59b900963424788f7b70c270b4b2d5bd502e388"
-        },
-        {
-          "source_id": "FISRC-f80a0b6f2f7f63f8",
-          "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
-          "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
-          "source_content_hash": "a7c980dcd5f3e30f",
-          "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
-          "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2276,7 +2330,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[34].role": {
+        "activities[35].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

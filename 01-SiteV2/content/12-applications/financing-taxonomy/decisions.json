@@ -27005,7 +27005,274 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-05T05:25:48.768Z"
+    },
+    "EV-d56d157dad3db17d": {
+      "id": "EV-d56d157dad3db17d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "公司主营高通量AI成像流式细胞仪与全自动细胞培养药筛平台，属生命科学行业AI产品。",
+      "input_hash": "47d5e9e1c4ec1c7d68648550fb59b99cace50d38c2735de6b55a99eceb24a7e6",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5c1a5983b176a99f",
+          "quote": "高通量AI成像流式细胞仪"
+        },
+        {
+          "source_id": "FISRC-5c1a5983b176a99f",
+          "quote": "全自动细胞培养制备及药筛平台"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-06T01:00:41.953Z"
+    },
+    "EV-de8561e258a6f559": {
+      "id": "EV-de8561e258a6f559",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "公司以AI驱动药物发现，自研一体化AI药物设计引擎，属药物研发与生命科学行业AI。",
+      "input_hash": "1ab1144801e18aabe8b34f1692ad237ef573cfe2253bb5e04e7a0806ab657282",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-82c9573ed9c6ba66",
+          "quote": "Isomorphic Labs was founded in 2021, to transform drug discovery with the power of artificial intelligence"
+        },
+        {
+          "source_id": "FISRC-d793ad29f5a6dd3a",
+          "quote": "Isomorphic Labs自研的IsoDDE一体化AI药物设计引擎，彻底突破行业技术瓶颈，跳出单一结构预测局限，构建起集结构预测、分子生成、口袋识别、亲和力定量评估、成药性优化于一体的全链路系统"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-06T01:00:41.953Z"
+    },
+    "EV-a86432262b10332e": {
+      "id": "EV-a86432262b10332e",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-coding",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Namespace 为开发者提供含代码库、测试与依赖的云端开发环境，属 AI 编程与软件研发开发平台。",
+      "input_hash": "ffb6706edd8e2f5a7ed75e8fec4fe26ff66f2a4933bb9a4e6e803bba64f429af",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a1dbde18ac15df21",
+          "quote": "Announcing our $42M Series BThe dev platform for the next 100 billion commits"
+        },
+        {
+          "source_id": "FISRC-d6a5f85ce64cf461",
+          "quote": "A full development environment with your codebase, test suite, databases, and network access."
+        },
+        {
+          "source_id": "FISRC-d6a5f85ce64cf461",
+          "quote": "Namespace gives every agent a full VM with all your dependencies"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-06T01:00:42.957Z"
+    },
+    "EV-f6bbc6faccdbcaac": {
+      "id": "EV-f6bbc6faccdbcaac",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-systems",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "QpiAI 提供垂直整合的 AI 与量子计算系统及企业 AI 平台，按计算系统归类；AI 业务依据来自官网实际产品，不因量子处理器名称推断。",
+      "input_hash": "47254f4b852167015e3c385ed0c0133e5a5c2e7011208d4d82b2998e628dfa9a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a6bcefafa0e61f49",
+          "quote": "Founded in 2019, QpiAI develops vertically integrated quantum systems and AI platforms for areas including drug discovery, materials science, manufacturing, logistics and finance."
+        },
+        {
+          "source_id": "FISRC-c475e2ad3ff0f361",
+          "quote": "Vertically Integrated AI and Quantum Computing"
+        },
+        {
+          "source_id": "FISRC-c475e2ad3ff0f361",
+          "quote": "From predictive analytics, computer vision, LLMs, or AI Agents - our integrated solutions enhance decision-making and automation capabilities across industries."
+        },
+        {
+          "source_id": "FISRC-c475e2ad3ff0f361",
+          "quote": "QpiAI Gen-1 25 Qubits Quantum Computer scalable up to 300 Qubits, built with Superconducting Qubits for enhanced performance - exhibiting long coherence times, low error rates, and reliable scalability."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-06T01:00:42.957Z",
+      "reviewer": "Codex financing evidence review",
+      "reviewed_at": "2026-10-06T01:02:08.891Z"
+    },
+    "EV-af1a6d0b5da2d0e5": {
+      "id": "EV-af1a6d0b5da2d0e5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Fleuret AI 用智能体自动化渗透测试并提供修复支持，属企业网络安全。",
+      "input_hash": "83d0cb971181a150b4b909945f11b9949aa8a7ad20a8077b7738e240d2753f00",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-99179d97c4e96ad7",
+          "quote": "French cybersecurity startup Fleuret AI has raised €4 million in a pre-seed funding round to develop its platform for automating penetration testing using agentic AI."
+        },
+        {
+          "source_id": "FISRC-d53e6de7830c8d74",
+          "quote": "Fleuret automates the pentester's work with two AI agents, Emile and Champollion. They map a company's environment, explore its applications, APIs and infrastructure, then try to exploit the vulnerabilities they find."
+        },
+        {
+          "source_id": "FISRC-c0f73e8fd5d11413",
+          "quote": "The platform also provides proof of compromise for its findings and supports remediation through prioritisation, integrations with engineering tools and automated re-testing."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-06T01:00:42.957Z"
+    },
+    "EV-1faa33bcf69dcf47": {
+      "id": "EV-1faa33bcf69dcf47",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        1
+      ],
+      "rationale": "SSI 唯一产品为安全超级智能系统，属通用基础模型。",
+      "input_hash": "75886fd9d047fbd90394334129b451de7857ad4572d71a490b914006c635b5f5",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-062aa9e732f0aba2",
+          "quote": "Safe superintelligenceThe company’s sole stated product is a safe superintelligence system."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-06T01:00:42.957Z"
+    },
+    "EV-9bcddf454518063f": {
+      "id": "EV-9bcddf454518063f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "legal",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Pandektes 提供法律研究平台与法律数据 API，属法律行业 AI。",
+      "input_hash": "b36e974a8813c65b7c982f64db207358510b85bef859a615c02cba347121568b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0a4dc95c5969e68e",
+          "quote": "Pandektes, a Copenhagen-based LegalTech company specialising in legal research"
+        },
+        {
+          "source_id": "FISRC-0a4dc95c5969e68e",
+          "quote": "has built a platform that continuously collects, structures, and connects legal information spanning legislation, court decisions, administrative rulings, and other legal sources, and combines it with an organisation’s own data"
+        },
+        {
+          "source_id": "FISRC-0388d568b8d8ab15",
+          "quote": "Lawyers get answers with every source linked and open to checking."
+        },
+        {
+          "source_id": "FISRC-0a4dc95c5969e68e",
+          "quote": "It wants to be the foundational data layer for any organisation building legal technology by supplying them with accurate and structured legal data through its API."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-06T01:00:42.957Z"
+    },
+    "EV-6a0883e9d1aa2e69": {
+      "id": "EV-6a0883e9d1aa2e69",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Revnu 用 AI 智能体跨渠道自动外呼获客与预约会议，属企业销售营销。",
+      "input_hash": "841481a327ed37a9b78ca9f4addd809f5c7c9b88e3c9b3b4f5551295e19c0547",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e10bc08f4f6b317f",
+          "quote": "Manchester-based Revnu, an AI platform helping business find customers and build their sales pipeline"
+        },
+        {
+          "source_id": "FISRC-e10bc08f4f6b317f",
+          "quote": "The platform allows businesses to deploy AI agents across channels including LinkedIn, TikTok and Instagram to run campaigns, test advertising, generate leads and book meetings."
+        },
+        {
+          "source_id": "FISRC-e74ee57d6d861a96",
+          "quote": "Revnu’s AI engine automates outbound outreach across LinkedIn, TikTok and Instagram, testing channels, allocating budgets and surfacing high‑performing tactics for small‑to‑mid‑size B2B sellers."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-06T01:00:42.957Z"
     }
   },
-  "generated_at": "2026-10-05T05:25:48.771Z"
+  "generated_at": "2026-10-06T01:00:42.957Z"
 }

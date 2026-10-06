@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-05",
-    "currentDate": "2026-10-05",
-    "eventCount": 3935,
+    "latestDataDate": "2026-10-06",
+    "currentDate": "2026-10-06",
+    "eventCount": 3952,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-06-28",
-    "latest_disclosed_at": "2026-07-31",
+    "latest_disclosed_at": "2026-10-04",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 2,
+      "lead": 3,
       "participant": 3
     },
     "round_codes": [
@@ -87,6 +87,11 @@
         "entity_id": "EN-77a82bb9aafc81d9",
         "canonical_entity_id": "",
         "name": "Ellis AI"
+      },
+      {
+        "entity_id": "EN-37799d436602eaf1",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-37f52323f7361ee9",
@@ -110,6 +115,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a331c62bf0e721d6",
+        "funding_insight_id": "FI-8650a7a5be9be749",
+        "event_ids": [
+          "EV-de8561e258a6f559"
+        ],
+        "company_entity_id": "EN-37799d436602eaf1",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "21亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "21 亿美元"
+        },
+        "announced_at": "2026-10-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-82c9573ed9c6ba66",
+            "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+            "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+            "source_content_hash": "e6bdf28f1eee82d0",
+            "quote": "The financing round is led by Thrive Capital",
+            "quote_hash": "cdabba8b4566aec3cc073ed6f6d1c50abe8fd84672aa16575c2fb769ba74d4be"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ad93a69ca1212371",
         "funding_insight_id": "FI-2b717ea13b12294d",
@@ -361,6 +406,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-82c9573ed9c6ba66",
+        "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+        "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+        "source_content_hash": "e6bdf28f1eee82d0",
+        "quote": "The financing round is led by Thrive Capital",
+        "quote_hash": "cdabba8b4566aec3cc073ed6f6d1c50abe8fd84672aa16575c2fb769ba74d4be"
+      },
+      {
         "source_id": "FISRC-a8e6dd6c34cd416a",
         "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
         "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
@@ -449,6 +502,10 @@
       "experience_summary": "官网公开内容支持其为科技领域投资机构，并提供一般联络渠道；未从第三方报道推断未披露的基金规模、个人履历或回报表现。",
       "track_record": [
         {
+          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮领投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-82c9573ed9c6ba66"
+        },
+        {
           "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a8e6dd6c34cd416a"
         },
@@ -498,6 +555,14 @@
           "quote_hash": "bf8f75c2a6fb056494a728ec92284b1773f900b34abf39f6e24f5a9f07235291"
         },
         {
+          "source_id": "FISRC-82c9573ed9c6ba66",
+          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+          "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+          "source_content_hash": "e6bdf28f1eee82d0",
+          "quote": "The financing round is led by Thrive Capital",
+          "quote_hash": "cdabba8b4566aec3cc073ed6f6d1c50abe8fd84672aa16575c2fb769ba74d4be"
+        },
+        {
           "source_id": "FISRC-a8e6dd6c34cd416a",
           "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
           "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
@@ -512,14 +577,6 @@
           "source_content_hash": "3f607094cf4bb5e846f46ad12d0a7bbf61cf45c0861dc19dc2ff6c5683b3673a",
           "quote": "Thrive Capital led the round, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and the UK Sovereign AI Fund.",
           "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
-        },
-        {
-          "source_id": "FISRC-82c9573ed9c6ba66",
-          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
-          "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
-          "source_content_hash": "e6bdf28f1eee82d0",
-          "quote": "The financing round is led by Thrive Capital, and includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
-          "quote_hash": "2455759df8ea7dcdd2339fad6847c3c236f1f7459ff73c01ba44487775a2b41d"
         }
       ],
       "last_verified_at": "2026-09-26",

@@ -1,0 +1,76 @@
+{
+  "event_id": "EV-f81af6fce431eb06",
+  "company_name": "AI",
+  "status": "blocked",
+  "problems": [
+    "deepseek_json_quality_failed:company_full_name_missing|company_summary_missing|funding_round_missing|products_missing|product_form_id_missing|market_category_id_missing|market_subcategory_id_missing|market_subcategory_parent_mismatch:analysis.market_subcategory_id must use an exact key in {\"data\":\"infrastructure_compute\",\"development_deployment\":\"infrastructure_compute\",\"hardware_computing\":\"infrastructure_compute\",\"observability_evaluation\":\"infrastructure_compute\",\"customer_support\":\"enterprise_applications\",\"cyber_physical_security\":\"enterprise_applications\",\"hr\":\"enterprise_applications\",\"marketing\":\"enterprise_applications\",\"productivity_enterprise_workflows\":\"enterprise_applications\",\"sales\":\"enterprise_applications\",\"software_development_coding\":\"enterprise_applications\",\"financial_services\":\"industry_applications\",\"healthcare_life_sciences\":\"industry_applications\",\"industrials\":\"industry_applications\",\"legal\":\"industry_applications\",\"consumer_retail\":\"industry_applications\"}; the value is its required market_category_id. Do not copy industry_ids such as legal_services or use_case_ids such as legal_compliance into this field.|target_user_ids_empty"
+  ],
+  "queries": [
+    "\"AI\" 2026 funding round investors",
+    "\"AI\" official product customers",
+    "\"AI\" \"why we invested\"",
+    "\"AI\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"AI\" 2026 funding round investors",
+      "status": "completed",
+      "count": 7
+    },
+    {
+      "provider": "tavily",
+      "query": "\"AI\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"AI\" 475亿美元 funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"AI\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.reddit.com/r/customerexperience/comments/1nv18nv/is_ai_actually_improving_customer_service_or_just/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"AI\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.qbe.com/ventures/news/why-we-invested-in-lazarus-ai",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"AI\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"AI\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.openvc.app/investor-lists/ai-investors",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    }
+  ]
+}

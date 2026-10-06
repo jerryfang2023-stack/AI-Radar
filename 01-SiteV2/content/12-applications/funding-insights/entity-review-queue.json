@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 2004,
-    "product_candidates": 1159,
-    "person_candidates": 845,
-    "china_market_candidates": 572,
-    "china_market_product_candidates": 481,
-    "china_market_person_candidates": 91,
+    "candidate_count": 2027,
+    "product_candidates": 1171,
+    "person_candidates": 856,
+    "china_market_candidates": 575,
+    "china_market_product_candidates": 483,
+    "china_market_person_candidates": 92,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -2628,12 +2628,15 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-2235ec582ab306e6"
+        "EN-2235ec582ab306e6",
+        "EN-24167971104a276a"
       ],
       "funding_insight_ids": [
+        "FI-2e018648095f1467",
         "FI-acdf78e6f48d17c3"
       ],
       "source_event_ids": [
+        "EV-6a0883e9d1aa2e69",
         "EV-7c43338b102d18f2"
       ],
       "evidence_refs": [
@@ -2642,6 +2645,12 @@
           "quote": "Childhood friends George Jefferson and Art Freebrey chose Manchester as their base",
           "source_content_hash": "9e473dfe8da950af126dbbf2c1ba0ddeac7aa62b318ef3582dbc19a49eab246b",
           "quote_hash": "e87d9416a55ecd02707eee47ff485fe8cf4bd8803b6014706569ee94068b652f"
+        },
+        {
+          "source_id": "FISRC-e10bc08f4f6b317f",
+          "quote": "Revnu was founded by George Jefferson and Art Freebrey",
+          "source_content_hash": "465cc9845980a16b4be508a8659be0aae636b0c765d785dc2e067c08cfec8283",
+          "quote_hash": "c3dbf47d8f54caa37127ec770bdaac786f55e6f7c108b45878675c94a3f3451e"
         }
       ],
       "market_regions": [
@@ -2832,6 +2841,34 @@
           "quote": "The company was founded in 2024 by Assem Chammah, an aerospace engineer and former McKinsey consultant who serves as CEO, and Shady Al Shoha, an AI engineer.",
           "source_content_hash": "9f6d47f3b99dee7c",
           "quote_hash": "a281bbb6f73c640194cc1865fe5465937166c0be83ba4b7a139ea39f097fc3e0"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-0100db34665ef28b",
+      "candidate_kind": "person",
+      "research_name": "Augustin Ponsin",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-39f25bf2bb4b8866"
+      ],
+      "funding_insight_ids": [
+        "FI-98cbb516bdb7963f"
+      ],
+      "source_event_ids": [
+        "EV-af1a6d0b5da2d0e5"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-99179d97c4e96ad7",
+          "quote": "Founded by Yanis Grigy (CEO) and Augustin Ponsin (CTO)",
+          "source_content_hash": "cb29e794dada4293d8e5aef330152e1509f337d441941c9f725f9aa3a18bd91d",
+          "quote_hash": "e88d1394e8c526e58bf19cc5a5a25e6596f8d23a610a461349f8904894a716c1"
         }
       ],
       "market_regions": [
@@ -3756,6 +3793,40 @@
           "quote": "The startup was founded in 2017 by Mike Pappas and Carter Huffman, who met as MIT physics undergrads.",
           "source_content_hash": "9e972b90fef24b98d2f60cb378f78e88317d2c65c1d57d82bb346680ac8c97a2",
           "quote_hash": "3acb5a4836ab9b612fb0bbc858e3ed7017d002f21219f522d25e2371417c5f3f"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-adad0eb9b834b2bf",
+      "candidate_kind": "person",
+      "research_name": "Casper Laursen",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-287820554c1c51b1"
+      ],
+      "funding_insight_ids": [
+        "FI-6bff5df8e6819589"
+      ],
+      "source_event_ids": [
+        "EV-9bcddf454518063f"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0a4dc95c5969e68e",
+          "quote": "Founded in 2022 by Casper Laursen and Søren Brokær",
+          "source_content_hash": "90e2d1d372d58dce340d332ed715d3a3ac5c006e2e82a9db53cf3da514a170b8",
+          "quote_hash": "602b56d28d62fc8b900c14deebb7ddada6951fdffcc7a9c9f22a49ecca8276a9"
+        },
+        {
+          "source_id": "FISRC-e1cecf71dc059696",
+          "quote": "says our CEO, Casper Laursen",
+          "source_content_hash": "b61f8f199371b80e",
+          "quote_hash": "72a6a7ee534ae4331841be884f7181329c15d1185e0802f094a9a907e10a2554"
         }
       ],
       "market_regions": [
@@ -4922,6 +4993,62 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-3c9530a63aeaac48",
+      "candidate_kind": "person",
+      "research_name": "Daniel Gross",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-63e533f77a26a8d0"
+      ],
+      "funding_insight_ids": [
+        "FI-8ac982cdba85b47c"
+      ],
+      "source_event_ids": [
+        "EV-1faa33bcf69dcf47"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-88c03c9b0d868b42",
+          "quote": "Safe Superintelligence Inc. (SSI) is an American artificial intelligence company founded by Ilya Sutskever, the former chief scientist of OpenAI; Daniel Gross, former head of Apple’s AI efforts; and Daniel Levy, an investor and former AI researcher at OpenAI.",
+          "source_content_hash": "772ea21cf9535d2d",
+          "quote_hash": "ac4ab2686da8bd48e904b41123217f902fc0e3d6c3a32ecbecee6f6136cbca14"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-03207d289a5fd600",
+      "candidate_kind": "person",
+      "research_name": "Daniel Levy",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-63e533f77a26a8d0"
+      ],
+      "funding_insight_ids": [
+        "FI-8ac982cdba85b47c"
+      ],
+      "source_event_ids": [
+        "EV-1faa33bcf69dcf47"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-88c03c9b0d868b42",
+          "quote": "Safe Superintelligence Inc. (SSI) is an American artificial intelligence company founded by Ilya Sutskever, the former chief scientist of OpenAI; Daniel Gross, former head of Apple’s AI efforts; and Daniel Levy, an investor and former AI researcher at OpenAI.",
+          "source_content_hash": "772ea21cf9535d2d",
+          "quote_hash": "ac4ab2686da8bd48e904b41123217f902fc0e3d6c3a32ecbecee6f6136cbca14"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-a51cd50936528739",
       "candidate_kind": "person",
       "research_name": "Daniel Palmer",
@@ -5460,13 +5587,16 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
+        "EN-37799d436602eaf1",
         "EN-37f52323f7361ee9"
       ],
       "funding_insight_ids": [
+        "FI-6720bf8ce008ab36",
         "FI-ebb3991cffceeee7"
       ],
       "source_event_ids": [
-        "EV-347194d4f6eb2a63"
+        "EV-347194d4f6eb2a63",
+        "EV-de8561e258a6f559"
       ],
       "evidence_refs": [
         {
@@ -5480,6 +5610,12 @@
           "quote": "Isomorphic Labs is led by CEO Sir Demis Hassabis and President Max Jaderberg.",
           "source_content_hash": "e6bdf28f1eee82d0",
           "quote_hash": "df2271f424011dc978d76f0c32b1adca2cfbccfdd7886f92a81877e438e3d332"
+        },
+        {
+          "source_id": "FISRC-d793ad29f5a6dd3a",
+          "quote": "Demis Hassabis是Isomorphic Labs创始人兼首席执行官",
+          "source_content_hash": "717d3006d5ec7f5050c3d0527a1b81a3948670fad8dda69c00062c8d687a1bfe",
+          "quote_hash": "8ce7f97baabc5d612039ec019fd42e05c069ba1826bb66f38ce7a2175c91a440"
         }
       ],
       "market_regions": [
@@ -7746,12 +7882,15 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-2235ec582ab306e6"
+        "EN-2235ec582ab306e6",
+        "EN-24167971104a276a"
       ],
       "funding_insight_ids": [
+        "FI-2e018648095f1467",
         "FI-acdf78e6f48d17c3"
       ],
       "source_event_ids": [
+        "EV-6a0883e9d1aa2e69",
         "EV-7c43338b102d18f2"
       ],
       "evidence_refs": [
@@ -7760,6 +7899,12 @@
           "quote": "Childhood friends George Jefferson and Art Freebrey chose Manchester as their base",
           "source_content_hash": "9e473dfe8da950af126dbbf2c1ba0ddeac7aa62b318ef3582dbc19a49eab246b",
           "quote_hash": "e87d9416a55ecd02707eee47ff485fe8cf4bd8803b6014706569ee94068b652f"
+        },
+        {
+          "source_id": "FISRC-e10bc08f4f6b317f",
+          "quote": "George Jefferson, CEO of Revnu, says:",
+          "source_content_hash": "465cc9845980a16b4be508a8659be0aae636b0c765d785dc2e067c08cfec8283",
+          "quote_hash": "4fc8c347adf94a18ed30a068491989202c0eb22d57c9cb62bc32aa485ec8d585"
         }
       ],
       "market_regions": [
@@ -8390,6 +8535,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-459fb5a02b06af49",
+      "candidate_kind": "person",
+      "research_name": "Hugo Santos",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9359f3bb2efa7aab"
+      ],
+      "funding_insight_ids": [
+        "FI-40adbb22032edee0"
+      ],
+      "source_event_ids": [
+        "EV-a86432262b10332e"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dd254a37ffe8d2d0",
+          "quote": "Founded in 2022 by former Google principal engineer Hugo Santos, Namespace is aiming to be the infrastructure layer for AI coding…",
+          "source_content_hash": "2ead490262be955ee4b48ac87d752eb53e9556664f907d87b145f77c67ab2799",
+          "quote_hash": "e695bd90adbc7ea178f48d756ffcde1ec68e8a2a5679219c97da073560548f95"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-18df74022ca13769",
       "candidate_kind": "person",
       "research_name": "Ian Anderson",
@@ -8646,6 +8819,34 @@
           "quote": "Founded in San Francisco in 2025 by Ilan Zerbib",
           "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
           "quote_hash": "20eb9de78f4c4a8750ff531d2082ce230d2ad9d8357c92f80b6a6bcf622a5cdf"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-c636aca1926bfde4",
+      "candidate_kind": "person",
+      "research_name": "Ilya Sutskever",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-63e533f77a26a8d0"
+      ],
+      "funding_insight_ids": [
+        "FI-8ac982cdba85b47c"
+      ],
+      "source_event_ids": [
+        "EV-1faa33bcf69dcf47"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-88c03c9b0d868b42",
+          "quote": "Safe Superintelligence Inc. (SSI) is an American artificial intelligence company founded by Ilya Sutskever, the former chief scientist of OpenAI; Daniel Gross, former head of Apple’s AI efforts; and Daniel Levy, an investor and former AI researcher at OpenAI.",
+          "source_content_hash": "772ea21cf9535d2d",
+          "quote_hash": "ac4ab2686da8bd48e904b41123217f902fc0e3d6c3a32ecbecee6f6136cbca14"
         }
       ],
       "market_regions": [
@@ -12432,6 +12633,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-3da665a4e587cf4e",
+      "candidate_kind": "person",
+      "research_name": "Max Jaderberg",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-37799d436602eaf1"
+      ],
+      "funding_insight_ids": [
+        "FI-6720bf8ce008ab36"
+      ],
+      "source_event_ids": [
+        "EV-de8561e258a6f559"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d793ad29f5a6dd3a",
+          "quote": "公司总裁Max Jaderberg博士此前主导了AlphaFold 3等药物设计领域突破性AI模型的研究、开发与落地应用",
+          "source_content_hash": "717d3006d5ec7f5050c3d0527a1b81a3948670fad8dda69c00062c8d687a1bfe",
+          "quote_hash": "bdcc816ca9267081d84196e5cb937146393f0ff6d125ffaa19a50ba5632dcf8d"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-f4858d06262f9f6b",
       "candidate_kind": "person",
       "research_name": "Max Spero",
@@ -13503,6 +13732,40 @@
           "quote": "Sparkli was founded in 2025 by Lax Poojary, Lucie Marchand, and Mynseok Kang.",
           "source_content_hash": "c24e7de0cd5898cdfbbf52a86093388ddec080752cf00de1d1c8ad3a3b68454b",
           "quote_hash": "340de978eb01d16c986975e794d1704c7200b12ce0d489cf59484d6d2e514fbd"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-0bdda91d54c85211",
+      "candidate_kind": "person",
+      "research_name": "Nagendra Nagaraja",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-944c59663f22073c"
+      ],
+      "funding_insight_ids": [
+        "FI-02f1bfdceeb7079e"
+      ],
+      "source_event_ids": [
+        "EV-f6bbc6faccdbcaac"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a6bcefafa0e61f49",
+          "quote": "Founder and CEO Nagendra Nagaraja has said that",
+          "source_content_hash": "4b5d8ddd72162c79742ecacaef800b1c506f7c576282bdada59b31da6816dd8e",
+          "quote_hash": "2f70e99e7dee5f472620c1e3b23ebf7534e61c339b576358a6c7bb38c5d34f15"
+        },
+        {
+          "source_id": "FISRC-67e95904957be6ad",
+          "quote": "The founders of QpiAI is Nagendra Nagaraja. Nagendra Nagaraja is the CEO of QpiAI.",
+          "source_content_hash": "126fcce2bca86d67",
+          "quote_hash": "0c8c49c1622f50d67d0350224609e01581c1982fe1c4d5dfcb3fe490ee8fe3d0"
         }
       ],
       "market_regions": [
@@ -18782,6 +19045,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-987fc5cb85190285",
+      "candidate_kind": "person",
+      "research_name": "Søren Brokær",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-287820554c1c51b1"
+      ],
+      "funding_insight_ids": [
+        "FI-6bff5df8e6819589"
+      ],
+      "source_event_ids": [
+        "EV-9bcddf454518063f"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0a4dc95c5969e68e",
+          "quote": "Founded in 2022 by Casper Laursen and Søren Brokær",
+          "source_content_hash": "90e2d1d372d58dce340d332ed715d3a3ac5c006e2e82a9db53cf3da514a170b8",
+          "quote_hash": "602b56d28d62fc8b900c14deebb7ddada6951fdffcc7a9c9f22a49ecca8276a9"
+        },
+        {
+          "source_id": "FISRC-e1cecf71dc059696",
+          "quote": "says our Co-founder, Søren Brokær",
+          "source_content_hash": "b61f8f199371b80e",
+          "quote_hash": "cb5c500fccb054e5317919cbd7665b7b6d6b5a8b7495f31907476635cca90d41"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-ec516037febf6fd3",
       "candidate_kind": "person",
       "research_name": "Sourabh Agarwal",
@@ -21584,6 +21881,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-9924621ba8f3d398",
+      "candidate_kind": "person",
+      "research_name": "Yanis Grigy",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-39f25bf2bb4b8866"
+      ],
+      "funding_insight_ids": [
+        "FI-98cbb516bdb7963f"
+      ],
+      "source_event_ids": [
+        "EV-af1a6d0b5da2d0e5"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-99179d97c4e96ad7",
+          "quote": "Founded by Yanis Grigy (CEO) and Augustin Ponsin (CTO)",
+          "source_content_hash": "cb29e794dada4293d8e5aef330152e1509f337d441941c9f725f9aa3a18bd91d",
+          "quote_hash": "e88d1394e8c526e58bf19cc5a5a25e6596f8d23a610a461349f8904894a716c1"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-7b7bad48df9385e8",
       "candidate_kind": "person",
       "research_name": "Yann LeCun",
@@ -23264,6 +23589,34 @@
           "quote": "张小波，北京松应科技有限公司联合创始人&CPO。历任华为私有云架构师团队主管，华为欧洲云产品总监",
           "source_content_hash": "f48624d7d77ac534",
           "quote_hash": "8cd51da29236b590d14a0b2414ae4b9986cf566173ab091e1cf33b4923f12bb5"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-986f5c8714de9dbb",
+      "candidate_kind": "person",
+      "research_name": "张峰",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-f0802044f16887a3"
+      ],
+      "funding_insight_ids": [
+        "FI-9715db3e397125ce"
+      ],
+      "source_event_ids": [
+        "EV-d56d157dad3db17d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-472ab5c45f45c0ed",
+          "quote": "利德健康创始人、CEO张峰表示",
+          "source_content_hash": "98dc7f8a329f2183",
+          "quote_hash": "92dda0502482caf08cdda59ff3adeb56c4a94c03f04b42bc6bcea2108cfc4ce6"
         }
       ],
       "market_regions": [
@@ -34469,6 +34822,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-fa5f9153ef8d0889",
+      "candidate_kind": "product",
+      "research_name": "Devbox",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9359f3bb2efa7aab"
+      ],
+      "funding_insight_ids": [
+        "FI-40adbb22032edee0"
+      ],
+      "source_event_ids": [
+        "EV-a86432262b10332e"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d6a5f85ce64cf461",
+          "quote": "A full development environment with your codebase, test suite, databases, and network access.",
+          "source_content_hash": "d14c4b00555d4bce",
+          "quote_hash": "4498f0862ec8ce3a99d3ce0bbda0acc2071a596c2d2fcca5f1281ec4cdd3fbfe"
+        },
+        {
+          "source_id": "FISRC-d6a5f85ce64cf461",
+          "quote": "Namespace gives every agent a full VM with all your dependencies",
+          "source_content_hash": "d14c4b00555d4bce",
+          "quote_hash": "a209ff234a5715dfcdbd69b1b8b1c89d763a9fffedea559f6b77e89799ec2492"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-25d250ab39176052",
       "candidate_kind": "product",
       "research_name": "Developer Platform",
@@ -35768,6 +36155,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-b8b27b97ee23c5e8",
+      "candidate_kind": "product",
+      "research_name": "Enterprise Gen-AI Solutions",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-944c59663f22073c"
+      ],
+      "funding_insight_ids": [
+        "FI-02f1bfdceeb7079e"
+      ],
+      "source_event_ids": [
+        "EV-f6bbc6faccdbcaac"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c475e2ad3ff0f361",
+          "quote": "From predictive analytics, computer vision, LLMs, or AI Agents - our integrated solutions enhance decision-making and automation capabilities across industries.",
+          "source_content_hash": "12ccc8d8453e6986",
+          "quote_hash": "d0e35575a6861c6959ec25e0338143bba9a691d728b1cd75b5ef38a770b731e1"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-8db62420949c62f8",
       "candidate_kind": "product",
       "research_name": "Enterprise Hub",
@@ -36730,6 +37145,40 @@
           "quote": "支撑他们核心竞争力是 Fit-OS操作系统，特别是其中的“Agentic Memory”(智能体记忆)。",
           "source_content_hash": "bd700f84d18f49ef",
           "quote_hash": "78443e81a2dbc0d41dad9e1e8f0fb3cfea0944c13e5fd1b2dc3ad238f0324a84"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-d797be9a6375870a",
+      "candidate_kind": "product",
+      "research_name": "Fleuret 智能体渗透测试平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-39f25bf2bb4b8866"
+      ],
+      "funding_insight_ids": [
+        "FI-98cbb516bdb7963f"
+      ],
+      "source_event_ids": [
+        "EV-af1a6d0b5da2d0e5"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d53e6de7830c8d74",
+          "quote": "Fleuret automates the pentester's work with two AI agents, Emile and Champollion. They map a company's environment, explore its applications, APIs and infrastructure, then try to exploit the vulnerabilities they find.",
+          "source_content_hash": "b7f15ba9a80ac1c7",
+          "quote_hash": "63ebdf2508f318aecded120f4344f8e0699e58457ab42083af4d9b34a7d720c2"
+        },
+        {
+          "source_id": "FISRC-c0f73e8fd5d11413",
+          "quote": "The platform also provides proof of compromise for its findings and supports remediation through prioritisation, integrations with engineering tools and automated re-testing.",
+          "source_content_hash": "13c60c04daee1fcd",
+          "quote_hash": "7105eb37048a9c856164ccb58c6afbac3355134c776f3635c5e7508dcfe180e5"
         }
       ],
       "market_regions": [
@@ -39673,13 +40122,16 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
+        "EN-37799d436602eaf1",
         "EN-37f52323f7361ee9"
       ],
       "funding_insight_ids": [
+        "FI-6720bf8ce008ab36",
         "FI-ebb3991cffceeee7"
       ],
       "source_event_ids": [
-        "EV-347194d4f6eb2a63"
+        "EV-347194d4f6eb2a63",
+        "EV-de8561e258a6f559"
       ],
       "evidence_refs": [
         {
@@ -39693,6 +40145,12 @@
           "quote": "Isomorphic Labs has developed a number of proprietary breakthrough AI models that together form its unified AI drug design engine that works across multiple therapeutic areas and drug modalities.",
           "source_content_hash": "e6bdf28f1eee82d0",
           "quote_hash": "2e04755a39b2a51367a46fbbd6304033275223bbc1c38591c3b6cb84743d0412"
+        },
+        {
+          "source_id": "FISRC-d793ad29f5a6dd3a",
+          "quote": "Isomorphic Labs自研的IsoDDE一体化AI药物设计引擎，彻底突破行业技术瓶颈，跳出单一结构预测局限，构建起集结构预测、分子生成、口袋识别、亲和力定量评估、成药性优化于一体的全链路系统",
+          "source_content_hash": "717d3006d5ec7f5050c3d0527a1b81a3948670fad8dda69c00062c8d687a1bfe",
+          "quote_hash": "b24ccb8caa7c30e8432461b8d4f18b400129022d3757d614d7e118525ff38f7b"
         }
       ],
       "market_regions": [
@@ -45832,6 +46290,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-f7b4fcb88dcda7a1",
+      "candidate_kind": "product",
+      "research_name": "Pandektes法律研究平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-287820554c1c51b1"
+      ],
+      "funding_insight_ids": [
+        "FI-6bff5df8e6819589"
+      ],
+      "source_event_ids": [
+        "EV-9bcddf454518063f"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0a4dc95c5969e68e",
+          "quote": "has built a platform that continuously collects, structures, and connects legal information spanning legislation, court decisions, administrative rulings, and other legal sources, and combines it with an organisation’s own data",
+          "source_content_hash": "90e2d1d372d58dce340d332ed715d3a3ac5c006e2e82a9db53cf3da514a170b8",
+          "quote_hash": "e9cf9ecd025dd900381a443bc8cf998450b2fafb237ec09b46b43c54989f5145"
+        },
+        {
+          "source_id": "FISRC-0388d568b8d8ab15",
+          "quote": "Lawyers get answers with every source linked and open to checking.",
+          "source_content_hash": "9c83bd118706a942",
+          "quote_hash": "198994ceb4df4bec257cb3cf18f44be45464d40d90fe4f2bf31bda6b1bb37c95"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-7d0d6713e018b64b",
       "candidate_kind": "product",
       "research_name": "Pangram 4",
@@ -47045,6 +47537,102 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-0ddc660679d8ed31",
+      "candidate_kind": "product",
+      "research_name": "QpiAI Kaveri 64-qubit processor",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-944c59663f22073c"
+      ],
+      "funding_insight_ids": [
+        "FI-02f1bfdceeb7079e"
+      ],
+      "source_event_ids": [
+        "EV-f6bbc6faccdbcaac"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a6bcefafa0e61f49",
+          "quote": "subsequently unveiled a 64-qubit processor",
+          "source_content_hash": "4b5d8ddd72162c79742ecacaef800b1c506f7c576282bdada59b31da6816dd8e",
+          "quote_hash": "893b373419445042dcabae9f65e49894c2f44e0e2a6b95e0c38316344c0f8dfb"
+        },
+        {
+          "source_id": "FISRC-c475e2ad3ff0f361",
+          "quote": "QpiAI Kaveri is a 64-qubit superconducting quantum processor chip. It utilizes QpiAI's proprietary superconducting flip-chip integrated technology for scalable quantum processors, featuring wafer-scale fabrication for high qubit density, flip-chip architecture with low-loss interconnects, and separation of qubit and interconnect layers for optimized performance.",
+          "source_content_hash": "12ccc8d8453e6986",
+          "quote_hash": "07e7ff22cf06ba654803c5e1f7e823aae0597c1c1a297e9ae5daa63b59a79679"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-dbc8aea2a685e672",
+      "candidate_kind": "product",
+      "research_name": "QpiAI Quantum Developer's Platform",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-944c59663f22073c"
+      ],
+      "funding_insight_ids": [
+        "FI-02f1bfdceeb7079e"
+      ],
+      "source_event_ids": [
+        "EV-f6bbc6faccdbcaac"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c475e2ad3ff0f361",
+          "quote": "Our end-to-end Quantum Developer's Platform combines access to QpiAI-Gen-1 Quantum Computer with Cloud IDE, quantum development SDK, and application-oriented QC workflows for enterprise use cases.",
+          "source_content_hash": "12ccc8d8453e6986",
+          "quote_hash": "a4590b1ded62bddd560f032fbb232fe5d6ccaa261cfd7e5511f1ccad12160d95"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-05b28a32c474aaed",
+      "candidate_kind": "product",
+      "research_name": "QpiAI-Indus 25-qubit system",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-944c59663f22073c"
+      ],
+      "funding_insight_ids": [
+        "FI-02f1bfdceeb7079e"
+      ],
+      "source_event_ids": [
+        "EV-f6bbc6faccdbcaac"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a6bcefafa0e61f49",
+          "quote": "It launched its 25-qubit QpiAI-Indus system in 2025",
+          "source_content_hash": "4b5d8ddd72162c79742ecacaef800b1c506f7c576282bdada59b31da6816dd8e",
+          "quote_hash": "39f8f722beaadbe3333cc2dd7203a29f746604b20b40db2fe16f9ea78138b0e2"
+        },
+        {
+          "source_id": "FISRC-c475e2ad3ff0f361",
+          "quote": "QpiAI Gen-1 25 Qubits Quantum Computer scalable up to 300 Qubits, built with Superconducting Qubits for enhanced performance - exhibiting long coherence times, low error rates, and reliable scalability.",
+          "source_content_hash": "12ccc8d8453e6986",
+          "quote_hash": "655d0f7f73b216a37ce02159f7b7f1c0597b935f0949dcf390bbf876e684702b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-42e896f3bef3bcf5",
       "candidate_kind": "product",
       "research_name": "Quadric软件工具链",
@@ -48087,6 +48675,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-96a13ad2eb4d4a9f",
+      "candidate_kind": "product",
+      "research_name": "Revnu AI 销售平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-24167971104a276a"
+      ],
+      "funding_insight_ids": [
+        "FI-2e018648095f1467"
+      ],
+      "source_event_ids": [
+        "EV-6a0883e9d1aa2e69"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e10bc08f4f6b317f",
+          "quote": "The platform allows businesses to deploy AI agents across channels including LinkedIn, TikTok and Instagram to run campaigns, test advertising, generate leads and book meetings.",
+          "source_content_hash": "465cc9845980a16b4be508a8659be0aae636b0c765d785dc2e067c08cfec8283",
+          "quote_hash": "830455d8734aa16253ddaa65449cb3e749aeb6c47653b37ded3b8ae19d732d55"
+        },
+        {
+          "source_id": "FISRC-e74ee57d6d861a96",
+          "quote": "Revnu’s AI engine automates outbound outreach across LinkedIn, TikTok and Instagram, testing channels, allocating budgets and surfacing high‑performing tactics for small‑to‑mid‑size B2B sellers.",
+          "source_content_hash": "d0d4ad5633652e8f",
+          "quote_hash": "1b9a8c35e649b9feefd4157b1f359d7426b952b0de6d5393c482d79fc777b60b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-34d6fe2f8f9d3154",
       "candidate_kind": "product",
       "research_name": "RhinoAI智能研发平台",
@@ -48641,6 +49263,34 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-ad6f5b11e1265891",
+      "candidate_kind": "product",
+      "research_name": "Safe Superintelligence",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-63e533f77a26a8d0"
+      ],
+      "funding_insight_ids": [
+        "FI-8ac982cdba85b47c"
+      ],
+      "source_event_ids": [
+        "EV-1faa33bcf69dcf47"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-062aa9e732f0aba2",
+          "quote": "Safe superintelligenceThe company’s sole stated product is a safe superintelligence system.",
+          "source_content_hash": "4605e9c942d1f7c4",
+          "quote_hash": "93614ae63c5e32ae54dccb784c4b6e804324eec8b4913617fe9d324ec382e9ea"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-b112213fa75f6aa8",
@@ -55776,6 +56426,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-20ffe64d530d6e81",
+      "candidate_kind": "product",
+      "research_name": "全自动细胞培养制备及药筛平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-f0802044f16887a3"
+      ],
+      "funding_insight_ids": [
+        "FI-9715db3e397125ce"
+      ],
+      "source_event_ids": [
+        "EV-d56d157dad3db17d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5c1a5983b176a99f",
+          "quote": "全自动细胞培养制备及药筛平台",
+          "source_content_hash": "e8f87adf62644857",
+          "quote_hash": "ceb648f7fbb1fd192052710720289e53c74792ed1a7cfed1a0d8a02062ee5f77"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-2b4dcebbde12213a",
       "candidate_kind": "product",
       "research_name": "八卦炉（Bagualu）高性能大模型训练系统",
@@ -59678,6 +60356,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-b6b64c61229b41d6",
+      "candidate_kind": "product",
+      "research_name": "法律数据API",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-287820554c1c51b1"
+      ],
+      "funding_insight_ids": [
+        "FI-6bff5df8e6819589"
+      ],
+      "source_event_ids": [
+        "EV-9bcddf454518063f"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0a4dc95c5969e68e",
+          "quote": "It wants to be the foundational data layer for any organisation building legal technology by supplying them with accurate and structured legal data through its API.",
+          "source_content_hash": "90e2d1d372d58dce340d332ed715d3a3ac5c006e2e82a9db53cf3da514a170b8",
+          "quote_hash": "d4e1623c628d2dca11ed78afdd6c19b85ae5315d0964c59238669c80cd9fb0e5"
+        },
+        {
+          "source_id": "FISRC-0388d568b8d8ab15",
+          "quote": "more than 100 organisations have joined the waitlist for its API before it has even been announced",
+          "source_content_hash": "9c83bd118706a942",
+          "quote_hash": "15a66999fb48eacb03c9d7c6496b4c1e786607d9d077762137b027ddb7129f48"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-468971b973f65085",
       "candidate_kind": "product",
       "research_name": "洞察、舆情与运营三大智能体产品矩阵",
@@ -62526,6 +63238,34 @@
           "quote": "据其介绍， 三色光视触觉传感器已实现万片级量产。",
           "source_content_hash": "32bc3a9c428f8f13",
           "quote_hash": "e0f6330cc98e19d7fed631859f6925ec8c84416ca99405b191ecad51564b648b"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-e2666b3cb2f4a963",
+      "candidate_kind": "product",
+      "research_name": "高通量AI成像流式细胞仪",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-f0802044f16887a3"
+      ],
+      "funding_insight_ids": [
+        "FI-9715db3e397125ce"
+      ],
+      "source_event_ids": [
+        "EV-d56d157dad3db17d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5c1a5983b176a99f",
+          "quote": "高通量AI成像流式细胞仪",
+          "source_content_hash": "e8f87adf62644857",
+          "quote_hash": "754dff5b8e6b6056a0e7e383be8b0488821388bb3f2a08c7885122b9422139f0"
         }
       ],
       "market_regions": [

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-05",
-    "currentDate": "2026-10-05",
-    "eventCount": 3935,
+    "latestDataDate": "2026-10-06",
+    "currentDate": "2026-10-06",
+    "eventCount": 3952,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 8,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2023-04-27",
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "participant": 8
     },
     "round_codes": [
@@ -406,6 +406,38 @@
         ]
       },
       {
+        "activity_id": "IA-4f6ecd07632dcb27",
+        "funding_insight_id": "FI-2134347a27ff584f",
+        "event_ids": [
+          "EV-1faa33bcf69dcf47"
+        ],
+        "company_entity_id": "EN-63e533f77a26a8d0",
+        "company_canonical_entity_id": "",
+        "company_name": "Safe Superintelligence Inc.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2024-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Seed / Series A 参投（2024年9月）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-062aa9e732f0aba2",
+            "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
+            "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
+            "source_content_hash": "4605e9c942d1f7c4",
+            "quote": "Institutional: Andreessen Horowitz, Sequoia Capital, DST Global, SV Angel, NFDG+5 more",
+            "quote_hash": "96e8cf430081b04c3137a111411f52f89f7c7241db0673206bfbdb23f7ed6027"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-327b60ac3e47a4f2",
         "funding_insight_id": "FI-c210fc9ab5481f28",
         "event_ids": [
@@ -568,6 +600,14 @@
         "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
       },
       {
+        "source_id": "FISRC-062aa9e732f0aba2",
+        "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
+        "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
+        "source_content_hash": "4605e9c942d1f7c4",
+        "quote": "Institutional: Andreessen Horowitz, Sequoia Capital, DST Global, SV Angel, NFDG+5 more",
+        "quote_hash": "96e8cf430081b04c3137a111411f52f89f7c7241db0673206bfbdb23f7ed6027"
+      },
+      {
         "source_id": "FISRC-9b0f32fe01d091cc",
         "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
         "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
@@ -707,6 +747,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[7].role": {
+          "text": "Seed / Series A 参投（2024年9月）",
+          "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-06T00:56:36.371Z",
+          "status": "translated"
+        },
         "public_profile.contacts[0].label": {
           "text": "SV Angel 官方网站",
           "source_hash": "2b04c2838c5a6b43f31944122ea589452ada733ddc9ee5efe5d47ef3bddef63c",

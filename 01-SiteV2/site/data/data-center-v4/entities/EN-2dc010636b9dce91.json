@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-05",
-    "currentDate": "2026-10-05",
-    "eventCount": 3935,
+    "latestDataDate": "2026-10-06",
+    "currentDate": "2026-10-06",
+    "eventCount": 3952,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-1faa33bcf69dcf47",
       "EV-50b5c4f93ead145d",
       "EV-0d4e656aa51f9a46",
       "EV-78a11d309c3d4e97",
@@ -100,12 +101,13 @@
       "EN-a42d5d95234db6c4"
     ],
     "firstSeen": "2026-02-10",
-    "lastSeen": "2026-10-02",
+    "lastSeen": "2026-10-06",
     "relationIds": [
       "REL2-61089e71e75b311e"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-1faa33bcf69dcf47",
         "EV-50b5c4f93ead145d",
         "EV-d85ea5150230ee56",
         "EV-8a8b873af9de5127",
@@ -138,6 +140,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-1faa33bcf69dcf47",
+        "dataDate": "2026-10-06",
+        "date": "2026-10-05",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Crunchbase 数据：随着全球 AI 竞赛升温，2026 年 Q3 十亿美元级融资轮数量创下纪录",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2dc010636b9dce91",
+          "EN-63e533f77a26a8d0"
+        ]
+      },
       {
         "id": "EV-50b5c4f93ead145d",
         "dataDate": "2026-10-02",
@@ -2642,7 +2660,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-10-05"
+      "lastSeen": "2026-10-06"
     },
     {
       "id": "TX-target_user-developer",
@@ -3160,7 +3178,7 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-10-05"
+      "lastSeen": "2026-10-06"
     },
     {
       "id": "TX-technology-agentic_execution",

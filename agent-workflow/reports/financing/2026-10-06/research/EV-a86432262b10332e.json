@@ -1,0 +1,553 @@
+{
+  "event_id": "EV-a86432262b10332e",
+  "company_name": "Namespace",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-40adbb22032edee0",
+    "triggered_by_event_id": "EV-a86432262b10332e",
+    "as_of_date": "2026-10-06",
+    "company": {
+      "entity_id": "EN-9359f3bb2efa7aab",
+      "name": "Namespace",
+      "full_name": "Namespace",
+      "website": "https://namespace.so/",
+      "summary": "Namespace 是一家总部位于苏黎世的开发者基础设施初创公司，成立于 2022 年，为软件团队提供加速构建与测试工作流的平台，目标是成为 AI 编程的基础设施层。",
+      "headquarters": "Zurich",
+      "founders": [
+        {
+          "name": "Hugo Santos",
+          "role": "创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dd254a37ffe8d2d0",
+              "quote": "Founded in 2022 by former Google principal engineer Hugo Santos, Namespace is aiming to be the infrastructure layer for AI coding…",
+              "source_content_hash": "2ead490262be955ee4b48ac87d752eb53e9556664f907d87b145f77c67ab2799",
+              "quote_hash": "e695bd90adbc7ea178f48d756ffcde1ec68e8a2a5679219c97da073560548f95"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dd254a37ffe8d2d0",
+          "quote": "A Zurich-founded developer infrastructure startup has raised $42m in a Series B financing round, just seven months after completing its Series A.",
+          "source_content_hash": "2ead490262be955ee4b48ac87d752eb53e9556664f907d87b145f77c67ab2799",
+          "quote_hash": "c58fc470a2fc6dfb4d30b9f4a2bd9568ab8d02e739b69392e4d911a65e6436f0"
+        },
+        {
+          "source_id": "FISRC-a1dbde18ac15df21",
+          "quote": "Announcing our $42M Series BThe dev platform for the next 100 billion commits",
+          "source_content_hash": "48624da4e76413ea",
+          "quote_hash": "8d402b02af77fbd8743b36c305a5680e1344a72de869dddcac7bebb413273f0b"
+        }
+      ],
+      "application_entity_id": "EN-9359f3bb2efa7aab",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "B轮",
+      "amount": "$42m",
+      "total_raised": "",
+      "announced_at": "2026-10-05",
+      "investor_disclosure_status": "not_disclosed",
+      "investors": [],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dd254a37ffe8d2d0",
+          "quote": "A Zurich-founded developer infrastructure startup has raised $42m in a Series B financing round, just seven months after completing its Series A.",
+          "source_content_hash": "2ead490262be955ee4b48ac87d752eb53e9556664f907d87b145f77c67ab2799",
+          "quote_hash": "c58fc470a2fc6dfb4d30b9f4a2bd9568ab8d02e739b69392e4d911a65e6436f0"
+        },
+        {
+          "source_id": "FISRC-a1dbde18ac15df21",
+          "quote": "Announcing our $42M Series BThe dev platform for the next 100 billion commits",
+          "source_content_hash": "48624da4e76413ea",
+          "quote_hash": "8d402b02af77fbd8743b36c305a5680e1344a72de869dddcac7bebb413273f0b"
+        }
+      ],
+      "round_code": "series_b",
+      "round_original": "B轮",
+      "amount_original": "$42m",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 42000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "4200 万美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [
+        "investors_missing"
+      ],
+      "disclosures": [
+        {
+          "event_id": "EV-a86432262b10332e",
+          "round_original": "B轮",
+          "amount": "$42m",
+          "announced_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dd254a37ffe8d2d0",
+              "quote": "A Zurich-founded developer infrastructure startup has raised $42m in a Series B financing round, just seven months after completing its Series A.",
+              "source_content_hash": "2ead490262be955ee4b48ac87d752eb53e9556664f907d87b145f77c67ab2799",
+              "quote_hash": "c58fc470a2fc6dfb4d30b9f4a2bd9568ab8d02e739b69392e4d911a65e6436f0"
+            },
+            {
+              "source_id": "FISRC-a1dbde18ac15df21",
+              "quote": "Announcing our $42M Series BThe dev platform for the next 100 billion commits",
+              "source_content_hash": "48624da4e76413ea",
+              "quote_hash": "8d402b02af77fbd8743b36c305a5680e1344a72de869dddcac7bebb413273f0b"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "partially_disclosed"
+    },
+    "products": [
+      {
+        "name": "Devbox",
+        "description": "为 AI 编程代理提供完整开发环境，包含代码库、测试套件、数据库和网络访问，支持 Mac、Linux 和即将支持的 Windows。",
+        "target_customers": "AI 编程代理和开发团队",
+        "features": [
+          "每个代理获得完整虚拟机及所有依赖",
+          "支持 Mac、Linux 和即将支持的 Windows",
+          "可编程环境配置",
+          "安全边界控制",
+          "交互式调试"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d6a5f85ce64cf461",
+            "quote": "A full development environment with your codebase, test suite, databases, and network access.",
+            "source_content_hash": "d14c4b00555d4bce",
+            "quote_hash": "4498f0862ec8ce3a99d3ce0bbda0acc2071a596c2d2fcca5f1281ec4cdd3fbfe"
+          },
+          {
+            "source_id": "FISRC-d6a5f85ce64cf461",
+            "quote": "Namespace gives every agent a full VM with all your dependencies",
+            "source_content_hash": "d14c4b00555d4bce",
+            "quote_hash": "a209ff234a5715dfcdbd69b1b8b1c89d763a9fffedea559f6b77e89799ec2492"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "Warp",
+        "industry": "",
+        "use_case": "运行 CI 和 Oz 云代理平台",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a1dbde18ac15df21",
+            "quote": "We run everything from our CI to Oz, our cloud agent platform, on Namespace",
+            "source_content_hash": "48624da4e76413ea",
+            "quote_hash": "57e4af65f7101e0b8471eddeb6cb716adb9a50f2ac080d52985a4c4ffe4905a8"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "ClassPass",
+        "industry": "",
+        "use_case": "加速 iOS 开发",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a1dbde18ac15df21",
+            "quote": "How ClassPass sped up their iOS development with Namespace",
+            "source_content_hash": "48624da4e76413ea",
+            "quote_hash": "bbdee2da1ea881947f660dbd25d1d3a1ff28620640d719552cd036df5450f97f"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Zed",
+        "industry": "",
+        "use_case": "快速 Rust 构建和保护开源项目",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a1dbde18ac15df21",
+            "quote": "How Zed gets fast Rust builds and secures its OSS project with Namespace",
+            "source_content_hash": "48624da4e76413ea",
+            "quote_hash": "d8bf6ff8019055a43eb601c1d996d70a2ee4de9d4e8ce82401748035795ef174"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Ramp",
+        "industry": "",
+        "use_case": "使用 Bazel Remote Execution 构建软件",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a1dbde18ac15df21",
+            "quote": "Namespace's Bazel Remote Execution has unlocked new ways for us to build software in the agentic era.",
+            "source_content_hash": "48624da4e76413ea",
+            "quote_hash": "6e48c563dece6ff584fa12719bc8fe625c8d8ffb408e097929177a83ca906fb2"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Framer",
+        "industry": "",
+        "use_case": "保持 CI 在 5 分钟内完成",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a1dbde18ac15df21",
+            "quote": "How Framer keeps CI under 5 minutes with Namespace",
+            "source_content_hash": "48624da4e76413ea",
+            "quote_hash": "832cb67f2ba574892221e8d18213702434d001445cbf4addc40fe4cd5ee9f6d5"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "融资额",
+        "value": "$42m",
+        "observed_at": "2026-10-05",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-dd254a37ffe8d2d0",
+            "quote": "A Zurich-founded developer infrastructure startup has raised $42m in a Series B financing round",
+            "source_content_hash": "2ead490262be955ee4b48ac87d752eb53e9556664f907d87b145f77c67ab2799",
+            "quote_hash": "bbc8403d5fbae95f82001f217052de0a0f40136a280a3f7b7ba10c10a2f64a07"
+          }
+        ]
+      },
+      {
+        "label": "成立年份",
+        "value": "2022",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-dd254a37ffe8d2d0",
+            "quote": "Founded in 2022 by former Google principal engineer Hugo Santos",
+            "source_content_hash": "2ead490262be955ee4b48ac87d752eb53e9556664f907d87b145f77c67ab2799",
+            "quote_hash": "bca72d8ca28f4c214cd4b3be5126a9df75d85dde94f0aa5e0729f58a63eef667"
+          }
+        ]
+      },
+      {
+        "label": "客户数量",
+        "value": "1,000+",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a1dbde18ac15df21",
+            "quote": "Join 1,000+ of the world’s most ambitious companies",
+            "source_content_hash": "48624da4e76413ea",
+            "quote_hash": "0d490a5680cb34e293cc3927b94f6a28008d7c1cf06ad18f37ce59946ac0fa6c"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Aloke Desai",
+        "quote": "Namespace is the best dev infrastructure tool I’ve used in years. We run everything from our CI to Oz, our cloud agent platform, on Namespace, and I could not recommend it enough.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a1dbde18ac15df21",
+            "quote": "“Namespace is the best dev infrastructure tool I’ve used in years. We run everything from our CI to Oz, our cloud agent platform, on Namespace, and I could not recommend it enough.”",
+            "source_content_hash": "48624da4e76413ea",
+            "quote_hash": "adf4e66b1f07bae1b930e72b213a4ea28b490bf88120224d9d332b8d139d4ff3"
+          }
+        ]
+      },
+      {
+        "speaker": "JP Simard",
+        "quote": "Namespace's Bazel Remote Execution has unlocked new ways for us to build software in the agentic era. We’ve been early adopters and already see promising performance benefits.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a1dbde18ac15df21",
+            "quote": "Namespace's Bazel Remote Execution has unlocked new ways for us to build software in the agentic era. We’ve been early adopters and already see promising performance benefits.",
+            "source_content_hash": "48624da4e76413ea",
+            "quote_hash": "77b31c5ef3d2e0878a3fbd485d6b0c881935d8f415c1a63e8308000467638ece"
+          }
+        ]
+      },
+      {
+        "speaker": "Eelco Lempsink",
+        "quote": "Namespace is really nicely plug-and-play on top of GitHub Actions, but then it also extends it in a really sensible way. It’s a great extension that adds a lot of value on top of what GitHub offers.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a1dbde18ac15df21",
+            "quote": "Namespace is really nicely plug-and-play on top of GitHub Actions, but then it also extends it in a really sensible way. It’s a great extension that adds a lot of value on top of what GitHub offers.",
+            "source_content_hash": "48624da4e76413ea",
+            "quote_hash": "6356347d60edbeb5f8a29794e2609a9bd750657c9775054e10bf921bb614e35e"
+          }
+        ]
+      },
+      {
+        "speaker": "Sander van Veen",
+        "quote": "Even though Namespace saved us money, that wasn’t the point. What matters is that it’s reliable and fast. In the end, it’s more about the cost of time than the cost of money.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a1dbde18ac15df21",
+            "quote": "Even though Namespace saved us money, that wasn’t the point. What matters is that it’s reliable and fast. In the end, it’s more about the cost of time than the cost of money.",
+            "source_content_hash": "48624da4e76413ea",
+            "quote_hash": "5fa9e0921006b4b1f70002239cbbc843678210b98c75f16a534a05b22f0fa47b"
+          }
+        ]
+      },
+      {
+        "speaker": "Mitchell Hashimoto",
+        "quote": "Been using Namespace for the past year or two, they’ve been absolutely awesome. The service is great, support is great. Just overall great job.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a1dbde18ac15df21",
+            "quote": "Been using Namespace for the past year or two, they’ve been absolutely awesome. The service is great, support is great. Just overall great job.",
+            "source_content_hash": "48624da4e76413ea",
+            "quote_hash": "99fb1eb11d503dbe4894f242f033eb8e1da7a2729f263f1225259da98e9ea240"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "本轮融资的核心变量是 Namespace 能否成为 AI 编程代理时代的基础设施层。已验证信号包括：公司完成 4200 万美元 B 轮融资，距 A 轮仅七个月；官网披露 1000+ 客户；客户案例显示 ClassPass CI 成本降低 55%、Zed CI 队列时间加速 3 倍、Framer CI 构建时间低于 5 分钟、DuckDB 构建加速 10 倍、Warp 每月运行 2 万个沙箱。证据边界：来源未披露本轮具体投资方名称，无法判断资本方背景；未披露累计融资额和估值；客户案例数据来自公司官网，未经独立验证。",
+      "validated_signals": [
+        "完成 4200 万美元 B 轮融资，距 A 轮仅七个月",
+        "官网披露 1000+ 客户",
+        "ClassPass CI 成本降低 55%",
+        "Zed CI 队列时间加速 3 倍",
+        "Framer CI 构建时间低于 5 分钟",
+        "DuckDB 构建加速 10 倍",
+        "Warp 每月运行 2 万个沙箱"
+      ],
+      "risks": [
+        "来源未披露本轮具体投资方名称，无法验证资本方背景和投资逻辑",
+        "未披露累计融资额和估值，无法判断融资节奏和估值合理性",
+        "客户案例数据来自公司官网，未经独立验证",
+        "Devbox 产品支持 Windows 尚在计划中，未确认已交付",
+        "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "ai_infrastructure_software",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "sector": "开发者基础设施",
+      "investment_thesis": {
+        "statement": "本轮融资的核心变量是 Namespace 能否成为 AI 编程代理时代的基础设施层。已验证信号包括：公司完成 4200 万美元 B 轮融资，距 A 轮仅七个月；官网披露 1000+ 客户；客户案例显示 ClassPass CI 成本降低 55%、Zed CI 队列时间加速 3 倍、Framer CI 构建时间低于 5 分钟、DuckDB 构建加速 10 倍、Warp 每月运行 2 万个沙箱。证据边界：来源未披露本轮具体投资方名称，无法判断资本方背景；未披露累计融资额和估值；客户案例数据来自公司官网，未经独立验证。",
+        "evidence_signals": [
+          "完成 4200 万美元 B 轮融资，距 A 轮仅七个月",
+          "官网披露 1000+ 客户",
+          "ClassPass CI 成本降低 55%",
+          "Zed CI 队列时间加速 3 倍",
+          "Framer CI 构建时间低于 5 分钟",
+          "DuckDB 构建加速 10 倍",
+          "Warp 每月运行 2 万个沙箱"
+        ],
+        "risks": [
+          "来源未披露本轮具体投资方名称，无法验证资本方背景和投资逻辑",
+          "未披露累计融资额和估值，无法判断融资节奏和估值合理性",
+          "客户案例数据来自公司官网，未经独立验证",
+          "Devbox 产品支持 Windows 尚在计划中，未确认已交付"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Devbox",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Hugo Santos",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Warp",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "ClassPass",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Zed",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Ramp",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Framer",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-a86432262b10332e",
+        "date": "2026-10-05",
+        "title": "Namespace 在 A 轮融资七个月后完成 4200 万美元 B 轮融资",
+        "amount": "$42m",
+        "source_refs": [
+          "SA-3cdee274ce658189"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-dd254a37ffe8d2d0",
+        "source_url": "https://tech.eu/2026/10/05/namespace-raises-42m-ssries-b-seven-months-after-series-a/",
+        "title": "Namespace 在 A 轮融资七个月后完成 4200 万美元 B 轮融资",
+        "publisher": "tech.eu",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-06T00:28:54.005Z",
+        "content_hash": "2ead490262be955ee4b48ac87d752eb53e9556664f907d87b145f77c67ab2799",
+        "source_artifact_id": "SA-3cdee274ce658189",
+        "raw_id": "RAW-249b53c6b731c7d7"
+      },
+      {
+        "source_id": "FISRC-a1dbde18ac15df21",
+        "source_url": "https://namespace.so/",
+        "title": "Accelerate your developer workflow | Namespace",
+        "publisher": "namespace.so",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-06T00:44:47.259Z",
+        "content_hash": "48624da4e76413ea",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-d6a5f85ce64cf461",
+        "source_url": "https://namespace.so/devbox",
+        "title": "Your agents need a Devbox | Namespace",
+        "publisher": "namespace.so",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-06T00:44:47.721Z",
+        "content_hash": "d14c4b00555d4bce",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-06T00:44:57.233Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-06T00:44:57.233Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 5,
+      "searched_source_count": 3
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Devbox"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Hugo Santos"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-a86432262b10332e"
+    ],
+    "aggregation": {
+      "key": "EN-9359f3bb2efa7aab|series_b",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "Namespace $42M Series B Scale Venture Partners October 2026; site:namespace.so AI coding agents Devbox"
+  ],
+  "attempts": [
+    {
+      "provider": "responsible-agent-reviewed-originals-and-web-search",
+      "query": "Namespace $42M Series B Scale Venture Partners October 2026; site:namespace.so AI coding agents Devbox",
+      "url": "https://www.eu-startups.com/2026/10/namespace-secures-e37-million-to-scale-coding-build-and-test-infrastructure-across-mac-windows-and-linux",
+      "status": "failed",
+      "error": "original_capture_failed"
+    },
+    {
+      "provider": "responsible-agent-reviewed-originals-and-web-search",
+      "query": "Namespace $42M Series B Scale Venture Partners October 2026; site:namespace.so AI coding agents Devbox",
+      "url": "https://namespace.so/",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "responsible-agent-reviewed-originals-and-web-search",
+      "query": "Namespace $42M Series B Scale Venture Partners October 2026; site:namespace.so AI coding agents Devbox",
+      "url": "https://namespace.so/devbox",
+      "status": "completed",
+      "error": ""
+    }
+  ]
+}

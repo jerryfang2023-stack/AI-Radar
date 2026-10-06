@@ -1,0 +1,69 @@
+{
+  "event_id": "EV-4bd61d3c2c77ed21",
+  "company_name": "Simple Energy",
+  "status": "blocked",
+  "problems": [
+    "deepseek_json_quality_failed:market_subcategory_id_unknown:analysis.market_subcategory_id must use an exact key in {\"data\":\"infrastructure_compute\",\"development_deployment\":\"infrastructure_compute\",\"hardware_computing\":\"infrastructure_compute\",\"observability_evaluation\":\"infrastructure_compute\",\"customer_support\":\"enterprise_applications\",\"cyber_physical_security\":\"enterprise_applications\",\"hr\":\"enterprise_applications\",\"marketing\":\"enterprise_applications\",\"productivity_enterprise_workflows\":\"enterprise_applications\",\"sales\":\"enterprise_applications\",\"software_development_coding\":\"enterprise_applications\",\"financial_services\":\"industry_applications\",\"healthcare_life_sciences\":\"industry_applications\",\"industrials\":\"industry_applications\",\"legal\":\"industry_applications\",\"consumer_retail\":\"industry_applications\"}; the value is its required market_category_id. Do not copy industry_ids such as legal_services or use_case_ids such as legal_compliance into this field.|market_subcategory_parent_mismatch:analysis.market_subcategory_id must use an exact key in {\"data\":\"infrastructure_compute\",\"development_deployment\":\"infrastructure_compute\",\"hardware_computing\":\"infrastructure_compute\",\"observability_evaluation\":\"infrastructure_compute\",\"customer_support\":\"enterprise_applications\",\"cyber_physical_security\":\"enterprise_applications\",\"hr\":\"enterprise_applications\",\"marketing\":\"enterprise_applications\",\"productivity_enterprise_workflows\":\"enterprise_applications\",\"sales\":\"enterprise_applications\",\"software_development_coding\":\"enterprise_applications\",\"financial_services\":\"industry_applications\",\"healthcare_life_sciences\":\"industry_applications\",\"industrials\":\"industry_applications\",\"legal\":\"industry_applications\",\"consumer_retail\":\"industry_applications\"}; the value is its required market_category_id. Do not copy industry_ids such as legal_services or use_case_ids such as legal_compliance into this field.|sector_not_chinese"
+  ],
+  "queries": [
+    "\"Simple Energy\" 2026 funding round investors",
+    "\"Simple Energy\" official product customers",
+    "\"Simple Energy\" \"why we invested\""
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Simple Energy\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Simple Energy\" $100 million funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Simple Energy\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.simpleenergy.in/",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.facebook.com/bikeindia/videos/getting-to-know-from-the-co-founder-of-simple-energy-about-the-learnings-and-cha/1577934583999190/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Simple Energy\" \"why we invested\"",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"Simple Energy\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Simple Energy\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Simple Energy\" founders headquarters product",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}

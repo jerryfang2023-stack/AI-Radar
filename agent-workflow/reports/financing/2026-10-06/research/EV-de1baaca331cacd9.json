@@ -1,0 +1,122 @@
+{
+  "event_id": "EV-de1baaca331cacd9",
+  "company_name": "SoulX旗下的MoYa",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "AI陪伴硬件，开始比拼“言外之意”",
+    "event_source_refs": [
+      "SA-5bd7d2fc9390bac3"
+    ],
+    "event_claim_refs": [
+      "CL-a6aa256369dcbde1"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-8e1abf6559587e46",
+        "canonical_name": "镭萌科技的bibo"
+      },
+      {
+        "entity_id": "EN-bae4f94653fa295c",
+        "canonical_name": "SoulX旗下的MoYa"
+      }
+    ],
+    "event_metrics": [],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-a6aa256369dcbde1",
+        "raw_id": "RAW-f9da6c2db7349352",
+        "subject": "SoulX旗下的MoYa",
+        "object": "千万元级天使轮融资",
+        "source_quote_length": 36
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "SoulX旗下的MoYa"
+  },
+  "queries": [
+    "\"SoulX旗下的MoYa\" 2026 融资 投资方",
+    "\"SoulX旗下的MoYa\" 千万元级 融资 领投 跟投",
+    "\"SoulX旗下的MoYa\" 官网 产品 服务",
+    "\"SoulX旗下的MoYa\" 投资机构 融资用途",
+    "\"SoulX旗下的MoYa\" 2026 本轮融资 公告",
+    "\"SoulX旗下的MoYa\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"SoulX旗下的MoYa\" 2026 融资 投资方",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"SoulX旗下的MoYa\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"SoulX旗下的MoYa\" 千万元级 融资 领投 跟投",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"SoulX旗下的MoYa\" 千万元级 融资 领投 跟投",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"SoulX旗下的MoYa\" 官网 产品 服务",
+      "status": "completed",
+      "count": 7
+    },
+    {
+      "provider": "tavily",
+      "query": "\"SoulX旗下的MoYa\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"SoulX旗下的MoYa\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 3
+    },
+    {
+      "provider": "tavily",
+      "query": "\"SoulX旗下的MoYa\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"SoulX旗下的MoYa\" 2026 本轮融资 公告",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"SoulX旗下的MoYa\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"SoulX旗下的MoYa\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 7
+    },
+    {
+      "provider": "tavily",
+      "query": "\"SoulX旗下的MoYa\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}
