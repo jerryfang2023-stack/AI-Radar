@@ -139,26 +139,57 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Auriga Cyber Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资方向依据Auriga官网自述，地域与阶段口径保留官网用语；不扩展为完整投资组合。",
+      "summary": "Auriga Cyber Ventures官网称其投资欧洲早期网络安全与数字信任领域创业者。其官网介绍创办团队，Fleuret公告将其列为€4M pre-seed轮投资方。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向（官网自述）",
+          "value": "欧洲早期网络安全与数字信任",
+          "source_id": "auriga_thesis"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Fleuret AI · 预种子轮 · 2026-10-05 · 本轮参投 · €4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Fleuret官方公告将Auriga Cyber Ventures列为€4M pre-seed轮投资方之一。",
           "source_id": "FISRC-99179d97c4e96ad7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Auriga Cyber Ventures官网",
+          "value": "Auriga Cyber Ventures",
+          "url": "https://www.aurigacyberventures.com/",
+          "source_id": "auriga_thesis"
+        }
+      ],
       "sources": [
         {
+          "source_id": "auriga_thesis",
+          "source_url": "https://www.aurigacyberventures.com/",
+          "source_title": "Auriga Cyber Ventures",
+          "source_content_hash": "3c8af420b169d47f249265cd638ad5a99d89dc20fc4710bda10c4fb5e026cd63",
+          "quote": "We back early-stage European founders in cybersecurity and digital trust. Nothing else.",
+          "quote_hash": "dfa91c6f1474089f20c6ca7db3de591b3b3739ac89b88790ede31ac9019e3292"
+        },
+        {
+          "source_id": "auriga_founders",
+          "source_url": "https://www.aurigacyberventures.com/more-about-our-founding-partners",
+          "source_title": "More about our Founding Partners",
+          "source_content_hash": "e3da969fbe27a331926f1a56a5c709e5637501523a82a75b84e463a47f15442e",
+          "quote": "Auriga Cyber Ventures was ignited by four emblematic figures of the European cybersecurity industry and Auriga Partners.",
+          "quote_hash": "5177b1fa8d9f7a3053d1e83b07ec03e67cbfcd9ff291198d0df650102dcf5a4b"
+        },
+        {
           "source_id": "FISRC-99179d97c4e96ad7",
-          "source_url": "https://tech.eu/2026/10/05/fleuret-ai-raises-eur4m-to-advance-ai-powered-offensive-cybersecurity-in-europe/",
-          "source_title": "Fleuret AI 融资 €4M，推动欧洲 AI 驱动的进攻性网络安全发展",
-          "source_content_hash": "cb29e794dada4293d8e5aef330152e1509f337d441941c9f725f9aa3a18bd91d",
-          "quote": "The round was led by RAISE Ventures, with participation from Auriga Cyber Ventures, Wind, Better Angle and business angels from the cybersecurity sector.",
-          "quote_hash": "9f5f196dd9d76f06a36bf7215969f9401d2ca79beeaea2ce72c6dd72b86c863f"
+          "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
+          "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
+          "source_content_hash": "0ef491fc388899ac0c53e83be9a31c61ef10dddadb754ff579cfdd7f7941f0f9",
+          "quote": "has closed a €4M pre-seed round led by RAISE Ventures, alongside Auriga Cyber Ventures, Wind Capital, Better Angle and leading business angels from the cybersecurity world.",
+          "quote_hash": "23d98227a7268569101571c113168cbd672c226a4c73f5cddea9fef105c8223a"
         }
       ],
       "last_verified_at": "2026-10-06"

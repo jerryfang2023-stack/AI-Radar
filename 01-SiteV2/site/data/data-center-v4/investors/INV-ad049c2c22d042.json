@@ -139,38 +139,106 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "People Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略依据People Ventures官网自述；融资记录限Pandektes已披露的种子轮及A轮参与。",
+      "summary": "People Ventures官网称其与北欧早期创业者合作，通常投资pre-seed或seed阶段的软件与数字医疗公司，并披露丹麦CVR编号42245399。Pandektes官方公告记录其参与两轮融资。",
+      "facts": [
+        {
+          "field": "geography",
+          "label": "投资地区（官网自述）",
+          "value": "北欧",
+          "source_id": "people_region"
+        },
+        {
+          "field": "stage",
+          "label": "投资阶段（官网自述）",
+          "value": "通常为pre-seed或seed",
+          "source_id": "people_stage"
+        },
+        {
+          "field": "sectors",
+          "label": "公开关注领域",
+          "value": [
+            "软件",
+            "数字医疗"
+          ],
+          "source_id": "people_sectors"
+        },
+        {
+          "field": "company_registration",
+          "label": "丹麦CVR编号",
+          "value": "42245399",
+          "source_id": "people_cvr"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Pandektes · 历史轮次未披露 · 种子轮领投方之一，本轮作为既有投资方参与。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0388d568b8d8ab15"
+          "description": "Pandektes官方公告披露People Ventures领投其2.9M EUR种子轮。",
+          "source_id": "FISRC-e1cecf71dc059696"
         },
         {
-          "description": "融资来源记录：Pandektes · 历史轮次未披露 · 种子轮领投方之一，本轮作为既有投资方参与。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e1cecf71dc059696"
+          "description": "Scale Capital官方投资公告称People Ventures参与Pandektes €13.5M Series A。",
+          "source_id": "FISRC-0388d568b8d8ab15"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "People Ventures官网",
+          "value": "People Ventures",
+          "url": "https://www.people.ventures/",
+          "source_id": "people_cvr"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-0388d568b8d8ab15",
-          "source_url": "https://www.scalecapital.com/stories/our-investment-in-pandektes-building-the-single-source-of-truth-for-law",
-          "source_title": "Our investment in Pandektes: Building the single source of truth for law",
-          "source_content_hash": "9c83bd118706a942",
-          "quote": "The investment is part of a €13.5 million Series A round led by Alstin Capital, with PROfounders, People Ventures and other existing investors also participating",
-          "quote_hash": "26d0b7bccc606dd14955fa2bc6e3f8b0fb6c78a7552417f7d9355b21700329f1"
+          "source_id": "people_region",
+          "source_url": "https://www.people.ventures/us",
+          "source_title": "About us | People Ventures",
+          "source_content_hash": "600c6e229f214ea8ea7778f12b23f7ed4e5d63c28edfeb7dbcbc34f3c27eeef0",
+          "quote": "We work together with early-stage founders across the Nordics",
+          "quote_hash": "496cc262fadf6873a395521e72bfe9567cd88b7e4a86361bd54972bf1f7ecf07"
+        },
+        {
+          "source_id": "people_stage",
+          "source_url": "https://www.people.ventures/us",
+          "source_title": "About us | People Ventures",
+          "source_content_hash": "600c6e229f214ea8ea7778f12b23f7ed4e5d63c28edfeb7dbcbc34f3c27eeef0",
+          "quote": "Usually pre-seed or seed",
+          "quote_hash": "0aad28c8a0d33e8ce669f54c47b3546b8ee3a0fe251ad91c588139c4b129aa16"
+        },
+        {
+          "source_id": "people_sectors",
+          "source_url": "https://www.people.ventures/us",
+          "source_title": "About us | People Ventures",
+          "source_content_hash": "600c6e229f214ea8ea7778f12b23f7ed4e5d63c28edfeb7dbcbc34f3c27eeef0",
+          "quote": "software companies or digital health changing how we live and work",
+          "quote_hash": "e8e7a7eecaad51e02d6b115df0a55468e3ef37850c889056ba5bacc5cee493e7"
+        },
+        {
+          "source_id": "people_cvr",
+          "source_url": "https://www.people.ventures/us",
+          "source_title": "About us | People Ventures",
+          "source_content_hash": "600c6e229f214ea8ea7778f12b23f7ed4e5d63c28edfeb7dbcbc34f3c27eeef0",
+          "quote": "CVR: 42245399",
+          "quote_hash": "cf1e5fb1c32b62b1d0cb89b8cab50eb7ff8202673a180bbc996ec4b1abcaa408"
         },
         {
           "source_id": "FISRC-e1cecf71dc059696",
           "source_url": "https://pandektes.com/blog/pandektes-2-9m-eur-seed-round",
           "source_title": "Pandektes Secures €2.9M in seed-round — Pandektes",
-          "source_content_hash": "b61f8f199371b80e",
+          "source_content_hash": "b2beb634053904d4e9d1e6c9d3acbdf95355e69b07046025a8470cefbff72444",
           "quote": "we’ve secured 2.9M EUR in a seed investment round led by People Ventures and Interface Capital",
           "quote_hash": "21b0a9e9801aaff8852f999f8d285ec51d549730aecfa487f2290017795c5254"
+        },
+        {
+          "source_id": "FISRC-0388d568b8d8ab15",
+          "source_url": "https://www.scalecapital.com/stories/our-investment-in-pandektes-building-the-single-source-of-truth-for-law",
+          "source_title": "Our investment in Pandektes: Building the single source of truth for law",
+          "source_content_hash": "159afa21df53f5df83ea2ee6944730ecf4fe211d5996cf058d4ed207fa12b5bd",
+          "quote": "The investment is part of a €13.5 million Series A round led by Alstin Capital, with PROfounders, People Ventures and other existing investors also participating",
+          "quote_hash": "26d0b7bccc606dd14955fa2bc6e3f8b0fb6c78a7552417f7d9355b21700329f1"
         }
       ],
       "last_verified_at": "2026-10-06"

@@ -136,11 +136,22 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "拓荆科技全资子公司上海岩泉科技 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "已核验全资子公司身份及一项拟议基金出资；这不代表完整投资策略或组合。",
+      "summary": "拓荆科技年报将岩泉科技定义为上海岩泉科技有限公司、系公司全资子公司。2026年股东会资料披露其拟以自有资金不超过人民币5亿元参与私募基金；此为拟议上限。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "所属公司",
+          "value": "拓荆科技股份有限公司全资子公司",
+          "source_id": "piotech_definition"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "拟以自有资金不超过人民币5亿元参与长智瀚海（上海）私募投资基金；该金额是拟议上限，不代表实际到账金额。",
+          "source_id": "piotech_plan"
+        },
         {
           "description": "融资来源记录：利德健康 · 历史轮次未披露 · Pre-A+轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2692de47ca3d60ba"
@@ -148,6 +159,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "piotech_definition",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225222226.PDF",
+          "source_title": "拓荆科技股份有限公司2025年年度报告",
+          "source_content_hash": "97b1eea92884d571f7cfb133ca5d7a08a333b4d874af1e6df602942057c09a2a",
+          "quote": "岩泉科技 指 上海岩泉科技有限公司，系公司全资子公司",
+          "quote_hash": "05be8aa219cdbbccdcdf4462fcaed09eda0a833542f3c93a23505665e6fadb16"
+        },
+        {
+          "source_id": "piotech_plan",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-09-01/1225538271.PDF",
+          "source_title": "拓荆科技股份有限公司2026年第二次临时股东会会议资料",
+          "source_content_hash": "e537324e69697d740676e58f7add395f3073478b12206a373304fc561b6965b4",
+          "quote": "公司全资子公司上海岩泉科技有限公司拟作为有限合伙人以自有资金出资 不超过人民币 5 亿元参与投资私募基金长智瀚海（上海）私募投资基金合伙企业",
+          "quote_hash": "cfaa2743de53ff3f3cefd5444cae4f67500d0c0ab6ab8fa934de33c1418b7483"
+        },
         {
           "source_id": "FISRC-2692de47ca3d60ba",
           "source_url": "https://media.qimingpian.cn/2026/07/16/980dc5b4bbcea1570908cc654e109362.html",

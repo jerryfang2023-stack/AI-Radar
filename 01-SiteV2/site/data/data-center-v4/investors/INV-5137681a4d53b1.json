@@ -124,23 +124,47 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Interface Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_note": "官网仅提供品牌定位与创办人名字；融资记录依据Pandektes官方公告，未扩展为完整机构背景。",
+      "summary": "Interface Capital官网称其建设并投资科技公司、由Christian与Niklas创立。Pandektes官方公告将Interface列为其种子轮领投方之一。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Pandektes · 历史轮次未披露 · 种子轮领投方之一。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Pandektes官方公告称其2.9M EUR种子轮由People Ventures和Interface Capital领投。",
           "source_id": "FISRC-e1cecf71dc059696"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Interface Capital官网",
+          "value": "Interface Capital",
+          "url": "https://interfacecap.com/",
+          "source_id": "interface_approach"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "interface_approach",
+          "source_url": "https://interfacecap.com/",
+          "source_title": "Interface Capital",
+          "source_content_hash": "2a800c02cb6de922daa789bce8653dd1b7246c157ceecbd8b1fc4683a4cf908f",
+          "quote": "We build and invest in iconic technology companies",
+          "quote_hash": "e0a0c24218760410c6b6aea1f25c89a32c132c6cb4089626106f90595701eca4"
+        },
+        {
+          "source_id": "interface_founders",
+          "source_url": "https://interfacecap.com/",
+          "source_title": "Interface Capital",
+          "source_content_hash": "2a800c02cb6de922daa789bce8653dd1b7246c157ceecbd8b1fc4683a4cf908f",
+          "quote": "Founded by Christian & Niklas",
+          "quote_hash": "d6e4ec7d7f63682dc714424ba6320e8a7c0f9307798d9d6a743757ee9e8eccd6"
+        },
         {
           "source_id": "FISRC-e1cecf71dc059696",
           "source_url": "https://pandektes.com/blog/pandektes-2-9m-eur-seed-round",
           "source_title": "Pandektes Secures €2.9M in seed-round — Pandektes",
-          "source_content_hash": "b61f8f199371b80e",
+          "source_content_hash": "b2beb634053904d4e9d1e6c9d3acbdf95355e69b07046025a8470cefbff72444",
           "quote": "we’ve secured 2.9M EUR in a seed investment round led by People Ventures and Interface Capital",
           "quote_hash": "21b0a9e9801aaff8852f999f8d285ec51d549730aecfa487f2290017795c5254"
         }
