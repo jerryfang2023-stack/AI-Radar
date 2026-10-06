@@ -89,18 +89,19 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
       }
       if (row.raw_ids?.length) { write(file,state); return; }
       let cachedOriginal = legacy.originals.get(url) || legacy.originals.get(priorReview?.additional_source) || legacy.byId.get(String(priorReview?.id));
-      if(!cachedOriginal && queued?.content_hash && !queued.raw_ids?.length) {
+      if(!cachedOriginal && queued?.content_hash && queued.fact_review_completed !== true) {
         try {
           const saved=loadPrivateEvidenceRecord(root,`evidence://${queued.content_hash}`,queued.content_hash,{backupRoot,sourceUrl:queued.evidence_source_url || url});
           cachedOriginal={url:saved.entry.source_url,title:saved.raw.title,body:saved.body,date:saved.raw.published_at,date_evidence:saved.raw.publication_date_evidence,article_like:saved.raw.source_type==='article',content_hash:saved.entry.content_hash};
         } catch {row.evidence_problem='private_original_missing_restore_evidence';}
       }
       if (cachedOriginal) {
-        const recovered = legacyCapture(cachedOriginal, date);
+        const recovered = legacyCapture(cachedOriginal, queued?.content_hash === cachedOriginal.content_hash && queued.fact_review_completed !== true ? queued.origin_date || date : date);
         if (recovered.record) {
           const record = recovered.record, sourceUrl = record.original_url;
           ingestPrivateEvidenceRecords({root,backupRoot,records:[{snapshotRef:`financing/${date}/${digest(sourceUrl).slice(0,16)}.json`,sourceUrl,dataDate:date,contentHash:record.content_hash,body:record.clean_text,metadata:record}]});
-          Object.assign(row,{content_hash:record.content_hash,evidence_source_url:sourceUrl,status:'captured',reason:'original_recovered',used_existing_original:true,alternate_source:sourceUrl!==url});
+          Object.assign(row,{content_hash:record.content_hash,evidence_source_url:sourceUrl,status:'captured',reason:'original_recovered',used_existing_original:true,alternate_source:sourceUrl!==url,
+            resumed_fact_review:Boolean(queued?.content_hash === record.content_hash && queued.fact_review_completed !== true)});
         } else {row.reason = recovered.reason;row.evidence_problem = recovered.reason;}
       }
       if(row.status !== 'captured') {
@@ -203,7 +204,7 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
     }
     if(!row.followup) {
       row.followup=deferredFollowup({...row,status:'pending',last_processed_date:date,prior_review:reviewed.get(url) || queue.entries[url]?.prior_review}, date,
-        {attempted:row.status==='awaiting_fact_review' || row.attempted === true,reason:row.reason});
+        {attempted:(row.status==='awaiting_fact_review' && !row.resumed_fact_review) || row.attempted === true,reason:row.reason});
     }
     queue.entries[url]=row.followup;
   }
@@ -228,6 +229,7 @@ export function finishVerification({ root, directory, date, backupRoot }) {
   for (const row of Object.values(state.entries)) {
     if (!row.raw_ids?.length) continue;
     const sourceIds = new Set(rawDocuments.filter(raw => row.raw_ids.includes(raw.raw_id) && raw.content_hash === row.content_hash).map(raw => raw.source_artifact_id));
+    row.fact_review_completed = sourceIds.size > 0;
     const eventIds = new Set(eventSources.filter(link => sourceIds.has(link.source_artifact_id)).map(link => link.event_id));
     const cardEvents = card => [card.triggered_by_event_id, ...(card.source_event_ids || [])];
     const cards = (research.cards || []).filter(card => cardEvents(card).some(id => eventIds.has(id)) || (card.research_sources || []).some(source => row.raw_ids.includes(source.raw_id) && source.content_hash === row.content_hash));
@@ -262,7 +264,7 @@ export function finishVerification({ root, directory, date, backupRoot }) {
     const queue=read(queueFile,{version:'FINANCING-VERIFICATION-QUEUE-1',entries:{}});
     for(const [url,row] of Object.entries(state.entries)) {
       if(['verified','excluded','reviewed'].includes(row.status))delete queue.entries[url];
-      else if(queue.entries[url]) {queue.entries[url].reason=row.reason;row.followup=queue.entries[url];}
+      else if(queue.entries[url]) {queue.entries[url].reason=row.reason;queue.entries[url].fact_review_completed=row.fact_review_completed;row.followup=queue.entries[url];}
     }
     write(queueFile,queue);
   }
