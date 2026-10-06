@@ -218,16 +218,47 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
-      "summary": "面壁智能融资报道将汇川产投列为联合领投方。",
-      "facts": [],
+      "summary": "面壁智能官网将“汇川产投”列为一轮新融资的联合领投方。汇川技术公告记载，其全资子公司汇创新（深圳）私募股权基金管理有限公司是专业投资平台；中国证券投资基金业协会公示确认该公司的管理人登记信息。档案仅收录可核对的主体信息与这一项公开活动。",
+      "facts": [
+        {
+          "field": "public_investor_label",
+          "label": "融资公告中的投资者称谓",
+          "value": "汇川产投",
+          "source_id": "modelbest_official_financing"
+        },
+        {
+          "field": "legal_entity",
+          "label": "基金管理人法定名称",
+          "value": "汇创新（深圳）私募股权基金管理有限公司",
+          "source_id": "amac_manager_name"
+        },
+        {
+          "field": "parent_company",
+          "label": "母公司",
+          "value": "深圳市汇川技术股份有限公司",
+          "source_id": "inovance_notice_header"
+        },
+        {
+          "field": "platform_relationship",
+          "label": "母子公司及平台关系",
+          "value": "汇创新为深圳市汇川技术股份有限公司的全资子公司，系其专业投资平台",
+          "source_id": "inovance_platform"
+        },
+        {
+          "field": "manager_registration",
+          "label": "私募基金管理人登记编号",
+          "value": "P1070630",
+          "source_id": "amac_manager_registration"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "面壁智能融资报道称汇川产投与深创投联合领投。",
+          "description": "面壁智能官网公告称，汇川产投联合领投其新一轮数亿元人民币融资。",
+          "source_id": "modelbest_official_financing"
+        },
+        {
+          "description": "融资来源记录：面壁智能 · 轮次未披露 · 2026-04-09 · 本轮联合领投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5e868b9dacd5325c"
         },
         {
@@ -239,15 +270,67 @@
           "source_id": "FISRC-67ccadc4294defd6"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "“汇川产投”称谓来自面壁智能官网融资公告；法定管理主体、全资关系及管理人登记信息分别来自汇川技术公告和基金业协会公示。融资公告没有列出管理人的法定全称，此处按多份一手材料进行跨来源归一；未延伸到其他基金、项目组合或团队信息。",
       "contacts": [],
       "sources": [
         {
+          "source_id": "modelbest_official_financing",
+          "source_url": "https://modelbest.cn/",
+          "source_title": "面壁智能",
+          "source_content_hash": "349509b1627f9898b87ca079176e8988a2635f2bb825a0f03c9149fef2afa853",
+          "quote": "近日，面壁智能完成新一轮数亿元人民币融资，由深圳市创新投资集团（深创投）和汇川产投联合领投，道禾长期投资、国泰君安创新投、武岳峰科创等跟投",
+          "quote_hash": "968c63c6616fa4bfee4e9eab433ff154c00c9fd8e5b0d1ace3d2f706bae662a5"
+        },
+        {
+          "source_id": "inovance_notice_header",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2021-12-01/1211764246.PDF",
+          "source_title": "关于公司及全资子公司投资设立苏州汇创聚新股权投资合伙企业（有限合伙）的进展公告（一）",
+          "source_content_hash": "aef25b4dfa07903decf66bd7249b5bd6fba476126d7425924f8c33c3529cd26b",
+          "quote": "深圳市汇川技术股份有限公司 关于公司及全资子公司投资设立苏州汇创聚新股权投资合伙企 业（有限合伙）的进展公告（一）",
+          "quote_hash": "0f2752aba37988f38ba2afbe0a411a6dd9d91011a1f1da8dd515911066e55485"
+        },
+        {
+          "source_id": "inovance_legal_name",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2021-12-01/1211764246.PDF",
+          "source_title": "关于公司及全资子公司投资设立苏州汇创聚新股权投资合伙企业（有限合伙）的进展公告（一）",
+          "source_content_hash": "aef25b4dfa07903decf66bd7249b5bd6fba476126d7425924f8c33c3529cd26b",
+          "quote": "1、汇创新（深圳）私募股权基金管理有限公司",
+          "quote_hash": "46a4b2021b8881d07803be638009e0ceb07901421e22b3a078bc79a3d9a3bbcb"
+        },
+        {
+          "source_id": "inovance_platform",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2021-12-01/1211764246.PDF",
+          "source_title": "关于公司及全资子公司投资设立苏州汇创聚新股权投资合伙企业（有限合伙）的进展公告（一）",
+          "source_content_hash": "aef25b4dfa07903decf66bd7249b5bd6fba476126d7425924f8c33c3529cd26b",
+          "quote": "汇创新为公司的全资子公司，系公司的专业投资平台",
+          "quote_hash": "84ecbb3c777b279d69401f8936d0949d42a98ee6ef12f1837a390965bb0483e4"
+        },
+        {
+          "source_id": "amac_manager_name",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/1908271959100495.html",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "053b1830afaf7b2111ec2fd4e8e85b8f9ac3f75dee385584c1e0bc19afca1965",
+          "quote": "基金管理人全称(中文) 汇创新（深圳）私募股权基金管理有限公司",
+          "quote_hash": "4c96d12a50d8b274e70d7fb44ad74406160e33bce5049977b9aec98cf4be2514"
+        },
+        {
+          "source_id": "amac_manager_registration",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/1908271959100495.html",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "053b1830afaf7b2111ec2fd4e8e85b8f9ac3f75dee385584c1e0bc19afca1965",
+          "quote": "登记编号 P1070630 组织机构代码 91440300MA5ERYXY78",
+          "quote_hash": "034c73de9bd381deea7548ee8ca4fe6e331b49f2093f7ca62b6927b4a32cc379"
+        },
+        {
           "source_id": "FISRC-5e868b9dacd5325c",
           "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
-          "source_title": "大模型公司面壁智能完成数亿元融资 投后估值迈入独角兽门槛|智能_新浪财经_新浪网",
-          "source_content_hash": "c07142782521af30e0bb01da33a54f2cc226b2411c900b351fbf9472b10adbdd",
-          "quote": "师研报 ，权威，专业，及时，全面，助您挖掘潜力主题机会！ （来源：财联社） 《科创板日报》4月9日讯（记者 李明明） 近日，国内基座大模型企业面壁智能正式宣布完成新一轮数亿元人民币融资。本轮融资由深创投、 汇川技术 旗下汇川产投联合领投，道禾长期投资、 国泰海通 创新投、武岳峰科创等多家头部机构跟投。 《科创板日报》记者从相关方获悉， 这是面壁智能2026年完成的第二笔融资，叠加春节后由 中国电信 领投的首轮融资，公司一季度累计融资规模已超10亿元人民币，投后估值迈入独角兽门槛， 也正式跻身国内具备全栈自研能力的基座大模型独角兽企业行列。 双城“押注” 面壁智能脱胎于清华大学计算机系自然语言处理与社会人文计算实验室，其模型研发与训练基地位于北京。北京方面在此前融资中已通过",
-          "quote_hash": "8f32f472f0b1fb79db74cb708d41d76bdd751920f2c7670ff0fef12996b1f543"
+          "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
+          "source_content_hash": "21fcbff02b369abf",
+          "quote": "本轮融资由深创投、 汇川技术 旗下汇川产投联合领投，道禾长期投资、 国泰海通 创新投、武岳峰科创等多家头部机构跟投。",
+          "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
         },
         {
           "source_id": "FISRC-ca5c9f62e4d3f2f3",
@@ -266,11 +349,7 @@
           "quote_hash": "b210f22fac892211087c8a47d12c8b672a5a99dfc55ace625917db636ed0bbf7"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-06"
     }
   }
 }

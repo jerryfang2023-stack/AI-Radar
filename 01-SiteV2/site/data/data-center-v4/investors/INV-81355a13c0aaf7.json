@@ -140,11 +140,22 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Meridian Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Pathwork 发行方公告将 Meridian Ventures 列为其种子轮参与方。该公告只确认这一项融资活动，没有说明其法律主体或管理人。",
+      "coverage_note": "仅按 Pathwork 发行方的投资方标签记录一次活动；不推断名称相近的 Meridian 机构是否同一主体，也不把本轮总融资额归为其单家出资。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "被投方披露的融资参与",
+          "value": "Pathwork 发行方公告称，Meridian Ventures 参与其由 Costanoa Ventures 领投的种子轮。",
+          "source_id": "INV-81355a13c0aaf7"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Pathwork 发行方公告称其完成 350 万美元种子轮，Meridian Ventures 参与其中；该金额为整轮融资额。",
+          "source_id": "INV-81355a13c0aaf7"
+        },
         {
           "description": "融资来源记录：Pathwork · 种子轮 · 2025-09-09 · 本轮参投 · $3.5M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1bd630ac44028d8a"
@@ -152,6 +163,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "INV-81355a13c0aaf7",
+          "source_url": "https://www.pathwork.com/resources/announcing-pathworks-seed-investment",
+          "source_title": "Announcing Pathwork’s Seed Investment led by Costanoa Ventures",
+          "source_content_hash": "c2b6d6bceae7dd932c96bc80ab9ed7b4fb3362a22250a4bf6a69d4f276fe8175",
+          "quote": "Today, Blake and I are thrilled to announce our $3.5M seed investment round led by Costanoa Ventures and joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors.",
+          "quote_hash": "cf0191fa6d3c9c3e08b839d32647909d4f6712d1aeec39ae3efcae3167e012dc"
+        },
         {
           "source_id": "FISRC-1bd630ac44028d8a",
           "source_url": "https://www.pathwork.com/resources/announcing-pathworks-seed-investment",
@@ -161,7 +180,7 @@
           "quote_hash": "1328b321bc2d43405b2d09f90ebdb2f6317c15ee519cc8a19d18d3f414a1d5fd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

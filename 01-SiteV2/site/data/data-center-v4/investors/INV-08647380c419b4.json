@@ -140,11 +140,22 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Formosa Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Trace 官方融资公告将 Formosa Capital 列入投资方名单。现有材料仅支持确认这一公开披露的投资方名称和活动，不足以识别其法律主体或管理人。",
+      "coverage_note": "本档案按被投方披露的投资方标签记录活动；尚未将 Formosa Capital 映射到某一法律实体或管理人，不推断其策略、其他投资或单家出资额。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "被投方披露的投资活动",
+          "value": "Trace 官方公告将 Formosa Capital 列入本轮投资方名单。",
+          "source_id": "trace_2026_round"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Trace 官方融资公告将 Formosa Capital 列为投资方；公告没有披露其单独投资金额。",
+          "source_id": "trace_2026_round"
+        },
         {
           "description": "融资来源记录：Trace · 种子轮 · 2026-02-26 · 本轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ea2a22594e77fd6a"
@@ -152,6 +163,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "trace_2026_round",
+          "source_url": "https://www.trace.so/blog/trace-raised-dollar3m-to-build-the-context-layer-for-ai-at-work",
+          "source_title": "Trace raised $3M to build the context layer for AI at work - Trace",
+          "source_content_hash": "785f8ff4713a99f598fd744d4346fef9d68bfa2f690fe749b78db7cb8e974e91",
+          "quote": "Formosa Capital",
+          "quote_hash": "f7f4cbb228bd67876ff5ca8f8f749d2e8607d140149262311766fae721d40f6e"
+        },
         {
           "source_id": "FISRC-ea2a22594e77fd6a",
           "source_url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
@@ -161,7 +180,7 @@
           "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

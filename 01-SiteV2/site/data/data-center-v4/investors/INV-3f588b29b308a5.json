@@ -137,14 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "嘉兴青于蓝新聚能 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "深交所披露的浙江美力科技2025年年报以全称列出该有限合伙企业，并将其列为上海迅铂科技有限公司增资协议的签署方之一。年报未披露该合伙企业自身的单独出资额；本档案只记录主体身份、组织形式和该项交易关联，不将发行人合计增资金额归为该主体出资。",
+      "summary": "浙江美力科技2025年年报以“嘉兴青于蓝新聚能创业投资合伙企业(有限合伙)”列出该主体，并说明其为上海迅铂科技有限公司增资协议的签署方之一。报告未披露该主体的单独出资金额。",
+      "facts": [
+        {
+          "field": "legal_entity_name",
+          "label": "年报披露全称",
+          "value": "嘉兴青于蓝新聚能创业投资合伙企业(有限合伙)",
+          "source_id": "zhejiang-meili-2025-annual-qingyulan-20261006"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "source_id": "zhejiang-meili-2025-annual-qingyulan-20261006",
+          "description": "浙江美力科技年报将该主体列为上海迅铂科技有限公司增资协议的签署方之一；报告披露的是浙江美力科技合计增资15,000,000元并取得5.3543%股权，未披露该合伙企业的单独出资额。"
+        },
         {
           "description": "融资来源记录：智诊科技 · 天使轮 · 2026-05-06 · 本轮参投 · 6500万元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-de96c365c469f319"
@@ -152,6 +163,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "zhejiang-meili-2025-annual-qingyulan-20261006",
+          "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-10/f362fc0e-8bfd-4ff5-9939-2be17b752ed2.PDF",
+          "source_title": "浙江美力科技股份有限公司 2025 年年度报告全文",
+          "source_content_hash": "f6d32584ee5a4950687d4e9162efbf03c822325cae5dd1ac3ab2004bb1f5cf84",
+          "quote": "根据 2025 年 7 月公司、上海迅铂科技有限公司、上海浦东天使创业投资合伙企业(有限合伙)、嘉兴青于蓝新聚能创业投资合伙企业(有限合伙)、刘海珍、朱心放签订的《上海迅铂科技有限公司增资协议》以及 2025 年 11 月公司、上海迅铂科技有限公司、刘海珍、朱心放签订的《上海迅铂科技有限公司增资协议》，公司合计对上海迅铂科技有限公司增资 15,000,000.00 元并取得上海迅铂科技有限公司 5.3543%股权。",
+          "quote_hash": "44bb9e1da46cb9042f2996d2a330003cd0d7d74657e647f0109508b0dcdfbde2"
+        },
         {
           "source_id": "FISRC-de96c365c469f319",
           "source_url": "https://news.pedaily.cn/202605/563449.shtml",
@@ -161,7 +180,7 @@
           "quote_hash": "20be3caeb65867c0751ee2791686399a069bc57eb1dc23b1a8d559e4d64a44df"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

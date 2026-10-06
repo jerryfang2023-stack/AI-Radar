@@ -175,12 +175,36 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Intel 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构背景来自 Intel Capital 官方资料；队列原始标签“Intel”与 Eliyan 同一轮官方披露中的“Intel Capital”按公司、轮次和日期映射，案例仅表示该披露，不代表完整投资组合。",
+      "summary": "本条原始投资人标签为“Intel”。Eliyan 官方公告将其 2022 年 11 月 8 日 4000 万美元 Series A 的战略投资者列为 Intel Capital，所披露公司、轮次及日期与本库对应活动记录一致。Intel Capital 官网自述专注早期 AI 与深科技投资，领域包括云、设备、前沿技术和半导体。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "early-stage investments",
+          "source_id": "intelcapital-home-20261006"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": [
+            "AI",
+            "deep tech",
+            "Cloud",
+            "Devices",
+            "Frontier",
+            "Silicon"
+          ],
+          "source_id": "intelcapital-home-20261006"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Eliyan 官方公告将 Intel Capital 列为 Eliyan 2022 年 Series A 的战略投资者。",
+          "source_id": "eliyan-seriesa-2022-20261006"
+        },
         {
           "description": "融资来源记录：Eliyan Corporation · 历史轮次未披露 · Series A 参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e3c849f55d66222"
@@ -190,8 +214,47 @@
           "source_id": "FISRC-8dc1d59b723b2466"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Managing Partner and Head of Intel Capital",
+          "organization": "Intel Capital",
+          "source_id": "intelcapital-team-20261006"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Intel Capital 官网",
+          "value": "https://www.intelcapital.com/",
+          "url": "https://www.intelcapital.com/",
+          "source_id": "intelcapital-home-20261006"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "intelcapital-home-20261006",
+          "source_url": "https://www.intelcapital.com/",
+          "source_title": "Intel Capital",
+          "source_content_hash": "f1a32daecf5213298becea72c67206c0faecb208adff36082500ce7bcecffa91",
+          "quote": "We lead early-stage investments in emerging AI and deep tech category leaders redefining the future of Cloud , Devices , Frontier & Silicon .",
+          "quote_hash": "1962cb51993daa4761457f3c4da0baf4bad98669864904bd652baae8566dcc16"
+        },
+        {
+          "source_id": "intelcapital-team-20261006",
+          "source_url": "https://www.intelcapital.com/team/anthony-lin/",
+          "source_title": "Anthony Lin – Intel Capital",
+          "source_content_hash": "fef1e5082d28edca03772955013636bf84aa1059cbdcb35beafd8e297f537354",
+          "quote": "Anthony Lin is Managing Partner and Head of Intel Capital and is located in the San Francisco Bay Area, joining the company in 2008.",
+          "quote_hash": "972e8db773a012507f9adde2e251b59f0ce801cdddbd3828f04fd1a8e79b86e5"
+        },
+        {
+          "source_id": "eliyan-seriesa-2022-20261006",
+          "source_url": "https://eliyan.com/press-release/eliyan-closes-40m-series-a-funding-round-and-unveils-industrys-highest-performance-chiplet-interconnect-technologies/",
+          "source_title": "Eliyan Closes $40M Series A Funding Round and Unveils Industry’s Highest Performance Chiplet Interconnect Technologies - Eliyan",
+          "source_content_hash": "c43aff047c00ba262db78980983840890497c8416f11d14ea2b5f4dc1c175e5f",
+          "quote": "Series A funding round raises $40m led by Tracker Capital with additional investment from Celesta Capital and strategic investors including Intel Capital and Micron Ventures",
+          "quote_hash": "5e5242657e0cc72c9d83fc02512cef92eb1b44d715c9274f283d1bb0d64d2105"
+        },
         {
           "source_id": "FISRC-2e3c849f55d66222",
           "source_url": "https://startupintros.com/orgs/eliyan",
@@ -209,7 +272,7 @@
           "quote_hash": "c209bad1155390460b5db404884aeceaf01216b6299e47905d83dd5c23f4e243"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

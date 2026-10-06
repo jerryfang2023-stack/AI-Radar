@@ -124,11 +124,22 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Groww Founder Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Ringg AI 官方公告将 Groww Founder Fund 列为其 Series A 参与方。现有一手材料只确认该投资方标签和这次活动，不据此推定其为独立法律基金或管理实体。",
+      "coverage_note": "按 Ringg AI 官方公告中的名称原样记录；不推断 Groww Founder Fund 的法律载体、管理人或其他投资活动，也不将整轮融资额归于该方。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "被投方披露的融资参与",
+          "value": "Ringg AI 官方公告将 Groww Founder Fund 列为 Series A 参与方。",
+          "source_id": "INV-c2792c91f678b6"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Ringg AI 官方公告称其完成 550 万美元 Series A，并将 Groww Founder Fund 列为参与方；该金额为整轮融资额。",
+          "source_id": "INV-c2792c91f678b6"
+        },
         {
           "description": "融资来源记录：Ringg · 历史轮次未披露 · Series A参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5d8eb24ecea69660"
@@ -136,6 +147,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "INV-c2792c91f678b6",
+          "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+          "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+          "source_content_hash": "d803fff59e089ee1e70819150b860cd14d2a9cb82c53d07b08efcb2b79804791",
+          "quote": "with participation from Groww Founder Fund , Kunal Shah , Whitecap Ventures , and Capital2B .",
+          "quote_hash": "4f0dcb4a26dc8d5064b810fe8c18fb490045da92bb537a2dd928a44cf935115c"
+        },
         {
           "source_id": "FISRC-5d8eb24ecea69660",
           "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
@@ -145,7 +164,7 @@
           "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

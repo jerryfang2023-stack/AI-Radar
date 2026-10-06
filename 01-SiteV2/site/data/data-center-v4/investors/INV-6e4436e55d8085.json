@@ -124,10 +124,41 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "国家集成电路产业投资基金 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "本档案仅整理财政部网页于2014年发布的历史设立及投资方向。原文未提供具体投资案例，不据此确认当前管理关系、当前投资组合或任何特定融资交易。",
+      "summary": "财政部2014年设立公告记录，国家集成电路产业投资基金股份有限公司于2014年9月24日由发起人签署协议和章程后正式设立，采取公司制，重点投资集成电路芯片制造业并兼顾设计、封装测试、设备和材料。此处仅反映公告当时披露的情况，不代表当前基金管理或投资组合。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "公告所载全称",
+          "value": "国家集成电路产业投资基金股份有限公司",
+          "source_id": "mof_entity_name"
+        },
+        {
+          "field": "organization_form_2014",
+          "label": "2014年组织形式",
+          "value": "财政部公告称基金将采取公司制形式。",
+          "source_id": "mof_form"
+        },
+        {
+          "field": "investment_focus_2014",
+          "label": "2014年披露的投资方向",
+          "value": "重点投资集成电路芯片制造业，兼顾芯片设计、封装测试、设备和材料等产业。",
+          "source_id": "mof_focus"
+        },
+        {
+          "field": "operating_model_2014",
+          "label": "2014年披露的运作方式",
+          "value": "公告称实施市场化运作、专业化管理。",
+          "source_id": "mof_focus"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014-09-24",
+          "description": "发起人签署基金发起人协议和章程，公告称标志基金正式设立；财政部网页发布日期为2014-10-14。",
+          "source_id": "mof_establishment"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 洽谈主导首轮外部融资。这是本库收录的披露案例，不代表完整投资组合。",
@@ -135,7 +166,43 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "mof_entity_name",
+          "source_url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/201410/t20141014_1149902.htm",
+          "source_title": "国家集成电路产业投资基金正式设立",
+          "source_content_hash": "04731832e599bb8973a42c28ca5bf6152fbb49c541526849b7653d81399faf4a",
+          "quote": "国家集成电路产业投资基金股份有限公司",
+          "quote_hash": "e79a284ab5b829799e1390a3c8ef3ead2fbf1377e07a0adca0cfd7be012edae7"
+        },
+        {
+          "source_id": "mof_form",
+          "source_url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/201410/t20141014_1149902.htm",
+          "source_title": "国家集成电路产业投资基金正式设立",
+          "source_content_hash": "04731832e599bb8973a42c28ca5bf6152fbb49c541526849b7653d81399faf4a",
+          "quote": "国家集成电路产业投资基金将采取公司制形式。",
+          "quote_hash": "e31c2cb02fb3337c3a2f71df7bb4e405cb6c1216466abf4bbd45ab66b21a9ca2"
+        },
+        {
+          "source_id": "mof_establishment",
+          "source_url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/201410/t20141014_1149902.htm",
+          "source_title": "国家集成电路产业投资基金正式设立",
+          "source_content_hash": "04731832e599bb8973a42c28ca5bf6152fbb49c541526849b7653d81399faf4a",
+          "quote": "在工信部、财政部的指导下，９月２４日，国开金融有限责任公司、中国烟草总公司、北京亦庄国际投资发展有限公司、中国移动通信集团公司、上海国盛（集团）有限公司、中国电子科技集团公司、北京紫光通信科技集团有限公司、华芯投资管理有限责任公司等共同签署了《国家集成电路产业投资基金股份有限公司发起人协议》和《国家集成电路产业投资基金股份有限公司章程》，标志着国家集成电路产业投资基金正式设立。",
+          "quote_hash": "ee31e8c069fe17396ef2ad1559c4804862d016be3aa431fee1967c7af1eb0167"
+        },
+        {
+          "source_id": "mof_focus",
+          "source_url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/201410/t20141014_1149902.htm",
+          "source_title": "国家集成电路产业投资基金正式设立",
+          "source_content_hash": "04731832e599bb8973a42c28ca5bf6152fbb49c541526849b7653d81399faf4a",
+          "quote": "基金重点投资集成电路芯片制造业，兼顾芯片设计、封装测试、设备和材料等产业，实施市场化运作、专业化管理，努力为投资人创造良好回报。",
+          "quote_hash": "f45c3071b4d8821a7555a80b67e78e404dc468461b8e0bf1d9a1855db510e556"
+        },
         {
           "source_id": "FISRC-d28724a1e6a3c6d4",
           "source_url": "https://www.21jingji.com/article/20260507/herald/be3cf711cdfe8b63a1bdf39c21879cc6.html",
@@ -145,7 +212,7 @@
           "quote_hash": "e964de30cfb27d6aac93974c49845036c4d444140890219aa2a52e4282ca01f1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

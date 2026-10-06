@@ -134,14 +134,49 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "联和资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "厦门市联和股权投资基金管理有限公司（联和资本）是2017年成立的股权投资基金管理公司。官网称其专注集成电路领域，覆盖半导体材料、设备、EDA、IC设计到封装测试；官网2026年1月披露其管理五只基金、累计运营规模逾22亿元，并列出已上市及成长型投资项目。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "身份、投资方向、基金规模及案例均依公司官网自述记录；未把基金规模当作单只基金规模或投资回报。",
+      "facts": [
+        {
+          "value": "厦门市联和股权投资基金管理有限公司",
+          "field": "legal_entity",
+          "label": "法定管理机构",
+          "source_id": "lh-about-20261006"
+        },
+        {
+          "value": "2017年",
+          "field": "established",
+          "label": "成立时间",
+          "source_id": "lh-about-20261006"
+        },
+        {
+          "value": "集成电路及半导体全产业链，涵盖材料、设备、EDA、IC设计和封装测试。",
+          "field": "investment_focus",
+          "label": "投资方向",
+          "source_id": "lh-about-20261006"
+        },
+        {
+          "value": "五只基金，包括联和一期、二期、三期、四期集成电路专项基金及乾京基金；累计运营基金规模逾22亿元（官网2026年1月披露）。",
+          "field": "managed_funds",
+          "label": "官网披露的管理基金",
+          "source_id": "lh-news-227-20261006"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-11-11",
+          "description": "官网新闻目录收录联和资本投资长沙驰芯Pre-A轮融资的公告。",
+          "source_id": "lh-deal-list-20261006"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网2026年1月披露的投资项目包括甬矽电子、炬芯科技、天德钰、星宸科技、上海合晶等已上市企业，并列出强一股份、京隆科技、绿菱气体等项目。",
+          "source_id": "lh-news-227-20261006"
+        },
         {
           "description": "融资来源记录：驰芯半导体 · 历史轮次未披露 · Pre-A轮投资。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d7c3cbdfafeaf4fc"
@@ -149,6 +184,38 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "lh-about-20261006",
+          "source_title": "厦门市联和股权投资基金管理有限公司",
+          "quote_hash": "8b4ba812a23a3f018d3a1b206eeb1ad81e8a30197f732c1c8b87ec885de449ba",
+          "source_url": "https://lanhor.com/about/",
+          "quote": "厦门市联和股权投资基金管理有限公司，简称“联和资本”，成立于2017年，是由聚焦先进制造业投资的中亿资本牵头发起成立的股权投资基金管理公司。",
+          "source_content_hash": "c587682bdb4e2013725990ce18a0f0d80419b9b4cdb1b9c908a1dd93a43019a3"
+        },
+        {
+          "source_id": "lh-strategy-20261006",
+          "source_title": "厦门市联和股权投资基金管理有限公司",
+          "quote_hash": "4aca4b34f17cfe8ef541b3c29767263e00a9f038340ed396c5eb87f630aeab36",
+          "source_url": "https://lanhor.com/about/",
+          "quote": "联和资本秉承“行稳致远、开放合作、专业专注”的企业价值观，全领域布局半导体产业，从材料、设备、EDA、IC设计到封装测试积极创造协同效应，与被投企业建立深厚的战略合作关系，共同打造集成电路生态圈。",
+          "source_content_hash": "c587682bdb4e2013725990ce18a0f0d80419b9b4cdb1b9c908a1dd93a43019a3"
+        },
+        {
+          "source_id": "lh-news-227-20261006",
+          "source_title": "联和资本荣获融中2025年中国创业投资机构TOP100等三项大奖",
+          "quote_hash": "96680a344b5a36f3cf4f081a5e1d15354fa0bcb3618c2e42cd87fc46560439c0",
+          "source_url": "https://lanhor.com/news/227.html",
+          "quote": "联和资本旗下共管理五只基金，包括联和一期、二期、三期、四期集成电路专项基金和乾京基金，累计运营基金规模逾22亿元。",
+          "source_content_hash": "c10eaf2655838a74709239ffcc039b4bba99f2665eb9c5b77e73b3c6b76bbce7"
+        },
+        {
+          "source_id": "lh-deal-list-20261006",
+          "source_title": "厦门市联和股权投资基金管理有限公司 | 新闻资讯",
+          "quote_hash": "3322a4092ace9456b77d32bdb1798f80dc908ad0a1ef2d2806fc86ab0a95b951",
+          "source_url": "https://lanhor.com/news/lists_70_8.html",
+          "quote": "联和资本完成对长沙驰芯Pre-A轮融资",
+          "source_content_hash": "2b399f5a32215e25cb6c8d6b44572086db02fc4e68810f8ac7ac8b17280718f3"
+        },
         {
           "source_id": "FISRC-d7c3cbdfafeaf4fc",
           "source_url": "https://m.jobui.com/company/16905688/financing/",
@@ -158,7 +225,7 @@
           "quote_hash": "060f851f4ecabbd02f43d78b7a5c3e14438976a439f01cc5d07b9702463ec114"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

@@ -137,21 +137,98 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Soma 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "原始投资人标签为“Soma”；Starcloud 官方主页在“Backed by”区域列出 Soma Capital 标识，Soma 官网页脚自称 Soma Capital Management LLC。投资规模与阶段均为官网自述，组合案例仅按公开披露记录。",
+      "summary": "Starcloud 官方主页将 Soma Capital 列于“Backed by”标识区，支持把该轮资料中的简称“Soma”映射到 Soma Capital。Soma 官网页脚标示主体为 Soma Capital Management LLC；其官网自述为种子阶段投资者，拥有 20 人团队、管理 $1B 资产，并覆盖 1,000 余家组合公司。",
+      "facts": [
+        {
+          "field": "legal_entity_name",
+          "label": "官网页脚披露主体",
+          "value": "Soma Capital Management LLC",
+          "source_id": "soma-about-legal-20261006"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段（官网自述）",
+          "value": "seed stage",
+          "source_id": "soma-about-stage-20261006"
+        },
+        {
+          "field": "team_and_aum",
+          "label": "团队与管理规模（官网自述）",
+          "value": "20-person team; $1B AUM",
+          "source_id": "soma-about-scale-20261006"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "组合规模（官网自述）",
+          "value": "over 1,000 portfolio companies",
+          "source_id": "soma-about-stage-20261006"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Starcloud 官方主页在其“Backed by”区域列出 Soma Capital 标识。",
+          "source_id": "starcloud-soma-backer-20261006"
+        },
         {
           "description": "融资来源记录：Starcloud · A轮扩展 · 2026-08-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05f582b31c0a37a3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Soma Capital 官网",
+          "value": "https://somacap.com/",
+          "url": "https://somacap.com/",
+          "source_id": "soma-about-scale-20261006"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "starcloud-backed-heading-20261006",
+          "source_url": "https://www.starcloud.com/",
+          "source_title": "Data Centers in Space | Starcloud – The Future of AI",
+          "source_content_hash": "d0b658478ec6206196c588d5e43f305b532cc08a57cc006045d91d2520f33a6c",
+          "quote": "Backed by",
+          "quote_hash": "92b7b079ee18287f7d7e88d7ce94a48f7cb743f15de94092046af9cb9e0236dc"
+        },
+        {
+          "source_id": "starcloud-soma-backer-20261006",
+          "source_url": "https://www.starcloud.com/",
+          "source_title": "Data Centers in Space | Starcloud – The Future of AI",
+          "source_content_hash": "d0b658478ec6206196c588d5e43f305b532cc08a57cc006045d91d2520f33a6c",
+          "quote": "alt=\"Soma capital\"",
+          "quote_hash": "17e9bdf127a5269d8a9cfd6bc756f3b5b70ee700ba30d4916b4f33a759675458"
+        },
+        {
+          "source_id": "soma-about-scale-20261006",
+          "source_url": "https://somacap.com/about",
+          "source_title": "About | Soma Capital",
+          "source_content_hash": "ff6e22b1a7bbb34683372870c9f4e13497fcc976f1ca6ec8db25b6260a03085d",
+          "quote": "Aneel Ranadive is the founder of Soma Capital , which he started a decade ago; Soma now has a team of 20 and $1B AUM.",
+          "quote_hash": "dfeaa7d21814d44d5a57f86e3051baa9218bcf77b6568c92e29ac13a3249e579"
+        },
+        {
+          "source_id": "soma-about-stage-20261006",
+          "source_url": "https://somacap.com/about",
+          "source_title": "About | Soma Capital",
+          "source_content_hash": "ff6e22b1a7bbb34683372870c9f4e13497fcc976f1ca6ec8db25b6260a03085d",
+          "quote": "Soma has invested at the seed stage in 40+ startups valued at over $1B",
+          "quote_hash": "df56486e8e200ed3fd72e4cfde81a7a1a4966f3e84886b19f2791502b6532329"
+        },
+        {
+          "source_id": "soma-about-legal-20261006",
+          "source_url": "https://somacap.com/about",
+          "source_title": "About | Soma Capital",
+          "source_content_hash": "ff6e22b1a7bbb34683372870c9f4e13497fcc976f1ca6ec8db25b6260a03085d",
+          "quote": "Copyright © 2026 Soma Capital - Soma Capital Management LLC.",
+          "quote_hash": "4acce7db9e90455619d80bfafaefc1f134eb5d023be584a8e74ca2af4c54d236"
+        },
         {
           "source_id": "FISRC-05f582b31c0a37a3",
           "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
@@ -161,7 +238,7 @@
           "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

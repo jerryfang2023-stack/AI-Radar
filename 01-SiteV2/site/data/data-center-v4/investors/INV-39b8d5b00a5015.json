@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "正轩投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "现有一手证据为比亚迪2018年公开披露，仅用于确认法定名称、简称及当时披露的股权投资业务；不代表当前业务状态或完整投资组合。",
+      "summary": "比亚迪2018年深交所公告将“正轩投资”定义为深圳市正轩投资有限公司的简称，并称该公司从事股权投资业务。该来源可核实主体身份和当时披露的业务，不足以描述其当前投资策略或完整业绩。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "披露全称与简称",
+          "value": "深圳市正轩投资有限公司；比亚迪公告使用简称“正轩投资”。",
+          "source_id": "byd_zhengxuan_identity"
+        },
+        {
+          "field": "investment_activity_2018",
+          "label": "公告披露的业务",
+          "value": "比亚迪2018年公告称该公司从事股权投资业务。",
+          "source_id": "byd_zhengxuan_business"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +166,22 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "byd_zhengxuan_identity",
+          "source_url": "https://disc.static.szse.cn/disc/disk01/finalpage/2018-06-02/a903ccc3-1af4-4dc3-9bde-aafd5cdddf5b.PDF",
+          "source_title": "比亚迪股份有限公司关于公司董事减持股份的预披露公告",
+          "source_content_hash": "883e6965e3a199ff0c9f6885916da189b8eec1a453b21a9df743efec89224bb7",
+          "quote": "公司董事夏佐全先生创立深圳市正轩投资有限公司 （以下简称 “正轩投资” ） ，",
+          "quote_hash": "20041581c717e61b361bfd816253f3e978a553849a81fee0d4508fc70bf5e066"
+        },
+        {
+          "source_id": "byd_zhengxuan_business",
+          "source_url": "https://disc.static.szse.cn/disc/disk01/finalpage/2018-06-02/a903ccc3-1af4-4dc3-9bde-aafd5cdddf5b.PDF",
+          "source_title": "比亚迪股份有限公司关于公司董事减持股份的预披露公告",
+          "source_content_hash": "883e6965e3a199ff0c9f6885916da189b8eec1a453b21a9df743efec89224bb7",
+          "quote": "该公司从事股权投资业务。",
+          "quote_hash": "ba8f68b00755916cb0f93390456568d1c3a4a3273e2ad42415d1487a9eb1c69f"
+        },
+        {
           "source_id": "FISRC-61ee9829707c35ed",
           "source_url": "https://www.sohu.com/a/982756258_439726",
           "source_title": "半年融两轮，跨赴科技再获数千万融资",
@@ -161,7 +190,7 @@
           "quote_hash": "0de657f1bb636a004d8a14c20540cf6162536da48f108799e4bad51544901187"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

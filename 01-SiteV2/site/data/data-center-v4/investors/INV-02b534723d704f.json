@@ -140,11 +140,22 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Clutch Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Tangos AI 的发行方新闻稿将 Clutch Capital 列为种子轮参与方。现有一手材料只确认被投方披露的投资者名称和这一项活动，尚不能识别该名称对应的具体法律主体或管理人。",
+      "coverage_note": "本档案按 Tangos AI 发行方披露的投资者标签记录活动；未将其映射到同名的其他金融或投资实体，不推断法律载体、投资策略、其他项目或单家出资额。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "被投方披露的融资参与",
+          "value": "Tangos AI 发行方新闻稿将 Clutch Capital 列为种子轮参与投资方之一。",
+          "source_id": "tangos_2026_seed"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Tangos AI 发行方新闻稿称 Clutch Capital 参与其种子轮；公告未披露 Clutch Capital 的单家投资金额。",
+          "source_id": "tangos_2026_seed"
+        },
         {
           "description": "融资来源记录：NanoCo · 种子轮 · 2026-05-20 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2982fb466bfffcad"
@@ -152,6 +163,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "tangos_2026_seed",
+          "source_url": "https://www.prnewswire.com/news-releases/tangos-raises-20-million-seed-round-to-scale-financial-crime-investigations-with-autonomous-ai-302819433.html",
+          "source_title": "Tangos Raises $20 Million Seed Round to Scale Financial Crime Investigations with Autonomous AI",
+          "source_content_hash": "b9d452f291e88807221219229973599782330fbb93ab8ad87dafb58bc0c897c5",
+          "quote": "with participation from Leaders Fund, Clarim, Venture Israel, Signal Fire, Clutch Capital and Selah Ventures",
+          "quote_hash": "c66ac80950e8ae52b3fe6e004fcbe348c73003fface0eb0c3662a0643e286b6f"
+        },
         {
           "source_id": "FISRC-2982fb466bfffcad",
           "source_url": "https://www.calcalistech.com/ctechnews/article/r1rtwrjyme",
@@ -161,7 +180,7 @@
           "quote_hash": "e0999314b62d29ca41a85d93a2336b20c7d9922ec66cf9a4b41e1d233ffdf7d6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

@@ -124,11 +124,22 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Nuri Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "SambaNova 官方融资公告将 Nuri Capital 列为existing investor。该材料确认本次公开披露的投资方名称与活动；本档案不延伸为完整机构背景或法律主体映射。",
+      "coverage_note": "仅按SambaNova官方公告记录其使用的投资方标签；公告未披露该机构的单家出资额或完整法律/管理结构，不据名称推断同名机构、管理人、投资策略或其他项目。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "SambaNova Series E 参与情况",
+          "value": "SambaNova 将 Nuri Capital 列为参与 Series E 融资的既有投资者。",
+          "source_id": "sambanova_series_e"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "SambaNova 官方 Series E 融资公告称其参与该轮融资的既有投资方；公告未披露Nuri Capital的单家出资金额。",
+          "source_id": "sambanova_series_e"
+        },
         {
           "description": "融资来源记录：SambaNova · 历史轮次未披露 · 既有投资者参与本轮。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d47a3aba63bc33dc"
@@ -136,6 +147,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "sambanova_series_e",
+          "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m?hs_amp=true",
+          "source_title": "SambaNova Unveils Fastest Chip for Agentic AI, Collaborates with Intel, and Raises $350M+",
+          "source_content_hash": "a9ffc1d28d21e2ee8eacd5e0867c1438d345b5634a8d674a37ef8a75e8958b9d",
+          "quote": "Existing investors participating include: A&E, 8Square, Atlantic Bridge, BlackRock, GV, Nepenthe, Nuri Capital, and Redline Capital.",
+          "quote_hash": "6a8a047c2802d955e749a731a26a2b27b5a2bede3a38a7b553c8955d9353f6d7"
+        },
         {
           "source_id": "FISRC-d47a3aba63bc33dc",
           "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
@@ -145,7 +164,7 @@
           "quote_hash": "6a8a047c2802d955e749a731a26a2b27b5a2bede3a38a7b553c8955d9353f6d7"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-06"
     }
   }
 }
