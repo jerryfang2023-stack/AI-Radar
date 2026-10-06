@@ -213,3 +213,52 @@ test('alternate source identity survives missing public checkpoint with and with
     assert.equal(resumed.entries[url].evidence_source_url,alternative);
   }
 });
+
+test('cross-day prepare-only interruption reuses private original without search or another round', async t => {
+  const options=fixture(t);seed(options);
+  const first=await verifyPending({...options,capture});
+  assert.equal(first.entries[url].followup.rounds,1);
+  for(const nextDate of ['2026-10-07','2026-10-12']) {
+    const later={...options,date:nextDate,directory:path.join(options.root,nextDate)};
+    write(path.join(later.directory,'collection.json'),{version:config.version,date:nextDate,accepted:true,captures:{},raw_ids:[],counts:{pending:0}});
+    const resumed=await verifyPending({...later,search:forbidden,capture:forbidden});
+    assert.equal(resumed.entries[url].status,'awaiting_fact_review');
+    assert.equal(resumed.entries[url].followup.rounds,1);
+    assert.equal(resumed.entries[url].content_hash,first.entries[url].content_hash);
+    assert.equal(read(path.join(later.directory,'supplemental.json')).raw_ids.length,1);
+    assert.equal(resumed.entries[url].followup.status,'pending');
+  }
+});
+
+test('fact completion is explicit and only recorded for raw present in gated fact output', async t => {
+  const options=fixture(t);seed(options);
+  const first=await verifyPending({...options,capture});
+  finishVerification(options);
+  const queueFile=path.join(options.backupRoot,'financing-monitor-state/verification-queue.json');
+  assert.equal(read(queueFile).entries[url].fact_review_completed,false);
+  write(path.join(options.root,`01-SiteV2/content/11-databases/data-center-v4/${date}/raw-documents.json`),[{raw_id:first.entries[url].raw_ids[0],content_hash:first.entries[url].content_hash,source_artifact_id:'S-real'}]);
+  finishVerification(options);
+  assert.equal(read(queueFile).entries[url].fact_review_completed,true);
+  const later={...options,date:'2026-10-07',directory:path.join(options.root,'next-day')};
+  write(path.join(later.directory,'collection.json'),{version:config.version,date:later.date,accepted:true,captures:{},raw_ids:[],counts:{pending:0}});
+  let searches=0;
+  const next=await verifyPending({...later,search:async()=>{searches++;return{status:'completed',items:[]};},capture:forbidden});
+  assert.equal(searches,1);
+  assert.equal(next.entries[url].followup.rounds,2);
+  assert.equal(next.entries[url].followup.status,'needs_attention');
+});
+
+
+test('cross-day recovery keeps reviewed alternate source binding before admission', async t => {
+  const options=fixture(t);seed(options);
+  const alternative='https://example.com/issuer';
+  write(path.join(options.directory,'lead-review.json'),{version:'FINANCING-LEAD-REVIEW-1',date,rows:[{id:1,url,title:'Acme AI financing',status:'pending_ai_scope',reason:'unknown',reviewed_at:date,additional_source:alternative,source_binding:{source_url:alternative,reviewed_by:'responsible reviewer',reviewed_at:date,reason:'same issuer and round'}}]});
+  await verifyPending({...options,capture});
+  const later={...options,date:'2026-10-07',directory:path.join(options.root,'next-day')};
+  write(path.join(later.directory,'collection.json'),{version:config.version,date:later.date,accepted:true,captures:{},raw_ids:[],counts:{pending:0}});
+  const resumed=await verifyPending({...later,search:forbidden,capture:forbidden});
+  assert.equal(resumed.entries[url].evidence_source_url,alternative);
+  assert.equal(resumed.entries[url].alternate_source,true);
+  assert.equal(resumed.entries[url].source_identity_reviewed,true);
+  assert.equal(resumed.entries[url].followup.rounds,1);
+});
