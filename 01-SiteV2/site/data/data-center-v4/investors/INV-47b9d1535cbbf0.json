@@ -137,21 +137,76 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "力合金控 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "深交所披露的招股说明书将深圳力合金融控股股份有限公司简称为力合金控，并披露其通过持有力合智汇51%股权参与管理东升投资，且全资持有深圳力合融通创业投资有限公司。此处只录入文件披露的历史结构，不据此确认其与2026年Kando AI融资活动的关系。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "深圳力合金融控股股份有限公司",
+          "source_id": "lihe-prospectus"
+        },
+        {
+          "field": "venture_subsidiary",
+          "label": "全资创投子公司",
+          "value": "全资持有深圳力合融通创业投资有限公司。",
+          "source_id": "lihe-prospectus-subsidiary"
+        },
+        {
+          "field": "fund_manager_control",
+          "label": "基金管理主体关系",
+          "value": "持有东升投资执行事务合伙人深圳力合智汇创新基金管理有限公司51%股份。",
+          "source_id": "lihe-prospectus-gp"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "招股说明书披露，在该次发行前，力合金控通过相关持股结构合计控制发行人0.72%股权；该披露反映特定发行人的历史股权关系，不代表其完整投资组合。",
+          "source_id": "lihe-prospectus-equity"
+        },
         {
           "description": "融资来源记录：Kando AI · 种子轮 · 2026-07-28 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7b1743cd84f76d48"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅核验法定简称及招股说明书披露的历史投资管理/持股结构；未确认队列关联的2026年Kando AI融资活动。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "lihe-prospectus",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc/RAS_000172CDEB1B8E3FE21A2036C1F4223F.pdf",
+          "source_title": "深水海纳水务集团股份有限公司招股说明书（深圳证券交易所披露PDF相关页摘录）",
+          "source_content_hash": "e571896cafa4c34b8bbab1bb49b7212812288682a9054a26bacf9c06b42e2d81",
+          "quote": "深圳力合金融控股股份有限公司（以下简称力合金控）系东升投资普通合伙人力合智汇的控股股东。",
+          "quote_hash": "4b018ce0a745706a4448dd6603ac167131aff524710a99a2b1e1f45057e3a72d"
+        },
+        {
+          "source_id": "lihe-prospectus-subsidiary",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc/RAS_000172CDEB1B8E3FE21A2036C1F4223F.pdf",
+          "source_title": "深水海纳水务集团股份有限公司招股说明书（深圳证券交易所披露PDF相关页摘录）",
+          "source_content_hash": "e571896cafa4c34b8bbab1bb49b7212812288682a9054a26bacf9c06b42e2d81",
+          "quote": "力合金控持股100.00%",
+          "quote_hash": "4d50cc6ac7f307d973af33afea76232a2ded2042b39e4e5bb23bf34dec1cc0e1"
+        },
+        {
+          "source_id": "lihe-prospectus-equity",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc/RAS_000172CDEB1B8E3FE21A2036C1F4223F.pdf",
+          "source_title": "深水海纳水务集团股份有限公司招股说明书（深圳证券交易所披露PDF相关页摘录）",
+          "source_content_hash": "e571896cafa4c34b8bbab1bb49b7212812288682a9054a26bacf9c06b42e2d81",
+          "quote": "深圳力合金融控股股份有限公司合计控制公司 0.72%股权。",
+          "quote_hash": "3f4167308f1e15259eeda48b3b0cd1ebf42c220e8d155e80a3d7522447694a27"
+        },
+        {
+          "source_id": "lihe-prospectus-gp",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc/RAS_000172CDEB1B8E3FE21A2036C1F4223F.pdf",
+          "source_title": "深水海纳水务集团股份有限公司招股说明书（深圳证券交易所披露PDF相关页摘录）",
+          "source_content_hash": "e571896cafa4c34b8bbab1bb49b7212812288682a9054a26bacf9c06b42e2d81",
+          "quote": "深圳力合金融控股股份有限公司持有公司股东东升投资的执行事务合伙人深圳力合智汇创新基金管理有限公司 51.00%股份",
+          "quote_hash": "55ff58b13688b74aeb563e83defdc58c6b6d5feeb5c4df9ee858d18dede20e45"
+        },
         {
           "source_id": "FISRC-7b1743cd84f76d48",
           "source_url": "https://eu.36kr.com/zh/p/3915057199535233",

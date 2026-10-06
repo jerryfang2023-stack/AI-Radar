@@ -137,21 +137,82 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Holly Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Holly Ventures官网介绍其为由John Brennan管理的$33M种子阶段风险投资基金，专注网络安全早期创业公司；Glow于2026年7月公布的$180M融资公告将其列为参与方之一。",
+      "facts": [
+        {
+          "field": "fund_size",
+          "label": "官网自述基金规模",
+          "value": "$33M seed stage fund",
+          "source_id": "holly-about"
+        },
+        {
+          "field": "stage_focus",
+          "label": "投资阶段",
+          "value": "Seed",
+          "source_id": "holly-about"
+        },
+        {
+          "field": "sector_focus",
+          "label": "投资方向",
+          "value": "网络安全",
+          "source_id": "holly-about"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "地域重点",
+          "value": "全球，重点关注以色列",
+          "source_id": "holly-about"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Glow公告称Holly Ventures参与其$180M融资；公告未披露单方投资金额。",
+          "source_id": "holly-glow"
+        },
         {
           "description": "融资来源记录：Glow · A轮 · 2026-07-22 · 本轮参投 · $180 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e192dd3fe1a72590"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金规模、策略和地域均按官网自述标记；公开融资活动仅列已核实的一项。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "hollyventures.com",
+          "url": "https://www.hollyventures.com/",
+          "source_id": "holly-about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "holly-about",
+          "source_url": "https://www.hollyventures.com/about",
+          "source_title": "Holly Ventures – About",
+          "source_content_hash": "8c1ec711364dea41cf86e9864f2b7b3218d930131962a2df27916aaac28a8ce6",
+          "quote": "John Brennan is the Founder & Managing Partner of Holly Ventures, a $33M seed stage venture capital fund that exclusively invests in and supports cybersecurity entrepreneurs at their earliest stages.",
+          "quote_hash": "a2c5a75bd761b98df9cbd860ae0118ad426529406933e5923015823167288874"
+        },
+        {
+          "source_id": "holly-thesis",
+          "source_url": "https://www.hollyventures.com/about",
+          "source_title": "Holly Ventures – About",
+          "source_content_hash": "8c1ec711364dea41cf86e9864f2b7b3218d930131962a2df27916aaac28a8ce6",
+          "quote": "Stage focus: Seed Sector focus: Cybersecurity Geographic focus: Global, with an emphasis on Israel",
+          "quote_hash": "fbf72a9cadf9df81c3251d3af4956f52871c515a5e4f00313c2d4165fe6aab92"
+        },
+        {
+          "source_id": "holly-glow",
+          "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+          "source_title": "Glow Emerges From Stealth to Reinvent Endpoint Security in the AI Era",
+          "source_content_hash": "8af39c2235e2fcac25eb9d0ee59d5daee20fd32944bbd6f170d4e3680210f0dc",
+          "quote": "JULY 22, 2026, 6:00 AM ET TEL AVIV, Israel and PALO ALTO, Calif., July 22, 2026 - Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach. The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+          "quote_hash": "4f998882a7b20d7988d803d86f4e161aa224f1150cbfa2bacc8498509249e97e"
+        },
         {
           "source_id": "FISRC-e192dd3fe1a72590",
           "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",

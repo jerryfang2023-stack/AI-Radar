@@ -121,12 +121,26 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "SambaNova 官方融资公告将 Atlantic Bridge 列为existing investor。该材料确认本次公开披露的投资方名称与活动；本档案不延伸为完整机构背景或法律主体映射。",
-      "coverage_note": "仅按SambaNova官方公告记录其使用的投资方标签；公告未披露该机构的单家出资额或完整法律/管理结构，不据名称推断同名机构、管理人、投资策略或其他项目。",
+      "summary": "Atlantic Bridge官网将其定位为跨境增值型成长股权投资机构，投资欧洲、英国和美国的深科技公司。SambaNova发行方公告将Atlantic Bridge列为其$350M+ Series E融资的既有投资方。",
       "facts": [
+        {
+          "field": "investment_style",
+          "label": "投资方式",
+          "value": "Growth equity，跨境增值",
+          "source_id": "ab-home"
+        },
+        {
+          "field": "geographies",
+          "label": "投资地域",
+          "value": "欧洲、英国和美国",
+          "source_id": "ab-home"
+        },
+        {
+          "field": "sectors",
+          "label": "投资方向",
+          "value": "深科技",
+          "source_id": "ab-home"
+        },
         {
           "field": "investment_activity",
           "label": "SambaNova Series E 参与情况",
@@ -137,21 +151,49 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "SambaNova 官方 Series E 融资公告称其参与该轮融资的既有投资方；公告未披露Atlantic Bridge的单家出资金额。",
-          "source_id": "sambanova_series_e"
+          "description": "SambaNova公告称Atlantic Bridge参与其$350M+ Series E融资，并将其列为既有投资方。",
+          "source_id": "ab-sambanova"
         },
         {
           "description": "融资来源记录：SambaNova · 历史轮次未披露 · 既有投资者参与本轮。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d47a3aba63bc33dc"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构策略和地域来自官网自述；仅列一项由被投公司发行方披露的融资活动。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "abven.com",
+          "url": "https://abven.com/",
+          "source_id": "ab-home"
+        }
+      ],
       "sources": [
         {
           "source_id": "sambanova_series_e",
           "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m?hs_amp=true",
           "source_title": "SambaNova Unveils Fastest Chip for Agentic AI, Collaborates with Intel, and Raises $350M+",
           "source_content_hash": "a9ffc1d28d21e2ee8eacd5e0867c1438d345b5634a8d674a37ef8a75e8958b9d",
+          "quote": "Existing investors participating include: A&E, 8Square, Atlantic Bridge, BlackRock, GV, Nepenthe, Nuri Capital, and Redline Capital.",
+          "quote_hash": "6a8a047c2802d955e749a731a26a2b27b5a2bede3a38a7b553c8955d9353f6d7"
+        },
+        {
+          "source_id": "ab-home",
+          "source_url": "https://abven.com/",
+          "source_title": "Homepage – Atlantic Bridge",
+          "source_content_hash": "381cd4bbd5c6b5703600e335a230d45db1761261980928cfd4404471b47707f6",
+          "quote": "Atlantic Bridge is a Growth Equity Firm with a Cross Border Value Add strategy. We invest in deep technology companies in Europe, the UK and the US.",
+          "quote_hash": "8e48a602e36ffb1517a2ba6fbc3aee16320ab6ab346158e52bc9d6eba3edd7dc"
+        },
+        {
+          "source_id": "ab-sambanova",
+          "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+          "source_title": "SambaNova Unveils Fastest Chip for Agentic AI, Collaborates with Intel, and Raises $350M+",
+          "source_content_hash": "01c360b12c51d390127be46259b3262ec73f47fb2a2a8ff84e82f2165498c820",
           "quote": "Existing investors participating include: A&E, 8Square, Atlantic Bridge, BlackRock, GV, Nepenthe, Nuri Capital, and Redline Capital.",
           "quote_hash": "6a8a047c2802d955e749a731a26a2b27b5a2bede3a38a7b553c8955d9353f6d7"
         },
