@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 10,
+    "portfolio_company_count": 11,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,7 +74,7 @@
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 4,
-      "lead": 2,
+      "lead": 3,
       "participant": 8
     },
     "round_codes": [
@@ -131,6 +131,11 @@
         "entity_id": "EN-70e7e370d5a50ea1",
         "canonical_entity_id": "",
         "name": "Retym"
+      },
+      {
+        "entity_id": "EN-d1fa538179ba6371",
+        "canonical_entity_id": "",
+        "name": "Sail Research"
       },
       {
         "entity_id": "EN-29e1a488361f12d3",
@@ -338,6 +343,46 @@
             "source_content_hash": "e0e9398bf1a24e32",
             "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
             "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5fb8a3e113c4a86b",
+        "funding_insight_id": "FI-b4ed51811a14f812",
+        "event_ids": [
+          "EV-921c843ad32c993c"
+        ],
+        "company_entity_id": "EN-d1fa538179ba6371",
+        "company_canonical_entity_id": "",
+        "company_name": "Sail Research",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Seed and Series A",
+        "amount_original": "$80 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 80000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8000 万美元"
+        },
+        "announced_at": "2026-06-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "A轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-11ff205cb2054931",
+            "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
+            "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
+            "source_content_hash": "314c02d8610d1604",
+            "quote": "The Series A was led by Kleiner Perkins",
+            "quote_hash": "fddfe46cf72772289b60a71f74009798cb817f4b79003308f4ef6e0b38a1fb58"
           }
         ]
       },
@@ -755,6 +800,14 @@
         "source_content_hash": "e0e9398bf1a24e32",
         "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
         "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+      },
+      {
+        "source_id": "FISRC-11ff205cb2054931",
+        "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
+        "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
+        "source_content_hash": "314c02d8610d1604",
+        "quote": "The Series A was led by Kleiner Perkins",
+        "quote_hash": "fddfe46cf72772289b60a71f74009798cb817f4b79003308f4ef6e0b38a1fb58"
       },
       {
         "source_id": "FISRC-8f5a35fa6bbc977d",

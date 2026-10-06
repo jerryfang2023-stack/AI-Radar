@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 26,
+    "current_round_count": 27,
     "historical_or_ambiguous_count": 13,
-    "portfolio_company_count": 21,
+    "portfolio_company_count": 22,
     "market_regions": [
       "GLOBAL"
     ],
@@ -76,7 +76,7 @@
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 13,
-      "lead": 11,
+      "lead": 12,
       "other_current_round": 1,
       "participant": 12
     },
@@ -193,6 +193,11 @@
         "entity_id": "EN-cfd90af8403941bf",
         "canonical_entity_id": "",
         "name": "Sable"
+      },
+      {
+        "entity_id": "EN-d1fa538179ba6371",
+        "canonical_entity_id": "",
+        "name": "Sail Research"
       },
       {
         "entity_id": "EN-e4540a7c8404b1be",
@@ -697,6 +702,46 @@
             "source_content_hash": "7de5ccc4b9392027",
             "quote": "a $45 million financing round led by Sequoia Capital and 8VC",
             "quote_hash": "af34a0033840bdda36758eaf2b91beef489122297760365c644cdb1fde7e65f1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-400a5cf47ad5a12f",
+        "funding_insight_id": "FI-b4ed51811a14f812",
+        "event_ids": [
+          "EV-921c843ad32c993c"
+        ],
+        "company_entity_id": "EN-d1fa538179ba6371",
+        "company_canonical_entity_id": "",
+        "company_name": "Sail Research",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Seed and Series A",
+        "amount_original": "$80 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 80000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8000 万美元"
+        },
+        "announced_at": "2026-06-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-11ff205cb2054931",
+            "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
+            "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
+            "source_content_hash": "314c02d8610d1604",
+            "quote": "the Seed was led by Sequoia",
+            "quote_hash": "748365af413bdb57cb7af0f41091078e616e84eafee51da0d7e695b73b5beefe"
           }
         ]
       },
@@ -1791,6 +1836,14 @@
         "quote_hash": "af34a0033840bdda36758eaf2b91beef489122297760365c644cdb1fde7e65f1"
       },
       {
+        "source_id": "FISRC-11ff205cb2054931",
+        "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
+        "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
+        "source_content_hash": "314c02d8610d1604",
+        "quote": "the Seed was led by Sequoia",
+        "quote_hash": "748365af413bdb57cb7af0f41091078e616e84eafee51da0d7e695b73b5beefe"
+      },
+      {
         "source_id": "FISRC-8f5a35fa6bbc977d",
         "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
         "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
@@ -2109,7 +2162,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[26].role": {
+        "activities[27].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2117,7 +2170,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[28].role": {
+        "activities[29].role": {
           "text": "Series D 领投",
           "source_hash": "b1ad54c261addee1c044320cc302024b488ee22b0810e11ab5f9b281dda6d2b7",
           "provider": "deepseek",
@@ -2125,7 +2178,7 @@
           "translated_at": "2026-10-03T00:37:44.351Z",
           "status": "translated"
         },
-        "activities[30].role": {
+        "activities[31].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
@@ -2133,7 +2186,7 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[32].role": {
+        "activities[33].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

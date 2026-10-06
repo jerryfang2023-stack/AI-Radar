@@ -61,23 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-04",
-    "latest_disclosed_at": "2026-02-04",
+    "latest_disclosed_at": "2026-06-30",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 1,
+      "participant": 1
     },
     "round_codes": [
+      "multi_round",
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "FICO-etched",
+        "canonical_entity_id": "",
+        "name": "Etched"
+      },
       {
         "entity_id": "EN-0995103010d39563",
         "canonical_entity_id": "",
@@ -85,6 +92,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0c2b2811ff1925ce",
+        "funding_insight_id": "FI-d24e79349c1e9713",
+        "event_ids": [
+          "EV-040fc355bc12a750",
+          "EV-80e54c9a390da293"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮（含2025年12月由Stripes领投的5亿美元轮次及Jane Street领投的此前未披露轮次）",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-41379635293a6bc8",
+            "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
+            "source_title": "Nvidia Rival Etched Steps Out of Stealth With $5B Valuation - MIT Sloan Management Review Middle East",
+            "source_content_hash": "0fc2af151fdcca39",
+            "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum",
+            "quote_hash": "8a6562666516580b1caa4a5d94a4d08ad77dc1a7f457799e74cb1999cf57de54"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e955bfaf62e0fac2",
         "funding_insight_id": "FI-cfb62be40852ea40",
@@ -128,6 +176,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-41379635293a6bc8",
+        "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
+        "source_title": "Nvidia Rival Etched Steps Out of Stealth With $5B Valuation - MIT Sloan Management Review Middle East",
+        "source_content_hash": "0fc2af151fdcca39",
+        "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum",
+        "quote_hash": "8a6562666516580b1caa4a5d94a4d08ad77dc1a7f457799e74cb1999cf57de54"
+      },
+      {
         "source_id": "FISRC-272c28400131d6f2",
         "source_url": "https://techcrunch.com/2026/02/04/exclusive-positron-raises-230m-series-b-to-take-on-nvidias-ai-chips/",
         "source_title": "独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片",
@@ -153,6 +209,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮参投 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-41379635293a6bc8"
+        },
+        {
           "description": "融资来源记录：Positron AI · B轮 · 2026-02-04 · 本轮联合领投 · $230 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-272c28400131d6f2"
         }
@@ -170,6 +230,14 @@
           "source_content_hash": "37f15ccfcbdc20f3b34e9505c5aa084f753c29da2451180c8bcbc710826c3e62",
           "quote": "Jump Trading is a global trading firm where smart people build remarkable things.",
           "quote_hash": "f09203723431aca13e964ae0a26b64dc4ecadfdc24fb3031094e4c594e941206"
+        },
+        {
+          "source_id": "FISRC-41379635293a6bc8",
+          "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
+          "source_title": "Nvidia Rival Etched Steps Out of Stealth With $5B Valuation - MIT Sloan Management Review Middle East",
+          "source_content_hash": "0fc2af151fdcca39",
+          "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum",
+          "quote_hash": "8a6562666516580b1caa4a5d94a4d08ad77dc1a7f457799e74cb1999cf57de54"
         },
         {
           "source_id": "FISRC-272c28400131d6f2",

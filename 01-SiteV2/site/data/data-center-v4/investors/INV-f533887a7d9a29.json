@@ -61,22 +61,72 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-06-30",
+    "latest_disclosed_at": "2026-06-30",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "other_current_round": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-etched",
+        "canonical_entity_id": "",
+        "name": "Etched"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-5512bddc9fdfdc99",
+        "funding_insight_id": "FI-d24e79349c1e9713",
+        "event_ids": [
+          "EV-040fc355bc12a750",
+          "EV-80e54c9a390da293"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮（含2025年12月由Stripes领投的5亿美元轮次及Jane Street领投的此前未披露轮次）",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "天使投资人",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-ec090e2bf0f8f6e9",
+            "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+            "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+            "source_content_hash": "fa74de6f9a9e3ef8",
+            "quote": "Geoffrey Hinton, who won a Nobel Prize for foundational work in modern AI, is an investor.",
+            "quote_hash": "e3284780f4b58e0507b70a8e746e19926a935a0603cc8c4e28e18a939944b6a2"
+          }
+        ]
+      },
       {
         "activity_id": "IA-bb7d663e00cb32ec",
         "funding_insight_id": "FI-5153381171755c70",
@@ -111,6 +161,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-ec090e2bf0f8f6e9",
+        "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+        "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+        "source_content_hash": "fa74de6f9a9e3ef8",
+        "quote": "Geoffrey Hinton, who won a Nobel Prize for foundational work in modern AI, is an investor.",
+        "quote_hash": "e3284780f4b58e0507b70a8e746e19926a935a0603cc8c4e28e18a939944b6a2"
+      },
       {
         "source_id": "FISRC-b750a2ea9e7c7b76",
         "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
@@ -171,6 +229,10 @@
           "source_id": "hinton_toronto_bio"
         },
         {
+          "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 天使投资人 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ec090e2bf0f8f6e9"
+        },
+        {
           "description": "融资来源记录：Etched · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b750a2ea9e7c7b76"
         }
@@ -183,6 +245,14 @@
           "source_content_hash": "8c264b104c58e4b372f362270712994130e1104ba0059f0abd1651cb3fa664eb",
           "quote": "Geoffrey Hinton received his BA in Experimental Psychology from Cambridge in 1970 and his PhD in Artificial Intelligence from Edinburgh in 1978. He did postdoctoral work at Sussex University and the University of California San Diego and spent five years as a faculty member in the Computer Science department at Carnegie-Mellon University. He then became a fellow of the Canadian Institute for Advanced Research and moved to the Department of Computer Science at the University of Toronto. He spent three years from 1998 until 2001 setting up the Gatsby Computational Neuroscience Unit at University College London and then returned to the University of Toronto where he is now an emeritus distinguished professor. From 2004 until 2013 he was the director of the program on \"Neural Computation and Adaptive Perception\" which is funded by the Canadian Institute for Advanced Research. From 2013 to 2023 he worked half-time at Google where he became a Vice President and Engineering Fellow. Geoffrey Hinton is a fellow of the UK Royal Society, the Royal Society of Canada, the Association for the Advancement of Artificial Intelligence and a former president of the Cognitive Science Society.",
           "quote_hash": "ccf1355812804d2e10ddad5e7251af50fd603fcbb185e3791124ab512f61e5f2"
+        },
+        {
+          "source_id": "FISRC-ec090e2bf0f8f6e9",
+          "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+          "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+          "source_content_hash": "fa74de6f9a9e3ef8",
+          "quote": "Geoffrey Hinton, who won a Nobel Prize for foundational work in modern AI, is an investor.",
+          "quote_hash": "e3284780f4b58e0507b70a8e746e19926a935a0603cc8c4e28e18a939944b6a2"
         },
         {
           "source_id": "FISRC-b750a2ea9e7c7b76",

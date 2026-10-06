@@ -61,7 +61,7 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 2,
     "market_regions": [
@@ -73,9 +73,10 @@
     "latest_disclosed_at": "2026-06-30",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "multi_round",
       "series_a",
       "undisclosed"
     ],
@@ -92,6 +93,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c433eab19ac31498",
+        "funding_insight_id": "FI-d24e79349c1e9713",
+        "event_ids": [
+          "EV-040fc355bc12a750",
+          "EV-80e54c9a390da293"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮（含2025年12月由Stripes领投的5亿美元轮次及Jane Street领投的此前未披露轮次）",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ec090e2bf0f8f6e9",
+            "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+            "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+            "source_content_hash": "fa74de6f9a9e3ef8",
+            "quote": "backers include trading firm Jane Street and VentureTech Alliance, a venture firm with a strategic partnership with TSMC",
+            "quote_hash": "9cdfe79691adaf086be114ee099d09ffada42084df17058f21e7e432d1875d39"
+          }
+        ]
+      },
       {
         "activity_id": "IA-af6abadb8f55ae50",
         "funding_insight_id": "FI-5153381171755c70",
@@ -272,6 +314,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ec090e2bf0f8f6e9",
+        "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+        "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+        "source_content_hash": "fa74de6f9a9e3ef8",
+        "quote": "backers include trading firm Jane Street and VentureTech Alliance, a venture firm with a strategic partnership with TSMC",
+        "quote_hash": "9cdfe79691adaf086be114ee099d09ffada42084df17058f21e7e432d1875d39"
+      },
+      {
         "source_id": "FISRC-b750a2ea9e7c7b76",
         "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
         "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
@@ -371,8 +421,8 @@
           "source_id": "PROFILE-024ee5c1889645828e2e"
         },
         {
-          "description": "融资来源记录：Ayar Labs · 历史轮次未披露 · 既有战略投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5b6c7c4ae002a992"
+          "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮参投 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ec090e2bf0f8f6e9"
         }
       ],
       "contacts": [],
@@ -426,12 +476,12 @@
           "quote_hash": "281c8a85b5252f647eebafb6043ff221ff94481a91011242bd02bc377bd0f7cf"
         },
         {
-          "source_id": "FISRC-5b6c7c4ae002a992",
-          "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
-          "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
-          "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
-          "quote": "strategic investors including AMD, Alchip Technologies, MediaTek, NVIDIA, and VentureTech Alliance",
-          "quote_hash": "22df229dec2f766046e86f453cd1ef2b3cf8439afa77dec96458df7721f4c4d5"
+          "source_id": "FISRC-ec090e2bf0f8f6e9",
+          "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+          "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+          "source_content_hash": "fa74de6f9a9e3ef8",
+          "quote": "backers include trading firm Jane Street and VentureTech Alliance, a venture firm with a strategic partnership with TSMC",
+          "quote_hash": "9cdfe79691adaf086be114ee099d09ffada42084df17058f21e7e432d1875d39"
         }
       ],
       "last_verified_at": "2026-10-03",

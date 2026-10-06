@@ -4,8 +4,8 @@
   "stages": {
     "research": {
       "ok": true,
-      "key": "2d790d399de480a09ef91d8e65dc99ebfcf4a245b3b1b832c0c9bec3cc0d9834",
-      "at": "2026-10-06T04:10:12.448Z"
+      "key": "556bab3f68bf0a925aed34b874a4ee3c6fc0766050015c2179f24632edbde209",
+      "at": "2026-10-06T04:52:04.108Z"
     },
     "facts": {
       "ok": true,
@@ -14,21 +14,20 @@
     },
     "projections": {
       "ok": true,
-      "key": "fb47582a5511dcc02b858fb191998761c5bf7913ed48cde50a8d4dbceef390b2",
-      "at": "2026-10-06T04:22:51.295Z"
+      "key": "b95ea1f21615d054f220f91a7d1fcf750b136b40af150e42f3586bc74550adde",
+      "at": "2026-10-06T05:02:24.243Z"
     },
     "financing_tags": {
       "ok": true,
-      "key": "ba46b714e5fd6dde465381eec29822cb6c71fe1eaa49be4386e3f92febf3c43d",
-      "at": "2026-10-06T04:34:13.546Z"
+      "key": "656ab0a67e1a05da582424a5c6c9c950c0a39c09383e2b98d2f2b978b7db2d11",
+      "at": "2026-10-06T05:04:02.981Z"
     },
     "release_gate": {
-      "ok": false,
-      "key": "9faed0ebadb35055e86448abf7f47512652eb584d3e13e1cb10aafb9d1ef7e26",
-      "error": "release_gate:assert-funding-insights-v1.mjs:1",
-      "at": "2026-10-06T04:34:52.174Z"
+      "ok": true,
+      "key": "d508a99c9294231df7e5dba786e2d0f640e1156a89f927109296f01066c0bb52",
+      "at": "2026-10-06T05:05:08.549Z"
     }
   },
-  "status": "failed",
-  "next_stage": "release_gate"
+  "status": "ready_for_review",
+  "next_stage": "merge_and_publish"
 }

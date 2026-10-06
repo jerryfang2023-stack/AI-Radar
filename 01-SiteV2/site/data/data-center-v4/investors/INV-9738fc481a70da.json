@@ -61,7 +61,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 5,
     "market_regions": [
@@ -75,9 +75,10 @@
       "historical_or_ambiguous": 1,
       "lead": 2,
       "other_current_round": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "multi_round",
       "series_a",
       "series_b",
       "series_d",
@@ -188,6 +189,47 @@
             "source_content_hash": "f47f08e37782472741ba350cbabd98e87c97bdfffc91a4d53ef6569e1d71c5df",
             "quote": "AIUC announced a $40 million Series A led by Ribbit Capital, with participation from First Harmonic.",
             "quote_hash": "a84417bf13f516ae245d8f0761a4e6737d094ac2fab542d6e44f5373efce82f6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-85ad2c15e14fa3a8",
+        "funding_insight_id": "FI-d24e79349c1e9713",
+        "event_ids": [
+          "EV-040fc355bc12a750",
+          "EV-80e54c9a390da293"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮（含2025年12月由Stripes领投的5亿美元轮次及Jane Street领投的此前未披露轮次）",
+        "amount_original": "$800 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-06-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（2025年12月5亿美元轮次）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ec090e2bf0f8f6e9",
+            "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+            "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+            "source_content_hash": "fa74de6f9a9e3ef8",
+            "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma.",
+            "quote_hash": "1dfff416174e07a43db5f6f5b53190faadafe8a50e93dc41fbc1bf09edb62f85"
           }
         ]
       },
@@ -363,6 +405,14 @@
         "quote_hash": "a84417bf13f516ae245d8f0761a4e6737d094ac2fab542d6e44f5373efce82f6"
       },
       {
+        "source_id": "FISRC-ec090e2bf0f8f6e9",
+        "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+        "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+        "source_content_hash": "fa74de6f9a9e3ef8",
+        "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma.",
+        "quote_hash": "1dfff416174e07a43db5f6f5b53190faadafe8a50e93dc41fbc1bf09edb62f85"
+      },
+      {
         "source_id": "FISRC-b750a2ea9e7c7b76",
         "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
         "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
@@ -438,8 +488,8 @@
           "source_id": "FISRC-926b8b12b411de6f"
         },
         {
-          "description": "融资来源记录：Etched · 轮次未披露 · 2026-06-30 · 本轮参投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b750a2ea9e7c7b76"
+          "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮参投（2025年12月5亿美元轮次） · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ec090e2bf0f8f6e9"
         }
       ],
       "contacts": [
@@ -500,12 +550,12 @@
           "quote_hash": "a84417bf13f516ae245d8f0761a4e6737d094ac2fab542d6e44f5373efce82f6"
         },
         {
-          "source_id": "FISRC-b750a2ea9e7c7b76",
-          "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
-          "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
-          "source_content_hash": "ae0a2fdbd54bc340",
-          "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round",
-          "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
+          "source_id": "FISRC-ec090e2bf0f8f6e9",
+          "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+          "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+          "source_content_hash": "fa74de6f9a9e3ef8",
+          "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma.",
+          "quote_hash": "1dfff416174e07a43db5f6f5b53190faadafe8a50e93dc41fbc1bf09edb62f85"
         }
       ],
       "last_verified_at": "2026-09-25",
