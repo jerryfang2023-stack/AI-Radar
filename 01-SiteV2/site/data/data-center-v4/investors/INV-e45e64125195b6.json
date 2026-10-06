@@ -123,41 +123,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录经来源核对的投资活动示例；不代表完整投资组合，主体或基金归属按来源披露，不扩展未核实的法律实体。",
-      "summary": "SEC投资顾问公开披露将其登记为FINCADIA ADVISORS LLC（CRD 338396）；融资来源列出Fincadia Advisors参与Positron融资。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "SEC Form ADV confirms the legal name and CRD number. Positron AI’s issuer announcement includes Fincadia Advisors among additional Series C-1 investors, without disclosing its check size or a lead role. The sources reviewed do not disclose the firm’s investment strategy, geography, or public contact channel.",
+      "summary": "SEC Form ADV lists FINCADIA ADVISORS LLC (CRD 338396). Positron AI’s September 2026 financing announcement names Fincadia Advisors among additional Series C-1 investors. Neither cited source states the amount invested or a broader firm mandate.",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "Form ADV 主体名称",
+          "value": "FINCADIA ADVISORS LLC",
+          "source_id": "fincadia_adv"
+        },
+        {
+          "field": "crd_number",
+          "label": "CRD 编号",
+          "value": "338396",
+          "source_id": "fincadia_adv"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "公开融资来源将Fincadia Advisors列为Positron AI相关融资的投资参与方。",
+          "description": "Positron AI 的发行方公告将 Fincadia Advisors 列为 Series C-1 的追加投资方之一；公告未披露其出资金额或领投角色。",
+          "source_id": "fincadia_positron"
+        },
+        {
+          "description": "融资来源记录：Positron AI · 历史轮次未披露 · 参与整体融资安排，所属分期未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3947ce709f26c22a"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "PROFILE-240035867d40d6cf9b43",
+          "source_id": "fincadia_adv",
           "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/338396/PDF/338396.pdf",
           "source_title": "Form ADV - FINCADIA ADVISORS LLC",
-          "source_content_hash": "31b03d30901b40ca7f31ef1308de559d47c29148352d4b5088dc55bdd140e6a0",
-          "quote": "Primary Business Name:FINCADIA ADVISORS LLC CRD Number: 338396",
-          "quote_hash": "a41f974a92df1a9f69f4a42d4bf61e4567afc218c42d5409da1a69d96cc75b4e"
+          "source_content_hash": "6b5d297ed202796eb8c27304154d1de4ff7b22f6d77ca3f83a00a21c74ba0a42",
+          "quote": "Primary Business Name: FINCADIA ADVISORS LLC CRD Number: 338396",
+          "quote_hash": "527d50e313b602c296a9cfc1aa7813cfce28ba2f9371c53c9fe12228d4a26002"
+        },
+        {
+          "source_id": "fincadia_positron",
+          "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+          "source_title": "Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market",
+          "source_content_hash": "4779658a236855fa12a78be80bee8f07e77ab5c5f2b4de68313520570d04d491",
+          "quote": "Fincadia Advisors, Banyan Ventures and U First Capital",
+          "quote_hash": "8ce5359010cc6015173183c37dfb97fddf75d74f6c39dc9011aa0090fe0365bb"
         },
         {
           "source_id": "FISRC-3947ce709f26c22a",
           "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
-          "source_title": "Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market",
-          "source_content_hash": "4779658a236855fa12a78be80bee8f07e77ab5c5f2b4de68313520570d04d491",
+          "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+          "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
           "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures.",
           "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
         }
       ],
-      "last_verified_at": "2026-10-04",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
+      "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {

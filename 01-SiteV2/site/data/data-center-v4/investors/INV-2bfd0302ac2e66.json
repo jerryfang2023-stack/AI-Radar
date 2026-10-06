@@ -123,19 +123,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cadenza Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Cadenza’s official site uses the “Cadenza” brand and describes its focus as transformative technologies. Its portfolio page lists Rime Labs; Rime’s own company page names Cadenza Capital as a backer. These first-party pages support the public brand association, but do not identify the legal investment vehicle or a complete portfolio.",
+      "summary": "Cadenza’s official site describes the firm as global investors in transformative technologies and lists selected investments including Rime Labs. Rime’s company page separately names Cadenza Capital among its backers. The reviewed pages do not disclose the legal vehicle or a complete portfolio.",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资定位",
+          "value": "Global investors in transformative technologies",
+          "source_id": "cadenza_brand"
+        },
+        {
+          "field": "selected_investments",
+          "label": "官网展示的部分投资组合",
+          "value": [
+            "Together.ai",
+            "Tensorwave",
+            "Nous Research",
+            "Pangram Labs",
+            "Dexmate",
+            "Rime Labs",
+            "Kagi",
+            "Jericho Security",
+            "Affiniti Finance"
+          ],
+          "source_id": "cadenza_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Rime 的公司页面将 Cadenza Capital 列为支持其发展的投资方；Rime 页面同时列出其他机构及天使投资人。",
+          "source_id": "cadenza_rime"
+        },
         {
           "description": "融资来源记录：Rime · 种子轮 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bf64aef858152292"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构网站",
+          "value": "Cadenza",
+          "url": "https://cadenza.vc/",
+          "source_id": "cadenza_brand"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cadenza_brand",
+          "source_url": "https://cadenza.vc/",
+          "source_title": "Cadenza",
+          "source_content_hash": "ac5b0691a2cf6d195a9605212a479d26c950102db572bb40fae48d624fb48e41",
+          "quote": "Cadenza Global Investors in Transformative Technologies",
+          "quote_hash": "5dbfce4b3c117c8d31fe7e22e26a54b8433d7e161c90831a9841005cb5d53997"
+        },
+        {
+          "source_id": "cadenza_portfolio",
+          "source_url": "https://cadenza.vc/portfolio",
+          "source_title": "Portfolio | Cadenza",
+          "source_content_hash": "ccbfc8cd3232d990186e2b66124a099511f5fbacc518e690249b033d63fbb9f7",
+          "quote": "Select investments from our portfolio. Together.ai Tensorwave Nous Research Pangram Labs Dexmate Rime Labs Kagi Jericho Security Affiniti Finance",
+          "quote_hash": "ef99eeea7f8b924268ecbf989f82f50f7aa6df6ce9cdfaf22d6233ce491f02ac"
+        },
+        {
+          "source_id": "cadenza_rime",
+          "source_url": "https://www.rime.ai/company",
+          "source_title": "About Rime AI Voice Technology and Our Company",
+          "source_content_hash": "4ea784ecf1fd9a8c277e5445aa7d9375a664147955e9ca90ac3362953a637408",
+          "quote": "Backed by Unusual Ventures, Cadenza Capital, Founders You Should Know, and additional angel investors",
+          "quote_hash": "a766d1b3eaf8ce22ab4a6a656d92f6e4bbb100a8d6c011b42a734c75d3e95b6e"
+        },
         {
           "source_id": "FISRC-bf64aef858152292",
           "source_url": "https://entrepreneurloop.com/rime-ai-voice-funding-24m-series-a-enterprise-speech/",
@@ -145,7 +204,7 @@
           "quote_hash": "ae62133560ff9be13ea8aa685146844e0d017cc195ad72b8dddb2ede1993d230"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

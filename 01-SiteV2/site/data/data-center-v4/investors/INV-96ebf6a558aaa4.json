@@ -139,12 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "LM Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "CloudNC’s September 2026 issuer announcement explicitly describes LM Ventures as Lockheed Martin’s venture capital fund and names it as a participant in CloudNC’s financing. The announcement does not disclose the fund’s check size or broader mandate.",
+      "summary": "CloudNC’s September 2026 financing announcement identifies LM Ventures as Lockheed Martin’s venture capital fund and lists it among the participants in CloudNC’s $20 million financing. The issuer announcement does not disclose LM Ventures’ check size or a broader investment mandate.",
+      "facts": [
+        {
+          "field": "organization_description",
+          "label": "发行方对机构的描述",
+          "value": "Lockheed Martin 的 venture capital fund",
+          "source_id": "lm_cloudnc"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "CloudNC 于 2026 年 9 月公告获得 2,000 万美元融资，并将 LM Ventures 列为参投方；公告未披露该方出资额。",
+          "source_id": "lm_cloudnc"
+        },
         {
           "description": "融资来源记录：CloudNC · B轮 · 2026-09-09 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-583456b85ec1179e"
@@ -152,6 +163,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "lm_cloudnc",
+          "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
+          "source_title": "CloudNC raises $20m to expand AI tools for precision machining",
+          "source_content_hash": "e50d348dd4894165d8008e57268e20fad7ae1fdcc8a77273b2552831c176085d",
+          "quote": "with participation from other investors including Calculus Venture Capital, Entrepreneur First and LM Ventures, Lockheed Martin’s venture capital fund",
+          "quote_hash": "79f6f6fff28255bf1673f0adf9c976d7807a1521f1ba62daa7af300407adabe2"
+        },
         {
           "source_id": "FISRC-583456b85ec1179e",
           "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
@@ -161,7 +180,7 @@
           "quote_hash": "341dd2bff3b4d4d01a56bd326a3c296e53dd77da66784f0c3238ffcf94dd4189"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-06"
     }
   }
 }
