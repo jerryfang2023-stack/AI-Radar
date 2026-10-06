@@ -1,9 +1,9 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-10-06T03:54:31.216Z",
+  "generated_at": "2026-10-06T07:12:03.903Z",
   "data_date": "2026-10-06",
   "prompt_version": "model-assist-2026-07-18.2",
-  "source_count": 111,
+  "source_count": 114,
   "candidates": [
     {
       "candidate_id": "MAC-003fd2e3f830bdc1",
@@ -3090,6 +3090,58 @@
       "generated_at": "2026-10-06T00:29:58.065Z"
     },
     {
+      "candidate_id": "MAC-5981b65b290f482d",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-62727575ce30b949",
+      "raw_id": "RAW-6599c520b25517fa",
+      "source_ref": "SA-85da6085c127e432",
+      "source_hash": "66bcb4badee7400a",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Foundational",
+            "object": "£8.2 million in pre-seed funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 38,
+          "end": 203,
+          "quote": "Foundational has emerged from stealth with £8.2 million in pre-seed funding to\nexpand its satellite positioning infrastructure and further develop its data\nplatform."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T07:12:02.819Z"
+    },
+    {
       "candidate_id": "MAC-5c0ec45687b6e487",
       "task_type": "claim_extraction",
       "asset_id": "QA-0255fc958d295024",
@@ -3466,6 +3518,60 @@
         }
       ],
       "generated_at": "2026-10-06T00:29:51.695Z"
+    },
+    {
+      "candidate_id": "MAC-6605b3a8c732826d",
+      "task_type": "qa_repair",
+      "asset_id": "QA-19b5fc2c72fa635f",
+      "raw_id": "RAW-806b7e650f04b8ef",
+      "source_ref": "SA-26ef2a9e9f1fdcd9",
+      "source_hash": "8fcbfb64c649c932",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source reports a concrete funding event for Inbolt, an industrial robotics company, which is AI-relevant.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Inbolt",
+            "object": "€11 million",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 186,
+          "quote": "Paris-based industrial robotics\ncompany Inbolt has raised €11 million in funding to support its international\ngrowth and entry into the data centre and electronics manufacturing sectors."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T07:12:03.137Z"
     },
     {
       "candidate_id": "MAC-66445cedb8ce760d",
@@ -5058,6 +5164,60 @@
         }
       ],
       "generated_at": "2026-10-06T00:29:53.815Z"
+    },
+    {
+      "candidate_id": "MAC-9d57e85358cb3750",
+      "task_type": "qa_repair",
+      "asset_id": "QA-57f325411a85174a",
+      "raw_id": "RAW-1c8086630793d093",
+      "source_ref": "SA-f6120742b961677c",
+      "source_hash": "f4759c012f0b2234",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source reports a concrete funding event for Blackswan Space, an autonomous spacecraft navigation company, which is AI-relevant.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Blackswan Space",
+            "object": "€2.5 million",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 129,
+          "quote": "Lithuania’s Blackswan Space, has successfully closed its second investment round, led by Iron Wolf Capital, raising €2.5 million."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T07:12:03.901Z"
     },
     {
       "candidate_id": "MAC-a13b86f55d68ac44",

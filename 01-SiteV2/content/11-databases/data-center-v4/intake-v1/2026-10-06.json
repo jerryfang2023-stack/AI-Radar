@@ -1,7 +1,7 @@
 {
   "schema_version": "SOURCE-INTAKE-V1.1",
   "data_date": "2026-10-06",
-  "generated_at": "2026-10-06T03:47:03.527Z",
+  "generated_at": "2026-10-06T07:11:57.785Z",
   "collection_batches": [
     {
       "raw_ids": [
@@ -251,6 +251,30 @@
         "RAW-dd449f96d6d55567",
         "RAW-ee48a7eec3673ea9",
         "RAW-ff88833d9eb4e981"
+      ]
+    },
+    {
+      "raw_ids": [
+        "RAW-806b7e650f04b8ef"
+      ],
+      "eligible_raw_ids": [
+        "RAW-806b7e650f04b8ef"
+      ]
+    },
+    {
+      "raw_ids": [
+        "RAW-1c8086630793d093"
+      ],
+      "eligible_raw_ids": [
+        "RAW-1c8086630793d093"
+      ]
+    },
+    {
+      "raw_ids": [
+        "RAW-6599c520b25517fa"
+      ],
+      "eligible_raw_ids": [
+        "RAW-6599c520b25517fa"
       ]
     }
   ],
@@ -1586,6 +1610,42 @@
         "evidence://a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab"
       ],
       "content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab"
+    },
+    {
+      "source_artifact_id": "SA-26ef2a9e9f1fdcd9",
+      "source_url": "https://tech.eu/2026/09/30/inbolt-raises-eur11m-to-bring-real-time-vision-and-intelligence-to-industrial-robots/",
+      "canonical_url": "https://tech.eu/2026/09/30/inbolt-raises-eur11m-to-bring-real-time-vision-and-intelligence-to-industrial-robots/",
+      "publisher": "tech.eu",
+      "capture_method": "reused_private_original",
+      "captured_at": "2026-10-06T07:11:54.528Z",
+      "snapshot_refs": [
+        "evidence://8fcbfb64c649c9325b80ec722f89c0ab3a53cf54ee8b111a23f153ba206b6c8b"
+      ],
+      "content_hash": "8fcbfb64c649c9325b80ec722f89c0ab3a53cf54ee8b111a23f153ba206b6c8b"
+    },
+    {
+      "source_artifact_id": "SA-f6120742b961677c",
+      "source_url": "https://tech.eu/2026/09/30/blackswan-space-raises-eur25m-to-take-autonomous-spacecraft-navigation-into-orbit/",
+      "canonical_url": "https://tech.eu/2026/09/30/blackswan-space-raises-eur25m-to-take-autonomous-spacecraft-navigation-into-orbit/",
+      "publisher": "tech.eu",
+      "capture_method": "reused_private_original",
+      "captured_at": "2026-10-06T07:11:55.850Z",
+      "snapshot_refs": [
+        "evidence://f4759c012f0b22341e53be7cc722aff2bdcd0fa6f81d8f0bd44bb784f81a8b82"
+      ],
+      "content_hash": "f4759c012f0b22341e53be7cc722aff2bdcd0fa6f81d8f0bd44bb784f81a8b82"
+    },
+    {
+      "source_artifact_id": "SA-85da6085c127e432",
+      "source_url": "https://tech.eu/2026/10/01/foundational-secures-ps82m-pre-seed-as-it-emerges-from-stealth/",
+      "canonical_url": "https://tech.eu/2026/10/01/foundational-secures-ps82m-pre-seed-as-it-emerges-from-stealth/",
+      "publisher": "tech.eu",
+      "capture_method": "reused_private_original",
+      "captured_at": "2026-10-06T07:11:56.994Z",
+      "snapshot_refs": [
+        "evidence://66bcb4badee7400a0a2008f1dfe4d0761bbabf652c02f5b932d49a428d932698"
+      ],
+      "content_hash": "66bcb4badee7400a0a2008f1dfe4d0761bbabf652c02f5b932d49a428d932698"
     }
   ],
   "raw_documents": [
@@ -6139,11 +6199,134 @@
         "key_excerpts": [],
         "eligible_for_v4_extraction": true
       }
+    },
+    {
+      "schema_version": "RAW-V4.0",
+      "raw_id": "RAW-806b7e650f04b8ef",
+      "source_artifact_id": "SA-26ef2a9e9f1fdcd9",
+      "source_url": "https://tech.eu/2026/09/30/inbolt-raises-eur11m-to-bring-real-time-vision-and-intelligence-to-industrial-robots/",
+      "canonical_url": "https://tech.eu/2026/09/30/inbolt-raises-eur11m-to-bring-real-time-vision-and-intelligence-to-industrial-robots/",
+      "publisher": "tech.eu",
+      "author": "",
+      "published_at": "2026-09-30",
+      "captured_at": "2026-10-06T07:11:54.528Z",
+      "language": "en",
+      "document_type": "article",
+      "title_original": "Inbolt raises €11M to bring real-time vision and intelligence to industrial robots",
+      "title_zh": "",
+      "body_ref": "evidence://8fcbfb64c649c9325b80ec722f89c0ab3a53cf54ee8b111a23f153ba206b6c8b",
+      "content_hash": "8fcbfb64c649c9325b80ec722f89c0ab3a53cf54ee8b111a23f153ba206b6c8b",
+      "capture_method": "reused_private_original",
+      "extraction_status": "accepted",
+      "market_scope": {
+        "source_registry_id": "",
+        "source_region": "",
+        "market_region": "",
+        "china_market_match": false,
+        "china_market_match_basis": ""
+      },
+      "intake_diagnostics": {
+        "acquisition_channel": "financing",
+        "search_path": "",
+        "evidence_object_type": "original_full_text",
+        "evidence_object_usable": true,
+        "evidence_strength": "",
+        "raw_qc_decision": "accepted",
+        "raw_qc_downstream_use": "v4_claim_extraction",
+        "extraction_quality": "medium",
+        "readability_score": 0,
+        "has_full_text": true,
+        "origin_fetch_status": "success",
+        "key_excerpts": [],
+        "eligible_for_v4_extraction": true
+      }
+    },
+    {
+      "schema_version": "RAW-V4.0",
+      "raw_id": "RAW-1c8086630793d093",
+      "source_artifact_id": "SA-f6120742b961677c",
+      "source_url": "https://tech.eu/2026/09/30/blackswan-space-raises-eur25m-to-take-autonomous-spacecraft-navigation-into-orbit/",
+      "canonical_url": "https://tech.eu/2026/09/30/blackswan-space-raises-eur25m-to-take-autonomous-spacecraft-navigation-into-orbit/",
+      "publisher": "tech.eu",
+      "author": "",
+      "published_at": "2026-09-30",
+      "captured_at": "2026-10-06T07:11:55.850Z",
+      "language": "en",
+      "document_type": "article",
+      "title_original": "Blackswan Space raises €2.5M to take autonomous spacecraft navigation into orbit",
+      "title_zh": "",
+      "body_ref": "evidence://f4759c012f0b22341e53be7cc722aff2bdcd0fa6f81d8f0bd44bb784f81a8b82",
+      "content_hash": "f4759c012f0b22341e53be7cc722aff2bdcd0fa6f81d8f0bd44bb784f81a8b82",
+      "capture_method": "reused_private_original",
+      "extraction_status": "accepted",
+      "market_scope": {
+        "source_registry_id": "",
+        "source_region": "",
+        "market_region": "",
+        "china_market_match": false,
+        "china_market_match_basis": ""
+      },
+      "intake_diagnostics": {
+        "acquisition_channel": "financing",
+        "search_path": "",
+        "evidence_object_type": "original_full_text",
+        "evidence_object_usable": true,
+        "evidence_strength": "",
+        "raw_qc_decision": "accepted",
+        "raw_qc_downstream_use": "v4_claim_extraction",
+        "extraction_quality": "medium",
+        "readability_score": 0,
+        "has_full_text": true,
+        "origin_fetch_status": "success",
+        "key_excerpts": [],
+        "eligible_for_v4_extraction": true
+      }
+    },
+    {
+      "schema_version": "RAW-V4.0",
+      "raw_id": "RAW-6599c520b25517fa",
+      "source_artifact_id": "SA-85da6085c127e432",
+      "source_url": "https://tech.eu/2026/10/01/foundational-secures-ps82m-pre-seed-as-it-emerges-from-stealth/",
+      "canonical_url": "https://tech.eu/2026/10/01/foundational-secures-ps82m-pre-seed-as-it-emerges-from-stealth/",
+      "publisher": "tech.eu",
+      "author": "",
+      "published_at": "2026-10-01",
+      "captured_at": "2026-10-06T07:11:56.994Z",
+      "language": "en",
+      "document_type": "article",
+      "title_original": "Foundational secures £8.2M pre-seed as it emerges from stealth",
+      "title_zh": "",
+      "body_ref": "evidence://66bcb4badee7400a0a2008f1dfe4d0761bbabf652c02f5b932d49a428d932698",
+      "content_hash": "66bcb4badee7400a0a2008f1dfe4d0761bbabf652c02f5b932d49a428d932698",
+      "capture_method": "reused_private_original",
+      "extraction_status": "accepted",
+      "market_scope": {
+        "source_registry_id": "",
+        "source_region": "",
+        "market_region": "",
+        "china_market_match": false,
+        "china_market_match_basis": ""
+      },
+      "intake_diagnostics": {
+        "acquisition_channel": "financing",
+        "search_path": "",
+        "evidence_object_type": "original_full_text",
+        "evidence_object_usable": true,
+        "evidence_strength": "",
+        "raw_qc_decision": "accepted",
+        "raw_qc_downstream_use": "v4_claim_extraction",
+        "extraction_quality": "medium",
+        "readability_score": 0,
+        "has_full_text": true,
+        "origin_fetch_status": "success",
+        "key_excerpts": [],
+        "eligible_for_v4_extraction": true
+      }
     }
   ],
   "counts": {
-    "source_artifacts": 111,
-    "raw_documents": 111,
-    "eligible_documents": 111
+    "source_artifacts": 114,
+    "raw_documents": 114,
+    "eligible_documents": 114
   }
 }
