@@ -83,14 +83,14 @@ test('missing date, failed original and excluded original never become verified 
   }
 });
 
-test('PR1191 dispositions are imported without rerunning 247 captures; 32 remain pending evidence', async t => {
+test('PR1191 reuses completed dispositions and admits pending accepted raw to actual fact review', async t => {
   const options = fixture(t);
   const source = new URL('../../reports/financing/2026-10-06/', import.meta.url);
   for (const name of ['collection.json', 'pending247-review.json', 'supplemental.json']) write(path.join(options.directory, name), JSON.parse(fs.readFileSync(new URL(name, source), 'utf8')));
-  const state = await verifyPending({ ...options, capture: forbidden });
+  const state = await verifyPending({ ...options, capture: forbidden, search:async()=>({status:'held',reason:'test_no_provider',items:[]}) });
   assert.equal(Object.keys(state.entries).length, 247);
-  assert.equal(Object.values(state.entries).filter(row => row.status === 'pending').length, 32);
-  assert.equal(Object.values(state.entries).filter(row => row.status === 'awaiting_fact_review').length, 7);
+  assert.equal(Object.values(state.entries).filter(row => row.status === 'pending').length, 31);
+  assert.equal(Object.values(state.entries).filter(row => row.status === 'awaiting_fact_review').length, 8);
   assert.equal(Object.values(state.entries).filter(row => row.status === 'reviewed').length, 208);
   await verifyPending({ ...options, capture: forbidden });
 });
@@ -156,4 +156,43 @@ test('private attempt reservations still consume capture budget when public chec
   write(path.join(options.backupRoot, 'financing-monitor-state/verification-attempts.json'), { entries: Object.fromEntries(Array.from({ length: config.max_capture_attempts - 1 }, (_, i) => [`https://example.com/earlier-${i}`, { date, status: 'started', attempted: true }])) });
   const state = await verifyPending({ ...options, capture: forbidden });
   assert.equal(state.entries[url].reason, 'capture_budget_exhausted');
+});
+
+test('pending legacy lead searches one alternative original and feeds it to existing fact review', async t => {
+  const options=fixture(t);seed(options);
+  write(path.join(options.directory,'lead-review.json'),{version:'FINANCING-LEAD-REVIEW-1',date,rows:[{id:1,url,title:'Acme AI raises seed funding',status:'pending_ai_scope',reason:'AI product unclear',reviewed_at:'2026-10-06T00:00:00Z'}]});
+  let searches=0,captures=0;
+  const alternative='https://example.com/issuer-announcement';
+  const state=await verifyPending({...options,search:async title=>{searches++;assert.match(title,/Acme/);return{status:'completed',items:[{url:alternative}]};},capture:async lead=>{captures++;assert.equal(lead.url,alternative);return capture(lead);}});
+  assert.equal(searches,1);assert.equal(captures,1);
+  assert.equal(state.entries[url].status,'awaiting_fact_review');
+  assert.equal(state.entries[url].evidence_source_url,alternative);
+  assert.equal(state.entries[url].alternate_source,true);
+  await verifyPending({...options,search:forbidden,capture:forbidden});
+});
+
+test('next existing daily verification consumes due backlog and stops after two bounded passes', async t => {
+  const options=fixture(t);seed(options);
+  const first=await verifyPending({...options,capture:async()=>({status:'pending',reason:'original_unreadable'})});
+  assert.equal(first.entries[url].followup.next_due_date,'2026-10-07');
+  const later={...options,date:'2026-10-07',directory:path.join(options.root,'next-day')};
+  write(path.join(later.directory,'collection.json'),{version:config.version,date:later.date,accepted:true,captures:{},raw_ids:[],counts:{pending:0}});
+  let searched=0;
+  const second=await verifyPending({...later,search:async()=>{searched++;return{status:'completed',items:[]};},capture:forbidden});
+  assert.equal(searched,1);
+  assert.equal(second.entries[url].followup.status,'needs_attention');
+  assert.equal(second.entries[url].followup.next_due_date,null);
+  assert.equal(second.entries[url].followup.rounds,2);
+  await verifyPending({...later,search:forbidden,capture:forbidden});
+});
+
+test('new responsible review evidence changes reactivate only that lead, preserving earlier request receipts', async t => {
+  const options=fixture(t);seed(options);
+  const file=path.join(options.directory,'lead-review.json');
+  const review={version:'FINANCING-LEAD-REVIEW-1',date,rows:[{id:1,url,title:'Acme AI raises funding',status:'pending_ai_scope',reason:'unknown',reviewed_at:'2026-10-06'}]};write(file,review);
+  await verifyPending({...options,search:async()=>({status:'completed',items:[]}),capture:forbidden});
+  review.rows[0].additional_source='https://example.com/new-original';review.rows[0].reason='new issuer evidence supplied';write(file,review);
+  let calls=0;
+  const state=await verifyPending({...options,search:forbidden,capture:async lead=>{calls++;return capture(lead);}});
+  assert.equal(calls,1);assert.equal(state.entries[url].status,'awaiting_fact_review');
 });

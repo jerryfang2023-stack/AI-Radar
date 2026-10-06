@@ -100,7 +100,7 @@ async function main() {
     if (supplemental && (supplemental.date !== date || supplemental.version !== 'FINANCING-SUPPLEMENT-1' || supplemental.accepted !== true)) throw new Error('accepted_financing_supplement_required');
     const extractionScope = financingExtractionScope(intake, collection, supplemental);
     if (!intake?.raw_documents?.length) {
-      const verification = finishVerification({ root, directory, date });
+      const verification = finishVerification({ root, directory, date, backupRoot });
       write(path.join(directory, 'publication.json'), { version: config.version, date, status: verification.counts.pending ? 'pending_verification' : 'no_new_financing', counts: collection.counts, verification }); return;
     }
     const scopeFile = path.join(directory, 'extraction-scope.json');
@@ -129,7 +129,7 @@ async function main() {
         }
       } finally { fs.closeSync(fd); }
     } });
-    const verification = finishVerification({ root, directory, date });
+    const verification = finishVerification({ root, directory, date, backupRoot });
     write(path.join(directory, 'publication.json'), { verification, version: config.version, date, status: 'ready_for_review', counts: collection.counts, next: 'merge_pages_portal_and_live_parity', generated_at: new Date().toISOString() });
     console.log(JSON.stringify({ date, status: 'ready_for_review', report: path.join(directory, 'publication.json') }));
   } finally { unlock(); }

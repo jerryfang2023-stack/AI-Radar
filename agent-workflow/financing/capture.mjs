@@ -11,6 +11,10 @@ export async function captureOriginal(lead, { date, fetcher = fetch, reader = nu
     || originalDate(historicalRange.to) !== historicalRange.to || !historicalRange.from || !historicalRange.to
     || historicalRange.from > historicalRange.to || historicalRange.to > date)) throw new Error('invalid_historical_financing_range');
   const parsed = await readOriginalPage(lead.url,{fetcher,reader,timeoutMs:config.capture_timeout_ms});
+  return captureParsedOriginal(lead, parsed, { date, historicalRange });
+}
+
+export function captureParsedOriginal(lead, parsed, { date, historicalRange = null } = {}) {
   if(!parsed.article_like)return {status:'pending',reason:'original_article_required'};
   if (!isFundingDiscovery({ title: parsed.title, summary: parsed.body.slice(0,3000) })) return { status: 'excluded', reason: 'original_not_financing' };
   const scope = financingScope(parsed);
