@@ -125,8 +125,27 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "官网仅提供品牌定位与创办人名字；融资记录依据Pandektes官方公告，未扩展为完整机构背景。",
-      "summary": "Interface Capital官网称其建设并投资科技公司、由Christian与Niklas创立。Pandektes官方公告将Interface列为其种子轮领投方之一。",
-      "facts": [],
+      "summary": "Interface Capital官网称其投资并建设科技公司，法定信息页列示Interface Capital Management GmbH及两位董事；Pandektes官方融资公告将Interface Capital列为其种子轮领投方之一。档案只收录已核验的身份和一项活动。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述",
+          "value": "建设并投资科技公司。",
+          "source_id": "interface_approach"
+        },
+        {
+          "field": "legal_entity",
+          "label": "官网法定信息页列示主体",
+          "value": "Interface Capital Management GmbH，地址为德国柏林Gärtnerstraße 3。",
+          "source_id": "interface_imprint"
+        },
+        {
+          "field": "directors",
+          "label": "官网法定信息页列示董事",
+          "value": "Christian Reber-Prevot与Niklas Jansen。",
+          "source_id": "interface_imprint"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -137,7 +156,7 @@
       "contacts": [
         {
           "kind": "website",
-          "label": "Interface Capital官网",
+          "label": "官网",
           "value": "Interface Capital",
           "url": "https://interfacecap.com/",
           "source_id": "interface_approach"
@@ -167,6 +186,14 @@
           "source_content_hash": "b2beb634053904d4e9d1e6c9d3acbdf95355e69b07046025a8470cefbff72444",
           "quote": "we’ve secured 2.9M EUR in a seed investment round led by People Ventures and Interface Capital",
           "quote_hash": "21b0a9e9801aaff8852f999f8d285ec51d549730aecfa487f2290017795c5254"
+        },
+        {
+          "source_id": "interface_imprint",
+          "source_url": "https://interfacecap.com/imprint/",
+          "source_title": "Interface Capital",
+          "source_content_hash": "00791d1d9265d395fb3740b66450c6da9854d895811f75d74a349e58a85acdef",
+          "quote": "Interface Capital Management GmbH Gärtnerstr. 3 10245 Berlin, Germany Managing Directors: Christian Reber-Prevot & Niklas Jansen",
+          "quote_hash": "c911c4fb2af849042853051acfe1df0e25ab14547a0e9b776a0bdbcd1bdbdb0c"
         }
       ],
       "last_verified_at": "2026-10-06"

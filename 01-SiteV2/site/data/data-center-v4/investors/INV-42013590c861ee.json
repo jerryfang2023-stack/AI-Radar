@@ -141,13 +141,25 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "官网确认基金与信托关系及印度监管类别；未使用直接抓取失败的融资报道扩写组合。",
-      "summary": "InnoVen Capital官网将InnoVen Capital India Fund II列为InnoVen Capital India Trust项下的Category II另类投资基金。",
+      "summary": "InnoVen Capital官网确认InnoVen Capital India Fund II属于InnoVen Capital India Trust，并披露其SEBI Category II AIF登记编号、投资管理人和注册地址。档案限于官网可核验的基金信息。",
       "facts": [
         {
           "field": "fund_structure",
           "label": "基金结构",
-          "value": "InnoVen Capital India Trust项下；SEBI Category II另类投资基金",
+          "value": "InnoVen Capital India Trust项下的基金计划。",
           "source_id": "fund_structure"
+        },
+        {
+          "field": "fund_registration",
+          "label": "监管登记",
+          "value": "SEBI Category II Alternative Investment Fund；登记编号 IN/AIF2/22-23/1233。",
+          "source_id": "fund_registration"
+        },
+        {
+          "field": "investment_manager",
+          "label": "投资管理人",
+          "value": "Innoven Triple Blue Capital Advisors LLP。",
+          "source_id": "investment_manager"
         }
       ],
       "milestones": [],
@@ -159,11 +171,10 @@
       ],
       "contacts": [
         {
-          "kind": "website",
-          "label": "InnoVen Capital官网",
-          "value": "InnoVen Capital",
-          "url": "https://www.innovencapital.com/",
-          "source_id": "fund_structure"
+          "kind": "address",
+          "label": "注册办事处",
+          "value": "A/805A, The Capital, G-Block, Bandra Kurla Complex, Behind ICICI Bank, Plot C-70, Bandra (East), Mumbai, Maharashtra - 400051",
+          "source_id": "fund_address"
         }
       ],
       "sources": [
@@ -180,8 +191,24 @@
           "source_url": "https://www.innovencapital.com/index.php/Contactus_in?lang=in",
           "source_title": "Contact us - InnoVen Capital",
           "source_content_hash": "b7df9372da7efddb7881d5d2a82b80ebc9d0cef57fc4043abea432e25a7bfeb1",
-          "quote": "registered with SEBI as a Category II Alternative Investment Fund",
-          "quote_hash": "de5ea8223cbed53c6d6d101ff287593e41f36721b22bcb9f13a96a127b663cd4"
+          "quote": "Innoven Capital India Fund II (\"Fund\"), (a scheme of Innoven Capital India Trust) (\"Trust\") is registered with SEBI as a Category II Alternative Investment Fund with the Registration Number IN/AIF2/22-23/1233.",
+          "quote_hash": "22ac30a5b1e7ae88b6bdde972ff298714bc659d818d09fb51e6f063200ada5f0"
+        },
+        {
+          "source_id": "investment_manager",
+          "source_url": "https://www.innovencapital.com/index.php/Contactus_in?lang=in",
+          "source_title": "Contact us - InnoVen Capital",
+          "source_content_hash": "b7df9372da7efddb7881d5d2a82b80ebc9d0cef57fc4043abea432e25a7bfeb1",
+          "quote": "Innoven Triple Blue Capital Advisors LLP is the Investment Manager to the fund",
+          "quote_hash": "ffbfaf893a5f2fc549fe518d1988cd46c2780c2413af68fb81280d605afe93c6"
+        },
+        {
+          "source_id": "fund_address",
+          "source_url": "https://www.innovencapital.com/index.php/Contactus_in?lang=in",
+          "source_title": "Contact us - InnoVen Capital",
+          "source_content_hash": "b7df9372da7efddb7881d5d2a82b80ebc9d0cef57fc4043abea432e25a7bfeb1",
+          "quote": "The registered office of the Fund is A/805A, The Capital, G-Block, Bandra Kurla Complex, Behind ICICI Bank, Plot C-70, Bandra (East), Mumbai, Maharashtra - 400051.",
+          "quote_hash": "bedc8a65e17a2ede2ab341d479cef01bb0c09d0a93bcb279d2b66ea58d1bf8e9"
         },
         {
           "source_id": "FISRC-a6bcefafa0e61f49",
