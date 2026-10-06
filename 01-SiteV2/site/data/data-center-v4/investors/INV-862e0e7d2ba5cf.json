@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-06",
     "currentDate": "2026-10-06",
-    "eventCount": 3952,
+    "eventCount": 3959,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -150,6 +150,11 @@
         "name": "Flow Engineering"
       },
       {
+        "entity_id": "EN-d27608cca9b65f91",
+        "canonical_entity_id": "",
+        "name": "Glow"
+      },
+      {
         "entity_id": "FICO-instinct",
         "canonical_entity_id": "",
         "name": "Instinct"
@@ -188,11 +193,6 @@
         "entity_id": "EN-cfd90af8403941bf",
         "canonical_entity_id": "",
         "name": "Sable"
-      },
-      {
-        "entity_id": "EN-d1fa538179ba6371",
-        "canonical_entity_id": "",
-        "name": "Sail Research"
       },
       {
         "entity_id": "EN-e4540a7c8404b1be",
@@ -581,6 +581,46 @@
         ]
       },
       {
+        "activity_id": "IA-95dc2ce0d4d94622",
+        "funding_insight_id": "FI-25422dbadb01919a",
+        "event_ids": [
+          "EV-2da0ebb3ba7c5677"
+        ],
+        "company_entity_id": "EN-d27608cca9b65f91",
+        "company_canonical_entity_id": "",
+        "company_name": "Glow",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$180 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 180000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.8 亿美元"
+        },
+        "announced_at": "2026-07-22",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e192dd3fe1a72590",
+            "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+            "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+            "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+            "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+            "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-ed2896a00969d858",
         "funding_insight_id": "FI-af05392a4f819f5b",
         "event_ids": [
@@ -657,46 +697,6 @@
             "source_content_hash": "7de5ccc4b9392027",
             "quote": "a $45 million financing round led by Sequoia Capital and 8VC",
             "quote_hash": "af34a0033840bdda36758eaf2b91beef489122297760365c644cdb1fde7e65f1"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-400a5cf47ad5a12f",
-        "funding_insight_id": "FI-b4ed51811a14f812",
-        "event_ids": [
-          "EV-921c843ad32c993c"
-        ],
-        "company_entity_id": "EN-d1fa538179ba6371",
-        "company_canonical_entity_id": "",
-        "company_name": "Sail Research",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "Seed and Series A",
-        "amount_original": "$80 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 80000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "8000 万美元"
-        },
-        "announced_at": "2026-06-25",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "种子轮领投",
-        "role_code": "lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-11ff205cb2054931",
-            "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
-            "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
-            "source_content_hash": "314c02d8610d1604",
-            "quote": "the Seed was led by Sequoia",
-            "quote_hash": "748365af413bdb57cb7af0f41091078e616e84eafee51da0d7e695b73b5beefe"
           }
         ]
       },
@@ -1767,6 +1767,14 @@
         "quote_hash": "c7a1847178fcef3287db804011d2abcab2f6fadc29b919f0cb25016204df2542"
       },
       {
+        "source_id": "FISRC-e192dd3fe1a72590",
+        "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+        "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+        "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+        "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+        "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+      },
+      {
         "source_id": "FISRC-6972db5a9fa5ab89",
         "source_url": "https://www.bunkerhillhealth.com/resources/series-b-announcement",
         "source_title": "Bunkerhill Health 融资 5500 万美元，助力医疗系统将最佳创意变为现实",
@@ -1781,14 +1789,6 @@
         "source_content_hash": "7de5ccc4b9392027",
         "quote": "a $45 million financing round led by Sequoia Capital and 8VC",
         "quote_hash": "af34a0033840bdda36758eaf2b91beef489122297760365c644cdb1fde7e65f1"
-      },
-      {
-        "source_id": "FISRC-11ff205cb2054931",
-        "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
-        "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
-        "source_content_hash": "314c02d8610d1604",
-        "quote": "the Seed was led by Sequoia",
-        "quote_hash": "748365af413bdb57cb7af0f41091078e616e84eafee51da0d7e695b73b5beefe"
       },
       {
         "source_id": "FISRC-8f5a35fa6bbc977d",

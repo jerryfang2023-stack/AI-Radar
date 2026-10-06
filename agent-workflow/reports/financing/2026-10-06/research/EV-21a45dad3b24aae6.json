@@ -1,0 +1,122 @@
+{
+  "event_id": "EV-21a45dad3b24aae6",
+  "company_name": "星连资本被投企业Kando AI",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "星连资本被投企业Kando AI完成数千万元种子轮融资 打造决策领域的Cursor",
+    "event_source_refs": [
+      "SA-42907592e1e5f4f2"
+    ],
+    "event_claim_refs": [
+      "CL-2eb1f643b951299f",
+      "CL-9137418be73319b0"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-d93e16f0441d6c05",
+        "canonical_name": "星连资本被投企业Kando AI"
+      }
+    ],
+    "event_metrics": [
+      "数千万元"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-2eb1f643b951299f",
+        "raw_id": "RAW-b2c14f30af05f76f",
+        "subject": "星连资本被投企业Kando AI",
+        "object": "打造决策领域的Cursor",
+        "source_quote_length": 39
+      },
+      {
+        "claim_id": "CL-9137418be73319b0",
+        "raw_id": "RAW-b2c14f30af05f76f",
+        "subject": "星连资本被投企业Kando AI",
+        "object": "打造决策领域的Cursor",
+        "source_quote_length": 40
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "星连资本被投企业Kando AI"
+  },
+  "queries": [
+    "\"星连资本被投企业Kando AI\" 2026 融资 投资方",
+    "\"星连资本被投企业Kando AI\" 数千万元 融资 领投 跟投",
+    "\"星连资本被投企业Kando AI\" 官网 产品 服务",
+    "\"星连资本被投企业Kando AI\" 投资机构 融资用途",
+    "\"星连资本被投企业Kando AI\" 2026 本轮融资 公告",
+    "\"星连资本被投企业Kando AI\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"星连资本被投企业Kando AI\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "provider": "tavily",
+      "query": "\"星连资本被投企业Kando AI\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://m.36kr.com/p/3917563544573831",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"星连资本被投企业Kando AI\" 数千万元 融资 领投 跟投",
+      "status": "completed",
+      "count": 2
+    },
+    {
+      "provider": "tavily",
+      "query": "\"星连资本被投企业Kando AI\" 数千万元 融资 领投 跟投",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://m.36kr.com/user/6404600",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"星连资本被投企业Kando AI\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"星连资本被投企业Kando AI\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"星连资本被投企业Kando AI\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 2
+    },
+    {
+      "provider": "tavily",
+      "query": "\"星连资本被投企业Kando AI\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"星连资本被投企业Kando AI\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

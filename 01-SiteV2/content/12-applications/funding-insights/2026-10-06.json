@@ -2,21 +2,3838 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-10-06",
-    "generated_at": "2026-10-06T00:51:08.799Z",
+    "generated_at": "2026-10-06T04:10:05.721Z",
     "trigger": "accepted_financing_event_research",
     "research_provider": "search-gateway+direct-original+deepseek",
     "model": "deepseek-flash",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 25,
-      "auto_published": 8,
-      "blocked": 4,
+      "funding_events": 33,
+      "auto_published": 15,
+      "blocked": 5,
       "pending": 4,
       "deduplicated": 9
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-b61c5e6352f32a00",
+      "triggered_by_event_id": "EV-cfe820a452effc2f",
+      "as_of_date": "2026-10-06",
+      "company": {
+        "entity_id": "EN-e2e913258212abc8",
+        "name": "北京词元无限科技有限公司",
+        "full_name": "北京词元无限科技有限公司",
+        "website": "https://www.tokfinity.com/",
+        "summary": "企业级AI Agent基础设施专属服务商，以InfOne为顶层平台，围绕构建并管理多Agent组织展开，主打AI Native的研发智能体应用。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "杨萍",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9c832b1b8244f568",
+                "quote": "词元团队由前字节 AI 部门技术负责人杨萍领衔创立",
+                "source_content_hash": "6a63b5d101cb3abf",
+                "quote_hash": "97106b28b334d99a288014ea19f413e4980c1f863243f05d23654db9b86d00b3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "王伟",
+            "role": "联合创始人兼首席技术官（CTO）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9c832b1b8244f568",
+                "quote": "清华大学姚期智实验班校友、资深技术专家王伟担任联合创始人兼首席技术官（CTO）",
+                "source_content_hash": "6a63b5d101cb3abf",
+                "quote_hash": "e7b3efcf0a1dc02bcf1ef7ce7ab78608f7d65e2f23563011a889459a0dfbb249"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b6fa3ffcb3824907",
+            "quote": "企业级AI Agent基础设施专属服务商北京词元无限科技有限公司宣布完成天使++轮融资",
+            "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+            "quote_hash": "e331fb720fe5ab5c3d8f7a907a00c60c34a4fba9a0db072c028d67ce016dd0d6"
+          },
+          {
+            "source_id": "FISRC-9c832b1b8244f568",
+            "quote": "主打 AI Native 的研发智能体应用，以 Token 核心，构建从需求分析到运维交付的全链路智能研发闭环。",
+            "source_content_hash": "6a63b5d101cb3abf",
+            "quote_hash": "51881f672a1677356213d8fdeb27147dbed91ffa9273780a175fc28fbdd3e65f"
+          }
+        ],
+        "application_entity_id": "EN-e2e913258212abc8",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "天使++轮",
+        "amount": "未披露",
+        "total_raised": "数亿元人民币",
+        "announced_at": "2026-07-27",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "临芯投资",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b6fa3ffcb3824907",
+                "quote": "本轮融资由临芯投资领投，华控基金跟投。",
+                "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+                "quote_hash": "658b02692bcf24193cf84b4e395622cdb5b5d333505d4f30fee997cfe447212c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "华控基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b6fa3ffcb3824907",
+                "quote": "本轮融资由临芯投资领投，华控基金跟投。",
+                "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+                "quote_hash": "658b02692bcf24193cf84b4e395622cdb5b5d333505d4f30fee997cfe447212c"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b6fa3ffcb3824907",
+            "quote": "近日，企业级AI Agent基础设施专属服务商北京词元无限科技有限公司宣布完成天使++轮融资。",
+            "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+            "quote_hash": "4fba5d1d886947ef835645ac8c795d243696db712e0c54da836aa504cdaf66bd"
+          },
+          {
+            "source_id": "FISRC-b6fa3ffcb3824907",
+            "quote": "近日，企业级AI Agent基础设施专属服务商北京词元无限科技有限公司宣布完成天使++轮融资。本轮融资由临芯投资领投，华控基金跟投，这也是词元无限在一个月内完成的第二笔融资，累计融资额已达数亿元人民币。",
+            "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+            "quote_hash": "b94a05d3b3ebe6c82f77ef02cc9d89fa9a2664baad3c818570cbcf11816f9084"
+          }
+        ],
+        "round_code": "angel_plus_plus",
+        "round_original": "天使++轮",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "total_raised_original": "数亿元人民币",
+        "total_raised_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cfe820a452effc2f",
+            "round_original": "天使++轮",
+            "amount": "未披露",
+            "announced_at": "2026-07-27",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b6fa3ffcb3824907",
+                "quote": "近日，企业级AI Agent基础设施专属服务商北京词元无限科技有限公司宣布完成天使++轮融资。",
+                "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+                "quote_hash": "4fba5d1d886947ef835645ac8c795d243696db712e0c54da836aa504cdaf66bd"
+              },
+              {
+                "source_id": "FISRC-b6fa3ffcb3824907",
+                "quote": "近日，企业级AI Agent基础设施专属服务商北京词元无限科技有限公司宣布完成天使++轮融资。本轮融资由临芯投资领投，华控基金跟投，这也是词元无限在一个月内完成的第二笔融资，累计融资额已达数亿元人民币。",
+                "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+                "quote_hash": "b94a05d3b3ebe6c82f77ef02cc9d89fa9a2664baad3c818570cbcf11816f9084"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "InfOne",
+          "description": "顶层平台，围绕构建并管理多Agent组织展开，覆盖需求理解、代码生成、测试验证到交付治理的全链路闭环。",
+          "target_customers": "企业级研发团队",
+          "features": [
+            "构建并管理多Agent组织",
+            "全链路闭环"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6fa3ffcb3824907",
+              "quote": "词元无限以InfOne为顶层平台，围绕\"构建并管理多Agent组织\"展开",
+              "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+              "quote_hash": "7ee289729b7b5529cae8eb664161a79e52c189548fb5f884465b6e93658fcfc4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "InfCode",
+          "description": "面向企业复杂代码的数字程序员 Agent；公司披露其 SWE-Bench 排名及 Java/C++ 开发效率提升数据。",
+          "target_customers": "企业级研发团队",
+          "features": [
+            "企业复杂代码研发",
+            "公司披露 SWE-Bench 性能表现",
+            "公司披露 Java/C++ 开发效率提升"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6fa3ffcb3824907",
+              "quote": "InfCode数字程序员Agent专攻企业级复杂代码，以SWE-Bench全球第一的性能将Java/C++等场景开发效率提升6倍",
+              "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+              "quote_hash": "c6aee180a808876af41d121f7cd8f972ac80f6f68949551c45fbb9d50c4658bf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "InfTest",
+          "description": "测试智能体Agent，负责自动化回归与质量门禁。",
+          "target_customers": "企业级研发团队",
+          "features": [
+            "自动化回归",
+            "质量门禁"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6fa3ffcb3824907",
+              "quote": "InfTest测试智能体Agent负责自动化回归与质量门禁",
+              "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+              "quote_hash": "c56cefeb9edb0e744b6efe0bb0d3c5abb87a23afa8669b4bff41d2f5a80175af"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "神州信息",
+          "industry": "金融",
+          "use_case": "银行核心系统智能研发",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-968561595dc6e6c1",
+              "quote": "神州信息：银行核心系统智能研发，综合提效 39%",
+              "source_content_hash": "804bfaa34d342df9",
+              "quote_hash": "b7950b12a09f8bd6ab259b62eef98ba3d647988c96fee1e9ee895898f9083aa3"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "累计融资额",
+          "value": "数亿元人民币",
+          "observed_at": "2026-07-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6fa3ffcb3824907",
+              "quote": "累计融资额已达数亿元人民币",
+              "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+              "quote_hash": "8509239d16fe863c98592d0d3e93607d2716f861d7b8a13e38773c0613d8dafe"
+            }
+          ]
+        },
+        {
+          "label": "神州信息银行核心系统综合提效",
+          "value": "39%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-968561595dc6e6c1",
+              "quote": "综合提效 39%，成本降低 20%，代码采纳率 88%",
+              "source_content_hash": "804bfaa34d342df9",
+              "quote_hash": "e03460ef61e7d30ef6dddf56f3bfc3b15f4838db65f8354e303892ab008fd635"
+            }
+          ]
+        },
+        {
+          "label": "神州信息银行核心系统成本降低",
+          "value": "20%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-968561595dc6e6c1",
+              "quote": "综合提效 39%，成本降低 20%，代码采纳率 88%",
+              "source_content_hash": "804bfaa34d342df9",
+              "quote_hash": "e03460ef61e7d30ef6dddf56f3bfc3b15f4838db65f8354e303892ab008fd635"
+            }
+          ]
+        },
+        {
+          "label": "神州信息银行核心系统代码采纳率",
+          "value": "88%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-968561595dc6e6c1",
+              "quote": "综合提效 39%，成本降低 20%，代码采纳率 88%",
+              "source_content_hash": "804bfaa34d342df9",
+              "quote_hash": "e03460ef61e7d30ef6dddf56f3bfc3b15f4838db65f8354e303892ab008fd635"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是词元无限能否以InfOne顶层平台构建覆盖研发全链路的Agent基础设施，并将InfCode等智能体的基准性能转化为企业级可验收的软件工程结果。当前已验证信号包括：InfCode在SWE-Bench Verified以79.4% Pass@1刷新SOTA，神州信息银行核心系统智能研发实现综合提效39%、成本降低20%、代码采纳率88%，以及公司获得中关村高新技术企业认定和ISO系列认证。判断的证据边界在于：本轮具体融资金额未披露，累计融资额仅为“数亿元人民币”的模糊表述；InfCode宣称的“开发效率提升6倍”缺乏独立验证；客户案例仅神州信息一例，规模化复制能力尚待证实。",
+        "validated_signals": [
+          "InfCode在SWE-Bench Verified以79.4% Pass@1刷新SOTA",
+          "神州信息银行核心系统智能研发实现综合提效39%、成本降低20%、代码采纳率88%",
+          "公司获得中关村高新技术企业认定",
+          "获得信息安全管理体系认证ISO/IEC 27001:2022等多项资质"
+        ],
+        "risks": [
+          "本轮具体融资金额未披露，累计融资额仅为“数亿元人民币”的模糊表述，无法精确评估资本充足度",
+          "InfCode宣称的“将Java/C++等场景开发效率提升6倍”缺乏独立第三方验证，可能为特定场景下的理想值",
+          "客户案例仅披露神州信息一例，产品在金融以外行业（供应链、轨道交通、互联网）的落地效果尚未有具体数据支撑",
+          "公司2025年7月成立，成立时间较短，团队规模、营收等关键经营数据均未披露"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "企业级AI Agent基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是词元无限能否以InfOne顶层平台构建覆盖研发全链路的Agent基础设施，并将InfCode等智能体的基准性能转化为企业级可验收的软件工程结果。当前已验证信号包括：InfCode在SWE-Bench Verified以79.4% Pass@1刷新SOTA，神州信息银行核心系统智能研发实现综合提效39%、成本降低20%、代码采纳率88%，以及公司获得中关村高新技术企业认定和ISO系列认证。判断的证据边界在于：本轮具体融资金额未披露，累计融资额仅为“数亿元人民币”的模糊表述；InfCode宣称的“开发效率提升6倍”缺乏独立验证；客户案例仅神州信息一例，规模化复制能力尚待证实。",
+          "evidence_signals": [
+            "InfCode在SWE-Bench Verified以79.4% Pass@1刷新SOTA",
+            "神州信息银行核心系统智能研发实现综合提效39%、成本降低20%、代码采纳率88%",
+            "公司获得中关村高新技术企业认定",
+            "获得信息安全管理体系认证ISO/IEC 27001:2022等多项资质"
+          ],
+          "risks": [
+            "本轮具体融资金额未披露，累计融资额仅为“数亿元人民币”的模糊表述，无法精确评估资本充足度",
+            "InfCode宣称的“将Java/C++等场景开发效率提升6倍”缺乏独立第三方验证，可能为特定场景下的理想值",
+            "客户案例仅披露神州信息一例，产品在金融以外行业（供应链、轨道交通、互联网）的落地效果尚未有具体数据支撑",
+            "公司2025年7月成立，成立时间较短，团队规模、营收等关键经营数据均未披露"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "InfOne",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "InfCode",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "InfTest",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "杨萍",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "王伟",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "临芯投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "华控基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "神州信息",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-cfe820a452effc2f",
+          "date": "2026-07-27",
+          "title": "词元无限完成天使++轮融资",
+          "amount": "",
+          "source_refs": [
+            "SA-6c837203c8d949c9"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-b6fa3ffcb3824907",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-07-27/doc-inikfhfi3135189.shtml",
+          "title": "词元无限完成天使++轮融资",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-06T03:47:01.447Z",
+          "content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+          "source_artifact_id": "SA-6c837203c8d949c9",
+          "raw_id": "RAW-7efae622114dbd1e"
+        },
+        {
+          "source_id": "FISRC-968561595dc6e6c1",
+          "source_url": "https://www.tokfinity.com/",
+          "title": "词元无限 TokensInfinity｜面向未来智能组织的AI Agent技术公司",
+          "publisher": "tokfinity.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:53:34.372Z",
+          "content_hash": "804bfaa34d342df9",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9c832b1b8244f568",
+          "source_url": "https://www.tokfinity.com/company",
+          "title": "团队、使命与资质｜关于词元无限（TokensInfinity）",
+          "publisher": "tokfinity.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:53:34.775Z",
+          "content_hash": "6a63b5d101cb3abf",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-06T03:53:42.917Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-06T03:53:42.917Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "InfCode",
+            "InfOne",
+            "InfTest"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "杨萍",
+            "王伟"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cfe820a452effc2f"
+      ],
+      "aggregation": {
+        "key": "EN-e2e913258212abc8|angel_plus_plus",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-c268d5ee2b77b745",
+      "triggered_by_event_id": "EV-bc320dac1d8dfed9",
+      "as_of_date": "2026-10-06",
+      "company": {
+        "entity_id": "EN-4f48a235dd30c397",
+        "name": "美酷瑞（Gamercury AI）",
+        "full_name": "美酷瑞（Gamercury AI）",
+        "website": "https://gamercury.com",
+        "summary": "美酷瑞是一家专注AI游戏世界引擎与AI原生游戏产品研发的AI游戏技术公司，核心方向包括AI NPC、自然语言自由对话、角色记忆、情绪系统、任务生成和互动叙事。",
+        "headquarters": "上海黄浦",
+        "founders": [
+          {
+            "name": "Michael Zhu",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1777352e28e228a6",
+                "quote": "Michael Zhu 是 Gamercury AI 的创始人兼 CEO",
+                "source_content_hash": "8160cb9dde08e2e6",
+                "quote_hash": "2143d3204e3d72609a60ce8ef3eff0eacec6c81edc5e74cf37569adcc57c65ed"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jessica Wu",
+            "role": "联合创始人兼CPO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1777352e28e228a6",
+                "quote": "Jessica Wu 是 Gamercury AI 的联合创始人兼 CPO",
+                "source_content_hash": "8160cb9dde08e2e6",
+                "quote_hash": "5079831cbf5eb024c12def119e91f4d8b19b0c9d39e0f27f487a0b44180bddb7"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1777352e28e228a6",
+            "quote": "Gamercury AI 专注 AI游戏世界引擎与 AI原生游戏产品研发",
+            "source_content_hash": "8160cb9dde08e2e6",
+            "quote_hash": "77dd1f803718a9a9eb41ab61cb2c18dc77004eb3325956d71b5a2e7710273615"
+          },
+          {
+            "source_id": "FISRC-dc9647a9e8577f7d",
+            "quote": "来自黄浦区的人工智能企业美酷瑞（Gamercury AI）",
+            "source_content_hash": "150e92b00f4c3457",
+            "quote_hash": "a42793b1117be9ae5101fe344ac3efe10710054644b5e53f1f7ca6c1736f3d67"
+          }
+        ],
+        "application_entity_id": "EN-4f48a235dd30c397",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "轮次未披露",
+        "amount": "未披露",
+        "total_raised": "",
+        "announced_at": "2026-03-31",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "上海天使会",
+            "role": "本轮联合投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af2d19624e1ce4d",
+                "quote": "本轮由上海天使会联合投资",
+                "source_content_hash": "33de21fb3e93df874a2b6429b259275fd3c920b0f7f777d1d4593c737bf70f40",
+                "quote_hash": "fa01f06a62175bc2aa7b64169cf46e77a95b58db0cccb6947e4f0fa74873f999"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9af2d19624e1ce4d",
+            "quote": "36氪获悉，近日，AI游戏公司“美酷瑞Gamercury AI”宣布完成新一轮融资，本轮由上海天使会联合投资。",
+            "source_content_hash": "33de21fb3e93df874a2b6429b259275fd3c920b0f7f777d1d4593c737bf70f40",
+            "quote_hash": "c6e51520c3e6289b6929df356c0225e7c928342489a03c7178f87f5b67368ef2"
+          },
+          {
+            "source_id": "FISRC-9af2d19624e1ce4d",
+            "quote": "AI游戏公司“美酷瑞Gamercury AI”宣布完成新一轮融资，本轮由上海天使会联合投资",
+            "source_content_hash": "33de21fb3e93df874a2b6429b259275fd3c920b0f7f777d1d4593c737bf70f40",
+            "quote_hash": "c177ccea015add3a474736a5e0bff36ffff8a5540eefaba24b044b92e85b4b4f"
+          },
+          {
+            "source_id": "FISRC-dc9647a9e8577f7d",
+            "quote": "作为上海国投天使会投资的明星企业",
+            "source_content_hash": "150e92b00f4c3457",
+            "quote_hash": "e2de737aa2ab089b4398f79dd5a2858cf6e70fde4e70b1e76c1b59c3bd32a6f1"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-bc320dac1d8dfed9",
+            "round_original": "未披露",
+            "amount": "未披露",
+            "announced_at": "2026-03-31",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af2d19624e1ce4d",
+                "quote": "36氪获悉，近日，AI游戏公司“美酷瑞Gamercury AI”宣布完成新一轮融资，本轮由上海天使会联合投资。",
+                "source_content_hash": "33de21fb3e93df874a2b6429b259275fd3c920b0f7f777d1d4593c737bf70f40",
+                "quote_hash": "c6e51520c3e6289b6929df356c0225e7c928342489a03c7178f87f5b67368ef2"
+              },
+              {
+                "source_id": "FISRC-9af2d19624e1ce4d",
+                "quote": "AI游戏公司“美酷瑞Gamercury AI”宣布完成新一轮融资，本轮由上海天使会联合投资",
+                "source_content_hash": "33de21fb3e93df874a2b6429b259275fd3c920b0f7f777d1d4593c737bf70f40",
+                "quote_hash": "c177ccea015add3a474736a5e0bff36ffff8a5540eefaba24b044b92e85b4b4f"
+              },
+              {
+                "source_id": "FISRC-dc9647a9e8577f7d",
+                "quote": "作为上海国投天使会投资的明星企业",
+                "source_content_hash": "150e92b00f4c3457",
+                "quote_hash": "e2de737aa2ab089b4398f79dd5a2858cf6e70fde4e70b1e76c1b59c3bd32a6f1"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "神探夏洛克：暗夜追踪者",
+          "description": "第一人称AI悬疑推理游戏，玩家化身夏洛克·福尔摩斯，在达特穆尔与巴斯克维尔庄园中审讯AI NPC、寻找证据、打破心锁并追查真相。",
+          "target_customers": "游戏玩家",
+          "features": [
+            "自由输入或语音审讯NPC",
+            "NPC拥有记忆、情绪、秘密和立场",
+            "证据、道具和信任关系影响剧情走向"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1777352e28e228a6",
+              "quote": "《神探夏洛克：暗夜追踪者》是一款第一人称 AI 悬疑推理游戏",
+              "source_content_hash": "8160cb9dde08e2e6",
+              "quote_hash": "6a996a7c110ab43282b27ed4f937d9c72c53e5a80bb5894bff74bc41ffba8083"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Gamercury World Engine",
+          "description": "面向创作者和开发者的AI游戏世界引擎，围绕剧情生成、角色生成、任务中心、多Agent协作、场景编辑和多语言打包流程，降低AI游戏世界的制作门槛。",
+          "target_customers": "创作者和开发者",
+          "features": [
+            "从创意问答生成世界设定",
+            "自动组织角色、任务、道具和线索",
+            "支持运行时场景编辑与项目导出"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1777352e28e228a6",
+              "quote": "Gamercury World Engine 面向创作者和开发者",
+              "source_content_hash": "8160cb9dde08e2e6",
+              "quote_hash": "b1807e64ff3bf05e19455d246339faa6fb495c6c8924c8b1517004eac85726a1"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "Steam探案节热门即将推出榜单排名",
+          "value": "全球第四、中国第一",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dc9647a9e8577f7d",
+              "quote": "产品曾进入Steam探案节“热门即将推出”榜单全球第四、中国第一",
+              "source_content_hash": "150e92b00f4c3457",
+              "quote_hash": "67a1b37081f2e93283da0b0ccb5d08b038a6be7b89386a37b5e5887466f8dec6"
+            }
+          ]
+        },
+        {
+          "label": "微软全球AI加速器排名",
+          "value": "Top 20",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dc9647a9e8577f7d",
+              "quote": "入选Google for Startups创业企业计划和微软全球AI加速器Top 20",
+              "source_content_hash": "150e92b00f4c3457",
+              "quote_hash": "f9674324adb1792da39bd7cd6160d6707cd0145d091bb49e2be2c9a8fe0be406"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "朱笑靖",
+          "quote": "AI带给内容产业的机会，不只是把过去的产品做得更快、更便宜，而是创造过去无法实现的互动体验。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dc9647a9e8577f7d",
+              "quote": "“AI带给内容产业的机会，不只是把过去的产品做得更快、更便宜，而是创造过去无法实现的互动体验。”美酷瑞创始人兼CEO朱笑靖表示",
+              "source_content_hash": "150e92b00f4c3457",
+              "quote_hash": "e215b38ab875e03601f0e1fb262c78bfdcbb7e7cd33ff7cb15ea26785827c603"
+            }
+          ]
+        },
+        {
+          "speaker": "朱笑靖",
+          "quote": "世界引擎不仅可以构建虚拟角色，也可以连接真实城市空间和公共服务。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dc9647a9e8577f7d",
+              "quote": "“世界引擎不仅可以构建虚拟角色，也可以连接真实城市空间和公共服务。”朱笑靖表示",
+              "source_content_hash": "150e92b00f4c3457",
+              "quote_hash": "84720df6934897b28ab67451a5f7d257999c47e38cdad82dfad9fa4953923f8d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮融资由上海天使会联合投资，资金将重点用于叙事向AI世界引擎的研发、AI游戏内容平台的打造、AI游戏产品的全球化推广等方向。资本押注的核心变量在于AI世界引擎能否从单款AI游戏产品扩展为平台化能力，并实现全球化推广。已验证信号包括《神探夏洛克：暗夜追踪者》获得国内游戏版号、进入Steam探案节热门即将推出榜单全球第四、入选微软全球AI加速器Top 20。证据边界在于本轮融资金额未披露，商业化收入、用户规模等关键经营数据缺失，平台化建设和全球市场布局仍处于推进阶段。",
+        "validated_signals": [
+          "《神探夏洛克：暗夜追踪者》经过近一年的审核后取得国内游戏版号",
+          "产品曾进入Steam探案节“热门即将推出”榜单全球第四、中国第一",
+          "入选Google for Startups创业企业计划和微软全球AI加速器Top 20",
+          "成为微软、谷歌、openai、火山引擎全球startup企业"
+        ],
+        "risks": [
+          "本轮融资金额未披露，无法评估资金规模对研发和全球推广的支撑力度",
+          "AI游戏世界引擎的平台化建设和全球市场布局仍处于推进阶段，商业化成效尚待验证",
+          "AI生成内容具有动态性和不确定性，需持续满足内容安全、数据管理、未成年人保护和平台审核等要求"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "content_creation",
+          "design_engineering"
+        ],
+        "industry_ids": [
+          "media_entertainment"
+        ],
+        "target_user_ids": [
+          "consumer",
+          "developer"
+        ],
+        "sector": "AI游戏",
+        "investment_thesis": {
+          "statement": "本轮融资由上海天使会联合投资，资金将重点用于叙事向AI世界引擎的研发、AI游戏内容平台的打造、AI游戏产品的全球化推广等方向。资本押注的核心变量在于AI世界引擎能否从单款AI游戏产品扩展为平台化能力，并实现全球化推广。已验证信号包括《神探夏洛克：暗夜追踪者》获得国内游戏版号、进入Steam探案节热门即将推出榜单全球第四、入选微软全球AI加速器Top 20。证据边界在于本轮融资金额未披露，商业化收入、用户规模等关键经营数据缺失，平台化建设和全球市场布局仍处于推进阶段。",
+          "evidence_signals": [
+            "《神探夏洛克：暗夜追踪者》经过近一年的审核后取得国内游戏版号",
+            "产品曾进入Steam探案节“热门即将推出”榜单全球第四、中国第一",
+            "入选Google for Startups创业企业计划和微软全球AI加速器Top 20",
+            "成为微软、谷歌、openai、火山引擎全球startup企业"
+          ],
+          "risks": [
+            "本轮融资金额未披露，无法评估资金规模对研发和全球推广的支撑力度",
+            "AI游戏世界引擎的平台化建设和全球市场布局仍处于推进阶段，商业化成效尚待验证",
+            "AI生成内容具有动态性和不确定性，需持续满足内容安全、数据管理、未成年人保护和平台审核等要求"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "神探夏洛克：暗夜追踪者",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Gamercury World Engine",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Michael Zhu",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jessica Wu",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海天使会",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-bc320dac1d8dfed9",
+          "date": "2026-03-31",
+          "title": "“美酷瑞Gamercury AI”完成新一轮融资-36氪",
+          "amount": "",
+          "source_refs": [
+            "SA-0f99b8ceb5bdf9c9"
+          ],
+          "round": "未披露",
+          "round_original": "未披露",
+          "round_code": "undisclosed"
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-9af2d19624e1ce4d",
+          "source_url": "https://eu.36kr.com/zh/newsflashes/3746728711389700",
+          "title": "“美酷瑞Gamercury AI”完成新一轮融资-36氪",
+          "publisher": "eu.36kr.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-06T03:47:01.449Z",
+          "content_hash": "33de21fb3e93df874a2b6429b259275fd3c920b0f7f777d1d4593c737bf70f40",
+          "source_artifact_id": "SA-0f99b8ceb5bdf9c9",
+          "raw_id": "RAW-ee48a7eec3673ea9"
+        },
+        {
+          "source_id": "FISRC-1777352e28e228a6",
+          "source_url": "https://gamercury.com/about.html",
+          "title": "关于我们 | Gamercury AI",
+          "publisher": "gamercury.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:53:35.348Z",
+          "content_hash": "8160cb9dde08e2e6",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-dc9647a9e8577f7d",
+          "source_url": "https://www.sh-italent.com/Article/202607/202607210008.shtml",
+          "title": "黄浦 | Steam全球第四、微软加速器Top20，这家黄浦AI企业靠什么闯到了世界前沿_上海国际人才网",
+          "publisher": "sh-italent.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:53:35.628Z",
+          "content_hash": "150e92b00f4c3457",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-06T03:53:41.775Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-06T03:53:41.775Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Gamercury World Engine",
+            "神探夏洛克：暗夜追踪者"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Jessica Wu",
+            "Michael Zhu"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-bc320dac1d8dfed9"
+      ],
+      "aggregation": {
+        "key": "EN-4f48a235dd30c397|angel",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-1f22a48be7033409",
+      "triggered_by_event_id": "EV-8ebc6f91cf181719",
+      "as_of_date": "2026-10-06",
+      "company": {
+        "entity_id": "EN-4a4954b3af3ce9a1",
+        "name": "威联机器人科技（深圳）有限公司",
+        "full_name": "威联机器人科技（深圳）有限公司",
+        "website": "",
+        "summary": "威联机器人（MOVA LINCO）是一家家庭AI基础设施公司，以AI智能语音路由器、AI NAS及AI算力盒子三大品类构建“连接+存储+算力”三位一体的家庭AI基础设施架构，面向全球消费市场提供家庭智能硬件解决方案。",
+        "headquarters": "深圳",
+        "founders": [
+          {
+            "name": "贾锌润",
+            "role": "总裁",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-22c6a061b8eedac4",
+                "quote": "MOVA LINCO总裁贾锌润表示",
+                "source_content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+                "quote_hash": "c2d9aecc2aaf4148821668ed38f6feff2c6fcb646bf1dc4d74aef5d491523e5a"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-22c6a061b8eedac4",
+            "quote": "威联机器人科技（深圳）有限公司（以下简称“MOVA LINCO”）近日完成数千万元天使融资",
+            "source_content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+            "quote_hash": "709eb294657596045c69c03ba03da9baa96f11420a5e0a90502c7a71d471ac32"
+          },
+          {
+            "source_id": "FISRC-1aa5507278275382",
+            "quote": "威联机器人成立于2025年1月，深耕家庭AI基础设施赛道，总部扎根深圳，专注面向全球消费市场打造成套化、系统化的家庭智能硬件解决方案",
+            "source_content_hash": "9d5d18da77ca2d50",
+            "quote_hash": "8a0f6bdd4469673307d93cbc2a90870a154a02b96f22ea69bdd53417f454b798"
+          }
+        ],
+        "application_entity_id": "EN-4a4954b3af3ce9a1",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "天使轮",
+        "amount": "数千万元",
+        "total_raised": "",
+        "announced_at": "2026-07-14",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-22c6a061b8eedac4",
+            "quote": "投资界（ID：pedaily2012）7月14日消息，威联机器人科技（深圳）有限公司（以下简称“MOVA LINCO”）近日完成数千万元天使融资。",
+            "source_content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+            "quote_hash": "4250cdbd83ae455896c5c04affd2c9593f9363ddd2c2ae36dfdfe9dbd781c546"
+          },
+          {
+            "source_id": "FISRC-22c6a061b8eedac4",
+            "quote": "威联机器人科技（深圳）有限公司（以下简称“MOVA LINCO”）近日完成数千万元天使融资",
+            "source_content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+            "quote_hash": "709eb294657596045c69c03ba03da9baa96f11420a5e0a90502c7a71d471ac32"
+          },
+          {
+            "source_id": "FISRC-1aa5507278275382",
+            "quote": "威联机器人（MOVA LINCO）完成数千万元天使融资",
+            "source_content_hash": "9d5d18da77ca2d50",
+            "quote_hash": "130633d0d29df0aae072cb9f1fec65acee22f4543167ccd6d4422cca3ab9c4af"
+          }
+        ],
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-8ebc6f91cf181719",
+            "round_original": "天使轮",
+            "amount": "数千万元",
+            "announced_at": "2026-07-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-22c6a061b8eedac4",
+                "quote": "投资界（ID：pedaily2012）7月14日消息，威联机器人科技（深圳）有限公司（以下简称“MOVA LINCO”）近日完成数千万元天使融资。",
+                "source_content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+                "quote_hash": "4250cdbd83ae455896c5c04affd2c9593f9363ddd2c2ae36dfdfe9dbd781c546"
+              },
+              {
+                "source_id": "FISRC-22c6a061b8eedac4",
+                "quote": "威联机器人科技（深圳）有限公司（以下简称“MOVA LINCO”）近日完成数千万元天使融资",
+                "source_content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+                "quote_hash": "709eb294657596045c69c03ba03da9baa96f11420a5e0a90502c7a71d471ac32"
+              },
+              {
+                "source_id": "FISRC-1aa5507278275382",
+                "quote": "威联机器人（MOVA LINCO）完成数千万元天使融资",
+                "source_content_hash": "9d5d18da77ca2d50",
+                "quote_hash": "130633d0d29df0aae072cb9f1fec65acee22f4543167ccd6d4422cca3ab9c4af"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "AI智能语音路由X1 Pro",
+          "description": "全屋网络与智能中控核心，机身内置定制语音芯片与自研语音算法，支持自然模糊语音交互，可理解用户日常表达背后的真实诉求并向全屋设备下发控制指令。",
+          "target_customers": "全球家庭用户",
+          "features": [
+            "内置定制语音芯片与自研语音算法",
+            "支持自然模糊语音交互",
+            "支持全屋Mesh组网",
+            "配备四组2.5G高速有线网口"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-22c6a061b8eedac4",
+              "quote": "MOVA LINCO在X1 Pro机身内置定制语音芯片与自研语音算法，支持自然模糊语音交互",
+              "source_content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+              "quote_hash": "caa674993ca4c9050be869e6b85dcbe1990cba9f47b71efd96745a0855124488"
+            },
+            {
+              "source_id": "FISRC-1aa5507278275382",
+              "quote": "第一款AI智能语音路由器X1 Pro，作为全屋网络与智能中控核心，支持全屋Mesh组网，搭载四组2.5G高速网口",
+              "source_content_hash": "9d5d18da77ca2d50",
+              "quote_hash": "3a53e15cb6a9ac97cad055589a75117b7f8c7fcb34e44ef9f1f0bb0adfce815e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI NAS UP6",
+          "description": "定位为“家庭私有云”，解决用户家庭数据的存储与智能检索问题，机身自带6英寸2K触控屏，支持自然语言检索与摄像头视频自动分类识别。",
+          "target_customers": "全球家庭用户",
+          "features": [
+            "机身自带6英寸2K触控屏",
+            "无需依赖手机或电脑即可完成配置和状态查看",
+            "支持自然语言检索",
+            "可对摄像头录制的视频进行自动分类与智能识别"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-22c6a061b8eedac4",
+              "quote": "此前，MOVA LINCO已在CES 2026上展出AI NAS UP6，这款产品定位为“家庭私有云”，解决用户家庭数据的存储与智能检索问题",
+              "source_content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+              "quote_hash": "cf20d3cc03c05baf6f2d4ca52bef99c3e7e2e505c6798027546a4cca920b897a"
+            },
+            {
+              "source_id": "FISRC-1aa5507278275382",
+              "quote": "第二款AI NAS私有云UP6，曾亮相2026年CES国际电子展，机身配备6英寸2K触控屏，主打本地家庭数据存储，支持自然语言检索多媒体文件",
+              "source_content_hash": "9d5d18da77ca2d50",
+              "quote_hash": "442784a538580e19c722357222e0e60b5c0aa9c05415d35b236ff3037c841f27"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI算力盒子（AI Box）",
+          "description": "锚定产品矩阵的算力层，定位是家庭的算力中心，根据不同设备需求分配计算资源，统一承担摄像头人脸识别、扫地机路径规划、语音指令语义理解等任务。",
+          "target_customers": "全球家庭用户",
+          "features": [
+            "家庭边缘计算中心",
+            "承接人脸识别、设备路径规划、行为学习等高算力任务",
+            "分担路由器与NAS运算压力"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-22c6a061b8eedac4",
+              "quote": "AI Box锚定产品矩阵的算力层，其定位是家庭的算力中心，根据不同设备需求分配计算资源",
+              "source_content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+              "quote_hash": "d8bf7fb93bc439b81ea10ffa7a8d1587c8cec0aa85256933e3f288385fb7f73c"
+            },
+            {
+              "source_id": "FISRC-1aa5507278275382",
+              "quote": "第三款AI算力盒子，作为家庭边缘计算中心，承接人脸识别、设备路径规划、行为学习等高算力任务，分担路由器与NAS运算压力",
+              "source_content_hash": "9d5d18da77ca2d50",
+              "quote_hash": "df5fbe2097352fe2e4c91bbd8939708e65be8f112f19a6415ace8299447dc4b7"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "天使轮融资金额",
+          "value": "数千万元",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-22c6a061b8eedac4",
+              "quote": "近日完成数千万元天使融资",
+              "source_content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+              "quote_hash": "ea29a7da5748e0b3d9717dab483dff36827b3226494abb8e6a37d7b3c22f934e"
+            }
+          ]
+        },
+        {
+          "label": "公司成立时间",
+          "value": "2025年1月",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1aa5507278275382",
+              "quote": "威联机器人成立于2025年1月",
+              "source_content_hash": "9d5d18da77ca2d50",
+              "quote_hash": "8125375262c0ca8faee037ba8909fb0a9856bc808d7e619046eb3a99711de6d2"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "贾锌润",
+          "quote": "路由器是家庭中少数能同时满足持续在线联网、不间断供电、以无线方式连接各类智能IoT设备这三项条件的形态。对比之下，以往智能音箱、中控屏或电视等终端要实现对其他设备的管控，其通信链路同样需先经由路由器；一旦路由器出现故障，全屋智能网络即面临全面中断。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-22c6a061b8eedac4",
+              "quote": "路由器是家庭中少数能同时满足持续在线联网、不间断供电、以无线方式连接各类智能IoT设备这三项条件的形态。对比之下，以往智能音箱、中控屏或电视等终端要实现对其他设备的管控，其通信链路同样需先经由路由器；一旦路由器出现故障，全屋智能网络即面临全面中断。",
+              "source_content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+              "quote_hash": "c52e91c265af8c2a1515499d62f5eb5dc54f7dde5d4f11822999f2fd52b1b06d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是家庭AI基础设施“连接+存储+算力”三位一体架构能否在海外消费市场落地：来源已验证公司完成数千万元天使融资、资金用于AI算法底层技术研发与产品量产体系及全球化渠道布局，并已推出X1 Pro、UP6与AI算力盒子三款产品；但投资方具体名称未披露，X1 Pro与UP6仅披露预计2026年下旬在海外上线，尚无销售、订单或收入数据，判断证据边界限于产品定义与融资事实。",
+        "validated_signals": [
+          "完成数千万元天使融资",
+          "资金将用于AI算法底层技术研发、完善产品量产体系、全球化渠道布局和家庭AI生态建设",
+          "已形成AI智能语音路由器、AI NAS及AI算力盒子三大品类产品矩阵",
+          "AI NAS UP6已在CES 2026上展出",
+          "产品原生兼容Matter、Thread等全球主流智能家居通用协议"
+        ],
+        "risks": [
+          "本轮融资未披露具体投资方名称，资本背书无法核实",
+          "X1 Pro与UP6仅披露预计2026年下旬在海外上线，量产与渠道落地仍待验证",
+          "来源未披露任何客户、订单、收入或出货数据，商业化实绩缺失",
+          "家庭AI基础设施涉及本地算力、存储与网络多品类协同，产品量产与品控体系完善存在执行风险",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_device",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "consumer"
+        ],
+        "sector": "家庭AI智能硬件",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是家庭AI基础设施“连接+存储+算力”三位一体架构能否在海外消费市场落地：来源已验证公司完成数千万元天使融资、资金用于AI算法底层技术研发与产品量产体系及全球化渠道布局，并已推出X1 Pro、UP6与AI算力盒子三款产品；但投资方具体名称未披露，X1 Pro与UP6仅披露预计2026年下旬在海外上线，尚无销售、订单或收入数据，判断证据边界限于产品定义与融资事实。",
+          "evidence_signals": [
+            "完成数千万元天使融资",
+            "资金将用于AI算法底层技术研发、完善产品量产体系、全球化渠道布局和家庭AI生态建设",
+            "已形成AI智能语音路由器、AI NAS及AI算力盒子三大品类产品矩阵",
+            "AI NAS UP6已在CES 2026上展出",
+            "产品原生兼容Matter、Thread等全球主流智能家居通用协议"
+          ],
+          "risks": [
+            "本轮融资未披露具体投资方名称，资本背书无法核实",
+            "X1 Pro与UP6仅披露预计2026年下旬在海外上线，量产与渠道落地仍待验证",
+            "来源未披露任何客户、订单、收入或出货数据，商业化实绩缺失",
+            "家庭AI基础设施涉及本地算力、存储与网络多品类协同，产品量产与品控体系完善存在执行风险",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI智能语音路由X1 Pro",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI NAS UP6",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI算力盒子（AI Box）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "贾锌润",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-8ebc6f91cf181719",
+          "date": "2026-07-14",
+          "title": "「威联机器人」获数千万元天使融资，打造AI家庭智能硬件",
+          "amount": "数千万元",
+          "source_refs": [
+            "SA-bebe4c619f83d1c9"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-22c6a061b8eedac4",
+          "source_url": "https://news.pedaily.cn/202607/566256.shtml",
+          "title": "「威联机器人」获数千万元天使融资，打造AI家庭智能硬件",
+          "publisher": "news.pedaily.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-06T03:47:01.448Z",
+          "content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+          "source_artifact_id": "SA-bebe4c619f83d1c9",
+          "raw_id": "RAW-dd449f96d6d55567"
+        },
+        {
+          "source_id": "FISRC-1aa5507278275382",
+          "source_url": "https://www.brandark.com/t/RPX8yx2d",
+          "title": "AI家庭智能硬件公司「威联机器人」完成数千万元天使融资",
+          "publisher": "brandark.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:52:48.650Z",
+          "content_hash": "9d5d18da77ca2d50",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-06T03:53:06.032Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-06T03:53:06.032Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI NAS UP6",
+            "AI智能语音路由X1 Pro",
+            "AI算力盒子（AI Box）"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "贾锌润"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-8ebc6f91cf181719"
+      ],
+      "aggregation": {
+        "key": "EN-4a4954b3af3ce9a1|angel",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-c6714cd7bb5ac396",
+      "triggered_by_event_id": "EV-2da0ebb3ba7c5677",
+      "as_of_date": "2026-10-06",
+      "company": {
+        "entity_id": "EN-d27608cca9b65f91",
+        "name": "Glow",
+        "full_name": "Glow",
+        "website": "https://www.glow.io",
+        "summary": "Glow 是一家 AI 驱动的终端安全公司，采用预防优先的方式重塑企业终端安全。公司由安全领域资深人士和连续创业者创立，认为 AI 使被动安全策略失效，因此从第一性原理重建终端保护。",
+        "headquarters": "以色列特拉维夫和美国加州帕洛阿尔托",
+        "founders": [],
+        "team_size": {
+          "value": "近100人",
+          "observed_at": "2026-07-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ed91eb7c32ba1ba",
+              "quote": "The startup employs nearly 100 people, about 70% of whom are in Israel and the remainder in the U.S.",
+              "source_content_hash": "2a67bea98b9f7ac7",
+              "quote_hash": "a4e34d634da091e6646a3ce20a5bc43ffe280fb10181e2e61f83968184c5f3fa"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e192dd3fe1a72590",
+            "quote": "Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach.",
+            "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+            "quote_hash": "af37e14f4b2555ced43044b226c0179ba44472e9f004bdb569fd01524b0995f8"
+          },
+          {
+            "source_id": "FISRC-f92db9c122897ebd",
+            "quote": "Glow was founded by security veterans and repeat founders with one shared conviction: AI made reactive security a losing game. We're rebuilding endpoint protection - the most attacked surface in the enterprise - from first principles.",
+            "source_content_hash": "570cdd5b783423b0",
+            "quote_hash": "1d02d2d933ee27d78a624a13ec9a78fb5e17ea95a322249d6854f9caff27a69f"
+          }
+        ],
+        "application_entity_id": "EN-d27608cca9b65f91",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$180 million",
+        "total_raised": "1.8亿美元",
+        "announced_at": "2026-07-22",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Sequoia",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e192dd3fe1a72590",
+                "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+                "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+                "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cyberstarts",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e192dd3fe1a72590",
+                "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+                "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+                "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Greenoaks",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e192dd3fe1a72590",
+                "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+                "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+                "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Redpoint Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e192dd3fe1a72590",
+                "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+                "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+                "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Index Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e192dd3fe1a72590",
+                "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+                "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+                "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Swish Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e192dd3fe1a72590",
+                "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+                "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+                "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lux Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e192dd3fe1a72590",
+                "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+                "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+                "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Operator Collective",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e192dd3fe1a72590",
+                "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+                "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+                "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Holly Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e192dd3fe1a72590",
+                "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+                "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+                "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e192dd3fe1a72590",
+            "quote": "TEL AVIV, Israel and PALO ALTO, Calif., July 22, 2026 - Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach.",
+            "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+            "quote_hash": "ebdcf9b26c5e3dab6c0b29a1588964002a96980d7fb5d7dadacbbc6210b32f5f"
+          },
+          {
+            "source_id": "FISRC-e192dd3fe1a72590",
+            "quote": "Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach.",
+            "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+            "quote_hash": "af37e14f4b2555ced43044b226c0179ba44472e9f004bdb569fd01524b0995f8"
+          },
+          {
+            "source_id": "FISRC-fb71a5032bce64d5",
+            "quote": "Cooley advised Redpoint Ventures, a venture capital firm investing in startups across the seed, early and growth phases, as a lead investor in Glow’s $180 million funding round, at a $1.2 billion valuation.",
+            "source_content_hash": "287f2a5358425448",
+            "quote_hash": "cb4402d6042931d743de6fbc31c1fd84bcf98b24d12592b6971b3868afa2396b"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$180 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 180000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.8 亿美元"
+        },
+        "total_raised_original": "1.8亿美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 180000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.8 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-2da0ebb3ba7c5677",
+            "round_original": "A轮",
+            "amount": "$180 million",
+            "announced_at": "2026-07-22",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e192dd3fe1a72590",
+                "quote": "TEL AVIV, Israel and PALO ALTO, Calif., July 22, 2026 - Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach.",
+                "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+                "quote_hash": "ebdcf9b26c5e3dab6c0b29a1588964002a96980d7fb5d7dadacbbc6210b32f5f"
+              },
+              {
+                "source_id": "FISRC-e192dd3fe1a72590",
+                "quote": "Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach.",
+                "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+                "quote_hash": "af37e14f4b2555ced43044b226c0179ba44472e9f004bdb569fd01524b0995f8"
+              },
+              {
+                "source_id": "FISRC-fb71a5032bce64d5",
+                "quote": "Cooley advised Redpoint Ventures, a venture capital firm investing in startups across the seed, early and growth phases, as a lead investor in Glow’s $180 million funding round, at a $1.2 billion valuation.",
+                "source_content_hash": "287f2a5358425448",
+                "quote_hash": "cb4402d6042931d743de6fbc31c1fd84bcf98b24d12592b6971b3868afa2396b"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Glow 终端安全平台",
+          "description": "一个终端安全平台，帮助企业监控和控制员工设备上运行的软件、AI 代理和开发者工具。平台使用专用 AI 代理持续映射企业环境、实时评估风险并执行安全策略。",
+          "target_customers": "企业客户，涵盖医疗、零售和金融服务等行业",
+          "features": [
+            "使用专用 AI 代理持续映射企业环境",
+            "实时评估风险",
+            "执行安全策略",
+            "防止恶意 npm 包安装",
+            "识别试图拉入此类软件的 AI 代理",
+            "检测缺少终端检测与响应工具或功能降低的员工设备"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ed91eb7c32ba1ba",
+              "quote": "Glow is building an endpoint security platform that helps enterprises monitor and control the software, AI agents, and developer tools running on employee devices. The startup said the platform uses specialized AI agents to continuously map enterprise environments, assess risk in real time, and enforce security policies.",
+              "source_content_hash": "2a67bea98b9f7ac7",
+              "quote_hash": "db44531bb4637f65528981df51662a5a1bfc974a431c8a170973209361836869"
+            },
+            {
+              "source_id": "FISRC-5ed91eb7c32ba1ba",
+              "quote": "Glow’s platform, Tiger said, has already prevented malicious npm packages, third-party software components used to build applications, from being installed in customer environments, identified AI agents attempting to pull in such software, and detected employee devices where endpoint detection and response tools were missing or operating with reduced functionality.",
+              "source_content_hash": "2a67bea98b9f7ac7",
+              "quote_hash": "c1f28eead8765029dea72ffeae5b540c5e20bf835af3c26a2aa4d4b3e4c66538"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "CrowdStrike",
+          "product": "终端检测与响应产品",
+          "scenario": "终端安全威胁检测",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "现有终端检测与响应产品主要关注威胁出现后的检测，而 Glow 设计为从一开始就防止有风险的软件、AI 代理和开发者工具进入企业环境。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ed91eb7c32ba1ba",
+              "quote": "Tiger said existing endpoint detection and response products focus primarily on detecting threats after they emerge, whereas Glow is designed to prevent risky software, AI agents, and developer tools from entering enterprise environments in the first place.",
+              "source_content_hash": "2a67bea98b9f7ac7",
+              "quote_hash": "f8cecb51f6544dc92ee48487a0f58e9a53b91335d3a672e22e7c3d8b3ee9d5d9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Microsoft",
+          "product": "终端安全产品",
+          "scenario": "终端安全威胁检测",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "现有终端检测与响应产品主要关注威胁出现后的检测，而 Glow 设计为从一开始就防止有风险的软件、AI 代理和开发者工具进入企业环境。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ed91eb7c32ba1ba",
+              "quote": "Glow enters a crowded endpoint security market dominated by companies including CrowdStrike, Microsoft, SentinelOne, and Palo Alto Networks. Tiger said existing endpoint detection and response products focus primarily on detecting threats after they emerge, whereas Glow is designed to prevent risky software, AI agents, and developer tools from entering enterprise environments in the first place.",
+              "source_content_hash": "2a67bea98b9f7ac7",
+              "quote_hash": "6823794e5d9470526d7b2d972606a3037978f9787efaac8b282f89c4cfb818ac"
+            }
+          ],
+          "entity_id": "EN-9fbf261b62c1d7c0"
+        },
+        {
+          "name": "SentinelOne",
+          "product": "终端安全产品",
+          "scenario": "终端安全威胁检测",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "现有终端检测与响应产品主要关注威胁出现后的检测，而 Glow 设计为从一开始就防止有风险的软件、AI 代理和开发者工具进入企业环境。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ed91eb7c32ba1ba",
+              "quote": "Glow enters a crowded endpoint security market dominated by companies including CrowdStrike, Microsoft, SentinelOne, and Palo Alto Networks. Tiger said existing endpoint detection and response products focus primarily on detecting threats after they emerge, whereas Glow is designed to prevent risky software, AI agents, and developer tools from entering enterprise environments in the first place.",
+              "source_content_hash": "2a67bea98b9f7ac7",
+              "quote_hash": "6823794e5d9470526d7b2d972606a3037978f9787efaac8b282f89c4cfb818ac"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Palo Alto Networks",
+          "product": "终端安全产品",
+          "scenario": "终端安全威胁检测",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "现有终端检测与响应产品主要关注威胁出现后的检测，而 Glow 设计为从一开始就防止有风险的软件、AI 代理和开发者工具进入企业环境。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ed91eb7c32ba1ba",
+              "quote": "Glow enters a crowded endpoint security market dominated by companies including CrowdStrike, Microsoft, SentinelOne, and Palo Alto Networks. Tiger said existing endpoint detection and response products focus primarily on detecting threats after they emerge, whereas Glow is designed to prevent risky software, AI agents, and developer tools from entering enterprise environments in the first place.",
+              "source_content_hash": "2a67bea98b9f7ac7",
+              "quote_hash": "6823794e5d9470526d7b2d972606a3037978f9787efaac8b282f89c4cfb818ac"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "融资额",
+          "value": "1.8亿美元",
+          "observed_at": "2026-07-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e192dd3fe1a72590",
+              "quote": "Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation",
+              "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+              "quote_hash": "493dd90f7072a0f3567feb83f7be44a50c70284a4cc20f31494024e7f682d9eb"
+            }
+          ]
+        },
+        {
+          "label": "估值",
+          "value": "12亿美元",
+          "observed_at": "2026-07-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e192dd3fe1a72590",
+              "quote": "Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation",
+              "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+              "quote_hash": "493dd90f7072a0f3567feb83f7be44a50c70284a4cc20f31494024e7f682d9eb"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "近100人",
+          "observed_at": "2026-07-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ed91eb7c32ba1ba",
+              "quote": "The startup employs nearly 100 people, about 70% of whom are in Israel and the remainder in the U.S.",
+              "source_content_hash": "2a67bea98b9f7ac7",
+              "quote_hash": "a4e34d634da091e6646a3ce20a5bc43ffe280fb10181e2e61f83968184c5f3fa"
+            }
+          ]
+        },
+        {
+          "label": "以色列员工占比",
+          "value": "约70%",
+          "observed_at": "2026-07-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ed91eb7c32ba1ba",
+              "quote": "The startup employs nearly 100 people, about 70% of whom are in Israel and the remainder in the U.S.",
+              "source_content_hash": "2a67bea98b9f7ac7",
+              "quote_hash": "a4e34d634da091e6646a3ce20a5bc43ffe280fb10181e2e61f83968184c5f3fa"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Roi Tiger",
+          "quote": "If you think of the past decade, everything was moving to the cloud and SaaS. Suddenly, AI lands on the endpoint in a way we’ve never seen",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ed91eb7c32ba1ba",
+              "quote": "“If you think of the past decade, everything was moving to the cloud and SaaS. Suddenly, AI lands on the endpoint in a way we’ve never seen,” co-founder and chief executive Roi Tiger (pictured above, center) said in an interview.",
+              "source_content_hash": "2a67bea98b9f7ac7",
+              "quote_hash": "f31d75d504d2bd595a537be2226dc917ed82f34caa3864e4e616db0cb0a3d765"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 AI 时代终端安全范式的转变：随着企业部署 AI 工具、攻击者利用生成式 AI 自动化攻击，传统终端检测与响应产品主要关注威胁出现后的检测，而 Glow 采用预防优先的方式，从一开始就防止有风险的软件、AI 代理和开发者工具进入企业环境。当前 12 亿美元估值和 1.8 亿美元融资所依赖的已验证信号包括：公司已结束隐身模式、拥有付费客户（涵盖医疗、零售和金融服务行业）、平台已实际阻止恶意 npm 包安装并检测到缺失终端检测与响应工具的设备。判断的证据边界在于：公司未披露收入指标和客户名称及数量，AI 原生终端安全平台能否成为独立品类仍有待观察，企业才刚刚开始应对日益强大的 AI 模型带来的安全影响。",
+        "validated_signals": [
+          "公司已结束隐身模式并完成 1.8 亿美元融资，估值 12 亿美元",
+          "公司已拥有付费客户，涵盖医疗、零售和金融服务行业",
+          "平台已阻止恶意 npm 包安装到客户环境",
+          "平台已识别试图拉入恶意软件的 AI 代理",
+          "平台已检测到缺少终端检测与响应工具或功能降低的员工设备",
+          "公司员工近 100 人，约 70% 在以色列，其余在美国"
+        ],
+        "risks": [
+          "公司未披露收入指标和客户名称及数量，商业化进展无法量化验证",
+          "AI 原生终端安全平台能否成为独立品类仍有待观察，企业才刚刚开始应对 AI 模型的安全影响",
+          "终端安全市场竞争激烈，由 CrowdStrike、Microsoft、SentinelOne 和 Palo Alto Networks 等公司主导",
+          "公司成立于 2025 年，运营历史较短，产品成熟度和规模化能力尚待验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "model_agent_security",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "retail_ecommerce"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "网络安全",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 时代终端安全范式的转变：随着企业部署 AI 工具、攻击者利用生成式 AI 自动化攻击，传统终端检测与响应产品主要关注威胁出现后的检测，而 Glow 采用预防优先的方式，从一开始就防止有风险的软件、AI 代理和开发者工具进入企业环境。当前 12 亿美元估值和 1.8 亿美元融资所依赖的已验证信号包括：公司已结束隐身模式、拥有付费客户（涵盖医疗、零售和金融服务行业）、平台已实际阻止恶意 npm 包安装并检测到缺失终端检测与响应工具的设备。判断的证据边界在于：公司未披露收入指标和客户名称及数量，AI 原生终端安全平台能否成为独立品类仍有待观察，企业才刚刚开始应对日益强大的 AI 模型带来的安全影响。",
+          "evidence_signals": [
+            "公司已结束隐身模式并完成 1.8 亿美元融资，估值 12 亿美元",
+            "公司已拥有付费客户，涵盖医疗、零售和金融服务行业",
+            "平台已阻止恶意 npm 包安装到客户环境",
+            "平台已识别试图拉入恶意软件的 AI 代理",
+            "平台已检测到缺少终端检测与响应工具或功能降低的员工设备",
+            "公司员工近 100 人，约 70% 在以色列，其余在美国"
+          ],
+          "risks": [
+            "公司未披露收入指标和客户名称及数量，商业化进展无法量化验证",
+            "AI 原生终端安全平台能否成为独立品类仍有待观察，企业才刚刚开始应对 AI 模型的安全影响",
+            "终端安全市场竞争激烈，由 CrowdStrike、Microsoft、SentinelOne 和 Palo Alto Networks 等公司主导",
+            "公司成立于 2025 年，运营历史较短，产品成熟度和规模化能力尚待验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Glow 终端安全平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cyberstarts",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Greenoaks",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Redpoint Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Index Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Swish Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lux Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Operator Collective",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Holly Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "CrowdStrike",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Microsoft",
+          "canonical_entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "SentinelOne",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Palo Alto Networks",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-2da0ebb3ba7c5677",
+          "date": "2026-07-22",
+          "title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+          "amount": "$180 million",
+          "source_refs": [
+            "SA-946804ff7cfe4046"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e192dd3fe1a72590",
+          "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+          "title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+          "publisher": "www.glow.io",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-06T03:47:01.451Z",
+          "content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+          "source_artifact_id": "SA-946804ff7cfe4046",
+          "raw_id": "RAW-b56857e59649e5ec"
+        },
+        {
+          "source_id": "FISRC-fb71a5032bce64d5",
+          "source_url": "https://www.cooley.com/news/coverage/2026/2026-07-22-glow-emerges-from-stealth-with-%24180-million",
+          "title": "Glow Emerges From Stealth With $180 Million",
+          "publisher": "cooley.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:52:49.155Z",
+          "content_hash": "287f2a5358425448",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f92db9c122897ebd",
+          "source_url": "https://www.glow.io/about",
+          "title": "About Glow | Endpoint AI Security Company",
+          "publisher": "glow.io",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:52:49.836Z",
+          "content_hash": "570cdd5b783423b0",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5ed91eb7c32ba1ba",
+          "source_url": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/",
+          "title": "Glow emerges from stealth at $1.2B valuation to challenge endpoint security in the AI era",
+          "publisher": "techcrunch.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:52:50.753Z",
+          "content_hash": "2a67bea98b9f7ac7",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-06T03:53:02.849Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-06T03:53:02.849Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Glow 终端安全平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-2da0ebb3ba7c5677"
+      ],
+      "aggregation": {
+        "key": "EN-d27608cca9b65f91|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-0b6ce9d6c0336d06",
+      "triggered_by_event_id": "EV-c4af2ee7bdd947db",
+      "as_of_date": "2026-10-06",
+      "company": {
+        "entity_id": "EN-c39021d4e261ee12",
+        "name": "Kando AI",
+        "full_name": "Kando AI",
+        "website": "",
+        "summary": "Kando AI 由北大计算机博士吴秉哲与连续创业者毛书翰于2026年6月创立，定位为“决策领域的Cursor”，希望让AI从真实决策及其结果中持续学习，构建下一代自进化决策系统。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "吴秉哲",
+            "role": "创始人/首席科学家",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7b1743cd84f76d48",
+                "quote": "创始人/首席科学家吴秉哲毕业于北大数学系本科，并取得计算机博士学位，曾是苹果博士奖学金大陆首位获得者、前腾讯AI Lab可信AI负责人",
+                "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+                "quote_hash": "c20eb4848b3b7c43bbb8cc24ce8c99d62bce7769b6cbd377ce655a0364eb7947"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "毛书翰",
+            "role": "联合创始人/CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7b1743cd84f76d48",
+                "quote": "联合创始人/CEO毛书翰为连续创业者，本科毕业于清华大学，硕士毕业于港大金融学，曾任职于国内头部投行多年，并曾参与创立具身智能公司，获2025年福布斯30 Under 30。",
+                "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+                "quote_hash": "b936f20f7c3f588ee0e425c9a9dd9c35f255aa30f7fb619df39540b59a483447"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约10人",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "Kando团队目前约有10人，团队来自腾讯、字节、美团、华泰证券等国内头部机构。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "f0b607a6b360be1a4ab14ad1271ab35d9e0b21258a9a9756c02ed1b99f66343d"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7b1743cd84f76d48",
+            "quote": "2026年6月，两人正式创立了Kando AI，希望让AI从真实决策及其结果中持续学习，构建下一代自进化决策系统。",
+            "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+            "quote_hash": "35bd3b44a08ee595271030a2f36d359342160112f0998ac56ee38f2940313035"
+          },
+          {
+            "source_id": "FISRC-fe4ac90ea8decb0c",
+            "quote": "2026年6月，两人正式创立了Kando AI，希望让AI从真实决策及其结果中持续学习，构建下一代自进化决策系统。",
+            "source_content_hash": "616701fa16ce297fcb49d10cbedd80fe1cdc8a20983d26ab87a7743cfffa76c0",
+            "quote_hash": "35bd3b44a08ee595271030a2f36d359342160112f0998ac56ee38f2940313035"
+          }
+        ],
+        "application_entity_id": "EN-c39021d4e261ee12",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "数千万元",
+        "total_raised": "",
+        "announced_at": "2026-07-28",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "星连资本",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7b1743cd84f76d48",
+                "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。",
+                "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+                "quote_hash": "c16f2f9add69766ac08a675555d0acd0c8e7680bfd2d7f5303e5b7db2d45bcae"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "力合金控",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7b1743cd84f76d48",
+                "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。",
+                "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+                "quote_hash": "c16f2f9add69766ac08a675555d0acd0c8e7680bfd2d7f5303e5b7db2d45bcae"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fe4ac90ea8decb0c",
+            "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。",
+            "source_content_hash": "616701fa16ce297fcb49d10cbedd80fe1cdc8a20983d26ab87a7743cfffa76c0",
+            "quote_hash": "c16f2f9add69766ac08a675555d0acd0c8e7680bfd2d7f5303e5b7db2d45bcae"
+          },
+          {
+            "source_id": "FISRC-7b1743cd84f76d48",
+            "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。",
+            "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+            "quote_hash": "c16f2f9add69766ac08a675555d0acd0c8e7680bfd2d7f5303e5b7db2d45bcae"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c4af2ee7bdd947db",
+            "round_original": "种子轮",
+            "amount": "数千万元",
+            "announced_at": "2026-07-28",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe4ac90ea8decb0c",
+                "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。",
+                "source_content_hash": "616701fa16ce297fcb49d10cbedd80fe1cdc8a20983d26ab87a7743cfffa76c0",
+                "quote_hash": "c16f2f9add69766ac08a675555d0acd0c8e7680bfd2d7f5303e5b7db2d45bcae"
+              },
+              {
+                "source_id": "FISRC-7b1743cd84f76d48",
+                "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。",
+                "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+                "quote_hash": "c16f2f9add69766ac08a675555d0acd0c8e7680bfd2d7f5303e5b7db2d45bcae"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Kando AI 决策工作台",
+          "description": "面向高价值决策场景的工作台，承载一套能够从真实决策中积累经验、验证判断并持续进化的决策系统，核心能力是面向认知结构的记忆系统，形成“判断—行动—反馈—更新”的递归闭环。",
+          "target_customers": "投资人、科研工作者等专业用户群体",
+          "features": [
+            "面向认知结构的记忆与召回机制，不同于传统RAG",
+            "用户可对预判进行采纳、修改、否决或纳入追踪",
+            "结果发生后系统回溯假设，分析判断验证与错误归因",
+            "决策轨迹组织为学习信号，更新长期记忆、任务策略、Skill调度和模型适配层",
+            "从Infra层自研，训练链路、反馈链路和记忆链路可监测、可回溯"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "Kando AI的产品形态，是一个面向高价值决策场景的工作台。但在团队看来，工作台只是产品入口，它真正承载的是一套能够从真实决策中积累经验、验证判断并持续进化的决策系统。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "2c8569d5fa8f9b5d1fb87af698a7e6ed605f9edbf0b627f03627f1a26ce8506e"
+            },
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "在商业化上，Kando AI选择先从高价值、高频决策用户切入。当前的种子用户主要集中在专业用户群体，包括投资人、科研工作者等。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "3301e2ac5872c4d348dc7703b791712e8d990c8d722c7f343a6de14b0db52f93"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Cursor",
+          "product": "AI Coding工具",
+          "scenario": "代码编写与采纳",
+          "target_customer": "开发者",
+          "funding_summary": "",
+          "core_difference": "Cursor优化代码采纳率，Kando AI优化决策采纳率与事后可靠性，面向金融、科研等高价值决策场景。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "毛书翰表示，Kando的定位是做决策领域的Cursor。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "9f2885849fec53f068925ca37987d53254c9ca6b800928f67808a0d62ab8583a"
+            },
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "2022年AI Coding工具刚出来时，代码采纳率几乎为零。到今天，Cursor的采纳率已经到60%-70%。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "65452a8b30c763c6d19b31761e48a541aafa655ed902b75f11e69da957a1080e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "传统RAG",
+          "product": "检索增强生成",
+          "scenario": "信息检索与语义匹配",
+          "target_customer": "AI产品用户",
+          "funding_summary": "",
+          "core_difference": "传统RAG偏向语义相似度匹配，Kando AI的记忆系统更接近面向认知结构的推荐与召回机制，记住用户如何理解问题、偏好和修正判断。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "传统RAG更偏向语义相似度匹配，而Kando AI的记忆系统更接近一种面向认知结构的推荐与召回机制——系统记住的，不只是用户看过什么，更是用户如何理解问题、偏好、过去是如何修正判断的，更像是一种Harness。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "34a4c8779f111bd6649be587f03ec38f9fcaa867de90718985576f74c378a8cc"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "同花顺、万得",
+          "product": "金融信息终端",
+          "scenario": "金融信息搜集、整理、存储、检索、总结",
+          "target_customer": "金融从业者",
+          "funding_summary": "",
+          "core_difference": "同花顺、万得解决信息层问题，Kando AI试图打通“信息→决策→反馈”闭环，优化决策采纳率与事后可靠性。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "过去二十年，无论是金融领域的同花顺、万得，还是科研场景中的论文数据库、文献管理工具和知识平台，解决的本质上都是“信息层”的问题：帮你搜集、整理、存储、检索、总结。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "43a9f15a4b7c190c8266e88c962d8b25326ce87ecc3a60793bb80c8e11fe5e54"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "团队规模",
+          "value": "约10人",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "Kando团队目前约有10人，团队来自腾讯、字节、美团、华泰证券等国内头部机构。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "f0b607a6b360be1a4ab14ad1271ab35d9e0b21258a9a9756c02ed1b99f66343d"
+            }
+          ]
+        },
+        {
+          "label": "成立时间",
+          "value": "2026年6月",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "2026年6月，两人正式创立了Kando AI",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "20eadcffe0df451331643243c7ed22eb1fdf045a96f95efe0c893c8cbbd6deca"
+            }
+          ]
+        },
+        {
+          "label": "融资轮次",
+          "value": "种子轮",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "Kando AI已完成数千万元种子轮融资",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "8937f0eda100958e8a8bd74817f60a5eb374eaab5cf3b208521691dbb97f01e0"
+            }
+          ]
+        },
+        {
+          "label": "融资额",
+          "value": "数千万元",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "Kando AI已完成数千万元种子轮融资",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "8937f0eda100958e8a8bd74817f60a5eb374eaab5cf3b208521691dbb97f01e0"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "毛书翰",
+          "quote": "互联网/移动互联网时代，我们完成了信息数字化；AI时代，我们想推动的是决策自进化。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "互联网/移动互联网时代，我们完成了信息数字化；AI时代，我们想推动的是决策自进化。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "2029a190cc1e4bd852b4c9bb1963a38e97e89c3a62d0c2a078bb3bc3fa60d4bd"
+            }
+          ]
+        },
+        {
+          "speaker": "毛书翰",
+          "quote": "信息和行动之间，不是自动连通的。中间最关键的是决策，而人的大脑、经验、潜意识、审美和判断习惯，过去一直无法被系统性沉淀。AI第一次让这座桥有可能被搭起来。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "信息和行动之间，不是自动连通的。中间最关键的是决策，而人的大脑、经验、潜意识、审美和判断习惯，过去一直无法被系统性沉淀。AI第一次让这座桥有可能被搭起来。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "33b1cf1feb60690705818fc06e8fd7eb7cdadac9077cada95ee859da17527400"
+            }
+          ]
+        },
+        {
+          "speaker": "吴秉哲",
+          "quote": "你可以把做产品的过程，看成是一个模型后训练的过程。只不过以前优化的是参数，现在优化的是上下文、交互和记忆。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "你可以把做产品的过程，看成是一个模型后训练的过程。只不过以前优化的是参数，现在优化的是上下文、交互和记忆。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "9a227b272e90faa7854ee2dabc65019377a213d49d310c278a41f7cb628b9949"
+            }
+          ]
+        },
+        {
+          "speaker": "吴秉哲",
+          "quote": "Kando AI不是只做一个工具，而是在那些没有标准答案、却最值得被放大的领域里，把‘信息→决策→反馈’的闭环真正打通。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "Kando AI不是只做一个工具，而是在那些没有标准答案、却最值得被放大的领域里，把‘信息→决策→反馈’的闭环真正打通。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "b049c8361a8cd487fca8b8fbc29ed50bd9b9bcf1dd5720720e99d4af5de1d2b6"
+            }
+          ]
+        },
+        {
+          "speaker": "李文珏",
+          "quote": "AI应用的下一阶段，不只是更高效地处理信息，而是进入真实工作流，学习专业用户如何判断、行动和修正认知。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7b1743cd84f76d48",
+              "quote": "AI应用的下一阶段，不只是更高效地处理信息，而是进入真实工作流，学习专业用户如何判断、行动和修正认知。",
+              "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+              "quote_hash": "3ebfa5c9563a5481bc5924c271fa8bfb1d4a8de8313b6b13b89b69f9ab39efca"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "星连资本",
+            "speaker": "李文珏",
+            "speaker_role": "星连资本合伙人",
+            "rationale": "星连资本看重Kando AI选择金融、科研等高价值决策场景，以个性化记忆和认知建模为底座，将用户研究过程、采纳与拒绝、事后复盘转化为学习信号，突破传统AI工具一次性回答的边界，形成随用户共同进化的决策系统；同时看重团队兼具前沿AI研究、模型后训练、系统工程与复杂决策经验，以及从真实使用中沉淀专有工作流数据、推动能力持续增长的潜力。",
+            "quote": "AI应用的下一阶段，不只是更高效地处理信息，而是进入真实工作流，学习专业用户如何判断、行动和修正认知。Kando AI选择金融、科研等高价值决策场景，以个性化记忆和认知建模为底座，将用户的研究过程、采纳与拒绝、事后复盘转化为学习信号，突破传统AI工具一次性回答的边界，形成随用户共同进化的决策系统。我们看重团队兼具前沿AI研究、模型后训练、系统工程与复杂决策经验，更看重其从真实使用中沉淀专有工作流数据、推动能力持续增长的潜力。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7b1743cd84f76d48",
+                "quote": "AI应用的下一阶段，不只是更高效地处理信息，而是进入真实工作流，学习专业用户如何判断、行动和修正认知。Kando AI选择金融、科研等高价值决策场景，以个性化记忆和认知建模为底座，将用户的研究过程、采纳与拒绝、事后复盘转化为学习信号，突破传统AI工具一次性回答的边界，形成随用户共同进化的决策系统。我们看重团队兼具前沿AI研究、模型后训练、系统工程与复杂决策经验，更看重其从真实使用中沉淀专有工作流数据、推动能力持续增长的潜力。",
+                "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+                "quote_hash": "2d9c5017fc7dba4c52d6b5aa21473bbfdaead05f8fcab442a4672ce82be1ae35"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是Kando AI能否在金融、科研等高价值决策场景中验证“判断—行动—反馈—更新”的递归闭环，即AI建议的决策采纳率与事后可靠性是否真正进入用户的研究、判断和行动过程。当前融资所依赖的已验证信号包括：产品已上线内测，种子用户集中在投资人、科研工作者等专业用户群体，团队约10人且来自腾讯、字节、美团、华泰证券等机构，创始人具备北大计算机博士、前腾讯AI Lab可信AI负责人及连续创业背景。判断的证据边界在于：闭环是否得到验证尚不明确，来源仅表述为“若这一闭环得到验证”，且未披露内测用户规模、留存、采纳率等运营数据。",
+        "validated_signals": [
+          "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投",
+          "Kando AI现已上线内测",
+          "当前种子用户主要集中在专业用户群体，包括投资人、科研工作者等",
+          "Kando团队目前约有10人，团队来自腾讯、字节、美团、华泰证券等国内头部机构",
+          "创始人吴秉哲为北大数学系本科、计算机博士，前腾讯AI Lab可信AI负责人",
+          "联合创始人毛书翰为连续创业者，曾参与创立具身智能公司"
+        ],
+        "risks": [
+          "来源明确将闭环验证表述为条件句“若这一闭环得到验证”，决策采纳率与事后可靠性尚未被证实",
+          "产品处于内测阶段，未披露用户规模、留存率、付费转化等商业化数据",
+          "金融、科研等高价值决策场景的反馈周期和可审计性虽被描述为优势，但实际数据飞轮能否形成仍待验证",
+          "团队约10人，规模较小，同时推进金融与科研两个垂直领域存在资源分散风险"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "data_analysis",
+          "research_discovery",
+          "knowledge_search"
+        ],
+        "industry_ids": [
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "researcher"
+        ],
+        "sector": "企业级AI决策软件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Kando AI能否在金融、科研等高价值决策场景中验证“判断—行动—反馈—更新”的递归闭环，即AI建议的决策采纳率与事后可靠性是否真正进入用户的研究、判断和行动过程。当前融资所依赖的已验证信号包括：产品已上线内测，种子用户集中在投资人、科研工作者等专业用户群体，团队约10人且来自腾讯、字节、美团、华泰证券等机构，创始人具备北大计算机博士、前腾讯AI Lab可信AI负责人及连续创业背景。判断的证据边界在于：闭环是否得到验证尚不明确，来源仅表述为“若这一闭环得到验证”，且未披露内测用户规模、留存、采纳率等运营数据。",
+          "evidence_signals": [
+            "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投",
+            "Kando AI现已上线内测",
+            "当前种子用户主要集中在专业用户群体，包括投资人、科研工作者等",
+            "Kando团队目前约有10人，团队来自腾讯、字节、美团、华泰证券等国内头部机构",
+            "创始人吴秉哲为北大数学系本科、计算机博士，前腾讯AI Lab可信AI负责人",
+            "联合创始人毛书翰为连续创业者，曾参与创立具身智能公司"
+          ],
+          "risks": [
+            "来源明确将闭环验证表述为条件句“若这一闭环得到验证”，决策采纳率与事后可靠性尚未被证实",
+            "产品处于内测阶段，未披露用户规模、留存率、付费转化等商业化数据",
+            "金融、科研等高价值决策场景的反馈周期和可审计性虽被描述为优势，但实际数据飞轮能否形成仍待验证",
+            "团队约10人，规模较小，同时推进金融与科研两个垂直领域存在资源分散风险"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Kando AI 决策工作台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "吴秉哲",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "毛书翰",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "星连资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "力合金控",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Cursor",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "传统RAG",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "同花顺、万得",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-c4af2ee7bdd947db",
+          "date": "2026-07-28",
+          "title": "星连资本被投企业Kando AI完成数千万元种子轮融资 打造决策领域的Cursor",
+          "amount": "数千万元",
+          "source_refs": [
+            "SA-42907592e1e5f4f2",
+            "SA-727e4baef97b8cf9"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-fe4ac90ea8decb0c",
+          "source_url": "https://eu.36kr.com/zh/p/3917563544573831",
+          "title": "星连资本被投企业Kando AI完成数千万元种子轮融资 打造决策领域的Cursor",
+          "publisher": "eu.36kr.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-06T03:47:01.445Z",
+          "content_hash": "616701fa16ce297fcb49d10cbedd80fe1cdc8a20983d26ab87a7743cfffa76c0",
+          "source_artifact_id": "SA-42907592e1e5f4f2",
+          "raw_id": "RAW-b2c14f30af05f76f"
+        },
+        {
+          "source_id": "FISRC-7b1743cd84f76d48",
+          "source_url": "https://eu.36kr.com/zh/p/3915057199535233",
+          "title": "Kando AI完成数千万元种子轮融资 打造决策领域的Cursor｜涌现新项目",
+          "publisher": "eu.36kr.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-06T03:47:01.453Z",
+          "content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+          "source_artifact_id": "SA-727e4baef97b8cf9",
+          "raw_id": "RAW-28416247c1352ff9"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-06T03:52:47.569Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-06T03:52:47.569Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Kando AI 决策工作台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "吴秉哲",
+            "毛书翰"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c4af2ee7bdd947db"
+      ],
+      "aggregation": {
+        "key": "EN-c39021d4e261ee12|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-b2303b7ea4897a04",
+      "triggered_by_event_id": "EV-5eb12cbaa6f52e06",
+      "as_of_date": "2026-10-06",
+      "company": {
+        "entity_id": "EN-aab373badaa83178",
+        "name": "Valon Technologies",
+        "full_name": "Valon Technologies",
+        "website": "https://www.valon.ai/",
+        "summary": "Valon 是面向受监管金融的 AI 原生操作系统提供商，其核心产品 ValonOS 为抵押贷款服务商提供统一的贷款数据、资金流转、工作流、合规逻辑与审计追踪系统，并在此基础上部署 AI 智能体。",
+        "headquarters": "New York and San Francisco",
+        "founders": [
+          {
+            "name": "Andrew Wang",
+            "role": "co-founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7144312b4dd2f62c",
+                "quote": "said Andrew Wang, co-founder and CEO of Valon",
+                "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+                "quote_hash": "963f6d2fffe273b04145eff523f94052e9fb5d8a613d3285dbec3414f5a2b7bc"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Linda Du",
+            "role": "co-founder and President",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7144312b4dd2f62c",
+                "quote": "said Linda Du, co-founder and President of Valon",
+                "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+                "quote_hash": "d85b778357f019b3a66c96273c0a87bc002cc31bba7ce719dd3bbe45597c2fc2"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7144312b4dd2f62c",
+            "quote": "Valon Technologies (“Valon”), the AI-native operating system for regulated finance",
+            "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+            "quote_hash": "59e9223e4c31951a170ee8d57fd3ec513ba3ca25d240df97234b39191d545be5"
+          },
+          {
+            "source_id": "FISRC-d95c3cb13900be48",
+            "quote": "We ran that operation ourselves for six years and turned it into ValonOS: one system of record for the loan, the money movement, the workflow, and the audit trail.",
+            "source_content_hash": "4260e18a12bba605",
+            "quote_hash": "5ebc9b2e8f68c797b33607b658d1de187e1ae4d564a6da8350fe78f58f707c4a"
+          }
+        ],
+        "application_entity_id": "EN-aab373badaa83178",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "D轮",
+        "amount": "$150 million",
+        "total_raised": "",
+        "announced_at": "2026-10-05",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Ribbit Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7144312b4dd2f62c",
+                "quote": "New investor Ribbit Capital joined the round",
+                "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+                "quote_hash": "2da1170d4c45ba05789c2d9dea65424aea6a57697358a9efb728a70eebbfd2b1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7144312b4dd2f62c",
+                "quote": "alongside continued participation from existing investors including Andreessen Horowitz",
+                "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+                "quote_hash": "1342e304a257bbaa5662700cd27d08746c0a563acbf2a63d5c186c097f6b6e25"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7144312b4dd2f62c",
+            "quote": "Valon Technologies (“Valon”), the AI-native operating system for regulated finance, today announced it has raised $150 million in Series D funding at a $2.3 billion valuation, doubling its last valuation.",
+            "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+            "quote_hash": "3c0bdc95e83e5b6584460998620f19d266190f1dabb6a58e8fb99a80f2b7d8e6"
+          },
+          {
+            "source_id": "FISRC-7144312b4dd2f62c",
+            "quote": "New investor Ribbit Capital joined the round, alongside continued participation from existing investors including Andreessen Horowitz.",
+            "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+            "quote_hash": "d979101733166dd8fd00d3098ea4e0011509777d537a28e0f8a0ce6b2013c5e2"
+          }
+        ],
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "$150 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-5eb12cbaa6f52e06",
+            "round_original": "D轮",
+            "amount": "$150 million",
+            "announced_at": "2026-10-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7144312b4dd2f62c",
+                "quote": "Valon Technologies (“Valon”), the AI-native operating system for regulated finance, today announced it has raised $150 million in Series D funding at a $2.3 billion valuation, doubling its last valuation.",
+                "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+                "quote_hash": "3c0bdc95e83e5b6584460998620f19d266190f1dabb6a58e8fb99a80f2b7d8e6"
+              },
+              {
+                "source_id": "FISRC-7144312b4dd2f62c",
+                "quote": "New investor Ribbit Capital joined the round, alongside continued participation from existing investors including Andreessen Horowitz.",
+                "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+                "quote_hash": "d979101733166dd8fd00d3098ea4e0011509777d537a28e0f8a0ce6b2013c5e2"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "ValonOS",
+          "description": "面向抵押贷款服务商的 AI 原生操作系统，替代碎片化遗留系统，提供贷款数据、投资者报告、运营工作流、合规逻辑和资金流转的统一系统记录，并支持在其上部署 AI 智能体。",
+          "target_customers": "抵押贷款服务商，包括全国大型服务商",
+          "features": [
+            "统一系统记录",
+            "工作流与任务管理",
+            "合规逻辑与审计追踪",
+            "AI 智能体执行服务任务"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "ValonOS replaces a servicer's fragmented systems with a single operating system for loan data, investor reporting, operational workflows, compliance logic, and money movement.",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "90579c2b28460c18cfd1e1a53baa43202ed8208131c5b18417e38249b549a5c5"
+            },
+            {
+              "source_id": "FISRC-d95c3cb13900be48",
+              "quote": "ValonOS: The unified platform",
+              "source_content_hash": "4260e18a12bba605",
+              "quote_hash": "421f6aa09ba4e91f02643d24ae9e6eab6d34c6c1e6c55060ea4e78641a7982bb"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Valon AI Agents",
+          "description": "原生运行于 ValonOS 的 AI 智能体，在受监管环境中执行抵押贷款服务任务，如回复房主邮件、分配付款和运行托管分析，所有操作均保留审计追踪。",
+          "target_customers": "ValonOS 的抵押贷款服务商客户",
+          "features": [
+            "回复房主邮件",
+            "分配付款",
+            "运行托管分析",
+            "审计追踪"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "AI agents native to ValonOS take on work across mortgage servicing, from answering homeowner emails to allocating payments and running escrow analyses.",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "14bc24605491d87be7f13e263680fe3748fcb6c5caf41bae04c1edcb357aeecb"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "ServiceMac",
+          "industry": "抵押贷款服务",
+          "use_case": "采用 ValonOS 作为核心服务平台的第四大住宅子服务商，已上线运行。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "ServiceMac, the fourth-largest residential subservicer",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "7b3b2440d94677e7fd6a1bdbeaf3c6f13ca5c6e8869a9ab5ca2e77ce9b806956"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Carrington Mortgage Services",
+          "industry": "抵押贷款服务",
+          "use_case": "收购 Valon 服务业务后采用 ValonOS 作为核心服务平台，已上线运行。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "Carrington Mortgage Services, which acquired Valon's servicing business in August and adopted ValonOS as its core servicing platform",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "81952275a89a701b368febd4cbaa992a71575f1ddcb4c97104f1a5d4d2ac410b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Rithm Capital's Newrez",
+          "industry": "抵押贷款服务",
+          "use_case": "全国最大抵押贷款机构之一，将运行 ValonOS。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "ValonOS will power the nation's largest mortgage institutions, including Rithm Capital's Newrez, Carrington Mortgage Services, and ServiceMac.",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "2c6179834a675ac387adea51203c6b5ca18ea0baede6396f4a5d593d86de255e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "Series D 融资额",
+          "value": "$150 million",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "raised $150 million in Series D funding",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "33659f55376d923c5cd782d58a0d3a9992a36ad5481c91fc9e3130f99f020a43"
+            }
+          ]
+        },
+        {
+          "label": "估值",
+          "value": "$2.3 billion",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "at a $2.3 billion valuation",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "c616ca814707a5f58363ebe25e71e02dc82c29c0b01172185817592f2286a65b"
+            }
+          ]
+        },
+        {
+          "label": "签约年度经常性收入",
+          "value": "超过 $200 million",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "Valon signed more than $200 million in contracted annual recurring revenue",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "7663e65e4dd22728f75e41d68926fc54aa3f75ec8e0a495cabc05e0a8b72372d"
+            }
+          ]
+        },
+        {
+          "label": "美国抵押贷款合同覆盖率",
+          "value": "1 in 6",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "one in six outstanding U.S. mortgages is under contract to run on the platform",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "4b5e8e5a4a4c0477167c88835a67b4e30d2a4a3b1fc1339e81af93c36c685bf4"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Andrew Wang",
+          "quote": "For sixty years, mortgage servicing has run on aging mainframe systems, and every regulatory change has compounded technical debt and increased costs. That is no longer the only option. ValonOS is the operating system the industry is moving onto, and this financing lets us bring it, and the AI agents that run on it, to every servicer in the country",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "For sixty years, mortgage servicing has run on aging mainframe systems, and every regulatory change has compounded technical debt and increased costs. That is no longer the only option. ValonOS is the operating system the industry is moving onto, and this financing lets us bring it, and the AI agents that run on it, to every servicer in the country",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "d1a6b55985a1c31c7a5ef557acdfb0754ff7ca5994cc960cdcf07d61b5f653c7"
+            }
+          ]
+        },
+        {
+          "speaker": "Micky Malka",
+          "quote": "Andrew, Linda, Brian, and the Valon team are taking on a part of financial services that is badly in need of better technology. A mortgage is the biggest bill most families will ever have, yet the companies that service those loans still rely on complex, hard-to-navigate legacy software. From the beginning, they've understood that improving the status quo takes more than better software: you have to service the loans yourself and prove the system holds up at real scale",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "Andrew, Linda, Brian, and the Valon team are taking on a part of financial services that is badly in need of better technology. A mortgage is the biggest bill most families will ever have, yet the companies that service those loans still rely on complex, hard-to-navigate legacy software. From the beginning, they've understood that improving the status quo takes more than better software: you have to service the loans yourself and prove the system holds up at real scale",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "03668148c6d9f8d006d727619aabb68520b97b03258d0daead6e3a6eb3dc9d28"
+            }
+          ]
+        },
+        {
+          "speaker": "Linda Du",
+          "quote": "The bottleneck for deploying AI agents into regulated industries is context, not intelligence. Mortgage servicing is a heavily regulated, edge-case-driven business, and agents need three things to be effective and safe: structured servicing data and context, decision traces behind workflows, and the ability to execute deterministic actions. We spent six years running a servicer and developed an ontology grounded in how mortgage servicing actually works. Leaders in the industry are moving to purpose-built systems with full context and the right level of determinism, and the largest servicers in the country are doing it with ValonOS",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "The bottleneck for deploying AI agents into regulated industries is context, not intelligence. Mortgage servicing is a heavily regulated, edge-case-driven business, and agents need three things to be effective and safe: structured servicing data and context, decision traces behind workflows, and the ability to execute deterministic actions. We spent six years running a servicer and developed an ontology grounded in how mortgage servicing actually works. Leaders in the industry are moving to purpose-built systems with full context and the right level of determinism, and the largest servicers in the country are doing it with ValonOS",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "e325b74a00ca45b395eae3946a7f134cf62eedf4a9f7e4353fd5316844c17d96"
+            }
+          ]
+        },
+        {
+          "speaker": "Angela Strange",
+          "quote": "Servicing is the hardest, but also the stickiest, way to enter one of the largest debt markets in America. You have to turn regulation into code, get multiple licenses, and earn the trust of the biggest asset managers in the country. Valon has built the operating system for a $13 trillion mortgage market and is poised to do the same in other asset classes",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7144312b4dd2f62c",
+              "quote": "Servicing is the hardest, but also the stickiest, way to enter one of the largest debt markets in America. You have to turn regulation into code, get multiple licenses, and earn the trust of the biggest asset managers in the country. Valon has built the operating system for a $13 trillion mortgage market and is poised to do the same in other asset classes",
+              "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+              "quote_hash": "0a0715c3b6a64565195419b565999d61aa7b847a1e2adc0771c4a7f1a7e6b8ac"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Ribbit Capital",
+            "speaker": "Micky Malka",
+            "speaker_role": "founder of Ribbit Capital",
+            "rationale": "Ribbit Capital 认为 Valon 团队深入金融服务中亟需更好技术的领域，通过自营服务业务验证系统在真实规模下的可靠性，从而构建值得信赖的平台。",
+            "quote": "Andrew, Linda, Brian, and the Valon team are taking on a part of financial services that is badly in need of better technology. A mortgage is the biggest bill most families will ever have, yet the companies that service those loans still rely on complex, hard-to-navigate legacy software. From the beginning, they've understood that improving the status quo takes more than better software: you have to service the loans yourself and prove the system holds up at real scale",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7144312b4dd2f62c",
+                "quote": "Andrew, Linda, Brian, and the Valon team are taking on a part of financial services that is badly in need of better technology. A mortgage is the biggest bill most families will ever have, yet the companies that service those loans still rely on complex, hard-to-navigate legacy software. From the beginning, they've understood that improving the status quo takes more than better software: you have to service the loans yourself and prove the system holds up at real scale",
+                "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+                "quote_hash": "03668148c6d9f8d006d727619aabb68520b97b03258d0daead6e3a6eb3dc9d28"
+              }
+            ]
+          },
+          {
+            "institution": "Andreessen Horowitz",
+            "speaker": "Angela Strange",
+            "speaker_role": "General Partner at Andreessen Horowitz",
+            "rationale": "Andreessen Horowitz 认为 Valon 通过将监管转化为代码、获取牌照并赢得大型资产管理公司信任，已为 13 万亿美元抵押贷款市场构建操作系统，并有望拓展至其他资产类别。",
+            "quote": "Servicing is the hardest, but also the stickiest, way to enter one of the largest debt markets in America. You have to turn regulation into code, get multiple licenses, and earn the trust of the biggest asset managers in the country. Valon has built the operating system for a $13 trillion mortgage market and is poised to do the same in other asset classes",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7144312b4dd2f62c",
+                "quote": "Servicing is the hardest, but also the stickiest, way to enter one of the largest debt markets in America. You have to turn regulation into code, get multiple licenses, and earn the trust of the biggest asset managers in the country. Valon has built the operating system for a $13 trillion mortgage market and is poised to do the same in other asset classes",
+                "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+                "quote_hash": "0a0715c3b6a64565195419b565999d61aa7b847a1e2adc0771c4a7f1a7e6b8ac"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 Valon 能否将自营抵押贷款服务业务中验证的 ValonOS 系统与 AI 智能体规模化部署到大型服务商，并拓展至其他受监管贷款领域。当前融资依赖的已验证信号包括：超过 2 亿美元签约年度经常性收入、1/6 美国未偿抵押贷款合同覆盖、两家前十大服务商上线。证据边界在于：签约收入不等于已实现收入，平台覆盖率为合同口径，AI 智能体在受监管环境中的实际效果仍需持续验证。",
+        "validated_signals": [
+          "超过 2 亿美元签约年度经常性收入",
+          "1/6 美国未偿抵押贷款合同覆盖",
+          "两家前十大美国服务商已上线 ValonOS",
+          "平台未偿本金余额超过 2000 亿美元"
+        ],
+        "risks": [
+          "签约年度经常性收入为合同金额，尚未确认为已实现收入",
+          "AI 智能体在受监管抵押贷款服务中的实际效果和合规安全性仍需持续验证",
+          "平台覆盖率基于合同口径，实际迁移进度可能不及预期"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "finance_accounting",
+          "legal_compliance"
+        ],
+        "industry_ids": [
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "金融科技",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Valon 能否将自营抵押贷款服务业务中验证的 ValonOS 系统与 AI 智能体规模化部署到大型服务商，并拓展至其他受监管贷款领域。当前融资依赖的已验证信号包括：超过 2 亿美元签约年度经常性收入、1/6 美国未偿抵押贷款合同覆盖、两家前十大服务商上线。证据边界在于：签约收入不等于已实现收入，平台覆盖率为合同口径，AI 智能体在受监管环境中的实际效果仍需持续验证。",
+          "evidence_signals": [
+            "超过 2 亿美元签约年度经常性收入",
+            "1/6 美国未偿抵押贷款合同覆盖",
+            "两家前十大美国服务商已上线 ValonOS",
+            "平台未偿本金余额超过 2000 亿美元"
+          ],
+          "risks": [
+            "签约年度经常性收入为合同金额，尚未确认为已实现收入",
+            "AI 智能体在受监管抵押贷款服务中的实际效果和合规安全性仍需持续验证",
+            "平台覆盖率基于合同口径，实际迁移进度可能不及预期"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "ValonOS",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Valon AI Agents",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Andrew Wang",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Linda Du",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ribbit Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "ServiceMac",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Carrington Mortgage Services",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Rithm Capital's Newrez",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-5eb12cbaa6f52e06",
+          "date": "2026-10-05",
+          "title": "Valon 以 23 亿美元估值完成 1.5 亿美元 D 轮融资，将 ValonOS 和 AI 智能体部署到抵押贷款领域",
+          "amount": "$150 million",
+          "source_refs": [
+            "SA-6ab60ee2770ce7ef"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-7144312b4dd2f62c",
+          "source_url": "https://www.morningstar.com/news/business-wire/20261005181820/valon-raises-150-million-series-d-at-a-23-billion-valuation-to-deploy-valonos-and-ai-agents-into-mortgage",
+          "title": "Valon 以 23 亿美元估值完成 1.5 亿美元 D 轮融资，将 ValonOS 和 AI 智能体部署到抵押贷款领域",
+          "publisher": "www.morningstar.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-06T03:47:01.436Z",
+          "content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+          "source_artifact_id": "SA-6ab60ee2770ce7ef",
+          "raw_id": "RAW-1587848205ed2e62"
+        },
+        {
+          "source_id": "FISRC-d95c3cb13900be48",
+          "source_url": "https://www.valon.ai/",
+          "title": "Take on the Impossible | Valon",
+          "publisher": "valon.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:52:34.966Z",
+          "content_hash": "4260e18a12bba605",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-06T03:52:46.937Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-06T03:52:46.937Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Valon AI Agents",
+            "ValonOS"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Andrew Wang",
+            "Linda Du"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-5eb12cbaa6f52e06"
+      ],
+      "aggregation": {
+        "key": "EN-aab373badaa83178|series_d",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-d8ec6618421c92f2",
+      "triggered_by_event_id": "EV-41b392ebea7cc666",
+      "as_of_date": "2026-10-06",
+      "company": {
+        "entity_id": "EN-9d529df970659e69",
+        "name": "OneByZero",
+        "full_name": "OneByZero",
+        "website": "https://www.onebyzero.ai/",
+        "summary": "总部位于新加坡的Frontier AI Deployment Company，通过前置部署工程师团队与NEO平台，帮助大型受监管企业将AI部署进既有业务系统与工作流，并持续运行与改进。",
+        "headquarters": "新加坡",
+        "founders": [],
+        "team_size": {
+          "value": "136",
+          "observed_at": "2026-08-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ea90acbe25cfbf9",
+              "quote": "As of Aug 31, 2026, the latest employee count at OneByZero is 136.",
+              "source_content_hash": "1144983fc500ffc2",
+              "quote_hash": "c6ce0edcd664a2ddfb68c621f93df20add50f8a81580b9e08dc832b481269672"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b40f19917f7127cc",
+            "quote": "OneByZero (OBZ), a Singapore-headquartered Frontier AI Deployment Company, today announced it has raised US$20 million in Series A led by Jungle Ventures, the company's first external funding.",
+            "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+            "quote_hash": "c9c5a1691fd43769073fa68b2229ee9b95883ed2c258487be1c04cec3701eb17"
+          }
+        ],
+        "application_entity_id": "EN-9d529df970659e69",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$20 million",
+        "total_raised": "US$20 million",
+        "announced_at": "2026-10-05",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Jungle Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b40f19917f7127cc",
+                "quote": "today announced it has raised US$20 million in Series A led by Jungle Ventures, the company's first external funding.",
+                "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+                "quote_hash": "f3f61778e18fe78bd9dba313409e35cc0ca3340def48803f333fc5197fdf01fe"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b40f19917f7127cc",
+            "quote": "OneByZero (OBZ), a Singapore-headquartered Frontier AI Deployment Company, today announced it has raised US$20 million in Series A led by Jungle Ventures, the company's first external funding.",
+            "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+            "quote_hash": "c9c5a1691fd43769073fa68b2229ee9b95883ed2c258487be1c04cec3701eb17"
+          },
+          {
+            "source_id": "FISRC-b40f19917f7127cc",
+            "quote": "OneByZero Raises US$20 Million Series A Led by Jungle Ventures to Scale Enterprise AI Across Asia Pacific",
+            "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+            "quote_hash": "5a97529f21e96f6b83c42a0da535822c2453a753f8c97697ae5ff8e2a23d0959"
+          },
+          {
+            "source_id": "FISRC-e984271cbb560574",
+            "quote": "Investors: Jungle Ventures led the round; additional participants were not disclosed",
+            "source_content_hash": "5aa680890579a352",
+            "quote_hash": "bb072141f80f145f4d79ee2632b0a89249686e0f9567b5a67f7375f839ab9e40"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "total_raised_original": "US$20 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-41b392ebea7cc666",
+            "round_original": "A轮",
+            "amount": "$20 million",
+            "announced_at": "2026-10-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b40f19917f7127cc",
+                "quote": "OneByZero (OBZ), a Singapore-headquartered Frontier AI Deployment Company, today announced it has raised US$20 million in Series A led by Jungle Ventures, the company's first external funding.",
+                "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+                "quote_hash": "c9c5a1691fd43769073fa68b2229ee9b95883ed2c258487be1c04cec3701eb17"
+              },
+              {
+                "source_id": "FISRC-b40f19917f7127cc",
+                "quote": "OneByZero Raises US$20 Million Series A Led by Jungle Ventures to Scale Enterprise AI Across Asia Pacific",
+                "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+                "quote_hash": "5a97529f21e96f6b83c42a0da535822c2453a753f8c97697ae5ff8e2a23d0959"
+              },
+              {
+                "source_id": "FISRC-e984271cbb560574",
+                "quote": "Investors: Jungle Ventures led the round; additional participants were not disclosed",
+                "source_content_hash": "5aa680890579a352",
+                "quote_hash": "bb072141f80f145f4d79ee2632b0a89249686e0f9567b5a67f7375f839ab9e40"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "NEO",
+          "description": "OBZ的AI部署平台，作为企业AI工作队伍背后的控制层，提供可复用组件与内建治理，包括记录每一次智能体动作。",
+          "target_customers": "大型受监管企业",
+          "features": [
+            "可复用组件",
+            "内建治理",
+            "记录每一次智能体动作"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b40f19917f7127cc",
+              "quote": "Every engagement runs on NEO, OBZ's AI deployment platform and the control layer behind enterprise AI workforces.",
+              "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+              "quote_hash": "443f94a7656dad1130fd0a127397ab3ecb452b0e5c53b91227e335676295a1b8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI Coworkers",
+          "description": "具备既定角色与控制措施的受治理AI智能体，与工程师组成团队，承担高并发工作与速度，人保留判断与问责。",
+          "target_customers": "大型受监管企业",
+          "features": [
+            "受治理AI智能体",
+            "既定角色与控制",
+            "人机协同"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b40f19917f7127cc",
+              "quote": "Each team combines engineers with AI Coworkers, governed AI agents with defined roles and controls.",
+              "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+              "quote_hash": "6be6a4476f41a0af13f1538d4792ab0e2a1467a6051ec7031ba1ac8d807f6d46"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Airyn",
+          "description": "基于 Amazon Bedrock 与 Anthropic Claude Sonnet 的生成式 AI 社交媒体自动回复工具，面向电信运营商的客户互动。",
+          "target_customers": "电信运营商",
+          "features": [
+            "社交媒体自动响应",
+            "多语言支持",
+            "基于Amazon Bedrock"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6fb2c3f7b8b70b3e",
+              "quote": "How OneByZero deployed Airyn, a GenAI-powered Auto-Wall Responder built on Amazon Bedrock with Anthropic's Claude Sonnet, to automate social media customer engagement at telco scale, in English, Tagalog, and Taglish.",
+              "source_content_hash": "8df4be30a2157948",
+              "quote_hash": "67545a11979e9b7fb73c97852ab7b93113d10b75297d4ebd6952d94de05bcaa8"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "印度尼西亚某大型电信运营商",
+          "industry": "电信",
+          "use_case": "部署Neo企业AI Coworker平台，支撑50多个自动化客户旅程，包括坐席辅助与语音，服务约9500万用户。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6fb2c3f7b8b70b3e",
+              "quote": "How OneByZero deployed Neo, its enterprise AI Coworker platform built on Amazon Bedrock with Anthropic's Claude Sonnet, to power 50+ automated customer journeys, including agent-assist and voice, for one of Indonesia's largest telcos, serving approximately 95 million subscribers.",
+              "source_content_hash": "8df4be30a2157948",
+              "quote_hash": "34386018a7d737f1847d2d01d5d720b7a4129dc4ac30927fceca6c89132374af"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "PLDT与Smart",
+          "industry": "电信",
+          "use_case": "部署Airyn自动墙贴响应器，以英语、他加禄语和Taglish自动化社交媒体客户互动。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6fb2c3f7b8b70b3e",
+              "quote": "PLDT and Smart achieve 93.7% social media automation with Airyn, OBZ's GenAI-powered Auto-Wall Responder",
+              "source_content_hash": "8df4be30a2157948",
+              "quote_hash": "f4e6caedffb9f6e3f730c35ca0f503417971552772bd2019c63789b8138b5aab"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "澳新地区某领先金融服务机构",
+          "industry": "金融服务",
+          "use_case": "使用AWS Transform与AWS MGN在11周内迁移71台虚拟机与40个关键业务应用至AWS。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6fb2c3f7b8b70b3e",
+              "quote": "A leading ANZ financial services firm completes its VMware exit in half the time",
+              "source_content_hash": "8df4be30a2157948",
+              "quote_hash": "aebad5f901cf7f90722e25c79d47f0ff0693455496261f612ed2d40686274149"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "东南亚某领先银行",
+          "industry": "金融服务",
+          "use_case": "使用三智能体AI系统自动化ETL代码生成、测试与迁移执行，客户独立迁移60%的管道。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6fb2c3f7b8b70b3e",
+              "quote": "A leading bank halves its cloud migration timeline using a GenAI-powered agentic ETL Crew",
+              "source_content_hash": "8df4be30a2157948",
+              "quote_hash": "681ba5c19b9000f014931f20d21fee73b9d1d536e6664ba85935221d962b51e9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "东南亚某电信运营商",
+          "industry": "电信",
+          "use_case": "部署AI驱动的语音与短信平台，将每日客户激活触达扩大10倍并提升转化率。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6fb2c3f7b8b70b3e",
+              "quote": "AI-powered multilingual voice and SMS platform scaled daily customer reactivation outreach 10x and more than doubled conversion rates for a Southeast Asian MNO targeting aggressive subscriber growth.",
+              "source_content_hash": "8df4be30a2157948",
+              "quote_hash": "01094c8222a8fa1aa2769b19f376ab3b53dc3839bd3f19b0e59badf8a963185e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Pandektes",
+          "product": "结构化法律数据层",
+          "scenario": "律师检索法律资料并核验AI生成答案的底层来源",
+          "target_customer": "律师事务所、企业、公共机构",
+          "funding_summary": "€13.5 million Series A，由Alstin Capital领投",
+          "core_difference": "Pandektes面向法律行业构建结构化法律数据层，OneByZero面向金融、电信、零售等大型企业提供AI部署与治理平台。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e984271cbb560574",
+              "quote": "Pandektes is building the structured legal-data layer that lawyers — and eventually other legal AI products — can query.",
+              "source_content_hash": "5aa680890579a352",
+              "quote_hash": "65b7eb8fec0dceb01171bda670ad838763bee4c7ec532e4a7fa9b2d9fbb81532"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "融资额",
+          "value": "US$20 million",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b40f19917f7127cc",
+              "quote": "today announced it has raised US$20 million in Series A led by Jungle Ventures",
+              "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+              "quote_hash": "3105d41ec7ca6416c0310429f9f94bacee015ce58af2648a1ace7be6158ac08d"
+            }
+          ]
+        },
+        {
+          "label": "员工数",
+          "value": "136",
+          "observed_at": "2026-08-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ea90acbe25cfbf9",
+              "quote": "As of Aug 31, 2026, the latest employee count at OneByZero is 136.",
+              "source_content_hash": "1144983fc500ffc2",
+              "quote_hash": "c6ce0edcd664a2ddfb68c621f93df20add50f8a81580b9e08dc832b481269672"
+            }
+          ]
+        },
+        {
+          "label": "运营市场数",
+          "value": "9",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b40f19917f7127cc",
+              "quote": "Grow forward-deployed engineering and customer relationships across the nine markets OBZ operates in today",
+              "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+              "quote_hash": "430440c5b4a32887d6a1498ca363489d538f19e85e9b17063096acbb5036cb66"
+            }
+          ]
+        },
+        {
+          "label": "部分客户互动自动化率",
+          "value": "超过90%",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b40f19917f7127cc",
+              "quote": "OBZ's deployments are already helping enterprises automate more than 90% of some customer-facing interactions",
+              "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+              "quote_hash": "04041f4fd27ca69a1b7f04226a95678af4a7014369f45cb13eb130416843bc64"
+            }
+          ]
+        },
+        {
+          "label": "复杂数据现代化交付加速",
+          "value": "50%",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b40f19917f7127cc",
+              "quote": "accelerate the delivery of complex data modernization by 50%",
+              "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+              "quote_hash": "5feba16a16d7192018301cc00d57477aea354a8201637d110b4e8fbc776228b9"
+            }
+          ]
+        },
+        {
+          "label": "收入增长",
+          "value": "连续三年每年翻倍以上",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b40f19917f7127cc",
+              "quote": "has more than doubled its revenue annually",
+              "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+              "quote_hash": "52774c071d93cfbfe9bd999bf1ad91880c4b0de91dc5623e3dce562f71bc11d9"
+            }
+          ]
+        },
+        {
+          "label": "社交媒体自动化率",
+          "value": "93.7%",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6fb2c3f7b8b70b3e",
+              "quote": "93.7% automation rate on public-facing social media responses",
+              "source_content_hash": "8df4be30a2157948",
+              "quote_hash": "de33e897b909f3b55d1543e698c45a2af20c2085d06e938daae7a3f5a2ac215c"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "OneByZero",
+          "quote": "Every enterprise can now get access to powerful AI. The value comes when it runs inside the systems that run the business, under the company's own rules, and gets better every week.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b40f19917f7127cc",
+              "quote": "Every enterprise can now get access to powerful AI. The value comes when it runs inside the systems that run the business, under the company's own rules, and gets better every week.",
+              "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+              "quote_hash": "1dc0b96c8d4dec4f864190c1460d4fddac01b6ff1667df1db549e36725f4b224"
+            }
+          ]
+        },
+        {
+          "speaker": "OneByZero",
+          "quote": "We have built NEO so companies can define what AI is allowed to do, where human judgement is required and how every system is governed.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b40f19917f7127cc",
+              "quote": "We have built NEO so companies can define what AI is allowed to do, where human judgement is required and how every system is governed.",
+              "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+              "quote_hash": "be72feb5a3297bee301dc86c227f96deb6771fadb00777319f2a3ad5e6e75604"
+            }
+          ]
+        },
+        {
+          "speaker": "Jungle Ventures",
+          "quote": "OneByZero stood out because it is already doing what much of the enterprise AI market is still talking about.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b40f19917f7127cc",
+              "quote": "OneByZero stood out because it is already doing what much of the enterprise AI market is still talking about.",
+              "source_content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+              "quote_hash": "8e640019f5d270d01dacc2a583845c3d311c4b4c4651294d0893686fd74cc363"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是OneByZero能否把前置部署工程模式高效规模化，并将NEO治理层与AI Coworkers转化为可复制的企业AI生产部署能力。已验证信号包括：公司称过去三年收入每年翻倍以上、部分部署自动化超过90%的客户互动、复杂数据现代化交付加速50%，以及已在新加坡总部之外的九个市场运营。判断的证据边界在于：上述业务数字均为公司自报，未经独立审计；本轮未披露估值；前置部署模式比纯SaaS更劳动密集，其规模化效率仍待验证。",
+        "validated_signals": [
+          "公司称过去三年收入每年翻倍以上",
+          "部分部署自动化超过90%的客户互动",
+          "复杂数据现代化交付加速50%",
+          "在九个市场运营，包括澳大利亚、印度、印度尼西亚、马来西亚、菲律宾、新加坡、泰国、美国和越南",
+          "已与AWS签署战略合作协议，并成为OpenAI Select Partner"
+        ],
+        "risks": [
+          "公司自报的收入翻倍、自动化率与交付加速数据未经独立审计",
+          "前置部署工程模式比纯SaaS更劳动密集，规模化效率尚未验证",
+          "本轮未披露估值，资本判断缺少定价参照",
+          "来源中关于公司定位存在冲突：Tracxn称其为未融资的咨询公司，与官方融资公告不一致"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "customer_support",
+          "productivity_enterprise_workflows",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "telecommunications",
+          "retail_ecommerce"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "企业AI部署与治理",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是OneByZero能否把前置部署工程模式高效规模化，并将NEO治理层与AI Coworkers转化为可复制的企业AI生产部署能力。已验证信号包括：公司称过去三年收入每年翻倍以上、部分部署自动化超过90%的客户互动、复杂数据现代化交付加速50%，以及已在新加坡总部之外的九个市场运营。判断的证据边界在于：上述业务数字均为公司自报，未经独立审计；本轮未披露估值；前置部署模式比纯SaaS更劳动密集，其规模化效率仍待验证。",
+          "evidence_signals": [
+            "公司称过去三年收入每年翻倍以上",
+            "部分部署自动化超过90%的客户互动",
+            "复杂数据现代化交付加速50%",
+            "在九个市场运营，包括澳大利亚、印度、印度尼西亚、马来西亚、菲律宾、新加坡、泰国、美国和越南",
+            "已与AWS签署战略合作协议，并成为OpenAI Select Partner"
+          ],
+          "risks": [
+            "公司自报的收入翻倍、自动化率与交付加速数据未经独立审计",
+            "前置部署工程模式比纯SaaS更劳动密集，规模化效率尚未验证",
+            "本轮未披露估值，资本判断缺少定价参照",
+            "来源中关于公司定位存在冲突：Tracxn称其为未融资的咨询公司，与官方融资公告不一致"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "NEO",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI Coworkers",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Airyn",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jungle Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "印度尼西亚某大型电信运营商",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "PLDT与Smart",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "澳新地区某领先金融服务机构",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "东南亚某领先银行",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "东南亚某电信运营商",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Pandektes",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-41b392ebea7cc666",
+          "date": "2026-10-05",
+          "title": "ONEBYZERO · 我们帮助企业实现 AI 原生",
+          "amount": "$20 million",
+          "source_refs": [
+            "SA-513eb7fcc31a4fd0"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-b40f19917f7127cc",
+          "source_url": "https://www.onebyzero.ai/press-releases/onebyzero-raises-20-million-series-a-jungle-ventures",
+          "title": "ONEBYZERO · 我们帮助企业实现 AI 原生",
+          "publisher": "www.onebyzero.ai",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-06T03:39:09.521Z",
+          "content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+          "source_artifact_id": "SA-513eb7fcc31a4fd0",
+          "raw_id": "RAW-409282209ef200f7"
+        },
+        {
+          "source_id": "FISRC-e984271cbb560574",
+          "source_url": "https://techstartups.com/2026/10/05/startup-funding-news-today-october-5-2026-onebyzero-pandektes-fleuret-ai-more/",
+          "title": "Startup Funding News Today, October 5, 2026: OneByZero, Pandektes, Fleuret AI &#038; More",
+          "publisher": "techstartups.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:41:19.887Z",
+          "content_hash": "5aa680890579a352",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6fb2c3f7b8b70b3e",
+          "source_url": "https://www.onebyzero.ai/case-studies",
+          "title": "ONEBYZERO · We help enterprises become AI-native",
+          "publisher": "onebyzero.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:41:24.528Z",
+          "content_hash": "8df4be30a2157948",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9ea90acbe25cfbf9",
+          "source_url": "https://tracxn.com/d/companies/onebyzero/__Z4NrSOItMuvqwPPmHjcSdBm-Mn2Dh5iT6ZGbYc9TyKA",
+          "title": "OneByZero",
+          "publisher": "tracxn.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-06T03:41:26.343Z",
+          "content_hash": "1144983fc500ffc2",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-06T03:42:06.703Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-06T03:42:06.703Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI Coworkers",
+            "Airyn",
+            "NEO"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-41b392ebea7cc666"
+      ],
+      "aggregation": {
+        "key": "EN-9d529df970659e69|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-40adbb22032edee0",
@@ -5240,7 +9057,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.690Z"
     },
     {
       "event_id": "EV-f2950d2104e97163",
@@ -5249,7 +9066,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.690Z"
     },
     {
       "event_id": "EV-3b424be9d0d68b87",
@@ -5267,7 +9084,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.690Z"
     },
     {
       "event_id": "EV-f81af6fce431eb06",
@@ -5496,7 +9313,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-06T00:51:08.786Z"
+      "updated_at": "2026-10-06T04:10:05.687Z"
     },
     {
       "event_id": "EV-d56d157dad3db17d",
@@ -5559,7 +9376,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.689Z"
     },
     {
       "event_id": "EV-de1baaca331cacd9",
@@ -5659,7 +9476,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.690Z"
     },
     {
       "event_id": "EV-9bcddf454518063f",
@@ -5756,7 +9573,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.689Z"
     },
     {
       "event_id": "EV-7ed31d2ef5f5a697",
@@ -5774,7 +9591,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.690Z"
     },
     {
       "event_id": "EV-c680e02a02703c11",
@@ -5783,7 +9600,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.690Z"
     },
     {
       "event_id": "EV-6a0883e9d1aa2e69",
@@ -5876,7 +9693,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.689Z"
     },
     {
       "event_id": "EV-201690debbddab65",
@@ -5885,7 +9702,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.690Z"
     },
     {
       "event_id": "EV-c8a803c1bdfde04c",
@@ -5894,7 +9711,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.690Z"
     },
     {
       "event_id": "EV-6324ffde67e257fa",
@@ -5903,7 +9720,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.690Z"
     },
     {
       "event_id": "EV-a86432262b10332e",
@@ -5936,7 +9753,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.689Z"
     },
     {
       "event_id": "EV-af1a6d0b5da2d0e5",
@@ -6003,7 +9820,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.689Z"
     },
     {
       "event_id": "EV-6a63fabeceadc42b",
@@ -6260,7 +10077,359 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-06T00:51:08.789Z"
+      "updated_at": "2026-10-06T04:10:05.690Z"
+    },
+    {
+      "event_id": "EV-5eb12cbaa6f52e06",
+      "company_name": "Valon Technologies",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "Valon Series D 150 million ValonOS official"
+      ],
+      "attempts": [
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "Valon Series D 150 million ValonOS official",
+          "url": "https://www.valon.ai/",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-10-06T04:10:05.690Z"
+    },
+    {
+      "event_id": "EV-41b392ebea7cc666",
+      "company_name": "OneByZero",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"OneByZero\" 2026 funding round investors",
+        "\"OneByZero\" official product customers",
+        "\"OneByZero\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"OneByZero\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://fundup.ai/recently-funded-startups/company/d5733f4801c7b419c490b05163945fa5ca61db8e73acee8a6a844569fade1723/onebyzero",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://seedtable.com/companies/onebyzero/funding-rounds/series-a-2026-10",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://app.fundz.net/fundings/onebyzero-funding-round-series-a-11815a",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.finsmes.com/2026/10/onebyzero-raises-usd20m-in-series-a-funding.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"OneByZero\" $20 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"OneByZero\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"OneByZero\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://app.dealroom.co/news/feed/singapore-s-onebyzero-raises-20m-series-a-from-jungle-ventures-for-enterprise-ai",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://e27.co/onebyzero-raises-us20m-series-a-to-help-enterprises-move-ai-from-pilots-to-production-20261005/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.crunchbase.com/organization/onebyzero",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.youtube.com/watch?v=nFOWpsbOjP8&vl=en",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"OneByZero\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"OneByZero\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-06T04:10:05.690Z"
+    },
+    {
+      "event_id": "EV-4a6ee188df36e21c",
+      "company_name": "Eden AI Labs Inc.",
+      "status": "blocked",
+      "problems": [
+        "research_independent_sources_insufficient"
+      ],
+      "queries": [
+        "\"Eden AI Labs Inc.\" 2026 funding round investors",
+        "\"Eden AI Labs Inc.\" $1.5 million funding announcement",
+        "\"Eden AI Labs Inc.\" official product customers",
+        "\"Eden AI Labs Inc.\" \"why we invested\"",
+        "\"Eden AI Labs Inc.\" 2026 raises led by",
+        "\"Eden AI Labs Inc.\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Eden AI Labs Inc.\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.yahoo.com/technology/ai/articles/eden-ai-labs-inc-raises-163000905.html?fr=sycsrp_catchall",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Eden AI Labs Inc.\" $1.5 million funding announcement",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://superpowerdaily.com/posts/eden-ai-labs-raises-1-5-million-for-an-ai-assistant-built-to-make-purchases",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Eden AI Labs Inc.\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Eden AI Labs Inc.\" \"why we invested\"",
+          "status": "empty",
+          "count": 0
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Eden AI Labs Inc.\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.edenai.co/post/eden-ai-raises-1-5-million-to-build-the-future-of-ai-as-a-service",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Eden AI Labs Inc.\" 2026 raises led by",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Eden AI Labs Inc.\" founders headquarters product",
+          "status": "completed",
+          "count": 2
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Eden AI Labs Inc.\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.manilatimes.net/2026/10/06/tmt-newswire/globenewswire/hotel-leaders-take-center-stage-at-the-hospitality-show-2026/2439376",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        }
+      ],
+      "updated_at": "2026-10-06T03:42:19.148Z"
+    },
+    {
+      "event_id": "EV-c4af2ee7bdd947db",
+      "company_name": "Kando AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "Kando AI 吴秉哲 毛书翰 决策融资 创始人访谈"
+      ],
+      "attempts": [
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "Kando AI 吴秉哲 毛书翰 决策融资 创始人访谈",
+          "url": "https://daofm.cn/show/dao",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "Kando AI 吴秉哲 毛书翰 决策融资 创始人访谈",
+          "url": "https://knevo.ai/",
+          "status": "failed",
+          "error": "original_capture_failed"
+        }
+      ],
+      "updated_at": "2026-10-06T04:10:05.690Z"
+    },
+    {
+      "event_id": "EV-cfe820a452effc2f",
+      "company_name": "北京词元无限科技有限公司",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "词元无限 天使++ InfCode 官方"
+      ],
+      "attempts": [
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "词元无限 天使++ InfCode 官方",
+          "url": "https://www.tokfinity.com/",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "词元无限 天使++ InfCode 官方",
+          "url": "https://www.tokfinity.com/company",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "词元无限 天使++ InfCode 官方",
+          "url": "https://www.tokfinity.com/infcode",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-10-06T04:10:05.690Z"
+    },
+    {
+      "event_id": "EV-8ebc6f91cf181719",
+      "company_name": "威联机器人科技（深圳）有限公司",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "威联机器人 MOVA LINCO 家庭AI硬件 天使融资"
+      ],
+      "attempts": [
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "威联机器人 MOVA LINCO 家庭AI硬件 天使融资",
+          "url": "https://www.brandark.com/t/RPX8yx2d",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "威联机器人 MOVA LINCO 家庭AI硬件 天使融资",
+          "url": "https://ised-isde.canada.ca/cipo/trademark-search/2424788?wbdisable=true",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-10-06T04:10:05.690Z"
+    },
+    {
+      "event_id": "EV-bc320dac1d8dfed9",
+      "company_name": "美酷瑞（Gamercury AI）",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "美酷瑞 Gamercury AI 游戏融资 官方"
+      ],
+      "attempts": [
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "美酷瑞 Gamercury AI 游戏融资 官方",
+          "url": "https://gamercury.com/about.html",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "美酷瑞 Gamercury AI 游戏融资 官方",
+          "url": "https://www.sh-italent.com/Article/202607/202607210008.shtml",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-10-06T04:10:05.690Z"
+    },
+    {
+      "event_id": "EV-2da0ebb3ba7c5677",
+      "company_name": "Glow",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "Glow 180 million 2026 Series A company announcement lawyer"
+      ],
+      "attempts": [
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "Glow 180 million 2026 Series A company announcement lawyer",
+          "url": "https://www.cooley.com/news/coverage/2026/2026-07-22-glow-emerges-from-stealth-with-%24180-million",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "Glow 180 million 2026 Series A company announcement lawyer",
+          "url": "https://www.glow.io/about",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "responsible-agent-original-review",
+          "query": "Glow 180 million 2026 Series A company announcement lawyer",
+          "url": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-10-06T04:10:05.690Z"
     }
   ]
 }

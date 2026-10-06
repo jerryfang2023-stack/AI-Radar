@@ -1,0 +1,4537 @@
+{
+  "version": "FINANCING-LEAD-REVIEW-1",
+  "date": "2026-10-06",
+  "batch": "pending247",
+  "reviewer": "Codex responsible financing evidence review",
+  "counts": {
+    "not_financing": 43,
+    "excluded_robotics": 11,
+    "already_covered": 32,
+    "accepted_original": 7,
+    "index_or_roundup": 97,
+    "not_ai_evidence": 13,
+    "historical_before_2026": 11,
+    "pending_event_details": 9,
+    "pending_ai_scope": 22,
+    "pending_company_identity": 1,
+    "same_batch_duplicate": 1
+  },
+  "total": 247,
+  "notes": [
+    "线索归类不等于247笔融资核验通过。",
+    "原文获取失败与非AI/非融资判定分开保存。",
+    "模型辅助的候选、脑机接口误判及机器人关键词结果均经责任审核覆盖；不是自动发布依据。"
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "url": "https://www.artificialintelligence-news.com/news/17-countries-ai-priorities-for-government-science-research/",
+      "title": "17 countries set out AI priorities for government science research",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.621Z"
+    },
+    {
+      "id": 2,
+      "url": "https://www.ithome.com/1/009/746.htm",
+      "title": "“机器人通用大脑”受追捧：FieldAI 拟融资 7 亿美元，估值达 100 亿美元",
+      "status": "excluded_robotics",
+      "reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "135b03d3e153ddfe4197e3f316e5b64d82eb2b765b52735931c74c3e84ab7074",
+        "date": "2026-10-05",
+        "body_length": 1247
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.625Z"
+    },
+    {
+      "id": 3,
+      "url": "https://www.ithome.com/1/009/268.htm",
+      "title": "CDPR 发布《巫师 3：重制版》补丁，修复部分室内场景过暗等问题",
+      "status": "not_financing",
+      "reason": "GamePatch 产品/服务介绍，未取得已完成融资事件，不纳入融资卡。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "b9f3094675f5e108248454b5e271dc89a6ae4950dc20bdb18d663663e195750f",
+        "date": "2026-10-02",
+        "body_length": 570
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.628Z"
+    },
+    {
+      "id": 4,
+      "url": "https://x.com/omarsar0/status/2105825963015905509",
+      "title": "I think faster inference is one of the next big unlocks for coding agents.",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.635Z"
+    },
+    {
+      "id": 5,
+      "url": "https://x.com/swyx/status/2105348724331606411",
+      "title": "Flow is doing for hardware engineering what Git+GitHub did for software engineering. It's enabled so much acceleration due to aligning th...",
+      "status": "already_covered",
+      "reason": "与现有 Flow Engineering 2026-09-30 B轮 $50 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-2309843d76ae81f9",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-131c3b05243369a2",
+          "quote": "The round was co-led by Antonio Gracias of Valar Equity Partners",
+          "source_content_hash": "0528dfbe7386cdee",
+          "quote_hash": "a7e188c7d8ee5ebcd97fb9cc621861422c182f8c83b63aa8ee7424e0600308fa"
+        },
+        {
+          "source_id": "FISRC-3511f7baf76701e3",
+          "quote": "co-led by Antonio Gracias (Valor) and Gavin Baker (Atreides)",
+          "source_content_hash": "1ada124c6217cee1",
+          "quote_hash": "23a529da915c59f0aef3bf67d876de6ed66f2b07ee5a32f47f1420fe77a88135"
+        }
+      ],
+      "existing_financing": {
+        "name": "Flow Engineering",
+        "amount": "$50 million",
+        "round": "B轮",
+        "date": "2026-09-30"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.635Z"
+    },
+    {
+      "id": 6,
+      "url": "https://x.com/ElevenLabs/status/2105332239316000886",
+      "title": "More on the tender and what's driving our growth: https://elevenlabs.io/blog/tender-22bn",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.636Z"
+    },
+    {
+      "id": 7,
+      "url": "https://techcrunch.com/2026/09/30/destro-ais-secret-sauce-is-getting-robots-and-humans-on-the-same-page/",
+      "title": "Destro AI’s secret sauce is getting robots and humans on the same page",
+      "status": "excluded_robotics",
+      "reason": "原文显示 Vision OS 基于 VLA 直接控制机器人动作，主营仓储机器人自主控制与物理作业编排；并非仅有机器人客户的通用企业软件，按具身智能主营排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "279dd8de80139067136eba85614368b7dc054131d259fd07698388b64d643e7a",
+        "date": "2026-09-30",
+        "body_length": 7375
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.649Z"
+    },
+    {
+      "id": 8,
+      "url": "https://x.com/rohanpaul_ai/status/2104892237578670205",
+      "title": "In the Reuters reporting of Anthropic's loss taken from its IPO docs",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.650Z"
+    },
+    {
+      "id": 9,
+      "url": "https://x.com/rohanpaul_ai/status/2104758396474057192",
+      "title": "Reuters reviewed the Anthropic IPO prospectus.",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.652Z"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/topleader.world/posts/600%E4%BA%BF%E7%BE%8E%E5%85%83%E6%8A%BC%E6%B3%A8%E4%B8%80%E5%AE%B6%E5%85%AC%E5%8F%B8%E4%B8%80%E7%AC%94%E5%8F%AF%E8%83%BD%E9%AB%98%E8%BE%BE600%E4%BA%BF%E7%BE%8E%E5%85%83%E7%9A%84%E8%9E%8D%E8%B5%84%E8%AF%B4%E6%98%8Eai%E6%88%98%E4%BA%89%E5%B7%B2%E4%BB%8E%E8%B0%81%E7%9A%84%E6%A8%A1%E5%9E%8B%E6%9B%B4%E8%81%AA%E6%98%8E%E5%8D%87%E7%BA%A7%E6%88%90%E8%B0%81%E8%83%BD%E5%85%88%E9%94%81%E4%BD%8F%E6%9C%80%E5%A4%9A%E7%AE%97%E5%8A%9B%E6%8D%AEthe-business-times%E8%BD%AC%E5%BC%95%E6%B6%88%E6%81%AF%E4%BA%BA%E5%A3%AB%E6%8A%A5/1622323959937620",
+      "title": "Top Leader 领袖 - 600亿美元押注一家公司...",
+      "status": "not_financing",
+      "reason": "通过web.run.open阅读Business Times的Bloomberg转载，600亿美元安排仍在银团筹集，未公告完成，不计作Anthropic新增融资。直接抓取超时，保存人工核验短引文，不冒充完整原文归档。",
+      "additional_source": "https://www.businesstimes.com.sg/startups-tech/technology/broadcom-amassing-us60-billion-fund-chips-anthropic-sources",
+      "alternate_capture": "broadcom-planned",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.654Z"
+    },
+    {
+      "id": 11,
+      "url": "https://m.36kr.com/p/3917563544573831",
+      "title": "星连资本被投企业 Kando AI 完成数千万元种子轮融资，要做“决策领域的Cursor”-36氪",
+      "status": "accepted_original",
+      "reason": "独立融资原文及公司AI产品已核验并入库；以最终发布门禁及线上回执确认完成。",
+      "company": "Kando AI",
+      "raw_id": "RAW-28416247c1352ff9",
+      "accepted_source": "https://eu.36kr.com/zh/p/3915057199535233",
+      "accepted_date": "2026-07-28",
+      "content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.655Z"
+    },
+    {
+      "id": 12,
+      "url": "https://m.36kr.com/p/4004109766627465",
+      "title": "极豆科技完成新一轮超亿元战略融资 加速汽车AI大脑研发与全球化布局-36氪",
+      "status": "already_covered",
+      "reason": "与现有 极豆科技 2026-09-30 战略融资 超亿元 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-017a3eaf6416daee",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-c0f4b27988fd5315",
+          "quote": "由华民投、张科垚坤、金雨茂物及点亮资本参与投资",
+          "source_content_hash": "5f13cb012a40b64fc313951bbd07c0f3c386d97d37f7526948fcc7e0334b52b6",
+          "quote_hash": "b7d9bc1631e48c1f685cdcaf4edbfc828afb42d7082df2fd0c5b3db6e4c2f5fa"
+        },
+        {
+          "source_id": "FISRC-c0f4b27988fd5315",
+          "quote": "由华民投、张科垚坤、金雨茂物及点亮资本参与投资",
+          "source_content_hash": "5f13cb012a40b64fc313951bbd07c0f3c386d97d37f7526948fcc7e0334b52b6",
+          "quote_hash": "b7d9bc1631e48c1f685cdcaf4edbfc828afb42d7082df2fd0c5b3db6e4c2f5fa"
+        }
+      ],
+      "existing_financing": {
+        "name": "极豆科技",
+        "amount": "超亿元",
+        "round": "战略融资",
+        "date": "2026-09-30"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.656Z"
+    },
+    {
+      "id": 13,
+      "url": "https://m.36kr.com/p/4005820797325442",
+      "title": "硅谷藏了多少隐形债务？-36氪",
+      "status": "index_or_roundup",
+      "reason": "AI债务讨论、虚拟细胞白皮书或多事件行业内容，不能直接作为独立融资事件。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.657Z"
+    },
+    {
+      "id": 14,
+      "url": "https://m.36kr.com/p/3840171971348998",
+      "title": "4万亿美元，美国AI三巨头集体上市“抢钱”，华尔街流动性恐遭“抽血”-36氪",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.657Z"
+    },
+    {
+      "id": 15,
+      "url": "https://m.36kr.com/p/4005146323243136",
+      "title": "AI虚拟细胞行业白皮书：30亿美元资本涌入开启商业化元年，拆解规模化落地瓶颈与解法-36氪",
+      "status": "index_or_roundup",
+      "reason": "AI债务讨论、虚拟细胞白皮书或多事件行业内容，不能直接作为独立融资事件。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.658Z"
+    },
+    {
+      "id": 16,
+      "url": "https://m.36kr.com/p/4005645615583104",
+      "title": "20家机构联手，这家光互连公司又融了10亿-36氪",
+      "status": "already_covered",
+      "reason": "与现有 芯光界 2026-09-30 多轮融资 近10亿元 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-219ba35e15dc4fb9",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+          "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+        },
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+          "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+        }
+      ],
+      "existing_financing": {
+        "name": "芯光界",
+        "amount": "近10亿元",
+        "round": "多轮融资",
+        "date": "2026-09-30"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.658Z"
+    },
+    {
+      "id": 17,
+      "url": "https://eu.36kr.com/zh/p/4004469192593283",
+      "title": "AI史上最大IPO Anthropic估值或超2万亿美元",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "3d3b4d08363ad7b02aa23bb67776ed10b0bb1dac4e2637b3952bd09b39673dcb",
+        "date": "",
+        "body_length": 3036
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.660Z"
+    },
+    {
+      "id": 18,
+      "url": "https://m.36kr.com/p/4005368420847496",
+      "title": "开抢清华00后-36氪",
+      "status": "index_or_roundup",
+      "reason": "AI债务讨论、虚拟细胞白皮书或多事件行业内容，不能直接作为独立融资事件。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.660Z"
+    },
+    {
+      "id": 19,
+      "url": "https://www.itjuzi.com/",
+      "title": "IT桔子 | 泛互联网创业投资项目信息数据库及商业信息服务商",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_412",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.661Z"
+    },
+    {
+      "id": 20,
+      "url": "https://cdn.itjuzi.com/pdf/bcc04406cf9c6a61880816eca5e47275.pdf",
+      "title": "AI 行业进入了一 - IT桔子",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "binary_source_requires_pdf_review",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.661Z"
+    },
+    {
+      "id": 21,
+      "url": "https://www.pedaily.cn/",
+      "title": "投资界_创业与投资资讯平台",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "1652f4155d381b2e43eb3350689add7ff1a5a830126dc5d10ce51d105e9d0a26",
+        "date": "2026-09-30",
+        "body_length": 4461
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.663Z"
+    },
+    {
+      "id": 22,
+      "url": "https://news.pedaily.cn/",
+      "title": "产业资讯_投资界：权威股权投资、上市、并购、私募相关行业 ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "341e343e8a75f88ea4fb143b697bba9e27e6b935257c61caf99f117b30aadd14",
+        "date": "2026-10-05",
+        "body_length": 1399
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.669Z"
+    },
+    {
+      "id": 23,
+      "url": "https://pe.pedaily.cn/",
+      "title": "VCPE_投资界：实时报道VCPE资讯",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "77e059bed9d2e3e5d93274c64a4ec46e0739a09a2ebacef4b907641d2bb422b1",
+        "date": "2026-02-10",
+        "body_length": 3242
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.680Z"
+    },
+    {
+      "id": 24,
+      "url": "https://www.pedaily.cn/media/m830/",
+      "title": "融资大事件的文章",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "f6ae010ebbc673431a8e6c5a1cfc730d721eb9a2940af3bcb64dcaf894420a36",
+        "date": "2026-09-30",
+        "body_length": 1622
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.681Z"
+    },
+    {
+      "id": 25,
+      "url": "https://www.pedaily.cn/i-ai/",
+      "title": "AI行业",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "8c69707b00fcc5feb27aadbfda721f6bcf2a1ec363732cf12d59e8d3ea558c64",
+        "date": "2026-10-05",
+        "body_length": 1510
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.682Z"
+    },
+    {
+      "id": 26,
+      "url": "https://www.pedaily.cn/s104/",
+      "title": "解码LP",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "15dcbb7c3471f6e348d65e8ce5bcad8d61abdf35ccff5caa34e51346ca0b9445",
+        "date": "2026-09-30",
+        "body_length": 1383
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.683Z"
+    },
+    {
+      "id": 27,
+      "url": "https://m.cyzone.cn/article/841233.html",
+      "title": "词元无限完成天使++轮融资，累计融资金额达数亿元",
+      "status": "accepted_original",
+      "reason": "独立融资原文及公司AI产品已核验并入库；以最终发布门禁及线上回执确认完成。",
+      "company": "词元无限",
+      "raw_id": "RAW-7efae622114dbd1e",
+      "accepted_source": "https://finance.sina.com.cn/tech/roll/2026-07-27/doc-inikfhfi3135189.shtml",
+      "accepted_date": "2026-07-27",
+      "content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.684Z"
+    },
+    {
+      "id": 28,
+      "url": "https://www.cyzone.cn/article/847818.html",
+      "title": "融资丨途见科技完成亿元级Pre-A++轮融资",
+      "status": "excluded_robotics",
+      "reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "3dbc369b44c6474bb1bda740f0641f3699f6ae5685424bd2bac2105214d51507",
+        "date": "",
+        "body_length": 3470
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.685Z"
+    },
+    {
+      "id": 29,
+      "url": "https://m.cyzone.cn/article/847875.html",
+      "title": "融资丨执宇航天完成亿元级天使+轮融资",
+      "status": "not_ai_evidence",
+      "reason": "界面新闻原稿转载确认资金用于可复用小型运载火箭研制；AI出现在投资方背景，未见融资主体AI产品证据，本批不纳入。",
+      "additional_source": "https://finance.eastmoney.com/a/202609303886890564.html",
+      "alternate_capture": "zhiyu-confirmation",
+      "additional_content_hash": "7de96e470e4e762f2fac5b01350857254982c0ae7f8f008f330f3df84cd6dfdc",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.685Z"
+    },
+    {
+      "id": 30,
+      "url": "https://www.cyzone.cn/article/847902.html",
+      "title": "利德健康完成数千万元Pre-A++轮融资",
+      "status": "already_covered",
+      "reason": "与现有 利德健康 2026-09-28 Pre-A++轮 数千万元 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-de1013fe8ac2bf42",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-de0f78d8bca00f33",
+          "quote": "本轮融资上海国际集团投资有限公司（以下简称“国际投资”）战略投资，资本阵容再度升级，凯乘资本担任本轮融资独家财务顾问。",
+          "source_content_hash": "84d698e9f753760acf8eea763db07ed0c052d95d4bc8ec35c793cfc17615937e",
+          "quote_hash": "a6cd54d59f524a681eb73c1b5bca69a7fd8f29c2e1a155b76d077b46b8d85ffc"
+        }
+      ],
+      "existing_financing": {
+        "name": "利德健康",
+        "amount": "数千万元",
+        "round": "Pre-A++轮",
+        "date": "2026-09-28"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_404",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.686Z"
+    },
+    {
+      "id": 31,
+      "url": "https://m.cyzone.cn/article/848060.html",
+      "title": "日本拟投入1400亿美元打造AI基础设施",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.686Z"
+    },
+    {
+      "id": 32,
+      "url": "https://m.cyzone.cn/article/847903.html",
+      "title": "三星向KKR投资的AI基础设施企业Helix投资10亿美元",
+      "status": "already_covered",
+      "reason": "与现有 Helix Digital Infrastructure 2026-09-29 轮次未披露 USD 1 billion 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-9d27f5dcb579f980",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-9d03a17bbefffa61",
+          "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+          "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+          "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+        },
+        {
+          "source_id": "FISRC-9d03a17bbefffa61",
+          "quote": "Samsung Electronics, Samsung C&T, Samsung SDS, Samsung SDI, Samsung Life Insurance and Samsung Fire & Marine Insurance today announced they are investing a combined USD 1 billion in Helix Digital Infrastructure",
+          "source_content_hash": "628ccc24f181bfa91b7d070004fb9fc0435d989dda3885607cc3384326f8fab7",
+          "quote_hash": "4b73cc0752bbdbad240372f045341930650d6001865ce4a598b51c891c56e972"
+        }
+      ],
+      "existing_financing": {
+        "name": "Helix Digital Infrastructure",
+        "amount": "USD 1 billion",
+        "round": "轮次未披露",
+        "date": "2026-09-29"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.686Z"
+    },
+    {
+      "id": 33,
+      "url": "https://m.36kr.com/p/3977429406832520",
+      "title": "313起融资，小鹏机器人、帕西尼领跑，算力脑机企业接续发 ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.687Z"
+    },
+    {
+      "id": 34,
+      "url": "https://www.cls.cn/detail/1886840",
+      "title": "大模型公司Sapient获数千万美元融资",
+      "status": "historical_before_2026",
+      "reason": "原文融资发生在2026年前；保留历史核验记录，不伪装为2026年新增。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "2489db85c7d7402835cdb40fd2b5246ec5160cdc5a0fcd9138f32eb75094f38a",
+        "date": "",
+        "body_length": 525
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.707Z"
+    },
+    {
+      "id": 35,
+      "url": "https://eu.36kr.com/zh/p/3787679275441413",
+      "title": "AI模型与Agent创新，倒逼AI Infra催生了哪些创业机会？ - 36氪",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "1e64147d85f2b09fc125b274d3a591e8bbed918d0d685bc3453eaa9b901005d9",
+        "date": "",
+        "body_length": 3878
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.719Z"
+    },
+    {
+      "id": 36,
+      "url": "https://www.forbes.com/lists/ai50/",
+      "title": "Forbes 2026 AI 50 List | Top Artificial Intelligence Companies",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.720Z"
+    },
+    {
+      "id": 37,
+      "url": "https://emwap.eastmoney.com/a/202609293886526751.html",
+      "title": "英伟达欲拉保险公司入场为AI芯片融资风险兜底 - 东方财富",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "0a200975702c57c0e07d77af7dfde8207c4b1881f6ea6d32c1c38556260eb355",
+        "date": "",
+        "body_length": 2050
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.724Z"
+    },
+    {
+      "id": 38,
+      "url": "https://es.tradingview.com/news/gelonghui:d69f8b793e3f9:0/",
+      "title": "英伟达欲拉保险公司入场为AI芯片融资风险兜底 - TradingView",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.725Z"
+    },
+    {
+      "id": 39,
+      "url": "https://m.zhiding.cn/article/3171811.htm",
+      "title": "AI安全公司Irregular获8000万美元融资，专注前沿AI模型 ...",
+      "status": "historical_before_2026",
+      "reason": "Irregular 的8000万美元是2025-09-17披露的种子及A轮合计，非2026年新轮次。",
+      "additional_source": "https://www.pressrelease.com/news/irregular-raises-80-million-to-set-the-security-standards-for-frontier-ai",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "7f3dc10d3383cb85331fdb8f750870d9e2c1557c29f1dc3c6a9cc96d4dc0156e",
+        "date": "",
+        "body_length": 3823
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.729Z"
+    },
+    {
+      "id": 40,
+      "url": "https://thunderbit.com/zh-Hans/blog/ai-startup-stats",
+      "title": "2026 AI 初创公司统计：融资、团队与趋势",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "375479400b08cc9ef56fc2f75c9bd687ee4d878ee5586c248254727709f84e69",
+        "date": "2026-07-02",
+        "body_length": 6356
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.736Z"
+    },
+    {
+      "id": 41,
+      "url": "https://finance.sina.com.cn/stock/?page=/",
+      "title": "股票首页_新浪财经_新浪网",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "732039997ac4809ccce2cff3ab2807b4634e0adff80c7cfb3eacd00e10f70dbf",
+        "date": "",
+        "body_length": 10814
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.746Z"
+    },
+    {
+      "id": 42,
+      "url": "https://m.cj.sina.cn/page/aHR0cHM6Ly9maW5hbmNlLnNpbmEuY29tLmNuL3N0b2NrLz93bT0xODg2NDQ4MDQ",
+      "title": "股票首页_新浪财经_新浪网 - m.cj.sina.cn",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "732039997ac4809ccce2cff3ab2807b4634e0adff80c7cfb3eacd00e10f70dbf",
+        "date": "",
+        "body_length": 10814
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.758Z"
+    },
+    {
+      "id": 43,
+      "url": "https://zhuanlan.zhihu.com/p/2088384168174666186",
+      "title": "AI制药新锐Enveda融资3.11亿美元，估值翻倍至20 ...",
+      "status": "already_covered",
+      "reason": "与现有 Enveda 2026-09-23 E轮 $311M 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-5bf569d857da4dcb",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-b2cab94e5375e0ba",
+          "quote": "The fresh funding, which was led by Catalio Capital Management, with participation from Iconiq and others",
+          "source_content_hash": "79b5761869f8dba5",
+          "quote_hash": "4de0100c58ebb8c5bc3ca996fe00a665d79ecafef938ab278948ad6a72c3a4d4"
+        },
+        {
+          "source_id": "FISRC-b2cab94e5375e0ba",
+          "quote": "The fresh funding, which was led by Catalio Capital Management, with participation from Iconiq and others",
+          "source_content_hash": "79b5761869f8dba5",
+          "quote_hash": "4de0100c58ebb8c5bc3ca996fe00a665d79ecafef938ab278948ad6a72c3a4d4"
+        }
+      ],
+      "existing_financing": {
+        "name": "Enveda",
+        "amount": "$311M",
+        "round": "E轮",
+        "date": "2026-09-23"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.759Z"
+    },
+    {
+      "id": 44,
+      "url": "https://bydrug.pharmcube.com/news/detail/de579bede94df8c5c78fd29665c9b651",
+      "title": "智化科技完成近亿元的B轮融资，将继续深耕于AI制药以及自动化研发领域医药新闻-ByDrug-一站式医药资源共享中心-医药魔方",
+      "status": "historical_before_2026",
+      "reason": "原文融资发生在2026年前；保留历史核验记录，不伪装为2026年新增。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "05976683a64226c8bb78896759b057619e95d788d69bd320e21dca41e563c850",
+        "date": "",
+        "body_length": 1026
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.762Z"
+    },
+    {
+      "id": 45,
+      "url": "https://m.36kr.com/p/3884251152412929",
+      "title": "2026 上半年52 起融资、7 家冲刺IPO：教育行业的钱都流向了 ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.763Z"
+    },
+    {
+      "id": 46,
+      "url": "https://danjuanfunds.com/funding/006533",
+      "title": "https://danjuanfunds.com/funding/006533",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.764Z"
+    },
+    {
+      "id": 47,
+      "url": "https://www.iyiou.com/t/financingbulletin",
+      "title": "最新动态_融资快报介绍",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.764Z"
+    },
+    {
+      "id": 48,
+      "url": "https://m.36kr.com/p/3889732477860357",
+      "title": "2026年上半年50起游戏投融资，资本都在投些什么？ - 36氪",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.764Z"
+    },
+    {
+      "id": 49,
+      "url": "https://zhuanlan.zhihu.com/p/2022991433624219691",
+      "title": "双城助力，美酷瑞AI游戏再获融资：从产品到引擎的全面突破",
+      "status": "accepted_original",
+      "reason": "独立融资原文及公司AI产品已核验并入库；以最终发布门禁及线上回执确认完成。",
+      "company": "美酷瑞",
+      "raw_id": "RAW-ee48a7eec3673ea9",
+      "accepted_source": "https://eu.36kr.com/zh/newsflashes/3746728711389700",
+      "accepted_date": "2026-03-31",
+      "content_hash": "33de21fb3e93df874a2b6429b259275fd3c920b0f7f777d1d4593c737bf70f40",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.765Z"
+    },
+    {
+      "id": 50,
+      "url": "https://www.niutoushe.com/lives",
+      "title": "快讯",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "954293c91a5c0881809d1ef0c073ba6671fe0dabb6470707ceaf69093f54c9d4",
+        "date": "",
+        "body_length": 1934
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.767Z"
+    },
+    {
+      "id": 51,
+      "url": "https://www.meta.com/zh-cn/help/ai-glasses/693194947052406/?srsltid=AU7gw4WlhcLUZBcfXgx3eeBqQnvLK7fiAneJ_nkBQznKxXwvah5FP6yM",
+      "title": "如何开启并开始使用Meta Ray-Ban Display | AI 眼镜帮助(zh-cn)",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.767Z"
+    },
+    {
+      "id": 52,
+      "url": "https://www.donews.com/article/detail/5099/107932.html",
+      "title": "AI眼镜迈向“安卓规则”定义权之战- DoNews专栏",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "12344a6d1a09b616734c2418458fc00d9178f01c7b3ee995240036a599eed084",
+        "date": "",
+        "body_length": 3563
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.768Z"
+    },
+    {
+      "id": 53,
+      "url": "https://cryptorank.io/zh/news/feed/f6814-2293535",
+      "title": "Meta 将在AI 眼镜中引入Muse | CryptoRank.io",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.768Z"
+    },
+    {
+      "id": 54,
+      "url": "https://finance.yahoo.com/news/ai-driven-manufacturing-database-keychain-140000029.html",
+      "title": "AI-driven manufacturing database Keychain raises $5M for ...",
+      "status": "historical_before_2026",
+      "reason": "Keychain的500万美元在2025-02-12公告；检索到近期抓取时间不代表新融资。",
+      "additional_source": "https://www.prnewswire.com/news-releases/keychain-hits-one-year-live-announces-1-billion-in-projects-posted-per-month-launches-packaging-and-ingredients-verticals-and-funding-from-european-retailer-302374285.html",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.769Z"
+    },
+    {
+      "id": 55,
+      "url": "https://m.caizhongshe.cn/news-7510658399295173952.html",
+      "title": "恩华药业：参股公司好欣晴拟引入2.62亿元增资加码人工智能心理陪伴机器人",
+      "status": "pending_event_details",
+      "reason": "好欣晴为拟增资2.62亿元；消费AI陪伴硬件在范围内，但须补正式完成融资证据，不能按已完成发布。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "e0e46a0284f81e78f471e3c9d99ef3cc6affd31b43290dc66b843dec95f05192",
+        "date": "",
+        "body_length": 1037
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.770Z"
+    },
+    {
+      "id": 56,
+      "url": "https://bydrug.pharmcube.com/news/detail/d401204bd948c04343d33e30837f120c",
+      "title": "星辰海医疗完成数千万元A+轮融资，独家专访创始人张伟强 - ByDrug",
+      "status": "not_ai_evidence",
+      "reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "b01360e5b9c130573a786db9136ba9011bbe25add292e7a06e1a5fa209bb39c8",
+        "date": "",
+        "body_length": 925
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.786Z"
+    },
+    {
+      "id": 57,
+      "url": "https://www.chinastarmarket.cn/detail/2495474",
+      "title": "【迅杰光远完成超亿元B轮融资】《科创板日报》29日讯，近日",
+      "status": "already_covered",
+      "reason": "与现有 迅杰光远 2026-09-30 B轮 超亿元 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-847c0d8bd70ec24b",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-0b86e961d03687b6",
+          "quote": "本轮融资由深创投、云晖资本、翠微基金共同投资。",
+          "source_content_hash": "d56fe0f257b1c1d0ea91e2680905be9f8d5660dd18e76b4a9dfcc64baf0f8490",
+          "quote_hash": "ccb58f61befa1aada431e46bf6bf982d7db230c6092a837a7e2a68c08e61f662"
+        },
+        {
+          "source_id": "FISRC-0b86e961d03687b6",
+          "quote": "本轮融资由深创投、云晖资本、翠微基金共同投资。",
+          "source_content_hash": "d56fe0f257b1c1d0ea91e2680905be9f8d5660dd18e76b4a9dfcc64baf0f8490",
+          "quote_hash": "ccb58f61befa1aada431e46bf6bf982d7db230c6092a837a7e2a68c08e61f662"
+        }
+      ],
+      "existing_financing": {
+        "name": "迅杰光远",
+        "amount": "超亿元",
+        "round": "B轮",
+        "date": "2026-09-30"
+      },
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "433490562dffe87f06c6be65ccaf04d1ec1a8e2738c8e9ae8772ccfdd48448cc",
+        "date": "",
+        "body_length": 597
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.788Z"
+    },
+    {
+      "id": 58,
+      "url": "https://jiuyan.033533.online/",
+      "title": "财经日历",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.798Z"
+    },
+    {
+      "id": 59,
+      "url": "https://aicshow.cn/news/561.html",
+      "title": "10亿元融资到账，家用机器人公司加速规模化",
+      "status": "excluded_robotics",
+      "reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "5eed3b519d062d7bca136380045154de9b950d3992ec125cc66a917b208b92e0",
+        "date": "",
+        "body_length": 2246
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.802Z"
+    },
+    {
+      "id": 60,
+      "url": "https://m.ofweek.com/ai/2026-04/ART-201717-8120-30684345.html",
+      "title": "2026年3月，国内具身智能机器人企业融资汇总",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "f0250b89ddd78a7554639026c703a89fef6ce3895c5e36b8d54b20d8fe9be526",
+        "date": "",
+        "body_length": 12235
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.808Z"
+    },
+    {
+      "id": 61,
+      "url": "https://www.iyiou.com/briefing/202607141922751",
+      "title": "AI家庭智能硬件公司「威联机器人」获数千万元天使融资",
+      "status": "accepted_original",
+      "reason": "独立融资原文及公司AI产品已核验并入库；以最终发布门禁及线上回执确认完成。",
+      "company": "威联机器人",
+      "raw_id": "RAW-dd449f96d6d55567",
+      "accepted_source": "https://news.pedaily.cn/202607/566256.shtml",
+      "accepted_date": "2026-07-14",
+      "content_hash": "39e926543731881151f72d561fe64f00c4310b74bca065037e87d87d74110be4",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.809Z"
+    },
+    {
+      "id": 62,
+      "url": "https://m.zhidx.com/p/581667.html",
+      "title": "小米投的北京家庭机器人公司，完成亿美元级融资",
+      "status": "excluded_robotics",
+      "reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "0ed84a943bd560cf0d7bd224b6baca7f88e8d10d2fff6fe9c7b49f539d5ccacf",
+        "date": "",
+        "body_length": 1886
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.811Z"
+    },
+    {
+      "id": 63,
+      "url": "https://finance.sina.com.cn/jjxw/2026-05-25/doc-inhzawmh5768544.shtml",
+      "title": "美团、腾讯参投！机器人公司天机智能完成10亿元融资",
+      "status": "excluded_robotics",
+      "reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "60d2c5eb7485261b690aa6cb378ab662568ed10c77d7c6f2c8575b39deaef080",
+        "date": "2026-05-25",
+        "body_length": 3753
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.819Z"
+    },
+    {
+      "id": 64,
+      "url": "https://www.leaderobot.com/news/8658",
+      "title": "10 亿元Pre-A 轮落定！上市公司创始人再创业，跑出家庭 ...",
+      "status": "excluded_robotics",
+      "reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "3252d77eb635b2ce3d144ff9aec30e78b9838d9e9df9bc4eff30ba733f493c7c",
+        "date": "",
+        "body_length": 1463
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.822Z"
+    },
+    {
+      "id": 65,
+      "url": "https://www.stcn.com/article/detail/3925507.html",
+      "title": "美团、腾讯参投！机器人公司天机智能完成10亿元融资",
+      "status": "excluded_robotics",
+      "reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "bf8a61483434fa4b662598fb1452ac58e4aaeeeeb1a658915708d397755f0e92",
+        "date": "",
+        "body_length": 2425
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.824Z"
+    },
+    {
+      "id": 66,
+      "url": "https://zhuanlan.zhihu.com/p/1997605413038866853",
+      "title": "2026年国内人形机器人公司盘点",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.826Z"
+    },
+    {
+      "id": 67,
+      "url": "https://www.youtube.com/watch?v=j-ASrjzXcAQ",
+      "title": "The New Way AI Startups Are Raising Millions in 2026",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.827Z"
+    },
+    {
+      "id": 68,
+      "url": "https://www.todaysstartupnews.com/",
+      "title": "Today's Startup News - Latest Startup & Funding News",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "The operation was aborted due to timeout",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.828Z"
+    },
+    {
+      "id": 69,
+      "url": "https://alleywatch.com/2026/03/global-startup-funding-top-largest-february-2026-vc/",
+      "title": "The 23 Largest Global Startup Funding Rounds of ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "7de8a5239fe3b80def1fba6f8fcdfffd1c2548aeffe541b653ba616181d6687c",
+        "date": "",
+        "body_length": 35192
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.834Z"
+    },
+    {
+      "id": 70,
+      "url": "https://finance.yahoo.com/sectors/technology/articles/q1-2026-ai-funding-blows-175036425.html",
+      "title": "Q1 2026 AI funding blows past 2025 total with three deals ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.836Z"
+    },
+    {
+      "id": 71,
+      "url": "https://topstartups.io/?funding_round=Series%20A",
+      "title": "Top Series A Startups 2026 — Sequoia, YC, A16Z, ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "3d7d484feac265fe2b8dc32c76e146d265ef0107de3e11f69bd84c6bb138714b",
+        "date": "",
+        "body_length": 7558
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.839Z"
+    },
+    {
+      "id": 72,
+      "url": "https://techcrunch.com/",
+      "title": "TechCrunch | Startup and Technology News",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "197460a063dde69265a8e2c65a075480d39d43b017f6a884375342f843a51675",
+        "date": "2026-09-30",
+        "body_length": 11361
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.847Z"
+    },
+    {
+      "id": 73,
+      "url": "https://www.businesswire.com/news/home/20260929718646/en/Elio-Mortgage-Launches-with-%245.1-Million-in-Pre-Seed-Funding-to-Build-the-Mortgage-Company-for-the-AI-Era",
+      "title": "Elio Mortgage Launches with $5.1 Million in Pre-Seed Funding to Build the Mortgage Company for the AI Era",
+      "status": "already_covered",
+      "reason": "与现有 Elio Mortgage 2026-09-29 预种子轮 $5.1 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-0876a30fa1de5a92",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-f199e5c78b7a74fc",
+          "quote": "emerged from stealth with $5.1 million in pre-seed funding led by Motive Partners and Social Leverage",
+          "source_content_hash": "549bea470c7c6610fe41ce7058b1bdbf65b5973d8f792bda0f6738d33f7df6ca",
+          "quote_hash": "23c340440a273e5ce0d38de436fe712e8ce8b7758802105842b40bfc06848e06"
+        },
+        {
+          "source_id": "FISRC-f199e5c78b7a74fc",
+          "quote": "emerged from stealth with $5.1 million in pre-seed funding led by Motive Partners and Social Leverage",
+          "source_content_hash": "549bea470c7c6610fe41ce7058b1bdbf65b5973d8f792bda0f6738d33f7df6ca",
+          "quote_hash": "23c340440a273e5ce0d38de436fe712e8ce8b7758802105842b40bfc06848e06"
+        }
+      ],
+      "existing_financing": {
+        "name": "Elio Mortgage",
+        "amount": "$5.1 million",
+        "round": "预种子轮",
+        "date": "2026-09-29"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.847Z"
+    },
+    {
+      "id": 74,
+      "url": "https://www.businesswire.com/news/home/20261005810960/en/SiMa.ai-and-Wobot.ai-Partner-to-Bring-Reasoning-Based-Video-Analytics-for-Physical-AI",
+      "title": "SiMa.ai and Wobot.ai Partner to Bring Reasoning-Based Video Analytics for Physical AI",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.848Z"
+    },
+    {
+      "id": 75,
+      "url": "https://www.businesswire.com/news/home/20261005035318/en/Leading-AI-Investor-Menlo-Ventures-Invests-in-Factory",
+      "title": "Leading AI Investor Menlo Ventures Invests in Factory",
+      "status": "pending_event_details",
+      "reason": "Menlo对Factory的新增投资公告需与已收录9月15日2亿美元轮次对齐；先不重复创建。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.848Z"
+    },
+    {
+      "id": 76,
+      "url": "https://www.businesswire.com/news/home/20261005181820/en/Valon-Raises-%24150-Million-Series-D-at-a-%242.3-Billion-Valuation-to-Deploy-ValonOS-and-AI-Agents-into-Mortgage",
+      "title": "Valon Raises $150 Million Series D at a $2.3 Billion Valuation to Deploy ValonOS and AI Agents into Mortgage",
+      "status": "accepted_original",
+      "reason": "独立融资原文及公司AI产品已核验并入库；以最终发布门禁及线上回执确认完成。",
+      "company": "Valon",
+      "raw_id": "RAW-1587848205ed2e62",
+      "accepted_source": "https://www.morningstar.com/news/business-wire/20261005181820/valon-raises-150-million-series-d-at-a-23-billion-valuation-to-deploy-valonos-and-ai-agents-into-mortgage",
+      "accepted_date": "2026-10-05",
+      "content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.849Z"
+    },
+    {
+      "id": 77,
+      "url": "https://www.businesswire.com/news/home/20260929474279/en/Pagaya-Secures-First-Variable-Funding-Note-Facility-with-ATLAS-SP-Partners-Advancing-Long-Term-Committed-Capital-Strategy",
+      "title": "Pagaya Secures First Variable Funding Note Facility with ATLAS SP Partners, Advancing Long-Term Committed Capital Strategy",
+      "status": "pending_event_details",
+      "reason": "Pagaya为Variable Funding Note资金安排；需区分底层贷款资产融资与企业自身融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.850Z"
+    },
+    {
+      "id": 78,
+      "url": "https://www.businesswire.com/news/home/20261005723856/en/Niobrara-Capital-Partners-Closes-Inaugural-Founders-Fund-and-Related-Vehicles-With-Over-%241.5-Billion-in-Committed-Capital",
+      "title": "Niobrara Capital Partners Closes Inaugural Founders Fund and Related Vehicles With Over $1.5 Billion in Committed Capital",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.851Z"
+    },
+    {
+      "id": 79,
+      "url": "https://www.businesswire.com/news/home/20260930237631/en/Tangent-Robotics-Raises-4.5M-in-Pre-seed-Funding-to-Advance-Fine-Motor-Skills-for-Robot-Dexterity",
+      "title": "Tangent Robotics Raises 4.5M in Pre-seed Funding to Advance Fine Motor Skills for Robot Dexterity",
+      "status": "pending_ai_scope",
+      "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.851Z"
+    },
+    {
+      "id": 80,
+      "url": "https://www.eu-startups.com/",
+      "title": "EU-Startups | Spotlight on European startups",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.852Z"
+    },
+    {
+      "id": 81,
+      "url": "https://www.eu-startups.com/2026/10/berlin-based-kuro-raises-e10-million-to-build-the-ai-foundation-for-general-contractors",
+      "title": "Berlin-based Kuro raises €10 million to build the AI ​​foundation for general contractors | EU-Startups",
+      "status": "already_covered",
+      "reason": "与现有 Kuro 2026-10-02 早期融资 €10 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-adb01e49c7ab65c6",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-8bd4513374ef496a",
+          "quote": "The round was led by UVC Partners, a Munich- and Berlin-based venture capital firm with more than €800 million in assets under management",
+          "source_content_hash": "0043e633bbe66788b9d287958129b6a7b731a0ce4cfad726406788613e638e0c",
+          "quote_hash": "5811ffcbfa57619d3f4a89f3f7295b8245cfc2694ea9b05c80e520d0de5d3085"
+        },
+        {
+          "source_id": "FISRC-8bd4513374ef496a",
+          "quote": "The round also saw participation from Foundamental, Realyze Ventures, and helloworld.",
+          "source_content_hash": "0043e633bbe66788b9d287958129b6a7b731a0ce4cfad726406788613e638e0c",
+          "quote_hash": "a6a5778a2aae0bc417fd88423220413aab5919ec269c19b9bbccd92eb4369f66"
+        }
+      ],
+      "existing_financing": {
+        "name": "Kuro",
+        "amount": "€10 million",
+        "round": "早期融资",
+        "date": "2026-10-02"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.862Z"
+    },
+    {
+      "id": 82,
+      "url": "https://www.eu-startups.com/2026/10/french-cybersecurity-startup-fleuret-ai-raises-e4-million-to-automate-penetration-testing-with-ai-agents",
+      "title": "French cybersecurity startup Fleuret AI raises €4 million to automate penetration testing with AI agents | EU-Startups",
+      "status": "already_covered",
+      "reason": "与现有 Fleuret AI 2026-10-05 预种子轮 €4 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-e680b88c2cd9b41e",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-99179d97c4e96ad7",
+          "quote": "The round was led by RAISE Ventures, with participation from Auriga Cyber Ventures, Wind, Better Angle and business angels from the cybersecurity sector.",
+          "source_content_hash": "cb29e794dada4293d8e5aef330152e1509f337d441941c9f725f9aa3a18bd91d",
+          "quote_hash": "9f5f196dd9d76f06a36bf7215969f9401d2ca79beeaea2ce72c6dd72b86c863f"
+        },
+        {
+          "source_id": "FISRC-99179d97c4e96ad7",
+          "quote": "The round was led by RAISE Ventures, with participation from Auriga Cyber Ventures, Wind, Better Angle and business angels from the cybersecurity sector.",
+          "source_content_hash": "cb29e794dada4293d8e5aef330152e1509f337d441941c9f725f9aa3a18bd91d",
+          "quote_hash": "9f5f196dd9d76f06a36bf7215969f9401d2ca79beeaea2ce72c6dd72b86c863f"
+        }
+      ],
+      "existing_financing": {
+        "name": "Fleuret AI",
+        "amount": "€4 million",
+        "round": "预种子轮",
+        "date": "2026-10-05"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.867Z"
+    },
+    {
+      "id": 83,
+      "url": "https://www.eu-startups.com/2026/10/mulesoft-founders-dig-ventures-closes-e106-million-fund-iii-to-back-europes-ai-and-cloud-infrastructure-startups",
+      "title": "MuleSoft founder’s DIG Ventures closes €106 million Fund III to back Europe’s AI and cloud infrastructure startups",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.870Z"
+    },
+    {
+      "id": 84,
+      "url": "https://www.eu-startups.com/2026/10/ai-sales-startup-revnu-raises-e2-6-million-to-build-team-and-accelerate-international-growth",
+      "title": "AI sales startup Revnu raises €2.6 million to build team and accelerate international growth | EU-Startups",
+      "status": "already_covered",
+      "reason": "与现有 Revnu 2026-10-01 种子轮 $3m 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-e57b9730bfc14b51",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-ee1ac79a0f3dddbb",
+          "quote": "The funding round was led by NPIF II – PXN Equity Finance, managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II.",
+          "source_content_hash": "9e473dfe8da950af126dbbf2c1ba0ddeac7aa62b318ef3582dbc19a49eab246b",
+          "quote_hash": "4e10d9bf3a9ef5e75273f895d8082d06ae8fd658d8808f228f34c4a8924820b7"
+        },
+        {
+          "source_id": "FISRC-ee1ac79a0f3dddbb",
+          "quote": "Revnu also received backing from Y Combinator.",
+          "source_content_hash": "9e473dfe8da950af126dbbf2c1ba0ddeac7aa62b318ef3582dbc19a49eab246b",
+          "quote_hash": "a64a4c7318a4083b60fc808ee59b900963424788f7b70c270b4b2d5bd502e388"
+        }
+      ],
+      "existing_financing": {
+        "name": "Revnu",
+        "amount": "$3m",
+        "round": "种子轮",
+        "date": "2026-10-01"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.879Z"
+    },
+    {
+      "id": 85,
+      "url": "https://scouts.yutori.com/2c514b0b-8fe8-476f-8b2a-24e4777dc484",
+      "title": "Foundation model funding news - Scouts by Yutori",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.880Z"
+    },
+    {
+      "id": 86,
+      "url": "https://intellizence.com/insights/startup-funding/startup-funding-trends-july-2026-ai-infrastructure-and-robotics/",
+      "title": "Startup Funding Trends in July 2026 – AI, Robotics, Energy ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.880Z"
+    },
+    {
+      "id": 87,
+      "url": "https://www.reuters.com/business/volantis-raises-88-million-tech-connect-ai-memory-chips-2026-10-01/",
+      "title": "Volantis raises $88 million for tech to connect AI, memory chips | Reuters",
+      "status": "already_covered",
+      "reason": "与现有 Volantis 2026-10-01 A轮 $88 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-3a45fb24c3af4f80",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-23ff312a843cd717",
+          "quote": "The funding round was led by Stripe veteran Lachy Groom and Abstract Ventures.",
+          "source_content_hash": "d345eafcaa15d78eb3177366fb76f87f7c735d5a9012d2da287cc1cf7474412d",
+          "quote_hash": "a0593f77e01cfc703c1c9abdd298de910307816ef66fb91956d2145d794dcdc5"
+        },
+        {
+          "source_id": "FISRC-23ff312a843cd717",
+          "quote": "The funding round was led by Stripe veteran Lachy Groom and Abstract Ventures.",
+          "source_content_hash": "d345eafcaa15d78eb3177366fb76f87f7c735d5a9012d2da287cc1cf7474412d",
+          "quote_hash": "a0593f77e01cfc703c1c9abdd298de910307816ef66fb91956d2145d794dcdc5"
+        }
+      ],
+      "existing_financing": {
+        "name": "Volantis",
+        "amount": "$88 million",
+        "round": "A轮",
+        "date": "2026-10-01"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.881Z"
+    },
+    {
+      "id": 88,
+      "url": "https://www.facebook.com/techcrunch/posts/just-a-couple-of-months-after-its-last-big-raise-the-ai-chip-startup-is-already-/1446748763985653/",
+      "title": "Just a couple of months after its last big raise, the AI chip startup is ...",
+      "status": "not_financing",
+      "reason": "原文为Etched融资洽谈，未完成新一轮；不把估值报价收录为融资额。",
+      "additional_source": "https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/",
+      "alternate_capture": "etched-offers",
+      "additional_content_hash": "a194bc4d89267cd7b70cf7973fae451271a01b60a42f21701bd8a32083186632",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.881Z"
+    },
+    {
+      "id": 89,
+      "url": "https://finance.yahoo.com/technology/ai/articles/enterprise-ai-agent-funding-surges-093104627.html",
+      "title": "Enterprise AI Agent Funding Surges to $435M in Five Months",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.882Z"
+    },
+    {
+      "id": 90,
+      "url": "https://www.hpcwire.com/aiwire/2026/07/16/fireworks-raises-1-5b-to-expand-enterprise-ai-model-platform/",
+      "title": "Fireworks Raises $1.5B to Expand Enterprise AI Model ...",
+      "status": "already_covered",
+      "reason": "与现有 Fireworks AI Inc. 2026-07-16 D轮 $1.505 billion 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-3b1ea359415f476d",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-0d89e0712245c55b",
+          "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
+          "source_content_hash": "82ccac3b5ede24d2",
+          "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
+        },
+        {
+          "source_id": "FISRC-0d89e0712245c55b",
+          "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
+          "source_content_hash": "82ccac3b5ede24d2",
+          "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
+        }
+      ],
+      "existing_financing": {
+        "name": "Fireworks AI Inc.",
+        "amount": "$1.505 billion",
+        "round": "D轮",
+        "date": "2026-07-16"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.882Z"
+    },
+    {
+      "id": 91,
+      "url": "https://projectstartups.com/pages/developer-tools/",
+      "title": "Developer Tools Recently Funded Startups",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "5c1027ef1b8ac916ef8b181e917bf3bf157d149e55cdae09d6eeffdaf0edd3fd",
+        "date": "",
+        "body_length": 5635
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.885Z"
+    },
+    {
+      "id": 92,
+      "url": "https://www.fundedstartupsdaily.com/raises/developer-tools/",
+      "title": "Developer Tools startups that raised funding in 2026",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "4c64896b10640830fb61a180f68ce642fe991bb4d7ab22aa4fda8615726f5151",
+        "date": "",
+        "body_length": 10150
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.889Z"
+    },
+    {
+      "id": 93,
+      "url": "https://aibusiness.com/cybersecurity/startup-focused-enterprise-ai-security-valued-1-2-billion",
+      "title": "Startup Focused on Enterprise AI Security Valued at $1.2B",
+      "status": "accepted_original",
+      "reason": "独立融资原文及公司AI产品已核验并入库；以最终发布门禁及线上回执确认完成。",
+      "company": "Glow",
+      "raw_id": "RAW-b56857e59649e5ec",
+      "accepted_source": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+      "accepted_date": "2026-07-22",
+      "content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.890Z"
+    },
+    {
+      "id": 94,
+      "url": "https://genemod.net/blog/biotech-companies-raised-funding-june-2026",
+      "title": "Biotech Companies That Raised Funding in June 2026",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "b6bac49f67735de0bd5eeb5750f166d330f3556e28c4ae6e384690227542d48c",
+        "date": "",
+        "body_length": 15135
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.908Z"
+    },
+    {
+      "id": 95,
+      "url": "https://tradersunion.com/news/financial-news/show/3475076-gaming-startup-funding-2026-ai/",
+      "title": "Global gaming startups funding rebounds in 2026, led by ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.909Z"
+    },
+    {
+      "id": 96,
+      "url": "https://leadmagic.io/funded-startups/series-a-ai",
+      "title": "44+ Series A AI Startups Funded (2026)",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "c568eb6ca36cd5da8132804605ef4064e36ce410a7360616431d2c3c0a94acb7",
+        "date": "",
+        "body_length": 9741
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.923Z"
+    },
+    {
+      "id": 97,
+      "url": "https://www.chaacventures.com/news",
+      "title": "News",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "cd993ccf8185e240c277758a04f57ee0e4a35ae07a275e491418bff97585cd7c",
+        "date": "",
+        "body_length": 28385
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.968Z"
+    },
+    {
+      "id": 98,
+      "url": "https://pitchbook.com/webinars/the-consumer-ai-opportunity-where-the-real-money-is-going-in-2026",
+      "title": "The consumer AI opportunity: Where the real money is ...",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.969Z"
+    },
+    {
+      "id": 99,
+      "url": "https://finance.yahoo.com/technology/ai/articles/eden-ai-labs-inc-raises-163000905.html",
+      "title": "Eden AI Labs Inc. Raises $1.5M to Build Personal AI That Works for Everyone",
+      "status": "pending_company_identity",
+      "reason": "融资公告已归档，但公司身份、产品与官网对应仍需独立证据；未通过发布条件。",
+      "company": "Eden AI Labs",
+      "raw_id": "RAW-ff88833d9eb4e981",
+      "accepted_source": "https://www.globenewswire.com/news-release/2026/10/05/3374883/0/en/eden-ai-labs-inc-raises-1-5m-to-build-personal-ai-that-works-for-everyone.html",
+      "accepted_date": "2026-10-05",
+      "content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.969Z"
+    },
+    {
+      "id": 100,
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0148296326003735",
+      "title": "Artificial intelligence companionship: conceptualization, dimension identification and scale development",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.970Z"
+    },
+    {
+      "id": 101,
+      "url": "https://www.ntia.gov/funding-programs/public-wireless-supply-chain-innovation-fund/innovation-fund-round-4-2026-ai-native-telecommunications",
+      "title": "Innovation Fund Round 4 (2026) AI Native ...",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "b1845d61bc8b00f018eb5399fe14d8e7211dbdf0c238b236a73079d00d3d2637",
+        "date": "",
+        "body_length": 848
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.976Z"
+    },
+    {
+      "id": 102,
+      "url": "https://www.techbuzz.ai/articles/nothing-raises-200m-to-launch-ai-native-devices-in-2026",
+      "title": "Nothing raises $200M to launch AI-native devices in 2026",
+      "status": "already_covered",
+      "reason": "与现有 Nothing 2025-09-16 C轮 $200 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-e5aed52f8dab81de",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-7e709202ce99cc8e",
+          "quote": "The round was led by Tiger Global",
+          "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
+          "quote_hash": "9eaaed652574b1beacba1844710f58106747549dba80d721fc0a8fcdeeb1d158"
+        },
+        {
+          "source_id": "FISRC-7e709202ce99cc8e",
+          "quote": "with significant support from existing shareholders GV, Highland Europe, EQT, Latitude, I2BF and Tapestry",
+          "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
+          "quote_hash": "0e18ef143df443410be7bd64c5f3d44d18d83e7347e96dfa423d4f8a621c811a"
+        }
+      ],
+      "existing_financing": {
+        "name": "Nothing",
+        "amount": "$200 million",
+        "round": "C轮",
+        "date": "2025-09-16"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.976Z"
+    },
+    {
+      "id": 103,
+      "url": "https://techfundingnews.com/top-humanoid-robot-startups-2026-funding/",
+      "title": "Top 10 humanoid robot startups to watch in 2026, ranked ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.977Z"
+    },
+    {
+      "id": 104,
+      "url": "https://www.robotics247.com/article/tutor_intelligence_raises_34m_series_a_to_scale_ai_powered_warehouse_robot_worker_fleet",
+      "title": "Tutor Intelligence raises $34M Series A to scale AI ...",
+      "status": "pending_ai_scope",
+      "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.980Z"
+    },
+    {
+      "id": 105,
+      "url": "https://www.instagram.com/reel/DZaZC8pMLRN/",
+      "title": "NEURA Robotics on Instagram",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.981Z"
+    },
+    {
+      "id": 106,
+      "url": "https://www.theinformation.com/newsletters/ai-agenda/exclusive-reframe-raises-funds-bring-amazon-robotics-know-home-building",
+      "title": "Reframe Raises Funds to Bring Amazon Robotics Know- ...",
+      "status": "pending_ai_scope",
+      "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.982Z"
+    },
+    {
+      "id": 107,
+      "url": "https://m.36kr.com/user/1895115459",
+      "title": "36氪品牌发布过的内容",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.988Z"
+    },
+    {
+      "id": 108,
+      "url": "https://pitchhub.36kr.com/financing-flash",
+      "title": "融资快报",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "39d2785a1a553995f72db98b7817e96a35ed4297eda7a412cb4259b400d0c70b",
+        "date": "",
+        "body_length": 3706
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.995Z"
+    },
+    {
+      "id": 109,
+      "url": "https://m.36kr.com/p/4010869541736323",
+      "title": "中国公司全球化周报｜速卖通智能经营AI Agent全面上线 / 百度海外版Kooko用户破千万-36氪",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:55.996Z"
+    },
+    {
+      "id": 110,
+      "url": "https://eu.36kr.com/zh/p/4005368420847496",
+      "title": "开抢清华00后",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "f93aaa38799ae1ff7e81a6648fb1ad510c132fadccfea8c50c87d7a4db8f0449",
+        "date": "",
+        "body_length": 2314
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:55.998Z"
+    },
+    {
+      "id": 111,
+      "url": "https://news.pedaily.cn/202609/569806.shtml",
+      "title": "苏度科技完成超10亿元新一轮融资，持续加注具身智能赛道",
+      "status": "excluded_robotics",
+      "reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "b78f83bd53ecb3584adf5847346ff6086610f3cd2535aad0e4ec28c52ab56e04",
+        "date": "2026-09-30",
+        "body_length": 1012
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.000Z"
+    },
+    {
+      "id": 112,
+      "url": "https://www.prnewswire.com/news-releases/linc-stockholders-have-rights--if-you-lost-money-investing-in-lincoln-education-services-corporation-contact-robbins-llp-for-information-about-recovering-your-losses-302896535.html",
+      "title": "LINC Stockholders Have Rights - If You Lost Money Investing in Lincoln Education Services Corporation Contact Robbins LLP for Information About Recovering Your Losses",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "a5881fa66cd1f3b5798ac3a49b41424b37758f6d048e9d7cbe5a496c46b5a174",
+        "date": "2026-10-01",
+        "body_length": 4925
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.012Z"
+    },
+    {
+      "id": 113,
+      "url": "https://www.prnewswire.com/news-releases/aegea-releases-3q26-funding-update-302897531.html",
+      "title": "Aegea Releases 3Q26 Funding Update",
+      "status": "not_ai_evidence",
+      "reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "d647b969b68ab12f9b84343c220c076352141b1afde8aca827985ca60f458552",
+        "date": "2026-10-02",
+        "body_length": 2953
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.022Z"
+    },
+    {
+      "id": 114,
+      "url": "https://www.prnewswire.com/news-releases/bc-partners-credit-announces-initial-investment-in-liv-golf-marking-the-next-step-toward-a-financially-strong-team-focused-golf-league-302899061.html",
+      "title": "BC Partners Credit Announces Initial Investment in LIV Golf, Marking the Next Step Toward a Financially Strong, Team-Focused Golf League",
+      "status": "not_ai_evidence",
+      "reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "4891fb1d9cdd34cbed0b29cbc071222529fccf4559f22690b35e35b62e21972c",
+        "date": "2026-10-05",
+        "body_length": 3852
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.030Z"
+    },
+    {
+      "id": 115,
+      "url": "https://www.eu-startups.com/2026/10/londons-metaview-raises-e53-1-million-series-c-led-by-insight-partners-to-scale-its-agentic-recruiting-platform/",
+      "title": "London’s Metaview raises €53.1 million Series C led by Insight Partners to scale its agentic recruiting platform",
+      "status": "already_covered",
+      "reason": "与现有 Metaview 2026-10-01 C轮 $60M 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-568706815472d154",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-62e06e29d2d7be04",
+          "quote": "The funding round was led by Insight Partners",
+          "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
+          "quote_hash": "af6e5688857c42bcf8680a735df5157bbf3b10fdf6d60e4a7b4d1cec2d61b172"
+        },
+        {
+          "source_id": "FISRC-62e06e29d2d7be04",
+          "quote": "Additional investors participating in the round include GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
+          "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
+          "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
+        }
+      ],
+      "existing_financing": {
+        "name": "Metaview",
+        "amount": "$60M",
+        "round": "C轮",
+        "date": "2026-10-01"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.032Z"
+    },
+    {
+      "id": 116,
+      "url": "https://www.eu-startups.com/2026/10/londons-foundational-exits-stealth-with-e9-6-million-to-track-satellites-and-debris-with-millimetre-level-precision/",
+      "title": "London’s Foundational exits stealth with €9.6 million to track satellites and debris with “millimetre-level” precision",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.033Z"
+    },
+    {
+      "id": 117,
+      "url": "https://www.eu-startups.com/2026/09/everphone-secures-e15-million-to-finance-new-devices-for-corporate-customers/",
+      "title": "Everphone secures €15 million to finance new devices for corporate customers",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.034Z"
+    },
+    {
+      "id": 118,
+      "url": "https://www.eu-startups.com/2026/09/paris-based-inbolt-raises-e11-million-to-give-industrial-robots-real-time-vision-and-intelligence/",
+      "title": "Paris-based Inbolt raises €11 million to give industrial robots real-time vision and intelligence",
+      "status": "pending_ai_scope",
+      "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.035Z"
+    },
+    {
+      "id": 119,
+      "url": "https://www.eu-startups.com/2026/10/fashiontech-startup-rodinia-generation-aims-to-save-100-billion-litres-of-water-annually-secures-e4-million/",
+      "title": "FashionTech startup Rodinia Generation aims to save 100 billion litres of water annually, secures €4 million",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.036Z"
+    },
+    {
+      "id": 120,
+      "url": "https://www.eu-startups.com/2026/10/namespace-secures-e37-million-to-scale-coding-build-and-test-infrastructure-across-mac-windows-and-linux/",
+      "title": "Namespace secures €37 million to scale coding, build and test infrastructure across Mac, Windows and Linux",
+      "status": "already_covered",
+      "reason": "与现有 Namespace 2026-10-05 B轮 $42m 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-f40d1aa76b8e92a4",
+      "existing_evidence": [],
+      "existing_financing": {
+        "name": "Namespace",
+        "amount": "$42m",
+        "round": "B轮",
+        "date": "2026-10-05"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.037Z"
+    },
+    {
+      "id": 121,
+      "url": "https://www.eu-startups.com/2026/10/french-cybersecurity-startup-fleuret-ai-raises-e4-million-to-automate-penetration-testing-with-ai-agents/",
+      "title": "French cybersecurity startup Fleuret AI raises €4 million to automate penetration testing with AI agents",
+      "status": "already_covered",
+      "reason": "与现有 Fleuret AI 2026-10-05 预种子轮 €4 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-e680b88c2cd9b41e",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-99179d97c4e96ad7",
+          "quote": "The round was led by RAISE Ventures, with participation from Auriga Cyber Ventures, Wind, Better Angle and business angels from the cybersecurity sector.",
+          "source_content_hash": "cb29e794dada4293d8e5aef330152e1509f337d441941c9f725f9aa3a18bd91d",
+          "quote_hash": "9f5f196dd9d76f06a36bf7215969f9401d2ca79beeaea2ce72c6dd72b86c863f"
+        },
+        {
+          "source_id": "FISRC-99179d97c4e96ad7",
+          "quote": "The round was led by RAISE Ventures, with participation from Auriga Cyber Ventures, Wind, Better Angle and business angels from the cybersecurity sector.",
+          "source_content_hash": "cb29e794dada4293d8e5aef330152e1509f337d441941c9f725f9aa3a18bd91d",
+          "quote_hash": "9f5f196dd9d76f06a36bf7215969f9401d2ca79beeaea2ce72c6dd72b86c863f"
+        }
+      ],
+      "existing_financing": {
+        "name": "Fleuret AI",
+        "amount": "€4 million",
+        "round": "预种子轮",
+        "date": "2026-10-05"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.038Z"
+    },
+    {
+      "id": 122,
+      "url": "https://www.eu-startups.com/2026/10/copenhagens-pandektes-raises-e13-5-million-to-build-the-data-infrastructure-for-ai-powered-legal-research/",
+      "title": "Copenhagen’s Pandektes raises €13.5 million to build the data infrastructure for AI-powered legal research",
+      "status": "already_covered",
+      "reason": "与现有 Pandektes 2026-10-05 A轮 €13.5 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-628ec6bc86b2f968",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-0a4dc95c5969e68e",
+          "quote": "The round was led by Alstin Capital, a Munich-based early-stage venture capital firm with a focus on B2B software companies.",
+          "source_content_hash": "90e2d1d372d58dce340d332ed715d3a3ac5c006e2e82a9db53cf3da514a170b8",
+          "quote_hash": "35d16f988f134354b88fa187ed762ce9e8b9a298e523969505de2af3298517b6"
+        },
+        {
+          "source_id": "FISRC-0a4dc95c5969e68e",
+          "quote": "The round also saw participation from PROfounders, Scale Capital, and existing investors.",
+          "source_content_hash": "90e2d1d372d58dce340d332ed715d3a3ac5c006e2e82a9db53cf3da514a170b8",
+          "quote_hash": "a540799a858a6ee8fca0e34f4737529168988f7a99ad8087b9913cbda55a7566"
+        }
+      ],
+      "existing_financing": {
+        "name": "Pandektes",
+        "amount": "€13.5 million",
+        "round": "A轮",
+        "date": "2026-10-05"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.040Z"
+    },
+    {
+      "id": 123,
+      "url": "https://www.cyzone.cn/article/846959.html",
+      "title": "字节拆出一家AI制药公司，首轮融资2.9亿美元，估值15亿美元；梁文锋招到90后CFO丨AI周报",
+      "status": "index_or_roundup",
+      "reason": "Anew Labs 2.9亿美元已覆盖；Manus和Instinct为洽谈中融资，其余融资需独立核验，周报日期不能替代事件日期。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "2e96690f9c7c10daaa368f14e9f69d64338896eab646dfa8bf7560d9275b6430",
+        "date": "",
+        "body_length": 10165
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.043Z"
+    },
+    {
+      "id": 124,
+      "url": "https://www.cyzone.cn/article/846106.html",
+      "title": "哈工程教授创业，天使轮融资亿元，做水下机器人",
+      "status": "excluded_robotics",
+      "reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "74c3cfdd93df62d009d5983ba246ff6c67ea524e03d726a2717b93126c62ac08",
+        "date": "",
+        "body_length": 1145
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.044Z"
+    },
+    {
+      "id": 125,
+      "url": "https://www.cyzone.cn/article/821275.html",
+      "title": "智谱AI登陆港交所，最新市值688.96亿港元；强脑科技融资近20亿人民币丨全球投融资周报1.03-01.09",
+      "status": "index_or_roundup",
+      "reason": "2026年1月周报；拆出BrainCo约20亿元B轮、XREAL 1亿美元D轮供历史同轮核验，不把周报总额当企业融资。",
+      "followups": [
+        "BrainCo 2026年1月B轮",
+        "XREAL 2026年1月D轮"
+      ],
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "d344b7db91b9a051229a0944d84845a06cdb5bf6c47d2799d0227e202cdb8386",
+        "date": "",
+        "body_length": 2568
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.046Z"
+    },
+    {
+      "id": 126,
+      "url": "https://www.cyzone.cn/article/817920.html",
+      "title": "清微智能完成过20亿元C轮融资；摩尔线程登陆科创板，最新市值为2822.52亿元丨全球投融资周报11.29-12.05",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "The operation was aborted due to timeout",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.047Z"
+    },
+    {
+      "id": 127,
+      "url": "https://www.cyzone.cn/article/816660.html",
+      "title": "星动纪元完成近10亿元A+轮融资；南网数研院登陆深交所，最新市值为705.88亿元丨全球投融资周报11.15-11.21",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "ce15e700e1fb7315f0eb8ef5238c378eb356aa847741d979183f89ff59de51d2",
+        "date": "",
+        "body_length": 2651
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.048Z"
+    },
+    {
+      "id": 128,
+      "url": "https://www.cyzone.cn/article/815900.html",
+      "title": "康诺思腾完成近2亿美元C+轮融资；AI芯片公司d-Matrix跻身独角兽丨全球投融资周报11.08-11.14",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "f259ac2335a6fc2348b6c5c02f94ed5dce8adccc83ba3aee66979751a1bd9f93",
+        "date": "",
+        "body_length": 2150
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.050Z"
+    },
+    {
+      "id": 129,
+      "url": "https://www.chinaventure.com.cn/news/114-20260929-393483.html",
+      "title": "途见科技完成亿元级Pre-A++轮融资 由北京市人工智能产业投资基金、北京市新材料产业投资基金联合领投。 投中网 · 4天前",
+      "status": "excluded_robotics",
+      "reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "0ae9822a6f3e389d2507ad9caba1b8c8ceec5c379f6284e0e453d9d04cac9a9f",
+        "date": "",
+        "body_length": 880
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.052Z"
+    },
+    {
+      "id": 130,
+      "url": "https://www.chinaventure.com.cn/news/80-20260927-393454.html",
+      "title": "“包养式融资”，估值1200亿 6天前 8",
+      "status": "pending_event_details",
+      "reason": "Fluidstack报道混合15亿美元新轮次、7.5/8.3亿美元扩展及估值；原始披露日期/扩展轮关系待核对，不能以综述9月27日作为新轮日期。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "2edd8c69e6a4476de9ac55055454cbca5f710d63df1a444ab206e7a02e576a6b",
+        "date": "",
+        "body_length": 4843
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.053Z"
+    },
+    {
+      "id": 131,
+      "url": "https://www.chinaventure.com.cn/news/114-20260930-393493.html",
+      "title": "吾拾微电子完成亿元A轮融资 由武岳峰科创、高瓴创投、深创投、天堂硅谷等头部机构联合投资。 投中网 · 5天前",
+      "status": "not_ai_evidence",
+      "reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "ca621e32b8301e6c70fe02de4d6863eedbbee1341a5b3816c16547fc73e806a9",
+        "date": "",
+        "body_length": 815
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.055Z"
+    },
+    {
+      "id": 132,
+      "url": "https://www.chinaventure.com.cn/news/113-20260930-393494.html",
+      "title": "新烛时代完成天使+轮融资 本轮融资由中金资本、天鹰、顺创产投、中新绿电 四家机构联合投资。 投中网 · 5天前",
+      "status": "already_covered",
+      "reason": "与现有 新烛时代 2026-09-25 天使+轮 超过4000万元 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-fe50512419bbefbd",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-0992c85652bbaa98",
+          "quote": "中金资本、天鹰资本、顺创产投以及中新绿电共同出资。",
+          "source_content_hash": "b04480c76287403febb6695af771722f99c6278a591cc41526663e41ca1c3886",
+          "quote_hash": "0613174e008758f56944c2951c1c79b29107a3cf34d089476da94d532f8b3eed"
+        },
+        {
+          "source_id": "FISRC-0992c85652bbaa98",
+          "quote": "中金资本、天鹰资本、顺创产投以及中新绿电共同出资。",
+          "source_content_hash": "b04480c76287403febb6695af771722f99c6278a591cc41526663e41ca1c3886",
+          "quote_hash": "0613174e008758f56944c2951c1c79b29107a3cf34d089476da94d532f8b3eed"
+        }
+      ],
+      "existing_financing": {
+        "name": "新烛时代",
+        "amount": "超过4000万元",
+        "round": "天使+轮",
+        "date": "2026-09-25"
+      },
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "a24e1befb9730d0150adf8426a984333d9109fe8ab80c3d35473f8efe1834611",
+        "date": "",
+        "body_length": 670
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.056Z"
+    },
+    {
+      "id": 133,
+      "url": "https://www.chinaventure.com.cn/news/114-20260930-393487.html",
+      "title": "迅杰光远完成超亿元B轮融资 本轮融资由深创投、云晖资本、翠微基金共同投资。 投中网 · 5天前",
+      "status": "already_covered",
+      "reason": "与现有 迅杰光远 2026-09-30 B轮 超亿元 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-847c0d8bd70ec24b",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-0b86e961d03687b6",
+          "quote": "本轮融资由深创投、云晖资本、翠微基金共同投资。",
+          "source_content_hash": "d56fe0f257b1c1d0ea91e2680905be9f8d5660dd18e76b4a9dfcc64baf0f8490",
+          "quote_hash": "ccb58f61befa1aada431e46bf6bf982d7db230c6092a837a7e2a68c08e61f662"
+        },
+        {
+          "source_id": "FISRC-0b86e961d03687b6",
+          "quote": "本轮融资由深创投、云晖资本、翠微基金共同投资。",
+          "source_content_hash": "d56fe0f257b1c1d0ea91e2680905be9f8d5660dd18e76b4a9dfcc64baf0f8490",
+          "quote_hash": "ccb58f61befa1aada431e46bf6bf982d7db230c6092a837a7e2a68c08e61f662"
+        }
+      ],
+      "existing_financing": {
+        "name": "迅杰光远",
+        "amount": "超亿元",
+        "round": "B轮",
+        "date": "2026-09-30"
+      },
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "d56fe0f257b1c1d0ea91e2680905be9f8d5660dd18e76b4a9dfcc64baf0f8490",
+        "date": "",
+        "body_length": 851
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.057Z"
+    },
+    {
+      "id": 134,
+      "url": "https://www.chinaventure.com.cn/news/114-20260929-393484.html",
+      "title": "宏芯气体完成数亿元Pre-B轮融资 本轮融资由建投投资联合安徽省新材料产业主题投资基金发起成立的建安壹号基金领投，武汉光谷金控、兖矿资本、歌尔集团同歌创投、众物投资联合跟投。 投中网 · 5天前",
+      "status": "not_ai_evidence",
+      "reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "7d951f55b70bdf9de6edb09bf2fe5706d263903dea964a31e6b76ac115d9d73c",
+        "date": "",
+        "body_length": 973
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.077Z"
+    },
+    {
+      "id": 135,
+      "url": "https://www.tmtpost.com/nictation/8158800.html",
+      "title": "2026-10-03 21:35中信证券：建议投资者积极迎接房地产的新周期，看好开发类公司和龙头经纪企业",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "6cc6e41e0542bef44fdbf0bc7d31d906e6d638d98b62a7b979f2ce0bdb5faafa",
+        "date": "",
+        "body_length": 375
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.085Z"
+    },
+    {
+      "id": 136,
+      "url": "https://www.tmtpost.com/8151668.html",
+      "title": "老乡鸡全国门店突破2000家；江南布衣携手高端鞋履品牌Marsèll开启大中华区战略合作；迈胜完成A+轮融资；PANE获黑蚁资本投资｜消研所周报",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "c2dd22b21469398f5825bcfe718b25d4b65f975e207fcf107568cbf731def36a",
+        "date": "",
+        "body_length": 5248
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.091Z"
+    },
+    {
+      "id": 137,
+      "url": "https://www.tmtpost.com/8145775.html",
+      "title": "【数智周报】智谱AI道歉；Anthropic被曝选定纳斯达克上市，目标10月IPO；OpenAI据悉考虑新一轮融资，估值或超1.2万亿美元",
+      "status": "index_or_roundup",
+      "reason": "拆出讯兔科技、Anew Labs（已覆盖），以及烨知心、超衍智能、九万里（待独立原文、轮次金额和AI/机器人主营核验）；Anthropic IPO及OpenAI计划不计新融资。",
+      "followups": [
+        "烨知心 Pre-A轮（近10亿元为累计，不是本轮）",
+        "超衍智能 天使及天使+系列（约4亿元合计，不能重复计数）",
+        "九万里 种子及天使（机器人主营边界待核验）"
+      ],
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "20fe66343ec8e8d5cb71253da1f703470e069d112d665bab4c50a9654df3afbd",
+        "date": "",
+        "body_length": 12219
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.096Z"
+    },
+    {
+      "id": 138,
+      "url": "https://www.tmtpost.com/7938322.html",
+      "title": "综合融资成本“低位运行”成硬指标，监管精准施策：企业减负与个人明码标价",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "1dd2297e5a7a26e0720ce27599f905058d48b57a78cefed1c95c16808bd2d250",
+        "date": "",
+        "body_length": 1971
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.099Z"
+    },
+    {
+      "id": 139,
+      "url": "https://www.tmtpost.com/7801111.html",
+      "title": "基金行业重大变革：基金经理成“合伙人”强制跟投40%薪酬，我们的投资更稳了？",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "1984de261492635f3e420e8c135353e3fde4b36cbdd977ea0bae7eda89307dd8",
+        "date": "",
+        "body_length": 2507
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.101Z"
+    },
+    {
+      "id": 140,
+      "url": "https://www.leiphone.com/category/touzi/HXFdAZgOfNTtFugm.html",
+      "title": "医药健康产业坡长雪厚，未来技术含量仍是投资核心｜ 第四届健康产业投融资峰会",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "9017eed8562bdc18970afb4b1c9ecc4640ac9b7539893a9f025d8c715f3173d7",
+        "date": "",
+        "body_length": 2795
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.103Z"
+    },
+    {
+      "id": 141,
+      "url": "https://www.leiphone.com/category/touzi/64SMHyfb3rik8Ykw.html",
+      "title": "微创植入式脑机接口企业微灵医疗，完成数千万元天使轮融资",
+      "status": "historical_before_2026",
+      "reason": "原文融资发生在2026年前；保留历史核验记录，不伪装为2026年新增。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "65872adc39744eb1c06531b39cb283d085428547e8835a314c88557b3af21ee9",
+        "date": "",
+        "body_length": 4048
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.104Z"
+    },
+    {
+      "id": 142,
+      "url": "https://www.leiphone.com/category/touzi/u8qwb0PaA3MRhnOm.html",
+      "title": "一家游戏化数字疗法公司，为什么可以拿到5500万美元的B轮融资？",
+      "status": "historical_before_2026",
+      "reason": "原文融资发生在2026年前；保留历史核验记录，不伪装为2026年新增。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "0a11dbdcf85056a34a230417a19999051fe74d1fbaa6cc6293294b050e5441b6",
+        "date": "",
+        "body_length": 3908
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.105Z"
+    },
+    {
+      "id": 143,
+      "url": "https://www.leiphone.com/category/touzi/WT84zAA4LXpcZP6m.html",
+      "title": "数字疗法公司Biofourmis完成3亿美元D轮融资，估值已达13亿美元",
+      "status": "historical_before_2026",
+      "reason": "原文融资发生在2026年前；保留历史核验记录，不伪装为2026年新增。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "ec75483c50d7e3535cd140054876669e0474572c2066ccf452f4accd7861a143",
+        "date": "",
+        "body_length": 2197
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.107Z"
+    },
+    {
+      "id": 144,
+      "url": "https://www.leiphone.com/category/touzi/8dA3Ha6VLKS4agcx.html",
+      "title": "B轮融资数亿元后，伽奈维医疗要做什么样的「肿瘤微创机器人」？",
+      "status": "historical_before_2026",
+      "reason": "原文融资发生在2026年前；保留历史核验记录，不伪装为2026年新增。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "734229b5fc5808602ad6d55a8ccecb3f6879c9d63aecb71e6a77bdf64c4d3265",
+        "date": "",
+        "body_length": 3642
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.108Z"
+    },
+    {
+      "id": 145,
+      "url": "https://www.leiphone.com/category/touzi/fiFBxPZwqbcZzcWo.html",
+      "title": "以疾病模型平台+AI赋能创新靶向药研发，希格生科再获近千万美金天使+轮融资",
+      "status": "historical_before_2026",
+      "reason": "原文融资发生在2026年前；保留历史核验记录，不伪装为2026年新增。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "b13c12781e7169d72a7bd286e76c2ddc53f6e5b01798219b0eef0c8cb1880d88",
+        "date": "",
+        "body_length": 3732
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.109Z"
+    },
+    {
+      "id": 146,
+      "url": "https://www.leiphone.com/category/touzi/1LBQB3D7QsXc53Ml.html",
+      "title": "推想医疗完成D2轮融资，D轮融资总金额近9亿元",
+      "status": "historical_before_2026",
+      "reason": "原文融资发生在2026年前；保留历史核验记录，不伪装为2026年新增。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "49324303cc8a380d3c2bd6f4b2215749d2dfc469110827b4112c38421b3f3765",
+        "date": "",
+        "body_length": 1655
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.111Z"
+    },
+    {
+      "id": 147,
+      "url": "https://www.leiphone.com/category/touzi/bDi7qQkyBhKV7scO.html",
+      "title": "35起融资，总额超60亿元，AI药物研发成新投资风口丨医疗投融资周报",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "d588d432ee85e46afec3fd2550c2e6555f6578097ce7e1f2f00b8a46d9726095",
+        "date": "",
+        "body_length": 7430
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.112Z"
+    },
+    {
+      "id": 148,
+      "url": "https://www.leiphone.com/category/touzi/FmwK8HjEuCuNFXhs.html",
+      "title": "20家企业融资，总额26亿元，三成集中于生物医药丨医疗投融资周报",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "918eb61e730ae6aef7ca0790f8b708eb79208ae38d61d1e8fdf1f992b9ab3f77",
+        "date": "",
+        "body_length": 4911
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.114Z"
+    },
+    {
+      "id": 149,
+      "url": "https://www.leiphone.com/category/touzi/msmCzeL7U3BIGEtU.html",
+      "title": "26家企业获融资，总额超110亿元，创新药、基因检测成新年投资风口丨医疗投融资周报",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "20ef69a622eec43407a80e463b0d71ca25f7bc6eecaaf95992ad6a3c4d79911d",
+        "date": "",
+        "body_length": 7291
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.116Z"
+    },
+    {
+      "id": 150,
+      "url": "https://www.jiemian.com/article/15160126.html",
+      "title": "130余家公司国庆节后率先披露三季报，部分上半年盈利个股获融资客重点加仓",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "68b03a2e0195d32067fe72e6e8473c55878593589db91bd570b78028a1fed2a7",
+        "date": "",
+        "body_length": 306
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.117Z"
+    },
+    {
+      "id": 151,
+      "url": "https://static.itjuzi.com/pdf/618ed058d36e7656eb9afb6aed15bc52.pdf",
+      "title": "2026上半年中国人工智能投融资报告",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "binary_source_requires_pdf_review",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.118Z"
+    },
+    {
+      "id": 152,
+      "url": "https://www.iyiou.com/",
+      "title": "亿欧-科技+产业+投资信息平台和智库",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.120Z"
+    },
+    {
+      "id": 153,
+      "url": "https://data.iyiou.com/company/details/dc488e7fb76b22881c6a085c432c5e3a/profile?source=iyiou.trz",
+      "title": "江苏宇田医药股份有限公司",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.126Z"
+    },
+    {
+      "id": 154,
+      "url": "https://www.iyiou.com/AI",
+      "title": "人工智能行业数据_产业知识平台",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.126Z"
+    },
+    {
+      "id": 155,
+      "url": "https://www.iyiou.com/t/tourongzizhoubao",
+      "title": "最新动态_投融资周报介绍",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.127Z"
+    },
+    {
+      "id": 156,
+      "url": "https://www.iyiou.com/emerging",
+      "title": "新兴技术及应用产业研究_新兴技术及应用行业数据_产业知识平台-亿欧网",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.128Z"
+    },
+    {
+      "id": 157,
+      "url": "https://www.hongshan.com/article/yue-reggie-zhang-successful-entrepreneurship/",
+      "title": "YUE｜张涵：一路前行 一路融资",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "d3e150a503b707645d5870dc3b08dbbdb4e384268ff5c594025f5b0f5a6f85a3",
+        "date": "2023-02-02",
+        "body_length": 2346
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.131Z"
+    },
+    {
+      "id": 158,
+      "url": "https://www.hongshan.com/article/%e4%bb%8e%e5%8d%96%e6%88%bf%e5%88%9b%e4%b8%9a%e5%88%b0%e8%8e%b71-7%e4%ba%bf%e7%be%8e%e5%85%83%e8%9e%8d%e8%b5%84%ef%bc%9a%e6%96%b0%e5%85%83%e7%b4%a0%e8%8d%af%e4%b8%9a%e6%ad%bb%e7%a3%95/",
+      "title": "从卖房创业到获1.7亿美元融资：新元素药业“死磕”痛风创新药的12年",
+      "status": "historical_before_2026",
+      "reason": "原文融资发生在2026年前；保留历史核验记录，不伪装为2026年新增。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "8fd51da4a84977722748e24740cd94160f02b20ce9f15aed319a85d7920853dc",
+        "date": "2025-01-16",
+        "body_length": 4590
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.132Z"
+    },
+    {
+      "id": 159,
+      "url": "https://tech.eu/2026/09/30/inbolt-raises-eur11m-to-bring-real-time-vision-and-intelligence-to-industrial-robots/",
+      "title": "Inbolt raises €11M to bring real-time vision and intelligence to industrial robots",
+      "status": "pending_ai_scope",
+      "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "8fcbfb64c649c9325b80ec722f89c0ab3a53cf54ee8b111a23f153ba206b6c8b",
+        "date": "2026-09-30",
+        "body_length": 490
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.154Z"
+    },
+    {
+      "id": 160,
+      "url": "https://tech.eu/2026/09/30/onomondo-raises-eur100m-to-scale-its-global-iot-infrastructure/",
+      "title": "Onomondo raises €100M+ to scale its global IoT infrastructure",
+      "status": "not_ai_evidence",
+      "reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "48df15008db39f887d1508f587f0594996fa8dd17933104d960600deb12b0eda",
+        "date": "2026-09-30",
+        "body_length": 501
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.163Z"
+    },
+    {
+      "id": 161,
+      "url": "https://tech.eu/2026/09/30/blackswan-space-raises-eur25m-to-take-autonomous-spacecraft-navigation-into-orbit/",
+      "title": "Blackswan Space raises €2.5M to take autonomous spacecraft navigation into orbit",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "f4759c012f0b22341e53be7cc722aff2bdcd0fa6f81d8f0bd44bb784f81a8b82",
+        "date": "2026-09-30",
+        "body_length": 484
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.167Z"
+    },
+    {
+      "id": 162,
+      "url": "https://tech.eu/2026/10/01/foundational-secures-ps82m-pre-seed-as-it-emerges-from-stealth/",
+      "title": "Foundational secures £8.2M pre-seed as it emerges from stealth",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "66bcb4badee7400a0a2008f1dfe4d0761bbabf652c02f5b932d49a428d932698",
+        "date": "2026-10-01",
+        "body_length": 513
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.169Z"
+    },
+    {
+      "id": 163,
+      "url": "https://tech.eu/2026/10/05/european-tech-weekly-recap-more-than-70-tech-funding-deals-worth-over-3-9b/",
+      "title": "European tech weekly recap: More than 70 tech funding deals worth over €3.9B",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "529004b430b7849d44c025797066570e9b16a7c7f1787e6394b8f4310dd07e97",
+        "date": "2026-10-05",
+        "body_length": 468
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.174Z"
+    },
+    {
+      "id": 164,
+      "url": "https://tech.eu/2026/10/02/headline-closes-400m-fund-oura-delays-ipo-and-fedorov-launches-army-of-robots/",
+      "title": "Headline closes $400M fund, Oura delays IPO, and Fedorov launches Army of Robots",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "301bee7f33991cc1e07ab8d217825ba48a02f98c0dc1546475716dda7a1ba0d7",
+        "date": "2026-10-02",
+        "body_length": 486
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.177Z"
+    },
+    {
+      "id": 165,
+      "url": "https://tech.eu/2026/10/01/voltaback-raises-eur28m-to-scale-ev-charging-reimbursement-across-europe/",
+      "title": "Voltaback raises €2.8M to scale EV charging reimbursement across Europe",
+      "status": "not_ai_evidence",
+      "reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "2d55cc42002df0a77b6d7c72c3d3a2cd9d87eca363ed81939720ef3ab0045700",
+        "date": "2026-10-01",
+        "body_length": 495
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.180Z"
+    },
+    {
+      "id": 166,
+      "url": "https://tech.eu/2026/10/01/belgiums-top-funded-tech-companies-in-h1-2026/",
+      "title": "Belgium’s top-funded tech companies in H1 2026",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "f4a56a5b62c06f3a3deabd124fb66de554d50e30a033e57065b828a0c1bf09f9",
+        "date": "2026-10-01",
+        "body_length": 497
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.182Z"
+    },
+    {
+      "id": 167,
+      "url": "https://sifted.eu/articles/veremark-pisces/",
+      "title": "Why a $100m Series B startup decided to test the LSE’s new private market",
+      "status": "not_financing",
+      "reason": "公司公告为员工及早期投资者二级股权转让，非企业新融资；£100m为企业估值，非B轮融资额。",
+      "additional_source": "https://www.veremark.com/blog/veremark-announces-ps6-million-secondary-transaction-on-london-stock-exchange",
+      "alternate_capture": "veremark-secondary",
+      "additional_content_hash": "ae2d2a45e53f4cba536d6f87739420b7189311f60418e5421665ad448db16888",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.184Z"
+    },
+    {
+      "id": 168,
+      "url": "https://sifted.eu/articles/dig-ventures-fund-europe-ai-infrastructure/",
+      "title": "Exclusive: Dig Ventures raises $120m to back Europe’s AI infrastructure startups",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.184Z"
+    },
+    {
+      "id": 169,
+      "url": "https://venturebeat.com/orchestration/openclaw-launches-free-enterprise-control-plane-for-persistent-ai-agents-backed-by-openai-red-hat-and-nvidia",
+      "title": "OpenClaw launches free enterprise control plane for persistent AI agents, backed by OpenAI, Red Hat and Nvidia | VentureBeat",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_429",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.185Z"
+    },
+    {
+      "id": 170,
+      "url": "https://venturebeat.com/orchestration/autoheal-wants-to-manage-the-work-ai-coding-agents-leave-behind-claiming-cost-reductions-of-up-to-30-per-task",
+      "title": "Autoheal wants to manage the work AI coding agents leave behind, claiming cost reductions of up to 30% per task | VentureBeat",
+      "status": "already_covered",
+      "reason": "与现有 Autoheal 2026-09-28 种子轮 $7.9M 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-4d807fc9d0b8523b",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-212b01f9c4f8d05c",
+          "quote": "Today, we are announcing our $7.9M seed round, led by Harpinder Singh at Innovation Endeavors, with participation from Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures (CTO Fund) and Param Hansa Values.",
+          "source_content_hash": "db9fc8dd24df889f563eb8b09a5c63dfa0a5b96918734e65c10e95c659e10e53",
+          "quote_hash": "59506ba0808ee0c2c8d9ac25f14f284dee11383679000e5830940658d2c79dd4"
+        },
+        {
+          "source_id": "FISRC-212b01f9c4f8d05c",
+          "quote": "Today, we are announcing our $7.9M seed round, led by Harpinder Singh at Innovation Endeavors, with participation from Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures (CTO Fund) and Param Hansa Values.",
+          "source_content_hash": "db9fc8dd24df889f563eb8b09a5c63dfa0a5b96918734e65c10e95c659e10e53",
+          "quote_hash": "59506ba0808ee0c2c8d9ac25f14f284dee11383679000e5830940658d2c79dd4"
+        }
+      ],
+      "existing_financing": {
+        "name": "Autoheal",
+        "amount": "$7.9M",
+        "round": "种子轮",
+        "date": "2026-09-28"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_429",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.186Z"
+    },
+    {
+      "id": 171,
+      "url": "https://venturebeat.com/resources/ai-infrastructure-and-compute-48-of-organizations-running-ai-in-production-name-a-google-platform-as-their-primary-ai-platform-more-than-twice-openais-share",
+      "title": "AI infrastructure and compute: 48% of organizations running AI in production name a Google platform as their primary AI platform, more than twice OpenAI's share | VentureBeat",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_429",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.186Z"
+    },
+    {
+      "id": 172,
+      "url": "https://www.geekwire.com/2026/washington-climate-tech-founders-score-funding-as-ai-boom-drains-investor-cash/",
+      "title": "Washington climate tech founders score funding as AI boom drains investor cash",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.186Z"
+    },
+    {
+      "id": 173,
+      "url": "https://www.geekwire.com/2026/seattle-voice-ai-startup-ultravox-formerly-known-as-fixie-acquired-by-inworld/",
+      "title": "Seattle voice AI startup Ultravox, formerly known as Fixie, acquired by Inworld",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.187Z"
+    },
+    {
+      "id": 174,
+      "url": "https://www.geekwire.com/2026/kanu-ai-emerges-from-stealth-with-11-7m-to-turn-employee-workflows-into-custom-software/",
+      "title": "Kanu AI emerges from stealth with $11.7M to turn employee workflows into custom software",
+      "status": "already_covered",
+      "reason": "与现有 Kanu AI 2026-09-30 种子轮 $11.7 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-21345da91c7c8f2d",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-2600408f2e0d32d7",
+          "quote": "Trilogy Equity Partners led the round, with participation from Andreessen Horowitz’s a16z speedrun, BMW i Ventures, and Accel.",
+          "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+          "quote_hash": "b8e2a52ffb09045701fa83a2302679430bd9f2fc61890479b80241c7a7572dfe"
+        },
+        {
+          "source_id": "FISRC-2600408f2e0d32d7",
+          "quote": "Trilogy Equity Partners led the round, with participation from Andreessen Horowitz’s a16z speedrun, BMW i Ventures, and Accel.",
+          "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+          "quote_hash": "b8e2a52ffb09045701fa83a2302679430bd9f2fc61890479b80241c7a7572dfe"
+        }
+      ],
+      "existing_financing": {
+        "name": "Kanu AI",
+        "amount": "$11.7 million",
+        "round": "种子轮",
+        "date": "2026-09-30"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.187Z"
+    },
+    {
+      "id": 175,
+      "url": "https://www.geekwire.com/2026/pay-i-rebrands-as-ascerta-and-raises-18m-to-help-enterprises-track-ai-business-value/",
+      "title": "Pay-i rebrands as Ascerta and raises $18M to help enterprises track AI business value",
+      "status": "already_covered",
+      "reason": "与现有 Ascerta 2026-09-30 A轮 $18 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-9641aad793c547e7",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-b95b99b7dcaf913b",
+          "quote": "The Series A round was led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and existing backers.",
+          "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+          "quote_hash": "d7045b0f964d5ac2122b23c5ff003a5f3ed7bea91d7b39f0b7df9c5c67575382"
+        },
+        {
+          "source_id": "FISRC-b95b99b7dcaf913b",
+          "quote": "The Series A round was led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and existing backers.",
+          "source_content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+          "quote_hash": "d7045b0f964d5ac2122b23c5ff003a5f3ed7bea91d7b39f0b7df9c5c67575382"
+        }
+      ],
+      "existing_financing": {
+        "name": "Ascerta",
+        "amount": "$18 million",
+        "round": "A轮",
+        "date": "2026-09-30"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.188Z"
+    },
+    {
+      "id": 176,
+      "url": "https://www.finsmes.com/",
+      "title": "FinSMEs: Homepage",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.188Z"
+    },
+    {
+      "id": 177,
+      "url": "https://www.finsmes.com/author/admin",
+      "title": "FinSMEs, Author at FinSMEs",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.189Z"
+    },
+    {
+      "id": 178,
+      "url": "https://www.finsmes.com/category/canada",
+      "title": "Canada Archives",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.195Z"
+    },
+    {
+      "id": 179,
+      "url": "https://www.finsmes.com/category/india",
+      "title": "India Archives",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.195Z"
+    },
+    {
+      "id": 180,
+      "url": "https://www.finsmes.com/category/china",
+      "title": "China Archives",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.196Z"
+    },
+    {
+      "id": 181,
+      "url": "https://www.finsmes.com/category/usa",
+      "title": "USA Archives",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.196Z"
+    },
+    {
+      "id": 182,
+      "url": "https://www.finsmes.com/membership-subscription",
+      "title": "FinSMEs Intelligence",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.197Z"
+    },
+    {
+      "id": 183,
+      "url": "https://www.finsmes.com/2026/10/unveilr-ai-raises-usd1-74m-in-pre-seed-funding.html",
+      "title": "Unveilr AI Raises USD1.74M in Pre-Seed Funding",
+      "status": "pending_event_details",
+      "reason": "Unveilr原已收录预种子轮且金额未披露；当前来源声称174万美元，与原始“16.7 crore估值”口径冲突，保持现有金额，需发行方核实。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.198Z"
+    },
+    {
+      "id": 184,
+      "url": "https://www.businesswire.com/news/home/20260930886227/en/GMI-Cloud-Raises-Over-%24660-Million-to-Accelerate-Global-AI-Infrastructure-Expansion",
+      "title": "GMI Cloud Raises Over $660 Million to Accelerate Global ...",
+      "status": "pending_event_details",
+      "reason": "GMI Cloud已收录2.23亿美元股权B轮；6.6/6.68亿美元标题还包括约4.45亿美元信贷，不能覆盖股权金额或再计同轮，信贷部分待独立核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.198Z"
+    },
+    {
+      "id": 185,
+      "url": "https://www.businesswire.com/news/home/20260930319904/en/Inbolt-Raises-%2412.5M-to-Bring-Sight-and-Intelligence-to-Industrial-Robots-From-Stellantis-and-Toyota-to-Data-Centers",
+      "title": "Inbolt Raises $12.5M to Bring Sight and Intelligence to Industrial Robots, From Stellantis and Toyota to Data Centers",
+      "status": "pending_ai_scope",
+      "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.199Z"
+    },
+    {
+      "id": 186,
+      "url": "https://www.businesswire.com/news/home/20260930972771/en/Augmeta-Raises-%243M-to-Give-Every-KPI-Its-Own-AI-Operator",
+      "title": "Augmeta Raises $3M to Give Every KPI Its Own AI Operator",
+      "status": "pending_event_details",
+      "reason": "已取得发行方Business Wire转载的300万美元种子轮；首发9月23日和后续10月1日稿件为同轮，须补首发原文归档及披露日期，不按两轮发布。",
+      "additional_source": "https://www.geekwire.com/2026/former-amazon-and-opendoor-leaders-raise-3m-to-give-every-key-business-metric-its-own-ai-agent/",
+      "alternate_capture": "augmeta",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.199Z"
+    },
+    {
+      "id": 187,
+      "url": "https://www.businesswire.com/news/home/20261001294246/en/doxx.net-Raises-%2438-Million-Led-by-Andreessen-Horowitz-to-Launch-Agentic-Defined-Networking",
+      "title": "doxx.net Raises $38 Million, Led by Andreessen Horowitz, to Launch Agentic Defined Networking",
+      "status": "already_covered",
+      "reason": "与现有 doxx.net 2026-10-01 A轮 $38 Million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-1559136b48b24cac",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-e94be4fcbb396d33",
+          "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+          "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+          "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
+        },
+        {
+          "source_id": "FISRC-e94be4fcbb396d33",
+          "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc.",
+          "source_content_hash": "2392a1d59a75d85e5b1891a927ba19dc0342a2ae74087a9d29c827411a9ae6b1",
+          "quote_hash": "7d41fdec7640a5d9d2f05c7778787b34ba0c536ea2037751880aeedbbb9c1205"
+        }
+      ],
+      "existing_financing": {
+        "name": "doxx.net",
+        "amount": "$38 Million",
+        "round": "A轮",
+        "date": "2026-10-01"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.199Z"
+    },
+    {
+      "id": 188,
+      "url": "https://www.businesswire.com/news/home/20260930881741/en/CScale-Exits-Stealth-With-%24145-Million-to-Build-the-Interconnect-for-Gigawatt-Scale-AI",
+      "title": "CScale Exits Stealth With $145 Million to Build ...",
+      "status": "already_covered",
+      "reason": "与现有 CScale 2026-09-30 C轮 $145 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-07d1ab9787e1c9dd",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-98f84ad840508b39",
+          "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
+          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+          "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+        },
+        {
+          "source_id": "FISRC-98f84ad840508b39",
+          "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
+          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+          "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+        }
+      ],
+      "existing_financing": {
+        "name": "CScale",
+        "amount": "$145 million",
+        "round": "C轮",
+        "date": "2026-09-30"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.200Z"
+    },
+    {
+      "id": 189,
+      "url": "https://www.reuters.com/legal/transactional/openai-targets-30-billion-funding-14-trillion-valuation-bloomberg-news-reports-2026-09-29/",
+      "title": "OpenAI targets $30 billion funding at $1.4 trillion valuation ...",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.244Z"
+    },
+    {
+      "id": 190,
+      "url": "https://www.reuters.com/technology/ai-startup-island-valued-64-billion-latest-funding-round-2026-09-24/",
+      "title": "Cybersecurity startup Island valued at $6.4 billion amid AI ...",
+      "status": "already_covered",
+      "reason": "与现有 Island 2026-09-24 F轮 $400 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-fbe655a1ee0c18ca",
+      "existing_evidence": [],
+      "existing_financing": {
+        "name": "Island",
+        "amount": "$400 million",
+        "round": "F轮",
+        "date": "2026-09-24"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.246Z"
+    },
+    {
+      "id": 191,
+      "url": "https://www.bloomberg.com/news/videos/2026-10-02/lockheed-backs-fortem-s-counter-drone-push-video",
+      "title": "Lockheed Backs Fortem’s Counter-Drone Push",
+      "status": "pending_ai_scope",
+      "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.247Z"
+    },
+    {
+      "id": 192,
+      "url": "https://www.bloomberg.com/news/articles/2026-10-02/google-hikes-price-of-budget-pixel-10a-phone-to-599-on-memory-costs",
+      "title": "Google Hikes Price of Budget Pixel 10a Phone to $599 on Memory Costs",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.247Z"
+    },
+    {
+      "id": 193,
+      "url": "https://www.bloomberg.com/news/newsletters/2026-10-04/david-ellison-s-plan-for-warner-bros-is-no-longer-a-secret",
+      "title": "David Ellison’s Plan for Warner Bros. Is No Longer a Secret",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.251Z"
+    },
+    {
+      "id": 194,
+      "url": "https://www.bloomberg.com/news/articles/2026-10-03/us-ai-task-force-to-report-on-technology-s-risks-wsj-reports",
+      "title": "Trump Taps Clayton for AI Task Force in Response to Safety Fears",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "fetch failed",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.252Z"
+    },
+    {
+      "id": 195,
+      "url": "https://www.accel.com/news/our-investment-in-axle-energy-turning-everyday-energy-devices-into-grid-scale-flexibility",
+      "title": "Portfolio NewsOur Investment in Axle Energy: Turning Everyday Energy Devices into Grid-Scale FlexibilityJuly 8, 2026",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "bd2b47f2e349f9984bda4f38371b37239368d401e0cd9b4a9870fe1ad3d6d9b9",
+        "date": "2026-07-08",
+        "body_length": 4423
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.259Z"
+    },
+    {
+      "id": 196,
+      "url": "https://www.indexventures.com/perspectives/on-chain-trading-goes-mainstream-fomos-75-million-series-b/",
+      "title": "On-Chain Trading Goes Mainstream: fomo’s $75 Million Series B by Julia Andre This link opens the post, \"On-Chain Trading Goes Mainstream: fomo’s $75 Million Series B\"",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "1dcff6e188a530d3965a739e089682d48f8652f08190557fc2f3cdacbd7937f1",
+        "date": "2026-06-22",
+        "body_length": 3559
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.262Z"
+    },
+    {
+      "id": 197,
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
+      "title": "启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮",
+      "status": "already_covered",
+      "reason": "与现有 佳量脑科学 2026-09-08 多轮融资 数亿元人民币 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-e036bacc0917616c",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-0fc87012f374b083",
+          "quote": "其中C轮融资由启明创投领投。",
+          "source_content_hash": "421f431cbb5e84018cc04f18b116bd58447a3aa7183a44bd69dd78d338481f66",
+          "quote_hash": "c78354511a3557825c1e9596f927139cd7ddfe0c622fa66c2c2340c0362dc2f1"
+        },
+        {
+          "source_id": "FISRC-0fc87012f374b083",
+          "quote": "C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投。",
+          "source_content_hash": "421f431cbb5e84018cc04f18b116bd58447a3aa7183a44bd69dd78d338481f66",
+          "quote_hash": "cc57f536c07b39a6ca04c83288ac32ea7348ed076980ecfdeddebef44ada2e0b"
+        }
+      ],
+      "existing_financing": {
+        "name": "佳量脑科学",
+        "amount": "数亿元人民币",
+        "round": "多轮融资",
+        "date": "2026-09-08"
+      },
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "421f431cbb5e84018cc04f18b116bd58447a3aa7183a44bd69dd78d338481f66",
+        "date": "",
+        "body_length": 3739
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.264Z"
+    },
+    {
+      "id": 198,
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E8%8A%AF%E5%85%89%E7%95%8C%E5%AE%8C%E6%88%90%E4%BA%BF%E5%85%83%E5%A4%A9%E4%BD%BF%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E7%8B%AC%E5%AE%B6%E6%8A%95%E8%B5%84",
+      "title": "启明星 | 芯光界完成亿元天使轮融资，启明创投独家投资",
+      "status": "already_covered",
+      "reason": "与现有 芯光界 2026-08-25 天使轮 亿元人民币 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-fca94be13f9e63ab",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-7b5da7a1fb11c00b",
+          "quote": "本轮由创投行业头部机构启明创投独家投资，融资总额达亿元人民币",
+          "source_content_hash": "f90746ccdb00966b057d3567e659b1f59d743f0de09669694fb47cf0765bed93",
+          "quote_hash": "1049f558bcce7e22c34732e5cfcf5d34f11862664504061802cd8efff24258f0"
+        }
+      ],
+      "existing_financing": {
+        "name": "芯光界",
+        "amount": "亿元人民币",
+        "round": "天使轮",
+        "date": "2026-08-25"
+      },
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "f90746ccdb00966b057d3567e659b1f59d743f0de09669694fb47cf0765bed93",
+        "date": "",
+        "body_length": 1500
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.265Z"
+    },
+    {
+      "id": 199,
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E5%AE%89%E6%BE%9C%E5%BE%B7%E5%81%A5%E5%AE%8C%E6%88%90%E8%BF%91%E4%BA%BF%E5%85%83a%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E7%8B%AC%E5%AE%B6%E6%8A%95%E8%B5%84",
+      "title": "启明星 | 安澜德健完成近亿元A轮融资，启明创投独家投资",
+      "status": "not_ai_evidence",
+      "reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "b2a1ae69357faaefaca9dd6a2995b76596142e9b34e9bbb759cf06e515557609",
+        "date": "",
+        "body_length": 1191
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.266Z"
+    },
+    {
+      "id": 200,
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E8%93%9D%E8%89%B2%E6%B6%8C%E7%8E%B0%E5%AE%8C%E6%88%90%E6%95%B0%E5%8D%83%E4%B8%87%E5%85%83%E5%A4%A9%E4%BD%BF%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E8%81%94%E5%90%88%E9%A2%86%E6%8A%95",
+      "title": "启明星 | 蓝色涌现完成数千万元天使+轮融资，启明创投联合领投",
+      "status": "pending_ai_scope",
+      "reason": "投资方原文将AI描述为未来长期探索，现有电助力渔轮尚缺AI产品依据；保留补证，未因消费硬件排除。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "4150047923ed2931a6f0dfd82e8f932909c56fc449a5b4793b9aa000dde91d2d",
+        "date": "",
+        "body_length": 2537
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.268Z"
+    },
+    {
+      "id": 201,
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E6%85%95%E5%B8%86%E5%8A%A8%E5%8A%9B%E5%AE%8C%E6%88%90%E8%BF%9E%E7%BB%AD%E4%B8%A4%E8%BD%AE%E6%80%BB%E8%AE%A1%E8%B6%855%E4%BA%BF%E5%85%83%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%B8%BAai%E6%97%B6%E4%BB%A3%E7%AE%97%E5%8A%9B%E6%8F%90%E4%BE%9B%E7%94%B5%E5%8A%9B%E5%AE%89%E5%85%A8%E5%BA%95%E5%BA%A7",
+      "title": "启明星 | 慕帆动力完成连续两轮总计超5亿元融资，为AI时代算力提供电力安全底座",
+      "status": "not_ai_evidence",
+      "reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "c96aeb4f90250ec098cc6411f299ef182cf53e983a8de2fb32aec8166281381c",
+        "date": "",
+        "body_length": 4296
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.269Z"
+    },
+    {
+      "id": 202,
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%B8%9C%E6%98%87%E8%81%9A%E5%8F%98%E5%AE%8C%E6%88%90%E6%96%B0%E4%B8%80%E8%BD%AE1%E4%BA%BF%E7%BE%8E%E5%85%83%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E8%81%94%E5%90%88%E9%A2%86%E6%8A%95",
+      "title": "启明星 | 东昇聚变完成新一轮1亿美元融资，启明创投联合领投",
+      "status": "not_ai_evidence",
+      "reason": "聚变能源企业仅有AI辅助研发背景，未取得其AI产品或主营证据，本批不纳入。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "4c38b3b1b7992f3e26ee0f0c87cde62f8420897e3ede47fe0e6ab9ff85f9c139",
+        "date": "",
+        "body_length": 1794
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.270Z"
+    },
+    {
+      "id": 203,
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E8%A7%82%E7%82%B9-%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%99%88%E4%BE%83%EF%BC%9A%E8%BF%9E%E7%BB%AD%E9%A2%86%E6%8A%95%E5%A4%A9%E8%BE%B0%E7%94%9F%E7%89%A9%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%A7%8B%E7%BB%88%E5%9D%9A%E5%AE%9A%E5%B8%83%E5%B1%80%E5%B0%96%E7%AB%AF%E5%8C%BB%E7%96%97%E5%88%9B%E6%96%B0",
+      "title": "启明观点 | 启明创投陈侃：连续领投天辰生物两轮融资，始终坚定布局尖端医疗创新",
+      "status": "not_ai_evidence",
+      "reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "8aac1c55a224b8e053fe9887c9f67d4b242743d39ba2c4488a19fb0d940f1a64",
+        "date": "",
+        "body_length": 2453
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.272Z"
+    },
+    {
+      "id": 204,
+      "url": "https://yourstory.com/2026/09/willjini-raises-first-round-35m-valuation-without-pitching-single-vc",
+      "title": "WillJini raises first round at $3.5M valuation, without pitching a single VC",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.272Z"
+    },
+    {
+      "id": 205,
+      "url": "https://yourstory.com/2026/09/ev-two-wheeler-maker-simple-energy-bags-rs-1750-cr-funding",
+      "title": "EV two-wheeler maker Simple Energy bags Rs 1,750 Cr funding",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.273Z"
+    },
+    {
+      "id": 206,
+      "url": "https://yourstory.com/2026/09/home-interiors-startup-gravity-raises-15-million-led-by-3one4-capital-and-info-edge-ventures",
+      "title": "Home interiors startup Gravity raises $15M led by 3one4 Capital and Info Edge Ventures",
+      "status": "not_ai_evidence",
+      "reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "c52dd8e6e7eacda605a129abed8f9fe74c4a08f8d6336fc3d689e356ec04cb88",
+        "date": "2026-09-30",
+        "body_length": 2464
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.282Z"
+    },
+    {
+      "id": 207,
+      "url": "https://yourstory.com/2026/09/shreshth-mishra-simple-energy-rs-1750-cr-pivot-scale-across-india",
+      "title": "Simple Energy bets Rs 1,750 Cr fundraise on clearing delivery backlog, scaling across India",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.283Z"
+    },
+    {
+      "id": 208,
+      "url": "https://yourstory.com/2026/10/seeds-fincap-rs-100-cr-series-b-round-michael-susan-dell-foundation",
+      "title": "Seeds Fincap secures over Rs 100 Cr in Series B led by Michael & Susan Dell Foundation",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.284Z"
+    },
+    {
+      "id": 209,
+      "url": "https://yourstory.com/2026/10/tvs-automobile-solutions-raises-rs-425-cr-uae-investor-expand-mytvs",
+      "title": "TVS Automobile Solutions raises Rs 425 Cr from UAE investor to expand myTVS brand",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.286Z"
+    },
+    {
+      "id": 210,
+      "url": "https://entrackr.com/",
+      "title": "Entrackr: Latest Startup l Technology News",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.299Z"
+    },
+    {
+      "id": 211,
+      "url": "https://entrackr.com/report/quarterly-funding-report/indian-startups-raise-29-bn-in-q3-2026-as-ev-ai-drive-funding-12612860",
+      "title": "Indian startups raise $2.9 Bn in Q3 2026 as EV, AI drive funding",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.300Z"
+    },
+    {
+      "id": 212,
+      "url": "https://entrackr.com/author/shashank-pathak",
+      "title": "Shashank Pathak | Entrackr",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.301Z"
+    },
+    {
+      "id": 213,
+      "url": "https://entrackr.com/snippets/unveilr-ai-raises-pre-seed-round-from-ajvc-at-rs-167-cr-valuation-12611816",
+      "title": "Unveilr AI raises pre-seed round from AJVC at Rs 16.7 Cr valuation",
+      "status": "already_covered",
+      "reason": "与现有 Unveilr AI 2026-10-01 预种子轮 未披露 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-e36c5a6b394b7f16",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-78e8facb4ec5a3c9",
+          "quote": "Mumbai based Unveilr AI has raised an undisclosed amount in a pre-seed round from Aviral Bhatnagar’s AJVC at a valuation of Rs 16.7 crore.",
+          "source_content_hash": "1497f486dd64b0b90f8f55d5c49e894bdeb5a56b847ea3d5f65b6b2e3594cbbf",
+          "quote_hash": "30056a3258f6ec09310607e352420f7f7b5b4e6350c95d53382ed19968479caf"
+        },
+        {
+          "source_id": "FISRC-fd345751b04929f7",
+          "quote": "has raised US$2.27M in a pre-seed round led by AJVC",
+          "source_content_hash": "f5882ca657090512",
+          "quote_hash": "08cf53fe33bd6bdb91a43b075e39eb0101bb306698968f7633c6ce11be6c7728"
+        }
+      ],
+      "existing_financing": {
+        "name": "Unveilr AI",
+        "amount": "未披露",
+        "round": "预种子轮",
+        "date": "2026-10-01"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.302Z"
+    },
+    {
+      "id": 214,
+      "url": "https://entrackr.com/snippets",
+      "title": "Snippets | Entrackr",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.303Z"
+    },
+    {
+      "id": 215,
+      "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-sep-28-oct-3-12618694",
+      "title": "Funding and acquisitions in Indian startups this week [Sep 28 - Oct 3]",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "original_http_403",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.303Z"
+    },
+    {
+      "id": 216,
+      "url": "https://www.techinasia.com/visual-story/list-fundraising-startups-southeast-asia-india",
+      "title": "A list of fundraising startups from Asia and beyond (Updated)",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.305Z"
+    },
+    {
+      "id": 217,
+      "url": "https://www.techinasia.com/news/nvidia-joins-ai-cloud-startup-gmi-clouds-668m",
+      "title": "Nvidia joins AI cloud startup GMI Cloud’s $668m round",
+      "status": "pending_event_details",
+      "reason": "GMI Cloud已收录2.23亿美元股权B轮；6.6/6.68亿美元标题还包括约4.45亿美元信贷，不能覆盖股权金额或再计同轮，信贷部分待独立核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.306Z"
+    },
+    {
+      "id": 218,
+      "url": "https://www.techinasia.com/news/indian-lending-tech-firm-seeds-fincap-raises-10-4m-series-b",
+      "title": "Indian lending tech firm Seeds Fincap raises $10.4m series B",
+      "status": "pending_ai_scope",
+      "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.306Z"
+    },
+    {
+      "id": 219,
+      "url": "https://www.techinasia.com/news/softbank-completes-final-10b-openai-investment",
+      "title": "SoftBank completes final $10b OpenAI investment",
+      "status": "pending_event_details",
+      "reason": "SoftBank对OpenAI最后100亿美元分期交割需与原承诺轮次核对；不能按新轮重复计数。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.307Z"
+    },
+    {
+      "id": 220,
+      "url": "https://www.techinasia.com/visual-story/capital-sea-southeast-asias-funding-landscape",
+      "title": "Capital SEA: Southeast Asia’s funding landscape",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.307Z"
+    },
+    {
+      "id": 221,
+      "url": "https://www.techinasia.com/news/a16z-accel-back-us-cybersecurity-firm-armadin-in-255-5m-round",
+      "title": "A16z, Accel back US cybersecurity firm Armadin in $255.5m round",
+      "status": "already_covered",
+      "reason": "与现有 Armadin 2026-10-01 B轮 $255.5 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-e7151a217bf0631d",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-dc8fb918b056c843",
+          "quote": "today announced it has raised $255.5 million in Series B funding co-led by Andreessen Horowitz (a16z) and Accel",
+          "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
+          "quote_hash": "5a0a2111252fab5f5d876738996841fc302cb4364773d762e40db424c18164d0"
+        },
+        {
+          "source_id": "FISRC-dc8fb918b056c843",
+          "quote": "today announced it has raised $255.5 million in Series B funding co-led by Andreessen Horowitz (a16z) and Accel",
+          "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
+          "quote_hash": "5a0a2111252fab5f5d876738996841fc302cb4364773d762e40db424c18164d0"
+        }
+      ],
+      "existing_financing": {
+        "name": "Armadin",
+        "amount": "$255.5 million",
+        "round": "B轮",
+        "date": "2026-10-01"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.308Z"
+    },
+    {
+      "id": 222,
+      "url": "https://www.techinasia.com/news/anthropic-targets-midnovember-ipo-delay",
+      "title": "Anthropic targets mid-November IPO after delay",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.308Z"
+    },
+    {
+      "id": 223,
+      "url": "https://www.techinasia.com/news/supabase-raises-150m-acquires-database-startup-turso",
+      "title": "Supabase raises $150m, acquires database startup Turso",
+      "status": "already_covered",
+      "reason": "与现有 Supabase 2026-10-02 轮次未披露 $150 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-847970f93a915359",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-06b7dbbc3fab6c09",
+          "quote": "today announced $150 million in new funding led by GIC",
+          "source_content_hash": "15b4fc697a8917ac6a6fd81eb2fab30c97274ac06ffa37275cc8080eadd5fd4f",
+          "quote_hash": "727ff81063c40ae5dff3ec8e506e960661eccec18196d83cfcc90d7934b1c1d9"
+        },
+        {
+          "source_id": "FISRC-06b7dbbc3fab6c09",
+          "quote": "with Alphabet's independent growth fund CapitalG, IronArc, and SquarePeg also participating",
+          "source_content_hash": "15b4fc697a8917ac6a6fd81eb2fab30c97274ac06ffa37275cc8080eadd5fd4f",
+          "quote_hash": "5cf6863ddbb79899792560130fa701a15baeb6ca479c35e3d6f6f768ddbe6c40"
+        }
+      ],
+      "existing_financing": {
+        "name": "Supabase",
+        "amount": "$150 million",
+        "round": "轮次未披露",
+        "date": "2026-10-02"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.309Z"
+    },
+    {
+      "id": 224,
+      "url": "https://www.techinasia.com/tales-as-old-as-time",
+      "title": "Tales as old as time",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.309Z"
+    },
+    {
+      "id": 225,
+      "url": "https://www.techinasia.com/50-rising-startups-malaysia",
+      "title": "50 rising startups in Malaysia",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.309Z"
+    },
+    {
+      "id": 226,
+      "url": "https://www.techinasia.com/news/sea-tech-funding-jumps-176-q1-q3-report",
+      "title": "SEA tech funding jumps 176% in Q1 to Q3: report",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.310Z"
+    },
+    {
+      "id": 227,
+      "url": "https://www.techinasia.com/visual-story/mapping-japans-prominent-cleantech-startups",
+      "title": "Mapping Japan’s prominent cleantech startups",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.312Z"
+    },
+    {
+      "id": 228,
+      "url": "https://www.techinasia.com/news/jungle-ventures-leads-sg-ai-startup-onebyzeros-20m",
+      "title": "Jungle Ventures leads SG AI startup OneByZero’s $20m round",
+      "status": "same_batch_duplicate",
+      "reason": "与239号OneByZero 2000万美元A轮为同一事件，使用公司官方公告，仅补录一次。",
+      "canonical_lead_id": 239,
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.314Z"
+    },
+    {
+      "id": 229,
+      "url": "https://www.techinasia.com/news/singapore-fintech-firm-ipid-raises-16m-series",
+      "title": "Singapore fintech firm IPID raises $16m series A",
+      "status": "pending_ai_scope",
+      "reason": "已核对IPID 1600万美元A轮官方公告及Payment Agent产品页；当前页面描述对话支付、验证与自动化，仍需补直接AI模型/技术证据，避免把payment intelligence等同AI。",
+      "additional_source": "https://ipid.tech/news/ipid-raises-16m-series-a-foundation-capital-citi-hsbc",
+      "product_source": "https://ipid.tech/payment-agent-payee-verification",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "alternate_source_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.317Z"
+    },
+    {
+      "id": 230,
+      "url": "https://www.techinasia.com/visual-story/japan-fintech-map",
+      "title": "Mapping Japan’s notable fintech startups",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.318Z"
+    },
+    {
+      "id": 231,
+      "url": "https://www.techinasia.com/visual-story/india-education-landscape-map",
+      "title": "Mapping India’s key education startups",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.319Z"
+    },
+    {
+      "id": 232,
+      "url": "https://www.techinasia.com/50-rising-startups-philippines",
+      "title": "25 rising startups in the Philippines",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.319Z"
+    },
+    {
+      "id": 233,
+      "url": "https://www.techinasia.com/visual-story/mapping-sea-cleantech",
+      "title": "Mapping SEA’s leading cleantech players",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.319Z"
+    },
+    {
+      "id": 234,
+      "url": "https://www.techinasia.com/50-rising-startups-thailand",
+      "title": "25 rising startups in Thailand",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "discovery_triage_only",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.320Z"
+    },
+    {
+      "id": 235,
+      "url": "https://www.dealstreetasia.com/",
+      "title": "DealStreetAsia - Asia-focused financial news and intelligence ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "eff06eb222ee02fd7769e0d755533071c57245ab4a2b9869052624848da662ca",
+        "date": "",
+        "body_length": 12277
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.326Z"
+    },
+    {
+      "id": 236,
+      "url": "https://www.dealstreetasia.com/stories/greater-china-deal-review-q2-2026-summary-491065",
+      "title": "Startup funding in Greater China in H1 surpasses all of 2025",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "5b0464a0c9d9ebb39b0ed156bd7f86602a0ceeb859aa4f56b65744190de57e2c",
+        "date": "",
+        "body_length": 1366
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.329Z"
+    },
+    {
+      "id": 237,
+      "url": "https://www.dealstreetasia.com/stories/southeast-asia-deal-review-q1-2026-summary-481038",
+      "title": "SE Asia startup funding stays thin in Q1 2026 even as ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "3e309475f3da4c381866ca37ba03173f86b3ad7e700a1b5dbcb329eb8b2eff6f",
+        "date": "",
+        "body_length": 1336
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.331Z"
+    },
+    {
+      "id": 238,
+      "url": "https://www.dealstreetasia.com/stories/asia-ai-fundraising-surpasses-20b-485695",
+      "title": "Asia's AI fundraising surpasses $20b. Who is writing the ...",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "9d5d198a108ae599940e5072b93c1143492e9af639e5b82a2a1974b7c2609334",
+        "date": "",
+        "body_length": 1299
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.343Z"
+    },
+    {
+      "id": 239,
+      "url": "https://www.dealstreetasia.com/stories/onebyzero-jungle-ventures-series-a-497083",
+      "title": "SG's OneByZero secures $20m in Jungle Ventures-led Series A",
+      "status": "accepted_original",
+      "reason": "独立融资原文及公司AI产品已核验并入库；以最终发布门禁及线上回执确认完成。",
+      "company": "OneByZero",
+      "raw_id": "RAW-409282209ef200f7",
+      "accepted_source": "https://www.onebyzero.ai/press-releases/onebyzero-raises-20-million-series-a-jungle-ventures",
+      "accepted_date": "2026-10-05",
+      "content_hash": "3cb081398eefc63e579fdfa12d190866f8216350ba5abf29a3eb603cfc6732be",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "a290b7a35a52cc42fb83b19e0bc93afb50c3712bb1b9c4bd496edea7f5a8d99c",
+        "date": "",
+        "body_length": 2623
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.346Z"
+    },
+    {
+      "id": 240,
+      "url": "https://www.dealstreetasia.com/stories/editors-take-the-week-that-was-sept-23-oct-3-497027",
+      "title": "Editor's Take: The Week That Was—Sept 23-Oct 3",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "8f860f5d33d4980fcb5c7dae348803af2bd807cbb77ab6eca8985088cd1e6364",
+        "date": "",
+        "body_length": 6985
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.349Z"
+    },
+    {
+      "id": 241,
+      "url": "https://www.dealstreetasia.com/stories/global-lps-china-tech-wave-497041",
+      "title": "China’s AI engine hits top gear, but global LPs risk missing its historic tech wave",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "61b5695dc876546b3240fa0c11ee4e31613109ad14f251a4f574c5e5c3ba1035",
+        "date": "",
+        "body_length": 10724
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.355Z"
+    },
+    {
+      "id": 242,
+      "url": "https://www.dealstreetasia.com/stories/carro-intellect-secure-funding-se-asia-deals-496818",
+      "title": "Carro, Intellect secure funding, and other SE Asia deals",
+      "status": "index_or_roundup",
+      "reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "50a830aed5b634023412f6fc77b06825c9f9dc74787c7c6708243b91febea12f",
+        "date": "",
+        "body_length": 2168
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.360Z"
+    },
+    {
+      "id": 243,
+      "url": "https://www.ithome.com/1/009/583.htm",
+      "title": "索尼 PS5 破解后成功运行初代 Xbox 游戏，微软 Xbox 360 与 PC 游戏支持也在开发中",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "1ba49aa24471d0113d33a30f447e9cf0bcc2125d0511ac7c0338a0daa96c00f0",
+        "date": "2026-10-04",
+        "body_length": 1399
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.361Z"
+    },
+    {
+      "id": 244,
+      "url": "https://www.ithome.com/1/009/535.htm",
+      "title": "前索尼高管吉田修平谈《GTA 6》超高热度：未来再有此关注度，可能得《GTA 7》或等中国厂商出手",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "4008f8ffb41df4a7aed059801b668fe3ab2fbf49805400cfb49e34d1bf68b6b1",
+        "date": "2026-10-03",
+        "body_length": 612
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.364Z"
+    },
+    {
+      "id": 245,
+      "url": "https://www.ithome.com/1/009/727.htm",
+      "title": "竞速游戏《星球大战：银河赛车手》获 IGN 8 分评价，10 月 6 日发售",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "71150d114667bd080d201998c30996393026ca697e6c8651a5715f20e4df7aee",
+        "date": "2026-10-04",
+        "body_length": 1371
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.371Z"
+    },
+    {
+      "id": 246,
+      "url": "https://www.ithome.com/1/009/679.htm",
+      "title": "模拟经营游戏《狂热运输 3》发售，Steam 国区 198 元起",
+      "status": "not_financing",
+      "reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+      "original_capture": {
+        "status": "captured",
+        "content_hash": "7733e360ca56ee57d6f95897e5c7f8f205be388a48ed4c18cba8dd686615b6aa",
+        "date": "2026-10-04",
+        "body_length": 584
+      },
+      "review_basis": "original_text_and_review",
+      "assist_used": true,
+      "reviewed_at": "2026-10-06T04:15:56.374Z"
+    },
+    {
+      "id": 247,
+      "url": "https://openrouter.ai/announcements/series-b",
+      "title": "OpenRouter Raises $113M Series B",
+      "status": "already_covered",
+      "reason": "与现有 OpenRouter 2026-05-26 B轮 $113 million 的轮次信息对应，复用现有卡；未把转载日期、货币换算或重复URL当新增。",
+      "funding_insight_id": "FI-09809d62deea4164",
+      "existing_evidence": [
+        {
+          "source_id": "FISRC-d1b42068c59f51d1",
+          "quote": "led by CapitalG, Alphabet's independent growth fund",
+          "source_content_hash": "c1afd6dfb4036688",
+          "quote_hash": "b838cf888bbc6fd04b9b0508ae0afb3c171723d0df60f19461065b6858d0ea23"
+        },
+        {
+          "source_id": "FISRC-d1b42068c59f51d1",
+          "quote": "The round also drew checks from NVentures (NVIDIA's venture arm)",
+          "source_content_hash": "c1afd6dfb4036688",
+          "quote_hash": "9f53ecc6b715a0747835f390c12bc7e78094151e938fde7f19e4681afa1b5248"
+        }
+      ],
+      "existing_financing": {
+        "name": "OpenRouter",
+        "amount": "$113 million",
+        "round": "B轮",
+        "date": "2026-05-26"
+      },
+      "original_capture": {
+        "status": "failed",
+        "error": "unreadable_original",
+        "body_length": 0
+      },
+      "review_basis": "existing_accepted_card_and_discovery_metadata",
+      "assist_used": false,
+      "reviewed_at": "2026-10-06T04:15:56.374Z"
+    }
+  ]
+}

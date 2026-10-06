@@ -1,0 +1,72 @@
+{
+  "event": "EV-c4af2ee7bdd947db",
+  "company": "Kando AI",
+  "previous": {
+    "id": "EV-c4af2ee7bdd947db",
+    "scope": "review",
+    "exclusion_reason": "",
+    "sector_id": "",
+    "subsector_id": "",
+    "product_form_id": "",
+    "customer_ids": [],
+    "evidence_indices": [
+      0,
+      2,
+      3
+    ],
+    "rationale": "Kando AI自进化决策工作台面向投资人、科研等专业用户，主营赛道边界证据不足需复核。",
+    "input_hash": "724853b77dcc953fb5c894435433c90031ccd99a4984c94a35d322c82c0b9273",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-7b1743cd84f76d48",
+        "quote": "2026年6月，两人正式创立了Kando AI，希望让AI从真实决策及其结果中持续学习，构建下一代自进化决策系统。"
+      },
+      {
+        "source_id": "FISRC-7b1743cd84f76d48",
+        "quote": "Kando AI的产品形态，是一个面向高价值决策场景的工作台。但在团队看来，工作台只是产品入口，它真正承载的是一套能够从真实决策中积累经验、验证判断并持续进化的决策系统。"
+      },
+      {
+        "source_id": "FISRC-7b1743cd84f76d48",
+        "quote": "在商业化上，Kando AI选择先从高价值、高频决策用户切入。当前的种子用户主要集中在专业用户群体，包括投资人、科研工作者等。"
+      }
+    ],
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "generated_at": "2026-10-06T04:07:00.934Z"
+  },
+  "decision": {
+    "id": "EV-c4af2ee7bdd947db",
+    "scope": "included",
+    "exclusion_reason": "",
+    "sector_id": "enterprise",
+    "subsector_id": "operations",
+    "product_form_id": "",
+    "customer_ids": [],
+    "evidence_indices": [
+      0,
+      2,
+      3
+    ],
+    "rationale": "原文交付物为跨金融、科研场景的专业决策工作台，将真实决策、反馈及判断更新组成工作流，归企业通用AI的业务流程与智能体；不是开发平台或机器人业务，具体客户组织类型暂不标注。",
+    "input_hash": "724853b77dcc953fb5c894435433c90031ccd99a4984c94a35d322c82c0b9273",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-7b1743cd84f76d48",
+        "quote": "2026年6月，两人正式创立了Kando AI，希望让AI从真实决策及其结果中持续学习，构建下一代自进化决策系统。"
+      },
+      {
+        "source_id": "FISRC-7b1743cd84f76d48",
+        "quote": "Kando AI的产品形态，是一个面向高价值决策场景的工作台。但在团队看来，工作台只是产品入口，它真正承载的是一套能够从真实决策中积累经验、验证判断并持续进化的决策系统。"
+      },
+      {
+        "source_id": "FISRC-7b1743cd84f76d48",
+        "quote": "在商业化上，Kando AI选择先从高价值、高频决策用户切入。当前的种子用户主要集中在专业用户群体，包括投资人、科研工作者等。"
+      }
+    ],
+    "provider": "responsible_review",
+    "reviewer": "Codex",
+    "generated_at": "2026-10-06T04:25:44.969Z"
+  },
+  "basis": "融资专用规则：业务人员使用的工作流与企业智能体归企业通用AI；不以命名客户行业决定行业AI，不以创始人过去创业领域排除当前交付物。",
+  "verified_at": "2026-10-06T04:25:44.971Z"
+}

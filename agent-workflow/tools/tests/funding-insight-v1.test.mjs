@@ -65,6 +65,27 @@ test("late financing rounds retain their letters without reading prose as a roun
   assert.notEqual(normalizeFundingRound("series funding").code, "series_f");
 });
 
+test("angel investor names do not disclose a financing round", () => {
+  const event = { claim_refs: ["C"], object: "完成新一轮融资" };
+  const claim = { claim_id: "C", claim_type: "funding", verification_status: "accepted", source_quote: "美酷瑞完成新一轮融资，本轮由上海天使会联合投资。" };
+  assert.equal(canonicalFundingEventRound(event, [claim]).code, "undisclosed");
+  assert.equal(normalizeFundingRound("天使").code, "angel");
+  assert.equal(normalizeFundingRound("公司完成数千万元天使轮融资，由上海天使会投资").code, "angel");
+  assert.equal(normalizeFundingRound("完成天使++轮融资").code, "angel_plus_plus");
+  assert.equal(normalizeFundingRound("完成数千万元天使融资").code, "angel");
+  assert.notEqual(normalizeFundingRound("公司获天使投资人投资").code, "angel");
+});
+
+test("angel investor is a participant role independent of the financing round", () => {
+  const participant = { name: "Jane", role: "天使投资人" };
+  const prior = { name: "John", role: "此前天使投资人" };
+  for (const round of ["A轮", "多轮融资", "轮次未披露"]) {
+    const partition = partitionRoundInvestors([participant, prior], round);
+    assert.deepEqual(partition.current.map(x => x.name), ["Jane"]);
+    assert.deepEqual(partition.other.map(x => x.name), ["John"]);
+  }
+});
+
 test("targeted funding research does not restore unrelated event cards from stale checkpoints", () => {
   const selected = new Set(["EV-current-a", "EV-current-b"]);
   assert.equal(checkpointCardMatchesSelection("EV-current-a", selected), true);

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-06",
     "currentDate": "2026-10-06",
-    "eventCount": 3952,
+    "eventCount": 3959,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,11 +61,12 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 5,
     "china_market_company_count": 4,
@@ -74,7 +75,7 @@
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 1,
-      "lead": 1,
+      "lead": 2,
       "participant": 2
     },
     "round_codes": [
@@ -104,6 +105,11 @@
         "entity_id": "EN-9b21c9bf3305c0d6",
         "canonical_entity_id": "EN-9b21c9bf3305c0d6",
         "name": "生数科技"
+      },
+      {
+        "entity_id": "EN-c39021d4e261ee12",
+        "canonical_entity_id": "",
+        "name": "Kando AI"
       }
     ],
     "activities": [
@@ -184,6 +190,46 @@
             "source_content_hash": "ef1aa49772b166b7",
             "quote": "由星连资本与水木创投联合领投",
             "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d4d024e15a435ecd",
+        "funding_insight_id": "FI-8e54f3b9125648d1",
+        "event_ids": [
+          "EV-c4af2ee7bdd947db"
+        ],
+        "company_entity_id": "EN-c39021d4e261ee12",
+        "company_canonical_entity_id": "",
+        "company_name": "Kando AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-07-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7b1743cd84f76d48",
+            "source_url": "https://eu.36kr.com/zh/p/3915057199535233",
+            "source_title": "Kando AI完成数千万元种子轮融资 打造决策领域的Cursor｜涌现新项目",
+            "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+            "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。",
+            "quote_hash": "c16f2f9add69766ac08a675555d0acd0c8e7680bfd2d7f5303e5b7db2d45bcae"
           }
         ]
       },
@@ -360,6 +406,14 @@
         "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
       },
       {
+        "source_id": "FISRC-7b1743cd84f76d48",
+        "source_url": "https://eu.36kr.com/zh/p/3915057199535233",
+        "source_title": "Kando AI完成数千万元种子轮融资 打造决策领域的Cursor｜涌现新项目",
+        "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+        "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。",
+        "quote_hash": "c16f2f9add69766ac08a675555d0acd0c8e7680bfd2d7f5303e5b7db2d45bcae"
+      },
+      {
         "source_id": "FISRC-0a40102abd985684",
         "source_url": "https://news.pedaily.cn/202605/564126.shtml",
         "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
@@ -435,6 +489,10 @@
         {
           "description": "融资来源记录：奇点逃逸 · 种子轮 · 2026-08-03 · 本轮联合领投 · 千万级。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8f70de35939e4c3c"
+        },
+        {
+          "description": "融资来源记录：Kando AI · 种子轮 · 2026-07-28 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7b1743cd84f76d48"
         }
       ],
       "contacts": [],
@@ -486,6 +544,14 @@
           "source_content_hash": "ef1aa49772b166b7",
           "quote": "由星连资本与水木创投联合领投",
           "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
+        },
+        {
+          "source_id": "FISRC-7b1743cd84f76d48",
+          "source_url": "https://eu.36kr.com/zh/p/3915057199535233",
+          "source_title": "Kando AI完成数千万元种子轮融资 打造决策领域的Cursor｜涌现新项目",
+          "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
+          "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。",
+          "quote_hash": "c16f2f9add69766ac08a675555d0acd0c8e7680bfd2d7f5303e5b7db2d45bcae"
         }
       ],
       "last_verified_at": "2026-10-03",

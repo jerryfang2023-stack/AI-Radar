@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-06",
     "currentDate": "2026-10-06",
-    "eventCount": 3952,
+    "eventCount": 3959,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,26 +69,26 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-25",
+    "first_disclosed_at": "2026-07-22",
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "multi_round",
       "series_a"
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-d27608cca9b65f91",
+        "canonical_entity_id": "",
+        "name": "Glow"
+      },
+      {
         "entity_id": "EN-5d3875c319452ecc",
         "canonical_entity_id": "",
         "name": "Restate"
-      },
-      {
-        "entity_id": "EN-d1fa538179ba6371",
-        "canonical_entity_id": "",
-        "name": "Sail Research"
       }
     ],
     "activities": [
@@ -133,42 +133,42 @@
         ]
       },
       {
-        "activity_id": "IA-951f3d89308022d1",
-        "funding_insight_id": "FI-b4ed51811a14f812",
+        "activity_id": "IA-102aca25a22d512b",
+        "funding_insight_id": "FI-25422dbadb01919a",
         "event_ids": [
-          "EV-921c843ad32c993c"
+          "EV-2da0ebb3ba7c5677"
         ],
-        "company_entity_id": "EN-d1fa538179ba6371",
+        "company_entity_id": "EN-d27608cca9b65f91",
         "company_canonical_entity_id": "",
-        "company_name": "Sail Research",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "Seed and Series A",
-        "amount_original": "$80 million",
+        "company_name": "Glow",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$180 million",
         "amount_normalized": {
           "currency": "USD",
-          "value": 80000000,
+          "value": 180000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "8000 万美元"
+          "display_zh": "1.8 亿美元"
         },
-        "announced_at": "2026-06-25",
+        "announced_at": "2026-07-22",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
+        "role": "本轮领投",
+        "role_code": "lead",
         "evidence": [
           {
-            "source_id": "FISRC-11ff205cb2054931",
-            "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
-            "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
-            "source_content_hash": "314c02d8610d1604",
-            "quote": "Other participating investors included Redpoint Ventures",
-            "quote_hash": "8ec1c22dd9b07ac33c842f8d3fe5044c8e05058b99d4fa15511e9ce60c5a20c2"
+            "source_id": "FISRC-e192dd3fe1a72590",
+            "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+            "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+            "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+            "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+            "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
           }
         ]
       },
@@ -215,12 +215,12 @@
         "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
       },
       {
-        "source_id": "FISRC-11ff205cb2054931",
-        "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
-        "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
-        "source_content_hash": "314c02d8610d1604",
-        "quote": "Other participating investors included Redpoint Ventures",
-        "quote_hash": "8ec1c22dd9b07ac33c842f8d3fe5044c8e05058b99d4fa15511e9ce60c5a20c2"
+        "source_id": "FISRC-e192dd3fe1a72590",
+        "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+        "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+        "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+        "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+        "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
       },
       {
         "source_id": "FISRC-897ee0f062e50b23",
@@ -262,8 +262,8 @@
           "source_id": "FISRC-32de5b12bdde4fb9"
         },
         {
-          "description": "融资来源记录：Sail Research · 多轮融资 · 2026-06-25 · 本轮参投 · $80 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-11ff205cb2054931"
+          "description": "融资来源记录：Glow · A轮 · 2026-07-22 · 本轮领投 · $180 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e192dd3fe1a72590"
         },
         {
           "description": "融资来源记录：Restate · 历史轮次未披露 · 种子轮领投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -321,12 +321,12 @@
           "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
         },
         {
-          "source_id": "FISRC-11ff205cb2054931",
-          "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
-          "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
-          "source_content_hash": "314c02d8610d1604",
-          "quote": "Other participating investors included Redpoint Ventures",
-          "quote_hash": "8ec1c22dd9b07ac33c842f8d3fe5044c8e05058b99d4fa15511e9ce60c5a20c2"
+          "source_id": "FISRC-e192dd3fe1a72590",
+          "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+          "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+          "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+          "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+          "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
         },
         {
           "source_id": "FISRC-897ee0f062e50b23",
