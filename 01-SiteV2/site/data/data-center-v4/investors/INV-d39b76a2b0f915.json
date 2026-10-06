@@ -140,32 +140,93 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "本档案限于佛州州务卿登记信息及一项被投企业发行方披露的参投记录；不推断其基金管理人身份、投资策略或更广投资组合。登记状态以2026-10-06核对页面为准。",
+      "summary": "佛罗里达州登记页将 FASTER THAN GLASS, LLC 列为于2026年4月23日提交登记、状态为 ACTIVE 的有限责任公司。Relativity Networks 于2026年8月19日发布的融资公告将 Faster Than Glass LLC 列为其2,200万美元 SAFE 融资的新投资者；公告没有披露该主体的具体出资额，也未证明其为专业基金管理人或有其他已披露投资组合。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "登记名称",
+          "value": "FASTER THAN GLASS, LLC",
+          "source_id": "sunbiz_name"
+        },
+        {
+          "field": "entity_type",
+          "label": "登记形式",
+          "value": "Florida Limited Liability Company（佛罗里达州有限责任公司）",
+          "source_id": "sunbiz_type"
+        },
+        {
+          "field": "registration_status_2026_10_06",
+          "label": "截至核验日的登记状态",
+          "value": "Florida Division of Corporations 页面显示公司于2026-04-23登记，状态 ACTIVE。",
+          "source_id": "sunbiz_status"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-04-23",
+          "description": "佛罗里达州登记记录载明提交日期为2026-04-23。",
+          "source_id": "sunbiz_status"
+        }
+      ],
       "track_record": [
         {
-          "description": "公开融资来源将其列为 Relativity Networks 后续发行 本轮参投。",
+          "description": "Relativity Networks 2026-08-19 发行方公告称其完成2,200万美元 SAFE 融资，并将 Faster Than Glass LLC 列为新投资者之一；公告没有披露其出资额或领投身份。",
+          "source_id": "relativity_round"
+        },
+        {
+          "description": "融资来源记录：Relativity Networks · 后续发行 · 2026-08-19 · 本轮参投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e32f49cf414731d3"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
         {
-          "source_id": "FISRC-e32f49cf414731d3",
+          "source_id": "sunbiz_name",
+          "source_url": "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?aggregateId=flal-l26000220460-9ae6d34e-0a49-450f-8724-e053c95fb083&directionType=Initial&inquirytype=EntityName&listNameOrder=FASTERSERVICES+P080000191900&searchNameOrder=FASTERTHANGLASS+L260002204600&searchTerm=FASTER+SERVICES+CORP",
+          "source_title": "Detail by Entity Name",
+          "source_content_hash": "dffaa1cca28472049c64d7b4afb08eec6eb3dd0a1e1d5040b59951881a886d44",
+          "quote": "FASTER THAN GLASS, LLC",
+          "quote_hash": "cefe6a95a703b0e5c570169218a9fc2f7bde9cfe0db44eb5fffed8885b191d68"
+        },
+        {
+          "source_id": "sunbiz_type",
+          "source_url": "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?aggregateId=flal-l26000220460-9ae6d34e-0a49-450f-8724-e053c95fb083&directionType=Initial&inquirytype=EntityName&listNameOrder=FASTERSERVICES+P080000191900&searchNameOrder=FASTERTHANGLASS+L260002204600&searchTerm=FASTER+SERVICES+CORP",
+          "source_title": "Detail by Entity Name",
+          "source_content_hash": "dffaa1cca28472049c64d7b4afb08eec6eb3dd0a1e1d5040b59951881a886d44",
+          "quote": "Florida Limited Liability Company",
+          "quote_hash": "cf69a3dbdbcc144d0e24d97e980d695eb450ad424ce1aa330df175a41fb79bd7"
+        },
+        {
+          "source_id": "sunbiz_status",
+          "source_url": "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?aggregateId=flal-l26000220460-9ae6d34e-0a49-450f-8724-e053c95fb083&directionType=Initial&inquirytype=EntityName&listNameOrder=FASTERSERVICES+P080000191900&searchNameOrder=FASTERTHANGLASS+L260002204600&searchTerm=FASTER+SERVICES+CORP",
+          "source_title": "Detail by Entity Name",
+          "source_content_hash": "dffaa1cca28472049c64d7b4afb08eec6eb3dd0a1e1d5040b59951881a886d44",
+          "quote": "Document Number L26000220460 FEI/EIN Number NONE Date Filed 04/23/2026 State FL Status ACTIVE",
+          "quote_hash": "6949df743dbcf89f0a7268f9e2323c29788d4f37e3e5fba4f7581c8be0dd617d"
+        },
+        {
+          "source_id": "relativity_round",
           "source_url": "https://www.prnewswire.com/news-releases/relativity-networks-raises-22m-and-lands-40m-hyperscaler-contract-to-power-the-ai-geography-era-302854769.html",
           "source_title": "Relativity Networks Raises $22M and Lands $40M Hyperscaler Contract to Power the AI Geography Era",
           "source_content_hash": "7b42a9ed074f0ac1a25a3a1f676ca8b7f6d3029b8a4a39f7ad1377b9d958b911",
+          "quote": "The company raised a $22 million SAFE investment (a simple agreement for future equity), more than double its target, in a round drawn by new investors including Rhapsody Venture Partners, Bell Ventures Inc., and Faster Than Glass LLC.",
+          "quote_hash": "b9b72b1c1c9fe4e7d356a65c95b2ed5986810df5181c5fa719e2ec22f71bd6f1"
+        },
+        {
+          "source_id": "FISRC-e32f49cf414731d3",
+          "source_url": "https://www.prnewswire.com/news-releases/relativity-networks-raises-22m-and-lands-40m-hyperscaler-contract-to-power-the-ai-geography-era-302854769.html",
+          "source_title": "Relativity Networks 融资 2200 万美元，并获 4000 万美元超大规模合同，助力 AI 地理时代",
+          "source_content_hash": "07959d39d13f2a05",
           "quote": "in a round drawn by new investors including Rhapsody Venture Partners, Bell Ventures Inc., and Faster Than Glass LLC",
           "quote_hash": "bdfe1429f66dc6ad35673f77ca8328b584d20f41dbd406adbf0ca36199f7c75f"
         }
       ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

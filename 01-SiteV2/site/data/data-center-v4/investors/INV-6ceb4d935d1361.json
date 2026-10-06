@@ -133,12 +133,36 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "YourNest 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "YourNest Venture Capital is an India-focused early-stage DeepTech and technology-enabled venture capital firm. Its official materials identify YourNest Capital Advisors Pvt Ltd as the website operator, describe a focus on enterprise-oriented IP-led ventures, and list multiple SEBI-registered AIFs.",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "身份与投资方向依据官网自述及官网列示的 SEBI 基金登记核验；未补写未公开的基金条款或投资回报。",
+      "facts": [
+        {
+          "label": "官网标示的管理机构",
+          "value": "YourNest Capital Advisors Pvt Ltd",
+          "field": "legal_entity",
+          "source_id": "yn-about-20261006"
+        },
+        {
+          "label": "投资方向",
+          "value": "早期 DeepTech 与科技赋能企业，覆盖 AI、机器人、工业 4.0、量子计算、SpaceTech，并关注面向企业的 IP 型项目。",
+          "field": "investment_focus",
+          "source_id": "yn-about-20261006"
+        },
+        {
+          "label": "官网列示的 SEBI 注册 AIF",
+          "value": [
+            "YourNest Angel Fund",
+            "YourNest India VC Fund II",
+            "YourNest Innovative Products VC Fund III",
+            "YourNest Continuum Fund I"
+          ],
+          "field": "registered_funds",
+          "source_id": "yn-sebi-20261006"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -148,6 +172,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "quote_hash": "d157cef5a07f491dc630e32316a6dce8574e0522f372de3f80499b84799adacc",
+          "source_title": "About | YourNest Venture Capital",
+          "source_content_hash": "7a331b8398e2f8775e035ac187dc8e63d7ec93659e71aab91f3015d9161e354f",
+          "source_url": "https://yournest.in/about",
+          "source_id": "yn-about-20261006",
+          "quote": "Over the years, we have specialised in DeepTech and tech-enabled startups across sectors such as AI, robotics, Industry 4.0, quantum computing, SpaceTech, etc. And we remain open to investing in – and nurturing – enterprise-oriented, IP-led ventures."
+        },
+        {
+          "quote_hash": "d3f2734dba455d088cfe72b94291e790fad62511e8d5a07fcaf212ebc8ea1cba",
+          "source_title": "SEBI Registration Details | YourNest Venture Capital",
+          "source_content_hash": "fd909e625204583a4242e3a76e7f78497e4a09f1fb05c6e3a5c56fd258e86c42",
+          "source_url": "https://yournest.in/sebi-registration-details",
+          "source_id": "yn-sebi-20261006",
+          "quote": "YourNest manages multiple AIF funds. Details are as follows:"
+        },
         {
           "source_id": "FISRC-a6bcefafa0e61f49",
           "source_url": "https://yourstory.com/2026/10/qpiai-secures-rs-50-cr-debt-financing-from-innoven-capital",

@@ -140,11 +140,46 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Glory Ventures III 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "SEC Form D 将发行人列为 Glory Ventures Investments Fund III L.P.，法律形态为开曼豁免有限合伙，并列 Glory Ventures III LLC 为发起人。本档案仅记录这一有监管申报支撑的系列 III 基金结构与发行记录。",
+      "coverage_note": "队列名称“Glory Ventures III”为简称；本档案明确记录 SEC 文件中的基金发行人及发起人，不据此推断完整管理公司背景，也不将这一基金关系自动套用于所有被投方融资标签或其他投资活动。",
+      "facts": [
+        {
+          "field": "fund_vehicle",
+          "label": "SEC申报的基金发行人",
+          "value": "Glory Ventures Investments Fund III L.P.；SEC Form D 将其列为开曼豁免有限合伙。",
+          "source_id": "glory_sec_issuer"
+        },
+        {
+          "field": "fund_promoter",
+          "label": "基金发起人",
+          "value": "SEC Form D 将 Glory Ventures III LLC 列为相关人及 Promoter。",
+          "source_id": "glory_sec_promoter"
+        },
+        {
+          "field": "security_type",
+          "label": "申报发行类型",
+          "value": "Pooled Investment Fund Interests（集合投资基金权益）。",
+          "source_id": "glory_sec_securities"
+        },
+        {
+          "field": "formation_year",
+          "label": "申报的设立年份",
+          "value": "SEC Form D 显示该基金在 2023 年设立。",
+          "source_id": "glory_sec_year"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-07-09",
+          "description": "基金发行人签署 SEC Form D，申报其系列 III 基金权益发行。",
+          "source_id": "glory_sec_filed"
+        }
+      ],
       "track_record": [
+        {
+          "description": "SEC Form D 披露 Glory Ventures Investments Fund III L.P. 的基金权益发行，并将 Glory Ventures III LLC 列为发起人；这是基金发行记录，不代表对任何单一被投企业的具体出资。",
+          "source_id": "glory_sec_filed"
+        },
         {
           "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-09a0a8d8826c2cfe"
@@ -152,6 +187,54 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "glory_sec_issuer",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2027182/000202718224000001/xslFormDX01/primary_doc.xml",
+          "source_title": "U.S. SEC Form D — Glory Ventures Investments Fund III L.P. (2024-07-09)",
+          "source_content_hash": "f50344d1d3e8be5afedc08b52f9f55d43a7b5d91f37e2f53156b758ea04c9a6b",
+          "quote": "Name of Issuer Glory Ventures Investments Fund III L.P.",
+          "quote_hash": "326e9d593b487e9afbeae8468621399efdf85d902ba91b7401f3cd6c8dafc869"
+        },
+        {
+          "source_id": "glory_sec_entity",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2027182/000202718224000001/xslFormDX01/primary_doc.xml",
+          "source_title": "U.S. SEC Form D — Glory Ventures Investments Fund III L.P. (2024-07-09)",
+          "source_content_hash": "f50344d1d3e8be5afedc08b52f9f55d43a7b5d91f37e2f53156b758ea04c9a6b",
+          "quote": "Cayman Islands exempted limited partnership",
+          "quote_hash": "e323038c9c319bdb50c359fe552a1de4fc99c0e0a1a4503e69fb24eeeaa58ab2"
+        },
+        {
+          "source_id": "glory_sec_promoter",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2027182/000202718224000001/xslFormDX01/primary_doc.xml",
+          "source_title": "U.S. SEC Form D — Glory Ventures Investments Fund III L.P. (2024-07-09)",
+          "source_content_hash": "f50344d1d3e8be5afedc08b52f9f55d43a7b5d91f37e2f53156b758ea04c9a6b",
+          "quote": "Glory Ventures III LLC",
+          "quote_hash": "4f0b0cfd5c098cedf4f839f39cd3eb66890850a1659107db16a6630359003e90"
+        },
+        {
+          "source_id": "glory_sec_securities",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2027182/000202718224000001/xslFormDX01/primary_doc.xml",
+          "source_title": "U.S. SEC Form D — Glory Ventures Investments Fund III L.P. (2024-07-09)",
+          "source_content_hash": "f50344d1d3e8be5afedc08b52f9f55d43a7b5d91f37e2f53156b758ea04c9a6b",
+          "quote": "Pooled Investment Fund Interests",
+          "quote_hash": "07bdea329e5abcdf9e3d53cc39c98043a8c7fe8f59570b5f3fcb5e1bba24fe7d"
+        },
+        {
+          "source_id": "glory_sec_year",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2027182/000202718224000001/xslFormDX01/primary_doc.xml",
+          "source_title": "U.S. SEC Form D — Glory Ventures Investments Fund III L.P. (2024-07-09)",
+          "source_content_hash": "f50344d1d3e8be5afedc08b52f9f55d43a7b5d91f37e2f53156b758ea04c9a6b",
+          "quote": "Within Last Five Years (Specify Year) 2023",
+          "quote_hash": "e93fdb97fd6ed7c73d549ba15effad53c9c6422cab3d664aabbd26c7b047af2b"
+        },
+        {
+          "source_id": "glory_sec_filed",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2027182/000202718224000001/xslFormDX01/primary_doc.xml",
+          "source_title": "U.S. SEC Form D — Glory Ventures Investments Fund III L.P. (2024-07-09)",
+          "source_content_hash": "f50344d1d3e8be5afedc08b52f9f55d43a7b5d91f37e2f53156b758ea04c9a6b",
+          "quote": "Glory Ventures Investments Fund III L.P. /s/ Guang Yang Guang Yang Manager of the General Partner of the Issuer 2024-07-09",
+          "quote_hash": "1b71d09e0ef33020ae4b6f43498714354837249ed4090a2ebc3579de87622267"
+        },
         {
           "source_id": "FISRC-09a0a8d8826c2cfe",
           "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
@@ -161,7 +244,7 @@
           "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

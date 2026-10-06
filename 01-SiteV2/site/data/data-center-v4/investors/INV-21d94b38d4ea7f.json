@@ -282,14 +282,35 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Neo 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "按 Neo 官网公开品牌记录，不推断其具体法律实体；官网资料只支持创业团队投资/支持定位及一项公开配置自述，Engram 官网与其律师事务所公告可相互印证其参与该轮融资。档案不代表完整团队、基金规模或投资组合。",
+      "summary": "Neo 官网介绍其创业者支持服务；其投资组合页自述会投资具备强技术领导力的团队，并称自 2017 年以来近半资本投向由女性或代表性不足少数群体 CEO 领导的公司。Engram 官网将 Neo 列为其 9800 万美元融资投资方，Silicon Legal 也称曾代表 Neo 加入该轮。本档案仅按公开品牌记录，未核实法律实体名称。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "source_id": "neo-portfolio-approach-20261006",
+          "label": "官网自述的投资定位",
+          "value": "支持具备强技术领导力的创业团队。"
+        },
+        {
+          "field": "portfolio_allocation_since_2017",
+          "source_id": "neo-portfolio-allocation-20261006",
+          "label": "官网披露的组合配置",
+          "value": "Neo 官网称，自 2017 年以来近半资本投向由女性或代表性不足少数群体 CEO 领导的公司；为机构自述的历史比例。"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "source_id": "engram-neo-investor-20261006",
+          "description": "Engram 官网称其融资总额为 9800 万美元，投资者包括 Neo；该金额是被投公司本轮融资总额，未披露 Neo 的单独出资额。"
+        },
+        {
+          "source_id": "silicon-legal-neo-engram-20261006",
+          "description": "Silicon Legal 表示曾代表 Neo 加入 Engram 9800 万美元融资，为对该投资关系的独立交叉核验。"
+        },
         {
           "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-134a8e8124653c90"
@@ -303,8 +324,56 @@
           "source_id": "FISRC-39d911c5038cb1c0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "label": "Neo 官网",
+          "url": "https://neo.com/",
+          "kind": "website",
+          "source_id": "neo-home-20261006",
+          "value": "https://neo.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_url": "https://neo.com/",
+          "source_content_hash": "97417c249885c55746e1244b32b1321da1456894570337f09df1c0fcef20feb9",
+          "quote_hash": "cdeb5ad46b98b5714695a0372f45119671bfcc351bc5d48631d7303396b217cd",
+          "source_title": "Neo",
+          "source_id": "neo-home-20261006",
+          "quote": "Neo supports the next generation of tech leaders"
+        },
+        {
+          "source_url": "https://neo.com/portfolio",
+          "source_content_hash": "d58aeba7e17139b1e9cbca12147a494dc1f5ce1b5c4cec3860529e09c6391471",
+          "quote_hash": "7545fb6ef24a6b3e2213e2c318f666768a1e89003c5e7aa5ac463f78497b6f24",
+          "source_title": "Neo Portfolio",
+          "source_id": "neo-portfolio-approach-20261006",
+          "quote": "We back ambitious teams with strong technical leadership."
+        },
+        {
+          "source_url": "https://neo.com/portfolio",
+          "source_content_hash": "d58aeba7e17139b1e9cbca12147a494dc1f5ce1b5c4cec3860529e09c6391471",
+          "quote_hash": "9bdb8897a69b25177c25d54295cf2af0c9241d70527ec1a379752c32099536f8",
+          "source_title": "Neo Portfolio",
+          "source_id": "neo-portfolio-allocation-20261006",
+          "quote": "Since 2017, almost half our capital has backed female or under-represented minority CEOs."
+        },
+        {
+          "source_url": "https://engram.com/",
+          "source_content_hash": "f9e9defcee3f81802d85a0d6a68d8158de55714c972b65ada7cdfcb8e42f29b0",
+          "quote_hash": "e90a2cb1a56de7650d1dd528b2555016a0beccbbf005d16b914b120f891b5ceb",
+          "source_title": "Engram - AI That Learns From You",
+          "source_id": "engram-neo-investor-20261006",
+          "quote": "raised $98M from General Catalyst, Kleiner Perkins, Sequoia, Factory, Modern, Amplify, Neo"
+        },
+        {
+          "source_url": "https://www.siliconlegal.com/sls-client-neo-joins-engrams-98mm-round/",
+          "source_content_hash": "1ef5cbe44645d629a0cdb427786f751a84e338319b2d24320baf1cb442f4a6ac",
+          "quote_hash": "06888da25b9ad82c9dd965ba163898ea37b36f5efdf6c3a4ad61d74cef6304ea",
+          "source_title": "Silicon Legal Strategy",
+          "source_id": "silicon-legal-neo-engram-20261006",
+          "quote": "Silicon Legal represented Neo as they joined Engram"
+        },
         {
           "source_id": "FISRC-134a8e8124653c90",
           "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
@@ -330,7 +399,7 @@
           "quote_hash": "d6d2e6175424260b5170a8e5367eac93875a636a037b0e4d21c7a38705fd06e4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

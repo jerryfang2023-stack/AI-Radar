@@ -140,11 +140,22 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Synstellation Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Synstellation Capital仅能依据千寻智能官方融资公告确认其作为投资方标签参与该轮融资。现有一手材料不足以补充其管理人或法律主体背景，本档案仅记录已披露活动。",
+      "coverage_note": "依据千寻智能官方公告确认被投方披露的机构名称及该轮活动；公告未披露该投资方的管理人、法定名称或完整机构资料。本档案不据此推断法律载体、投资策略、其他项目或单家出资额。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "已披露参投",
+          "value": "千寻智能官方公告将 Synstellation Capital 列为参与本轮融资的产业资本之一。",
+          "source_id": "spirit_ai_rounds_2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "千寻智能官方公告称 Synstellation Capital 作为产业资本协同参与其本轮融资；公告没有披露单家出资额。",
+          "source_id": "spirit_ai_rounds_2026"
+        },
         {
           "description": "融资来源记录：千寻智能 · 其他融资 · 2026-02-24 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ee3064edf7c871f4"
@@ -152,6 +163,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "spirit_ai_rounds_2026",
+          "source_url": "https://www.spirit-ai.com/news/26",
+          "source_title": "千寻智能完成近20亿融资，引领具身基模进化与商业化落地",
+          "source_content_hash": "dae24952672c39dee6c13187cb024ae65b81f5bfd5b341d15771053bb8528e61",
+          "quote": "Synstellation Capital、TCL创投、明荟致远等产业资本协同加注",
+          "quote_hash": "081330be4e6b8d59210857297c9bb8edd6bd84466f2c3d945e026adeb6612d42"
+        },
         {
           "source_id": "FISRC-ee3064edf7c871f4",
           "source_url": "https://www.qbitai.com/2026/02/381766.html",
@@ -161,7 +180,7 @@
           "quote_hash": "aef719c255af9df7e1c1ef3f9938119055452cda9225472631673f1eaaf4da04"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

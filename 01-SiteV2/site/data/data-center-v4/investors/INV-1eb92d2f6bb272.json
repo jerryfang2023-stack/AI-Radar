@@ -193,12 +193,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中保投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案记录官网可核实的主体身份、基金管理职责与业务定位，不扩写未由本组来源支持的具体项目投资关系。",
+      "summary": "中保投资（中保投资有限责任公司）是中国保险投资基金的 GP 及基金管理人。公司官网自述其为中国证券投资基金业协会登记的私募股权、创业投资基金管理人，并称公司聚焦另类投资，采用“资产管理+投资”的业务定位。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网确认的全称",
+          "value": "中保投资有限责任公司",
+          "source_id": "ciinv_identity"
+        },
+        {
+          "field": "manager_registration",
+          "label": "基金管理人登记",
+          "value": "公司官网称其为中国证券投资基金业协会登记的私募股权、创业投资基金管理人。",
+          "source_id": "ciinv_identity"
+        },
+        {
+          "field": "fund_role",
+          "label": "中国保险投资基金管理职责",
+          "value": "官网招聘公告称中保投资有限责任公司担任中国保险投资基金 GP 及基金管理人。",
+          "source_id": "ciinv_management"
+        },
+        {
+          "field": "investment_focus",
+          "label": "业务定位",
+          "value": "官网称公司坚持市场化、专业化运作，聚焦另类投资领域。",
+          "source_id": "ciinv_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -210,8 +235,40 @@
           "source_id": "FISRC-e5d0583f94886034"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "中保投资官网",
+          "value": "中保投资有限责任公司官方网站",
+          "url": "https://www.ci-inv.cn/",
+          "source_id": "ciinv_identity"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ciinv_identity",
+          "source_url": "https://www.ci-inv.cn/html/2022/gongsi_0623/203.html",
+          "source_title": "中保投资公司与百年人寿召开调研座谈会 - 公司新闻 - 中保投资有限责任公司",
+          "source_content_hash": "3752bceafbc3403805e7c09dcef6656aeaeb21f8a77847626171a13cd07bb0fb",
+          "quote": "中保投资全称为“中保投资有限责任公司”，为中国证券投资基金业协会登记的私募股权、创业投资基金管理人。",
+          "quote_hash": "2b21dcb665425db0d75e2460069c5dee96102a0cf3513852f71f26467cca21f2"
+        },
+        {
+          "source_id": "ciinv_management",
+          "source_url": "https://www.ci-inv.cn/html/2025/lszpxx_1009/341.html",
+          "source_title": "中保投资有限责任公司/中国保险投资基金2026年度校园招聘公告 - 历史招聘信息 - 中保投资有限责任公司",
+          "source_content_hash": "cdd13815876572ca0215563011ea40b1c500fef8b6c37bf0c7f35cfc51f3eb4c",
+          "quote": "中保投资有限责任公司作为GP及基金管理人，是上海市国资委监管的金融服务类单位",
+          "quote_hash": "851563a011ba84c04c11831c6bf77cef497011dd39bf525ebe8809573be97f5c"
+        },
+        {
+          "source_id": "ciinv_focus",
+          "source_url": "https://www.ci-inv.cn/html/2025/lszpxx_1009/341.html",
+          "source_title": "中保投资有限责任公司/中国保险投资基金2026年度校园招聘公告 - 历史招聘信息 - 中保投资有限责任公司",
+          "source_content_hash": "cdd13815876572ca0215563011ea40b1c500fef8b6c37bf0c7f35cfc51f3eb4c",
+          "quote": "公司坚持市场化专业化运作，聚焦另类投资领域",
+          "quote_hash": "45d1ef92aa83613a1d6940bcee9bd0b0895dcb0f94b520f477f93eae8bf6271b"
+        },
         {
           "source_id": "FISRC-9cb02e3c79eee3a9",
           "source_url": "https://www.chinaventure.com.cn/news/113-20260914-393253.html",
@@ -229,7 +286,7 @@
           "quote_hash": "d1f4f980aceff974e80c0b6b6bc161a81c83e6e96a8de7bbe57e466be82f3880"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06"
     }
   }
 }

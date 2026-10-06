@@ -137,14 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "First Data 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "summary": "SambaNova 官方融资公告将 First Data 列为new investor。该材料确认本次公开披露的投资方名称与活动；本档案不延伸为完整机构背景或法律主体映射。",
+      "coverage_note": "仅按SambaNova官方公告记录其使用的投资方标签；公告未披露该机构的单家出资额或完整法律/管理结构，不据名称推断同名机构、管理人、投资策略或其他项目。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "SambaNova Series E 参与情况",
+          "value": "SambaNova 在战略 Series E 融资公告中将 First Data 列为新投资方。",
+          "source_id": "sambanova_series_e"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "SambaNova 官方 Series E 融资公告将其列为新投资方；公告未披露First Data的单家出资金额。",
+          "source_id": "sambanova_series_e"
+        },
         {
           "description": "融资来源记录：SambaNova · E轮 · 2026-02-24 · 本轮参投 · more than $350M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d47a3aba63bc33dc"
@@ -152,6 +163,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "sambanova_series_e",
+          "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m?hs_amp=true",
+          "source_title": "SambaNova Unveils Fastest Chip for Agentic AI, Collaborates with Intel, and Raises $350M+",
+          "source_content_hash": "a9ffc1d28d21e2ee8eacd5e0867c1438d345b5634a8d674a37ef8a75e8958b9d",
+          "quote": "$350 million in strategic Series E financing to expand manufacturing and cloud capacity; new investors include Vista Equity Partners, Cambium Capital, Intel Capital, First Data, Battery Ventures, and accounts advised by T. Rowe Price Associates, Inc.",
+          "quote_hash": "a458050612c3c17b1b431c3c561b24ee596fb07db5a437f85f804b58c097fda5"
+        },
         {
           "source_id": "FISRC-d47a3aba63bc33dc",
           "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
@@ -161,7 +180,7 @@
           "quote_hash": "f90e829fe93e832b560ff3f7bba134c64c69b4c77b33d2e3e364525da3629553"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-06"
     }
   }
 }
