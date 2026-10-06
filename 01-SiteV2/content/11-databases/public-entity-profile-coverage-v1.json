@@ -56930,13 +56930,25 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "官网确认基金与信托关系及印度监管类别；未使用直接抓取失败的融资报道扩写组合。",
-      "summary": "InnoVen Capital官网将InnoVen Capital India Fund II列为InnoVen Capital India Trust项下的Category II另类投资基金。",
+      "summary": "InnoVen Capital官网确认InnoVen Capital India Fund II属于InnoVen Capital India Trust，并披露其SEBI Category II AIF登记编号、投资管理人和注册地址。档案限于官网可核验的基金信息。",
       "facts": [
         {
           "field": "fund_structure",
           "label": "基金结构",
-          "value": "InnoVen Capital India Trust项下；SEBI Category II另类投资基金",
+          "value": "InnoVen Capital India Trust项下的基金计划。",
           "source_id": "fund_structure"
+        },
+        {
+          "field": "fund_registration",
+          "label": "监管登记",
+          "value": "SEBI Category II Alternative Investment Fund；登记编号 IN/AIF2/22-23/1233。",
+          "source_id": "fund_registration"
+        },
+        {
+          "field": "investment_manager",
+          "label": "投资管理人",
+          "value": "Innoven Triple Blue Capital Advisors LLP。",
+          "source_id": "investment_manager"
         }
       ],
       "milestones": [],
@@ -56948,11 +56960,10 @@
       ],
       "contacts": [
         {
-          "kind": "website",
-          "label": "InnoVen Capital官网",
-          "value": "InnoVen Capital",
-          "url": "https://www.innovencapital.com/",
-          "source_id": "fund_structure"
+          "kind": "address",
+          "label": "注册办事处",
+          "value": "A/805A, The Capital, G-Block, Bandra Kurla Complex, Behind ICICI Bank, Plot C-70, Bandra (East), Mumbai, Maharashtra - 400051",
+          "source_id": "fund_address"
         }
       ],
       "sources": [
@@ -56969,8 +56980,24 @@
           "source_url": "https://www.innovencapital.com/index.php/Contactus_in?lang=in",
           "source_title": "Contact us - InnoVen Capital",
           "source_content_hash": "b7df9372da7efddb7881d5d2a82b80ebc9d0cef57fc4043abea432e25a7bfeb1",
-          "quote": "registered with SEBI as a Category II Alternative Investment Fund",
-          "quote_hash": "de5ea8223cbed53c6d6d101ff287593e41f36721b22bcb9f13a96a127b663cd4"
+          "quote": "Innoven Capital India Fund II (\"Fund\"), (a scheme of Innoven Capital India Trust) (\"Trust\") is registered with SEBI as a Category II Alternative Investment Fund with the Registration Number IN/AIF2/22-23/1233.",
+          "quote_hash": "22ac30a5b1e7ae88b6bdde972ff298714bc659d818d09fb51e6f063200ada5f0"
+        },
+        {
+          "source_id": "investment_manager",
+          "source_url": "https://www.innovencapital.com/index.php/Contactus_in?lang=in",
+          "source_title": "Contact us - InnoVen Capital",
+          "source_content_hash": "b7df9372da7efddb7881d5d2a82b80ebc9d0cef57fc4043abea432e25a7bfeb1",
+          "quote": "Innoven Triple Blue Capital Advisors LLP is the Investment Manager to the fund",
+          "quote_hash": "ffbfaf893a5f2fc549fe518d1988cd46c2780c2413af68fb81280d605afe93c6"
+        },
+        {
+          "source_id": "fund_address",
+          "source_url": "https://www.innovencapital.com/index.php/Contactus_in?lang=in",
+          "source_title": "Contact us - InnoVen Capital",
+          "source_content_hash": "b7df9372da7efddb7881d5d2a82b80ebc9d0cef57fc4043abea432e25a7bfeb1",
+          "quote": "The registered office of the Fund is A/805A, The Capital, G-Block, Bandra Kurla Complex, Behind ICICI Bank, Plot C-70, Bandra (East), Mumbai, Maharashtra - 400051.",
+          "quote_hash": "bedc8a65e17a2ede2ab341d479cef01bb0c09d0a93bcb279d2b66ea58d1bf8e9"
         },
         {
           "source_id": "FISRC-a6bcefafa0e61f49",
@@ -56986,19 +57013,95 @@
     "INV-5850f257e99444": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jungle Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Jungle Ventures官网将其定位为面向印度和东南亚科技创业公司的早期至成长期投资机构；官网还列出团队和投资组合信息。",
+      "facts": [
+        {
+          "field": "geography",
+          "label": "投资地区",
+          "value": "印度和东南亚。",
+          "source_id": "jungle_geography"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子期至成长期。",
+          "source_id": "jungle_stage"
+        },
+        {
+          "field": "sector_focus",
+          "label": "关注领域",
+          "value": "B2C和B2B技术企业。",
+          "source_id": "jungle_focus"
+        },
+        {
+          "field": "leadership",
+          "label": "团队公开职务",
+          "value": "官网列Amit Anand为创始合伙人兼董事总经理。",
+          "source_id": "jungle_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Jungle Ventures投资组合页面列出Moglix，并介绍其为南亚工业用品采购平台。",
+          "source_id": "jungle_moglix"
+        },
         {
           "description": "融资来源记录：OneByZero · A轮 · 2026-10-05 · 本轮领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b40f19917f7127cc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Jungle Ventures",
+          "url": "https://www.jungle.vc/",
+          "source_id": "jungle_geography"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jungle_geography",
+          "source_url": "https://www.jungle.vc/",
+          "source_title": "Jungle Ventures - Early and growth-stage VC in India &amp; Southeast Asia",
+          "source_content_hash": "411a98f3adba8a73a8db08c96a2e758d6de74dbba6bcd3efe3858492a0c0e5a6",
+          "quote": "Idea to IPO partners for the most exceptional founders in India and Southeast Asia.",
+          "quote_hash": "18bf3d654965c739f0a218a4e06f7094db9e21e3e65d23596b273df819b3a1be"
+        },
+        {
+          "source_id": "jungle_focus",
+          "source_url": "https://www.jungle.vc/",
+          "source_title": "Jungle Ventures - Early and growth-stage VC in India &amp; Southeast Asia",
+          "source_content_hash": "411a98f3adba8a73a8db08c96a2e758d6de74dbba6bcd3efe3858492a0c0e5a6",
+          "quote": "We have a proven track record and expertise in building successful, technology-led businesses across B2C and B2B sectors.",
+          "quote_hash": "03f949945062837da1bc4546686d468cc112ca1c82adb398c4ee0ba8e0b6e420"
+        },
+        {
+          "source_id": "jungle_stage",
+          "source_url": "https://www.jungle.vc/portfolio",
+          "source_title": "Portfolio | Jungle Ventures",
+          "source_content_hash": "d119c9bbfb31ac3dda868a4f26929d8b1643bbe5a09ccec0242eb547ef958ac0",
+          "quote": "We invest across seed to growth stages in Southeast Asia and India.",
+          "quote_hash": "c7e4d590a26fc85bde05d198b25836940ffebb4a3bee323d2cd53862cafc2d15"
+        },
+        {
+          "source_id": "jungle_team",
+          "source_url": "https://www.jungle.vc/team",
+          "source_title": "Team | Jungle Ventures",
+          "source_content_hash": "4641f33a3947f005b94509b183c9c7e13b3b9daaddc67d6cbd60d636c8b17f3e",
+          "quote": "Amit Anand Founding Partner & Managing Director Investments",
+          "quote_hash": "24658d8e07a5273add45f3c1ab6745494163fac55fff57c46cdd6b54dd345e07"
+        },
+        {
+          "source_id": "jungle_moglix",
+          "source_url": "https://www.jungle.vc/portfolio",
+          "source_title": "Portfolio | Jungle Ventures",
+          "source_content_hash": "d119c9bbfb31ac3dda868a4f26929d8b1643bbe5a09ccec0242eb547ef958ac0",
+          "quote": "Moglix is South Asia’s largest MRO (manufacturing, repair and operating supplies) procurement provider.",
+          "quote_hash": "2d52c83f46d8d14d802cefa9c5f9948e4be7ddddaad197a30746133f37168159"
+        },
         {
           "source_id": "FISRC-b40f19917f7127cc",
           "source_url": "https://www.onebyzero.ai/press-releases/onebyzero-raises-20-million-series-a-jungle-ventures",
@@ -57008,7 +57111,8 @@
           "quote_hash": "f3f61778e18fe78bd9dba313409e35cc0ca3340def48803f333fc5197fdf01fe"
         }
       ],
-      "last_verified_at": "2026-10-06"
+      "last_verified_at": "2026-10-06",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-3c2ebd98dfaba0": {
       "profile_type": "organization",
@@ -211257,8 +211361,27 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "官网仅提供品牌定位与创办人名字；融资记录依据Pandektes官方公告，未扩展为完整机构背景。",
-      "summary": "Interface Capital官网称其建设并投资科技公司、由Christian与Niklas创立。Pandektes官方公告将Interface列为其种子轮领投方之一。",
-      "facts": [],
+      "summary": "Interface Capital官网称其投资并建设科技公司，法定信息页列示Interface Capital Management GmbH及两位董事；Pandektes官方融资公告将Interface Capital列为其种子轮领投方之一。档案只收录已核验的身份和一项活动。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述",
+          "value": "建设并投资科技公司。",
+          "source_id": "interface_approach"
+        },
+        {
+          "field": "legal_entity",
+          "label": "官网法定信息页列示主体",
+          "value": "Interface Capital Management GmbH，地址为德国柏林Gärtnerstraße 3。",
+          "source_id": "interface_imprint"
+        },
+        {
+          "field": "directors",
+          "label": "官网法定信息页列示董事",
+          "value": "Christian Reber-Prevot与Niklas Jansen。",
+          "source_id": "interface_imprint"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -211269,7 +211392,7 @@
       "contacts": [
         {
           "kind": "website",
-          "label": "Interface Capital官网",
+          "label": "官网",
           "value": "Interface Capital",
           "url": "https://interfacecap.com/",
           "source_id": "interface_approach"
@@ -211299,6 +211422,14 @@
           "source_content_hash": "b2beb634053904d4e9d1e6c9d3acbdf95355e69b07046025a8470cefbff72444",
           "quote": "we’ve secured 2.9M EUR in a seed investment round led by People Ventures and Interface Capital",
           "quote_hash": "21b0a9e9801aaff8852f999f8d285ec51d549730aecfa487f2290017795c5254"
+        },
+        {
+          "source_id": "interface_imprint",
+          "source_url": "https://interfacecap.com/imprint/",
+          "source_title": "Interface Capital",
+          "source_content_hash": "00791d1d9265d395fb3740b66450c6da9854d895811f75d74a349e58a85acdef",
+          "quote": "Interface Capital Management GmbH Gärtnerstr. 3 10245 Berlin, Germany Managing Directors: Christian Reber-Prevot & Niklas Jansen",
+          "quote_hash": "c911c4fb2af849042853051acfe1df0e25ab14547a0e9b776a0bdbcd1bdbdb0c"
         }
       ],
       "last_verified_at": "2026-10-06"

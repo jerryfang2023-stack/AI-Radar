@@ -139,19 +139,95 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jungle Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Jungle Ventures官网将其定位为面向印度和东南亚科技创业公司的早期至成长期投资机构；官网还列出团队和投资组合信息。",
+      "facts": [
+        {
+          "field": "geography",
+          "label": "投资地区",
+          "value": "印度和东南亚。",
+          "source_id": "jungle_geography"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子期至成长期。",
+          "source_id": "jungle_stage"
+        },
+        {
+          "field": "sector_focus",
+          "label": "关注领域",
+          "value": "B2C和B2B技术企业。",
+          "source_id": "jungle_focus"
+        },
+        {
+          "field": "leadership",
+          "label": "团队公开职务",
+          "value": "官网列Amit Anand为创始合伙人兼董事总经理。",
+          "source_id": "jungle_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Jungle Ventures投资组合页面列出Moglix，并介绍其为南亚工业用品采购平台。",
+          "source_id": "jungle_moglix"
+        },
         {
           "description": "融资来源记录：OneByZero · A轮 · 2026-10-05 · 本轮领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b40f19917f7127cc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Jungle Ventures",
+          "url": "https://www.jungle.vc/",
+          "source_id": "jungle_geography"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jungle_geography",
+          "source_url": "https://www.jungle.vc/",
+          "source_title": "Jungle Ventures - Early and growth-stage VC in India &amp; Southeast Asia",
+          "source_content_hash": "411a98f3adba8a73a8db08c96a2e758d6de74dbba6bcd3efe3858492a0c0e5a6",
+          "quote": "Idea to IPO partners for the most exceptional founders in India and Southeast Asia.",
+          "quote_hash": "18bf3d654965c739f0a218a4e06f7094db9e21e3e65d23596b273df819b3a1be"
+        },
+        {
+          "source_id": "jungle_focus",
+          "source_url": "https://www.jungle.vc/",
+          "source_title": "Jungle Ventures - Early and growth-stage VC in India &amp; Southeast Asia",
+          "source_content_hash": "411a98f3adba8a73a8db08c96a2e758d6de74dbba6bcd3efe3858492a0c0e5a6",
+          "quote": "We have a proven track record and expertise in building successful, technology-led businesses across B2C and B2B sectors.",
+          "quote_hash": "03f949945062837da1bc4546686d468cc112ca1c82adb398c4ee0ba8e0b6e420"
+        },
+        {
+          "source_id": "jungle_stage",
+          "source_url": "https://www.jungle.vc/portfolio",
+          "source_title": "Portfolio | Jungle Ventures",
+          "source_content_hash": "d119c9bbfb31ac3dda868a4f26929d8b1643bbe5a09ccec0242eb547ef958ac0",
+          "quote": "We invest across seed to growth stages in Southeast Asia and India.",
+          "quote_hash": "c7e4d590a26fc85bde05d198b25836940ffebb4a3bee323d2cd53862cafc2d15"
+        },
+        {
+          "source_id": "jungle_team",
+          "source_url": "https://www.jungle.vc/team",
+          "source_title": "Team | Jungle Ventures",
+          "source_content_hash": "4641f33a3947f005b94509b183c9c7e13b3b9daaddc67d6cbd60d636c8b17f3e",
+          "quote": "Amit Anand Founding Partner & Managing Director Investments",
+          "quote_hash": "24658d8e07a5273add45f3c1ab6745494163fac55fff57c46cdd6b54dd345e07"
+        },
+        {
+          "source_id": "jungle_moglix",
+          "source_url": "https://www.jungle.vc/portfolio",
+          "source_title": "Portfolio | Jungle Ventures",
+          "source_content_hash": "d119c9bbfb31ac3dda868a4f26929d8b1643bbe5a09ccec0242eb547ef958ac0",
+          "quote": "Moglix is South Asia’s largest MRO (manufacturing, repair and operating supplies) procurement provider.",
+          "quote_hash": "2d52c83f46d8d14d802cefa9c5f9948e4be7ddddaad197a30746133f37168159"
+        },
         {
           "source_id": "FISRC-b40f19917f7127cc",
           "source_url": "https://www.onebyzero.ai/press-releases/onebyzero-raises-20-million-series-a-jungle-ventures",
@@ -161,7 +237,8 @@
           "quote_hash": "f3f61778e18fe78bd9dba313409e35cc0ca3340def48803f333fc5197fdf01fe"
         }
       ],
-      "last_verified_at": "2026-10-06"
+      "last_verified_at": "2026-10-06",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
