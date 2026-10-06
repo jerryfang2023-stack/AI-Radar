@@ -124,9 +124,15 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "Fleuret公告称其为Vade联合创始人及Auriga GP；Auriga团队页对其Vade职务另有表述，本档案不认定当前职务。",
-      "summary": "Fleuret官方公告将Georges Lotigier介绍为Vade联合创始人、Auriga Cyber Ventures普通合伙人及本轮天使投资人；Auriga团队页另称其曾任Vade CEO。",
-      "current_roles": [],
+      "coverage_note": "仅核验 Fleuret 公告及 Auriga 官网明确列出的身份、角色和一项投资活动；不同来源对 Vade 职务用语不同，档案不据此认定当前职务或任职起止时间。",
+      "summary": "Fleuret AI 官方公告将 Georges Lotigier 列为该轮 business angel，并注明其为 Vade 联合创始人、Auriga Cyber Ventures 普通合伙人；Auriga 官网目前将他列为 Venture Partner，并将其列入推动 Auriga 成立的网络安全人士。Auriga 早期创始人简介称他曾任 Vade CEO，该头衔按历史材料记录。",
+      "current_roles": [
+        {
+          "title": "Venture Partner",
+          "organization": "Auriga Cyber Ventures",
+          "source_id": "auriga-georges-current"
+        }
+      ],
       "career": [
         {
           "organization": "Vade",
@@ -149,9 +155,9 @@
           "source_id": "FISRC-d53e6de7830c8d74",
           "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
           "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
-          "source_content_hash": "0ef491fc388899ac0c53e83be9a31c61ef10dddadb754ff579cfdd7f7941f0f9",
-          "quote": "Georges Lotigier Co-founder, Vade",
-          "quote_hash": "01a445805e3d61e3effe22253ca9cc46be4fb4da8ecbadb2fab6baba462bc00f"
+          "source_content_hash": "74676b1cbd75c347df847c0c2cbf3bf7fd0492daad3527fce20d1e23a81227dc",
+          "quote": "Business angels Founders and operators from European cybersecurity. Jules Veyrat Co-founder and CEO, Stoïk Alexandre Andreini Chief Risk Officer, Stoïk Eric Fourrier CEO, GitGuardian Georges Lotigier Co-founder, Vade Olivier Pantaleo Co-founder, Almond Jean-François Aliotti Co-founder, Almond",
+          "quote_hash": "eb482efbadeb31d0195feea207a3aa44245de831919c23a5afb191abf618a77f"
         },
         {
           "source_id": "georges_auriga_bio",
@@ -160,6 +166,14 @@
           "source_content_hash": "e3da969fbe27a331926f1a56a5c709e5637501523a82a75b84e463a47f15442e",
           "quote": "Georges Lotigier As CEO of Vade",
           "quote_hash": "9ee111307a8c36d7a61ea34a02fce769afb438ca219a193e67a21abc5b861a30"
+        },
+        {
+          "source_id": "auriga-georges-current",
+          "source_url": "https://www.aurigacyberventures.com/",
+          "source_title": "Auriga Cyber Ventures",
+          "source_content_hash": "3c8af420b169d47f249265cd638ad5a99d89dc20fc4710bda10c4fb5e026cd63",
+          "quote": "Georges Lotigier VENTURE PARTNER",
+          "quote_hash": "6bf3ca179113ed4c0f2c95005c6818cb5a11d5497fe3b453432329952d887270"
         }
       ],
       "last_verified_at": "2026-10-06",

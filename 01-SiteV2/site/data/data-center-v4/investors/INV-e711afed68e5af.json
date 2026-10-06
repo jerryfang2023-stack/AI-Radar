@@ -140,13 +140,19 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "官网可核实该法人为上海国际集团旗下专业化直投公司及披露的业务方向；未把媒体所述具体融资关系标记为集团官网确认。",
-      "summary": "上海国际集团官网称上海国际集团投资有限公司是集团旗下专业化直投公司，并介绍其围绕集团战略开展股权投资及创新业务。",
+      "coverage_note": "已核验集团官网披露的主体定位、直接投资功能及所管理企业；没有把媒体转载的具体融资关系表述为集团官网确认，也未推断未披露的基金规模、团队或业绩。",
+      "summary": "上海国际集团官网称上海国际集团投资有限公司是集团旗下专业化直投公司，并说明其目前直接管理上海国鑫投资发展有限公司与上海国鑫创业投资有限公司。该官网没有确认队列所关联的利德健康 Pre-A++ 融资，本档案不纳入该未获一手来源证实的活动。",
       "facts": [
         {
           "field": "group_relationship",
           "label": "集团关系",
           "value": "上海国际集团旗下专业化直投公司",
+          "source_id": "sig_identity"
+        },
+        {
+          "field": "managed_investment_subsidiaries",
+          "label": "官网披露的直接管理企业",
+          "value": "上海国际集团官网称其目前直接管理上海国鑫投资发展有限公司与上海国鑫创业投资有限公司。",
           "source_id": "sig_identity"
         }
       ],
@@ -164,8 +170,8 @@
           "source_url": "https://www.sigchina.com/site/introduction",
           "source_title": "上海国际集团 - 集团简介",
           "source_content_hash": "b746a4a2590f2aad67d72f5a1129fbba1ccb67030e05896f63507607b0bc1c83",
-          "quote": "上海国际集团投资有限公司是集团旗下的专业化直投公司",
-          "quote_hash": "48a8b4e5868b421010acc058923ced384ee86f438a8039f15f9f9fcf6922054f"
+          "quote": "上海国际集团投资有限公司是集团旗下的专业化直投公司，其前身是2015年由上海国际信托有限公司分立而新设的上海上国投资产管理有限公司，目前直接管理上海国鑫投资发展有限公司与上海国鑫创业投资有限公司",
+          "quote_hash": "c39fd8ff0934acc315ee2820b7627b1060aa9004cdb89dd4c9705065438b34bd"
         },
         {
           "source_id": "FISRC-de0f78d8bca00f33",

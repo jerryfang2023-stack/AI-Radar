@@ -123,9 +123,16 @@
       }
     ],
     "public_profile": {
-      "summary": "Sycamore 的官方页面将 Soham Majumdar 列入天使投资人，并以“Co-founder, Rubrik & Wisdom AI”介绍其背景。",
+      "summary": "Sycamore 官方关于 $65M 种子轮的公告将 Soham Majumdar 列入天使投资人，并注明其为 Rubrik 与 Wisdom AI 联合创始人；Sycamore 的关于页面也将其列入天使投资人。只记录发行方披露，不合并拼写相近的其他人物。",
       "profile_type": "person",
-      "facts": [],
+      "facts": [
+        {
+          "field": "issuer_described_background",
+          "label": "发行方公告所列背景",
+          "value": "Sycamore 官方种子轮公告把 Soham Majumdar 列入 notable angel investors，并注明其为 Rubrik 与 Wisdom AI 联合创始人。",
+          "source_id": "sycamore-angel-announcement-r4"
+        }
+      ],
       "milestones": [],
       "contacts": [],
       "current_roles": [],
@@ -144,7 +151,7 @@
       ],
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "仅核验 Sycamore 官网所列的投资身份和署名背景，不将其他页面中“Soham Mazumdar”的拼写变体合并至本档案，也不补写未核实的任职时间或教育经历。",
+      "coverage_note": "仅核验 Sycamore 官方页面所列的投资身份与署名背景；来源未给出任职时间或教育信息，不补写其他经历。",
       "sources": [
         {
           "source_id": "sycamore_angel_section",
@@ -161,6 +168,14 @@
           "source_content_hash": "dd64e86b9ee7fd88944b592035f9257eec3ff27fc96a67d01c2ebd7bfec082f9",
           "quote": "Soham Majumdar Co-founder, Rubrik & Wisdom AI",
           "quote_hash": "014410b58350d00918df5397386755572e8c7b5cfa996c2778e486854afd5a61"
+        },
+        {
+          "source_id": "sycamore-angel-announcement-r4",
+          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+          "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
+          "source_content_hash": "ebd89f06f7aac0e52ecdbbea0e88cbdee116486643a65781b7af4a27c01c9f44",
+          "quote": "Notable angel investors include: Lip-Bu Tan (CEO of Intel), Ali Ghodsi (CEO of Databricks), Bob McGrew (former Chief Research Officer at OpenAI), Frederic Kerrest (co-founder of Okta), BJ Jenkins (President of Palo Alto Networks), Bipul Sinha (CEO of Rubrik), Jay Simons (General Partner at BOND), Anu Bharadwaj (former President of Atlassian), Sachin Katti (Compute Infrastructure at OpenAI), Francois Chollet (co-founder of Ndea), Mike Knoop (co-founder of Zapier and Ndea), Nima Khajehnouri (VP Engineering at Meta), Abhinav Gupta (co-founder of Skild AI), Deepak Pathak (co-founder of Skild AI), Jerry Tworek (former Research Scientist at OpenAI), Soham Majumdar (co-founder of Rubrik and Wisdom AI)",
+          "quote_hash": "37c2f4094f246c13b78726d09fbf2ea209fcf9812cf862c52366ee0c879db2b3"
         },
         {
           "source_id": "FISRC-d354011359557f2f",

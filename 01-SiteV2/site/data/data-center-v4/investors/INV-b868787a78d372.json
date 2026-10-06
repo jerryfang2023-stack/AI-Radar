@@ -137,21 +137,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Swish Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Glow 官方融资公告将 Swish Ventures 列为其 $180M 融资的参与方。SEC Form D/A 另载有名称为 Swish Ventures L.P. 的发行主体及普通合伙人信息；该文件没有明确说明其与 Glow 公告所用投资方标签的关系，因此仅并列记录两份披露，不把法律实体映射或更广投资组合视为已确认。",
+      "facts": [
+        {
+          "field": "sec_filer_reference",
+          "label": "SEC Form D/A 发行主体（独立披露）",
+          "value": "SEC Form D/A 将发行主体列为 Swish Ventures L.P.，组织地为开曼群岛，实体形式为豁免有限合伙企业；该披露未明确将其与 Glow 公告中的 Swish Ventures 标签相连。",
+          "source_id": "swish-sec-issuer"
+        },
+        {
+          "field": "sec_general_partner_reference",
+          "label": "SEC Form D/A 所列普通合伙人",
+          "value": "该 Form D/A 将 Swish GP L.P. 列为普通合伙人；此字段仅记录申报文件内容。",
+          "source_id": "swish-sec-general-partner"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Glow 官方公告将 Swish Ventures 列为该公司 $180M 融资的参与方；融资总额为 Glow 公司融资额，不代表该参与方的出资额。",
+          "source_id": "swish-glow-financing"
+        },
         {
           "description": "融资来源记录：Glow · A轮 · 2026-07-22 · 本轮参投 · $180 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e192dd3fe1a72590"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "Glow 官方材料验证投资方标签及该轮参与活动；SEC 申报材料为名称相近的独立披露，未明确关联 Glow 投资方，故不据此宣称已完成法律主体映射。未推断单家出资额、团队、策略或其他项目。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "swish-glow-financing",
+          "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+          "source_title": "Glow Emerges From Stealth to Reinvent Endpoint Security in the AI Era",
+          "source_content_hash": "8af39c2235e2fcac25eb9d0ee59d5daee20fd32944bbd6f170d4e3680210f0dc",
+          "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+          "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+        },
+        {
+          "source_id": "swish-sec-issuer",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2056570/000205657025000002/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D/A",
+          "source_content_hash": "a62566555f1bb40b15822a80d3eaca9b6f94cf4688825609eba8b511131c5101",
+          "quote": "Name of Issuer Swish Ventures L.P. Jurisdiction of Incorporation/Organization CAYMAN ISLANDS",
+          "quote_hash": "bc34e123e6cd8d19c8e911ab5352d482a63022ad61bb90763a3e1e727e6bf776"
+        },
+        {
+          "source_id": "swish-sec-general-partner",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2056570/000205657025000002/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D/A",
+          "source_content_hash": "a62566555f1bb40b15822a80d3eaca9b6f94cf4688825609eba8b511131c5101",
+          "quote": "Swish GP L.P. n/a Street Address 1 Street Address 2 3 Magen Kalman Aluf St. City State/Province/Country ZIP/PostalCode Tel Aviv-Jaffa ISRAEL 00000 Relationship: Executive Officer Director X Promoter Clarification of Response (if Necessary): General Partner",
+          "quote_hash": "5d42e5818a9caf63562903ed0f32d5529f35f3c492a9d3becde3adf4f6159a95"
+        },
         {
           "source_id": "FISRC-e192dd3fe1a72590",
           "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
