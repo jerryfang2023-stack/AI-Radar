@@ -139,15 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "官网没有提供可采集的机构介绍或法律主体信息；投融资活动由被投企业公告确认。",
-      "summary": "BANNER VC官网呈现该投资品牌；Impulse Space官方Series D公告称本轮由137 Ventures与BANNER VC共同领投。本档仅记录品牌索引和这一项发行方披露，不扩展法律实体、基金策略或完整组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "SEC Form ADV identifies the advisory entity and CRD number, while the filing lists bannervc.com as its website. Impulse Space’s issuer announcement independently confirms BANNER VC as a Series D co-lead. The cited pages do not establish a broader fund history or complete portfolio.",
+      "summary": "SEC Form ADV identifies BANNER VC MANAGEMENT, LLC (CRD 339864) and lists bannervc.com as its website. BANNER VC’s site presents the public brand; Impulse Space’s June 2026 announcement says BANNER VC co-led its Series D. The public sources reviewed do not disclose a complete investment history.",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "Form ADV 主体名称",
+          "value": "BANNER VC MANAGEMENT, LLC",
+          "source_id": "banner_adv"
+        },
+        {
+          "field": "crd_number",
+          "label": "CRD 编号",
+          "value": "339864",
+          "source_id": "banner_adv"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Impulse Space官方公告称BANNER VC与137 Ventures共同领投其Series D。",
-          "source_id": "banner_activity"
+          "description": "Impulse Space 于 2026 年 Series D 公告称本轮由 137 Ventures 与 BANNER VC 共同领投；不代表完整投资组合。",
+          "source_id": "banner_impulse"
         },
         {
           "description": "融资来源记录：Impulse Space · D轮 · 2026-06-02 · 本轮联合领投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -173,7 +186,15 @@
           "quote_hash": "34626861043042b2d77addd8659dd1138a2ef3495cc7ba27092e5fcc7a21adc7"
         },
         {
-          "source_id": "banner_activity",
+          "source_id": "banner_adv",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/339864/PDF/339864.pdf",
+          "source_title": "Form ADV - BANNER VC MANAGEMENT, LLC",
+          "source_content_hash": "22875599c30d08e3e90adcd3e2a46222ca2c2cf98265d3dcf4baf7473ff7e14d",
+          "quote": "Primary Business Name: BANNER VC MANAGEMENT, LLC CRD Number: 339864",
+          "quote_hash": "a3a22672f8cf9f2e6819939d10b47e23baae02dd67fb738ae10eefdb8347650c"
+        },
+        {
+          "source_id": "banner_impulse",
           "source_url": "https://www.impulsespace.com/updates/impulse-space-raises-500-million-dollar-series-d-to-build-in-space-mobility-infrastructure-for-the-space-economy",
           "source_title": "Impulse Space Raises $500M Series D to Build In-Space Mobility Infrastructure for the Space Economy",
           "source_content_hash": "70cdb23076bb626e3eca4bb8ee19a029d532e42cea03ced4b46c8dda4b380410",

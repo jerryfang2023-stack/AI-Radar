@@ -123,19 +123,54 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Benjamin Bryant 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "人物身份由 Access Fund 官网团队页和 Trace 官方融资公告交叉支持；活动范围限于公告具名披露，不扩展为完整投资组合。",
+      "summary": "Access Fund 官网称 Benjamin Bryant 于 2017 年与 Eric Migicovsky 共同创立 Access Fund，并在团队页列出其 YC W11、Pebble、Earbits 与前对冲基金高频交易背景。Trace 于 2026 年 2 月 26 日发布的种子轮公告将 Benjamin Bryant 与其他运营者列入经 WeFunder 参与的投资者。",
+      "current_roles": [
+        {
+          "title": "联合创办人",
+          "organization": "Access Fund",
+          "source_id": "access_fund"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Access Fund 官网列出其 YC W11、Pebble、Earbits 与前对冲基金高频交易背景；页面未细分这些经历的具体职位或时间。",
       "track_record": [
+        {
+          "description": "Trace 官方融资公告将 Benjamin Bryant 列为参与 Trace 3 百万美元种子轮的投资者及运营者之一，并注明通过 WeFunder；公告未披露个人投资金额。",
+          "source_id": "trace_round"
+        },
         {
           "description": "融资来源记录：Trace · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ea2a22594e77fd6a"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "access_fund",
+          "source_url": "https://accessfund.vc/about",
+          "source_title": "Access Fund",
+          "source_content_hash": "8573c6ca82abd70183c62a656e10d29879a65d91fa1b36c882ebe430484bfc5b",
+          "quote": "Founded in 2017 by Benjamin Bryant and Eric Migicovsky, the Access Fund team brings over 30+ years of operational and investment experience.",
+          "quote_hash": "9fe95bd453c61a94ea7c2bccfa3f88471fabf9ee7915699c166c5da1b709d9d1"
+        },
+        {
+          "source_id": "access_fund_bio",
+          "source_url": "https://accessfund.vc/about",
+          "source_title": "Access Fund",
+          "source_content_hash": "8573c6ca82abd70183c62a656e10d29879a65d91fa1b36c882ebe430484bfc5b",
+          "quote": "Benjamin Bryant (YC W11) Pebble ; Earbits; fmr. Hedge Fund HFT University of Michigan; London Business School",
+          "quote_hash": "bff42028f1176fe062948884bf969a46a05eef20386eecfb9782f083f6ea7899"
+        },
+        {
+          "source_id": "trace_round",
+          "source_url": "https://www.trace.so/blog/trace-raised-dollar3m-to-build-the-context-layer-for-ai-at-work",
+          "source_title": "Trace raised $3M to build the context layer for AI at work - Trace",
+          "source_content_hash": "785f8ff4713a99f598fd744d4346fef9d68bfa2f690fe749b78db7cb8e974e91",
+          "quote": "Benjamin Bryant, Kevin Moore, and other operators via WeFunder",
+          "quote_hash": "6cb5543314a9e35959ffdd3314db026f862661c8e8b1e9d771d3b506e7b7a9dc"
+        },
         {
           "source_id": "FISRC-ea2a22594e77fd6a",
           "source_url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
@@ -145,7 +180,10 @@
           "quote_hash": "0c40fe449ee1dfd133617e98cd5e302659dcb50b8855ac9c6abe207412d88537"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-06",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }
