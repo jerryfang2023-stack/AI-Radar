@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-05",
-    "currentDate": "2026-10-05",
-    "eventCount": 3935,
+    "latestDataDate": "2026-10-06",
+    "currentDate": "2026-10-06",
+    "eventCount": 3952,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-06",
-    "latest_disclosed_at": "2026-08-10",
+    "latest_disclosed_at": "2026-10-04",
     "role_counts": {
       "co_lead": 3,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "series_b",
@@ -94,6 +94,11 @@
         "name": "Databricks"
       },
       {
+        "entity_id": "EN-37799d436602eaf1",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
+      },
+      {
         "entity_id": "EN-37f52323f7361ee9",
         "canonical_entity_id": "",
         "name": "Isomorphic Labs"
@@ -105,6 +110,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-366e7d3a413232a4",
+        "funding_insight_id": "FI-8650a7a5be9be749",
+        "event_ids": [
+          "EV-de8561e258a6f559"
+        ],
+        "company_entity_id": "EN-37799d436602eaf1",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "21亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "21 亿美元"
+        },
+        "announced_at": "2026-10-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-82c9573ed9c6ba66",
+            "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+            "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+            "source_content_hash": "e6bdf28f1eee82d0",
+            "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+            "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e5f8fbbeef5ce2bf",
         "funding_insight_id": "FI-f55b62cf10cb7c98",
@@ -357,6 +402,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-82c9573ed9c6ba66",
+        "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+        "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+        "source_content_hash": "e6bdf28f1eee82d0",
+        "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+        "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
+      },
+      {
         "source_id": "FISRC-077b1124fc8e9581",
         "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
         "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
@@ -387,14 +440,6 @@
         "source_content_hash": "3f607094cf4bb5e846f46ad12d0a7bbf61cf45c0861dc19dc2ff6c5683b3673a",
         "quote": "Thrive Capital led the round, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and the UK Sovereign AI Fund.",
         "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
-      },
-      {
-        "source_id": "FISRC-82c9573ed9c6ba66",
-        "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
-        "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
-        "source_content_hash": "e6bdf28f1eee82d0",
-        "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
-        "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
       },
       {
         "source_id": "FISRC-b58bb99dfec2e318",
@@ -430,16 +475,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮参投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-82c9573ed9c6ba66"
+        },
+        {
           "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-077b1124fc8e9581"
         },
         {
           "description": "融资来源记录：Databricks · 战略融资 · 2026-07-17 · 本轮联合领投 · 约 30 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-23f811fd2df5ab63"
-        },
-        {
-          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b5e22ae086a6b353"
         }
       ],
       "contacts": [],
@@ -461,6 +506,14 @@
           "quote_hash": "cf6fe480d77b318b36bf58e1783e3178fd872598f719abd7c871a5ef1fd87be4"
         },
         {
+          "source_id": "FISRC-82c9573ed9c6ba66",
+          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+          "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+          "source_content_hash": "e6bdf28f1eee82d0",
+          "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+          "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
+        },
+        {
           "source_id": "FISRC-077b1124fc8e9581",
           "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
           "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
@@ -475,14 +528,6 @@
           "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
           "quote": "The round was led by Coatue, along with Blackstone, MGX, accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., and new investor Sixth Street Growth.",
           "quote_hash": "b233db421b569c9a4a4d161be9d7f8250496f79ea7110abbd433d88c071ba51d"
-        },
-        {
-          "source_id": "FISRC-b5e22ae086a6b353",
-          "source_url": "https://www.anthropic.com/news/series-h",
-          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
-          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
-          "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
-          "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
         }
       ],
       "last_verified_at": "2026-10-03",

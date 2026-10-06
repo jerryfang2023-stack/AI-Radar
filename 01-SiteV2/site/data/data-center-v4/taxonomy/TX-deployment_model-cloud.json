@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-05",
-    "currentDate": "2026-10-05",
-    "eventCount": 3935,
+    "latestDataDate": "2026-10-06",
+    "currentDate": "2026-10-06",
+    "eventCount": 3952,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -59,6 +59,7 @@
     "typeLabel": "部署形态",
     "valueId": "cloud",
     "eventIds": [
+      "EV-e6baccb784b32529",
       "EV-4118202ed0f91895",
       "EV-7e9cc6f0faab48ed",
       "EV-9fe6938336dea2a2",
@@ -80,6 +81,7 @@
       "EV-f0544e9e6daf3a35"
     ],
     "entityIds": [
+      "EN-b0353b76578c6351",
       "EN-0b79cf2de0ee6b8e",
       "EN-b81c8201acfc7639",
       "EN-8f5ef31ed5125786",
@@ -101,9 +103,139 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-06-03",
-    "lastSeen": "2026-10-01"
+    "lastSeen": "2026-10-06"
   },
   "events": [
+    {
+      "id": "EV-e6baccb784b32529",
+      "dataDate": "2026-10-06",
+      "date": "2026-09-30",
+      "updatedDate": "2026-09-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "摩根资管：美国超大规模云服务商AI融资债券约2,500亿美元",
+      "originalTitle": "",
+      "subject": "摩根资管：美国超大规模云服务商AI",
+      "action": "融资",
+      "object": "债券约2,500亿美元",
+      "metrics": [
+        "2,500亿"
+      ],
+      "locations": [
+        "美国"
+      ],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-29aff765d018050a",
+          "CL-37821c3f70146b58"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-b0353b76578c6351"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-b0353b76578c6351"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-b0353b76578c6351"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-b0353b76578c6351"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-b0353b76578c6351"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-b0353b76578c6351"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-b0353b76578c6351"
+      ],
+      "entityNames": [
+        "摩根资管"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/stock/estate/integration/2026-09-30/doc-initrftc2544740.shtml",
+      "publisher": "finance.sina.com.cn"
+    },
     {
       "id": "EV-4118202ed0f91895",
       "dataDate": "2026-06-24",
@@ -2914,6 +3046,28 @@
   ],
   "entities": [
     {
+      "id": "EN-b0353b76578c6351",
+      "name": "摩根资管",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e6baccb784b32529"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-deployment_model-cloud"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-06"
+    },
+    {
       "id": "EN-0b79cf2de0ee6b8e",
       "name": "Groq",
       "entityType": "organization_candidate",
@@ -2932,10 +3086,10 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-deployment_model-cloud",
         "TX-product_form-compute_cloud_service",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-ai_market_application-computing_infrastructure",
-        "TX-deployment_model-cloud"
+        "TX-ai_market_application-computing_infrastructure"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-23",
@@ -3007,16 +3161,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-product_form-chip_accelerator",
-        "TX-industry-healthcare_life_sciences",
+        "TX-deployment_model-cloud",
         "TX-technology-multimodal",
         "TX-product_form-ai_device",
         "TX-use_case-software_development",
-        "TX-technology-video_generation",
-        "TX-deployment_model-cloud"
+        "TX-technology-video_generation"
       ],
       "relatedEntityIds": [
         "EN-0c2f714483c404ad",
@@ -3042,8 +3196,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-compute_cloud_service",
-        "TX-deployment_model-cloud"
+        "TX-deployment_model-cloud",
+        "TX-product_form-compute_cloud_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
@@ -3194,6 +3348,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-product_form-model",
         "TX-target_user-business_user",
@@ -3205,7 +3360,7 @@
         "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
         "TX-use_case-sales",
-        "TX-industry-healthcare_life_sciences",
+        "TX-deployment_model-cloud",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-use_case-data_analysis",
@@ -3217,7 +3372,6 @@
         "TX-technology-long_context",
         "TX-technology-computer_use",
         "TX-technology-reasoning",
-        "TX-deployment_model-cloud",
         "TX-technology-image_generation",
         "TX-technology-tool_use",
         "TX-technology-quantization",
@@ -3234,7 +3388,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-05"
+      "lastSeen": "2026-10-06"
     },
     {
       "id": "EN-c7d7af20b6ab853d",
@@ -3291,7 +3445,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-3a4ba26375b45669",
         "EV-792e2a2b3e98399f",
         "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
@@ -3353,10 +3506,10 @@
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
+        "TX-deployment_model-cloud",
         "TX-product_form-end_user_application",
         "TX-use_case-software_development",
-        "TX-technology-open_weights",
-        "TX-deployment_model-cloud"
+        "TX-technology-open_weights"
       ],
       "relatedEntityIds": [
         "EN-e78bdebae031095b",
@@ -3364,7 +3517,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-10-05"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-897dae632aeac9d0",
@@ -3712,6 +3865,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-media_entertainment",
         "TX-product_form-model",
@@ -3726,7 +3880,7 @@
         "TX-industry-financial_services",
         "TX-use_case-sales",
         "TX-use_case-legal_compliance",
-        "TX-industry-healthcare_life_sciences",
+        "TX-deployment_model-cloud",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
@@ -3744,7 +3898,6 @@
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-computer_use",
-        "TX-deployment_model-cloud",
         "TX-deployment_model-on_premise",
         "TX-technology-image_generation",
         "TX-technology-tool_use"
@@ -3771,7 +3924,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-05"
+      "lastSeen": "2026-10-06"
     },
     {
       "id": "EN-74be4cbf48e647b2",
@@ -3788,17 +3941,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
+        "TX-deployment_model-cloud",
         "TX-industry-government_public_sector",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-open_weights",
-        "TX-technology-long_context",
-        "TX-deployment_model-cloud"
+        "TX-technology-long_context"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-09",
@@ -4021,6 +4174,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-20063f151f5c9892",
         "EV-6f6d5ec3dab0651c",
         "EV-72a9b0250c1c9435",
         "EV-f4da30e35343eda7",
@@ -4185,6 +4339,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -4201,9 +4356,9 @@
         "TX-industry-manufacturing",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-construction_real_estate",
         "TX-industry-agriculture",
+        "TX-deployment_model-cloud",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
         "TX-technology-embodied_ai",
@@ -4235,7 +4390,6 @@
         "TX-use_case-customer_support",
         "TX-technology-mixture_of_experts",
         "TX-technology-reasoning",
-        "TX-deployment_model-cloud",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -4268,7 +4422,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-05"
+      "lastSeen": "2026-10-06"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
@@ -4471,9 +4625,9 @@
         "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
+        "TX-deployment_model-cloud",
         "TX-use_case-data_analysis",
         "TX-technology-mixture_of_experts",
-        "TX-deployment_model-cloud",
         "TX-deployment_model-on_premise",
         "TX-technology-model_context_protocol",
         "TX-technology-human_in_loop",

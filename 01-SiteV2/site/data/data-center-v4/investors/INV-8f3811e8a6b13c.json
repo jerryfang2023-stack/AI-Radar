@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-05",
-    "currentDate": "2026-10-05",
-    "eventCount": 3935,
+    "latestDataDate": "2026-10-06",
+    "currentDate": "2026-10-06",
+    "eventCount": 3952,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 6,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 6,
     "market_regions": [
       "CN",
@@ -70,10 +70,10 @@
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-01-26",
+    "first_disclosed_at": "2024-09",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 1,
       "participant": 5
     },
@@ -368,6 +368,38 @@
         ]
       },
       {
+        "activity_id": "IA-7273b93d3de9e188",
+        "funding_insight_id": "FI-2134347a27ff584f",
+        "event_ids": [
+          "EV-1faa33bcf69dcf47"
+        ],
+        "company_entity_id": "EN-63e533f77a26a8d0",
+        "company_canonical_entity_id": "",
+        "company_name": "Safe Superintelligence Inc.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2024-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Seed / Series A 参投（2024年9月）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-062aa9e732f0aba2",
+            "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
+            "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
+            "source_content_hash": "4605e9c942d1f7c4",
+            "quote": "Institutional: Andreessen Horowitz, Sequoia Capital, DST Global, SV Angel, NFDG+5 more",
+            "quote_hash": "96e8cf430081b04c3137a111411f52f89f7c7241db0673206bfbdb23f7ed6027"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-2fd232ea7f8dace5",
         "funding_insight_id": "FI-e8d4a2ba10a99308",
         "event_ids": [
@@ -524,6 +556,14 @@
         "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
       },
       {
+        "source_id": "FISRC-062aa9e732f0aba2",
+        "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
+        "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
+        "source_content_hash": "4605e9c942d1f7c4",
+        "quote": "Institutional: Andreessen Horowitz, Sequoia Capital, DST Global, SV Angel, NFDG+5 more",
+        "quote_hash": "96e8cf430081b04c3137a111411f52f89f7c7241db0673206bfbdb23f7ed6027"
+      },
+      {
         "source_id": "FISRC-94676d99b2defaa4",
         "source_url": "https://lovable.dev/blog/series-c",
         "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
@@ -660,6 +700,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[6].role": {
+          "text": "Seed / Series A 参投（2024年9月）",
+          "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-06T00:56:36.371Z",
+          "status": "translated"
+        },
         "public_profile.summary": {
           "text": "DST Global 是总部注册于开曼群岛基金体系的全球互联网投资机构。官网列其创始人为 Yuri Milner，联合创始人为 Saurabh Gupta、John Lindfors、Rahul Mehta 和 Tom Stafford；并明确表示不招揽或接受零售投资者。",
           "source_hash": "bc386e53b57cd11af511676bc27a18c7048724b37820638ddb46aaab8ae1e95a",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-05",
-    "currentDate": "2026-10-05",
-    "eventCount": 3935,
+    "latestDataDate": "2026-10-06",
+    "currentDate": "2026-10-06",
+    "eventCount": 3952,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,20 +63,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-16",
-    "latest_disclosed_at": "2026-10-01",
+    "latest_disclosed_at": "2026-10-04",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 2,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "seed",
@@ -95,6 +95,11 @@
         "entity_id": "EN-f8223ea5a9c41813",
         "canonical_entity_id": "",
         "name": "Armadin"
+      },
+      {
+        "entity_id": "EN-37799d436602eaf1",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-37f52323f7361ee9",
@@ -128,6 +133,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c6b5efee7347f4f5",
+        "funding_insight_id": "FI-8650a7a5be9be749",
+        "event_ids": [
+          "EV-de8561e258a6f559"
+        ],
+        "company_entity_id": "EN-37799d436602eaf1",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "21亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "21 亿美元"
+        },
+        "announced_at": "2026-10-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-82c9573ed9c6ba66",
+            "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+            "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+            "source_content_hash": "e6bdf28f1eee82d0",
+            "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+            "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-da09fa10b11a1e1e",
         "funding_insight_id": "FI-e7151a217bf0631d",
@@ -557,6 +602,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-82c9573ed9c6ba66",
+        "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+        "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+        "source_content_hash": "e6bdf28f1eee82d0",
+        "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+        "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
+      },
+      {
         "source_id": "FISRC-dc8fb918b056c843",
         "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
         "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
@@ -611,14 +664,6 @@
         "source_content_hash": "3f607094cf4bb5e846f46ad12d0a7bbf61cf45c0861dc19dc2ff6c5683b3673a",
         "quote": "Thrive Capital led the round, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and the UK Sovereign AI Fund.",
         "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
-      },
-      {
-        "source_id": "FISRC-82c9573ed9c6ba66",
-        "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
-        "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
-        "source_content_hash": "e6bdf28f1eee82d0",
-        "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
-        "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
       },
       {
         "source_id": "FISRC-7e709202ce99cc8e",
@@ -733,16 +778,16 @@
           "source_id": "gv_about"
         },
         {
+          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮参投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-82c9573ed9c6ba66"
+        },
+        {
           "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dc8fb918b056c843"
         },
         {
           "description": "融资来源记录：Metaview · C轮 · 2026-10-01 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-62e06e29d2d7be04"
-        },
-        {
-          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16afc5791c45315a"
         }
       ],
       "contacts": [
@@ -766,6 +811,14 @@
           "quote_hash": "90cbdf37bd32985fe0287193ec4b8eaee618ac9632610f1ef38fb1e68a388701"
         },
         {
+          "source_id": "FISRC-82c9573ed9c6ba66",
+          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+          "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+          "source_content_hash": "e6bdf28f1eee82d0",
+          "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+          "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
+        },
+        {
           "source_id": "FISRC-dc8fb918b056c843",
           "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
           "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
@@ -780,14 +833,6 @@
           "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
           "quote": "Additional investors participating in the round include GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
           "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
-        },
-        {
-          "source_id": "FISRC-16afc5791c45315a",
-          "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
-          "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
-          "source_content_hash": "ad04baf1994708d0",
-          "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
-          "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
         }
       ],
       "last_verified_at": "2026-09-25",
