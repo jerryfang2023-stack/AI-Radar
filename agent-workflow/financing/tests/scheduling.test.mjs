@@ -16,7 +16,7 @@ test('migration-only publication cannot suppress financing discovery', () => {
   assert.equal(acceptedPublicationStatus({...report,migration:{new_discovery_not_run:true}},date),null);
   assert.equal(acceptedPublicationStatus(report,date),'awaiting_portal');
   assert.equal(acceptedPublicationStatus({...report,status:'no_new_financing'},date),'no_new_financing');
-  assert.equal(acceptedPublicationStatus({...report,status:'pending_verification'},date),'pending_verification');
+  assert.equal(acceptedPublicationStatus({...report,status:'pending_verification'},date),'verification_required');
   assert.equal(acceptedPublicationStatus(report,'2026-10-02'),null);
   assert.equal(acceptedPublicationStatus(null,date),null);
 });

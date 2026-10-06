@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { collect } from './collect.mjs';
+import { verifyPending, finishVerification } from './verify.mjs';
 import { config, queryPlan } from './discovery.mjs';
 import { acquireLock, digest, read, write, runStages } from './state.mjs';
 import { resolvePrivateEvidenceBackupRoot } from '../tools/private-evidence-backup-paths.mjs';
@@ -79,30 +80,33 @@ async function main() {
   const date = args.get('date') || new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   queryPlan(date);
   const phase = args.get('phase') || 'all';
-  if (!['all','collect','produce','plan'].includes(phase)) throw new Error('invalid_financing_phase');
+  if (!['all','collect','verify','produce','plan'].includes(phase)) throw new Error('invalid_financing_phase');
   const directory = path.resolve(args.get('runtime-dir') || path.join(root, 'agent-workflow/reports/financing', date));
   if (phase === 'plan') { console.log(JSON.stringify({ version: config.version, date, queries: queryPlan(date), stages: productionPlan(date, directory) }, null, 2)); return; }
   const unlock = acquireLock(directory);
   try {
     process.chdir(root);
     const backupRoot = resolvePrivateEvidenceBackupRoot(root);
-    if (phase !== 'produce') await collect({ root, directory, backupRoot, date });
+    if (['all','collect'].includes(phase)) await collect({ root, directory, backupRoot, date });
     if (phase === 'collect') return;
     const collection = read(path.join(directory, 'collection.json'));
     if (!collection?.accepted || collection.date !== date) throw new Error('accepted_financing_collection_required');
+    await verifyPending({ root, directory, backupRoot, date });
+    if (phase === 'verify') return;
     indexFinancingEvidence({root, backupRoot, date, collection});
     // A clean zero day is not an extraction failure or a reason to invent cards.
     const intake = read(path.join(root, `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`));
-    if (!intake?.raw_documents?.length) {
-      write(path.join(directory, 'publication.json'), { version: config.version, date, status: collection.counts.pending ? 'pending_verification' : 'no_new_financing', counts: collection.counts }); return;
-    }
     const supplemental = read(path.join(directory, 'supplemental.json'));
     if (supplemental && (supplemental.date !== date || supplemental.version !== 'FINANCING-SUPPLEMENT-1' || supplemental.accepted !== true)) throw new Error('accepted_financing_supplement_required');
     const extractionScope = financingExtractionScope(intake, collection, supplemental);
+    if (!intake?.raw_documents?.length) {
+      const verification = finishVerification({ root, directory, date });
+      write(path.join(directory, 'publication.json'), { version: config.version, date, status: verification.counts.pending ? 'pending_verification' : 'no_new_financing', counts: collection.counts, verification }); return;
+    }
     const scopeFile = path.join(directory, 'extraction-scope.json');
     write(scopeFile, extractionScope);
     const plans = productionPlan(date, directory, { extract: extractionScope.source_refs.length > 0 });
-    const codeVersion = digest(intake);
+    const codeVersion = digest([intake, extractionScope]);
     const reviewedClaims = path.join(root, `01-SiteV2/content/11-databases/model-assist-v1/${date}.json`);
     const dependencyText = (file, seen = new Set()) => {
       if (seen.has(file) || !fs.existsSync(file)) return ''; seen.add(file);
@@ -125,7 +129,8 @@ async function main() {
         }
       } finally { fs.closeSync(fd); }
     } });
-    write(path.join(directory, 'publication.json'), { version: config.version, date, status: 'ready_for_review', counts: collection.counts, next: 'merge_pages_portal_and_live_parity', generated_at: new Date().toISOString() });
+    const verification = finishVerification({ root, directory, date });
+    write(path.join(directory, 'publication.json'), { verification, version: config.version, date, status: 'ready_for_review', counts: collection.counts, next: 'merge_pages_portal_and_live_parity', generated_at: new Date().toISOString() });
     console.log(JSON.stringify({ date, status: 'ready_for_review', report: path.join(directory, 'publication.json') }));
   } finally { unlock(); }
 }

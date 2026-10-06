@@ -18,7 +18,7 @@ let publication;
 if (report) publication = JSON.parse(Buffer.from(report,'base64').toString('utf8'));
 const acceptedStatus = acceptedPublicationStatus(publication, date);
 if (acceptedStatus) {
-  console.log(JSON.stringify({date,status:acceptedStatus, accepted_on_main:true}));
+  console.log(JSON.stringify({date,status:acceptedStatus, verification:publication.verification, accepted_on_main:true}));
 } else {
   const prs = JSON.parse(gh(['pr','list','--repo',repo,'--head',`automation/financing-${date}`,'--state','open','--json','headRefName,state,url,headRefOid']));
   const review = pendingReviewStatus(prs, date);

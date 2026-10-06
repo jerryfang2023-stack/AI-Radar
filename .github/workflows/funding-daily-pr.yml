@@ -70,6 +70,9 @@ jobs:
       - name: Discover financing and capture originals
         id: collection
         run: node agent-workflow/financing/run.mjs --phase=collect --date="$RUN_DATE"
+      - name: Verify pending financing leads using existing sources
+        id: verification
+        run: node agent-workflow/financing/run.mjs --phase=verify --date="$RUN_DATE"
       - name: Persist evidence before dependent work
         id: evidence
         if: always() && steps.collection.outcome != 'skipped'
@@ -85,7 +88,7 @@ jobs:
           fi
           npm run assert:private-evidence-remote
       - name: Extract facts, research financing and gate publication
-        if: steps.collection.outcome == 'success' && steps.evidence.outcome == 'success'
+        if: steps.collection.outcome == 'success' && steps.verification.outcome == 'success' && steps.evidence.outcome == 'success'
         id: produce
         run: node agent-workflow/financing/run.mjs --phase=produce --date="$RUN_DATE"
       - name: Persist research receipts before recovery checkpoint

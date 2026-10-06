@@ -10,7 +10,7 @@ import {inspectProductionChecks} from '../tools/wait-for-production-code-checks.
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const repo = 'jerryfang2023-stack/AI-Radar';
-const terminal = new Set(['published', 'no_new_financing', 'pending_verification']);
+const terminal = state => ['published', 'no_new_financing'].includes(state.status) || (state.status === 'pending_verification' && state.verification?.status === 'completed');
 export function chinaClock(now = new Date()) {
   const parts = Object.fromEntries(new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Shanghai', year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hourCycle:'h23'}).formatToParts(now).map(p=>[p.type,p.value]));
   return {date:`${parts.year}-${parts.month}-${parts.day}`, minute:Number(parts.hour)*60+Number(parts.minute)};
@@ -20,7 +20,7 @@ export function selectRunDate(states, clock, requested) {
     if (!/^\d{4}-\d{2}-\d{2}$/u.test(requested) || Number.isNaN(Date.parse(requested)) || new Date(requested).toISOString().slice(0,10)!==requested || requested > clock.date) throw new Error('invalid_vps_run_date');
     return requested;
   }
-  const unfinished = states.filter(s=>s.date <= clock.date && !terminal.has(s.status)
+  const unfinished = states.filter(s=>s.date <= clock.date && !terminal(s)
     && !(s.date < clock.date && ['needs_attention','review_held','ci_failed'].includes(s.status))).sort((a,b)=>a.date.localeCompare(b.date));
   return unfinished[0]?.date || (clock.minute >= 490 ? clock.date : null);
 }
@@ -64,13 +64,14 @@ async function cycle(args) {
   }
   const directory=path.join(runtime,date), stateFile=path.join(directory,'supervisor.json');
   let state=read(stateFile,{date,status:'new',reviews:{},review_calls:0});
-  if(terminal.has(state.status) && (state.status!=='published' || state.catalog_hash===sourceHash()))return {date,status:state.status,already_complete:true};
+  if(terminal(state) && (state.status!=='published' || state.catalog_hash===sourceHash()))return {date,status:state.status,already_complete:true};
   const dry=args.get('dry-run')==='true';
   const save=patch=>{state={...state,...patch,updated_at:new Date().toISOString()}; if(!dry)write(stateFile,state); return state;};
   try {
     const dispatch=JSON.parse(command(process.execPath,['agent-workflow/financing/dispatch.mjs',`--date=${date}`,...(dry?['--dry-run=true']:[])]));
     if(dry)return {date,status:'preview',dispatch};
-    save({status:dispatch.status,dispatch});
+    save({status:dispatch.status,dispatch,verification:dispatch.verification});
+    if(dispatch.status==='verification_required') return save({status:'needs_attention',error:'legacy_pending_requires_produce_resume_from_accepted_collection'});
     if(['no_new_financing','pending_verification'].includes(dispatch.status))return save({completed_at:new Date().toISOString()});
     if(dispatch.status==='awaiting_portal') {
       const receipt=JSON.parse(command('sudo',['-n','/usr/local/libexec/guanlan-financing-publish',date],{timeout:5400000}));
@@ -88,6 +89,7 @@ async function cycle(args) {
     assertDataOnly(files,date);
     const report=publication(date,head);
     if(!report || report.date!==date || !['ready_for_review','no_new_financing','pending_verification'].includes(report.status))throw new Error('financing_pr_publication_gate_missing');
+    if(report.verification?.status!=='completed')throw new Error('financing_pending_verification_stage_missing');
     const base=command('git',['rev-parse','origin/main']);
     const reviewKey=digest([head,base]);
     let review=state.reviews[reviewKey];
@@ -121,7 +123,7 @@ async function cycle(args) {
     const freshBase=gh(['api',`repos/${repo}/git/ref/heads/main`,'--jq','.object.sha']);
     if(freshBase!==base || fresh.state!=='OPEN' || fresh.headRefOid!==head || inspectProductionChecks(checks,head).status!=='passed')throw new Error('reviewed_head_or_ci_changed');
     gh(['pr','merge',dispatch.pr_url,'--repo',repo,'--merge','--match-head-commit',head]);
-    return save({status:report.status==='ready_for_review'?'awaiting_portal':report.status,reviewed_head:head,merged_pr:dispatch.pr_url});
+    return save({status:report.status==='ready_for_review'?'awaiting_portal':report.status,verification:report.verification,reviewed_head:head,merged_pr:dispatch.pr_url});
   } catch(error) {
     save({status:'needs_attention',error:error.message});
     throw error;

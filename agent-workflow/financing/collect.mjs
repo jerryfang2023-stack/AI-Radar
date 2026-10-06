@@ -45,7 +45,7 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
       try { return { lead, result: await capture(lead, { date, reader }) }; }
       catch (error) { return { lead, result: { status: 'pending', reason: error.message } }; }
     }));
-    const records = results.filter(({ result }) => result.status === 'accepted').map(({ lead, result }) => ({
+    const records = results.filter(({ result }) => result.record).map(({ lead, result }) => ({
       snapshotRef: `financing/${date}/${digest(lead.url).slice(0,16)}.json`,
       sourceUrl: lead.url, dataDate: date, contentHash: result.record.content_hash, body: result.record.clean_text, metadata: result.record,
     }));
