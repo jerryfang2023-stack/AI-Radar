@@ -121,27 +121,30 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录Fleuret公告及Stoïk官网可核实的职位与一笔天使投资；不扩展为完整履历或组合。",
-      "summary": "Fleuret公告将Jules Veyrat列为Stoïk联合创始人兼CEO及该轮天使投资人；Stoïk官网也列其为CEO。",
+      "summary": "Fleuret AI融资公告将Jules Veyrat列为€4M pre-seed轮的网络安全领域business angel，并标注其为Stoïk联合创始人兼CEO。Stoïk官网也列其为CEO。",
       "current_roles": [
         {
-          "title": "联合创始人兼CEO",
+          "title": "Co-founder and CEO",
           "organization": "Stoïk",
-          "source_id": "jules_round_role"
+          "source_id": "fleuret-jules"
         }
       ],
       "career": [],
       "education": [],
-      "experience_summary": "Stoïk官网称其于2020年底进入网络保险领域。",
+      "experience_summary": "Stoïk官网称其于2020年底进入网络保险领域。 Fleuret AI公告同时列其为欧洲网络安全领域business angel。",
       "track_record": [
         {
-          "description": "Fleuret公告将Jules Veyrat列为该公司€4M pre-seed轮网络安全行业天使投资人之一；未披露个人投资金额。",
+          "description": "被Fleuret AI公告列为其€4M pre-seed轮business angel；个人投资金额未披露。",
+          "source_id": "fleuret-jules"
+        },
+        {
+          "description": "融资来源记录：Fleuret AI · 历史轮次未披露 · 本轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d53e6de7830c8d74"
         }
       ],
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅覆盖Fleuret AI发行方公告所列投资活动与该公告注明职位；未发现可在本批来源中核验的完整履历。",
       "sources": [
         {
           "source_id": "jules_round_role",
@@ -166,12 +169,21 @@
           "source_content_hash": "0ef491fc388899ac0c53e83be9a31c61ef10dddadb754ff579cfdd7f7941f0f9",
           "quote": "has closed a €4M pre-seed round led by RAISE Ventures, alongside Auriga Cyber Ventures, Wind Capital, Better Angle and leading business angels from the cybersecurity world.",
           "quote_hash": "23d98227a7268569101571c113168cbd672c226a4c73f5cddea9fef105c8223a"
+        },
+        {
+          "source_id": "fleuret-jules",
+          "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
+          "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
+          "source_content_hash": "74676b1cbd75c347df847c0c2cbf3bf7fd0492daad3527fce20d1e23a81227dc",
+          "quote": "Business angels Founders and operators from European cybersecurity. Jules Veyrat Co-founder and CEO, Stoïk",
+          "quote_hash": "4bae425db0f9183f45b23672e987d5dcfd52b0e6239662b9bdc3e3e0bb60cdb2"
         }
       ],
       "last_verified_at": "2026-10-06",
       "facts": [],
       "milestones": [],
-      "contacts": []
+      "contacts": [],
+      "profile_type": "person"
     },
     "translations": {
       "zh-CN": {

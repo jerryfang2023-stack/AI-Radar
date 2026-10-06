@@ -169871,27 +169871,26 @@
       "contacts": []
     },
     "INV-725f55065d6e53": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录Fleuret公告及Stoïk官网可核实的职位与一笔天使投资；不扩展为完整履历或组合。",
-      "summary": "Fleuret公告将Jules Veyrat列为Stoïk联合创始人兼CEO及该轮天使投资人；Stoïk官网也列其为CEO。",
+      "summary": "Fleuret AI融资公告将Jules Veyrat列为€4M pre-seed轮的网络安全领域business angel，并标注其为Stoïk联合创始人兼CEO。Stoïk官网也列其为CEO。",
       "current_roles": [
         {
-          "title": "联合创始人兼CEO",
+          "title": "Co-founder and CEO",
           "organization": "Stoïk",
-          "source_id": "jules_round_role"
+          "source_id": "fleuret-jules"
         }
       ],
       "career": [],
       "education": [],
-      "experience_summary": "Stoïk官网称其于2020年底进入网络保险领域。",
+      "experience_summary": "Stoïk官网称其于2020年底进入网络保险领域。 Fleuret AI公告同时列其为欧洲网络安全领域business angel。",
       "track_record": [
         {
-          "description": "Fleuret公告将Jules Veyrat列为该公司€4M pre-seed轮网络安全行业天使投资人之一；未披露个人投资金额。",
-          "source_id": "FISRC-d53e6de7830c8d74"
+          "description": "被Fleuret AI公告列为其€4M pre-seed轮business angel；个人投资金额未披露。",
+          "source_id": "fleuret-jules"
         }
       ],
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅覆盖Fleuret AI发行方公告所列投资活动与该公告注明职位；未发现可在本批来源中核验的完整履历。",
       "sources": [
         {
           "source_id": "jules_round_role",
@@ -169916,20 +169915,43 @@
           "source_content_hash": "0ef491fc388899ac0c53e83be9a31c61ef10dddadb754ff579cfdd7f7941f0f9",
           "quote": "has closed a €4M pre-seed round led by RAISE Ventures, alongside Auriga Cyber Ventures, Wind Capital, Better Angle and leading business angels from the cybersecurity world.",
           "quote_hash": "23d98227a7268569101571c113168cbd672c226a4c73f5cddea9fef105c8223a"
+        },
+        {
+          "source_id": "fleuret-jules",
+          "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
+          "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
+          "source_content_hash": "74676b1cbd75c347df847c0c2cbf3bf7fd0492daad3527fce20d1e23a81227dc",
+          "quote": "Business angels Founders and operators from European cybersecurity. Jules Veyrat Co-founder and CEO, Stoïk",
+          "quote_hash": "4bae425db0f9183f45b23672e987d5dcfd52b0e6239662b9bdc3e3e0bb60cdb2"
         }
       ],
       "last_verified_at": "2026-10-06",
       "facts": [],
       "milestones": [],
-      "contacts": []
+      "contacts": [],
+      "profile_type": "person"
     },
     "INV-73f63f78f0c8f5": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "官网团队页可核实合伙人资料，首页只提供宽泛投资自述；融资范围限于Fleuret公告具名披露的一笔投资。",
-      "summary": "Wind Capital官网称其寻找创新项目并支持创业者；团队页将Thierry Vandewalle列为创始合伙人。Fleuret公告将Wind Capital列为€4M pre-seed轮投资方之一。",
+      "summary": "Wind Capital官网将其投资主张描述为支持可持续变化领域的创始人；团队页将Thierry Vandewalle列为创始合伙人；Fleuret AI公告将其列为€4M pre-seed轮参与投资方。ADEME称Wind Venture为Wind Capital 2的管理公司。",
       "facts": [
+        {
+          "field": "investment_thesis",
+          "label": "投资主张",
+          "value": "官网自述支持致力于可持续变化的创始人。",
+          "source_id": "wind-site"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资方向",
+          "value": "空气质量与环境健康、再生食品/水/废弃物、清洁能源与智能基础设施、可持续出行与智能产业、先进材料与低影响建设、灾害韧性与安全系统。",
+          "source_id": "wind-focus"
+        },
+        {
+          "field": "manager_relationship",
+          "label": "管理公司关系",
+          "value": "法国ADEME资料称Wind Venture是获AMF认可的管理公司，目前管理Wind Capital 2。",
+          "source_id": "wind-ademe"
+        },
         {
           "field": "founding_partner",
           "label": "创始合伙人",
@@ -169940,17 +169962,21 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "Fleuret公告将Wind Capital列为该公司€4M pre-seed轮投资方之一。",
-          "source_id": "FISRC-d53e6de7830c8d74"
+          "description": "Fleuret AI公告将Wind Capital列为其€4M pre-seed轮参与方；公告未披露单方投资金额。",
+          "source_id": "wind-fleuret"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "将Wind Capital投资品牌/载体与ADEME所称Wind Venture管理公司分开表述；仅列一项已由被投企业公告确认的融资活动。",
       "contacts": [
         {
           "kind": "website",
-          "label": "Wind Capital官网",
-          "value": "Wind Capital",
+          "label": "官方网站",
+          "value": "wind.capital",
           "url": "https://wind.capital/",
-          "source_id": "wind_approach"
+          "source_id": "wind-site"
         }
       ],
       "sources": [
@@ -169977,33 +170003,88 @@
           "source_content_hash": "5ac206d5a3084477e487ffe1e01be561dead62a593c2553c129129e0fb5bf7e4",
           "quote": "Thierry Vandewalle Founding Partner",
           "quote_hash": "f828ac9c0971dedc41a0b196cbf63a5c846a0082dc20bbdf7ae3d43bb1f960de"
+        },
+        {
+          "source_id": "wind-site",
+          "source_url": "https://wind.capital/investing/",
+          "source_title": "Wind Capital – Official investment page",
+          "source_content_hash": "96aafced27a7d2995e1bb831a6a5c3c3ef32a6c14b71e3c37eed8dc25020ba62",
+          "quote": "At Wind, we back founders who are shaping the future—visionaries with sharp business instincts, bold ideas, and deep purpose.",
+          "quote_hash": "6b68d82117c99eaf59e3c84b06618ba1ec80b6c40644c798f8ca17a75cf8d56c"
+        },
+        {
+          "source_id": "wind-focus",
+          "source_url": "https://wind.capital/investing/",
+          "source_title": "Wind Capital – Official investment page",
+          "source_content_hash": "96aafced27a7d2995e1bb831a6a5c3c3ef32a6c14b71e3c37eed8dc25020ba62",
+          "quote": "Investment Focus eat and breathe Air Quality and Environmental Health Regenerative Food, Water and Waste Systems move and energise Clean Energy and Smart Infrastructure Sustainable Mobility and Smart Industry shelter and stay safe Advanced Materials and Low-Impact Construction Disaster Resilience and Secure Systems",
+          "quote_hash": "59b82034263d088d463f2e467317480733d20182730c5cfd280170ab01694909"
+        },
+        {
+          "source_id": "wind-ademe",
+          "source_url": "https://climate-transparency-hub.ademe.fr/dossier/wind-venture/",
+          "source_title": "Wind Venture",
+          "source_content_hash": "e27916ca8216625528335b58fb7106004ec39465ac48808190746a0694b9e88c",
+          "quote": "Wind Venture est une société de gestion agréée AMF qui gère actuellement un seul fonds: Wind Capital 2.",
+          "quote_hash": "0043f265353e3bd30dd64dd481046d31c6d7ee72d6e8ee5d82f69fb4e88d7512"
+        },
+        {
+          "source_id": "wind-fleuret",
+          "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
+          "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
+          "source_content_hash": "74676b1cbd75c347df847c0c2cbf3bf7fd0492daad3527fce20d1e23a81227dc",
+          "quote": "Fleuret AI, the French startup automating penetration testing with agentic AI, has closed a €4M pre-seed round led by RAISE Ventures, alongside Auriga Cyber Ventures, Wind Capital, Better Angle and leading business angels from the cybersecurity world.",
+          "quote_hash": "43315bcb96e61bf0f83d89b39328577eb14677e585dc0d9ad4bb925c9d238aae"
         }
       ],
       "last_verified_at": "2026-10-06"
     },
     "INV-7f3cd5c85d2b60": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "官网2026年隐私声明确认法律主体名称，并提及对潜在投资开展尽调；该页未说明投资策略或组合。",
-      "summary": "Greenoaks官网隐私声明将主体称为Greenoaks LLC，并提及对现有或潜在投资开展投资相关研究与尽调。",
+      "summary": "Glow公告将Greenoaks列为其$180M融资领投方之一。Greenoaks官网隐私声明称主体为Greenoaks LLC及关联方，并说明其对当前或潜在投资开展相关研究与尽调；Glow公告未披露其单笔投资额。",
       "facts": [
         {
           "field": "legal_entity",
           "label": "官网隐私声明主体",
           "value": "Greenoaks LLC",
           "source_id": "greenoaks_identity"
+        },
+        {
+          "field": "investment_activity",
+          "label": "已核实投资活动",
+          "value": "Glow $180M融资公告将Greenoaks列为领投方之一。",
+          "source_id": "greenoaks-glow"
+        },
+        {
+          "field": "investment_research",
+          "label": "隐私声明描述的业务",
+          "value": "官网称其对当前或潜在投资开展投资相关研究与尽调。",
+          "source_id": "greenoaks_activity"
         }
       ],
-      "milestones": [],
-      "track_record": [],
+      "milestones": [
+        {
+          "date": "2026-07-22",
+          "description": "Glow公告称完成$180M融资，并列Greenoaks为领投方之一。",
+          "source_id": "greenoaks-glow"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Glow公告列Greenoaks为其$180M融资领投方之一；未披露Greenoaks单方投资金额。",
+          "source_id": "greenoaks-glow"
+        }
+      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅核验一项发行方披露的融资活动及官网名称；没有将其外推为完整投资组合或基金信息。",
       "contacts": [
         {
           "kind": "website",
-          "label": "Greenoaks官网",
-          "value": "Greenoaks",
+          "label": "官方网站",
+          "value": "greenoaks.com",
           "url": "https://greenoaks.com/",
-          "source_id": "greenoaks_identity"
+          "source_id": "greenoaks-legal"
         }
       ],
       "sources": [
@@ -170022,16 +170103,28 @@
           "source_content_hash": "0f790907790789cbeb9897d68d4ccdf48089c400c03949b37239876d7289941d",
           "quote": "investment-related research or due diligence activities in respect of current or potential investments",
           "quote_hash": "aa0b91a793eb0fcacab364838113368f7ad3f7c7b49c4b1cd401c45443b2ef8f"
+        },
+        {
+          "source_id": "greenoaks-glow",
+          "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+          "source_title": "Glow Emerges From Stealth to Reinvent Endpoint Security in the AI Era",
+          "source_content_hash": "8af39c2235e2fcac25eb9d0ee59d5daee20fd32944bbd6f170d4e3680210f0dc",
+          "quote": "JULY 22, 2026, 6:00 AM ET TEL AVIV, Israel and PALO ALTO, Calif., July 22, 2026 - Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach. The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+          "quote_hash": "4f998882a7b20d7988d803d86f4e161aa224f1150cbfa2bacc8498509249e97e"
+        },
+        {
+          "source_id": "greenoaks-legal",
+          "source_url": "https://greenoaks.com/privacy",
+          "source_title": "Privacy Notice | Greenoaks",
+          "source_content_hash": "0f790907790789cbeb9897d68d4ccdf48089c400c03949b37239876d7289941d",
+          "quote": "Your privacy is important to Greenoaks LLC (“Greenoaks”) and our affiliates (together, “our”, “us”, or “we”).",
+          "quote_hash": "e4ce861742fde47604b77f8ac911200fdb12c8390dc576bb21bdce2c2e1ac803"
         }
       ],
       "last_verified_at": "2026-10-06"
     },
     "INV-825cc8f08cb256": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "SIDBI官方生态页面确认SVCL的全资子公司身份、设立时间及基金管理职能；未采信无法取得原文的QpiAI报道来描述组合。",
-      "summary": "SIDBI官方生态页面称，SIDBI Venture Capital Limited（SVCL）是SIDBI全资子公司，1999年设立为投资管理公司以管理风险投资基金。",
+      "summary": "SIDBI Venture Capital Limited（SVCL）是SIDBI全资子公司，官方资料称其于1999年成立以管理风险投资基金并向MSME提供成长资本。QpiAI发布的融资公告确认SVCL参与其$6.5M pre-Series A轮。",
       "facts": [
         {
           "field": "parent_company",
@@ -170050,17 +170143,38 @@
           "label": "官方描述职能",
           "value": "投资管理公司，管理风险投资基金",
           "source_id": "sidbi_identity"
+        },
+        {
+          "field": "growth_capital",
+          "label": "成长资本业务",
+          "value": "官方资料称其自成立以来持续向多元行业的MSME提供成长资本。",
+          "source_id": "sidbi-profile"
         }
       ],
-      "milestones": [],
-      "track_record": [],
+      "milestones": [
+        {
+          "date": "1999-07",
+          "description": "SIDBI官方资料记载SIDBI Venture Capital Limited于1999年7月设立。",
+          "source_id": "sidbi-profile"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "QpiAI发行方新闻稿称其$6.5M pre-Series A轮由Yournest与SVCL领投，并称SIDBI Venture Capital代表参与该轮。",
+          "source_id": "sidbi-qpiai"
+        }
+      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "法定关系和职能依据SIDBI官网；融资活动依据QpiAI发行方新闻稿。",
       "contacts": [
         {
           "kind": "website",
-          "label": "SIDBI官网",
-          "value": "SIDBI",
-          "url": "https://www.sidbi.in/",
-          "source_id": "sidbi_identity"
+          "label": "机构资料页",
+          "value": "SIDBI subsidiary network",
+          "url": "https://www.sidbi.in/en/ecosystem",
+          "source_id": "sidbi-profile"
         }
       ],
       "sources": [
@@ -170071,17 +170185,43 @@
           "source_content_hash": "7838dcc03bba91cc2e888131a3a020f209b5d7813f429c8bfe32126f04a54a43",
           "quote": "SIDBI Venture Capital Limited (SVCL), a wholly owned subsidiary of SIDBI, was set up in July 1999 as an Investment Management Company",
           "quote_hash": "8a9901f88c5fa9c29012c3416ae4e6c22b08ad3a0b4e3c12e73714ad65cd3e0c"
+        },
+        {
+          "source_id": "sidbi-profile",
+          "source_url": "https://www.sidbi.in/en/ecosystem",
+          "source_title": "Subsidiary Network – SIDBI Ecosystem",
+          "source_content_hash": "75c5d1ca93a3ca00eb7fde16cd545fab166187dc6d107d4413eb66c21ae70f0a",
+          "quote": "SIDBI VENTURE CAPITAL LIMITED (SVCL) Http://www.sidbiventure.co.in/ SIDBI Venture Capital Limited (SVCL), a wholly owned subsidiary of SIDBI, was set up in July 1999 as an Investment Management Company for managing Venture Capital Funds (VCFs).",
+          "quote_hash": "b93193f1157350e7bed5ffcb244effab44d4268bf7cc2d47ab0e585ac7b3b548"
+        },
+        {
+          "source_id": "sidbi-qpiai",
+          "source_url": "https://www.businesswire.com/news/home/20240621533638/en/QpiAI-Closes-%246.5-Mill-Pre-Series-A-Funding-Led-by-Yournest-and-SIDBI-Venture-Capital-to-Enable-Intelligence-Modelling-and-Intelligence-Compute-Using-Quantum-Computers",
+          "source_title": "QpiAI Closes $6.5 Mill Pre-Series A Funding Led by Yournest and SIDBI Venture Capital to Enable Intelligence Modelling and Intelligence Compute Using Quantum Computers",
+          "source_content_hash": "8c7f70041354b32dbfd6c0e6ce29e09a34400e6a222472236fb8bb385129ff20",
+          "quote": "QpiAI closed first ever external investment with the pre-series A funding of $6.5 million led by Yournest and SVCL.",
+          "quote_hash": "8e001c62ddaf6354b23c1b444cfe74b07f54db3fdde48d3dea3ab356c41023c9"
+        },
+        {
+          "source_id": "sidbi-qpiai-role",
+          "source_url": "https://www.businesswire.com/news/home/20240621533638/en/QpiAI-Closes-%246.5-Mill-Pre-Series-A-Funding-Led-by-Yournest-and-SIDBI-Venture-Capital-to-Enable-Intelligence-Modelling-and-Intelligence-Compute-Using-Quantum-Computers",
+          "source_title": "QpiAI Closes $6.5 Mill Pre-Series A Funding Led by Yournest and SIDBI Venture Capital to Enable Intelligence Modelling and Intelligence Compute Using Quantum Computers",
+          "source_content_hash": "8c7f70041354b32dbfd6c0e6ce29e09a34400e6a222472236fb8bb385129ff20",
+          "quote": "Debraj Banerjee, President at SIDBI Venture capital and Board of Director of QpiAI who led the funding round from SIDBI ventures, further added, “SVCL is very excited to be part of this very important deeptech journey of national importance.",
+          "quote_hash": "ba37795ab12226207d37d49edc8750bf1332cd80e96606df87b457c044c861e5"
         }
       ],
       "last_verified_at": "2026-10-06"
     },
     "INV-897bd9af40c86a": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录Fleuret 2026-10-06公告中的Almond联合创始人身份及该笔投资；2023年共同负责人头衔按历史资料标注，不推作当前职务。",
-      "summary": "Fleuret公告将Jean-François Aliotti列为Almond联合创始人及本轮天使投资人。Almond在2023年收购公告中称他与Olivier Pantaleo为公司共同负责人。",
-      "current_roles": [],
+      "summary": "Fleuret AI融资公告将Jean-François Aliotti列为€4M pre-seed轮的business angel，并标注其为Almond联合创始人。Almond 2023年公告称他与Olivier Pantaleo为公司共同负责人，该历史职务不表示目前仍在延续。",
+      "current_roles": [
+        {
+          "title": "Co-founder",
+          "organization": "Almond",
+          "source_id": "fleuret-jean"
+        }
+      ],
       "career": [
         {
           "organization": "Almond",
@@ -170092,13 +170232,16 @@
         }
       ],
       "education": [],
-      "experience_summary": "公开材料确认其与Almond的联合创始人关系及2023年职务称谓。",
+      "experience_summary": "公开材料确认其与Almond的联合创始人关系及2023年职务称谓。 Fleuret AI公告还将其列为该轮business angel。",
       "track_record": [
         {
-          "description": "Fleuret公告将其列为该公司€4M pre-seed轮天使投资人之一；未披露个人投资金额。",
-          "source_id": "FISRC-d53e6de7830c8d74"
+          "description": "被Fleuret AI公告列为其€4M pre-seed轮business angel；个人投资金额未披露。",
+          "source_id": "fleuret-jean"
         }
       ],
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅覆盖Fleuret AI发行方公告所列投资活动与该公告注明职位；未发现可在本批来源中核验的完整履历。",
       "sources": [
         {
           "source_id": "FISRC-d53e6de7830c8d74",
@@ -170115,12 +170258,21 @@
           "source_content_hash": "2e83d84808cd02ff395f8e5872135483334ba21e20f2574509101e547d5c0d5c",
           "quote": "Jean-François Aliotti et Olivier Pantaleo, co-dirigeants d’Almond",
           "quote_hash": "49367ecabaecbaae96b4ce6eb47a14f1e7a091171fad23929f2e00e3983fe69f"
+        },
+        {
+          "source_id": "fleuret-jean",
+          "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
+          "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
+          "source_content_hash": "74676b1cbd75c347df847c0c2cbf3bf7fd0492daad3527fce20d1e23a81227dc",
+          "quote": "Business angels Founders and operators from European cybersecurity. Jules Veyrat Co-founder and CEO, Stoïk Alexandre Andreini Chief Risk Officer, Stoïk Eric Fourrier CEO, GitGuardian Georges Lotigier Co-founder, Vade Olivier Pantaleo Co-founder, Almond Jean-François Aliotti Co-founder, Almond",
+          "quote_hash": "eb482efbadeb31d0195feea207a3aa44245de831919c23a5afb191abf618a77f"
         }
       ],
       "last_verified_at": "2026-10-06",
       "facts": [],
       "milestones": [],
-      "contacts": []
+      "contacts": [],
+      "profile_type": "person"
     },
     "INV-934868ab4cb2ca": {
       "profile_type": "organization",
@@ -171182,12 +171334,26 @@
       "last_verified_at": "2026-10-06"
     },
     "INV-87dbe05b938e51": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "SambaNova 官方融资公告将 Atlantic Bridge 列为existing investor。该材料确认本次公开披露的投资方名称与活动；本档案不延伸为完整机构背景或法律主体映射。",
-      "coverage_note": "仅按SambaNova官方公告记录其使用的投资方标签；公告未披露该机构的单家出资额或完整法律/管理结构，不据名称推断同名机构、管理人、投资策略或其他项目。",
+      "summary": "Atlantic Bridge官网将其定位为跨境增值型成长股权投资机构，投资欧洲、英国和美国的深科技公司。SambaNova发行方公告将Atlantic Bridge列为其$350M+ Series E融资的既有投资方。",
       "facts": [
+        {
+          "field": "investment_style",
+          "label": "投资方式",
+          "value": "Growth equity，跨境增值",
+          "source_id": "ab-home"
+        },
+        {
+          "field": "geographies",
+          "label": "投资地域",
+          "value": "欧洲、英国和美国",
+          "source_id": "ab-home"
+        },
+        {
+          "field": "sectors",
+          "label": "投资方向",
+          "value": "深科技",
+          "source_id": "ab-home"
+        },
         {
           "field": "investment_activity",
           "label": "SambaNova Series E 参与情况",
@@ -171198,17 +171364,45 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "SambaNova 官方 Series E 融资公告称其参与该轮融资的既有投资方；公告未披露Atlantic Bridge的单家出资金额。",
-          "source_id": "sambanova_series_e"
+          "description": "SambaNova公告称Atlantic Bridge参与其$350M+ Series E融资，并将其列为既有投资方。",
+          "source_id": "ab-sambanova"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构策略和地域来自官网自述；仅列一项由被投公司发行方披露的融资活动。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "abven.com",
+          "url": "https://abven.com/",
+          "source_id": "ab-home"
+        }
+      ],
       "sources": [
         {
           "source_id": "sambanova_series_e",
           "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m?hs_amp=true",
           "source_title": "SambaNova Unveils Fastest Chip for Agentic AI, Collaborates with Intel, and Raises $350M+",
           "source_content_hash": "a9ffc1d28d21e2ee8eacd5e0867c1438d345b5634a8d674a37ef8a75e8958b9d",
+          "quote": "Existing investors participating include: A&E, 8Square, Atlantic Bridge, BlackRock, GV, Nepenthe, Nuri Capital, and Redline Capital.",
+          "quote_hash": "6a8a047c2802d955e749a731a26a2b27b5a2bede3a38a7b553c8955d9353f6d7"
+        },
+        {
+          "source_id": "ab-home",
+          "source_url": "https://abven.com/",
+          "source_title": "Homepage – Atlantic Bridge",
+          "source_content_hash": "381cd4bbd5c6b5703600e335a230d45db1761261980928cfd4404471b47707f6",
+          "quote": "Atlantic Bridge is a Growth Equity Firm with a Cross Border Value Add strategy. We invest in deep technology companies in Europe, the UK and the US.",
+          "quote_hash": "8e48a602e36ffb1517a2ba6fbc3aee16320ab6ab346158e52bc9d6eba3edd7dc"
+        },
+        {
+          "source_id": "ab-sambanova",
+          "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+          "source_title": "SambaNova Unveils Fastest Chip for Agentic AI, Collaborates with Intel, and Raises $350M+",
+          "source_content_hash": "01c360b12c51d390127be46259b3262ec73f47fb2a2a8ff84e82f2165498c820",
           "quote": "Existing investors participating include: A&E, 8Square, Atlantic Bridge, BlackRock, GV, Nepenthe, Nuri Capital, and Redline Capital.",
           "quote_hash": "6a8a047c2802d955e749a731a26a2b27b5a2bede3a38a7b553c8955d9353f6d7"
         }
@@ -172164,6 +172358,152 @@
           "source_content_hash": "d119c9bbfb31ac3dda868a4f26929d8b1643bbe5a09ccec0242eb547ef958ac0",
           "quote": "Moglix is South Asia’s largest MRO (manufacturing, repair and operating supplies) procurement provider.",
           "quote_hash": "2d52c83f46d8d14d802cefa9c5f9948e4be7ddddaad197a30746133f37168159"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-47b9d1535cbbf0": {
+      "summary": "深交所披露的招股说明书将深圳力合金融控股股份有限公司简称为力合金控，并披露其通过持有力合智汇51%股权参与管理东升投资，且全资持有深圳力合融通创业投资有限公司。此处只录入文件披露的历史结构，不据此确认其与2026年Kando AI融资活动的关系。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "深圳力合金融控股股份有限公司",
+          "source_id": "lihe-prospectus"
+        },
+        {
+          "field": "venture_subsidiary",
+          "label": "全资创投子公司",
+          "value": "全资持有深圳力合融通创业投资有限公司。",
+          "source_id": "lihe-prospectus-subsidiary"
+        },
+        {
+          "field": "fund_manager_control",
+          "label": "基金管理主体关系",
+          "value": "持有东升投资执行事务合伙人深圳力合智汇创新基金管理有限公司51%股份。",
+          "source_id": "lihe-prospectus-gp"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "招股说明书披露，在该次发行前，力合金控通过相关持股结构合计控制发行人0.72%股权；该披露反映特定发行人的历史股权关系，不代表其完整投资组合。",
+          "source_id": "lihe-prospectus-equity"
+        }
+      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅核验法定简称及招股说明书披露的历史投资管理/持股结构；未确认队列关联的2026年Kando AI融资活动。",
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "lihe-prospectus",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc/RAS_000172CDEB1B8E3FE21A2036C1F4223F.pdf",
+          "source_title": "深水海纳水务集团股份有限公司招股说明书（深圳证券交易所披露PDF相关页摘录）",
+          "source_content_hash": "e571896cafa4c34b8bbab1bb49b7212812288682a9054a26bacf9c06b42e2d81",
+          "quote": "深圳力合金融控股股份有限公司（以下简称力合金控）系东升投资普通合伙人力合智汇的控股股东。",
+          "quote_hash": "4b018ce0a745706a4448dd6603ac167131aff524710a99a2b1e1f45057e3a72d"
+        },
+        {
+          "source_id": "lihe-prospectus-subsidiary",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc/RAS_000172CDEB1B8E3FE21A2036C1F4223F.pdf",
+          "source_title": "深水海纳水务集团股份有限公司招股说明书（深圳证券交易所披露PDF相关页摘录）",
+          "source_content_hash": "e571896cafa4c34b8bbab1bb49b7212812288682a9054a26bacf9c06b42e2d81",
+          "quote": "力合金控持股100.00%",
+          "quote_hash": "4d50cc6ac7f307d973af33afea76232a2ded2042b39e4e5bb23bf34dec1cc0e1"
+        },
+        {
+          "source_id": "lihe-prospectus-equity",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc/RAS_000172CDEB1B8E3FE21A2036C1F4223F.pdf",
+          "source_title": "深水海纳水务集团股份有限公司招股说明书（深圳证券交易所披露PDF相关页摘录）",
+          "source_content_hash": "e571896cafa4c34b8bbab1bb49b7212812288682a9054a26bacf9c06b42e2d81",
+          "quote": "深圳力合金融控股股份有限公司合计控制公司 0.72%股权。",
+          "quote_hash": "3f4167308f1e15259eeda48b3b0cd1ebf42c220e8d155e80a3d7522447694a27"
+        },
+        {
+          "source_id": "lihe-prospectus-gp",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc/RAS_000172CDEB1B8E3FE21A2036C1F4223F.pdf",
+          "source_title": "深水海纳水务集团股份有限公司招股说明书（深圳证券交易所披露PDF相关页摘录）",
+          "source_content_hash": "e571896cafa4c34b8bbab1bb49b7212812288682a9054a26bacf9c06b42e2d81",
+          "quote": "深圳力合金融控股股份有限公司持有公司股东东升投资的执行事务合伙人深圳力合智汇创新基金管理有限公司 51.00%股份",
+          "quote_hash": "55ff58b13688b74aeb563e83defdc58c6b6d5feeb5c4df9ee858d18dede20e45"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-8152c4a00b479f": {
+      "summary": "Holly Ventures官网介绍其为由John Brennan管理的$33M种子阶段风险投资基金，专注网络安全早期创业公司；Glow于2026年7月公布的$180M融资公告将其列为参与方之一。",
+      "facts": [
+        {
+          "field": "fund_size",
+          "label": "官网自述基金规模",
+          "value": "$33M seed stage fund",
+          "source_id": "holly-about"
+        },
+        {
+          "field": "stage_focus",
+          "label": "投资阶段",
+          "value": "Seed",
+          "source_id": "holly-about"
+        },
+        {
+          "field": "sector_focus",
+          "label": "投资方向",
+          "value": "网络安全",
+          "source_id": "holly-about"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "地域重点",
+          "value": "全球，重点关注以色列",
+          "source_id": "holly-about"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Glow公告称Holly Ventures参与其$180M融资；公告未披露单方投资金额。",
+          "source_id": "holly-glow"
+        }
+      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金规模、策略和地域均按官网自述标记；公开融资活动仅列已核实的一项。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "hollyventures.com",
+          "url": "https://www.hollyventures.com/",
+          "source_id": "holly-about"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "holly-about",
+          "source_url": "https://www.hollyventures.com/about",
+          "source_title": "Holly Ventures – About",
+          "source_content_hash": "8c1ec711364dea41cf86e9864f2b7b3218d930131962a2df27916aaac28a8ce6",
+          "quote": "John Brennan is the Founder & Managing Partner of Holly Ventures, a $33M seed stage venture capital fund that exclusively invests in and supports cybersecurity entrepreneurs at their earliest stages.",
+          "quote_hash": "a2c5a75bd761b98df9cbd860ae0118ad426529406933e5923015823167288874"
+        },
+        {
+          "source_id": "holly-thesis",
+          "source_url": "https://www.hollyventures.com/about",
+          "source_title": "Holly Ventures – About",
+          "source_content_hash": "8c1ec711364dea41cf86e9864f2b7b3218d930131962a2df27916aaac28a8ce6",
+          "quote": "Stage focus: Seed Sector focus: Cybersecurity Geographic focus: Global, with an emphasis on Israel",
+          "quote_hash": "fbf72a9cadf9df81c3251d3af4956f52871c515a5e4f00313c2d4165fe6aab92"
+        },
+        {
+          "source_id": "holly-glow",
+          "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+          "source_title": "Glow Emerges From Stealth to Reinvent Endpoint Security in the AI Era",
+          "source_content_hash": "8af39c2235e2fcac25eb9d0ee59d5daee20fd32944bbd6f170d4e3680210f0dc",
+          "quote": "JULY 22, 2026, 6:00 AM ET TEL AVIV, Israel and PALO ALTO, Calif., July 22, 2026 - Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach. The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+          "quote_hash": "4f998882a7b20d7988d803d86f4e161aa224f1150cbfa2bacc8498509249e97e"
         }
       ],
       "last_verified_at": "2026-10-06"

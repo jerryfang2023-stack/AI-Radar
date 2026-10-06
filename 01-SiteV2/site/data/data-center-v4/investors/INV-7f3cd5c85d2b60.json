@@ -121,33 +121,55 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "官网2026年隐私声明确认法律主体名称，并提及对潜在投资开展尽调；该页未说明投资策略或组合。",
-      "summary": "Greenoaks官网隐私声明将主体称为Greenoaks LLC，并提及对现有或潜在投资开展投资相关研究与尽调。",
+      "summary": "Glow公告将Greenoaks列为其$180M融资领投方之一。Greenoaks官网隐私声明称主体为Greenoaks LLC及关联方，并说明其对当前或潜在投资开展相关研究与尽调；Glow公告未披露其单笔投资额。",
       "facts": [
         {
           "field": "legal_entity",
           "label": "官网隐私声明主体",
           "value": "Greenoaks LLC",
           "source_id": "greenoaks_identity"
+        },
+        {
+          "field": "investment_activity",
+          "label": "已核实投资活动",
+          "value": "Glow $180M融资公告将Greenoaks列为领投方之一。",
+          "source_id": "greenoaks-glow"
+        },
+        {
+          "field": "investment_research",
+          "label": "隐私声明描述的业务",
+          "value": "官网称其对当前或潜在投资开展投资相关研究与尽调。",
+          "source_id": "greenoaks_activity"
         }
       ],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "2026-07-22",
+          "description": "Glow公告称完成$180M融资，并列Greenoaks为领投方之一。",
+          "source_id": "greenoaks-glow"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Glow公告列Greenoaks为其$180M融资领投方之一；未披露Greenoaks单方投资金额。",
+          "source_id": "greenoaks-glow"
+        },
         {
           "description": "融资来源记录：Safe Superintelligence Inc. · 历史轮次未披露 · 2025-04 · Series B 领投（2025年4月）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-062aa9e732f0aba2"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅核验一项发行方披露的融资活动及官网名称；没有将其外推为完整投资组合或基金信息。",
       "contacts": [
         {
           "kind": "website",
-          "label": "Greenoaks官网",
-          "value": "Greenoaks",
+          "label": "官方网站",
+          "value": "greenoaks.com",
           "url": "https://greenoaks.com/",
-          "source_id": "greenoaks_identity"
+          "source_id": "greenoaks-legal"
         }
       ],
       "sources": [
@@ -166,6 +188,22 @@
           "source_content_hash": "0f790907790789cbeb9897d68d4ccdf48089c400c03949b37239876d7289941d",
           "quote": "investment-related research or due diligence activities in respect of current or potential investments",
           "quote_hash": "aa0b91a793eb0fcacab364838113368f7ad3f7c7b49c4b1cd401c45443b2ef8f"
+        },
+        {
+          "source_id": "greenoaks-glow",
+          "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+          "source_title": "Glow Emerges From Stealth to Reinvent Endpoint Security in the AI Era",
+          "source_content_hash": "8af39c2235e2fcac25eb9d0ee59d5daee20fd32944bbd6f170d4e3680210f0dc",
+          "quote": "JULY 22, 2026, 6:00 AM ET TEL AVIV, Israel and PALO ALTO, Calif., July 22, 2026 - Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach. The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+          "quote_hash": "4f998882a7b20d7988d803d86f4e161aa224f1150cbfa2bacc8498509249e97e"
+        },
+        {
+          "source_id": "greenoaks-legal",
+          "source_url": "https://greenoaks.com/privacy",
+          "source_title": "Privacy Notice | Greenoaks",
+          "source_content_hash": "0f790907790789cbeb9897d68d4ccdf48089c400c03949b37239876d7289941d",
+          "quote": "Your privacy is important to Greenoaks LLC (“Greenoaks”) and our affiliates (together, “our”, “us”, or “we”).",
+          "quote_hash": "e4ce861742fde47604b77f8ac911200fdb12c8390dc576bb21bdce2c2e1ac803"
         },
         {
           "source_id": "FISRC-062aa9e732f0aba2",

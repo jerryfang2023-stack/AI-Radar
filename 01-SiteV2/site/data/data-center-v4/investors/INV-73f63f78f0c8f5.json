@@ -137,12 +137,26 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "官网团队页可核实合伙人资料，首页只提供宽泛投资自述；融资范围限于Fleuret公告具名披露的一笔投资。",
-      "summary": "Wind Capital官网称其寻找创新项目并支持创业者；团队页将Thierry Vandewalle列为创始合伙人。Fleuret公告将Wind Capital列为€4M pre-seed轮投资方之一。",
+      "summary": "Wind Capital官网将其投资主张描述为支持可持续变化领域的创始人；团队页将Thierry Vandewalle列为创始合伙人；Fleuret AI公告将其列为€4M pre-seed轮参与投资方。ADEME称Wind Venture为Wind Capital 2的管理公司。",
       "facts": [
+        {
+          "field": "investment_thesis",
+          "label": "投资主张",
+          "value": "官网自述支持致力于可持续变化的创始人。",
+          "source_id": "wind-site"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资方向",
+          "value": "空气质量与环境健康、再生食品/水/废弃物、清洁能源与智能基础设施、可持续出行与智能产业、先进材料与低影响建设、灾害韧性与安全系统。",
+          "source_id": "wind-focus"
+        },
+        {
+          "field": "manager_relationship",
+          "label": "管理公司关系",
+          "value": "法国ADEME资料称Wind Venture是获AMF认可的管理公司，目前管理Wind Capital 2。",
+          "source_id": "wind-ademe"
+        },
         {
           "field": "founding_partner",
           "label": "创始合伙人",
@@ -153,17 +167,25 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "Fleuret公告将Wind Capital列为该公司€4M pre-seed轮投资方之一。",
+          "description": "Fleuret AI公告将Wind Capital列为其€4M pre-seed轮参与方；公告未披露单方投资金额。",
+          "source_id": "wind-fleuret"
+        },
+        {
+          "description": "融资来源记录：Fleuret AI · 预种子轮 · 2026-10-05 · 本轮参投 · €4 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d53e6de7830c8d74"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "将Wind Capital投资品牌/载体与ADEME所称Wind Venture管理公司分开表述；仅列一项已由被投企业公告确认的融资活动。",
       "contacts": [
         {
           "kind": "website",
-          "label": "Wind Capital官网",
-          "value": "Wind Capital",
+          "label": "官方网站",
+          "value": "wind.capital",
           "url": "https://wind.capital/",
-          "source_id": "wind_approach"
+          "source_id": "wind-site"
         }
       ],
       "sources": [
@@ -190,6 +212,38 @@
           "source_content_hash": "5ac206d5a3084477e487ffe1e01be561dead62a593c2553c129129e0fb5bf7e4",
           "quote": "Thierry Vandewalle Founding Partner",
           "quote_hash": "f828ac9c0971dedc41a0b196cbf63a5c846a0082dc20bbdf7ae3d43bb1f960de"
+        },
+        {
+          "source_id": "wind-site",
+          "source_url": "https://wind.capital/investing/",
+          "source_title": "Wind Capital – Official investment page",
+          "source_content_hash": "96aafced27a7d2995e1bb831a6a5c3c3ef32a6c14b71e3c37eed8dc25020ba62",
+          "quote": "At Wind, we back founders who are shaping the future—visionaries with sharp business instincts, bold ideas, and deep purpose.",
+          "quote_hash": "6b68d82117c99eaf59e3c84b06618ba1ec80b6c40644c798f8ca17a75cf8d56c"
+        },
+        {
+          "source_id": "wind-focus",
+          "source_url": "https://wind.capital/investing/",
+          "source_title": "Wind Capital – Official investment page",
+          "source_content_hash": "96aafced27a7d2995e1bb831a6a5c3c3ef32a6c14b71e3c37eed8dc25020ba62",
+          "quote": "Investment Focus eat and breathe Air Quality and Environmental Health Regenerative Food, Water and Waste Systems move and energise Clean Energy and Smart Infrastructure Sustainable Mobility and Smart Industry shelter and stay safe Advanced Materials and Low-Impact Construction Disaster Resilience and Secure Systems",
+          "quote_hash": "59b82034263d088d463f2e467317480733d20182730c5cfd280170ab01694909"
+        },
+        {
+          "source_id": "wind-ademe",
+          "source_url": "https://climate-transparency-hub.ademe.fr/dossier/wind-venture/",
+          "source_title": "Wind Venture",
+          "source_content_hash": "e27916ca8216625528335b58fb7106004ec39465ac48808190746a0694b9e88c",
+          "quote": "Wind Venture est une société de gestion agréée AMF qui gère actuellement un seul fonds: Wind Capital 2.",
+          "quote_hash": "0043f265353e3bd30dd64dd481046d31c6d7ee72d6e8ee5d82f69fb4e88d7512"
+        },
+        {
+          "source_id": "wind-fleuret",
+          "source_url": "https://fleuret.ai/news/fleuret-raises-4m",
+          "source_title": "Fleuret raises €4M pre-seed for agentic pentesting",
+          "source_content_hash": "74676b1cbd75c347df847c0c2cbf3bf7fd0492daad3527fce20d1e23a81227dc",
+          "quote": "Fleuret AI, the French startup automating penetration testing with agentic AI, has closed a €4M pre-seed round led by RAISE Ventures, alongside Auriga Cyber Ventures, Wind Capital, Better Angle and leading business angels from the cybersecurity world.",
+          "quote_hash": "43315bcb96e61bf0f83d89b39328577eb14677e585dc0d9ad4bb925c9d238aae"
         }
       ],
       "last_verified_at": "2026-10-06"

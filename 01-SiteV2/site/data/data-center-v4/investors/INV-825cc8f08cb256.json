@@ -121,11 +121,7 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "SIDBI官方生态页面确认SVCL的全资子公司身份、设立时间及基金管理职能；未采信无法取得原文的QpiAI报道来描述组合。",
-      "summary": "SIDBI官方生态页面称，SIDBI Venture Capital Limited（SVCL）是SIDBI全资子公司，1999年设立为投资管理公司以管理风险投资基金。",
+      "summary": "SIDBI Venture Capital Limited（SVCL）是SIDBI全资子公司，官方资料称其于1999年成立以管理风险投资基金并向MSME提供成长资本。QpiAI发布的融资公告确认SVCL参与其$6.5M pre-Series A轮。",
       "facts": [
         {
           "field": "parent_company",
@@ -144,22 +140,42 @@
           "label": "官方描述职能",
           "value": "投资管理公司，管理风险投资基金",
           "source_id": "sidbi_identity"
+        },
+        {
+          "field": "growth_capital",
+          "label": "成长资本业务",
+          "value": "官方资料称其自成立以来持续向多元行业的MSME提供成长资本。",
+          "source_id": "sidbi-profile"
         }
       ],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "1999-07",
+          "description": "SIDBI官方资料记载SIDBI Venture Capital Limited于1999年7月设立。",
+          "source_id": "sidbi-profile"
+        }
+      ],
       "track_record": [
+        {
+          "description": "QpiAI发行方新闻稿称其$6.5M pre-Series A轮由Yournest与SVCL领投，并称SIDBI Venture Capital代表参与该轮。",
+          "source_id": "sidbi-qpiai"
+        },
         {
           "description": "融资来源记录：QpiAI · 历史轮次未披露 · pre-Series A轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6bcefafa0e61f49"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "法定关系和职能依据SIDBI官网；融资活动依据QpiAI发行方新闻稿。",
       "contacts": [
         {
           "kind": "website",
-          "label": "SIDBI官网",
-          "value": "SIDBI",
-          "url": "https://www.sidbi.in/",
-          "source_id": "sidbi_identity"
+          "label": "机构资料页",
+          "value": "SIDBI subsidiary network",
+          "url": "https://www.sidbi.in/en/ecosystem",
+          "source_id": "sidbi-profile"
         }
       ],
       "sources": [
@@ -170,6 +186,30 @@
           "source_content_hash": "7838dcc03bba91cc2e888131a3a020f209b5d7813f429c8bfe32126f04a54a43",
           "quote": "SIDBI Venture Capital Limited (SVCL), a wholly owned subsidiary of SIDBI, was set up in July 1999 as an Investment Management Company",
           "quote_hash": "8a9901f88c5fa9c29012c3416ae4e6c22b08ad3a0b4e3c12e73714ad65cd3e0c"
+        },
+        {
+          "source_id": "sidbi-profile",
+          "source_url": "https://www.sidbi.in/en/ecosystem",
+          "source_title": "Subsidiary Network – SIDBI Ecosystem",
+          "source_content_hash": "75c5d1ca93a3ca00eb7fde16cd545fab166187dc6d107d4413eb66c21ae70f0a",
+          "quote": "SIDBI VENTURE CAPITAL LIMITED (SVCL) Http://www.sidbiventure.co.in/ SIDBI Venture Capital Limited (SVCL), a wholly owned subsidiary of SIDBI, was set up in July 1999 as an Investment Management Company for managing Venture Capital Funds (VCFs).",
+          "quote_hash": "b93193f1157350e7bed5ffcb244effab44d4268bf7cc2d47ab0e585ac7b3b548"
+        },
+        {
+          "source_id": "sidbi-qpiai",
+          "source_url": "https://www.businesswire.com/news/home/20240621533638/en/QpiAI-Closes-%246.5-Mill-Pre-Series-A-Funding-Led-by-Yournest-and-SIDBI-Venture-Capital-to-Enable-Intelligence-Modelling-and-Intelligence-Compute-Using-Quantum-Computers",
+          "source_title": "QpiAI Closes $6.5 Mill Pre-Series A Funding Led by Yournest and SIDBI Venture Capital to Enable Intelligence Modelling and Intelligence Compute Using Quantum Computers",
+          "source_content_hash": "8c7f70041354b32dbfd6c0e6ce29e09a34400e6a222472236fb8bb385129ff20",
+          "quote": "QpiAI closed first ever external investment with the pre-series A funding of $6.5 million led by Yournest and SVCL.",
+          "quote_hash": "8e001c62ddaf6354b23c1b444cfe74b07f54db3fdde48d3dea3ab356c41023c9"
+        },
+        {
+          "source_id": "sidbi-qpiai-role",
+          "source_url": "https://www.businesswire.com/news/home/20240621533638/en/QpiAI-Closes-%246.5-Mill-Pre-Series-A-Funding-Led-by-Yournest-and-SIDBI-Venture-Capital-to-Enable-Intelligence-Modelling-and-Intelligence-Compute-Using-Quantum-Computers",
+          "source_title": "QpiAI Closes $6.5 Mill Pre-Series A Funding Led by Yournest and SIDBI Venture Capital to Enable Intelligence Modelling and Intelligence Compute Using Quantum Computers",
+          "source_content_hash": "8c7f70041354b32dbfd6c0e6ce29e09a34400e6a222472236fb8bb385129ff20",
+          "quote": "Debraj Banerjee, President at SIDBI Venture capital and Board of Director of QpiAI who led the funding round from SIDBI ventures, further added, “SVCL is very excited to be part of this very important deeptech journey of national importance.",
+          "quote_hash": "ba37795ab12226207d37d49edc8750bf1332cd80e96606df87b457c044c861e5"
         },
         {
           "source_id": "FISRC-a6bcefafa0e61f49",
