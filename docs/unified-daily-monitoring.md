@@ -18,7 +18,7 @@
 - 社群与 Builders 的代码和任务定义保留，Windows 与 GitHub 两端均禁用，等待用户后续升级；不属于融资流程，也不得自动恢复。
 
 入口：`node agent-workflow/financing/dispatch.mjs --date=YYYY-MM-DD`。
-生产：`funding-daily-pr.yml` 调用 `financing/run.mjs --phase=collect` 和 `--phase=produce`。
+生产：`funding-daily-pr.yml` 调用 `financing/run.mjs --phase=collect`、`--phase=verify` 和 `--phase=produce`。
 只看计划：`node agent-workflow/financing/run.mjs --phase=plan --date=YYYY-MM-DD`。
 
 采集按 AIHOT 全公开窗口分页和独立国内/海外赛道查询执行，并接入 39 个媒体/公告/投资机构订阅入口及 AIHOT 精选快照与增量。39 条初始查询分别留存成功、空结果、失败状态；每轮原文尝试最多 480 条，并发 4，超出部分续跑。搜索摘要不作原文证据，抓取失败/原始日期缺失进入待核验。具身智能/机器人主营关键词只触发待核验，由责任 agent 根据原文确认排除；服务机器人客户的普通 AI 企业不得被关键词排除。补充订阅故障留在 `supplemental_failures` 并按域名搜索补查，不抹掉其他渠道成功结果；来源状态保存在私有证据仓 `financing-monitor-state/`，随原文备份持久化。来源清单见 `docs/financing-sources.md`。
@@ -44,3 +44,23 @@ PR/CI 合并到 main 并完成 Pages 后，运行：
 ## 融资主体卡与轮次
 
 前台每个已核验融资主体仅展示一张卡，主信息采用最新已接受轮次，卡内保存历次融资。`catalog.mjs` 通过 `subjects.mjs` 生成主体 `cards` 与独立统计 `event_cards`；资本流向必须使用后者。主体身份优先使用已审核 `application_entity_id`，不按失配的历史 canonical ID 或名称相似度自动合并。简称、跨编号主体别名、同轮重复披露与产品别名由 `funding-insights/card-review.json` 保存核验依据。旧卡链接和无歧义主体旧编号映射到当前主体；不同币种不相加，累计总额及拟融资不能当作新轮次。详见 [本次复查](2026-10-02-financing-card-review.md)。
+
+## 监测后待核验线索
+
+生产顺序为 `collect → verify → 私有证据持久化 → produce`。`verify` 接收已接受采集中的待核验条目，并消费私有 `financing-monitor-state/verification-queue.json` 中到期的后续任务；不重新执行发现查询、不改 collection。直接调用 `--phase=produce` 或 `all` 也先做幂等准备。
+
+核验先复用有哈希的原文及责任复核记录。已完成处置保持不变；历史 `pending247-review.json`／通用 `lead-review.json` 的 pending 不是完成依据，必须进入实际后续流程。PR1191 的存量私有抓取可按来源、正文哈希、文章结构和日期重新检查后送入事实链，不能仅因有 content_hash 就当合格原文。
+
+缺少可用原文时，优先尝试责任审核记录提供的原始替代来源；否则使用原融资标题作一次精确搜索，只获取候选URL，之后必须捕获原文。搜索摘要不作事实证据。替代原文先保留在私有证据库并进入needs_attention；必须由责任人核对主体和轮次，在lead-review条目提供source_binding（source_url、reviewed_by、reviewed_at、reason），才可送入supplement和事实链。不能仅因标题相似或替代页面有融资内容就生成无关新增卡。
+
+预算不变：补取和当日采集、已知私有补录尝试共同占用480次上限，并发4；原文阅读器沿用每日20次回执。后续搜索按已有采集请求量扣减160次采集搜索上限，每条精确查询最多使用一个提供商请求，预写私有请求回执；不配置新凭据。已有融资研究链的120次搜索上限独立保留，不宣称这两条原有链共用160次总额。2026-10-06的已知补录尝试必须计入，不能只以collection的439条推断尚有41条额度。
+
+结构和日期合格原文写入既有 `FINANCING-SUPPLEMENT-1` 并合并原 supplement。`produce` 复用现有 Claim/实体处理、融资研究、分类与发布门禁，核对企业身份、AI主营、日期、本轮金额/币种、轮次和同轮去重。累计金额不作本轮金额回退值；合法未披露与字段已确认不是同一含义。核验准备、取得原文、事实门禁通过和发布完成分别记录。
+
+`verification.json` 保存逐条状态、来源、原始及最新原因、QA/融资事件/卡片引用和后续处理字段。`publication.json.verification.counts` 为核验后计数，原counts保持不可变采集统计。缺原文或日期、主体冲突、研究或分类待审均保留原因；单条缺少私有对象不应使整日监测失败。
+
+后续任务只由既有每日verify阶段消费，不新增定时任务。每条最多两轮实际处理，未用到网络/事实链的纯预算延期不消耗处理轮次；下一次到期为次日，最长七天。达到轮次上限或期限进入 `needs_attention`，责任人为 `responsible_financing_reviewer`，下一步明确为补充新原文与责任审核。新责任审核证据可重新激活对应条目，但不能清空既有付费请求回执。当天未知搜索/原文尝试不自动重试；私有已完成抓取可以恢复丢失的公开检查点。此处completed只表示本次有界核验已结束，不能解释为pending已解决。
+
+旧 `pending_verification` 缺少后置回执时返回 `verification_required`，VPS记录needs_attention并要求恢复接受检查点，不能把它当完成或据此重采。旧ready_for_review/已发布批次不自动重做；存量迁移应显式恢复该日接受产物。生产回执和私有队列随已有证据持久化/哈希检查点发布，故须工作流进入main后才生效。VPS主控仍以真实配置为准，本改动不切换模式。
+
+发布验证包括 `npm run test:financing-monitor` 和现有跨平台生产CI。真实日批次还应检查有界队列是否持久化、到期条目是否消费、每项缺证原因、门禁和网站/小程序回读；离线账本重放不替代真实模型或线上验收。
