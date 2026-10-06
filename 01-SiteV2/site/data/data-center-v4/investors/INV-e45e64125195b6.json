@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-06",
     "currentDate": "2026-10-06",
-    "eventCount": 3952,
+    "eventCount": 3959,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -183,19 +183,35 @@
     "translations": {
       "zh-CN": {
         "public_profile.summary": {
-          "text": "SEC投资顾问公开披露将其登记为FINCADIA ADVISORS LLC（CRD 338396）；融资来源列出Fincadia Advisors参与Positron融资。",
-          "source_hash": "b5f676720a994577b13dccc94acc93e4885e4303dde99d6efc034f4e61ff7a91",
+          "text": "SEC Form ADV列出FINCADIA ADVISORS LLC（CRD 338396）。Positron AI于2026年9月的融资公告将Fincadia Advisors列为Series C-1的追加投资者之一。两处引用来源均未说明投资金额或更广泛的机构授权。",
+          "source_hash": "ad350494806a4975444cc12f2ec41e8dbef6e1057a16ca551bce345bcaa468df",
           "provider": "deepseek",
           "model": "deepseek-flash",
-          "translated_at": "2026-10-04T02:43:51.001Z",
+          "translated_at": "2026-10-06T04:02:07.348Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "Form ADV 主体名称",
+          "source_hash": "4459ea2e0fc6f323a21655878654b0b0bd1ac8f1951d73fa64a10cf827234a00",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-06T04:02:07.348Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "CRD 编号",
+          "source_hash": "dda72dbb8b48da286b4a98e5a0231839dc98ab86e9ad7d2dfef58c36e9baba1e",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-03T00:37:51.908Z",
           "status": "translated"
         },
         "public_profile.track_record[0].description": {
-          "text": "公开融资来源将Fincadia Advisors列为Positron AI相关融资的投资参与方。",
-          "source_hash": "04527118b342e7bebfcc47c2bd1ce9a6b1f2618d14f2adbbee0d700c73bafdce",
+          "text": "Positron AI 的发行方公告将 Fincadia Advisors 列为 Series C-1 的追加投资方之一；公告未披露其出资金额或领投角色。",
+          "source_hash": "94ce812e8f696d22aa458bca8720b73e2bf0e47fa40072dbddebc590a0955f80",
           "provider": "deepseek",
           "model": "deepseek-flash",
-          "translated_at": "2026-10-04T02:43:51.002Z",
+          "translated_at": "2026-10-06T04:02:07.348Z",
           "status": "translated"
         }
       }

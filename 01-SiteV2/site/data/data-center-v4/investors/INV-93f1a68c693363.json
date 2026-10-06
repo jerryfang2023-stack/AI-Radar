@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-06",
     "currentDate": "2026-10-06",
-    "eventCount": 3952,
+    "eventCount": 3959,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,30 +61,37 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
     "china_market_activity_count": 3,
     "china_market_company_count": 3,
-    "first_disclosed_at": "2026-07-13",
+    "first_disclosed_at": "2026-03-31",
     "latest_disclosed_at": "2026-09-23",
     "role_counts": {
+      "other_current_round": 1,
       "participant": 4
     },
     "round_codes": [
       "multi_round",
       "pre_series_a",
-      "seed"
+      "seed",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-7f505bc9744206fd",
         "canonical_entity_id": "EN-7f505bc9744206fd",
         "name": "灵睿智芯"
+      },
+      {
+        "entity_id": "EN-4f48a235dd30c397",
+        "canonical_entity_id": "",
+        "name": "美酷瑞（Gamercury AI）"
       },
       {
         "entity_id": "EN-b321d29699ce1dcd",
@@ -263,6 +270,46 @@
             "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
           }
         ]
+      },
+      {
+        "activity_id": "IA-81dc0de1575d2ab6",
+        "funding_insight_id": "FI-f7ae2a03304562e8",
+        "event_ids": [
+          "EV-bc320dac1d8dfed9"
+        ],
+        "company_entity_id": "EN-4f48a235dd30c397",
+        "company_canonical_entity_id": "",
+        "company_name": "美酷瑞（Gamercury AI）",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-03-31",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-9af2d19624e1ce4d",
+            "source_url": "https://eu.36kr.com/zh/newsflashes/3746728711389700",
+            "source_title": "“美酷瑞Gamercury AI”完成新一轮融资-36氪",
+            "source_content_hash": "33de21fb3e93df874a2b6429b259275fd3c920b0f7f777d1d4593c737bf70f40",
+            "quote": "本轮由上海天使会联合投资",
+            "quote_hash": "fa01f06a62175bc2aa7b64169cf46e77a95b58db0cccb6947e4f0fa74873f999"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -297,6 +344,14 @@
         "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
         "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
         "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
+      },
+      {
+        "source_id": "FISRC-9af2d19624e1ce4d",
+        "source_url": "https://eu.36kr.com/zh/newsflashes/3746728711389700",
+        "source_title": "“美酷瑞Gamercury AI”完成新一轮融资-36氪",
+        "source_content_hash": "33de21fb3e93df874a2b6429b259275fd3c920b0f7f777d1d4593c737bf70f40",
+        "quote": "本轮由上海天使会联合投资",
+        "quote_hash": "fa01f06a62175bc2aa7b64169cf46e77a95b58db0cccb6947e4f0fa74873f999"
       }
     ],
     "public_profile": {

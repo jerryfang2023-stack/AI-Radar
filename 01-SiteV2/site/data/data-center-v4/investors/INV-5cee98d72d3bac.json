@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-06",
     "currentDate": "2026-10-06",
-    "eventCount": 3952,
+    "eventCount": 3959,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-15",
-    "latest_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-07-22",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-d27608cca9b65f91",
+        "canonical_entity_id": "",
+        "name": "Glow"
+      },
       {
         "entity_id": "EN-9779cb30fd39ff9e",
         "canonical_entity_id": "",
@@ -86,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-517df6b319353358",
+        "funding_insight_id": "FI-25422dbadb01919a",
+        "event_ids": [
+          "EV-2da0ebb3ba7c5677"
+        ],
+        "company_entity_id": "EN-d27608cca9b65f91",
+        "company_canonical_entity_id": "",
+        "company_name": "Glow",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$180 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 180000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.8 亿美元"
+        },
+        "announced_at": "2026-07-22",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e192dd3fe1a72590",
+            "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+            "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+            "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+            "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+            "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+          }
+        ]
+      },
       {
         "activity_id": "IA-67ff537f3e46c771",
         "funding_insight_id": "FI-e5dee46683ef97ba",
@@ -161,6 +207,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e192dd3fe1a72590",
+        "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+        "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+        "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+        "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+        "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+      },
+      {
         "source_id": "FISRC-9cc6124e644d0e3d",
         "source_url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities",
         "source_title": "随着AI智能体成为员工，NewCore携6600万美元崭露头角，赋予它们身份",
@@ -206,6 +260,10 @@
         {
           "description": "Island 官方 Series B 公告将 Cyberstarts 列为既有投资方。",
           "source_id": "FISRC-1bd8ed9d0103713f"
+        },
+        {
+          "description": "融资来源记录：Glow · A轮 · 2026-07-22 · 本轮领投 · $180 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e192dd3fe1a72590"
         }
       ],
       "contacts": [],
@@ -241,6 +299,14 @@
           "source_content_hash": "031f2a7c134953501ba5ec0c84554c344f539ce248b5b09ced5ab535aa853b48",
           "quote": "We are the day one partner for industry-defining cybersecurity companies.",
           "quote_hash": "890c803b5155f800fd4c4963833bc9f80da00b3237e5c1ecb1618ed59582ebd3"
+        },
+        {
+          "source_id": "FISRC-e192dd3fe1a72590",
+          "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+          "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+          "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+          "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+          "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
         }
       ],
       "last_verified_at": "2026-10-03",

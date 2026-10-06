@@ -1,0 +1,124 @@
+{
+  "event_id": "EV-4a6ee188df36e21c",
+  "company_name": "Eden AI Labs Inc.",
+  "status": "blocked",
+  "problems": [
+    "research_independent_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "Eden AI Labs Inc. 融资 150 万美元，打造面向所有人的个人 AI",
+    "event_source_refs": [
+      "SA-f1380f6ede43713f"
+    ],
+    "event_claim_refs": [
+      "CL-7aa898a6b463afc6"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-1a2290470e0aa754",
+        "canonical_name": "SAN FRANCISCO"
+      },
+      {
+        "entity_id": "EN-1e931b89bd9e0497",
+        "canonical_name": "Eden AI Labs Inc."
+      }
+    ],
+    "event_metrics": [
+      "$1.5 million"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-7aa898a6b463afc6",
+        "raw_id": "RAW-ff88833d9eb4e981",
+        "subject": "Eden AI Labs Inc.",
+        "object": "$1.5M to Build Personal AI That Works for Everyone",
+        "source_quote_length": 140
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "Eden AI Labs Inc."
+  },
+  "queries": [
+    "\"Eden AI Labs Inc.\" 2026 funding round investors",
+    "\"Eden AI Labs Inc.\" $1.5 million funding announcement",
+    "\"Eden AI Labs Inc.\" official product customers",
+    "\"Eden AI Labs Inc.\" \"why we invested\"",
+    "\"Eden AI Labs Inc.\" 2026 raises led by",
+    "\"Eden AI Labs Inc.\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Eden AI Labs Inc.\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://finance.yahoo.com/technology/ai/articles/eden-ai-labs-inc-raises-163000905.html?fr=sycsrp_catchall",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Eden AI Labs Inc.\" $1.5 million funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://superpowerdaily.com/posts/eden-ai-labs-raises-1-5-million-for-an-ai-assistant-built-to-make-purchases",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Eden AI Labs Inc.\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Eden AI Labs Inc.\" \"why we invested\"",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"Eden AI Labs Inc.\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.edenai.co/post/eden-ai-raises-1-5-million-to-build-the-future-of-ai-as-a-service",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Eden AI Labs Inc.\" 2026 raises led by",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Eden AI Labs Inc.\" founders headquarters product",
+      "status": "completed",
+      "count": 2
+    },
+    {
+      "provider": "tavily",
+      "query": "\"Eden AI Labs Inc.\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.manilatimes.net/2026/10/06/tmt-newswire/globenewswire/hotel-leaders-take-center-stage-at-the-hospitality-show-2026/2439376",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    }
+  ]
+}

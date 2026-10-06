@@ -1,9 +1,9 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-10-06T00:42:25.690Z",
+  "generated_at": "2026-10-06T03:54:31.216Z",
   "data_date": "2026-10-06",
   "prompt_version": "model-assist-2026-07-18.2",
-  "source_count": 102,
+  "source_count": 111,
   "candidates": [
     {
       "candidate_id": "MAC-003fd2e3f830bdc1",
@@ -100,6 +100,54 @@
         }
       ],
       "generated_at": "2026-10-06T00:29:57.387Z"
+    },
+    {
+      "candidate_id": "MAC-0108e021123d891f",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c39021d4e261ee12",
+      "raw_id": "RAW-b2c14f30af05f76f",
+      "source_ref": "SA-42907592e1e5f4f2",
+      "source_hash": "616701fa16ce297f",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Kando AI",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source consistently refers to the candidate as 'Kando AI', but without a verified alternative to match, the decision is unknown.",
+        "candidate_name": "Kando AI"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 45,
+          "quote": "星连资本被投企业 Kando AI 完成数千万元种子轮融资，要做“决策领域的Cursor”"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:54:30.409Z"
     },
     {
       "candidate_id": "MAC-014d4c7be3a1ec21",
@@ -346,6 +394,54 @@
       "generated_at": "2026-10-06T00:30:10.651Z"
     },
     {
+      "candidate_id": "MAC-096d7d6414fadcb8",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c215bee2c6320ad4",
+      "raw_id": "RAW-7efae622114dbd1e",
+      "source_ref": "SA-6c837203c8d949c9",
+      "source_hash": "66b21fb62de9e3a0",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "宣布",
+        "rationale": "The candidate name \"宣布\" is a common verb meaning \"announce\" and does not match the verified alternative \"OpenAI\". The source text mentions OpenAI only in an unrelated news headline, not as the entity performing the described action.",
+        "candidate_name": "宣布"
+      },
+      "evidence": [
+        {
+          "start": 654,
+          "end": 670,
+          "quote": "OpenAI抢后台，马斯克抢前台"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:40:26.958Z"
+    },
+    {
       "candidate_id": "MAC-09e10a5fa9d7a4c4",
       "task_type": "entity_resolution",
       "asset_id": "EN-4332124bdf7da478",
@@ -546,6 +642,54 @@
       "generated_at": "2026-10-06T00:30:05.728Z"
     },
     {
+      "candidate_id": "MAC-1221494ce7c0d12e",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-d93e16f0441d6c05",
+      "raw_id": "RAW-b2c14f30af05f76f",
+      "source_ref": "SA-42907592e1e5f4f2",
+      "source_hash": "616701fa16ce297f",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "星连资本被投企业Kando AI",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source describes Kando AI as a portfolio company of 星连资本, but the candidate name is a descriptive phrase rather than a name explicitly used in the source.",
+        "candidate_name": "星连资本被投企业Kando AI"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 45,
+          "quote": "星连资本被投企业 Kando AI 完成数千万元种子轮融资，要做“决策领域的Cursor”"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:40:27.335Z"
+    },
+    {
       "candidate_id": "MAC-148801523c2eaaac",
       "task_type": "entity_resolution",
       "asset_id": "EN-a97a61c3fb8e5ec9",
@@ -592,6 +736,69 @@
         }
       ],
       "generated_at": "2026-10-06T00:29:53.999Z"
+    },
+    {
+      "candidate_id": "MAC-15efd1110383351f",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-964c29a2c0105887",
+      "raw_id": "RAW-409282209ef200f7",
+      "source_ref": "SA-513eb7fcc31a4fd0",
+      "source_hash": "3cb081398eefc63e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "OneByZero",
+            "object": "US$20 million Series A led by Jungle Ventures",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "market_expansion",
+            "subject": "OneByZero",
+            "object": "Japan",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 367,
+          "end": 559,
+          "quote": "OneByZero (OBZ), a Singapore-headquartered Frontier AI Deployment Company, today announced it has raised US$20 million in Series A led by Jungle Ventures, the company's first external funding."
+        },
+        {
+          "start": 2804,
+          "end": 2924,
+          "quote": "Open Japan. Build a local team and bring OBZ's forward-deployed model to one of the region's largest enterprise markets."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:40:25.449Z"
     },
     {
       "candidate_id": "MAC-16b6afc4ce435b72",
@@ -896,6 +1103,93 @@
       "generated_at": "2026-10-06T00:29:40.987Z"
     },
     {
+      "candidate_id": "MAC-1aee755bfcae3bc7",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1e931b89bd9e0497",
+      "raw_id": "RAW-ff88833d9eb4e981",
+      "source_ref": "SA-f1380f6ede43713f",
+      "source_hash": "dfa1bec301e80f7e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Eden AI Labs Inc.",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative entity. The source does mention 'Eden AI Labs Inc.' exactly, but without a verified alternative to compare against, the identity decision is unknown.",
+        "candidate_name": "Eden AI Labs Inc."
+      },
+      "evidence": [
+        {
+          "start": 176,
+          "end": 309,
+          "quote": "Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:40:26.127Z"
+    },
+    {
+      "candidate_id": "MAC-1e25a26ba685ccfc",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-b7062e5b58ae4a2f",
+      "raw_id": "RAW-b7062e5b58ae4a2f",
+      "source_ref": "SA-98e8386f2c8e18ae",
+      "source_hash": "c749714d90214c73",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "QpiAI",
+            "object": "Rs 50 crore debt financing",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 255,
+          "quote": "Quantum computing and artificial intelligence company QpiAI has secured Rs 50 crore in debt financing from InnoVen Capital India Fund II, with the Bengaluru startup allotting 5,000 Series B non-convertible debentures to the fund, according to RoC filings."
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T00:50:16.098Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex financing evidence review",
+        "reviewed_at": "2026-10-06T00:50:16.098Z",
+        "note": "主体为 QpiAI；债务融资 50 crore 为 5 亿印度卢比，Series B 是债券系列不是股权 B 轮。"
+      }
+    },
+    {
       "candidate_id": "MAC-2129bb73564e21a5",
       "task_type": "qa_repair",
       "asset_id": "QA-fcf077dcbc1834a3",
@@ -996,6 +1290,45 @@
         }
       ],
       "generated_at": "2026-10-06T00:29:54.882Z"
+    },
+    {
+      "candidate_id": "MAC-25a571557151e9ac",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-ff88833d9eb4e981",
+      "raw_id": "RAW-ff88833d9eb4e981",
+      "source_ref": "SA-f1380f6ede43713f",
+      "source_hash": "dfa1bec301e80f7e",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核明确融资主体、完成状态与本轮金额；估值和累计融资不充当本轮。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Eden AI Labs Inc.",
+            "object": "raised $1.5 million",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 127,
+          "end": 309,
+          "quote": "SAN FRANCISCO, Oct. 05, 2026 (GLOBE NEWSWIRE) -- Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible."
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T03:53:24.943Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex pending247 evidence review",
+        "reviewed_at": "2026-10-06T03:53:24.943Z",
+        "note": "原文逐字段审核；仅采融资句对应的事实。"
+      }
     },
     {
       "candidate_id": "MAC-264da777107b5e61",
@@ -1262,6 +1595,173 @@
         }
       ],
       "generated_at": "2026-10-06T00:30:00.525Z"
+    },
+    {
+      "candidate_id": "MAC-2f10e9ad247222cc",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-9d529df970659e69",
+      "raw_id": "RAW-409282209ef200f7",
+      "source_ref": "SA-513eb7fcc31a4fd0",
+      "source_hash": "3cb081398eefc63e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "OneByZero",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source consistently refers to the candidate as OneByZero (abbreviated OBZ), but without a verified alternative to match, the decision is unknown.",
+        "candidate_name": "OneByZero"
+      },
+      "evidence": [
+        {
+          "start": 367,
+          "end": 559,
+          "quote": "OneByZero (OBZ), a Singapore-headquartered Frontier AI Deployment Company, today announced it has raised US$20 million in Series A led by Jungle Ventures, the company's first external funding."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:54:30.414Z"
+    },
+    {
+      "candidate_id": "MAC-30338f6e16cfd619",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-1587848205ed2e62",
+      "raw_id": "RAW-1587848205ed2e62",
+      "source_ref": "SA-6ab60ee2770ce7ef",
+      "source_hash": "4efe600e67ac1635",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核明确融资主体、完成状态与本轮金额；估值和累计融资不充当本轮。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Valon",
+            "object": "raised $150 million Series D",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 212,
+          "end": 416,
+          "quote": "Valon Technologies (“Valon”), the AI-native operating system for regulated finance, today announced it has raised $150 million in Series D funding at a $2.3 billion valuation, doubling its last valuation."
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T03:53:24.929Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex pending247 evidence review",
+        "reviewed_at": "2026-10-06T03:53:24.929Z",
+        "note": "原文逐字段审核；仅采融资句对应的事实。"
+      }
+    },
+    {
+      "candidate_id": "MAC-31a054bd79d29918",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-ee48a7eec3673ea9",
+      "raw_id": "RAW-ee48a7eec3673ea9",
+      "source_ref": "SA-0f99b8ceb5bdf9c9",
+      "source_hash": "33de21fb3e93df87",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核明确融资主体、完成状态与本轮金额；估值和累计融资不充当本轮。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "美酷瑞",
+            "object": "完成新一轮融资",
+            "evidence_index": 0,
+            "amount_disclosure": "not_disclosed"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 75,
+          "end": 130,
+          "quote": "36氪获悉，近日，AI游戏公司“美酷瑞Gamercury AI”宣布完成新一轮融资，本轮由上海天使会联合投资。"
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T03:53:24.952Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex pending247 evidence review",
+        "reviewed_at": "2026-10-06T03:53:24.952Z",
+        "note": "原文逐字段审核；仅采融资句对应的事实。"
+      }
+    },
+    {
+      "candidate_id": "MAC-31d5a31d96b4b4bc",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-7efae622114dbd1e",
+      "raw_id": "RAW-7efae622114dbd1e",
+      "source_ref": "SA-6c837203c8d949c9",
+      "source_hash": "66b21fb62de9e3a0",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核明确融资主体、完成状态与本轮金额；估值和累计融资不充当本轮。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "词元无限",
+            "object": "完成天使++轮融资",
+            "evidence_index": 0,
+            "amount_disclosure": "not_disclosed"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 20,
+          "end": 67,
+          "quote": "近日，企业级AI Agent基础设施专属服务商北京词元无限科技有限公司宣布完成天使++轮融资。"
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T03:53:24.949Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex pending247 evidence review",
+        "reviewed_at": "2026-10-06T03:53:24.949Z",
+        "note": "天使++单轮金额未披露，数亿元为累计融资，不计为本轮金额。"
+      }
     },
     {
       "candidate_id": "MAC-32f28bb4342d4fff",
@@ -1596,6 +2096,102 @@
         }
       ],
       "generated_at": "2026-10-06T00:29:49.735Z"
+    },
+    {
+      "candidate_id": "MAC-45a8d25efdaebc6a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-73ef44a8cc2d0b2e",
+      "raw_id": "RAW-b56857e59649e5ec",
+      "source_ref": "SA-946804ff7cfe4046",
+      "source_hash": "7a2e33a3e219eacb",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "TEL AVIV",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The quote shows TEL AVIV only as a location dateline, not as an organization identity.",
+        "candidate_name": "TEL AVIV"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 53,
+          "quote": "TEL AVIV, Israel and PALO ALTO, Calif., July 22, 2026"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:54:29.548Z"
+    },
+    {
+      "candidate_id": "MAC-464c3e0470c0a497",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-aab373badaa83178",
+      "raw_id": "RAW-1587848205ed2e62",
+      "source_ref": "SA-6ab60ee2770ce7ef",
+      "source_hash": "4efe600e67ac1635",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Valon",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be matched to a verified alternative entity. The source text refers to the entity as 'Valon Technologies (\"Valon\")' and 'Valon', but without a verified alternative list, identity cannot be confirmed under the required criteria.",
+        "candidate_name": "Valon"
+      },
+      "evidence": [
+        {
+          "start": 212,
+          "end": 416,
+          "quote": "Valon Technologies (“Valon”), the AI-native operating system for regulated finance, today announced it has raised $150 million in Series D funding at a $2.3 billion valuation, doubling its last valuation."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:40:26.571Z"
     },
     {
       "candidate_id": "MAC-47b2bb93cd63726f",
@@ -2744,6 +3340,45 @@
       "generated_at": "2026-10-06T00:29:21.631Z"
     },
     {
+      "candidate_id": "MAC-614f0e935bdeb0b6",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-b56857e59649e5ec",
+      "raw_id": "RAW-b56857e59649e5ec",
+      "source_ref": "SA-946804ff7cfe4046",
+      "source_hash": "7a2e33a3e219eacb",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核明确融资主体、完成状态与本轮金额；估值和累计融资不充当本轮。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Glow",
+            "object": "raised $180 million funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 276,
+          "quote": "TEL AVIV, Israel and PALO ALTO, Calif., July 22, 2026 - Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach."
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T03:53:24.954Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex pending247 evidence review",
+        "reviewed_at": "2026-10-06T03:53:24.954Z",
+        "note": "原文逐字段审核；仅采融资句对应的事实。"
+      }
+    },
+    {
       "candidate_id": "MAC-6218545c13e96009",
       "task_type": "qa_repair",
       "asset_id": "QA-b23b72cd492cf4a2",
@@ -2905,6 +3540,50 @@
         }
       ],
       "generated_at": "2026-10-06T00:29:26.120Z"
+    },
+    {
+      "candidate_id": "MAC-669177c4f7f98911",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-b2c14f30af05f76f",
+      "raw_id": "RAW-b2c14f30af05f76f",
+      "source_ref": "SA-42907592e1e5f4f2",
+      "source_hash": "616701fa16ce297f",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核明确融资主体、完成状态与本轮金额；估值和累计融资不充当本轮。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Kando AI",
+            "object": "完成数千万元种子轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 417,
+          "end": 462,
+          "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。"
+        },
+        {
+          "start": 358,
+          "end": 415,
+          "quote": "2026年6月，两人正式创立了Kando AI，希望让AI从真实决策及其结果中持续学习，构建下一代自进化决策系统。"
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T03:53:24.946Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex pending247 evidence review",
+        "reviewed_at": "2026-10-06T03:53:24.946Z",
+        "note": "融资主体Kando AI，不含投资方标题前缀，区别于芯片企业Kandou AI。"
+      }
     },
     {
       "candidate_id": "MAC-66e3e20eb2a8b0d1",
@@ -3419,6 +4098,54 @@
       "generated_at": "2026-10-06T00:30:04.376Z"
     },
     {
+      "candidate_id": "MAC-739222c9874b8586",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-d27608cca9b65f91",
+      "raw_id": "RAW-b56857e59649e5ec",
+      "source_ref": "SA-946804ff7cfe4046",
+      "source_hash": "7a2e33a3e219eacb",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Glow",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source identifies Glow as an AI-powered endpoint security company but provides no verified alternative to match.",
+        "candidate_name": "Glow"
+      },
+      "evidence": [
+        {
+          "start": 56,
+          "end": 276,
+          "quote": "Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:54:31.205Z"
+    },
+    {
       "candidate_id": "MAC-7451d5cd196b81bf",
       "task_type": "entity_resolution",
       "asset_id": "EN-bae4f94653fa295c",
@@ -3796,6 +4523,50 @@
       "generated_at": "2026-10-06T00:29:56.277Z"
     },
     {
+      "candidate_id": "MAC-8661b7a0aaf48281",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-28416247c1352ff9",
+      "raw_id": "RAW-28416247c1352ff9",
+      "source_ref": "SA-727e4baef97b8cf9",
+      "source_hash": "a49383a9c435a7e5",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核明确融资主体、完成状态与本轮金额；估值和累计融资不充当本轮。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Kando AI",
+            "object": "完成数千万元种子轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 407,
+          "end": 452,
+          "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。"
+        },
+        {
+          "start": 339,
+          "end": 396,
+          "quote": "2026年6月，两人正式创立了Kando AI，希望让AI从真实决策及其结果中持续学习，构建下一代自进化决策系统。"
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T03:53:24.957Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex pending247 evidence review",
+        "reviewed_at": "2026-10-06T03:53:24.957Z",
+        "note": "融资主体Kando AI，不含投资方标题前缀，区别于芯片企业Kandou AI。"
+      }
+    },
+    {
       "candidate_id": "MAC-895cda964a52cacc",
       "task_type": "claim_extraction",
       "asset_id": "QA-a70a9425e30b23be",
@@ -3868,6 +4639,50 @@
         }
       ],
       "generated_at": "2026-10-06T00:29:35.622Z"
+    },
+    {
+      "candidate_id": "MAC-89db3630a958c371",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-dd449f96d6d55567",
+      "raw_id": "RAW-dd449f96d6d55567",
+      "source_ref": "SA-bebe4c619f83d1c9",
+      "source_hash": "39e9265437318811",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核明确融资主体、完成状态与本轮金额；估值和累计融资不充当本轮。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "威联机器人",
+            "object": "完成数千万元天使融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 73,
+          "quote": "投资界（ID：pedaily2012）7月14日消息，威联机器人科技（深圳）有限公司（以下简称“MOVA LINCO”）近日完成数千万元天使融资。"
+        },
+        {
+          "start": 190,
+          "end": 310,
+          "quote": "公司产品矩阵以AI智能语音路由器、AI NAS及AI算力盒子三大品类为核心，构建“连接+存储+算力”三位一体的家庭AI基础设施架构，覆盖从智能家居中枢、数据存储及本地算力分配等全场景需求，专注为全球用户提供智能化、主动化的家庭AI服务体验。"
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T03:53:24.951Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex pending247 evidence review",
+        "reviewed_at": "2026-10-06T03:53:24.951Z",
+        "note": "消费家庭AI硬件，虽然名称含机器人，实际产品并非机器人本体或核心部件。"
+      }
     },
     {
       "candidate_id": "MAC-8dc69115cb713840",
@@ -4014,6 +4829,45 @@
       "generated_at": "2026-10-06T00:29:39.109Z"
     },
     {
+      "candidate_id": "MAC-90490af6de0a05df",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-409282209ef200f7",
+      "raw_id": "RAW-409282209ef200f7",
+      "source_ref": "SA-513eb7fcc31a4fd0",
+      "source_hash": "3cb081398eefc63e",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核明确融资主体、完成状态与本轮金额；估值和累计融资不充当本轮。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "OneByZero",
+            "object": "raised US$20 million Series A",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 367,
+          "end": 559,
+          "quote": "OneByZero (OBZ), a Singapore-headquartered Frontier AI Deployment Company, today announced it has raised US$20 million in Series A led by Jungle Ventures, the company's first external funding."
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T03:53:24.940Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex pending247 evidence review",
+        "reviewed_at": "2026-10-06T03:53:24.940Z",
+        "note": "原文逐字段审核；仅采融资句对应的事实。"
+      }
+    },
+    {
       "candidate_id": "MAC-907e8235f0d06c8f",
       "task_type": "entity_resolution",
       "asset_id": "EN-e88ecf834fa37e5a",
@@ -4060,6 +4914,54 @@
         }
       ],
       "generated_at": "2026-10-06T00:39:02.529Z"
+    },
+    {
+      "candidate_id": "MAC-91b36b1424f26c14",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e2e913258212abc8",
+      "raw_id": "RAW-7efae622114dbd1e",
+      "source_ref": "SA-6c837203c8d949c9",
+      "source_hash": "66b21fb62de9e3a0",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "词元无限",
+        "rationale": "The candidate entity 词元无限 is a Chinese company (北京词元无限科技有限公司) described in the source, while the only verified alternative is OpenAI, a different organization. The source does not identify 词元无限 as OpenAI.",
+        "candidate_name": "词元无限"
+      },
+      "evidence": [
+        {
+          "start": 20,
+          "end": 67,
+          "quote": "近日，企业级AI Agent基础设施专属服务商北京词元无限科技有限公司宣布完成天使++轮融资。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:40:28.071Z"
     },
     {
       "candidate_id": "MAC-9318028ae7877b52",
@@ -4469,6 +5371,45 @@
         }
       ],
       "generated_at": "2026-10-06T00:30:07.995Z"
+    },
+    {
+      "candidate_id": "MAC-ab58acb216f7732d",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-013fb7469194e386",
+      "raw_id": "RAW-013fb7469194e386",
+      "source_ref": "SA-8b32bd1b1957b142",
+      "source_hash": "8ec5aa2eedfbbb27",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Good Tape",
+            "object": "€600k from Nordic Makers",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 316,
+          "end": 564,
+          "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers, an investment group founded by former unicorn founders that invests its own capital in early-stage Nordic startups, with an average ticket size of €500k."
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T00:50:16.086Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex financing evidence review",
+        "reviewed_at": "2026-10-06T00:50:16.086Z",
+        "note": "标题中的地点不是主体，本轮 60 万欧元，50 万欧元是投资机构平均单笔投资额。同轮应复用既有 Good Tape 卡。"
+      }
     },
     {
       "candidate_id": "MAC-abc0eb335853de21",
@@ -5226,6 +6167,54 @@
       "generated_at": "2026-10-06T00:29:38.149Z"
     },
     {
+      "candidate_id": "MAC-dc6a8e7692289f8a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-4a4954b3af3ce9a1",
+      "raw_id": "RAW-dd449f96d6d55567",
+      "source_ref": "SA-bebe4c619f83d1c9",
+      "source_hash": "39e9265437318811",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "威联机器人",
+        "rationale": "The candidate name 威联机器人 appears in the source only as part of the fuller company name 威联机器人科技（深圳）有限公司, which is also referred to by the English brand MOVA LINCO. No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative.",
+        "candidate_name": "威联机器人"
+      },
+      "evidence": [
+        {
+          "start": 27,
+          "end": 72,
+          "quote": "威联机器人科技（深圳）有限公司（以下简称“MOVA LINCO”）近日完成数千万元天使融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:54:29.106Z"
+    },
+    {
       "candidate_id": "MAC-defd31d57a2b2feb",
       "task_type": "entity_resolution",
       "asset_id": "EN-8e1abf6559587e46",
@@ -5274,6 +6263,138 @@
       "generated_at": "2026-10-06T00:39:00.268Z"
     },
     {
+      "candidate_id": "MAC-e059fb919eb3d398",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-249b53c6b731c7d7",
+      "raw_id": "RAW-249b53c6b731c7d7",
+      "source_ref": "SA-3cdee274ce658189",
+      "source_hash": "2ead490262be955e",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Namespace",
+            "object": "$42m Series B",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 145,
+          "quote": "A Zurich-founded\ndeveloper infrastructure startup has raised $42m in a Series B financing round,\njust seven months after completing its Series A."
+        },
+        {
+          "start": 434,
+          "end": 499,
+          "quote": "Namespace is aiming to be the infrastructure\nlayer for AI coding…"
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T00:50:16.080Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex financing evidence review",
+        "reviewed_at": "2026-10-06T00:50:16.080Z",
+        "note": "该原文直接说明 Namespace 为 AI coding 提供基础设施，与完整欧元报道为同一轮；按明确 AI 主营引文审核漏提取。"
+      }
+    },
+    {
+      "candidate_id": "MAC-e4f973baa8662f84",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-33ad665bfd0052d7",
+      "raw_id": "RAW-33ad665bfd0052d7",
+      "source_ref": "SA-0a63a715c4769e1e",
+      "source_hash": "8c38f9a266a81e37",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "利德健康",
+            "object": "数千万元Pre-A++轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 31,
+          "quote": "利德健康完成数千万元Pre-A++轮融资，专注AI生命科学仪器"
+        },
+        {
+          "start": 412,
+          "end": 478,
+          "quote": "公司专注AI生命科学仪器与生物智造装备，围绕细胞产业链布局系统级产品解决方案，已推出20余款高端AI生命科学仪器及生物智造装备产品。"
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T00:50:16.067Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex financing evidence review",
+        "reviewed_at": "2026-10-06T00:50:16.067Z",
+        "note": "融资对象使用本轮披露语句；保留明确公告日期，不将本句以外的往轮融资混为多轮融资。"
+      }
+    },
+    {
+      "candidate_id": "MAC-e8ad873e54b8c64b",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-4f856fac45e98a31",
+      "raw_id": "RAW-4f856fac45e98a31",
+      "source_ref": "SA-067d1d3dab162e4c",
+      "source_hash": "5972d3a1f8cacb94",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Pandektes",
+            "object": "€13.5 million Series A",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 317,
+          "end": 450,
+          "quote": "Pandektes, a Copenhagen-based LegalTech company specialising in legal research, has raised €13.5 million in a Series A funding round."
+        },
+        {
+          "start": 2937,
+          "end": 3093,
+          "quote": "To create systems legal professionals can truly trust, that data needs to be structured and optimised from the ground up for AI agents and other AI systems."
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T00:50:16.091Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex financing evidence review",
+        "reviewed_at": "2026-10-06T00:50:16.091Z",
+        "note": "融资为 A 轮，基础设施为产品用途，不是融资轮次。正文完整融资句优先。"
+      }
+    },
+    {
       "candidate_id": "MAC-e9c727a48523e3e5",
       "task_type": "entity_resolution",
       "asset_id": "EN-5388a5a5ac0868b9",
@@ -5320,6 +6441,54 @@
         }
       ],
       "generated_at": "2026-10-06T00:38:58.718Z"
+    },
+    {
+      "candidate_id": "MAC-eec894227f13d636",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1a2290470e0aa754",
+      "raw_id": "RAW-ff88833d9eb4e981",
+      "source_ref": "SA-f1380f6ede43713f",
+      "source_hash": "dfa1bec301e80f7e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "SAN FRANCISCO",
+        "rationale": "No VERIFIED_ALTERNATIVE is supplied, so identity cannot be confirmed. The candidate name appears only as a dateline location, not as an entity identity match.",
+        "candidate_name": "SAN FRANCISCO"
+      },
+      "evidence": [
+        {
+          "start": 127,
+          "end": 309,
+          "quote": "SAN FRANCISCO, Oct. 05, 2026 (GLOBE NEWSWIRE) -- Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:40:25.343Z"
     },
     {
       "candidate_id": "MAC-f15174e7f2b28a94",
@@ -5389,6 +6558,98 @@
         }
       ],
       "generated_at": "2026-10-06T00:29:28.440Z"
+    },
+    {
+      "candidate_id": "MAC-f3382a2aa575fef3",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-4f48a235dd30c397",
+      "raw_id": "RAW-ee48a7eec3673ea9",
+      "source_ref": "SA-0f99b8ceb5bdf9c9",
+      "source_hash": "33de21fb3e93df87",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "美酷瑞",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative.",
+        "candidate_name": "美酷瑞"
+      },
+      "evidence": [
+        {
+          "start": 33,
+          "end": 57,
+          "quote": "“美酷瑞Gamercury AI”完成新一轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-06T03:54:28.589Z"
+    },
+    {
+      "candidate_id": "MAC-f339831dedffacfc",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-REVIEW:RAW-7bb180e9b3a5227c",
+      "raw_id": "RAW-7bb180e9b3a5227c",
+      "source_ref": "SA-9da5a2e7db23fe84",
+      "source_hash": "a36f5ba92d988990",
+      "provider": "manual_review",
+      "model": "responsible-agent-evidence-review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Namespace",
+            "object": "€37 million ($42 million) Series B",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 314,
+          "end": 561,
+          "quote": "Zurich-based Namespace, a developer platform that offers fast coding, build, and test environments across Mac, Windows, and Linux, today announced its €37 million ($42 million) Series B to accelerate product development and expand its data centers"
+        },
+        {
+          "start": 3556,
+          "end": 3648,
+          "quote": "Coding agents need a Mac at any scale with all the required iOS and macOS developer tooling."
+        }
+      ],
+      "gate_results": [],
+      "generated_at": "2026-10-06T00:50:16.094Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex financing evidence review",
+        "reviewed_at": "2026-10-06T00:50:16.094Z",
+        "note": "审核模型提出的漏提取融资候选；同一原文明确其为编程智能体提供开发和测试基础设施，纳入 AI 开发基础设施。"
+      }
     },
     {
       "candidate_id": "MAC-f559acd66776cc92",
@@ -5773,260 +7034,6 @@
         }
       ],
       "generated_at": "2026-10-06T00:38:56.424Z"
-    },
-    {
-      "candidate_id": "MAC-e4f973baa8662f84",
-      "task_type": "qa_repair",
-      "asset_id": "FINANCING-REVIEW:RAW-33ad665bfd0052d7",
-      "raw_id": "RAW-33ad665bfd0052d7",
-      "source_ref": "SA-0a63a715c4769e1e",
-      "source_hash": "8c38f9a266a81e37",
-      "provider": "manual_review",
-      "model": "responsible-agent-evidence-review",
-      "prompt_version": "model-assist-2026-07-18.2",
-      "status": "accepted",
-      "proposal": {
-        "action": "extract_claim",
-        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
-        "claims": [
-          {
-            "event_type": "funding",
-            "subject": "利德健康",
-            "object": "数千万元Pre-A++轮融资",
-            "evidence_index": 0
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 0,
-          "end": 31,
-          "quote": "利德健康完成数千万元Pre-A++轮融资，专注AI生命科学仪器"
-        },
-        {
-          "start": 412,
-          "end": 478,
-          "quote": "公司专注AI生命科学仪器与生物智造装备，围绕细胞产业链布局系统级产品解决方案，已推出20余款高端AI生命科学仪器及生物智造装备产品。"
-        }
-      ],
-      "gate_results": [],
-      "generated_at": "2026-10-06T00:50:16.067Z",
-      "review": {
-        "decision": "accept",
-        "reviewer": "Codex financing evidence review",
-        "reviewed_at": "2026-10-06T00:50:16.067Z",
-        "note": "融资对象使用本轮披露语句；保留明确公告日期，不将本句以外的往轮融资混为多轮融资。"
-      }
-    },
-    {
-      "candidate_id": "MAC-e059fb919eb3d398",
-      "task_type": "qa_repair",
-      "asset_id": "FINANCING-REVIEW:RAW-249b53c6b731c7d7",
-      "raw_id": "RAW-249b53c6b731c7d7",
-      "source_ref": "SA-3cdee274ce658189",
-      "source_hash": "2ead490262be955e",
-      "provider": "manual_review",
-      "model": "responsible-agent-evidence-review",
-      "prompt_version": "model-assist-2026-07-18.2",
-      "status": "accepted",
-      "proposal": {
-        "action": "extract_claim",
-        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
-        "claims": [
-          {
-            "event_type": "funding",
-            "subject": "Namespace",
-            "object": "$42m Series B",
-            "evidence_index": 0
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 0,
-          "end": 145,
-          "quote": "A Zurich-founded\ndeveloper infrastructure startup has raised $42m in a Series B financing round,\njust seven months after completing its Series A."
-        },
-        {
-          "start": 434,
-          "end": 499,
-          "quote": "Namespace is aiming to be the infrastructure\nlayer for AI coding…"
-        }
-      ],
-      "gate_results": [],
-      "generated_at": "2026-10-06T00:50:16.080Z",
-      "review": {
-        "decision": "accept",
-        "reviewer": "Codex financing evidence review",
-        "reviewed_at": "2026-10-06T00:50:16.080Z",
-        "note": "该原文直接说明 Namespace 为 AI coding 提供基础设施，与完整欧元报道为同一轮；按明确 AI 主营引文审核漏提取。"
-      }
-    },
-    {
-      "candidate_id": "MAC-ab58acb216f7732d",
-      "task_type": "qa_repair",
-      "asset_id": "FINANCING-REVIEW:RAW-013fb7469194e386",
-      "raw_id": "RAW-013fb7469194e386",
-      "source_ref": "SA-8b32bd1b1957b142",
-      "source_hash": "8ec5aa2eedfbbb27",
-      "provider": "manual_review",
-      "model": "responsible-agent-evidence-review",
-      "prompt_version": "model-assist-2026-07-18.2",
-      "status": "accepted",
-      "proposal": {
-        "action": "extract_claim",
-        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
-        "claims": [
-          {
-            "event_type": "funding",
-            "subject": "Good Tape",
-            "object": "€600k from Nordic Makers",
-            "evidence_index": 0
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 316,
-          "end": 564,
-          "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers, an investment group founded by former unicorn founders that invests its own capital in early-stage Nordic startups, with an average ticket size of €500k."
-        }
-      ],
-      "gate_results": [],
-      "generated_at": "2026-10-06T00:50:16.086Z",
-      "review": {
-        "decision": "accept",
-        "reviewer": "Codex financing evidence review",
-        "reviewed_at": "2026-10-06T00:50:16.086Z",
-        "note": "标题中的地点不是主体，本轮 60 万欧元，50 万欧元是投资机构平均单笔投资额。同轮应复用既有 Good Tape 卡。"
-      }
-    },
-    {
-      "candidate_id": "MAC-e8ad873e54b8c64b",
-      "task_type": "qa_repair",
-      "asset_id": "FINANCING-REVIEW:RAW-4f856fac45e98a31",
-      "raw_id": "RAW-4f856fac45e98a31",
-      "source_ref": "SA-067d1d3dab162e4c",
-      "source_hash": "5972d3a1f8cacb94",
-      "provider": "manual_review",
-      "model": "responsible-agent-evidence-review",
-      "prompt_version": "model-assist-2026-07-18.2",
-      "status": "accepted",
-      "proposal": {
-        "action": "extract_claim",
-        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
-        "claims": [
-          {
-            "event_type": "funding",
-            "subject": "Pandektes",
-            "object": "€13.5 million Series A",
-            "evidence_index": 0
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 317,
-          "end": 450,
-          "quote": "Pandektes, a Copenhagen-based LegalTech company specialising in legal research, has raised €13.5 million in a Series A funding round."
-        },
-        {
-          "start": 2937,
-          "end": 3093,
-          "quote": "To create systems legal professionals can truly trust, that data needs to be structured and optimised from the ground up for AI agents and other AI systems."
-        }
-      ],
-      "gate_results": [],
-      "generated_at": "2026-10-06T00:50:16.091Z",
-      "review": {
-        "decision": "accept",
-        "reviewer": "Codex financing evidence review",
-        "reviewed_at": "2026-10-06T00:50:16.091Z",
-        "note": "融资为 A 轮，基础设施为产品用途，不是融资轮次。正文完整融资句优先。"
-      }
-    },
-    {
-      "candidate_id": "MAC-f339831dedffacfc",
-      "task_type": "qa_repair",
-      "asset_id": "FINANCING-REVIEW:RAW-7bb180e9b3a5227c",
-      "raw_id": "RAW-7bb180e9b3a5227c",
-      "source_ref": "SA-9da5a2e7db23fe84",
-      "source_hash": "a36f5ba92d988990",
-      "provider": "manual_review",
-      "model": "responsible-agent-evidence-review",
-      "prompt_version": "model-assist-2026-07-18.2",
-      "status": "accepted",
-      "proposal": {
-        "action": "extract_claim",
-        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
-        "claims": [
-          {
-            "event_type": "funding",
-            "subject": "Namespace",
-            "object": "€37 million ($42 million) Series B",
-            "evidence_index": 0
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 314,
-          "end": 561,
-          "quote": "Zurich-based Namespace, a developer platform that offers fast coding, build, and test environments across Mac, Windows, and Linux, today announced its €37 million ($42 million) Series B to accelerate product development and expand its data centers"
-        },
-        {
-          "start": 3556,
-          "end": 3648,
-          "quote": "Coding agents need a Mac at any scale with all the required iOS and macOS developer tooling."
-        }
-      ],
-      "gate_results": [],
-      "generated_at": "2026-10-06T00:50:16.094Z",
-      "review": {
-        "decision": "accept",
-        "reviewer": "Codex financing evidence review",
-        "reviewed_at": "2026-10-06T00:50:16.094Z",
-        "note": "审核模型提出的漏提取融资候选；同一原文明确其为编程智能体提供开发和测试基础设施，纳入 AI 开发基础设施。"
-      }
-    },
-    {
-      "candidate_id": "MAC-1e25a26ba685ccfc",
-      "task_type": "qa_repair",
-      "asset_id": "FINANCING-REVIEW:RAW-b7062e5b58ae4a2f",
-      "raw_id": "RAW-b7062e5b58ae4a2f",
-      "source_ref": "SA-98e8386f2c8e18ae",
-      "source_hash": "c749714d90214c73",
-      "provider": "manual_review",
-      "model": "responsible-agent-evidence-review",
-      "prompt_version": "model-assist-2026-07-18.2",
-      "status": "accepted",
-      "proposal": {
-        "action": "extract_claim",
-        "reason": "责任审核：采用正文明确主体与融资披露，排除标题导航及无关数据。",
-        "claims": [
-          {
-            "event_type": "funding",
-            "subject": "QpiAI",
-            "object": "Rs 50 crore debt financing",
-            "evidence_index": 0
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 0,
-          "end": 255,
-          "quote": "Quantum computing and artificial intelligence company QpiAI has secured Rs 50 crore in debt financing from InnoVen Capital India Fund II, with the Bengaluru startup allotting 5,000 Series B non-convertible debentures to the fund, according to RoC filings."
-        }
-      ],
-      "gate_results": [],
-      "generated_at": "2026-10-06T00:50:16.098Z",
-      "review": {
-        "decision": "accept",
-        "reviewer": "Codex financing evidence review",
-        "reviewed_at": "2026-10-06T00:50:16.098Z",
-        "note": "主体为 QpiAI；债务融资 50 crore 为 5 亿印度卢比，Series B 是债券系列不是股权 B 轮。"
-      }
     }
   ]
 }

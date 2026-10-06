@@ -447,7 +447,7 @@ export function normalizeFundingRound(value = "") {
     const plus = withoutPreSeed.match(/(?:seed|种子)\s*(\+{1,3})/iu)?.[1] || "";
     signals.add(`seed${"_plus".repeat(plus.length)}`);
   }
-  if (/天使/iu.test(text)) {
+  if (/^天使(?:\s*\+{1,3})?$|天使\s*(?:\+{1,3})?\s*(?:轮|融资)/iu.test(text)) {
     const plus = text.match(/天使\s*(\+{1,3})/u)?.[1] || "";
     signals.add(`angel${"_plus".repeat(plus.length)}`);
   }
@@ -517,7 +517,7 @@ export function partitionRoundInvestors(investors = [], roundValue = "", announc
     const role = clean(investor?.role);
     const roleRound = normalizeFundingRound(role);
     const explicitCurrent = /本轮|此轮|该轮|current\s+round|this\s+round/iu.test(role);
-    const genericCurrentRole = /领投|参投|联合投资|共同投资|co-?lead|led\s+the\s+round|participat/iu.test(role);
+    const genericCurrentRole = /领投|参投|联合投资|共同投资|天使投资人|angel\s+investor|co-?lead|led\s+the\s+round|participat/iu.test(role);
     const explicitOther = /既有|原有|历史|此前|上一轮|previous|existing|prior/iu.test(role);
     const datedDisclosure = role.match(/\b(20\d{2})[年/-](0?[1-9]|1[0-2])(?:月|\b)/u);
     const currentMonth = clean(announcedAt).slice(0, 7);

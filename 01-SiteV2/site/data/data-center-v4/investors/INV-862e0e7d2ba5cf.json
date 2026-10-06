@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-06",
     "currentDate": "2026-10-06",
-    "eventCount": 3952,
+    "eventCount": 3959,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 26,
+    "current_round_count": 27,
     "historical_or_ambiguous_count": 13,
-    "portfolio_company_count": 21,
+    "portfolio_company_count": 22,
     "market_regions": [
       "GLOBAL"
     ],
@@ -76,7 +76,7 @@
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 13,
-      "lead": 11,
+      "lead": 12,
       "other_current_round": 1,
       "participant": 12
     },
@@ -148,6 +148,11 @@
         "entity_id": "EN-50d7f4250bdd8888",
         "canonical_entity_id": "",
         "name": "Flow Engineering"
+      },
+      {
+        "entity_id": "EN-d27608cca9b65f91",
+        "canonical_entity_id": "",
+        "name": "Glow"
       },
       {
         "entity_id": "FICO-instinct",
@@ -577,6 +582,46 @@
             "source_content_hash": "acbb892603033145",
             "quote": "The latest round was led by Sequoia",
             "quote_hash": "c7a1847178fcef3287db804011d2abcab2f6fadc29b919f0cb25016204df2542"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-95dc2ce0d4d94622",
+        "funding_insight_id": "FI-25422dbadb01919a",
+        "event_ids": [
+          "EV-2da0ebb3ba7c5677"
+        ],
+        "company_entity_id": "EN-d27608cca9b65f91",
+        "company_canonical_entity_id": "",
+        "company_name": "Glow",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$180 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 180000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.8 亿美元"
+        },
+        "announced_at": "2026-07-22",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e192dd3fe1a72590",
+            "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+            "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+            "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+            "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+            "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
           }
         ]
       },
@@ -1767,6 +1812,14 @@
         "quote_hash": "c7a1847178fcef3287db804011d2abcab2f6fadc29b919f0cb25016204df2542"
       },
       {
+        "source_id": "FISRC-e192dd3fe1a72590",
+        "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+        "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
+        "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
+        "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
+        "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
+      },
+      {
         "source_id": "FISRC-6972db5a9fa5ab89",
         "source_url": "https://www.bunkerhillhealth.com/resources/series-b-announcement",
         "source_title": "Bunkerhill Health 融资 5500 万美元，助力医疗系统将最佳创意变为现实",
@@ -2109,7 +2162,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[26].role": {
+        "activities[27].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2117,7 +2170,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[28].role": {
+        "activities[29].role": {
           "text": "Series D 领投",
           "source_hash": "b1ad54c261addee1c044320cc302024b488ee22b0810e11ab5f9b281dda6d2b7",
           "provider": "deepseek",
@@ -2125,7 +2178,7 @@
           "translated_at": "2026-10-03T00:37:44.351Z",
           "status": "translated"
         },
-        "activities[30].role": {
+        "activities[31].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
@@ -2133,7 +2186,7 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[32].role": {
+        "activities[33].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

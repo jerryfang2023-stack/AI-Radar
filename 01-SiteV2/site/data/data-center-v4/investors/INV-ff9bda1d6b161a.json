@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-06",
     "currentDate": "2026-10-06",
-    "eventCount": 3952,
+    "eventCount": 3959,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,28 +61,34 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-04-16",
     "latest_disclosed_at": "2026-09-23",
     "role_counts": {
       "historical_or_ambiguous": 5,
       "other_current_round": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
+      "angel_plus_plus",
       "multi_round",
       "series_b",
       "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e2e913258212abc8",
+        "canonical_entity_id": "",
+        "name": "北京词元无限科技有限公司"
+      },
       {
         "entity_id": "EN-062ed8ada14ccffe",
         "canonical_entity_id": "EN-062ed8ada14ccffe",
@@ -143,6 +149,46 @@
             "source_content_hash": "5f3fdf302b68696b",
             "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
             "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-67869303bb422182",
+        "funding_insight_id": "FI-03e5ab07ed389925",
+        "event_ids": [
+          "EV-cfe820a452effc2f"
+        ],
+        "company_entity_id": "EN-e2e913258212abc8",
+        "company_canonical_entity_id": "",
+        "company_name": "北京词元无限科技有限公司",
+        "round": "天使++轮",
+        "round_code": "angel_plus_plus",
+        "round_original": "天使++轮",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-07-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b6fa3ffcb3824907",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-07-27/doc-inikfhfi3135189.shtml",
+            "source_title": "词元无限完成天使++轮融资",
+            "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+            "quote": "本轮融资由临芯投资领投，华控基金跟投。",
+            "quote_hash": "658b02692bcf24193cf84b4e395622cdb5b5d333505d4f30fee997cfe447212c"
           }
         ]
       },
@@ -447,6 +493,14 @@
         "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
       },
       {
+        "source_id": "FISRC-b6fa3ffcb3824907",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-07-27/doc-inikfhfi3135189.shtml",
+        "source_title": "词元无限完成天使++轮融资",
+        "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+        "quote": "本轮融资由临芯投资领投，华控基金跟投。",
+        "quote_hash": "658b02692bcf24193cf84b4e395622cdb5b5d333505d4f30fee997cfe447212c"
+      },
+      {
         "source_id": "FISRC-a4dbd49c64cb5834",
         "source_url": "https://news.pedaily.cn/202607/565779.shtml",
         "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
@@ -599,12 +653,12 @@
           "source_id": "FISRC-41f074703465b30a"
         },
         {
-          "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 本轮参投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a4dbd49c64cb5834"
+          "description": "融资来源记录：北京词元无限科技有限公司 · 天使++轮 · 2026-07-27 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b6fa3ffcb3824907"
         },
         {
-          "description": "融资来源记录：硅基流动 · B轮 · 2026-06-16 · 本轮联合投资 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-879cc82306af58a1"
+          "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 本轮参投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a4dbd49c64cb5834"
         }
       ],
       "contacts": [
@@ -695,20 +749,20 @@
           "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
         },
         {
+          "source_id": "FISRC-b6fa3ffcb3824907",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-07-27/doc-inikfhfi3135189.shtml",
+          "source_title": "词元无限完成天使++轮融资",
+          "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
+          "quote": "本轮融资由临芯投资领投，华控基金跟投。",
+          "quote_hash": "658b02692bcf24193cf84b4e395622cdb5b5d333505d4f30fee997cfe447212c"
+        },
+        {
           "source_id": "FISRC-a4dbd49c64cb5834",
           "source_url": "https://news.pedaily.cn/202607/565779.shtml",
           "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
           "source_content_hash": "3e7e05417d6a96b1",
           "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
           "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
-        },
-        {
-          "source_id": "FISRC-879cc82306af58a1",
-          "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
-          "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”",
-          "source_content_hash": "f1654d9235cc7fa8",
-          "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
-          "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
         }
       ],
       "coverage_status": "researched",
