@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -70,12 +71,12 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-10-01",
-    "lastSeen": "2026-10-06",
+    "lastSeen": "2026-10-07",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-c680e02a02703c11",
-        "EV-67e44201c4919b2d"
+        "EV-67e44201c4919b2d",
+        "EV-c680e02a02703c11"
       ],
       "deployments": [],
       "partnerships": [],
@@ -85,6 +86,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-67e44201c4919b2d",
+        "dataDate": "2026-10-07",
+        "date": "2026-10-01",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Good Tape 获得新融资并推出 Explore，以挖掘旧采访中埋藏的故事",
+        "displayTags": [],
+        "entityIds": [
+          "EN-60d05bd27ed7fa02",
+          "EN-0afb79034697e797"
+        ]
+      },
       {
         "id": "EV-c680e02a02703c11",
         "dataDate": "2026-10-06",
@@ -97,22 +114,6 @@
         "title": "哥本哈根的Good Tape融资€600k，并从Zetland独立；Zendesk联合创始人加入董事会",
         "displayTags": [],
         "entityIds": [
-          "EN-0afb79034697e797"
-        ]
-      },
-      {
-        "id": "EV-67e44201c4919b2d",
-        "dataDate": "2026-10-06",
-        "date": "2026-10-01",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Good Tape 获得新融资并推出 Explore，以挖掘旧采访中埋藏的故事",
-        "displayTags": [],
-        "entityIds": [
-          "EN-60d05bd27ed7fa02",
           "EN-0afb79034697e797"
         ]
       }

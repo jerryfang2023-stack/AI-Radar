@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -64,20 +65,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 33,
+    "current_round_count": 34,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 32,
+    "portfolio_company_count": 33,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-10-01",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "historical_or_ambiguous": 8,
       "lead": 4,
-      "participant": 29
+      "participant": 30
     },
     "round_codes": [
       "multi_round",
@@ -115,6 +116,11 @@
         "entity_id": "EN-fe301d1f025971a1",
         "canonical_entity_id": "",
         "name": "Discovered Materials"
+      },
+      {
+        "entity_id": "EN-85f694226bcbe83c",
+        "canonical_entity_id": "",
+        "name": "Flai"
       },
       {
         "entity_id": "EN-1050efc9e13624b2",
@@ -253,6 +259,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-69e4ad2118b13341",
+        "funding_insight_id": "FI-0f835557946f3ea1",
+        "event_ids": [
+          "EV-acd2398cadb191c3"
+        ],
+        "company_entity_id": "EN-85f694226bcbe83c",
+        "company_canonical_entity_id": "",
+        "company_name": "Flai",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$27 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 27000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2700 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c8bf3839b23b0657",
+            "source_url": "https://www.useflai.com/blog/flai-series-a-base10",
+            "source_title": "Flai raises $27M led by Base10 Partners to automate car dealership operations",
+            "source_content_hash": "c53320a25185219c",
+            "quote": "We're excited to announce that Flai has raised a $27 million Series A led by Base10 Partners, with participation from Toyota Ventures, First Round Capital, Y Combinator, The Friedkin Group, and Findlay Automotive Group.",
+            "quote_hash": "27712d3c2c719515c0cdaf37039f50ef13095b51d6dc774c8849eca9f25d94c9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-990f66ba138188f9",
         "funding_insight_id": "FI-5df4f9c7d5d359fa",
@@ -1856,6 +1902,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c8bf3839b23b0657",
+        "source_url": "https://www.useflai.com/blog/flai-series-a-base10",
+        "source_title": "Flai raises $27M led by Base10 Partners to automate car dealership operations",
+        "source_content_hash": "c53320a25185219c",
+        "quote": "We're excited to announce that Flai has raised a $27 million Series A led by Base10 Partners, with participation from Toyota Ventures, First Round Capital, Y Combinator, The Friedkin Group, and Findlay Automotive Group.",
+        "quote_hash": "27712d3c2c719515c0cdaf37039f50ef13095b51d6dc774c8849eca9f25d94c9"
+      },
+      {
         "source_id": "FISRC-4799c620c14fef7b",
         "source_url": "https://www.halluminate.ai/blog/series-a",
         "source_title": "Halluminate - 金融服务强化学习环境",
@@ -2245,16 +2299,16 @@
           "source_id": "yc_press"
         },
         {
+          "description": "融资来源记录：Flai · A轮 · 2026-10-06 · 本轮参投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c8bf3839b23b0657"
+        },
+        {
           "description": "融资来源记录：Halluminate · A轮 · 2026-10-01 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4799c620c14fef7b"
         },
         {
           "description": "融资来源记录：Revnu · 其他融资 · 2026-10-01 · 本轮参投 · €2.6 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e10bc08f4f6b317f"
-        },
-        {
-          "description": "融资来源记录：Revnu · 种子轮 · 2026-10-01 · 本轮参投 · $3m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ee1ac79a0f3dddbb"
         }
       ],
       "contacts": [
@@ -2298,6 +2352,14 @@
           "quote_hash": "4ed4875e0047c94acb0efae75ec6e5f47b2b446f507a0d444211c08edd926a82"
         },
         {
+          "source_id": "FISRC-c8bf3839b23b0657",
+          "source_url": "https://www.useflai.com/blog/flai-series-a-base10",
+          "source_title": "Flai raises $27M led by Base10 Partners to automate car dealership operations",
+          "source_content_hash": "c53320a25185219c",
+          "quote": "We're excited to announce that Flai has raised a $27 million Series A led by Base10 Partners, with participation from Toyota Ventures, First Round Capital, Y Combinator, The Friedkin Group, and Findlay Automotive Group.",
+          "quote_hash": "27712d3c2c719515c0cdaf37039f50ef13095b51d6dc774c8849eca9f25d94c9"
+        },
+        {
           "source_id": "FISRC-4799c620c14fef7b",
           "source_url": "https://www.halluminate.ai/blog/series-a",
           "source_title": "Halluminate - 金融服务强化学习环境",
@@ -2312,14 +2374,6 @@
           "source_content_hash": "465cc9845980a16b4be508a8659be0aae636b0c765d785dc2e067c08cfec8283",
           "quote": "The company also received backing from Y Combinator.",
           "quote_hash": "dfda2b2dd8390e4cfa9a340af8fed83a2e794fcc674c969afbb1c1cba789c341"
-        },
-        {
-          "source_id": "FISRC-ee1ac79a0f3dddbb",
-          "source_url": "https://www.prolificnorth.co.uk/news/21-year-old-founders-choose-manchester-over-silicon-valley-after-raising-3m/",
-          "source_title": "21岁创始人融资300万美元后选择曼彻斯特而非硅谷",
-          "source_content_hash": "9e473dfe8da950af126dbbf2c1ba0ddeac7aa62b318ef3582dbc19a49eab246b",
-          "quote": "Revnu also received backing from Y Combinator.",
-          "quote_hash": "a64a4c7318a4083b60fc808ee59b900963424788f7b70c270b4b2d5bd502e388"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2330,7 +2384,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[35].role": {
+        "activities[36].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

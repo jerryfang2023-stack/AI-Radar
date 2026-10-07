@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -63,30 +64,36 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2022-04-12",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-10-05",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
       "lead": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "other",
       "seed",
       "series_a",
       "series_b",
-      "series_c"
+      "series_c",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-dc483de2bd50b2f4",
+        "canonical_entity_id": "",
+        "name": "Clockwork.io"
+      },
       {
         "entity_id": "EN-06c8aaa93d80a768",
         "canonical_entity_id": "",
@@ -114,6 +121,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4b5cde12f11f727a",
+        "funding_insight_id": "FI-4e41cf72b50bafd3",
+        "event_ids": [
+          "EV-208a98705213d50c"
+        ],
+        "company_entity_id": "EN-dc483de2bd50b2f4",
+        "company_canonical_entity_id": "",
+        "company_name": "Clockwork.io",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$31M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 31000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3100 万美元"
+        },
+        "announced_at": "2026-10-05",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bffca0091f22129f",
+            "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+            "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
+            "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
+            "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
+            "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e2f64f6c600c3d16",
         "funding_insight_id": "FI-bc58830cddab75fe",
@@ -405,6 +452,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-bffca0091f22129f",
+        "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+        "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
+        "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
+        "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
+        "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
+      },
+      {
         "source_id": "FISRC-1c7459d2ce055880",
         "source_url": "https://factory.ai/news/5-billion-valuation",
         "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
@@ -530,16 +585,16 @@
           "source_id": "nea_about"
         },
         {
+          "description": "融资来源记录：Clockwork.io · 轮次未披露 · 2026-10-05 · 本轮参投 · $31M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bffca0091f22129f"
+        },
+        {
           "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c7459d2ce055880"
         },
         {
           "description": "融资来源记录：Positron AI · C轮 · 2026-09-10 · C轮联合领投 · $375 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3947ce709f26c22a"
-        },
-        {
-          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2e7a3713da8f3e54"
         }
       ],
       "contacts": [
@@ -614,6 +669,14 @@
           "quote_hash": "b657f17ea54811c9e0d34913681f9e271da506b4610184ed87b3242622786271"
         },
         {
+          "source_id": "FISRC-bffca0091f22129f",
+          "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+          "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
+          "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
+          "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
+          "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
+        },
+        {
           "source_id": "FISRC-1c7459d2ce055880",
           "source_url": "https://factory.ai/news/5-billion-valuation",
           "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
@@ -628,14 +691,6 @@
           "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
           "quote": "The Series C, $375 million at a $3.5 billion pre-money valuation, was co-led by NEA, Andra Capital, Atreides Management, Valor Equity Partners, and Dylan Patel's SemiAnalysis Capital.",
           "quote_hash": "4a268ef2dc6771c1b3575196421137a2e838d9a10dd583cd9ff1e57e059abe05"
-        },
-        {
-          "source_id": "FISRC-2e7a3713da8f3e54",
-          "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
-          "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
-          "source_content_hash": "affdfd9a0ccfb188",
-          "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
-          "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -644,7 +699,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[6].role": {
+        "activities[7].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

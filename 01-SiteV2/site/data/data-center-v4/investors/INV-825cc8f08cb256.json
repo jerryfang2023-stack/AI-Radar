@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -233,19 +234,27 @@
           "status": "translated"
         },
         "public_profile.summary": {
-          "text": "SIDBI官方生态页面称，SIDBI Venture Capital Limited（SVCL）是SIDBI全资子公司，1999年设立为投资管理公司以管理风险投资基金。",
-          "source_hash": "d79f09963b95c279c588c6aed7526935052697bbe5b68b738eaad249d95b7e25",
+          "text": "SIDBI Venture Capital Limited（SVCL）是SIDBI全资子公司，官方资料称其于1999年成立以管理风险投资基金并向MSME提供成长资本。QpiAI发布的融资公告确认SVCL参与其$6.5M pre-Series A轮。",
+          "source_hash": "e19215f38a025bf3f5170fc191b2938ee8fe13180140d38d99f100938901beac",
           "provider": "deepseek",
           "model": "deepseek-flash",
-          "translated_at": "2026-10-06T05:00:46.583Z",
+          "translated_at": "2026-10-07T00:42:51.058Z",
           "status": "translated"
         },
-        "public_profile.contacts[0].label": {
-          "text": "SIDBI官网",
-          "source_hash": "6a9cd6bcf1c357115925068498c136a4dbe653e05225ba95e3a8bd3c47c3009e",
+        "public_profile.milestones[0].description": {
+          "text": "SIDBI官方资料记载SIDBI Venture Capital Limited于1999年7月设立。",
+          "source_hash": "6649ccef5a915bd1f77729a6b2d6937cb436b696fc4c0bd8d882cd59458ce1ec",
           "provider": "deepseek",
           "model": "deepseek-flash",
-          "translated_at": "2026-10-06T05:00:46.583Z",
+          "translated_at": "2026-10-07T00:42:51.058Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "QpiAI发行方新闻稿称其$6.5M pre-Series A轮由Yournest与SVCL领投，并称SIDBI Venture Capital代表参与该轮。",
+          "source_hash": "d1df1acae3c77dff46ef4b192182316c7d067251659db3774f09469b67570ecf",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-07T00:42:51.058Z",
           "status": "translated"
         }
       }

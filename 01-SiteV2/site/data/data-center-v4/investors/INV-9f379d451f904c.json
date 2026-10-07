@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -61,18 +62,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-10-05",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "pre_seed",
@@ -85,12 +86,65 @@
         "name": "Advanced Machine Intelligence Labs (AMI Labs)"
       },
       {
+        "entity_id": "EN-c96c14e093fcb408",
+        "canonical_entity_id": "",
+        "name": "Cleavr"
+      },
+      {
         "entity_id": "EN-39f25bf2bb4b8866",
         "canonical_entity_id": "",
         "name": "Fleuret AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d4eb2b7333d58460",
+        "funding_insight_id": "FI-0f7625d43f2218a6",
+        "event_ids": [
+          "EV-6bbfb2ce5e89bbda"
+        ],
+        "company_entity_id": "EN-c96c14e093fcb408",
+        "company_canonical_entity_id": "",
+        "company_name": "Cleavr",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€8 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万欧元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cfafc3f8ac637385",
+            "source_url": "https://tech.eu/2026/10/06/cleavr-bags-eur8m-to-scale-ai-powered-invoice-collection-across-europe/",
+            "source_title": "Cleavr 获 800 万欧元，在欧洲扩展 AI 驱动的发票收款业务",
+            "source_content_hash": "a25fe3dc44c0b9e44e36f4b71a13690c90c48549c2c1a49e6762118cc4c9f9fa",
+            "quote": "The round was led by Varsity, with participation from existing investors Kima Ventures and Better Angle, alongside Portfolio Ventures, Kerala and Financière Saint James.",
+            "quote_hash": "d5eb06f8261683b120425d6d0c4ba0e7f5d9f4d8d761163af32752860e661067"
+          },
+          {
+            "source_id": "FISRC-597e7f2ec015219b",
+            "source_url": "https://www.thesaasnews.com/news/cleavr-raises-8m-seed/",
+            "source_title": "Cleavr Raises €8M Seed",
+            "source_content_hash": "02baba2030a519a8",
+            "quote": "The round was led by Varsity. Additional participating investors included Kima Ventures, Better Angle, Portfolio Ventures, Kerala, and Financière Saint James.",
+            "quote_hash": "517aa4c7e79bb5cff7c1360c4b1969619795de71e659ce546282520404b5b226"
+          }
+        ]
+      },
       {
         "activity_id": "IA-68940be9c2977695",
         "funding_insight_id": "FI-e680b88c2cd9b41e",
@@ -174,6 +228,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cfafc3f8ac637385",
+        "source_url": "https://tech.eu/2026/10/06/cleavr-bags-eur8m-to-scale-ai-powered-invoice-collection-across-europe/",
+        "source_title": "Cleavr 获 800 万欧元，在欧洲扩展 AI 驱动的发票收款业务",
+        "source_content_hash": "a25fe3dc44c0b9e44e36f4b71a13690c90c48549c2c1a49e6762118cc4c9f9fa",
+        "quote": "The round was led by Varsity, with participation from existing investors Kima Ventures and Better Angle, alongside Portfolio Ventures, Kerala and Financière Saint James.",
+        "quote_hash": "d5eb06f8261683b120425d6d0c4ba0e7f5d9f4d8d761163af32752860e661067"
+      },
+      {
+        "source_id": "FISRC-597e7f2ec015219b",
+        "source_url": "https://www.thesaasnews.com/news/cleavr-raises-8m-seed/",
+        "source_title": "Cleavr Raises €8M Seed",
+        "source_content_hash": "02baba2030a519a8",
+        "quote": "The round was led by Varsity. Additional participating investors included Kima Ventures, Better Angle, Portfolio Ventures, Kerala, and Financière Saint James.",
+        "quote_hash": "517aa4c7e79bb5cff7c1360c4b1969619795de71e659ce546282520404b5b226"
+      },
+      {
         "source_id": "FISRC-99179d97c4e96ad7",
         "source_url": "https://tech.eu/2026/10/05/fleuret-ai-raises-eur4m-to-advance-ai-powered-offensive-cybersecurity-in-europe/",
         "source_title": "Fleuret AI 融资 €4M，推动欧洲 AI 驱动的进攻性网络安全发展",
@@ -221,12 +291,12 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Fleuret AI · 预种子轮 · 2026-10-05 · 本轮参投 · €4 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-99179d97c4e96ad7"
+          "description": "融资来源记录：Cleavr · 种子轮 · 2026-10-06 · 本轮参投 · €8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cfafc3f8ac637385"
         },
         {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-115626db07e52373"
+          "description": "融资来源记录：Fleuret AI · 预种子轮 · 2026-10-05 · 本轮参投 · €4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-99179d97c4e96ad7"
         }
       ],
       "profile_type": "organization",
@@ -264,20 +334,28 @@
           "quote_hash": "d08f904cd4171f9a36c8d0557621d42d06e82505aee5f6b852df39fa58ea67a4"
         },
         {
+          "source_id": "FISRC-cfafc3f8ac637385",
+          "source_url": "https://tech.eu/2026/10/06/cleavr-bags-eur8m-to-scale-ai-powered-invoice-collection-across-europe/",
+          "source_title": "Cleavr 获 800 万欧元，在欧洲扩展 AI 驱动的发票收款业务",
+          "source_content_hash": "a25fe3dc44c0b9e44e36f4b71a13690c90c48549c2c1a49e6762118cc4c9f9fa",
+          "quote": "The round was led by Varsity, with participation from existing investors Kima Ventures and Better Angle, alongside Portfolio Ventures, Kerala and Financière Saint James.",
+          "quote_hash": "d5eb06f8261683b120425d6d0c4ba0e7f5d9f4d8d761163af32752860e661067"
+        },
+        {
+          "source_id": "FISRC-597e7f2ec015219b",
+          "source_url": "https://www.thesaasnews.com/news/cleavr-raises-8m-seed/",
+          "source_title": "Cleavr Raises €8M Seed",
+          "source_content_hash": "02baba2030a519a8",
+          "quote": "The round was led by Varsity. Additional participating investors included Kima Ventures, Better Angle, Portfolio Ventures, Kerala, and Financière Saint James.",
+          "quote_hash": "517aa4c7e79bb5cff7c1360c4b1969619795de71e659ce546282520404b5b226"
+        },
+        {
           "source_id": "FISRC-99179d97c4e96ad7",
           "source_url": "https://tech.eu/2026/10/05/fleuret-ai-raises-eur4m-to-advance-ai-powered-offensive-cybersecurity-in-europe/",
           "source_title": "Fleuret AI 融资 €4M，推动欧洲 AI 驱动的进攻性网络安全发展",
           "source_content_hash": "cb29e794dada4293d8e5aef330152e1509f337d441941c9f725f9aa3a18bd91d",
           "quote": "The round was led by RAISE Ventures, with participation from Auriga Cyber Ventures, Wind, Better Angle and business angels from the cybersecurity sector.",
           "quote_hash": "9f5f196dd9d76f06a36bf7215969f9401d2ca79beeaea2ce72c6dd72b86c863f"
-        },
-        {
-          "source_id": "FISRC-115626db07e52373",
-          "source_url": "https://www.linkedin.com/posts/toyota-ventures_ami-labs-activity-7437189879689629697-0_Rg",
-          "source_title": "AMI Labs receives $1.03B Seed round for World Models development | Toyota Ventures posted on the topic | LinkedIn",
-          "source_content_hash": "f7ae81bef24b26df",
-          "quote": "Better Angle",
-          "quote_hash": "7f4614df7528b1e4625e6af7adfa980a2d129a34a918e2bd34a6b0ce6d3d411d"
         }
       ],
       "last_verified_at": "2026-10-03"

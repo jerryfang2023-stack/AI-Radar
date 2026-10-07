@@ -27526,7 +27526,468 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-06T04:07:00.934Z"
+    },
+    "EV-208a98705213d50c": {
+      "id": "EV-208a98705213d50c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "rationale": "Clockwork.io 为 AI 训练与推理提供容错软件，保障 GPU 集群与网络链路稳定运行，属于算力基础设施软件。",
+      "input_hash": "f9377dfa946898c5a668f4aff3bfe028ced351028a0bb399d14967c3fe367990",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-bffca0091f22129f",
+          "quote": "Clockwork.io, whose fault-tolerance software keeps AI training, reinforcement learning and inference workloads running through infrastructure failures, today announced $31 million in new funding"
+        },
+        {
+          "source_id": "FISRC-dda6022cd29a9e37",
+          "quote": "Clockwork.io, a Palo Alto-based company that provides fault-tolerance software for AI infrastructure, has announced $31 million in new funding."
+        },
+        {
+          "source_id": "FISRC-bffca0091f22129f",
+          "quote": "TorchPass moves work from a failing GPU to a healthy one so training continues instead of rolling back."
+        },
+        {
+          "source_id": "FISRC-bffca0091f22129f",
+          "quote": "Multi-node platform snapshots, an industry first for training, save an entire running job across every node without changes to the training code and preserve it for recovery."
+        },
+        {
+          "source_id": "FISRC-bffca0091f22129f",
+          "quote": "LinkPass reroutes traffic around a failed link so the job never sees the fault."
+        },
+        {
+          "source_id": "FISRC-9539c638516ce9ef",
+          "quote": "LinkPass intercepts link failures the moment they happen and rebalances traffic across the node’s other NICs"
+        },
+        {
+          "source_id": "FISRC-9539c638516ce9ef",
+          "quote": "FleetLens detects slow or failing jobs and definitively rules whether the fabric is to blame. When it is, FleetLens pinpoints the exact link, switch or NIC at fault."
+        },
+        {
+          "source_id": "FISRC-bffca0091f22129f",
+          "quote": "Clockwork.io's FleetLens platform recovers that lost capacity: nanosecond-accurate telemetry pinpoints the GPU, node, or link slowing or stalling a job, validates clusters before launch"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-07T00:43:51.691Z"
+    },
+    "EV-acd2398cadb191c3": {
+      "id": "EV-acd2398cadb191c3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Flai 为汽车经销商提供 AI 原生服务与销售 CRM，围绕零售与经销工作流交付，属于电商零售与供应链行业 AI。",
+      "input_hash": "a97733a5204878cf36b0230df97fd2ca5c40c66c2833c9ce504f01bb9a3021a8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c8bf3839b23b0657",
+          "quote": "We started Flai to fix a simple but expensive problem: dealerships were losing customers because they couldn't answer every call or follow up consistently."
+        },
+        {
+          "source_id": "FISRC-14d283fcc85696ba",
+          "quote": "Flai builds AI agents that run the operational work of car dealerships."
+        },
+        {
+          "source_id": "FISRC-ad43cd27ae48b6b1",
+          "quote": "AI-Native Service CRM"
+        },
+        {
+          "source_id": "FISRC-c8bf3839b23b0657",
+          "quote": "Today, we're introducing Flai's AI-native Service and Sales CRM."
+        },
+        {
+          "source_id": "FISRC-ad43cd27ae48b6b1",
+          "quote": "Sales AI"
+        },
+        {
+          "source_id": "FISRC-ad43cd27ae48b6b1",
+          "quote": "Flai works every lead your team can’t get to, helping your dealership convert more leads and sell more cars."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-07T00:43:51.691Z"
+    },
+    "EV-ee1dd0077269532b": {
+      "id": "EV-ee1dd0077269532b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Hadrian 以 AI 代理渗透测试与持续暴露面管理为企业提供网络安全平台，属于企业通用 AI 的网络安全细分。",
+      "input_hash": "260cc05ad2a12fd84266bbc67150bfbc5058b0022aa4b605e8df167d9eeb2728",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a28066252c526844",
+          "quote": "AI安全公司Hadrian宣布完成4000万美元融资"
+        },
+        {
+          "source_id": "FISRC-a28066252c526844",
+          "quote": "该公司通过结合持续暴露面管理（Continuous Exposure Management）和AI代理渗透测试，为企业模拟攻击者视角，帮助发现外部攻击面、验证真实风险并优化修复优先级。"
+        },
+        {
+          "source_id": "FISRC-a28066252c526844",
+          "quote": "资金将用于拓展欧美市场、扩大工程和研究团队，并进一步开发其AI驱动的网络安全平台。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-07T00:43:51.691Z"
+    },
+    "EV-bada0d929d2b70ac": {
+      "id": "EV-bada0d929d2b70ac",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "DeepSeek 主营通用大模型 V4-Pro/V4-Flash，提供对话、代码与推理能力，属于通用与多模态基础模型。",
+      "input_hash": "53d739f46db4e2b3a1e27b7a180574e25f31c4e50ba72b8a7d6ec30aaa8aef22",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2d66fabe0ddfa75a",
+          "quote": "DeepSeek 致力于打造世界领先的 AI 大模型，提供智能对话、代码生成、深度推理等能力。"
+        },
+        {
+          "source_id": "FISRC-af1bfd9eab3e46f6",
+          "quote": "The strong investor interest stems from Deepseek's V4-Flash model, which has set new benchmarks for cost and performance against Anthropic and OpenAI."
+        },
+        {
+          "source_id": "FISRC-af1bfd9eab3e46f6",
+          "quote": "Deepseek released V4-Pro and V4-Flash as preview versions in April"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-07T00:43:51.691Z"
+    },
+    "EV-187a61fc05451d66": {
+      "id": "EV-187a61fc05451d66",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "design-engineering",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Melius 为创意团队提供由 AI 智能体驱动的图像、视频与音频创作操作系统，属企业设计与创意生产软件。",
+      "input_hash": "a4a500708e3e84e41f1a0fe9122042a63823f214083a2f8188152823f5bffeb5",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-925d3dbfb764eb23",
+          "quote": "Melius, an AI platform for generating ad campaigns, images, and videos, announced on Tuesday that it raised a total of $25 million in funding"
+        },
+        {
+          "source_id": "FISRC-17b0a4ba7027e6a1",
+          "quote": "Melius is the first agents lab for creative work: a shared creative operating system where teams of AI agents handle the busywork of building images, video, and audio, so creative teams can spend their time imagining."
+        },
+        {
+          "source_id": "FISRC-17b0a4ba7027e6a1",
+          "quote": "Melius gives creative teams a shared creative operating system where teams of AI agents handle the busywork of creative production."
+        },
+        {
+          "source_id": "FISRC-3ff410933fff0c75",
+          "quote": "Melius is the first agents lab for creative work, providing a shared creative operating system where teams of AI agents manage the busywork of producing images, video, and audio."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-07T00:43:52.137Z"
+    },
+    "EV-6bbfb2ce5e89bbda": {
+      "id": "EV-6bbfb2ce5e89bbda",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Cleavr 以 AI 原生平台自动化企业应收账款催收与对账，属金融与保险行业软件。",
+      "input_hash": "55bfe2fca2b45914ce0880526f09acd70dc634a3c87251e98adf13220ac315dd",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cfafc3f8ac637385",
+          "quote": "French fintech Cleavr has raised €8 million in a seed round to expand its accounts receivable automation platform across Europe."
+        },
+        {
+          "source_id": "FISRC-597e7f2ec015219b",
+          "quote": "Cleavr, a French fintech startup that automates accounts receivable with AI, has raised €8 million in a seed round."
+        },
+        {
+          "source_id": "FISRC-597e7f2ec015219b",
+          "quote": "Cleavr provides an AI-native platform designed to automate the tracking and collection of outstanding invoices. The software integrates with existing ERP systems to manage email, phone, and SMS follow-ups, reducing days sales outstanding for its customers."
+        },
+        {
+          "source_id": "FISRC-9111ff0fd499b496",
+          "quote": "Connected to your ERP, our AI automates your entire cash collection, from reminders to reconciliation."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-07T00:43:52.137Z"
+    },
+    "EV-33c666ae1aefd87b": {
+      "id": "EV-33c666ae1aefd87b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Nettle 面向商业保险公司提供 AI 风控勘察与报告平台，属金融与保险行业软件。",
+      "input_hash": "c94d0c264c262960a0a3dc523d2ac2c8c413c85fdf2902d472230f59ae6d4857",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1b63578e82da8f27",
+          "quote": "Nettle, an AI platform for commercial insurance loss control, has raised $4.8 million in an oversubscribed seed round."
+        },
+        {
+          "source_id": "FISRC-058d01a4a8ce27e8",
+          "quote": "Nettle, an Irish-founded insurtech startup, has closed a $4.8M oversubscribed seed round led by MTech Capital."
+        },
+        {
+          "source_id": "FISRC-7a015ada8df775d1",
+          "quote": "Nettle unifies risk identification, evidence gathering, analysis and reporting within a single platform."
+        },
+        {
+          "source_id": "FISRC-7a015ada8df775d1",
+          "quote": "The platform can flag potential exposures remotely using AI and external data ahead of any site visit, and offers guided inspections so that risk engineers, agents and policyholders can gather data in a consistent way. It automatically examines images, video, audio, documents and third-party information, then generates reports, risk scores and recommendations in seconds rather than days."
+        },
+        {
+          "source_id": "FISRC-513291f82150c987",
+          "quote": "Built for enterprise insurers, Nettle supports cloud and on-premise deployment, regional data residency, and enterprise-grade security."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-07T00:43:52.137Z"
+    },
+    "EV-6744aefb738a9a0c": {
+      "id": "EV-6744aefb738a9a0c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Hadrian 提供智能体驱动的攻击面评估与渗透测试平台，属企业网络安全。",
+      "input_hash": "44a8a40e05cf7f86bbd8a852dc3823759c90b387ccba3d7b740bcc03fd2d6ade",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cf1fd90dbc994e3d",
+          "quote": "Hadrian, an agentic AI offensive security platform, has raised $40 million"
+        },
+        {
+          "source_id": "FISRC-687a411a14e64c5d",
+          "quote": "Atlas provides always-on assessment that discovers assets, maps the organization’s external attack surface, and confirms which exposures are exploitable"
+        },
+        {
+          "source_id": "FISRC-687a411a14e64c5d",
+          "quote": "Nova delivers in-depth, compliance-ready agentic pen testing on demand, going deeper on defined targets"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-07T00:43:52.137Z"
+    },
+    "EV-6cf399bb27ddd1a5": {
+      "id": "EV-6cf399bb27ddd1a5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Comparables.ai 为投行、私募与并购团队提供公司可比分析与市场情报平台，属金融行业软件。",
+      "input_hash": "8cd45ab67b287f6277b15ee820a1c6a037d1f6c78a3551234d12a6e4e4f442d3",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4918a8b4fc250bf6",
+          "quote": "Comparables.ai, an AI platform for private and public market intelligence, has raised $6 million in seed funding to support its expansion across multiple markets and further develop its core AI engine."
+        },
+        {
+          "source_id": "FISRC-8aa6f5b4285cbde8",
+          "quote": "Comparables.ai helps professionals identify and analyze companies and related markets faster, with the help of interactive AI."
+        },
+        {
+          "source_id": "FISRC-aa8fd550ce3f0407",
+          "quote": "The platform is designed for corporate development teams, private equity firms, M&A advisors, and investment banks to discover acquisition targets and market opportunities by aggregating global company financials, group structures, and transaction data."
+        },
+        {
+          "source_id": "FISRC-8aa6f5b4285cbde8",
+          "quote": "We help finance professionals across industries search and analyze intelligently, using a global database of 370m+ companies."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-07T00:43:52.137Z"
+    },
+    "EV-2eb259fc0b868102": {
+      "id": "EV-2eb259fc0b868102",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "SimpL 为 B2B 销售团队提供识别商机与促成会面的 AI 操作系统，属企业销售与营销。",
+      "input_hash": "87481e86db09df6dac175e94c52b93dd4466ff6537293f0a7684312be7c560ac",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fbc320e5a295c02b",
+          "quote": "Italian startup SimpL has raised €1.2 million in a pre-seed funding round to develop its AI-powered operating system for generating B2B sales opportunities."
+        },
+        {
+          "source_id": "FISRC-b4934479b976c617",
+          "quote": "SimpL, a Milan-based startup providing an AI-powered operating system for B2B sales, has raised €1.2 million in a pre-seed funding round."
+        },
+        {
+          "source_id": "FISRC-fbc320e5a295c02b",
+          "quote": "SimpL is developing a system designed to help sales teams determine which companies and decision-makers to contact, when to approach them and how to engage them."
+        },
+        {
+          "source_id": "FISRC-b4934479b976c617",
+          "quote": "The company provides an AI-driven platform that utilizes public data, a proprietary knowledge graph, and deep learning to identify B2B sales opportunities and facilitate qualified meetings."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-07T00:43:52.137Z"
+    },
+    "EV-da8dc9f513542c19": {
+      "id": "EV-da8dc9f513542c19",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "design-engineering",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Melius 为企业创意团队提供生成广告、图像、视频与音频的 AI 智能体创意操作系统，属企业设计与工程软件。",
+      "input_hash": "b544eda8d7f724f6578cfed2e97e95dc0c3efb4c4770ffd30a7a43f1526543d9",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-925d3dbfb764eb23",
+          "quote": "Melius, an AI platform for generating ad campaigns, images, and videos, announced on Tuesday that it raised a total of $25 million in funding"
+        },
+        {
+          "source_id": "FISRC-17b0a4ba7027e6a1",
+          "quote": "Melius is the first agents lab for creative work: a shared creative operating system where teams of AI agents handle the busywork of building images, video, and audio, so creative teams can spend their time imagining."
+        },
+        {
+          "source_id": "FISRC-17b0a4ba7027e6a1",
+          "quote": "Melius gives creative teams a shared creative operating system where teams of AI agents handle the busywork of creative production."
+        },
+        {
+          "source_id": "FISRC-3ff410933fff0c75",
+          "quote": "Melius is the first agents lab for creative work, providing a shared creative operating system where teams of AI agents manage the busywork of producing images, video, and audio."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-07T00:48:05.546Z"
     }
   },
-  "generated_at": "2026-10-06T04:25:44.969Z"
+  "generated_at": "2026-10-07T00:48:05.548Z"
 }

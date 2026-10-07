@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -61,22 +62,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-14",
-    "latest_disclosed_at": "2026-08-25",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "lead": 1,
+      "lead": 2,
       "participant": 1
     },
     "round_codes": [
       "multi_round",
+      "series_a",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -89,9 +91,62 @@
         "entity_id": "EN-7f67f2f8692510cf",
         "canonical_entity_id": "EN-7f67f2f8692510cf",
         "name": "Hadrius"
+      },
+      {
+        "entity_id": "EN-d965aa403593d08c",
+        "canonical_entity_id": "",
+        "name": "Melius"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-23b65c0ecc0a5209",
+        "funding_insight_id": "FI-8fcbda1e61969a98",
+        "event_ids": [
+          "EV-da8dc9f513542c19"
+        ],
+        "company_entity_id": "EN-d965aa403593d08c",
+        "company_canonical_entity_id": "",
+        "company_name": "Melius",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-925d3dbfb764eb23",
+            "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+            "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
+            "source_content_hash": "ec6374c91af67956bdc5823328f342540fc2f142546fd8dc3ad3e0288c34ee6e",
+            "quote": "a $20 million Series A led by CRV",
+            "quote_hash": "312ef291235f1d7c3e3edffb420a57c6d8ae33672610e6aa9e11711f33940264"
+          },
+          {
+            "source_id": "FISRC-17b0a4ba7027e6a1",
+            "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+            "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+            "source_content_hash": "211f9e27654b79b5",
+            "quote": "$20 million Series A led by CRV",
+            "quote_hash": "c4b517e12f9d66ff250dcf6e0aa347b18ac6c6507fa66f25f660090e40a2488f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-33a34991263c4c6b",
         "funding_insight_id": "FI-d80c637f106db95c",
@@ -175,6 +230,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-925d3dbfb764eb23",
+        "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+        "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
+        "source_content_hash": "ec6374c91af67956bdc5823328f342540fc2f142546fd8dc3ad3e0288c34ee6e",
+        "quote": "a $20 million Series A led by CRV",
+        "quote_hash": "312ef291235f1d7c3e3edffb420a57c6d8ae33672610e6aa9e11711f33940264"
+      },
+      {
+        "source_id": "FISRC-17b0a4ba7027e6a1",
+        "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+        "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+        "source_content_hash": "211f9e27654b79b5",
+        "quote": "$20 million Series A led by CRV",
+        "quote_hash": "c4b517e12f9d66ff250dcf6e0aa347b18ac6c6507fa66f25f660090e40a2488f"
+      },
+      {
         "source_id": "FISRC-5b1ac109014789f1",
         "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
         "source_title": "Alice 融资1.4亿美元、估值7亿至8亿美元，押注AI需要新的安全层",
@@ -216,12 +287,12 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Alice · 轮次未披露 · 2026-08-25 · 本轮参投 · $140 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5b1ac109014789f1"
+          "description": "融资来源记录：Melius · A轮 · 2026-10-06 · 本轮领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-925d3dbfb764eb23"
         },
         {
-          "description": "融资来源记录：Hadrius · 多轮融资 · 2026-07-14 · 本轮（A轮）领投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-70c3e89375309295"
+          "description": "融资来源记录：Alice · 轮次未披露 · 2026-08-25 · 本轮参投 · $140 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5b1ac109014789f1"
         }
       ],
       "profile_type": "organization",
@@ -259,20 +330,28 @@
           "quote_hash": "89a03bc3377607a6370c77fb4755f682967607d472b785634e69159273f8bdf2"
         },
         {
+          "source_id": "FISRC-925d3dbfb764eb23",
+          "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+          "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
+          "source_content_hash": "ec6374c91af67956bdc5823328f342540fc2f142546fd8dc3ad3e0288c34ee6e",
+          "quote": "a $20 million Series A led by CRV",
+          "quote_hash": "312ef291235f1d7c3e3edffb420a57c6d8ae33672610e6aa9e11711f33940264"
+        },
+        {
+          "source_id": "FISRC-17b0a4ba7027e6a1",
+          "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+          "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+          "source_content_hash": "211f9e27654b79b5",
+          "quote": "$20 million Series A led by CRV",
+          "quote_hash": "c4b517e12f9d66ff250dcf6e0aa347b18ac6c6507fa66f25f660090e40a2488f"
+        },
+        {
           "source_id": "FISRC-5b1ac109014789f1",
           "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
           "source_title": "Alice 融资1.4亿美元、估值7亿至8亿美元，押注AI需要新的安全层",
           "source_content_hash": "1461487aa4bbec3d992cfd300e18436878da63169f1b85010a863b32b108ab3c",
           "quote": "Alice has raised $140 million in a funding round led by Apax Digital, with participation from new and existing investors including Samsung, SentinelOne, Maj Invest, MoreTech, Phoenix Insurance, Norwest, CRV, Vintage, Grove and Highland Europe.",
           "quote_hash": "7067b0f2a0ffecb0c09ed46fcb3bc2d25cf3cf0a4480de2e3ba2c23de4bb1a6c"
-        },
-        {
-          "source_id": "FISRC-70c3e89375309295",
-          "source_url": "https://theaiinsider.tech/2026/07/23/hadrius-raises-27m-to-build-agentic-compliance-infrastructure/",
-          "source_title": "Hadrius 融资 2700 万美元，打造智能体合规基础设施",
-          "source_content_hash": "4f89d06d00dc11fa",
-          "quote": "led by CRV",
-          "quote_hash": "a5a1708cd1d6ae7b5d07884e132d09dc33415caed2c2eb989ba224b97199a2bf"
         }
       ],
       "last_verified_at": "2026-10-03"

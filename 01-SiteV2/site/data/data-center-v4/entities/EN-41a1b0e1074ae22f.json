@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -71,12 +72,12 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-10-01",
-    "lastSeen": "2026-10-05",
+    "lastSeen": "2026-10-07",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-80aeba0846bbd197",
         "EV-2aa827a397a551d1",
+        "EV-80aeba0846bbd197",
         "EV-1c7050585c7f4791"
       ],
       "deployments": [],
@@ -88,37 +89,8 @@
     },
     "timeline": [
       {
-        "id": "EV-80aeba0846bbd197",
-        "dataDate": "2026-10-05",
-        "date": "2026-10-01",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "PaleBlueDot AI 完成 2 亿美元 C 轮融资，以扩展超级智能基础设施平台",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体",
-            "entityIds": [
-              "EN-6dcc023b5791108c"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-41a1b0e1074ae22f",
-          "EN-6dcc023b5791108c",
-          "EN-20b33aa992cb3f93"
-        ]
-      },
-      {
         "id": "EV-2aa827a397a551d1",
-        "dataDate": "2026-10-04",
+        "dataDate": "2026-10-07",
         "date": "2026-10-01",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -153,6 +125,35 @@
         "entityIds": [
           "EN-41a1b0e1074ae22f",
           "EN-f8223ea5a9c41813"
+        ]
+      },
+      {
+        "id": "EV-80aeba0846bbd197",
+        "dataDate": "2026-10-07",
+        "date": "2026-10-01",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "PaleBlueDot AI 完成 2 亿美元 C 轮融资，以扩展超级智能基础设施平台",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-6dcc023b5791108c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-41a1b0e1074ae22f",
+          "EN-6dcc023b5791108c",
+          "EN-20b33aa992cb3f93"
         ]
       },
       {

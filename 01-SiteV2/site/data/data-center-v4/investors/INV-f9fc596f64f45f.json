@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
+    "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-f9fc596f64f45f",
+    "name": "hi5 Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-06",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-cfc7b6b058a154a5",
+        "canonical_entity_id": "",
+        "name": "Comparables.ai"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-121e971beb3dc0f8",
+        "funding_insight_id": "FI-d0a7be509f4dee86",
+        "event_ids": [
+          "EV-6cf399bb27ddd1a5"
+        ],
+        "company_entity_id": "EN-cfc7b6b058a154a5",
+        "company_canonical_entity_id": "",
+        "company_name": "Comparables.ai",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$6 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4918a8b4fc250bf6",
+            "source_url": "https://tech.eu/2026/10/06/comparablesai-secures-6m-seed-to-scale-its-ai-platform-for-dealmakers/",
+            "source_title": "Comparables.ai 获 600 万美元种子轮融资，以扩展其面向交易撮合者的 AI 平台",
+            "source_content_hash": "ab77fec400a8274731c9fd7ff39d4fb8c489304a4151fe62b9464a1540fc64a8",
+            "quote": "The round was led by Pragmatech and Araya Ventures, with participation from Purple Ventures, Gorilla Capital, hi5 Ventures, Somersault Ventures and other investors.",
+            "quote_hash": "bdf2c659f0735fecca0729baf8d9d531e05d025d366317c53e75f13868c2348a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4918a8b4fc250bf6",
+        "source_url": "https://tech.eu/2026/10/06/comparablesai-secures-6m-seed-to-scale-its-ai-platform-for-dealmakers/",
+        "source_title": "Comparables.ai 获 600 万美元种子轮融资，以扩展其面向交易撮合者的 AI 平台",
+        "source_content_hash": "ab77fec400a8274731c9fd7ff39d4fb8c489304a4151fe62b9464a1540fc64a8",
+        "quote": "The round was led by Pragmatech and Araya Ventures, with participation from Purple Ventures, Gorilla Capital, hi5 Ventures, Somersault Ventures and other investors.",
+        "quote_hash": "bdf2c659f0735fecca0729baf8d9d531e05d025d366317c53e75f13868c2348a"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "hi5 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Comparables.ai · 种子轮 · 2026-10-06 · 本轮参投 · $6 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4918a8b4fc250bf6"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-4918a8b4fc250bf6",
+          "source_url": "https://tech.eu/2026/10/06/comparablesai-secures-6m-seed-to-scale-its-ai-platform-for-dealmakers/",
+          "source_title": "Comparables.ai 获 600 万美元种子轮融资，以扩展其面向交易撮合者的 AI 平台",
+          "source_content_hash": "ab77fec400a8274731c9fd7ff39d4fb8c489304a4151fe62b9464a1540fc64a8",
+          "quote": "The round was led by Pragmatech and Araya Ventures, with participation from Purple Ventures, Gorilla Capital, hi5 Ventures, Somersault Ventures and other investors.",
+          "quote_hash": "bdf2c659f0735fecca0729baf8d9d531e05d025d366317c53e75f13868c2348a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    }
+  }
+}

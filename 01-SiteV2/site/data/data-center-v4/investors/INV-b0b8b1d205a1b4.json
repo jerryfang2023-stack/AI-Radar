@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -61,23 +62,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-23",
-    "latest_disclosed_at": "2026-06-23",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-85f694226bcbe83c",
+        "canonical_entity_id": "",
+        "name": "Flai"
+      },
       {
         "entity_id": "EN-f346eaca864441f9",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-db062baa3a1cc865",
+        "funding_insight_id": "FI-0f835557946f3ea1",
+        "event_ids": [
+          "EV-acd2398cadb191c3"
+        ],
+        "company_entity_id": "EN-85f694226bcbe83c",
+        "company_canonical_entity_id": "",
+        "company_name": "Flai",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$27 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 27000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2700 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-000513112c6d2508",
+            "source_url": "https://techcrunch.com/2026/10/06/flais-ai-dealership-software-is-booking-50000-appointments-per-month",
+            "source_title": "Flai 的 AI 经销商软件每月预约 50,000 次",
+            "source_content_hash": "3155c15b008c783372538bd5dbbaeffa67138d2e1a82259fef87479f896cf5a5",
+            "quote": "Flai said it had raised a $27 million Series A funding round led by automation-focused firm Base10 Partners.",
+            "quote_hash": "44d53e20e6b3ad61d643c6fd2260d2f34783a89ac9ad59336db9684b9ae8bfde"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8aa9914f10bac9b9",
         "funding_insight_id": "FI-617705549a679908",
@@ -127,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-000513112c6d2508",
+        "source_url": "https://techcrunch.com/2026/10/06/flais-ai-dealership-software-is-booking-50000-appointments-per-month",
+        "source_title": "Flai 的 AI 经销商软件每月预约 50,000 次",
+        "source_content_hash": "3155c15b008c783372538bd5dbbaeffa67138d2e1a82259fef87479f896cf5a5",
+        "quote": "Flai said it had raised a $27 million Series A funding round led by automation-focused firm Base10 Partners.",
+        "quote_hash": "44d53e20e6b3ad61d643c6fd2260d2f34783a89ac9ad59336db9684b9ae8bfde"
+      },
       {
         "source_id": "FISRC-058518ce11dc5f00",
         "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
@@ -177,6 +231,10 @@
         {
           "description": "The firm’s team biography says co-founder Adeyemi Ajao previously co-founded Tuenti, acquired by Telefónica, and Identified, acquired by Workday; these are founder operating outcomes, not Base10 fund returns.",
           "source_id": "base10_team"
+        },
+        {
+          "description": "融资来源记录：Flai · A轮 · 2026-10-06 · 本轮领投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-000513112c6d2508"
         }
       ],
       "contacts": [
@@ -240,6 +298,14 @@
           "source_content_hash": "80f6dde2ca5cd41c",
           "quote": "The round was led by Base10 Partners, with participation from Y Combinator and Peak XV Partners.",
           "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
+        },
+        {
+          "source_id": "FISRC-000513112c6d2508",
+          "source_url": "https://techcrunch.com/2026/10/06/flais-ai-dealership-software-is-booking-50000-appointments-per-month",
+          "source_title": "Flai 的 AI 经销商软件每月预约 50,000 次",
+          "source_content_hash": "3155c15b008c783372538bd5dbbaeffa67138d2e1a82259fef87479f896cf5a5",
+          "quote": "Flai said it had raised a $27 million Series A funding round led by automation-focused firm Base10 Partners.",
+          "quote_hash": "44d53e20e6b3ad61d643c6fd2260d2f34783a89ac9ad59336db9684b9ae8bfde"
         }
       ],
       "last_verified_at": "2026-09-27"

@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -62,7 +63,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +73,7 @@
     "first_disclosed_at": "2026-02-27",
     "latest_disclosed_at": "2026-02-27",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +126,38 @@
             "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
           }
         ]
+      },
+      {
+        "activity_id": "IA-8a1ada61571a8601",
+        "funding_insight_id": "FI-8fcbda1e61969a98",
+        "event_ids": [
+          "EV-da8dc9f513542c19"
+        ],
+        "company_entity_id": "EN-d965aa403593d08c",
+        "company_canonical_entity_id": "",
+        "company_name": "Melius",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "披露未明确对应轮次的参投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-17b0a4ba7027e6a1",
+            "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+            "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+            "source_content_hash": "211f9e27654b79b5",
+            "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
+            "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +168,14 @@
         "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
         "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
         "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
+      },
+      {
+        "source_id": "FISRC-17b0a4ba7027e6a1",
+        "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+        "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+        "source_content_hash": "211f9e27654b79b5",
+        "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
+        "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
       }
     ],
     "public_profile": {
@@ -166,6 +208,10 @@
         {
           "description": "融资来源记录：Pensive · 种子轮 · 2026-02-27 · 本轮参投 · $6.8M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4c101bd2bd412982"
+        },
+        {
+          "description": "融资来源记录：Melius · 历史轮次未披露 · 披露未明确对应轮次的参投方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-17b0a4ba7027e6a1"
         }
       ],
       "contacts": [
@@ -209,6 +255,14 @@
           "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
           "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
           "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
+        },
+        {
+          "source_id": "FISRC-17b0a4ba7027e6a1",
+          "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+          "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+          "source_content_hash": "211f9e27654b79b5",
+          "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
+          "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
         }
       ],
       "last_verified_at": "2026-10-03",

@@ -9,6 +9,15 @@ test("source-title indefinite singular durations retain their numeric meaning", 
   assert.equal(sourceTitleFactsPreserved("AI agent completes a task", "AI智能体完成一项任务"), true);
 });
 
+test("source-title free trial durations preserve both duration and credit amount", () => {
+  const source = "Anthropic is giving startups a free year of Claude Team and $1,000 in credits";
+  const translation = "Anthropic为初创公司提供一年免费的Claude Team和1,000美元信用额度";
+  assert.equal(generatedTitleTranslationLooksUsable(source, translation), true);
+  assert.equal(sourceTitleFactsPreserved(source, translation.replace("一年", "两年")), false);
+  assert.equal(sourceTitleFactsPreserved(source, translation.replace("1,000", "10,000")), false);
+  assert.equal(sourceTitleFactsPreserved("Claude Team offers one free month", "Claude Team提供一个月免费试用"), true);
+});
+
 test("source-title dates accept Chinese spacing but reject changed calendar facts", () => {
   const source = "eu ai act: AI Brief, 11 September 2026 - iSystem.ai";
   assert.equal(sourceTitleFactsPreserved(source, "欧盟 AI 法案：AI 简报，2026 年 9 月 11 日"), true);
