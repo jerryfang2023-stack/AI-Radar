@@ -8,7 +8,11 @@ export function isPendingFundingTitle(value = "") {
 }
 
 export function isWithdrawnFundingTitle(value = "") {
-  const text = String(value || "");
+  // A product pivot can precede a completed financing in the same headline.
+  // Mask only an explicit product object; retain any separate cancelled round.
+  const text = String(value || "")
+    .replace(/(?:取消|撤回|终止|放弃)(?:了)?(?:其)?(?:首款|第一款|最初的|原有的)?产品(?!融资|募资)/gu, "产品调整")
+    .replace(/\b(?:scrubbed|shelved|abandoned|cancelled|canceled|withdrew|withdrawn)\s+(?:(?:its|their|the|a)\s+)?(?:(?:first|original|initial)\s+)?product\b(?!\s+(?:funding|financing|round)\b)/giu, "product pivot");
   return /\b(?:scrubbed|shelved|abandoned|cancelled|canceled|withdrew|withdrawn)\b[^!?。\n]{0,100}\b(?:funding|financing|round)\b/iu.test(text)
     || /\b(?:funding|financing|round)\b[^!?。\n]{0,60}\b(?:scrubbed|shelved|abandoned|cancelled|canceled|withdrawn|never closed|did not close|fell through)\b/iu.test(text)
     || /(?:取消|撤回|终止|放弃).{0,40}(?:融资|募资)|(?:融资|募资).{0,40}(?:取消|撤回|终止|未完成|未交割)/u.test(text);

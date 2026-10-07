@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -61,23 +62,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-10",
-    "latest_disclosed_at": "2026-08-10",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "seed",
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-58f71bec3ce7d747",
+        "canonical_entity_id": "",
+        "name": "Nettle"
+      },
       {
         "entity_id": "EN-6e4e67be7246602a",
         "canonical_entity_id": "",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-82b9d18e3b76d77a",
+        "funding_insight_id": "FI-154de0889f1fcad2",
+        "event_ids": [
+          "EV-33c666ae1aefd87b"
+        ],
+        "company_entity_id": "EN-58f71bec3ce7d747",
+        "company_canonical_entity_id": "",
+        "company_name": "Nettle",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4.8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "480 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1b63578e82da8f27",
+            "source_url": "https://tech.eu/2026/10/06/nettle-raises-48m-to-expand-its-ai-workspace-for-insurers/",
+            "source_title": "Nettle 融资 480 万美元，为保险公司扩展其 AI 工作空间",
+            "source_content_hash": "f2042c5237fa2a4fcba98f1e64bddb9c8f394093279e1ea4d7ba2594954feab9",
+            "quote": "The round was led by MTech, with Project A Ventures following on with a super pro rata investment and participation from Sure Valley Ventures (SVV), Portfolio Ventures, Ventures Together and selected angel investors.",
+            "quote_hash": "028582481c5f98a621ec289f8a335b904d40ab0807788c4e82e8b72b8fd01b46"
+          }
+        ]
+      },
       {
         "activity_id": "IA-644419195cf385f1",
         "funding_insight_id": "FI-d2d59bbf7072015a",
@@ -128,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1b63578e82da8f27",
+        "source_url": "https://tech.eu/2026/10/06/nettle-raises-48m-to-expand-its-ai-workspace-for-insurers/",
+        "source_title": "Nettle 融资 480 万美元，为保险公司扩展其 AI 工作空间",
+        "source_content_hash": "f2042c5237fa2a4fcba98f1e64bddb9c8f394093279e1ea4d7ba2594954feab9",
+        "quote": "The round was led by MTech, with Project A Ventures following on with a super pro rata investment and participation from Sure Valley Ventures (SVV), Portfolio Ventures, Ventures Together and selected angel investors.",
+        "quote_hash": "028582481c5f98a621ec289f8a335b904d40ab0807788c4e82e8b72b8fd01b46"
+      },
+      {
         "source_id": "FISRC-2a587e714925b882",
         "source_url": "https://www.morningstar.com/news/business-wire/20260728282605/throne-science-maker-of-smart-toilet-sensor-announces-10-million-series-a-fundraise",
         "source_title": "Throne Science, Maker of Smart Toilet Sensor, Announces $10 Million Series A Fundraise",
@@ -163,6 +218,10 @@
           "source_id": "throne"
         },
         {
+          "description": "融资来源记录：Nettle · 种子轮 · 2026-10-06 · 本轮参投 · $4.8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1b63578e82da8f27"
+        },
+        {
           "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a587e714925b882"
         }
@@ -192,6 +251,14 @@
           "source_content_hash": "4fb68fdd53b571e0dd3981b821b3e879f7d3052e280d07837bf012800813ef29",
           "quote": "Today we're thrilled to announce a $10 million Series A, led by Will Ventures, with Workshop, Emerson Collective, Accomplice, Moxxie, Salt VC, LEAD VC, Ventures Together, Symphony, Felix Capital, Cosmic Venture Partners, Offscript, V1.VC, and Morrison Seger participating.",
           "quote_hash": "e3722ecc019e1f1b6c2b2dd1e5b45b0882e0a9c384e79e11872ce47e7d19568a"
+        },
+        {
+          "source_id": "FISRC-1b63578e82da8f27",
+          "source_url": "https://tech.eu/2026/10/06/nettle-raises-48m-to-expand-its-ai-workspace-for-insurers/",
+          "source_title": "Nettle 融资 480 万美元，为保险公司扩展其 AI 工作空间",
+          "source_content_hash": "f2042c5237fa2a4fcba98f1e64bddb9c8f394093279e1ea4d7ba2594954feab9",
+          "quote": "The round was led by MTech, with Project A Ventures following on with a super pro rata investment and participation from Sure Valley Ventures (SVV), Portfolio Ventures, Ventures Together and selected angel investors.",
+          "quote_hash": "028582481c5f98a621ec289f8a335b904d40ab0807788c4e82e8b72b8fd01b46"
         },
         {
           "source_id": "FISRC-2a587e714925b882",

@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -61,20 +62,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-24",
-    "latest_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "pre_seed",
       "seed"
     ],
     "portfolio_companies": [
@@ -82,9 +84,54 @@
         "entity_id": "EN-e23228440ca5340f",
         "canonical_entity_id": "",
         "name": "Seltz"
+      },
+      {
+        "entity_id": "EN-111840cf28d166c5",
+        "canonical_entity_id": "",
+        "name": "SimpL"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a2b093752c0016e8",
+        "funding_insight_id": "FI-085a9293fe53d49e",
+        "event_ids": [
+          "EV-2eb259fc0b868102"
+        ],
+        "company_entity_id": "EN-111840cf28d166c5",
+        "company_canonical_entity_id": "",
+        "company_name": "SimpL",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "€1.2 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "120 万欧元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fbc320e5a295c02b",
+            "source_url": "https://tech.eu/2026/10/06/italian-simpl-raises-eur12m-to-power-b2b-sales-with-ai/",
+            "source_title": "意大利 SimpL 融资 120 万欧元，用 AI 赋能 B2B 销售",
+            "source_content_hash": "368644f8aea3927e21f0fb578287aead462ba56642ba693885b768c564a1587b",
+            "quote": "The round was led by Techshop Capital, with participation from Vento Ventures and several business angels.",
+            "quote_hash": "099fb9a89d05b804b8f9d18b1945ae184c79a29c357b1fd5f7f84cca9f49393d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3238b1c0dcc0dc5f",
         "funding_insight_id": "FI-180a459d0573eb2a",
@@ -128,6 +175,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-fbc320e5a295c02b",
+        "source_url": "https://tech.eu/2026/10/06/italian-simpl-raises-eur12m-to-power-b2b-sales-with-ai/",
+        "source_title": "意大利 SimpL 融资 120 万欧元，用 AI 赋能 B2B 销售",
+        "source_content_hash": "368644f8aea3927e21f0fb578287aead462ba56642ba693885b768c564a1587b",
+        "quote": "The round was led by Techshop Capital, with participation from Vento Ventures and several business angels.",
+        "quote_hash": "099fb9a89d05b804b8f9d18b1945ae184c79a29c357b1fd5f7f84cca9f49393d"
+      },
       {
         "source_id": "FISRC-05007e2b6b43ffda",
         "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
@@ -178,6 +233,10 @@
         {
           "description": "SiliconANGLE 将 Vento Ventures 列为 Seltz 1,250 万美元种子轮参投方之一，未披露其单独出资金额。",
           "source_id": "FISRC-05007e2b6b43ffda"
+        },
+        {
+          "description": "融资来源记录：SimpL · 预种子轮 · 2026-10-06 · 本轮参投 · €1.2 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fbc320e5a295c02b"
         }
       ],
       "contacts": [
@@ -217,6 +276,14 @@
           "source_content_hash": "6a81ec74dc966cd7e8b6dcbbd11c1201320318c83689cfa204aaf87a00699119",
           "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures",
           "quote_hash": "9317d27dcd44755a08a62438a5ebbfd6628ad5af27501300e72473c6cac0a332"
+        },
+        {
+          "source_id": "FISRC-fbc320e5a295c02b",
+          "source_url": "https://tech.eu/2026/10/06/italian-simpl-raises-eur12m-to-power-b2b-sales-with-ai/",
+          "source_title": "意大利 SimpL 融资 120 万欧元，用 AI 赋能 B2B 销售",
+          "source_content_hash": "368644f8aea3927e21f0fb578287aead462ba56642ba693885b768c564a1587b",
+          "quote": "The round was led by Techshop Capital, with participation from Vento Ventures and several business angels.",
+          "quote_hash": "099fb9a89d05b804b8f9d18b1945ae184c79a29c357b1fd5f7f84cca9f49393d"
         }
       ]
     },

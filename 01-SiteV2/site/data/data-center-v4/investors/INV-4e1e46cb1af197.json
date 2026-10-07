@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -61,30 +62,36 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-12",
-    "latest_disclosed_at": "2026-07-31",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-77a82bb9aafc81d9",
         "canonical_entity_id": "",
         "name": "Ellis AI"
+      },
+      {
+        "entity_id": "EN-85f694226bcbe83c",
+        "canonical_entity_id": "",
+        "name": "Flai"
       },
       {
         "entity_id": "EN-1c5483264189feef",
@@ -98,6 +105,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d01cff1073347421",
+        "funding_insight_id": "FI-0f835557946f3ea1",
+        "event_ids": [
+          "EV-acd2398cadb191c3"
+        ],
+        "company_entity_id": "EN-85f694226bcbe83c",
+        "company_canonical_entity_id": "",
+        "company_name": "Flai",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$27 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 27000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2700 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c8bf3839b23b0657",
+            "source_url": "https://www.useflai.com/blog/flai-series-a-base10",
+            "source_title": "Flai raises $27M led by Base10 Partners to automate car dealership operations",
+            "source_content_hash": "c53320a25185219c",
+            "quote": "We're excited to announce that Flai has raised a $27 million Series A led by Base10 Partners, with participation from Toyota Ventures, First Round Capital, Y Combinator, The Friedkin Group, and Findlay Automotive Group.",
+            "quote_hash": "27712d3c2c719515c0cdaf37039f50ef13095b51d6dc774c8849eca9f25d94c9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3c615539aa5b1ed2",
         "funding_insight_id": "FI-2b717ea13b12294d",
@@ -253,6 +300,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c8bf3839b23b0657",
+        "source_url": "https://www.useflai.com/blog/flai-series-a-base10",
+        "source_title": "Flai raises $27M led by Base10 Partners to automate car dealership operations",
+        "source_content_hash": "c53320a25185219c",
+        "quote": "We're excited to announce that Flai has raised a $27 million Series A led by Base10 Partners, with participation from Toyota Ventures, First Round Capital, Y Combinator, The Friedkin Group, and Findlay Automotive Group.",
+        "quote_hash": "27712d3c2c719515c0cdaf37039f50ef13095b51d6dc774c8849eca9f25d94c9"
+      },
+      {
         "source_id": "FISRC-a8e6dd6c34cd416a",
         "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
         "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
@@ -332,16 +387,16 @@
           "source_id": "firstround_who"
         },
         {
+          "description": "融资来源记录：Flai · A轮 · 2026-10-06 · 本轮参投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c8bf3839b23b0657"
+        },
+        {
           "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a8e6dd6c34cd416a"
         },
         {
           "description": "融资来源记录：Ploy · 种子轮 · 2026-06-17 · 本轮领投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-06b0e5fa3929381b"
-        },
-        {
-          "description": "融资来源记录：Onyx · 种子轮 · 2025-03-12 · 本轮联合领投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-03b9d51b95b8c6ce"
         }
       ],
       "contacts": [
@@ -407,6 +462,14 @@
           "quote_hash": "761f05201de282f24f4ba605b1a81e7a2c3e67b38526412e93069c51490e4cb0"
         },
         {
+          "source_id": "FISRC-c8bf3839b23b0657",
+          "source_url": "https://www.useflai.com/blog/flai-series-a-base10",
+          "source_title": "Flai raises $27M led by Base10 Partners to automate car dealership operations",
+          "source_content_hash": "c53320a25185219c",
+          "quote": "We're excited to announce that Flai has raised a $27 million Series A led by Base10 Partners, with participation from Toyota Ventures, First Round Capital, Y Combinator, The Friedkin Group, and Findlay Automotive Group.",
+          "quote_hash": "27712d3c2c719515c0cdaf37039f50ef13095b51d6dc774c8849eca9f25d94c9"
+        },
+        {
           "source_id": "FISRC-a8e6dd6c34cd416a",
           "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
           "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
@@ -421,14 +484,6 @@
           "source_content_hash": "9ad34c373c3c1927a5a5e75bac017b837c14a0fd801cb1af9373dd2000d77cbb",
           "quote": "$27 million seed led by First Round Capital and Y Combinator",
           "quote_hash": "7cb0f31df29d4b600ff82a7354709a5e6707f3920b96b2a6d33b726186d4f70d"
-        },
-        {
-          "source_id": "FISRC-03b9d51b95b8c6ce",
-          "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
-          "source_title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
-          "source_content_hash": "9266f35a39d4c471",
-          "quote": "The round was co-led by Khosla Ventures and First Round Capital",
-          "quote_hash": "3b6a63c25ba8b8d8e2fd847a93d7b9bfba14d69d63bd14ce73e0b2435993fa28"
         }
       ],
       "last_verified_at": "2026-09-26",

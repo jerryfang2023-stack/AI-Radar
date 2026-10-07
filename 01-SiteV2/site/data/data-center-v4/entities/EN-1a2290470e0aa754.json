@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -65,6 +66,7 @@
     "eventIds": [
       "EV-4a6ee188df36e21c",
       "EV-39247400114d59dd",
+      "EV-ffe023b6919230e0",
       "EV-55581be112058bd5",
       "EV-bbea3352983c2033",
       "EV-181cd28d97c4e61d",
@@ -77,13 +79,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-01-14",
-    "lastSeen": "2026-10-06",
+    "lastSeen": "2026-10-07",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-ffe023b6919230e0",
+        "EV-55581be112058bd5",
         "EV-4a6ee188df36e21c",
         "EV-bbea3352983c2033",
-        "EV-55581be112058bd5",
         "EV-39247400114d59dd",
         "EV-224077c33b02562c",
         "EV-545bef6ff60cf3b2",
@@ -99,6 +102,57 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-ffe023b6919230e0",
+        "dataDate": "2026-10-07",
+        "date": "2026-10-01",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-0d0dd4bc07420a2c"
+        ]
+      },
+      {
+        "id": "EV-55581be112058bd5",
+        "dataDate": "2026-10-07",
+        "date": "2026-09-30",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "hr_workforce",
+            "name": "人力与员工体验",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "construction_real_estate",
+            "name": "建筑与房地产",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-e3baa3a2daee23ae"
+        ]
+      },
       {
         "id": "EV-4a6ee188df36e21c",
         "dataDate": "2026-10-06",
@@ -164,41 +218,6 @@
         "entityIds": [
           "EN-1a2290470e0aa754",
           "EN-f395aeb2c6e6abc8"
-        ]
-      },
-      {
-        "id": "EV-55581be112058bd5",
-        "dataDate": "2026-10-04",
-        "date": "2026-09-30",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "hr_workforce",
-            "name": "人力与员工体验",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "construction_real_estate",
-            "name": "建筑与房地产",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-1a2290470e0aa754",
-          "EN-e3baa3a2daee23ae"
         ]
       },
       {

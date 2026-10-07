@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -61,18 +62,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-21",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-05",
     "role_counts": {
-      "co_lead": 2,
+      "co_lead": 3,
       "lead": 2,
       "participant": 2
     },
@@ -81,13 +82,19 @@
       "seed",
       "series_a",
       "series_c",
-      "series_e"
+      "series_e",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-6d478f33a9e3cba3",
         "canonical_entity_id": "",
         "name": "BigHat Biosciences"
+      },
+      {
+        "entity_id": "EN-dc483de2bd50b2f4",
+        "canonical_entity_id": "",
+        "name": "Clockwork.io"
       },
       {
         "entity_id": "EN-7b9b33ca95deff50",
@@ -116,6 +123,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c9f8cbb3cb4bfd13",
+        "funding_insight_id": "FI-4e41cf72b50bafd3",
+        "event_ids": [
+          "EV-208a98705213d50c"
+        ],
+        "company_entity_id": "EN-dc483de2bd50b2f4",
+        "company_canonical_entity_id": "",
+        "company_name": "Clockwork.io",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$31M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 31000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3100 万美元"
+        },
+        "announced_at": "2026-10-05",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-bffca0091f22129f",
+            "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+            "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
+            "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
+            "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
+            "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c4046a96ec5c1d73",
         "funding_insight_id": "FI-07d1ab9787e1c9dd",
@@ -359,6 +406,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-bffca0091f22129f",
+        "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+        "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
+        "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
+        "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
+        "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
+      },
+      {
         "source_id": "FISRC-98f84ad840508b39",
         "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
         "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
@@ -445,16 +500,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Clockwork.io · 轮次未披露 · 2026-10-05 · 本轮联合领投 · $31M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bffca0091f22129f"
+        },
+        {
           "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮联合领投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f84ad840508b39"
         },
         {
           "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮联合领投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3372eff279ee29db"
-        },
-        {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-852df50f4128c47b"
         }
       ],
       "contacts": [
@@ -502,6 +557,14 @@
           "quote_hash": "4526d04e278c97b0e375c17c63dc63c1a15c030cb464cfdce3e36d65487f12fc"
         },
         {
+          "source_id": "FISRC-bffca0091f22129f",
+          "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+          "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
+          "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
+          "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
+          "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
+        },
+        {
           "source_id": "FISRC-98f84ad840508b39",
           "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
           "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
@@ -516,14 +579,6 @@
           "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
           "quote": "The round was co-led by DFJ Growth & Premji Invest",
           "quote_hash": "c549e5192a7c3eae0d959c7c805ef06ad83c9c58dd6cf40db4b07347f69526e7"
-        },
-        {
-          "source_id": "FISRC-852df50f4128c47b",
-          "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
-          "source_title": "Enveda's $311m Series E to fund AI-driven drug discovery",
-          "source_content_hash": "e6486e5f995e038e",
-          "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
-          "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
         }
       ],
       "identity_status": "verified",

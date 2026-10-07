@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -21869,31 +21870,30 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-10-06",
-      "funnel_id": "LF-dad10a9917c3a641",
+      "data_date": "2026-10-07",
+      "funnel_id": "LF-fed41fd36f589e60",
       "lens": "hardware",
-      "date": "2026-10-06",
+      "date": "2026-10-07",
       "monitoring_paths": [],
-      "raw_documents": 14,
-      "original_sources": 14,
-      "valid_claims": 12,
+      "raw_documents": 13,
+      "original_sources": 13,
+      "valid_claims": 11,
       "observations": 0,
-      "canonical_events": 6,
+      "canonical_events": 5,
       "blocker_counts": {
         "rumor_requires_primary_confirmation": 1,
         "community_source_requires_original_event_source": 1,
-        "no_source_bounded_event": 1,
-        "proposed_financing_not_completed": 3,
+        "proposed_financing_not_completed": 4,
         "opinion_without_source_bounded_event": 1,
         "multiple_funding_recipients_require_separate_sources": 1
       },
       "rates": {
         "original_source_rate": 1,
-        "valid_claim_rate": 0.8571428571428571,
+        "valid_claim_rate": 0.8461538461538461,
         "observation_rate": 0,
-        "event_conversion_rate": 0.5
+        "event_conversion_rate": 0.45454545454545453
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-06/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-07/monitoring-funnel.json"
     }
   ]
 }

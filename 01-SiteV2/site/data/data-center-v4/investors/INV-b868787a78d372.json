@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -203,6 +204,26 @@
         }
       ],
       "last_verified_at": "2026-10-06"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[0].label": {
+          "text": "SEC Form D/A 发行主体（独立披露）",
+          "source_hash": "26f9162123718af38ce5130454278e6cac6859e8f7f0cb38fc0a104200d44de8",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-07T00:42:47.546Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "SEC Form D/A 所列普通合伙人",
+          "source_hash": "6e8eb6eebbe3ba5796e73fb4c54f19f7f7748a255210aa9552e51c0158fe4cde",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-07T00:42:47.546Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

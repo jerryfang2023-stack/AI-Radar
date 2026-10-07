@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -65,6 +66,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-bada0d929d2b70ac",
       "EV-3a7e1e2c46daaa76",
       "EV-383a1cc6f0c68d6a",
       "EV-ea64ab88a85eabd0",
@@ -149,10 +151,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-04-24",
-    "lastSeen": "2026-10-05",
+    "lastSeen": "2026-10-07",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-bada0d929d2b70ac",
         "EV-770a599defdaf792",
         "EV-3a7e1e2c46daaa76",
         "EV-383a1cc6f0c68d6a",
@@ -232,6 +235,25 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-bada0d929d2b70ac",
+        "dataDate": "2026-10-07",
+        "date": "2026-10-06",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ac7030a6822ecc45",
+          "EN-8baf1838b7b24434",
+          "EN-221e3af59d342a6d",
+          "EN-9c8ae69b84f21a2e",
+          "EN-6f7ac1823da81d2e"
+        ]
+      },
       {
         "id": "EV-770a599defdaf792",
         "dataDate": "2026-10-05",
@@ -3541,7 +3563,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-07"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -3984,7 +4006,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-07"
     },
     {
       "id": "TX-ai_market_subcategory-development_deployment",
@@ -4196,7 +4218,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-07"
     },
     {
       "id": "TX-product_form-model",
@@ -4384,6 +4406,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-44b4a5564faf8106",
         "EV-72a9b0250c1c9435",
         "EV-5644bf8426cb730d",
         "EV-857d7186b873e0ed",
@@ -4872,7 +4895,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-07"
     },
     {
       "id": "TX-target_user-developer",
@@ -5390,7 +5413,7 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-10-06"
+      "lastSeen": "2026-10-07"
     },
     {
       "id": "TX-target_user-researcher",

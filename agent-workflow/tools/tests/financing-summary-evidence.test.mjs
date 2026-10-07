@@ -2,9 +2,17 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {financingDecisionText,fundingClaimGroupingProblem,eventSourceEligibility,reviewedFundingDate} from '../build-data-center-v4.mjs';
 import {canonicalFundingEventAmount,isEligibleFundingInsightEvent,normalizeFundingAmount,subjectCompanyForEvent} from '../funding-insight-v1-utils.mjs';
-import {isPendingFundingTitle} from '../lib/funding-transaction-status.mjs';
+import {isPendingFundingTitle,isWithdrawnFundingTitle} from '../lib/funding-transaction-status.mjs';
 const event={event_type:'funding',event_status:'completed',publication_status:'verified',display_title_zh:'某AI企业完成融资',claim_refs:['C'],metrics:['1.45 million']};
 const claim=quote=>({claim_id:'C',claim_type:'funding',verification_status:'accepted',object:quote,source_quote:quote});
+test('abandoning a product is distinct from withdrawing its financing',()=>{
+ assert.equal(isWithdrawnFundingTitle('前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元'),false);
+ assert.equal(isWithdrawnFundingTitle('Founders abandoned their first product before raising funding'),false);
+ assert.equal(isWithdrawnFundingTitle('放弃首款产品后，公司取消2000万美元融资'),true);
+ assert.equal(isWithdrawnFundingTitle('Startup abandoned its funding round to build a new product'),true);
+ assert.equal(isWithdrawnFundingTitle('公司取消产品融资'),true);
+ assert.equal(isWithdrawnFundingTitle('Startup abandoned its product funding'),true);
+});
 test('explicit USD and seed amounts retain currency when metrics lose the prefix',()=>{
  const claims=[claim('Acme raised USD 1.45 million in a pre-seed funding round.')];
  assert.equal(normalizeFundingAmount(canonicalFundingEventAmount(event,claims)).currency,'USD');

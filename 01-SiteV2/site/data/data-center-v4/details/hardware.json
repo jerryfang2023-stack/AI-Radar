@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -21869,8 +21870,652 @@
   ],
   "events": [
     {
+      "id": "EV-1c79bd33ccfafec8",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "AI计算初创公司Lambda将在计划IPO前筹集$4B",
+      "originalTitle": "AI computing startup Lambda to raise $4B ahead of planned IPO",
+      "subject": "AI computing startup Lambda to",
+      "action": "raise",
+      "object": "$4B ahead of planned IPO",
+      "metrics": [
+        "$4B",
+        "$1 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7eccc0cc2a21bb7a",
+        "EN-554e79e652b29f3a",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "AI computing startup Lambda to",
+        "Lambda",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-2eb259fc0b868102",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "意大利 SimpL 融资 120 万欧元，用 AI 赋能 B2B 销售",
+      "originalTitle": "Italian SimpL raises €1.2M to power B2B sales with AI",
+      "subject": "Italian SimpL",
+      "action": "raises",
+      "object": "€1.2M to power B2B sales with AI",
+      "metrics": [
+        "€1.2 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f371f73bb72e1ce3",
+        "EN-111840cf28d166c5"
+      ],
+      "entityNames": [
+        "Italian SimpL",
+        "SimpL"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/06/italian-simpl-raises-eur12m-to-power-b2b-sales-with-ai/",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-33c666ae1aefd87b",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Nettle 融资 480 万美元，为保险公司扩展其 AI 工作空间",
+      "originalTitle": "Nettle raises $4.8M to expand its AI workspace for insurers",
+      "subject": "Nettle",
+      "action": "raises",
+      "object": "$4.8M to expand its AI workspace for insurers",
+      "metrics": [
+        "$4.8 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-58f71bec3ce7d747"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-58f71bec3ce7d747"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-58f71bec3ce7d747"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-58f71bec3ce7d747"
+      ],
+      "entityNames": [
+        "Nettle"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/06/nettle-raises-48m-to-expand-its-ai-workspace-for-insurers/",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-6744aefb738a9a0c",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Hadrian 融资 4000 万美元，以应对 AI 驱动的网络威胁",
+      "originalTitle": "Hadrian raises $40M to tackle AI-driven cyber threats",
+      "subject": "Hadrian",
+      "action": "raises",
+      "object": "$40M to tackle AI-driven cyber threats",
+      "metrics": [
+        "$40 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-5e8d0bae72bca66f"
+      ],
+      "entityNames": [
+        "Hadrian"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/06/hadrian-raises-40m-to-tackle-ai-driven-cyber-threats/",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-6bbfb2ce5e89bbda",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cleavr 获 800 万欧元，在欧洲扩展 AI 驱动的发票收款业务",
+      "originalTitle": "Cleavr bags €8M to scale AI-powered invoice collection across Europe",
+      "subject": "Cleavr",
+      "action": "funding",
+      "object": "€8 million seed round",
+      "metrics": [
+        "€8 million",
+        "€1 million"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "finance_accounting",
+            "name": "财务与会计",
+            "entityIds": [
+              "EN-c96c14e093fcb408"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "finance_accounting",
+          "name": "财务与会计",
+          "entityIds": [
+            "EN-c96c14e093fcb408"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "finance_accounting",
+          "name": "财务与会计",
+          "entityIds": [
+            "EN-c96c14e093fcb408"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c96c14e093fcb408"
+      ],
+      "entityNames": [
+        "Cleavr"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/06/cleavr-bags-eur8m-to-scale-ai-powered-invoice-collection-across-europe/",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-6cf399bb27ddd1a5",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Comparables.ai 获 600 万美元种子轮融资，以扩展其面向交易撮合者的 AI 平台",
+      "originalTitle": "Comparables.ai secures $6M seed to scale its AI platform for dealmakers",
+      "subject": "Comparables.ai",
+      "action": "secures",
+      "object": "$6M seed to scale its AI platform for dealmakers",
+      "metrics": [
+        "$6 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-cfc7b6b058a154a5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-cfc7b6b058a154a5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-cfc7b6b058a154a5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-cfc7b6b058a154a5"
+      ],
+      "entityNames": [
+        "Comparables.ai"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/06/comparablesai-secures-6m-seed-to-scale-its-ai-platform-for-dealmakers/",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-acd2398cadb191c3",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Flai 的 AI 经销商软件每月预约 50,000 次",
+      "originalTitle": "Flai&#8217;s AI dealership software is booking 50,000 appointments per month",
+      "subject": "Flai",
+      "action": "funding",
+      "object": "$27 million Series A funding round led by Base10 Partners",
+      "metrics": [
+        "$27 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b7f4bc41f0dcb195",
+        "EN-85f694226bcbe83c"
+      ],
+      "entityNames": [
+        "On Tuesday",
+        "Flai"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/06/flais-ai-dealership-software-is-booking-50000-appointments-per-month/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-bada0d929d2b70ac",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
+      "originalTitle": "CATL and Tencent back Deepseek's ballooning funding round as the AI startup eyes a 2027 IPO",
+      "subject": "CATL and Tencent back Deepseek's ballooning",
+      "action": "funding round",
+      "object": "as the AI startup eyes a 2027 IPO",
+      "metrics": [
+        "$12 billion",
+        "$7.5 billion",
+        "$75 billion",
+        "$7.4 billion",
+        "$50 billion"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-143a58b1f0d934cd",
+          "CL-1c5db976baffda1b",
+          "CL-8a5cc1f10860178e",
+          "CL-9761dfac4758a32f"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ac7030a6822ecc45",
+        "EN-8baf1838b7b24434",
+        "EN-221e3af59d342a6d",
+        "EN-9c8ae69b84f21a2e",
+        "EN-6f7ac1823da81d2e"
+      ],
+      "entityNames": [
+        "CATL and Tencent back Deepseek's ballooning",
+        "CATL",
+        "Tencent back Deepseek's ballooning",
+        "Tencent",
+        "DeepSeek"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/",
+      "publisher": "the-decoder.com"
+    },
+    {
+      "id": "EV-da8dc9f513542c19",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
+      "originalTitle": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product",
+      "subject": "Melius",
+      "action": "funding",
+      "object": "$20 million Series A",
+      "metrics": [
+        "$25 million",
+        "$20 million",
+        "$5 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-d965aa403593d08c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-d965aa403593d08c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-d965aa403593d08c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-d965aa403593d08c"
+      ],
+      "entityNames": [
+        "Melius"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-ee1dd0077269532b",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI安全公司Hadrian完成4000万美元融资，HV Capital等参投",
+      "originalTitle": "",
+      "subject": "AI安全公司Hadrian",
+      "action": "完成4000万美元融资",
+      "object": "，HV Capital等参投",
+      "metrics": [
+        "4000万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f8abb4aab4da7486"
+      ],
+      "entityNames": [
+        "AI安全公司Hadrian"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tw.tradingview.com/news/panews:16e45a1f9acdf:0/",
+      "publisher": "tw.tradingview.com"
+    },
+    {
       "id": "EV-1faa33bcf69dcf47",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-05",
       "updatedDate": "2026-10-05",
       "eventType": "funding",
@@ -21883,7 +22528,7 @@
       "originalTitle": "Crunchbase Data: Q3 2026 Posted A Record Count Of Billion-Dollar Rounds As The Global AI Race Heats Up",
       "subject": "Safe Superintelligence",
       "action": "funding",
-      "object": "$5 billion funding round",
+      "object": "$5 billion",
       "metrics": [
         "$5 billion"
       ],
@@ -21915,6 +22560,88 @@
       "products": [],
       "sourceUrl": "https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/",
       "publisher": "news.crunchbase.com"
+    },
+    {
+      "id": "EV-208a98705213d50c",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-05",
+      "updatedDate": "2026-10-05",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
+      "originalTitle": "Clockwork.io Raises $31M as LinkedIn, Together AI and WhiteFiber Adopt Its Resilience Software to Stop Wasting GPU-Hours",
+      "subject": "Clockwork.io",
+      "action": "Raises",
+      "object": "$31M as LinkedIn, Together AI and WhiteFiber Adopt Its Resilience Software to Stop Wasting GPU-Hours",
+      "metrics": [
+        "$31M"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-dc483de2bd50b2f4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-dc483de2bd50b2f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-dc483de2bd50b2f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-dc483de2bd50b2f4"
+      ],
+      "entityNames": [
+        "Clockwork.io"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+      "publisher": "www.prnewswire.com"
     },
     {
       "id": "EV-41b392ebea7cc666",
@@ -22241,7 +22968,7 @@
     },
     {
       "id": "EV-af1a6d0b5da2d0e5",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-05",
       "updatedDate": "2026-10-05",
       "eventType": "funding",
@@ -22382,6 +23109,88 @@
       "publisher": "www.worldjournal.com"
     },
     {
+      "id": "EV-aa370f3847596d19",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-04",
+      "updatedDate": "2026-10-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "极星电社｜AI芯片融资升温 游戏平台测评解析",
+      "originalTitle": "",
+      "subject": "极星电社｜AI芯片",
+      "action": "融资",
+      "object": "升温 游戏平台测评解析",
+      "metrics": [
+        "600亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-389a91e1a5614390"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "EN-389a91e1a5614390"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "EN-389a91e1a5614390"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-389a91e1a5614390"
+      ],
+      "entityNames": [
+        "极星电社｜AI芯片"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.163.com/dy/article/L8EBATT30556MFHY.html",
+      "publisher": "www.163.com"
+    },
+    {
       "id": "EV-de8561e258a6f559",
       "dataDate": "2026-10-06",
       "date": "2026-10-04",
@@ -22464,6 +23273,54 @@
       "publisher": "www.163.com"
     },
     {
+      "id": "EV-fedd03572246e392",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-03",
+      "updatedDate": "2026-10-03",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "法国教育AI公司Ed.ai完成500万欧元种子轮，瞄准教师批改与教学辅助场景",
+      "originalTitle": "",
+      "subject": "法国教育AI公司Ed.ai",
+      "action": "完成500万欧元种子轮",
+      "object": "，瞄准教师批改与教学辅助场景",
+      "metrics": [
+        "500万"
+      ],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-705a04faaefff3f5"
+      ],
+      "entityNames": [
+        "法国教育AI公司Ed.ai"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.163.com/dy/article/L8AO8ALM0536W4EI.html",
+      "publisher": "www.163.com"
+    },
+    {
       "id": "EV-32a04f2071b7aa24",
       "dataDate": "2026-10-06",
       "date": "2026-10-02",
@@ -22513,7 +23370,7 @@
     },
     {
       "id": "EV-3a4ba26375b45669",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "funding",
@@ -22536,7 +23393,12 @@
         "3,357.28 亿",
         "1,100 亿",
         "7,386.01 亿",
-        "90%"
+        "90%",
+        "1220 亿",
+        "300 亿",
+        "200 亿",
+        "160 亿",
+        "1880 亿"
       ],
       "locations": [],
       "missingFields": [],
@@ -22558,13 +23420,17 @@
         "EN-3d369f340d025e15",
         "EN-7d3194f79e645c42",
         "EN-8d4321d936320802",
-        "EN-80d387ccb3289295"
+        "EN-80d387ccb3289295",
+        "EN-c70eca6b0f88f44d",
+        "EN-6fcba5d96a4fadfd"
       ],
       "entityNames": [
         "填充 AI 资金弹药",
         "OpenAI",
         "NVIDIA",
-        "SoftBank"
+        "SoftBank",
+        "Anthropic",
+        "xAI"
       ],
       "productName": "",
       "products": [],
@@ -22573,7 +23439,7 @@
     },
     {
       "id": "EV-4495851ddb7439c8",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "funding",
@@ -22622,7 +23488,7 @@
     },
     {
       "id": "EV-657176fd0dff6209",
-      "dataDate": "2026-10-03",
+      "dataDate": "2026-10-07",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "funding",
@@ -23242,7 +24108,7 @@
     },
     {
       "id": "EV-b35ee2ada485c7e4",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "funding",
@@ -23331,6 +24197,54 @@
       ],
       "entityNames": [
         "Good Tape"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/copenhagens-good-tape-raises-e600k-from-nordic-makers-to-complete-management-buy-out-zendesk-co-founder-joins-board/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-d351ff2b55683997",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-02",
+      "updatedDate": "2026-10-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "哥本哈根的Good Tape融资€600k，并从Zetland独立；Zendesk联合创始人加入董事会",
+      "originalTitle": "Copenhagen&#8217;s Good Tape raises €600k and becomes independent from Zetland; Zendesk co-founder joins board",
+      "subject": "Copenhagen&#8217;s Good Tape",
+      "action": "raises",
+      "object": "€600k and becomes independent from Zetland; Zendesk co-founder joins board",
+      "metrics": [
+        "€600k",
+        "€500k",
+        "€2.6 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-5b7d57cd75bb91bf"
+      ],
+      "entityNames": [
+        "HomeDenmark-StartupsCopenhagen's Good Tape"
       ],
       "productName": "",
       "products": [],
@@ -23529,7 +24443,7 @@
     },
     {
       "id": "EV-2aa827a397a551d1",
-      "dataDate": "2026-10-04",
+      "dataDate": "2026-10-07",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -24029,7 +24943,7 @@
     },
     {
       "id": "EV-5b5237105fc868cd",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -24081,7 +24995,7 @@
     },
     {
       "id": "EV-6324ffde67e257fa",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -24127,7 +25041,7 @@
     },
     {
       "id": "EV-67e44201c4919b2d",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -24175,7 +25089,7 @@
     },
     {
       "id": "EV-6a0883e9d1aa2e69",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -24259,12 +25173,12 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://www.eu-startups.com/2026/10/ai-sales-startup-revnu-raises-e2-6-million-to-build-team-and-accelerate-international-growth/",
+      "sourceUrl": "https://www.eu-startups.com/2026/10/ai-sales-startup-revnu-raises-e2-6-million-to-build-team-and-accelerate-international-growth",
       "publisher": "www.eu-startups.com"
     },
     {
       "id": "EV-6a63fabeceadc42b",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -24624,7 +25538,7 @@
     },
     {
       "id": "EV-7f10b7d013a91292",
-      "dataDate": "2026-10-04",
+      "dataDate": "2026-10-07",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -24873,7 +25787,7 @@
     },
     {
       "id": "EV-80aeba0846bbd197",
-      "dataDate": "2026-10-05",
+      "dataDate": "2026-10-07",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -25293,7 +26207,7 @@
     },
     {
       "id": "EV-c8a803c1bdfde04c",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -25679,8 +26593,56 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-ffe023b6919230e0",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-01",
+      "updatedDate": "2026-10-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+      "originalTitle": "Volantis Raises $88M Series A to Demolish the AI Memory Wall With Photonics",
+      "subject": "Volantis",
+      "action": "Raises",
+      "object": "$88M Series A to Demolish the AI Memory Wall With Photonics",
+      "metrics": [
+        "$88 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-0d0dd4bc07420a2c"
+      ],
+      "entityNames": [
+        "SAN FRANCISCO",
+        "Volantis"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
       "id": "EV-153c38100d51097d",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-09-30",
       "updatedDate": "2026-09-30",
       "eventType": "acquisition",
@@ -25806,7 +26768,7 @@
     },
     {
       "id": "EV-201690debbddab65",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-09-30",
       "updatedDate": "2026-09-30",
       "eventType": "funding",
@@ -26094,7 +27056,7 @@
     },
     {
       "id": "EV-492a1467240eddf3",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-09-30",
       "updatedDate": "2026-09-30",
       "eventType": "funding",
@@ -26369,7 +27331,7 @@
     },
     {
       "id": "EV-55581be112058bd5",
-      "dataDate": "2026-10-04",
+      "dataDate": "2026-10-07",
       "date": "2026-09-30",
       "updatedDate": "2026-09-30",
       "eventType": "funding",
@@ -27231,7 +28193,7 @@
     },
     {
       "id": "EV-f2950d2104e97163",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-09-30",
       "updatedDate": "2026-09-30",
       "eventType": "funding",
@@ -27642,6 +28604,52 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-f42e96e541ccdf04",
+      "dataDate": "2026-10-07",
+      "date": "2026-09-30",
+      "updatedDate": "2026-09-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Destro AI 的秘诀是让机器人和人类达成共识",
+      "originalTitle": "Destro AI&#8217;s secret sauce is getting robots and humans on the same page",
+      "subject": "Destro",
+      "action": "funding",
+      "object": "$8 million seed round",
+      "metrics": [
+        "$8 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-13ea60dba75115f5"
+      ],
+      "entityNames": [
+        "Destro"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/30/destro-ais-secret-sauce-is-getting-robots-and-humans-on-the-same-page/",
       "publisher": "techcrunch.com"
     },
     {
@@ -307419,8 +308427,107 @@
       "publisher": "markets.ft.com"
     },
     {
+      "id": "EV-44b4a5564faf8106",
+      "dataDate": "2026-10-07",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 为初创公司提供一年免费的 Claude Team 和 1,000 美元额度",
+      "originalTitle": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
+      "subject": "Anthropic",
+      "action": "product_release",
+      "object": "new version of the Claude for Startups program",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-84ff98465e446fc6",
+        "EN-1b9b17b3638f00c9"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude for Startups",
+        "Claude Team"
+      ],
+      "productName": "Claude for Startups",
+      "products": [
+        {
+          "name": "Claude for Startups",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Claude Team",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-20063f151f5c9892",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-05",
       "updatedDate": "2026-10-05",
       "eventType": "product_release",
@@ -307502,7 +308609,7 @@
     },
     {
       "id": "EV-28bc07b430962e5b",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-05",
       "updatedDate": "2026-10-05",
       "eventType": "product_release",
@@ -316143,7 +317250,9 @@
         {
           "name": "Gander",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/tencents-gander-aims-to-keep-talking-while-it-works-in-the-background",
@@ -327976,7 +329085,9 @@
         {
           "name": "Hy4",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/999/369.htm",
@@ -338674,14 +339785,14 @@
           "name": "Hy4",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent Cloud"
+            "Tencent"
           ]
         },
         {
           "name": "Hy4 Preview",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent Cloud"
+            "Tencent"
           ]
         }
       ],
@@ -362127,7 +363238,7 @@
           "name": "WorkBuddy",
           "type": "产品/服务",
           "ownerNames": [
-            "Alibaba"
+            "Tencent"
           ]
         }
       ],
@@ -364632,12 +365743,16 @@
         {
           "name": "Hy3",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         },
         {
           "name": "Hy3 Now Available",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         }
       ],
       "sourceUrl": "https://tencent.com/tencent-hy3-now-available-globally-extending-practical-ai-across-products-workflows-and-cloud-services",
@@ -371093,7 +372208,9 @@
         {
           "name": "AngelSpec",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/30/tencent-open-sources-angelspec-a-unified-training-framework-for-mtp-and-block-parallel-speculative-decoding-on-hy3-models",
@@ -376742,12 +377859,16 @@
         {
           "name": "WorkBuddy",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         },
         {
           "name": "App Gallery",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/981/602.htm",
@@ -380150,7 +381271,9 @@
         {
           "name": "CodeBuddy NPC",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/980/633.htm",
@@ -385891,7 +387014,9 @@
         {
           "name": "Hyra-1.0",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/440.htm",
@@ -393258,7 +394383,9 @@
         {
           "name": "Hy-Embodied-VLM-1.0",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/978/080.htm",
@@ -406401,7 +407528,9 @@
         {
           "name": "Agent Bucket",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/974/504.htm",
@@ -410287,7 +411416,9 @@
         {
           "name": "Hy3",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/973/106.htm",
@@ -422306,7 +423437,9 @@
         {
           "name": "Agently Mail",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Tencent"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/967/614.htm",
@@ -451440,7 +452573,7 @@
     },
     {
       "id": "EV-67fd80c953bff90d",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "capital_investment",
@@ -451491,7 +452624,7 @@
     },
     {
       "id": "EV-82cccfa64edb2c09",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "ipo_listing",
@@ -451684,7 +452817,7 @@
     },
     {
       "id": "EV-8fd2621317a8a577",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "capital_investment",
@@ -452181,7 +453314,7 @@
     },
     {
       "id": "EV-641d61c6b8506c06",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-07",
       "date": "2026-09-30",
       "updatedDate": "2026-09-30",
       "eventType": "ipo_listing",

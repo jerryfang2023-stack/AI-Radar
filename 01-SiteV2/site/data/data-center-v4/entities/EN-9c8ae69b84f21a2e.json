@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -65,6 +66,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-bada0d929d2b70ac",
       "EV-4c9c7ab2dded69b3",
       "EV-eb2796fc4bcc5ac0",
       "EV-141a1e90c0780daa",
@@ -149,7 +151,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-01-26",
-    "lastSeen": "2026-10-06",
+    "lastSeen": "2026-10-07",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -159,6 +161,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-bada0d929d2b70ac",
         "EV-e6780925e189903c",
         "EV-141a1e90c0780daa",
         "EV-eb2796fc4bcc5ac0",
@@ -240,6 +243,25 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-bada0d929d2b70ac",
+        "dataDate": "2026-10-07",
+        "date": "2026-10-06",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ac7030a6822ecc45",
+          "EN-8baf1838b7b24434",
+          "EN-221e3af59d342a6d",
+          "EN-9c8ae69b84f21a2e",
+          "EN-6f7ac1823da81d2e"
+        ]
+      },
       {
         "id": "EV-e6780925e189903c",
         "dataDate": "2026-10-06",
@@ -2850,16 +2872,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
+        "TX-product_form-chip_accelerator",
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
         "TX-technology-code_generation",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-enterprise_software_platform",
         "TX-industry-manufacturing",
         "TX-use_case-sales",
         "TX-deployment_model-cloud",
@@ -2890,7 +2912,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-06"
+      "lastSeen": "2026-10-07"
     },
     {
       "id": "EN-be1a3c9420d88ea5",
@@ -4353,6 +4375,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-44b4a5564faf8106",
         "EV-72a9b0250c1c9435",
         "EV-5644bf8426cb730d",
         "EV-857d7186b873e0ed",
@@ -4841,7 +4864,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-03"
+      "lastSeen": "2026-10-07"
     },
     {
       "id": "TX-use_case-content_creation",
@@ -4979,7 +5002,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-09-16",
-      "lastSeen": "2026-10-06"
+      "lastSeen": "2026-10-07"
     },
     {
       "id": "TX-product_form-end_user_application",

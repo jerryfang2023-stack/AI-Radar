@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -196,12 +197,20 @@
     },
     "translations": {
       "zh-CN": {
-        "public_profile.track_record[0].description": {
-          "text": "WOWTALE 报道称 We Ventures 参与 Algorix 的 2024 年 9 月 Pre-Series A，并在 2026 年 8 月 A 轮回投；官网公开组合列表未列 Algorix。",
-          "source_hash": "53b7fa28269ff9e95613d7f9303a22f93f31cbd7b7232291f47fec0b94322bb6",
+        "public_profile.summary": {
+          "text": "We Ventures 官网确认机构名称为 We Ventures Limited Company；GraphAI 发行方公告称 위벤처스 参与 2024 年 Pre-Series A 并在 2026 年 Series A 跟投。本档案只记录公告明确的活动。",
+          "source_hash": "3196a76aab8a5daf19654e840efbf97e600bff75d942ab3d62d96256911d1ec3",
           "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-10-02T09:20:23.052Z",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-07T00:42:47.546Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "GraphAI 发行方公告称 We Ventures（위벤처스）参与 2024 年 9 月 Pre-Series A，并在 2026 年 Series A 跟投；未推断其他投资。",
+          "source_hash": "5106e0d9a03678d6da9e5336f4c5e7f29644c62f9249bd3a95afa755d04a1e9e",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-07T00:42:47.546Z",
           "status": "translated"
         }
       }
