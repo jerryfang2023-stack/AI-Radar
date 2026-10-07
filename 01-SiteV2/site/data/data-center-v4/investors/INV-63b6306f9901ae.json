@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -54,28 +55,31 @@
   },
   "institution": {
     "id": "INV-63b6306f9901ae",
-    "name": "宁德时代 (CATL)",
-    "aliases": [],
+    "name": "宁德时代(CATL)",
+    "aliases": [
+      "宁德时代 (CATL)"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
+    "china_market_activity_count": 2,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "first_external"
+      "first_external",
+      "ipo"
     ],
     "portfolio_companies": [
       {
@@ -85,6 +89,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-fa42e1659ab2634d",
+        "funding_insight_id": "FI-85041eec5005aca7",
+        "event_ids": [
+          "EV-bada0d929d2b70ac"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "IPO",
+        "round_code": "ipo",
+        "round_original": "IPO",
+        "amount_original": "at least $12 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000000,
+          "min_value": 12000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 120 亿美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-af1bfd9eab3e46f6",
+            "source_url": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/",
+            "source_title": "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
+            "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
+            "quote": "Battery maker CATL and Tencent are contributing the largest shares.",
+            "quote_hash": "5e2757a3a630711635c5e3ebe8522f7314400a28987f30e4c3eaa4ff61e40635"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2a7045cda67abd93",
         "funding_insight_id": "FI-71c58a10a93101c8",
@@ -137,6 +181,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-af1bfd9eab3e46f6",
+        "source_url": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/",
+        "source_title": "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
+        "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
+        "quote": "Battery maker CATL and Tencent are contributing the largest shares.",
+        "quote_hash": "5e2757a3a630711635c5e3ebe8522f7314400a28987f30e4c3eaa4ff61e40635"
+      },
+      {
         "source_id": "FISRC-4595161c40aec2c1",
         "source_url": "https://the-decoder.com/deepseek-takes-outside-money-for-the-first-time-at-a-50-billion-valuation",
         "source_title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
@@ -180,6 +232,10 @@
         {
           "description": "宁德时代公告披露其认缴海南时代绿色产业投资基金人民币247,500万元，持有49.50%份额。",
           "source_id": "PROFILE-S-INV-63b6306f9901ae-4"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · IPO · 2026-10-06 · 本轮参投 · at least $12 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-af1bfd9eab3e46f6"
         },
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
@@ -235,6 +291,14 @@
           "source_content_hash": "8d7e259c5eb5a6fe88340348eb8c8e7eb32674fbce91b0f47d766aad0cd836fd",
           "quote": "认缴出资金额为人民币247,500 万元，持有基金49.50%的份额",
           "quote_hash": "af1a03ac64f1b8dbac0f9bbdb40d5221b05b2b3b5dac546c5803b131eccc288a"
+        },
+        {
+          "source_id": "FISRC-af1bfd9eab3e46f6",
+          "source_url": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/",
+          "source_title": "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
+          "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
+          "quote": "Battery maker CATL and Tencent are contributing the largest shares.",
+          "quote_hash": "5e2757a3a630711635c5e3ebe8522f7314400a28987f30e4c3eaa4ff61e40635"
         },
         {
           "source_id": "FISRC-4595161c40aec2c1",

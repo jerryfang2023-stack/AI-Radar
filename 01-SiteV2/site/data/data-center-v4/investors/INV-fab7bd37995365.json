@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -62,7 +63,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
@@ -72,11 +73,43 @@
     "first_disclosed_at": "",
     "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-7b4c02662f738c78",
+        "funding_insight_id": "FI-8fcbda1e61969a98",
+        "event_ids": [
+          "EV-da8dc9f513542c19"
+        ],
+        "company_entity_id": "EN-d965aa403593d08c",
+        "company_canonical_entity_id": "",
+        "company_name": "Melius",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "披露未明确对应轮次的参投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-17b0a4ba7027e6a1",
+            "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+            "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+            "source_content_hash": "211f9e27654b79b5",
+            "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
+            "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-48d280cd8d3a5a05",
         "funding_insight_id": "FI-a7f67888b410be24",
@@ -111,6 +144,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-17b0a4ba7027e6a1",
+        "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+        "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+        "source_content_hash": "211f9e27654b79b5",
+        "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
+        "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
+      },
       {
         "source_id": "FISRC-6fe11d1e74b865b4",
         "source_url": "https://www.linkedin.com/posts/jake-moross_big-day-for-the-natural-team-congrats-activity-7485041411692638208-9ph-",
@@ -147,6 +188,10 @@
           "source_id": "genius_activity"
         },
         {
+          "description": "融资来源记录：Melius · 历史轮次未披露 · 披露未明确对应轮次的参投方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-17b0a4ba7027e6a1"
+        },
+        {
           "description": "融资来源记录：Natural AI, Inc. · 历史轮次未披露 · 本轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6fe11d1e74b865b4"
         }
@@ -176,6 +221,14 @@
           "source_content_hash": "b63a305f694ff9380f4e163117018b0283dd0f1ed09d17f0d987ba5e375deb4a",
           "quote": "investors: Abstract, Human Capital, Forerunner, Terrain, Restive, and Genius Ventures, along with some of the best founders and operators in the world",
           "quote_hash": "89ba2ee06d30e4e8bd87874851f64bbbe90fa0b4908f45b396e9fd86813c95e6"
+        },
+        {
+          "source_id": "FISRC-17b0a4ba7027e6a1",
+          "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+          "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+          "source_content_hash": "211f9e27654b79b5",
+          "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
+          "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
         },
         {
           "source_id": "FISRC-6fe11d1e74b865b4",

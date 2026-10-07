@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -61,30 +62,122 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-29",
-    "latest_disclosed_at": "2026-09-29",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 2
     },
     "round_codes": [
-      "pre_seed"
+      "pre_seed",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-abc150895ca10984",
         "canonical_entity_id": "",
         "name": "Elio Mortgage"
+      },
+      {
+        "entity_id": "EN-5e8d0bae72bca66f",
+        "canonical_entity_id": "",
+        "name": "Hadrian"
+      },
+      {
+        "entity_id": "EN-f8abb4aab4da7486",
+        "canonical_entity_id": "",
+        "name": "Hadrian"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5dcf41bc280804b9",
+        "funding_insight_id": "FI-c82e956a6c528ed5",
+        "event_ids": [
+          "EV-6744aefb738a9a0c"
+        ],
+        "company_entity_id": "EN-5e8d0bae72bca66f",
+        "company_canonical_entity_id": "",
+        "company_name": "Hadrian",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf1fd90dbc994e3d",
+            "source_url": "https://tech.eu/2026/10/06/hadrian-raises-40m-to-tackle-ai-driven-cyber-threats/",
+            "source_title": "Hadrian 融资 4000 万美元，以应对 AI 驱动的网络威胁",
+            "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+            "quote": "Existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures also participated",
+            "quote_hash": "90b48abb6ec9ac9a49ff55edc7b4c22b26369370303b34f69eae149877a7e200"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-29f470149b70a74e",
+        "funding_insight_id": "FI-77b0c1f6df0e2e43",
+        "event_ids": [
+          "EV-ee1dd0077269532b"
+        ],
+        "company_entity_id": "EN-f8abb4aab4da7486",
+        "company_canonical_entity_id": "",
+        "company_name": "Hadrian",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "4000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a28066252c526844",
+            "source_url": "https://tw.tradingview.com/news/panews:16e45a1f9acdf:0/",
+            "source_title": "AI安全公司Hadrian完成4000万美元融资，HV Capital等参投",
+            "source_content_hash": "94ca184347774f86b1911c50c309b2ddf231a76552c5b3d5912ebe64537cecca",
+            "quote": "HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投",
+            "quote_hash": "9903d9cd3e0e214b5732ca7983f427f79617c43a1e1559b659d0fa737ff142da"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a268a9391798215e",
         "funding_insight_id": "FI-0876a30fa1de5a92",
@@ -128,6 +221,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cf1fd90dbc994e3d",
+        "source_url": "https://tech.eu/2026/10/06/hadrian-raises-40m-to-tackle-ai-driven-cyber-threats/",
+        "source_title": "Hadrian 融资 4000 万美元，以应对 AI 驱动的网络威胁",
+        "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+        "quote": "Existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures also participated",
+        "quote_hash": "90b48abb6ec9ac9a49ff55edc7b4c22b26369370303b34f69eae149877a7e200"
+      },
+      {
+        "source_id": "FISRC-a28066252c526844",
+        "source_url": "https://tw.tradingview.com/news/panews:16e45a1f9acdf:0/",
+        "source_title": "AI安全公司Hadrian完成4000万美元融资，HV Capital等参投",
+        "source_content_hash": "94ca184347774f86b1911c50c309b2ddf231a76552c5b3d5912ebe64537cecca",
+        "quote": "HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投",
+        "quote_hash": "9903d9cd3e0e214b5732ca7983f427f79617c43a1e1559b659d0fa737ff142da"
+      },
+      {
         "source_id": "FISRC-f199e5c78b7a74fc",
         "source_url": "https://www.businesswire.com/news/home/20260929718646/en/Elio-Mortgage-Launches-with-%245.1-Million-in-Pre-Seed-Funding-to-Build-the-Mortgage-Company-for-the-AI-Era",
         "source_title": "Elio Mortgage 以 510 万美元 pre-seed 融资启动，致力于打造 AI 时代的抵押贷款公司",
@@ -167,6 +276,14 @@
         {
           "description": "参与 Elio Mortgage 的 510 万美元 pre-seed 融资；公告还列出 Social Leverage。",
           "source_id": "FISRC-f199e5c78b7a74fc"
+        },
+        {
+          "description": "融资来源记录：Hadrian · 轮次未披露 · 2026-10-06 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf1fd90dbc994e3d"
+        },
+        {
+          "description": "融资来源记录：Hadrian · 轮次未披露 · 2026-10-06 · 本轮参投 · 4000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a28066252c526844"
         }
       ],
       "contacts": [
@@ -194,6 +311,22 @@
           "source_content_hash": "8a3c9454aec3cc0b8c9ad8a58e491e905b4979e404e516642616fd464d37954f",
           "quote": "ion in Pre-Seed Funding to Build the Mortgage Company for the AI Era Share Motive Partners and Social Leverage back Elio’s vision to transform the operating model and economics of mortgage origination NEW YORK--( BUSINESS WIRE )-- Elio Mortgage, an AI-native mortgage company redesigning how home loans are originated, t",
           "quote_hash": "302b951126004719cee231f4525b09d15397af62b513db3653e9bb0d9a0a6663"
+        },
+        {
+          "source_id": "FISRC-cf1fd90dbc994e3d",
+          "source_url": "https://tech.eu/2026/10/06/hadrian-raises-40m-to-tackle-ai-driven-cyber-threats/",
+          "source_title": "Hadrian 融资 4000 万美元，以应对 AI 驱动的网络威胁",
+          "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+          "quote": "Existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures also participated",
+          "quote_hash": "90b48abb6ec9ac9a49ff55edc7b4c22b26369370303b34f69eae149877a7e200"
+        },
+        {
+          "source_id": "FISRC-a28066252c526844",
+          "source_url": "https://tw.tradingview.com/news/panews:16e45a1f9acdf:0/",
+          "source_title": "AI安全公司Hadrian完成4000万美元融资，HV Capital等参投",
+          "source_content_hash": "94ca184347774f86b1911c50c309b2ddf231a76552c5b3d5912ebe64537cecca",
+          "quote": "HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投",
+          "quote_hash": "9903d9cd3e0e214b5732ca7983f427f79617c43a1e1559b659d0fa737ff142da"
         }
       ],
       "last_verified_at": "2026-10-03"

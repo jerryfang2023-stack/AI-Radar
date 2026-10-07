@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -62,7 +63,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 22,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 19,
     "market_regions": [
       "GLOBAL"
@@ -73,7 +74,7 @@
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 10,
       "participant": 10
     },
@@ -1172,6 +1173,46 @@
             "quote_hash": "96f3584ab764d92902c27c282f58db0711a3971ad3b88b68da097d8485e156a5"
           }
         ]
+      },
+      {
+        "activity_id": "IA-eb3033f4f9224fc7",
+        "funding_insight_id": "FI-8fcbda1e61969a98",
+        "event_ids": [
+          "EV-da8dc9f513542c19"
+        ],
+        "company_entity_id": "EN-d965aa403593d08c",
+        "company_canonical_entity_id": "",
+        "company_name": "Melius",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-925d3dbfb764eb23",
+            "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+            "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
+            "source_content_hash": "ec6374c91af67956bdc5823328f342540fc2f142546fd8dc3ad3e0288c34ee6e",
+            "quote": "a $5 million seed round led by General Catalyst",
+            "quote_hash": "7c75bbca8c2ae69476b27249426b95cb79099134774b0feb31c1b3a55b08de1a"
+          },
+          {
+            "source_id": "FISRC-17b0a4ba7027e6a1",
+            "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+            "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+            "source_content_hash": "211f9e27654b79b5",
+            "quote": "$5 million in seed funding led by General Catalyst",
+            "quote_hash": "dada531429005567482ad64c0233215d4cb964e6e465713b98d6a71084596a1c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -1382,6 +1423,22 @@
         "source_content_hash": "24739161319ad4eb",
         "quote": "General Catalyst Seed, Early Funding",
         "quote_hash": "96f3584ab764d92902c27c282f58db0711a3971ad3b88b68da097d8485e156a5"
+      },
+      {
+        "source_id": "FISRC-925d3dbfb764eb23",
+        "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+        "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
+        "source_content_hash": "ec6374c91af67956bdc5823328f342540fc2f142546fd8dc3ad3e0288c34ee6e",
+        "quote": "a $5 million seed round led by General Catalyst",
+        "quote_hash": "7c75bbca8c2ae69476b27249426b95cb79099134774b0feb31c1b3a55b08de1a"
+      },
+      {
+        "source_id": "FISRC-17b0a4ba7027e6a1",
+        "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+        "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+        "source_content_hash": "211f9e27654b79b5",
+        "quote": "$5 million in seed funding led by General Catalyst",
+        "quote_hash": "dada531429005567482ad64c0233215d4cb964e6e465713b98d6a71084596a1c"
       }
     ],
     "public_profile": {

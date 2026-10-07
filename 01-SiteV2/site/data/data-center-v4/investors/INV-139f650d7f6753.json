@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -239,6 +240,34 @@
         }
       ],
       "last_verified_at": "2026-10-06"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Starcloud 官方主页将 Soma Capital 列于“Backed by”标识区，支持把该轮资料中的简称“Soma”映射到 Soma Capital。Soma 官网页脚标示主体为 Soma Capital Management LLC；其官网自述为种子阶段投资者，拥有 20 人团队、管理 $1B 资产，并覆盖 1,000 余家组合公司。",
+          "source_hash": "c245cf0b7e1688bcf8356ebcba753489ad78f26d4224dbf1cfe60aeaaab55c7a",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-07T00:42:47.546Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Starcloud 官方主页在其“Backed by”区域列出 Soma Capital 标识。",
+          "source_hash": "e80b7aeb600703eb2e5487d9acd560d40f701915802aacc7de78229e3300a4ec",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-07T00:42:47.546Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Soma Capital 官网",
+          "source_hash": "ea44a6cffb7483d77ba24f896e08eb84bd7ad09937df5115a5515b7c59280622",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-07T00:42:47.546Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

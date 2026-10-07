@@ -1,0 +1,746 @@
+{
+  "event_id": "EV-6744aefb738a9a0c",
+  "company_name": "Hadrian",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-15b642d691617566",
+    "triggered_by_event_id": "EV-6744aefb738a9a0c",
+    "as_of_date": "2026-10-07",
+    "company": {
+      "entity_id": "EN-5e8d0bae72bca66f",
+      "name": "Hadrian",
+      "full_name": "Hadrian",
+      "website": "",
+      "summary": "Hadrian 是一家 agentic AI 攻击性安全平台公司，利用 AI 帮助企业在外部攻击面上识别并优先处理可利用的安全风险。",
+      "headquarters": "Amsterdam",
+      "founders": [
+        {
+          "name": "Rogier Fischer",
+          "role": "CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-687a411a14e64c5d",
+              "quote": "CEO Rogier Fischer and Chief Hacking Officer Olivier Beg met at just 13",
+              "source_content_hash": "bb331b87f3e471f8",
+              "quote_hash": "136e0fd78f5459490517a259d68140180a975bf39a98b0fce3faeb771852735b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Olivier Beg",
+          "role": "Chief Hacking Officer",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-687a411a14e64c5d",
+              "quote": "CEO Rogier Fischer and Chief Hacking Officer Olivier Beg met at just 13",
+              "source_content_hash": "bb331b87f3e471f8",
+              "quote_hash": "136e0fd78f5459490517a259d68140180a975bf39a98b0fce3faeb771852735b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Maurice Clin",
+          "role": "Chief Business Development Officer",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-687a411a14e64c5d",
+              "quote": "Rogier and Olivier co-founded Hadrian alongside Chief Business Development Officer Maurice Clin",
+              "source_content_hash": "bb331b87f3e471f8",
+              "quote_hash": "51917a231bcf5853afcaf42216bd98f74e9063d0e78f9c8ee62e3c5ce60c86da"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "80+",
+        "observed_at": "2026-10-06",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "the company has scaled its team to more than 80 offensive security, engineering, and go-to-market experts",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "6e23c6ddf749c1620bc43331e6e507074400bd992f284a490f0bac78bdb84544"
+          }
+        ]
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cf1fd90dbc994e3d",
+          "quote": "Hadrian, an agentic AI offensive security platform, has raised $40 million",
+          "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+          "quote_hash": "5f016b2e4c1ca6777434b12c31f48d8a9186bea08c5156ab2292121ec487c809"
+        },
+        {
+          "source_id": "FISRC-687a411a14e64c5d",
+          "quote": "Founded by White Hat Hackers and Company Builders",
+          "source_content_hash": "bb331b87f3e471f8",
+          "quote_hash": "b93d78460c9e0ddba7de99a45c343b1b75c6ee808980e00006ae0aed6477a7f8"
+        }
+      ],
+      "application_entity_id": "EN-5e8d0bae72bca66f",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "其他融资",
+      "amount": "$40 million",
+      "total_raised": "$65 million",
+      "announced_at": "2026-10-06",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "Forgepoint Capital International",
+          "role": "本轮联合领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf1fd90dbc994e3d",
+              "quote": "co-led by Forgepoint Capital International and Smart Fin",
+              "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+              "quote_hash": "844da73432daf2c49226c35eb6f5637503493f17374e45bee099a27c91be91b0"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Smart Fin",
+          "role": "本轮联合领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf1fd90dbc994e3d",
+              "quote": "co-led by Forgepoint Capital International and Smart Fin",
+              "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+              "quote_hash": "844da73432daf2c49226c35eb6f5637503493f17374e45bee099a27c91be91b0"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "HV Capital",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf1fd90dbc994e3d",
+              "quote": "Existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures also participated",
+              "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+              "quote_hash": "90b48abb6ec9ac9a49ff55edc7b4c22b26369370303b34f69eae149877a7e200"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Motive Partners",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf1fd90dbc994e3d",
+              "quote": "Existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures also participated",
+              "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+              "quote_hash": "90b48abb6ec9ac9a49ff55edc7b4c22b26369370303b34f69eae149877a7e200"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Picus Capital",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf1fd90dbc994e3d",
+              "quote": "Existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures also participated",
+              "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+              "quote_hash": "90b48abb6ec9ac9a49ff55edc7b4c22b26369370303b34f69eae149877a7e200"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Oetker Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf1fd90dbc994e3d",
+              "quote": "Existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures also participated",
+              "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+              "quote_hash": "90b48abb6ec9ac9a49ff55edc7b4c22b26369370303b34f69eae149877a7e200"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cf1fd90dbc994e3d",
+          "quote": "platform, has raised $40 million in a funding round co-led by Forgepoint Capital International and Smart Fin.",
+          "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+          "quote_hash": "b3f5f29438eec227f158063394599217d61e7f408f91baf90b1324d92e76a629"
+        },
+        {
+          "source_id": "FISRC-cf1fd90dbc994e3d",
+          "quote": "has raised $40 million in a funding round co-led by Forgepoint Capital International and Smart Fin",
+          "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+          "quote_hash": "1f7bb9d78f8b8c1edcf33a0c5205688eba885fd9c3e51cfe598b217b9e70ba89"
+        },
+        {
+          "source_id": "FISRC-cf1fd90dbc994e3d",
+          "quote": "The round brings Hadrian's total funding to $65 million",
+          "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+          "quote_hash": "85256054c69917951bd409aa876a36e15266c4b17f72cc36a5a308a752b886e5"
+        }
+      ],
+      "round_code": "other",
+      "round_original": "Funding Round",
+      "amount_original": "$40 million",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 40000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "4000 万美元"
+      },
+      "total_raised_original": "$65 million",
+      "total_raised_normalized": {
+        "currency": "USD",
+        "value": 65000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "6500 万美元"
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-6744aefb738a9a0c",
+          "round_original": "Funding Round",
+          "amount": "$40 million",
+          "announced_at": "2026-10-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf1fd90dbc994e3d",
+              "quote": "platform, has raised $40 million in a funding round co-led by Forgepoint Capital International and Smart Fin.",
+              "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+              "quote_hash": "b3f5f29438eec227f158063394599217d61e7f408f91baf90b1324d92e76a629"
+            },
+            {
+              "source_id": "FISRC-cf1fd90dbc994e3d",
+              "quote": "has raised $40 million in a funding round co-led by Forgepoint Capital International and Smart Fin",
+              "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+              "quote_hash": "1f7bb9d78f8b8c1edcf33a0c5205688eba885fd9c3e51cfe598b217b9e70ba89"
+            },
+            {
+              "source_id": "FISRC-cf1fd90dbc994e3d",
+              "quote": "The round brings Hadrian's total funding to $65 million",
+              "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+              "quote_hash": "85256054c69917951bd409aa876a36e15266c4b17f72cc36a5a308a752b886e5"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "Atlas",
+        "description": "始终在线的评估产品，发现资产、映射组织的外部攻击面，并确认哪些暴露是可被利用的。",
+        "target_customers": "企业安全团队",
+        "features": [
+          "始终在线评估",
+          "发现资产",
+          "映射外部攻击面",
+          "确认可利用暴露"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "Atlas provides always-on assessment that discovers assets, maps the organization’s external attack surface, and confirms which exposures are exploitable",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "3d16a67464ed4f197dae97663e79e0df36086e116766413125f3b9eada7f9fb4"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Nova",
+        "description": "按需提供深度、合规就绪的 agentic 渗透测试，对既定目标进行更深入的测试。",
+        "target_customers": "企业安全团队",
+        "features": [
+          "按需 agentic 渗透测试",
+          "合规就绪",
+          "深度测试"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "Nova delivers in-depth, compliance-ready agentic pen testing on demand, going deeper on defined targets",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "ea9b0e436447685161ee5228ff7d7ff08cf8cd3e55aeb118ccb7b7d4358c3c29"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "TotalEnergies",
+        "industry": "能源",
+        "use_case": "攻击面管理与暴露验证",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "TotalEnergies, Amadeus, Leroy Merlin, and Damen Shipyards",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "10f9b9cf74ea9489e2eb9b6fab052faf112d27710211e064455375f153c7215c"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Amadeus",
+        "industry": "旅游科技",
+        "use_case": "攻击面管理与暴露验证",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "TotalEnergies, Amadeus, Leroy Merlin, and Damen Shipyards",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "10f9b9cf74ea9489e2eb9b6fab052faf112d27710211e064455375f153c7215c"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Leroy Merlin",
+        "industry": "零售",
+        "use_case": "攻击面管理与暴露验证",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "TotalEnergies, Amadeus, Leroy Merlin, and Damen Shipyards",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "10f9b9cf74ea9489e2eb9b6fab052faf112d27710211e064455375f153c7215c"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Damen Shipyards",
+        "industry": "造船",
+        "use_case": "攻击面管理与暴露验证",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "TotalEnergies, Amadeus, Leroy Merlin, and Damen Shipyards",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "10f9b9cf74ea9489e2eb9b6fab052faf112d27710211e064455375f153c7215c"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "McKesson",
+        "industry": "医疗健康",
+        "use_case": "攻击面管理与暴露验证",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "McKesson, NBCUniversal, Francisco Partners, TotalEnergies, Amadeus, Leroy Merlin, and Damen Shipyards",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "a3335bf919b663226a6c2016b185f1dd28aee54133db4e0acbe247fe43e9f42b"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "本轮融资金额",
+        "value": "$40 million",
+        "observed_at": "2026-10-06",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf1fd90dbc994e3d",
+            "quote": "has raised $40 million",
+            "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+            "quote_hash": "ca99c55fdcc2dd0159590abc06e7d71b046b9e31cc84fa6b6e6a6c7f8c5da143"
+          }
+        ]
+      },
+      {
+        "label": "累计融资额",
+        "value": "$65 million",
+        "observed_at": "2026-10-06",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf1fd90dbc994e3d",
+            "quote": "The round brings Hadrian's total funding to $65 million",
+            "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+            "quote_hash": "85256054c69917951bd409aa876a36e15266c4b17f72cc36a5a308a752b886e5"
+          }
+        ]
+      },
+      {
+        "label": "团队规模",
+        "value": "80+",
+        "observed_at": "2026-10-06",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "more than 80 offensive security, engineering, and go-to-market experts",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "af24f7394e57395578675fb317c9a69c4a15e863ad29b2d1fe8cd89fc93c5dda"
+          }
+        ]
+      },
+      {
+        "label": "关键风险可见性提升",
+        "value": "10x",
+        "observed_at": "2026-10-06",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "10x greater visibility into critical exposures",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "78c1ee4b5a265e7dd4561874bfb127c4a2eb8bcdf95379900c6398157dbe0711"
+          }
+        ]
+      },
+      {
+        "label": "解决时间缩短",
+        "value": "80% faster",
+        "observed_at": "2026-10-06",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "80% faster time to resolution",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "c2207a7e94733a244245c2866cb53520a60fd7f12581c2a3d01dc1c2b66cac28"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Damien Henault",
+        "quote": "To stop AI-armed attackers, you have to think like them. Hadrian's team of ethical hackers and proven company builders does exactly that and has developed the most complete AI-native offensive security platform we've seen among players in this emerging and booming space.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-687a411a14e64c5d",
+            "quote": "To stop AI-armed attackers, you have to think like them. Hadrian's team of ethical hackers and proven company builders does exactly that and has developed the most complete AI-native offensive security platform we've seen among players in this emerging and booming space.",
+            "source_content_hash": "bb331b87f3e471f8",
+            "quote_hash": "cd98f9d5a53886dd4a4456cf6c85d60a3d8d47c999e411c7bd4eabeaec18c835"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [
+        {
+          "institution": "Forgepoint Capital International",
+          "speaker": "Damien Henault",
+          "speaker_role": "Managing Director & Partner",
+          "rationale": "Forgepoint 认为 Hadrian 拥有最完整的 AI 原生攻击性安全平台，其道德黑客团队和成熟的公司建设者能够像 AI 武装的攻击者一样思考，帮助防御者以火攻火。",
+          "quote": "To stop AI-armed attackers, you have to think like them. Hadrian's team of ethical hackers and proven company builders does exactly that and has developed the most complete AI-native offensive security platform we've seen among players in this emerging and booming space.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-687a411a14e64c5d",
+              "quote": "To stop AI-armed attackers, you have to think like them. Hadrian's team of ethical hackers and proven company builders does exactly that and has developed the most complete AI-native offensive security platform we've seen among players in this emerging and booming space.",
+              "source_content_hash": "bb331b87f3e471f8",
+              "quote_hash": "cd98f9d5a53886dd4a4456cf6c85d60a3d8d47c999e411c7bd4eabeaec18c835"
+            }
+          ]
+        }
+      ],
+      "capital_judgment": "资本押注的核心变量是 Hadrian 能否在 AI 驱动的攻击面持续扩大的背景下，以 AI 原生平台替代传统人工渗透测试和漏洞扫描，成为攻击性安全领域的全球领导者。当前融资所依赖的已验证信号包括：平台已服务 Fortune 500 和全球企业客户，客户实现 10 倍关键风险可见性提升和 80% 解决时间缩短，团队规模超过 80 人，并获得 GigaOm、Gartner、Frost & Sullivan 等分析机构认可。证据边界在于：本轮融资未披露估值，客户效果数据来自投资方博客，尚未经独立第三方验证；平台在真实对抗环境中的持续有效性仍需观察。",
+      "validated_signals": [
+        "Hadrian 已服务 Fortune 500 和全球企业客户，包括 McKesson、NBCUniversal、Francisco Partners、TotalEnergies、Amadeus、Leroy Merlin 和 Damen Shipyards。",
+        "客户实现 10 倍关键暴露可见性提升和 80% 解决时间缩短。",
+        "团队规模超过 80 名攻击性安全、工程和市场专家。",
+        "平台在头部技术评估中持续战胜大型传统厂商和新兴 AI 原生竞争者。",
+        "获得 GigaOm、Gartner 和 Frost & Sullivan 等分析机构认可。"
+      ],
+      "risks": [
+        "本轮融资未披露估值，无法判断资本定价是否合理。",
+        "客户效果数据（10 倍可见性、80% 解决时间缩短）来自投资方博客，尚未经独立第三方验证。",
+        "AI 攻击性安全市场竞争激烈，来源提到存在大型传统厂商和新兴 AI 原生竞争者。",
+        "平台在真实对抗环境中的持续有效性仍需长期观察。"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "security_software",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "ai_observability_governance",
+      "use_case_ids": [
+        "security_operations"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "sector": "网络安全",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是 Hadrian 能否在 AI 驱动的攻击面持续扩大的背景下，以 AI 原生平台替代传统人工渗透测试和漏洞扫描，成为攻击性安全领域的全球领导者。当前融资所依赖的已验证信号包括：平台已服务 Fortune 500 和全球企业客户，客户实现 10 倍关键风险可见性提升和 80% 解决时间缩短，团队规模超过 80 人，并获得 GigaOm、Gartner、Frost & Sullivan 等分析机构认可。证据边界在于：本轮融资未披露估值，客户效果数据来自投资方博客，尚未经独立第三方验证；平台在真实对抗环境中的持续有效性仍需观察。",
+        "evidence_signals": [
+          "Hadrian 已服务 Fortune 500 和全球企业客户，包括 McKesson、NBCUniversal、Francisco Partners、TotalEnergies、Amadeus、Leroy Merlin 和 Damen Shipyards。",
+          "客户实现 10 倍关键暴露可见性提升和 80% 解决时间缩短。",
+          "团队规模超过 80 名攻击性安全、工程和市场专家。",
+          "平台在头部技术评估中持续战胜大型传统厂商和新兴 AI 原生竞争者。",
+          "获得 GigaOm、Gartner 和 Frost & Sullivan 等分析机构认可。"
+        ],
+        "risks": [
+          "本轮融资未披露估值，无法判断资本定价是否合理。",
+          "客户效果数据（10 倍可见性、80% 解决时间缩短）来自投资方博客，尚未经独立第三方验证。",
+          "AI 攻击性安全市场竞争激烈，来源提到存在大型传统厂商和新兴 AI 原生竞争者。",
+          "平台在真实对抗环境中的持续有效性仍需长期观察。"
+        ],
+        "institutional_rationale_status": "disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Atlas",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Nova",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Rogier Fischer",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Olivier Beg",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Maurice Clin",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Forgepoint Capital International",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Smart Fin",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "HV Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Motive Partners",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Picus Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Oetker Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "TotalEnergies",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Amadeus",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Leroy Merlin",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Damen Shipyards",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "McKesson",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-6744aefb738a9a0c",
+        "date": "2026-10-06",
+        "title": "Hadrian 融资 4000 万美元，以应对 AI 驱动的网络威胁",
+        "amount": "$40 million",
+        "source_refs": [
+          "SA-5a9ccc5e78b180c2"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-cf1fd90dbc994e3d",
+        "source_url": "https://tech.eu/2026/10/06/hadrian-raises-40m-to-tackle-ai-driven-cyber-threats/",
+        "title": "Hadrian 融资 4000 万美元，以应对 AI 驱动的网络威胁",
+        "publisher": "tech.eu",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-07T00:24:37.703Z",
+        "content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+        "source_artifact_id": "SA-5a9ccc5e78b180c2",
+        "raw_id": "RAW-a0eefe78ee565800"
+      },
+      {
+        "source_id": "FISRC-687a411a14e64c5d",
+        "source_url": "https://forgepointcap.com/perspectives/hadrian-why-we-invested/",
+        "title": "Hadrian: Why We Invested",
+        "publisher": "forgepointcap.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-07T00:38:06.665Z",
+        "content_hash": "bb331b87f3e471f8",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-07T00:38:17.197Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-07T00:38:17.197Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 5,
+      "searched_source_count": 2
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "Atlas",
+          "Nova"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "Maurice Clin",
+          "Olivier Beg",
+          "Rogier Fischer"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-6744aefb738a9a0c"
+    ],
+    "aggregation": {
+      "key": "EN-5e8d0bae72bca66f|other",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Hadrian\" 2026 funding round investors",
+    "\"Hadrian\" \"why we invested\""
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Hadrian\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Hadrian\" $40 million funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Hadrian\" official product customers",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Hadrian\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Hadrian\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Hadrian\" founders headquarters product",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}

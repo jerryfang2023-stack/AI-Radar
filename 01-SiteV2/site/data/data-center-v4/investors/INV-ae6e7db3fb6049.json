@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -61,22 +62,23 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-10",
-    "latest_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "lead": 1,
-      "participant": 1
+      "participant": 3
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -88,9 +90,99 @@
         "entity_id": "EN-0decbc3b45f73b2b",
         "canonical_entity_id": "EN-0decbc3b45f73b2b",
         "name": "Entire Inc."
+      },
+      {
+        "entity_id": "EN-5e8d0bae72bca66f",
+        "canonical_entity_id": "",
+        "name": "Hadrian"
+      },
+      {
+        "entity_id": "EN-f8abb4aab4da7486",
+        "canonical_entity_id": "",
+        "name": "Hadrian"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c05d8ef89c396d30",
+        "funding_insight_id": "FI-c82e956a6c528ed5",
+        "event_ids": [
+          "EV-6744aefb738a9a0c"
+        ],
+        "company_entity_id": "EN-5e8d0bae72bca66f",
+        "company_canonical_entity_id": "",
+        "company_name": "Hadrian",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf1fd90dbc994e3d",
+            "source_url": "https://tech.eu/2026/10/06/hadrian-raises-40m-to-tackle-ai-driven-cyber-threats/",
+            "source_title": "Hadrian 融资 4000 万美元，以应对 AI 驱动的网络威胁",
+            "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+            "quote": "Existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures also participated",
+            "quote_hash": "90b48abb6ec9ac9a49ff55edc7b4c22b26369370303b34f69eae149877a7e200"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-89ff7e2df31aa19c",
+        "funding_insight_id": "FI-77b0c1f6df0e2e43",
+        "event_ids": [
+          "EV-ee1dd0077269532b"
+        ],
+        "company_entity_id": "EN-f8abb4aab4da7486",
+        "company_canonical_entity_id": "",
+        "company_name": "Hadrian",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "4000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a28066252c526844",
+            "source_url": "https://tw.tradingview.com/news/panews:16e45a1f9acdf:0/",
+            "source_title": "AI安全公司Hadrian完成4000万美元融资，HV Capital等参投",
+            "source_content_hash": "94ca184347774f86b1911c50c309b2ddf231a76552c5b3d5912ebe64537cecca",
+            "quote": "HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投",
+            "quote_hash": "9903d9cd3e0e214b5732ca7983f427f79617c43a1e1559b659d0fa737ff142da"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9141601157e41ac6",
         "funding_insight_id": "FI-b4bc1e72a0e66843",
@@ -174,6 +266,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cf1fd90dbc994e3d",
+        "source_url": "https://tech.eu/2026/10/06/hadrian-raises-40m-to-tackle-ai-driven-cyber-threats/",
+        "source_title": "Hadrian 融资 4000 万美元，以应对 AI 驱动的网络威胁",
+        "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+        "quote": "Existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures also participated",
+        "quote_hash": "90b48abb6ec9ac9a49ff55edc7b4c22b26369370303b34f69eae149877a7e200"
+      },
+      {
+        "source_id": "FISRC-a28066252c526844",
+        "source_url": "https://tw.tradingview.com/news/panews:16e45a1f9acdf:0/",
+        "source_title": "AI安全公司Hadrian完成4000万美元融资，HV Capital等参投",
+        "source_content_hash": "94ca184347774f86b1911c50c309b2ddf231a76552c5b3d5912ebe64537cecca",
+        "quote": "HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投",
+        "quote_hash": "9903d9cd3e0e214b5732ca7983f427f79617c43a1e1559b659d0fa737ff142da"
+      },
+      {
         "source_id": "FISRC-0a3d4ca3b6256c1a",
         "source_url": "https://tech.eu/2026/06/24/compri-secures-eur32m-to-build-ai-powered-procurement-teams/",
         "source_title": "Compri获320万欧元融资，打造AI驱动的采购团队 - Tech.eu",
@@ -247,12 +355,16 @@
           "source_id": "picus_portfolio"
         },
         {
-          "description": "融资来源记录：Compri · 种子轮 · 2026-06-24 · 本轮领投 · 320万欧元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0a3d4ca3b6256c1a"
+          "description": "融资来源记录：Hadrian · 轮次未披露 · 2026-10-06 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf1fd90dbc994e3d"
         },
         {
-          "description": "融资来源记录：Entire Inc. · 种子轮 · 2026-02-10 · 本轮参投 · 6000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-62dc6d17f09030c0"
+          "description": "融资来源记录：Hadrian · 轮次未披露 · 2026-10-06 · 本轮参投 · 4000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a28066252c526844"
+        },
+        {
+          "description": "融资来源记录：Compri · 种子轮 · 2026-06-24 · 本轮领投 · 320万欧元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0a3d4ca3b6256c1a"
         }
       ],
       "contacts": [
@@ -290,20 +402,28 @@
           "quote_hash": "39fe5b87502a91d2349c8d73788968df32998ef8f4c49925e9c76d2cbd4e949d"
         },
         {
+          "source_id": "FISRC-cf1fd90dbc994e3d",
+          "source_url": "https://tech.eu/2026/10/06/hadrian-raises-40m-to-tackle-ai-driven-cyber-threats/",
+          "source_title": "Hadrian 融资 4000 万美元，以应对 AI 驱动的网络威胁",
+          "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
+          "quote": "Existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures also participated",
+          "quote_hash": "90b48abb6ec9ac9a49ff55edc7b4c22b26369370303b34f69eae149877a7e200"
+        },
+        {
+          "source_id": "FISRC-a28066252c526844",
+          "source_url": "https://tw.tradingview.com/news/panews:16e45a1f9acdf:0/",
+          "source_title": "AI安全公司Hadrian完成4000万美元融资，HV Capital等参投",
+          "source_content_hash": "94ca184347774f86b1911c50c309b2ddf231a76552c5b3d5912ebe64537cecca",
+          "quote": "HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投",
+          "quote_hash": "9903d9cd3e0e214b5732ca7983f427f79617c43a1e1559b659d0fa737ff142da"
+        },
+        {
           "source_id": "FISRC-0a3d4ca3b6256c1a",
           "source_url": "https://tech.eu/2026/06/24/compri-secures-eur32m-to-build-ai-powered-procurement-teams/",
           "source_title": "Compri获320万欧元融资，打造AI驱动的采购团队 - Tech.eu",
           "source_content_hash": "9b5cd13f34a521e3",
           "quote": "has raised €3.2 million in a seed funding round led by Picus Capital",
           "quote_hash": "b9d15b38b5b4e857a6452aa24d17ee91017c1225408ccdc6fe17f3dfcc94d220"
-        },
-        {
-          "source_id": "FISRC-62dc6d17f09030c0",
-          "source_url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
-          "source_title": "前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。",
-          "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
-          "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
-          "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
         }
       ],
       "last_verified_at": "2026-09-26",

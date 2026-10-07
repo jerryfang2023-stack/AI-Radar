@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -61,18 +62,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-08-06",
+    "latest_disclosed_at": "2026-10-05",
     "role_counts": {
-      "co_lead": 2,
+      "co_lead": 3,
       "historical_or_ambiguous": 2,
       "lead": 1,
       "participant": 2
@@ -82,9 +83,15 @@
       "series_a",
       "series_c",
       "series_e",
-      "series_f"
+      "series_f",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-dc483de2bd50b2f4",
+        "canonical_entity_id": "",
+        "name": "Clockwork.io"
+      },
       {
         "entity_id": "EN-373da2ec629326c0",
         "canonical_entity_id": "",
@@ -112,6 +119,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4b0bc0ed10f8045e",
+        "funding_insight_id": "FI-4e41cf72b50bafd3",
+        "event_ids": [
+          "EV-208a98705213d50c"
+        ],
+        "company_entity_id": "EN-dc483de2bd50b2f4",
+        "company_canonical_entity_id": "",
+        "company_name": "Clockwork.io",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$31M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 31000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3100 万美元"
+        },
+        "announced_at": "2026-10-05",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-bffca0091f22129f",
+            "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+            "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
+            "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
+            "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
+            "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3d314807a408e14a",
         "funding_insight_id": "FI-0df914fcc4086c90",
@@ -379,6 +426,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-bffca0091f22129f",
+        "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+        "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
+        "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
+        "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
+        "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
+      },
+      {
         "source_id": "FISRC-a967da2448674734",
         "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
         "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
@@ -479,16 +534,16 @@
           "source_id": "seligman_ventures"
         },
         {
+          "description": "融资来源记录：Clockwork.io · 轮次未披露 · 2026-10-05 · 本轮联合领投 · $31M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bffca0091f22129f"
+        },
+        {
           "description": "融资来源记录：Lumilens Inc. · C轮 · 2026-08-06 · 本轮联合领投 · $900M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a967da2448674734"
         },
         {
           "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮领投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1284a14893cb26a9"
-        },
-        {
-          "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dbf8259066547c8e"
         }
       ],
       "contacts": [
@@ -539,6 +594,14 @@
           "quote_hash": "609e1d83071cb5b9b6f2f278e3be8ffe0e38696e96147d315e4d2035e7ab0875"
         },
         {
+          "source_id": "FISRC-bffca0091f22129f",
+          "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+          "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
+          "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
+          "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
+          "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
+        },
+        {
           "source_id": "FISRC-a967da2448674734",
           "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
           "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
@@ -553,14 +616,6 @@
           "source_content_hash": "6b55dc3b9b331355",
           "quote": "a $13 million Series A led by Seligman Ventures",
           "quote_hash": "747ce6a44058bda0a67d5764ad79c100c426d9682f0df73df84993bbfd464f2b"
-        },
-        {
-          "source_id": "FISRC-dbf8259066547c8e",
-          "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
-          "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
-          "source_content_hash": "e79999ca03a0833e",
-          "quote": "Other investors participating in the round include Seligman Ventures",
-          "quote_hash": "ced1c172bdfd97899692650f0e19d995ba4d44503122bc54c28c0c7a1d3d67b9"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -568,7 +623,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[5].role": {
+        "activities[6].role": {
           "text": "Series C 领投",
           "source_hash": "c55ed79792c5d8940ad622d8d48ba34699b43b78b6c1f267f19f91e6570bbcca",
           "provider": "deepseek",

@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -120,18 +121,6 @@
         "quote_hash": "013bc15742c9fe1286212b00bf2704f63da156ba08817e5db8d1cc29cba7ff4f"
       }
     ],
-    "translations": {
-      "zh-CN": {
-        "activities[0].role": {
-          "text": "pre-Series A轮领投",
-          "source_hash": "9fbd27e9e63eee3ba24020bc93bbc741651d99c89b35f44ba23f5023ca11b07e",
-          "provider": "deepseek",
-          "model": "deepseek-flash",
-          "translated_at": "2026-10-06T00:56:36.371Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "summary": "YourNest Venture Capital is an India-focused early-stage DeepTech and technology-enabled venture capital firm. Its official materials identify YourNest Capital Advisors Pvt Ltd as the website operator, describe a focus on enterprise-oriented IP-led ventures, and list multiple SEBI-registered AIFs.",
       "profile_type": "organization",
@@ -198,6 +187,26 @@
         }
       ],
       "last_verified_at": "2026-10-06"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "pre-Series A轮领投",
+          "source_hash": "9fbd27e9e63eee3ba24020bc93bbc741651d99c89b35f44ba23f5023ca11b07e",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-06T00:56:36.371Z",
+          "status": "translated"
+        },
+        "public_profile.summary": {
+          "text": "YourNest Venture Capital 是一家专注于印度的早期 DeepTech 及技术驱动型风险投资机构。其官方资料将 YourNest Capital Advisors Pvt Ltd 列为网站运营方，描述其专注于面向企业的 IP 主导型创业项目，并列出多只 SEBI 注册的 AIF。",
+          "source_hash": "ce7fe6063a007ea5cbf711bfd7eedcedad7dbca5dda1e668b9615d7fb32fa44f",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-07T00:42:51.058Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

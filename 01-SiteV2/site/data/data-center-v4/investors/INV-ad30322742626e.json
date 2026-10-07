@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-06",
-    "currentDate": "2026-10-06",
-    "eventCount": 3959,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-07",
+    "currentDate": "2026-10-07",
+    "eventCount": 3976,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
@@ -160,18 +161,6 @@
         "quote_hash": "c209bad1155390460b5db404884aeceaf01216b6299e47905d83dd5c23f4e243"
       }
     ],
-    "translations": {
-      "zh-CN": {
-        "activities[0].role": {
-          "text": "Series A 参投",
-          "source_hash": "594415bdfe0982734009cfb0cabab985d97ffe82e705eda46fc59f72accb1091",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-10-01T16:28:18.725Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -273,6 +262,34 @@
         }
       ],
       "last_verified_at": "2026-10-06"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Series A 参投",
+          "source_hash": "594415bdfe0982734009cfb0cabab985d97ffe82e705eda46fc59f72accb1091",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:28:18.725Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Eliyan 官方公告将 Intel Capital 列为 Eliyan 2022 年 Series A 的战略投资者。",
+          "source_hash": "f5d002be43871e69b847705ce05ed31b6ca17989c4af7b80c556dd22353ad39c",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-07T00:42:51.058Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Intel Capital 官网",
+          "source_hash": "5945ab0fd384d27cb69209293a5a8bdee84f5dffe1572159f41060793f9217e7",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-07T00:42:51.058Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }
