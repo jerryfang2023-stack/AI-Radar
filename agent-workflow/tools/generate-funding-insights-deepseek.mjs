@@ -7,6 +7,7 @@ import path from "node:path";
 import { readOriginalPage } from '../financing/original-page.mjs';
 import { publicationHold } from '../financing/catalog.mjs';
 import { createOriginalReader } from '../financing/original-reader.mjs';
+import { config as financingConfig } from '../financing/discovery.mjs';
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { resolvePrivateEvidenceBackupRoot } from "./private-evidence-backup-paths.mjs";
@@ -241,7 +242,7 @@ export async function capturePage(result, { backupRoot = resolvePrivateEvidenceB
   }
   let page;
   try {
-    const reader=backupRoot?createOriginalReader({directory:path.join(backupRoot,'financing-monitor-state','original-reader'),date}):null;
+    const reader=backupRoot?createOriginalReader({directory:path.join(backupRoot,'financing-monitor-state','original-reader'),date,maxRequests:financingConfig.secondary_review.research_capture_attempts_per_event,budgetKey:result.review_budget_key || 'funding-research'}):null;
     page=await readPage(result.url,{reader,timeoutMs:30000});
   } catch { return null; }
   const title=page.title||result.title,body=page.body,method=page.method==='original_http'?'direct_fetch':page.method;
@@ -482,6 +483,12 @@ export function domesticFundingResearchQueries(companyName, amountHint, disclose
 }
 
 async function researchSources(bundle, event, company) {
+  // A large batch cannot consume a shared first-N budget before later events
+  // receive their independent second-source review allowance.
+  const fundingSearchGateway = createSearchGateway({
+    cacheDir:path.join(process.env.GUANLAN_RUNTIME_DIR || path.join(root,'agent-workflow/reports'),'funding-search-cache',event.event_id),
+    maxRequests:Number(args.get('search-request-budget') || financingConfig.secondary_review.research_search_requests_per_event),timeoutMs:25000,
+  });
   const captured = canonicalSources(bundle, event);
   if (args.get("research-seeds")) {
     const manifest = readJson(path.resolve(root, args.get("research-seeds")), null);
@@ -489,7 +496,7 @@ async function researchSources(bundle, event, company) {
     const attempts = [];
     for (const seed of seeds) {
       if (captured.some((source) => normalizedUrlKey(source.source_url) === normalizedUrlKey(seed.url))) continue;
-      const source = await capturePage(seed);
+      const source = await capturePage({...seed,review_budget_key:event.event_id});
       attempts.push({ provider: seed.provider, query: seed.query, url: seed.url, status: source ? "completed" : "failed", error: source ? "" : "original_capture_failed" });
       if (source) captured.push(source);
       if (captured.length >= 8) break;
@@ -530,9 +537,9 @@ async function researchSources(bundle, event, company) {
       .sort((a,b)=>scoreCandidate(b,company.canonical_name,identitySubject)-scoreCandidate(a,company.canonical_name,identitySubject));
     let added=0;
     for(const result of candidates) {
-      if(captures>=24||captured.length>=8||added>=2)break;
+      if(captures>=financingConfig.secondary_review.research_capture_attempts_per_event||captured.length>=8||added>=2)break;
       captures++;seen.add(normalizedUrlKey(result.url));
-      const source=await capturePage(result);
+      const source=await capturePage({...result,review_budget_key:event.event_id});
       if(!source) {attempts.push({provider:'original',url:result.url,status:'failed',reason:'original_capture_failed'});continue;}
       if(![company.canonical_name,...(company.aliases||[])].some(name=>fundingResearchNameMatches(source.body_clean,name))) {attempts.push({provider:'original',url:result.url,status:'excluded',reason:'company_not_in_original'});continue;}
       captured.push(source);added++;
@@ -892,7 +899,7 @@ async function processEvent(bundle, event, entityIndex, entityDecisions, company
         { role: "system", content: "输出严格受来源正文约束的融资项目研究JSON；事实必须逐项引用原文，缺失时留空。" },
         { role: "user", content: promptFor(event, company, research.sources, directions) },
       ],
-      maxTokens: Math.max(9000, Math.min(16000, Number(args.get("max-output-tokens") || 9000))),
+      maxTokens: Math.max(9000, Math.min(16000, Number(args.get("max-output-tokens") || financingConfig.secondary_review.model_output_tokens_per_call))),
       temperature: 0.1,
       timeoutMs: 180000,
       validate: (payload) => {

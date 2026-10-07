@@ -80,15 +80,15 @@ async function main() {
   const date = args.get('date') || new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   queryPlan(date);
   const phase = args.get('phase') || 'all';
-  if (!['all','collect','verify','produce','plan'].includes(phase)) throw new Error('invalid_financing_phase');
+  if (!['all','collect','verify','produce','recheck','plan'].includes(phase)) throw new Error('invalid_financing_phase');
   const directory = path.resolve(args.get('runtime-dir') || path.join(root, 'agent-workflow/reports/financing', date));
   if (phase === 'plan') { console.log(JSON.stringify({ version: config.version, date, queries: queryPlan(date), stages: productionPlan(date, directory) }, null, 2)); return; }
   const unlock = acquireLock(directory);
   try {
     process.chdir(root);
     const backupRoot = resolvePrivateEvidenceBackupRoot(root);
-    if (['all','collect'].includes(phase)) await collect({ root, directory, backupRoot, date });
-    if (phase === 'collect') return;
+    if (['all','collect','recheck'].includes(phase)) await collect({ root, directory, backupRoot, date, recheck:phase === 'recheck' });
+    if (phase === 'collect' || phase === 'recheck') return;
     const collection = read(path.join(directory, 'collection.json'));
     if (!collection?.accepted || collection.date !== date) throw new Error('accepted_financing_collection_required');
     await verifyPending({ root, directory, backupRoot, date });

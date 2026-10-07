@@ -27,6 +27,10 @@
 
 ## 检查点与发布
 
+2026-10-07 起按 [并发发布与二次复核 Harness](../agent-workflow/harness/publication-concurrency-and-review.md) 执行。首次采集后对待核验原文补查；每条独立提供 4 组搜索、12 次提供方请求和 6 次原文尝试，单轮原文补查上限 480 次，余项按 `recheck_summary.continuation_required` 续跑。已形成事件的二次研究每事件保留 48 次搜索请求、24 次原文尝试和两次最多 16,000 tokens 的模型输出机会。搜索摘要仍只是线索，原文补获须再过语义复核和事实门禁。新额度复用已配置服务，不自动购买或开通套餐。
+
+续跑待核验来源：`node agent-workflow/financing/run.mjs --phase=recheck --date=YYYY-MM-DD`。该入口不重新发现全批线索，不重采已接受原文；新增原文按来源追加，后续 `--phase=produce` 只重建受影响事实与投影。逐条回执位于 `collection.json` 的 `rechecks`；`awaiting_agent_review` 不等于已核验。历史回执缺少标题时先补来源上下文再判断。
+
 报告：`agent-workflow/reports/financing/YYYY-MM-DD/`。`collection.json` 保存查询覆盖、原文定位、纳入/排除/待核验；`stages.json` 保存阶段恢复；`publication.json` 记录已通过门禁的产物。已接受原文不可因下游失败重采，失败只恢复本阶段及其依赖。零融资允许有效结束，无须补入其他内容凑数。云端 `resume_run_id` 恢复带哈希的检查点，拒绝脚本、日期不符与路径穿越。
 
 检查点基线落后于 main 时，同日原文、模型复核和融资卡按身份合并，冲突保留 main 已接受版本；已并入新卡的来源事件不得恢复成重复旧卡。同日事实与全局投影由合并后的输入重建，不能直接覆盖。原文 Claim 的人工修订写入同日 `model-assist-v1/YYYY-MM-DD.json` 的审核候选；该文件变更会使 facts 及依赖检查点失效，再复用已接受原文继续执行。生成的 `claims.json` 是投影，不作为修订入口。外币金额保留原始币种和数量单位，包括印度卢比 crore/lakh；网页换行不得截掉 million 等数量单位。
@@ -37,7 +41,9 @@ PR/CI 合并到 main 并完成 Pages 后，运行：
 
 发布器隔离读取接受的 main，刷新数据层/知识库、独立融资站与小程序、受保护 OPS，并回读网站与小程序日期。`--dry-run=true` 只预览；门户默认为生产仓旁的 `Guanlan-Funding-Portal`，支持 `--portal-repo`。成功回执绑定接受提交，电脑离线时云端可生产，本地阶段待恢复。
 
-`dispatched/running/checks_pending/ci_failed/ready_for_review/awaiting_portal` 均不等于发布完成。当天只维护一份知识库 `90-工作区/每日监测整合/YYYY-MM-DD-日报.md`，记录各赛道、六类硬件覆盖、待核验/排除、接口故障、工作流/PR、接受提交及线上回读。仅有可行动新增、更正、持续失败或需用户处理时通知；无变化保持安静。不提高模型预算或自动购买搜索额度。
+可用 `--source-sha=<完整提交>` 显式绑定接受版本。三个独立本地目标（数据层、读取模型、Vault）并行刷新；门户和 OPS 顺序发布。锁按目标跨日期共用，忙时立即返回并保留成功检查点；远端前进不会更换本轮原文和发布输入。门户默认在独立检出中构建、提交和发布，失败检出保留供恢复。检查点按相关输入和发布实现建键，无关提交不重跑成功阶段；每阶段记录实际耗时。Pages 完成正在进行的构建并复用 npm 缓存，切换前拒绝落后的 artifact。
+
+`dispatched/running/checks_pending/ci_failed/ready_for_review/awaiting_portal` 均不等于发布完成。当天只维护一份知识库 `90-工作区/每日监测整合/YYYY-MM-DD-日报.md`，记录各赛道、六类硬件覆盖、待核验/排除、接口故障、工作流/PR、接受提交及线上回读。仅有可行动新增、更正、持续失败或需用户处理时通知；无变化保持安静。二次复核采用已授权的独立额度；不自动购买搜索额度或升级套餐。
 
 接口与 AIHOT 边界见 [搜索链路](daily-monitor-search.md)。融资专用分类规则独立于旧平台的技术与实施标签。
 

@@ -127,6 +127,9 @@ test("Pages supersession requires a successful deployment of the target or its d
   assert.equal((await successfulPagesDeployment([run(source, "cancelled"), run(descendant, "success", 2)], source, ancestry)).databaseId, 2);
   assert.equal((await successfulPagesDeployment([run(source)], source, ancestry)).deployedSha, source);
   assert.equal(await successfulPagesDeployment([{ ...run(source), headBranch: "unmerged" }], source, ancestry), null);
+  assert.equal(await successfulPagesDeployment([{ ...run(source), event:'workflow_run' }],source,ancestry),null);
+  assert.equal((await successfulPagesDeployment([run(old)],source,ancestry,async()=>true)).evidence,'equivalent_deployment_inputs');
+  assert.equal(await successfulPagesDeployment([run(old)],source,ancestry,async()=>false),null);
 });
 
 test("final-closure incident drafts do not dirty the canonical repository", () => {
@@ -417,8 +420,8 @@ test("Vault refresh uses an isolated origin/main worktree and leaves supervision
   const sync = read("sync-guanlan-vault-from-main.mjs");
   const supervision = read("write-daily-supervision-report.mjs");
   const vaultGate = read("assert-guanlan-vault.mjs");
-  assert.match(sync, /payload\.source_commit[^]*rev-parse[^]*origin\/main/u);
-  assert.match(sync, /git[^]*worktree[^]*add[^]*--detach[^]*payload\.source_commit/u);
+  // The behavioral publication test covers fixed-commit isolation; ref text
+  // alone cannot prove the worktree actually used the accepted snapshot.
   assert.match(sync, /build-guanlan-vault\.mjs/u);
   assert.match(sync, /sync-guanlan-evidence\.mjs/u);
   assert.match(sync, /assert-guanlan-vault\.mjs/u);

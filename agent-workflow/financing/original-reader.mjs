@@ -1,19 +1,23 @@
 import path from 'node:path';
-import { read,write,digest } from './state.mjs';
+import { read,write,digest,acquireLock } from './state.mjs';
 import { fetchText,publicHttpUrl } from './original-page.mjs';
 
 // Rendering bodies and request receipts stay in private storage. An unknown
 // billed outcome is never automatically repeated during same-day recovery.
-export function createOriginalReader({directory,env=process.env,fetcher=fetch,maxRequests=20,date=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai'}).format(new Date())}={}) {
+export function createOriginalReader({directory,env=process.env,fetcher=fetch,maxRequests=20,budgetKey='',date=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai'}).format(new Date())}={}) {
   if(!env.JINA_API_KEY||!directory)return null;
   return async url=>{
     publicHttpUrl(url);
-    const file=path.join(directory,date,`${digest(url)}.json`),existing=read(file);
-    if(existing?.status==='completed'&&existing.url===url)return existing.result;
-    if(existing)throw new Error(`reader_receipt_${existing.status}`);
-    const budgetFile=path.join(directory,date,'budget.json'),budget=read(budgetFile,{requests:0});
-    if(budget.requests>=maxRequests)throw new Error('reader_daily_budget_exhausted');
-    write(budgetFile,{requests:budget.requests+1});write(file,{url,status:'pending',at:new Date().toISOString()});
+    const file=path.join(directory,date,`${digest(url)}.json`);
+    const release=acquireLock(path.join(directory,date));
+    try {
+      const existing=read(file);
+      if(existing?.status==='completed'&&existing.url===url)return existing.result;
+      if(existing)throw new Error(`reader_receipt_${existing.status}`);
+      const budgetFile=path.join(directory,date,budgetKey?`budget-${digest(budgetKey)}.json`:'budget.json'),budget=read(budgetFile,{requests:0});
+      if(budget.requests>=maxRequests)throw new Error('reader_daily_budget_exhausted');
+      write(budgetFile,{requests:budget.requests+1});write(file,{url,status:'pending',at:new Date().toISOString()});
+    } finally {release();}
     try {
       const response=await fetchText(`https://r.jina.ai/${url}`,{fetcher,timeoutMs:30000,headers:{authorization:`Bearer ${env.JINA_API_KEY}`,'x-return-format':'markdown',accept:'text/plain'}});
       const text=response.text;const field=name=>text.match(new RegExp(`^${name}:\\s*(.+)$`,'m'))?.[1]?.trim()||'';

@@ -5,14 +5,18 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
 
-export async function successfulPagesDeployment(runs, sourceSha, isAncestor) {
+export async function successfulPagesDeployment(runs, sourceSha, isAncestor, equivalentInputs = async()=>false) {
   for (const run of runs) {
     if (run.status !== "completed" || run.conclusion !== "success" || run.headBranch !== "main") continue;
+    // A workflow_run gate can finish successfully without deploying anything,
+    // and its title does not identify the dynamically checked-out main commit.
+    if (!['push','workflow_dispatch'].includes(run.event)) continue;
     // workflow_dispatch can check out source_sha instead of its triggering HEAD.
-    const deployedSha = run.displayTitle?.match(/^Deploy Frontstage to GitHub Pages ([a-f0-9]{40})$/u)?.[1]
-      || (run.event === "push" ? run.headSha : "");
+    const deployedSha = run.event === 'push' ? run.headSha
+      : run.displayTitle?.match(/^Deploy Frontstage to GitHub Pages ([a-f0-9]{40})$/u)?.[1];
     if (!deployedSha) continue;
-    if (deployedSha === sourceSha || await isAncestor(sourceSha, deployedSha)) return { ...run, deployedSha };
+    if (deployedSha === sourceSha || await isAncestor(sourceSha, deployedSha)) return { ...run, deployedSha, evidence:'commit_ancestry' };
+    if (await equivalentInputs(sourceSha,deployedSha)) return {...run,deployedSha,evidence:'equivalent_deployment_inputs'};
   }
   return null;
 }

@@ -29,7 +29,7 @@
 
 发布入口为 root 所有的 `/usr/local/libexec/guanlan-financing-publish YYYY-MM-DD`，只接受日期，以现有 `ubuntu` 身份运行原发布器。控制器不获得任意 shell 的 sudo 权限。原发布器保留来源进展、卡片保留、Pages、哈希、受保护内容、原子切换、现场回读和回滚门禁。服务器通过显式本地 transport 执行同机部署；本机继续使用原 SSH/SCP 路径。
 
-仅复用已有 DeepSeek 密钥；不复制公众号、消息平台或其他 Hermes 凭据到控制器。不增加预算或购买搜索额度。Hermes 默认配置、data profile 和既有六个 cron 的模型均切换为 Flash，原启停状态保持；历史报告中的原模型记录不改写。
+仅复用已有 DeepSeek 密钥；不复制公众号、消息平台或其他 Hermes 凭据到控制器。待核验线索按 `agent-workflow/financing/config.json` 的逐条二次复核额度执行，详见 Harness 的提交、并发发布与二次复核规范；不自动购买搜索套餐。Hermes 默认配置、data profile 和既有六个 cron 的模型均切换为 Flash，原启停状态保持；历史报告中的原模型记录不改写。
 
 ## 检查与恢复
 
