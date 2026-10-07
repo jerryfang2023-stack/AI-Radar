@@ -28057,6 +28057,32 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-07T12:38:22.325Z"
+    },
+    "EV-4e975be277195118": {
+      "id": "EV-4e975be277195118",
+      "scope": "included",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "",
+      "customer_ids": [
+        "research"
+      ],
+      "evidence_indices": [
+        0
+      ],
+      "rationale": "公司与产品原文明确为AI实验室设计、建设及运营专用GPU集群、数据中心；客户合作不当作机器人主营或股权投资。",
+      "input_hash": "7235751677fc9a8a8d631cea6a8f400835d9fa1197ff327610474b98fd9fb21b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-be3b0df0539fd9a7",
+          "quote": "FluidStack pivoted to become a full-stack neocloud: designing, building, and operating dedicated GPU clusters for AI labs.",
+          "source_content_hash": "32078b20d37ae1a6",
+          "quote_hash": "d5dba11f13a4b2c902ec772e181088c022a2f465480cf1ecb6fe5d9710f64ca4"
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-07T12:46:30.493Z"
     }
   },
   "generated_at": "2026-10-07T12:38:22.328Z"
