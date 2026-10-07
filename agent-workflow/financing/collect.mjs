@@ -17,7 +17,7 @@ import { recheckPending } from './recheck.mjs';
 export async function collect({ root, directory, backupRoot, date, gateway, feed, supplements, capture = captureOriginal, recheck = false, reviewSearch }) {
   const file = path.join(directory, 'collection.json');
   const previous = read(file);
-  const previousHash=digest(previous);
+  const previousHash=previous?digest(previous):null;
   if (previous && (previous.date !== date || previous.version !== config.version)) throw new Error('collection_checkpoint_identity_mismatch');
   const verificationFile=path.join(directory,'verification.json');
   const verificationBefore=recheck && fs.existsSync(verificationFile)?fs.readFileSync(verificationFile,'utf8'):null;
