@@ -55,6 +55,10 @@ export function restore(root, directory, date) {
     if(changedBase && !entry.file.startsWith(`agent-workflow/reports/financing/${date}/`)
       && ![intakePath, researchPath, modelPath].includes(entry.file)) continue;
     const file = path.join(root,entry.file), source = path.join(directory,'files',entry.file);
+    // Accepted main owns responsible dispositions. An older artifact must not
+    // restore an exclusion over a newer pending review on the same run date.
+    if(changedBase && fs.existsSync(file) && ['pending247-review.json','lead-review.json','disposition-review.json']
+      .some(name=>entry.file===`agent-workflow/reports/financing/${date}/${name}`)) continue;
     fs.mkdirSync(path.dirname(file),{recursive:true});
     if (entry.file === intakePath && fs.existsSync(file)) {
       write(file, changedBase ? mergeSourceIntakes(read(source),read(file)) : mergeSourceIntakes(read(file),read(source)));

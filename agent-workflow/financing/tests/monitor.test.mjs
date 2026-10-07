@@ -149,6 +149,20 @@ test('restoring on a newer main preserves global data and invalidates dependent 
   assert.deepEqual(read(path.join(root,global)).cards,['newer']);
   assert.deepEqual(read(path.join(root,receipt)).stages,{});
 });
+test('older artifacts cannot overwrite current responsible ledgers but restore missing ledgers',t=>{
+  const root=temporary(t),artifact=temporary(t),entries=[];
+  for(const name of ['pending247-review.json','lead-review.json','disposition-review.json']){
+    const file=`agent-workflow/reports/financing/${date}/${name}`;
+    write(path.join(root,file),{date,rows:[{url:'https://example.com/a',status:'pending_ai_scope',reviewed_at:`${date}T02:00:00Z`}]});
+    write(path.join(artifact,'files',file),{date,rows:[{url:'https://example.com/a',status:'not_financing',reviewed_at:`${date}T01:00:00Z`}]});
+    entries.push({file,hash:digest(fs.readFileSync(path.join(artifact,'files',file),'utf8'))});
+  }
+  write(path.join(artifact,'manifest.json'),{version:'FINANCING-CHECKPOINT-1',date,base_commit:'old',entries});
+  restore(root,artifact,date);
+  for(const {file} of entries)assert.equal(read(path.join(root,file)).rows[0].status,'pending_ai_scope');
+  fs.unlinkSync(path.join(root,entries[2].file));restore(root,artifact,date);
+  assert.equal(read(path.join(root,entries[2].file)).rows[0].status,'not_financing');
+});
 test('newer main retains reviewed same-day evidence and research while adding checkpoint-only work',t=>{
   const root=temporary(t),artifact=temporary(t);
   const intake=`01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`;
