@@ -337,7 +337,7 @@ function fundingEventAmountSemantics(event = {}, claims = []) {
   // can present cumulative proceeds as though they belong to this round.
   const texts = [event.object, ...claimTexts, ...(!claimTexts.length ? [event.display_title_zh] : [])].map(clean).filter(Boolean);
   const preliminary = texts.some((text) => (
-    /\bin talks\b|\btalking to\b|\b(?:seeking to|plans? to|aims? to|looking to|would)\s+(?:raise|secure)\b|拟融资|计划融资|寻求融资|融资洽谈|正在洽谈|正在谈判/iu.test(text)
+    /\bin talks\b|\btalking to\b|\b(?:seeking to|plans? to|aims? to|looking to|would)\s+(?:raise|secure)\b|\b(?:close to|nearing|on the verge of)\s+(?:raising|securing|closing)\b|拟融资|计划融资|寻求融资|融资洽谈|正在洽谈|正在谈判|即将融资|接近完成融资/iu.test(text)
   ));
   const mentions = texts.flatMap(fundingAmountMentions);
   const roundMention = mentions.find((mention) => mention.round);
@@ -350,6 +350,7 @@ function fundingEventAmountSemantics(event = {}, claims = []) {
   return {
     excluded: preliminary || (!roundAmount && mentions.some((mention) => mention.valuation || mention.cumulative)),
     roundAmount,
+    preliminary,
   };
 }
 
@@ -499,6 +500,11 @@ export function canonicalFundingEventRound(event = {}, claims = []) {
   if (explicit) return explicit;
   const refs = new Set(event.claim_refs || []);
   const primary = claims.find((claim) => refs.has(claim.claim_id) && claim.claim_type === "funding" && claim.verification_status === "accepted");
+  const objectRound = normalizeFundingRound(event.object);
+  if (/^(?:pre_)?series_[a-z]|^(?:pre_)?seed(?:_|$)|^angel(?:_|$)/u.test(objectRound.code)) return objectRound;
+  // The canonical event object binds the current proceeds to its round (e.g.
+  // “$20 million Series A”). Prefer it over an article sentence that also
+  // summarizes earlier rounds (“$25 million total, including seed and A”).
   // Product descriptions may contain “基础设施”; accepted financing evidence wins.
   for (const text of [primary?.source_quote?.split(/[。！？\n]|(?<=[.!?])\s+(?=[A-Z])/u).find((sentence) => /融资|funding|raised|raises/iu.test(sentence)), event.object, event.display_title_zh]) {
     const round = normalizeFundingRound(text);
@@ -1157,6 +1163,7 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
     || ["withdrawn", "disputed", "quarantined", "partial"].includes(event.publication_status)
     || isWithdrawnFundingTitle(event.display_title_zh)
     || isPendingFundingTitle(event.display_title_zh)) return ["funding_event_not_completed"];
+  if (fundingEventAmountSemantics(event, claims).preliminary) return ["funding_event_not_completed"];
   const acceptedClaims = claims.filter((claim) => (event.claim_refs || []).includes(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted");
   if (!canonicalFundingEventAmount(event, claims) && normalizeFundingAmount(card.financing?.amount).currency

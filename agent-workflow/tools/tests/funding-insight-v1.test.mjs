@@ -547,6 +547,51 @@ test("fundraising talks remain ineligible even when described as a funding round
   assert.equal(isEligibleFundingInsightEvent(event), false);
 });
 
+test("a round that is close to raising remains outside completed-financing cards", () => {
+  const event = {
+    event_id: "EV-DEEPSEEK-TALKS",
+    event_type: "funding",
+    event_status: "announced",
+    publication_status: "verified",
+    display_title_zh: "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
+    object: "as the AI startup eyes a 2027 IPO",
+    metrics: ["$12 billion", "$7.5 billion", "$75 billion"],
+    claim_refs: ["CL-DEEPSEEK-TALKS"],
+  };
+  const claims = [{
+    claim_id: "CL-DEEPSEEK-TALKS",
+    claim_type: "funding",
+    verification_status: "accepted",
+    source_quote: "Deepseek is close to raising at least $12 billion in a new funding round, Bloomberg reports.",
+  }];
+
+  assert.equal(canonicalFundingEventAmount(event, claims), "");
+  assert.equal(isEligibleFundingInsightEvent(event, claims), false);
+  assert.ok(fundingEventCardConsistencyProblems({ company: { entity_id: "EN-DEEPSEEK" } }, event, claims)
+    .includes("funding_event_not_completed"));
+});
+
+test("current-round object wins over an article summary that names prior and current rounds", () => {
+  const event = {
+    event_type: "funding",
+    event_status: "announced",
+    publication_status: "verified",
+    display_title_zh: "Melius完成2000万美元A轮融资",
+    object: "$20 million Series A",
+    metrics: ["$25 million", "$20 million", "$5 million"],
+    claim_refs: ["CL-MELIUS-CURRENT-ROUND"],
+  };
+  const claims = [{
+    claim_id: "CL-MELIUS-CURRENT-ROUND",
+    claim_type: "funding",
+    verification_status: "accepted",
+    source_quote: "Melius raised a total of $25 million in funding, including a $20 million Series A led by CRV and a $5 million seed round led by General Catalyst.",
+  }];
+
+  assert.equal(canonicalFundingEventAmount(event, claims), "$20 million");
+  assert.equal(canonicalFundingEventRound(event, claims).code, "series_a");
+});
+
 test("common Chinese valuation continuations cannot become round proceeds", () => {
   for (const phrase of ["估值达到60亿美元", "估值超过60亿美元", "估值高达60亿美元"]) {
     const event = {
