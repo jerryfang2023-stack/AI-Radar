@@ -3,6 +3,7 @@ set -euo pipefail
 umask 022
 export PATH=/opt/guanlan-financing-tools/local-publish/bin:/opt/guanlan-financing-tools/duckdb:/opt/guanlan-financing-tools/node/bin:/usr/bin:/bin
 export GUANLAN_LOCAL_PUBLICATION=1
+export GUANLAN_PUBLICATION_RUNTIME_ROOT=/srv/guanlan-financing-publisher/runtime
 export GUANLAN_VAULT_ROOT=/srv/guanlan-financing-publisher/vault
 export GUANLAN_EVIDENCE_BACKUP_ROOT=/srv/guanlan-financing-publisher/private-evidence
 export GUANLAN_FUNDING_PORTAL_REPO=/srv/guanlan-financing-publisher/Guanlan-Funding-Portal

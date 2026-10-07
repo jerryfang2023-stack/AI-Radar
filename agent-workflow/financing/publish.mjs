@@ -22,11 +22,13 @@ const run = (command, argv, cwd = root, timeout = 600000) => {
   return result.stdout.trim();
 };
 const primary = path.dirname(path.resolve(root,run('git',['rev-parse','--git-common-dir'])));
-const directory = path.resolve(args.get('runtime-dir') || path.join(primary,'..','..','runtime','financing',date));
+const publicationRuntime = path.resolve(process.env.GUANLAN_PUBLICATION_RUNTIME_ROOT || path.join(primary,'..','..','runtime'));
+const resourceRoot = path.join(publicationRuntime,'publication-resources');
+const directory = path.resolve(args.get('runtime-dir') || path.join(publicationRuntime,'financing',date));
 const portal = path.resolve(args.get('portal-repo') || process.env.GUANLAN_FUNDING_PORTAL_REPO || path.join(primary,'..','Guanlan-Funding-Portal'));
 const readModelOutput = resolveReadModelOutput(root,args.get('read-model-dir'));
 if (args.get('dry-run') === 'true') {
-  console.log(JSON.stringify({date,sourceSha:args.get('source-sha') || 'origin/main',stages:['accepted_main','pages','data_lake','financing_read_model','vault','editorial_review','portal_with_live_parity','ops'],parallelGroups:[['data_lake','financing_read_model','vault'],['editorial_review'],['portal'],['ops']],portal,directory,readModelOutput}));
+  console.log(JSON.stringify({date,sourceSha:args.get('source-sha') || 'origin/main',stages:['accepted_main','pages','data_lake','financing_read_model','vault','editorial_review','portal_with_live_parity','ops'],parallelGroups:[['data_lake','financing_read_model','vault'],['editorial_review'],['portal'],['ops']],portal,directory,resourceRoot,readModelOutput}));
 } else {
   const unlock = acquireLock(directory);
   let checkout, linked=false;
@@ -79,7 +81,7 @@ if (args.get('dry-run') === 'true') {
           return manifest?.generatedFiles?.length>0 && manifest.generatedFiles.every(file=>fs.existsSync(path.join(vaultRoot,file)));
         }
         if(stage.id==='portal') {
-          const prior=read(path.join(primary,'..','..','runtime','publication-resources','portal','accepted.json'));
+          const prior=read(path.join(resourceRoot,'portal','accepted.json'));
           if(!prior?.portal_commit)return false;
           try {
             const response=await fetch(`${args.get('live-url') || 'https://www.zkdlj.vip'}/publication.json?v=${Date.now()}`,{signal:AbortSignal.timeout(20000)});
@@ -97,7 +99,7 @@ if (args.get('dry-run') === 'true') {
       file:path.join(directory,'publication-stages.json'), execute: async stage => {
       // Shared resources have separate owners. Unrelated targets can proceed;
       // competing writers fail immediately and keep successful checkpoints.
-      const resource=path.join(primary,'..','..','runtime','publication-resources',stage.id);
+      const resource=path.join(resourceRoot,stage.id);
       const release=acquireLock(resource);
       try {
         const prior=read(path.join(resource,'accepted.json'));
