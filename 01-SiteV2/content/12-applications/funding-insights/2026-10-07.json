@@ -2,21 +2,1048 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-10-07",
-    "generated_at": "2026-10-07T09:59:13.134Z",
+    "generated_at": "2026-10-07T12:52:43.044Z",
     "trigger": "accepted_financing_event_research",
     "research_provider": "search-gateway+direct-original+deepseek",
     "model": "deepseek-flash",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 30,
-      "auto_published": 10,
+      "funding_events": 31,
+      "auto_published": 11,
       "blocked": 3,
       "pending": 4,
       "deduplicated": 13
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-4f11df2a63ddae00",
+      "triggered_by_event_id": "EV-17200ca7088fd146",
+      "as_of_date": "2026-10-07",
+      "company": {
+        "entity_id": "EN-22504b19f0baa00e",
+        "name": "Myca",
+        "full_name": "Myca",
+        "website": "https://myca.ag",
+        "summary": "Myca是一家总部位于印度的AI初创公司，专注于农业综合企业领域，开发面向农业企业需求的AI驱动软件平台。",
+        "headquarters": "印度",
+        "founders": [
+          {
+            "name": "Arnav Pandey",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-508b05a3c6e8e140",
+                "quote": "Myca is led by co-founder and CEO Arnav Pandey",
+                "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+                "quote_hash": "47495099ca904cc51ef9467a2e667a71b9779b9bd40fa76ff00f7e002ab67b23"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Seamus Tardif",
+            "role": "联合创始人兼CRO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-508b05a3c6e8e140",
+                "quote": "co-founder and CRO Seamus Tardif",
+                "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+                "quote_hash": "b624bab07ee894961938679f8beb7a4ad6bc29cc579ff11bd00fb5fead60564b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tejas Dinkar",
+            "role": "联合创始人兼CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-508b05a3c6e8e140",
+                "quote": "co-founder and CTO Tejas Dinkar",
+                "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+                "quote_hash": "a61b00e8e64f37f48c4543d21973defec69d59d875629d67c7dea8ab6a8ed082"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-508b05a3c6e8e140",
+            "quote": "Myca, an India-based artificial intelligence startup focused on the agribusiness sector",
+            "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+            "quote_hash": "7f814d2829a990db0731501a378a143a1ede739f2af1f38ea6cb32c4a695d035"
+          },
+          {
+            "source_id": "FISRC-9d9dee75de19fd68",
+            "quote": "Myca, a new AI company from India",
+            "source_content_hash": "c6d0efc5bb4be449",
+            "quote_hash": "fcf52d9c9f9acb638701a7cbac86b5feeef2a59a192a86e623f9249a8aba5076"
+          }
+        ],
+        "application_entity_id": "EN-22504b19f0baa00e",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "$1.3M",
+        "total_raised": "",
+        "announced_at": "2026-10-07",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Kriscore Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9d9dee75de19fd68",
+                "quote": "The round was led by Kriscore Capital with backing from Eximius Ventures and Indigram Labs Foundation.",
+                "source_content_hash": "c6d0efc5bb4be449",
+                "quote_hash": "e4feed7d39b0499cb9950d1cee3baff9c85afa317bc7807b0c3df2132284f854"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Eximius Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-508b05a3c6e8e140",
+                "quote": "This funding round saw participation from Eximius Ventures, Indigram Labs Foundation, and Kriscore Capital.",
+                "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+                "quote_hash": "25965761d52ab6caf3e8d56069c6f059f33ff4f751b8a00fb804525e2f9a9623"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Indigram Labs Foundation",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-508b05a3c6e8e140",
+                "quote": "This funding round saw participation from Eximius Ventures, Indigram Labs Foundation, and Kriscore Capital.",
+                "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+                "quote_hash": "25965761d52ab6caf3e8d56069c6f059f33ff4f751b8a00fb804525e2f9a9623"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-508b05a3c6e8e140",
+            "quote": "Myca Raises $1.3M Pre-seed",
+            "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+            "quote_hash": "d1576dc08bcaa0a9fa87978a3b13afe9b0dfdfef5e5fb5f2cf7fb14cdfa8c0c1"
+          },
+          {
+            "source_id": "FISRC-508b05a3c6e8e140",
+            "quote": "has successfully raised $1.3 million in a pre-seed funding round",
+            "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+            "quote_hash": "30959e8526c79ab760a12395f981da850c8127f3e67aaa7e8961dc7d0390c509"
+          },
+          {
+            "source_id": "FISRC-9d9dee75de19fd68",
+            "quote": "closed a $1.3 million pre-seed round",
+            "source_content_hash": "c6d0efc5bb4be449",
+            "quote_hash": "dbf61be624e5abe2408c2ee761486c54c16b93e2e550c9791c7c8c6abe2c86ee"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$1.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "130 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-17200ca7088fd146",
+            "round_original": "预种子轮",
+            "amount": "$1.3M",
+            "announced_at": "2026-10-07",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-508b05a3c6e8e140",
+                "quote": "Myca Raises $1.3M Pre-seed",
+                "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+                "quote_hash": "d1576dc08bcaa0a9fa87978a3b13afe9b0dfdfef5e5fb5f2cf7fb14cdfa8c0c1"
+              },
+              {
+                "source_id": "FISRC-508b05a3c6e8e140",
+                "quote": "has successfully raised $1.3 million in a pre-seed funding round",
+                "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+                "quote_hash": "30959e8526c79ab760a12395f981da850c8127f3e67aaa7e8961dc7d0390c509"
+              },
+              {
+                "source_id": "FISRC-9d9dee75de19fd68",
+                "quote": "closed a $1.3 million pre-seed round",
+                "source_content_hash": "c6d0efc5bb4be449",
+                "quote_hash": "dbf61be624e5abe2408c2ee761486c54c16b93e2e550c9791c7c8c6abe2c86ee"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Myca AI平台",
+          "description": "面向农业综合企业行业的AI驱动平台，用于将杂乱的田间数据转化为清晰的业务流程。",
+          "target_customers": "农业综合企业",
+          "features": [
+            "将田间数据转化为业务流程",
+            "处理销售、调研和信贷任务",
+            "AI代理接管日常协调与风险识别"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-508b05a3c6e8e140",
+              "quote": "expands its AI-driven platform designed to serve agricultural businesses",
+              "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+              "quote_hash": "9f948b8244b4b79fbfbd8d9f9a866a4eab3eb13d006d67611b0fdce4c7e1bd0c"
+            },
+            {
+              "source_id": "FISRC-9d9dee75de19fd68",
+              "quote": "build tools that turn messy field data into clear business processes",
+              "source_content_hash": "c6d0efc5bb4be449",
+              "quote_hash": "61ab1f1aa245ac954479f359c94faac4e217c191009cd927923c9b8337a39fc1"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "融资金额",
+          "value": "$1.3M",
+          "observed_at": "2026-10-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-508b05a3c6e8e140",
+              "quote": "Raised: $1.3M",
+              "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+              "quote_hash": "ff22dd18d6bccc0a286722502dedc1fa603f1618dbf35af7c01cc9e92101e3e4"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是Myca能否把杂乱的田间数据转化为可复用的业务流程，从而让农业综合企业在不增加人手的情况下扩张村庄级运营。当前已验证的信号仅为：公司完成130万美元pre-seed融资，由Kriscore Capital领投，Eximius Ventures与Indigram Labs Foundation参投，资金用于扩展面向农业综合企业的AI平台。来源未披露估值、收入、客户合同或产品上线数据，因此无法验证其商业化能力；关于改善信贷评分与回收率、以及未来12个月在东南亚、拉美、非洲和印度推广的表述属于计划或媒体分析，不构成已验证信号。",
+        "validated_signals": [
+          "完成130万美元pre-seed融资",
+          "投资方包括Kriscore Capital、Eximius Ventures、Indigram Labs Foundation",
+          "资金计划用于扩展面向农业综合企业行业的AI平台"
+        ],
+        "risks": [
+          "来源未披露任何已签约客户、收入或订单，商业化能力无法验证",
+          "来源未披露估值与累计融资额，资本判断缺少定价依据",
+          "未来12个月在东南亚、拉美、非洲和印度推广属于计划，尚未验证",
+          "改善信贷评分与回收率的表述为媒体分析，非公司实绩"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "use_case_ids": [
+          "sales",
+          "data_analysis",
+          "finance_accounting"
+        ],
+        "industry_ids": [
+          "agriculture"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "农业科技",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是Myca能否把杂乱的田间数据转化为可复用的业务流程，从而让农业综合企业在不增加人手的情况下扩张村庄级运营。当前已验证的信号仅为：公司完成130万美元pre-seed融资，由Kriscore Capital领投，Eximius Ventures与Indigram Labs Foundation参投，资金用于扩展面向农业综合企业的AI平台。来源未披露估值、收入、客户合同或产品上线数据，因此无法验证其商业化能力；关于改善信贷评分与回收率、以及未来12个月在东南亚、拉美、非洲和印度推广的表述属于计划或媒体分析，不构成已验证信号。",
+          "evidence_signals": [
+            "完成130万美元pre-seed融资",
+            "投资方包括Kriscore Capital、Eximius Ventures、Indigram Labs Foundation",
+            "资金计划用于扩展面向农业综合企业行业的AI平台"
+          ],
+          "risks": [
+            "来源未披露任何已签约客户、收入或订单，商业化能力无法验证",
+            "来源未披露估值与累计融资额，资本判断缺少定价依据",
+            "未来12个月在东南亚、拉美、非洲和印度推广属于计划，尚未验证",
+            "改善信贷评分与回收率的表述为媒体分析，非公司实绩"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Myca AI平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Arnav Pandey",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Seamus Tardif",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Tejas Dinkar",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kriscore Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Eximius Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Indigram Labs Foundation",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-17200ca7088fd146",
+          "date": "2026-10-07",
+          "title": "Myca 融资 130 万美元 pre-seed 轮",
+          "amount": "$1.3M",
+          "source_refs": [
+            "SA-4e1682f92ae81e46"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-508b05a3c6e8e140",
+          "source_url": "https://www.thesaasnews.com/news/myca-raises-1-3m-pre-seed",
+          "title": "Myca 融资 130 万美元 pre-seed 轮",
+          "publisher": "www.thesaasnews.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-07T12:34:31.999Z",
+          "content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+          "source_artifact_id": "SA-4e1682f92ae81e46",
+          "raw_id": "RAW-93c0326da84fa0cb"
+        },
+        {
+          "source_id": "FISRC-9d9dee75de19fd68",
+          "source_url": "https://beamstart.com/news/indian-ai-startup-myca-secures-1-3m-to-automate-agribusiness-operations-globally",
+          "title": "Indian AI Startup Myca Secures $1.3M to Automate Agribusiness Operations Globally",
+          "publisher": "beamstart.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-07T12:35:12.393Z",
+          "content_hash": "c6d0efc5bb4be449",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-07T12:36:11.191Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-07T12:36:11.191Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Myca AI平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Arnav Pandey",
+            "Seamus Tardif",
+            "Tejas Dinkar"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-17200ca7088fd146"
+      ],
+      "aggregation": {
+        "key": "EN-22504b19f0baa00e|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-9f518c545d3274af",
+      "triggered_by_event_id": "EV-3b26cd0829579d78",
+      "as_of_date": "2026-10-07",
+      "company": {
+        "entity_id": "EN-5f43904e99289cdd",
+        "name": "Torch Systems",
+        "full_name": "Torch Systems",
+        "website": "www.torchsystems.com",
+        "summary": "Torch Systems 是一家户外资产智能公司，为公用事业、可再生能源运营商、市政和工业客户提供持续、AI 驱动的分布式户外资产可见性。公司总部位于加州拉法耶特，其 TerraNode™ 设备结合光学与热成像相机、声学、气体、空气质量及环境传感器和边缘 AI，无需外部电源或网络即可在偏远站点快速部署。",
+        "headquarters": "Lafayette, California",
+        "founders": [
+          {
+            "name": "Vasya Tremsin",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e55d355f57289ee3",
+                "quote": "Vasya Tremsin, co-founder and CEO of Torch Systems.",
+                "source_content_hash": "a8db6745fbda3f66",
+                "quote_hash": "606fcc9abbdaea97c7814b882ca7b801de7e729c4bfdb3e654de5c77209c6706"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "11-50 employees",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5311544d3ae06891",
+              "quote": "Company size\n11-50 employees",
+              "source_content_hash": "c54998faac65f7cb",
+              "quote_hash": "97b3532eefc16c60dfd2746b432c2e8c1c86d0bc793f825045a9314215ec8267"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6f2893ccf0aa3194",
+            "quote": "Torch Systems, a startup aiming to bring AI-powered visibility to the often-overlooked world of outdoor assets.",
+            "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
+            "quote_hash": "166a711473aa72e03f7f5e11b85c566e215133ec04e32774e428bf8085694472"
+          },
+          {
+            "source_id": "FISRC-5311544d3ae06891",
+            "quote": "Torch Systems is an Outdoor Asset Intelligence company. We give utilities, renewable energy operators, municipalities, and industrial operators continuous, AI-powered visibility across the distributed outdoor assets that keep their operations running.",
+            "source_content_hash": "c54998faac65f7cb",
+            "quote_hash": "49ad3d9094de095b3f1a29e16b9d60c78567fc1d42d80948f264a3b98227fb6d"
+          }
+        ],
+        "application_entity_id": "EN-5f43904e99289cdd",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "其他融资",
+        "amount": "$11.5 Million",
+        "total_raised": "$11.5M",
+        "announced_at": "2026-10-06",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Khosla Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6f2893ccf0aa3194",
+                "quote": "announced the capital infusion from investors including Khosla Ventures, Abstract, Construct Capital, and Starship Ventures.",
+                "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
+                "quote_hash": "164648e587d11a038dc829862b5afb6ac34d5075cb416a9737cb2efb07ea3842"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Abstract",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6f2893ccf0aa3194",
+                "quote": "announced the capital infusion from investors including Khosla Ventures, Abstract, Construct Capital, and Starship Ventures.",
+                "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
+                "quote_hash": "164648e587d11a038dc829862b5afb6ac34d5075cb416a9737cb2efb07ea3842"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Construct Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6f2893ccf0aa3194",
+                "quote": "announced the capital infusion from investors including Khosla Ventures, Abstract, Construct Capital, and Starship Ventures.",
+                "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
+                "quote_hash": "164648e587d11a038dc829862b5afb6ac34d5075cb416a9737cb2efb07ea3842"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Starship Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6f2893ccf0aa3194",
+                "quote": "announced the capital infusion from investors including Khosla Ventures, Abstract, Construct Capital, and Starship Ventures.",
+                "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
+                "quote_hash": "164648e587d11a038dc829862b5afb6ac34d5075cb416a9737cb2efb07ea3842"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ravelin",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5311544d3ae06891",
+                "quote": "The funding includes $9.5M in equity from Khosla Ventures, Abstract, Construct Capital, Starship Ventures, Ravelin and Endurance28, plus $2M in venture debt from First Citizens Bank (formerly Silicon Valley Bank).",
+                "source_content_hash": "c54998faac65f7cb",
+                "quote_hash": "86d2506c213a20149a94aca8c4dbfe5ffb496b7f8da0b4827daf7a056956dce3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Endurance28",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5311544d3ae06891",
+                "quote": "The funding includes $9.5M in equity from Khosla Ventures, Abstract, Construct Capital, Starship Ventures, Ravelin and Endurance28, plus $2M in venture debt from First Citizens Bank (formerly Silicon Valley Bank).",
+                "source_content_hash": "c54998faac65f7cb",
+                "quote_hash": "86d2506c213a20149a94aca8c4dbfe5ffb496b7f8da0b4827daf7a056956dce3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "First Citizens Bank (formerly Silicon Valley Bank)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5311544d3ae06891",
+                "quote": "The funding includes $9.5M in equity from Khosla Ventures, Abstract, Construct Capital, Starship Ventures, Ravelin and Endurance28, plus $2M in venture debt from First Citizens Bank (formerly Silicon Valley Bank).",
+                "source_content_hash": "c54998faac65f7cb",
+                "quote_hash": "86d2506c213a20149a94aca8c4dbfe5ffb496b7f8da0b4827daf7a056956dce3"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6f2893ccf0aa3194",
+            "quote": "Torch Systems Raises $11.5 Million to Expand Its Outdoor Asset Intelligence Platform",
+            "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
+            "quote_hash": "80e7ae66f08fc3e6722ea47253e7ab63d726e27ed7fbec588bd3fe85a06ddebf"
+          },
+          {
+            "source_id": "FISRC-5311544d3ae06891",
+            "quote": "The funding includes $9.5M in equity from Khosla Ventures, Abstract, Construct Capital, Starship Ventures, Ravelin and Endurance28, plus $2M in venture debt from First Citizens Bank (formerly Silicon Valley Bank).",
+            "source_content_hash": "c54998faac65f7cb",
+            "quote_hash": "86d2506c213a20149a94aca8c4dbfe5ffb496b7f8da0b4827daf7a056956dce3"
+          }
+        ],
+        "round_code": "other",
+        "round_original": "Unattributed VC",
+        "amount_original": "$11.5 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1150 万美元"
+        },
+        "total_raised_original": "$11.5M",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 11500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1150 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3b26cd0829579d78",
+            "round_original": "Unattributed VC",
+            "amount": "$11.5 Million",
+            "announced_at": "2026-10-06",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6f2893ccf0aa3194",
+                "quote": "Torch Systems Raises $11.5 Million to Expand Its Outdoor Asset Intelligence Platform",
+                "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
+                "quote_hash": "80e7ae66f08fc3e6722ea47253e7ab63d726e27ed7fbec588bd3fe85a06ddebf"
+              },
+              {
+                "source_id": "FISRC-5311544d3ae06891",
+                "quote": "The funding includes $9.5M in equity from Khosla Ventures, Abstract, Construct Capital, Starship Ventures, Ravelin and Endurance28, plus $2M in venture debt from First Citizens Bank (formerly Silicon Valley Bank).",
+                "source_content_hash": "c54998faac65f7cb",
+                "quote_hash": "86d2506c213a20149a94aca8c4dbfe5ffb496b7f8da0b4827daf7a056956dce3"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "TerraNode™",
+          "description": "自包含、太阳能供电的传感设备，结合光学与热成像相机、声学、气体、空气质量和环境传感器，以及设备端边缘 AI 和无线连接，无需外部电源或有线网络即可在数分钟内安装。",
+          "target_customers": "公用事业、可再生能源运营商、市政和工业客户",
+          "features": [
+            "太阳能供电，无需外部电源",
+            "光学与热成像相机",
+            "声学、气体、空气质量和环境传感器",
+            "设备端边缘 AI",
+            "无线连接",
+            "数分钟内安装"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e55d355f57289ee3",
+              "quote": "TerraNode combines optical and thermal cameras with acoustic, gas, air-quality and environmental sensors. It is solar-powered, uses on-device edge AI and wireless connectivity, and is designed to operate without an external power supply or wired network connection.",
+              "source_content_hash": "a8db6745fbda3f66",
+              "quote_hash": "e600befa8ad5b4f07aa2233f5ec5b39b376e566bd280d0538a72e9c993bc382a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Torch Intelligence Platform",
+          "description": "AI 驱动的监控平台，为每个站点和资产学习正常模式，标记有意义的偏差，可跨多个 TerraNode 关联事件，并提供警报、报告和基于角色的事件管理。",
+          "target_customers": "公用事业、可再生能源运营商、市政和工业客户",
+          "features": [
+            "学习每个站点的正常模式",
+            "标记有意义的偏差",
+            "跨多个 TerraNode 关联事件",
+            "警报、报告和基于角色的事件管理"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e55d355f57289ee3",
+              "quote": "Torch says its software establishes historical context for each location, learns normal operating patterns and flags meaningful deviations. It can also correlate events across multiple TerraNodes and provide alerts, reporting and role-based event management.",
+              "source_content_hash": "a8db6745fbda3f66",
+              "quote_hash": "7949b1e2d35a8f88e4c2fb4a14d9073f51d5e874e32ab587f3160fca5968fdd3"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Dominion Energy",
+          "industry": "能源",
+          "use_case": "在太阳能站点监测潜在火灾风险、太阳能板错位、过热和植被生长",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e55d355f57289ee3",
+              "quote": "Dominion Energy is using Torch at solar sites to monitor for potential fire risk, solar-panel misalignment, overheating and vegetation growth.",
+              "source_content_hash": "a8db6745fbda3f66",
+              "quote_hash": "8b59099312b60c1d5fbcba86d3d4f5ab1c1a7bde3f221b8c6a75f15c482c5543"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Buzz Solutions",
+          "product": "公用事业电网智能平台",
+          "scenario": "分析现有公用事业资产的图像和检查数据",
+          "target_customer": "公用事业",
+          "funding_summary": "",
+          "core_difference": "Buzz Solutions 侧重于分析现有公用事业资产的图像和检查数据；Torch 则通过自包含太阳能 TerraNode 设备在偏远站点进行持续多传感器监测。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e55d355f57289ee3",
+              "quote": "For comparison, Unite.AI’s coverage of Buzz Solutions’ utility grid-intelligence platform describes a different approach centered on analyzing imagery and inspection data from existing utility assets.",
+              "source_content_hash": "a8db6745fbda3f66",
+              "quote_hash": "e446b3c5d125cd808b83dab975aeed6c673d6fc4e3a3ad55dfeda5f3756f80f2"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "股权融资金额",
+          "value": "$9.5M",
+          "observed_at": "2026-10-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5311544d3ae06891",
+              "quote": "The funding includes $9.5M in equity from Khosla Ventures, Abstract, Construct Capital, Starship Ventures, Ravelin and Endurance28, plus $2M in venture debt from First Citizens Bank (formerly Silicon Valley Bank).",
+              "source_content_hash": "c54998faac65f7cb",
+              "quote_hash": "86d2506c213a20149a94aca8c4dbfe5ffb496b7f8da0b4827daf7a056956dce3"
+            }
+          ]
+        },
+        {
+          "label": "风险债务金额",
+          "value": "$2M",
+          "observed_at": "2026-10-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5311544d3ae06891",
+              "quote": "The funding includes $9.5M in equity from Khosla Ventures, Abstract, Construct Capital, Starship Ventures, Ravelin and Endurance28, plus $2M in venture debt from First Citizens Bank (formerly Silicon Valley Bank).",
+              "source_content_hash": "c54998faac65f7cb",
+              "quote_hash": "86d2506c213a20149a94aca8c4dbfe5ffb496b7f8da0b4827daf7a056956dce3"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Vasya Tremsin",
+          "quote": "Critical outdoor infrastructure should be able to tell you what’s happening before a small problem becomes a major event.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e55d355f57289ee3",
+              "quote": "“Critical outdoor infrastructure should be able to tell you what’s happening before a small problem becomes a major event,” Tremsin said.",
+              "source_content_hash": "a8db6745fbda3f66",
+              "quote_hash": "a0b2834dcc8958f56a8939f5feb33cb67b2ff04e677ae27c082e5ff97a8eeeb6"
+            }
+          ]
+        },
+        {
+          "speaker": "Vinod Khosla",
+          "quote": "Operators managing remote sites have no way to see what's actually happening on the ground. Torch's sensors read signals that cameras and satellites can't detect.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5311544d3ae06891",
+              "quote": "As Vinod Khosla, founder of Khosla Ventures, put it: \"Operators managing remote sites have no way to see what's actually happening on the ground. Torch's sensors read signals that cameras and satellites can't detect.\"",
+              "source_content_hash": "c54998faac65f7cb",
+              "quote_hash": "4105ebad0f5344a6e49f659db797db0c61d6054e9de84307c38eb9a3bacb7346"
+            }
+          ]
+        },
+        {
+          "speaker": "Chris Nee",
+          "quote": "the system gives its teams another way to identify issues across a large solar and battery-storage portfolio and focus attention where needed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e55d355f57289ee3",
+              "quote": "Chris Nee, the utility’s manager of renewables, said the system gives its teams another way to identify issues across a large solar and battery-storage portfolio and focus attention where needed.",
+              "source_content_hash": "a8db6745fbda3f66",
+              "quote_hash": "c87364156746ab4ce6dbb2892350c81dfe98578beedda1af384e4130f1c040ba"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Khosla Ventures",
+            "speaker": "Vinod Khosla",
+            "speaker_role": "Khosla Ventures 创始人",
+            "rationale": "Khosla Ventures 认为管理偏远站点的运营商缺乏对现场实际情况的可见性，而 Torch 的传感器能读取相机和卫星无法检测的信号。",
+            "quote": "Operators managing remote sites have no way to see what's actually happening on the ground. Torch's sensors read signals that cameras and satellites can't detect.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5311544d3ae06891",
+                "quote": "As Vinod Khosla, founder of Khosla Ventures, put it: \"Operators managing remote sites have no way to see what's actually happening on the ground. Torch's sensors read signals that cameras and satellites can't detect.\"",
+                "source_content_hash": "c54998faac65f7cb",
+                "quote_hash": "4105ebad0f5344a6e49f659db797db0c61d6054e9de84307c38eb9a3bacb7346"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 Torch 能否将已验证的数百台 TerraNode 部署规模扩展至数千台，并证明其多传感器融合与边缘 AI 在户外基础设施监测中具备可复制的商业价值。当前融资所依赖的已验证信号包括：300+ TerraNodes 已在七个州部署、80+ 站点受保护、在加州、新墨西哥州和俄勒冈州早期检测到真实火灾，以及 Dominion Energy 等客户的实际使用。证据边界在于：来源未披露本轮估值、收入或合同金额，且公司从野火检测向更广泛户外资产智能的扩展仍处于早期阶段。",
+        "validated_signals": [
+          "300+ TerraNodes 已在七个州部署",
+          "80+ 站点受保护",
+          "在加州、新墨西哥州和俄勒冈州早期检测到真实火灾",
+          "Dominion Energy 在太阳能站点使用 Torch 监测火灾风险、太阳能板错位、过热和植被生长"
+        ],
+        "risks": [
+          "来源未披露本轮估值、收入或合同金额，无法验证商业化规模与单位经济模型",
+          "公司从野火检测向更广泛户外资产智能的扩展仍处于早期阶段，多场景需求能否持续转化为付费部署尚待验证",
+          "来源提及的 750 台设备订单及 LA 野火后的需求加速来自个人 LinkedIn 帖子，未经公司官方公告或独立来源交叉验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_device",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "energy_utilities"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "能源技术",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Torch 能否将已验证的数百台 TerraNode 部署规模扩展至数千台，并证明其多传感器融合与边缘 AI 在户外基础设施监测中具备可复制的商业价值。当前融资所依赖的已验证信号包括：300+ TerraNodes 已在七个州部署、80+ 站点受保护、在加州、新墨西哥州和俄勒冈州早期检测到真实火灾，以及 Dominion Energy 等客户的实际使用。证据边界在于：来源未披露本轮估值、收入或合同金额，且公司从野火检测向更广泛户外资产智能的扩展仍处于早期阶段。",
+          "evidence_signals": [
+            "300+ TerraNodes 已在七个州部署",
+            "80+ 站点受保护",
+            "在加州、新墨西哥州和俄勒冈州早期检测到真实火灾",
+            "Dominion Energy 在太阳能站点使用 Torch 监测火灾风险、太阳能板错位、过热和植被生长"
+          ],
+          "risks": [
+            "来源未披露本轮估值、收入或合同金额，无法验证商业化规模与单位经济模型",
+            "公司从野火检测向更广泛户外资产智能的扩展仍处于早期阶段，多场景需求能否持续转化为付费部署尚待验证",
+            "来源提及的 750 台设备订单及 LA 野火后的需求加速来自个人 LinkedIn 帖子，未经公司官方公告或独立来源交叉验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "TerraNode™",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Torch Intelligence Platform",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Vasya Tremsin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Khosla Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Abstract",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Construct Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Starship Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ravelin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Endurance28",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "First Citizens Bank (formerly Silicon Valley Bank)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Dominion Energy",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Buzz Solutions",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-3b26cd0829579d78",
+          "date": "2026-10-06",
+          "title": "Torch Systems 为户外业务融资 1150 万美元",
+          "amount": "$11.5 Million",
+          "source_refs": [
+            "SA-e258960afd7cb0f4"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-6f2893ccf0aa3194",
+          "source_url": "https://www.trysignalbase.com/news/funding/torch-systems-raises-11-5m-for-outdoor",
+          "title": "Torch Systems 为户外业务融资 1150 万美元",
+          "publisher": "www.trysignalbase.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-07T12:34:22.882Z",
+          "content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
+          "source_artifact_id": "SA-e258960afd7cb0f4",
+          "raw_id": "RAW-5fde3035a47139ff"
+        },
+        {
+          "source_id": "FISRC-e55d355f57289ee3",
+          "source_url": "https://www.unite.ai/torch-systems-raises-11-5-million-to-expand-its-outdoor-asset-intelligence-platform/",
+          "title": "Torch Systems Raises $11.5 Million to Expand Its Outdoor Asset Intelligence Platform",
+          "publisher": "unite.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-07T12:35:12.178Z",
+          "content_hash": "a8db6745fbda3f66",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5311544d3ae06891",
+          "source_url": "https://www.linkedin.com/company/torchsystems",
+          "title": "Torch Systems | LinkedIn",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-07T12:35:25.986Z",
+          "content_hash": "c54998faac65f7cb",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-07T12:36:02.227Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-07T12:36:02.227Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "TerraNode™",
+            "Torch Intelligence Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Vasya Tremsin"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-3b26cd0829579d78"
+      ],
+      "aggregation": {
+        "key": "EN-5f43904e99289cdd|other",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-b44594999f49cbec",
@@ -194,7 +1221,7 @@
           }
         ],
         "round_code": "series_a",
-        "round_original": "Series A",
+        "round_original": "A轮",
         "amount_original": "$20 million",
         "amount_normalized": {
           "currency": "USD",
@@ -219,7 +1246,7 @@
         "disclosures": [
           {
             "event_id": "EV-da8dc9f513542c19",
-            "round_original": "Series A",
+            "round_original": "A轮",
             "amount": "$20 million",
             "announced_at": "2026-10-06",
             "evidence_refs": [
@@ -481,30 +1508,30 @@
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
-          "research_name": "Genius Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Vine Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Anti Fund",
+          "research_name": "General Catalyst",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
         {
           "relation_type": "invested_in_other_round",
           "target_kind": "organization",
-          "research_name": "General Catalyst",
+          "research_name": "Genius Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Vine Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Anti Fund",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
@@ -5773,492 +6800,6 @@
         "event_count": 1,
         "strategy": "company_and_normalized_round"
       }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-4ef3231c38ae6549",
-      "triggered_by_event_id": "EV-bada0d929d2b70ac",
-      "as_of_date": "2026-10-07",
-      "company": {
-        "entity_id": "EN-6f7ac1823da81d2e",
-        "name": "DeepSeek",
-        "full_name": "DeepSeek（杭州深度求索）",
-        "website": "",
-        "summary": "DeepSeek是一家中国AI初创公司，开发大语言模型，提供智能对话、代码生成、深度推理等能力，并坚持开源模型路线。",
-        "headquarters": "",
-        "founders": [
-          {
-            "name": "梁文锋",
-            "role": "创始人兼CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-af1bfd9eab3e46f6",
-                "quote": "Founder Liang Wenfeng wants to keep developing open models with freely available weights.",
-                "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-                "quote_hash": "556b96d6488c4e80b7b54f95965883ee4a4f85b55f00dfacde13c3bbc19ebcf6"
-              }
-            ],
-            "entity_id": "EN-dfe2d38b46c80bc1"
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-af1bfd9eab3e46f6",
-            "quote": "Deepseek is close to raising at least $12 billion in a new funding round, Bloomberg reports.",
-            "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-            "quote_hash": "4fa75339b71e6f3f05cf16427d44dbffb8d94745e1b338dfa14492560c0d6ec8"
-          },
-          {
-            "source_id": "FISRC-2d66fabe0ddfa75a",
-            "quote": "DeepSeek 致力于打造世界领先的 AI 大模型，提供智能对话、代码生成、深度推理等能力。",
-            "source_content_hash": "cdcb2aafd85a4ce1",
-            "quote_hash": "f853252f45ccada158a47875ca3d879fe0881620fef613c76fe3034f91f46134"
-          }
-        ],
-        "application_entity_id": "EN-6f7ac1823da81d2e",
-        "canonical_entity_consistent": true
-      },
-      "financing": {
-        "round": "IPO",
-        "amount": "at least $12 billion",
-        "total_raised": "",
-        "announced_at": "2026-10-06",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "宁德时代（CATL）",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-af1bfd9eab3e46f6",
-                "quote": "Battery maker CATL and Tencent are contributing the largest shares.",
-                "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-                "quote_hash": "5e2757a3a630711635c5e3ebe8522f7314400a28987f30e4c3eaa4ff61e40635"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "腾讯（Tencent）",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-af1bfd9eab3e46f6",
-                "quote": "Battery maker CATL and Tencent are contributing the largest shares.",
-                "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-                "quote_hash": "5e2757a3a630711635c5e3ebe8522f7314400a28987f30e4c3eaa4ff61e40635"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-af1bfd9eab3e46f6",
-            "quote": "CATL and Tencent back Deepseek's ballooning funding round as the AI startup eyes a 2027 IPO",
-            "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-            "quote_hash": "2ca10017a7b8e7121dccdaf94edd9f6b3244c97566eaaa3f8a7735241fa0d388"
-          },
-          {
-            "source_id": "FISRC-af1bfd9eab3e46f6",
-            "quote": "Deepseek is close to raising at least $12 billion in a new funding round, Bloomberg reports.",
-            "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-            "quote_hash": "4fa75339b71e6f3f05cf16427d44dbffb8d94745e1b338dfa14492560c0d6ec8"
-          },
-          {
-            "source_id": "FISRC-af1bfd9eab3e46f6",
-            "quote": "The Chinese AI startup originally aimed to raise about $7.5 billion at a valuation of roughly $75 billion.",
-            "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-            "quote_hash": "0c150d1cfa2ac3553dc4a18aac1ea21570b346c3050574f7723b107faef053d4"
-          }
-        ],
-        "round_code": "ipo",
-        "round_original": "IPO",
-        "amount_original": "at least $12 billion",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 12000000000,
-          "min_value": 12000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 120 亿美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-bada0d929d2b70ac",
-            "round_original": "IPO",
-            "amount": "at least $12 billion",
-            "announced_at": "2026-10-06",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-af1bfd9eab3e46f6",
-                "quote": "CATL and Tencent back Deepseek's ballooning funding round as the AI startup eyes a 2027 IPO",
-                "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-                "quote_hash": "2ca10017a7b8e7121dccdaf94edd9f6b3244c97566eaaa3f8a7735241fa0d388"
-              },
-              {
-                "source_id": "FISRC-af1bfd9eab3e46f6",
-                "quote": "Deepseek is close to raising at least $12 billion in a new funding round, Bloomberg reports.",
-                "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-                "quote_hash": "4fa75339b71e6f3f05cf16427d44dbffb8d94745e1b338dfa14492560c0d6ec8"
-              },
-              {
-                "source_id": "FISRC-af1bfd9eab3e46f6",
-                "quote": "The Chinese AI startup originally aimed to raise about $7.5 billion at a valuation of roughly $75 billion.",
-                "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-                "quote_hash": "0c150d1cfa2ac3553dc4a18aac1ea21570b346c3050574f7723b107faef053d4"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed"
-      },
-      "products": [
-        {
-          "name": "DeepSeek-V4-Flash",
-          "description": "DeepSeek的大模型，在成本和性能上设立了新基准。",
-          "target_customers": "",
-          "features": [
-            "成本与性能新基准"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af1bfd9eab3e46f6",
-              "quote": "The strong investor interest stems from Deepseek's V4-Flash model, which has set new benchmarks for cost and performance against Anthropic and OpenAI.",
-              "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-              "quote_hash": "12a7aff205f7ffc8780cbb8e98a44858f1e342f28e6783ae9dc597f42fd17eda"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "DeepSeek-V4-Pro",
-          "description": "DeepSeek发布的大模型预览版本。",
-          "target_customers": "",
-          "features": [
-            "预览版本"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af1bfd9eab3e46f6",
-              "quote": "Deepseek released V4-Pro and V4-Flash as preview versions in April",
-              "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-              "quote_hash": "4d61f49d98c4f2c8230ab890d3dcb957eaa928748237bc09df7ffceb2dfab207"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "自研推理芯片",
-          "description": "DeepSeek正在研发的推理芯片，旨在减少对英伟达和华为的依赖。",
-          "target_customers": "",
-          "features": [
-            "减少对英伟达和华为的依赖"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af1bfd9eab3e46f6",
-              "quote": "is also working on its own inference chip to reduce its dependence on Nvidia and Huawei",
-              "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-              "quote_hash": "4af98052f6f93c5bffa3e95b7f3e53f43fd6dd32454295a7b9046a489b1ba56a"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [],
-      "metrics": [
-        {
-          "label": "本轮融资目标金额",
-          "value": "至少120亿美元",
-          "observed_at": "2026-10-06",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af1bfd9eab3e46f6",
-              "quote": "Deepseek is close to raising at least $12 billion in a new funding round, Bloomberg reports.",
-              "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-              "quote_hash": "4fa75339b71e6f3f05cf16427d44dbffb8d94745e1b338dfa14492560c0d6ec8"
-            }
-          ]
-        },
-        {
-          "label": "原计划融资金额",
-          "value": "约75亿美元",
-          "observed_at": "2026-10-06",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af1bfd9eab3e46f6",
-              "quote": "The Chinese AI startup originally aimed to raise about $7.5 billion at a valuation of roughly $75 billion.",
-              "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-              "quote_hash": "0c150d1cfa2ac3553dc4a18aac1ea21570b346c3050574f7723b107faef053d4"
-            }
-          ]
-        },
-        {
-          "label": "原计划估值",
-          "value": "约750亿美元",
-          "observed_at": "2026-10-06",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af1bfd9eab3e46f6",
-              "quote": "The Chinese AI startup originally aimed to raise about $7.5 billion at a valuation of roughly $75 billion.",
-              "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-              "quote_hash": "0c150d1cfa2ac3553dc4a18aac1ea21570b346c3050574f7723b107faef053d4"
-            }
-          ]
-        },
-        {
-          "label": "融资总额可能接近",
-          "value": "150亿美元",
-          "observed_at": "2026-10-06",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af1bfd9eab3e46f6",
-              "quote": "People familiar with the matter say the total could approach $15 billion.",
-              "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-              "quote_hash": "c8061f231bb3ecc20cf84c586c86848337af58c44ea50c07396d1ec89e1362f3"
-            }
-          ]
-        },
-        {
-          "label": "首轮外部融资金额",
-          "value": "约74亿美元",
-          "observed_at": "2026-06",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af1bfd9eab3e46f6",
-              "quote": "In June, the company closed its first external funding round at about $7.4 billion with a valuation above $50 billion.",
-              "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-              "quote_hash": "a6728f9748c98a167325b756e52e8430e647f6824f18a88e2678027c54cebae5"
-            }
-          ]
-        },
-        {
-          "label": "首轮外部融资估值",
-          "value": "超过500亿美元",
-          "observed_at": "2026-06",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af1bfd9eab3e46f6",
-              "quote": "In June, the company closed its first external funding round at about $7.4 billion with a valuation above $50 billion.",
-              "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-              "quote_hash": "a6728f9748c98a167325b756e52e8430e647f6824f18a88e2678027c54cebae5"
-            }
-          ]
-        },
-        {
-          "label": "数据中心AI芯片数量",
-          "value": "至少160,000颗",
-          "observed_at": "2026-10-06",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af1bfd9eab3e46f6",
-              "quote": "The company is building a data center with at least 160,000 AI chips from Huawei.",
-              "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-              "quote_hash": "60e689f89a62cae88d690af41a11db9a94d1df1158b55b66c051a35dcb968e5d"
-            }
-          ]
-        }
-      ],
-      "quotes": [],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是DeepSeek能否在获得大规模资金后，继续维持其在大模型成本与性能上的领先优势，并推进2027年初的IPO计划。当前融资所依赖的已验证信号包括：V4-Flash模型在成本和性能上设立了新基准，以及公司正在建设使用至少16万颗华为AI芯片的数据中心。判断的证据边界在于：本轮融资尚未完成，金额和估值仍可能变化；IPO计划也仅为计划，尚未发生。",
-        "validated_signals": [
-          "V4-Flash模型在成本和性能上设立了新基准",
-          "公司正在建设使用至少16万颗华为AI芯片的数据中心",
-          "创始人梁文锋希望继续开发权重可自由获取的开源模型"
-        ],
-        "risks": [
-          "本轮融资尚未完成，最终金额和估值可能变化",
-          "IPO计划尚在早期，存在不确定性",
-          "公司依赖英伟达芯片的评论曾导致融资暂停，供应链风险仍存"
-        ],
-        "related_direction_id": "",
-        "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "model",
-        "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "development_deployment",
-        "market_application_id": "models",
-        "use_case_ids": [
-          "software_development",
-          "knowledge_search",
-          "data_analysis"
-        ],
-        "industry_ids": [],
-        "target_user_ids": [
-          "developer",
-          "business_user",
-          "researcher"
-        ],
-        "sector": "人工智能",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是DeepSeek能否在获得大规模资金后，继续维持其在大模型成本与性能上的领先优势，并推进2027年初的IPO计划。当前融资所依赖的已验证信号包括：V4-Flash模型在成本和性能上设立了新基准，以及公司正在建设使用至少16万颗华为AI芯片的数据中心。判断的证据边界在于：本轮融资尚未完成，金额和估值仍可能变化；IPO计划也仅为计划，尚未发生。",
-          "evidence_signals": [
-            "V4-Flash模型在成本和性能上设立了新基准",
-            "公司正在建设使用至少16万颗华为AI芯片的数据中心",
-            "创始人梁文锋希望继续开发权重可自由获取的开源模型"
-          ],
-          "risks": [
-            "本轮融资尚未完成，最终金额和估值可能变化",
-            "IPO计划尚在早期，存在不确定性",
-            "公司依赖英伟达芯片的评论曾导致融资暂停，供应链风险仍存"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "DeepSeek-V4-Flash",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "DeepSeek-V4-Pro",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "自研推理芯片",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "梁文锋",
-          "canonical_entity_id": "EN-dfe2d38b46c80bc1",
-          "canonical_name": "梁文锋"
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "宁德时代（CATL）",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "腾讯（Tencent）",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-ed65f3187aa6aa40",
-          "date": "2026-07-14",
-          "title": "DeepSeek 在完成首轮 70 亿美元融资仅数周后就需要更多现金",
-          "amount": "$7 billion",
-          "source_refs": [
-            "SA-2fa4b62a68708662"
-          ]
-        },
-        {
-          "event_id": "EV-f8c3a83d883c9b22",
-          "date": "2026-06-16",
-          "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
-          "amount": "about $7.4 billion",
-          "source_refs": [
-            "SA-8a94a189bf763b0b"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-af1bfd9eab3e46f6",
-          "source_url": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/",
-          "title": "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
-          "publisher": "the-decoder.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-07T00:22:34.128Z",
-          "content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-          "source_artifact_id": "SA-f056398ff89617ab",
-          "raw_id": "RAW-7a2d2c9059b9700b"
-        },
-        {
-          "source_id": "FISRC-2d66fabe0ddfa75a",
-          "source_url": "https://deepseek-sy.com.cn/",
-          "title": "深度求索\n 探索未至之境",
-          "publisher": "deepseek-sy.com.cn",
-          "source_class": "official_candidate",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-07T00:35:54.370Z",
-          "content_hash": "cdcb2aafd85a4ce1",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-10-07T00:36:04.874Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-10-07T00:36:04.874Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 2
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 3,
-          "unresolved_names": [
-            "DeepSeek-V4-Flash",
-            "DeepSeek-V4-Pro",
-            "自研推理芯片"
-          ]
-        },
-        "founders": {
-          "linked": 1,
-          "total": 1,
-          "unresolved_names": []
-        }
-      },
-      "source_event_ids": [
-        "EV-bada0d929d2b70ac"
-      ],
-      "aggregation": {
-        "key": "EN-6f7ac1823da81d2e|ipo",
-        "event_count": 1,
-        "strategy": "company_and_normalized_round"
-      }
     }
   ],
   "queue": [
@@ -6310,68 +6851,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-07T09:59:13.125Z"
-    },
-    {
-      "event_id": "EV-bada0d929d2b70ac",
-      "company_name": "DeepSeek",
-      "status": "auto_published",
-      "problems": [],
-      "queries": [
-        "\"DeepSeek\" 2026 融资 投资方",
-        "\"DeepSeek\" 官网 产品 服务"
-      ],
-      "attempts": [
-        {
-          "provider": "anysearch",
-          "query": "\"DeepSeek\" 2026 融资 投资方",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "planner",
-          "query": "\"Deepseek\" at least $12 billion 融资 领投 跟投",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"DeepSeek\" 官网 产品 服务",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://www.deepseek.com/",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.deepseekcom.cn/",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "planner",
-          "query": "\"DeepSeek\" 投资机构 融资用途",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "planner",
-          "query": "\"Deepseek\" 2026 本轮融资 公告",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "planner",
-          "query": "\"DeepSeek\" 客户 创始人 总部",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        }
-      ],
-      "updated_at": "2026-10-07T00:39:40.173Z"
+      "updated_at": "2026-10-07T12:52:43.040Z"
     },
     {
       "event_id": "EV-3a4ba26375b45669",
@@ -6389,7 +6869,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-f2950d2104e97163",
@@ -6398,7 +6878,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-ee1dd0077269532b",
@@ -6569,7 +7049,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.040Z"
     },
     {
       "event_id": "EV-fedd03572246e392",
@@ -6695,7 +7175,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.040Z"
     },
     {
       "event_id": "EV-657176fd0dff6209",
@@ -6704,7 +7184,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-80aeba0846bbd197",
@@ -6713,7 +7193,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-55581be112058bd5",
@@ -6722,7 +7202,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-ffe023b6919230e0",
@@ -6731,7 +7211,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-2aa827a397a551d1",
@@ -6740,7 +7220,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-208a98705213d50c",
@@ -6820,7 +7300,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.040Z"
     },
     {
       "event_id": "EV-7f10b7d013a91292",
@@ -6838,7 +7318,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-b35ee2ada485c7e4",
@@ -6847,7 +7327,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-d351ff2b55683997",
@@ -6867,7 +7347,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-c8a803c1bdfde04c",
@@ -6876,7 +7356,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-6324ffde67e257fa",
@@ -6885,7 +7365,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-af1a6d0b5da2d0e5",
@@ -6894,7 +7374,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-6a63fabeceadc42b",
@@ -6977,7 +7457,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-6cf399bb27ddd1a5",
@@ -7032,7 +7512,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-6744aefb738a9a0c",
@@ -7081,7 +7561,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-33c666ae1aefd87b",
@@ -7143,7 +7623,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-6bbfb2ce5e89bbda",
@@ -7235,7 +7715,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-07T09:59:13.127Z"
+      "updated_at": "2026-10-07T12:52:43.041Z"
     },
     {
       "event_id": "EV-1faa33bcf69dcf47",
@@ -7309,6 +7789,276 @@
         }
       ],
       "updated_at": "2026-10-07T00:39:40.173Z"
+    },
+    {
+      "event_id": "EV-3b26cd0829579d78",
+      "company_name": "Torch Systems",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Torch Systems\" 2026 funding round investors",
+        "\"Torch Systems\" official product customers",
+        "\"Torch Systems\" \"why we invested\"",
+        "\"Torch Systems\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Torch Systems\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.finsmes.com/2026/10/torch-systems-raises-11-5m-in-total-funding.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.citybiz.co/article/914788/torch-systems-raises-11-5-million-to-scale-ai-infrastructure-monitoring/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Torch Systems\" $11.5 Million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Torch Systems\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.torchsystems.com/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/axiosnews/posts/exclusive-torch-systems-raises-115m-for-grid-monitoring/1482430617080236/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.businesswire.com/news/home/20261006302495/en/Torch-Systems-Raises-%2411.5-Million-to-Bring-AI-to-the-Physical-Infrastructure-the-World-Depends-On",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.crunchbase.com/organization/torch-sensors",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.bizjournals.com/sanfrancisco/news/2026/10/06/sfbt-digest-tuesday-minerva-openai-padsplit-nikko.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.forbes.com/sites/jeffkart/2023/07/31/torch-startup-says-its-outdoor-sensors-can-help-snuff-out-wildfires/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Torch Systems\" \"why we invested\"",
+          "status": "empty",
+          "count": 0
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Torch Systems\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://torch.io/blog/the-ai-investment-paradox",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Torch Systems\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Torch Systems\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-07T12:52:43.041Z"
+    },
+    {
+      "event_id": "EV-17200ca7088fd146",
+      "company_name": "Myca",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Myca\" 2026 funding round investors",
+        "site:myca.ag \"Myca\" official product customers",
+        "\"Myca\" \"why we invested\"",
+        "\"Myca\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Myca\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://tracxn.com/d/companies/mycahealth/__2w4w6gOBgLRHXxPBXj0EVVA2jVc5UsbfY34LWiprxO0/funding-and-investors",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.techinasia.com/news/indian-ai-agribusiness-startup-myca-raises-1-3m-pre-seed",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://observatoire.lesdeeptech.fr/companies/myca_cards",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://pitchbook.com/profiles/company/1376321-77",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.asiabusinessoutlook.com/news/asia-today-ai-agritech-fintech-crypto-and-startup-funding-nwid-12559.html",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/posts/tnisbet_we-raised-a-100m-series-b-led-by-sequoia-activity-7455295196545667072-M16j",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Myca\" $1.3M funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "site:myca.ag \"Myca\" official product customers",
+          "status": "completed",
+          "count": 1
+        },
+        {
+          "provider": "tavily",
+          "query": "site:myca.ag \"Myca\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.myca.ag/use-cases/product-recommendations",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.myca.ag/about",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.myca.ag/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.myca.ag/blog/ai-powered-lead-qualification",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.myca.ag/blog/from-15-days-to-15-minutes-how-fmcg-companies-revolutionize-rural-distribution",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.myca.ag/use-cases/farmer-demonstrations",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.myca.ag/blog/from-credit-checks-to-cash-flow-how-ai-revolutionizes-agribusiness-microfinance",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.myca.ag/docs/legal/privacy-policy",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Myca\" \"why we invested\"",
+          "status": "completed",
+          "count": 1
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Myca\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Myca\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Myca\" founders headquarters product",
+          "status": "completed",
+          "count": 7
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Myca\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://myca.com/contact/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        }
+      ],
+      "updated_at": "2026-10-07T12:52:43.041Z"
     }
   ]
 }
