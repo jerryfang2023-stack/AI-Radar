@@ -25,6 +25,98 @@ const html = '<meta property="article:published_time" content="2026-10-05"><arti
 const capture = lead => captureOriginal(lead, { date, fetcher: async () => new Response(html) });
 const forbidden = () => { throw new Error('unexpected network call'); };
 
+const queuePath = options => path.join(options.backupRoot,'financing-monitor-state/verification-queue.json');
+const due = (extra={}) => ({status:'pending',origin_date:'2026-10-05',rounds:0,next_due_date:date,stop_after_date:'2026-10-12',title:'Older AI financing original',reason:'capture_budget_exhausted',...extra});
+
+test('current excluded originals close queued leads without network and preserve other queue entries', async t => {
+  const options=fixture(t), other='https://example.com/unrelated';
+  seed(options,{[url]:{status:'excluded',reason:'outside_daily_window',original_date:'2026-07-08'}});
+  const unchanged=due({next_due_date:'2026-10-07'});
+  write(queuePath(options),{entries:{[url]:due(),[other]:unchanged}});
+  const result=await verifyPending({...options,capture:forbidden,search:forbidden});
+  assert.equal(result.entries[url].status,'excluded');
+  assert.equal(result.entries[url].original_date,'2026-07-08');
+  assert.deepEqual(read(queuePath(options)).entries,{[other]:unchanged});
+  await verifyPending({...options,capture:forbidden,search:forbidden});
+  assert.deepEqual(read(queuePath(options)).entries,{[other]:unchanged});
+});
+
+test('queued current accepted original reaches existing fact gates and never auto-verifies', async t => {
+  const options=fixture(t);
+  await collect({...options,gateway:{search:async()=>[{url,title:'AI company raises funding'}]},feed:async()=>({complete:true,items:[],discovered_count:0,pages:1,failures:[]}),supplements:[],capture});
+  write(queuePath(options),{entries:{[url]:due()}});
+  const result=await verifyPending({...options,capture:forbidden,search:forbidden});
+  assert.equal(result.entries[url].status,'awaiting_fact_review');
+  assert.equal(result.entries[url].raw_ids.length,1);
+  assert.equal(result.entries[url].checks.amount,'pending');
+  assert.equal(read(queuePath(options)).entries[url].rounds,0);
+  assert.equal(finishVerification(options).counts.verified,0);
+});
+
+test('full discovery reserves old queue capacity within the same 480 attempts and resumes without I/O', async t => {
+  const options=fixture(t);
+  const old=Object.fromEntries(Array.from({length:40},(_,i)=>[`https://old.example/${i}`,due({title:`Older AI financing original ${i}`})]));
+  write(queuePath(options),{entries:old});
+  const leads=Array.from({length:480},(_,i)=>({url:`https://new.example/${i}`,title:'AI startup raises seed funding'}));
+  let collected=0, followed=0;
+  const collection=await collect({...options,gateway:{search:async()=>[]},feed:async()=>({complete:true,items:leads,discovered_count:480,pages:1,failures:[]}),supplements:[],capture:async()=>{collected++;return {status:'pending',reason:'original_unreadable'};}});
+  assert.equal(collection.accepted,true);
+  assert.equal(collected,448);
+  assert.equal(Object.values(collection.captures).filter(row=>row.attempted===false).length,32);
+  const result=await verifyPending({...options,search:async title=>({status:'completed',items:[{url:`https://alternate.example/${title.split(' ').at(-1)}`}]}),capture:async()=>{followed++;return {status:'pending',reason:'original_date_missing'};}});
+  assert.equal(followed,32);
+  assert.equal(collected+followed,480);
+  assert.equal(Object.entries(result.entries).filter(([key,row])=>key.startsWith('https://old.example/') && row.attempted).length,32);
+  assert.equal(Object.entries(result.entries).filter(([key,row])=>key.startsWith('https://new.example/') && row.attempted).length,0);
+  await verifyPending({...options,capture:forbidden,search:forbidden});
+  await collect({...options,gateway:{search:forbidden},capture:forbidden});
+});
+
+test('interrupted collection reservations survive resume without repeating unknown requests', async t => {
+  const options=fixture(t);
+  write(path.join(options.directory,'collection.json'),{version:config.version,date,captures:{[url]:{status:'pending',reason:'collection_capture_interrupted_or_unknown',attempted:true}}});
+  await collect({...options,gateway:{search:async()=>[{url,title:'AI company raises funding'}]},feed:async()=>({complete:true,items:[],discovered_count:0,pages:1,failures:[]}),supplements:[],capture:forbidden});
+  const state=await verifyPending({...options,capture:forbidden,search:forbidden});
+  assert.equal(state.entries[url].reason,'collection_capture_interrupted_or_unknown');
+});
+
+test('responsible disposition supersedes accepted collection both before and after reconciliation', async t => {
+  for (const reconcileFirst of [false,true]) {
+    const options=fixture(t);
+    await collect({...options,gateway:{search:async()=>[{url,title:'AI company raises funding'}]},feed:async()=>({complete:true,items:[],discovered_count:0,pages:1,failures:[]}),supplements:[],capture});
+    write(queuePath(options),{entries:{[url]:due()}});
+    if(reconcileFirst) await verifyPending({...options,capture:forbidden,search:forbidden});
+    write(path.join(options.directory,'lead-review.json'),{version:'FINANCING-LEAD-REVIEW-1',date,rows:[{id:'review-1',url,status:'excluded_outside_daily_window',reason:'responsible_original_date_review',reviewed_at:`${date}T01:00:00Z`}]});
+    const result=await verifyPending({...options,capture:forbidden,search:forbidden});
+    assert.equal(result.entries[url].status,'reviewed');
+    assert.equal(result.entries[url].reason,'responsible_original_date_review');
+    assert.deepEqual(read(queuePath(options)).entries,{});
+  }
+});
+
+test('restoring a prepared public checkpoint preserves newer private fact review reasons', async t => {
+  const options=fixture(t);seed(options);
+  await verifyPending({...options,capture:async()=>({status:'pending',reason:'original_date_missing'})});
+  const latest=read(queuePath(options));
+  Object.assign(latest.entries[url],{reason:'newer_responsible_fact_review',fact_review_completed:true});
+  write(queuePath(options),latest);
+  const result=await verifyPending({...options,capture:forbidden,search:forbidden});
+  assert.deepEqual(read(queuePath(options)),latest);
+  assert.equal(result.entries[url].reason,'newer_responsible_fact_review');
+});
+
+test('pending responsible scope review reuses current accepted raw without searching', async t => {
+  const options=fixture(t);
+  await collect({...options,gateway:{search:async()=>[{url,title:'AI company raises funding'}]},feed:async()=>({complete:true,items:[],discovered_count:0,pages:1,failures:[]}),supplements:[],capture});
+  write(queuePath(options),{entries:{[url]:due()}});
+  write(path.join(options.directory,'lead-review.json'),{version:'FINANCING-LEAD-REVIEW-1',date,rows:[{id:'review-2',url,status:'pending_ai_scope',reason:'responsible_scope_review_required',reviewed_at:`${date}T01:00:00Z`}]});
+  const result=await verifyPending({...options,capture:forbidden,search:forbidden});
+  assert.equal(result.entries[url].status,'awaiting_fact_review');
+  assert.equal(result.entries[url].prior_reason,'responsible_scope_review_required');
+  assert.equal(result.entries[url].raw_ids.length,1);
+  await verifyPending({...options,capture:forbidden,search:forbidden});
+});
+
 test('pending follow-up recovers only its original, preserves collection, merges supplement and resumes without I/O', async t => {
   const options = fixture(t); seed(options);
   write(path.join(options.directory, 'supplemental.json'), { version: 'FINANCING-SUPPLEMENT-1', date, accepted: true, raw_ids: ['RAW-existing'] });
