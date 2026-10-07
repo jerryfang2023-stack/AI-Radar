@@ -9,6 +9,7 @@ import { loadPrivateEvidenceRecord } from '../tools/lib/private-evidence-store.m
 import { buildSourceIntake, mergeSourceIntakes, readSourceIntake, sourceIntakePath } from '../tools/lib/source-intake-v1.mjs';
 import { indexFinancingEvidence } from './evidence-index.mjs';
 import { classificationInput, classificationProblems } from './taxonomy.mjs';
+import { captureAllowance } from './capture-budget.mjs';
 
 const version = 'FINANCING-VERIFICATION-1';
 const semanticReasons = new Set(['ai_relevance_unverified', 'robotics_core_business_review', 'embodied_or_robotics_core_business_review']);
@@ -49,15 +50,35 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
   const reader = createOriginalReader({ directory: path.join(privateDir, 'original-reader'), date });
   // Follow-up HTTP attempts share the existing capture ceiling; model and search
   // limits are unchanged. Same URL is never retried automatically on another day.
-  let remaining = Math.max(0, config.max_capture_attempts - Object.keys(collection.captures || {}).length - legacy.attempts
-    - Math.max(Object.values(state.entries).filter(row => row.attempted).length,
-      Object.values(history.entries).filter(row => row.date === date && row.attempted).length));
+  let remaining = captureAllowance({collection,verification:state,backupRoot,date});
+  const processed = new Set();
   const processLead = async ([url, receipt]) => {
+    const queued = queue.entries[url];
+    const currentReview = reviewed.get(url);
+    if (currentReview && (receipt.status !== 'accepted' || !currentReview.status.startsWith('pending'))) receipt = {...receipt,status:'pending'};
+    // A current collection disposition must reconcile an existing queue item,
+    // even when its next retry is not due. Accepted originals still need gates.
+    if (queued && ['excluded','accepted'].includes(receipt.status)) {
+      if (state.entries[url]?.collection_reconciled && (!currentReview || state.entries[url].review_hash === digest(currentReview))) return;
+      processed.add(url);
+      const rawIds = receipt.status === 'accepted' ? (readSourceIntake(root,date)?.payload.raw_documents || [])
+        .filter(raw => raw.source_url === url && raw.content_hash === receipt.content_hash && collection.raw_ids.includes(raw.raw_id)).map(raw => raw.raw_id) : [];
+      state.entries[url] = {source_url:url, origin_date:queued.origin_date, rounds:queued.rounds || 0,
+        stop_after_date:queued.stop_after_date, title:queued.title || '', checks:pendingChecks(),
+        status:receipt.status === 'excluded' ? 'excluded' : rawIds.length ? 'awaiting_fact_review' : 'pending',
+        reason:receipt.status === 'excluded' ? `current_collection:${receipt.reason}` : rawIds.length ? 'existing_fact_research_and_taxonomy_gates_required' : 'accepted_source_missing_restore_intake',
+        collection_reconciled:receipt.status === 'excluded' || rawIds.length > 0, collection_date:date, original_date:receipt.original_date,
+        content_hash:receipt.content_hash, raw_ids:rawIds, evidence_source_url:url, alternate_source:false,
+        ...(currentReview ? {review_hash:digest(currentReview),reviewed_status:currentReview.status,prior_reason:currentReview.reason,review_ref:`${currentReview.ledger}#${currentReview.id}`} : {}),
+        resumed_fact_review:true};
+      write(file,state);return;
+    }
     if (receipt.status !== 'pending') return;
     let row = state.entries[url];
+    if (row && row.status !== 'captured' && !currentReview && queued?.last_processed_date >= date && !followupDue(queued,date)) return;
     const priorReview = reviewed.get(url) || receipt.prior_review;
-    const queued = queue.entries[url];
     if (!row || (priorReview && row.review_hash !== digest(priorReview))) {
+      processed.add(url);
       row = state.entries[url] = { source_url: url, original_reason: receipt.reason, status: 'pending', reason: receipt.reason, checks: pendingChecks(),
         title: priorReview?.title || receipt.title || discovered.get(url)?.title || '',
         origin_date: queued?.origin_date || date, rounds: queued?.rounds || 0,
@@ -114,6 +135,8 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
         Object.assign(row, { content_hash: receipt.content_hash, status: 'captured' });
       } else if (previous && !priorReview && !receipt.backlog && !queued) {
         Object.assign(row, { reason: 'previous_verification_attempt_requires_review', previous_date: previous.date });
+      } else if (receipt.reason === 'collection_capture_interrupted_or_unknown') {
+        row.reason = receipt.reason;
       } else if (!remaining) {
         row.reason = 'capture_budget_exhausted';
       } else {
@@ -152,6 +175,7 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
       write(file, state);
     }
     if (row.status !== 'captured') return;
+    processed.add(url);
     const sourceUrl = row.evidence_source_url || url;
     let loaded;
     try { loaded = loadPrivateEvidenceRecord(root, `evidence://${row.content_hash}`, row.content_hash, { backupRoot, sourceUrl, dataDate: date }); }
@@ -184,18 +208,32 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
     history.entries[url] = { ...history.entries[url], date, status: row.status, reason: 'original_recovered', content_hash: row.content_hash, evidence_source_url:row.evidence_source_url,alternate_source:row.alternate_source };
     write(historyFile, history); write(file, state);
   };
-  const leads = Object.entries(collection.captures || {});
+  const leads = Object.entries(collection.captures || {}).map(([url,receipt]) => [url,
+    queue.entries[url] ? {...receipt,prior_review:queue.entries[url].prior_review,backlog:true} : receipt]);
   const currentUrls = new Set(leads.map(([url])=>url));
   for(const [url,item] of Object.entries(queue.entries)) {
     if(item.status==='pending' && item.stop_after_date < date)queue.entries[url]=deferredFollowup(item,date,{reason:item.reason});
     if(!currentUrls.has(url) && followupDue(item,date)) leads.push([url,{status:'pending',reason:item.reason,title:item.title,prior_review:item.prior_review,backlog:true}]);
   }
+  leads.sort(([a],[b]) => {
+    const qa=queue.entries[a], qb=queue.entries[b];
+    const dueA=Boolean(qa && followupDue(qa,date)), dueB=Boolean(qb && followupDue(qb,date));
+    return Number(dueB)-Number(dueA) || (dueA && dueB ? String(qa.origin_date || '').localeCompare(String(qb.origin_date || '')) || a.localeCompare(b) : 0);
+  });
   for (let i = 0; i < leads.length; i += config.capture_concurrency) {
     const results = await Promise.allSettled(leads.slice(i, i + config.capture_concurrency).map(processLead));
     const failed = results.find(result => result.status === 'rejected');
     if (failed) throw failed.reason;
   }
   for(const [url,row] of Object.entries(state.entries)) {
+    // Restored public checkpoints may predate a successful private fact review.
+    // Only this invocation's changed rows may replace the latest queue state.
+    if (!processed.has(url) && queue.entries[url]?.last_processed_date >= date) {
+      row.followup=queue.entries[url];
+      row.reason=queue.entries[url].reason;
+      row.fact_review_completed=queue.entries[url].fact_review_completed;
+      continue;
+    }
     if(row.status === 'reviewed' || row.status === 'excluded' || row.status === 'verified' || row.reviewed_status === 'accepted_original') { delete queue.entries[url];continue; }
     if(row.reason==='alternate_original_requires_identity_review') {
       row.followup={...row,status:'needs_attention',next_due_date:null,last_processed_date:date,

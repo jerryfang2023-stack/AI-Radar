@@ -11,6 +11,7 @@ import { indexFinancingEvidence } from './evidence-index.mjs';
 import { collectSubscriptions } from './subscriptions.mjs';
 import { syncAIHotSelected } from './aihot-selected.mjs';
 import { createOriginalReader } from './original-reader.mjs';
+import { captureAllowance, backlogReserve } from './capture-budget.mjs';
 
 export async function collect({ root, directory, backupRoot, date, gateway, feed, supplements, capture = captureOriginal }) {
   const file = path.join(directory, 'collection.json');
@@ -39,9 +40,21 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
   state.supplemental_failures = discovered.supplementalFailures;
   state.search_health = gateway.status?.() || {}; state.search_attempts = gateway.attempts || [];
   const remaining = discovered.leads.filter(lead => !state.captures[lead.url]);
-  const batch = remaining.slice(0, config.max_capture_attempts);
+  const considered = remaining.slice(0, config.max_capture_attempts);
+  const reserve = backlogReserve({backupRoot,date});
+  const available = captureAllowance({collection:state,backupRoot,date});
+  const batch = considered.slice(0, Math.max(0, available - reserve));
+  for (const lead of considered.slice(batch.length)) state.captures[lead.url] = {
+    status:'pending', reason:reserve ? 'capture_budget_reserved_for_verification' : 'capture_budget_exhausted',
+    attempted:false, title:lead.title || '', coverage:lead.coverage || [],
+  };
+  write(file,state);
   for (let i = 0; i < batch.length; i += config.capture_concurrency) {
-    const results = await Promise.all(batch.slice(i, i + config.capture_concurrency).map(async lead => {
+    const group = batch.slice(i, i + config.capture_concurrency);
+    // Persist reservations before I/O: an unknown interrupted capture is held.
+    for (const lead of group) state.captures[lead.url] = {status:'pending',reason:'collection_capture_interrupted_or_unknown',attempted:true,title:lead.title || '',coverage:lead.coverage || []};
+    write(file,state);
+    const results = await Promise.all(group.map(async lead => {
       try { return { lead, result: await capture(lead, { date, reader }) }; }
       catch (error) { return { lead, result: { status: 'pending', reason: error.message } }; }
     }));
@@ -53,7 +66,7 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
     if (records.length) ingestPrivateEvidenceRecords({ root, backupRoot, records });
     for (const { lead, result } of results) {
       const { record, ...receipt } = result;
-      state.captures[lead.url] = { ...receipt, coverage: lead.coverage || [],
+      state.captures[lead.url] = { ...receipt, attempted:true, coverage: lead.coverage || [],
         ...(record ? { content_hash: record.content_hash, source_url: lead.url } : {}) };
     }
     write(file, state);
@@ -68,7 +81,7 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
   write(sourceIntakePath(root, date), mergeSourceIntakes(readSourceIntake(root, date)?.payload, intake));
   indexFinancingEvidence({root, backupRoot, date, collection:state});
   state.raw_ids = intake.raw_documents.map(row => row.raw_id);
-  state.unattempted = Math.max(0, remaining.length - batch.length);
+  state.unattempted = Math.max(0, remaining.length - considered.length);
   state.counts = { leads: discovered.leads.length, accepted_originals: entries.length, pending: Object.values(state.captures).filter(row => row.status === 'pending').length, excluded: Object.values(state.captures).filter(row => row.status === 'excluded').length };
   state.accepted = discovered.complete && state.unattempted === 0;
   state.status = state.accepted ? entries.length ? 'accepted' : 'no_verified_new_financing' : 'incomplete';
