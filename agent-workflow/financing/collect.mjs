@@ -17,7 +17,14 @@ import { recheckPending } from './recheck.mjs';
 export async function collect({ root, directory, backupRoot, date, gateway, feed, supplements, capture = captureOriginal, recheck = false, reviewSearch }) {
   const file = path.join(directory, 'collection.json');
   const previous = read(file);
+  const previousHash=previous?digest(previous):null;
   if (previous && (previous.date !== date || previous.version !== config.version)) throw new Error('collection_checkpoint_identity_mismatch');
+  const verificationFile=path.join(directory,'verification.json');
+  const verificationBefore=recheck && fs.existsSync(verificationFile)?fs.readFileSync(verificationFile,'utf8'):null;
+  if(verificationBefore) {
+    const verification=JSON.parse(verificationBefore);
+    if(verification.date!==date || verification.version!=='FINANCING-VERIFICATION-1' || verification.collection_hash!==previousHash)throw new Error('verification_checkpoint_identity_mismatch');
+  }
   // Downstream recovery has no authority to re-run accepted collection.
   if (previous?.accepted) {
     const intake = readSourceIntake(root, date);
@@ -105,5 +112,13 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
   state.status = state.accepted ? entries.length ? 'accepted' : 'no_verified_new_financing' : 'incomplete';
   write(file, state);
   if (!state.accepted) throw new Error(`collection_incomplete:${state.failed_queries.join(',')};remaining=${state.unattempted}`);
+  if(verificationBefore && previousHash!==digest(state)) {
+    // New originals change verification inputs. Preserve the prepared receipt
+    // privately, then rebuild from the existing source-bound queue and reviews.
+    const archived=path.join(backupRoot,'financing-monitor-state','recheck-checkpoints',date,`${digest(verificationBefore)}.json`);
+    write(archived,JSON.parse(verificationBefore));
+    if(fs.readFileSync(verificationFile,'utf8')!==verificationBefore)throw new Error('verification_checkpoint_changed_during_recheck');
+    fs.unlinkSync(verificationFile);
+  }
   return state;
 }
