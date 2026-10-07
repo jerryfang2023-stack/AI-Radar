@@ -15,8 +15,11 @@ function run(command, args, options = {}) {
   if (result.status !== 0 || result.error) throw new Error(`${command} failed: ${result.stderr || result.error?.message}`);
   return result.stdout;
 }
-if (!dryRun) run("git", ["fetch", "origin", "main"]);
-const sha = run("git", ["rev-parse", "origin/main"]).trim();
+const pinned = process.argv.find(arg => arg.startsWith('--source-sha='))?.slice(13);
+if (pinned && !/^[a-f0-9]{40}$/u.test(pinned)) throw new Error('Invalid source SHA');
+if (!dryRun && !pinned) run("git", ["fetch", "origin", "main"]);
+const sha = pinned || run("git", ["rev-parse", "origin/main"]).trim();
+if (pinned) run('git', ['merge-base', '--is-ancestor', pinned, 'origin/main']);
 if (!/^[a-f0-9]{40}$/u.test(sha)) throw new Error("Invalid accepted main commit");
 const files = ["operations-console.html", "assets/operations-console.js", "assets/member-operations.js", "assets/application-analytics.js", "assets/operations-auth.js", "assets/search-growth.js", "assets/search-growth.css", "data/ops-console.js", "data/ops-console.json", "data/local-skill-store-data.js"];
 const receipt = { sourceCommit: sha, checkedAt: new Date().toISOString(), files: {}, authenticatedProductionBrowserVerified: false };
@@ -43,7 +46,7 @@ try {
     run("scp", ["-q", archive, `hermes-vps:/tmp/${id}.tar`]);
     const script = `set -eu
 exec 9>/var/www/wavesight-ops/.publication.lock
-flock -w 120 9
+flock -n 9 || { echo 'ops_publication_busy' >&2; exit 75; }
 previous=$(readlink -f /var/www/wavesight-ops/current)
 case "$previous" in /var/www/wavesight-ops/releases/*) ;; *) echo 'Invalid current release' >&2; exit 1;; esac
 mkdir '${receipt.release}'

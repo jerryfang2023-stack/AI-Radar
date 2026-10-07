@@ -79,10 +79,14 @@ const payload = {
 
 try {
   const vaultRoot = resolveGuanlanVaultRoot(root);
-  run("git", ["fetch", "origin", "main"]);
-  payload.source_commit = run("git", ["rev-parse", "origin/main"]);
+  const pinned = args.get('source-sha');
+  if (pinned && !/^[a-f0-9]{40}$/u.test(pinned)) throw new Error('Invalid source SHA');
+  if (!pinned) run("git", ["fetch", "origin", "main"]);
+  payload.source_ref = pinned || 'origin/main';
+  payload.source_commit = pinned || run("git", ["rev-parse", "origin/main"]);
+  if (pinned) run('git', ['merge-base', '--is-ancestor', pinned, 'origin/main']);
   const requestedCommit=args.get('source-commit');
-  if(requestedCommit && (!/^[a-f0-9]{40}$/u.test(requestedCommit) || requestedCommit!==payload.source_commit)) throw new Error('accepted_main_changed_before_vault_projection');
+  if(requestedCommit && (!/^[a-f0-9]{40}$/u.test(requestedCommit) || requestedCommit!==payload.source_commit))throw new Error('accepted_main_changed_before_vault_projection');
 
   if (dryRun) {
     payload.ok = true;

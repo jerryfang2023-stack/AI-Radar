@@ -12,7 +12,7 @@ export function allowedCheckpointPath(file, date) {
   if (file === publicIndexPath) return true;
   return (/^01-SiteV2\/(?:content\/(?:11-databases|12-applications\/(?:funding-insights|financing-taxonomy))|site\/data)\/.*\.json$/u.test(file)
     || (file.startsWith(`agent-workflow/reports/financing/${date}/`) && /\.json$/u.test(file)))
-    && !/\/search-cache\/|\/aihot\//u.test(file);
+    && !/\/(?:recheck-)?search-cache\/|\/aihot\//u.test(file);
 }
 export function snapshot(root, directory, date) {
   const result = spawnSync('git', ['status','--porcelain=v1','-z','--untracked-files=all'], { cwd: root, encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 });

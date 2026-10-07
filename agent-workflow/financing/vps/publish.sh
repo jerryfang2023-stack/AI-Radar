@@ -18,7 +18,7 @@ git fetch --quiet origin main
 git checkout --quiet --detach origin/main
 git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" pull --quiet --ff-only origin main
 lock_hash=$(sha256sum package-lock.json | cut -d' ' -f1)
-if [ ! -d node_modules/ajv ] || [ "$(cat ../runtime/dependencies.sha256 2>/dev/null || true)" != "$lock_hash" ]; then
+if [ ! -d node_modules/ajv ] || [ ! -d node_modules/cheerio ] || [ "$(cat ../runtime/dependencies.sha256 2>/dev/null || true)" != "$lock_hash" ]; then
   npm ci --ignore-scripts --no-audit --no-fund
   printf '%s\n' "$lock_hash" > ../runtime/dependencies.sha256
 fi

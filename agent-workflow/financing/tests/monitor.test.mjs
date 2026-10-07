@@ -135,6 +135,7 @@ test('artifact restore cannot execute code or traverse paths',t=>{
   assert.equal(allowedCheckpointPath('01-SiteV2/site/data/a.js',date),false);
   assert.equal(allowedCheckpointPath('01-SiteV2/content/01-raw/source-index.jsonl',date),true);
   assert.equal(allowedCheckpointPath('01-SiteV2/content/01-raw/originals.jsonl',date),false);
+  assert.equal(allowedCheckpointPath(`agent-workflow/reports/financing/${date}/recheck-search-cache/private.json`,date),false);
   const dir=temporary(t);write(path.join(dir,'manifest.json'),{version:'FINANCING-CHECKPOINT-1',date,entries:[{file:'../escape.json',hash:'x'}]});
   assert.throws(()=>restore(dir,dir,date),/path_rejected/u);
 });

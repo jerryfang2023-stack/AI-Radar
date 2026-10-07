@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v4-execution-harness
-last_updated: 2026-09-13
+last_updated: 2026-10-07
 priority: current
 ---
 
@@ -14,6 +14,11 @@ This is the V4 production-specific flow. Cross-module rules, designs, tools,
 checks and evidence requirements are indexed in [Guanlan Harness](../agent-workflow/harness/README.md).
 For narrow edits, run the applicable checks; a documentation or index repair
 does not require recollection or a complete business production pipeline.
+
+For every commit, deployment/publication, and pending evidence review, apply
+[publication concurrency and secondary review](../agent-workflow/harness/publication-concurrency-and-review.md).
+Keep editing checkouts isolated, bind all publishers to accepted commits,
+reuse independent checkpoints and reserve per-lead review budgets.
 
 ## Production order
 

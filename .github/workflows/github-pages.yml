@@ -43,7 +43,9 @@ permissions:
 
 concurrency:
   group: github-pages
-  cancel-in-progress: true
+  # Finish the active release; GitHub coalesces pending runs to the latest one.
+  # Multiple windows must not repeatedly cancel expensive validation/builds.
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -58,8 +60,8 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
         with:
-          ref: main
-          fetch-depth: 2
+          ref: ${{ inputs.source_sha || (github.event_name == 'push' && github.sha) || 'main' }}
+          fetch-depth: 0
 
       - name: Confirm deployment corresponds to main
         id: deployment-gate
@@ -128,6 +130,13 @@ jobs:
             process.exit(1);
           });
           NODE
+
+      - name: Set up cached Node dependencies
+        if: steps.deployment-gate.outputs.deploy == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
 
       - name: Install validation dependencies
         if: steps.deployment-gate.outputs.deploy == 'true'
@@ -222,6 +231,22 @@ jobs:
           path: ${{ runner.temp }}/artifact.tar
           retention-days: 1
           if-no-files-found: error
+
+      - name: Reject a superseded artifact before switching Pages
+        if: steps.deployment-gate.outputs.deploy == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main --quiet
+          node --input-type=module <<'NODE'
+          import {spawnSync} from 'node:child_process';
+          import {pagesDeploymentInputs} from './agent-workflow/tools/lib/pages-deployment-inputs.mjs';
+          const result=spawnSync('git',['diff','--quiet','HEAD','origin/main','--',...pagesDeploymentInputs],{stdio:'inherit'});
+          if(result.status!==0) {
+            console.error('pages_artifact_superseded; follow the newer main deployment');
+            process.exit(75);
+          }
+          NODE
 
       - name: Deploy to GitHub Pages
         if: steps.deployment-gate.outputs.deploy == 'true'

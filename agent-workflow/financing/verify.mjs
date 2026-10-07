@@ -1,5 +1,5 @@
 import path from 'node:path';
-import { legacyOriginals, legacyCapture, createFollowupSearch, followupDue, deferredFollowup } from './verification-followup.mjs';
+import { legacyOriginals, legacyCapture, followupDue, deferredFollowup } from './verification-followup.mjs';
 import { captureOriginal } from './capture.mjs';
 import { config } from './discovery.mjs';
 import { read, write, digest } from './state.mjs';
@@ -9,7 +9,7 @@ import { loadPrivateEvidenceRecord } from '../tools/lib/private-evidence-store.m
 import { buildSourceIntake, mergeSourceIntakes, readSourceIntake, sourceIntakePath } from '../tools/lib/source-intake-v1.mjs';
 import { indexFinancingEvidence } from './evidence-index.mjs';
 import { classificationInput, classificationProblems } from './taxonomy.mjs';
-import { captureAllowance } from './capture-budget.mjs';
+import { createLeadFollowupSearch } from './lead-followup-search.mjs';
 import { dispositionResolver } from './verification-dispositions.mjs';
 
 const version = 'FINANCING-VERIFICATION-1';
@@ -46,12 +46,16 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
   const queueFile = path.join(privateDir, 'verification-queue.json');
   const queue = read(queueFile, {version:'FINANCING-VERIFICATION-QUEUE-1', entries:{}});
   const legacy = legacyOriginals(backupRoot, date);
-  search ||= createFollowupSearch({directory:path.join(privateDir, date), collection});
+  const leadSearches = new Map();
+  const searchFor = url => {
+    if (search) return search;
+    if (!leadSearches.has(url)) leadSearches.set(url,createLeadFollowupSearch({directory:path.join(privateDir,date),date,leadUrl:url,policy:config.secondary_review}));
+    return leadSearches.get(url);
+  };
   const discovered = new Map(Object.values(collection.receipts || {}).flatMap(receipt => receipt.items || []).map(item => [item.url, item]));
-  const reader = createOriginalReader({ directory: path.join(privateDir, 'original-reader'), date });
-  // Follow-up HTTP attempts share the existing capture ceiling; model and search
-  // limits are unchanged. Same URL is never retried automatically on another day.
-  let remaining = captureAllowance({collection,verification:state,backupRoot,date});
+  // Secondary review has its own run allowance, independent of discovery.
+  // Reservations remain durable; an unknown URL is never silently replayed.
+  let remaining = Math.max(0, config.secondary_review.capture_attempts_per_run - Object.values(history.entries).filter(row=>row.date===date && row.attempted).length);
   const processed = new Set();
   const pendingReviews=new Map();
   const resolveDisposition=dispositionResolver({root,backupRoot,directory,date});
@@ -156,37 +160,46 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
         Object.assign(row, { reason: 'previous_verification_attempt_requires_review', previous_date: previous.date });
       } else if (receipt.reason === 'collection_capture_interrupted_or_unknown') {
         row.reason = receipt.reason;
+      } else if (collection.rechecks?.[url]?.status === 'evidence_attempted') {
+        row.reason = 'secondary_evidence_attempted_awaiting_agent_review';
       } else if (!remaining) {
         row.reason = 'capture_budget_exhausted';
       } else {
         // Reserve BEFORE network I/O. An interrupted/unknown attempt is held,
         // never silently billed or fetched again on a checkpoint restore.
-        remaining--;
         Object.assign(row, { attempted: true, reason: 'attempt_interrupted_or_unknown' });
         history.entries[url] = { date, status: 'started', attempted: true };
         write(historyFile, history); write(file, state);
-        let targetUrl = url;
-        if(priorReview || receipt.backlog || queued) {
-          const hints = [priorReview?.accepted_source, priorReview?.additional_source].filter(Boolean);
-          targetUrl = hints.find(target => !history.entries[target]?.attempted) || '';
-          if(!targetUrl) {
-            const found = await search(row.title);
-            row.search_status = found.status; row.search_reason = found.reason || '';
-            targetUrl = (found.items || []).map(item=>item.url).find(target=>target!==url && !history.entries[target]?.attempted && !collection.captures?.[target]) || '';
+        const candidates = new Set();
+        if (!(priorReview || receipt.backlog || queued)) candidates.add(url);
+        for (const target of [priorReview?.accepted_source,priorReview?.additional_source].filter(Boolean)) candidates.add(target);
+        const found = (priorReview?.accepted_source || priorReview?.additional_source) ? {status:'hinted_original',items:[]} : await searchFor(url)(row.title);
+        row.search_status = found.status; row.search_reason = found.reason || '';
+        for (const item of found.items || []) if(item.url!==url) candidates.add(item.url);
+        const reader = createOriginalReader({directory:path.join(privateDir,'original-reader'),date,
+          maxRequests:config.secondary_review.capture_attempts_per_lead,budgetKey:url});
+        row.capture_attempts ||= [];
+        for (const targetUrl of candidates) {
+          if (row.capture_attempts.length>=config.secondary_review.capture_attempts_per_lead || !remaining) break;
+          if (targetUrl!==url && (history.entries[targetUrl]?.attempted || collection.captures?.[targetUrl])) continue;
+          remaining--;
+          row.evidence_source_url=targetUrl;row.alternate_source=targetUrl!==url;
+          const attempt={url:targetUrl,status:'started'};row.capture_attempts.push(attempt);
+          history.entries[targetUrl]={date,status:'started',attempted:true};write(historyFile,history);write(file,state);
+          let result;
+          try { result=await capture({url:targetUrl},{date,reader}); }
+          catch {result={status:'pending',reason:'original_capture_failed'};}
+          Object.assign(attempt,{status:result.status,reason:result.reason});
+          if(result.record) {
+            const record=result.record;
+            ingestPrivateEvidenceRecords({root,backupRoot,records:[{snapshotRef:`financing/${date}/${digest(targetUrl).slice(0,16)}.json`,sourceUrl:targetUrl,dataDate:date,contentHash:record.content_hash,body:record.clean_text,metadata:record}]});
+            Object.assign(row,{content_hash:record.content_hash,status:'captured',reason:result.reason || 'original_recovered'});
+            write(file,state);break;
           }
-          if(!targetUrl) { row.reason = row.search_reason || 'no_alternate_original_found'; write(file,state); return; }
+          Object.assign(row,{status:result.status==='excluded' && targetUrl===url?'excluded':'pending',reason:targetUrl===url?result.reason:`alternate_original_unusable:${result.reason}`});
+          write(file,state);
         }
-        row.evidence_source_url = targetUrl;
-        row.alternate_source = targetUrl !== url;
-        history.entries[targetUrl] = {date,status:'started',attempted:true};write(historyFile,history);
-        let result;
-        try { result = await capture({ url:targetUrl }, { date, reader }); }
-        catch { result = { status: 'pending', reason: 'original_capture_failed' }; }
-        if (result.record) {
-          const record = result.record;
-          ingestPrivateEvidenceRecords({ root, backupRoot, records: [{ snapshotRef: `financing/${date}/${digest(targetUrl).slice(0,16)}.json`, sourceUrl: targetUrl, dataDate: date, contentHash: record.content_hash, body: record.clean_text, metadata: record }] });
-          Object.assign(row, { content_hash: record.content_hash, status: 'captured', reason: result.reason || 'original_recovered' });
-        } else Object.assign(row, { status: result.status === 'excluded' && targetUrl===url ? 'excluded' : 'pending', reason: targetUrl===url ? result.reason : `alternate_original_unusable:${result.reason}` });
+        if(!row.capture_attempts.length)row.reason=row.search_reason || 'no_alternate_original_found';
         history.entries[url] = { ...history.entries[url], date, status: row.status, reason: row.reason, content_hash: row.content_hash, evidence_source_url:row.evidence_source_url,alternate_source:row.alternate_source };
         write(historyFile, history);
       }

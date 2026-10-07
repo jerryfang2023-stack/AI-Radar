@@ -155,6 +155,13 @@ test('paid reader reuses receipts, refuses uncertain results and respects reques
  await assert.rejects(uncertain('https://example.com/a'));await assert.rejects(uncertain('https://example.com/a'),/receipt_unknown/);
  assert.equal(createOriginalReader({directory,env:{}}),null);
 });
+test('secondary reader allowances are per lead while original receipts prevent double billing across leads',async t=>{
+ const directory=temp(t),env={JINA_API_KEY:'fixture'},date='2026-10-07';let calls=0;
+ const options={directory,env,date,maxRequests:1,fetcher:async request=>{calls++;const url=request.slice('https://r.jina.ai/'.length);return new Response(`Title: Acme\nURL Source: ${url}\nPublished Time: 2026-10-07\nMarkdown Content:\n${body}`);}};
+ const a=createOriginalReader({...options,budgetKey:'lead-a'}),b=createOriginalReader({...options,budgetKey:'lead-b'});
+ await a('https://example.com/a');await b('https://example.com/a');await b('https://example.com/b');
+ await assert.rejects(a('https://example.com/c'),/budget/);assert.equal(calls,2);
+});
 test('source registry covers both markets, media, releases and investors without duplicate IDs',()=>{
  assert.equal(new Set(sourceRegistry.sources.map(s=>s.id)).size,sourceRegistry.sources.length);
  for(const market of ['domestic','overseas'])assert.ok(sourceRegistry.sources.filter(s=>s.market===market).length>=10);

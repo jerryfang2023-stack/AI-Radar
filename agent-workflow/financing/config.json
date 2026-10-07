@@ -7,6 +7,19 @@
   "capture_timeout_ms": 20000,
   "max_capture_attempts": 480,
   "verification_capture_reserve": 32,
+  "original_reader_requests": 480,
+  "secondary_review": {
+    "concurrency": 4,
+    "search_queries_per_lead": 4,
+    "search_results": 8,
+    "search_requests_per_lead": 12,
+    "capture_attempts_per_lead": 6,
+    "capture_attempts_per_run": 480,
+    "research_search_requests_per_event": 48,
+    "research_capture_attempts_per_event": 24,
+    "model_calls_per_lead": 2,
+    "model_output_tokens_per_call": 16000
+  },
   "markets": [
     "domestic",
     "overseas"
