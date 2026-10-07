@@ -4,10 +4,18 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {execFileSync,spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
 import {runStages,read,acquireLock} from '../state.mjs';
 import {publicationInputs,publicationCheckpointCommands,publicationCodeInputs} from '../publication-plan.mjs';
 
 const temporary=t=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'publication-concurrency-'));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));return dir;};
+test('registered publication resources stay shared across custom date checkpoint directories',t=>{
+  const runtime=temporary(t),entry=new URL('../publish.mjs',import.meta.url);
+  const preview=directory=>JSON.parse(execFileSync(process.execPath,[fileURLToPath(entry),'--date=2026-10-07','--dry-run=true',`--runtime-dir=${directory}`],{encoding:'utf8',windowsHide:true,env:{...process.env,GUANLAN_PUBLICATION_RUNTIME_ROOT:runtime}}));
+  const a=preview(path.join(runtime,'date-a')),b=preview(path.join(runtime,'date-b'));
+  assert.equal(a.resourceRoot,path.join(runtime,'publication-resources'));
+  assert.equal(a.resourceRoot,b.resourceRoot);assert.notEqual(a.directory,b.directory);
+});
 test('release cannot delete a changed owner receipt and legacy dead locks can be recovered',t=>{
   const directory=temporary(t),file=path.join(directory,'run.lock');
   const release=acquireLock(directory);fs.writeFileSync(file,JSON.stringify({pid:process.pid,token:'new-owner'}));release();assert.ok(fs.existsSync(file));fs.unlinkSync(file);
