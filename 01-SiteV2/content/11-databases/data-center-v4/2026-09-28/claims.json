@@ -986,5 +986,27 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
     "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ab66330cfa8c74dd",
+    "raw_id": "RAW-989713ee834d77ca",
+    "claim_type": "funding",
+    "subject": "FluidStack",
+    "predicate": "funding",
+    "object": "closed a $1.5 billion PE round led by Jane Street Capital at an $18 billion valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3e72fcca131ce888"
+    },
+    "source_span": {
+      "raw_id": "RAW-989713ee834d77ca",
+      "start": 778,
+      "end": 878
+    },
+    "source_quote": "FluidStack has closed a $1.5 billion PE round led by Jane Street Capital at an $18 billion valuation",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
   }
 ]

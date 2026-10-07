@@ -1,9 +1,9 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-09-28T03:56:57.973Z",
+  "generated_at": "2026-10-07T12:46:29.873Z",
   "data_date": "2026-09-28",
   "prompt_version": "model-assist-2026-07-18.2",
-  "source_count": 241,
+  "source_count": 242,
   "candidates": [
     {
       "candidate_id": "MAC-01eb273c8f85f211",
@@ -3952,6 +3952,71 @@
         }
       ],
       "generated_at": "2026-09-28T03:56:21.245Z"
+    },
+    {
+      "candidate_id": "MAC-3e72fcca131ce888",
+      "task_type": "qa_repair",
+      "asset_id": "RAW-989713ee834d77ca",
+      "raw_id": "RAW-989713ee834d77ca",
+      "source_ref": "SA-bd74202a75580f93",
+      "source_hash": "32078b20d37ae1a6",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "historical-pr-original-review-20261007",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "Separate the completed PE round from prior rounds, valuation, cumulative funding and customer contracts. Date is source publication, not an independently verified closing date.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "FluidStack",
+            "object": "closed a $1.5 billion PE round led by Jane Street Capital at an $18 billion valuation",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 778,
+          "end": 878,
+          "quote": "FluidStack has closed a $1.5 billion PE round led by Jane Street Capital at an $18 billion valuation"
+        },
+        {
+          "start": 2602,
+          "end": 2724,
+          "quote": "FluidStack pivoted to become a full-stack neocloud: designing, building, and operating dedicated GPU clusters for AI labs."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex historical original-source review",
+        "reviewed_at": "2026-10-07T12:00:00.000Z",
+        "note": "Local factual extraction only; publication approval remains false."
+      },
+      "generated_at": "2026-10-07T12:00:00.000Z"
     }
   ]
 }
