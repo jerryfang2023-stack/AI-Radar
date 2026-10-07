@@ -47,6 +47,12 @@ PR/CI 合并到 main 并完成 Pages 后，运行：
 
 ## 监测后待核验线索
 
+历史处置通过 `verification-dispositions.mjs` 在网络操作前核对：只继承最近七天责任账本中同一URL、同一当前正文hash的明确来源排除，并验证私有原文可解析。当前抓取没有hash不代表内容未变，不借用旧队列hash直接排除；较新的pending审核、私有状态或证据冲突优先保留。`accepted_original`仅代表原文准入，同企业/重复事件断言仍须融资与去重门禁，不作为自动关闭依据。
+
+`FINANCING-DISPOSITION-REVIEW-1` 的 `disposition-review.json` 保存责任人、时间、来源hash和逐字短引；它只处置对应来源，不批准融资、精选或实体合并。`event_not_ai_relevant`等可选QA提示不能单独关闭队列。人工确认排除须有可核查原文；截断或身份不明的证据仍待补。恢复时重新校验处置依据，不能让旧账本盖过更新的保留结论。
+
+既有队列修复可先只读调用 `reconcileDispositions` 生成逐条计划；经审核后在既有写入锁内以 `expectedQueueHash` 应用。只删除通过来源校验的条目，不重采、不调用模型、不改尝试次数，其余队列逐项保持不变。私有 `verification-reconciliations/` 写入准备/应用回执及前后hash；队列变化必须重新规划，禁止把旧快照推回主分支。历史公开生产回执表示当时的结果，当前积压以最新私有队列及后续对账回执为准。
+
 每日480次原文尝试内，为到期队列最多预留32次（不增加预算），按最早入队日期优先核验。采集因预留未抓取的新线索明确记录 `attempted:false`，进入同一后续队列；未使用的预留可在核验阶段供新线索使用。采集调用前预写尝试回执，中断未知结果不得自动重抓。当天采集已接受或排除的旧队列URL也必须对账：排除保存原日期和原因，接受原文仍进入事实与研究门禁；新的责任审核结论优先。
 
 生产顺序为 `collect → verify → 私有证据持久化 → produce`。`verify` 接收已接受采集中的待核验条目，并消费私有 `financing-monitor-state/verification-queue.json` 中到期的后续任务；不重新执行发现查询、不改 collection。直接调用 `--phase=produce` 或 `all` 也先做幂等准备。

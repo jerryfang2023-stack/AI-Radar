@@ -10,6 +10,7 @@ import { buildSourceIntake, mergeSourceIntakes, readSourceIntake, sourceIntakePa
 import { indexFinancingEvidence } from './evidence-index.mjs';
 import { classificationInput, classificationProblems } from './taxonomy.mjs';
 import { captureAllowance } from './capture-budget.mjs';
+import { dispositionResolver } from './verification-dispositions.mjs';
 
 const version = 'FINANCING-VERIFICATION-1';
 const semanticReasons = new Set(['ai_relevance_unverified', 'robotics_core_business_review', 'embodied_or_robotics_core_business_review']);
@@ -52,9 +53,27 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
   // limits are unchanged. Same URL is never retried automatically on another day.
   let remaining = captureAllowance({collection,verification:state,backupRoot,date});
   const processed = new Set();
+  const pendingReviews=new Map();
+  const resolveDisposition=dispositionResolver({root,backupRoot,directory,date});
   const processLead = async ([url, receipt]) => {
     const queued = queue.entries[url];
-    const currentReview = reviewed.get(url);
+    const disposition=resolveDisposition(url,receipt,queued);
+    if(disposition.pending_review)pendingReviews.set(url,disposition.pending_review);
+    if(disposition.action==='close') {
+      processed.add(url);
+      state.entries[url]={...state.entries[url],source_url:url,origin_date:queued?.origin_date || date,
+        status:'excluded',reason:disposition.reason,checks:pendingChecks(),disposition};
+      write(file,state);return;
+    }
+    if((disposition.strict && !disposition.pending_review)
+      || ['newer_private_review_preserved','private_evidence_conflicts_with_collection'].includes(disposition.reason)) {
+      processed.add(url);
+      state.entries[url]={...state.entries[url],source_url:url,origin_date:queued?.origin_date || date,
+        status:'pending',reason:queued?.reason || disposition.reason,checks:pendingChecks(),disposition,
+        ...(queued ? {followup:queued} : {})};
+      write(file,state);return;
+    }
+    const currentReview = pendingReviews.get(url) || reviewed.get(url);
     if (currentReview && (receipt.status !== 'accepted' || !currentReview.status.startsWith('pending'))) receipt = {...receipt,status:'pending'};
     // A current collection disposition must reconcile an existing queue item,
     // even when its next retry is not due. Accepted originals still need gates.
@@ -76,7 +95,7 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
     if (receipt.status !== 'pending') return;
     let row = state.entries[url];
     if (row && row.status !== 'captured' && !currentReview && queued?.last_processed_date >= date && !followupDue(queued,date)) return;
-    const priorReview = reviewed.get(url) || receipt.prior_review;
+    const priorReview = currentReview || receipt.prior_review;
     if (!row || (priorReview && row.review_hash !== digest(priorReview))) {
       processed.add(url);
       row = state.entries[url] = { source_url: url, original_reason: receipt.reason, status: 'pending', reason: receipt.reason, checks: pendingChecks(),
@@ -234,14 +253,14 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
       row.fact_review_completed=queue.entries[url].fact_review_completed;
       continue;
     }
-    if(row.status === 'reviewed' || row.status === 'excluded' || row.status === 'verified' || row.reviewed_status === 'accepted_original') { delete queue.entries[url];continue; }
+    if(row.status === 'reviewed' || row.status === 'excluded' || row.status === 'verified') { delete queue.entries[url];continue; }
     if(row.reason==='alternate_original_requires_identity_review') {
       row.followup={...row,status:'needs_attention',next_due_date:null,last_processed_date:date,
-        prior_review:reviewed.get(url) || queue.entries[url]?.prior_review,owner:'responsible_financing_reviewer',
+        prior_review:pendingReviews.get(url) || reviewed.get(url) || queue.entries[url]?.prior_review,owner:'responsible_financing_reviewer',
         next_action:'review_original_company_and_round_binding_before_supplement'};
     }
     if(!row.followup) {
-      row.followup=deferredFollowup({...row,status:'pending',last_processed_date:date,prior_review:reviewed.get(url) || queue.entries[url]?.prior_review}, date,
+      row.followup=deferredFollowup({...row,status:'pending',last_processed_date:date,prior_review:pendingReviews.get(url) || reviewed.get(url) || queue.entries[url]?.prior_review}, date,
         {attempted:(row.status==='awaiting_fact_review' && !row.resumed_fact_review) || row.attempted === true,reason:row.reason});
     }
     queue.entries[url]=row.followup;
@@ -264,7 +283,19 @@ export function finishVerification({ root, directory, date, backupRoot }) {
   const rawDocuments = read(path.join(factDir, 'raw-documents.json'), []);
   const eventSources = read(path.join(factDir, 'event-sources.json'), []);
   const qa = read(path.join(factDir, 'qa-queue.json'), []);
+  const collection=read(path.join(directory,'collection.json'),{captures:{}});
+  const resolveDisposition=backupRoot ? dispositionResolver({root,backupRoot,directory,date}) : null;
+  const privateQueue=backupRoot ? read(path.join(backupRoot,'financing-monitor-state/verification-queue.json'),{entries:{}}) : {entries:{}};
+  const protectedPrivate=new Set();
   for (const row of Object.values(state.entries)) {
+    if(row.disposition?.action==='close') {
+      const current=resolveDisposition?.(row.source_url,collection.captures[row.source_url],privateQueue.entries[row.source_url]);
+      if(current?.action==='close' && current.proof_hash===row.disposition.proof_hash)continue;
+      if(['newer_private_review_preserved','private_evidence_conflicts_with_collection'].includes(current?.reason)) {
+        row.status='pending';row.reason=privateQueue.entries[row.source_url].reason;row.disposition=current;protectedPrivate.add(row.source_url);continue;
+      }
+      row.status='pending';row.reason='disposition_evidence_changed_restore_review';row.disposition={action:'retain',reason:row.reason};continue;
+    }
     if (!row.raw_ids?.length) continue;
     const sourceIds = new Set(rawDocuments.filter(raw => row.raw_ids.includes(raw.raw_id) && raw.content_hash === row.content_hash).map(raw => raw.source_artifact_id));
     row.fact_review_completed = sourceIds.size > 0;
@@ -301,8 +332,10 @@ export function finishVerification({ root, directory, date, backupRoot }) {
     const queueFile=path.join(backupRoot,'financing-monitor-state/verification-queue.json');
     const queue=read(queueFile,{version:'FINANCING-VERIFICATION-QUEUE-1',entries:{}});
     for(const [url,row] of Object.entries(state.entries)) {
+      if(protectedPrivate.has(url))continue;
       if(['verified','excluded','reviewed'].includes(row.status))delete queue.entries[url];
       else if(queue.entries[url]) {queue.entries[url].reason=row.reason;queue.entries[url].fact_review_completed=row.fact_review_completed;row.followup=queue.entries[url];}
+      else if(row.reason==='disposition_evidence_changed_restore_review')queue.entries[url]=deferredFollowup({...row,last_processed_date:date},date,{reason:row.reason});
     }
     write(queueFile,queue);
   }

@@ -1,0 +1,2799 @@
+{
+  "version": "FINANCING-DISPOSITION-RECONCILIATION-1",
+  "date": "2026-10-07",
+  "status": "dry_run",
+  "collection_hash": "8f2d33e592aee6d99a0a95e7499f91d6c4afb0794fae43d71dfa1e30d099643c",
+  "before_hash": "12c290866b05e6be8f9bc95bc9be90c74e4ac58601e97ce710446f71129f1568",
+  "after_hash": "848a06a3b748aa9a15c0174153882b96fdec607a25840cf59999a8b6a93d5fd0",
+  "before_count": 266,
+  "after_count": 245,
+  "closed_count": 21,
+  "network_calls": 0,
+  "rows": [
+    {
+      "url": "https://m.caizhongshe.cn/news-7510658399295173952.html",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#55",
+      "reviewed_status": "pending_event_details",
+      "strict": false,
+      "pending_review": {
+        "id": 55,
+        "url": "https://m.caizhongshe.cn/news-7510658399295173952.html",
+        "title": "恩华药业：参股公司好欣晴拟引入2.62亿元增资加码人工智能心理陪伴机器人",
+        "status": "pending_event_details",
+        "reason": "好欣晴为拟增资2.62亿元；消费AI陪伴硬件在范围内，但须补正式完成融资证据，不能按已完成发布。",
+        "original_capture": {
+          "status": "captured",
+          "content_hash": "e0e46a0284f81e78f471e3c9d99ef3cc6affd31b43290dc66b843dec95f05192",
+          "date": "",
+          "body_length": 1037
+        },
+        "review_basis": "original_text_and_review",
+        "assist_used": true,
+        "reviewed_at": "2026-10-06T04:15:55.770Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20261005035318/en/Leading-AI-Investor-Menlo-Ventures-Invests-in-Factory",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#75",
+      "reviewed_status": "pending_event_details",
+      "strict": false,
+      "pending_review": {
+        "id": 75,
+        "url": "https://www.businesswire.com/news/home/20261005035318/en/Leading-AI-Investor-Menlo-Ventures-Invests-in-Factory",
+        "title": "Leading AI Investor Menlo Ventures Invests in Factory",
+        "status": "pending_event_details",
+        "reason": "Menlo对Factory的新增投资公告需与已收录9月15日2亿美元轮次对齐；先不重复创建。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:55.848Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260929474279/en/Pagaya-Secures-First-Variable-Funding-Note-Facility-with-ATLAS-SP-Partners-Advancing-Long-Term-Committed-Capital-Strategy",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#77",
+      "reviewed_status": "pending_event_details",
+      "strict": false,
+      "pending_review": {
+        "id": 77,
+        "url": "https://www.businesswire.com/news/home/20260929474279/en/Pagaya-Secures-First-Variable-Funding-Note-Facility-with-ATLAS-SP-Partners-Advancing-Long-Term-Committed-Capital-Strategy",
+        "title": "Pagaya Secures First Variable Funding Note Facility with ATLAS SP Partners, Advancing Long-Term Committed Capital Strategy",
+        "status": "pending_event_details",
+        "reason": "Pagaya为Variable Funding Note资金安排；需区分底层贷款资产融资与企业自身融资。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:55.850Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260930237631/en/Tangent-Robotics-Raises-4.5M-in-Pre-seed-Funding-to-Advance-Fine-Motor-Skills-for-Robot-Dexterity",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#79",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 79,
+        "url": "https://www.businesswire.com/news/home/20260930237631/en/Tangent-Robotics-Raises-4.5M-in-Pre-seed-Funding-to-Advance-Fine-Motor-Skills-for-Robot-Dexterity",
+        "title": "Tangent Robotics Raises 4.5M in Pre-seed Funding to Advance Fine Motor Skills for Robot Dexterity",
+        "status": "pending_ai_scope",
+        "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+        "original_capture": {
+          "status": "failed",
+          "error": "unreadable_original",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:55.851Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/eden-ai-labs-inc-raises-163000905.html",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#99",
+      "reviewed_status": "pending_company_identity",
+      "strict": false,
+      "pending_review": {
+        "id": 99,
+        "url": "https://finance.yahoo.com/technology/ai/articles/eden-ai-labs-inc-raises-163000905.html",
+        "title": "Eden AI Labs Inc. Raises $1.5M to Build Personal AI That Works for Everyone",
+        "status": "pending_company_identity",
+        "reason": "融资公告已归档，但公司身份、产品与官网对应仍需独立证据；未通过发布条件。",
+        "company": "Eden AI Labs",
+        "raw_id": "RAW-ff88833d9eb4e981",
+        "accepted_source": "https://www.globenewswire.com/news-release/2026/10/05/3374883/0/en/eden-ai-labs-inc-raises-1-5m-to-build-personal-ai-that-works-for-everyone.html",
+        "accepted_date": "2026-10-05",
+        "content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "alternate_source_review",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:55.969Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.robotics247.com/article/tutor_intelligence_raises_34m_series_a_to_scale_ai_powered_warehouse_robot_worker_fleet",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#104",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 104,
+        "url": "https://www.robotics247.com/article/tutor_intelligence_raises_34m_series_a_to_scale_ai_powered_warehouse_robot_worker_fleet",
+        "title": "Tutor Intelligence raises $34M Series A to scale AI ...",
+        "status": "pending_ai_scope",
+        "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:55.980Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.theinformation.com/newsletters/ai-agenda/exclusive-reframe-raises-funds-bring-amazon-robotics-know-home-building",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#106",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 106,
+        "url": "https://www.theinformation.com/newsletters/ai-agenda/exclusive-reframe-raises-funds-bring-amazon-robotics-know-home-building",
+        "title": "Reframe Raises Funds to Bring Amazon Robotics Know- ...",
+        "status": "pending_ai_scope",
+        "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:55.982Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/londons-foundational-exits-stealth-with-e9-6-million-to-track-satellites-and-debris-with-millimetre-level-precision/",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#116",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 116,
+        "url": "https://www.eu-startups.com/2026/10/londons-foundational-exits-stealth-with-e9-6-million-to-track-satellites-and-debris-with-millimetre-level-precision/",
+        "title": "London’s Foundational exits stealth with €9.6 million to track satellites and debris with “millimetre-level” precision",
+        "status": "pending_ai_scope",
+        "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.033Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/09/everphone-secures-e15-million-to-finance-new-devices-for-corporate-customers/",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#117",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 117,
+        "url": "https://www.eu-startups.com/2026/09/everphone-secures-e15-million-to-finance-new-devices-for-corporate-customers/",
+        "title": "Everphone secures €15 million to finance new devices for corporate customers",
+        "status": "pending_ai_scope",
+        "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.034Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/09/paris-based-inbolt-raises-e11-million-to-give-industrial-robots-real-time-vision-and-intelligence/",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#118",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 118,
+        "url": "https://www.eu-startups.com/2026/09/paris-based-inbolt-raises-e11-million-to-give-industrial-robots-real-time-vision-and-intelligence/",
+        "title": "Paris-based Inbolt raises €11 million to give industrial robots real-time vision and intelligence",
+        "status": "pending_ai_scope",
+        "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.035Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/fashiontech-startup-rodinia-generation-aims-to-save-100-billion-litres-of-water-annually-secures-e4-million/",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#119",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 119,
+        "url": "https://www.eu-startups.com/2026/10/fashiontech-startup-rodinia-generation-aims-to-save-100-billion-litres-of-water-annually-secures-e4-million/",
+        "title": "FashionTech startup Rodinia Generation aims to save 100 billion litres of water annually, secures €4 million",
+        "status": "pending_ai_scope",
+        "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.036Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.chinaventure.com.cn/news/80-20260927-393454.html",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#130",
+      "reviewed_status": "pending_event_details",
+      "strict": false,
+      "pending_review": {
+        "id": 130,
+        "url": "https://www.chinaventure.com.cn/news/80-20260927-393454.html",
+        "title": "“包养式融资”，估值1200亿 6天前 8",
+        "status": "pending_event_details",
+        "reason": "Fluidstack报道混合15亿美元新轮次、7.5/8.3亿美元扩展及估值；原始披露日期/扩展轮关系待核对，不能以综述9月27日作为新轮日期。",
+        "original_capture": {
+          "status": "captured",
+          "content_hash": "2edd8c69e6a4476de9ac55055454cbca5f710d63df1a444ab206e7a02e576a6b",
+          "date": "",
+          "body_length": 4843
+        },
+        "review_basis": "original_text_and_review",
+        "assist_used": true,
+        "reviewed_at": "2026-10-06T04:15:56.053Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://tech.eu/2026/09/30/inbolt-raises-eur11m-to-bring-real-time-vision-and-intelligence-to-industrial-robots/",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#159",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 159,
+        "url": "https://tech.eu/2026/09/30/inbolt-raises-eur11m-to-bring-real-time-vision-and-intelligence-to-industrial-robots/",
+        "title": "Inbolt raises €11M to bring real-time vision and intelligence to industrial robots",
+        "status": "pending_ai_scope",
+        "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+        "original_capture": {
+          "status": "captured",
+          "content_hash": "8fcbfb64c649c9325b80ec722f89c0ab3a53cf54ee8b111a23f153ba206b6c8b",
+          "date": "2026-09-30",
+          "body_length": 490
+        },
+        "review_basis": "original_text_and_review",
+        "assist_used": true,
+        "reviewed_at": "2026-10-06T04:15:56.154Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://tech.eu/2026/09/30/blackswan-space-raises-eur25m-to-take-autonomous-spacecraft-navigation-into-orbit/",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#161",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 161,
+        "url": "https://tech.eu/2026/09/30/blackswan-space-raises-eur25m-to-take-autonomous-spacecraft-navigation-into-orbit/",
+        "title": "Blackswan Space raises €2.5M to take autonomous spacecraft navigation into orbit",
+        "status": "pending_ai_scope",
+        "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+        "original_capture": {
+          "status": "captured",
+          "content_hash": "f4759c012f0b22341e53be7cc722aff2bdcd0fa6f81d8f0bd44bb784f81a8b82",
+          "date": "2026-09-30",
+          "body_length": 484
+        },
+        "review_basis": "original_text_and_review",
+        "assist_used": true,
+        "reviewed_at": "2026-10-06T04:15:56.167Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://tech.eu/2026/10/01/foundational-secures-ps82m-pre-seed-as-it-emerges-from-stealth/",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#162",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 162,
+        "url": "https://tech.eu/2026/10/01/foundational-secures-ps82m-pre-seed-as-it-emerges-from-stealth/",
+        "title": "Foundational secures £8.2M pre-seed as it emerges from stealth",
+        "status": "pending_ai_scope",
+        "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+        "original_capture": {
+          "status": "captured",
+          "content_hash": "66bcb4badee7400a0a2008f1dfe4d0761bbabf652c02f5b932d49a428d932698",
+          "date": "2026-10-01",
+          "body_length": 513
+        },
+        "review_basis": "original_text_and_review",
+        "assist_used": true,
+        "reviewed_at": "2026-10-06T04:15:56.169Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.finsmes.com/2026/10/unveilr-ai-raises-usd1-74m-in-pre-seed-funding.html",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#183",
+      "reviewed_status": "pending_event_details",
+      "strict": false,
+      "pending_review": {
+        "id": 183,
+        "url": "https://www.finsmes.com/2026/10/unveilr-ai-raises-usd1-74m-in-pre-seed-funding.html",
+        "title": "Unveilr AI Raises USD1.74M in Pre-Seed Funding",
+        "status": "pending_event_details",
+        "reason": "Unveilr原已收录预种子轮且金额未披露；当前来源声称174万美元，与原始“16.7 crore估值”口径冲突，保持现有金额，需发行方核实。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.198Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260930886227/en/GMI-Cloud-Raises-Over-%24660-Million-to-Accelerate-Global-AI-Infrastructure-Expansion",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#184",
+      "reviewed_status": "pending_event_details",
+      "strict": false,
+      "pending_review": {
+        "id": 184,
+        "url": "https://www.businesswire.com/news/home/20260930886227/en/GMI-Cloud-Raises-Over-%24660-Million-to-Accelerate-Global-AI-Infrastructure-Expansion",
+        "title": "GMI Cloud Raises Over $660 Million to Accelerate Global ...",
+        "status": "pending_event_details",
+        "reason": "GMI Cloud已收录2.23亿美元股权B轮；6.6/6.68亿美元标题还包括约4.45亿美元信贷，不能覆盖股权金额或再计同轮，信贷部分待独立核验。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.198Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260930319904/en/Inbolt-Raises-%2412.5M-to-Bring-Sight-and-Intelligence-to-Industrial-Robots-From-Stellantis-and-Toyota-to-Data-Centers",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#185",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 185,
+        "url": "https://www.businesswire.com/news/home/20260930319904/en/Inbolt-Raises-%2412.5M-to-Bring-Sight-and-Intelligence-to-Industrial-Robots-From-Stellantis-and-Toyota-to-Data-Centers",
+        "title": "Inbolt Raises $12.5M to Bring Sight and Intelligence to Industrial Robots, From Stellantis and Toyota to Data Centers",
+        "status": "pending_ai_scope",
+        "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+        "original_capture": {
+          "status": "failed",
+          "error": "unreadable_original",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.199Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.bloomberg.com/news/videos/2026-10-02/lockheed-backs-fortem-s-counter-drone-push-video",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#191",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 191,
+        "url": "https://www.bloomberg.com/news/videos/2026-10-02/lockheed-backs-fortem-s-counter-drone-push-video",
+        "title": "Lockheed Backs Fortem’s Counter-Drone Push",
+        "status": "pending_ai_scope",
+        "reason": "线索涉及机器人控制、工业视觉、无人机/防务；需完整产品原文确认主营排除边界，访问失败本身不是排除依据。",
+        "original_capture": {
+          "status": "failed",
+          "error": "fetch failed",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.247Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E8%93%9D%E8%89%B2%E6%B6%8C%E7%8E%B0%E5%AE%8C%E6%88%90%E6%95%B0%E5%8D%83%E4%B8%87%E5%85%83%E5%A4%A9%E4%BD%BF%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E8%81%94%E5%90%88%E9%A2%86%E6%8A%95",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#200",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 200,
+        "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E8%93%9D%E8%89%B2%E6%B6%8C%E7%8E%B0%E5%AE%8C%E6%88%90%E6%95%B0%E5%8D%83%E4%B8%87%E5%85%83%E5%A4%A9%E4%BD%BF%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E8%81%94%E5%90%88%E9%A2%86%E6%8A%95",
+        "title": "启明星 | 蓝色涌现完成数千万元天使+轮融资，启明创投联合领投",
+        "status": "pending_ai_scope",
+        "reason": "投资方原文将AI描述为未来长期探索，现有电助力渔轮尚缺AI产品依据；保留补证，未因消费硬件排除。",
+        "original_capture": {
+          "status": "captured",
+          "content_hash": "4150047923ed2931a6f0dfd82e8f932909c56fc449a5b4793b9aa000dde91d2d",
+          "date": "",
+          "body_length": 2537
+        },
+        "review_basis": "original_text_and_review",
+        "assist_used": true,
+        "reviewed_at": "2026-10-06T04:15:56.268Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://yourstory.com/2026/09/willjini-raises-first-round-35m-valuation-without-pitching-single-vc",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#204",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 204,
+        "url": "https://yourstory.com/2026/09/willjini-raises-first-round-35m-valuation-without-pitching-single-vc",
+        "title": "WillJini raises first round at $3.5M valuation, without pitching a single VC",
+        "status": "pending_ai_scope",
+        "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.272Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://yourstory.com/2026/09/ev-two-wheeler-maker-simple-energy-bags-rs-1750-cr-funding",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#205",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 205,
+        "url": "https://yourstory.com/2026/09/ev-two-wheeler-maker-simple-energy-bags-rs-1750-cr-funding",
+        "title": "EV two-wheeler maker Simple Energy bags Rs 1,750 Cr funding",
+        "status": "pending_ai_scope",
+        "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.273Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://yourstory.com/2026/09/shreshth-mishra-simple-energy-rs-1750-cr-pivot-scale-across-india",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#207",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 207,
+        "url": "https://yourstory.com/2026/09/shreshth-mishra-simple-energy-rs-1750-cr-pivot-scale-across-india",
+        "title": "Simple Energy bets Rs 1,750 Cr fundraise on clearing delivery backlog, scaling across India",
+        "status": "pending_ai_scope",
+        "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.283Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://yourstory.com/2026/10/seeds-fincap-rs-100-cr-series-b-round-michael-susan-dell-foundation",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#208",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 208,
+        "url": "https://yourstory.com/2026/10/seeds-fincap-rs-100-cr-series-b-round-michael-susan-dell-foundation",
+        "title": "Seeds Fincap secures over Rs 100 Cr in Series B led by Michael & Susan Dell Foundation",
+        "status": "pending_ai_scope",
+        "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.284Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://yourstory.com/2026/10/tvs-automobile-solutions-raises-rs-425-cr-uae-investor-expand-mytvs",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#209",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 209,
+        "url": "https://yourstory.com/2026/10/tvs-automobile-solutions-raises-rs-425-cr-uae-investor-expand-mytvs",
+        "title": "TVS Automobile Solutions raises Rs 425 Cr from UAE investor to expand myTVS brand",
+        "status": "pending_ai_scope",
+        "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+        "original_capture": {
+          "status": "failed",
+          "error": "original_http_403",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.286Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.techinasia.com/news/nvidia-joins-ai-cloud-startup-gmi-clouds-668m",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#217",
+      "reviewed_status": "pending_event_details",
+      "strict": false,
+      "pending_review": {
+        "id": 217,
+        "url": "https://www.techinasia.com/news/nvidia-joins-ai-cloud-startup-gmi-clouds-668m",
+        "title": "Nvidia joins AI cloud startup GMI Cloud’s $668m round",
+        "status": "pending_event_details",
+        "reason": "GMI Cloud已收录2.23亿美元股权B轮；6.6/6.68亿美元标题还包括约4.45亿美元信贷，不能覆盖股权金额或再计同轮，信贷部分待独立核验。",
+        "original_capture": {
+          "status": "failed",
+          "error": "unreadable_original",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.306Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.techinasia.com/news/indian-lending-tech-firm-seeds-fincap-raises-10-4m-series-b",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#218",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 218,
+        "url": "https://www.techinasia.com/news/indian-lending-tech-firm-seeds-fincap-raises-10-4m-series-b",
+        "title": "Indian lending tech firm Seeds Fincap raises $10.4m series B",
+        "status": "pending_ai_scope",
+        "reason": "融资线索存在，但尚无足够的主体AI产品/主营原文证据；不能仅凭“智能”、AI客户或AI行业背景纳入。",
+        "original_capture": {
+          "status": "failed",
+          "error": "unreadable_original",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.306Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.techinasia.com/news/softbank-completes-final-10b-openai-investment",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#219",
+      "reviewed_status": "pending_event_details",
+      "strict": false,
+      "pending_review": {
+        "id": 219,
+        "url": "https://www.techinasia.com/news/softbank-completes-final-10b-openai-investment",
+        "title": "SoftBank completes final $10b OpenAI investment",
+        "status": "pending_event_details",
+        "reason": "SoftBank对OpenAI最后100亿美元分期交割需与原承诺轮次核对；不能按新轮重复计数。",
+        "original_capture": {
+          "status": "failed",
+          "error": "unreadable_original",
+          "body_length": 0
+        },
+        "review_basis": "discovery_triage_only",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.307Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://www.techinasia.com/news/singapore-fintech-firm-ipid-raises-16m-series",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#229",
+      "reviewed_status": "pending_ai_scope",
+      "strict": false,
+      "pending_review": {
+        "id": 229,
+        "url": "https://www.techinasia.com/news/singapore-fintech-firm-ipid-raises-16m-series",
+        "title": "Singapore fintech firm IPID raises $16m series A",
+        "status": "pending_ai_scope",
+        "reason": "已核对IPID 1600万美元A轮官方公告及Payment Agent产品页；当前页面描述对话支付、验证与自动化，仍需补直接AI模型/技术证据，避免把payment intelligence等同AI。",
+        "additional_source": "https://ipid.tech/news/ipid-raises-16m-series-a-foundation-capital-citi-hsbc",
+        "product_source": "https://ipid.tech/payment-agent-payee-verification",
+        "original_capture": {
+          "status": "failed",
+          "error": "unreadable_original",
+          "body_length": 0
+        },
+        "review_basis": "alternate_source_review",
+        "assist_used": false,
+        "reviewed_at": "2026-10-06T04:15:56.317Z",
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-06",
+        "ledger": "agent-workflow/reports/financing/2026-10-06/pending247-review.json",
+        "strict": false
+      }
+    },
+    {
+      "url": "https://x.com/rohanpaul_ai/status/2107361452428611741",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://x.com/rohanpaul_ai/status/2107339096976965868",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.artificialintelligence-news.com/news/17-countries-ai-priorities-for-government-science-research/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#1",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://www.ithome.com/1/009/746.htm",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#2",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:55.625Z",
+        "reviewed_status": "excluded_robotics",
+        "review_reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+        "review_hash": "6f1886c9ca9d8a0303ae5ffce45b91d8a1aeb090ed8ed7e99bee4086fcf41666",
+        "source_url": "https://www.ithome.com/1/009/746.htm",
+        "content_hash": "135b03d3e153ddfe4197e3f316e5b64d82eb2b765b52735931c74c3e84ab7074",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.ithome.com/1/009/746.htm",
+            "content_hash": "135b03d3e153ddfe4197e3f316e5b64d82eb2b765b52735931c74c3e84ab7074"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "5f9ec4b95f24e92fa532e5ec4c3f7469563611b44e110846383623541485f0be"
+    },
+    {
+      "url": "https://www.ithome.com/1/009/268.htm",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#3",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:55.628Z",
+        "reviewed_status": "not_financing",
+        "review_reason": "GamePatch 产品/服务介绍，未取得已完成融资事件，不纳入融资卡。",
+        "review_hash": "9b350f0e284af9d569407de1cfd8705ec8ce40172016aa2967e51c8d720c664b",
+        "source_url": "https://www.ithome.com/1/009/268.htm",
+        "content_hash": "b9f3094675f5e108248454b5e271dc89a6ae4950dc20bdb18d663663e195750f",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.ithome.com/1/009/268.htm",
+            "content_hash": "b9f3094675f5e108248454b5e271dc89a6ae4950dc20bdb18d663663e195750f"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "3d2ff1eb5fa2e06969ecf760cbace74030bc29d507e7a2250da8abe3a5f6cb99"
+    },
+    {
+      "url": "https://x.com/omarsar0/status/2105825963015905509",
+      "action": "retain",
+      "reason": "review_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#4",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://x.com/swyx/status/2105348724331606411",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#5",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://x.com/ElevenLabs/status/2105332239316000886",
+      "action": "retain",
+      "reason": "review_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#6",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://techcrunch.com/2026/09/30/destro-ais-secret-sauce-is-getting-robots-and-humans-on-the-same-page/",
+      "action": "retain",
+      "reason": "reviewed_original_changed",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#7",
+      "reviewed_status": "excluded_robotics",
+      "strict": false
+    },
+    {
+      "url": "https://www.pedaily.cn/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#21",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://eu.36kr.com/zh/p/3977429406832520",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/2070196631924897421",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://m.36kr.com/p/3917563544573831",
+      "action": "retain",
+      "reason": "original_acceptance_requires_fact_and_funding_gates",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#11",
+      "reviewed_status": "accepted_original",
+      "strict": false
+    },
+    {
+      "url": "https://m.36kr.com/p/4005820797325442",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#13",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://m.36kr.com/p/3878416087445509",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://m.36kr.com/p/4010869541736323",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#109",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://m.36kr.com/p/3934449071406212",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://36kr.com/p/4012394459451264",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://m.36kr.com/p/4007221028475014",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://m.36kr.com/p/4001313474645888",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.itjuzi.com/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#19",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://cdn.itjuzi.com/pdf/bcc04406cf9c6a61880816eca5e47275.pdf",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#20",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://news.pedaily.cn/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#22",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://pe.pedaily.cn/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#23",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.pedaily.cn/media/m1424/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.pedaily.cn/media/m830/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#24",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.pedaily.cn/i-ai/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#25",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://special.cyzone.cn/content/channel/index?channel_id=5",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://m.cyzone.cn/label/AI%E6%BD%AE%E7%8E%A9",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://m.cyzone.cn/article/848060.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#31",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://app.xinhuanet.com/news/article.html?articleId=202608070acf468e938f4251a16e5215c82b3698",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.cls.cn/detail/1886840",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#34",
+      "reviewed_status": "historical_before_2026",
+      "strict": false
+    },
+    {
+      "url": "http://m.algcpost.com/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/2076381451608657998",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://data.eastmoney.com/stockdata/688676.html",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://stockpage.10jqka.com.cn/688349/event/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/2082789026164229785",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://caifuhao.eastmoney.com/news/20260312161731019764100",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.niutoushe.com/lives",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#50",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.forbes.com/lists/ai50/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#36",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.bilibili.com/video/BV1ZxHJ6kEQU/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://tech.ifeng.com/c/8wwuwhA95qZ",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.chinastarmarket.cn/detail/2498195",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://bydrug.pharmcube.com/news/detail/8e01549f85cf852f6d47371afee3b34f",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.phirda.com/artilce_30312.html?cId=1",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://m.36kr.com/p/3952802534161793",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.healthcarechn.com/h-nd-2576.html",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.iyiou.com/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#152",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://m.36kr.com/p/3884251152412929",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#45",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.laernoc.com/newsinfo/1844273797960699905",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://danjuanfunds.com/funding/022184",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://m.36kr.com/p/3889732477860357",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#48",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/2022991433624219691",
+      "action": "retain",
+      "reason": "original_acceptance_requires_fact_and_funding_gates",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#49",
+      "reviewed_status": "accepted_original",
+      "strict": false
+    },
+    {
+      "url": "https://www.abvr360.com/a/30247",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/1970145591477634011",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://m.36kr.com/p/3581087180618628",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/2057408918066815779",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.iyiou.com/news/202508251107104",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.jiemian.com/article/13366456.html",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://m.36kr.com/p/3599611293696003",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/1993246511304290313",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://mp.ofweek.com/home",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://money.finance.sina.com.cn/corp/go.php/vCI_CorpOtherInfo/stockid/603296.phtml",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://basic.10jqka.com.cn/300657/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://finance.sina.com.cn/tech/csj/2026-10-01/doc-initstum2118178.shtml",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://m.ofweek.com/ai/2026-04/ART-201717-8120-30684345.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#60",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://m.caixin.com/m/2026-04-21/102436551.html",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://aicshow.cn/news/561.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#59",
+      "reviewed_status": "excluded_robotics",
+      "strict": false
+    },
+    {
+      "url": "https://www.stcn.com/article/detail/3925507.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#65",
+      "reviewed_status": "excluded_robotics",
+      "strict": false
+    },
+    {
+      "url": "https://www.robotsj.cn/shichangdongtai/1741.html",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.evsint.com/zh-CN/publicly-traded-humanoid-robot-companies-2026-investor-guide/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.leaderobot.com/news/8658",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#64",
+      "reviewed_status": "excluded_robotics",
+      "strict": false
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=j-ASrjzXcAQ",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#67",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://finance.yahoo.com/sectors/technology/articles/q1-2026-ai-funding-blows-175036425.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#70",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://m.techcrunch.com/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://techcrunch.com/tag/funding/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.businesswire.com/newsroom/subject/funding",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.businesswire.com/newsroom/industry/venture-capital",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20261006302495/en/Torch-Systems-Raises-%2411.5-Million-to-Bring-AI-to-the-Physical-Infrastructure-the-World-Depends-On",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20261006531461/en/Hadrian-Raises-%2440M-to-Tackle-the-AI-Hacking-Cyber-Security-Crisis",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20261006307372/en/Vinci-Raises-%24250M-Series-B-at-%241.5B-Valuation-to-Build-the-Intelligence-Infrastructure-for-a-New-Era-of-Hardware-Engineering",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20261005810960/en/SiMa.ai-and-Wobot.ai-Partner-to-Bring-Reasoning-Based-Video-Analytics-for-Physical-AI",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#74",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://www.prnewswire.com/apac/news-releases/financial-services-latest-news/venture-capital-list/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/hamburgs-procuros-raises-e20-million-series-a-to-build-ai-native-infrastructure-for-autonomous-b2b-trade",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/berlin-based-kuro-raises-e10-million-to-build-the-ai-foundation-for-general-contractors",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#81",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/french-cybersecurity-startup-fleuret-ai-raises-e4-million-to-automate-penetration-testing-with-ai-agents",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#82",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/london-amsterdam-based-hadrian-raises-e35-68-million-to-scale-its-agentic-ai-offensive-security-platform",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.eu-startups.com/category/fundin",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://openai.com/index/accelerating-the-next-phase-ai/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.spglobal.com/energy/en/technology-ai-research-insights/blogs/generative-ai-funding-a-sober-retrospective-and-the-trends-shaping-2026",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://intellizence.com/insights/startup-funding/startup-funding-trends-july-2026-ai-infrastructure-and-robotics/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#86",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://valueaddvc.com/pulse/sectors/ai-infrastructure",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/jesselandry23_compute-tradeableassets-pricing-activity-7400603710055145472-3WxO",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.semiconductor-today.com/news_items/2026/jul/aeluma-300726.shtml",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://projectstartups.com/pages/semiconductors/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.hpcwire.com/aiwire/2026/09/16/typesafe-ai-emerges-from-stealth-with-40m-in-funding-with-new-model-for-composable-ai/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://aifunding.me/deals",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/enterprise-ai-agent-funding-surges-093104627.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#89",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.hpcwire.com/aiwire/2026/07/16/fireworks-raises-1-5b-to-expand-enterprise-ai-model-platform/",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#90",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://aibusiness.com/cybersecurity/startup-focused-enterprise-ai-security-valued-1-2-billion",
+      "action": "retain",
+      "reason": "original_acceptance_requires_fact_and_funding_gates",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#93",
+      "reviewed_status": "accepted_original",
+      "strict": false
+    },
+    {
+      "url": "https://leadmagic.io/funded-startups/series-a-biotech",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://grantedai.com/grants/ai-healthcare",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://aifundingtracker.com/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www2.fundsforngos.org/listing/funding-the-future-top-ai-technology-and-digital-transformation-opportunities/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.anarchistfederation.net/ep20-black-flags-in-the-flood-katrina-common-ground-and-what-the-state-left-to-drown/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://pitchhub.36kr.com/financing-flash",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#108",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://news.pedaily.cn/202609/569806.shtml",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#111",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.000Z",
+        "reviewed_status": "excluded_robotics",
+        "review_reason": "原文主营为具身智能、机器人本体、机器人控制/VLA或触觉核心部件；按当前融资边界排除。",
+        "review_hash": "ef826de8b97d0b5942e8762bb123b58dd045129d02040aeecd09066ddcd90766",
+        "source_url": "https://news.pedaily.cn/202609/569806.shtml",
+        "content_hash": "b78f83bd53ecb3584adf5847346ff6086610f3cd2535aad0e4ec28c52ab56e04",
+        "evidence_sources": [
+          {
+            "source_url": "https://news.pedaily.cn/202609/569806.shtml",
+            "content_hash": "b78f83bd53ecb3584adf5847346ff6086610f3cd2535aad0e4ec28c52ab56e04"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "0b6fcf3140418f1e7818f0507470f99104d022b176878c4bc4d8d2d226c6fee7"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/linc-stockholders-have-rights--if-you-lost-money-investing-in-lincoln-education-services-corporation-contact-robbins-llp-for-information-about-recovering-your-losses-302896535.html",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#112",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.012Z",
+        "reviewed_status": "not_financing",
+        "review_reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+        "review_hash": "b6a6c1108591c0d96bcab519ef4d58895bb8d27d705f3cfa0123bb368be19ea5",
+        "source_url": "https://www.prnewswire.com/news-releases/linc-stockholders-have-rights--if-you-lost-money-investing-in-lincoln-education-services-corporation-contact-robbins-llp-for-information-about-recovering-your-losses-302896535.html",
+        "content_hash": "a5881fa66cd1f3b5798ac3a49b41424b37758f6d048e9d7cbe5a496c46b5a174",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.prnewswire.com/news-releases/linc-stockholders-have-rights--if-you-lost-money-investing-in-lincoln-education-services-corporation-contact-robbins-llp-for-information-about-recovering-your-losses-302896535.html",
+            "content_hash": "a5881fa66cd1f3b5798ac3a49b41424b37758f6d048e9d7cbe5a496c46b5a174"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "6e8833b77ca5480089fbef8ef2939c9dab8b59324d9a4e484771f7a1c65dc59f"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/aegea-releases-3q26-funding-update-302897531.html",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#113",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.022Z",
+        "reviewed_status": "not_ai_evidence",
+        "review_reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+        "review_hash": "0a8b5364c2a13cf2046ef2440e8a48fb054518295788e6f65b3813f11cd28b84",
+        "source_url": "https://www.prnewswire.com/news-releases/aegea-releases-3q26-funding-update-302897531.html",
+        "content_hash": "d647b969b68ab12f9b84343c220c076352141b1afde8aca827985ca60f458552",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.prnewswire.com/news-releases/aegea-releases-3q26-funding-update-302897531.html",
+            "content_hash": "d647b969b68ab12f9b84343c220c076352141b1afde8aca827985ca60f458552"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "49e80d7ffd8dbd60c52478837cba7cba56a86aeae4c0088b29f17defb13a196c"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/bc-partners-credit-announces-initial-investment-in-liv-golf-marking-the-next-step-toward-a-financially-strong-team-focused-golf-league-302899061.html",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#114",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.030Z",
+        "reviewed_status": "not_ai_evidence",
+        "review_reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+        "review_hash": "182aea3a52ea932d713c0665b75570f54062cb1a003950939eb42976eef673fa",
+        "source_url": "https://www.prnewswire.com/news-releases/bc-partners-credit-announces-initial-investment-in-liv-golf-marking-the-next-step-toward-a-financially-strong-team-focused-golf-league-302899061.html",
+        "content_hash": "4891fb1d9cdd34cbed0b29cbc071222529fccf4559f22690b35e35b62e21972c",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.prnewswire.com/news-releases/bc-partners-credit-announces-initial-investment-in-liv-golf-marking-the-next-step-toward-a-financially-strong-team-focused-golf-league-302899061.html",
+            "content_hash": "4891fb1d9cdd34cbed0b29cbc071222529fccf4559f22690b35e35b62e21972c"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "15237e27ff4c5493c4bdc181f06aa945d1fd04753b5b7b10d78ec53d6a99e566"
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/londons-metaview-raises-e53-1-million-series-c-led-by-insight-partners-to-scale-its-agentic-recruiting-platform/",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#115",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/namespace-secures-e37-million-to-scale-coding-build-and-test-infrastructure-across-mac-windows-and-linux/",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#120",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/french-cybersecurity-startup-fleuret-ai-raises-e4-million-to-automate-penetration-testing-with-ai-agents/",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#121",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/copenhagens-pandektes-raises-e13-5-million-to-build-the-data-infrastructure-for-ai-powered-legal-research/",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#122",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/weekly-funding-round-up-all-of-the-european-startup-funding-rounds-we-tracked-this-week-sept-28-oct-02/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/up-to-27-times-lower-carbon-footprint-than-beef-edonia-raises-e15-million-for-their-meat-alternative/",
+      "action": "close",
+      "reason": "responsible_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-07/disposition-review.json#edonia-eu",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-07T06:29:39.002Z",
+        "reviewed_status": "not_ai_evidence",
+        "review_reason": "当前原文明确融资主体为微藻蛋白食品原料供应商，资金用于原料产能与食品客户；不是AI产品或AI主营企业。本条按该原文排除，不对企业未来业务作永久判断。",
+        "review_hash": "5773168d550a082d6060edf8847b9b4653349e2ef5e603b1ee49b3f4a27e974a",
+        "source_url": "https://www.eu-startups.com/2026/10/up-to-27-times-lower-carbon-footprint-than-beef-edonia-raises-e15-million-for-their-meat-alternative/",
+        "content_hash": "474a8b6a5b6cb64e4f2addc7d0aa7d4c2a9730f2c74b83b675e77c05ab0341ae",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.eu-startups.com/2026/10/up-to-27-times-lower-carbon-footprint-than-beef-edonia-raises-e15-million-for-their-meat-alternative/",
+            "content_hash": "474a8b6a5b6cb64e4f2addc7d0aa7d4c2a9730f2c74b83b675e77c05ab0341ae",
+            "quote": "develops ready-to-eat protein ingredients made from microalgae"
+          }
+        ],
+        "valid_through": "2026-10-14"
+      },
+      "proof_hash": "adfd9afade60f63fd6125f4d15993e07790b802c348d21690971fa4833c90ee9"
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/hamburgs-procuros-raises-e20-million-series-a-to-build-ai-native-infrastructure-for-autonomous-b2b-trade/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/london-amsterdam-based-hadrian-raises-e35-68-million-to-scale-its-agentic-ai-offensive-security-platform/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.eu-startups.com/2026/10/paris-based-whitelab-genomics-raises-e23-2-million-to-accelerate-ai-driven-genomic-medicine-development/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.cyzone.cn/article/846959.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#123",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.cyzone.cn/article/848311.html",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.cyzone.cn/article/846106.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#124",
+      "reviewed_status": "excluded_robotics",
+      "strict": false
+    },
+    {
+      "url": "https://www.cyzone.cn/article/821275.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#125",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.cyzone.cn/article/817920.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#126",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.cyzone.cn/article/816660.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#127",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.cyzone.cn/article/815900.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#128",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.chinaventure.com.cn/news/114-20260929-393483.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#129",
+      "reviewed_status": "excluded_robotics",
+      "strict": false
+    },
+    {
+      "url": "https://www.chinaventure.com.cn/news/114-20260930-393493.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#131",
+      "reviewed_status": "not_ai_evidence",
+      "strict": false
+    },
+    {
+      "url": "https://www.chinaventure.com.cn/news/113-20260930-393494.html",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#132",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.chinaventure.com.cn/news/114-20260930-393487.html",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#133",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.chinaventure.com.cn/news/114-20260929-393484.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#134",
+      "reviewed_status": "not_ai_evidence",
+      "strict": false
+    },
+    {
+      "url": "https://www.tmtpost.com/nictation/8158800.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#135",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://www.tmtpost.com/8151668.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#136",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.tmtpost.com/8145775.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#137",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.tmtpost.com/7938322.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#138",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://www.tmtpost.com/7801111.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#139",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://www.leiphone.com/category/touzi/HXFdAZgOfNTtFugm.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#140",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://www.leiphone.com/category/touzi/64SMHyfb3rik8Ykw.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#141",
+      "reviewed_status": "historical_before_2026",
+      "strict": false
+    },
+    {
+      "url": "https://www.leiphone.com/category/touzi/u8qwb0PaA3MRhnOm.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#142",
+      "reviewed_status": "historical_before_2026",
+      "strict": false
+    },
+    {
+      "url": "https://www.leiphone.com/category/touzi/WT84zAA4LXpcZP6m.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#143",
+      "reviewed_status": "historical_before_2026",
+      "strict": false
+    },
+    {
+      "url": "https://www.leiphone.com/category/touzi/8dA3Ha6VLKS4agcx.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#144",
+      "reviewed_status": "historical_before_2026",
+      "strict": false
+    },
+    {
+      "url": "https://www.leiphone.com/category/touzi/fiFBxPZwqbcZzcWo.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#145",
+      "reviewed_status": "historical_before_2026",
+      "strict": false
+    },
+    {
+      "url": "https://www.leiphone.com/category/touzi/1LBQB3D7QsXc53Ml.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#146",
+      "reviewed_status": "historical_before_2026",
+      "strict": false
+    },
+    {
+      "url": "https://www.leiphone.com/category/touzi/bDi7qQkyBhKV7scO.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#147",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.leiphone.com/category/touzi/FmwK8HjEuCuNFXhs.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#148",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.leiphone.com/category/touzi/msmCzeL7U3BIGEtU.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#149",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.jiemian.com/article/15160126.html",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#150",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://m.itjuzi.com/bulletin",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.iyiou.com/t/rongzi",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.iyiou.com/AI",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#154",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.iyiou.com/t/tourongzizhoubao",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#155",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.iyiou.com/data/202609121140764",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.iyiou.com/t/financingbulletin",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#47",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://tech.eu/2026/09/30/onomondo-raises-eur100m-to-scale-its-global-iot-infrastructure/",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#160",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.163Z",
+        "reviewed_status": "not_ai_evidence",
+        "review_reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+        "review_hash": "987b40a6e60c27d87ab06458a0fad83a610026ac03742bf2b66b0d6ceaa3c729",
+        "source_url": "https://tech.eu/2026/09/30/onomondo-raises-eur100m-to-scale-its-global-iot-infrastructure/",
+        "content_hash": "48df15008db39f887d1508f587f0594996fa8dd17933104d960600deb12b0eda",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/09/30/onomondo-raises-eur100m-to-scale-its-global-iot-infrastructure/",
+            "content_hash": "48df15008db39f887d1508f587f0594996fa8dd17933104d960600deb12b0eda"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "35d4dd35cd87521aca4fd45aa610902b3d64a09a2b19959360e5e9f1e288067c"
+    },
+    {
+      "url": "https://tech.eu/2026/10/05/european-tech-weekly-recap-more-than-70-tech-funding-deals-worth-over-3-9b/",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#163",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.174Z",
+        "reviewed_status": "index_or_roundup",
+        "review_reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+        "review_hash": "9cd2438631e31b2e918fe17651f044b23cbaee92463a416f29157379fcc1e9d7",
+        "source_url": "https://tech.eu/2026/10/05/european-tech-weekly-recap-more-than-70-tech-funding-deals-worth-over-3-9b/",
+        "content_hash": "529004b430b7849d44c025797066570e9b16a7c7f1787e6394b8f4310dd07e97",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/10/05/european-tech-weekly-recap-more-than-70-tech-funding-deals-worth-over-3-9b/",
+            "content_hash": "529004b430b7849d44c025797066570e9b16a7c7f1787e6394b8f4310dd07e97"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "9bde8b8e299840823e1d34b8077f98b02c67a2ec5a053b536563af0469eaa498"
+    },
+    {
+      "url": "https://tech.eu/2026/10/02/headline-closes-400m-fund-oura-delays-ipo-and-fedorov-launches-army-of-robots/",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#164",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.177Z",
+        "reviewed_status": "index_or_roundup",
+        "review_reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+        "review_hash": "5ab07505da637233ebfeb01b9dc11a4f43e4ec11c63b755586d5470ab4314157",
+        "source_url": "https://tech.eu/2026/10/02/headline-closes-400m-fund-oura-delays-ipo-and-fedorov-launches-army-of-robots/",
+        "content_hash": "301bee7f33991cc1e07ab8d217825ba48a02f98c0dc1546475716dda7a1ba0d7",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/10/02/headline-closes-400m-fund-oura-delays-ipo-and-fedorov-launches-army-of-robots/",
+            "content_hash": "301bee7f33991cc1e07ab8d217825ba48a02f98c0dc1546475716dda7a1ba0d7"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "dddfd6428333caa5d7582e21a249dc12d70964a9b61178cd7a7d64bfd023efc0"
+    },
+    {
+      "url": "https://tech.eu/2026/10/01/voltaback-raises-eur28m-to-scale-ev-charging-reimbursement-across-europe/",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#165",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.180Z",
+        "reviewed_status": "not_ai_evidence",
+        "review_reason": "已读正文业务为医疗器械、水务、高尔夫、封装设备、工业气体、IoT通信、充电报销、能源装备、传统生物医药或家居供应链；未找到融资主体AI产品/主营证据，本批不纳入，保留来源供补证。",
+        "review_hash": "ecc5e573ffa5f9177e797b5a6dedd6e4a9fd12f0a15bb6dd3652d457eefb19c8",
+        "source_url": "https://tech.eu/2026/10/01/voltaback-raises-eur28m-to-scale-ev-charging-reimbursement-across-europe/",
+        "content_hash": "2d55cc42002df0a77b6d7c72c3d3a2cd9d87eca363ed81939720ef3ab0045700",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/10/01/voltaback-raises-eur28m-to-scale-ev-charging-reimbursement-across-europe/",
+            "content_hash": "2d55cc42002df0a77b6d7c72c3d3a2cd9d87eca363ed81939720ef3ab0045700"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "a0c0bf6bed8cacd454f360282e3e91f6d1306b924c4ac6777fb6d56d8e4b1e5f"
+    },
+    {
+      "url": "https://tech.eu/2026/10/01/belgiums-top-funded-tech-companies-in-h1-2026/",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#166",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.182Z",
+        "reviewed_status": "index_or_roundup",
+        "review_reason": "栏目/统计/周报/数据库或多事件内容，不能直接成为一笔融资；有企业线索时须拆出独立原文继续核验。",
+        "review_hash": "f358a678c7a6d49c3269b2db6c3e383037b7ea830065ca9bd38d6bb2dd59ee61",
+        "source_url": "https://tech.eu/2026/10/01/belgiums-top-funded-tech-companies-in-h1-2026/",
+        "content_hash": "f4a56a5b62c06f3a3deabd124fb66de554d50e30a033e57065b828a0c1bf09f9",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/10/01/belgiums-top-funded-tech-companies-in-h1-2026/",
+            "content_hash": "f4a56a5b62c06f3a3deabd124fb66de554d50e30a033e57065b828a0c1bf09f9"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "2379498c9125d333a6e0669807922182e9acfc3dff796d21e94bd534c7e11bdb"
+    },
+    {
+      "url": "https://tech.eu/2026/10/06/edonia-raises-eur15m-to-scale-microalgae-protein-as-an-alternative-to-meat/",
+      "action": "close",
+      "reason": "responsible_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-07/disposition-review.json#edonia-tech",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-07T06:29:39.002Z",
+        "reviewed_status": "not_ai_evidence",
+        "review_reason": "本条虽截断，但企业Edonia、1500万欧元本轮与完整EU-Startups原文相符；结合完整来源确认微藻蛋白原料主营，当前来源不纳入AI融资。",
+        "review_hash": "e17b94c7def30823c0456c52888c1bcbbc94299b8f27e7150ac1195772f1630d",
+        "source_url": "https://tech.eu/2026/10/06/edonia-raises-eur15m-to-scale-microalgae-protein-as-an-alternative-to-meat/",
+        "content_hash": "596a5a81853a7bcc51e72c8a05dcc76b87d734d986a53f71c137694e98f2bdb0",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/10/06/edonia-raises-eur15m-to-scale-microalgae-protein-as-an-alternative-to-meat/",
+            "content_hash": "596a5a81853a7bcc51e72c8a05dcc76b87d734d986a53f71c137694e98f2bdb0",
+            "quote": "a new whole food source based on microalgae"
+          },
+          {
+            "source_url": "https://www.eu-startups.com/2026/10/up-to-27-times-lower-carbon-footprint-than-beef-edonia-raises-e15-million-for-their-meat-alternative/",
+            "content_hash": "474a8b6a5b6cb64e4f2addc7d0aa7d4c2a9730f2c74b83b675e77c05ab0341ae",
+            "quote": "develops ready-to-eat protein ingredients made from microalgae"
+          }
+        ],
+        "valid_through": "2026-10-14"
+      },
+      "proof_hash": "e361e685db4058f54e21a93e8829615010427bd141a9496595c59ab7933c5bae"
+    },
+    {
+      "url": "https://tech.eu/2026/10/06/nevermind-launches-with-eur236m-first-close-to-back-dual-use-deeptech-startups/",
+      "action": "close",
+      "reason": "responsible_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-07/disposition-review.json#nevermind",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-07T06:29:39.002Z",
+        "reviewed_status": "not_financing",
+        "review_reason": "2360万欧元为NVM Venture Lazio基金首次关账，募集主体是VC基金；不属于已完成被投企业融资。",
+        "review_hash": "dc712d4ed073cee4800f30853021bed80ab118129b603bf5bbfc6bc8dc78377a",
+        "source_url": "https://tech.eu/2026/10/06/nevermind-launches-with-eur236m-first-close-to-back-dual-use-deeptech-startups/",
+        "content_hash": "0b4ee959e11073e0de1ca5eb30403ce99a445e34eca975b13c280f994a3ab63b",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/10/06/nevermind-launches-with-eur236m-first-close-to-back-dual-use-deeptech-startups/",
+            "content_hash": "0b4ee959e11073e0de1ca5eb30403ce99a445e34eca975b13c280f994a3ab63b",
+            "quote": "a VC Fund focused on investing in deeptech dual use frontier technologies"
+          }
+        ],
+        "valid_through": "2026-10-14"
+      },
+      "proof_hash": "e560fe4957a9162ea4100e3f9a1672ffd21b50152244daabbf9308bed65c4178"
+    },
+    {
+      "url": "https://tech.eu/2026/10/06/iris-and-bpifrance-back-vates-with-eur30m-for-global-expansion/",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-07/disposition-review.json#vates",
+      "reviewed_status": "pending_ai_scope",
+      "strict": true,
+      "pending_review": {
+        "id": "vates",
+        "url": "https://tech.eu/2026/10/06/iris-and-bpifrance-back-vates-with-eur30m-for-global-expansion/",
+        "status": "pending_ai_scope",
+        "reason": "现有正文仅494字符且截断；虚拟化基础设施描述不能确定或否定AI相关主营，保留待补完整产品原文。",
+        "content_hash": "8722ae332e9c1e5789f252e056523c43b280689a5b5032aa0548c2d4ab06a788",
+        "reviewed_at": "2026-10-07T06:29:39.002Z",
+        "review_basis": "source_original_and_independent_review",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/10/06/iris-and-bpifrance-back-vates-with-eur30m-for-global-expansion/",
+            "content_hash": "8722ae332e9c1e5789f252e056523c43b280689a5b5032aa0548c2d4ab06a788",
+            "quote": "open-source virtualization platform"
+          }
+        ],
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-07",
+        "ledger": "agent-workflow/reports/financing/2026-10-07/disposition-review.json",
+        "strict": true
+      }
+    },
+    {
+      "url": "https://tech.eu/2026/10/06/nea-leads-spikos-90m-series-b-to-expand-access-to-cash-yield/",
+      "action": "close",
+      "reason": "responsible_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-07/disposition-review.json#spiko",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-07T06:29:39.002Z",
+        "reviewed_status": "not_ai_evidence",
+        "review_reason": "本轮9000万美元B轮与累计1.2亿美元分开。结合投资方完整原文确认主体为代币化现金基金发行商；AI agent通过API替客户调度现金是客户使用场景，不构成融资主体AI主营证据。",
+        "review_hash": "49a93d8e8ab40ba0b54323980d7b0b206c767f6300e4a33a4b0829e03264e629",
+        "source_url": "https://tech.eu/2026/10/06/nea-leads-spikos-90m-series-b-to-expand-access-to-cash-yield/",
+        "content_hash": "07ac9b03fb01da55bde2de25f5bc0b0b0d26c0514e055dc1c932735c6ae2974d",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/10/06/nea-leads-spikos-90m-series-b-to-expand-access-to-cash-yield/",
+            "content_hash": "07ac9b03fb01da55bde2de25f5bc0b0b0d26c0514e055dc1c932735c6ae2974d",
+            "quote": "Spiko, a provider of tokenised cash funds"
+          },
+          {
+            "source_url": "https://www.indexventures.com/perspectives/spiko-raises-90m-series-b-to-make-yield-universally-accessible/",
+            "content_hash": "0c3a27c7a5cebc54fb91e5feb7f835fd9cf9118ddfb787041fcf7b3d6376d95a",
+            "quote": "Spiko is a tokenized cash fund that lets any business or individual earn a yield on cash holdings without sacrificing liquidity."
+          }
+        ],
+        "valid_through": "2026-10-14"
+      },
+      "proof_hash": "48065374bc78cb70b73b72d18dfdbc10dcb7c0703cbe2ea3ddc27cb4c1f7c979"
+    },
+    {
+      "url": "https://tech.eu/2026/10/06/finches-lands-eur2m-to-help-food-producers-spot-supply-risks-earlier/",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-07/disposition-review.json#finches",
+      "reviewed_status": "pending_ai_scope",
+      "strict": true,
+      "pending_review": {
+        "id": "finches",
+        "url": "https://tech.eu/2026/10/06/finches-lands-eur2m-to-help-food-producers-spot-supply-risks-earlier/",
+        "status": "pending_ai_scope",
+        "reason": "现有正文仅504字符且截断，供应风险平台实现方式不明，不能凭缺AI关键词排除，保留待补产品与技术原文。",
+        "content_hash": "1e3a714a678dedc53ee65ec0c42d8c7c07341a4755c5ba3d61d0b54c7e829931",
+        "reviewed_at": "2026-10-07T06:29:39.002Z",
+        "review_basis": "source_original_and_independent_review",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/10/06/finches-lands-eur2m-to-help-food-producers-spot-supply-risks-earlier/",
+            "content_hash": "1e3a714a678dedc53ee65ec0c42d8c7c07341a4755c5ba3d61d0b54c7e829931",
+            "quote": "identify potential supply risks earlier"
+          }
+        ],
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-07",
+        "ledger": "agent-workflow/reports/financing/2026-10-07/disposition-review.json",
+        "strict": true
+      }
+    },
+    {
+      "url": "https://tech.eu/2026/10/06/n26-founder-backed-finmid-raises-eur17m-series-a-extension-strikes-bolt-deal/",
+      "action": "retain",
+      "reason": "responsible_disposition_still_pending",
+      "review_ref": "agent-workflow/reports/financing/2026-10-07/disposition-review.json#finmid",
+      "reviewed_status": "pending_ai_scope",
+      "strict": true,
+      "pending_review": {
+        "id": "finmid",
+        "url": "https://tech.eu/2026/10/06/n26-founder-backed-finmid-raises-eur17m-series-a-extension-strikes-bolt-deal/",
+        "status": "pending_ai_scope",
+        "reason": "现有正文仅496字符且截断，嵌入式信贷描述不足以完成AI主营判断，保留待补完整原文。",
+        "content_hash": "08f09c1048f7fb8fa5373bab514e6f1296a098418745e9a7bdec091c509917ff",
+        "reviewed_at": "2026-10-07T06:29:39.002Z",
+        "review_basis": "source_original_and_independent_review",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/10/06/n26-founder-backed-finmid-raises-eur17m-series-a-extension-strikes-bolt-deal/",
+            "content_hash": "08f09c1048f7fb8fa5373bab514e6f1296a098418745e9a7bdec091c509917ff",
+            "quote": "providing white-label lending services"
+          }
+        ],
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-07",
+        "ledger": "agent-workflow/reports/financing/2026-10-07/disposition-review.json",
+        "strict": true
+      }
+    },
+    {
+      "url": "https://sifted.eu/articles/spiko-series-b-fundraise-index-speedinvest/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://sifted.eu/articles/vocca-voice-ai-healthtech-series-a/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://sifted.eu/articles/hadrian-ai-funding-round-cyber-security/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://sifted.eu/articles/veremark-pisces/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#167",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://sifted.eu/articles/dig-ventures-fund-europe-ai-infrastructure/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#168",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://venturebeat.com/business/siena-raises-17m-series-a-to-expand-its-agent-of-record-platform-for-consumer-brands",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://venturebeat.com/business/polygrade-emerges-from-stealth-with-63m-to-bring-ai-native-claims-management-to-the-warranty-industry",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://venturebeat.com/ai-week-new-york",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://venturebeat.com/data/shouldnt-customer-service-ai-remember-you-siena-to-expand-agent-of-record-combining-purchase-history-with-support-and-social",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://venturebeat.com/resources/ai-infrastructure-and-compute-48-of-organizations-running-ai-in-production-name-a-google-platform-as-their-primary-ai-platform-more-than-twice-openais-share",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#171",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://www.geekwire.com/2026/seattle-startup-chiplytics-lands-4-5m-to-catch-fake-and-flawed-chips-before-they-hit-the-market/",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.geekwire.com/2026/washington-climate-tech-founders-score-funding-as-ai-boom-drains-investor-cash/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#172",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.geekwire.com/2026/seattle-voice-ai-startup-ultravox-formerly-known-as-fixie-acquired-by-inworld/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#173",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://www.geekwire.com/2026/kanu-ai-emerges-from-stealth-with-11-7m-to-turn-employee-workflows-into-custom-software/",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#174",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.geekwire.com/2026/pay-i-rebrands-as-ascerta-and-raises-18m-to-help-enterprises-track-ai-business-value/",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#175",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.finsmes.com/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#176",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.finsmes.com/author/admin",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#177",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.finsmes.com/category/canada",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#178",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.finsmes.com/category/india",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#179",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.finsmes.com/category/china",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#180",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.finsmes.com/2026/10/palebluedot-ai-raises-200m-in-series-c-funding.html",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/10/comparables-ai-raises-6m-in-seed-funding.html",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.finsmes.com/2026/10/curvetai-raises-approx-usd720k-in-pre-seed-funding.html",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20261005181820/en/Valon-Raises-%24150-Million-Series-D-at-a-%242.3-Billion-Valuation-to-Deploy-ValonOS-and-AI-Agents-into-Mortgage",
+      "action": "retain",
+      "reason": "original_acceptance_requires_fact_and_funding_gates",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#76",
+      "reviewed_status": "accepted_original",
+      "strict": false
+    },
+    {
+      "url": "https://www.reuters.com/legal/transactional/openai-targets-30-billion-funding-14-trillion-valuation-bloomberg-news-reports-2026-09-29/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#189",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-10-02/google-hikes-price-of-budget-pixel-10a-phone-to-599-on-memory-costs",
+      "action": "close",
+      "reason": "responsible_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-07/disposition-review.json#pixel",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-07T06:29:39.002Z",
+        "reviewed_status": "not_financing",
+        "review_reason": "本文是Pixel 10a售价由涨价100美元至599美元的产品价格报道，不是企业融资事件。",
+        "review_hash": "4535555dbe6ef2fd4aac88c956fc0ba2743eb5da3cf55fe7e7a2fb278e0163d1",
+        "source_url": "https://www.bloomberg.com/news/articles/2026-10-02/google-hikes-price-of-budget-pixel-10a-phone-to-599-on-memory-costs",
+        "content_hash": "b3f5d5123d77908b164c5122cfce59dc39a8609c015db4711d35a35f44d5b5b9",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.bloomberg.com/news/articles/2026-10-02/google-hikes-price-of-budget-pixel-10a-phone-to-599-on-memory-costs",
+            "content_hash": "b3f5d5123d77908b164c5122cfce59dc39a8609c015db4711d35a35f44d5b5b9",
+            "quote": "raised the price of its seven-month-old Pixel 10a smartphone by $100 to $599"
+          }
+        ],
+        "valid_through": "2026-10-14"
+      },
+      "proof_hash": "3e65c4c83a4d8627885a012e19dfc3001481e7106d63924258d5c6dfa94af043"
+    },
+    {
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#197",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E8%8A%AF%E5%85%89%E7%95%8C%E5%AE%8C%E6%88%90%E4%BA%BF%E5%85%83%E5%A4%A9%E4%BD%BF%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E7%8B%AC%E5%AE%B6%E6%8A%95%E8%B5%84",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#198",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E5%AE%89%E6%BE%9C%E5%BE%B7%E5%81%A5%E5%AE%8C%E6%88%90%E8%BF%91%E4%BA%BF%E5%85%83a%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E7%8B%AC%E5%AE%B6%E6%8A%95%E8%B5%84",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#199",
+      "reviewed_status": "not_ai_evidence",
+      "strict": false
+    },
+    {
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E6%85%95%E5%B8%86%E5%8A%A8%E5%8A%9B%E5%AE%8C%E6%88%90%E8%BF%9E%E7%BB%AD%E4%B8%A4%E8%BD%AE%E6%80%BB%E8%AE%A1%E8%B6%855%E4%BA%BF%E5%85%83%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%B8%BAai%E6%97%B6%E4%BB%A3%E7%AE%97%E5%8A%9B%E6%8F%90%E4%BE%9B%E7%94%B5%E5%8A%9B%E5%AE%89%E5%85%A8%E5%BA%95%E5%BA%A7",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#201",
+      "reviewed_status": "not_ai_evidence",
+      "strict": false
+    },
+    {
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%B8%9C%E6%98%87%E8%81%9A%E5%8F%98%E5%AE%8C%E6%88%90%E6%96%B0%E4%B8%80%E8%BD%AE1%E4%BA%BF%E7%BE%8E%E5%85%83%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E8%81%94%E5%90%88%E9%A2%86%E6%8A%95",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#202",
+      "reviewed_status": "not_ai_evidence",
+      "strict": false
+    },
+    {
+      "url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E8%A7%82%E7%82%B9-%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%99%88%E4%BE%83%EF%BC%9A%E8%BF%9E%E7%BB%AD%E9%A2%86%E6%8A%95%E5%A4%A9%E8%BE%B0%E7%94%9F%E7%89%A9%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%A7%8B%E7%BB%88%E5%9D%9A%E5%AE%9A%E5%B8%83%E5%B1%80%E5%B0%96%E7%AB%AF%E5%8C%BB%E7%96%97%E5%88%9B%E6%96%B0",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#203",
+      "reviewed_status": "not_ai_evidence",
+      "strict": false
+    },
+    {
+      "url": "https://yourstory.com/2026/09/home-interiors-startup-gravity-raises-15-million-led-by-3one4-capital-and-info-edge-ventures",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#206",
+      "reviewed_status": "not_ai_evidence",
+      "strict": false
+    },
+    {
+      "url": "https://yourstory.com/2026/10/weekly-funding-roundup-sept-26-oct-2-vc-inflow-continues-to-maintain-strong-momentum",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://yourstory.com/2026/10/vc-funding-in-september-dips-year-on-year",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://yourstory.com/2026/10/qpiai-secures-rs-50-cr-debt-financing-from-innoven-capital",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://yourstory.com/2026/10/vc-money-is-pouring-into-indian-startups",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://yourstory.com/2026/10/vc-funding-dips-in-september-lineup-at-techsparks-2026",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://yourstory.com/2026/10/beyond-appliances-raises-rs-110-cr-series-b-fireside-ventures",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://entrackr.com/",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#210",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/visual-story/list-fundraising-startups-southeast-asia-india",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#216",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/visual-story/capital-sea-southeast-asias-funding-landscape",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#220",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/news/a16z-accel-back-us-cybersecurity-firm-armadin-in-255-5m-round",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#221",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/news/anthropic-targets-midnovember-ipo-delay",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#222",
+      "reviewed_status": "not_financing",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/news/supabase-raises-150m-acquires-database-startup-turso",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#223",
+      "reviewed_status": "already_covered",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/tales-as-old-as-time",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#224",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/50-rising-startups-malaysia",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#225",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/news/sea-tech-funding-jumps-176-q1-q3-report",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#226",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/visual-story/mapping-japans-prominent-cleantech-startups",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#227",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/news/jungle-ventures-leads-sg-ai-startup-onebyzeros-20m",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#228",
+      "reviewed_status": "same_batch_duplicate",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/visual-story/japan-fintech-map",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#230",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/visual-story/india-education-landscape-map",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#231",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/50-rising-startups-philippines",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#232",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/visual-story/mapping-sea-cleantech",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#233",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/50-rising-startups-thailand",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#234",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.techinasia.com/news/indian-ai-agribusiness-startup-myca-raises-1-3m-pre-seed",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.techinasia.com/news/moonshot-ai-eyes-hong-kong-ipo-50b-valuation",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.techinasia.com/news/finnish-ai-startup-comparablesai-raises-6m-seed",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.techinasia.com/news/mdi-ventures-updates-sea-focus-ai-blockchain",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.techinasia.com/news/flipkart-takes-stake-indian-travel-platform-travclan",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.dealstreetasia.com/stories/onebyzero-jungle-ventures-series-a-497083",
+      "action": "retain",
+      "reason": "original_acceptance_requires_fact_and_funding_gates",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#239",
+      "reviewed_status": "accepted_original",
+      "strict": false
+    },
+    {
+      "url": "https://www.dealstreetasia.com/stories/editors-take-the-week-that-was-sept-23-oct-3-497027",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#240",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.dealstreetasia.com/stories/global-lps-china-tech-wave-497041",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#241",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.dealstreetasia.com/stories/donut-robotics-charm-care-497256",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.dealstreetasia.com/stories/mdi-ventures-singapore-startups-497244",
+      "action": "retain",
+      "reason": "no_responsible_disposition"
+    },
+    {
+      "url": "https://www.dealstreetasia.com/stories/carro-intellect-secure-funding-se-asia-deals-496818",
+      "action": "retain",
+      "reason": "current_original_hash_missing",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#242",
+      "reviewed_status": "index_or_roundup",
+      "strict": false
+    },
+    {
+      "url": "https://www.ithome.com/1/009/583.htm",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#243",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.361Z",
+        "reviewed_status": "not_financing",
+        "review_reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+        "review_hash": "1e2c370fd40ca7932e5aef0bc022378db43749cf6b1036d0731b58042196064f",
+        "source_url": "https://www.ithome.com/1/009/583.htm",
+        "content_hash": "1ba49aa24471d0113d33a30f447e9cf0bcc2125d0511ac7c0338a0daa96c00f0",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.ithome.com/1/009/583.htm",
+            "content_hash": "1ba49aa24471d0113d33a30f447e9cf0bcc2125d0511ac7c0338a0daa96c00f0"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "f4a73770335cd6509af62733e9f0e68d98571573d44256ba38996c2dd973d0ca"
+    },
+    {
+      "url": "https://www.ithome.com/1/009/535.htm",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#244",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.364Z",
+        "reviewed_status": "not_financing",
+        "review_reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+        "review_hash": "3125e2b0e7d74fc9105bea40440d9894151262ae9e662c03f961e3985ec5945f",
+        "source_url": "https://www.ithome.com/1/009/535.htm",
+        "content_hash": "4008f8ffb41df4a7aed059801b668fe3ab2fbf49805400cfb49e34d1bf68b6b1",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.ithome.com/1/009/535.htm",
+            "content_hash": "4008f8ffb41df4a7aed059801b668fe3ab2fbf49805400cfb49e34d1bf68b6b1"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "312807ff28aa3b91bf0af0b05bdc727f61325b9237d8d1f519f575c2a0e2967d"
+    },
+    {
+      "url": "https://www.ithome.com/1/009/727.htm",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#245",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.371Z",
+        "reviewed_status": "not_financing",
+        "review_reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+        "review_hash": "0cdd767b482cbd7b51c1b418ef4641e7db5ea958cebc1b67a13a3637333e8e17",
+        "source_url": "https://www.ithome.com/1/009/727.htm",
+        "content_hash": "71150d114667bd080d201998c30996393026ca697e6c8651a5715f20e4df7aee",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.ithome.com/1/009/727.htm",
+            "content_hash": "71150d114667bd080d201998c30996393026ca697e6c8651a5715f20e4df7aee"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "8678775777c294f2dd699426adf3ca9fef1468ca710bf2c94bc4171270c8feaf"
+    },
+    {
+      "url": "https://www.ithome.com/1/009/679.htm",
+      "action": "close",
+      "reason": "inherited_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#246",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-06T04:15:56.374Z",
+        "reviewed_status": "not_financing",
+        "review_reason": "政策、产品、行业观点、基金募资、二级交易/收购或拟融资线索，不是本次可收录的已完成企业融资。",
+        "review_hash": "217ccb11308cb0d0473da9b4a5aed28fb5c3608fc50a860ac722f563415296c7",
+        "source_url": "https://www.ithome.com/1/009/679.htm",
+        "content_hash": "7733e360ca56ee57d6f95897e5c7f8f205be388a48ed4c18cba8dd686615b6aa",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.ithome.com/1/009/679.htm",
+            "content_hash": "7733e360ca56ee57d6f95897e5c7f8f205be388a48ed4c18cba8dd686615b6aa"
+          }
+        ],
+        "valid_through": "2026-10-13"
+      },
+      "proof_hash": "d10dd916dc89793848505294d40df45abd45b07fac859305454ccec29fdbb0f5"
+    },
+    {
+      "url": "https://www.ithome.com/1/010/101.htm",
+      "action": "close",
+      "reason": "responsible_source_disposition",
+      "proof": {
+        "review_ref": "agent-workflow/reports/financing/2026-10-07/disposition-review.json#xbox",
+        "reviewer": "Codex responsible financing evidence review",
+        "reviewed_at": "2026-10-07T06:29:39.002Z",
+        "reviewed_status": "not_financing",
+        "review_reason": "正文讨论游戏主机虚拟内存和性能优化，没有已完成企业融资事件。",
+        "review_hash": "2eafd6e07f4035c3b7bab7203f7edec2d2a9eaf1df345daaa864917e52cfa735",
+        "source_url": "https://www.ithome.com/1/010/101.htm",
+        "content_hash": "4b88816d045b1abe2b16666b5effcea7d79b87281e4ff3532e4f10ef7494bc53",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.ithome.com/1/010/101.htm",
+            "content_hash": "4b88816d045b1abe2b16666b5effcea7d79b87281e4ff3532e4f10ef7494bc53",
+            "quote": "开发团队已经找到一种类似虚拟内存的机制"
+          }
+        ],
+        "valid_through": "2026-10-14"
+      },
+      "proof_hash": "e2b4a5847f4f707edde6a60e4d60e5196eef1dd1396600158954c5d34129b555"
+    },
+    {
+      "url": "https://openrouter.ai/announcements/series-b",
+      "action": "retain",
+      "reason": "disposition_requires_event_or_duplicate_binding",
+      "review_ref": "agent-workflow/reports/financing/2026-10-06/pending247-review.json#247",
+      "reviewed_status": "already_covered",
+      "strict": false
+    }
+  ],
+  "private_base": "3e8a899530e19d700098f64706b2cefd2d5ad3c9",
+  "note": "Reviewed dry-run only; no production queue mutation. Replan against current private state after code merge."
+}
