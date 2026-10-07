@@ -1322,6 +1322,16 @@ test("融资历史按规范轮次形成稳定字段并计算已知轮次累计�
   assert.equal(cards[0].financing.cumulative_amount.known_round_totals[0].value, 25000000);
 });
 
+test("融资卡只链接到实体索引中已发布的投资机构", () => {
+  const card = normalizeFundingInsightCard(validCard());
+  const institutionId = investmentInstitutionId(card.financing.investors[0].name);
+  const [linked] = enrichFundingHistory([card], { investors: [{ id: institutionId }] });
+  assert.equal(linked.financing.investors[0].institution_id, institutionId);
+
+  const [unlinked] = enrichFundingHistory([card], { investors: [] });
+  assert.equal(Object.hasOwn(unlinked.financing.investors[0], "institution_id"), false);
+});
+
 test("已知轮次累计金额保留模糊金额区间而不是显示未披露", () => {
   const card = validCard();
   card.financing.amount = "数亿元";

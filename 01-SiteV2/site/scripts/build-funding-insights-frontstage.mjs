@@ -387,7 +387,20 @@ function cumulativeKnownRoundAmounts(companyCards = []) {
   });
 }
 
-export function enrichFundingHistory(cards = []) {
+export function enrichFundingHistory(cards = [], entityIndex = null) {
+  const publishedInvestorIds = entityIndex
+    ? new Set((entityIndex.investors || []).map((investor) => investor.id))
+    : null;
+  const enrichInvestors = (investors = []) => investors.map((item) => {
+    const institutionId = investmentInstitutionId(item.name, item.entity_id || "");
+    const enriched = { ...item };
+    if (publishedInvestorIds && !publishedInvestorIds.has(institutionId)) {
+      delete enriched.institution_id;
+    } else {
+      enriched.institution_id = institutionId;
+    }
+    return enriched;
+  });
   const byCompany = new Map();
   for (const card of cards) {
     const key = card.company?.application_entity_id
@@ -437,14 +450,8 @@ export function enrichFundingHistory(cards = []) {
           known_round_totals: cumulativeKnownRoundAmounts(companyCards),
           historical_round_count: historicalRounds.length,
         },
-        investors: (card.financing?.investors || []).map((item) => ({
-          ...item,
-          institution_id: investmentInstitutionId(item.name, item.entity_id || ""),
-        })),
-        other_round_investors: (card.financing?.other_round_investors || []).map((item) => ({
-          ...item,
-          institution_id: investmentInstitutionId(item.name, item.entity_id || ""),
-        })),
+        investors: enrichInvestors(card.financing?.investors || []),
+        other_round_investors: enrichInvestors(card.financing?.other_round_investors || []),
       },
       historical_rounds: historicalRounds,
     };
@@ -497,7 +504,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root, { publicScope
     entityIndex,
     entityDecisions,
     companyIdentityReview,
-  ))
+  ), entityIndex)
     .sort((left, right) => {
       return String(right.as_of_date || "").localeCompare(String(left.as_of_date || ""))
         || String(right.financing?.announced_at || "").localeCompare(String(left.financing?.announced_at || ""))
