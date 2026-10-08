@@ -130,7 +130,19 @@ export function buildReadModel({root,output,input=path.join(root,'01-SiteV2/site
   const release=path.join(output,'releases',releaseId), temp=`${release}.${process.pid}.tmp`;
   const updatePointer=()=>{const body=json({version:VERSION,releaseId,inputHash})+'\n',current=path.join(output,'current.json');if(fs.existsSync(current)&&fs.readFileSync(current,'utf8')===body)return;const pointer=path.join(output,`current.${process.pid}.tmp`);fs.writeFileSync(pointer,body);fs.renameSync(pointer,current);};
   try {
-    if(fs.existsSync(release)) {const accepted=verifyReadModel(release);if(accepted.inputHash!==inputHash || accepted.releaseId!==releaseId)throw new Error('financing_read_model_release_mismatch');updatePointer();return {...accepted,reused:true};}
+    if(fs.existsSync(release)) {
+      try {
+        const accepted=verifyReadModel(release);
+        if(accepted.inputHash!==inputHash || accepted.releaseId!==releaseId)throw new Error('financing_read_model_release_mismatch');
+        updatePointer();
+        return {...accepted,reused:true};
+      } catch(error) {
+        if(error.code!=='ENOENT')throw error;
+        // Recovery checkpoints retain JSON manifests but omit rebuildable JSONL tables.
+        // Recreate an incomplete cached release from the accepted input instead of failing.
+        fs.rmSync(release,{recursive:true,force:true});
+      }
+    }
     fs.mkdirSync(temp,{recursive:true});
     const files=[];
     for(const [name,rows] of Object.entries(tables)) {
