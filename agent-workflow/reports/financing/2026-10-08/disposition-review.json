@@ -2,7 +2,7 @@
   "version": "FINANCING-DISPOSITION-REVIEW-1",
   "date": "2026-10-08",
   "reviewer": "Codex responsible financing evidence review",
-  "scope": "Exact source-bound review of 13 current-hash queue entries; accepted financing remains subject to normal fact and publication gates.",
+  "scope": "Exact source-bound review of 19 entries; accepted financing remains subject to normal fact and publication gates.",
   "rows": [
     {
       "id": "tvs-automobile",
@@ -240,6 +240,159 @@
           "quote": "We work with device companies and researchers to integrate these chips into neural devices for sensing, stimulation and signal processing."
         }
       ]
+    },
+    {
+      "id": "covered-fleuret",
+      "url": "https://www.eu-startups.com/2026/10/french-cybersecurity-startup-fleuret-ai-raises-e4-million-to-automate-penetration-testing-with-ai-agents",
+      "status": "already_covered",
+      "reason": "Fleuret AI 对应融资事件已在本次监测日前后的已发布融资卡中完整出现；该线索不是新增融资事件。",
+      "reviewed_at": "2026-10-08T10:24:25.000Z",
+      "review_basis": "verified_alternate_sources_and_published_event_match",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/french-cybersecurity-startup-fleuret-ai-raises-e4-million-to-automate-penetration-testing-with-ai-agents/",
+          "content_hash": "39149060b99df99bc2f166b31fa98984b142e314941939fe0a4ffe9c3128fca5",
+          "quote": "Fleuret AI, a Paris-based cybersecurity startup automating penetration testing with agentic AI, has closed a €4 million pre-Seed round"
+        },
+        {
+          "source_url": "https://www.telecom-paris.fr/fleuret-ai-european-offensive-cybersecurity",
+          "content_hash": "77a7717db0f975634669d8df0cb68568a7fa80f6b0cf55624be2a7c46e8bb659",
+          "quote": "It is a €4 million seed round led by RAISE Capital"
+        }
+      ],
+      "event_binding": {
+        "event_id": "EV-af1a6d0b5da2d0e5",
+        "company": "Fleuret AI",
+        "announced_at": "2026-10-05",
+        "round_code": "pre_seed",
+        "reason": "同一公司、公告日期及 €4m pre-seed 轮融资已存在于融资目录，并已发布卡片。"
+      }
+    },
+    {
+      "id": "covered-kanu",
+      "url": "https://www.geekwire.com/2026/kanu-ai-emerges-from-stealth-with-11-7m-to-turn-employee-workflows-into-custom-software/",
+      "status": "already_covered",
+      "reason": "Kanu AI 对应融资事件已在本次监测日前后的已发布融资卡中完整出现；该线索不是新增融资事件。",
+      "reviewed_at": "2026-10-08T10:24:25.000Z",
+      "review_basis": "verified_alternate_sources_and_published_event_match",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://www.geekwire.com/2026/kanu-ai-emerges-from-stealth-with-11-7m-to-turn-employee-workflows-into-custom-software/",
+          "content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
+          "quote": "Seattle-based Kanu AI announced $11.7 million in new funding"
+        },
+        {
+          "source_url": "https://www.getkanu.com/blog/seed-announcement",
+          "content_hash": "8526f3a65e029b61002ad15d8e1f68908006ba572ac73c746ddbc77a20622d7a",
+          "quote": "Today we are excited to announce a $11.7 million in funding led by Trilogy Equity Partners"
+        }
+      ],
+      "event_binding": {
+        "event_id": "EV-7fb563f47cc29d8d",
+        "company": "Kanu AI",
+        "announced_at": "2026-09-30",
+        "round_code": "seed",
+        "reason": "同一公司、公告日期及 $11.7m seed 轮融资已存在于融资目录，并已发布卡片。"
+      }
+    },
+    {
+      "id": "covered-ascerta",
+      "url": "https://www.geekwire.com/2026/pay-i-rebrands-as-ascerta-and-raises-18m-to-help-enterprises-track-ai-business-value/",
+      "status": "already_covered",
+      "reason": "Ascerta 对应融资事件已在本次监测日前后的已发布融资卡中完整出现；该线索不是新增融资事件。",
+      "reviewed_at": "2026-10-08T10:24:25.000Z",
+      "review_basis": "verified_alternate_sources_and_published_event_match",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://www.geekwire.com/2026/pay-i-rebrands-as-ascerta-and-raises-18m-to-help-enterprises-track-ai-business-value/",
+          "content_hash": "c6501b855ae1a80be90e7444190dcd4e398462fdf7eec543194a574fd7c341ea",
+          "quote": "Bellevue, Wash.-based startup Pay-i is rebranding as Ascerta and raising $18 million in new funding"
+        },
+        {
+          "source_url": "https://ascerta.com/resources/press/ascerta-raises-18m-series-a",
+          "content_hash": "521590bc01ad839c146800f3914ce17726a6317d32a595d321959aefa581ffca",
+          "quote": "Today, the company formerly known as Pay-i announced its new name alongside an $18 million Series A"
+        }
+      ],
+      "event_binding": {
+        "event_id": "EV-439c3a45abe7b514",
+        "company": "Ascerta",
+        "announced_at": "2026-09-30",
+        "round_code": "series_a",
+        "reason": "Pay-i 更名为 Ascerta；同一公司、公告日期及 $18m Series A 已存在于融资目录，并已发布卡片。"
+      }
+    },
+    {
+      "id": "covered-palebluedot",
+      "url": "https://www.finsmes.com/2026/10/palebluedot-ai-raises-200m-in-series-c-funding.html",
+      "status": "already_covered",
+      "reason": "PaleBlueDot AI 对应融资事件已在本次监测日前后的已发布融资卡中完整出现；该线索不是新增融资事件。",
+      "reviewed_at": "2026-10-08T10:24:25.000Z",
+      "review_basis": "verified_alternate_sources_and_published_event_match",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://www.prnewswire.com/news-releases/palebluedot-ai-raises-200m-series-c-round-to-scale-super-intelligence-infrastructure-platform-302896601.html",
+          "content_hash": "6e420312a93cf1d9fb0c5dc88ec2b95cb97f03a273ccf1896a5f466aad867989",
+          "quote": "today announced the completion of a $200 million Series C financing"
+        }
+      ],
+      "event_binding": {
+        "event_id": "EV-80aeba0846bbd197",
+        "company": "PaleBlueDot AI",
+        "announced_at": "2026-10-01",
+        "round_code": "series_c",
+        "reason": "同一公司、公告日期及 $200m Series C 已存在于融资目录，并已发布卡片。"
+      }
+    },
+    {
+      "id": "covered-comparables-finsmes",
+      "url": "https://www.finsmes.com/2026/10/comparables-ai-raises-6m-in-seed-funding.html",
+      "status": "already_covered",
+      "reason": "Comparables.ai 对应融资事件已在本次监测日前后的已发布融资卡中完整出现；该线索不是新增融资事件。",
+      "reviewed_at": "2026-10-08T10:24:25.000Z",
+      "review_basis": "verified_alternate_sources_and_published_event_match",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://tech.eu/2026/10/06/comparablesai-secures-6m-seed-to-scale-its-ai-platform-for-dealmakers/",
+          "content_hash": "ab77fec400a8274731c9fd7ff39d4fb8c489304a4151fe62b9464a1540fc64a8",
+          "quote": "Comparables.ai,\nan AI platform for private and public market intelligence, has raised $6\nmillion in seed funding"
+        }
+      ],
+      "event_binding": {
+        "event_id": "EV-6cf399bb27ddd1a5",
+        "company": "Comparables.ai",
+        "announced_at": "2026-10-06",
+        "round_code": "seed",
+        "reason": "同一公司、公告日期及 $6m seed 轮融资已存在于融资目录，并已发布卡片。"
+      }
+    },
+    {
+      "id": "covered-comparables-techinasia",
+      "url": "https://www.techinasia.com/news/finnish-ai-startup-comparablesai-raises-6m-seed",
+      "status": "already_covered",
+      "reason": "Comparables.ai 对应融资事件已在本次监测日前后的已发布融资卡中完整出现；该线索不是新增融资事件。",
+      "reviewed_at": "2026-10-08T10:24:25.000Z",
+      "review_basis": "verified_alternate_sources_and_published_event_match",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://tech.eu/2026/10/06/comparablesai-secures-6m-seed-to-scale-its-ai-platform-for-dealmakers/",
+          "content_hash": "ab77fec400a8274731c9fd7ff39d4fb8c489304a4151fe62b9464a1540fc64a8",
+          "quote": "Comparables.ai,\nan AI platform for private and public market intelligence, has raised $6\nmillion in seed funding"
+        }
+      ],
+      "event_binding": {
+        "event_id": "EV-6cf399bb27ddd1a5",
+        "company": "Comparables.ai",
+        "announced_at": "2026-10-06",
+        "round_code": "seed",
+        "reason": "同一公司、公告日期及 $6m seed 轮融资已存在于融资目录，并已发布卡片。"
+      }
     }
   ]
 }
