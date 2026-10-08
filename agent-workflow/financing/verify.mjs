@@ -12,6 +12,7 @@ import { classificationInput, classificationProblems } from './taxonomy.mjs';
 import { createLeadFollowupSearch } from './lead-followup-search.mjs';
 import { dispositionResolver } from './verification-dispositions.mjs';
 import {createReviewBudget, reviewStage, reviewQueueSummary} from './review-budget.mjs';
+import {reviewStateDirectory} from './review-state.mjs';
 
 const version = 'FINANCING-VERIFICATION-1';
 const semanticReasons = new Set(['ai_relevance_unverified', 'robotics_core_business_review', 'embodied_or_robotics_core_business_review']);
@@ -42,16 +43,17 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
     }
   }
   const privateDir = path.join(backupRoot, 'financing-monitor-state');
+  const sharedState=reviewStateDirectory(backupRoot);
   const historyFile = path.join(privateDir, 'verification-attempts.json');
   const history = read(historyFile, { entries: {} });
   const queueFile = path.join(privateDir, 'verification-queue.json');
   const queue = read(queueFile, {version:'FINANCING-VERIFICATION-QUEUE-1', entries:{}});
-  const budget=createReviewBudget({directory:privateDir,date,policy:config.secondary_review,collection,verification:state,queue,history});
+  const budget=createReviewBudget({directory:privateDir,sharedDirectory:sharedState,date,policy:config.secondary_review,collection,verification:state,queue,history});
   const legacy = legacyOriginals(backupRoot, date);
   const leadSearches = new Map();
   const searchFor = url => {
     if (search) return search;
-    if (!leadSearches.has(url)) leadSearches.set(url,createLeadFollowupSearch({directory:path.join(privateDir,date),date,leadUrl:url,policy:config.secondary_review,budget}));
+    if (!leadSearches.has(url)) leadSearches.set(url,createLeadFollowupSearch({directory:path.join(privateDir,date),sharedDirectory:path.join(sharedState,date),date,leadUrl:url,policy:config.secondary_review,budget}));
     return leadSearches.get(url);
   };
   const discovered = new Map(Object.values(collection.receipts || {}).flatMap(receipt => receipt.items || []).map(item => [item.url, item]));
@@ -186,6 +188,7 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
         row.search_status = found.status; row.search_reason = found.reason || '';
         for (const item of found.items || []) if(item.url!==url) candidates.add(item.url);
         const reader = createOriginalReader({directory:path.join(privateDir,'original-reader'),date,
+          sharedDirectory:path.join(sharedState,'original-reader'),
           maxRequests:config.secondary_review.capture_attempts_per_lead,budgetKey:url});
         row.capture_attempts ||= [];
         for (const targetUrl of candidates) {

@@ -10,6 +10,7 @@ import { acquireLock, digest, read, write, runStages } from './state.mjs';
 import { resolvePrivateEvidenceBackupRoot } from '../tools/private-evidence-backup-paths.mjs';
 import { indexFinancingEvidence } from './evidence-index.mjs';
 import { parseArgs } from './args.mjs';
+import {reviewStateDirectory} from './review-state.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const script = name => `agent-workflow/tools/${name}.mjs`;
@@ -90,7 +91,7 @@ async function main() {
     let collection, verification;
     // All local windows share the authoritative private queue, even when their
     // report directories differ. Busy returns immediately; no chained locks.
-    const releaseReview=acquireLock(path.join(backupRoot,'financing-monitor-state','review-owner'));
+    const releaseReview=acquireLock(path.join(reviewStateDirectory(backupRoot),'review-owner'));
     try {
       if (['all','collect','recheck'].includes(phase)) await collect({ root, directory, backupRoot, date, recheck:phase === 'recheck' });
       if (phase === 'collect' || phase === 'recheck') return;
@@ -108,7 +109,7 @@ async function main() {
     if (supplemental && (supplemental.date !== date || supplemental.version !== 'FINANCING-SUPPLEMENT-1' || supplemental.accepted !== true)) throw new Error('accepted_financing_supplement_required');
     const extractionScope = financingExtractionScope(intake, collection, supplemental);
     if (!intake?.raw_documents?.length) {
-      const release=acquireLock(path.join(backupRoot,'financing-monitor-state','review-owner'));
+      const release=acquireLock(path.join(reviewStateDirectory(backupRoot),'review-owner'));
       let verification;try {verification=finishVerification({ root, directory, date, backupRoot });} finally {release();}
       write(path.join(directory, 'publication.json'), { version: config.version, date, status: verification.counts.pending ? 'pending_verification' : 'no_new_financing', counts: collection.counts, verification }); return;
     }
@@ -138,7 +139,7 @@ async function main() {
         }
       } finally { fs.closeSync(fd); }
     } });
-    const release=acquireLock(path.join(backupRoot,'financing-monitor-state','review-owner'));
+    const release=acquireLock(path.join(reviewStateDirectory(backupRoot),'review-owner'));
     let finished;try {finished=finishVerification({ root, directory, date, backupRoot });} finally {release();}
     write(path.join(directory, 'publication.json'), { verification:finished, version: config.version, date, status: 'ready_for_review', counts: collection.counts, next: 'merge_pages_portal_and_live_parity', generated_at: new Date().toISOString() });
     console.log(JSON.stringify({ date, status: 'ready_for_review', report: path.join(directory, 'publication.json') }));

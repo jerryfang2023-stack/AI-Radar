@@ -15,6 +15,7 @@ import { captureAllowance, backlogReserve } from './capture-budget.mjs';
 import { recheckPending } from './recheck.mjs';
 import {createReviewBudget} from './review-budget.mjs';
 import {createLeadFollowupSearch} from './lead-followup-search.mjs';
+import {reviewStateDirectory} from './review-state.mjs';
 
 export async function collect({ root, directory, backupRoot, date, gateway, feed, supplements, capture = captureOriginal, recheck = false, reviewSearch }) {
   const file = path.join(directory, 'collection.json');
@@ -39,7 +40,8 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
   gateway ||= createSearchGateway({ cacheDir: path.join(directory, 'search-cache'), maxRequests: config.max_search_requests });
   const state = previous || { version: config.version, date, captures: {} };
   const sourceState = path.join(backupRoot,'financing-monitor-state');
-  const reader=createOriginalReader({directory:path.join(sourceState,'original-reader'),date,maxRequests:config.original_reader_requests});
+  const sharedState=reviewStateDirectory(backupRoot);
+  const reader=createOriginalReader({directory:path.join(sourceState,'original-reader'),sharedDirectory:path.join(sharedState,'original-reader'),date,maxRequests:config.original_reader_requests});
   if (recheck && !previous?.accepted) throw new Error('accepted_collection_required_for_recheck');
   const discovered = recheck ? {complete:true,failed:[],supplementalFailures:state.supplemental_failures || [],leads:[]} : await discover({ date, search: gateway.search, feed, previous: state.receipts,
     supplements: supplements || [
@@ -85,17 +87,17 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
     write(file, state);
   }
   const reviewGateways = new Map();
-  const budget=createReviewBudget({directory:sourceState,date,policy:config.secondary_review,collection:state,
+  const budget=createReviewBudget({directory:sourceState,sharedDirectory:sharedState,date,policy:config.secondary_review,collection:state,
     verification:read(verificationFile,{}),queue:read(path.join(sourceState,'verification-queue.json'),{}),history:read(path.join(sourceState,'verification-attempts.json'),{})});
   await recheckPending({state,date,policy:config.secondary_review,
     budget,
     search:reviewSearch || ((query,limit,{leadUrl}) => {
       // Each lead's four queries retain a separate provider request allowance.
       const leadKey = leadUrl;
-      if (!reviewGateways.has(leadKey)) reviewGateways.set(leadKey,createLeadFollowupSearch({directory:path.join(sourceState,date),date,leadUrl,policy:config.secondary_review,budget}));
+      if (!reviewGateways.has(leadKey)) reviewGateways.set(leadKey,createLeadFollowupSearch({directory:path.join(sourceState,date),sharedDirectory:path.join(sharedState,date),date,leadUrl,policy:config.secondary_review,budget}));
       return reviewGateways.get(leadKey).query(query,limit);
     }),
-    capture:(lead,options)=>capture(lead,{...options,reader:createOriginalReader({directory:path.join(sourceState,'original-reader'),date,maxRequests:config.secondary_review.capture_attempts_per_lead,budgetKey:options.recheckLeadUrl})}),
+    capture:(lead,options)=>capture(lead,{...options,reader:createOriginalReader({directory:path.join(sourceState,'original-reader'),sharedDirectory:path.join(sharedState,'original-reader'),date,maxRequests:config.secondary_review.capture_attempts_per_lead,budgetKey:options.recheckLeadUrl})}),
     accept:async (lead,result,{leadUrl})=>{
       ingestPrivateEvidenceRecords({root,backupRoot,records:[{snapshotRef:`financing/${date}/${digest(lead.url).slice(0,16)}.json`,sourceUrl:lead.url,dataDate:date,contentHash:result.record.content_hash,body:result.record.clean_text,metadata:result.record}]});
       const {record,...receipt}=result;

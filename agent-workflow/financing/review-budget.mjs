@@ -12,9 +12,10 @@ export function reviewCapacity(policy, leads) {
 
 // The caller owns the shared private review lock. A lead registration is never
 // a network request. Reservations survive recovery, including unknown outcomes.
-export function createReviewBudget({directory, date, policy, collection = {}, verification = {}, queue = {}, history = {}}) {
+export function createReviewBudget({directory, sharedDirectory=directory, date, policy, collection = {}, verification = {}, queue = {}, history = {}}) {
   const file = path.join(directory, date, 'review-budget.json');
-  const state = read(file, {version:'FINANCING-REVIEW-BUDGET-1', date, leads:{}, captures:{}, search_requests:0});
+  const sharedFile=path.join(sharedDirectory,date,'review-budget.json');
+  const state = read(sharedFile,read(file, {version:'FINANCING-REVIEW-BUDGET-1', date, leads:{}, captures:{}, search_requests:0}));
   if (state.date !== date || state.version !== 'FINANCING-REVIEW-BUDGET-1') throw new Error('review_budget_identity_mismatch');
   const register = url => {state.leads[digest(url)] ||= {capture_requests:0, search_requests:0};};
   for (const [url,row] of Object.entries(collection.captures || {})) if (row.status === 'pending') register(url);
@@ -54,7 +55,7 @@ export function createReviewBudget({directory, date, policy, collection = {}, ve
     planned.captures=Math.max(planned.captures,orphaned+Math.ceil(Object.keys(state.leads).length*policy.capture_attempts_per_lead*(1+(policy.capacity_margin ?? 0.2))));
     return planned;
   };
-  const save = () => {state.capacity = capacity(); write(file,state);};
+  const save = () => {state.capacity = capacity();write(sharedFile,state);if(sharedFile!==file)write(file,state);};
   save();
   return {
     hasCapture: url => Boolean(state.captures[digest(url)]),
