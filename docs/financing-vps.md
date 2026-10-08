@@ -8,7 +8,7 @@
 - VPS `guanlan-financing.timer` 每十分钟检查一次，`Persistent=true`；每日 08:10 前不启动新的日期，已有未完成日期可恢复。
 - 初始 `/etc/guanlan-financing/runtime.env` 为 `GUANLAN_VPS_MODE=standby`。此模式仅调用融资派发器的 `--dry-run=true`，保存观察回执，不派发、不调用模型、不合并、不发布。
 - `active` 模式复用同一 GitHub 融资生产工作流及恢复检查点，Hermes 审核开放的融资 PR，检查精确提交与 CI 后合并，再等 Pages 和 VPS 发布。模型 API ID 固定 `deepseek-flash`（DeepSeek V4.1 Flash）。每日期最多三次不同提交/基线的模型审核；失败或中断记录为未知，不自动重复付费。
-- `funding-health-dispatch.yml` 仅保留人工恢复入口，不再 10:30 定时触发。备用模式避免重复采集、审核与发布。
+- `funding-health-dispatch.yml` 保留每日 10:30 幂等兜底。备用模式避免重复采集、审核与发布。
 
 ## VPS 边界和目录
 
