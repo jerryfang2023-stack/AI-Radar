@@ -2,7 +2,7 @@
   "version": "FINANCING-DISPOSITION-REVIEW-1",
   "date": "2026-10-08",
   "reviewer": "Codex responsible financing evidence review",
-  "scope": "Exact source-bound review of the original 19 entries plus two alternate-source duplicate bindings; accepted financing remains subject to normal fact and publication gates.",
+  "scope": "Exact source-bound review of the original 19 entries, Flow and OpenRouter duplicate bindings, and a later official-source review for Flow; accepted financing remains subject to normal fact and publication gates.",
   "rows": [
     {
       "id": "tvs-automobile",
@@ -443,6 +443,34 @@
         "announced_at": "2026-05-26",
         "round_code": "series_b",
         "reason": "TechCrunch 明确将该 $113 million Series B 报道日期标为 2026-05-26，官方公告确认相同轮次与金额；与目录事件卡完全对应。"
+      }
+    },
+    {
+      "id": "flow-swyx-official-duplicate-20261008",
+      "url": "https://x.com/swyx/status/2105348724331606411",
+      "status": "already_covered",
+      "reason": "后续复核了本日新增接受的 Flow Engineering 官方公告。公告明确写明 2026-09-30、$50 million Series B；TechCrunch 独立原文也确认同一融资，与融资目录事件 EV-f2950d2104e97163 对应。此前的社交线索是该已发布融资的关联讨论，不是新融资事件。",
+      "reviewed_at": "2026-10-08T11:23:13.594Z",
+      "review_basis": "responsible_alternate_source_review",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+          "content_hash": "0e165257d3ce29f246dba2adfc0b69163f4697aebea8dd9c6a05cfca8df519e5",
+          "quote": "San Francisco, CA — Sept 30, 2026 — Flow Engineering, the agentic platform for hardware development, today announced a $50 million Series B at a $750 million valuation."
+        },
+        {
+          "source_url": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
+          "content_hash": "953120e8ff6ea4a75018b1d385f9d5a4e77f61bd19f7bd192b4c0b98c8449464",
+          "quote": "Flow Engineering, a startup that offers AI tools for hardware design, has raised a $50 million Series B round"
+        }
+      ],
+      "event_binding": {
+        "event_id": "EV-f2950d2104e97163",
+        "company": "Flow Engineering",
+        "announced_at": "2026-09-30",
+        "round_code": "series_b",
+        "reason": "公司公告和独立 TechCrunch 原文均明确为同日 Flow Engineering $50 million Series B，与已发布事件卡完全对应。"
       }
     }
   ]
