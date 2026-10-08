@@ -2,21 +2,2701 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-10-08",
-    "generated_at": "2026-10-08T02:35:37.528Z",
+    "generated_at": "2026-10-08T12:44:45.689Z",
     "trigger": "accepted_financing_event_research",
     "research_provider": "search-gateway+direct-original+deepseek",
     "model": "deepseek-flash",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 27,
-      "auto_published": 11,
+      "funding_events": 32,
+      "auto_published": 16,
       "blocked": 0,
       "pending": 4,
       "deduplicated": 12
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-8ce3bd9338aed352",
+      "triggered_by_event_id": "EV-d77f6cbbacf2a53b",
+      "as_of_date": "2026-10-08",
+      "company": {
+        "entity_id": "EN-1e931b89bd9e0497",
+        "name": "Eden AI Labs Inc.",
+        "full_name": "Eden AI Labs Inc.",
+        "website": "https://meeteden.ai/",
+        "summary": "Eden AI Labs Inc. 开发个人 AI 代理，可跨应用和网页完成订机票、订餐厅、订餐、安排日程、支付账单等真实任务。",
+        "headquarters": "San Francisco, CA",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6d07e2ff80974efa",
+            "quote": "Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible.",
+            "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+            "quote_hash": "6f7a9cebde57a7f9e67497da5c0294af902af1c114f4c5be3c7a7ba783103cf5"
+          },
+          {
+            "source_id": "FISRC-3da9c248e9c78adf",
+            "quote": "Eden AI Labs Inc. builds personal AI agents that work to complete real-world tasks.",
+            "source_content_hash": "3e3e62f65e93bd02",
+            "quote_hash": "2f8a37764fd3e9fdafbd8aa408ac5b20aa9970ca7fdcc30caa70d5d8f2c21959"
+          }
+        ],
+        "application_entity_id": "EN-1e931b89bd9e0497",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "其他融资",
+        "amount": "$1.5 million",
+        "total_raised": "$1.5M",
+        "announced_at": "2026-10-05",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Gaea Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6d07e2ff80974efa",
+                "quote": "The round was led by Gaea Ventures, with participation from Becker Ventures, GTM Ventures, other family offices and angel investors.",
+                "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+                "quote_hash": "37367bd37797df444e7b70bfc1b03a7e4465255a7c89931f216411fb9d62b0f2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Becker Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6d07e2ff80974efa",
+                "quote": "The round was led by Gaea Ventures, with participation from Becker Ventures, GTM Ventures, other family offices and angel investors.",
+                "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+                "quote_hash": "37367bd37797df444e7b70bfc1b03a7e4465255a7c89931f216411fb9d62b0f2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "GTM Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6d07e2ff80974efa",
+                "quote": "The round was led by Gaea Ventures, with participation from Becker Ventures, GTM Ventures, other family offices and angel investors.",
+                "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+                "quote_hash": "37367bd37797df444e7b70bfc1b03a7e4465255a7c89931f216411fb9d62b0f2"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6d07e2ff80974efa",
+            "quote": "SAN FRANCISCO, Oct. 05, 2026 (GLOBE NEWSWIRE) -- Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible.",
+            "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+            "quote_hash": "29ccf10669c54dff96c52f02c6cf84fc0ea5b409b3f6a90c609bc8df61b76122"
+          },
+          {
+            "source_id": "FISRC-6d07e2ff80974efa",
+            "quote": "Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible.",
+            "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+            "quote_hash": "6f7a9cebde57a7f9e67497da5c0294af902af1c114f4c5be3c7a7ba783103cf5"
+          }
+        ],
+        "round_code": "other",
+        "round_original": "Funding round",
+        "amount_original": "$1.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "150 万美元"
+        },
+        "total_raised_original": "$1.5M",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 1500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "150 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-d77f6cbbacf2a53b",
+            "round_original": "Funding round",
+            "amount": "$1.5 million",
+            "announced_at": "2026-10-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6d07e2ff80974efa",
+                "quote": "SAN FRANCISCO, Oct. 05, 2026 (GLOBE NEWSWIRE) -- Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible.",
+                "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+                "quote_hash": "29ccf10669c54dff96c52f02c6cf84fc0ea5b409b3f6a90c609bc8df61b76122"
+              },
+              {
+                "source_id": "FISRC-6d07e2ff80974efa",
+                "quote": "Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible.",
+                "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+                "quote_hash": "6f7a9cebde57a7f9e67497da5c0294af902af1c114f4c5be3c7a7ba783103cf5"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Eden",
+          "description": "个人 AI 助手，由 AI 代理驱动，可跨应用和网页导航，代表用户完成订机票、订餐厅、订餐、安排日程、支付账单等任务。",
+          "target_customers": "个人用户",
+          "features": [
+            "跨应用和网页导航",
+            "代表用户安全自主支付",
+            "个性化并随用户成长",
+            "免费使用，按代理发起的卡交易收取小额交易费"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6d07e2ff80974efa",
+              "quote": "Eden is the most intuitive personal assistant powered by AI agents that work across apps and navigate the web to get things done for the user. Eden can book flights, reserve restaurants, order food, schedule appointments, pay bills and more.",
+              "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+              "quote_hash": "f04633b6fce8523fddcf8beb226c8602c82a8263db04011f8f75c94b1975529a"
+            },
+            {
+              "source_id": "FISRC-6d07e2ff80974efa",
+              "quote": "Eden is free for users. The company charges a small transaction fee on card purchases made by the agent, such as flights, hotels, food delivery and similar purchases.",
+              "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+              "quote_hash": "37148c9e54db60fe6a961417cb567c50b684e051d70cf4bb6a28712e2da5cdb8"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "融资金额",
+          "value": "$1.5 million",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6d07e2ff80974efa",
+              "quote": "Eden AI Labs Inc. today announced it has raised $1.5 million",
+              "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+              "quote_hash": "8bdaa2c0692adcb1b40e7ea02171b46d3185166f74fe5e6fec24380a7a81d0aa"
+            }
+          ]
+        },
+        {
+          "label": "早期访问等待名单人数",
+          "value": "13,000+",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6d07e2ff80974efa",
+              "quote": "More than 13,000 people have signed up for early access.",
+              "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+              "quote_hash": "d8314212720dbb67b7e74fddd3b26a62537299366d20f27bfb8a1d56408d668f"
+            }
+          ]
+        },
+        {
+          "label": "全球在线交易额",
+          "value": "$107.5 trillion",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6d07e2ff80974efa",
+              "quote": "Roughly $107.5 trillion in transactions is processed online each year",
+              "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+              "quote_hash": "28b07a5cc493d0ec26e266cac06c3d47d336bcf0d2b9365b2dd4622aa62fd61c"
+            }
+          ]
+        },
+        {
+          "label": "AI代理处理全球交易量占比",
+          "value": "0.0001%",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6d07e2ff80974efa",
+              "quote": "AI agents today handle an estimated 0.0001% of global transaction volume",
+              "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+              "quote_hash": "293a8f8589c30e73392b9f2b59db695bc3f2e9c819aeb8772f1574897a00c62a"
+            }
+          ]
+        },
+        {
+          "label": "典型智能手机应用数量",
+          "value": "约80个",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6d07e2ff80974efa",
+              "quote": "A typical smartphone carries around eighty apps",
+              "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+              "quote_hash": "b35eda10d60ac8c618c76855f63f712e486fd36e82f081c74482ed60f32f576a"
+            }
+          ]
+        },
+        {
+          "label": "手动完成常见任务耗时",
+          "value": "10到15分钟",
+          "observed_at": "2026-10-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6d07e2ff80974efa",
+              "quote": "many take 10 to 15 minutes to complete manually",
+              "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+              "quote_hash": "1d620098da3d62b628f2f2a954707feadee4939636a8f34183f263e95479034f"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是 Eden 能否将个人 AI 代理从“回答问题”推进到“完成交易”，并通过代理发起的卡交易手续费形成收入。已验证信号包括：公司完成 150 万美元融资、产品进入公开测试、早期访问等待名单超过 13,000 人、以及公司已明确免费使用加交易费的商业模式。但来源未披露估值、累计融资总额、收入或交易量实绩，且关于代理交易量增长百倍/千倍的预期属于前瞻性陈述，因此当前判断仅能基于融资事件、产品定位和等待名单规模，无法验证商业化落地效果。",
+        "validated_signals": [
+          "完成 150 万美元融资，由 Gaea Ventures 领投，Becker Ventures、GTM Ventures 参投",
+          "产品进入公开测试，采用邀请制",
+          "早期访问等待名单超过 13,000 人",
+          "商业模式为对用户免费，按代理发起的卡交易收取小额交易费"
+        ],
+        "risks": [
+          "来源未披露估值、累计融资总额、收入或交易量实绩，商业化效果无法验证",
+          "代理交易量增长百倍/千倍的预期属于前瞻性陈述，存在不确定性",
+          "自主支付涉及安全与用户信任，来源未披露具体安全机制或合规进展",
+          "交易费模式依赖代理实际完成购买，若使用频率或转化不足则收入承压"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "consumer"
+        ],
+        "sector": "个人 AI 助手",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是 Eden 能否将个人 AI 代理从“回答问题”推进到“完成交易”，并通过代理发起的卡交易手续费形成收入。已验证信号包括：公司完成 150 万美元融资、产品进入公开测试、早期访问等待名单超过 13,000 人、以及公司已明确免费使用加交易费的商业模式。但来源未披露估值、累计融资总额、收入或交易量实绩，且关于代理交易量增长百倍/千倍的预期属于前瞻性陈述，因此当前判断仅能基于融资事件、产品定位和等待名单规模，无法验证商业化落地效果。",
+          "evidence_signals": [
+            "完成 150 万美元融资，由 Gaea Ventures 领投，Becker Ventures、GTM Ventures 参投",
+            "产品进入公开测试，采用邀请制",
+            "早期访问等待名单超过 13,000 人",
+            "商业模式为对用户免费，按代理发起的卡交易收取小额交易费"
+          ],
+          "risks": [
+            "来源未披露估值、累计融资总额、收入或交易量实绩，商业化效果无法验证",
+            "代理交易量增长百倍/千倍的预期属于前瞻性陈述，存在不确定性",
+            "自主支付涉及安全与用户信任，来源未披露具体安全机制或合规进展",
+            "交易费模式依赖代理实际完成购买，若使用频率或转化不足则收入承压"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Eden",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Gaea Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Becker Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GTM Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d77f6cbbacf2a53b",
+          "date": "2026-10-05",
+          "title": "Eden AI Labs Inc. 融资 150 万美元，打造面向所有人的个人 AI",
+          "amount": "$1.5 million",
+          "source_refs": [
+            "SA-f1380f6ede43713f"
+          ]
+        },
+        {
+          "event_id": "EV-4a6ee188df36e21c",
+          "date": "2026-10-05",
+          "title": "Eden AI Labs Inc. 融资 150 万美元，打造面向所有人的个人 AI",
+          "amount": "$1.5 million",
+          "source_refs": [
+            "SA-f1380f6ede43713f"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-6d07e2ff80974efa",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/05/3374883/0/en/eden-ai-labs-inc-raises-1-5m-to-build-personal-ai-that-works-for-everyone.html",
+          "title": "Eden AI Labs Inc. 融资 150 万美元，打造面向所有人的个人 AI",
+          "publisher": "www.globenewswire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-08T12:35:48.493Z",
+          "content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+          "source_artifact_id": "SA-f1380f6ede43713f",
+          "raw_id": "RAW-37d8dcc3ea683bea"
+        },
+        {
+          "source_id": "FISRC-3da9c248e9c78adf",
+          "source_url": "https://fireround.dev/companies/meeteden.ai",
+          "title": "Eden AI Labs Inc.: $1.5M Funding round",
+          "publisher": "fireround.dev",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:43:43.219Z",
+          "content_hash": "3e3e62f65e93bd02",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-08T12:44:45.521Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-08T12:44:45.521Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Eden"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-d77f6cbbacf2a53b"
+      ],
+      "aggregation": {
+        "key": "EN-1e931b89bd9e0497|other",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-c8f2f56ef87eee0d",
+      "triggered_by_event_id": "EV-abde425d9980f6b9",
+      "as_of_date": "2026-10-08",
+      "company": {
+        "entity_id": "EN-7eed2a69df089fc8",
+        "name": "CurvetAI",
+        "full_name": "CurvetAI",
+        "website": "",
+        "summary": "CurvetAI 是一家总部位于浦那的 AI 初创公司，运营一个统一 AI 工作空间，将多个 AI 模型汇聚到单一平台，用户可在同一工作流中使用文本、图像、音频和视频模型、比较输出并组合能力。公司由 Vivek Dubey 和 Utkarsh Gupta 于 2025 年 12 月创立，最初是 AI 工具与提示词发现平台，后转型为工作空间模式。",
+        "headquarters": "Pune",
+        "founders": [
+          {
+            "name": "Vivek Dubey",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-141fde62ccd11929",
+                "quote": "Founded in December 2025 by Vivek Dubey and Utkarsh Gupta",
+                "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+                "quote_hash": "bfe87e6a01cc03a4c9e08dc3186d4a20d64384b4d0e47a179d7c1a1daf65a9cc"
+              },
+              {
+                "source_id": "FISRC-db7b7baf205696d4",
+                "quote": "said Vivek Dubey, Co-founder and CEO, CurvetAI",
+                "source_content_hash": "d8927e48e7aaeeb4",
+                "quote_hash": "40b9cbf2125e6495483cd802c30618c18beed1891925f76bbc98ab98999d9b10"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Utkarsh Gupta",
+            "role": "Co-founder and CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-141fde62ccd11929",
+                "quote": "Co-founder Utkarsh Gupta has worked at Samsung and currently leads CurvetAI’s engineering and technical infrastructure.",
+                "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+                "quote_hash": "9df06f775412fcf1f3bd29f11bc2bcdbf9f69187cf2799af8d7332fede3ef49f"
+              },
+              {
+                "source_id": "FISRC-db7b7baf205696d4",
+                "quote": "Gupta, CurvetAI’s Co-founder and CTO, previously worked at Samsung and leads the company’s engineering and technical infrastructure.",
+                "source_content_hash": "d8927e48e7aaeeb4",
+                "quote_hash": "b666c046bffe80b3c6aaf8b275459465d3e91900e393515b18a8e9c1e89ae80c"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-141fde62ccd11929",
+            "quote": "Pune-based AI startup CurvetAI has raised Rs 6 crore in a pre-seed funding round led by Merak Ventures",
+            "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+            "quote_hash": "fdd8dc8d82a3db32d42199ae3440911dbbe45a351dd7c7cf996dbb6151cefaf7"
+          },
+          {
+            "source_id": "FISRC-be92077ed9b7f033",
+            "quote": "CurvetAI, a unified AI workspace that lets users access and combine multiple AI models from one platform",
+            "source_content_hash": "0dab3678bb5a4c34",
+            "quote_hash": "ee0600edbe5b1a79fc7a3154481fabcc79c267c2aa923173472e0720d72b1a91"
+          }
+        ],
+        "application_entity_id": "EN-7eed2a69df089fc8",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "Rs 6 Crore",
+        "total_raised": "",
+        "announced_at": "2026-10-06",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Merak Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-141fde62ccd11929",
+                "quote": "has raised Rs 6 crore in a pre-seed funding round led by Merak Ventures, with participation from angel investors",
+                "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+                "quote_hash": "177aa8047ad287fe6c4e71f1ee15894ebbc63b08b8e796f101b8aa524564fe45"
+              },
+              {
+                "source_id": "FISRC-be92077ed9b7f033",
+                "quote": "has raised INR 6 crore in a pre-seed round led by Merak Ventures, with participation from a group of angel investors",
+                "source_content_hash": "0dab3678bb5a4c34",
+                "quote_hash": "0363c2c0df7d42a6e48352b0c3706935b0758a8da92c6b00aa53784e2e34b22f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-141fde62ccd11929",
+            "quote": "CurvetAI Raises Rs 6 Crore in Pre-Seed Round Led by Merak Ventures",
+            "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+            "quote_hash": "ae4e69a6937facbb6ddd434919b3bf6bca6a97cf7e0ba4888136f8f6c26dc3a6"
+          },
+          {
+            "source_id": "FISRC-141fde62ccd11929",
+            "quote": "Pune-based AI startup CurvetAI has raised Rs 6 crore in a pre-seed funding round led by Merak Ventures, with participation from angel investors.",
+            "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+            "quote_hash": "1f4d19f688d55e203192043fc5c1ccdd17b8acabae2f0eb7d0707a34bbd860d2"
+          },
+          {
+            "source_id": "FISRC-db7b7baf205696d4",
+            "quote": "CurvetAI, an AI workspace that allows users to access and combine multiple AI models from one platform, has raised Rs 6 crore in a pre-seed round led by Merak Ventures.",
+            "source_content_hash": "d8927e48e7aaeeb4",
+            "quote_hash": "1487811d671e05af6da1bfb0ed83b0ac94466b7228c2d2ef0c6f78be0e236196"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "Rs 6 Crore",
+        "amount_normalized": {
+          "currency": "INR",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万印度卢比"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-abde425d9980f6b9",
+            "round_original": "预种子轮",
+            "amount": "Rs 6 Crore",
+            "announced_at": "2026-10-06",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-141fde62ccd11929",
+                "quote": "CurvetAI Raises Rs 6 Crore in Pre-Seed Round Led by Merak Ventures",
+                "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+                "quote_hash": "ae4e69a6937facbb6ddd434919b3bf6bca6a97cf7e0ba4888136f8f6c26dc3a6"
+              },
+              {
+                "source_id": "FISRC-141fde62ccd11929",
+                "quote": "Pune-based AI startup CurvetAI has raised Rs 6 crore in a pre-seed funding round led by Merak Ventures, with participation from angel investors.",
+                "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+                "quote_hash": "1f4d19f688d55e203192043fc5c1ccdd17b8acabae2f0eb7d0707a34bbd860d2"
+              },
+              {
+                "source_id": "FISRC-db7b7baf205696d4",
+                "quote": "CurvetAI, an AI workspace that allows users to access and combine multiple AI models from one platform, has raised Rs 6 crore in a pre-seed round led by Merak Ventures.",
+                "source_content_hash": "d8927e48e7aaeeb4",
+                "quote_hash": "1487811d671e05af6da1bfb0ed83b0ac94466b7228c2d2ef0c6f78be0e236196"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "CurvetAI AI Workspace",
+          "description": "一个统一 AI 工作空间，将多个 AI 模型汇聚到单一平台，用户可在同一工作流中使用文本、图像、音频和视频模型，比较不同模型的输出并组合其能力。",
+          "target_customers": "个人用户、团队和印度各地的教育机构",
+          "features": [
+            "在同一平台访问多个 AI 模型",
+            "比较不同模型的输出",
+            "在同一工作流中组合不同 AI 能力",
+            "根据任务需求选择合适模型",
+            "支持文本、图像、音频和视频模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-141fde62ccd11929",
+              "quote": "CurvetAI operates an AI workspace that brings multiple AI models together on a single platform. The platform allows users to work with text, image, audio and video models in one place. Users can compare outputs from different models and combine their capabilities within the same workflow.",
+              "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+              "quote_hash": "fa043fddf598cba07d62f352193c3eab7d8a864207ac945b9a1914d6fc581862"
+            },
+            {
+              "source_id": "FISRC-be92077ed9b7f033",
+              "quote": "letting users work across text, image, audio and video models within a single visual workspace, compare outputs, and route tasks to the model best suited to them",
+              "source_content_hash": "0dab3678bb5a4c34",
+              "quote_hash": "4d20f7b86a637ab57228b9cde0981c11aa5a2407227383059be92849234c0a7d"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Individuals",
+          "industry": "",
+          "use_case": "使用统一 AI 工作空间访问和组合多个 AI 模型",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-141fde62ccd11929",
+              "quote": "Its platform is used by individuals, teams and educational institutions.",
+              "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+              "quote_hash": "5ace7b089bd8fe478050a5095fb54128642c7cc301a7232140a8481118cb4e06"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Teams",
+          "industry": "",
+          "use_case": "使用统一 AI 工作空间访问和组合多个 AI 模型",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-141fde62ccd11929",
+              "quote": "Its platform is used by individuals, teams and educational institutions.",
+              "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+              "quote_hash": "5ace7b089bd8fe478050a5095fb54128642c7cc301a7232140a8481118cb4e06"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Educational institutions across India",
+          "industry": "education",
+          "use_case": "使用统一 AI 工作空间访问和组合多个 AI 模型",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-be92077ed9b7f033",
+              "quote": "works with educational institutions across India",
+              "source_content_hash": "0dab3678bb5a4c34",
+              "quote_hash": "cf7f4578687d18b464913a71ccd95e65f1f569cd1c92bfa5f4f191119c7ca3dc"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [],
+      "quotes": [
+        {
+          "speaker": "Sheetal Bahl",
+          "quote": "The best technology companies often emerge when a market becomes more complex than its users should have to understand, and Curvet saw that inflection early. As AI models proliferate, intelligence alone stops being the bottleneck. What gave us conviction was the founders’ ability to translate that insight into a product people were already using at scale, and to keep evolving it as the market moved.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-db7b7baf205696d4",
+              "quote": "The best technology companies often emerge when a market becomes more complex than its users should have to understand, and Curvet saw that inflection early. As AI models proliferate, intelligence alone stops being the bottleneck. What gave us conviction was the founders’ ability to translate that insight into a product people were already using at scale, and to keep evolving it as the market moved.",
+              "source_content_hash": "d8927e48e7aaeeb4",
+              "quote_hash": "bdd7d5bbb533c4140861ee16d3d0092c6b038e6c7c6498709386da30595a1bd1"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Merak Ventures",
+            "speaker": "Sheetal Bahl",
+            "speaker_role": "Founding Partner, Merak Ventures",
+            "rationale": "Merak Ventures 认为，当市场变得比用户需要理解的更复杂时，最好的技术公司往往会出现；CurvetAI 早期就看到了这一拐点，并且创始人能够将洞察转化为已被规模化使用的产品，并随市场变化持续演进。",
+            "quote": "The best technology companies often emerge when a market becomes more complex than its users should have to understand, and Curvet saw that inflection early. As AI models proliferate, intelligence alone stops being the bottleneck. What gave us conviction was the founders’ ability to translate that insight into a product people were already using at scale, and to keep evolving it as the market moved.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-db7b7baf205696d4",
+                "quote": "The best technology companies often emerge when a market becomes more complex than its users should have to understand, and Curvet saw that inflection early. As AI models proliferate, intelligence alone stops being the bottleneck. What gave us conviction was the founders’ ability to translate that insight into a product people were already using at scale, and to keep evolving it as the market moved.",
+                "source_content_hash": "d8927e48e7aaeeb4",
+                "quote_hash": "bdd7d5bbb533c4140861ee16d3d0092c6b038e6c7c6498709386da30595a1bd1"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "Merak Ventures 领投 CurvetAI 的 6 千万卢比种子前轮，押注的核心变量是：随着专用 AI 模型数量增长，用户面临模型选择、订阅管理和跨工具切换的碎片化问题，而 CurvetAI 试图成为用户与模型生态之间的工作流与编排层。已验证信号包括：平台已有超过 10 万全球月活用户，印度和美国是最大市场，并已开始产生收入；公司从工具发现平台转型为统一工作空间，并计划利用新资金加强技术基础设施、扩充团队并开发能处理更复杂工作流的 agent 能力。证据边界在于：本轮金额和领投方有多个来源确认，但累计融资额、估值、具体收入规模、用户付费转化率以及 agent 产品的实际效果均未披露，资本判断主要依赖早期用户采用和产品方向，而非已验证的规模化商业指标。",
+        "validated_signals": [
+          "平台已有超过 10 万全球月活用户，印度和美国是最大市场",
+          "公司已开始产生收入",
+          "平台被个人、团队和印度各地教育机构使用",
+          "公司从 AI 工具发现平台转型为统一 AI 工作空间",
+          "公司与 GnaniAI、Rumik AI 和 Alibaba 有合作"
+        ],
+        "risks": [
+          "累计融资额、估值和具体收入规模未披露，无法评估资本效率和估值合理性",
+          "用户付费转化率和收入可持续性未披露，早期采用不等于可规模化的商业模式",
+          "agent 能力仍在开发中，能否处理复杂工作流并形成差异化尚未验证",
+          "AI 工作空间和模型编排赛道竞争激烈，来源未提供与具体竞品的比较数据",
+          "公司成立于 2025 年 12 月，运营历史极短，团队规模和执行能力未披露"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "content_creation"
+        ],
+        "industry_ids": [
+          "education"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "consumer",
+          "educator",
+          "student"
+        ],
+        "sector": "AI 工作空间与模型编排",
+        "investment_thesis": {
+          "statement": "Merak Ventures 领投 CurvetAI 的 6 千万卢比种子前轮，押注的核心变量是：随着专用 AI 模型数量增长，用户面临模型选择、订阅管理和跨工具切换的碎片化问题，而 CurvetAI 试图成为用户与模型生态之间的工作流与编排层。已验证信号包括：平台已有超过 10 万全球月活用户，印度和美国是最大市场，并已开始产生收入；公司从工具发现平台转型为统一工作空间，并计划利用新资金加强技术基础设施、扩充团队并开发能处理更复杂工作流的 agent 能力。证据边界在于：本轮金额和领投方有多个来源确认，但累计融资额、估值、具体收入规模、用户付费转化率以及 agent 产品的实际效果均未披露，资本判断主要依赖早期用户采用和产品方向，而非已验证的规模化商业指标。",
+          "evidence_signals": [
+            "平台已有超过 10 万全球月活用户，印度和美国是最大市场",
+            "公司已开始产生收入",
+            "平台被个人、团队和印度各地教育机构使用",
+            "公司从 AI 工具发现平台转型为统一 AI 工作空间",
+            "公司与 GnaniAI、Rumik AI 和 Alibaba 有合作"
+          ],
+          "risks": [
+            "累计融资额、估值和具体收入规模未披露，无法评估资本效率和估值合理性",
+            "用户付费转化率和收入可持续性未披露，早期采用不等于可规模化的商业模式",
+            "agent 能力仍在开发中，能否处理复杂工作流并形成差异化尚未验证",
+            "AI 工作空间和模型编排赛道竞争激烈，来源未提供与具体竞品的比较数据",
+            "公司成立于 2025 年 12 月，运营历史极短，团队规模和执行能力未披露"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CurvetAI AI Workspace",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Vivek Dubey",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Utkarsh Gupta",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Merak Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Individuals",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Teams",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Educational institutions across India",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-abde425d9980f6b9",
+          "date": "2026-10-06",
+          "title": "CurvetAI 在由 Merak Ventures 领投的种子前轮融资中筹集了 6 Crore",
+          "amount": "Rs 6 Crore",
+          "source_refs": [
+            "SA-7c0583abadfa322b"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-141fde62ccd11929",
+          "source_url": "https://www.indianstartuptimes.com/investment/curvetai-raises-rs-6-crore-in-pre-seed-round-led-by-merak-ventures/",
+          "title": "CurvetAI 在由 Merak Ventures 领投的种子前轮融资中筹集了 6 Crore",
+          "publisher": "www.indianstartuptimes.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-08T12:35:40.336Z",
+          "content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+          "source_artifact_id": "SA-7c0583abadfa322b",
+          "raw_id": "RAW-54ddebf6aed3190d"
+        },
+        {
+          "source_id": "FISRC-be92077ed9b7f033",
+          "source_url": "https://india.entrepreneur.com/business-news/funding-roundup-lorazzo-sober-co-and-curvetai-raise-fresh-capital",
+          "title": "Funding Roundup: Lorazzo, Sober &amp; Co and CurvetAI Raise Fresh Capital",
+          "publisher": "india.entrepreneur.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:43:02.124Z",
+          "content_hash": "0dab3678bb5a4c34",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-db7b7baf205696d4",
+          "source_url": "https://www.bwdisrupt.com/article/pune-based-startup-curvetai-bags-rs-6-cr-in-pre-seed-round-led-by-merak-ventures-627055",
+          "title": "Pune-based Startup CurvetAI Bags Rs 6 Cr In Pre-seed Round Led By Merak Ventures - BW Disrupt",
+          "publisher": "bwdisrupt.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:43:38.722Z",
+          "content_hash": "d8927e48e7aaeeb4",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-08T12:43:58.474Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-08T12:43:58.474Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "CurvetAI AI Workspace"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Utkarsh Gupta",
+            "Vivek Dubey"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-abde425d9980f6b9"
+      ],
+      "aggregation": {
+        "key": "EN-7eed2a69df089fc8|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-36c770b842e7238d",
+      "triggered_by_event_id": "EV-d9772412a89c2367",
+      "as_of_date": "2026-10-08",
+      "company": {
+        "entity_id": "EN-ecd6dea6127e2b74",
+        "name": "Tensor Machines",
+        "full_name": "Tensor Machines",
+        "website": "https://tensormachines.org",
+        "summary": "总部位于旧金山的AI硬件工具与物理模型开发商，构建开源AI硬件基准，用于衡量数据中心计算基础设施的能耗、成本与有效产出。",
+        "headquarters": "San Francisco, CA",
+        "founders": [
+          {
+            "name": "Muneeb Rasool",
+            "role": "创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e5527abe90dd056a",
+                "quote": "Founder and chief executive officer Muneeb Rasool leads the company.",
+                "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+                "quote_hash": "5466f3c0f5f3e36f04608e084ae39041e2e04e335ff34b9839f3c632b17b17fb"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mohamed Abdalla",
+            "role": "联合创始人兼首席技术官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4de109f0ef2f4e3",
+                "quote": "Mohamed Abdalla is the co-founder and CTO, leading technical strategy, architecture, engineering, assessment infrastructure, and the models connecting GPU behavior to useful output.",
+                "source_content_hash": "0ff4770b9ddab3ea",
+                "quote_hash": "d7f4072e7f84ffd532d4fcf8f3da30cb39d0cbb74d3da5a1cd643719ae934ce6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hafiz Malik",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-20755124f174af09",
+                "quote": "Hafiz Malik · Co-founderHe has spent fifteen years at the University of Michigan working at the intersection of hardware security, signal processing, and machine learning",
+                "source_content_hash": "53594a5ae0d4c240",
+                "quote_hash": "1bf2cfc52390ad6a7bfbad6013816721ec31945a69cce0dbc6061e0e925c40a7"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e5527abe90dd056a",
+            "quote": "a San Francisco-based developer of AI hardware tools and physics-based models, has raised $1.5 million in pre-seed funding.",
+            "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+            "quote_hash": "498cd76dcc3898b16291a941590b9b90fdad31a973344e1f102f85b577ed0395"
+          },
+          {
+            "source_id": "FISRC-20755124f174af09",
+            "quote": "A developer of AI hardware tools and physics-based models",
+            "source_content_hash": "53594a5ae0d4c240",
+            "quote_hash": "db65b14957f7daf8534515417174d1e66b63876ec13ead56b3bd74929c57f0dd"
+          }
+        ],
+        "application_entity_id": "EN-ecd6dea6127e2b74",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "$1.5M",
+        "total_raised": "",
+        "announced_at": "2026-10-07",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Omni VC",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e5527abe90dd056a",
+                "quote": "Omni VCDealroom has a profile for this one. Try Dealroom → led the round, with Reinforced VenturesDealroom has a profile for this one. Try Dealroom →, Avesta FundDealroom has a profile for this one. Try Dealroom →, and Draper U Ventures participating.",
+                "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+                "quote_hash": "dc6b615b85b9fe8d8f2a1539984e05abb8a836c08967fc6562d5b5ad2f721f4a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Reinforced Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e5527abe90dd056a",
+                "quote": "Omni VCDealroom has a profile for this one. Try Dealroom → led the round, with Reinforced VenturesDealroom has a profile for this one. Try Dealroom →, Avesta FundDealroom has a profile for this one. Try Dealroom →, and Draper U Ventures participating.",
+                "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+                "quote_hash": "dc6b615b85b9fe8d8f2a1539984e05abb8a836c08967fc6562d5b5ad2f721f4a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Avesta Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e5527abe90dd056a",
+                "quote": "Omni VCDealroom has a profile for this one. Try Dealroom → led the round, with Reinforced VenturesDealroom has a profile for this one. Try Dealroom →, Avesta FundDealroom has a profile for this one. Try Dealroom →, and Draper U Ventures participating.",
+                "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+                "quote_hash": "dc6b615b85b9fe8d8f2a1539984e05abb8a836c08967fc6562d5b5ad2f721f4a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Draper U Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e5527abe90dd056a",
+                "quote": "Omni VCDealroom has a profile for this one. Try Dealroom → led the round, with Reinforced VenturesDealroom has a profile for this one. Try Dealroom →, Avesta FundDealroom has a profile for this one. Try Dealroom →, and Draper U Ventures participating.",
+                "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+                "quote_hash": "dc6b615b85b9fe8d8f2a1539984e05abb8a836c08967fc6562d5b5ad2f721f4a"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e5527abe90dd056a",
+            "quote": "News › Tensor Machines raises $1.5M to measure data-center compute …",
+            "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+            "quote_hash": "d696345416e42b2e5830cb98a44c6cf4941137204771edf9b6defd7a7059ea45"
+          },
+          {
+            "source_id": "FISRC-e5527abe90dd056a",
+            "quote": "has raised $1.5 million in pre-seed funding.",
+            "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+            "quote_hash": "45b1cee83ffdacff2596ca1a1420767eadb940eb1ec7b4031546381e85828e72"
+          },
+          {
+            "source_id": "FISRC-678ad07c7dcec106",
+            "quote": "Tensor Machines also announced $1.5 million in pre-seed funding, led by Omni VC. Other investors include Reinforced Ventures, Avesta Fund and Draper U Ventures.",
+            "source_content_hash": "1563c5ece20b6c66",
+            "quote_hash": "a1dbe54786546917ae2532ce83e3760a0e1c726bfea5c58129daf9320b741a37"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "pre-seed",
+        "amount_original": "$1.5M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "150 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-d9772412a89c2367",
+            "round_original": "pre-seed",
+            "amount": "$1.5M",
+            "announced_at": "2026-10-07",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e5527abe90dd056a",
+                "quote": "News › Tensor Machines raises $1.5M to measure data-center compute …",
+                "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+                "quote_hash": "d696345416e42b2e5830cb98a44c6cf4941137204771edf9b6defd7a7059ea45"
+              },
+              {
+                "source_id": "FISRC-e5527abe90dd056a",
+                "quote": "has raised $1.5 million in pre-seed funding.",
+                "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+                "quote_hash": "45b1cee83ffdacff2596ca1a1420767eadb940eb1ec7b4031546381e85828e72"
+              },
+              {
+                "source_id": "FISRC-678ad07c7dcec106",
+                "quote": "Tensor Machines also announced $1.5 million in pre-seed funding, led by Omni VC. Other investors include Reinforced Ventures, Avesta Fund and Draper U Ventures.",
+                "source_content_hash": "1563c5ece20b6c66",
+                "quote_hash": "a1dbe54786546917ae2532ce83e3760a0e1c726bfea5c58129daf9320b741a37"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "TensorBench",
+          "description": "开源AI硬件基准，对硬件施加不同负载并记录功耗、发热、持续性能与恢复情况，将物理响应与满足服务要求的请求比例、每个被接受输出token的能耗及成本关联起来。",
+          "target_customers": "数据中心运营商、GPU云、推理服务商、企业与研究基础设施团队",
+          "features": [
+            "开源基准",
+            "记录功耗、温度、时钟与恢复",
+            "估算每百万token成本",
+            "支持受控变更后的重复测试"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-678ad07c7dcec106",
+              "quote": "Tensor's benchmark recipe applies different loads and records how hardware draws power, heats up, sustains performance and recovers.",
+              "source_content_hash": "1563c5ece20b6c66",
+              "quote_hash": "e3a160d78684830f11d964eb75c4d1fa7b2e18426c3285888977b02c8e737a4f"
+            },
+            {
+              "source_id": "FISRC-8a18c4c6e359c45b",
+              "quote": "TensorBench records GPU and server telemetry across baseline, load, cooldown, and recovery.",
+              "source_content_hash": "00753134a4d8e3fa",
+              "quote_hash": "58a64c695f2c7bb7205d478b850490a8ef0eec4f76f2a235e313f282342b91a4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "物理信息模型",
+          "description": "专有物理模型，分析功耗、热量、性能与硬件退化之间的关系，用于估计每块GPU的性能包络并指导频率、功耗、冷却与工作负载放置决策。",
+          "target_customers": "裸金属提供商与新型云设计合作伙伴（私有测试阶段）",
+          "features": [
+            "物理信息建模",
+            "预测性能包络",
+            "支持配置与放置决策"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-678ad07c7dcec106",
+              "quote": "Tensor Machines' proprietary physics-based models support this work by analyzing the relationships between power, heat, performance and hardware degradation.",
+              "source_content_hash": "1563c5ece20b6c66",
+              "quote_hash": "ce39ec874e4b27abb5f0c24220065543e5438c212b46fa6928948d10bab718b7"
+            },
+            {
+              "source_id": "FISRC-8a18c4c6e359c45b",
+              "quote": "The goal is to estimate the performance envelope of each GPU: the throughput, latency, energy, and thermal outcomes it can attain for a workload as operating conditions change.",
+              "source_content_hash": "00753134a4d8e3fa",
+              "quote_hash": "821bf5f5f3a4ed96e54a6fd61c6d103f5081ff936949565b951fc195cfc148e1"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "融资额",
+          "value": "$1.5M",
+          "observed_at": "2026-10-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e5527abe90dd056a",
+              "quote": "has raised $1.5 million in pre-seed funding.",
+              "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+              "quote_hash": "45b1cee83ffdacff2596ca1a1420767eadb940eb1ec7b4031546381e85828e72"
+            }
+          ]
+        },
+        {
+          "label": "同一GPU模型token吞吐差异",
+          "value": "近15%",
+          "observed_at": "2026-10-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-678ad07c7dcec106",
+              "quote": "On one inference workload, the fastest result delivered nearly 15% more tokens per second than the slowest.",
+              "source_content_hash": "1563c5ece20b6c66",
+              "quote_hash": "51be16b45c215572eef9ef8fe5fb690b76cd6f8c1e2da42cfaedb0d63faf4dee"
+            }
+          ]
+        },
+        {
+          "label": "功耗提升与FP16吞吐提升对比",
+          "value": "功耗约增36%，FP16吞吐增21%",
+          "observed_at": "2026-10-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-678ad07c7dcec106",
+              "quote": "a GPU operating at a higher power cap drew approximately 36% more power while delivering 21% more FP16 compute throughput than its peers.",
+              "source_content_hash": "1563c5ece20b6c66",
+              "quote_hash": "c6a661ce858bb8c9b5fb32eb523121d041477d30e86c166749cd761e709e45fa"
+            }
+          ]
+        },
+        {
+          "label": "不同推理负载下的性能差距变化",
+          "value": "从约12%降至约1%",
+          "observed_at": "2026-10-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-678ad07c7dcec106",
+              "quote": "A group that performed roughly 12% below its peers on one inference workload showed only about a 1% gap on another.",
+              "source_content_hash": "1563c5ece20b6c66",
+              "quote_hash": "2a9a52ac2c5316e16fc0bf077bc2f768ef3111670bf819713b6f7bc0e6e01a02"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Muneeb Rasool",
+          "quote": "The economic value of a GPU comes from the useful work it delivers.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-678ad07c7dcec106",
+              "quote": "\"The economic value of a GPU comes from the useful work it delivers,\" said Muneeb Rasool, founder and CEO of Tensor Machines.",
+              "source_content_hash": "1563c5ece20b6c66",
+              "quote_hash": "0fbcb3e0f69b9f88c1d35c480c663d17207746864b38d94a99a7ead2fb6d2cbd"
+            }
+          ]
+        },
+        {
+          "speaker": "Dr. Sandip Roy",
+          "quote": "GPUs have the potential to transform computing at the edge, just as they are transforming data centers, but managing GPU health remains a crucial bottleneck.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-678ad07c7dcec106",
+              "quote": "\"GPUs have the potential to transform computing at the edge, just as they are transforming data centers, but managing GPU health remains a crucial bottleneck,\" said Dr. Sandip Roy, professor of electrical and computer engineering at Texas A&M University.",
+              "source_content_hash": "1563c5ece20b6c66",
+              "quote_hash": "b462e77adbcea8ef4640e23a4f5638ed7981f977c7b584ff9ba85814a8543acd"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是：在AI基础设施从采购竞赛转向运营纪律的背景下，能否用可重复的开源基准与物理信息模型，把GPU的“铭牌算力”转化为可测量、可指导决策的“持续有效产出”。已验证信号包括：TensorBench已开源并记录功耗、温度、时钟与恢复数据；早期测试发现同一GPU模型token吞吐差异近15%、功耗增36%仅换来21%FP16吞吐提升；物理模型处于私有测试阶段，合作方为未具名的裸金属提供商与新型云设计伙伴。证据边界在于：公司未披露具名客户、收入、机队规模、估值、模型准确率或经审计的效率提升，商业化验证仍待完成。",
+        "validated_signals": [
+          "TensorBench已作为开源基准发布，并记录功耗、温度、时钟与恢复等遥测数据",
+          "早期测试发现同一GPU模型在推理负载下token吞吐差异近15%",
+          "测试发现功耗提升约36%仅带来21%的FP16计算吞吐提升",
+          "物理信息模型处于私有测试阶段，合作方为未具名的裸金属提供商与新型云设计伙伴"
+        ],
+        "risks": [
+          "公司未披露具名客户、收入、机队规模、估值、模型准确率或经审计的吞吐、能耗与硬件寿命改善数据",
+          "物理信息模型仍处私有测试阶段，优化架构仍在开发中，预测能力尚未公开验证",
+          "基准结果需在独立环境中证明可重复性，且需证明建议能改变运营决策并产生可付费的商业后果",
+          "来源中关于领投方存在Kleiner Perkins与Omni VC的冲突记录，最终以公司发布与FinSMEs为准"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "use_case_ids": [
+          "data_analysis",
+          "design_engineering"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user",
+          "researcher"
+        ],
+        "sector": "人工智能基础设施",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是：在AI基础设施从采购竞赛转向运营纪律的背景下，能否用可重复的开源基准与物理信息模型，把GPU的“铭牌算力”转化为可测量、可指导决策的“持续有效产出”。已验证信号包括：TensorBench已开源并记录功耗、温度、时钟与恢复数据；早期测试发现同一GPU模型token吞吐差异近15%、功耗增36%仅换来21%FP16吞吐提升；物理模型处于私有测试阶段，合作方为未具名的裸金属提供商与新型云设计伙伴。证据边界在于：公司未披露具名客户、收入、机队规模、估值、模型准确率或经审计的效率提升，商业化验证仍待完成。",
+          "evidence_signals": [
+            "TensorBench已作为开源基准发布，并记录功耗、温度、时钟与恢复等遥测数据",
+            "早期测试发现同一GPU模型在推理负载下token吞吐差异近15%",
+            "测试发现功耗提升约36%仅带来21%的FP16计算吞吐提升",
+            "物理信息模型处于私有测试阶段，合作方为未具名的裸金属提供商与新型云设计伙伴"
+          ],
+          "risks": [
+            "公司未披露具名客户、收入、机队规模、估值、模型准确率或经审计的吞吐、能耗与硬件寿命改善数据",
+            "物理信息模型仍处私有测试阶段，优化架构仍在开发中，预测能力尚未公开验证",
+            "基准结果需在独立环境中证明可重复性，且需证明建议能改变运营决策并产生可付费的商业后果",
+            "来源中关于领投方存在Kleiner Perkins与Omni VC的冲突记录，最终以公司发布与FinSMEs为准"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "TensorBench",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "物理信息模型",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Muneeb Rasool",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mohamed Abdalla",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Hafiz Malik",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Omni VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Reinforced Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Avesta Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Draper U Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d9772412a89c2367",
+          "date": "2026-10-07",
+          "title": "Tensor Machines 融资 150 万美元，用于衡量数据中心计算产出率",
+          "amount": "$1.5M",
+          "source_refs": [
+            "SA-b485a82aff369c4f"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e5527abe90dd056a",
+          "source_url": "https://dealroom.co/news/160578-tensor-machines-raises-1-5m-to-measure-data-center-compute-yield/",
+          "title": "Tensor Machines 融资 150 万美元，用于衡量数据中心计算产出率",
+          "publisher": "dealroom.co",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-08T12:35:28.604Z",
+          "content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+          "source_artifact_id": "SA-b485a82aff369c4f",
+          "raw_id": "RAW-02c6e0084f13d611"
+        },
+        {
+          "source_id": "FISRC-f4de109f0ef2f4e3",
+          "source_url": "https://devcuration.com/articles/tensor-machines-raises-1-5m-in-pre-seed-funding",
+          "title": "Tensor Machines Raises $1.5M for GPU Optimization",
+          "publisher": "devcuration.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:42:39.854Z",
+          "content_hash": "0ff4770b9ddab3ea",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-20755124f174af09",
+          "source_url": "https://fireround.dev/companies/tensormachines.org",
+          "title": "Tensor Machines: $1.5M Pre-seed",
+          "publisher": "fireround.dev",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:42:46.264Z",
+          "content_hash": "53594a5ae0d4c240",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-678ad07c7dcec106",
+          "source_url": "https://www.prnewswire.com/news-releases/tensor-machines-launches-open-source-benchmark-to-measure-the-true-cost-of-ai-compute-302900749.html",
+          "title": "Tensor Machines Launches Open-Source Benchmark to Measure the True Cost of AI Compute",
+          "publisher": "prnewswire.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:42:55.450Z",
+          "content_hash": "1563c5ece20b6c66",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8a18c4c6e359c45b",
+          "source_url": "https://devcuration.com/articles/company-spotlight-tensormachines-org",
+          "title": "Tensor Machines Maps the Physics Behind GPU Output",
+          "publisher": "devcuration.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:43:08.492Z",
+          "content_hash": "00753134a4d8e3fa",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-08T12:43:28.605Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-08T12:43:28.605Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "TensorBench",
+            "物理信息模型"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Hafiz Malik",
+            "Mohamed Abdalla",
+            "Muneeb Rasool"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-d9772412a89c2367"
+      ],
+      "aggregation": {
+        "key": "EN-ecd6dea6127e2b74|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-30f5b14205391e64",
+      "triggered_by_event_id": "EV-03938561933f2961",
+      "as_of_date": "2026-10-08",
+      "company": {
+        "entity_id": "EN-88820a37b76b50e5",
+        "name": "Rivercell",
+        "full_name": "Rivercell",
+        "website": "https://rivercell.ai",
+        "summary": "巴黎的生物技术与AI公司，构建专有的细胞响应数据基础设施，并训练预测人类细胞如何对药物和基因变化做出反应的AI世界模型。",
+        "headquarters": "Paris, France",
+        "founders": [
+          {
+            "name": "Yann Fleureau",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-75b750c64b12ceb9",
+                "quote": "Rivercell was started in summer 2025 by CEO Yann Fleureau, the engineer-turned-entrepreneur behind AI company Cardiologs",
+                "source_content_hash": "6858a34647e259de",
+                "quote_hash": "7df3b66381fafaeb3396f1fc37c85536f64fb39145d1ae0c10d7f9abd06e42aa"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Eric Durand",
+            "role": "联合创始人兼首席科学官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-75b750c64b12ceb9",
+                "quote": "joined in 2026 by CSO Eric Durand, an AI scientist and former C-Level executive at AI drug discovery unicorn Owkin",
+                "source_content_hash": "6858a34647e259de",
+                "quote_hash": "27d3546790ac0beb8a771fced2f9406601a75e1aaa872aae375c755ac92253d9"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-75b750c64b12ceb9",
+            "quote": "Rivercell, a Paris-based biotechnology and AI company building its own data infrastructure on how human cells respond to any treatment and training a world model of the cell that can predict those responses",
+            "source_content_hash": "6858a34647e259de",
+            "quote_hash": "288d9bf4804306fc1b718345cb394ff7c2051a328a9cfd8028969d67c7c8ab6d"
+          },
+          {
+            "source_id": "FISRC-97c1450f87294e7e",
+            "quote": "Paris-based Rivercell has raised $25 million (about €22 million) in seed funding to generate experimental data and build AI models that predict how human cells respond to drugs and genetic changes.",
+            "source_content_hash": "621f9441414320b4",
+            "quote_hash": "1a052a76b8b9dc7d0c1d3be85de35fe1b6cf44ee60f734bc8b366962f15ccd10"
+          }
+        ],
+        "application_entity_id": "EN-88820a37b76b50e5",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "€22 million",
+        "total_raised": "€22 million ($25 million)",
+        "announced_at": "2026-10-07",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "HV",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-75b750c64b12ceb9",
+                "quote": "today announced a $25 million seed round led by HV",
+                "source_content_hash": "6858a34647e259de",
+                "quote_hash": "931ac386dc4211700602a4cc37726bed308dd28eac8f79d0a16372e2c6e4a22d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "HCVC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-75b750c64b12ceb9",
+                "quote": "HCVC, Alven and Bpifrance Digital Venture also participated in the round",
+                "source_content_hash": "6858a34647e259de",
+                "quote_hash": "841135761368f0844af10983b653acde84c98d4bf9d008fb90513ffe344f6af5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alven",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-75b750c64b12ceb9",
+                "quote": "HCVC, Alven and Bpifrance Digital Venture also participated in the round",
+                "source_content_hash": "6858a34647e259de",
+                "quote_hash": "841135761368f0844af10983b653acde84c98d4bf9d008fb90513ffe344f6af5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bpifrance Digital Venture",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-75b750c64b12ceb9",
+                "quote": "HCVC, Alven and Bpifrance Digital Venture also participated in the round",
+                "source_content_hash": "6858a34647e259de",
+                "quote_hash": "841135761368f0844af10983b653acde84c98d4bf9d008fb90513ffe344f6af5"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-508e936d8080529c",
+            "quote": "Rivercell, a Paris-based company working at the intersection of biotechnology and artificial intelligence, has come out of stealth with a €22 million ($25 million) seed round, according to reporting by EU-Startups and Sifted.",
+            "source_content_hash": "f6a732430a3abfe3e58670f95e5113abcebfa225778dc8fb127f57c1c6f56716",
+            "quote_hash": "c0ccee2c14ebe1f7e23906313b001247959f981b379d2ec3e47df8a731610237"
+          },
+          {
+            "source_id": "FISRC-75b750c64b12ceb9",
+            "quote": "today announced a $25 million seed round led by HV. HCVC, Alven and Bpifrance Digital Venture also participated in the round",
+            "source_content_hash": "6858a34647e259de",
+            "quote_hash": "88b7fa26f2b423b98f5d365f16329d967a9c07f53faa01a74e160e0cfd7ca7c6"
+          },
+          {
+            "source_id": "FISRC-508e936d8080529c",
+            "quote": "The funding round was led by HV, with participation from HCVC, Alven and Bpifrance Digital Venture.",
+            "source_content_hash": "f6a732430a3abfe3e58670f95e5113abcebfa225778dc8fb127f57c1c6f56716",
+            "quote_hash": "08c67bd11d461d0a34d804d663b4fc2f4c4b40ef0e310ccac5c5e7935f52115b"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€22 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 22000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2200 万欧元"
+        },
+        "total_raised_original": "€22 million ($25 million)",
+        "total_raised_normalized": {
+          "currency": "EUR",
+          "value": 22000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2200 万欧元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-03938561933f2961",
+            "round_original": "种子轮",
+            "amount": "€22 million",
+            "announced_at": "2026-10-07",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-508e936d8080529c",
+                "quote": "Rivercell, a Paris-based company working at the intersection of biotechnology and artificial intelligence, has come out of stealth with a €22 million ($25 million) seed round, according to reporting by EU-Startups and Sifted.",
+                "source_content_hash": "f6a732430a3abfe3e58670f95e5113abcebfa225778dc8fb127f57c1c6f56716",
+                "quote_hash": "c0ccee2c14ebe1f7e23906313b001247959f981b379d2ec3e47df8a731610237"
+              },
+              {
+                "source_id": "FISRC-75b750c64b12ceb9",
+                "quote": "today announced a $25 million seed round led by HV. HCVC, Alven and Bpifrance Digital Venture also participated in the round",
+                "source_content_hash": "6858a34647e259de",
+                "quote_hash": "88b7fa26f2b423b98f5d365f16329d967a9c07f53faa01a74e160e0cfd7ca7c6"
+              },
+              {
+                "source_id": "FISRC-508e936d8080529c",
+                "quote": "The funding round was led by HV, with participation from HCVC, Alven and Bpifrance Digital Venture.",
+                "source_content_hash": "f6a732430a3abfe3e58670f95e5113abcebfa225778dc8fb127f57c1c6f56716",
+                "quote_hash": "08c67bd11d461d0a34d804d663b4fc2f4c4b40ef0e310ccac5c5e7935f52115b"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "AI Virtual Cell (AIVC)",
+          "description": "一个世界模型，旨在预测人类细胞在体外对药物或基因变化的反应，减少物理湿实验室实验的需求。",
+          "target_customers": "制药和生物技术公司、研究机构",
+          "features": [
+            "预测细胞对药物和基因变化的反应",
+            "基于多模态、时间分辨的单细胞数据训练",
+            "跨疾病适应症（肿瘤学、免疫学、罕见病、心血管代谢疾病）"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-75b750c64b12ceb9",
+              "quote": "AIVC is a world model designed to predict how human cells respond to a drug or genetic change in silico, reducing the overall need for physical wet-lab experiments significantly.",
+              "source_content_hash": "6858a34647e259de",
+              "quote_hash": "eddc15c4f6b0eec51004aeb0767d54307bd7c16ea51e97e5866792e94af2fa9b"
+            },
+            {
+              "source_id": "FISRC-97c1450f87294e7e",
+              "quote": "Those datasets will train its “virtual cell”: a model intended to simulate how cells respond to treatments before researchers test them physically.",
+              "source_content_hash": "621f9441414320b4",
+              "quote_hash": "0042b54619ad0c1e54c48fe99ec4de1147f4bcc3db01224ca6832eb664db2840"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "专有数据生成平台",
+          "description": "一个专有的内部平台，能够大规模生成干预性、时间分辨、多模态的单细胞数据，用于预训练AI世界模型。",
+          "target_customers": "内部使用，用于训练AI模型",
+          "features": [
+            "大规模生成高质量预训练数据集",
+            "干预性、时间分辨、多模态单细胞数据",
+            "自动化湿实验室",
+            "被描述为未来“生物数据中心的GPU”"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-75b750c64b12ceb9",
+              "quote": "Rivercell builds a proprietary platform that generates massive, high-quality pre-training datasets to train its “AI virtual cell” (AIVC) model.",
+              "source_content_hash": "6858a34647e259de",
+              "quote_hash": "9ef8c8fb91bc43a601ab6f056d0219d0c24667de0993a831aa24c7d8252cad0f"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "种子轮融资额",
+          "value": "$25 million (€22 million)",
+          "observed_at": "2026-10-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-75b750c64b12ceb9",
+              "quote": "today announced a $25 million seed round led by HV",
+              "source_content_hash": "6858a34647e259de",
+              "quote_hash": "931ac386dc4211700602a4cc37726bed308dd28eac8f79d0a16372e2c6e4a22d"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "€22,184,755",
+          "observed_at": "2026-10-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64c6a675b4eef00f",
+              "quote": "Rivercell has raised a total of €22,184,755.",
+              "source_content_hash": "c1cb58839c129549",
+              "quote_hash": "bdcf93f20a0b7794e5b31828adda8a3b446187cf11e264dea4a468f1ce13b92f"
+            }
+          ]
+        },
+        {
+          "label": "行业年度研发投入",
+          "value": "近3000亿美元",
+          "observed_at": "2026-10-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-75b750c64b12ceb9",
+              "quote": "with the industry investing nearly $300 billion in R&D each year",
+              "source_content_hash": "6858a34647e259de",
+              "quote_hash": "4d6bcfce1bb0ba148bd4b552f8ce483623c9f61f044dc035f10de483c7cf788b"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Rivercell能否通过其专有数据生成平台大规模产生高质量、干预性、时间分辨的多模态单细胞数据，并训练出能可靠预测细胞对药物和基因变化反应的AI世界模型。当前融资所依赖的已验证信号包括：公司已完成€22m种子轮融资，由HV领投，HCVC、Alven和Bpifrance Digital Venture参投；创始团队拥有Cardiologs、Owkin、Novartis、Bioptimus等背景；公司正在巴黎扩展湿实验室并启动AI Virtual Cell项目。判断的证据边界在于：公司尚未披露数据集规模、预测基准或虚拟细胞模型的发布日期，其预测能否在实验中验证、能否吸引付费制药合作以及能否在真实药物发现中可靠指导，均待验证。",
+        "validated_signals": [
+          "完成€22m（$25m）种子轮融资，由HV领投，HCVC、Alven和Bpifrance Digital Venture参投",
+          "创始团队包括Yann Fleureau（前Cardiologs创始人）和Eric Durand（前Novartis肿瘤数据科学总监、Owkin首席数据科学官、Bioptimus联合创始人）",
+          "正在巴黎扩展湿实验室并启动AI Virtual Cell项目",
+          "科学顾问包括Charlotte Bunne和Fabian Theis"
+        ],
+        "risks": [
+          "预测可能无法泛化到新的生物学背景",
+          "高实验室和计算成本",
+          "科学验证周期长",
+          "尚无已证明的临床或药物项目成果",
+          "公司尚未披露数据集规模、预测基准或虚拟细胞模型的发布日期",
+          "其预测能否在实验中验证、能否吸引付费制药合作以及能否在真实药物发现中可靠指导，均待验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "data",
+        "market_application_id": "synthetic_data",
+        "use_case_ids": [
+          "research_discovery"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "researcher"
+        ],
+        "sector": "生物技术与人工智能",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Rivercell能否通过其专有数据生成平台大规模产生高质量、干预性、时间分辨的多模态单细胞数据，并训练出能可靠预测细胞对药物和基因变化反应的AI世界模型。当前融资所依赖的已验证信号包括：公司已完成€22m种子轮融资，由HV领投，HCVC、Alven和Bpifrance Digital Venture参投；创始团队拥有Cardiologs、Owkin、Novartis、Bioptimus等背景；公司正在巴黎扩展湿实验室并启动AI Virtual Cell项目。判断的证据边界在于：公司尚未披露数据集规模、预测基准或虚拟细胞模型的发布日期，其预测能否在实验中验证、能否吸引付费制药合作以及能否在真实药物发现中可靠指导，均待验证。",
+          "evidence_signals": [
+            "完成€22m（$25m）种子轮融资，由HV领投，HCVC、Alven和Bpifrance Digital Venture参投",
+            "创始团队包括Yann Fleureau（前Cardiologs创始人）和Eric Durand（前Novartis肿瘤数据科学总监、Owkin首席数据科学官、Bioptimus联合创始人）",
+            "正在巴黎扩展湿实验室并启动AI Virtual Cell项目",
+            "科学顾问包括Charlotte Bunne和Fabian Theis"
+          ],
+          "risks": [
+            "预测可能无法泛化到新的生物学背景",
+            "高实验室和计算成本",
+            "科学验证周期长",
+            "尚无已证明的临床或药物项目成果",
+            "公司尚未披露数据集规模、预测基准或虚拟细胞模型的发布日期",
+            "其预测能否在实验中验证、能否吸引付费制药合作以及能否在真实药物发现中可靠指导，均待验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI Virtual Cell (AIVC)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "专有数据生成平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Yann Fleureau",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Eric Durand",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "HV",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "HCVC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alven",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bpifrance Digital Venture",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-03938561933f2961",
+          "date": "2026-10-07",
+          "title": "巴黎的Rivercell结束隐身模式，获€22m构建人类细胞的AI世界模型",
+          "amount": "€22 million",
+          "source_refs": [
+            "SA-ba674a38514d82d5"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-508e936d8080529c",
+          "source_url": "https://www.afroeuropa.com/article/paris-based-rivercell-exits-stealth-with-22m-to-build-an-ai-world-model-of-human-cells",
+          "title": "巴黎的Rivercell结束隐身模式，获€22m构建人类细胞的AI世界模型",
+          "publisher": "www.afroeuropa.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-08T12:35:02.578Z",
+          "content_hash": "f6a732430a3abfe3e58670f95e5113abcebfa225778dc8fb127f57c1c6f56716",
+          "source_artifact_id": "SA-ba674a38514d82d5",
+          "raw_id": "RAW-15957369df8a9484"
+        },
+        {
+          "source_id": "FISRC-97c1450f87294e7e",
+          "source_url": "https://european-biotechnology.com/latest-news/rivercell-raises-25m-to-build-an-ai-virtual-cell/",
+          "title": "Rivercell raises $25M to build an AI virtual cell",
+          "publisher": "european-biotechnology.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:41:58.100Z",
+          "content_hash": "621f9441414320b4",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-64c6a675b4eef00f",
+          "source_url": "https://www.startup.eu/startup/rivercell",
+          "title": "Rivercell",
+          "publisher": "startup.eu",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:42:05.497Z",
+          "content_hash": "c1cb58839c129549",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-75b750c64b12ceb9",
+          "source_url": "https://www.afp.com/en/agency/inside-afp/external-press-releases/rivercell-launches-25-million-build-data-platforms-and-ai",
+          "title": "Rivercell Launches With $25 Million to Build Data Platforms and AI Models That Predict How Human Cells Respond to Treatment",
+          "publisher": "afp.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:42:19.979Z",
+          "content_hash": "6858a34647e259de",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-08T12:42:32.611Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-08T12:42:32.611Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AI Virtual Cell (AIVC)",
+            "专有数据生成平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Eric Durand",
+            "Yann Fleureau"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-03938561933f2961"
+      ],
+      "aggregation": {
+        "key": "EN-88820a37b76b50e5|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-639825a05ca7855d",
+      "triggered_by_event_id": "EV-c96f8475f771fe20",
+      "as_of_date": "2026-10-08",
+      "company": {
+        "entity_id": "EN-8744077cb9056031",
+        "name": "Procuros",
+        "full_name": "Procuros",
+        "website": "https://procuros.io",
+        "summary": "总部位于汉堡的软件公司，构建AI原生的B2B供应链连接基础设施，让供应商与零售商无论使用何种系统或格式都能交换可靠、统一的数据，推动自主B2B贸易。",
+        "headquarters": "Hamburg, Germany",
+        "founders": [
+          {
+            "name": "Patrick Thelen",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b224018d6c9212b0",
+                "quote": "Founded in Hamburg in 2021 by Patrick Thelen and Benjamin Wulff",
+                "source_content_hash": "8954b640a521fc54",
+                "quote_hash": "1cb4f2ad701a759c824cc307cc10b9e3197b78499f78930e43423bc43404ba57"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Benjamin Wulff",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b224018d6c9212b0",
+                "quote": "Founded in Hamburg in 2021 by Patrick Thelen and Benjamin Wulff",
+                "source_content_hash": "8954b640a521fc54",
+                "quote_hash": "1cb4f2ad701a759c824cc307cc10b9e3197b78499f78930e43423bc43404ba57"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-360cd6e723b3bc05",
+            "quote": "Hamburg-based software company Procuros has raised €20 million in a Series A funding round to further develop its AI-native supply chain connectivity platform and expand internationally.",
+            "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+            "quote_hash": "ce660208c2add28e8f669b8f50303242a79cfcd038c766256e14076f359a30c1"
+          },
+          {
+            "source_id": "FISRC-b224018d6c9212b0",
+            "quote": "Procuros is building the infrastructure for autonomous supply chains. Its platform enables suppliers and retailers to exchange reliable, harmonized data regardless of the systems or formats they use.",
+            "source_content_hash": "8954b640a521fc54",
+            "quote_hash": "60f34e19af5021c64102ce2f55ee88fc82290b13bda8ca499719a4e99199533e"
+          }
+        ],
+        "application_entity_id": "EN-8744077cb9056031",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "€20 million",
+        "total_raised": "",
+        "announced_at": "2026-10-06",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "XAnge",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-360cd6e723b3bc05",
+                "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+                "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+                "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+              },
+              {
+                "source_id": "FISRC-b224018d6c9212b0",
+                "quote": "The €20M round is led by XAnge, alongside W23, Point Nine, Creandum and b2venture",
+                "source_content_hash": "8954b640a521fc54",
+                "quote_hash": "8da23fed5316805ed214716a9f0746f1e8c75c5677ca4213e345066cd9e84c42"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "W23",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b224018d6c9212b0",
+                "quote": "The €20M round is led by XAnge, alongside W23, Point Nine, Creandum and b2venture",
+                "source_content_hash": "8954b640a521fc54",
+                "quote_hash": "8da23fed5316805ed214716a9f0746f1e8c75c5677ca4213e345066cd9e84c42"
+              },
+              {
+                "source_id": "FISRC-bd4990f9eb5d5084",
+                "quote": "W23Dealroom has a profile for this one. Try Dealroom → joined as a new backer, while existing investors Point Nine, Creandum, and b2venture returned.",
+                "source_content_hash": "4f012a8b2a2839a2",
+                "quote_hash": "bbb818e504035fb43e4ffa1d1586afed47dadf702742a12b827b574fae7c3216"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Point Nine",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-360cd6e723b3bc05",
+                "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+                "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+                "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Creandum",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-360cd6e723b3bc05",
+                "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+                "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+                "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "b2venture",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-360cd6e723b3bc05",
+                "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+                "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+                "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-360cd6e723b3bc05",
+            "quote": "Hamburg-based software company Procuros has raised €20 million in a",
+            "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+            "quote_hash": "7902ee3d95d3f3b8690e5765deaaadcb062412c1418f1068e978f4d0fcc7732f"
+          },
+          {
+            "source_id": "FISRC-360cd6e723b3bc05",
+            "quote": "Hamburg-based software company Procuros has raised €20 million in a Series A funding round to further develop its AI-native supply chain connectivity platform and expand internationally.",
+            "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+            "quote_hash": "ce660208c2add28e8f669b8f50303242a79cfcd038c766256e14076f359a30c1"
+          },
+          {
+            "source_id": "FISRC-b224018d6c9212b0",
+            "quote": "The €20M round is led by XAnge, alongside W23, Point Nine, Creandum and b2venture",
+            "source_content_hash": "8954b640a521fc54",
+            "quote_hash": "8da23fed5316805ed214716a9f0746f1e8c75c5677ca4213e345066cd9e84c42"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "€20 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c96f8475f771fe20",
+            "round_original": "Series A",
+            "amount": "€20 million",
+            "announced_at": "2026-10-06",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-360cd6e723b3bc05",
+                "quote": "Hamburg-based software company Procuros has raised €20 million in a",
+                "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+                "quote_hash": "7902ee3d95d3f3b8690e5765deaaadcb062412c1418f1068e978f4d0fcc7732f"
+              },
+              {
+                "source_id": "FISRC-360cd6e723b3bc05",
+                "quote": "Hamburg-based software company Procuros has raised €20 million in a Series A funding round to further develop its AI-native supply chain connectivity platform and expand internationally.",
+                "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+                "quote_hash": "ce660208c2add28e8f669b8f50303242a79cfcd038c766256e14076f359a30c1"
+              },
+              {
+                "source_id": "FISRC-b224018d6c9212b0",
+                "quote": "The €20M round is led by XAnge, alongside W23, Point Nine, Creandum and b2venture",
+                "source_content_hash": "8954b640a521fc54",
+                "quote_hash": "8da23fed5316805ed214716a9f0746f1e8c75c5677ca4213e345066cd9e84c42"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Procuros AI-native supply chain connectivity platform",
+          "description": "AI原生的B2B连接基础设施，让企业只需连接一次即可与众多贸易伙伴交换订单、发票、发货通知等数据，无需逐一集成，替代碎片化的EDI系统、PDF和电子表格。",
+          "target_customers": "供应商与零售商，包括食品制造商与分销商、美妆零售商等",
+          "features": [
+            "单一接口连接多个贸易伙伴",
+            "自动交换订单、订单响应、发货通知、发票和贷项通知单",
+            "将采购订单、确认和数量/交期变更捕获为结构化数据并自动传输至ERP（如Microsoft Business Central）",
+            "支持食品行业特定需求，如包装标签引用、质量文档、EUDR可追溯性数据"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bd4990f9eb5d5084",
+              "quote": "Procuros runs an AI-native platform that connects supply chains, replacing fragmented integrations with a single interface. Companies connect once and exchange orders, invoices, and shipping notices with many trading partners, regardless of their systems or data formats.",
+              "source_content_hash": "4f012a8b2a2839a2",
+              "quote_hash": "013f958a166fb99ee0b4a9320a645296730265477029178bc0ae01b4bc4a9982"
+            },
+            {
+              "source_id": "FISRC-988941d01a556037",
+              "quote": "Procuros automates workflows across five core document types: orders, order responses, shipping notices, invoices and credit notes.",
+              "source_content_hash": "ebffd42bc9d37c5f",
+              "quote_hash": "63ab5c4971fff47f8cf18dc16c5763d4c3168349c4eee1e908e1c1ab14518ef0"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "KoRo",
+          "industry": "食品制造与分销",
+          "use_case": "通过Procuros连接300+供应商和欧洲大型零售商，自动交换订单、确认、发货通知、发票和贷项通知单，将结构化数据传入Microsoft Business Central，减少人工处理。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-988941d01a556037",
+              "quote": "KoRo chose Procuros as the AI-native connectivity layer between Microsoft Business Central and its entire trading network — across both suppliers and retailers.",
+              "source_content_hash": "ebffd42bc9d37c5f",
+              "quote_hash": "6231a3c90648bd1f6f757c4f6c46997f37796b09f728385ffe778d51f9b77b90"
+            },
+            {
+              "source_id": "FISRC-bd4990f9eb5d5084",
+              "quote": "More than 300 companies use Procuros, including BreuningerDealroom has a profile for this one. Try Dealroom →, KoRo, and flaconiDealroom has a profile for this one. Try Dealroom →.",
+              "source_content_hash": "4f012a8b2a2839a2",
+              "quote_hash": "0e4ea3795495cb4a464ef0241d6c68a65786504cafb57fe60b795e158b197a84"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "flaconi",
+          "industry": "美妆零售",
+          "use_case": "通过单一供应商连接减少缺货。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bd4990f9eb5d5084",
+              "quote": "More than 300 companies use Procuros, including BreuningerDealroom has a profile for this one. Try Dealroom →, KoRo, and flaconiDealroom has a profile for this one. Try Dealroom →.",
+              "source_content_hash": "4f012a8b2a2839a2",
+              "quote_hash": "0e4ea3795495cb4a464ef0241d6c68a65786504cafb57fe60b795e158b197a84"
+            },
+            {
+              "source_id": "FISRC-831b12a80fcc5a85",
+              "quote": "Wie flaconi mit einer einzigen Lieferantenanbindung Out-of-Stocks um 30 % reduziert hat",
+              "source_content_hash": "c6c5db7d1afaa68c",
+              "quote_hash": "4c226f5300aa14724c5d4c3d324462245d74d512dbe12e320901ce6848dd16a5"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Breuninger",
+          "industry": "零售",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bd4990f9eb5d5084",
+              "quote": "More than 300 companies use Procuros, including BreuningerDealroom has a profile for this one. Try Dealroom →, KoRo, and flaconiDealroom has a profile for this one. Try Dealroom →.",
+              "source_content_hash": "4f012a8b2a2839a2",
+              "quote_hash": "0e4ea3795495cb4a464ef0241d6c68a65786504cafb57fe60b795e158b197a84"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Niche Beauty",
+          "industry": "美妆零售",
+          "use_case": "在一周内将100家现有供应商迁移至Procuros平台，实现供应商数字化。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-831b12a80fcc5a85",
+              "quote": "Wie Niche Beauty über 300 Lieferanten digitalisiert und 100 in einer Woche angebunden hat",
+              "source_content_hash": "c6c5db7d1afaa68c",
+              "quote_hash": "72904bbe7af60a6213c01b0ab8f340bddecb026147a3484e8e9cda7bee42ce22"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Tony's Chocolonely",
+          "industry": "食品",
+          "use_case": "将订单处理时间减少90%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-831b12a80fcc5a85",
+              "quote": "Wie Tony’s Chocolonely die Bearbeitungszeit von Bestellungen um 90 % senkte",
+              "source_content_hash": "c6c5db7d1afaa68c",
+              "quote_hash": "e3bc794be86f661f74b0ffc7430f949f48d0f280f8d0cb3f94e5c1e39c23d2ff"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "融资额",
+          "value": "€20 million",
+          "observed_at": "2026-10-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-360cd6e723b3bc05",
+              "quote": "Hamburg-based software company Procuros has raised €20 million in a Series A funding round",
+              "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+              "quote_hash": "43cbabe5e4ee46e52ecf4f50d66d7e038cc3d4a0f2778220d2e40657104f7da7"
+            }
+          ]
+        },
+        {
+          "label": "客户数量",
+          "value": "超过300家",
+          "observed_at": "2026-10-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b224018d6c9212b0",
+              "quote": "More than 300 customers and over €3bn in annualized order volume",
+              "source_content_hash": "8954b640a521fc54",
+              "quote_hash": "05916dbd5aae4956f86469284b82e28ad54c3251b61e376a432021d9e690dcc0"
+            }
+          ]
+        },
+        {
+          "label": "年化订单量",
+          "value": "超过€30亿",
+          "observed_at": "2026-10-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b224018d6c9212b0",
+              "quote": "More than 300 customers and over €3bn in annualized order volume",
+              "source_content_hash": "8954b640a521fc54",
+              "quote_hash": "05916dbd5aae4956f86469284b82e28ad54c3251b61e376a432021d9e690dcc0"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Valerie Bures-Bönström",
+          "quote": "Procuros shows that AI agents can already make autonomous B2B commerce a reality. The team has built the infrastructure these agents need to operate across entire trading networks, and has already proven that this model can scale in the DACH region. What excites us is the opportunity to take this technology beyond its home market and help create a new category for global B2B commerce.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b224018d6c9212b0",
+              "quote": "Procuros shows that AI agents can already make autonomous B2B commerce a reality. The team has built the infrastructure these agents need to operate across entire trading networks, and has already proven that this model can scale in the DACH region. What excites us is the opportunity to take this technology beyond its home market and help create a new category for global B2B commerce.",
+              "source_content_hash": "8954b640a521fc54",
+              "quote_hash": "d13e64241a4390f2459d7af93184580f10bbc67ecaa7c15f33d06aa9b942e47f"
+            }
+          ]
+        },
+        {
+          "speaker": "Cyril Bertrand",
+          "quote": "With XAnge 5, we want to strengthen our ability to support the European entrepreneurs building tomorrow’s technologies. Procuros embodies this ambition: identifying high-potential companies beyond our historical markets and supporting their growth across Europe and internationally.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b224018d6c9212b0",
+              "quote": "With XAnge 5, we want to strengthen our ability to support the European entrepreneurs building tomorrow’s technologies. Procuros embodies this ambition: identifying high-potential companies beyond our historical markets and supporting their growth across Europe and internationally.",
+              "source_content_hash": "8954b640a521fc54",
+              "quote_hash": "1f107a51cf56b77c52cfeb630dff6fa8e369a39cfa9b48e40f3f36a5d937a157"
+            }
+          ]
+        },
+        {
+          "speaker": "Matthias Hoffmann",
+          "quote": "Procuros has taken an immense amount of manual work off our plate and given us a single source of truth – which has been a real game changer for us. In food supply chains, a missing confirmation, changed quantity or delayed delivery can quickly become an availability issue. With Procuros, we bring supplier and retailer communication into one structured process around Business Central, allowing our teams to focus on the topics that actually move the needle.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-988941d01a556037",
+              "quote": "Procuros has taken an immense amount of manual work off our plate and given us a single source of truth – which has been a real game changer for us. In food supply chains, a missing confirmation, changed quantity or delayed delivery can quickly become an availability issue. With Procuros, we bring supplier and retailer communication into one structured process around Business Central, allowing our teams to focus on the topics that actually move the needle.",
+              "source_content_hash": "ebffd42bc9d37c5f",
+              "quote_hash": "4c4efa98ad2ba4bab872ea135dfa0dea62098a21fec0b786ccb1605a0f484dd9"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "XAnge",
+            "speaker": "Valerie Bures-Bönström",
+            "speaker_role": "Partner and Managing Director DACH at XAnge",
+            "rationale": "XAnge认为Procuros已证明AI代理能够实现自主B2B贸易，其构建的基础设施能让代理在整个贸易网络中运作，并已在DACH地区验证可规模化，因此投资以支持其向全球市场扩展并开创全球B2B贸易新品类。",
+            "quote": "Procuros shows that AI agents can already make autonomous B2B commerce a reality. The team has built the infrastructure these agents need to operate across entire trading networks, and has already proven that this model can scale in the DACH region. What excites us is the opportunity to take this technology beyond its home market and help create a new category for global B2B commerce.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b224018d6c9212b0",
+                "quote": "Procuros shows that AI agents can already make autonomous B2B commerce a reality. The team has built the infrastructure these agents need to operate across entire trading networks, and has already proven that this model can scale in the DACH region. What excites us is the opportunity to take this technology beyond its home market and help create a new category for global B2B commerce.",
+                "source_content_hash": "8954b640a521fc54",
+                "quote_hash": "d13e64241a4390f2459d7af93184580f10bbc67ecaa7c15f33d06aa9b942e47f"
+              }
+            ]
+          },
+          {
+            "institution": "XAnge",
+            "speaker": "Cyril Bertrand",
+            "speaker_role": "CEO and Managing Partner at XAnge",
+            "rationale": "XAnge通过XAnge 5基金支持欧洲创业者，Procuros体现了其识别高潜力公司并支持其欧洲及国际增长的战略。",
+            "quote": "With XAnge 5, we want to strengthen our ability to support the European entrepreneurs building tomorrow’s technologies. Procuros embodies this ambition: identifying high-potential companies beyond our historical markets and supporting their growth across Europe and internationally.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b224018d6c9212b0",
+                "quote": "With XAnge 5, we want to strengthen our ability to support the European entrepreneurs building tomorrow’s technologies. Procuros embodies this ambition: identifying high-potential companies beyond our historical markets and supporting their growth across Europe and internationally.",
+                "source_content_hash": "8954b640a521fc54",
+                "quote_hash": "1f107a51cf56b77c52cfeb630dff6fa8e369a39cfa9b48e40f3f36a5d937a157"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是Procuros能否将已在DACH地区验证的AI原生B2B连接基础设施规模化，并成功拓展至欧洲和美国市场。当前融资所依赖的已验证信号包括：超过300家客户、年化订单量超过€30亿、以及KoRo等客户的实际部署效果（如90%人工处理时间减少）。判断的证据边界在于：来源未披露本轮估值、收入或盈利数据，也未提供美国市场拓展的具体进展或客户承诺，因此资本判断主要基于客户规模与网络效应，而非财务回报验证。",
+        "validated_signals": [
+          "超过300家客户使用Procuros平台",
+          "平台年化订单量超过€30亿",
+          "KoRo通过Procuros实现90%人工处理时间减少，处理20,000+年发票和300+贸易伙伴",
+          "Niche Beauty在一周内将100家供应商迁移至Procuros平台",
+          "Tony's Chocolonely将订单处理时间减少90%"
+        ],
+        "risks": [
+          "来源未披露本轮估值、收入或盈利数据，无法验证资本回报预期",
+          "美国市场拓展计划尚未有具体客户或收入证据支持",
+          "客户案例中的效率提升数据（如90%减少）来自客户自述，未经独立审计",
+          "B2B供应链连接领域可能面临既有EDI系统供应商和其他AI原生平台的竞争，来源未提供竞争格局分析"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "procurement_supply_chain",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "retail_ecommerce",
+          "food_hospitality",
+          "logistics_supply_chain"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "供应链软件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Procuros能否将已在DACH地区验证的AI原生B2B连接基础设施规模化，并成功拓展至欧洲和美国市场。当前融资所依赖的已验证信号包括：超过300家客户、年化订单量超过€30亿、以及KoRo等客户的实际部署效果（如90%人工处理时间减少）。判断的证据边界在于：来源未披露本轮估值、收入或盈利数据，也未提供美国市场拓展的具体进展或客户承诺，因此资本判断主要基于客户规模与网络效应，而非财务回报验证。",
+          "evidence_signals": [
+            "超过300家客户使用Procuros平台",
+            "平台年化订单量超过€30亿",
+            "KoRo通过Procuros实现90%人工处理时间减少，处理20,000+年发票和300+贸易伙伴",
+            "Niche Beauty在一周内将100家供应商迁移至Procuros平台",
+            "Tony's Chocolonely将订单处理时间减少90%"
+          ],
+          "risks": [
+            "来源未披露本轮估值、收入或盈利数据，无法验证资本回报预期",
+            "美国市场拓展计划尚未有具体客户或收入证据支持",
+            "客户案例中的效率提升数据（如90%减少）来自客户自述，未经独立审计",
+            "B2B供应链连接领域可能面临既有EDI系统供应商和其他AI原生平台的竞争，来源未提供竞争格局分析"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Procuros AI-native supply chain connectivity platform",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Patrick Thelen",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Benjamin Wulff",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "XAnge",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "W23",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Point Nine",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Creandum",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "b2venture",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "KoRo",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "flaconi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Breuninger",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Niche Beauty",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Tony's Chocolonely",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-360cd6e723b3bc05",
+          "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
+          "title": "自主B2B贸易获提振，Procuros融资€20M",
+          "publisher": "tech.eu",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-08T00:27:42.358Z",
+          "content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+          "source_artifact_id": "SA-c2526bfada1d2cbf",
+          "raw_id": "RAW-dd86a8cf9a85770b"
+        },
+        {
+          "source_id": "FISRC-b224018d6c9212b0",
+          "source_url": "https://www.xange.vc/press/prucorus-series-a",
+          "title": "XAnge Leads Procuros Series A with Its XAnge 5 Fund | XAnge",
+          "publisher": "xange.vc",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:41:44.094Z",
+          "content_hash": "8954b640a521fc54",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-bd4990f9eb5d5084",
+          "source_url": "https://dealroom.co/news/160108-procuros-raises-20m-to-scale-ai-native-supply-chain-platform/",
+          "title": "Procuros raises €20M to scale AI-native supply chain platform",
+          "publisher": "dealroom.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:41:49.122Z",
+          "content_hash": "4f012a8b2a2839a2",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-988941d01a556037",
+          "source_url": "https://procuros.io/customer-stories/how-koro-runs-a-dual-sided-b2b-network-across-300-trading-partners",
+          "title": "How KoRo runs a dual-sided B2B network across 300+ trading partners",
+          "publisher": "procuros.io",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:41:53.538Z",
+          "content_hash": "ebffd42bc9d37c5f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-831b12a80fcc5a85",
+          "source_url": "https://procuros.io/de/customer-stories",
+          "title": "Kundenerfolge",
+          "publisher": "procuros.io",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-08T12:41:53.960Z",
+          "content_hash": "c6c5db7d1afaa68c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-08T12:42:27.745Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-08T12:42:27.745Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Procuros AI-native supply chain connectivity platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Benjamin Wulff",
+            "Patrick Thelen"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c96f8475f771fe20"
+      ],
+      "aggregation": {
+        "key": "EN-8744077cb9056031|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-4fb9bf0504e8dc3b",
@@ -7655,7 +10335,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-187a61fc05451d66",
@@ -7705,7 +10385,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-3a4ba26375b45669",
@@ -7723,7 +10403,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-de8561e258a6f559",
@@ -7732,7 +10412,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-6a0883e9d1aa2e69",
@@ -7741,7 +10421,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-80fce5a60752ce60",
@@ -7894,7 +10574,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-215ea259173fa6b4",
@@ -7986,7 +10666,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-9faff8c3dc316485",
@@ -8047,7 +10727,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-d351ff2b55683997",
@@ -8065,7 +10745,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-52e472f000148362",
@@ -8126,7 +10806,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-366e1027af052b7a",
@@ -8201,7 +10881,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-c8a803c1bdfde04c",
@@ -8210,7 +10890,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-6324ffde67e257fa",
@@ -8219,7 +10899,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-6a63fabeceadc42b",
@@ -8237,7 +10917,84 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
+    },
+    {
+      "event_id": "EV-c96f8475f771fe20",
+      "company_name": "Procuros",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Procuros\" 2026 funding round investors",
+        "\"Procuros\" official product customers",
+        "\"Procuros\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Procuros\" 2026 funding round investors",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Procuros\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Procuros\" €20 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Procuros\" official product customers",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Procuros\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Procuros\" \"why we invested\"",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Procuros\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://medium.com/brains-to-ventures/building-the-digital-backbone-for-b2b-communication-supply-chain-operations-c3d9e5d94a8c",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Procuros\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Procuros\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-2eb259fc0b868102",
@@ -8246,7 +11003,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-6cf399bb27ddd1a5",
@@ -8255,7 +11012,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-6744aefb738a9a0c",
@@ -8264,7 +11021,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-33c666ae1aefd87b",
@@ -8273,7 +11030,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-1faa33bcf69dcf47",
@@ -8369,7 +11126,7 @@
           "reason": "company_not_in_original"
         }
       ],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-f965e2dfb503b4c3",
@@ -8378,7 +11135,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-115f9901176fd251",
@@ -8452,7 +11209,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-ad34c5b8ae2f5d20",
@@ -8501,7 +11258,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
     },
     {
       "event_id": "EV-7baf4ab86798fef5",
@@ -8685,7 +11442,479 @@
           "reason": "company_not_in_original"
         }
       ],
-      "updated_at": "2026-10-08T02:35:37.519Z"
+      "updated_at": "2026-10-08T12:44:45.681Z"
+    },
+    {
+      "event_id": "EV-03938561933f2961",
+      "company_name": "Rivercell",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Rivercell\" 2026 funding round investors",
+        "\"Rivercell\" official product customers",
+        "\"Rivercell\" \"why we invested\"",
+        "\"Rivercell\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Rivercell\" 2026 funding round investors",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Rivercell\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://nordic9.com/news/rivercell-raised-25-million-seed-round-led-by",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://pitchbook.com/profiles/company/1534323-79",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://seedtable.com/companies/rivercell/funding-rounds/seed-2026-10",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Rivercell\" €22 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Rivercell\" official product customers",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Rivercell\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Rivercell\" \"why we invested\"",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Rivercell\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://thenextweb.com/news/rivercell-25m-seed-hv-ai-virtual-cell",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Rivercell\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Rivercell\" founders headquarters product",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Rivercell\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-08T12:44:45.682Z"
+    },
+    {
+      "event_id": "EV-d9772412a89c2367",
+      "company_name": "Tensor Machines",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Tensor Machines\" 2026 funding round investors",
+        "\"Tensor Machines\" official product customers",
+        "\"Tensor Machines\" \"why we invested\"",
+        "\"Tensor Machines\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Tensor Machines\" 2026 funding round investors",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Tensor Machines\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://app.dealroom.co/news/feed/tensor-machines-raises-1-5m-to-develop-ai-hardware-tools-and-physics-based-models",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Tensor Machines\" $1.5M funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Tensor Machines\" official product customers",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Tensor Machines\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://datatribe.com/news/get-to-know-the-2025-datatribe-challenge-finalists-qa-with-tensor-machines/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.ventureradar.com/organisation/Tensor%20Machines,%20Inc_[dot]_/e434166b-f69b-4e7f-b8d6-42a5f41f5d12",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.cbinsights.com/company/tensor-machines",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Tensor Machines\" \"why we invested\"",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Tensor Machines\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://traded.co/vc/articles/tensor-machines-raises-1-5m-from-kleiner-perkins/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Tensor Machines\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Tensor Machines\" founders headquarters product",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Tensor Machines\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://opengovus.com/sam-entity/VHQJA584HTW5",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://govtribe.com/vendors/tensor-machines-inc-dot-1a5d4",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        }
+      ],
+      "updated_at": "2026-10-08T12:44:45.682Z"
+    },
+    {
+      "event_id": "EV-abde425d9980f6b9",
+      "company_name": "CurvetAI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"CurvetAI\" 2026 funding round investors",
+        "\"CurvetAI\" official product customers",
+        "\"CurvetAI\" \"why we invested\"",
+        "\"CurvetAI\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"CurvetAI\" 2026 funding round investors",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"CurvetAI\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/curvetai-raises-rs-6-crore-in-funding-led-by-merak-ventures/articleshow/134727950.cms",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://entrepreneur.economictimes.indiatimes.com/news/funding/curvetai-raises-6-crore-pre-seed-funding-led-by-merak-ventures/134725051",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"CurvetAI\" Rs 6 Crore funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"CurvetAI\" official product customers",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"CurvetAI\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.curvet.in/vibe-experiments",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.lokmattimes.com/business/avantika-university-partners-with-curvetai-to-build-digital-ai-infrastructure-for-students-and-faculty-a475/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.tribuneindia.com/partner-exclusives/curvetai-partners-with-rumik-ai-to-integrate-ai-voice-models-into-workflow-platform/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7476154648756744192",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/posts/rumik_curvetai-has-partnered-with-rumik-our-activity-7478005461187911680-w6Lh",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/posts/vivekdubey77_ai-appstore-curvet-activity-7399704308709249024-0Rd0",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"CurvetAI\" \"why we invested\"",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"CurvetAI\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.finsmes.com/2026/10/curvetai-raises-approx-usd720k-in-pre-seed-funding.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"CurvetAI\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"CurvetAI\" founders headquarters product",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"CurvetAI\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://app.dealroom.co/companies/curvet_ai",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://linkedin.com/in/vivekdubey77",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        }
+      ],
+      "updated_at": "2026-10-08T12:44:45.682Z"
+    },
+    {
+      "event_id": "EV-d77f6cbbacf2a53b",
+      "company_name": "Eden AI Labs Inc.",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Eden AI Labs Inc.\" 2026 funding round investors",
+        "\"Eden AI Labs Inc.\" official product customers",
+        "\"Eden AI Labs Inc.\" \"why we invested\"",
+        "\"Eden AI Labs Inc.\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Eden AI Labs Inc.\" 2026 funding round investors",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Eden AI Labs Inc.\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.streetinsider.com/Globe+Newswire/Eden+AI+Labs+Inc.+Raises+%241.5M+to+Build+Personal+AI+That+Works+for+Everyone/27147782.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.thingsofbusiness.com/news/2dc6f6bf4e/eden-ai-labs-inc-raises-1-5m-to-build-personal-ai-that-works-for-everyone",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Eden AI Labs Inc.\" $1.5 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Eden AI Labs Inc.\" official product customers",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Eden AI Labs Inc.\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Eden AI Labs Inc.\" \"why we invested\"",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Eden AI Labs Inc.\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://smbandme.com/article/947509614-eden-ai-labs-inc-raises-1-5m-to-build-personal-ai-that-works-for-everyone",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.edenai.co/post/eden-ai-raises-1-5-million-to-build-the-future-of-ai-as-a-service",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Eden AI Labs Inc.\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Eden AI Labs Inc.\" founders headquarters product",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Eden AI Labs Inc.\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-08T12:44:45.682Z"
     }
   ]
 }

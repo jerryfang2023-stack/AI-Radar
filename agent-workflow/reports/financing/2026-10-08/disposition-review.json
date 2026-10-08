@@ -472,6 +472,81 @@
         "round_code": "series_b",
         "reason": "公司公告和独立 TechCrunch 原文均明确为同日 Flow Engineering $50 million Series B，与已发布事件卡完全对应。"
       }
+    },
+    {
+      "id": "factory-menlo-same-round",
+      "url": "https://www.businesswire.com/news/home/20261005035318/en/Leading-AI-Investor-Menlo-Ventures-Invests-in-Factory",
+      "status": "already_covered",
+      "reason": "TechCrunch 原文称 Menlo 对 Factory 的投资属于该公司上月宣布的最新融资轮；目录已有 Factory 2026-09-15、$200M 事件 EV-fb14f97f5b644c1f。按公司、月份及轮次绑定为同一已发布融资，不生成第二笔。",
+      "reviewed_at": "2026-10-08T12:29:08.000Z",
+      "reviewed_by": "Codex responsible financing evidence review",
+      "content_hash": "460cb7404e80e5de8591011a3b773030dc17056d5c081a3861e6c20e37293d9b",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/10/05/after-factorys-public-spat-with-khosla-menlo-proudly-invests",
+          "content_hash": "460cb7404e80e5de8591011a3b773030dc17056d5c081a3861e6c20e37293d9b",
+          "quote": "Menlo declined to comment on how much it invested but said the deal was part of Factory’s latest funding round announced last month at a $5 billion valuation."
+        }
+      ],
+      "event_binding": {
+        "event_id": "EV-fb14f97f5b644c1f",
+        "company": "Factory",
+        "announced_at": "2026-09-15",
+        "round_code": "other",
+        "reason": "TechCrunch 说明该投资并入上月已宣布的最新轮次；目录事件为 2026-09-15 Factory $200M，日期与轮次相符。"
+      }
+    },
+    {
+      "id": "gmi-cloud-credit-facility-split",
+      "url": "https://www.businesswire.com/news/home/20260930886227/en/GMI-Cloud-Raises-Over-%24660-Million-to-Accelerate-Global-AI-Infrastructure-Expansion",
+      "status": "pending_event_details",
+      "reason": "PR Newswire 原文称 $668M 新融资由 $223M Series B 股权和 $445M CTBC credit facility 构成；目录已发布同日 $223M Series B。债务授信是否作为独立融资事件及如何避免重复仍需核对，暂不新增或改写卡片。",
+      "reviewed_at": "2026-10-08T12:29:08.000Z",
+      "reviewed_by": "Codex responsible financing evidence review",
+      "content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+          "content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+          "quote": "GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services, today announced $668 million in new financing, comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC."
+        }
+      ]
+    },
+    {
+      "id": "unveilr-amount-source-conflict",
+      "url": "https://www.finsmes.com/2026/10/unveilr-ai-raises-usd1-74m-in-pre-seed-funding.html",
+      "status": "pending_event_details",
+      "reason": "现有目录已有 Unveilr AI 2026-10-01 pre-seed，金额未披露；Dealroom 标题写 $1.74M，但同页正文写 US$2.27M，且与现有事件可能为同轮。金额冲突未解决，不更改金额或生成重复事件。",
+      "reviewed_at": "2026-10-08T12:29:08.000Z",
+      "reviewed_by": "Codex responsible financing evidence review",
+      "content_hash": "88d20c0fff42e1948db49ae0b3ab2da1c601e901806c24de213e77c9596a57a8",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://dealroom.co/news/158152-unveilr-ai-raises-1-74m-pre-seed-from-ajvc-to-chase-ai-search-visibility/",
+          "content_hash": "88d20c0fff42e1948db49ae0b3ab2da1c601e901806c24de213e77c9596a57a8",
+          "quote": "Unveilr AI has raised US$2.27M in a pre-seed round led by AJVC."
+        }
+      ]
+    },
+    {
+      "id": "foundational-ai-scope-pending",
+      "url": "https://tech.eu/2026/10/01/foundational-secures-ps82m-pre-seed-as-it-emerges-from-stealth/",
+      "status": "pending_ai_scope",
+      "reason": "原文将 Foundational 描述为卫星定位基础设施及数据平台的 space technology company，当前材料未证明主营产品属于 AI；保留待产品/AI主营证据，不批准进入事实生产。",
+      "reviewed_at": "2026-10-08T12:29:08.000Z",
+      "reviewed_by": "Codex responsible financing evidence review",
+      "content_hash": "66bcb4badee7400a0a2008f1dfe4d0761bbabf652c02f5b932d49a428d932698",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://tech.eu/2026/10/01/foundational-secures-ps82m-pre-seed-as-it-emerges-from-stealth",
+          "content_hash": "66bcb4badee7400a0a2008f1dfe4d0761bbabf652c02f5b932d49a428d932698",
+          "quote": "London-based space technology company Foundational has emerged from stealth with £8.2 million in pre-seed funding to expand its satellite positioning infrastructure and further develop its data platform."
+        }
+      ]
     }
   ]
 }

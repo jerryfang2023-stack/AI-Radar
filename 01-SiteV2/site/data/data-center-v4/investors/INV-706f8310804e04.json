@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-08",
     "currentDate": "2026-10-08",
-    "eventCount": 4001,
+    "eventCount": 4008,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,77 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-08-27",
-    "latest_disclosed_at": "2025-08-27",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-098a40b4499d7512",
         "canonical_entity_id": "",
         "name": "Maisa AI"
+      },
+      {
+        "entity_id": "EN-8744077cb9056031",
+        "canonical_entity_id": "",
+        "name": "Procuros"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b4e4f4e6614e7230",
+        "funding_insight_id": "FI-f0a9463c47929218",
+        "event_ids": [
+          "EV-c96f8475f771fe20"
+        ],
+        "company_entity_id": "EN-8744077cb9056031",
+        "company_canonical_entity_id": "",
+        "company_name": "Procuros",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "€20 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万欧元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-360cd6e723b3bc05",
+            "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
+            "source_title": "自主B2B贸易获提振，Procuros融资€20M",
+            "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+            "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+            "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6c6e9884938384bf",
         "funding_insight_id": "FI-c9553191a021b77b",
@@ -128,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-360cd6e723b3bc05",
+        "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
+        "source_title": "自主B2B贸易获提振，Procuros融资€20M",
+        "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+        "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+        "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+      },
+      {
         "source_id": "FISRC-f154528a83a385f1",
         "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
         "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
@@ -157,6 +212,10 @@
           "source_id": "PROFILE-A2-INV-706f8310804e04-2"
         },
         {
+          "description": "融资来源记录：Procuros · A轮 · 2026-10-06 · 本轮参投 · €20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-360cd6e723b3bc05"
+        },
+        {
           "description": "融资来源记录：Maisa AI · 种子轮 · 2025-08-27 · 本轮领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f154528a83a385f1"
         }
@@ -178,6 +237,14 @@
           "source_content_hash": "6715d458bf9c7f45fba49feda0b0276be709f94866d59a739722a093c4727990",
           "quote": "Creandum Backed 2025 Founders David Villalon Manuel Romero Creandum Lead Peter Specht",
           "quote_hash": "62e8c8f48af8972468084ab6413d9434e1546ab6ac570e51dfa2ee1779e5ac29"
+        },
+        {
+          "source_id": "FISRC-360cd6e723b3bc05",
+          "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
+          "source_title": "自主B2B贸易获提振，Procuros融资€20M",
+          "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+          "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+          "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
         },
         {
           "source_id": "FISRC-f154528a83a385f1",

@@ -28449,7 +28449,193 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-08T02:37:21.050Z"
+    },
+    "EV-d77f6cbbacf2a53b": {
+      "id": "EV-d77f6cbbacf2a53b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Eden 是面向个人消费者的 AI 个人助手，可跨应用完成订票、订餐等真实任务。",
+      "input_hash": "5aa1316a120d2cc66b17865226163e094402c75b1c93e4f787212f9a947b6439",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6d07e2ff80974efa",
+          "quote": "Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible."
+        },
+        {
+          "source_id": "FISRC-3da9c248e9c78adf",
+          "quote": "Eden AI Labs Inc. builds personal AI agents that work to complete real-world tasks."
+        },
+        {
+          "source_id": "FISRC-6d07e2ff80974efa",
+          "quote": "Eden is the most intuitive personal assistant powered by AI agents that work across apps and navigate the web to get things done for the user. Eden can book flights, reserve restaurants, order food, schedule appointments, pay bills and more."
+        },
+        {
+          "source_id": "FISRC-6d07e2ff80974efa",
+          "quote": "Eden is free for users. The company charges a small transaction fee on card purchases made by the agent, such as flights, hotels, food delivery and similar purchases."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T12:47:25.051Z"
+    },
+    "EV-abde425d9980f6b9": {
+      "id": "EV-abde425d9980f6b9",
+      "scope": "review",
+      "exclusion_reason": "",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [],
+      "rationale": "现有原文确认 CurvetAI 是多模型 AI 工作空间，并提及个人、团队和教育机构用户；分类证据尚不能确认其主要使用场景及产品形态。开发者是合作方，不足以证明平台面向开发者。补充可核验的公司产品与客户证据后再分类。",
+      "input_hash": "12debb0ca72a64845ff957e3e1111df3cd76b6c5eb9a20e13594914679d2aaad",
+      "evidence_refs": [],
+      "provider": "responsible_reviewer",
+      "model": "manual_review",
+      "generated_at": "2026-10-08T12:54:30.363Z"
+    },
+    "EV-d9772412a89c2367": {
+      "id": "EV-d9772412a89c2367",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Tensor Machines 提供 GPU 与服务器性能基准测试工具及物理模型，用于评估算力硬件表现。",
+      "input_hash": "3e7b6343eacf98531c95412457434c4ec167ed5dc0ae455c19e098e763c56ce2",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e5527abe90dd056a",
+          "quote": "a San Francisco-based developer of AI hardware tools and physics-based models, has raised $1.5 million in pre-seed funding."
+        },
+        {
+          "source_id": "FISRC-678ad07c7dcec106",
+          "quote": "Tensor's benchmark recipe applies different loads and records how hardware draws power, heats up, sustains performance and recovers."
+        },
+        {
+          "source_id": "FISRC-8a18c4c6e359c45b",
+          "quote": "TensorBench records GPU and server telemetry across baseline, load, cooldown, and recovery."
+        },
+        {
+          "source_id": "FISRC-678ad07c7dcec106",
+          "quote": "Tensor Machines' proprietary physics-based models support this work by analyzing the relationships between power, heat, performance and hardware degradation."
+        },
+        {
+          "source_id": "FISRC-8a18c4c6e359c45b",
+          "quote": "The goal is to estimate the performance envelope of each GPU: the throughput, latency, energy, and thermal outcomes it can attain for a workload as operating conditions change."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T12:47:25.051Z"
+    },
+    "EV-03938561933f2961": {
+      "id": "EV-03938561933f2961",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "research"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Rivercell 构建细胞世界模型与专有数据平台，预测细胞对药物和基因变化的反应。",
+      "input_hash": "d6578f7149859ea7b3710a60d3fc26810452c52c244d36dd5b3004fb33197d34",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-75b750c64b12ceb9",
+          "quote": "Rivercell, a Paris-based biotechnology and AI company building its own data infrastructure on how human cells respond to any treatment and training a world model of the cell that can predict those responses"
+        },
+        {
+          "source_id": "FISRC-97c1450f87294e7e",
+          "quote": "Paris-based Rivercell has raised $25 million (about €22 million) in seed funding to generate experimental data and build AI models that predict how human cells respond to drugs and genetic changes."
+        },
+        {
+          "source_id": "FISRC-75b750c64b12ceb9",
+          "quote": "AIVC is a world model designed to predict how human cells respond to a drug or genetic change in silico, reducing the overall need for physical wet-lab experiments significantly."
+        },
+        {
+          "source_id": "FISRC-97c1450f87294e7e",
+          "quote": "Those datasets will train its “virtual cell”: a model intended to simulate how cells respond to treatments before researchers test them physically."
+        },
+        {
+          "source_id": "FISRC-75b750c64b12ceb9",
+          "quote": "Rivercell builds a proprietary platform that generates massive, high-quality pre-training datasets to train its “AI virtual cell” (AIVC) model."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T12:47:25.051Z"
+    },
+    "EV-c96f8475f771fe20": {
+      "id": "EV-c96f8475f771fe20",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Procuros 提供 AI 原生供应链连接平台，自动化订单、发票和发货通知等贸易文档流程。",
+      "input_hash": "5058887633441dda3fcc003d7d3f9913612cf552cdfd0bc35ce8272a459fbedd",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-360cd6e723b3bc05",
+          "quote": "Hamburg-based software company Procuros has raised €20 million in a Series A funding round to further develop its AI-native supply chain connectivity platform and expand internationally."
+        },
+        {
+          "source_id": "FISRC-b224018d6c9212b0",
+          "quote": "Procuros is building the infrastructure for autonomous supply chains. Its platform enables suppliers and retailers to exchange reliable, harmonized data regardless of the systems or formats they use."
+        },
+        {
+          "source_id": "FISRC-bd4990f9eb5d5084",
+          "quote": "Procuros runs an AI-native platform that connects supply chains, replacing fragmented integrations with a single interface. Companies connect once and exchange orders, invoices, and shipping notices with many trading partners, regardless of their systems or data formats."
+        },
+        {
+          "source_id": "FISRC-988941d01a556037",
+          "quote": "Procuros automates workflows across five core document types: orders, order responses, shipping notices, invoices and credit notes."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T12:47:25.051Z"
     }
   },
-  "generated_at": "2026-10-08T02:37:21.050Z"
+  "generated_at": "2026-10-08T12:47:25.053Z"
 }

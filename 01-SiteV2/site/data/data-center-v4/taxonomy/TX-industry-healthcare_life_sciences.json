@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-08",
     "currentDate": "2026-10-08",
-    "eventCount": 4001,
+    "eventCount": 4008,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "行业",
     "valueId": "healthcare_life_sciences",
     "eventIds": [
+      "EV-abde425d9980f6b9",
       "EV-de8561e258a6f559",
       "EV-36a1333e9d930b31",
       "EV-846e5333ad31f647",
@@ -186,6 +187,7 @@
       "EV-edb1ddb3a091ada4"
     ],
     "entityIds": [
+      "EN-7eed2a69df089fc8",
       "EN-37799d436602eaf1",
       "EN-e52fc209b562d340",
       "EN-0ba89a138d533c1c",
@@ -314,6 +316,91 @@
     "lastSeen": "2026-10-08"
   },
   "events": [
+    {
+      "id": "EV-abde425d9980f6b9",
+      "dataDate": "2026-10-08",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "CurvetAI 在由 Merak Ventures 领投的种子前轮融资中筹集了 6 Crore",
+      "originalTitle": "CurvetAI Raises Rs 6 Crore in Pre-Seed Round Led by Merak Ventures - Indian Startup Times",
+      "subject": "CurvetAI",
+      "action": "Raises",
+      "object": "Rs 6 Crore in Pre-Seed Round Led by Merak Ventures - Indian Startup Times",
+      "metrics": [
+        "Rs 6 Crore",
+        "Rs 6 crore",
+        "₹36 Crore",
+        "$250,000 "
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-7eed2a69df089fc8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-7eed2a69df089fc8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-7eed2a69df089fc8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7eed2a69df089fc8"
+      ],
+      "entityNames": [
+        "CurvetAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.indianstartuptimes.com/investment/curvetai-raises-rs-6-crore-in-pre-seed-round-led-by-merak-ventures/",
+      "publisher": "www.indianstartuptimes.com"
+    },
     {
       "id": "EV-de8561e258a6f559",
       "dataDate": "2026-10-08",
@@ -39962,6 +40049,28 @@
   ],
   "entities": [
     {
+      "id": "EN-7eed2a69df089fc8",
+      "name": "CurvetAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-abde425d9980f6b9",
+        "EV-e3fb3eefed59b8f6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-healthcare_life_sciences"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-06",
+      "lastSeen": "2026-10-08"
+    },
+    {
       "id": "EN-37799d436602eaf1",
       "name": "Isomorphic Labs",
       "entityType": "organization_candidate",
@@ -40239,8 +40348,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-financial_services",
-        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
@@ -40400,8 +40509,8 @@
         "TX-use_case-security_operations",
         "TX-product_form-model",
         "TX-industry-financial_services",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -41088,9 +41197,9 @@
         "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-chip_accelerator",
         "TX-industry-media_entertainment",
-        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -41493,9 +41602,9 @@
         "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-chip_accelerator",
         "TX-industry-media_entertainment",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-physical_automation",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
@@ -41589,8 +41698,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-financial_services",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -41637,8 +41746,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -41676,8 +41785,8 @@
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -41750,8 +41859,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal"
       ],
@@ -41853,8 +41962,8 @@
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-industry-legal_services",
@@ -41925,8 +42034,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-industry-healthcare_life_sciences"
+        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-14",
@@ -42204,8 +42313,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -42270,8 +42379,8 @@
         "TX-use_case-security_operations",
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-business_user",
@@ -42337,8 +42446,8 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-industry-financial_services",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-use_case-sales",
@@ -42431,8 +42540,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
@@ -42714,8 +42823,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-financial_services",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-use_case-sales",
@@ -42874,8 +42983,8 @@
       "classificationRefs": [
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
@@ -42956,8 +43065,8 @@
       "classificationRefs": [
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-industry-legal_services",
@@ -43021,8 +43130,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-financial_services",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -43397,8 +43506,8 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-technology-agentic_execution",
-        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-deployment_model-cloud",
         "TX-technology-multimodal",
@@ -44042,8 +44151,8 @@
         "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
@@ -44116,8 +44225,8 @@
         "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
-        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator",
         "TX-deployment_model-cloud",
         "TX-industry-government_public_sector",
         "TX-technology-on_device",
@@ -44225,8 +44334,8 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-technology-agentic_execution",
-        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-technology-fine_tuning"
@@ -44433,9 +44542,9 @@
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-chip_accelerator",
         "TX-industry-media_entertainment",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
@@ -45041,9 +45150,9 @@
         "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-chip_accelerator",
         "TX-industry-media_entertainment",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-target_user-developer",
