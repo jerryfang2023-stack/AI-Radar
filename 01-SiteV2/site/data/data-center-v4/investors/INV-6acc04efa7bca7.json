@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -62,23 +61,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-06-18",
-    "latest_disclosed_at": "2025-06-18",
+    "latest_disclosed_at": "2026-10-07",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-20109d8d00635e1a",
+        "canonical_entity_id": "",
+        "name": "Desible.ai"
+      },
       {
         "entity_id": "EN-577d8adaee97497b",
         "canonical_entity_id": "",
@@ -86,6 +90,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7ab865f7311b7040",
+        "funding_insight_id": "FI-2da2ced038e94ba6",
+        "event_ids": [
+          "EV-115f9901176fd251"
+        ],
+        "company_entity_id": "EN-20109d8d00635e1a",
+        "company_canonical_entity_id": "",
+        "company_name": "Desible.ai",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$3.31M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3310000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "331 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-fb5290f3b5c9d736",
+            "source_url": "https://dealroom.co/news/160545-desible-ai-raises-3-31m-seed-to-automate-bfsi-workflows-with-ai-agents/",
+            "source_title": "Desible.ai 融资 331 万美元种子轮，用 AI 智能体自动化 BFSI 工作流",
+            "source_content_hash": "963b748065e353f0a7ee1424743d461a99d0e94e5d91146191bf8a2f383f8c73",
+            "quote": "has raised US$4.35M in a seed round led by Prime Venture Partners",
+            "quote_hash": "55ec9c6607034287b4d6ab1724fe83f549553d0b42ae9cc897097bd554fea001"
+          },
+          {
+            "source_id": "FISRC-9f5c505fdd898b65",
+            "source_url": "https://www.dealstreetasia.com/stories/desible-ai-sunfox-tech-bytexl-zomint-497476",
+            "source_title": "India Digest: Desible.ai, Sunfox Tech, byteXL, Zomint raise funding",
+            "source_content_hash": "208918cd4616a1c4",
+            "quote": "has raised nearly $3.3 million (Rs 32 crore) in a seed plus round led by Prime Venture Partners.",
+            "quote_hash": "703a535f4c903f29dde28a65a00a4dc85f193ece2629fd50dabec3f8e5fee2d8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6923de5fd2d1f394",
         "funding_insight_id": "FI-dd804726a11d7f9f",
@@ -137,6 +189,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-fb5290f3b5c9d736",
+        "source_url": "https://dealroom.co/news/160545-desible-ai-raises-3-31m-seed-to-automate-bfsi-workflows-with-ai-agents/",
+        "source_title": "Desible.ai 融资 331 万美元种子轮，用 AI 智能体自动化 BFSI 工作流",
+        "source_content_hash": "963b748065e353f0a7ee1424743d461a99d0e94e5d91146191bf8a2f383f8c73",
+        "quote": "has raised US$4.35M in a seed round led by Prime Venture Partners",
+        "quote_hash": "55ec9c6607034287b4d6ab1724fe83f549553d0b42ae9cc897097bd554fea001"
+      },
+      {
+        "source_id": "FISRC-9f5c505fdd898b65",
+        "source_url": "https://www.dealstreetasia.com/stories/desible-ai-sunfox-tech-bytexl-zomint-497476",
+        "source_title": "India Digest: Desible.ai, Sunfox Tech, byteXL, Zomint raise funding",
+        "source_content_hash": "208918cd4616a1c4",
+        "quote": "has raised nearly $3.3 million (Rs 32 crore) in a seed plus round led by Prime Venture Partners.",
+        "quote_hash": "703a535f4c903f29dde28a65a00a4dc85f193ece2629fd50dabec3f8e5fee2d8"
+      },
+      {
         "source_id": "FISRC-16e0be8104cbcbf7",
         "source_url": "https://startuprise.org/illumine-raises-2-5-million-in-seed-funding-led-by-prime-venture-partners",
         "source_title": "Illumine 获 Prime Venture Partners 领投的 250 万美元种子轮融资 - Startup Rise Asia",
@@ -184,6 +252,10 @@
           "source_id": "PFSRC-INV-6acc04efa7bca7-2"
         },
         {
+          "description": "融资来源记录：Desible.ai · 种子轮 · 2026-10-07 · 本轮领投 · $3.31M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fb5290f3b5c9d736"
+        },
+        {
           "description": "融资来源记录：Illumine · 种子轮 · 2025-06-18 · 本轮领投 · $2.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-16e0be8104cbcbf7"
         }
@@ -215,20 +287,28 @@
           "quote_hash": "ab5d51e83d10585e90f64598dc7688d9789e03c7e847171982bae866a4d8371c"
         },
         {
+          "source_id": "FISRC-fb5290f3b5c9d736",
+          "source_url": "https://dealroom.co/news/160545-desible-ai-raises-3-31m-seed-to-automate-bfsi-workflows-with-ai-agents/",
+          "source_title": "Desible.ai 融资 331 万美元种子轮，用 AI 智能体自动化 BFSI 工作流",
+          "source_content_hash": "963b748065e353f0a7ee1424743d461a99d0e94e5d91146191bf8a2f383f8c73",
+          "quote": "has raised US$4.35M in a seed round led by Prime Venture Partners",
+          "quote_hash": "55ec9c6607034287b4d6ab1724fe83f549553d0b42ae9cc897097bd554fea001"
+        },
+        {
+          "source_id": "FISRC-9f5c505fdd898b65",
+          "source_url": "https://www.dealstreetasia.com/stories/desible-ai-sunfox-tech-bytexl-zomint-497476",
+          "source_title": "India Digest: Desible.ai, Sunfox Tech, byteXL, Zomint raise funding",
+          "source_content_hash": "208918cd4616a1c4",
+          "quote": "has raised nearly $3.3 million (Rs 32 crore) in a seed plus round led by Prime Venture Partners.",
+          "quote_hash": "703a535f4c903f29dde28a65a00a4dc85f193ece2629fd50dabec3f8e5fee2d8"
+        },
+        {
           "source_id": "FISRC-16e0be8104cbcbf7",
           "source_url": "https://startuprise.org/illumine-raises-2-5-million-in-seed-funding-led-by-prime-venture-partners",
           "source_title": "Illumine 获 Prime Venture Partners 领投的 250 万美元种子轮融资 - Startup Rise Asia",
           "source_content_hash": "571bdfa5b561f937",
           "quote": "Illumine, a startup using AI to improve childcare has raised $2.5 million in seed funding from Prime Venture Partners.",
           "quote_hash": "ae082d50db1f97064e527ee247ea3778e7ffd3c8f5a61b01d1ce59e538292a1c"
-        },
-        {
-          "source_id": "FISRC-8fb1785a6254557c",
-          "source_url": "https://www.marcamoney.com/illumine-raises-2-5-million-in-seed-funding-led-by-prime-venture-partners/",
-          "source_title": "illumine raises $2.5 million in seed funding led by Prime Venture Partners",
-          "source_content_hash": "48fe302570287e31",
-          "quote": "illumine raises $2.5 million in seed funding led by Prime Venture Partners",
-          "quote_hash": "2e5229522d0fa3404c3c10d355b55bee6860d7e6c49b0106b94d699b32205679"
         }
       ],
       "last_verified_at": "2026-10-02"

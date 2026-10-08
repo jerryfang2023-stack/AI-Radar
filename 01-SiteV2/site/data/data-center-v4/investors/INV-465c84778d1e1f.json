@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -62,23 +61,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-10-07",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "pre_seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-22504b19f0baa00e",
+        "canonical_entity_id": "",
+        "name": "Myca"
+      },
       {
         "entity_id": "EN-57cbf9481b8ad9b7",
         "canonical_entity_id": "",
@@ -86,6 +90,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7c902dd9e6b14d15",
+        "funding_insight_id": "FI-47a08c374d91b131",
+        "event_ids": [
+          "EV-17200ca7088fd146"
+        ],
+        "company_entity_id": "EN-22504b19f0baa00e",
+        "company_canonical_entity_id": "",
+        "company_name": "Myca",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$1.3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "130 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-508b05a3c6e8e140",
+            "source_url": "https://www.thesaasnews.com/news/myca-raises-1-3m-pre-seed",
+            "source_title": "Myca 融资 130 万美元 pre-seed 轮",
+            "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+            "quote": "This funding round saw participation from Eximius Ventures, Indigram Labs Foundation, and Kriscore Capital.",
+            "quote_hash": "25965761d52ab6caf3e8d56069c6f059f33ff4f751b8a00fb804525e2f9a9623"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e9c7fcc684d2bdd5",
         "funding_insight_id": "FI-3f12c272c41b3506",
@@ -129,6 +173,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-508b05a3c6e8e140",
+        "source_url": "https://www.thesaasnews.com/news/myca-raises-1-3m-pre-seed",
+        "source_title": "Myca 融资 130 万美元 pre-seed 轮",
+        "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+        "quote": "This funding round saw participation from Eximius Ventures, Indigram Labs Foundation, and Kriscore Capital.",
+        "quote_hash": "25965761d52ab6caf3e8d56069c6f059f33ff4f751b8a00fb804525e2f9a9623"
+      },
+      {
         "source_id": "FISRC-4b309c6cf2daefde",
         "source_url": "https://businessnewsthisweek.com/education/prolearn-secures-inr-30-crore-pre-seed-round-led-by-beenext/",
         "source_title": "ProLearn 获得由 BEENEXT 领投的 INR 30 Crore 种子前轮融资",
@@ -160,6 +212,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Myca · 预种子轮 · 2026-10-07 · 本轮参投 · $1.3M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-508b05a3c6e8e140"
+        },
+        {
           "description": "融资来源记录：ProLearn · 预种子轮 · 2026-06-03 · 本轮参投 · INR 30 crore。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4b309c6cf2daefde"
         }
@@ -173,6 +229,14 @@
           "source_content_hash": "c2c6f5784d42f4ef87001161fa31e6ef6030688910c7631925fab50226032fad",
           "quote": "We are a pre-seed focused venture capital firm investing in bold entrepreneurs and seasoned operators building transformative companies from India for the world.",
           "quote_hash": "dfe68c317d283d05d7749fdcfbc246cb926371000e6492dad2b839a6b47c10ab"
+        },
+        {
+          "source_id": "FISRC-508b05a3c6e8e140",
+          "source_url": "https://www.thesaasnews.com/news/myca-raises-1-3m-pre-seed",
+          "source_title": "Myca 融资 130 万美元 pre-seed 轮",
+          "source_content_hash": "120f93173236be15a61d24dd1ed67096916a02c4ceb52a4a98f5fb79fced1aae",
+          "quote": "This funding round saw participation from Eximius Ventures, Indigram Labs Foundation, and Kriscore Capital.",
+          "quote_hash": "25965761d52ab6caf3e8d56069c6f059f33ff4f751b8a00fb804525e2f9a9623"
         },
         {
           "source_id": "FISRC-4b309c6cf2daefde",

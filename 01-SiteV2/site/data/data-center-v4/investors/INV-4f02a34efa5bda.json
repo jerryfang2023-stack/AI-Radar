@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -55,32 +54,29 @@
   },
   "institution": {
     "id": "INV-4f02a34efa5bda",
-    "name": "腾讯(Tencent)",
-    "aliases": [
-      "腾讯 (Tencent)"
-    ],
+    "name": "腾讯 (Tencent)",
+    "aliases": [],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
+    "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-06-08",
     "role_counts": {
       "lead": 1,
-      "participant": 2
+      "participant": 1
     },
     "round_codes": [
       "first_external",
-      "ipo",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -96,46 +92,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-95538cff9016bd07",
-        "funding_insight_id": "FI-85041eec5005aca7",
-        "event_ids": [
-          "EV-bada0d929d2b70ac"
-        ],
-        "company_entity_id": "EN-6f7ac1823da81d2e",
-        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
-        "company_name": "DeepSeek",
-        "round": "IPO",
-        "round_code": "ipo",
-        "round_original": "IPO",
-        "amount_original": "at least $12 billion",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 12000000000,
-          "min_value": 12000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 120 亿美元"
-        },
-        "announced_at": "2026-10-06",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-af1bfd9eab3e46f6",
-            "source_url": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/",
-            "source_title": "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
-            "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-            "quote": "Battery maker CATL and Tencent are contributing the largest shares.",
-            "quote_hash": "5e2757a3a630711635c5e3ebe8522f7314400a28987f30e4c3eaa4ff61e40635"
-          }
-        ]
-      },
       {
         "activity_id": "IA-26b4187120c56c32",
         "funding_insight_id": "FI-1b3b5e07545457bb",
@@ -228,14 +184,6 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-af1bfd9eab3e46f6",
-        "source_url": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/",
-        "source_title": "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
-        "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-        "quote": "Battery maker CATL and Tencent are contributing the largest shares.",
-        "quote_hash": "5e2757a3a630711635c5e3ebe8522f7314400a28987f30e4c3eaa4ff61e40635"
-      },
-      {
         "source_id": "FISRC-0199034a5417695f",
         "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
         "source_title": "Moonshot AI's $30B Ask: What's Behind China's AI Bet",
@@ -290,10 +238,6 @@
         }
       ],
       "track_record": [
-        {
-          "description": "融资来源记录：DeepSeek · IPO · 2026-10-06 · 本轮参投 · at least $12 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-af1bfd9eab3e46f6"
-        },
         {
           "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-06-08 · 2024年8月轮次领投；后续轮次参投 · 20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0199034a5417695f"
@@ -354,14 +298,6 @@
           "quote_hash": "c9ab87046b660bb88dfb3abcf15c15015a9c56cf7dcd343f88a4ab3aa5929555"
         },
         {
-          "source_id": "FISRC-af1bfd9eab3e46f6",
-          "source_url": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/",
-          "source_title": "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
-          "source_content_hash": "0f9e00aee3e28f89f23cab2ca87a60fa5e624bf7befc454f43c7d7b3779781a9",
-          "quote": "Battery maker CATL and Tencent are contributing the largest shares.",
-          "quote_hash": "5e2757a3a630711635c5e3ebe8522f7314400a28987f30e4c3eaa4ff61e40635"
-        },
-        {
           "source_id": "FISRC-0199034a5417695f",
           "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
           "source_title": "Moonshot AI's $30B Ask: What's Behind China's AI Bet",
@@ -376,6 +312,14 @@
           "source_content_hash": "6faaa988514157f8",
           "quote": "Tencent and battery maker CATL are among the biggest outside backers.",
           "quote_hash": "4804116ce822c095b4517ca999ab7b6c182a396db91b251591199df242eed60d"
+        },
+        {
+          "source_id": "FISRC-6f84e84fa4821cb0",
+          "source_url": "https://www.gadgetscout.co.uk/articles/deepseek-valued-at-52bn-after-first-external-funding-round.html",
+          "source_title": "DeepSeek Valued at $52bn After First External Funding Round - Gadget Scout",
+          "source_content_hash": "4f78964f26b92981",
+          "quote": "The investor group includes Tencent, which contributed 10 billion yuan",
+          "quote_hash": "963adcb5fcfc2c94b94fbcd5a1bd80a5c0e94a4714e420661e04196d57f245b3"
         }
       ],
       "last_verified_at": "2026-10-03"

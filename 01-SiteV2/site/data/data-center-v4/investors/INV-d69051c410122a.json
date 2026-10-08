@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -62,24 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-27",
-    "latest_disclosed_at": "2026-02-27",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "multi_round",
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-d965aa403593d08c",
+        "canonical_entity_id": "",
+        "name": "Melius"
+      },
       {
         "entity_id": "EN-bf177397fc0b1c41",
         "canonical_entity_id": "",
@@ -87,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-aaac45779bb3ec4f",
+        "funding_insight_id": "FI-78eb3d598e6e9a99",
+        "event_ids": [
+          "EV-187a61fc05451d66"
+        ],
+        "company_entity_id": "EN-d965aa403593d08c",
+        "company_canonical_entity_id": "",
+        "company_name": "Melius",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-17b0a4ba7027e6a1",
+            "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+            "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+            "source_content_hash": "211f9e27654b79b5",
+            "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
+            "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-18166af4ce8f2a77",
         "funding_insight_id": "FI-603376be669bb001",
@@ -162,20 +207,20 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-4c101bd2bd412982",
-        "source_url": "https://en.wowtale.net/2026/02/27/233611/",
-        "source_title": "Pensive 完成 680 万美元种子轮融资，以扩展 AI 辅助评分与个性化学习",
-        "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
-        "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
-        "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
-      },
-      {
         "source_id": "FISRC-17b0a4ba7027e6a1",
         "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
         "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
         "source_content_hash": "211f9e27654b79b5",
         "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
         "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
+      },
+      {
+        "source_id": "FISRC-4c101bd2bd412982",
+        "source_url": "https://en.wowtale.net/2026/02/27/233611/",
+        "source_title": "Pensive 完成 680 万美元种子轮融资，以扩展 AI 辅助评分与个性化学习",
+        "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
+        "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
+        "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
       }
     ],
     "public_profile": {
@@ -206,12 +251,12 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Pensive · 种子轮 · 2026-02-27 · 本轮参投 · $6.8M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4c101bd2bd412982"
+          "description": "融资来源记录：Melius · 多轮融资 · 2026-10-06 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-17b0a4ba7027e6a1"
         },
         {
-          "description": "融资来源记录：Melius · 历史轮次未披露 · 披露未明确对应轮次的参投方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-17b0a4ba7027e6a1"
+          "description": "融资来源记录：Pensive · 种子轮 · 2026-02-27 · 本轮参投 · $6.8M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4c101bd2bd412982"
         }
       ],
       "contacts": [
@@ -249,20 +294,20 @@
           "quote_hash": "c591ca9d2c4bcca2e208ea844ee0faf71c4aa2eb29f22cfa438bfa3ae337903b"
         },
         {
-          "source_id": "FISRC-4c101bd2bd412982",
-          "source_url": "https://en.wowtale.net/2026/02/27/233611/",
-          "source_title": "Pensive 完成 680 万美元种子轮融资，以扩展 AI 辅助评分与个性化学习",
-          "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
-          "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
-          "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
-        },
-        {
           "source_id": "FISRC-17b0a4ba7027e6a1",
           "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
           "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
           "source_content_hash": "211f9e27654b79b5",
           "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
           "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
+        },
+        {
+          "source_id": "FISRC-4c101bd2bd412982",
+          "source_url": "https://en.wowtale.net/2026/02/27/233611/",
+          "source_title": "Pensive 完成 680 万美元种子轮融资，以扩展 AI 辅助评分与个性化学习",
+          "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
+          "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
+          "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
         }
       ],
       "last_verified_at": "2026-10-03",

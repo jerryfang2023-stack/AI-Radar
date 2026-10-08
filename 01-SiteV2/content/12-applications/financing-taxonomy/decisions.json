@@ -27713,19 +27713,18 @@
       "scope": "included",
       "exclusion_reason": "",
       "sector_id": "enterprise",
-      "subsector_id": "design-engineering",
+      "subsector_id": "sales-marketing",
       "product_form_id": "enterprise-software",
       "customer_ids": [
         "business"
       ],
       "evidence_indices": [
         0,
-        1,
         2,
         3
       ],
-      "rationale": "Melius 为创意团队提供由 AI 智能体驱动的图像、视频与音频创作操作系统，属企业设计与创意生产软件。",
-      "input_hash": "a4a500708e3e84e41f1a0fe9122042a63823f214083a2f8188152823f5bffeb5",
+      "rationale": "Melius 用 AI 智能体为创意团队生成广告活动、图像与视频，属企业销售营销软件。",
+      "input_hash": "13bac5e19b461ada1407e755e1bdc3d45aaade5f2aad4f40a843a33a694cb492",
       "evidence_refs": [
         {
           "source_id": "FISRC-925d3dbfb764eb23",
@@ -27733,20 +27732,16 @@
         },
         {
           "source_id": "FISRC-17b0a4ba7027e6a1",
-          "quote": "Melius is the first agents lab for creative work: a shared creative operating system where teams of AI agents handle the busywork of building images, video, and audio, so creative teams can spend their time imagining."
-        },
-        {
-          "source_id": "FISRC-17b0a4ba7027e6a1",
           "quote": "Melius gives creative teams a shared creative operating system where teams of AI agents handle the busywork of creative production."
         },
         {
-          "source_id": "FISRC-3ff410933fff0c75",
-          "quote": "Melius is the first agents lab for creative work, providing a shared creative operating system where teams of AI agents manage the busywork of producing images, video, and audio."
+          "source_id": "FISRC-17b0a4ba7027e6a1",
+          "quote": "a shared creative operating system where teams of AI agents handle the busywork of building images, video, and audio, so creative teams can spend their time imagining"
         }
       ],
       "provider": "deepseek",
       "model": "deepseek-flash",
-      "generated_at": "2026-10-07T00:43:52.137Z"
+      "generated_at": "2026-10-08T02:37:20.524Z"
     },
     "EV-6bbfb2ce5e89bbda": {
       "id": "EV-6bbfb2ce5e89bbda",
@@ -28083,7 +28078,378 @@
       "provider": "manual_review",
       "model": "Codex",
       "generated_at": "2026-10-07T12:46:30.493Z"
+    },
+    "EV-9faff8c3dc316485": {
+      "id": "EV-9faff8c3dc316485",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "mobility",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "Wiremind 为客运运营商和赛事票务提供 AI 收益管理与库存分销软件，属交通物流行业软件。",
+      "input_hash": "cb503446b99dd4f27ff20567b98cb78ef342555238ef05e9af38af82dd8261ee",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-45fd6ee701d8b9ca",
+          "quote": "The Paris-based technology company plans to use the financing to accelerate its international expansion and increase investment in artificial intelligence as it seeks to become a major technology partner for passenger transportation operators and the event and sports ticketing industries."
+        },
+        {
+          "source_id": "FISRC-d0e8071c35c2dc43",
+          "quote": "CAYZN is the market leading, AI-First revenue management system for passenger transport operators."
+        },
+        {
+          "source_id": "FISRC-45fd6ee701d8b9ca",
+          "quote": "One of Wiremind’s foundational products is CAYZN, a revenue management platform that was adopted by SNCF and has generated average revenue gains of up to 5% to 15%, according to the company."
+        },
+        {
+          "source_id": "FISRC-45fd6ee701d8b9ca",
+          "quote": "The company launched EVENTORI in 2022 as an AI-powered platform that combines ticketing, revenue management, analytics and operational tools for sports clubs and event organizers."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T02:37:20.524Z"
+    },
+    "EV-52e472f000148362": {
+      "id": "EV-52e472f000148362",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Hadrian 提供智能体驱动的攻击面映射与按需渗透测试，属企业网络安全风控软件。",
+      "input_hash": "5ca52bdeb635849a0d15afbf0b195ac859d2598672742c374ee5ff9a3a9ca237",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-123307e05ad2a90a",
+          "quote": "Hadrian, a London-Amsterdam-based agentic AI offensive security platform"
+        },
+        {
+          "source_id": "FISRC-123307e05ad2a90a",
+          "quote": "Its product Atlas continuously maps an organisation’s external attack surface and uses purpose-built AI agents to validate which exposures are actually exploitable."
+        },
+        {
+          "source_id": "FISRC-123307e05ad2a90a",
+          "quote": "Nora, its other product, provides agentic pentesting on demand at a human pentest level and beyond."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T02:37:20.524Z"
+    },
+    "EV-215ea259173fa6b4": {
+      "id": "EV-215ea259173fa6b4",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Netsec 主营托管 IT 与安全服务，证据未显示其核心交付为 AI 产品。",
+      "input_hash": "0be586d9258c8a033998e32a3e86fa1d10e1f359574ef31228eec2bfc7d29474",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-429ccc47b81019aa",
+          "quote": "Netsec, the European provider of cybersecurity and managed IT services"
+        },
+        {
+          "source_id": "FISRC-429ccc47b81019aa",
+          "quote": "Netsec operates the entire IT and security stack for its clients through a unified control plane that works across device management, identity, networking, infrastructure, security operations, help desk, and cloud."
+        },
+        {
+          "source_id": "FISRC-429ccc47b81019aa",
+          "quote": "On the IT side, the company offers mobile device management (MDM), remote monitoring and management, SaaS subscription optimisation, and enterprise networking."
+        },
+        {
+          "source_id": "FISRC-429ccc47b81019aa",
+          "quote": "the service is delivered through Slack or Microsoft Teams and priced per employee per month, starting from €19, rather than billed by the ticket or by the hour."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T02:37:20.524Z"
+    },
+    "EV-5b59ff829e596b56": {
+      "id": "EV-5b59ff829e596b56",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Healthleap 读取住院病历以筛查营养不良等未诊断风险，属医疗服务临床 AI 平台。",
+      "input_hash": "85b3f7bc2a81afc5195e3a2a9ed820795b33a07eb166083a20bc2138a1268336",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "quote": "Healthleap, a startup building an AI platform that reads patient records to identify patients at risk of undiagnosed illnesses"
+        },
+        {
+          "source_id": "FISRC-3569fa78cd9c47b8",
+          "quote": "Healthleap’s AI screening program surfaces at-risk inpatients earlier starting with malnutrition, delirium and aspiration pneumonia"
+        },
+        {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "quote": "Healthleap plugs into a hospital’s electronic health record system and uses language models to pull information from written notes"
+        },
+        {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "quote": "Each night, we analyze every adult inpatient’s record"
+        },
+        {
+          "source_id": "FISRC-3569fa78cd9c47b8",
+          "quote": "To our knowledge, Healthleap offers the only commercially available, peer-reviewed AI malnutrition screening tool."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T02:37:20.524Z"
+    },
+    "EV-80fce5a60752ce60": {
+      "id": "EV-80fce5a60752ce60",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "该公司主营英国保险经纪业务，自研平台仅用于内部经纪与合规流程，未体现以AI为核心交付产品。",
+      "input_hash": "97f86a297ac5de7419a581ad8bbfcc9b512c4ec31a20735fff8e37290c9af384",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b3116c778e39662f",
+          "quote": "Konsileo, a UK-based chartered insurance broker"
+        },
+        {
+          "source_id": "FISRC-b3116c778e39662f",
+          "quote": "a proprietary, in-house broking platform that automates administrative tasks, embeds compliance checks, and helps brokers capture higher-quality risk information for clients"
+        },
+        {
+          "source_id": "FISRC-b3116c778e39662f",
+          "quote": "The firm also runs Riskube, a custom online insurance and risk management platform that enables clients to access and manage their policies directly."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T02:37:21.050Z"
+    },
+    "EV-7baf4ab86798fef5": {
+      "id": "EV-7baf4ab86798fef5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "公司以Agentic Infra算力集散平台和MaaS大模型服务平台为核心，调度第三方异构算力，属于AI云与算力服务。",
+      "input_hash": "7d53e98de9bb8f3bd9f3d68940b8b2dbb0bf1b51b97125446b5c0d6f87ebde7f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f5aa056fbd5702b8",
+          "quote": "作为算力集散中心的Agentic Infra自主式基础设施平台"
+        },
+        {
+          "source_id": "FISRC-f5aa056fbd5702b8",
+          "quote": "公司自身并不拥有实体数据中心，而是管理、调度分布在数十个第三方设施中的算力，同时适配华为昇腾、摩尔线程等不同AI芯片，走的是异构计算路线"
+        },
+        {
+          "source_id": "FISRC-f5aa056fbd5702b8",
+          "quote": "作为Token工厂的Agentic MaaS大模型服务平台"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T02:37:21.050Z"
+    },
+    "EV-115f9901176fd251": {
+      "id": "EV-115f9901176fd251",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "公司为BFSI行业交付智能体工作流编排与语音自动化平台，围绕金融保险业务流程，属于金融行业AI。",
+      "input_hash": "128503499d5647e5f689e89847e0b5a57d30b9b0fc7d39fa89f3043ed69edd8c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fb5290f3b5c9d736",
+          "quote": "The startup, founded in 2025 by Uttam Tiwari and Omkar Raikar, builds an agentic workflow orchestration platform for banking, financial services, and insurance (BFSI) companies."
+        },
+        {
+          "source_id": "FISRC-fb5290f3b5c9d736",
+          "quote": "Desible.ai orchestrates more than 25 agentic workflows across revenue, risk, collections, underwriting, service, and claims, integrated with existing enterprise systems."
+        },
+        {
+          "source_id": "FISRC-fb5290f3b5c9d736",
+          "quote": "The platform is designed to meet compliance frameworks including those from the Insurance Regulatory and Development Authority of India, Telecom Regulatory Authority of India, Reserve Bank of India, and the Digital Personal Data Protection Act."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T02:37:21.050Z"
+    },
+    "EV-ad34c5b8ae2f5d20": {
+      "id": "EV-ad34c5b8ae2f5d20",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司核心产品为面向具身智能的物理优先基础模型，驱动不同机器人形态自主运行，属于具身智能与机器人本体范畴。",
+      "input_hash": "c86062dc9ad51b035a99c5d4db554c56a7bac82e7b5fa5a1d4a52725d895b5ec",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-51ce1e151d0b9865",
+          "quote": "Headquartered in Irvine, CA, FieldAI is a pioneer in developing embodied AI software that is redefining autonomous robot operations in real-world environments."
+        },
+        {
+          "source_id": "FISRC-51ce1e151d0b9865",
+          "quote": "At the core of FieldAI’s platform are Field Foundation Models (FFMs): a new class of “physics-first” foundation models built specifically for embodied intelligence."
+        },
+        {
+          "source_id": "FISRC-51ce1e151d0b9865",
+          "quote": "Their hardware-agnostic design allows different form factors and manipulators to operate using the same core intelligence, accelerating deployment and scalability."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T02:37:21.050Z"
+    },
+    "EV-366e1027af052b7a": {
+      "id": "EV-366e1027af052b7a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business",
+        "research"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "公司用AI平台ALFRED设计优化基因药物递送载体与基因载荷，属于药物研发与生命科学行业AI。",
+      "input_hash": "466213f9237df96c6a9ad585503ac6ea307f5e4872af9fbd4c8c5cc00e851ea9",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-208499227defc99f",
+          "quote": "WhiteLab Genomics, a Paris-based BioTech company that uses AI to design the building blocks of genomic medicines"
+        },
+        {
+          "source_id": "FISRC-208499227defc99f",
+          "quote": "The company has developed a proprietary platform called ALFRED (AI-Led Framework for Rational Exploration in Drug Design)"
+        },
+        {
+          "source_id": "FISRC-208499227defc99f",
+          "quote": "Using ALFRED, WhiteLab designs and optimises both viral and non-viral delivery vehicles, such as adeno-associated viruses (AAVs) and lipid nanoparticles, as well as programmable genetic payloads."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T02:37:21.050Z"
+    },
+    "EV-a48fb50d5019bb90": {
+      "id": "EV-a48fb50d5019bb90",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "energy",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business",
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "公司以AI能源管理平台为核心，提供充电运营、充电桩发现与家庭充电管理等能源领域软件。",
+      "input_hash": "a6efb230d1c021df1931abf52989ff28101c06b71f7d1ac24f2dec977271b18b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-59c49a5ed19d549f",
+          "quote": "AI enabled energy management platform Ionage has raised $1.3 million in a pre Series A funding round"
+        },
+        {
+          "source_id": "FISRC-097b09f68a1aa721",
+          "quote": "Nexus, a CPO operations platform"
+        },
+        {
+          "source_id": "FISRC-097b09f68a1aa721",
+          "quote": "the IONAGE App for charger discovery, trip planning, charging and payments"
+        },
+        {
+          "source_id": "FISRC-097b09f68a1aa721",
+          "quote": "Flo, a CPO-fleet discovery marketplace"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-08T02:37:21.050Z"
     }
   },
-  "generated_at": "2026-10-07T12:38:22.328Z"
+  "generated_at": "2026-10-08T02:37:21.050Z"
 }

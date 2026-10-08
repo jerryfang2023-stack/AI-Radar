@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -63,16 +62,17 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-05-07",
+    "first_disclosed_at": "2026-05",
     "latest_disclosed_at": "2026-05-07",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -125,6 +125,38 @@
             "quote_hash": "1105a4aaa66c3414e7d340016a6fe0224d7ddfa26159efcc2cac1df7b71fdef4"
           }
         ]
+      },
+      {
+        "activity_id": "IA-7dd03f6521a7e459",
+        "funding_insight_id": "FI-c806d69a64a22c80",
+        "event_ids": [
+          "EV-7baf4ab86798fef5"
+        ],
+        "company_entity_id": "EN-d5cffd7a93040807",
+        "company_canonical_entity_id": "",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2026-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年5月超7亿元融资老股东追加投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f5aa056fbd5702b8",
+            "source_url": "https://www.sohu.com/a/1083931138_115479",
+            "source_title": "无问芯穹秘密递表港交所：已融资43亿，腾讯、百度、智谱等押注",
+            "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+            "quote": "老股东君联资本、上海国投孚腾和元智未来追加投资",
+            "quote_hash": "ab00e7aba559693a6cbc6afca98b548bbb55561d7cf53bf89630ec954f3ecc38"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -135,6 +167,14 @@
         "source_content_hash": "69550847bd779ae8",
         "quote": "老股东 君联资本、上海国投孚腾和元智未来 追加投资。",
         "quote_hash": "1105a4aaa66c3414e7d340016a6fe0224d7ddfa26159efcc2cac1df7b71fdef4"
+      },
+      {
+        "source_id": "FISRC-f5aa056fbd5702b8",
+        "source_url": "https://www.sohu.com/a/1083931138_115479",
+        "source_title": "无问芯穹秘密递表港交所：已融资43亿，腾讯、百度、智谱等押注",
+        "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+        "quote": "老股东君联资本、上海国投孚腾和元智未来追加投资",
+        "quote_hash": "ab00e7aba559693a6cbc6afca98b548bbb55561d7cf53bf89630ec954f3ecc38"
       }
     ],
     "public_profile": {
@@ -170,6 +210,10 @@
         {
           "description": "融资来源记录：无问芯穹 · 基础设施融资 · 2026-05-07 · 本轮参投（老股东追加） · 7 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5d0583f94886034"
+        },
+        {
+          "description": "融资来源记录：上海无问芯穹智能科技股份有限公司 · 历史轮次未披露 · 2026-05 · 2026年5月超7亿元融资老股东追加投资。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f5aa056fbd5702b8"
         }
       ],
       "profile_type": "organization",
@@ -205,6 +249,14 @@
           "source_content_hash": "69550847bd779ae8",
           "quote": "老股东 君联资本、上海国投孚腾和元智未来 追加投资。",
           "quote_hash": "1105a4aaa66c3414e7d340016a6fe0224d7ddfa26159efcc2cac1df7b71fdef4"
+        },
+        {
+          "source_id": "FISRC-f5aa056fbd5702b8",
+          "source_url": "https://www.sohu.com/a/1083931138_115479",
+          "source_title": "无问芯穹秘密递表港交所：已融资43亿，腾讯、百度、智谱等押注",
+          "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+          "quote": "老股东君联资本、上海国投孚腾和元智未来追加投资",
+          "quote_hash": "ab00e7aba559693a6cbc6afca98b548bbb55561d7cf53bf89630ec954f3ecc38"
         }
       ],
       "last_verified_at": "2026-10-03"

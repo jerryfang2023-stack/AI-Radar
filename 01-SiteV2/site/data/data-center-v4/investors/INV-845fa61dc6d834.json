@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -62,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-5f43904e99289cdd",
+        "canonical_entity_id": "",
+        "name": "Torch Systems"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-741bd5efcbe14865",
+        "funding_insight_id": "FI-758038d218987ca7",
+        "event_ids": [
+          "EV-3b26cd0829579d78"
+        ],
+        "company_entity_id": "EN-5f43904e99289cdd",
+        "company_canonical_entity_id": "",
+        "company_name": "Torch Systems",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "Unattributed VC",
+        "amount_original": "$11.5 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1150 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6f2893ccf0aa3194",
+            "source_url": "https://www.trysignalbase.com/news/funding/torch-systems-raises-11-5m-for-outdoor",
+            "source_title": "Torch Systems 为户外业务融资 1150 万美元",
+            "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
+            "quote": "announced the capital infusion from investors including Khosla Ventures, Abstract, Construct Capital, and Starship Ventures.",
+            "quote_hash": "164648e587d11a038dc829862b5afb6ac34d5075cb416a9737cb2efb07ea3842"
+          }
+        ]
+      },
       {
         "activity_id": "IA-92af7030a4980fbf",
         "funding_insight_id": "FI-a7f67888b410be24",
@@ -113,6 +161,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6f2893ccf0aa3194",
+        "source_url": "https://www.trysignalbase.com/news/funding/torch-systems-raises-11-5m-for-outdoor",
+        "source_title": "Torch Systems 为户外业务融资 1150 万美元",
+        "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
+        "quote": "announced the capital infusion from investors including Khosla Ventures, Abstract, Construct Capital, and Starship Ventures.",
+        "quote_hash": "164648e587d11a038dc829862b5afb6ac34d5075cb416a9737cb2efb07ea3842"
+      },
+      {
         "source_id": "FISRC-cbb8abca74aa20f4",
         "source_url": "https://fintech.global/2026/07/21/natural-raises-30m-to-power-payments-for-ai-agents/",
         "source_title": "Natural raises $30m to power payments for AI agents",
@@ -142,6 +198,10 @@
           "source_id": "PROFILE-B5-INV-845fa61dc6d834-2"
         },
         {
+          "description": "融资来源记录：Torch Systems · 其他融资 · 2026-10-06 · 本轮参投 · $11.5 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6f2893ccf0aa3194"
+        },
+        {
           "description": "融资来源记录：Natural AI, Inc. · 历史轮次未披露 · 本轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cbb8abca74aa20f4"
         }
@@ -163,6 +223,14 @@
           "source_content_hash": "4a58a6748da5245891d6fab518dd341fce8de6a27b49f43b2f54282683eae6bb",
           "quote": "The round was supported by Human Capital, Abstract, Genius Ventures",
           "quote_hash": "999026e9d8a6a2020974266ba6692da119e82354ed17ddd85f3b69fc8b50dcd2"
+        },
+        {
+          "source_id": "FISRC-6f2893ccf0aa3194",
+          "source_url": "https://www.trysignalbase.com/news/funding/torch-systems-raises-11-5m-for-outdoor",
+          "source_title": "Torch Systems 为户外业务融资 1150 万美元",
+          "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
+          "quote": "announced the capital infusion from investors including Khosla Ventures, Abstract, Construct Capital, and Starship Ventures.",
+          "quote_hash": "164648e587d11a038dc829862b5afb6ac34d5075cb416a9737cb2efb07ea3842"
         },
         {
           "source_id": "FISRC-cbb8abca74aa20f4",

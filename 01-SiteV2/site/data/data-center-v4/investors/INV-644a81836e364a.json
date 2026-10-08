@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -62,7 +61,7 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 3,
     "market_regions": [
@@ -73,7 +72,7 @@
     "first_disclosed_at": "2026-07-14",
     "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "lead": 2,
+      "lead": 3,
       "participant": 1
     },
     "round_codes": [
@@ -100,6 +99,46 @@
     ],
     "activities": [
       {
+        "activity_id": "IA-57f24d24d8cb641d",
+        "funding_insight_id": "FI-78eb3d598e6e9a99",
+        "event_ids": [
+          "EV-187a61fc05451d66"
+        ],
+        "company_entity_id": "EN-d965aa403593d08c",
+        "company_canonical_entity_id": "",
+        "company_name": "Melius",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-925d3dbfb764eb23",
+            "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+            "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
+            "source_content_hash": "4f8e687bca566f6a98591c0fc9c146b77b2fee7b784fecee26e614eb5ded976c",
+            "quote": "a $20 million Series A led by CRV and a $5 million seed round led by General Catalyst",
+            "quote_hash": "b61dc1fc46cecd6cfb2613ffafe46aa97efaceb366230220a684d6130fd30711"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-23b65c0ecc0a5209",
         "funding_insight_id": "FI-8fcbda1e61969a98",
         "event_ids": [
@@ -110,7 +149,7 @@
         "company_name": "Melius",
         "round": "A轮",
         "round_code": "series_a",
-        "round_original": "Series A",
+        "round_original": "A轮",
         "amount_original": "$20 million",
         "amount_normalized": {
           "currency": "USD",
@@ -233,6 +272,14 @@
         "source_id": "FISRC-925d3dbfb764eb23",
         "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
         "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
+        "source_content_hash": "4f8e687bca566f6a98591c0fc9c146b77b2fee7b784fecee26e614eb5ded976c",
+        "quote": "a $20 million Series A led by CRV and a $5 million seed round led by General Catalyst",
+        "quote_hash": "b61dc1fc46cecd6cfb2613ffafe46aa97efaceb366230220a684d6130fd30711"
+      },
+      {
+        "source_id": "FISRC-925d3dbfb764eb23",
+        "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+        "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
         "source_content_hash": "ec6374c91af67956bdc5823328f342540fc2f142546fd8dc3ad3e0288c34ee6e",
         "quote": "a $20 million Series A led by CRV",
         "quote_hash": "312ef291235f1d7c3e3edffb420a57c6d8ae33672610e6aa9e11711f33940264"
@@ -287,8 +334,12 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Melius · A轮 · 2026-10-06 · 本轮领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：Melius · 多轮融资 · 2026-10-06 · 本轮领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-925d3dbfb764eb23"
+        },
+        {
+          "description": "融资来源记录：Melius · A轮 · 2026-10-06 · 本轮领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-17b0a4ba7027e6a1"
         },
         {
           "description": "融资来源记录：Alice · 轮次未披露 · 2026-08-25 · 本轮参投 · $140 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -333,9 +384,9 @@
           "source_id": "FISRC-925d3dbfb764eb23",
           "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
           "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
-          "source_content_hash": "ec6374c91af67956bdc5823328f342540fc2f142546fd8dc3ad3e0288c34ee6e",
-          "quote": "a $20 million Series A led by CRV",
-          "quote_hash": "312ef291235f1d7c3e3edffb420a57c6d8ae33672610e6aa9e11711f33940264"
+          "source_content_hash": "4f8e687bca566f6a98591c0fc9c146b77b2fee7b784fecee26e614eb5ded976c",
+          "quote": "a $20 million Series A led by CRV and a $5 million seed round led by General Catalyst",
+          "quote_hash": "b61dc1fc46cecd6cfb2613ffafe46aa97efaceb366230220a684d6130fd30711"
         },
         {
           "source_id": "FISRC-17b0a4ba7027e6a1",
