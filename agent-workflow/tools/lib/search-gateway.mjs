@@ -169,5 +169,7 @@ export function createSearchGateway({ env = process.env, fetcher = fetch, fallba
     };
     const promise = operation().finally(() => inflight.delete(key)); inflight.set(key, promise); return promise;
   }
-  return { search, attempts, status: () => ({ requests, max_requests: maxRequests, providers: order.map((id) => ({ id, configured: configured(id), disabled: disabled.get(id) || "" })) }) };
+  return { search, attempts, status: () => ({ requests, max_requests: maxRequests, providers: order.map((id) => ({ id, configured: configured(id),
+    disabled:unavailable(id) ? (healthFile ? health()[id]?.reason : disabled.get(id)) || '' : '',
+    ...(healthFile && unavailable(id)?{retry_at:health()[id].until}:{}) })) }) };
 }

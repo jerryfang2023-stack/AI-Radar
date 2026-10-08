@@ -54,6 +54,18 @@ test('account quota circuit persists across instances; rate limit expires withou
   now+=61000;status=402;await assert.rejects(make().search('c'));await assert.rejects(make().search('d'));assert.equal(calls,2);
 });
 
+test('known provider rate limit resumes after cooldown and retains charged attempt history',async t=>{
+  const directory=temp(t),env={ANYSEARCH_API_KEY:'fixture'};let now=1000,calls=0;
+  const make=()=>createLeadFollowupSearch({directory,date,leadUrl:'lead',policy,env,now:()=>now,fetcher:async()=>{
+    calls++;return calls===1?new Response('',{status:429}):Response.json({results:[{url:'https://example.com/source',title:'Acme original'}]});
+  }});
+  await assert.rejects(make().query('Acme',1));await assert.rejects(make().query('Acme',1));assert.equal(calls,1);
+  now+=61000;assert.equal((await make().query('Acme',1)).length,1);assert.equal(calls,2);
+  const file=fs.readdirSync(directory).find(name=>name.startsWith('verification-search-'));
+  const state=JSON.parse(fs.readFileSync(path.join(directory,file)));assert.equal(state.requests,2);
+  assert.equal(Object.values(state.queries)[0].attempts.length,1);
+});
+
 test('unreviewed resource deferrals stay eligible beyond seven days; actual reviews remain bounded',()=>{
   const item={status:'pending',rounds:0,stop_after_date:'2026-10-01',next_due_date:date};
   assert.equal(followupDue(item,date),true);

@@ -243,11 +243,13 @@ test('daily workflow orders capture, follow-up, private persistence, then existi
   assert.match(runner, /digest\(\[intake, extractionScope\]\)/);
 });
 
-test('private attempt reservations still consume capture budget when public checkpoint is missing', async t => {
+test('orphaned unknown source reservations survive while new leads retain their own capacity', async t => {
   const options = fixture(t); seed(options);
   write(path.join(options.backupRoot, 'financing-monitor-state/verification-attempts.json'), { entries: Object.fromEntries(Array.from({ length: config.secondary_review.capture_attempts_per_run }, (_, i) => [`https://example.com/earlier-${i}`, { date, status: 'started', attempted: true }])) });
-  const state = await verifyPending({ ...options, capture: forbidden });
-  assert.equal(state.entries[url].reason, 'capture_budget_exhausted');
+  let calls=0;
+  const state = await verifyPending({ ...options, capture:async()=>{calls++;return {status:'pending',reason:'original_unreadable'};} });
+  assert.equal(calls,1);assert.equal(state.review_budget.capture_requests,481);
+  assert.ok(state.review_budget.capacity.captures>481);
 });
 
 test('pending legacy lead captures one alternative but requires identity binding before fact admission', async t => {

@@ -46,7 +46,14 @@ export function createReviewBudget({directory, date, policy, collection = {}, ve
     state.leads[key].search_requests=Math.max(state.leads[key].search_requests,prior.requests || 0);
   }
   state.search_requests=Object.values(state.leads).reduce((sum,row)=>sum+row.search_requests,0);
-  const capacity = () => reviewCapacity(policy, Object.keys(state.leads).length);
+  const capacity = () => {
+    const planned=reviewCapacity(policy,Object.keys(state.leads).length);
+    // Lost legacy checkpoints can leave source requests without a parent lead.
+    // Preserve those reservations without taking a new lead's reserved share.
+    const orphaned=Object.values(state.captures).filter(row=>!row.lead).length;
+    planned.captures=Math.max(planned.captures,orphaned+Math.ceil(Object.keys(state.leads).length*policy.capture_attempts_per_lead*(1+(policy.capacity_margin ?? 0.2))));
+    return planned;
+  };
   const save = () => {state.capacity = capacity(); write(file,state);};
   save();
   return {
