@@ -494,6 +494,7 @@ const ORGANIZATION_ALIASES = [
   ["PixVerse", ["PixVerse"]],
   ["Prentis", ["Prentis"]],
   ["PrismML", ["PrismML"]],
+  ["Procuros", ["Procuros"]],
   ["PwC", ["PwC"]],
   ["Rime", ["Rime"]],
   ["Roblox", ["Roblox"]],
