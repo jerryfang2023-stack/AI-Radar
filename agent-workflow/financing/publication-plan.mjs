@@ -17,7 +17,9 @@ export function publicationCodeInputs(root,commands) {
   const found=new Set();
   const visit=file=>{
     const relative=path.relative(root,file).replaceAll('\\','/');
-    if(relative.startsWith('../') || found.has(relative) || !fs.existsSync(file) || !fs.statSync(file).isFile())return;
+    // On Windows, path.relative across drive letters can return an absolute
+    // path. Those external publisher inputs are hashed from their own repo.
+    if(path.isAbsolute(relative) || relative==='..' || relative.startsWith('../') || found.has(relative) || !fs.existsSync(file) || !fs.statSync(file).isFile())return;
     found.add(relative);
     if(!/\.[cm]?js$/u.test(file))return;
     const body=fs.readFileSync(file,'utf8');
