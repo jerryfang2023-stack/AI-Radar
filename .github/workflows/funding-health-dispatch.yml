@@ -1,6 +1,8 @@
 name: WaveSight Financing Health Dispatch
 on:
-  # Manual recovery only; the local AI financing automation handles the daily 08:10 run.
+  # Idempotent daily fallback for the 08:10 local AI financing run.
+  schedule:
+    - cron: '30 2 * * *'
   workflow_dispatch:
     inputs:
       date:
