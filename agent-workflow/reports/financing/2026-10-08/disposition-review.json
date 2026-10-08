@@ -2,7 +2,7 @@
   "version": "FINANCING-DISPOSITION-REVIEW-1",
   "date": "2026-10-08",
   "reviewer": "Codex responsible financing evidence review",
-  "scope": "Exact source-bound review of 19 entries; accepted financing remains subject to normal fact and publication gates.",
+  "scope": "Exact source-bound review of the original 19 entries plus two alternate-source duplicate bindings; accepted financing remains subject to normal fact and publication gates.",
   "rows": [
     {
       "id": "tvs-automobile",
@@ -392,6 +392,57 @@
         "announced_at": "2026-10-06",
         "round_code": "seed",
         "reason": "同一公司、公告日期及 $6m seed 轮融资已存在于融资目录，并已发布卡片。"
+      }
+    },
+    {
+      "id": "flow-swyx-duplicate-20261008",
+      "url": "https://x.com/swyx/status/2105348724331606411",
+      "status": "already_covered",
+      "reason": "独立 TechCrunch 原文确认 Flow Engineering 于 2026-09-30 完成 $50 million Series B；公司、日期与轮次均匹配融资目录事件 EV-f2950d2104e97163。本条是该既有融资的关联社交线索，不是新融资事件。",
+      "reviewed_at": "2026-10-08T11:12:27.263Z",
+      "review_basis": "responsible_alternate_source_review",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
+          "content_hash": "953120e8ff6ea4a75018b1d385f9d5a4e77f61bd19f7bd192b4c0b98c8449464",
+          "quote": "Flow Engineering, a startup that offers AI tools for hardware design, has raised a $50 million Series B round"
+        }
+      ],
+      "event_binding": {
+        "event_id": "EV-f2950d2104e97163",
+        "company": "Flow Engineering",
+        "announced_at": "2026-09-30",
+        "round_code": "series_b",
+        "reason": "TechCrunch 原文明确同日 $50 million Series B，与目录事件卡的公司、日期和轮次完全一致。"
+      }
+    },
+    {
+      "id": "openrouter-duplicate-20261008",
+      "url": "https://openrouter.ai/announcements/series-b",
+      "status": "already_covered",
+      "reason": "TechCrunch 于 2026-05-26 报道 OpenRouter 完成 $113 million Series B；OpenRouter 官方公告随后确认同一金额和轮次。官方页显示较晚的页面发布日期，不构成第二笔融资；与融资目录事件 EV-0e84a2f49d765ce3 对应。",
+      "reviewed_at": "2026-10-08T11:12:27.263Z",
+      "review_basis": "responsible_alternate_source_review",
+      "alternate_source_basis": "responsible_alternate_source_review",
+      "evidence_sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year",
+          "content_hash": "d5af325a77ba08b3feb1f67dcd6731cc4faec2d53f1cb946f1bf16d82ea1c009",
+          "quote": "Popular AI gateway maker OpenRouter, founded in 2023, has raised a hefty $113 million Series B led by CapitalG"
+        },
+        {
+          "source_url": "https://openrouter.ai/blog/announcements/series-b",
+          "content_hash": "aed43cb7dc97e4d7cf5b69ce5fa0d8884317ea04b98d3acd860a2d24d4b16fe8",
+          "quote": "Today we’re announcing our $113M Series B, led by CapitalG (Alphabet’s independent growth fund)"
+        }
+      ],
+      "event_binding": {
+        "event_id": "EV-0e84a2f49d765ce3",
+        "company": "OpenRouter",
+        "announced_at": "2026-05-26",
+        "round_code": "series_b",
+        "reason": "TechCrunch 明确将该 $113 million Series B 报道日期标为 2026-05-26，官方公告确认相同轮次与金额；与目录事件卡完全对应。"
       }
     }
   ]
