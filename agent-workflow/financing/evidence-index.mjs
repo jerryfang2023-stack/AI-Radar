@@ -5,13 +5,25 @@ import { loadPrivateEvidenceRecord } from '../tools/lib/private-evidence-store.m
 
 export const publicIndexPath = '01-SiteV2/content/01-raw/source-index.jsonl';
 
-// Publish locators for this collection only; never copy a private original body.
-export function indexFinancingEvidence({root, backupRoot, date, collection}) {
+// Publish body-free locators for accepted captures and any private evidence
+// explicitly referenced by the current intake; never copy an original body.
+export function indexFinancingEvidence({root, backupRoot, date, collection, requiredEvidenceRefs = []}) {
   const file=path.join(root,publicIndexPath);
   const rows=fs.existsSync(file) ? fs.readFileSync(file,'utf8').split(/\r?\n/u).filter(Boolean).map(line=>JSON.parse(line)) : [];
   const indexed=new Map(rows.map(row=>[row.source_id,row]));
-  for(const capture of Object.values(collection.captures || {}).filter(row=>row.status==='accepted')) {
-    const {entry,metadata}=loadPrivateEvidenceRecord(root,`evidence://${capture.content_hash}`,capture.content_hash,{backupRoot,sourceUrl:capture.source_url,dataDate:date});
+  const indexedRefs=new Set([...indexed.values()].map(row=>row.evidence_ref).filter(Boolean));
+  const required=new Set(requiredEvidenceRefs.map(String).filter(ref=>ref.startsWith('evidence://')));
+  const captures=new Map();
+  for(const capture of Object.values(collection.captures || {})) {
+    const ref=capture.content_hash ? `evidence://${capture.content_hash}` : '';
+    if(capture.status==='accepted' || required.has(ref)) captures.set(ref,capture);
+  }
+  for(const ref of required) {
+    if(!captures.has(ref) && !indexedRefs.has(ref)) captures.set(ref,{content_hash:ref.slice('evidence://'.length),source_url:''});
+  }
+  for(const [ref,capture] of captures) {
+    if(indexedRefs.has(ref)) continue;
+    const {entry,metadata}=loadPrivateEvidenceRecord(root,ref,capture.content_hash,{backupRoot,sourceUrl:capture.source_url,dataDate:date});
     const sourceId=`SRC-${crypto.createHash('sha256').update(entry.snapshot_ref).digest('hex').slice(0,16)}`;
     if(indexed.has(sourceId)) continue;
     indexed.set(sourceId,{
@@ -22,6 +34,7 @@ export function indexFinancingEvidence({root, backupRoot, date, collection}) {
       language:String(metadata.language || ''),document_type:String(metadata.source_type || 'article'),
       content_hash:entry.content_hash,body_length:entry.body_length,evidence_ref:entry.evidence_ref,
     });
+    indexedRefs.add(entry.evidence_ref);
   }
   fs.mkdirSync(path.dirname(file),{recursive:true});
   fs.writeFileSync(file,[...indexed.values()].map(row=>JSON.stringify(row)).join('\n')+'\n','utf8');
