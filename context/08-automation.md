@@ -2,7 +2,7 @@
 
 Effective 2026-10-01, the recurring monitor is financing-only and independently implemented under `agent-workflow/financing/`. Read [the current execution contract](../docs/unified-daily-monitoring.md) for scope, commands, checkpoints and publication acceptance.
 
-- One Codex heartbeat `ai` at 08:10 Asia/Shanghai; `funding-health-dispatch.yml` at 10:30 is the same pipeline's cloud fallback.
+- One Codex heartbeat `ai` at 08:10 Asia/Shanghai performs the daily financing run; `funding-health-dispatch.yml` is manual-only recovery with no scheduled trigger.
 - `funding-daily-pr.yml` covers all AI financing sectors and six consumer AI hardware categories, excluding embodied intelligence and robotics core businesses.
 - All Windows monitoring timers, Community and Builders schedules, FDE discovery and non-financing hardware discovery are paused.
 - Old comprehensive-monitor imports, Raw/Pool quotas, score refill, afternoon cutoff, history backlog and recursive repair agents have no authority in the financing runtime.
