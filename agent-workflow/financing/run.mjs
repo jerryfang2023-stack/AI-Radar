@@ -96,7 +96,7 @@ async function main() {
       if (phase === 'collect' || phase === 'recheck') return;
       collection = read(path.join(directory, 'collection.json'));
       if (!collection?.accepted || collection.date !== date) throw new Error('accepted_financing_collection_required');
-      verification=await verifyPending({ root, directory, backupRoot, date, resume:phase==='followup' });
+      verification=await verifyPending({ root, directory, backupRoot, date, resume:phase==='followup' || args.get('resume-pending')==='true' });
     } finally {releaseReview();}
     if (phase === 'verify' || (phase==='followup' && !Object.values(verification.entries).some(row=>row.raw_ids?.length && row.fact_review_completed!==true && row.status==='awaiting_fact_review'))) {
       console.log(JSON.stringify({date,status:'review_pass_completed',budget:verification.review_budget,queue:verification.review_queue,ready:path.join(backupRoot,'financing-monitor-state',date,'review-ready.json')}));return;
