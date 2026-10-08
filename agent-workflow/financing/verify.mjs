@@ -339,8 +339,10 @@ export function finishVerification({ root, directory, date, backupRoot }) {
     const cardEvents = card => [card.triggered_by_event_id, ...(card.source_event_ids || [])];
     const cards = (research.cards || []).filter(card => cardEvents(card).some(id => eventIds.has(id)) || (card.research_sources || []).some(source => row.raw_ids.includes(source.raw_id) && source.content_hash === row.content_hash));
     row.unresolved_event_ids = [...eventIds].filter(id => !cards.some(card => cardEvents(card).includes(id)));
+    const matchingQa = qa.filter(item => row.raw_ids.includes(item.asset_id) || sourceIds.has(item.source_ref) || eventIds.has(item.asset_id));
+    row.qa_hints = [...new Set(matchingQa.filter(item => item.status === 'review_optional').map(item => item.reason))];
     row.pending_reasons = [...new Set([
-      ...qa.filter(item => row.raw_ids.includes(item.asset_id) || sourceIds.has(item.source_ref) || eventIds.has(item.asset_id)).map(item => item.reason),
+      ...matchingQa.filter(item => item.status !== 'review_optional').map(item => item.reason),
       ...(research.queue || []).filter(item => eventIds.has(item.event_id) && item.status !== 'deduplicated').flatMap(item => item.problems?.length ? item.problems : [`research_${item.status}`]),
     ])];
     row.results = cards.map(card => {

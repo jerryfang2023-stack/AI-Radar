@@ -55,7 +55,7 @@ PR/CI 合并到 main 并完成 Pages 后，运行：
 
 历史处置通过 `verification-dispositions.mjs` 在网络操作前核对：只继承最近七天责任账本中同一URL、同一当前正文hash的明确来源排除，并验证私有原文可解析。当前抓取没有hash不代表内容未变，不借用旧队列hash直接排除；较新的pending审核、私有状态或证据冲突优先保留。`accepted_original`仅代表原文准入，同企业/重复事件断言仍须融资与去重门禁，不作为自动关闭依据。
 
-`FINANCING-DISPOSITION-REVIEW-1` 的 `disposition-review.json` 保存责任人、时间、来源hash和逐字短引；它只处置对应来源，不批准融资、精选或实体合并。`event_not_ai_relevant`等可选QA提示不能单独关闭队列。人工确认排除须有可核查原文；截断或身份不明的证据仍待补。恢复时重新校验处置依据，不能让旧账本盖过更新的保留结论。
+`FINANCING-DISPOSITION-REVIEW-1` 的 `disposition-review.json` 保存责任人、时间、来源hash和逐字短引；它只处置对应来源，不批准融资、精选或实体合并。`event_not_ai_relevant`等可选QA提示不能单独关闭队列。`already_covered` 必须附 `event_binding`，指向当前已发布事件卡，并匹配公司、公告日期和轮次；同轮金额换币种时在审核理由中说明对应关系。人工确认排除须有可核查原文；截断或身份不明的证据仍待补。恢复时重新校验处置依据，不能让旧账本盖过更新的保留结论。
 
 既有队列修复可先只读调用 `reconcileDispositions` 生成逐条计划；经审核后在既有写入锁内以 `expectedQueueHash` 应用。只删除通过来源校验的条目，不重采、不调用模型、不改尝试次数，其余队列逐项保持不变。私有 `verification-reconciliations/` 写入准备/应用回执及前后hash；队列变化必须重新规划，禁止把旧快照推回主分支。历史公开生产回执表示当时的结果，当前积压以最新私有队列及后续对账回执为准。
 
