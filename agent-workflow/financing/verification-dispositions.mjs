@@ -36,7 +36,12 @@ export function dispositionResolver({root, backupRoot, directory, date}) {
     if(queued?.last_processed_date>date || (queued?.prior_review?.reviewed_at && queued.prior_review.reviewed_at>review.reviewed_at)
       || (queued?.reviewed_at && queued.reviewed_at>review.reviewed_at)
       || (queued?.status==='needs_attention' && review.review_date<date)) return hold('newer_private_review_preserved');
-    if(queued?.content_hash && receipt.content_hash && queued.content_hash!==receipt.content_hash) return hold('private_evidence_conflicts_with_collection');
+    // A queue hash is bound to its evidence source, which may be an accepted
+    // alternate article. Only compare it with the current collection hash
+    // when both hashes refer to the same source URL.
+    const queuedSourceUrl=normalizeSourceUrl(queued?.evidence_source_url || url);
+    if(queued?.content_hash && receipt.content_hash && queuedSourceUrl===normalizeSourceUrl(url)
+      && queued.content_hash!==receipt.content_hash) return hold('private_evidence_conflicts_with_collection');
     if(review.status.startsWith('pending')) return hold('responsible_disposition_still_pending',{pending_review:review});
     if(review.status==='accepted_original') return hold('original_acceptance_requires_fact_and_funding_gates');
     const alreadyCovered=review.status==='already_covered';
