@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -62,30 +61,76 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-02",
-    "latest_disclosed_at": "2026-07-02",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-5a291fd1ab842f58",
         "canonical_entity_id": "",
         "name": "LinqAlpha"
+      },
+      {
+        "entity_id": "EN-605c0f42cc5520cb",
+        "canonical_entity_id": "",
+        "name": "WhiteLab Genomics"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-41d6bd5f48ea79ea",
+        "funding_insight_id": "FI-392a13f7be831601",
+        "event_ids": [
+          "EV-366e1027af052b7a"
+        ],
+        "company_entity_id": "EN-605c0f42cc5520cb",
+        "company_canonical_entity_id": "",
+        "company_name": "WhiteLab Genomics",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "€23.2 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 23200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2320 万欧元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-208499227defc99f",
+            "source_url": "https://www.eu-startups.com/2026/10/paris-based-whitelab-genomics-raises-e23-2-million-to-accelerate-ai-driven-genomic-medicine-development/",
+            "source_title": "总部位于巴黎的WhiteLab Genomics融资2320万欧元，以加速AI驱动的基因组药物开发",
+            "source_content_hash": "29853460386100375c448558356105cbe6d4dbdf3afbb65341a97e6e446bbf52",
+            "quote": "The round was led by AVP, an independent global investment platform managing over €2.5 billion in assets.",
+            "quote_hash": "abe4c09b178a49d134023cab5ad79d47ef03d186fe97f5260b559188b92c9675"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a0e95c36cd69d7c3",
         "funding_insight_id": "FI-a38ead7267d01f90",
@@ -129,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-208499227defc99f",
+        "source_url": "https://www.eu-startups.com/2026/10/paris-based-whitelab-genomics-raises-e23-2-million-to-accelerate-ai-driven-genomic-medicine-development/",
+        "source_title": "总部位于巴黎的WhiteLab Genomics融资2320万欧元，以加速AI驱动的基因组药物开发",
+        "source_content_hash": "29853460386100375c448558356105cbe6d4dbdf3afbb65341a97e6e446bbf52",
+        "quote": "The round was led by AVP, an independent global investment platform managing over €2.5 billion in assets.",
+        "quote_hash": "abe4c09b178a49d134023cab5ad79d47ef03d186fe97f5260b559188b92c9675"
+      },
+      {
         "source_id": "FISRC-2967c8cb86b79dd2",
         "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
         "source_title": "LinqAlpha 融资 2200 万美元，为全球公开市场构建 Alpha 智能层",
@@ -142,10 +195,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "AVP 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "AVP 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：WhiteLab Genomics · B轮 · 2026-10-06 · 本轮领投 · €23.2 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-208499227defc99f"
+        },
         {
           "description": "融资来源记录：LinqAlpha · A轮 · 2026-07-02 · 本轮领投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2967c8cb86b79dd2"
@@ -153,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-208499227defc99f",
+          "source_url": "https://www.eu-startups.com/2026/10/paris-based-whitelab-genomics-raises-e23-2-million-to-accelerate-ai-driven-genomic-medicine-development/",
+          "source_title": "总部位于巴黎的WhiteLab Genomics融资2320万欧元，以加速AI驱动的基因组药物开发",
+          "source_content_hash": "29853460386100375c448558356105cbe6d4dbdf3afbb65341a97e6e446bbf52",
+          "quote": "The round was led by AVP, an independent global investment platform managing over €2.5 billion in assets.",
+          "quote_hash": "abe4c09b178a49d134023cab5ad79d47ef03d186fe97f5260b559188b92c9675"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",

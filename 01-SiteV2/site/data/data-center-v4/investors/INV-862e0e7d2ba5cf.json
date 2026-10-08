@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -64,18 +63,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 27,
+    "current_round_count": 28,
     "historical_or_ambiguous_count": 13,
-    "portfolio_company_count": 22,
+    "portfolio_company_count": 23,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-07",
     "role_counts": {
-      "co_lead": 2,
+      "co_lead": 3,
       "historical_or_ambiguous": 13,
       "lead": 12,
       "other_current_round": 1,
@@ -156,6 +155,11 @@
         "name": "Glow"
       },
       {
+        "entity_id": "EN-2cfcb7f8e397348b",
+        "canonical_entity_id": "",
+        "name": "Healthleap"
+      },
+      {
         "entity_id": "FICO-instinct",
         "canonical_entity_id": "",
         "name": "Instinct"
@@ -207,6 +211,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a02a1b35ec0b8772",
+        "funding_insight_id": "FI-316cf5aec37590a1",
+        "event_ids": [
+          "EV-5b59ff829e596b56"
+        ],
+        "company_entity_id": "EN-2cfcb7f8e397348b",
+        "company_canonical_entity_id": "",
+        "company_name": "Healthleap",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$38 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 38000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3800 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-576f8703e59d7c0a",
+            "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+            "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
+            "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+            "quote": "The financing includes an $8 million seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
+            "quote_hash": "6660ddca023debc1bb7701deb7bca612fc2833a3a829d8f27f33bd50478952c9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e486030801b01752",
         "funding_insight_id": "FI-2309843d76ae81f9",
@@ -1725,6 +1769,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-576f8703e59d7c0a",
+        "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+        "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
+        "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+        "quote": "The financing includes an $8 million seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
+        "quote_hash": "6660ddca023debc1bb7701deb7bca612fc2833a3a829d8f27f33bd50478952c9"
+      },
+      {
         "source_id": "FISRC-131c3b05243369a2",
         "source_url": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
         "source_title": "Flow Engineering 获 5000 万美元 B 轮融资，估值 7.5 亿美元，Valar、Atreides、红杉参投",
@@ -2096,12 +2148,12 @@
           "source_id": "sequoia_history"
         },
         {
-          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-131c3b05243369a2"
+          "description": "融资来源记录：Healthleap · 多轮融资 · 2026-10-07 · 本轮联合领投 · $38 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-576f8703e59d7c0a"
         },
         {
-          "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61d399294cc620a4"
+          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-131c3b05243369a2"
         }
       ],
       "contacts": [
@@ -2131,6 +2183,14 @@
           "quote_hash": "4a2f68c042b10690a950656cdd8c8d78ddbacadab8cdf2e8a4566b83347cc5ac"
         },
         {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+          "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
+          "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+          "quote": "The financing includes an $8 million seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
+          "quote_hash": "6660ddca023debc1bb7701deb7bca612fc2833a3a829d8f27f33bd50478952c9"
+        },
+        {
           "source_id": "FISRC-131c3b05243369a2",
           "source_url": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
           "source_title": "Flow Engineering 获 5000 万美元 B 轮融资，估值 7.5 亿美元，Valar、Atreides、红杉参投",
@@ -2145,14 +2205,6 @@
           "source_content_hash": "1ada124c6217cee1",
           "quote": "Sequoia Capital, which led Flow’s Series A, also participated in the round",
           "quote_hash": "0eec9ca585ab321813af43334d68eec488a093abc6d9d5d2757c49b54e698eaf"
-        },
-        {
-          "source_id": "FISRC-61d399294cc620a4",
-          "source_url": "https://www.ithome.com/1/008/060.htm",
-          "source_title": "AI 初创公司 Instinct 完成 10 亿美元融资，投后估值达 100 亿美元",
-          "source_content_hash": "c62e4fc4d501edfc55ba361b0d3c29a3f1ba1efa4f33edc8865db074f63a8cde",
-          "quote": "本轮融资由红杉资本、基准资本和 Coatue 参与。",
-          "quote_hash": "adb0cad199900f3abffc537b237613d60e90dbee78e123f36bc33e66fad71e8e"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2163,7 +2215,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[27].role": {
+        "activities[28].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2171,7 +2223,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[29].role": {
+        "activities[30].role": {
           "text": "Series D 领投",
           "source_hash": "b1ad54c261addee1c044320cc302024b488ee22b0810e11ab5f9b281dda6d2b7",
           "provider": "deepseek",
@@ -2179,7 +2231,7 @@
           "translated_at": "2026-10-03T00:37:44.351Z",
           "status": "translated"
         },
-        "activities[31].role": {
+        "activities[32].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
@@ -2187,7 +2239,7 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[33].role": {
+        "activities[34].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

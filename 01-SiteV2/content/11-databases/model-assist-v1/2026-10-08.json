@@ -6,6 +6,54 @@
   "source_count": 136,
   "candidates": [
     {
+      "candidate_id": "MAC-0089ed41349e582a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f3e23ad3af6296b6",
+      "raw_id": "RAW-fe567fff5f0dd53d",
+      "source_ref": "SA-43402ca38a730252",
+      "source_hash": "23844e54c22d6320",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "SoftBank",
+        "rationale": "The candidate name 软银集团 is the Chinese full name of SoftBank, and the source text explicitly refers to 软银集团 as the entity making investments, matching the verified alternative SoftBank (alias 软银).",
+        "candidate_name": "软银集团"
+      },
+      "evidence": [
+        {
+          "start": 16,
+          "end": 56,
+          "quote": "软银集团今日表示，公司已通过软银愿景基金 2 完成对 OpenAI 的第三笔投资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:28.898Z"
+    },
+    {
       "candidate_id": "MAC-01f74268347738d1",
       "task_type": "entity_resolution",
       "asset_id": "EN-9827179e4ca265c3",
@@ -299,6 +347,87 @@
         }
       ],
       "generated_at": "2026-10-08T00:50:32.271Z"
+    },
+    {
+      "candidate_id": "MAC-099713563f9ca944",
+      "task_type": "qa_repair",
+      "asset_id": "QA-8e131719c04d150a",
+      "raw_id": "RAW-c3db5816bc0fb546",
+      "source_ref": "SA-1647b1e461be565d",
+      "source_hash": "44f844a151a4f414",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains concrete AI-relevant events: a16z's $35 million incubation investment and $42 million funding round for The Horowitz Andreessen Academy, plus a partnership involving AI compute resources. These are directly supported by exact quotes.",
+        "claims": [
+          {
+            "event_type": "capital_investment",
+            "subject": "Andreessen Horowitz (a16z)",
+            "object": "The Horowitz Andreessen Academy",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "The Horowitz Andreessen Academy",
+            "object": "4200万美元融资",
+            "evidence_index": 2
+          },
+          {
+            "event_type": "partnership",
+            "subject": "The Horowitz Andreessen Academy",
+            "object": "Anduril、Anthropic、Coinbase、Google、Meta、NVIDIA、OpenAI、Palantir、Replit和Stripe",
+            "evidence_index": 3
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1680,
+          "end": 1762,
+          "quote": "a16z负责孵化这一项目，并投入3500万美元；Marc Andreessen和a16z合伙人Erik Torenberg进入其董事会。学院本轮共融资4200万美元"
+        },
+        {
+          "start": 1680,
+          "end": 1703,
+          "quote": "a16z负责孵化这一项目，并投入3500万美元"
+        },
+        {
+          "start": 1748,
+          "end": 1852,
+          "quote": "学院本轮共融资4200万美元，除a16z外，投资方还包括Quora联合创始人Adam D'Angelo、Shopify CEO Tobi Lütke、DoorDash CEO Tony Xu等一批硅谷投资人。"
+        },
+        {
+          "start": 1852,
+          "end": 1959,
+          "quote": "Anduril、Anthropic、Coinbase、Google、Meta、NVIDIA、OpenAI、Palantir、Replit和Stripe则是学院的10家创始合作伙伴，将提供算力、课程设计及实习等支持。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:$35m, unsupported_numeric_fact:$42m"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:33.626Z"
     },
     {
       "candidate_id": "MAC-0c0c86e36c20cca8",
@@ -702,6 +831,71 @@
         }
       ],
       "generated_at": "2026-10-08T00:49:49.789Z"
+    },
+    {
+      "candidate_id": "MAC-200bd851e1c48267",
+      "task_type": "qa_repair",
+      "asset_id": "QA-895f69dfec75ead8",
+      "raw_id": "RAW-36b0f3051436051e",
+      "source_ref": "SA-a17d1a727bc9cd15",
+      "source_hash": "8fc5c001ef1d8cef",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains concrete AI-related events: a funding round for an embodied AI robotics company and a model release claim (emotion gait large model). These are AI-relevant and supported by exact quotes.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "上海青心意创科技有限公司",
+            "object": "近亿元 Pre-A 轮融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "model_release",
+            "subject": "上海青心意创科技有限公司",
+            "object": "情绪步态大模型",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 775,
+          "end": 796,
+          "quote": "报道称目前已完成近亿元 Pre-A 轮融资"
+        },
+        {
+          "start": 599,
+          "end": 633,
+          "quote": "公司另称首创「情绪步态大模型」，使机器人可根据不同情绪呈现差异化步态"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:31.693Z"
     },
     {
       "candidate_id": "MAC-213968050beb973f",
@@ -1457,6 +1651,71 @@
       "generated_at": "2026-10-08T00:50:20.422Z"
     },
     {
+      "candidate_id": "MAC-446b4a91eefac506",
+      "task_type": "qa_repair",
+      "asset_id": "QA-666e5daf534a1617",
+      "raw_id": "RAW-255cdad45f2d8b7a",
+      "source_ref": "SA-6f76230c31fa6161",
+      "source_hash": "6b77b50ddc3d0884",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete funding event (Series D round) and mentions AI investment, but the QA reason 'event_not_ai_relevant' is not supported because the source explicitly states the company is accelerating investments in AI and technology. The funding event itself is a business event, and the AI relevance is present in the source text.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "TVS Automobile Solutions",
+            "object": "Rs 425 crore in a Series D round of funding led by CE-Invests",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "myTVS",
+            "object": "accelerating investments in AI and technology",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 216,
+          "quote": "TVS Automobile Solutions, which owns the omnichannel automotive aftermarket brand myTVS, has raised Rs 425 crore in a Series D round of funding led by CE-Invests, the investment arm of UAE-based Crescent Enterprises."
+        },
+        {
+          "start": 1774,
+          "end": 1971,
+          "quote": "The company is accelerating investments in AI and technology to support this growth, strengthen the scalability of its platform, and build the capabilities required for its next phase of expansion."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:31.626Z"
+    },
+    {
       "candidate_id": "MAC-44824bc44b7850ec",
       "task_type": "entity_resolution",
       "asset_id": "EN-70efe24ad6ce38f4",
@@ -1735,6 +1994,54 @@
       "generated_at": "2026-10-08T00:50:05.543Z"
     },
     {
+      "candidate_id": "MAC-4c7dd2d7a847e492",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-33dbfdc3b4b67b9d",
+      "raw_id": "RAW-fd05a92d143df961",
+      "source_ref": "SA-63ab9ff670d773e5",
+      "source_hash": "9c488922a8c3218b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "博通",
+        "rationale": "候选实体“博通”未出现在 VERIFIED_ALTERNATIVES 中；VERIFIED_ALTERNATIVES 仅包含 Anthropic 与 NVIDIA（别名英伟达、Nvidia）。来源文本将博通描述为芯片制造商、Anthropic 的硬件供应商与融资合作伙伴，并未证明其与任一已验证替代实体为同一实体。",
+        "candidate_name": "博通"
+      },
+      "evidence": [
+        {
+          "start": 106,
+          "end": 120,
+          "quote": "芯片制造商博通尤为引人瞩目。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:23.552Z"
+    },
+    {
       "candidate_id": "MAC-4cf47e21e1ba2ac7",
       "task_type": "claim_extraction",
       "asset_id": "QA-0c9d77bb6dc9b05c",
@@ -1881,6 +2188,54 @@
         }
       ],
       "generated_at": "2026-10-08T00:49:27.708Z"
+    },
+    {
+      "candidate_id": "MAC-520e61e6447bdd0a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-84ff98465e446fc6",
+      "raw_id": "RAW-934feec17edcb6a4",
+      "source_ref": "SA-c6423a33c2a66b4c",
+      "source_hash": "14f33e7655442ebb",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Claude for Startups",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source does mention 'Claude for Startups' as a program, but the candidate is a product_candidate and no verified alternative exists to match.",
+        "candidate_name": "Claude for Startups"
+      },
+      "evidence": [
+        {
+          "start": 154,
+          "end": 221,
+          "quote": "Anthropic announced an expansion of its Claude for Startups program"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:26.859Z"
     },
     {
       "candidate_id": "MAC-523f950347f2ebbf",
@@ -2089,6 +2444,60 @@
       "generated_at": "2026-10-08T00:50:02.715Z"
     },
     {
+      "candidate_id": "MAC-5d3748e5915ac372",
+      "task_type": "qa_repair",
+      "asset_id": "QA-1e40542f8c0ea5c9",
+      "raw_id": "RAW-171f0d9ec06ec370",
+      "source_ref": "SA-577ef4d01dc24575",
+      "source_hash": "53776f3e13d71a05",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-related funding event: Superpose, an AI camera app, announced a $2.2 million seed round led by Khosla Ventures with participation from Meitu and OVTR VC. This directly supports a funding claim and is AI-relevant.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Superpose",
+            "object": "220万美元种子轮融资，由Khosla Ventures领投，美图和OVTR VC参投",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 249,
+          "end": 323,
+          "quote": "9 月 15 日，「Superpose」宣布完成 220 万美元种子轮融资，由 Khosla Ventures 领投，美图和 OVTR VC 参投。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:$2.2m"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:30.230Z"
+    },
+    {
       "candidate_id": "MAC-5f741dd4dd0ea88c",
       "task_type": "entity_resolution",
       "asset_id": "EN-bc74d4c225d5b7d9",
@@ -2135,6 +2544,54 @@
         }
       ],
       "generated_at": "2026-10-08T00:50:19.693Z"
+    },
+    {
+      "candidate_id": "MAC-627767aa50a430cf",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c96c14e093fcb408",
+      "raw_id": "RAW-e283506b57f46c4a",
+      "source_ref": "SA-f4fe7b695134613b",
+      "source_hash": "a25fe3dc44c0b9e4",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Cleavr",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative.",
+        "candidate_name": "Cleavr"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 128,
+          "quote": "French fintech Cleavr has raised €8 million in a\nseed round to expand its accounts receivable automation platform across Europe."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:27.927Z"
     },
     {
       "candidate_id": "MAC-647162c349d55dc3",
@@ -2512,6 +2969,54 @@
         }
       ],
       "generated_at": "2026-10-08T00:50:06.702Z"
+    },
+    {
+      "candidate_id": "MAC-6ef1a8bd6c374d86",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-5388a5a5ac0868b9",
+      "raw_id": "RAW-007c4550c6c31f26",
+      "source_ref": "SA-55a91e65d44ac565",
+      "source_hash": "983f9424a1441fd7",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Blackstone",
+        "rationale": "The candidate mention 'Blackstone' refers to an alternative asset manager and investor, not to the verified alternative 'Anthropic'. The source describes Blackstone as an investor in Anthropic's Ode joint venture, which is a relationship, not entity identity.",
+        "candidate_name": "Blackstone"
+      },
+      "evidence": [
+        {
+          "start": 1740,
+          "end": 1924,
+          "quote": "In July, Anthropic launched Ode with Anthropic, an AI implementation company backed through a $1.5 billion joint venture with Blackstone, Hellman & Friedman, Goldman Sachs, and others."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:24.751Z"
     },
     {
       "candidate_id": "MAC-76b30d9c43c19c6b",
@@ -3045,6 +3550,102 @@
       "generated_at": "2026-10-08T00:49:34.996Z"
     },
     {
+      "candidate_id": "MAC-863e4d339f603f4d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-a372d4c550187979",
+      "raw_id": "RAW-007c4550c6c31f26",
+      "source_ref": "SA-55a91e65d44ac565",
+      "source_hash": "983f9424a1441fd7",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "co-investors",
+        "rationale": "The candidate 'co-investors' is a generic plural noun describing parties investing alongside Blackstone, not a named organization. It does not match the verified alternative 'Anthropic' and the quote does not identify it as such.",
+        "candidate_name": "co-investors"
+      },
+      "evidence": [
+        {
+          "start": 1496,
+          "end": 1619,
+          "quote": "Blackstone and co-investors agreed to invest up to $600 million in primary equity in Indian AI infrastructure company Neysa"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:27.270Z"
+    },
+    {
+      "candidate_id": "MAC-89f6146b8bf7605f",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-60d05bd27ed7fa02",
+      "raw_id": "RAW-f77e1caae31b0188",
+      "source_ref": "SA-705f5b34bdfbe1a4",
+      "source_hash": "0593d20338986f35",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Nordic Makers",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source identifies Nordic Makers as an investor in Good Tape, but no verified alternative exists to match against.",
+        "candidate_name": "Nordic Makers"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 139,
+          "quote": "Nordic Makers has invested in Good Tape, the Copenhagen-based AI transcription company used by 3 million people in more than 150 countries."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:26.098Z"
+    },
+    {
       "candidate_id": "MAC-8a327bfacbf90ba1",
       "task_type": "claim_extraction",
       "asset_id": "QA-7b6d4f5c252c2a44",
@@ -3380,6 +3981,82 @@
       "generated_at": "2026-10-08T00:49:49.659Z"
     },
     {
+      "candidate_id": "MAC-9c64d59b2ce61612",
+      "task_type": "qa_repair",
+      "asset_id": "QA-aad7814aca2e0987",
+      "raw_id": "RAW-d71137c06bd8600a",
+      "source_ref": "SA-8c7feb2f6abbc066",
+      "source_hash": "f2ec5806e7b7d847",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains concrete AI-industry events: ElevenLabs's planned India investment and its reported revenue/market position. These are supported by exact quotes and are AI-relevant despite the QA flag.",
+        "claims": [
+          {
+            "event_type": "capital_investment",
+            "subject": "ElevenLabs",
+            "object": "India",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "financial_performance",
+            "subject": "ElevenLabs",
+            "object": "$600 million annual run rate",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "market_expansion",
+            "subject": "ElevenLabs",
+            "object": "India as second-largest market after the US",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 157,
+          "quote": "ElevenLabs plans to spend a double-digit percentage of the amount it has raised in India, chief executive Mati Staniszewski told CNBC-TV18 on 6 October 2026."
+        },
+        {
+          "start": 406,
+          "end": 463,
+          "quote": "global revenue has crossed a $600 million annual run rate"
+        },
+        {
+          "start": 332,
+          "end": 392,
+          "quote": "India is now ElevenLabs’s second-largest market after the US"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:33.408Z"
+    },
+    {
       "candidate_id": "MAC-9d2830f3ef979777",
       "task_type": "entity_resolution",
       "asset_id": "EN-14969780109b9068",
@@ -3426,6 +4103,47 @@
         }
       ],
       "generated_at": "2026-10-08T00:49:52.372Z"
+    },
+    {
+      "candidate_id": "MAC-9e5dbbe50430c97c",
+      "task_type": "qa_repair",
+      "asset_id": "QA-e3606839412dd98b",
+      "raw_id": "RAW-77ebe1f7cf293508",
+      "source_ref": "SA-2af8de77da483e42",
+      "source_hash": "dfce62ce4debbbb9",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source is a video game release article and contains no concrete AI industry event; the only AI mention is a generic disclosure that the content includes AI-generated material, which is not an AI industry event.",
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:34.417Z"
     },
     {
       "candidate_id": "MAC-9e9d0b41fd078c78",
@@ -4267,6 +4985,60 @@
       "generated_at": "2026-10-08T00:49:52.434Z"
     },
     {
+      "candidate_id": "MAC-c490b058c162f7f8",
+      "task_type": "qa_repair",
+      "asset_id": "QA-0e72f30a08056c34",
+      "raw_id": "RAW-af7cef9d941f3b5c",
+      "source_ref": "SA-513c31ac309d05b8",
+      "source_hash": "c5c493120a6b3f61",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant funding event: Photon, an AI startup, raised $4.5 million in seed funding. The quote directly supports this claim.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Photon",
+            "object": "$4.5 million seed funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 192,
+          "end": 335,
+          "quote": "Photon, which helps developers build agents that work over iMessage and WhatsApp, now has $4.5 million in seed funding to develop its products."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:29.820Z"
+    },
+    {
       "candidate_id": "MAC-cc6a264f250b6e5a",
       "task_type": "claim_extraction",
       "asset_id": "QA-1a230767e165a4dc",
@@ -4539,6 +5311,54 @@
       "generated_at": "2026-10-08T00:50:23.573Z"
     },
     {
+      "candidate_id": "MAC-d0500032d4738f69",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-63e533f77a26a8d0",
+      "raw_id": "RAW-76a5e688e23aceae",
+      "source_ref": "SA-7ae118a0bf96ec87",
+      "source_hash": "6d67f58df887e155",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Safe Superintelligence",
+        "rationale": "The candidate 'Safe Superintelligence' does not match any verified alternative ('NVIDIA' or 'Databricks'). The source mentions it as a distinct company that raised $5 billion, separate from Databricks and Nvidia.",
+        "candidate_name": "Safe Superintelligence"
+      },
+      "evidence": [
+        {
+          "start": 1679,
+          "end": 1781,
+          "quote": "The largest funding deals went to Databricks and Safe Superintelligence, which each raised $5 billion."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:25.755Z"
+    },
+    {
       "candidate_id": "MAC-d0963497a60e7c9d",
       "task_type": "entity_resolution",
       "asset_id": "EN-5b7d57cd75bb91bf",
@@ -4661,6 +5481,54 @@
       "generated_at": "2026-10-08T00:49:40.190Z"
     },
     {
+      "candidate_id": "MAC-d11e435e61c57e1f",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-0736fab8b8310653",
+      "raw_id": "RAW-643806034fb26a61",
+      "source_ref": "SA-c52dc28a2c7421a3",
+      "source_hash": "2268f601a23de3a3",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "JERA",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative entity.",
+        "candidate_name": "JERA"
+      },
+      "evidence": [
+        {
+          "start": 74,
+          "end": 148,
+          "quote": "日本最大电力生产商JERA周四(1日)宣布，与戴尔科技（Dell Technologies）及英国AI基础设施开发商RHAELM签署备忘录(MoU)"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:22.360Z"
+    },
+    {
       "candidate_id": "MAC-d262e1e92d6d1cf8",
       "task_type": "entity_resolution",
       "asset_id": "EN-111840cf28d166c5",
@@ -4755,6 +5623,54 @@
         }
       ],
       "generated_at": "2026-10-08T00:50:17.817Z"
+    },
+    {
+      "candidate_id": "MAC-d8c125077241128e",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-37799d436602eaf1",
+      "raw_id": "RAW-bbc58438c5b7672e",
+      "source_ref": "SA-400939f04e37c5a4",
+      "source_hash": "c0637f148a8091de",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Isomorphic Labs",
+        "rationale": "The candidate name 'Isomorphic Labs' does not match any entry in VERIFIED_ALTERNATIVES, which is empty. Therefore, same_entity cannot be chosen. The source text mentions Isomorphic Labs multiple times, but without a verified alternative to match against, the identity relationship cannot be confirmed.",
+        "candidate_name": "Isomorphic Labs"
+      },
+      "evidence": [
+        {
+          "start": 116,
+          "end": 173,
+          "quote": "脱胎于Google DeepMind的Isomorphic Labs，正是瞄准这一行业痛点，交出了属于自己的答卷。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:24.627Z"
     },
     {
       "candidate_id": "MAC-db588a0d773aad57",
@@ -5527,6 +6443,82 @@
       "generated_at": "2026-10-08T00:49:33.669Z"
     },
     {
+      "candidate_id": "MAC-ebd6460893460fce",
+      "task_type": "qa_repair",
+      "asset_id": "QA-ef1a308f48dfe560",
+      "raw_id": "RAW-4159ed80df516741",
+      "source_ref": "SA-7f69b28768438f02",
+      "source_hash": "1c3a852edb9de137",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains concrete AI-relevant events: a16z founding an AI-focused school, funding raised, and AI companies as founding partners. These support claims about deployment, funding, and partnership.",
+        "claims": [
+          {
+            "event_type": "deployment",
+            "subject": "Andreessen Horowitz (a16z)",
+            "object": "Horowitz Andreessen Academy (HAA), a full-time school for high school graduates in San Francisco",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Horowitz Andreessen Academy (HAA)",
+            "object": "$42 million in funding led by a16z",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "partnership",
+            "subject": "Horowitz Andreessen Academy (HAA)",
+            "object": "Anthropic, Google, Meta, NVIDIA, OpenAI, Palantir, Replit, Stripe and other companies as Founding Partners",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 66,
+          "end": 150,
+          "quote": "近日，Andreessen Horowitz（a16z）宣布在旧金山创办一所面向高中毕业生的全日制学校Horowitz Andreessen Academy（HAA）。"
+        },
+        {
+          "start": 444,
+          "end": 470,
+          "quote": "HAA目前已获得4200万美元融资，由a16z领投。"
+        },
+        {
+          "start": 313,
+          "end": 443,
+          "quote": "Anthropic、Google、Meta、NVIDIA、OpenAI、Palantir、Replit、Stripe等10家公司已成为其Founding Partners，将参与课程设计，并提供技术资源、算力、硬件和实践机会；另有40多家公司成为招聘合作伙伴。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:$42m"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:35.404Z"
+    },
+    {
       "candidate_id": "MAC-edec8b3034f54dba",
       "task_type": "entity_resolution",
       "asset_id": "EN-cfc7b6b058a154a5",
@@ -5575,6 +6567,54 @@
       "generated_at": "2026-10-08T00:50:20.735Z"
     },
     {
+      "candidate_id": "MAC-ef443b40379baf26",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-0afb79034697e797",
+      "raw_id": "RAW-f77e1caae31b0188",
+      "source_ref": "SA-705f5b34bdfbe1a4",
+      "source_hash": "0593d20338986f35",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Good Tape",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative entity.",
+        "candidate_name": "Good Tape"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 139,
+          "quote": "Nordic Makers has invested in Good Tape, the Copenhagen-based AI transcription company used by 3 million people in more than 150 countries."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:21.965Z"
+    },
+    {
       "candidate_id": "MAC-f03e83db9480a73d",
       "task_type": "entity_resolution",
       "asset_id": "EN-32b56ed53348a858",
@@ -5621,6 +6661,54 @@
         }
       ],
       "generated_at": "2026-10-08T00:49:57.433Z"
+    },
+    {
+      "candidate_id": "MAC-f19695f336e5f270",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1b9b17b3638f00c9",
+      "raw_id": "RAW-934feec17edcb6a4",
+      "source_ref": "SA-c6423a33c2a66b4c",
+      "source_hash": "14f33e7655442ebb",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Claude Team",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so no exact match to a verified alternative can be established. The source mentions 'Claude Team' as Anthropic's paid plan for groups, but there is no verified alternative to confirm identity against.",
+        "candidate_name": "Claude Team"
+      },
+      "evidence": [
+        {
+          "start": 414,
+          "end": 514,
+          "quote": "provides a free year of Claude Team, Anthropic’s paid plan for groups, with up to five premium seats"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:23.359Z"
     },
     {
       "candidate_id": "MAC-f32249f32ab115ac",
@@ -5932,6 +7020,54 @@
         }
       ],
       "generated_at": "2026-10-08T00:50:21.420Z"
+    },
+    {
+      "candidate_id": "MAC-fb82a69bea3860c3",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-ec7dda1f0158484c",
+      "raw_id": "RAW-14406c2a1c940467",
+      "source_ref": "SA-92d8ff621e444c7a",
+      "source_hash": "b05fe1203613797b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Vocci",
+        "rationale": "The candidate mention 'Vocci' refers to a ring-shaped AI recording device, not to the verified alternative 'Anthropic'. The source describes Vocci as a product launched by Focal Point, with technology from Gyges Labs, and does not identify it as Anthropic.",
+        "candidate_name": "Vocci"
+      },
+      "evidence": [
+        {
+          "start": 87,
+          "end": 235,
+          "quote": "Focal Point, a Tokyo-based import trading company, launched a crowdfunding campaign for Vocci — a ring-shaped AI recording device — on GREEN FUNDING"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T01:19:28.685Z"
     },
     {
       "candidate_id": "MAC-fea94e86c3b9f07c",

@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -62,26 +61,32 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-09-02",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
+      "multi_round",
       "seed",
       "series_b",
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-d965aa403593d08c",
+        "canonical_entity_id": "",
+        "name": "Melius"
+      },
       {
         "entity_id": "EN-830cefea8ed73a00",
         "canonical_entity_id": "",
@@ -99,6 +104,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cf126e613c848ae9",
+        "funding_insight_id": "FI-78eb3d598e6e9a99",
+        "event_ids": [
+          "EV-187a61fc05451d66"
+        ],
+        "company_entity_id": "EN-d965aa403593d08c",
+        "company_canonical_entity_id": "",
+        "company_name": "Melius",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-17b0a4ba7027e6a1",
+            "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+            "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+            "source_content_hash": "211f9e27654b79b5",
+            "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
+            "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ba8cde71fd39e6f2",
         "funding_insight_id": "FI-d61afc2c6c00363a",
@@ -296,6 +341,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-17b0a4ba7027e6a1",
+        "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+        "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+        "source_content_hash": "211f9e27654b79b5",
+        "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
+        "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
+      },
+      {
         "source_id": "FISRC-3bc5a4e973b035eb",
         "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
         "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
@@ -326,14 +379,6 @@
         "source_content_hash": "67f409ee5b146b1d",
         "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
         "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
-      },
-      {
-        "source_id": "FISRC-17b0a4ba7027e6a1",
-        "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
-        "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
-        "source_content_hash": "211f9e27654b79b5",
-        "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
-        "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
       }
     ],
     "public_profile": {
@@ -388,16 +433,16 @@
           "source_id": "vine_official_home_2026"
         },
         {
+          "description": "融资来源记录：Melius · 多轮融资 · 2026-10-06 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-17b0a4ba7027e6a1"
+        },
+        {
           "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3bc5a4e973b035eb"
         },
         {
           "description": "融资来源记录：Ornn AI Inc. · 种子轮 · 2026-06-24 · 既有投资方（本轮参投） · $33M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-44c6debf2c528a2a"
-        },
-        {
-          "description": "融资来源记录：Qodo · B轮 · 2026-03-30 · 本轮参投 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f001682a294672d5"
         }
       ],
       "contacts": [
@@ -427,6 +472,14 @@
           "quote_hash": "48534275b7244cc5ead00f98288f581edb01050ec29775469f050558c0fa94e0"
         },
         {
+          "source_id": "FISRC-17b0a4ba7027e6a1",
+          "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+          "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+          "source_content_hash": "211f9e27654b79b5",
+          "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
+          "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
+        },
+        {
           "source_id": "FISRC-3bc5a4e973b035eb",
           "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
           "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
@@ -441,14 +494,6 @@
           "source_content_hash": "5fe0ae2b10239c5e",
           "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
           "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
-        },
-        {
-          "source_id": "FISRC-f001682a294672d5",
-          "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
-          "source_title": "Qodo 获 7000 万美元融资，用于 AI 编码扩展中的代码验证",
-          "source_content_hash": "043dbfa14e6bef8c",
-          "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
-          "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
         }
       ],
       "coverage_status": "researched",

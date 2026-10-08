@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -62,24 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-11",
-    "latest_disclosed_at": "2026-02-11",
+    "latest_disclosed_at": "2026-10-07",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
+      "multi_round",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-2cfcb7f8e397348b",
+        "canonical_entity_id": "",
+        "name": "Healthleap"
+      },
       {
         "entity_id": "EN-1360aaacd76daa34",
         "canonical_entity_id": "",
@@ -87,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-602c15bbc57afa33",
+        "funding_insight_id": "FI-316cf5aec37590a1",
+        "event_ids": [
+          "EV-5b59ff829e596b56"
+        ],
+        "company_entity_id": "EN-2cfcb7f8e397348b",
+        "company_canonical_entity_id": "",
+        "company_name": "Healthleap",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$38 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 38000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3800 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-576f8703e59d7c0a",
+            "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+            "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
+            "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+            "quote": "The financing includes an $8 million seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
+            "quote_hash": "6660ddca023debc1bb7701deb7bca612fc2833a3a829d8f27f33bd50478952c9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2058da49764b4f12",
         "funding_insight_id": "FI-3e6cc07696a6e9e0",
@@ -162,6 +207,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-576f8703e59d7c0a",
+        "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+        "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
+        "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+        "quote": "The financing includes an $8 million seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
+        "quote_hash": "6660ddca023debc1bb7701deb7bca612fc2833a3a829d8f27f33bd50478952c9"
+      },
+      {
         "source_id": "FISRC-b8ac45c45da22b49",
         "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment/",
         "source_title": "光子AI芯片初创公司OLIX获得2.2亿美元投资",
@@ -227,6 +280,10 @@
         {
           "description": "Hummingbird 的招聘项目页面自述，多支基金净回报超过 10 倍并向投资人分配实际资金。该数字为机构自述，页面未列基金名称、测算时间或审计数据，不能视为独立业绩核验。",
           "source_id": "hummingbird_returns"
+        },
+        {
+          "description": "融资来源记录：Healthleap · 多轮融资 · 2026-10-07 · 本轮领投 · $38 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-576f8703e59d7c0a"
         },
         {
           "description": "融资来源记录：OLIX Computing Ltd. · 轮次未披露 · 2026-02-11 · 本轮领投 · $220 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -408,6 +465,14 @@
           "source_content_hash": "9ecb5df7fca3fdbc01189513442e03062d6dd3794924e3260d7ed6835adba98f",
           "quote": "hello@hummingbird.vc",
           "quote_hash": "c3c8ed603038f4c7505382dac7511c75a9276f234bab3279730cb97803c96f7f"
+        },
+        {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+          "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
+          "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+          "quote": "The financing includes an $8 million seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
+          "quote_hash": "6660ddca023debc1bb7701deb7bca612fc2833a3a829d8f27f33bd50478952c9"
         },
         {
           "source_id": "FISRC-b8ac45c45da22b49",

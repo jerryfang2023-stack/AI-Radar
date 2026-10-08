@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -63,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 4,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 4,
     "market_regions": [
       "CN",
@@ -74,6 +73,7 @@
     "first_disclosed_at": "2026-01-26",
     "latest_disclosed_at": "2026-08-31",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 1,
       "participant": 3
     },
@@ -274,6 +274,38 @@
             "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
           }
         ]
+      },
+      {
+        "activity_id": "IA-bce45c3d23a6875d",
+        "funding_insight_id": "FI-c806d69a64a22c80",
+        "event_ids": [
+          "EV-7baf4ab86798fef5"
+        ],
+        "company_entity_id": "EN-d5cffd7a93040807",
+        "company_canonical_entity_id": "",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f5aa056fbd5702b8",
+            "source_url": "https://www.sohu.com/a/1083931138_115479",
+            "source_title": "无问芯穹秘密递表港交所：已融资43亿，腾讯、百度、智谱等押注",
+            "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+            "quote": "以及红杉中国、北极光创投、金沙江创投、SEE Fund无限基金、徐汇资本、阿里巴巴等机构投资者",
+            "quote_hash": "7a9fbbb9b8a0413ccb51cb26bf4a960f75e98054fb4b2416fd5316913b5af63b"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -316,6 +348,14 @@
         "source_content_hash": "3cd27a7369aa4df5",
         "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
         "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+      },
+      {
+        "source_id": "FISRC-f5aa056fbd5702b8",
+        "source_url": "https://www.sohu.com/a/1083931138_115479",
+        "source_title": "无问芯穹秘密递表港交所：已融资43亿，腾讯、百度、智谱等押注",
+        "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+        "quote": "以及红杉中国、北极光创投、金沙江创投、SEE Fund无限基金、徐汇资本、阿里巴巴等机构投资者",
+        "quote_hash": "7a9fbbb9b8a0413ccb51cb26bf4a960f75e98054fb4b2416fd5316913b5af63b"
       }
     ],
     "public_profile": {

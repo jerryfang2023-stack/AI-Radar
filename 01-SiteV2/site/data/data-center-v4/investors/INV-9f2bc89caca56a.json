@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -62,7 +61,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 4,
     "market_regions": [
@@ -74,7 +73,7 @@
     "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "co_lead": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
@@ -104,6 +103,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-63b09756314013d3",
+        "funding_insight_id": "FI-a8355fbf86919694",
+        "event_ids": [
+          "EV-52e472f000148362"
+        ],
+        "company_entity_id": "EN-5e8d0bae72bca66f",
+        "company_canonical_entity_id": "",
+        "company_name": "Hadrian",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "融资轮次",
+        "amount_original": "€35.68 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 35680000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3568 万欧元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-123307e05ad2a90a",
+            "source_url": "https://www.eu-startups.com/2026/10/london-amsterdam-based-hadrian-raises-e35-68-million-to-scale-its-agentic-ai-offensive-security-platform/",
+            "source_title": "网络安全初创公司Hadrian融资3568万欧元，以扩展其AI智能体攻击性安全平台",
+            "source_content_hash": "a713960a21f38f490e49e5bcb9c7e8caa0b8da20c2f0c6f59c655a88e2ef9f35",
+            "quote": "with participation from existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures",
+            "quote_hash": "26d1189eee05af9735513079e82a0c56e007b633b21a71f67522be79fa4588ae"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4af9200f80e4b870",
         "funding_insight_id": "FI-c82e956a6c528ed5",
@@ -267,6 +306,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-123307e05ad2a90a",
+        "source_url": "https://www.eu-startups.com/2026/10/london-amsterdam-based-hadrian-raises-e35-68-million-to-scale-its-agentic-ai-offensive-security-platform/",
+        "source_title": "网络安全初创公司Hadrian融资3568万欧元，以扩展其AI智能体攻击性安全平台",
+        "source_content_hash": "a713960a21f38f490e49e5bcb9c7e8caa0b8da20c2f0c6f59c655a88e2ef9f35",
+        "quote": "with participation from existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures",
+        "quote_hash": "26d1189eee05af9735513079e82a0c56e007b633b21a71f67522be79fa4588ae"
+      },
+      {
         "source_id": "FISRC-cf1fd90dbc994e3d",
         "source_url": "https://tech.eu/2026/10/06/hadrian-raises-40m-to-tackle-ai-driven-cyber-threats/",
         "source_title": "Hadrian 融资 4000 万美元，以应对 AI 驱动的网络威胁",
@@ -337,16 +384,16 @@
           "source_id": "hv_capital_official"
         },
         {
+          "description": "融资来源记录：Hadrian · 轮次未披露 · 2026-10-06 · 本轮参投 · €35.68 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-123307e05ad2a90a"
+        },
+        {
           "description": "融资来源记录：Hadrian · 轮次未披露 · 2026-10-06 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cf1fd90dbc994e3d"
         },
         {
           "description": "融资来源记录：Hadrian · 轮次未披露 · 2026-10-06 · 本轮参投 · 4000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a28066252c526844"
-        },
-        {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮联合领投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6c35525e379488bf"
         }
       ],
       "contacts": [
@@ -368,6 +415,14 @@
           "quote_hash": "9c07f2f988b43a2e3330430c94385f1e777a46b5ef3f817653dc9c5675feb5e1"
         },
         {
+          "source_id": "FISRC-123307e05ad2a90a",
+          "source_url": "https://www.eu-startups.com/2026/10/london-amsterdam-based-hadrian-raises-e35-68-million-to-scale-its-agentic-ai-offensive-security-platform/",
+          "source_title": "网络安全初创公司Hadrian融资3568万欧元，以扩展其AI智能体攻击性安全平台",
+          "source_content_hash": "a713960a21f38f490e49e5bcb9c7e8caa0b8da20c2f0c6f59c655a88e2ef9f35",
+          "quote": "with participation from existing investors HV Capital, Motive Partners, Picus Capital and Oetker Ventures",
+          "quote_hash": "26d1189eee05af9735513079e82a0c56e007b633b21a71f67522be79fa4588ae"
+        },
+        {
           "source_id": "FISRC-cf1fd90dbc994e3d",
           "source_url": "https://tech.eu/2026/10/06/hadrian-raises-40m-to-tackle-ai-driven-cyber-threats/",
           "source_title": "Hadrian 融资 4000 万美元，以应对 AI 驱动的网络威胁",
@@ -382,14 +437,6 @@
           "source_content_hash": "94ca184347774f86b1911c50c309b2ddf231a76552c5b3d5912ebe64537cecca",
           "quote": "HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投",
           "quote_hash": "9903d9cd3e0e214b5732ca7983f427f79617c43a1e1559b659d0fa737ff142da"
-        },
-        {
-          "source_id": "FISRC-6c35525e379488bf",
-          "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
-          "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
-          "source_content_hash": "adc0cc9ffe3c9dd0",
-          "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
-          "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
         }
       ],
       "last_verified_at": "2026-09-26",

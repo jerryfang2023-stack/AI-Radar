@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -62,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 22,
+    "current_round_count": 23,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 19,
+    "portfolio_company_count": 20,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
-      "lead": 10,
+      "lead": 11,
       "participant": 10
     },
     "round_codes": [
@@ -146,6 +145,11 @@
         "name": "General Intuition"
       },
       {
+        "entity_id": "EN-d965aa403593d08c",
+        "canonical_entity_id": "",
+        "name": "Melius"
+      },
+      {
         "entity_id": "EN-c04bd5ebd10ab696",
         "canonical_entity_id": "EN-c04bd5ebd10ab696",
         "name": "Mistral AI"
@@ -187,6 +191,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-544a2c4ed65272e7",
+        "funding_insight_id": "FI-78eb3d598e6e9a99",
+        "event_ids": [
+          "EV-187a61fc05451d66"
+        ],
+        "company_entity_id": "EN-d965aa403593d08c",
+        "company_canonical_entity_id": "",
+        "company_name": "Melius",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-925d3dbfb764eb23",
+            "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+            "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
+            "source_content_hash": "4f8e687bca566f6a98591c0fc9c146b77b2fee7b784fecee26e614eb5ded976c",
+            "quote": "a $20 million Series A led by CRV and a $5 million seed round led by General Catalyst",
+            "quote_hash": "b61dc1fc46cecd6cfb2613ffafe46aa97efaceb366230220a684d6130fd30711"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fe0efe5a2660f407",
         "funding_insight_id": "FI-d9fc0a409d33d577",
@@ -1217,6 +1261,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-925d3dbfb764eb23",
+        "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+        "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
+        "source_content_hash": "4f8e687bca566f6a98591c0fc9c146b77b2fee7b784fecee26e614eb5ded976c",
+        "quote": "a $20 million Series A led by CRV and a $5 million seed round led by General Catalyst",
+        "quote_hash": "b61dc1fc46cecd6cfb2613ffafe46aa97efaceb366230220a684d6130fd30711"
+      },
+      {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
         "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -1468,16 +1520,16 @@
           "source_id": "gc_seed"
         },
         {
+          "description": "融资来源记录：Melius · 多轮融资 · 2026-10-06 · 本轮领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-925d3dbfb764eb23"
+        },
+        {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
         },
         {
           "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4d11ed62a144a3f4"
-        },
-        {
-          "description": "融资来源记录：Arga Labs · 种子轮 · 2026-08-26 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b6920185a5e7fa72"
         }
       ],
       "contacts": [
@@ -1607,6 +1659,14 @@
           "quote_hash": "bf5226b329d256cd8d31955d906e3205e22e5f58dc7c507a43b4ea96c6e7a183"
         },
         {
+          "source_id": "FISRC-925d3dbfb764eb23",
+          "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+          "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
+          "source_content_hash": "4f8e687bca566f6a98591c0fc9c146b77b2fee7b784fecee26e614eb5ded976c",
+          "quote": "a $20 million Series A led by CRV and a $5 million seed round led by General Catalyst",
+          "quote_hash": "b61dc1fc46cecd6cfb2613ffafe46aa97efaceb366230220a684d6130fd30711"
+        },
+        {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
           "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -1621,14 +1681,6 @@
           "source_content_hash": "714c413ab36c1848",
           "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
           "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
-        },
-        {
-          "source_id": "FISRC-b6920185a5e7fa72",
-          "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
-          "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
-          "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
-          "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
-          "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1639,7 +1691,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[22].role": {
+        "activities[23].role": {
           "text": "Pre-Seed 轮领投",
           "source_hash": "b679d7fa92689a42e5e3729978cbf6f81b503b4ff4fa9193c6a9694195d14b03",
           "provider": "deepseek",

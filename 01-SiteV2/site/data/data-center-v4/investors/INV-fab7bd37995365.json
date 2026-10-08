@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -62,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 2,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d965aa403593d08c",
+        "canonical_entity_id": "",
+        "name": "Melius"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-b9e7ce7d6433a552",
+        "funding_insight_id": "FI-78eb3d598e6e9a99",
+        "event_ids": [
+          "EV-187a61fc05451d66"
+        ],
+        "company_entity_id": "EN-d965aa403593d08c",
+        "company_canonical_entity_id": "",
+        "company_name": "Melius",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-17b0a4ba7027e6a1",
+            "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
+            "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
+            "source_content_hash": "211f9e27654b79b5",
+            "quote": "Other participating investors include Genius Ventures, Vine Ventures, and Anti Fund.",
+            "quote_hash": "c5614208bfa2f409e6daff3404dca3aca7773c9ba63bb6b24b776486c5b56dc6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7b4c02662f738c78",
         "funding_insight_id": "FI-8fcbda1e61969a98",
@@ -188,7 +236,7 @@
           "source_id": "genius_activity"
         },
         {
-          "description": "融资来源记录：Melius · 历史轮次未披露 · 披露未明确对应轮次的参投方。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：Melius · 多轮融资 · 2026-10-06 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-17b0a4ba7027e6a1"
         },
         {

@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -69,8 +68,8 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-industry-healthcare_life_sciences",
-      "TX-target_user-public_sector_user",
       "TX-use_case-physical_automation",
+      "TX-target_user-public_sector_user",
       "TX-target_user-researcher",
       "TX-ai_market_category-physical_ai",
       "TX-product_form-robotic_system"
@@ -444,58 +443,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-10-06"
-    },
-    {
-      "id": "TX-target_user-public_sector_user",
-      "name": "公共部门用户",
-      "nodeType": "target_user",
-      "typeLabel": "目标用户",
-      "valueId": "public_sector_user",
-      "eventIds": [
-        "EV-1c7050585c7f4791",
-        "EV-3c7609d3fc7b7ec8",
-        "EV-d959c800774d5d30",
-        "EV-1d9cf73bba2debcc",
-        "EV-03bc82f6d6c169d7",
-        "EV-259566f35ea4f66d",
-        "EV-60f219702a66bf38",
-        "EV-82e77abb1a77f81c",
-        "EV-ceb23160ad25e497",
-        "EV-9486e14e99499e3b",
-        "EV-ef7346378fcf9746",
-        "EV-e0ecb5f81a273447",
-        "EV-3b817460afe0d3a6",
-        "EV-6329f290aecc84da",
-        "EV-d535e126615182f0",
-        "EV-a3ba586cbc57b5fd",
-        "EV-843f0807558b3d10",
-        "EV-a86b04e679044c45"
-      ],
-      "entityIds": [
-        "EN-f8223ea5a9c41813",
-        "EN-0213fcbfa6055593",
-        "EN-9b7dfbc73b12c8b9",
-        "EN-48b85dc3fd54f74d",
-        "EN-607a596a603dd679",
-        "EN-6861f63c27eb0ada",
-        "EN-92dd63c8e5c77e8a",
-        "EN-6ea730515425a60f",
-        "EN-05f6ecf01ac4ebec",
-        "EN-e78bdebae031095b",
-        "EN-afff1ef2d34b618e",
-        "EN-94f3cca8dd7fa0ff",
-        "EN-376967c5f350003c",
-        "EN-7035f6607ad2d162",
-        "EN-ad691fd49d3307e8",
-        "EN-7640da40298286a6"
-      ],
-      "fdeIds": [
-        "FDE-5ea7f3d69a03d417"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-02"
+      "lastSeen": "2026-10-08"
     },
     {
       "id": "TX-use_case-physical_automation",
@@ -504,6 +452,7 @@
       "typeLabel": "应用场景",
       "valueId": "physical_automation",
       "eventIds": [
+        "EV-ad34c5b8ae2f5d20",
         "EV-72c91001092a54bd",
         "EV-7f10b7d013a91292",
         "EV-471bf7c00cc06c85",
@@ -741,6 +690,7 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-964f79cfa62140b7",
         "EN-6aa1fcea0024c6ce",
         "EN-240389f4b730bad4",
         "EN-ef5cac7907b28194",
@@ -938,7 +888,58 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-07"
+      "lastSeen": "2026-10-08"
+    },
+    {
+      "id": "TX-target_user-public_sector_user",
+      "name": "公共部门用户",
+      "nodeType": "target_user",
+      "typeLabel": "目标用户",
+      "valueId": "public_sector_user",
+      "eventIds": [
+        "EV-1c7050585c7f4791",
+        "EV-3c7609d3fc7b7ec8",
+        "EV-d959c800774d5d30",
+        "EV-1d9cf73bba2debcc",
+        "EV-03bc82f6d6c169d7",
+        "EV-259566f35ea4f66d",
+        "EV-60f219702a66bf38",
+        "EV-82e77abb1a77f81c",
+        "EV-ceb23160ad25e497",
+        "EV-9486e14e99499e3b",
+        "EV-ef7346378fcf9746",
+        "EV-e0ecb5f81a273447",
+        "EV-3b817460afe0d3a6",
+        "EV-6329f290aecc84da",
+        "EV-d535e126615182f0",
+        "EV-a3ba586cbc57b5fd",
+        "EV-843f0807558b3d10",
+        "EV-a86b04e679044c45"
+      ],
+      "entityIds": [
+        "EN-f8223ea5a9c41813",
+        "EN-0213fcbfa6055593",
+        "EN-9b7dfbc73b12c8b9",
+        "EN-48b85dc3fd54f74d",
+        "EN-607a596a603dd679",
+        "EN-6861f63c27eb0ada",
+        "EN-92dd63c8e5c77e8a",
+        "EN-6ea730515425a60f",
+        "EN-05f6ecf01ac4ebec",
+        "EN-e78bdebae031095b",
+        "EN-afff1ef2d34b618e",
+        "EN-94f3cca8dd7fa0ff",
+        "EN-376967c5f350003c",
+        "EN-7035f6607ad2d162",
+        "EN-ad691fd49d3307e8",
+        "EN-7640da40298286a6"
+      ],
+      "fdeIds": [
+        "FDE-5ea7f3d69a03d417"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "TX-target_user-researcher",

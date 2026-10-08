@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -64,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-22d03978deef95ad",
       "EV-28bc07b430962e5b",
       "EV-c04ce28acc9cd1af"
     ],
@@ -71,13 +71,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-17",
-    "lastSeen": "2026-10-07",
+    "lastSeen": "2026-10-08",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-22d03978deef95ad",
         "EV-28bc07b430962e5b",
         "EV-c04ce28acc9cd1af"
       ],
@@ -87,8 +88,24 @@
     },
     "timeline": [
       {
+        "id": "EV-22d03978deef95ad",
+        "dataDate": "2026-10-08",
+        "date": "2026-10-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "TypeSafe AI决策模型Jev日处理量达1万亿Token，行业快速出现跟风产品",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bc74d4c225d5b7d9",
+          "EN-70efe24ad6ce38f4"
+        ]
+      },
+      {
         "id": "EV-28bc07b430962e5b",
-        "dataDate": "2026-10-07",
+        "dataDate": "2026-10-08",
         "date": "2026-10-05",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",

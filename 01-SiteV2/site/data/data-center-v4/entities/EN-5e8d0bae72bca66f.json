@@ -6,16 +6,15 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-07",
-    "currentDate": "2026-10-07",
-    "eventCount": 3976,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-08",
+    "currentDate": "2026-10-08",
+    "eventCount": 4001,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
-      "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
@@ -64,16 +63,18 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-52e472f000148362",
       "EV-6744aefb738a9a0c"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-07",
+    "lastSeen": "2026-10-08",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-52e472f000148362",
         "EV-6744aefb738a9a0c"
       ],
       "deployments": [],
@@ -85,8 +86,47 @@
     },
     "timeline": [
       {
+        "id": "EV-52e472f000148362",
+        "dataDate": "2026-10-08",
+        "date": "2026-10-06",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "网络安全初创公司Hadrian融资3568万欧元，以扩展其AI智能体攻击性安全平台",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-e66d5fd225ed6b0a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-e66d5fd225ed6b0a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-5e8d0bae72bca66f",
+          "EN-e66d5fd225ed6b0a"
+        ]
+      },
+      {
         "id": "EV-6744aefb738a9a0c",
-        "dataDate": "2026-10-07",
+        "dataDate": "2026-10-08",
         "date": "2026-10-06",
         "eventType": "funding",
         "eventTypeLabel": "融资",

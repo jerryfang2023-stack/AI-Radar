@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 2090,
-    "product_candidates": 1204,
-    "person_candidates": 886,
-    "china_market_candidates": 584,
-    "china_market_product_candidates": 489,
-    "china_market_person_candidates": 95,
+    "candidate_count": 2132,
+    "product_candidates": 1226,
+    "person_candidates": 906,
+    "china_market_candidates": 590,
+    "china_market_product_candidates": 492,
+    "china_market_person_candidates": 98,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -1218,6 +1218,34 @@
           "quote": "\"When you obsess over customers, everything else follows,\" said Alfred Wahlforss, co-founder and CEO of Listen Labs.",
           "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
           "quote_hash": "89a1c6ba22872a3deb4e12e67a17f6e6a721a7dd2b4b19b0e1f7b8c904baca1a"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-95cd8e07d72ad37e",
+      "candidate_kind": "person",
+      "research_name": "Ali Agha",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "FICO-a8f97ab7af805e5a"
+      ],
+      "funding_insight_ids": [
+        "FI-32805a6cd1d0553d"
+      ],
+      "source_event_ids": [
+        "EV-ad34c5b8ae2f5d20"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-51ce1e151d0b9865",
+          "quote": "said Ali Agha, Founder and CEO of FieldAI",
+          "source_content_hash": "1cae1a4881c23d4a",
+          "quote_hash": "b4eb9487e02f4d6061c62cae4bec1f9e81cf9044443a693921f1ff55b8979bbe"
         }
       ],
       "market_regions": [
@@ -2693,9 +2721,11 @@
         "EN-d965aa403593d08c"
       ],
       "funding_insight_ids": [
+        "FI-13d1a39d2d3ea872",
         "FI-b44594999f49cbec"
       ],
       "source_event_ids": [
+        "EV-187a61fc05451d66",
         "EV-da8dc9f513542c19"
       ],
       "evidence_refs": [
@@ -4111,6 +4141,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-2fc897dcd04a4d5f",
+      "candidate_kind": "person",
+      "research_name": "Charles Pierre",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-14969780109b9068"
+      ],
+      "funding_insight_ids": [
+        "FI-88bcee42ad743b9b"
+      ],
+      "source_event_ids": [
+        "EV-9faff8c3dc316485"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-45fd6ee701d8b9ca",
+          "quote": "Wiremind co-founders Colin Girault-Matz, the company’s CEO, and Charles Pierre, its CTO, remain majority shareholders and retain control of the business following the transaction.",
+          "source_content_hash": "5f796952ea115fe71e2b16e142143ce21885c08fd0c9a852a6612f2e417984ff",
+          "quote_hash": "2e75ef88354266f3f307aa5f721beacaff99ac53df943bed4e3b0f744152f5e7"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-2fc2b93a68087b57",
       "candidate_kind": "person",
       "research_name": "Chase Lochmiller",
@@ -4587,6 +4645,34 @@
           "quote": "Founded by Jerry Zhang and Cole Gawin, Lemma builds production monitoring for AI agents.",
           "source_content_hash": "af7a29745db5560a",
           "quote_hash": "92d2a7cb446790438e70f24099c155c639af578f3f444dbd5f38621946365787"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-807e5af142bcb9dd",
+      "candidate_kind": "person",
+      "research_name": "Colin Girault-Matz",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-14969780109b9068"
+      ],
+      "funding_insight_ids": [
+        "FI-88bcee42ad743b9b"
+      ],
+      "source_event_ids": [
+        "EV-9faff8c3dc316485"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-45fd6ee701d8b9ca",
+          "quote": "Wiremind co-founders Colin Girault-Matz, the company’s CEO, and Charles Pierre, its CTO, remain majority shareholders and retain control of the business following the transaction.",
+          "source_content_hash": "5f796952ea115fe71e2b16e142143ce21885c08fd0c9a852a6612f2e417984ff",
+          "quote_hash": "2e75ef88354266f3f307aa5f721beacaff99ac53df943bed4e3b0f744152f5e7"
         }
       ],
       "market_regions": [
@@ -5501,6 +5587,34 @@
           "quote": "a prominent computer scientist focused on data science, professor David Bader (formerly of Georgia Tech, now at the New Jersey Institute of Technology) and a VC firm that had previously backed him, GV, called his bluff.",
           "source_content_hash": "c4b4aec73019eeb8",
           "quote_hash": "1ff8c00007d9dc23e08551c3ba32ac084e8296a8238f5e685916ed875a7b5224"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-4fd34b11b3d51808",
+      "candidate_kind": "person",
+      "research_name": "David Del Bourgo",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-605c0f42cc5520cb"
+      ],
+      "funding_insight_ids": [
+        "FI-3f94cbbd35386d86"
+      ],
+      "source_event_ids": [
+        "EV-366e1027af052b7a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-208499227defc99f",
+          "quote": "Founded in 2019 by David Del Bourgo, Lucia Cinque, and Julien Cottineau",
+          "source_content_hash": "29853460386100375c448558356105cbe6d4dbdf3afbb65341a97e6e446bbf52",
+          "quote_hash": "2ede628405d03496e36358ca850d797bfddd3ddba1002669afa1e7986b2e1017"
         }
       ],
       "market_regions": [
@@ -7887,6 +8001,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-f4713e322ff3ed01",
+      "candidate_kind": "person",
+      "research_name": "Gary Wu",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c10ef8fac87cdf0c"
+      ],
+      "funding_insight_ids": [
+        "FI-d6a129552387b2aa"
+      ],
+      "source_event_ids": [
+        "EV-4e975be277195118"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-52c1c2def0184008",
+          "quote": "Gary Wu, co-founder and CEO of Fluidstack",
+          "source_content_hash": "207ee08c071109b1",
+          "quote_hash": "efd93767aad62f2d160a9160894d18a5d492341fcf2da8135e195ffac7eaece0"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-db68fec38b910213",
       "candidate_kind": "person",
       "research_name": "Gaurav Jain",
@@ -8183,6 +8325,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-8ef541552b17a1ae",
+      "candidate_kind": "person",
+      "research_name": "Gianluca Varisco",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-27b79c20fe655299"
+      ],
+      "funding_insight_ids": [
+        "FI-ed1a31b27f28e288"
+      ],
+      "source_event_ids": [
+        "EV-215ea259173fa6b4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-429ccc47b81019aa",
+          "quote": "Netsec was founded in 2025 by Gianluca Varisco and Guglielmo Reina",
+          "source_content_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929",
+          "quote_hash": "5a717f9c59f181d0dec24798cd6bc4d17c73e49151098ab37f4f370579b0730e"
+        },
+        {
+          "source_id": "FISRC-29258175faf2b2ac",
+          "quote": "said Varisco, co-founder and chief executive officer",
+          "source_content_hash": "febd77d4d839a205",
+          "quote_hash": "cc808db051af9205b0aab0d7ae6876194098c5aaf5c42fad5ce636681005b6f6"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-cdee11114acddeee",
       "candidate_kind": "person",
       "research_name": "Glen Gowers",
@@ -8383,6 +8559,40 @@
           "quote": "Founded by Guanlan Dai (ex-Cloudflare tech lead, founding engineer at Kong)",
           "source_content_hash": "9777ef77c01c542e",
           "quote_hash": "5bb1fabcb0700953bb0e3a3f0b8565a32b3ad6c6f9e75aa21a5defbaa44dedb4"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-c1676d019bf6975b",
+      "candidate_kind": "person",
+      "research_name": "Guglielmo Reina",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-27b79c20fe655299"
+      ],
+      "funding_insight_ids": [
+        "FI-ed1a31b27f28e288"
+      ],
+      "source_event_ids": [
+        "EV-215ea259173fa6b4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-429ccc47b81019aa",
+          "quote": "Netsec was founded in 2025 by Gianluca Varisco and Guglielmo Reina",
+          "source_content_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929",
+          "quote_hash": "5a717f9c59f181d0dec24798cd6bc4d17c73e49151098ab37f4f370579b0730e"
+        },
+        {
+          "source_id": "FISRC-c9b1f02233709444",
+          "quote": "Founded in 2025 by Gianluca Varisco and Guglielmo Reina",
+          "source_content_hash": "a569e171bc1ba3fc",
+          "quote_hash": "5cca5682b2cbfe9e05bcad3bd1af5892e7f88bff5275c12c1300ede4a6b5a8ab"
         }
       ],
       "market_regions": [
@@ -9922,6 +10132,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-17539f8f2d204f66",
+      "candidate_kind": "person",
+      "research_name": "Jemima Meyer",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2cfcb7f8e397348b"
+      ],
+      "funding_insight_ids": [
+        "FI-82e3be67c383ecf6"
+      ],
+      "source_event_ids": [
+        "EV-5b59ff829e596b56"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "quote": "Founded in South Africa in 2022 by siblings Jemima and Josiah Meyer",
+          "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+          "quote_hash": "7364fff8018a135c94dc74a844b6a8db49e20efab3a958f18f4b224769d7b072"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-1493cd218ff59d05",
       "candidate_kind": "person",
       "research_name": "Jensen Huang",
@@ -10467,6 +10705,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-730120f82d7b58ee",
+      "candidate_kind": "person",
+      "research_name": "John Warburton",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-5d2848e59fa2ae3c"
+      ],
+      "funding_insight_ids": [
+        "FI-4fb9bf0504e8dc3b"
+      ],
+      "source_event_ids": [
+        "EV-80fce5a60752ce60"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b3116c778e39662f",
+          "quote": "Founded in 2017 by John Warburton and Peter Henderson",
+          "source_content_hash": "d2d9f1fa153b40d4a47da4f0d314c5abd0eced4420059fd796aac54ce3fc91ee",
+          "quote_hash": "0a5adafee57805a5f7f4e537629d106539fd804c076d797646f712ab1875e0b1"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-131a0ac1006cbe20",
       "candidate_kind": "person",
       "research_name": "John Yue",
@@ -10716,9 +10982,11 @@
         "EN-d965aa403593d08c"
       ],
       "funding_insight_ids": [
+        "FI-13d1a39d2d3ea872",
         "FI-b44594999f49cbec"
       ],
       "source_event_ids": [
+        "EV-187a61fc05451d66",
         "EV-da8dc9f513542c19"
       ],
       "evidence_refs": [
@@ -10937,6 +11205,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-2fc8d6d55e558c5c",
+      "candidate_kind": "person",
+      "research_name": "Josiah Meyer",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2cfcb7f8e397348b"
+      ],
+      "funding_insight_ids": [
+        "FI-82e3be67c383ecf6"
+      ],
+      "source_event_ids": [
+        "EV-5b59ff829e596b56"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "quote": "CEO and co-founder Josiah Meyer told TechCrunch",
+          "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+          "quote_hash": "71aaa2fc30635712624cf067786c6ca6c9313c48a8cc0d296382a5329fc9eb9d"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-e3cdf132cfa4de37",
       "candidate_kind": "person",
       "research_name": "Juan Alzugaray",
@@ -10985,6 +11281,34 @@
           "quote": "Chaumond is the chief technology officer",
           "source_content_hash": "7b9abba5d20c0d6e",
           "quote_hash": "64ed34b61fe2cdce4353a9593aadd8ab429e2d4650d332518344cc775d7fc79f"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-7d75e39e52641fb8",
+      "candidate_kind": "person",
+      "research_name": "Julien Cottineau",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-605c0f42cc5520cb"
+      ],
+      "funding_insight_ids": [
+        "FI-3f94cbbd35386d86"
+      ],
+      "source_event_ids": [
+        "EV-366e1027af052b7a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-208499227defc99f",
+          "quote": "Founded in 2019 by David Del Bourgo, Lucia Cinque, and Julien Cottineau",
+          "source_content_hash": "29853460386100375c448558356105cbe6d4dbdf3afbb65341a97e6e446bbf52",
+          "quote_hash": "2ede628405d03496e36358ca850d797bfddd3ddba1002669afa1e7986b2e1017"
         }
       ],
       "market_regions": [
@@ -12216,6 +12540,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-bc9a9fd98ed087d4",
+      "candidate_kind": "person",
+      "research_name": "Lucia Cinque",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-605c0f42cc5520cb"
+      ],
+      "funding_insight_ids": [
+        "FI-3f94cbbd35386d86"
+      ],
+      "source_event_ids": [
+        "EV-366e1027af052b7a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-208499227defc99f",
+          "quote": "Founded in 2019 by David Del Bourgo, Lucia Cinque, and Julien Cottineau",
+          "source_content_hash": "29853460386100375c448558356105cbe6d4dbdf3afbb65341a97e6e446bbf52",
+          "quote_hash": "2ede628405d03496e36358ca850d797bfddd3ddba1002669afa1e7986b2e1017"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-b980835024635842",
       "candidate_kind": "person",
       "research_name": "Lucie Marchand",
@@ -13024,9 +13376,11 @@
         "EN-5e8d0bae72bca66f"
       ],
       "funding_insight_ids": [
-        "FI-15b642d691617566"
+        "FI-15b642d691617566",
+        "FI-74a139f4941fb536"
       ],
       "source_event_ids": [
+        "EV-52e472f000148362",
         "EV-6744aefb738a9a0c"
       ],
       "evidence_refs": [
@@ -13035,6 +13389,12 @@
           "quote": "Rogier and Olivier co-founded Hadrian alongside Chief Business Development Officer Maurice Clin",
           "source_content_hash": "bb331b87f3e471f8",
           "quote_hash": "51917a231bcf5853afcaf42216bd98f74e9063d0e78f9c8ee62e3c5ce60c86da"
+        },
+        {
+          "source_id": "FISRC-123307e05ad2a90a",
+          "quote": "Founded in 2021 in Amsterdam by Fischer, Olivier Beg and Maurice Clin",
+          "source_content_hash": "a713960a21f38f490e49e5bcb9c7e8caa0b8da20c2f0c6f59c655a88e2ef9f35",
+          "quote_hash": "987410b4d736c572f62819ea7c40074867a72495132b9b76436d3dc3d701430d"
         }
       ],
       "market_regions": [
@@ -15074,9 +15434,11 @@
         "EN-5e8d0bae72bca66f"
       ],
       "funding_insight_ids": [
-        "FI-15b642d691617566"
+        "FI-15b642d691617566",
+        "FI-74a139f4941fb536"
       ],
       "source_event_ids": [
+        "EV-52e472f000148362",
         "EV-6744aefb738a9a0c"
       ],
       "evidence_refs": [
@@ -15085,6 +15447,12 @@
           "quote": "CEO Rogier Fischer and Chief Hacking Officer Olivier Beg met at just 13",
           "source_content_hash": "bb331b87f3e471f8",
           "quote_hash": "136e0fd78f5459490517a259d68140180a975bf39a98b0fce3faeb771852735b"
+        },
+        {
+          "source_id": "FISRC-123307e05ad2a90a",
+          "quote": "Founded in 2021 in Amsterdam by Fischer, Olivier Beg and Maurice Clin",
+          "source_content_hash": "a713960a21f38f490e49e5bcb9c7e8caa0b8da20c2f0c6f59c655a88e2ef9f35",
+          "quote_hash": "987410b4d736c572f62819ea7c40074867a72495132b9b76436d3dc3d701430d"
         }
       ],
       "market_regions": [
@@ -15141,6 +15509,34 @@
           "quote": "Alongside my co-founders, Omer Efrat and Ron Shani",
           "source_content_hash": "de5f621be8a3c27d",
           "quote_hash": "56443a8dc310b54074e4ec5b98018fff62882fcec22d1446c53f63f536d72e1e"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-22d310ce22b84ca8",
+      "candidate_kind": "person",
+      "research_name": "Omkar Raikar",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-20109d8d00635e1a"
+      ],
+      "funding_insight_ids": [
+        "FI-395dfdbce63336cb"
+      ],
+      "source_event_ids": [
+        "EV-115f9901176fd251"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fb5290f3b5c9d736",
+          "quote": "The startup, founded in 2025 by Uttam Tiwari and Omkar Raikar, builds an agentic workflow orchestration platform for banking, financial services, and insurance (BFSI) companies.",
+          "source_content_hash": "963b748065e353f0a7ee1424743d461a99d0e94e5d91146191bf8a2f383f8c73",
+          "quote_hash": "81a18129d7e0c276e8799c2d253ac3a6fa73fabb8e052417a44d25ffd5eec5fe"
         }
       ],
       "market_regions": [
@@ -15559,6 +15955,34 @@
           "quote": "As founder Peter Elias (pictured above) puts it, the company’s goal is to prevent hallucinations and simple factual errors from ever reaching the user",
           "source_content_hash": "5158bf9d2c2f18a0",
           "quote_hash": "90699a11ed052b0630ecafe30a523c94fb20c1d5dd3daacbd30bc1bdaf0c17eb"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-da0a67bd148e96b6",
+      "candidate_kind": "person",
+      "research_name": "Peter Henderson",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-5d2848e59fa2ae3c"
+      ],
+      "funding_insight_ids": [
+        "FI-4fb9bf0504e8dc3b"
+      ],
+      "source_event_ids": [
+        "EV-80fce5a60752ce60"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b84a1ca2cc2e2e9a",
+          "quote": "who co-founded the firm with chief operating officer Peter Henderson",
+          "source_content_hash": "6e03b62f04514976",
+          "quote_hash": "bb29cc05fd54add204d9f6d853c71a13d5d7724a2315124f308c7a57802a5833"
         }
       ],
       "market_regions": [
@@ -17607,9 +18031,11 @@
         "EN-5e8d0bae72bca66f"
       ],
       "funding_insight_ids": [
-        "FI-15b642d691617566"
+        "FI-15b642d691617566",
+        "FI-74a139f4941fb536"
       ],
       "source_event_ids": [
+        "EV-52e472f000148362",
         "EV-6744aefb738a9a0c"
       ],
       "evidence_refs": [
@@ -17618,6 +18044,12 @@
           "quote": "CEO Rogier Fischer and Chief Hacking Officer Olivier Beg met at just 13",
           "source_content_hash": "bb331b87f3e471f8",
           "quote_hash": "136e0fd78f5459490517a259d68140180a975bf39a98b0fce3faeb771852735b"
+        },
+        {
+          "source_id": "FISRC-123307e05ad2a90a",
+          "quote": "Founded in 2021 in Amsterdam by Fischer, Olivier Beg and Maurice Clin",
+          "source_content_hash": "a713960a21f38f490e49e5bcb9c7e8caa0b8da20c2f0c6f59c655a88e2ef9f35",
+          "quote_hash": "987410b4d736c572f62819ea7c40074867a72495132b9b76436d3dc3d701430d"
         }
       ],
       "market_regions": [
@@ -21551,6 +21983,62 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-e0e20e8ac8c3c735",
+      "candidate_kind": "person",
+      "research_name": "Uttam Tiwari",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-20109d8d00635e1a"
+      ],
+      "funding_insight_ids": [
+        "FI-395dfdbce63336cb"
+      ],
+      "source_event_ids": [
+        "EV-115f9901176fd251"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fb5290f3b5c9d736",
+          "quote": "The startup, founded in 2025 by Uttam Tiwari and Omkar Raikar, builds an agentic workflow orchestration platform for banking, financial services, and insurance (BFSI) companies.",
+          "source_content_hash": "963b748065e353f0a7ee1424743d461a99d0e94e5d91146191bf8a2f383f8c73",
+          "quote_hash": "81a18129d7e0c276e8799c2d253ac3a6fa73fabb8e052417a44d25ffd5eec5fe"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-93e722aeebbe7322",
+      "candidate_kind": "person",
+      "research_name": "Varun Chandran",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-65733f7c4afe4486"
+      ],
+      "funding_insight_ids": [
+        "FI-100eb31004ccac7c"
+      ],
+      "source_event_ids": [
+        "EV-a48fb50d5019bb90"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-59c49a5ed19d549f",
+          "quote": "Founded in 2021 by Vimal Kumar V and Varun Chandran",
+          "source_content_hash": "cf4c0d89353aa686fc229ac6c0afbd5038f9b6361cef8552f32d3f5d8213eefc",
+          "quote_hash": "83e4bd23f5f26c73d1f369da0f3b798b09e7181a50d79623c4a8a1c923b2e12c"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-5afb16c07b42502a",
       "candidate_kind": "person",
       "research_name": "Varun Chitre",
@@ -21725,6 +22213,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-0edc3a6cf577cc30",
+      "candidate_kind": "person",
+      "research_name": "Vijith Kumar V",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-65733f7c4afe4486"
+      ],
+      "funding_insight_ids": [
+        "FI-100eb31004ccac7c"
+      ],
+      "source_event_ids": [
+        "EV-a48fb50d5019bb90"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d44508e5bb90ceb2",
+          "quote": "Founders: Vimal Kumar V, Varun Chandran, Vijith Kumar V",
+          "source_content_hash": "2ffaa11b278a6411",
+          "quote_hash": "80f9de21ad5925d011ffdf126162f6e513a3062a4253cebe8b95e3dd0f711810"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-f685e6e9fc5af04a",
       "candidate_kind": "person",
       "research_name": "Vik Bajaj",
@@ -21745,6 +22261,40 @@
           "quote": "Bezos, who stepped down as Amazon CEO in 2021, serves as co-CEO alongside Vik Bajaj, a professor at Stanford University's School of Medicine who previously co-founded Alphabet's Verily",
           "source_content_hash": "35a586159ce189ad7416ee53b77859761dc40f5b9f2abfe9c01cfba4a3cd3b3a",
           "quote_hash": "6a1c82ebb2ae08a7f1ca51f91a29e5d064d30b7b438b4a335be725136c7b8b40"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-88a7cdbd945595d1",
+      "candidate_kind": "person",
+      "research_name": "Vimal Kumar V",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-65733f7c4afe4486"
+      ],
+      "funding_insight_ids": [
+        "FI-100eb31004ccac7c"
+      ],
+      "source_event_ids": [
+        "EV-a48fb50d5019bb90"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-59c49a5ed19d549f",
+          "quote": "Founded in 2021 by Vimal Kumar V and Varun Chandran",
+          "source_content_hash": "cf4c0d89353aa686fc229ac6c0afbd5038f9b6361cef8552f32d3f5d8213eefc",
+          "quote_hash": "83e4bd23f5f26c73d1f369da0f3b798b09e7181a50d79623c4a8a1c923b2e12c"
+        },
+        {
+          "source_id": "FISRC-097b09f68a1aa721",
+          "quote": "Vimal Kumar V, Co-founder and CEO of Ionage",
+          "source_content_hash": "fe45347e2b94c9dc",
+          "quote_hash": "1d7f8c68dd98861f5cd65ddf759015ee13e17ec3184aa409cc49be494b58bec6"
         }
       ],
       "market_regions": [
@@ -22914,9 +23464,11 @@
         "EN-d965aa403593d08c"
       ],
       "funding_insight_ids": [
+        "FI-13d1a39d2d3ea872",
         "FI-b44594999f49cbec"
       ],
       "source_event_ids": [
+        "EV-187a61fc05451d66",
         "EV-da8dc9f513542c19"
       ],
       "evidence_refs": [
@@ -24053,6 +24605,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-46a98d252d0bffa7",
+      "candidate_kind": "person",
+      "research_name": "夏立雪",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d5cffd7a93040807"
+      ],
+      "funding_insight_ids": [
+        "FI-c5b39f16501351be"
+      ],
+      "source_event_ids": [
+        "EV-7baf4ab86798fef5"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f5aa056fbd5702b8",
+          "quote": "由清华大学电子工程系长聘教授、系主任汪玉与夏立雪、戴国浩等人共同创立",
+          "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+          "quote_hash": "fa7429a2e86f25301f3b135a99e3b08902ef638206acbe2e2b31fb67fde42ca1"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-e6bab83b02dcc947",
       "candidate_kind": "person",
       "research_name": "宁德时代",
@@ -24523,6 +25103,34 @@
           "quote": "核心创始人：彭健，华深智药创始人兼CEO，清华大学人工智能产业研究院孵化背景，带领团队研发出全球首个单条序列蛋白质结构预测算法OmegaFold，技术精度达世界领先水平。",
           "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
           "quote_hash": "07c6f446e40388acbefc7b6b187995e223ecd2beb0e3f37617a14cbe13c13bef"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-39b99a0e29b0c39b",
+      "candidate_kind": "person",
+      "research_name": "戴国浩",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d5cffd7a93040807"
+      ],
+      "funding_insight_ids": [
+        "FI-c5b39f16501351be"
+      ],
+      "source_event_ids": [
+        "EV-7baf4ab86798fef5"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f5aa056fbd5702b8",
+          "quote": "由清华大学电子工程系长聘教授、系主任汪玉与夏立雪、戴国浩等人共同创立",
+          "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+          "quote_hash": "fa7429a2e86f25301f3b135a99e3b08902ef638206acbe2e2b31fb67fde42ca1"
         }
       ],
       "market_regions": [
@@ -25456,6 +26064,34 @@
           "quote": "极豆科技CEO汪奕菲",
           "source_content_hash": "77bd29be555b0a33",
           "quote_hash": "f688157659c9cfbed85ad8904c36eee0028c9ba6889c90f5bfe6406f2036ab51"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-67d48b0827d1f0f5",
+      "candidate_kind": "person",
+      "research_name": "汪玉",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d5cffd7a93040807"
+      ],
+      "funding_insight_ids": [
+        "FI-c5b39f16501351be"
+      ],
+      "source_event_ids": [
+        "EV-7baf4ab86798fef5"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f5aa056fbd5702b8",
+          "quote": "由清华大学电子工程系长聘教授、系主任汪玉与夏立雪、戴国浩等人共同创立",
+          "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+          "quote_hash": "fa7429a2e86f25301f3b135a99e3b08902ef638206acbe2e2b31fb67fde42ca1"
         }
       ],
       "market_regions": [
@@ -27520,6 +28156,68 @@
           "quote": "Agentic Infra Platform Software Integrated LM Training and Inference Platform for AI-Native Enterprises",
           "source_content_hash": "dc70a827e91ba2aa",
           "quote_hash": "5e4168cc7713a04fc1e9c158392ed3bc3d9276f7c6f907f6588eabf61ef189f8"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-65f630beeb6cc08e",
+      "candidate_kind": "product",
+      "research_name": "Agentic Infra自主式基础设施平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d5cffd7a93040807"
+      ],
+      "funding_insight_ids": [
+        "FI-c5b39f16501351be"
+      ],
+      "source_event_ids": [
+        "EV-7baf4ab86798fef5"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f5aa056fbd5702b8",
+          "quote": "作为算力集散中心的Agentic Infra自主式基础设施平台",
+          "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+          "quote_hash": "84fa4f1b56f2df91524b2b2a518bb621dea2c2dbea1d7685b05b9a0770e42154"
+        },
+        {
+          "source_id": "FISRC-f5aa056fbd5702b8",
+          "quote": "公司自身并不拥有实体数据中心，而是管理、调度分布在数十个第三方设施中的算力，同时适配华为昇腾、摩尔线程等不同AI芯片，走的是异构计算路线",
+          "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+          "quote_hash": "40a63b8a79fe2deb88609fb21d28f86400320dac4814ccfcf53fbabd6833a3e6"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-877567f9df01189e",
+      "candidate_kind": "product",
+      "research_name": "Agentic MaaS大模型服务平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d5cffd7a93040807"
+      ],
+      "funding_insight_ids": [
+        "FI-c5b39f16501351be"
+      ],
+      "source_event_ids": [
+        "EV-7baf4ab86798fef5"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f5aa056fbd5702b8",
+          "quote": "作为Token工厂的Agentic MaaS大模型服务平台",
+          "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+          "quote_hash": "3342738367ad04037455af234ba39ddb15f69d40b45ac84e4d626064bcd9b19e"
         }
       ],
       "market_regions": [
@@ -30245,6 +30943,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-000ce8589ad17754",
+      "candidate_kind": "product",
+      "research_name": "ALFRED",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-605c0f42cc5520cb"
+      ],
+      "funding_insight_ids": [
+        "FI-3f94cbbd35386d86"
+      ],
+      "source_event_ids": [
+        "EV-366e1027af052b7a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-208499227defc99f",
+          "quote": "The company has developed a proprietary platform called ALFRED (AI-Led Framework for Rational Exploration in Drug Design)",
+          "source_content_hash": "29853460386100375c448558356105cbe6d4dbdf3afbb65341a97e6e446bbf52",
+          "quote_hash": "1e12bdf746987225873e2b8f370f48728328f6a6bd2da176142dd42bd20452b0"
+        },
+        {
+          "source_id": "FISRC-208499227defc99f",
+          "quote": "Using ALFRED, WhiteLab designs and optimises both viral and non-viral delivery vehicles, such as adeno-associated viruses (AAVs) and lipid nanoparticles, as well as programmable genetic payloads.",
+          "source_content_hash": "29853460386100375c448558356105cbe6d4dbdf3afbb65341a97e6e446bbf52",
+          "quote_hash": "7c0f4715b4492067b97db0f212b4197d0f8fe6516ea8bff9df3a97c8b1269374"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-07061e179640b5a9",
       "candidate_kind": "product",
       "research_name": "Alivia",
@@ -31878,6 +32610,7 @@
         "FI-15b642d691617566",
         "FI-2e4c307c0be32b8e",
         "FI-4376980a05474f74",
+        "FI-74a139f4941fb536",
         "FI-848b3546fafee54e",
         "FI-b113088326411c0e"
       ],
@@ -31885,6 +32618,7 @@
         "EV-2ab7252166b42c03",
         "EV-2c217907879cd2a8",
         "EV-439c3a45abe7b514",
+        "EV-52e472f000148362",
         "EV-6744aefb738a9a0c",
         "EV-7abd8ec418f1e7f3"
       ],
@@ -31906,6 +32640,34 @@
           "quote": "Atlas measures AI value, adoption and ROI, from a single workflow to the full portfolio.",
           "source_content_hash": "521590bc01ad839c146800f3914ce17726a6317d32a595d321959aefa581ffca",
           "quote_hash": "cae28a0fde1c9031e48c49bedc94ec6f4718d833d6af2d0e2dd43e284972d537"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-7b3d19ac5ee8cdbe",
+      "candidate_kind": "product",
+      "research_name": "Atlas OS",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c10ef8fac87cdf0c"
+      ],
+      "funding_insight_ids": [
+        "FI-d6a129552387b2aa"
+      ],
+      "source_event_ids": [
+        "EV-4e975be277195118"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-be3b0df0539fd9a7",
+          "quote": "Its in-house operating system, Atlas OS, is a bare-metal platform that automates server imaging and provisions Kubernetes or Slurm environments in days rather than the weeks typical of standard cloud onboarding",
+          "source_content_hash": "32078b20d37ae1a6",
+          "quote_hash": "785c7e25b82a83d9398eac6d249447bd2e89c58dbcfdd1636746de11250585a2"
         }
       ],
       "market_regions": [
@@ -33439,6 +34201,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-d601c2d708fb91ad",
+      "candidate_kind": "product",
+      "research_name": "CASA",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-65733f7c4afe4486"
+      ],
+      "funding_insight_ids": [
+        "FI-100eb31004ccac7c"
+      ],
+      "source_event_ids": [
+        "EV-a48fb50d5019bb90"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-097b09f68a1aa721",
+          "quote": "CASA, a home charging management solution",
+          "source_content_hash": "fe45347e2b94c9dc",
+          "quote_hash": "e8ae1915f7670d4fef7cde5d35c955c322439ae914dd5f241ac4ff90a36ddaa0"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-dd281cc1dd6c7886",
       "candidate_kind": "product",
       "research_name": "Case Underwriter",
@@ -33564,6 +34354,40 @@
           "quote": "ThirdAI offers a causal AI platform to troubleshoot semiconductor equipment and process failures. The system unifies equipment logs, sensor streams, images, service/field reports, and technical documentation into a single causal-intelligence layer and includes a root cause analysis copilot that maps cause-and-effect relationships.",
           "source_content_hash": "f1367ebe78ffe922",
           "quote_hash": "b2312766a753a3c26cfb9ad3125ab8f70fdb18675144d20390934837070f21d3"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-c5e6989858e45707",
+      "candidate_kind": "product",
+      "research_name": "CAYZN",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-14969780109b9068"
+      ],
+      "funding_insight_ids": [
+        "FI-88bcee42ad743b9b"
+      ],
+      "source_event_ids": [
+        "EV-9faff8c3dc316485"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d0e8071c35c2dc43",
+          "quote": "CAYZN is the market leading, AI-First revenue management system for passenger transport operators.",
+          "source_content_hash": "4a3885099ac60e5f",
+          "quote_hash": "eef7a79bc71ceb679c09bb7f5d36498d2fe481abc969d560aa6f0ac7a7f8ed20"
+        },
+        {
+          "source_id": "FISRC-45fd6ee701d8b9ca",
+          "quote": "One of Wiremind’s foundational products is CAYZN, a revenue management platform that was adopted by SNCF and has generated average revenue gains of up to 5% to 15%, according to the company.",
+          "source_content_hash": "5f796952ea115fe71e2b16e142143ce21885c08fd0c9a852a6612f2e417984ff",
+          "quote_hash": "d1f586eee9ee2ec1bb1a70fd275978d335519044b5e71d2df6e3db885fc28b01"
         }
       ],
       "market_regions": [
@@ -35955,6 +36779,46 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-985cfcbebb7f7128",
+      "candidate_kind": "product",
+      "research_name": "Desible.ai 智能体工作流编排平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-20109d8d00635e1a"
+      ],
+      "funding_insight_ids": [
+        "FI-395dfdbce63336cb"
+      ],
+      "source_event_ids": [
+        "EV-115f9901176fd251"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fb5290f3b5c9d736",
+          "quote": "Desible.ai orchestrates more than 25 agentic workflows across revenue, risk, collections, underwriting, service, and claims, integrated with existing enterprise systems.",
+          "source_content_hash": "963b748065e353f0a7ee1424743d461a99d0e94e5d91146191bf8a2f383f8c73",
+          "quote_hash": "bafc0fd07a95262fec91c66315534af770c369fa9a987fab17bdd48cfabe2b4f"
+        },
+        {
+          "source_id": "FISRC-fb5290f3b5c9d736",
+          "quote": "It is built around deterministic decisioning, with disclosures, consent, and escalations run on predefined rules and each step made auditable.",
+          "source_content_hash": "963b748065e353f0a7ee1424743d461a99d0e94e5d91146191bf8a2f383f8c73",
+          "quote_hash": "53e28b251b685f56dec3e697bcd404c066f4f4ad2ccdc87f1d174d0cc8a79f48"
+        },
+        {
+          "source_id": "FISRC-fb5290f3b5c9d736",
+          "quote": "The platform is designed to meet compliance frameworks including those from the Insurance Regulatory and Development Authority of India, Telecom Regulatory Authority of India, Reserve Bank of India, and the Digital Personal Data Protection Act.",
+          "source_content_hash": "963b748065e353f0a7ee1424743d461a99d0e94e5d91146191bf8a2f383f8c73",
+          "quote_hash": "205377b7c574ffb3a1eadd5f46b7fc95a387f920828d84b8dbfa24da6b0f2433"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-d2a47ce7a7afcc34",
       "candidate_kind": "product",
       "research_name": "DesignArena",
@@ -36210,6 +37074,34 @@
           "quote": "The platform automates prevailing wage and apprenticeship monitoring, Davis-Bacon compliance, certified payroll review, and audit-ready reporting, checking 100% of project data in real time.",
           "source_content_hash": "3dcbe3fe98e7aa94",
           "quote_hash": "0ca7d4a3db5c277e2c9e12111a71a82e573621602f0e0d6059fc58fb8e292774"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-892184364f97e25f",
+      "candidate_kind": "product",
+      "research_name": "Discovery API and business SDK",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-65733f7c4afe4486"
+      ],
+      "funding_insight_ids": [
+        "FI-100eb31004ccac7c"
+      ],
+      "source_event_ids": [
+        "EV-a48fb50d5019bb90"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-59c49a5ed19d549f",
+          "quote": "along with a Discovery API and business SDK that are currently in closed beta",
+          "source_content_hash": "cf4c0d89353aa686fc229ac6c0afbd5038f9b6361cef8552f32d3f5d8213eefc",
+          "quote_hash": "0a113e21ebb8c33f040354a2558f0300d9a992e7aadb2f7ea6e9260cc9db3f3d"
         }
       ],
       "market_regions": [
@@ -37732,6 +38624,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-528fd485b2a17d2f",
+      "candidate_kind": "product",
+      "research_name": "EVENTORI",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-14969780109b9068"
+      ],
+      "funding_insight_ids": [
+        "FI-88bcee42ad743b9b"
+      ],
+      "source_event_ids": [
+        "EV-9faff8c3dc316485"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-45fd6ee701d8b9ca",
+          "quote": "The company launched EVENTORI in 2022 as an AI-powered platform that combines ticketing, revenue management, analytics and operational tools for sports clubs and event organizers.",
+          "source_content_hash": "5f796952ea115fe71e2b16e142143ce21885c08fd0c9a852a6612f2e417984ff",
+          "quote_hash": "01900efa2fade0d916215ddff508f54b13cddf1f29f12db0d539c13c44373913"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-2227a89a24a11722",
       "candidate_kind": "product",
       "research_name": "Exa Search API",
@@ -38040,6 +38960,40 @@
           "quote": "hot-swapping models in under five seconds, compared with the typical 30 minutes on a GPU",
           "source_content_hash": "f5b6c7dcb4aad736",
           "quote_hash": "69cf48387750c2fa92737f9358f9cc1d8178e7cb2b58b83c4a75659d0bc3b777"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-b4e198d412d4962f",
+      "candidate_kind": "product",
+      "research_name": "Field Foundation Models (FFMs)",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "FICO-a8f97ab7af805e5a"
+      ],
+      "funding_insight_ids": [
+        "FI-32805a6cd1d0553d"
+      ],
+      "source_event_ids": [
+        "EV-ad34c5b8ae2f5d20"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-51ce1e151d0b9865",
+          "quote": "At the core of FieldAI’s platform are Field Foundation Models (FFMs): a new class of “physics-first” foundation models built specifically for embodied intelligence.",
+          "source_content_hash": "1cae1a4881c23d4a",
+          "quote_hash": "a6a4bb358d34985863326667c7fbbf2372a40d56bcc03a296e6056a4e46f6df5"
+        },
+        {
+          "source_id": "FISRC-51ce1e151d0b9865",
+          "quote": "Their hardware-agnostic design allows different form factors and manipulators to operate using the same core intelligence, accelerating deployment and scalability.",
+          "source_content_hash": "1cae1a4881c23d4a",
+          "quote_hash": "a5a74ebf596fb85ef965cd65ba409e73d1334628b8a95cd8ec13967ed97d43f6"
         }
       ],
       "market_regions": [
@@ -38408,6 +39362,34 @@
           "quote": "The first is Flicks, which are interactive videos generated by AI models, with AI compression algorithms that optimize playback, ensuring that interactions remain instantaneous and smooth.",
           "source_content_hash": "ea0a07ec6b5bcc758a53526933b06ed9cdc0625470f1876cb084309d46f1a06b",
           "quote_hash": "9f90edf1cfdd8375cd095bdd0924a8a16c722150447f11d5e995ef14a9a575de"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-0bac8446eab6e823",
+      "candidate_kind": "product",
+      "research_name": "Flo",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-65733f7c4afe4486"
+      ],
+      "funding_insight_ids": [
+        "FI-100eb31004ccac7c"
+      ],
+      "source_event_ids": [
+        "EV-a48fb50d5019bb90"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-097b09f68a1aa721",
+          "quote": "Flo, a CPO-fleet discovery marketplace",
+          "source_content_hash": "fe45347e2b94c9dc",
+          "quote_hash": "1f039f4f7e962485d8a819504f8f033471e0400f996c739cbde19683f9a20bd5"
         }
       ],
       "market_regions": [
@@ -40412,6 +41394,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-77a9d5efd2060677",
+      "candidate_kind": "product",
+      "research_name": "Healthleap AI 住院患者风险筛查平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2cfcb7f8e397348b"
+      ],
+      "funding_insight_ids": [
+        "FI-82e3be67c383ecf6"
+      ],
+      "source_event_ids": [
+        "EV-5b59ff829e596b56"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "quote": "Healthleap plugs into a hospital’s electronic health record system and uses language models to pull information from written notes",
+          "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+          "quote_hash": "701b276e49d19fbb99ccb4501e93adc545f66ff1af23478a8d4437b5390447de"
+        },
+        {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "quote": "Each night, we analyze every adult inpatient’s record",
+          "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+          "quote_hash": "97a50dce7b6acaa0944518da211dc6b9debca14db5847dcd39de1d056dd03b25"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-71ecbe7a79b4de13",
       "candidate_kind": "product",
       "research_name": "Hi3D",
@@ -41418,6 +42434,34 @@
           "quote": "The core product, Orchestrator, connects existing enterprise platforms such as ERP, PLM, MES, and QMS systems and automates complex workflows across all of them without replacing what companies already have in place.",
           "source_content_hash": "cf6ef50cae98e1ab",
           "quote_hash": "f01415e637f8bc6c2b86e89f38bf9f27311e912a5bc6d1eed3e2d190d8b811e7"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-97237adfff3dd8d1",
+      "candidate_kind": "product",
+      "research_name": "IONAGE App",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-65733f7c4afe4486"
+      ],
+      "funding_insight_ids": [
+        "FI-100eb31004ccac7c"
+      ],
+      "source_event_ids": [
+        "EV-a48fb50d5019bb90"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-097b09f68a1aa721",
+          "quote": "the IONAGE App for charger discovery, trip planning, charging and payments",
+          "source_content_hash": "fe45347e2b94c9dc",
+          "quote_hash": "ae11da942fae2aeaf4ef8d98c56764cc99bdf2588c2dec4b4793ec3df3f950d1"
         }
       ],
       "market_regions": [
@@ -42924,6 +43968,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-6633f771a2fe54ee",
+      "candidate_kind": "product",
+      "research_name": "Lighthouse",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c10ef8fac87cdf0c"
+      ],
+      "funding_insight_ids": [
+        "FI-d6a129552387b2aa"
+      ],
+      "source_event_ids": [
+        "EV-4e975be277195118"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-be3b0df0539fd9a7",
+          "quote": "Alongside Atlas OS, its Lighthouse monitoring platform provides real-time performance optimization, automatically restarting failed training jobs and swapping in replacement hardware to ensure uninterrupted runs.",
+          "source_content_hash": "32078b20d37ae1a6",
+          "quote_hash": "6cf35fb6e6dbc27eb5613d8a9bc1bed6b618c1f740e7201c8ab9bff5936cb0eb"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-9e9d730755b045be",
       "candidate_kind": "product",
       "research_name": "LightLocker™ Node",
@@ -44105,9 +45177,11 @@
         "EN-d965aa403593d08c"
       ],
       "funding_insight_ids": [
+        "FI-13d1a39d2d3ea872",
         "FI-b44594999f49cbec"
       ],
       "source_event_ids": [
+        "EV-187a61fc05451d66",
         "EV-da8dc9f513542c19"
       ],
       "evidence_refs": [
@@ -44122,6 +45196,12 @@
           "quote": "Melius is the first agents lab for creative work, providing a shared creative operating system where teams of AI agents manage the busywork of producing images, video, and audio.",
           "source_content_hash": "a997995bfbc7ace5",
           "quote_hash": "9f730727529a54be4c9407766b6b27731d5901c024279f81f67cec1596c4c0e2"
+        },
+        {
+          "source_id": "FISRC-17b0a4ba7027e6a1",
+          "quote": "a shared creative operating system where teams of AI agents handle the busywork of building images, video, and audio, so creative teams can spend their time imagining",
+          "source_content_hash": "211f9e27654b79b5",
+          "quote_hash": "d32c76910358b3c971bec2a7ea4dd15eef21adf303b448b2b75358b916ab334d"
         }
       ],
       "market_regions": [
@@ -45917,12 +46997,15 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
+        "EN-65733f7c4afe4486",
         "EN-aef5bb4e898f303c"
       ],
       "funding_insight_ids": [
+        "FI-100eb31004ccac7c",
         "FI-71477abee5aab07d"
       ],
       "source_event_ids": [
+        "EV-a48fb50d5019bb90",
         "EV-dc35d54f273196f0"
       ],
       "evidence_refs": [
@@ -45937,10 +47020,17 @@
           "quote": "Nexus 跳出传统会话式产品架构，以 统一组织状态 为核心底层。平台将人、Agent、任务、知识资产、外部工具统一建模，所有协作主体共享同一份事实基准、任务依赖、进度状态与执行溯源记录。",
           "source_content_hash": "5d4962dba04db498",
           "quote_hash": "ecea59854948b9b3a6cf66d76d94d8b9f30ed7dfc9de177ed50a1c14eb382e5d"
+        },
+        {
+          "source_id": "FISRC-097b09f68a1aa721",
+          "quote": "Nexus, a CPO operations platform",
+          "source_content_hash": "fe45347e2b94c9dc",
+          "quote_hash": "ed6f0b5eef1c269c88a36c41c13ff1935da901978101b9517fda9c600ef685cb"
         }
       ],
       "market_regions": [
-        "CN"
+        "CN",
+        "GLOBAL"
       ],
       "china_market_match": true
     },
@@ -46095,6 +47185,34 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-32b61c2a16cca234",
+      "candidate_kind": "product",
+      "research_name": "Nora",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-5e8d0bae72bca66f"
+      ],
+      "funding_insight_ids": [
+        "FI-74a139f4941fb536"
+      ],
+      "source_event_ids": [
+        "EV-52e472f000148362"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-123307e05ad2a90a",
+          "quote": "Nora, its other product, provides agentic pentesting on demand at a human pentest level and beyond.",
+          "source_content_hash": "a713960a21f38f490e49e5bcb9c7e8caa0b8da20c2f0c6f59c655a88e2ef9f35",
+          "quote_hash": "2378071d3e5da87630df3ef7d36000771939006eab5752474bc10c6d0ad1afc3"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-453be3abcebfa7d8",
@@ -48135,6 +49253,34 @@
           "quote": "Prodoc AI’s answer is a Patient Journey OS, an intelligence layer that sits across a hospital’s existing technology. It connects these isolated channels, keeps track of patient context and coordinates the next action, without asking hospitals to replace the systems they already use.",
           "source_content_hash": "04d7c31e3c45dd4844cd67213dbcc8a7063e63f89a9d5bec03dc097d8f51783f",
           "quote_hash": "a1e684917fbff074ca377c0505a0d33eab4bb905b97cb6004f5c82cfb50a31fd"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-1fd92d26e39fa62e",
+      "candidate_kind": "product",
+      "research_name": "PAXONE",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-14969780109b9068"
+      ],
+      "funding_insight_ids": [
+        "FI-88bcee42ad743b9b"
+      ],
+      "source_event_ids": [
+        "EV-9faff8c3dc316485"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d0e8071c35c2dc43",
+          "quote": "In 2023, PAXONE was launched as a next-generation inventory and distribution system built natively on the OSDM (Open Sales and Distribution Model) standard.",
+          "source_content_hash": "4a3885099ac60e5f",
+          "quote_hash": "26af78e2296e3d0ac6a4467b67e98d077bc6bd71423a9ad0c2048c180c6fc89a"
         }
       ],
       "market_regions": [
@@ -50446,6 +51592,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-e9cc25fb65604a47",
+      "candidate_kind": "product",
+      "research_name": "Riskube",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-5d2848e59fa2ae3c"
+      ],
+      "funding_insight_ids": [
+        "FI-4fb9bf0504e8dc3b"
+      ],
+      "source_event_ids": [
+        "EV-80fce5a60752ce60"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b3116c778e39662f",
+          "quote": "The firm also runs Riskube, a custom online insurance and risk management platform that enables clients to access and manage their policies directly.",
+          "source_content_hash": "d2d9f1fa153b40d4a47da4f0d314c5abd0eced4420059fd796aac54ce3fc91ee",
+          "quote_hash": "394ac131634e951b029a6524ae5fc30e46166a440371160d8d76cc4918a99162"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-16b264ac0c7f3d6b",
       "candidate_kind": "product",
       "research_name": "River API",
@@ -51786,6 +52960,34 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-a2e2356edec20550",
+      "candidate_kind": "product",
+      "research_name": "Slack/Teams内交付的按员工计费服务",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-27b79c20fe655299"
+      ],
+      "funding_insight_ids": [
+        "FI-ed1a31b27f28e288"
+      ],
+      "source_event_ids": [
+        "EV-215ea259173fa6b4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-429ccc47b81019aa",
+          "quote": "the service is delivered through Slack or Microsoft Teams and priced per employee per month, starting from €19, rather than billed by the ticket or by the hour.",
+          "source_content_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929",
+          "quote_hash": "c2b90e51be7218c669a7cc45ac576fe01abe2f94bbcb98e2c223e11655289bb4"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-2715cec198cfb9e5",
@@ -58309,6 +59511,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-9c54907a3a264d89",
+      "candidate_kind": "product",
+      "research_name": "其他病症识别项目",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2cfcb7f8e397348b"
+      ],
+      "funding_insight_ids": [
+        "FI-82e3be67c383ecf6"
+      ],
+      "source_event_ids": [
+        "EV-5b59ff829e596b56"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "quote": "The startup has also built programs to identify aspiration pneumonia, pressure ulcers, and risk of readmission for congestive heart failure, which Josiah said are undergoing further clinical validation.",
+          "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+          "quote_hash": "c65bae360e6fd3bbc74b29971afc3af4c6cfa36bc80dfa244e66d1251d7e80cd"
+        },
+        {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "quote": "Josiah said the company ultimately wants to cover more than 40 major health conditions and expand into outpatient and home care.",
+          "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+          "quote_hash": "9681f65c1e191c964580c421cc8d8914608e10d207003e227519acac70a8431b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-dca05f867167422b",
       "candidate_kind": "product",
       "research_name": "具身世界模型基础设施",
@@ -59794,6 +61030,40 @@
           "quote": "其核心模式是以专业医疗服务为基础，连接规模化精神心理专业医生网络、线上互联网医疗服务和线下医疗机构，同时与企业、保险及医药企业等建立合作，覆盖预防、筛查、心理咨询、诊疗、治疗、随访及长期健康管理等环节。",
           "source_content_hash": "f87d12ac4cc027837f61f9dd7e915bbe92f824baae575cc376a013aab3eb6ee4",
           "quote_hash": "524a49d8d5cf614886266131cb9d2459d3bc8f8cac1ade545db965b20c8e9073"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-1347d4f072fa05b1",
+      "candidate_kind": "product",
+      "research_name": "定制AI数据中心",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c10ef8fac87cdf0c"
+      ],
+      "funding_insight_ids": [
+        "FI-d6a129552387b2aa"
+      ],
+      "source_event_ids": [
+        "EV-4e975be277195118"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-be3b0df0539fd9a7",
+          "quote": "FluidStack pivoted to become a full-stack neocloud: designing, building, and operating dedicated GPU clusters for AI labs.",
+          "source_content_hash": "32078b20d37ae1a6",
+          "quote_hash": "d5dba11f13a4b2c902ec772e181088c022a2f465480cf1ecb6fe5d9710f64ca4"
+        },
+        {
+          "source_id": "FISRC-52c1c2def0184008",
+          "quote": "Today, we are announcing a $50 billion investment in American computing infrastructure, building data centers with Fluidstack in Texas and New York, with more sites to come.",
+          "source_content_hash": "207ee08c071109b1",
+          "quote_hash": "a88e8c79967f20f47522877acc879c2aae86d370b188f16c99fd377cdaba9113"
         }
       ],
       "market_regions": [
@@ -63469,6 +64739,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-634b8e0ad8857129",
+      "candidate_kind": "product",
+      "research_name": "统一控制平面IT与安全托管服务",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-27b79c20fe655299"
+      ],
+      "funding_insight_ids": [
+        "FI-ed1a31b27f28e288"
+      ],
+      "source_event_ids": [
+        "EV-215ea259173fa6b4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-429ccc47b81019aa",
+          "quote": "Netsec operates the entire IT and security stack for its clients through a unified control plane that works across device management, identity, networking, infrastructure, security operations, help desk, and cloud.",
+          "source_content_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929",
+          "quote_hash": "ca533a7163d8f459f98f3e4ed096f206e4d021f9ec480ffcabb761864c86e835"
+        },
+        {
+          "source_id": "FISRC-429ccc47b81019aa",
+          "quote": "On the IT side, the company offers mobile device management (MDM), remote monitoring and management, SaaS subscription optimisation, and enterprise networking.",
+          "source_content_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929",
+          "quote_hash": "4878f9327b8813d34d4ccd42b16a8592616eb931064ba409c273d486b142a741"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-d5d7e44f6d889547",
       "candidate_kind": "product",
       "research_name": "统一身份控制平面",
@@ -63571,6 +64875,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-266d37e30cd10e58",
+      "candidate_kind": "product",
+      "research_name": "自研经纪平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-5d2848e59fa2ae3c"
+      ],
+      "funding_insight_ids": [
+        "FI-4fb9bf0504e8dc3b"
+      ],
+      "source_event_ids": [
+        "EV-80fce5a60752ce60"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b3116c778e39662f",
+          "quote": "a proprietary, in-house broking platform that automates administrative tasks, embeds compliance checks, and helps brokers capture higher-quality risk information for clients",
+          "source_content_hash": "d2d9f1fa153b40d4a47da4f0d314c5abd0eced4420059fd796aac54ce3fc91ee",
+          "quote_hash": "e1474dae2f6af10674f62f1fa992befc6b5c1d697810809fc39131dda56ef78c"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-7d0d876df55b6718",
       "candidate_kind": "product",
       "research_name": "自营Token工厂",
@@ -63599,6 +64931,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-a439883656013e0c",
+      "candidate_kind": "product",
+      "research_name": "营养不良筛查项目",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2cfcb7f8e397348b"
+      ],
+      "funding_insight_ids": [
+        "FI-82e3be67c383ecf6"
+      ],
+      "source_event_ids": [
+        "EV-5b59ff829e596b56"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3569fa78cd9c47b8",
+          "quote": "To our knowledge, Healthleap offers the only commercially available, peer-reviewed AI malnutrition screening tool.",
+          "source_content_hash": "afffd8fad54e4cbc",
+          "quote_hash": "dc183706c924de945665f1eb27a4ecd7893d2747d54483fe6b2f56e89826cabd"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-d32f0d59fc43e9c3",
       "candidate_kind": "product",
       "research_name": "营销AI Agent",
@@ -63619,6 +64979,34 @@
           "quote": "Noumena 打造的营销 AI Agent ，是一个在真实业务中可持续演进的增长智能系统。一方面，通过 公域感知基建（曼哈顿计划） 的持续增强，帮助客户识别原来难以被观察和量化的市场结构与人群信号；另一方面，在 Noumena Thinkflow （专家认知架构）的支撑下，资深专家的隐性直觉与复杂判断被系统化为可执行、可复用的高质量决策结构。",
           "source_content_hash": "a21cb9cc43474050",
           "quote_hash": "b0c5b36e25fce552fa6e2caac2de59747a07b51b1dca4f9c183035a6a7476489"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-90e9726676cd37f0",
+      "candidate_kind": "product",
+      "research_name": "行业解决方案",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d5cffd7a93040807"
+      ],
+      "funding_insight_ids": [
+        "FI-c5b39f16501351be"
+      ],
+      "source_event_ids": [
+        "EV-7baf4ab86798fef5"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f5aa056fbd5702b8",
+          "quote": "作为AI生产力商店的行业解决方案，覆盖文娱游戏、医疗健康、法律终端、能源电力等领域，并在具身智能方向展开探索",
+          "source_content_hash": "6d0bc08428117f96ddf77c5c2571d95dbf326f6632957696c32650cc0f5f6af2",
+          "quote_hash": "0a1ee9cb140cd200d28c70cbbb2f8e5941566a60de4bedaa2a3a7ef0021dc91d"
         }
       ],
       "market_regions": [
@@ -63795,6 +65183,46 @@
           "quote": "Groq created a chip it called a language processing unit (LPU), used for inference, and sold it as part of a cloud service or an on-premises hardware cluster.",
           "source_content_hash": "9c394f4bcc6bc709393bd43d5fd76e9ee5d8e382c596d11e0c2c454f3c20d8ab",
           "quote_hash": "31e8a50bbd3c0ac41747b45aedced113b1bc4da7dfed3c7ce1f923510fcb1e50"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-f2c9511ba3bb6746",
+      "candidate_kind": "product",
+      "research_name": "语音 AI 平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-20109d8d00635e1a"
+      ],
+      "funding_insight_ids": [
+        "FI-395dfdbce63336cb"
+      ],
+      "source_event_ids": [
+        "EV-115f9901176fd251"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8558ae4d4e3756ef",
+          "quote": "Desible.ai is a Voice AI platform that enables businesses— especially in the BFSI and enterprise sectors—to automate human-like voice conversations for customer engagement, lead generation, and service automation.",
+          "source_content_hash": "1b8c6ff47377711e",
+          "quote_hash": "c7c799f4e0788f784ee08e699ab848d9f4d272fc69f4007d3956bd02125e1f57"
+        },
+        {
+          "source_id": "FISRC-8558ae4d4e3756ef",
+          "quote": "AI-based voice calling and response automation",
+          "source_content_hash": "1b8c6ff47377711e",
+          "quote_hash": "11eca5462315505af71c5f6ebbd2ae9273454f894c201d046e935e9984a58448"
+        },
+        {
+          "source_id": "FISRC-8558ae4d4e3756ef",
+          "quote": "Multilingual and vernacular voice experiences",
+          "source_content_hash": "1b8c6ff47377711e",
+          "quote_hash": "e8e6226d3ddc1df39e948db1399471e70192da0f9bd654129e31ccf5ff985195"
         }
       ],
       "market_regions": [
@@ -65253,124 +66681,6 @@
         "CN"
       ],
       "china_market_match": true
-    },
-    {
-      "candidate_id": "FIER-1347d4f072fa05b1",
-      "candidate_kind": "product",
-      "research_name": "定制AI数据中心",
-      "status": "pending_canonical_review",
-      "reason": "canonical_exact_match_missing",
-      "company_entity_ids": [
-        "EN-c10ef8fac87cdf0c"
-      ],
-      "funding_insight_ids": [
-        "FI-d6a129552387b2aa"
-      ],
-      "source_event_ids": [
-        "EV-4e975be277195118"
-      ],
-      "evidence_refs": [
-        {
-          "source_id": "FISRC-be3b0df0539fd9a7",
-          "quote": "FluidStack pivoted to become a full-stack neocloud: designing, building, and operating dedicated GPU clusters for AI labs.",
-          "source_content_hash": "32078b20d37ae1a6",
-          "quote_hash": "d5dba11f13a4b2c902ec772e181088c022a2f465480cf1ecb6fe5d9710f64ca4"
-        },
-        {
-          "source_id": "FISRC-52c1c2def0184008",
-          "quote": "Today, we are announcing a $50 billion investment in American computing infrastructure, building data centers with Fluidstack in Texas and New York, with more sites to come.",
-          "source_content_hash": "207ee08c071109b1",
-          "quote_hash": "a88e8c79967f20f47522877acc879c2aae86d370b188f16c99fd377cdaba9113"
-        }
-      ],
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_match": false
-    },
-    {
-      "candidate_id": "FIER-7b3d19ac5ee8cdbe",
-      "candidate_kind": "product",
-      "research_name": "Atlas OS",
-      "status": "pending_canonical_review",
-      "reason": "canonical_exact_match_missing",
-      "company_entity_ids": [
-        "EN-c10ef8fac87cdf0c"
-      ],
-      "funding_insight_ids": [
-        "FI-d6a129552387b2aa"
-      ],
-      "source_event_ids": [
-        "EV-4e975be277195118"
-      ],
-      "evidence_refs": [
-        {
-          "source_id": "FISRC-be3b0df0539fd9a7",
-          "quote": "Its in-house operating system, Atlas OS, is a bare-metal platform that automates server imaging and provisions Kubernetes or Slurm environments in days rather than the weeks typical of standard cloud onboarding",
-          "source_content_hash": "32078b20d37ae1a6",
-          "quote_hash": "785c7e25b82a83d9398eac6d249447bd2e89c58dbcfdd1636746de11250585a2"
-        }
-      ],
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_match": false
-    },
-    {
-      "candidate_id": "FIER-f4713e322ff3ed01",
-      "candidate_kind": "person",
-      "research_name": "Gary Wu",
-      "status": "pending_canonical_review",
-      "reason": "canonical_exact_match_missing",
-      "company_entity_ids": [
-        "EN-c10ef8fac87cdf0c"
-      ],
-      "funding_insight_ids": [
-        "FI-d6a129552387b2aa"
-      ],
-      "source_event_ids": [
-        "EV-4e975be277195118"
-      ],
-      "evidence_refs": [
-        {
-          "source_id": "FISRC-52c1c2def0184008",
-          "quote": "Gary Wu, co-founder and CEO of Fluidstack",
-          "source_content_hash": "207ee08c071109b1",
-          "quote_hash": "efd93767aad62f2d160a9160894d18a5d492341fcf2da8135e195ffac7eaece0"
-        }
-      ],
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_match": false
-    },
-    {
-      "candidate_id": "FIER-6633f771a2fe54ee",
-      "candidate_kind": "product",
-      "research_name": "Lighthouse",
-      "status": "pending_canonical_review",
-      "reason": "canonical_exact_match_missing",
-      "company_entity_ids": [
-        "EN-c10ef8fac87cdf0c"
-      ],
-      "funding_insight_ids": [
-        "FI-d6a129552387b2aa"
-      ],
-      "source_event_ids": [
-        "EV-4e975be277195118"
-      ],
-      "evidence_refs": [
-        {
-          "source_id": "FISRC-be3b0df0539fd9a7",
-          "quote": "Alongside Atlas OS, its Lighthouse monitoring platform provides real-time performance optimization, automatically restarting failed training jobs and swapping in replacement hardware to ensure uninterrupted runs.",
-          "source_content_hash": "32078b20d37ae1a6",
-          "quote_hash": "6cf35fb6e6dbc27eb5613d8a9bc1bed6b618c1f740e7201c8ab9bff5936cb0eb"
-        }
-      ],
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_match": false
     }
   ]
 }
