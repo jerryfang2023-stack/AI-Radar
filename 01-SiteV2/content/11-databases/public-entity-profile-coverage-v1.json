@@ -30681,6 +30681,76 @@
       ],
       "last_verified_at": "2026-09-27"
     },
+    "INV-706f8310804e04": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资组合关系依据 Creandum 自有项目页；Maisa 官网发布的融资文章将 Peter Specht 列为 General Partner, Creandum。本档不推断其完整组合。",
+      "summary": "Creandum 官网项目页将 Maisa 列为其投资组合公司，并标注 Creandum Lead 与 Peter Specht；Maisa 官方融资公告也收录 Peter Specht 的投资人引述。本档只记录 Maisa 这一项投资关系。",
+      "facts": [
+        {
+          "field": "portfolio_company",
+          "label": "官网投资组合披露",
+          "value": "Creandum 官网将 Maisa 列入项目页，并标注 Creandum Lead Peter Specht。",
+          "source_id": "PROFILE-A2-INV-706f8310804e04-1"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Creandum 官网将 Maisa 列为其投资组合项目。",
+          "source_id": "PROFILE-A2-INV-706f8310804e04-2"
+        },
+        {
+          "description": "融资来源记录：Procuros · A轮 · 2026-10-06 · 本轮参投 · €20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-360cd6e723b3bc05"
+        },
+        {
+          "description": "融资来源记录：Maisa AI · 种子轮 · 2025-08-27 · 本轮领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f154528a83a385f1"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "PROFILE-A2-INV-706f8310804e04-1",
+          "source_url": "https://creandum.com/commitments/maisa/",
+          "source_title": "maisa",
+          "source_content_hash": "6715d458bf9c7f45fba49feda0b0276be709f94866d59a739722a093c4727990",
+          "quote": "maisa founders Founded 2023 Creandum Backed 2025 Founders David Villalon Manuel Romero Creandum Lead Peter Specht",
+          "quote_hash": "233dfdb4bedecec80ca9f5fa732240ec161191f01ed69b0c17d4737663870a38"
+        },
+        {
+          "source_id": "PROFILE-A2-INV-706f8310804e04-2",
+          "source_url": "https://creandum.com/commitments/maisa/",
+          "source_title": "maisa",
+          "source_content_hash": "6715d458bf9c7f45fba49feda0b0276be709f94866d59a739722a093c4727990",
+          "quote": "Creandum Backed 2025 Founders David Villalon Manuel Romero Creandum Lead Peter Specht",
+          "quote_hash": "62e8c8f48af8972468084ab6413d9434e1546ab6ac570e51dfa2ee1779e5ac29"
+        },
+        {
+          "source_id": "FISRC-360cd6e723b3bc05",
+          "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
+          "source_title": "自主B2B贸易获提振，Procuros融资€20M",
+          "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+          "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+          "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+        },
+        {
+          "source_id": "FISRC-f154528a83a385f1",
+          "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
+          "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
+          "source_content_hash": "8c799b616e20ea1d",
+          "quote": "a new, $25 million seed round led by European VC firm Creandum",
+          "quote_hash": "0896f789168d0d998cf127f1803833931810c95ad9246dd6322088bfd9d3890d"
+        }
+      ],
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
+    },
     "INV-a131dfbbd00524": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -30906,6 +30976,106 @@
         }
       ],
       "last_verified_at": "2026-10-03"
+    },
+    "INV-d6da11420da894": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "XAnge 官网用于机构和投资阶段；Vertical Compute 官方公告将其列为既有投资者再投资，未披露单笔金额。",
+      "summary": "XAnge 是 Siparex Group 旗下欧洲早期风险投资品牌，官网称投资范围覆盖 Seed 至 Series B。Vertical Compute 官方公告将 XAnge 列为其 €57 million 融资中的既有投资方之一并称其继续投资；公告未披露 XAnge 的单笔金额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "欧洲早期风险投资机构。",
+          "source_id": "B26-XANGE-HOME"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资阶段",
+          "value": "Seed 至 Series B。",
+          "source_id": "B26-XANGE-STAGE"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Vertical Compute 官方融资公告将 XAnge 列为本轮再投资者之一；融资包总额为 €57 million，未披露 XAnge 单笔金额。",
+          "source_id": "B26-XANGE-DEAL"
+        },
+        {
+          "description": "融资来源记录：Procuros · A轮 · 2026-10-06 · 本轮领投 · €20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-360cd6e723b3bc05"
+        },
+        {
+          "description": "融资来源记录：Vertical Compute · 种子轮 · 2026-03-04 · 本轮参投 · €37 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-676054bb104d0746"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.xange.vc/",
+          "url": "https://www.xange.vc/",
+          "source_id": "B26-XANGE-HOME"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "B26-XANGE-DEAL",
+          "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
+          "source_title": "Vertical Compute raises €57M to solve the AI memory bottleneck with new high density memory | vertical compute",
+          "source_content_hash": "8caecaeb522b794ccb4db4c151d841dde1955c04b5560a215bd7870a384c0795",
+          "quote": "XAnge , Vector Gestion , imec.xpand and imec also reinvested in this round",
+          "quote_hash": "b9a9caf00d03c7a3eea43dbcc31ca4c2420f1d4fc2daee125b02a1193630b70d"
+        },
+        {
+          "source_id": "B26-XANGE-HOME",
+          "source_url": "https://www.xange.vc/vision",
+          "source_title": "Our Vision: Driving European Early‑Stage Innovation | XAnge",
+          "source_content_hash": "40f1f9f32628986242a6fc6e4d29e202d0f50efae3def15f291806960213a518",
+          "quote": "XAnge is the innovation-focused venture brand of the Siparex Group",
+          "quote_hash": "94b9430ac7bbbf49351f533541c39b6ffab09de29770f4fa890a2627a7e5adb7"
+        },
+        {
+          "source_id": "B26-XANGE-STAGE",
+          "source_url": "https://www.xange.vc/vision",
+          "source_title": "Our Vision: Driving European Early‑Stage Innovation | XAnge",
+          "source_content_hash": "40f1f9f32628986242a6fc6e4d29e202d0f50efae3def15f291806960213a518",
+          "quote": "From Seed to Series B",
+          "quote_hash": "0d9f256ab1e9a53d9654b84eea2c669d1128ae0268e49f4c849904947081c392"
+        },
+        {
+          "source_id": "FISRC-360cd6e723b3bc05",
+          "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
+          "source_title": "自主B2B贸易获提振，Procuros融资€20M",
+          "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+          "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+          "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+        },
+        {
+          "source_id": "FISRC-b224018d6c9212b0",
+          "source_url": "https://www.xange.vc/press/prucorus-series-a",
+          "source_title": "XAnge Leads Procuros Series A with Its XAnge 5 Fund | XAnge",
+          "source_content_hash": "8954b640a521fc54",
+          "quote": "The €20M round is led by XAnge, alongside W23, Point Nine, Creandum and b2venture",
+          "quote_hash": "8da23fed5316805ed214716a9f0746f1e8c75c5677ca4213e345066cd9e84c42"
+        },
+        {
+          "source_id": "FISRC-676054bb104d0746",
+          "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
+          "source_title": "Vertical Compute 融资 5700 万欧元，以新型高密度内存解决 AI 内存瓶颈",
+          "source_content_hash": "f8b8c9f810df3f0ee026abeb15d344f81559d94a5baf84ed986447cfe3332805",
+          "quote": "Existing investors Eurazeo, XAnge, Vector Gestion, imec.xpand and imec also reinvested in this round",
+          "quote_hash": "edc1c07b67698212e9356e3f0ab0d3bb30e8cfee2577b34487cad7679f660b48"
+        }
+      ],
+      "last_verified_at": "2026-10-05",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "XAnge 是 Siparex Group 旗下欧洲早期风险投资品牌，官网称投资范围覆盖 Seed 至 Series B。Vertical Compute 官方公告将 XAnge 列为其 €57 million 融资中的既有投资方之一并称其继续投资；公告未披露 XAnge 的单笔金额。"
     },
     "INV-28b3782bbbdc09": {
       "profile_type": "organization",
@@ -58162,6 +58332,168 @@
       "coverage_note": "职位、学历和过往任职以Tracxn公司官网及年报为准；投资案例来自公司年报或融资来源记录，不能据此推断完整个人投资组合。",
       "last_verified_at": "2026-09-26"
     },
+    "INV-c986474c69da1c": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Alven 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Rivercell · 种子轮 · 2026-10-07 · 本轮参投 · €22 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-75b750c64b12ceb9"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-75b750c64b12ceb9",
+          "source_url": "https://www.afp.com/en/agency/inside-afp/external-press-releases/rivercell-launches-25-million-build-data-platforms-and-ai",
+          "source_title": "Rivercell Launches With $25 Million to Build Data Platforms and AI Models That Predict How Human Cells Respond to Treatment",
+          "source_content_hash": "6858a34647e259de",
+          "quote": "HCVC, Alven and Bpifrance Digital Venture also participated in the round",
+          "quote_hash": "841135761368f0844af10983b653acde84c98d4bf9d008fb90513ffe344f6af5"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-539584635ccedb": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Avesta Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tensor Machines · 预种子轮 · 2026-10-07 · 本轮参投 · $1.5M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e5527abe90dd056a"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-e5527abe90dd056a",
+          "source_url": "https://dealroom.co/news/160578-tensor-machines-raises-1-5m-to-measure-data-center-compute-yield/",
+          "source_title": "Tensor Machines 融资 150 万美元，用于衡量数据中心计算产出率",
+          "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+          "quote": "Omni VCDealroom has a profile for this one. Try Dealroom → led the round, with Reinforced VenturesDealroom has a profile for this one. Try Dealroom →, Avesta FundDealroom has a profile for this one. Try Dealroom →, and Draper U Ventures participating.",
+          "quote_hash": "dc6b615b85b9fe8d8f2a1539984e05abb8a836c08967fc6562d5b5ad2f721f4a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-398045265b883f": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Bpifrance Digital Venture 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Rivercell · 种子轮 · 2026-10-07 · 本轮参投 · €22 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-75b750c64b12ceb9"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-75b750c64b12ceb9",
+          "source_url": "https://www.afp.com/en/agency/inside-afp/external-press-releases/rivercell-launches-25-million-build-data-platforms-and-ai",
+          "source_title": "Rivercell Launches With $25 Million to Build Data Platforms and AI Models That Predict How Human Cells Respond to Treatment",
+          "source_content_hash": "6858a34647e259de",
+          "quote": "HCVC, Alven and Bpifrance Digital Venture also participated in the round",
+          "quote_hash": "841135761368f0844af10983b653acde84c98d4bf9d008fb90513ffe344f6af5"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-61361c154591f8": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Draper U Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tensor Machines · 预种子轮 · 2026-10-07 · 本轮参投 · $1.5M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e5527abe90dd056a"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-e5527abe90dd056a",
+          "source_url": "https://dealroom.co/news/160578-tensor-machines-raises-1-5m-to-measure-data-center-compute-yield/",
+          "source_title": "Tensor Machines 融资 150 万美元，用于衡量数据中心计算产出率",
+          "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+          "quote": "Omni VCDealroom has a profile for this one. Try Dealroom → led the round, with Reinforced VenturesDealroom has a profile for this one. Try Dealroom →, Avesta FundDealroom has a profile for this one. Try Dealroom →, and Draper U Ventures participating.",
+          "quote_hash": "dc6b615b85b9fe8d8f2a1539984e05abb8a836c08967fc6562d5b5ad2f721f4a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-7fe2139b9afbb0": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "HCVC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Rivercell · 种子轮 · 2026-10-07 · 本轮参投 · €22 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-75b750c64b12ceb9"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-75b750c64b12ceb9",
+          "source_url": "https://www.afp.com/en/agency/inside-afp/external-press-releases/rivercell-launches-25-million-build-data-platforms-and-ai",
+          "source_title": "Rivercell Launches With $25 Million to Build Data Platforms and AI Models That Predict How Human Cells Respond to Treatment",
+          "source_content_hash": "6858a34647e259de",
+          "quote": "HCVC, Alven and Bpifrance Digital Venture also participated in the round",
+          "quote_hash": "841135761368f0844af10983b653acde84c98d4bf9d008fb90513ffe344f6af5"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-3cd56caad3f10a": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "HV 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Rivercell · 种子轮 · 2026-10-07 · 本轮领投 · €22 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-75b750c64b12ceb9"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-75b750c64b12ceb9",
+          "source_url": "https://www.afp.com/en/agency/inside-afp/external-press-releases/rivercell-launches-25-million-build-data-platforms-and-ai",
+          "source_title": "Rivercell Launches With $25 Million to Build Data Platforms and AI Models That Predict How Human Cells Respond to Treatment",
+          "source_content_hash": "6858a34647e259de",
+          "quote": "today announced a $25 million seed round led by HV",
+          "quote_hash": "931ac386dc4211700602a4cc37726bed308dd28eac8f79d0a16372e2c6e4a22d"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-7d1d2714ac5b78": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -58278,6 +58610,60 @@
           "source_content_hash": "c6d0efc5bb4be449",
           "quote": "The round was led by Kriscore Capital with backing from Eximius Ventures and Indigram Labs Foundation.",
           "quote_hash": "e4feed7d39b0499cb9950d1cee3baff9c85afa317bc7807b0c3df2132284f854"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-780c1a3a434a83": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Omni VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tensor Machines · 预种子轮 · 2026-10-07 · 本轮领投 · $1.5M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e5527abe90dd056a"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-e5527abe90dd056a",
+          "source_url": "https://dealroom.co/news/160578-tensor-machines-raises-1-5m-to-measure-data-center-compute-yield/",
+          "source_title": "Tensor Machines 融资 150 万美元，用于衡量数据中心计算产出率",
+          "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+          "quote": "Omni VCDealroom has a profile for this one. Try Dealroom → led the round, with Reinforced VenturesDealroom has a profile for this one. Try Dealroom →, Avesta FundDealroom has a profile for this one. Try Dealroom →, and Draper U Ventures participating.",
+          "quote_hash": "dc6b615b85b9fe8d8f2a1539984e05abb8a836c08967fc6562d5b5ad2f721f4a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-eda4e2e6dd0d97": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Reinforced Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tensor Machines · 预种子轮 · 2026-10-07 · 本轮参投 · $1.5M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e5527abe90dd056a"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-e5527abe90dd056a",
+          "source_url": "https://dealroom.co/news/160578-tensor-machines-raises-1-5m-to-measure-data-center-compute-yield/",
+          "source_title": "Tensor Machines 融资 150 万美元，用于衡量数据中心计算产出率",
+          "source_content_hash": "8dfa00db32c5289351f827cf9658fadee936ecc36be7559de7bc1cdd71f64c57",
+          "quote": "Omni VCDealroom has a profile for this one. Try Dealroom → led the round, with Reinforced VenturesDealroom has a profile for this one. Try Dealroom →, Avesta FundDealroom has a profile for this one. Try Dealroom →, and Draper U Ventures participating.",
+          "quote_hash": "dc6b615b85b9fe8d8f2a1539984e05abb8a836c08967fc6562d5b5ad2f721f4a"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -58402,6 +58788,33 @@
           "source_content_hash": "ab77fec400a8274731c9fd7ff39d4fb8c489304a4151fe62b9464a1540fc64a8",
           "quote": "The round was led by Pragmatech and Araya Ventures, with participation from Purple Ventures, Gorilla Capital, hi5 Ventures, Somersault Ventures and other investors.",
           "quote_hash": "bdf2c659f0735fecca0729baf8d9d531e05d025d366317c53e75f13868c2348a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-8b3b6a3e23fa5d": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "b2venture 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Procuros · A轮 · 2026-10-06 · 本轮参投 · €20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-360cd6e723b3bc05"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-360cd6e723b3bc05",
+          "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
+          "source_title": "自主B2B贸易获提振，Procuros融资€20M",
+          "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+          "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+          "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -58865,6 +59278,33 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-4f285fe28bfa1e": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Point Nine 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Procuros · A轮 · 2026-10-06 · 本轮参投 · €20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-360cd6e723b3bc05"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-360cd6e723b3bc05",
+          "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
+          "source_title": "自主B2B贸易获提振，Procuros融资€20M",
+          "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+          "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+          "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-bd019d3b098f7f": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -59120,6 +59560,45 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-9b04298b295869": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "W23 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Procuros · A轮 · 2026-10-06 · 本轮参投 · €20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b224018d6c9212b0"
+        },
+        {
+          "description": "融资来源记录：Procuros · A轮 · 2026-10-06 · 本轮参投 · €20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bd4990f9eb5d5084"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-b224018d6c9212b0",
+          "source_url": "https://www.xange.vc/press/prucorus-series-a",
+          "source_title": "XAnge Leads Procuros Series A with Its XAnge 5 Fund | XAnge",
+          "source_content_hash": "8954b640a521fc54",
+          "quote": "The €20M round is led by XAnge, alongside W23, Point Nine, Creandum and b2venture",
+          "quote_hash": "8da23fed5316805ed214716a9f0746f1e8c75c5677ca4213e345066cd9e84c42"
+        },
+        {
+          "source_id": "FISRC-bd4990f9eb5d5084",
+          "source_url": "https://dealroom.co/news/160108-procuros-raises-20m-to-scale-ai-native-supply-chain-platform/",
+          "source_title": "Procuros raises €20M to scale AI-native supply chain platform",
+          "source_content_hash": "4f012a8b2a2839a2",
+          "quote": "W23Dealroom has a profile for this one. Try Dealroom → joined as a new backer, while existing investors Point Nine, Creandum, and b2venture returned.",
+          "quote_hash": "bbb818e504035fb43e4ffa1d1586afed47dadf702742a12b827b574fae7c3216"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-7c7e29c07b322e": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -59205,6 +59684,33 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-5e915c2bc112e1": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Becker Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Eden AI Labs Inc. · 其他融资 · 2026-10-05 · 本轮参投 · $1.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d07e2ff80974efa"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-6d07e2ff80974efa",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/05/3374883/0/en/eden-ai-labs-inc-raises-1-5m-to-build-personal-ai-that-works-for-everyone.html",
+          "source_title": "Eden AI Labs Inc. 融资 150 万美元，打造面向所有人的个人 AI",
+          "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+          "quote": "The round was led by Gaea Ventures, with participation from Becker Ventures, GTM Ventures, other family offices and angel investors.",
+          "quote_hash": "37367bd37797df444e7b70bfc1b03a7e4465255a7c89931f216411fb9d62b0f2"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-968f38595fb5a8": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -59228,6 +59734,60 @@
           "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
           "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
           "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-c372f7f81b6243": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Gaea Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Eden AI Labs Inc. · 其他融资 · 2026-10-05 · 本轮领投 · $1.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d07e2ff80974efa"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-6d07e2ff80974efa",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/05/3374883/0/en/eden-ai-labs-inc-raises-1-5m-to-build-personal-ai-that-works-for-everyone.html",
+          "source_title": "Eden AI Labs Inc. 融资 150 万美元，打造面向所有人的个人 AI",
+          "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+          "quote": "The round was led by Gaea Ventures, with participation from Becker Ventures, GTM Ventures, other family offices and angel investors.",
+          "quote_hash": "37367bd37797df444e7b70bfc1b03a7e4465255a7c89931f216411fb9d62b0f2"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-7c7a85b1f5e586": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "GTM Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Eden AI Labs Inc. · 其他融资 · 2026-10-05 · 本轮参投 · $1.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d07e2ff80974efa"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-6d07e2ff80974efa",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/05/3374883/0/en/eden-ai-labs-inc-raises-1-5m-to-build-personal-ai-that-works-for-everyone.html",
+          "source_title": "Eden AI Labs Inc. 融资 150 万美元，打造面向所有人的个人 AI",
+          "source_content_hash": "0401523925968efe31cbfb89b7bd5e5c55541fe0c12d2d03f44a422c2b67fa40",
+          "quote": "The round was led by Gaea Ventures, with participation from Becker Ventures, GTM Ventures, other family offices and angel investors.",
+          "quote_hash": "37367bd37797df444e7b70bfc1b03a7e4465255a7c89931f216411fb9d62b0f2"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -160414,86 +160974,6 @@
       ],
       "last_verified_at": "2026-10-03"
     },
-    "INV-d6da11420da894": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "XAnge 官网用于机构和投资阶段；Vertical Compute 官方公告将其列为既有投资者再投资，未披露单笔金额。",
-      "summary": "XAnge 是 Siparex Group 旗下欧洲早期风险投资品牌，官网称投资范围覆盖 Seed 至 Series B。Vertical Compute 官方公告将 XAnge 列为其 €57 million 融资中的既有投资方之一并称其继续投资；公告未披露 XAnge 的单笔金额。",
-      "facts": [
-        {
-          "field": "organization_type",
-          "label": "机构类型",
-          "value": "欧洲早期风险投资机构。",
-          "source_id": "B26-XANGE-HOME"
-        },
-        {
-          "field": "investment_focus",
-          "label": "投资阶段",
-          "value": "Seed 至 Series B。",
-          "source_id": "B26-XANGE-STAGE"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "Vertical Compute 官方融资公告将 XAnge 列为本轮再投资者之一；融资包总额为 €57 million，未披露 XAnge 单笔金额。",
-          "source_id": "B26-XANGE-DEAL"
-        },
-        {
-          "description": "融资来源记录：Vertical Compute · 种子轮 · 2026-03-04 · 本轮参投 · €37 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-676054bb104d0746"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官网",
-          "value": "https://www.xange.vc/",
-          "url": "https://www.xange.vc/",
-          "source_id": "B26-XANGE-HOME"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "B26-XANGE-DEAL",
-          "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
-          "source_title": "Vertical Compute raises €57M to solve the AI memory bottleneck with new high density memory | vertical compute",
-          "source_content_hash": "8caecaeb522b794ccb4db4c151d841dde1955c04b5560a215bd7870a384c0795",
-          "quote": "XAnge , Vector Gestion , imec.xpand and imec also reinvested in this round",
-          "quote_hash": "b9a9caf00d03c7a3eea43dbcc31ca4c2420f1d4fc2daee125b02a1193630b70d"
-        },
-        {
-          "source_id": "B26-XANGE-HOME",
-          "source_url": "https://www.xange.vc/vision",
-          "source_title": "Our Vision: Driving European Early‑Stage Innovation | XAnge",
-          "source_content_hash": "40f1f9f32628986242a6fc6e4d29e202d0f50efae3def15f291806960213a518",
-          "quote": "XAnge is the innovation-focused venture brand of the Siparex Group",
-          "quote_hash": "94b9430ac7bbbf49351f533541c39b6ffab09de29770f4fa890a2627a7e5adb7"
-        },
-        {
-          "source_id": "B26-XANGE-STAGE",
-          "source_url": "https://www.xange.vc/vision",
-          "source_title": "Our Vision: Driving European Early‑Stage Innovation | XAnge",
-          "source_content_hash": "40f1f9f32628986242a6fc6e4d29e202d0f50efae3def15f291806960213a518",
-          "quote": "From Seed to Series B",
-          "quote_hash": "0d9f256ab1e9a53d9654b84eea2c669d1128ae0268e49f4c849904947081c392"
-        },
-        {
-          "source_id": "FISRC-676054bb104d0746",
-          "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
-          "source_title": "Vertical Compute 融资 5700 万欧元，以新型高密度内存解决 AI 内存瓶颈",
-          "source_content_hash": "f8b8c9f810df3f0ee026abeb15d344f81559d94a5baf84ed986447cfe3332805",
-          "quote": "Existing investors Eurazeo, XAnge, Vector Gestion, imec.xpand and imec also reinvested in this round",
-          "quote_hash": "edc1c07b67698212e9356e3f0ab0d3bb30e8cfee2577b34487cad7679f660b48"
-        }
-      ],
-      "last_verified_at": "2026-10-05",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "XAnge 是 Siparex Group 旗下欧洲早期风险投资品牌，官网称投资范围覆盖 Seed 至 Series B。Vertical Compute 官方公告将 XAnge 列为其 €57 million 融资中的既有投资方之一并称其继续投资；公告未披露 XAnge 的单笔金额。"
-    },
     "INV-92e3c221c48c4a": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -172236,64 +172716,6 @@
           "source_content_hash": "0571770aee5954df",
           "quote": "follow-on investment from KB Securities",
           "quote_hash": "e9343aa741a2b8768a7cc22e8652a814479397d5364d0e9dd96b911f7aa846a8"
-        }
-      ],
-      "last_verified_at": "2026-10-04",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
-    },
-    "INV-706f8310804e04": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "投资组合关系依据 Creandum 自有项目页；Maisa 官网发布的融资文章将 Peter Specht 列为 General Partner, Creandum。本档不推断其完整组合。",
-      "summary": "Creandum 官网项目页将 Maisa 列为其投资组合公司，并标注 Creandum Lead 与 Peter Specht；Maisa 官方融资公告也收录 Peter Specht 的投资人引述。本档只记录 Maisa 这一项投资关系。",
-      "facts": [
-        {
-          "field": "portfolio_company",
-          "label": "官网投资组合披露",
-          "value": "Creandum 官网将 Maisa 列入项目页，并标注 Creandum Lead Peter Specht。",
-          "source_id": "PROFILE-A2-INV-706f8310804e04-1"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "Creandum 官网将 Maisa 列为其投资组合项目。",
-          "source_id": "PROFILE-A2-INV-706f8310804e04-2"
-        },
-        {
-          "description": "融资来源记录：Maisa AI · 种子轮 · 2025-08-27 · 本轮领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f154528a83a385f1"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "PROFILE-A2-INV-706f8310804e04-1",
-          "source_url": "https://creandum.com/commitments/maisa/",
-          "source_title": "maisa",
-          "source_content_hash": "6715d458bf9c7f45fba49feda0b0276be709f94866d59a739722a093c4727990",
-          "quote": "maisa founders Founded 2023 Creandum Backed 2025 Founders David Villalon Manuel Romero Creandum Lead Peter Specht",
-          "quote_hash": "233dfdb4bedecec80ca9f5fa732240ec161191f01ed69b0c17d4737663870a38"
-        },
-        {
-          "source_id": "PROFILE-A2-INV-706f8310804e04-2",
-          "source_url": "https://creandum.com/commitments/maisa/",
-          "source_title": "maisa",
-          "source_content_hash": "6715d458bf9c7f45fba49feda0b0276be709f94866d59a739722a093c4727990",
-          "quote": "Creandum Backed 2025 Founders David Villalon Manuel Romero Creandum Lead Peter Specht",
-          "quote_hash": "62e8c8f48af8972468084ab6413d9434e1546ab6ac570e51dfa2ee1779e5ac29"
-        },
-        {
-          "source_id": "FISRC-f154528a83a385f1",
-          "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
-          "source_title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
-          "source_content_hash": "8c799b616e20ea1d",
-          "quote": "a new, $25 million seed round led by European VC firm Creandum",
-          "quote_hash": "0896f789168d0d998cf127f1803833931810c95ad9246dd6322088bfd9d3890d"
         }
       ],
       "last_verified_at": "2026-10-04",

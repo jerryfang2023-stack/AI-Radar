@@ -1,9 +1,9 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-10-08T00:50:38.499Z",
+  "generated_at": "2026-10-08T12:41:29.416Z",
   "data_date": "2026-10-08",
   "prompt_version": "model-assist-2026-07-18.2",
-  "source_count": 136,
+  "source_count": 149,
   "candidates": [
     {
       "candidate_id": "MAC-0089ed41349e582a",
@@ -493,6 +493,60 @@
       "generated_at": "2026-10-08T00:49:43.074Z"
     },
     {
+      "candidate_id": "MAC-0f67dbcb9763890a",
+      "task_type": "qa_repair",
+      "asset_id": "QA-7c43ac1668d3c5a8",
+      "raw_id": "RAW-7ba5f3b9af627163",
+      "source_ref": "SA-df84cf43b0caadfb",
+      "source_hash": "f1d6bbe60327fb3e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant funding event: Sunfox Technologies, an AI-enabled cardiac diagnostics startup, raised $7 Mn in a Series A round. The quote directly supports the funding claim and the AI relevance is established by the source's own description of the company as developing AI-enabled cardiac diagnostic solutions.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Sunfox Technologies",
+            "object": "$7 Mn Series A funding round led by Ashish Kacholia, Lashit Sanghvi, Alchemy Capital, and 3one4 Capital",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 187,
+          "quote": "Dehradun-based medtech startup Sunfox Technologies has raised $7 Mn (around ₹67 Cr) in a Series A funding round led by Ashish Kacholia, Lashit Sanghvi, Alchemy Capital, and 3one4 Capital."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:41:29.409Z"
+    },
+    {
       "candidate_id": "MAC-144121086ab794e7",
       "task_type": "claim_extraction",
       "asset_id": "QA-eecdf3b40df778be",
@@ -661,6 +715,60 @@
         }
       ],
       "generated_at": "2026-10-08T00:49:56.084Z"
+    },
+    {
+      "candidate_id": "MAC-1b32acdef8087583",
+      "task_type": "qa_repair",
+      "asset_id": "QA-6e426c6b55656e41",
+      "raw_id": "RAW-69317afd45f1df27",
+      "source_ref": "SA-8d3cf996d3dc259f",
+      "source_hash": "bf8ea59caa47497a",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant funding event: Siena raised a $17 million Series A. The quote directly supports the funding claim.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Siena",
+            "object": "$17 million Series A led by York IE with participation from Joyance Ventures, Aglaé Ventures, Sierra Ventures and Super Angel Fund",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 152,
+          "end": 322,
+          "quote": "We raised a $17 million Series A led by York IE, with participation from Joyance Ventures and our existing investors Aglaé Ventures, Sierra Ventures and Super Angel Fund."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:36:54.994Z"
     },
     {
       "candidate_id": "MAC-1f04af535791f8e6",
@@ -1040,6 +1148,128 @@
         }
       ],
       "generated_at": "2026-10-08T00:50:10.538Z"
+    },
+    {
+      "candidate_id": "MAC-243687a342caf4ce",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-88820a37b76b50e5",
+      "raw_id": "RAW-15957369df8a9484",
+      "source_ref": "SA-ba674a38514d82d5",
+      "source_hash": "c6f71fc4d5232b55",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Rivercell",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source identifies Rivercell as a Paris-based BioTech and AI startup but provides no verified alternative to match.",
+        "candidate_name": "Rivercell"
+      },
+      "evidence": [
+        {
+          "start": 341,
+          "end": 566,
+          "quote": "Rivercell, a Paris-based company working at the intersection of biotechnology and artificial intelligence, has come out of stealth with a €22 million ($25 million) seed round, according to reporting by EU-Startups and Sifted."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:41:29.367Z"
+    },
+    {
+      "candidate_id": "MAC-257ba69f0e345440",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-e5a87919df8f0984",
+      "raw_id": "RAW-fa8f6edb390d7baa",
+      "source_ref": "SA-37805c9c0117257e",
+      "source_hash": "25a96ad661374170",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Netsec",
+            "object": "€8.93 million financing round",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "Partech",
+            "object": "Netsec financing round",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "Primo Capital and View Different",
+            "object": "Netsec financing round",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 220,
+          "quote": "Netsec, proveedor franco-italiano de servicios gestionados de TI y ciberseguridad, ha conseguido más de €8,93 millones en una ronda de financiación para desarrollar sus soluciones nativas de IA, según informó la empresa."
+        },
+        {
+          "start": 221,
+          "end": 385,
+          "quote": "La operación, liderada por Partech, refleja el creciente interés de los inversores europeos por la seguridad digital frente al aumento de las amenazas cibernéticas."
+        },
+        {
+          "start": 386,
+          "end": 508,
+          "quote": "A la ronda se sumaron Primo Capital y View Different, el vehículo de inversión de Diego Piacentini, exejecutivo de Amazon."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:€8.93m"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:36:52.952Z"
     },
     {
       "candidate_id": "MAC-2a978425c24aeefe",
@@ -1946,6 +2176,54 @@
       "generated_at": "2026-10-08T00:49:37.515Z"
     },
     {
+      "candidate_id": "MAC-477b94e52fd98af6",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-ecd6dea6127e2b74",
+      "raw_id": "RAW-02c6e0084f13d611",
+      "source_ref": "SA-b485a82aff369c4f",
+      "source_hash": "2d40b191e15623ff",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Tensor Machines",
+        "rationale": "The candidate entity 'Tensor Machines' does not match the verified alternative 'Anthropic'. The source text describes Tensor Machines as a separate organization (a San Francisco-based developer of AI hardware tools) and mentions Anthropic only in a separate headline about a different deal. No quote proves the candidate mention refers to Anthropic.",
+        "candidate_name": "Tensor Machines"
+      },
+      "evidence": [
+        {
+          "start": 87,
+          "end": 278,
+          "quote": "Tensor MachinesDealroom has a profile for this one. Try Dealroom →, a San Francisco-based developer of AI hardware tools and physics-based models, has raised $1.5 million in pre-seed funding."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:36:54.837Z"
+    },
+    {
       "candidate_id": "MAC-4ac53c1281a965f2",
       "task_type": "entity_resolution",
       "asset_id": "EN-5e8d0bae72bca66f",
@@ -2114,6 +2392,69 @@
         }
       ],
       "generated_at": "2026-10-08T00:49:29.063Z"
+    },
+    {
+      "candidate_id": "MAC-4de4178d32b47bdf",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-bc11be6bc15c6291",
+      "raw_id": "RAW-15957369df8a9484",
+      "source_ref": "SA-ba674a38514d82d5",
+      "source_hash": "c6f71fc4d5232b55",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Rivercell",
+            "object": "€22 million seed round led by HV",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "market_expansion",
+            "subject": "Rivercell",
+            "object": "expanding its wet lab in Paris",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 341,
+          "end": 566,
+          "quote": "Rivercell, a Paris-based company working at the intersection of biotechnology and artificial intelligence, has come out of stealth with a €22 million ($25 million) seed round, according to reporting by EU-Startups and Sifted."
+        },
+        {
+          "start": 860,
+          "end": 1009,
+          "quote": "the capital will go toward scaling Rivercell's data generation platform, expanding its wet lab in Paris, and launching its AI Virtual Cell programme."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:36:51.672Z"
     },
     {
       "candidate_id": "MAC-4e9a8f26155e6595",
@@ -4608,6 +4949,66 @@
       "generated_at": "2026-10-08T00:49:45.833Z"
     },
     {
+      "candidate_id": "MAC-afe2cf9bbf7d2446",
+      "task_type": "qa_repair",
+      "asset_id": "QA-d1c1275f4bdffa98",
+      "raw_id": "RAW-2e470bcf0f10e49f",
+      "source_ref": "SA-f36f36a58fad3248",
+      "source_hash": "160f08335f84964b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source reports a concrete funding event for Inbolt, an AI robotics company, so the QA rejection for event_not_ai_relevant is not supported by the supplied text.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Inbolt",
+            "object": "$12.5M in funding",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Inbolt",
+            "object": "total funding to $34M",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 143,
+          "end": 359,
+          "quote": "Inbolt, which gives industrial robots the ability to see, think, and adapt in real time – letting them master any process, part, or station – recently announced $12.5M in funding, bringing it’s total funding to $34M."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:36:56.178Z"
+    },
+    {
       "candidate_id": "MAC-b02333abeb601ce2",
       "task_type": "entity_resolution",
       "asset_id": "EN-3d369f340d025e15",
@@ -5111,6 +5512,54 @@
         }
       ],
       "generated_at": "2026-10-08T00:49:31.326Z"
+    },
+    {
+      "candidate_id": "MAC-ccbe09de4c7270ba",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1e931b89bd9e0497",
+      "raw_id": "RAW-37d8dcc3ea683bea",
+      "source_ref": "SA-f1380f6ede43713f",
+      "source_hash": "dfa1bec301e80f7e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Eden AI Labs Inc.",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative entity. The source names the entity but provides no verified alternative to compare against.",
+        "candidate_name": "Eden AI Labs Inc."
+      },
+      "evidence": [
+        {
+          "start": 176,
+          "end": 309,
+          "quote": "Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:36:53.964Z"
     },
     {
       "candidate_id": "MAC-ccfd7d383541a2dd",
@@ -5747,6 +6196,60 @@
       "generated_at": "2026-10-08T00:49:47.256Z"
     },
     {
+      "candidate_id": "MAC-de0205b0c369598b",
+      "task_type": "qa_repair",
+      "asset_id": "QA-c6ef56dd2eff0776",
+      "raw_id": "RAW-3995ee73c1a13533",
+      "source_ref": "SA-1bb67a4aef6f24a0",
+      "source_hash": "4c6402ec93ada261",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source reports a concrete funding event (Series A) for Procuros, which is an AI-relevant company per the source's explicit mention of AI agents and AI infrastructure. The QA reason 'event_not_ai_relevant' is not supported because the source ties the funding to AI agent automation and AI infrastructure.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Procuros",
+            "object": "20 million euros Series A funding round",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 117,
+          "end": 214,
+          "quote": "The Hamburg-based startup Procuros has completed a Series A funding round worth 20 million euros."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:36:55.800Z"
+    },
+    {
       "candidate_id": "MAC-df59d589aaf9bb1c",
       "task_type": "entity_resolution",
       "asset_id": "EN-8baf1838b7b24434",
@@ -5921,6 +6424,54 @@
         }
       ],
       "generated_at": "2026-10-08T00:49:32.722Z"
+    },
+    {
+      "candidate_id": "MAC-e279560717d9e9eb",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-7eed2a69df089fc8",
+      "raw_id": "RAW-9eea6b7e89ceaea1",
+      "source_ref": "SA-a27a3b1ed2be4a37",
+      "source_hash": "06d213982d0ee81c",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "CurvetAI",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so no alternative can be matched; the candidate name appears verbatim in the source but cannot be confirmed against any verified list.",
+        "candidate_name": "CurvetAI"
+      },
+      "evidence": [
+        {
+          "start": 318,
+          "end": 357,
+          "quote": "印度浦那一家成立仅十个月左右的初创公司 CurvetAI 试图把这个问题接住。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:36:53.734Z"
     },
     {
       "candidate_id": "MAC-e3147eda15967703",
@@ -6313,6 +6864,54 @@
         }
       ],
       "generated_at": "2026-10-08T00:49:53.663Z"
+    },
+    {
+      "candidate_id": "MAC-e99de670cb439f8d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1a2290470e0aa754",
+      "raw_id": "RAW-37d8dcc3ea683bea",
+      "source_ref": "SA-f1380f6ede43713f",
+      "source_hash": "dfa1bec301e80f7e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "SAN FRANCISCO",
+        "rationale": "No VERIFIED_ALTERNATIVE matches the candidate canonical name, so identity cannot be confirmed under the required rule.",
+        "candidate_name": "SAN FRANCISCO"
+      },
+      "evidence": [
+        {
+          "start": 127,
+          "end": 309,
+          "quote": "SAN FRANCISCO, Oct. 05, 2026 (GLOBE NEWSWIRE) -- Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:36:53.048Z"
     },
     {
       "candidate_id": "MAC-ea1782f71ae424c7",
@@ -6902,6 +7501,80 @@
         }
       ],
       "generated_at": "2026-10-08T00:50:33.266Z"
+    },
+    {
+      "candidate_id": "MAC-f4eaa1b31784b5cb",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-151e340fcad7139e",
+      "raw_id": "RAW-7ba5f3b9af627163",
+      "source_ref": "SA-df84cf43b0caadfb",
+      "source_hash": "f1d6bbe60327fb3e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Sunfox Technologies",
+            "object": "$7 Mn Series A funding round led by Ashish Kacholia, Lashit Sanghvi, Alchemy Capital, and 3one4 Capital",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Sunfox Technologies",
+            "object": "₹15 Cr (around $1.8 Mn) round led by Venture Catalysts in 2024",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "hardware_deployment",
+            "subject": "Sunfox Technologies",
+            "object": "around 60,000 Spandan devices deployed across India, reaching more than 20,000 villages",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 187,
+          "quote": "Dehradun-based medtech startup Sunfox Technologies has raised $7 Mn (around ₹67 Cr) in a Series A funding round led by Ashish Kacholia, Lashit Sanghvi, Alchemy Capital, and 3one4 Capital."
+        },
+        {
+          "start": 691,
+          "end": 778,
+          "quote": "The fundraise follows a ₹15 Cr (around $1.8 Mn) round led by Venture Catalysts in 2024."
+        },
+        {
+          "start": 1665,
+          "end": 1777,
+          "quote": "Sunfox claims around 60,000 Spandan devices have been deployed across India, reaching more than 20,000 villages."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-08T12:36:52.019Z"
     },
     {
       "candidate_id": "MAC-f67568c21ae2c14f",

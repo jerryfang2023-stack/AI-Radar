@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-08",
     "currentDate": "2026-10-08",
-    "eventCount": 4001,
+    "eventCount": 4008,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-04",
-    "latest_disclosed_at": "2026-03-04",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8744077cb9056031",
+        "canonical_entity_id": "",
+        "name": "Procuros"
+      },
       {
         "entity_id": "EN-04d190bed959ed61",
         "canonical_entity_id": "",
@@ -85,6 +92,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9074522d3bd11487",
+        "funding_insight_id": "FI-f0a9463c47929218",
+        "event_ids": [
+          "EV-c96f8475f771fe20"
+        ],
+        "company_entity_id": "EN-8744077cb9056031",
+        "company_canonical_entity_id": "",
+        "company_name": "Procuros",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "€20 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万欧元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-360cd6e723b3bc05",
+            "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
+            "source_title": "自主B2B贸易获提振，Procuros融资€20M",
+            "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+            "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+            "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+          },
+          {
+            "source_id": "FISRC-b224018d6c9212b0",
+            "source_url": "https://www.xange.vc/press/prucorus-series-a",
+            "source_title": "XAnge Leads Procuros Series A with Its XAnge 5 Fund | XAnge",
+            "source_content_hash": "8954b640a521fc54",
+            "quote": "The €20M round is led by XAnge, alongside W23, Point Nine, Creandum and b2venture",
+            "quote_hash": "8da23fed5316805ed214716a9f0746f1e8c75c5677ca4213e345066cd9e84c42"
+          }
+        ]
+      },
       {
         "activity_id": "IA-26452ad09384b60d",
         "funding_insight_id": "FI-a67dfa80e70bbc8e",
@@ -128,6 +183,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-360cd6e723b3bc05",
+        "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
+        "source_title": "自主B2B贸易获提振，Procuros融资€20M",
+        "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+        "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+        "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+      },
+      {
+        "source_id": "FISRC-b224018d6c9212b0",
+        "source_url": "https://www.xange.vc/press/prucorus-series-a",
+        "source_title": "XAnge Leads Procuros Series A with Its XAnge 5 Fund | XAnge",
+        "source_content_hash": "8954b640a521fc54",
+        "quote": "The €20M round is led by XAnge, alongside W23, Point Nine, Creandum and b2venture",
+        "quote_hash": "8da23fed5316805ed214716a9f0746f1e8c75c5677ca4213e345066cd9e84c42"
+      },
+      {
         "source_id": "FISRC-676054bb104d0746",
         "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
         "source_title": "Vertical Compute 融资 5700 万欧元，以新型高密度内存解决 AI 内存瓶颈",
@@ -161,6 +232,10 @@
         {
           "description": "Vertical Compute 官方融资公告将 XAnge 列为本轮再投资者之一；融资包总额为 €57 million，未披露 XAnge 单笔金额。",
           "source_id": "B26-XANGE-DEAL"
+        },
+        {
+          "description": "融资来源记录：Procuros · A轮 · 2026-10-06 · 本轮领投 · €20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-360cd6e723b3bc05"
         },
         {
           "description": "融资来源记录：Vertical Compute · 种子轮 · 2026-03-04 · 本轮参投 · €37 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -200,6 +275,22 @@
           "source_content_hash": "40f1f9f32628986242a6fc6e4d29e202d0f50efae3def15f291806960213a518",
           "quote": "From Seed to Series B",
           "quote_hash": "0d9f256ab1e9a53d9654b84eea2c669d1128ae0268e49f4c849904947081c392"
+        },
+        {
+          "source_id": "FISRC-360cd6e723b3bc05",
+          "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
+          "source_title": "自主B2B贸易获提振，Procuros融资€20M",
+          "source_content_hash": "f7d120b3df4554262d0da5bd08876d2c2ac7cdac38f52ec2fafeeebf245e592d",
+          "quote": "The round was led by XAnge, with existing investors Point Nine, Creandum and b2venture participating alongside several angel investors.",
+          "quote_hash": "ce311148a5c2587b59889a704014bbaf29804484d933d94171a54121c6db1b3f"
+        },
+        {
+          "source_id": "FISRC-b224018d6c9212b0",
+          "source_url": "https://www.xange.vc/press/prucorus-series-a",
+          "source_title": "XAnge Leads Procuros Series A with Its XAnge 5 Fund | XAnge",
+          "source_content_hash": "8954b640a521fc54",
+          "quote": "The €20M round is led by XAnge, alongside W23, Point Nine, Creandum and b2venture",
+          "quote_hash": "8da23fed5316805ed214716a9f0746f1e8c75c5677ca4213e345066cd9e84c42"
         },
         {
           "source_id": "FISRC-676054bb104d0746",
