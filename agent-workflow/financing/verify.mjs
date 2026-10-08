@@ -106,6 +106,7 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
     const priorReview = currentReview || receipt.prior_review;
     if (!row || (priorReview && row.review_hash !== digest(priorReview)) || (resume && row.status==='pending' && row.fact_review_completed!==true)) {
       processed.add(url);
+      const previousPrepared=row;
       const priorAttempts=row?.capture_attempts || [];
       row = state.entries[url] = { source_url: url, original_reason: receipt.reason, status: 'pending', reason: receipt.reason, checks: pendingChecks(),
         capture_attempts:priorAttempts,
@@ -140,8 +141,9 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
       if (row.raw_ids?.length) { write(file,state); return; }
       let cachedOriginal = legacy.originals.get(url) || legacy.originals.get(priorReview?.additional_source) || legacy.byId.get(String(priorReview?.id));
       const recheckOriginal=collection.rechecks?.[url]?.captures?.find(item=>item.content_hash);
-      const cachedHash=queued?.content_hash || recheckOriginal?.content_hash;
-      const cachedSource=queued?.content_hash ? queued.evidence_source_url || url : recheckOriginal?.url;
+      const reservedOriginal=priorAttempts.map(attempt=>({url:attempt.url,...budget.captureReceipt(attempt.url)})).find(item=>item.content_hash);
+      const cachedHash=queued?.content_hash || previousPrepared?.content_hash || reservedOriginal?.content_hash || recheckOriginal?.content_hash;
+      const cachedSource=queued?.content_hash ? queued.evidence_source_url || url : previousPrepared?.content_hash ? previousPrepared.evidence_source_url || url : reservedOriginal?.url || recheckOriginal?.url;
       if(!cachedOriginal && cachedHash && queued?.fact_review_completed !== true) {
         try {
           const saved=loadPrivateEvidenceRecord(root,`evidence://${cachedHash}`,cachedHash,{backupRoot,sourceUrl:cachedSource});

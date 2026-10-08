@@ -28,6 +28,21 @@ const forbidden = () => { throw new Error('unexpected network call'); };
 const queuePath = options => path.join(options.backupRoot,'financing-monitor-state/verification-queue.json');
 const due = (extra={}) => ({status:'pending',origin_date:'2026-10-05',rounds:0,next_due_date:date,stop_after_date:'2026-10-12',title:'Older AI financing original',reason:'capture_budget_exhausted',...extra});
 
+test('capture ledger restores original after checkpoint replacement failed before parent hash was saved',async t=>{
+  const options=fixture(t),alternative='https://example.com/recovered-source';seed(options);
+  write(path.join(options.directory,'lead-review.json'),{version:'FINANCING-LEAD-REVIEW-1',date,rows:[{id:1,url,title:'Acme AI financing',status:'pending_ai_scope',reason:'identity requires review',reviewed_at:date}]});
+  const first=await verifyPending({...options,search:async()=>({status:'completed',items:[{url:alternative}]}),capture});
+  const hash=first.entries[url].content_hash;
+  first.entries[url]={source_url:url,status:'pending',reason:'search_or_capture_pending',capture_attempts:[{url:alternative,status:'started'}]};
+  write(path.join(options.directory,'verification.json'),first);
+  write(queuePath(options),{entries:{[url]:due()}});
+  write(path.join(options.backupRoot,'financing-monitor-state/verification-attempts.json'),{entries:{[url]:{date,status:'registered',attempted:false}}});
+  const restored=await verifyPending({...options,resume:true,capture:forbidden,search:forbidden});
+  assert.equal(restored.entries[url].content_hash,hash);
+  assert.equal(restored.entries[url].reason,'alternate_original_requires_identity_review');
+  assert.equal(restored.review_budget.capture_requests,1);
+});
+
 test('current excluded originals close queued leads without network and preserve other queue entries', async t => {
   const options=fixture(t), other='https://example.com/unrelated';
   seed(options,{[url]:{status:'excluded',reason:'outside_daily_window',original_date:'2026-07-08'}});
