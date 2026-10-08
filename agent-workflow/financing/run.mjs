@@ -93,9 +93,9 @@ async function main() {
     if (!collection?.accepted || collection.date !== date) throw new Error('accepted_financing_collection_required');
     await verifyPending({ root, directory, backupRoot, date });
     if (phase === 'verify') return;
-    indexFinancingEvidence({root, backupRoot, date, collection});
-    // A clean zero day is not an extraction failure or a reason to invent cards.
     const intake = read(path.join(root, `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`));
+    indexFinancingEvidence({root, backupRoot, date, collection, requiredEvidenceRefs:(intake?.source_artifacts || []).flatMap(source=>source.snapshot_refs || [])});
+    // A clean zero day is not an extraction failure or a reason to invent cards.
     const supplemental = read(path.join(directory, 'supplemental.json'));
     if (supplemental && (supplemental.date !== date || supplemental.version !== 'FINANCING-SUPPLEMENT-1' || supplemental.accepted !== true)) throw new Error('accepted_financing_supplement_required');
     const extractionScope = financingExtractionScope(intake, collection, supplemental);
