@@ -61,11 +61,11 @@ test('discovery and secondary backlog review have independent allowances and res
   let collected=0, followed=0;
   const collection=await collect({reviewSearch:async()=>[],...options,gateway:{search:async()=>[]},feed:async()=>({complete:true,items:leads,discovered_count:480,pages:1,failures:[]}),supplements:[],capture:async()=>{collected++;return {status:'pending',reason:'original_unreadable'};}});
   assert.equal(collection.accepted,true);
-  assert.equal(collected,928);
-  assert.equal(Object.values(collection.captures).filter(row=>row.attempted===false).length,32);
+  assert.equal(collected,960);
+  assert.equal(Object.values(collection.captures).filter(row=>row.attempted===false).length,0);
   const result=await verifyPending({...options,search:async title=>({status:'completed',items:[{url:`https://alternate.example/${title.split(' ').at(-1)}`}]}),capture:async()=>{followed++;return {status:'pending',reason:'original_date_missing'};}});
   assert.equal(followed,40);
-  assert.equal(collected+followed,968);
+  assert.equal(collected+followed,1000);
   assert.equal(Object.entries(result.entries).filter(([key,row])=>key.startsWith('https://old.example/') && row.attempted).length,40);
   assert.equal(Object.entries(result.entries).filter(([key,row])=>key.startsWith('https://new.example/') && row.attempted).length,0);
   await verifyPending({...options,capture:forbidden,search:forbidden});
@@ -265,7 +265,7 @@ test('pending legacy lead captures one alternative but requires identity binding
   await verifyPending({...options,search:forbidden,capture:forbidden});
 });
 
-test('next existing daily verification consumes due backlog and stops after two bounded passes', async t => {
+test('network-only deferrals remain eligible and do not use substantive review rounds', async t => {
   const options=fixture(t);seed(options);
   const first=await verifyPending({...options,capture:async()=>({status:'pending',reason:'original_unreadable'})});
   assert.equal(first.entries[url].followup.next_due_date,'2026-10-07');
@@ -274,9 +274,9 @@ test('next existing daily verification consumes due backlog and stops after two 
   let searched=0;
   const second=await verifyPending({...later,search:async()=>{searched++;return{status:'completed',items:[]};},capture:forbidden});
   assert.equal(searched,1);
-  assert.equal(second.entries[url].followup.status,'needs_attention');
-  assert.equal(second.entries[url].followup.next_due_date,null);
-  assert.equal(second.entries[url].followup.rounds,2);
+  assert.equal(second.entries[url].followup.status,'pending');
+  assert.equal(second.entries[url].followup.next_due_date,'2026-10-08');
+  assert.equal(second.entries[url].followup.rounds,0);
   await verifyPending({...later,search:forbidden,capture:forbidden});
 });
 
@@ -309,13 +309,13 @@ test('alternate source identity survives missing public checkpoint with and with
 test('cross-day prepare-only interruption reuses private original without search or another round', async t => {
   const options=fixture(t);seed(options);
   const first=await verifyPending({...options,capture});
-  assert.equal(first.entries[url].followup.rounds,1);
+  assert.equal(first.entries[url].followup.rounds,0);
   for(const nextDate of ['2026-10-07','2026-10-12']) {
     const later={...options,date:nextDate,directory:path.join(options.root,nextDate)};
     write(path.join(later.directory,'collection.json'),{version:config.version,date:nextDate,accepted:true,captures:{},raw_ids:[],counts:{pending:0}});
     const resumed=await verifyPending({...later,search:forbidden,capture:forbidden});
     assert.equal(resumed.entries[url].status,'awaiting_fact_review');
-    assert.equal(resumed.entries[url].followup.rounds,1);
+    assert.equal(resumed.entries[url].followup.rounds,0);
     assert.equal(resumed.entries[url].content_hash,first.entries[url].content_hash);
     assert.equal(read(path.join(later.directory,'supplemental.json')).raw_ids.length,1);
     assert.equal(resumed.entries[url].followup.status,'pending');
@@ -336,8 +336,8 @@ test('fact completion is explicit and only recorded for raw present in gated fac
   let searches=0;
   const next=await verifyPending({...later,search:async()=>{searches++;return{status:'completed',items:[]};},capture:forbidden});
   assert.equal(searches,1);
-  assert.equal(next.entries[url].followup.rounds,2);
-  assert.equal(next.entries[url].followup.status,'needs_attention');
+  assert.equal(next.entries[url].followup.rounds,1);
+  assert.equal(next.entries[url].followup.status,'pending');
 });
 
 
@@ -352,5 +352,5 @@ test('cross-day recovery keeps reviewed alternate source binding before admissio
   assert.equal(resumed.entries[url].evidence_source_url,alternative);
   assert.equal(resumed.entries[url].alternate_source,true);
   assert.equal(resumed.entries[url].source_identity_reviewed,true);
-  assert.equal(resumed.entries[url].followup.rounds,1);
+  assert.equal(resumed.entries[url].followup.rounds,0);
 });

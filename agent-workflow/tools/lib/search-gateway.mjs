@@ -85,12 +85,29 @@ export async function searchBingRss(query, limit = 8, fetcher = fetch) {
   }));
 }
 
-export function createSearchGateway({ env = process.env, fetcher = fetch, fallback = (query, limit) => searchBingRss(query, limit, fetcher), fallbackName = "bing_rss", cacheDir = "", now = Date.now, maxRequests = 200, timeoutMs = 20000, providers } = {}) {
+export function createSearchGateway({ env = process.env, fetcher = fetch, fallback = (query, limit) => searchBingRss(query, limit, fetcher), fallbackName = "bing_rss", cacheDir = "", now = Date.now, maxRequests = 200, timeoutMs = 20000, providers, healthFile = "", beforeRequest } = {}) {
   const keys = { anysearch: "ANYSEARCH_API_KEY", brave: "BRAVE_SEARCH_API_KEY", tavily: "TAVILY_API_KEY", exa: "EXA_API_KEY" };
   const order = providers || ["anysearch", "brave", "tavily", "exa"];
   const disabled = new Map(), attempts = [], memory = new Map(), inflight = new Map();
   let requests = 0;
   const configured = (provider) => Boolean(env[keys[provider]]) && !(provider === "tavily" && env.TAVILY_DISABLED === "true");
+  const fingerprint = provider => crypto.createHash('sha256').update(env[keys[provider]] || '').digest('hex');
+  const health = () => { if (!healthFile) return {}; try {return JSON.parse(fs.readFileSync(healthFile,'utf8'));} catch(error) {if(error.code==='ENOENT')return {};throw error;} };
+  const unavailable = provider => {
+    if (!healthFile) return disabled.has(provider);
+    const row=health()[provider];
+    return row?.fingerprint===fingerprint(provider) && row.until>now();
+  };
+  const disable = (provider, response) => {
+    disabled.set(provider, `http_${response.status}`);
+    if (!healthFile) return;
+    const state=health(), retry=response.headers?.get('retry-after') || '';
+    const delay=response.status===429 ? Math.max(60000, /^\d+$/u.test(retry)?Number(retry)*1000:Date.parse(retry)-now() || 60000) : 24*3600000;
+    state[provider]={reason:`http_${response.status}`,until:now()+delay,fingerprint:fingerprint(provider)};
+    fs.mkdirSync(path.dirname(healthFile),{recursive:true});
+    const temp=`${healthFile}.${process.pid}.${crypto.randomUUID()}.tmp`;
+    fs.writeFileSync(temp,JSON.stringify(state));fs.renameSync(temp,healthFile);
+  };
   async function search(query, limit = 5, options = {}) {
     query = String(query).trim();
     if (!query) throw new Error("empty_search_query");
@@ -107,15 +124,16 @@ export function createSearchGateway({ env = process.env, fetcher = fetch, fallba
       }
       const collected = new Map(); let successes = 0, paidSuccesses = 0;
       for (const provider of order) {
-        if (!configured(provider) || disabled.has(provider)) continue;
+        if (!configured(provider) || unavailable(provider)) continue;
         if (requests >= maxRequests) { attempts.push({ provider, query, status: "budget_exhausted" }); break; }
+        beforeRequest?.({provider,query});
         requests += 1;
         try {
           const request = providerRequest(provider, query, limit, env, options);
           const response = await fetcher(request.endpoint, { ...request.init, signal: AbortSignal.timeout(timeoutMs) });
           if (!response.ok) {
             const status = response.status;
-            if ([401, 402, 403, 429].includes(status)) disabled.set(provider, `http_${status}`);
+            if ([401, 402, 403, 429].includes(status)) disable(provider,response);
             attempts.push({ provider, query, status: [401,403].includes(status) ? "auth_failed" : status === 402 ? "quota_exhausted" : status === 429 ? "rate_limited" : "failed", http_status: status, retry_after: response.headers?.get("retry-after") || "" });
             continue;
           }

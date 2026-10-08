@@ -19,8 +19,8 @@ test('zero remaining budget and absent provider perform no request',async t=>{
  assert.equal((await createFollowupSearch({directory:fixture(t),collection:{date:'2026-10-06',search_health:{requests:160}},env:{ANYSEARCH_API_KEY:'test'},fetcher})('Acme AI funding')).reason,'search_budget_exhausted');
  assert.equal((await createFollowupSearch({directory:fixture(t),collection:{date:'2026-10-06'},env:{},fetcher})('Acme AI funding')).reason,'search_provider_unavailable');
 });
-test('expiry has a named owner and never creates an unlimited retry',()=>{
- const item={status:'pending',rounds:0,stop_after_date:'2026-10-07'};
+test('expiry after substantive review has a named owner and remains bounded',()=>{
+ const item={status:'pending',rounds:1,stop_after_date:'2026-10-07'};
  const stopped=deferredFollowup(item,'2026-10-07',{reason:'budget_unavailable'});
  assert.equal(stopped.status,'needs_attention');assert.equal(stopped.owner,'responsible_financing_reviewer');
  assert.equal(followupDue(stopped,'2026-10-08'),false);
