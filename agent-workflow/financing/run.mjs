@@ -10,6 +10,7 @@ import { acquireLock, digest, read, write, runStages } from './state.mjs';
 import { resolvePrivateEvidenceBackupRoot } from '../tools/private-evidence-backup-paths.mjs';
 import { indexFinancingEvidence } from './evidence-index.mjs';
 import { parseArgs } from './args.mjs';
+import {reviewStateDirectory} from './review-state.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const script = name => `agent-workflow/tools/${name}.mjs`;
@@ -80,19 +81,27 @@ async function main() {
   const date = args.get('date') || new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   queryPlan(date);
   const phase = args.get('phase') || 'all';
-  if (!['all','collect','verify','produce','recheck','plan'].includes(phase)) throw new Error('invalid_financing_phase');
+  if (!['all','collect','verify','produce','recheck','followup','plan'].includes(phase)) throw new Error('invalid_financing_phase');
   const directory = path.resolve(args.get('runtime-dir') || path.join(root, 'agent-workflow/reports/financing', date));
   if (phase === 'plan') { console.log(JSON.stringify({ version: config.version, date, queries: queryPlan(date), stages: productionPlan(date, directory) }, null, 2)); return; }
   const unlock = acquireLock(directory);
   try {
     process.chdir(root);
     const backupRoot = resolvePrivateEvidenceBackupRoot(root);
-    if (['all','collect','recheck'].includes(phase)) await collect({ root, directory, backupRoot, date, recheck:phase === 'recheck' });
-    if (phase === 'collect' || phase === 'recheck') return;
-    const collection = read(path.join(directory, 'collection.json'));
-    if (!collection?.accepted || collection.date !== date) throw new Error('accepted_financing_collection_required');
-    await verifyPending({ root, directory, backupRoot, date });
-    if (phase === 'verify') return;
+    let collection, verification;
+    // All local windows share the authoritative private queue, even when their
+    // report directories differ. Busy returns immediately; no chained locks.
+    const releaseReview=acquireLock(path.join(reviewStateDirectory(backupRoot),'review-owner'));
+    try {
+      if (['all','collect','recheck'].includes(phase)) await collect({ root, directory, backupRoot, date, recheck:phase === 'recheck' });
+      if (phase === 'collect' || phase === 'recheck') return;
+      collection = read(path.join(directory, 'collection.json'));
+      if (!collection?.accepted || collection.date !== date) throw new Error('accepted_financing_collection_required');
+      verification=await verifyPending({ root, directory, backupRoot, date, resume:phase==='followup' || args.get('resume-pending')==='true' });
+    } finally {releaseReview();}
+    if (phase === 'verify' || (phase==='followup' && !Object.values(verification.entries).some(row=>row.raw_ids?.length && row.fact_review_completed!==true && row.status==='awaiting_fact_review'))) {
+      console.log(JSON.stringify({date,status:'review_pass_completed',budget:verification.review_budget,queue:verification.review_queue,ready:path.join(backupRoot,'financing-monitor-state',date,'review-ready.json')}));return;
+    }
     const intake = read(path.join(root, `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`));
     indexFinancingEvidence({root, backupRoot, date, collection, requiredEvidenceRefs:(intake?.source_artifacts || []).flatMap(source=>source.snapshot_refs || [])});
     // A clean zero day is not an extraction failure or a reason to invent cards.
@@ -100,7 +109,8 @@ async function main() {
     if (supplemental && (supplemental.date !== date || supplemental.version !== 'FINANCING-SUPPLEMENT-1' || supplemental.accepted !== true)) throw new Error('accepted_financing_supplement_required');
     const extractionScope = financingExtractionScope(intake, collection, supplemental);
     if (!intake?.raw_documents?.length) {
-      const verification = finishVerification({ root, directory, date, backupRoot });
+      const release=acquireLock(path.join(reviewStateDirectory(backupRoot),'review-owner'));
+      let verification;try {verification=finishVerification({ root, directory, date, backupRoot });} finally {release();}
       write(path.join(directory, 'publication.json'), { version: config.version, date, status: verification.counts.pending ? 'pending_verification' : 'no_new_financing', counts: collection.counts, verification }); return;
     }
     const scopeFile = path.join(directory, 'extraction-scope.json');
@@ -129,8 +139,9 @@ async function main() {
         }
       } finally { fs.closeSync(fd); }
     } });
-    const verification = finishVerification({ root, directory, date, backupRoot });
-    write(path.join(directory, 'publication.json'), { verification, version: config.version, date, status: 'ready_for_review', counts: collection.counts, next: 'merge_pages_portal_and_live_parity', generated_at: new Date().toISOString() });
+    const release=acquireLock(path.join(reviewStateDirectory(backupRoot),'review-owner'));
+    let finished;try {finished=finishVerification({ root, directory, date, backupRoot });} finally {release();}
+    write(path.join(directory, 'publication.json'), { verification:finished, version: config.version, date, status: 'ready_for_review', counts: collection.counts, next: 'merge_pages_portal_and_live_parity', generated_at: new Date().toISOString() });
     console.log(JSON.stringify({ date, status: 'ready_for_review', report: path.join(directory, 'publication.json') }));
   } finally { unlock(); }
 }

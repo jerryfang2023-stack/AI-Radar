@@ -6,10 +6,12 @@ import {captureParsedOriginal} from './capture.mjs';
 import {createSearchGateway, canonicalSearchUrl} from '../tools/lib/search-gateway.mjs';
 
 export const nextDay = date => new Date(Date.parse(`${date}T00:00:00Z`) + 86400000).toISOString().slice(0,10);
-export const followupDue = (item, date) => item.status === 'pending' && (!item.next_due_date || item.next_due_date <= date) && item.rounds < 2 && (!item.stop_after_date || date <= item.stop_after_date);
+export const followupDue = (item, date) => item.status === 'pending' && (!item.next_due_date || item.next_due_date <= date) && (item.rounds || 0) < 2 && (!(item.rounds || 0) || !item.stop_after_date || date <= item.stop_after_date);
 export function deferredFollowup(item, date, {attempted = false, reason = ''} = {}) {
   const rounds = (item.rounds || 0) + Number(attempted);
-  const expired = date >= item.stop_after_date;
+  // Waiting for capacity or a provider does not use a substantive review round
+  // and cannot expire an item that has never received its first fact review.
+  const expired = rounds > 0 && date >= item.stop_after_date;
   return {...item, rounds, status: rounds >= 2 || expired ? 'needs_attention' : 'pending',
     next_due_date: rounds >= 2 || expired ? null : nextDay(date), reason,
     owner: 'responsible_financing_reviewer', next_action: rounds >= 2 || expired ? 'supply_new_original_and_review_without_clearing_attempt_receipts' : 'next_existing_daily_verify'};

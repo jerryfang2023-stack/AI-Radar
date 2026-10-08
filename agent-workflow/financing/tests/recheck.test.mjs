@@ -12,8 +12,8 @@ test('each pending lead receives independent review; completed work never replay
   const queries=[],attempts=[];
   const options={state,policy,date:'2026-10-07',save:()=>{},search:async(query,limit,{leadUrl})=>{queries.push(leadUrl);return Array.from({length:8},(_,i)=>({url:`${leadUrl}/${i}`,provider_body:'private provider full text'}));},capture:async lead=>{attempts.push(lead.url);return{status:'pending',reason:'no_original'};},accept:()=>{throw Error('no accepted fixture');}};
   await recheckPending(options);
-  assert.equal(queries.filter(url=>url==='https://example.com/a').length,4);
-  assert.equal(queries.filter(url=>url==='https://example.com/b').length,4);
+  assert.equal(queries.filter(url=>url==='https://example.com/a').length,1);
+  assert.equal(queries.filter(url=>url==='https://example.com/b').length,1);
   assert.equal(attempts.length,12);assert.ok(!attempts.includes('https://example.com/accepted'));
   assert.ok(!JSON.stringify(state).includes('private provider full text'));
   const counts=[queries.length,attempts.length];await recheckPending(options);assert.deepEqual([queries.length,attempts.length],counts);

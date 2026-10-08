@@ -18,7 +18,10 @@
     "research_search_requests_per_event": 48,
     "research_capture_attempts_per_event": 24,
     "model_calls_per_lead": 2,
-    "model_output_tokens_per_call": 16000
+    "model_output_tokens_per_call": 16000,
+    "capacity_margin": 0.2,
+    "search_requests_per_run": 960,
+    "followup_interval_hours": 2
   },
   "markets": [
     "domestic",
