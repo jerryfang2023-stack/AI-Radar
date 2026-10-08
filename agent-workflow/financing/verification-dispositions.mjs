@@ -41,6 +41,8 @@ export function dispositionResolver({root, backupRoot, directory, date}) {
     if(review.status==='accepted_original') return hold('original_acceptance_requires_fact_and_funding_gates');
     const alreadyCovered=review.status==='already_covered';
     if(!exclusions.has(review.status) && !alreadyCovered) return hold('disposition_requires_event_or_duplicate_binding');
+    if(alreadyCovered && (!review.event_binding?.event_id || !review.event_binding?.company || !review.event_binding?.announced_at
+      || !review.event_binding?.round_code || !review.event_binding?.reason)) return hold('disposition_requires_event_or_duplicate_binding');
     // A failed current fetch does not prove that a historical page is unchanged.
     // In particular, never substitute the queue's old hash for current evidence.
     const currentHash=receipt.content_hash;
@@ -50,12 +52,12 @@ export function dispositionResolver({root, backupRoot, directory, date}) {
     if(!review.strict && (review.review_basis!=='original_text_and_review' || review.original_capture?.status!=='captured')) return hold('source_bound_responsible_review_required');
     if(review.strict) {
       if(!Array.isArray(review.evidence_sources) || !review.evidence_sources.length) return hold('disposition_source_binding_missing');
+      if(currentHash && review.content_hash && review.content_hash!==currentHash) return hold('reviewed_original_changed');
       const currentSourceBound=Boolean(currentHash && review.evidence_sources.some(source=>normalizeSourceUrl(source.source_url)===normalizeSourceUrl(url) && source.content_hash===currentHash));
       const alternateSourceBound=review.alternate_source_basis==='responsible_alternate_source_review'
         && Boolean(review.reason?.trim())
         && review.evidence_sources.some(source=>normalizeSourceUrl(source.source_url)!==normalizeSourceUrl(url));
       if(!currentSourceBound && !alternateSourceBound) return hold(currentHash ? 'disposition_source_binding_missing' : 'current_original_hash_missing');
-      if(currentSourceBound && review.content_hash && review.content_hash!==currentHash) return hold('reviewed_original_changed');
     }
     const sources=review.strict ? review.evidence_sources : [{source_url:url,content_hash:currentHash}];
     try {
