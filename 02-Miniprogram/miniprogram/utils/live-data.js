@@ -476,20 +476,23 @@ function refreshReportData() {
   if (reportRequest) return reportRequest;
   reportRequest = requestJson(`${LIVE_ROOT}/report-manifest.json?refresh=${Date.now()}`).then((manifest) => {
     assertReportManifest(manifest);
-    reportManifest = manifest;
+    const acceptIndex = (index) => {
+      assertReportIndex(index, manifest);
+      const details = reportManifest?.version === manifest.version ? reportState.details : {};
+      reportManifest = manifest;
+      reportState = { index, details, source: "live" };
+      return reportState;
+    };
     const cachedManifest = readStorage(CACHE_KEYS.reportManifest);
     const cachedIndex = readStorage(CACHE_KEYS.reportIndex);
     if (cachedManifest?.version === manifest.version && cachedIndex) {
-      assertReportIndex(cachedIndex, manifest);
-      reportState = { index: cachedIndex, details: reportState.details, source: "live" };
-      return reportState;
+      try { return acceptIndex(cachedIndex); } catch { /* re-fetch a corrupt cache */ }
     }
     return requestJson(`${PUBLIC_ORIGIN}${manifest.indexPath}?v=${encodeURIComponent(manifest.version)}`).then((index) => {
       assertReportIndex(index, manifest);
       writeStorage(CACHE_KEYS.reportManifest, manifest);
       writeStorage(CACHE_KEYS.reportIndex, index);
-      reportState = { index, details: reportState.details, source: "live" };
-      return reportState;
+      return acceptIndex(index);
     });
   }).then((value) => {
     reportState = { ...value, refreshFailed: false };
@@ -505,6 +508,7 @@ function refreshReportData() {
 }
 
 function loadCommunityDetail(id) {
+  const version = reportManifest?.version;
   const fallback = reportState.details[id] || null;
   if (!reportManifest?.communityDetailBasePath) return Promise.resolve(fallback);
   const cached = readDetailCache(CACHE_KEYS.communityDetails, reportManifest.version, id);
@@ -513,11 +517,12 @@ function loadCommunityDetail(id) {
     return Promise.resolve(cached);
   }
   return requestJson(`${PUBLIC_ORIGIN}${reportManifest.communityDetailBasePath}/${encodeURIComponent(id)}.json?v=${encodeURIComponent(reportManifest.version)}`).then((detail) => {
+    if (version !== reportManifest?.version) return null;
     if (detail?.id !== id || detail.contentType !== "community-essay" || detail.type !== "community" || !detail.detailComplete) throw new Error("社群精华详情无效");
     reportState.details[id] = detail;
     writeDetailCache(CACHE_KEYS.communityDetails, reportManifest.version, id, detail, 8);
     return detail;
-  }).catch(() => fallback);
+  }).catch(() => version === reportManifest?.version ? fallback : null);
 }
 
 function getCommunityDetail(id) {
