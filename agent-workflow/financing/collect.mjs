@@ -11,7 +11,7 @@ import { indexFinancingEvidence } from './evidence-index.mjs';
 import { collectSubscriptions } from './subscriptions.mjs';
 import { syncAIHotSelected } from './aihot-selected.mjs';
 import { createOriginalReader } from './original-reader.mjs';
-import { captureAllowance, backlogReserve } from './capture-budget.mjs';
+import { captureAllowance, backlogReserve, collectionAttempts } from './capture-budget.mjs';
 import { recheckPending } from './recheck.mjs';
 import {createReviewBudget} from './review-budget.mjs';
 import {createLeadFollowupSearch} from './lead-followup-search.mjs';
@@ -41,7 +41,6 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
   const state = previous || { version: config.version, date, captures: {} };
   const sourceState = path.join(backupRoot,'financing-monitor-state');
   const sharedState=reviewStateDirectory(backupRoot);
-  const reader=createOriginalReader({directory:path.join(sourceState,'original-reader'),sharedDirectory:path.join(sharedState,'original-reader'),date,maxRequests:config.original_reader_requests});
   if (recheck && !previous?.accepted) throw new Error('accepted_collection_required_for_recheck');
   const discovered = recheck ? {complete:true,failed:[],supplementalFailures:state.supplemental_failures || [],leads:[]} : await discover({ date, search: gateway.search, feed, previous: state.receipts,
     supplements: supplements || [
@@ -51,13 +50,20 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
     onPage: page => write(path.join(directory, 'aihot', `${page.page}.json`), page),
     save: receipts => { state.receipts = receipts; write(file, state); },
   });
+  const captureCapacity = Math.max(
+    config.max_capture_attempts,
+    Math.ceil(discovered.leads.length * (1 + config.discovery_capacity_margin)),
+    collectionAttempts(state),
+  );
+  const reader=createOriginalReader({directory:path.join(sourceState,'original-reader'),sharedDirectory:path.join(sharedState,'original-reader'),date,maxRequests:Math.max(config.original_reader_requests,captureCapacity)});
   state.discovery_complete = discovered.complete; state.failed_queries = discovered.failed;
   state.supplemental_failures = discovered.supplementalFailures;
+  state.capture_capacity = { discovered_leads: discovered.leads.length, max_attempts: captureCapacity, margin: config.discovery_capacity_margin };
   state.search_health = gateway.status?.() || {}; state.search_attempts = gateway.attempts || [];
   const remaining = discovered.leads.filter(lead => !state.captures[lead.url]);
-  const considered = remaining.slice(0, config.max_capture_attempts);
+  const considered = remaining.slice(0, captureCapacity);
   const reserve = backlogReserve({backupRoot,date});
-  const available = captureAllowance({collection:state,backupRoot,date});
+  const available = captureAllowance({collection:state,maxAttempts:captureCapacity,backupRoot,date});
   const batch = considered.slice(0, Math.max(0, available - reserve));
   for (const lead of considered.slice(batch.length)) state.captures[lead.url] = {
     status:'pending', reason:reserve ? 'capture_budget_reserved_for_verification' : 'capture_budget_exhausted',
@@ -115,6 +121,7 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
   write(sourceIntakePath(root, date), mergeSourceIntakes(readSourceIntake(root, date)?.payload, intake));
   indexFinancingEvidence({root, backupRoot, date, collection:state});
   state.raw_ids = intake.raw_documents.map(row => row.raw_id);
+  state.capture_capacity.attempts_used = collectionAttempts(state);
   state.unattempted = Math.max(0, remaining.length - considered.length);
   state.counts = { leads: recheck ? Object.keys(state.captures).length : discovered.leads.length, accepted_originals: entries.length, pending: Object.values(state.captures).filter(row => row.status === 'pending').length, excluded: Object.values(state.captures).filter(row => row.status === 'excluded').length };
   state.accepted = discovered.complete && state.unattempted === 0;
