@@ -321,3 +321,69 @@ def test_admin_cookie_session_protects_console_and_member_routes(client):
     logged_out = cookie_client.post("/api/v1/admin/auth/logout", headers={"X-CSRF-Token": session["csrfToken"]})
     assert logged_out.status_code == 204
     assert cookie_client.get("/api/v1/admin/auth/session").status_code == 401
+
+
+def test_pc_registration_persists_and_admin_manages_shared_entitlement(client):
+    from test_app import pc_login
+    from app import create_app
+    account = pc_login(client, value="pc-admin-reader@example.com")
+    path = "/api/v1/admin/analytics/membership/users"
+    assert client.get(path + "?platform=pc").status_code == 401
+    _, headers = admin_login(client)
+    listed = client.get(path + "?platform=pc&query=pc***@example.com", headers=headers).get_json()
+    assert listed["page"]["total"] == 1
+    user = listed["users"][0]
+    uid = user["id"]
+    assert user["platforms"] == ["pc"]
+    assert user["emailMasked"] == ["pc***@example.com"]
+    assert user["activity"]["lastLoginAt"]
+    assert client.get(path, headers=headers).get_json()["page"]["total"] == 0
+    for private in ("pc-admin-reader@example.com", "identity_hash", "token_hash", "csrf_hash", "openid"):
+        assert private not in json.dumps(listed)
+    assert client.get(path + "?platform=invalid", headers=headers).status_code == 400
+    adjustment = {"operationId": "pc-membership-persist-001", "membershipDays": 30, "reason": "内测阅读权限"}
+    target = f"{path}/{uid}/adjustments?platform=pc"
+    assert client.post(target, headers={"Authorization": headers["Authorization"]}, json=adjustment).status_code == 403
+    changed = client.post(target, headers=headers, json=adjustment)
+    assert changed.status_code == 200
+    end = changed.get_json()["user"]["membership"]["memberEndsAt"]
+    assert client.post(target, headers=headers, json=adjustment).get_json()["replayed"] is True
+    assert client.get("/api/v1/auth/session").get_json()["membership"]["active"]
+    # Restart against the same SQLite file: registration, identities, session and audit survive.
+    restarted = create_app(dict(client.application.config)).test_client()
+    _, restarted_headers = admin_login(restarted)
+    persisted = restarted.get(path + "?platform=pc", headers=restarted_headers).get_json()["users"][0]
+    assert persisted["id"] == uid and persisted["membership"]["memberEndsAt"] == end
+    assert len(persisted["recentAdjustments"]) == 1
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        assert conn.execute("SELECT COUNT(*) FROM membership_ledger WHERE source_id=?", ("ops-admin:pc-membership-persist-001",)).fetchone()[0] == 1
+        # A verified Mini identity on the same account must not create a second account or entitlement.
+        conn.execute("INSERT INTO user_identities(user_id,identity_type,identity_hash,identity_masked,verified_at,created_at) VALUES(?,?,?,?,?,?)", (uid,"wechat_openid","pc-test-mini-identity","",user["createdAt"],user["createdAt"]))
+    mini = client.get(path, headers=headers).get_json()["users"][0]
+    pc = client.get(path + "?platform=pc", headers=headers).get_json()["users"][0]
+    assert mini["id"] == pc["id"] == uid
+    assert mini["platforms"] == pc["platforms"] == ["mini", "pc"]
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        conn.execute("UPDATE users SET merged_into_user_id=999 WHERE id=?", (uid,))
+    assert client.get(path + "?platform=pc", headers=headers).get_json()["page"]["total"] == 0
+    assert client.post(target, headers=headers, json=adjustment).status_code == 404
+
+
+def test_pc_directory_includes_qr_accounts_after_logout_without_duplicate_user(client):
+    from test_app import auth
+    mini = client.application.test_client()
+    token = login(mini, "pc-directory-qr")
+    _, headers = admin_login(client)
+    path = "/api/v1/admin/analytics/membership/users"
+    assert client.get(path + "?platform=pc", headers=headers).get_json()["page"]["total"] == 0
+    ticket = client.post("/api/v1/auth/qr-sessions", json={}).get_json()["ticket"]
+    assert mini.post(f"/api/v1/auth/qr-sessions/{ticket}/confirm", headers=auth(token)).status_code == 200
+    session = client.get(f"/api/v1/auth/qr-sessions/{ticket}").get_json()
+    assert session["status"] == "AUTHENTICATED"
+    assert client.post("/api/v1/auth/logout", headers={"X-CSRF-Token": session["csrfToken"]}).status_code == 204
+    pc = client.get(path + "?platform=pc", headers=headers).get_json()["users"]
+    mini_users = client.get(path, headers=headers).get_json()["users"]
+    assert len(pc) == len(mini_users) == 1
+    assert pc[0]["id"] == mini_users[0]["id"]
+    assert pc[0]["platforms"] == ["mini", "pc"]
+    assert pc[0]["emailMasked"] == []

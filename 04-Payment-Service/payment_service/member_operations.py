@@ -125,8 +125,22 @@ def status_for(user, now):
     return "expired", max((value for value in (member_end, trial_end) if value), default=None)
 
 
+def account_platforms(conn, user):
+    """Derive channels from persisted, verified identities and PC sessions."""
+    identities = conn.execute("SELECT identity_type, identity_masked FROM user_identities WHERE user_id=? AND verified_at IS NOT NULL", (user["id"],)).fetchall()
+    types = {row["identity_type"] for row in identities}
+    pc_session = conn.execute("SELECT MAX(last_seen_at) FROM auth_sessions WHERE user_id=?", (user["id"],)).fetchone()[0]
+    platforms = []
+    if "wechat_openid" in types:
+        platforms.append("mini")
+    if "email" in types or pc_session or str(user["openid"] or "").startswith("pc:"):
+        platforms.append("pc")
+    return platforms, [row["identity_masked"] for row in identities if row["identity_type"] == "email"], pc_session
+
+
 def admin_user(conn, user, now):
     membership_status, active_until = status_for(user, now)
+    platforms, emails, last_login = account_platforms(conn, user)
     payment = conn.execute(
         """SELECT COUNT(*) AS paid_orders, COALESCE(SUM(total_cents),0) AS paid_cents, MAX(paid_at) AS last_paid_at
            FROM payment_orders WHERE user_id=? AND status='PAID' AND refund_status!='REFUNDED'""",
@@ -141,6 +155,7 @@ def admin_user(conn, user, now):
         "id": int(user["id"]),
         "displayName": user["nickname"] or user["community_name"] or f"用户 {user['id']}",
         "phoneMasked": user["phone_masked"] or "未绑定",
+        "emailMasked": emails, "platforms": platforms,
         "community": {"name": user["community_name"] or "", "status": user["community_status"] or "none"},
         "membership": {
             "status": membership_status,
@@ -149,7 +164,7 @@ def admin_user(conn, user, now):
         },
         "points": {"balance": int(user["point_balance"] or 0), "lifetime": int(user["point_lifetime"] or 0), "community": int(user["community_points"] or 0)},
         "payment": {"paidOrders": int(payment["paid_orders"] or 0), "paidCents": int(payment["paid_cents"] or 0), "lastPaidAt": payment["last_paid_at"] or ""},
-        "activity": {"lastBehaviorAt": last_behavior or ""},
+        "activity": {"lastBehaviorAt": last_behavior or "", "lastLoginAt": last_login or ""},
         "createdAt": user["created_at"], "updatedAt": user["updated_at"],
         "recentAdjustments": [{
             "action": row["action"], "reason": row["reason"], "before": json.loads(row["before_json"]),
@@ -322,16 +337,16 @@ def register(app, db, clock):
         response.delete_cookie(ADMIN_CSRF_COOKIE, path=ADMIN_COOKIE_PATH, secure=cookie_secure, samesite="Strict")
         return response
 
-    def mini_program_user(conn, user_id):
-        return conn.execute(
-            """SELECT * FROM users WHERE id=? AND merged_into_user_id IS NULL
-               AND EXISTS (SELECT 1 FROM user_identities i WHERE i.user_id=users.id AND i.identity_type='wechat_openid')""",
-            (user_id,),
-        ).fetchone()
+    def managed_user(conn, user_id, platform):
+        user = conn.execute("SELECT * FROM users WHERE id=? AND merged_into_user_id IS NULL", (user_id,)).fetchone()
+        return user if user and platform in account_platforms(conn, user)[0] else None
 
     @app.get("/api/v1/admin/analytics/membership/users")
     @admin_required()
     def membership_admin_users():
+        platform = request.args.get("platform", "mini")
+        if platform not in {"mini", "pc"}:
+            return jsonify(error={"code": "INVALID_PLATFORM", "message": "账号平台无效"}), 400
         query = str(request.args.get("query") or "").strip().casefold()[:80]
         wanted_status = str(request.args.get("status") or "all")
         if wanted_status not in {"all", "member", "trial", "expired"}:
@@ -346,13 +361,15 @@ def register(app, db, clock):
             conn.execute("PRAGMA query_only=ON")
             rows = conn.execute(
                 """SELECT * FROM users WHERE merged_into_user_id IS NULL
-                   AND EXISTS (SELECT 1 FROM user_identities i WHERE i.user_id=users.id AND i.identity_type='wechat_openid')
                    ORDER BY updated_at DESC, id DESC"""
             ).fetchall()
             filtered = []
             for row in rows:
+                platforms, emails, _ = account_platforms(conn, row)
+                if platform not in platforms:
+                    continue
                 state, _ = status_for(row, now)
-                searchable = " ".join((str(row["id"]), row["nickname"] or "", row["phone_masked"] or "", row["community_name"] or "")).casefold()
+                searchable = " ".join((str(row["id"]), row["nickname"] or "", row["phone_masked"] or "", row["community_name"] or "", " ".join(emails))).casefold()
                 if (not query or query in searchable) and (wanted_status == "all" or state == wanted_status):
                     filtered.append(row)
             total = len(filtered)
@@ -360,7 +377,7 @@ def register(app, db, clock):
             users = [admin_user(conn, row, now) for row in filtered[start:start + page_size]]
         return jsonify(
             schemaVersion=ADMIN_VERSION, dataSource="production" if app.config.get("APP_ENV") == "production" else "test",
-            generatedAt=now.isoformat(), filters={"query": query, "status": wanted_status},
+            generatedAt=now.isoformat(), filters={"query": query, "status": wanted_status, "platform": platform},
             page={"number": page, "size": page_size, "total": total, "totalPages": max(1, math.ceil(total / page_size))}, users=users,
         )
 
@@ -493,6 +510,9 @@ def register(app, db, clock):
     @app.post("/api/v1/admin/analytics/membership/users/<int:user_id>/adjustments")
     @admin_required(write=True)
     def membership_admin_adjust(user_id):
+        platform = request.args.get("platform", "mini")
+        if platform not in {"mini", "pc"}:
+            return jsonify(error={"code": "INVALID_PLATFORM", "message": "账号平台无效"}), 400
         payload = request.get_json(silent=True) or {}
         reason = str(payload.get("reason") or "").strip()
         operation_id = str(payload.get("operationId") or "").strip()
@@ -508,10 +528,10 @@ def register(app, db, clock):
         actor_hash = str(g.operations_admin_session["email_hash"])[:16]
         with closing(db()) as conn:
             conn.execute("BEGIN IMMEDIATE")
-            user = mini_program_user(conn, user_id)
+            user = managed_user(conn, user_id, platform)
             if not user:
                 conn.rollback()
-                return jsonify(error={"code": "USER_NOT_FOUND", "message": "小程序用户不存在或已合并"}), 404
+                return jsonify(error={"code": "USER_NOT_FOUND", "message": "该平台用户不存在或已合并"}), 404
             existing_operation = conn.execute("SELECT user_id FROM operations_admin_audits WHERE operation_id=?", (operation_id,)).fetchone()
             if existing_operation:
                 conn.rollback()
@@ -562,7 +582,7 @@ def register(app, db, clock):
                 (user_id, operation_id, actor_hash, action, reason, json.dumps(before, separators=(",", ":")), json.dumps(after, separators=(",", ":")), now_text),
             )
             conn.commit()
-            updated = mini_program_user(conn, user_id)
+            updated = managed_user(conn, user_id, platform)
             result = admin_user(conn, updated, now)
         return jsonify(schemaVersion=ADMIN_VERSION, user=result)
 

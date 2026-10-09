@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V3.10.0-google-search-sync">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.11.0-pc-account-management">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -369,7 +369,7 @@
 <body class="page-operations-console">
   <main class="shell" data-ops-console tabindex="-1" hidden>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.10.0</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.11.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
@@ -381,6 +381,7 @@
             <button type="button" data-tab="membership-community"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">社群成员管理</span></button>
             <button type="button" data-tab="membership-approval"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">社群加入审核</span></button>
             <button type="button" data-tab="membership-users"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">小程序会员管理</span></button>
+            <button type="button" data-tab="membership-pc-users"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">PC 账号管理</span></button>
             <button type="button" data-tab="membership-schedule"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">活动排期管理</span></button>
             <button type="button" data-tab="membership-token"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">Token 权益管理</span></button>
           </div>
@@ -579,16 +580,16 @@
 
         <section class="panel" data-panel="membership-users">
           <div class="page-surface">
-            <header class="page-head"><div><span class="kicker">MINI PROGRAM MEMBER OPERATIONS</span><h1>小程序会员管理</h1></div></header>
+            <header class="page-head"><div><span class="kicker" data-mo-admin-kicker>MEMBER OPERATIONS</span><h1 data-mo-admin-title>小程序会员管理</h1></div></header>
             <section class="mo-admin mo-subpage" data-mo-admin>
               <div class="mo-admin-console" data-mo-admin-console>
                 <form class="mo-admin-toolbar" data-mo-admin-search-form>
-                  <label>查找用户<input type="search" data-mo-admin-query placeholder="昵称、脱敏手机号或用户 ID"></label>
+                  <label>查找用户<input type="search" data-mo-admin-query placeholder="昵称、脱敏邮箱/手机号、用户 ID"></label>
                   <label>权益状态<select data-mo-admin-status><option value="all">全部状态</option><option value="member">正式会员</option><option value="trial">试用中</option><option value="expired">已到期</option></select></label>
                   <button type="submit">查询</button>
                 </form>
                 <p class="mo-admin-state" data-mo-admin-state role="status" aria-live="polite"></p>
-                <div class="mo-user-table-wrap"><table class="mo-user-table"><thead><tr><th>用户</th><th>权益</th><th>可用积分</th><th>付费</th><th>最近活跃</th><th></th></tr></thead><tbody data-mo-admin-users></tbody></table></div>
+                <div class="mo-user-table-wrap"><table class="mo-user-table"><thead><tr><th>用户</th><th>权益</th><th>可用积分</th><th>付费</th><th>注册 / 最近活跃</th><th></th></tr></thead><tbody data-mo-admin-users></tbody></table></div>
                 <div class="mo-admin-paging"><button type="button" data-mo-admin-prev>上一页</button><span data-mo-admin-page></span><button type="button" data-mo-admin-next>下一页</button></div>
                 <div data-mo-admin-detail></div>
               </div>
@@ -644,7 +645,7 @@
           <div class="grid grid-2">
             <article class="card"><span class="label">LOCAL PREFERENCES</span><h2>本机显示偏好</h2>
               <form class="preferences-form" data-preferences-form>
-                <label>默认打开页面<select data-setting-landing><option value="overview">总览</option><option value="analytics">运营统计</option><option value="growth">搜索与 AI 增长</option><option value="membership">会员与权益总览</option><option value="membership-community">社群成员管理</option><option value="membership-approval">社群加入审核</option><option value="membership-users">小程序会员管理</option><option value="membership-schedule">活动排期管理</option><option value="quality">数据质量</option><option value="skills">Skill Store</option><option value="governance">系统管理</option></select></label>
+                <label>默认打开页面<select data-setting-landing><option value="overview">总览</option><option value="analytics">运营统计</option><option value="growth">搜索与 AI 增长</option><option value="membership">会员与权益总览</option><option value="membership-community">社群成员管理</option><option value="membership-approval">社群加入审核</option><option value="membership-users">小程序会员管理</option><option value="membership-pc-users">PC 账号管理</option><option value="membership-schedule">活动排期管理</option><option value="quality">数据质量</option><option value="skills">Skill Store</option><option value="governance">系统管理</option></select></label>
                 <label>快照过期提醒<select data-setting-stale><option value="24">超过 24 小时</option><option value="48">超过 48 小时</option><option value="72">超过 72 小时</option></select></label>
                 <label class="checkbox-label"><input type="checkbox" data-setting-compact>使用紧凑卡片间距</label>
                 <div class="form-actions"><button type="submit">保存本机设置</button><button type="button" data-reset-preferences>恢复默认</button></div>

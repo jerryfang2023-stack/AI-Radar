@@ -254,3 +254,27 @@ test("phase two schedule is a protected subpanel with phase one archived", async
   assert.match(h.element("[data-mo-schedule-list]").innerHTML, /二期尚未创建排期/);
   assert.match(page, /data-tab="membership-schedule"[^]*活动排期管理/u);
 });
+
+
+test("PC account entry isolates late Mini responses and writes through the PC scope", async () => {
+  const h = harness();
+  h.root.listeners["membership:open"]({ detail: { view: "membership-users" } });
+  signIn(h);
+  h.root.listeners["membership:open"]({ detail: { view: "membership-pc-users" } });
+  assert.match(h.requests[1].url, /platform=pc/);
+  assert.equal(h.element("[data-mo-admin-title]").textContent, "PC 账号管理");
+  const user = { id: 4, displayName: "PC reader", phoneMasked: "未绑定", emailMasked: ["re***@example.com"], platforms: ["pc"], membership: {status:"trial"}, points:{balance:0,lifetime:0,community:0},payment:{paidOrders:0,paidCents:0}};
+  const result = {schemaVersion:"MEMBER-ADMIN-V1.0",dataSource:"production",page:{number:1,totalPages:1,total:1},users:[user]};
+  await respond(h.requests[1], result);
+  await respond(h.requests[0], {...result,users:[{...user,displayName:"stale Mini user"}]});
+  assert.match(h.element("[data-mo-admin-users]").innerHTML, /re\*\*\*@example.com/);
+  assert.doesNotMatch(h.element("[data-mo-admin-users]").innerHTML, /stale Mini/);
+  h.element("[data-mo-admin-users]").listeners.click({target:{closest:()=>({dataset:{moUserId:"4"}})}});
+  const button={disabled:false}, form={dataset:{moAdjust:"membership"},values:{reason:"内测用户",membershipDays:30},querySelector:()=>button};
+  h.element("[data-mo-admin-detail]").listeners.submit({preventDefault(){},target:{closest:()=>form}});
+  assert.match(h.requests[2].url,/users\/4\/adjustments\?platform=pc$/);
+  h.root.listeners["membership:open"]({detail:{view:"membership-users"}});
+  await respond(h.requests[2],{schemaVersion:"MEMBER-ADMIN-V1.0",user});
+  assert.equal(h.element("[data-mo-admin-detail]").innerHTML,"");
+  assert.match(h.requests[3].url,/platform=mini/);
+});

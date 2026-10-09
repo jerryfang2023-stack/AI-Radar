@@ -1,6 +1,6 @@
 # Unified Operations Console
 
-Release baseline: OPS-V3.10.0-google-search-sync / Skill Store v2.4.0
+Release baseline: OPS-V3.11.0-pc-account-management / Skill Store v2.4.0
 
 Google Search Console adds administrator-initiated read-only OAuth and daily 09:00 Asia/Shanghai synchronization for PC Search Analytics. See [setup, reporting and credential boundaries](google-search-console.md). The exact Google callback is an anonymous, one-time code staging page; completing the connection requires the initiating OPS session and CSRF. It does not expose dashboard data.
 
@@ -37,7 +37,7 @@ The whole console is published through an atomic VPS release and protected by an
 
 ## Membership operations (OPS V3.6.1)
 
-`https://www.zkdlj.vip/ops/#membership` is the membership overview. Community and application sources load independently on opening it, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. Five persistent second-level entries sit beneath Membership & Entitlements in the left navigation: `#membership-approval` for community applications, `#membership-community` for community-member lifecycle management, `#membership-users` for Mini Program member operations, `#membership-schedule` for activity scheduling, and `#membership-token` for Token entitlements. Each management view loads its own protected data only when opened.
+`https://www.zkdlj.vip/ops/#membership` is the membership overview. Community and application sources load independently on opening it, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. Six persistent second-level entries sit beneath Membership & Entitlements in the left navigation: `#membership-approval` for community applications, `#membership-community` for community-member lifecycle management, `#membership-users` for Mini Program member operations, `#membership-pc-users` for PC accounts, `#membership-schedule` for activity scheduling, and `#membership-token` for Token entitlements. Each management view loads its own protected data only when opened.
 
 The page is metric-first: card-level methodology notes and repeated boundary explanations stay out of the interface. Detailed definitions remain in this operational reference; the UI keeps only live values, source status, controls and the necessary authentication/privacy boundary.
 
@@ -51,7 +51,11 @@ The page is metric-first: card-level methodology notes and repeated boundary exp
 
 Validation: both service pytest suites; `npm run test:ops-unified`; existing analytics tests, OPS/Skill/version gates; Nginx configuration check; desktop/mobile browser checks. The OPS page and application aggregates are protected by the VPS session boundary.
 
-### Mini Program user management
+### Mini Program and PC account management
+
+PC entry: `https://www.zkdlj.vip/ops/#membership-pc-users`. List and adjustment calls pass `platform=pc` through the existing protected `/ops/member-api/users` proxy. Switching views clears the editor and invalidates old requests.
+
+Account persistence uses the existing production SQLite database: `users` stores profile/entitlement/balance, `user_identities` stores verified identity HMACs and masked values, `auth_sessions` stores hashed PC sessions, and membership/point ledgers plus `operations_admin_audits` store transactional changes. There is no second PC account database or data migration. Registration and adjustments survive application restart.
 
 The dedicated `#membership-users` subpanel provides protected Mini Program account search through `GET /api/v1/admin/analytics/membership/users` and audited changes through `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`, contract `MEMBER-ADMIN-V1.0`. After a successful entitlement or points adjustment, the user editor closes and the current filtered list remains visible; failed saves keep the editor and entered values available for correction. The operator verifies once at the console login page. The server session is held in an HttpOnly cookie; JavaScript receives only the scoped CSRF value. There is no terminal-token field or membership-specific login.
 
@@ -63,7 +67,7 @@ The dedicated `#membership-schedule` subpanel keeps the completed first season a
 
 Allowed identities are server-only `OPERATIONS_ADMIN_EMAILS` values. The database stores email HMAC/masking, verification-code HMAC, session-token HMAC and CSRF HMAC, never the raw email, code or session token. A challenge lasts ten minutes, permits five attempts and is limited to three sends per email per ten minutes. Reads require the session bearer; writes additionally require its CSRF value. Logout revokes the server session.
 
-The list includes only non-merged accounts with a verified WeChat OpenID identity, but never returns the OpenID or identity hash. It exposes display name, masked phone, community link status, entitlement dates, available/lifetime/community points, non-refunded paid-order count/value, and last recorded behavior. Search supports display name, masked phone, community name and numeric user ID; filters support member/trial/expired.
+Both lists exclude merged-away accounts. The default `platform=mini` includes verified WeChat identities; `platform=pc` includes verified email identities, persisted PC login sessions (including QR login), or legacy PC account markers. Linked identities appear in both views with the same user ID and shared entitlement; channel counts must not be added together. Neither view returns an OpenID or identity hash. It exposes display name, masked phone, community link status, entitlement dates, available/lifetime/community points, non-refunded paid-order count/value, registration time, masked email, account channels and last recorded behavior/session activity. Search supports display name, masked email, masked phone, community name and numeric user ID; filters support member/trial/expired.
 
 Supported writes are deliberately narrow: extend entitlement by 7/30/90/180/365 days or adjust available points by ±1—100000. A 2—120 character reason and a unique operation ID are mandatory, so a retried request cannot apply twice. Entitlement changes append `membership_ledger`; point changes append `point_ledger` without changing lifetime points; both append `operations_admin_audits` with administrator identity fingerprint, before/after values and timestamp. Negative available balances are rejected. Account deletion, identity edit/merge, order mutation, arbitrary expiry replacement and lifetime-point rewriting are not exposed.
 

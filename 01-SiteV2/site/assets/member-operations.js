@@ -39,6 +39,9 @@
   };
   let days = 30, generation = 0, loaded = false, activeView = "membership";
   let adminCsrfToken = "", adminPage = 1, adminPages = 1, adminUsers = [], selectedUserId = null, adminLoaded = false;
+  const adminPlatform = () => activeView === "membership-pc-users" ? "pc" : "mini";
+  const adminLabel = () => adminPlatform() === "pc" ? "PC" : "小程序";
+  const adminView = () => ["membership-users", "membership-pc-users"].includes(activeView);
   let approvalPage = 1, approvalPages = 1, approvalMembers = [], selectedApprovalId = null, approvalsLoaded = false;
   let communityPage = 1, communityPages = 1, communityMembers = [], selectedCommunityId = null, communityLoaded = false;
   let scheduleSessions = [], scheduleLoaded = false, selectedScheduleId = null;
@@ -119,11 +122,13 @@
     if (!integers.every(Number.isSafeInteger)) return null;
     return {
       id: item.id, displayName: item.displayName.slice(0, 40), phoneMasked: item.phoneMasked.slice(0, 32),
+      emailMasked: Array.isArray(item.emailMasked) ? item.emailMasked.filter(x => typeof x === "string").map(x => x.slice(0, 100)) : [],
+      platforms: Array.isArray(item.platforms) ? item.platforms.filter(x => ["mini", "pc"].includes(x)) : [],
       community: { name: String(item.community?.name || "").slice(0, 40), status: String(item.community?.status || "none").slice(0, 20) },
       membership: { status: item.membership.status, trialEndsAt: String(item.membership?.trialEndsAt || ""), memberEndsAt: String(item.membership?.memberEndsAt || ""), activeUntil: String(item.membership?.activeUntil || "") },
       points: { balance: item.points.balance, lifetime: item.points.lifetime, community: item.points.community },
       payment: { paidOrders: item.payment.paidOrders, paidCents: item.payment.paidCents, lastPaidAt: String(item.payment?.lastPaidAt || "") },
-      activity: { lastBehaviorAt: String(item.activity?.lastBehaviorAt || "") }, createdAt: String(item.createdAt || ""), updatedAt: String(item.updatedAt || ""),
+      activity: { lastBehaviorAt: String(item.activity?.lastBehaviorAt || ""), lastLoginAt: String(item.activity?.lastLoginAt || "") }, createdAt: String(item.createdAt || ""), updatedAt: String(item.updatedAt || ""),
       recentAdjustments: Array.isArray(item.recentAdjustments) ? item.recentAdjustments.slice(0, 5).map((entry) => ({ action: entry?.action === "extend_membership" ? "延长权益" : "调整积分", reason: String(entry?.reason || "").slice(0, 120), createdAt: String(entry?.createdAt || "") })) : [],
     };
   }
@@ -164,7 +169,11 @@
   }
   function renderAdminUsers() {
     const body = $("[data-mo-admin-users]");
-    body.innerHTML = adminUsers.length ? adminUsers.map((user) => '<tr><td><span class="mo-user-name">' + escape(user.displayName) + '</span><span class="mo-user-meta">#' + user.id + ' · ' + escape(user.phoneMasked) + '</span></td><td><span class="mo-badge">' + statusLabels[user.membership.status] + '</span><span class="mo-user-meta">至 ' + date(user.membership.activeUntil) + '</span></td><td>' + number(user.points.balance) + '<span class="mo-user-meta">累计 ' + number(user.points.lifetime) + '</span></td><td>' + user.payment.paidOrders + ' 单<span class="mo-user-meta">' + money(user.payment.paidCents) + '</span></td><td>' + date(user.activity.lastBehaviorAt) + '</td><td><button type="button" data-mo-user-id="' + user.id + '">管理</button></td></tr>').join("") : '<tr><td colspan="6"><div class="mo-empty">没有符合条件的小程序用户。</div></td></tr>';
+    body.innerHTML = adminUsers.length ? adminUsers.map((user) => {
+      const contact = [user.phoneMasked, ...user.emailMasked].filter(Boolean).join(" · ");
+      const platforms = user.platforms.map(p => p === "pc" ? "PC" : "小程序").join(" / ");
+      return '<tr><td><span class="mo-user-name">' + escape(user.displayName) + '</span><span class="mo-user-meta">#' + user.id + ' · ' + escape(contact) + '</span><span class="mo-user-meta">' + escape(platforms) + '</span></td><td><span class="mo-badge">' + statusLabels[user.membership.status] + '</span><span class="mo-user-meta">至 ' + date(user.membership.activeUntil) + '</span></td><td>' + number(user.points.balance) + '<span class="mo-user-meta">累计 ' + number(user.points.lifetime) + '</span></td><td>' + user.payment.paidOrders + ' 单<span class="mo-user-meta">' + money(user.payment.paidCents) + '</span></td><td>' + date(user.createdAt) + '<span class="mo-user-meta">活跃：' + date(user.activity.lastBehaviorAt || user.activity.lastLoginAt) + '</span></td><td><button type="button" data-mo-user-id="' + user.id + '">管理</button></td></tr>';
+    }).join("") : '<tr><td colspan="6"><div class="mo-empty">没有符合条件的' + adminLabel() + '账号。</div></td></tr>';
     $("[data-mo-admin-page]").textContent = "第 " + adminPage + " / " + adminPages + " 页";
     $("[data-mo-admin-prev]").disabled = adminPage <= 1; $("[data-mo-admin-next]").disabled = adminPage >= adminPages;
   }
@@ -172,15 +181,15 @@
     invalidateRequest("admin-detail");
     selectedUserId = user.id;
     const audits = user.recentAdjustments.length ? '<ul class="mo-audit-list">' + user.recentAdjustments.map((item) => '<li><span>' + escape(item.action) + ' · ' + escape(item.reason) + '</span><time>' + date(item.createdAt) + '</time></li>').join("") + '</ul>' : '<p class="mo-user-meta">暂无人工调整记录。</p>';
-    $("[data-mo-admin-detail]").innerHTML = '<section class="mo-user-detail"><header><div><span class="kicker">USER #' + user.id + '</span><h2>' + escape(user.displayName) + '</h2></div><span class="mo-badge">' + statusLabels[user.membership.status] + '</span></header><dl class="mo-user-facts"><div><dt>脱敏手机号</dt><dd>' + escape(user.phoneMasked) + '</dd></div><div><dt>权益有效至</dt><dd>' + date(user.membership.activeUntil) + '</dd></div><div><dt>可用 / 累计积分</dt><dd>' + number(user.points.balance) + ' / ' + number(user.points.lifetime) + '</dd></div><div><dt>社群关联</dt><dd>' + escape(user.community.name || "未关联") + '</dd></div><div><dt>付费订单</dt><dd>' + user.payment.paidOrders + ' 单 · ' + money(user.payment.paidCents) + '</dd></div><div><dt>最近付费</dt><dd>' + date(user.payment.lastPaidAt) + '</dd></div><div><dt>最近活跃</dt><dd>' + date(user.activity.lastBehaviorAt) + '</dd></div><div><dt>注册时间</dt><dd>' + date(user.createdAt) + '</dd></div></dl><div class="mo-adjustments"><form class="mo-adjustment" data-mo-adjust="membership"><h3>延长会员权益</h3><label>增加时长<select name="membershipDays"><option value="7">7 天</option><option value="30" selected>30 天</option><option value="90">90 天</option><option value="180">180 天</option><option value="365">365 天</option></select></label><label>调整原因<input name="reason" maxlength="120" required placeholder="如：客户补偿、活动奖励"></label><button type="submit">确认延长权益</button></form><form class="mo-adjustment" data-mo-adjust="points"><h3>调整可用积分</h3><label>增减积分<input name="pointsDelta" type="number" min="-100000" max="100000" required placeholder="正数增加，负数扣减"></label><label>调整原因<input name="reason" maxlength="120" required placeholder="如：线下活动奖励、误发修正"></label><button type="submit">确认调整积分</button></form></div><p class="mo-admin-state" data-mo-adjust-state role="status" aria-live="polite"></p><h3>最近人工调整</h3>' + audits + '</section>';
+    $("[data-mo-admin-detail]").innerHTML = '<section class="mo-user-detail"><header><div><span class="kicker">USER #' + user.id + '</span><h2>' + escape(user.displayName) + '</h2></div><span class="mo-badge">' + statusLabels[user.membership.status] + '</span></header><dl class="mo-user-facts"><div><dt>脱敏手机号</dt><dd>' + escape(user.phoneMasked) + '</dd></div><div><dt>脱敏邮箱</dt><dd>' + escape(user.emailMasked.join(' / ') || '未绑定') + '</dd></div><div><dt>权益有效至</dt><dd>' + date(user.membership.activeUntil) + '</dd></div><div><dt>可用 / 累计积分</dt><dd>' + number(user.points.balance) + ' / ' + number(user.points.lifetime) + '</dd></div><div><dt>社群关联</dt><dd>' + escape(user.community.name || "未关联") + '</dd></div><div><dt>付费订单</dt><dd>' + user.payment.paidOrders + ' 单 · ' + money(user.payment.paidCents) + '</dd></div><div><dt>最近付费</dt><dd>' + date(user.payment.lastPaidAt) + '</dd></div><div><dt>最近活跃</dt><dd>' + date(user.activity.lastBehaviorAt || user.activity.lastLoginAt) + '</dd></div><div><dt>注册时间</dt><dd>' + date(user.createdAt) + '</dd></div></dl><div class="mo-adjustments"><form class="mo-adjustment" data-mo-adjust="membership"><h3>延长会员权益</h3><label>增加时长<select name="membershipDays"><option value="7">7 天</option><option value="30" selected>30 天</option><option value="90">90 天</option><option value="180">180 天</option><option value="365">365 天</option></select></label><label>调整原因<input name="reason" maxlength="120" required placeholder="如：客户补偿、活动奖励"></label><button type="submit">确认延长权益</button></form><form class="mo-adjustment" data-mo-adjust="points"><h3>调整可用积分</h3><label>增减积分<input name="pointsDelta" type="number" min="-100000" max="100000" required placeholder="正数增加，负数扣减"></label><label>调整原因<input name="reason" maxlength="120" required placeholder="如：线下活动奖励、误发修正"></label><button type="submit">确认调整积分</button></form></div><p class="mo-admin-state" data-mo-adjust-state role="status" aria-live="polite"></p><h3>最近人工调整</h3>' + audits + '</section>';
   }
   async function loadAdminUsers() {
     if (!adminCsrfToken) return;
     const current = beginRequest("admin-list");
     const query = encodeURIComponent($("[data-mo-admin-query]").value || ""), status = encodeURIComponent($("[data-mo-admin-status]").value || "all");
-    $("[data-mo-admin-state]").textContent = "正在读取小程序用户…"; $("[data-mo-admin-users]").innerHTML = '<tr><td colspan="6"><div class="mo-empty">正在加载受保护的用户明细…</div></td></tr>';
+    $("[data-mo-admin-state]").textContent = "正在读取" + adminLabel() + "账号…"; $("[data-mo-admin-users]").innerHTML = '<tr><td colspan="6"><div class="mo-empty">正在加载受保护的用户明细…</div></td></tr>';
     try {
-      const response = await fetch(endpoints.adminUsers + "?query=" + query + "&status=" + status + "&page=" + adminPage + "&pageSize=20", { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
+      const response = await fetch(endpoints.adminUsers + "?query=" + query + "&status=" + status + "&page=" + adminPage + "&pageSize=20&platform=" + adminPlatform(), { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
       if (!current()) return;
       if (response.status === 401 || response.status === 503) return adminFailure("管理员会话已失效或服务未配置，请重新验证。", true);
       if (!response.ok) throw new Error("用户明细暂不可用");
@@ -188,7 +197,7 @@
       if (payload?.schemaVersion !== "MEMBER-ADMIN-V1.0" || payload.dataSource !== "production" || !Array.isArray(payload.users) || !Number.isSafeInteger(payload.page?.totalPages)) throw new Error("用户数据校验失败");
       const users = payload.users.map(safeAdminUser); if (users.some((item) => !item)) throw new Error("用户数据校验失败");
       adminUsers = users; adminPage = payload.page.number; adminPages = Math.max(1, payload.page.totalPages); adminLoaded = true;
-      $("[data-mo-admin-state]").textContent = "已授权 · 共 " + payload.page.total + " 位小程序用户 · 更新于 " + date(payload.generatedAt); renderAdminUsers();
+      $("[data-mo-admin-state]").textContent = "已授权 · 共 " + payload.page.total + " 位" + adminLabel() + "用户 · 更新于 " + date(payload.generatedAt); renderAdminUsers();
       if (selectedUserId) { const selected = adminUsers.find((user) => user.id === selectedUserId); $("[data-mo-admin-detail]").innerHTML = ""; if (selected) renderAdminDetail(selected); }
     } catch (error) { if (!current()) return; adminFailure(error.message || "用户明细暂不可用"); }
   }
@@ -201,7 +210,7 @@
     if (reason.length < 2) { state.textContent = "请填写至少 2 个字的调整原因。"; return; }
     const button = form.querySelector("button"); button.disabled = true; state.textContent = "正在提交调整…";
     try {
-      const response = await fetch(endpoints.adminUsers + "/" + selectedUserId + "/adjustments", { method: "POST", headers: adminHeaders(true, true), credentials: "same-origin", cache: "no-store", body: JSON.stringify(body) });
+      const response = await fetch(endpoints.adminUsers + "/" + selectedUserId + "/adjustments" + (adminPlatform() === "pc" ? "?platform=pc" : ""), { method: "POST", headers: adminHeaders(true, true), credentials: "same-origin", cache: "no-store", body: JSON.stringify(body) });
       if (!current()) return;
       const payload = await response.json(); if (!current()) return; if (response.status === 401 || response.status === 403 || response.status === 503) return adminFailure("管理员会话已失效，请重新验证。", true);
       if (!response.ok) throw new Error(String(payload?.error?.message || "调整未成功").slice(0, 120));
@@ -496,9 +505,13 @@
   $("[data-mo-schedule-editor]").addEventListener("click", (event) => { if (event.target.closest("[data-mo-schedule-cancel]")) { invalidateRequest("schedule-detail"); selectedScheduleId = null; $("[data-mo-schedule-editor]").innerHTML = ""; } });
   $("[data-mo-schedule-editor]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-schedule-form]"); if (!form) return; event.preventDefault(); void submitSchedule(form); });
   root.addEventListener("membership:open", (event) => {
-    activeView = ["membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "membership-token"].includes(event?.detail?.view) ? event.detail.view : "membership";
+    invalidateRequest("admin-list"); invalidateRequest("admin-detail");
+    adminUsers = []; selectedUserId = null; adminPage = 1;
+    $("[data-mo-admin-users]").innerHTML = ""; $("[data-mo-admin-detail]").innerHTML = "";
+    activeView = ["membership", "membership-community", "membership-approval", "membership-users", "membership-pc-users", "membership-schedule", "membership-token"].includes(event?.detail?.view) ? event.detail.view : "membership";
+    $("[data-mo-admin-title]").textContent = adminPlatform() === "pc" ? "PC 账号管理" : "小程序会员管理";
     if (activeView === "membership" && !loaded) refresh();
-    if (activeView === "membership-users" && adminCsrfToken) void loadAdminUsers();
+    if (adminView() && adminCsrfToken) void loadAdminUsers();
     if (activeView === "membership-community" && adminCsrfToken) void loadCommunityMembers();
     if (activeView === "membership-approval" && adminCsrfToken && !approvalsLoaded) void loadApprovals();
     if (activeView === "membership-schedule" && adminCsrfToken && !scheduleLoaded) void loadSchedule();
@@ -509,7 +522,7 @@
     resetAdminSession();
     adminCsrfToken = token; adminPage = 1; adminLoaded = false; approvalPage = 1; approvalsLoaded = false; communityPage = 1; communityLoaded = false; scheduleLoaded = false;
     if (activeView === "membership") refresh();
-    if (activeView === "membership-users") void loadAdminUsers();
+    if (adminView()) void loadAdminUsers();
     if (activeView === "membership-community") void loadCommunityMembers();
     if (activeView === "membership-approval") void loadApprovals();
     if (activeView === "membership-schedule") void loadSchedule();

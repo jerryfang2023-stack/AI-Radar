@@ -90,11 +90,13 @@ python scripts/provision_virtual_products.py --env 0
 
 ## 会员与权益运营
 
+PC 注册信息继续持久保存到同一 SQLite：`users` 保存昵称及权益，`user_identities` 保存已验证身份摘要和脱敏值，`auth_sessions` 保存会话摘要；权益和积分变动写入对应 ledger 与 `operations_admin_audits`。重启不会丢失，跨端已关联账号共享用户 ID 和权益，不新建重复 PC 用户库。
+
 `GET /api/v1/analytics/membership/summary?days=30` 保留为环回兼容汇总，公网旧 URL 返回 404；后台通过会话保护的 `/ops/application-membership-summary` 读取，契约为 `MEMBER-OPS-V1.0`。统一运营后台发布在 VPS 的 `/ops/` 路径；管理员通过邮箱验证码登录一次，服务端设置限定 `/ops` 的 HttpOnly 会话 Cookie，Nginx 在返回后台 HTML、脚本、快照和应用汇总前调用会话检查。小程序用户明细使用 `GET /api/v1/admin/analytics/membership/users`，权益或积分调整使用 `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`，契约为 `MEMBER-ADMIN-V1.0`，并复用整个后台会话。允许邮箱仅配置在服务器 `OPERATIONS_ADMIN_EMAILS`，不写入仓库或前端。
 
 验证码 10 分钟有效、最多尝试 5 次且同一邮箱 10 分钟最多发送 3 次；浏览器会话默认 8 小时。会话 Cookie 为 Secure、HttpOnly、SameSite=Strict，CSRF Cookie 与服务端 HMAC 双重校验；数据库不保存邮箱原文、验证码、会话或 CSRF 原文。
 
-列表仅包含具备微信身份且未合并的小程序账户，只返回昵称、脱敏手机号、权益、积分、非退款付费汇总和最近活跃，不返回 OpenID、身份摘要或订单明细。写操作只允许按 7/30/90/180/365 天延长权益，或在余额不低于零的前提下调整可用积分；每次必须填写原因，并同时写入业务流水与 `operations_admin_audits`。不支持删除账号、修改/合并身份、改订单、任意覆盖到期日或改累计成长积分。
+列表默认 `platform=mini`，包含具备已验证微信身份的小程序账户；`platform=pc` 包含已验证邮箱、PC 登录会话（含扫码登录）或旧 PC 标记的账户，两者均排除已合并账户。PC 入口为 `/ops/#membership-pc-users`，查询和调整均传递 `platform=pc`。只返回昵称、脱敏手机号/邮箱、平台、注册时间、权益、积分、非退款付费汇总和最近活跃，不返回 OpenID、身份摘要或订单明细。写操作只允许按 7/30/90/180/365 天延长权益，或在余额不低于零的前提下调整可用积分；每次必须填写原因，并同时写入业务流水与 `operations_admin_audits`。不支持删除账号、修改/合并身份、改订单、任意覆盖到期日或改累计成长积分。
 
 社群申请审批也复用同一运营后台会话。浏览器只访问 `/ops/member-api/community-members`、`/ops/member-api/community-members/<id>` 和 `/ops/member-api/community-members/<id>/reviews`；支付服务在服务端使用 `COMMUNITY_SERVICE_TOKEN` 调用会员服务的 `COMMUNITY-APPROVAL-V1.0` 接口，令牌不会返回前端。审批写入还要求 OPS CSRF 和唯一操作 ID，操作者身份由服务端会话派生。
 

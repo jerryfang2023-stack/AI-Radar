@@ -49,7 +49,7 @@ window.WaveSightOpsConsole = {
           "key": "MINIPROGRAM",
           "label": "微信小程序",
           "category": "融资产品",
-          "value": "1.2.7",
+          "value": "1.3.0",
           "source": "02-Miniprogram/package.json",
           "status": "源码版本 · 微信线上待核验",
           "kind": "source",
@@ -120,7 +120,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.10.0-google-search-sync",
+        "value": "OPS-V3.11.0-pc-account-management",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -315,7 +315,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.2.7",
+        "value": "1.3.0",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -518,8 +518,8 @@ window.WaveSightOpsConsole = {
     "sourceBaseline": "SITE-V4.6.1-research-retirement"
   },
   "meta": {
-    "version": "OPS-V3.10.0-google-search-sync",
-    "generatedAt": "2026-10-04T08:49:36.754Z",
+    "version": "OPS-V3.11.0-pc-account-management",
+    "generatedAt": "2026-10-09T14:26:57.550Z",
     "date": "2026-10-01",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1526,7 +1526,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-10-04T08:49:36.744Z",
+      "updatedAt": "2026-10-09T14:26:57.480Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -23333,7 +23333,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.10.0-google-search-sync",
+        "value": "OPS-V3.11.0-pc-account-management",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -23528,7 +23528,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.2.7",
+        "value": "1.3.0",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -27809,7 +27809,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.10.0-google-search-sync",
+        "value": "OPS-V3.11.0-pc-account-management",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -28023,7 +28023,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.2.7",
+        "value": "1.3.0",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -28143,6 +28143,6 @@ window.WaveSightOpsConsole = {
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-10-04T08:49:36.754Z"
+    "snapshotGeneratedAt": "2026-10-09T14:26:57.550Z"
   }
 };
