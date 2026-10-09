@@ -31,6 +31,14 @@
 
 仅复用已有 DeepSeek 密钥；不复制公众号、消息平台或其他 Hermes 凭据到控制器。待核验线索按 `agent-workflow/financing/config.json` 的逐条二次复核额度执行，详见 Harness 的提交、并发发布与二次复核规范；不自动购买搜索套餐。Hermes 默认配置、data profile 和既有六个 cron 的模型均切换为 Flash，原启停状态保持；历史报告中的原模型记录不改写。
 
+## 发布运行根与版本
+
+发布器以接受的 main 提交为固定输入，并向下游传递 `--source-sha`；失败时按检查点恢复必要阶段。控制器模式以 `/etc/guanlan-financing/runtime.env` 的实际配置为准。
+
+`agent-workflow/financing/vps/publish.sh` 设置 `GUANLAN_PUBLICATION_RUNTIME_ROOT=/srv/guanlan-financing-publisher/runtime`。该绝对目录由发布用户可写，保存发布目标锁和运行回执；Portal 在其 `portal-geo/` 子目录保存 IndexNow 与遥测回执。不要依赖临时 Git 检出相对位置推导 `/srv/runtime`，也不要将回执放入公开仓库。`GUANLAN_PUBLICATION_STATE_ROOT` 是 Portal 不可变 release 的独立恢复状态目录，不因设置运行根而替代。
+
+本机未设置运行根时，程序从 Git common-dir 找到原仓后按注册项目布局定位 runtime；独立工作树共享同一目标运行根和所有者锁。操作前核对用户权限、固定提交及回执，不按锁龄删除其他发布者的锁。
+
 ## 检查与恢复
 
 ```sh
