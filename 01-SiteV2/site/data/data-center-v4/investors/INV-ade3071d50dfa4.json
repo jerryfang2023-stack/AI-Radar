@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,25 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
+    "current_round_count": 10,
     "historical_or_ambiguous_count": 7,
-    "portfolio_company_count": 9,
+    "portfolio_company_count": 10,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-08-24",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
       "historical_or_ambiguous": 7,
       "lead": 3,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "seed",
       "series_a",
+      "series_b",
       "series_c",
       "series_d",
       "series_e",
@@ -94,6 +95,11 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-572e31f55b6ac1b1",
+        "canonical_entity_id": "",
+        "name": "Arena"
       },
       {
         "entity_id": "FICO-2b3dac6c72b05a6e",
@@ -132,6 +138,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c43bffa860de2cfc",
+        "funding_insight_id": "FI-de00acfd7c8d76c8",
+        "event_ids": [
+          "EV-cdcdea720885d037"
+        ],
+        "company_entity_id": "EN-572e31f55b6ac1b1",
+        "company_canonical_entity_id": "",
+        "company_name": "Arena",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-99134731fc9bfd4f",
+            "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+            "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+            "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+            "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+            "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fd0855498cb1ba5a",
         "funding_insight_id": "FI-e0e22d70a91e704e",
@@ -724,6 +770,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-99134731fc9bfd4f",
+        "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+        "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+        "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+        "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+        "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+      },
+      {
         "source_id": "FISRC-4d11ed62a144a3f4",
         "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
         "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
@@ -894,16 +948,16 @@
           "source_id": "sfv_about"
         },
         {
+          "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-99134731fc9bfd4f"
+        },
+        {
           "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4d11ed62a144a3f4"
         },
         {
           "description": "融资来源记录：Centralize · A轮 · 2026-07-29 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0232cca5ca9bf922"
-        },
-        {
-          "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮参投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b7537d2258bce6eb"
         }
       ],
       "contacts": [
@@ -940,6 +994,14 @@
           "quote_hash": "08611ac76442a67a54131bc51f1ad1766b357f061c44472ec475bf4ed905e839"
         },
         {
+          "source_id": "FISRC-99134731fc9bfd4f",
+          "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+          "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+          "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+          "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+          "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+        },
+        {
           "source_id": "FISRC-4d11ed62a144a3f4",
           "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
           "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
@@ -954,14 +1016,6 @@
           "source_content_hash": "71082c4f5d29c731",
           "quote": "The financing includes participation from Salesforce Ventures",
           "quote_hash": "a8dbfb35d3438ca740d5203a49393ec2f3ce6550e5d4de9c7b80364b259a80f9"
-        },
-        {
-          "source_id": "FISRC-b7537d2258bce6eb",
-          "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
-          "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
-          "source_content_hash": "80d971eac6d90be3",
-          "quote": "with participation from Schneider Electric, Pegatron, Salesforce Ventures, and others",
-          "quote_hash": "9a7831070bdba5f579d20ed35e09eb940bab592d983a2cf655934c7fc8b4c706"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -972,7 +1026,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[11].role": {
+        "activities[12].role": {
           "text": "Series E 参投方",
           "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
           "provider": "deepseek",
@@ -980,7 +1034,7 @@
           "translated_at": "2026-09-18T02:49:06.821Z",
           "status": "translated"
         },
-        "activities[14].role": {
+        "activities[15].role": {
           "text": "Series F 新投资方",
           "source_hash": "06bf97aae7660f5f34f8621d4771e13e9ff74176637f7aaad508093ddffa8289",
           "provider": "deepseek",

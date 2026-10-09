@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2022-12-14",
-    "latest_disclosed_at": "2026-09-28",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 8
+      "participant": 9
     },
     "round_codes": [
       "multi_round",
@@ -83,6 +83,11 @@
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-13911430434bc00c",
+        "canonical_entity_id": "",
+        "name": "Avarra"
+      },
       {
         "entity_id": "EN-6c425df9139ab70a",
         "canonical_entity_id": "",
@@ -125,6 +130,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a965a74d3875a77f",
+        "funding_insight_id": "FI-ee4edc2309baf9b9",
+        "event_ids": [
+          "EV-6e7c0515f06795aa"
+        ],
+        "company_entity_id": "EN-13911430434bc00c",
+        "company_canonical_entity_id": "",
+        "company_name": "Avarra",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$17 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1700 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-93b0fab07c02a054",
+            "source_url": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html",
+            "source_title": "Avarra 融资 1700 万美元，押注逆向策略：用 AI 快速提升 GTM 团队技能，而非仅自动化常规工作",
+            "source_content_hash": "418bc4a92b5032ef693633ec382d6afb613da450d956de4564e7d5539a5226ca",
+            "quote": "The round is led by Duration Ventures, with participation from Lightspeed Venture Partners, Draper Associates, the GTMfund, Alumni Ventures, and strategic investment from Zoom.",
+            "quote_hash": "d511ddc9dcf424cba53315b2eb98d2f0a40b8b34a7e5361e15b0336577d96d14"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d4dd57577c8f5ece",
         "funding_insight_id": "FI-53d101dc94d7e28e",
@@ -488,6 +533,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-93b0fab07c02a054",
+        "source_url": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html",
+        "source_title": "Avarra 融资 1700 万美元，押注逆向策略：用 AI 快速提升 GTM 团队技能，而非仅自动化常规工作",
+        "source_content_hash": "418bc4a92b5032ef693633ec382d6afb613da450d956de4564e7d5539a5226ca",
+        "quote": "The round is led by Duration Ventures, with participation from Lightspeed Venture Partners, Draper Associates, the GTMfund, Alumni Ventures, and strategic investment from Zoom.",
+        "quote_hash": "d511ddc9dcf424cba53315b2eb98d2f0a40b8b34a7e5361e15b0336577d96d14"
+      },
+      {
         "source_id": "FISRC-22cce00c604ac941",
         "source_url": "https://www.businesswire.com/news/home/20260928892666/en/Mona-Raises-%243.5M-to-Expand-Its-AI-Platform-for-Small-Business-Capital-Access-and-Financial-Coaching",
         "source_title": "Mona 融资 350 万美元，扩展其 AI 平台，助力小企业获取资本和财务辅导",
@@ -616,16 +669,16 @@
           "source_id": "av_portfolio"
         },
         {
+          "description": "融资来源记录：Avarra · A轮 · 2026-10-06 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-93b0fab07c02a054"
+        },
+        {
           "description": "融资来源记录：Mona · 轮次未披露 · 2026-09-28 · 本轮参投 · $3.5M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-22cce00c604ac941"
         },
         {
           "description": "融资来源记录：Lightfield · A轮 · 2026-09-09 · 本轮参投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c224adac23aa7c1e"
-        },
-        {
-          "description": "融资来源记录：logcat.ai · 预种子轮 · 2026-07-16 · 本轮参投 · $2.55M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-adb92a0723de45a1"
         }
       ],
       "contacts": [
@@ -676,6 +729,14 @@
           "quote_hash": "e6d16e3845b2a12bc801bbe8163e0ef0975179557fcabec3af281d43d15f599b"
         },
         {
+          "source_id": "FISRC-93b0fab07c02a054",
+          "source_url": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html",
+          "source_title": "Avarra 融资 1700 万美元，押注逆向策略：用 AI 快速提升 GTM 团队技能，而非仅自动化常规工作",
+          "source_content_hash": "418bc4a92b5032ef693633ec382d6afb613da450d956de4564e7d5539a5226ca",
+          "quote": "The round is led by Duration Ventures, with participation from Lightspeed Venture Partners, Draper Associates, the GTMfund, Alumni Ventures, and strategic investment from Zoom.",
+          "quote_hash": "d511ddc9dcf424cba53315b2eb98d2f0a40b8b34a7e5361e15b0336577d96d14"
+        },
+        {
           "source_id": "FISRC-22cce00c604ac941",
           "source_url": "https://www.businesswire.com/news/home/20260928892666/en/Mona-Raises-%243.5M-to-Expand-Its-AI-Platform-for-Small-Business-Capital-Access-and-Financial-Coaching",
           "source_title": "Mona 融资 350 万美元，扩展其 AI 平台，助力小企业获取资本和财务辅导",
@@ -690,14 +751,6 @@
           "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
           "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
           "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
-        },
-        {
-          "source_id": "FISRC-adb92a0723de45a1",
-          "source_url": "https://blog.logcat.ai/2026/07/16/logcat.ai-raises-2.55m-to-build-the-future-of-device-systems-engineering/",
-          "source_title": "logcat.ai 获 255 万美元融资，打造设备系统工程未来",
-          "source_content_hash": "1dcd4855bd96a462",
-          "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures",
-          "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
         }
       ],
       "last_verified_at": "2026-09-25",

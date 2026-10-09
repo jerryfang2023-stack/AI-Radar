@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "participant": 8
+      "participant": 9
     },
     "round_codes": [
       "seed",
@@ -119,12 +119,57 @@
         "name": "Sable"
       },
       {
+        "entity_id": "EN-40cd17bb16c8fec1",
+        "canonical_entity_id": "",
+        "name": "SafeWorld"
+      },
+      {
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-64fd8a45fbf25f51",
+        "funding_insight_id": "FI-5fd5533b14de7850",
+        "event_ids": [
+          "EV-ad1a42d4f43e005c"
+        ],
+        "company_entity_id": "EN-40cd17bb16c8fec1",
+        "company_canonical_entity_id": "",
+        "company_name": "SafeWorld",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "超1200万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": 12000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1200 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f77610cfcfab94",
+            "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+            "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+            "source_content_hash": "58fca4c121c8b3b4",
+            "quote": "with participation from Box Group, the Carnegie Mellon University Endowment, Innovation Endeavors, SV Angel and other investors",
+            "quote_hash": "7ba959a00a48a9fab08858152a8a655158589e16881c8596707ebdb569c9351f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-450606474bdb671b",
         "funding_insight_id": "FI-2309843d76ae81f9",
@@ -544,6 +589,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-98f77610cfcfab94",
+        "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+        "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+        "source_content_hash": "58fca4c121c8b3b4",
+        "quote": "with participation from Box Group, the Carnegie Mellon University Endowment, Innovation Endeavors, SV Angel and other investors",
+        "quote_hash": "7ba959a00a48a9fab08858152a8a655158589e16881c8596707ebdb569c9351f"
+      },
+      {
         "source_id": "FISRC-3511f7baf76701e3",
         "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
         "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
@@ -676,16 +729,16 @@
           "source_id": "svangel_home"
         },
         {
+          "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮参投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f77610cfcfab94"
+        },
+        {
           "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3511f7baf76701e3"
         },
         {
           "description": "融资来源记录：Temporal · E轮 · 2026-09-14 · 本轮参投 · $550M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cf83d78a216a5edf"
-        },
-        {
-          "description": "融资来源记录：Arga Labs · 种子轮 · 2026-08-26 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b6920185a5e7fa72"
         }
       ],
       "contacts": [
@@ -717,6 +770,14 @@
           "quote_hash": "73957877fab4dd01fd47d32133c70e4996d7e433bbf8dc9f1111438ed6dbcf07"
         },
         {
+          "source_id": "FISRC-98f77610cfcfab94",
+          "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+          "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+          "source_content_hash": "58fca4c121c8b3b4",
+          "quote": "with participation from Box Group, the Carnegie Mellon University Endowment, Innovation Endeavors, SV Angel and other investors",
+          "quote_hash": "7ba959a00a48a9fab08858152a8a655158589e16881c8596707ebdb569c9351f"
+        },
+        {
           "source_id": "FISRC-3511f7baf76701e3",
           "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
           "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
@@ -731,14 +792,6 @@
           "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
           "quote": "with strong participation from T. Rowe Price and SV Angel",
           "quote_hash": "5e76a7301ffb8df6121234761c9e5cbe30e445cda9462229951405b9ece208e7"
-        },
-        {
-          "source_id": "FISRC-b6920185a5e7fa72",
-          "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
-          "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
-          "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
-          "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
-          "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -747,7 +800,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[7].role": {
+        "activities[8].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-25",
-    "latest_disclosed_at": "2026-09-28",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed",
@@ -90,9 +90,54 @@
         "entity_id": "EN-dc8a5a5bf80909de",
         "canonical_entity_id": "",
         "name": "General Intuition"
+      },
+      {
+        "entity_id": "EN-40cd17bb16c8fec1",
+        "canonical_entity_id": "",
+        "name": "SafeWorld"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-22d24ee537a39661",
+        "funding_insight_id": "FI-5fd5533b14de7850",
+        "event_ids": [
+          "EV-ad1a42d4f43e005c"
+        ],
+        "company_entity_id": "EN-40cd17bb16c8fec1",
+        "company_canonical_entity_id": "",
+        "company_name": "SafeWorld",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "超1200万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": 12000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1200 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f77610cfcfab94",
+            "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+            "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+            "source_content_hash": "58fca4c121c8b3b4",
+            "quote": "with participation from Box Group, the Carnegie Mellon University Endowment, Innovation Endeavors, SV Angel and other investors",
+            "quote_hash": "7ba959a00a48a9fab08858152a8a655158589e16881c8596707ebdb569c9351f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8ddaa792959d3aca",
         "funding_insight_id": "FI-4d807fc9d0b8523b",
@@ -208,6 +253,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-98f77610cfcfab94",
+        "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+        "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+        "source_content_hash": "58fca4c121c8b3b4",
+        "quote": "with participation from Box Group, the Carnegie Mellon University Endowment, Innovation Endeavors, SV Angel and other investors",
+        "quote_hash": "7ba959a00a48a9fab08858152a8a655158589e16881c8596707ebdb569c9351f"
+      },
+      {
         "source_id": "FISRC-212b01f9c4f8d05c",
         "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
         "source_title": "Autoheal 融资 790 万美元，为企业构建自我改进的软件工厂",
@@ -255,16 +308,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮参投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f77610cfcfab94"
+        },
+        {
           "description": "融资来源记录：Autoheal · 种子轮 · 2026-09-28 · 本轮领投 · $7.9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-212b01f9c4f8d05c"
         },
         {
           "description": "融资来源记录：General Intuition · A轮 · 2026-06-25 · 本轮参投 · $320 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fb702d5abe54d323"
-        },
-        {
-          "description": "融资来源记录：Gatik · 历史轮次未披露 · 参投C轮。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7dc8a65571f189f0"
         }
       ],
       "contacts": [],
@@ -286,6 +339,14 @@
           "quote_hash": "db6de4832c3a8d3fa0590a060ca20976b1ad11d98c19a30b38a74dfb367e2b56"
         },
         {
+          "source_id": "FISRC-98f77610cfcfab94",
+          "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+          "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+          "source_content_hash": "58fca4c121c8b3b4",
+          "quote": "with participation from Box Group, the Carnegie Mellon University Endowment, Innovation Endeavors, SV Angel and other investors",
+          "quote_hash": "7ba959a00a48a9fab08858152a8a655158589e16881c8596707ebdb569c9351f"
+        },
+        {
           "source_id": "FISRC-212b01f9c4f8d05c",
           "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
           "source_title": "Autoheal 融资 790 万美元，为企业构建自我改进的软件工厂",
@@ -300,14 +361,6 @@
           "source_content_hash": "fd28378604fe6512",
           "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg.",
           "quote_hash": "994ced7253c5833b999940bc6771bc4a6d4bcd7f0e246daaa3cbad655e0e3365"
-        },
-        {
-          "source_id": "FISRC-7dc8a65571f189f0",
-          "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
-          "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
-          "source_content_hash": "8b96227297e6e9e1",
-          "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
-          "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
         }
       ],
       "last_verified_at": "2026-10-04",

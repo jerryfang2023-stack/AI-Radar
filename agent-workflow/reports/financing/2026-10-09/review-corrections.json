@@ -1,0 +1,48 @@
+{
+  "version": "FINANCING-REVIEW-CORRECTIONS-1",
+  "date": "2026-10-09",
+  "source_collection_reused": true,
+  "items": [
+    {
+      "event_id": "EV-558abe2d6c2074af",
+      "disposition": "corrected_current_round_amount",
+      "funding_insight_id": "FI-b1625373db025767",
+      "source_id": "FISRC-00b1a302d89f9d9c",
+      "source_content_hash": "77dfb05a1e07dfb27dbd5d061878995bd7b30876da511678aa45084b0ac107d3",
+      "current_round_amount_usd": 50000000,
+      "total_raised_usd": 70000000,
+      "evidence_quotes": [
+        "today announced $50 million in Series A financing",
+        "bringing the total amount raised by Gallatin to $70 million"
+      ],
+      "note": "The A round is $50m; $70m is cumulative after the 2024 seed."
+    },
+    {
+      "event_id": "EV-2a554429da11d2b8",
+      "disposition": "publication_held_pending_close_evidence",
+      "source_id": "FISRC-f94278a09c915c3f",
+      "source_content_hash": "2aba9b21ef947d01f97076c04bf73e0de4441efe2252c9bc529e7ea71b76c3a3",
+      "note": "The accepted original describes financing talks as early-stage and the amount as subject to change; no commitment or close verified."
+    },
+    {
+      "event_id": "EV-f7b689602574677a",
+      "disposition": "duplicate_publication_held_pending_identity_binding_review",
+      "source_id": "FISRC-d4882614e143350f",
+      "source_content_hash": "d00757ae0cb1ee65a0d004562b0c216c37cda223494a5d49bf2ecc6cf4641053",
+      "canonical_event_id": "EV-6d646383629d5b15",
+      "note": "Same £2.1m pre-seed and co-founder reported as official Cambridge Enterprise disclosure; separate entity IDs remain untouched."
+    },
+    {
+      "event_id": "EV-55ed36eee8ffa4bd",
+      "disposition": "same_round_aggregated",
+      "event_ids": [
+        "EV-55ed36eee8ffa4bd",
+        "EV-53d3d485f2b3d64e"
+      ],
+      "review_anchor_card_id": "FI-ac49faec95dd1783",
+      "other_source_card_id": "FI-9968fe323f85c64c",
+      "source_url": "https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/",
+      "note": "Both cards report Persona, Zach Yadegari, the same $10m undisclosed round and date; the published catalog emits one event record containing both event IDs and all source histories, with no entity merge."
+    }
+  ]
+}

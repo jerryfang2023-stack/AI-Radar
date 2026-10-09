@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-cdcdea720885d037",
       "EV-a251b011afec190d"
     ],
     "viewpointIds": [],
@@ -72,10 +73,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-07",
-    "lastSeen": "2026-09-08",
+    "lastSeen": "2026-10-09",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-cdcdea720885d037"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
@@ -86,6 +89,33 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-cdcdea720885d037",
+        "dataDate": "2026-10-09",
+        "date": "2026-10-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-572e31f55b6ac1b1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-572e31f55b6ac1b1"
+        ]
+      },
       {
         "id": "EV-a251b011afec190d",
         "dataDate": "2026-09-08",
@@ -140,6 +170,7 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-cdcdea720885d037",
         "EV-6b668e4655192209",
         "EV-657176fd0dff6209",
         "EV-a3de7b1a00fbf8a9",
@@ -542,6 +573,7 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
+        "EN-572e31f55b6ac1b1",
         "EN-7f871cbf905f6e0c",
         "EN-336ab1deb42d6284",
         "EN-0d0dd4bc07420a2c",
@@ -691,7 +723,6 @@
         "EN-3a7bd3e2360a3d29",
         "EN-f01c4f48151c3468",
         "EN-67734881da046ff9",
-        "EN-572e31f55b6ac1b1",
         "EN-1a6d6ea981e8688c",
         "EN-ec31d2be1b244616",
         "EN-39ba5f9dcab4e98a",
@@ -810,7 +841,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-08"
+      "lastSeen": "2026-10-09"
     },
     {
       "id": "TX-technology-video_generation",

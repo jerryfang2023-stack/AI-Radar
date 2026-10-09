@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-03-31",
     "latest_disclosed_at": "2026-03-31",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
           }
         ]
+      },
+      {
+        "activity_id": "IA-8cc410aeedb081e7",
+        "funding_insight_id": "FI-de00acfd7c8d76c8",
+        "event_ids": [
+          "EV-cdcdea720885d037"
+        ],
+        "company_entity_id": "EN-572e31f55b6ac1b1",
+        "company_canonical_entity_id": "",
+        "company_name": "Arena",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-177d799e57150d84",
+            "source_url": "https://valueaddvc.com/pulse/company/arena",
+            "source_title": "Arena — Valuation, Funding & Investors | Value Add Intelligence",
+            "source_content_hash": "81a60e002db3818e",
+            "quote": "Jan 6, 2026Series A$150M~$1.7BFelicis VenturesLeadUC InvestmentsLeadAndreessen HorowitzThe House FundLDVPKleiner PerkinsLightspeed Venture PartnersLaude Ventures",
+            "quote_hash": "03b7fc199c40067292a636779d945c89d06439fc13295d2d389759405564b121"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "494969b64dc816f3",
         "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
         "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+      },
+      {
+        "source_id": "FISRC-177d799e57150d84",
+        "source_url": "https://valueaddvc.com/pulse/company/arena",
+        "source_title": "Arena — Valuation, Funding & Investors | Value Add Intelligence",
+        "source_content_hash": "81a60e002db3818e",
+        "quote": "Jan 6, 2026Series A$150M~$1.7BFelicis VenturesLeadUC InvestmentsLeadAndreessen HorowitzThe House FundLDVPKleiner PerkinsLightspeed Venture PartnersLaude Ventures",
+        "quote_hash": "03b7fc199c40067292a636779d945c89d06439fc13295d2d389759405564b121"
       }
     ],
     "public_profile": {
@@ -164,6 +205,10 @@
         {
           "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮参投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1e2b3bad243bd066"
+        },
+        {
+          "description": "融资来源记录：Arena · 历史轮次未披露 · Series A 领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-177d799e57150d84"
         }
       ],
       "sources": [
@@ -190,9 +235,29 @@
           "source_content_hash": "494969b64dc816f3",
           "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
           "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+        },
+        {
+          "source_id": "FISRC-177d799e57150d84",
+          "source_url": "https://valueaddvc.com/pulse/company/arena",
+          "source_title": "Arena — Valuation, Funding & Investors | Value Add Intelligence",
+          "source_content_hash": "81a60e002db3818e",
+          "quote": "Jan 6, 2026Series A$150M~$1.7BFelicis VenturesLeadUC InvestmentsLeadAndreessen HorowitzThe House FundLDVPKleiner PerkinsLightspeed Venture PartnersLaude Ventures",
+          "quote_hash": "03b7fc199c40067292a636779d945c89d06439fc13295d2d389759405564b121"
         }
       ],
       "last_verified_at": "2026-10-02"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[1].role": {
+          "text": "Series A 领投",
+          "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:28:16.913Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

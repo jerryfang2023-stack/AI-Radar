@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,8 +54,1396 @@
   },
   "events": [
     {
+      "id": "EV-2a554429da11d2b8",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "in_progress",
+      "statusLabel": "进行中",
+      "publicationStatus": "partial",
+      "title": "博通为OpenAI芯片项目安排超500亿美元融资，AI基础设施资本争夺加剧",
+      "originalTitle": "",
+      "subject": "博通为OpenAI芯片项目安排超500亿美元",
+      "action": "融资",
+      "object": "，AI基础设施资本争夺加剧",
+      "metrics": [
+        "500亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-0543134ab945cd84",
+          "subject": "博通为OpenAI芯片项目安排超500亿美元",
+          "object": "，AI基础设施资本争夺加剧",
+          "quote": "博通最近几周一直在为与OpenAI合作开发定制AI芯片项目安排超过500亿美元的融资。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e91c6533714ba9bd",
+          "publisher": "www.huxiu.com",
+          "url": "https://www.huxiu.com/article/4895821.html"
+        }
+      ],
+      "sourceUrl": "https://www.huxiu.com/article/4895821.html",
+      "publisher": "www.huxiu.com",
+      "sourceExcerpt": "博通最近几周一直在为与OpenAI合作开发定制AI芯片项目安排超过500亿美元的融资。"
+    },
+    {
+      "id": "EV-2cddd05c747f0ee7",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "DeepSeek完成近千亿融资，腾讯宁德时代领投，计划2027年IPO",
+      "originalTitle": "",
+      "subject": "DeepSeek",
+      "action": "完成近千亿融资",
+      "object": "，腾讯宁德时代领投，计划2027年IPO",
+      "metrics": [
+        "800亿",
+        "1000亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-70fa69b4979cfcfd"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "DeepSeek",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-70fa69b4979cfcfd",
+          "subject": "DeepSeek",
+          "object": "至少800亿元，最终可能接近1000亿元",
+          "quote": "新一轮融资规模至少800亿元，最终可能接近1000亿元"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d26ae075fa9c61ea",
+          "publisher": "www.huxiu.com",
+          "url": "https://www.huxiu.com/article/4895902.html"
+        }
+      ],
+      "sourceUrl": "https://www.huxiu.com/article/4895902.html",
+      "publisher": "www.huxiu.com",
+      "sourceExcerpt": "新一轮融资规模至少800亿元，最终可能接近1000亿元"
+    },
+    {
+      "id": "EV-2cff2880e9f122d6",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Vesta 融资 3000 万美元，将智能体集群引入抵押贷款机构",
+      "originalTitle": "Vesta raises $30M to bring swarms of agents to mortgage lenders",
+      "subject": "Vesta",
+      "action": "raises",
+      "object": "$30M to bring swarms of agents to mortgage lenders",
+      "metrics": [
+        "$30 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-79f950e57d58f374"
+      ],
+      "entityNames": [
+        "Vesta"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-6c30103d03b594bc",
+          "subject": "Vesta",
+          "object": "$30M to bring swarms of agents to mortgage lenders",
+          "quote": "Vesta, an AI-native software startup that helps lenders originate mortgages, announced on Thursday that it raised a $30 million round led by Conversion Capital."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-8eabd0bad8188b4c",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Vesta, an AI-native software startup that helps lenders originate mortgages, announced on Thursday that it raised a $30 million round led by Conversion Capital."
+    },
+    {
+      "id": "EV-335e20434f304224",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "德国女性创立初创公司Finches融资200万欧元，将AI早期预警引入农业采购",
+      "originalTitle": "German female-founded startup Finches raises €2 million to bring AI early warnings to agricultural sourcing",
+      "subject": "German female-founded startup Finches",
+      "action": "raises",
+      "object": "€2 million to bring AI early warnings to agricultural sourcing",
+      "metrics": [
+        "€2 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-5e53d39e9b6031d4",
+        "EN-51a1da50598f9758"
+      ],
+      "entityNames": [
+        "Finches",
+        "German female-founded startup Finches"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-5b6a3b7730cfce67",
+          "subject": "German female-founded startup Finches",
+          "object": "€2 million to bring AI early warnings to agricultural sourcing",
+          "quote": "HomeGermany-StartupsGerman female-founded startup Finches raises €2 million to bring AI early warnings..."
+        },
+        {
+          "id": "CL-32e60ade58513450",
+          "subject": "German female-founded startup Finches",
+          "object": "€2 million to bring AI early warnings to agricultural sourcing",
+          "quote": "German female-founded startup Finches raises €2 million to bring AI early warnings to agricultural sourcing"
+        },
+        {
+          "id": "CL-430b485489e41571",
+          "subject": "German female-founded startup Finches",
+          "object": "€2 million to bring AI early warnings to agricultural sourcing",
+          "quote": "Finches, a Bavaria-based startup developing AI for agricultural procurement, has raised €2 million in a pre-Seed funding round to accelerate product development and expand its sales operations."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a95cde0553c4058b",
+          "publisher": "www.eu-startups.com",
+          "url": "https://www.eu-startups.com/2026/10/bavarias-female-founded-startup-finches-raises-e2-million-to-bring-ai-early-warnings-to-agricultural-procurement/"
+        }
+      ],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/bavarias-female-founded-startup-finches-raises-e2-million-to-bring-ai-early-warnings-to-agricultural-procurement/",
+      "publisher": "www.eu-startups.com",
+      "sourceExcerpt": "HomeGermany-StartupsGerman female-founded startup Finches raises €2 million to bring AI early warnings..."
+    },
+    {
+      "id": "EV-53d3d485f2b3d64e",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Cal AI 的 19 岁创始人为其新 AI 初创公司融资 1000 万美元",
+      "originalTitle": "Cal AI&#8217;s 19-year-old founder just raised $10M for his new AI startup",
+      "subject": "Cal AI&#8217;s 19-year-old founder just",
+      "action": "raised",
+      "object": "$10M for his new AI startup",
+      "metrics": [
+        "$10 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-006e39f60f196420"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-006e39f60f196420"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-006e39f60f196420"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-006e39f60f196420"
+      ],
+      "entityNames": [
+        "Zach Yadegari"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-200aa2916fc3275d",
+          "subject": "Cal AI&#8217;s 19-year-old founder just",
+          "object": "$10M for his new AI startup",
+          "quote": "Zach Yadegari, the teen co-founder of calorie tracking app Cal AI, has launched Persona, a new AI agent startup, and already raised $10 million."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e8e33a7960ca396c",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Zach Yadegari, the teen co-founder of calorie tracking app Cal AI, has launched Persona, a new AI agent startup, and already raised $10 million."
+    },
+    {
+      "id": "EV-558abe2d6c2074af",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Gallatin AI 宣布 5000 万美元 A 轮融资，以加速军事后勤转型",
+      "originalTitle": "Gallatin AI Announces $50 Million Series A to Accelerate Transformation of Military Logistics",
+      "subject": "Gallatin AI Announces $50 Million",
+      "action": "Series A",
+      "object": "to Accelerate Transformation of Military Logistics",
+      "metrics": [
+        "$50 million",
+        "$70 million"
+      ],
+      "locations": [
+        "US",
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "logistics_supply_chain",
+            "name": "物流与供应链",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "logistics_supply_chain",
+          "name": "物流与供应链",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "logistics_supply_chain",
+          "name": "物流与供应链",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a3420268edf39d12",
+        "EN-8c1f01688a28c8c1"
+      ],
+      "entityNames": [
+        "EL SEGUNDO",
+        "Gallatin AI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-8b333b8e793041d5",
+          "subject": "Gallatin AI Announces $50 Million",
+          "object": "to Accelerate Transformation of Military Logistics",
+          "quote": "EL SEGUNDO, Calif., Oct. 8, 2026 /PRNewswire/ -- Gallatin AI, Inc., an AI-native logistics company transforming sustainment decision-making for the U.S. military, today announced $50 million in Series A financing."
+        },
+        {
+          "id": "CL-adc43e997ba9a7e7",
+          "subject": "Gallatin AI Announces $50 Million",
+          "object": "to Accelerate Transformation of Military Logistics",
+          "quote": "\"I'm grateful to our early partners across the military logistics community for trusting us with some of the world's most complex sustainment challenges,\" said Woody Glier, Gallatin's CEO. \"This Series A is an important milestone."
+        },
+        {
+          "id": "CL-6d762b2bffe57797",
+          "subject": "Gallatin AI Announces $50 Million",
+          "object": "to Accelerate Transformation of Military Logistics",
+          "quote": "This funding round follows a successful seed financing in 2024, bringing the total amount raised by Gallatin to $70 million."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ea2ab58132909f9c",
+          "publisher": "www.prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/gallatin-ai-announces-50-million-series-a-to-accelerate-transformation-of-military-logistics-302902399.html"
+        }
+      ],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/gallatin-ai-announces-50-million-series-a-to-accelerate-transformation-of-military-logistics-302902399.html",
+      "publisher": "www.prnewswire.com",
+      "sourceExcerpt": "EL SEGUNDO, Calif., Oct. 8, 2026 /PRNewswire/ -- Gallatin AI, Inc., an AI-native logistics company transforming sustainment decision-making for the U.S. military, today announced $50 million in Series A financing."
+    },
+    {
+      "id": "EV-55ed36eee8ffa4bd",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Cal AI联创Zach Yadegari新创AI智能体公司Persona，已获1000万美元融资",
+      "originalTitle": "",
+      "subject": "Cal AI联创Zach Yadegari新创AI智能体公司Persona，已获1000万美元",
+      "action": "融资",
+      "object": "Cal AI联创Zach Yadegari新创AI智能体公司Persona，已获1000万美元融资",
+      "metrics": [
+        "1000万",
+        "$10M",
+        "$10 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-006e39f60f196420"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-006e39f60f196420"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-006e39f60f196420"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-006e39f60f196420"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-006e39f60f196420"
+      ],
+      "entityNames": [
+        "Zach Yadegari"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-ca895da154360721",
+          "subject": "Cal AI联创Zach Yadegari新创AI智能体公司Persona，已获1000万美元",
+          "object": "Cal AI联合创始人Zach Yadegari于2026年10月宣布创立AI智能体初创公司Persona，并已完成1000万美元融资。",
+          "quote": "Cal AI联合创始人Zach Yadegari于2026年10月宣布创立AI智能体初创公司Persona，并已完成1000万美元融资。"
+        },
+        {
+          "id": "CL-d97a886ac1c77e2e",
+          "subject": "Cal AI联创Zach Yadegari新创AI智能体公司Persona，已获1000万美元",
+          "object": "2026-10-08 22:00 | TechCrunch：Cal AI’s 19-year-old founder just raised $10M for his new AI startup",
+          "quote": "2026-10-08 22:00 | TechCrunch：Cal AI’s 19-year-old founder just raised $10M for his new AI startup"
+        },
+        {
+          "id": "CL-e3a806157b645d86",
+          "subject": "Cal AI联创Zach Yadegari新创AI智能体公司Persona，已获1000万美元",
+          "object": "Zach Yadegari, the teen co-founder of calorie tracking app Cal AI, has launched Persona, a new AI agent startup, and already raised $10 million.",
+          "quote": "Zach Yadegari, the teen co-founder of calorie tracking app Cal AI, has launched Persona, a new AI agent startup, and already raised $10 million."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-55967c1d7e42989e",
+          "publisher": "ai123.com",
+          "url": "https://ai123.com/news/14790"
+        }
+      ],
+      "sourceUrl": "https://ai123.com/news/14790",
+      "publisher": "ai123.com",
+      "sourceExcerpt": "Cal AI联合创始人Zach Yadegari于2026年10月宣布创立AI智能体初创公司Persona，并已完成1000万美元融资。"
+    },
+    {
+      "id": "EV-60beaa2e14a34fc9",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "哥本哈根的 TODAY 筹集 280 万欧元，为金融和保险顾问带来合规的 AI 智能体",
+      "originalTitle": "Copenhagen’s TODAY raises €2.8 million to bring compliant AI agents to financial and insurance advisors",
+      "subject": "Copenhagen’s TODAY",
+      "action": "raises",
+      "object": "€2.8 million to bring compliant AI agents to financial and insurance advisors",
+      "metrics": [
+        "€2.8 million",
+        "€2 million",
+        "€2.8\nmillion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-804918e60b0894fa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-804918e60b0894fa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-804918e60b0894fa"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-e0f4f767ac88a930"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-804918e60b0894fa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-804918e60b0894fa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-e0f4f767ac88a930"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-804918e60b0894fa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-804918e60b0894fa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-e0f4f767ac88a930"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e0f4f767ac88a930",
+        "EN-804918e60b0894fa"
+      ],
+      "entityNames": [
+        "TODAY",
+        "Copenhagen’s TODAY"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-1b948131984839b8",
+          "subject": "Copenhagen’s TODAY",
+          "object": "€2.8 million to bring compliant AI agents to financial and insurance advisors",
+          "quote": "HomeDenmark-StartupsCopenhagen’s TODAY raises €2.8 million to bring compliant AI agents to financial..."
+        },
+        {
+          "id": "CL-8c50c47bab7436d1",
+          "subject": "Copenhagen’s TODAY",
+          "object": "€2.8 million to bring compliant AI agents to financial and insurance advisors",
+          "quote": "Copenhagen’s TODAY raises €2.8 million to bring compliant AI agents to financial and insurance advisors"
+        },
+        {
+          "id": "CL-192f9b0c1664f0e7",
+          "subject": "Copenhagen’s TODAY",
+          "object": "€2.8 million to bring compliant AI agents to financial and insurance advisors",
+          "quote": "TODAY, a Copenhagen-based startup offering an AI sales operating system for financial and insurance advisors has secured €2.8 million in Seed funding."
+        },
+        {
+          "id": "CL-f3a853bde497d376",
+          "subject": "Copenhagen’s TODAY",
+          "object": "€2.8 million to bring compliant AI agents to financial and insurance advisors",
+          "quote": "Previous articleGerman female-founded startup Finches raises €2 million to bring AI early warnings to agricultural sourcing"
+        },
+        {
+          "id": "CL-1405b74a1fcea197",
+          "subject": "TODAY",
+          "object": "€2.8 million in seed funding",
+          "quote": "TODAY, an AI startup helping financial and insurance advisors automate their work has raised €2.8 million in seed funding."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-5d5522a7613db775",
+          "publisher": "www.eu-startups.com",
+          "url": "https://www.eu-startups.com/2026/10/copenhagens-today-raises-e2-8-million-to-bring-compliant-ai-agents-to-financial-and-insurance-advisors/"
+        },
+        {
+          "id": "SA-8ae08a14a84b8d24",
+          "publisher": "tech.eu",
+          "url": "https://tech.eu/2026/10/08/today-lands-eur28m-to-scale-its-ai-platform-for-financial-advisors/"
+        }
+      ],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/copenhagens-today-raises-e2-8-million-to-bring-compliant-ai-agents-to-financial-and-insurance-advisors/",
+      "publisher": "www.eu-startups.com",
+      "sourceExcerpt": "HomeDenmark-StartupsCopenhagen’s TODAY raises €2.8 million to bring compliant AI agents to financial..."
+    },
+    {
+      "id": "EV-622c77a021ef08de",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "中国Manus在与Meta分拆后首轮融资中筹集超5亿美元",
+      "originalTitle": "China&#8217;s Manus raises over $500M in first funding round since split with Meta",
+      "subject": "China&#8217;s Manus",
+      "action": "raises",
+      "object": "over $500M in first funding round since split with Meta",
+      "metrics": [
+        "$500 million",
+        "$2 billion",
+        "$4 billion"
+      ],
+      "locations": [
+        "China"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "Meta",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-cb6ffb18b5675e98",
+          "subject": "China&#8217;s Manus",
+          "object": "over $500M in first funding round since split with Meta",
+          "quote": "Chinese AI lab Manus’ parent company, Butterfly Effect, said on Thursday in a WeChat post that it has raised more than $500 million, the company’s first funding round since Meta was forced to call off its $2 billion acquisition of the startup."
+        },
+        {
+          "id": "CL-7f1dcd563b0222a7",
+          "subject": "China&#8217;s Manus",
+          "object": "over $500M in first funding round since split with Meta",
+          "quote": "Boyu Capital and IDG Capital led the funding round, and existing shareholders Tencent, HSG (formerly known as Sequoia China), ZhenFund, and others also participated."
+        },
+        {
+          "id": "CL-9cd14fa4a6e6cbe2",
+          "subject": "China&#8217;s Manus",
+          "object": "over $500M in first funding round since split with Meta",
+          "quote": "Manus did not disclose its valuation, but last month was said to be in talks with investors to raise $500 million at a $4 billion valuation."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-3156680eab24d9fc",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Chinese AI lab Manus’ parent company, Butterfly Effect, said on Thursday in a WeChat post that it has raised more than $500 million, the company’s first funding round since Meta was forced to call off its $2 billion acquisition of the startup."
+    },
+    {
+      "id": "EV-6d646383629d5b15",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Neela Biotech 为 AI 驱动的可持续燃料技术融资 210 万英镑",
+      "originalTitle": "Neela Biotech raises £2.1m for AI-driven sustainable fuel technology",
+      "subject": "Neela Biotech",
+      "action": "raises",
+      "object": "£2.1m for AI-driven sustainable fuel technology",
+      "metrics": [
+        "£2.1 million",
+        "£2.1m",
+        "£3.2 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d976b61012f48e17",
+        "EN-403c32f815f04d40"
+      ],
+      "entityNames": [
+        "Neela Biotech",
+        "52North"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-5ebe1be0bcfc10f2",
+          "subject": "Neela Biotech",
+          "object": "£2.1m for AI-driven sustainable fuel technology",
+          "quote": "Neela Biotech, the Cambridge-based biotech startup turning waste into sustainable aviation fuel (SAF), today announced it has raised £2.1 million in pre-seed funding to take its technology from the lab to a pilot-scale trial at a biogas plant over the next two years."
+        },
+        {
+          "id": "CL-b45c2cfccbd38292",
+          "subject": "Neela Biotech",
+          "object": "£2.1m for AI-driven sustainable fuel technology",
+          "quote": "Neela is also part of the IAG innovation program and has secured grant funding from Innovate UK and the Henry Royce Institute."
+        },
+        {
+          "id": "CL-c9a9006b383b92ee",
+          "subject": "Neela Biotech",
+          "object": "£2.1m for AI-driven sustainable fuel technology",
+          "quote": "Neela Biotech raises £2.1m"
+        },
+        {
+          "id": "CL-5b96661f6993e6b6",
+          "subject": "Neela Biotech",
+          "object": "£2.1m for AI-driven sustainable fuel technology",
+          "quote": "52North raises £3.2 million to transform urgent cancer care"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-5918d5a2b1f0d5db",
+          "publisher": "www.enterprise.cam.ac.uk",
+          "url": "https://www.enterprise.cam.ac.uk/news/neela-biotech-raises-2-1-million/"
+        }
+      ],
+      "sourceUrl": "https://www.enterprise.cam.ac.uk/news/neela-biotech-raises-2-1-million/",
+      "publisher": "www.enterprise.cam.ac.uk",
+      "sourceExcerpt": "Neela Biotech, the Cambridge-based biotech startup turning waste into sustainable aviation fuel (SAF), today announced it has raised £2.1 million in pre-seed funding to take its technology from the lab to a pilot-scale trial at a biogas plant over the next two years."
+    },
+    {
+      "id": "EV-7a0dc6ce13dd0c19",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "「本溯智能」完成种子轮融资，押注动作原生具身模型",
+      "originalTitle": "",
+      "subject": "本溯智能",
+      "action": "完成种子轮融资",
+      "object": "，押注动作原生具身模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ddb85b288238f5fe",
+        "EN-23fe64218452edbd"
+      ],
+      "entityNames": [
+        "「本溯智能」",
+        "本溯智能"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-4505884b0e8573b1",
+          "subject": "本溯智能",
+          "object": "由五源资本领投，常春藤资本、线性资本、华山资本（WestSummit Capital）参与投资的融资",
+          "quote": "本溯智能已获得由五源资本领投的融资，常春藤资本、线性资本、华山资本（WestSummit Capital）参与投资。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7ccd401520d83335",
+          "publisher": "news.pedaily.cn",
+          "url": "https://news.pedaily.cn/202610/569906.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202610/569906.shtml",
+      "publisher": "news.pedaily.cn",
+      "sourceExcerpt": "本溯智能已获得由五源资本领投的融资，常春藤资本、线性资本、华山资本（WestSummit Capital）参与投资。"
+    },
+    {
+      "id": "EV-cdcdea720885d037",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+      "originalTitle": "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
+      "subject": "Arena",
+      "action": "funding",
+      "object": "$200 million Series B round at a $3.1 billion valuation",
+      "metrics": [
+        "$200 million",
+        "$3.1 billion",
+        "$150 million",
+        "$1.7 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-572e31f55b6ac1b1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-572e31f55b6ac1b1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-572e31f55b6ac1b1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-572e31f55b6ac1b1"
+      ],
+      "entityNames": [
+        "Arena"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-030250375c43c133",
+          "subject": "Arena",
+          "object": "$200 million Series B round at a $3.1 billion valuation",
+          "quote": "Arena, which originated in 2023 as a research project at UC Berkeley that crowdsourced rankings of AI models, has raised a $200 million Series B round at a $3.1 billion valuation, it said on Thursday."
+        },
+        {
+          "id": "CL-512a2d71b75d710f",
+          "subject": "Arena",
+          "object": "$150 million Series A in January at a $1.7 billion post-money valuation",
+          "quote": "Arena previously announced a $150 million Series A in January at a $1.7 billion post-money valuation."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9f82e814a4a5a801",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Arena, which originated in 2023 as a research project at UC Berkeley that crowdsourced rankings of AI models, has raised a $200 million Series B round at a $3.1 billion valuation, it said on Thursday."
+    },
+    {
+      "id": "EV-ce32b416f60cec1d",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "伦敦的IMMIX获得312万欧元，用于构建超越美元稳定币支付的外汇基础设施",
+      "originalTitle": "London’s IMMIX secures €3.12 million to build FX infrastructure for stablecoin payments beyond the US dollar",
+      "subject": "London’s IMMIX",
+      "action": "secures",
+      "object": "€3.12 million to build FX infrastructure for stablecoin payments beyond the US dollar",
+      "metrics": [
+        "€3.12 million",
+        "$3.5 million"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c815c722997baaf4",
+        "EN-89e6786ffde729eb"
+      ],
+      "entityNames": [
+        "IMMIX",
+        "London’s IMMIX"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-5c47e1ca4a86180e",
+          "subject": "London’s IMMIX",
+          "object": "€3.12 million to build FX infrastructure for stablecoin payments beyond the US dollar",
+          "quote": "HomeUK-StartupsLondon’s IMMIX secures €3.12 million to build FX infrastructure for stablecoin payments..."
+        },
+        {
+          "id": "CL-13598cac1c7e5556",
+          "subject": "London’s IMMIX",
+          "object": "€3.12 million to build FX infrastructure for stablecoin payments beyond the US dollar",
+          "quote": "London’s IMMIX secures €3.12 million to build FX infrastructure for stablecoin payments beyond the US dollar"
+        },
+        {
+          "id": "CL-2319c39c49aaa40e",
+          "subject": "London’s IMMIX",
+          "object": "€3.12 million to build FX infrastructure for stablecoin payments beyond the US dollar",
+          "quote": "IMMIX, a London-based AI-native trading firm that helps payment companies exchange stablecoins between currencies, has raised €3.12 million ($3.5 million) in funding."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9a5a539f9897523f",
+          "publisher": "www.eu-startups.com",
+          "url": "https://www.eu-startups.com/2026/10/londons-immix-secures-e3-12-million-to-build-fx-infrastructure-for-stablecoin-payments-beyond-the-us-dollar/"
+        }
+      ],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/londons-immix-secures-e3-12-million-to-build-fx-infrastructure-for-stablecoin-payments-beyond-the-us-dollar/",
+      "publisher": "www.eu-startups.com",
+      "sourceExcerpt": "HomeUK-StartupsLondon’s IMMIX secures €3.12 million to build FX infrastructure for stablecoin payments..."
+    },
+    {
+      "id": "EV-d6ef2e46d3005d9b",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "厘清智能完成数亿元天使轮及天使+轮融资，进一步完善Physical AI Infra",
+      "originalTitle": "",
+      "subject": "厘清智能",
+      "action": "完成数亿元天使轮及天使+轮融资",
+      "object": "，进一步完善Physical AI Infra",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-a244384ccfb8ec48"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-a244384ccfb8ec48"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-a244384ccfb8ec48"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a244384ccfb8ec48"
+      ],
+      "entityNames": [
+        "厘清智能"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-39f92a5f17918a04",
+          "subject": "厘清智能",
+          "object": "，进一步完善Physical AI Infra",
+          "quote": "投资界（ID：pedaily2012）10月8日消息，Physical AI Infra 平台公司厘清智能完成天使轮及天使+轮数亿元融资。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-db6b166a1c3eea76",
+          "publisher": "news.pedaily.cn",
+          "url": "https://news.pedaily.cn/202610/569895.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202610/569895.shtml",
+      "publisher": "news.pedaily.cn",
+      "sourceExcerpt": "投资界（ID：pedaily2012）10月8日消息，Physical AI Infra 平台公司厘清智能完成天使轮及天使+轮数亿元融资。"
+    },
+    {
+      "id": "EV-f7b689602574677a",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "剑桥生物技术初创公司Neela融资210万英镑，将废弃物转化为航空燃料",
+      "originalTitle": "Cambridge biotech startup Neela raises £2.1m to turn waste into aviation fuel",
+      "subject": "Cambridge biotech startup Neela",
+      "action": "raises",
+      "object": "£2.1m to turn waste into aviation fuel",
+      "metrics": [
+        "£2.1m"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0974d0f5e33d87c6"
+      ],
+      "entityNames": [
+        "Cambridge biotech startup Neela"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-5fb3f96982c4c8dd",
+          "subject": "Cambridge biotech startup Neela",
+          "object": "£2.1m to turn waste into aviation fuel",
+          "quote": "Cambridge-based startup Neela Biotech has raised £2.1m in pre-seed funding to scale its AI-driven technology that converts food, agricultural and forestry waste into sustainable aviation fuel (SAF)."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-92badbf4b13c1892",
+          "publisher": "www.uktech.news",
+          "url": "https://www.uktech.news/biotech/cambridge-biotech-startup-neela-raises-2-1m-to-turn-waste-into-aviation-fuel-20261008"
+        }
+      ],
+      "sourceUrl": "https://www.uktech.news/biotech/cambridge-biotech-startup-neela-raises-2-1m-to-turn-waste-into-aviation-fuel-20261008",
+      "publisher": "www.uktech.news",
+      "sourceExcerpt": "Cambridge-based startup Neela Biotech has raised £2.1m in pre-seed funding to scale its AI-driven technology that converts food, agricultural and forestry waste into sustainable aviation fuel (SAF)."
+    },
+    {
       "id": "EV-03938561933f2961",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "funding",
@@ -64,11 +1452,11 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "巴黎的Rivercell结束隐身模式，获€22m构建人类细胞的AI世界模型",
-      "originalTitle": "Paris-based Rivercell exits stealth with €22m to build an AI world model of human cells",
+      "title": "法国Rivercell结束隐身模式，获2200万欧元用于AI驱动的药物发现基础设施",
+      "originalTitle": "France&#8217;s Rivercell emerges from stealth with €22 million for AI-powered drug discovery infrastructure",
       "subject": "Rivercell",
       "action": "funding",
-      "object": "€22 million seed round led by HV",
+      "object": "€22 million Seed round",
       "metrics": [
         "€22 million",
         "$25 million"
@@ -99,22 +1487,22 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-a5acce0fd2e768dd",
+          "id": "CL-8c8cc197d0f24d7d",
           "subject": "Rivercell",
-          "object": "€22 million seed round led by HV",
-          "quote": "Rivercell, a Paris-based company working at the intersection of biotechnology and artificial intelligence, has come out of stealth with a €22 million ($25 million) seed round, according to reporting by EU-Startups and Sifted."
+          "object": "€22 million Seed round",
+          "quote": "Rivercell, a Paris-based BioTech and AI company building proprietary cell-response data infrastructure and a world model that predicts how human cells respond to treatment, has launched today out of stealth with a €22 million ($25 million) Seed round."
         }
       ],
       "sources": [
         {
-          "id": "SA-ba674a38514d82d5",
-          "publisher": "www.afroeuropa.com",
-          "url": "https://www.afroeuropa.com/article/paris-based-rivercell-exits-stealth-with-22m-to-build-an-ai-world-model-of-human-cells"
+          "id": "SA-06bc3b12672a618c",
+          "publisher": "www.eu-startups.com",
+          "url": "https://www.eu-startups.com/2026/10/frances-rivercell-emerges-from-stealth-with-e22-million-for-ai-powered-drug-discovery-infrastructure/"
         }
       ],
-      "sourceUrl": "https://www.afroeuropa.com/article/paris-based-rivercell-exits-stealth-with-22m-to-build-an-ai-world-model-of-human-cells",
-      "publisher": "www.afroeuropa.com",
-      "sourceExcerpt": "Rivercell, a Paris-based company working at the intersection of biotechnology and artificial intelligence, has come out of stealth with a €22 million ($25 million) seed round, according to reporting by EU-Startups and Sifted."
+      "sourceUrl": "https://www.eu-startups.com/2026/10/frances-rivercell-emerges-from-stealth-with-e22-million-for-ai-powered-drug-discovery-infrastructure/",
+      "publisher": "www.eu-startups.com",
+      "sourceExcerpt": "Rivercell, a Paris-based BioTech and AI company building proprietary cell-response data infrastructure and a world model that predicts how human cells respond to treatment, has launched today out of stealth with a €22 million ($25 million) Seed round."
     },
     {
       "id": "EV-115f9901176fd251",
@@ -198,7 +1586,7 @@
     },
     {
       "id": "EV-215ea259173fa6b4",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "funding",
@@ -284,19 +1672,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-f3a94076dca3262d",
+          "id": "CL-b2db002bf0db6c41",
           "subject": "France- and Italy-based Netsec",
           "object": "over €8.93 million to scale its AI-native solution for cybersecurity and IT",
           "quote": "HomeFrance-StartupsFrance- and Italy-based Netsec raises over €8.93 million to scale its AI-native..."
         },
         {
-          "id": "CL-5ec7e23d472d1bad",
+          "id": "CL-2f37fbcc69a25973",
           "subject": "France- and Italy-based Netsec",
           "object": "over €8.93 million to scale its AI-native solution for cybersecurity and IT",
           "quote": "France- and Italy-based Netsec raises over €8.93 million to scale its AI-native solution for cybersecurity and IT"
         },
         {
-          "id": "CL-667890697125f61e",
+          "id": "CL-66e9bc3146476195",
           "subject": "France- and Italy-based Netsec",
           "object": "over €8.93 million to scale its AI-native solution for cybersecurity and IT",
           "quote": "Netsec, the European provider of cybersecurity and managed IT services, has raised more than €8.93 million ($10 million) in equity funding."
@@ -304,18 +1692,83 @@
       ],
       "sources": [
         {
-          "id": "SA-f8719954ff0486f9",
+          "id": "SA-6b8953fd681ab2ce",
           "publisher": "www.eu-startups.com",
-          "url": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it"
+          "url": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/"
         }
       ],
-      "sourceUrl": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it",
+      "sourceUrl": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/",
       "publisher": "www.eu-startups.com",
       "sourceExcerpt": "HomeFrance-StartupsFrance- and Italy-based Netsec raises over €8.93 million to scale its AI-native..."
     },
     {
+      "id": "EV-29f2c76eb4f9b2d4",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-07",
+      "updatedDate": "2026-10-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "前字节跳动实习生创办的2亿美元AI实验室挑战李飞飞",
+      "originalTitle": "Ex-ByteDance Intern’s $200 Million AI Lab Takes On Fei-Fei Li",
+      "subject": "Tian Keyu's research lab",
+      "action": "funding",
+      "object": "close to $30 million from investors including Moonshot-backer 5Y and IDG Capital",
+      "metrics": [
+        "$30 million",
+        "$200 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7931592d9e340b80",
+        "EN-5388bc10736a0eff"
+      ],
+      "entityNames": [
+        "Tian Keyu's research lab",
+        "ByteDance"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-68eaeeaf697d375a",
+          "subject": "Tian Keyu's research lab",
+          "object": "close to $30 million from investors including Moonshot-backer 5Y and IDG Capital",
+          "quote": "it’s raised close to $30 million from investors including Moonshot-backer 5Y and IDG Capital, valuing his company at $200 million after the investment"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-8527045cb6d7d2cf",
+          "publisher": "www.bloomberg.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-07/ex-bytedance-intern-s-200-million-ai-lab-takes-on-fei-fei-li"
+        }
+      ],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-10-07/ex-bytedance-intern-s-200-million-ai-lab-takes-on-fei-fei-li",
+      "publisher": "www.bloomberg.com",
+      "sourceExcerpt": "it’s raised close to $30 million from investors including Moonshot-backer 5Y and IDG Capital, valuing his company at $200 million after the investment"
+    },
+    {
       "id": "EV-5b59ff829e596b56",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "funding",
@@ -396,13 +1849,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-dec35a05cd5524bd",
+          "id": "CL-6f1587fb33f36a0d",
           "subject": "Healthleap",
           "object": "$38M for its AI that flags hospital patients who may need a closer look",
           "quote": "Healthleap, a startup building an AI platform that reads patient records to identify patients at risk of undiagnosed illnesses, has raised $38 million in seed and Series A funding, TechCrunch has exclusively learned."
         },
         {
-          "id": "CL-4f3f7a63b7e0a7a4",
+          "id": "CL-8cd95647dae25dab",
           "subject": "Healthleap",
           "object": "$38M for its AI that flags hospital patients who may need a closer look",
           "quote": "The financing includes an $8 million seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures."
@@ -410,7 +1863,7 @@
       ],
       "sources": [
         {
-          "id": "SA-c1c6cf460ae75ba2",
+          "id": "SA-c3c4c13dccafb452",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/"
         }
@@ -420,8 +1873,125 @@
       "sourceExcerpt": "Healthleap, a startup building an AI platform that reads patient records to identify patients at risk of undiagnosed illnesses, has raised $38 million in seed and Series A funding, TechCrunch has exclusively learned."
     },
     {
+      "id": "EV-5db7347d93859de3",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-07",
+      "updatedDate": "2026-10-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Stuut 获得 $52.5M B 轮融资，以扩展 AI 代理在订单到收款全流程中的应用",
+      "originalTitle": "",
+      "subject": "Stuut 获得 $52.5M B 轮",
+      "action": "融资",
+      "object": "，以扩展 AI 代理在订单到收款全流程中的应用",
+      "metrics": [
+        "$52.5 million",
+        "$93 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c59612d0754423d9",
+          "subject": "Stuut 获得 $52.5M B 轮",
+          "object": "，以扩展 AI 代理在订单到收款全流程中的应用",
+          "quote": "Stuut押注 AI 代理能够将这项工作一直推进到付款阶段，投资者正以新的 $52.5 million B 轮融资支持该公司。"
+        },
+        {
+          "id": "CL-78d1b79627e602b6",
+          "subject": "Stuut 获得 $52.5M B 轮",
+          "object": "，以扩展 AI 代理在订单到收款全流程中的应用",
+          "quote": "此次融资使 Stuut 进入更广泛的向 执行业务工作流的代理式 AI 的转变。"
+        },
+        {
+          "id": "CL-9b9a30a95f09b001",
+          "subject": "Stuut 获得 $52.5M B 轮",
+          "object": "，以扩展 AI 代理在订单到收款全流程中的应用",
+          "quote": "该轮融资于 10 月 7 日宣布，由 Insight Partners领投，Andreessen Horowitz和 M12, Microsoft’s venture fund参与。"
+        },
+        {
+          "id": "CL-aed0df47a75d942a",
+          "subject": "Stuut 获得 $52.5M B 轮",
+          "object": "，以扩展 AI 代理在订单到收款全流程中的应用",
+          "quote": "此轮使这家位于纽约的公司累计融资额达到 $93 million，仅在 A 轮后十个月。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-abc5cf7daeac9adb",
+          "publisher": "www.unite.ai",
+          "url": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/"
+        }
+      ],
+      "sourceUrl": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/",
+      "publisher": "www.unite.ai",
+      "sourceExcerpt": "Stuut押注 AI 代理能够将这项工作一直推进到付款阶段，投资者正以新的 $52.5 million B 轮融资支持该公司。"
+    },
+    {
       "id": "EV-6b668e4655192209",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "acquisition",
@@ -531,19 +2101,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-d0f757845fffae37",
+          "id": "CL-52ce1f95f9836fa9",
           "subject": "Nvidia",
           "object": "Hugging Face",
           "quote": "the biggest was Nvidia’s acquisition of open model development platform Hugging Face for $12.93 billion"
         },
         {
-          "id": "CL-b7b50b5eb0cae4f4",
+          "id": "CL-a73799e9a468d2c8",
           "subject": "AMD",
           "object": "World Labs",
           "quote": "The next-biggest M&A deal was AMD’s purchase last week of World Labs, an AI model and research lab led by AI pioneer Fei-Fei Li, in a stock deal valued around $8.2 billion."
         },
         {
-          "id": "CL-0f8e47311f5e31bb",
+          "id": "CL-c157c89803238357",
           "subject": "Stripe",
           "object": "OpenRouter",
           "quote": "Not far behind, in third place, was Stripe’s acquisition of OpenRouter, a startup that routes prompts through different AI models, in an August transaction reportedly valued around $7.5 billion."
@@ -551,7 +2121,7 @@
       ],
       "sources": [
         {
-          "id": "SA-2fdc590a11d13dd8",
+          "id": "SA-74b10757f67139dc",
           "publisher": "news.crunchbase.com",
           "url": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/"
         }
@@ -561,8 +2131,77 @@
       "sourceExcerpt": "the biggest was Nvidia’s acquisition of open model development platform Hugging Face for $12.93 billion"
     },
     {
+      "id": "EV-756708b78b427477",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-07",
+      "updatedDate": "2026-10-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "教育科技公司 byteXL 融资 900 万美元，投资者支持与高校联动的 AI 技能培训模式",
+      "originalTitle": "Edtech firm byteXL raises $9M as investors back college-linked AI skilling model",
+      "subject": "Edtech firm byteXL",
+      "action": "raises",
+      "object": "$9M as investors back college-linked AI skilling model",
+      "metrics": [
+        "$9 million",
+        "$5.9 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3fd6ed252b4e3196"
+      ],
+      "entityNames": [
+        "Edtech firm byteXL"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-2f5a670dc38304d9",
+          "subject": "Edtech firm byteXL",
+          "object": "$9M as investors back college-linked AI skilling model",
+          "quote": "Edtech company byteXL has raised $9 million in its latest funding round, led by Elevar Equity, an impact investor, with participation from existing investors Kalaari Capital, an early-stage VC, and The Michael & Susan Dell Foundation, a philanthropic foundation."
+        },
+        {
+          "id": "CL-8cc6e9e0867699dd",
+          "subject": "Edtech firm byteXL",
+          "object": "$9M as investors back college-linked AI skilling model",
+          "quote": "The Hyderabad-based startup’s latest round follows a $5.9 million Series A raised in July 2024."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a45b16b0b351e51a",
+          "publisher": "yourstory.com",
+          "url": "https://yourstory.com/2026/10/edtech-firm-bytexl-9m-investors-back-college-linked-ai-skilling-model"
+        }
+      ],
+      "sourceUrl": "https://yourstory.com/2026/10/edtech-firm-bytexl-9m-investors-back-college-linked-ai-skilling-model",
+      "publisher": "yourstory.com",
+      "sourceExcerpt": "Edtech company byteXL has raised $9 million in its latest funding round, led by Elevar Equity, an impact investor, with participation from existing investors Kalaari Capital, an early-stage VC, and The Michael & Susan Dell Foundation, a philanthropic foundation."
+    },
+    {
       "id": "EV-80fce5a60752ce60",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "funding",
@@ -643,49 +2282,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-fa6d96f5abfdb932",
+          "id": "CL-1d3da10b38dcf080",
           "subject": "UK-based InsurTech Konsileo",
           "object": "€5.9 million to expand its team and integrate AI",
           "quote": "HomeUK-StartupsUK-based InsurTech Konsileo raises €5.9 million to expand its team and integrate..."
         },
         {
-          "id": "CL-32c71a2c0d528d8e",
+          "id": "CL-c82a690ddcae9a83",
           "subject": "UK-based InsurTech Konsileo",
           "object": "€5.9 million to expand its team and integrate AI",
           "quote": "UK-based InsurTech Konsileo raises €5.9 million to expand its team and integrate AI"
         },
         {
-          "id": "CL-c57e4271f0d2306c",
+          "id": "CL-1096c40cc32159be",
           "subject": "UK-based InsurTech Konsileo",
           "object": "€5.9 million to expand its team and integrate AI",
           "quote": "Konsileo, a UK-based chartered insurance broker, has closed a €5.9 million (£5 million) equity round to support its continued growth."
         },
         {
-          "id": "CL-68469b67beb40045",
-          "subject": "UK-based InsurTech Konsileo",
-          "object": "€5.9 million to expand its team and integrate AI",
-          "quote": "Previous articleLondon’s Cori Clinical raises €3.56 million to accelerate clinical trials and reduce delays"
-        },
-        {
-          "id": "CL-fe788919a01dd6ff",
-          "subject": "UK-based InsurTech Konsileo",
-          "object": "€5.9 million to expand its team and integrate AI",
-          "quote": "HomeUK-StartupsUK-based InsurTech Konsileo raises €5.9 million to expand its team and integrate..."
-        },
-        {
-          "id": "CL-e2eb8b85b5b7128d",
-          "subject": "UK-based InsurTech Konsileo",
-          "object": "€5.9 million to expand its team and integrate AI",
-          "quote": "UK-based InsurTech Konsileo raises €5.9 million to expand its team and integrate AI"
-        },
-        {
-          "id": "CL-d6891c763aede5e9",
-          "subject": "UK-based InsurTech Konsileo",
-          "object": "€5.9 million to expand its team and integrate AI",
-          "quote": "Konsileo, a UK-based chartered insurance broker, has closed a €5.9 million (£5 million) equity round to support its continued growth."
-        },
-        {
-          "id": "CL-1b279ca930a990cc",
+          "id": "CL-d00c37db3ca6de15",
           "subject": "UK-based InsurTech Konsileo",
           "object": "€5.9 million to expand its team and integrate AI",
           "quote": "Previous articleLondon’s Cori Clinical raises €3.56 million to accelerate clinical trials and reduce delays"
@@ -693,17 +2308,12 @@
       ],
       "sources": [
         {
-          "id": "SA-461fdbb6ef6d166a",
-          "publisher": "www.eu-startups.com",
-          "url": "https://www.eu-startups.com/2026/10/uk-based-insurtech-konsileo-raises-e5-9-million-to-expand-its-team-and-integrate-ai"
-        },
-        {
           "id": "SA-b2815694ad6ca2f0",
           "publisher": "www.eu-startups.com",
           "url": "https://www.eu-startups.com/2026/10/uk-based-insurtech-konsileo-raises-e5-9-million-to-expand-its-team-and-integrate-ai/"
         }
       ],
-      "sourceUrl": "https://www.eu-startups.com/2026/10/uk-based-insurtech-konsileo-raises-e5-9-million-to-expand-its-team-and-integrate-ai",
+      "sourceUrl": "https://www.eu-startups.com/2026/10/uk-based-insurtech-konsileo-raises-e5-9-million-to-expand-its-team-and-integrate-ai/",
       "publisher": "www.eu-startups.com",
       "sourceExcerpt": "HomeUK-StartupsUK-based InsurTech Konsileo raises €5.9 million to expand its team and integrate..."
     },
@@ -778,7 +2388,7 @@
     },
     {
       "id": "EV-a48fb50d5019bb90",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "funding",
@@ -821,7 +2431,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-5c879295668c9621",
+          "id": "CL-d30daa25932ecc10",
           "subject": "Energy management platform Ionage",
           "object": "$1.3 Mn in pre Series A round",
           "quote": "&quot;AI enabled energy management platform Ionage has raised $1.3 million in a pre Series A funding round co-led by strategic investors and a consortium of CXOs from energy and infrastructure companies."
@@ -837,6 +2447,93 @@
       "sourceUrl": "https://entrackr.com/snippets/energy-management-platform-ionage-raises-13-mn-in-pre-series-a-round-12633801",
       "publisher": "entrackr.com",
       "sourceExcerpt": "&quot;AI enabled energy management platform Ionage has raised $1.3 million in a pre Series A funding round co-led by strategic investors and a consortium of CXOs from energy and infrastructure companies."
+    },
+    {
+      "id": "EV-ab0d2f95a9a76c3e",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-07",
+      "updatedDate": "2026-10-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "机器人数据初创公司 Mecka AI 获红杉资本 6000 万美元融资",
+      "originalTitle": "Robot data startup Mecka AI nabs $60M from Sequoia",
+      "subject": "Robot data startup Mecka AI",
+      "action": "nabs",
+      "object": "$60M from Sequoia",
+      "metrics": [
+        "$60M",
+        "$60 million",
+        "$500 million",
+        "$1.2 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-45d4fec2ad312ea7",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Robot data startup Mecka AI",
+        "NVIDIA",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-ca069bb87af2c2a2",
+          "subject": "Robot data startup Mecka AI",
+          "object": "$60M from Sequoia",
+          "quote": "Robot data startup Mecka AI nabs $60M from Sequoia"
+        },
+        {
+          "id": "CL-eeae476893042c1d",
+          "subject": "Robot data startup Mecka AI",
+          "object": "$60M from Sequoia",
+          "quote": "Mecka AI, a startup that collects and analyzes human motion data to train humanoid robots and other kinds of robots, announced it has raised a $60 million Series B round led by Sequoia, with participation from Nvidia, Microsoft’s venture fund M12, and others."
+        },
+        {
+          "id": "CL-24293a638e6cf2a9",
+          "subject": "Robot data startup Mecka AI",
+          "object": "$60M from Sequoia",
+          "quote": "TechCrunch had previously reported that the startup was nearing a new funding round at a $500 million valuation."
+        },
+        {
+          "id": "CL-30f2e61d416ee759",
+          "subject": "Robot data startup Mecka AI",
+          "object": "$60M from Sequoia",
+          "quote": "Other startups that collect real-world data for robot training include XDOF, which was in talks to raise a Series B round at a $1.2 billion valuation according to TechCrunch’s previous reporting."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ca638807633b6efa",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/07/robot-data-startup-mecka-ai-nabs-60m-from-sequoia/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/10/07/robot-data-startup-mecka-ai-nabs-60m-from-sequoia/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Robot data startup Mecka AI nabs $60M from Sequoia"
     },
     {
       "id": "EV-d9772412a89c2367",
@@ -918,7 +2615,7 @@
     },
     {
       "id": "EV-187a61fc05451d66",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -1001,7 +2698,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-b9dacba89f17c1a7",
+          "id": "CL-8085e515a6b91b06",
           "subject": "Ex-Ramp engineers",
           "object": "$20M for platform Melius after scrapping their first product",
           "quote": "Melius, an AI platform for generating ad campaigns, images, and videos, announced on Tuesday that it raised a total of $25 million in funding, including a $20 million Series A led by CRV and a $5 million seed round led by General Catalyst."
@@ -1009,7 +2706,7 @@
       ],
       "sources": [
         {
-          "id": "SA-f9943130eacc42bc",
+          "id": "SA-8bf2c6029ece0e66",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/"
         }
@@ -1020,7 +2717,7 @@
     },
     {
       "id": "EV-1c79bd33ccfafec8",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -1068,19 +2765,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-dc0796d8022f7131",
+          "id": "CL-7ac2b7dc91a9aec7",
           "subject": "AI computing startup Lambda to",
           "object": "$4B ahead of planned IPO",
           "quote": "AI computing startup Lambda to raise $4B ahead of planned IPO"
         },
         {
-          "id": "CL-4bca5d18023acb0d",
+          "id": "CL-456219b34ba26141",
           "subject": "AI computing startup Lambda to",
           "object": "$4B ahead of planned IPO",
           "quote": "That means Lambda’s valuation, which has climbed significantly since its 2025 funding round, could be leaning heavily on Anthropic’s ability to keep paying."
         },
         {
-          "id": "CL-84c33a60e244d660",
+          "id": "CL-9c847c154617cbaa",
           "subject": "AI computing startup Lambda to",
           "object": "$4B ahead of planned IPO",
           "quote": "Data center buildouts are largely funded by debt — of which Lambda just raised an additional $1 billion last week — and lenders are getting choosier about who they offer cash to and under what circumstances."
@@ -1088,7 +2785,7 @@
       ],
       "sources": [
         {
-          "id": "SA-dfb245607ac2e526",
+          "id": "SA-f76c6b78f839a16a",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/"
         }
@@ -1099,7 +2796,7 @@
     },
     {
       "id": "EV-2eb259fc0b868102",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -1144,7 +2841,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-ddda716910a8ec84",
+          "id": "CL-539421b4b602989b",
           "subject": "Italian SimpL",
           "object": "€1.2M to power B2B sales with AI",
           "quote": "startup SimpL has raised €1.2 million in a pre-seed funding round to develop"
@@ -1163,7 +2860,7 @@
     },
     {
       "id": "EV-33c666ae1aefd87b",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -1242,7 +2939,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-d60dd9c0c913f59f",
+          "id": "CL-57d2e4aa6cfd22af",
           "subject": "Nettle",
           "object": "$4.8M to expand its AI workspace for insurers",
           "quote": "insurance loss control, has raised $4.8 million in an oversubscribed seed"
@@ -1261,7 +2958,7 @@
     },
     {
       "id": "EV-366e1027af052b7a",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -1307,19 +3004,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-64f3c7498b44da6b",
+          "id": "CL-1e281622e67bb1bd",
           "subject": "Paris-based WhiteLab Genomics",
           "object": "€23.2 million to accelerate AI-driven genomic medicine development",
           "quote": "HomeFrance-StartupsParis-based WhiteLab Genomics raises €23.2 million to accelerate AI-driven genomic medicine development"
         },
         {
-          "id": "CL-98df1f376ecfb5ae",
+          "id": "CL-fe31a94697b5a83c",
           "subject": "Paris-based WhiteLab Genomics",
           "object": "€23.2 million to accelerate AI-driven genomic medicine development",
           "quote": "Paris-based WhiteLab Genomics raises €23.2 million to accelerate AI-driven genomic medicine development"
         },
         {
-          "id": "CL-e6705498d0a4af84",
+          "id": "CL-192cd70451a07929",
           "subject": "Paris-based WhiteLab Genomics",
           "object": "€23.2 million to accelerate AI-driven genomic medicine development",
           "quote": "WhiteLab Genomics, a Paris-based BioTech company that uses AI to design the building blocks of genomic medicines, has closed a €23.2 million ($26 million) Series B funding round."
@@ -1337,8 +3034,72 @@
       "sourceExcerpt": "HomeFrance-StartupsParis-based WhiteLab Genomics raises €23.2 million to accelerate AI-driven genomic medicine development"
     },
     {
+      "id": "EV-392147f2759c873b",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Comparables.ai 融资 600 万美元，利用 AI 寻找并购交易",
+      "originalTitle": "Comparables.ai Raises $6 Million to Find M&A Deals With A.I.",
+      "subject": "Comparables.ai",
+      "action": "Raises",
+      "object": "$6 Million to Find M&A Deals With A.I.",
+      "metrics": [
+        "370 million",
+        "$6 million",
+        "5.1 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-cfc7b6b058a154a5"
+      ],
+      "entityNames": [
+        "Comparables.ai"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-5c7f04b7dc181428",
+          "subject": "Comparables.ai",
+          "object": "$6 Million to Find M&A Deals With A.I.",
+          "quote": "Anyone looking to buy a company usually sees only a fraction of the possible targets, and the Finnish start-up Comparables.ai wants to close that gap with A.I. The Helsinki-based platform, which gives dealmakers access to data on more than 370 million companies worldwide, has just closed a $6 million (about 5.1 million euros) seed round."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-2df388479e6e2985",
+          "publisher": "www.trendingtopics.eu",
+          "url": "https://www.trendingtopics.eu/comparables-ai-seed-funding/"
+        }
+      ],
+      "sourceUrl": "https://www.trendingtopics.eu/comparables-ai-seed-funding/",
+      "publisher": "www.trendingtopics.eu",
+      "sourceExcerpt": "Anyone looking to buy a company usually sees only a fraction of the possible targets, and the Finnish start-up Comparables.ai wants to close that gap with A.I. The Helsinki-based platform, which gives dealmakers access to data on more than 370 million companies worldwide, has just closed a $6 million (about 5.1 million euros) seed round."
+    },
+    {
       "id": "EV-52e472f000148362",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -1479,25 +3240,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-5d73587c6007256f",
+          "id": "CL-7343a3e2920f75b7",
           "subject": "Cybersecurity startup Hadrian",
           "object": "€35.68 million to scale its agentic AI offensive security platform",
           "quote": "HomeNetherland-StartupsCybersecurity startup Hadrian raises €35.68 million to scale its agentic AI offensive..."
         },
         {
-          "id": "CL-51ba37be383cb433",
+          "id": "CL-1fe43d77c055792e",
           "subject": "Cybersecurity startup Hadrian",
           "object": "€35.68 million to scale its agentic AI offensive security platform",
           "quote": "Cybersecurity startup Hadrian raises €35.68 million to scale its agentic AI offensive security platform"
         },
         {
-          "id": "CL-0c6887fc215c6392",
+          "id": "CL-0061f2a80f407d04",
           "subject": "Cybersecurity startup Hadrian",
           "object": "€35.68 million to scale its agentic AI offensive security platform",
           "quote": "Hadrian, a London-Amsterdam-based agentic AI offensive security platform, today announced a €35.68 million ($40 million) funding round to fund expansion across EMEA and the U.S. and deepen investment in its engineering and research teams."
         },
         {
-          "id": "CL-be12de1260acc743",
+          "id": "CL-910216232601e716",
           "subject": "Cybersecurity startup Hadrian",
           "object": "€35.68 million to scale its agentic AI offensive security platform",
           "quote": "Previous articleParis-based WhiteLab Genomics raises €23.2 million to accelerate AI-driven genomic medicine development"
@@ -1516,7 +3277,7 @@
     },
     {
       "id": "EV-6744aefb738a9a0c",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -1559,7 +3320,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-1e51efe6aaba15e5",
+          "id": "CL-99611234ee8695c2",
           "subject": "Hadrian",
           "object": "$40M to tackle AI-driven cyber threats",
           "quote": "platform, has raised $40 million in a funding round co-led by Forgepoint Capital International and Smart Fin."
@@ -1578,7 +3339,7 @@
     },
     {
       "id": "EV-6bbfb2ce5e89bbda",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -1660,13 +3421,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-283c9c61e18c335a",
+          "id": "CL-dfcacb1c9ac2d172",
           "subject": "Cleavr",
           "object": "€8 million seed round",
           "quote": "French fintech Cleavr has raised €8 million in a seed round to expand its accounts receivable automation platform across Europe."
         },
         {
-          "id": "CL-943797b0da90092d",
+          "id": "CL-e16c33cf5d41c9a1",
           "subject": "Cleavr",
           "object": "€1 million pre-seed round",
           "quote": "The funding comes six months after Cleavr raised €1 million in a pre-seed round."
@@ -1685,7 +3446,7 @@
     },
     {
       "id": "EV-6cf399bb27ddd1a5",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -1764,7 +3525,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-a79332afced836eb",
+          "id": "CL-291f36582eada501",
           "subject": "Comparables.ai",
           "object": "$6M seed to scale its AI platform for dealmakers",
           "quote": "an AI platform for private and public market intelligence, has raised $6 million in seed funding to support its expansion across multiple markets and"
@@ -1780,6 +3541,71 @@
       "sourceUrl": "https://tech.eu/2026/10/06/comparablesai-secures-6m-seed-to-scale-its-ai-platform-for-dealmakers/",
       "publisher": "tech.eu",
       "sourceExcerpt": "an AI platform for private and public market intelligence, has raised $6 million in seed funding to support its expansion across multiple markets and"
+    },
+    {
+      "id": "EV-6e7c0515f06795aa",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Avarra 融资 1700 万美元，押注逆向策略：用 AI 快速提升 GTM 团队技能，而非仅自动化常规工作",
+      "originalTitle": "Avarra Raises $17 Million on a Contrarian Bet: AI that rapidly upskills GTM teams rather than simply automating routine work",
+      "subject": "Avarra",
+      "action": "Raises",
+      "object": "$17 Million on a Contrarian Bet: AI that rapidly upskills GTM teams rather than simply automating routine work",
+      "metrics": [
+        "$17 million",
+        "400%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d2f8e9caf3aad56f",
+        "EN-13911430434bc00c"
+      ],
+      "entityNames": [
+        "SAN MATEO",
+        "Avarra"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-134e7fba9e2b8669",
+          "subject": "Avarra",
+          "object": "$17 Million on a Contrarian Bet: AI that rapidly upskills GTM teams rather than simply automating routine work",
+          "quote": "SAN MATEO, Calif., Oct. 6, 2026 /PRNewswire/ -- Avarra today announced a $17 million Series A following a year in which the company grew ARR more than 400% YOY and expanded from sales training simulations into a full avatar platform for go-to-market teams."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9aba961f08956c72",
+          "publisher": "www.prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html"
+        }
+      ],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html",
+      "publisher": "www.prnewswire.com",
+      "sourceExcerpt": "SAN MATEO, Calif., Oct. 6, 2026 /PRNewswire/ -- Avarra today announced a $17 million Series A following a year in which the company grew ARR more than 400% YOY and expanded from sales training simulations into a full avatar platform for go-to-market teams."
     },
     {
       "id": "EV-abde425d9980f6b9",
@@ -1965,8 +3791,158 @@
       "sourceExcerpt": "On Tuesday, Flai said it had raised a $27 million Series A funding round led by automation-focused firm Base10 Partners."
     },
     {
+      "id": "EV-ad1a42d4f43e005c",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Safeworld融资1200万美元！2026年AI机器人安全成最大‘灰犀牛’",
+      "originalTitle": "",
+      "subject": "Safeworld",
+      "action": "融资",
+      "object": "1200万美元！2026年AI机器人安全成最大‘灰犀牛’",
+      "metrics": [
+        "1200万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-40cd17bb16c8fec1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-40cd17bb16c8fec1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-40cd17bb16c8fec1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-40cd17bb16c8fec1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-40cd17bb16c8fec1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-40cd17bb16c8fec1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-40cd17bb16c8fec1"
+      ],
+      "entityNames": [
+        "Safeworld"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-8970b7b16bc5ae52",
+          "subject": "Safeworld",
+          "object": "1200万美元！2026年AI机器人安全成最大‘灰犀牛’",
+          "quote": "2026年10月6日，全球科技圈突然被一条消息‘电’了一下——一家名叫Safeworld的初创公司正式结束长达18个月的‘隐身模式’，官宣完成超1200万美元种子轮融资。"
+        },
+        {
+          "id": "CL-26c10ed95af11e76",
+          "subject": "Safeworld",
+          "object": "1200万美元！2026年AI机器人安全成最大‘灰犀牛’",
+          "quote": "这可不是又一家‘PPT造机器人’的画饼公司，而是直面2026年人形机器人爆发潮中最烫手、最沉默、也最危险的那个问题：Safeworld融资1200万美元做机器人安全。"
+        },
+        {
+          "id": "CL-483eee7de1d04990",
+          "subject": "Safeworld",
+          "object": "1200万美元！2026年AI机器人安全成最大‘灰犀牛’",
+          "quote": "所以，当你下次看到人形机器人稳稳接过老人递来的药盒时，请记得，在那0.3秒的停顿、那微不可察的姿态调整、那毫秒级的多传感器交叉验证背后，正运行着Safeworld融资1200万美元做机器人安全所铸就的数字堤坝。"
+        },
+        {
+          "id": "CL-b1b9d64ef142640a",
+          "subject": "Safeworld",
+          "object": "1200万美元！2026年AI机器人安全成最大‘灰犀牛’",
+          "quote": "Safeworld融资1200万美元做机器人安全——这不是又一轮资本狂欢，而是一场静默却磅礴的安全基建革命。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-89ec9d518b4f7a31",
+          "publisher": "m.sohu.com",
+          "url": "https://m.sohu.com/a/1084317574_122066679?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334"
+        }
+      ],
+      "sourceUrl": "https://m.sohu.com/a/1084317574_122066679?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "publisher": "m.sohu.com",
+      "sourceExcerpt": "2026年10月6日，全球科技圈突然被一条消息‘电’了一下——一家名叫Safeworld的初创公司正式结束长达18个月的‘隐身模式’，官宣完成超1200万美元种子轮融资。"
+    },
+    {
       "id": "EV-bada0d929d2b70ac",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -1974,7 +3950,7 @@
       "eventGroup": "融资与并购",
       "status": "announced",
       "statusLabel": "已公布",
-      "publicationStatus": "disputed",
+      "publicationStatus": "verified",
       "title": "宁德时代和腾讯支持Deepseek不断扩大的融资轮，该AI初创公司瞄准2027年IPO",
       "originalTitle": "CATL and Tencent back Deepseek's ballooning funding round as the AI startup eyes a 2027 IPO",
       "subject": "CATL and Tencent back Deepseek's ballooning",
@@ -1985,8 +3961,7 @@
         "$7.5 billion",
         "$75 billion",
         "$7.4 billion",
-        "$50 billion",
-        "$12b"
+        "$50 billion"
       ],
       "locations": [],
       "marketScope": {
@@ -1997,19 +3972,14 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-bc4f2ab398bfc65e",
-          "CL-0de28aca12d51e69",
-          "CL-e72198b043cfb4de",
-          "CL-ad9f29a437414f73",
-          "CL-f6c44420a734f052",
-          "CL-e9cce3ade721c877",
-          "CL-453f91a07d5c62bb"
+          "CL-2f0b984e8a11345f",
+          "CL-dec6fb7d7fdf42e6",
+          "CL-26a3d7ae45cc759a",
+          "CL-5b24b2bc86e07e65"
         ]
       },
       "missingFields": [],
-      "conflicts": [
-        "CF-bada0d929d2b70ac"
-      ],
+      "conflicts": [],
       "tags": [],
       "facets": {
         "ai_market_category": [],
@@ -2028,61 +3998,41 @@
         "EN-8baf1838b7b24434",
         "EN-221e3af59d342a6d",
         "EN-9c8ae69b84f21a2e",
-        "EN-6f7ac1823da81d2e",
-        "EN-419f666c26eb85ed"
+        "EN-6f7ac1823da81d2e"
       ],
       "entityNames": [
         "CATL and Tencent back Deepseek's ballooning",
         "CATL",
         "Tencent back Deepseek's ballooning",
         "Tencent",
-        "DeepSeek",
-        "DeepSeek nears a $12bn"
+        "DeepSeek"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-bc4f2ab398bfc65e",
+          "id": "CL-2f0b984e8a11345f",
           "subject": "CATL and Tencent back Deepseek's ballooning",
           "object": "as the AI startup eyes a 2027 IPO",
           "quote": "CATL and Tencent back Deepseek's ballooning funding round as the AI startup eyes a 2027 IPO"
         },
         {
-          "id": "CL-0de28aca12d51e69",
+          "id": "CL-dec6fb7d7fdf42e6",
           "subject": "CATL and Tencent back Deepseek's ballooning",
           "object": "as the AI startup eyes a 2027 IPO",
           "quote": "Deepseek is close to raising at least $12 billion in a new funding round, Bloomberg reports."
         },
         {
-          "id": "CL-e72198b043cfb4de",
+          "id": "CL-26a3d7ae45cc759a",
           "subject": "CATL and Tencent back Deepseek's ballooning",
           "object": "as the AI startup eyes a 2027 IPO",
           "quote": "The Chinese AI startup originally aimed to raise about $7.5 billion at a valuation of roughly $75 billion."
         },
         {
-          "id": "CL-ad9f29a437414f73",
+          "id": "CL-5b24b2bc86e07e65",
           "subject": "CATL and Tencent back Deepseek's ballooning",
           "object": "as the AI startup eyes a 2027 IPO",
           "quote": "In June, the company closed its first external funding round at about $7.4 billion with a valuation above $50 billion."
-        },
-        {
-          "id": "CL-f6c44420a734f052",
-          "subject": "DeepSeek nears a $12bn",
-          "object": "with Tencent and CATL as top backers | daily.dev",
-          "quote": "DeepSeek nears a $12bn funding round with Tencent and CATL as top backers"
-        },
-        {
-          "id": "CL-e9cce3ade721c877",
-          "subject": "DeepSeek nears a $12bn",
-          "object": "with Tencent and CATL as top backers | daily.dev",
-          "quote": "How much money is DeepSeek raising in its latest funding round and who are the main investors?"
-        },
-        {
-          "id": "CL-453f91a07d5c62bb",
-          "subject": "DeepSeek nears a $12bn",
-          "object": "with Tencent and CATL as top backers | daily.dev",
-          "quote": "This hardware buildout is a major destination for the new capital raised in its latest funding round, alongside continued model development following the launch of its V4 Flash model."
         }
       ],
       "sources": [
@@ -2090,11 +4040,6 @@
           "id": "SA-f056398ff89617ab",
           "publisher": "the-decoder.com",
           "url": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/"
-        },
-        {
-          "id": "SA-3b9bebd58fcd458d",
-          "publisher": "daily.dev",
-          "url": "https://daily.dev/posts/deepseek-nears-a-12bn-funding-round-with-tencent-and-catl-as-top-backers-gswglcoid"
         }
       ],
       "sourceUrl": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/",
@@ -2103,7 +4048,7 @@
     },
     {
       "id": "EV-c96f8475f771fe20",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -2146,13 +4091,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-3dc366568a400d60",
+          "id": "CL-84a70e4e61421604",
           "subject": "Autonomous B2B trade gets a boost as Procuros",
           "object": "€20M",
           "quote": "Hamburg-based software company Procuros has raised €20 million in a"
         },
         {
-          "id": "CL-eab44650b872ab87",
+          "id": "CL-7607790e783a4224",
           "subject": "Autonomous B2B trade gets a boost as Procuros",
           "object": "€20M",
           "quote": "Series A funding round to further develop its AI-native supply chain"
@@ -2422,7 +4367,7 @@
     },
     {
       "id": "EV-1faa33bcf69dcf47",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-05",
       "updatedDate": "2026-10-05",
       "eventType": "funding",
@@ -2435,7 +4380,7 @@
       "originalTitle": "Crunchbase Data: Q3 2026 Posted A Record Count Of Billion-Dollar Rounds As The Global AI Race Heats Up",
       "subject": "Safe Superintelligence",
       "action": "funding",
-      "object": "$5 billion",
+      "object": "$5 billion funding round",
       "metrics": [
         "$5 billion"
       ],
@@ -2467,15 +4412,15 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-ac6ced02350babdc",
+          "id": "CL-73e09628311f60db",
           "subject": "Safe Superintelligence",
-          "object": "$5 billion",
+          "object": "$5 billion funding round",
           "quote": "The largest funding deals went to Databricks and Safe Superintelligence, which each raised $5 billion."
         }
       ],
       "sources": [
         {
-          "id": "SA-7ae118a0bf96ec87",
+          "id": "SA-5716e1b7b5ecdbd6",
           "publisher": "news.crunchbase.com",
           "url": "https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/"
         }
@@ -2486,7 +4431,7 @@
     },
     {
       "id": "EV-208a98705213d50c",
-      "dataDate": "2026-10-07",
+      "dataDate": "2026-10-09",
       "date": "2026-10-05",
       "updatedDate": "2026-10-05",
       "eventType": "funding",
@@ -2565,7 +4510,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-bbbded9b88c5597a",
+          "id": "CL-8b1e34aa3c05af97",
           "subject": "Clockwork.io",
           "object": "$31M as LinkedIn, Together AI and WhiteFiber Adopt Its Resilience Software to Stop Wasting GPU-Hours",
           "quote": "Clockwork.io Raises $31M as LinkedIn, Together AI and WhiteFiber Adopt Its Resilience Software to Stop Wasting GPU-Hours"
@@ -2573,12 +4518,12 @@
       ],
       "sources": [
         {
-          "id": "SA-a87338ae9fd7dda1",
+          "id": "SA-ad821860193f9297",
           "publisher": "www.prnewswire.com",
-          "url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html"
+          "url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897586.html"
         }
       ],
-      "sourceUrl": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897586.html",
       "publisher": "www.prnewswire.com",
       "sourceExcerpt": "Clockwork.io Raises $31M as LinkedIn, Together AI and WhiteFiber Adopt Its Resilience Software to Stop Wasting GPU-Hours"
     },
@@ -2879,22 +4824,23 @@
     },
     {
       "id": "EV-9bcddf454518063f",
-      "dataDate": "2026-10-06",
+      "dataDate": "2026-10-09",
       "date": "2026-10-05",
       "updatedDate": "2026-10-05",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
       "title": "哥本哈根的 Pandektes 融资 1350 万欧元，用于构建 AI 驱动法律研究的数据基础设施",
       "originalTitle": "Copenhagen’s Pandektes raises €13.5 million to build the data infrastructure for AI-powered legal research",
-      "subject": "Pandektes",
-      "action": "funding",
-      "object": "€13.5 million Series A",
+      "subject": "Copenhagen’s Pandektes",
+      "action": "raises",
+      "object": "€13.5 million to build the data infrastructure for AI-powered legal research",
       "metrics": [
-        "€13.5 million"
+        "€13.5 million",
+        "€2.9 million"
       ],
       "locations": [],
       "missingFields": [],
@@ -2913,31 +4859,51 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-287820554c1c51b1"
+        "EN-287820554c1c51b1",
+        "EN-fb2a87e40d1d727c"
       ],
       "entityNames": [
-        "Pandektes"
+        "Pandektes",
+        "Copenhagen’s Pandektes"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-caa71b1e40af39fc",
-          "subject": "Pandektes",
-          "object": "€13.5 million Series A",
+          "id": "CL-71a9e77b42a5c84d",
+          "subject": "Copenhagen’s Pandektes",
+          "object": "€13.5 million to build the data infrastructure for AI-powered legal research",
+          "quote": "HomeDenmark-StartupsCopenhagen’s Pandektes raises €13.5 million to build the data infrastructure for AI-powered..."
+        },
+        {
+          "id": "CL-407a921846c7656b",
+          "subject": "Copenhagen’s Pandektes",
+          "object": "€13.5 million to build the data infrastructure for AI-powered legal research",
+          "quote": "Copenhagen’s Pandektes raises €13.5 million to build the data infrastructure for AI-powered legal research"
+        },
+        {
+          "id": "CL-fec866c50d484f8d",
+          "subject": "Copenhagen’s Pandektes",
+          "object": "€13.5 million to build the data infrastructure for AI-powered legal research",
           "quote": "Pandektes, a Copenhagen-based LegalTech company specialising in legal research, has raised €13.5 million in a Series A funding round."
+        },
+        {
+          "id": "CL-6ac72a44b885f5ab",
+          "subject": "Copenhagen’s Pandektes",
+          "object": "€13.5 million to build the data infrastructure for AI-powered legal research",
+          "quote": "The Series A follows the company’s €2.9 million Seed investment announced last year."
         }
       ],
       "sources": [
         {
-          "id": "SA-067d1d3dab162e4c",
+          "id": "SA-62364f70da6c3960",
           "publisher": "www.eu-startups.com",
-          "url": "https://www.eu-startups.com/2026/10/copenhagens-pandektes-raises-e13-5-million-to-build-the-data-infrastructure-for-ai-powered-legal-research"
+          "url": "https://www.eu-startups.com/2026/10/copenhagens-pandektes-raises-e13-5-million-to-build-the-data-infrastructure-for-ai-powered-legal-research/"
         }
       ],
-      "sourceUrl": "https://www.eu-startups.com/2026/10/copenhagens-pandektes-raises-e13-5-million-to-build-the-data-infrastructure-for-ai-powered-legal-research",
+      "sourceUrl": "https://www.eu-startups.com/2026/10/copenhagens-pandektes-raises-e13-5-million-to-build-the-data-infrastructure-for-ai-powered-legal-research/",
       "publisher": "www.eu-startups.com",
-      "sourceExcerpt": "Pandektes, a Copenhagen-based LegalTech company specialising in legal research, has raised €13.5 million in a Series A funding round."
+      "sourceExcerpt": "HomeDenmark-StartupsCopenhagen’s Pandektes raises €13.5 million to build the data infrastructure for AI-powered..."
     },
     {
       "id": "EV-a86432262b10332e",
@@ -3003,7 +4969,7 @@
     },
     {
       "id": "EV-af1a6d0b5da2d0e5",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-05",
       "updatedDate": "2026-10-05",
       "eventType": "funding",
@@ -3130,31 +5096,31 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-3b7e2894aa51d115",
+          "id": "CL-5eb52d150c238f9f",
           "subject": "French cybersecurity startup Fleuret AI",
           "object": "€4 million to automate penetration testing with AI agents",
           "quote": "HomeFrance-StartupsFrench cybersecurity startup Fleuret AI raises €4 million to automate penetration testing..."
         },
         {
-          "id": "CL-8e70cecc382a75c3",
+          "id": "CL-84af1b1b085b055c",
           "subject": "French cybersecurity startup Fleuret AI",
           "object": "€4 million to automate penetration testing with AI agents",
           "quote": "French cybersecurity startup Fleuret AI raises €4 million to automate penetration testing with AI agents"
         },
         {
-          "id": "CL-57d66b00d4e0f474",
+          "id": "CL-1835f4480485214c",
           "subject": "French cybersecurity startup Fleuret AI",
           "object": "€4 million to automate penetration testing with AI agents",
           "quote": "Fleuret AI, a Paris-based cybersecurity startup automating penetration testing with agentic AI, has closed a €4 million pre-Seed round to hire AI, software engineering, and offensive security talent and accelerate platform development."
         },
         {
-          "id": "CL-c0f1dc83278a4168",
+          "id": "CL-94e4a300496d9321",
           "subject": "French cybersecurity startup Fleuret AI",
           "object": "€4 million to automate penetration testing with AI agents",
           "quote": "Previous articleCopenhagen’s Pandektes raises €13.5 million to build the data infrastructure for AI-powered legal research"
         },
         {
-          "id": "CL-d71e971f74344b74",
+          "id": "CL-f5f9ba293ad95f1d",
           "subject": "Fleuret AI",
           "object": "€4M to advance AI-powered offensive cybersecurity in Europe",
           "quote": "has raised €4 million in a pre-seed funding round to develop its platform for"
@@ -3275,6 +5241,76 @@
       "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/05/3374883/0/en/eden-ai-labs-inc-raises-1-5m-to-build-personal-ai-that-works-for-everyone.html",
       "publisher": "www.globenewswire.com",
       "sourceExcerpt": "SAN FRANCISCO, Oct. 05, 2026 (GLOBE NEWSWIRE) -- Eden AI Labs Inc. today announced it has raised $1.5 million to build a personal AI agent that is intuitive, powerful and accessible."
+    },
+    {
+      "id": "EV-ddb18df87aae8ef4",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-05",
+      "updatedDate": "2026-10-05",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "独家：QpiAI 从 InnoVen Capital 获得 50 Cr 卢比债务融资",
+      "originalTitle": "Exclusive: QpiAI raises Rs 50 Cr in debt from InnoVen Capital",
+      "subject": "QpiAI",
+      "action": "funding",
+      "object": "Rs 50 Cr in debt funding from InnoVen Capital",
+      "metrics": [
+        "Rs 50 Cr",
+        "$32 million",
+        "Rs 279 Cr"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-944c59663f22073c"
+      ],
+      "entityNames": [
+        "QpiAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-4f826db075b91f9e",
+          "subject": "QpiAI",
+          "object": "Rs 50 Cr in debt funding from InnoVen Capital",
+          "quote": "Bengaluru-based quantum computing and artificial intelligence startup QpiAI has raised Rs 50 Cr in debt funding from InnoVen Capital."
+        },
+        {
+          "id": "CL-02d8ed76f3bc3783",
+          "subject": "QpiAI",
+          "object": "$32 million (around Rs 279 Cr) in a Series A round in July 2025",
+          "quote": "The Bengaluru-based company previously raised $32 million (around Rs 279 Cr) in a Series A round in July 2025, led by Avataar Ventures and the National Quantum Mission (NQM)."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-06f8e77e59b2f7da",
+          "publisher": "entrackr.com",
+          "url": "https://entrackr.com/exclusive/exclusive-qpiai-raises-rs-50-cr-in-debt-from-innoven-capital-12625901"
+        }
+      ],
+      "sourceUrl": "https://entrackr.com/exclusive/exclusive-qpiai-raises-rs-50-cr-in-debt-from-innoven-capital-12625901",
+      "publisher": "entrackr.com",
+      "sourceExcerpt": "Bengaluru-based quantum computing and artificial intelligence startup QpiAI has raised Rs 50 Cr in debt funding from InnoVen Capital."
     },
     {
       "id": "EV-e70e7502db9887f2",
@@ -3997,6 +6033,84 @@
       "sourceExcerpt": "今年9月，法国教育科技公司Ed.ai 完成500万欧元种子轮融资。"
     },
     {
+      "id": "EV-31cc3d7ac658b00a",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-02",
+      "updatedDate": "2026-10-02",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "西雅图语音AI初创公司Ultravox（前身为Fixie）被Inworld收购",
+      "originalTitle": "Seattle voice AI startup Ultravox, formerly known as Fixie, acquired by Inworld",
+      "subject": "Seattle voice AI startup Ultravox, formerly known as Fixie,",
+      "action": "acquired",
+      "object": "by Inworld",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8540fc791ece9f04"
+      ],
+      "entityNames": [
+        "Seattle voice AI startup Ultravox"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-65425975dadd8cca",
+          "subject": "Seattle voice AI startup Ultravox, formerly known as Fixie,",
+          "object": "by Inworld",
+          "quote": "Seattle voice AI startup Ultravox, which launched as Fixie, has been acquired by Inworld for an undisclosed sum."
+        },
+        {
+          "id": "CL-f2cff2d25a8a3108",
+          "subject": "Seattle voice AI startup Ultravox, formerly known as Fixie,",
+          "object": "by Inworld",
+          "quote": "The acquisition will allow Inworld to adopt Ultravox’s technology for managing turn-taking and interruptions in voice conversations with AI, which should improve performance in real-time chats."
+        },
+        {
+          "id": "CL-e56f869acb3df2c8",
+          "subject": "Seattle voice AI startup Ultravox, formerly known as Fixie,",
+          "object": "by Inworld",
+          "quote": "The release announcing the acquisition said Ultravox customers would be upgraded to Inworld’s Realtime TTS-2 voice technology."
+        },
+        {
+          "id": "CL-1ea630c5b0be0cfc",
+          "subject": "Seattle voice AI startup Ultravox, formerly known as Fixie,",
+          "object": "by Inworld",
+          "quote": "The co-founders of Ultravox, which launched in 2022 as Fixie, from left: Hessam Bagherinezhad, Matt Welsh, Justin Uberti and Zach Koch. (Fixie Photo)"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f42b24ffe7dbdd73",
+          "publisher": "www.geekwire.com",
+          "url": "https://www.geekwire.com/2026/seattle-voice-ai-startup-ultravox-formerly-known-as-fixie-acquired-by-inworld/"
+        }
+      ],
+      "sourceUrl": "https://www.geekwire.com/2026/seattle-voice-ai-startup-ultravox-formerly-known-as-fixie-acquired-by-inworld/",
+      "publisher": "www.geekwire.com",
+      "sourceExcerpt": "Seattle voice AI startup Ultravox, which launched as Fixie, has been acquired by Inworld for an undisclosed sum."
+    },
+    {
       "id": "EV-32a04f2071b7aa24",
       "dataDate": "2026-10-06",
       "date": "2026-10-02",
@@ -4062,7 +6176,7 @@
     },
     {
       "id": "EV-3a4ba26375b45669",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "funding",
@@ -4119,19 +6233,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-c71a4c8668ff00e0",
+          "id": "CL-ebc9892d78335292",
           "subject": "填充 AI 资金弹药：曝 OpenAI",
           "object": "再落袋 200 亿美元，英伟达、软银和亚马逊已出资约 90%",
           "quote": "本轮融资总承诺金额约为 1,220 亿美元（现汇率约合 8,191.75 亿元人民币），对 OpenAI 的估值约为 8,520 亿美元（现汇率约合 5.72 万亿元人民币）。"
         },
         {
-          "id": "CL-d7c85bd3f98cb32f",
+          "id": "CL-28d0e4e6a6f2538c",
           "subject": "填充 AI 资金弹药：曝 OpenAI",
           "object": "再落袋 200 亿美元，英伟达、软银和亚马逊已出资约 90%",
           "quote": "除英伟达和软银外，亚马逊此前已完成 500 亿美元（现汇率约合 3,357.28 亿元人民币）投资，三家主要投资者累计投入约 1,100 亿美元（现汇率约合 7,386.01 亿元人民币），约占本轮融资承诺金额的 90%。"
         },
         {
-          "id": "CL-6034c5b858d04d0d",
+          "id": "CL-b0480184071ad38e",
           "subject": "填充 AI 资金弹药：曝 OpenAI",
           "object": "再落袋 200 亿美元，英伟达、软银和亚马逊已出资约 90%",
           "quote": "此次巨额融资将进一步强化 OpenAI 在人工智能模型研发、算力基础设施建设及数据中心扩张方面的资金实力。"
@@ -4150,7 +6264,7 @@
     },
     {
       "id": "EV-4495851ddb7439c8",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "funding",
@@ -4196,7 +6310,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-46aa8785cdcbf702",
+          "id": "CL-b014e474e566f1dc",
           "subject": "博通",
           "object": "Anthropic",
           "quote": "博通已同意向 Anthropic 提供最高达 420 亿美元（IT之家注：现汇率约合 2,820.11 亿元人民币）的贷款，用于支持其基础设施开支。"
@@ -4943,7 +7057,7 @@
     },
     {
       "id": "EV-b35ee2ada485c7e4",
-      "dataDate": "2026-10-07",
+      "dataDate": "2026-10-09",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "funding",
@@ -4990,19 +7104,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-8e40afd4a41df6ed",
+          "id": "CL-3b15c5a54602c990",
           "subject": "Berlin-based Kuro",
           "object": "€10 million to build the AI ​​foundation for general contractors",
           "quote": "HomeGermany-StartupsBerlin-based Kuro raises €10 million to build the AI ​​foundation for general..."
         },
         {
-          "id": "CL-60200460bed09347",
+          "id": "CL-066bf25d8f28f066",
           "subject": "Berlin-based Kuro",
           "object": "€10 million to build the AI ​​foundation for general contractors",
           "quote": "Berlin-based Kuro raises €10 million to build the AI ​​foundation for general contractors"
         },
         {
-          "id": "CL-755cfa31a8a41783",
+          "id": "CL-d663100916664663",
           "subject": "Berlin-based Kuro",
           "object": "€10 million to build the AI ​​foundation for general contractors",
           "quote": "Kuro Technology, a Berlin-based ConTech startup that builds AI software to help general contractors, has raised €10 million in a funding round."
@@ -5084,7 +7198,7 @@
     },
     {
       "id": "EV-d351ff2b55683997",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "funding",
@@ -5129,25 +7243,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-3edcf880ac66972b",
+          "id": "CL-9c8e2ab2025adfe7",
           "subject": "Copenhagen&#8217;s Good Tape",
           "object": "€600k and becomes independent from Zetland; Zendesk co-founder joins board",
           "quote": "HomeDenmark-StartupsCopenhagen's Good Tape raises €600k and becomes independent from Zetland; Zendesk co-founder..."
         },
         {
-          "id": "CL-648299f95adb5f5b",
+          "id": "CL-917fd6d4edcef687",
           "subject": "Copenhagen&#8217;s Good Tape",
           "object": "€600k and becomes independent from Zetland; Zendesk co-founder joins board",
           "quote": "Copenhagen’s Good Tape raises €600k and becomes independent from Zetland; Zendesk co-founder joins board"
         },
         {
-          "id": "CL-1c5621825963bade",
+          "id": "CL-3897d210723ad83f",
           "subject": "Copenhagen&#8217;s Good Tape",
           "object": "€600k and becomes independent from Zetland; Zendesk co-founder joins board",
           "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers, an investment group founded by former unicorn founders that invests its own capital in early-stage Nordic startups, with an average ticket size of €500k."
         },
         {
-          "id": "CL-547191a8c47bfb92",
+          "id": "CL-b8c92d22d544e129",
           "subject": "Copenhagen&#8217;s Good Tape",
           "object": "€600k and becomes independent from Zetland; Zendesk co-founder joins board",
           "quote": "Previous articleAI sales startup Revnu raises €2.6 million to build team and accelerate international growth"
@@ -8482,7 +10596,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "entityNames": [
-        "Today",
+        "TODAY",
         "Ascerta",
         "Microsoft"
       ],
@@ -25442,69 +27556,6 @@
       "sourceUrl": "https://newcomer.co/p/war-in-the-middle-east-and-rising",
       "publisher": "Newcomer 新闻长文（RSS）",
       "sourceExcerpt": "Crusoe raises nearly $4 billion in a single round at a $30.9 billion post-money valuation."
-    },
-    {
-      "id": "EV-622c77a021ef08de",
-      "dataDate": "2026-09-19",
-      "date": "2026-09-18",
-      "updatedDate": "2026-09-19",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "rumored",
-      "statusLabel": "rumored",
-      "publicationStatus": "disputed",
-      "title": "Manus 拟以 40 亿美元估值融资 5 亿美元，已恢复独立运营",
-      "originalTitle": "",
-      "subject": "Manus 拟以 40 亿美元估值",
-      "action": "融资",
-      "object": "5 亿美元，已恢复独立运营",
-      "metrics": [
-        "$500 million",
-        "$4 billion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-ea3bd73e2b506e00"
-      ],
-      "entityNames": [
-        "Meta"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-df22e299dbdce7a1",
-          "subject": "Manus 拟以 40 亿美元估值",
-          "object": "5 亿美元，已恢复独立运营",
-          "quote": "Chinese AI startup Manus, which earlier this year had to break off a merger with Meta, is in discussions to raise $500 million at a $4 billion valuation now that it has resumed operations as an independent company, The Wall Street Journal reported , citing anonymous sources."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-80407b08a0d4c1d1",
-          "publisher": "TechCrunch：AI（RSS）",
-          "url": "https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops"
-        }
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops",
-      "publisher": "TechCrunch：AI（RSS）",
-      "sourceExcerpt": "Chinese AI startup Manus, which earlier this year had to break off a merger with Meta, is in discussions to raise $500 million at a $4 billion valuation now that it has resumed operations as an independent company, The Wall Street Journal reported , citing anonymous sources."
     },
     {
       "id": "EV-a997372a3677022a",
@@ -122287,7 +124338,7 @@
       ],
       "entityNames": [
         "Announcing our $22 Million",
-        "Today",
+        "TODAY",
         "Thomas Stewart",
         "In 2026"
       ],
@@ -154694,7 +156745,7 @@
       ],
       "entityNames": [
         "Announcing our $800M",
-        "Today",
+        "TODAY",
         "NVIDIA",
         "Salesforce"
       ],
@@ -157605,7 +159656,7 @@
         "EN-8903220416e43e8b"
       ],
       "entityNames": [
-        "Today",
+        "TODAY",
         "Omen AI"
       ],
       "productName": "",
@@ -250628,7 +252679,7 @@
         "EN-0acbf84757d057b4"
       ],
       "entityNames": [
-        "Today",
+        "TODAY",
         "Axiom"
       ],
       "productName": "",
@@ -274611,7 +276662,7 @@
     },
     {
       "id": "EV-b117dacb4d262724",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "hardware_deployment",
@@ -274654,25 +276705,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-80fb4d964607e38a",
+          "id": "CL-f960150e458cec62",
           "subject": "Hamburg’s Procuros raises €20 million Series A to",
           "object": "for autonomous B2B trade",
           "quote": "HomeGermany-StartupsHamburg’s Procuros raises €20 million Series A to build AI-native infrastructure for..."
         },
         {
-          "id": "CL-490cc1f1680a6854",
+          "id": "CL-feb51de7e3cc0733",
           "subject": "Hamburg’s Procuros raises €20 million Series A to",
           "object": "for autonomous B2B trade",
           "quote": "Hamburg’s Procuros raises €20 million Series A to build AI-native infrastructure for autonomous B2B trade"
         },
         {
-          "id": "CL-a2db4a8034dd4752",
+          "id": "CL-7893b26ae83fa4a5",
           "subject": "Hamburg’s Procuros raises €20 million Series A to",
           "object": "for autonomous B2B trade",
           "quote": "FundingGermany-Startups"
         },
         {
-          "id": "CL-5ac185ef44a25585",
+          "id": "CL-a466c35ca7a12d37",
           "subject": "Hamburg’s Procuros raises €20 million Series A to",
           "object": "for autonomous B2B trade",
           "quote": "Procuros, a Hamburg-based supply chain connectivity platform, has raised a €20 million Series A funding round."
@@ -333605,6 +335656,78 @@
       "sourceExcerpt": "OpenAI 发布又一批 AI 数学研究成果，攻破数百个悬而未决难题"
     },
     {
+      "id": "EV-49e7226293c03487",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-07",
+      "updatedDate": "2026-10-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "新浪人工智能热点小时报丨2026年10月07日21时_今日实时人工智能热点速递",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "新浪人工智能热点小时报丨2026年10月07日21时_今日实时人工智能热点速递",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-94c10e12e81793c8",
+          "subject": "undisclosed_subject",
+          "object": "新浪人工智能热点小时报丨2026年10月07日21时_今日实时人工智能热点速递",
+          "quote": "来源：上海证券报北京时间10月7日，OpenAI发布了一款由内部前沿AI模型产生的大量数学成果，引发学界广泛关注。"
+        },
+        {
+          "id": "CL-f07cee4d1ba346a2",
+          "subject": "undisclosed_subject",
+          "object": "新浪人工智能热点小时报丨2026年10月07日21时_今日实时人工智能热点速递",
+          "quote": "具体来看，OpenAI在Github平台上发布了722份手稿，分为372个系列。"
+        },
+        {
+          "id": "CL-17756488394ad3c3",
+          "subject": "undisclosed_subject",
+          "object": "新浪人工智能热点小时报丨2026年10月07日21时_今日实时人工智能热点速递",
+          "quote": "OpenAI在文章中提到，绝大多数结果均采用相同流程，使用尚未发布的OpenAI内部模型获得。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-3a6546370bca04c1",
+          "publisher": "k.sina.com.cn",
+          "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908q62g.html?from=tech"
+        }
+      ],
+      "sourceUrl": "https://k.sina.com.cn/article_7857201856_1d45362c001908q62g.html?from=tech",
+      "publisher": "k.sina.com.cn",
+      "sourceExcerpt": "来源：上海证券报北京时间10月7日，OpenAI发布了一款由内部前沿AI模型产生的大量数学成果，引发学界广泛关注。"
+    },
+    {
       "id": "EV-44b4a5564faf8106",
       "dataDate": "2026-10-07",
       "date": "2026-10-06",
@@ -333721,7 +335844,7 @@
     },
     {
       "id": "EV-b611fec3bb1ed987",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "product_release",
@@ -333817,7 +335940,7 @@
       ],
       "claims": [
         {
-          "id": "CL-a21f6d9ac6375c85",
+          "id": "CL-031e7660c66aa8ce",
           "subject": "Anthropic",
           "object": "expansion of its Claude for Startups program",
           "quote": "On Tuesday, Anthropic announced an expansion of its Claude for Startups program, offering subsidized access to its AI models and a variety of other benefits to qualifying companies."
@@ -333825,7 +335948,7 @@
       ],
       "sources": [
         {
-          "id": "SA-c6423a33c2a66b4c",
+          "id": "SA-4bced0fd12834dbf",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/"
         }
@@ -334127,7 +336250,7 @@
     },
     {
       "id": "EV-28bc07b430962e5b",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-05",
       "updatedDate": "2026-10-05",
       "eventType": "product_release",
@@ -334179,25 +336302,25 @@
       ],
       "claims": [
         {
-          "id": "CL-36595540f68301e5",
+          "id": "CL-0e9ad896cd5ac4e4",
           "subject": "TypeSafe",
           "object": "TypeSafe AI 决策模型 Jev 日处理量达 1 万亿 Token，硅谷巨头火速跟进复刻",
           "quote": "初创企业 TypeSafe AI 于当地时间 9 月 15 日发布了 Jev。"
         },
         {
-          "id": "CL-d2ffce20c2e96239",
+          "id": "CL-837f4b6d867f41a7",
           "subject": "TypeSafe",
           "object": "TypeSafe AI 决策模型 Jev 日处理量达 1 万亿 Token，硅谷巨头火速跟进复刻",
           "quote": "该模型的运行方式不同于聊天机器人，它并不生成文本。"
         },
         {
-          "id": "CL-8fe0b1e60eae1e30",
+          "id": "CL-918d424a590c35a1",
           "subject": "TypeSafe",
           "object": "TypeSafe AI 决策模型 Jev 日处理量达 1 万亿 Token，硅谷巨头火速跟进复刻",
           "quote": "相反，它借助机器学习，把输入内容归类到一组预先设定好的输出结果当中：回答“是”或者“否”、输出一个数值评分，或是从既定列表里给出答案。"
         },
         {
-          "id": "CL-e831363b3532dbbd",
+          "id": "CL-6a3b9040b9b3b5f3",
           "subject": "TypeSafe",
           "object": "TypeSafe AI 决策模型 Jev 日处理量达 1 万亿 Token，硅谷巨头火速跟进复刻",
           "quote": "随着 Jev 正式发布，TypeSafe 也结束了隐秘运营的状态；此前它已经从风投机构 DCVC 处拿到 4,000 万美元（IT之家注：现汇率约合 2.69 亿元人民币）融资。"
@@ -342828,9 +344951,7 @@
         {
           "name": "Dramagic",
           "type": "产品/服务",
-          "ownerNames": [
-            "ByteDance"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -416006,9 +418127,7 @@
         {
           "name": "Seedance 2.5",
           "type": "模型",
-          "ownerNames": [
-            "ByteDance"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -498301,7 +500420,7 @@
           "name": "Seedance 2.0 Mini",
           "type": "模型",
           "ownerNames": [
-            "ByteDance"
+            "Volcano Engine"
           ]
         }
       ],
@@ -524089,7 +526208,7 @@
     },
     {
       "id": "EV-a74b50329a01cd04",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "ipo_listing",
@@ -524133,25 +526252,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-68acf44d18b8ecb5",
+          "id": "CL-6205646b3f9df01f",
           "subject": "New Constructs 给 Anthropic 估值 1500 亿美元，称其“2026 年最荒唐",
           "object": "”",
           "quote": "独立金融研究机构 New Constructs 在周二的一份报告中，把 Anthropic 即将进行的 IPO 称为“2026 年最荒唐的 IPO”。"
         },
         {
-          "id": "CL-f9eddb821e22d211",
+          "id": "CL-242fd841a256318b",
           "subject": "New Constructs 给 Anthropic 估值 1500 亿美元，称其“2026 年最荒唐",
           "object": "”",
           "quote": "长期以来，New Constructs 创始人兼 CEO 大卫 · 特雷纳 (David Trainer) 在华尔街一直以 IPO 唱空者著称，而且他过去曾多次判断准确。"
         },
         {
-          "id": "CL-a862005f2de4b651",
+          "id": "CL-ded7915311170ecd",
           "subject": "New Constructs 给 Anthropic 估值 1500 亿美元，称其“2026 年最荒唐",
           "object": "”",
           "quote": "在共享办公公司 WeWork 计划上市前，New Constructs 曾称 WeWork 是“2019 年最荒唐的 IPO”。"
         },
         {
-          "id": "CL-4e902bc53814dccf",
+          "id": "CL-c722019740303701",
           "subject": "New Constructs 给 Anthropic 估值 1500 亿美元，称其“2026 年最荒唐",
           "object": "”",
           "quote": "当时，WeWork 的私募市场估值曾达到 470 亿美元（现汇率约合 3,154.61 亿元人民币），但在 New Constructs 那份报告发布仅六周后，由于需求疲软以及围绕其财务状况的激烈批评，该公司撤回了 IPO。"
@@ -524167,6 +526286,225 @@
       "sourceUrl": "https://www.ithome.com/1/010/360.htm",
       "publisher": "www.ithome.com",
       "sourceExcerpt": "独立金融研究机构 New Constructs 在周二的一份报告中，把 Anthropic 即将进行的 IPO 称为“2026 年最荒唐的 IPO”。"
+    },
+    {
+      "id": "EV-becc2b4b8329de4d",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达支持的 IPO 需求暴跌，对 AI 融资发出警告",
+      "originalTitle": "Nvidia-Backed IPO’s Cratering Demand Sends Warning on AI Funding",
+      "subject": "Nvidia-Backed",
+      "action": "IPO",
+      "object": "’s Cratering Demand Sends Warning on AI Funding",
+      "metrics": [
+        "$5.5 billion",
+        "$11 m",
+        "$30 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0105e0485f45e00b",
+        "EN-8d4321d936320802",
+        "EN-aed14fc56bcd012a"
+      ],
+      "entityNames": [
+        "Nvidia-Backed",
+        "NVIDIA",
+        "Firmus Grid"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-7f5a9fc5746ddbb6",
+          "subject": "Nvidia-Backed",
+          "object": "’s Cratering Demand Sends Warning on AI Funding",
+          "quote": "The dramatic cancellation of an Nvidia-backed data center company’s initial public offering is revealing fresh cracks in the AI funding boom."
+        },
+        {
+          "id": "CL-5d69155c5e4c3a75",
+          "subject": "Nvidia-Backed",
+          "object": "’s Cratering Demand Sends Warning on AI Funding",
+          "quote": "The planned $5.5 billion listing by Australia’s Firmus Grid Ltd. foundered after the deal failed to attract enough support for the A$11 marketed share price."
+        },
+        {
+          "id": "CL-864f9c393473254a",
+          "subject": "Nvidia-Backed",
+          "object": "’s Cratering Demand Sends Warning on AI Funding",
+          "quote": "Some investors turned cautious just days after the company said it received indications of interest well above the offer size, putting it on track for a $30 billion valuation."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-fd21ed8993a5cc74",
+          "publisher": "www.bloomberg.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-08/nvidia-backed-ipo-s-cratering-demand-sends-warning-on-ai-funding"
+        }
+      ],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-10-08/nvidia-backed-ipo-s-cratering-demand-sends-warning-on-ai-funding",
+      "publisher": "www.bloomberg.com",
+      "sourceExcerpt": "The dramatic cancellation of an Nvidia-backed data center company’s initial public offering is revealing fresh cracks in the AI funding boom."
+    },
+    {
+      "id": "EV-c847ccafbb8077eb",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 掌控业务成果：我们对 Hone 的投资",
+      "originalTitle": "AI That Owns Business Outcomes: Our Investment in Hone",
+      "subject": "Index Ventures",
+      "action": "capital_investment",
+      "object": "Hone",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ff408e70765b402d"
+      ],
+      "entityNames": [
+        "Index Ventures"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-02fb9b815a647988",
+          "subject": "Index Ventures",
+          "object": "Hone",
+          "quote": "We’re thrilled to partner with Moritz, Oliver, Carlo, and the Hone team, together with our friends at Benchmark, as they build AI that can own entire outcomes across the organization."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-8be2189b774241d5",
+          "publisher": "www.indexventures.com",
+          "url": "https://www.indexventures.com/perspectives/ai-that-owns-business-outcomes-our-investment-in-hone/"
+        }
+      ],
+      "sourceUrl": "https://www.indexventures.com/perspectives/ai-that-owns-business-outcomes-our-investment-in-hone/",
+      "publisher": "www.indexventures.com",
+      "sourceExcerpt": "We’re thrilled to partner with Moritz, Oliver, Carlo, and the Hone team, together with our friends at Benchmark, as they build AI that can own entire outcomes across the organization."
+    },
+    {
+      "id": "EV-fe2971c25b8c72e2",
+      "dataDate": "2026-10-09",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达支持的Firmus搁置IPO，转向私募融资",
+      "originalTitle": "Nvidia-Backed Firmus Shelves IPO, Eyes Private Funding",
+      "subject": "Firmus Grid Ltd.",
+      "action": "IPO",
+      "object": ", Eyes Private Funding",
+      "metrics": [
+        "$30 billion",
+        "$10.5 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3c7188df3435d102",
+        "EN-aed14fc56bcd012a",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Nvidia-Backed Firmus Shelves",
+        "Firmus Grid",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-52f18d36af7c8a73",
+          "subject": "Firmus Grid Ltd.",
+          "object": "initial public offering",
+          "quote": "Firmus Grid Ltd. abandoned its attempt at one of Australia’s biggest-ever initial public offerings"
+        },
+        {
+          "id": "CL-147e1317db7faf6f",
+          "subject": "Firmus Grid Ltd.",
+          "object": "deal valued at $30 billion",
+          "quote": "a deal that would have valued it at $30 billion, up from $10.5 billion less than three months ago"
+        },
+        {
+          "id": "CL-516d12425886a2c4",
+          "subject": "Firmus Grid Ltd.",
+          "object": "cancelled deal",
+          "quote": "The cancelled deal is a stark example of investor pushback against AI financing terms"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-47e0c0294faa49e7",
+          "publisher": "www.bloomberg.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-08/nvidia-backed-firmus-is-set-to-postpone-ipo-weigh-private-round"
+        }
+      ],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-10-08/nvidia-backed-firmus-is-set-to-postpone-ipo-weigh-private-round",
+      "publisher": "www.bloomberg.com",
+      "sourceExcerpt": "Firmus Grid Ltd. abandoned its attempt at one of Australia’s biggest-ever initial public offerings"
     },
     {
       "id": "EV-770a599defdaf792",
@@ -524318,7 +526656,7 @@
     },
     {
       "id": "EV-67fd80c953bff90d",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "capital_investment",
@@ -524366,13 +526704,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-97d663b3eb481633",
+          "id": "CL-69ad5ad6bbfa7e35",
           "subject": "Blackstone and co-investors",
           "object": "Neysa",
           "quote": "Blackstone and co-investors agreed to invest up to $600 million in primary equity in Indian AI infrastructure company Neysa, which planned to raise an additional $600 million in debt financing."
         },
         {
-          "id": "CL-b70cd730ea34a510",
+          "id": "CL-184e5df09dc55d96",
           "subject": "Blackstone, Hellman & Friedman, Goldman Sachs, and others",
           "object": "Ode with Anthropic",
           "quote": "In July, Anthropic launched Ode with Anthropic, an AI implementation company backed through a $1.5 billion joint venture with Blackstone, Hellman & Friedman, Goldman Sachs, and others."
@@ -524380,7 +526718,7 @@
       ],
       "sources": [
         {
-          "id": "SA-55a91e65d44ac565",
+          "id": "SA-914a510926a852ef",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/"
         }
@@ -524391,7 +526729,7 @@
     },
     {
       "id": "EV-82cccfa64edb2c09",
-      "dataDate": "2026-10-08",
+      "dataDate": "2026-10-09",
       "date": "2026-10-02",
       "updatedDate": "2026-10-02",
       "eventType": "ipo_listing",
@@ -524436,25 +526774,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-712d56bef854de2d",
+          "id": "CL-fc5348bd5c167521",
           "subject": "Anthropic's",
           "object": "Can't Wait Forever",
           "quote": "Anthropic's IPO Can't Wait Forever"
         },
         {
-          "id": "CL-e936752ac4c56d86",
+          "id": "CL-5f9ac78477a8b8a0",
           "subject": "Anthropic's",
           "object": "Can't Wait Forever",
           "quote": "The Week in ShortAnthropic is preparing for its impending IPO while the markets are increasingly uncertain."
         },
         {
-          "id": "CL-cd96adc4242a5f81",
+          "id": "CL-97be81ac00ba824e",
           "subject": "Anthropic's",
           "object": "Can't Wait Forever",
           "quote": "The Main ItemAnthropic's IPO Is About to Test the AI Boom"
         },
         {
-          "id": "CL-9ac1dcef4fd3f9b8",
+          "id": "CL-ab60d1184e49d034",
           "subject": "Anthropic's",
           "object": "Can't Wait Forever",
           "quote": "Still, there have been swirling questions about Anthropic’s revenue growth rate and whether the company would be able to hit a $2 trillion valuation in an IPO. It has already postponed an expected October debut and now is looking to start trading in November before Thanksgiving."

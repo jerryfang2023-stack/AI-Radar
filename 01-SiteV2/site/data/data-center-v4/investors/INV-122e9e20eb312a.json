@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-09-16",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
@@ -90,12 +90,57 @@
         "name": "Delos"
       },
       {
+        "entity_id": "EN-40cd17bb16c8fec1",
+        "canonical_entity_id": "",
+        "name": "SafeWorld"
+      },
+      {
         "entity_id": "EN-05fdf088833f5600",
         "canonical_entity_id": "",
         "name": "ZeroDrift"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-47634b082eddab00",
+        "funding_insight_id": "FI-5fd5533b14de7850",
+        "event_ids": [
+          "EV-ad1a42d4f43e005c"
+        ],
+        "company_entity_id": "EN-40cd17bb16c8fec1",
+        "company_canonical_entity_id": "",
+        "company_name": "SafeWorld",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "超1200万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": 12000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1200 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f77610cfcfab94",
+            "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+            "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+            "source_content_hash": "58fca4c121c8b3b4",
+            "quote": "Other investors in the seed round included Ovo Fund, Valkyrie, Zelda Ventures, Alpha Square Group, Founders Future and Brave Capital",
+            "quote_hash": "196e7d11f01def97941438d9827f5029c773b39de914d159fefad0cad8638603"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6d11e62aecdec14e",
         "funding_insight_id": "FI-6f8b5d0ac8d2f6ff",
@@ -219,6 +264,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-98f77610cfcfab94",
+        "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+        "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+        "source_content_hash": "58fca4c121c8b3b4",
+        "quote": "Other investors in the seed round included Ovo Fund, Valkyrie, Zelda Ventures, Alpha Square Group, Founders Future and Brave Capital",
+        "quote_hash": "196e7d11f01def97941438d9827f5029c773b39de914d159fefad0cad8638603"
+      },
+      {
         "source_id": "FISRC-6d8407107e870ebc",
         "source_url": "https://www.maddyness.com/?p=1441578",
         "source_title": "Delos lève 10 millions d’euros pour exporter ses « employés IA » aux États-Unis",
@@ -271,16 +324,16 @@
       "experience_summary": "",
       "track_record": [
         {
+          "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮参投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f77610cfcfab94"
+        },
+        {
           "description": "融资来源记录：Delos · A轮 · 2026-09-16 · 本轮参投 · €10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6d8407107e870ebc"
         },
         {
           "description": "融资来源记录：ZeroDrift · 种子轮 · 2026-06-02 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5827c25c8bbe0d20"
-        },
-        {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-115626db07e52373"
         }
       ],
       "sources": [
@@ -301,6 +354,14 @@
           "quote_hash": "aada0988303a904d974e1aebcc204efe27c2f37711dcfeb0fcb3be5f113cc8bc"
         },
         {
+          "source_id": "FISRC-98f77610cfcfab94",
+          "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+          "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+          "source_content_hash": "58fca4c121c8b3b4",
+          "quote": "Other investors in the seed round included Ovo Fund, Valkyrie, Zelda Ventures, Alpha Square Group, Founders Future and Brave Capital",
+          "quote_hash": "196e7d11f01def97941438d9827f5029c773b39de914d159fefad0cad8638603"
+        },
+        {
           "source_id": "FISRC-6d8407107e870ebc",
           "source_url": "https://www.maddyness.com/?p=1441578",
           "source_title": "Delos lève 10 millions d’euros pour exporter ses « employés IA » aux États-Unis",
@@ -315,14 +376,6 @@
           "source_content_hash": "9d95b1327146185c",
           "quote": "Investors include a16z speedrun, Reign Ventures, PitchDrive Ventures, U&I Ventures, Active Capital, Geek Ventures, Converge Ventures, Atlas SGR, Founders Future, and others.",
           "quote_hash": "22c9303e353466cccbd29cc3afb3f0d00a300b56627951c3b941581be21673de"
-        },
-        {
-          "source_id": "FISRC-115626db07e52373",
-          "source_url": "https://www.linkedin.com/posts/toyota-ventures_ami-labs-activity-7437189879689629697-0_Rg",
-          "source_title": "AMI Labs receives $1.03B Seed round for World Models development | Toyota Ventures posted on the topic | LinkedIn",
-          "source_content_hash": "f7ae81bef24b26df",
-          "quote": "Founders Future",
-          "quote_hash": "a799bc6e9b8be7996b147cfd574c3c2a171c3032c8a813133c84cec15dc858d1"
         }
       ],
       "last_verified_at": "2026-10-04"

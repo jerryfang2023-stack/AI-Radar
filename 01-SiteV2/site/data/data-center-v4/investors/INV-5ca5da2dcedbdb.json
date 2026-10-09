@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-04-17",
-    "latest_disclosed_at": "2026-04-17",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
+      "co_lead": 1,
       "lead": 1
     },
     "round_codes": [
+      "seed",
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-40cd17bb16c8fec1",
+        "canonical_entity_id": "",
+        "name": "SafeWorld"
+      },
       {
         "entity_id": "EN-08ff6997681fad41",
         "canonical_entity_id": "",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1e03e7a11a0f8e9b",
+        "funding_insight_id": "FI-5fd5533b14de7850",
+        "event_ids": [
+          "EV-ad1a42d4f43e005c"
+        ],
+        "company_entity_id": "EN-40cd17bb16c8fec1",
+        "company_canonical_entity_id": "",
+        "company_name": "SafeWorld",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "超1200万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": 12000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1200 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f77610cfcfab94",
+            "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+            "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+            "source_content_hash": "58fca4c121c8b3b4",
+            "quote": "Shine Capital and a16z Speedrun co-led the round",
+            "quote_hash": "74fb53687c598b3f12406d06ad0ea019e319941b8b26be22ac1261a2b876538b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-78796c3a85dbf483",
         "funding_insight_id": "FI-93538e84a3075ee9",
@@ -128,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-98f77610cfcfab94",
+        "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+        "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+        "source_content_hash": "58fca4c121c8b3b4",
+        "quote": "Shine Capital and a16z Speedrun co-led the round",
+        "quote_hash": "74fb53687c598b3f12406d06ad0ea019e319941b8b26be22ac1261a2b876538b"
+      },
+      {
         "source_id": "FISRC-d87b08783c0a062f",
         "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
         "source_title": "Zenskar获1500万美元A轮融资，用于扩展B2B收入自动化的代理能力",
@@ -161,6 +216,10 @@
           "source_id": "PFSRC-INV-5ca5da2dcedbdb-2"
         },
         {
+          "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮联合领投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f77610cfcfab94"
+        },
+        {
           "description": "融资来源记录：Zenskar · A轮 · 2026-04-17 · 本轮领投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d87b08783c0a062f"
         }
@@ -182,6 +241,14 @@
           "source_content_hash": "5c42d9e2d9b877de3326ecf45049ad9509bd7b6eee46f9df519069ad16c897c5",
           "quote": "Zenskar closed a $15 million Series A in April 2026 led by Susquehanna International Group, Bessemer Venture Partners, Shine Capital, and Rho",
           "quote_hash": "15b8c1934729a527a9a02ab9b0eadba35f3ea9ac3f0b5498fe41b794e1b123e4"
+        },
+        {
+          "source_id": "FISRC-98f77610cfcfab94",
+          "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+          "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+          "source_content_hash": "58fca4c121c8b3b4",
+          "quote": "Shine Capital and a16z Speedrun co-led the round",
+          "quote_hash": "74fb53687c598b3f12406d06ad0ea019e319941b8b26be22ac1261a2b876538b"
         },
         {
           "source_id": "FISRC-d87b08783c0a062f",

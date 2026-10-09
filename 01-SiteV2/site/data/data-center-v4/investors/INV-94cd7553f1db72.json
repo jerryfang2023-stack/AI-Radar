@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,26 +54,27 @@
   },
   "institution": {
     "id": "INV-94cd7553f1db72",
-    "name": "a16z speedrun",
+    "name": "a16z Speedrun",
     "aliases": [
-      "a16z Speedrun"
+      "a16z speedrun"
     ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 1,
       "participant": 3
     },
@@ -87,6 +88,11 @@
         "name": "Kanu AI"
       },
       {
+        "entity_id": "EN-40cd17bb16c8fec1",
+        "canonical_entity_id": "",
+        "name": "SafeWorld"
+      },
+      {
         "entity_id": "EN-6c42a85075d8a891",
         "canonical_entity_id": "",
         "name": "Taya"
@@ -98,6 +104,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-270a5bebee05a812",
+        "funding_insight_id": "FI-5fd5533b14de7850",
+        "event_ids": [
+          "EV-ad1a42d4f43e005c"
+        ],
+        "company_entity_id": "EN-40cd17bb16c8fec1",
+        "company_canonical_entity_id": "",
+        "company_name": "SafeWorld",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "超1200万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": 12000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1200 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f77610cfcfab94",
+            "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+            "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+            "source_content_hash": "58fca4c121c8b3b4",
+            "quote": "Shine Capital and a16z Speedrun co-led the round",
+            "quote_hash": "74fb53687c598b3f12406d06ad0ea019e319941b8b26be22ac1261a2b876538b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c8c578310571619d",
         "funding_insight_id": "FI-21345da91c7c8f2d",
@@ -254,6 +300,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-98f77610cfcfab94",
+        "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+        "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+        "source_content_hash": "58fca4c121c8b3b4",
+        "quote": "Shine Capital and a16z Speedrun co-led the round",
+        "quote_hash": "74fb53687c598b3f12406d06ad0ea019e319941b8b26be22ac1261a2b876538b"
+      },
+      {
         "source_id": "FISRC-2600408f2e0d32d7",
         "source_url": "https://www.geekwire.com/2026/kanu-ai-emerges-from-stealth-with-11-7m-to-turn-employee-workflows-into-custom-software/",
         "source_title": "Kanu AI 结束隐身模式，获 1170 万美元，将员工工作流转化为定制软件",
@@ -309,16 +363,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮联合领投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f77610cfcfab94"
+        },
+        {
           "description": "融资来源记录：Kanu AI · 种子轮 · 2026-09-30 · 本轮参投 · $11.7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2600408f2e0d32d7"
         },
         {
           "description": "融资来源记录：ZeroDrift · 种子轮 · 2026-06-02 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dffcc55088dd6fc6"
-        },
-        {
-          "description": "融资来源记录：Taya · 种子轮 · 2026-03-12 · 本轮参投 · $5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4ec4178291982ae4"
         }
       ],
       "contacts": [],
@@ -340,6 +394,14 @@
           "quote_hash": "7fee6a0edebe2231c554ef065c4fee08177fe5941032ad2ce9fd125bf8c1bca1"
         },
         {
+          "source_id": "FISRC-98f77610cfcfab94",
+          "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+          "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+          "source_content_hash": "58fca4c121c8b3b4",
+          "quote": "Shine Capital and a16z Speedrun co-led the round",
+          "quote_hash": "74fb53687c598b3f12406d06ad0ea019e319941b8b26be22ac1261a2b876538b"
+        },
+        {
           "source_id": "FISRC-2600408f2e0d32d7",
           "source_url": "https://www.geekwire.com/2026/kanu-ai-emerges-from-stealth-with-11-7m-to-turn-employee-workflows-into-custom-software/",
           "source_title": "Kanu AI 结束隐身模式，获 1170 万美元，将员工工作流转化为定制软件",
@@ -354,14 +416,6 @@
           "source_content_hash": "d562dbffac1e2d9fee62fbabbd1ba5c517a035d9e1c4da81a7af06ed2c1e41cb",
           "quote": "it had raised $10 million in a seed funding round that saw investments from a16z Speedrun, Reign Ventures, Pitchdrive, and U&I Ventures, among others.",
           "quote_hash": "b215777c949ba082207bfc3f75c4369a1e3c063d802a02c2b550b33d37bcc681"
-        },
-        {
-          "source_id": "FISRC-4ec4178291982ae4",
-          "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
-          "source_title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
-          "source_content_hash": "b78c54740db46c4316d314be4c11f1cc1a37f0e635049a7661863a7e71e84ff7",
-          "quote": "Taya today announced it has raised a $5 million seed round led by MaC Venture Capital and Female Founders Fund, with participation from a16z speedrun.",
-          "quote_hash": "0a632c56cfbb4e44872d10b4c4d7118a5c285d0446981e4b38379a2f3f43ced6"
         }
       ],
       "last_verified_at": "2026-10-04",

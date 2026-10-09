@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-03",
-    "latest_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed"
@@ -82,9 +82,54 @@
         "entity_id": "EN-9f80a5e14017ccc0",
         "canonical_entity_id": "",
         "name": "Intelligence"
+      },
+      {
+        "entity_id": "EN-40cd17bb16c8fec1",
+        "canonical_entity_id": "",
+        "name": "SafeWorld"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-38f8d405804b47e3",
+        "funding_insight_id": "FI-5fd5533b14de7850",
+        "event_ids": [
+          "EV-ad1a42d4f43e005c"
+        ],
+        "company_entity_id": "EN-40cd17bb16c8fec1",
+        "company_canonical_entity_id": "",
+        "company_name": "SafeWorld",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "超1200万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": 12000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1200 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f77610cfcfab94",
+            "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+            "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+            "source_content_hash": "58fca4c121c8b3b4",
+            "quote": "Other investors in the seed round included Ovo Fund, Valkyrie, Zelda Ventures, Alpha Square Group, Founders Future and Brave Capital",
+            "quote_hash": "196e7d11f01def97941438d9827f5029c773b39de914d159fefad0cad8638603"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7725655828579bd4",
         "funding_insight_id": "FI-36e2dba781b80e3a",
@@ -128,6 +173,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-98f77610cfcfab94",
+        "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+        "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+        "source_content_hash": "58fca4c121c8b3b4",
+        "quote": "Other investors in the seed round included Ovo Fund, Valkyrie, Zelda Ventures, Alpha Square Group, Founders Future and Brave Capital",
+        "quote_hash": "196e7d11f01def97941438d9827f5029c773b39de914d159fefad0cad8638603"
+      },
+      {
         "source_id": "FISRC-3fa34b4b7b9a1a77",
         "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
         "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
@@ -155,6 +208,10 @@
         {
           "description": "TechCrunch 将 Valkyrie 列为 Intelligence 种子轮参投方；未披露出资额。",
           "source_id": "PROFILE-b07050e9f27224434d54"
+        },
+        {
+          "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮参投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f77610cfcfab94"
         },
         {
           "description": "融资来源记录：Intelligence · 种子轮 · 2026-08-03 · 本轮参投 · $7.9 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -190,6 +247,14 @@
           "source_content_hash": "1144f8198bc2da41e90c4d4bf22f4718b90931f2f9f678ef42b6438c7180f040",
           "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others.",
           "quote_hash": "9cd465f151d51687b6a4cc8caf7d3ad097a4577cec884e48856cb8be298ac055"
+        },
+        {
+          "source_id": "FISRC-98f77610cfcfab94",
+          "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+          "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+          "source_content_hash": "58fca4c121c8b3b4",
+          "quote": "Other investors in the seed round included Ovo Fund, Valkyrie, Zelda Ventures, Alpha Square Group, Founders Future and Brave Capital",
+          "quote_hash": "196e7d11f01def97941438d9827f5029c773b39de914d159fefad0cad8638603"
         },
         {
           "source_id": "FISRC-3fa34b4b7b9a1a77",
