@@ -28717,31 +28717,50 @@
     },
     "EV-ddb18df87aae8ef4": {
       "id": "EV-ddb18df87aae8ef4",
-      "scope": "review",
+      "scope": "included",
       "exclusion_reason": "",
-      "sector_id": "",
-      "subsector_id": "",
-      "product_form_id": "",
-      "customer_ids": [],
+      "sector_id": "compute",
+      "subsector_id": "compute-systems",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
       "evidence_indices": [
         0,
-        2
+        1,
+        2,
+        5,
+        6
       ],
-      "rationale": "证据显示其主营为量子计算与量子处理器，AI业务边界不清，需人工复核。",
-      "input_hash": "f166872c46d15932eda1b5bc942905aae00ec622bd8a890162d50cc5533c1353",
+      "rationale": "QpiAI 官网明确列出企业 Gen-AI、预测分析、计算机视觉、LLM 与 AI Agent，并将 AI 与量子计算垂直整合；其量子计算系统面向企业应用。按 AI 算力与计算系统归类。此业务证据用于同一公司的两条 2026-10-05、Rs 50 Cr、InnoVen 债务融资来源，不修改融资事实或主体身份。",
+      "input_hash": "bd50cd3715f22e75df9d8350a5e224b5d944c99e9d04a87a563c8f4ec2c21157",
       "evidence_refs": [
+        {
+          "source_id": "FISRC-c475e2ad3ff0f361",
+          "quote": "Vertically Integrated AI and Quantum Computing"
+        },
+        {
+          "source_id": "FISRC-c475e2ad3ff0f361",
+          "quote": "From predictive analytics, computer vision, LLMs, or AI Agents - our integrated solutions enhance decision-making and automation capabilities across industries."
+        },
         {
           "source_id": "FISRC-b5e8fc96695fabe9",
           "quote": "Founded in 2019 by Nagendra Nagaraja, Bengaluru-based QpiAI is a deeptech startup building quantum computing and AI solutions for enterprises."
         },
         {
           "source_id": "FISRC-c39a2266bda8a6ee",
-          "quote": "QpiAI, a globally leading full-stack quantum computing company, today released the QpiAI Quantum SDK as open-source software, giving developers, researchers, and startups an accessible, developer-friendly toolkit to build and run quantum algorithms."
+          "quote": "Kaveri will be commercially available by the third quarter of 2026 and is expected to help government agencies, research institutions, and businesses."
+        },
+        {
+          "source_id": "FISRC-c39a2266bda8a6ee",
+          "quote": "QpiAI Awarded Contract to Install 25-Qubit QpiAI Indus System at IIIT-Dharwad and Raichur"
         }
       ],
-      "provider": "deepseek",
-      "model": "deepseek-flash",
-      "generated_at": "2026-10-09T01:52:11.197Z"
+      "provider": "manual_review",
+      "model": "Codex financing evidence review",
+      "generated_at": "2026-10-09T03:14:52.000Z",
+      "reviewer": "Codex financing evidence review",
+      "reviewed_at": "2026-10-09T03:14:52.000Z"
     },
     "EV-2a554429da11d2b8": {
       "id": "EV-2a554429da11d2b8",

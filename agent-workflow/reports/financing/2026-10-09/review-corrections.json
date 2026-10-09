@@ -43,6 +43,34 @@
       "other_source_card_id": "FI-9968fe323f85c64c",
       "source_url": "https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/",
       "note": "Both cards report Persona, Zach Yadegari, the same $10m undisclosed round and date; the published catalog emits one event record containing both event IDs and all source histories, with no entity merge."
+    },
+    {
+      "event_id": "EV-ddb18df87aae8ef4",
+      "disposition": "included_after_first_party_ai_product_review",
+      "source_binding": "same_company_business_profile_evidence",
+      "entity_id": "EN-944c59663f22073c",
+      "source_ids": [
+        "FISRC-c475e2ad3ff0f361",
+        "FISRC-b5e8fc96695fabe9"
+      ],
+      "source_content_hashes": {
+        "FISRC-c475e2ad3ff0f361": "12ccc8d8453e6986",
+        "FISRC-b5e8fc96695fabe9": "27f6381ac69a08d78869d50a0f8fa243fc47b0dae17502d6eebffed33bb093ec"
+      },
+      "evidence_quotes": [
+        "From predictive analytics, computer vision, LLMs, or AI Agents - our integrated solutions enhance decision-making and automation capabilities across industries.",
+        "Founded in 2019 by Nagendra Nagaraja, Bengaluru-based QpiAI is a deeptech startup building quantum computing and AI solutions for enterprises."
+      ],
+      "classification": {
+        "scope": "included",
+        "sector_id": "compute",
+        "subsector_id": "compute-systems",
+        "product_form_id": "chip-system",
+        "customer_ids": [
+          "business"
+        ]
+      },
+      "note": "Reused the already accepted 2026-10-06 first-party QpiAI homepage capture (FISRC-c475e2ad3ff0f361); no new collection. It documents enterprise Gen-AI, LLMs, AI agents and integrated AI/quantum computing. EV-ddb18df87aae8ef4 and EV-f6bbc6faccdbcaac report the same 2026-10-05 Rs 50 Cr InnoVen debt disclosure; retain both event/source records and the existing entity binding without an entity merge."
     }
   ]
 }
