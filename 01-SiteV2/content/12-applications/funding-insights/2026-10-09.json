@@ -2,15 +2,15 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-10-09",
-    "generated_at": "2026-10-09T01:50:42.968Z",
+    "generated_at": "2026-10-09T02:47:11.797Z",
     "trigger": "accepted_financing_event_research",
     "research_provider": "search-gateway+direct-original+deepseek",
     "model": "deepseek-flash",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 40,
-      "auto_published": 17,
+      "funding_events": 39,
+      "auto_published": 16,
       "blocked": 1,
       "pending": 3,
       "deduplicated": 19
@@ -2436,548 +2436,6 @@
       ],
       "aggregation": {
         "key": "EN-944c59663f22073c|debt",
-        "event_count": 1,
-        "strategy": "company_and_normalized_round"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-fb902b3082a82dcc",
-      "triggered_by_event_id": "EV-2a554429da11d2b8",
-      "as_of_date": "2026-10-09",
-      "company": {
-        "entity_id": "EN-7d3194f79e645c42",
-        "name": "OpenAI",
-        "full_name": "OpenAI",
-        "website": "",
-        "summary": "OpenAI是一家AI公司，其投资者已向公司提出启动新一轮融资的建议，但公司目前未积极进行相关对话。公司于2026年3月以8520亿美元估值完成1220亿美元融资，并计划于2027年上市。",
-        "headquarters": "",
-        "founders": [],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-1a71f02a36c56794",
-            "quote": "OpenAI investors have approached the company with proposals to kick-start a new funding round, but no formal discussions are underway, multiple sources told CNBC.",
-            "source_content_hash": "70251572a68ca5d3",
-            "quote_hash": "2695db76e00f5dd0a5fa37723396574b128bf47c43e5f1e161a41d11efc6b968"
-          },
-          {
-            "source_id": "FISRC-85e83dc29afc39fd",
-            "quote": "OpenAI, for its part, closed a $122 billion round in March 2026 at $852 billion.",
-            "source_content_hash": "57f300b822a08037",
-            "quote_hash": "576cab97c6961ba1eb3a4c376dc4f665ee812786ec66a5cea607ae2a8ac2ab44"
-          }
-        ],
-        "application_entity_id": "EN-7d3194f79e645c42",
-        "canonical_entity_consistent": true
-      },
-      "financing": {
-        "round": "基础设施融资",
-        "amount": "超过500亿美元",
-        "total_raised": "约1800-1900亿美元",
-        "announced_at": "2026-10-08",
-        "investor_disclosure_status": "not_disclosed",
-        "investors": [],
-        "other_round_investors": [
-          {
-            "name": "阿波罗全球管理",
-            "role": "参与洽谈的贷款机构之一",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f94278a09c915c3f",
-                "quote": "阿波罗全球管理和黑石集团是参与洽谈的贷款机构之一。",
-                "source_content_hash": "2aba9b21ef947d01f97076c04bf73e0de4441efe2252c9bc529e7ea71b76c3a3",
-                "quote_hash": "2b869b786ce7fd86521c362f451f816271f2aa64fd4386416a914330c9062af2"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "黑石集团",
-            "role": "参与洽谈的贷款机构之一",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f94278a09c915c3f",
-                "quote": "阿波罗全球管理和黑石集团是参与洽谈的贷款机构之一。",
-                "source_content_hash": "2aba9b21ef947d01f97076c04bf73e0de4441efe2252c9bc529e7ea71b76c3a3",
-                "quote_hash": "2b869b786ce7fd86521c362f451f816271f2aa64fd4386416a914330c9062af2"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-f94278a09c915c3f",
-            "quote": "博通最近几周一直在为与OpenAI合作开发定制AI芯片项目安排超过500亿美元的融资。",
-            "source_content_hash": "2aba9b21ef947d01f97076c04bf73e0de4441efe2252c9bc529e7ea71b76c3a3",
-            "quote_hash": "c9086fd280ec43a89f320c72d81379ec523e614ae11c5210c09afe2f76007dfb"
-          },
-          {
-            "source_id": "FISRC-85e83dc29afc39fd",
-            "quote": "OpenAI’s total raised across all rounds sits around $180-190 billion.",
-            "source_content_hash": "57f300b822a08037",
-            "quote_hash": "e1c1d3d60952758f3968f6bee585d220cc24d927e116bf2cf32daee0511b8310"
-          }
-        ],
-        "round_code": "infrastructure",
-        "round_original": "基础设施融资",
-        "amount_original": "超过500亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 50000000000,
-          "min_value": 50000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 500 亿美元"
-        },
-        "total_raised_original": "约1800-1900亿美元",
-        "total_raised_normalized": {
-          "currency": "USD",
-          "value": 190000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 1900 亿美元"
-        },
-        "risk_markers": [
-          "investors_missing"
-        ],
-        "disclosures": [
-          {
-            "event_id": "EV-2a554429da11d2b8",
-            "round_original": "基础设施融资",
-            "amount": "超过500亿美元",
-            "announced_at": "2026-10-08",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f94278a09c915c3f",
-                "quote": "博通最近几周一直在为与OpenAI合作开发定制AI芯片项目安排超过500亿美元的融资。",
-                "source_content_hash": "2aba9b21ef947d01f97076c04bf73e0de4441efe2252c9bc529e7ea71b76c3a3",
-                "quote_hash": "c9086fd280ec43a89f320c72d81379ec523e614ae11c5210c09afe2f76007dfb"
-              },
-              {
-                "source_id": "FISRC-85e83dc29afc39fd",
-                "quote": "OpenAI’s total raised across all rounds sits around $180-190 billion.",
-                "source_content_hash": "57f300b822a08037",
-                "quote_hash": "e1c1d3d60952758f3968f6bee585d220cc24d927e116bf2cf32daee0511b8310"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "partially_disclosed"
-      },
-      "products": [
-        {
-          "name": "Nexus定制AI芯片",
-          "description": "OpenAI内部代号为Nexus的定制芯片计划，旗下定制芯片均以辣椒命名，前两代代号为Jalapeño和Serrano。",
-          "target_customers": "",
-          "features": [
-            "定制AI芯片",
-            "以辣椒命名"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f94278a09c915c3f",
-              "quote": "OpenAI内部将该芯片计划代号定为“Nexus”，旗下定制芯片均以辣椒命名，前两代代号为Jalapeño和Serrano。",
-              "source_content_hash": "2aba9b21ef947d01f97076c04bf73e0de4441efe2252c9bc529e7ea71b76c3a3",
-              "quote_hash": "12cbbc9500d9404afa78d9f48089aa9b8637afb0be01ea4b7fc641b7bb5460b9"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Dots",
-          "description": "OpenAI在DevDay上推出的常驻代理，在ChatGPT中代表用户工作，拥有自己的云计算机、记忆和已连接应用的访问权限。",
-          "target_customers": "知识工作者、企业用户",
-          "features": [
-            "常驻代理",
-            "拥有自己的云计算机",
-            "拥有记忆",
-            "可访问已连接应用",
-            "在ChatGPT、Slack和Teams中运行"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e7fe0baf5b66ca52",
-              "quote": "A dot is the agent OpenAI launched at DevDay on September 29, 2026. OpenAI's announcement describes it as an always-on agent that works on your behalf in ChatGPT, with its own cloud computer, its own memory, and access to the apps you've connected.",
-              "source_content_hash": "a5f561b06245cfa4",
-              "quote_hash": "977fd045080d3c3847d810792e837b796427934fe7823415140fda83e2d2d26c"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [
-        {
-          "name": "Meta Muse",
-          "product": "Muse",
-          "scenario": "消费者个人助理，用于预订航班、餐厅预订、购买礼物等",
-          "target_customer": "主流消费者",
-          "funding_summary": "",
-          "core_difference": "Muse免费，Dots需付费；Muse面向消费者，Dots更面向企业；Meta没有前沿模型，但产品设计和分发能力更强。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4559be598a797f20",
-              "quote": "Muse, notably, is free, while Dots are not.",
-              "source_content_hash": "51070cc5a7339830",
-              "quote_hash": "0f9d166474c69498b73ca0d99b5c4e7a86e7cbaa0240dd65f7d9446bc442f23a"
-            },
-            {
-              "source_id": "FISRC-4559be598a797f20",
-              "quote": "The difference is that OpenAI is marketing it to be an enterprise-friendly product a lot more than Meta is. Muse is just a consumer-facing product.",
-              "source_content_hash": "51070cc5a7339830",
-              "quote_hash": "eafa051b73098b71d3462e8b42d132433bf77f8acdac56b868a5e15a31a9fd9d"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "eesel AI helpdesk teammate",
-          "product": "AI helpdesk teammate",
-          "scenario": "在帮助台中处理工单队列，自动回复客户",
-          "target_customer": "支持团队",
-          "funding_summary": "",
-          "core_difference": "Dots为个人工作，eesel为支持团队工作；Dots在ChatGPT、Slack、Teams中运行，eesel在帮助台中运行；Dots按需启动，eesel在新工单到达时启动；Dots发送需审批，eesel在规则内以支持代理身份发送。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e7fe0baf5b66ca52",
-              "quote": "A dot makes one agent faster. A helpdesk teammate takes tickets off the whole team.",
-              "source_content_hash": "a5f561b06245cfa4",
-              "quote_hash": "2990de6c4e8b50f67a58d476e80e49efe5a8beeeedf248d28da27b41a6e9890c"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "metrics": [
-        {
-          "label": "本轮融资安排金额",
-          "value": "超过500亿美元",
-          "observed_at": "2026-10-08",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f94278a09c915c3f",
-              "quote": "博通最近几周一直在为与OpenAI合作开发定制AI芯片项目安排超过500亿美元的融资。",
-              "source_content_hash": "2aba9b21ef947d01f97076c04bf73e0de4441efe2252c9bc529e7ea71b76c3a3",
-              "quote_hash": "c9086fd280ec43a89f320c72d81379ec523e614ae11c5210c09afe2f76007dfb"
-            }
-          ]
-        },
-        {
-          "label": "2026年3月融资额",
-          "value": "1220亿美元",
-          "observed_at": "2026-03",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a71f02a36c56794",
-              "quote": "OpenAI raised $122 billion at a $852 billion valuation in March.",
-              "source_content_hash": "70251572a68ca5d3",
-              "quote_hash": "6612f2f207ee1f49ab2e3c2c7ed1e7695ac33dd7b9591fff48218e509387da3e"
-            }
-          ]
-        },
-        {
-          "label": "2026年3月估值",
-          "value": "8520亿美元",
-          "observed_at": "2026-03",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a71f02a36c56794",
-              "quote": "OpenAI raised $122 billion at a $852 billion valuation in March.",
-              "source_content_hash": "70251572a68ca5d3",
-              "quote_hash": "6612f2f207ee1f49ab2e3c2c7ed1e7695ac33dd7b9591fff48218e509387da3e"
-            }
-          ]
-        },
-        {
-          "label": "累计融资额",
-          "value": "约1800-1900亿美元",
-          "observed_at": "2026-03",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-85e83dc29afc39fd",
-              "quote": "OpenAI’s total raised across all rounds sits around $180-190 billion.",
-              "source_content_hash": "57f300b822a08037",
-              "quote_hash": "e1c1d3d60952758f3968f6bee585d220cc24d927e116bf2cf32daee0511b8310"
-            }
-          ]
-        },
-        {
-          "label": "2026年Q1年化收入",
-          "value": "约250亿美元",
-          "observed_at": "2026-Q1",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-85e83dc29afc39fd",
-              "quote": "Annualized revenue: ~$25 billion (Q1 2026); $20 billion for full-year 2025",
-              "source_content_hash": "57f300b822a08037",
-              "quote_hash": "141315ad22f308ee108848180f42758ce8bef50291b3d6bf43640f9628eb6ef0"
-            }
-          ]
-        },
-        {
-          "label": "2025年全年收入",
-          "value": "200亿美元",
-          "observed_at": "2025",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-85e83dc29afc39fd",
-              "quote": "Annualized revenue: ~$25 billion (Q1 2026); $20 billion for full-year 2025",
-              "source_content_hash": "57f300b822a08037",
-              "quote_hash": "141315ad22f308ee108848180f42758ce8bef50291b3d6bf43640f9628eb6ef0"
-            }
-          ]
-        },
-        {
-          "label": "2026年8月二级股票出售总额",
-          "value": "约70亿美元",
-          "observed_at": "2026-08",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a71f02a36c56794",
-              "quote": "Following the round, OpenAI completed a secondary share sale totaling roughly $7 billion in August, allowing employees to cash in a portion of their holdings.",
-              "source_content_hash": "70251572a68ca5d3",
-              "quote_hash": "460c59b2a19c16ad51e5e0c0cc6cdec09b9e81abdf4970b37be604234633ab0c"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Sarah Friar",
-          "quote": "We still have an incredible balance sheet",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a71f02a36c56794",
-              "quote": "\"We still have an incredible balance sheet,\" OpenAI CFO Sarah Friar told CNBC's Jim Cramer in an interview on Tuesday.",
-              "source_content_hash": "70251572a68ca5d3",
-              "quote_hash": "ab300b8d0093be302bde8ca0caa54072dc50261e141163bd9510e94678736ba7"
-            }
-          ]
-        },
-        {
-          "speaker": "Sarah Friar",
-          "quote": "will be a public company in 2027",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a71f02a36c56794",
-              "quote": "Friar told employees during an all-hands meeting last month that OpenAI \"will be a public company in 2027,\" but that it could make its public market debut sooner if \"our business continues to inflect.\"",
-              "source_content_hash": "70251572a68ca5d3",
-              "quote_hash": "ed98c7c4c04f79fb53c7957b942adc3cb809148806c0bcf71ba41b001682df39"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是OpenAI能否通过定制芯片项目（Nexus）降低长期算力成本并摆脱对外部供应商的依赖。当前融资所依赖的已验证信号包括：OpenAI于2026年3月以8520亿美元估值完成1220亿美元融资，2026年Q1年化收入约250亿美元，以及博通已为该项目安排超过500亿美元融资。判断的证据边界在于：谈判处于初期阶段，交易规模可能有变动，且该融资安排尚未最终敲定。",
-        "validated_signals": [
-          "OpenAI于2026年3月以8520亿美元估值完成1220亿美元融资",
-          "OpenAI 2026年Q1年化收入约250亿美元",
-          "博通已为OpenAI定制芯片项目安排超过500亿美元融资",
-          "OpenAI内部芯片计划代号为Nexus，前两代芯片代号为Jalapeño和Serrano"
-        ],
-        "risks": [
-          "博通为OpenAI安排的融资谈判处于初期阶段，交易规模可能有变动",
-          "OpenAI本身不具备直接斥巨资自主采购硬件的资金实力",
-          "AI基础设施融资浪潮导致信用市场承压，SpaceX、甲骨文等公司CDS成本攀升",
-          "OpenAI的估值倍数较高，约34倍收入，且AI API毛利率低于传统软件",
-          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
-        ],
-        "related_direction_id": "",
-        "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "ai_infrastructure_software",
-        "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "hardware_computing",
-        "market_application_id": "chips",
-        "use_case_ids": [],
-        "industry_ids": [],
-        "target_user_ids": [
-          "business_user"
-        ],
-        "sector": "AI基础设施",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是OpenAI能否通过定制芯片项目（Nexus）降低长期算力成本并摆脱对外部供应商的依赖。当前融资所依赖的已验证信号包括：OpenAI于2026年3月以8520亿美元估值完成1220亿美元融资，2026年Q1年化收入约250亿美元，以及博通已为该项目安排超过500亿美元融资。判断的证据边界在于：谈判处于初期阶段，交易规模可能有变动，且该融资安排尚未最终敲定。",
-          "evidence_signals": [
-            "OpenAI于2026年3月以8520亿美元估值完成1220亿美元融资",
-            "OpenAI 2026年Q1年化收入约250亿美元",
-            "博通已为OpenAI定制芯片项目安排超过500亿美元融资",
-            "OpenAI内部芯片计划代号为Nexus，前两代芯片代号为Jalapeño和Serrano"
-          ],
-          "risks": [
-            "博通为OpenAI安排的融资谈判处于初期阶段，交易规模可能有变动",
-            "OpenAI本身不具备直接斥巨资自主采购硬件的资金实力",
-            "AI基础设施融资浪潮导致信用市场承压，SpaceX、甲骨文等公司CDS成本攀升",
-            "OpenAI的估值倍数较高，约34倍收入，且AI API毛利率低于传统软件",
-            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Nexus定制AI芯片",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Dots",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "阿波罗全球管理",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "黑石集团",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Meta Muse",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "eesel AI helpdesk teammate",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-c387c9717ee19670",
-          "date": "2026-04-01",
-          "title": "创纪录！OpenAI完成1220亿美元融资投后估值达8520亿美元",
-          "amount": "1220亿美元",
-          "source_refs": [
-            "SA-b3e42ad16d52c7fe"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-f94278a09c915c3f",
-          "source_url": "https://www.huxiu.com/article/4895821.html",
-          "title": "博通为OpenAI芯片项目安排超500亿美元融资，AI基础设施资本争夺加剧",
-          "publisher": "www.huxiu.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-09T00:27:56.503Z",
-          "content_hash": "2aba9b21ef947d01f97076c04bf73e0de4441efe2252c9bc529e7ea71b76c3a3",
-          "source_artifact_id": "SA-e91c6533714ba9bd",
-          "raw_id": "RAW-768fc18f8ac9a0bc"
-        },
-        {
-          "source_id": "FISRC-1a71f02a36c56794",
-          "source_url": "https://www.cnbc.com/2026/09/16/open-ai-investors-new-funding-round.html",
-          "title": "OpenAI investors have approached the company about a new funding round",
-          "publisher": "cnbc.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-09T01:22:43.063Z",
-          "content_hash": "70251572a68ca5d3",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-85e83dc29afc39fd",
-          "source_url": "https://pinggy.io/blog/openai_anthropic_funding_history/",
-          "title": "Racing to a Trillion: OpenAI and Anthropic's Funding History",
-          "publisher": "pinggy.io",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-09T01:22:43.589Z",
-          "content_hash": "57f300b822a08037",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-e7fe0baf5b66ca52",
-          "source_url": "https://www.eesel.ai/blog/dots-for-customer-support",
-          "title": "OpenAI Dots for customer support: what a dot can do for your queue",
-          "publisher": "eesel.ai",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-09T01:22:47.713Z",
-          "content_hash": "a5f561b06245cfa4",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-4559be598a797f20",
-          "source_url": "https://www.theverge.com/podcast/1007408/meta-muse-openai-dots-ai-agent-race-privacy-free",
-          "title": "Can you trust Meta’s Muse or OpenAI’s Dots to run your life?",
-          "publisher": "theverge.com",
-          "source_class": "secondary",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-09T01:22:48.482Z",
-          "content_hash": "51070cc5a7339830",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-10-09T01:23:03.889Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-10-09T01:23:03.889Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 5
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 2,
-          "unresolved_names": [
-            "Dots",
-            "Nexus定制AI芯片"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 0,
-          "unresolved_names": []
-        }
-      },
-      "source_event_ids": [
-        "EV-2a554429da11d2b8"
-      ],
-      "aggregation": {
-        "key": "EN-7d3194f79e645c42|infrastructure",
         "event_count": 1,
         "strategy": "company_and_normalized_round"
       }
@@ -10689,7 +10147,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.959Z"
+      "updated_at": "2026-10-09T02:47:11.780Z"
     },
     {
       "event_id": "EV-53d3d485f2b3d64e",
@@ -10759,7 +10217,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.959Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-5b59ff829e596b56",
@@ -10872,7 +10330,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.959Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-d6ef2e46d3005d9b",
@@ -10935,7 +10393,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.959Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-ad1a42d4f43e005c",
@@ -11016,7 +10474,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.959Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-55ed36eee8ffa4bd",
@@ -11134,7 +10592,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.959Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-1faa33bcf69dcf47",
@@ -11217,7 +10675,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.960Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-558abe2d6c2074af",
@@ -11272,7 +10730,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.960Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-6e7c0515f06795aa",
@@ -11359,7 +10817,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.960Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-208a98705213d50c",
@@ -11430,7 +10888,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.960Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-ce32b416f60cec1d",
@@ -11529,7 +10987,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.960Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-335e20434f304224",
@@ -11628,7 +11086,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.960Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-52e472f000148362",
@@ -11718,117 +11176,6 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-09T01:50:42.960Z"
-    },
-    {
-      "event_id": "EV-2a554429da11d2b8",
-      "company_name": "OpenAI",
-      "status": "auto_published",
-      "problems": [],
-      "queries": [
-        "\"OpenAI\" 2026 funding round investors",
-        "\"OpenAI\" official product customers",
-        "\"OpenAI\" \"why we invested\"",
-        "\"OpenAI\" founders headquarters product"
-      ],
-      "attempts": [
-        {
-          "provider": "anysearch",
-          "query": "\"OpenAI\" 2026 funding round investors",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://openai.com/index/accelerating-the-next-phase-ai/",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://tracxn.com/d/companies/openai/__kElhSG7uVGeFk1i71Co9-nwFtmtyMVT7f-YHMn4TFBg/funding-and-investors",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.facebook.com/ArabianBusiness/posts/openai-is-reportedly-in-early-talks-with-investors-about-a-new-funding-round-tha/1616013229888109/",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "planner",
-          "query": "\"OpenAI\" 超过500亿美元 funding announcement",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"OpenAI\" official product customers",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://openai.com/index/introducing-dots/",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://help.openai.com/en/articles/7039943-how-openai-handles-data-in-consumer-services",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.appsruntheworld.com/customers-database/vendors/view/openai",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.reddit.com/r/startups/comments/1bzxsie/how_did_openai_talk_to_its_customers/",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.facebook.com/Engadget/posts/openai-is-rolling-out-gpt-6-to-chatgpt-and-it-will-come-with-the-capability-to-b/1641368980991124/",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"OpenAI\" \"why we invested\"",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://hofcapital.substack.com/p/why-we-invested-in-anthropic",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "planner",
-          "query": "\"OpenAI\" 2026 raises led by",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"OpenAI\" founders headquarters product",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://openai.com/business/why-openai/startups/",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        }
-      ],
       "updated_at": "2026-10-09T01:50:42.960Z"
     },
     {
@@ -12200,7 +11547,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.960Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-ddb18df87aae8ef4",
@@ -12255,7 +11602,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.960Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     },
     {
       "event_id": "EV-a48fb50d5019bb90",
@@ -12394,7 +11741,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-10-09T01:50:42.960Z"
+      "updated_at": "2026-10-09T02:47:11.781Z"
     }
   ]
 }
