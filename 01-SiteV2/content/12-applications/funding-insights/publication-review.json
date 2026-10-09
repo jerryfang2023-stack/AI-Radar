@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-10-07",
+  "reviewed_at": "2026-10-09",
   "holds": [
     {
       "event_id": "EV-3b424be9d0d68b87",
@@ -358,6 +358,18 @@
         "content_hash": "737c7ac211b11a9985778197f08a264c8cc080d7726efcbf48f127168041a267",
         "reason": "Source states the lab has no name or product; keep the financing pending identity verification."
       }
+    },
+    {
+      "event_id": "EV-f7b689602574677a",
+      "status": "pending",
+      "source_url": "https://www.uktech.news/biotech/cambridge-biotech-startup-neela-raises-2-1m-to-turn-waste-into-aviation-fuel-20261008",
+      "reason": "UKTN报道与剑桥大学企业部门的官方披露均指向同一笔2026-10-08的£2.1m pre-seed融资及共同创始人Deepanshu Singh，但当前被分配到不同entity_id。保留官方来源卡EV-6d646383629d5b15，暂缓此重复卡；不据此合并实体，待身份与事件绑定复核。"
+    },
+    {
+      "event_id": "EV-2a554429da11d2b8",
+      "status": "pending",
+      "source_url": "https://www.huxiu.com/article/4895821.html",
+      "reason": "原文描述Broadcom与OpenAI定制芯片项目的融资安排仍处早期洽谈阶段，且金额可能变化；未证明贷款承诺、交割或已完成融资。保留线索和证据，暂不作为已完成融资发布。"
     }
   ],
   "resolutions": [
