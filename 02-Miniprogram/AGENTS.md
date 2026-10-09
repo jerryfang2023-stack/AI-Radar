@@ -1,6 +1,6 @@
 # Guanlan Funding Mini Program
 
-Current verified development upload is 1.2.9 from `d9a3d84fa0d1e9dbd1c28a02fc39d55136ddbb91` (223 tests; 364 Git-verified archive files; 1,904,837 bytes). It includes the 2026-10-08 published offline snapshots: 541 subject cards, 581 funding events, and 541 reviewed observations with 36 valid windows. Review and production release remain owner-controlled; real-device performance checks remain pending.
+Current verified development upload is 1.3.0 from `2f8617a3e4bd655b6b1eed94777aa668609a81a0` (223 tests; 367 Git-verified archive files; 1,934,386 bytes). It includes the 2026-10-09 published offline snapshots: 553 subject cards, 593 funding events, and 553 reviewed observations with 37 valid windows, including reviewed company short names. Version 1.2.9 was submitted for review according to the user on 2026-10-09; version 1.3.0 has a development upload receipt only. Review approval and production publication remain owner-controlled and unconfirmed; real-device performance checks remain pending. See docs/releases/1.3.0/README.md.
 
 Version 1.2.8 was also uploaded on 2026-10-08 from `e5cadae271dc49b0f0860b261022b65b0e8a62b3`, but its archive retained the 2026-10-03 offline snapshot and was superseded by 1.2.9. Keep both immutable receipts; see README.md and the matching docs/releases records.
 
