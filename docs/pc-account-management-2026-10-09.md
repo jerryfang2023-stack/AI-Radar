@@ -14,4 +14,15 @@
 
 OPS unified 27 项、OPS v2 53 项及业务信号策略 fixture、Skill OPS 29 项通过；版本一致性检查通过。OPS 构建生成源版本快照，保留原采集数据的时间口径。
 
-线上浏览器验收因浏览器权限安全检查不可用而待验；源码/接口验证不替代目视验收。部署从固定 Git 提交提取文件，先备份 SQLite，服务和 OPS 分别使用原子发布与目标锁，发布结果存入私有运行回执。无小程序客户端改动，无需重新上传。
+线上浏览器验收因浏览器权限安全检查不可用而待验；源码/接口验证不替代目视验收。无小程序客户端改动，无需重新上传。
+
+## 已发布状态
+
+功能提交 `720fff091eabce595359660a1dba1c9c6f62aafd` 已推送 main，服务与 OPS 均从该固定提交发布。2026-10-09 22:34（北京时间）接口回读：PC 账号 6 个、小程序账号 105 个；这些是当时的平台列表计数，已关联账号可同时出现在两个列表中。
+
+- 服务发布：`/opt/wavesight-payment-service/releases/pc-admin-720fff091eab`；发布前数据库备份及回执：`/opt/guanlan-backups/pc-admin-720fff091eab`。
+- OPS 发布：`/var/www/wavesight-ops/releases/ops-720fff091eab-1791556471497`；前端文件哈希、Nginx 配置、匿名访问跳转及服务健康检查通过。
+- 已验证真实 HTTPS 后台代理能区分 `platform=pc` / `platform=mini`，会话与 CSRF 保护有效；部署验证未修改真实用户权益。
+- 私有本地回执位于项目 runtime 的 `pc-admin-service-publication.json` 和 `pc-admin-ops-publication.json`。不把包含运营数据的完整回执上传公共仓库。
+
+后续文档收尾提交不改变上述部署输入。浏览器目视验收仍为待验项。
