@@ -48,6 +48,7 @@ export function restore(root, directory, date) {
   const intakePath = `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`;
   const researchPath = `01-SiteV2/content/12-applications/funding-insights/${date}.json`;
   const modelPath = `01-SiteV2/content/11-databases/model-assist-v1/${date}.json`;
+  const supplementalPath = `agent-workflow/reports/financing/${date}/supplemental.json`;
   const union = (older, newer, key) => [...new Map([...(older || []), ...(newer || [])].map(row => [row[key], row])).values()];
   for (const entry of manifest.entries) {
     // On a newer main, reuse only this run's inputs/results. Old global indexes
@@ -71,6 +72,16 @@ export function restore(root, directory, date) {
     } else if (changedBase && fs.existsSync(file) && entry.file === modelPath) {
       const current=read(file), incoming=read(source);
       write(file,{...current,candidates:union(incoming.candidates,current.candidates,'candidate_id')});
+    } else if (changedBase && fs.existsSync(file) && entry.file === supplementalPath) {
+      const current=read(file), incoming=read(source);
+      if(current?.version!=='FINANCING-SUPPLEMENT-1' || incoming?.version!=='FINANCING-SUPPLEMENT-1'
+        || current.date!==date || incoming.date!==date || current.accepted!==true || incoming.accepted!==true) {
+        throw new Error('checkpoint_supplemental_identity_mismatch');
+      }
+      // Keep supplemental originals accepted on newer main while restoring an
+      // older same-date run's receipts; otherwise the resumed intake can lose
+      // the raw IDs needed to process evidence added after that run began.
+      write(file,{...incoming,...current,raw_ids:[...new Set([...(incoming.raw_ids || []),...(current.raw_ids || [])])]});
     }
     else fs.copyFileSync(source,file);
   }
