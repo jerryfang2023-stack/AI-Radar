@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 13,
+    "current_round_count": 14,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 11,
+    "portfolio_company_count": 12,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-05-06",
-    "latest_disclosed_at": "2026-10-01",
+    "latest_disclosed_at": "2026-10-07",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "lead": 5,
+      "lead": 6,
       "participant": 8
     },
     "round_codes": [
@@ -138,12 +138,57 @@
         "name": "Snorkel AI"
       },
       {
+        "entity_id": "FICO-4e7a22380a00c923",
+        "canonical_entity_id": "",
+        "name": "Stuut"
+      },
+      {
         "entity_id": "FICO-wonderful",
         "canonical_entity_id": "",
         "name": "Wonderful"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f4468878d0f6c743",
+        "funding_insight_id": "FI-acb537031ece1db8",
+        "event_ids": [
+          "EV-5db7347d93859de3"
+        ],
+        "company_entity_id": "FICO-4e7a22380a00c923",
+        "company_canonical_entity_id": "",
+        "company_name": "Stuut",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$52.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 52500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5250 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9c9f77e874c57759",
+            "source_url": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/",
+            "source_title": "Stuut 获得 $52.5M B 轮融资，以扩展 AI 代理在订单到收款全流程中的应用",
+            "source_content_hash": "4ff3dbe1ae5212cf86039961b0b8e2a6f259638653498858d69b63347f6abf84",
+            "quote": "由 Insight Partners领投，Andreessen Horowitz和 M12, Microsoft’s venture fund参与",
+            "quote_hash": "fb46dc0e438886ce5cc7dc6882637edf42f3bd109d1c5a4b4c59abc938797880"
+          }
+        ]
+      },
       {
         "activity_id": "IA-07bc8d145d8ba687",
         "funding_insight_id": "FI-568706815472d154",
@@ -774,6 +819,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9c9f77e874c57759",
+        "source_url": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/",
+        "source_title": "Stuut 获得 $52.5M B 轮融资，以扩展 AI 代理在订单到收款全流程中的应用",
+        "source_content_hash": "4ff3dbe1ae5212cf86039961b0b8e2a6f259638653498858d69b63347f6abf84",
+        "quote": "由 Insight Partners领投，Andreessen Horowitz和 M12, Microsoft’s venture fund参与",
+        "quote_hash": "fb46dc0e438886ce5cc7dc6882637edf42f3bd109d1c5a4b4c59abc938797880"
+      },
+      {
         "source_id": "FISRC-62e06e29d2d7be04",
         "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
         "source_title": "Metaview 完成 6000 万美元 C 轮融资",
@@ -951,16 +1004,16 @@
           "source_id": "insight_media"
         },
         {
+          "description": "融资来源记录：Stuut · B轮 · 2026-10-07 · 本轮领投 · $52.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9c9f77e874c57759"
+        },
+        {
           "description": "融资来源记录：Metaview · C轮 · 2026-10-01 · 本轮领投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-62e06e29d2d7be04"
         },
         {
           "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-16afc5791c45315a"
-        },
-        {
-          "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1c7459d2ce055880"
         }
       ],
       "contacts": [
@@ -1018,6 +1071,14 @@
           "quote_hash": "5384858027688c8f977287dfc08a527d40044033e1bf6d0114bdb609ec48472a"
         },
         {
+          "source_id": "FISRC-9c9f77e874c57759",
+          "source_url": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/",
+          "source_title": "Stuut 获得 $52.5M B 轮融资，以扩展 AI 代理在订单到收款全流程中的应用",
+          "source_content_hash": "4ff3dbe1ae5212cf86039961b0b8e2a6f259638653498858d69b63347f6abf84",
+          "quote": "由 Insight Partners领投，Andreessen Horowitz和 M12, Microsoft’s venture fund参与",
+          "quote_hash": "fb46dc0e438886ce5cc7dc6882637edf42f3bd109d1c5a4b4c59abc938797880"
+        },
+        {
           "source_id": "FISRC-62e06e29d2d7be04",
           "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
           "source_title": "Metaview 完成 6000 万美元 C 轮融资",
@@ -1032,14 +1093,6 @@
           "source_content_hash": "ad04baf1994708d0",
           "quote": "The new round, which was led by Insight Partners and S32, valued the seven-year-old startup at nearly triple the $1.3 billion valuation it garnered when it raised $100 million in a Series D 17 months ago.",
           "quote_hash": "570f3d38da98c770ed63b46c303f26eed84498a651974861af1f95116d94e3a2"
-        },
-        {
-          "source_id": "FISRC-1c7459d2ce055880",
-          "source_url": "https://factory.ai/news/5-billion-valuation",
-          "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
-          "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
-          "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
-          "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1050,7 +1103,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[13].role": {
+        "activities[14].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

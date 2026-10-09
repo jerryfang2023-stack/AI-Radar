@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-25",
-    "latest_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
       "lead": 3,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
@@ -83,6 +83,11 @@
       "series_f"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-572e31f55b6ac1b1",
+        "canonical_entity_id": "",
+        "name": "Arena"
+      },
       {
         "entity_id": "EN-0decbc3b45f73b2b",
         "canonical_entity_id": "EN-0decbc3b45f73b2b",
@@ -115,6 +120,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b42ac2034f7ca820",
+        "funding_insight_id": "FI-de00acfd7c8d76c8",
+        "event_ids": [
+          "EV-cdcdea720885d037"
+        ],
+        "company_entity_id": "EN-572e31f55b6ac1b1",
+        "company_canonical_entity_id": "",
+        "company_name": "Arena",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-99134731fc9bfd4f",
+            "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+            "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+            "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+            "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+            "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2431b20b14bd9a70",
         "funding_insight_id": "FI-04c68623444d84d6",
@@ -366,6 +411,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-99134731fc9bfd4f",
+        "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+        "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+        "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+        "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+        "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+      },
+      {
         "source_id": "FISRC-06082ac5aeed96c9",
         "source_url": "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html",
         "source_title": "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI",
@@ -472,12 +525,12 @@
           "source_id": "felicis_portfolio"
         },
         {
-          "description": "融资来源记录：Runlayer · A轮 · 2026-06-24 · 本轮领投，种子轮领投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-06082ac5aeed96c9"
+          "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-99134731fc9bfd4f"
         },
         {
-          "description": "融资来源记录：Supabase · F轮 · 2026-06-04 · 本轮参投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a9654b37adce00dc"
+          "description": "融资来源记录：Runlayer · A轮 · 2026-06-24 · 本轮领投，种子轮领投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-06082ac5aeed96c9"
         }
       ],
       "contacts": [
@@ -509,6 +562,14 @@
           "quote_hash": "b9a5ee78916eb3f518f18a5938b6de0d0cfb0b5d3a89f6eee512e9971c660433"
         },
         {
+          "source_id": "FISRC-99134731fc9bfd4f",
+          "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+          "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+          "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+          "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+          "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+        },
+        {
           "source_id": "FISRC-06082ac5aeed96c9",
           "source_url": "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html",
           "source_title": "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI",
@@ -523,14 +584,6 @@
           "source_content_hash": "36d67b31b12d3716",
           "quote": "Felicis preempted the round — a strong signal of investor conviction — after having also led the company’s $11 million seed round",
           "quote_hash": "39ca999c5b3b8fd54de07533fe179ee51e8c2ef40953f3c4e8466ebdf69f1e5b"
-        },
-        {
-          "source_id": "FISRC-a9654b37adce00dc",
-          "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
-          "source_title": "Why Georgian Invested in Supabase",
-          "source_content_hash": "2ff196d4fa7dc98a",
-          "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
-          "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
         }
       ],
       "last_verified_at": "2026-09-25",

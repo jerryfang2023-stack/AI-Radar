@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,35 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-10",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "participant": 2
+      "participant": 4
     },
     "round_codes": [
+      "pre_seed",
       "seed",
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-d976b61012f48e17",
+        "canonical_entity_id": "",
+        "name": "Neela Biotech"
+      },
+      {
+        "entity_id": "EN-0974d0f5e33d87c6",
+        "canonical_entity_id": "",
+        "name": "Neela Biotech"
+      },
       {
         "entity_id": "EN-58f71bec3ce7d747",
         "canonical_entity_id": "",
@@ -91,6 +102,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b5273c7fd7cd1111",
+        "funding_insight_id": "FI-eb8d341fdbed8eaa",
+        "event_ids": [
+          "EV-6d646383629d5b15"
+        ],
+        "company_entity_id": "EN-d976b61012f48e17",
+        "company_canonical_entity_id": "",
+        "company_name": "Neela Biotech",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "£2.1 million",
+        "amount_normalized": {
+          "currency": "GBP",
+          "value": 2100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "210 万英镑"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-47cad557558a6a09",
+            "source_url": "https://www.enterprise.cam.ac.uk/news/neela-biotech-raises-2-1-million/",
+            "source_title": "Neela Biotech 为 AI 驱动的可持续燃料技术融资 210 万英镑",
+            "source_content_hash": "a901c2cce189322cf422767ae5e7feaafad44e9840faa8893f36bdb26aa5e424",
+            "quote": "The total £2.1 million round investment includes participation from Ascension, Cambridge Enterprise Ventures, Ventures Together and strategic angel investors",
+            "quote_hash": "9b2a1a36fb1ab8212eb4ef6878ce28bc8793851e0b272234b7892072d2b84019"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9622a6b929150744",
+        "funding_insight_id": "FI-b0d51d3f098c743b",
+        "event_ids": [
+          "EV-f7b689602574677a"
+        ],
+        "company_entity_id": "EN-0974d0f5e33d87c6",
+        "company_canonical_entity_id": "",
+        "company_name": "Neela Biotech",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "£2.1m",
+        "amount_normalized": {
+          "currency": "GBP",
+          "value": 2100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "210 万英镑"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d4882614e143350f",
+            "source_url": "https://www.uktech.news/biotech/cambridge-biotech-startup-neela-raises-2-1m-to-turn-waste-into-aviation-fuel-20261008",
+            "source_title": "剑桥生物技术初创公司Neela融资210万英镑，将废弃物转化为航空燃料",
+            "source_content_hash": "d00757ae0cb1ee65a0d004562b0c216c37cda223494a5d49bf2ecc6cf4641053",
+            "quote": "with participation from Ascension, Cambridge Enterprise, Ventures Together and strategic angel investors",
+            "quote_hash": "b6d65d7f726147fc9b833783502a1d5a2891e636cc7017d208431d0e00852257"
+          }
+        ]
+      },
       {
         "activity_id": "IA-82b9d18e3b76d77a",
         "funding_insight_id": "FI-154de0889f1fcad2",
@@ -174,6 +265,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-47cad557558a6a09",
+        "source_url": "https://www.enterprise.cam.ac.uk/news/neela-biotech-raises-2-1-million/",
+        "source_title": "Neela Biotech 为 AI 驱动的可持续燃料技术融资 210 万英镑",
+        "source_content_hash": "a901c2cce189322cf422767ae5e7feaafad44e9840faa8893f36bdb26aa5e424",
+        "quote": "The total £2.1 million round investment includes participation from Ascension, Cambridge Enterprise Ventures, Ventures Together and strategic angel investors",
+        "quote_hash": "9b2a1a36fb1ab8212eb4ef6878ce28bc8793851e0b272234b7892072d2b84019"
+      },
+      {
+        "source_id": "FISRC-d4882614e143350f",
+        "source_url": "https://www.uktech.news/biotech/cambridge-biotech-startup-neela-raises-2-1m-to-turn-waste-into-aviation-fuel-20261008",
+        "source_title": "剑桥生物技术初创公司Neela融资210万英镑，将废弃物转化为航空燃料",
+        "source_content_hash": "d00757ae0cb1ee65a0d004562b0c216c37cda223494a5d49bf2ecc6cf4641053",
+        "quote": "with participation from Ascension, Cambridge Enterprise, Ventures Together and strategic angel investors",
+        "quote_hash": "b6d65d7f726147fc9b833783502a1d5a2891e636cc7017d208431d0e00852257"
+      },
+      {
         "source_id": "FISRC-1b63578e82da8f27",
         "source_url": "https://tech.eu/2026/10/06/nettle-raises-48m-to-expand-its-ai-workspace-for-insurers/",
         "source_title": "Nettle 融资 480 万美元，为保险公司扩展其 AI 工作空间",
@@ -217,12 +324,16 @@
           "source_id": "throne"
         },
         {
-          "description": "融资来源记录：Nettle · 种子轮 · 2026-10-06 · 本轮参投 · $4.8 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1b63578e82da8f27"
+          "description": "融资来源记录：Neela Biotech · 预种子轮 · 2026-10-08 · 本轮参投 · £2.1 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-47cad557558a6a09"
         },
         {
-          "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2a587e714925b882"
+          "description": "融资来源记录：Neela Biotech · 预种子轮 · 2026-10-08 · 本轮参投 · £2.1m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d4882614e143350f"
+        },
+        {
+          "description": "融资来源记录：Nettle · 种子轮 · 2026-10-06 · 本轮参投 · $4.8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1b63578e82da8f27"
         }
       ],
       "contacts": [
@@ -252,20 +363,28 @@
           "quote_hash": "e3722ecc019e1f1b6c2b2dd1e5b45b0882e0a9c384e79e11872ce47e7d19568a"
         },
         {
+          "source_id": "FISRC-47cad557558a6a09",
+          "source_url": "https://www.enterprise.cam.ac.uk/news/neela-biotech-raises-2-1-million/",
+          "source_title": "Neela Biotech 为 AI 驱动的可持续燃料技术融资 210 万英镑",
+          "source_content_hash": "a901c2cce189322cf422767ae5e7feaafad44e9840faa8893f36bdb26aa5e424",
+          "quote": "The total £2.1 million round investment includes participation from Ascension, Cambridge Enterprise Ventures, Ventures Together and strategic angel investors",
+          "quote_hash": "9b2a1a36fb1ab8212eb4ef6878ce28bc8793851e0b272234b7892072d2b84019"
+        },
+        {
+          "source_id": "FISRC-d4882614e143350f",
+          "source_url": "https://www.uktech.news/biotech/cambridge-biotech-startup-neela-raises-2-1m-to-turn-waste-into-aviation-fuel-20261008",
+          "source_title": "剑桥生物技术初创公司Neela融资210万英镑，将废弃物转化为航空燃料",
+          "source_content_hash": "d00757ae0cb1ee65a0d004562b0c216c37cda223494a5d49bf2ecc6cf4641053",
+          "quote": "with participation from Ascension, Cambridge Enterprise, Ventures Together and strategic angel investors",
+          "quote_hash": "b6d65d7f726147fc9b833783502a1d5a2891e636cc7017d208431d0e00852257"
+        },
+        {
           "source_id": "FISRC-1b63578e82da8f27",
           "source_url": "https://tech.eu/2026/10/06/nettle-raises-48m-to-expand-its-ai-workspace-for-insurers/",
           "source_title": "Nettle 融资 480 万美元，为保险公司扩展其 AI 工作空间",
           "source_content_hash": "f2042c5237fa2a4fcba98f1e64bddb9c8f394093279e1ea4d7ba2594954feab9",
           "quote": "The round was led by MTech, with Project A Ventures following on with a super pro rata investment and participation from Sure Valley Ventures (SVV), Portfolio Ventures, Ventures Together and selected angel investors.",
           "quote_hash": "028582481c5f98a621ec289f8a335b904d40ab0807788c4e82e8b72b8fd01b46"
-        },
-        {
-          "source_id": "FISRC-2a587e714925b882",
-          "source_url": "https://www.morningstar.com/news/business-wire/20260728282605/throne-science-maker-of-smart-toilet-sensor-announces-10-million-series-a-fundraise",
-          "source_title": "Throne Science, Maker of Smart Toilet Sensor, Announces $10 Million Series A Fundraise",
-          "source_content_hash": "8ca089e7956c95bb",
-          "quote": "led by Will Ventures with participation from Emerson Collective, Workshop, LEAD VC, Salt VC, Accomplice, Moxxie, Ventures Together, Symphony, Felix Capital, Cosmic Venture Partners, Offscript, V1.VC, and Morrison Seger.",
-          "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
         }
       ],
       "last_verified_at": "2026-10-03"

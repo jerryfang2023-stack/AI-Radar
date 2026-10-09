@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,26 +63,27 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 25,
+    "current_round_count": 27,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 20,
+    "portfolio_company_count": 22,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-09-23",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 8,
-      "lead": 10,
-      "participant": 14
+      "lead": 11,
+      "participant": 15
     },
     "round_codes": [
       "multi_round",
       "seed",
       "series_a",
+      "series_b",
       "series_c",
       "series_d",
       "series_e",
@@ -103,9 +104,19 @@
         "name": "Anthropic PBC"
       },
       {
+        "entity_id": "EN-572e31f55b6ac1b1",
+        "canonical_entity_id": "",
+        "name": "Arena"
+      },
+      {
         "entity_id": "EN-f3d05a0f6248941d",
         "canonical_entity_id": "",
         "name": "Assort Health"
+      },
+      {
+        "entity_id": "EN-13911430434bc00c",
+        "canonical_entity_id": "",
+        "name": "Avarra"
       },
       {
         "entity_id": "EN-4b6cef91ffb05303",
@@ -194,6 +205,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-550874b095a97c4f",
+        "funding_insight_id": "FI-de00acfd7c8d76c8",
+        "event_ids": [
+          "EV-cdcdea720885d037"
+        ],
+        "company_entity_id": "EN-572e31f55b6ac1b1",
+        "company_canonical_entity_id": "",
+        "company_name": "Arena",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-99134731fc9bfd4f",
+            "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+            "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+            "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+            "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+            "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f8d43404d283a286",
+        "funding_insight_id": "FI-ee4edc2309baf9b9",
+        "event_ids": [
+          "EV-6e7c0515f06795aa"
+        ],
+        "company_entity_id": "EN-13911430434bc00c",
+        "company_canonical_entity_id": "",
+        "company_name": "Avarra",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$17 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1700 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-93b0fab07c02a054",
+            "source_url": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html",
+            "source_title": "Avarra 融资 1700 万美元，押注逆向策略：用 AI 快速提升 GTM 团队技能，而非仅自动化常规工作",
+            "source_content_hash": "418bc4a92b5032ef693633ec382d6afb613da450d956de4564e7d5539a5226ca",
+            "quote": "The round is led by Duration Ventures, with participation from Lightspeed Venture Partners, Draper Associates, the GTMfund, Alumni Ventures, and strategic investment from Zoom.",
+            "quote_hash": "d511ddc9dcf424cba53315b2eb98d2f0a40b8b34a7e5361e15b0336577d96d14"
+          }
+        ]
+      },
       {
         "activity_id": "IA-90a14e515c868f0d",
         "funding_insight_id": "FI-5bf569d857da4dcb",
@@ -1469,6 +1560,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-99134731fc9bfd4f",
+        "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+        "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+        "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+        "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+        "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+      },
+      {
+        "source_id": "FISRC-93b0fab07c02a054",
+        "source_url": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html",
+        "source_title": "Avarra 融资 1700 万美元，押注逆向策略：用 AI 快速提升 GTM 团队技能，而非仅自动化常规工作",
+        "source_content_hash": "418bc4a92b5032ef693633ec382d6afb613da450d956de4564e7d5539a5226ca",
+        "quote": "The round is led by Duration Ventures, with participation from Lightspeed Venture Partners, Draper Associates, the GTMfund, Alumni Ventures, and strategic investment from Zoom.",
+        "quote_hash": "d511ddc9dcf424cba53315b2eb98d2f0a40b8b34a7e5361e15b0336577d96d14"
+      },
+      {
         "source_id": "FISRC-852df50f4128c47b",
         "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
         "source_title": "Enveda's $311m Series E to fund AI-driven drug discovery",
@@ -1775,16 +1882,16 @@
           "source_id": "lightspeed_us"
         },
         {
+          "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮领投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-99134731fc9bfd4f"
+        },
+        {
+          "description": "融资来源记录：Avarra · A轮 · 2026-10-06 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-93b0fab07c02a054"
+        },
+        {
           "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-852df50f4128c47b"
-        },
-        {
-          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16afc5791c45315a"
-        },
-        {
-          "description": "融资来源记录：Profound · D轮 · 2026-09-15 · 本轮参投 · $180M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bed55d4f5e02a374"
         }
       ],
       "contacts": [
@@ -1835,28 +1942,28 @@
           "quote_hash": "d2bbae37840bb25a103173bf141ecae89a192e7fedcd89323366cf9032983442"
         },
         {
+          "source_id": "FISRC-99134731fc9bfd4f",
+          "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+          "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+          "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+          "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+          "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+        },
+        {
+          "source_id": "FISRC-93b0fab07c02a054",
+          "source_url": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html",
+          "source_title": "Avarra 融资 1700 万美元，押注逆向策略：用 AI 快速提升 GTM 团队技能，而非仅自动化常规工作",
+          "source_content_hash": "418bc4a92b5032ef693633ec382d6afb613da450d956de4564e7d5539a5226ca",
+          "quote": "The round is led by Duration Ventures, with participation from Lightspeed Venture Partners, Draper Associates, the GTMfund, Alumni Ventures, and strategic investment from Zoom.",
+          "quote_hash": "d511ddc9dcf424cba53315b2eb98d2f0a40b8b34a7e5361e15b0336577d96d14"
+        },
+        {
           "source_id": "FISRC-852df50f4128c47b",
           "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
           "source_title": "Enveda's $311m Series E to fund AI-driven drug discovery",
           "source_content_hash": "e6486e5f995e038e",
           "quote": "The funding was led by Catalio Capital Management, with participation from new investors including Durable Capital Partners, ICONIQ, Lightspeed, Surveyor Capital (a Citadel company), accounts advised by T. Rowe Price Investment Management, Digitalis Ventures, a notable Sovereign Wealth Fund, and Alderline Group.",
           "quote_hash": "3cbfe761b6de0bfc87604c270fdc50a1ccdfe84427307a732532acbdb8ace223"
-        },
-        {
-          "source_id": "FISRC-16afc5791c45315a",
-          "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
-          "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
-          "source_content_hash": "ad04baf1994708d0",
-          "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
-          "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
-        },
-        {
-          "source_id": "FISRC-bed55d4f5e02a374",
-          "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
-          "source_title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
-          "source_content_hash": "8c26f4447adaeabc",
-          "quote": "existing investors — including Lightspeed Venture Partners, Khosla Ventures, and South Park Commons — also participated",
-          "quote_hash": "abf17d3c7cc04d6ab46460f8938409589705dc5e1d6d0e56712e07b6a2ea602b"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1867,7 +1974,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[24].role": {
+        "activities[26].role": {
           "text": "Series B 参投（2025年4月）",
           "source_hash": "4170bf75c97ec9f7cd65f42d8ca30a3c3546dd4ade04c117870543b20203c333",
           "provider": "deepseek",
@@ -1875,7 +1982,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[28].role": {
+        "activities[30].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

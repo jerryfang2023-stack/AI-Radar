@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,76 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-07",
-    "latest_disclosed_at": "2026-07-07",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-14ce7672aaca7a68",
         "canonical_entity_id": "",
         "name": "AIsa"
+      },
+      {
+        "entity_id": "EN-13911430434bc00c",
+        "canonical_entity_id": "",
+        "name": "Avarra"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-54fdda719c73aeb5",
+        "funding_insight_id": "FI-ee4edc2309baf9b9",
+        "event_ids": [
+          "EV-6e7c0515f06795aa"
+        ],
+        "company_entity_id": "EN-13911430434bc00c",
+        "company_canonical_entity_id": "",
+        "company_name": "Avarra",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$17 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1700 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-93b0fab07c02a054",
+            "source_url": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html",
+            "source_title": "Avarra 融资 1700 万美元，押注逆向策略：用 AI 快速提升 GTM 团队技能，而非仅自动化常规工作",
+            "source_content_hash": "418bc4a92b5032ef693633ec382d6afb613da450d956de4564e7d5539a5226ca",
+            "quote": "The round is led by Duration Ventures, with participation from Lightspeed Venture Partners, Draper Associates, the GTMfund, Alumni Ventures, and strategic investment from Zoom.",
+            "quote_hash": "d511ddc9dcf424cba53315b2eb98d2f0a40b8b34a7e5361e15b0336577d96d14"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fcecef0d707c42e3",
         "funding_insight_id": "FI-16aac52a98d61e0a",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-93b0fab07c02a054",
+        "source_url": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html",
+        "source_title": "Avarra 融资 1700 万美元，押注逆向策略：用 AI 快速提升 GTM 团队技能，而非仅自动化常规工作",
+        "source_content_hash": "418bc4a92b5032ef693633ec382d6afb613da450d956de4564e7d5539a5226ca",
+        "quote": "The round is led by Duration Ventures, with participation from Lightspeed Venture Partners, Draper Associates, the GTMfund, Alumni Ventures, and strategic investment from Zoom.",
+        "quote_hash": "d511ddc9dcf424cba53315b2eb98d2f0a40b8b34a7e5361e15b0336577d96d14"
+      },
+      {
         "source_id": "FISRC-199e9e6224efb819",
         "source_url": "https://www.globenewswire.com/news-release/2026/07/07/3323663/0/en/AIsa-Raises-6-5M-Co-Led-by-Alibaba-and-Tribe-Capital-to-Build-the-Transaction-Network-for-AI-Agents.html",
         "source_title": "AIsa 获 650 万美元融资，由阿里巴巴和 Tribe Capital 联合领投，打造 AI 智能体交易网络",
@@ -154,6 +208,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Avarra · A轮 · 2026-10-06 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-93b0fab07c02a054"
+        },
         {
           "description": "融资来源记录：AIsa · 种子轮 · 2026-07-07 · 本轮参投 · 650万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-199e9e6224efb819"
@@ -192,6 +250,14 @@
           "source_content_hash": "63ef5945980fb26d6a16174711f01d7498b5c02dc3491fa7080a88cef412585b",
           "quote": "AI, Robotics & Automation Crypto & Blockchain Healthcare & Biotech Aerospace & Space Unconventional Ideas",
           "quote_hash": "d4ebde68d8bbee96cf06b17fc43db745acd6ae91c8760cfc5c19dbd31562509b"
+        },
+        {
+          "source_id": "FISRC-93b0fab07c02a054",
+          "source_url": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html",
+          "source_title": "Avarra 融资 1700 万美元，押注逆向策略：用 AI 快速提升 GTM 团队技能，而非仅自动化常规工作",
+          "source_content_hash": "418bc4a92b5032ef693633ec382d6afb613da450d956de4564e7d5539a5226ca",
+          "quote": "The round is led by Duration Ventures, with participation from Lightspeed Venture Partners, Draper Associates, the GTMfund, Alumni Ventures, and strategic investment from Zoom.",
+          "quote_hash": "d511ddc9dcf424cba53315b2eb98d2f0a40b8b34a7e5361e15b0336577d96d14"
         },
         {
           "source_id": "FISRC-199e9e6224efb819",

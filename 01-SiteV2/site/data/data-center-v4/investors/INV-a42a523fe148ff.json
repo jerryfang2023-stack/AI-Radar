@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-05-27",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "series_b",
       "series_d"
     ],
     "portfolio_companies": [
@@ -82,9 +84,62 @@
         "entity_id": "EN-ac32f27ba7a1346f",
         "canonical_entity_id": "",
         "name": "Cognition"
+      },
+      {
+        "entity_id": "EN-79f950e57d58f374",
+        "canonical_entity_id": "",
+        "name": "Vesta"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a9244adc412ace3b",
+        "funding_insight_id": "FI-abdb08f0abf9cb7c",
+        "event_ids": [
+          "EV-2cff2880e9f122d6"
+        ],
+        "company_entity_id": "EN-79f950e57d58f374",
+        "company_canonical_entity_id": "",
+        "company_name": "Vesta",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2da938bd0c484285",
+            "source_url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/",
+            "source_title": "Vesta 融资 3000 万美元，将智能体集群引入抵押贷款机构",
+            "source_content_hash": "c935d8a10ccfb9348f4edb761e0b80924c32258aefce1b9c16f2b7a593ca5451",
+            "quote": "raised a $30 million round led by Conversion Capital",
+            "quote_hash": "cfd32bb2184f6d95d561d175bd545e17769f4222dfa77e22bfd94a962cb74629"
+          },
+          {
+            "source_id": "FISRC-56757b2b2edcd9bf",
+            "source_url": "https://www.housingwire.com/articles/vesta-raises-30-million-series-b-ai-loan-origination-system/",
+            "source_title": "Vesta raises $30M in Series B funding to expand AI-native LOS",
+            "source_content_hash": "c835fcc18d19fcb2",
+            "quote": "raised $30 million in a Series B funding round led by Conversion Capital",
+            "quote_hash": "76f7bf0b07cd7f87dcffbced136405db99852c035e8e1f2054ad556a720f45b9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4d0895e8d54adf22",
         "funding_insight_id": "FI-5faa0336090509de",
@@ -127,6 +182,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2da938bd0c484285",
+        "source_url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/",
+        "source_title": "Vesta 融资 3000 万美元，将智能体集群引入抵押贷款机构",
+        "source_content_hash": "c935d8a10ccfb9348f4edb761e0b80924c32258aefce1b9c16f2b7a593ca5451",
+        "quote": "raised a $30 million round led by Conversion Capital",
+        "quote_hash": "cfd32bb2184f6d95d561d175bd545e17769f4222dfa77e22bfd94a962cb74629"
+      },
+      {
+        "source_id": "FISRC-56757b2b2edcd9bf",
+        "source_url": "https://www.housingwire.com/articles/vesta-raises-30-million-series-b-ai-loan-origination-system/",
+        "source_title": "Vesta raises $30M in Series B funding to expand AI-native LOS",
+        "source_content_hash": "c835fcc18d19fcb2",
+        "quote": "raised $30 million in a Series B funding round led by Conversion Capital",
+        "quote_hash": "76f7bf0b07cd7f87dcffbced136405db99852c035e8e1f2054ad556a720f45b9"
+      },
       {
         "source_id": "FISRC-a7bbb48af7503bf0",
         "source_url": "https://cognition.com/blog/series-d",
@@ -211,6 +282,10 @@
         {
           "description": "Cognition 官方公告将 Conversion Capital 列为超过 10 亿美元 Series D 的既有投资人；未披露该机构本轮投资额。",
           "source_id": "FISRC-a7bbb48af7503bf0"
+        },
+        {
+          "description": "融资来源记录：Vesta · B轮 · 2026-10-08 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2da938bd0c484285"
         }
       ],
       "contacts": [
@@ -288,6 +363,22 @@
           "source_content_hash": "f64d20b5549e1b58",
           "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
           "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
+        },
+        {
+          "source_id": "FISRC-2da938bd0c484285",
+          "source_url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/",
+          "source_title": "Vesta 融资 3000 万美元，将智能体集群引入抵押贷款机构",
+          "source_content_hash": "c935d8a10ccfb9348f4edb761e0b80924c32258aefce1b9c16f2b7a593ca5451",
+          "quote": "raised a $30 million round led by Conversion Capital",
+          "quote_hash": "cfd32bb2184f6d95d561d175bd545e17769f4222dfa77e22bfd94a962cb74629"
+        },
+        {
+          "source_id": "FISRC-56757b2b2edcd9bf",
+          "source_url": "https://www.housingwire.com/articles/vesta-raises-30-million-series-b-ai-loan-origination-system/",
+          "source_title": "Vesta raises $30M in Series B funding to expand AI-native LOS",
+          "source_content_hash": "c835fcc18d19fcb2",
+          "quote": "raised $30 million in a Series B funding round led by Conversion Capital",
+          "quote_hash": "76f7bf0b07cd7f87dcffbced136405db99852c035e8e1f2054ad556a720f45b9"
         }
       ],
       "last_verified_at": "2026-09-28",

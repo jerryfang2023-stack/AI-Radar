@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-29",
-    "latest_disclosed_at": "2026-09-29",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "series_b",
       "series_f",
       "undisclosed"
     ],
@@ -83,9 +84,54 @@
         "entity_id": "EN-7f4fdb8eb6e82b27",
         "canonical_entity_id": "",
         "name": "EliseAI"
+      },
+      {
+        "entity_id": "EN-79f950e57d58f374",
+        "canonical_entity_id": "",
+        "name": "Vesta"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9de5bf9ab0e049a9",
+        "funding_insight_id": "FI-abdb08f0abf9cb7c",
+        "event_ids": [
+          "EV-2cff2880e9f122d6"
+        ],
+        "company_entity_id": "EN-79f950e57d58f374",
+        "company_canonical_entity_id": "",
+        "company_name": "Vesta",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-56757b2b2edcd9bf",
+            "source_url": "https://www.housingwire.com/articles/vesta-raises-30-million-series-b-ai-loan-origination-system/",
+            "source_title": "Vesta raises $30M in Series B funding to expand AI-native LOS",
+            "source_content_hash": "c835fcc18d19fcb2",
+            "quote": "Three existing lender customers — New American Funding, PennyMac Financial Services and NBKC Bank — also invested in the round, alongside Citi Ventures, FirstKey Mortgage and Navitas Capital.",
+            "quote_hash": "035bf12584a852e0435558d28c6adf2a62f41334899e9384f23c43e767b796e1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f59faf00256eee41",
         "funding_insight_id": "FI-8e89642c05a4fbe4",
@@ -169,6 +215,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-56757b2b2edcd9bf",
+        "source_url": "https://www.housingwire.com/articles/vesta-raises-30-million-series-b-ai-loan-origination-system/",
+        "source_title": "Vesta raises $30M in Series B funding to expand AI-native LOS",
+        "source_content_hash": "c835fcc18d19fcb2",
+        "quote": "Three existing lender customers — New American Funding, PennyMac Financial Services and NBKC Bank — also invested in the round, alongside Citi Ventures, FirstKey Mortgage and Navitas Capital.",
+        "quote_hash": "035bf12584a852e0435558d28c6adf2a62f41334899e9384f23c43e767b796e1"
+      },
+      {
         "source_id": "FISRC-aae3c02b03fe09c9",
         "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
         "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
@@ -209,6 +263,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Vesta · B轮 · 2026-10-08 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-56757b2b2edcd9bf"
+        },
         {
           "description": "融资来源记录：EliseAI · F轮 · 2026-09-29 · 本轮参投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-aae3c02b03fe09c9"
@@ -251,6 +309,14 @@
           "source_content_hash": "91f5e4a30a94c89d214e9593d30df24ab69d544afa75a345588fd05ce46332cb",
           "quote": "We deploy capital selectively when we are at conviction - we don&#x27;t invest to \"put capital to work\" or to \"get exposure\" to buzzwords. We will and have waited years before investing behind the right team with the right technology that meets our theses.",
           "quote_hash": "ca49f0dc726f3606b5b6f2595e6f1713b963d3525fb387d383b2536e846cc90e"
+        },
+        {
+          "source_id": "FISRC-56757b2b2edcd9bf",
+          "source_url": "https://www.housingwire.com/articles/vesta-raises-30-million-series-b-ai-loan-origination-system/",
+          "source_title": "Vesta raises $30M in Series B funding to expand AI-native LOS",
+          "source_content_hash": "c835fcc18d19fcb2",
+          "quote": "Three existing lender customers — New American Funding, PennyMac Financial Services and NBKC Bank — also invested in the round, alongside Citi Ventures, FirstKey Mortgage and Navitas Capital.",
+          "quote_hash": "035bf12584a852e0435558d28c6adf2a62f41334899e9384f23c43e767b796e1"
         },
         {
           "source_id": "FISRC-aae3c02b03fe09c9",

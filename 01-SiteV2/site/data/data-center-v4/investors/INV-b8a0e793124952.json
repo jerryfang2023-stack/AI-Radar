@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -56,29 +56,29 @@
     "id": "INV-b8a0e793124952",
     "name": "Andreessen Horowitz",
     "aliases": [
-      "Andreessen Horowitz (a16z)",
-      "a16z"
+      "a16z",
+      "Andreessen Horowitz (a16z)"
     ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 32,
+    "current_round_count": 35,
     "historical_or_ambiguous_count": 9,
-    "portfolio_company_count": 28,
+    "portfolio_company_count": 31,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-10-05",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
       "co_lead": 6,
       "historical_or_ambiguous": 9,
       "lead": 19,
-      "participant": 7
+      "participant": 10
     },
     "round_codes": [
       "multi_round",
@@ -94,6 +94,11 @@
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-572e31f55b6ac1b1",
+        "canonical_entity_id": "",
+        "name": "Arena"
+      },
       {
         "entity_id": "EN-f8223ea5a9c41813",
         "canonical_entity_id": "",
@@ -210,6 +215,11 @@
         "name": "Runta"
       },
       {
+        "entity_id": "FICO-4e7a22380a00c923",
+        "canonical_entity_id": "",
+        "name": "Stuut"
+      },
+      {
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal Technologies"
@@ -230,12 +240,137 @@
         "name": "Vals"
       },
       {
+        "entity_id": "EN-79f950e57d58f374",
+        "canonical_entity_id": "",
+        "name": "Vesta"
+      },
+      {
         "entity_id": "EN-6fae0bc5a895aab8",
         "canonical_entity_id": "",
         "name": "Volta Infra Holdings Ltd."
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-953f703e7b6a9c95",
+        "funding_insight_id": "FI-de00acfd7c8d76c8",
+        "event_ids": [
+          "EV-cdcdea720885d037"
+        ],
+        "company_entity_id": "EN-572e31f55b6ac1b1",
+        "company_canonical_entity_id": "",
+        "company_name": "Arena",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-99134731fc9bfd4f",
+            "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+            "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+            "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+            "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+            "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cdfa15bc774a7cc7",
+        "funding_insight_id": "FI-abdb08f0abf9cb7c",
+        "event_ids": [
+          "EV-2cff2880e9f122d6"
+        ],
+        "company_entity_id": "EN-79f950e57d58f374",
+        "company_canonical_entity_id": "",
+        "company_name": "Vesta",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2da938bd0c484285",
+            "source_url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/",
+            "source_title": "Vesta 融资 3000 万美元，将智能体集群引入抵押贷款机构",
+            "source_content_hash": "c935d8a10ccfb9348f4edb761e0b80924c32258aefce1b9c16f2b7a593ca5451",
+            "quote": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz.",
+            "quote_hash": "a52e2cb9c150a96a6ba5fed53c3ba840358e1b449a0fd0c772b91113e1f1a553"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ce2da149fcc0bfea",
+        "funding_insight_id": "FI-acb537031ece1db8",
+        "event_ids": [
+          "EV-5db7347d93859de3"
+        ],
+        "company_entity_id": "FICO-4e7a22380a00c923",
+        "company_canonical_entity_id": "",
+        "company_name": "Stuut",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$52.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 52500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5250 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9c9f77e874c57759",
+            "source_url": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/",
+            "source_title": "Stuut 获得 $52.5M B 轮融资，以扩展 AI 代理在订单到收款全流程中的应用",
+            "source_content_hash": "4ff3dbe1ae5212cf86039961b0b8e2a6f259638653498858d69b63347f6abf84",
+            "quote": "由 Insight Partners领投，Andreessen Horowitz和 M12, Microsoft’s venture fund参与",
+            "quote_hash": "fb46dc0e438886ce5cc7dc6882637edf42f3bd109d1c5a4b4c59abc938797880"
+          }
+        ]
+      },
       {
         "activity_id": "IA-497beb114e9ff20e",
         "funding_insight_id": "FI-7df451dda11fdc94",
@@ -1870,6 +2005,30 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-99134731fc9bfd4f",
+        "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+        "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+        "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+        "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+        "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+      },
+      {
+        "source_id": "FISRC-2da938bd0c484285",
+        "source_url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/",
+        "source_title": "Vesta 融资 3000 万美元，将智能体集群引入抵押贷款机构",
+        "source_content_hash": "c935d8a10ccfb9348f4edb761e0b80924c32258aefce1b9c16f2b7a593ca5451",
+        "quote": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz.",
+        "quote_hash": "a52e2cb9c150a96a6ba5fed53c3ba840358e1b449a0fd0c772b91113e1f1a553"
+      },
+      {
+        "source_id": "FISRC-9c9f77e874c57759",
+        "source_url": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/",
+        "source_title": "Stuut 获得 $52.5M B 轮融资，以扩展 AI 代理在订单到收款全流程中的应用",
+        "source_content_hash": "4ff3dbe1ae5212cf86039961b0b8e2a6f259638653498858d69b63347f6abf84",
+        "quote": "由 Insight Partners领投，Andreessen Horowitz和 M12, Microsoft’s venture fund参与",
+        "quote_hash": "fb46dc0e438886ce5cc7dc6882637edf42f3bd109d1c5a4b4c59abc938797880"
+      },
+      {
         "source_id": "FISRC-7144312b4dd2f62c",
         "source_url": "https://www.morningstar.com/news/business-wire/20261005181820/valon-raises-150-million-series-d-at-a-23-billion-valuation-to-deploy-valonos-and-ai-agents-into-mortgage",
         "source_title": "Valon 以 23 亿美元估值完成 1.5 亿美元 D 轮融资，将 ValonOS 和 AI 智能体部署到抵押贷款领域",
@@ -2303,12 +2462,16 @@
           "source_id": "a16z_about"
         },
         {
-          "description": "融资来源记录：Valon Technologies · D轮 · 2026-10-05 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7144312b4dd2f62c"
+          "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-99134731fc9bfd4f"
         },
         {
-          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮联合领投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dc8fb918b056c843"
+          "description": "融资来源记录：Vesta · B轮 · 2026-10-08 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2da938bd0c484285"
+        },
+        {
+          "description": "融资来源记录：Stuut · B轮 · 2026-10-07 · 本轮参投 · $52.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9c9f77e874c57759"
         }
       ],
       "contacts": [
@@ -2416,28 +2579,28 @@
           "quote_hash": "e99e0a75d100056586e1a241fc521ff6d9da626d9a7fcf9ab6dd36440c63b9bb"
         },
         {
-          "source_id": "FISRC-7144312b4dd2f62c",
-          "source_url": "https://www.morningstar.com/news/business-wire/20261005181820/valon-raises-150-million-series-d-at-a-23-billion-valuation-to-deploy-valonos-and-ai-agents-into-mortgage",
-          "source_title": "Valon 以 23 亿美元估值完成 1.5 亿美元 D 轮融资，将 ValonOS 和 AI 智能体部署到抵押贷款领域",
-          "source_content_hash": "7d6ff8ccd24d8d49e11837aa07a4e813eb2d2c2302ee1d79a21546b9a69c85dd",
-          "quote": "alongside continued participation from existing investors including Andreessen Horowitz",
-          "quote_hash": "1342e304a257bbaa5662700cd27d08746c0a563acbf2a63d5c186c097f6b6e25"
+          "source_id": "FISRC-99134731fc9bfd4f",
+          "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+          "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+          "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+          "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+          "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
         },
         {
-          "source_id": "FISRC-dc8fb918b056c843",
-          "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
-          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
-          "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
-          "quote": "today announced it has raised $255.5 million in Series B funding co-led by Andreessen Horowitz (a16z) and Accel",
-          "quote_hash": "5a0a2111252fab5f5d876738996841fc302cb4364773d762e40db424c18164d0"
+          "source_id": "FISRC-2da938bd0c484285",
+          "source_url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/",
+          "source_title": "Vesta 融资 3000 万美元，将智能体集群引入抵押贷款机构",
+          "source_content_hash": "c935d8a10ccfb9348f4edb761e0b80924c32258aefce1b9c16f2b7a593ca5451",
+          "quote": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz.",
+          "quote_hash": "a52e2cb9c150a96a6ba5fed53c3ba840358e1b449a0fd0c772b91113e1f1a553"
         },
         {
-          "source_id": "FISRC-58d9b75c832876e1",
-          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
-          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
-          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
-          "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
-          "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+          "source_id": "FISRC-9c9f77e874c57759",
+          "source_url": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/",
+          "source_title": "Stuut 获得 $52.5M B 轮融资，以扩展 AI 代理在订单到收款全流程中的应用",
+          "source_content_hash": "4ff3dbe1ae5212cf86039961b0b8e2a6f259638653498858d69b63347f6abf84",
+          "quote": "由 Insight Partners领投，Andreessen Horowitz和 M12, Microsoft’s venture fund参与",
+          "quote_hash": "fb46dc0e438886ce5cc7dc6882637edf42f3bd109d1c5a4b4c59abc938797880"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2448,7 +2611,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[31].role": {
+        "activities[34].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2456,7 +2619,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[34].role": {
+        "activities[37].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

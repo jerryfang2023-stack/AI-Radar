@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 17,
+    "current_round_count": 18,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 16,
+    "portfolio_company_count": 17,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
-      "lead": 9,
+      "lead": 10,
       "participant": 6
     },
     "round_codes": [
@@ -87,6 +87,11 @@
       "series_d"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-572e31f55b6ac1b1",
+        "canonical_entity_id": "",
+        "name": "Arena"
+      },
       {
         "entity_id": "EN-522656609ff15589",
         "canonical_entity_id": "",
@@ -169,6 +174,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6c48a4dd8fd8cdd7",
+        "funding_insight_id": "FI-de00acfd7c8d76c8",
+        "event_ids": [
+          "EV-cdcdea720885d037"
+        ],
+        "company_entity_id": "EN-572e31f55b6ac1b1",
+        "company_canonical_entity_id": "",
+        "company_name": "Arena",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-99134731fc9bfd4f",
+            "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+            "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+            "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+            "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+            "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-140e575c8300a780",
         "funding_insight_id": "FI-758038d218987ca7",
@@ -1004,6 +1049,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-99134731fc9bfd4f",
+        "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+        "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+        "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+        "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+        "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+      },
+      {
         "source_id": "FISRC-6f2893ccf0aa3194",
         "source_url": "https://www.trysignalbase.com/news/funding/torch-systems-raises-11-5m-for-outdoor",
         "source_title": "Torch Systems 为户外业务融资 1150 万美元",
@@ -1243,16 +1296,16 @@
           "source_id": "vinod_profile"
         },
         {
+          "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮领投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-99134731fc9bfd4f"
+        },
+        {
           "description": "融资来源记录：Torch Systems · 其他融资 · 2026-10-06 · 本轮参投 · $11.5 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6f2893ccf0aa3194"
         },
         {
           "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c7459d2ce055880"
-        },
-        {
-          "description": "融资来源记录：Profound · D轮 · 2026-09-15 · 本轮参投 · $180M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bed55d4f5e02a374"
         }
       ],
       "contacts": [
@@ -1318,6 +1371,14 @@
           "quote_hash": "381c5ad48bf7857bc3353c25d0ec1d2afd15ba56982fe80b56fae43affb697f6"
         },
         {
+          "source_id": "FISRC-99134731fc9bfd4f",
+          "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+          "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
+          "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
+          "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+          "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+        },
+        {
           "source_id": "FISRC-6f2893ccf0aa3194",
           "source_url": "https://www.trysignalbase.com/news/funding/torch-systems-raises-11-5m-for-outdoor",
           "source_title": "Torch Systems 为户外业务融资 1150 万美元",
@@ -1332,14 +1393,6 @@
           "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
           "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
           "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
-        },
-        {
-          "source_id": "FISRC-bed55d4f5e02a374",
-          "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
-          "source_title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
-          "source_content_hash": "8c26f4447adaeabc",
-          "quote": "existing investors — including Lightspeed Venture Partners, Khosla Ventures, and South Park Commons — also participated",
-          "quote_hash": "abf17d3c7cc04d6ab46460f8938409589705dc5e1d6d0e56712e07b6a2ea602b"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1350,7 +1403,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[17].role": {
+        "activities[18].role": {
           "text": "Series C 领投",
           "source_hash": "c55ed79792c5d8940ad622d8d48ba34699b43b78b6c1f267f19f91e6570bbcca",
           "provider": "deepseek",

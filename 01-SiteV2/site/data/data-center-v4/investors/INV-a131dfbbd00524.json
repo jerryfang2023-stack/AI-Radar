@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-06",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "infrastructure",
       "seed"
     ],
     "portfolio_companies": [
@@ -84,12 +85,57 @@
         "name": "Cleavr"
       },
       {
+        "entity_id": "EN-c815c722997baaf4",
+        "canonical_entity_id": "",
+        "name": "IMMIX"
+      },
+      {
         "entity_id": "EN-58f71bec3ce7d747",
         "canonical_entity_id": "",
         "name": "Nettle"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-eccb1d14a9d64ef1",
+        "funding_insight_id": "FI-5d48529b1f030e12",
+        "event_ids": [
+          "EV-ce32b416f60cec1d"
+        ],
+        "company_entity_id": "EN-c815c722997baaf4",
+        "company_canonical_entity_id": "",
+        "company_name": "IMMIX",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "€3.12 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 3120000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "312 万欧元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-38fc428924367197",
+            "source_url": "https://www.eu-startups.com/2026/10/londons-immix-secures-e3-12-million-to-build-fx-infrastructure-for-stablecoin-payments-beyond-the-us-dollar/",
+            "source_title": "伦敦的IMMIX获得312万欧元，用于构建超越美元稳定币支付的外汇基础设施",
+            "source_content_hash": "6fdef0694b7faf00fa73171175038c3493cb4982374b35866ccf5305bcae676e",
+            "quote": "The round was backed by Crane Venture Partners, BTSE, and Portfolio Ventures.",
+            "quote_hash": "1223618dc78f45c315de842cb81ad201dc56a33fbb369cfe8ec8da9bc20499a8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-132b3f0d8362a4f3",
         "funding_insight_id": "FI-0f7625d43f2218a6",
@@ -181,6 +227,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-38fc428924367197",
+        "source_url": "https://www.eu-startups.com/2026/10/londons-immix-secures-e3-12-million-to-build-fx-infrastructure-for-stablecoin-payments-beyond-the-us-dollar/",
+        "source_title": "伦敦的IMMIX获得312万欧元，用于构建超越美元稳定币支付的外汇基础设施",
+        "source_content_hash": "6fdef0694b7faf00fa73171175038c3493cb4982374b35866ccf5305bcae676e",
+        "quote": "The round was backed by Crane Venture Partners, BTSE, and Portfolio Ventures.",
+        "quote_hash": "1223618dc78f45c315de842cb81ad201dc56a33fbb369cfe8ec8da9bc20499a8"
+      },
+      {
         "source_id": "FISRC-cfafc3f8ac637385",
         "source_url": "https://tech.eu/2026/10/06/cleavr-bags-eur8m-to-scale-ai-powered-invoice-collection-across-europe/",
         "source_title": "Cleavr 获 800 万欧元，在欧洲扩展 AI 驱动的发票收款业务",
@@ -210,10 +264,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Portfolio Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Portfolio Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：IMMIX · 基础设施融资 · 2026-10-08 · 本轮参投 · €3.12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-38fc428924367197"
+        },
         {
           "description": "融资来源记录：Cleavr · 种子轮 · 2026-10-06 · 本轮参投 · €8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cfafc3f8ac637385"
@@ -221,14 +279,18 @@
         {
           "description": "融资来源记录：Cleavr · 种子轮 · 2026-10-06 · 本轮参投 · €8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-597e7f2ec015219b"
-        },
-        {
-          "description": "融资来源记录：Nettle · 种子轮 · 2026-10-06 · 本轮参投 · $4.8 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1b63578e82da8f27"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-38fc428924367197",
+          "source_url": "https://www.eu-startups.com/2026/10/londons-immix-secures-e3-12-million-to-build-fx-infrastructure-for-stablecoin-payments-beyond-the-us-dollar/",
+          "source_title": "伦敦的IMMIX获得312万欧元，用于构建超越美元稳定币支付的外汇基础设施",
+          "source_content_hash": "6fdef0694b7faf00fa73171175038c3493cb4982374b35866ccf5305bcae676e",
+          "quote": "The round was backed by Crane Venture Partners, BTSE, and Portfolio Ventures.",
+          "quote_hash": "1223618dc78f45c315de842cb81ad201dc56a33fbb369cfe8ec8da9bc20499a8"
+        },
         {
           "source_id": "FISRC-cfafc3f8ac637385",
           "source_url": "https://tech.eu/2026/10/06/cleavr-bags-eur8m-to-scale-ai-powered-invoice-collection-across-europe/",
@@ -244,14 +306,6 @@
           "source_content_hash": "02baba2030a519a8",
           "quote": "The round was led by Varsity. Additional participating investors included Kima Ventures, Better Angle, Portfolio Ventures, Kerala, and Financière Saint James.",
           "quote_hash": "517aa4c7e79bb5cff7c1360c4b1969619795de71e659ce546282520404b5b226"
-        },
-        {
-          "source_id": "FISRC-1b63578e82da8f27",
-          "source_url": "https://tech.eu/2026/10/06/nettle-raises-48m-to-expand-its-ai-workspace-for-insurers/",
-          "source_title": "Nettle 融资 480 万美元，为保险公司扩展其 AI 工作空间",
-          "source_content_hash": "f2042c5237fa2a4fcba98f1e64bddb9c8f394093279e1ea4d7ba2594954feab9",
-          "quote": "The round was led by MTech, with Project A Ventures following on with a super pro rata investment and participation from Sure Valley Ventures (SVV), Portfolio Ventures, Ventures Together and selected angel investors.",
-          "quote_hash": "028582481c5f98a621ec289f8a335b904d40ab0807788c4e82e8b72b8fd01b46"
         }
       ],
       "last_verified_at": "2026-10-06"

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 12,
-    "historical_or_ambiguous_count": 4,
+    "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 11,
     "market_regions": [
       "GLOBAL"
@@ -73,7 +73,7 @@
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 4,
+      "historical_or_ambiguous": 5,
       "lead": 3,
       "participant": 8
     },
@@ -628,6 +628,38 @@
         ]
       },
       {
+        "activity_id": "IA-6086c00dde55c7ee",
+        "funding_insight_id": "FI-de00acfd7c8d76c8",
+        "event_ids": [
+          "EV-cdcdea720885d037"
+        ],
+        "company_entity_id": "EN-572e31f55b6ac1b1",
+        "company_canonical_entity_id": "",
+        "company_name": "Arena",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Seed 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-177d799e57150d84",
+            "source_url": "https://valueaddvc.com/pulse/company/arena",
+            "source_title": "Arena — Valuation, Funding & Investors | Value Add Intelligence",
+            "source_content_hash": "81a60e002db3818e",
+            "quote": "May 2025Seed$100M$600MAndreessen HorowitzUC InvestmentsLightspeed Venture PartnersFelicis VenturesKleiner Perkins",
+            "quote_hash": "2dce7aa1ffd4ab8f6a723f1181faed65c183bdcebf9dbdf9623fa3a7ca8587b4"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-5a38d269ec2485d7",
         "funding_insight_id": "FI-e7151a217bf0631d",
         "event_ids": [
@@ -858,6 +890,14 @@
         "quote_hash": "f624829735654441c5d0cc7ae15763dc8e1883f5d03fe7ea748456cf995a02d0"
       },
       {
+        "source_id": "FISRC-177d799e57150d84",
+        "source_url": "https://valueaddvc.com/pulse/company/arena",
+        "source_title": "Arena — Valuation, Funding & Investors | Value Add Intelligence",
+        "source_content_hash": "81a60e002db3818e",
+        "quote": "May 2025Seed$100M$600MAndreessen HorowitzUC InvestmentsLightspeed Venture PartnersFelicis VenturesKleiner Perkins",
+        "quote_hash": "2dce7aa1ffd4ab8f6a723f1181faed65c183bdcebf9dbdf9623fa3a7ca8587b4"
+      },
+      {
         "source_id": "FISRC-14fa67bc80a1ece9",
         "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
         "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
@@ -976,6 +1016,18 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[12].role": {
+          "text": "Seed 参投",
+          "source_hash": "5a82b6b5ec5714f4399d33f301da7f41a22fc3218a4bca553666f08acc0877ac",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-09T01:51:27.405Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

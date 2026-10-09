@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-08-20",
-    "latest_disclosed_at": "2025-08-20",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
+      "infrastructure",
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-c815c722997baaf4",
+        "canonical_entity_id": "",
+        "name": "IMMIX"
+      },
       {
         "entity_id": "EN-c08f86842ff2c908",
         "canonical_entity_id": "",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9db3d80448cd6cf1",
+        "funding_insight_id": "FI-5d48529b1f030e12",
+        "event_ids": [
+          "EV-ce32b416f60cec1d"
+        ],
+        "company_entity_id": "EN-c815c722997baaf4",
+        "company_canonical_entity_id": "",
+        "company_name": "IMMIX",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "€3.12 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 3120000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "312 万欧元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-38fc428924367197",
+            "source_url": "https://www.eu-startups.com/2026/10/londons-immix-secures-e3-12-million-to-build-fx-infrastructure-for-stablecoin-payments-beyond-the-us-dollar/",
+            "source_title": "伦敦的IMMIX获得312万欧元，用于构建超越美元稳定币支付的外汇基础设施",
+            "source_content_hash": "6fdef0694b7faf00fa73171175038c3493cb4982374b35866ccf5305bcae676e",
+            "quote": "The round was backed by Crane Venture Partners, BTSE, and Portfolio Ventures.",
+            "quote_hash": "1223618dc78f45c315de842cb81ad201dc56a33fbb369cfe8ec8da9bc20499a8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-05631c2c4b5677ed",
         "funding_insight_id": "FI-9fae2cdb80bfa282",
@@ -127,6 +174,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-38fc428924367197",
+        "source_url": "https://www.eu-startups.com/2026/10/londons-immix-secures-e3-12-million-to-build-fx-infrastructure-for-stablecoin-payments-beyond-the-us-dollar/",
+        "source_title": "伦敦的IMMIX获得312万欧元，用于构建超越美元稳定币支付的外汇基础设施",
+        "source_content_hash": "6fdef0694b7faf00fa73171175038c3493cb4982374b35866ccf5305bcae676e",
+        "quote": "The round was backed by Crane Venture Partners, BTSE, and Portfolio Ventures.",
+        "quote_hash": "1223618dc78f45c315de842cb81ad201dc56a33fbb369cfe8ec8da9bc20499a8"
+      },
       {
         "source_id": "FISRC-68a8dc57ec8eec7f",
         "source_url": "https://techcrunch.com/2025/08/20/sre-ai-launches-to-automate-complex-enterprise-workflows/",
@@ -222,6 +277,10 @@
         {
           "description": "官网组合覆盖 AI 与自动化、数据基础设施、深科技、企业生产力、金融系统、健康和安全等主题；公开列表为组合页面展示，不构成完整投资清单。",
           "source_id": "crane_portfolio"
+        },
+        {
+          "description": "融资来源记录：IMMIX · 基础设施融资 · 2026-10-08 · 本轮参投 · €3.12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-38fc428924367197"
         }
       ],
       "experience_summary": "Crane 创始合伙人披露的经验覆盖欧洲早期投资、深科技创业及市场与战略工作；亚太管理团队还公开披露了风险投资、咨询和股权研究经历。",
@@ -297,6 +356,14 @@
           "source_content_hash": "1066cbe242af0e32",
           "quote": "announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners.",
           "quote_hash": "beab4efc3d4169df015244aacfae369b78d49a23a6bd8e7e96f7d21a10515d1d"
+        },
+        {
+          "source_id": "FISRC-38fc428924367197",
+          "source_url": "https://www.eu-startups.com/2026/10/londons-immix-secures-e3-12-million-to-build-fx-infrastructure-for-stablecoin-payments-beyond-the-us-dollar/",
+          "source_title": "伦敦的IMMIX获得312万欧元，用于构建超越美元稳定币支付的外汇基础设施",
+          "source_content_hash": "6fdef0694b7faf00fa73171175038c3493cb4982374b35866ccf5305bcae676e",
+          "quote": "The round was backed by Crane Venture Partners, BTSE, and Portfolio Ventures.",
+          "quote_hash": "1223618dc78f45c315de842cb81ad201dc56a33fbb369cfe8ec8da9bc20499a8"
         }
       ],
       "last_verified_at": "2026-09-27",

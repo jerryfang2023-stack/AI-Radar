@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-08",
-    "currentDate": "2026-10-08",
-    "eventCount": 4008,
+    "latestDataDate": "2026-10-09",
+    "currentDate": "2026-10-09",
+    "eventCount": 4035,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,20 +63,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-18",
-    "latest_disclosed_at": "2026-08-26",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "seed",
@@ -113,9 +113,54 @@
         "entity_id": "EN-cfd90af8403941bf",
         "canonical_entity_id": "",
         "name": "Sable"
+      },
+      {
+        "entity_id": "EN-40cd17bb16c8fec1",
+        "canonical_entity_id": "",
+        "name": "SafeWorld"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4235bf560760ed5d",
+        "funding_insight_id": "FI-5fd5533b14de7850",
+        "event_ids": [
+          "EV-ad1a42d4f43e005c"
+        ],
+        "company_entity_id": "EN-40cd17bb16c8fec1",
+        "company_canonical_entity_id": "",
+        "company_name": "SafeWorld",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "超1200万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": 12000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1200 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f77610cfcfab94",
+            "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+            "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+            "source_content_hash": "58fca4c121c8b3b4",
+            "quote": "with participation from Box Group, the Carnegie Mellon University Endowment, Innovation Endeavors, SV Angel and other investors",
+            "quote_hash": "7ba959a00a48a9fab08858152a8a655158589e16881c8596707ebdb569c9351f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-503eb2331bedaf3c",
         "funding_insight_id": "FI-68cd3b0b2986de61",
@@ -391,6 +436,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-98f77610cfcfab94",
+        "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+        "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+        "source_content_hash": "58fca4c121c8b3b4",
+        "quote": "with participation from Box Group, the Carnegie Mellon University Endowment, Innovation Endeavors, SV Angel and other investors",
+        "quote_hash": "7ba959a00a48a9fab08858152a8a655158589e16881c8596707ebdb569c9351f"
+      },
+      {
         "source_id": "FISRC-b6920185a5e7fa72",
         "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
         "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
@@ -509,16 +562,16 @@
           "source_id": "boxgroup_about"
         },
         {
+          "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮参投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f77610cfcfab94"
+        },
+        {
           "description": "融资来源记录：Arga Labs · 种子轮 · 2026-08-26 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b6920185a5e7fa72"
         },
         {
           "description": "融资来源记录：Foundational Industries · 种子轮 · 2026-08-01 · 本轮联合领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e6ee0cd472bfb792"
-        },
-        {
-          "description": "融资来源记录：Sable · 轮次未披露 · 2026-07-16 · 本轮参投 · $45 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9f8cec869ac3008e"
         }
       ],
       "contacts": [
@@ -570,6 +623,14 @@
           "quote_hash": "060e2785780b531d4e0c206450259d550d2d8079f2aeb507dd84aea0207971ca"
         },
         {
+          "source_id": "FISRC-98f77610cfcfab94",
+          "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
+          "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
+          "source_content_hash": "58fca4c121c8b3b4",
+          "quote": "with participation from Box Group, the Carnegie Mellon University Endowment, Innovation Endeavors, SV Angel and other investors",
+          "quote_hash": "7ba959a00a48a9fab08858152a8a655158589e16881c8596707ebdb569c9351f"
+        },
+        {
           "source_id": "FISRC-b6920185a5e7fa72",
           "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
           "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
@@ -584,14 +645,6 @@
           "source_content_hash": "ad03bbee3088b0fc",
           "quote": "The round was led by BoxGroup and Zigg Ventures",
           "quote_hash": "603f65c4354e79487ebff6657abc1acb3c8db7111baaf6bb4c0e4eab80efc8a1"
-        },
-        {
-          "source_id": "FISRC-9f8cec869ac3008e",
-          "source_url": "https://www.citybiz.co/article/876088/sable-raises-45m-to-build-ai-employee-for-customer-relations/",
-          "source_title": "Sable Raises $45M to Build ‘AI Employee’ for Customer Relations | citybiz",
-          "source_content_hash": "be1a3bb8f3be622f",
-          "quote": "Other investors in the round included BoxGroup, SV Angel, Valor Atreides AI Fund, and Sabrina and Evan Hahn.",
-          "quote_hash": "c9b09741a783eeded8d5ba6e91bf31f306cc1e89aff8eb3e3905e54b1ac16dbb"
         }
       ],
       "identity_status": "verified"
