@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,24 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-10",
-    "latest_disclosed_at": "2026-09-29",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "lead": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed",
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
@@ -94,9 +95,54 @@
         "entity_id": "EN-2dcd958b2064843f",
         "canonical_entity_id": "EN-2dcd958b2064843f",
         "name": "Thira"
+      },
+      {
+        "entity_id": "EN-5a36b0948fb336a7",
+        "canonical_entity_id": "",
+        "name": "Vinci"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-202d225ee64a13c8",
+        "funding_insight_id": "FI-18e35dfffb4a703f",
+        "event_ids": [
+          "EV-03401b3c382e1088"
+        ],
+        "company_entity_id": "EN-5a36b0948fb336a7",
+        "company_canonical_entity_id": "",
+        "company_name": "Vinci",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf38198e12772dce",
+            "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+            "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+            "source_content_hash": "d0ea59cc1ed354cf",
+            "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+            "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d64004c07e78cddf",
         "funding_insight_id": "FI-09a3581d38e48a44",
@@ -220,6 +266,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cf38198e12772dce",
+        "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+        "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+        "source_content_hash": "d0ea59cc1ed354cf",
+        "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+        "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
+      },
+      {
         "source_id": "FISRC-d4e6ae2384112548",
         "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",
         "source_title": "Atomic 融资 1250 万美元，为实物商品公司构建 AI 控制系统",
@@ -260,16 +314,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Vinci · B轮 · 2026-10-06 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf38198e12772dce"
+        },
+        {
           "description": "融资来源记录：Atomic · A轮 · 2026-09-29 · 本轮领投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d4e6ae2384112548"
         },
         {
           "description": "融资来源记录：Thira · 种子轮 · 2026-07-14 · 本轮领投 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1da67785ba366c16"
-        },
-        {
-          "description": "融资来源记录：Entire Inc. · 种子轮 · 2026-02-10 · 本轮参投 · 6000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-62dc6d17f09030c0"
         }
       ],
       "contacts": [
@@ -291,6 +345,14 @@
           "quote_hash": "2f65188598201ce8275e672648d6244b3d42b098f38746c7487603e97d44144f"
         },
         {
+          "source_id": "FISRC-cf38198e12772dce",
+          "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+          "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+          "source_content_hash": "d0ea59cc1ed354cf",
+          "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+          "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
+        },
+        {
           "source_id": "FISRC-d4e6ae2384112548",
           "source_url": "https://www.prnewswire.com/news-releases/atomic-raises-12-5m-to-build-the-ai-control-system-for-physical-goods-companies-302892093.html",
           "source_title": "Atomic 融资 1250 万美元，为实物商品公司构建 AI 控制系统",
@@ -305,14 +367,6 @@
           "source_content_hash": "d455e42bd85876dd",
           "quote": "a $21 million seed financing led by Madrona",
           "quote_hash": "aff8196052b206350aa87d9a95f764ee49bf1702482ed73c6ba02739b7cd3e90"
-        },
-        {
-          "source_id": "FISRC-62dc6d17f09030c0",
-          "source_url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
-          "source_title": "前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。",
-          "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
-          "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
-          "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
         }
       ],
       "last_verified_at": "2026-10-03",

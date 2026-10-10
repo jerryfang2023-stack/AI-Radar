@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,29 +54,32 @@
   },
   "institution": {
     "id": "INV-4f02a34efa5bda",
-    "name": "腾讯 (Tencent)",
-    "aliases": [],
+    "name": "腾讯(Tencent)",
+    "aliases": [
+      "腾讯 (Tencent)"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-06-08",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "first_external",
+      "series_c",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -86,12 +89,57 @@
         "name": "DeepSeek"
       },
       {
+        "entity_id": "EN-7cdbc9084feb6ac0",
+        "canonical_entity_id": "",
+        "name": "Manus"
+      },
+      {
         "entity_id": "EN-b5251b35f15bedc4",
         "canonical_entity_id": "EN-b5251b35f15bedc4",
         "name": "Moonshot AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b42696bbf37a03bb",
+        "funding_insight_id": "FI-7901905738df2a10",
+        "event_ids": [
+          "EV-03a5e703deae837f"
+        ],
+        "company_entity_id": "EN-7cdbc9084feb6ac0",
+        "company_canonical_entity_id": "",
+        "company_name": "Manus",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "超过5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": 500000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c8f60a62d027b2",
+            "source_url": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "Manus获超5亿美元融资 AI Agent赛道再升温",
+            "source_content_hash": "0d6ede55331834420c042002e6e44e670ecb79b00e5ff2a74cb4656e499305eb",
+            "quote": "腾讯、HSG以及真格基金（ZhenFund）等现有股东参与追加投资",
+            "quote_hash": "413e9b1d18e0803a5157ca2e0d522f8924a103412e22fad5f5b715c00c1bbcf0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-26b4187120c56c32",
         "funding_insight_id": "FI-1b3b5e07545457bb",
@@ -184,6 +232,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4c8f60a62d027b2",
+        "source_url": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "Manus获超5亿美元融资 AI Agent赛道再升温",
+        "source_content_hash": "0d6ede55331834420c042002e6e44e670ecb79b00e5ff2a74cb4656e499305eb",
+        "quote": "腾讯、HSG以及真格基金（ZhenFund）等现有股东参与追加投资",
+        "quote_hash": "413e9b1d18e0803a5157ca2e0d522f8924a103412e22fad5f5b715c00c1bbcf0"
+      },
+      {
         "source_id": "FISRC-0199034a5417695f",
         "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
         "source_title": "Moonshot AI's $30B Ask: What's Behind China's AI Bet",
@@ -238,6 +294,10 @@
         }
       ],
       "track_record": [
+        {
+          "description": "融资来源记录：Manus · C轮 · 2026-10-08 · 本轮参投 · 超过5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c8f60a62d027b2"
+        },
         {
           "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-06-08 · 2024年8月轮次领投；后续轮次参投 · 20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0199034a5417695f"
@@ -298,6 +358,14 @@
           "quote_hash": "c9ab87046b660bb88dfb3abcf15c15015a9c56cf7dcd343f88a4ab3aa5929555"
         },
         {
+          "source_id": "FISRC-c4c8f60a62d027b2",
+          "source_url": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "Manus获超5亿美元融资 AI Agent赛道再升温",
+          "source_content_hash": "0d6ede55331834420c042002e6e44e670ecb79b00e5ff2a74cb4656e499305eb",
+          "quote": "腾讯、HSG以及真格基金（ZhenFund）等现有股东参与追加投资",
+          "quote_hash": "413e9b1d18e0803a5157ca2e0d522f8924a103412e22fad5f5b715c00c1bbcf0"
+        },
+        {
           "source_id": "FISRC-0199034a5417695f",
           "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
           "source_title": "Moonshot AI's $30B Ask: What's Behind China's AI Bet",
@@ -312,14 +380,6 @@
           "source_content_hash": "6faaa988514157f8",
           "quote": "Tencent and battery maker CATL are among the biggest outside backers.",
           "quote_hash": "4804116ce822c095b4517ca999ab7b6c182a396db91b251591199df242eed60d"
-        },
-        {
-          "source_id": "FISRC-6f84e84fa4821cb0",
-          "source_url": "https://www.gadgetscout.co.uk/articles/deepseek-valued-at-52bn-after-first-external-funding-round.html",
-          "source_title": "DeepSeek Valued at $52bn After First External Funding Round - Gadget Scout",
-          "source_content_hash": "4f78964f26b92981",
-          "quote": "The investor group includes Tencent, which contributed 10 billion yuan",
-          "quote_hash": "963adcb5fcfc2c94b94fbcd5a1bd80a5c0e94a4714e420661e04196d57f245b3"
         }
       ],
       "last_verified_at": "2026-10-03"

@@ -80,7 +80,7 @@ function buildJobs(date) {
       const raw = rawById.get(item.asset_id);
       if (!raw || raw.extraction_status === "quarantined" || String(raw.body_clean || "").length < 300) continue;
       const actionLike = /\b(?:launch|release|raise|fund|deploy|partner|acquir|ship|appoint|join|leave|introduce|unveil|contract)\w*\b|发布|推出|融资|部署|合作|收购|出货|任命|加入|离职|合同/iu.test(`${raw.title_original}\n${String(raw.body_clean).slice(0, 1000)}`);
-      if (requestedTasks.has("claim_extraction") && (item.reason === "no_source_bounded_claim" || (item.reason === "no_source_bounded_event" && actionLike))) {
+      if (requestedTasks.has("claim_extraction") && (item.reason === "no_source_bounded_claim" || (item.reason === "no_source_bounded_event" && (actionLike || requestedAssets.has(item.qa_id))))) {
         jobs.push({ date, taskType: "claim_extraction", assetId: item.qa_id, raw, sourceRef: raw.source_artifact_id, context: { qa_reason: item.reason } });
       } else if (requestedTasks.has("qa_repair") && ["event_not_ai_relevant", "public_event_title_incomplete"].includes(item.reason)) {
         jobs.push({ date, taskType: "qa_repair", assetId: item.qa_id, raw, sourceRef: raw.source_artifact_id, context: { qa_reason: item.reason } });

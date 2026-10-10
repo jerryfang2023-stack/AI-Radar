@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -278,7 +278,7 @@
       "EN-10fce287b4b1464c"
     ],
     "firstSeen": "2026-01-14",
-    "lastSeen": "2026-10-09",
+    "lastSeen": "2026-10-10",
     "relationIds": [
       "REL2-ee25fecc7314abd4",
       "REL2-62f415d53b9e1307",
@@ -297,8 +297,8 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-5db7347d93859de3",
         "EV-ab0d2f95a9a76c3e",
+        "EV-5db7347d93859de3",
         "EV-2ab7252166b42c03",
         "EV-241460a0e72336d7",
         "EV-bccd915b61c48911",
@@ -494,6 +494,23 @@
     },
     "timeline": [
       {
+        "id": "EV-ab0d2f95a9a76c3e",
+        "dataDate": "2026-10-10",
+        "date": "2026-10-07",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "机器人数据初创公司 Mecka AI 获红杉资本 6000 万美元融资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-45d4fec2ad312ea7",
+          "EN-8d4321d936320802",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
+      {
         "id": "EV-5db7347d93859de3",
         "dataDate": "2026-10-09",
         "date": "2026-10-07",
@@ -517,23 +534,6 @@
           }
         ],
         "entityIds": [
-          "EN-9fbf261b62c1d7c0"
-        ]
-      },
-      {
-        "id": "EV-ab0d2f95a9a76c3e",
-        "dataDate": "2026-10-09",
-        "date": "2026-10-07",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "机器人数据初创公司 Mecka AI 获红杉资本 6000 万美元融资",
-        "displayTags": [],
-        "entityIds": [
-          "EN-45d4fec2ad312ea7",
-          "EN-8d4321d936320802",
           "EN-9fbf261b62c1d7c0"
         ]
       },
@@ -6209,6 +6209,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-ab09da5ae7b87728",
         "EV-becc2b4b8329de4d",
         "EV-fe2971c25b8c72e2",
         "EV-2610d8aa3ff494b8",
@@ -6331,7 +6332,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-688f8db7018da7d4",
@@ -6476,6 +6477,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-289f468a361ec508",
         "EV-2a554429da11d2b8",
         "EV-3a4ba26375b45669",
         "EV-fe7445d005172a39",
@@ -7099,7 +7101,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-38945a66b4806b11",
@@ -7452,6 +7454,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-f3ecff6963190b97",
+        "EV-03a5e703deae837f",
         "EV-53d3d485f2b3d64e",
         "EV-55ed36eee8ffa4bd",
         "EV-60beaa2e14a34fc9",
@@ -8113,6 +8117,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-bab553871438227c",
         "EN-006e39f60f196420",
         "EN-804918e60b0894fa",
         "EN-9fbf261b62c1d7c0",
@@ -9263,7 +9268,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -9481,7 +9486,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-29",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "TX-target_user-business_user",

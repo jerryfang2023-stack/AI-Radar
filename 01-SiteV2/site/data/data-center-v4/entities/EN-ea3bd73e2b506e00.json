@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-03a5e703deae837f",
       "EV-622c77a021ef08de",
       "EV-7f89984c1b858df2",
       "EV-bd05f8cee4043426",
@@ -237,7 +238,7 @@
       "EN-e71558a14e7ed6ab"
     ],
     "firstSeen": "2026-01-28",
-    "lastSeen": "2026-10-09",
+    "lastSeen": "2026-10-10",
     "relationIds": [
       "REL2-85833837dc3e3f02",
       "REL2-ef7c3e949f2087f3",
@@ -252,6 +253,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-03a5e703deae837f",
         "EV-622c77a021ef08de",
         "EV-641d61c6b8506c06",
         "EV-7f89984c1b858df2",
@@ -398,8 +400,35 @@
     },
     "timeline": [
       {
+        "id": "EV-03a5e703deae837f",
+        "dataDate": "2026-10-10",
+        "date": "2026-10-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Manus获超5亿美元融资 AI Agent赛道再升温",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-7cdbc9084feb6ac0",
+          "EN-ea3bd73e2b506e00",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
+      {
         "id": "EV-622c77a021ef08de",
-        "dataDate": "2026-10-09",
+        "dataDate": "2026-10-10",
         "date": "2026-10-08",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -5244,6 +5273,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-03a5e703deae837f",
         "EV-2cddd05c747f0ee7",
         "EV-622c77a021ef08de",
         "EV-bada0d929d2b70ac",
@@ -5334,7 +5364,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-d85ad5e8ff8e2889",
@@ -5635,6 +5665,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-f3ecff6963190b97",
+        "EV-03a5e703deae837f",
         "EV-53d3d485f2b3d64e",
         "EV-55ed36eee8ffa4bd",
         "EV-60beaa2e14a34fc9",
@@ -6296,6 +6328,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-bab553871438227c",
         "EN-006e39f60f196420",
         "EN-804918e60b0894fa",
         "EN-9fbf261b62c1d7c0",
@@ -7446,7 +7479,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -7867,7 +7900,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",

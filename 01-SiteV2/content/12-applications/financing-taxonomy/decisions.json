@@ -29203,7 +29203,268 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-09T01:52:13.867Z"
+    },
+    "EV-289f468a361ec508": {
+      "id": "EV-289f468a361ec508",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "consumer",
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "OpenAI 主营通用基础模型 GPT-6.1-Sol，并通过 ChatGPT 面向消费者与企业交付。",
+      "input_hash": "acef5c43bfe9bc9f42d27a2b4660a360e9d628367c13b2df606835c9205d1638",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9bee21a644ee1802",
+          "quote": "ChatGPT now reaches 1.2 billion people every week, OpenAI says"
+        },
+        {
+          "source_id": "FISRC-9bee21a644ee1802",
+          "quote": "over 35 million weekly ChatGPT Work and Codex users"
+        },
+        {
+          "source_id": "FISRC-9bee21a644ee1802",
+          "quote": "a strategy the company doubled down on with the just-launched GPT-6.1-Sol"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-10T01:17:25.493Z"
+    },
+    "EV-03a5e703deae837f": {
+      "id": "EV-03a5e703deae837f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        3,
+        4
+      ],
+      "rationale": "原文披露的是 Manus 2.0 与个人 AI 智能体应用 Cue；Cascade 是内部执行系统，没有面向开发者交付的平台/API证据。按已披露核心应用归入消费 AI 个人助手。",
+      "input_hash": "83c292ba5abc9ae174867a4a363a2e05e9d34daa3ea68fa7b630e308bcb80664",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c4c8f60a62d027b2",
+          "quote": "今年早些时候，公司推出Manus 2.0，并基于内部执行系统Cascade升级产品"
+        },
+        {
+          "source_id": "FISRC-c4c8f60a62d027b2",
+          "quote": "同时推出个人AI智能体应用Cue。该应用中，每个Agent均拥有独立邮箱地址、电话号码以及移动钱包。"
+        }
+      ],
+      "provider": "responsible_agent_review",
+      "model": "source_bound_fact_review",
+      "generated_at": "2026-10-10T01:45:04.882Z",
+      "reviewed_by": "Codex-financing-20261010"
+    },
+    "EV-f3ecff6963190b97": {
+      "id": "EV-f3ecff6963190b97",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-coding",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "Klarent 面向企业工程团队提供 AI 自主软件测试平台，属 AI 编程与软件研发。",
+      "input_hash": "da187c985ef84f31b3a7262d4e036266cad3bd8505ff277af905c0242335c739",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1f26571d6981733f",
+          "quote": "Instead of leaning on large language models to run tests directly, Klarent’s agents use LLMs only to author test code. Once written, the test code executes in a deterministic, repeatable manner, combining the adaptability of AI with the rigour expected in production engineering."
+        },
+        {
+          "source_id": "FISRC-07bbad4e1419e0e6",
+          "quote": "Klarent is an AI test automation company. We build an AI-powered software testing platform that lets enterprise teams automate the entire testing lifecycle with autonomous AI agents, across web, iOS, and Android applications."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-10T01:17:27.287Z"
+    },
+    "EV-2718aecee127b0fa": {
+      "id": "EV-2718aecee127b0fa",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "analytics",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "Autentic AI 用对话智能体替代人工定性调研并自动生成洞察，属企业数据分析。",
+      "input_hash": "0b3979e2f28bdcaa10562abd11aab0bfbd32ffe668a744790d3aa57e906aae6f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-110fcb07b7a71e99",
+          "quote": "Autentic AI is an AI-powered qualitative research platform that helps teams collect deep customer insights at scale. By deploying conversational AI agents to conduct real voice or in-product conversations, the platform replaces manual qualitative workflows with AI-moderated interviews and automated insight synthesis."
+        },
+        {
+          "source_id": "FISRC-f2ced22db80748b7",
+          "quote": "The company uses conversational AI agents to recruit participants, conduct voice and video interviews, and turn conversations into structured insights."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-10T01:17:27.287Z"
+    },
+    "EV-10df3d93ae48e9b4": {
+      "id": "EV-10df3d93ae48e9b4",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "Monte Carlo Capital 是投资机构而非交付 AI 产品的公司。",
+      "input_hash": "9c9192c20f8af24abfa5b7b0ea0a8cee36fcd11348f9b08373d6107a3a14f73d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cf392bb324b53552",
+          "quote": "Monte Carlo Capital (MCC), the Monaco-based early-stage venture firm investing at Seed in DeepTech and tech-enabled innovators"
+        },
+        {
+          "source_id": "FISRC-cf392bb324b53552",
+          "quote": "Fund II invests primarily at Seed, and selectively at pre-Seed and Series A, with a focus on sectors such as DeepTech, AI, SpaceTech, and enterprise software."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-10T01:17:27.287Z"
+    },
+    "EV-bf7bc9a369a655e3": {
+      "id": "EV-bf7bc9a369a655e3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Besso 提供国际贸易法规与关税情报 AI 平台，服务企业供应链合规。",
+      "input_hash": "11f3cf9d6a723f4bb07db34ce2f21560587195c905baa9d3a2d876789738a032",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6f51c8a5653d5d92",
+          "quote": "Besso has developed an AI platform that simplifies the complexities of international trade regulations by monitoring over 1,250 regulations."
+        },
+        {
+          "source_id": "FISRC-c3f97df0c34d10e9",
+          "quote": "It has built an AI platform that continuously monitors over 1,250 trade regulations and tariff schedules across global corridors, automatically identifying where companies are overpaying on duties and offering them opportunities to recover costs through preferential tariff rates and free trade agreement (FTA) eligibility."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-10T01:17:27.287Z"
+    },
+    "EV-69273189e74d62e5": {
+      "id": "EV-69273189e74d62e5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "TypeSafe AI 交付 Jev 结构化决策模型并按 token 计费，属专用模型 API。",
+      "input_hash": "e4a007056b6c4a2a5a74aef977f8b01343780f0d83d239555af20e84a6532421",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0e76615878e34cb3",
+          "quote": "Jev takes typed questions and evaluates them against a supplied state, returning structured results without generating or parsing text."
+        },
+        {
+          "source_id": "FISRC-0e76615878e34cb3",
+          "quote": "The company exposes three primitives: Choice picks one option out of a provided list; Score grades the state against a rubric; and Noul returns a 0–1 answer to whether a given statement is true."
+        },
+        {
+          "source_id": "FISRC-0e76615878e34cb3",
+          "quote": "Published pricing is $0.042 per million input tokens, with output tokens free."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-10T01:17:27.287Z"
+    },
+    "EV-03401b3c382e1088": {
+      "id": "EV-03401b3c382e1088",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Vinci 为硬件工程师提供基于物理基础模型的确定性设计仿真与工程软件，属工业软件与制造行业 AI。",
+      "input_hash": "212238af255d39f45b3f542a7d5e746a97679fe11e468b2957ea61d3b943266c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cf38198e12772dce",
+          "quote": "Vinci is building the intelligence infrastructure for a new era of hardware engineering."
+        },
+        {
+          "source_id": "FISRC-cf38198e12772dce",
+          "quote": "Vinci’s core product capability, Continuous Physics Reasoning, gives engineers deterministic, solver-accurate understanding of how a product will behave while it is still being designed, rather than waiting for isolated simulation checkpoints."
+        },
+        {
+          "source_id": "FISRC-cf38198e12772dce",
+          "quote": "Vinci operates zero-shot across new designs without customer-specific training or fine-tuning."
+        },
+        {
+          "source_id": "FISRC-cf38198e12772dce",
+          "quote": "Continuous Physics Reasoning is powered by a fundamentally new computational architecture combining automated design understanding and preparation, agentic orchestration, a Foundation Model for Physics and GPU-native physics kernels."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-10T01:34:55.479Z"
     }
   },
-  "generated_at": "2026-10-09T01:52:13.867Z"
+  "generated_at": "2026-10-10T01:45:04.882Z"
 }

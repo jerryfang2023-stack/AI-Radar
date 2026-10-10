@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,22 +63,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 28,
+    "current_round_count": 29,
     "historical_or_ambiguous_count": 13,
-    "portfolio_company_count": 23,
+    "portfolio_company_count": 24,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09",
-    "latest_disclosed_at": "2026-10-07",
+    "latest_disclosed_at": "2026-10-10",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 13,
       "lead": 12,
       "other_current_round": 1,
-      "participant": 12
+      "participant": 13
     },
     "round_codes": [
       "multi_round",
@@ -208,9 +208,54 @@
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal Technologies"
+      },
+      {
+        "entity_id": "EN-fc67129ea8fe8366",
+        "canonical_entity_id": "",
+        "name": "TypeSafe AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-90b4b0373382d4a8",
+        "funding_insight_id": "FI-2a9605a795392571",
+        "event_ids": [
+          "EV-69273189e74d62e5"
+        ],
+        "company_entity_id": "EN-fc67129ea8fe8366",
+        "company_canonical_entity_id": "",
+        "company_name": "TypeSafe AI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "约 8.7 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 870000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 8.7 亿美元"
+        },
+        "announced_at": "2026-10-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0e76615878e34cb3",
+            "source_url": "https://www.unite.ai/typesafe-ai-raises-870m-series-a-at-7-5b-valuation-to-ship-more-ai-models/",
+            "source_title": "TypeSafe AI Raises $870M Series A at $7.5B Valuation to Ship More AI Models",
+            "source_content_hash": "b3fc50f20c3de21a",
+            "quote": "led by Andreessen Horowitz with participation from Sequoia Capital, existing investor DCVC, and angel investors",
+            "quote_hash": "f8c045b1839f2afe575ab4cf049201f43f5140328b8ba09d001b7fb3861ff105"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a02a1b35ec0b8772",
         "funding_insight_id": "FI-316cf5aec37590a1",
@@ -1769,6 +1814,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0e76615878e34cb3",
+        "source_url": "https://www.unite.ai/typesafe-ai-raises-870m-series-a-at-7-5b-valuation-to-ship-more-ai-models/",
+        "source_title": "TypeSafe AI Raises $870M Series A at $7.5B Valuation to Ship More AI Models",
+        "source_content_hash": "b3fc50f20c3de21a",
+        "quote": "led by Andreessen Horowitz with participation from Sequoia Capital, existing investor DCVC, and angel investors",
+        "quote_hash": "f8c045b1839f2afe575ab4cf049201f43f5140328b8ba09d001b7fb3861ff105"
+      },
+      {
         "source_id": "FISRC-576f8703e59d7c0a",
         "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
         "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
@@ -2148,6 +2201,10 @@
           "source_id": "sequoia_history"
         },
         {
+          "description": "融资来源记录：TypeSafe AI · A轮 · 2026-10-10 · 本轮参投 · 约 8.7 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0e76615878e34cb3"
+        },
+        {
           "description": "融资来源记录：Healthleap · 多轮融资 · 2026-10-07 · 本轮联合领投 · $38 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-576f8703e59d7c0a"
         },
@@ -2183,6 +2240,14 @@
           "quote_hash": "4a2f68c042b10690a950656cdd8c8d78ddbacadab8cdf2e8a4566b83347cc5ac"
         },
         {
+          "source_id": "FISRC-0e76615878e34cb3",
+          "source_url": "https://www.unite.ai/typesafe-ai-raises-870m-series-a-at-7-5b-valuation-to-ship-more-ai-models/",
+          "source_title": "TypeSafe AI Raises $870M Series A at $7.5B Valuation to Ship More AI Models",
+          "source_content_hash": "b3fc50f20c3de21a",
+          "quote": "led by Andreessen Horowitz with participation from Sequoia Capital, existing investor DCVC, and angel investors",
+          "quote_hash": "f8c045b1839f2afe575ab4cf049201f43f5140328b8ba09d001b7fb3861ff105"
+        },
+        {
           "source_id": "FISRC-576f8703e59d7c0a",
           "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
           "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
@@ -2197,14 +2262,6 @@
           "source_content_hash": "0528dfbe7386cdee",
           "quote": "Sequoia Capital, which led Flow’s Series A round last October, also participated",
           "quote_hash": "e85ce740033a7b86194ab9b2dc5ae4dfa9bc0a3c9888c2b3a10b46363eae4b58"
-        },
-        {
-          "source_id": "FISRC-3511f7baf76701e3",
-          "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
-          "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
-          "source_content_hash": "1ada124c6217cee1",
-          "quote": "Sequoia Capital, which led Flow’s Series A, also participated in the round",
-          "quote_hash": "0eec9ca585ab321813af43334d68eec488a093abc6d9d5d2757c49b54e698eaf"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2215,7 +2272,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[28].role": {
+        "activities[29].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2223,7 +2280,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[30].role": {
+        "activities[31].role": {
           "text": "Series D 领投",
           "source_hash": "b1ad54c261addee1c044320cc302024b488ee22b0810e11ab5f9b281dda6d2b7",
           "provider": "deepseek",
@@ -2231,7 +2288,7 @@
           "translated_at": "2026-10-03T00:37:44.351Z",
           "status": "translated"
         },
-        "activities[32].role": {
+        "activities[33].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
@@ -2239,7 +2296,7 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[34].role": {
+        "activities[35].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

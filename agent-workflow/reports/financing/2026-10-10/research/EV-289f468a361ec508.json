@@ -1,0 +1,745 @@
+{
+  "event_id": "EV-289f468a361ec508",
+  "company_name": "OpenAI",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-1c595af4b4025c7b",
+    "triggered_by_event_id": "EV-289f468a361ec508",
+    "as_of_date": "2026-10-10",
+    "company": {
+      "entity_id": "EN-7d3194f79e645c42",
+      "name": "OpenAI",
+      "full_name": "OpenAI",
+      "website": "",
+      "summary": "OpenAI 是一家开发 ChatGPT、GPT 系列模型及 Codex 编程助手的人工智能公司，当前正就至少 300 亿美元新资本进行谈判，目标投前估值 1.4 万亿美元。",
+      "headquarters": "",
+      "founders": [],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9bee21a644ee1802",
+          "quote": "OpenAI revenue keeps surging as company seeks $30 billion in fresh capital",
+          "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+          "quote_hash": "29ed7dcf7f647bd083dc2d446b38a2899232070a29590701f8cbf13e53b003e0"
+        },
+        {
+          "source_id": "FISRC-1a71f02a36c56794",
+          "quote": "OpenAI investors have approached the company about a new funding round",
+          "source_content_hash": "70251572a68ca5d3",
+          "quote_hash": "80453e0a44f88f9c6340a83982e2aed3b253aba8806546253df99f21443a7148"
+        }
+      ],
+      "application_entity_id": "EN-7d3194f79e645c42",
+      "canonical_entity_consistent": true
+    },
+    "financing": {
+      "round": "其他融资",
+      "amount": "$122 billion",
+      "total_raised": "约 1800-1900 亿美元（截至 2026 年 3 月）",
+      "announced_at": "2026-10-09",
+      "investor_disclosure_status": "not_disclosed",
+      "investors": [],
+      "other_round_investors": [
+        {
+          "name": "Amazon",
+          "role": "2026 年 3 月轮次参投，承诺 500 亿美元",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e83dc29afc39fd",
+              "quote": "Amazon committed $50 billion (structured as $15 billion funded at close plus $35 billion contingent on OpenAI achieving AGI or completing an IPO)",
+              "source_content_hash": "57f300b822a08037",
+              "quote_hash": "7961087c9e493324728232d1e21da1793afb5636a400a8410319c28adeaed4c8"
+            }
+          ],
+          "entity_id": "EN-cbc62794911ff31b"
+        },
+        {
+          "name": "SoftBank",
+          "role": "2026 年 3 月轮次参投，300 亿美元",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e83dc29afc39fd",
+              "quote": "SoftBank $30 billion, Nvidia $30 billion",
+              "source_content_hash": "57f300b822a08037",
+              "quote_hash": "4f3a214de32177eb170ac3b3d5062ae80de48bd74b37f627747eea17ba23ab71"
+            }
+          ],
+          "entity_id": "EN-80d387ccb3289295"
+        },
+        {
+          "name": "Nvidia",
+          "role": "2026 年 3 月轮次参投，300 亿美元",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e83dc29afc39fd",
+              "quote": "SoftBank $30 billion, Nvidia $30 billion",
+              "source_content_hash": "57f300b822a08037",
+              "quote_hash": "4f3a214de32177eb170ac3b3d5062ae80de48bd74b37f627747eea17ba23ab71"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        },
+        {
+          "name": "Microsoft",
+          "role": "历史轮次投资方，累计超 130 亿美元",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e83dc29afc39fd",
+              "quote": "Microsoft invested over $13 billion in OpenAI across multiple tranches between 2019 and 2023",
+              "source_content_hash": "57f300b822a08037",
+              "quote_hash": "785bfdacad6d48ebd5e2f529a90d8dbf3c9e4cebbacccda1c7d8413ecc390742"
+            }
+          ],
+          "entity_id": "EN-9fbf261b62c1d7c0"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9bee21a644ee1802",
+          "quote": "The company is negotiating at least $30 billion in new capital at a target pre-money valuation of $1.4 trillion.",
+          "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+          "quote_hash": "3cc5ff740b5dec67dd085512db11479ec7d44f9e3a44d05c765a870de5422a66"
+        },
+        {
+          "source_id": "FISRC-9bee21a644ee1802",
+          "quote": "In March, OpenAI raised up to $122 billion at a post-money valuation of $852 billion.",
+          "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+          "quote_hash": "dacb0b3ae0b5053b96633c7a35b29108dd37eaa3cc4742698d2de65925020477"
+        }
+      ],
+      "round_code": "other",
+      "round_original": "新融资轮（谈判中）",
+      "amount_original": "$122 billion",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 122000000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "1220 亿美元"
+      },
+      "total_raised_original": "约 1800-1900 亿美元（截至 2026 年 3 月）",
+      "total_raised_normalized": {
+        "currency": "USD",
+        "value": 190000000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "approximate",
+        "display_zh": "约 1900 亿美元"
+      },
+      "risk_markers": [
+        "investors_missing"
+      ],
+      "disclosures": [
+        {
+          "event_id": "EV-289f468a361ec508",
+          "round_original": "新融资轮（谈判中）",
+          "amount": "$122 billion",
+          "announced_at": "2026-10-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9bee21a644ee1802",
+              "quote": "The company is negotiating at least $30 billion in new capital at a target pre-money valuation of $1.4 trillion.",
+              "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+              "quote_hash": "3cc5ff740b5dec67dd085512db11479ec7d44f9e3a44d05c765a870de5422a66"
+            },
+            {
+              "source_id": "FISRC-9bee21a644ee1802",
+              "quote": "In March, OpenAI raised up to $122 billion at a post-money valuation of $852 billion.",
+              "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+              "quote_hash": "dacb0b3ae0b5053b96633c7a35b29108dd37eaa3cc4742698d2de65925020477"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "partially_disclosed"
+    },
+    "products": [
+      {
+        "name": "ChatGPT",
+        "description": "面向消费者的 AI 聊天助手，每周触达 12 亿人。",
+        "target_customers": "消费者、企业用户",
+        "features": [
+          "每周 12 亿用户",
+          "支持免费与付费订阅"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "ChatGPT now reaches 1.2 billion people every week, OpenAI says",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "643767093ddc3a79b441e59a354ac87b535490a7c604c373b928aa83806f9d05"
+          }
+        ],
+        "entity_id": "EN-d1ad14d4ad57d207"
+      },
+      {
+        "name": "ChatGPT Work 与 Codex",
+        "description": "面向企业工作流与编程场景的 AI 产品，每周合计超过 3500 万用户。",
+        "target_customers": "企业用户、开发者",
+        "features": [
+          "每周超 3500 万用户",
+          "Codex 编程助手快速增长"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "over 35 million weekly ChatGPT Work and Codex users",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "a16c51a85a0d1850434329130079ec815f60d8e7d8322670ef1ef01a7d41168e"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "GPT-6.1-Sol",
+        "description": "新发布的模型，用于应对 Claude 及中国模型的竞争。",
+        "target_customers": "开发者、企业",
+        "features": [
+          "价格竞争策略"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "a strategy the company doubled down on with the just-launched GPT-6.1-Sol",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "9eeb423f7305df869e75c63966c4afe1918cec8c542a3830249868e566519cd6"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "BBVA",
+        "industry": "financial_services",
+        "use_case": "员工每周节省约 3 小时",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-dccf41fb0dfe1d3b",
+            "quote": "BBVA saves ~3 hours per employee per week with OpenAI",
+            "source_content_hash": "9028297120d4b421",
+            "quote_hash": "1f29332d6719ae8d42af76211650917653f8eec0cd76429c2053c58097fa591e"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Morgan Stanley",
+        "industry": "financial_services",
+        "use_case": "财富管理部门部署 GPT-4 整理知识库",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-dccf41fb0dfe1d3b",
+            "quote": "Morgan Stanley wealth management deploys GPT-4 to organize its vast knowledge base",
+            "source_content_hash": "9028297120d4b421",
+            "quote_hash": "d573fc23beac5c77063ae4ecb7143dca69974bd9d32664aabeb4853680d6c858"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [
+      {
+        "name": "Anthropic",
+        "product": "Claude 系列模型、Claude Code 编程代理",
+        "scenario": "企业级 AI 工作负载与编程代理",
+        "target_customer": "企业客户，包括财富十强中的九家",
+        "funding_summary": "2026 年 5 月完成 650 亿美元 H 轮，投后估值 9650 亿美元",
+        "core_difference": "Anthropic 通过云合作伙伴销售时按客户全额付款确认收入，再将云厂商分成记为费用；OpenAI 对部分合作交易仅计入自身分成。Anthropic 强调 AI 安全研究投入，并称已向财富十强中的九家销售。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "Anthropic records the full customer payment when selling through cloud partners, then logs the cloud provider's cut as an expense. OpenAI only counts its own share as revenue for certain partner deals.",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "7665566a198178ac85514b387b0fb87f86f4cc70c8a129f730f0627a712f1dab"
+          },
+          {
+            "source_id": "FISRC-7d723203ed0fadbf",
+            "quote": "We now sell to nine of the Fortune 10.",
+            "source_content_hash": "72b72533ef1cdc8d",
+            "quote_hash": "2d5a80b5908310eb80b234fcbfcf670af6e09a362f61483f1514e9c5ca6593f7"
+          }
+        ],
+        "entity_id": "EN-c70eca6b0f88f44d"
+      }
+    ],
+    "metrics": [
+      {
+        "label": "年化收入（2026 年 9 月底）",
+        "value": "约 500 亿美元",
+        "observed_at": "2026-09-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "OpenAI's annualized revenue rate stood at roughly $50 billion at the end of September",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "4ee69872b5adbfe4e556948289692340ad4b026c158ea07f4750a6aa56636d19"
+          }
+        ]
+      },
+      {
+        "label": "2026 年底预期年化收入",
+        "value": "至少 700 亿美元",
+        "observed_at": "2026-10-09",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "OpenAI expects to actually hit an annualized revenue rate of at least $70 billion by the end of 2026",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "29f395398c3a7c40818277f0746b8c9773475a5fee32a1f23ebdeb716ff743ee"
+          }
+        ]
+      },
+      {
+        "label": "第三季度整体年化收入增长",
+        "value": "77%",
+        "observed_at": "2026-10-09",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "overall annualized revenue growing 77 percent in the third quarter",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "0a342bab19f5c14228b11db494fb9d50d8925aa73df8e792036156fb9b44c9e2"
+          }
+        ]
+      },
+      {
+        "label": "第三季度企业收入增长",
+        "value": "107%",
+        "observed_at": "2026-10-09",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "enterprise revenue jumping 107 percent",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "bf429c0e8a6275ce82d5ae5f7ae4713b0c6c9ba731c19c08841a68587f35515d"
+          }
+        ]
+      },
+      {
+        "label": "每周 ChatGPT 用户",
+        "value": "12 亿",
+        "observed_at": "2026-09-29",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "more than 1.2 billion weekly ChatGPT users",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "d3495b1f3fbb70cea18fdb65e6569d03b7714e2242f7f650ffd32d1c792c2edf"
+          }
+        ]
+      },
+      {
+        "label": "每周 ChatGPT Work 与 Codex 用户",
+        "value": "超 3500 万",
+        "observed_at": "2026-09-29",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "over 35 million weekly ChatGPT Work and Codex users",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "a16c51a85a0d1850434329130079ec815f60d8e7d8322670ef1ef01a7d41168e"
+          }
+        ]
+      },
+      {
+        "label": "使用 OpenAI 产品的企业数",
+        "value": "250 万",
+        "observed_at": "2026-09-29",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "2.5 million businesses on OpenAI products",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "9ca2f811b6517296430269334be1ba25f3a62d87848161e796342e250a88dc7e"
+          }
+        ]
+      },
+      {
+        "label": "2026 年 3 月融资额与投后估值",
+        "value": "1220 亿美元 / 8520 亿美元",
+        "observed_at": "2026-03-31",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9bee21a644ee1802",
+            "quote": "In March, OpenAI raised up to $122 billion at a post-money valuation of $852 billion.",
+            "source_content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+            "quote_hash": "dacb0b3ae0b5053b96633c7a35b29108dd37eaa3cc4742698d2de65925020477"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Sarah Friar",
+        "quote": "We still have an incredible balance sheet",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1a71f02a36c56794",
+            "quote": "We still have an incredible balance sheet",
+            "source_content_hash": "70251572a68ca5d3",
+            "quote_hash": "b493e1db4b034003560d9e4ab22aa8338ac01cce5d720998588ab82250591111"
+          }
+        ]
+      },
+      {
+        "speaker": "Sarah Friar",
+        "quote": "will be a public company in 2027",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1a71f02a36c56794",
+            "quote": "will be a public company in 2027",
+            "source_content_hash": "70251572a68ca5d3",
+            "quote_hash": "b0b5e76bebffba783239bda0f6264392e918f8219a79d31f0328b930856feb4b"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "资本押注的核心变量是 OpenAI 能否在算力建设承诺持续膨胀的同时，让收入增长跟上支出节奏。当前已验证信号包括：2026 年 9 月底年化收入约 500 亿美元，第三季度整体年化收入增长 77%、企业收入增长 107%，每周 ChatGPT 用户 12 亿、企业客户 250 万。本轮融资仍处谈判阶段，至少 300 亿美元、目标投前估值 1.4 万亿美元均来自媒体报道，尚无投资方公开确认参与，因此资本判断的证据边界限于收入增速与用户规模，估值与融资落地仍待验证。",
+      "validated_signals": [
+        "2026 年 9 月底年化收入约 500 亿美元",
+        "第三季度整体年化收入增长 77%",
+        "第三季度企业收入增长 107%",
+        "每周 ChatGPT 用户 12 亿",
+        "每周 ChatGPT Work 与 Codex 用户超 3500 万",
+        "使用 OpenAI 产品的企业达 250 万家"
+      ],
+      "risks": [
+        "本轮至少 300 亿美元融资与 1.4 万亿美元投前估值仍处谈判阶段，来源为媒体报道，尚无投资方公开确认",
+        "收入能否覆盖大规模数据中心建设支出尚待验证",
+        "OpenAI 与 Anthropic 的收入确认口径差异影响可比性，可能造成市场对收入规模的误读",
+        "AI 泡沫争论与芯片股波动反映市场对 AI 公司收入增速能否匹配算力投入的担忧",
+        "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "model_api_service",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "developer",
+        "business_user"
+      ],
+      "sector": "基础模型与 AI 平台",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是 OpenAI 能否在算力建设承诺持续膨胀的同时，让收入增长跟上支出节奏。当前已验证信号包括：2026 年 9 月底年化收入约 500 亿美元，第三季度整体年化收入增长 77%、企业收入增长 107%，每周 ChatGPT 用户 12 亿、企业客户 250 万。本轮融资仍处谈判阶段，至少 300 亿美元、目标投前估值 1.4 万亿美元均来自媒体报道，尚无投资方公开确认参与，因此资本判断的证据边界限于收入增速与用户规模，估值与融资落地仍待验证。",
+        "evidence_signals": [
+          "2026 年 9 月底年化收入约 500 亿美元",
+          "第三季度整体年化收入增长 77%",
+          "第三季度企业收入增长 107%",
+          "每周 ChatGPT 用户 12 亿",
+          "每周 ChatGPT Work 与 Codex 用户超 3500 万",
+          "使用 OpenAI 产品的企业达 250 万家"
+        ],
+        "risks": [
+          "本轮至少 300 亿美元融资与 1.4 万亿美元投前估值仍处谈判阶段，来源为媒体报道，尚无投资方公开确认",
+          "收入能否覆盖大规模数据中心建设支出尚待验证",
+          "OpenAI 与 Anthropic 的收入确认口径差异影响可比性，可能造成市场对收入规模的误读",
+          "AI 泡沫争论与芯片股波动反映市场对 AI 公司收入增速能否匹配算力投入的担忧"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "ChatGPT",
+        "canonical_entity_id": "EN-d1ad14d4ad57d207",
+        "canonical_name": "ChatGPT"
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "ChatGPT Work 与 Codex",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "GPT-6.1-Sol",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Amazon",
+        "canonical_entity_id": "EN-cbc62794911ff31b",
+        "canonical_name": "Amazon"
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "SoftBank",
+        "canonical_entity_id": "EN-80d387ccb3289295",
+        "canonical_name": "SoftBank"
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Nvidia",
+        "canonical_entity_id": "EN-8d4321d936320802",
+        "canonical_name": "NVIDIA"
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Microsoft",
+        "canonical_entity_id": "EN-9fbf261b62c1d7c0",
+        "canonical_name": "Microsoft"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "BBVA",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Morgan Stanley",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "Anthropic",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_name": "Anthropic"
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-289f468a361ec508",
+        "date": "2026-10-09",
+        "title": "OpenAI 收入持续飙升，公司寻求 300 亿美元新资本",
+        "amount": "$122 billion",
+        "source_refs": [
+          "SA-353e9c8dd8ef3263"
+        ]
+      },
+      {
+        "event_id": "EV-c387c9717ee19670",
+        "date": "2026-04-01",
+        "title": "创纪录！OpenAI完成1220亿美元融资投后估值达8520亿美元",
+        "amount": "1220亿美元",
+        "source_refs": [
+          "SA-b3e42ad16d52c7fe"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-9bee21a644ee1802",
+        "source_url": "https://the-decoder.com/openai-revenue-keeps-surging-as-company-seeks-30-billion-in-fresh-capital/",
+        "title": "OpenAI 收入持续飙升，公司寻求 300 亿美元新资本",
+        "publisher": "the-decoder.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-10T00:22:46.018Z",
+        "content_hash": "8cdf48ebb99dcd2bbccebef39966407f7b21958efd924263cb9cf17a25571e06",
+        "source_artifact_id": "SA-353e9c8dd8ef3263",
+        "raw_id": "RAW-0432e4da18029fd3"
+      },
+      {
+        "source_id": "FISRC-1a71f02a36c56794",
+        "source_url": "https://www.cnbc.com/2026/09/16/open-ai-investors-new-funding-round.html",
+        "title": "OpenAI investors have approached the company about a new funding round",
+        "publisher": "cnbc.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-09T01:22:43.063Z",
+        "content_hash": "70251572a68ca5d3",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-85e83dc29afc39fd",
+        "source_url": "https://pinggy.io/blog/openai_anthropic_funding_history/",
+        "title": "Racing to a Trillion: OpenAI and Anthropic's Funding History",
+        "publisher": "pinggy.io",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-09T01:22:43.589Z",
+        "content_hash": "57f300b822a08037",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-dccf41fb0dfe1d3b",
+        "source_url": "https://www.featuredcustomers.com/vendor/openai/case-studies",
+        "title": "41 OpenAI Case Studies, Success Stories, & Customer Stories",
+        "publisher": "featuredcustomers.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-10T01:00:35.275Z",
+        "content_hash": "9028297120d4b421",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-7d723203ed0fadbf",
+        "source_url": "https://x.com/InvestLikeBest/status/2054619183552381254",
+        "title": "Invest Like the Best (@InvestLikeBest) on X",
+        "publisher": "x.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-09T01:22:52.388Z",
+        "content_hash": "72b72533ef1cdc8d",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-10T01:00:47.355Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-10T01:00:47.355Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 2,
+      "searched_source_count": 5
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 1,
+        "total": 3,
+        "unresolved_names": [
+          "ChatGPT Work 与 Codex",
+          "GPT-6.1-Sol"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 0,
+        "unresolved_names": []
+      }
+    },
+    "source_event_ids": [
+      "EV-289f468a361ec508"
+    ],
+    "aggregation": {
+      "key": "EN-7d3194f79e645c42|other",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"OpenAI\" 2026 funding round investors",
+    "\"OpenAI\" official product customers",
+    "\"OpenAI\" \"why we invested\""
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"OpenAI\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://openai.com/index/accelerating-the-next-phase-ai/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://tracxn.com/d/companies/openai/__kElhSG7uVGeFk1i71Co9-nwFtmtyMVT7f-YHMn4TFBg/funding-and-investors",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.facebook.com/ArabianBusiness/posts/openai-is-reportedly-in-early-talks-with-investors-about-a-new-funding-round-tha/1616013229888109/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"OpenAI\" $122 billion funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"OpenAI\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://openai.com/business/customer-stories/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://ads.openai.com/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"OpenAI\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://hofcapital.substack.com/p/why-we-invested-in-anthropic",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"OpenAI\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"OpenAI\" founders headquarters product",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}

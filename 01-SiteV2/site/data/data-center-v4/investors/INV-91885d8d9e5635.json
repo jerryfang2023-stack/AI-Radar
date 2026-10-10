@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,17 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-10-04",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 2,
       "participant": 6
     },
@@ -112,9 +113,54 @@
         "entity_id": "EN-8ab71d56a963f706",
         "canonical_entity_id": "",
         "name": "River AI"
+      },
+      {
+        "entity_id": "EN-5a36b0948fb336a7",
+        "canonical_entity_id": "",
+        "name": "Vinci"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a746861f1cab7a10",
+        "funding_insight_id": "FI-18e35dfffb4a703f",
+        "event_ids": [
+          "EV-03401b3c382e1088"
+        ],
+        "company_entity_id": "EN-5a36b0948fb336a7",
+        "company_canonical_entity_id": "",
+        "company_name": "Vinci",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf38198e12772dce",
+            "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+            "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+            "source_content_hash": "d0ea59cc1ed354cf",
+            "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+            "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e01caeb739cd7d3d",
         "funding_insight_id": "FI-8650a7a5be9be749",
@@ -430,6 +476,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cf38198e12772dce",
+        "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+        "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+        "source_content_hash": "d0ea59cc1ed354cf",
+        "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+        "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
+      },
+      {
         "source_id": "FISRC-82c9573ed9c6ba66",
         "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
         "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
@@ -527,6 +581,10 @@
           "source_id": "FISRC-b5e22ae086a6b353"
         },
         {
+          "description": "融资来源记录：Vinci · B轮 · 2026-10-06 · 本轮联合领投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf38198e12772dce"
+        },
+        {
           "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮参投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-82c9573ed9c6ba66"
         },
@@ -560,6 +618,14 @@
           "source_content_hash": "1c60949828cd57caec81a13a59818ad30a8db0b20863d02109f86d0987f88790",
           "quote": "Our GDIs primarily comprise public and private equity investments in emerging and established market leaders.",
           "quote_hash": "36002b6a139544b0d66f707c48031e47308df8f2ffb4e9b5926112e4ad2b770e"
+        },
+        {
+          "source_id": "FISRC-cf38198e12772dce",
+          "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+          "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+          "source_content_hash": "d0ea59cc1ed354cf",
+          "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+          "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
         },
         {
           "source_id": "FISRC-82c9573ed9c6ba66",
