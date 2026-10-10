@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,20 +64,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 35,
+    "current_round_count": 36,
     "historical_or_ambiguous_count": 9,
-    "portfolio_company_count": 31,
+    "portfolio_company_count": 32,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-10-10",
     "role_counts": {
       "co_lead": 6,
       "historical_or_ambiguous": 9,
-      "lead": 19,
+      "lead": 20,
       "participant": 10
     },
     "round_codes": [
@@ -230,6 +230,11 @@
         "name": "Town"
       },
       {
+        "entity_id": "EN-fc67129ea8fe8366",
+        "canonical_entity_id": "",
+        "name": "TypeSafe AI"
+      },
+      {
         "entity_id": "EN-aab373badaa83178",
         "canonical_entity_id": "",
         "name": "Valon Technologies"
@@ -251,6 +256,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-60d09fa7f7a85cad",
+        "funding_insight_id": "FI-2a9605a795392571",
+        "event_ids": [
+          "EV-69273189e74d62e5"
+        ],
+        "company_entity_id": "EN-fc67129ea8fe8366",
+        "company_canonical_entity_id": "",
+        "company_name": "TypeSafe AI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "约 8.7 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 870000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 8.7 亿美元"
+        },
+        "announced_at": "2026-10-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-af1e114c3c632c53",
+            "source_url": "https://www.ithome.com/1/011/170.htm",
+            "source_title": "决策模型 Jev 爆火，开发商 TypeSafe AI 估值已达 75 亿美元",
+            "source_content_hash": "d021bd27d3ade0c5a8c1183e71081fb8f04464b1fe06b0a5153ac46f44779e74",
+            "quote": "由安德里森 · 霍洛维兹（Andreessen Horowitz、a16z）领投",
+            "quote_hash": "2d76b05f646e45334c6bb939f75e8d81b30ce41c7e5310a777838480ee280dec"
+          }
+        ]
+      },
       {
         "activity_id": "IA-953f703e7b6a9c95",
         "funding_insight_id": "FI-de00acfd7c8d76c8",
@@ -2005,6 +2050,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-af1e114c3c632c53",
+        "source_url": "https://www.ithome.com/1/011/170.htm",
+        "source_title": "决策模型 Jev 爆火，开发商 TypeSafe AI 估值已达 75 亿美元",
+        "source_content_hash": "d021bd27d3ade0c5a8c1183e71081fb8f04464b1fe06b0a5153ac46f44779e74",
+        "quote": "由安德里森 · 霍洛维兹（Andreessen Horowitz、a16z）领投",
+        "quote_hash": "2d76b05f646e45334c6bb939f75e8d81b30ce41c7e5310a777838480ee280dec"
+      },
+      {
         "source_id": "FISRC-99134731fc9bfd4f",
         "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
         "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
@@ -2462,16 +2515,16 @@
           "source_id": "a16z_about"
         },
         {
+          "description": "融资来源记录：TypeSafe AI · A轮 · 2026-10-10 · 本轮领投 · 约 8.7 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-af1e114c3c632c53"
+        },
+        {
           "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-99134731fc9bfd4f"
         },
         {
           "description": "融资来源记录：Vesta · B轮 · 2026-10-08 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2da938bd0c484285"
-        },
-        {
-          "description": "融资来源记录：Stuut · B轮 · 2026-10-07 · 本轮参投 · $52.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9c9f77e874c57759"
         }
       ],
       "contacts": [
@@ -2579,6 +2632,14 @@
           "quote_hash": "e99e0a75d100056586e1a241fc521ff6d9da626d9a7fcf9ab6dd36440c63b9bb"
         },
         {
+          "source_id": "FISRC-af1e114c3c632c53",
+          "source_url": "https://www.ithome.com/1/011/170.htm",
+          "source_title": "决策模型 Jev 爆火，开发商 TypeSafe AI 估值已达 75 亿美元",
+          "source_content_hash": "d021bd27d3ade0c5a8c1183e71081fb8f04464b1fe06b0a5153ac46f44779e74",
+          "quote": "由安德里森 · 霍洛维兹（Andreessen Horowitz、a16z）领投",
+          "quote_hash": "2d76b05f646e45334c6bb939f75e8d81b30ce41c7e5310a777838480ee280dec"
+        },
+        {
           "source_id": "FISRC-99134731fc9bfd4f",
           "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
           "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
@@ -2593,14 +2654,6 @@
           "source_content_hash": "c935d8a10ccfb9348f4edb761e0b80924c32258aefce1b9c16f2b7a593ca5451",
           "quote": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz.",
           "quote_hash": "a52e2cb9c150a96a6ba5fed53c3ba840358e1b449a0fd0c772b91113e1f1a553"
-        },
-        {
-          "source_id": "FISRC-9c9f77e874c57759",
-          "source_url": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/",
-          "source_title": "Stuut 获得 $52.5M B 轮融资，以扩展 AI 代理在订单到收款全流程中的应用",
-          "source_content_hash": "4ff3dbe1ae5212cf86039961b0b8e2a6f259638653498858d69b63347f6abf84",
-          "quote": "由 Insight Partners领投，Andreessen Horowitz和 M12, Microsoft’s venture fund参与",
-          "quote_hash": "fb46dc0e438886ce5cc7dc6882637edf42f3bd109d1c5a4b4c59abc938797880"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2611,7 +2664,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[34].role": {
+        "activities[35].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2619,7 +2672,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[37].role": {
+        "activities[38].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

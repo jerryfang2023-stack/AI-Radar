@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,9 +64,10 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 8,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 5,
     "market_regions": [
+      "CN",
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
@@ -75,7 +76,7 @@
     "latest_disclosed_at": "2026-09-28",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 1,
       "participant": 5
     },
@@ -504,6 +505,38 @@
             "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
           }
         ]
+      },
+      {
+        "activity_id": "IA-feb6384faf4a5a17",
+        "funding_insight_id": "FI-7901905738df2a10",
+        "event_ids": [
+          "EV-03a5e703deae837f"
+        ],
+        "company_entity_id": "EN-7cdbc9084feb6ac0",
+        "company_canonical_entity_id": "",
+        "company_name": "Manus",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-213ad9334b9553c2",
+            "source_url": "https://tracxn.com/d/companies/manus/__65etXlb4ZiESp8cldWogBwWkBwh7VyRNj3yXQFKBEXs",
+            "source_title": "Manus",
+            "source_content_hash": "d3b861c9a735e11b",
+            "quote": "Manus has raised $575M in funding from investors like Benchmark, Zhen Fund and Tencent.",
+            "quote_hash": "50d8ab564eba2c3cd5de69daa5c025fabb6a5ba1171551ce1fc9725d02463a76"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -586,6 +619,14 @@
         "source_content_hash": "0d2ee7135192d938",
         "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
         "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
+      },
+      {
+        "source_id": "FISRC-213ad9334b9553c2",
+        "source_url": "https://tracxn.com/d/companies/manus/__65etXlb4ZiESp8cldWogBwWkBwh7VyRNj3yXQFKBEXs",
+        "source_title": "Manus",
+        "source_content_hash": "d3b861c9a735e11b",
+        "quote": "Manus has raised $575M in funding from investors like Benchmark, Zhen Fund and Tencent.",
+        "quote_hash": "50d8ab564eba2c3cd5de69daa5c025fabb6a5ba1171551ce1fc9725d02463a76"
       }
     ],
     "public_profile": {

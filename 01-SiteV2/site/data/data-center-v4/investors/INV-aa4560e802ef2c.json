@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,38 +54,87 @@
   },
   "institution": {
     "id": "INV-aa4560e802ef2c",
-    "name": "IDG资本 (IDG Capital)",
-    "aliases": [],
+    "name": "IDG资本(IDG Capital)",
+    "aliases": [
+      "IDG资本 (IDG Capital)"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2025-01",
-    "latest_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "first_external"
+      "first_external",
+      "series_c"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-6f7ac1823da81d2e",
         "canonical_entity_id": "EN-6f7ac1823da81d2e",
         "name": "DeepSeek"
+      },
+      {
+        "entity_id": "EN-7cdbc9084feb6ac0",
+        "canonical_entity_id": "",
+        "name": "Manus"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-70378772f5e0db95",
+        "funding_insight_id": "FI-7901905738df2a10",
+        "event_ids": [
+          "EV-03a5e703deae837f"
+        ],
+        "company_entity_id": "EN-7cdbc9084feb6ac0",
+        "company_canonical_entity_id": "",
+        "company_name": "Manus",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "超过5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": 500000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c8f60a62d027b2",
+            "source_url": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "Manus获超5亿美元融资 AI Agent赛道再升温",
+            "source_content_hash": "0d6ede55331834420c042002e6e44e670ecb79b00e5ff2a74cb4656e499305eb",
+            "quote": "本轮融资由博裕资本（Boyu Capital）和IDG资本（IDG Capital）领投",
+            "quote_hash": "5cd19952046f21ec84455ef3b5a429006f133aa16cedf06f735af6d0da6defdf"
+          }
+        ]
+      },
       {
         "activity_id": "IA-569b705def9694cf",
         "funding_insight_id": "FI-71c58a10a93101c8",
@@ -170,6 +219,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4c8f60a62d027b2",
+        "source_url": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "Manus获超5亿美元融资 AI Agent赛道再升温",
+        "source_content_hash": "0d6ede55331834420c042002e6e44e670ecb79b00e5ff2a74cb4656e499305eb",
+        "quote": "本轮融资由博裕资本（Boyu Capital）和IDG资本（IDG Capital）领投",
+        "quote_hash": "5cd19952046f21ec84455ef3b5a429006f133aa16cedf06f735af6d0da6defdf"
+      },
+      {
         "source_id": "FISRC-6f84e84fa4821cb0",
         "source_url": "https://www.gadgetscout.co.uk/articles/deepseek-valued-at-52bn-after-first-external-funding-round.html",
         "source_title": "DeepSeek Valued at $52bn After First External Funding Round - Gadget Scout",
@@ -235,6 +292,10 @@
           "source_id": "idg_official_home_202609"
         },
         {
+          "description": "融资来源记录：Manus · C轮 · 2026-10-08 · 本轮领投 · 超过5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c8f60a62d027b2"
+        },
+        {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6f84e84fa4821cb0"
         },
@@ -280,6 +341,14 @@
           "source_content_hash": "92334283d1c0f5c85e537c030a4e63e6c0e466477aceb0504bc02163f2e1429c",
           "quote": "IDG Capital官网公布商务合作邮箱cooperation@idgcapital.com、香港办公地址与电话，并声明官方信息只通过其官网发布，以防仿冒。",
           "quote_hash": "2d5c4dd8f7c70d021a1f6d6b0631257766dfa64f2db93a61e4bae42e3843e838"
+        },
+        {
+          "source_id": "FISRC-c4c8f60a62d027b2",
+          "source_url": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "Manus获超5亿美元融资 AI Agent赛道再升温",
+          "source_content_hash": "0d6ede55331834420c042002e6e44e670ecb79b00e5ff2a74cb4656e499305eb",
+          "quote": "本轮融资由博裕资本（Boyu Capital）和IDG资本（IDG Capital）领投",
+          "quote_hash": "5cd19952046f21ec84455ef3b5a429006f133aa16cedf06f735af6d0da6defdf"
         },
         {
           "source_id": "FISRC-6f84e84fa4821cb0",

@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-775ca2de5ffbbc",
+    "name": "Moonfire Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-10-09",
+    "latest_disclosed_at": "2026-10-09",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-bab553871438227c",
+        "canonical_entity_id": "",
+        "name": "Klarent"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-93a36531bc829d27",
+        "funding_insight_id": "FI-c97da1fb7bd4e19f",
+        "event_ids": [
+          "EV-f3ecff6963190b97"
+        ],
+        "company_entity_id": "EN-bab553871438227c",
+        "company_canonical_entity_id": "",
+        "company_name": "Klarent",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "€7.13 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 7130000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "713 万欧元"
+        },
+        "announced_at": "2026-10-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1f26571d6981733f",
+            "source_url": "https://www.eu-startups.com/2026/10/zurichs-klarent-raises-e7-13-million-to-scale-its-agentic-software-testing-platform-and-expand-into-the-us/",
+            "source_title": "苏黎世的Klarent融资713万欧元，以扩展其AI智能体软件测试平台并进军美国市场",
+            "source_content_hash": "7018e7f6eff743a6e2868eaef34ee07f4311388ca318103f18c602e78f804de0",
+            "quote": "The round was led by London-based Mosaic Ventures, with participation from Moonfire Ventures and a number of prominent angel investors, including Jürgen Galler, a former Director at Google, Harris Barton, and AngelInvest Ventures, among others.",
+            "quote_hash": "c969bdcb6d7632a9fdc37ba0325fbacddc88f22f2a5ad1b186dfd3629a11a561"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1f26571d6981733f",
+        "source_url": "https://www.eu-startups.com/2026/10/zurichs-klarent-raises-e7-13-million-to-scale-its-agentic-software-testing-platform-and-expand-into-the-us/",
+        "source_title": "苏黎世的Klarent融资713万欧元，以扩展其AI智能体软件测试平台并进军美国市场",
+        "source_content_hash": "7018e7f6eff743a6e2868eaef34ee07f4311388ca318103f18c602e78f804de0",
+        "quote": "The round was led by London-based Mosaic Ventures, with participation from Moonfire Ventures and a number of prominent angel investors, including Jürgen Galler, a former Director at Google, Harris Barton, and AngelInvest Ventures, among others.",
+        "quote_hash": "c969bdcb6d7632a9fdc37ba0325fbacddc88f22f2a5ad1b186dfd3629a11a561"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Moonfire Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Klarent · 种子轮 · 2026-10-09 · 本轮参投 · €7.13 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1f26571d6981733f"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-1f26571d6981733f",
+          "source_url": "https://www.eu-startups.com/2026/10/zurichs-klarent-raises-e7-13-million-to-scale-its-agentic-software-testing-platform-and-expand-into-the-us/",
+          "source_title": "苏黎世的Klarent融资713万欧元，以扩展其AI智能体软件测试平台并进军美国市场",
+          "source_content_hash": "7018e7f6eff743a6e2868eaef34ee07f4311388ca318103f18c602e78f804de0",
+          "quote": "The round was led by London-based Mosaic Ventures, with participation from Moonfire Ventures and a number of prominent angel investors, including Jürgen Galler, a former Director at Google, Harris Barton, and AngelInvest Ventures, among others.",
+          "quote_hash": "c969bdcb6d7632a9fdc37ba0325fbacddc88f22f2a5ad1b186dfd3629a11a561"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    }
+  }
+}

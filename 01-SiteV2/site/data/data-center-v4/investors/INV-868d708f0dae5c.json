@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,77 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-16",
-    "latest_disclosed_at": "2026-09-16",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
+      "co_lead": 1,
       "lead": 1
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-0cc3af265406c202",
         "canonical_entity_id": "",
         "name": "Hang Ten Systems"
+      },
+      {
+        "entity_id": "EN-5a36b0948fb336a7",
+        "canonical_entity_id": "",
+        "name": "Vinci"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-283ea6732e715825",
+        "funding_insight_id": "FI-18e35dfffb4a703f",
+        "event_ids": [
+          "EV-03401b3c382e1088"
+        ],
+        "company_entity_id": "EN-5a36b0948fb336a7",
+        "company_canonical_entity_id": "",
+        "company_name": "Vinci",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf38198e12772dce",
+            "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+            "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+            "source_content_hash": "d0ea59cc1ed354cf",
+            "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+            "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fc68a596ccd21400",
         "funding_insight_id": "FI-7c10ad3e094103e9",
@@ -128,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cf38198e12772dce",
+        "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+        "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+        "source_content_hash": "d0ea59cc1ed354cf",
+        "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+        "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
+      },
+      {
         "source_id": "FISRC-b861572f4d82c021",
         "source_url": "https://yourtechdiet.com/news/hang-ten-systems-raises-additional-53-million-led-by-xora-a-temasek-backed-fund-bringing-total-funding-to-85-million/",
         "source_title": "Hang Ten Systems Raises $53M in Second Seed Round",
@@ -161,6 +216,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Vinci · B轮 · 2026-10-06 · 本轮联合领投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf38198e12772dce"
+        },
+        {
           "description": "融资来源记录：Hang Ten Systems · 种子轮 · 2026-09-16 · 本轮领投 · $53M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b861572f4d82c021"
         }
@@ -190,6 +249,14 @@
           "source_content_hash": "20ae160af4b493e7cef158e8998fba3386882040db1f234b473991f161780987",
           "quote": "We often collaborate with founders before company formation, aligning on robust market theses and actively supporting the launch of high-velocity startups. We are equally comfortable leading Seed or Series A rounds.",
           "quote_hash": "297f58ead9df18a61a96f8539042ea64f9942471ddaa85affd3e855dbe36c7d1"
+        },
+        {
+          "source_id": "FISRC-cf38198e12772dce",
+          "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+          "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+          "source_content_hash": "d0ea59cc1ed354cf",
+          "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+          "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
         },
         {
           "source_id": "FISRC-b861572f4d82c021",

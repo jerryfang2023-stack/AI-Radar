@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -73,7 +73,7 @@
     "latest_disclosed_at": "2026-08-12",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 1
     },
     "round_codes": [
@@ -182,6 +182,38 @@
         ]
       },
       {
+        "activity_id": "IA-b4754e69ac570dde",
+        "funding_insight_id": "FI-b5ab66641aebf069",
+        "event_ids": [
+          "EV-289f468a361ec508"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2026 年 3 月轮次参投，300 亿美元",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-85e83dc29afc39fd",
+            "source_url": "https://pinggy.io/blog/openai_anthropic_funding_history/",
+            "source_title": "Racing to a Trillion: OpenAI and Anthropic's Funding History",
+            "source_content_hash": "57f300b822a08037",
+            "quote": "SoftBank $30 billion, Nvidia $30 billion",
+            "quote_hash": "4f3a214de32177eb170ac3b3d5062ae80de48bd74b37f627747eea17ba23ab71"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-3a55a86abedb4d03",
         "funding_insight_id": "FI-fbb8358f9cd7d1f6",
         "event_ids": [
@@ -238,6 +270,14 @@
         "source_content_hash": "4e51c91e5fc7160c",
         "quote": "SoftBank co-led alongside a16z, D. E. Shaw Ventures, MGX, TPG, and T. Rowe Price Associates.",
         "quote_hash": "eb1a353f262c6b5f36cf042c55381d3642167f0b24ec4185728cb1f48dbe89f2"
+      },
+      {
+        "source_id": "FISRC-85e83dc29afc39fd",
+        "source_url": "https://pinggy.io/blog/openai_anthropic_funding_history/",
+        "source_title": "Racing to a Trillion: OpenAI and Anthropic's Funding History",
+        "source_content_hash": "57f300b822a08037",
+        "quote": "SoftBank $30 billion, Nvidia $30 billion",
+        "quote_hash": "4f3a214de32177eb170ac3b3d5062ae80de48bd74b37f627747eea17ba23ab71"
       },
       {
         "source_id": "FISRC-1d97f99b2bf1db30",

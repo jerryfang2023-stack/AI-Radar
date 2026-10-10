@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,8 @@
     "typeLabel": "技术",
     "valueId": "agentic_execution",
     "eventIds": [
+      "EV-f3ecff6963190b97",
+      "EV-03a5e703deae837f",
       "EV-53d3d485f2b3d64e",
       "EV-55ed36eee8ffa4bd",
       "EV-60beaa2e14a34fc9",
@@ -720,6 +722,7 @@
       "EV-c17f5a364ed6a3ac"
     ],
     "entityIds": [
+      "EN-bab553871438227c",
       "EN-006e39f60f196420",
       "EN-804918e60b0894fa",
       "EN-9fbf261b62c1d7c0",
@@ -1194,8 +1197,196 @@
   },
   "events": [
     {
+      "id": "EV-f3ecff6963190b97",
+      "dataDate": "2026-10-10",
+      "date": "2026-10-09",
+      "updatedDate": "2026-10-09",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "苏黎世的Klarent融资713万欧元，以扩展其AI智能体软件测试平台并进军美国市场",
+      "originalTitle": "Zurich’s Klarent raises €7.13 million to scale its agentic software testing platform and expand into the US",
+      "subject": "Zurich’s Klarent",
+      "action": "raises",
+      "object": "€7.13 million to scale its agentic software testing platform and expand into the US",
+      "metrics": [
+        "€7.13 million",
+        "€4.29 million"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bab553871438227c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bab553871438227c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bab553871438227c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bab553871438227c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bab553871438227c"
+      ],
+      "entityNames": [
+        "Zurich’s Klarent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/zurichs-klarent-raises-e7-13-million-to-scale-its-agentic-software-testing-platform-and-expand-into-the-us/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-03a5e703deae837f",
+      "dataDate": "2026-10-10",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Manus获超5亿美元融资 AI Agent赛道再升温",
+      "originalTitle": "",
+      "subject": "Manus获超5亿美元",
+      "action": "融资",
+      "object": "AI Agent赛道再升温",
+      "metrics": [
+        "5亿",
+        "40亿"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7cdbc9084feb6ac0",
+        "EN-ea3bd73e2b506e00",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "Manus",
+        "Meta",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "publisher": "m.sohu.com"
+    },
+    {
       "id": "EV-53d3d485f2b3d64e",
-      "dataDate": "2026-10-09",
+      "dataDate": "2026-10-10",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -1374,7 +1565,7 @@
     },
     {
       "id": "EV-60beaa2e14a34fc9",
-      "dataDate": "2026-10-09",
+      "dataDate": "2026-10-10",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -1621,7 +1812,7 @@
     },
     {
       "id": "EV-52e472f000148362",
-      "dataDate": "2026-10-09",
+      "dataDate": "2026-10-10",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -1849,7 +2040,7 @@
     },
     {
       "id": "EV-af1a6d0b5da2d0e5",
-      "dataDate": "2026-10-09",
+      "dataDate": "2026-10-10",
       "date": "2026-10-05",
       "updatedDate": "2026-10-05",
       "eventType": "funding",
@@ -106646,6 +106837,27 @@
   ],
   "entities": [
     {
+      "id": "EN-bab553871438227c",
+      "name": "Zurich’s Klarent",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f3ecff6963190b97"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-10"
+    },
+    {
       "id": "EN-006e39f60f196420",
       "name": "Zach Yadegari",
       "entityType": "organization_candidate",
@@ -106665,7 +106877,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-804918e60b0894fa",
@@ -106687,7 +106899,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
@@ -106915,7 +107127,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-e66d5fd225ed6b0a",
@@ -106937,7 +107149,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-1e931b89bd9e0497",
@@ -106981,7 +107193,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-4d7594e57f7d03f3",
@@ -108209,7 +108421,7 @@
         "EN-a42d5d95234db6c4"
       ],
       "firstSeen": "2026-02-10",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-8526299f9ecc5fac",
@@ -111610,6 +111822,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c9309cdacfb47b4b",
         "EV-f98b84fe16d57b72"
       ],
       "viewpointIds": [],
@@ -111618,7 +111831,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-25",
-      "lastSeen": "2026-09-01"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-29b9f0cae32e7a8a",
@@ -111936,6 +112149,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-289f468a361ec508",
         "EV-2a554429da11d2b8",
         "EV-3a4ba26375b45669",
         "EV-fe7445d005172a39",
@@ -112559,7 +112773,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -112628,6 +112842,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-03a5e703deae837f",
         "EV-2cddd05c747f0ee7",
         "EV-622c77a021ef08de",
         "EV-bada0d929d2b70ac",
@@ -112718,7 +112933,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-d3565d297d476f10",
@@ -112867,6 +113082,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-03a5e703deae837f",
         "EV-622c77a021ef08de",
         "EV-7f89984c1b858df2",
         "EV-bd05f8cee4043426",
@@ -113041,7 +113257,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -113698,6 +113914,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-ab09da5ae7b87728",
         "EV-becc2b4b8329de4d",
         "EV-fe2971c25b8c72e2",
         "EV-2610d8aa3ff494b8",
@@ -113820,7 +114037,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -114438,6 +114655,7 @@
         "EV-0121f0a9e9a975ec",
         "EV-eda9fcba2f9fe358",
         "EV-3664fd6826c319bb",
+        "EV-94d9c9c5f225ccca",
         "EV-0990ee74c4bc9c1a",
         "EV-e9dedb02ac93d997",
         "EV-0044c8acb4733273",
@@ -114502,7 +114720,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-24",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-5e668f42eb6cf15d",
@@ -115149,7 +115367,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",

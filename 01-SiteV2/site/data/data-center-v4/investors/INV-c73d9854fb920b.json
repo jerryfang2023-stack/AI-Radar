@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,9 +54,9 @@
   },
   "institution": {
     "id": "INV-c73d9854fb920b",
-    "name": "NVIDIA",
+    "name": "Nvidia",
     "aliases": [
-      "Nvidia"
+      "NVIDIA"
     ],
     "canonical_entity_id": "EN-8d4321d936320802",
     "investor_kind": "corporate_investor",
@@ -64,7 +64,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 29,
-    "historical_or_ambiguous_count": 6,
+    "historical_or_ambiguous_count": 7,
     "portfolio_company_count": 25,
     "market_regions": [
       "GLOBAL"
@@ -74,7 +74,7 @@
     "first_disclosed_at": "2025-09-09",
     "latest_disclosed_at": "2026-10-05",
     "role_counts": {
-      "historical_or_ambiguous": 6,
+      "historical_or_ambiguous": 7,
       "lead": 3,
       "participant": 26
     },
@@ -1557,6 +1557,38 @@
         ]
       },
       {
+        "activity_id": "IA-53ab60e24b83a8d1",
+        "funding_insight_id": "FI-b5ab66641aebf069",
+        "event_ids": [
+          "EV-289f468a361ec508"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2026 年 3 月轮次参投，300 亿美元",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-85e83dc29afc39fd",
+            "source_url": "https://pinggy.io/blog/openai_anthropic_funding_history/",
+            "source_title": "Racing to a Trillion: OpenAI and Anthropic's Funding History",
+            "source_content_hash": "57f300b822a08037",
+            "quote": "SoftBank $30 billion, Nvidia $30 billion",
+            "quote_hash": "4f3a214de32177eb170ac3b3d5062ae80de48bd74b37f627747eea17ba23ab71"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-8f9d0edde2fd4767",
         "funding_insight_id": "FI-43e6948d7884584e",
         "event_ids": [
@@ -1925,6 +1957,14 @@
         "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
         "quote": "and existing strategic investors, AMD Ventures, and NVIDIA",
         "quote_hash": "0b724462bac913eb56dd778f7de617c4cfee0fdb67a69679155b0765001d1c7c"
+      },
+      {
+        "source_id": "FISRC-85e83dc29afc39fd",
+        "source_url": "https://pinggy.io/blog/openai_anthropic_funding_history/",
+        "source_title": "Racing to a Trillion: OpenAI and Anthropic's Funding History",
+        "source_content_hash": "57f300b822a08037",
+        "quote": "SoftBank $30 billion, Nvidia $30 billion",
+        "quote_hash": "4f3a214de32177eb170ac3b3d5062ae80de48bd74b37f627747eea17ba23ab71"
       },
       {
         "source_id": "FISRC-3b8fce2e43a41d5b",

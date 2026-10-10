@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 18,
+    "current_round_count": 19,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 17,
+    "portfolio_company_count": 18,
     "market_regions": [
       "GLOBAL"
     ],
@@ -75,7 +75,7 @@
       "co_lead": 2,
       "historical_or_ambiguous": 4,
       "lead": 10,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "other",
@@ -168,6 +168,11 @@
         "name": "Torch Systems"
       },
       {
+        "entity_id": "EN-5a36b0948fb336a7",
+        "canonical_entity_id": "",
+        "name": "Vinci"
+      },
+      {
         "entity_id": "EN-6861f63c27eb0ada",
         "canonical_entity_id": "",
         "name": "WindBorne Systems"
@@ -251,6 +256,46 @@
             "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
             "quote": "announced the capital infusion from investors including Khosla Ventures, Abstract, Construct Capital, and Starship Ventures.",
             "quote_hash": "164648e587d11a038dc829862b5afb6ac34d5075cb416a9737cb2efb07ea3842"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5cd57529c5766008",
+        "funding_insight_id": "FI-18e35dfffb4a703f",
+        "event_ids": [
+          "EV-03401b3c382e1088"
+        ],
+        "company_entity_id": "EN-5a36b0948fb336a7",
+        "company_canonical_entity_id": "",
+        "company_name": "Vinci",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf38198e12772dce",
+            "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+            "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+            "source_content_hash": "d0ea59cc1ed354cf",
+            "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+            "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
           }
         ]
       },
@@ -1065,6 +1110,14 @@
         "quote_hash": "164648e587d11a038dc829862b5afb6ac34d5075cb416a9737cb2efb07ea3842"
       },
       {
+        "source_id": "FISRC-cf38198e12772dce",
+        "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+        "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+        "source_content_hash": "d0ea59cc1ed354cf",
+        "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+        "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
+      },
+      {
         "source_id": "FISRC-1c7459d2ce055880",
         "source_url": "https://factory.ai/news/5-billion-valuation",
         "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
@@ -1304,8 +1357,8 @@
           "source_id": "FISRC-6f2893ccf0aa3194"
         },
         {
-          "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1c7459d2ce055880"
+          "description": "融资来源记录：Vinci · B轮 · 2026-10-06 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf38198e12772dce"
         }
       ],
       "contacts": [
@@ -1387,12 +1440,12 @@
           "quote_hash": "164648e587d11a038dc829862b5afb6ac34d5075cb416a9737cb2efb07ea3842"
         },
         {
-          "source_id": "FISRC-1c7459d2ce055880",
-          "source_url": "https://factory.ai/news/5-billion-valuation",
-          "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
-          "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
-          "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
-          "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+          "source_id": "FISRC-cf38198e12772dce",
+          "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
+          "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
+          "source_content_hash": "d0ea59cc1ed354cf",
+          "quote": "Vinci today announced a $250 million Series B co-led by Advent, Temasek and Xora, with participation from AMD Ventures, Eclipse, Khosla Ventures, Madrona and others",
+          "quote_hash": "681896f98fdf58cf1b3ac609514504d8c3abd332dd2ef3dd5da60ebf085bf66b"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1403,7 +1456,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[18].role": {
+        "activities[19].role": {
           "text": "Series C 领投",
           "source_hash": "c55ed79792c5d8940ad622d8d48ba34699b43b78b6c1f267f19f91e6570bbcca",
           "provider": "deepseek",

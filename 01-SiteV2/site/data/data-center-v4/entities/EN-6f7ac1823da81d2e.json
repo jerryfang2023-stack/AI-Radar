@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -87,6 +87,7 @@
       "EV-0121f0a9e9a975ec",
       "EV-eda9fcba2f9fe358",
       "EV-3664fd6826c319bb",
+      "EV-94d9c9c5f225ccca",
       "EV-0990ee74c4bc9c1a",
       "EV-e9dedb02ac93d997",
       "EV-0044c8acb4733273",
@@ -151,12 +152,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-04-24",
-    "lastSeen": "2026-10-09",
+    "lastSeen": "2026-10-10",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-2cddd05c747f0ee7",
         "EV-bada0d929d2b70ac",
+        "EV-2cddd05c747f0ee7",
         "EV-770a599defdaf792",
         "EV-3a7e1e2c46daaa76",
         "EV-383a1cc6f0c68d6a",
@@ -185,6 +186,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-94d9c9c5f225ccca",
         "EV-0990ee74c4bc9c1a",
         "EV-e9dedb02ac93d997",
         "EV-0044c8acb4733273",
@@ -237,24 +239,8 @@
     },
     "timeline": [
       {
-        "id": "EV-2cddd05c747f0ee7",
-        "dataDate": "2026-10-09",
-        "date": "2026-10-08",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "rumored",
-        "statusLabel": "rumored",
-        "title": "DeepSeek完成近千亿融资，腾讯宁德时代领投，计划2027年IPO",
-        "displayTags": [],
-        "entityIds": [
-          "EN-6f7ac1823da81d2e",
-          "EN-9c8ae69b84f21a2e"
-        ]
-      },
-      {
         "id": "EV-bada0d929d2b70ac",
-        "dataDate": "2026-10-09",
+        "dataDate": "2026-10-10",
         "date": "2026-10-06",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -269,6 +255,37 @@
           "EN-221e3af59d342a6d",
           "EN-9c8ae69b84f21a2e",
           "EN-6f7ac1823da81d2e"
+        ]
+      },
+      {
+        "id": "EV-94d9c9c5f225ccca",
+        "dataDate": "2026-10-10",
+        "date": "2026-10-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "大模型集体冲上市！热闹背后的烧钱比赛",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6f7ac1823da81d2e"
+        ]
+      },
+      {
+        "id": "EV-2cddd05c747f0ee7",
+        "dataDate": "2026-10-09",
+        "date": "2026-10-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "DeepSeek完成近千亿融资，腾讯宁德时代领投，计划2027年IPO",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6f7ac1823da81d2e",
+          "EN-9c8ae69b84f21a2e"
         ]
       },
       {
@@ -2344,6 +2361,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-f3ecff6963190b97",
+        "EV-03a5e703deae837f",
         "EV-53d3d485f2b3d64e",
         "EV-55ed36eee8ffa4bd",
         "EV-60beaa2e14a34fc9",
@@ -3005,6 +3024,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-bab553871438227c",
         "EN-006e39f60f196420",
         "EN-804918e60b0894fa",
         "EN-9fbf261b62c1d7c0",
@@ -4155,7 +4175,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-10"
     },
     {
       "id": "TX-ai_market_application-models",

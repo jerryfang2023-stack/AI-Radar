@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-08-17",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7cdbc9084feb6ac0",
+        "canonical_entity_id": "",
+        "name": "Manus"
+      },
       {
         "entity_id": "EN-1913c6ab46df3a68",
         "canonical_entity_id": "",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a10727e1816b88ea",
+        "funding_insight_id": "FI-7901905738df2a10",
+        "event_ids": [
+          "EV-03a5e703deae837f"
+        ],
+        "company_entity_id": "EN-7cdbc9084feb6ac0",
+        "company_canonical_entity_id": "",
+        "company_name": "Manus",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "超过5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": 500000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c8f60a62d027b2",
+            "source_url": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "Manus获超5亿美元融资 AI Agent赛道再升温",
+            "source_content_hash": "0d6ede55331834420c042002e6e44e670ecb79b00e5ff2a74cb4656e499305eb",
+            "quote": "腾讯、HSG以及真格基金（ZhenFund）等现有股东参与追加投资",
+            "quote_hash": "413e9b1d18e0803a5157ca2e0d522f8924a103412e22fad5f5b715c00c1bbcf0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-41d0ce89585fb622",
         "funding_insight_id": "FI-d957aeb415083785",
@@ -127,6 +174,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c4c8f60a62d027b2",
+        "source_url": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "Manus获超5亿美元融资 AI Agent赛道再升温",
+        "source_content_hash": "0d6ede55331834420c042002e6e44e670ecb79b00e5ff2a74cb4656e499305eb",
+        "quote": "腾讯、HSG以及真格基金（ZhenFund）等现有股东参与追加投资",
+        "quote_hash": "413e9b1d18e0803a5157ca2e0d522f8924a103412e22fad5f5b715c00c1bbcf0"
+      },
       {
         "source_id": "FISRC-34ac4235c670177c",
         "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
@@ -179,6 +234,10 @@
           "source_id": "b32-hsg-odyss"
         },
         {
+          "description": "融资来源记录：Manus · C轮 · 2026-10-08 · 本轮参投 · 超过5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c8f60a62d027b2"
+        },
+        {
           "description": "融资来源记录：OdyssLife · 多轮融资 · 2026-08-17 · 本轮领投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-34ac4235c670177c"
         }
@@ -216,6 +275,14 @@
           "source_content_hash": "f89307938538a547c4653b0fc2b43da3c47a627937cfb54d2ce711e1d9109cfd",
           "quote": "The round was led by HSG and Monolith respectively, with existing investors Linear Capital and Creekstone continuing to increase their stakes.",
           "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
+        },
+        {
+          "source_id": "FISRC-c4c8f60a62d027b2",
+          "source_url": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "Manus获超5亿美元融资 AI Agent赛道再升温",
+          "source_content_hash": "0d6ede55331834420c042002e6e44e670ecb79b00e5ff2a74cb4656e499305eb",
+          "quote": "腾讯、HSG以及真格基金（ZhenFund）等现有股东参与追加投资",
+          "quote_hash": "413e9b1d18e0803a5157ca2e0d522f8924a103412e22fad5f5b715c00c1bbcf0"
         },
         {
           "source_id": "FISRC-34ac4235c670177c",

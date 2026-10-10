@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-09",
-    "currentDate": "2026-10-09",
-    "eventCount": 4035,
+    "latestDataDate": "2026-10-10",
+    "currentDate": "2026-10-10",
+    "eventCount": 4049,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c9309cdacfb47b4b",
       "EV-f98b84fe16d57b72"
     ],
     "viewpointIds": [],
@@ -71,10 +72,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-25",
-    "lastSeen": "2026-09-01",
+    "lastSeen": "2026-10-10",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-c9309cdacfb47b4b"
+      ],
       "deployments": [
         "EV-f98b84fe16d57b72"
       ],
@@ -85,6 +88,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c9309cdacfb47b4b",
+        "dataDate": "2026-10-10",
+        "date": "2026-10-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "欧洲初创企业9月融资158亿欧元，几乎是8月总额的五倍",
+        "displayTags": [],
+        "entityIds": [
+          "EN-74cf0145de19b617",
+          "EN-1701cfb023a18b15"
+        ]
+      },
       {
         "id": "EV-f98b84fe16d57b72",
         "dataDate": "2026-09-01",
@@ -125,6 +144,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-f3ecff6963190b97",
+        "EV-03a5e703deae837f",
         "EV-53d3d485f2b3d64e",
         "EV-55ed36eee8ffa4bd",
         "EV-60beaa2e14a34fc9",
@@ -786,6 +807,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-bab553871438227c",
         "EN-006e39f60f196420",
         "EN-804918e60b0894fa",
         "EN-9fbf261b62c1d7c0",
