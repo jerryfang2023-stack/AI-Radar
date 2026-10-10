@@ -132,3 +132,110 @@ def test_concurrent_import_replays_without_duplicate_rows(client):
         results = list(pool.map(send, range(2)))
     assert sorted(status for status, _ in results) == [200,201]
     assert results[0][1] == results[1][1]
+
+
+def test_geo_landing_attribution_keeps_first_page_and_strips_sensitive_parts():
+    conn = sqlite3.connect(':memory:'); conn.row_factory = sqlite3.Row
+    conn.execute('CREATE TABLE analytics_events(id INTEGER PRIMARY KEY, session_id,event_name,properties_json,page_path,occurred_at,platform)')
+    rows = [
+        ('one','page_view',{'trafficSource':'chatgpt','trafficMedium':'ai_referral','attributionEvidence':'utm_source','landingPath':'/companies/profile/EN-demo/?email=private#token'},'/','2026-10-02T00:00:00Z','pc'),
+        ('one','page_view',{'trafficSource':'google','trafficMedium':'organic_search','attributionEvidence':'referrer','landingPath':'/about/'},'/about/','2026-10-02T00:01:00Z','pc'),
+        ('one','public_cta_click',{'scope':'full_research'},'/','2026-10-02T00:02:00Z','pc'),
+        ('two','page_view',{'trafficSource':'chatgpt','trafficMedium':'ai_referral','landingPath':'/ops/?secret=private'},'/ops/','2026-10-02T00:00:00Z','pc'),
+        ('three','page_view',{'trafficSource':'chatgpt','trafficMedium':'ai_referral','landingPath':'https://evil.example/private'},'/funding/','2026-10-02T00:00:00Z','pc'),
+        ('four','page_view',{'trafficSource':'unattributed','trafficMedium':'unattributed','attributionEvidence':'none','landingPath':'/about/'},'/about/','2026-10-02T00:00:00Z','pc'),
+    ]
+    for sid,event,props,page,stamp,platform in rows:
+        conn.execute('INSERT INTO analytics_events(session_id,event_name,properties_json,page_path,occurred_at,platform) VALUES(?,?,?,?,?,?)',(sid,event,json.dumps(props),page,stamp,platform))
+    value=traffic_summary(conn,datetime.fromisoformat('2026-10-02T00:00:00Z'),datetime.fromisoformat('2026-10-02T12:00:00Z'),'2026-10-01T00:00:00Z')
+    assert value['totals']['aiSessions']==3
+    assert sum(x['sessions'] for x in value['landingPages'])==4
+    assert value['totals']['unattributedSessions']==1
+    first=next(x for x in value['landingPages'] if x['path']=='/companies/profile/EN-demo/')
+    assert first['source']=='chatgpt' and first['researchCtaSessions']==1
+    assert any(x['path'] is None for x in value['landingPages'])
+    assert any(x['path']=='/funding/' for x in value['landingPages'])
+    assert {x['evidence'] for x in value['attributionEvidence']}=={'utm_source','unknown','none'}
+    assert value['conversions']['status']=='not_connected'
+    assert value['conversions']['registrations'] is None
+    assert not any(secret in json.dumps(value) for secret in ['private','evil.example','/ops/'])
+
+
+def test_geo_observation_modes_and_fact_denominators_are_separate():
+    from payment_service.search_growth import evaluation_summary
+    case=QUESTIONS['cases'][0]
+    def observation(stamp,**extra):
+        return {'caseId':case['id'],'engine':'ChatGPT Search','observedAt':stamp,'citations':[],**extra}
+    body={'provider':'ai_evaluation','rows':[
+        observation('2026-10-02T00:00:00Z',observationType='discovery',searchMode='web_search',collectionMethod='manual_ui',brandMentioned=True,citations=[case['expectedCitationURLs'][0]],reviewedClaims=3,correctClaims=2,incorrectClaims=1,evidenceRef='sha256:'+'a'*64),
+        observation('2026-10-02T00:01:00Z',observationType='discovery',searchMode='web_search',collectionMethod='manual_ui',brandMentioned=False),
+        observation('2026-10-02T00:02:00Z',observationType='direct_url',searchMode='web_search',collectionMethod='manual_ui',citations=[case['expectedCitationURLs'][0]]),
+        observation('2026-10-02T00:03:00Z',observationType='discovery',searchMode='web_search',collectionMethod='manual_ui',answerStatus='failed'),
+        observation('2026-10-02T00:04:00Z',observationType='discovery',searchMode='web_search',collectionMethod='api_search',citations=[case['expectedCitationURLs'][0]]),
+    ]}
+    normalized=normalize_import(body,date(2026,10,2),QUESTIONS)
+    value=evaluation_summary(normalized['rows'],QUESTIONS)
+    group=next(x for x in value['cohorts'] if x['observationType']=='discovery' and x['collectionMethod']=='manual_ui')
+    assert group['observations']==3 and group['validAnswers']==2 and group['failedAnswers']==1
+    assert group['citationRate']==.5 and group['mentionRate']==.5
+    assert group['reviewedClaims']==3 and group['factAccuracyRate']==pytest.approx(2/3)
+    assert group['evidenceReferenced']==1
+    assert len(value['cohorts'])==3
+    assert len(value['cases'])==3
+    assert group['siteCitations']==1
+
+
+def test_geo_import_rejects_invalid_metadata_and_inconsistent_claims():
+    base={'caseId':QUESTIONS['cases'][0]['id'],'engine':'ChatGPT Search','observedAt':'2026-10-02T00:00:00Z','citations':[]}
+    invalid=[{'brandMentioned':'yes'},{'evidenceRef':'C:/private/answer.txt'},{'observationType':'guaranteed_rank'},{'searchMode':'unknown_mode'},{'collectionMethod':'api_guess'},{'language':'xx'},{'variantId':'private email@example.com'},
+             {'reviewedClaims':2,'correctClaims':3,'incorrectClaims':0},{'reviewedClaims':True,'correctClaims':1,'incorrectClaims':0},{'correctClaims':1},
+             {'answerStatus':'failed','citations':[QUESTIONS['cases'][0]['expectedCitationURLs'][0]]},{'answerText':'private full answer'}]
+    for extra in invalid:
+        with pytest.raises(ValueError): normalize_import({'provider':'ai_evaluation','rows':[{**base,**extra}]},date(2026,10,2),QUESTIONS)
+
+
+def test_geo_legacy_observations_remain_unknown_and_not_inferred():
+    from payment_service.search_growth import evaluation_summary
+    row={'caseId':QUESTIONS['cases'][0]['id'],'engine':'ChatGPT Search','model':'','observedAt':'2026-10-02T00:00:00Z','citationURLs':[QUESTIONS['cases'][0]['expectedCitationURLs'][0],'https://www.zkdlj.vip/ops/?secret=private','https://www.zkdlj.vip/about/?email=private'],'expectedPageCited':True,'accuracyReview':'correct'}
+    group=evaluation_summary([row],QUESTIONS)['cohorts'][0]
+    assert group['observationType']=='legacy' and group['searchMode']=='unknown'
+    assert group['brandMentioned'] is None and group['mentionRate'] is None
+    assert group['factAccuracyRate'] is None
+    assert group['answerAccuracyRate']==1
+    assert 'https://www.zkdlj.vip/about/' in group['citedPages']
+    assert 'private' not in json.dumps(group) and '/ops/' not in json.dumps(group)
+
+
+def test_geo_same_timestamp_different_modes_do_not_overwrite(client):
+    _,headers=admin_login(client)
+    stamp=datetime.now(timezone.utc).isoformat()
+    base={'caseId':QUESTIONS['cases'][0]['id'],'engine':'ChatGPT Search','observedAt':stamp,'citations':[],'observationType':'discovery','collectionMethod':'manual_ui','searchMode':'web_search'}
+    url='/api/v1/admin/growth/'
+    for row in [base,{**base,'observationType':'direct_url'},{**base,'collectionMethod':'api_search'}]:
+        assert client.post(url+'import',headers=headers,json={'provider':'ai_evaluation','rows':[row]}).status_code==201
+    value=client.get(url+'summary',headers=headers).get_json()
+    assert value['measurementVersion']=='GEO-MEASUREMENT-V2'
+    assert len(value['evaluation']['cohorts'])==3
+    assert sum(x['validAnswers'] for x in value['evaluation']['cohorts'])==3
+
+
+def test_geo_historical_payload_stays_stable_and_normalized_duplicates_rejected():
+    from payment_service.search_growth import normalize_import
+    from datetime import date
+    base={'caseId':QUESTIONS['cases'][0]['id'],'engine':'ChatGPT Search','observedAt':'2026-10-02T00:00:00Z','citations':[]}
+    row=normalize_import({'provider':'ai_evaluation','rows':[base]},date(2026,10,2),QUESTIONS)['rows'][0]
+    assert set(row)=={'caseId','engine','model','observedAt','date','citationURLs','expectedPageCited','accuracyReview'}
+    assert row['model']=='' and row['accuracyReview']=='unreviewed'
+    with pytest.raises(ValueError):
+        normalize_import({'provider':'ai_evaluation','rows':[base,{**base,'model':None}]},date(2026,10,2),QUESTIONS)
+    with pytest.raises(ValueError):
+        normalize_import({'provider':'ai_evaluation','rows':[{**base,'searchMode':'web_search'}]},date(2026,10,2),QUESTIONS)
+
+
+def test_topic_permalinks_are_public_but_invalid_and_private_paths_remain_unknown():
+    from payment_service.search_growth import public_path, public_citation_url
+    for path in ['/topics/', '/topics/2026-09/', '/topics/2026-09/industry/', '/en/topics/2026-09/models/']:
+        assert public_path(path+'?utm_source=chatgpt#distribution') == path
+        assert public_citation_url('https://www.zkdlj.vip'+path) == 'https://www.zkdlj.vip'+path
+    for path in ['/topics/2026-13/', '/topics/2026-09/private/', '/topics/../../ops/', '/topics/config/']:
+        assert public_path(path) is None
