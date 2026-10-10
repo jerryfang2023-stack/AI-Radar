@@ -48,6 +48,20 @@ Google 搜索现支持 [只读授权及每日 API 同步](google-search-console.
 
 ## 验证与恢复
 
+### GEO 底层口径扩展（2026-10-10）
+
+接口继续返回 `SEARCH-AI-GROWTH-V1`，另加 `measurementVersion: GEO-MEASUREMENT-V2`。本次只增加底层字段，未修改公开页面或 OPS 布局。
+
+- `traffic.landingPages` 按来源、渠道和首个公开着陆路径聚合会话、浏览、阅读及入口点击；移除查询参数和片段，只接受已知公开路径。私有、外站或未知路径记为 null。
+- `traffic.attributionEvidence` 区分 referrer、utm_source、none、unknown。它说明客户端上报的归因依据，不证明回答中出现本站引用。
+- `traffic.conversions` 当前为 `not_connected / pc_acquisition_identity_not_linked`，注册、付费订单和收入保留 null。现有 PC 匿名会话未关联登录账户，点击不能替代业务结果。
+- 评测增加 `observationType`（legacy/discovery/direct_url）、`searchMode`（unknown/web_search/no_search）、`collectionMethod`（unknown/manual_ui/api_search/provider_report）、`language`（zh-CN/en）、`variantId`（默认 base）和 `answerStatus`（answered/failed）。自然发现与指定 URL 测试、界面与 API、联网与非联网、模型、语言和问题变体分别聚合到 `evaluation.cohorts`；`evaluation.cases` 在相同条件下细分问题。
+- `brandMentioned` 独立人工标记 true/false/null，未知不作为未提及。`reviewedClaims` 必须等于 `correctClaims + incorrectClaims`；三项同时提供或同时缺失。回答级审核与逐事实项准确率分别返回。失败请求不计入有效回答、引用率或提及率的分母。
+- `evidenceRef` 仅接受 `sha256:` 加 64 位小写哈希。完整回答与截图存放在私有证据目录；接口不收录原文、提示词、凭据或本机路径。引用 URL 只保留本站已知公开路径；引用不自动代表事实正确。`evidenceReferenced` 只说明存在证据标识，不代表原文已被服务核验。
+- 旧格式及旧内容哈希、观察键保持兼容。历史记录的测试条件保留 unknown，不反向补造。已知条件须明确指定 discovery/direct_url；不同测试条件不会覆盖同一时刻的其他观察。兼容的 `engines` 是汇合展示，标记 `pooled_compatibility / comparisonEligible: false`，排除指定 URL 测试和失败；前后效果比较应读取同条件的 cohorts，并同时核对日期、题目及样本数。
+
+本次没有自动发起模型请求或导入合成评测。新增字段经后续后台界面验收后再展示；既有渠道指标仍可使用。
+
 验证正常/空/错误/权限/重试、同内容重复导入、时间边界、来源去重、无效或跨站 URL、未知字段、logout 与并发响应隔离、CSV 引号和缺失值、手机布局。支付服务运行完整 pytest，OPS 运行既有回归及版本门禁。发布仅使用接受提交的静态资产和服务源码；备份代码、数据库并保存前一 release，回滚只恢复代码，保留新运营报表表。
 
 站长平台没有授权凭据时不自动读取；导入是已实现的数据入口，不伪装实时同步。真实 AI 评测不自动启动收费模型调用。
@@ -58,3 +72,9 @@ Google 搜索现支持 [只读授权及每日 API 同步](google-search-console.
 - 既有 OPS 26 项、OPS V2 53 项、Skill Ops 29 项、应用运营与导航 9 项回归通过；版本门禁通过。
 - 生产运行代码与父提交哈希匹配；测试文件差异不作为运行源码变更。上线前运行完整服务 pytest，保存私有发布回执。
 - 真实平台 SEO/GEO 数据尚未导入，真实 AI 回答尚未评测；站长账号自动读取尚未授权接入。本次页面验收使用明确标记的合成数据，不向生产导入。
+
+### 2026-10-10 底层扩展验收
+
+- 支付服务完整 pytest：120 项通过，含新增着陆归因、测试条件分组、未知值、失败分母、证据与私有路径、历史兼容和防覆盖回归。
+- 搜索增长 Node/浏览器回归：8 项通过。未修改 OPS UI，也未伪造注册、订单或真实模型回答。
+- 在独立工作树中提交；本批尚未部署服务或更新公开页面。完整私有评测证据仍由运营按既有流程保存。

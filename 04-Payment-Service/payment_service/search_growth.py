@@ -4,12 +4,14 @@ from datetime import date, datetime, timedelta, timezone
 import hashlib
 import json
 import math
+import re
 from pathlib import Path
 from urllib.parse import urlsplit
 
 from flask import g, jsonify, request
 
 VERSION = "SEARCH-AI-GROWTH-V1"
+MEASUREMENT_VERSION = "GEO-MEASUREMENT-V2"
 LOCAL = timezone(timedelta(hours=8))
 PROVIDERS = {
     "google_search": "Google 搜索", "bing_search": "Bing 搜索", "baidu_search": "百度搜索",
@@ -18,6 +20,124 @@ PROVIDERS = {
 }
 AI_SOURCES = {"chatgpt", "perplexity", "copilot", "gemini", "deepseek", "doubao", "kimi", "qwen"}
 SEARCH_SOURCES = {"google", "bing", "baidu"}
+OBSERVATION_FIELDS = {"observationType", "searchMode", "collectionMethod", "language", "variantId", "answerStatus", "brandMentioned", "evidenceRef", "reviewedClaims", "correctClaims", "incorrectClaims"}
+COHORT_FIELDS = ("engine", "model", "observationType", "searchMode", "collectionMethod", "language", "variantId")
+
+
+def public_path(value):
+    """Project known public routes only; discard query strings and private paths."""
+    if not isinstance(value, str) or len(value) > 2000 or not value.startswith("/") or value.startswith("//"):
+        return None
+    path = urlsplit(value).path
+    if re.fullmatch(r"/(?:en/)?(?:|about/|community/|heatmap/|reports/|(?:funding|companies|investors|people)/|sectors/[a-z-]+/|funding/(?:records/|page/\d+/|[A-Za-z0-9_-]+/)|(?:companies|investors|people)/(?:page/\d+/|profile/[A-Za-z0-9_-]+/))", path):
+        return path
+    return None
+
+
+def public_citation_url(value):
+    if not isinstance(value, str) or len(value) > 2000:
+        return None
+    try:
+        u = urlsplit(value)
+        path = public_path(u.path or "/")
+        return "https://www.zkdlj.vip" + path if u.scheme == "https" and u.netloc == "www.zkdlj.vip" and not u.username and not u.password and path else None
+    except ValueError:
+        return None
+
+
+def observation_metadata(row, case):
+    choices = {
+        "observationType": ({"legacy", "discovery", "direct_url"}, "legacy"),
+        "searchMode": ({"unknown", "web_search", "no_search"}, "unknown"),
+        "collectionMethod": ({"unknown", "manual_ui", "api_search", "provider_report"}, "unknown"),
+        "language": ({"zh-CN", "en"}, case.get("language", "zh-CN")),
+        "answerStatus": ({"answered", "failed"}, "answered"),
+    }
+    result = {}
+    for key, (allowed, default) in choices.items():
+        value = row.get(key, default)
+        if not isinstance(value, str) or value not in allowed:
+            raise ValueError("评测方式无效")
+        result[key] = value
+    variant = row.get("variantId", "base")
+    if not isinstance(variant, str) or not re.fullmatch(r"[A-Za-z0-9_-]{1,64}", variant):
+        raise ValueError("问题变体标识无效")
+    result["variantId"] = variant
+    if result["observationType"] == "legacy" and (result["searchMode"] != "unknown" or result["collectionMethod"] != "unknown" or variant != "base" or result["language"] != case.get("language", "zh-CN")):
+        raise ValueError("已知评测条件须使用 discovery 或 direct_url")
+    mentioned = row.get("brandMentioned")
+    if mentioned is not None and not isinstance(mentioned, bool):
+        raise ValueError("品牌提及须为布尔值或 null")
+    result["brandMentioned"] = mentioned
+    ref = row.get("evidenceRef")
+    if ref is not None and (not isinstance(ref, str) or not re.fullmatch(r"sha256:[a-f0-9]{64}", ref)):
+        raise ValueError("证据引用须为 SHA-256 标识")
+    result["evidenceRef"] = ref
+    claims = [row.get(key) for key in ("reviewedClaims", "correctClaims", "incorrectClaims")]
+    if any(value is not None for value in claims):
+        if any(value is None for value in claims) or any(count(value) > 10000 for value in claims) or claims[0] != claims[1] + claims[2]:
+            raise ValueError("事实核验计数不一致")
+    result.update(zip(("reviewedClaims", "correctClaims", "incorrectClaims"), claims))
+    if result["answerStatus"] == "failed" and (row.get("citations") or mentioned is not None or any(value is not None for value in claims) or row.get("accuracyReview", "unreviewed") != "unreviewed"):
+        raise ValueError("失败请求不能记录回答效果")
+    return result
+
+
+def observation_key(row):
+    # Preserve the key used by historical imports, while keeping new test modes apart.
+    if row.get("observationType", "legacy") == "legacy":
+        return json.dumps([row[k] for k in ("caseId", "engine", "model", "observedAt")])
+    return json.dumps([row[k] for k in ("caseId", "observedAt", *COHORT_FIELDS)])
+
+
+def evaluation_summary(observations, questions):
+    cohorts, cases = {}, {}
+    case_config = {c["id"]: c for c in questions["cases"]}
+    projected = []
+    for row in observations:
+        urls = sorted({url for raw in row["citationURLs"] if (url := public_citation_url(raw))})
+        expected = case_config.get(row["caseId"], {}).get("expectedCitationURLs", [])
+        projected.append({**row, "citationURLs": urls, "expectedPageCited": bool(set(urls) & set(expected))})
+    observations = projected
+    for row in observations:
+        metadata = {key: row.get(key, {"observationType": "legacy", "searchMode": "unknown", "collectionMethod": "unknown", "language": case_config.get(row["caseId"], {}).get("language", "zh-CN"), "variantId": "base", "model": ""}.get(key)) for key in COHORT_FIELDS}
+        key = tuple(metadata[k] for k in COHORT_FIELDS)
+        cohorts.setdefault(key, {"metadata": metadata, "rows": []})["rows"].append(row)
+        cases.setdefault((key, row["caseId"]), {"metadata": {**metadata, "caseId": row["caseId"]}, "rows": []})["rows"].append(row)
+
+    def aggregate(group):
+        rows = group["rows"]
+        answered = [r for r in rows if r.get("answerStatus", "answered") == "answered"]
+        mentioned = [r for r in answered if isinstance(r.get("brandMentioned"), bool)]
+        reviewed = [r for r in answered if r["accuracyReview"] != "unreviewed"]
+        claims = [r for r in answered if r.get("reviewedClaims") is not None]
+        denominator = sum(r["reviewedClaims"] for r in claims)
+        cited = sum(bool(r["citationURLs"]) for r in answered)
+        return {**group["metadata"], "observations": len(rows), "validAnswers": len(answered), "failedAnswers": len(rows) - len(answered),
+                "siteCitations": cited if answered else None, "citationRate": cited / len(answered) if answered else None,
+                "mentionReviewed": len(mentioned), "brandMentioned": sum(r["brandMentioned"] for r in mentioned) if mentioned else None,
+                "mentionRate": sum(r["brandMentioned"] for r in mentioned) / len(mentioned) if mentioned else None,
+                "accuracyReviewed": len(reviewed), "answerAccuracyRate": sum(r["accuracyReview"] == "correct" for r in reviewed) / len(reviewed) if reviewed else None,
+                "reviewedClaims": denominator if claims else None, "correctClaims": sum(r["correctClaims"] for r in claims) if claims else None,
+                "incorrectClaims": sum(r["incorrectClaims"] for r in claims) if claims else None,
+                "factAccuracyRate": sum(r["correctClaims"] for r in claims) / denominator if denominator else None,
+                "evidenceReferenced": sum(bool(r.get("evidenceRef")) for r in answered),
+                "citedPages": sorted({u for r in answered for u in r["citationURLs"]}), "lastObservedAt": max(r["observedAt"] for r in rows)}
+
+    engines = []
+    for engine in questions["engines"]:
+        # Compatibility metrics use old observations and discovery only, never URL-assisted tests or failures.
+        rows = [r for r in observations if r["engine"] == engine and r.get("observationType", "legacy") != "direct_url" and r.get("answerStatus", "answered") == "answered"]
+        cited = sum(bool(r["citationURLs"]) for r in rows)
+        engines.append({"engine": engine, "aggregation": "pooled_compatibility", "comparisonEligible": False, "status": "available" if rows else "not_measured", "observations": len(rows) if rows else None,
+                        "siteCitations": cited if rows else None, "citationRate": cited / len(rows) if rows else None,
+                        "expectedPageCitations": sum(r["expectedPageCited"] for r in rows) if rows else None,
+                        "accuracyReviewed": sum(r["accuracyReview"] != "unreviewed" for r in rows) if rows else None,
+                        "correct": sum(r["accuracyReview"] == "correct" for r in rows) if rows else None,
+                        "incorrect": sum(r["accuracyReview"] == "incorrect" for r in rows) if rows else None,
+                        "citedPages": sorted({u for r in rows for u in r["citationURLs"]}), "lastObservedAt": max(r["observedAt"] for r in rows) if rows else None})
+    return {"baselineDate": questions["baselineDate"], "questions": len(questions["cases"]), "engines": engines,
+            "cohorts": [aggregate(g) for g in cohorts.values()], "cases": [aggregate(g) for g in cases.values()]}
 
 
 def parsed(value):
@@ -66,7 +186,7 @@ def normalize_import(body, today, questions):
         engines = set(questions["engines"])
         cases = {c["id"]: c for c in questions["cases"]}
         for row in rows:
-            if not isinstance(row, dict) or set(row) - {"caseId", "engine", "model", "observedAt", "citations", "accuracyReview"}:
+            if not isinstance(row, dict) or set(row) - ({"caseId", "engine", "model", "observedAt", "citations", "accuracyReview"} | OBSERVATION_FIELDS):
                 raise ValueError("评测字段无效")
             stamp = parsed(row.get("observedAt"))
             if not stamp or stamp.astimezone(LOCAL).date() > today or stamp.astimezone(LOCAL).date() < date.fromisoformat(questions["baselineDate"]):
@@ -75,6 +195,7 @@ def normalize_import(body, today, questions):
             review = row.get("accuracyReview", "unreviewed")
             if not case or engine not in engines or review not in {"correct", "incorrect", "unreviewed"}:
                 raise ValueError("题目、平台或事实核验状态无效")
+            metadata = observation_metadata(row, case)
             model = row.get("model") or ""
             if not isinstance(model, str) or len(model) > 120:
                 raise ValueError("模型版本过长")
@@ -88,17 +209,19 @@ def normalize_import(body, today, questions):
                 u = urlsplit(link)
                 if u.scheme not in {"https", "http"} or not u.hostname or u.username or u.password:
                     raise ValueError("引用链接无效")
-                if u.scheme == "https" and u.netloc == "www.zkdlj.vip":
-                    own.append("https://www.zkdlj.vip" + (u.path or "/"))
+                if public := public_citation_url(link):
+                    own.append(public)
             observed = stamp.astimezone(timezone.utc).isoformat()
-            key = (row["caseId"], engine, model, observed)
+            # Keep historical payload hashes and keys stable; new metadata is opt-in.
+            candidate = {"caseId": row["caseId"], "engine": engine, "model": model,
+                         "observedAt": observed, "date": stamp.astimezone(LOCAL).date().isoformat(),
+                         "citationURLs": sorted(set(own)), "expectedPageCited": bool(set(own) & set(case["expectedCitationURLs"])),
+                         "accuracyReview": review, **(metadata if set(row) & OBSERVATION_FIELDS else {})}
+            key = observation_key(candidate)
             if key in seen:
                 raise ValueError("同一观察记录重复")
             seen.add(key)
-            normalized.append({"caseId": row["caseId"], "engine": engine, "model": model,
-                               "observedAt": observed, "date": stamp.astimezone(LOCAL).date().isoformat(),
-                               "citationURLs": sorted(set(own)), "expectedPageCited": bool(set(own) & set(case["expectedCitationURLs"])),
-                               "accuracyReview": review})
+            normalized.append(candidate)
         normalized.sort(key=lambda x: (x["observedAt"], x["caseId"], x["engine"], x["model"]))
         return {"provider": provider, "dimension": "observation", "rows": normalized}
     if provider not in PROVIDERS or body.get("dimension") not in {"date", "page", "query"}:
@@ -159,14 +282,17 @@ def traffic_summary(conn, start, now, tracking_since):
             props = {}
         if not isinstance(props, dict):
             props = {}
-        item = sessions.setdefault(row["session_id"], {"first": None, "views": 0, "content": 0, "research": False, "application": False})
+        item = sessions.setdefault(row["session_id"], {"first": None, "path": None, "evidence": "unknown", "views": 0, "content": 0, "research": False, "application": False})
         event = row["event_name"]
         if event == "page_view":
             item["views"] += 1
             if item["first"] is None:
                 source, medium = props.get("trafficSource"), props.get("trafficMedium")
-                valid = (medium == "ai_referral" and source in AI_SOURCES) or (medium == "organic_search" and source in SEARCH_SOURCES) or (medium == "direct" and source == "direct") or (medium == "other_referral" and source == "other")
+                valid = (medium == "ai_referral" and source in AI_SOURCES) or (medium == "organic_search" and source in SEARCH_SOURCES) or (medium == "direct" and source == "direct") or (medium == "other_referral" and source == "other") or (medium == "unattributed" and source == "unattributed")
                 item["first"] = (source if valid else "unattributed", medium if valid else "unattributed")
+                item["path"] = public_path(props.get("landingPath")) or public_path(row["page_path"])
+                evidence = props.get("attributionEvidence")
+                item["evidence"] = evidence if valid and evidence in {"utm_source", "referrer", "none"} else "unknown"
             day = parsed(row["occurred_at"]).astimezone(LOCAL).date().isoformat()
             daily = trend.setdefault(day, {"date": day, "pageViews": 0, "sessions": set()})
             daily["pageViews"] += 1
@@ -176,7 +302,7 @@ def traffic_summary(conn, start, now, tracking_since):
         elif event == "public_cta_click":
             item["research"] |= props.get("scope") == "full_research"
             item["application"] |= props.get("scope") == "community_application"
-    groups = {}
+    groups, landings, evidence_groups = {}, {}, {}
     for item in sessions.values():
         if not item["first"]:
             continue
@@ -187,6 +313,11 @@ def traffic_summary(conn, start, now, tracking_since):
         group["contentViews"] += item["content"]
         group["researchCtaSessions"] += int(item["research"])
         group["applicationCtaSessions"] += int(item["application"])
+        landing = landings.setdefault((source, medium, item["path"]), {"source": source, "medium": medium, "path": item["path"], "sessions": 0, "pageViews": 0, "contentViews": 0, "researchCtaSessions": 0, "applicationCtaSessions": 0})
+        for field, value in (("sessions", 1), ("pageViews", item["views"]), ("contentViews", item["content"]), ("researchCtaSessions", int(item["research"])), ("applicationCtaSessions", int(item["application"]))):
+            landing[field] += value
+        evidence_group = evidence_groups.setdefault((source, medium, item["evidence"]), {"source": source, "medium": medium, "evidence": item["evidence"], "sessions": 0})
+        evidence_group["sessions"] += 1
         totals["sessions"] += 1
         totals["pageViews"] += item["views"]
         if medium == "organic_search": totals["searchSessions"] += 1
@@ -194,7 +325,10 @@ def traffic_summary(conn, start, now, tracking_since):
         if medium == "unattributed": totals["unattributedSessions"] += 1
     return {"status": "available" if tracking_since else "not_connected", "trackingSince": tracking_since or None,
             "totals": totals if tracking_since else None, "channels": sorted(groups.values(), key=lambda x: -x["sessions"]) if tracking_since else [],
-            "trend": [{**d, "sessions": len(d["sessions"])} for d in sorted(trend.values(), key=lambda x: x["date"])] if tracking_since else []}
+            "trend": [{**d, "sessions": len(d["sessions"])} for d in sorted(trend.values(), key=lambda x: x["date"])] if tracking_since else [],
+            "landingPages": sorted(landings.values(), key=lambda x: (-x["sessions"], x["source"], x["path"] or "")) if tracking_since else [],
+            "attributionEvidence": sorted(evidence_groups.values(), key=lambda x: (-x["sessions"], x["source"], x["evidence"])) if tracking_since else [],
+            "conversions": {"status": "not_connected", "reason": "pc_acquisition_identity_not_linked", "registrations": None, "paidOrders": None, "paidRevenueCents": None}}
 
 
 def report_summary(conn, start_day, end_day):
@@ -255,18 +389,8 @@ def register(app, db, clock, admin_required):
         with closing(db()) as conn:
             traffic = traffic_summary(conn, start, now, app.config.get("ANALYTICS_LIVE_FROM"))
             reports = report_summary(conn, start_day, end_day)
-            engines = []
             observations = [json.loads(r[0]) for r in conn.execute("SELECT payload_json FROM operations_growth_observations WHERE julianday(observed_at)>=julianday(?) AND julianday(observed_at)<=julianday(?) ORDER BY observed_at", (start.isoformat(), now.isoformat()))]
-            for engine in questions["engines"]:
-                rows = [r for r in observations if r["engine"] == engine]
-                cited = sum(bool(r["citationURLs"]) for r in rows)
-                engines.append({"engine": engine, "status": "available" if rows else "not_measured", "observations": len(rows) if rows else None,
-                                "siteCitations": cited if rows else None, "citationRate": cited / len(rows) if rows else None,
-                                "expectedPageCitations": sum(r["expectedPageCited"] for r in rows) if rows else None,
-                                "accuracyReviewed": sum(r["accuracyReview"] != "unreviewed" for r in rows) if rows else None,
-                                "correct": sum(r["accuracyReview"] == "correct" for r in rows) if rows else None,
-                                "incorrect": sum(r["accuracyReview"] == "incorrect" for r in rows) if rows else None,
-                                "citedPages": sorted({u for r in rows for u in r["citationURLs"]}), "lastObservedAt": rows[-1]["observedAt"] if rows else None})
+            evaluation = evaluation_summary(observations, questions)
         health_file = Path(app.config.get("GROWTH_EVIDENCE_PATH") or Path(app.config["DATABASE_PATH"]).parent / "growth-evidence.json")
         health = {"status": "not_verified"}
         try:
@@ -278,9 +402,9 @@ def register(app, db, clock, admin_required):
         automatic = google.report(int(days), start_day, end_day)
         if automatic:
             reports = [automatic if r["provider"] == "google_search" else r for r in reports]
-        response = jsonify(schemaVersion=VERSION, dataSource="production", generatedAt=now.isoformat(),
+        response = jsonify(schemaVersion=VERSION, measurementVersion=MEASUREMENT_VERSION, dataSource="production", generatedAt=now.isoformat(),
                            window={"days": int(days), "from": start.isoformat(), "to": now.isoformat(), "timezone": "Asia/Shanghai"},
-                           traffic=traffic, reports=reports, googleConnection=google.status(), evaluation={"baselineDate": questions["baselineDate"], "questions": len(questions["cases"]), "engines": engines}, health=health)
+                           traffic=traffic, reports=reports, googleConnection=google.status(), evaluation=evaluation, health=health)
         response.headers["Cache-Control"] = "private, no-store"
         return response
 
@@ -306,7 +430,7 @@ def register(app, db, clock, admin_required):
                 cursor = conn.execute("INSERT INTO operations_growth_imports(provider,dimension,content_hash,payload_json,actor_hash,imported_at) VALUES(?,?,?,?,?,?)", (data["provider"], data["dimension"], content_hash, encoded, g.operations_admin_session["email_hash"], imported_at))
                 if data["provider"] == "ai_evaluation":
                     for observation in data["rows"]:
-                        key = json.dumps([observation[k] for k in ("caseId", "engine", "model", "observedAt")])
+                        key = observation_key(observation)
                         conn.execute("INSERT INTO operations_growth_observations VALUES(?,?,?) ON CONFLICT(observation_key) DO UPDATE SET payload_json=excluded.payload_json", (key, json.dumps(observation, ensure_ascii=False), observation["observedAt"]))
                 conn.commit()
                 result = {"id": cursor.lastrowid, "importedAt": imported_at, "replayed": False}
