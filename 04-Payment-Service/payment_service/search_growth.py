@@ -29,7 +29,7 @@ def public_path(value):
     if not isinstance(value, str) or len(value) > 2000 or not value.startswith("/") or value.startswith("//"):
         return None
     path = urlsplit(value).path
-    if re.fullmatch(r"/(?:en/)?(?:|about/|community/|heatmap/|reports/|(?:funding|companies|investors|people)/|sectors/[a-z-]+/|funding/(?:records/|page/\d+/|[A-Za-z0-9_-]+/)|(?:companies|investors|people)/(?:page/\d+/|profile/[A-Za-z0-9_-]+/))", path):
+    if re.fullmatch(r"/(?:en/)?(?:|about/|topics/(?:[0-9]{4}-(?:0[1-9]|1[0-2])/(?:compute/|investor/|industry/|enterprise/|development/|devices/|models/|applications/)?)?|community/|heatmap/|reports/|(?:funding|companies|investors|people)/|sectors/[a-z-]+/|funding/(?:records/|page/\d+/|[A-Za-z0-9_-]+/)|(?:companies|investors|people)/(?:page/\d+/|profile/[A-Za-z0-9_-]+/))", path):
         return path
     return None
 

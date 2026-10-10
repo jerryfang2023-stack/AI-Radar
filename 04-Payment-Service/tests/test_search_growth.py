@@ -230,3 +230,12 @@ def test_geo_historical_payload_stays_stable_and_normalized_duplicates_rejected(
         normalize_import({'provider':'ai_evaluation','rows':[base,{**base,'model':None}]},date(2026,10,2),QUESTIONS)
     with pytest.raises(ValueError):
         normalize_import({'provider':'ai_evaluation','rows':[{**base,'searchMode':'web_search'}]},date(2026,10,2),QUESTIONS)
+
+
+def test_topic_permalinks_are_public_but_invalid_and_private_paths_remain_unknown():
+    from payment_service.search_growth import public_path, public_citation_url
+    for path in ['/topics/', '/topics/2026-09/', '/topics/2026-09/industry/', '/en/topics/2026-09/models/']:
+        assert public_path(path+'?utm_source=chatgpt#distribution') == path
+        assert public_citation_url('https://www.zkdlj.vip'+path) == 'https://www.zkdlj.vip'+path
+    for path in ['/topics/2026-13/', '/topics/2026-09/private/', '/topics/../../ops/', '/topics/config/']:
+        assert public_path(path) is None
