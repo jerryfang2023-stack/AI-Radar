@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-11",
     "currentDate": "2026-10-11",
-    "eventCount": 4055,
+    "eventCount": 4063,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,6 +61,7 @@
     "eventIds": [
       "EV-f3ecff6963190b97",
       "EV-03a5e703deae837f",
+      "EV-45559cdee71aaa17",
       "EV-53d3d485f2b3d64e",
       "EV-55ed36eee8ffa4bd",
       "EV-60beaa2e14a34fc9",
@@ -723,6 +724,7 @@
     ],
     "entityIds": [
       "EN-bab553871438227c",
+      "EN-6528f84b7b8653d7",
       "EN-006e39f60f196420",
       "EN-804918e60b0894fa",
       "EN-9fbf261b62c1d7c0",
@@ -1383,6 +1385,90 @@
       "products": [],
       "sourceUrl": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
       "publisher": "m.sohu.com"
+    },
+    {
+      "id": "EV-45559cdee71aaa17",
+      "dataDate": "2026-10-11",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "前OpenAI、Cognition员工希望AI智能体运营企业",
+      "originalTitle": "Former OpenAI, Cognition staffers want AI agents running businesses",
+      "subject": "Hone",
+      "action": "funding",
+      "object": "$60 million seed round",
+      "metrics": [
+        "$60 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6528f84b7b8653d7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6528f84b7b8653d7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6528f84b7b8653d7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6528f84b7b8653d7",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Hone",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://m.economictimes.com/tech/artificial-intelligence/former-openai-cognition-staffers-want-ai-agents-running-businesses/amp_articleshow/134794471.cms",
+      "publisher": "m.economictimes.com"
     },
     {
       "id": "EV-53d3d485f2b3d64e",
@@ -106870,6 +106956,27 @@
       "lastSeen": "2026-10-11"
     },
     {
+      "id": "EN-6528f84b7b8653d7",
+      "name": "Hone",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-45559cdee71aaa17"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-11"
+    },
+    {
       "id": "EN-006e39f60f196420",
       "name": "Zach Yadegari",
       "entityType": "organization_candidate",
@@ -107676,8 +107783,8 @@
         "TX-technology-embodied_ai",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
@@ -108907,8 +109014,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
@@ -109845,8 +109952,8 @@
         "TX-industry-financial_services",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -109941,8 +110048,8 @@
         "TX-industry-logistics_supply_chain",
         "TX-industry-financial_services",
         "TX-use_case-security_operations",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-business_user",
@@ -111078,8 +111185,8 @@
         "TX-technology-agentic_execution",
         "TX-industry-logistics_supply_chain",
         "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
@@ -111160,8 +111267,8 @@
         "TX-technology-agentic_execution",
         "TX-industry-logistics_supply_chain",
         "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
+        "TX-industry-healthcare_life_sciences",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-industry-legal_services",
@@ -112163,6 +112270,7 @@
       "eventIds": [
         "EV-289f468a361ec508",
         "EV-2a554429da11d2b8",
+        "EV-45559cdee71aaa17",
         "EV-3a4ba26375b45669",
         "EV-fe7445d005172a39",
         "EV-2470b13ea55496d0",
@@ -112722,9 +112830,9 @@
         "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-healthcare_life_sciences",
         "TX-product_form-chip_accelerator",
         "TX-industry-media_entertainment",
+        "TX-industry-healthcare_life_sciences",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-target_user-developer",
@@ -112854,6 +112962,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-89cbf15ddbd98a05",
         "EV-03a5e703deae837f",
         "EV-2cddd05c747f0ee7",
         "EV-622c77a021ef08de",
@@ -113232,9 +113341,9 @@
         "TX-technology-agentic_execution",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-healthcare_life_sciences",
         "TX-product_form-chip_accelerator",
         "TX-industry-media_entertainment",
+        "TX-industry-healthcare_life_sciences",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
@@ -113661,6 +113770,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-89cbf15ddbd98a05",
         "EV-6b668e4655192209",
         "EV-ab0d2f95a9a76c3e",
         "EV-3a4ba26375b45669",
@@ -113973,11 +114083,11 @@
         "TX-technology-embodied_ai",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-healthcare_life_sciences",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-product_form-chip_accelerator",
         "TX-industry-media_entertainment",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -115318,9 +115428,9 @@
         "TX-technology-embodied_ai",
         "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-healthcare_life_sciences",
         "TX-product_form-chip_accelerator",
         "TX-industry-media_entertainment",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -116708,8 +116818,8 @@
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-product_form-model",
-        "TX-industry-healthcare_life_sciences",
         "TX-product_form-chip_accelerator",
+        "TX-industry-healthcare_life_sciences",
         "TX-deployment_model-cloud",
         "TX-industry-government_public_sector",
         "TX-technology-on_device",
@@ -116732,6 +116842,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-53c610b37492dd1b",
+        "EV-6ade8a1ffb49d6c3",
         "EV-938ec16c395bded1",
         "EV-914ca1cbc6359ce5",
         "EV-64fb6d791e19d10a",
@@ -116751,7 +116863,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-04",
-      "lastSeen": "2026-10-02"
+      "lastSeen": "2026-10-11"
     },
     {
       "id": "EN-842fcb5e60989a03",
@@ -116849,8 +116961,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-product_form-model",
-        "TX-industry-healthcare_life_sciences",
         "TX-product_form-chip_accelerator",
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-code_generation",
         "TX-deployment_model-cloud",
         "TX-technology-multimodal",
@@ -119683,8 +119795,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-product_form-model",
-        "TX-industry-healthcare_life_sciences",
         "TX-product_form-chip_accelerator",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-technology-fine_tuning"

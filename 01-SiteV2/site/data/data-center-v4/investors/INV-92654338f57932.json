@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-11",
     "currentDate": "2026-10-11",
-    "eventCount": 4055,
+    "eventCount": 4063,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,21 +63,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 6,
-    "china_market_company_count": 6,
+    "china_market_activity_count": 7,
+    "china_market_company_count": 7,
     "first_disclosed_at": "2026-03-24",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-10-10",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 3,
       "lead": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "angel",
@@ -95,6 +95,11 @@
         "entity_id": "EN-a43f157d208b2a63",
         "canonical_entity_id": "EN-a43f157d208b2a63",
         "name": "开物纪"
+      },
+      {
+        "entity_id": "EN-ffd9c78c15a865c1",
+        "canonical_entity_id": "",
+        "name": "利太智药"
       },
       {
         "entity_id": "FICO-deepkernel",
@@ -118,6 +123,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a6ec2f4142d8efc6",
+        "funding_insight_id": "FI-9f261bd6c61ad1b6",
+        "event_ids": [
+          "EV-d5ee7cb4c076211b",
+          "EV-5654b3c716868ef8"
+        ],
+        "company_entity_id": "EN-ffd9c78c15a865c1",
+        "company_canonical_entity_id": "",
+        "company_name": "利太智药",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "近5000万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 5000 万元"
+        },
+        "announced_at": "2026-10-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6c8ebe92385dd5bf",
+            "source_url": "https://news.pedaily.cn/202610/570015.shtml",
+            "source_title": "利太智药完成近5000万元种子轮融资，专注AI原生多肽药物研发",
+            "source_content_hash": "562a6581033d8b1447c60453ba6379700fe08eda4aabdeb62d596f926e7061e7",
+            "quote": "由讯飞创投、L2F 光源创业者基金及知名产业方联合投资",
+            "quote_hash": "d7c4626278b77af2802595383f76c97a7d414e33c09136dfcc96809b21da2dac"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2ca8a783dd706fd6",
         "funding_insight_id": "FI-3d4b9799d799d54b",
@@ -459,6 +505,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6c8ebe92385dd5bf",
+        "source_url": "https://news.pedaily.cn/202610/570015.shtml",
+        "source_title": "利太智药完成近5000万元种子轮融资，专注AI原生多肽药物研发",
+        "source_content_hash": "562a6581033d8b1447c60453ba6379700fe08eda4aabdeb62d596f926e7061e7",
+        "quote": "由讯飞创投、L2F 光源创业者基金及知名产业方联合投资",
+        "quote_hash": "d7c4626278b77af2802595383f76c97a7d414e33c09136dfcc96809b21da2dac"
+      },
+      {
         "source_id": "FISRC-9eb697a746e19a88",
         "source_url": "https://news.pedaily.cn/202609/568997.shtml",
         "source_title": "首发|深度内核（DeepKernel）完成数千万元种子轮融资，定义AI时代的主权智能",
@@ -595,16 +649,16 @@
           "source_id": "l2f_launch"
         },
         {
+          "description": "融资来源记录：利太智药 · 种子轮 · 2026-10-10 · 本轮参投 · 近5000万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6c8ebe92385dd5bf"
+        },
+        {
           "description": "融资来源记录：深度内核（DeepKernel） · 种子轮 · 2026-09-15 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9eb697a746e19a88"
         },
         {
           "description": "融资来源记录：PandaAI · 多轮融资 · 2026-08-17 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-02598009c286dbbe"
-        },
-        {
-          "description": "融资来源记录：幻码跃迁 · 种子轮 · 2026-07-14 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c0e1d89cdf9af82"
         }
       ],
       "contacts": [
@@ -642,6 +696,14 @@
           "quote_hash": "48b5ad1c00c514ba324d94bf6a4ab6a447e02880508f92caaaea6c570e02ab78"
         },
         {
+          "source_id": "FISRC-6c8ebe92385dd5bf",
+          "source_url": "https://news.pedaily.cn/202610/570015.shtml",
+          "source_title": "利太智药完成近5000万元种子轮融资，专注AI原生多肽药物研发",
+          "source_content_hash": "562a6581033d8b1447c60453ba6379700fe08eda4aabdeb62d596f926e7061e7",
+          "quote": "由讯飞创投、L2F 光源创业者基金及知名产业方联合投资",
+          "quote_hash": "d7c4626278b77af2802595383f76c97a7d414e33c09136dfcc96809b21da2dac"
+        },
+        {
           "source_id": "FISRC-9eb697a746e19a88",
           "source_url": "https://news.pedaily.cn/202609/568997.shtml",
           "source_title": "首发|深度内核（DeepKernel）完成数千万元种子轮融资，定义AI时代的主权智能",
@@ -656,14 +718,6 @@
           "source_content_hash": "8a6bbeb3b692a039c4da4717ffce2e4ba5a71c4b1b7e36b06c1429046103b01e",
           "quote": "天使轮及天使+轮由L2F光源创业者基金领投",
           "quote_hash": "9d951def32ff0e6679937a5ae5cbab5029d4fa6c339ae9e2e3c70789b41e3651"
-        },
-        {
-          "source_id": "FISRC-7c0e1d89cdf9af82",
-          "source_url": "https://news.pedaily.cn/202607/566249.shtml",
-          "source_title": "「幻码跃迁」完成数千万种子轮融资，打造量子×AI融合创新的量子计算基础设施",
-          "source_content_hash": "340f8c8784943503",
-          "quote": "本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程 共同参与",
-          "quote_hash": "9d550bd78ff799b3264b3b2282f0d9d5519c19d1d3062ffdb184d6343ff9d2ee"
         }
       ],
       "identity_status": "verified"

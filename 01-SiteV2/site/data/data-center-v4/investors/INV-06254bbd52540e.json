@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-11",
     "currentDate": "2026-10-11",
-    "eventCount": 4055,
+    "eventCount": 4063,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-06-30",
     "latest_disclosed_at": "2026-06-30",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "other_current_round": 1
     },
     "round_codes": [
@@ -160,6 +160,38 @@
         ]
       },
       {
+        "activity_id": "IA-dd12ecf258e4cae0",
+        "funding_insight_id": "FI-a42717e5e5dfeb81",
+        "event_ids": [
+          "EV-45559cdee71aaa17"
+        ],
+        "company_entity_id": "EN-6528f84b7b8653d7",
+        "company_canonical_entity_id": "",
+        "company_name": "Hone",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "个人投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-8c0d1c03dad4f31e",
+            "source_url": "https://m.economictimes.com/tech/artificial-intelligence/former-openai-cognition-staffers-want-ai-agents-running-businesses/amp_articleshow/134794471.cms",
+            "source_title": "前OpenAI、Cognition员工希望AI智能体运营企业",
+            "source_content_hash": "a9357446332666762ff606b668b8241d81676f13bdfe55719ba3f413c3f3f0bb",
+            "quote": "Cognition CEO Scott Wu is also a personal investor in Hone.",
+            "quote_hash": "f6ccb1d1197acbc4673f0a82ba23da28d368230c77ec56b66323ebde4423ad9f"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-7358e7b1e68cbb13",
         "funding_insight_id": "FI-2ebe52bd95cf8644",
         "event_ids": [
@@ -208,6 +240,14 @@
         "source_content_hash": "ae0a2fdbd54bc340",
         "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
         "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+      },
+      {
+        "source_id": "FISRC-8c0d1c03dad4f31e",
+        "source_url": "https://m.economictimes.com/tech/artificial-intelligence/former-openai-cognition-staffers-want-ai-agents-running-businesses/amp_articleshow/134794471.cms",
+        "source_title": "前OpenAI、Cognition员工希望AI智能体运营企业",
+        "source_content_hash": "a9357446332666762ff606b668b8241d81676f13bdfe55719ba3f413c3f3f0bb",
+        "quote": "Cognition CEO Scott Wu is also a personal investor in Hone.",
+        "quote_hash": "f6ccb1d1197acbc4673f0a82ba23da28d368230c77ec56b66323ebde4423ad9f"
       },
       {
         "source_id": "FISRC-b95b1b353d05702f",
@@ -271,8 +311,8 @@
           "source_id": "FISRC-b750a2ea9e7c7b76"
         },
         {
-          "description": "融资来源记录：Sable · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b95b1b353d05702f"
+          "description": "融资来源记录：Hone · 历史轮次未披露 · 个人投资者。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8c0d1c03dad4f31e"
         }
       ],
       "sources": [
@@ -301,12 +341,12 @@
           "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
         },
         {
-          "source_id": "FISRC-b95b1b353d05702f",
-          "source_url": "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million",
-          "source_title": "Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体",
-          "source_content_hash": "bc538fe3e503f8f8",
-          "quote": "Angel investors include HubSpot co-founders Brian Halligan and Dharmesh Shah, Valor’s Antonio Gracias, and Cognition CEO Scott Wu.",
-          "quote_hash": "670d8fb1c52a03d9d65f8070b6bd858552add89f44cebf65e0ce041b0498d224"
+          "source_id": "FISRC-8c0d1c03dad4f31e",
+          "source_url": "https://m.economictimes.com/tech/artificial-intelligence/former-openai-cognition-staffers-want-ai-agents-running-businesses/amp_articleshow/134794471.cms",
+          "source_title": "前OpenAI、Cognition员工希望AI智能体运营企业",
+          "source_content_hash": "a9357446332666762ff606b668b8241d81676f13bdfe55719ba3f413c3f3f0bb",
+          "quote": "Cognition CEO Scott Wu is also a personal investor in Hone.",
+          "quote_hash": "f6ccb1d1197acbc4673f0a82ba23da28d368230c77ec56b66323ebde4423ad9f"
         }
       ],
       "last_verified_at": "2026-09-25",

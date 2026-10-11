@@ -1,10 +1,75 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-10-11T01:27:49.697Z",
+  "generated_at": "2026-10-11T04:11:25.463Z",
   "data_date": "2026-10-11",
   "prompt_version": "model-assist-2026-07-18.2",
-  "source_count": 133,
+  "source_count": 144,
   "candidates": [
+    {
+      "candidate_id": "MAC-000c7d67732a16c0",
+      "task_type": "qa_repair",
+      "asset_id": "RESPONSIBLE-FUNDING-RAW-938729a2a5295d35",
+      "raw_id": "RAW-938729a2a5295d35",
+      "source_ref": "SA-e4b1b1151b76a1b5",
+      "source_hash": "d15c2a21a66b31cd",
+      "provider": "manual_review",
+      "model": "responsible_original_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "完整新闻稿明确融资；修正同文标题产品发布抽取，保留inception原轮次。通用3D生成主营，机器人仅客户场景。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Thrixel",
+            "object": "$3 million in inception funding from Sierra Ventures, MFV Partners, Harper Court Ventures, and Z5 Capital",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 3772,
+          "end": 4032,
+          "quote": "Thrixel has raised $3 million in inception funding from Sierra Ventures, MFV Partners, Harper Court Ventures, and Z5 Capital, with participation from industry leaders including AI and computer graphics researcher Jon Barron and former EA executive Matt Bilbey."
+        },
+        {
+          "start": 4047,
+          "end": 4190,
+          "quote": "Thrixel is an AI-native 3D creation platform delivering intelligent, part-based 3D generation, editing, and control for real-time applications."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:11:19.341Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-11T04:11:19.343Z",
+        "note": "同一Thrixel、创始人Rana Hanocka、300万美元、Sierra等投资方与原线索一致；新闻稿明确10月8日，已从完整正文dateline恢复日期。不将inception改成seed，不因通用3D生成服务机器人客户而排除。 原文同时核对主体、完整融资句、产品、资金方和日期，未批准实体合并。"
+      }
+    },
     {
       "candidate_id": "MAC-0015b75ca5879dd8",
       "task_type": "qa_repair",
@@ -544,6 +609,102 @@
       "generated_at": "2026-10-11T01:00:48.029Z"
     },
     {
+      "candidate_id": "MAC-11ac85020c466373",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-194d8b54a6c23e6f",
+      "raw_id": "RAW-938729a2a5295d35",
+      "source_ref": "SA-e4b1b1151b76a1b5",
+      "source_hash": "d15c2a21a66b31cd",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Thrixel",
+        "rationale": "The candidate mention 'Thrixel' refers to the 3D generation platform founded by Rana Hanocka, not to the verified alternative 'Sierra'. The source mentions Sierra Ventures as an investor, which is a different entity from Thrixel.",
+        "candidate_name": "Thrixel"
+      },
+      "evidence": [
+        {
+          "start": 487,
+          "end": 674,
+          "quote": "Thrixel, founded by University of Chicago computer scientist Rana Hanocka, launched a 3D creation platform that generates assets built from individually named parts with logical hierarchy"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:11:25.453Z"
+    },
+    {
+      "candidate_id": "MAC-132388f531ff1740",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f185be2cc585b123",
+      "raw_id": "RAW-1e282933d2f4aadb",
+      "source_ref": "SA-1cc65095e204893c",
+      "source_hash": "fa6f1ad6591a6478",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Sunfox Technologies",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative.",
+        "candidate_name": "Sunfox Technologies"
+      },
+      "evidence": [
+        {
+          "start": 221,
+          "end": 392,
+          "quote": "Medtech startup Sunfox Technologies has raised $7 million in a Series A funding round led by investors Ashish Kacholia, Lashit Sanghvi, Alchemy Capital, and 3one4 Capital."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:07:06.755Z"
+    },
+    {
       "candidate_id": "MAC-15a28fce152ae147",
       "task_type": "claim_extraction",
       "asset_id": "QA-cc21c9fc4956abb5",
@@ -971,6 +1132,71 @@
         }
       ],
       "generated_at": "2026-10-11T01:00:34.912Z"
+    },
+    {
+      "candidate_id": "MAC-1ed88804c2ca648b",
+      "task_type": "qa_repair",
+      "asset_id": "QA-9026d1a32f94ce6b",
+      "raw_id": "RAW-0775d6751861c708",
+      "source_ref": "SA-78ddb1ada2fdc3eb",
+      "source_hash": "e1010fda605a9b7f",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文确认鲲为科技完成4亿元新一轮融资；以原币和原轮次未披露处理，AI主营经产品原文审核。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "鲲为科技",
+            "object": "4 亿元新一轮融资，新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 116,
+          "end": 173,
+          "quote": "极客公园获悉，鲲为科技近期完成 4 亿元新一轮融资，新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓。"
+        },
+        {
+          "start": 1446,
+          "end": 1490,
+          "quote": "鲲为将深度神经网络引入超声回波信号的处理中，利用算力与自研 AI 模型重建三维空间结构。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:03:21.074Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-11T04:08:53.907Z",
+        "note": "极客公园独立报道同一鲲为科技、4亿元、XVC/红杉/夏尔巴/腾讯及刘家家；利用深度神经网络和自研AI模型重建三维声学空间，非机器人企业。轮次未披露，不猜A/B。 已核对融资短引和AI产品正文；只接受原文支持的事实，不接受任何实体合并或分类自动批准。"
+      }
     },
     {
       "candidate_id": "MAC-23bc5ffb6affe9fa",
@@ -1467,6 +1693,71 @@
       "generated_at": "2026-10-11T00:59:52.865Z"
     },
     {
+      "candidate_id": "MAC-3f5deb9825f78682",
+      "task_type": "qa_repair",
+      "asset_id": "QA-23b6c88c44663be7",
+      "raw_id": "RAW-7e2e01286de78e20",
+      "source_ref": "SA-1ba5045605dda682",
+      "source_hash": "a29f3e4c54de20df",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI funding event: Siena raised a $17 million Series A. The quote directly supports the funding claim and is AI-relevant because the company builds AI agents.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Siena",
+            "object": "$17 million Series A led by York IE with participation from Joyance Ventures, Aglaé Ventures, Sierra Ventures and Super Angel Fund",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 170,
+          "end": 340,
+          "quote": "We raised a $17 million Series A led by York IE, with participation from Joyance Ventures and our existing investors Aglaé Ventures, Sierra Ventures and Super Angel Fund."
+        },
+        {
+          "start": 551,
+          "end": 602,
+          "quote": "We started with an empathic customer service agent."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:03:19.839Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-11T04:08:53.900Z",
+        "note": "同一Siena、1700万美元A轮、York IE与创始人一致；公司原文10月6日确认完成融资，主营消费品牌AI代理。不能把累计2970万美元作为本轮。 已核对融资短引和AI产品正文；只接受原文支持的事实，不接受任何实体合并或分类自动批准。"
+      }
+    },
+    {
       "candidate_id": "MAC-3f70a55b98631276",
       "task_type": "claim_extraction",
       "asset_id": "QA-a7de4deb7b0d786a",
@@ -1619,6 +1910,54 @@
       "generated_at": "2026-10-11T01:12:03.580Z"
     },
     {
+      "candidate_id": "MAC-444ec31fc600b5d0",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-d01ba29d08682f7d",
+      "raw_id": "RAW-abfb13c2a2487dc3",
+      "source_ref": "SA-ed2a8305c0ca3ecb",
+      "source_hash": "67100daf1c831eb7",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Siena",
+        "rationale": "The candidate mention 'Siena' refers to a New York-based company that raised a Series A round. The verified alternative is 'Sierra', which appears in the source only as 'Sierra Ventures', an investor participating in the round. These are different entities: Siena is the funding recipient, while Sierra Ventures is an investor. The quote does not prove that Siena and Sierra are the same entity.",
+        "candidate_name": "Siena"
+      },
+      "evidence": [
+        {
+          "start": 17,
+          "end": 196,
+          "quote": "New York-based Siena has raised $17 million in a Series A round led by York IE, with participation from Joyance Ventures and existing investors Aglaé Ventures and Sierra Ventures."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:09:32.072Z"
+    },
+    {
       "candidate_id": "MAC-45508691eb863b59",
       "task_type": "qa_repair",
       "asset_id": "QA-0b3d6c48994e38b0",
@@ -1658,6 +1997,119 @@
         }
       ],
       "generated_at": "2026-10-11T01:00:40.538Z"
+    },
+    {
+      "candidate_id": "MAC-4595f329f8679916",
+      "task_type": "qa_repair",
+      "asset_id": "QA-9a19a3a77d62eece",
+      "raw_id": "RAW-d939c29a14139d9e",
+      "source_ref": "SA-699f2043f02c0a37",
+      "source_hash": "4709519e82dd87f6",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文确认鲲为科技完成4亿元新一轮融资；以原币和原轮次未披露处理，AI主营经产品原文审核。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "鲲为科技",
+            "object": "4亿元新一轮融资，新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 29,
+          "end": 91,
+          "quote": "投中网获悉，鲲为科技于近期完成4亿元新一轮融资。据工商信息显示，新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓。"
+        },
+        {
+          "start": 2166,
+          "end": 2203,
+          "quote": "这套体系与传统医学影像相比，最大的分野在于对“成像”和“空间感知”的理解。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:03:21.156Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-11T04:08:53.908Z",
+        "note": "投中采访为同一鲲为4亿元，主体创始人产品投资方均与原线索一致；以原文未披露轮次处理，不新增第二轮。 已核对融资短引和AI产品正文；只接受原文支持的事实，不接受任何实体合并或分类自动批准。"
+      }
+    },
+    {
+      "candidate_id": "MAC-46e18118886952d5",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-42cad36431d162d0",
+      "raw_id": "RAW-938729a2a5295d35",
+      "source_ref": "SA-e4b1b1151b76a1b5",
+      "source_hash": "d15c2a21a66b31cd",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "AI Researcher Rana Hanocka",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative entity. The source identifies Rana Hanocka as a University of Chicago computer scientist and Founder/CEO of Thrixel, but no verified alternative is available for comparison.",
+        "candidate_name": "AI Researcher Rana Hanocka"
+      },
+      "evidence": [
+        {
+          "start": 487,
+          "end": 773,
+          "quote": "Thrixel, founded by University of Chicago computer scientist Rana Hanocka, launched a 3D creation platform that generates assets built from individually named parts with logical hierarchy, so AI agents can identify, assemble, and animate them directly in industry-standard game engines."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:09:30.932Z"
     },
     {
       "candidate_id": "MAC-49483d9936d5d1f6",
@@ -1840,6 +2292,69 @@
         }
       ],
       "generated_at": "2026-10-11T00:59:58.537Z"
+    },
+    {
+      "candidate_id": "MAC-5134d6d2140c331b",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-731106117d35ed0d",
+      "raw_id": "RAW-0e3b7314027de8cf",
+      "source_ref": "SA-634287db13a4bbd2",
+      "source_hash": "a935744633266676",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Hone",
+            "object": "$60 million seed round",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "Benchmark and Index Ventures",
+            "object": "led the financing for Hone",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 285,
+          "end": 500,
+          "quote": "Hone is set to announce Thursday that it has raised a $60 million seed round to develop AI agents that essentially serve as professional staffers, fielding long-running tasks over the course of weeks or even months."
+        },
+        {
+          "start": 501,
+          "end": 614,
+          "quote": "Benchmark and Index Ventures led the financing, and the company is now valued at $285 million, according to Hone."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:03:19.018Z"
     },
     {
       "candidate_id": "MAC-5137a0fdca40a6d2",
@@ -2598,6 +3113,54 @@
         }
       ],
       "generated_at": "2026-10-11T01:00:40.206Z"
+    },
+    {
+      "candidate_id": "MAC-70c8e00c2e9fe3cb",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-ffd9c78c15a865c1",
+      "raw_id": "RAW-96ccfef163e4dac2",
+      "source_ref": "SA-e057cb53ae9441de",
+      "source_hash": "935d59924409c81c",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "利太智药",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative entity. The source identifies 利太智药 as an AI-native peptide drug R&D company, but there is no verified alternative to compare against.",
+        "candidate_name": "利太智药"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 46,
+          "quote": "AI-native多肽药物研发企业利太智药(LigIT)宣布完成近 5000 万元种子轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:03:18.927Z"
     },
     {
       "candidate_id": "MAC-711f39c6a5cf4a7a",
@@ -3805,6 +4368,102 @@
       "generated_at": "2026-10-11T01:00:50.129Z"
     },
     {
+      "candidate_id": "MAC-927880a6219b1a36",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-35aaf7bc032bdcdb",
+      "raw_id": "RAW-0775d6751861c708",
+      "source_ref": "SA-78ddb1ada2fdc3eb",
+      "source_hash": "e1010fda605a9b7f",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "鲲为科技",
+        "rationale": "The candidate mention 鲲为科技 is a Shenzhen company that completed a 400 million yuan financing round; the verified alternatives NVIDIA and Tencent are different entities. The source only mentions Tencent as an existing shareholder adding to its investment, and mentions NVIDIA only as an analogy for AI infrastructure, not as the same entity as 鲲为科技.",
+        "candidate_name": "鲲为科技"
+      },
+      "evidence": [
+        {
+          "start": 116,
+          "end": 173,
+          "quote": "极客公园获悉，鲲为科技近期完成 4 亿元新一轮融资，新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:400m"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:07:04.268Z"
+    },
+    {
+      "candidate_id": "MAC-9476fe05bc2d8241",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-be5329425800b5cc",
+      "raw_id": "RAW-e4d1a8135ae665dc",
+      "source_ref": "SA-dc3778e8896066fb",
+      "source_hash": "1d55d4fb27da5442",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Vocca",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative entity.",
+        "candidate_name": "Vocca"
+      },
+      "evidence": [
+        {
+          "start": 39,
+          "end": 165,
+          "quote": "Vocca announced a $20M Series A led by Norrsken VC, with participation from Heal Capital, Speedinvest and Firstminute Capital."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:07:05.552Z"
+    },
+    {
       "candidate_id": "MAC-94f14c33e52751e3",
       "task_type": "entity_resolution",
       "asset_id": "EN-58f71bec3ce7d747",
@@ -3899,6 +4558,54 @@
         }
       ],
       "generated_at": "2026-10-11T01:00:13.247Z"
+    },
+    {
+      "candidate_id": "MAC-9624dce6094a9409",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-87b256660d4a1056",
+      "raw_id": "RAW-938729a2a5295d35",
+      "source_ref": "SA-e4b1b1151b76a1b5",
+      "source_hash": "d15c2a21a66b31cd",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Thrixel",
+        "rationale": "No VERIFIED_ALTERNATIVE is provided, so same_entity cannot be chosen; the source identifies Thrixel as a 3D creation platform but there is no verified alternative to match against.",
+        "candidate_name": "Thrixel"
+      },
+      "evidence": [
+        {
+          "start": 487,
+          "end": 773,
+          "quote": "Thrixel, founded by University of Chicago computer scientist Rana Hanocka, launched a 3D creation platform that generates assets built from individually named parts with logical hierarchy, so AI agents can identify, assemble, and animate them directly in industry-standard game engines."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:09:30.839Z"
     },
     {
       "candidate_id": "MAC-96b2d3657b77ef43",
@@ -4550,6 +5257,71 @@
       "generated_at": "2026-10-11T01:12:05.132Z"
     },
     {
+      "candidate_id": "MAC-aaef9bbe699115da",
+      "task_type": "qa_repair",
+      "asset_id": "QA-2b3f82eff35d9dea",
+      "raw_id": "RAW-e4d1a8135ae665dc",
+      "source_ref": "SA-dc3778e8896066fb",
+      "source_hash": "1d55d4fb27da5442",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant funding event: Vocca announced a $20M Series A for its AI phone assistant product.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Vocca",
+            "object": "$20M Series A led by Norrsken VC, with participation from Heal Capital, Speedinvest and Firstminute Capital",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 39,
+          "end": 165,
+          "quote": "Vocca announced a $20M Series A led by Norrsken VC, with participation from Heal Capital, Speedinvest and Firstminute Capital."
+        },
+        {
+          "start": 196,
+          "end": 272,
+          "quote": "Vocca's first product is an AI phone assistant that automates patient calls."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:03:20.071Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-11T04:08:53.904Z",
+        "note": "同一Vocca医疗电话AI、2000万美元A轮及Norrsken VC一致；公告转载日期10月8日，原线索10月6日为更早披露，事实门禁需按同轮聚合，不计两次融资。 已核对融资短引和AI产品正文；只接受原文支持的事实，不接受任何实体合并或分类自动批准。"
+      }
+    },
+    {
       "candidate_id": "MAC-aafd1b59f891efca",
       "task_type": "entity_resolution",
       "asset_id": "EN-0974d0f5e33d87c6",
@@ -5007,6 +5779,54 @@
         }
       ],
       "generated_at": "2026-10-11T01:00:10.502Z"
+    },
+    {
+      "candidate_id": "MAC-bbe869e9f0234759",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-fbcfa0db29f8c8b9",
+      "raw_id": "RAW-938729a2a5295d35",
+      "source_ref": "SA-e4b1b1151b76a1b5",
+      "source_hash": "d15c2a21a66b31cd",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "UChicago AI Researcher Rana",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be matched to any verified alternative entity. The source identifies Rana Hanocka as a University of Chicago computer scientist and Thrixel's founder/CEO, but the candidate name 'UChicago AI Researcher Rana' does not exactly match any verified alternative.",
+        "candidate_name": "UChicago AI Researcher Rana"
+      },
+      "evidence": [
+        {
+          "start": 487,
+          "end": 773,
+          "quote": "Thrixel, founded by University of Chicago computer scientist Rana Hanocka, launched a 3D creation platform that generates assets built from individually named parts with logical hierarchy, so AI agents can identify, assemble, and animate them directly in industry-standard game engines."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:09:32.008Z"
     },
     {
       "candidate_id": "MAC-bbf43caca37d0af3",
@@ -6454,6 +7274,54 @@
       "generated_at": "2026-10-11T01:12:00.712Z"
     },
     {
+      "candidate_id": "MAC-e939a29e3ba2ce25",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-690c20a7a3b8b384",
+      "raw_id": "RAW-0775d6751861c708",
+      "source_ref": "SA-78ddb1ada2fdc3eb",
+      "source_hash": "e1010fda605a9b7f",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "极客公园",
+        "rationale": "The candidate name 极客公园 does not match any VERIFIED_ALTERNATIVE (NVIDIA or Tencent). The source identifies 极客公园 as the publisher of the article, not as NVIDIA or Tencent, so it is a distinct entity.",
+        "candidate_name": "极客公园"
+      },
+      "evidence": [
+        {
+          "start": 38,
+          "end": 47,
+          "quote": "（来源：极客公园）"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:07:05.034Z"
+    },
+    {
       "candidate_id": "MAC-e97b4c35d818b210",
       "task_type": "entity_resolution",
       "asset_id": "EN-111840cf28d166c5",
@@ -6548,6 +7416,54 @@
         }
       ],
       "generated_at": "2026-10-11T01:00:21.588Z"
+    },
+    {
+      "candidate_id": "MAC-eb244bbf2e629b4d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-7eed2a69df089fc8",
+      "raw_id": "RAW-af208f7d6c39ba6a",
+      "source_ref": "SA-2a14bdc91244c922",
+      "source_hash": "24be5b94c0c8fdb2",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "CurvetAI",
+        "rationale": "The candidate mention CurvetAI does not match the verified alternative Anthropic; the source only mentions Anthropic separately in an unrelated article link, and no quote proves CurvetAI refers to Anthropic.",
+        "candidate_name": "CurvetAI"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 267,
+          "quote": "Kolkata: CurvetAI, an AI workspace that brings multiple AI capabilities onto a single platform, has raised Rs 6 crore in a pre-seed funding round led by Merak Ventures, as the growing number of AI products leaves users navigating an increasingly fragmented ecosystem."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:07:05.462Z"
     },
     {
       "candidate_id": "MAC-ec3dd0a07f071bff",
@@ -6660,6 +7576,71 @@
         "reviewer": "Codex_daily_financing_owner",
         "reviewed_at": "2026-10-11T01:23:19.657Z",
         "note": "已读取网易科创板日报原文与36氪投中网授权全文，核对扩散智能DiffuSpace、2026-10-09披露、连续两轮合计数亿元及联合领投和跟投。此处接受来源绑定融资事实，非实体合并或发布批准；不得拆分未知轮次，不得将合计数亿元改为最新单轮金额。基础扩散语言模型主营由36氪长文证明，机器人为应用场景。"
+      }
+    },
+    {
+      "candidate_id": "MAC-ee929a1d9e2ae81e",
+      "task_type": "qa_repair",
+      "asset_id": "QA-c5dbcb6e00d6fd8a",
+      "raw_id": "RAW-1e282933d2f4aadb",
+      "source_ref": "SA-1cc65095e204893c",
+      "source_hash": "fa6f1ad6591a6478",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source reports a concrete funding event for Sunfox Technologies, a medtech startup that develops AI-enabled healthcare solutions, making the funding AI-relevant.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Sunfox Technologies",
+            "object": "$7 million Series A funding round led by Ashish Kacholia, Lashit Sanghvi, Alchemy Capital, and 3one4 Capital",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 221,
+          "end": 392,
+          "quote": "Medtech startup Sunfox Technologies has raised $7 million in a Series A funding round led by investors Ashish Kacholia, Lashit Sanghvi, Alchemy Capital, and 3one4 Capital."
+        },
+        {
+          "start": 1136,
+          "end": 1290,
+          "quote": "Dehradun-based Sunfox Technologies develops portable and AI-enabled healthcare solutions, with a focus on diagnostic access, particularly in cardiac care."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:03:22.115Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-11T04:08:53.909Z",
+        "note": "同一Sunfox、700万美元A轮、创始人Rajat Jain、Spandan便携AI心电诊断产品一致；2024年1500万卢比crore前A轮为历史，不能计成本轮。 已核对融资短引和AI产品正文；只接受原文支持的事实，不接受任何实体合并或分类自动批准。"
       }
     },
     {
@@ -7082,6 +8063,54 @@
         }
       ],
       "generated_at": "2026-10-11T01:00:45.401Z"
+    },
+    {
+      "candidate_id": "MAC-fc0fe0a2cce861ac",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-6528f84b7b8653d7",
+      "raw_id": "RAW-0e3b7314027de8cf",
+      "source_ref": "SA-634287db13a4bbd2",
+      "source_hash": "a935744633266676",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Hone",
+        "rationale": "The candidate mention 'Hone' refers to a new company founded by former employees of OpenAI and Cognition, not to OpenAI itself. The quote identifies Hone as a separate startup raising a seed round, so it is not the same entity as the verified alternative OpenAI.",
+        "candidate_name": "Hone"
+      },
+      "evidence": [
+        {
+          "start": 285,
+          "end": 500,
+          "quote": "Hone is set to announce Thursday that it has raised a $60 million seed round to develop AI agents that essentially serve as professional staffers, fielding long-running tasks over the course of weeks or even months."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-11T04:07:04.440Z"
     },
     {
       "candidate_id": "MAC-fcc562d2b4299b90",

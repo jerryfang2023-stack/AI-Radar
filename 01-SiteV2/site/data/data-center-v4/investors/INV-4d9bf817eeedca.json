@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-11",
     "currentDate": "2026-10-11",
-    "eventCount": 4055,
+    "eventCount": 4063,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-18",
-    "latest_disclosed_at": "2026-02-18",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 1,
+      "lead": 1
     },
     "round_codes": [
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-f185be2cc585b123",
+        "canonical_entity_id": "",
+        "name": "Sunfox Technologies"
+      },
       {
         "entity_id": "EN-2e0b2975bf95b561",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-898d58ae2563d401",
+        "funding_insight_id": "FI-1c8ea9f2981fceee",
+        "event_ids": [
+          "EV-194da2243f431082"
+        ],
+        "company_entity_id": "EN-f185be2cc585b123",
+        "company_canonical_entity_id": "",
+        "company_name": "Sunfox Technologies",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "700 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7386ce9d5540e0e9",
+            "source_url": "https://www.digitalhealthnews.com/medtech-startup-sunfox-technologies-raises-7-mn-in-series-a-round-to-expand-its-footprint",
+            "source_title": "医疗科技初创公司Sunfox Technologies在A轮融资中筹集700万美元，以扩大其业务版图",
+            "source_content_hash": "fa6f1ad6591a64784c906e2caa2da3708821007e7e3d641e5564320c7f182635",
+            "quote": "Medtech startup Sunfox Technologies has raised $7 million in a Series A funding round led by investors Ashish Kacholia, Lashit Sanghvi, Alchemy Capital, and 3one4 Capital.",
+            "quote_hash": "ecf7db1ebc7c6551fe401575c1c7c07f2140843f0925bb8f4705d76d8e411684"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1a551e4d85de0387",
         "funding_insight_id": "FI-7fc7c619bb825b34",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7386ce9d5540e0e9",
+        "source_url": "https://www.digitalhealthnews.com/medtech-startup-sunfox-technologies-raises-7-mn-in-series-a-round-to-expand-its-footprint",
+        "source_title": "医疗科技初创公司Sunfox Technologies在A轮融资中筹集700万美元，以扩大其业务版图",
+        "source_content_hash": "fa6f1ad6591a64784c906e2caa2da3708821007e7e3d641e5564320c7f182635",
+        "quote": "Medtech startup Sunfox Technologies has raised $7 million in a Series A funding round led by investors Ashish Kacholia, Lashit Sanghvi, Alchemy Capital, and 3one4 Capital.",
+        "quote_hash": "ecf7db1ebc7c6551fe401575c1c7c07f2140843f0925bb8f4705d76d8e411684"
+      },
+      {
         "source_id": "FISRC-7f3013f24d769a11",
         "source_url": "https://india.entrepreneur.com/news-and-trends/fabless-semiconductor-startup-vervesemi-raises-usd-10-mn-in/502790",
         "source_title": "无晶圆厂半导体初创公司Vervesemi在A轮融资中筹集1000万美元",
@@ -141,10 +195,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Ashish Kacholia 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Ashish Kacholia 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Sunfox Technologies · A轮 · 2026-10-08 · 本轮领投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7386ce9d5540e0e9"
+        },
         {
           "description": "融资来源记录：Vervesemi Microelectronics · A轮 · 2026-02-18 · 本轮联合领投 · 10 million USD。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7f3013f24d769a11"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-7386ce9d5540e0e9",
+          "source_url": "https://www.digitalhealthnews.com/medtech-startup-sunfox-technologies-raises-7-mn-in-series-a-round-to-expand-its-footprint",
+          "source_title": "医疗科技初创公司Sunfox Technologies在A轮融资中筹集700万美元，以扩大其业务版图",
+          "source_content_hash": "fa6f1ad6591a64784c906e2caa2da3708821007e7e3d641e5564320c7f182635",
+          "quote": "Medtech startup Sunfox Technologies has raised $7 million in a Series A funding round led by investors Ashish Kacholia, Lashit Sanghvi, Alchemy Capital, and 3one4 Capital.",
+          "quote_hash": "ecf7db1ebc7c6551fe401575c1c7c07f2140843f0925bb8f4705d76d8e411684"
+        },
         {
           "source_id": "FISRC-7f3013f24d769a11",
           "source_url": "https://india.entrepreneur.com/news-and-trends/fabless-semiconductor-startup-vervesemi-raises-usd-10-mn-in/502790",

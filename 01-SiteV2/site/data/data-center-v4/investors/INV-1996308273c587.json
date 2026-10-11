@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-11",
     "currentDate": "2026-10-11",
-    "eventCount": 4055,
+    "eventCount": 4063,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -73,14 +73,15 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-03",
-    "latest_disclosed_at": "2026-09-28",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 3,
-      "lead": 1,
+      "lead": 2,
       "participant": 5
     },
     "round_codes": [
+      "seed",
       "series_a",
       "series_a_extension",
       "series_b",
@@ -100,6 +101,11 @@
         "name": "Cognition AI"
       },
       {
+        "entity_id": "EN-6528f84b7b8653d7",
+        "canonical_entity_id": "",
+        "name": "Hone"
+      },
+      {
         "entity_id": "FICO-instinct",
         "canonical_entity_id": "",
         "name": "Instinct"
@@ -116,6 +122,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ab769fd4ed7975af",
+        "funding_insight_id": "FI-a42717e5e5dfeb81",
+        "event_ids": [
+          "EV-45559cdee71aaa17"
+        ],
+        "company_entity_id": "EN-6528f84b7b8653d7",
+        "company_canonical_entity_id": "",
+        "company_name": "Hone",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-8c0d1c03dad4f31e",
+            "source_url": "https://m.economictimes.com/tech/artificial-intelligence/former-openai-cognition-staffers-want-ai-agents-running-businesses/amp_articleshow/134794471.cms",
+            "source_title": "前OpenAI、Cognition员工希望AI智能体运营企业",
+            "source_content_hash": "a9357446332666762ff606b668b8241d81676f13bdfe55719ba3f413c3f3f0bb",
+            "quote": "Benchmark and Index Ventures led the financing",
+            "quote_hash": "e18707e5b2b7067aced012102e016be904e4a344e13751575f5ab06cb45b01cb"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0cb474b0a6640986",
         "funding_insight_id": "FI-4b143304af694a92",
@@ -541,6 +587,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-8c0d1c03dad4f31e",
+        "source_url": "https://m.economictimes.com/tech/artificial-intelligence/former-openai-cognition-staffers-want-ai-agents-running-businesses/amp_articleshow/134794471.cms",
+        "source_title": "前OpenAI、Cognition员工希望AI智能体运营企业",
+        "source_content_hash": "a9357446332666762ff606b668b8241d81676f13bdfe55719ba3f413c3f3f0bb",
+        "quote": "Benchmark and Index Ventures led the financing",
+        "quote_hash": "e18707e5b2b7067aced012102e016be904e4a344e13751575f5ab06cb45b01cb"
+      },
+      {
         "source_id": "FISRC-61d399294cc620a4",
         "source_url": "https://www.ithome.com/1/008/060.htm",
         "source_title": "AI 初创公司 Instinct 完成 10 亿美元融资，投后估值达 100 亿美元",
@@ -678,12 +732,12 @@
           "source_id": "benchmark_instinct"
         },
         {
-          "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61d399294cc620a4"
+          "description": "融资来源记录：Hone · 种子轮 · 2026-10-08 · 本轮领投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8c0d1c03dad4f31e"
         },
         {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
+          "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-61d399294cc620a4"
         }
       ],
       "contacts": [
@@ -735,6 +789,14 @@
           "quote_hash": "670df8237bdcca7f69e9383728e8fb609db69e4dc603334230596f80fba3706c"
         },
         {
+          "source_id": "FISRC-8c0d1c03dad4f31e",
+          "source_url": "https://m.economictimes.com/tech/artificial-intelligence/former-openai-cognition-staffers-want-ai-agents-running-businesses/amp_articleshow/134794471.cms",
+          "source_title": "前OpenAI、Cognition员工希望AI智能体运营企业",
+          "source_content_hash": "a9357446332666762ff606b668b8241d81676f13bdfe55719ba3f413c3f3f0bb",
+          "quote": "Benchmark and Index Ventures led the financing",
+          "quote_hash": "e18707e5b2b7067aced012102e016be904e4a344e13751575f5ab06cb45b01cb"
+        },
+        {
           "source_id": "FISRC-61d399294cc620a4",
           "source_url": "https://www.ithome.com/1/008/060.htm",
           "source_title": "AI 初创公司 Instinct 完成 10 亿美元融资，投后估值达 100 亿美元",
@@ -749,14 +811,6 @@
           "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
           "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
           "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
         }
       ],
       "last_verified_at": "2026-09-26",
@@ -767,7 +821,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[8].role": {
+        "activities[9].role": {
           "text": "Venture Round 参投",
           "source_hash": "06c87ef49262ae10ee600994008f183c80d7e1cd9788cd80d3ef49509dceba0e",
           "provider": "deepseek",
@@ -775,7 +829,7 @@
           "translated_at": "2026-10-02T06:25:20.177Z",
           "status": "translated"
         },
-        "activities[9].role": {
+        "activities[10].role": {
           "text": "Series B 联合领投",
           "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
           "provider": "deepseek",
