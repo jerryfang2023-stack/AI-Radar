@@ -2185,5 +2185,27 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-63dc6aad10392e34",
+    "raw_id": "RAW-a2416be8663ba8e1",
+    "claim_type": "funding",
+    "subject": "DiffuSpace",
+    "predicate": "funding",
+    "object": "连续完成两轮融资，由经纬创投、顺为资本、君联资本联合领投，中科创星、华为哈勃、地平线等跟投，总金额达数亿元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ed0608239d8e0297"
+    },
+    "source_span": {
+      "raw_id": "RAW-a2416be8663ba8e1",
+      "start": 66,
+      "end": 176
+    },
+    "source_quote": "扩散智能DiffuSpace（下称“DiffuSpace”）已连续完成两轮融资，由经纬创投、顺为资本、君联资本联合领投，中科创星、华为哈勃、地平线等跟投，总金额达数亿元，创下全球扩散语言模型（dLLM）最大规模融资纪录。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
   }
 ]
