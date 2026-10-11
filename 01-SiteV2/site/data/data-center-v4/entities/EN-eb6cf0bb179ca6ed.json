@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-10",
-    "currentDate": "2026-10-10",
-    "eventCount": 4049,
+    "latestDataDate": "2026-10-11",
+    "currentDate": "2026-10-11",
+    "eventCount": 4054,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,7 +64,8 @@
     ],
     "eventIds": [
       "EV-f53bfa2bb0275904",
-      "EV-5d81946ecc60b668"
+      "EV-5d81946ecc60b668",
+      "EV-cd494c4d5815b505"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -72,14 +73,16 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-10-02",
+    "lastSeen": "2026-10-11",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-f53bfa2bb0275904",
         "EV-5d81946ecc60b668"
       ],
-      "deployments": [],
+      "deployments": [
+        "EV-cd494c4d5815b505"
+      ],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
@@ -87,6 +90,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-cd494c4d5815b505",
+        "dataDate": "2026-10-11",
+        "date": "2026-10-08",
+        "eventType": "market_expansion",
+        "eventTypeLabel": "市场扩张",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "快速增长的AI初创公司Nscale将贝尔维尤办公室面积翻倍至46K平方英尺",
+        "displayTags": [],
+        "entityIds": [
+          "EN-eb6cf0bb179ca6ed"
+        ]
+      },
       {
         "id": "EV-f53bfa2bb0275904",
         "dataDate": "2026-10-02",
