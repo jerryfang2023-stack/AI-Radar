@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-11",
     "currentDate": "2026-10-11",
-    "eventCount": 4055,
+    "eventCount": 4063,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,78 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-24",
-    "latest_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "lead": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-e23228440ca5340f",
         "canonical_entity_id": "",
         "name": "Seltz"
+      },
+      {
+        "entity_id": "EN-be5329425800b5cc",
+        "canonical_entity_id": "",
+        "name": "Vocca"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-994c5d2ed96cdf18",
+        "funding_insight_id": "FI-b8006de398f60832",
+        "event_ids": [
+          "EV-72b9c45a713e9d6f"
+        ],
+        "company_entity_id": "EN-be5329425800b5cc",
+        "company_canonical_entity_id": "",
+        "company_name": "Vocca",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$20M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4b2501946675440",
+            "source_url": "https://www.prnewswire.com/news-releases/vocca-raises-20m-after-growing-from-2-000-to-15-000-medical-practitioners-in-a-year-302902414.html",
+            "source_title": "Vocca 在一年内从 2,000 名医疗从业者增长至 15,000 名后融资 2000 万美元",
+            "source_content_hash": "832b44487090846987c7638ef575fbcf07d85ab7b61a962dfd33cda6a41925a5",
+            "quote": "Vocca announced a $20M Series A led by Norrsken VC, with participation from Heal Capital, Speedinvest and Firstminute Capital.",
+            "quote_hash": "e44afcf666d53786b1232f3725cb8a818db8cbe87ce13276089b8125828e634b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8abe6b8a7bdd8868",
         "funding_insight_id": "FI-180a459d0573eb2a",
@@ -125,9 +173,49 @@
             "quote_hash": "b68bf6c771cbe20280d08f6c63dfd6539e7a25e0e0151d64b99b2f0be98c15ce"
           }
         ]
+      },
+      {
+        "activity_id": "IA-8d3b95b931068f5a",
+        "funding_insight_id": "FI-b8006de398f60832",
+        "event_ids": [
+          "EV-72b9c45a713e9d6f"
+        ],
+        "company_entity_id": "EN-be5329425800b5cc",
+        "company_canonical_entity_id": "",
+        "company_name": "Vocca",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1dc0ddde95bcb5a9",
+            "source_url": "https://techfundingnews.com/vocca-raises-20m-series-a-led-by-norrsken-vc-to-answer-medical-practices-phones-with-ai/",
+            "source_title": "Vocca raises $20M Series A led by Norrsken VC to answer medical practices&#8217; phones with AI",
+            "source_content_hash": "f7ec4503d8b96042",
+            "quote": "Speedinvest and Firstminute co-led Vocca’s $5.5 million seed round in September 2025.",
+            "quote_hash": "1dfd59148597a616cb4395765f13c809fc5bb857208d80f3b27907f6850b6307"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c4b2501946675440",
+        "source_url": "https://www.prnewswire.com/news-releases/vocca-raises-20m-after-growing-from-2-000-to-15-000-medical-practitioners-in-a-year-302902414.html",
+        "source_title": "Vocca 在一年内从 2,000 名医疗从业者增长至 15,000 名后融资 2000 万美元",
+        "source_content_hash": "832b44487090846987c7638ef575fbcf07d85ab7b61a962dfd33cda6a41925a5",
+        "quote": "Vocca announced a $20M Series A led by Norrsken VC, with participation from Heal Capital, Speedinvest and Firstminute Capital.",
+        "quote_hash": "e44afcf666d53786b1232f3725cb8a818db8cbe87ce13276089b8125828e634b"
+      },
       {
         "source_id": "FISRC-05007e2b6b43ffda",
         "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
@@ -135,6 +223,14 @@
         "source_content_hash": "4affcb58ccdfce57",
         "quote": "The round was led by Speedinvest and B Capital.",
         "quote_hash": "b68bf6c771cbe20280d08f6c63dfd6539e7a25e0e0151d64b99b2f0be98c15ce"
+      },
+      {
+        "source_id": "FISRC-1dc0ddde95bcb5a9",
+        "source_url": "https://techfundingnews.com/vocca-raises-20m-series-a-led-by-norrsken-vc-to-answer-medical-practices-phones-with-ai/",
+        "source_title": "Vocca raises $20M Series A led by Norrsken VC to answer medical practices&#8217; phones with AI",
+        "source_content_hash": "f7ec4503d8b96042",
+        "quote": "Speedinvest and Firstminute co-led Vocca’s $5.5 million seed round in September 2025.",
+        "quote_hash": "1dfd59148597a616cb4395765f13c809fc5bb857208d80f3b27907f6850b6307"
       }
     ],
     "public_profile": {
@@ -170,8 +266,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Vocca · A轮 · 2026-10-08 · 本轮参投 · $20M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4b2501946675440"
+        },
+        {
           "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮领投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05007e2b6b43ffda"
+        },
+        {
+          "description": "融资来源记录：Vocca · 历史轮次未披露 · 种子轮联合领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1dc0ddde95bcb5a9"
         }
       ],
       "contacts": [
@@ -201,12 +305,28 @@
           "quote_hash": "adcdded30c3736a6dc9dd7f9a89907d720148a9616d3341b2af47304bb497e84"
         },
         {
+          "source_id": "FISRC-c4b2501946675440",
+          "source_url": "https://www.prnewswire.com/news-releases/vocca-raises-20m-after-growing-from-2-000-to-15-000-medical-practitioners-in-a-year-302902414.html",
+          "source_title": "Vocca 在一年内从 2,000 名医疗从业者增长至 15,000 名后融资 2000 万美元",
+          "source_content_hash": "832b44487090846987c7638ef575fbcf07d85ab7b61a962dfd33cda6a41925a5",
+          "quote": "Vocca announced a $20M Series A led by Norrsken VC, with participation from Heal Capital, Speedinvest and Firstminute Capital.",
+          "quote_hash": "e44afcf666d53786b1232f3725cb8a818db8cbe87ce13276089b8125828e634b"
+        },
+        {
           "source_id": "FISRC-05007e2b6b43ffda",
           "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
           "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
           "source_content_hash": "4affcb58ccdfce57",
           "quote": "The round was led by Speedinvest and B Capital.",
           "quote_hash": "b68bf6c771cbe20280d08f6c63dfd6539e7a25e0e0151d64b99b2f0be98c15ce"
+        },
+        {
+          "source_id": "FISRC-1dc0ddde95bcb5a9",
+          "source_url": "https://techfundingnews.com/vocca-raises-20m-series-a-led-by-norrsken-vc-to-answer-medical-practices-phones-with-ai/",
+          "source_title": "Vocca raises $20M Series A led by Norrsken VC to answer medical practices&#8217; phones with AI",
+          "source_content_hash": "f7ec4503d8b96042",
+          "quote": "Speedinvest and Firstminute co-led Vocca’s $5.5 million seed round in September 2025.",
+          "quote_hash": "1dfd59148597a616cb4395765f13c809fc5bb857208d80f3b27907f6850b6307"
         }
       ],
       "last_verified_at": "2026-10-05"

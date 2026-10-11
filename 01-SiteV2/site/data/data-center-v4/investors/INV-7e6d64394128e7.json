@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-11",
     "currentDate": "2026-10-11",
-    "eventCount": 4055,
+    "eventCount": 4063,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 13,
-    "portfolio_company_count": 11,
+    "portfolio_company_count": 12,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 10,
-    "china_market_company_count": 10,
+    "china_market_activity_count": 11,
+    "china_market_company_count": 11,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-09-16",
+    "latest_disclosed_at": "2026-10-09",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 13,
       "lead": 1,
-      "participant": 8
+      "participant": 9
     },
     "round_codes": [
       "angel",
@@ -85,13 +85,19 @@
       "pre_series_a",
       "series_a",
       "series_a_plus_plus",
-      "series_b"
+      "series_b",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-b3c628b196bfbbe9",
         "canonical_entity_id": "EN-b3c628b196bfbbe9",
         "name": "贝联珠贯"
+      },
+      {
+        "entity_id": "EN-35aaf7bc032bdcdb",
+        "canonical_entity_id": "",
+        "name": "鲲为科技"
       },
       {
         "entity_id": "EN-e22521e7de65d819",
@@ -145,6 +151,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b378e35d32d7c783",
+        "funding_insight_id": "FI-55c412cc6616d862",
+        "event_ids": [
+          "EV-89cbf15ddbd98a05"
+        ],
+        "company_entity_id": "EN-35aaf7bc032bdcdb",
+        "company_canonical_entity_id": "",
+        "company_name": "鲲为科技",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "4 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿元"
+        },
+        "announced_at": "2026-10-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a60cc435d9a05afa",
+            "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
+            "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
+            "source_content_hash": "055ec97a57c5a5c2cc04b1f21f35d6d65aa66daf51ea86d8e69c0ec17436eb68",
+            "quote": "新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+            "quote_hash": "954502a15ae1260ff16f8e6d5d1e6f7f890e5f94b7757d266a568bef0d11140c"
+          },
+          {
+            "source_id": "FISRC-3f68d59028d2ba98",
+            "source_url": "https://www.chinaventure.com.cn/news/111-20261009-393542.html",
+            "source_title": "首发｜从“没人相信”到4亿元新融资：刘家家定义脑科学Infra",
+            "source_content_hash": "4485c3ef38069f76",
+            "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+            "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6543e6ea619ef96e",
         "funding_insight_id": "FI-e81dafc2defecb80",
@@ -1021,6 +1075,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a60cc435d9a05afa",
+        "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
+        "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
+        "source_content_hash": "055ec97a57c5a5c2cc04b1f21f35d6d65aa66daf51ea86d8e69c0ec17436eb68",
+        "quote": "新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+        "quote_hash": "954502a15ae1260ff16f8e6d5d1e6f7f890e5f94b7757d266a568bef0d11140c"
+      },
+      {
+        "source_id": "FISRC-3f68d59028d2ba98",
+        "source_url": "https://www.chinaventure.com.cn/news/111-20261009-393542.html",
+        "source_title": "首发｜从“没人相信”到4亿元新融资：刘家家定义脑科学Infra",
+        "source_content_hash": "4485c3ef38069f76",
+        "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+        "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
+      },
+      {
         "source_id": "FISRC-a2c9854f5230d423",
         "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
         "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
@@ -1270,16 +1340,12 @@
           "source_id": "hongshan_about"
         },
         {
+          "description": "融资来源记录：鲲为科技 · 轮次未披露 · 2026-10-09 · 本轮参投 · 4 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a60cc435d9a05afa"
+        },
+        {
           "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a2c9854f5230d423"
-        },
-        {
-          "description": "融资来源记录：数美万物 · 多轮融资 · 2026-08-20 · 本轮参投 · 近5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0dd42e7d7de8bcd9"
-        },
-        {
-          "description": "融资来源记录：贝联珠贯 · A轮 · 2026-07-30 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-66fcc0a528f97b62"
         }
       ],
       "contacts": [
@@ -1308,28 +1374,28 @@
           "quote_hash": "f4d15ec4b3e8343bd9c848911b95fbf6648ba3eaa4b2a17ef1b4616f96e8143f"
         },
         {
+          "source_id": "FISRC-a60cc435d9a05afa",
+          "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
+          "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
+          "source_content_hash": "055ec97a57c5a5c2cc04b1f21f35d6d65aa66daf51ea86d8e69c0ec17436eb68",
+          "quote": "新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+          "quote_hash": "954502a15ae1260ff16f8e6d5d1e6f7f890e5f94b7757d266a568bef0d11140c"
+        },
+        {
+          "source_id": "FISRC-3f68d59028d2ba98",
+          "source_url": "https://www.chinaventure.com.cn/news/111-20261009-393542.html",
+          "source_title": "首发｜从“没人相信”到4亿元新融资：刘家家定义脑科学Infra",
+          "source_content_hash": "4485c3ef38069f76",
+          "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+          "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
+        },
+        {
           "source_id": "FISRC-a2c9854f5230d423",
           "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
           "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
           "source_content_hash": "2bb10add5e428ec5",
           "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
           "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
-        },
-        {
-          "source_id": "FISRC-0dd42e7d7de8bcd9",
-          "source_url": "https://rccaijing.com/news-7496079406088779054.html",
-          "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
-          "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
-          "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
-          "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
-        },
-        {
-          "source_id": "FISRC-66fcc0a528f97b62",
-          "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
-          "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，垂直领域AI Agent赛道再获认可_新浪财经_新浪网",
-          "source_content_hash": "c58547114571e365",
-          "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
-          "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
         }
       ],
       "last_verified_at": "2026-09-25",

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-11",
     "currentDate": "2026-10-11",
-    "eventCount": 4055,
+    "eventCount": 4063,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 8,
-    "china_market_company_count": 6,
+    "china_market_activity_count": 9,
+    "china_market_company_count": 7,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-09-04",
+    "latest_disclosed_at": "2026-10-09",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 5,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "angel",
@@ -82,9 +82,15 @@
       "multi_round",
       "other",
       "pre_series_b",
-      "series_b_plus"
+      "series_b_plus",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-35aaf7bc032bdcdb",
+        "canonical_entity_id": "",
+        "name": "鲲为科技"
+      },
       {
         "entity_id": "EN-a3802b1f5a583189",
         "canonical_entity_id": "EN-a3802b1f5a583189",
@@ -117,6 +123,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6bf286aef059e81a",
+        "funding_insight_id": "FI-55c412cc6616d862",
+        "event_ids": [
+          "EV-89cbf15ddbd98a05"
+        ],
+        "company_entity_id": "EN-35aaf7bc032bdcdb",
+        "company_canonical_entity_id": "",
+        "company_name": "鲲为科技",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "4 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿元"
+        },
+        "announced_at": "2026-10-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a60cc435d9a05afa",
+            "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
+            "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
+            "source_content_hash": "055ec97a57c5a5c2cc04b1f21f35d6d65aa66daf51ea86d8e69c0ec17436eb68",
+            "quote": "新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+            "quote_hash": "954502a15ae1260ff16f8e6d5d1e6f7f890e5f94b7757d266a568bef0d11140c"
+          },
+          {
+            "source_id": "FISRC-3f68d59028d2ba98",
+            "source_url": "https://www.chinaventure.com.cn/news/111-20261009-393542.html",
+            "source_title": "首发｜从“没人相信”到4亿元新融资：刘家家定义脑科学Infra",
+            "source_content_hash": "4485c3ef38069f76",
+            "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+            "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8e851719ebf599c5",
         "funding_insight_id": "FI-4a45f01cccfbfed5",
@@ -611,6 +665,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a60cc435d9a05afa",
+        "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
+        "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
+        "source_content_hash": "055ec97a57c5a5c2cc04b1f21f35d6d65aa66daf51ea86d8e69c0ec17436eb68",
+        "quote": "新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+        "quote_hash": "954502a15ae1260ff16f8e6d5d1e6f7f890e5f94b7757d266a568bef0d11140c"
+      },
+      {
+        "source_id": "FISRC-3f68d59028d2ba98",
+        "source_url": "https://www.chinaventure.com.cn/news/111-20261009-393542.html",
+        "source_title": "首发｜从“没人相信”到4亿元新融资：刘家家定义脑科学Infra",
+        "source_content_hash": "4485c3ef38069f76",
+        "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+        "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
+      },
+      {
         "source_id": "FISRC-2ea62510cec1d311",
         "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
         "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
@@ -774,16 +844,12 @@
           "source_id": "tencent_investment_strategy_2020"
         },
         {
+          "description": "融资来源记录：鲲为科技 · 轮次未披露 · 2026-10-09 · 本轮参投 · 4 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a60cc435d9a05afa"
+        },
+        {
           "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-09-04 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2ea62510cec1d311"
-        },
-        {
-          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-08-24 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2ec9a5e83ce18f75"
-        },
-        {
-          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮联合领投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bea9d0be613bc1cd"
         }
       ],
       "contacts": [
@@ -851,28 +917,28 @@
           "quote_hash": "de3feafcd81368d41be78c53253a89b9ddd2c9c32424cf40089015550080528c"
         },
         {
+          "source_id": "FISRC-a60cc435d9a05afa",
+          "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
+          "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
+          "source_content_hash": "055ec97a57c5a5c2cc04b1f21f35d6d65aa66daf51ea86d8e69c0ec17436eb68",
+          "quote": "新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+          "quote_hash": "954502a15ae1260ff16f8e6d5d1e6f7f890e5f94b7757d266a568bef0d11140c"
+        },
+        {
+          "source_id": "FISRC-3f68d59028d2ba98",
+          "source_url": "https://www.chinaventure.com.cn/news/111-20261009-393542.html",
+          "source_title": "首发｜从“没人相信”到4亿元新融资：刘家家定义脑科学Infra",
+          "source_content_hash": "4485c3ef38069f76",
+          "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+          "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
+        },
+        {
           "source_id": "FISRC-2ea62510cec1d311",
           "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
           "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
           "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
           "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
           "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
-        },
-        {
-          "source_id": "FISRC-2ec9a5e83ce18f75",
-          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
-          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-          "source_content_hash": "b8e4f0b869df00ee",
-          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
-          "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
-        },
-        {
-          "source_id": "FISRC-bea9d0be613bc1cd",
-          "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
-          "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
-          "source_content_hash": "311224a4dfb089df",
-          "quote": "本次融资由阿里巴巴、腾讯联合领投",
-          "quote_hash": "98b7d1967cc53e05ee6fae09461995df935db30454c5bf6627dc724464483c92"
         }
       ],
       "last_verified_at": "2026-09-25",

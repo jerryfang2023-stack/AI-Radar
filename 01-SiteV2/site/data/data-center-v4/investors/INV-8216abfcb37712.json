@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-11",
     "currentDate": "2026-10-11",
-    "eventCount": 4055,
+    "eventCount": 4063,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,37 +54,93 @@
   },
   "institution": {
     "id": "INV-8216abfcb37712",
-    "name": "AGLAÉ VENTURES",
-    "aliases": [],
+    "name": "Aglaé Ventures",
+    "aliases": [
+      "AGLAÉ VENTURES"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-03-12",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-a83a3af1a4866fd5",
         "canonical_entity_id": "",
         "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-d01ba29d08682f7d",
+        "canonical_entity_id": "",
+        "name": "Siena"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-bd01fb2943379887",
+        "funding_insight_id": "FI-5285254e515dcc0d",
+        "event_ids": [
+          "EV-6ade8a1ffb49d6c3"
+        ],
+        "company_entity_id": "EN-d01ba29d08682f7d",
+        "company_canonical_entity_id": "",
+        "company_name": "Siena",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$17 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1700 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1dd0c1ce61a7b23b",
+            "source_url": "https://aipressroom.com/siena-17m-ai-agents/",
+            "source_title": "Siena 融资 1700 万美元，扩展 AI 客户智能体",
+            "source_content_hash": "67100daf1c831eb702331c31a7123fb2bd96a926d14c6ae0e4c79a9934cb78d0",
+            "quote": "raised $17 million in a Series A round led by York IE, with participation from Joyance Ventures and existing investors Aglaé Ventures and Sierra Ventures",
+            "quote_hash": "952ca6e685b0c261c9632ca3bea507816f7f2608e6fa68985a6896993ad09560"
+          },
+          {
+            "source_id": "FISRC-696d9e4c630a4acb",
+            "source_url": "https://www.siena.cx/blog/siena-raises-17m-series-a?trk=public_post_comment-text",
+            "source_title": "Siena Raises $17M Series A to Build the Agent of Record",
+            "source_content_hash": "c64971f2bb92f5c9",
+            "quote": "We raised a $17 million Series A led by York IE, with participation from Joyance Ventures and our existing investors Aglaé Ventures, Sierra Ventures and Super Angel Fund.",
+            "quote_hash": "995565239db022c5352905c5170e3f9538e62163defc19bd9117020cd6176ae4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b27246b8aea7ef80",
         "funding_insight_id": "FI-9c3c02658ff94312",
@@ -127,6 +183,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1dd0c1ce61a7b23b",
+        "source_url": "https://aipressroom.com/siena-17m-ai-agents/",
+        "source_title": "Siena 融资 1700 万美元，扩展 AI 客户智能体",
+        "source_content_hash": "67100daf1c831eb702331c31a7123fb2bd96a926d14c6ae0e4c79a9934cb78d0",
+        "quote": "raised $17 million in a Series A round led by York IE, with participation from Joyance Ventures and existing investors Aglaé Ventures and Sierra Ventures",
+        "quote_hash": "952ca6e685b0c261c9632ca3bea507816f7f2608e6fa68985a6896993ad09560"
+      },
+      {
+        "source_id": "FISRC-696d9e4c630a4acb",
+        "source_url": "https://www.siena.cx/blog/siena-raises-17m-series-a?trk=public_post_comment-text",
+        "source_title": "Siena Raises $17M Series A to Build the Agent of Record",
+        "source_content_hash": "c64971f2bb92f5c9",
+        "quote": "We raised a $17 million Series A led by York IE, with participation from Joyance Ventures and our existing investors Aglaé Ventures, Sierra Ventures and Super Angel Fund.",
+        "quote_hash": "995565239db022c5352905c5170e3f9538e62163defc19bd9117020cd6176ae4"
+      },
       {
         "source_id": "FISRC-f7589987753ab2c6",
         "source_url": "https://www.linkedin.com/posts/cathay-innovation_ami-labs-x-cathay-innovation-activity-7437049850921152513-l6Ou",
@@ -173,6 +245,10 @@
         {
           "description": "A Cathay Innovation post on AMI Labs’ 2026 seed financing lists Aglaé Ventures among the investors. The reported round total is not Aglaé’s individual contribution.",
           "source_id": "FISRC-f7589987753ab2c6"
+        },
+        {
+          "description": "融资来源记录：Siena · A轮 · 2026-10-08 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1dd0c1ce61a7b23b"
         }
       ],
       "contacts": [
@@ -208,6 +284,22 @@
           "source_content_hash": "8a90e9cfb18401ae",
           "quote": "AGLAÉ VENTURES",
           "quote_hash": "b4deac3d88b72e767c0dbc5fada4a7f1c0d4611dfeaed450234621de2fcbd38e"
+        },
+        {
+          "source_id": "FISRC-1dd0c1ce61a7b23b",
+          "source_url": "https://aipressroom.com/siena-17m-ai-agents/",
+          "source_title": "Siena 融资 1700 万美元，扩展 AI 客户智能体",
+          "source_content_hash": "67100daf1c831eb702331c31a7123fb2bd96a926d14c6ae0e4c79a9934cb78d0",
+          "quote": "raised $17 million in a Series A round led by York IE, with participation from Joyance Ventures and existing investors Aglaé Ventures and Sierra Ventures",
+          "quote_hash": "952ca6e685b0c261c9632ca3bea507816f7f2608e6fa68985a6896993ad09560"
+        },
+        {
+          "source_id": "FISRC-696d9e4c630a4acb",
+          "source_url": "https://www.siena.cx/blog/siena-raises-17m-series-a?trk=public_post_comment-text",
+          "source_title": "Siena Raises $17M Series A to Build the Agent of Record",
+          "source_content_hash": "c64971f2bb92f5c9",
+          "quote": "We raised a $17 million Series A led by York IE, with participation from Joyance Ventures and our existing investors Aglaé Ventures, Sierra Ventures and Super Angel Fund.",
+          "quote_hash": "995565239db022c5352905c5170e3f9538e62163defc19bd9117020cd6176ae4"
         }
       ],
       "last_verified_at": "2026-09-27"

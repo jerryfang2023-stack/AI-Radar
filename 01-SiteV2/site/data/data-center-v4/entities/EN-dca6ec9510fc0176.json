@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-11",
     "currentDate": "2026-10-11",
-    "eventCount": 4055,
+    "eventCount": 4063,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-53c610b37492dd1b",
+      "EV-6ade8a1ffb49d6c3",
       "EV-938ec16c395bded1",
       "EV-914ca1cbc6359ce5",
       "EV-64fb6d791e19d10a",
@@ -82,10 +84,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-03-04",
-    "lastSeen": "2026-10-02",
+    "lastSeen": "2026-10-11",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-53c610b37492dd1b",
+        "EV-6ade8a1ffb49d6c3",
         "EV-938ec16c395bded1",
         "EV-914ca1cbc6359ce5",
         "EV-64fb6d791e19d10a",
@@ -109,6 +113,38 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-53c610b37492dd1b",
+        "dataDate": "2026-10-11",
+        "date": "2026-10-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "芝加哥大学 AI 研究员 Rana Hanocka 推出 Thrixel，一个为 AI 智能体打造的 3D 生成平台",
+        "displayTags": [],
+        "entityIds": [
+          "EN-194d8b54a6c23e6f",
+          "EN-dca6ec9510fc0176"
+        ]
+      },
+      {
+        "id": "EV-6ade8a1ffb49d6c3",
+        "dataDate": "2026-10-11",
+        "date": "2026-10-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Siena 融资 1700 万美元，扩展 AI 客户智能体",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d01ba29d08682f7d",
+          "EN-dca6ec9510fc0176"
+        ]
+      },
       {
         "id": "EV-938ec16c395bded1",
         "dataDate": "2026-10-02",
@@ -674,6 +710,7 @@
       "eventIds": [
         "EV-f3ecff6963190b97",
         "EV-03a5e703deae837f",
+        "EV-45559cdee71aaa17",
         "EV-53d3d485f2b3d64e",
         "EV-55ed36eee8ffa4bd",
         "EV-60beaa2e14a34fc9",
@@ -1336,6 +1373,7 @@
       ],
       "entityIds": [
         "EN-bab553871438227c",
+        "EN-6528f84b7b8653d7",
         "EN-006e39f60f196420",
         "EN-804918e60b0894fa",
         "EN-9fbf261b62c1d7c0",
