@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4069,
+    "eventCount": 4077,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,26 +61,32 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-04-13",
-    "latest_disclosed_at": "2026-08-04",
+    "latest_disclosed_at": "2026-10-10",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "lead": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "angel",
       "pre_series_a",
       "series_a1"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-4fb73fd4a920dee7",
+        "canonical_entity_id": "",
+        "name": "比特幻境"
+      },
       {
         "entity_id": "EN-272d534804dc22a4",
         "canonical_entity_id": "EN-272d534804dc22a4",
@@ -103,6 +109,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6ec492a036021b4e",
+        "funding_insight_id": "FI-a86135d87f8014e2",
+        "event_ids": [
+          "EV-bd9b8ce42ef9abfe"
+        ],
+        "company_entity_id": "EN-4fb73fd4a920dee7",
+        "company_canonical_entity_id": "",
+        "company_name": "比特幻境",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-10-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-43990c02209d1574",
+            "source_url": "https://feng.ifeng.com/c/8x6fauBi0Z4",
+            "source_title": "打造轻量化AI眼镜 厦企完成数亿元融资_大风号",
+            "source_content_hash": "0812dfa8fced323674996f6c9d0d75edc60b2d3b90cdea2d8b0c0f395e04f753",
+            "quote": "投资方包括博华资本、戈壁创投、元禾璞华、尚势资本等相关投资机构",
+            "quote_hash": "340a1609f3e57937d5b21b43509699fe4bd3a4ea8037193e7d84b8084a3098c5"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3e72cf108b6413fe",
         "funding_insight_id": "FI-489d15d001722d8d",
@@ -330,6 +376,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-43990c02209d1574",
+        "source_url": "https://feng.ifeng.com/c/8x6fauBi0Z4",
+        "source_title": "打造轻量化AI眼镜 厦企完成数亿元融资_大风号",
+        "source_content_hash": "0812dfa8fced323674996f6c9d0d75edc60b2d3b90cdea2d8b0c0f395e04f753",
+        "quote": "投资方包括博华资本、戈壁创投、元禾璞华、尚势资本等相关投资机构",
+        "quote_hash": "340a1609f3e57937d5b21b43509699fe4bd3a4ea8037193e7d84b8084a3098c5"
+      },
+      {
         "source_id": "FISRC-1ca175ac9946013a",
         "source_url": "https://news.pedaily.cn/202608/567233.shtml",
         "source_title": "听象科技（昂听Elehear） 完成数千万元新一轮融资，加速声学与AI算法研发",
@@ -439,16 +493,16 @@
           "source_id": "oriza_hua"
         },
         {
+          "description": "融资来源记录：比特幻境 · 天使轮 · 2026-10-10 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-43990c02209d1574"
+        },
+        {
           "description": "融资来源记录：听象科技 · A1轮 · 2026-08-04 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ca175ac9946013a"
         },
         {
           "description": "融资来源记录：灵睿智芯 · Pre-A轮 · 2026-07-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-760e793448781182"
-        },
-        {
-          "description": "融资来源记录：乐享科技 · Pre-A轮 · 2026-07-02 · 本轮参投 · 近5亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-670f261d0c740ea4"
         }
       ],
       "contacts": [
@@ -501,6 +555,14 @@
           "quote_hash": "78b0cb24c01b96c39b12d1c9d0d877d6e9bf98009c55fe27f439d924337dff59"
         },
         {
+          "source_id": "FISRC-43990c02209d1574",
+          "source_url": "https://feng.ifeng.com/c/8x6fauBi0Z4",
+          "source_title": "打造轻量化AI眼镜 厦企完成数亿元融资_大风号",
+          "source_content_hash": "0812dfa8fced323674996f6c9d0d75edc60b2d3b90cdea2d8b0c0f395e04f753",
+          "quote": "投资方包括博华资本、戈壁创投、元禾璞华、尚势资本等相关投资机构",
+          "quote_hash": "340a1609f3e57937d5b21b43509699fe4bd3a4ea8037193e7d84b8084a3098c5"
+        },
+        {
           "source_id": "FISRC-1ca175ac9946013a",
           "source_url": "https://news.pedaily.cn/202608/567233.shtml",
           "source_title": "听象科技（昂听Elehear） 完成数千万元新一轮融资，加速声学与AI算法研发",
@@ -515,14 +577,6 @@
           "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
           "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构，其中孚腾资本、元禾璞华、华山资本为企业早期天使轮老股东，持续加码投入。",
           "quote_hash": "658e7d67f3d42944487a286b5d34aab2c70ac5a5666046ca016f64eb1759b918"
-        },
-        {
-          "source_id": "FISRC-670f261d0c740ea4",
-          "source_url": "https://www.cnfin.com/gs-lb/detail/20260702/4434609_1.html",
-          "source_title": "乐享科技完成近5亿元Pre-A轮融资 机器人订单逾3万台",
-          "source_content_hash": "62e2ce5bba0f19793e17ce12827afbfeab3186011072eff8b77ade4c444b2037",
-          "quote": "产业资方吉利资本、 三七互娱 ，元禾璞华跟投",
-          "quote_hash": "949e52ed7fc91c5c391dca3ae63929572d980eedeba18df216921656cc4e27f5"
         }
       ],
       "last_verified_at": "2026-09-25",

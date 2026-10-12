@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4069,
+    "eventCount": 4077,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 22,
+    "current_round_count": 23,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 22,
+    "portfolio_company_count": 23,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-03-12",
-    "latest_disclosed_at": "2026-10-01",
+    "latest_disclosed_at": "2026-10-09",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
       "lead": 11,
-      "participant": 9
+      "participant": 10
     },
     "round_codes": [
       "multi_round",
@@ -185,6 +185,11 @@
         "name": "Pramaana Labs"
       },
       {
+        "entity_id": "EN-18a96fb4e49cd0e1",
+        "canonical_entity_id": "",
+        "name": "Sabi"
+      },
+      {
         "entity_id": "EN-18131bed4bcc2f1a",
         "canonical_entity_id": "",
         "name": "Sapiom"
@@ -201,6 +206,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0d9fa1a86e62d4e9",
+        "funding_insight_id": "FI-208b0a4f6d9ccb22",
+        "event_ids": [
+          "EV-3798871486ef5a26"
+        ],
+        "company_entity_id": "EN-18a96fb4e49cd0e1",
+        "company_canonical_entity_id": "",
+        "company_name": "Sabi",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-10-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5c428919070bfce8",
+            "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
+            "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
+            "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+            "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+            "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fc522869df1ade0d",
         "funding_insight_id": "FI-e7151a217bf0631d",
@@ -1224,6 +1269,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-5c428919070bfce8",
+        "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
+        "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
+        "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+        "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+        "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+      },
+      {
         "source_id": "FISRC-dc8fb918b056c843",
         "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
         "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
@@ -1474,16 +1527,16 @@
           "source_id": "accel_europe"
         },
         {
+          "description": "融资来源记录：Sabi · 种子轮 · 2026-10-09 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c428919070bfce8"
+        },
+        {
           "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮联合领投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dc8fb918b056c843"
         },
         {
           "description": "融资来源记录：Kanu AI · 种子轮 · 2026-09-30 · 本轮参投 · $11.7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2600408f2e0d32d7"
-        },
-        {
-          "description": "融资来源记录：Ema · B轮 · 2026-09-23 · 本轮参投 · $77M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1898b8cd3bcc2449"
         }
       ],
       "contacts": [
@@ -1556,6 +1609,14 @@
           "quote_hash": "596b1ee652763f3ce41bb638fabd7df2a7d7c189a53631ad6dd499bf0d48e2bc"
         },
         {
+          "source_id": "FISRC-5c428919070bfce8",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
+          "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
+          "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+          "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+          "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+        },
+        {
           "source_id": "FISRC-dc8fb918b056c843",
           "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
           "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
@@ -1570,14 +1631,6 @@
           "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
           "quote": "Trilogy Equity Partners led the round, with participation from Andreessen Horowitz’s a16z speedrun, BMW i Ventures, and Accel.",
           "quote_hash": "b8e2a52ffb09045701fa83a2302679430bd9f2fc61890479b80241c7a7572dfe"
-        },
-        {
-          "source_id": "FISRC-1898b8cd3bcc2449",
-          "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
-          "source_title": "Ema 融资 7700 万美元，用 AI 智能体切入企业软件与服务市场",
-          "source_content_hash": "aed60de0b0299f2e",
-          "quote": "with existing investors Accel, Section 32, and Prosus increasing their stakes",
-          "quote_hash": "069118ff869b0b60360e17fac78c42a06952f1dfe4275a277ebeb7c57898ee1e"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1588,7 +1641,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[23].role": {
+        "activities[24].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

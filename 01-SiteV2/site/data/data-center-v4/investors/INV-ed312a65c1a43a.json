@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4069,
+    "eventCount": 4077,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-04-14",
-    "latest_disclosed_at": "2026-09-07",
+    "latest_disclosed_at": "2026-10-07",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "pre_seed",
@@ -88,9 +88,54 @@
         "entity_id": "EN-afff1ef2d34b618e",
         "canonical_entity_id": "",
         "name": "Cato"
+      },
+      {
+        "entity_id": "EN-07249e5c4d3d02e2",
+        "canonical_entity_id": "",
+        "name": "Cori Clinical"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9f532c1767bbae34",
+        "funding_insight_id": "FI-eb0430ed7b88def6",
+        "event_ids": [
+          "EV-c35972d334bcee48"
+        ],
+        "company_entity_id": "EN-07249e5c4d3d02e2",
+        "company_canonical_entity_id": "",
+        "company_name": "Cori Clinical",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "400 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1a23b889811e2ed4",
+            "source_url": "https://tech.eu/2026/10/07/cori-clinical-secures-4m-seed-to-improve-clinical-trial-design-and-cut-delays/",
+            "source_title": "Cori Clinical 获 400 万美元种子轮融资，用于改进临床试验设计并减少延误",
+            "source_content_hash": "40c138d906df734424ec2303e96eb4f281e2a0a411e2abe0101072f398cd4f10",
+            "quote": "has raised $4 million in a seed funding round led by Breega, with participation from Enzo, Heartfelt, Together Ventures and Bynd.",
+            "quote_hash": "657c3c9c0fdc3329cbe6b4a2e1321f9dd8cf0d23a1307d3a7c663235955a61fb"
+          }
+        ]
+      },
       {
         "activity_id": "IA-949d8ca60c4a9f1a",
         "funding_insight_id": "FI-c786a6640f0870e8",
@@ -174,6 +219,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1a23b889811e2ed4",
+        "source_url": "https://tech.eu/2026/10/07/cori-clinical-secures-4m-seed-to-improve-clinical-trial-design-and-cut-delays/",
+        "source_title": "Cori Clinical 获 400 万美元种子轮融资，用于改进临床试验设计并减少延误",
+        "source_content_hash": "40c138d906df734424ec2303e96eb4f281e2a0a411e2abe0101072f398cd4f10",
+        "quote": "has raised $4 million in a seed funding round led by Breega, with participation from Enzo, Heartfelt, Together Ventures and Bynd.",
+        "quote_hash": "657c3c9c0fdc3329cbe6b4a2e1321f9dd8cf0d23a1307d3a7c663235955a61fb"
+      },
+      {
         "source_id": "FISRC-495f39954954d0bc",
         "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
         "source_title": "米兰初创公司Cato融资600万欧元，用AI帮助企业寻找并赢得公开招标",
@@ -221,6 +274,10 @@
         {
           "description": "Tech.eu 将 Heartfelt 列为 Cato €6M seed 轮参与方；报道未披露其出资金额。",
           "source_id": "PROFILE-f3c98b19a521d1c1783f"
+        },
+        {
+          "description": "融资来源记录：Cori Clinical · 种子轮 · 2026-10-07 · 本轮参投 · $4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1a23b889811e2ed4"
         },
         {
           "description": "融资来源记录：Cato · 种子轮 · 2026-09-07 · 本轮参投 · €6 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -284,6 +341,14 @@
           "source_content_hash": "1f882d49bb1eae24f94b43aa668b7407b599afe66f272c839bc0e85691f7b557",
           "quote": "HEARTFELT | Europe’s First Cheque Fund",
           "quote_hash": "e7f8eaae1bb286bc5c36e2e8966142638ef98d8ea6c263e21e46c49747384f5d"
+        },
+        {
+          "source_id": "FISRC-1a23b889811e2ed4",
+          "source_url": "https://tech.eu/2026/10/07/cori-clinical-secures-4m-seed-to-improve-clinical-trial-design-and-cut-delays/",
+          "source_title": "Cori Clinical 获 400 万美元种子轮融资，用于改进临床试验设计并减少延误",
+          "source_content_hash": "40c138d906df734424ec2303e96eb4f281e2a0a411e2abe0101072f398cd4f10",
+          "quote": "has raised $4 million in a seed funding round led by Breega, with participation from Enzo, Heartfelt, Together Ventures and Bynd.",
+          "quote_hash": "657c3c9c0fdc3329cbe6b4a2e1321f9dd8cf0d23a1307d3a7c663235955a61fb"
         },
         {
           "source_id": "FISRC-495f39954954d0bc",

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4069,
+    "eventCount": 4077,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ee11373e48530800",
+        "canonical_entity_id": "",
+        "name": "Verso"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-49310376f1d8f92a",
+        "funding_insight_id": "FI-85bd50a60143ff0c",
+        "event_ids": [
+          "EV-2e54aa7c4140aa77"
+        ],
+        "company_entity_id": "EN-ee11373e48530800",
+        "company_canonical_entity_id": "",
+        "company_name": "Verso",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$6 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b9b2bb6ee44018e",
+            "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+            "source_title": "Verso 融资 600 万美元，将消费者智能引入商业决策",
+            "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+            "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+            "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f2c08a496de1bb7c",
         "funding_insight_id": "FI-0b333e0359fcf99d",
@@ -112,6 +161,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-9b9b2bb6ee44018e",
+        "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+        "source_title": "Verso 融资 600 万美元，将消费者智能引入商业决策",
+        "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+        "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+        "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+      },
       {
         "source_id": "FISRC-0d891f327f6f719c",
         "source_url": "https://www.reco.ai/blog/reco-raises-30m-b-round-for-a-total-of-85m-to-meet-rapidly-growing-demand-for-saas-ai-security-among-enterprises",
@@ -152,6 +209,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Verso · 种子轮 · 2026-10-08 · 本轮领投 · $6 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9b9b2bb6ee44018e"
+        },
+        {
           "description": "融资来源记录：Reco · 历史轮次未披露 · B轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0d891f327f6f719c"
         }
@@ -173,6 +234,14 @@
           "source_content_hash": "bc22b8ea2903e7e0e294f71f45638a915ed622a0b49f1c2e321700f433fd9e95",
           "quote": "Angular is an inception-stage fund. We prefer to invest in the first institutional round. We are often the first investor a company has. Our first check is usually between $500K and $5M. We are set up to follow on throughout the life of a company. We are focused on companies/founders that originate from Europe or Israel, but with a planned US GTM focus.",
           "quote_hash": "bc22b8ea2903e7e0e294f71f45638a915ed622a0b49f1c2e321700f433fd9e95"
+        },
+        {
+          "source_id": "FISRC-9b9b2bb6ee44018e",
+          "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+          "source_title": "Verso 融资 600 万美元，将消费者智能引入商业决策",
+          "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+          "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+          "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
         },
         {
           "source_id": "FISRC-0d891f327f6f719c",

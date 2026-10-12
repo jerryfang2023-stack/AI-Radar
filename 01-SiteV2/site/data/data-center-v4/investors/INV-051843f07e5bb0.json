@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4069,
+    "eventCount": 4077,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,29 +54,80 @@
   },
   "institution": {
     "id": "INV-051843f07e5bb0",
-    "name": "100IN",
-    "aliases": [],
+    "name": "100in",
+    "aliases": [
+      "100IN"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ee11373e48530800",
+        "canonical_entity_id": "",
+        "name": "Verso"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-f053e9abb2f2514a",
+        "funding_insight_id": "FI-85bd50a60143ff0c",
+        "event_ids": [
+          "EV-2e54aa7c4140aa77"
+        ],
+        "company_entity_id": "EN-ee11373e48530800",
+        "company_canonical_entity_id": "",
+        "company_name": "Verso",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$6 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b9b2bb6ee44018e",
+            "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+            "source_title": "Verso 融资 600 万美元，将消费者智能引入商业决策",
+            "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+            "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+            "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2f0b2aa2bdb967ad",
         "funding_insight_id": "FI-0f7625d43f2218a6",
@@ -112,6 +163,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9b9b2bb6ee44018e",
+        "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+        "source_title": "Verso 融资 600 万美元，将消费者智能引入商业决策",
+        "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+        "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+        "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+      },
+      {
         "source_id": "FISRC-44f2f50bd994c71a",
         "source_url": "https://fintech.global/2026/10/06/cleavr-raises-e8m-to-tackle-late-payments-in-europe",
         "source_title": "Cleavr raises €8m to tackle late payments in Europe",
@@ -122,7 +181,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[0].role": {
+        "activities[1].role": {
           "text": "本轮参投（fintech.global披露）",
           "source_hash": "e4c1218c1e362c2f4d9d646f268c851157165db9e5683889966e64a6e28f6007",
           "provider": "deepseek",
@@ -137,10 +196,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "100IN 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "100in 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Verso · 种子轮 · 2026-10-08 · 本轮参投 · $6 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9b9b2bb6ee44018e"
+        },
         {
           "description": "融资来源记录：Cleavr · 历史轮次未披露 · 本轮参投（fintech.global披露）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-44f2f50bd994c71a"
@@ -148,6 +211,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-9b9b2bb6ee44018e",
+          "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+          "source_title": "Verso 融资 600 万美元，将消费者智能引入商业决策",
+          "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+          "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+          "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+        },
         {
           "source_id": "FISRC-44f2f50bd994c71a",
           "source_url": "https://fintech.global/2026/10/06/cleavr-raises-e8m-to-tackle-late-payments-in-europe",

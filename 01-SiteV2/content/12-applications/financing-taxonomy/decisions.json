@@ -28492,19 +28492,54 @@
     },
     "EV-abde425d9980f6b9": {
       "id": "EV-abde425d9980f6b9",
-      "scope": "review",
+      "scope": "included",
       "exclusion_reason": "",
-      "sector_id": "",
-      "subsector_id": "",
-      "product_form_id": "",
-      "customer_ids": [],
-      "evidence_indices": [],
-      "rationale": "现有原文确认 CurvetAI 是多模型 AI 工作空间，并提及个人、团队和教育机构用户；分类证据尚不能确认其主要使用场景及产品形态。开发者是合作方，不足以证明平台面向开发者。补充可核验的公司产品与客户证据后再分类。",
-      "input_hash": "12debb0ca72a64845ff957e3e1111df3cd76b6c5eb9a20e13594914679d2aaad",
-      "evidence_refs": [],
-      "provider": "responsible_reviewer",
-      "model": "manual_review",
-      "generated_at": "2026-10-08T12:54:30.363Z"
+      "sector_id": "enterprise",
+      "subsector_id": "productivity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business",
+        "consumer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "rationale": "CurvetAI 提供统一 AI 工作空间，让用户在同一平台组合多种模型并构建工作流，属于跨行业企业办公与知识管理应用。",
+      "input_hash": "75c5253be6d5c9dd8569d944e2ef5131056f54acd9b8acd090a11c7589f12dba",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-be92077ed9b7f033",
+          "quote": "CurvetAI, a unified AI workspace that lets users access and combine multiple AI models from one platform"
+        },
+        {
+          "source_id": "FISRC-141fde62ccd11929",
+          "quote": "CurvetAI operates an AI workspace that brings multiple AI models together on a single platform. The platform allows users to work with text, image, audio and video models in one place. Users can compare outputs from different models and combine their capabilities within the same workflow."
+        },
+        {
+          "source_id": "FISRC-be92077ed9b7f033",
+          "quote": "letting users work across text, image, audio and video models within a single visual workspace, compare outputs, and route tasks to the model best suited to them"
+        },
+        {
+          "source_id": "FISRC-ab7218b4410f6c5e",
+          "quote": "The product brings text models, image tools, video generation, prompts, and AI agents into one workspace, removing much of the setup that usually slows people down."
+        },
+        {
+          "source_id": "FISRC-ab7218b4410f6c5e",
+          "quote": "Users can test ideas, build workflows, and move between different AI functions without dealing with APIs, separate billing systems, or technical configuration before they even begin."
+        },
+        {
+          "source_id": "FISRC-ab7218b4410f6c5e",
+          "quote": "The approach has found a strong audience among creators, students, agencies, designers, and smaller teams looking for a more usable way to work with AI."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T11:45:18.297Z"
     },
     "EV-d9772412a89c2367": {
       "id": "EV-d9772412a89c2367",
@@ -29861,7 +29896,300 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-12T08:25:14.015Z"
+    },
+    "EV-aa93f794e97d9893": {
+      "id": "EV-aa93f794e97d9893",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "analytics",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Gudea 提供面向企业的叙事情报分析软件，属于企业数据分析与商业智能。",
+      "input_hash": "77181d1c1ff13dba72dfc388f021063a6c85fa6c607ed6119bdcd1ddf1ed8380",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-034643f0a81c0598",
+          "quote": "Gudea has raised $7 million in seed funding to help companies anticipate which online narratives will go viral and understand who is driving them"
+        },
+        {
+          "source_id": "FISRC-4aaefca1fe064593",
+          "quote": "Gudea, a Minneapolis-based startup that provides narrative intelligence software, has raised $7 million in seed funding."
+        },
+        {
+          "source_id": "FISRC-034643f0a81c0598",
+          "quote": "The startup aims to map how information moves across people, groups and platforms, then predict how far a narrative will spread, when it will take off, and when it will fade."
+        },
+        {
+          "source_id": "FISRC-17924897e6b6dc77",
+          "quote": "The platform combines behavioral intelligence, graph neural network modeling, and real-time monitoring across dozens of online platforms to show clients where narratives originate, which users are driving them, and how quickly they are likely to spread."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T11:29:20.985Z"
+    },
+    "EV-bf4cd98c9e267eab": {
+      "id": "EV-bf4cd98c9e267eab",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Ampersand 让开发者以代码声明方式为 AI 智能体提供企业系统读写集成，属于智能体开发与编排平台。",
+      "input_hash": "86ca07641d48c9fdc7ed7d1ef76f746a2aec4ab604a5a527679525237d4526de",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3e18c4bacbc5a852",
+          "quote": "Ampersand is the first platform to give AI agents Read, Write, and Subscribe actions across their customers' GTM and Revenue and Billing enterprise tools."
+        },
+        {
+          "source_id": "FISRC-fe2eb23658e8b6c7",
+          "quote": "With Ampersand, a developer declares the integration once, in version-controlled code, using five primitives: read, write, subscribe, search, and proxy."
+        },
+        {
+          "source_id": "FISRC-fe2eb23658e8b6c7",
+          "quote": "We read and write in each system's native structure, so an agent knows which record it can touch and which field marks a deal as qualified."
+        },
+        {
+          "source_id": "FISRC-3e18c4bacbc5a852",
+          "quote": "We are powering our deep Stripe Connector with the same architecture as Salesforce and NetSuite: full API access, per-tenant mapping, idempotent updates, safe writes, incremental reads, backfills, observability, and Embedded or Headless UI."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T11:29:20.985Z"
+    },
+    "EV-f9cd18d3163ca060": {
+      "id": "EV-f9cd18d3163ca060",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "2026年融资原文明确研发重心已转向量子启发AI模型，并发布RiverONE；按当前专用模型产品分类，早期TMD80计算系统保留为历史产品。",
+      "input_hash": "806d4f0a5b70872d457c0ea267933ac71c96fe9c10d625bf3f6179bd9478b53a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "quote": "2021年，清华大学计算机系校友余腾带队创立清醒异构，早期基于经典异构算力的AI系统，如今正完成一次转身——走向量子启发的下一代AI模型前沿，产品进入一系列AI及量子计算产业链。"
+        },
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "quote": "清醒异构正式发布 量子启发视觉语言模型RiverONE 。据介绍，其在模型构建阶段使用模拟量子计算生成参数，训练完成后模型在经典GPU上推理，不需要量子计算机实时参与。"
+        },
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "quote": "在量子校准图表理解这一特定测试中，RiverONE以不足对比模型十分之一的19亿参数量，达到英伟达Ising Calibration 1至少95%的表现"
+        }
+      ],
+      "provider": "manual_review",
+      "model": "responsible_financing_reviewer",
+      "generated_at": "2026-10-12T12:00:55.617Z"
+    },
+    "EV-2f9a3670fc346060": {
+      "id": "EV-2f9a3670fc346060",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "One 为 AI 智能体提供认证、权限与审计的信任层，属于模型与智能体安全。",
+      "input_hash": "ac6fdd16147e3f99b949dbfd94d6ecd9c9639b0e0151c3871798d98941453b5c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d74899360f0bc388",
+          "quote": "One is the trust layer between AI agents and the rest of a company's software."
+        },
+        {
+          "source_id": "FISRC-8c0ae6bfcc37e44e",
+          "quote": "One is the trust layer for AI agents, led by Connect, an authentication product anyone can add to their own product for free."
+        },
+        {
+          "source_id": "FISRC-8c0ae6bfcc37e44e",
+          "quote": "Connect once per app and every agent you run works through a connection that is yours, scoped to the action, revocable in one click and recorded in a complete audit trail."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T11:29:20.985Z"
+    },
+    "EV-3798871486ef5a26": {
+      "id": "EV-3798871486ef5a26",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "audio-wearables",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Sabi 开发面向日常佩戴的脑机接口帽子，属于消费 AI 穿戴终端。",
+      "input_hash": "185fc60dcd19f33d59e6c7daa417a3faa18b47b0a7f12c74e861f4f32b49f0ac",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5c428919070bfce8",
+          "quote": "Sabi today announced it has raised a $50 million seed round, led by Khosla Ventures, to develop a brain-AI interface designed for everyday wear."
+        },
+        {
+          "source_id": "FISRC-5c428919070bfce8",
+          "quote": "Sabi’s first product looks like an ordinary baseball cap."
+        },
+        {
+          "source_id": "FISRC-5c428919070bfce8",
+          "quote": "Sabi’s first product looks like an ordinary baseball cap. Sensors hidden inside it read neural signals through hair without gel, surgery or direct contact with the scalp."
+        },
+        {
+          "source_id": "FISRC-5c428919070bfce8",
+          "quote": "Each cap contains sensors measuring between one and five millimeters, built around Sabi’s custom EEG chip."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T11:29:20.985Z"
+    },
+    "EV-2e54aa7c4140aa77": {
+      "id": "EV-2e54aa7c4140aa77",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "analytics",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Verso 为企业提供 AI 驱动的消费者研究与洞察分析平台，属于企业数据分析。",
+      "input_hash": "5bea480a323bd5fea44dcdb2ab060a0e439b4514f2de05a2b352156dd2b265e6",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9b9b2bb6ee44018e",
+          "quote": "Verso, an AI-powered consumer intelligence platform, has raised $6 million in seed funding."
+        },
+        {
+          "source_id": "FISRC-d340a86255ff8ef7",
+          "quote": "The platform manages the research process from study design and participant recruitment to AI-moderated video interviews and automated analysis."
+        },
+        {
+          "source_id": "FISRC-9b9b2bb6ee44018e",
+          "quote": "Large companies invest heavily in consumer research to inform product development and marketing decisions, but the process can be expensive and time-consuming."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T11:29:20.985Z"
+    },
+    "EV-bd9b8ce42ef9abfe": {
+      "id": "EV-bd9b8ce42ef9abfe",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "glasses",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "比特幻境主营面向消费者的NIMO AI眼镜，属于消费AI硬件中的AI眼镜。",
+      "input_hash": "bb808e35a84672f9d920630fa9e8e9e57580b4bae5100e892b37d25d5f017abc",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-43990c02209d1574",
+          "quote": "总部位于厦门的AI眼镜企业——比特幻境于近日宣布完成数亿元天使轮融资"
+        },
+        {
+          "source_id": "FISRC-43990c02209d1574",
+          "quote": "NIMO将重量控制在29克，把有限的空间留给显示模组与佩戴体验。在功能上，其聚焦高频使用场景，支持翻译、提词、导航及微信消息通知等"
+        },
+        {
+          "source_id": "FISRC-bcdef052e191de68",
+          "quote": "NIMO采用体积仅0.03cc的米粒级光机，重量不足0.1g，隐藏于眼镜铰链结构中"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T11:37:06.875Z"
+    },
+    "EV-c35972d334bcee48": {
+      "id": "EV-c35972d334bcee48",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Cori Clinical 为临床试验团队提供 AI 工作空间，将内部知识与外部监管情报结合以生成试验方案和申报材料，属于医疗临床行业 AI 软件。",
+      "input_hash": "0c50eacbf108860e383356c27b999821eff48ac5bbaed934a44dec0e096847c1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1a23b889811e2ed4",
+          "quote": "Cori Clinical, an AI platform for clinical trials, has raised $4 million in a seed funding round led by Breega, with participation from Enzo, Heartfelt, Together Ventures and Bynd."
+        },
+        {
+          "source_id": "FISRC-fc34941d158cb60c",
+          "quote": "Cori Clinical is an AI workspace which brings together the knowledge an organisation has developed through years of clinical trial experience and combines it with external intelligence from clinical-trial registries, regulatory guidance and public sources, including the Food and Drug Administration (FDA), the Medicines and Healthcare products Regulatory Agency (MHRA) and the European Medicines Agency (EMA)."
+        },
+        {
+          "source_id": "FISRC-fc34941d158cb60c",
+          "quote": "Cori helps clinical teams turn an initial trial brief into a full protocol, submission package and operational plans, built against current regulatory guidance."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T11:54:44.590Z"
     }
   },
-  "generated_at": "2026-10-12T08:25:14.016Z"
+  "generated_at": "2026-10-12T11:54:44.593Z"
 }
