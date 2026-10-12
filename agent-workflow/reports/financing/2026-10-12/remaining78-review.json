@@ -2,7 +2,7 @@
   "version": "FINANCING-REMAINING78-FINAL-REVIEW-1",
   "date": "2026-10-12",
   "review_date_cst": "2026-10-13",
-  "status": "gates_passed_awaiting_merge_and_publication",
+  "status": "accepted_awaiting_live_publication",
   "scope": 78,
   "resolved": 41,
   "pending": 37,
@@ -27,8 +27,9 @@
   "corrected_existing_leads": 6,
   "accepted_recovery_leads": 11,
   "baseline": {
-    "subjects": 596,
-    "events": 639,
+    "source_commit": "b91ca4d66238f4f50e18df1a231485ba66fa6448",
+    "subjects": 588,
+    "events": 629,
     "queue": 96
   },
   "candidate": {
@@ -49,7 +50,142 @@
       "fact_conflict_review": 4
     }
   },
-  "recovered_cards": [],
+  "recovered_cards": [
+    {
+      "event_id": "EV-72a280ef52550173",
+      "source_event_ids": [
+        "EV-72a280ef52550173"
+      ],
+      "company": "Innercrowd",
+      "amount": "€750,000",
+      "round": "轮次未披露",
+      "announced_at": "2026-10-08",
+      "sector": "industry",
+      "subsector": "commerce"
+    },
+    {
+      "event_id": "EV-9d937c4f5d7f1361",
+      "source_event_ids": [
+        "EV-9d937c4f5d7f1361"
+      ],
+      "company": "Lumio",
+      "amount": "$12 million",
+      "round": "A轮",
+      "announced_at": "2026-10-08",
+      "sector": "consumer-devices",
+      "subsector": "home-devices"
+    },
+    {
+      "event_id": "EV-c9bcebb8c22c1966",
+      "source_event_ids": [
+        "EV-c9bcebb8c22c1966"
+      ],
+      "company": "星火传明",
+      "amount": "未披露",
+      "round": "A轮",
+      "announced_at": "2026-10-08",
+      "sector": "industry",
+      "subsector": "public-services"
+    },
+    {
+      "event_id": "EV-e5d1e49e37f2e291",
+      "source_event_ids": [
+        "EV-e5d1e49e37f2e291",
+        "EV-7a85e21802efd8b2"
+      ],
+      "company": "Nous Research",
+      "amount": "$90 million",
+      "round": "B轮",
+      "announced_at": "2026-10-07",
+      "sector": "developer-data",
+      "subsector": "agent-platforms"
+    },
+    {
+      "event_id": "EV-d3ecfba50801f33e",
+      "source_event_ids": [
+        "EV-d3ecfba50801f33e"
+      ],
+      "company": "ByteXL",
+      "amount": "$9 million",
+      "round": "B轮",
+      "announced_at": "2026-10-07",
+      "sector": "industry",
+      "subsector": "education"
+    },
+    {
+      "event_id": "EV-303422b99649f7c1",
+      "source_event_ids": [
+        "EV-303422b99649f7c1"
+      ],
+      "company": "Netsec",
+      "amount": "more than $10 million",
+      "round": "其他融资",
+      "announced_at": "2026-10-06",
+      "sector": "enterprise",
+      "subsector": "cybersecurity"
+    },
+    {
+      "event_id": "EV-bd0c10245db77e9f",
+      "source_event_ids": [
+        "EV-bd0c10245db77e9f"
+      ],
+      "company": "Chiplytics",
+      "amount": "$4.5 million",
+      "round": "轮次未披露",
+      "announced_at": "2026-10-06",
+      "sector": "industry",
+      "subsector": "manufacturing"
+    },
+    {
+      "event_id": "EV-e8bc8dc295e87e3b",
+      "source_event_ids": [
+        "EV-e8bc8dc295e87e3b"
+      ],
+      "company": "GMI Cloud",
+      "amount": "$445 million",
+      "round": "债务融资",
+      "announced_at": "2026-10-01",
+      "sector": "compute",
+      "subsector": "compute-cloud"
+    },
+    {
+      "event_id": "EV-35c16315e0a2e5a8",
+      "source_event_ids": [
+        "EV-35c16315e0a2e5a8",
+        "EV-7c00fd2e32bfc4b7"
+      ],
+      "company": "TypeSafe AI",
+      "amount": "$40 million",
+      "round": "种子轮",
+      "announced_at": "2026-09-15",
+      "sector": "models",
+      "subsector": "specialist-models"
+    },
+    {
+      "event_id": "EV-3c8c01c48903ce41",
+      "source_event_ids": [
+        "EV-3c8c01c48903ce41"
+      ],
+      "company": "Geordie AI",
+      "amount": "$30 million",
+      "round": "A轮",
+      "announced_at": "2026-06-08",
+      "sector": "developer-data",
+      "subsector": "ai-security"
+    },
+    {
+      "event_id": "EV-ad688f97d7f4fa55",
+      "source_event_ids": [
+        "EV-ad688f97d7f4fa55"
+      ],
+      "company": "OpenEvidence",
+      "amount": "2.5亿美元",
+      "round": "D轮",
+      "announced_at": "2026-01-21",
+      "sector": "industry",
+      "subsector": "healthcare"
+    }
+  ],
   "remaining": [
     {
       "id": 5,
@@ -722,5 +858,11 @@
     },
     "provider_billing": "以提供方计费回执为准；不将缓存命中和线索登记计为原文请求。"
   },
-  "generated_at": "2026-10-12T19:33:28.539Z"
+  "generated_at": "2026-10-12T19:33:28.539Z",
+  "accepted_source_commit": "2cb2351fd0ba2523b46b4c3a0eb24da6b665f19f",
+  "baseline_review": {
+    "reviewer": "Codex responsible financing reviewer",
+    "at": "2026-10-12T19:42:22.476Z",
+    "reason": "比较起点固定为本轮启动时接受的 main，重跑门禁后的提交不能代替原始基线。融资数据与审核结论不变。"
+  }
 }
