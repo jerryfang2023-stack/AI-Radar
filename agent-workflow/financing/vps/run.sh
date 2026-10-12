@@ -13,5 +13,10 @@ cd /srv/guanlan-financing/WaveSight
 test -z "$(git status --porcelain --untracked-files=no)"
 git fetch --quiet origin main
 git checkout --quiet --detach origin/main
+lock_hash=$(sha256sum package-lock.json | cut -d' ' -f1)
+if [ ! -d node_modules/ajv ] || [ ! -d node_modules/cheerio ] || [ "$(cat "$GUANLAN_FINANCING_RUNTIME/dependencies.sha256" 2>/dev/null || true)" != "$lock_hash" ]; then
+  npm ci --ignore-scripts --no-audit --no-fund
+  printf '%s\n' "$lock_hash" > "$GUANLAN_FINANCING_RUNTIME/dependencies.sha256"
+fi
 git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" pull --quiet --ff-only origin main
 node agent-workflow/financing/vps-supervisor.mjs "$@"

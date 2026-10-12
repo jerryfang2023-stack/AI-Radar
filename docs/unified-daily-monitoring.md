@@ -10,10 +10,10 @@
 
 ## 调度与执行
 
-- Codex 自动化 `ai` 每日北京时间 08:10 执行主运行，在同一轮完成派发、待核验队列、已接受融资恢复、审核、合并及本地发布。
+- 云端每日北京时间 08:10 执行主运行：GitHub Actions 采集、待核验队列与事实生产，VPS 接续 Hermes 原文审核、CI 审批/检查、合并与发布；正常执行不依赖本机开机。本机 Codex 自动化 `ai` 保留为暂停的备用任务。
 - `funding-health-dispatch.yml` 每日北京时间 08:10提供服务器端幂等主派发，电脑离线时仍能启动同一融资批次；10:30作为同一流程的幂等兜底。Codex与服务器端共用接受状态和开放PR检查，其余日内复核续跑时段均已取消。
-- 2026-10-03 起另部署 VPS 备用版本，初始仅观察状态；本机 `ai` 保持启用，真实日批次验收后再切主。部署、模型和回退入口见 [VPS 备用版本](financing-vps.md)。
-- 云端生产工作流在精确提交的 Linux/Windows 检查通过后保留开放 PR，由 Codex 审核并合并；兜底优先检查同日开放PR，分别报告awaiting_approval、checks_pending、ci_failed或ready_for_review，不重复派发。当天已有main批次也不能掩盖后来恢复产物的新开放PR。
+- 2026-10-12 起 VPS 切换为 active 主控，每十分钟检查同一日流程恢复，08:10 前不派发新日期；GitHub 同时保留 08:10 幂等主触发。部署、模型、等待门禁和回退入口见 [云端主运行](financing-vps.md)。
+- 云端生产工作流保留开放 PR，由 VPS Hermes 读取原文审核数据变更；代码与非融资路径由责任 Codex 处理。CI 审批只有在审核通过且运行身份核对后接续，Linux/Windows 当前精确提交检查成功才可合并。兜底优先检查同日开放 PR，分别报告 awaiting_approval、checks_pending、ci_failed 或 ready_for_review，不重复派发；当天已有 main 批次不能掩盖后来恢复的新开放 PR。
 - 旧 Windows 早间生产、最终收尾及修复监测任务已删除。旧商业信号、独立国内融资、独立融资研究、健康派发和恢复看门狗工作流已删除；历史运行记录仅供追溯。
 - 社群与 Builders 的代码和任务定义保留，Windows 与 GitHub 两端均禁用，等待用户后续升级；不属于融资流程，也不得自动恢复。
 
@@ -39,7 +39,7 @@ PR/CI 合并到 main 并完成 Pages 后，运行：
 
 `node agent-workflow/financing/publish.mjs --date=YYYY-MM-DD --runtime-dir="D:/Fang/项目/观澜AI/runtime/financing/YYYY-MM-DD"`
 
-发布器隔离读取接受的 main，刷新数据层/知识库、独立融资站与小程序、受保护 OPS，并回读网站与小程序日期。`--dry-run=true` 只预览；门户默认为生产仓旁的 `Guanlan-Funding-Portal`，支持 `--portal-repo`。成功回执绑定接受提交，电脑离线时云端可生产，本地阶段待恢复。
+发布器隔离读取接受的 main，刷新数据层/知识库、独立融资站与小程序、受保护 OPS，并回读网站与小程序日期。`--dry-run=true` 只预览；门户默认为生产仓旁的 `Guanlan-Funding-Portal`，支持 `--portal-repo`。成功回执绑定接受提交；电脑离线时云端完成生产和 VPS 发布，本机知识库同步待开机后恢复。
 
 可用 `--source-sha=<完整提交>` 显式绑定接受版本。三个独立本地目标（数据层、读取模型、Vault）并行刷新；门户和 OPS 顺序发布。锁按目标跨日期共用，忙时立即返回并保留成功检查点；远端前进不会更换本轮原文和发布输入。门户默认在独立检出中构建、提交和发布，失败检出保留供恢复。检查点按相关输入和发布实现建键，无关提交不重跑成功阶段；每阶段记录实际耗时。Pages 完成正在进行的构建并复用 npm 缓存，切换前拒绝落后的 artifact。
 

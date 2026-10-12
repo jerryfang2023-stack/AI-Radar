@@ -44,7 +44,19 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci --ignore-scripts
+      - name: Recheck same-day ownership before any collection
+        id: preflight
+        run: |
+          set -euo pipefail
+          node agent-workflow/financing/dispatch.mjs --date="$RUN_DATE" --dry-run=true --preflight-run="$GITHUB_RUN_ID" > "$RUNNER_TEMP/financing-preflight.json"
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const state=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/financing-preflight.json'));
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,`proceed=${state.status==='planned'}\nresume_run_id=${state.resume_run_id || ''}\n`);
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,`Daily preflight: ${state.status}. Reuse accepted input or resume checkpoint; do not duplicate an active run or open PR.\n`);
+          NODE
       - name: Validate inputs and prepare private storage
+        if: steps.preflight.outputs.proceed == 'true'
         env:
           PRIVATE_EVIDENCE_SSH_KEY: ${{ secrets.PRIVATE_EVIDENCE_SSH_KEY }}
         run: |
@@ -59,9 +71,9 @@ jobs:
           echo "GIT_SSH_COMMAND=$GIT_SSH_COMMAND" >> "$GITHUB_ENV"
           npm run assert:private-evidence-remote
       - name: Restore financing checkpoint
-        if: inputs.resume_run_id != ''
+        if: steps.preflight.outputs.proceed == 'true' && (inputs.resume_run_id != '' || steps.preflight.outputs.resume_run_id != '')
         env:
-          RESUME_RUN: ${{ inputs.resume_run_id }}
+          RESUME_RUN: ${{ inputs.resume_run_id || steps.preflight.outputs.resume_run_id }}
         run: |
           set -euo pipefail
           [[ "$RESUME_RUN" =~ ^[0-9]+$ ]]
@@ -69,9 +81,11 @@ jobs:
           node agent-workflow/financing/checkpoint.mjs restore "$RUN_DATE" "$RUNNER_TEMP/financing-resume"
       - name: Discover financing and capture originals
         id: collection
+        if: steps.preflight.outputs.proceed == 'true'
         run: node agent-workflow/financing/run.mjs --phase=collect --date="$RUN_DATE"
       - name: Verify pending financing leads using existing sources
         id: verification
+        if: steps.preflight.outputs.proceed == 'true'
         run: node agent-workflow/financing/run.mjs --phase=verify --date="$RUN_DATE"
       - name: Persist evidence before dependent work
         id: evidence
@@ -135,7 +149,7 @@ jobs:
           git fetch origin "$branch:refs/remotes/origin/$branch" || true
           git push --force-with-lease origin "$branch"
           body="$RUNNER_TEMP/financing-pr.md"
-          printf 'Financing-only monitoring for %s. Domestic and overseas discovery include six consumer AI hardware categories. Original evidence is stored privately; facts, secondary research and financing projections pass their gates.\n\nCheckpoint: %s/actions/runs/%s. After merge, Pages and the local financing publisher complete public website and Mini Program verification.\n' "$RUN_DATE" "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" > "$body"
+          printf 'Financing-only monitoring for %s. Domestic and overseas discovery include six consumer AI hardware categories. Original evidence is stored privately; facts, secondary research and financing projections pass their gates.\n\nCheckpoint: %s/actions/runs/%s. The VPS Hermes supervisor reviews original evidence and resumes exact-head CI approval/checks. After merge, Pages and the VPS financing publisher complete public website and Mini Program verification. Local Codex remains a recovery option.\n' "$RUN_DATE" "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" > "$body"
           pr="$(gh pr list --head "$branch" --state open --json url --jq '.[0].url')"
           if [ -z "$pr" ]; then
             pr="$(gh pr create --base main --head "$branch" --title "Publish financing for $RUN_DATE" --body-file "$body")"
@@ -148,7 +162,7 @@ jobs:
           const state=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/financing-publication/ci-status.json'));
           const status=state.status==='passed'?'review_required':state.status;
           fs.appendFileSync(process.env.GITHUB_OUTPUT,`status=${status}\nhead_sha=${state.head_sha}\n`);
-          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,`## Financing publication: ${status}\n\nPR: ${state.pr_url}\n\nAccepted head: ${state.head_sha}\n\n${state.run_url ? 'Production CI: '+state.run_url+'\n\n' : ''}${state.status==='awaiting_approval'?'Review and approve this exact CI run, then resume review/merge and publication.':state.status==='passed'?'review_required: Codex must review '+state.pr_url+' at '+state.head_sha+' before merging.':'Codex must review the accepted sources and facts after both production checks pass.'}\n\nAccepted collection and research are retained; resume the pending publication stage.\n`);
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,`## Financing publication: ${status}\n\nPR: ${state.pr_url}\n\nAccepted head: ${state.head_sha}\n\n${state.run_url ? 'Production CI: '+state.run_url+'\n\n' : ''}${state.status==='awaiting_approval'?'VPS Hermes reviews original evidence before approving this exact trusted CI run; passing CI is still required before merge.':state.status==='passed'?'review_required: Codex must review during manual recovery; otherwise VPS Hermes must review '+state.pr_url+' at '+state.head_sha+' before merging.':'VPS Hermes must review accepted sources and facts; both production checks must pass before merging.'}\n\nAccepted collection and research are retained; resume the pending publication stage.\n`);
           NODE
       - name: Save publication recovery status
         if: always() && steps.publication.outcome != 'skipped'

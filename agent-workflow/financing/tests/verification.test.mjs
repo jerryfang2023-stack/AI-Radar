@@ -232,7 +232,8 @@ test('tampered collection and foreign supplemental checkpoint fail before captur
 
 test('legacy pending is not a completed supervisor state; bounded pending does not loop forever', () => {
   const clock = { date, minute: 500 };
-  assert.equal(selectRunDate([{ date: '2026-10-05', status: 'pending_verification' }], clock), '2026-10-05');
+  assert.equal(selectRunDate([{ date: '2026-10-05', status: 'pending_verification' }], {...clock,minute:489}), '2026-10-05');
+  assert.equal(selectRunDate([{ date: '2026-10-05', status: 'pending_verification' }], clock), date);
   assert.equal(selectRunDate([{ date: '2026-10-05', status: 'pending_verification', verification: { status: 'completed' } }], clock), date);
   assert.equal(acceptedPublicationStatus({ date, status: 'pending_verification' }, date), 'verification_required');
   assert.equal(acceptedPublicationStatus({ date, status: 'pending_verification', verification: { status: 'completed' } }, date), 'pending_verification');
