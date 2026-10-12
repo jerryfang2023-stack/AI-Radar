@@ -48,4 +48,3 @@ def test_automation_evidence_is_separate_from_bounces_and_cannot_forge_server_ev
     assert groups['internal']['visitors'] == 1
     assert sum(r['pageViews'] for r in report['channels']) == 34
     assert client.post('/api/v1/analytics/events',json=analytics_event(platform='pc',eventId='server:registration_success:spoof')).status_code == 400
-
