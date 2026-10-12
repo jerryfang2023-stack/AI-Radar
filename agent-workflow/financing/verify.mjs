@@ -13,6 +13,7 @@ import { createLeadFollowupSearch } from './lead-followup-search.mjs';
 import { dispositionResolver } from './verification-dispositions.mjs';
 import {createReviewBudget, reviewStage, reviewQueueSummary} from './review-budget.mjs';
 import {reviewStateDirectory} from './review-state.mjs';
+import {valueTriageResolver} from './value-triage.mjs';
 
 const version = 'FINANCING-VERIFICATION-1';
 const semanticReasons = new Set(['ai_relevance_unverified', 'robotics_core_business_review', 'embodied_or_robotics_core_business_review']);
@@ -63,9 +64,18 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
   const processed = new Set();
   const pendingReviews=new Map();
   const resolveDisposition=dispositionResolver({root,backupRoot,directory,date});
+  const resolveTriage=valueTriageResolver({backupRoot,date});
   const processLead = async ([url, receipt]) => {
     const queued = queue.entries[url];
     const disposition=resolveDisposition(url,receipt,queued);
+    const triage=resolveTriage(url,receipt,queued);
+    const dispositionTime=disposition.pending_review?.reviewed_at || disposition.proof?.reviewed_at;
+    if(triage.action==='skip' && (!dispositionTime || dispositionTime<=triage.proof.reviewed_at)
+      && !['newer_private_review_preserved','private_evidence_conflicts_with_collection'].includes(disposition.reason)) {
+      processed.add(url);
+      state.entries[url]={source_url:url,origin_date:queued?.origin_date || date,status:'excluded',reason:triage.reason,checks:pendingChecks(),value_triage:triage};
+      write(file,state);return;
+    }
     if(disposition.pending_review)pendingReviews.set(url,disposition.pending_review);
     if(disposition.action==='close') {
       processed.add(url);

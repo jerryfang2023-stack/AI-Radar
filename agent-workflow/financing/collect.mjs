@@ -16,6 +16,7 @@ import { recheckPending } from './recheck.mjs';
 import {createReviewBudget} from './review-budget.mjs';
 import {createLeadFollowupSearch} from './lead-followup-search.mjs';
 import {reviewStateDirectory} from './review-state.mjs';
+import {valueTriageResolver} from './value-triage.mjs';
 
 export async function collect({ root, directory, backupRoot, date, gateway, feed, supplements, capture = captureOriginal, recheck = false, reviewSearch }) {
   const file = path.join(directory, 'collection.json');
@@ -60,6 +61,11 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
   state.supplemental_failures = discovered.supplementalFailures;
   state.capture_capacity = { discovered_leads: discovered.leads.length, max_attempts: captureCapacity, margin: config.discovery_capacity_margin };
   state.search_health = gateway.status?.() || {}; state.search_attempts = gateway.attempts || [];
+  const resolveTriage=valueTriageResolver({backupRoot,date});
+  for(const lead of discovered.leads.filter(lead=>!state.captures[lead.url])) {
+    const triage=resolveTriage(lead.url,lead);
+    if(triage.action==='skip')state.captures[lead.url]={status:'excluded',reason:triage.reason,attempted:false,title:lead.title || '',coverage:lead.coverage || [],value_triage:triage};
+  }
   const remaining = discovered.leads.filter(lead => !state.captures[lead.url]);
   const considered = remaining.slice(0, captureCapacity);
   const reserve = backlogReserve({backupRoot,date});
