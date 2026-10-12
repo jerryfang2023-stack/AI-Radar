@@ -31,6 +31,8 @@ test('published receipts require website and Mini dates and full accepted SHA',(
   assert.equal(validPublishedReceipt(receipt,'2026-10-12'),true);
   assert.equal(validPublishedReceipt({...receipt,mini_date:'2026-10-11'},'2026-10-12'),false);
   assert.equal(validPublishedReceipt({...receipt,source_commit:'short'},'2026-10-12'),false);
+  assert.equal(validPublishedReceipt({...receipt,website_date:'2026-10-13',mini_date:'2026-10-13'},'2026-10-12'),true);
+  assert.equal(validPublishedReceipt({...receipt,website_date:'bad',mini_date:'bad'},'2026-10-12'),false);
 });
 test('acceptance binds reviewed date and SHA, all checks, actual evidence and no open issues',()=>{
   const identity={date:'2026-10-03',head:'a'.repeat(40)};

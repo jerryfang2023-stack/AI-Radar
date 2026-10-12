@@ -17,6 +17,7 @@ CPUQuota=100%
 PrivateTmp=false
 ProtectSystem=full
 ProtectHome=read-only
+ReadWritePaths=/home/ubuntu/.guanlan-runtime
 StandardOutput=append:/srv/guanlan-financing/runtime/supervisor.log
 StandardError=append:/srv/guanlan-financing/runtime/supervisor.log
 

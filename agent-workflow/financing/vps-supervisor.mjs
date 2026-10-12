@@ -50,7 +50,8 @@ export function assertApprovalRun(run,{head,date,workflowId}) {
     || run.conclusion!=='action_required')throw new Error('untrusted_ci_approval_run');
 }
 export function validPublishedReceipt(receipt,date) {
-  return receipt?.status==='published' && receipt.date===date && receipt.website_date===date && receipt.mini_date===date
+  return receipt?.status==='published' && receipt.date===date && /^\d{4}-\d{2}-\d{2}$/u.test(receipt.website_date || '')
+    && receipt.website_date>=date && receipt.mini_date===receipt.website_date
     && /^[a-f0-9]{40}$/u.test(receipt.source_commit || '');
 }
 function command(name, args, options = {}) {
