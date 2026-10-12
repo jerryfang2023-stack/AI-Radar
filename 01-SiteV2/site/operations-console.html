@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V3.11.0-pc-account-management">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.12.0-pc-acquisition">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -369,7 +369,7 @@
 <body class="page-operations-console">
   <main class="shell" data-ops-console tabindex="-1" hidden>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.11.0</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.12.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
@@ -510,6 +510,26 @@
                     <div class="aa-funnel" data-funnel></div>
                     <div class="aa-failure-reasons" data-registration-failures></div>
                   </article>
+                </section>
+                <section class="aa-panel" data-pc-acquisition hidden>
+                  <header class="aa-section-head compact"><div><p>PC ACQUISITION</p><h2>PC 渠道与访问质量</h2></div></header>
+                  <p>渠道参数与引荐域名用于归因；来源未知不等于直接访问。普通访问仅表示未发现自动化线索，不代表已验证真人。各渠道访客可能重合。</p>
+                  <div class="aa-platforms" data-pc-quality></div>
+                  <div class="aa-controls">
+                    <label>归因口径 <select data-pc-basis><option value="channels">本次会话来源</option><option value="firstChannels">首次来源</option></select></label>
+                    <label>访问分组 <select data-pc-type><option value="all">全部（保留原始统计）</option><option value="ordinary">普通访问（未证实真人）</option><option value="suspected_automation">疑似自动化</option><option value="declared_crawler">声明为爬虫</option><option value="internal">标记为内部测试</option></select></label>
+                  </div>
+                  <div data-pc-channels></div>
+                  <details><summary>每日渠道明细（本次来源）</summary><div data-pc-daily></div></details>
+                  <details><summary>生成推广链接</summary>
+                    <form data-channel-link-form>
+                      <p><label>投放位置 <select name="channel"><option value="wechat:group">微信群</option><option value="wechat:official_account">公众号</option><option value="wechat:moments">朋友圈</option><option value="xiaohongshu:social">小红书</option><option value="partner:referral">合作伙伴</option><option value="internal:test">内部测试</option></select></label></p>
+                      <p><label>活动标记 <input name="campaign" placeholder="例如 season2 或 partner_acme" maxlength="48" pattern="[A-Za-z][A-Za-z0-9_-]{0,47}" required></label></p>
+                      <p><label>站内路径 <input name="path" value="/" required></label> <button type="submit" class="aa-refresh">生成链接</button></p>
+                      <p>活动标记仅用字母、数字、短横线或下划线，不填姓名、电话等个人信息。</p>
+                      <output data-channel-link-output aria-live="polite" style="display:block;overflow-wrap:anywhere;user-select:all"></output>
+                    </form>
+                  </details>
                 </section>
                 <section class="aa-two-column" aria-label="页面与内容表现">
                   <article class="aa-panel">
@@ -673,7 +693,7 @@
   <script src="data/pipeline-dashboard.js"></script>
   <script src="data/ops-console.js"></script>
   <script src="assets/operations-console.js?v=ops-390-growth-20261002"></script>
-  <script src="assets/application-analytics.js?v=ops-astra-20260912"></script>
+  <script src="assets/application-analytics.js?v=pc-acquisition-20261012"></script>
   <script src="assets/member-operations.js?v=ops-astra-20260912"></script>
   <script src="assets/search-growth.js?v=20261002-growth-v1"></script>
   <script src="assets/operations-auth.js?v=ops-astra-20260912"></script>

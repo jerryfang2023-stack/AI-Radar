@@ -21,7 +21,7 @@ test("OPS owns analytics and the old entry redirects without a duplicate dashboa
   assert.match(page, /meta name="robots" content="noindex,nofollow"/);
   assert.match(page, /data-tab="analytics"/);
   assert.match(page, /data-panel="analytics" data-application-analytics/);
-  assert.match(page, /assets\/application-analytics\.js\?v=ops-astra-20260912/);
+  assert.match(page, /assets\/application-analytics\.js\?v=pc-acquisition-20261012/);
   const analyticsStart = page.indexOf('data-panel="analytics"');
   const membershipStart = page.indexOf('data-panel="membership"');
   assert.ok(analyticsStart >= 0 && membershipStart > analyticsStart);
@@ -87,7 +87,7 @@ function dashboardHarness({ active = true } = {}) {
   vm.runInNewContext(script, {
     document: { querySelector: () => dashboard, addEventListener(name, handler) { documentListeners[name] = handler; } },
     fetch(url, options) { return new Promise((resolve, reject) => requests.push({ url, options, resolve, reject })); },
-    Intl, AbortController, setTimeout, clearTimeout,
+    Intl, AbortController, setTimeout, clearTimeout, URL, URLSearchParams,
   });
   return { element, dashboard, days, requests, documentListeners };
 }
@@ -101,6 +101,28 @@ const respond = async (request, data = production(), ok = true) => {
   request.resolve({ ok, json: async () => data });
   await new Promise((resolve) => setImmediate(resolve));
 };
+
+test('PC channel report filters quality, generates tagged links and clears on logout', async () => {
+  const app=dashboardHarness();
+  app.element('[data-pc-basis]').value='channels';
+  app.element('[data-pc-type]').value='all';
+  const rows=[{source:'wechat',medium:'group',campaign:'season2',trafficType:'ordinary',visitors:3,sessions:4,pageViews:8,registrations:1}, {source:'unattributed',medium:'unattributed',trafficType:'suspected_automation',visitors:2,sessions:2,pageViews:80,registrations:0}];
+  await respond(app.requests[0],{...production(),pcAcquisition:{channels:rows,firstChannels:rows,daily:rows.map(r=>({...r,date:'2026-10-12'})),quality:[]}});
+  assert.match(app.element('[data-pc-channels]').innerHTML,/微信群|微信/);
+  assert.match(app.element('[data-pc-channels]').innerHTML,/疑似自动化/);
+  app.element('[data-pc-type]').value='ordinary';
+  app.element('[data-pc-type]').listeners.change();
+  assert.doesNotMatch(app.element('[data-pc-channels]').innerHTML,/疑似自动化/);
+  const elements={campaign:{value:'season2'},channel:{value:'wechat:group'},path:{value:'/en/'}};
+  const submit=()=>app.element('[data-channel-link-form]').listeners.submit({preventDefault(){},target:{elements}});
+  submit();
+  assert.equal(app.element('[data-channel-link-output]').textContent,'https://www.zkdlj.vip/en/?utm_source=wechat&utm_medium=group&utm_campaign=season2');
+  elements.path.value='https://evil.example/';submit();
+  assert.match(app.element('[data-channel-link-output]').textContent,/请填写/);
+  app.documentListeners['operations:logout']();
+  assert.equal(app.element('[data-pc-channels]').textContent,'');
+  assert.equal(app.element('[data-pc-acquisition]').hidden,'');
+});
 
 test("analytics logout clears rendered data and discards late responses before a new session", async () => {
   const app = dashboardHarness();
