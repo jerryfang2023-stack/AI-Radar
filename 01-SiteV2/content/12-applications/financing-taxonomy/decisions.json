@@ -29757,7 +29757,111 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-11T05:44:45.771Z"
+    },
+    "EV-7c8a2573ab3781e9": {
+      "id": "EV-7c8a2573ab3781e9",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "公司核心业务是为机器人训练采集人类动作数据并做机器人系统集成，属于具身智能/机器人相关主营。",
+      "input_hash": "638447724c481351685a962c712ce74efc4fad72c2e6224705e4558cc2043caf",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-aac562d33025fdd3",
+          "quote": "Mecka AI, a startup focused on collecting and analyzing human movement data to help train robots, has raised $60 million in a Series B funding round"
+        },
+        {
+          "source_id": "FISRC-e2371b5b266926ae",
+          "quote": "Mecka AI pays people to fold laundry, make coffee, and repair cars while wearing body sensors."
+        },
+        {
+          "source_id": "FISRC-e2371b5b266926ae",
+          "quote": "Mecka also works as a robot integrator: it installs hardware, captures data on site, retrains models on it, and runs the system afterwards."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T08:25:14.015Z"
+    },
+    "EV-1ab1592853c9099a": {
+      "id": "EV-1ab1592853c9099a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "公司主营统一调度多元异构算力的AI原生基础设施与MaaS平台，属于AI云与算力服务。",
+      "input_hash": "1891c0b888097409dca51ad7f1792301dc573fbb74aa7b4bcca319d4c3105ba7",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-301f55fdabb64792",
+          "quote": "无问芯穹的Agentic Infra自主式基础设施平台，通过统一调度多元异构算力，目前该平台已部署触达37,000P算力，覆盖16种主流芯片，支持十万卡级超大规模模型的训练、推理与强化学习任务"
+        },
+        {
+          "source_id": "FISRC-c0fc7fcf93e79f8f",
+          "quote": "面向AI原生企业的大规模模型训练推理一体化平台"
+        },
+        {
+          "source_id": "FISRC-c0fc7fcf93e79f8f",
+          "quote": "面向企业与开发者输出大规模AI智力的“Token工厂”"
+        },
+        {
+          "source_id": "FISRC-301f55fdabb64792",
+          "quote": "截至今年7月，其Agentic MaaS大模型服务平台单日Token调用量较去年12月实现了40倍的爆发增长"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T08:25:14.015Z"
+    },
+    "EV-e8790e3d950ce1c7": {
+      "id": "EV-e8790e3d950ce1c7",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "公司构建面向软件工程的机器原生模型Jev，属于专用基础模型。",
+      "input_hash": "df78da69d566c2565c10cc801ef919e28be8c6f31f77cb73c53cb8c5d3f1faa1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e4334f02f2e76723",
+          "quote": "TypeSafe builds machine-native models for software; its first model, Jev, is used by about a third of the Fortune 500 according to the company"
+        },
+        {
+          "source_id": "FISRC-917825c031530956",
+          "quote": "There will be even more machine-native models"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T08:25:14.015Z"
     }
   },
-  "generated_at": "2026-10-11T05:44:45.771Z"
+  "generated_at": "2026-10-12T08:25:14.016Z"
 }

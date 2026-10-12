@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-11",
-    "currentDate": "2026-10-11",
-    "eventCount": 4063,
+    "latestDataDate": "2026-10-12",
+    "currentDate": "2026-10-12",
+    "eventCount": 4069,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,17 +62,17 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 3,
     "china_market_company_count": 3,
-    "first_disclosed_at": "2026-02-24",
+    "first_disclosed_at": "2025-01",
     "latest_disclosed_at": "2026-08-28",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 1,
       "participant": 2
     },
@@ -222,6 +222,38 @@
         ]
       },
       {
+        "activity_id": "IA-c749b149e22ae456",
+        "funding_insight_id": "FI-9f56d9e17ea9cdbd",
+        "event_ids": [
+          "EV-1ab1592853c9099a"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "EN-0369c8fcda657a43",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2025年11月近5亿元A+轮跟投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2189e119ac7f0069",
+            "source_url": "https://www.qbitai.com/2025/11/356885.html",
+            "source_title": "5亿热钱砸向清华AI Infra明星：最大化算力效能筑造智能体基建",
+            "source_content_hash": "d66f8f6bad575ee8",
+            "quote": "惠远资本、尚颀资本、弘晖基金跟投",
+            "quote_hash": "ff4709a431920ec4b272e0e8c85f140ef08829b539cf5f4b652ce79a206ba5c0"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-6aa6cd3f4a039aca",
         "funding_insight_id": "FI-db7372c6419b5ac0",
         "event_ids": [
@@ -278,6 +310,14 @@
         "source_content_hash": "0ad2701645471c8d",
         "quote": "顺为资本、Prosperity7、达晨财智、柏睿资本、弘晖基金、华泰紫金、东方嘉富、千乘资本、广发信德等老股东全部选择继续大额认购",
         "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
+      },
+      {
+        "source_id": "FISRC-2189e119ac7f0069",
+        "source_url": "https://www.qbitai.com/2025/11/356885.html",
+        "source_title": "5亿热钱砸向清华AI Infra明星：最大化算力效能筑造智能体基建",
+        "source_content_hash": "d66f8f6bad575ee8",
+        "quote": "惠远资本、尚颀资本、弘晖基金跟投",
+        "quote_hash": "ff4709a431920ec4b272e0e8c85f140ef08829b539cf5f4b652ce79a206ba5c0"
       },
       {
         "source_id": "FISRC-b8b7d456eceee943",
