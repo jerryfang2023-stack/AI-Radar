@@ -367,15 +367,17 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-5846d65157a74c7c",
+    "claim_id": "CL-fb740a17a1498acb",
     "raw_id": "RAW-ce1064588da88364",
     "claim_type": "funding",
-    "subject": "首发| 蓝芯算力",
+    "subject": "蓝芯算力",
     "predicate": "funding",
-    "object": "，用AI重新定义CPU",
+    "object": "B轮系列融资，合计融资规模近20亿元人民币",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 1
+      "sequence": 1,
+      "model_candidate_id": "MAC-a666c8975433a6ad",
+      "funding_amount_scope": "combined_rounds"
     },
     "source_span": {
       "raw_id": "RAW-ce1064588da88364",
@@ -383,8 +385,8 @@
       "end": 94
     },
     "source_quote": "投资界获悉，行业领 先的RISC-V CPU+AI芯片公司蓝芯算力（深圳）科技有限公司（简称“蓝芯算力”）已于近日完成B轮系列融资，合计融资规模近20亿元人民币。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1651,6 +1653,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-624e1ad23d2f3b6f",
+    "raw_id": "RAW-2477364f1ae6e049",
+    "claim_type": "funding",
+    "subject": "Cori Clinical",
+    "predicate": "funding",
+    "object": "$4 million seed funding round led by Breega with participation from Enzo, Heartfelt, Together Ventures and Bynd",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-596f84e5aee465e1"
+    },
+    "source_span": {
+      "raw_id": "RAW-2477364f1ae6e049",
+      "start": 0,
+      "end": 180
+    },
+    "source_quote": "Cori Clinical, an AI platform for\nclinical trials, has raised $4 million in a seed funding round led by Breega,\nwith participation from Enzo, Heartfelt, Together Ventures and Bynd.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-feaa14362ee405df",
     "raw_id": "RAW-7f58a68b723391b7",
     "claim_type": "funding",
@@ -1694,6 +1718,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-c27c42c967738d55",
+    "raw_id": "RAW-59228e1a66e02239",
+    "claim_type": "funding",
+    "subject": "Verso",
+    "predicate": "funding",
+    "object": "$6 million in seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-400bf3514682c872"
+    },
+    "source_span": {
+      "raw_id": "RAW-59228e1a66e02239",
+      "start": 0,
+      "end": 91
+    },
+    "source_quote": "Verso, an AI-powered\nconsumer intelligence platform, has raised $6 million in seed funding.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-de92051911cac807",
     "raw_id": "RAW-bff5bd69a4330169",
     "claim_type": "funding",
@@ -1712,6 +1758,28 @@
     "source_quote": "Cambridge-based startup Neela Biotech has raised £2.1m in pre-seed funding to scale its AI-driven technology that converts food, agricultural and forestry waste into sustainable aviation fuel (SAF).",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bca13f8b17ea40b1",
+    "raw_id": "RAW-1d36ac948be82234",
+    "claim_type": "funding",
+    "subject": "Gudea",
+    "predicate": "funding",
+    "object": "$7 million in seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0d4c9feed61afd3f"
+    },
+    "source_span": {
+      "raw_id": "RAW-1d36ac948be82234",
+      "start": 65,
+      "end": 258
+    },
+    "source_quote": "Gudea has raised $7 million in seed funding to help companies anticipate which online narratives will go viral and understand who is driving them, the startup tells Crunchbase News exclusively.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -2220,6 +2288,137 @@
     "source_quote": "The funding round was led by Sequoia and included participation from Nvidia, Microsoft’s venture fund M12 and other investors.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-91fea21827bfb00c",
+    "raw_id": "RAW-ffb017da5f2dd1f8",
+    "claim_type": "funding",
+    "subject": "One",
+    "predicate": "funding",
+    "object": "raised $4 million in new seed funding",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-06fcd73056c8abb1"
+    },
+    "source_span": {
+      "raw_id": "RAW-ffb017da5f2dd1f8",
+      "start": 209,
+      "end": 395
+    },
+    "source_quote": "Today we're announcing that One has raised $4 million in new seed funding to build a trust layer for AI agents, the system enterprises need to bring the agentic movement into production.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-45ba2cea8aa29286",
+    "raw_id": "RAW-1504e62f5faab571",
+    "claim_type": "funding",
+    "subject": "清醒异构",
+    "predicate": "funding",
+    "object": "完成A+轮融资",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c50601d274e2bab1",
+      "funding_amount_status": "not_disclosed"
+    },
+    "source_span": {
+      "raw_id": "RAW-1504e62f5faab571",
+      "start": 0,
+      "end": 85
+    },
+    "source_quote": "投资界AI获悉，清华系量子人工智能明星企业清醒异构完成A+轮融资，投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7d8a03383451fbf1",
+    "raw_id": "RAW-1a3f8d6d4b46a2f4",
+    "claim_type": "funding",
+    "subject": "CurvetAI",
+    "predicate": "funding",
+    "object": "Rs 6 crore in pre-seed funding led by Merak Ventures",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1a3f8d6d4b46a2f4",
+      "start": 0,
+      "end": 267
+    },
+    "source_quote": "Kolkata: CurvetAI, an AI workspace that brings multiple AI capabilities onto a single platform, has raised Rs 6 crore in a pre-seed funding round led by Merak Ventures, as the growing number of AI products leaves users navigating an increasingly fragmented ecosystem.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2f50acfb06781a43",
+    "raw_id": "RAW-ac6c886e8e3b1818",
+    "claim_type": "funding",
+    "subject": "Sabi",
+    "predicate": "funding",
+    "object": "$50 Million Seed Round Led by Khosla Ventures to Put a Brain-AI Interface Inside a Baseball Cap",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ac6c886e8e3b1818",
+      "start": 0,
+      "end": 201
+    },
+    "source_quote": "SAN FRANCISCO, Calif., Oct. 09, 2026 (GLOBE NEWSWIRE) -- Sabi today announced it has raised a $50 million seed round, led by Khosla Ventures, to develop a brain-AI interface designed for everyday wear.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-85f5e198ca51e8ba",
+    "raw_id": "RAW-71dac3c0f0f4abc5",
+    "claim_type": "funding",
+    "subject": "Ampersand",
+    "predicate": "funding",
+    "object": "$15M Series A led by Bessemer Venture Partners",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-84fb8b0978db3cff"
+    },
+    "source_span": {
+      "raw_id": "RAW-71dac3c0f0f4abc5",
+      "start": 169,
+      "end": 277
+    },
+    "source_quote": "Bessemer Venture Partners leads Ampersand’s $15M Series A to make every enterprise system legible to agents.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b52792d86d0b686c",
+    "raw_id": "RAW-99088f67f823503c",
+    "claim_type": "funding",
+    "subject": "比特幻境",
+    "predicate": "funding",
+    "object": "数亿元天使轮融资",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cce8f381621eba60"
+    },
+    "source_span": {
+      "raw_id": "RAW-99088f67f823503c",
+      "start": 11,
+      "end": 78
+    },
+    "source_quote": "总部位于厦门的AI眼镜企业——比特幻境于近日宣布完成数亿元天使轮融资，投资方包括博华资本、戈壁创投、元禾璞华、尚势资本等相关投资机构。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

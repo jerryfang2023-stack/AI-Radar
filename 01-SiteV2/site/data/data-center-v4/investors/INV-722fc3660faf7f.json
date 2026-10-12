@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4069,
+    "eventCount": 4077,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,29 +61,35 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-08-31",
+    "latest_disclosed_at": "2026-09-24",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
       "other",
       "pre_series_a",
+      "series_a_plus",
       "series_b_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7b16566a47240add",
+        "canonical_entity_id": "",
+        "name": "北京清醒异构科技有限公司"
+      },
       {
         "entity_id": "EN-55c37c5c0b75471a",
         "canonical_entity_id": "",
@@ -106,6 +112,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-76ba6bd2df36bcbd",
+        "funding_insight_id": "FI-f138ed951484efaa",
+        "event_ids": [
+          "EV-f9cd18d3163ca060"
+        ],
+        "company_entity_id": "EN-7b16566a47240add",
+        "company_canonical_entity_id": "",
+        "company_name": "北京清醒异构科技有限公司",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-09-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-735024582f88eccf",
+            "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+            "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+            "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+            "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
+            "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6685d67328f251d8",
         "funding_insight_id": "FI-a733821457c6cc8d",
@@ -319,6 +365,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-735024582f88eccf",
+        "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+        "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+        "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+        "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
+        "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
+      },
+      {
         "source_id": "FISRC-ed4f088f02c38455",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
         "source_title": "OpenCSG完成数亿元Pre-A轮融资",
@@ -404,6 +458,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：北京清醒异构科技有限公司 · A+轮 · 2026-09-24 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-735024582f88eccf"
+        },
+        {
           "description": "融资来源记录：开放传神（OpenCSG） · Pre-A轮 · 2026-08-31 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed4f088f02c38455"
         },
@@ -439,6 +497,14 @@
           "quote_hash": "31b528afc720d8943b4421f2618cdec97169b6b00e81a8704e594abd40f5f39e"
         },
         {
+          "source_id": "FISRC-735024582f88eccf",
+          "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+          "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+          "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+          "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
+          "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
+        },
+        {
           "source_id": "FISRC-ed4f088f02c38455",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
           "source_title": "OpenCSG完成数亿元Pre-A轮融资",
@@ -453,14 +519,6 @@
           "source_content_hash": "c5b71d91ca82e3f7a35c6ed1119b2c49f2be359e102c13b0b78c4ed76ac706b1",
           "quote": "投资方包括徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本，以及具身智能、汽车产业链龙头企业等",
           "quote_hash": "ece0f1d926cedbeba4071e2121c06f1c98a8a61a8f9fbd0ee5f7822d56e4ddac"
-        },
-        {
-          "source_id": "FISRC-2ac4a8f639049a65",
-          "source_url": "https://www.rccaijing.com/news-7498891546877163409.html",
-          "source_title": "两登Nature封面，清华博士杨哲宇创业1年、晰见科技连续完成近5亿元融资 - 瑞财经",
-          "source_content_hash": "40247b7fa2a95085",
-          "quote": "本轮投资方包括徐汇资本、华映资本、经纬创投、英诺基金、水木清华以及具身智能、汽车产业链龙头企业等",
-          "quote_hash": "6d388993cbd027b7a3a371e0e0aed525d4b34d06924c1849205f475ca8beb78c"
         }
       ],
       "last_verified_at": "2026-10-03",

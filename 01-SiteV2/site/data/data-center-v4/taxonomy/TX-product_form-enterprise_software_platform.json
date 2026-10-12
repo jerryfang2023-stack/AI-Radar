@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4069,
+    "eventCount": 4077,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -60,6 +60,7 @@
     "valueId": "enterprise_software_platform",
     "eventIds": [
       "EV-5b59ff829e596b56",
+      "EV-c35972d334bcee48",
       "EV-187a61fc05451d66",
       "EV-6cf399bb27ddd1a5",
       "EV-da8dc9f513542c19",
@@ -278,6 +279,7 @@
     ],
     "entityIds": [
       "EN-2cfcb7f8e397348b",
+      "EN-07249e5c4d3d02e2",
       "EN-47a9e65caa36d9e8",
       "EN-cfc7b6b058a154a5",
       "EN-d965aa403593d08c",
@@ -557,6 +559,88 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
       "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-c35972d334bcee48",
+      "dataDate": "2026-10-12",
+      "date": "2026-10-07",
+      "updatedDate": "2026-10-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cori Clinical 获 400 万美元种子轮融资，用于改进临床试验设计并减少延误",
+      "originalTitle": "Cori Clinical secures $4M seed to improve clinical trial design and cut delays",
+      "subject": "Cori Clinical",
+      "action": "funding",
+      "object": "$4 million seed funding round led by Breega with participation from Enzo, Heartfelt, Together Ventures and Bynd",
+      "metrics": [
+        "$4 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-07249e5c4d3d02e2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-07249e5c4d3d02e2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-07249e5c4d3d02e2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-07249e5c4d3d02e2"
+      ],
+      "entityNames": [
+        "Cori Clinical"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/07/cori-clinical-secures-4m-seed-to-improve-clinical-trial-design-and-cut-delays/",
+      "publisher": "tech.eu"
     },
     {
       "id": "EV-187a61fc05451d66",
@@ -59824,6 +59908,27 @@
       ],
       "eventIds": [
         "EV-5b59ff829e596b56"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-enterprise_software_platform"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12"
+    },
+    {
+      "id": "EN-07249e5c4d3d02e2",
+      "name": "Cori Clinical",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c35972d334bcee48"
       ],
       "viewpointIds": [],
       "classificationRefs": [

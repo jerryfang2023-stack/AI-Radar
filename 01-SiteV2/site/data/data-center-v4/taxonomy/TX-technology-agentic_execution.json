@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4069,
+    "eventCount": 4077,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -157,6 +157,7 @@
       "EV-1349fd0441b75da0",
       "EV-6e06cfa28f76a76f",
       "EV-e61effb7ada8508f",
+      "EV-2f9a3670fc346060",
       "EV-0ade039d36e077ae",
       "EV-52115fee0e716170",
       "EV-f0fee44c1dfdcb09",
@@ -21310,6 +21311,88 @@
       "products": [],
       "sourceUrl": "https://pymnts.com/news/artificial-intelligence/2026/this-ceo-just-raised-110-million-to-make-banks-agent-first",
       "publisher": "pymnts.com"
+    },
+    {
+      "id": "EV-2f9a3670fc346060",
+      "dataDate": "2026-10-12",
+      "date": "2026-07-06",
+      "updatedDate": "2026-07-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "One 获 400 万美元融资，为 AI 智能体构建信任层",
+      "originalTitle": "One raises $4M to build the trust layer for AI agents | One",
+      "subject": "One",
+      "action": "funding",
+      "object": "raised $4 million in new seed funding",
+      "metrics": [
+        "$4 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7692c3ad3540bb80"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7692c3ad3540bb80"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7692c3ad3540bb80"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7692c3ad3540bb80"
+      ],
+      "entityNames": [
+        "One"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://withone.ai/blog/one-raises-4m-trust-layer-ai-agents",
+      "publisher": "withone.ai"
     },
     {
       "id": "EV-0ade039d36e077ae",
@@ -109625,15 +109708,16 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-8bb64551124d8870"
+        "EV-8bb64551124d8870",
+        "EV-2f9a3670fc346060"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-07-08",
-      "lastSeen": "2026-07-08"
+      "firstSeen": "2026-07-06",
+      "lastSeen": "2026-10-12"
     },
     {
       "id": "EN-14ce7672aaca7a68",

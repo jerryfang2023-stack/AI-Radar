@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4069,
+    "eventCount": 4077,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -71,14 +71,15 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2024-09",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-10-09",
     "role_counts": {
       "historical_or_ambiguous": 4,
       "lead": 1,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "multi_round",
+      "seed",
       "series_a",
       "series_b",
       "series_d",
@@ -114,9 +115,54 @@
         "entity_id": "EN-586e52112859378f",
         "canonical_entity_id": "",
         "name": "Ricursive Intelligence"
+      },
+      {
+        "entity_id": "EN-18a96fb4e49cd0e1",
+        "canonical_entity_id": "",
+        "name": "Sabi"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f456fc78d77f67c2",
+        "funding_insight_id": "FI-208b0a4f6d9ccb22",
+        "event_ids": [
+          "EV-3798871486ef5a26"
+        ],
+        "company_entity_id": "EN-18a96fb4e49cd0e1",
+        "company_canonical_entity_id": "",
+        "company_name": "Sabi",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-10-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5c428919070bfce8",
+            "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
+            "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
+            "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+            "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+            "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+          }
+        ]
+      },
       {
         "activity_id": "IA-56820acb6cee1fb9",
         "funding_insight_id": "FI-e0e22d70a91e704e",
@@ -500,6 +546,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-5c428919070bfce8",
+        "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
+        "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
+        "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+        "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+        "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+      },
+      {
         "source_id": "FISRC-4d11ed62a144a3f4",
         "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
         "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
@@ -637,6 +691,10 @@
           "source_id": "dst_official"
         },
         {
+          "description": "融资来源记录：Sabi · 种子轮 · 2026-10-09 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c428919070bfce8"
+        },
+        {
           "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4d11ed62a144a3f4"
         },
@@ -671,6 +729,14 @@
           "quote_hash": "e9c96030cc00ce2bc8bfd5f20d65cad25253164d3752dc440f5401fc795c236f"
         },
         {
+          "source_id": "FISRC-5c428919070bfce8",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
+          "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
+          "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+          "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+          "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+        },
+        {
           "source_id": "FISRC-4d11ed62a144a3f4",
           "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
           "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
@@ -685,14 +751,6 @@
           "source_content_hash": "06ecfd55822882e3",
           "quote": "The Series B round was led by DST Global",
           "quote_hash": "4486e781e7a0339f2e078c9d96b2fd5c87d699f9e49491e036814c978fe3f2f9"
-        },
-        {
-          "source_id": "FISRC-7c15ac15bf3d0b1a",
-          "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
-          "source_title": "Higgsfield Raises $400M in Series B Funding",
-          "source_content_hash": "66d04514886f3d3e",
-          "quote": "The round was led by DST Global",
-          "quote_hash": "bd794bdbdb2cdb9460fd672ab4bb1f064247dd022f70488c70c7f56b353e53cc"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -700,7 +758,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[6].role": {
+        "activities[7].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",

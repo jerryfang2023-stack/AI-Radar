@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4069,
+    "eventCount": 4077,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-04",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "pre_seed",
@@ -95,12 +95,57 @@
         "name": "Pool"
       },
       {
+        "entity_id": "EN-ee11373e48530800",
+        "canonical_entity_id": "",
+        "name": "Verso"
+      },
+      {
         "entity_id": "EN-04d190bed959ed61",
         "canonical_entity_id": "",
         "name": "Vertical Compute"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b309c81f10f1b92e",
+        "funding_insight_id": "FI-85bd50a60143ff0c",
+        "event_ids": [
+          "EV-2e54aa7c4140aa77"
+        ],
+        "company_entity_id": "EN-ee11373e48530800",
+        "company_canonical_entity_id": "",
+        "company_name": "Verso",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$6 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9b9b2bb6ee44018e",
+            "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+            "source_title": "Verso 融资 600 万美元，将消费者智能引入商业决策",
+            "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+            "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+            "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1f5fe03206efdbc4",
         "funding_insight_id": "FI-0f7625d43f2218a6",
@@ -272,6 +317,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9b9b2bb6ee44018e",
+        "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+        "source_title": "Verso 融资 600 万美元，将消费者智能引入商业决策",
+        "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+        "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+        "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+      },
+      {
         "source_id": "FISRC-cfafc3f8ac637385",
         "source_url": "https://tech.eu/2026/10/06/cleavr-bags-eur8m-to-scale-ai-powered-invoice-collection-across-europe/",
         "source_title": "Cleavr 获 800 万欧元，在欧洲扩展 AI 驱动的发票收款业务",
@@ -363,12 +416,12 @@
           "source_id": "FISRC-115626db07e52373"
         },
         {
-          "description": "融资来源记录：Cleavr · 种子轮 · 2026-10-06 · 本轮参投 · €8 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cfafc3f8ac637385"
+          "description": "融资来源记录：Verso · 种子轮 · 2026-10-08 · 本轮参投 · $6 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9b9b2bb6ee44018e"
         },
         {
-          "description": "融资来源记录：Pool · 预种子轮 · 2026-06-11 · 本轮参投 · over $2 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5497463d6c7b6acf"
+          "description": "融资来源记录：Cleavr · 种子轮 · 2026-10-06 · 本轮参投 · €8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cfafc3f8ac637385"
         }
       ],
       "current_roles": [],
@@ -414,6 +467,14 @@
           "quote_hash": "801134e2d2519318a537bf7a29d9431cfac26cb0dcf7497e1534d42ca677e93b"
         },
         {
+          "source_id": "FISRC-9b9b2bb6ee44018e",
+          "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+          "source_title": "Verso 融资 600 万美元，将消费者智能引入商业决策",
+          "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+          "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+          "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+        },
+        {
           "source_id": "FISRC-cfafc3f8ac637385",
           "source_url": "https://tech.eu/2026/10/06/cleavr-bags-eur8m-to-scale-ai-powered-invoice-collection-across-europe/",
           "source_title": "Cleavr 获 800 万欧元，在欧洲扩展 AI 驱动的发票收款业务",
@@ -428,14 +489,6 @@
           "source_content_hash": "02baba2030a519a8",
           "quote": "The round was led by Varsity. Additional participating investors included Kima Ventures, Better Angle, Portfolio Ventures, Kerala, and Financière Saint James.",
           "quote_hash": "517aa4c7e79bb5cff7c1360c4b1969619795de71e659ce546282520404b5b226"
-        },
-        {
-          "source_id": "FISRC-5497463d6c7b6acf",
-          "source_url": "https://www.linkedin.com/posts/poolday_introducing-pool-weve-raised-2m-in-activity-7470874080842285056-GzNS",
-          "source_title": "Introducing Pool 🏊 We've raised $2M in funding led by General Catalyst with participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard Pool is \"just an app for… | Pool",
-          "source_content_hash": "25273f45b49e8af2",
-          "quote": "We've raised $2M in funding led by General Catalyst with participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard",
-          "quote_hash": "f1e7ec5228f3eb91be682ce6d6229008b01e75fc596d42a30083fee56f24f08f"
         }
       ],
       "last_verified_at": "2026-09-28"

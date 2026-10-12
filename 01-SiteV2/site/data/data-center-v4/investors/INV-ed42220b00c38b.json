@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4069,
+    "eventCount": 4077,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 20,
+    "current_round_count": 21,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 17,
+    "portfolio_company_count": 18,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 3,
-      "lead": 5,
+      "lead": 6,
       "participant": 12
     },
     "round_codes": [
@@ -95,6 +95,11 @@
         "entity_id": "EN-e5cc9e38970eacb5",
         "canonical_entity_id": "",
         "name": "Aivar Innovations"
+      },
+      {
+        "entity_id": "EN-5bc235f338943862",
+        "canonical_entity_id": "",
+        "name": "Ampersand"
       },
       {
         "entity_id": "EN-c70eca6b0f88f44d",
@@ -178,6 +183,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6dc33346002b38fc",
+        "funding_insight_id": "FI-5ea7a0e216302168",
+        "event_ids": [
+          "EV-bf4cd98c9e267eab"
+        ],
+        "company_entity_id": "EN-5bc235f338943862",
+        "company_canonical_entity_id": "",
+        "company_name": "Ampersand",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$15M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-fe2eb23658e8b6c7",
+            "source_url": "https://www.bvp.com/news/meet-the-founders-of-ampersand-ayan-barua-and-lauren-long",
+            "source_title": "认识 Ampersand 的创始人：Ayan Barua 和 Lauren Long",
+            "source_content_hash": "437c4a6c3b41954d6792d762eb40771a2d69153f2d556d463539a98d45df3185",
+            "quote": "Bessemer Venture Partners leads Ampersand’s $15M Series A to make every enterprise system legible to agents.",
+            "quote_hash": "22c40157f57b82b92d286742182cdd80c002d5a265b7d745a3a88095cf32d567"
+          }
+        ]
+      },
       {
         "activity_id": "IA-09d0c6f4d6bb1280",
         "funding_insight_id": "FI-9bf08b154efd4b4b",
@@ -1087,6 +1132,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-fe2eb23658e8b6c7",
+        "source_url": "https://www.bvp.com/news/meet-the-founders-of-ampersand-ayan-barua-and-lauren-long",
+        "source_title": "认识 Ampersand 的创始人：Ayan Barua 和 Lauren Long",
+        "source_content_hash": "437c4a6c3b41954d6792d762eb40771a2d69153f2d556d463539a98d45df3185",
+        "quote": "Bessemer Venture Partners leads Ampersand’s $15M Series A to make every enterprise system legible to agents.",
+        "quote_hash": "22c40157f57b82b92d286742182cdd80c002d5a265b7d745a3a88095cf32d567"
+      },
+      {
         "source_id": "FISRC-8b2ed67c1554bee8",
         "source_url": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
         "source_title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
@@ -1322,16 +1375,16 @@
           "source_id": "bvp_about"
         },
         {
+          "description": "融资来源记录：Ampersand · A轮 · 2026-10-06 · 本轮领投 · $15M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fe2eb23658e8b6c7"
+        },
+        {
           "description": "融资来源记录：Miter · B轮 · 2026-09-30 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8b2ed67c1554bee8"
         },
         {
           "description": "融资来源记录：EliseAI · F轮 · 2026-09-29 · 本轮联合领投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-aae3c02b03fe09c9"
-        },
-        {
-          "description": "融资来源记录：EliseAI · 轮次未披露 · 2026-09-29 · 本轮联合领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4f44cd6d16442bdc"
         }
       ],
       "contacts": [
@@ -1466,6 +1519,14 @@
           "quote_hash": "ddf8fda04aac1704b9a947e177ed87e25c98846999bbc4fd079ff577261d7391"
         },
         {
+          "source_id": "FISRC-fe2eb23658e8b6c7",
+          "source_url": "https://www.bvp.com/news/meet-the-founders-of-ampersand-ayan-barua-and-lauren-long",
+          "source_title": "认识 Ampersand 的创始人：Ayan Barua 和 Lauren Long",
+          "source_content_hash": "437c4a6c3b41954d6792d762eb40771a2d69153f2d556d463539a98d45df3185",
+          "quote": "Bessemer Venture Partners leads Ampersand’s $15M Series A to make every enterprise system legible to agents.",
+          "quote_hash": "22c40157f57b82b92d286742182cdd80c002d5a265b7d745a3a88095cf32d567"
+        },
+        {
           "source_id": "FISRC-8b2ed67c1554bee8",
           "source_url": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
           "source_title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
@@ -1480,14 +1541,6 @@
           "source_content_hash": "33c87e55e143bc09",
           "quote": "The funding round was co-led by existing investors Andreessen Horowitz (a16z) and Bessemer Venture Partners, as well as new investor Ontario Teachers’ Pension Plan, with participation from existing investors Sapphire Ventures and Navitas Capital.",
           "quote_hash": "7655e7fc298b7cfdca3c345e6fbbdc6c71541fedb1b9a8cecacf65a1609fe13b"
-        },
-        {
-          "source_id": "FISRC-4f44cd6d16442bdc",
-          "source_url": "https://www.otpp.com/en-ca/about-us/news-and-insights/2026/eliseai-raises-350-million-at-4-billion-valuation/",
-          "source_title": "EliseAI 以 40 亿美元估值融资 3.5 亿美元，将 AI 更深入引入住房与医疗运营",
-          "source_content_hash": "c4be8294b9475931eab4f291e805900850ae28a25cfeb6c54a03811033dccc00",
-          "quote": "The financing was led by Andreessen Horowitz (a16z) and Bessemer Venture Partners, with participation from Ontario Teachers' Pension Plan, Sapphire Ventures, and Navitas Capital.",
-          "quote_hash": "4351258f1b60a0bebd8d3c4264542973ef33354112aca6497c979fcf32c61458"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1498,7 +1551,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[22].role": {
+        "activities[23].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

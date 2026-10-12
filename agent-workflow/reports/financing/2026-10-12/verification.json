@@ -35840,6 +35840,978 @@
         "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
         "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
       ]
+    },
+    "https://news.pedaily.cn/202610/570081.shtml": {
+      "source_url": "https://news.pedaily.cn/202610/570081.shtml",
+      "origin_date": "2026-10-12",
+      "status": "pending",
+      "reason": "no_accepted_financing_event_manual_review_required",
+      "content_hash": "16a8258b22d8bb9af56e3c97499b1b16933ad26ccdf7df86a7b3c5b8a2abf22c",
+      "raw_ids": [
+        "RAW-ce1064588da88364"
+      ],
+      "evidence_source_url": "https://news.pedaily.cn/202610/570081.shtml",
+      "alternate_source": false,
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://news.pedaily.cn/202610/570081.shtml",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:05:26.855Z",
+        "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [
+        "EV-3fd8a156811bfc12"
+      ],
+      "qa_hints": [],
+      "pending_reasons": [],
+      "results": [],
+      "checks": {
+        "company_identity": "pending",
+        "ai_relevance": "pending",
+        "date": "pending",
+        "amount": "pending",
+        "round": "pending",
+        "deduplication": "pending"
+      },
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ],
+      "followup": {
+        "source_url": "https://news.pedaily.cn/202610/570081.shtml",
+        "title": "首发| 蓝芯算力完成B轮系列近20亿融资，用AI重新定义CPU",
+        "origin_date": "2026-10-12",
+        "rounds": 1,
+        "status": "pending",
+        "reason": "no_accepted_financing_event_manual_review_required",
+        "content_hash": "16a8258b22d8bb9af56e3c97499b1b16933ad26ccdf7df86a7b3c5b8a2abf22c",
+        "evidence_source_url": "https://news.pedaily.cn/202610/570081.shtml",
+        "evidence_ref": "evidence://16a8258b22d8bb9af56e3c97499b1b16933ad26ccdf7df86a7b3c5b8a2abf22c",
+        "raw_ids": [
+          "RAW-ce1064588da88364"
+        ],
+        "source_binding": {
+          "source_url": "https://news.pedaily.cn/202610/570081.shtml",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-10-12T11:05:26.855Z",
+          "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+        },
+        "source_identity_reviewed": true,
+        "alternate_source": false,
+        "fact_review_completed": true,
+        "reviewed_at": "2026-10-12T11:05:26.855Z",
+        "last_processed_date": "2026-10-12",
+        "next_due_date": "2026-10-13",
+        "owner": "responsible_financing_reviewer",
+        "next_action": "next_existing_daily_verify",
+        "last_fact_review_hash": "16a8258b22d8bb9af56e3c97499b1b16933ad26ccdf7df86a7b3c5b8a2abf22c",
+        "review_stage": "fact_conflict_review"
+      }
+    },
+    "https://withone.ai/blog/one-raises-4m-trust-layer-ai-agents": {
+      "source_url": "https://withone.ai/blog/one-raises-4m-trust-layer-ai-agents",
+      "origin_date": "2026-07-08",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "content_hash": "0c7fbe9f92a357573e8504c0ca2bf95f7f7148cf35e247a66a821ceb5b2e9617",
+      "raw_ids": [
+        "RAW-ffb017da5f2dd1f8"
+      ],
+      "evidence_source_url": "https://withone.ai/blog/one-raises-4m-trust-layer-ai-agents",
+      "alternate_source": false,
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://withone.ai/blog/one-raises-4m-trust-layer-ai-agents",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:05:26.855Z",
+        "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-b458d675248a21c7",
+          "event_id": "EV-2f9a3670fc346060",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "One",
+          "announced_at": "2026-07-06",
+          "amount": "$4 million",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d74899360f0bc388",
+              "quote_hash": "fc2ca5509fed499259c78b0f1bafa893d30dd565948a95d99ab7e1b02a4dc9ff"
+            },
+            {
+              "source_id": "FISRC-8c0ae6bfcc37e44e",
+              "quote_hash": "3faad2ce0c6ce34faf898b988bf543e1aa73a4029b1b64b9bfc3f7c4fc006cb7"
+            },
+            {
+              "source_id": "FISRC-d74899360f0bc388",
+              "quote_hash": "1f2541316b0f1b8f95d8fc45d7f44b4cd90df155ab1323b329521c87e69fbcd0"
+            },
+            {
+              "source_id": "FISRC-d74899360f0bc388",
+              "quote_hash": "306bbcf377950191ebee9e05b9a5beabea6bc34f40128c293ad04547566f8199"
+            },
+            {
+              "source_id": "FISRC-d74899360f0bc388",
+              "quote_hash": "16d8864507b9eb25e7a4ee27dbd1b0fe4a4339fbd4b12a8ac57445b41d54108d"
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
+    },
+    "https://news.pedaily.cn/202609/569586.shtml": {
+      "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+      "origin_date": "2026-09-25",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+      "raw_ids": [
+        "RAW-1504e62f5faab571"
+      ],
+      "evidence_source_url": "https://news.pedaily.cn/202609/569586.shtml",
+      "alternate_source": false,
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:05:26.855Z",
+        "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-8db26837b1998204",
+          "event_id": "EV-f9cd18d3163ca060",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "北京清醒异构科技有限公司",
+          "announced_at": "2026-09-24",
+          "amount": "未披露",
+          "round": "A+轮",
+          "disclosure_status": "partially_disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "quote_hash": "2103ba58a27b91ed0ee110a6051f5399f83ee62457d27e5cd5c60ef11e88e931"
+            },
+            {
+              "source_id": "FISRC-296bbac17a901771",
+              "quote_hash": "e151bd10e458cfb09a6833e1fb2a259b80b9175b954db3b477640a4ca457f40e"
+            },
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "quote_hash": "f3d6175bab8f655d59ee0622cb8cdadf0ad9f447757c4855f43983fc90611450"
+            },
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "quote_hash": "5f57e3fff2f9a9ce1826db3b5bf8b3b02dbca249cb2358fe490f4118c1a03ee6"
+            },
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "quote_hash": "bc2d38c1794bf45af74a3eb7e9c638a25a56514b90ced63fb1a2c5bfd8cb2ad2"
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
+    },
+    "https://www.finsmes.com/2026/10/curvetai-raises-approx-usd720k-in-pre-seed-funding.html": {
+      "source_url": "https://www.finsmes.com/2026/10/curvetai-raises-approx-usd720k-in-pre-seed-funding.html",
+      "origin_date": "2026-10-07",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "content_hash": "24be5b94c0c8fdb26c812bd89c8599eb525d612356534bee52c1aa5e71ecb05c",
+      "raw_ids": [
+        "RAW-1a3f8d6d4b46a2f4"
+      ],
+      "evidence_source_url": "https://m.economictimes.com/ai/ai-insights/curvetai-raises-rs-6-crore-in-pre-seed-funding-led-by-merak-ventures/amp_articleshow/134739773.cms",
+      "alternate_source": true,
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://m.economictimes.com/ai/ai-insights/curvetai-raises-rs-6-crore-in-pre-seed-funding-led-by-merak-ventures/amp_articleshow/134739773.cms",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:05:26.855Z",
+        "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [],
+      "results": [
+        {
+          "card_id": "FI-c8f2f56ef87eee0d",
+          "event_id": "EV-abde425d9980f6b9",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "CurvetAI",
+          "announced_at": "2026-10-06",
+          "amount": "Rs 6 Crore",
+          "round": "预种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-141fde62ccd11929",
+              "quote_hash": "fdd8dc8d82a3db32d42199ae3440911dbbe45a351dd7c7cf996dbb6151cefaf7"
+            },
+            {
+              "source_id": "FISRC-be92077ed9b7f033",
+              "quote_hash": "ee0600edbe5b1a79fc7a3154481fabcc79c267c2aa923173472e0720d72b1a91"
+            },
+            {
+              "source_id": "FISRC-141fde62ccd11929",
+              "quote_hash": "ae4e69a6937facbb6ddd434919b3bf6bca6a97cf7e0ba4888136f8f6c26dc3a6"
+            },
+            {
+              "source_id": "FISRC-141fde62ccd11929",
+              "quote_hash": "1f4d19f688d55e203192043fc5c1ccdd17b8acabae2f0eb7d0707a34bbd860d2"
+            },
+            {
+              "source_id": "FISRC-db7b7baf205696d4",
+              "quote_hash": "1487811d671e05af6da1bfb0ed83b0ac94466b7228c2d2ef0c6f78be0e236196"
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ],
+      "followup": {
+        "source_url": "https://www.finsmes.com/2026/10/curvetai-raises-approx-usd720k-in-pre-seed-funding.html",
+        "original_reason": "no_alternate_original_found",
+        "status": "needs_attention",
+        "reason": "no_accepted_financing_event_manual_review_required",
+        "checks": {
+          "company_identity": "pending",
+          "ai_relevance": "pending",
+          "date": "pending",
+          "amount": "pending",
+          "round": "pending",
+          "deduplication": "pending"
+        },
+        "capture_attempts": [],
+        "title": "CurvetAI Raises Approx. USD720K in Pre-Seed Funding",
+        "origin_date": "2026-10-07",
+        "rounds": 2,
+        "stop_after_date": "2026-10-14",
+        "reviewed_status": "pending_fact_verification",
+        "review_ref": "lead-review.json#continue223-167",
+        "review_hash": "fa5cb11ecb0bbdfe3292824955f325ce07b11eb34c8cf19f184b397698b09792",
+        "review_basis": "responsible_alternate_source_review",
+        "additional_source": "https://recodex.ai/startup/ai/751272.html",
+        "content_hash": "24be5b94c0c8fdb26c812bd89c8599eb525d612356534bee52c1aa5e71ecb05c",
+        "prior_reason": "可用二次原文支持 CurvetAI ₹6 crore pre-seed 及多模型 AI 工作空间；留在正常身份、金额和融资事实门禁。",
+        "attempted": false,
+        "search_status": "hinted_original",
+        "search_reason": "",
+        "last_processed_date": "2026-10-12",
+        "prior_review": {
+          "id": "continue223-167",
+          "url": "https://www.finsmes.com/2026/10/curvetai-raises-approx-usd720k-in-pre-seed-funding.html",
+          "title": "CurvetAI Raises Approx. USD720K in Pre-Seed Funding",
+          "status": "pending_financing_fact_review",
+          "reason": "CurvetAI主体、Pune、创始人Vivek Dubey/Utkarsh Gupta与Merak一致；原文10月6日确认6000万印度卢比pre-seed。聚合摘要多个美元金额互相冲突，使用原币Rs 6 crore，不换算、不把累计收入当融资。",
+          "reviewed_at": "2026-10-11T04:09:21.640Z",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "review_basis": "original_text_source_identity_review",
+          "accepted_source": "https://m.economictimes.com/ai/ai-insights/curvetai-raises-rs-6-crore-in-pre-seed-funding-led-by-merak-ventures/amp_articleshow/134739773.cms",
+          "content_hash": "24be5b94c0c8fdb26c812bd89c8599eb525d612356534bee52c1aa5e71ecb05c",
+          "original_capture": {
+            "status": "captured",
+            "content_hash": "24be5b94c0c8fdb26c812bd89c8599eb525d612356534bee52c1aa5e71ecb05c"
+          },
+          "source_binding": {
+            "source_url": "https://m.economictimes.com/ai/ai-insights/curvetai-raises-rs-6-crore-in-pre-seed-funding-led-by-merak-ventures/amp_articleshow/134739773.cms",
+            "reviewed_at": "2026-10-11T04:09:21.640Z",
+            "reviewed_by": "Codex responsible financing reviewer",
+            "reason": "CurvetAI主体、Pune、创始人Vivek Dubey/Utkarsh Gupta与Merak一致；原文10月6日确认6000万印度卢比pre-seed。聚合摘要多个美元金额互相冲突，使用原币Rs 6 crore，不换算、不把累计收入当融资。"
+          },
+          "source_evidence": [
+            {
+              "source_url": "https://m.economictimes.com/ai/ai-insights/curvetai-raises-rs-6-crore-in-pre-seed-funding-led-by-merak-ventures/amp_articleshow/134739773.cms",
+              "content_hash": "24be5b94c0c8fdb26c812bd89c8599eb525d612356534bee52c1aa5e71ecb05c",
+              "quote": "has raised Rs 6 crore in a pre-seed funding round led by Merak Ventures"
+            }
+          ]
+        },
+        "next_due_date": null,
+        "owner": "responsible_financing_reviewer",
+        "next_action": "resume_scoped_fact_research_and_classification",
+        "review_stage": "fact_conflict_review",
+        "value_triage": {
+          "id": 167,
+          "source_url": "https://www.finsmes.com/2026/10/curvetai-raises-approx-usd720k-in-pre-seed-funding.html",
+          "title": "CurvetAI Raises Approx. USD720K in Pre-Seed Funding",
+          "decision": "retain_targeted_review",
+          "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+          "evidence_basis": "responsible_lead_triage_not_fact_approval",
+          "content_hash": null,
+          "evidence_source_url": null,
+          "reviewed_at": "2026-10-11T02:58:36.176Z",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "secondary_search": {
+            "status": "completed",
+            "receipt": "financing-monitor-state/2026-10-11/quick-targeted-search.json"
+          },
+          "priority": "funding_or_identity_issue_with_specific_subject",
+          "fact_approved": false
+        },
+        "followup": {
+          "source_url": "https://www.finsmes.com/2026/10/curvetai-raises-approx-usd720k-in-pre-seed-funding.html",
+          "original_reason": "no_alternate_original_found",
+          "status": "pending",
+          "reason": "no_alternate_original_found",
+          "checks": {
+            "company_identity": "pending",
+            "ai_relevance": "pending",
+            "date": "pending",
+            "amount": "pending",
+            "round": "pending",
+            "deduplication": "pending"
+          },
+          "capture_attempts": [],
+          "title": "CurvetAI Raises Approx. USD720K in Pre-Seed Funding",
+          "origin_date": "2026-10-07",
+          "rounds": 1,
+          "stop_after_date": "2026-10-14",
+          "reviewed_status": "pending_fact_verification",
+          "review_ref": "agent-workflow/reports/financing/2026-10-08/secondary-evidence-review.json#secondary-012",
+          "review_hash": "fa5cb11ecb0bbdfe3292824955f325ce07b11eb34c8cf19f184b397698b09792",
+          "review_basis": "responsible_alternate_source_review",
+          "additional_source": "https://recodex.ai/startup/ai/751272.html",
+          "content_hash": null,
+          "prior_reason": "可用二次原文支持 CurvetAI ₹6 crore pre-seed 及多模型 AI 工作空间；留在正常身份、金额和融资事实门禁。",
+          "attempted": false,
+          "search_status": "hinted_original",
+          "search_reason": "",
+          "last_processed_date": "2026-10-11",
+          "prior_review": {
+            "id": "secondary-012",
+            "url": "https://www.finsmes.com/2026/10/curvetai-raises-approx-usd720k-in-pre-seed-funding.html",
+            "title": "CurvetAI Raises Approx. USD720K in Pre-Seed Funding",
+            "status": "pending_fact_verification",
+            "reason": "可用二次原文支持 CurvetAI ₹6 crore pre-seed 及多模型 AI 工作空间；留在正常身份、金额和融资事实门禁。",
+            "reviewed_at": "2026-10-08T09:45:00.000Z",
+            "review_basis": "responsible_alternate_source_review",
+            "alternate_source_basis": "responsible_alternate_source_review",
+            "evidence_sources": [
+              {
+                "source_url": "https://recodex.ai/startup/ai/751272.html",
+                "content_hash": "06d213982d0ee81c4cbe4d66d8d7e7c920dc0a6a75489ff3b5d601b814f74162",
+                "quote": "当模型多到选不过来，问题从“能不能用”变成“该用哪个”\n一个创意工作者今天要完成一条产品发布视频，可能需要先用一个文本模型写脚本，再换到另一个图像模型生成封面，"
+              }
+            ],
+            "accepted_source": "https://recodex.ai/startup/ai/751272.html",
+            "source_binding": {
+              "source_url": "https://recodex.ai/startup/ai/751272.html",
+              "reviewed_by": "Codex responsible financing evidence review",
+              "reviewed_at": "2026-10-08T09:45:00.000Z",
+              "reason": "CurvetAI 的替代报道明确对应 2026-10-06 的 ₹6 crore pre-seed；产品 AI workspace 仍交由正常事实门禁确认。"
+            },
+            "reviewer": "Codex responsible financing evidence review",
+            "review_date": "2026-10-08",
+            "ledger": "agent-workflow/reports/financing/2026-10-08/secondary-evidence-review.json",
+            "strict": true
+          },
+          "next_due_date": "2026-10-12",
+          "owner": "responsible_financing_reviewer",
+          "next_action": "next_existing_daily_verify",
+          "review_stage": "needs_original"
+        },
+        "evidence_source_url": "https://m.economictimes.com/ai/ai-insights/curvetai-raises-rs-6-crore-in-pre-seed-funding-led-by-merak-ventures/amp_articleshow/134739773.cms",
+        "evidence_ref": "evidence://24be5b94c0c8fdb26c812bd89c8599eb525d612356534bee52c1aa5e71ecb05c",
+        "alternate_source": true,
+        "source_identity_reviewed": true,
+        "source_binding": {
+          "source_url": "https://m.economictimes.com/ai/ai-insights/curvetai-raises-rs-6-crore-in-pre-seed-funding-led-by-merak-ventures/amp_articleshow/134739773.cms",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-10-12T11:05:26.855Z",
+          "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+        },
+        "raw_ids": [
+          "RAW-1a3f8d6d4b46a2f4"
+        ],
+        "fact_review_completed": true,
+        "continued_search_review": {
+          "date": "2026-10-11",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "status": "search_completed_not_fact_approval",
+          "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+          "source_identity_review_required": true,
+          "original_followup_status": "captured",
+          "original_followup_hash": "a53660eef2c45ddcec7ae6b99484ccae31ca6c9be1d6a66bd89af255ed4f3b4e",
+          "original_followup_source_url": "https://dealroom.co/news/160122-curvetai-lands-623k-pre-seed-to-build-agentic-ai-workspace/",
+          "priority_original_receipts": [
+            {
+              "source_url": "https://economictimes.indiatimes.com/ai/ai-insights/curvetai-raises-rs-6-crore-in-pre-seed-funding-led-by-merak-ventures/articleshow/134739773.cms",
+              "status": "failed",
+              "reason": "fetch failed",
+              "content_hash": ""
+            },
+            {
+              "source_url": "https://entrackr.com/snippets/curvetai-raises-rs-6-cr-pre-seed-round-led-by-merak-ventures-12627784",
+              "status": "pending",
+              "reason": "original_date_missing",
+              "content_hash": ""
+            },
+            {
+              "source_url": "https://m.economictimes.com/ai/ai-insights/curvetai-raises-rs-6-crore-in-pre-seed-funding-led-by-merak-ventures/amp_articleshow/134739773.cms",
+              "status": "accepted",
+              "reason": "",
+              "content_hash": "24be5b94c0c8fdb26c812bd89c8599eb525d612356534bee52c1aa5e71ecb05c"
+            }
+          ]
+        },
+        "last_fact_review_hash": "24be5b94c0c8fdb26c812bd89c8599eb525d612356534bee52c1aa5e71ecb05c",
+        "prepared_evidence_sources": [
+          {
+            "source_url": "https://dealroom.co/news/160122-curvetai-lands-623k-pre-seed-to-build-agentic-ai-workspace/",
+            "content_hash": "a53660eef2c45ddcec7ae6b99484ccae31ca6c9be1d6a66bd89af255ed4f3b4e",
+            "evidence_ref": "evidence://a53660eef2c45ddcec7ae6b99484ccae31ca6c9be1d6a66bd89af255ed4f3b4e",
+            "state": "evidence_prepared",
+            "fact_approved": false
+          },
+          {
+            "source_url": "https://m.economictimes.com/ai/ai-insights/curvetai-raises-rs-6-crore-in-pre-seed-funding-led-by-merak-ventures/amp_articleshow/134739773.cms",
+            "content_hash": "24be5b94c0c8fdb26c812bd89c8599eb525d612356534bee52c1aa5e71ecb05c",
+            "evidence_ref": "evidence://24be5b94c0c8fdb26c812bd89c8599eb525d612356534bee52c1aa5e71ecb05c",
+            "state": "evidence_prepared",
+            "fact_approved": false
+          }
+        ],
+        "reviewed_at": "2026-10-12T11:05:26.855Z"
+      }
+    },
+    "https://x.com/rohanpaul_ai/status/2108569695586754920": {
+      "source_url": "https://x.com/rohanpaul_ai/status/2108569695586754920",
+      "origin_date": "2026-10-12",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+      "raw_ids": [
+        "RAW-ac6c886e8e3b1818"
+      ],
+      "evidence_source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
+      "alternate_source": true,
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:05:26.855Z",
+        "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-d097a7cdcd2b3cc6",
+          "event_id": "EV-3798871486ef5a26",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Sabi",
+          "announced_at": "2026-10-09",
+          "amount": "$50 million",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5c428919070bfce8",
+              "quote_hash": "ea082d424b9c72a80466ae2144f7c04e8aee4af547aa53283b74d9aee3860b9d"
+            },
+            {
+              "source_id": "FISRC-5c428919070bfce8",
+              "quote_hash": "e175649565ec46a60dc39907c09d59276059b29de8ab186c99cb7dd384ac6daf"
+            },
+            {
+              "source_id": "FISRC-5c428919070bfce8",
+              "quote_hash": "98c49602673505eed3af04d5abe53ce9f84804e089dc2b0265f01a54f5556c6c"
+            },
+            {
+              "source_id": "FISRC-5c428919070bfce8",
+              "quote_hash": "ea082d424b9c72a80466ae2144f7c04e8aee4af547aa53283b74d9aee3860b9d"
+            },
+            {
+              "source_id": "FISRC-593f4349cdad887c",
+              "quote_hash": "5aa868c70a4b37c456f54b3968b32a006df413cc907f604654ec6b61559e56d5"
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
+    },
+    "https://technode.com/2026/10/10/ai-glasses-brand-nimo-secures-angel-funding-at-rmb-1-5-billion-valuation/": {
+      "source_url": "https://technode.com/2026/10/10/ai-glasses-brand-nimo-secures-angel-funding-at-rmb-1-5-billion-valuation/",
+      "origin_date": "2026-10-12",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "content_hash": "0812dfa8fced323674996f6c9d0d75edc60b2d3b90cdea2d8b0c0f395e04f753",
+      "raw_ids": [
+        "RAW-99088f67f823503c"
+      ],
+      "evidence_source_url": "https://feng.ifeng.com/c/8x6fauBi0Z4",
+      "alternate_source": true,
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://technode.com/2026/10/10/ai-glasses-brand-nimo-secures-angel-funding-at-rmb-1-5-billion-valuation/",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:05:26.855Z",
+        "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-4aeaf02edd395131",
+          "event_id": "EV-bd9b8ce42ef9abfe",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "厦门比特幻境科技有限公司",
+          "announced_at": "2026-10-10",
+          "amount": "数亿元",
+          "round": "天使轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-43990c02209d1574",
+              "quote_hash": "1e91c0a31f43b506ce0e02bf2241e783b4660806120ef5e64f835303168db110"
+            },
+            {
+              "source_id": "FISRC-ffa5eaf2c5da8b2c",
+              "quote_hash": "1f729f2eb683ec8efb06c887a471a87d820c69aa150cd8c5ecd22a68c887d204"
+            },
+            {
+              "source_id": "FISRC-43990c02209d1574",
+              "quote_hash": "25e2dafc17b684a585f478f462b2fe5414b8f8aeb71f69f6d050bb96b79e4cbd"
+            },
+            {
+              "source_id": "FISRC-43990c02209d1574",
+              "quote_hash": "2ffcec4bd527d486cbbfeb87a430a9bbb0c263bff0c40af4fd20ecc3ea01145a"
+            },
+            {
+              "source_id": "FISRC-1116c3d75333c58e",
+              "quote_hash": "43079d0bff2136f8cd600614cb847f2c3cb161c80909baeda37c6e268c601d4c"
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ],
+      "followup": {
+        "source_url": "https://technode.com/2026/10/10/ai-glasses-brand-nimo-secures-angel-funding-at-rmb-1-5-billion-valuation/",
+        "title": "AI glasses brand NIMO secures angel funding at RMB 1.5 billion valuation",
+        "origin_date": "2026-10-12",
+        "rounds": 1,
+        "status": "pending",
+        "reason": "no_accepted_financing_event_manual_review_required",
+        "content_hash": "bab7e75d7b548ee3ca1d8e1753a6c034a755683e69a050be906c4f471d8172ab",
+        "evidence_source_url": "https://technode.com/2026/10/10/ai-glasses-brand-nimo-secures-angel-funding-at-rmb-1-5-billion-valuation/",
+        "evidence_ref": "evidence://bab7e75d7b548ee3ca1d8e1753a6c034a755683e69a050be906c4f471d8172ab",
+        "raw_ids": [
+          "RAW-0ae1f74c84d12908"
+        ],
+        "source_binding": {
+          "source_url": "https://technode.com/2026/10/10/ai-glasses-brand-nimo-secures-angel-funding-at-rmb-1-5-billion-valuation/",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-10-12T11:05:26.855Z",
+          "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+        },
+        "source_identity_reviewed": true,
+        "alternate_source": false,
+        "fact_review_completed": true,
+        "reviewed_at": "2026-10-12T11:05:26.855Z",
+        "last_processed_date": "2026-10-12",
+        "next_due_date": "2026-10-13",
+        "owner": "responsible_financing_reviewer",
+        "next_action": "next_existing_daily_verify",
+        "last_fact_review_hash": "bab7e75d7b548ee3ca1d8e1753a6c034a755683e69a050be906c4f471d8172ab",
+        "review_stage": "fact_conflict_review"
+      }
+    },
+    "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/": {
+      "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+      "origin_date": "2026-10-12",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+      "raw_ids": [
+        "RAW-59228e1a66e02239"
+      ],
+      "evidence_source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+      "alternate_source": false,
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:05:26.855Z",
+        "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-3db8a83393ced2c2",
+          "event_id": "EV-2e54aa7c4140aa77",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Verso",
+          "announced_at": "2026-10-08",
+          "amount": "$6 million",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b9b2bb6ee44018e",
+              "quote_hash": "ddb85604b3ee89a059ff44254e2e1daa46b2756e2a088c82c2177e0641210be5"
+            },
+            {
+              "source_id": "FISRC-d340a86255ff8ef7",
+              "quote_hash": "b4cdd14b12fe9ef09c13c636e3af387fc89c3b5b9a953f8e645a1e03f8b3d641"
+            },
+            {
+              "source_id": "FISRC-9b9b2bb6ee44018e",
+              "quote_hash": "ddb85604b3ee89a059ff44254e2e1daa46b2756e2a088c82c2177e0641210be5"
+            },
+            {
+              "source_id": "FISRC-9b9b2bb6ee44018e",
+              "quote_hash": "f6798f940d6d790bd0b81bc41a2a4c19e8bd518653738161bc49ebc7f6bd13d1"
+            },
+            {
+              "source_id": "FISRC-d340a86255ff8ef7",
+              "quote_hash": "73237a47705eaeb6dd0bdd729cedf3ae8bb1565ea9202fd1a80b14957f9b424a"
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
+    },
+    "https://news.crunchbase.com/venture/gudea-lands-funding-predict-viral-online-narratives/": {
+      "source_url": "https://news.crunchbase.com/venture/gudea-lands-funding-predict-viral-online-narratives/",
+      "origin_date": "2026-10-12",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "content_hash": "fcbcd28002782a8e01cbf3e27570e5b26fc478df01e4907deb98244e0a821c3a",
+      "raw_ids": [
+        "RAW-1d36ac948be82234"
+      ],
+      "evidence_source_url": "https://news.crunchbase.com/venture/gudea-lands-funding-predict-viral-online-narratives/",
+      "alternate_source": false,
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://news.crunchbase.com/venture/gudea-lands-funding-predict-viral-online-narratives/",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:05:26.855Z",
+        "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-26ac0c8de9f01acc",
+          "event_id": "EV-aa93f794e97d9893",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Gudea",
+          "announced_at": "2026-10-08",
+          "amount": "$7 million",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-034643f0a81c0598",
+              "quote_hash": "688bf7b9f5d4107823917fee17ef67819acb5c26b6d6c3e49fab977c26169c7b"
+            },
+            {
+              "source_id": "FISRC-4aaefca1fe064593",
+              "quote_hash": "f9a2f161b3da5de5c1002faa30d22ca91a4ef89889ec304aa37a8fccf06ed5b0"
+            },
+            {
+              "source_id": "FISRC-034643f0a81c0598",
+              "quote_hash": "956c012ebee572e4c25ddbf1b35b74158bc1be93ecf6e4313677fd2a7fb1410b"
+            },
+            {
+              "source_id": "FISRC-034643f0a81c0598",
+              "quote_hash": "bf34aa88baef8a92b8163c9aa1091a53aa8f08d138425f74289fb0bb49b3f29f"
+            },
+            {
+              "source_id": "FISRC-034643f0a81c0598",
+              "quote_hash": "4ae183703453cf349e00eaefcb630714d8454552719a138c6a060becf0647351"
+            },
+            {
+              "source_id": "FISRC-17924897e6b6dc77",
+              "quote_hash": "7ede2c35ec87ac337272a998565a6d1d7cfde4a5349e7a5d28d0fd33eb255fdc"
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
+    },
+    "https://x.com/testingcatalog/status/2107517034774827419": {
+      "source_url": "https://x.com/testingcatalog/status/2107517034774827419",
+      "origin_date": "2026-10-12",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "content_hash": "437c4a6c3b41954d6792d762eb40771a2d69153f2d556d463539a98d45df3185",
+      "raw_ids": [
+        "RAW-71dac3c0f0f4abc5"
+      ],
+      "evidence_source_url": "https://www.bvp.com/news/meet-the-founders-of-ampersand-ayan-barua-and-lauren-long",
+      "alternate_source": true,
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://www.bvp.com/news/meet-the-founders-of-ampersand-ayan-barua-and-lauren-long",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:05:26.855Z",
+        "reason": "已阅读全文并核对公司、产品与融资主体；只准入事实门禁，不批准事件、实体合并或分类。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-3197b663b8040f74",
+          "event_id": "EV-bf4cd98c9e267eab",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Ampersand",
+          "announced_at": "2026-10-06",
+          "amount": "$15M",
+          "round": "A轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe2eb23658e8b6c7",
+              "quote_hash": "22c40157f57b82b92d286742182cdd80c002d5a265b7d745a3a88095cf32d567"
+            },
+            {
+              "source_id": "FISRC-3e18c4bacbc5a852",
+              "quote_hash": "d79b9857d6ef195fa240cc45d2a9e36b7bb6ee067390d87bcd88e835b7ecc961"
+            },
+            {
+              "source_id": "FISRC-fe2eb23658e8b6c7",
+              "quote_hash": "22c40157f57b82b92d286742182cdd80c002d5a265b7d745a3a88095cf32d567"
+            },
+            {
+              "source_id": "FISRC-fe2eb23658e8b6c7",
+              "quote_hash": "10437b5c7cc5120ddc6c83b4a5aa42a18010473a20471376cf4735be24805db2"
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
+    },
+    "https://tech.eu/2026/10/07/cori-clinical-secures-4m-seed-to-improve-clinical-trial-design-and-cut-delays/": {
+      "source_url": "https://tech.eu/2026/10/07/cori-clinical-secures-4m-seed-to-improve-clinical-trial-design-and-cut-delays/",
+      "title": "Cori Clinical secures $4M seed to improve clinical trial design and cut delays",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "origin_date": "2026-10-08",
+      "content_hash": "40c138d906df734424ec2303e96eb4f281e2a0a411e2abe0101072f398cd4f10",
+      "raw_ids": [
+        "RAW-2477364f1ae6e049"
+      ],
+      "evidence_source_url": "https://tech.eu/2026/10/07/cori-clinical-secures-4m-seed-to-improve-clinical-trial-design-and-cut-delays/",
+      "source_identity_reviewed": true,
+      "alternate_source": false,
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-d4992ebbb795a44d",
+          "event_id": "EV-c35972d334bcee48",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Cori Clinical",
+          "announced_at": "2026-10-07",
+          "amount": "$4 million",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a23b889811e2ed4",
+              "quote_hash": "57172cb6dc4819723fb8efa8ce588dd5f2c7eea2fa3ee196198cf03045fbde6c"
+            },
+            {
+              "source_id": "FISRC-fc34941d158cb60c",
+              "quote_hash": "ef9f55d4695a80a5ffd95b74907e83652173719c4fa26030d87619d421a7cbad"
+            },
+            {
+              "source_id": "FISRC-1a23b889811e2ed4",
+              "quote_hash": "57172cb6dc4819723fb8efa8ce588dd5f2c7eea2fa3ee196198cf03045fbde6c"
+            },
+            {
+              "source_id": "FISRC-fe0d49037fb30638",
+              "quote_hash": "0550198e21c0925ea8d3e10cc0c5dfebdebf77537edc0fa158e228cf67d6ea41"
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ],
+      "followup": {
+        "source_url": "https://tech.eu/2026/10/07/cori-clinical-secures-4m-seed-to-improve-clinical-trial-design-and-cut-delays/",
+        "title": "Cori Clinical secures $4M seed to improve clinical trial design and cut delays",
+        "status": "pending",
+        "reason": "no_accepted_financing_event_manual_review_required",
+        "origin_date": "2026-10-08",
+        "content_hash": "40c138d906df734424ec2303e96eb4f281e2a0a411e2abe0101072f398cd4f10",
+        "raw_ids": [
+          "RAW-2477364f1ae6e049"
+        ],
+        "evidence_source_url": "https://tech.eu/2026/10/07/cori-clinical-secures-4m-seed-to-improve-clinical-trial-design-and-cut-delays/",
+        "source_identity_reviewed": true,
+        "alternate_source": false,
+        "fact_review_completed": true,
+        "last_processed_date": "2026-10-12",
+        "rounds": 1,
+        "owner": "responsible_financing_reviewer",
+        "next_action": "next_existing_daily_verify",
+        "reviewed_at": "2026-10-12T11:42:40.615Z",
+        "last_fact_review_hash": "40c138d906df734424ec2303e96eb4f281e2a0a411e2abe0101072f398cd4f10",
+        "next_due_date": "2026-10-13",
+        "review_stage": "fact_conflict_review"
+      }
     }
   },
   "followup_queue": {
@@ -35856,22 +36828,23 @@
     }
   },
   "review_queue": {
-    "total": 391,
+    "total": 225,
     "stages": {
-      "source_identity_review": 96,
-      "needs_original": 184,
-      "evidence_review": 86,
-      "fact_review": 21,
-      "fact_conflict_review": 4
+      "source_identity_review": 66,
+      "needs_original": 110,
+      "evidence_review": 32,
+      "fact_review": 10,
+      "fact_conflict_review": 7
     }
   },
   "prepared": true,
   "status": "completed",
   "counts": {
-    "total": 395,
-    "verified": 0,
+    "total": 405,
+    "verified": 9,
     "excluded": 57,
     "reviewed": 0,
-    "pending": 338
-  }
+    "pending": 339
+  },
+  "priority_review": "priority-review.json"
 }

@@ -1,4 +1,5 @@
 import path from 'node:path';
+import fs from 'node:fs';
 import { legacyOriginals, legacyCapture, followupDue, deferredFollowup } from './verification-followup.mjs';
 import { captureOriginal } from './capture.mjs';
 import { config } from './discovery.mjs';
@@ -14,6 +15,7 @@ import { dispositionResolver } from './verification-dispositions.mjs';
 import {createReviewBudget, reviewStage, reviewQueueSummary} from './review-budget.mjs';
 import {reviewStateDirectory} from './review-state.mjs';
 import {valueTriageResolver} from './value-triage.mjs';
+import {fundingEventCardConsistencyProblems} from '../tools/funding-insight-v1-utils.mjs';
 
 const version = 'FINANCING-VERIFICATION-1';
 const semanticReasons = new Set(['ai_relevance_unverified', 'robotics_core_business_review', 'embodied_or_robotics_core_business_review']);
@@ -334,6 +336,15 @@ export function finishVerification({ root, directory, date, backupRoot }) {
   const rawDocuments = read(path.join(factDir, 'raw-documents.json'), []);
   const eventSources = read(path.join(factDir, 'event-sources.json'), []);
   const qa = read(path.join(factDir, 'qa-queue.json'), []);
+  const canonicalEvents=read(path.join(factDir,'canonical-events.json'),[]);
+  const claims=read(path.join(factDir,'claims.json'),[]);
+  const entities=read(path.join(factDir,'entities.json'),[]);
+  // Same-round recovery may reuse research accepted on an earlier date. Only
+  // exact events admitted to the current catalog can resolve such a receipt.
+  const catalogEvents=read(path.join(root,'01-SiteV2/site/data/financing-catalog-v1.json'),{}).event_cards || [];
+  const fundingDirectory=path.join(root,'01-SiteV2/content/12-applications/funding-insights');
+  const historicalCards=[];
+  if(fs.existsSync(fundingDirectory))for(const name of fs.readdirSync(fundingDirectory).filter(name=>/^\d{4}-\d{2}-\d{2}\.json$/u.test(name) && name.slice(0,10)<date))historicalCards.push(...(read(path.join(fundingDirectory,name),{}).cards || []));
   const collection=read(path.join(directory,'collection.json'),{captures:{}});
   const resolveDisposition=backupRoot ? dispositionResolver({root,backupRoot,directory,date}) : null;
   const privateQueue=backupRoot ? read(path.join(backupRoot,'financing-monitor-state/verification-queue.json'),{entries:{}}) : {entries:{}};
@@ -353,6 +364,15 @@ export function finishVerification({ root, directory, date, backupRoot }) {
     const eventIds = new Set(eventSources.filter(link => sourceIds.has(link.source_artifact_id)).map(link => link.event_id));
     const cardEvents = card => [card.triggered_by_event_id, ...(card.source_event_ids || [])];
     const cards = (research.cards || []).filter(card => cardEvents(card).some(id => eventIds.has(id)) || (card.research_sources || []).some(source => row.raw_ids.includes(source.raw_id) && source.content_hash === row.content_hash));
+    for(const historical of historicalCards) {
+      const exactIds=cardEvents(historical).filter(id=>eventIds.has(id) && catalogEvents.some(card=>cardEvents(card).includes(id)));
+      if(!exactIds.length || cards.some(card=>card.funding_insight_id===historical.funding_insight_id))continue;
+      if(exactIds.some(id=>{
+        const event=canonicalEvents.find(event=>event.event_id===id);
+        return !event || fundingEventCardConsistencyProblems(historical,event,claims,entities).length;
+      }))continue;
+      cards.push(historical);
+    }
     row.unresolved_event_ids = [...eventIds].filter(id => !cards.some(card => cardEvents(card).includes(id)));
     const matchingQa = qa.filter(item => row.raw_ids.includes(item.asset_id) || sourceIds.has(item.source_ref) || eventIds.has(item.asset_id));
     row.qa_hints = [...new Set(matchingQa.filter(item => item.status === 'review_optional').map(item => item.reason))];

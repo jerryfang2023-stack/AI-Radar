@@ -2009,7 +2009,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       && (!targetedFundingAllowed || proposedModelClaim.event_type === "funding") && (!requiresHistoryExtraction || authoritativeHistoryClaim)
       ? { eventType: proposedModelClaim.event_type, pattern: /$^/u }
       : null);
-    const opinionOnly = (OPINION_ONLY.test(title) && !rule) || PROPOSAL_ONLY.test(title);
+    const opinionOnly = (OPINION_ONLY.test(title) && !rule) || (!reviewedRepair && PROPOSAL_ONLY.test(title));
     const extractionStatus = !artifact.source_url || bodyClean.length < 20 || /\ufffd/gu.test(bodyClean) ? "quarantined" : bodyClean.length < 300 ? "partial" : "accepted";
     const inferredChinaMarket = raw.china_market_match === true
       ? { matched: true, basis: cleanString(raw.china_market_match_basis) }

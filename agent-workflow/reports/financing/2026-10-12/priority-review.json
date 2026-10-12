@@ -1,0 +1,1631 @@
+{
+  "version": "FINANCING-RESPONSIBLE-PRIORITY-REVIEW-1",
+  "date": "2026-10-12",
+  "status": "gates_passed_awaiting_merge_and_publication",
+  "collection_sha256": "56986de86d0a75cc90a9356e2762bd3cdff936eae0402d36161bf5c0248957bf",
+  "scope": "accepted_originals_and_existing_pending_queue_only",
+  "queue_archived": 165,
+  "priority_verification": {
+    "total": 10,
+    "verified": 9,
+    "excluded": 0,
+    "reviewed": 0,
+    "pending": 1
+  },
+  "current_private_queue": {
+    "total": 225,
+    "stages": {
+      "source_identity_review": 66,
+      "needs_original": 110,
+      "evidence_review": 32,
+      "fact_review": 10,
+      "fact_conflict_review": 7
+    }
+  },
+  "baseline": {
+    "subjects": 566,
+    "events": 607
+  },
+  "candidate": {
+    "subjects": 575,
+    "events": 616
+  },
+  "removed_published_event_ids": [],
+  "added": [
+    {
+      "event_id": "EV-bd9b8ce42ef9abfe",
+      "card_id": "FI-a86135d87f8014e2",
+      "company": {
+        "entity_id": "EN-4fb73fd4a920dee7",
+        "application_entity_id": "EN-4fb73fd4a920dee7",
+        "name": "比特幻境",
+        "full_name": "厦门比特幻境科技有限公司",
+        "summary": "总部位于厦门的AI眼镜企业，旗下智能眼镜品牌NIMO主打轻量化设计，首款产品于2026年4月推向市场。",
+        "website": "",
+        "headquarters": "厦门",
+        "founders": []
+      },
+      "financing": {
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount": "数亿元",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-10-10",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "博华资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-43990c02209d1574",
+                "quote": "投资方包括博华资本、戈壁创投、元禾璞华、尚势资本等相关投资机构",
+                "source_content_hash": "0812dfa8fced323674996f6c9d0d75edc60b2d3b90cdea2d8b0c0f395e04f753",
+                "quote_hash": "340a1609f3e57937d5b21b43509699fe4bd3a4ea8037193e7d84b8084a3098c5"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-5633c49e5560d3"
+          },
+          {
+            "name": "戈壁创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-43990c02209d1574",
+                "quote": "投资方包括博华资本、戈壁创投、元禾璞华、尚势资本等相关投资机构",
+                "source_content_hash": "0812dfa8fced323674996f6c9d0d75edc60b2d3b90cdea2d8b0c0f395e04f753",
+                "quote_hash": "340a1609f3e57937d5b21b43509699fe4bd3a4ea8037193e7d84b8084a3098c5"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ab99e80edac5e2"
+          },
+          {
+            "name": "元禾璞华",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-43990c02209d1574",
+                "quote": "投资方包括博华资本、戈壁创投、元禾璞华、尚势资本等相关投资机构",
+                "source_content_hash": "0812dfa8fced323674996f6c9d0d75edc60b2d3b90cdea2d8b0c0f395e04f753",
+                "quote_hash": "340a1609f3e57937d5b21b43509699fe4bd3a4ea8037193e7d84b8084a3098c5"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6fa5593366f74e"
+          },
+          {
+            "name": "尚势资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-43990c02209d1574",
+                "quote": "投资方包括博华资本、戈壁创投、元禾璞华、尚势资本等相关投资机构",
+                "source_content_hash": "0812dfa8fced323674996f6c9d0d75edc60b2d3b90cdea2d8b0c0f395e04f753",
+                "quote_hash": "340a1609f3e57937d5b21b43509699fe4bd3a4ea8037193e7d84b8084a3098c5"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-40ea27baa9790c"
+          }
+        ]
+      },
+      "classification": {
+        "financing_tags": {
+          "version": "AI-FUNDING-TAGS-1.0",
+          "scope": "included",
+          "status": "classified",
+          "sector": {
+            "id": "consumer-devices",
+            "name": "消费 AI 硬件"
+          },
+          "subsector": {
+            "id": "glasses",
+            "name": "AI 眼镜"
+          },
+          "product_form": {
+            "id": "consumer-device",
+            "name": "消费 AI 终端"
+          },
+          "customers": [
+            {
+              "id": "consumer",
+              "name": "个人消费者"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-43990c02209d1574",
+              "quote": "总部位于厦门的AI眼镜企业——比特幻境于近日宣布完成数亿元天使轮融资"
+            },
+            {
+              "source_id": "FISRC-43990c02209d1574",
+              "quote": "NIMO将重量控制在29克，把有限的空间留给显示模组与佩戴体验。在功能上，其聚焦高频使用场景，支持翻译、提词、导航及微信消息通知等"
+            },
+            {
+              "source_id": "FISRC-bcdef052e191de68",
+              "quote": "NIMO采用体积仅0.03cc的米粒级光机，重量不足0.1g，隐藏于眼镜铰链结构中"
+            }
+          ],
+          "rationale": "比特幻境主营面向消费者的NIMO AI眼镜，属于消费AI硬件中的AI眼镜。"
+        },
+        "market_category": {
+          "id": "consumer-devices",
+          "name": "消费 AI 硬件",
+          "dimension": "financing_sector"
+        },
+        "market_subcategory": {
+          "id": "glasses",
+          "name": "AI 眼镜",
+          "dimension": "financing_subsector"
+        },
+        "product_form": {
+          "id": "consumer-device",
+          "name": "消费 AI 终端",
+          "dimension": "financing_product_form"
+        }
+      }
+    },
+    {
+      "event_id": "EV-3798871486ef5a26",
+      "card_id": "FI-208b0a4f6d9ccb22",
+      "company": {
+        "entity_id": "EN-18a96fb4e49cd0e1",
+        "application_entity_id": "EN-18a96fb4e49cd0e1",
+        "name": "Sabi",
+        "full_name": "Sabi",
+        "summary": "Sabi 正在开发一种非侵入式脑机 AI 接口，首款产品外观为普通棒球帽，内置定制 EEG 传感器，通过头发读取神经信号，将想象言语和意图转化为 AI 指令。",
+        "website": "https://www.sabi.com/",
+        "headquarters": "加利福尼亚州旧金山",
+        "founders": [
+          {
+            "name": "Rahul Chhabra",
+            "role": "首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c428919070bfce8",
+                "quote": "Sabi was co-founded by CEO Rahul Chhabra and CTO Atmadeep Banerjee.",
+                "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+                "quote_hash": "a2884db23d968460537f752bc72701a6d15b7297824b260ab4210e2c6c9dd27e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Atmadeep Banerjee",
+            "role": "首席技术官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c428919070bfce8",
+                "quote": "Sabi was co-founded by CEO Rahul Chhabra and CTO Atmadeep Banerjee.",
+                "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+                "quote_hash": "a2884db23d968460537f752bc72701a6d15b7297824b260ab4210e2c6c9dd27e"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount": "$50 million",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-10-09",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Khosla Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c428919070bfce8",
+                "quote": "Sabi today announced it has raised a $50 million seed round, led by Khosla Ventures",
+                "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+                "quote_hash": "99655bd95ccb325b680391af2727154dd570c8be00a96e5c1c60407eaaf4ca93"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-25a9fdb381e024"
+          },
+          {
+            "name": "Accel",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c428919070bfce8",
+                "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+                "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+                "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a046516667c3bb"
+          },
+          {
+            "name": "Initialized Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c428919070bfce8",
+                "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+                "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+                "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a7de0701d94bd3"
+          },
+          {
+            "name": "Kevin Weil",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c428919070bfce8",
+                "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+                "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+                "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-acc9afe240f9dc"
+          },
+          {
+            "name": "DST Global",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c428919070bfce8",
+                "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+                "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+                "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-8f3811e8a6b13c"
+          },
+          {
+            "name": "Collaborative Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c428919070bfce8",
+                "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+                "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+                "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-94f7c5da51bfaf"
+          },
+          {
+            "name": "Ascend",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c428919070bfce8",
+                "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
+                "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
+                "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-02f2534889daa5"
+          }
+        ]
+      },
+      "classification": {
+        "financing_tags": {
+          "version": "AI-FUNDING-TAGS-1.0",
+          "scope": "included",
+          "status": "classified",
+          "sector": {
+            "id": "consumer-devices",
+            "name": "消费 AI 硬件"
+          },
+          "subsector": {
+            "id": "audio-wearables",
+            "name": "AI 耳机与录音穿戴"
+          },
+          "product_form": {
+            "id": "consumer-device",
+            "name": "消费 AI 终端"
+          },
+          "customers": [
+            {
+              "id": "consumer",
+              "name": "个人消费者"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5c428919070bfce8",
+              "quote": "Sabi today announced it has raised a $50 million seed round, led by Khosla Ventures, to develop a brain-AI interface designed for everyday wear."
+            },
+            {
+              "source_id": "FISRC-5c428919070bfce8",
+              "quote": "Sabi’s first product looks like an ordinary baseball cap."
+            },
+            {
+              "source_id": "FISRC-5c428919070bfce8",
+              "quote": "Sabi’s first product looks like an ordinary baseball cap. Sensors hidden inside it read neural signals through hair without gel, surgery or direct contact with the scalp."
+            },
+            {
+              "source_id": "FISRC-5c428919070bfce8",
+              "quote": "Each cap contains sensors measuring between one and five millimeters, built around Sabi’s custom EEG chip."
+            }
+          ],
+          "rationale": "Sabi 开发面向日常佩戴的脑机接口帽子，属于消费 AI 穿戴终端。"
+        },
+        "market_category": {
+          "id": "consumer-devices",
+          "name": "消费 AI 硬件",
+          "dimension": "financing_sector"
+        },
+        "market_subcategory": {
+          "id": "audio-wearables",
+          "name": "AI 耳机与录音穿戴",
+          "dimension": "financing_subsector"
+        },
+        "product_form": {
+          "id": "consumer-device",
+          "name": "消费 AI 终端",
+          "dimension": "financing_product_form"
+        }
+      }
+    },
+    {
+      "event_id": "EV-2e54aa7c4140aa77",
+      "card_id": "FI-85bd50a60143ff0c",
+      "company": {
+        "entity_id": "EN-ee11373e48530800",
+        "application_entity_id": "EN-ee11373e48530800",
+        "name": "Verso",
+        "full_name": "Verso",
+        "summary": "Verso 是一家法国 AI 驱动的消费者洞察平台，提供自动化消费者研究的工具，覆盖从研究设计、参与者招募到 AI 主持视频访谈和自动分析的流程。",
+        "website": "https://www.askverso.ai/",
+        "headquarters": "法国",
+        "founders": [
+          {
+            "name": "Lydia Bellahouel",
+            "role": "",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d340a86255ff8ef7",
+                "quote": "Founded by Lydia Bellahouel and Camille Epitalon",
+                "source_content_hash": "1a4c7c59141c7b41",
+                "quote_hash": "2b5d6970f1a7d43a83cd15d4041187f5ea8f76e3c93fe617ac341dab55c84d90"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Camille Epitalon",
+            "role": "",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d340a86255ff8ef7",
+                "quote": "Founded by Lydia Bellahouel and Camille Epitalon",
+                "source_content_hash": "1a4c7c59141c7b41",
+                "quote_hash": "2b5d6970f1a7d43a83cd15d4041187f5ea8f76e3c93fe617ac341dab55c84d90"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount": "$6 million",
+        "amount_original": "$6 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Angular Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b9b2bb6ee44018e",
+                "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+                "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+                "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a3b66d195f008a"
+          },
+          {
+            "name": "100in",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b9b2bb6ee44018e",
+                "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+                "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+                "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-051843f07e5bb0"
+          },
+          {
+            "name": "Kima Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b9b2bb6ee44018e",
+                "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+                "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+                "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a770505b3d4c7e"
+          },
+          {
+            "name": "Olympe Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b9b2bb6ee44018e",
+                "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+                "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+                "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9787968fb2e8fc"
+          },
+          {
+            "name": "Sharpstone Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b9b2bb6ee44018e",
+                "quote": "The round was led by Angular Ventures, with participation from 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and a group of business angels.",
+                "source_content_hash": "e739872be5706d8b747996b0e884b1ec9576e38f258a476d3d07f627fd85a576",
+                "quote_hash": "a3be0edda98b9618d6d2171c1c9ae2fa53c79a3f568cbad73603d6103bce6856"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6cfea4f4bf4878"
+          }
+        ]
+      },
+      "classification": {
+        "financing_tags": {
+          "version": "AI-FUNDING-TAGS-1.0",
+          "scope": "included",
+          "status": "classified",
+          "sector": {
+            "id": "enterprise",
+            "name": "企业通用 AI"
+          },
+          "subsector": {
+            "id": "analytics",
+            "name": "数据分析与商业智能"
+          },
+          "product_form": {
+            "id": "enterprise-software",
+            "name": "企业软件"
+          },
+          "customers": [
+            {
+              "id": "business",
+              "name": "企业"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b9b2bb6ee44018e",
+              "quote": "Verso, an AI-powered consumer intelligence platform, has raised $6 million in seed funding."
+            },
+            {
+              "source_id": "FISRC-d340a86255ff8ef7",
+              "quote": "The platform manages the research process from study design and participant recruitment to AI-moderated video interviews and automated analysis."
+            },
+            {
+              "source_id": "FISRC-9b9b2bb6ee44018e",
+              "quote": "Large companies invest heavily in consumer research to inform product development and marketing decisions, but the process can be expensive and time-consuming."
+            }
+          ],
+          "rationale": "Verso 为企业提供 AI 驱动的消费者研究与洞察分析平台，属于企业数据分析。"
+        },
+        "market_category": {
+          "id": "enterprise",
+          "name": "企业通用 AI",
+          "dimension": "financing_sector"
+        },
+        "market_subcategory": {
+          "id": "analytics",
+          "name": "数据分析与商业智能",
+          "dimension": "financing_subsector"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件",
+          "dimension": "financing_product_form"
+        }
+      }
+    },
+    {
+      "event_id": "EV-aa93f794e97d9893",
+      "card_id": "FI-fd29c3352a83ec64",
+      "company": {
+        "entity_id": "EN-f5ce8a972adc9345",
+        "application_entity_id": "EN-f5ce8a972adc9345",
+        "name": "Gudea",
+        "full_name": "Gudea",
+        "summary": "Gudea是一家提供叙事情报软件的公司，帮助企业在网络叙事走红前预测其传播趋势并识别推动者。",
+        "website": "https://gudea.ai",
+        "headquarters": "明尼阿波利斯",
+        "founders": [
+          {
+            "name": "Keith Presley",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-034643f0a81c0598",
+                "quote": "according to co-founder and CEO Keith Presley",
+                "source_content_hash": "fcbcd28002782a8e01cbf3e27570e5b26fc478df01e4907deb98244e0a821c3a",
+                "quote_hash": "9f3a370aab2361ce30b18e4eb87595f4b13eca402c247a3b0f75e083f02a2861"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "James Thomin",
+            "role": "联合创始人兼CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-034643f0a81c0598",
+                "quote": "James Thomin, Gudea’s CTO and one of its founders",
+                "source_content_hash": "fcbcd28002782a8e01cbf3e27570e5b26fc478df01e4907deb98244e0a821c3a",
+                "quote_hash": "990230ded9e896bcd15f30be3c3848be76b111f734322400af261ad64fb0a529"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jonathan Sperber",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-17924897e6b6dc77",
+                "quote": "Founded in 2023 by Keith Presley, Jonathan Sperber, and James Thomin",
+                "source_content_hash": "0dfeb423e27d2c42",
+                "quote_hash": "83f66fd3e7220269edd45a40e44375dbb9c922c0591a4af070c4e622079f4560"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount": "$7 million",
+        "amount_original": "$7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "700 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Mudita Venture Partners",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-034643f0a81c0598",
+                "quote": "Mudita Venture Partners and Collide Capital co-led the round",
+                "source_content_hash": "fcbcd28002782a8e01cbf3e27570e5b26fc478df01e4907deb98244e0a821c3a",
+                "quote_hash": "f27b9e251a6632dde0a0a16908100b177b6aff402e6a4aad791755734c95731c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-338c6404af790d"
+          },
+          {
+            "name": "Collide Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-034643f0a81c0598",
+                "quote": "Mudita Venture Partners and Collide Capital co-led the round",
+                "source_content_hash": "fcbcd28002782a8e01cbf3e27570e5b26fc478df01e4907deb98244e0a821c3a",
+                "quote_hash": "f27b9e251a6632dde0a0a16908100b177b6aff402e6a4aad791755734c95731c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-3ad28bdc68e71b"
+          }
+        ]
+      },
+      "classification": {
+        "financing_tags": {
+          "version": "AI-FUNDING-TAGS-1.0",
+          "scope": "included",
+          "status": "classified",
+          "sector": {
+            "id": "enterprise",
+            "name": "企业通用 AI"
+          },
+          "subsector": {
+            "id": "analytics",
+            "name": "数据分析与商业智能"
+          },
+          "product_form": {
+            "id": "enterprise-software",
+            "name": "企业软件"
+          },
+          "customers": [
+            {
+              "id": "business",
+              "name": "企业"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-034643f0a81c0598",
+              "quote": "Gudea has raised $7 million in seed funding to help companies anticipate which online narratives will go viral and understand who is driving them"
+            },
+            {
+              "source_id": "FISRC-4aaefca1fe064593",
+              "quote": "Gudea, a Minneapolis-based startup that provides narrative intelligence software, has raised $7 million in seed funding."
+            },
+            {
+              "source_id": "FISRC-034643f0a81c0598",
+              "quote": "The startup aims to map how information moves across people, groups and platforms, then predict how far a narrative will spread, when it will take off, and when it will fade."
+            },
+            {
+              "source_id": "FISRC-17924897e6b6dc77",
+              "quote": "The platform combines behavioral intelligence, graph neural network modeling, and real-time monitoring across dozens of online platforms to show clients where narratives originate, which users are driving them, and how quickly they are likely to spread."
+            }
+          ],
+          "rationale": "Gudea 提供面向企业的叙事情报分析软件，属于企业数据分析与商业智能。"
+        },
+        "market_category": {
+          "id": "enterprise",
+          "name": "企业通用 AI",
+          "dimension": "financing_sector"
+        },
+        "market_subcategory": {
+          "id": "analytics",
+          "name": "数据分析与商业智能",
+          "dimension": "financing_subsector"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件",
+          "dimension": "financing_product_form"
+        }
+      }
+    },
+    {
+      "event_id": "EV-c35972d334bcee48",
+      "card_id": "FI-eb0430ed7b88def6",
+      "company": {
+        "entity_id": "EN-07249e5c4d3d02e2",
+        "application_entity_id": "EN-07249e5c4d3d02e2",
+        "name": "Cori Clinical",
+        "full_name": "Cori Clinical",
+        "summary": "Cori Clinical 是一家为临床试验提供 AI 工作空间的公司，将组织内部临床试验经验与外部监管及注册信息结合，帮助临床团队把初始试验概要转化为完整方案、申报材料和运营计划。",
+        "website": "cori-clinical.com",
+        "headquarters": "英国伦敦",
+        "founders": [
+          {
+            "name": "Jorn Jansen Schoonhoven",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fc34941d158cb60c",
+                "quote": "Cori was founded by Jorn Jansen Schoonhoven (CEO) and Patricio Fernández (CTO).",
+                "source_content_hash": "85e321ab0954f5eb",
+                "quote_hash": "ec5aaaea5e9b806d78262b770c697545dc589a583fc6c5c934705d218b96f081"
+              },
+              {
+                "source_id": "FISRC-fe0d49037fb30638",
+                "quote": "Jorn Jansen Schoonhoven, Co-founder & CEO",
+                "source_content_hash": "12ef64928b3f94e6",
+                "quote_hash": "dfa51cad35089b07660daaa8c3c6b2fccd8bdeda2f3977787dea72e0c6f10e3b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Patricio Fernández",
+            "role": "联合创始人兼 CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fc34941d158cb60c",
+                "quote": "Cori was founded by Jorn Jansen Schoonhoven (CEO) and Patricio Fernández (CTO).",
+                "source_content_hash": "85e321ab0954f5eb",
+                "quote_hash": "ec5aaaea5e9b806d78262b770c697545dc589a583fc6c5c934705d218b96f081"
+              },
+              {
+                "source_id": "FISRC-fe0d49037fb30638",
+                "quote": "Patricio Fernández, Co-founder & CTO",
+                "source_content_hash": "12ef64928b3f94e6",
+                "quote_hash": "49618b6ab0f82364b23f664b773c4c1601cb954ca2225758917e90b76b87a62d"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount": "$4 million",
+        "amount_original": "$4 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "400 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Breega",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a23b889811e2ed4",
+                "quote": "has raised $4 million in a seed funding round led by Breega, with participation from Enzo, Heartfelt, Together Ventures and Bynd.",
+                "source_content_hash": "40c138d906df734424ec2303e96eb4f281e2a0a411e2abe0101072f398cd4f10",
+                "quote_hash": "657c3c9c0fdc3329cbe6b4a2e1321f9dd8cf0d23a1307d3a7c663235955a61fb"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-4f3104de793d7d"
+          },
+          {
+            "name": "Enzo",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a23b889811e2ed4",
+                "quote": "has raised $4 million in a seed funding round led by Breega, with participation from Enzo, Heartfelt, Together Ventures and Bynd.",
+                "source_content_hash": "40c138d906df734424ec2303e96eb4f281e2a0a411e2abe0101072f398cd4f10",
+                "quote_hash": "657c3c9c0fdc3329cbe6b4a2e1321f9dd8cf0d23a1307d3a7c663235955a61fb"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a6dc4ffe92d24d"
+          },
+          {
+            "name": "Heartfelt",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a23b889811e2ed4",
+                "quote": "has raised $4 million in a seed funding round led by Breega, with participation from Enzo, Heartfelt, Together Ventures and Bynd.",
+                "source_content_hash": "40c138d906df734424ec2303e96eb4f281e2a0a411e2abe0101072f398cd4f10",
+                "quote_hash": "657c3c9c0fdc3329cbe6b4a2e1321f9dd8cf0d23a1307d3a7c663235955a61fb"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ed312a65c1a43a"
+          },
+          {
+            "name": "Together Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a23b889811e2ed4",
+                "quote": "has raised $4 million in a seed funding round led by Breega, with participation from Enzo, Heartfelt, Together Ventures and Bynd.",
+                "source_content_hash": "40c138d906df734424ec2303e96eb4f281e2a0a411e2abe0101072f398cd4f10",
+                "quote_hash": "657c3c9c0fdc3329cbe6b4a2e1321f9dd8cf0d23a1307d3a7c663235955a61fb"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-20f6b653037c8c"
+          },
+          {
+            "name": "Bynd",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a23b889811e2ed4",
+                "quote": "has raised $4 million in a seed funding round led by Breega, with participation from Enzo, Heartfelt, Together Ventures and Bynd.",
+                "source_content_hash": "40c138d906df734424ec2303e96eb4f281e2a0a411e2abe0101072f398cd4f10",
+                "quote_hash": "657c3c9c0fdc3329cbe6b4a2e1321f9dd8cf0d23a1307d3a7c663235955a61fb"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-22a67ab5af54ab"
+          }
+        ]
+      },
+      "classification": {
+        "financing_tags": {
+          "version": "AI-FUNDING-TAGS-1.0",
+          "scope": "included",
+          "status": "classified",
+          "sector": {
+            "id": "industry",
+            "name": "行业 AI"
+          },
+          "subsector": {
+            "id": "healthcare",
+            "name": "医疗服务与临床"
+          },
+          "product_form": {
+            "id": "enterprise-software",
+            "name": "企业软件"
+          },
+          "customers": [
+            {
+              "id": "business",
+              "name": "企业"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a23b889811e2ed4",
+              "quote": "Cori Clinical, an AI platform for clinical trials, has raised $4 million in a seed funding round led by Breega, with participation from Enzo, Heartfelt, Together Ventures and Bynd."
+            },
+            {
+              "source_id": "FISRC-fc34941d158cb60c",
+              "quote": "Cori Clinical is an AI workspace which brings together the knowledge an organisation has developed through years of clinical trial experience and combines it with external intelligence from clinical-trial registries, regulatory guidance and public sources, including the Food and Drug Administration (FDA), the Medicines and Healthcare products Regulatory Agency (MHRA) and the European Medicines Agency (EMA)."
+            },
+            {
+              "source_id": "FISRC-fc34941d158cb60c",
+              "quote": "Cori helps clinical teams turn an initial trial brief into a full protocol, submission package and operational plans, built against current regulatory guidance."
+            }
+          ],
+          "rationale": "Cori Clinical 为临床试验团队提供 AI 工作空间，将内部知识与外部监管情报结合以生成试验方案和申报材料，属于医疗临床行业 AI 软件。"
+        },
+        "market_category": {
+          "id": "industry",
+          "name": "行业 AI",
+          "dimension": "financing_sector"
+        },
+        "market_subcategory": {
+          "id": "healthcare",
+          "name": "医疗服务与临床",
+          "dimension": "financing_subsector"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件",
+          "dimension": "financing_product_form"
+        }
+      }
+    },
+    {
+      "event_id": "EV-bf4cd98c9e267eab",
+      "card_id": "FI-5ea7a0e216302168",
+      "company": {
+        "entity_id": "EN-5bc235f338943862",
+        "application_entity_id": "EN-5bc235f338943862",
+        "name": "Ampersand",
+        "full_name": "Ampersand",
+        "summary": "Ampersand 是一家为企业系统与 AI 代理提供深度集成能力的公司，让开发者只需声明一次集成，即可在每位客户的运行环境中生效。",
+        "website": "https://www.withampersand.com",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Ayan Barua",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe2eb23658e8b6c7",
+                "quote": "Co-founders Ayan Barua and Lauren Long started Ampersand after six years of living the problem.",
+                "source_content_hash": "437c4a6c3b41954d6792d762eb40771a2d69153f2d556d463539a98d45df3185",
+                "quote_hash": "fea56c4d9dbc8c80b452e1e271c2b2599c67fee0f2df9fc6665d461ff286d3b3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lauren Long",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe2eb23658e8b6c7",
+                "quote": "Co-founders Ayan Barua and Lauren Long started Ampersand after six years of living the problem.",
+                "source_content_hash": "437c4a6c3b41954d6792d762eb40771a2d69153f2d556d463539a98d45df3185",
+                "quote_hash": "fea56c4d9dbc8c80b452e1e271c2b2599c67fee0f2df9fc6665d461ff286d3b3"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount": "$15M",
+        "amount_original": "$15M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Bessemer Venture Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe2eb23658e8b6c7",
+                "quote": "Bessemer Venture Partners leads Ampersand’s $15M Series A to make every enterprise system legible to agents.",
+                "source_content_hash": "437c4a6c3b41954d6792d762eb40771a2d69153f2d556d463539a98d45df3185",
+                "quote_hash": "22c40157f57b82b92d286742182cdd80c002d5a265b7d745a3a88095cf32d567"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ed42220b00c38b"
+          }
+        ]
+      },
+      "classification": {
+        "financing_tags": {
+          "version": "AI-FUNDING-TAGS-1.0",
+          "scope": "included",
+          "status": "classified",
+          "sector": {
+            "id": "developer-data",
+            "name": "AI 开发与数据"
+          },
+          "subsector": {
+            "id": "agent-platforms",
+            "name": "智能体开发与编排"
+          },
+          "product_form": {
+            "id": "developer-platform",
+            "name": "开发与数据平台"
+          },
+          "customers": [
+            {
+              "id": "developer",
+              "name": "开发者"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3e18c4bacbc5a852",
+              "quote": "Ampersand is the first platform to give AI agents Read, Write, and Subscribe actions across their customers' GTM and Revenue and Billing enterprise tools."
+            },
+            {
+              "source_id": "FISRC-fe2eb23658e8b6c7",
+              "quote": "With Ampersand, a developer declares the integration once, in version-controlled code, using five primitives: read, write, subscribe, search, and proxy."
+            },
+            {
+              "source_id": "FISRC-fe2eb23658e8b6c7",
+              "quote": "We read and write in each system's native structure, so an agent knows which record it can touch and which field marks a deal as qualified."
+            },
+            {
+              "source_id": "FISRC-3e18c4bacbc5a852",
+              "quote": "We are powering our deep Stripe Connector with the same architecture as Salesforce and NetSuite: full API access, per-tenant mapping, idempotent updates, safe writes, incremental reads, backfills, observability, and Embedded or Headless UI."
+            }
+          ],
+          "rationale": "Ampersand 让开发者以代码声明方式为 AI 智能体提供企业系统读写集成，属于智能体开发与编排平台。"
+        },
+        "market_category": {
+          "id": "developer-data",
+          "name": "AI 开发与数据",
+          "dimension": "financing_sector"
+        },
+        "market_subcategory": {
+          "id": "agent-platforms",
+          "name": "智能体开发与编排",
+          "dimension": "financing_subsector"
+        },
+        "product_form": {
+          "id": "developer-platform",
+          "name": "开发与数据平台",
+          "dimension": "financing_product_form"
+        }
+      }
+    },
+    {
+      "event_id": "EV-abde425d9980f6b9",
+      "card_id": "FI-b1d0031e859d38ad",
+      "company": {
+        "entity_id": "EN-7eed2a69df089fc8",
+        "application_entity_id": "EN-7eed2a69df089fc8",
+        "name": "CurvetAI",
+        "full_name": "CurvetAI",
+        "summary": "CurvetAI 是一家总部位于浦那的 AI 初创公司，运营一个统一 AI 工作空间，将多个 AI 模型汇聚到单一平台，用户可在同一工作流中使用文本、图像、音频和视频模型、比较输出并组合能力。公司由 Vivek Dubey 和 Utkarsh Gupta 于 2025 年 12 月创立，最初是 AI 工具与提示词发现平台，后转型为工作空间模式。",
+        "website": "",
+        "headquarters": "浦那",
+        "founders": [
+          {
+            "name": "Vivek Dubey",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-141fde62ccd11929",
+                "quote": "Founded in December 2025 by Vivek Dubey and Utkarsh Gupta",
+                "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+                "quote_hash": "bfe87e6a01cc03a4c9e08dc3186d4a20d64384b4d0e47a179d7c1a1daf65a9cc"
+              },
+              {
+                "source_id": "FISRC-db7b7baf205696d4",
+                "quote": "said Vivek Dubey, Co-founder and CEO, CurvetAI",
+                "source_content_hash": "d8927e48e7aaeeb4",
+                "quote_hash": "40b9cbf2125e6495483cd802c30618c18beed1891925f76bbc98ab98999d9b10"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Utkarsh Gupta",
+            "role": "联合创始人兼首席技术官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-141fde62ccd11929",
+                "quote": "Co-founder Utkarsh Gupta has worked at Samsung and currently leads CurvetAI’s engineering and technical infrastructure.",
+                "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+                "quote_hash": "9df06f775412fcf1f3bd29f11bc2bcdbf9f69187cf2799af8d7332fede3ef49f"
+              },
+              {
+                "source_id": "FISRC-db7b7baf205696d4",
+                "quote": "Gupta, CurvetAI’s Co-founder and CTO, previously worked at Samsung and leads the company’s engineering and technical infrastructure.",
+                "source_content_hash": "d8927e48e7aaeeb4",
+                "quote_hash": "b666c046bffe80b3c6aaf8b275459465d3e91900e393515b18a8e9c1e89ae80c"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount": "Rs 6 Crore",
+        "amount_original": "Rs 6 Crore",
+        "amount_normalized": {
+          "currency": "INR",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万印度卢比"
+        },
+        "announced_at": "2026-10-06",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Merak Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-141fde62ccd11929",
+                "quote": "has raised Rs 6 crore in a pre-seed funding round led by Merak Ventures, with participation from angel investors",
+                "source_content_hash": "ca72b166570bbafa3dd775ae9f20e23a0e752158db0d9da7fd461801f20e08ee",
+                "quote_hash": "177aa8047ad287fe6c4e71f1ee15894ebbc63b08b8e796f101b8aa524564fe45"
+              },
+              {
+                "source_id": "FISRC-be92077ed9b7f033",
+                "quote": "has raised INR 6 crore in a pre-seed round led by Merak Ventures, with participation from a group of angel investors",
+                "source_content_hash": "0dab3678bb5a4c34",
+                "quote_hash": "0363c2c0df7d42a6e48352b0c3706935b0758a8da92c6b00aa53784e2e34b22f"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2b5a44024b6a80"
+          }
+        ]
+      },
+      "classification": {
+        "financing_tags": {
+          "version": "AI-FUNDING-TAGS-1.0",
+          "scope": "included",
+          "status": "classified",
+          "sector": {
+            "id": "enterprise",
+            "name": "企业通用 AI"
+          },
+          "subsector": {
+            "id": "productivity",
+            "name": "办公、会议与知识管理"
+          },
+          "product_form": {
+            "id": "enterprise-software",
+            "name": "企业软件"
+          },
+          "customers": [
+            {
+              "id": "business",
+              "name": "企业"
+            },
+            {
+              "id": "consumer",
+              "name": "个人消费者"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-be92077ed9b7f033",
+              "quote": "CurvetAI, a unified AI workspace that lets users access and combine multiple AI models from one platform"
+            },
+            {
+              "source_id": "FISRC-141fde62ccd11929",
+              "quote": "CurvetAI operates an AI workspace that brings multiple AI models together on a single platform. The platform allows users to work with text, image, audio and video models in one place. Users can compare outputs from different models and combine their capabilities within the same workflow."
+            },
+            {
+              "source_id": "FISRC-be92077ed9b7f033",
+              "quote": "letting users work across text, image, audio and video models within a single visual workspace, compare outputs, and route tasks to the model best suited to them"
+            },
+            {
+              "source_id": "FISRC-ab7218b4410f6c5e",
+              "quote": "The product brings text models, image tools, video generation, prompts, and AI agents into one workspace, removing much of the setup that usually slows people down."
+            },
+            {
+              "source_id": "FISRC-ab7218b4410f6c5e",
+              "quote": "Users can test ideas, build workflows, and move between different AI functions without dealing with APIs, separate billing systems, or technical configuration before they even begin."
+            },
+            {
+              "source_id": "FISRC-ab7218b4410f6c5e",
+              "quote": "The approach has found a strong audience among creators, students, agencies, designers, and smaller teams looking for a more usable way to work with AI."
+            }
+          ],
+          "rationale": "CurvetAI 提供统一 AI 工作空间，让用户在同一平台组合多种模型并构建工作流，属于跨行业企业办公与知识管理应用。"
+        },
+        "market_category": {
+          "id": "enterprise",
+          "name": "企业通用 AI",
+          "dimension": "financing_sector"
+        },
+        "market_subcategory": {
+          "id": "productivity",
+          "name": "办公、会议与知识管理",
+          "dimension": "financing_subsector"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件",
+          "dimension": "financing_product_form"
+        }
+      }
+    },
+    {
+      "event_id": "EV-f9cd18d3163ca060",
+      "card_id": "FI-f138ed951484efaa",
+      "company": {
+        "entity_id": "EN-7b16566a47240add",
+        "application_entity_id": "EN-7b16566a47240add",
+        "name": "清醒异构",
+        "full_name": "北京清醒异构科技有限公司",
+        "summary": "清华系量子人工智能企业，2021年由清华大学计算机系校友余腾带队创立，早期基于经典异构算力开发并行计算系统软件，2025年将研发重心转向量子AI，发布量子启发视觉语言模型RiverONE，产品进入AI及量子计算产业链。",
+        "website": "",
+        "headquarters": "上海",
+        "founders": [
+          {
+            "name": "余腾",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-735024582f88eccf",
+                "quote": "2021年，清华大学计算机系校友余腾带队创立清醒异构",
+                "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+                "quote_hash": "dec5fd509fa867d12ad643249e26f530d7d138bcea80fba70b7497b875203847"
+              },
+              {
+                "source_id": "FISRC-22835d393b9cab3b",
+                "quote": "量子创业公司清醒异构创始人余腾给出的答案，是上海",
+                "source_content_hash": "63148b85398edd9e",
+                "quote_hash": "f08e01774e43c5b001997249d30f9d7571cb7528b9e2a05d9efdabbf42776012"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount": "未披露",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-09-24",
+        "disclosure_status": "partially_disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "晶凯资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-735024582f88eccf",
+                "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
+                "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+                "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-3a8a39755087f5"
+          },
+          {
+            "name": "安徽高新投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-735024582f88eccf",
+                "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
+                "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+                "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-81ad92a2b487c6"
+          },
+          {
+            "name": "道得投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-735024582f88eccf",
+                "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
+                "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+                "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-484e5755959596"
+          },
+          {
+            "name": "励石投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-735024582f88eccf",
+                "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
+                "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+                "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-5dcb390b03e6ea"
+          },
+          {
+            "name": "中咨基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-735024582f88eccf",
+                "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
+                "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+                "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f5d53393654385"
+          },
+          {
+            "name": "徐汇资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-735024582f88eccf",
+                "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
+                "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+                "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-722fc3660faf7f"
+          },
+          {
+            "name": "森蓝集团",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-735024582f88eccf",
+                "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
+                "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
+                "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-4a7834341a4138"
+          }
+        ]
+      },
+      "classification": {
+        "financing_tags": {
+          "version": "AI-FUNDING-TAGS-1.0",
+          "scope": "included",
+          "status": "classified",
+          "sector": {
+            "id": "models",
+            "name": "基础模型"
+          },
+          "subsector": {
+            "id": "specialist-models",
+            "name": "专用模型与科学模型"
+          },
+          "product_form": {
+            "id": "model-api",
+            "name": "模型与 API"
+          },
+          "customers": [],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "quote": "2021年，清华大学计算机系校友余腾带队创立清醒异构，早期基于经典异构算力的AI系统，如今正完成一次转身——走向量子启发的下一代AI模型前沿，产品进入一系列AI及量子计算产业链。"
+            },
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "quote": "清醒异构正式发布 量子启发视觉语言模型RiverONE 。据介绍，其在模型构建阶段使用模拟量子计算生成参数，训练完成后模型在经典GPU上推理，不需要量子计算机实时参与。"
+            },
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "quote": "在量子校准图表理解这一特定测试中，RiverONE以不足对比模型十分之一的19亿参数量，达到英伟达Ising Calibration 1至少95%的表现"
+            }
+          ],
+          "rationale": "2026年融资原文明确研发重心已转向量子启发AI模型，并发布RiverONE；按当前专用模型产品分类，早期TMD80计算系统保留为历史产品。"
+        },
+        "market_category": {
+          "id": "models",
+          "name": "基础模型",
+          "dimension": "financing_sector"
+        },
+        "market_subcategory": {
+          "id": "specialist-models",
+          "name": "专用模型与科学模型",
+          "dimension": "financing_subsector"
+        },
+        "product_form": {
+          "id": "model-api",
+          "name": "模型与 API",
+          "dimension": "financing_product_form"
+        }
+      }
+    },
+    {
+      "event_id": "EV-2f9a3670fc346060",
+      "card_id": "FI-986f8775f02e57de",
+      "company": {
+        "entity_id": "EN-7692c3ad3540bb80",
+        "application_entity_id": "EN-7692c3ad3540bb80",
+        "name": "One",
+        "full_name": "One",
+        "summary": "One 是 AI 智能体与企业其余软件之间的信任层，为智能体提供统一方式访问企业已依赖的工具，并以认证、权限和审计能力包裹这些访问，使其可安全投入生产。",
+        "website": "https://withone.ai",
+        "headquarters": "旧金山",
+        "founders": [
+          {
+            "name": "Moe Katib",
+            "role": "创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8c0ae6bfcc37e44e",
+                "quote": "Moe Katib Founder & CEO",
+                "source_content_hash": "570bae2cd5ff176f",
+                "quote_hash": "630e3d1695e8cab7b68ebc9660bd7aa7a3678a24516e2ec3e18ff8af5ea61a9e"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount": "$4 million",
+        "amount_original": "$4 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "400 万美元"
+        },
+        "announced_at": "2026-07-06",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Four Rivers",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d74899360f0bc388",
+                "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents",
+                "source_content_hash": "0c7fbe9f92a357573e8504c0ca2bf95f7f7148cf35e247a66a821ceb5b2e9617",
+                "quote_hash": "39a77db1547c5a7fe9577e66750d8ffd960f820ec8854add98ca4124ab68b3ef"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6815b0bb3b9d40"
+          },
+          {
+            "name": "Ripple Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d74899360f0bc388",
+                "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents",
+                "source_content_hash": "0c7fbe9f92a357573e8504c0ca2bf95f7f7148cf35e247a66a821ceb5b2e9617",
+                "quote_hash": "39a77db1547c5a7fe9577e66750d8ffd960f820ec8854add98ca4124ab68b3ef"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-91e56615a2a463"
+          },
+          {
+            "name": "Golden Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d74899360f0bc388",
+                "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents",
+                "source_content_hash": "0c7fbe9f92a357573e8504c0ca2bf95f7f7148cf35e247a66a821ceb5b2e9617",
+                "quote_hash": "39a77db1547c5a7fe9577e66750d8ffd960f820ec8854add98ca4124ab68b3ef"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b4fcc0bf101457"
+          },
+          {
+            "name": "Village Global",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d74899360f0bc388",
+                "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents",
+                "source_content_hash": "0c7fbe9f92a357573e8504c0ca2bf95f7f7148cf35e247a66a821ceb5b2e9617",
+                "quote_hash": "39a77db1547c5a7fe9577e66750d8ffd960f820ec8854add98ca4124ab68b3ef"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-db79cd74268469"
+          },
+          {
+            "name": "Hyatt family",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d74899360f0bc388",
+                "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents",
+                "source_content_hash": "0c7fbe9f92a357573e8504c0ca2bf95f7f7148cf35e247a66a821ceb5b2e9617",
+                "quote_hash": "39a77db1547c5a7fe9577e66750d8ffd960f820ec8854add98ca4124ab68b3ef"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9428b0e2bdef0a"
+          }
+        ]
+      },
+      "classification": {
+        "financing_tags": {
+          "version": "AI-FUNDING-TAGS-1.0",
+          "scope": "included",
+          "status": "classified",
+          "sector": {
+            "id": "developer-data",
+            "name": "AI 开发与数据"
+          },
+          "subsector": {
+            "id": "ai-security",
+            "name": "模型与智能体安全"
+          },
+          "product_form": {
+            "id": "developer-platform",
+            "name": "开发与数据平台"
+          },
+          "customers": [
+            {
+              "id": "developer",
+              "name": "开发者"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d74899360f0bc388",
+              "quote": "One is the trust layer between AI agents and the rest of a company's software."
+            },
+            {
+              "source_id": "FISRC-8c0ae6bfcc37e44e",
+              "quote": "One is the trust layer for AI agents, led by Connect, an authentication product anyone can add to their own product for free."
+            },
+            {
+              "source_id": "FISRC-8c0ae6bfcc37e44e",
+              "quote": "Connect once per app and every agent you run works through a connection that is yours, scoped to the action, revocable in one click and recorded in a complete audit trail."
+            }
+          ],
+          "rationale": "One 为 AI 智能体提供认证、权限与审计的信任层，属于模型与智能体安全。"
+        },
+        "market_category": {
+          "id": "developer-data",
+          "name": "AI 开发与数据",
+          "dimension": "financing_sector"
+        },
+        "market_subcategory": {
+          "id": "ai-security",
+          "name": "模型与智能体安全",
+          "dimension": "financing_subsector"
+        },
+        "product_form": {
+          "id": "developer-platform",
+          "name": "开发与数据平台",
+          "dimension": "financing_product_form"
+        }
+      }
+    }
+  ],
+  "held": {
+    "company": "蓝芯算力",
+    "reason": "B轮系列合计近20亿元，单轮金额未披露；保持待核验"
+  },
+  "generated_at": "2026-10-12T12:07:34.507Z"
+}

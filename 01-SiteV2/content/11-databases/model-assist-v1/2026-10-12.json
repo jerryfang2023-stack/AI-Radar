@@ -1,9 +1,9 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-10-12T08:22:32.575Z",
+  "generated_at": "2026-10-12T11:51:07.536Z",
   "data_date": "2026-10-12",
   "prompt_version": "model-assist-2026-07-18.2",
-  "source_count": 140,
+  "source_count": 146,
   "candidates": [
     {
       "candidate_id": "MAC-01242430a3e2e7a1",
@@ -56,6 +56,54 @@
         }
       ],
       "generated_at": "2026-10-12T08:21:21.714Z"
+    },
+    {
+      "candidate_id": "MAC-02930b3a6b557fa4",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-0293d48bf47dba4f",
+      "raw_id": "RAW-99088f67f823503c",
+      "source_ref": "SA-4ab21e872a1fcd5d",
+      "source_hash": "0812dfa8fced3236",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "打造轻量化AI眼镜 厦企",
+        "rationale": "The candidate name appears to be a headline fragment rather than an entity name. The source identifies the AI glasses company as 比特幻境, but no VERIFIED_ALTERNATIVE is supplied to confirm identity, and the candidate name does not exactly match any verified alternative.",
+        "candidate_name": "打造轻量化AI眼镜 厦企"
+      },
+      "evidence": [
+        {
+          "start": 11,
+          "end": 45,
+          "quote": "总部位于厦门的AI眼镜企业——比特幻境于近日宣布完成数亿元天使轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:42:53.226Z"
     },
     {
       "candidate_id": "MAC-02f2151fc3c3305f",
@@ -241,6 +289,58 @@
         }
       ],
       "generated_at": "2026-10-12T08:21:47.477Z"
+    },
+    {
+      "candidate_id": "MAC-06fcd73056c8abb1",
+      "task_type": "claim_extraction",
+      "asset_id": "HISTORY-RAW-ffb017da5f2dd1f8",
+      "raw_id": "RAW-ffb017da5f2dd1f8",
+      "source_ref": "SA-bba2ba601c23013f",
+      "source_hash": "0c7fbe9f92a35757",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "china-funding-history-2026-09-12.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "One",
+            "object": "raised $4 million in new seed funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 209,
+          "end": 395,
+          "quote": "Today we're announcing that One has raised $4 million in new seed funding to build a trust layer for AI agents, the system enterprises need to bring the agentic movement into production."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:09:59.779Z"
     },
     {
       "candidate_id": "MAC-0afd28eb65e82560",
@@ -436,6 +536,70 @@
         }
       ],
       "generated_at": "2026-10-12T08:21:15.092Z"
+    },
+    {
+      "candidate_id": "MAC-0d4c9feed61afd3f",
+      "task_type": "qa_repair",
+      "asset_id": "QA-718f5fbc23adacb6",
+      "raw_id": "RAW-1d36ac948be82234",
+      "source_ref": "SA-07612eb0a3936c4e",
+      "source_hash": "d4bb87ede3492749",
+      "provider": "manual_review",
+      "model": "responsible_financing_reviewer",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Gudea",
+            "object": "$7 million in seed funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 65,
+          "end": 258,
+          "quote": "Gudea has raised $7 million in seed funding to help companies anticipate which online narratives will go viral and understand who is driving them, the startup tells Crunchbase News exclusively."
+        },
+        {
+          "start": 3674,
+          "end": 3837,
+          "quote": "“Those behavior patterns are like fingerprints, and so our AI then recognizes those fingerprints, pulls it out, and then we use an LLM to summarize,” Presley said."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:14:35.177Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:14:36.439Z",
+        "note": "全文主体为Gudea融资，预测传播趋势是产品能力；首段明确已完成700万美元种子融资，AI产品信息在原文。另核对同一原文AI产品短引，作为行业语境证据；不把语境中的数值加入融资Claim。"
+      }
     },
     {
       "candidate_id": "MAC-0db50910e9cb163c",
@@ -1159,6 +1323,60 @@
       "generated_at": "2026-10-12T08:21:16.359Z"
     },
     {
+      "candidate_id": "MAC-24c1b42421f9acf9",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-18a96fb4e49cd0e1",
+      "raw_id": "RAW-ac6c886e8e3b1818",
+      "source_ref": "SA-caec2e125849e9f8",
+      "source_hash": "335b0994edb14a34",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Sabi",
+        "rationale": "The candidate mention 'Sabi' refers to the company raising a seed round and developing a brain-AI interface, which is not one of the verified alternatives (Meta, OpenAI, Microsoft). The quote identifies Sabi as the entity itself, not as a publisher or supplier of another entity.",
+        "candidate_name": "Sabi"
+      },
+      "evidence": [
+        {
+          "start": 57,
+          "end": 201,
+          "quote": "Sabi today announced it has raised a $50 million seed round, led by Khosla Ventures, to develop a brain-AI interface designed for everyday wear."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:06:35.918Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:14:35.810Z",
+        "note": "Sabi融资公告明确公司主体；作为独立企业，不批准与其他Sabi或大厂合并。"
+      }
+    },
+    {
       "candidate_id": "MAC-24d9b0bcbdcba95e",
       "task_type": "qa_repair",
       "asset_id": "QA-ac6cafa218d30b58",
@@ -1635,7 +1853,7 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "requires_review",
+      "status": "accepted",
       "proposal": {
         "action": "extract_claim",
         "reason": "The source contains a concrete AI-relevant funding event: Verso, described as an AI-powered consumer intelligence platform, raised $6 million in seed funding.",
@@ -1677,7 +1895,13 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-10-12T08:22:29.367Z"
+      "generated_at": "2026-10-12T08:22:29.367Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:14:35.357Z",
+        "note": "责任人核对Verso原文明确AI平台及种子600万美元，准入既有事实门禁。"
+      }
     },
     {
       "candidate_id": "MAC-40d97bd6c411b98a",
@@ -1828,6 +2052,154 @@
         }
       ],
       "generated_at": "2026-10-12T08:22:09.165Z"
+    },
+    {
+      "candidate_id": "MAC-456f70adf7630328",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f5ce8a972adc9345",
+      "raw_id": "RAW-1d36ac948be82234",
+      "source_ref": "SA-07612eb0a3936c4e",
+      "source_hash": "d4bb87ede3492749",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Gudea",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative entity. The source identifies Gudea as a Minneapolis-based startup, but there is no verified alternative to compare against.",
+        "candidate_name": "Gudea"
+      },
+      "evidence": [
+        {
+          "start": 65,
+          "end": 258,
+          "quote": "Gudea has raised $7 million in seed funding to help companies anticipate which online narratives will go viral and understand who is driving them, the startup tells Crunchbase News exclusively."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:24:57.431Z"
+    },
+    {
+      "candidate_id": "MAC-490f8970989cbd08",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-8b89e86ffec95953",
+      "raw_id": "RAW-71dac3c0f0f4abc5",
+      "source_ref": "SA-5ae5802ab6b1fa08",
+      "source_hash": "24ecc6d1db3ba317",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Ampersand",
+            "object": "$15M Series A led by Bessemer Venture Partners",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 169,
+          "end": 277,
+          "quote": "Bessemer Venture Partners leads Ampersand’s $15M Series A to make every enterprise system legible to agents."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:06:35.669Z"
+    },
+    {
+      "candidate_id": "MAC-494e506b7448dff1",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-7692c3ad3540bb80",
+      "raw_id": "RAW-ffb017da5f2dd1f8",
+      "source_ref": "SA-bba2ba601c23013f",
+      "source_hash": "0c7fbe9f92a35757",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "One",
+        "rationale": "No VERIFIED_ALTERNATIVE was supplied, so identity cannot be confirmed against a verified list; the source consistently refers to the organization as \"One\" but there is no verified alternative to match.",
+        "candidate_name": "One"
+      },
+      "evidence": [
+        {
+          "start": 1422,
+          "end": 1500,
+          "quote": "One is the trust layer between AI agents and the rest of a company's software."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:13:17.616Z"
     },
     {
       "candidate_id": "MAC-4eef928c777d4ce2",
@@ -2106,7 +2478,7 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "requires_review",
+      "status": "accepted",
       "proposal": {
         "action": "extract_claim",
         "reason": "The source contains a concrete AI-relevant funding event: Cori Clinical, described as an AI platform for clinical trials, raised $4 million in a seed round led by Breega.",
@@ -2148,7 +2520,13 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-10-12T08:22:25.106Z"
+      "generated_at": "2026-10-12T08:22:25.106Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:51:02.223Z",
+        "note": "已核对Tech.eu完整缓存融资短引和Cori Clinical公司公告，收款主体和400万美元种子轮一致；EUR媒体换算不用于原币融资事实。"
+      }
     },
     {
       "candidate_id": "MAC-599fa877c99835d1",
@@ -2345,6 +2723,102 @@
         }
       ],
       "generated_at": "2026-10-12T08:21:50.020Z"
+    },
+    {
+      "candidate_id": "MAC-61d941ab821132aa",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-5bc235f338943862",
+      "raw_id": "RAW-71dac3c0f0f4abc5",
+      "source_ref": "SA-5ae5802ab6b1fa08",
+      "source_hash": "24ecc6d1db3ba317",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Ampersand",
+        "rationale": "No VERIFIED_ALTERNATIVE entries were supplied, so the candidate cannot be confirmed as matching a verified alternative; the source does mention Ampersand as a company founded by Ayan Barua and Lauren Long, but identity verification against alternatives is impossible.",
+        "candidate_name": "Ampersand"
+      },
+      "evidence": [
+        {
+          "start": 109,
+          "end": 167,
+          "quote": "Meet the founders of Ampersand: Ayan Barua and Lauren Long"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:24:57.122Z"
+    },
+    {
+      "candidate_id": "MAC-61d9497055d0a0e0",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-07249e5c4d3d02e2",
+      "raw_id": "RAW-2477364f1ae6e049",
+      "source_ref": "SA-788298e52e680965",
+      "source_hash": "40c138d906df7344",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Cori Clinical",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source names the candidate as 'Cori Clinical' and also refers to it as 'Cori', but no verified alternative exists to match.",
+        "candidate_name": "Cori Clinical"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 180,
+          "quote": "Cori Clinical, an AI platform for\nclinical trials, has raised $4 million in a seed funding round led by Breega,\nwith participation from Enzo, Heartfelt, Together Ventures and Bynd."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:51:07.528Z"
     },
     {
       "candidate_id": "MAC-6226bf2dd05ca664",
@@ -2559,6 +3033,108 @@
         }
       ],
       "generated_at": "2026-10-12T08:21:39.977Z"
+    },
+    {
+      "candidate_id": "MAC-6887da4ce5c7799d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-7eed2a69df089fc8",
+      "raw_id": "RAW-1a3f8d6d4b46a2f4",
+      "source_ref": "SA-2a14bdc91244c922",
+      "source_hash": "24be5b94c0c8fdb2",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "CurvetAI",
+        "rationale": "The candidate CurvetAI does not match either verified alternative (Anthropic or Microsoft). The source mentions CurvetAI as its own startup and separately mentions Microsoft only as a past employer of co-founder Vivek Dubey, which is not an identity relationship.",
+        "candidate_name": "CurvetAI"
+      },
+      "evidence": [
+        {
+          "start": 9,
+          "end": 167,
+          "quote": "CurvetAI, an AI workspace that brings multiple AI capabilities onto a single platform, has raised Rs 6 crore in a pre-seed funding round led by Merak Ventures"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:06:37.347Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:14:36.011Z",
+        "note": "CurvetAI是独立公司，Microsoft仅为创始人前雇主；不得与Quanfluence合并。"
+      }
+    },
+    {
+      "candidate_id": "MAC-6a15d10d586f8220",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-00e2a65939d3e211",
+      "raw_id": "RAW-1504e62f5faab571",
+      "source_ref": "SA-cc5b964aa6f9264f",
+      "source_hash": "a13785fb3b434348",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "投资界AI",
+        "rationale": "The candidate mention \"投资界AI\" appears only as the source of the report (\"投资界AI获悉\"), not as a reference to the verified alternative NVIDIA. No quote links it to NVIDIA, so it cannot be treated as the same entity.",
+        "candidate_name": "投资界AI"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 32,
+          "quote": "投资界AI获悉，清华系量子人工智能明星企业清醒异构完成A+轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:13:17.963Z"
     },
     {
       "candidate_id": "MAC-6a5ff2a467769179",
@@ -2833,6 +3409,54 @@
       "generated_at": "2026-10-12T08:21:48.896Z"
     },
     {
+      "candidate_id": "MAC-75173875034fc57e",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-072b5d88e904656c",
+      "raw_id": "RAW-ce1064588da88364",
+      "source_ref": "SA-ab43a4fca7aea2d9",
+      "source_hash": "16a8258b22d8bb9a",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "蓝芯算力",
+        "rationale": "The candidate 蓝芯算力 is a RISC-V CPU+AI chip company, which does not match either verified alternative (DeepSeek or NVIDIA). The source describes it as a separate organization, so it is a distinct entity.",
+        "candidate_name": "蓝芯算力"
+      },
+      "evidence": [
+        {
+          "start": 19,
+          "end": 94,
+          "quote": "行业领 先的RISC-V CPU+AI芯片公司蓝芯算力（深圳）科技有限公司（简称“蓝芯算力”）已于近日完成B轮系列融资，合计融资规模近20亿元人民币。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:34:02.748Z"
+    },
+    {
       "candidate_id": "MAC-75cbd4e4ca573924",
       "task_type": "claim_extraction",
       "asset_id": "QA-f4ceebf3b4267bc4",
@@ -2955,6 +3579,125 @@
       "generated_at": "2026-10-12T08:22:03.301Z"
     },
     {
+      "candidate_id": "MAC-83ec07401bfb26b4",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1a2290470e0aa754",
+      "raw_id": "RAW-ac6c886e8e3b1818",
+      "source_ref": "SA-caec2e125849e9f8",
+      "source_hash": "335b0994edb14a34",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "SAN FRANCISCO",
+        "rationale": "The candidate mention 'SAN FRANCISCO' appears only as a dateline location in the source text, not as a reference to any verified alternative entity (Meta, OpenAI, or Microsoft). No quote establishes identity with a verified alternative.",
+        "candidate_name": "SAN FRANCISCO"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 201,
+          "quote": "SAN FRANCISCO, Calif., Oct. 09, 2026 (GLOBE NEWSWIRE) -- Sabi today announced it has raised a $50 million seed round, led by Khosla Ventures, to develop a brain-AI interface designed for everyday wear."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:06:36.716Z",
+      "review": {
+        "decision": "reject",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:14:36.214Z",
+        "note": "SAN FRANCISCO是公告地名，不是融资企业；拒绝建立该公司主体。"
+      }
+    },
+    {
+      "candidate_id": "MAC-84fb8b0978db3cff",
+      "task_type": "qa_repair",
+      "asset_id": "QA-d624bc8793bba1af",
+      "raw_id": "RAW-71dac3c0f0f4abc5",
+      "source_ref": "SA-5ae5802ab6b1fa08",
+      "source_hash": "24ecc6d1db3ba317",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant funding event: Bessemer Venture Partners led Ampersand's $15M Series A, and the article explicitly frames Ampersand's work around making enterprise systems legible to AI agents.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Ampersand",
+            "object": "$15M Series A led by Bessemer Venture Partners",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 169,
+          "end": 277,
+          "quote": "Bessemer Venture Partners leads Ampersand’s $15M Series A to make every enterprise system legible to agents."
+        },
+        {
+          "start": 1140,
+          "end": 1523,
+          "quote": "In our Roadmap: AI systems of action , we argued that the deepest moat protecting legacy systems of record is the cost of implementing and customizing them for every enterprise. Ampersand is dissolving that problem from the inside, turning the per-customer integration project into a line of version-controlled code. This is why Bessemer is proudly leading Ampersand’s $15M Series A."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:07:43.734Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:14:35.581Z",
+        "note": "责任人核对投资方公告：Ampersand是收款主体，1500万美元A轮，AI智能体系统集成。另核对同一原文AI产品短引，作为行业语境证据；不把语境中的数值加入融资Claim。"
+      }
+    },
+    {
       "candidate_id": "MAC-8da2fa99fd4dd703",
       "task_type": "claim_extraction",
       "asset_id": "QA-512a93d5a9faa7b3",
@@ -3075,6 +3818,54 @@
         }
       ],
       "generated_at": "2026-10-12T08:21:59.504Z"
+    },
+    {
+      "candidate_id": "MAC-90bace7092d6ffd6",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-4fb73fd4a920dee7",
+      "raw_id": "RAW-99088f67f823503c",
+      "source_ref": "SA-4ab21e872a1fcd5d",
+      "source_hash": "0812dfa8fced3236",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "比特幻境",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source does mention 比特幻境 as an AI glasses company headquartered in Xiamen, but there is no verified alternative to match.",
+        "candidate_name": "比特幻境"
+      },
+      "evidence": [
+        {
+          "start": 11,
+          "end": 45,
+          "quote": "总部位于厦门的AI眼镜企业——比特幻境于近日宣布完成数亿元天使轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:42:52.490Z"
     },
     {
       "candidate_id": "MAC-9121e989679f7ab6",
@@ -4128,6 +4919,66 @@
       "generated_at": "2026-10-12T08:21:58.143Z"
     },
     {
+      "candidate_id": "MAC-a666c8975433a6ad",
+      "task_type": "qa_repair",
+      "asset_id": "QA-BLUECORE-RAW-ce1064588da88364",
+      "raw_id": "RAW-ce1064588da88364",
+      "source_ref": "SA-ab43a4fca7aea2d9",
+      "source_hash": "16a8258b22d8bb9a",
+      "provider": "manual_review",
+      "model": "responsible_financing_reviewer",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "蓝芯算力",
+            "object": "B轮系列融资，合计融资规模近20亿元人民币",
+            "amount_scope": "combined_rounds",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 13,
+          "end": 94,
+          "quote": "投资界获悉，行业领 先的RISC-V CPU+AI芯片公司蓝芯算力（深圳）科技有限公司（简称“蓝芯算力”）已于近日完成B轮系列融资，合计融资规模近20亿元人民币。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:33:36.721Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:33:36.721Z",
+        "note": "核对正文中的实际融资主体蓝芯算力，首发不是公司名；20亿元为B轮系列合计，不拆成单一子轮次。"
+      }
+    },
+    {
       "candidate_id": "MAC-a79110985bd8fb48",
       "task_type": "entity_resolution",
       "asset_id": "EN-7eccc0cc2a21bb7a",
@@ -4487,6 +5338,54 @@
         }
       ],
       "generated_at": "2026-10-12T08:21:25.566Z"
+    },
+    {
+      "candidate_id": "MAC-b53857ea253c7e8d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-ee11373e48530800",
+      "raw_id": "RAW-59228e1a66e02239",
+      "source_ref": "SA-22ff786b3eca13fc",
+      "source_hash": "e739872be5706d8b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Verso",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source names Verso as an AI-powered consumer intelligence platform that raised seed funding, but there is no verified alternative to match it to.",
+        "candidate_name": "Verso"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 91,
+          "quote": "Verso, an AI-powered\nconsumer intelligence platform, has raised $6 million in seed funding."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:13:18.977Z"
     },
     {
       "candidate_id": "MAC-b5b5efcef2c23372",
@@ -5054,6 +5953,65 @@
       "generated_at": "2026-10-12T08:22:00.844Z"
     },
     {
+      "candidate_id": "MAC-c50601d274e2bab1",
+      "task_type": "claim_extraction",
+      "asset_id": "HISTORY-RAW-1504e62f5faab571",
+      "raw_id": "RAW-1504e62f5faab571",
+      "source_ref": "SA-cc5b964aa6f9264f",
+      "source_hash": "a13785fb3b434348",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "china-funding-history-2026-09-12.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "清醒异构",
+            "object": "完成A+轮融资",
+            "evidence_index": 0,
+            "amount_disclosure": "not_disclosed"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "投资界AI获悉，清华系量子人工智能明星企业清醒异构完成A+轮融资，投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:09:59.779Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T11:21:08.459Z",
+        "note": "阅读全文确认A+轮已完成，单轮金额未披露；近亿元是A+A+累计，禁止用作A+金额。仅补充金额披露状态，不改融资短引或数值。"
+      }
+    },
+    {
       "candidate_id": "MAC-c944768992e4bfbb",
       "task_type": "claim_extraction",
       "asset_id": "QA-9dbd2fb12afde7e1",
@@ -5174,6 +6132,80 @@
         }
       ],
       "generated_at": "2026-10-12T08:21:55.876Z"
+    },
+    {
+      "candidate_id": "MAC-cce8f381621eba60",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-073807ac7e3e31b4",
+      "raw_id": "RAW-99088f67f823503c",
+      "source_ref": "SA-4ab21e872a1fcd5d",
+      "source_hash": "0812dfa8fced3236",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "比特幻境",
+            "object": "数亿元天使轮融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "product_release",
+            "subject": "比特幻境",
+            "object": "NIMO首款产品推向市场",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "partnership",
+            "subject": "比特幻境",
+            "object": "与雅视光学达成深度合作",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 11,
+          "end": 78,
+          "quote": "总部位于厦门的AI眼镜企业——比特幻境于近日宣布完成数亿元天使轮融资，投资方包括博华资本、戈壁创投、元禾璞华、尚势资本等相关投资机构。"
+        },
+        {
+          "start": 126,
+          "end": 151,
+          "quote": "旗下智能眼镜品牌NIMO首款产品今年4月推向市场。"
+        },
+        {
+          "start": 195,
+          "end": 215,
+          "quote": "并与国际眼镜制造商雅视光学达成深度合作。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:34:02.717Z"
     },
     {
       "candidate_id": "MAC-d2d18eb9119a8008",
@@ -5820,6 +6852,54 @@
         }
       ],
       "generated_at": "2026-10-12T08:21:34.127Z"
+    },
+    {
+      "candidate_id": "MAC-fa2f0c76497424ad",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-7b16566a47240add",
+      "raw_id": "RAW-1504e62f5faab571",
+      "source_ref": "SA-cc5b964aa6f9264f",
+      "source_hash": "a13785fb3b434348",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "清醒异构",
+        "rationale": "The candidate mention 清醒异构 is a Chinese quantum-AI startup founded in 2021 by Tsinghua alumnus 余腾; it is not the same entity as NVIDIA (英伟达), which is mentioned separately as a comparison model provider. No verified alternative matches 清醒异构.",
+        "candidate_name": "清醒异构"
+      },
+      "evidence": [
+        {
+          "start": 117,
+          "end": 206,
+          "quote": "2021年，清华大学计算机系校友余腾带队创立清醒异构，早期基于经典异构算力的AI系统，如今正完成一次转身——走向量子启发的下一代AI模型前沿，产品进入一系列AI及量子计算产业链。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:2021b"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-12T11:13:18.877Z"
     },
     {
       "candidate_id": "MAC-fbe4b297e75ffff0",
