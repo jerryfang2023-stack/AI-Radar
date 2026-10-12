@@ -469,6 +469,10 @@ export function buildFundingInsightsFrontstage(projectRoot = root, { publicScope
   const productForms = productFormNames(projectRoot);
   const marketCategories = facetValueNames(projectRoot, "ai_market_category");
   const marketSubcategories = facetValueNames(projectRoot, "ai_market_subcategory");
+  // Education is supported research metadata and has an existing industry
+  // label. Public financing still uses its independently reviewed taxonomy.
+  const educationName = facetValueNames(projectRoot, "industry").get("education");
+  if (educationName) marketSubcategories.set("education", educationName);
   const marketApplications = facetValueNames(projectRoot, "ai_market_application");
   const entityIndex = readJson(path.join(projectRoot, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), {});
   const entityDecisions = readJson(
@@ -567,7 +571,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root, { publicScope
           decision_id: marketCategoryDecision.decision_id,
         },
         market_subcategory: marketSubcategoryId ? {
-          dimension: "ai_market_subcategory",
+          dimension: marketSubcategoryId === "education" ? "industry" : "ai_market_subcategory",
           id: marketSubcategoryId,
           name: marketSubcategoryName,
           method: "card_explicit",

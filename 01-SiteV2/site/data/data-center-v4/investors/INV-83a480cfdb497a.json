@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-10-01",
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 2
     },
     "round_codes": [
@@ -165,14 +166,46 @@
             "quote_hash": "57d129887176732facc5235cc0ab30eac4060c64a8586df4d5578d6ee22ec3c5"
           }
         ]
+      },
+      {
+        "activity_id": "IA-db516dfc7fdad043",
+        "funding_insight_id": "FI-6afae82835d41f97",
+        "event_ids": [
+          "EV-e8bc8dc295e87e3b"
+        ],
+        "company_entity_id": "EN-6aa1fcea0024c6ce",
+        "company_canonical_entity_id": "",
+        "company_name": "GMI Cloud",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "已披露B轮股权投资方，与信贷额度分开",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+            "source_title": "GMI Cloud Raises Over $660 Million to Accelerate Global AI Infrastructure Expansion",
+            "source_content_hash": "3afdd073c952b34b",
+            "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+            "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
+          }
+        ]
       }
     ],
     "evidence": [
       {
         "source_id": "FISRC-cf3eb2b83c7e750b",
         "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
-        "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
-        "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+        "source_title": "GMI Cloud Raises Over $660 Million to Accelerate Global AI Infrastructure Expansion",
+        "source_content_hash": "3afdd073c952b34b",
         "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
         "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
       },

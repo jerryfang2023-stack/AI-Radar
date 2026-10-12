@@ -1,7 +1,7 @@
 {
   "schema_version": "SOURCE-INTAKE-V1.1",
   "data_date": "2026-10-08",
-  "generated_at": "2026-10-08T12:36:24.052Z",
+  "generated_at": "2026-10-12T17:31:47.832Z",
   "collection_batches": [
     {
       "raw_ids": [
@@ -407,6 +407,14 @@
       ],
       "eligible_raw_ids": [
         "RAW-86903d33a6f48711"
+      ]
+    },
+    {
+      "raw_ids": [
+        "RAW-2cf66fc9d1aaf9ce"
+      ],
+      "eligible_raw_ids": [
+        "RAW-2cf66fc9d1aaf9ce"
       ]
     }
   ],
@@ -2198,6 +2206,18 @@
         "evidence://3be24924fed011169fdaae36006d5e5ef93ba3d87d2457667960c2d2a3d35724"
       ],
       "content_hash": "3be24924fed011169fdaae36006d5e5ef93ba3d87d2457667960c2d2a3d35724"
+    },
+    {
+      "source_artifact_id": "SA-7da4ac771acec6d6",
+      "source_url": "https://www.prnewswire.co.uk/news-releases/wiremind-raises-35-million-in-first-ever-funding-round-302898298.html",
+      "canonical_url": "https://www.prnewswire.co.uk/news-releases/wiremind-raises-35-million-in-first-ever-funding-round-302898298.html",
+      "publisher": "www.prnewswire.co.uk",
+      "capture_method": "original_http",
+      "captured_at": "2026-10-12T17:31:45.901Z",
+      "snapshot_refs": [
+        "evidence://ada584b2a532302d1e016d0d7f76fe3f52b4221528efcfeb0a86915553c4f3fe"
+      ],
+      "content_hash": "ada584b2a532302d1e016d0d7f76fe3f52b4221528efcfeb0a86915553c4f3fe"
     }
   ],
   "raw_documents": [
@@ -8309,11 +8329,52 @@
         "key_excerpts": [],
         "eligible_for_v4_extraction": true
       }
+    },
+    {
+      "schema_version": "RAW-V4.0",
+      "raw_id": "RAW-2cf66fc9d1aaf9ce",
+      "source_artifact_id": "SA-7da4ac771acec6d6",
+      "source_url": "https://www.prnewswire.co.uk/news-releases/wiremind-raises-35-million-in-first-ever-funding-round-302898298.html",
+      "canonical_url": "https://www.prnewswire.co.uk/news-releases/wiremind-raises-35-million-in-first-ever-funding-round-302898298.html",
+      "publisher": "www.prnewswire.co.uk",
+      "author": "",
+      "published_at": "2026-10-06",
+      "captured_at": "2026-10-12T17:31:45.901Z",
+      "language": "en",
+      "document_type": "article",
+      "title_original": "Wiremind raises €35 Million in First-Ever Funding Round",
+      "title_zh": "",
+      "body_ref": "evidence://ada584b2a532302d1e016d0d7f76fe3f52b4221528efcfeb0a86915553c4f3fe",
+      "content_hash": "ada584b2a532302d1e016d0d7f76fe3f52b4221528efcfeb0a86915553c4f3fe",
+      "capture_method": "original_http",
+      "extraction_status": "accepted",
+      "market_scope": {
+        "source_registry_id": "",
+        "source_region": "",
+        "market_region": "",
+        "china_market_match": false,
+        "china_market_match_basis": ""
+      },
+      "intake_diagnostics": {
+        "acquisition_channel": "financing",
+        "search_path": "",
+        "evidence_object_type": "original_full_text",
+        "evidence_object_usable": true,
+        "evidence_strength": "",
+        "raw_qc_decision": "accepted",
+        "raw_qc_downstream_use": "source_date_review",
+        "extraction_quality": "",
+        "readability_score": 0,
+        "has_full_text": true,
+        "origin_fetch_status": "",
+        "key_excerpts": [],
+        "eligible_for_v4_extraction": true
+      }
     }
   ],
   "counts": {
-    "source_artifacts": 149,
-    "raw_documents": 149,
-    "eligible_documents": 149
+    "source_artifacts": 150,
+    "raw_documents": 150,
+    "eligible_documents": 150
   }
 }

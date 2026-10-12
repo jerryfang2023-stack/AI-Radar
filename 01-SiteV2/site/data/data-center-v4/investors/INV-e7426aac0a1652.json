@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 1,
     "market_regions": [
@@ -69,19 +69,21 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-10-09",
+    "first_disclosed_at": "2026-09-15",
     "latest_disclosed_at": "2026-10-09",
     "role_counts": {
       "historical_or_ambiguous": 3,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "seed",
       "series_a"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-fc67129ea8fe8366",
-        "canonical_entity_id": "",
+        "canonical_entity_id": "EN-fc67129ea8fe8366",
         "name": "TypeSafe AI"
       }
     ],
@@ -94,7 +96,7 @@
           "EV-e8790e3d950ce1c7"
         ],
         "company_entity_id": "EN-fc67129ea8fe8366",
-        "company_canonical_entity_id": "",
+        "company_canonical_entity_id": "EN-fc67129ea8fe8366",
         "company_name": "TypeSafe AI",
         "round": "A轮",
         "round_code": "series_a",
@@ -124,6 +126,47 @@
             "source_content_hash": "30d0b165361bbd3e",
             "quote": "a16z led, with Sequoia Capital, existing investor DCVC and angel investors participating, and a16z general partner Martin Casado is joining the board.",
             "quote_hash": "94524cc0862a80040298a41c9585b3281bd17f9f7c49065c69ed863830e4d5da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ca114e405ba29bb1",
+        "funding_insight_id": "FI-9f29a0bf9de58982",
+        "event_ids": [
+          "EV-35c16315e0a2e5a8",
+          "EV-7c00fd2e32bfc4b7"
+        ],
+        "company_entity_id": "EN-fc67129ea8fe8366",
+        "company_canonical_entity_id": "EN-fc67129ea8fe8366",
+        "company_name": "TypeSafe AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1384792628b6addd",
+            "source_url": "https://www.dcvc.com/news-insights/typesafe-emerges-from-stealth-with-a-new-way-of-doing-ai/",
+            "source_title": "TypeSafe 结束隐身模式，推出全新 AI 方式",
+            "source_content_hash": "47e9af1cad0c5f717b30c6266c5a51b7323913d3c7feb36276bccfbaaeb761e6",
+            "quote": "we’re thrilled to be leading the $40 million Series Seed investment into TypeSafe",
+            "quote_hash": "5a5731cf9ea0c3c73ed1f71e77f198d4058bae53eda587e0fe26eb59c1372f1d"
           }
         ]
       },
@@ -199,7 +242,7 @@
           "EV-e8790e3d950ce1c7"
         ],
         "company_entity_id": "EN-fc67129ea8fe8366",
-        "company_canonical_entity_id": "",
+        "company_canonical_entity_id": "EN-fc67129ea8fe8366",
         "company_name": "TypeSafe AI",
         "round": "历史轮次未披露",
         "round_code": "undisclosed",
@@ -233,6 +276,14 @@
         "source_content_hash": "30d0b165361bbd3e",
         "quote": "a16z led, with Sequoia Capital, existing investor DCVC and angel investors participating, and a16z general partner Martin Casado is joining the board.",
         "quote_hash": "94524cc0862a80040298a41c9585b3281bd17f9f7c49065c69ed863830e4d5da"
+      },
+      {
+        "source_id": "FISRC-1384792628b6addd",
+        "source_url": "https://www.dcvc.com/news-insights/typesafe-emerges-from-stealth-with-a-new-way-of-doing-ai/",
+        "source_title": "TypeSafe 结束隐身模式，推出全新 AI 方式",
+        "source_content_hash": "47e9af1cad0c5f717b30c6266c5a51b7323913d3c7feb36276bccfbaaeb761e6",
+        "quote": "we’re thrilled to be leading the $40 million Series Seed investment into TypeSafe",
+        "quote_hash": "5a5731cf9ea0c3c73ed1f71e77f198d4058bae53eda587e0fe26eb59c1372f1d"
       },
       {
         "source_id": "FISRC-f6b16eaba393b2b3",
@@ -284,6 +335,10 @@
           "source_id": "FISRC-e4334f02f2e76723"
         },
         {
+          "description": "融资来源记录：TypeSafe AI · 种子轮 · 2026-09-15 · 本轮领投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1384792628b6addd"
+        },
+        {
           "description": "融资来源记录：Odyssey ML · 种子轮 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-413e994d081f8e0f"
         }
@@ -313,6 +368,14 @@
           "source_content_hash": "30d0b165361bbd3e",
           "quote": "a16z led, with Sequoia Capital, existing investor DCVC and angel investors participating, and a16z general partner Martin Casado is joining the board.",
           "quote_hash": "94524cc0862a80040298a41c9585b3281bd17f9f7c49065c69ed863830e4d5da"
+        },
+        {
+          "source_id": "FISRC-1384792628b6addd",
+          "source_url": "https://www.dcvc.com/news-insights/typesafe-emerges-from-stealth-with-a-new-way-of-doing-ai/",
+          "source_title": "TypeSafe 结束隐身模式，推出全新 AI 方式",
+          "source_content_hash": "47e9af1cad0c5f717b30c6266c5a51b7323913d3c7feb36276bccfbaaeb761e6",
+          "quote": "we’re thrilled to be leading the $40 million Series Seed investment into TypeSafe",
+          "quote_hash": "5a5731cf9ea0c3c73ed1f71e77f198d4058bae53eda587e0fe26eb59c1372f1d"
         },
         {
           "source_id": "FISRC-413e994d081f8e0f",

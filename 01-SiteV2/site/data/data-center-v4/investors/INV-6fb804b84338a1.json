@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-01",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 2,
+      "other_current_round": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "debt"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6aa1fcea0024c6ce",
+        "canonical_entity_id": "",
+        "name": "GMI Cloud"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-28f7057c1a889667",
+        "funding_insight_id": "FI-6afae82835d41f97",
+        "event_ids": [
+          "EV-e8bc8dc295e87e3b"
+        ],
+        "company_entity_id": "EN-6aa1fcea0024c6ce",
+        "company_canonical_entity_id": "",
+        "company_name": "GMI Cloud",
+        "round": "债务融资",
+        "round_code": "debt",
+        "round_original": "债务融资",
+        "amount_original": "$445 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 445000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.45 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮信贷融资牵头方",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+            "source_title": "GMI Cloud Raises Over $660 Million to Accelerate Global AI Infrastructure Expansion",
+            "source_content_hash": "3afdd073c952b34b",
+            "quote": "MOUNTAIN VIEW, Calif., Oct. 1, 2026 /PRNewswire/ -- GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services, today announced $668 million in new financing, comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC. The Series B was led by ARCHIV, a new investment firm based in San Francisco that specializes in AI and robotics, with participation from NVIDIA. This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+            "quote_hash": "fa5d8f91f5d0172c33e31bf5c2e67ee5d742eaf51418a877a48515432adb43ec"
+          }
+        ]
+      },
       {
         "activity_id": "IA-68b6bda928a8852d",
         "funding_insight_id": "FI-e332024760e4f246",
@@ -146,6 +195,14 @@
       {
         "source_id": "FISRC-cf3eb2b83c7e750b",
         "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+        "source_title": "GMI Cloud Raises Over $660 Million to Accelerate Global AI Infrastructure Expansion",
+        "source_content_hash": "3afdd073c952b34b",
+        "quote": "MOUNTAIN VIEW, Calif., Oct. 1, 2026 /PRNewswire/ -- GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services, today announced $668 million in new financing, comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC. The Series B was led by ARCHIV, a new investment firm based in San Francisco that specializes in AI and robotics, with participation from NVIDIA. This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+        "quote_hash": "fa5d8f91f5d0172c33e31bf5c2e67ee5d742eaf51418a877a48515432adb43ec"
+      },
+      {
+        "source_id": "FISRC-cf3eb2b83c7e750b",
+        "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
         "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
         "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
         "quote": "comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC",
@@ -197,7 +254,7 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：GMI Cloud · 历史轮次未披露 · 信贷融资领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：GMI Cloud · 债务融资 · 2026-10-01 · 本轮信贷融资牵头方 · $445 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cf3eb2b83c7e750b"
         },
         {
@@ -250,10 +307,10 @@
         {
           "source_id": "FISRC-cf3eb2b83c7e750b",
           "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
-          "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
-          "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
-          "quote": "comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC",
-          "quote_hash": "a07d3b31932f08252a5d591cd545158a423441fe03a3d553dafc6d3652fce2aa"
+          "source_title": "GMI Cloud Raises Over $660 Million to Accelerate Global AI Infrastructure Expansion",
+          "source_content_hash": "3afdd073c952b34b",
+          "quote": "MOUNTAIN VIEW, Calif., Oct. 1, 2026 /PRNewswire/ -- GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services, today announced $668 million in new financing, comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC. The Series B was led by ARCHIV, a new investment firm based in San Francisco that specializes in AI and robotics, with participation from NVIDIA. This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+          "quote_hash": "fa5d8f91f5d0172c33e31bf5c2e67ee5d742eaf51418a877a48515432adb43ec"
         },
         {
           "source_id": "FISRC-f5de203e610041a3",

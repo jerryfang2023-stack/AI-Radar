@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,20 +63,20 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 29,
-    "historical_or_ambiguous_count": 7,
-    "portfolio_company_count": 25,
+    "current_round_count": 30,
+    "historical_or_ambiguous_count": 8,
+    "portfolio_company_count": 26,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-10-05",
+    "latest_disclosed_at": "2026-10-07",
     "role_counts": {
-      "historical_or_ambiguous": 7,
+      "historical_or_ambiguous": 8,
       "lead": 3,
-      "participant": 26
+      "participant": 27
     },
     "round_codes": [
       "infrastructure",
@@ -166,6 +166,11 @@
         "name": "Mistral AI"
       },
       {
+        "entity_id": "EN-3eee4f30151db45a",
+        "canonical_entity_id": "EN-3eee4f30151db45a",
+        "name": "Nous Research"
+      },
+      {
         "entity_id": "EN-eb6cf0bb179ca6ed",
         "canonical_entity_id": "",
         "name": "Nscale Limited"
@@ -222,6 +227,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a6767ee0529bbe2d",
+        "funding_insight_id": "FI-4328c217f1203f6f",
+        "event_ids": [
+          "EV-e5d1e49e37f2e291"
+        ],
+        "company_entity_id": "EN-3eee4f30151db45a",
+        "company_canonical_entity_id": "EN-3eee4f30151db45a",
+        "company_name": "Nous Research",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$90 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 90000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9000 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-295e99df6a40bc79",
+            "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+            "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+            "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+            "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+            "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d655173dbe161cc6",
         "funding_insight_id": "FI-2134347a27ff584f",
@@ -1557,6 +1602,38 @@
         ]
       },
       {
+        "activity_id": "IA-e80090795cadf34c",
+        "funding_insight_id": "FI-6afae82835d41f97",
+        "event_ids": [
+          "EV-e8bc8dc295e87e3b"
+        ],
+        "company_entity_id": "EN-6aa1fcea0024c6ce",
+        "company_canonical_entity_id": "",
+        "company_name": "GMI Cloud",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "已披露B轮股权投资方，与信贷额度分开",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf3eb2b83c7e750b",
+            "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+            "source_title": "GMI Cloud Raises Over $660 Million to Accelerate Global AI Infrastructure Expansion",
+            "source_content_hash": "3afdd073c952b34b",
+            "quote": "The Series B was led by ARCHIV, a new investment firm based in San Francisco that specializes in AI and robotics, with participation from NVIDIA.",
+            "quote_hash": "c382f70272cc18b17856d19861b783e14008672ac0b37efadc25e0a33a0ec180"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-53ab60e24b83a8d1",
         "funding_insight_id": "FI-b5ab66641aebf069",
         "event_ids": [
@@ -1655,6 +1732,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-295e99df6a40bc79",
+        "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+        "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+        "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+        "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+        "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+      },
+      {
         "source_id": "FISRC-062aa9e732f0aba2",
         "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
         "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
@@ -1673,8 +1758,8 @@
       {
         "source_id": "FISRC-cf3eb2b83c7e750b",
         "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
-        "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
-        "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+        "source_title": "GMI Cloud Raises Over $660 Million to Accelerate Global AI Infrastructure Expansion",
+        "source_content_hash": "3afdd073c952b34b",
         "quote": "The Series B was led by ARCHIV, a new investment firm based in San Francisco that specializes in AI and robotics, with participation from NVIDIA.",
         "quote_hash": "c382f70272cc18b17856d19861b783e14008672ac0b37efadc25e0a33a0ec180"
       },
@@ -2018,12 +2103,12 @@
           "source_id": "nvidia_nventures"
         },
         {
-          "description": "融资来源记录：Safe Superintelligence Inc. · 其他融资 · 2026-10-05 · 本轮领投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-062aa9e732f0aba2"
+          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-295e99df6a40bc79"
         },
         {
-          "description": "融资来源记录：GMI Cloud · 基础设施融资 · 2026-10-01 · 本轮参投 · $668 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cf3eb2b83c7e750b"
+          "description": "融资来源记录：Safe Superintelligence Inc. · 其他融资 · 2026-10-05 · 本轮领投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-062aa9e732f0aba2"
         }
       ],
       "contacts": [
@@ -2068,6 +2153,14 @@
           "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
         },
         {
+          "source_id": "FISRC-295e99df6a40bc79",
+          "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+          "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+          "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+          "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+          "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+        },
+        {
           "source_id": "FISRC-062aa9e732f0aba2",
           "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
           "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
@@ -2082,14 +2175,6 @@
           "source_content_hash": "f98c52d77de2d0e7",
           "quote": "Safe Superintelligence's latest funding round was a Corporate Minority for $5,000M on July 27, 2026.",
           "quote_hash": "617ed1039258d0bf48fcbd53df651d3661c30b7bdefda30141b47c30365c9f53"
-        },
-        {
-          "source_id": "FISRC-cf3eb2b83c7e750b",
-          "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
-          "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
-          "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
-          "quote": "The Series B was led by ARCHIV, a new investment firm based in San Francisco that specializes in AI and robotics, with participation from NVIDIA.",
-          "quote_hash": "c382f70272cc18b17856d19861b783e14008672ac0b37efadc25e0a33a0ec180"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2100,7 +2185,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[15].role": {
+        "activities[16].role": {
           "text": "2026年7月Series C参投",
           "source_hash": "ca89a4b6213c63b73693d1f4cbdbc294103169f8c18273db948594868797614d",
           "provider": "deepseek",

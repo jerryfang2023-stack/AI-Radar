@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -60,6 +60,7 @@
     "valueId": "security_operations",
     "eventIds": [
       "EV-215ea259173fa6b4",
+      "EV-303422b99649f7c1",
       "EV-52e472f000148362",
       "EV-af1a6d0b5da2d0e5",
       "EV-1c7050585c7f4791",
@@ -186,6 +187,7 @@
     ],
     "entityIds": [
       "EN-a60baf19b426b83a",
+      "EN-27b79c20fe655299",
       "EN-e66d5fd225ed6b0a",
       "EN-9827179e4ca265c3",
       "EN-f8223ea5a9c41813",
@@ -359,6 +361,88 @@
       "products": [],
       "sourceUrl": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/",
       "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-303422b99649f7c1",
+      "dataDate": "2026-10-12",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "NETSEC 融资超 1000 万美元，以扩展其面向网络安全和 IT 的 AI 原生解决方案",
+      "originalTitle": "NETSEC RAISES MORE THAN $10M TO GROW ITS AI-NATIVE SOLUTION FOR CYBERSECURITY AND IT",
+      "subject": "Netsec",
+      "action": "funding",
+      "object": "more than $10 million in equity funding",
+      "metrics": [
+        "$10 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-27b79c20fe655299"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-27b79c20fe655299"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-27b79c20fe655299"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-27b79c20fe655299"
+      ],
+      "entityNames": [
+        "Netsec"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://cdn-website.partechpartners.com/news/netsec-raises-more-than-10m-to-grow-its-ai-native-solution-for-cybersecurity-and-it",
+      "publisher": "cdn-website.partechpartners.com"
     },
     {
       "id": "EV-52e472f000148362",
@@ -25030,6 +25114,28 @@
       "lastSeen": "2026-10-12"
     },
     {
+      "id": "EN-27b79c20fe655299",
+      "name": "Netsec",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-215ea259173fa6b4",
+        "EV-303422b99649f7c1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-security_operations"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-06",
+      "lastSeen": "2026-10-12"
+    },
+    {
       "id": "EN-e66d5fd225ed6b0a",
       "name": "Cybersecurity startup Hadrian",
       "entityType": "organization_candidate",
@@ -25679,7 +25785,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-9ddcfd9f61c25158"
+        "EV-9ddcfd9f61c25158",
+        "EV-3c8c01c48903ce41"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -25687,8 +25794,8 @@
         "TX-use_case-security_operations"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-06-27",
-      "lastSeen": "2026-06-27"
+      "firstSeen": "2026-06-08",
+      "lastSeen": "2026-10-12"
     },
     {
       "id": "EN-e69f64149edae6b1",
@@ -26220,6 +26327,7 @@
         "EV-fe7445d005172a39",
         "EV-2470b13ea55496d0",
         "EV-c8871997cafcf846",
+        "EV-35c16315e0a2e5a8",
         "EV-e331c286836a80f3",
         "EV-56c0d1d5b0c07971",
         "EV-ff0f58a42d41f75b",
@@ -28534,6 +28642,7 @@
         "TX-industry-logistics_supply_chain",
         "TX-industry-financial_services",
         "TX-use_case-security_operations",
+        "TX-target_user-student",
         "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
         "TX-ai_market_application-models",
@@ -28556,7 +28665,6 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-education",
-        "TX-target_user-student",
         "TX-use_case-education_learning",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",

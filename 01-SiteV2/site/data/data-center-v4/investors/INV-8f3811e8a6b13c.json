@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -73,6 +73,7 @@
     "first_disclosed_at": "2024-09",
     "latest_disclosed_at": "2026-10-09",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 4,
       "lead": 1,
       "participant": 6
@@ -105,6 +106,11 @@
         "entity_id": "EN-c04bd5ebd10ab696",
         "canonical_entity_id": "EN-c04bd5ebd10ab696",
         "name": "Mistral AI"
+      },
+      {
+        "entity_id": "EN-7dd72aa62b8b3cc2",
+        "canonical_entity_id": "",
+        "name": "OpenEvidence"
       },
       {
         "entity_id": "EN-1809f7cd0c75acf3",
@@ -414,6 +420,46 @@
         ]
       },
       {
+        "activity_id": "IA-c0049eca4018ad55",
+        "funding_insight_id": "FI-345973599099693f",
+        "event_ids": [
+          "EV-ad688f97d7f4fa55"
+        ],
+        "company_entity_id": "EN-7dd72aa62b8b3cc2",
+        "company_canonical_entity_id": "",
+        "company_name": "OpenEvidence",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "2.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-01-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-439c5c28066fa1c0",
+            "source_url": "https://bydrug.pharmcube.com/news/detail/cb482eeed6e1b8e0348aa51009df0536",
+            "source_title": "估值120亿美元！AI医疗公司完成2.5亿美元D轮融资 - ByDrug",
+            "source_content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
+            "quote": "本轮融资由Thrive Capital和DST Global共同领投",
+            "quote_hash": "42ecf700a4e286ce023fa7225b6ccb9d9afebf7d6dfd7ddb39cf19f6bac84a2b"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-7273b93d3de9e188",
         "funding_insight_id": "FI-2134347a27ff584f",
         "event_ids": [
@@ -610,6 +656,14 @@
         "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
       },
       {
+        "source_id": "FISRC-439c5c28066fa1c0",
+        "source_url": "https://bydrug.pharmcube.com/news/detail/cb482eeed6e1b8e0348aa51009df0536",
+        "source_title": "估值120亿美元！AI医疗公司完成2.5亿美元D轮融资 - ByDrug",
+        "source_content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
+        "quote": "本轮融资由Thrive Capital和DST Global共同领投",
+        "quote_hash": "42ecf700a4e286ce023fa7225b6ccb9d9afebf7d6dfd7ddb39cf19f6bac84a2b"
+      },
+      {
         "source_id": "FISRC-062aa9e732f0aba2",
         "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
         "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
@@ -758,7 +812,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[7].role": {
+        "activities[8].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",

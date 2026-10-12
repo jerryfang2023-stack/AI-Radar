@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,20 +64,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 34,
+    "current_round_count": 35,
     "historical_or_ambiguous_count": 9,
-    "portfolio_company_count": 33,
+    "portfolio_company_count": 34,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2016-03",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-07",
     "role_counts": {
       "historical_or_ambiguous": 9,
       "lead": 4,
-      "participant": 30
+      "participant": 31
     },
     "round_codes": [
       "multi_round",
@@ -85,6 +85,7 @@
       "pre_seed",
       "seed",
       "series_a",
+      "series_b",
       "series_b_extension",
       "series_c",
       "series_d",
@@ -177,6 +178,11 @@
         "name": "Nexus Enterprises, Inc"
       },
       {
+        "entity_id": "EN-3eee4f30151db45a",
+        "canonical_entity_id": "EN-3eee4f30151db45a",
+        "name": "Nous Research"
+      },
+      {
         "entity_id": "EN-1c5483264189feef",
         "canonical_entity_id": "",
         "name": "Onyx"
@@ -258,6 +264,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-bcd06d056d971cb3",
+        "funding_insight_id": "FI-4328c217f1203f6f",
+        "event_ids": [
+          "EV-e5d1e49e37f2e291"
+        ],
+        "company_entity_id": "EN-3eee4f30151db45a",
+        "company_canonical_entity_id": "EN-3eee4f30151db45a",
+        "company_name": "Nous Research",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$90 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 90000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9000 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-718f95dbe2208337",
+            "source_url": "https://nousresearch.com/a-note-on-our-fundraise",
+            "source_title": "A Note on Our Fundraise",
+            "source_content_hash": "9a7816e0d0a7df40",
+            "quote": "We brought together some of the strongest investors in technology – NVIDIA, Microsoft’s M12, Samsung, Robot Ventures, Union Square Ventures, Y Combinator, and Menlo Ventures among others",
+            "quote_hash": "e598666c713d3dbb3685a0b385b18b9a615d68374c9fe49844f9873a5b814571"
+          }
+        ]
+      },
       {
         "activity_id": "IA-69e4ad2118b13341",
         "funding_insight_id": "FI-0f835557946f3ea1",
@@ -1933,6 +1979,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-718f95dbe2208337",
+        "source_url": "https://nousresearch.com/a-note-on-our-fundraise",
+        "source_title": "A Note on Our Fundraise",
+        "source_content_hash": "9a7816e0d0a7df40",
+        "quote": "We brought together some of the strongest investors in technology – NVIDIA, Microsoft’s M12, Samsung, Robot Ventures, Union Square Ventures, Y Combinator, and Menlo Ventures among others",
+        "quote_hash": "e598666c713d3dbb3685a0b385b18b9a615d68374c9fe49844f9873a5b814571"
+      },
+      {
         "source_id": "FISRC-c8bf3839b23b0657",
         "source_url": "https://www.useflai.com/blog/flai-series-a-base10",
         "source_title": "Flai raises $27M led by Base10 Partners to automate car dealership operations",
@@ -2338,16 +2392,16 @@
           "source_id": "yc_press"
         },
         {
+          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-718f95dbe2208337"
+        },
+        {
           "description": "融资来源记录：Flai · A轮 · 2026-10-06 · 本轮参投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c8bf3839b23b0657"
         },
         {
           "description": "融资来源记录：Halluminate · A轮 · 2026-10-01 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4799c620c14fef7b"
-        },
-        {
-          "description": "融资来源记录：Revnu · 其他融资 · 2026-10-01 · 本轮参投 · €2.6 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e10bc08f4f6b317f"
         }
       ],
       "contacts": [
@@ -2391,6 +2445,14 @@
           "quote_hash": "4ed4875e0047c94acb0efae75ec6e5f47b2b446f507a0d444211c08edd926a82"
         },
         {
+          "source_id": "FISRC-718f95dbe2208337",
+          "source_url": "https://nousresearch.com/a-note-on-our-fundraise",
+          "source_title": "A Note on Our Fundraise",
+          "source_content_hash": "9a7816e0d0a7df40",
+          "quote": "We brought together some of the strongest investors in technology – NVIDIA, Microsoft’s M12, Samsung, Robot Ventures, Union Square Ventures, Y Combinator, and Menlo Ventures among others",
+          "quote_hash": "e598666c713d3dbb3685a0b385b18b9a615d68374c9fe49844f9873a5b814571"
+        },
+        {
           "source_id": "FISRC-c8bf3839b23b0657",
           "source_url": "https://www.useflai.com/blog/flai-series-a-base10",
           "source_title": "Flai raises $27M led by Base10 Partners to automate car dealership operations",
@@ -2405,14 +2467,6 @@
           "source_content_hash": "d6cd6d2cc6fbb3d215d709d3b622c3a54794cdc369d5b3d82a9e948c3a1a3ed4",
           "quote": "we've raised $30 million in Series A funding led by Oak HC/FT with participation from YCombinator, Orange Collective, FT Partners, and Heavybit.",
           "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
-        },
-        {
-          "source_id": "FISRC-e10bc08f4f6b317f",
-          "source_url": "https://www.eu-startups.com/2026/10/ai-sales-startup-revnu-raises-e2-6-million-to-build-team-and-accelerate-international-growth/",
-          "source_title": "AI 销售初创公司 Revnu 融资 260 万欧元，用于组建团队并加速国际增长",
-          "source_content_hash": "465cc9845980a16b4be508a8659be0aae636b0c765d785dc2e067c08cfec8283",
-          "quote": "The company also received backing from Y Combinator.",
-          "quote_hash": "dfda2b2dd8390e4cfa9a340af8fed83a2e794fcc674c969afbb1c1cba789c341"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2423,7 +2477,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[37].role": {
+        "activities[38].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

@@ -89,5 +89,16 @@ export function buildFundingSubjects(input, review = {}) {
     financing_tags:c.financing_tags,market_category:c.market_category,market_subcategory:c.market_subcategory,product_form:c.product_form,
     products:(c.products||[]).map(p=>({name:p.name})),
   }));
-  return {cards:subjects,event_cards:compactEvents,company_aliases:companyAliases,aliases:Object.fromEntries(subjects.flatMap(c=>c.source_card_ids.filter(id=>id!==c.funding_insight_id).map(id=>[id,c.funding_insight_id]))),duplicate_rounds_removed:duplicateIds.size};
+  const aliases=Object.fromEntries(subjects.flatMap(c=>c.source_card_ids.filter(id=>id!==c.funding_insight_id).map(id=>[id,c.funding_insight_id])));
+  // Reviewed date/round corrections change derived card IDs. Bind old links
+  // to a retained source event, rather than guessing a company-name match.
+  for(const row of review.card_aliases || []){
+    if(!row.old_id || !row.event_id || !row.reason || !row.source_url || !row.reviewed_by)throw new Error('invalid_reviewed_card_alias');
+    const targets=subjects.filter(card=>card.source_event_ids.includes(row.event_id));
+    if(targets.length!==1)throw new Error('reviewed_card_alias_event_missing_or_ambiguous');
+    const target=targets[0].funding_insight_id;
+    if(subjects.some(card=>card.funding_insight_id===row.old_id && card.funding_insight_id!==target))throw new Error('reviewed_card_alias_conflict');
+    if(row.old_id!==target)aliases[row.old_id]=target;
+  }
+  return {cards:subjects,event_cards:compactEvents,company_aliases:companyAliases,aliases,duplicate_rounds_removed:duplicateIds.size};
 }

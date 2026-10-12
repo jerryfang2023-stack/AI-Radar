@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-02",
-    "latest_disclosed_at": "2026-06-02",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
+      "other",
       "pre_seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-27b79c20fe655299",
+        "canonical_entity_id": "",
+        "name": "Barbican SAS, operating as Netsec"
+      },
       {
         "entity_id": "FICO-np-company",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1f596cda7be048de",
+        "funding_insight_id": "FI-2e950814f9b8e7c4",
+        "event_ids": [
+          "EV-303422b99649f7c1"
+        ],
+        "company_entity_id": "EN-27b79c20fe655299",
+        "company_canonical_entity_id": "",
+        "company_name": "Barbican SAS, operating as Netsec",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "股权融资",
+        "amount_original": "more than $10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": 10000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1000 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-193d32011c8f49a3",
+            "source_url": "https://cdn-website.partechpartners.com/news/netsec-raises-more-than-10m-to-grow-its-ai-native-solution-for-cybersecurity-and-it",
+            "source_title": "NETSEC 融资超 1000 万美元，以扩展其面向网络安全和 IT 的 AI 原生解决方案",
+            "source_content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+            "quote": "today announced it has raised more than $10 million in equity funding led by Partech with participation from Primo Capital and View Different (Diego Piacentini)",
+            "quote_hash": "5e5a5540f0a1d3b8073f3ca9cc53305bab8b2a85ee7b53cf8a2ca79688840b71"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a9299f917bff0dbe",
         "funding_insight_id": "FI-02b8e604597cebeb",
@@ -127,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-193d32011c8f49a3",
+        "source_url": "https://cdn-website.partechpartners.com/news/netsec-raises-more-than-10m-to-grow-its-ai-native-solution-for-cybersecurity-and-it",
+        "source_title": "NETSEC 融资超 1000 万美元，以扩展其面向网络安全和 IT 的 AI 原生解决方案",
+        "source_content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+        "quote": "today announced it has raised more than $10 million in equity funding led by Partech with participation from Primo Capital and View Different (Diego Piacentini)",
+        "quote_hash": "5e5a5540f0a1d3b8073f3ca9cc53305bab8b2a85ee7b53cf8a2ca79688840b71"
+      },
       {
         "source_id": "FISRC-5c311f61df097447",
         "source_url": "https://tech.eu/2026/06/02/backed-by-mistral-ai-founders-np-company-secures-eur6m-pre-seed-to-advance-ai-for-engineering/",
@@ -175,6 +229,10 @@
           "source_id": "partech_np_co_2026"
         },
         {
+          "description": "融资来源记录：Barbican SAS, operating as Netsec · 其他融资 · 2026-10-06 · 本轮领投 · more than $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-193d32011c8f49a3"
+        },
+        {
           "description": "融资来源记录：NP Company · 预种子轮 · 2026-06-02 · 本轮领投 · €6M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5c311f61df097447"
         }
@@ -220,6 +278,14 @@
           "source_content_hash": "dd82ed805afc7603227df9dd50648a12d6f530458856d956cf641c0349004ccf",
           "quote": "Partech is a global tech investment firm headquartered in Paris, with offices in Berlin, Dakar, Dubai, Nairobi, and San Francisco. We are a team made up of industry and technology experts who are independent thinkers. Partech brings together capital, operational experience, and strategic support to back entrepreneurs from seed to growth stage. Founded 40 years ago in San Francisco, Partech today manages close to €3 billion in assets for a current portfolio of 220 companies in 40 countries across four continents. For more on Partech",
           "quote_hash": "cbb8b3d54104b44129def1f508577e120c5b3ae39f808189c2775155d9cc2492"
+        },
+        {
+          "source_id": "FISRC-193d32011c8f49a3",
+          "source_url": "https://cdn-website.partechpartners.com/news/netsec-raises-more-than-10m-to-grow-its-ai-native-solution-for-cybersecurity-and-it",
+          "source_title": "NETSEC 融资超 1000 万美元，以扩展其面向网络安全和 IT 的 AI 原生解决方案",
+          "source_content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+          "quote": "today announced it has raised more than $10 million in equity funding led by Partech with participation from Primo Capital and View Different (Diego Piacentini)",
+          "quote_hash": "5e5a5540f0a1d3b8073f3ca9cc53305bab8b2a85ee7b53cf8a2ca79688840b71"
         },
         {
           "source_id": "FISRC-5c311f61df097447",

@@ -566,6 +566,7 @@ export function promptFor(event, company, sources, directions) {
     "任务：基于一个已验证融资事件，完成公司、产品、投资方、客户、关键数据、竞争比较和投资逻辑的结构化二次研究。投资方必须明确列出；无法从来源确认投资方时，返回空数组，系统会阻止发布。",
     "每个事实对象必须附evidence_refs。quote必须逐字复制SOURCE正文中的连续短片段，不得改写。缺失信息用空字符串或空数组，不得猜测。",
     "除公司、产品、人名、金额、轮次等专有名词外，summary、description、use_case、比较字段、sector、capital_judgment、risks等面向读者的内容必须使用简体中文。",
+    "analysis.sector 是必填的非空中文主营业务描述，例如企业智能体平台或医疗证据检索；不得省略，也不得只填 AI agents、Open Source 等英文标签。分类必须由已取得的公司或产品原文支持，缺证据时明确报告缺口。",
     "financing.amount写round所覆盖轮次的金额；若round同时覆盖多轮，则写多轮合计。total_raised写截至本次披露的累计融资额，不得混用。",
     "financing.investors只列本轮明确披露且有具体名称的投资方，role必须用中文标注“本轮领投”“本轮联合领投”或“本轮参投”。历史轮次、既有但未确认本轮继续参与、轮次语境不明的投资方不得混入investors，改放other_round_investors并保留原始轮次语境。若来源确认发生融资但只写基金、产业资本等泛称而未披露具体名称，返回空investors并将investor_disclosure_status设为not_disclosed；不得把泛称伪造成机构名称。若列出具体投资方则设为disclosed。",
     "当规范事件来源使用“投资者包括”“参与投资的机构包括”等措辞列出具体名称时，这些名称属于本轮投资方，必须逐一写入financing.investors并引用该完整原句；不得误放到other_round_investors或遗漏。机构名或个人姓名必须是明确专名；“某集团创始人”等只有职务、未披露自然人姓名的描述不得作为investors.name或投资关系实体，只保留在原文证据引文中，不得推测姓名。",

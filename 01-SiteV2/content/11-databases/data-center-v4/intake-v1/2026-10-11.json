@@ -1,7 +1,7 @@
 {
   "schema_version": "SOURCE-INTAKE-V1.1",
   "data_date": "2026-10-11",
-  "generated_at": "2026-10-11T04:09:25.541Z",
+  "generated_at": "2026-10-12T17:31:47.253Z",
   "collection_batches": [
     {
       "raw_ids": [
@@ -403,6 +403,22 @@
       ],
       "eligible_raw_ids": [
         "RAW-938729a2a5295d35"
+      ]
+    },
+    {
+      "raw_ids": [
+        "RAW-6d52e63c3783261c"
+      ],
+      "eligible_raw_ids": [
+        "RAW-6d52e63c3783261c"
+      ]
+    },
+    {
+      "raw_ids": [
+        "RAW-c3ba725e79f7b758"
+      ],
+      "eligible_raw_ids": [
+        "RAW-c3ba725e79f7b758"
       ]
     }
   ],
@@ -2134,6 +2150,30 @@
         "evidence://a8e31a281ead3b8a58a3c495224605ef31c2be6cc95ef659f7e7f35424659583"
       ],
       "content_hash": "a8e31a281ead3b8a58a3c495224605ef31c2be6cc95ef659f7e7f35424659583"
+    },
+    {
+      "source_artifact_id": "SA-ab2efae5a8f43c2a",
+      "source_url": "https://www.siena.cx/blog/siena-raises-17m-series-a",
+      "canonical_url": "https://www.siena.cx/blog/siena-raises-17m-series-a",
+      "publisher": "www.siena.cx",
+      "capture_method": "original_http",
+      "captured_at": "2026-10-12T17:31:45.901Z",
+      "snapshot_refs": [
+        "evidence://c64971f2bb92f5c9add14f6e3f23c1027c96e0b909419f7e6efc0ab4b3a91dfd"
+      ],
+      "content_hash": "c64971f2bb92f5c9add14f6e3f23c1027c96e0b909419f7e6efc0ab4b3a91dfd"
+    },
+    {
+      "source_artifact_id": "SA-dcae1bbca48e0f36",
+      "source_url": "https://techfundingnews.com/vocca-raises-20m-series-a-led-by-norrsken-vc-to-answer-medical-practices-phones-with-ai/",
+      "canonical_url": "https://techfundingnews.com/vocca-raises-20m-series-a-led-by-norrsken-vc-to-answer-medical-practices-phones-with-ai/",
+      "publisher": "techfundingnews.com",
+      "capture_method": "exact_url_existing_private_research",
+      "captured_at": "2026-10-12T17:31:45.901Z",
+      "snapshot_refs": [
+        "evidence://f7ec4503d8b960427b8ca2901ee4c8e3eba0201930deb4a0a4ca4da2e2769641"
+      ],
+      "content_hash": "f7ec4503d8b960427b8ca2901ee4c8e3eba0201930deb4a0a4ca4da2e2769641"
     }
   ],
   "raw_documents": [
@@ -8040,11 +8080,93 @@
         "key_excerpts": [],
         "eligible_for_v4_extraction": true
       }
+    },
+    {
+      "schema_version": "RAW-V4.0",
+      "raw_id": "RAW-6d52e63c3783261c",
+      "source_artifact_id": "SA-ab2efae5a8f43c2a",
+      "source_url": "https://www.siena.cx/blog/siena-raises-17m-series-a",
+      "canonical_url": "https://www.siena.cx/blog/siena-raises-17m-series-a",
+      "publisher": "www.siena.cx",
+      "author": "",
+      "published_at": "2026-10-06",
+      "captured_at": "2026-10-12T17:31:45.901Z",
+      "language": "en",
+      "document_type": "article",
+      "title_original": "Siena Raises $17M Series A to Build the Agent of Record",
+      "title_zh": "",
+      "body_ref": "evidence://c64971f2bb92f5c9add14f6e3f23c1027c96e0b909419f7e6efc0ab4b3a91dfd",
+      "content_hash": "c64971f2bb92f5c9add14f6e3f23c1027c96e0b909419f7e6efc0ab4b3a91dfd",
+      "capture_method": "original_http",
+      "extraction_status": "accepted",
+      "market_scope": {
+        "source_registry_id": "",
+        "source_region": "",
+        "market_region": "",
+        "china_market_match": false,
+        "china_market_match_basis": ""
+      },
+      "intake_diagnostics": {
+        "acquisition_channel": "financing",
+        "search_path": "",
+        "evidence_object_type": "original_full_text",
+        "evidence_object_usable": true,
+        "evidence_strength": "",
+        "raw_qc_decision": "accepted",
+        "raw_qc_downstream_use": "source_date_review",
+        "extraction_quality": "",
+        "readability_score": 0,
+        "has_full_text": true,
+        "origin_fetch_status": "",
+        "key_excerpts": [],
+        "eligible_for_v4_extraction": true
+      }
+    },
+    {
+      "schema_version": "RAW-V4.0",
+      "raw_id": "RAW-c3ba725e79f7b758",
+      "source_artifact_id": "SA-dcae1bbca48e0f36",
+      "source_url": "https://techfundingnews.com/vocca-raises-20m-series-a-led-by-norrsken-vc-to-answer-medical-practices-phones-with-ai/",
+      "canonical_url": "https://techfundingnews.com/vocca-raises-20m-series-a-led-by-norrsken-vc-to-answer-medical-practices-phones-with-ai/",
+      "publisher": "techfundingnews.com",
+      "author": "",
+      "published_at": "2026-10-06",
+      "captured_at": "2026-10-12T17:31:45.901Z",
+      "language": "en",
+      "document_type": "article",
+      "title_original": "Vocca raises $20M Series A led by Norrsken VC to answer medical practices&#8217; phones with AI",
+      "title_zh": "",
+      "body_ref": "evidence://f7ec4503d8b960427b8ca2901ee4c8e3eba0201930deb4a0a4ca4da2e2769641",
+      "content_hash": "f7ec4503d8b960427b8ca2901ee4c8e3eba0201930deb4a0a4ca4da2e2769641",
+      "capture_method": "exact_url_existing_private_research",
+      "extraction_status": "accepted",
+      "market_scope": {
+        "source_registry_id": "",
+        "source_region": "",
+        "market_region": "",
+        "china_market_match": false,
+        "china_market_match_basis": ""
+      },
+      "intake_diagnostics": {
+        "acquisition_channel": "financing",
+        "search_path": "",
+        "evidence_object_type": "original_full_text",
+        "evidence_object_usable": true,
+        "evidence_strength": "",
+        "raw_qc_decision": "accepted",
+        "raw_qc_downstream_use": "source_date_review",
+        "extraction_quality": "",
+        "readability_score": 0,
+        "has_full_text": true,
+        "origin_fetch_status": "",
+        "key_excerpts": [],
+        "eligible_for_v4_extraction": true
+      }
     }
   ],
   "counts": {
-    "source_artifacts": 144,
-    "raw_documents": 144,
-    "eligible_documents": 144
+    "source_artifacts": 146,
+    "raw_documents": 146,
+    "eligible_documents": 146
   }
 }

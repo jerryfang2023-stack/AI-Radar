@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-06-23",
     "latest_disclosed_at": "2026-06-23",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "95e9e6c90dca9ce4709247d5b84ca596f0bc265c26c8bf9e155bc4813c3c1b9b"
           }
         ]
+      },
+      {
+        "activity_id": "IA-3232d8794ac80406",
+        "funding_insight_id": "FI-2e950814f9b8e7c4",
+        "event_ids": [
+          "EV-303422b99649f7c1"
+        ],
+        "company_entity_id": "EN-27b79c20fe655299",
+        "company_canonical_entity_id": "",
+        "company_name": "Barbican SAS, operating as Netsec",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-193d32011c8f49a3",
+            "source_url": "https://cdn-website.partechpartners.com/news/netsec-raises-more-than-10m-to-grow-its-ai-native-solution-for-cybersecurity-and-it",
+            "source_title": "NETSEC 融资超 1000 万美元，以扩展其面向网络安全和 IT 的 AI 原生解决方案",
+            "source_content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+            "quote": "Netsec's investor base also includes Riccardo Zacconi, Kima Ventures, Ithaca Investments, Vento, Vito Lomele, Everywhere Ventures, and a group of angel investors from the cybersecurity and technology sectors.",
+            "quote_hash": "4b43f463904dccba1ec39e46a024f2936fb8cdeb10871b808a3c206ea0036c3b"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "7be1badf9ed5c01086fc6545fdef59c2a8fb2cedbb848fb9ec3e53cece53e559",
         "quote": "The round was led by Luminar Ventures, with participation from Alliance VC and King co-founders Sebastian Knutsson and Riccardo Zacconi",
         "quote_hash": "95e9e6c90dca9ce4709247d5b84ca596f0bc265c26c8bf9e155bc4813c3c1b9b"
+      },
+      {
+        "source_id": "FISRC-193d32011c8f49a3",
+        "source_url": "https://cdn-website.partechpartners.com/news/netsec-raises-more-than-10m-to-grow-its-ai-native-solution-for-cybersecurity-and-it",
+        "source_title": "NETSEC 融资超 1000 万美元，以扩展其面向网络安全和 IT 的 AI 原生解决方案",
+        "source_content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+        "quote": "Netsec's investor base also includes Riccardo Zacconi, Kima Ventures, Ithaca Investments, Vento, Vito Lomele, Everywhere Ventures, and a group of angel investors from the cybersecurity and technology sectors.",
+        "quote_hash": "4b43f463904dccba1ec39e46a024f2936fb8cdeb10871b808a3c206ea0036c3b"
       }
     ],
     "public_profile": {
@@ -157,6 +198,10 @@
         {
           "description": "融资来源记录：Fika Jobs · 预种子轮 · 2026-06-23 · 本轮参投 · $4 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5228f73ab8dc8458"
+        },
+        {
+          "description": "融资来源记录：Barbican SAS, operating as Netsec · 历史轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-193d32011c8f49a3"
         }
       ],
       "profile_type": "person",
@@ -192,6 +237,14 @@
           "source_content_hash": "7be1badf9ed5c01086fc6545fdef59c2a8fb2cedbb848fb9ec3e53cece53e559",
           "quote": "The round was led by Luminar Ventures, with participation from Alliance VC and King co-founders Sebastian Knutsson and Riccardo Zacconi",
           "quote_hash": "95e9e6c90dca9ce4709247d5b84ca596f0bc265c26c8bf9e155bc4813c3c1b9b"
+        },
+        {
+          "source_id": "FISRC-193d32011c8f49a3",
+          "source_url": "https://cdn-website.partechpartners.com/news/netsec-raises-more-than-10m-to-grow-its-ai-native-solution-for-cybersecurity-and-it",
+          "source_title": "NETSEC 融资超 1000 万美元，以扩展其面向网络安全和 IT 的 AI 原生解决方案",
+          "source_content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+          "quote": "Netsec's investor base also includes Riccardo Zacconi, Kima Ventures, Ithaca Investments, Vento, Vito Lomele, Everywhere Ventures, and a group of angel investors from the cybersecurity and technology sectors.",
+          "quote_hash": "4b43f463904dccba1ec39e46a024f2936fb8cdeb10871b808a3c206ea0036c3b"
         }
       ],
       "last_verified_at": "2026-10-04"

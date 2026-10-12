@@ -608,6 +608,12 @@
             "quote": "The funding includes $9.5M in equity from Khosla Ventures, Abstract, Construct Capital, Starship Ventures, Ravelin and Endurance28, plus $2M in venture debt from First Citizens Bank (formerly Silicon Valley Bank).",
             "source_content_hash": "c54998faac65f7cb",
             "quote_hash": "86d2506c213a20149a94aca8c4dbfe5ffb496b7f8da0b4827daf7a056956dce3"
+          },
+          {
+            "source_id": "FISRC-26b1524179e885db",
+            "quote": "The recent financing includes $9.5 million in equity funding from Khosla Ventures, Abstract, Construct Capital and Starship Ventures, along with $2 million in venture debt financing from First Citizens Innovation Banking (formerly known as Silicon Valley Bank).",
+            "source_content_hash": "1b5b123ed2947dc2",
+            "quote_hash": "219442c0ebf5cbc21eb6250a117b8474cf5dc5b44d70f5a8f727b71d7f91645f"
           }
         ],
         "round_code": "other",
@@ -632,7 +638,9 @@
           "status": "exact",
           "display_zh": "1150 万美元"
         },
-        "risk_markers": [],
+        "risk_markers": [
+          "mixed_equity_and_venture_debt"
+        ],
         "disclosures": [
           {
             "event_id": "EV-3b26cd0829579d78",
@@ -820,7 +828,7 @@
             ]
           }
         ],
-        "capital_judgment": "资本押注的核心变量是 Torch 能否将已验证的数百台 TerraNode 部署规模扩展至数千台，并证明其多传感器融合与边缘 AI 在户外基础设施监测中具备可复制的商业价值。当前融资所依赖的已验证信号包括：300+ TerraNodes 已在七个州部署、80+ 站点受保护、在加州、新墨西哥州和俄勒冈州早期检测到真实火灾，以及 Dominion Energy 等客户的实际使用。证据边界在于：来源未披露本轮估值、收入或合同金额，且公司从野火检测向更广泛户外资产智能的扩展仍处于早期阶段。",
+        "capital_judgment": "融资口径：1150万美元总额包括950万美元股权与200万美元venture debt，不能解释为1150万美元纯股权。 资本押注的核心变量是 Torch 能否将已验证的数百台 TerraNode 部署规模扩展至数千台，并证明其多传感器融合与边缘 AI 在户外基础设施监测中具备可复制的商业价值。当前融资所依赖的已验证信号包括：300+ TerraNodes 已在七个州部署、80+ 站点受保护、在加州、新墨西哥州和俄勒冈州早期检测到真实火灾，以及 Dominion Energy 等客户的实际使用。证据边界在于：来源未披露本轮估值、收入或合同金额，且公司从野火检测向更广泛户外资产智能的扩展仍处于早期阶段。",
         "validated_signals": [
           "300+ TerraNodes 已在七个州部署",
           "80+ 站点受保护",
@@ -849,7 +857,7 @@
         ],
         "sector": "能源技术",
         "investment_thesis": {
-          "statement": "资本押注的核心变量是 Torch 能否将已验证的数百台 TerraNode 部署规模扩展至数千台，并证明其多传感器融合与边缘 AI 在户外基础设施监测中具备可复制的商业价值。当前融资所依赖的已验证信号包括：300+ TerraNodes 已在七个州部署、80+ 站点受保护、在加州、新墨西哥州和俄勒冈州早期检测到真实火灾，以及 Dominion Energy 等客户的实际使用。证据边界在于：来源未披露本轮估值、收入或合同金额，且公司从野火检测向更广泛户外资产智能的扩展仍处于早期阶段。",
+          "statement": "融资口径：1150万美元总额包括950万美元股权与200万美元venture debt，不能解释为1150万美元纯股权。 资本押注的核心变量是 Torch 能否将已验证的数百台 TerraNode 部署规模扩展至数千台，并证明其多传感器融合与边缘 AI 在户外基础设施监测中具备可复制的商业价值。当前融资所依赖的已验证信号包括：300+ TerraNodes 已在七个州部署、80+ 站点受保护、在加州、新墨西哥州和俄勒冈州早期检测到真实火灾，以及 Dominion Energy 等客户的实际使用。证据边界在于：来源未披露本轮估值、收入或合同金额，且公司从野火检测向更广泛户外资产智能的扩展仍处于早期阶段。",
           "evidence_signals": [
             "300+ TerraNodes 已在七个州部署",
             "80+ 站点受保护",
@@ -997,6 +1005,21 @@
           "content_hash": "c54998faac65f7cb",
           "source_artifact_id": null,
           "raw_id": null
+        },
+        {
+          "source_id": "FISRC-26b1524179e885db",
+          "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-10-6-torch-systems-raises-115-million-to-bring-ai-to-the-physical-infrastructure-the-world-depends-on?Language=english",
+          "title": "Torch Systems Raises $11.5 Million to Bring AI to the Physical Infrastructure the World Depends On",
+          "publisher": "markets.financialcontent.com",
+          "source_class": "first_party_or_original_transaction_source",
+          "capture_method": "web_open_excerpt",
+          "captured_at": "2026-10-12T18:15:38.009Z",
+          "content_hash": "1b5b123ed2947dc2",
+          "publication_date_evidence": {
+            "date": "2026-10-06",
+            "method": "responsible_original_visible_byline",
+            "value": "2026-10-06"
+          }
         }
       ],
       "model_provenance": {
@@ -1016,7 +1039,7 @@
       "customer_research": {
         "status": "verified_customers_found",
         "verified_customer_count": 1,
-        "searched_source_count": 3
+        "searched_source_count": 4
       },
       "entity_link_coverage": {
         "products": {
@@ -3103,7 +3126,7 @@
         "entity_id": "EN-5e8d0bae72bca66f",
         "name": "Hadrian",
         "full_name": "Hadrian",
-        "website": "",
+        "website": "https://hadrian.io/",
         "summary": "Hadrian 是一家 agentic AI 攻击性安全平台公司，利用 AI 帮助企业在外部攻击面上识别并优先处理可利用的安全风险。",
         "headquarters": "Amsterdam",
         "founders": [
@@ -3177,7 +3200,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "轮次未披露",
+        "round": "B轮",
         "amount": "$40 million",
         "total_raised": "$65 million",
         "announced_at": "2026-10-06",
@@ -3281,10 +3304,16 @@
             "quote": "The round brings Hadrian's total funding to $65 million",
             "source_content_hash": "b2e3661f1eccbfd607d560b04e1aa0b3a01cba50f13d34fb455c89a57beb370b",
             "quote_hash": "85256054c69917951bd409aa876a36e15266c4b17f72cc36a5a308a752b886e5"
+          },
+          {
+            "source_id": "FISRC-7828d3f8d138ab2a",
+            "quote": "Hadrian raises $40M Series B to scale agentic offensive security",
+            "source_content_hash": "69cd9f54cc5cccdd",
+            "quote_hash": "f39a0c44bbccca62fe5e3b1195e6ef2ec39fa22bb783f9a134c7f020a2203d95"
           }
         ],
-        "round_code": "undisclosed",
-        "round_original": "未披露",
+        "round_code": "series_b",
+        "round_original": "Series B",
         "amount_original": "$40 million",
         "amount_normalized": {
           "currency": "USD",
@@ -3309,7 +3338,7 @@
         "disclosures": [
           {
             "event_id": "EV-6744aefb738a9a0c",
-            "round_original": "未披露",
+            "round_original": "Series B",
             "amount": "$40 million",
             "announced_at": "2026-10-06",
             "evidence_refs": [
@@ -3334,7 +3363,7 @@
             ]
           }
         ],
-        "disclosure_status": "partially_disclosed"
+        "disclosure_status": "disclosed"
       },
       "products": [
         {
@@ -3549,7 +3578,7 @@
             ]
           }
         ],
-        "capital_judgment": "资本押注的核心变量是 Hadrian 能否在 AI 驱动的攻击面持续扩大的背景下，以 AI 原生平台替代传统人工渗透测试和漏洞扫描，成为攻击性安全领域的全球领导者。当前融资所依赖的已验证信号包括：平台已服务 Fortune 500 和全球企业客户，客户实现 10 倍关键风险可见性提升和 80% 解决时间缩短，团队规模超过 80 人，并获得 GigaOm、Gartner、Frost & Sullivan 等分析机构认可。证据边界在于：本轮融资未披露估值，客户效果数据来自投资方博客，尚未经独立第三方验证；平台在真实对抗环境中的持续有效性仍需观察。",
+        "capital_judgment": "公司标题原文明确B轮，统一原币4000万美元，欧洲换算报道通过同轮账本合并。 资本押注的核心变量是 Hadrian 能否在 AI 驱动的攻击面持续扩大的背景下，以 AI 原生平台替代传统人工渗透测试和漏洞扫描，成为攻击性安全领域的全球领导者。当前融资所依赖的已验证信号包括：平台已服务 Fortune 500 和全球企业客户，客户实现 10 倍关键风险可见性提升和 80% 解决时间缩短，团队规模超过 80 人，并获得 GigaOm、Gartner、Frost & Sullivan 等分析机构认可。证据边界在于：本轮融资未披露估值，客户效果数据来自投资方博客，尚未经独立第三方验证；平台在真实对抗环境中的持续有效性仍需观察。",
         "validated_signals": [
           "Hadrian 已服务 Fortune 500 和全球企业客户，包括 McKesson、NBCUniversal、Francisco Partners、TotalEnergies、Amadeus、Leroy Merlin 和 Damen Shipyards。",
           "客户实现 10 倍关键暴露可见性提升和 80% 解决时间缩短。",
@@ -3578,7 +3607,7 @@
         ],
         "sector": "网络安全",
         "investment_thesis": {
-          "statement": "资本押注的核心变量是 Hadrian 能否在 AI 驱动的攻击面持续扩大的背景下，以 AI 原生平台替代传统人工渗透测试和漏洞扫描，成为攻击性安全领域的全球领导者。当前融资所依赖的已验证信号包括：平台已服务 Fortune 500 和全球企业客户，客户实现 10 倍关键风险可见性提升和 80% 解决时间缩短，团队规模超过 80 人，并获得 GigaOm、Gartner、Frost & Sullivan 等分析机构认可。证据边界在于：本轮融资未披露估值，客户效果数据来自投资方博客，尚未经独立第三方验证；平台在真实对抗环境中的持续有效性仍需观察。",
+          "statement": "公司标题原文明确B轮，统一原币4000万美元，欧洲换算报道通过同轮账本合并。 资本押注的核心变量是 Hadrian 能否在 AI 驱动的攻击面持续扩大的背景下，以 AI 原生平台替代传统人工渗透测试和漏洞扫描，成为攻击性安全领域的全球领导者。当前融资所依赖的已验证信号包括：平台已服务 Fortune 500 和全球企业客户，客户实现 10 倍关键风险可见性提升和 80% 解决时间缩短，团队规模超过 80 人，并获得 GigaOm、Gartner、Frost & Sullivan 等分析机构认可。证据边界在于：本轮融资未披露估值，客户效果数据来自投资方博客，尚未经独立第三方验证；平台在真实对抗环境中的持续有效性仍需观察。",
           "evidence_signals": [
             "Hadrian 已服务 Fortune 500 和全球企业客户，包括 McKesson、NBCUniversal、Francisco Partners、TotalEnergies、Amadeus、Leroy Merlin 和 Damen Shipyards。",
             "客户实现 10 倍关键暴露可见性提升和 80% 解决时间缩短。",
@@ -3744,6 +3773,21 @@
           "content_hash": "bb331b87f3e471f8",
           "source_artifact_id": null,
           "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7828d3f8d138ab2a",
+          "source_url": "https://hadrian.io/blog/hadrian-40m-raised-to-tackle-the-ai-hacking-cyber-security-crisis",
+          "title": "Hadrian raises $40M Series B to scale agentic offensive security",
+          "publisher": "hadrian.io",
+          "source_class": "first_party_or_original_transaction_source",
+          "capture_method": "web_open_excerpt",
+          "captured_at": "2026-10-12T18:15:38.009Z",
+          "content_hash": "69cd9f54cc5cccdd",
+          "publication_date_evidence": {
+            "date": "2026-10-06",
+            "method": "responsible_original_visible_byline",
+            "value": "2026-10-06"
+          }
         }
       ],
       "model_provenance": {
@@ -3763,7 +3807,7 @@
       "customer_research": {
         "status": "verified_customers_found",
         "verified_customer_count": 5,
-        "searched_source_count": 2
+        "searched_source_count": 3
       },
       "entity_link_coverage": {
         "products": {
@@ -6367,7 +6411,7 @@
         "entity_id": "EN-f8abb4aab4da7486",
         "name": "Hadrian",
         "full_name": "Hadrian",
-        "website": "",
+        "website": "https://hadrian.io/",
         "summary": "AI安全公司，通过结合持续暴露面管理（Continuous Exposure Management）和AI代理渗透测试，为企业模拟攻击者视角，帮助发现外部攻击面、验证真实风险并优化修复优先级。",
         "headquarters": "",
         "founders": [],
@@ -6394,7 +6438,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "轮次未披露",
+        "round": "B轮",
         "amount": "4000万美元",
         "total_raised": "6500万美元",
         "announced_at": "2026-10-06",
@@ -6498,10 +6542,16 @@
             "quote": "本轮融资后，Hadrian累计融资金额达到6500万美元",
             "source_content_hash": "94ca184347774f86b1911c50c309b2ddf231a76552c5b3d5912ebe64537cecca",
             "quote_hash": "5bb189a5b8219247fe2590593f3a1d31c507e970aef8e0d4e2c9418daf607d63"
+          },
+          {
+            "source_id": "FISRC-7828d3f8d138ab2a",
+            "quote": "Hadrian raises $40M Series B to scale agentic offensive security",
+            "source_content_hash": "69cd9f54cc5cccdd",
+            "quote_hash": "f39a0c44bbccca62fe5e3b1195e6ef2ec39fa22bb783f9a134c7f020a2203d95"
           }
         ],
-        "round_code": "undisclosed",
-        "round_original": "未披露",
+        "round_code": "series_b",
+        "round_original": "Series B",
         "amount_original": "4000万美元",
         "amount_normalized": {
           "currency": "USD",
@@ -6526,7 +6576,7 @@
         "disclosures": [
           {
             "event_id": "EV-ee1dd0077269532b",
-            "round_original": "未披露",
+            "round_original": "Series B",
             "amount": "4000万美元",
             "announced_at": "2026-10-06",
             "evidence_refs": [
@@ -6551,7 +6601,7 @@
             ]
           }
         ],
-        "disclosure_status": "partially_disclosed"
+        "disclosure_status": "disclosed"
       },
       "products": [
         {
@@ -6629,7 +6679,7 @@
       ],
       "analysis": {
         "investment_rationale": [],
-        "capital_judgment": "本轮4000万美元由Forgepoint Capital International和SmartFin联合领投，HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投，累计融资达6500万美元。资本押注的核心变量是Hadrian将持续暴露面管理与AI代理渗透测试结合、以攻击者视角为企业验证真实风险并优化修复优先级的产品路径能否在欧美市场落地。已验证信号仅为融资完成、投资方名单与累计金额；来源未披露客户数量、收入、续费率或产品性能指标，因此无法判断商业化验证程度。",
+        "capital_judgment": "公司标题原文明确B轮，统一原币4000万美元，欧洲换算报道通过同轮账本合并。 本轮4000万美元由Forgepoint Capital International和SmartFin联合领投，HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投，累计融资达6500万美元。资本押注的核心变量是Hadrian将持续暴露面管理与AI代理渗透测试结合、以攻击者视角为企业验证真实风险并优化修复优先级的产品路径能否在欧美市场落地。已验证信号仅为融资完成、投资方名单与累计金额；来源未披露客户数量、收入、续费率或产品性能指标，因此无法判断商业化验证程度。",
         "validated_signals": [
           "完成4000万美元融资，由Forgepoint Capital International和SmartFin联合领投",
           "HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投",
@@ -6656,7 +6706,7 @@
         ],
         "sector": "网络安全",
         "investment_thesis": {
-          "statement": "本轮4000万美元由Forgepoint Capital International和SmartFin联合领投，HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投，累计融资达6500万美元。资本押注的核心变量是Hadrian将持续暴露面管理与AI代理渗透测试结合、以攻击者视角为企业验证真实风险并优化修复优先级的产品路径能否在欧美市场落地。已验证信号仅为融资完成、投资方名单与累计金额；来源未披露客户数量、收入、续费率或产品性能指标，因此无法判断商业化验证程度。",
+          "statement": "公司标题原文明确B轮，统一原币4000万美元，欧洲换算报道通过同轮账本合并。 本轮4000万美元由Forgepoint Capital International和SmartFin联合领投，HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投，累计融资达6500万美元。资本押注的核心变量是Hadrian将持续暴露面管理与AI代理渗透测试结合、以攻击者视角为企业验证真实风险并优化修复优先级的产品路径能否在欧美市场落地。已验证信号仅为融资完成、投资方名单与累计金额；来源未披露客户数量、收入、续费率或产品性能指标，因此无法判断商业化验证程度。",
           "evidence_signals": [
             "完成4000万美元融资，由Forgepoint Capital International和SmartFin联合领投",
             "HV Capital、Motive Partners、Picus Capital和Oetker Ventures等现有投资者参投",
@@ -6757,6 +6807,21 @@
           "content_hash": "1f85d53e8921afa3",
           "source_artifact_id": null,
           "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7828d3f8d138ab2a",
+          "source_url": "https://hadrian.io/blog/hadrian-40m-raised-to-tackle-the-ai-hacking-cyber-security-crisis",
+          "title": "Hadrian raises $40M Series B to scale agentic offensive security",
+          "publisher": "hadrian.io",
+          "source_class": "first_party_or_original_transaction_source",
+          "capture_method": "web_open_excerpt",
+          "captured_at": "2026-10-12T18:15:38.009Z",
+          "content_hash": "69cd9f54cc5cccdd",
+          "publication_date_evidence": {
+            "date": "2026-10-06",
+            "method": "responsible_original_visible_byline",
+            "value": "2026-10-06"
+          }
         }
       ],
       "model_provenance": {
@@ -6776,7 +6841,7 @@
       "customer_research": {
         "status": "no_verified_customer_found",
         "verified_customer_count": 0,
-        "searched_source_count": 2
+        "searched_source_count": 3
       },
       "entity_link_coverage": {
         "products": {

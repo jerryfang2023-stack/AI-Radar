@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-06-03",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 2
     },
     "round_codes": [
@@ -171,6 +172,38 @@
             "quote_hash": "529ed6f9abbc46d0495d1135ede1b896800602db1a5b603354f1d807b3414a99"
           }
         ]
+      },
+      {
+        "activity_id": "IA-9d6d3a88f47c4e88",
+        "funding_insight_id": "FI-345973599099693f",
+        "event_ids": [
+          "EV-ad688f97d7f4fa55"
+        ],
+        "company_entity_id": "EN-7dd72aa62b8b3cc2",
+        "company_canonical_entity_id": "",
+        "company_name": "OpenEvidence",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-439c5c28066fa1c0",
+            "source_url": "https://bydrug.pharmcube.com/news/detail/cb482eeed6e1b8e0348aa51009df0536",
+            "source_title": "估值120亿美元！AI医疗公司完成2.5亿美元D轮融资 - ByDrug",
+            "source_content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
+            "quote": "之前的投资者包括红杉资本、谷歌风险投资公司、英伟达、凯鹏华盈、黑石、Henry Kravis、Coatue、Thrive Capital、Conviction、ICONIQ、Greycroft、Breyer Capital、BOND、Craft Ventures、Goanna、Meritech、Alkeon和Mayo Clinic等。",
+            "quote_hash": "cb9f28050b0a66987d6938cae09d456814d4d27a81fd367ed9eac889ccdc81fa"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -189,6 +222,14 @@
         "source_content_hash": "71ccb4efdd74fe107258aa56eb8b66ea15188fdc7ea5782755dfe0a1d37d42ad",
         "quote": "IVP、Forerunner、Union Square Ventures、Alkeon 和 Quiet 参投",
         "quote_hash": "529ed6f9abbc46d0495d1135ede1b896800602db1a5b603354f1d807b3414a99"
+      },
+      {
+        "source_id": "FISRC-439c5c28066fa1c0",
+        "source_url": "https://bydrug.pharmcube.com/news/detail/cb482eeed6e1b8e0348aa51009df0536",
+        "source_title": "估值120亿美元！AI医疗公司完成2.5亿美元D轮融资 - ByDrug",
+        "source_content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
+        "quote": "之前的投资者包括红杉资本、谷歌风险投资公司、英伟达、凯鹏华盈、黑石、Henry Kravis、Coatue、Thrive Capital、Conviction、ICONIQ、Greycroft、Breyer Capital、BOND、Craft Ventures、Goanna、Meritech、Alkeon和Mayo Clinic等。",
+        "quote_hash": "cb9f28050b0a66987d6938cae09d456814d4d27a81fd367ed9eac889ccdc81fa"
       }
     ],
     "public_profile": {
@@ -214,6 +255,10 @@
         {
           "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8380bb7b0195ed3e"
+        },
+        {
+          "description": "融资来源记录：OpenEvidence · 历史轮次未披露 · 历史投资者。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-439c5c28066fa1c0"
         }
       ],
       "contacts": [],
@@ -245,6 +290,14 @@
           "source_content_hash": "71ccb4efdd74fe107258aa56eb8b66ea15188fdc7ea5782755dfe0a1d37d42ad",
           "quote": "IVP、Forerunner、Union Square Ventures、Alkeon 和 Quiet 参投",
           "quote_hash": "529ed6f9abbc46d0495d1135ede1b896800602db1a5b603354f1d807b3414a99"
+        },
+        {
+          "source_id": "FISRC-439c5c28066fa1c0",
+          "source_url": "https://bydrug.pharmcube.com/news/detail/cb482eeed6e1b8e0348aa51009df0536",
+          "source_title": "估值120亿美元！AI医疗公司完成2.5亿美元D轮融资 - ByDrug",
+          "source_content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
+          "quote": "之前的投资者包括红杉资本、谷歌风险投资公司、英伟达、凯鹏华盈、黑石、Henry Kravis、Coatue、Thrive Capital、Conviction、ICONIQ、Greycroft、Breyer Capital、BOND、Craft Ventures、Goanna、Meritech、Alkeon和Mayo Clinic等。",
+          "quote_hash": "cb9f28050b0a66987d6938cae09d456814d4d27a81fd367ed9eac889ccdc81fa"
         }
       ],
       "last_verified_at": "2026-10-02"

@@ -33,7 +33,7 @@ export const FUNDING_MARKET_SUBCATEGORY_IDS = new Set([
   "", "data", "development_deployment", "hardware_computing", "observability_evaluation",
   "customer_support", "cyber_physical_security", "hr", "marketing", "productivity_enterprise_workflows",
   "sales", "software_development_coding", "financial_services", "healthcare_life_sciences",
-  "industrials", "legal", "consumer_retail",
+  "industrials", "legal", "consumer_retail", "education",
 ]);
 export const FUNDING_MARKET_APPLICATION_IDS = new Set([
   "", "synthetic_data", "data_preparation_curation", "vector_databases", "models",
@@ -60,7 +60,7 @@ export const FUNDING_TARGET_USER_IDS = new Set([
 export const FUNDING_MARKET_SUBCATEGORY_PARENTS = new Map([
   ...["data", "development_deployment", "hardware_computing", "observability_evaluation"].map((id) => [id, "infrastructure_compute"]),
   ...["customer_support", "cyber_physical_security", "hr", "marketing", "productivity_enterprise_workflows", "sales", "software_development_coding"].map((id) => [id, "enterprise_applications"]),
-  ...["financial_services", "healthcare_life_sciences", "industrials", "legal", "consumer_retail"].map((id) => [id, "industry_applications"]),
+  ...["financial_services", "healthcare_life_sciences", "industrials", "legal", "consumer_retail", "education"].map((id) => [id, "industry_applications"]),
 ]);
 export const FUNDING_MARKET_APPLICATION_PARENTS = new Map([
   ...["synthetic_data", "data_preparation_curation", "vector_databases"].map((id) => [id, "data"]),
@@ -501,6 +501,9 @@ export function normalizeFundingRound(value = "") {
 export function canonicalFundingEventRound(event = {}, claims = []) {
   const explicit = currentRoundBesideHistoricalDisclosure(event, claims)?.round;
   if (explicit) return explicit;
+  if (/\b(?:credit facility|term loan|venture debt)\b/iu.test(clean(event.object))) {
+    return { code: "debt", label: FUNDING_ROUND_LABELS.debt, original: clean(event.object) };
+  }
   const refs = new Set(event.claim_refs || []);
   const primary = claims.find((claim) => refs.has(claim.claim_id) && claim.claim_type === "funding" && claim.verification_status === "accepted");
   const objectRound = normalizeFundingRound(event.object);

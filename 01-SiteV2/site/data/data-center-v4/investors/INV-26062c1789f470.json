@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,16 +72,22 @@
     "first_disclosed_at": "2026-10-07",
     "latest_disclosed_at": "2026-10-07",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
-      "early_stage"
+      "early_stage",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-3fd6ed252b4e3196",
         "canonical_entity_id": "",
         "name": "byteXL"
+      },
+      {
+        "entity_id": "EN-9c304d6d50bdb5a8",
+        "canonical_entity_id": "",
+        "name": "ByteXL"
       }
     ],
     "activities": [
@@ -124,6 +130,46 @@
             "quote_hash": "b61ad0f3186f24ecbf13bbc08939a0be15e55e575e8c40a3822932ae90731765"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d2e4236eb9570107",
+        "funding_insight_id": "FI-c28deda00ed70281",
+        "event_ids": [
+          "EV-d3ecfba50801f33e"
+        ],
+        "company_entity_id": "EN-9c304d6d50bdb5a8",
+        "company_canonical_entity_id": "",
+        "company_name": "ByteXL",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$9 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 9000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "900 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ef9a11d4971e966",
+            "source_url": "https://www.thesaasnews.com/news/bytexl-raises-9m-series-b/",
+            "source_title": "ByteXL 完成 900 万美元 B 轮融资",
+            "source_content_hash": "ddfc442f74f43b98c3e28a9a3acb3cc56598d7a4f54e89a24caba18f3bdf4013",
+            "quote": "This round was led by Elevar Equity.",
+            "quote_hash": "356461018b41f96956b078870424d908691a202db7c961b843879ee27c5eaa5e"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +180,14 @@
         "source_content_hash": "4d4a3e5e8fe418a0f3c6cd84a9c3eefe5c74c46190d69e681bb4f648dc800b73",
         "quote": "Edtech company byteXL has raised $9 million in its latest funding round, led by Elevar Equity, an impact investor, with participation from existing investors Kalaari Capital, an early-stage VC, and The Michael & Susan Dell Foundation, a philanthropic foundation.",
         "quote_hash": "b61ad0f3186f24ecbf13bbc08939a0be15e55e575e8c40a3822932ae90731765"
+      },
+      {
+        "source_id": "FISRC-2ef9a11d4971e966",
+        "source_url": "https://www.thesaasnews.com/news/bytexl-raises-9m-series-b/",
+        "source_title": "ByteXL 完成 900 万美元 B 轮融资",
+        "source_content_hash": "ddfc442f74f43b98c3e28a9a3acb3cc56598d7a4f54e89a24caba18f3bdf4013",
+        "quote": "This round was led by Elevar Equity.",
+        "quote_hash": "356461018b41f96956b078870424d908691a202db7c961b843879ee27c5eaa5e"
       }
     ],
     "public_profile": {
@@ -148,6 +202,10 @@
         {
           "description": "融资来源记录：byteXL · 早期融资 · 2026-10-07 · 本轮领投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-576325ed4af0de98"
+        },
+        {
+          "description": "融资来源记录：ByteXL · B轮 · 2026-10-07 · 本轮领投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ef9a11d4971e966"
         }
       ],
       "contacts": [],
@@ -159,6 +217,14 @@
           "source_content_hash": "4d4a3e5e8fe418a0f3c6cd84a9c3eefe5c74c46190d69e681bb4f648dc800b73",
           "quote": "Edtech company byteXL has raised $9 million in its latest funding round, led by Elevar Equity, an impact investor, with participation from existing investors Kalaari Capital, an early-stage VC, and The Michael & Susan Dell Foundation, a philanthropic foundation.",
           "quote_hash": "b61ad0f3186f24ecbf13bbc08939a0be15e55e575e8c40a3822932ae90731765"
+        },
+        {
+          "source_id": "FISRC-2ef9a11d4971e966",
+          "source_url": "https://www.thesaasnews.com/news/bytexl-raises-9m-series-b/",
+          "source_title": "ByteXL 完成 900 万美元 B 轮融资",
+          "source_content_hash": "ddfc442f74f43b98c3e28a9a3acb3cc56598d7a4f54e89a24caba18f3bdf4013",
+          "quote": "This round was led by Elevar Equity.",
+          "quote_hash": "356461018b41f96956b078870424d908691a202db7c961b843879ee27c5eaa5e"
         }
       ],
       "last_verified_at": "2026-10-06"

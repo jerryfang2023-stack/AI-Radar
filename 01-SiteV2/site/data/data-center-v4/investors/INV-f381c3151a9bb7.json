@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 23,
-    "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 20,
+    "current_round_count": 24,
+    "historical_or_ambiguous_count": 5,
+    "portfolio_company_count": 21,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,9 +73,9 @@
     "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 4,
+      "historical_or_ambiguous": 5,
       "lead": 11,
-      "participant": 10
+      "participant": 11
     },
     "round_codes": [
       "multi_round",
@@ -143,6 +143,11 @@
         "entity_id": "EN-dc8a5a5bf80909de",
         "canonical_entity_id": "",
         "name": "General Intuition"
+      },
+      {
+        "entity_id": "EN-871e6f4bf723cb1b",
+        "canonical_entity_id": "",
+        "name": "Geordie AI"
       },
       {
         "entity_id": "EN-d965aa403593d08c",
@@ -635,6 +640,46 @@
         ]
       },
       {
+        "activity_id": "IA-389295e53018c70b",
+        "funding_insight_id": "FI-12425a5b3c0c94e9",
+        "event_ids": [
+          "EV-3c8c01c48903ce41"
+        ],
+        "company_entity_id": "EN-871e6f4bf723cb1b",
+        "company_canonical_entity_id": "",
+        "company_name": "Geordie AI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-06-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-090026c711c9d719",
+            "source_url": "https://www.geordie.ai/resources/geordie-ai-raises-30m-series-a-as-enterprises-race-to-govern-autonomous-ai-agents/",
+            "source_title": "Geordie AI Raises $30M Series A as Enterprises Race to Govern Autonomous AI Agents",
+            "source_content_hash": "e016242533ff1829",
+            "quote": "with support from our existing investors, General Catalyst & Ten Eleven",
+            "quote_hash": "cf07a4c0dd9ae0fb5a5826b22c0d6f498b153455042d2cf8f39d7cb19b629106"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-fc8680d54bf1e931",
         "funding_insight_id": "FI-274044e5d2a8eb25",
         "event_ids": [
@@ -1083,6 +1128,38 @@
         ]
       },
       {
+        "activity_id": "IA-9c37a1ff5ed8b420",
+        "funding_insight_id": "FI-12425a5b3c0c94e9",
+        "event_ids": [
+          "EV-3c8c01c48903ce41"
+        ],
+        "company_entity_id": "EN-871e6f4bf723cb1b",
+        "company_canonical_entity_id": "",
+        "company_name": "Geordie AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2025年9月种子轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0c52ccc548d44488",
+            "source_url": "https://www.bankinfosecurity.com/startup-geordie-ai-lands-30m-to-secure-enterprise-ai-agents-a-31919",
+            "source_title": "初创公司Geordie AI获3000万美元，用于保障企业AI智能体安全",
+            "source_content_hash": "9d150dcb3336c0fb922d39dfb47eef07dcf09aa0063bdf2883d020f780691d81",
+            "quote": "having previously received $6.5 million in a September 2025 seed funding round co-led by Ten Eleven Ventures and General Catalyst",
+            "quote_hash": "1804d9323e8be4207a56af18ebe96d7735deb942ca794acf2cae7b471c6f18e9"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-395b0a4ef85df7a3",
         "funding_insight_id": "FI-6601d010adc14dd0",
         "event_ids": [
@@ -1349,6 +1426,14 @@
         "quote_hash": "f1e7ec5228f3eb91be682ce6d6229008b01e75fc596d42a30083fee56f24f08f"
       },
       {
+        "source_id": "FISRC-090026c711c9d719",
+        "source_url": "https://www.geordie.ai/resources/geordie-ai-raises-30m-series-a-as-enterprises-race-to-govern-autonomous-ai-agents/",
+        "source_title": "Geordie AI Raises $30M Series A as Enterprises Race to Govern Autonomous AI Agents",
+        "source_content_hash": "e016242533ff1829",
+        "quote": "with support from our existing investors, General Catalyst & Ten Eleven",
+        "quote_hash": "cf07a4c0dd9ae0fb5a5826b22c0d6f498b153455042d2cf8f39d7cb19b629106"
+      },
+      {
         "source_id": "FISRC-e9a8d571db654fd4",
         "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
         "source_title": "Factorial 完成 1.5 亿美元 D 轮融资，估值达 25 亿美元，成为欧洲最具价值的 AI 智能体规模化企业之一",
@@ -1443,6 +1528,14 @@
         "source_content_hash": "a710989bdebc7feb",
         "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
         "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+      },
+      {
+        "source_id": "FISRC-0c52ccc548d44488",
+        "source_url": "https://www.bankinfosecurity.com/startup-geordie-ai-lands-30m-to-secure-enterprise-ai-agents-a-31919",
+        "source_title": "初创公司Geordie AI获3000万美元，用于保障企业AI智能体安全",
+        "source_content_hash": "9d150dcb3336c0fb922d39dfb47eef07dcf09aa0063bdf2883d020f780691d81",
+        "quote": "having previously received $6.5 million in a September 2025 seed funding round co-led by Ten Eleven Ventures and General Catalyst",
+        "quote_hash": "1804d9323e8be4207a56af18ebe96d7735deb942ca794acf2cae7b471c6f18e9"
       },
       {
         "source_id": "FISRC-52917ea3c077fbf0",
@@ -1691,7 +1784,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[23].role": {
+        "activities[25].role": {
           "text": "Pre-Seed 轮领投",
           "source_hash": "b679d7fa92689a42e5e3729978cbf6f81b503b4ff4fa9193c6a9694195d14b03",
           "provider": "deepseek",

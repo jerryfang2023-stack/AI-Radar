@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2022-12-14",
-    "latest_disclosed_at": "2022-12-14",
+    "latest_disclosed_at": "2026-10-06",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-74cce68f42702267",
+        "canonical_entity_id": "",
+        "name": "Chiplytics"
+      },
       {
         "entity_id": "EN-adda212f0afa4781",
         "canonical_entity_id": "",
@@ -86,6 +93,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e4fc3649100c0677",
+        "funding_insight_id": "FI-cf5dcf0a2618f2f8",
+        "event_ids": [
+          "EV-bd0c10245db77e9f"
+        ],
+        "company_entity_id": "EN-74cce68f42702267",
+        "company_canonical_entity_id": "",
+        "company_name": "Chiplytics",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "融资轮次未披露",
+        "amount_original": "$4.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "450 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-a902e8d38c910e4a",
+            "source_url": "https://markets.financialcontent.com/streetinsider/article/bizwire-2026-10-6-chiplytics-secures-45m-to-bring-resiliency-to-us-electronics-supply-chain",
+            "source_title": "Chiplytics Secures $4.5M to Bring Resiliency to US Electronics Supply Chain",
+            "source_content_hash": "2154531276876fad",
+            "quote": "a $4.5 million funding round led by Scout Ventures and Waypoint Ventures",
+            "quote_hash": "a618e4585d6a3845fdad52abc409874e35071fdcccf552101cf865554f74b986"
+          },
+          {
+            "source_id": "FISRC-a1d43425f85f1a23",
+            "source_url": "https://dealroom.co/news/160415-chiplytics-raises-4-5m-to-screen-chips-for-counterfeits-before-assembly/",
+            "source_title": "Chiplytics raises $4.5M to screen chips for counterfeits before assembly",
+            "source_content_hash": "380616185907e848",
+            "quote": "The round was co-led by Scout VenturesDealroom has a profile for this one. Try Dealroom → and Waypoint VenturesDealroom has a profile for this one. Try Dealroom →",
+            "quote_hash": "c0330a0e7a29c86e5566a8795594b2aaf71c6ffebb8a00d84d39eb4b13d11f53"
+          }
+        ]
+      },
       {
         "activity_id": "IA-bb6b7c4dc6561049",
         "funding_insight_id": "FI-dd9835a52918a1be",
@@ -161,6 +216,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a902e8d38c910e4a",
+        "source_url": "https://markets.financialcontent.com/streetinsider/article/bizwire-2026-10-6-chiplytics-secures-45m-to-bring-resiliency-to-us-electronics-supply-chain",
+        "source_title": "Chiplytics Secures $4.5M to Bring Resiliency to US Electronics Supply Chain",
+        "source_content_hash": "2154531276876fad",
+        "quote": "a $4.5 million funding round led by Scout Ventures and Waypoint Ventures",
+        "quote_hash": "a618e4585d6a3845fdad52abc409874e35071fdcccf552101cf865554f74b986"
+      },
+      {
+        "source_id": "FISRC-a1d43425f85f1a23",
+        "source_url": "https://dealroom.co/news/160415-chiplytics-raises-4-5m-to-screen-chips-for-counterfeits-before-assembly/",
+        "source_title": "Chiplytics raises $4.5M to screen chips for counterfeits before assembly",
+        "source_content_hash": "380616185907e848",
+        "quote": "The round was co-led by Scout VenturesDealroom has a profile for this one. Try Dealroom → and Waypoint VenturesDealroom has a profile for this one. Try Dealroom →",
+        "quote_hash": "c0330a0e7a29c86e5566a8795594b2aaf71c6ffebb8a00d84d39eb4b13d11f53"
+      },
+      {
         "source_id": "FISRC-cb0549fad590a0ab",
         "source_url": "https://www.techtimes.com/articles/284896/20221214/encharge-ai-raises-21-7m-produce-hardware-edge-computing.htm",
         "source_title": "EnCharge AI Raises $21.7 Million to Produce AI Hardware for Edge Computing",
@@ -227,6 +298,10 @@
         {
           "description": "融资来源记录：EnCharge AI · 多轮融资 · 2022-12-14 · 本轮参投 · $21.7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cb0549fad590a0ab"
+        },
+        {
+          "description": "融资来源记录：Chiplytics · 轮次未披露 · 2026-10-06 · 本轮领投 · $4.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a902e8d38c910e4a"
         }
       ],
       "contacts": [
@@ -262,6 +337,22 @@
           "source_content_hash": "1c602dcfdd3a1f85b20483c55c8bdffb4c3292e32a25527b2dda7be82cb3ffb1",
           "quote": "Scout VC is a venture capital firm that invests in frontier technologies built by founders from the military, its intelligence community, and national research labs.",
           "quote_hash": "fe720de78540786d2286306bc733f984d58e003b1e13727db1a458b46d755f47"
+        },
+        {
+          "source_id": "FISRC-a902e8d38c910e4a",
+          "source_url": "https://markets.financialcontent.com/streetinsider/article/bizwire-2026-10-6-chiplytics-secures-45m-to-bring-resiliency-to-us-electronics-supply-chain",
+          "source_title": "Chiplytics Secures $4.5M to Bring Resiliency to US Electronics Supply Chain",
+          "source_content_hash": "2154531276876fad",
+          "quote": "a $4.5 million funding round led by Scout Ventures and Waypoint Ventures",
+          "quote_hash": "a618e4585d6a3845fdad52abc409874e35071fdcccf552101cf865554f74b986"
+        },
+        {
+          "source_id": "FISRC-a1d43425f85f1a23",
+          "source_url": "https://dealroom.co/news/160415-chiplytics-raises-4-5m-to-screen-chips-for-counterfeits-before-assembly/",
+          "source_title": "Chiplytics raises $4.5M to screen chips for counterfeits before assembly",
+          "source_content_hash": "380616185907e848",
+          "quote": "The round was co-led by Scout VenturesDealroom has a profile for this one. Try Dealroom → and Waypoint VenturesDealroom has a profile for this one. Try Dealroom →",
+          "quote_hash": "c0330a0e7a29c86e5566a8795594b2aaf71c6ffebb8a00d84d39eb4b13d11f53"
         }
       ],
       "last_verified_at": "2026-09-26"
