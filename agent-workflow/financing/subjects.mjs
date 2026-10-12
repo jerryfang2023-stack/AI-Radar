@@ -95,6 +95,8 @@ export function buildFundingSubjects(input, review = {}) {
   for(const row of review.card_aliases || []){
     if(!row.old_id || !row.event_id || !row.reason || !row.source_url || !row.reviewed_by)throw new Error('invalid_reviewed_card_alias');
     const targets=subjects.filter(card=>card.source_event_ids.includes(row.event_id));
+    // A filtered catalog has no target for aliases outside its input scope.
+    if(!targets.length)continue;
     if(targets.length!==1)throw new Error('reviewed_card_alias_event_missing_or_ambiguous');
     const target=targets[0].funding_insight_id;
     if(subjects.some(card=>card.funding_insight_id===row.old_id && card.funding_insight_id!==target))throw new Error('reviewed_card_alias_conflict');
