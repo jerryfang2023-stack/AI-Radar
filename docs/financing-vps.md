@@ -1,14 +1,24 @@
-# 每日融资监测 VPS 备用版本
+# 每日融资监测云端主运行
 
-2026-10-03：VPS 版本先部署、验收，本机版本保留并继续运行。此文补充 [统一监测规则](unified-daily-monitoring.md)，不恢复任何已暂停的社群、Builders 或旧周度生产任务。
+2026-10-12：GitHub Actions 负责采集、核验和生产；VPS 负责每日派发、受限 Hermes 审核、CI 接续、合并及发布。本机版本保留为可恢复备用，正常日运行不依赖电脑开机。此文补充 [统一监测规则](unified-daily-monitoring.md)，不恢复任何已暂停的社群、Builders 或旧周度生产任务。
 
 ## 当前调度
 
-- 本机 Codex 自动化 `ai` 保持 `ACTIVE`，08:10 北京时间负责正式监测与发布。原 runner、SSH 入口和本机知识库不迁移、不删除。
+- 本机 Codex 自动化 `ai` 保留配置并暂停，作为人工恢复入口。原 runner、SSH 入口和本机知识库保留；VPS 的 Vault 更新不会自动写入关机电脑。
 - VPS `guanlan-financing.timer` 每十分钟检查一次，`Persistent=true`；每日 08:10 前不启动新的日期，已有未完成日期可恢复。
-- 初始 `/etc/guanlan-financing/runtime.env` 为 `GUANLAN_VPS_MODE=standby`。此模式仅调用融资派发器的 `--dry-run=true`，保存观察回执，不派发、不调用模型、不合并、不发布。
+- `/etc/guanlan-financing/runtime.env` 配置 `GUANLAN_VPS_MODE=active`。`standby` 可用于回退，仅调用融资派发器的 `--dry-run=true`，保存观察回执。
 - `active` 模式复用同一 GitHub 融资生产工作流及恢复检查点，Hermes 审核开放的融资 PR，检查精确提交与 CI 后合并，再等 Pages 和 VPS 发布。模型 API ID 固定 `deepseek-flash`（DeepSeek V4.1 Flash）。每日期最多三次不同提交/基线的模型审核；失败或中断记录为未知，不自动重复付费。
-- `funding-health-dispatch.yml` 每日北京时间08:10提供同一批次的幂等主派发，10:30保留幂等兜底。备用模式避免重复采集、审核与发布。
+- `funding-health-dispatch.yml` 每日 08:10 云端主触发与 10:30 幂等兜底保留；VPS 同样在 08:10 后派发，两端先查同日接受结果、开放 PR 和在途运行，复用同一工作流。每天只做一次正式发现；十分钟轮询是恢复检查，不是额外复核时段。
+
+## 故障接续
+
+AIHOT 全公开分页和精选同步对网络/正文超时、429、5xx 作最多四次有间隔重试，每次使用新超时信号；4xx、JSON/契约错误立即保留失败。成功页面不因后页瞬时失败重新请求，游标仍在页面验证完成后保存。持续故障保持采集未完成，不填零结果。
+
+VPS 主运行优先当天，旧日期的发布等待不能阻塞新一天采集。每天最多三次生产派发，先记录尝试；优先 `resume_run_id` 复用有哈希的接受检查点。结果未知不盲目重派，已接受原文不能因下游失败重采。控制仓 `package-lock.json` 变化才安装依赖；失败诊断写到当天私有 `last-error.json`，状态摘要不输出凭据或原文。
+
+`awaiting_approval` 先核对同仓、同日融资分支和数据路径，再由 Hermes 阅读原文审核。仅 approved 才核对固定 production-code-checks 工作流 ID、精确 head 及 pull_request 事件，发起对应运行的审批。审批后仍必须等待当前运行及 Linux/Windows 精确提交检查成功，不能将审批当作检查通过。代码/工作流 PR、fork、事实 hold 或未知审核均不自动批准或合并。
+
+发布器可能在并发 main 前进后采用更晚的接受提交。控制器校验回执日期、网站/Mini 日期及完整 SHA，并验证该 SHA 是原接受版本的后代且仍在 main；缓存实际发布 SHA 的目录 hash。远端前进不替代实际发布验收。
 
 ## VPS 边界和目录
 
@@ -62,11 +72,11 @@ sudo -u guanlan-financing sudo /usr/local/libexec/guanlan-financing-publish YYYY
 
 `publication-stages.json` 保留已通过的阶段和首个失败阶段。`published.json` 绑定接受 SHA、网站日期和 Mini 日期；Pages 成功或单次 CLI 成功不代替完整发布回执。无新增和全待核验按真实状态收尾，不能人为更新融资日期。
 
-`awaiting_approval`回执保留待批CI运行及精确head；控制器正常记录等待，不能把它当采集失败或重新派发发现。旧日期仍待审批或检查时保留现场，避免阻止新一天08:10任务；审批完成后显式以`--date=原日期`恢复同一PR的审核与发布。真实检查失败继续记录ci_failed，缺证据继续hold，不自动批准或跳过CI。
+`awaiting_approval` 回执保留待批 CI 运行及精确 head，不能把它当采集失败或重新派发发现。旧日期仍待审批或检查时保留现场，避免阻止新一天 08:10 任务；需要时以 `--date=原日期` 恢复同一 PR。真实检查失败继续记录 ci_failed，缺证据继续 hold，不跳过 CI。
 
 ## 切换顺序与回退
 
-当前不暂停本机 `ai`。完成真实日批次采集、审核及发布验收后，再将 VPS 配置改为 `active`，并将本机自动化保留为可恢复的备用任务，避免两个正式控制器并行。不得因为模型连通或 dry-run 通过就声称无人值守验收完成。
+本机 `ai` 保留为暂停的备用任务，VPS 作为正式主控。切换验收包括定时器、依赖、当天派发预览、已接受日期的真实 VPS 发布和线上回读；没有把这些检查描述为未来新日期的全流程结果。含新融资的次日 Hermes 自动审核与 CI 审批仍须按实际运行回执判断，hold 或持续失败保留现场待责任人处理。
 
 VPS 有问题时，停用 `guanlan-financing.timer` 或恢复 `GUANLAN_VPS_MODE=standby`；本机 runner 与 `ai` 均已保留。若本机未来被暂停，通过 Codex automation 工具恢复原配置；不要新建重复的每日任务。恢复从未发布的接受日期和失败阶段开始。
 

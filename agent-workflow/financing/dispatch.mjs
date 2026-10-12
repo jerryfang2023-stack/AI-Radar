@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 import { spawnSync } from 'node:child_process';
 import { queryPlan } from './discovery.mjs';
-import { acceptedPublicationStatus, pendingReviewStatus } from './dispatch-state.mjs';
+import { acceptedPublicationStatus, pendingReviewStatus,activeProductionRun } from './dispatch-state.mjs';
 import { parseArgs } from './args.mjs';
 import { productionCIState } from '../tools/wait-for-production-code-checks.mjs';
 const args = parseArgs();
 const date = args.get('date') || new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 queryPlan(date);
+const preflightRun=args.get('preflight-run');
+if(preflightRun && (!/^[1-9]\d*$/u.test(preflightRun) || args.get('dry-run')!=='true'))throw new Error('invalid_production_preflight');
 const repo = process.env.GH_REPO || 'jerryfang2023-stack/AI-Radar';
 function gh(args, optional = false) {
   const result = spawnSync('gh',args,{ encoding:'utf8',windowsHide:true,timeout:60000,maxBuffer:8*1024*1024 });
@@ -30,11 +32,12 @@ if (acceptedStatus && !review) {
   } else {
     const runs = JSON.parse(gh(['run','list','--repo',repo,'--workflow','funding-daily-pr.yml','--branch','main','--limit','60','--json','databaseId,displayTitle,status,conclusion']));
     const matching = runs.filter(run => run.displayTitle === `Financing ${date}`);
-    const active = matching.find(run => run.status !== 'completed');
+    const active = activeProductionRun(matching,preflightRun);
     if (active) console.log(JSON.stringify({date,status:'running',run_id:active.databaseId}));
     else {
       let resume;
       for(const run of matching) {
+        if(run.status!=='completed' || String(run.databaseId)===preflightRun)continue;
         const artifacts = JSON.parse(gh(['api',`repos/${repo}/actions/runs/${run.databaseId}/artifacts`]));
         if(artifacts.artifacts.some(row => row.name === `financing-${date}` && !row.expired)) { resume=run.databaseId; break; }
       }

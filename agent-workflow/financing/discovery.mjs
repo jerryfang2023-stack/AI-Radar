@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import { collectAIHotFeed, isFundingDiscovery } from '../tools/lib/aihot-feed.mjs';
 import { canonicalSearchUrl } from '../tools/lib/search-gateway.mjs';
+import {fetchAIHotPage} from './aihot-request.mjs';
 
 export const config = JSON.parse(fs.readFileSync(new URL('./config.json', import.meta.url), 'utf8'));
 export function queryPlan(date) {
@@ -29,7 +30,7 @@ export function uniqueLeads(rows) {
   return [...unique.values()];
 }
 
-export async function discover({ date, search, feed = collectAIHotFeed, supplements = [], onPage, previous = {}, save = () => {} }) {
+export async function discover({ date, search, feed = options=>collectAIHotFeed({...options,fetcher:fetchAIHotPage}), supplements = [], onPage, previous = {}, save = () => {} }) {
   const receipts = { ...previous };
   if (!receipts.aihot?.ok) {
     const data = await feed({ window: '7d', onPage });

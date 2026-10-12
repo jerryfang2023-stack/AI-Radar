@@ -1,9 +1,10 @@
 import { aihotCandidate, isFundingDiscovery } from '../tools/lib/aihot-feed.mjs';
 import { read, write } from './state.mjs';
 import { inDiscoveryWindow } from './subscriptions.mjs';
+import {fetchAIHotPage} from './aihot-request.mjs';
 
 const fresh=()=>({version:'AIHOT-SELECTED-STATE-1',items:{},cursor:null,bootstrap:null,review_changes:[]});
-export async function syncAIHotSelected({stateFile,date,fetcher=fetch,baseUrl='https://aihot.news',maxPages=50,save=state=>write(stateFile,state)}={}) {
+export async function syncAIHotSelected({stateFile,date,fetcher=fetch,baseUrl='https://aihot.news',maxPages=50,save=state=>write(stateFile,state),wait}={}) {
   let state=stateFile?read(stateFile,fresh()):fresh();
   if(state.version!=='AIHOT-SELECTED-STATE-1')throw new Error('aihot_selected_state_version_mismatch');
   let pages=0,complete=false,resets=0;const cursors=new Set(),failures=[];
@@ -14,7 +15,7 @@ export async function syncAIHotSelected({stateFile,date,fetcher=fetch,baseUrl='h
       url.searchParams.set('limit',bootstrap?'1000':'100');
       if(bootstrap){url.searchParams.set('fields','default');if(state.bootstrap?.nextPage)url.searchParams.set('page',state.bootstrap.nextPage);}
       else url.searchParams.set('cursor',state.cursor);
-      const response=await fetcher(url.href,{signal:AbortSignal.timeout(20000),headers:{accept:'application/json','user-agent':'WaveSightFinancing/1.1'}});
+      const response=await fetchAIHotPage(url.href,{signal:AbortSignal.timeout(20000),headers:{accept:'application/json','user-agent':'WaveSightFinancing/1.1'}},{fetcher,wait});
       if(response.status===409) {
         const error=await response.json();
         if((error.error?.code||error.error||error.code)!=='snapshot_required'||resets++>0)throw new Error('aihot_selected_409_unknown');
