@@ -1006,6 +1006,10 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             session_id = row["session_id"]
             event_name = row["event_name"]
             properties = json.loads(row["properties_json"] or "{}")
+            if row['platform'] == 'pc' and row['event_id'].startswith('server:') and visitor_id.startswith('server-user:'):
+                # A business conversion without browser context is not a new website visit.
+                event_counts[event_name] = event_counts.get(event_name, 0) + 1
+                continue
             visitors.add(visitor_id)
             platform_counts.setdefault(row["platform"], set()).add(visitor_id)
             event_counts[event_name] = event_counts.get(event_name, 0) + 1

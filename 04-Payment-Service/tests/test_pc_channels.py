@@ -1,4 +1,5 @@
 from test_app import client, analytics_event
+from test_app import pc_login
 from datetime import datetime, timedelta, timezone
 
 
@@ -48,3 +49,11 @@ def test_automation_evidence_is_separate_from_bounces_and_cannot_forge_server_ev
     assert groups['internal']['visitors'] == 1
     assert sum(r['pageViews'] for r in report['channels']) == 34
     assert client.post('/api/v1/analytics/events',json=analytics_event(platform='pc',eventId='server:registration_success:spoof')).status_code == 400
+
+
+def test_registration_without_tracking_does_not_invent_a_visitor_or_channel(client):
+    pc_login(client)
+    summary=client.get('/api/v1/analytics/summary?platform=pc').get_json()
+    assert summary['overview']['newRegistrations'] == 1
+    assert summary['overview']['visitors'] == 0
+    assert summary['pcAcquisition']['attributedRegistrations'] == 0
