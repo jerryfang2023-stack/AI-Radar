@@ -1,0 +1,2442 @@
+{
+  "version": "FINANCING-RESPONSIBLE-PRIORITY-REVIEW-1",
+  "date": "2026-10-12",
+  "status": "gates_passed_awaiting_merge_and_publication",
+  "collection_sha256": "56986de86d0a75cc90a9356e2762bd3cdff936eae0402d36161bf5c0248957bf",
+  "scope": "accepted_originals_and_existing_pending_queue_only",
+  "queue_archived": 24,
+  "priority_verification": {
+    "total": 16,
+    "verified": 13,
+    "excluded": 0,
+    "reviewed": 0,
+    "pending": 3
+  },
+  "current_private_queue": {
+    "total": 96,
+    "stages": {
+      "source_identity_review": 26,
+      "evidence_review": 8,
+      "needs_original": 47,
+      "fact_review": 8,
+      "fact_conflict_review": 7
+    }
+  },
+  "baseline": {
+    "subjects": 575,
+    "events": 616
+  },
+  "candidate": {
+    "subjects": 588,
+    "events": 629
+  },
+  "removed_published_event_ids": [],
+  "added": [
+    {
+      "event_id": "EV-a58d2d7fca242811",
+      "card_id": "FI-7719d36b334dba3f",
+      "company": {
+        "entity_id": "EN-f6da9e44c982f0d4",
+        "application_entity_id": "EN-f6da9e44c982f0d4",
+        "name": "OllyGarden",
+        "full_name": "OllyGarden",
+        "summary": "OllyGarden 是一家帮助修复不良遥测数据的平台，让可观测性工程师获得可信赖的数据。公司成立于2025年，由 OpenTelemetry 贡献者构建，帮助企业在遥测数据到达可观测性后端之前发现并修复问题。",
+        "website": "https://ollygarden.com",
+        "headquarters": "德国柏林",
+        "founders": [
+          {
+            "name": "Juraci Paixão Kröhling",
+            "role": "创始人、联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a624307985a32fe5",
+                "quote": "OllyGarden founder, Juraci Paixão Kröhling",
+                "source_content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+                "quote_hash": "4f4fdb10f3356fb300a2c2f9437611f4eee42bf6439e65495cda7621901cb7c1"
+              },
+              {
+                "source_id": "FISRC-239fb00de3e68610",
+                "quote": "says Juraci Paixão Kröhling, co-founder and CEO",
+                "source_content_hash": "728989497ca3b1c4",
+                "quote_hash": "03728a3120f14255e3d74e824490cfebbea06b5df3ddfe1d87ef6e44d674306e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Yuri Oliveira Sa",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-499be7b91b8e2739",
+                "quote": "founded by Juraci Paixão Kröhling, a member of the OpenTelemetry Governance Committee, and Yuri Oliveira Sa",
+                "source_content_hash": "995e32ef51ffafd1",
+                "quote_hash": "67c217e8725d8c637c016f90603b5598ff7d34568a329c0ea4e1be614aadbf93"
+              },
+              {
+                "source_id": "FISRC-c84efe07ca34f426",
+                "quote": "OllyGarden was founded in January 2025 by Juraci Paixão Kröhling and Yuri Oliveira Sá",
+                "source_content_hash": "74ca16085a341d91",
+                "quote_hash": "b9aceedd79e42737f56961ec053e923a85fe10d4349b06a9f93f212a42002a4e"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount": "$4m",
+        "amount_original": "$4m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "400 万美元"
+        },
+        "announced_at": "2026-10-09",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Next Frontier Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a624307985a32fe5",
+                "quote": "The round was backed by leading VCs including Next Frontier Capital, Grand Ventures and ACTAI.",
+                "source_content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+                "quote_hash": "fb365b7a9fc6cb0c1ae2a0d13d04d2701a123e6976d2544f88c96bbb9dd7b924"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-33326c2779401c"
+          },
+          {
+            "name": "Grand Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a624307985a32fe5",
+                "quote": "The round was backed by leading VCs including Next Frontier Capital, Grand Ventures and ACTAI.",
+                "source_content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+                "quote_hash": "fb365b7a9fc6cb0c1ae2a0d13d04d2701a123e6976d2544f88c96bbb9dd7b924"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b8a0abdd4d1723"
+          },
+          {
+            "name": "ACTAI",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a624307985a32fe5",
+                "quote": "The round was backed by leading VCs including Next Frontier Capital, Grand Ventures and ACTAI.",
+                "source_content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+                "quote_hash": "fb365b7a9fc6cb0c1ae2a0d13d04d2701a123e6976d2544f88c96bbb9dd7b924"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-5220c4c859e15c"
+          },
+          {
+            "name": "DIG Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a624307985a32fe5",
+                "quote": "Existing investors DIG Ventures doubled down on the telemetry pioneers",
+                "source_content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+                "quote_hash": "3e456be4ee8fe8658b17b08195fc1bb3251f17c94814a11a1ed6a3570b62cd3a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-dcff6a6ae36a2f"
+          },
+          {
+            "name": "Datadog",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a624307985a32fe5",
+                "quote": "observability leaders Datadog, Grafana Labs, and Dash0 who made further strategic investments into the platform",
+                "source_content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+                "quote_hash": "d2bc297fc86356a20b960b0bce0035e27f9b63b95453f840119438e8e1386a84"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ab461ea335716d"
+          },
+          {
+            "name": "Grafana Labs",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a624307985a32fe5",
+                "quote": "observability leaders Datadog, Grafana Labs, and Dash0 who made further strategic investments into the platform",
+                "source_content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+                "quote_hash": "d2bc297fc86356a20b960b0bce0035e27f9b63b95453f840119438e8e1386a84"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-0658e754abd326"
+          },
+          {
+            "name": "Dash0",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a624307985a32fe5",
+                "quote": "observability leaders Datadog, Grafana Labs, and Dash0 who made further strategic investments into the platform",
+                "source_content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+                "quote_hash": "d2bc297fc86356a20b960b0bce0035e27f9b63b95453f840119438e8e1386a84"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-d4de4c7b630663"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-e176581c3d6755de",
+      "card_id": "FI-ee662545a8c60753",
+      "company": {
+        "entity_id": "EN-8c0ffc1f5dd35aae",
+        "application_entity_id": "EN-8c0ffc1f5dd35aae",
+        "name": "Credfix",
+        "full_name": "Credfix",
+        "summary": "AI驱动的债务解决平台，帮助借款人理解债务、评估还款方案并与贷款方沟通。",
+        "website": "credfix.app",
+        "headquarters": "印度班加罗尔",
+        "founders": [
+          {
+            "name": "Ranjan Agarwal",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ae260f41fda422b0",
+                "quote": "Founded in 2025 by Ranjan Agarwal, Neeraj Kulkarni and Ayush Kedia",
+                "source_content_hash": "72a8734494ea081cc24f9e0ac1bf301dde8068569b2b3f23101d32044bb270e7",
+                "quote_hash": "17b02ed6b2f6b27160de5bdc7df75a83387d7cc124a62e8b4b707ae660a78a85"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Neeraj Kulkarni",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ae260f41fda422b0",
+                "quote": "Founded in 2025 by Ranjan Agarwal, Neeraj Kulkarni and Ayush Kedia",
+                "source_content_hash": "72a8734494ea081cc24f9e0ac1bf301dde8068569b2b3f23101d32044bb270e7",
+                "quote_hash": "17b02ed6b2f6b27160de5bdc7df75a83387d7cc124a62e8b4b707ae660a78a85"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ayush Kedia",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ae260f41fda422b0",
+                "quote": "Founded in 2025 by Ranjan Agarwal, Neeraj Kulkarni and Ayush Kedia",
+                "source_content_hash": "72a8734494ea081cc24f9e0ac1bf301dde8068569b2b3f23101d32044bb270e7",
+                "quote_hash": "17b02ed6b2f6b27160de5bdc7df75a83387d7cc124a62e8b4b707ae660a78a85"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount": "Rs 16.1 crore",
+        "amount_original": "Rs 16.1 crore",
+        "amount_normalized": {
+          "currency": "INR",
+          "value": 161000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.61 亿印度卢比"
+        },
+        "announced_at": "2026-10-07",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Tanglin Venture Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ae260f41fda422b0",
+                "quote": "Credfix has raised Rs 16.1 crore in a seed funding round led by Tanglin Venture Partners, with participation from Stargazer.",
+                "source_content_hash": "72a8734494ea081cc24f9e0ac1bf301dde8068569b2b3f23101d32044bb270e7",
+                "quote_hash": "28db0cf88150eac90e23f9abbf4cc89a0d9b9d9f9d633eab4923efbc457866e0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-474668383b87dd"
+          },
+          {
+            "name": "Stargazer",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ae260f41fda422b0",
+                "quote": "Credfix has raised Rs 16.1 crore in a seed funding round led by Tanglin Venture Partners, with participation from Stargazer.",
+                "source_content_hash": "72a8734494ea081cc24f9e0ac1bf301dde8068569b2b3f23101d32044bb270e7",
+                "quote_hash": "28db0cf88150eac90e23f9abbf4cc89a0d9b9d9f9d633eab4923efbc457866e0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-62ec09829a21a1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-70045a46dafeaf68",
+      "card_id": "FI-d50895a2423a4402",
+      "company": {
+        "entity_id": "EN-f7a3c2cef889d8f6",
+        "application_entity_id": "EN-f7a3c2cef889d8f6",
+        "name": "Superpose",
+        "full_name": "Superpose",
+        "summary": "Superpose 是一款面向 iPhone 的 AI 人像相机应用，通过实时拍摄指导与生成式 AI，将一张真实照片生成同一时刻的四个增强版本。",
+        "website": "",
+        "headquarters": "加利福尼亚州洛斯加托斯",
+        "founders": [
+          {
+            "name": "Melody Chu",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bfa4a4a407eacc66",
+                "quote": "Superpose was founded by former TikTok leaders Melody Chu and Jing Liu",
+                "source_content_hash": "3148d19b0b6bde06",
+                "quote_hash": "dc31a53c220a775de2da9264ca512cee350911eb567727e4e456d340dc83db57"
+              },
+              {
+                "source_id": "FISRC-bfa4a4a407eacc66",
+                "quote": "Melody Chu, Co-Founder & CEO, Superpose",
+                "source_content_hash": "3148d19b0b6bde06",
+                "quote_hash": "0f184e26ddfd9b153ddbbe89be59a6c69192f5937c66c7f0d84d2bff9dbee534"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jing Liu",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bfa4a4a407eacc66",
+                "quote": "Superpose was founded by former TikTok leaders Melody Chu and Jing Liu",
+                "source_content_hash": "3148d19b0b6bde06",
+                "quote_hash": "dc31a53c220a775de2da9264ca512cee350911eb567727e4e456d340dc83db57"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount": "$2.2 million",
+        "amount_original": "$2.2 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "220 万美元"
+        },
+        "announced_at": "2026-09-15",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Khosla Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-56fb03980ba6a7c5",
+                "quote": "announced a $2.2 million seed funding round led by Khosla Ventures",
+                "source_content_hash": "4af5c527e0561b842e9859675409eda6322e00386f785077576b16677a44fec2",
+                "quote_hash": "7f0ab29e8148048e58fcffd16a6e5e7a43db63f3f983b3bab979a8891ff02c0c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-25a9fdb381e024"
+          },
+          {
+            "name": "Meitu",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-56fb03980ba6a7c5",
+                "quote": "Meitu and OVTR VC also participated in the funding round",
+                "source_content_hash": "4af5c527e0561b842e9859675409eda6322e00386f785077576b16677a44fec2",
+                "quote_hash": "12a100ce7d20e9d6c4d06fe34e6aea43feb1322d44f0e5705c2dae91aab112c7"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7d82ca3459d083"
+          },
+          {
+            "name": "OVTR VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-56fb03980ba6a7c5",
+                "quote": "Meitu and OVTR VC also participated in the funding round",
+                "source_content_hash": "4af5c527e0561b842e9859675409eda6322e00386f785077576b16677a44fec2",
+                "quote_hash": "12a100ce7d20e9d6c4d06fe34e6aea43feb1322d44f0e5705c2dae91aab112c7"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c62929313607b8"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-8186eedd977834f6",
+      "card_id": "FI-1951a29fb5741339",
+      "company": {
+        "entity_id": "EN-097b916d257c3d42",
+        "application_entity_id": "EN-097b916d257c3d42",
+        "name": "恒瀚微",
+        "full_name": "成都恒瀚微电子有限公司",
+        "summary": "国内领先的AI智算网络互联芯片设计企业，聚焦高性能RDMA智能网卡，为国产AI算力集群提供自主可控的高速互联解决方案。",
+        "website": "",
+        "headquarters": "成都高新区新川创新科技园",
+        "founders": [
+          {
+            "name": "胡超博",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a1bbef8de940dce4",
+                "quote": "恒瀚微创始人兼CEO胡超博",
+                "source_content_hash": "35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
+                "quote_hash": "d523bf4b9f764cde17052c39cf71f133489f05126d39a9ff6dfbdcb0b9a36c60"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount": "近亿元人民币",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-08-24",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "国泰创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a1bbef8de940dce4",
+                "quote": "本轮由国泰创投、成都科创投、成都高新创投、中信聚信投资",
+                "source_content_hash": "35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
+                "quote_hash": "09730fb5d1fe2e2b7f37982e5b1b177e5977ea8504f965568915d8aa7f188fdc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9bb9ae3eac9225"
+          },
+          {
+            "name": "成都科创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a1bbef8de940dce4",
+                "quote": "本轮由国泰创投、成都科创投、成都高新创投、中信聚信投资",
+                "source_content_hash": "35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
+                "quote_hash": "09730fb5d1fe2e2b7f37982e5b1b177e5977ea8504f965568915d8aa7f188fdc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-90d36b108d249f"
+          },
+          {
+            "name": "成都高新创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a1bbef8de940dce4",
+                "quote": "本轮由国泰创投、成都科创投、成都高新创投、中信聚信投资",
+                "source_content_hash": "35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
+                "quote_hash": "09730fb5d1fe2e2b7f37982e5b1b177e5977ea8504f965568915d8aa7f188fdc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-14f4e0d49e1f4a"
+          },
+          {
+            "name": "中信聚信",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a1bbef8de940dce4",
+                "quote": "本轮由国泰创投、成都科创投、成都高新创投、中信聚信投资",
+                "source_content_hash": "35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
+                "quote_hash": "09730fb5d1fe2e2b7f37982e5b1b177e5977ea8504f965568915d8aa7f188fdc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-3ed5381fd6b49e"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-f1887398d03748c2",
+      "card_id": "FI-298d08df156dc6bc",
+      "company": {
+        "entity_id": "EN-e93b8426e104cb8e",
+        "application_entity_id": "EN-e93b8426e104cb8e",
+        "name": "AIVELA",
+        "full_name": "AIVELA",
+        "summary": "AI可穿戴品牌，以智能指环、智能手链等贴身可穿戴产品为起点，面向全球市场构筑融合健康感知、自然交互与AI健康服务的新一代消费科技品牌。",
+        "website": "https://www.aivela.com",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "李东豪",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-205a3b05b631cdd8",
+                "quote": "AIVELA创始人兼CEO李东豪曾因高压工作节奏产生严重睡眠问题",
+                "source_content_hash": "1f912cd1459add0cac2e940678a7df24cc373fd4c437f06b45b8c95de7bfa419",
+                "quote_hash": "93ce2fdec7045280c71b717cb84eec3273b31ad81f1d201845aa4f1219e99494"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮",
+        "amount": "数百万美元",
+        "amount_original": "数百万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 2000000,
+          "max_value": 9000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数百万美元"
+        },
+        "announced_at": "2026-06-29",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "线性资本",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-205a3b05b631cdd8",
+                "quote": "本轮融资由线性资本领投，锋领资本跟投，智能电助力自行车品牌URTOPIA等产业方共同加注。",
+                "source_content_hash": "1f912cd1459add0cac2e940678a7df24cc373fd4c437f06b45b8c95de7bfa419",
+                "quote_hash": "d9d06a09432716bfde519da6d835cb713c48a69c136741a483fdddb2da1e9334"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1952bc6b3f0c98"
+          },
+          {
+            "name": "锋领资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-205a3b05b631cdd8",
+                "quote": "本轮融资由线性资本领投，锋领资本跟投，智能电助力自行车品牌URTOPIA等产业方共同加注。",
+                "source_content_hash": "1f912cd1459add0cac2e940678a7df24cc373fd4c437f06b45b8c95de7bfa419",
+                "quote_hash": "d9d06a09432716bfde519da6d835cb713c48a69c136741a483fdddb2da1e9334"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f4276dc832f139"
+          },
+          {
+            "name": "URTOPIA",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-205a3b05b631cdd8",
+                "quote": "本轮融资由线性资本领投，锋领资本跟投，智能电助力自行车品牌URTOPIA等产业方共同加注。",
+                "source_content_hash": "1f912cd1459add0cac2e940678a7df24cc373fd4c437f06b45b8c95de7bfa419",
+                "quote_hash": "d9d06a09432716bfde519da6d835cb713c48a69c136741a483fdddb2da1e9334"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-5f07f98f6b91f7"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-00305df9d37dd714",
+      "card_id": "FI-1737078d3429522b",
+      "company": {
+        "entity_id": "EN-1c39e60136f66e6c",
+        "application_entity_id": "EN-1c39e60136f66e6c",
+        "name": "Mindverse（心洲科技）",
+        "full_name": "Mindverse（心洲科技）",
+        "summary": "一家以「研产共设」为核心模式的全球化AI科技公司，旗下拥有AI研究实验室Mind Lab和Personal AI产品Macaron马卡龙，押注后训练与持续学习路线，用LoRA技术构建持续学习的Agent模型。",
+        "website": "",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "陈锴杰",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-db62e2a369722db7",
+                "quote": "两位创始人陈锴杰、Andrew 从 2018 年就一起休学创业",
+                "source_content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+                "quote_hash": "3c655797e9cf719cdc84390db9713870b3a5f47b715b370e88afcdd45e2fa623"
+              },
+              {
+                "source_id": "FISRC-47c7b16c003ccc82",
+                "quote": "创始人兼CEO陈锴杰毕业于杜克大学机械工程系人机交互方向",
+                "source_content_hash": "2f7664add43dc37c",
+                "quote_hash": "817d65205a48f0c6d32bbc7cf337803d8fa68a2af3caedc4dd3c8bd51eb475a7"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Andrew",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-db62e2a369722db7",
+                "quote": "两位创始人陈锴杰、Andrew 从 2018 年就一起休学创业",
+                "source_content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+                "quote_hash": "3c655797e9cf719cdc84390db9713870b3a5f47b715b370e88afcdd45e2fa623"
+              },
+              {
+                "source_id": "FISRC-47c7b16c003ccc82",
+                "quote": "公司创始人Andrew具备*MIT学术背景，现任清华大学深圳研究院研发中心主任",
+                "source_content_hash": "2f7664add43dc37c",
+                "quote_hash": "3a20fe3cf59d1d1e2e57648f842d91ad8b8298429b8fbd25e8cfbd263c65dca9"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount": "未披露",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-06-02",
+        "disclosure_status": "partially_disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "美团",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-db62e2a369722db7",
+                "quote": "近日，Mindverse（心洲科技）完成由美团领投的 A 轮融资，元禾璞华、韶音、变量资本和老股东追加跟投，总融资额近 5000 万美元。",
+                "source_content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+                "quote_hash": "a6a9b7839a4e41a59bd732ad9f849de7b19875cb9e38da7080f4ee3b6c3e6ec6"
+              }
+            ],
+            "entity_id": "EN-cd6362472aea60ef",
+            "institution_id": "INV-151eb7391f9219"
+          },
+          {
+            "name": "元禾璞华",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-db62e2a369722db7",
+                "quote": "近日，Mindverse（心洲科技）完成由美团领投的 A 轮融资，元禾璞华、韶音、变量资本和老股东追加跟投，总融资额近 5000 万美元。",
+                "source_content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+                "quote_hash": "a6a9b7839a4e41a59bd732ad9f849de7b19875cb9e38da7080f4ee3b6c3e6ec6"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6fa5593366f74e"
+          },
+          {
+            "name": "韶音",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-db62e2a369722db7",
+                "quote": "近日，Mindverse（心洲科技）完成由美团领投的 A 轮融资，元禾璞华、韶音、变量资本和老股东追加跟投，总融资额近 5000 万美元。",
+                "source_content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+                "quote_hash": "a6a9b7839a4e41a59bd732ad9f849de7b19875cb9e38da7080f4ee3b6c3e6ec6"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-3f4e848dff185c"
+          },
+          {
+            "name": "变量资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-db62e2a369722db7",
+                "quote": "近日，Mindverse（心洲科技）完成由美团领投的 A 轮融资，元禾璞华、韶音、变量资本和老股东追加跟投，总融资额近 5000 万美元。",
+                "source_content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+                "quote_hash": "a6a9b7839a4e41a59bd732ad9f849de7b19875cb9e38da7080f4ee3b6c3e6ec6"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-130df92fac62d6"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-adf842f1094c5ffe",
+      "card_id": "FI-04a8090011a2b5c5",
+      "company": {
+        "entity_id": "EN-8784fa047aabc687",
+        "application_entity_id": "EN-8784fa047aabc687",
+        "name": "C2i Semiconductors",
+        "full_name": "C2i Semiconductors",
+        "summary": "C2i Semiconductors 是一家专注于高能效横向功率传输与电压调节器的初创公司，面向下一代 AI 与高性能计算基础设施，通过软件定义的电压调节器平台解决“最后一英寸”功率损耗问题。",
+        "website": "https://c2isemi.com/",
+        "headquarters": "印度班加罗尔",
+        "founders": [
+          {
+            "name": "Ram Anant",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f3c759ba693ab20",
+                "quote": "said Ram Anant, Co-founder and CEO of C2i Semiconductors",
+                "source_content_hash": "857a642e7dc0db84f02e392da57cf931f1e1a57e0e425e35cce824507321e448",
+                "quote_hash": "97d8f71e7dfea5c6bb150187060ea8c2f7a6695895bc12b9630ca3f5a6e3250c"
+              },
+              {
+                "source_id": "FISRC-f2f1977ebf9c7610",
+                "quote": "Ram Anant: Co-Founder & CEO of C2I Semiconductors.",
+                "source_content_hash": "c73d43ff6deb78fa",
+                "quote_hash": "ad705da968a213ce24cf517c156345225d1aa370d7fcb769e845abe0fe195121"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Vikram Gakhar",
+            "role": "联合创始人兼董事",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f2f1977ebf9c7610",
+                "quote": "Vikram Gakhar: Co-Founder & Director of C2I Semiconductors.",
+                "source_content_hash": "c73d43ff6deb78fa",
+                "quote_hash": "0b488b7fe4249c625bd8b6be2bd3c87a85f88e3619c26908e8ea6ed2c7451ee8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Preetam Tadeparthy",
+            "role": "联合创始人兼CTO兼工程副总裁",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f2f1977ebf9c7610",
+                "quote": "Preetam Tadeparthy: Co-Founder & CTO & VP Engineering of C2I Semiconductors.",
+                "source_content_hash": "c73d43ff6deb78fa",
+                "quote_hash": "bb1d999f68e6b861849fcfef3229fcf17501961b3e0deaf1bf56159943d4f167"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dattatreya Baragur Suryanarayana",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f2f1977ebf9c7610",
+                "quote": "Dattatreya Baragur Suryanarayana: Co-Founder of C2I Semiconductors.",
+                "source_content_hash": "c73d43ff6deb78fa",
+                "quote_hash": "5ebda70b67b16f7cc0a46da40571fcb7c7cecc8c6ac43fbf4210e5fcc0eb79a7"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount": "$16.7M",
+        "amount_original": "$16.7M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 16700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1670 万美元"
+        },
+        "announced_at": "2026-05-27",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "TDK Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f3c759ba693ab20",
+                "quote": "TDK Ventures invests in C2i Semiconductors as part of a $16.7M Series A round.",
+                "source_content_hash": "857a642e7dc0db84f02e392da57cf931f1e1a57e0e425e35cce824507321e448",
+                "quote_hash": "63e052db1ebca91091d634b128ff368f53ea4e3db7b86efc08139de40a23794d"
+              },
+              {
+                "source_id": "FISRC-b1534f87ae2ffa47",
+                "quote": "TDK Ventures and Peak XV Partners are the lead investors in C2I Semiconductors' latest funding round held on May 27, 2026.",
+                "source_content_hash": "0f71d82b3a220018",
+                "quote_hash": "069004ea9ea3cc4965d5ec7c63abb656487f1a6eb6efc40695288e64cf870e2e"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-cab2bbd1d4e79e"
+          },
+          {
+            "name": "Peak XV Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f3c759ba693ab20",
+                "quote": "The round includes participation from Peak XV Partners and prominent semiconductor industry leaders.",
+                "source_content_hash": "857a642e7dc0db84f02e392da57cf931f1e1a57e0e425e35cce824507321e448",
+                "quote_hash": "a6726c78011acca0fb1e06a09c461759375b0988ed0b33e9d93dcc52fa4d8ad2"
+              },
+              {
+                "source_id": "FISRC-b1534f87ae2ffa47",
+                "quote": "TDK Ventures and Peak XV Partners are the lead investors in C2I Semiconductors' latest funding round held on May 27, 2026.",
+                "source_content_hash": "0f71d82b3a220018",
+                "quote_hash": "069004ea9ea3cc4965d5ec7c63abb656487f1a6eb6efc40695288e64cf870e2e"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-25dbfe1bcda658"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-92a426739f908c92",
+      "card_id": "FI-cb5d06cee1a296fe",
+      "company": {
+        "entity_id": "FICO-ccd6f85169f11a1c",
+        "application_entity_id": "FICO-ccd6f85169f11a1c",
+        "name": "Cimento",
+        "full_name": "Cimento",
+        "summary": "Cimento 是一个 AI 原生的人力风险管理平台，为每位员工构建实时风险画像，通过模拟真实社会工程攻击并即时干预来管理人力风险，同时将同一框架扩展至 AI 智能体的测试与治理。",
+        "website": "https://cimento.ai",
+        "headquarters": "",
+        "founders": []
+      },
+      "financing": {
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount": "~$3M",
+        "amount_original": "~$3M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 300 万美元"
+        },
+        "announced_at": "2026-05-13",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Bowery Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a95a5f200afb6976",
+                "quote": "Backed by ~$3M in pre-seed funding from Bowery Capital, Indie VC, and a group of angels and security leaders from companies like Cloudflare, Palo Alto Networks, Cursor, Nvidia, and Okta",
+                "source_content_hash": "b932034c06536f964f86601d3a68ebaa2628238b9dc844f87da5b6e0d2855ec8",
+                "quote_hash": "2d0636e69385178be61c40f16ce7ef45fbbbd9714f3f4fb639300ae0ba8e2252"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7786925e55f2a0"
+          },
+          {
+            "name": "Indie VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a95a5f200afb6976",
+                "quote": "Backed by ~$3M in pre-seed funding from Bowery Capital, Indie VC, and a group of angels and security leaders from companies like Cloudflare, Palo Alto Networks, Cursor, Nvidia, and Okta",
+                "source_content_hash": "b932034c06536f964f86601d3a68ebaa2628238b9dc844f87da5b6e0d2855ec8",
+                "quote_hash": "2d0636e69385178be61c40f16ce7ef45fbbbd9714f3f4fb639300ae0ba8e2252"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-62967b0f0a3492"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-fb466830d5c49aea",
+      "card_id": "FI-a3a35777c25025b9",
+      "company": {
+        "entity_id": "EN-864e7f949b17c9b1",
+        "application_entity_id": "EN-864e7f949b17c9b1",
+        "name": "Netomi",
+        "full_name": "Netomi",
+        "summary": "Netomi 是一家总部位于旧金山的企业级 agentic 客户体验（CX）平台公司，为复杂、受监管和大规模环境提供跨聊天、邮件和语音渠道的 AI 系统，将 AI 直接集成到数字体验中。",
+        "website": "https://www.netomi.com/",
+        "headquarters": "旧金山，加利福尼亚州",
+        "founders": [
+          {
+            "name": "Puneet Mehta",
+            "role": "首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-746874e2d36ccb3c",
+                "quote": "Founded by Puneet Mehta",
+                "source_content_hash": "f30d62b9410f734a",
+                "quote_hash": "98844615239b191e707a306379484523669b9a0892c5600d2737f90194ec3cc8"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount": "$110 million",
+        "amount_original": "$110 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 110000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.1 亿美元"
+        },
+        "announced_at": "2026-04-30",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Accenture Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-718abe345b56e368",
+                "quote": "it has raised $110 million in new funding in a round led by Accenture Ventures",
+                "source_content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+                "quote_hash": "9a3dc4ef7e8b3d0986259fbfc5c1b8ff8612a82a031405957f6f6066e8fecc03"
+              },
+              {
+                "source_id": "FISRC-746874e2d36ccb3c",
+                "quote": "The Series C round was led by Accenture Ventures",
+                "source_content_hash": "f30d62b9410f734a",
+                "quote_hash": "1972f30d10a595d16186e0be1247f96d78b6c305108958f254282185d9a0ecf9"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-8bf2c85d319690"
+          },
+          {
+            "name": "Adobe Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-718abe345b56e368",
+                "quote": "with participation from Adobe Ventures , WndrCo , Silver Lake Waterman , NAVER Ventures , Metis Strategy and Fin Capital",
+                "source_content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+                "quote_hash": "d32fcea79f83ca3ea92dd63ec8a4f80e07c681594f7a69aca821d3238cfde649"
+              },
+              {
+                "source_id": "FISRC-746874e2d36ccb3c",
+                "quote": "with participation from Adobe Ventures, WndrCo, NAVER Ventures, Metis Strategy, SLW, and Fin Capital",
+                "source_content_hash": "f30d62b9410f734a",
+                "quote_hash": "dfb2cfce7f5b7f09d3707e8467d781de05a2cac6bbe0a2567e8f9916d544dca1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b6262327f6f24d"
+          },
+          {
+            "name": "WndrCo",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-718abe345b56e368",
+                "quote": "with participation from Adobe Ventures , WndrCo , Silver Lake Waterman , NAVER Ventures , Metis Strategy and Fin Capital",
+                "source_content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+                "quote_hash": "d32fcea79f83ca3ea92dd63ec8a4f80e07c681594f7a69aca821d3238cfde649"
+              },
+              {
+                "source_id": "FISRC-746874e2d36ccb3c",
+                "quote": "with participation from Adobe Ventures, WndrCo, NAVER Ventures, Metis Strategy, SLW, and Fin Capital",
+                "source_content_hash": "f30d62b9410f734a",
+                "quote_hash": "dfb2cfce7f5b7f09d3707e8467d781de05a2cac6bbe0a2567e8f9916d544dca1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-25d480d8213db6"
+          },
+          {
+            "name": "Silver Lake Waterman",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-718abe345b56e368",
+                "quote": "with participation from Adobe Ventures , WndrCo , Silver Lake Waterman , NAVER Ventures , Metis Strategy and Fin Capital",
+                "source_content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+                "quote_hash": "d32fcea79f83ca3ea92dd63ec8a4f80e07c681594f7a69aca821d3238cfde649"
+              },
+              {
+                "source_id": "FISRC-746874e2d36ccb3c",
+                "quote": "with participation from Adobe Ventures, WndrCo, NAVER Ventures, Metis Strategy, SLW, and Fin Capital",
+                "source_content_hash": "f30d62b9410f734a",
+                "quote_hash": "dfb2cfce7f5b7f09d3707e8467d781de05a2cac6bbe0a2567e8f9916d544dca1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1f447442ce8dab"
+          },
+          {
+            "name": "NAVER Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-718abe345b56e368",
+                "quote": "with participation from Adobe Ventures , WndrCo , Silver Lake Waterman , NAVER Ventures , Metis Strategy and Fin Capital",
+                "source_content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+                "quote_hash": "d32fcea79f83ca3ea92dd63ec8a4f80e07c681594f7a69aca821d3238cfde649"
+              },
+              {
+                "source_id": "FISRC-746874e2d36ccb3c",
+                "quote": "with participation from Adobe Ventures, WndrCo, NAVER Ventures, Metis Strategy, SLW, and Fin Capital",
+                "source_content_hash": "f30d62b9410f734a",
+                "quote_hash": "dfb2cfce7f5b7f09d3707e8467d781de05a2cac6bbe0a2567e8f9916d544dca1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1493a5004ea821"
+          },
+          {
+            "name": "Metis Strategy",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-718abe345b56e368",
+                "quote": "with participation from Adobe Ventures , WndrCo , Silver Lake Waterman , NAVER Ventures , Metis Strategy and Fin Capital",
+                "source_content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+                "quote_hash": "d32fcea79f83ca3ea92dd63ec8a4f80e07c681594f7a69aca821d3238cfde649"
+              },
+              {
+                "source_id": "FISRC-746874e2d36ccb3c",
+                "quote": "with participation from Adobe Ventures, WndrCo, NAVER Ventures, Metis Strategy, SLW, and Fin Capital",
+                "source_content_hash": "f30d62b9410f734a",
+                "quote_hash": "dfb2cfce7f5b7f09d3707e8467d781de05a2cac6bbe0a2567e8f9916d544dca1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ad28b2d9c5ec06"
+          },
+          {
+            "name": "Fin Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-718abe345b56e368",
+                "quote": "with participation from Adobe Ventures , WndrCo , Silver Lake Waterman , NAVER Ventures , Metis Strategy and Fin Capital",
+                "source_content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+                "quote_hash": "d32fcea79f83ca3ea92dd63ec8a4f80e07c681594f7a69aca821d3238cfde649"
+              },
+              {
+                "source_id": "FISRC-746874e2d36ccb3c",
+                "quote": "with participation from Adobe Ventures, WndrCo, NAVER Ventures, Metis Strategy, SLW, and Fin Capital",
+                "source_content_hash": "f30d62b9410f734a",
+                "quote_hash": "dfb2cfce7f5b7f09d3707e8467d781de05a2cac6bbe0a2567e8f9916d544dca1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-d2169ee1ff9744"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-d88c188529236c7f",
+      "card_id": "FI-86e0ed8420a51fd2",
+      "company": {
+        "entity_id": "EN-c0d5bf1368bcdad5",
+        "application_entity_id": "EN-c0d5bf1368bcdad5",
+        "name": "Creao AI",
+        "full_name": "Creao AI",
+        "summary": "Creao AI 是一家构建闭环系统的 AI 公司，其平台以“超级智能体”为核心，将用户对话转化为可复用、可自动运行的 Agent App，实现 AI 既构建工具又执行工作的闭环。",
+        "website": "https://creao.ai/",
+        "headquarters": "加利福尼亚州库比蒂诺",
+        "founders": [
+          {
+            "name": "Kai Cheng",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c59e88cf636de760",
+                "quote": "says CEO Kai Cheng, who spent a decade building production AI systems for over 250 enterprise clients before co-founding Creao AI.",
+                "source_content_hash": "76f6cc55bced0e5b197ae4553b899d77b84768ac129b4f4a485e6f90ae2c991c",
+                "quote_hash": "065f04b9d0bb5066dc674acfab045740035ed048d24b82b695c6a16fee98529a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Clark Gao",
+            "role": "Co-Founder & CPO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c59e88cf636de760",
+                "quote": "says co-founder Clark Gao, who runs GTM and previously built data teams at LinkedIn and Tencent.",
+                "source_content_hash": "76f6cc55bced0e5b197ae4553b899d77b84768ac129b4f4a485e6f90ae2c991c",
+                "quote_hash": "62b1f764b2d5f52c413a43889a5a9f51990807202a193725467611440043bec6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Peter Pang",
+            "role": "联合创始人兼首席技术官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c59e88cf636de760",
+                "quote": "CTO Peter Pang was a research scientist on Meta's Llama 3 team",
+                "source_content_hash": "76f6cc55bced0e5b197ae4553b899d77b84768ac129b4f4a485e6f90ae2c991c",
+                "quote_hash": "5d34211172bf8d7c9a532752b1a820af4e205360d5757435f5952b57b71a20a3"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "Early Funding",
+        "amount": "$10M",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-04-17",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Prosperity7 Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c59e88cf636de760",
+                "quote": "The startup just closed a $10 million round led by Prosperity7 Ventures — the $3 billion diversified venturing fund of Aramco Ventures — bringing total funding to $25 million across three rounds in under a year.",
+                "source_content_hash": "76f6cc55bced0e5b197ae4553b899d77b84768ac129b4f4a485e6f90ae2c991c",
+                "quote_hash": "ea7c932e7f6df1f788ac74aaf525ff3898751bc293ab84ea5f2ccdbcb7b2e9dc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c3d94870c20cef"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-21aeb42806158098",
+      "card_id": "FI-4e2a42223ce837a7",
+      "company": {
+        "entity_id": "EN-6a5214e7410ddc54",
+        "application_entity_id": "EN-6a5214e7410ddc54",
+        "name": "Waiv",
+        "full_name": "Waiv",
+        "summary": "Waiv 是一家总部位于巴黎的 AI 精准测试公司，致力于将常规生成的数字病理学和多模态临床数据转化为经临床验证的 AI 原生精准测试，用于肿瘤学领域的生物标志物发现、检测和治疗反应洞察。",
+        "website": "https://wearewaiv.com/",
+        "headquarters": "巴黎",
+        "founders": [
+          {
+            "name": "Meriem Sefta",
+            "role": "首席执行官兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-36c850e4e69c202f",
+                "quote": "Meriem Sefta, CEO and Co-Founder, Waiv",
+                "source_content_hash": "ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+                "quote_hash": "38a6cef5550fd7b1ad99c97acb3f4337d3e836c9b350f2fced33fb518550abdc"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount": "$33 million",
+        "amount_original": "$33 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 33000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3300 万美元"
+        },
+        "announced_at": "2026-03-12",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "OTB Ventures",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-36c850e4e69c202f",
+                "quote": "The raise is co-led by OTB Ventures and Alpha Intelligence Capital (AIC), with participation from Serena Data Ventures, Karista, and SistaFund.",
+                "source_content_hash": "ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+                "quote_hash": "e07b80c7c2eed03adcfe4c7219a2110c00af8cb8481ae0559e38f2c322e96876"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-03454ce0bf41be"
+          },
+          {
+            "name": "Alpha Intelligence Capital (AIC)",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-36c850e4e69c202f",
+                "quote": "The raise is co-led by OTB Ventures and Alpha Intelligence Capital (AIC), with participation from Serena Data Ventures, Karista, and SistaFund.",
+                "source_content_hash": "ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+                "quote_hash": "e07b80c7c2eed03adcfe4c7219a2110c00af8cb8481ae0559e38f2c322e96876"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-10b93e8589a3a4"
+          },
+          {
+            "name": "Serena Data Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-36c850e4e69c202f",
+                "quote": "The raise is co-led by OTB Ventures and Alpha Intelligence Capital (AIC), with participation from Serena Data Ventures, Karista, and SistaFund.",
+                "source_content_hash": "ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+                "quote_hash": "e07b80c7c2eed03adcfe4c7219a2110c00af8cb8481ae0559e38f2c322e96876"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b3e83badf73830"
+          },
+          {
+            "name": "Karista",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-36c850e4e69c202f",
+                "quote": "The raise is co-led by OTB Ventures and Alpha Intelligence Capital (AIC), with participation from Serena Data Ventures, Karista, and SistaFund.",
+                "source_content_hash": "ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+                "quote_hash": "e07b80c7c2eed03adcfe4c7219a2110c00af8cb8481ae0559e38f2c322e96876"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2ceec1cc9e16bb"
+          },
+          {
+            "name": "SistaFund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-36c850e4e69c202f",
+                "quote": "The raise is co-led by OTB Ventures and Alpha Intelligence Capital (AIC), with participation from Serena Data Ventures, Karista, and SistaFund.",
+                "source_content_hash": "ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+                "quote_hash": "e07b80c7c2eed03adcfe4c7219a2110c00af8cb8481ae0559e38f2c322e96876"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-4a56a1b68f2721"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-b3642bc761ee4665",
+      "card_id": "FI-f06137e7d36d4c01",
+      "company": {
+        "entity_id": "EN-974371852171d0ea",
+        "application_entity_id": "EN-974371852171d0ea",
+        "name": "Nexthop AI",
+        "full_name": "Nexthop AI",
+        "summary": "Nexthop AI 是一家总部位于圣克拉拉的 AI 网络公司，为超大规模云服务商和 NeoClouds 提供高效 AI 网络解决方案，包括基于开源操作系统（如 SONiC 和 FBOSS）的现成和高度定制化交换解决方案。",
+        "website": "https://nexthop.ai",
+        "headquarters": "Santa Clara, CA",
+        "founders": [
+          {
+            "name": "Anshul Sadana",
+            "role": "创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-084074056d609e70",
+                "quote": "said Anshul Sadana, Founder & CEO of Nexthop AI.",
+                "source_content_hash": "307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
+                "quote_hash": "72f3473bc48f66d716fef94ff75e742cdfa07d2e9f4b801c21919d158839883e"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount": "$500 Million",
+        "amount_original": "$500 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-03-10",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-084074056d609e70",
+                "quote": "This round was spearheaded by Lightspeed Venture Partners, with Andreessen Horowitz joining as a major investor, and participation from Altimeter and all existing investors.",
+                "source_content_hash": "307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
+                "quote_hash": "498e40ef1d04bcf5884269ed9ab8b7b7e9a59e02db58ebf2fa6a8c9889cf4c7c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1528b125301283"
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-084074056d609e70",
+                "quote": "This round was spearheaded by Lightspeed Venture Partners, with Andreessen Horowitz joining as a major investor, and participation from Altimeter and all existing investors.",
+                "source_content_hash": "307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
+                "quote_hash": "498e40ef1d04bcf5884269ed9ab8b7b7e9a59e02db58ebf2fa6a8c9889cf4c7c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b8a0e793124952"
+          },
+          {
+            "name": "Altimeter",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-084074056d609e70",
+                "quote": "This round was spearheaded by Lightspeed Venture Partners, with Andreessen Horowitz joining as a major investor, and participation from Altimeter and all existing investors.",
+                "source_content_hash": "307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
+                "quote_hash": "498e40ef1d04bcf5884269ed9ab8b7b7e9a59e02db58ebf2fa6a8c9889cf4c7c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ff9d9c2e0d221a"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "EV-c2cd2b01a5efb38b",
+      "card_id": "FI-f2cd3d545ce0d7f9",
+      "company": {
+        "entity_id": "EN-f5ff1d2aafd4e0a4",
+        "application_entity_id": "EN-f5ff1d2aafd4e0a4",
+        "name": "盖立克思",
+        "full_name": "杭州盖立克思人工智能有限公司",
+        "summary": "成立于2025年1月，专注于为生成式AI生态提供语义优化与智能监测引擎的科技企业，项目定位“AI搜索权威引用构建专家”，核心业务为生成式引擎优化（GEO）。",
+        "website": "",
+        "headquarters": "浙江杭州萧山杭州湾智慧谷二期",
+        "founders": []
+      },
+      "financing": {
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount": "1000万美元",
+        "amount_original": "1000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-01-10",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "美国普林斯讯",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cc32f14442736dae",
+                "quote": "于2026年1月正式签约完成1000万美元天使轮融资，投资方为美国普林斯讯。",
+                "source_content_hash": "3caf79fa99f8c528ea138c2327adfc9ec8f9b00f9e1f484512d6513bcce98480",
+                "quote_hash": "c05cfb2784641a783156724fa6ecf70ec20c0e955543916c4169a893eea47562"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f218c4c04b8aae"
+          }
+        ]
+      }
+    }
+  ],
+  "held": [
+    {
+      "id": 22,
+      "status": "pending_fact_correction",
+      "reason": "同一9月14日近亿元融资已发布，但卡片轮次基础设施融资与公司公告B+不一致；需既有事实修正，不能再添新轮。",
+      "lead_source_url": "https://zhuanlan.zhihu.com/p/2082789026164229785"
+    },
+    {
+      "id": 68,
+      "status": "pending_primary_original",
+      "reason": "抓得的是第三方眼镜销售商产品页面，只有更新时间，未提供融资轮次或原始来源；拒绝据此添加新事件。",
+      "lead_source_url": "https://www.dgqdm.com/product/33.html"
+    },
+    {
+      "id": 72,
+      "status": "pending_currency_evidence",
+      "reason": "融资已完成，但千万级没有币种；不推定人民币，等待明确币种原文。",
+      "lead_source_url": "https://life.china.com/2026-03/20/content_554779.html"
+    },
+    {
+      "id": 81,
+      "status": "pending_ai_product_evidence",
+      "reason": "TeddyHoldings.AI的法律服务平台6000万美元种子线索保留；与Hone不是同企业，AI主营产品原文尚不足。",
+      "lead_source_url": "https://www.finsmes.com/2026/10/teddyholdings-ai-raises-60m-in-seed-funding.html"
+    },
+    {
+      "id": 99,
+      "status": "pending_fact_correction",
+      "reason": "正确大河原文确认NIMO/比特幻境、数亿元天使及相同投资方，已发布；报道日期10月8日早于当前10月10日，保留日期修正，不用物外智趣替代。",
+      "lead_source_url": "https://app.dahecube.com/spiderdetail.html?spidid=868538?recid=1"
+    },
+    {
+      "id": 102,
+      "status": "pending_ai_taxonomy_evidence",
+      "reason": "融资事实与研究门禁通过；模型与AI原生OS证据不足以确定基础模型或应用赛道，保留分类复核。",
+      "lead_source_url": "https://lieyunpro.com/news/119670"
+    },
+    {
+      "id": 109,
+      "status": "pending_round_date_amount",
+      "reason": "InsForge为AI开发平台，但二次来源出现2025预种子、2026 YC、150万美元及数百万美元不一致；需明确原线索轮次，不把YC加入当新资金到账。",
+      "lead_source_url": "https://lieyunpro.com/news/119294"
+    },
+    {
+      "id": 147,
+      "status": "pending_duplicate_original_binding",
+      "reason": "智谱9月13日50亿美元增发/可转债已发布同记录；仍需路透原文或交易所文件核对融资完成状态，当前网页失败不计零融资。",
+      "lead_source_url": "https://www.reuters.com/world/asia-pacific/chinas-zai-raises-5-billion-new-share-convertible-bond-sales-filing-shows-2026-09-13/"
+    },
+    {
+      "id": 154,
+      "status": "pending_closing_and_same_round",
+      "reason": "DeepX三星147亿韩元增资与8月420亿韩元D轮须核对交割/分期，不能把拟参与增资批准为已完成D+。",
+      "lead_source_url": "https://www.techinasia.com/news/deepx-raises-11m-from-samsung-securities-svic"
+    },
+    {
+      "id": 157,
+      "status": "pending_cross_source_semantic_binding",
+      "reason": "Waymo官方确认50亿美元首笔债务融资，官方Driver页面确认AI产品；尚缺正式事实层跨来源语义绑定，未作为机器人主营排除。",
+      "lead_source_url": "https://www.ithome.com/1/010/734.htm"
+    },
+    {
+      "id": 161,
+      "status": "pending_ai_product_evidence",
+      "reason": "磐如生物真实业务是mRNA疫苗/LNP递送；融资真实但尚无AI主营原文，不按生物医药标签自动批准或排除。",
+      "lead_source_url": "https://lieyunpro.com/news/119679"
+    },
+    {
+      "id": 185,
+      "status": "pending_authoritative_closing_original",
+      "reason": "Ramp 18.5亿美元线索仍有价值；Bloomberg原文受限、其他报道同时出现已融资与早期洽谈，保留交割/轮次缺口。",
+      "lead_source_url": "https://www.bloomberg.com/news/articles/2026-10-09/ramp-hits-60-billion-valuation-in-1-85-billion-funding-round"
+    },
+    {
+      "id": 188,
+      "status": "pending_ai_product_evidence",
+      "reason": "Universal Quantum 1亿美元融资可查，但现有证据为通用量子计算硬件，尚不能证明AI主营；与来源136可关联，不当AI专用芯片发布。",
+      "lead_source_url": "https://www.techinasia.com/news/uk-quantum-startup-raises-100m-expands-singapore"
+    },
+    {
+      "id": 190,
+      "status": "pending_company_identity",
+      "reason": "田柯宇近3000万美元融资，原文明确公司名称产品未公开；不能强行绑定另一家世界模型公司。",
+      "lead_source_url": "https://www.ithome.com/1/010/356.htm"
+    },
+    {
+      "id": 197,
+      "status": "pending_linked_same_round",
+      "reason": "确认主体为百趣生物，同10月10日B轮，与198合并作为补充来源；AI产品证据门禁未过，不作事实关闭。",
+      "linked_id": 198,
+      "lead_source_url": "https://www.cyzone.cn/article/848592.html"
+    },
+    {
+      "id": 198,
+      "status": "pending_ai_product_evidence",
+      "reason": "百趣近亿元B轮已核，当前是多组学服务/数据供给，融资投向AI4S不自动证明当前AI主营；保留产品算法原文缺口。",
+      "lead_source_url": "https://www.chinaventure.com.cn/news/111-20261010-393557.html"
+    },
+    {
+      "id": 206,
+      "status": "pending_same_round_original",
+      "reason": "DeepX 8月420亿韩元D轮第一批交割，和10月三星增资是否同轮需要原文确认；不重复加金额。",
+      "lead_source_url": "https://zhuanlan.zhihu.com/p/2067925402320902095"
+    },
+    {
+      "id": 224,
+      "status": "pending_ai_product_evidence",
+      "reason": "Zomint公司官网确认AI研究辅助财富专家，但具体AI产品/主营占比仍不明；不因财富科技直接排除，保留原融资与具体缺口。",
+      "lead_source_url": "https://entrackr.com/snippets/zomint-raises-rs-36-cr-seed-round-from-lightspeed-and-prime-venture-partners-12631666"
+    }
+  ],
+  "generated_at": "2026-10-12T15:22:47.658Z",
+  "reviewed_leads": 55,
+  "counts": {
+    "archived": 24,
+    "gates_passed_awaiting_publication": 13,
+    "held": 18
+  },
+  "decisions": [
+    {
+      "id": 22,
+      "status": "pending_fact_correction",
+      "reason": "同一9月14日近亿元融资已发布，但卡片轮次基础设施融资与公司公告B+不一致；需既有事实修正，不能再添新轮。",
+      "lead_source_url": "https://zhuanlan.zhihu.com/p/2082789026164229785"
+    },
+    {
+      "id": 26,
+      "status": "historical_before_2026",
+      "reason": "原文明确2025-08-25，2亿元A轮旧融资；与2026年A+轮不是同轮。",
+      "quote": "2025-08-25 10:02",
+      "lead_source_url": "https://www.iyiou.com/news/202508251107104"
+    },
+    {
+      "id": 28,
+      "status": "excluded_robotics",
+      "reason": "主体未来不远主营能动手做家务的家庭通用机器人，不属于陪伴玩具。",
+      "quote": "第二代产品 F2 配备 21 个高自由度关节与双臂双夹爪",
+      "lead_source_url": "https://www.leaderobot.com/news/8658"
+    },
+    {
+      "id": 33,
+      "status": "historical_before_2026",
+      "reason": "公司官网确认2025年11月26日4000万美元A轮；拒绝GMI Cloud错配。",
+      "source_url": "https://sfcompute.com/news/sf-compute-series-a",
+      "quote": "November 26, 2025",
+      "lead_source_url": "https://www.linkedin.com/posts/jesselandry23_compute-tradeableassets-pricing-activity-7400603710055145472-3WxO"
+    },
+    {
+      "id": 37,
+      "status": "already_covered",
+      "company": "Glow",
+      "card": "FI-25422dbadb01919a",
+      "reason": "7月22日1.8亿美元A轮、12亿美元估值，已发布同轮；不是额外12亿美元融资。",
+      "source_url": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/",
+      "quote": "it raised $180 million in an all-equity Series A funding round",
+      "lead_source_url": "https://aibusiness.com/cybersecurity/startup-focused-enterprise-ai-security-valued-1-2-billion"
+    },
+    {
+      "id": 63,
+      "status": "already_covered",
+      "company": "生数科技",
+      "card": "FI-4880b1e3fb7a4da4",
+      "reason": "4月10日阿里领投3亿美元报道对应近20亿元B轮，币种换算同轮，已覆盖。",
+      "quote": "财联社4月10日电，阿里巴巴领投对AI视频生成公司生数科技的一轮3亿美元融资。",
+      "lead_source_url": "https://www.cls.cn/detail/2339874"
+    },
+    {
+      "id": 68,
+      "status": "pending_primary_original",
+      "reason": "抓得的是第三方眼镜销售商产品页面，只有更新时间，未提供融资轮次或原始来源；拒绝据此添加新事件。",
+      "lead_source_url": "https://www.dgqdm.com/product/33.html"
+    },
+    {
+      "id": 69,
+      "status": "index_or_roundup",
+      "reason": "2026年行业盘点中的红杉投资发生于2025年9月，未披露新融资；消费陪伴产品不因机器人词排除。",
+      "quote": "2025年9月，完成数千万人民币天使+轮融资，由红杉中国独家领投",
+      "lead_source_url": "https://www.21jingji.com/article/20260323/herald/61f17145427b69aa15ff5d9d55f0d457.html"
+    },
+    {
+      "id": 71,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "A轮事实可核，5000万美元是累计总融资；单轮金额保持未披露。",
+      "lead_source_url": "https://www.iyiou.com/data/202606021131635",
+      "results": [
+        {
+          "card_id": "FI-7cdefae56d47e542",
+          "event_id": "EV-00305df9d37dd714",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Mindverse（心洲科技）",
+          "announced_at": "2026-06-02",
+          "amount": "未披露",
+          "round": "A轮",
+          "disclosure_status": "partially_disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-db62e2a369722db7",
+              "quote_hash": "c3192e2ec71a7667dfcb7fa722a3cf13f095696cfea2f1a76a172a48aabb9bc0"
+            },
+            {
+              "source_id": "FISRC-47c7b16c003ccc82",
+              "quote_hash": "9f535b6538fd59b5aef3ed08fb4658e05ad67fd34dbb6424754d7a409f7f1ab1"
+            },
+            {
+              "source_id": "FISRC-db62e2a369722db7",
+              "quote_hash": "77512a5a83e549a1f1c1cd41e058989dab64733431b62a9c17e02935c855212f"
+            },
+            {
+              "source_id": "FISRC-db62e2a369722db7",
+              "quote_hash": "a6a9b7839a4e41a59bd732ad9f849de7b19875cb9e38da7080f4ee3b6c3e6ec6"
+            },
+            {
+              "source_id": "FISRC-1cdcda3c9914c312",
+              "quote_hash": "b4caeed9603ac3f1cb0fcd5602da7bbbe0acd4fec2764cddb72cd19575cf286b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "status": "pending_currency_evidence",
+      "reason": "融资已完成，但千万级没有币种；不推定人民币，等待明确币种原文。",
+      "lead_source_url": "https://life.china.com/2026-03/20/content_554779.html"
+    },
+    {
+      "id": 78,
+      "status": "excluded_robotics",
+      "reason": "影身智能主营柔性智造机器人和具身世界动作模型，已有千台级机器人订单；并非仅模型服务机器人客户。",
+      "quote": "2026年，在手柔性智造订单总额达到数亿元，排产规模千台级，预计今年在晋江交付约300台机器人。",
+      "lead_source_url": "https://www.chinaventure.com.cn/news/114-20260930-393496.html"
+    },
+    {
+      "id": 81,
+      "status": "pending_ai_product_evidence",
+      "reason": "TeddyHoldings.AI的法律服务平台6000万美元种子线索保留；与Hone不是同企业，AI主营产品原文尚不足。",
+      "lead_source_url": "https://www.finsmes.com/2026/10/teddyholdings-ai-raises-60m-in-seed-funding.html"
+    },
+    {
+      "id": 83,
+      "status": "already_covered",
+      "company": "Volantis",
+      "card": "FI-3a45fb24c3af4f80",
+      "reason": "10月1日8800万美元A轮已发布；9700万美元是累计金额。",
+      "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+      "quote": "today announced an $88 million Series A co-led by Lachy Groom and Abstract Ventures",
+      "lead_source_url": "https://www.reuters.com/business/volantis-raises-88-million-tech-connect-ai-memory-chips-2026-10-01/"
+    },
+    {
+      "id": 90,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "Credfix AI债务解决平台，10月7日1.61亿印度卢比种子轮，原币种入库。",
+      "lead_source_url": "https://www.techinasia.com/news/indian-ai-debt-resolution-startup-credfix-raises-1-6m",
+      "results": [
+        {
+          "card_id": "FI-0875e11cbd8249c9",
+          "event_id": "EV-e176581c3d6755de",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Credfix",
+          "announced_at": "2026-10-07",
+          "amount": "Rs 16.1 crore",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ae260f41fda422b0",
+              "quote_hash": "459caf2e4d6579c3e2376790c305556dbab9cc783e42ea8081e940d7e1934fe7"
+            },
+            {
+              "source_id": "FISRC-0a30ec80ec901801",
+              "quote_hash": "713294bf928aca539703fb1d39daea0ef9ec89cbdfb2360b0aefe7f4b28a47d7"
+            },
+            {
+              "source_id": "FISRC-ae260f41fda422b0",
+              "quote_hash": "9ea333f41bc5c91aae970397d7a815e7a7d14af1bc7ce4fa35a1295a89c31d53"
+            },
+            {
+              "source_id": "FISRC-ae260f41fda422b0",
+              "quote_hash": "28db0cf88150eac90e23f9abbf4cc89a0d9b9d9f9d633eab4923efbc457866e0"
+            },
+            {
+              "source_id": "FISRC-ae260f41fda422b0",
+              "quote_hash": "321aef74e05b76e02786062a90fa983c5bb16c2b47d0c5b8b153f1f03bffbad0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "status": "pending_fact_correction",
+      "reason": "正确大河原文确认NIMO/比特幻境、数亿元天使及相同投资方，已发布；报道日期10月8日早于当前10月10日，保留日期修正，不用物外智趣替代。",
+      "lead_source_url": "https://app.dahecube.com/spiderdetail.html?spidid=868538?recid=1"
+    },
+    {
+      "id": 102,
+      "status": "pending_ai_taxonomy_evidence",
+      "reason": "融资事实与研究门禁通过；模型与AI原生OS证据不足以确定基础模型或应用赛道，保留分类复核。",
+      "lead_source_url": "https://lieyunpro.com/news/119670"
+    },
+    {
+      "id": 103,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "FA交易公告与公司官网相互印证1000万美元天使轮，2026年1月完成；GEO应用服务。",
+      "lead_source_url": "https://lieyunpro.com/news/119650",
+      "results": [
+        {
+          "card_id": "FI-25a3342ee506ce62",
+          "event_id": "EV-c2cd2b01a5efb38b",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "杭州盖立克思人工智能有限公司",
+          "announced_at": "2026-01-10",
+          "amount": "1000万美元",
+          "round": "天使轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cc32f14442736dae",
+              "quote_hash": "b9fde742a5d5e54ff46cea9ca785107f7d820022b8a56b0b4356ff616d2cab69"
+            },
+            {
+              "source_id": "FISRC-f37b2d00f01c1b6d",
+              "quote_hash": "8111e66b6990bf4fa91eb63fe164094924ba1c5ee1e7c0f414d5abe387ecb3a3"
+            },
+            {
+              "source_id": "FISRC-cc32f14442736dae",
+              "quote_hash": "d4228b41dc87f5b39f986a1710715c879443604c2b248d42b196f3433f4a4ebe"
+            },
+            {
+              "source_id": "FISRC-cc32f14442736dae",
+              "quote_hash": "91906786e5b82585a453177348630b41697d7d338479c85ccda8cd2ac035bcfe"
+            },
+            {
+              "source_id": "FISRC-422b888286e75617",
+              "quote_hash": "fafe11a8592f38a0348b0255a895456480ed1144d6a2d3a1ba0b42fd069ab385"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "status": "pending_round_date_amount",
+      "reason": "InsForge为AI开发平台，但二次来源出现2025预种子、2026 YC、150万美元及数百万美元不一致；需明确原线索轮次，不把YC加入当新资金到账。",
+      "lead_source_url": "https://lieyunpro.com/news/119294"
+    },
+    {
+      "id": 110,
+      "status": "already_covered",
+      "company": "智象未来",
+      "card": "FI-111c093076dbcf41",
+      "reason": "7月23日15亿元C轮及同一公司世界模型产品，已发布同轮。",
+      "quote": "智象未来宣布完成15亿元人民币C轮融资",
+      "lead_source_url": "https://www.cyzone.cn/article/840889.html"
+    },
+    {
+      "id": 111,
+      "status": "excluded_robotics",
+      "reason": "眸深主营机器人原生具身大脑，与灵生A轮替代无关。",
+      "quote": "通过底层架构的创新，实现最高运动智能密度、最强泛化和自我进化能力的新一代机器人具身大脑。",
+      "lead_source_url": "https://www.cyzone.cn/article/841154.html"
+    },
+    {
+      "id": 112,
+      "status": "excluded_robotics",
+      "reason": "流形空间主营具身基础模型与世界动作模型，非其他Manifold公司；原文明确机器人预训练基模和具身执行。",
+      "quote": "Manifold AI 成立于 2025 年 5 月底，是国内第一家自研世界模型作为具身基础模型的创业公司",
+      "lead_source_url": "https://www.cyzone.cn/article/837232.html"
+    },
+    {
+      "id": 113,
+      "status": "already_covered",
+      "company": "生数科技",
+      "card": "FI-4880b1e3fb7a4da4",
+      "reason": "4月10日近20亿元B轮阿里云领投，已发布，与3亿美元报道同轮。",
+      "quote": "生数科技宣布完成近20亿元人民币B轮融资",
+      "lead_source_url": "https://www.cyzone.cn/article/830019.html"
+    },
+    {
+      "id": 114,
+      "status": "excluded_robotics",
+      "reason": "眸深智能主营通用具身机器人脑，5月3亿元Pre-A排除；后续拟交割轮不批准。",
+      "quote": "全球首个原生范式通用具身大脑打造者眸深智能（Motion Brain）",
+      "lead_source_url": "https://www.cyzone.cn/article/833586.html"
+    },
+    {
+      "id": 115,
+      "status": "historical_before_2026",
+      "reason": "财新原文章为2025-05-21旧融资，不能当2026年新轮。",
+      "source_url": "https://m.caixin.com/m/2025-05-21/102321699.html",
+      "quote": "5月21日，面壁智能宣布完成新一轮数亿元融资",
+      "lead_source_url": "https://m.caixin.com/m/2025-05-21/102321699.html"
+    },
+    {
+      "id": 117,
+      "status": "historical_before_2026",
+      "reason": "交易律师及原始TechCrunch确认2025-09-17，8000万美元是种子与A轮合计，2026年中文转载不是新融资。",
+      "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-irregular-on-dollar80-million-funding-round.html",
+      "quote": "On September 17, 2025",
+      "lead_source_url": "https://m.zhiding.cn/article/3171811.htm"
+    },
+    {
+      "id": 122,
+      "status": "not_financing",
+      "reason": "NOOKLAB是多轮历史累计数亿元，本文产品报道未披露可单独绑定的新轮，移出融资事实复核；保留原文。",
+      "quote": "累计融资数亿元人民币，估值接近 1 亿美元。两轮融资集中在今年年初。",
+      "lead_source_url": "https://beating.news/flash/370696"
+    },
+    {
+      "id": 135,
+      "status": "historical_before_2026",
+      "reason": "原文明确2025-09-03的脑韵千万级天使融资。",
+      "quote": "2025-09-03 16:03",
+      "lead_source_url": "https://www.iyiou.com/briefing/202509031818824"
+    },
+    {
+      "id": 140,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "Creao 4月17日公司公告1000万美元融资，2500万美元累计分开。",
+      "lead_source_url": "https://venturebeat.com/business/creao-ai-raises-10m-to-build-the-platform-where-one-person-does-the-work-of-a-team",
+      "results": [
+        {
+          "card_id": "FI-f099fb3c1077ec09",
+          "event_id": "EV-d88c188529236c7f",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Creao AI",
+          "announced_at": "2026-04-17",
+          "amount": "$10M",
+          "round": "其他融资",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c59e88cf636de760",
+              "quote_hash": "becdd46be3b40e4fe94cd128db5558467821e7d54b563eb570aa042a56c845f4"
+            },
+            {
+              "source_id": "FISRC-836aaa82c8d7d8c2",
+              "quote_hash": "17cdd63ae4eaaa2bdd4a32a37b73334d5ee229e081c17ac9a5d6ee78ab2e967a"
+            },
+            {
+              "source_id": "FISRC-c59e88cf636de760",
+              "quote_hash": "38affca97921cbb10f0af37284d3482596fdebc2a413ffe5eb8e1e4eccbd9352"
+            },
+            {
+              "source_id": "FISRC-c59e88cf636de760",
+              "quote_hash": "ea7c932e7f6df1f788ac74aaf525ff3898751bc293ab84ea5f2ccdbcb7b2e9dc"
+            },
+            {
+              "source_id": "FISRC-836aaa82c8d7d8c2",
+              "quote_hash": "17cdd63ae4eaaa2bdd4a32a37b73334d5ee229e081c17ac9a5d6ee78ab2e967a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "C2i投资方5月27日公告1670万美元A轮，AI加速器软件定义供电半导体。",
+      "lead_source_url": "https://venturebeat.com/business/tdk-ventures-invests-in-c2i-semiconductors-to-revolutionize-ai-data-center-power-delivery",
+      "results": [
+        {
+          "card_id": "FI-d9e3c79e4b3bd20b",
+          "event_id": "EV-adf842f1094c5ffe",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "C2i Semiconductors",
+          "announced_at": "2026-05-27",
+          "amount": "$16.7M",
+          "round": "A轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f3c759ba693ab20",
+              "quote_hash": "d2263b95ac22370c34c326b006e76738a1bec5331a5c65b0ebcf5ae382bbb525"
+            },
+            {
+              "source_id": "FISRC-f2f1977ebf9c7610",
+              "quote_hash": "51a042f075e22b27a5a354986af0090ff2f731d673df5fd5c020c2841593d9b0"
+            },
+            {
+              "source_id": "FISRC-4f3c759ba693ab20",
+              "quote_hash": "b5ce870e7cb8b3aa21e9273e14beb2826bef93eded559ee6be5fbee9e6f72214"
+            },
+            {
+              "source_id": "FISRC-4f3c759ba693ab20",
+              "quote_hash": "08f506a30c7140265cdb5bde4e904415b25244807b67b44dfd12f8840d4d5d5d"
+            },
+            {
+              "source_id": "FISRC-f2f1977ebf9c7610",
+              "quote_hash": "c569893bb476530101f6e0d017d515d22b6c05d987054f1da70ecfe690744b5e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "status": "already_covered",
+      "company": "Rivercell",
+      "card": "FI-cb81a9b89f56c645",
+      "reason": "10月7日2500万美元/2200万欧元为同轮种子融资，HV等投资者和细胞世界模型相同；不新增换算事件。",
+      "source_url": "https://www.businesswire.com/news/home/20261007271014/zh-CN",
+      "quote": "总部位于巴黎的生物技术与AI公司Rivercell今日宣布完成2,500万美元种子轮融资",
+      "lead_source_url": "https://www.businesswire.com/news/home/20261007271014/zh-CN"
+    },
+    {
+      "id": 147,
+      "status": "pending_duplicate_original_binding",
+      "reason": "智谱9月13日50亿美元增发/可转债已发布同记录；仍需路透原文或交易所文件核对融资完成状态，当前网页失败不计零融资。",
+      "lead_source_url": "https://www.reuters.com/world/asia-pacific/chinas-zai-raises-5-billion-new-share-convertible-bond-sales-filing-shows-2026-09-13/"
+    },
+    {
+      "id": 149,
+      "status": "already_covered",
+      "company": "Anew Labs（新生实验室）",
+      "card": "FI-e81dafc2defecb80",
+      "reason": "路透9月16日Anew Labs 2.9亿美元分拆融资已发布；主体不绑定字节整体。",
+      "source_url": "https://www.moneycontrol.com/news/business/bytedance-s-ai-drugmaking-spin-off-raises-290-million-at-1-5-billion-valuation-sources-say-14031049.html",
+      "quote": "ByteDance has completed a $290 million fundraising for its AI drugmaking unit",
+      "lead_source_url": "https://www.reuters.com/legal/transactional/bytedance-completes-290-million-fundraising-ai-drug-unit-after-its-spin-off-2026-09-16/"
+    },
+    {
+      "id": 154,
+      "status": "pending_closing_and_same_round",
+      "reason": "DeepX三星147亿韩元增资与8月420亿韩元D轮须核对交割/分期，不能把拟参与增资批准为已完成D+。",
+      "lead_source_url": "https://www.techinasia.com/news/deepx-raises-11m-from-samsung-securities-svic"
+    },
+    {
+      "id": 157,
+      "status": "pending_cross_source_semantic_binding",
+      "reason": "Waymo官方确认50亿美元首笔债务融资，官方Driver页面确认AI产品；尚缺正式事实层跨来源语义绑定，未作为机器人主营排除。",
+      "lead_source_url": "https://www.ithome.com/1/010/734.htm"
+    },
+    {
+      "id": 161,
+      "status": "pending_ai_product_evidence",
+      "reason": "磐如生物真实业务是mRNA疫苗/LNP递送；融资真实但尚无AI主营原文，不按生物医药标签自动批准或排除。",
+      "lead_source_url": "https://lieyunpro.com/news/119679"
+    },
+    {
+      "id": 164,
+      "status": "already_covered",
+      "company": "VITURE",
+      "card": "FI-41a4a8f4744f72f3",
+      "reason": "公司2月26日公告1亿美元，君联领投，已发布同轮；2亿累计不是新轮。",
+      "source_url": "https://www.viture.com/blog/viture-starts-2026-strong-with-another-100m-raise-surpassing-200m-in-six-months",
+      "quote": "The latest round is led by Legend Capital",
+      "lead_source_url": "https://www.tmtpost.com/7892865.html"
+    },
+    {
+      "id": 165,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "AIVELA 6月29日首轮数百万美元，AI健康agent戒指；不采错误标题数千万元或更新日期10月12日。",
+      "lead_source_url": "https://www.donews.com/news/detail/1/6613216.html",
+      "results": [
+        {
+          "card_id": "FI-fd02f51ac7059052",
+          "event_id": "EV-f1887398d03748c2",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "AIVELA",
+          "announced_at": "2026-06-29",
+          "amount": "数百万美元",
+          "round": "其他融资",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-205a3b05b631cdd8",
+              "quote_hash": "99232e4eb9b590c4d26c6e8ff683b698926e8d81c8441870e2a5997728844224"
+            },
+            {
+              "source_id": "FISRC-205a3b05b631cdd8",
+              "quote_hash": "d77de189f235ce51e82db01095c2310dc926ab717596b5973744ffbf64326767"
+            },
+            {
+              "source_id": "FISRC-205a3b05b631cdd8",
+              "quote_hash": "605d3a0833e9c7d8dda78aaab33f85cf5b6b17128d872260b30ba9faed51044d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 166,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "Superpose公司9月15日融资220万美元，AI拍照引导；恢复正确来源。",
+      "lead_source_url": "https://m.36kr.com/p/4014406080417671",
+      "results": [
+        {
+          "card_id": "FI-f6526ba1ab42a735",
+          "event_id": "EV-70045a46dafeaf68",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Superpose",
+          "announced_at": "2026-09-15",
+          "amount": "$2.2 million",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-56fb03980ba6a7c5",
+              "quote_hash": "6317a10f0221b1367cd29585318bb14066b99af0531b51c21096843513b1592d"
+            },
+            {
+              "source_id": "FISRC-bfa4a4a407eacc66",
+              "quote_hash": "8606fafb9abba631e4d9b2bab90bd9f39285a5bbcc9d19e5d5d5ee886fdf53ce"
+            },
+            {
+              "source_id": "FISRC-56fb03980ba6a7c5",
+              "quote_hash": "f2f9d161a262c970599bf91b12eb66948a586d9aefc278e47cd1411fba457a0f"
+            },
+            {
+              "source_id": "FISRC-2f9290df0b49f612",
+              "quote_hash": "3541f31b5a84f55d2071986c255358c50d092eb869ac6280d6ac90d457fc4ca5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "恒瀚微天使近亿元，找到8月24日原融资公告，10月9日不是新一轮。",
+      "lead_source_url": "https://www.cyzone.cn/article/848511.html",
+      "results": [
+        {
+          "card_id": "FI-2d1d1c9c7f2fd59f",
+          "event_id": "EV-8186eedd977834f6",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "成都恒瀚微电子有限公司",
+          "announced_at": "2026-08-24",
+          "amount": "近亿元人民币",
+          "round": "天使轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a1bbef8de940dce4",
+              "quote_hash": "024e0aad25eaed5c9ad36d6a23a1bdd36cfa16aa95399a596a9223319a9b0e1a"
+            },
+            {
+              "source_id": "FISRC-6c701d4f95355945",
+              "quote_hash": "fe304a281e4dfc106858aae84fd9958ee33f2f160a37cd997b36f33973808e2b"
+            },
+            {
+              "source_id": "FISRC-a1bbef8de940dce4",
+              "quote_hash": "b5ef96626c98f241ad3d7051e7fb52f32a56077ba042bded09ad550a09589ebd"
+            },
+            {
+              "source_id": "FISRC-a1bbef8de940dce4",
+              "quote_hash": "dbd978e7d9392ac42e5ceba9d427535a66c678a8286e7528281ddb7b5b118192"
+            },
+            {
+              "source_id": "FISRC-3c236d1bf92586a9",
+              "quote_hash": "0917a90d1f3cbc606355a79ec230d75f5dab491cbd983b5967f0b86ed123dfb3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 176,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "OllyGarden公司10月9日400万美元，Rose为当前AI OpenTelemetry工程师。",
+      "lead_source_url": "https://tech.eu/2026/10/09/ollygarden-bags-4m-to-improve-telemetry-quality/",
+      "results": [
+        {
+          "card_id": "FI-30636d7574946109",
+          "event_id": "EV-a58d2d7fca242811",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "OllyGarden",
+          "announced_at": "2026-10-09",
+          "amount": "$4m",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a624307985a32fe5",
+              "quote_hash": "1142df5c210d46ba663c755430e855d5a2869afa439bd9a901d8a4c329127efc"
+            },
+            {
+              "source_id": "FISRC-499be7b91b8e2739",
+              "quote_hash": "cd3aa9a8977cca2b8fa570af7b497de6ae8e74c2fce13db675a03a03c400c4a8"
+            },
+            {
+              "source_id": "FISRC-a624307985a32fe5",
+              "quote_hash": "9a615eef52bb0506c15190dee5fbbfda00f6ac60506bd5836d40adf0e9a29b9a"
+            },
+            {
+              "source_id": "FISRC-a624307985a32fe5",
+              "quote_hash": "f4d6c1a31171cad85031144a625b523da0b3d9a044590410d9d80430da309f12"
+            },
+            {
+              "source_id": "FISRC-239fb00de3e68610",
+              "quote_hash": "df4ffdae0618ace0aacef8dce2b1f9a0fa28b9d3faeb16a8246dccfb4094c46f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 178,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "Netomi 4月30日1.1亿美元AI客服融资，不抽取背景其他公司。",
+      "lead_source_url": "https://venturebeat.com/technology/netomi-raises-110-million-as-accenture-and-adobe-bet-on-ai-for-customer-service",
+      "results": [
+        {
+          "card_id": "FI-74e3fe8abf3bec80",
+          "event_id": "EV-fb466830d5c49aea",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Netomi",
+          "announced_at": "2026-04-30",
+          "amount": "$110 million",
+          "round": "C轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-718abe345b56e368",
+              "quote_hash": "82fc736eaa6f229c2e48acdf828230ddf9771d781b7ddfaaba1e25b716e85fc1"
+            },
+            {
+              "source_id": "FISRC-746874e2d36ccb3c",
+              "quote_hash": "49512832b98b0e8cf337242d5980661d4d3254616a2ec1e088c69e2804cd6844"
+            },
+            {
+              "source_id": "FISRC-718abe345b56e368",
+              "quote_hash": "5ea9f70fdc8d183588227e20e27598d4d4005c17274a3d7f240bbd0b58635db2"
+            },
+            {
+              "source_id": "FISRC-718abe345b56e368",
+              "quote_hash": "15dc3df9ff409f8db3d8258978264724913a827968c6b15af91502e2508d8a5b"
+            },
+            {
+              "source_id": "FISRC-920c1440f0e930ff",
+              "quote_hash": "079722b3c02a45c57aa847b9e7830329baa308de062fa96d46a074b2e60478d0"
+            },
+            {
+              "source_id": "FISRC-746874e2d36ccb3c",
+              "quote_hash": "a05ada4776269abdab1c434818c5c364af8161e8dddb25848e9e13f7698a6716"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "Cimento公司5月13日约300万美元preseed；AI原生human/agent risk管理。",
+      "lead_source_url": "https://www.finsmes.com/2026/05/cimento-ai-raises-3m-in-pre-seed-funding.html",
+      "results": [
+        {
+          "card_id": "FI-17d13544a6a693da",
+          "event_id": "EV-92a426739f908c92",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Cimento",
+          "announced_at": "2026-05-13",
+          "amount": "~$3M",
+          "round": "预种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a95a5f200afb6976",
+              "quote_hash": "3f2bd01b378c0a2e0063d40086b5630e19c36babc4e51c5d7163543e428cc29f"
+            },
+            {
+              "source_id": "FISRC-a95a5f200afb6976",
+              "quote_hash": "859ad43a37570ecf373f131e633af551a17a413289600422bdc2eefe3044448a"
+            },
+            {
+              "source_id": "FISRC-a95a5f200afb6976",
+              "quote_hash": "59d910acc513442e58e1a619621899863707204ab34cc4966b235da42b75d787"
+            },
+            {
+              "source_id": "FISRC-a95a5f200afb6976",
+              "quote_hash": "2d0636e69385178be61c40f16ce7ef45fbbbd9714f3f4fb639300ae0ba8e2252"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 182,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "Nexthop公司3月10日5亿美元B轮，42亿估值分开，AI联网基础设施。",
+      "lead_source_url": "https://www.businesswire.com/news/home/20260310873070/zh-CN",
+      "results": [
+        {
+          "card_id": "FI-4f0f88e54ede687c",
+          "event_id": "EV-b3642bc761ee4665",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Nexthop AI",
+          "announced_at": "2026-03-10",
+          "amount": "$500 Million",
+          "round": "B轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-084074056d609e70",
+              "quote_hash": "d15cac5a1a9e331332af3abd22166928845eca2efd77305ca6259674b7c8616a"
+            },
+            {
+              "source_id": "FISRC-08a23a64700b54de",
+              "quote_hash": "7de951e58d6a749d8da67818c414c20854983d3fc9e3fbe01da85baf0bb381bf"
+            },
+            {
+              "source_id": "FISRC-084074056d609e70",
+              "quote_hash": "d15cac5a1a9e331332af3abd22166928845eca2efd77305ca6259674b7c8616a"
+            },
+            {
+              "source_id": "FISRC-08a23a64700b54de",
+              "quote_hash": "e94bb2568bd59215c185168de4655ce4c847f8ac5f5c7eebbe9cb8082dd83075"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 183,
+      "status": "gates_passed_awaiting_publication",
+      "reason": "Waiv公司原文3月12日3300万美元，病理AI平台；后补3500万累计不作本轮。",
+      "lead_source_url": "https://www.businesswire.com/news/home/20260312735196/en/Waiv-Secures-%2433-Million-to-Scale-AI-Precision-Testing",
+      "results": [
+        {
+          "card_id": "FI-7b1e46ddebdafd10",
+          "event_id": "EV-21aeb42806158098",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Waiv",
+          "announced_at": "2026-03-12",
+          "amount": "$33 million",
+          "round": "A轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-36c850e4e69c202f",
+              "quote_hash": "92853469d9ef999e2a1ef3f15b710abe983695c8c2602e1badcf47ac5b936f57"
+            },
+            {
+              "source_id": "FISRC-a53cb36331f951de",
+              "quote_hash": "4a0f2d5cdab2bfc1324886da8f011ec81ff23e354078f9fe67d90962155cff8a"
+            },
+            {
+              "source_id": "FISRC-36c850e4e69c202f",
+              "quote_hash": "d542a5d0ec1032dedb472f4e5e4068a9bfb4ea5141b1814b0eace63998f778ef"
+            },
+            {
+              "source_id": "FISRC-a53cb36331f951de",
+              "quote_hash": "c3084e9322a722c9fe2fb75e33416ed622366d5200215431b6c525a644cc69a1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "status": "pending_authoritative_closing_original",
+      "reason": "Ramp 18.5亿美元线索仍有价值；Bloomberg原文受限、其他报道同时出现已融资与早期洽谈，保留交割/轮次缺口。",
+      "lead_source_url": "https://www.bloomberg.com/news/articles/2026-10-09/ramp-hits-60-billion-valuation-in-1-85-billion-funding-round"
+    },
+    {
+      "id": 188,
+      "status": "pending_ai_product_evidence",
+      "reason": "Universal Quantum 1亿美元融资可查，但现有证据为通用量子计算硬件，尚不能证明AI主营；与来源136可关联，不当AI专用芯片发布。",
+      "lead_source_url": "https://www.techinasia.com/news/uk-quantum-startup-raises-100m-expands-singapore"
+    },
+    {
+      "id": 190,
+      "status": "pending_company_identity",
+      "reason": "田柯宇近3000万美元融资，原文明确公司名称产品未公开；不能强行绑定另一家世界模型公司。",
+      "lead_source_url": "https://www.ithome.com/1/010/356.htm"
+    },
+    {
+      "id": 191,
+      "status": "already_covered",
+      "company": "TypeSafe AI",
+      "card_name": "TypeSafe AI",
+      "reason": "原文87000万美元A轮、75亿美元估值、Jev产品及a16z领投均对应已发布TypeSafe；拒绝DeepSeek错配。",
+      "quote": "The development company TypeSafe AI behind Jev recently completed $870 million in financing",
+      "lead_source_url": "https://eu.36kr.com/en/p/4019333008840320"
+    },
+    {
+      "id": 192,
+      "status": "historical_before_2026",
+      "reason": "恢复智东西原文，2025-12-09报道Unconventional AI 4.75亿美元种子，非Upscale，非2026新融资。",
+      "source_url": "https://zhidx.com/p/520294.html",
+      "quote": "Unconventional AI，宣布完成4.75亿美元",
+      "lead_source_url": "https://zhuanlan.zhihu.com/p/1981817937510831385"
+    },
+    {
+      "id": 194,
+      "status": "historical_before_2026",
+      "reason": "IXI公司官网明确2025-04-29的3650万美元A轮旧融资。",
+      "source_url": "https://ixieyewear.com/articles/ixi-raises-365-million-series-a-to-develop-autofocus-eyewear-that-will-transform-how-humanity-sees-",
+      "quote": "29 April 2025",
+      "lead_source_url": "https://www.linkedin.com/posts/haynesdave_pixieray-have-rebranded-to-ixi-and-have-activity-7322980499319083008-jGRn"
+    },
+    {
+      "id": 197,
+      "status": "pending_linked_same_round",
+      "reason": "确认主体为百趣生物，同10月10日B轮，与198合并作为补充来源；AI产品证据门禁未过，不作事实关闭。",
+      "linked_id": 198,
+      "lead_source_url": "https://www.cyzone.cn/article/848592.html"
+    },
+    {
+      "id": 198,
+      "status": "pending_ai_product_evidence",
+      "reason": "百趣近亿元B轮已核，当前是多组学服务/数据供给，融资投向AI4S不自动证明当前AI主营；保留产品算法原文缺口。",
+      "lead_source_url": "https://www.chinaventure.com.cn/news/111-20261010-393557.html"
+    },
+    {
+      "id": 206,
+      "status": "pending_same_round_original",
+      "reason": "DeepX 8月420亿韩元D轮第一批交割，和10月三星增资是否同轮需要原文确认；不重复加金额。",
+      "lead_source_url": "https://zhuanlan.zhihu.com/p/2067925402320902095"
+    },
+    {
+      "id": 215,
+      "status": "already_covered",
+      "company": "Helix Digital Infrastructure",
+      "card": "FI-9d27f5dcb579f980",
+      "reason": "9月29日三星10亿美元投资同事件已发布；公司公告没有A轮，保留未披露轮次。",
+      "source_url": "https://news.samsung.com/global/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+      "quote": "investing a combined USD 1 billion in Helix Digital Infrastructure",
+      "lead_source_url": "https://www.iyiou.com/data/202609291142470"
+    },
+    {
+      "id": 224,
+      "status": "pending_ai_product_evidence",
+      "reason": "Zomint公司官网确认AI研究辅助财富专家，但具体AI产品/主营占比仍不明；不因财富科技直接排除，保留原融资与具体缺口。",
+      "lead_source_url": "https://entrackr.com/snippets/zomint-raises-rs-36-cr-seed-round-from-lightspeed-and-prime-venture-partners-12631666"
+    }
+  ],
+  "requests": {
+    "direct_original_requests": 90,
+    "web_search_queries": 73,
+    "web_original_open_click_requests": 23,
+    "discovery_reused": true,
+    "production_provider_usage": "See preserved production receipts; accounted separately from original capture."
+  }
+}

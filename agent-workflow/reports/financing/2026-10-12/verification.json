@@ -2147,15 +2147,15 @@
     "https://www.cyzone.cn/article/848511.html": {
       "source_url": "https://www.cyzone.cn/article/848511.html",
       "original_reason": "original_date_missing",
-      "status": "pending",
-      "reason": "alternate_original_requires_identity_review",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [],
       "title": "破解智算拥塞的行业难题，这家成立两年的公司拿下近亿元融资",
@@ -2180,69 +2180,128 @@
         "origin_date": "2026-10-10",
         "rounds": 0,
         "stop_after_date": "2026-10-17",
-        "followup": {
-          "source_url": "https://www.cyzone.cn/article/848511.html",
-          "original_reason": "original_date_missing",
-          "status": "needs_attention",
-          "reason": "alternate_original_requires_identity_review",
-          "checks": {
-            "company_identity": "pending",
-            "ai_relevance": "pending",
-            "date": "pending",
-            "amount": "pending",
-            "round": "pending",
-            "deduplication": "pending"
-          },
-          "capture_attempts": [],
-          "title": "破解智算拥塞的行业难题，这家成立两年的公司拿下近亿元融资",
-          "origin_date": "2026-10-10",
-          "rounds": 0,
-          "stop_after_date": "2026-10-17",
-          "content_hash": "c8e7f643abd45106414ae29d128be887a5dbd5474225b0bb35d11aac23a17199",
-          "evidence_source_url": "https://news.qq.com/rain/a/20261009A055FI00",
-          "used_existing_original": true,
-          "alternate_source": true,
-          "resumed_fact_review": true,
-          "source_identity_reviewed": false,
-          "evidence_ref": "evidence://c8e7f643abd45106414ae29d128be887a5dbd5474225b0bb35d11aac23a17199",
-          "next_due_date": null,
-          "last_processed_date": "2026-10-11",
-          "owner": "responsible_financing_reviewer",
-          "next_action": "review_original_company_and_round_binding_before_supplement",
-          "review_stage": "source_identity_review",
-          "value_triage": {
-            "id": 443,
-            "source_url": "https://www.cyzone.cn/article/848511.html",
-            "title": "破解智算拥塞的行业难题，这家成立两年的公司拿下近亿元融资",
-            "decision": "retain_targeted_review",
-            "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
-            "evidence_basis": "responsible_lead_triage_not_fact_approval",
-            "content_hash": "c8e7f643abd45106414ae29d128be887a5dbd5474225b0bb35d11aac23a17199",
-            "evidence_source_url": "https://news.qq.com/rain/a/20261009A055FI00",
-            "reviewed_at": "2026-10-11T02:58:36.176Z",
-            "reviewed_by": "Codex responsible financing reviewer",
-            "secondary_search": {
-              "status": "reuse_existing_original",
-              "content_hash": "c8e7f643abd45106414ae29d128be887a5dbd5474225b0bb35d11aac23a17199"
-            },
-            "priority": "ai_scope_or_original_date_first",
-            "fact_approved": false
-          },
-          "continued_search_review": {
-            "date": "2026-10-11",
-            "reviewed_by": "Codex responsible financing reviewer",
-            "status": "search_completed_not_fact_approval",
-            "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
-            "source_identity_review_required": true,
-            "priority_original_receipts": []
-          }
-        },
+        "content_hash": "c8e7f643abd45106414ae29d128be887a5dbd5474225b0bb35d11aac23a17199",
+        "evidence_source_url": "https://news.qq.com/rain/a/20261009A055FI00",
+        "used_existing_original": true,
+        "alternate_source": true,
+        "resumed_fact_review": true,
+        "source_identity_reviewed": false,
+        "evidence_ref": "evidence://c8e7f643abd45106414ae29d128be887a5dbd5474225b0bb35d11aac23a17199",
         "next_due_date": null,
-        "last_processed_date": "2026-10-12",
+        "last_processed_date": "2026-10-11",
         "owner": "responsible_financing_reviewer",
         "next_action": "review_original_company_and_round_binding_before_supplement",
-        "review_stage": "needs_original"
-      }
+        "review_stage": "source_identity_review",
+        "value_triage": {
+          "id": 443,
+          "source_url": "https://www.cyzone.cn/article/848511.html",
+          "title": "破解智算拥塞的行业难题，这家成立两年的公司拿下近亿元融资",
+          "decision": "retain_targeted_review",
+          "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+          "evidence_basis": "responsible_lead_triage_not_fact_approval",
+          "content_hash": "c8e7f643abd45106414ae29d128be887a5dbd5474225b0bb35d11aac23a17199",
+          "evidence_source_url": "https://news.qq.com/rain/a/20261009A055FI00",
+          "reviewed_at": "2026-10-11T02:58:36.176Z",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "secondary_search": {
+            "status": "reuse_existing_original",
+            "content_hash": "c8e7f643abd45106414ae29d128be887a5dbd5474225b0bb35d11aac23a17199"
+          },
+          "priority": "ai_scope_or_original_date_first",
+          "fact_approved": false
+        },
+        "continued_search_review": {
+          "date": "2026-10-11",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "status": "search_completed_not_fact_approval",
+          "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+          "source_identity_review_required": true,
+          "priority_original_receipts": []
+        }
+      },
+      "next_due_date": null,
+      "last_processed_date": "2026-10-12",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "复用8月24日原融资公告，不把10月9日人物访谈再计新轮。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:58.692Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://www.cyzone.cn/article/848511.html",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
+      "evidence_source_url": "https://www.cyzone.cn/article/844134.html",
+      "evidence_ref": "evidence://35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
+      "raw_ids": [
+        "RAW-40cf5f8fd535c9b4"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://www.cyzone.cn/article/844134.html",
+        "content_hash": "35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:58.692Z",
+        "reason": "复用8月24日原融资公告，不把10月9日人物访谈再计新轮。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "alternate_source": true,
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-2d1d1c9c7f2fd59f",
+          "event_id": "EV-8186eedd977834f6",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "成都恒瀚微电子有限公司",
+          "announced_at": "2026-08-24",
+          "amount": "近亿元人民币",
+          "round": "天使轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a1bbef8de940dce4",
+              "quote_hash": "024e0aad25eaed5c9ad36d6a23a1bdd36cfa16aa95399a596a9223319a9b0e1a"
+            },
+            {
+              "source_id": "FISRC-6c701d4f95355945",
+              "quote_hash": "fe304a281e4dfc106858aae84fd9958ee33f2f160a37cd997b36f33973808e2b"
+            },
+            {
+              "source_id": "FISRC-a1bbef8de940dce4",
+              "quote_hash": "b5ef96626c98f241ad3d7051e7fb52f32a56077ba042bded09ad550a09589ebd"
+            },
+            {
+              "source_id": "FISRC-a1bbef8de940dce4",
+              "quote_hash": "dbd978e7d9392ac42e5ceba9d427535a66c678a8286e7528281ddb7b5b118192"
+            },
+            {
+              "source_id": "FISRC-3c236d1bf92586a9",
+              "quote_hash": "0917a90d1f3cbc606355a79ec230d75f5dab491cbd983b5967f0b86ed123dfb3"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.cyzone.cn/article/848568.html": {
       "source_url": "https://www.cyzone.cn/article/848568.html",
@@ -2652,82 +2711,136 @@
     "https://tech.eu/2026/10/09/ollygarden-bags-4m-to-improve-telemetry-quality/": {
       "source_url": "https://tech.eu/2026/10/09/ollygarden-bags-4m-to-improve-telemetry-quality/",
       "original_reason": "ai_relevance_unverified",
-      "status": "pending",
-      "reason": "no_accepted_financing_event_manual_review_required",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [],
       "title": "OllyGarden bags $4M to improve telemetry quality",
       "origin_date": "2026-10-10",
       "rounds": 2,
       "stop_after_date": "2026-10-17",
-      "followup": {
+      "content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+      "evidence_source_url": "https://ollygarden.com/resources/press-releases/ollygarden-raises-4m-launches-minimum-viable-instrumentation",
+      "used_existing_original": true,
+      "alternate_source": true,
+      "resumed_fact_review": false,
+      "source_identity_reviewed": true,
+      "raw_ids": [
+        "RAW-90a821f2bd8a12ec"
+      ],
+      "evidence_ref": "evidence://3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+      "last_processed_date": "2026-10-11",
+      "next_due_date": null,
+      "owner": "responsible_financing_reviewer",
+      "next_action": "本轮400万美元；Rose是当前AI OpenTelemetry工程师，非仅潜在AI客户。",
+      "review_stage": "fact_review",
+      "last_fact_review_hash": "10c46d623ac68747dabd4b17ff9586ab1bba279665a0e419391c0d5f1809f7bb",
+      "value_triage": {
+        "id": 456,
         "source_url": "https://tech.eu/2026/10/09/ollygarden-bags-4m-to-improve-telemetry-quality/",
-        "original_reason": "ai_relevance_unverified",
-        "status": "needs_attention",
-        "reason": "no_accepted_financing_event_manual_review_required",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [],
         "title": "OllyGarden bags $4M to improve telemetry quality",
-        "origin_date": "2026-10-10",
-        "rounds": 2,
-        "stop_after_date": "2026-10-17",
+        "decision": "retain_targeted_review",
+        "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+        "evidence_basis": "responsible_lead_triage_not_fact_approval",
         "content_hash": "10c46d623ac68747dabd4b17ff9586ab1bba279665a0e419391c0d5f1809f7bb",
         "evidence_source_url": "https://tech.eu/2026/10/09/ollygarden-bags-4m-to-improve-telemetry-quality/",
-        "used_existing_original": true,
-        "alternate_source": false,
-        "resumed_fact_review": false,
-        "source_identity_reviewed": false,
-        "raw_ids": [
-          "RAW-f05defcade1af831"
-        ],
-        "evidence_ref": "evidence://10c46d623ac68747dabd4b17ff9586ab1bba279665a0e419391c0d5f1809f7bb",
-        "last_processed_date": "2026-10-11",
-        "next_due_date": null,
-        "owner": "responsible_financing_reviewer",
-        "next_action": "supply_new_original_and_review_without_clearing_attempt_receipts",
-        "review_stage": "needs_original",
-        "last_fact_review_hash": "10c46d623ac68747dabd4b17ff9586ab1bba279665a0e419391c0d5f1809f7bb",
-        "value_triage": {
-          "id": 456,
-          "source_url": "https://tech.eu/2026/10/09/ollygarden-bags-4m-to-improve-telemetry-quality/",
-          "title": "OllyGarden bags $4M to improve telemetry quality",
-          "decision": "retain_targeted_review",
-          "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
-          "evidence_basis": "responsible_lead_triage_not_fact_approval",
-          "content_hash": "10c46d623ac68747dabd4b17ff9586ab1bba279665a0e419391c0d5f1809f7bb",
-          "evidence_source_url": "https://tech.eu/2026/10/09/ollygarden-bags-4m-to-improve-telemetry-quality/",
-          "reviewed_at": "2026-10-11T02:58:36.176Z",
-          "reviewed_by": "Codex responsible financing reviewer",
-          "secondary_search": {
-            "status": "reuse_existing_original",
-            "content_hash": "10c46d623ac68747dabd4b17ff9586ab1bba279665a0e419391c0d5f1809f7bb"
-          },
-          "priority": "ai_scope_or_original_date_first",
-          "fact_approved": false
+        "reviewed_at": "2026-10-11T02:58:36.176Z",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "secondary_search": {
+          "status": "reuse_existing_original",
+          "content_hash": "10c46d623ac68747dabd4b17ff9586ab1bba279665a0e419391c0d5f1809f7bb"
         },
-        "continued_search_review": {
-          "date": "2026-10-11",
-          "reviewed_by": "Codex responsible financing reviewer",
-          "status": "search_completed_not_fact_approval",
-          "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
-          "source_identity_review_required": true,
-          "priority_original_receipts": []
+        "priority": "ai_scope_or_original_date_first",
+        "fact_approved": false
+      },
+      "continued_search_review": {
+        "date": "2026-10-11",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "status": "search_completed_not_fact_approval",
+        "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+        "source_identity_review_required": true,
+        "priority_original_receipts": []
+      },
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:59.255Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://tech.eu/2026/10/09/ollygarden-bags-4m-to-improve-telemetry-quality/",
+          "content_hash": "10c46d623ac68747dabd4b17ff9586ab1bba279665a0e419391c0d5f1809f7bb",
+          "raw_ids": [
+            "RAW-f05defcade1af831"
+          ],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
         }
-      }
+      ],
+      "source_binding": {
+        "source_url": "https://ollygarden.com/resources/press-releases/ollygarden-raises-4m-launches-minimum-viable-instrumentation",
+        "content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:59.255Z",
+        "reason": "本轮400万美元；Rose是当前AI OpenTelemetry工程师，非仅潜在AI客户。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-30636d7574946109",
+          "event_id": "EV-a58d2d7fca242811",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "OllyGarden",
+          "announced_at": "2026-10-09",
+          "amount": "$4m",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a624307985a32fe5",
+              "quote_hash": "1142df5c210d46ba663c755430e855d5a2869afa439bd9a901d8a4c329127efc"
+            },
+            {
+              "source_id": "FISRC-499be7b91b8e2739",
+              "quote_hash": "cd3aa9a8977cca2b8fa570af7b497de6ae8e74c2fce13db675a03a03c400c4a8"
+            },
+            {
+              "source_id": "FISRC-a624307985a32fe5",
+              "quote_hash": "9a615eef52bb0506c15190dee5fbbfda00f6ac60506bd5836d40adf0e9a29b9a"
+            },
+            {
+              "source_id": "FISRC-a624307985a32fe5",
+              "quote_hash": "f4d6c1a31171cad85031144a625b523da0b3d9a044590410d9d80430da309f12"
+            },
+            {
+              "source_id": "FISRC-239fb00de3e68610",
+              "quote_hash": "df4ffdae0618ace0aacef8dce2b1f9a0fa28b9d3faeb16a8246dccfb4094c46f"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://tech.eu/2026/10/08/university-of-sussex-quantum-spinout-raises-record-ps100m-series-a/": {
       "source_url": "https://tech.eu/2026/10/08/university-of-sussex-quantum-spinout-raises-record-ps100m-series-a/",
@@ -3436,15 +3549,15 @@
     "https://www.techinasia.com/news/indian-ai-debt-resolution-startup-credfix-raises-1-6m": {
       "source_url": "https://www.techinasia.com/news/indian-ai-debt-resolution-startup-credfix-raises-1-6m",
       "original_reason": "original_unreadable",
-      "status": "pending",
-      "reason": "alternate_original_requires_identity_review",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [],
       "title": "Indian AI debt-resolution startup Credfix raises $1.67m",
@@ -3469,69 +3582,128 @@
         "origin_date": "2026-10-08",
         "rounds": 0,
         "stop_after_date": "2026-10-15",
-        "followup": {
-          "source_url": "https://www.techinasia.com/news/indian-ai-debt-resolution-startup-credfix-raises-1-6m",
-          "original_reason": "original_unreadable",
-          "status": "needs_attention",
-          "reason": "alternate_original_requires_identity_review",
-          "checks": {
-            "company_identity": "pending",
-            "ai_relevance": "pending",
-            "date": "pending",
-            "amount": "pending",
-            "round": "pending",
-            "deduplication": "pending"
-          },
-          "capture_attempts": [],
-          "title": "Indian AI debt-resolution startup Credfix raises $1.67m",
-          "origin_date": "2026-10-08",
-          "rounds": 0,
-          "stop_after_date": "2026-10-15",
-          "content_hash": "ea9b658264afc9eb940b64fe2b14361d3d5c67ff7ec7b7fd3ef3de0123427128",
-          "evidence_source_url": "https://www.gate.com/news/detail/credfix-raises-167m-in-seed-funding-on-october-7-to-expand-ai-debt-24801349",
-          "used_existing_original": true,
-          "alternate_source": true,
-          "resumed_fact_review": true,
-          "source_identity_reviewed": false,
-          "evidence_ref": "evidence://ea9b658264afc9eb940b64fe2b14361d3d5c67ff7ec7b7fd3ef3de0123427128",
-          "next_due_date": null,
-          "last_processed_date": "2026-10-11",
-          "owner": "responsible_financing_reviewer",
-          "next_action": "review_original_company_and_round_binding_before_supplement",
-          "review_stage": "source_identity_review",
-          "value_triage": {
-            "id": 269,
-            "source_url": "https://www.techinasia.com/news/indian-ai-debt-resolution-startup-credfix-raises-1-6m",
-            "title": "Indian AI debt-resolution startup Credfix raises $1.67m",
-            "decision": "retain_targeted_review",
-            "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
-            "evidence_basis": "responsible_lead_triage_not_fact_approval",
-            "content_hash": "ea9b658264afc9eb940b64fe2b14361d3d5c67ff7ec7b7fd3ef3de0123427128",
-            "evidence_source_url": "https://www.gate.com/news/detail/credfix-raises-167m-in-seed-funding-on-october-7-to-expand-ai-debt-24801349",
-            "reviewed_at": "2026-10-11T02:58:36.176Z",
-            "reviewed_by": "Codex responsible financing reviewer",
-            "secondary_search": {
-              "status": "reuse_existing_original",
-              "content_hash": "ea9b658264afc9eb940b64fe2b14361d3d5c67ff7ec7b7fd3ef3de0123427128"
-            },
-            "priority": "funding_or_identity_issue_with_specific_subject",
-            "fact_approved": false
-          },
-          "continued_search_review": {
-            "date": "2026-10-11",
-            "reviewed_by": "Codex responsible financing reviewer",
-            "status": "search_completed_not_fact_approval",
-            "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
-            "source_identity_review_required": true,
-            "priority_original_receipts": []
-          }
-        },
+        "content_hash": "ea9b658264afc9eb940b64fe2b14361d3d5c67ff7ec7b7fd3ef3de0123427128",
+        "evidence_source_url": "https://www.gate.com/news/detail/credfix-raises-167m-in-seed-funding-on-october-7-to-expand-ai-debt-24801349",
+        "used_existing_original": true,
+        "alternate_source": true,
+        "resumed_fact_review": true,
+        "source_identity_reviewed": false,
+        "evidence_ref": "evidence://ea9b658264afc9eb940b64fe2b14361d3d5c67ff7ec7b7fd3ef3de0123427128",
         "next_due_date": null,
-        "last_processed_date": "2026-10-12",
+        "last_processed_date": "2026-10-11",
         "owner": "responsible_financing_reviewer",
         "next_action": "review_original_company_and_round_binding_before_supplement",
-        "review_stage": "needs_original"
-      }
+        "review_stage": "source_identity_review",
+        "value_triage": {
+          "id": 269,
+          "source_url": "https://www.techinasia.com/news/indian-ai-debt-resolution-startup-credfix-raises-1-6m",
+          "title": "Indian AI debt-resolution startup Credfix raises $1.67m",
+          "decision": "retain_targeted_review",
+          "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+          "evidence_basis": "responsible_lead_triage_not_fact_approval",
+          "content_hash": "ea9b658264afc9eb940b64fe2b14361d3d5c67ff7ec7b7fd3ef3de0123427128",
+          "evidence_source_url": "https://www.gate.com/news/detail/credfix-raises-167m-in-seed-funding-on-october-7-to-expand-ai-debt-24801349",
+          "reviewed_at": "2026-10-11T02:58:36.176Z",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "secondary_search": {
+            "status": "reuse_existing_original",
+            "content_hash": "ea9b658264afc9eb940b64fe2b14361d3d5c67ff7ec7b7fd3ef3de0123427128"
+          },
+          "priority": "funding_or_identity_issue_with_specific_subject",
+          "fact_approved": false
+        },
+        "continued_search_review": {
+          "date": "2026-10-11",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "status": "search_completed_not_fact_approval",
+          "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+          "source_identity_review_required": true,
+          "priority_original_receipts": []
+        }
+      },
+      "next_due_date": null,
+      "last_processed_date": "2026-10-12",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "161百万印度卢比种子轮；美元为报道换算，不重复生成。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:53.978Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://www.techinasia.com/news/indian-ai-debt-resolution-startup-credfix-raises-1-6m",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "72a8734494ea081cc24f9e0ac1bf301dde8068569b2b3f23101d32044bb270e7",
+      "evidence_source_url": "https://entrackr.com/snippets/tanglin-venture-leads-rs-161-cr-seed-round-in-debt-resolution-platform-credfix-12633304",
+      "evidence_ref": "evidence://72a8734494ea081cc24f9e0ac1bf301dde8068569b2b3f23101d32044bb270e7",
+      "raw_ids": [
+        "RAW-8893d87af762a018"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://entrackr.com/snippets/tanglin-venture-leads-rs-161-cr-seed-round-in-debt-resolution-platform-credfix-12633304",
+        "content_hash": "72a8734494ea081cc24f9e0ac1bf301dde8068569b2b3f23101d32044bb270e7",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:53.978Z",
+        "reason": "161百万印度卢比种子轮；美元为报道换算，不重复生成。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "alternate_source": true,
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-0875e11cbd8249c9",
+          "event_id": "EV-e176581c3d6755de",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Credfix",
+          "announced_at": "2026-10-07",
+          "amount": "Rs 16.1 crore",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ae260f41fda422b0",
+              "quote_hash": "459caf2e4d6579c3e2376790c305556dbab9cc783e42ea8081e940d7e1934fe7"
+            },
+            {
+              "source_id": "FISRC-0a30ec80ec901801",
+              "quote_hash": "713294bf928aca539703fb1d39daea0ef9ec89cbdfb2360b0aefe7f4b28a47d7"
+            },
+            {
+              "source_id": "FISRC-ae260f41fda422b0",
+              "quote_hash": "9ea333f41bc5c91aae970397d7a815e7a7d14af1bc7ce4fa35a1295a89c31d53"
+            },
+            {
+              "source_id": "FISRC-ae260f41fda422b0",
+              "quote_hash": "28db0cf88150eac90e23f9abbf4cc89a0d9b9d9f9d633eab4923efbc457866e0"
+            },
+            {
+              "source_id": "FISRC-ae260f41fda422b0",
+              "quote_hash": "321aef74e05b76e02786062a90fa983c5bb16c2b47d0c5b8b153f1f03bffbad0"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.techinasia.com/news/indian-edtech-startup-bytexl-raises-9m": {
       "source_url": "https://www.techinasia.com/news/indian-edtech-startup-bytexl-raises-9m",
@@ -4248,7 +4420,7 @@
     },
     "https://www.ithome.com/1/010/734.htm": {
       "source_url": "https://www.ithome.com/1/010/734.htm",
-      "origin_date": "2026-10-09",
+      "original_reason": "ai_relevance_unverified",
       "status": "pending",
       "reason": "no_accepted_financing_event_manual_review_required",
       "checks": {
@@ -4259,13 +4431,117 @@
         "round": "pending",
         "deduplication": "pending"
       },
-      "disposition": {
-        "action": "retain",
-        "reason": "newer_private_review_preserved",
-        "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-020",
-        "reviewed_status": "pending_source_review",
+      "capture_attempts": [],
+      "title": "Waymo 获 50 亿美元贷款：未来将推动无人驾驶出租车扩张，入局欧洲、日本等市场",
+      "origin_date": "2026-10-09",
+      "rounds": 2,
+      "stop_after_date": "2026-10-16",
+      "reviewed_status": "pending_source_review",
+      "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-020",
+      "review_hash": "980da9d19c33e238bfe60d636afb08e3587c0dce3c32908f80bbf4a61968b234",
+      "review_basis": "",
+      "additional_source": "",
+      "content_hash": "04df81091251879369eb4c63e25280b15f23835e9006973cf317190f85023e27",
+      "prior_reason": "正文披露50亿美元债务融资，自动驾驶技术不因机器人客户规则自动排除；需经过既有融资事实、分类及同轮去重。",
+      "evidence_source_url": "https://www.waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing/",
+      "used_existing_original": true,
+      "alternate_source": true,
+      "resumed_fact_review": false,
+      "source_identity_reviewed": true,
+      "raw_ids": [
+        "RAW-3a5d60c2a2aee995"
+      ],
+      "evidence_ref": "evidence://04df81091251879369eb4c63e25280b15f23835e9006973cf317190f85023e27",
+      "last_processed_date": "2026-10-10",
+      "prior_review": {
+        "id": "responsible-20261010-020",
+        "url": "https://www.ithome.com/1/010/734.htm",
+        "title": "Waymo 获 50 亿美元贷款：未来将推动无人驾驶出租车扩张，入局欧洲、日本等市场",
+        "status": "pending_source_review",
+        "reason": "正文披露50亿美元债务融资，自动驾驶技术不因机器人客户规则自动排除；需经过既有融资事实、分类及同轮去重。",
+        "reviewed_by": "Codex daily financing owner",
+        "reviewed_at": "2026-10-10T00:20:47.188Z",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.ithome.com/1/010/734.htm",
+            "content_hash": "58e2c3ceae9e54feb8e5f04c34ee839afbb79096072ba0f9721125e483bcab50",
+            "quote": "这是 Waymo 首次进行债务融资。"
+          }
+        ],
+        "reviewer": "Codex daily financing owner",
+        "review_date": "2026-10-10",
+        "ledger": "agent-workflow/reports/financing/2026-10-10/disposition-review.json",
         "strict": true
       },
+      "next_due_date": null,
+      "owner": "responsible_financing_reviewer",
+      "next_action": "本次50亿美元已完成定期贷款，标记债务融资；不混入2月160亿美元股权或2024年C轮。",
+      "review_stage": "fact_review",
+      "last_fact_review_hash": "58e2c3ceae9e54feb8e5f04c34ee839afbb79096072ba0f9721125e483bcab50",
+      "value_triage": {
+        "id": 400,
+        "source_url": "https://www.ithome.com/1/010/734.htm",
+        "title": "Waymo 获 50 亿美元贷款：未来将推动无人驾驶出租车扩张，入局欧洲、日本等市场",
+        "decision": "retain_targeted_review",
+        "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+        "evidence_basis": "responsible_lead_triage_not_fact_approval",
+        "content_hash": "58e2c3ceae9e54feb8e5f04c34ee839afbb79096072ba0f9721125e483bcab50",
+        "evidence_source_url": "https://www.ithome.com/1/010/734.htm",
+        "reviewed_at": "2026-10-11T02:58:36.176Z",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "secondary_search": {
+          "status": "reuse_existing_original",
+          "content_hash": "58e2c3ceae9e54feb8e5f04c34ee839afbb79096072ba0f9721125e483bcab50"
+        },
+        "priority": "funding_or_identity_issue_with_specific_subject",
+        "fact_approved": false
+      },
+      "continued_search_review": {
+        "date": "2026-10-11",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "status": "search_completed_not_fact_approval",
+        "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+        "source_identity_review_required": true,
+        "priority_original_receipts": []
+      },
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "Waymo50亿美元贷款为债务融资，需与保留项186同轮核对；不因机器人业务规则自动排除自动驾驶企业。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:56.913Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://www.ithome.com/1/010/734.htm",
+          "content_hash": "58e2c3ceae9e54feb8e5f04c34ee839afbb79096072ba0f9721125e483bcab50",
+          "raw_ids": [
+            "RAW-702e1af75880fb80"
+          ],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "source_binding": {
+        "source_url": "https://www.waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing/",
+        "content_hash": "04df81091251879369eb4c63e25280b15f23835e9006973cf317190f85023e27",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:56.913Z",
+        "reason": "本次50亿美元已完成定期贷款，标记债务融资；不混入2月160亿美元股权或2024年C轮。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [
+        "historical_terra_extraction_not_accepted"
+      ],
+      "pending_reasons": [],
+      "results": [],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ],
       "followup": {
         "source_url": "https://www.ithome.com/1/010/734.htm",
         "original_reason": "ai_relevance_unverified",
@@ -4282,24 +4558,24 @@
         "capture_attempts": [],
         "title": "Waymo 获 50 亿美元贷款：未来将推动无人驾驶出租车扩张，入局欧洲、日本等市场",
         "origin_date": "2026-10-09",
-        "rounds": 2,
+        "rounds": 3,
         "stop_after_date": "2026-10-16",
         "reviewed_status": "pending_source_review",
         "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-020",
         "review_hash": "980da9d19c33e238bfe60d636afb08e3587c0dce3c32908f80bbf4a61968b234",
         "review_basis": "",
         "additional_source": "",
-        "content_hash": "58e2c3ceae9e54feb8e5f04c34ee839afbb79096072ba0f9721125e483bcab50",
+        "content_hash": "04df81091251879369eb4c63e25280b15f23835e9006973cf317190f85023e27",
         "prior_reason": "正文披露50亿美元债务融资，自动驾驶技术不因机器人客户规则自动排除；需经过既有融资事实、分类及同轮去重。",
-        "evidence_source_url": "https://www.ithome.com/1/010/734.htm",
+        "evidence_source_url": "https://www.waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing/",
         "used_existing_original": true,
-        "alternate_source": false,
+        "alternate_source": true,
         "resumed_fact_review": false,
-        "source_identity_reviewed": false,
+        "source_identity_reviewed": true,
         "raw_ids": [
-          "RAW-702e1af75880fb80"
+          "RAW-3a5d60c2a2aee995"
         ],
-        "evidence_ref": "evidence://58e2c3ceae9e54feb8e5f04c34ee839afbb79096072ba0f9721125e483bcab50",
+        "evidence_ref": "evidence://04df81091251879369eb4c63e25280b15f23835e9006973cf317190f85023e27",
         "last_processed_date": "2026-10-10",
         "prior_review": {
           "id": "responsible-20261010-020",
@@ -4324,8 +4600,8 @@
         "next_due_date": null,
         "owner": "responsible_financing_reviewer",
         "next_action": "supply_new_original_and_review_without_clearing_attempt_receipts",
-        "review_stage": "needs_original",
-        "last_fact_review_hash": "58e2c3ceae9e54feb8e5f04c34ee839afbb79096072ba0f9721125e483bcab50",
+        "review_stage": "fact_conflict_review",
+        "last_fact_review_hash": "04df81091251879369eb4c63e25280b15f23835e9006973cf317190f85023e27",
         "value_triage": {
           "id": 400,
           "source_url": "https://www.ithome.com/1/010/734.htm",
@@ -4351,7 +4627,35 @@
           "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
           "source_identity_review_required": true,
           "priority_original_receipts": []
-        }
+        },
+        "quick_screen": {
+          "date": "2026-10-12",
+          "kind": "priority_ai_financing",
+          "priority": "high",
+          "reason": "Waymo50亿美元贷款为债务融资，需与保留项186同轮核对；不因机器人业务规则自动排除自动驾驶企业。",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-10-12T13:35:37.098Z",
+          "fact_approved": false
+        },
+        "reviewed_at": "2026-10-12T14:23:56.913Z",
+        "evidence_binding_history": [
+          {
+            "source_url": "https://www.ithome.com/1/010/734.htm",
+            "content_hash": "58e2c3ceae9e54feb8e5f04c34ee839afbb79096072ba0f9721125e483bcab50",
+            "raw_ids": [
+              "RAW-702e1af75880fb80"
+            ],
+            "reason": "prior_binding_preserved_before_responsible_priority55_review"
+          }
+        ],
+        "source_binding": {
+          "source_url": "https://www.waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing/",
+          "content_hash": "04df81091251879369eb4c63e25280b15f23835e9006973cf317190f85023e27",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-10-12T14:23:56.913Z",
+          "reason": "本次50亿美元已完成定期贷款，标记债务融资；不混入2月160亿美元股权或2024年C轮。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+        },
+        "fact_review_completed": true
       }
     },
     "https://x.com/rohanpaul_ai/status/2107361452428611741": {
@@ -6503,7 +6807,7 @@
       "source_url": "https://life.china.com/2026-03/20/content_554779.html",
       "original_reason": "original_http_403",
       "status": "pending",
-      "reason": "secondary_evidence_attempted_awaiting_agent_review",
+      "reason": "no_accepted_financing_event_manual_review_required",
       "checks": {
         "company_identity": "pending",
         "ai_relevance": "pending",
@@ -6517,11 +6821,59 @@
       "origin_date": "2026-10-08",
       "rounds": 0,
       "stop_after_date": "2026-10-15",
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "消费AI健康戒指，千万级天使轮；不按机器人规则排除。",
+      "review_stage": "evidence_review",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:53.404Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://life.china.com/2026-03/20/content_554779.html",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "d69fbacc05ac71bf920a4b9f5c5c54830d285fdc4f1f1e743cf9c0c6ffea7679",
+      "evidence_source_url": "https://life.china.com/2026-03/20/content_554779.html",
+      "evidence_ref": "evidence://d69fbacc05ac71bf920a4b9f5c5c54830d285fdc4f1f1e743cf9c0c6ffea7679",
+      "raw_ids": [
+        "RAW-cd6158d2ac5a1ca8"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://life.china.com/2026-03/20/content_554779.html",
+        "content_hash": "d69fbacc05ac71bf920a4b9f5c5c54830d285fdc4f1f1e743cf9c0c6ffea7679",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:53.404Z",
+        "reason": "消费AI健康戒指，千万级天使轮；不按机器人规则排除。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "alternate_source": false,
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [
+        "historical_terra_extraction_not_accepted"
+      ],
+      "pending_reasons": [],
+      "results": [],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ],
       "followup": {
         "source_url": "https://life.china.com/2026-03/20/content_554779.html",
         "original_reason": "original_http_403",
         "status": "pending",
-        "reason": "secondary_evidence_attempted_awaiting_agent_review",
+        "reason": "no_accepted_financing_event_manual_review_required",
         "checks": {
           "company_identity": "pending",
           "ai_relevance": "pending",
@@ -6533,13 +6885,47 @@
         "capture_attempts": [],
         "title": "uAita获千万级天使轮融资: AI智能戒指或将成为下一代健康与 ...",
         "origin_date": "2026-10-08",
-        "rounds": 0,
+        "rounds": 1,
         "stop_after_date": "2026-10-15",
         "last_processed_date": "2026-10-12",
         "next_due_date": "2026-10-13",
         "owner": "responsible_financing_reviewer",
         "next_action": "next_existing_daily_verify",
-        "review_stage": "evidence_review"
+        "review_stage": "fact_conflict_review",
+        "quick_screen": {
+          "date": "2026-10-12",
+          "kind": "priority_ai_financing",
+          "priority": "high",
+          "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-10-12T13:35:37.098Z",
+          "fact_approved": false
+        },
+        "reviewed_at": "2026-10-12T14:23:53.404Z",
+        "evidence_binding_history": [
+          {
+            "source_url": "https://life.china.com/2026-03/20/content_554779.html",
+            "raw_ids": [],
+            "reason": "prior_binding_preserved_before_responsible_priority55_review"
+          }
+        ],
+        "content_hash": "d69fbacc05ac71bf920a4b9f5c5c54830d285fdc4f1f1e743cf9c0c6ffea7679",
+        "evidence_source_url": "https://life.china.com/2026-03/20/content_554779.html",
+        "evidence_ref": "evidence://d69fbacc05ac71bf920a4b9f5c5c54830d285fdc4f1f1e743cf9c0c6ffea7679",
+        "raw_ids": [
+          "RAW-cd6158d2ac5a1ca8"
+        ],
+        "source_identity_reviewed": true,
+        "source_binding": {
+          "source_url": "https://life.china.com/2026-03/20/content_554779.html",
+          "content_hash": "d69fbacc05ac71bf920a4b9f5c5c54830d285fdc4f1f1e743cf9c0c6ffea7679",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-10-12T14:23:53.404Z",
+          "reason": "消费AI健康戒指，千万级天使轮；不按机器人规则排除。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+        },
+        "alternate_source": false,
+        "fact_review_completed": true,
+        "last_fact_review_hash": "d69fbacc05ac71bf920a4b9f5c5c54830d285fdc4f1f1e743cf9c0c6ffea7679"
       }
     },
     "https://m.caixin.com/m/2026-01-05/102400391.html": {
@@ -7419,15 +7805,15 @@
     "https://www.iyiou.com/data/202606021131635": {
       "source_url": "https://www.iyiou.com/data/202606021131635",
       "original_reason": "review_lead_capture_budget_exhausted",
-      "status": "pending",
-      "reason": "alternate_original_unusable:original_http_403",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -7468,68 +7854,89 @@
       "attempted": true,
       "search_status": "completed",
       "search_reason": "",
-      "evidence_source_url": "https://zhuanlan.zhihu.com/p/2045155399570035939",
+      "evidence_source_url": "https://www.sohu.com/a/1031200047_355029",
       "alternate_source": true,
-      "followup": {
-        "source_url": "https://www.iyiou.com/data/202606021131635",
-        "original_reason": "review_lead_capture_budget_exhausted",
-        "status": "pending",
-        "reason": "alternate_original_unusable:original_http_403",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [
-          {
-            "url": "https://unifuncs.com/s/2MD5qvgi",
-            "status": "pending",
-            "reason": "original_article_required"
-          },
-          {
-            "url": "https://www.donews.com/news/detail/4/6579726.html",
-            "status": "pending",
-            "reason": "original_article_required"
-          },
-          {
-            "url": "https://news.qq.com/rain/a/20260127A02AO400",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://finance.sina.cn/stock/jdts/2026-06-01/detail-inhzxewp2337304.d.html?vt=4",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://elsewhere.news/zh/zhenfund/mindverse-5000-a-agent",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://zhuanlan.zhihu.com/p/2045155399570035939",
-            "status": "pending",
-            "reason": "original_http_403"
-          }
-        ],
-        "title": "Mindverse获A轮投资",
-        "origin_date": "2026-10-08",
-        "rounds": 0,
-        "stop_after_date": "2026-10-15",
-        "attempted": true,
-        "search_status": "completed",
-        "search_reason": "",
-        "evidence_source_url": "https://zhuanlan.zhihu.com/p/2045155399570035939",
-        "alternate_source": true,
-        "last_processed_date": "2026-10-12",
-        "next_due_date": "2026-10-13",
-        "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
-      }
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "5000万美元为累计金额，不批准为A轮单轮金额；A轮金额未披露。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:52.649Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://zhuanlan.zhihu.com/p/2045155399570035939",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+      "evidence_ref": "evidence://c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+      "raw_ids": [
+        "RAW-c53f4cee82f6fd91"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://www.sohu.com/a/1031200047_355029",
+        "content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:52.649Z",
+        "reason": "5000万美元为累计金额，不批准为A轮单轮金额；A轮金额未披露。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-7cdefae56d47e542",
+          "event_id": "EV-00305df9d37dd714",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Mindverse（心洲科技）",
+          "announced_at": "2026-06-02",
+          "amount": "未披露",
+          "round": "A轮",
+          "disclosure_status": "partially_disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-db62e2a369722db7",
+              "quote_hash": "c3192e2ec71a7667dfcb7fa722a3cf13f095696cfea2f1a76a172a48aabb9bc0"
+            },
+            {
+              "source_id": "FISRC-47c7b16c003ccc82",
+              "quote_hash": "9f535b6538fd59b5aef3ed08fb4658e05ad67fd34dbb6424754d7a409f7f1ab1"
+            },
+            {
+              "source_id": "FISRC-db62e2a369722db7",
+              "quote_hash": "77512a5a83e549a1f1c1cd41e058989dab64733431b62a9c17e02935c855212f"
+            },
+            {
+              "source_id": "FISRC-db62e2a369722db7",
+              "quote_hash": "a6a9b7839a4e41a59bd732ad9f849de7b19875cb9e38da7080f4ee3b6c3e6ec6"
+            },
+            {
+              "source_id": "FISRC-1cdcda3c9914c312",
+              "quote_hash": "b4caeed9603ac3f1cb0fcd5602da7bbbe0acd4fec2764cddb72cd19575cf286b"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.mobileworldlive.com/devices/nothing-bets-on-ai-native-devices-with-200m-funding-pot/": {
       "source_url": "https://www.mobileworldlive.com/devices/nothing-bets-on-ai-native-devices-with-200m-funding-pot/",
@@ -8497,15 +8904,15 @@
     "https://lieyunpro.com/news/119650": {
       "source_url": "https://lieyunpro.com/news/119650",
       "original_reason": "secondary_evidence_attempted_awaiting_agent_review",
-      "status": "pending",
-      "reason": "alternate_original_unusable:original_http_403",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -8546,74 +8953,95 @@
       "attempted": true,
       "search_status": "completed",
       "search_reason": "",
-      "evidence_source_url": "https://zhuanlan.zhihu.com/p/2001984606900080899",
+      "evidence_source_url": "https://www.zhongtouhuac.com/h-nd-4147.html",
       "alternate_source": true,
-      "followup": {
-        "source_url": "https://lieyunpro.com/news/119650",
-        "original_reason": "secondary_evidence_attempted_awaiting_agent_review",
-        "status": "pending",
-        "reason": "alternate_original_unusable:original_http_403",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [
-          {
-            "url": "https://www.zhongtouhuac.com/h-nd-4147.html",
-            "status": "pending",
-            "reason": "original_date_missing"
-          },
-          {
-            "url": "https://baike.baidu.com/item/%E7%9B%96%E7%AB%8B%E5%85%8B%E6%80%9DGEO/68620461",
-            "status": "pending",
-            "reason": "original_http_403"
-          },
-          {
-            "url": "https://www.newgalaxyai.com/zh",
-            "status": "pending",
-            "reason": "original_date_missing"
-          },
-          {
-            "url": "https://www.zhonghongwang.com/show-140-473559-1.html",
-            "status": "pending",
-            "reason": "original_article_required"
-          },
-          {
-            "url": "https://www.iyiou.com/data/202601091119342",
-            "status": "pending",
-            "reason": "original_unreadable"
-          },
-          {
-            "url": "https://zhuanlan.zhihu.com/p/2001984606900080899",
-            "status": "pending",
-            "reason": "original_http_403"
-          }
-        ],
-        "title": "盖立克思完成 1000 万美元天使轮融资 | 猎云网",
-        "origin_date": "2026-10-09",
-        "rounds": 0,
-        "stop_after_date": "2026-10-16",
-        "attempted": true,
-        "search_status": "completed",
-        "search_reason": "",
-        "evidence_source_url": "https://zhuanlan.zhihu.com/p/2001984606900080899",
-        "alternate_source": true,
-        "last_processed_date": "2026-10-12",
-        "next_due_date": "2026-10-13",
-        "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
-      }
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "FA公告与公司官网相互印证：2026年1月签约完成1000万美元天使轮；不推断交易具体日。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:55.179Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://zhuanlan.zhihu.com/p/2001984606900080899",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "3caf79fa99f8c528ea138c2327adfc9ec8f9b00f9e1f484512d6513bcce98480",
+      "evidence_ref": "evidence://3caf79fa99f8c528ea138c2327adfc9ec8f9b00f9e1f484512d6513bcce98480",
+      "raw_ids": [
+        "RAW-aecd2e242694e27e"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://www.zhongtouhuac.com/h-nd-4147.html",
+        "content_hash": "3caf79fa99f8c528ea138c2327adfc9ec8f9b00f9e1f484512d6513bcce98480",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:55.179Z",
+        "reason": "FA公告与公司官网相互印证：2026年1月签约完成1000万美元天使轮；不推断交易具体日。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-25a3342ee506ce62",
+          "event_id": "EV-c2cd2b01a5efb38b",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "杭州盖立克思人工智能有限公司",
+          "announced_at": "2026-01-10",
+          "amount": "1000万美元",
+          "round": "天使轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cc32f14442736dae",
+              "quote_hash": "b9fde742a5d5e54ff46cea9ca785107f7d820022b8a56b0b4356ff616d2cab69"
+            },
+            {
+              "source_id": "FISRC-f37b2d00f01c1b6d",
+              "quote_hash": "8111e66b6990bf4fa91eb63fe164094924ba1c5ee1e7c0f414d5abe387ecb3a3"
+            },
+            {
+              "source_id": "FISRC-cc32f14442736dae",
+              "quote_hash": "d4228b41dc87f5b39f986a1710715c879443604c2b248d42b196f3433f4a4ebe"
+            },
+            {
+              "source_id": "FISRC-cc32f14442736dae",
+              "quote_hash": "91906786e5b82585a453177348630b41697d7d338479c85ccda8cd2ac035bcfe"
+            },
+            {
+              "source_id": "FISRC-422b888286e75617",
+              "quote_hash": "fafe11a8592f38a0348b0255a895456480ed1144d6a2d3a1ba0b42fd069ab385"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://lieyunpro.com/news/119670": {
       "source_url": "https://lieyunpro.com/news/119670",
       "original_reason": "secondary_evidence_attempted_awaiting_agent_review",
       "status": "pending",
-      "reason": "alternate_original_unusable:fetch failed",
+      "reason": "funding_or_taxonomy_gate_pending",
       "checks": {
         "company_identity": "pending",
         "ai_relevance": "pending",
@@ -8661,13 +9089,94 @@
       "attempted": true,
       "search_status": "completed",
       "search_reason": "",
-      "evidence_source_url": "https://www.chinastarmarket.cn/detail/2499630",
-      "alternate_source": true,
+      "evidence_source_url": "https://lieyunpro.com/news/119670",
+      "alternate_source": false,
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "数千万元种子轮；五源领投、奇绩跟投，AI类人认知模型与原生操作系统。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:54.578Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://www.chinastarmarket.cn/detail/2499630",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "0bd957e0063c4ed19e57f50425cf62e6fea54149db9ee763dd07a680578ab9f8",
+      "evidence_ref": "evidence://0bd957e0063c4ed19e57f50425cf62e6fea54149db9ee763dd07a680578ab9f8",
+      "raw_ids": [
+        "RAW-c96cb549b9046ced"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://lieyunpro.com/news/119670",
+        "content_hash": "0bd957e0063c4ed19e57f50425cf62e6fea54149db9ee763dd07a680578ab9f8",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:54.578Z",
+        "reason": "数千万元种子轮；五源领投、奇绩跟投，AI类人认知模型与原生操作系统。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-a55078ee3918c48e",
+          "event_id": "EV-171e2d688f69ebc6",
+          "accepted": false,
+          "scope": "review",
+          "reason": "funding_or_taxonomy_gate_pending",
+          "company": "Humanify（人格智能）",
+          "announced_at": "2026-01-12",
+          "amount": "数千万元",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-baafc455955b1fa9",
+              "quote_hash": "7905e460c6d677ae9580f7f9222fe00e9f7420ab01e60f74cea6563fee0b5fe4"
+            },
+            {
+              "source_id": "FISRC-09d04dd0c8aaf11d",
+              "quote_hash": "a83f831c7e00e5f2bbffd46ef5919828f3ec1c127d2dc1ffbebd042ffdef4d67"
+            },
+            {
+              "source_id": "FISRC-baafc455955b1fa9",
+              "quote_hash": "872e9d180ddf547da489afe000d26a08d3864fcc301116c9bbac6016cb0161db"
+            },
+            {
+              "source_id": "FISRC-baafc455955b1fa9",
+              "quote_hash": "9648f021e1eca1b7c3a937aa36a0b9833b1d862eafd3a0719c3bb7a0afff88ff"
+            },
+            {
+              "source_id": "FISRC-09d04dd0c8aaf11d",
+              "quote_hash": "436ac4b09c84fd2eb743431bbe90c95daaf6b7fe95f8944147b3e9ced37ba7b3"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ],
       "followup": {
         "source_url": "https://lieyunpro.com/news/119670",
         "original_reason": "secondary_evidence_attempted_awaiting_agent_review",
         "status": "pending",
-        "reason": "alternate_original_unusable:fetch failed",
+        "reason": "funding_or_taxonomy_gate_pending",
         "checks": {
           "company_identity": "pending",
           "ai_relevance": "pending",
@@ -8710,18 +9219,50 @@
         ],
         "title": "人格智能完成数千万元种子轮融资 | 猎云网",
         "origin_date": "2026-10-09",
-        "rounds": 0,
+        "rounds": 1,
         "stop_after_date": "2026-10-16",
         "attempted": true,
         "search_status": "completed",
         "search_reason": "",
-        "evidence_source_url": "https://www.chinastarmarket.cn/detail/2499630",
-        "alternate_source": true,
+        "evidence_source_url": "https://lieyunpro.com/news/119670",
+        "alternate_source": false,
         "last_processed_date": "2026-10-12",
         "next_due_date": "2026-10-13",
         "owner": "responsible_financing_reviewer",
         "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
+        "review_stage": "fact_conflict_review",
+        "quick_screen": {
+          "date": "2026-10-12",
+          "kind": "priority_ai_financing",
+          "priority": "high",
+          "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-10-12T13:35:37.098Z",
+          "fact_approved": false
+        },
+        "reviewed_at": "2026-10-12T14:23:54.578Z",
+        "evidence_binding_history": [
+          {
+            "source_url": "https://www.chinastarmarket.cn/detail/2499630",
+            "raw_ids": [],
+            "reason": "prior_binding_preserved_before_responsible_priority55_review"
+          }
+        ],
+        "content_hash": "0bd957e0063c4ed19e57f50425cf62e6fea54149db9ee763dd07a680578ab9f8",
+        "evidence_ref": "evidence://0bd957e0063c4ed19e57f50425cf62e6fea54149db9ee763dd07a680578ab9f8",
+        "raw_ids": [
+          "RAW-c96cb549b9046ced"
+        ],
+        "source_identity_reviewed": true,
+        "source_binding": {
+          "source_url": "https://lieyunpro.com/news/119670",
+          "content_hash": "0bd957e0063c4ed19e57f50425cf62e6fea54149db9ee763dd07a680578ab9f8",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-10-12T14:23:54.578Z",
+          "reason": "数千万元种子轮；五源领投、奇绩跟投，AI类人认知模型与原生操作系统。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+        },
+        "fact_review_completed": true,
+        "last_fact_review_hash": "0bd957e0063c4ed19e57f50425cf62e6fea54149db9ee763dd07a680578ab9f8"
       }
     },
     "https://lieyunpro.com/news/119736": {
@@ -9194,15 +9735,15 @@
     "https://venturebeat.com/business/creao-ai-raises-10m-to-build-the-platform-where-one-person-does-the-work-of-a-team": {
       "source_url": "https://venturebeat.com/business/creao-ai-raises-10m-to-build-the-platform-where-one-person-does-the-work-of-a-team",
       "original_reason": "review_lead_capture_budget_exhausted",
-      "status": "pending",
-      "reason": "alternate_original_unusable:original_not_financing",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -9243,81 +9784,102 @@
       "attempted": true,
       "search_status": "completed",
       "search_reason": "",
-      "evidence_source_url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
-      "alternate_source": true,
-      "followup": {
+      "evidence_source_url": "https://venturebeat.com/business/creao-ai-raises-10m-to-build-the-platform-where-one-person-does-the-work-of-a-team",
+      "alternate_source": false,
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "Business Wire公司公告原样转载：本轮1000万美元，累计2500万美元分开。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:55.744Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "76f6cc55bced0e5b197ae4553b899d77b84768ac129b4f4a485e6f90ae2c991c",
+      "evidence_ref": "evidence://76f6cc55bced0e5b197ae4553b899d77b84768ac129b4f4a485e6f90ae2c991c",
+      "raw_ids": [
+        "RAW-1a77879eccd920f7"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
         "source_url": "https://venturebeat.com/business/creao-ai-raises-10m-to-build-the-platform-where-one-person-does-the-work-of-a-team",
-        "original_reason": "review_lead_capture_budget_exhausted",
-        "status": "pending",
-        "reason": "alternate_original_unusable:original_not_financing",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [
-          {
-            "url": "https://sflood.com/zh/daily/ai-2026-10-07",
-            "status": "pending",
-            "reason": "original_http_403"
-          },
-          {
-            "url": "https://daily.ai225.com/daily/2026-09-02",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://www.unite.ai/zh-cn/skan-ais-series-c-bets-enterprise-ai-needs-a-map-of-real-work/",
-            "status": "pending",
-            "reason": "original_http_403"
-          },
-          {
-            "url": "https://venturebeat.com/technology/intercoms-new-post-trained-fin-apex-1-0-beats-gpt-5-4-and-claude-sonnet-4-6",
-            "status": "pending",
-            "reason": "original_http_429"
-          },
-          {
-            "url": "https://seedtable.com/companies/rwx",
-            "status": "pending",
-            "reason": "original_http_403"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
-            "status": "excluded",
-            "reason": "original_not_financing"
-          }
-        ],
-        "title": "Creao AI Raises $10M to Build the Platform Where One Person Does the Work of a Team | VentureBeat",
-        "origin_date": "2026-10-09",
-        "rounds": 0,
-        "stop_after_date": "2026-10-16",
-        "attempted": true,
-        "search_status": "completed",
-        "search_reason": "",
-        "evidence_source_url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
-        "alternate_source": true,
-        "last_processed_date": "2026-10-12",
-        "next_due_date": "2026-10-13",
-        "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
-      }
+        "content_hash": "76f6cc55bced0e5b197ae4553b899d77b84768ac129b4f4a485e6f90ae2c991c",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:55.744Z",
+        "reason": "Business Wire公司公告原样转载：本轮1000万美元，累计2500万美元分开。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-f099fb3c1077ec09",
+          "event_id": "EV-d88c188529236c7f",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Creao AI",
+          "announced_at": "2026-04-17",
+          "amount": "$10M",
+          "round": "其他融资",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c59e88cf636de760",
+              "quote_hash": "becdd46be3b40e4fe94cd128db5558467821e7d54b563eb570aa042a56c845f4"
+            },
+            {
+              "source_id": "FISRC-836aaa82c8d7d8c2",
+              "quote_hash": "17cdd63ae4eaaa2bdd4a32a37b73334d5ee229e081c17ac9a5d6ee78ab2e967a"
+            },
+            {
+              "source_id": "FISRC-c59e88cf636de760",
+              "quote_hash": "38affca97921cbb10f0af37284d3482596fdebc2a413ffe5eb8e1e4eccbd9352"
+            },
+            {
+              "source_id": "FISRC-c59e88cf636de760",
+              "quote_hash": "ea7c932e7f6df1f788ac74aaf525ff3898751bc293ab84ea5f2ccdbcb7b2e9dc"
+            },
+            {
+              "source_id": "FISRC-836aaa82c8d7d8c2",
+              "quote_hash": "17cdd63ae4eaaa2bdd4a32a37b73334d5ee229e081c17ac9a5d6ee78ab2e967a"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://venturebeat.com/business/tdk-ventures-invests-in-c2i-semiconductors-to-revolutionize-ai-data-center-power-delivery": {
       "source_url": "https://venturebeat.com/business/tdk-ventures-invests-in-c2i-semiconductors-to-revolutionize-ai-data-center-power-delivery",
       "original_reason": "search_providers_unavailable",
-      "status": "pending",
-      "reason": "alternate_original_unusable:original_article_required",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -9358,68 +9920,89 @@
       "attempted": true,
       "search_status": "completed",
       "search_reason": "",
-      "evidence_source_url": "https://tdk-ventures.com/news/",
+      "evidence_source_url": "https://tdk-ventures.com/news/announcements/tdk-ventures-invests-in-c2i-semiconductors-to-revolutionize-ai-data-center-power-delivery/",
       "alternate_source": true,
-      "followup": {
-        "source_url": "https://venturebeat.com/business/tdk-ventures-invests-in-c2i-semiconductors-to-revolutionize-ai-data-center-power-delivery",
-        "original_reason": "search_providers_unavailable",
-        "status": "pending",
-        "reason": "alternate_original_unusable:original_article_required",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [
-          {
-            "url": "https://veronica-semi.com/",
-            "status": "pending",
-            "reason": "fetch failed"
-          },
-          {
-            "url": "https://www.linkedin.com/posts/pulse2news_c2i-semiconductors-167-million-series-activity-7465822281236189186-j_yx",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://www.nasdaq.com/press-release/tdk-ventures-invests-c2i-semiconductors-revolutionize-ai-data-center-power-delivery",
-            "status": "pending",
-            "reason": "original_date_missing"
-          },
-          {
-            "url": "https://iconnect007.com/article/150197/tdk-ventures-invests-in-c2i-semiconductors-to-revolutionize-ai-data-center-power-delivery/150194/ein",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://pulse2.com/c2i-semiconductors-16-7-million-series-a-backed-by-tdk-ventures-to-revolutionize-ai-data-center-power-delivery/",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://tdk-ventures.com/news/",
-            "status": "pending",
-            "reason": "original_article_required"
-          }
-        ],
-        "title": "TDK Ventures Invests in C2i Semiconductors to Revolutionize AI Data Center Power Delivery | VentureBeat",
-        "origin_date": "2026-10-09",
-        "rounds": 0,
-        "stop_after_date": "2026-10-16",
-        "attempted": true,
-        "search_status": "completed",
-        "search_reason": "",
-        "evidence_source_url": "https://tdk-ventures.com/news/",
-        "alternate_source": true,
-        "last_processed_date": "2026-10-12",
-        "next_due_date": "2026-10-13",
-        "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
-      }
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "1670万美元Series A包含此前1500万美元，不生成两个同轮事件；AI加速器供电半导体。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:56.336Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://tdk-ventures.com/news/",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "857a642e7dc0db84f02e392da57cf931f1e1a57e0e425e35cce824507321e448",
+      "evidence_ref": "evidence://857a642e7dc0db84f02e392da57cf931f1e1a57e0e425e35cce824507321e448",
+      "raw_ids": [
+        "RAW-e5428d28a167d667"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://tdk-ventures.com/news/announcements/tdk-ventures-invests-in-c2i-semiconductors-to-revolutionize-ai-data-center-power-delivery/",
+        "content_hash": "857a642e7dc0db84f02e392da57cf931f1e1a57e0e425e35cce824507321e448",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:56.336Z",
+        "reason": "1670万美元Series A包含此前1500万美元，不生成两个同轮事件；AI加速器供电半导体。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-d9e3c79e4b3bd20b",
+          "event_id": "EV-adf842f1094c5ffe",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "C2i Semiconductors",
+          "announced_at": "2026-05-27",
+          "amount": "$16.7M",
+          "round": "A轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f3c759ba693ab20",
+              "quote_hash": "d2263b95ac22370c34c326b006e76738a1bec5331a5c65b0ebcf5ae382bbb525"
+            },
+            {
+              "source_id": "FISRC-f2f1977ebf9c7610",
+              "quote_hash": "51a042f075e22b27a5a354986af0090ff2f731d673df5fd5c020c2841593d9b0"
+            },
+            {
+              "source_id": "FISRC-4f3c759ba693ab20",
+              "quote_hash": "b5ce870e7cb8b3aa21e9273e14beb2826bef93eded559ee6be5fbee9e6f72214"
+            },
+            {
+              "source_id": "FISRC-4f3c759ba693ab20",
+              "quote_hash": "08f506a30c7140265cdb5bde4e904415b25244807b67b44dfd12f8840d4d5d5d"
+            },
+            {
+              "source_id": "FISRC-f2f1977ebf9c7610",
+              "quote_hash": "c569893bb476530101f6e0d017d515d22b6c05d987054f1da70ecfe690744b5e"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.businesswire.com/news/home/20260914222012/en/Temporal-Raises-%24550M-at-a-%2412.55B-Valuation-as-Demand-Surges-for-Reliable-AI-Infrastructure": {
       "source_url": "https://www.businesswire.com/news/home/20260914222012/en/Temporal-Raises-%24550M-at-a-%2412.55B-Valuation-as-Demand-Surges-for-Reliable-AI-Infrastructure",
@@ -11658,15 +12241,15 @@
     "https://m.36kr.com/p/4014406080417671": {
       "source_url": "https://m.36kr.com/p/4014406080417671",
       "original_reason": "review_lead_capture_budget_exhausted",
-      "status": "pending",
-      "reason": "alternate_original_requires_identity_review",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -11682,16 +12265,109 @@
       "attempted": true,
       "search_status": "completed",
       "search_reason": "",
-      "evidence_source_url": "http://www.36kr.com/p/4020261029826440",
+      "evidence_source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-superpose-on-dollar22-million-seed-financing.html",
       "alternate_source": true,
-      "content_hash": "f988d2161ca98275694eb09558f2ba9bb13ddebafdf71b79c41dbebfb23ac08a",
-      "source_identity_reviewed": false,
-      "evidence_ref": "evidence://f988d2161ca98275694eb09558f2ba9bb13ddebafdf71b79c41dbebfb23ac08a",
+      "content_hash": "4af5c527e0561b842e9859675409eda6322e00386f785077576b16677a44fec2",
+      "source_identity_reviewed": true,
+      "evidence_ref": "evidence://3148d19b0b6bde064a3b0d628ec669d2012510e379ec4bfcfdfc36c05fe93ae0",
+      "next_due_date": null,
+      "last_processed_date": "2026-10-12",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "公司公告与交易律师确认220万美元种子轮，拒绝此前NIMO正文错配。",
+      "review_stage": "needs_original",
+      "evidence_binding_history": [
+        {
+          "source_url": "http://www.36kr.com/p/4020261029826440",
+          "content_hash": "f988d2161ca98275694eb09558f2ba9bb13ddebafdf71b79c41dbebfb23ac08a",
+          "evidence_ref": "evidence://f988d2161ca98275694eb09558f2ba9bb13ddebafdf71b79c41dbebfb23ac08a",
+          "raw_ids": [],
+          "reviewed_at": "2026-10-12T13:35:37.098Z",
+          "reason": "替代正文主体/文章用途与原融资线索不一致"
+        },
+        {
+          "source_url": "https://m.36kr.com/p/4014406080417671",
+          "content_hash": null,
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "raw_ids": [
+        "RAW-93f3653c28bb2176"
+      ],
+      "fact_review_completed": true,
+      "evidence_problem": "original_lead_body_still_required",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "摆姿势相机App原线索被中国出海周报/NIMO正文错配；保留原公司融资，拒绝用NIMO补获正文批准。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:58.083Z",
+      "source_binding": {
+        "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-superpose-on-dollar22-million-seed-financing.html",
+        "content_hash": "4af5c527e0561b842e9859675409eda6322e00386f785077576b16677a44fec2",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T15:22:45.935Z",
+        "reason": "交易律师明确同一Superpose iPhone AI相机、Khosla Ventures及2026年9月15日220万美元种子轮，并直接链接企业公告；与原线索身份、金额、轮次一致。"
+      },
+      "additional_evidence_sources": [
+        {
+          "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-superpose-on-dollar22-million-seed-financing.html",
+          "content_hash": "4af5c527e0561b842e9859675409eda6322e00386f785077576b16677a44fec2",
+          "quote": "On September 15, 2026, Superpose, an AI-powered portrait camera app for iPhone, announced a $2.2 million seed funding round led by Khosla Ventures.",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reason": "交易律师给出明确金额及种子轮，并直接链接同一公司的9月15日官网公告；不依赖名称相似或旧NIMO原文。"
+        }
+      ],
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-f6526ba1ab42a735",
+          "event_id": "EV-70045a46dafeaf68",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Superpose",
+          "announced_at": "2026-09-15",
+          "amount": "$2.2 million",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-56fb03980ba6a7c5",
+              "quote_hash": "6317a10f0221b1367cd29585318bb14066b99af0531b51c21096843513b1592d"
+            },
+            {
+              "source_id": "FISRC-bfa4a4a407eacc66",
+              "quote_hash": "8606fafb9abba631e4d9b2bab90bd9f39285a5bbcc9d19e5d5d5ee886fdf53ce"
+            },
+            {
+              "source_id": "FISRC-56fb03980ba6a7c5",
+              "quote_hash": "f2f9d161a262c970599bf91b12eb66948a586d9aefc278e47cd1411fba457a0f"
+            },
+            {
+              "source_id": "FISRC-2f9290df0b49f612",
+              "quote_hash": "3541f31b5a84f55d2071986c255358c50d092eb869ac6280d6ac90d457fc4ca5"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ],
       "followup": {
         "source_url": "https://m.36kr.com/p/4014406080417671",
         "original_reason": "review_lead_capture_budget_exhausted",
-        "status": "needs_attention",
-        "reason": "alternate_original_requires_identity_review",
+        "status": "pending",
+        "reason": "no_accepted_financing_event_manual_review_required",
         "checks": {
           "company_identity": "pending",
           "ai_relevance": "pending",
@@ -11709,35 +12385,88 @@
         ],
         "title": "教人摆姿势的相机App，融资千万 - 36氪",
         "origin_date": "2026-10-10",
-        "rounds": 0,
+        "rounds": 1,
         "stop_after_date": "2026-10-17",
         "attempted": true,
         "search_status": "completed",
         "search_reason": "",
-        "evidence_source_url": "http://www.36kr.com/p/4020261029826440",
+        "evidence_source_url": "https://www.superposelabs.ai/news/superpose-launch/",
         "alternate_source": true,
-        "content_hash": "f988d2161ca98275694eb09558f2ba9bb13ddebafdf71b79c41dbebfb23ac08a",
-        "source_identity_reviewed": false,
-        "evidence_ref": "evidence://f988d2161ca98275694eb09558f2ba9bb13ddebafdf71b79c41dbebfb23ac08a",
-        "next_due_date": null,
+        "content_hash": "3148d19b0b6bde064a3b0d628ec669d2012510e379ec4bfcfdfc36c05fe93ae0",
+        "source_identity_reviewed": true,
+        "evidence_ref": "evidence://3148d19b0b6bde064a3b0d628ec669d2012510e379ec4bfcfdfc36c05fe93ae0",
+        "next_due_date": "2026-10-13",
         "last_processed_date": "2026-10-12",
         "owner": "responsible_financing_reviewer",
-        "next_action": "review_original_company_and_round_binding_before_supplement",
-        "review_stage": "source_identity_review"
+        "next_action": "next_existing_daily_verify",
+        "review_stage": "fact_conflict_review",
+        "evidence_binding_history": [
+          {
+            "source_url": "http://www.36kr.com/p/4020261029826440",
+            "content_hash": "f988d2161ca98275694eb09558f2ba9bb13ddebafdf71b79c41dbebfb23ac08a",
+            "evidence_ref": "evidence://f988d2161ca98275694eb09558f2ba9bb13ddebafdf71b79c41dbebfb23ac08a",
+            "raw_ids": [],
+            "reviewed_at": "2026-10-12T13:35:37.098Z",
+            "reason": "替代正文主体/文章用途与原融资线索不一致"
+          },
+          {
+            "source_url": "https://m.36kr.com/p/4014406080417671",
+            "content_hash": null,
+            "raw_ids": [],
+            "reason": "prior_binding_preserved_before_responsible_priority55_review"
+          }
+        ],
+        "raw_ids": [
+          "RAW-aa57847f6910b8cc",
+          "RAW-93f3653c28bb2176"
+        ],
+        "fact_review_completed": true,
+        "evidence_problem": "original_lead_body_still_required",
+        "quick_screen": {
+          "date": "2026-10-12",
+          "kind": "priority_ai_financing",
+          "priority": "high",
+          "reason": "摆姿势相机App原线索被中国出海周报/NIMO正文错配；保留原公司融资，拒绝用NIMO补获正文批准。",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-10-12T13:35:37.098Z",
+          "fact_approved": false
+        },
+        "reviewed_at": "2026-10-12T14:23:58.083Z",
+        "source_binding": {
+          "source_url": "https://www.superposelabs.ai/news/superpose-launch/",
+          "content_hash": "3148d19b0b6bde064a3b0d628ec669d2012510e379ec4bfcfdfc36c05fe93ae0",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-10-12T14:23:58.083Z",
+          "reason": "公司公告与交易律师确认220万美元种子轮，拒绝此前NIMO正文错配。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+        },
+        "additional_evidence_sources": [
+          {
+            "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-superpose-on-dollar22-million-seed-financing.html",
+            "content_hash": "4af5c527e0561b842e9859675409eda6322e00386f785077576b16677a44fec2",
+            "quote": "On September 15, 2026, Superpose, an AI-powered portrait camera app for iPhone, announced a $2.2 million seed funding round led by Khosla Ventures.",
+            "reviewed_by": "Codex responsible financing reviewer",
+            "reason": "交易律师给出明确金额及种子轮，并直接链接同一公司的9月15日官网公告；不依赖名称相似或旧NIMO原文。"
+          }
+        ],
+        "last_fact_review_hash": "3148d19b0b6bde064a3b0d628ec669d2012510e379ec4bfcfdfc36c05fe93ae0"
+      },
+      "original_review_receipt": {
+        "content_hash": "3148d19b0b6bde064a3b0d628ec669d2012510e379ec4bfcfdfc36c05fe93ae0",
+        "evidence_source_url": "https://www.superposelabs.ai/news/superpose-launch/"
       }
     },
     "https://venturebeat.com/technology/netomi-raises-110-million-as-accenture-and-adobe-bet-on-ai-for-customer-service": {
       "source_url": "https://venturebeat.com/technology/netomi-raises-110-million-as-accenture-and-adobe-bet-on-ai-for-customer-service",
       "original_reason": "search_or_capture_pending",
-      "status": "pending",
-      "reason": "alternate_original_unusable:outside_historical_range",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -11778,81 +12507,106 @@
       "attempted": true,
       "search_status": "held",
       "search_reason": "search_providers_unavailable",
-      "evidence_source_url": "https://theaiworld.org/news/netomi-raises-110m-series-c-for-agentic-ai-cx",
-      "alternate_source": true,
-      "followup": {
+      "evidence_source_url": "https://venturebeat.com/technology/netomi-raises-110-million-as-accenture-and-adobe-bet-on-ai-for-customer-service",
+      "alternate_source": false,
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "只提取Netomi本轮1.1亿美元；不提取文中Sierra、Decagon历史背景融资。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:59.866Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://theaiworld.org/news/netomi-raises-110m-series-c-for-agentic-ai-cx",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+      "evidence_ref": "evidence://50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+      "raw_ids": [
+        "RAW-a8c922e35b4dbeee"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
         "source_url": "https://venturebeat.com/technology/netomi-raises-110-million-as-accenture-and-adobe-bet-on-ai-for-customer-service",
-        "original_reason": "search_or_capture_pending",
-        "status": "pending",
-        "reason": "alternate_original_unusable:outside_historical_range",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [
-          {
-            "url": "https://www.reuters.com/business/ai-customer-service-startup-netomi-raises-110-million-2026-04-30/",
-            "status": "pending",
-            "reason": "original_http_401"
-          },
-          {
-            "url": "https://www.instagram.com/p/DXxGcfNkYV3/",
-            "status": "pending",
-            "reason": "original_unreadable"
-          },
-          {
-            "url": "https://www.linkedin.com/posts/aiblmedia_netomi-has-announced-110-million-in-new-activity-7455613079662432257-iGKm",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://www.businesswire.com/news/home/20260429618643/en/Netomi-Raises-%24110M-from-Accenture-Ventures-Adobe-Ventures-and-WndrCo-to-Deploy-Agentic-Customer-Experiences-in-the-Worlds-Most-Complex-Environments-and-Create-the-AI-Embedded-Digital-Experience",
-            "status": "pending",
-            "reason": "original_http_403"
-          },
-          {
-            "url": "https://app.dealroom.co/news/note/accenture-and-adobe-back-netomi-s-110m-round-to-scale-ai-customer-service",
-            "status": "pending",
-            "reason": "original_http_403"
-          },
-          {
-            "url": "https://theaiworld.org/news/netomi-raises-110m-series-c-for-agentic-ai-cx",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          }
-        ],
-        "title": "Netomi raises $110 million as Accenture and Adobe bet on AI for customer service | VentureBeat",
-        "origin_date": "2026-10-10",
-        "rounds": 0,
-        "stop_after_date": "2026-10-17",
-        "attempted": true,
-        "search_status": "held",
-        "search_reason": "search_providers_unavailable",
-        "evidence_source_url": "https://theaiworld.org/news/netomi-raises-110m-series-c-for-agentic-ai-cx",
-        "alternate_source": true,
-        "last_processed_date": "2026-10-12",
-        "next_due_date": "2026-10-13",
-        "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
-      }
+        "content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:59.866Z",
+        "reason": "只提取Netomi本轮1.1亿美元；不提取文中Sierra、Decagon历史背景融资。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-74e3fe8abf3bec80",
+          "event_id": "EV-fb466830d5c49aea",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Netomi",
+          "announced_at": "2026-04-30",
+          "amount": "$110 million",
+          "round": "C轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-718abe345b56e368",
+              "quote_hash": "82fc736eaa6f229c2e48acdf828230ddf9771d781b7ddfaaba1e25b716e85fc1"
+            },
+            {
+              "source_id": "FISRC-746874e2d36ccb3c",
+              "quote_hash": "49512832b98b0e8cf337242d5980661d4d3254616a2ec1e088c69e2804cd6844"
+            },
+            {
+              "source_id": "FISRC-718abe345b56e368",
+              "quote_hash": "5ea9f70fdc8d183588227e20e27598d4d4005c17274a3d7f240bbd0b58635db2"
+            },
+            {
+              "source_id": "FISRC-718abe345b56e368",
+              "quote_hash": "15dc3df9ff409f8db3d8258978264724913a827968c6b15af91502e2508d8a5b"
+            },
+            {
+              "source_id": "FISRC-920c1440f0e930ff",
+              "quote_hash": "079722b3c02a45c57aa847b9e7830329baa308de062fa96d46a074b2e60478d0"
+            },
+            {
+              "source_id": "FISRC-746874e2d36ccb3c",
+              "quote_hash": "a05ada4776269abdab1c434818c5c364af8161e8dddb25848e9e13f7698a6716"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.businesswire.com/news/home/20260310873070/zh-CN": {
       "source_url": "https://www.businesswire.com/news/home/20260310873070/zh-CN",
       "original_reason": "secondary_evidence_attempted_awaiting_agent_review",
-      "status": "pending",
-      "reason": "alternate_original_unusable:outside_historical_range",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -11893,81 +12647,98 @@
       "attempted": true,
       "search_status": "completed",
       "search_reason": "",
-      "evidence_source_url": "https://finance.sina.com.cn/jjxw/2026-08-30/doc-iniqacxv8360037.shtml",
+      "evidence_source_url": "https://nexthop.ai/news-and-event/nexthop-ai-accelerates-into-hypergrowth-with-oversubscribed-500m-series-b-funding-catapulting-the-companys-valuation-to-4-2-billion/",
       "alternate_source": true,
-      "followup": {
-        "source_url": "https://www.businesswire.com/news/home/20260310873070/zh-CN",
-        "original_reason": "secondary_evidence_attempted_awaiting_agent_review",
-        "status": "pending",
-        "reason": "alternate_original_unusable:outside_historical_range",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [
-          {
-            "url": "https://es.tradingview.com/news/panews:7045a6025acdf:0/",
-            "status": "excluded",
-            "reason": "original_not_financing"
-          },
-          {
-            "url": "https://tw.stock.yahoo.com/news/nexthop-ai%E8%B6%85%E9%A1%8D%E5%AE%8C%E6%88%905%E5%84%84%E7%BE%8E%E5%85%83b%E8%BC%AA%E8%9E%8D%E8%B3%87-%E4%BC%B0%E5%80%BC%E9%A3%86%E5%8D%87%E8%87%B342%E5%84%84%E7%BE%8E%E5%85%83-%E5%8A%A0%E9%80%9F%E9%82%81%E5%90%91%E9%AB%98%E9%80%9F%E6%88%90%E9%95%B7-145200002.html",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://view.inews.qq.com/a/20260311A06O1K00",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://www.cmoney.tw/forum/article/177383300",
-            "status": "excluded",
-            "reason": "original_not_financing"
-          },
-          {
-            "url": "https://www.cebnet.com.cn/20250915/102995213.html",
-            "status": "pending",
-            "reason": "original_article_required"
-          },
-          {
-            "url": "https://finance.sina.com.cn/jjxw/2026-08-30/doc-iniqacxv8360037.shtml",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          }
-        ],
-        "title": "Nexthop AI完成获得超额认购的5亿美元B轮融资，公司估值达到42亿美元，加速迈入超高速增长阶段",
-        "origin_date": "2026-10-10",
-        "rounds": 0,
-        "stop_after_date": "2026-10-17",
-        "attempted": true,
-        "search_status": "completed",
-        "search_reason": "",
-        "evidence_source_url": "https://finance.sina.com.cn/jjxw/2026-08-30/doc-iniqacxv8360037.shtml",
-        "alternate_source": true,
-        "last_processed_date": "2026-10-12",
-        "next_due_date": "2026-10-13",
-        "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
-      }
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "公司公告：5亿美元B轮、42亿美元估值，主体是AI网络产品公司；拒绝此前Lunar替代。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:24:01.279Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-30/doc-iniqacxv8360037.shtml",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
+      "evidence_ref": "evidence://307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
+      "raw_ids": [
+        "RAW-bb7bd448395ec7dd"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://nexthop.ai/news-and-event/nexthop-ai-accelerates-into-hypergrowth-with-oversubscribed-500m-series-b-funding-catapulting-the-companys-valuation-to-4-2-billion/",
+        "content_hash": "307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:24:01.279Z",
+        "reason": "公司公告：5亿美元B轮、42亿美元估值，主体是AI网络产品公司；拒绝此前Lunar替代。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-4f0f88e54ede687c",
+          "event_id": "EV-b3642bc761ee4665",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Nexthop AI",
+          "announced_at": "2026-03-10",
+          "amount": "$500 Million",
+          "round": "B轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-084074056d609e70",
+              "quote_hash": "d15cac5a1a9e331332af3abd22166928845eca2efd77305ca6259674b7c8616a"
+            },
+            {
+              "source_id": "FISRC-08a23a64700b54de",
+              "quote_hash": "7de951e58d6a749d8da67818c414c20854983d3fc9e3fbe01da85baf0bb381bf"
+            },
+            {
+              "source_id": "FISRC-084074056d609e70",
+              "quote_hash": "d15cac5a1a9e331332af3abd22166928845eca2efd77305ca6259674b7c8616a"
+            },
+            {
+              "source_id": "FISRC-08a23a64700b54de",
+              "quote_hash": "e94bb2568bd59215c185168de4655ce4c847f8ac5f5c7eebbe9cb8082dd83075"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.businesswire.com/news/home/20260312735196/en/Waiv-Secures-%2433-Million-to-Scale-AI-Precision-Testing": {
       "source_url": "https://www.businesswire.com/news/home/20260312735196/en/Waiv-Secures-%2433-Million-to-Scale-AI-Precision-Testing",
       "original_reason": "review_lead_capture_budget_exhausted",
-      "status": "pending",
-      "reason": "alternate_original_unusable:outside_historical_range",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -12008,81 +12779,98 @@
       "attempted": true,
       "search_status": "completed",
       "search_reason": "",
-      "evidence_source_url": "https://www.linkedin.com/posts/times-of-startups_waiv-raises-33-million-to-scale-ai-precision-activity-7437906998303559680-3hdf",
+      "evidence_source_url": "https://waiv.com/news/waiv-secures-33-million-to-scale-ai-precision-testing",
       "alternate_source": true,
-      "followup": {
-        "source_url": "https://www.businesswire.com/news/home/20260312735196/en/Waiv-Secures-%2433-Million-to-Scale-AI-Precision-Testing",
-        "original_reason": "review_lead_capture_budget_exhausted",
-        "status": "pending",
-        "reason": "alternate_original_unusable:outside_historical_range",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [
-          {
-            "url": "https://ventureburn.com/waiv-secures-33m/",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://www.linkedin.com/posts/tech-funding-news_owkin-spinout-waiv-raises-33m-for-ai-that-activity-7437915475113619456-unU2",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://www.linkedin.com/posts/aaron-adams-nexia_ai-precision-testing-is-continuing-to-attract-activity-7437860249308602370-9Zmq",
-            "status": "excluded",
-            "reason": "original_not_financing"
-          },
-          {
-            "url": "https://www.vestbee.com/insights/articles/waiv-raises-33-m",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://www.linkedin.com/posts/mariegeneste_bringing-ai-precision-oncology-testing-activity-7437849198139580416-DNny",
-            "status": "pending",
-            "reason": "original_date_missing"
-          },
-          {
-            "url": "https://www.linkedin.com/posts/times-of-startups_waiv-raises-33-million-to-scale-ai-precision-activity-7437906998303559680-3hdf",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          }
-        ],
-        "title": "Waiv Secures $33 Million to Scale AI Precision Testing",
-        "origin_date": "2026-10-10",
-        "rounds": 0,
-        "stop_after_date": "2026-10-17",
-        "attempted": true,
-        "search_status": "completed",
-        "search_reason": "",
-        "evidence_source_url": "https://www.linkedin.com/posts/times-of-startups_waiv-raises-33-million-to-scale-ai-precision-activity-7437906998303559680-3hdf",
-        "alternate_source": true,
-        "last_processed_date": "2026-10-12",
-        "next_due_date": "2026-10-13",
-        "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
-      }
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "按页面明确3月12日公告，3300万美元融资；页面后补的3500万累计额不作为本轮。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:24:01.857Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://www.linkedin.com/posts/times-of-startups_waiv-raises-33-million-to-scale-ai-precision-activity-7437906998303559680-3hdf",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+      "evidence_ref": "evidence://ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+      "raw_ids": [
+        "RAW-a5edfccc3b2d6e33"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://waiv.com/news/waiv-secures-33-million-to-scale-ai-precision-testing",
+        "content_hash": "ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:24:01.857Z",
+        "reason": "按页面明确3月12日公告，3300万美元融资；页面后补的3500万累计额不作为本轮。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-7b1e46ddebdafd10",
+          "event_id": "EV-21aeb42806158098",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Waiv",
+          "announced_at": "2026-03-12",
+          "amount": "$33 million",
+          "round": "A轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-36c850e4e69c202f",
+              "quote_hash": "92853469d9ef999e2a1ef3f15b710abe983695c8c2602e1badcf47ac5b936f57"
+            },
+            {
+              "source_id": "FISRC-a53cb36331f951de",
+              "quote_hash": "4a0f2d5cdab2bfc1324886da8f011ec81ff23e354078f9fe67d90962155cff8a"
+            },
+            {
+              "source_id": "FISRC-36c850e4e69c202f",
+              "quote_hash": "d542a5d0ec1032dedb472f4e5e4068a9bfb4ea5141b1814b0eace63998f778ef"
+            },
+            {
+              "source_id": "FISRC-a53cb36331f951de",
+              "quote_hash": "c3084e9322a722c9fe2fb75e33416ed622366d5200215431b6c525a644cc69a1"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.donews.com/news/detail/1/6613216.html": {
       "source_url": "https://www.donews.com/news/detail/1/6613216.html",
       "original_reason": "secondary_evidence_attempted_awaiting_agent_review",
-      "status": "pending",
-      "reason": "alternate_original_unusable:original_date_missing",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -12123,81 +12911,94 @@
       "attempted": true,
       "search_status": "held",
       "search_reason": "search_providers_unavailable",
-      "evidence_source_url": "http://www.bowangcaijing.cn/news/t64360",
+      "evidence_source_url": "https://www.36kr.com/p/3873710996902912",
       "alternate_source": true,
-      "followup": {
-        "source_url": "https://www.donews.com/news/detail/1/6613216.html",
-        "original_reason": "secondary_evidence_attempted_awaiting_agent_review",
-        "status": "pending",
-        "reason": "alternate_original_unusable:original_date_missing",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [
-          {
-            "url": "https://news.qq.com/rain/a/20260629A030CW00",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://www.brandark.com/t/1lKhi8Yp",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://m.ageclub.net/article-detail/9745",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://finance.sina.com.cn/tech/roll/2026-06-28/doc-iniexipy4091998.shtml",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://zhuanlan.zhihu.com/p/2056019561212810917",
-            "status": "pending",
-            "reason": "original_http_403"
-          },
-          {
-            "url": "http://www.bowangcaijing.cn/news/t64360",
-            "status": "pending",
-            "reason": "original_date_missing"
-          }
-        ],
-        "title": "AI可穿戴品牌AIVELA完成数千万天使轮融资",
-        "origin_date": "2026-10-10",
-        "rounds": 0,
-        "stop_after_date": "2026-10-17",
-        "attempted": true,
-        "search_status": "held",
-        "search_reason": "search_providers_unavailable",
-        "evidence_source_url": "http://www.bowangcaijing.cn/news/t64360",
-        "alternate_source": true,
-        "last_processed_date": "2026-10-12",
-        "next_due_date": "2026-10-13",
-        "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
-      }
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "按原采访发表时间6月29日，不用页面更新日期10月12日；数百万美元首轮，轮次需如实未披露/经独立天使公告验证。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:23:57.490Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "http://www.bowangcaijing.cn/news/t64360",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "1f912cd1459add0cac2e940678a7df24cc373fd4c437f06b45b8c95de7bfa419",
+      "evidence_ref": "evidence://1f912cd1459add0cac2e940678a7df24cc373fd4c437f06b45b8c95de7bfa419",
+      "raw_ids": [
+        "RAW-e4be98e9ce3e5125"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://www.36kr.com/p/3873710996902912",
+        "content_hash": "1f912cd1459add0cac2e940678a7df24cc373fd4c437f06b45b8c95de7bfa419",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:23:57.490Z",
+        "reason": "按原采访发表时间6月29日，不用页面更新日期10月12日；数百万美元首轮，轮次需如实未披露/经独立天使公告验证。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-fd02f51ac7059052",
+          "event_id": "EV-f1887398d03748c2",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "AIVELA",
+          "announced_at": "2026-06-29",
+          "amount": "数百万美元",
+          "round": "其他融资",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-205a3b05b631cdd8",
+              "quote_hash": "99232e4eb9b590c4d26c6e8ff683b698926e8d81c8441870e2a5997728844224"
+            },
+            {
+              "source_id": "FISRC-205a3b05b631cdd8",
+              "quote_hash": "d77de189f235ce51e82db01095c2310dc926ab717596b5973744ffbf64326767"
+            },
+            {
+              "source_id": "FISRC-205a3b05b631cdd8",
+              "quote_hash": "605d3a0833e9c7d8dda78aaab33f85cf5b6b17128d872260b30ba9faed51044d"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.finsmes.com/2026/05/cimento-ai-raises-3m-in-pre-seed-funding.html": {
       "source_url": "https://www.finsmes.com/2026/05/cimento-ai-raises-3m-in-pre-seed-funding.html",
       "original_reason": "review_lead_capture_budget_exhausted",
-      "status": "pending",
-      "reason": "alternate_original_unusable:outside_historical_range",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -12238,68 +13039,85 @@
       "attempted": true,
       "search_status": "completed",
       "search_reason": "",
-      "evidence_source_url": "https://supermemory.ai/blog/supermemory-raises-3-million-and-building-the-best-memory-engine-for-llms/",
+      "evidence_source_url": "https://cimento.ai/articles/human-behavior-is-security-s-blind-spot.-we-built-cimento-to-fix-it",
       "alternate_source": true,
-      "followup": {
-        "source_url": "https://www.finsmes.com/2026/05/cimento-ai-raises-3m-in-pre-seed-funding.html",
-        "original_reason": "review_lead_capture_budget_exhausted",
-        "status": "pending",
-        "reason": "alternate_original_unusable:outside_historical_range",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [
-          {
-            "url": "https://devcuration.com/articles/cimento-ai-raises-3m-pre-seed-to-turn-human-error-into-a-security-layer",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://www.linkedin.com/posts/aitechsupports_ai-cimentoai-cybersecurity-activity-7462228079365476353-TftD",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://founderlodge.com/round/Cimento-AI-raises-3000000-Pre-Seed-2026-05-19-Eric-Liu-MjU5ODA",
-            "status": "pending",
-            "reason": "fetch failed"
-          },
-          {
-            "url": "https://www.newnex.io/feed/cimento-ai-raises-3-million-pre-seed-to-tackle-human-and-ai-driven-cybersecurity-risks",
-            "status": "pending",
-            "reason": "original_unreadable"
-          },
-          {
-            "url": "https://tracxn.com/d/companies/cimento-ai/__AEqpZHozj-EhUDjrRXrHxcUrC0LypX30G51PzfP5OaA",
-            "status": "pending",
-            "reason": "original_http_403"
-          },
-          {
-            "url": "https://supermemory.ai/blog/supermemory-raises-3-million-and-building-the-best-memory-engine-for-llms/",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          }
-        ],
-        "title": "Cimento AI Raises $3M in Pre-Seed Funding",
-        "origin_date": "2026-10-10",
-        "rounds": 0,
-        "stop_after_date": "2026-10-17",
-        "attempted": true,
-        "search_status": "completed",
-        "search_reason": "",
-        "evidence_source_url": "https://supermemory.ai/blog/supermemory-raises-3-million-and-building-the-best-memory-engine-for-llms/",
-        "alternate_source": true,
-        "last_processed_date": "2026-10-12",
-        "next_due_date": "2026-10-13",
-        "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
-      }
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "公司发布约300万美元pre-seed；保留约数，不绑定Supermemory原文。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "priority_ai_financing",
+        "priority": "high",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T14:24:00.696Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://supermemory.ai/blog/supermemory-raises-3-million-and-building-the-best-memory-engine-for-llms/",
+          "raw_ids": [],
+          "reason": "prior_binding_preserved_before_responsible_priority55_review"
+        }
+      ],
+      "content_hash": "b932034c06536f964f86601d3a68ebaa2628238b9dc844f87da5b6e0d2855ec8",
+      "evidence_ref": "evidence://b932034c06536f964f86601d3a68ebaa2628238b9dc844f87da5b6e0d2855ec8",
+      "raw_ids": [
+        "RAW-24316a8f0ba17be0"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://cimento.ai/articles/human-behavior-is-security-s-blind-spot.-we-built-cimento-to-fix-it",
+        "content_hash": "b932034c06536f964f86601d3a68ebaa2628238b9dc844f87da5b6e0d2855ec8",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T14:24:00.696Z",
+        "reason": "公司发布约300万美元pre-seed；保留约数，不绑定Supermemory原文。 已核对正文融资主体、产品及来源；准入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-17d13544a6a693da",
+          "event_id": "EV-92a426739f908c92",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Cimento",
+          "announced_at": "2026-05-13",
+          "amount": "~$3M",
+          "round": "预种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a95a5f200afb6976",
+              "quote_hash": "3f2bd01b378c0a2e0063d40086b5630e19c36babc4e51c5d7163543e428cc29f"
+            },
+            {
+              "source_id": "FISRC-a95a5f200afb6976",
+              "quote_hash": "859ad43a37570ecf373f131e633af551a17a413289600422bdc2eefe3044448a"
+            },
+            {
+              "source_id": "FISRC-a95a5f200afb6976",
+              "quote_hash": "59d910acc513442e58e1a619621899863707204ab34cc4966b235da42b75d787"
+            },
+            {
+              "source_id": "FISRC-a95a5f200afb6976",
+              "quote_hash": "2d0636e69385178be61c40f16ce7ef45fbbbd9714f3f4fb639300ae0ba8e2252"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.finsmes.com/2026/07/venice-ai-raises-65m-in-series-a-funding.html": {
       "source_url": "https://www.finsmes.com/2026/07/venice-ai-raises-65m-in-series-a-funding.html",
@@ -36828,12 +37646,12 @@
     }
   },
   "review_queue": {
-    "total": 225,
+    "total": 96,
     "stages": {
-      "source_identity_review": 66,
-      "needs_original": 110,
-      "evidence_review": 32,
-      "fact_review": 10,
+      "source_identity_review": 26,
+      "evidence_review": 8,
+      "needs_original": 47,
+      "fact_review": 8,
       "fact_conflict_review": 7
     }
   },
@@ -36841,10 +37659,10 @@
   "status": "completed",
   "counts": {
     "total": 405,
-    "verified": 9,
+    "verified": 22,
     "excluded": 57,
     "reviewed": 0,
-    "pending": 339
+    "pending": 326
   },
-  "priority_review": "priority-review.json"
+  "priority_review": "priority55-review.json"
 }

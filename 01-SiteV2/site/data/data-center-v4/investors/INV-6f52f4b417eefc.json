@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,17 +62,18 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 3,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 3,
     "china_market_company_count": 3,
     "first_disclosed_at": "2026-03-24",
     "latest_disclosed_at": "2026-08-17",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 2,
       "participant": 1
     },
@@ -220,6 +221,38 @@
         ]
       },
       {
+        "activity_id": "IA-e7fed27da08c55ba",
+        "funding_insight_id": "FI-86e0ed8420a51fd2",
+        "event_ids": [
+          "EV-d88c188529236c7f"
+        ],
+        "company_entity_id": "EN-c0d5bf1368bcdad5",
+        "company_canonical_entity_id": "",
+        "company_name": "Creao AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d39a219890a91abf",
+            "source_url": "https://news.aibase.com/news/20168",
+            "source_title": "Creao AI Completes $10 Million in Funding to Develop the Future Agent Collaboration Operating System",
+            "source_content_hash": "8d304e12b36e53d1",
+            "quote": "a multi-million-dollar Pre-A round led by Monolith",
+            "quote_hash": "5baa50860a5423b61a083d17f9c8bd2fe7d5185b953e544f1d094eed8b16ab16"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-668eba3c47665967",
         "funding_insight_id": "FI-e4c90ce26c3922b5",
         "event_ids": [
@@ -278,6 +311,14 @@
         "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
       },
       {
+        "source_id": "FISRC-d39a219890a91abf",
+        "source_url": "https://news.aibase.com/news/20168",
+        "source_title": "Creao AI Completes $10 Million in Funding to Develop the Future Agent Collaboration Operating System",
+        "source_content_hash": "8d304e12b36e53d1",
+        "quote": "a multi-million-dollar Pre-A round led by Monolith",
+        "quote_hash": "5baa50860a5423b61a083d17f9c8bd2fe7d5185b953e544f1d094eed8b16ab16"
+      },
+      {
         "source_id": "FISRC-483eb7ff4aaec1c4",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-26/doc-inipsezp9146369.shtml",
         "source_title": "DeepSeek正接近完成新一轮融资：已开始为潜在的科创板IPO做准备",
@@ -286,6 +327,18 @@
         "quote_hash": "d43a3574567780867c144269ea3ca1ce457051c8338c83a54195afd7f8f9ea41"
       }
     ],
+    "translations": {
+      "zh-CN": {
+        "activities[3].role": {
+          "text": "Pre-A轮领投",
+          "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:18.959Z",
+          "status": "translated"
+        }
+      }
+    },
     "public_profile": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",

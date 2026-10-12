@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,18 +62,18 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 14,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 12,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2025-09-09",
+    "first_disclosed_at": "2019-03",
     "latest_disclosed_at": "2026-10-08",
     "role_counts": {
       "co_lead": 3,
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 4,
       "participant": 7
     },
@@ -712,6 +712,38 @@
         ]
       },
       {
+        "activity_id": "IA-da136453e308c41e",
+        "funding_insight_id": "FI-a3a35777c25025b9",
+        "event_ids": [
+          "EV-fb466830d5c49aea"
+        ],
+        "company_entity_id": "EN-864e7f949b17c9b1",
+        "company_canonical_entity_id": "",
+        "company_name": "Netomi",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2019-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2019年3月A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-920c1440f0e930ff",
+            "source_url": "https://multiples.vc/private-comps/netomi",
+            "source_title": "Netomi Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "e7ce5bd6d1702b0c",
+            "quote": "Index Ventures (lead); Y Combinator; Fin Capital; Advancit Capital; ST Telemedia; Henry Kravis; Bowery Capital; Upslope Ventures; Indicator Ventures",
+            "quote_hash": "f4574c854afa550d6ec88c5347be0dedd2e744a96bc7c917a40751a2ab3208e4"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-377070b1425856c0",
         "funding_insight_id": "FI-4b143304af694a92",
         "event_ids": [
@@ -890,6 +922,14 @@
         "source_content_hash": "a710989bdebc7feb",
         "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
         "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+      },
+      {
+        "source_id": "FISRC-920c1440f0e930ff",
+        "source_url": "https://multiples.vc/private-comps/netomi",
+        "source_title": "Netomi Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "e7ce5bd6d1702b0c",
+        "quote": "Index Ventures (lead); Y Combinator; Fin Capital; Advancit Capital; ST Telemedia; Henry Kravis; Bowery Capital; Upslope Ventures; Indicator Ventures",
+        "quote_hash": "f4574c854afa550d6ec88c5347be0dedd2e744a96bc7c917a40751a2ab3208e4"
       },
       {
         "source_id": "FISRC-6ffdf43efe75ccde",
@@ -1072,7 +1112,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[14].role": {
+        "activities[15].role": {
           "text": "Series B 联合领投",
           "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
           "provider": "deepseek",

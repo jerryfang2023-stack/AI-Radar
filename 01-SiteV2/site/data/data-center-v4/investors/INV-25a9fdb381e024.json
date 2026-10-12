@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 20,
+    "current_round_count": 21,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 19,
+    "portfolio_company_count": 20,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,7 +74,7 @@
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
-      "lead": 11,
+      "lead": 12,
       "participant": 7
     },
     "round_codes": [
@@ -166,6 +166,11 @@
         "entity_id": "EN-ccfc5e062828b145",
         "canonical_entity_id": "",
         "name": "Scaled Cognition"
+      },
+      {
+        "entity_id": "EN-f7a3c2cef889d8f6",
+        "canonical_entity_id": "",
+        "name": "Superpose"
       },
       {
         "entity_id": "EN-5f43904e99289cdd",
@@ -421,6 +426,46 @@
             "source_content_hash": "8c26f4447adaeabc",
             "quote": "existing investors — including Lightspeed Venture Partners, Khosla Ventures, and South Park Commons — also participated",
             "quote_hash": "abf17d3c7cc04d6ab46460f8938409589705dc5e1d6d0e56712e07b6a2ea602b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-26839b9e49cddb80",
+        "funding_insight_id": "FI-d50895a2423a4402",
+        "event_ids": [
+          "EV-70045a46dafeaf68"
+        ],
+        "company_entity_id": "EN-f7a3c2cef889d8f6",
+        "company_canonical_entity_id": "",
+        "company_name": "Superpose",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$2.2 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "220 万美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-56fb03980ba6a7c5",
+            "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-superpose-on-dollar22-million-seed-financing.html",
+            "source_title": "Wilson Sonsini 为 Superpose 的 220 万美元种子轮融资提供咨询",
+            "source_content_hash": "4af5c527e0561b842e9859675409eda6322e00386f785077576b16677a44fec2",
+            "quote": "announced a $2.2 million seed funding round led by Khosla Ventures",
+            "quote_hash": "7f0ab29e8148048e58fcffd16a6e5e7a43db63f3f983b3bab979a8891ff02c0c"
           }
         ]
       },
@@ -1187,6 +1232,14 @@
         "quote_hash": "abf17d3c7cc04d6ab46460f8938409589705dc5e1d6d0e56712e07b6a2ea602b"
       },
       {
+        "source_id": "FISRC-56fb03980ba6a7c5",
+        "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-superpose-on-dollar22-million-seed-financing.html",
+        "source_title": "Wilson Sonsini 为 Superpose 的 220 万美元种子轮融资提供咨询",
+        "source_content_hash": "4af5c527e0561b842e9859675409eda6322e00386f785077576b16677a44fec2",
+        "quote": "announced a $2.2 million seed funding round led by Khosla Ventures",
+        "quote_hash": "7f0ab29e8148048e58fcffd16a6e5e7a43db63f3f983b3bab979a8891ff02c0c"
+      },
+      {
         "source_id": "FISRC-2daabe6c0da09480",
         "source_url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative",
         "source_title": "WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱",
@@ -1509,7 +1562,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[20].role": {
+        "activities[21].role": {
           "text": "Series C 领投",
           "source_hash": "c55ed79792c5d8940ad622d8d48ba34699b43b78b6c1f267f19f91e6570bbcca",
           "provider": "deepseek",

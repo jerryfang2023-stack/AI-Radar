@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,9 +64,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 36,
+    "current_round_count": 37,
     "historical_or_ambiguous_count": 9,
-    "portfolio_company_count": 32,
+    "portfolio_company_count": 33,
     "market_regions": [
       "GLOBAL"
     ],
@@ -78,7 +78,7 @@
       "co_lead": 6,
       "historical_or_ambiguous": 9,
       "lead": 20,
-      "participant": 10
+      "participant": 11
     },
     "round_codes": [
       "multi_round",
@@ -183,6 +183,11 @@
         "entity_id": "FICO-netris",
         "canonical_entity_id": "",
         "name": "Netris"
+      },
+      {
+        "entity_id": "EN-974371852171d0ea",
+        "canonical_entity_id": "",
+        "name": "Nexthop AI"
       },
       {
         "entity_id": "EN-7d3194f79e645c42",
@@ -1536,6 +1541,46 @@
         ]
       },
       {
+        "activity_id": "IA-ccee70ddd980247d",
+        "funding_insight_id": "FI-f06137e7d36d4c01",
+        "event_ids": [
+          "EV-b3642bc761ee4665"
+        ],
+        "company_entity_id": "EN-974371852171d0ea",
+        "company_canonical_entity_id": "",
+        "company_name": "Nexthop AI",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$500 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-03-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-084074056d609e70",
+            "source_url": "https://nexthop.ai/news-and-event/nexthop-ai-accelerates-into-hypergrowth-with-oversubscribed-500m-series-b-funding-catapulting-the-companys-valuation-to-4-2-billion/",
+            "source_title": "Nexthop AI 以超额认购的 5 亿美元 B 轮融资加速进入超高速增长，推动公司估值达到 42 亿美元",
+            "source_content_hash": "307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
+            "quote": "This round was spearheaded by Lightspeed Venture Partners, with Andreessen Horowitz joining as a major investor, and participation from Altimeter and all existing investors.",
+            "quote_hash": "498e40ef1d04bcf5884269ed9ab8b7b7e9a59e02db58ebf2fa6a8c9889cf4c7c"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-93bd8c5865a26c22",
         "funding_insight_id": "FI-b69210c5435600e7",
         "event_ids": [
@@ -2331,6 +2376,14 @@
         "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
       },
       {
+        "source_id": "FISRC-084074056d609e70",
+        "source_url": "https://nexthop.ai/news-and-event/nexthop-ai-accelerates-into-hypergrowth-with-oversubscribed-500m-series-b-funding-catapulting-the-companys-valuation-to-4-2-billion/",
+        "source_title": "Nexthop AI 以超额认购的 5 亿美元 B 轮融资加速进入超高速增长，推动公司估值达到 42 亿美元",
+        "source_content_hash": "307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
+        "quote": "This round was spearheaded by Lightspeed Venture Partners, with Andreessen Horowitz joining as a major investor, and participation from Altimeter and all existing investors.",
+        "quote_hash": "498e40ef1d04bcf5884269ed9ab8b7b7e9a59e02db58ebf2fa6a8c9889cf4c7c"
+      },
+      {
         "source_id": "FISRC-e74c5c9663430e27",
         "source_url": "https://www.heliad.com/highlights/lio-technologies-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement",
         "source_title": "Lio Technologies 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购",
@@ -2665,7 +2718,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[35].role": {
+        "activities[36].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2673,7 +2726,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[38].role": {
+        "activities[39].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

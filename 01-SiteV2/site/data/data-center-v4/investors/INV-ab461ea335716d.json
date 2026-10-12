@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,31 +61,77 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-13",
-    "latest_disclosed_at": "2026-08-13",
+    "latest_disclosed_at": "2026-10-09",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "other"
+      "other",
+      "seed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-c0b0109d9439de57",
         "canonical_entity_id": "",
         "name": "GitHub"
+      },
+      {
+        "entity_id": "EN-f6da9e44c982f0d4",
+        "canonical_entity_id": "",
+        "name": "OllyGarden"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-04491da25423f17e",
+        "funding_insight_id": "FI-7719d36b334dba3f",
+        "event_ids": [
+          "EV-a58d2d7fca242811"
+        ],
+        "company_entity_id": "EN-f6da9e44c982f0d4",
+        "company_canonical_entity_id": "",
+        "company_name": "OllyGarden",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$4m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "400 万美元"
+        },
+        "announced_at": "2026-10-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a624307985a32fe5",
+            "source_url": "https://ollygarden.com/resources/press-releases/ollygarden-raises-4m-launches-minimum-viable-instrumentation",
+            "source_title": "OllyGarden 获 400 万美元融资并推出“Minimum Viable Instrumentation”，加速解决不良遥测问题",
+            "source_content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+            "quote": "observability leaders Datadog, Grafana Labs, and Dash0 who made further strategic investments into the platform",
+            "quote_hash": "d2bc297fc86356a20b960b0bce0035e27f9b63b95453f840119438e8e1386a84"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b1f424058c51139a",
         "funding_insight_id": "FI-d856b9470e389a68",
@@ -161,6 +207,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a624307985a32fe5",
+        "source_url": "https://ollygarden.com/resources/press-releases/ollygarden-raises-4m-launches-minimum-viable-instrumentation",
+        "source_title": "OllyGarden 获 400 万美元融资并推出“Minimum Viable Instrumentation”，加速解决不良遥测问题",
+        "source_content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+        "quote": "observability leaders Datadog, Grafana Labs, and Dash0 who made further strategic investments into the platform",
+        "quote_hash": "d2bc297fc86356a20b960b0bce0035e27f9b63b95453f840119438e8e1386a84"
+      },
+      {
         "source_id": "FISRC-08365977cd80206b",
         "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
         "source_title": "50个开源项目教会我们的AI时代安全之道",
@@ -198,6 +252,10 @@
           "source_id": "FISRC-08365977cd80206b"
         },
         {
+          "description": "融资来源记录：OllyGarden · 种子轮 · 2026-10-09 · 本轮参投 · $4m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a624307985a32fe5"
+        },
+        {
           "description": "融资来源记录：GitHub Secure Open Source Fund · 历史轮次未披露 · 新增合作伙伴。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-944113caf8db4760"
         }
@@ -219,6 +277,14 @@
           "source_content_hash": "5497438ebea406f234bb99e02fb18239b0c39b2bddcef1e2ec5bc4bae3de7dca",
           "quote": "We are building the monitoring and security platform for developers, IT operations teams and business users in the cloud age.",
           "quote_hash": "41a52fcf159de274912fa4ddac12f9ce22d62a2fbed6f6cb3492a9ce835486a8"
+        },
+        {
+          "source_id": "FISRC-a624307985a32fe5",
+          "source_url": "https://ollygarden.com/resources/press-releases/ollygarden-raises-4m-launches-minimum-viable-instrumentation",
+          "source_title": "OllyGarden 获 400 万美元融资并推出“Minimum Viable Instrumentation”，加速解决不良遥测问题",
+          "source_content_hash": "3b3aac82d257f9a1feddf82512c4bf016a3bffd11aaf8b8f37b8483368cb882a",
+          "quote": "observability leaders Datadog, Grafana Labs, and Dash0 who made further strategic investments into the platform",
+          "quote_hash": "d2bc297fc86356a20b960b0bce0035e27f9b63b95453f840119438e8e1386a84"
         },
         {
           "source_id": "FISRC-944113caf8db4760",

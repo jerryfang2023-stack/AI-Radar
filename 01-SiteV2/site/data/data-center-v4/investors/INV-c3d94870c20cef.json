@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -74,13 +74,20 @@
     "latest_disclosed_at": "2026-06-22",
     "role_counts": {
       "historical_or_ambiguous": 2,
+      "lead": 1,
       "participant": 2
     },
     "round_codes": [
       "multi_round",
+      "other",
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-c0d5bf1368bcdad5",
+        "canonical_entity_id": "",
+        "name": "Creao AI"
+      },
       {
         "entity_id": "FICO-upscale-ai",
         "canonical_entity_id": "",
@@ -130,6 +137,46 @@
             "source_content_hash": "23145edb5fdd8d69",
             "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
             "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d1f4d7e11703eaa4",
+        "funding_insight_id": "FI-86e0ed8420a51fd2",
+        "event_ids": [
+          "EV-d88c188529236c7f"
+        ],
+        "company_entity_id": "EN-c0d5bf1368bcdad5",
+        "company_canonical_entity_id": "",
+        "company_name": "Creao AI",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "Early Funding",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-04-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c59e88cf636de760",
+            "source_url": "https://venturebeat.com/business/creao-ai-raises-10m-to-build-the-platform-where-one-person-does-the-work-of-a-team",
+            "source_title": "Creao AI 融资，打造一人完成团队工作的平台",
+            "source_content_hash": "76f6cc55bced0e5b197ae4553b899d77b84768ac129b4f4a485e6f90ae2c991c",
+            "quote": "The startup just closed a $10 million round led by Prosperity7 Ventures — the $3 billion diversified venturing fund of Aramco Ventures — bringing total funding to $25 million across three rounds in under a year.",
+            "quote_hash": "ea7c932e7f6df1f788ac74aaf525ff3898751bc293ab84ea5f2ccdbcb7b2e9dc"
           }
         ]
       },
@@ -248,6 +295,14 @@
         "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
       },
       {
+        "source_id": "FISRC-c59e88cf636de760",
+        "source_url": "https://venturebeat.com/business/creao-ai-raises-10m-to-build-the-platform-where-one-person-does-the-work-of-a-team",
+        "source_title": "Creao AI 融资，打造一人完成团队工作的平台",
+        "source_content_hash": "76f6cc55bced0e5b197ae4553b899d77b84768ac129b4f4a485e6f90ae2c991c",
+        "quote": "The startup just closed a $10 million round led by Prosperity7 Ventures — the $3 billion diversified venturing fund of Aramco Ventures — bringing total funding to $25 million across three rounds in under a year.",
+        "quote_hash": "ea7c932e7f6df1f788ac74aaf525ff3898751bc293ab84ea5f2ccdbcb7b2e9dc"
+      },
+      {
         "source_id": "FISRC-3c60f2ab7fcb8b84",
         "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
         "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
@@ -316,12 +371,12 @@
           "source_id": "FISRC-7dcdc22c0b1702bf"
         },
         {
-          "description": "融资来源记录：Upscale, Inc. · A轮 · 2026-01-21 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3c60f2ab7fcb8b84"
+          "description": "融资来源记录：Creao AI · 其他融资 · 2026-04-17 · 本轮领投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c59e88cf636de760"
         },
         {
-          "description": "融资来源记录：千寻智能 · 历史轮次未披露 · Pre-A轮领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b8b7d456eceee943"
+          "description": "融资来源记录：Upscale, Inc. · A轮 · 2026-01-21 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3c60f2ab7fcb8b84"
         }
       ],
       "contacts": [
@@ -366,20 +421,20 @@
           "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
         },
         {
+          "source_id": "FISRC-c59e88cf636de760",
+          "source_url": "https://venturebeat.com/business/creao-ai-raises-10m-to-build-the-platform-where-one-person-does-the-work-of-a-team",
+          "source_title": "Creao AI 融资，打造一人完成团队工作的平台",
+          "source_content_hash": "76f6cc55bced0e5b197ae4553b899d77b84768ac129b4f4a485e6f90ae2c991c",
+          "quote": "The startup just closed a $10 million round led by Prosperity7 Ventures — the $3 billion diversified venturing fund of Aramco Ventures — bringing total funding to $25 million across three rounds in under a year.",
+          "quote_hash": "ea7c932e7f6df1f788ac74aaf525ff3898751bc293ab84ea5f2ccdbcb7b2e9dc"
+        },
+        {
           "source_id": "FISRC-3c60f2ab7fcb8b84",
           "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
           "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
           "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
           "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
           "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
-        },
-        {
-          "source_id": "FISRC-b8b7d456eceee943",
-          "source_url": "https://news.pedaily.cn/202606/564786.shtml",
-          "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
-          "source_content_hash": "23a4c9a3f74c9f59",
-          "quote": "2025年3月，5.28亿元Pre-A轮融资出炉，由阿美风险投资旗下Prosperity7 Ventures（P7）领投",
-          "quote_hash": "00d032ce01998fc3009e7662c7071edca6119fd19c4482cc7e193431f8df2ea5"
         }
       ],
       "last_verified_at": "2026-09-26",
@@ -390,7 +445,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[2].role": {
+        "activities[3].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",

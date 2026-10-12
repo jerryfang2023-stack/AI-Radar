@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-03-12",
+    "latest_disclosed_at": "2026-03-12",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6a5214e7410ddc54",
+        "canonical_entity_id": "",
+        "name": "Waiv"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-3162e1984af60690",
+        "funding_insight_id": "FI-4e2a42223ce837a7",
+        "event_ids": [
+          "EV-21aeb42806158098"
+        ],
+        "company_entity_id": "EN-6a5214e7410ddc54",
+        "company_canonical_entity_id": "",
+        "company_name": "Waiv",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$33 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 33000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3300 万美元"
+        },
+        "announced_at": "2026-03-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-36c850e4e69c202f",
+            "source_url": "https://waiv.com/news/waiv-secures-33-million-to-scale-ai-precision-testing",
+            "source_title": "Waiv 获得 3300 万美元以扩展 AI 精准测试",
+            "source_content_hash": "ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+            "quote": "The raise is co-led by OTB Ventures and Alpha Intelligence Capital (AIC), with participation from Serena Data Ventures, Karista, and SistaFund.",
+            "quote_hash": "e07b80c7c2eed03adcfe4c7219a2110c00af8cb8481ae0559e38f2c322e96876"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4cdc5e61840d559b",
         "funding_insight_id": "FI-3b3629354d22b6a4",
@@ -111,6 +160,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-36c850e4e69c202f",
+        "source_url": "https://waiv.com/news/waiv-secures-33-million-to-scale-ai-precision-testing",
+        "source_title": "Waiv 获得 3300 万美元以扩展 AI 精准测试",
+        "source_content_hash": "ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+        "quote": "The raise is co-led by OTB Ventures and Alpha Intelligence Capital (AIC), with participation from Serena Data Ventures, Karista, and SistaFund.",
+        "quote_hash": "e07b80c7c2eed03adcfe4c7219a2110c00af8cb8481ae0559e38f2c322e96876"
+      },
       {
         "source_id": "FISRC-39755042b7f329d6",
         "source_url": "https://fintech.global/2021/04/26/the-34-fintech-rounds-from-the-last-week-you-cant-afford-to-miss/",
@@ -200,6 +257,10 @@
         {
           "description": "FintechOS · 2026-09-21 · 公司官方公告称其完成 2800 万美元股权与债务融资，公告列出的股东投资方为 Bek Ventures、IFC、Cipio Partners 和 Molten Ventures，债务方为 Santander CIB，未列出 OTB Ventures；这与 OTB 参与的 2021 年历史轮次不同。",
           "source_id": "otb_fintechos_2026"
+        },
+        {
+          "description": "融资来源记录：Waiv · A轮 · 2026-03-12 · 本轮联合领投 · $33 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-36c850e4e69c202f"
         }
       ],
       "profile_type": "organization",
@@ -301,6 +362,14 @@
           "source_content_hash": "d512551df45fd3d4ea83a043f8e64d30b56f55ad21720a3a4ec2af3c66d13d11",
           "quote": "including Bek Ventures, IFC, Cipio Partners and Molten Ventures, alongside a senior debt facility from Santander CIB.",
           "quote_hash": "859260e4245477298272dd14981c43b47069c41e09aec953842f1478d4222731"
+        },
+        {
+          "source_id": "FISRC-36c850e4e69c202f",
+          "source_url": "https://waiv.com/news/waiv-secures-33-million-to-scale-ai-precision-testing",
+          "source_title": "Waiv 获得 3300 万美元以扩展 AI 精准测试",
+          "source_content_hash": "ab442964cc378b8f1866d3acd0e5983cd4dea51a544c2df9db097d7a8bc2e5d4",
+          "quote": "The raise is co-led by OTB Ventures and Alpha Intelligence Capital (AIC), with participation from Serena Data Ventures, Karista, and SistaFund.",
+          "quote_hash": "e07b80c7c2eed03adcfe4c7219a2110c00af8cb8481ae0559e38f2c322e96876"
         }
       ],
       "last_verified_at": "2026-09-27"

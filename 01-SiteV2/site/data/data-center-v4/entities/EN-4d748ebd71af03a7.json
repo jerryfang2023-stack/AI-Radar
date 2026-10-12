@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -66,6 +66,7 @@
       "EV-a997372a3677022a",
       "EV-640c5ea9f4fa2780",
       "EV-bbab0dff2f55a4f6",
+      "EV-fb466830d5c49aea",
       "EV-172660367138131c",
       "EV-eb282b4658bbdd7e",
       "EV-e7e2dfbc41a639d2",
@@ -87,8 +88,8 @@
       "EN-bbdefa2950f49882",
       "EN-7d3194f79e645c42"
     ],
-    "firstSeen": "2026-05-06",
-    "lastSeen": "2026-09-19",
+    "firstSeen": "2026-04-30",
+    "lastSeen": "2026-10-12",
     "relationIds": [
       "REL2-6460871b6d621283",
       "REL2-047306f993a722b4",
@@ -97,6 +98,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-fb466830d5c49aea",
         "EV-a997372a3677022a",
         "EV-640c5ea9f4fa2780",
         "EV-bbab0dff2f55a4f6"
@@ -122,6 +124,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-fb466830d5c49aea",
+        "dataDate": "2026-10-12",
+        "date": "2026-04-30",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Netomi 融资百万，Accenture 和 Adobe 押注客户服务 AI",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-864e7f949b17c9b1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-864e7f949b17c9b1",
+          "EN-4d748ebd71af03a7"
+        ]
+      },
       {
         "id": "EV-a997372a3677022a",
         "dataDate": "2026-09-19",

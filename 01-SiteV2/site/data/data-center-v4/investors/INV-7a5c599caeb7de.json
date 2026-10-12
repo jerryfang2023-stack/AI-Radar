@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,17 +65,17 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 34,
-    "historical_or_ambiguous_count": 8,
+    "historical_or_ambiguous_count": 9,
     "portfolio_company_count": 33,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2023-04-27",
+    "first_disclosed_at": "2016-03",
     "latest_disclosed_at": "2026-10-06",
     "role_counts": {
-      "historical_or_ambiguous": 8,
+      "historical_or_ambiguous": 9,
       "lead": 4,
       "participant": 30
     },
@@ -1643,6 +1643,38 @@
         ]
       },
       {
+        "activity_id": "IA-7bfe72692bb860c1",
+        "funding_insight_id": "FI-a3a35777c25025b9",
+        "event_ids": [
+          "EV-fb466830d5c49aea"
+        ],
+        "company_entity_id": "EN-864e7f949b17c9b1",
+        "company_canonical_entity_id": "",
+        "company_name": "Netomi",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2016-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2016年3月种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-920c1440f0e930ff",
+            "source_url": "https://multiples.vc/private-comps/netomi",
+            "source_title": "Netomi Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "e7ce5bd6d1702b0c",
+            "quote": "Bowery Capital (lead); Y Combinator (lead)",
+            "quote_hash": "e8b73970bb2ed74601b93191f0a3a8f7d52f64458baeaa4cf4c873dc40cc6b82"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-73272a62840af6c1",
         "funding_insight_id": "FI-68cd3b0b2986de61",
         "event_ids": [
@@ -2197,6 +2229,14 @@
         "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
       },
       {
+        "source_id": "FISRC-920c1440f0e930ff",
+        "source_url": "https://multiples.vc/private-comps/netomi",
+        "source_title": "Netomi Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "e7ce5bd6d1702b0c",
+        "quote": "Bowery Capital (lead); Y Combinator (lead)",
+        "quote_hash": "e8b73970bb2ed74601b93191f0a3a8f7d52f64458baeaa4cf4c873dc40cc6b82"
+      },
+      {
         "source_id": "FISRC-60fb49b2b22b693c",
         "source_url": "https://www.caplight.com/company/argalabs",
         "source_title": "Arga Labs Valuation & Funding History | Caplight",
@@ -2383,7 +2423,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[36].role": {
+        "activities[37].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

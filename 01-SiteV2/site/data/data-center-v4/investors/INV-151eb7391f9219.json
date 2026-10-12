@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,26 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
-    "first_disclosed_at": "2026-07-07",
+    "first_disclosed_at": "2026-06-02",
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
       "pre_series_b",
+      "series_a",
       "series_c"
     ],
     "portfolio_companies": [
@@ -90,6 +93,11 @@
         "entity_id": "EN-aa949c066d46acbf",
         "canonical_entity_id": "EN-aa949c066d46acbf",
         "name": "Even Realities Technology"
+      },
+      {
+        "entity_id": "EN-1c39e60136f66e6c",
+        "canonical_entity_id": "",
+        "name": "Mindverse（心洲科技）"
       }
     ],
     "activities": [
@@ -174,6 +182,46 @@
         ]
       },
       {
+        "activity_id": "IA-3110d5959883082f",
+        "funding_insight_id": "FI-1737078d3429522b",
+        "event_ids": [
+          "EV-00305df9d37dd714"
+        ],
+        "company_entity_id": "EN-1c39e60136f66e6c",
+        "company_canonical_entity_id": "",
+        "company_name": "Mindverse（心洲科技）",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-06-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-db62e2a369722db7",
+            "source_url": "https://www.sohu.com/a/1031200047_355029",
+            "source_title": "真格天使项目「Mindverse」完成 5000 万美元 A 轮融资，打造持续学习的 Agent 模型",
+            "source_content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+            "quote": "近日，Mindverse（心洲科技）完成由美团领投的 A 轮融资，元禾璞华、韶音、变量资本和老股东追加跟投，总融资额近 5000 万美元。",
+            "quote_hash": "a6a9b7839a4e41a59bd732ad9f849de7b19875cb9e38da7080f4ee3b6c3e6ec6"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-9ddc1df92e53f495",
         "funding_insight_id": "FI-f5103149f04ea6ed",
         "event_ids": [
@@ -224,6 +272,14 @@
         "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
       },
       {
+        "source_id": "FISRC-db62e2a369722db7",
+        "source_url": "https://www.sohu.com/a/1031200047_355029",
+        "source_title": "真格天使项目「Mindverse」完成 5000 万美元 A 轮融资，打造持续学习的 Agent 模型",
+        "source_content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+        "quote": "近日，Mindverse（心洲科技）完成由美团领投的 A 轮融资，元禾璞华、韶音、变量资本和老股东追加跟投，总融资额近 5000 万美元。",
+        "quote_hash": "a6a9b7839a4e41a59bd732ad9f849de7b19875cb9e38da7080f4ee3b6c3e6ec6"
+      },
+      {
         "source_id": "FISRC-5d82f5dc9fc96ce5",
         "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
         "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
@@ -259,8 +315,8 @@
           "source_id": "FISRC-340182e8dcb597a3"
         },
         {
-          "description": "融资来源记录：Moonshot AI · A+轮 · A+轮参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5d82f5dc9fc96ce5"
+          "description": "融资来源记录：Mindverse（心洲科技） · A轮 · 2026-06-02 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-db62e2a369722db7"
         }
       ],
       "contacts": [
@@ -298,12 +354,12 @@
           "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
         },
         {
-          "source_id": "FISRC-5d82f5dc9fc96ce5",
-          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-          "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-          "source_content_hash": "eeb091dd8db852e6",
-          "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
-          "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
+          "source_id": "FISRC-db62e2a369722db7",
+          "source_url": "https://www.sohu.com/a/1031200047_355029",
+          "source_title": "真格天使项目「Mindverse」完成 5000 万美元 A 轮融资，打造持续学习的 Agent 模型",
+          "source_content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
+          "quote": "近日，Mindverse（心洲科技）完成由美团领投的 A 轮融资，元禾璞华、韶音、变量资本和老股东追加跟投，总融资额近 5000 万美元。",
+          "quote_hash": "a6a9b7839a4e41a59bd732ad9f849de7b19875cb9e38da7080f4ee3b6c3e6ec6"
         }
       ],
       "last_verified_at": "2026-09-26",
