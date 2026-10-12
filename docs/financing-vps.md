@@ -8,7 +8,7 @@
 - VPS `guanlan-financing.timer` 每十分钟检查一次，`Persistent=true`；每日 08:10 前不启动新的日期，已有未完成日期可恢复。
 - 初始 `/etc/guanlan-financing/runtime.env` 为 `GUANLAN_VPS_MODE=standby`。此模式仅调用融资派发器的 `--dry-run=true`，保存观察回执，不派发、不调用模型、不合并、不发布。
 - `active` 模式复用同一 GitHub 融资生产工作流及恢复检查点，Hermes 审核开放的融资 PR，检查精确提交与 CI 后合并，再等 Pages 和 VPS 发布。模型 API ID 固定 `deepseek-flash`（DeepSeek V4.1 Flash）。每日期最多三次不同提交/基线的模型审核；失败或中断记录为未知，不自动重复付费。
-- `funding-health-dispatch.yml` 保留每日 10:30 幂等兜底。备用模式避免重复采集、审核与发布。
+- `funding-health-dispatch.yml` 每日北京时间08:10提供同一批次的幂等主派发，10:30保留幂等兜底。备用模式避免重复采集、审核与发布。
 
 ## VPS 边界和目录
 
@@ -61,6 +61,8 @@ sudo -u guanlan-financing sudo /usr/local/libexec/guanlan-financing-publish YYYY
 ```
 
 `publication-stages.json` 保留已通过的阶段和首个失败阶段。`published.json` 绑定接受 SHA、网站日期和 Mini 日期；Pages 成功或单次 CLI 成功不代替完整发布回执。无新增和全待核验按真实状态收尾，不能人为更新融资日期。
+
+`awaiting_approval`回执保留待批CI运行及精确head；控制器正常记录等待，不能把它当采集失败或重新派发发现。旧日期仍待审批或检查时保留现场，避免阻止新一天08:10任务；审批完成后显式以`--date=原日期`恢复同一PR的审核与发布。真实检查失败继续记录ci_failed，缺证据继续hold，不自动批准或跳过CI。
 
 ## 切换顺序与回退
 

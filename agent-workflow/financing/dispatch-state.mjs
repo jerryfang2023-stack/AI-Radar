@@ -7,8 +7,10 @@ export function acceptedPublicationStatus(publication, date) {
     : null;
 }
 
-export function pendingReviewStatus(prs, date, checksStatus = 'waiting') {
+export function pendingReviewStatus(prs, date, checksStatus = 'waiting', details = {}) {
   const pr = prs.find(row => row.state === 'OPEN' && row.headRefName === `automation/financing-${date}`);
-  const status = checksStatus === 'passed' ? 'ready_for_review' : checksStatus === 'failed' ? 'ci_failed' : 'checks_pending';
-  return pr ? { date, status, pr_url: pr.url, head_sha: pr.headRefOid } : null;
+  const status = checksStatus === 'passed' ? 'ready_for_review' : checksStatus === 'failed' ? 'ci_failed' : checksStatus === 'awaiting_approval' ? 'awaiting_approval' : 'checks_pending';
+  return pr ? { date, status, pr_url: pr.url, head_sha: pr.headRefOid,
+    ...(details.run_id ? {ci_run_id:details.run_id,ci_run_url:details.run_url} : {}),
+    ...(details.reason ? {reason:details.reason} : {}) } : null;
 }

@@ -18,10 +18,11 @@ on:
       - "package-lock.json"
       - ".github/workflows/github-pages.yml"
   workflow_run:
+    # Financing prepares an open PR; its approval wait must not deploy old main.
+    # The accepted financing merge deploys through the main push trigger above.
     # GitHub suppresses workflow triggers from some bot-authored pushes. These
     # production workflows auto-merge data PRs, so deploy after they succeed.
     workflows:
-      - WaveSight Financing Daily PR
       - WaveSight Business Signals PR
       - WaveSight First-Line Viewpoints PR
       - WaveSight Community Intelligence PR
