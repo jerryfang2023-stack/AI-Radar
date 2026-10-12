@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-01-15",
-    "latest_disclosed_at": "2026-07-02",
+    "latest_disclosed_at": "2026-08-24",
     "role_counts": {
       "co_lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "angel",
       "series_c1",
       "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-097b916d257c3d42",
+        "canonical_entity_id": "",
+        "name": "恒瀚微"
+      },
       {
         "entity_id": "EN-60d2cc785c19e818",
         "canonical_entity_id": "EN-60d2cc785c19e818",
@@ -92,6 +98,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-42307b25d531f65e",
+        "funding_insight_id": "FI-1951a29fb5741339",
+        "event_ids": [
+          "EV-8186eedd977834f6"
+        ],
+        "company_entity_id": "EN-097b916d257c3d42",
+        "company_canonical_entity_id": "",
+        "company_name": "恒瀚微",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-08-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a1bbef8de940dce4",
+            "source_url": "https://www.cyzone.cn/article/844134.html",
+            "source_title": "融资丨恒瀚微完成近亿元天使轮融资",
+            "source_content_hash": "35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
+            "quote": "本轮由国泰创投、成都科创投、成都高新创投、中信聚信投资",
+            "quote_hash": "09730fb5d1fe2e2b7f37982e5b1b177e5977ea8504f965568915d8aa7f188fdc"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2650a6f2726812d9",
         "funding_insight_id": "FI-b1494fe383b9e92d",
@@ -183,6 +229,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a1bbef8de940dce4",
+        "source_url": "https://www.cyzone.cn/article/844134.html",
+        "source_title": "融资丨恒瀚微完成近亿元天使轮融资",
+        "source_content_hash": "35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
+        "quote": "本轮由国泰创投、成都科创投、成都高新创投、中信聚信投资",
+        "quote_hash": "09730fb5d1fe2e2b7f37982e5b1b177e5977ea8504f965568915d8aa7f188fdc"
+      },
+      {
         "source_id": "FISRC-a4dbd49c64cb5834",
         "source_url": "https://news.pedaily.cn/202607/565779.shtml",
         "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
@@ -244,6 +298,10 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：恒瀚微 · 天使轮 · 2026-08-24 · 本轮参投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a1bbef8de940dce4"
+        },
+        {
           "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 本轮参投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a4dbd49c64cb5834"
         },
@@ -278,6 +336,14 @@
           "quote_hash": "63e0f4cc9ec735587f288ffd2b7e8184dddcc9937baa617b8ccfdf2f3009eccc"
         },
         {
+          "source_id": "FISRC-a1bbef8de940dce4",
+          "source_url": "https://www.cyzone.cn/article/844134.html",
+          "source_title": "融资丨恒瀚微完成近亿元天使轮融资",
+          "source_content_hash": "35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
+          "quote": "本轮由国泰创投、成都科创投、成都高新创投、中信聚信投资",
+          "quote_hash": "09730fb5d1fe2e2b7f37982e5b1b177e5977ea8504f965568915d8aa7f188fdc"
+        },
+        {
           "source_id": "FISRC-a4dbd49c64cb5834",
           "source_url": "https://news.pedaily.cn/202607/565779.shtml",
           "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
@@ -292,14 +358,6 @@
           "source_content_hash": "3a8ec6845192d1f3411ce03034c5d856f03c71d8d16741826916c77959f2d879",
           "quote": "本轮由成都科创投、南山战新投、普丰资本共同参与投资",
           "quote_hash": "87bc3f7afdde2ae865ff31272c727ce4938d160b7d1975085d370e167f9d175b"
-        },
-        {
-          "source_id": "FISRC-7237685b19c66a17",
-          "source_url": "https://news.qq.com/rain/a/20260115A0640K00",
-          "source_title": "一年三轮融资，影目INMO凭什么成为“AI手机替代者”的头号玩家？_腾讯新闻",
-          "source_content_hash": "2412efb2600397c8",
-          "quote": "此次C1轮融资由成都科创投、南山战新投和普丰资本联合领投",
-          "quote_hash": "20a921e20bbe4b182ade4490f8389fd2b6815e28116fbde15e872d552a640828"
         }
       ],
       "last_verified_at": "2026-09-26",

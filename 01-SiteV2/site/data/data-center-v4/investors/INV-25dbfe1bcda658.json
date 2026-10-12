@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,7 +73,7 @@
     "latest_disclosed_at": "2026-08-25",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 2,
+      "lead": 3,
       "participant": 3
     },
     "round_codes": [
@@ -82,6 +82,11 @@
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8784fa047aabc687",
+        "canonical_entity_id": "",
+        "name": "C2i Semiconductors"
+      },
       {
         "entity_id": "EN-fe301d1f025971a1",
         "canonical_entity_id": "",
@@ -238,6 +243,54 @@
         ]
       },
       {
+        "activity_id": "IA-6c269106c68f40e2",
+        "funding_insight_id": "FI-04a8090011a2b5c5",
+        "event_ids": [
+          "EV-adf842f1094c5ffe"
+        ],
+        "company_entity_id": "EN-8784fa047aabc687",
+        "company_canonical_entity_id": "",
+        "company_name": "C2i Semiconductors",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$16.7M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 16700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1670 万美元"
+        },
+        "announced_at": "2026-05-27",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4f3c759ba693ab20",
+            "source_url": "https://tdk-ventures.com/news/announcements/tdk-ventures-invests-in-c2i-semiconductors-to-revolutionize-ai-data-center-power-delivery/",
+            "source_title": "TDK Ventures 投资 C2i Semiconductors，以革新 AI 数据中心电力传输",
+            "source_content_hash": "857a642e7dc0db84f02e392da57cf931f1e1a57e0e425e35cce824507321e448",
+            "quote": "The round includes participation from Peak XV Partners and prominent semiconductor industry leaders.",
+            "quote_hash": "a6726c78011acca0fb1e06a09c461759375b0988ed0b33e9d93dcc52fa4d8ad2"
+          },
+          {
+            "source_id": "FISRC-b1534f87ae2ffa47",
+            "source_url": "https://tracxn.com/d/companies/c2isemiconductors/__u09_HimQrPtuI4MgNK0lsSaHva6lhFoC0TXg3QwVe-A/funding-and-investors",
+            "source_title": "C2I Semiconductors",
+            "source_content_hash": "0f71d82b3a220018",
+            "quote": "TDK Ventures and Peak XV Partners are the lead investors in C2I Semiconductors' latest funding round held on May 27, 2026.",
+            "quote_hash": "069004ea9ea3cc4965d5ec7c63abb656487f1a6eb6efc40695288e64cf870e2e"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-db381d76437b5a7e",
         "funding_insight_id": "FI-6d45b570f8bf6df7",
         "event_ids": [
@@ -382,6 +435,22 @@
         "source_content_hash": "80f6dde2ca5cd41c",
         "quote": "The round was led by Base10 Partners, with participation from Y Combinator and Peak XV Partners.",
         "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
+      },
+      {
+        "source_id": "FISRC-4f3c759ba693ab20",
+        "source_url": "https://tdk-ventures.com/news/announcements/tdk-ventures-invests-in-c2i-semiconductors-to-revolutionize-ai-data-center-power-delivery/",
+        "source_title": "TDK Ventures 投资 C2i Semiconductors，以革新 AI 数据中心电力传输",
+        "source_content_hash": "857a642e7dc0db84f02e392da57cf931f1e1a57e0e425e35cce824507321e448",
+        "quote": "The round includes participation from Peak XV Partners and prominent semiconductor industry leaders.",
+        "quote_hash": "a6726c78011acca0fb1e06a09c461759375b0988ed0b33e9d93dcc52fa4d8ad2"
+      },
+      {
+        "source_id": "FISRC-b1534f87ae2ffa47",
+        "source_url": "https://tracxn.com/d/companies/c2isemiconductors/__u09_HimQrPtuI4MgNK0lsSaHva6lhFoC0TXg3QwVe-A/funding-and-investors",
+        "source_title": "C2I Semiconductors",
+        "source_content_hash": "0f71d82b3a220018",
+        "quote": "TDK Ventures and Peak XV Partners are the lead investors in C2I Semiconductors' latest funding round held on May 27, 2026.",
+        "quote_hash": "069004ea9ea3cc4965d5ec7c63abb656487f1a6eb6efc40695288e64cf870e2e"
       },
       {
         "source_id": "FISRC-7f1c22fc0cc9f63f",

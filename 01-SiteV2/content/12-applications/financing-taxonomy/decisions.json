@@ -30189,7 +30189,582 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-12T11:54:44.590Z"
+    },
+    "EV-21aeb42806158098": {
+      "id": "EV-21aeb42806158098",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "该公司主营面向肿瘤临床的AI精准检测产品，属于医疗服务与临床行业AI。",
+      "input_hash": "26f47318d08d633ff59578e365b2120340c369437b2886b610b5f901e1d834e1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-36c850e4e69c202f",
+          "quote": "Waiv, a Paris-based company catalyzing AI precision testing"
+        },
+        {
+          "source_id": "FISRC-a53cb36331f951de",
+          "quote": "Waiv, formerly Owkin Dx, an AI technology company advancing precision testing in oncology"
+        },
+        {
+          "source_id": "FISRC-36c850e4e69c202f",
+          "quote": "Already deployed in clinical settings through its products such as RlapsRisk BC, MSIntuit Suite, and BRCAura"
+        },
+        {
+          "source_id": "FISRC-a53cb36331f951de",
+          "quote": "Waiv secured CE marking under IVDR for two of its AI precision tests: RlapsRisk® BC for breast cancer prognostic risk profiling and MSIntuit® CRC for colorectal cancer MSI screening."
+        },
+        {
+          "source_id": "FISRC-36c850e4e69c202f",
+          "quote": "an AI gBRCA pre-screen test for breast cancer from H&E slides (BRCAura)"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T14:56:09.294Z"
+    },
+    "EV-b3642bc761ee4665": {
+      "id": "EV-b3642bc761ee4665",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "该公司交付面向AI数据中心的高效网络交换解决方案，属于算力基础设施。",
+      "input_hash": "5dc1276c9b28c44c2262ea274f5f2d49bf992f4dadf3882c4058075d32a56b50",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-084074056d609e70",
+          "quote": "Nexthop AI, the leading pioneer of highly efficient AI Networking, today announced successful closure of an oversubscribed $500 Million Series B funding round, catapulting the company’s valuation to $4.2 Billion."
+        },
+        {
+          "source_id": "FISRC-084074056d609e70",
+          "quote": "The company delivers both off-the-shelf and highly customized switching solutions built on open source operating systems such as SONiC and FBOSS."
+        },
+        {
+          "source_id": "FISRC-3ccfe28c397e90f9",
+          "quote": "Nexthop also unveiled the Disaggregated Spine architecture – a new, highly efficient, scale-across network design developed in collaboration with a large hyperscaler."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T14:56:09.294Z"
+    },
+    "EV-92a426739f908c92": {
+      "id": "EV-92a426739f908c92",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "rationale": "该公司提供AI原生员工人为风险管理平台，属于企业网络安全与风控。",
+      "input_hash": "cc5bf003aef814e4d325dbddc6843bc58315f6c8cd4e3004d4e20e7479ea1d37",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a95a5f200afb6976",
+          "quote": "Cimento is an AI-native human risk management platform that builds a living risk profile for every employee."
+        },
+        {
+          "source_id": "FISRC-a95a5f200afb6976",
+          "quote": "The platform integrates with tools employees already use, such as email, IDPs, cloud providers, and the majority of existing security tools, to provide a unified risk profile for security and compliance teams"
+        },
+        {
+          "source_id": "FISRC-a95a5f200afb6976",
+          "quote": "Cimento runs realistic social engineering simulations that mirror how real attackers operate. These simulations span email, SMS, and voice, and often unfold as multi-step sequences rather than isolated, one-click phishing attempts."
+        },
+        {
+          "source_id": "FISRC-a95a5f200afb6976",
+          "quote": "When risk is detected, Cimento delivers short, contextual interventions designed to change behavior in the moment. Employees receive brief guidance tied directly to what they just experienced, typically lasting 60–90 seconds."
+        },
+        {
+          "source_id": "FISRC-a95a5f200afb6976",
+          "quote": "The platform runs automatically, without campaigns to manage or content libraries to maintain."
+        },
+        {
+          "source_id": "FISRC-a95a5f200afb6976",
+          "quote": "Cimento is building the first system designed to test, score, and govern AI agents just like humans"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T14:56:09.294Z"
+    },
+    "EV-fb466830d5c49aea": {
+      "id": "EV-fb466830d5c49aea",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "customer-service",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "该公司主营企业级智能体客户体验平台，属于客服与客户体验。",
+      "input_hash": "ed6819f968e215d7bc42253a0f6725154c46799d8fe4e8be8f3215e963d45dd4",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-718abe345b56e368",
+          "quote": "Netomi , the San Francisco-based startup building AI systems for enterprise customer service"
+        },
+        {
+          "source_id": "FISRC-746874e2d36ccb3c",
+          "quote": "Netomi, a San Francisco, CA–based enterprise agentic customer experience (CX) platform"
+        },
+        {
+          "source_id": "FISRC-746874e2d36ccb3c",
+          "quote": "Netomi is an enterprise AI company specializing in agentic customer experience (CX) platforms designed for complex, regulated, and large-scale environments."
+        },
+        {
+          "source_id": "FISRC-718abe345b56e368",
+          "quote": "Netomi uses what it calls an AI authority matrix — a real-time system that defines what the AI can do autonomously and when it must escalate to a human."
+        },
+        {
+          "source_id": "FISRC-718abe345b56e368",
+          "quote": "Rather than placing a chatbot in the corner of a website, Netomi's system can rearrange the website itself based on what the AI infers about each individual customer's situation."
+        },
+        {
+          "source_id": "FISRC-718abe345b56e368",
+          "quote": "Based on a customer's browsing behavior, purchase history and inferred intent, the system can reorganize a product page in real time"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T14:56:09.294Z"
+    },
+    "EV-a58d2d7fca242811": {
+      "id": "EV-a58d2d7fca242811",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "evaluation",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "rationale": "该公司为可观测性工程师提供OpenTelemetry质量评估与修复平台，属于开发评测监控。",
+      "input_hash": "e239c6294c98934804a4608e7b74542f015c358fadce1c6ef5b220c016b2e8fe",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a624307985a32fe5",
+          "quote": "OllyGarden, the platform helping fix bad telemetry to give observability engineers data they can rely on"
+        },
+        {
+          "source_id": "FISRC-36aff9fd63218312",
+          "quote": "OllyGarden Insights is a B2B Software-as-a-Service (SaaS) platform designed to help Observability Engineers assess and improve the quality of their organization's OpenTelemetry® instrumentation across traces, metrics, and logs."
+        },
+        {
+          "source_id": "FISRC-a624307985a32fe5",
+          "quote": "The platform continuously evaluates telemetry quality, identifies issues, and then turns findings into source-level fixes."
+        },
+        {
+          "source_id": "FISRC-a624307985a32fe5",
+          "quote": "OllyGarden’s AI OpenTelemetry Engineer, Rose, has been able to review existing instrumentation and make suggestions to improve it."
+        },
+        {
+          "source_id": "FISRC-239fb00de3e68610",
+          "quote": "Rose, an AI agent, examines the OpenTelemetry code and submits pull requests for human approval."
+        },
+        {
+          "source_id": "FISRC-a624307985a32fe5",
+          "quote": "Now, with the launch of MVI, Rose can also detect where no existing instrumentation exists and provide a path to establishing an instrumentation baseline."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T14:56:09.294Z"
+    },
+    "EV-f1887398d03748c2": {
+      "id": "EV-f1887398d03748c2",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "audio-wearables",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "该公司主营AI智能指环与手链等贴身可穿戴消费终端，属于消费AI硬件。",
+      "input_hash": "543e88f890e7b140e68c47e3027f5f3d15dc4be7e0a900db9f8de5af31558644",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-205a3b05b631cdd8",
+          "quote": "近日，AI可穿戴品牌AIVELA宣布完成数百万美元首轮融资。"
+        },
+        {
+          "source_id": "FISRC-205a3b05b631cdd8",
+          "quote": "AIVELA将以智能指环、智能手链等贴身可穿戴产品为起点，面向全球市场构筑融合健康感知、自然交互与AI健康服务的新一代消费科技品牌。"
+        },
+        {
+          "source_id": "FISRC-205a3b05b631cdd8",
+          "quote": "AIVELA首款智能指环产品AIVELA Ring Pro于2025年登陆Kickstarter，众筹金额超86万美元。"
+        },
+        {
+          "source_id": "FISRC-205a3b05b631cdd8",
+          "quote": "在硬件层面，有别于市面上普遍采用的电容触控方案，AIVELA的首款指环产品引入了基于光学的指尖交互技术。采用该交互技术后，指环能够作为“指间鼠标”，连接手机、电脑或智能眼镜，实现无感操作。"
+        },
+        {
+          "source_id": "FISRC-9e16fe1033c3d441",
+          "quote": "Three sensing systems follow changes in blood flow, skin temperature, and movement. A separate optical touch surface reads your input."
+        },
+        {
+          "source_id": "FISRC-205a3b05b631cdd8",
+          "quote": "AIVELA正在研发首款无屏智能手链（Bracelet）。该产品邀请全球知名工业设计师及珠宝设计师参与研发，专注于核心的生理指标监测，并主打外观的可DIY属性"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T14:56:09.294Z"
+    },
+    "EV-8186eedd977834f6": {
+      "id": "EV-8186eedd977834f6",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "主营RDMA网卡与GPU互联网络芯片；属于AI算力互联基础设施，与负责模型运算的AI加速器区分。",
+      "input_hash": "ebccbe4299c6341ea821b0a9cba7535ab77c1f91be2bab9c6e63aab815292245",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a1bbef8de940dce4",
+          "quote": "国内领先的AI智算网络互联芯片设计企业——成都恒瀚微电子有限公司"
+        },
+        {
+          "source_id": "FISRC-a1bbef8de940dce4",
+          "quote": "恒瀚微于2025年推出自研400G带宽AI智算网卡，基于端到端Credit-based主动拥塞管理机制，支持标准 RoCEv2协议及新一代RoCEv2+协议，具备乱序接收、选择性重传及包喷洒等数十项AI场景核心功能"
+        },
+        {
+          "source_id": "FISRC-a1bbef8de940dce4",
+          "quote": "在Scale-up网络业务场景下，恒瀚微可提供高性能、高可靠、低成本的GPU 互联定制化解决方案，用于构建可扩展GPU连接。目前基于Ethernet标准，每通道将提供双向100 GB/s的数据传输速率，根据客户需求，最高可支持双向1.2 TB/s GPU Scale-up带宽"
+        },
+        {
+          "source_id": "FISRC-a1bbef8de940dce4",
+          "quote": "下一代超高带宽AI网卡芯片已进入最终定型阶段，对标NVIDIA CX8/9网卡芯片，将抢占即将爆发的800G/1.6T AI智算Scale-out互联市场"
+        }
+      ],
+      "provider": "manual_review",
+      "model": "responsible_financing_reviewer",
+      "generated_at": "2026-10-12T14:56:09.428Z",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-12T15:07:14.238Z"
+    },
+    "EV-adf842f1094c5ffe": {
+      "id": "EV-adf842f1094c5ffe",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "主营AI/HPC的供电与电压调节芯片；属于AI数据中心基础设施，不是负责模型运算的AI加速器。",
+      "input_hash": "25939b86bf9e0596fb7741d0e34b4a576f9b79cf6f142e8a85a32c1e7f273864",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4f3c759ba693ab20",
+          "quote": "C2i Semiconductors is a Bangalore and soon to be US-based startup focused on high-efficiency lateral power delivery and voltage regulators for the next generation of AI and High-Performance Computing (HPC) infrastructure."
+        },
+        {
+          "source_id": "FISRC-4f3c759ba693ab20",
+          "quote": "C2i’s software-defined Voltage Regulator platform brings improved efficiency, reduce heat and support next generation AI accelerators."
+        },
+        {
+          "source_id": "FISRC-4f3c759ba693ab20",
+          "quote": "Manas Controller: A software-defined Controller with a unique control architecture that is agnostic to PDN changes and processor requirements."
+        },
+        {
+          "source_id": "FISRC-4f3c759ba693ab20",
+          "quote": "Sarayu Power Stage: A smart power stage that offer better conversion efficiency with 6x the reliability"
+        }
+      ],
+      "provider": "manual_review",
+      "model": "responsible_financing_reviewer",
+      "generated_at": "2026-10-12T14:56:09.428Z",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-12T15:07:14.238Z"
+    },
+    "EV-d88c188529236c7f": {
+      "id": "EV-d88c188529236c7f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "面向业务用户以自然语言创建并运行CRM等完整工作流；不以无需编码的AI生成代码功能判成开发者平台。",
+      "input_hash": "89e377768fbcf09fc2f7a189f5dc081c9c8882def3f0e79266a86549a7c70aad",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c59e88cf636de760",
+          "quote": "CREAO's product architecture has three layers: * The Coding Agent — AI builds the tools. Users create Agent Apps through conversation, no traditional coding required. This is what the team calls breaking the \"builder bottleneck.\" * Autonomous Execution — AI uses the tools. Agent Apps run on schedule, trigger workflows automatically, and chain tasks without manual follow-up. This breaks the \"operator bottleneck.\" * The Workspace — Humans orchestrate. A persistent environment where Agent Apps live, where memory accumulates across runs, and where one person can manage what previously required a team."
+        },
+        {
+          "source_id": "FISRC-dbbff83e7cd8f413",
+          "quote": "The platform is designed for users who want to create their own customized tools, such as CRM workflows and data dashboards, without extensive coding knowledge."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "responsible_financing_reviewer",
+      "generated_at": "2026-10-12T14:56:09.428Z",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-12T15:07:14.237Z"
+    },
+    "EV-e176581c3d6755de": {
+      "id": "EV-e176581c3d6755de",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "公司主营面向借款人的AI财务恢复与债务管理平台，属于金融与保险行业AI。",
+      "input_hash": "012545073f9e1d56b1f05ed2752d06f06dfcdf67c52a56117ca7961a6f0784ea",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ae260f41fda422b0",
+          "quote": "Founded in 2025 by Ranjan Agarwal, Neeraj Kulkarni and Ayush Kedia, Credfix is an AI-powered financial recovery platform that helps borrowers understand their debt, assess repayment options and navigate interactions with lenders."
+        },
+        {
+          "source_id": "FISRC-ae260f41fda422b0",
+          "quote": "Risi, an AI financial assistant; Neytra, an AI call shield; and an AI legal assistant. Risi helps borrowers understand their debt and explore resolution options"
+        },
+        {
+          "source_id": "FISRC-ae260f41fda422b0",
+          "quote": "Neytra assists with recovery-related calls"
+        },
+        {
+          "source_id": "FISRC-ae260f41fda422b0",
+          "quote": "The legal assistant helps borrowers understand legal notices, prepare draft responses for their review and identify possible next steps."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T14:56:09.428Z"
+    },
+    "EV-c2cd2b01a5efb38b": {
+      "id": "EV-c2cd2b01a5efb38b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        5,
+        6
+      ],
+      "rationale": "公司提供GEO生成式引擎优化服务，帮助品牌在AI搜索中被引用推荐，属于销售与营销企业AI。",
+      "input_hash": "76b5441b0c2f8527234c9ed2f6b34a8ff1b29116c49202334af68766968bf24f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cc32f14442736dae",
+          "quote": "杭州盖立克思成立于2025年01月，是一家专注于为生成式AI生态提供语义优化与智能监测引擎的科技企业，项目定位“AI搜索权威引用构建专家”。"
+        },
+        {
+          "source_id": "FISRC-cc32f14442736dae",
+          "quote": "其核心业务GEO，旨在通过优化品牌内容在AI生成答案中的语义权重，使品牌能够在用户与各类AIChatbot的对话中被精准引用、推荐和展示，从而抢占新兴的对话式搜索流量入口。"
+        },
+        {
+          "source_id": "FISRC-cc32f14442736dae",
+          "quote": "公司已构建覆盖“内容输入—AI推荐—数据追踪—再优化”的全链路GEO矩阵产品，其技术核心在于高达91%的语义识别准确率与80%以上的AI内容匹配率，可实现对豆包、DeepSeek、ChatGPT、腾讯元宝、夸克等主流AI平台的全覆盖。"
+        },
+        {
+          "source_id": "FISRC-7b72d9eef109d202",
+          "quote": "盖立克思还拥有AIGEO增长引擎平台（盖立克思自研企业级AI搜索优化系统）、智推星平台等多项软件著作权"
+        },
+        {
+          "source_id": "FISRC-f37b2d00f01c1b6d",
+          "quote": "AIGEO 增长引擎平台软著登字第 17665198 号核心增长端内容结构优化、语义权重分析、词条布局决策"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T14:56:09.428Z"
+    },
+    "EV-171e2d688f69ebc6": {
+      "id": "EV-171e2d688f69ebc6",
+      "scope": "review",
+      "exclusion_reason": "",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "公司称开发human-like模型与AI原生操作系统，但证据不足以判定其主营是基础模型还是应用。",
+      "input_hash": "4351a43f6fbf0ec8262b4801640d181da7b43fc1bddc625c0c0ec6d86b1dbdd6",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-baafc455955b1fa9",
+          "quote": "Humanify 成立于 2024 年，专注于开发下一代 human-like 模型与 AI 原生操作系统。"
+        },
+        {
+          "source_id": "FISRC-48a789ac51f59308",
+          "quote": "在 Humanify 的定义里，「模型就是操作系统，操作系统就是模型」。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T14:56:09.428Z"
+    },
+    "EV-00305df9d37dd714": {
+      "id": "EV-00305df9d37dd714",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        3,
+        4
+      ],
+      "rationale": "Macaron马卡龙是面向个人消费者的生活场景个人Agent，支持自然语言生成专属小应用并提供日常辅助与情感陪伴。",
+      "input_hash": "aa0c98262add5f236ffba9875e7083dca321f6e1eda6b03e6cd0067fffaffffa",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cc6ccc8f24fdc4f0",
+          "quote": "Macaron马卡龙最核心的能力是：用户通过自然对话，一句话生成一个专属的Mini-App。"
+        },
+        {
+          "source_id": "FISRC-77a29acf1da710dd",
+          "quote": "Macaron App的定位是一个生活场景的个人Agent，用户可以通过自然语言生成专属小应用，基于长记忆与日常对话，提供日常生活辅助以及情感陪伴等功能"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T14:56:10.406Z"
+    },
+    "EV-70045a46dafeaf68": {
+      "id": "EV-70045a46dafeaf68",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "content-creation",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Superpose 是一款面向 iPhone 用户的 AI 人像相机应用，利用生成式 AI 将单张照片生成四个增强版本，属于消费级图像创作软件。",
+      "input_hash": "8399264b73ce715ba8062123980bed869c695f0f91c3b3f7dc91ce4f8cb418e7",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-56fb03980ba6a7c5",
+          "quote": "Superpose, an AI-powered portrait camera app for iPhone"
+        },
+        {
+          "source_id": "FISRC-56fb03980ba6a7c5",
+          "quote": "Superpose uses real-time camera guidance and generative AI to turn a single photo into four enhanced versions of the same moment."
+        },
+        {
+          "source_id": "FISRC-bfa4a4a407eacc66",
+          "quote": "It gives real-time guidance on lighting, angles and poses, and in under 10 seconds generates four versions of that same moment."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T15:14:52.415Z"
     }
   },
-  "generated_at": "2026-10-12T11:54:44.593Z"
+  "generated_at": "2026-10-12T15:14:52.418Z"
 }

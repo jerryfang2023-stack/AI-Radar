@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,11 +61,12 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 5,
     "china_market_company_count": 5,
@@ -73,11 +74,13 @@
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "historical_or_ambiguous": 2,
+      "lead": 1,
       "participant": 5
     },
     "round_codes": [
       "angel",
       "angel_plus",
+      "other",
       "pre_series_a",
       "pre_series_a_plus",
       "series_c"
@@ -107,6 +110,11 @@
         "entity_id": "EN-fba6bdd504fa7aff",
         "canonical_entity_id": "",
         "name": "斜跃"
+      },
+      {
+        "entity_id": "EN-e93b8426e104cb8e",
+        "canonical_entity_id": "",
+        "name": "AIVELA"
       }
     ],
     "activities": [
@@ -227,6 +235,46 @@
             "source_content_hash": "34bcef102c1e755b",
             "quote": "本轮融资获得 珂玺资本、上海科创旗下知识产权基金、金浦投资、亳州产投、上城资本、乾融资本，以及老股东线性资本的共同支持",
             "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-edad83fe16874b23",
+        "funding_insight_id": "FI-298d08df156dc6bc",
+        "event_ids": [
+          "EV-f1887398d03748c2"
+        ],
+        "company_entity_id": "EN-e93b8426e104cb8e",
+        "company_canonical_entity_id": "",
+        "company_name": "AIVELA",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮",
+        "amount_original": "数百万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 2000000,
+          "max_value": 9000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数百万美元"
+        },
+        "announced_at": "2026-06-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-205a3b05b631cdd8",
+            "source_url": "https://www.36kr.com/p/3873710996902912",
+            "source_title": "36氪首发 | URTOPIA联创做了款智能指环，众筹已破千万元",
+            "source_content_hash": "1f912cd1459add0cac2e940678a7df24cc373fd4c437f06b45b8c95de7bfa419",
+            "quote": "本轮融资由线性资本领投，锋领资本跟投，智能电助力自行车品牌URTOPIA等产业方共同加注。",
+            "quote_hash": "d9d06a09432716bfde519da6d835cb713c48a69c136741a483fdddb2da1e9334"
           }
         ]
       },
@@ -401,6 +449,14 @@
         "source_content_hash": "34bcef102c1e755b",
         "quote": "本轮融资获得 珂玺资本、上海科创旗下知识产权基金、金浦投资、亳州产投、上城资本、乾融资本，以及老股东线性资本的共同支持",
         "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
+      },
+      {
+        "source_id": "FISRC-205a3b05b631cdd8",
+        "source_url": "https://www.36kr.com/p/3873710996902912",
+        "source_title": "36氪首发 | URTOPIA联创做了款智能指环，众筹已破千万元",
+        "source_content_hash": "1f912cd1459add0cac2e940678a7df24cc373fd4c437f06b45b8c95de7bfa419",
+        "quote": "本轮融资由线性资本领投，锋领资本跟投，智能电助力自行车品牌URTOPIA等产业方共同加注。",
+        "quote_hash": "d9d06a09432716bfde519da6d835cb713c48a69c136741a483fdddb2da1e9334"
       },
       {
         "source_id": "FISRC-b4d6b7523ee32ad7",

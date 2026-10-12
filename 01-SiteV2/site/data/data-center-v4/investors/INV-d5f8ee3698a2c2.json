@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,16 +62,17 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-01-21",
+    "first_disclosed_at": "2025-01",
     "latest_disclosed_at": "2026-01-21",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "153eb48bd4ef4aa97a614902743e0d951be3251b8a178c6cb4402c4d53f45e50"
           }
         ]
+      },
+      {
+        "activity_id": "IA-0c679b72cc33dc17",
+        "funding_insight_id": "FI-a3a35777c25025b9",
+        "event_ids": [
+          "EV-fb466830d5c49aea"
+        ],
+        "company_entity_id": "EN-864e7f949b17c9b1",
+        "company_canonical_entity_id": "",
+        "company_name": "Netomi",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2025年11月未披露轮次领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-920c1440f0e930ff",
+            "source_url": "https://multiples.vc/private-comps/netomi",
+            "source_title": "Netomi Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "e7ce5bd6d1702b0c",
+            "quote": "In November 2025, Netomi raised $100M in a Series C funding round at a $750M valuation, led by WestCap",
+            "quote_hash": "e876ede00e5017ab2519a486f3afc392b8df3bca9d60cbd436b2e020b6fb1016"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "4a1687fe145470c9164f57faa8914ff76b9103a4d561ae04339f9d675919649a",
         "quote": "securing $150 million in funding led by WestCap",
         "quote_hash": "153eb48bd4ef4aa97a614902743e0d951be3251b8a178c6cb4402c4d53f45e50"
+      },
+      {
+        "source_id": "FISRC-920c1440f0e930ff",
+        "source_url": "https://multiples.vc/private-comps/netomi",
+        "source_title": "Netomi Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "e7ce5bd6d1702b0c",
+        "quote": "In November 2025, Netomi raised $100M in a Series C funding round at a $750M valuation, led by WestCap",
+        "quote_hash": "e876ede00e5017ab2519a486f3afc392b8df3bca9d60cbd436b2e020b6fb1016"
       }
     ],
     "public_profile": {
@@ -165,6 +206,10 @@
         {
           "description": "融资来源记录：Preply · D轮 · 2026-01-21 · 本轮领投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7e564fafd9f90842"
+        },
+        {
+          "description": "融资来源记录：Netomi · 历史轮次未披露 · 2025-01 · 2025年11月未披露轮次领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-920c1440f0e930ff"
         }
       ],
       "contacts": [
@@ -200,6 +245,14 @@
           "source_content_hash": "4a1687fe145470c9164f57faa8914ff76b9103a4d561ae04339f9d675919649a",
           "quote": "securing $150 million in funding led by WestCap",
           "quote_hash": "153eb48bd4ef4aa97a614902743e0d951be3251b8a178c6cb4402c4d53f45e50"
+        },
+        {
+          "source_id": "FISRC-920c1440f0e930ff",
+          "source_url": "https://multiples.vc/private-comps/netomi",
+          "source_title": "Netomi Valuation, Funding & Investors | Multiples",
+          "source_content_hash": "e7ce5bd6d1702b0c",
+          "quote": "In November 2025, Netomi raised $100M in a Series C funding round at a $750M valuation, led by WestCap",
+          "quote_hash": "e876ede00e5017ab2519a486f3afc392b8df3bca9d60cbd436b2e020b6fb1016"
         }
       ],
       "last_verified_at": "2026-10-05",

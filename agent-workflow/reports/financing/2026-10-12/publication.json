@@ -4,10 +4,10 @@
     "status": "completed",
     "counts": {
       "total": 405,
-      "verified": 9,
+      "verified": 22,
       "excluded": 57,
       "reviewed": 0,
-      "pending": 339
+      "pending": 326
     },
     "ledger": "verification.json"
   },
@@ -21,23 +21,23 @@
     "excluded": 100
   },
   "next": "merge_pages_portal_and_live_parity",
-  "generated_at": "2026-10-12T12:07:34.533Z",
+  "generated_at": "2026-10-12T15:22:47.683Z",
   "priority_review": {
-    "ledger": "priority-review.json",
+    "ledger": "priority55-review.json",
     "counts": {
-      "total": 10,
-      "verified": 9,
+      "total": 16,
+      "verified": 13,
       "excluded": 0,
       "reviewed": 0,
-      "pending": 1
+      "pending": 3
     },
     "current_queue": {
-      "total": 225,
+      "total": 96,
       "stages": {
-        "source_identity_review": 66,
-        "needs_original": 110,
-        "evidence_review": 32,
-        "fact_review": 10,
+        "source_identity_review": 26,
+        "evidence_review": 8,
+        "needs_original": 47,
+        "fact_review": 8,
         "fact_conflict_review": 7
       }
     }

@@ -253,7 +253,7 @@ export function normalizeFundingAmount(value = "") {
   const numeric = Number(numberText) * amountMultiplier(unitText);
   if (!currency || !Number.isFinite(numeric)) return empty;
 
-  const approximate = /(?:^|\s)(?:about|approximately|approx\.?|nearly)|约|近|级|数(?:十|百|千|万|亿)/iu.test(compact);
+  const approximate = /^[~≈]\s*|(?:^|\s)(?:about|approximately|approx\.?|nearly)|约|近|级|数(?:十|百|千|万|亿)/iu.test(compact);
   const lowerBound = /(?:^|\s)(?:over|more than|at least|just over)|超过|超|以上|至少|\+/iu.test(compact);
   const status = lowerBound ? "lower_bound" : approximate ? "approximate" : "exact";
   const normalizedValue = roundAmountNumber(numeric);
@@ -297,7 +297,7 @@ function fundingAmountMentions(value = "") {
       || (!/previously\s+(?:undisclosed|announced|raised)/iu.test(text) && /(?:closes?|closed)[^，,：:；;。！？.!?]{0,48}$/iu.test(before))
       || /^\s*(?:(?:的\s*)?(?:(?:(?:Pre[-\s]?)?[A-Z](?:\d+|\+)?|天使|种子|战略)\s*轮\s*)?融资|(?:funding\s+round|round)\b)/iu.test(after)
     );
-    const qualifier = before.match(/(?:超过|超|逾|至少|接近|将近|近|约|\b(?:just over|over|more than|at least|about|approximately|nearly))\s*$/iu)?.[0] || "";
+    const qualifier = before.match(/(?:[~≈]|超过|超|逾|至少|接近|将近|近|约|\b(?:just over|over|more than|at least|about|approximately|nearly))\s*$/iu)?.[0] || "";
     return { raw: clean(`${qualifier}${match[0]}`), valuation, cumulative, round };
   });
 }

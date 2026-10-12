@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 27,
+    "current_round_count": 28,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 22,
+    "portfolio_company_count": 23,
     "market_regions": [
       "GLOBAL"
     ],
@@ -76,7 +76,7 @@
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 8,
-      "lead": 11,
+      "lead": 12,
       "participant": 15
     },
     "round_codes": [
@@ -157,6 +157,11 @@
         "entity_id": "EN-46a10435f014ccc9",
         "canonical_entity_id": "",
         "name": "Neko Health"
+      },
+      {
+        "entity_id": "EN-974371852171d0ea",
+        "canonical_entity_id": "",
+        "name": "Nexthop AI"
       },
       {
         "entity_id": "EN-a972bc1b3220493e",
@@ -1101,6 +1106,46 @@
         ]
       },
       {
+        "activity_id": "IA-9ffdfca93eebecbe",
+        "funding_insight_id": "FI-f06137e7d36d4c01",
+        "event_ids": [
+          "EV-b3642bc761ee4665"
+        ],
+        "company_entity_id": "EN-974371852171d0ea",
+        "company_canonical_entity_id": "",
+        "company_name": "Nexthop AI",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$500 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-03-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-084074056d609e70",
+            "source_url": "https://nexthop.ai/news-and-event/nexthop-ai-accelerates-into-hypergrowth-with-oversubscribed-500m-series-b-funding-catapulting-the-companys-valuation-to-4-2-billion/",
+            "source_title": "Nexthop AI 以超额认购的 5 亿美元 B 轮融资加速进入超高速增长，推动公司估值达到 42 亿美元",
+            "source_content_hash": "307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
+            "quote": "This round was spearheaded by Lightspeed Venture Partners, with Andreessen Horowitz joining as a major investor, and participation from Altimeter and all existing investors.",
+            "quote_hash": "498e40ef1d04bcf5884269ed9ab8b7b7e9a59e02db58ebf2fa6a8c9889cf4c7c"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-2c31293ab44bb798",
         "funding_insight_id": "FI-0aa1eca49e73b783",
         "event_ids": [
@@ -1744,6 +1789,14 @@
         "quote_hash": "d4e45d0fbd15b449663551d23e6d1eab47553f2cad61df8827083af645fb85a6"
       },
       {
+        "source_id": "FISRC-084074056d609e70",
+        "source_url": "https://nexthop.ai/news-and-event/nexthop-ai-accelerates-into-hypergrowth-with-oversubscribed-500m-series-b-funding-catapulting-the-companys-valuation-to-4-2-billion/",
+        "source_title": "Nexthop AI 以超额认购的 5 亿美元 B 轮融资加速进入超高速增长，推动公司估值达到 42 亿美元",
+        "source_content_hash": "307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
+        "quote": "This round was spearheaded by Lightspeed Venture Partners, with Andreessen Horowitz joining as a major investor, and participation from Altimeter and all existing investors.",
+        "quote_hash": "498e40ef1d04bcf5884269ed9ab8b7b7e9a59e02db58ebf2fa6a8c9889cf4c7c"
+      },
+      {
         "source_id": "FISRC-1f69885afd5fc439",
         "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
         "source_title": "Temporal 完成 D 轮融资",
@@ -1974,7 +2027,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[26].role": {
+        "activities[27].role": {
           "text": "Series B 参投（2025年4月）",
           "source_hash": "4170bf75c97ec9f7cd65f42d8ca30a3c3546dd4ade04c117870543b20203c333",
           "provider": "deepseek",
@@ -1982,7 +2035,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[30].role": {
+        "activities[31].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

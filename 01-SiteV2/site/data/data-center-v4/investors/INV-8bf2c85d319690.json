@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4077,
+    "eventCount": 4092,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-11",
-    "latest_disclosed_at": "2026-03-11",
+    "latest_disclosed_at": "2026-04-30",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "series_c",
       "series_d"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-864e7f949b17c9b1",
+        "canonical_entity_id": "",
+        "name": "Netomi"
+      },
       {
         "entity_id": "EN-53b69ef92c836777",
         "canonical_entity_id": "",
@@ -86,6 +93,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c29eb5ecd53c4033",
+        "funding_insight_id": "FI-a3a35777c25025b9",
+        "event_ids": [
+          "EV-fb466830d5c49aea"
+        ],
+        "company_entity_id": "EN-864e7f949b17c9b1",
+        "company_canonical_entity_id": "",
+        "company_name": "Netomi",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$110 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 110000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.1 亿美元"
+        },
+        "announced_at": "2026-04-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-718abe345b56e368",
+            "source_url": "https://venturebeat.com/technology/netomi-raises-110-million-as-accenture-and-adobe-bet-on-ai-for-customer-service",
+            "source_title": "Netomi 融资百万，Accenture 和 Adobe 押注客户服务 AI",
+            "source_content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+            "quote": "it has raised $110 million in new funding in a round led by Accenture Ventures",
+            "quote_hash": "9a3dc4ef7e8b3d0986259fbfc5c1b8ff8612a82a031405957f6f6066e8fecc03"
+          },
+          {
+            "source_id": "FISRC-746874e2d36ccb3c",
+            "source_url": "https://www.thesaasnews.com/news/netomi-bags-110-million-in-funding/",
+            "source_title": "Netomi Bags $110 Million in Funding",
+            "source_content_hash": "f30d62b9410f734a",
+            "quote": "The Series C round was led by Accenture Ventures",
+            "quote_hash": "1972f30d10a595d16186e0be1247f96d78b6c305108958f254282185d9a0ecf9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b66e31ce57fb7767",
         "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
@@ -161,6 +216,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-718abe345b56e368",
+        "source_url": "https://venturebeat.com/technology/netomi-raises-110-million-as-accenture-and-adobe-bet-on-ai-for-customer-service",
+        "source_title": "Netomi 融资百万，Accenture 和 Adobe 押注客户服务 AI",
+        "source_content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+        "quote": "it has raised $110 million in new funding in a round led by Accenture Ventures",
+        "quote_hash": "9a3dc4ef7e8b3d0986259fbfc5c1b8ff8612a82a031405957f6f6066e8fecc03"
+      },
+      {
+        "source_id": "FISRC-746874e2d36ccb3c",
+        "source_url": "https://www.thesaasnews.com/news/netomi-bags-110-million-in-funding/",
+        "source_title": "Netomi Bags $110 Million in Funding",
+        "source_content_hash": "f30d62b9410f734a",
+        "quote": "The Series C round was led by Accenture Ventures",
+        "quote_hash": "1972f30d10a595d16186e0be1247f96d78b6c305108958f254282185d9a0ecf9"
+      },
+      {
         "source_id": "FISRC-00ed3d8fd701898b",
         "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
         "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
@@ -216,8 +287,8 @@
           "source_id": "FISRC-00ed3d8fd701898b"
         },
         {
-          "description": "融资来源记录：Snorkel AI · 历史轮次未披露 · 历史轮次战略投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6dd774496b50aaac"
+          "description": "融资来源记录：Netomi · C轮 · 2026-04-30 · 本轮领投 · $110 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-718abe345b56e368"
         }
       ],
       "contacts": [
@@ -247,12 +318,20 @@
           "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
         },
         {
-          "source_id": "FISRC-6dd774496b50aaac",
-          "source_url": "https://www.clay.com/dossier/snorkel-ai-funding",
-          "source_title": "How Much Did Snorkel AI Raise? Funding & Key Investors | Clay",
-          "source_content_hash": "fc35ad6f0d7ac53d",
-          "quote": "Accenture Ventures Details : Strategic arm of Accenture; made an undisclosed strategic investment in August 2025, with Snorkel AI joining Accenture Ventures' Project Spotlight accelerator program.",
-          "quote_hash": "23c9d47b8d4ce952c43af57296f5aad6ea6bf622ad046d7eae9e5fef29e27f6d"
+          "source_id": "FISRC-718abe345b56e368",
+          "source_url": "https://venturebeat.com/technology/netomi-raises-110-million-as-accenture-and-adobe-bet-on-ai-for-customer-service",
+          "source_title": "Netomi 融资百万，Accenture 和 Adobe 押注客户服务 AI",
+          "source_content_hash": "50a160939f986c4ab7ffb48ff886c763b036b56e0b99df006f3211cdfc8736fd",
+          "quote": "it has raised $110 million in new funding in a round led by Accenture Ventures",
+          "quote_hash": "9a3dc4ef7e8b3d0986259fbfc5c1b8ff8612a82a031405957f6f6066e8fecc03"
+        },
+        {
+          "source_id": "FISRC-746874e2d36ccb3c",
+          "source_url": "https://www.thesaasnews.com/news/netomi-bags-110-million-in-funding/",
+          "source_title": "Netomi Bags $110 Million in Funding",
+          "source_content_hash": "f30d62b9410f734a",
+          "quote": "The Series C round was led by Accenture Ventures",
+          "quote_hash": "1972f30d10a595d16186e0be1247f96d78b6c305108958f254282185d9a0ecf9"
         }
       ],
       "last_verified_at": "2026-09-27"
