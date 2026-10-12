@@ -6,7 +6,7 @@ import {fileURLToPath} from 'node:url';
 import {read, write, digest} from './state.mjs';
 import {parseArgs} from './args.mjs';
 import {allowedCheckpointPath} from './checkpoint.mjs';
-import {inspectProductionChecks} from '../tools/wait-for-production-code-checks.mjs';
+import {productionCIState} from '../tools/wait-for-production-code-checks.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const repo = 'jerryfang2023-stack/AI-Radar';
@@ -20,6 +20,9 @@ export function selectRunDate(states, clock, requested) {
     if (!/^\d{4}-\d{2}-\d{2}$/u.test(requested) || Number.isNaN(Date.parse(requested)) || new Date(requested).toISOString().slice(0,10)!==requested || requested > clock.date) throw new Error('invalid_vps_run_date');
     return requested;
   }
+  // A yesterday recovery must never prevent today's single discovery run.
+  const today=states.find(s=>s.date===clock.date);
+  if(clock.minute>=490 && (!today || !terminal(today)))return clock.date;
   const unfinished = states.filter(s=>s.date <= clock.date && !terminal(s)
     && !(s.date < clock.date && ['needs_attention','review_held','ci_failed','awaiting_approval','checks_pending'].includes(s.status))).sort((a,b)=>a.date.localeCompare(b.date));
   return unfinished[0]?.date || (clock.minute >= 490 ? clock.date : null);
@@ -33,9 +36,30 @@ export function acceptedReview(review, {date, head}) {
 export function assertDataOnly(files, date) {
   if (!files.length || files.some(file=>!allowedCheckpointPath(file, date))) throw new Error('financing_pr_changes_executable_or_unapproved_paths');
 }
+export function dispatchAllowed(state, dispatch) {
+  if(dispatch.status!=='planned')return true;
+  const attempts=state.dispatch_attempts || [];
+  // Pre-record attempts; unknown results do not get blindly charged again.
+  if(attempts.some(a=>a.status==='unknown'))return false;
+  return attempts.length<3;
+}
+export function assertApprovalRun(run,{head,date,workflowId}) {
+  if(run.head_sha!==head || run.path!=='.github/workflows/production-code-checks.yml'
+    || run.event!=='pull_request' || run.head_repository?.full_name!==repo
+    || run.head_branch!==`automation/financing-${date}` || run.workflow_id!==workflowId
+    || run.conclusion!=='action_required')throw new Error('untrusted_ci_approval_run');
+}
+export function validPublishedReceipt(receipt,date) {
+  return receipt?.status==='published' && receipt.date===date && receipt.website_date===date && receipt.mini_date===date
+    && /^[a-f0-9]{40}$/u.test(receipt.source_commit || '');
+}
 function command(name, args, options = {}) {
   const result = spawnSync(name,args,{cwd:root,encoding:'utf8',windowsHide:true,timeout:120000,maxBuffer:32*1024*1024,...options});
-  if (result.error || result.status !== 0) throw new Error(`vps_command_failed:${name}:${args[0]}:${result.status ?? result.error?.code}`);
+  if (result.error || result.status !== 0) {
+    const error=new Error(`vps_command_failed:${name}:${args[0]}:${result.status ?? result.error?.code}`);
+    error.private_stderr=String(result.stderr || result.error?.message || '').slice(-64000);
+    throw error;
+  }
   return result.stdout.trim();
 }
 const gh = args => command('gh',args);
@@ -45,8 +69,8 @@ function publication(date, ref='origin/main') {
   if(result.status!==0)return null;
   return JSON.parse(result.stdout);
 }
-function sourceHash() {
-  return digest(command('git',['show','origin/main:01-SiteV2/site/data/financing-catalog-v1.json']));
+function sourceHash(ref='origin/main') {
+  return digest(command('git',['show',`${ref}:01-SiteV2/site/data/financing-catalog-v1.json`]));
 }
 async function cycle(args) {
   const runtime=path.resolve(args.get('runtime-dir') || process.env.GUANLAN_FINANCING_RUNTIME || '/srv/guanlan-financing/runtime');
@@ -68,23 +92,35 @@ async function cycle(args) {
   const dry=args.get('dry-run')==='true';
   const save=patch=>{state={...state,...patch,updated_at:new Date().toISOString()}; if(!dry)write(stateFile,state); return state;};
   try {
-    const dispatch=JSON.parse(command(process.execPath,['agent-workflow/financing/dispatch.mjs',`--date=${date}`,...(dry?['--dry-run=true']:[])]));
+    let dispatch=JSON.parse(command(process.execPath,['agent-workflow/financing/dispatch.mjs',`--date=${date}`,'--dry-run=true']));
     if(dry)return {date,status:'preview',dispatch};
+    if(dispatch.status==='planned') {
+      if(!dispatchAllowed(state,dispatch))return save({status:'needs_attention',error:'daily_dispatch_budget_or_unknown_attempt',dispatch});
+      const attempts=[...(state.dispatch_attempts || []),{status:'unknown',resume_run_id:dispatch.resume_run_id,started_at:new Date().toISOString()}];
+      save({dispatch_attempts:attempts});
+      dispatch=JSON.parse(command(process.execPath,['agent-workflow/financing/dispatch.mjs',`--date=${date}`]));
+      attempts[attempts.length-1]={...attempts.at(-1),status:dispatch.status==='dispatched'?'submitted':'not_needed'};
+      save({dispatch_attempts:attempts});
+    }
     save({status:dispatch.status,dispatch,verification:dispatch.verification});
     if(dispatch.status==='verification_required') return save({status:'needs_attention',error:'legacy_pending_requires_produce_resume_from_accepted_collection'});
     if(['no_new_financing','pending_verification'].includes(dispatch.status))return save({completed_at:new Date().toISOString()});
     if(dispatch.status==='awaiting_portal') {
-      const receipt=JSON.parse(command('sudo',['-n','/usr/local/libexec/guanlan-financing-publish',date],{timeout:5400000}));
       const accepted=command('git',['rev-parse','origin/main']);
-      if(receipt?.status!=='published' || receipt.date!==date || receipt.source_commit!==accepted)throw new Error('vps_publication_receipt_mismatch');
-      return save({status:'published',catalog_hash:sourceHash(),receipt,completed_at:new Date().toISOString()});
+      const receipt=JSON.parse(command('sudo',['-n','/usr/local/libexec/guanlan-financing-publish',date],{timeout:5400000}));
+      if(!validPublishedReceipt(receipt,date))throw new Error('vps_publication_receipt_mismatch');
+      command('git',['fetch','--quiet','origin','main']);
+      command('git',['merge-base','--is-ancestor',accepted,receipt.source_commit]);
+      command('git',['merge-base','--is-ancestor',receipt.source_commit,'origin/main']);
+      return save({status:'published',catalog_hash:sourceHash(receipt.source_commit),receipt,completed_at:new Date().toISOString()});
     }
-    if(dispatch.status!=='ready_for_review')return state;
+    if(!['ready_for_review','awaiting_approval'].includes(dispatch.status))return state;
     const pull=ghJson(['pr','view',dispatch.pr_url,'--repo',repo,'--json','number,headRefName,headRefOid,baseRefName,state,isDraft']);
     if(pull.state!=='OPEN' || pull.isDraft || pull.baseRefName!=='main' || pull.headRefName!==`automation/financing-${date}` || pull.headRefOid!==dispatch.head_sha)throw new Error('financing_pr_identity_changed');
     command('git',['fetch','origin',`refs/pull/${pull.number}/head`]);
     const head=command('git',['rev-parse','FETCH_HEAD']);
     if(head!==pull.headRefOid)throw new Error('financing_pr_head_changed');
+    // Validate the actual merge base content changes, including deletions.
     const files=command('git',['diff','--name-only','origin/main...'+head]).split(/\r?\n/u).filter(Boolean);
     assertDataOnly(files,date);
     const report=publication(date,head);
@@ -120,11 +156,23 @@ async function cycle(args) {
     if(!acceptedReview(review,{date,head}))return save({status:'review_held',review});
     const fresh=ghJson(['pr','view',dispatch.pr_url,'--repo',repo,'--json','headRefOid,state']);
     const checks=ghJson(['api',`repos/${repo}/commits/${head}/check-runs?per_page=100`,'--paginate','--slurp']).flatMap(p=>p.check_runs||[]);
+    const runs=ghJson(['api',`repos/${repo}/actions/runs?head_sha=${head}&per_page=100`]).workflow_runs || [];
+    const ci=productionCIState(checks,runs,head);
     const freshBase=gh(['api',`repos/${repo}/git/ref/heads/main`,'--jq','.object.sha']);
-    if(freshBase!==base || fresh.state!=='OPEN' || fresh.headRefOid!==head || inspectProductionChecks(checks,head).status!=='passed')throw new Error('reviewed_head_or_ci_changed');
+    if(freshBase!==base || fresh.state!=='OPEN' || fresh.headRefOid!==head)throw new Error('reviewed_head_or_ci_changed');
+    if(ci.status==='awaiting_approval') {
+      const run=ghJson(['api',`repos/${repo}/actions/runs/${ci.run_id}`]);
+      const workflow=ghJson(['api',`repos/${repo}/actions/workflows/production-code-checks.yml`]);
+      assertApprovalRun(run,{head,date,workflowId:workflow.id});
+      if(state.approved_ci_run===run.id)return save({status:'awaiting_approval',ci});
+      gh(['api','--method','POST',`repos/${repo}/actions/runs/${run.id}/approve`]);
+      return save({status:'checks_pending',approved_ci_run:run.id,ci,reviewed_head:head});
+    }
+    if(ci.status!=='passed')return save({status:ci.status==='failed'?'ci_failed':'checks_pending',ci});
     gh(['pr','merge',dispatch.pr_url,'--repo',repo,'--merge','--match-head-commit',head]);
     return save({status:report.status==='ready_for_review'?'awaiting_portal':report.status,verification:report.verification,reviewed_head:head,merged_pr:dispatch.pr_url});
   } catch(error) {
+    if(!dry)write(path.join(directory,'last-error.json'),{date,error:error.message,stderr:error.private_stderr || '',observed_at:new Date().toISOString()});
     save({status:'needs_attention',error:error.message});
     throw error;
   }

@@ -12,7 +12,7 @@ from datetime import datetime, timedelta, timezone
 from functools import wraps
 from pathlib import Path
 
-from flask import Flask, g, jsonify, request
+from flask import Flask, g, jsonify, request, has_request_context
 from itsdangerous import BadSignature, SignatureExpired, URLSafeTimedSerializer
 
 from payment_service.wechatpay import WeChatPayClient, WeChatPayError
@@ -639,6 +639,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         event_name = str(event.get("event") or "").strip()
         platform = str(event.get("platform") or "").strip()
         event_id = str(event.get("eventId") or "").strip()
+        if not server and event_id.startswith('server:'):
+            raise ValueError('RESERVED_EVENT_ID')
         visitor_id = str(event.get("visitorId") or "").strip()
         session_id = str(event.get("sessionId") or "").strip()
         if not ANALYTICS_EVENT_RE.fullmatch(event_name):
@@ -650,6 +652,9 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         if not ANALYTICS_ID_RE.fullmatch(visitor_id) or not ANALYTICS_ID_RE.fullmatch(session_id):
             raise ValueError("INVALID_ANALYTICS_ID")
         properties = clean_analytics_properties(event.get("properties"))
+        if platform == 'pc':
+            from payment_service.pc_analytics import sanitize
+            properties = sanitize(properties, request.headers.get('User-Agent', '') if has_request_context() else '', server=server)
         page_path = str(event.get("page") or "").strip()[:160]
         referrer = str(event.get("referrer") or "").strip().split("?", 1)[0].split("#", 1)[0][:240]
         app_version = str(event.get("appVersion") or "").strip()[:32]
@@ -674,12 +679,22 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
     def record_system_analytics(conn, event_name, user_id, properties=None, *, event_key=""):
         identity = f"server-user:{int(user_id)}"
         suffix = event_key or secrets.token_hex(8)
+        properties = dict(properties or {})
+        platform = properties.get('platform', 'miniprogram')
+        attribution = None
+        if platform == 'pc' and has_request_context():
+            visitor = request.headers.get('X-Analytics-Visitor', '')
+            session = request.headers.get('X-Analytics-Session', '')
+            if visitor.startswith('pc-visitor-') and session.startswith('pc-session-') and ANALYTICS_ID_RE.fullmatch(visitor) and ANALYTICS_ID_RE.fullmatch(session):
+                attribution = conn.execute("SELECT visitor_id,session_id,properties_json FROM analytics_events WHERE platform='pc' AND visitor_id=? AND session_id=? AND event_name='page_view' AND julianday(received_at)>=julianday(?) ORDER BY id DESC LIMIT 1", (visitor,session,iso(utcnow()-timedelta(hours=24)))).fetchone()
+            if attribution:
+                properties = {**json.loads(attribution['properties_json']), **properties}
         event = {
             "eventId": f"server:{event_name}:{suffix}"[:128],
             "event": event_name,
-            "platform": "miniprogram",
-            "visitorId": identity,
-            "sessionId": f"server:{datetime.now(timezone.utc).date().isoformat()}",
+            "platform": platform,
+            "visitorId": attribution['visitor_id'] if attribution else identity,
+            "sessionId": attribution['session_id'] if attribution else f"server:{datetime.now(timezone.utc).date().isoformat()}",
             "page": "server",
             "appVersion": "server",
             "properties": properties or {},
@@ -955,13 +970,15 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             params.append(platform)
         with closing(db()) as conn:
             rows = conn.execute(
-                f"SELECT * FROM analytics_events WHERE occurred_at>=?{platform_clause} ORDER BY occurred_at ASC",
+                f"SELECT * FROM analytics_events WHERE julianday(occurred_at)>=julianday(?){platform_clause} ORDER BY julianday(occurred_at) ASC",
                 params,
             ).fetchall()
             user_rows = conn.execute(
-                "SELECT id, created_at FROM users WHERE created_at>=? ORDER BY created_at ASC",
+                "SELECT id, created_at, openid FROM users WHERE julianday(created_at)>=julianday(?) AND merged_into_user_id IS NULL ORDER BY created_at ASC",
                 (iso(start),),
-            ).fetchall() if platform in {"all", "miniprogram"} else []
+            ).fetchall()
+            if platform != 'all':
+                user_rows = [u for u in user_rows if ('pc' if str(u['openid']).startswith(('pc:','web:')) else 'miniprogram') == platform]
             order_rows = conn.execute(
                 """SELECT order_no, total_cents, status, refund_status, paid_at, refunded_at
                    FROM payment_orders WHERE paid_at IS NOT NULL AND paid_at>=? ORDER BY paid_at ASC""",
@@ -989,6 +1006,10 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             session_id = row["session_id"]
             event_name = row["event_name"]
             properties = json.loads(row["properties_json"] or "{}")
+            if row['platform'] == 'pc' and row['event_id'].startswith('server:') and visitor_id.startswith('server-user:'):
+                # A business conversion without browser context is not a new website visit.
+                event_counts[event_name] = event_counts.get(event_name, 0) + 1
+                continue
             visitors.add(visitor_id)
             platform_counts.setdefault(row["platform"], set()).add(visitor_id)
             event_counts[event_name] = event_counts.get(event_name, 0) + 1
@@ -1064,7 +1085,10 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 "visitors": len(item["visitors"]),
                 "sessions": len(item["sessions"]),
             })
+        from payment_service.pc_analytics import acquisition_summary
+        pc_acquisition = acquisition_summary(rows) if platform != 'miniprogram' else None
         return jsonify(
+            pcAcquisition=pc_acquisition,
             generatedAt=iso(now),
             trackingSince=iso(live_from) if live_from else None,
             dataSource="production",

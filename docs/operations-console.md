@@ -1,6 +1,8 @@
 # Unified Operations Console
 
-Release baseline: OPS-V3.11.0-pc-account-management / Skill Store v2.4.0
+Release baseline: OPS-V3.12.0-pc-acquisition / Skill Store v2.4.0
+
+运营统计增加 [PC 渠道与访问质量](pc-acquisition.md)：首次与本次来源、每日渠道注册转化、自动化线索分组和推广链接生成。来源未知保持未知，原始数据保留。
 
 Google Search Console adds administrator-initiated read-only OAuth and daily 09:00 Asia/Shanghai synchronization for PC Search Analytics. See [setup, reporting and credential boundaries](google-search-console.md). The exact Google callback is an anonymous, one-time code staging page; completing the connection requires the initiating OPS session and CSRF. It does not expose dashboard data.
 

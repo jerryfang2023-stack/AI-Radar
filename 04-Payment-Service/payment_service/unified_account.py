@@ -584,7 +584,9 @@ def register_routes(app, *, db, membership, user_by_id, fulfill_order, complete_
                 )
             conn.execute("UPDATE verification_challenges SET consumed_at=? WHERE id=?", (iso(now), challenge_id))
             token, csrf = issue_session(conn, user["id"])
-            record_analytics(conn, "pc_login_success", user["id"], {"identityType": challenge["identity_type"]}, event_key=challenge_id)
+            if not identity:
+                record_analytics(conn, "registration_success", user["id"], {"platform":"pc", "identityType":challenge['identity_type']}, event_key=f"pc-user-{user['id']}")
+            record_analytics(conn, "pc_login_success", user["id"], {"platform":"pc", "identityType": challenge["identity_type"]}, event_key=challenge_id)
             conn.commit()
             payload = account_payload(conn, user_by_id(conn, user["id"]), csrf)
         response = make_response(jsonify(payload))

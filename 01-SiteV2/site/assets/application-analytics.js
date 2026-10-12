@@ -6,6 +6,7 @@
   const $$ = (selector) => [...root.querySelectorAll(selector)];
   const state = { days: 7, platform: "all", started: false, requestId: 0 };
   let loggedOut = false, activeController = null;
+  let pcAcquisition = null;
   const number = (value) => new Intl.NumberFormat("zh-CN").format(Number(value || 0));
   const currency = (value) => new Intl.NumberFormat("zh-CN", { style: "currency", currency: "CNY", maximumFractionDigits: 0 }).format(Number(value || 0) / 100);
   const percent = (value) => `${(Number(value || 0) * 100).toFixed(1)}%`;
@@ -81,7 +82,39 @@
     const labels = { miniprogram: "小程序", pc: "PC 融资站" };
     $("[data-platforms]").innerHTML = (data.platforms || []).map((item) => `<article class="aa-platform"><span>${labels[item.platform] || item.platform}</span><strong>${number(item.visitors)} 位访客</strong></article>`).join("");
   }
+  const sources = {wechat:'微信',xiaohongshu:'小红书',partner:'合作伙伴',internal:'内部',unattributed:'来源未知',other:'其他外部网站',google:'Google',baidu:'百度',bing:'Bing',chatgpt:'ChatGPT',perplexity:'Perplexity',deepseek:'DeepSeek'};
+  const media = {group:'社群',official_account:'公众号',moments:'朋友圈',social:'社交内容',referral:'推荐',test:'测试',organic_search:'自然搜索',ai_referral:'AI 引荐',other_referral:'外部引荐',campaign:'推广',unattributed:'未识别'};
+  const types = {ordinary:'普通访问（未证实真人）',suspected_automation:'疑似自动化',declared_crawler:'声明为爬虫',internal:'标记为内部测试'};
+  function renderChannels() {
+    const panel = $('[data-pc-acquisition]');
+    if (!panel) return;
+    panel.hidden = !pcAcquisition;
+    if (!pcAcquisition) return;
+    const selected = $('[data-pc-type]').value;
+    const visible = rows => (rows || []).filter(r => selected === 'all' || r.trafficType === selected);
+    $('[data-pc-quality]').innerHTML = (pcAcquisition.quality || []).map(r => `<article class="aa-platform"><span>${escapeHtml(types[r.key] || r.key)}</span><strong>${number(r.visitors)} 访客 · ${number(r.pageViews)} 浏览</strong></article>`).join('') || '<p class="aa-empty">当前周期暂无 PC 页面访问。</p>';
+    const table = (rows, daily=false) => rows.length ? `<div style="overflow-x:auto"><table style="width:100%;text-align:left;white-space:nowrap"><thead><tr>${daily?'<th>日期</th>':''}<th>渠道 / 活动</th><th>分组</th><th>访客</th><th>会话</th><th>浏览</th><th>新注册</th></tr></thead><tbody>${rows.map(r => `<tr>${daily?`<td>${escapeHtml(r.date)}</td>`:''}<td>${escapeHtml(r.source==='other' && r.referralHost ? r.referralHost : (sources[r.source]||r.source))} / ${escapeHtml(media[r.medium]||r.medium)}${r.campaign?`<br><small>${escapeHtml(r.campaign)}</small>`:''}</td><td>${escapeHtml(types[r.trafficType]||r.trafficType)}</td><td>${number(r.visitors)}</td><td>${number(r.sessions)}</td><td>${number(r.pageViews)}</td><td>${number(r.registrations)}</td></tr>`).join('')}</tbody></table></div>` : '<p class="aa-empty">当前筛选暂无访问记录。</p>';
+    $('[data-pc-channels]').innerHTML = table(visible(pcAcquisition[$('[data-pc-basis]').value]));
+    $('[data-pc-daily]').innerHTML = table(visible(pcAcquisition.daily).sort((a,b)=>b.date.localeCompare(a.date)),true);
+  }
+  $('[data-pc-basis]')?.addEventListener('change',renderChannels);
+  $('[data-pc-type]')?.addEventListener('change',renderChannels);
+  $('[data-channel-link-form]')?.addEventListener('submit',event => {
+    event.preventDefault();
+    const form=event.target, output=$('[data-channel-link-output]');
+    try {
+      const campaign=form.elements.campaign.value.trim().toLowerCase();
+      if (!/^[a-z][a-z0-9_-]{0,47}$/.test(campaign) || /\d{7}/.test(campaign)) throw Error();
+      const url=new URL(form.elements.path.value,'https://www.zkdlj.vip/');
+      if(url.origin!=='https://www.zkdlj.vip' || url.username || url.password || url.search || url.hash || /^\/(?:ops|api)(?:\/|$)/.test(url.pathname)) throw Error();
+      const [source,medium]=form.elements.channel.value.split(':');
+      url.search=new URLSearchParams({utm_source:source,utm_medium:medium,utm_campaign:campaign}).toString();
+      output.textContent=url.href;
+    } catch { output.textContent='请填写有效活动标记和公开站内路径，不包含查询参数或个人信息。'; }
+  });
   function render(data) {
+    pcAcquisition = data.pcAcquisition || null;
+    renderChannels();
     renderKpis(data);
     renderTrend(data);
     renderFunnel(data);
@@ -131,6 +164,9 @@
   $("[data-refresh]").addEventListener("click", load);
   root.addEventListener("analytics:open", () => { if (!state.started) load(); });
   function clearSession() {
+    pcAcquisition = null;
+    $('[data-pc-acquisition]')?.setAttribute('hidden','');
+    for (const name of ['pc-quality','pc-channels','pc-daily','channel-link-output']) if ($('[data-'+name+']')) $('[data-'+name+']').textContent='';
     state.requestId += 1; state.started = false;
     activeController?.abort(); activeController = null;
     for (const name of ["kpis", "trend-chart", "funnel", "registration-failures", "top-pages", "top-content", "platforms"]) $("[data-" + name + "]").innerHTML = "";

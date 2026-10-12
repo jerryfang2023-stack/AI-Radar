@@ -1,4 +1,8 @@
 // A migration/republication receipt is not evidence of completed discovery.
+export function activeProductionRun(matching, preflightRun) {
+  return matching.filter(run=>run.status!=='completed' && (!preflightRun || run.databaseId<Number(preflightRun)))
+    .sort((a,b)=>a.databaseId-b.databaseId)[0];
+}
 export function acceptedPublicationStatus(publication, date) {
   if (publication?.date !== date || publication.migration?.new_discovery_not_run) return null;
   if (publication.status === 'pending_verification' && publication.verification?.status !== 'completed') return 'verification_required';
