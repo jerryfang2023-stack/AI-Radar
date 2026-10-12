@@ -3,7 +3,7 @@ import { spawnSync } from 'node:child_process';
 import { queryPlan } from './discovery.mjs';
 import { acceptedPublicationStatus, pendingReviewStatus } from './dispatch-state.mjs';
 import { parseArgs } from './args.mjs';
-import { inspectProductionChecks } from '../tools/wait-for-production-code-checks.mjs';
+import { productionCIState } from '../tools/wait-for-production-code-checks.mjs';
 const args = parseArgs();
 const date = args.get('date') || new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 queryPlan(date);
@@ -17,15 +17,16 @@ const report = gh(['api',`repos/${repo}/contents/agent-workflow/reports/financin
 let publication;
 if (report) publication = JSON.parse(Buffer.from(report,'base64').toString('utf8'));
 const acceptedStatus = acceptedPublicationStatus(publication, date);
-if (acceptedStatus) {
+const prs = JSON.parse(gh(['pr','list','--repo',repo,'--head',`automation/financing-${date}`,'--state','open','--json','headRefName,state,url,headRefOid']));
+const review = pendingReviewStatus(prs, date);
+if (acceptedStatus && !review) {
   console.log(JSON.stringify({date,status:acceptedStatus, verification:publication.verification, accepted_on_main:true}));
 } else {
-  const prs = JSON.parse(gh(['pr','list','--repo',repo,'--head',`automation/financing-${date}`,'--state','open','--json','headRefName,state,url,headRefOid']));
-  const review = pendingReviewStatus(prs, date);
   if (review) {
     const pages = JSON.parse(gh(['api',`repos/${repo}/commits/${review.head_sha}/check-runs?per_page=100`,'--paginate','--slurp']));
-    const ci = inspectProductionChecks(pages.flatMap(page => page.check_runs || []), review.head_sha);
-    console.log(JSON.stringify(pendingReviewStatus(prs, date, ci.status)));
+    const runs = JSON.parse(gh(['api',`repos/${repo}/actions/runs?head_sha=${review.head_sha}&per_page=100`]));
+    const ci = productionCIState(pages.flatMap(page => page.check_runs || []),runs.workflow_runs || [],review.head_sha);
+    console.log(JSON.stringify(pendingReviewStatus(prs, date, ci.status, ci)));
   } else {
     const runs = JSON.parse(gh(['run','list','--repo',repo,'--workflow','funding-daily-pr.yml','--branch','main','--limit','60','--json','databaseId,displayTitle,status,conclusion']));
     const matching = runs.filter(run => run.displayTitle === `Financing ${date}`);

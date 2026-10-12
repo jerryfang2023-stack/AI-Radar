@@ -21,7 +21,7 @@ export function selectRunDate(states, clock, requested) {
     return requested;
   }
   const unfinished = states.filter(s=>s.date <= clock.date && !terminal(s)
-    && !(s.date < clock.date && ['needs_attention','review_held','ci_failed'].includes(s.status))).sort((a,b)=>a.date.localeCompare(b.date));
+    && !(s.date < clock.date && ['needs_attention','review_held','ci_failed','awaiting_approval','checks_pending'].includes(s.status))).sort((a,b)=>a.date.localeCompare(b.date));
   return unfinished[0]?.date || (clock.minute >= 490 ? clock.date : null);
 }
 export function acceptedReview(review, {date, head}) {
