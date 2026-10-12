@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-11",
-    "currentDate": "2026-10-11",
-    "eventCount": 4063,
+    "latestDataDate": "2026-10-12",
+    "currentDate": "2026-10-12",
+    "eventCount": 4069,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,16 +62,17 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 3,
     "china_market_company_count": 3,
-    "first_disclosed_at": "2026-03-30",
+    "first_disclosed_at": "2025-01",
     "latest_disclosed_at": "2026-09-18",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 3
     },
     "round_codes": [
@@ -217,6 +218,38 @@
             "quote_hash": "61e17cee984e02b8821d979716a37b36ec570b362c1bd1411e0ffe279aee64f9"
           }
         ]
+      },
+      {
+        "activity_id": "IA-53d63bdb33cde2fd",
+        "funding_insight_id": "FI-9f56d9e17ea9cdbd",
+        "event_ids": [
+          "EV-1ab1592853c9099a"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "EN-0369c8fcda657a43",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2025年11月近5亿元A+轮跟投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2189e119ac7f0069",
+            "source_url": "https://www.qbitai.com/2025/11/356885.html",
+            "source_title": "5亿热钱砸向清华AI Infra明星：最大化算力效能筑造智能体基建",
+            "source_content_hash": "d66f8f6bad575ee8",
+            "quote": "惠远资本、尚颀资本、弘晖基金跟投",
+            "quote_hash": "ff4709a431920ec4b272e0e8c85f140ef08829b539cf5f4b652ce79a206ba5c0"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -243,6 +276,14 @@
         "source_content_hash": "907ae8ff0db6a87bbd3822e3d07475bda216bf4ce32f463e1703f62f456fa7c6",
         "quote": "近日，AI玩具公司深圳跃然创新科技有限公司（以下简称”跃然创新”）完成A+轮融资，由蚂蚁集团领投，达晨创投、尚 颀 资本、拓邦股份（002139.SZ，以下简称“拓邦”）、啟赋资本等机构参投。",
         "quote_hash": "61e17cee984e02b8821d979716a37b36ec570b362c1bd1411e0ffe279aee64f9"
+      },
+      {
+        "source_id": "FISRC-2189e119ac7f0069",
+        "source_url": "https://www.qbitai.com/2025/11/356885.html",
+        "source_title": "5亿热钱砸向清华AI Infra明星：最大化算力效能筑造智能体基建",
+        "source_content_hash": "d66f8f6bad575ee8",
+        "quote": "惠远资本、尚颀资本、弘晖基金跟投",
+        "quote_hash": "ff4709a431920ec4b272e0e8c85f140ef08829b539cf5f4b652ce79a206ba5c0"
       }
     ],
     "public_profile": {

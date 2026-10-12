@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-11",
-    "currentDate": "2026-10-11",
-    "eventCount": 4063,
+    "latestDataDate": "2026-10-12",
+    "currentDate": "2026-10-12",
+    "eventCount": 4069,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-10-04",
     "latest_disclosed_at": "2026-10-04",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 1
     },
     "round_codes": [
@@ -157,6 +157,38 @@
             "quote_hash": "ecbb6e661efeeaa58a258a6042bb6452d716965644ca36b33e9ce80730d190f3"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d660e4b41fb9c0ce",
+        "funding_insight_id": "FI-9f56d9e17ea9cdbd",
+        "event_ids": [
+          "EV-1ab1592853c9099a"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "EN-0369c8fcda657a43",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b3271ee3d3c2de4d",
+            "source_url": "https://www.guancha.cn/CaiJing/2026_10_04_903168.shtml",
+            "source_title": "无问芯穹秘密递表港交所：已融资43亿，腾讯、百度、智谱等押注",
+            "source_content_hash": "30d4d6c98bdee9b0",
+            "quote": "公司历史投资方包括联想创投、小米、百度、腾讯、智谱等产业资本",
+            "quote_hash": "20631f8db02a325a5c1e21e54ad0435a82e65336095ff63ad1b0b9320bbae68d"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -175,6 +207,14 @@
         "source_content_hash": "77f2cb8eb3457afa",
         "quote": "2024年3月完成数千万元天使轮融资，智谱等参投",
         "quote_hash": "ecbb6e661efeeaa58a258a6042bb6452d716965644ca36b33e9ce80730d190f3"
+      },
+      {
+        "source_id": "FISRC-b3271ee3d3c2de4d",
+        "source_url": "https://www.guancha.cn/CaiJing/2026_10_04_903168.shtml",
+        "source_title": "无问芯穹秘密递表港交所：已融资43亿，腾讯、百度、智谱等押注",
+        "source_content_hash": "30d4d6c98bdee9b0",
+        "quote": "公司历史投资方包括联想创投、小米、百度、腾讯、智谱等产业资本",
+        "quote_hash": "20631f8db02a325a5c1e21e54ad0435a82e65336095ff63ad1b0b9320bbae68d"
       }
     ],
     "public_profile": {
@@ -216,6 +256,10 @@
         {
           "description": "融资来源记录：北京清程极智科技有限公司 · 历史轮次未披露 · 天使轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-178895bbb061ef5a"
+        },
+        {
+          "description": "融资来源记录：上海无问芯穹智能科技股份有限公司 · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b3271ee3d3c2de4d"
         }
       ],
       "contacts": [
@@ -267,6 +311,14 @@
           "source_content_hash": "77f2cb8eb3457afa",
           "quote": "2024年3月完成数千万元天使轮融资，智谱等参投",
           "quote_hash": "ecbb6e661efeeaa58a258a6042bb6452d716965644ca36b33e9ce80730d190f3"
+        },
+        {
+          "source_id": "FISRC-b3271ee3d3c2de4d",
+          "source_url": "https://www.guancha.cn/CaiJing/2026_10_04_903168.shtml",
+          "source_title": "无问芯穹秘密递表港交所：已融资43亿，腾讯、百度、智谱等押注",
+          "source_content_hash": "30d4d6c98bdee9b0",
+          "quote": "公司历史投资方包括联想创投、小米、百度、腾讯、智谱等产业资本",
+          "quote_hash": "20631f8db02a325a5c1e21e54ad0435a82e65336095ff63ad1b0b9320bbae68d"
         }
       ],
       "last_verified_at": "2026-10-05",

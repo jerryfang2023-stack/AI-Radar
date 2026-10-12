@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-11",
-    "currentDate": "2026-10-11",
-    "eventCount": 4063,
+    "latestDataDate": "2026-10-12",
+    "currentDate": "2026-10-12",
+    "eventCount": 4069,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,21 +62,53 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2025-01",
+    "latest_disclosed_at": "2025-01",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-9fce21cb0b73e83a",
+        "funding_insight_id": "FI-9f56d9e17ea9cdbd",
+        "event_ids": [
+          "EV-1ab1592853c9099a"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "EN-0369c8fcda657a43",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2025年11月近5亿元A+轮领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2189e119ac7f0069",
+            "source_url": "https://www.qbitai.com/2025/11/356885.html",
+            "source_title": "5亿热钱砸向清华AI Infra明星：最大化算力效能筑造智能体基建",
+            "source_content_hash": "d66f8f6bad575ee8",
+            "quote": "本轮融资由珠海科技集团、孚腾资本（元创未来基金）领投",
+            "quote_hash": "f984c1c6f69427b539ea66bcaf2ed1cb9eea51a25e6fc62be9d4a711151f0610"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a58bd5ae8377dcbb",
         "funding_insight_id": "FI-45331063d95f5f57",
@@ -111,6 +143,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2189e119ac7f0069",
+        "source_url": "https://www.qbitai.com/2025/11/356885.html",
+        "source_title": "5亿热钱砸向清华AI Infra明星：最大化算力效能筑造智能体基建",
+        "source_content_hash": "d66f8f6bad575ee8",
+        "quote": "本轮融资由珠海科技集团、孚腾资本（元创未来基金）领投",
+        "quote_hash": "f984c1c6f69427b539ea66bcaf2ed1cb9eea51a25e6fc62be9d4a711151f0610"
+      },
       {
         "source_id": "FISRC-f3ef8441c682402c",
         "source_url": "https://en.tmtpost.com/post/7784584",
@@ -169,6 +209,10 @@
         {
           "description": "融资披露记录：2026-05-07，作为无问芯穹基础设施融资的领投方之一；披露轮次总额约7亿元。该金额是融资总额，不是已披露的集团单笔投资额。",
           "source_id": "FISRC-f3ef8441c682402c"
+        },
+        {
+          "description": "融资来源记录：上海无问芯穹智能科技股份有限公司 · 历史轮次未披露 · 2025-01 · 2025年11月近5亿元A+轮领投方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2189e119ac7f0069"
         }
       ],
       "contacts": [
@@ -226,6 +270,14 @@
           "source_content_hash": "ef6d4025018ae3947a5b7df820d4cd5cbc5ab0e0963b4309bc7063788e8f7e4e",
           "quote": "联系电话：0756-3666270",
           "quote_hash": "c4350c010b4d5130d18d7f12d7c1364c81cc92ec7ec90b68d8e2766c959c4aa0"
+        },
+        {
+          "source_id": "FISRC-2189e119ac7f0069",
+          "source_url": "https://www.qbitai.com/2025/11/356885.html",
+          "source_title": "5亿热钱砸向清华AI Infra明星：最大化算力效能筑造智能体基建",
+          "source_content_hash": "d66f8f6bad575ee8",
+          "quote": "本轮融资由珠海科技集团、孚腾资本（元创未来基金）领投",
+          "quote_hash": "f984c1c6f69427b539ea66bcaf2ed1cb9eea51a25e6fc62be9d4a711151f0610"
         }
       ],
       "last_verified_at": "2026-09-27"
