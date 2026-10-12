@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-12",
+    "first_disclosed_at": "2026-06-08",
     "latest_disclosed_at": "2026-08-12",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "series_a",
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-871e6f4bf723cb1b",
+        "canonical_entity_id": "",
+        "name": "Geordie AI"
+      },
       {
         "entity_id": "EN-2f9cb7cda5222087",
         "canonical_entity_id": "",
@@ -124,6 +131,54 @@
             "quote_hash": "65256cbe24e687fbe64f7aa04cbc338e3a8d1fa61cb2828e035537449817738e"
           }
         ]
+      },
+      {
+        "activity_id": "IA-225d52330d50095e",
+        "funding_insight_id": "FI-12425a5b3c0c94e9",
+        "event_ids": [
+          "EV-3c8c01c48903ce41"
+        ],
+        "company_entity_id": "EN-871e6f4bf723cb1b",
+        "company_canonical_entity_id": "",
+        "company_name": "Geordie AI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-06-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0c52ccc548d44488",
+            "source_url": "https://www.bankinfosecurity.com/startup-geordie-ai-lands-30m-to-secure-enterprise-ai-agents-a-31919",
+            "source_title": "初创公司Geordie AI获3000万美元，用于保障企业AI智能体安全",
+            "source_content_hash": "9d150dcb3336c0fb922d39dfb47eef07dcf09aa0063bdf2883d020f780691d81",
+            "quote": "The Balderton Capital-led Series A round",
+            "quote_hash": "a71f9f3c04e52996c1c7c47773b4510e3d2a3275714bf135f4e89f87c5902c4d"
+          },
+          {
+            "source_id": "FISRC-090026c711c9d719",
+            "source_url": "https://www.geordie.ai/resources/geordie-ai-raises-30m-series-a-as-enterprises-race-to-govern-autonomous-ai-agents/",
+            "source_title": "Geordie AI Raises $30M Series A as Enterprises Race to Govern Autonomous AI Agents",
+            "source_content_hash": "e016242533ff1829",
+            "quote": "our $30 million Series A led by Balderton Capital",
+            "quote_hash": "e6ddb9e907cc388dcfd08b1e6b4e47e74af9045535a365ab25ad6335688a2e0f"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +189,22 @@
         "source_content_hash": "f9c4cc8a8cd4a7c7",
         "quote": "The round also welcomes Balderton Capital and Carmignac from Europe, Kaszek Ventures and LTS Growth from Latin America, Tencent and World Innovation Lab from Asia, and Regent from the United States",
         "quote_hash": "65256cbe24e687fbe64f7aa04cbc338e3a8d1fa61cb2828e035537449817738e"
+      },
+      {
+        "source_id": "FISRC-0c52ccc548d44488",
+        "source_url": "https://www.bankinfosecurity.com/startup-geordie-ai-lands-30m-to-secure-enterprise-ai-agents-a-31919",
+        "source_title": "初创公司Geordie AI获3000万美元，用于保障企业AI智能体安全",
+        "source_content_hash": "9d150dcb3336c0fb922d39dfb47eef07dcf09aa0063bdf2883d020f780691d81",
+        "quote": "The Balderton Capital-led Series A round",
+        "quote_hash": "a71f9f3c04e52996c1c7c47773b4510e3d2a3275714bf135f4e89f87c5902c4d"
+      },
+      {
+        "source_id": "FISRC-090026c711c9d719",
+        "source_url": "https://www.geordie.ai/resources/geordie-ai-raises-30m-series-a-as-enterprises-race-to-govern-autonomous-ai-agents/",
+        "source_title": "Geordie AI Raises $30M Series A as Enterprises Race to Govern Autonomous AI Agents",
+        "source_content_hash": "e016242533ff1829",
+        "quote": "our $30 million Series A led by Balderton Capital",
+        "quote_hash": "e6ddb9e907cc388dcfd08b1e6b4e47e74af9045535a365ab25ad6335688a2e0f"
       }
     ],
     "public_profile": {
@@ -157,6 +228,10 @@
         {
           "description": "融资来源记录：Lovable · C轮 · 2026-08-12 · 本轮参投 · $400 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-94676d99b2defaa4"
+        },
+        {
+          "description": "融资来源记录：Geordie AI · A轮 · 2026-06-08 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0c52ccc548d44488"
         }
       ],
       "contacts": [],
@@ -184,6 +259,22 @@
           "source_content_hash": "f9c4cc8a8cd4a7c7",
           "quote": "The round also welcomes Balderton Capital and Carmignac from Europe, Kaszek Ventures and LTS Growth from Latin America, Tencent and World Innovation Lab from Asia, and Regent from the United States",
           "quote_hash": "65256cbe24e687fbe64f7aa04cbc338e3a8d1fa61cb2828e035537449817738e"
+        },
+        {
+          "source_id": "FISRC-0c52ccc548d44488",
+          "source_url": "https://www.bankinfosecurity.com/startup-geordie-ai-lands-30m-to-secure-enterprise-ai-agents-a-31919",
+          "source_title": "初创公司Geordie AI获3000万美元，用于保障企业AI智能体安全",
+          "source_content_hash": "9d150dcb3336c0fb922d39dfb47eef07dcf09aa0063bdf2883d020f780691d81",
+          "quote": "The Balderton Capital-led Series A round",
+          "quote_hash": "a71f9f3c04e52996c1c7c47773b4510e3d2a3275714bf135f4e89f87c5902c4d"
+        },
+        {
+          "source_id": "FISRC-090026c711c9d719",
+          "source_url": "https://www.geordie.ai/resources/geordie-ai-raises-30m-series-a-as-enterprises-race-to-govern-autonomous-ai-agents/",
+          "source_title": "Geordie AI Raises $30M Series A as Enterprises Race to Govern Autonomous AI Agents",
+          "source_content_hash": "e016242533ff1829",
+          "quote": "our $30 million Series A led by Balderton Capital",
+          "quote_hash": "e6ddb9e907cc388dcfd08b1e6b4e47e74af9045535a365ab25ad6335688a2e0f"
         }
       ],
       "last_verified_at": "2026-10-03"

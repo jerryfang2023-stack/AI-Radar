@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-07-01",
     "latest_disclosed_at": "2026-07-01",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -132,6 +133,38 @@
             "quote_hash": "f99d233087df9c799c8e8b7c994fd15a7ddc145d8d594f19c79d263532ad40c3"
           }
         ]
+      },
+      {
+        "activity_id": "IA-3815c0b24e0537b8",
+        "funding_insight_id": "FI-4328c217f1203f6f",
+        "event_ids": [
+          "EV-e5d1e49e37f2e291"
+        ],
+        "company_entity_id": "EN-3eee4f30151db45a",
+        "company_canonical_entity_id": "EN-3eee4f30151db45a",
+        "company_name": "Nous Research",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b72ee092e2938985",
+            "source_url": "https://dealroom.co/companies/nous-research/",
+            "source_title": "Nous Research — Unicorn company profile | Dealroom",
+            "source_content_hash": "33d86cd105ac7abd",
+            "quote": "North Island Ventures · Delphi Ventures · Distributed Global · OSS Capital",
+            "quote_hash": "412a9941fba3cd17360cce4723cb9a085b691d48a9ac7ff14603fbb68933d4f6"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -150,6 +183,14 @@
         "source_content_hash": "0dacb24c9b80532d",
         "quote": "with participation from North Island Ventures",
         "quote_hash": "f99d233087df9c799c8e8b7c994fd15a7ddc145d8d594f19c79d263532ad40c3"
+      },
+      {
+        "source_id": "FISRC-b72ee092e2938985",
+        "source_url": "https://dealroom.co/companies/nous-research/",
+        "source_title": "Nous Research — Unicorn company profile | Dealroom",
+        "source_content_hash": "33d86cd105ac7abd",
+        "quote": "North Island Ventures · Delphi Ventures · Distributed Global · OSS Capital",
+        "quote_hash": "412a9941fba3cd17360cce4723cb9a085b691d48a9ac7ff14603fbb68933d4f6"
       }
     ],
     "public_profile": {
@@ -223,6 +264,10 @@
         {
           "description": "The Block 对 Venice AI 同一笔 Series A 的报道也列出 North Island Ventures；这是交叉佐证，不另计一笔投资。",
           "source_id": "FISRC-831c2961f3373587"
+        },
+        {
+          "description": "融资来源记录：Nous Research · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b72ee092e2938985"
         }
       ],
       "profile_type": "organization",
@@ -279,6 +324,14 @@
           "source_content_hash": "0dacb24c9b80532d",
           "quote": "with participation from North Island Ventures",
           "quote_hash": "f99d233087df9c799c8e8b7c994fd15a7ddc145d8d594f19c79d263532ad40c3"
+        },
+        {
+          "source_id": "FISRC-b72ee092e2938985",
+          "source_url": "https://dealroom.co/companies/nous-research/",
+          "source_title": "Nous Research — Unicorn company profile | Dealroom",
+          "source_content_hash": "33d86cd105ac7abd",
+          "quote": "North Island Ventures · Delphi Ventures · Distributed Global · OSS Capital",
+          "quote_hash": "412a9941fba3cd17360cce4723cb9a085b691d48a9ac7ff14603fbb68933d4f6"
         }
       ],
       "last_verified_at": "2026-09-27"

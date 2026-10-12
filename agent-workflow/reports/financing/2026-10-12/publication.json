@@ -3,11 +3,11 @@
     "version": "FINANCING-VERIFICATION-1",
     "status": "completed",
     "counts": {
-      "total": 405,
-      "verified": 22,
+      "total": 408,
+      "verified": 33,
       "excluded": 57,
       "reviewed": 0,
-      "pending": 326
+      "pending": 318
     },
     "ledger": "verification.json"
   },
@@ -21,7 +21,7 @@
     "excluded": 100
   },
   "next": "merge_pages_portal_and_live_parity",
-  "generated_at": "2026-10-12T15:22:47.683Z",
+  "generated_at": "2026-10-12T19:33:28.573Z",
   "priority_review": {
     "ledger": "priority55-review.json",
     "counts": {
@@ -41,5 +41,11 @@
         "fact_conflict_review": 7
       }
     }
+  },
+  "remaining78_review": {
+    "ledger": "remaining78-review.json",
+    "resolved": 41,
+    "pending": 37,
+    "queue": 55
   }
 }

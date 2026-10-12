@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,21 +62,53 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2024-01",
+    "latest_disclosed_at": "2024-01",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-f490819571fcfe77",
+        "funding_insight_id": "FI-6afae82835d41f97",
+        "event_ids": [
+          "EV-e8bc8dc295e87e3b"
+        ],
+        "company_entity_id": "EN-6aa1fcea0024c6ce",
+        "company_canonical_entity_id": "",
+        "company_name": "GMI Cloud",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2024-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A领投（2024年10月）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f1809d7dd0e9d307",
+            "source_url": "https://www.gmicloud.ai/en/blog/gmi-cloud-secures-82-million-series-a-funding",
+            "source_title": "GMI Cloud Raises $82M Series A | GMI Cloud Blog",
+            "source_content_hash": "3bff5525dd10e872",
+            "quote": "This round, led by Headline Asia, with contributions from Banpu Next and Wistron",
+            "quote_hash": "11cc362ab2c9bd78ece8b0b2278c8f6cf278eca60f11aa8150b462db6a5aacc9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b52675ee0910b973",
         "funding_insight_id": "FI-e332024760e4f246",
@@ -112,6 +144,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f1809d7dd0e9d307",
+        "source_url": "https://www.gmicloud.ai/en/blog/gmi-cloud-secures-82-million-series-a-funding",
+        "source_title": "GMI Cloud Raises $82M Series A | GMI Cloud Blog",
+        "source_content_hash": "3bff5525dd10e872",
+        "quote": "This round, led by Headline Asia, with contributions from Banpu Next and Wistron",
+        "quote_hash": "11cc362ab2c9bd78ece8b0b2278c8f6cf278eca60f11aa8150b462db6a5aacc9"
+      },
+      {
         "source_id": "FISRC-c7886d241de91af6",
         "source_url": "https://www.caplight.com/company/gmicloud",
         "source_title": "GMI Cloud Valuation & Funding History | Caplight",
@@ -146,6 +186,10 @@
         {
           "description": "GMI Cloud 官方公告将 Headline Asia 列为其 8,200 万美元 Series A 的领投方；融资总额含股权和债务，不代表 Headline Asia 的单独投资额。",
           "source_id": "b38_headline_gmi"
+        },
+        {
+          "description": "融资来源记录：GMI Cloud · 历史轮次未披露 · 2024-01 · Series A领投（2024年10月）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f1809d7dd0e9d307"
         },
         {
           "description": "融资来源记录：GMI Cloud · 历史轮次未披露 · 历史轮次（Series A）。这是本库收录的披露案例，不代表完整投资组合。",
@@ -191,6 +235,14 @@
           "quote_hash": "34fb0468e4bd4c8fa4fbca328966aa2aa772cffc01e76e94f1e5637e40ef756e"
         },
         {
+          "source_id": "FISRC-f1809d7dd0e9d307",
+          "source_url": "https://www.gmicloud.ai/en/blog/gmi-cloud-secures-82-million-series-a-funding",
+          "source_title": "GMI Cloud Raises $82M Series A | GMI Cloud Blog",
+          "source_content_hash": "3bff5525dd10e872",
+          "quote": "This round, led by Headline Asia, with contributions from Banpu Next and Wistron",
+          "quote_hash": "11cc362ab2c9bd78ece8b0b2278c8f6cf278eca60f11aa8150b462db6a5aacc9"
+        },
+        {
           "source_id": "FISRC-c7886d241de91af6",
           "source_url": "https://www.caplight.com/company/gmicloud",
           "source_title": "GMI Cloud Valuation & Funding History | Caplight",
@@ -203,6 +255,14 @@
     "translations": {
       "zh-CN": {
         "activities[0].role": {
+          "text": "Series A领投（2024年10月）",
+          "source_hash": "8d043e37afaa5ec7161b38173a4101f9b0413f3f78fd7ea4c94a6c5ce7cf1698",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-12T18:05:19.838Z",
+          "status": "translated"
+        },
+        "activities[1].role": {
           "text": "历史轮次（Series A）",
           "source_hash": "9265ff03964d583ec46fbc61f441582ffc867c2f87de858d617d439a21c1a994",
           "provider": "deepseek",

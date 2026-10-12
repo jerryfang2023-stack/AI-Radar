@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -104,54 +104,6 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-c6ecf19a0fe20fe1",
-        "funding_insight_id": "FI-5285254e515dcc0d",
-        "event_ids": [
-          "EV-6ade8a1ffb49d6c3"
-        ],
-        "company_entity_id": "EN-d01ba29d08682f7d",
-        "company_canonical_entity_id": "",
-        "company_name": "Siena",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "A轮",
-        "amount_original": "$17 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 17000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "1700 万美元"
-        },
-        "announced_at": "2026-10-08",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-1dd0c1ce61a7b23b",
-            "source_url": "https://aipressroom.com/siena-17m-ai-agents/",
-            "source_title": "Siena 融资 1700 万美元，扩展 AI 客户智能体",
-            "source_content_hash": "67100daf1c831eb702331c31a7123fb2bd96a926d14c6ae0e4c79a9934cb78d0",
-            "quote": "raised $17 million in a Series A round led by York IE, with participation from Joyance Ventures and existing investors Aglaé Ventures and Sierra Ventures",
-            "quote_hash": "952ca6e685b0c261c9632ca3bea507816f7f2608e6fa68985a6896993ad09560"
-          },
-          {
-            "source_id": "FISRC-696d9e4c630a4acb",
-            "source_url": "https://www.siena.cx/blog/siena-raises-17m-series-a?trk=public_post_comment-text",
-            "source_title": "Siena Raises $17M Series A to Build the Agent of Record",
-            "source_content_hash": "c64971f2bb92f5c9",
-            "quote": "We raised a $17 million Series A led by York IE, with participation from Joyance Ventures and our existing investors Aglaé Ventures, Sierra Ventures and Super Angel Fund.",
-            "quote_hash": "995565239db022c5352905c5170e3f9538e62163defc19bd9117020cd6176ae4"
-          }
-        ]
-      },
-      {
         "activity_id": "IA-5352b93e5b4c0a2b",
         "funding_insight_id": "FI-3725c4206c7f92bb",
         "event_ids": [
@@ -188,6 +140,54 @@
             "source_content_hash": "a8e31a281ead3b8a58a3c495224605ef31c2be6cc95ef659f7e7f35424659583",
             "quote": "Thrixel has raised $3 million in inception funding from Sierra Ventures, MFV Partners, Harper Court Ventures, and Z5 Capital",
             "quote_hash": "15b8a68d46844e0cfe5d6bbedcd4b1e9bf7ef0b3ba3d3246a7e78ab212df4872"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c6ecf19a0fe20fe1",
+        "funding_insight_id": "FI-f2872ccaa2704254",
+        "event_ids": [
+          "EV-6ade8a1ffb49d6c3"
+        ],
+        "company_entity_id": "EN-d01ba29d08682f7d",
+        "company_canonical_entity_id": "",
+        "company_name": "Siena",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$17 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1700 万美元"
+        },
+        "announced_at": "2026-10-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1dd0c1ce61a7b23b",
+            "source_url": "https://aipressroom.com/siena-17m-ai-agents/",
+            "source_title": "Siena 融资 1700 万美元，扩展 AI 客户智能体",
+            "source_content_hash": "67100daf1c831eb702331c31a7123fb2bd96a926d14c6ae0e4c79a9934cb78d0",
+            "quote": "raised $17 million in a Series A round led by York IE, with participation from Joyance Ventures and existing investors Aglaé Ventures and Sierra Ventures",
+            "quote_hash": "952ca6e685b0c261c9632ca3bea507816f7f2608e6fa68985a6896993ad09560"
+          },
+          {
+            "source_id": "FISRC-696d9e4c630a4acb",
+            "source_url": "https://www.siena.cx/blog/siena-raises-17m-series-a?trk=public_post_comment-text",
+            "source_title": "Siena Raises $17M Series A to Build the Agent of Record",
+            "source_content_hash": "c64971f2bb92f5c9",
+            "quote": "We raised a $17 million Series A led by York IE, with participation from Joyance Ventures and our existing investors Aglaé Ventures, Sierra Ventures and Super Angel Fund.",
+            "quote_hash": "995565239db022c5352905c5170e3f9538e62163defc19bd9117020cd6176ae4"
           }
         ]
       },
@@ -306,6 +306,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-30a8ac08b698fca8",
+        "source_url": "https://natlawreview.com/press-releases/uchicago-ai-researcher-rana-hanocka-launches-thrixel-3d-generation-platform",
+        "source_title": "芝加哥大学 AI 研究员 Rana Hanocka 推出 Thrixel，一个为 AI 智能体打造的 3D 生成平台",
+        "source_content_hash": "a8e31a281ead3b8a58a3c495224605ef31c2be6cc95ef659f7e7f35424659583",
+        "quote": "Thrixel has raised $3 million in inception funding from Sierra Ventures, MFV Partners, Harper Court Ventures, and Z5 Capital",
+        "quote_hash": "15b8a68d46844e0cfe5d6bbedcd4b1e9bf7ef0b3ba3d3246a7e78ab212df4872"
+      },
+      {
         "source_id": "FISRC-1dd0c1ce61a7b23b",
         "source_url": "https://aipressroom.com/siena-17m-ai-agents/",
         "source_title": "Siena 融资 1700 万美元，扩展 AI 客户智能体",
@@ -320,14 +328,6 @@
         "source_content_hash": "c64971f2bb92f5c9",
         "quote": "We raised a $17 million Series A led by York IE, with participation from Joyance Ventures and our existing investors Aglaé Ventures, Sierra Ventures and Super Angel Fund.",
         "quote_hash": "995565239db022c5352905c5170e3f9538e62163defc19bd9117020cd6176ae4"
-      },
-      {
-        "source_id": "FISRC-30a8ac08b698fca8",
-        "source_url": "https://natlawreview.com/press-releases/uchicago-ai-researcher-rana-hanocka-launches-thrixel-3d-generation-platform",
-        "source_title": "芝加哥大学 AI 研究员 Rana Hanocka 推出 Thrixel，一个为 AI 智能体打造的 3D 生成平台",
-        "source_content_hash": "a8e31a281ead3b8a58a3c495224605ef31c2be6cc95ef659f7e7f35424659583",
-        "quote": "Thrixel has raised $3 million in inception funding from Sierra Ventures, MFV Partners, Harper Court Ventures, and Z5 Capital",
-        "quote_hash": "15b8a68d46844e0cfe5d6bbedcd4b1e9bf7ef0b3ba3d3246a7e78ab212df4872"
       },
       {
         "source_id": "FISRC-1284a14893cb26a9",
@@ -408,12 +408,12 @@
           "source_id": "sierra_press"
         },
         {
-          "description": "融资来源记录：Siena · A轮 · 2026-10-08 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1dd0c1ce61a7b23b"
-        },
-        {
           "description": "融资来源记录：Thrixel · 其他融资 · 2026-10-08 · 本轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-30a8ac08b698fca8"
+        },
+        {
+          "description": "融资来源记录：Siena · A轮 · 2026-10-06 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1dd0c1ce61a7b23b"
         }
       ],
       "contacts": [
@@ -471,6 +471,14 @@
           "quote_hash": "b56f09f3c9123b8087efc04e6d1217060b4bb85f327165d7714c6b9a2dc7d3fd"
         },
         {
+          "source_id": "FISRC-30a8ac08b698fca8",
+          "source_url": "https://natlawreview.com/press-releases/uchicago-ai-researcher-rana-hanocka-launches-thrixel-3d-generation-platform",
+          "source_title": "芝加哥大学 AI 研究员 Rana Hanocka 推出 Thrixel，一个为 AI 智能体打造的 3D 生成平台",
+          "source_content_hash": "a8e31a281ead3b8a58a3c495224605ef31c2be6cc95ef659f7e7f35424659583",
+          "quote": "Thrixel has raised $3 million in inception funding from Sierra Ventures, MFV Partners, Harper Court Ventures, and Z5 Capital",
+          "quote_hash": "15b8a68d46844e0cfe5d6bbedcd4b1e9bf7ef0b3ba3d3246a7e78ab212df4872"
+        },
+        {
           "source_id": "FISRC-1dd0c1ce61a7b23b",
           "source_url": "https://aipressroom.com/siena-17m-ai-agents/",
           "source_title": "Siena 融资 1700 万美元，扩展 AI 客户智能体",
@@ -485,14 +493,6 @@
           "source_content_hash": "c64971f2bb92f5c9",
           "quote": "We raised a $17 million Series A led by York IE, with participation from Joyance Ventures and our existing investors Aglaé Ventures, Sierra Ventures and Super Angel Fund.",
           "quote_hash": "995565239db022c5352905c5170e3f9538e62163defc19bd9117020cd6176ae4"
-        },
-        {
-          "source_id": "FISRC-30a8ac08b698fca8",
-          "source_url": "https://natlawreview.com/press-releases/uchicago-ai-researcher-rana-hanocka-launches-thrixel-3d-generation-platform",
-          "source_title": "芝加哥大学 AI 研究员 Rana Hanocka 推出 Thrixel，一个为 AI 智能体打造的 3D 生成平台",
-          "source_content_hash": "a8e31a281ead3b8a58a3c495224605ef31c2be6cc95ef659f7e7f35424659583",
-          "quote": "Thrixel has raised $3 million in inception funding from Sierra Ventures, MFV Partners, Harper Court Ventures, and Z5 Capital",
-          "quote_hash": "15b8a68d46844e0cfe5d6bbedcd4b1e9bf7ef0b3ba3d3246a7e78ab212df4872"
         }
       ],
       "last_verified_at": "2026-09-26",

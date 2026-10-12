@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2023-12-06",
     "latest_disclosed_at": "2023-12-06",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "37d7e70576527ae9391a25dc2a00a0a9fc519a860c59e8cde41a55cccc7a1526"
           }
         ]
+      },
+      {
+        "activity_id": "IA-24e57e1e844c0267",
+        "funding_insight_id": "FI-4328c217f1203f6f",
+        "event_ids": [
+          "EV-e5d1e49e37f2e291"
+        ],
+        "company_entity_id": "EN-3eee4f30151db45a",
+        "company_canonical_entity_id": "EN-3eee4f30151db45a",
+        "company_name": "Nous Research",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b72ee092e2938985",
+            "source_url": "https://dealroom.co/companies/nous-research/",
+            "source_title": "Nous Research — Unicorn company profile | Dealroom",
+            "source_content_hash": "33d86cd105ac7abd",
+            "quote": "North Island Ventures · Delphi Ventures · Distributed Global · OSS Capital",
+            "quote_hash": "412a9941fba3cd17360cce4723cb9a085b691d48a9ac7ff14603fbb68933d4f6"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "af7dbaee048f0409",
         "quote": "led by Boston Celtics co-owner Stephen Pagliuca and San Francisco venture capital firm OSS Capital",
         "quote_hash": "37d7e70576527ae9391a25dc2a00a0a9fc519a860c59e8cde41a55cccc7a1526"
+      },
+      {
+        "source_id": "FISRC-b72ee092e2938985",
+        "source_url": "https://dealroom.co/companies/nous-research/",
+        "source_title": "Nous Research — Unicorn company profile | Dealroom",
+        "source_content_hash": "33d86cd105ac7abd",
+        "quote": "North Island Ventures · Delphi Ventures · Distributed Global · OSS Capital",
+        "quote_hash": "412a9941fba3cd17360cce4723cb9a085b691d48a9ac7ff14603fbb68933d4f6"
       }
     ],
     "public_profile": {
@@ -161,6 +202,10 @@
         {
           "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 本轮领投 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4e5f377f1837e2e5"
+        },
+        {
+          "description": "融资来源记录：Nous Research · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b72ee092e2938985"
         }
       ],
       "contacts": [
@@ -188,6 +233,14 @@
           "source_content_hash": "af7dbaee048f0409",
           "quote": "led by Boston Celtics co-owner Stephen Pagliuca and San Francisco venture capital firm OSS Capital",
           "quote_hash": "37d7e70576527ae9391a25dc2a00a0a9fc519a860c59e8cde41a55cccc7a1526"
+        },
+        {
+          "source_id": "FISRC-b72ee092e2938985",
+          "source_url": "https://dealroom.co/companies/nous-research/",
+          "source_title": "Nous Research — Unicorn company profile | Dealroom",
+          "source_content_hash": "33d86cd105ac7abd",
+          "quote": "North Island Ventures · Delphi Ventures · Distributed Global · OSS Capital",
+          "quote_hash": "412a9941fba3cd17360cce4723cb9a085b691d48a9ac7ff14603fbb68933d4f6"
         }
       ],
       "last_verified_at": "2026-10-02"

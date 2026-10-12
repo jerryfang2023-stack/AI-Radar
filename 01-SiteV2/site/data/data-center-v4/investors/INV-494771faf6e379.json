@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,21 +63,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-03",
-    "latest_disclosed_at": "2026-03-11",
+    "latest_disclosed_at": "2026-10-07",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
+      "series_b",
       "series_d",
       "series_e",
       "series_h"
@@ -94,12 +95,57 @@
         "name": "Cerebras Systems"
       },
       {
+        "entity_id": "EN-3eee4f30151db45a",
+        "canonical_entity_id": "EN-3eee4f30151db45a",
+        "name": "Nous Research"
+      },
+      {
         "entity_id": "EN-53b69ef92c836777",
         "canonical_entity_id": "",
         "name": "Replit"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8ec5ad1b6946c8a9",
+        "funding_insight_id": "FI-4328c217f1203f6f",
+        "event_ids": [
+          "EV-e5d1e49e37f2e291"
+        ],
+        "company_entity_id": "EN-3eee4f30151db45a",
+        "company_canonical_entity_id": "EN-3eee4f30151db45a",
+        "company_name": "Nous Research",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$90 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 90000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9000 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-295e99df6a40bc79",
+            "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+            "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+            "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+            "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+            "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e839994ba7a13b8c",
         "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
@@ -288,6 +334,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-295e99df6a40bc79",
+        "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+        "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+        "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+        "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+        "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+      },
+      {
         "source_id": "FISRC-00ed3d8fd701898b",
         "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
         "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
@@ -352,16 +406,16 @@
       "experience_summary": "公开资料支持其成长型股权投资定位与团队构成；尚未将媒体所报基金规模或单笔交易描述补作机构业绩指标。",
       "track_record": [
         {
+          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-295e99df6a40bc79"
+        },
+        {
           "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投 · $400M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-00ed3d8fd701898b"
         },
         {
           "description": "融资来源记录：Ayar Labs · E轮 · 2026-03-03 · 本轮参投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5b6c7c4ae002a992"
-        },
-        {
-          "description": "融资来源记录：Cerebras Systems · H轮 · 2026-02-03 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-51b0427643bffd15"
         }
       ],
       "contacts": [
@@ -391,6 +445,14 @@
           "quote_hash": "ae8a1a7c9e71f71e026d0f5db8735d882903f90de8398ea8ddab56624bb6cbe2"
         },
         {
+          "source_id": "FISRC-295e99df6a40bc79",
+          "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+          "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+          "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+          "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+          "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+        },
+        {
           "source_id": "FISRC-00ed3d8fd701898b",
           "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
           "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
@@ -405,14 +467,6 @@
           "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
           "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
           "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
-        },
-        {
-          "source_id": "FISRC-51b0427643bffd15",
-          "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
-          "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
-          "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
-          "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
-          "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
         }
       ],
       "last_verified_at": "2026-09-26",

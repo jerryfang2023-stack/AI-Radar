@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,23 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-08-25",
+    "latest_disclosed_at": "2026-10-07",
     "role_counts": {
       "historical_or_ambiguous": 4,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
+      "series_b",
       "series_h",
       "undisclosed"
     ],
@@ -95,9 +96,54 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-3eee4f30151db45a",
+        "canonical_entity_id": "EN-3eee4f30151db45a",
+        "name": "Nous Research"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2c65b6b259189b18",
+        "funding_insight_id": "FI-4328c217f1203f6f",
+        "event_ids": [
+          "EV-e5d1e49e37f2e291"
+        ],
+        "company_entity_id": "EN-3eee4f30151db45a",
+        "company_canonical_entity_id": "EN-3eee4f30151db45a",
+        "company_name": "Nous Research",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$90 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 90000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9000 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-295e99df6a40bc79",
+            "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+            "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+            "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+            "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+            "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fab01965d7dcf951",
         "funding_insight_id": "FI-d80c637f106db95c",
@@ -350,6 +396,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-295e99df6a40bc79",
+        "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+        "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+        "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+        "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+        "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+      },
+      {
         "source_id": "FISRC-5b1ac109014789f1",
         "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
         "source_title": "Alice 融资1.4亿美元、估值7亿至8亿美元，押注AI需要新的安全层",
@@ -450,16 +504,16 @@
           "source_id": "samsung_next_fund"
         },
         {
+          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-295e99df6a40bc79"
+        },
+        {
           "description": "融资来源记录：Alice · 轮次未披露 · 2026-08-25 · 本轮参投 · $140 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5b1ac109014789f1"
         },
         {
           "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b5e22ae086a6b353"
-        },
-        {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6c35525e379488bf"
         }
       ],
       "contacts": [
@@ -503,6 +557,14 @@
           "quote_hash": "363140c23f9ab1c80666d7d454d8b918e53e223cfdceda53efad231608efb4d2"
         },
         {
+          "source_id": "FISRC-295e99df6a40bc79",
+          "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+          "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+          "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+          "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+          "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+        },
+        {
           "source_id": "FISRC-5b1ac109014789f1",
           "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
           "source_title": "Alice 融资1.4亿美元、估值7亿至8亿美元，押注AI需要新的安全层",
@@ -517,14 +579,6 @@
           "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
           "quote": "Joining them are strategic infrastructure partners—Micron, Samsung, and SK hynix—whose technologies play a critical role in the world's supply of memory, storage, and logic chips.",
           "quote_hash": "d234fc755255a6c0cf9808e2602c1842e9441b13f179294561bed037bdb0bc15"
-        },
-        {
-          "source_id": "FISRC-6c35525e379488bf",
-          "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
-          "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
-          "source_content_hash": "adc0cc9ffe3c9dd0",
-          "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
-          "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
         }
       ],
       "last_verified_at": "2026-09-26",

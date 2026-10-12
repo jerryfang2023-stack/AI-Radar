@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,7 +63,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-9ddcfd9f61c25158"
+      "EV-9ddcfd9f61c25158",
+      "EV-3c8c01c48903ce41"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -71,11 +72,12 @@
       "TX-use_case-security_operations"
     ],
     "relatedEntityIds": [],
-    "firstSeen": "2026-06-27",
-    "lastSeen": "2026-06-27",
+    "firstSeen": "2026-06-08",
+    "lastSeen": "2026-10-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-3c8c01c48903ce41",
         "EV-9ddcfd9f61c25158"
       ],
       "deployments": [],
@@ -86,6 +88,33 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-3c8c01c48903ce41",
+        "dataDate": "2026-10-12",
+        "date": "2026-06-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "初创公司Geordie AI获3000万美元，用于保障企业AI智能体安全",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-871e6f4bf723cb1b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-871e6f4bf723cb1b"
+        ]
+      },
       {
         "id": "EV-9ddcfd9f61c25158",
         "dataDate": "2026-06-27",
@@ -278,6 +307,7 @@
         "EV-dd78b63f18dba410",
         "EV-f1a605a25af30dc5",
         "EV-4c247b02485de09b",
+        "EV-3c8c01c48903ce41",
         "EV-7e1624d7df300713",
         "EV-86489eda802ffc19",
         "EV-e0e966c028ca9a74",
@@ -1284,6 +1314,7 @@
       "valueId": "security_operations",
       "eventIds": [
         "EV-215ea259173fa6b4",
+        "EV-303422b99649f7c1",
         "EV-52e472f000148362",
         "EV-af1a6d0b5da2d0e5",
         "EV-1c7050585c7f4791",
@@ -1410,6 +1441,7 @@
       ],
       "entityIds": [
         "EN-a60baf19b426b83a",
+        "EN-27b79c20fe655299",
         "EN-e66d5fd225ed6b0a",
         "EN-9827179e4ca265c3",
         "EN-f8223ea5a9c41813",

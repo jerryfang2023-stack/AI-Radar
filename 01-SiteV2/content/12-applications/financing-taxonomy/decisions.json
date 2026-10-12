@@ -30764,7 +30764,443 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-12T15:14:52.415Z"
+    },
+    "EV-7c00fd2e32bfc4b7": {
+      "id": "EV-7c00fd2e32bfc4b7",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "与同轮9月16日报道为同一Jev模型；原文明确面向自动化、软件可组合的System One模型，统一为专用模型。",
+      "input_hash": "a7848d8f5237d696436595d97a13ae72d6a197731ca21127950895fbc0abc0d9",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1384792628b6addd",
+          "quote": "a new San Francisco-based company stacked with veterans of the world’s top AI research labs that is building a class of models actually optimized for automation"
+        },
+        {
+          "source_id": "FISRC-1384792628b6addd",
+          "quote": "Jev, TypeSafe’s first model, delivers frontier-level intel­li­gence at less than 100 millisec­onds of latency and is often 100 times faster and less expensive than other frontier models. Currently available in early access, Jev can process hundreds of outputs in parallel from a single prompt and provides calibrated confidence scores, allowing developers to create new types of AI-powered software that can automate econom­i­cally valuable work."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "responsible_financing_reviewer",
+      "generated_at": "2026-10-12T18:06:32.357Z",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-12T18:59:56.449Z"
+    },
+    "EV-bd0c10245db77e9f": {
+      "id": "EV-bd0c10245db77e9f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Chiplytics 以机器视觉与 AI 为半导体供应链提供电子元件质量检测与验证平台，属工业制造行业 AI 软件。",
+      "input_hash": "927608a6ad39fc6a89213f3d442e65d681eeb3ad1bed7398e4f1dcd0ecb445b6",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a902e8d38c910e4a",
+          "quote": "Chiplytics, a pioneer in microelectronics verification technology, today announced a $4.5 million funding round"
+        },
+        {
+          "source_id": "FISRC-a902e8d38c910e4a",
+          "quote": "Verified by Chiplytics™, the company’s quality assurance platform, addresses these risks with inspection of every component, transparent pricing, and traceable test results."
+        },
+        {
+          "source_id": "FISRC-43f612a9c67a1826",
+          "quote": "Chiplytics is your dedicated quality assurance team powering the distribution of secure, authentic electronic components."
+        },
+        {
+          "source_id": "FISRC-a902e8d38c910e4a",
+          "quote": "The company is the first to commercialize a scalable electrical testing method for authenticating microelectronics, combined with machine vision, AI, and supplemental inspection techniques for full coverage and traceability. Chiplytics is trusted by leading defense and high-reliability manufacturers to protect the integrity of the semiconductor supply chain. For more information, visit chiplytics.com†cts.businesswire.com ."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T18:15:45.863Z"
+    },
+    "EV-d3ecfba50801f33e": {
+      "id": "EV-d3ecfba50801f33e",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "education",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "ByteXL 面向高校提供含 AI 教练的学习平台，属教育行业 AI。",
+      "input_hash": "38f6a5cacb3f0d01be2c5790ce1977fd5bdfa3cc866be8db7760591e4d657b0d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c3b355654a6defd1",
+          "quote": "byteXL works with engineering colleges to bring industry-relevant technology and AI learning into the college experience"
+        },
+        {
+          "source_id": "FISRC-746416531f7138b5",
+          "quote": "Its proprietary platform brings together learning content, coding environments, projects, assessments, student analytics and progress tracking"
+        },
+        {
+          "source_id": "FISRC-2ef9a11d4971e966",
+          "quote": "accelerate the development of AI-enabled learning tools such as its AI coach and mentor features"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T18:06:32.357Z"
+    },
+    "EV-e5d1e49e37f2e291": {
+      "id": "EV-e5d1e49e37f2e291",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Nous Research 开发开源 Hermes Agent 智能体框架并向企业提供定制智能体部署。",
+      "input_hash": "e672a35ab2f5ea94c948e824b1f2f84fbe4eddcb5c70b5cbe1b043d2dbbf9906",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0304daca2f1d8fb2",
+          "quote": "Nous Research is a pioneer in open AI training and research. We created Hermes Agent, the most widely used open source agent harness in the world."
+        },
+        {
+          "source_id": "FISRC-718f95dbe2208337",
+          "quote": "We built Hermes Agent to learn: the more you use it, the better it gets. Users choose where Hermes Agent runs and which models it uses. It remembers projects, writes reusable skills as it works, and carries that knowledge across sessions."
+        },
+        {
+          "source_id": "FISRC-295e99df6a40bc79",
+          "quote": "The capital will fund Nous Research’s push into the enterprise sector with “Hermes for Businesses,” allowing companies to deploy customized AI agents that can handle multi-step workflows while keeping their data private and secure."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T18:06:32.357Z"
+    },
+    "EV-9d937c4f5d7f1361": {
+      "id": "EV-9d937c4f5d7f1361",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "home-devices",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        3
+      ],
+      "rationale": "Lumio 主营智能电视、投影仪与音箱等消费终端，并内置 AI 内容发现层。",
+      "input_hash": "51e97a3c6ac1bd7c02418b7b5829bf7856b0ba09cc6394eefe68764a85f9b2a1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d4fa6b7ab4e1aa59",
+          "quote": "Lumio, the consumer electronics brand behind Vision Smart TVs, Arc projectors and Aura speakers, has raised $12 million (about Rs 115 crore)."
+        },
+        {
+          "source_id": "FISRC-d4fa6b7ab4e1aa59",
+          "quote": "On TVs and projectors, that means TLDR and Project Neo, its AI content discovery layer, now in public beta in nine Indian languages and backed by multiple patent filings."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T18:06:32.357Z"
+    },
+    "EV-e8bc8dc295e87e3b": {
+      "id": "EV-e8bc8dc295e87e3b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "GMI Cloud 提供 GPU 云基础设施与推理服务，属 AI 算力云赛道。",
+      "input_hash": "f8307de903c82b05bc78943de258bb6bda0d25bee4a31bd7bf9d4856b4eb2595",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cf3eb2b83c7e750b",
+          "quote": "GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services"
+        },
+        {
+          "source_id": "FISRC-1e710bbd104406d6",
+          "quote": "It delivers infrastructure for training, deploying, and running artificial intelligence models. The company offers an inference engine, GPU orchestration, and GPU compute services."
+        },
+        {
+          "source_id": "FISRC-f1809d7dd0e9d307",
+          "quote": "Cluster Engine, our proprietary cloud management platform, further simplifies resource orchestration, ensuring that companies can scale their operations dynamically and efficiently."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T18:06:32.357Z"
+    },
+    "EV-c9bcebb8c22c1966": {
+      "id": "EV-c9bcebb8c22c1966",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "public-services",
+      "product_form_id": "ai-service",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "rationale": "公司主营红外遥感数据服务与星上AI计算载荷，属遥感信息服务行业AI。",
+      "input_hash": "d505d64e313899efb18346675c6d7ee7c06935a0773a49d9d0ac60ab7849de19",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a65130cff09fce99",
+          "quote": "商业红外遥感企业星火传明技术有限公司（以下简称“星火传明”）完成A轮融资。"
+        },
+        {
+          "source_id": "FISRC-1c2d8c788fd71f81",
+          "quote": "星火传明成立于2023年9月，业务覆盖高分辨率红外制冷载荷、星上AI计算载荷、整星研制、星座运营和遥感信息服务。"
+        },
+        {
+          "source_id": "FISRC-a65130cff09fce99",
+          "quote": "目前，星火传明已向客户提供红外影像、视频等遥感数据。"
+        },
+        {
+          "source_id": "FISRC-9d10b927af11451d",
+          "quote": "红外视频生成后，星上算法可以先进行筛选和初步识别，对变化不明显的信息进行压缩，同时重点保留运动目标、异常热源等客户关注的数据"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T18:06:32.547Z"
+    },
+    "EV-303422b99649f7c1": {
+      "id": "EV-303422b99649f7c1",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Netsec提供AI原生网络安全与IT管理解决方案，属企业网络安全。",
+      "input_hash": "1e54e8369310a292180f1a7a95ead96633ca3c65a67876efbbfce12074a604a4",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9c674d28ca898b66",
+          "quote": "Netsec, a Paris-based provider of AI-native cybersecurity and IT management solutions"
+        },
+        {
+          "source_id": "FISRC-193d32011c8f49a3",
+          "quote": "The model pairs a unified technology stack with a team that owns the outcome end to end, with AI-powered automation handling the repetitive work so human operators focus on judgment and response."
+        },
+        {
+          "source_id": "FISRC-193d32011c8f49a3",
+          "quote": "It is delivered through the tools teams already use, Slack and Teams, and priced per employee rather than per ticket."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T18:06:32.547Z"
+    },
+    "EV-72a280ef52550173": {
+      "id": "EV-72a280ef52550173",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "Innercrowd为音乐节提供AI代理售票与大使管理平台，属零售票务供应链行业软件。",
+      "input_hash": "d43808b1b77a93347e073277a2ad128a14a6f15547875931a2890610736f35fe",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e39b9cadf530531e",
+          "quote": "Innercrowd†innercrowd.io has raised €750,000 in funding to accelerate its international expansion as festivals across Europe look for new ways to drive ticket sales."
+        },
+        {
+          "source_id": "FISRC-e39b9cadf530531e",
+          "quote": "Fans who sign up for a presale or early bird sale gain access to a WhatsApp shop where they can buy tickets directly within the messaging app. AI agents handle one-to-one conversations with fans at scale, answering questions and helping guide them towards a purchase without requiring a marketer to be online."
+        },
+        {
+          "source_id": "FISRC-506c792e0ee6149e",
+          "quote": "Ambassador Management Platform (\"The Platform\"): A software tool provided by Innercrowd that enables Clients to sell tickets through their Ambassadors, manage promotional activities, and monitor ticket sales."
+        },
+        {
+          "source_id": "FISRC-506c792e0ee6149e",
+          "quote": "Innercrowd provides the Platform as a subscription-based software service."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T18:06:32.547Z"
+    },
+    "EV-3c8c01c48903ce41": {
+      "id": "EV-3c8c01c48903ce41",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "主营AI智能体安全治理，实际交付给企业安全团队的实时监控与策略执行平台；产品形态用企业软件，不因安全技术框架字样推定为开发者工具。",
+      "input_hash": "aa8a32f0343c6b3913084737b6de63f48273a7e4173c5d24b14a3f7041c955a8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0c52ccc548d44488",
+          "quote": "Geordie AI is developing a security framework designed specifically around AI agent behavior and governance."
+        },
+        {
+          "source_id": "FISRC-090026c711c9d719",
+          "quote": "Geordie gives enterprises a real-time understanding of which agents exist, what they can access, how they behave, and the risks they create across enterprise systems."
+        },
+        {
+          "source_id": "FISRC-090026c711c9d719",
+          "quote": "Combined with Beam, our runtime remediation suite that leverages context engineering, Geordie enables organizations to proactively shape and constrain agent behavior without slowing innovation."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "responsible_financing_reviewer",
+      "generated_at": "2026-10-12T18:06:32.547Z",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-12T18:59:56.449Z"
+    },
+    "EV-ad688f97d7f4fa55": {
+      "id": "EV-ad688f97d7f4fa55",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "OpenEvidence为临床医生提供引用医学文献的AI医疗搜索引擎，属医疗服务。",
+      "input_hash": "d99313526112c1cc7336b4d6ce3313dc16aab5bbe4e62fccec5d87c194daafc3",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-439c5c28066fa1c0",
+          "quote": "OpenEvidence是美国医生使用最广泛的人工智能平台"
+        },
+        {
+          "source_id": "FISRC-439c5c28066fa1c0",
+          "quote": "OpenEvidence是一个专门的人工智能医疗搜索引擎，通过提供实时、引用链接的答案，为临床医生提供“大脑扩展器”，这些答案完全来自世界上最值得信赖、同行评审的医学文献。"
+        },
+        {
+          "source_id": "FISRC-439c5c28066fa1c0",
+          "quote": "这笔新资金将用于大力投资与OpenEvidence的多AI代理架构相关的研发和计算成本，该架构提供了世界上任何系统中最高质量和最准确的医疗答案。"
+        },
+        {
+          "source_id": "FISRC-0362e58cb1709285",
+          "quote": "OpenEvidence also announces the wide release of OpenEvidence DeepConsult™—the first AI agent purpose-built for physicians"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-12T18:06:32.547Z"
+    },
+    "EV-35c16315e0a2e5a8": {
+      "id": "EV-35c16315e0a2e5a8",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Jev用于软件中的结构化问题、类型化答案和概率/评分，不是通用聊天产品；研发并提供专用模型，客户开发者另作辅助标记。",
+      "input_hash": "2ba868b388feb98338161a1cd7ea40179b3037ed9c55b1369638ef2ae15f8ca1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3377f75fa1c29d37",
+          "quote": "TypeSafe AI Inc., a startup founded by a former OpenAI Group PBC researcher who helped develop ChatGPT, emerged yesterday with $40 million in seed funding and a model designed to put artificial intelligence directly inside software applications."
+        },
+        {
+          "source_id": "FISRC-3377f75fa1c29d37",
+          "quote": "Jev instead accepts structured questions and returns typed answers that other software can process. Those answers can take the form of yes/no probabilities, selections from a defined list or scores on a specified scale."
+        },
+        {
+          "source_id": "FISRC-3377f75fa1c29d37",
+          "quote": "The company says Jev uses parallel processing to deliver results in less than 100 milliseconds, making it up to 100 times faster and less expensive than other frontier models."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "responsible_financing_reviewer",
+      "generated_at": "2026-10-12T18:06:32.547Z",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-12T18:59:56.447Z"
     }
   },
-  "generated_at": "2026-10-12T15:14:52.418Z"
+  "generated_at": "2026-10-12T18:15:45.865Z"
 }

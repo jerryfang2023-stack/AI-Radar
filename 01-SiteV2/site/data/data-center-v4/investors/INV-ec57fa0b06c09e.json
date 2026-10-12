@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
@@ -70,9 +70,9 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-13",
-    "latest_disclosed_at": "2026-07-13",
+    "latest_disclosed_at": "2026-10-07",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
       "series_b"
@@ -85,6 +85,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-61922b252635daea",
+        "funding_insight_id": "FI-4328c217f1203f6f",
+        "event_ids": [
+          "EV-e5d1e49e37f2e291"
+        ],
+        "company_entity_id": "EN-3eee4f30151db45a",
+        "company_canonical_entity_id": "EN-3eee4f30151db45a",
+        "company_name": "Nous Research",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$90 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 90000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9000 万美元"
+        },
+        "announced_at": "2026-10-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-295e99df6a40bc79",
+            "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+            "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+            "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+            "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+            "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+          }
+        ]
+      },
       {
         "activity_id": "IA-108473ef9042167c",
         "funding_insight_id": "FI-606789526a3f4ec7",
@@ -136,6 +176,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-295e99df6a40bc79",
+        "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+        "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+        "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+        "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+        "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+      },
+      {
         "source_id": "FISRC-74000160f5a289fa",
         "source_url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation",
         "source_title": "Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资",
@@ -157,10 +205,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Robot Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Robot Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮领投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-295e99df6a40bc79"
+        },
         {
           "description": "融资来源记录：Nous Research · B轮 · 2026-07-13 · 本轮领投；既有投资方 · 至少 7500 万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-74000160f5a289fa"
@@ -168,6 +220,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-295e99df6a40bc79",
+          "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+          "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+          "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+          "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+          "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+        },
         {
           "source_id": "FISRC-74000160f5a289fa",
           "source_url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation",

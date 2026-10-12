@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-e5d1e49e37f2e291",
       "EV-7a85e21802efd8b2",
       "EV-f784003febc1d9eb",
       "EV-8eed6489ab514823"
@@ -84,10 +85,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-11",
-    "lastSeen": "2026-07-14",
+    "lastSeen": "2026-10-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-e5d1e49e37f2e291",
         "EV-7a85e21802efd8b2"
       ],
       "deployments": [],
@@ -102,14 +104,29 @@
     },
     "timeline": [
       {
+        "id": "EV-e5d1e49e37f2e291",
+        "dataDate": "2026-10-12",
+        "date": "2026-10-07",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3eee4f30151db45a"
+        ]
+      },
+      {
         "id": "EV-7a85e21802efd8b2",
         "dataDate": "2026-07-14",
         "date": "2026-07-13",
         "eventType": "funding",
         "eventTypeLabel": "融资",
         "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
+        "status": "in_progress",
+        "statusLabel": "进行中",
         "title": "Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资",
         "displayTags": [
           {
@@ -470,6 +487,7 @@
         "EV-dd78b63f18dba410",
         "EV-f1a605a25af30dc5",
         "EV-4c247b02485de09b",
+        "EV-3c8c01c48903ce41",
         "EV-7e1624d7df300713",
         "EV-86489eda802ffc19",
         "EV-e0e966c028ca9a74",

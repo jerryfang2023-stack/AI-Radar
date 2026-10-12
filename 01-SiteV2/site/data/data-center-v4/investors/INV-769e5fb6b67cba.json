@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,12 +74,17 @@
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-28775a3d932436cf",
+        "canonical_entity_id": "",
+        "name": "Lumio"
+      },
       {
         "entity_id": "EN-65e9e514ecf0d270",
         "canonical_entity_id": "",
@@ -92,6 +97,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ab3c2357f02540e6",
+        "funding_insight_id": "FI-e3c49006517a7a36",
+        "event_ids": [
+          "EV-9d937c4f5d7f1361"
+        ],
+        "company_entity_id": "EN-28775a3d932436cf",
+        "company_canonical_entity_id": "",
+        "company_name": "Lumio",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$12 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d4fa6b7ab4e1aa59",
+            "source_url": "https://timesofindia.indiatimes.com/technology/appliances/lumio-raises-12-million-led-by-blume-ventures-to-expand-its-smart-tv-projector-and-speaker-business/amp_articleshow/134798715.cms",
+            "source_title": "Lumio 获 Blume Ventures 领投 1200 万美元，用于扩展其智能电视、投影仪和音箱业务",
+            "source_content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+            "quote": "The round includes a Series A led by Blume Ventures, with existing investors Stellaris Venture Partners and 3one4 Capital also participating.",
+            "quote_hash": "f5abf78e74a6e4e6e9e718e34f8112a3b7206afda5775d99725c602482c25b31"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2d8ef56fb34b0867",
         "funding_insight_id": "FI-1c8ea9f2981fceee",
@@ -207,6 +252,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-d4fa6b7ab4e1aa59",
+        "source_url": "https://timesofindia.indiatimes.com/technology/appliances/lumio-raises-12-million-led-by-blume-ventures-to-expand-its-smart-tv-projector-and-speaker-business/amp_articleshow/134798715.cms",
+        "source_title": "Lumio 获 Blume Ventures 领投 1200 万美元，用于扩展其智能电视、投影仪和音箱业务",
+        "source_content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+        "quote": "The round includes a Series A led by Blume Ventures, with existing investors Stellaris Venture Partners and 3one4 Capital also participating.",
+        "quote_hash": "f5abf78e74a6e4e6e9e718e34f8112a3b7206afda5775d99725c602482c25b31"
+      },
+      {
         "source_id": "FISRC-7386ce9d5540e0e9",
         "source_url": "https://www.digitalhealthnews.com/medtech-startup-sunfox-technologies-raises-7-mn-in-series-a-round-to-expand-its-footprint",
         "source_title": "医疗科技初创公司Sunfox Technologies在A轮融资中筹集700万美元，以扩大其业务版图",
@@ -288,16 +341,16 @@
           "source_id": "3one4_home"
         },
         {
+          "description": "融资来源记录：Lumio · A轮 · 2026-10-08 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d4fa6b7ab4e1aa59"
+        },
+        {
           "description": "融资来源记录：Sunfox Technologies · A轮 · 2026-10-08 · 本轮领投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7386ce9d5540e0e9"
         },
         {
           "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1284a14893cb26a9"
-        },
-        {
-          "description": "融资来源记录：Smallest.ai · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-30eaf94a55c202d8"
         }
       ],
       "contacts": [
@@ -348,6 +401,14 @@
           "quote_hash": "a0469d1ab14e3aa8296e61c5b5daefba93c0163507d75025cd97f082b8892176"
         },
         {
+          "source_id": "FISRC-d4fa6b7ab4e1aa59",
+          "source_url": "https://timesofindia.indiatimes.com/technology/appliances/lumio-raises-12-million-led-by-blume-ventures-to-expand-its-smart-tv-projector-and-speaker-business/amp_articleshow/134798715.cms",
+          "source_title": "Lumio 获 Blume Ventures 领投 1200 万美元，用于扩展其智能电视、投影仪和音箱业务",
+          "source_content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+          "quote": "The round includes a Series A led by Blume Ventures, with existing investors Stellaris Venture Partners and 3one4 Capital also participating.",
+          "quote_hash": "f5abf78e74a6e4e6e9e718e34f8112a3b7206afda5775d99725c602482c25b31"
+        },
+        {
           "source_id": "FISRC-7386ce9d5540e0e9",
           "source_url": "https://www.digitalhealthnews.com/medtech-startup-sunfox-technologies-raises-7-mn-in-series-a-round-to-expand-its-footprint",
           "source_title": "医疗科技初创公司Sunfox Technologies在A轮融资中筹集700万美元，以扩大其业务版图",
@@ -362,14 +423,6 @@
           "source_content_hash": "6b55dc3b9b331355",
           "quote": "with participation from Sierra Ventures and 3one4 Capital",
           "quote_hash": "f7f475c0198484fc0d7ece56d46694f108005522689038285c178d41d041c7e7"
-        },
-        {
-          "source_id": "FISRC-30eaf94a55c202d8",
-          "source_url": "https://www.youtube.com/watch?v=rDCdmFfxvVk&vl=en-US",
-          "source_title": "Smallest.AI Announces $8 million Fund Raise in Seed Funding ...",
-          "source_content_hash": "d024bfd1efaf6d3e",
-          "quote": "with 3one4 Capital and Better Capital participating",
-          "quote_hash": "5d5aad7fcded66830bdae4cc4f0a666f9603e5e98df892d7aa2435e00d256abe"
         }
       ],
       "last_verified_at": "2026-09-26",

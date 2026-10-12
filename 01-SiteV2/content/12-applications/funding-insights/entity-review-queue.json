@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 2333,
-    "product_candidates": 1327,
-    "person_candidates": 1006,
-    "china_market_candidates": 614,
-    "china_market_product_candidates": 508,
-    "china_market_person_candidates": 106,
+    "candidate_count": 2366,
+    "product_candidates": 1344,
+    "person_candidates": 1022,
+    "china_market_candidates": 619,
+    "china_market_product_candidates": 511,
+    "china_market_person_candidates": 108,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -997,12 +997,14 @@
         "EN-6aa1fcea0024c6ce"
       ],
       "funding_insight_ids": [
+        "FI-7394580d6f01616e",
         "FI-8d89ca183da5cdf4",
         "FI-baa18f2ba0a70d4e"
       ],
       "source_event_ids": [
         "EV-72c91001092a54bd",
-        "EV-7f10b7d013a91292"
+        "EV-7f10b7d013a91292",
+        "EV-e8bc8dc295e87e3b"
       ],
       "evidence_refs": [
         {
@@ -1014,8 +1016,14 @@
         {
           "source_id": "FISRC-cf3eb2b83c7e750b",
           "quote": "said Alex Yeh, Founder and CEO of GMI Cloud",
-          "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+          "source_content_hash": "3afdd073c952b34b",
           "quote_hash": "f347fa6bcdfa45e0d081cbc0c3f1ba1c6ce13f8c2b9cf1ef2179346dc37b07ac"
+        },
+        {
+          "source_id": "FISRC-1e710bbd104406d6",
+          "quote": "The founders of GMI Cloud is Alex Yeh. Alex Yeh is the CEO of GMI Cloud.",
+          "source_content_hash": "f9568e559ea78391",
+          "quote_hash": "48561d4d9a07bb75ef4bd87554f13d491f65b4a95c118c71ff9441ea51fdd66d"
         }
       ],
       "market_regions": [
@@ -3757,6 +3765,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-f38dd64119debcd1",
+      "candidate_kind": "person",
+      "research_name": "Benjamin Havenaar",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4e2f14438106e433"
+      ],
+      "funding_insight_ids": [
+        "FI-9a6da05db7e9ae8c"
+      ],
+      "source_event_ids": [
+        "EV-72a280ef52550173"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e39b9cadf530531e",
+          "quote": "Founded in 2024 by Benjamin Havenaar†www.linkedin.com and Job Vink†www.linkedin.com",
+          "source_content_hash": "9366f04ca9de4b2fc545009d846f0403ee087c7498c26afbec98866342366759",
+          "quote_hash": "215ca7d954b3e1f975560b9014c02ac9ec92d2ace32de6779eea29bf941eff21"
+        },
+        {
+          "source_id": "FISRC-fa1f049de02cbdfd",
+          "quote": "Founded in 2024 by Benjamin Havenaar and Job Vink",
+          "source_content_hash": "bd61ecb2f982a8b4",
+          "quote_hash": "80954c983b6bfa5b016ff0364b17da850dc0d701501e884923539a5443dd6807"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-7f6bcf138915045b",
       "candidate_kind": "person",
       "research_name": "Benjamin Wulff",
@@ -3777,6 +3819,34 @@
           "quote": "Founded in Hamburg in 2021 by Patrick Thelen and Benjamin Wulff",
           "source_content_hash": "8954b640a521fc54",
           "quote_hash": "1cb4f2ad701a759c824cc307cc10b9e3197b78499f78930e43423bc43404ba57"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-828246f8668606bb",
+      "candidate_kind": "person",
+      "research_name": "Benji Weber",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-871e6f4bf723cb1b"
+      ],
+      "funding_insight_ids": [
+        "FI-da38789b376b1616"
+      ],
+      "source_event_ids": [
+        "EV-3c8c01c48903ce41"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3510df2876c66b96",
+          "quote": "Geordie AI was founded in 2025 by Henry Comfort, Hanah-Marie Darley, and Benji Weber.",
+          "source_content_hash": "da5a32a4a99f4227",
+          "quote_hash": "9bf5801cf3b4329bbb091efe161faae8aa0ec6629e988a51cefe6692b827ecbf"
         }
       ],
       "market_regions": [
@@ -5921,6 +5991,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-edac745ec237eff0",
+      "candidate_kind": "person",
+      "research_name": "Daniel Nadler",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-7dd72aa62b8b3cc2"
+      ],
+      "funding_insight_ids": [
+        "FI-3a202e5f1f99e570"
+      ],
+      "source_event_ids": [
+        "EV-ad688f97d7f4fa55"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-439c5c28066fa1c0",
+          "quote": "OpenEvidence的创始人兼首席执行官Daniel Nadler表示",
+          "source_content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
+          "quote_hash": "54d7fc35b5d102c8d3ecc99dd8e16c99a4e7973c48ac0055f0b513e6e2e4e980"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-a51cd50936528739",
       "candidate_kind": "person",
       "research_name": "Daniel Palmer",
@@ -6773,10 +6871,14 @@
       ],
       "funding_insight_ids": [
         "FI-173569e49758fc0f",
-        "FI-a2daecf69f0288eb"
+        "FI-a2daecf69f0288eb",
+        "FI-c4be451ebe2b8ba6",
+        "FI-dc173ff8aa2d27a5"
       ],
       "source_event_ids": [
+        "EV-35c16315e0a2e5a8",
         "EV-69273189e74d62e5",
+        "EV-7c00fd2e32bfc4b7",
         "EV-e8790e3d950ce1c7"
       ],
       "evidence_refs": [
@@ -6787,10 +6889,16 @@
           "quote_hash": "d3693e2cdef5153c9a516ca95b6e464b6bf8297b0c8b713f68eb85640675d0a2"
         },
         {
-          "source_id": "FISRC-cf73702c113e2ce9",
-          "quote": "Co-founder Diogo Almeida said the moment triggered a surge of interest from other chief executives, developers, and investors.",
-          "source_content_hash": "4053c3f791f5e8443fffcabd1af3e2502c407c98e79548fed14423fe96c6f66c",
-          "quote_hash": "20ae68ff91a3fa5206266f4a1377f8d63d5b50f4b2702d590385820719aef149"
+          "source_id": "FISRC-1384792628b6addd",
+          "quote": "TypeSafe cofounder and CEO Diogo Almeida has a unique perspective on where the field has come from and where it’s going.",
+          "source_content_hash": "47e9af1cad0c5f717b30c6266c5a51b7323913d3c7feb36276bccfbaaeb761e6",
+          "quote_hash": "9c9d0d1a8df401f6fa83c93a7afaa167af5c53708e38753dd0192c21f0094bc1"
+        },
+        {
+          "source_id": "FISRC-3377f75fa1c29d37",
+          "quote": "The company was founded in 2024 by Chief Executive Diogo Almeida, who previously worked on reinforcement learning from human feedback, InstructGPT, ChatGPT and GPT-4 at OpenAI.",
+          "source_content_hash": "64174d83d71050e7813df12818c82715ad8420bb51d0a71e0619e61b6b586c33",
+          "quote_hash": "3aa7f56bc95cd948ed9b01146ad0ec31fbb93a08192af28da5a5a8818b262992"
         }
       ],
       "market_regions": [
@@ -8067,6 +8175,62 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-05f8d79ead70be91",
+      "candidate_kind": "person",
+      "research_name": "Erik G",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-fc67129ea8fe8366"
+      ],
+      "funding_insight_ids": [
+        "FI-dc173ff8aa2d27a5"
+      ],
+      "source_event_ids": [
+        "EV-7c00fd2e32bfc4b7"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5d9d6c3db06b4fd1",
+          "quote": "Erik G: Co-Founder, CTO of TypeSafe.",
+          "source_content_hash": "98bf069bf58bd7b6",
+          "quote_hash": "f2948716302fc6ddefbdef7677ff577db36224144e552b954b40d28219d945e6"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-b167b6d5d9fb3623",
+      "candidate_kind": "person",
+      "research_name": "Erik Gafni",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-fc67129ea8fe8366"
+      ],
+      "funding_insight_ids": [
+        "FI-c4be451ebe2b8ba6"
+      ],
+      "source_event_ids": [
+        "EV-35c16315e0a2e5a8"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9847ef6f6029199a",
+          "quote": "TypeSafe AI Inc. is a San Francisco AI lab founded in 2024 by Diogo Almeida (CEO), Erik Gafni (CTO), and Sasha Sheng (COO).",
+          "source_content_hash": "c2fc6ceface57261",
+          "quote_hash": "bdcb0082c185ea890988432bb273b3ae0eb57a6ced131047dafe64cca1b12ebf"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-5838f40f4d539c99",
       "candidate_kind": "person",
       "research_name": "Erik Shani",
@@ -9305,10 +9469,12 @@
         "EN-27b79c20fe655299"
       ],
       "funding_insight_ids": [
+        "FI-232ec40b3f8731a2",
         "FI-ed1a31b27f28e288"
       ],
       "source_event_ids": [
-        "EV-215ea259173fa6b4"
+        "EV-215ea259173fa6b4",
+        "EV-303422b99649f7c1"
       ],
       "evidence_refs": [
         {
@@ -9322,6 +9488,12 @@
           "quote": "said Varisco, co-founder and chief executive officer",
           "source_content_hash": "febd77d4d839a205",
           "quote_hash": "cc808db051af9205b0aab0d7ae6876194098c5aaf5c42fad5ce636681005b6f6"
+        },
+        {
+          "source_id": "FISRC-193d32011c8f49a3",
+          "quote": "said Gianluca Varisco, CEO and co-founder of Netsec",
+          "source_content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+          "quote_hash": "bbfdc9b1b0c7c3529db241d016dc056d77d86dddc722b94e5bfbd9b36670edc0"
         }
       ],
       "market_regions": [
@@ -9547,10 +9719,12 @@
         "EN-27b79c20fe655299"
       ],
       "funding_insight_ids": [
+        "FI-232ec40b3f8731a2",
         "FI-ed1a31b27f28e288"
       ],
       "source_event_ids": [
-        "EV-215ea259173fa6b4"
+        "EV-215ea259173fa6b4",
+        "EV-303422b99649f7c1"
       ],
       "evidence_refs": [
         {
@@ -9564,6 +9738,12 @@
           "quote": "Founded in 2025 by Gianluca Varisco and Guglielmo Reina",
           "source_content_hash": "a569e171bc1ba3fc",
           "quote_hash": "5cca5682b2cbfe9e05bcad3bd1af5892e7f88bff5275c12c1300ede4a6b5a8ab"
+        },
+        {
+          "source_id": "FISRC-193d32011c8f49a3",
+          "quote": "Founders Gianluca Varisco and Guglielmo Reina first worked side by side at Rocket Internet",
+          "source_content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+          "quote_hash": "e79c94c1d1571ca66215ba400c6b44c0ee93f7d96edfac8a66366b21480f7e98"
         }
       ],
       "market_regions": [
@@ -9658,6 +9838,40 @@
           "quote": "Hafiz Malik · Co-founderHe has spent fifteen years at the University of Michigan working at the intersection of hardware security, signal processing, and machine learning",
           "source_content_hash": "53594a5ae0d4c240",
           "quote_hash": "1bf2cfc52390ad6a7bfbad6013816721ec31945a69cce0dbc6061e0e925c40a7"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-a9cd74be22e46ab1",
+      "candidate_kind": "person",
+      "research_name": "Hanah-Marie Darley",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-871e6f4bf723cb1b"
+      ],
+      "funding_insight_ids": [
+        "FI-da38789b376b1616"
+      ],
+      "source_event_ids": [
+        "EV-3c8c01c48903ce41"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0c52ccc548d44488",
+          "quote": "said co-founder and chief AI officer Hanah-Marie Darley",
+          "source_content_hash": "9d150dcb3336c0fb922d39dfb47eef07dcf09aa0063bdf2883d020f780691d81",
+          "quote_hash": "48bb904859d7f3c576dc3c247c8930f672ca17b35009f8e3986a02a9484d1da1"
+        },
+        {
+          "source_id": "FISRC-3510df2876c66b96",
+          "quote": "Geordie AI was founded in 2025 by Henry Comfort, Hanah-Marie Darley, and Benji Weber.",
+          "source_content_hash": "da5a32a4a99f4227",
+          "quote_hash": "9bf5801cf3b4329bbb091efe161faae8aa0ec6629e988a51cefe6692b827ecbf"
         }
       ],
       "market_regions": [
@@ -9894,6 +10108,40 @@
           "quote": "Childhood friends Henry Brogan and Tyler McCarthy founded BidScript while both were still at university.",
           "source_content_hash": "87506954b587c61d",
           "quote_hash": "beb6b57bac4f97e90ddce792ecca38c7a668f141600488b5486404b388d0c37b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-6dd042d2d8d0aacb",
+      "candidate_kind": "person",
+      "research_name": "Henry Comfort",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-871e6f4bf723cb1b"
+      ],
+      "funding_insight_ids": [
+        "FI-da38789b376b1616"
+      ],
+      "source_event_ids": [
+        "EV-3c8c01c48903ce41"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0c52ccc548d44488",
+          "quote": "The company has been led since its inception by Henry Comfort",
+          "source_content_hash": "9d150dcb3336c0fb922d39dfb47eef07dcf09aa0063bdf2883d020f780691d81",
+          "quote_hash": "7b5372bf85bda869f85d7e47c3925f94948d0f7efa47ce44ebcd5e08a609531e"
+        },
+        {
+          "source_id": "FISRC-3510df2876c66b96",
+          "quote": "Geordie AI was founded in 2025 by Henry Comfort, Hanah-Marie Darley, and Benji Weber.",
+          "source_content_hash": "da5a32a4a99f4227",
+          "quote_hash": "9bf5801cf3b4329bbb091efe161faae8aa0ec6629e988a51cefe6692b827ecbf"
         }
       ],
       "market_regions": [
@@ -11301,10 +11549,12 @@
         "EN-3eee4f30151db45a"
       ],
       "funding_insight_ids": [
+        "FI-5a09d79aa17dd8e4",
         "FI-a3b0e6ba9c45f3fc"
       ],
       "source_event_ids": [
-        "EV-7a85e21802efd8b2"
+        "EV-7a85e21802efd8b2",
+        "EV-e5d1e49e37f2e291"
       ],
       "evidence_refs": [
         {
@@ -11312,6 +11562,12 @@
           "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra.",
           "source_content_hash": "78c1fee941fb6b34",
           "quote_hash": "efe82d5f58b08ab46379402c26e6cc25553dc5c854d062e7a2602ae1c5bc87ad"
+        },
+        {
+          "source_id": "FISRC-b72ee092e2938985",
+          "quote": "Founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, \"Teknium\", and Shivani Mitra",
+          "source_content_hash": "33d86cd105ac7abd",
+          "quote_hash": "148ab53d3b3d16e896deb3bf64d4067acf10b78c5966cedbd538067e502d88b2"
         }
       ],
       "market_regions": [
@@ -11712,6 +11968,40 @@
           "quote": "Founded in 2022 by Vendrell (CEO), Victor Garcia (CTO), and Alejandro Domingo (COO)",
           "source_content_hash": "7a4bd12b025049d2",
           "quote_hash": "775a38ac7f41771e3c4e71815d589f32a6c703306c1f12f844543e5e49ad5075"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-f272e62248a60766",
+      "candidate_kind": "person",
+      "research_name": "Job Vink",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4e2f14438106e433"
+      ],
+      "funding_insight_ids": [
+        "FI-9a6da05db7e9ae8c"
+      ],
+      "source_event_ids": [
+        "EV-72a280ef52550173"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e39b9cadf530531e",
+          "quote": "Founded in 2024 by Benjamin Havenaar†www.linkedin.com and Job Vink†www.linkedin.com",
+          "source_content_hash": "9366f04ca9de4b2fc545009d846f0403ee087c7498c26afbec98866342366759",
+          "quote_hash": "215ca7d954b3e1f975560b9014c02ac9ec92d2ace32de6779eea29bf941eff21"
+        },
+        {
+          "source_id": "FISRC-fa1f049de02cbdfd",
+          "quote": "Founded in 2024 by Benjamin Havenaar and Job Vink",
+          "source_content_hash": "bd61ecb2f982a8b4",
+          "quote_hash": "80954c983b6bfa5b016ff0364b17da850dc0d701501e884923539a5443dd6807"
         }
       ],
       "market_regions": [
@@ -12815,6 +13105,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-634ebbf028087d86",
+      "candidate_kind": "person",
+      "research_name": "Kailash Sankaranarayanan",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-28775a3d932436cf"
+      ],
+      "funding_insight_ids": [
+        "FI-81915c6ac5096fe8"
+      ],
+      "source_event_ids": [
+        "EV-9d937c4f5d7f1361"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d4fa6b7ab4e1aa59",
+          "quote": "Sankaranarayanan, Co-founder and COO, said the round will fund “a brand people trust in their living room” and R&D that keeps adding new categories and devices to the home.",
+          "source_content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+          "quote_hash": "7ad4bc5e46b86152683025c14249d5d3904405a45167bd8d3e621487a183104f"
+        },
+        {
+          "source_id": "FISRC-efa441e95694040e",
+          "quote": "Kailash Sankaranarayanan: Co-Founder & COO of Lumio.",
+          "source_content_hash": "1653fa76fa379e6f",
+          "quote_hash": "ac48bc703ca2ac67657b438e94c57507a8938ccce842368cb0b0889515d9f8c8"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-25655891d59d5b7a",
       "candidate_kind": "person",
       "research_name": "Kali Charan Vemuru",
@@ -12922,10 +13246,12 @@
         "EN-3eee4f30151db45a"
       ],
       "funding_insight_ids": [
+        "FI-5a09d79aa17dd8e4",
         "FI-a3b0e6ba9c45f3fc"
       ],
       "source_event_ids": [
-        "EV-7a85e21802efd8b2"
+        "EV-7a85e21802efd8b2",
+        "EV-e5d1e49e37f2e291"
       ],
       "evidence_refs": [
         {
@@ -12933,6 +13259,12 @@
           "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra.",
           "source_content_hash": "78c1fee941fb6b34",
           "quote_hash": "efe82d5f58b08ab46379402c26e6cc25553dc5c854d062e7a2602ae1c5bc87ad"
+        },
+        {
+          "source_id": "FISRC-b72ee092e2938985",
+          "quote": "Founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, \"Teknium\", and Shivani Mitra",
+          "source_content_hash": "33d86cd105ac7abd",
+          "quote_hash": "148ab53d3b3d16e896deb3bf64d4067acf10b78c5966cedbd538067e502d88b2"
         }
       ],
       "market_regions": [
@@ -12975,13 +13307,16 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-3fd6ed252b4e3196"
+        "EN-3fd6ed252b4e3196",
+        "EN-9c304d6d50bdb5a8"
       ],
       "funding_insight_ids": [
-        "FI-2bf9c9103a8dd67b"
+        "FI-2bf9c9103a8dd67b",
+        "FI-d38a0aaf8ebf8456"
       ],
       "source_event_ids": [
-        "EV-756708b78b427477"
+        "EV-756708b78b427477",
+        "EV-d3ecfba50801f33e"
       ],
       "evidence_refs": [
         {
@@ -12989,6 +13324,12 @@
           "quote": "byteXL, founded by brothers Karun and Sricharan Tadepalli",
           "source_content_hash": "4d4a3e5e8fe418a0f3c6cd84a9c3eefe5c74c46190d69e681bb4f648dc800b73",
           "quote_hash": "931056019f57959cbb686d46d269eb2499fb7e7a6cb06d2a2fe64500646b79fb"
+        },
+        {
+          "source_id": "FISRC-c3b355654a6defd1",
+          "quote": "Founded by brothers Karun and Sricharan Tadepalli",
+          "source_content_hash": "26d264edf327f333",
+          "quote_hash": "47abcd41446ea38a8286ed1b209dee57cd4bbd9069ae6af25431641e68c0b203"
         }
       ],
       "market_regions": [
@@ -19020,6 +19361,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-018f9889e9565e5b",
+      "candidate_kind": "person",
+      "research_name": "Raghu Reddy",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-28775a3d932436cf"
+      ],
+      "funding_insight_ids": [
+        "FI-81915c6ac5096fe8"
+      ],
+      "source_event_ids": [
+        "EV-9d937c4f5d7f1361"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d4fa6b7ab4e1aa59",
+          "quote": "He called co-founders Raghu Reddy and Kailash Sankaranarayanan among the most product-obsessed and capital-efficient founders the firm has met.",
+          "source_content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+          "quote_hash": "851c6c7ac2bc4ece247b633bef9baa0e6e736b00d705e37ec2a76b23d6440a14"
+        },
+        {
+          "source_id": "FISRC-efa441e95694040e",
+          "quote": "Raghu Mohan Reddy is the CEO of Lumio.",
+          "source_content_hash": "1653fa76fa379e6f",
+          "quote_hash": "61ff10617f6a34675c306c7e12358a18795b2eed50a989ff1e536bfe771d1fb7"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-84ad7b2da8d2d779",
       "candidate_kind": "person",
       "research_name": "Raghuvamshi Thakur",
@@ -20685,10 +21060,12 @@
         "EN-3eee4f30151db45a"
       ],
       "funding_insight_ids": [
+        "FI-5a09d79aa17dd8e4",
         "FI-a3b0e6ba9c45f3fc"
       ],
       "source_event_ids": [
-        "EV-7a85e21802efd8b2"
+        "EV-7a85e21802efd8b2",
+        "EV-e5d1e49e37f2e291"
       ],
       "evidence_refs": [
         {
@@ -20696,6 +21073,12 @@
           "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra.",
           "source_content_hash": "78c1fee941fb6b34",
           "quote_hash": "efe82d5f58b08ab46379402c26e6cc25553dc5c854d062e7a2602ae1c5bc87ad"
+        },
+        {
+          "source_id": "FISRC-ac6e301d20b71ad6",
+          "quote": "Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, and Shivani Mitra founded Nous in 2023.",
+          "source_content_hash": "501b2db0688d9ccc",
+          "quote_hash": "9506e02d7072a3e36069ee9914e352730b63ce7ae1fbeed1abd75151f01951b7"
         }
       ],
       "market_regions": [
@@ -21292,6 +21675,62 @@
           "quote": "IIT Gandhinagar alumni Juvatkar and Sarthak Jain (CEO) co-founded Nanonets",
           "source_content_hash": "09c882710b28fe12",
           "quote_hash": "f23b5a7206921822c2bb25d041fd23f8793dc13ba662da3fc16a5ec0a73f336f"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-cb1633833f0d3d2b",
+      "candidate_kind": "person",
+      "research_name": "Sasha S",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-fc67129ea8fe8366"
+      ],
+      "funding_insight_ids": [
+        "FI-dc173ff8aa2d27a5"
+      ],
+      "source_event_ids": [
+        "EV-7c00fd2e32bfc4b7"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5d9d6c3db06b4fd1",
+          "quote": "Sasha S: Co-Founder of TypeSafe.",
+          "source_content_hash": "98bf069bf58bd7b6",
+          "quote_hash": "d270020c004adadae498ac4b59d43a4649a137872b489f1dbef50d289ccdb201"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-c6e0ea11f9822e19",
+      "candidate_kind": "person",
+      "research_name": "Sasha Sheng",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-fc67129ea8fe8366"
+      ],
+      "funding_insight_ids": [
+        "FI-c4be451ebe2b8ba6"
+      ],
+      "source_event_ids": [
+        "EV-35c16315e0a2e5a8"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9847ef6f6029199a",
+          "quote": "TypeSafe AI Inc. is a San Francisco AI lab founded in 2024 by Diogo Almeida (CEO), Erik Gafni (CTO), and Sasha Sheng (COO).",
+          "source_content_hash": "c2fc6ceface57261",
+          "quote_hash": "bdcb0082c185ea890988432bb273b3ae0eb57a6ced131047dafe64cca1b12ebf"
         }
       ],
       "market_regions": [
@@ -22089,10 +22528,12 @@
         "EN-3eee4f30151db45a"
       ],
       "funding_insight_ids": [
+        "FI-5a09d79aa17dd8e4",
         "FI-a3b0e6ba9c45f3fc"
       ],
       "source_event_ids": [
-        "EV-7a85e21802efd8b2"
+        "EV-7a85e21802efd8b2",
+        "EV-e5d1e49e37f2e291"
       ],
       "evidence_refs": [
         {
@@ -22100,6 +22541,12 @@
           "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra.",
           "source_content_hash": "78c1fee941fb6b34",
           "quote_hash": "efe82d5f58b08ab46379402c26e6cc25553dc5c854d062e7a2602ae1c5bc87ad"
+        },
+        {
+          "source_id": "FISRC-b72ee092e2938985",
+          "quote": "Founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, \"Teknium\", and Shivani Mitra",
+          "source_content_hash": "33d86cd105ac7abd",
+          "quote_hash": "148ab53d3b3d16e896deb3bf64d4067acf10b78c5966cedbd538067e502d88b2"
         }
       ],
       "market_regions": [
@@ -22635,13 +23082,16 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-3fd6ed252b4e3196"
+        "EN-3fd6ed252b4e3196",
+        "EN-9c304d6d50bdb5a8"
       ],
       "funding_insight_ids": [
-        "FI-2bf9c9103a8dd67b"
+        "FI-2bf9c9103a8dd67b",
+        "FI-d38a0aaf8ebf8456"
       ],
       "source_event_ids": [
-        "EV-756708b78b427477"
+        "EV-756708b78b427477",
+        "EV-d3ecfba50801f33e"
       ],
       "evidence_refs": [
         {
@@ -22649,6 +23099,12 @@
           "quote": "byteXL, founded by brothers Karun and Sricharan Tadepalli",
           "source_content_hash": "4d4a3e5e8fe418a0f3c6cd84a9c3eefe5c74c46190d69e681bb4f648dc800b73",
           "quote_hash": "931056019f57959cbb686d46d269eb2499fb7e7a6cb06d2a2fe64500646b79fb"
+        },
+        {
+          "source_id": "FISRC-2ef9a11d4971e966",
+          "quote": "Founded in 2020 by brothers Sricharan and Karun Tadepalli",
+          "source_content_hash": "ddfc442f74f43b98c3e28a9a3acb3cc56598d7a4f54e89a24caba18f3bdf4013",
+          "quote_hash": "5103220b5522c880fb508f6a53a113f90c6ead0fbd1762fc7a19169b57643857"
         }
       ],
       "market_regions": [
@@ -22739,6 +23195,40 @@
           "quote": "Stephan Ewen, CEO and co-founder of Restate",
           "source_content_hash": "d84a6d9dd1cd4299",
           "quote_hash": "95f79088eaeecfc3c4f0630f5d63f06bade856921f3b4f294163fbe11ac55889"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-6e832c07fd8d8220",
+      "candidate_kind": "person",
+      "research_name": "Stephen DiBartolomeo",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-74cce68f42702267"
+      ],
+      "funding_insight_ids": [
+        "FI-2ccead4596534b87"
+      ],
+      "source_event_ids": [
+        "EV-bd0c10245db77e9f"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a902e8d38c910e4a",
+          "quote": "said Stephen DiBartolomeo, co-founder of Chiplytics",
+          "source_content_hash": "2154531276876fad",
+          "quote_hash": "900081f9c6d403af67527102aa5bfe01d5f812e9413105587d1fa6dae706bbf2"
+        },
+        {
+          "source_id": "FISRC-a1d43425f85f1a23",
+          "quote": "said co-founder and president Stephen DiBartolomeo",
+          "source_content_hash": "380616185907e848",
+          "quote_hash": "bd5fbbc90248428356e6b5662cb6abad7448fc525b605e072a0de5e4f49f2f30"
         }
       ],
       "market_regions": [
@@ -26441,6 +26931,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-571eacd9b7e0e203",
+      "candidate_kind": "person",
+      "research_name": "Zachary Ziegler",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-7dd72aa62b8b3cc2"
+      ],
+      "funding_insight_ids": [
+        "FI-3a202e5f1f99e570"
+      ],
+      "source_event_ids": [
+        "EV-ad688f97d7f4fa55"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dd80ed67cffa1510",
+          "quote": "Zachary Ziegler: Co-Founder & CTO of OpenEvidence.",
+          "source_content_hash": "d68879cd39b46ae1",
+          "quote_hash": "82a60be382be95972a9f6cd5df3ca1f149fa18b5cb61f703127ee98e091201da"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-552be28713927146",
       "candidate_kind": "person",
       "research_name": "Zack Khan",
@@ -27434,6 +27952,34 @@
           "quote": "由清华大学电子工程系长聘教授、系主任汪玉与夏立雪、戴国浩等人共同创立",
           "source_content_hash": "30d4d6c98bdee9b0",
           "quote_hash": "fa7429a2e86f25301f3b135a99e3b08902ef638206acbe2e2b31fb67fde42ca1"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-0f92af83349cc10c",
+      "candidate_kind": "person",
+      "research_name": "孔令和",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-3ca4ac52d2b14069"
+      ],
+      "funding_insight_ids": [
+        "FI-8d29f0231e9bbddd"
+      ],
+      "source_event_ids": [
+        "EV-c9bcebb8c22c1966"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a65130cff09fce99",
+          "quote": "星火传明联合创始人兼首席科学家、上海交通大学教授孔令和介绍",
+          "source_content_hash": "2e444506c7f05a5ffd535685674ef4282f399fa29d8295cb9265c385668ea3e8",
+          "quote_hash": "3cd82258f587a7f2c6c96d0d12299358272b9a026b2e99cc2ed9bf07cc7f886c"
         }
       ],
       "market_regions": [
@@ -29490,6 +30036,34 @@
           "quote": "恒瀚微创始人兼CEO胡超博",
           "source_content_hash": "35d402398792bd83d75eaf4eedebe667d29aa48a06fd5234c9980e55517ace67",
           "quote_hash": "d523bf4b9f764cde17052c39cf71f133489f05126d39a9ff6dfbdcb0b9a36c60"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-345a288d8bb63125",
+      "candidate_kind": "person",
+      "research_name": "胡邦国",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-3ca4ac52d2b14069"
+      ],
+      "funding_insight_ids": [
+        "FI-8d29f0231e9bbddd"
+      ],
+      "source_event_ids": [
+        "EV-c9bcebb8c22c1966"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1c2d8c788fd71f81",
+          "quote": "星火传明董事长胡邦国表示",
+          "source_content_hash": "e1cd6baa88871dd5",
+          "quote_hash": "e7b8eff07603402211312b64e2105cf2c91332efc7f253affd16565ebd8e8275"
         }
       ],
       "market_regions": [
@@ -34933,6 +35507,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-886198c8cd1ce3f3",
+      "candidate_kind": "product",
+      "research_name": "Ambassador Management Platform（大使管理平台）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4e2f14438106e433"
+      ],
+      "funding_insight_ids": [
+        "FI-9a6da05db7e9ae8c"
+      ],
+      "source_event_ids": [
+        "EV-72a280ef52550173"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-506c792e0ee6149e",
+          "quote": "Ambassador Management Platform (\"The Platform\"): A software tool provided by Innercrowd that enables Clients to sell tickets through their Ambassadors, manage promotional activities, and monitor ticket sales.",
+          "source_content_hash": "5714443c10a18b28",
+          "quote_hash": "6030d8fe9d7f396cf6f069ad922f0811012a3e153f03e3f512c347e23b33c57e"
+        },
+        {
+          "source_id": "FISRC-506c792e0ee6149e",
+          "quote": "Innercrowd provides the Platform as a subscription-based software service.",
+          "source_content_hash": "5714443c10a18b28",
+          "quote_hash": "c3b943b1e1279c00f137e3ad2f46e63ff04bb6324ec5c142584db1f395e90dc6"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-5e0e984b92fb9f66",
       "candidate_kind": "product",
       "research_name": "AMD Instinct AI云服务",
@@ -35322,6 +35930,40 @@
           "quote": "APT is designed to be smaller, faster, more cost-efficient, and more accurate than frontier models. It can be deployed in a VPC or self-hosted, giving enterprises full control of their AI without relying on third-party providers.",
           "source_content_hash": "879f57913f563435",
           "quote_hash": "07ef0ca066155bfda1f6a31270a2ecfaba221e7e46b951406cbb052009ebc2db"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-fb86edb957337c9a",
+      "candidate_kind": "product",
+      "research_name": "Arc Projectors",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-28775a3d932436cf"
+      ],
+      "funding_insight_ids": [
+        "FI-81915c6ac5096fe8"
+      ],
+      "source_event_ids": [
+        "EV-9d937c4f5d7f1361"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d4fa6b7ab4e1aa59",
+          "quote": "On TVs and projectors, that means TLDR and Project Neo, its AI content discovery layer, now in public beta in nine Indian languages and backed by multiple patent filings.",
+          "source_content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+          "quote_hash": "42ae9d7e54b34495e4f83bc102a2d2105ab30ebfefe60034918c00cbb7a5176e"
+        },
+        {
+          "source_id": "FISRC-efa441e95694040e",
+          "quote": "It provides smart TVs and projectors equipped with advanced display technologies such as QLED and MiniLED.",
+          "source_content_hash": "1653fa76fa379e6f",
+          "quote_hash": "4bc0ba2f09882a4f139ca15d9e110c969cf73a5a67bc40472a205405eebe51f8"
         }
       ],
       "market_regions": [
@@ -36596,6 +37238,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-92077ff28ee18b19",
+      "candidate_kind": "product",
+      "research_name": "Aura Speakers",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-28775a3d932436cf"
+      ],
+      "funding_insight_ids": [
+        "FI-81915c6ac5096fe8"
+      ],
+      "source_event_ids": [
+        "EV-9d937c4f5d7f1361"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d4fa6b7ab4e1aa59",
+          "quote": "Lumio, the consumer electronics brand behind Vision Smart TVs, Arc projectors and Aura speakers, has raised $12 million (about Rs 115 crore).",
+          "source_content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+          "quote_hash": "b7d7fd39f6429624c06f0b6dc32bad14e52dcebfa2ee8c39f90d89926db33fe8"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-de5803907534a3fe",
       "candidate_kind": "product",
       "research_name": "Autentic AI 市场研究平台",
@@ -36961,6 +37631,34 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-5b62d7e90ce22ce1",
+      "candidate_kind": "product",
+      "research_name": "Beam",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-871e6f4bf723cb1b"
+      ],
+      "funding_insight_ids": [
+        "FI-da38789b376b1616"
+      ],
+      "source_event_ids": [
+        "EV-3c8c01c48903ce41"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-090026c711c9d719",
+          "quote": "Combined with Beam, our runtime remediation suite that leverages context engineering, Geordie enables organizations to proactively shape and constrain agent behavior without slowing innovation.",
+          "source_content_hash": "e016242533ff1829",
+          "quote_hash": "8338fb56cb6ba70d91fc9190adbab9ab8c2f373adce9e6a7c88275bb5b9e28d5"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-24a8358c62493318",
@@ -37763,6 +38461,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-1bcb3452e0d6a950",
+      "candidate_kind": "product",
+      "research_name": "byteXL 学习平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9c304d6d50bdb5a8"
+      ],
+      "funding_insight_ids": [
+        "FI-d38a0aaf8ebf8456"
+      ],
+      "source_event_ids": [
+        "EV-d3ecfba50801f33e"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-746416531f7138b5",
+          "quote": "Its proprietary platform brings together learning content, coding environments, projects, assessments, student analytics and progress tracking",
+          "source_content_hash": "ed66828961521a4b",
+          "quote_hash": "cf1b91bc6db2dfdb625a00d31a300087463f1941c55de3a41627732c31021bd5"
+        },
+        {
+          "source_id": "FISRC-2ef9a11d4971e966",
+          "quote": "accelerate the development of AI-enabled learning tools such as its AI coach and mentor features",
+          "source_content_hash": "ddfc442f74f43b98c3e28a9a3acb3cc56598d7a4f54e89a24caba18f3bdf4013",
+          "quote_hash": "149c403e00d41b7e3840fe04131eb76ff673836f547ecd76c042aae59e845755"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-9715479b4388709f",
@@ -38653,10 +39385,12 @@
         "EN-6aa1fcea0024c6ce"
       ],
       "funding_insight_ids": [
+        "FI-7394580d6f01616e",
         "FI-8d89ca183da5cdf4"
       ],
       "source_event_ids": [
-        "EV-7f10b7d013a91292"
+        "EV-7f10b7d013a91292",
+        "EV-e8bc8dc295e87e3b"
       ],
       "evidence_refs": [
         {
@@ -38664,6 +39398,12 @@
           "quote": "GMI Cloud’s orchestration tool, the Cluster Engine, is the best part. Built on Kubernetes, this robust cloud platform allows you to manage your GPU resources whether you’re deploying workloads across multiple GPUs or running distributed training sessions on a large cluster.",
           "source_content_hash": "536cb621c0ef2968",
           "quote_hash": "6c9336d9b17c042be276ed7bb851d245e5f2c23b9062e4bf6ea42b3e4e787b91"
+        },
+        {
+          "source_id": "FISRC-f1809d7dd0e9d307",
+          "quote": "Cluster Engine, our proprietary cloud management platform, further simplifies resource orchestration, ensuring that companies can scale their operations dynamically and efficiently.",
+          "source_content_hash": "3bff5525dd10e872",
+          "quote_hash": "00fc62bcb59b74cf10606ea6bf7932672a2c52aa34eb9896a8951fa9f9652a64"
         }
       ],
       "market_regions": [
@@ -40488,6 +41228,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-2407bc08b0b3eb5d",
+      "candidate_kind": "product",
+      "research_name": "DeepConsult",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-7dd72aa62b8b3cc2"
+      ],
+      "funding_insight_ids": [
+        "FI-3a202e5f1f99e570"
+      ],
+      "source_event_ids": [
+        "EV-ad688f97d7f4fa55"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0362e58cb1709285",
+          "quote": "OpenEvidence also announces the wide release of OpenEvidence DeepConsult™—the first AI agent purpose-built for physicians",
+          "source_content_hash": "378d6b32fb2e629b",
+          "quote_hash": "b66e112e27c8c8d615ede060ea38e16be828e7ee67db04534918708b1e984790"
+        },
+        {
+          "source_id": "FISRC-0362e58cb1709285",
+          "quote": "OpenEvidence DeepConsult agents use advanced reasoning models to autonomously analyze and cross-reference hundreds of peer-reviewed medical studies in parallel",
+          "source_content_hash": "378d6b32fb2e629b",
+          "quote_hash": "4ea43b42eec4818e09a5ac675738e741a1d3dbc7237e8c9ca6d6886678bb22cb"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-7c0ece93660cf798",
@@ -44430,6 +45204,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-d1638e8303c386bd",
+      "candidate_kind": "product",
+      "research_name": "Geordie AI安全与治理平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-871e6f4bf723cb1b"
+      ],
+      "funding_insight_ids": [
+        "FI-da38789b376b1616"
+      ],
+      "source_event_ids": [
+        "EV-3c8c01c48903ce41"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0c52ccc548d44488",
+          "quote": "Geordie AI is developing a security framework designed specifically around AI agent behavior and governance.",
+          "source_content_hash": "9d150dcb3336c0fb922d39dfb47eef07dcf09aa0063bdf2883d020f780691d81",
+          "quote_hash": "27aef50dbc10200db861ff2543a6fe652b16fa72ab72eb41cec7f7bca93b796a"
+        },
+        {
+          "source_id": "FISRC-090026c711c9d719",
+          "quote": "Geordie gives enterprises a real-time understanding of which agents exist, what they can access, how they behave, and the risks they create across enterprise systems.",
+          "source_content_hash": "e016242533ff1829",
+          "quote_hash": "d270111e47e29d4d5b5ad0371699200641c631364255d6f3f23447c2f7221b33"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-f1cc8b9c19eafae1",
       "candidate_kind": "product",
       "research_name": "GeoYan AI智能答疑系统",
@@ -45267,16 +46075,18 @@
         "EN-6aa1fcea0024c6ce"
       ],
       "funding_insight_ids": [
+        "FI-7394580d6f01616e",
         "FI-8d89ca183da5cdf4"
       ],
       "source_event_ids": [
-        "EV-7f10b7d013a91292"
+        "EV-7f10b7d013a91292",
+        "EV-e8bc8dc295e87e3b"
       ],
       "evidence_refs": [
         {
           "source_id": "FISRC-cf3eb2b83c7e750b",
           "quote": "GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services",
-          "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+          "source_content_hash": "3afdd073c952b34b",
           "quote_hash": "3df7b2467498e4a30af58a7f8dc8914cfc108117917d42ce5a0acf3b064ba88f"
         },
         {
@@ -45284,6 +46094,12 @@
           "quote": "Serverless inference by default. For early-stage products with unpredictable traffic, GMI Cloud's serverless inference scales to zero when there are no requests and scales up automatically when demand arrives.",
           "source_content_hash": "ee727be96c8a766c",
           "quote_hash": "5988705f6f3f67011d29aab89c2c3c0b28f695b89ee6405c3af503b17a642556"
+        },
+        {
+          "source_id": "FISRC-1e710bbd104406d6",
+          "quote": "It delivers infrastructure for training, deploying, and running artificial intelligence models. The company offers an inference engine, GPU orchestration, and GPU compute services.",
+          "source_content_hash": "f9568e559ea78391",
+          "quote_hash": "df8d57de79d61bdaf086d800741b3ecba65132e596d15aecaa637b1ad2b082fd"
         }
       ],
       "market_regions": [
@@ -45847,6 +46663,40 @@
           "quote": "Each night, we analyze every adult inpatient’s record",
           "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
           "quote_hash": "97a50dce7b6acaa0944518da211dc6b9debca14db5847dcd39de1d056dd03b25"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-20badd88a6e98b81",
+      "candidate_kind": "product",
+      "research_name": "Hermes for Businesses",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-3eee4f30151db45a"
+      ],
+      "funding_insight_ids": [
+        "FI-5a09d79aa17dd8e4"
+      ],
+      "source_event_ids": [
+        "EV-e5d1e49e37f2e291"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-295e99df6a40bc79",
+          "quote": "The capital will fund Nous Research’s push into the enterprise sector with “Hermes for Businesses,” allowing companies to deploy customized AI agents that can handle multi-step workflows while keeping their data private and secure.",
+          "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+          "quote_hash": "8435ea1ec47408c758553a49fc3b4aeffe1e0e114d1ee9b052e1b1d428f80584"
+        },
+        {
+          "source_id": "FISRC-718f95dbe2208337",
+          "quote": "With our fundraising and new partners, we will build and deliver Hermes for Businesses. The agent that grows with you will empower businesses that improve on and own their own intelligence stacks.",
+          "source_content_hash": "9a7816e0d0a7df40",
+          "quote_hash": "f24f090699a74ac78c2c884dc4a9a9f34663f524f462d6dfa21844cedc6a2f33"
         }
       ],
       "market_regions": [
@@ -46811,6 +47661,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-8d1904df48ea9039",
+      "candidate_kind": "product",
+      "research_name": "Innercrowd 粉丝营销与售票平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4e2f14438106e433"
+      ],
+      "funding_insight_ids": [
+        "FI-9a6da05db7e9ae8c"
+      ],
+      "source_event_ids": [
+        "EV-72a280ef52550173"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e39b9cadf530531e",
+          "quote": "Fans who sign up for a presale or early bird sale gain access to a WhatsApp shop where they can buy tickets directly within the messaging app. AI agents handle one-to-one conversations with fans at scale, answering questions and helping guide them towards a purchase without requiring a marketer to be online.",
+          "source_content_hash": "9366f04ca9de4b2fc545009d846f0403ee087c7498c26afbec98866342366759",
+          "quote_hash": "5f14cc656cbdba2c4d21df9916c9aa44dd015738124816cb29289fdfa6832994"
+        },
+        {
+          "source_id": "FISRC-fa1f049de02cbdfd",
+          "quote": "Fans who sign up for presales get access to a WhatsApp shop where they buy tickets directly in the messaging app. AI agents handle one-to-one conversations at scale, answering questions and guiding fans towards a purchase without a marketer online.",
+          "source_content_hash": "bd61ecb2f982a8b4",
+          "quote_hash": "94cc1f7897860e070ffaca8bb5c82821139d6a888a0b492b347048ec913c26b0"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-8e2f882ab65c73fb",
       "candidate_kind": "product",
       "research_name": "Instinct",
@@ -47161,10 +48045,14 @@
       ],
       "funding_insight_ids": [
         "FI-173569e49758fc0f",
-        "FI-a2daecf69f0288eb"
+        "FI-a2daecf69f0288eb",
+        "FI-c4be451ebe2b8ba6",
+        "FI-dc173ff8aa2d27a5"
       ],
       "source_event_ids": [
+        "EV-35c16315e0a2e5a8",
         "EV-69273189e74d62e5",
+        "EV-7c00fd2e32bfc4b7",
         "EV-e8790e3d950ce1c7"
       ],
       "evidence_refs": [
@@ -51724,6 +52612,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-a5094938eaad9bdc",
+      "candidate_kind": "product",
+      "research_name": "Netsec 托管 IT 与网络安全服务",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-27b79c20fe655299"
+      ],
+      "funding_insight_ids": [
+        "FI-232ec40b3f8731a2"
+      ],
+      "source_event_ids": [
+        "EV-303422b99649f7c1"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-193d32011c8f49a3",
+          "quote": "The model pairs a unified technology stack with a team that owns the outcome end to end, with AI-powered automation handling the repetitive work so human operators focus on judgment and response.",
+          "source_content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+          "quote_hash": "cbc6e8d5c2ca3b9e73558c189ec1b429a729d9403dd18aa8b7115be95e01e436"
+        },
+        {
+          "source_id": "FISRC-193d32011c8f49a3",
+          "quote": "It is delivered through the tools teams already use, Slack and Teams, and priced per employee rather than per ticket.",
+          "source_content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+          "quote_hash": "e33b676e7ab8a52eac3bc896d975fdb3d7da99cc174d25e870ff49bdffa31a4f"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-6adfa0575e0cd5de",
       "candidate_kind": "product",
       "research_name": "Nettle AI Workspace for Loss Control",
@@ -51952,6 +52874,34 @@
           "quote": "Neytra assists with recovery-related calls",
           "source_content_hash": "72a8734494ea081cc24f9e0ac1bf301dde8068569b2b3f23101d32044bb270e7",
           "quote_hash": "15c2aed8c03bc20d1efba683465ebc2367622d246f431c8661ad04cf5330d875"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-f489370d461bd487",
+      "candidate_kind": "product",
+      "research_name": "Nimbus",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9c304d6d50bdb5a8"
+      ],
+      "funding_insight_ids": [
+        "FI-d38a0aaf8ebf8456"
+      ],
+      "source_event_ids": [
+        "EV-d3ecfba50801f33e"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7c59374e1dede389",
+          "quote": "AI-powered, cloud-based environment where students build real industry projects with live code execution, no setup required.",
+          "source_content_hash": "426a04fc73856a42",
+          "quote_hash": "aa2074f7ef81fe2fb892fa1e45e21b2ba22d279a643e5d52e734dfcddca7d86f"
         }
       ],
       "market_regions": [
@@ -53153,6 +54103,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-f5fb7eaf06d23603",
+      "candidate_kind": "product",
+      "research_name": "OpenEvidence医疗搜索引擎",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-7dd72aa62b8b3cc2"
+      ],
+      "funding_insight_ids": [
+        "FI-3a202e5f1f99e570"
+      ],
+      "source_event_ids": [
+        "EV-ad688f97d7f4fa55"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-439c5c28066fa1c0",
+          "quote": "OpenEvidence是一个专门的人工智能医疗搜索引擎，通过提供实时、引用链接的答案，为临床医生提供“大脑扩展器”，这些答案完全来自世界上最值得信赖、同行评审的医学文献。",
+          "source_content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
+          "quote_hash": "aaf45c7b80b3963b668be98ee2991a175c4b3ee061b8aeea650c8ef695af91d2"
+        },
+        {
+          "source_id": "FISRC-439c5c28066fa1c0",
+          "quote": "这笔新资金将用于大力投资与OpenEvidence的多AI代理架构相关的研发和计算成本，该架构提供了世界上任何系统中最高质量和最准确的医疗答案。",
+          "source_content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
+          "quote_hash": "9a75b61c3c24ce747c3dbe916be2d7b56e0d9c9d48915f4d403a4a49cf56588a"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-755682f608f879fa",
@@ -62582,6 +63566,46 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-6b3601ebf9111321",
+      "candidate_kind": "product",
+      "research_name": "Verified by Chiplytics™",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-74cce68f42702267"
+      ],
+      "funding_insight_ids": [
+        "FI-2ccead4596534b87"
+      ],
+      "source_event_ids": [
+        "EV-bd0c10245db77e9f"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a902e8d38c910e4a",
+          "quote": "Verified by Chiplytics™, the company’s quality assurance platform, addresses these risks with inspection of every component, transparent pricing, and traceable test results.",
+          "source_content_hash": "2154531276876fad",
+          "quote_hash": "8564a4192b4236989e57630ee7de12aa656438b57232da98f0ff0475103c5267"
+        },
+        {
+          "source_id": "FISRC-43f612a9c67a1826",
+          "quote": "Chiplytics is your dedicated quality assurance team powering the distribution of secure, authentic electronic components.",
+          "source_content_hash": "da55cd3a3bcb51ee",
+          "quote_hash": "942525d1888c76b0f45b10cd2c57bcb6658ddba47c6af88e042ab1eac18504b3"
+        },
+        {
+          "source_id": "FISRC-a902e8d38c910e4a",
+          "quote": "The company is the first to commercialize a scalable electrical testing method for authenticating microelectronics, combined with machine vision, AI, and supplemental inspection techniques for full coverage and traceability. Chiplytics is trusted by leading defense and high-reliability manufacturers to protect the integrity of the semiconductor supply chain. For more information, visit chiplytics.com†cts.businesswire.com .",
+          "source_content_hash": "2154531276876fad",
+          "quote_hash": "9d4352c88ee121279c18648305688e10ac30cdee6f6ab28dc51d7ac0504f8ff9"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-e146dedbb31c31c0",
       "candidate_kind": "product",
       "research_name": "Vertical Integrated Memory",
@@ -62878,6 +63902,40 @@
           "quote": "公司的第一款量产产品Violoop X，即V4量产版本，海外建议零售价为699美元，Kickstarter首发及国内首发期间售价为399美元",
           "source_content_hash": "02588c0ced12515c",
           "quote_hash": "3a45e93e55dcec227655acd599698d31cee35d3d5e3cc5fdf7fe2518236f15f1"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-3609d783f468a5e4",
+      "candidate_kind": "product",
+      "research_name": "Vision Smart TVs",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-28775a3d932436cf"
+      ],
+      "funding_insight_ids": [
+        "FI-81915c6ac5096fe8"
+      ],
+      "source_event_ids": [
+        "EV-9d937c4f5d7f1361"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d4fa6b7ab4e1aa59",
+          "quote": "Lumio, the consumer electronics brand behind Vision Smart TVs, Arc projectors and Aura speakers, has raised $12 million (about Rs 115 crore).",
+          "source_content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+          "quote_hash": "b7d7fd39f6429624c06f0b6dc32bad14e52dcebfa2ee8c39f90d89926db33fe8"
+        },
+        {
+          "source_id": "FISRC-efa441e95694040e",
+          "quote": "It provides smart TVs and projectors equipped with advanced display technologies such as QLED and MiniLED.",
+          "source_content_hash": "1653fa76fa379e6f",
+          "quote_hash": "4bc0ba2f09882a4f139ca15d9e110c969cf73a5a67bc40472a205405eebe51f8"
         }
       ],
       "market_regions": [
@@ -68300,6 +69358,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-d181476db9fddfe3",
+      "candidate_kind": "product",
+      "research_name": "星上AI计算载荷",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-3ca4ac52d2b14069"
+      ],
+      "funding_insight_ids": [
+        "FI-8d29f0231e9bbddd"
+      ],
+      "source_event_ids": [
+        "EV-c9bcebb8c22c1966"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a65130cff09fce99",
+          "quote": "按照孔令和的介绍，T2已经基本验证端到端时延控制在1分钟以内。",
+          "source_content_hash": "2e444506c7f05a5ffd535685674ef4282f399fa29d8295cb9265c385668ea3e8",
+          "quote_hash": "c04d262db7e9804fdb498e17f42c5b35da49d255ff16b8c428bdd26af79aeb56"
+        },
+        {
+          "source_id": "FISRC-9d10b927af11451d",
+          "quote": "红外视频生成后，星上算法可以先进行筛选和初步识别，对变化不明显的信息进行压缩，同时重点保留运动目标、异常热源等客户关注的数据",
+          "source_content_hash": "e80ba487a3dbc0b9",
+          "quote_hash": "a63e647942ef239f9440b7a28b72e488b52b6e98b666f4bbb158c7a55f53e870"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-f38f5fc05eee3f6a",
       "candidate_kind": "product",
       "research_name": "星企通（Finterprise）",
@@ -70590,6 +71682,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-2a905d66939387a2",
+      "candidate_kind": "product",
+      "research_name": "移动式激光通信地面站",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-3ca4ac52d2b14069"
+      ],
+      "funding_insight_ids": [
+        "FI-8d29f0231e9bbddd"
+      ],
+      "source_event_ids": [
+        "EV-c9bcebb8c22c1966"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a65130cff09fce99",
+          "quote": "目前公司已经完成非洲多个国家的站点资源锁定，中期规划将节点扩展至36个国家，远期进一步形成全球网格化地面通信网络。",
+          "source_content_hash": "2e444506c7f05a5ffd535685674ef4282f399fa29d8295cb9265c385668ea3e8",
+          "quote_hash": "0f7eb20af14aaf78068fa784f6e00f21b20e4cc5116c3868cd6dfb1f34fc7fee"
+        },
+        {
+          "source_id": "FISRC-9d10b927af11451d",
+          "quote": "公司首套移动式激光通信地面站产品预计于今年年底前后完成生产，随后推进海外部署。",
+          "source_content_hash": "e80ba487a3dbc0b9",
+          "quote_hash": "257d7a2d64aa9d4b22408518865149ea53282a2571da8dea98112ff9493ef526"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-92a209aad7a73d3a",
       "candidate_kind": "product",
       "research_name": "端到端VLA模型软件工具链",
@@ -70846,6 +71972,40 @@
           "quote": "除硬件产品外，公司还提供系统级解决方案，包括系统适配、测试优化等服务。",
           "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
           "quote_hash": "c8c92e267bed764c0dfa181b690819fa8aacf7579b1546c4885547365735900a"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-adea45e64e677e6c",
+      "candidate_kind": "product",
+      "research_name": "红外遥感数据服务",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-3ca4ac52d2b14069"
+      ],
+      "funding_insight_ids": [
+        "FI-8d29f0231e9bbddd"
+      ],
+      "source_event_ids": [
+        "EV-c9bcebb8c22c1966"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a65130cff09fce99",
+          "quote": "目前，星火传明已向客户提供红外影像、视频等遥感数据。",
+          "source_content_hash": "2e444506c7f05a5ffd535685674ef4282f399fa29d8295cb9265c385668ea3e8",
+          "quote_hash": "8512f2657678a41905503b49c6eff5fb9c4e440b3dba6e793fff3dfb8e7722cd"
+        },
+        {
+          "source_id": "FISRC-9d10b927af11451d",
+          "quote": "红外遥感感知的是目标热辐射，不依赖太阳光照，可以覆盖昼夜观测。",
+          "source_content_hash": "e80ba487a3dbc0b9",
+          "quote_hash": "2ca9f48b399bb181d852308502cd65206df61301f95ed1a9d094b2ccaffdf78f"
         }
       ],
       "market_regions": [

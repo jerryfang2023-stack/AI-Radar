@@ -1208,15 +1208,15 @@
     "https://www.finsmes.com/2026/10/nous-research-raises-usd90m-in-funding-at-usd1-5-billion-valuation.html": {
       "source_url": "https://www.finsmes.com/2026/10/nous-research-raises-usd90m-in-funding-at-usd1-5-billion-valuation.html",
       "original_reason": "secondary_original_captured_requires_responsible_review",
-      "status": "pending",
-      "reason": "alternate_original_requires_identity_review",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [],
       "title": "Nous Research Raises USD90M in Funding at USD1.5 Billion Valuation",
@@ -1234,66 +1234,104 @@
       "used_existing_original": true,
       "alternate_source": true,
       "resumed_fact_review": true,
-      "source_identity_reviewed": false,
+      "source_identity_reviewed": true,
       "evidence_ref": "evidence://a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
-      "followup": {
-        "source_url": "https://www.finsmes.com/2026/10/nous-research-raises-usd90m-in-funding-at-usd1-5-billion-valuation.html",
-        "original_reason": "secondary_original_captured_requires_responsible_review",
-        "status": "needs_attention",
-        "reason": "alternate_original_requires_identity_review",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [],
+      "next_due_date": null,
+      "last_processed_date": "2026-10-12",
+      "prior_review": {
+        "id": "responsible-20261010-103",
+        "url": "https://www.finsmes.com/2026/10/nous-research-raises-usd90m-in-funding-at-usd1-5-billion-valuation.html",
         "title": "Nous Research Raises USD90M in Funding at USD1.5 Billion Valuation",
-        "origin_date": "2026-10-09",
-        "rounds": 0,
-        "stop_after_date": "2026-10-19",
-        "reviewed_status": "pending_same_round_binding",
-        "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-103",
-        "review_hash": "9216feacfafe17d9d61c83e32e0e4d76b1fe62a0d735cc4458b69452c40750d1",
-        "review_basis": "",
-        "additional_source": "",
+        "status": "pending_same_round_binding",
+        "reason": "Nous10月9000万美元B轮与已发布7月至少7500万美元B轮可能同一筹资后续，先绑定日期/金额及完成状态，不另新增第二B轮或直接关闭。",
+        "reviewed_by": "Codex daily financing owner",
+        "reviewed_at": "2026-10-10T00:42:50.040Z",
+        "evidence_sources": [
+          {
+            "source_url": "https://dealroom.co/news/160592-nous-research-raises-90m-at-1-5b-valuation-for-open-source-ai/",
+            "content_hash": "dec3ac2e527b88824479e4d9c06fb74e980fd55e943d2e47941e4ddca919aa4f",
+            "quote": "led the Series B"
+          }
+        ],
+        "alternate_source_basis": "responsible_alternate_source_review",
+        "reviewer": "Codex daily financing owner",
+        "review_date": "2026-10-10",
+        "ledger": "agent-workflow/reports/financing/2026-10-10/disposition-review.json",
+        "strict": true
+      },
+      "owner": "responsible_financing_reviewer",
+      "next_action": "9000万美元B轮为本次确认完成，7月此前报道仅正在完成/至少7500万，必须同轮复核并保留历史来源，不生成两笔完成融资。",
+      "review_stage": "source_identity_review",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "existing_fact_correction",
+        "priority": "high",
+        "reason": "Nous9000万美元B轮与7月至少7500万美元B轮关系未明，保留同轮更新核对。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T17:15:01.648Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+          "content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+          "raw_ids": [],
+          "reason": "preserved_before_remaining78_source_review"
+        }
+      ],
+      "raw_ids": [
+        "RAW-402b4e247c3893ee"
+      ],
+      "source_binding": {
+        "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
         "content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
-        "prior_reason": "Nous10月9000万美元B轮与已发布7月至少7500万美元B轮可能同一筹资后续，先绑定日期/金额及完成状态，不另新增第二B轮或直接关闭。",
-        "evidence_source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
-        "used_existing_original": true,
-        "alternate_source": true,
-        "resumed_fact_review": true,
-        "source_identity_reviewed": false,
-        "evidence_ref": "evidence://a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
-        "next_due_date": null,
-        "last_processed_date": "2026-10-12",
-        "prior_review": {
-          "id": "responsible-20261010-103",
-          "url": "https://www.finsmes.com/2026/10/nous-research-raises-usd90m-in-funding-at-usd1-5-billion-valuation.html",
-          "title": "Nous Research Raises USD90M in Funding at USD1.5 Billion Valuation",
-          "status": "pending_same_round_binding",
-          "reason": "Nous10月9000万美元B轮与已发布7月至少7500万美元B轮可能同一筹资后续，先绑定日期/金额及完成状态，不另新增第二B轮或直接关闭。",
-          "reviewed_by": "Codex daily financing owner",
-          "reviewed_at": "2026-10-10T00:42:50.040Z",
-          "evidence_sources": [
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T17:15:01.648Z",
+        "reason": "9000万美元B轮为本次确认完成，7月此前报道仅正在完成/至少7500万，必须同轮复核并保留历史来源，不生成两笔完成融资。 已核对正文融资主体及产品；进入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-5a09d79aa17dd8e4",
+          "event_id": "EV-e5d1e49e37f2e291",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Nous Research",
+          "announced_at": "2026-10-07",
+          "amount": "$90 million",
+          "round": "B轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
             {
-              "source_url": "https://dealroom.co/news/160592-nous-research-raises-90m-at-1-5b-valuation-for-open-source-ai/",
-              "content_hash": "dec3ac2e527b88824479e4d9c06fb74e980fd55e943d2e47941e4ddca919aa4f",
-              "quote": "led the Series B"
+              "source_id": "FISRC-295e99df6a40bc79",
+              "quote_hash": "ed32ff0b05f88b34baa54606352d8e9bdb61d7bf1f16b361a3f705b8f4ebc7e8"
+            },
+            {
+              "source_id": "FISRC-0304daca2f1d8fb2",
+              "quote_hash": "b856b732f87ef4e3e0607cdb02ef7f87bfe61b60ae408b7a5ef27185bd3a8a4b"
+            },
+            {
+              "source_id": "FISRC-295e99df6a40bc79",
+              "quote_hash": "8e1103ce746ac472c731e4ba832301bd4ceeb8b147a393a466cb29c0e436463b"
+            },
+            {
+              "source_id": "FISRC-295e99df6a40bc79",
+              "quote_hash": "cbaaa065a4211876f8d02dedf6bfd9cf75bf39323707f085e93958025771fc6c"
             }
-          ],
-          "alternate_source_basis": "responsible_alternate_source_review",
-          "reviewer": "Codex daily financing owner",
-          "review_date": "2026-10-10",
-          "ledger": "agent-workflow/reports/financing/2026-10-10/disposition-review.json",
-          "strict": true
-        },
-        "owner": "responsible_financing_reviewer",
-        "next_action": "review_original_company_and_round_binding_before_supplement",
-        "review_stage": "source_identity_review"
-      }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.techinasia.com/news/manus-maker-butterfly-effect-lands-500m-funding": {
       "source_url": "https://www.techinasia.com/news/manus-maker-butterfly-effect-lands-500m-funding",
@@ -1944,105 +1982,159 @@
     "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/": {
       "source_url": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/",
       "origin_date": "2026-10-08",
-      "status": "pending",
-      "reason": "no_accepted_financing_event_manual_review_required",
+      "rounds": 3,
+      "stop_after_date": "2026-10-15",
+      "title": "France- and Italy-based Netsec raises over €8.93 million to scale its AI-native solution for cybersecurity and IT",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
-      "disposition": {
-        "action": "retain",
-        "reason": "newer_private_review_preserved",
-        "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-009",
-        "reviewed_status": "pending_ai_evidence",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "collection_reconciled": true,
+      "collection_date": "2026-10-10",
+      "content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+      "raw_ids": [
+        "RAW-bde8ade98f3f866b"
+      ],
+      "evidence_source_url": "https://cdn-website.partechpartners.com/news/netsec-raises-more-than-10m-to-grow-its-ai-native-solution-for-cybersecurity-and-it",
+      "alternate_source": true,
+      "review_hash": "7b5835c580bb0ee110b6963ee81fa4aae6dc6dad98d2d116f884c3f5948815b4",
+      "reviewed_status": "pending_ai_evidence",
+      "prior_reason": "融资已披露，但正文仅说明托管IT安全、自动化和集成，AI-native出现在标题；需产品原文支持具体AI主营分类。",
+      "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-009",
+      "resumed_fact_review": true,
+      "last_processed_date": "2026-10-10",
+      "prior_review": {
+        "id": "responsible-20261010-009",
+        "url": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/",
+        "title": "France- and Italy-based Netsec raises over €8.93 million to scale its AI-native solution for cybersecurity and IT",
+        "status": "pending_ai_evidence",
+        "reason": "融资已披露，但正文仅说明托管IT安全、自动化和集成，AI-native出现在标题；需产品原文支持具体AI主营分类。",
+        "reviewed_by": "Codex daily financing owner",
+        "reviewed_at": "2026-10-10T00:20:47.184Z",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/",
+            "content_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929",
+            "quote": "Netsec operates the entire IT and security stack for its clients through a unified control plane"
+          }
+        ],
+        "reviewer": "Codex daily financing owner",
+        "review_date": "2026-10-10",
+        "ledger": "agent-workflow/reports/financing/2026-10-10/disposition-review.json",
         "strict": true
       },
-      "followup": {
+      "next_due_date": null,
+      "owner": "responsible_financing_reviewer",
+      "next_action": "投资方原文为超过1000万美元；欧洲媒体欧元换算不生成第二轮，原文没有披露具体轮次。",
+      "review_stage": "fact_review",
+      "last_fact_review_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929",
+      "value_triage": {
+        "id": 248,
         "source_url": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/",
-        "origin_date": "2026-10-08",
-        "rounds": 3,
-        "stop_after_date": "2026-10-15",
         "title": "France- and Italy-based Netsec raises over €8.93 million to scale its AI-native solution for cybersecurity and IT",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "status": "needs_attention",
-        "reason": "no_accepted_financing_event_manual_review_required",
-        "collection_reconciled": true,
-        "collection_date": "2026-10-10",
+        "decision": "retain_targeted_review",
+        "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+        "evidence_basis": "responsible_lead_triage_not_fact_approval",
         "content_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929",
-        "raw_ids": [
-          "RAW-948d96bd4ae8c42e"
-        ],
         "evidence_source_url": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/",
-        "alternate_source": false,
-        "review_hash": "7b5835c580bb0ee110b6963ee81fa4aae6dc6dad98d2d116f884c3f5948815b4",
-        "reviewed_status": "pending_ai_evidence",
-        "prior_reason": "融资已披露，但正文仅说明托管IT安全、自动化和集成，AI-native出现在标题；需产品原文支持具体AI主营分类。",
-        "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-009",
-        "resumed_fact_review": true,
-        "last_processed_date": "2026-10-10",
-        "prior_review": {
-          "id": "responsible-20261010-009",
-          "url": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/",
-          "title": "France- and Italy-based Netsec raises over €8.93 million to scale its AI-native solution for cybersecurity and IT",
-          "status": "pending_ai_evidence",
-          "reason": "融资已披露，但正文仅说明托管IT安全、自动化和集成，AI-native出现在标题；需产品原文支持具体AI主营分类。",
-          "reviewed_by": "Codex daily financing owner",
-          "reviewed_at": "2026-10-10T00:20:47.184Z",
-          "evidence_sources": [
-            {
-              "source_url": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/",
-              "content_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929",
-              "quote": "Netsec operates the entire IT and security stack for its clients through a unified control plane"
-            }
-          ],
-          "reviewer": "Codex daily financing owner",
-          "review_date": "2026-10-10",
-          "ledger": "agent-workflow/reports/financing/2026-10-10/disposition-review.json",
-          "strict": true
+        "reviewed_at": "2026-10-11T02:58:36.176Z",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "secondary_search": {
+          "status": "reuse_existing_original",
+          "content_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929"
         },
-        "next_due_date": null,
-        "owner": "responsible_financing_reviewer",
-        "next_action": "supply_new_original_and_review_without_clearing_attempt_receipts",
-        "review_stage": "needs_original",
-        "last_fact_review_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929",
-        "value_triage": {
-          "id": 248,
+        "priority": "funding_or_identity_issue_with_specific_subject",
+        "fact_approved": false
+      },
+      "continued_search_review": {
+        "date": "2026-10-11",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "status": "search_completed_not_fact_approval",
+        "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+        "source_identity_review_required": true,
+        "priority_original_receipts": []
+      },
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "needs_specific_product_or_original",
+        "priority": "normal",
+        "reason": "Netsec当前原文为托管IT/安全自动化，AI-native仅标题；只查直接AI产品证据，当前不准入。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T17:06:26.243Z",
+      "evidence_binding_history": [
+        {
           "source_url": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/",
-          "title": "France- and Italy-based Netsec raises over €8.93 million to scale its AI-native solution for cybersecurity and IT",
-          "decision": "retain_targeted_review",
-          "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
-          "evidence_basis": "responsible_lead_triage_not_fact_approval",
           "content_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929",
-          "evidence_source_url": "https://www.eu-startups.com/2026/10/france-and-italy-based-netsec-raises-over-e8-93-million-to-scale-its-ai-native-solution-for-cybersecurity-and-it/",
-          "reviewed_at": "2026-10-11T02:58:36.176Z",
-          "reviewed_by": "Codex responsible financing reviewer",
-          "secondary_search": {
-            "status": "reuse_existing_original",
-            "content_hash": "9735c2da038240025778ad351344c0f88d43d47a53554763d512a06569a1f929"
-          },
-          "priority": "funding_or_identity_issue_with_specific_subject",
-          "fact_approved": false
-        },
-        "continued_search_review": {
-          "date": "2026-10-11",
-          "reviewed_by": "Codex responsible financing reviewer",
-          "status": "search_completed_not_fact_approval",
-          "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
-          "source_identity_review_required": true,
-          "priority_original_receipts": []
+          "raw_ids": [
+            "RAW-948d96bd4ae8c42e"
+          ],
+          "reason": "preserved_before_remaining78_source_review"
         }
-      }
+      ],
+      "evidence_ref": "evidence://16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://cdn-website.partechpartners.com/news/netsec-raises-more-than-10m-to-grow-its-ai-native-solution-for-cybersecurity-and-it",
+        "content_hash": "16595269d4ed5b3e5deb201d259913dbc005ea968b6998567e27ac4a4e5ff88c",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T17:06:26.243Z",
+        "reason": "投资方原文为超过1000万美元；欧洲媒体欧元换算不生成第二轮，原文没有披露具体轮次。 已核对正文融资主体及产品；进入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-232ec40b3f8731a2",
+          "event_id": "EV-303422b99649f7c1",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Barbican SAS, operating as Netsec",
+          "announced_at": "2026-10-06",
+          "amount": "more than $10 million",
+          "round": "其他融资",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-193d32011c8f49a3",
+              "quote_hash": "a7408389ef537cac1b04ebce4cb440540b969d0548827804a6fa564ce99d6660"
+            },
+            {
+              "source_id": "FISRC-9c674d28ca898b66",
+              "quote_hash": "cf21d5b9da52e7a1d2754f10b74632c138b9c65bc8a84d137268c90ed55f956e"
+            },
+            {
+              "source_id": "FISRC-193d32011c8f49a3",
+              "quote_hash": "6b48277fb0f6fb0583dc52182000cb3c01b77ca313e58ec1aac955b0f358fdcf"
+            },
+            {
+              "source_id": "FISRC-193d32011c8f49a3",
+              "quote_hash": "5e5a5540f0a1d3b8073f3ca9cc53305bab8b2a85ee7b53cf8a2ca79688840b71"
+            },
+            {
+              "source_id": "FISRC-9c674d28ca898b66",
+              "quote_hash": "6a03e578fefb7b75724e1089c3535fdb07ad5f8e65afde8dbb17aca78be65693"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.cyzone.cn/article/848592.html": {
       "source_url": "https://www.cyzone.cn/article/848592.html",
@@ -2952,111 +3044,167 @@
     },
     "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/": {
       "source_url": "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/",
-      "origin_date": "2026-10-09",
-      "status": "pending",
-      "reason": "no_accepted_financing_event_manual_review_required",
+      "original_reason": "ai_relevance_unverified",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
-      "disposition": {
-        "action": "retain",
-        "reason": "newer_private_review_preserved",
-        "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-017",
-        "reviewed_status": "pending_original",
+      "capture_attempts": [],
+      "title": "Dutch startup Innercrowd raises €750K to turn festival fans into marketers",
+      "origin_date": "2026-10-09",
+      "rounds": 2,
+      "stop_after_date": "2026-10-16",
+      "reviewed_status": "pending_original",
+      "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-017",
+      "review_hash": "d63906af6a6e02f12f82e1ec44f7da787fa4a11264e027f89c27f3c1b4772f51",
+      "review_basis": "",
+      "additional_source": "",
+      "content_hash": "9366f04ca9de4b2fc545009d846f0403ee087c7498c26afbec98866342366759",
+      "prior_reason": "节庆营销原文截断，不能据标题或片段判断AI主营；保留补证。",
+      "evidence_source_url": "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/",
+      "used_existing_original": true,
+      "alternate_source": false,
+      "resumed_fact_review": false,
+      "source_identity_reviewed": true,
+      "raw_ids": [
+        "RAW-8011c9b2c8abbaa7"
+      ],
+      "evidence_ref": "evidence://9366f04ca9de4b2fc545009d846f0403ee087c7498c26afbec98866342366759",
+      "last_processed_date": "2026-10-10",
+      "prior_review": {
+        "id": "responsible-20261010-017",
+        "url": "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/",
+        "title": "Dutch startup Innercrowd raises €750K to turn festival fans into marketers",
+        "status": "pending_original",
+        "reason": "节庆营销原文截断，不能据标题或片段判断AI主营；保留补证。",
+        "reviewed_by": "Codex daily financing owner",
+        "reviewed_at": "2026-10-10T00:20:47.187Z",
+        "evidence_sources": [
+          {
+            "source_url": "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/",
+            "content_hash": "77a053c23670aa8019ea4bc1fb2ab9a06ccc73986b3d6f1562cd568c9ee772fb",
+            "quote": "According to the European Festival Survey 2025,…"
+          }
+        ],
+        "reviewer": "Codex daily financing owner",
+        "review_date": "2026-10-10",
+        "ledger": "agent-workflow/reports/financing/2026-10-10/disposition-review.json",
         "strict": true
       },
-      "followup": {
+      "next_due_date": null,
+      "owner": "responsible_financing_reviewer",
+      "next_action": "完整原文证实75万欧元融资，当前WhatsApp一对一AI agents营销，有100家节庆客户；不按泛活动营销直接排除。",
+      "review_stage": "fact_review",
+      "last_fact_review_hash": "77a053c23670aa8019ea4bc1fb2ab9a06ccc73986b3d6f1562cd568c9ee772fb",
+      "value_triage": {
+        "id": 363,
         "source_url": "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/",
-        "original_reason": "ai_relevance_unverified",
-        "status": "needs_attention",
-        "reason": "no_accepted_financing_event_manual_review_required",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [],
         "title": "Dutch startup Innercrowd raises €750K to turn festival fans into marketers",
-        "origin_date": "2026-10-09",
-        "rounds": 2,
-        "stop_after_date": "2026-10-16",
-        "reviewed_status": "pending_original",
-        "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-017",
-        "review_hash": "d63906af6a6e02f12f82e1ec44f7da787fa4a11264e027f89c27f3c1b4772f51",
-        "review_basis": "",
-        "additional_source": "",
+        "decision": "retain_targeted_review",
+        "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+        "evidence_basis": "responsible_lead_triage_not_fact_approval",
         "content_hash": "77a053c23670aa8019ea4bc1fb2ab9a06ccc73986b3d6f1562cd568c9ee772fb",
-        "prior_reason": "节庆营销原文截断，不能据标题或片段判断AI主营；保留补证。",
         "evidence_source_url": "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/",
-        "used_existing_original": true,
-        "alternate_source": false,
-        "resumed_fact_review": false,
-        "source_identity_reviewed": false,
-        "raw_ids": [
-          "RAW-8f3ae86ff49597d3"
-        ],
-        "evidence_ref": "evidence://77a053c23670aa8019ea4bc1fb2ab9a06ccc73986b3d6f1562cd568c9ee772fb",
-        "last_processed_date": "2026-10-10",
-        "prior_review": {
-          "id": "responsible-20261010-017",
-          "url": "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/",
-          "title": "Dutch startup Innercrowd raises €750K to turn festival fans into marketers",
-          "status": "pending_original",
-          "reason": "节庆营销原文截断，不能据标题或片段判断AI主营；保留补证。",
-          "reviewed_by": "Codex daily financing owner",
-          "reviewed_at": "2026-10-10T00:20:47.187Z",
-          "evidence_sources": [
-            {
-              "source_url": "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/",
-              "content_hash": "77a053c23670aa8019ea4bc1fb2ab9a06ccc73986b3d6f1562cd568c9ee772fb",
-              "quote": "According to the European Festival Survey 2025,…"
-            }
-          ],
-          "reviewer": "Codex daily financing owner",
-          "review_date": "2026-10-10",
-          "ledger": "agent-workflow/reports/financing/2026-10-10/disposition-review.json",
-          "strict": true
+        "reviewed_at": "2026-10-11T02:58:36.176Z",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "secondary_search": {
+          "status": "reuse_existing_original",
+          "content_hash": "77a053c23670aa8019ea4bc1fb2ab9a06ccc73986b3d6f1562cd568c9ee772fb"
         },
-        "next_due_date": null,
-        "owner": "responsible_financing_reviewer",
-        "next_action": "supply_new_original_and_review_without_clearing_attempt_receipts",
-        "review_stage": "needs_original",
-        "last_fact_review_hash": "77a053c23670aa8019ea4bc1fb2ab9a06ccc73986b3d6f1562cd568c9ee772fb",
-        "value_triage": {
-          "id": 363,
+        "priority": "ai_scope_or_original_date_first",
+        "fact_approved": false
+      },
+      "continued_search_review": {
+        "date": "2026-10-11",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "status": "search_completed_not_fact_approval",
+        "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+        "source_identity_review_required": true,
+        "priority_original_receipts": []
+      },
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "needs_specific_product_or_original",
+        "priority": "normal",
+        "reason": "节庆营销原文截断，不能据标题或片段判断AI主营；保留补证。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T17:06:27.494Z",
+      "evidence_binding_history": [
+        {
           "source_url": "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/",
-          "title": "Dutch startup Innercrowd raises €750K to turn festival fans into marketers",
-          "decision": "retain_targeted_review",
-          "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
-          "evidence_basis": "responsible_lead_triage_not_fact_approval",
           "content_hash": "77a053c23670aa8019ea4bc1fb2ab9a06ccc73986b3d6f1562cd568c9ee772fb",
-          "evidence_source_url": "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/",
-          "reviewed_at": "2026-10-11T02:58:36.176Z",
-          "reviewed_by": "Codex responsible financing reviewer",
-          "secondary_search": {
-            "status": "reuse_existing_original",
-            "content_hash": "77a053c23670aa8019ea4bc1fb2ab9a06ccc73986b3d6f1562cd568c9ee772fb"
-          },
-          "priority": "ai_scope_or_original_date_first",
-          "fact_approved": false
-        },
-        "continued_search_review": {
-          "date": "2026-10-11",
-          "reviewed_by": "Codex responsible financing reviewer",
-          "status": "search_completed_not_fact_approval",
-          "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
-          "source_identity_review_required": true,
-          "priority_original_receipts": []
+          "raw_ids": [
+            "RAW-8f3ae86ff49597d3"
+          ],
+          "reason": "preserved_before_remaining78_source_review"
         }
-      }
+      ],
+      "source_binding": {
+        "source_url": "https://tech.eu/2026/10/08/dutch-startup-innercrowd-raises-eur750k-to-turn-festival-fans-into-marketers/",
+        "content_hash": "9366f04ca9de4b2fc545009d846f0403ee087c7498c26afbec98866342366759",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T17:06:27.494Z",
+        "reason": "完整原文证实75万欧元融资，当前WhatsApp一对一AI agents营销，有100家节庆客户；不按泛活动营销直接排除。 已核对正文融资主体及产品；进入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-9a6da05db7e9ae8c",
+          "event_id": "EV-72a280ef52550173",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Innercrowd",
+          "announced_at": "2026-10-08",
+          "amount": "€750,000",
+          "round": "轮次未披露",
+          "disclosure_status": "partially_disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e39b9cadf530531e",
+              "quote_hash": "7978a2d50a140c05ba1c984841e3ba9988b1c36ef28827832b12f8b5372a37a9"
+            },
+            {
+              "source_id": "FISRC-506c792e0ee6149e",
+              "quote_hash": "5efbe9e61c4007fe35072be8de955c2b5ad1568131dcfa2c607d0c67b7c19e08"
+            },
+            {
+              "source_id": "FISRC-e39b9cadf530531e",
+              "quote_hash": "5286765c79fe35385f8a03c6b9b384b147e5aa5fff67a714f55adc478cb3d3b2"
+            },
+            {
+              "source_id": "FISRC-e39b9cadf530531e",
+              "quote_hash": "7978a2d50a140c05ba1c984841e3ba9988b1c36ef28827832b12f8b5372a37a9"
+            },
+            {
+              "source_id": "FISRC-fa1f049de02cbdfd",
+              "quote_hash": "7a64289835565de39dea7cfbc2a90558cd84914003ebbeaa158f3b42601ab6e8"
+            },
+            {
+              "source_id": "FISRC-28aef1730f96a83f",
+              "quote_hash": "9ca4050c2dc5a8363ddc8fa2edb91448be1dbb99eff9b92b1896f310bc82d156"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://tech.eu/2026/10/08/golbriak-space-raises-eur4m-to-scale-laser-communications-for-satellite-constellations/": {
       "source_url": "https://tech.eu/2026/10/08/golbriak-space-raises-eur4m-to-scale-laser-communications-for-satellite-constellations/",
@@ -3449,15 +3597,15 @@
     "https://yourstory.com/2026/10/consumer-tech-brand-lumio-raises-12-million-led-by-blume-ventures": {
       "source_url": "https://yourstory.com/2026/10/consumer-tech-brand-lumio-raises-12-million-led-by-blume-ventures",
       "original_reason": "ai_relevance_unverified",
-      "status": "pending",
-      "reason": "alternate_original_requires_identity_review",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [],
       "title": "Consumer tech brand Lumio raises $12M led by Blume Ventures",
@@ -3482,69 +3630,128 @@
         "origin_date": "2026-10-08",
         "rounds": 0,
         "stop_after_date": "2026-10-15",
-        "followup": {
-          "source_url": "https://yourstory.com/2026/10/consumer-tech-brand-lumio-raises-12-million-led-by-blume-ventures",
-          "original_reason": "ai_relevance_unverified",
-          "status": "needs_attention",
-          "reason": "alternate_original_requires_identity_review",
-          "checks": {
-            "company_identity": "pending",
-            "ai_relevance": "pending",
-            "date": "pending",
-            "amount": "pending",
-            "round": "pending",
-            "deduplication": "pending"
-          },
-          "capture_attempts": [],
-          "title": "Consumer tech brand Lumio raises $12M led by Blume Ventures",
-          "origin_date": "2026-10-08",
-          "rounds": 0,
-          "stop_after_date": "2026-10-15",
-          "content_hash": "78f3223db923c6842911e3c4b226da6f448e7b98fb48a59b0ab1d0ca01d39fc7",
-          "evidence_source_url": "https://dealroom.co/news/160575-lumio-maker-circuit-house-raises-12m-series-a-to-expand-home-tech-range/",
-          "used_existing_original": true,
-          "alternate_source": true,
-          "resumed_fact_review": true,
-          "source_identity_reviewed": false,
-          "evidence_ref": "evidence://78f3223db923c6842911e3c4b226da6f448e7b98fb48a59b0ab1d0ca01d39fc7",
-          "next_due_date": null,
-          "last_processed_date": "2026-10-11",
-          "owner": "responsible_financing_reviewer",
-          "next_action": "review_original_company_and_round_binding_before_supplement",
-          "review_stage": "source_identity_review",
-          "value_triage": {
-            "id": 265,
-            "source_url": "https://yourstory.com/2026/10/consumer-tech-brand-lumio-raises-12-million-led-by-blume-ventures",
-            "title": "Consumer tech brand Lumio raises $12M led by Blume Ventures",
-            "decision": "retain_targeted_review",
-            "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
-            "evidence_basis": "responsible_lead_triage_not_fact_approval",
-            "content_hash": "78f3223db923c6842911e3c4b226da6f448e7b98fb48a59b0ab1d0ca01d39fc7",
-            "evidence_source_url": "https://dealroom.co/news/160575-lumio-maker-circuit-house-raises-12m-series-a-to-expand-home-tech-range/",
-            "reviewed_at": "2026-10-11T02:58:36.176Z",
-            "reviewed_by": "Codex responsible financing reviewer",
-            "secondary_search": {
-              "status": "reuse_existing_original",
-              "content_hash": "78f3223db923c6842911e3c4b226da6f448e7b98fb48a59b0ab1d0ca01d39fc7"
-            },
-            "priority": "ai_scope_or_original_date_first",
-            "fact_approved": false
-          },
-          "continued_search_review": {
-            "date": "2026-10-11",
-            "reviewed_by": "Codex responsible financing reviewer",
-            "status": "search_completed_not_fact_approval",
-            "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
-            "source_identity_review_required": true,
-            "priority_original_receipts": []
-          }
-        },
+        "content_hash": "78f3223db923c6842911e3c4b226da6f448e7b98fb48a59b0ab1d0ca01d39fc7",
+        "evidence_source_url": "https://dealroom.co/news/160575-lumio-maker-circuit-house-raises-12m-series-a-to-expand-home-tech-range/",
+        "used_existing_original": true,
+        "alternate_source": true,
+        "resumed_fact_review": true,
+        "source_identity_reviewed": false,
+        "evidence_ref": "evidence://78f3223db923c6842911e3c4b226da6f448e7b98fb48a59b0ab1d0ca01d39fc7",
         "next_due_date": null,
-        "last_processed_date": "2026-10-12",
+        "last_processed_date": "2026-10-11",
         "owner": "responsible_financing_reviewer",
         "next_action": "review_original_company_and_round_binding_before_supplement",
-        "review_stage": "needs_original"
-      }
+        "review_stage": "source_identity_review",
+        "value_triage": {
+          "id": 265,
+          "source_url": "https://yourstory.com/2026/10/consumer-tech-brand-lumio-raises-12-million-led-by-blume-ventures",
+          "title": "Consumer tech brand Lumio raises $12M led by Blume Ventures",
+          "decision": "retain_targeted_review",
+          "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+          "evidence_basis": "responsible_lead_triage_not_fact_approval",
+          "content_hash": "78f3223db923c6842911e3c4b226da6f448e7b98fb48a59b0ab1d0ca01d39fc7",
+          "evidence_source_url": "https://dealroom.co/news/160575-lumio-maker-circuit-house-raises-12m-series-a-to-expand-home-tech-range/",
+          "reviewed_at": "2026-10-11T02:58:36.176Z",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "secondary_search": {
+            "status": "reuse_existing_original",
+            "content_hash": "78f3223db923c6842911e3c4b226da6f448e7b98fb48a59b0ab1d0ca01d39fc7"
+          },
+          "priority": "ai_scope_or_original_date_first",
+          "fact_approved": false
+        },
+        "continued_search_review": {
+          "date": "2026-10-11",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "status": "search_completed_not_fact_approval",
+          "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+          "source_identity_review_required": true,
+          "priority_original_receipts": []
+        }
+      },
+      "next_due_date": null,
+      "last_processed_date": "2026-10-12",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "当前Project Neo/TLDR为电视投影AI内容发现公开测试，六类消费硬件家庭场景；1200万美元融资内包括A轮，原文未拆分其他部分，严格保留融资总额与A轮组成说明。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "needs_specific_product_or_original",
+        "priority": "normal",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T17:15:00.161Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://yourstory.com/2026/10/consumer-tech-brand-lumio-raises-12-million-led-by-blume-ventures",
+          "raw_ids": [],
+          "reason": "preserved_before_remaining78_source_review"
+        }
+      ],
+      "content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+      "evidence_source_url": "https://timesofindia.indiatimes.com/technology/appliances/lumio-raises-12-million-led-by-blume-ventures-to-expand-its-smart-tv-projector-and-speaker-business/amp_articleshow/134798715.cms",
+      "evidence_ref": "evidence://e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+      "raw_ids": [
+        "RAW-6d76a378dcb26611"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://timesofindia.indiatimes.com/technology/appliances/lumio-raises-12-million-led-by-blume-ventures-to-expand-its-smart-tv-projector-and-speaker-business/amp_articleshow/134798715.cms",
+        "content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T17:15:00.161Z",
+        "reason": "当前Project Neo/TLDR为电视投影AI内容发现公开测试，六类消费硬件家庭场景；1200万美元融资内包括A轮，原文未拆分其他部分，严格保留融资总额与A轮组成说明。 已核对正文融资主体及产品；进入事实门禁，不批准实体合并。"
+      },
+      "alternate_source": true,
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-81915c6ac5096fe8",
+          "event_id": "EV-9d937c4f5d7f1361",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Lumio",
+          "announced_at": "2026-10-08",
+          "amount": "$12 million",
+          "round": "A轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d4fa6b7ab4e1aa59",
+              "quote_hash": "b7d7fd39f6429624c06f0b6dc32bad14e52dcebfa2ee8c39f90d89926db33fe8"
+            },
+            {
+              "source_id": "FISRC-efa441e95694040e",
+              "quote_hash": "7c0f2e8ebd141b1f89e83d8d30f8b507fb9133cc4f311033d96e1764b0c66fe2"
+            },
+            {
+              "source_id": "FISRC-d4fa6b7ab4e1aa59",
+              "quote_hash": "2b4b2cf8c226c8d17ce329ddc939f7025144f7047f17b72172471b086b74600d"
+            },
+            {
+              "source_id": "FISRC-d4fa6b7ab4e1aa59",
+              "quote_hash": "b7d7fd39f6429624c06f0b6dc32bad14e52dcebfa2ee8c39f90d89926db33fe8"
+            },
+            {
+              "source_id": "FISRC-efa441e95694040e",
+              "quote_hash": "a2022b3f03cf0b79663622abacd706abb421544486c34ec77c9192b25fd1a686"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.techinasia.com/news/indian-ai-debt-resolution-startup-credfix-raises-1-6m": {
       "source_url": "https://www.techinasia.com/news/indian-ai-debt-resolution-startup-credfix-raises-1-6m",
@@ -3708,15 +3915,15 @@
     "https://www.techinasia.com/news/indian-edtech-startup-bytexl-raises-9m": {
       "source_url": "https://www.techinasia.com/news/indian-edtech-startup-bytexl-raises-9m",
       "original_reason": "original_unreadable",
-      "status": "pending",
-      "reason": "alternate_original_requires_identity_review",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [],
       "title": "Indian edtech startup ByteXL raises $9m",
@@ -3741,74 +3948,137 @@
         "origin_date": "2026-10-08",
         "rounds": 0,
         "stop_after_date": "2026-10-15",
-        "followup": {
-          "source_url": "https://www.techinasia.com/news/indian-edtech-startup-bytexl-raises-9m",
-          "original_reason": "original_unreadable",
-          "status": "needs_attention",
-          "reason": "alternate_original_requires_identity_review",
-          "checks": {
-            "company_identity": "pending",
-            "ai_relevance": "pending",
-            "date": "pending",
-            "amount": "pending",
-            "round": "pending",
-            "deduplication": "pending"
-          },
-          "capture_attempts": [],
-          "title": "Indian edtech startup ByteXL raises $9m",
-          "origin_date": "2026-10-08",
-          "rounds": 0,
-          "stop_after_date": "2026-10-15",
-          "content_hash": "64570ade49c2c1498926f741515fc57d625d0e697729d159fa6dbd3c41a5cd36",
-          "evidence_source_url": "https://techstartups.com/2026/10/07/startup-funding-news-today-october-7-2026-nous-research-monid-multiply-labs-quanfluence-more/",
-          "used_existing_original": true,
-          "alternate_source": true,
-          "resumed_fact_review": true,
-          "source_identity_reviewed": false,
-          "evidence_ref": "evidence://64570ade49c2c1498926f741515fc57d625d0e697729d159fa6dbd3c41a5cd36",
-          "next_due_date": null,
-          "last_processed_date": "2026-10-11",
-          "owner": "responsible_financing_reviewer",
-          "next_action": "review_original_company_and_round_binding_before_supplement",
-          "review_stage": "source_identity_review",
-          "value_triage": {
-            "id": 270,
-            "source_url": "https://www.techinasia.com/news/indian-edtech-startup-bytexl-raises-9m",
-            "title": "Indian edtech startup ByteXL raises $9m",
-            "decision": "retain_targeted_review",
-            "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
-            "evidence_basis": "responsible_lead_triage_not_fact_approval",
-            "content_hash": "64570ade49c2c1498926f741515fc57d625d0e697729d159fa6dbd3c41a5cd36",
-            "evidence_source_url": "https://techstartups.com/2026/10/07/startup-funding-news-today-october-7-2026-nous-research-monid-multiply-labs-quanfluence-more/",
-            "reviewed_at": "2026-10-11T02:58:36.176Z",
-            "reviewed_by": "Codex responsible financing reviewer",
-            "secondary_search": {
-              "query": {
-                "id": 270,
-                "url": "https://www.techinasia.com/news/indian-edtech-startup-bytexl-raises-9m",
-                "q": "Indian edtech startup ByteXL raises $9m financing funding 公司 公告"
-              },
-              "receipt": "financing-monitor-state/2026-10-11/quick-web-search/batch-9.json",
-              "status": "searched_not_fact_approved"
-            },
-            "priority": "ai_scope_or_original_date_first",
-            "fact_approved": false
-          },
-          "continued_search_review": {
-            "date": "2026-10-11",
-            "reviewed_by": "Codex responsible financing reviewer",
-            "status": "search_completed_not_fact_approval",
-            "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
-            "source_identity_review_required": true,
-            "priority_original_receipts": []
-          }
-        },
+        "content_hash": "64570ade49c2c1498926f741515fc57d625d0e697729d159fa6dbd3c41a5cd36",
+        "evidence_source_url": "https://techstartups.com/2026/10/07/startup-funding-news-today-october-7-2026-nous-research-monid-multiply-labs-quanfluence-more/",
+        "used_existing_original": true,
+        "alternate_source": true,
+        "resumed_fact_review": true,
+        "source_identity_reviewed": false,
+        "evidence_ref": "evidence://64570ade49c2c1498926f741515fc57d625d0e697729d159fa6dbd3c41a5cd36",
         "next_due_date": null,
-        "last_processed_date": "2026-10-12",
+        "last_processed_date": "2026-10-11",
         "owner": "responsible_financing_reviewer",
         "next_action": "review_original_company_and_round_binding_before_supplement",
-        "review_stage": "needs_original"
-      }
+        "review_stage": "source_identity_review",
+        "value_triage": {
+          "id": 270,
+          "source_url": "https://www.techinasia.com/news/indian-edtech-startup-bytexl-raises-9m",
+          "title": "Indian edtech startup ByteXL raises $9m",
+          "decision": "retain_targeted_review",
+          "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+          "evidence_basis": "responsible_lead_triage_not_fact_approval",
+          "content_hash": "64570ade49c2c1498926f741515fc57d625d0e697729d159fa6dbd3c41a5cd36",
+          "evidence_source_url": "https://techstartups.com/2026/10/07/startup-funding-news-today-october-7-2026-nous-research-monid-multiply-labs-quanfluence-more/",
+          "reviewed_at": "2026-10-11T02:58:36.176Z",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "secondary_search": {
+            "query": {
+              "id": 270,
+              "url": "https://www.techinasia.com/news/indian-edtech-startup-bytexl-raises-9m",
+              "q": "Indian edtech startup ByteXL raises $9m financing funding 公司 公告"
+            },
+            "receipt": "financing-monitor-state/2026-10-11/quick-web-search/batch-9.json",
+            "status": "searched_not_fact_approved"
+          },
+          "priority": "ai_scope_or_original_date_first",
+          "fact_approved": false
+        },
+        "continued_search_review": {
+          "date": "2026-10-11",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "status": "search_completed_not_fact_approval",
+          "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+          "source_identity_review_required": true,
+          "priority_original_receipts": []
+        }
+      },
+      "next_due_date": null,
+      "last_processed_date": "2026-10-12",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "900万美元B轮，当前官网Nimbus为AI学习/编程平台，不仅是AI课程；融资与既有2024轮次分开。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "needs_specific_product_or_original",
+        "priority": "normal",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T17:15:01.044Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://www.techinasia.com/news/indian-edtech-startup-bytexl-raises-9m",
+          "raw_ids": [],
+          "reason": "preserved_before_remaining78_source_review"
+        }
+      ],
+      "content_hash": "ddfc442f74f43b98c3e28a9a3acb3cc56598d7a4f54e89a24caba18f3bdf4013",
+      "evidence_source_url": "https://www.thesaasnews.com/news/bytexl-raises-9m-series-b/",
+      "evidence_ref": "evidence://ddfc442f74f43b98c3e28a9a3acb3cc56598d7a4f54e89a24caba18f3bdf4013",
+      "raw_ids": [
+        "RAW-502d5c9e9e81b6f5"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://www.thesaasnews.com/news/bytexl-raises-9m-series-b/",
+        "content_hash": "ddfc442f74f43b98c3e28a9a3acb3cc56598d7a4f54e89a24caba18f3bdf4013",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T17:15:01.044Z",
+        "reason": "900万美元B轮，当前官网Nimbus为AI学习/编程平台，不仅是AI课程；融资与既有2024轮次分开。 已核对正文融资主体及产品；进入事实门禁，不批准实体合并。"
+      },
+      "alternate_source": true,
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-d38a0aaf8ebf8456",
+          "event_id": "EV-d3ecfba50801f33e",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "ByteXL",
+          "announced_at": "2026-10-07",
+          "amount": "$9 million",
+          "round": "B轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ef9a11d4971e966",
+              "quote_hash": "7c6ab32c1d7354f19a02f283a3f2f32a4416cf7f54ee15e955ed412ec53ce406"
+            },
+            {
+              "source_id": "FISRC-c3b355654a6defd1",
+              "quote_hash": "884d5e63f4e99e3e28c0bd860daf86880e64c510dc8951a23d327c5fdc19efec"
+            },
+            {
+              "source_id": "FISRC-2ef9a11d4971e966",
+              "quote_hash": "51e24dc4a96c634a2a9b14cd73f18b041f689509d9d704b298853d5000b6747c"
+            },
+            {
+              "source_id": "FISRC-2ef9a11d4971e966",
+              "quote_hash": "7c6ab32c1d7354f19a02f283a3f2f32a4416cf7f54ee15e955ed412ec53ce406"
+            },
+            {
+              "source_id": "FISRC-14a2e728cdcf21d3",
+              "quote_hash": "51089fa039cb52964105b96ebfef4264c6cf7e36cde279a579bb9a0e58098f4e"
+            },
+            {
+              "source_id": "FISRC-7c59374e1dede389",
+              "quote_hash": "aa2074f7ef81fe2fb892fa1e45e21b2ba22d279a643e5d52e734dfcddca7d86f"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.techinasia.com/news/indian-medtech-startup-sunfox-raises-7m": {
       "source_url": "https://www.techinasia.com/news/indian-medtech-startup-sunfox-raises-7m",
@@ -6691,15 +6961,15 @@
     "https://bydrug.pharmcube.com/news/detail/cb482eeed6e1b8e0348aa51009df0536": {
       "source_url": "https://bydrug.pharmcube.com/news/detail/cb482eeed6e1b8e0348aa51009df0536",
       "original_reason": "secondary_evidence_attempted_awaiting_agent_review",
-      "status": "pending",
-      "reason": "alternate_original_unusable:original_date_missing",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -6740,68 +7010,89 @@
       "attempted": true,
       "search_status": "completed",
       "search_reason": "",
-      "evidence_source_url": "https://www.cls.cn/detail/662959",
-      "alternate_source": true,
-      "followup": {
+      "evidence_source_url": "https://bydrug.pharmcube.com/news/detail/cb482eeed6e1b8e0348aa51009df0536",
+      "alternate_source": false,
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "仅处理2026年1月21日2.5亿美元D轮；2025年前轮、累计7亿美元与120亿美元估值不作为本轮金额。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "needs_specific_product_or_original",
+        "priority": "normal",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T17:06:24.987Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://www.cls.cn/detail/662959",
+          "raw_ids": [],
+          "reason": "preserved_before_remaining78_source_review"
+        }
+      ],
+      "content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
+      "evidence_ref": "evidence://7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
+      "raw_ids": [
+        "RAW-68b0bb325d2f32b4"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
         "source_url": "https://bydrug.pharmcube.com/news/detail/cb482eeed6e1b8e0348aa51009df0536",
-        "original_reason": "secondary_evidence_attempted_awaiting_agent_review",
-        "status": "pending",
-        "reason": "alternate_original_unusable:original_date_missing",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [
-          {
-            "url": "https://m.36kr.com/p/3657474592105090",
-            "status": "pending",
-            "reason": "original_unreadable"
-          },
-          {
-            "url": "https://www.tmtpost.com/7646970.html",
-            "status": "pending",
-            "reason": "original_date_missing"
-          },
-          {
-            "url": "https://mp.weixin.qq.com/s/LtmQPVMNymdPz4zJxRsh1A",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://bydrug.pharmcube.com/news/detail/3a0f5b399958124e711684995f270853",
-            "status": "pending",
-            "reason": "original_article_required"
-          },
-          {
-            "url": "https://finance.sina.com.cn/stock/usstock/c/2026-01-21/doc-inhiaqzt6508108.shtml?finpagefr=p_108",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          },
-          {
-            "url": "https://www.cls.cn/detail/662959",
-            "status": "pending",
-            "reason": "original_date_missing"
-          }
-        ],
-        "title": "估值120亿美元！AI医疗公司完成2.5亿美元D轮融资 - ByDrug",
-        "origin_date": "2026-10-08",
-        "rounds": 0,
-        "stop_after_date": "2026-10-15",
-        "attempted": true,
-        "search_status": "completed",
-        "search_reason": "",
-        "evidence_source_url": "https://www.cls.cn/detail/662959",
-        "alternate_source": true,
-        "last_processed_date": "2026-10-12",
-        "next_due_date": "2026-10-13",
-        "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
-      }
+        "content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T17:06:24.987Z",
+        "reason": "仅处理2026年1月21日2.5亿美元D轮；2025年前轮、累计7亿美元与120亿美元估值不作为本轮金额。 已核对正文融资主体及产品；进入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-3a202e5f1f99e570",
+          "event_id": "EV-ad688f97d7f4fa55",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "OpenEvidence",
+          "announced_at": "2026-01-21",
+          "amount": "2.5亿美元",
+          "round": "D轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-439c5c28066fa1c0",
+              "quote_hash": "f238b8ca422c9b6fb98a17b013b0cf1784f437a2410d5347bf6460850dbca675"
+            },
+            {
+              "source_id": "FISRC-dd80ed67cffa1510",
+              "quote_hash": "0218b82eb1d931b887ef8d096ff78002cd025a6340dbd41fae319c39605ca686"
+            },
+            {
+              "source_id": "FISRC-439c5c28066fa1c0",
+              "quote_hash": "768431284f7c1b470cddde0051ce8a34dfacc4975b0b8ce91c102f10276d753d"
+            },
+            {
+              "source_id": "FISRC-439c5c28066fa1c0",
+              "quote_hash": "64627b48c90b6f86e2f9095f47b4af716baf46e95a2c21dbb21ff41ae5e078f2"
+            },
+            {
+              "source_id": "FISRC-439c5c28066fa1c0",
+              "quote_hash": "7e6a11e7eb884957534d72c9c47ec802da4567fc0fb25d98f2489c9bd668c778"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://life.china.com/2026-03/20/content_554779.html": {
       "source_url": "https://life.china.com/2026-03/20/content_554779.html",
@@ -7266,15 +7557,15 @@
     "https://www.bankinfosecurity.com/startup-geordie-ai-lands-30m-to-secure-enterprise-ai-agents-a-31919": {
       "source_url": "https://www.bankinfosecurity.com/startup-geordie-ai-lands-30m-to-secure-enterprise-ai-agents-a-31919",
       "original_reason": "review_lead_capture_budget_exhausted",
-      "status": "pending",
-      "reason": "alternate_original_unusable:outside_historical_range",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "capture_attempts": [
         {
@@ -7290,43 +7581,93 @@
       "attempted": true,
       "search_status": "completed",
       "search_reason": "",
-      "evidence_source_url": "https://aiweekly.co/alerts/geordie-ai-secures-30m-to-police-enterprise-ai-agents",
-      "alternate_source": true,
-      "followup": {
+      "evidence_source_url": "https://www.bankinfosecurity.com/startup-geordie-ai-lands-30m-to-secure-enterprise-ai-agents-a-31919",
+      "alternate_source": false,
+      "last_processed_date": "2026-10-12",
+      "next_due_date": "2026-10-13",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "仅处理3000万美元A轮，累计3650万美元与2025年650万美元种子轮分开。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "needs_specific_product_or_original",
+        "priority": "normal",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T17:06:25.612Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://aiweekly.co/alerts/geordie-ai-secures-30m-to-police-enterprise-ai-agents",
+          "raw_ids": [],
+          "reason": "preserved_before_remaining78_source_review"
+        }
+      ],
+      "content_hash": "9d150dcb3336c0fb922d39dfb47eef07dcf09aa0063bdf2883d020f780691d81",
+      "evidence_ref": "evidence://9d150dcb3336c0fb922d39dfb47eef07dcf09aa0063bdf2883d020f780691d81",
+      "raw_ids": [
+        "RAW-a0096a89b89f0656"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
         "source_url": "https://www.bankinfosecurity.com/startup-geordie-ai-lands-30m-to-secure-enterprise-ai-agents-a-31919",
-        "original_reason": "review_lead_capture_budget_exhausted",
-        "status": "pending",
-        "reason": "alternate_original_unusable:outside_historical_range",
-        "checks": {
-          "company_identity": "pending",
-          "ai_relevance": "pending",
-          "date": "pending",
-          "amount": "pending",
-          "round": "pending",
-          "deduplication": "pending"
-        },
-        "capture_attempts": [
-          {
-            "url": "https://aiweekly.co/alerts/geordie-ai-secures-30m-to-police-enterprise-ai-agents",
-            "status": "excluded",
-            "reason": "outside_historical_range"
-          }
-        ],
-        "title": "Startup Geordie AI Lands $30M to Secure Enterprise AI ...",
-        "origin_date": "2026-10-08",
-        "rounds": 0,
-        "stop_after_date": "2026-10-15",
-        "attempted": true,
-        "search_status": "completed",
-        "search_reason": "",
-        "evidence_source_url": "https://aiweekly.co/alerts/geordie-ai-secures-30m-to-police-enterprise-ai-agents",
-        "alternate_source": true,
-        "last_processed_date": "2026-10-12",
-        "next_due_date": "2026-10-13",
-        "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "needs_original"
-      }
+        "content_hash": "9d150dcb3336c0fb922d39dfb47eef07dcf09aa0063bdf2883d020f780691d81",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T17:06:25.612Z",
+        "reason": "仅处理3000万美元A轮，累计3650万美元与2025年650万美元种子轮分开。 已核对正文融资主体及产品；进入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-da38789b376b1616",
+          "event_id": "EV-3c8c01c48903ce41",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Geordie AI",
+          "announced_at": "2026-06-08",
+          "amount": "$30 million",
+          "round": "A轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0c52ccc548d44488",
+              "quote_hash": "adda996daab24bdb63c1033e59d2346530c87d39950d1c929dd76ade5e3a3a19"
+            },
+            {
+              "source_id": "FISRC-090026c711c9d719",
+              "quote_hash": "f3930c4672cba5a256a8c07994e5582c039a9f699d83c572c5d761d86ad21de0"
+            },
+            {
+              "source_id": "FISRC-0c52ccc548d44488",
+              "quote_hash": "9be00a9f87f239661b0019d80eaff8f7fb7e00558bf2d632a6022e7f77502640"
+            },
+            {
+              "source_id": "FISRC-0c52ccc548d44488",
+              "quote_hash": "6881c970f9fe7ac665610532f890ae9da5433b080630c6c3ac6e3b4abf6c7680"
+            },
+            {
+              "source_id": "FISRC-0c52ccc548d44488",
+              "quote_hash": "c1b183a1a8f904ac21f794762eaa3428ecc9525bbda93ab98e7067f9164a4e05"
+            },
+            {
+              "source_id": "FISRC-090026c711c9d719",
+              "quote_hash": "313628c5f25f5e23d43638b6491c9a5b74e3dd23735a192f10a51de69c02e1a9"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.businesswire.com/news/home/20261006840248/en/Siena-Raises-%2417M-Series-A-to-Expand-Its-Agent-of-Record-Platform-for-Consumer-Brands": {
       "source_url": "https://www.businesswire.com/news/home/20261006840248/en/Siena-Raises-%2417M-Series-A-to-Expand-Its-Agent-of-Record-Platform-for-Consumer-Brands",
@@ -23039,15 +23380,15 @@
     "https://www.cyzone.cn/article/848438.html": {
       "source_url": "https://www.cyzone.cn/article/848438.html",
       "origin_date": "2026-10-09",
-      "status": "pending",
-      "reason": "alternate_original_requires_identity_review",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
       "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
       },
       "disposition": {
         "action": "retain",
@@ -23198,7 +23539,7 @@
                     },
                     "followup": {
                       "source_url": "https://www.cyzone.cn/article/848438.html",
-                      "origin_date": "2026-10-09",
+                      "original_reason": "original_date_missing",
                       "status": "needs_attention",
                       "reason": "alternate_original_requires_identity_review",
                       "checks": {
@@ -23209,73 +23550,26 @@
                         "round": "pending",
                         "deduplication": "pending"
                       },
-                      "disposition": {
-                        "action": "retain",
-                        "reason": "newer_private_review_preserved",
-                        "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-070",
-                        "reviewed_status": "pending_source_identity",
-                        "strict": true
-                      },
-                      "followup": {
-                        "source_url": "https://www.cyzone.cn/article/848438.html",
-                        "original_reason": "original_date_missing",
-                        "status": "needs_attention",
-                        "reason": "alternate_original_requires_identity_review",
-                        "checks": {
-                          "company_identity": "pending",
-                          "ai_relevance": "pending",
-                          "date": "pending",
-                          "amount": "pending",
-                          "round": "pending",
-                          "deduplication": "pending"
-                        },
-                        "capture_attempts": [],
-                        "title": "本轮融资资金将主要用于高分辨率红外载荷与星地激光通信地面站产线建设及批产、在轨星座组网，以及星上AI计算与算法迭代。",
-                        "origin_date": "2026-10-09",
-                        "rounds": 0,
-                        "stop_after_date": "2026-10-16",
-                        "reviewed_status": "pending_source_identity",
-                        "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-070",
-                        "review_hash": "0eea797a28c01bfd41c7aac77fc5502806d339056043934e07939d3e715be2a7",
-                        "review_basis": "",
-                        "additional_source": "",
-                        "content_hash": "1d47bf368751587454fe7a66214ab7a3e925e86a7744050b933b54309e556b17",
-                        "prior_reason": "替代全文为星火传明A轮且精确匹配资金用途句子，但原线索标题没有企业名称，须核对Cyzone原文主体；不仅靠资金用途标题相似绑定融资。",
-                        "evidence_source_url": "http://www.36kr.com/p/4016831197613956",
-                        "used_existing_original": true,
-                        "alternate_source": true,
-                        "resumed_fact_review": false,
-                        "source_identity_reviewed": false,
-                        "evidence_ref": "evidence://1d47bf368751587454fe7a66214ab7a3e925e86a7744050b933b54309e556b17",
-                        "next_due_date": null,
-                        "last_processed_date": "2026-10-10",
-                        "prior_review": {
-                          "id": "responsible-20261010-070",
-                          "url": "https://www.cyzone.cn/article/848438.html",
-                          "title": "本轮融资资金将主要用于高分辨率红外载荷与星地激光通信地面站产线建设及批产、在轨星座组网，以及星上AI计算与算法迭代。",
-                          "status": "pending_source_identity",
-                          "reason": "替代全文为星火传明A轮且精确匹配资金用途句子，但原线索标题没有企业名称，须核对Cyzone原文主体；不仅靠资金用途标题相似绑定融资。",
-                          "reviewed_by": "Codex daily financing owner",
-                          "reviewed_at": "2026-10-10T00:34:05.728Z",
-                          "alternate_source_basis": "responsible_alternate_source_review",
-                          "evidence_sources": [
-                            {
-                              "source_url": "http://www.36kr.com/p/4016831197613956",
-                              "content_hash": "1d47bf368751587454fe7a66214ab7a3e925e86a7744050b933b54309e556b17",
-                              "quote": "商业红外遥感企业星火传明技术有限公司"
-                            }
-                          ],
-                          "reviewer": "Codex daily financing owner",
-                          "review_date": "2026-10-10",
-                          "ledger": "agent-workflow/reports/financing/2026-10-10/disposition-review.json",
-                          "strict": true
-                        },
-                        "owner": "responsible_financing_reviewer",
-                        "next_action": "review_original_company_and_round_binding_before_supplement",
-                        "review_stage": "source_identity_review"
-                      },
+                      "capture_attempts": [],
+                      "title": "本轮融资资金将主要用于高分辨率红外载荷与星地激光通信地面站产线建设及批产、在轨星座组网，以及星上AI计算与算法迭代。",
+                      "origin_date": "2026-10-09",
+                      "rounds": 0,
+                      "stop_after_date": "2026-10-16",
+                      "reviewed_status": "pending_source_identity",
+                      "review_ref": "agent-workflow/reports/financing/2026-10-10/disposition-review.json#responsible-20261010-070",
+                      "review_hash": "0eea797a28c01bfd41c7aac77fc5502806d339056043934e07939d3e715be2a7",
+                      "review_basis": "",
+                      "additional_source": "",
+                      "content_hash": "1d47bf368751587454fe7a66214ab7a3e925e86a7744050b933b54309e556b17",
+                      "prior_reason": "替代全文为星火传明A轮且精确匹配资金用途句子，但原线索标题没有企业名称，须核对Cyzone原文主体；不仅靠资金用途标题相似绑定融资。",
+                      "evidence_source_url": "http://www.36kr.com/p/4016831197613956",
+                      "used_existing_original": true,
+                      "alternate_source": true,
+                      "resumed_fact_review": false,
+                      "source_identity_reviewed": false,
+                      "evidence_ref": "evidence://1d47bf368751587454fe7a66214ab7a3e925e86a7744050b933b54309e556b17",
                       "next_due_date": null,
-                      "last_processed_date": "2026-10-11",
+                      "last_processed_date": "2026-10-10",
                       "prior_review": {
                         "id": "responsible-20261010-070",
                         "url": "https://www.cyzone.cn/article/848438.html",
@@ -23298,7 +23592,8 @@
                         "strict": true
                       },
                       "owner": "responsible_financing_reviewer",
-                      "next_action": "review_original_company_and_round_binding_before_supplement"
+                      "next_action": "review_original_company_and_round_binding_before_supplement",
+                      "review_stage": "source_identity_review"
                     },
                     "next_due_date": null,
                     "last_processed_date": "2026-10-11",
@@ -23324,8 +23619,7 @@
                       "strict": true
                     },
                     "owner": "responsible_financing_reviewer",
-                    "next_action": "review_original_company_and_round_binding_before_supplement",
-                    "review_stage": "needs_original"
+                    "next_action": "review_original_company_and_round_binding_before_supplement"
                   },
                   "next_due_date": null,
                   "last_processed_date": "2026-10-11",
@@ -23432,57 +23726,11 @@
               "strict": true
             },
             "owner": "responsible_financing_reviewer",
-            "next_action": "recover_correct_company_original_not_reuse_rejected_alternate",
-            "review_stage": "needs_original",
-            "value_triage": {
-              "id": 349,
-              "source_url": "https://www.cyzone.cn/article/848438.html",
-              "title": "",
-              "decision": "retain_targeted_review",
-              "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
-              "evidence_basis": "responsible_lead_triage_not_fact_approval",
-              "content_hash": null,
-              "evidence_source_url": null,
-              "reviewed_at": "2026-10-11T02:58:36.176Z",
-              "reviewed_by": "Codex responsible financing reviewer",
-              "secondary_search": {
-                "query": {
-                  "id": 349,
-                  "url": "https://www.cyzone.cn/article/848438.html",
-                  "q": "848438.html financing funding 公司 公告"
-                },
-                "receipt": "financing-monitor-state/2026-10-11/quick-web-search/batch-15.json",
-                "status": "searched_not_fact_approved"
-              },
-              "priority": "ai_scope_or_original_date_first",
-              "fact_approved": false
-            },
-            "continued_search_review": {
-              "date": "2026-10-11",
-              "reviewed_by": "Codex responsible financing reviewer",
-              "status": "search_completed_not_fact_approval",
-              "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
-              "source_identity_review_required": true,
-              "original_followup_status": "captured",
-              "original_followup_hash": "28dd71e85199eb446c1dd3d99b8af1f32fdcef3d5c29fbbdc6337de13d254812",
-              "original_followup_source_url": "https://www.forgevertical.com/articles/insforge-instacloud-site-performance-monitoring.html",
-              "priority_original_receipts": []
-            },
-            "rejected_evidence_candidates": [
-              {
-                "source_url": "https://www.forgevertical.com/articles/insforge-instacloud-site-performance-monitoring.html",
-                "content_hash": "28dd71e85199eb446c1dd3d99b8af1f32fdcef3d5c29fbbdc6337de13d254812",
-                "evidence_ref": "evidence://28dd71e85199eb446c1dd3d99b8af1f32fdcef3d5c29fbbdc6337de13d254812",
-                "state": "rejected_source_binding",
-                "fact_approved": false,
-                "reason": "补获原文为InsForge；原CyZone线索未完成主体绑定，不把该原文归属给原线索。",
-                "reviewed_by": "Codex responsible financing reviewer",
-                "reviewed_at": "2026-10-11T06:07:07.484Z"
-              }
-            ]
+            "next_action": "review_original_company_and_round_binding_before_supplement",
+            "review_stage": "needs_original"
           },
           "next_due_date": null,
-          "last_processed_date": "2026-10-12",
+          "last_processed_date": "2026-10-11",
           "prior_review": {
             "id": "responsible-20261010-070",
             "url": "https://www.cyzone.cn/article/848438.html",
@@ -23505,7 +23753,54 @@
             "strict": true
           },
           "owner": "responsible_financing_reviewer",
-          "next_action": "review_original_company_and_round_binding_before_supplement"
+          "next_action": "recover_correct_company_original_not_reuse_rejected_alternate",
+          "review_stage": "needs_original",
+          "value_triage": {
+            "id": 349,
+            "source_url": "https://www.cyzone.cn/article/848438.html",
+            "title": "",
+            "decision": "retain_targeted_review",
+            "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+            "evidence_basis": "responsible_lead_triage_not_fact_approval",
+            "content_hash": null,
+            "evidence_source_url": null,
+            "reviewed_at": "2026-10-11T02:58:36.176Z",
+            "reviewed_by": "Codex responsible financing reviewer",
+            "secondary_search": {
+              "query": {
+                "id": 349,
+                "url": "https://www.cyzone.cn/article/848438.html",
+                "q": "848438.html financing funding 公司 公告"
+              },
+              "receipt": "financing-monitor-state/2026-10-11/quick-web-search/batch-15.json",
+              "status": "searched_not_fact_approved"
+            },
+            "priority": "ai_scope_or_original_date_first",
+            "fact_approved": false
+          },
+          "continued_search_review": {
+            "date": "2026-10-11",
+            "reviewed_by": "Codex responsible financing reviewer",
+            "status": "search_completed_not_fact_approval",
+            "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+            "source_identity_review_required": true,
+            "original_followup_status": "captured",
+            "original_followup_hash": "28dd71e85199eb446c1dd3d99b8af1f32fdcef3d5c29fbbdc6337de13d254812",
+            "original_followup_source_url": "https://www.forgevertical.com/articles/insforge-instacloud-site-performance-monitoring.html",
+            "priority_original_receipts": []
+          },
+          "rejected_evidence_candidates": [
+            {
+              "source_url": "https://www.forgevertical.com/articles/insforge-instacloud-site-performance-monitoring.html",
+              "content_hash": "28dd71e85199eb446c1dd3d99b8af1f32fdcef3d5c29fbbdc6337de13d254812",
+              "evidence_ref": "evidence://28dd71e85199eb446c1dd3d99b8af1f32fdcef3d5c29fbbdc6337de13d254812",
+              "state": "rejected_source_binding",
+              "fact_approved": false,
+              "reason": "补获原文为InsForge；原CyZone线索未完成主体绑定，不把该原文归属给原线索。",
+              "reviewed_by": "Codex responsible financing reviewer",
+              "reviewed_at": "2026-10-11T06:07:07.484Z"
+            }
+          ]
         },
         "next_due_date": null,
         "last_processed_date": "2026-10-12",
@@ -23531,9 +23826,112 @@
           "strict": true
         },
         "owner": "responsible_financing_reviewer",
-        "next_action": "review_original_company_and_round_binding_before_supplement",
-        "review_stage": "needs_original"
-      }
+        "next_action": "review_original_company_and_round_binding_before_supplement"
+      },
+      "next_due_date": null,
+      "last_processed_date": "2026-10-12",
+      "prior_review": {
+        "id": "responsible-20261010-070",
+        "url": "https://www.cyzone.cn/article/848438.html",
+        "title": "本轮融资资金将主要用于高分辨率红外载荷与星地激光通信地面站产线建设及批产、在轨星座组网，以及星上AI计算与算法迭代。",
+        "status": "pending_source_identity",
+        "reason": "替代全文为星火传明A轮且精确匹配资金用途句子，但原线索标题没有企业名称，须核对Cyzone原文主体；不仅靠资金用途标题相似绑定融资。",
+        "reviewed_by": "Codex daily financing owner",
+        "reviewed_at": "2026-10-10T00:34:05.728Z",
+        "alternate_source_basis": "responsible_alternate_source_review",
+        "evidence_sources": [
+          {
+            "source_url": "http://www.36kr.com/p/4016831197613956",
+            "content_hash": "1d47bf368751587454fe7a66214ab7a3e925e86a7744050b933b54309e556b17",
+            "quote": "商业红外遥感企业星火传明技术有限公司"
+          }
+        ],
+        "reviewer": "Codex daily financing owner",
+        "review_date": "2026-10-10",
+        "ledger": "agent-workflow/reports/financing/2026-10-10/disposition-review.json",
+        "strict": true
+      },
+      "owner": "responsible_financing_reviewer",
+      "next_action": "原采访主体星火传明商业红外遥感，已完成A轮、金额未披露；忽略页面星星火传明天使轮公司组件，实际T2在轨AI识别与火情服务已有验证。",
+      "review_stage": "needs_original",
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "needs_specific_product_or_original",
+        "priority": "normal",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T17:06:26.877Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://www.cyzone.cn/article/848438.html",
+          "raw_ids": [],
+          "reason": "preserved_before_remaining78_source_review"
+        }
+      ],
+      "content_hash": "2e444506c7f05a5ffd535685674ef4282f399fa29d8295cb9265c385668ea3e8",
+      "evidence_source_url": "https://www.cyzone.cn/article/848438.html",
+      "evidence_ref": "evidence://2e444506c7f05a5ffd535685674ef4282f399fa29d8295cb9265c385668ea3e8",
+      "raw_ids": [
+        "RAW-54750b05e1b1bb22"
+      ],
+      "source_identity_reviewed": true,
+      "source_binding": {
+        "source_url": "https://www.cyzone.cn/article/848438.html",
+        "content_hash": "2e444506c7f05a5ffd535685674ef4282f399fa29d8295cb9265c385668ea3e8",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T17:06:26.877Z",
+        "reason": "原采访主体星火传明商业红外遥感，已完成A轮、金额未披露；忽略页面星星火传明天使轮公司组件，实际T2在轨AI识别与火情服务已有验证。 已核对正文融资主体及产品；进入事实门禁，不批准实体合并。"
+      },
+      "alternate_source": false,
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-8d29f0231e9bbddd",
+          "event_id": "EV-c9bcebb8c22c1966",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "星火传明技术有限公司",
+          "announced_at": "2026-10-08",
+          "amount": "未披露",
+          "round": "A轮",
+          "disclosure_status": "partially_disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a65130cff09fce99",
+              "quote_hash": "d34f4020396048ebd383cbab9d93e501cd9f3045c3885e5bb4e9eec354fa6fe2"
+            },
+            {
+              "source_id": "FISRC-1c2d8c788fd71f81",
+              "quote_hash": "ccc6df7978e627f711f4123289b173cbfab409e2d5c03f87da877e9b9808ccad"
+            },
+            {
+              "source_id": "FISRC-a65130cff09fce99",
+              "quote_hash": "b27e68d9c44343fffc457f0cd505a17d64e68879a52d6d600ec40f0cdc2f4db7"
+            },
+            {
+              "source_id": "FISRC-a65130cff09fce99",
+              "quote_hash": "d34f4020396048ebd383cbab9d93e501cd9f3045c3885e5bb4e9eec354fa6fe2"
+            },
+            {
+              "source_id": "FISRC-02ec35b91fb9146a",
+              "quote_hash": "842f15718b14d2bc19ef82ae6556b3e37ed9fe323178bd9b1646aa4bdd4b4a63"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     },
     "https://www.cyzone.cn/article/848608.html": {
       "source_url": "https://www.cyzone.cn/article/848608.html",
@@ -37630,6 +38028,492 @@
         "next_due_date": "2026-10-13",
         "review_stage": "fact_conflict_review"
       }
+    },
+    "https://www.businesswire.com/news/home/20260930886227/en/GMI-Cloud-Raises-Over-%24660-Million-to-Accelerate-Global-AI-Infrastructure-Expansion": {
+      "source_url": "https://www.businesswire.com/news/home/20260930886227/en/GMI-Cloud-Raises-Over-%24660-Million-to-Accelerate-Global-AI-Infrastructure-Expansion",
+      "original_reason": "alternate_original_requires_identity_review",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "capture_attempts": [
+        {
+          "url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+          "status": "accepted"
+        }
+      ],
+      "title": "GMI Cloud Raises Over $660 Million to Accelerate Global ...",
+      "origin_date": "2026-10-06",
+      "rounds": 0,
+      "stop_after_date": "2026-10-13",
+      "reviewed_status": "pending_event_details",
+      "review_ref": "agent-workflow/reports/financing/2026-10-08/disposition-review.json#gmi-cloud-credit-facility-split",
+      "review_hash": "eb66944f4ab796cf699f27350b152c89c104c11df44bb7bc27cc518b5e44d729",
+      "review_basis": "",
+      "additional_source": "",
+      "content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+      "prior_reason": "PR Newswire 原文称 $668M 新融资由 $223M Series B 股权和 $445M CTBC credit facility 构成；目录已发布同日 $223M Series B。债务授信是否作为独立融资事件及如何避免重复仍需核对，暂不新增或改写卡片。",
+      "evidence_source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+      "used_existing_original": true,
+      "alternate_source": true,
+      "resumed_fact_review": true,
+      "source_identity_reviewed": true,
+      "evidence_ref": "evidence://3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+      "next_due_date": null,
+      "last_processed_date": "2026-10-08",
+      "prior_review": {
+        "id": "gmi-cloud-credit-facility-split",
+        "url": "https://www.businesswire.com/news/home/20260930886227/en/GMI-Cloud-Raises-Over-%24660-Million-to-Accelerate-Global-AI-Infrastructure-Expansion",
+        "status": "pending_event_details",
+        "reason": "PR Newswire 原文称 $668M 新融资由 $223M Series B 股权和 $445M CTBC credit facility 构成；目录已发布同日 $223M Series B。债务授信是否作为独立融资事件及如何避免重复仍需核对，暂不新增或改写卡片。",
+        "reviewed_at": "2026-10-08T12:29:08.000Z",
+        "reviewed_by": "Codex responsible financing evidence review",
+        "content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+        "alternate_source_basis": "responsible_alternate_source_review",
+        "evidence_sources": [
+          {
+            "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+            "content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+            "quote": "GMI Cloud, an AI-native cloud delivering high-performance GPU infrastructure and inference services, today announced $668 million in new financing, comprising $223 million in equity for Series B and a $445 million credit facility led by CTBC."
+          }
+        ],
+        "reviewer": "Codex responsible financing evidence review",
+        "review_date": "2026-10-08",
+        "ledger": "agent-workflow/reports/financing/2026-10-08/disposition-review.json",
+        "strict": true
+      },
+      "owner": "responsible_financing_reviewer",
+      "next_action": "仅处理CTBC牵头4.45亿美元信贷额度；2.23亿美元B轮已发布，6.68亿为股权加债务总额，不能重复算股权。",
+      "review_stage": "source_identity_review",
+      "value_triage": {
+        "id": 12,
+        "source_url": "https://www.businesswire.com/news/home/20260930886227/en/GMI-Cloud-Raises-Over-%24660-Million-to-Accelerate-Global-AI-Infrastructure-Expansion",
+        "title": "GMI Cloud Raises Over $660 Million to Accelerate Global ...",
+        "decision": "retain_targeted_review",
+        "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+        "evidence_basis": "responsible_lead_triage_not_fact_approval",
+        "content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+        "evidence_source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+        "reviewed_at": "2026-10-11T02:58:36.176Z",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "secondary_search": {
+          "status": "reuse_existing_original",
+          "content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a"
+        },
+        "priority": "ai_scope_or_original_date_first",
+        "fact_approved": false
+      },
+      "continued_search_review": {
+        "date": "2026-10-11",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "status": "search_completed_not_fact_approval",
+        "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+        "source_identity_review_required": true,
+        "priority_original_receipts": []
+      },
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "existing_fact_correction",
+        "priority": "high",
+        "reason": "GMI股权2.23亿美元已覆盖；独立保留4.45亿美元信贷是否新事件的事实核对，不将合计6.68亿重复记为股权。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T17:06:23.368Z",
+      "associated_lead_sources": [
+        {
+          "source_url": "https://www.techinasia.com/news/nvidia-joins-ai-cloud-startup-gmi-clouds-668m",
+          "title": "Nvidia joins AI cloud startup GMI Cloud’s $668m round",
+          "content_hash": "fedaa715c8e678d107a35304ea161dbb76ea81dec0341d1427a2a6113c9dd44e",
+          "evidence_source_url": "https://aiweekly.co/alerts/gmi-cloud-raises-668m-with-nvidia-equity-and-ctbc-debt",
+          "archived_review_id": 12
+        },
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/gmi-cloud-raises-over-660-175600413.html",
+          "title": "GMI Cloud Raises Over $660 Million to Accelerate Global ...",
+          "content_hash": "b038967bfc0135e8a00cb3cbba7475a561559fadc0ba4533eff46faf825a686f",
+          "evidence_source_url": "https://www.gmicloud.ai/en/blog/we-raised-over-660-million-to-accelerate-global-ai-infrastructure-expansion",
+          "archived_review_id": 125
+        }
+      ],
+      "evidence_binding_history": [
+        {
+          "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+          "content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+          "raw_ids": [],
+          "reason": "preserved_before_remaining78_source_review"
+        }
+      ],
+      "raw_ids": [
+        "RAW-51a5f051b1b22868"
+      ],
+      "source_binding": {
+        "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+        "content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T17:06:23.368Z",
+        "reason": "仅处理CTBC牵头4.45亿美元信贷额度；2.23亿美元B轮已发布，6.68亿为股权加债务总额，不能重复算股权。 已核对正文融资主体及产品；进入事实门禁，不批准实体合并。"
+      },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-7394580d6f01616e",
+          "event_id": "EV-e8bc8dc295e87e3b",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "GMI Cloud",
+          "announced_at": "2026-10-01",
+          "amount": "$445 million",
+          "round": "债务融资",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote_hash": "3df7b2467498e4a30af58a7f8dc8914cfc108117917d42ce5a0acf3b064ba88f"
+            },
+            {
+              "source_id": "FISRC-1e710bbd104406d6",
+              "quote_hash": "654d91fb2011b38ed2e8525b4e8949bb03850b046ffc7cea483c060e184f1328"
+            },
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote_hash": "35501a25f179577d298b4532dcb56016f5309386364264b253f97e6d04260958"
+            },
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote_hash": "751725d26497f12631ccd291655826cd34fc9f2c12a3e06d2486c70d40efd05e"
+            },
+            {
+              "source_id": "FISRC-1e710bbd104406d6",
+              "quote_hash": "18896c2d99a5bdb925008db70683c4818ab48d50e46c50d91f9e05c3e0ecd005"
+            },
+            {
+              "source_id": "FISRC-cf3eb2b83c7e750b",
+              "quote_hash": "fa5d8f91f5d0172c33e31bf5c2e67ee5d742eaf51418a877a48515432adb43ec"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
+    },
+    "https://www.hpcwire.com/aiwire/2026/09/16/typesafe-ai-emerges-from-stealth-with-40m-in-funding-with-new-model-for-composable-ai/": {
+      "source_url": "https://www.hpcwire.com/aiwire/2026/09/16/typesafe-ai-emerges-from-stealth-with-40m-in-funding-with-new-model-for-composable-ai/",
+      "original_reason": "alternate_original_requires_identity_review",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "capture_attempts": [
+        {
+          "url": "https://damianplayer.com/typesafe-ai-case-study",
+          "status": "excluded",
+          "reason": "outside_historical_range"
+        },
+        {
+          "url": "https://valueaddvc.com/blog/typesafe-ai-valuation-2026-200m-seed-to-10b-in-days-jev-model",
+          "status": "excluded",
+          "reason": "outside_historical_range"
+        },
+        {
+          "url": "https://venturecapitaltracker.com/typesafe-ai-870m-series-a-7-5b-valuation",
+          "status": "accepted"
+        }
+      ],
+      "title": "TypeSafe AI Emerges From Stealth With $40M in Funding ...",
+      "origin_date": "2026-10-07",
+      "rounds": 0,
+      "stop_after_date": "2026-10-14",
+      "evidence_problem": "original_lead_body_still_required",
+      "content_hash": "47e9af1cad0c5f717b30c6266c5a51b7323913d3c7feb36276bccfbaaeb761e6",
+      "evidence_source_url": "https://www.dcvc.com/news-insights/typesafe-emerges-from-stealth-with-a-new-way-of-doing-ai/",
+      "alternate_source": true,
+      "source_identity_reviewed": true,
+      "evidence_ref": "evidence://47e9af1cad0c5f717b30c6266c5a51b7323913d3c7feb36276bccfbaaeb761e6",
+      "next_due_date": null,
+      "last_processed_date": "2026-10-11",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "已读领投方DCVC完整9月15日公告，4000万美元种子轮、Diogo Almeida与Jev均与已接受主体对应；新增首次原始披露来源，保留9月16日后续报道和10月不同A轮。",
+      "review_stage": "needs_original",
+      "value_triage": {
+        "id": 105,
+        "source_url": "https://www.hpcwire.com/aiwire/2026/09/16/typesafe-ai-emerges-from-stealth-with-40m-in-funding-with-new-model-for-composable-ai/",
+        "title": "TypeSafe AI Emerges From Stealth With $40M in Funding ...",
+        "decision": "retain_targeted_review",
+        "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+        "evidence_basis": "responsible_lead_triage_not_fact_approval",
+        "content_hash": "09ba46a3d56fb748fad9bf324b666785d94066fa01a3251e26b70e48a16aa74c",
+        "evidence_source_url": "https://venturecapitaltracker.com/typesafe-ai-870m-series-a-7-5b-valuation",
+        "reviewed_at": "2026-10-11T02:58:36.176Z",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "secondary_search": {
+          "status": "completed",
+          "receipt": "financing-monitor-state/2026-10-11/quick-targeted-search.json"
+        },
+        "priority": "ai_scope_or_original_date_first",
+        "fact_approved": false
+      },
+      "continued_search_review": {
+        "date": "2026-10-11",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "status": "search_completed_not_fact_approval",
+        "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+        "source_identity_review_required": true,
+        "priority_original_receipts": []
+      },
+      "evidence_binding_history": [
+        {
+          "source_url": "https://venturecapitaltracker.com/typesafe-ai-870m-series-a-7-5b-valuation",
+          "content_hash": "09ba46a3d56fb748fad9bf324b666785d94066fa01a3251e26b70e48a16aa74c",
+          "evidence_ref": "evidence://09ba46a3d56fb748fad9bf324b666785d94066fa01a3251e26b70e48a16aa74c",
+          "raw_ids": [],
+          "reviewed_at": "2026-10-12T13:35:37.098Z",
+          "reason": "原种子轮被已发布A轮正文替代"
+        },
+        {
+          "source_url": "https://www.hpcwire.com/aiwire/2026/09/16/typesafe-ai-emerges-from-stealth-with-40m-in-funding-with-new-model-for-composable-ai/",
+          "content_hash": null,
+          "raw_ids": [],
+          "reason": "preserved_before_remaining78_source_review"
+        },
+        {
+          "source_url": "https://siliconangle.com/2026/09/16/typesafe-ai-exits-stealth-with-40m-to-build-ai-for-use-by-software/",
+          "content_hash": "64174d83d71050e7813df12818c82715ad8420bb51d0a71e0619e61b6b586c33",
+          "raw_ids": [
+            "RAW-ff0c54190cac5672"
+          ],
+          "reason": "preserved_before_remaining78_source_review"
+        }
+      ],
+      "raw_ids": [
+        "RAW-ff0c54190cac5672",
+        "RAW-524b72068d278923"
+      ],
+      "fact_review_completed": true,
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "existing_fact_correction",
+        "priority": "high",
+        "reason": "TypeSafe原线索4000万美元种子轮，被87000万美元A轮正文错配；保留种子轮，不能因已发布A轮关闭。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T17:58:58.591Z",
+      "source_binding": {
+        "source_url": "https://www.dcvc.com/news-insights/typesafe-emerges-from-stealth-with-a-new-way-of-doing-ai/",
+        "content_hash": "47e9af1cad0c5f717b30c6266c5a51b7323913d3c7feb36276bccfbaaeb761e6",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T17:58:58.591Z",
+        "reason": "已读领投方DCVC完整9月15日公告，4000万美元种子轮、Diogo Almeida与Jev均与已接受主体对应；新增首次原始披露来源，保留9月16日后续报道和10月不同A轮。 已核对正文融资主体及产品；进入事实门禁，不批准实体合并。"
+      },
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-dc173ff8aa2d27a5",
+          "event_id": "EV-7c00fd2e32bfc4b7",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "TypeSafe AI",
+          "announced_at": "2026-09-15",
+          "amount": "$40 million",
+          "round": "种子轮",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1384792628b6addd",
+              "quote_hash": "28e572843bfc128cacce93e4bbd7b1f73491dc738c16d6b62e8a27a89f1aedd0"
+            },
+            {
+              "source_id": "FISRC-5d9d6c3db06b4fd1",
+              "quote_hash": "2f7187e33da80ddb03da4f28179d233a29fa54103eddb70032f2e4c38489a3da"
+            },
+            {
+              "source_id": "FISRC-1384792628b6addd",
+              "quote_hash": "89b0fbc924cde3520df9d9d09cb6fb3293fca3902e7d305ddf64af9f4f76919b"
+            },
+            {
+              "source_id": "FISRC-1384792628b6addd",
+              "quote_hash": "5a5731cf9ea0c3c73ed1f71e77f198d4058bae53eda587e0fe26eb59c1372f1d"
+            },
+            {
+              "source_id": "FISRC-5d9d6c3db06b4fd1",
+              "quote_hash": "b4b54b13839fb6068680fb87125550433a700662c0edcbeddf2babb48e760c19"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
+    },
+    "https://www.businesswire.com/news/home/20260930611886/en/Chiplytics-Secures-%244.5M-to-Bring-Resiliency-to-US-Electronics-Supply-Chain": {
+      "source_url": "https://www.businesswire.com/news/home/20260930611886/en/Chiplytics-Secures-%244.5M-to-Bring-Resiliency-to-US-Electronics-Supply-Chain",
+      "original_reason": "original_unreadable",
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "capture_attempts": [],
+      "title": "Chiplytics Secures $4.5M to Bring Resiliency to US Electronics Supply Chain",
+      "origin_date": "2026-10-11",
+      "rounds": 0,
+      "stop_after_date": "2026-10-18",
+      "content_hash": "2154531276876fad22577fe94a37b688e8e7144c72cc42151669cc2e09a3d5c5",
+      "evidence_source_url": "https://markets.financialcontent.com/streetinsider/article/bizwire-2026-10-6-chiplytics-secures-45m-to-bring-resiliency-to-us-electronics-supply-chain",
+      "used_existing_original": true,
+      "alternate_source": true,
+      "resumed_fact_review": true,
+      "source_identity_reviewed": true,
+      "evidence_ref": "evidence://2154531276876fad22577fe94a37b688e8e7144c72cc42151669cc2e09a3d5c5",
+      "next_due_date": null,
+      "last_processed_date": "2026-10-11",
+      "owner": "responsible_financing_reviewer",
+      "next_action": "450万美元融资包含TACFI政府资助，股权/资助金额未单独拆分；不得称纯股权、不推定250万美元股权。公开公司原公告明确AI机器视觉质量检测当前商用。",
+      "review_stage": "source_identity_review",
+      "value_triage": {
+        "id": 498,
+        "source_url": "https://www.businesswire.com/news/home/20260930611886/en/Chiplytics-Secures-%244.5M-to-Bring-Resiliency-to-US-Electronics-Supply-Chain",
+        "title": "Chiplytics Secures $4.5M to Bring Resiliency to US Electronics Supply Chain",
+        "decision": "retain_targeted_review",
+        "reason": "有具体公司/融资事件，或企业AI主营、轮次金额、同轮去重仍有可解决问题；先用已有原文和回执，只对缺证据的有效问题二次搜索。",
+        "evidence_basis": "responsible_lead_triage_not_fact_approval",
+        "content_hash": "8c549fd5911747319f1ab66c3522a53977233c4f67c705fb5c5a5a9609b9839d",
+        "evidence_source_url": "https://www.joplinglobe.com/region/national_business/chiplytics-secures-4-5m-to-bring-resiliency-to-us-electronics-supply-chain/article_5c515e58-c855-5526-b704-4e375a6dabbb.html",
+        "reviewed_at": "2026-10-11T02:58:36.176Z",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "secondary_search": {
+          "status": "reuse_existing_original",
+          "content_hash": "8c549fd5911747319f1ab66c3522a53977233c4f67c705fb5c5a5a9609b9839d"
+        },
+        "priority": "ai_scope_or_original_date_first",
+        "fact_approved": false
+      },
+      "continued_search_review": {
+        "date": "2026-10-11",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "status": "search_completed_not_fact_approval",
+        "search_receipt_directory": "financing-monitor-state/2026-10-11/continued-search",
+        "source_identity_review_required": true,
+        "priority_original_receipts": []
+      },
+      "quick_screen": {
+        "date": "2026-10-12",
+        "kind": "needs_specific_product_or_original",
+        "priority": "normal",
+        "reason": "原文、主体AI主营或融资轮次仍缺核验；保留具体缺口，不因额度等待、队列年龄或一次抓取失败删除。",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T13:35:37.098Z",
+        "fact_approved": false
+      },
+      "reviewed_at": "2026-10-12T17:28:38.054Z",
+      "evidence_binding_history": [
+        {
+          "source_url": "https://www.joplinglobe.com/region/national_business/chiplytics-secures-4-5m-to-bring-resiliency-to-us-electronics-supply-chain/article_5c515e58-c855-5526-b704-4e375a6dabbb.html",
+          "content_hash": "8c549fd5911747319f1ab66c3522a53977233c4f67c705fb5c5a5a9609b9839d",
+          "reason": "prior_binding_preserved_remaining78_responsible_review"
+        },
+        {
+          "source_url": "https://www.joplinglobe.com/region/national_business/chiplytics-secures-4-5m-to-bring-resiliency-to-us-electronics-supply-chain/article_5c515e58-c855-5526-b704-4e375a6dabbb.html",
+          "content_hash": "8c549fd5911747319f1ab66c3522a53977233c4f67c705fb5c5a5a9609b9839d",
+          "raw_ids": [],
+          "reason": "preserved_before_remaining78_source_review"
+        }
+      ],
+      "source_binding": {
+        "source_url": "https://markets.financialcontent.com/streetinsider/article/bizwire-2026-10-6-chiplytics-secures-45m-to-bring-resiliency-to-us-electronics-supply-chain",
+        "content_hash": "2154531276876fad22577fe94a37b688e8e7144c72cc42151669cc2e09a3d5c5",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-12T17:28:38.054Z",
+        "reason": "450万美元融资包含TACFI政府资助，股权/资助金额未单独拆分；不得称纯股权、不推定250万美元股权。公开公司原公告明确AI机器视觉质量检测当前商用。 已核对正文融资主体及产品；进入事实门禁，不批准实体合并。"
+      },
+      "responsible_review_reason": "已解码公开原文ROT47部分，明确机器视觉与AI检测；总4.5M含Air Force资助，继续获取完整首段并核纯股权金额，不能全写VC股权。",
+      "raw_ids": [
+        "RAW-a90458cef93e2ff5"
+      ],
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-2ccead4596534b87",
+          "event_id": "EV-bd0c10245db77e9f",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "Chiplytics",
+          "announced_at": "2026-10-06",
+          "amount": "$4.5 million",
+          "round": "轮次未披露",
+          "disclosure_status": "partially_disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a902e8d38c910e4a",
+              "quote_hash": "fb33464546a9256e7eca7e315aca14a4d8c454feb32f2e80440548d4678aa8b1"
+            },
+            {
+              "source_id": "FISRC-a1d43425f85f1a23",
+              "quote_hash": "4ef07135d9500c7f4db4480574ccfa6aec3ed36f4cf110103fe8acc12d340f89"
+            },
+            {
+              "source_id": "FISRC-a902e8d38c910e4a",
+              "quote_hash": "f293fc6332be93d79767d398d55b658370811a60976a8d31b926c9454351a0bc"
+            },
+            {
+              "source_id": "FISRC-a902e8d38c910e4a",
+              "quote_hash": "3538786fe71f408a766b526e797e02c333206a4177e3fccf1dc2329859185200"
+            },
+            {
+              "source_id": "FISRC-a1d43425f85f1a23",
+              "quote_hash": "4a1a1c6e6e3baff62706c6c968dbf346345dbfbdb0ab496e31fc06c9e6c29eae"
+            },
+            {
+              "source_id": "FISRC-a902e8d38c910e4a",
+              "quote_hash": "9d4352c88ee121279c18648305688e10ac30cdee6f6ab28dc51d7ac0504f8ff9"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-12/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-12.json"
+      ]
     }
   },
   "followup_queue": {
@@ -37646,23 +38530,24 @@
     }
   },
   "review_queue": {
-    "total": 96,
+    "total": 55,
     "stages": {
-      "source_identity_review": 26,
-      "evidence_review": 8,
-      "needs_original": 47,
-      "fact_review": 8,
-      "fact_conflict_review": 7
+      "evidence_review": 12,
+      "fact_review": 5,
+      "needs_original": 18,
+      "source_identity_review": 16,
+      "fact_conflict_review": 4
     }
   },
   "prepared": true,
   "status": "completed",
   "counts": {
-    "total": 405,
-    "verified": 22,
+    "total": 408,
+    "verified": 33,
     "excluded": 57,
     "reviewed": 0,
-    "pending": 326
+    "pending": 318
   },
-  "priority_review": "priority55-review.json"
+  "priority_review": "priority55-review.json",
+  "remaining78_review": "remaining78-review.json"
 }

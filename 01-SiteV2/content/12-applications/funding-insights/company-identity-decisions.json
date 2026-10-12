@@ -4232,6 +4232,90 @@
         "quote": "now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion"
       },
       "rationale": "两条事件引用同一 TechCrunch 原文，Viral AI agent 是标题修饰语。统一应用公司身份，使同日同轮同金额披露合并；保留全部来源事件。25 亿美元是上轮估值，不是本轮融资金额。"
+    },
+    {
+      "decision_id": "FICID-TYPESAFE-BASE-20261013",
+      "entity_id": "EN-fc67129ea8fe8366",
+      "application_entity_id": "EN-fc67129ea8fe8366",
+      "current": {
+        "name": "TypeSafe AI",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "TypeSafe AI"
+      ],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "TypeSafe AI",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-12T18:15:38.009Z",
+      "evidence": {
+        "source_url": "https://www.dcvc.com/news-insights/typesafe-emerges-from-stealth-with-a-new-way-of-doing-ai/",
+        "quote": "There is a basic weakness at the heart of today’s AI. Products from the big players produce dazzling displays as they try to leapfrog each other on LLM leader­boards, and yet these systems are riddled with holes and problems with reliability. Most disap­point­ingly, the hand-holding required on even the most boring and straight­for­ward tasks is non-negotiable, meaning the kind of no-humans-in-the-loop automation we keep expecting to see sweep through the economy just hasn’t shown up yet. The prospect of flipping that script is why we’re thrilled to be leading the $40 million Series Seed investment into TypeSafe, a new San Francisco-based company stacked with veterans of the world’s top AI research labs that is building a class of models actually optimized for automation. (Forbes coverage here.)",
+        "corroborating_source_url": "https://typesafe.ai/",
+        "corroborating_quote": "TypeSafe cofounder and CEO Diogo Almeida"
+      },
+      "rationale": "责任人独立核对已有A轮事实、Diogo Almeida等创始人与Jev产品；DCVC原文与9月种子轮均为同一typesafe.ai公司。只统一应用身份，4000万美元种子轮与8.7亿美元A轮仍是独立融资。"
+    },
+    {
+      "decision_id": "FICID-TYPESAFE-INC-20261013",
+      "entity_id": "EN-161b0b471414d255",
+      "application_entity_id": "EN-fc67129ea8fe8366",
+      "current": {
+        "name": "TypeSafe AI Inc.",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "TypeSafe AI Inc."
+      ],
+      "action": "merge",
+      "merge_into_entity_id": "EN-fc67129ea8fe8366",
+      "canonical": {
+        "name": "TypeSafe AI",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-12T18:15:38.009Z",
+      "evidence": {
+        "source_url": "https://www.dcvc.com/news-insights/typesafe-emerges-from-stealth-with-a-new-way-of-doing-ai/",
+        "quote": "There is a basic weakness at the heart of today’s AI. Products from the big players produce dazzling displays as they try to leapfrog each other on LLM leader­boards, and yet these systems are riddled with holes and problems with reliability. Most disap­point­ingly, the hand-holding required on even the most boring and straight­for­ward tasks is non-negotiable, meaning the kind of no-humans-in-the-loop automation we keep expecting to see sweep through the economy just hasn’t shown up yet. The prospect of flipping that script is why we’re thrilled to be leading the $40 million Series Seed investment into TypeSafe, a new San Francisco-based company stacked with veterans of the world’s top AI research labs that is building a class of models actually optimized for automation. (Forbes coverage here.)",
+        "corroborating_source_url": "https://typesafe.ai/",
+        "corroborating_quote": "TypeSafe cofounder and CEO Diogo Almeida"
+      },
+      "rationale": "责任人独立核对已有A轮事实、Diogo Almeida等创始人与Jev产品；DCVC原文与9月种子轮均为同一typesafe.ai公司。只统一应用身份，4000万美元种子轮与8.7亿美元A轮仍是独立融资。"
+    },
+    {
+      "decision_id": "FICID-TYPESAFE-BRAND-20261013",
+      "entity_id": "EN-bc74d4c225d5b7d9",
+      "application_entity_id": "EN-fc67129ea8fe8366",
+      "current": {
+        "name": "TypeSafe",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "TypeSafe"
+      ],
+      "action": "merge",
+      "merge_into_entity_id": "EN-fc67129ea8fe8366",
+      "canonical": {
+        "name": "TypeSafe AI",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-12T18:15:38.009Z",
+      "evidence": {
+        "source_url": "https://www.dcvc.com/news-insights/typesafe-emerges-from-stealth-with-a-new-way-of-doing-ai/",
+        "quote": "There is a basic weakness at the heart of today’s AI. Products from the big players produce dazzling displays as they try to leapfrog each other on LLM leader­boards, and yet these systems are riddled with holes and problems with reliability. Most disap­point­ingly, the hand-holding required on even the most boring and straight­for­ward tasks is non-negotiable, meaning the kind of no-humans-in-the-loop automation we keep expecting to see sweep through the economy just hasn’t shown up yet. The prospect of flipping that script is why we’re thrilled to be leading the $40 million Series Seed investment into TypeSafe, a new San Francisco-based company stacked with veterans of the world’s top AI research labs that is building a class of models actually optimized for automation. (Forbes coverage here.)",
+        "corroborating_source_url": "https://typesafe.ai/",
+        "corroborating_quote": "TypeSafe cofounder and CEO Diogo Almeida"
+      },
+      "rationale": "责任人独立核对已有A轮事实、Diogo Almeida等创始人与Jev产品；DCVC原文与9月种子轮均为同一typesafe.ai公司。只统一应用身份，4000万美元种子轮与8.7亿美元A轮仍是独立融资。"
     }
   ]
 }

@@ -1,0 +1,50 @@
+{
+  "version": "FINANCING-SOURCE-STATUS-REVIEW-1",
+  "event_id": "EV-7a85e21802efd8b2",
+  "source_ref": "SA-cbc55b4bf03e297a",
+  "raw_id": "RAW-f15dbf62b931cf0b",
+  "source_url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation",
+  "content_hash": "78c1fee941fb6b34",
+  "body_sha256": "6650405e0132ed4a42a52511d653681f2e6497fb23b95e9dcf421bc308e82a6f",
+  "quote": "Nous Research, the startup behind the open-source Hermes agent, is finalizing a new round of funding led by Robot Ventures, with significant participation from USV and other prominent investors at a $1.5 billion valuation",
+  "prior_event": {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-07-13T00:00:00.000Z",
+    "disclosed_at": "2026-07-13T00:00:00.000Z",
+    "entities": [],
+    "action": "完成新一轮融资",
+    "object": "Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资",
+    "metrics": [
+      "$1.5 billion"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-99c731c3db3db20e"
+    ],
+    "source_refs": [
+      "SA-cbc55b4bf03e297a"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities",
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-cbc55b4bf03e297a",
+        "disclosed_at": "2026-07-13T00:00:00.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-7a85e21802efd8b2",
+    "display_title_zh": "Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资"
+  },
+  "status": "in_progress",
+  "publication_status": "partial",
+  "reviewed_by": "Codex responsible financing reviewer",
+  "reviewed_at": "2026-10-12T18:57:51.547Z",
+  "producer": "agent-workflow/tools/build-data-center-v4.mjs:eventStatus",
+  "reason": "英文原文明确is finalizing，不能把中文正以…完成误读为完成；保留原事件ID、金额/估值原引文及来源，当前融资以10月确认90M同轮为准。"
+}

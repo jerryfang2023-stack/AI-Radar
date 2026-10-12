@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-12",
     "currentDate": "2026-10-12",
-    "eventCount": 4092,
+    "eventCount": 4104,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,17 +63,20 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-7c00fd2e32bfc4b7",
       "EV-22d03978deef95ad",
       "EV-28bc07b430962e5b"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-10-05",
+    "firstSeen": "2026-09-15",
     "lastSeen": "2026-10-12",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-7c00fd2e32bfc4b7"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
@@ -85,6 +88,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-7c00fd2e32bfc4b7",
+        "dataDate": "2026-10-12",
+        "date": "2026-09-15",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "TypeSafe 结束隐身模式，推出全新 AI 方式",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bc74d4c225d5b7d9"
+        ]
+      },
       {
         "id": "EV-28bc07b430962e5b",
         "dataDate": "2026-10-12",
