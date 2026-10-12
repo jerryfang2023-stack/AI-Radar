@@ -148,7 +148,7 @@ jobs:
           const state=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/financing-publication/ci-status.json'));
           const status=state.status==='passed'?'review_required':state.status;
           fs.appendFileSync(process.env.GITHUB_OUTPUT,`status=${status}\nhead_sha=${state.head_sha}\n`);
-          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,`## Financing publication: ${status}\n\nPR: ${state.pr_url}\n\nAccepted head: ${state.head_sha}\n\n${state.run_url ? 'Production CI: '+state.run_url+'\n\n' : ''}${state.status==='awaiting_approval'?'Review and approve this exact CI run, then resume review/merge and publication.':'Codex must review the accepted sources and facts after both production checks pass.'}\n\nAccepted collection and research are retained; resume the pending publication stage.\n`);
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,`## Financing publication: ${status}\n\nPR: ${state.pr_url}\n\nAccepted head: ${state.head_sha}\n\n${state.run_url ? 'Production CI: '+state.run_url+'\n\n' : ''}${state.status==='awaiting_approval'?'Review and approve this exact CI run, then resume review/merge and publication.':state.status==='passed'?'review_required: Codex must review '+state.pr_url+' at '+state.head_sha+' before merging.':'Codex must review the accepted sources and facts after both production checks pass.'}\n\nAccepted collection and research are retained; resume the pending publication stage.\n`);
           NODE
       - name: Save publication recovery status
         if: always() && steps.publication.outcome != 'skipped'
