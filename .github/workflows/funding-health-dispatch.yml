@@ -1,7 +1,10 @@
 name: WaveSight Financing Health Dispatch
 on:
-  # Idempotent daily fallback for the 08:10 local AI financing run.
+  # Primary 08:10 Asia/Shanghai trigger (00:10 UTC) plus 10:30 Asia/Shanghai fallback (02:30 UTC).
+  # dispatch.mjs is idempotent: it skips when the day is already published, awaiting review, or running,
+  # so both schedules are safe to keep and the external 08:10 dispatcher is no longer required.
   schedule:
+    - cron: '10 0 * * *'
     - cron: '30 2 * * *'
   workflow_dispatch:
     inputs:
