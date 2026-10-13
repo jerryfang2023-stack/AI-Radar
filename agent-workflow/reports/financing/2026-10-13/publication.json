@@ -1,0 +1,25 @@
+{
+  "version": "FINANCING-MONITOR-1",
+  "date": "2026-10-13",
+  "status": "ready_for_review",
+  "counts": {
+    "leads": 528,
+    "accepted_originals": 137,
+    "pending": 128,
+    "excluded": 263
+  },
+  "verification": {
+    "version": "FINANCING-VERIFICATION-1",
+    "status": "completed",
+    "counts": {
+      "total": 305,
+      "verified": 0,
+      "excluded": 207,
+      "reviewed": 0,
+      "pending": 98
+    },
+    "ledger": "verification.json"
+  },
+  "next": "merge_pages_portal_and_live_parity",
+  "generated_at": "2026-10-13T03:13:53.834Z"
+}

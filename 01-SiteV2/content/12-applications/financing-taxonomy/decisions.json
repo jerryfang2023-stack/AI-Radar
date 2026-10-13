@@ -31200,7 +31200,168 @@
       "generated_at": "2026-10-12T18:06:32.547Z",
       "reviewed_by": "Codex responsible financing reviewer",
       "reviewed_at": "2026-10-12T18:59:56.447Z"
+    },
+    "EV-ebaf045f180333dc": {
+      "id": "EV-ebaf045f180333dc",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "Scarlet 为 AI 医疗器械提供认证审核服务，属医疗行业 AI 服务。",
+      "input_hash": "e0cdfc9d660fda72b756fda763018d22c3102fa5b2910c2575f7e6495b6103c0",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c2bc2be66fddfb8a",
+          "quote": "Scarlet, the certification body for AI and software medical devices, today announced a $50 million Series B"
+        },
+        {
+          "source_id": "FISRC-9196fce596a4d511",
+          "quote": "Founded in 2021, Scarlet decides whether other companies' AI medical devices can be sold."
+        },
+        {
+          "source_id": "FISRC-9196fce596a4d511",
+          "quote": "Customers upload technical documentation in any format, and qualified reviewers check it against regulations to decide if a product can ship. The subscription includes continuous surveillance, annual audits, and product adjustments."
+        },
+        {
+          "source_id": "FISRC-f7bcadee2f6bb333",
+          "quote": "Through their team of expert assessors working with AI agents, Scarlet operates with a level of efficiency that is unmatched in their industry."
+        },
+        {
+          "source_id": "FISRC-f7bcadee2f6bb333",
+          "quote": "By using AI agents to support assessors, Scarlet is transforming an industry bound by human pace and accelerating it to AI’s pace."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-13T03:08:10.497Z"
+    },
+    "EV-3d81a794527a5e14": {
+      "id": "EV-3d81a794527a5e14",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "蝴蝶效应主营通用 AI 智能体 Manus 及个人智能体应用 Cue，面向个人消费者。",
+      "input_hash": "bc2716a6023a77b0a7afdcc7816c25614e3b01198110b5d22557ff10444b95c4",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b143f42cd2d50743",
+          "quote": "Manus 是由中国团队创立、后总部迁至新加坡的人工智能初创公司（母公司为蝴蝶效应 Butterfly Effect） 所推出的一款自主通用 AI 智能体（AI Agent）。"
+        },
+        {
+          "source_id": "FISRC-76e356978db85d8f",
+          "quote": "Manus能够独立思考、规划，直接操作电脑执行复杂任务并交付成果"
+        },
+        {
+          "source_id": "FISRC-4c2a1e9d10eaefd8",
+          "quote": "同时推出个人AI智能体应用Cue。该应用中，每个Agent均拥有独立邮箱地址、电话号码以及移动钱包。"
+        },
+        {
+          "source_id": "FISRC-a15374491d9b1f9b",
+          "quote": "Cue面向个人生活场景，与Manus共用基础设施，支持手机和桌面端。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-13T03:08:10.497Z"
+    },
+    "EV-64d88a6be3258064": {
+      "id": "EV-64d88a6be3258064",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "media-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "模思智能自研并开源语音、视觉与多模态 MOSS 系列模型，并通过 API 输出。",
+      "input_hash": "60943593d9041409cac32c845baae08c1dabeabc903efd55b8d8f1a8cb69a895",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2b099c2278c91b1d",
+          "quote": "其已陆续推出MOSS-TTS、MOSS-Audio、MOSS-Transcribe-Diarize、MOSS-VL、MOVA等系列模型，覆盖语音生成、音频理解、语音识别、视觉理解及内容生成等领域。"
+        },
+        {
+          "source_id": "FISRC-0995b2807e2f1dc5",
+          "quote": "近半年时间，模思围绕语音、视觉和实时多模态发布MOSS-TTS、MOSS-Audio等20多个模型，覆盖语音生成、音频理解、语音识别、视觉理解与内容生成等环节，并持续开源。"
+        },
+        {
+          "source_id": "FISRC-a215d1d1de7e7c7f",
+          "quote": "公司已通过开放平台向开发者和企业输出语音合成、转写及视频理解等API能力"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-13T03:08:10.497Z"
+    },
+    "EV-439079c4d9694407": {
+      "id": "EV-439079c4d9694407",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Ambi 为个人消费者提供全天候监听并实时提供智能洞察的助手应用。",
+      "input_hash": "f5be4150e79e663037245cf937f6b0a7592c8ac1d88db04f87bd48347b905666",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-84410a602fe52654",
+          "quote": "The app aims to provide real-time intelligence and insights to people by listening to them all the time."
+        },
+        {
+          "source_id": "FISRC-84410a602fe52654",
+          "quote": "These apps act like meeting notetakers, but users can choose to have them listening so they can capture context all day."
+        },
+        {
+          "source_id": "FISRC-84410a602fe52654",
+          "quote": "Ambi wants to take this a step further by having its agent start the work during the meeting itself."
+        },
+        {
+          "source_id": "FISRC-84410a602fe52654",
+          "quote": "Users can also start a task on one device and continue it on another."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-13T03:08:10.497Z"
     }
   },
-  "generated_at": "2026-10-12T18:15:45.865Z"
+  "generated_at": "2026-10-13T03:08:10.499Z"
 }

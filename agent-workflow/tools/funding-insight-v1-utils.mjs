@@ -1461,7 +1461,7 @@ function canonicalSourceRecipient(event, entities, entityIndex, claims, sourceQu
       // “AI基础设施公司Fluidstack完成15亿美元融资”. Bind the proper name to
       // the same amount-bearing clause and action; do not infer from an investor
       // mention elsewhere in the article or from a headline fragment.
-      const pattern = /公司\s*([A-Z][A-Za-z0-9.&'-]*(?:[ \t]+[A-Z][A-Za-z0-9.&'-]*){0,3})\s*(?:已|宣布)?(?:完成|获得|获|筹集|募得|融资)/gu;
+      const pattern = /公司\s*([A-Z][A-Za-z0-9.&'-]*(?:[ \t]+[A-Z][A-Za-z0-9.&'-]*){0,3})\s*(?:[，,]\s*)?(?:并|且)?(?:已|宣布)?(?:完成|获得|获|筹集|募得|融资)/gu;
       for (const match of clause.matchAll(pattern)) names.add(clean(match[1]));
     }
   }

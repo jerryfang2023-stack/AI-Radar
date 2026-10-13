@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -71,12 +71,12 @@
     "china_market_activity_count": 5,
     "china_market_company_count": 4,
     "first_disclosed_at": "2026-02-05",
-    "latest_disclosed_at": "2026-09-10",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 1,
       "lead": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "pre_series_a",
@@ -102,6 +102,11 @@
         "name": "趋境科技"
       },
       {
+        "entity_id": "EN-2a5cec351194b94a",
+        "canonical_entity_id": "",
+        "name": "上海模思智能科技有限公司"
+      },
+      {
         "entity_id": "EN-9b21c9bf3305c0d6",
         "canonical_entity_id": "EN-9b21c9bf3305c0d6",
         "name": "生数科技"
@@ -113,6 +118,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7685d064b410871a",
+        "funding_insight_id": "FI-24db5bbc2d1045e9",
+        "event_ids": [
+          "EV-64d88a6be3258064"
+        ],
+        "company_entity_id": "EN-2a5cec351194b94a",
+        "company_canonical_entity_id": "",
+        "company_name": "上海模思智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2b099c2278c91b1d",
+            "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+            "source_title": "10亿！上海大模型创企拿下新融资",
+            "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+            "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+            "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b98177ee96f731c5",
         "funding_insight_id": "FI-5797999d683fac6b",
@@ -390,6 +435,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2b099c2278c91b1d",
+        "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+        "source_title": "10亿！上海大模型创企拿下新融资",
+        "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+        "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+        "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+      },
+      {
         "source_id": "FISRC-75f2758fb9aa9e2d",
         "source_url": "https://news.pedaily.cn/202609/568814.shtml",
         "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
@@ -487,12 +540,12 @@
           "source_id": "PROFILE-ab135fdc03eef1e4d192"
         },
         {
-          "description": "融资来源记录：奇点逃逸 · 种子轮 · 2026-08-03 · 本轮联合领投 · 千万级。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8f70de35939e4c3c"
+          "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2b099c2278c91b1d"
         },
         {
-          "description": "融资来源记录：Kando AI · 种子轮 · 2026-07-28 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7b1743cd84f76d48"
+          "description": "融资来源记录：奇点逃逸 · 种子轮 · 2026-08-03 · 本轮联合领投 · 千万级。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8f70de35939e4c3c"
         }
       ],
       "contacts": [],
@@ -538,20 +591,20 @@
           "quote_hash": "11fa5ec0317ba98a30c22d29f7ba28417276ad4e862a4d67d503630622dbafd5"
         },
         {
+          "source_id": "FISRC-2b099c2278c91b1d",
+          "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+          "source_title": "10亿！上海大模型创企拿下新融资",
+          "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+          "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+          "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+        },
+        {
           "source_id": "FISRC-8f70de35939e4c3c",
           "source_url": "https://36kr.com/p/3919025939246727?f=rss",
           "source_title": "让Agent在协作中自进化，清华00后博士获千万元融资 | 36氪首发",
           "source_content_hash": "ef1aa49772b166b7",
           "quote": "由星连资本与水木创投联合领投",
           "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
-        },
-        {
-          "source_id": "FISRC-7b1743cd84f76d48",
-          "source_url": "https://eu.36kr.com/zh/p/3915057199535233",
-          "source_title": "Kando AI完成数千万元种子轮融资 打造决策领域的Cursor｜涌现新项目",
-          "source_content_hash": "a49383a9c435a7e5b1e8a46becbb458e95056fca3271db21b3d3560cc1e3e5ab",
-          "quote": "Kando AI已完成数千万元种子轮融资，星连资本领投，力合金控跟投，知名产业方参与投资。",
-          "quote_hash": "c16f2f9add69766ac08a675555d0acd0c8e7680bfd2d7f5303e5b7db2d45bcae"
         }
       ],
       "last_verified_at": "2026-10-03",

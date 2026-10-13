@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -71,15 +71,17 @@
     "china_market_activity_count": 4,
     "china_market_company_count": 4,
     "first_disclosed_at": "2026-04-16",
-    "latest_disclosed_at": "2026-09-23",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
       "historical_or_ambiguous": 5,
+      "lead": 1,
       "other_current_round": 1,
       "participant": 4
     },
     "round_codes": [
       "angel_plus_plus",
       "multi_round",
+      "pre_series_a",
       "series_b",
       "strategic"
     ],
@@ -105,12 +107,57 @@
         "name": "三启万物"
       },
       {
+        "entity_id": "EN-2a5cec351194b94a",
+        "canonical_entity_id": "",
+        "name": "上海模思智能科技有限公司"
+      },
+      {
         "entity_id": "EN-67895119a5182d06",
         "canonical_entity_id": "",
         "name": "息壤开物"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-808d5076a0061006",
+        "funding_insight_id": "FI-24db5bbc2d1045e9",
+        "event_ids": [
+          "EV-64d88a6be3258064"
+        ],
+        "company_entity_id": "EN-2a5cec351194b94a",
+        "company_canonical_entity_id": "",
+        "company_name": "上海模思智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2b099c2278c91b1d",
+            "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+            "source_title": "10亿！上海大模型创企拿下新融资",
+            "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+            "quote": "由华控基金领投",
+            "quote_hash": "dddf43e430eba261cb2dab9a9da7b9d078ee88d475d5bd3b09e6574c69249f6a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7d912a3786846d36",
         "funding_insight_id": "FI-a2fd2365924904e7",
@@ -485,6 +532,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2b099c2278c91b1d",
+        "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+        "source_title": "10亿！上海大模型创企拿下新融资",
+        "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+        "quote": "由华控基金领投",
+        "quote_hash": "dddf43e430eba261cb2dab9a9da7b9d078ee88d475d5bd3b09e6574c69249f6a"
+      },
+      {
         "source_id": "FISRC-41f074703465b30a",
         "source_url": "https://m.pedaily.cn/news/569562",
         "source_title": "Physical AI创业公司息壤开物连获数亿元融资 AI 2026-09-23 16:38",
@@ -649,16 +704,16 @@
           "source_id": "tcapital_award"
         },
         {
+          "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮领投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2b099c2278c91b1d"
+        },
+        {
           "description": "融资来源记录：息壤开物 · 多轮融资 · 2026-09-23 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-41f074703465b30a"
         },
         {
           "description": "融资来源记录：北京词元无限科技有限公司 · 天使++轮 · 2026-07-27 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b6fa3ffcb3824907"
-        },
-        {
-          "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 本轮参投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a4dbd49c64cb5834"
         }
       ],
       "contacts": [
@@ -741,6 +796,14 @@
           "quote_hash": "ae12d66b5c3cb38e140f5523646ded4a8e8275d0fa34ef15692dc2fa995c89d1"
         },
         {
+          "source_id": "FISRC-2b099c2278c91b1d",
+          "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+          "source_title": "10亿！上海大模型创企拿下新融资",
+          "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+          "quote": "由华控基金领投",
+          "quote_hash": "dddf43e430eba261cb2dab9a9da7b9d078ee88d475d5bd3b09e6574c69249f6a"
+        },
+        {
           "source_id": "FISRC-41f074703465b30a",
           "source_url": "https://m.pedaily.cn/news/569562",
           "source_title": "Physical AI创业公司息壤开物连获数亿元融资 AI 2026-09-23 16:38",
@@ -755,14 +818,6 @@
           "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
           "quote": "本轮融资由临芯投资领投，华控基金跟投。",
           "quote_hash": "658b02692bcf24193cf84b4e395622cdb5b5d333505d4f30fee997cfe447212c"
-        },
-        {
-          "source_id": "FISRC-a4dbd49c64cb5834",
-          "source_url": "https://news.pedaily.cn/202607/565779.shtml",
-          "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
-          "source_content_hash": "3e7e05417d6a96b1",
-          "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
-          "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
         }
       ],
       "coverage_status": "researched",

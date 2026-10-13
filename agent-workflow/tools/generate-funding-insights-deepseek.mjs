@@ -22,6 +22,7 @@ import {
   FUNDING_MARKET_SUBCATEGORY_PARENTS,
   clean,
   canonicalFundingEventAmount,
+  canonicalFundingEventRound,
   ensureCanonicalFundingEvidence,
   ensureNamedCompanyEvidence,
   entityResolver,
@@ -94,10 +95,12 @@ export function selectFundingEventsForGeneration(events = [], {
   const publishedEventIds = new Set(publishedCards
     .flatMap((card) => card.source_event_ids || [card.triggered_by_event_id])
     .filter(Boolean));
-  const publishedAggregationKey = (card) => (
-    card.aggregation?.key
-    || `${card.company?.entity_id || clean(card.company?.name).toLowerCase()}|${normalizeFundingRound(card.financing?.round_original || card.financing?.round).code}`
-  );
+  // Frontstage aggregation appends amount/date to this identity. Those fields
+  // remain checked by publishedCardMatchesEvent, rather than making the two
+  // key formats incomparable.
+  const publishedAggregationKey = (card) => card.aggregation?.key
+    ? card.aggregation.key.split("|").slice(0,2).join("|")
+    : `${card.company?.entity_id || clean(card.company?.name).toLowerCase()}|${normalizeFundingRound(card.financing?.round_original || card.financing?.round).code}`;
   return events.reduce((selection, event) => {
     const aggregationKey = eventAggregationKey(event);
     if (currentEventIds.has(event.event_id)) selection.reused.push(event);
@@ -126,13 +129,7 @@ export function sameFundingDisclosureForReuse(event, card, claims = []) {
 export function fundingEventAggregationKey(event, bundle, entityIndex = {}) {
   const company = subjectCompanyForEvent(event, bundle.entities, entityIndex, bundle.claims);
   if (!company?.entity_id) return "";
-  const claimById = new Map(bundle.claims.map((claim) => [claim.claim_id, claim]));
-  const roundEvidence = [
-    event.object,
-    event.display_title_zh,
-    ...(event.claim_refs || []).map((claimId) => claimById.get(claimId)?.source_quote),
-  ].filter(Boolean).join(" ");
-  return `${company.entity_id}|${normalizeFundingRound(roundEvidence).code}`;
+  return `${company.entity_id}|${canonicalFundingEventRound(event, bundle.claims).code}`;
 }
 
 function publishedFundingCards(projectRoot, excludedOutput = "") {

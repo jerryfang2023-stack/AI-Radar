@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,79 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-12",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f763ca7aa9ae2ff2",
+        "canonical_entity_id": "",
+        "name": "Scarlet"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-c30a658e6cc2d00d",
+        "funding_insight_id": "FI-2a662caaa655e995",
+        "event_ids": [
+          "EV-ebaf045f180333dc"
+        ],
+        "company_entity_id": "EN-f763ca7aa9ae2ff2",
+        "company_canonical_entity_id": "",
+        "company_name": "Scarlet",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c2bc2be66fddfb8a",
+            "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+            "source_title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+            "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+            "quote": "existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First",
+            "quote_hash": "bffa9902152b3f60a0be14f69d34bb42c32a24166946e206eb46489415c01cf5"
+          },
+          {
+            "source_id": "FISRC-5f20202ab3b889f7",
+            "source_url": "https://techfundingnews.com/scarlet-raises-50m-series-b-headline-ai-medical-device-certification/",
+            "source_title": "Ex-Babylon engineers&#8217; Scarlet raises $50M from Headline to certify AI medical devices faster",
+            "source_content_hash": "e2e353c5cf497e02",
+            "quote": "The existing investors Atomico, Creandum, Kindred Capital and Entrepreneurs First are also participating in this round.",
+            "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a65f8d6eddc4a8be",
         "funding_insight_id": "FI-27c50f0e1e7dd316",
@@ -111,6 +168,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c2bc2be66fddfb8a",
+        "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+        "source_title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+        "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+        "quote": "existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First",
+        "quote_hash": "bffa9902152b3f60a0be14f69d34bb42c32a24166946e206eb46489415c01cf5"
+      },
+      {
+        "source_id": "FISRC-5f20202ab3b889f7",
+        "source_url": "https://techfundingnews.com/scarlet-raises-50m-series-b-headline-ai-medical-device-certification/",
+        "source_title": "Ex-Babylon engineers&#8217; Scarlet raises $50M from Headline to certify AI medical devices faster",
+        "source_content_hash": "e2e353c5cf497e02",
+        "quote": "The existing investors Atomico, Creandum, Kindred Capital and Entrepreneurs First are also participating in this round.",
+        "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
+      },
       {
         "source_id": "FISRC-a09bc7e6d17a0b0f",
         "source_url": "https://www.electronicsweekly.com/news/business/uks-fractile-raises-220m-for-inference-ics-2026-05/",
@@ -159,6 +232,10 @@
         {
           "description": "官网组合页列出 Paddle、Five AI、Animal Dynamics、Qriously 等 2016–2017 年投资案例，以及 RobCo、Cradle Bio、Fractile 等后续投资；属于官网展示的组合案例。",
           "source_id": "kindred_examples"
+        },
+        {
+          "description": "融资来源记录：Scarlet · B轮 · 2026-10-12 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c2bc2be66fddfb8a"
         },
         {
           "description": "融资来源记录：Fractile · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -290,6 +367,22 @@
           "source_content_hash": "39e7769e2320cc3692f1d01155bb947f15f4fd2246702000414f094e17ebef16",
           "quote": "Registered address 1st Floor, West, Percy House, 33 Gresse St, London W1T 1QU.",
           "quote_hash": "98944f24c27346f76a97929262b3e16552b1076f41ea4da907e4de3fc5e302bd"
+        },
+        {
+          "source_id": "FISRC-c2bc2be66fddfb8a",
+          "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+          "source_title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+          "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+          "quote": "existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First",
+          "quote_hash": "bffa9902152b3f60a0be14f69d34bb42c32a24166946e206eb46489415c01cf5"
+        },
+        {
+          "source_id": "FISRC-5f20202ab3b889f7",
+          "source_url": "https://techfundingnews.com/scarlet-raises-50m-series-b-headline-ai-medical-device-certification/",
+          "source_title": "Ex-Babylon engineers&#8217; Scarlet raises $50M from Headline to certify AI medical devices faster",
+          "source_content_hash": "e2e353c5cf497e02",
+          "quote": "The existing investors Atomico, Creandum, Kindred Capital and Entrepreneurs First are also participating in this round.",
+          "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
         },
         {
           "source_id": "FISRC-a09bc7e6d17a0b0f",

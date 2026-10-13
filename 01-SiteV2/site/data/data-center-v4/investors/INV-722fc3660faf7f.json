@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -71,11 +71,11 @@
     "china_market_activity_count": 3,
     "china_market_company_count": 3,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-09-24",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
@@ -96,6 +96,11 @@
         "name": "开放传神（OpenCSG）"
       },
       {
+        "entity_id": "EN-2a5cec351194b94a",
+        "canonical_entity_id": "",
+        "name": "上海模思智能科技有限公司"
+      },
+      {
         "entity_id": "EN-f78336305b0bc8bc",
         "canonical_entity_id": "",
         "name": "晰见科技"
@@ -112,6 +117,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1041160dab05b92e",
+        "funding_insight_id": "FI-24db5bbc2d1045e9",
+        "event_ids": [
+          "EV-64d88a6be3258064"
+        ],
+        "company_entity_id": "EN-2a5cec351194b94a",
+        "company_canonical_entity_id": "",
+        "company_name": "上海模思智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2b099c2278c91b1d",
+            "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+            "source_title": "10亿！上海大模型创企拿下新融资",
+            "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+            "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+            "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+          }
+        ]
+      },
       {
         "activity_id": "IA-76ba6bd2df36bcbd",
         "funding_insight_id": "FI-f138ed951484efaa",
@@ -365,6 +410,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2b099c2278c91b1d",
+        "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+        "source_title": "10亿！上海大模型创企拿下新融资",
+        "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+        "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+        "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+      },
+      {
         "source_id": "FISRC-735024582f88eccf",
         "source_url": "https://news.pedaily.cn/202609/569586.shtml",
         "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
@@ -458,16 +511,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2b099c2278c91b1d"
+        },
+        {
           "description": "融资来源记录：北京清醒异构科技有限公司 · A+轮 · 2026-09-24 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-735024582f88eccf"
         },
         {
           "description": "融资来源记录：开放传神（OpenCSG） · Pre-A轮 · 2026-08-31 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed4f088f02c38455"
-        },
-        {
-          "description": "融资来源记录：晰见科技 · 多轮融资 · 2026-08-27 · 本轮参投 · 近5亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7ae3651fb91fc1f1"
         }
       ],
       "contacts": [],
@@ -497,6 +550,14 @@
           "quote_hash": "31b528afc720d8943b4421f2618cdec97169b6b00e81a8704e594abd40f5f39e"
         },
         {
+          "source_id": "FISRC-2b099c2278c91b1d",
+          "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+          "source_title": "10亿！上海大模型创企拿下新融资",
+          "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+          "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+          "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+        },
+        {
           "source_id": "FISRC-735024582f88eccf",
           "source_url": "https://news.pedaily.cn/202609/569586.shtml",
           "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
@@ -511,14 +572,6 @@
           "source_content_hash": "4fa5b4b2071cbe25f6578f34ac0b632b0cd5ffb051655b692b67b3d70070ee5c",
           "quote": "本轮融资由静安资本、市北高新、徐汇资本、黄海金控等共同参与。",
           "quote_hash": "3a3539b13795473cf4cac7e484583e146dd047dd522351c629ff4d34202bc86f"
-        },
-        {
-          "source_id": "FISRC-7ae3651fb91fc1f1",
-          "source_url": "https://news.pedaily.cn/202608/568184.shtml",
-          "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
-          "source_content_hash": "c5b71d91ca82e3f7a35c6ed1119b2c49f2be359e102c13b0b78c4ed76ac706b1",
-          "quote": "投资方包括徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本，以及具身智能、汽车产业链龙头企业等",
-          "quote_hash": "ece0f1d926cedbeba4071e2121c06f1c98a8a61a8f9fbd0ee5f7822d56e4ddac"
         }
       ],
       "last_verified_at": "2026-10-03",

@@ -1,0 +1,3597 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-10-13",
+    "generated_at": "2026-10-13T03:01:14.631Z",
+    "trigger": "accepted_financing_event_research",
+    "research_provider": "search-gateway+direct-original+deepseek",
+    "model": "deepseek-flash",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 32,
+      "auto_published": 4,
+      "blocked": 0,
+      "pending": 3,
+      "deduplicated": 25
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-8faeaf1326fb64b7",
+      "triggered_by_event_id": "EV-ebaf045f180333dc",
+      "as_of_date": "2026-10-13",
+      "company": {
+        "entity_id": "EN-f763ca7aa9ae2ff2",
+        "name": "Scarlet",
+        "full_name": "Scarlet",
+        "website": "https://www.scarlet.cc",
+        "summary": "Scarlet 是一家面向 AI 与软件医疗器械的认证机构，成立于 2021 年，由前 Babylon Health 医疗 AI 工程师创立，作为欧盟公告机构、英国 MHRA 批准机构及美国 FDA 认可的第三方审查组织，为医疗器械企业提供认证服务。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "James Dewar",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f7bcadee2f6bb333",
+                "quote": "Scarlet was founded by two machine learning (ML) engineers, James Dewar and Jamie Cox",
+                "source_content_hash": "79c9b7330aca5d75",
+                "quote_hash": "0e37aa601a79ca51b6d1a1975196ddce24ea2024d44359efa71c2d23484eebb2"
+              },
+              {
+                "source_id": "FISRC-5f20202ab3b889f7",
+                "quote": "James Dewar and Jamie Cox were both involved in the development of medical AI at Babylon Health",
+                "source_content_hash": "e2e353c5cf497e02",
+                "quote_hash": "a4d0043f633f789b082d3af069ffe89ec87b1ce13efa7bf0c02badc25dde2598"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jamie Cox",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f7bcadee2f6bb333",
+                "quote": "Scarlet was founded by two machine learning (ML) engineers, James Dewar and Jamie Cox",
+                "source_content_hash": "79c9b7330aca5d75",
+                "quote_hash": "0e37aa601a79ca51b6d1a1975196ddce24ea2024d44359efa71c2d23484eebb2"
+              },
+              {
+                "source_id": "FISRC-5f20202ab3b889f7",
+                "quote": "James Dewar and Jamie Cox were both involved in the development of medical AI at Babylon Health",
+                "source_content_hash": "e2e353c5cf497e02",
+                "quote_hash": "a4d0043f633f789b082d3af069ffe89ec87b1ce13efa7bf0c02badc25dde2598"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c2bc2be66fddfb8a",
+            "quote": "Scarlet, the certification body for AI and software medical devices, today announced a $50 million Series B",
+            "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+            "quote_hash": "cab2eeebfd9ab92c9e2aec984d45dd700000331d813af9a2ffff6f8b8d8cb828"
+          },
+          {
+            "source_id": "FISRC-9196fce596a4d511",
+            "quote": "Founded in 2021, Scarlet decides whether other companies' AI medical devices can be sold.",
+            "source_content_hash": "b834b2e132701625",
+            "quote_hash": "49b2798657d06815970d3d33435c9f49797048a82344dc8bd24311ac60b72572"
+          }
+        ],
+        "application_entity_id": "EN-f763ca7aa9ae2ff2",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "$50 million",
+        "total_raised": "more than $75 million",
+        "announced_at": "2026-10-12",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Headline",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2bc2be66fddfb8a",
+                "quote": "a $50 million Series B led by Headline",
+                "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+                "quote_hash": "0b81ae739dfab8f4f3d2c841cd399686e6d528af49fecf113f458718cbf8340c"
+              },
+              {
+                "source_id": "FISRC-5f20202ab3b889f7",
+                "quote": "with Headline acting as the lead investor",
+                "source_content_hash": "e2e353c5cf497e02",
+                "quote_hash": "f4bfb4bcde28c90a5f9b67dd431bce323a705902487d8451eb57833aa1c013cd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Notion Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2bc2be66fddfb8a",
+                "quote": "with participation from new investor Notion Capital",
+                "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+                "quote_hash": "73c97bb42a133874b93204a712f08672900d04e159957fafca03b3f353ccbef5"
+              },
+              {
+                "source_id": "FISRC-5f20202ab3b889f7",
+                "quote": "Notion Capital is joining the round as a new investor",
+                "source_content_hash": "e2e353c5cf497e02",
+                "quote_hash": "8fb85b8b7b51bff40ab3fbe595c1d0feaf8db95d9fe87a10c5e4588997a9e863"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Atomico",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2bc2be66fddfb8a",
+                "quote": "existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First",
+                "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+                "quote_hash": "bffa9902152b3f60a0be14f69d34bb42c32a24166946e206eb46489415c01cf5"
+              },
+              {
+                "source_id": "FISRC-5f20202ab3b889f7",
+                "quote": "The existing investors Atomico, Creandum, Kindred Capital and Entrepreneurs First are also participating in this round.",
+                "source_content_hash": "e2e353c5cf497e02",
+                "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Creandum",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2bc2be66fddfb8a",
+                "quote": "existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First",
+                "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+                "quote_hash": "bffa9902152b3f60a0be14f69d34bb42c32a24166946e206eb46489415c01cf5"
+              },
+              {
+                "source_id": "FISRC-5f20202ab3b889f7",
+                "quote": "The existing investors Atomico, Creandum, Kindred Capital and Entrepreneurs First are also participating in this round.",
+                "source_content_hash": "e2e353c5cf497e02",
+                "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kindred Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2bc2be66fddfb8a",
+                "quote": "existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First",
+                "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+                "quote_hash": "bffa9902152b3f60a0be14f69d34bb42c32a24166946e206eb46489415c01cf5"
+              },
+              {
+                "source_id": "FISRC-5f20202ab3b889f7",
+                "quote": "The existing investors Atomico, Creandum, Kindred Capital and Entrepreneurs First are also participating in this round.",
+                "source_content_hash": "e2e353c5cf497e02",
+                "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Entrepreneurs First",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2bc2be66fddfb8a",
+                "quote": "existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First",
+                "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+                "quote_hash": "bffa9902152b3f60a0be14f69d34bb42c32a24166946e206eb46489415c01cf5"
+              },
+              {
+                "source_id": "FISRC-5f20202ab3b889f7",
+                "quote": "The existing investors Atomico, Creandum, Kindred Capital and Entrepreneurs First are also participating in this round.",
+                "source_content_hash": "e2e353c5cf497e02",
+                "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Creandum",
+            "role": "2022年种子轮组织方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5f20202ab3b889f7",
+                "quote": "Scarlet raised £6 million in a seed round organised by Creandum in August 2022",
+                "source_content_hash": "e2e353c5cf497e02",
+                "quote_hash": "12852e9c7a65ff436be2f1f7039c8d1b51dcd6fd8390a6236c8835a00aea475d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Atomico",
+            "role": "2024年A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5f20202ab3b889f7",
+                "quote": "$17.5 million in a Series A round led by Atomico in June 2024",
+                "source_content_hash": "e2e353c5cf497e02",
+                "quote_hash": "de3493ae3bbe9f87cdfd5fa1080955a31ea765aa6c933877760042fbb6d08337"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c2bc2be66fddfb8a",
+            "quote": "Scarlet, the certification body for AI and software medical devices, today announced a $50 million Series B led by Headline, with participation from new investor Notion Capital and existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First.",
+            "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+            "quote_hash": "fa1ed5177b9f5b473a0577f6b07ffef0a9eb8536dda372d4acca276267b8765e"
+          },
+          {
+            "source_id": "FISRC-9196fce596a4d511",
+            "quote": "Scarlet raised £6 million in a 2022 seed round and $17.5 million in a Series A led by Atomico in June 2024, bringing total funding past $75 million.",
+            "source_content_hash": "b834b2e132701625",
+            "quote_hash": "55ab7838db68e8ca08ca70d9203d281ce797e10b7318839bbfed63f7acf56366"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "total_raised_original": "more than $75 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 75000000,
+          "min_value": 75000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 7500 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-ebaf045f180333dc",
+            "round_original": "B轮",
+            "amount": "$50 million",
+            "announced_at": "2026-10-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c2bc2be66fddfb8a",
+                "quote": "Scarlet, the certification body for AI and software medical devices, today announced a $50 million Series B led by Headline, with participation from new investor Notion Capital and existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First.",
+                "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+                "quote_hash": "fa1ed5177b9f5b473a0577f6b07ffef0a9eb8536dda372d4acca276267b8765e"
+              },
+              {
+                "source_id": "FISRC-9196fce596a4d511",
+                "quote": "Scarlet raised £6 million in a 2022 seed round and $17.5 million in a Series A led by Atomico in June 2024, bringing total funding past $75 million.",
+                "source_content_hash": "b834b2e132701625",
+                "quote_hash": "55ab7838db68e8ca08ca70d9203d281ce797e10b7318839bbfed63f7acf56366"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "AI 医疗器械认证服务",
+          "description": "Scarlet 作为认证机构，客户可上传任意格式的技术文档，由合格审查员对照法规核查，决定产品能否上市；订阅服务包含持续监督、年度审计和产品调整。",
+          "target_customers": "AI 与软件医疗器械制造商",
+          "features": [
+            "客户上传任意格式技术文档",
+            "合格审查员对照法规核查",
+            "订阅包含持续监督、年度审计与产品调整",
+            "记录所有发现供监管机构随时审查决策理由"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "Customers upload technical documentation in any format, and qualified reviewers check it against regulations to decide if a product can ship. The subscription includes continuous surveillance, annual audits, and product adjustments.",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "9cab2243d59ac4c5d251d769f2ce18c6c0b544c848574d4513bd2fd01b99e739"
+            },
+            {
+              "source_id": "FISRC-5f20202ab3b889f7",
+              "quote": "Scarlet says it records all findings, enabling regulators to examine the reasons for each decision at any time.",
+              "source_content_hash": "e2e353c5cf497e02",
+              "quote_hash": "57f3791e85fc9930d570d8d579cb5ec5eb6dbfc0c475b36b357ffb4e2c33ef4d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI 原生认证流程",
+          "description": "Scarlet 通过专家评估团队配合 AI agents 提升评估效率，将认证从人工节奏推进到 AI 节奏，适配 AI 与软件产品快速迭代的更新需求。",
+          "target_customers": "需要频繁更新产品的 AI 医疗器械企业",
+          "features": [
+            "专家评估团队配合 AI agents",
+            "适配 AI 产品迭代式更新",
+            "快速处理产品更新与变更"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f7bcadee2f6bb333",
+              "quote": "Through their team of expert assessors working with AI agents, Scarlet operates with a level of efficiency that is unmatched in their industry.",
+              "source_content_hash": "79c9b7330aca5d75",
+              "quote_hash": "35360b3941a82b1b301e42844c7e8d22ab430ef16380519bcb877f44e6fc5f31"
+            },
+            {
+              "source_id": "FISRC-f7bcadee2f6bb333",
+              "quote": "By using AI agents to support assessors, Scarlet is transforming an industry bound by human pace and accelerating it to AI’s pace.",
+              "source_content_hash": "79c9b7330aca5d75",
+              "quote_hash": "b340b9cd771524673b87050170925f121cbdcd46d7d3c486fd351c096a8de2ee"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Flo Health",
+          "industry": "医疗健康",
+          "use_case": "AI 医疗器械认证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "Its customers include Flo Health, with more than 500 million downloads",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "f9677bba4fae114c4112de709c574ab39743849942b2c345284dd63d8373fd1c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "DeepHealth",
+          "industry": "医疗影像",
+          "use_case": "AI 医疗器械认证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "US radiology provider DeepHealth",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "cd154506d8c87ccc1fc4c41fdcd4cf89306263d9628697d500bd7e1be36f3a8c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "NHS England",
+          "industry": "公共医疗",
+          "use_case": "AI 医疗器械认证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "NHS England",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "6e24a25217bf391b4f6608e4b84ce7e5ea920a7fe44d566164c9de8778b881b4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Skin Analytics",
+          "industry": "医疗健康",
+          "use_case": "AI 皮肤癌检测设备认证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "cancer-detection firm Skin Analytics",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "b06943115e186bb350f2eb9d985c95f2796350f1c7c0eab69439fdfb8f0d4233"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Heidi",
+          "industry": "医疗健康",
+          "use_case": "AI 医疗记录工具认证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "AI scribe companies Heidi and Tandem Health",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "122128cd426d75281576e5befaa0da8538af83fc7b3ae4e29f306bd2531d94ab"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Tandem Health",
+          "industry": "医疗健康",
+          "use_case": "AI 医疗记录工具认证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "AI scribe companies Heidi and Tandem Health",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "122128cd426d75281576e5befaa0da8538af83fc7b3ae4e29f306bd2531d94ab"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$50 million",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c2bc2be66fddfb8a",
+              "quote": "today announced a $50 million Series B",
+              "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+              "quote_hash": "2f053bd400c638c95196c800b88fddadf9f3e925e47ee26ac0d8128a1b960fab"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "more than $75 million",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "bringing total funding past $75 million",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "256d1b98df3d81497091a3b2af6761f3ce0b554738428de85ce64650018fb1d5"
+            }
+          ]
+        },
+        {
+          "label": "2022年种子轮金额",
+          "value": "£6 million",
+          "observed_at": "2022-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5f20202ab3b889f7",
+              "quote": "Scarlet raised £6 million in a seed round organised by Creandum in August 2022",
+              "source_content_hash": "e2e353c5cf497e02",
+              "quote_hash": "12852e9c7a65ff436be2f1f7039c8d1b51dcd6fd8390a6236c8835a00aea475d"
+            }
+          ]
+        },
+        {
+          "label": "2024年A轮金额",
+          "value": "$17.5 million",
+          "observed_at": "2024-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5f20202ab3b889f7",
+              "quote": "$17.5 million in a Series A round led by Atomico in June 2024",
+              "source_content_hash": "e2e353c5cf497e02",
+              "quote_hash": "de3493ae3bbe9f87cdfd5fa1080955a31ea765aa6c933877760042fbb6d08337"
+            }
+          ]
+        },
+        {
+          "label": "AI 诊断模型评估周期",
+          "value": "12 至 18 个月",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "assessment runs 12 to 18 months, with minor updates adding six to eight months",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "f0a57cd42f1178194eac366ed6c42dd996687dc880576f66ec47f9e6e2191974"
+            }
+          ]
+        },
+        {
+          "label": "Flo Health 下载量",
+          "value": "超过 5 亿次",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "Flo Health, with more than 500 million downloads",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "0c17ecc80ac75b44ba02be81e1ad00061f456e280b965e3873a1c0106afc77e6"
+            }
+          ]
+        },
+        {
+          "label": "欧盟 MDR 指定机构数量",
+          "value": "约 52 家",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "the roughly 52 bodies designated under the EU Medical Device Regulation",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "72fae4661989eeb0fdcbf94786e0ff2d4f2f9b3b774820212736d27deef33ccd"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "James Dewar",
+          "quote": "On each day that safe and effective medical technology is not available, a person's life takes a different turn",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9196fce596a4d511",
+              "quote": "\"On each day that safe and effective medical technology is not available, a person's life takes a different turn,\" said co-founder James Dewar.",
+              "source_content_hash": "b834b2e132701625",
+              "quote_hash": "1435f35d9e101760d9a44610d3bfd3f59918b1928d9e674adacf3aff314d0149"
+            }
+          ]
+        },
+        {
+          "speaker": "Nancy Xiao Mclaughlin",
+          "quote": "Scarlet helps regulation work with and for, not against, innovation. James and Jamie experienced the legacy certification process firsthand and decided to become the AI-native market enabler, starting with certifying AI and software as medical devices.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5f20202ab3b889f7",
+              "quote": "“Scarlet helps regulation work with and for, not against, innovation. James and Jamie experienced the legacy certification process firsthand and decided to become the AI-native market enabler, starting with certifying AI and software as medical devices.”",
+              "source_content_hash": "e2e353c5cf497e02",
+              "quote_hash": "1a21a2c94c9605c687f61ce48e0bd8259f265e306904fac5f5bd61cb8e185dc8"
+            }
+          ]
+        },
+        {
+          "speaker": "Jamie Cox",
+          "quote": "In Notion we have found partners who share our vision for what global AI certification can become and the impact it will have for healthcare around the world.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f7bcadee2f6bb333",
+              "quote": "“In Notion we have found partners who share our vision for what global AI certification can become and the impact it will have for healthcare around the world.",
+              "source_content_hash": "79c9b7330aca5d75",
+              "quote_hash": "f6d6b5584bdad5fb45181ca539a6ace8aa352c30d2b4b4778fbc91758cf419d5"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：AI 医疗器械数量增长快于认证机构审查能力，形成认证瓶颈市场；Scarlet 作为欧盟 MDR 约 52 家指定机构中唯一专注软件与 AI 的机构，同时持有欧盟、英国 MHRA 和美国 FDA 第三方审查资质，并以 AI agents 辅助评估提升认证速度。已验证信号包括：本轮 $50M Series B 由 Headline 领投、Notion Capital 新加入、Atomico 等既有投资方继续参与；累计融资超过 $75M；客户包括 Flo Health、DeepHealth、NHS England、Skin Analytics、Heidi、Tandem Health 等。证据边界：公司未披露估值与员工人数；AI 医疗器械市场规模预测存在十倍差异，说明预测不确定性高；Scarlet 能否在收费客户面前公开拒绝认证仍是未验证的运营难点。",
+        "validated_signals": [
+          "本轮 $50M Series B 由 Headline 领投，Notion Capital 新加入，Atomico、Creandum、Kindred Capital、Entrepreneurs First 继续参与",
+          "累计融资超过 $75M",
+          "Scarlet 是欧盟 MDR 约 52 家指定机构中唯一专注软件与 AI 的机构",
+          "持有欧盟公告机构、英国 MHRA 批准机构、美国 FDA 第三方审查组织资质",
+          "客户包括 Flo Health、DeepHealth、NHS England、Skin Analytics、Heidi、Tandem Health",
+          "通过专家评估团队配合 AI agents 提升评估效率"
+        ],
+        "risks": [
+          "公司未披露估值与员工人数，资本判断缺少估值锚点",
+          "AI 医疗器械市场规模预测存在十倍差异，市场增速假设不确定性高",
+          "Scarlet 若需公开拒绝付费客户认证，可能面临商业与监管冲突",
+          "认证周期从 12 至 18 个月压缩至数周的效果尚未有独立第三方验证",
+          "美国与亚太扩张计划尚处投入阶段，收入贡献未披露"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "healthcare_life_sciences",
+        "market_application_id": "",
+        "use_case_ids": [
+          "legal_compliance"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI 与软件医疗器械认证服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI 医疗器械数量增长快于认证机构审查能力，形成认证瓶颈市场；Scarlet 作为欧盟 MDR 约 52 家指定机构中唯一专注软件与 AI 的机构，同时持有欧盟、英国 MHRA 和美国 FDA 第三方审查资质，并以 AI agents 辅助评估提升认证速度。已验证信号包括：本轮 $50M Series B 由 Headline 领投、Notion Capital 新加入、Atomico 等既有投资方继续参与；累计融资超过 $75M；客户包括 Flo Health、DeepHealth、NHS England、Skin Analytics、Heidi、Tandem Health 等。证据边界：公司未披露估值与员工人数；AI 医疗器械市场规模预测存在十倍差异，说明预测不确定性高；Scarlet 能否在收费客户面前公开拒绝认证仍是未验证的运营难点。",
+          "evidence_signals": [
+            "本轮 $50M Series B 由 Headline 领投，Notion Capital 新加入，Atomico、Creandum、Kindred Capital、Entrepreneurs First 继续参与",
+            "累计融资超过 $75M",
+            "Scarlet 是欧盟 MDR 约 52 家指定机构中唯一专注软件与 AI 的机构",
+            "持有欧盟公告机构、英国 MHRA 批准机构、美国 FDA 第三方审查组织资质",
+            "客户包括 Flo Health、DeepHealth、NHS England、Skin Analytics、Heidi、Tandem Health",
+            "通过专家评估团队配合 AI agents 提升评估效率"
+          ],
+          "risks": [
+            "公司未披露估值与员工人数，资本判断缺少估值锚点",
+            "AI 医疗器械市场规模预测存在十倍差异，市场增速假设不确定性高",
+            "Scarlet 若需公开拒绝付费客户认证，可能面临商业与监管冲突",
+            "认证周期从 12 至 18 个月压缩至数周的效果尚未有独立第三方验证",
+            "美国与亚太扩张计划尚处投入阶段，收入贡献未披露"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI 医疗器械认证服务",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI 原生认证流程",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "James Dewar",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jamie Cox",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Headline",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Notion Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Atomico",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Creandum",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kindred Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Entrepreneurs First",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Creandum",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Atomico",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Flo Health",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "DeepHealth",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "NHS England",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Skin Analytics",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Heidi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Tandem Health",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-ebaf045f180333dc",
+          "date": "2026-10-12",
+          "title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+          "amount": "$50 million",
+          "source_refs": [
+            "SA-4431a568b9c696c5"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-c2bc2be66fddfb8a",
+          "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+          "title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+          "publisher": "tech.eu",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-13T00:20:35.686Z",
+          "content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+          "source_artifact_id": "SA-4431a568b9c696c5",
+          "raw_id": "RAW-25bbfd3f240ca072"
+        },
+        {
+          "source_id": "FISRC-9196fce596a4d511",
+          "source_url": "https://dealroom.co/news/161748-scarlet-raises-50m-to-speed-up-ai-medical-device-certification/",
+          "title": "Scarlet raises $50M to speed up AI medical device certification",
+          "publisher": "dealroom.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:44.969Z",
+          "content_hash": "b834b2e132701625",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5f20202ab3b889f7",
+          "source_url": "https://techfundingnews.com/scarlet-raises-50m-series-b-headline-ai-medical-device-certification/",
+          "title": "Ex-Babylon engineers&#8217; Scarlet raises $50M from Headline to certify AI medical devices faster",
+          "publisher": "techfundingnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:45.389Z",
+          "content_hash": "e2e353c5cf497e02",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f7bcadee2f6bb333",
+          "source_url": "https://www.notioncapital.com/resources/why-we-invested-in-scarlet",
+          "title": "Why We Invested in Scarlet",
+          "publisher": "notioncapital.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:52.523Z",
+          "content_hash": "79c9b7330aca5d75",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-13T00:29:10.119Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-13T00:29:10.119Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 6,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AI 医疗器械认证服务",
+            "AI 原生认证流程"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "James Dewar",
+            "Jamie Cox"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-ebaf045f180333dc"
+      ],
+      "aggregation": {
+        "key": "EN-f763ca7aa9ae2ff2|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-e775c73305c73e22",
+      "triggered_by_event_id": "EV-3d81a794527a5e14",
+      "as_of_date": "2026-10-13",
+      "company": {
+        "entity_id": "EN-8547a3fca97a330d",
+        "name": "蝴蝶效应（Butterfly Effect）",
+        "full_name": "蝴蝶效应（Butterfly Effect）",
+        "website": "",
+        "summary": "Manus母公司蝴蝶效应是一家AI智能体研发公司，2022年成立，2025年凭借能够自主执行复杂任务的AI智能体产品Manus迅速走红，后总部迁至新加坡，2026年9月恢复独立运营。",
+        "headquarters": "新加坡",
+        "founders": [
+          {
+            "name": "肖弘",
+            "role": "CEO（首席执行官）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fa1b68e4f1bdb348",
+                "quote": "创始团队包括CEO（首席执行官）肖弘，联合创始人和首席科学家季逸超等连续创业者",
+                "source_content_hash": "092b22b325c27f3c",
+                "quote_hash": "d9633f29cece79edbd4f16830f38945535b5813c63b56a0041c72003d2d3dc1b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "季逸超",
+            "role": "联合创始人兼首席科学家",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fa1b68e4f1bdb348",
+                "quote": "创始团队包括CEO（首席执行官）肖弘，联合创始人和首席科学家季逸超等连续创业者",
+                "source_content_hash": "092b22b325c27f3c",
+                "quote_hash": "d9633f29cece79edbd4f16830f38945535b5813c63b56a0041c72003d2d3dc1b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "张涛",
+            "role": "产品合伙人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-76e356978db85d8f",
+                "quote": "产品合伙人张涛的加入，则弥补了早期技术导向团队的商业化短板。",
+                "source_content_hash": "f948181f546c63b3",
+                "quote_hash": "01cde575454aab3e4f179b8f865d0df1d4b55fed97dd0599e533f49d972afc5c"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b143f42cd2d50743",
+            "quote": "Manus 是由中国团队创立、后总部迁至新加坡的人工智能初创公司（母公司为蝴蝶效应 Butterfly Effect） 所推出的一款自主通用 AI 智能体（AI Agent）。",
+            "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+            "quote_hash": "429467363ea8d1b08f88a5a266180439c957cc39c39bcf593f88401905fb48bb"
+          },
+          {
+            "source_id": "FISRC-290d3d243074ee0d",
+            "quote": "Manus母公司蝴蝶效应成立于2022年，2025年凭借能够自主执行复杂任务的AI智能体产品迅速走红。",
+            "source_content_hash": "8348d998fc2c79cd",
+            "quote_hash": "6be1e73414730cb423a34d472fc1a0482f0d10662b4f95754cd2d801254c2af0"
+          }
+        ],
+        "application_entity_id": "EN-8547a3fca97a330d",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "B+轮",
+        "amount": "超过5 亿美元",
+        "total_raised": "",
+        "announced_at": "2026-10-08",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "博裕投资",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b143f42cd2d50743",
+                "quote": "由博裕资本、IDG资本领投，腾讯、红杉中国、真格基金等跟投",
+                "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+                "quote_hash": "0a6fac19e94a09bda490b3406dfd2bf3d08fb4f8a0a48466b2eb162ef120ac43"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IDG资本",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b143f42cd2d50743",
+                "quote": "由博裕资本、IDG资本领投，腾讯、红杉中国、真格基金等跟投",
+                "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+                "quote_hash": "0a6fac19e94a09bda490b3406dfd2bf3d08fb4f8a0a48466b2eb162ef120ac43"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "腾讯",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fa1b68e4f1bdb348",
+                "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+                "source_content_hash": "092b22b325c27f3c",
+                "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
+              }
+            ],
+            "entity_id": "EN-9c8ae69b84f21a2e"
+          },
+          {
+            "name": "红杉中国",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fa1b68e4f1bdb348",
+                "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+                "source_content_hash": "092b22b325c27f3c",
+                "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "真格基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fa1b68e4f1bdb348",
+                "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+                "source_content_hash": "092b22b325c27f3c",
+                "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Benchmark",
+            "role": "2025年4月B轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-76e356978db85d8f",
+                "quote": "2025年4月，产品上线仅一个多月，Manus就以5亿美元估值完成了7500万美元融资，由硅谷知名风投Benchmark领投，腾讯、真格基金、HSG等机构跟投",
+                "source_content_hash": "f948181f546c63b3",
+                "quote_hash": "dc981085c4bbc79298172a64cc0c1cbef1957efdbc1bc956974b9f59f97c4feb"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "HSG",
+            "role": "2025年4月B轮跟投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-76e356978db85d8f",
+                "quote": "2025年4月，产品上线仅一个多月，Manus就以5亿美元估值完成了7500万美元融资，由硅谷知名风投Benchmark领投，腾讯、真格基金、HSG等机构跟投",
+                "source_content_hash": "f948181f546c63b3",
+                "quote_hash": "dc981085c4bbc79298172a64cc0c1cbef1957efdbc1bc956974b9f59f97c4feb"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b143f42cd2d50743",
+            "quote": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
+            "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+            "quote_hash": "ebd89f394efd5c603dc908b940da6035dd648f8beeea923878b847f2e4340dd5"
+          },
+          {
+            "source_id": "FISRC-b143f42cd2d50743",
+            "quote": "10月8日，Manus 母公司蝴蝶效应宣布完成超过 5 亿美元的新一轮融资（由博裕资本、IDG资本领投，腾讯、红杉中国、真格基金等跟投），投后估值达到 40 亿美元，成为中国估值最高的 AI 智能体初创企业。",
+            "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+            "quote_hash": "7c62e4b11da2ba30345c19bffe9d275e9f556749f06ed19a91e9d047229efb21"
+          },
+          {
+            "source_id": "FISRC-fa1b68e4f1bdb348",
+            "quote": "企查查显示，蝴蝶效应此轮融资为“B+”轮，其B轮融资还是在被Meta收购前的2025年4月26日，金额为7500万美元。",
+            "source_content_hash": "092b22b325c27f3c",
+            "quote_hash": "96aae3a8e59eb92d12050f6e1c9ea7b1b3b03338f46e7d21d8f3fa2f97ade27d"
+          }
+        ],
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "超过5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": 500000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3d81a794527a5e14",
+            "round_original": "B+轮",
+            "amount": "超过5 亿美元",
+            "announced_at": "2026-10-08",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b143f42cd2d50743",
+                "quote": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
+                "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+                "quote_hash": "ebd89f394efd5c603dc908b940da6035dd648f8beeea923878b847f2e4340dd5"
+              },
+              {
+                "source_id": "FISRC-b143f42cd2d50743",
+                "quote": "10月8日，Manus 母公司蝴蝶效应宣布完成超过 5 亿美元的新一轮融资（由博裕资本、IDG资本领投，腾讯、红杉中国、真格基金等跟投），投后估值达到 40 亿美元，成为中国估值最高的 AI 智能体初创企业。",
+                "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+                "quote_hash": "7c62e4b11da2ba30345c19bffe9d275e9f556749f06ed19a91e9d047229efb21"
+              },
+              {
+                "source_id": "FISRC-fa1b68e4f1bdb348",
+                "quote": "企查查显示，蝴蝶效应此轮融资为“B+”轮，其B轮融资还是在被Meta收购前的2025年4月26日，金额为7500万美元。",
+                "source_content_hash": "092b22b325c27f3c",
+                "quote_hash": "96aae3a8e59eb92d12050f6e1c9ea7b1b3b03338f46e7d21d8f3fa2f97ade27d"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Manus",
+          "description": "一款自主通用AI智能体，能够独立思考、规划，直接操作电脑执行复杂任务并交付成果，而非仅停留在对话层面。",
+          "target_customers": "国际用户",
+          "features": [
+            "独立思考、规划并直接操作电脑执行复杂任务",
+            "通用性和执行力",
+            "采用自研Agent框架Cascade"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b143f42cd2d50743",
+              "quote": "Manus 是由中国团队创立、后总部迁至新加坡的人工智能初创公司（母公司为蝴蝶效应 Butterfly Effect） 所推出的一款自主通用 AI 智能体（AI Agent）。",
+              "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+              "quote_hash": "429467363ea8d1b08f88a5a266180439c957cc39c39bcf593f88401905fb48bb"
+            },
+            {
+              "source_id": "FISRC-76e356978db85d8f",
+              "quote": "Manus能够独立思考、规划，直接操作电脑执行复杂任务并交付成果",
+              "source_content_hash": "f948181f546c63b3",
+              "quote_hash": "cf13bd4aaef54553fa67d473038d47688e873a9c48c11069db0321f525ea23ad"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Cue",
+          "description": "个人AI助理独立应用，每个Agent拥有独立邮箱地址、电话号码以及移动钱包，面向个人生活场景，与Manus共用基础设施，支持手机和桌面端。",
+          "target_customers": "个人用户",
+          "features": [
+            "每个Agent拥有独立邮箱地址、电话号码以及移动钱包",
+            "面向个人生活场景",
+            "支持手机和桌面端",
+            "可通过邀请码免费获取"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4c2a1e9d10eaefd8",
+              "quote": "同时推出个人AI智能体应用Cue。该应用中，每个Agent均拥有独立邮箱地址、电话号码以及移动钱包。",
+              "source_content_hash": "6c3dfdc77fa6a5b3",
+              "quote_hash": "1d1947bbf84859cfa780ef2aacc2cf8885fcb12dbb1dcd31b276d3a032488c7b"
+            },
+            {
+              "source_id": "FISRC-a15374491d9b1f9b",
+              "quote": "Cue面向个人生活场景，与Manus共用基础设施，支持手机和桌面端。",
+              "source_content_hash": "015c9dfda0de99b0",
+              "quote_hash": "9ea449a9986968d6acb0c3c38660b8258f03ba37e5f4a967ac921db9e786865b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Meta Muse",
+          "product": "个人AI助理Muse",
+          "scenario": "代替用户撰写和发送邮件、安排日程、预订旅行和餐厅、网购下单，甚至协助出售汽车",
+          "target_customer": "个人用户",
+          "funding_summary": "",
+          "core_difference": "Muse通过将AI智能体的复杂机制以一个简单、友好的界面呈现，面向个人用户提供免费服务，提供1亿个Token配额；Cue被赋予了个人身份，并配齐了全套数字装备，包括独立的手机号、邮箱、支付、电脑。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1b68e4f1bdb348",
+              "quote": "Meta发布个人AI助理Muse，通过将AI智能体的复杂机制以一个简单、友好的界面呈现，面向个人用户提供免费服务，提供1亿个Token（词元）配额。",
+              "source_content_hash": "092b22b325c27f3c",
+              "quote_hash": "e1d383fb305c0bc66ecd596e3fd0a899726c5edc851abda90044844a13b66259"
+            },
+            {
+              "source_id": "FISRC-fa1b68e4f1bdb348",
+              "quote": "相比于Muse，Cue被赋予了个人身份，并配齐了全套数字装备。",
+              "source_content_hash": "092b22b325c27f3c",
+              "quote_hash": "4d96c9a9644b1cfbeef36620a614984c008ff7dc749c6b322593d5fbb92ab49b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Cognition Devin",
+          "product": "AI编程助手Devin",
+          "scenario": "AI编程",
+          "target_customer": "开发者",
+          "funding_summary": "2026年9月10日宣布完成超过20亿美元的E轮融资，投后估值达到480亿美元",
+          "core_difference": "Devin是AI编程助手，Manus是通用AI智能体，能够独立思考、规划并直接操作电脑执行复杂任务，而非仅停留在对话层面。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1b68e4f1bdb348",
+              "quote": "2026年9月10日，美国AI编程助手Devin的开发商Cognition，宣布完成超过 20亿美元的E轮融资，投后估值达到480亿美元。",
+              "source_content_hash": "092b22b325c27f3c",
+              "quote_hash": "3b06c7720597e4042a76737bdd4bc35aa110f7e7e61822456a423d79b6a3913a"
+            },
+            {
+              "source_id": "FISRC-76e356978db85d8f",
+              "quote": "Manus的差异化在于其通用性和执行力，能够独立思考、规划并直接操作电脑执行复杂任务，而非仅停留在对话层面。",
+              "source_content_hash": "f948181f546c63b3",
+              "quote_hash": "878c91e3b410ff2a68de81b306916731aad51927e3c7ee6b4f74e26247247d15"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Anysphere Cursor",
+          "product": "AI编程软件Cursor",
+          "scenario": "AI编程",
+          "target_customer": "开发者",
+          "funding_summary": "2025年底获得23亿美元融资，2026年8月14日被SpaceX以600亿美金收购",
+          "core_difference": "Cursor重点在于通过强大的上下文理解能力优化开发者的编程体验；Manus是通用AI智能体，面向更广泛的任务执行场景。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1b68e4f1bdb348",
+              "quote": "由美国Anysphere公司开发的Cursor 也是全球增速最快的AI编程软件之一，重点在于通过强大的上下文理解能力优化开发者的编程体验。",
+              "source_content_hash": "092b22b325c27f3c",
+              "quote_hash": "ce95af6923d33b11bdcbf5346463390ad417bd1807c9c9cb037a30632c728171"
+            },
+            {
+              "source_id": "FISRC-fa1b68e4f1bdb348",
+              "quote": "Cursor在2025年底获得23亿美元融资。2026年8月14日，Cursor被SpaceX以600亿美金收购，成为SpaceX旗下的子公司",
+              "source_content_hash": "092b22b325c27f3c",
+              "quote_hash": "553bd026dcfd2de9e28ac1280cc04671a197edbe87f0e6d924951c488fc3c750"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "超过5亿美元",
+          "observed_at": "2026-10-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b143f42cd2d50743",
+              "quote": "10月8日，Manus 母公司蝴蝶效应宣布完成超过 5 亿美元的新一轮融资",
+              "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+              "quote_hash": "832ae1e1221f49ff01e5b6373944e487e6c93e78d7ae2b8d0a827757a2e6f5b7"
+            }
+          ]
+        },
+        {
+          "label": "投后估值",
+          "value": "40亿美元",
+          "observed_at": "2026-10-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b143f42cd2d50743",
+              "quote": "投后估值达到 40 亿美元，成为中国估值最高的 AI 智能体初创企业。",
+              "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+              "quote_hash": "2f2709dabaa0999fefc05bf2563158ba25791b06452c8d29ed228313584befe2"
+            }
+          ]
+        },
+        {
+          "label": "累计处理文本tokens",
+          "value": "超过147万亿",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-76e356978db85d8f",
+              "quote": "平台累计处理超过147万亿文本tokens，用户规模达数百万级别。",
+              "source_content_hash": "f948181f546c63b3",
+              "quote_hash": "8b02504121e750c1f1a72e084c80790453fb6b14718715b70e4d5e4f4b9898e8"
+            }
+          ]
+        },
+        {
+          "label": "Cascade框架Token消耗减少",
+          "value": "23.2%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-76e356978db85d8f",
+              "quote": "Cascade的Token消耗减少23.2%，任务完成时间缩短28.2%，运行成本降低32%。",
+              "source_content_hash": "f948181f546c63b3",
+              "quote_hash": "b0bf8bb8d3fe780abc475ac4d65f59586dc3c3e91ce8f8a4a1fd0f872e794815"
+            }
+          ]
+        },
+        {
+          "label": "Cascade框架运行成本降低",
+          "value": "32%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-76e356978db85d8f",
+              "quote": "Cascade的Token消耗减少23.2%，任务完成时间缩短28.2%，运行成本降低32%。",
+              "source_content_hash": "f948181f546c63b3",
+              "quote_hash": "b0bf8bb8d3fe780abc475ac4d65f59586dc3c3e91ce8f8a4a1fd0f872e794815"
+            }
+          ]
+        },
+        {
+          "label": "招聘岗位数",
+          "value": "17个",
+          "observed_at": "2026-10-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-76e356978db85d8f",
+              "quote": "Manus在官网放出了17个新岗位招聘，覆盖产品、工程和运营方向，工作地点均为北京。",
+              "source_content_hash": "f948181f546c63b3",
+              "quote_hash": "d2a3e6022019bac26c8680bfae9aae176a389f91b59b7d2d5d434388508901a7"
+            }
+          ]
+        },
+        {
+          "label": "B轮融资金额",
+          "value": "7500万美元",
+          "observed_at": "2025-04-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1b68e4f1bdb348",
+              "quote": "其B轮融资还是在被Meta收购前的2025年4月26日，金额为7500万美元。",
+              "source_content_hash": "092b22b325c27f3c",
+              "quote_hash": "2533538ca1ee8010eb338d45cca067a6eca47862faebcacc778f8b17bbae0dd5"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "肖弘",
+          "quote": "这是一个由独立的手机号、邮箱、支付、电脑和足够“智能”的“东西”，或许可以称之为“人”。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1b68e4f1bdb348",
+              "quote": "肖弘介绍Cue时说，这是一个由独立的手机号、邮箱、支付、电脑和足够“智能”的“东西”，或许可以称之为“人”。",
+              "source_content_hash": "092b22b325c27f3c",
+              "quote_hash": "8d294e380a64cacde3a88eda9a8b428e8f558f01e6dfe81de28fbdd74df2f7cc"
+            }
+          ]
+        },
+        {
+          "speaker": "肖弘",
+          "quote": "Manus挺像是一个卖电脑的生意。“可能大家买电脑主要是为了工作，但是如果不能看视频、打游戏的电脑，应该是有点无聊的。”",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1b68e4f1bdb348",
+              "quote": "肖弘说，他一直觉得Manus挺像是一个卖电脑的生意。“可能大家买电脑主要是为了工作，但是如果不能看视频、打游戏的电脑，应该是有点无聊的。”",
+              "source_content_hash": "092b22b325c27f3c",
+              "quote_hash": "249d0e0477aa123ff61945b160d576a88d488615485b5bc6d06557ac4781ac32"
+            }
+          ]
+        },
+        {
+          "speaker": "王丹",
+          "quote": "Meta事件带来的短期影响已经得到缓解，投资者仍愿意支持Manus作为一家独立公司的发展，同时看好AI 智能体的商业化潜力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4c2a1e9d10eaefd8",
+              "quote": "欧亚集团（Eurasia Group）中国区总监王丹表示，Meta事件带来的短期影响已经得到缓解，投资者仍愿意支持Manus作为一家独立公司的发展，同时看好AI 智能体的商业化潜力。",
+              "source_content_hash": "6c3dfdc77fa6a5b3",
+              "quote_hash": "7385e0c10191cb2e23b826fc5b7c538cac847dd3c3a44dbf16ad49685b53b678"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Manus在脱离Meta平台资源后能否独立维持商业化增长。已验证信号包括：ARR从Meta收购时的约1亿美元增长至2026年6月的4亿至5亿美元区间，平台累计处理超过147万亿文本tokens，用户规模达数百万级别，Cascade框架在特定测试配置下Token消耗减少23.2%、运行成本降低32%。本轮融资对应估值约40亿美元，较Meta收购时的20亿美元估值翻倍。证据边界在于：Manus尚未披露本轮融资后的具体估值，40亿美元估值来自媒体报道；Cascade的成本优化数据反映的是特定测试配置下的改进，并不等同于公司整体成本已经同比下降32%；Manus此前增长在多大程度上受益于Meta的广告平台和流量分发，缺乏明确数据。",
+        "validated_signals": [
+          "ARR从Meta收购时的约1亿美元增长至2026年6月的4亿至5亿美元区间",
+          "平台累计处理超过147万亿文本tokens，用户规模达数百万级别",
+          "Cascade框架在特定测试配置下Token消耗减少23.2%、任务完成时间缩短28.2%、运行成本降低32%",
+          "Manus开放注册首日，注册用户量便迅速突破100万",
+          "Manus AI App在2026年6月的出海增速榜中以2.30M月活跃用户位列第6名"
+        ],
+        "risks": [
+          "Manus尚未披露本轮融资后的具体估值，40亿美元估值来自媒体报道，未经公司确认",
+          "Cascade框架的成本优化数据反映的是特定测试配置下的改进，并不等同于公司整体成本已经同比下降32%",
+          "Manus此前增长在多大程度上受益于Meta的广告平台和流量分发，缺乏明确数据，独立后获客和收入增长需要重新验证",
+          "Manus依赖第三方模型API，模型调用成本是一笔真实的、难以压缩的外部支出，单位成本能否持续下降部分取决于上游模型厂商的定价策略",
+          "OpenAI、Anthropic等巨头将Agent能力内置进主力产品，开源Agent项目持续迭代，Manus需要在全球市场和巨头正面竞争"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user",
+          "consumer"
+        ],
+        "sector": "通用AI智能体（AI Agent）",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Manus在脱离Meta平台资源后能否独立维持商业化增长。已验证信号包括：ARR从Meta收购时的约1亿美元增长至2026年6月的4亿至5亿美元区间，平台累计处理超过147万亿文本tokens，用户规模达数百万级别，Cascade框架在特定测试配置下Token消耗减少23.2%、运行成本降低32%。本轮融资对应估值约40亿美元，较Meta收购时的20亿美元估值翻倍。证据边界在于：Manus尚未披露本轮融资后的具体估值，40亿美元估值来自媒体报道；Cascade的成本优化数据反映的是特定测试配置下的改进，并不等同于公司整体成本已经同比下降32%；Manus此前增长在多大程度上受益于Meta的广告平台和流量分发，缺乏明确数据。",
+          "evidence_signals": [
+            "ARR从Meta收购时的约1亿美元增长至2026年6月的4亿至5亿美元区间",
+            "平台累计处理超过147万亿文本tokens，用户规模达数百万级别",
+            "Cascade框架在特定测试配置下Token消耗减少23.2%、任务完成时间缩短28.2%、运行成本降低32%",
+            "Manus开放注册首日，注册用户量便迅速突破100万",
+            "Manus AI App在2026年6月的出海增速榜中以2.30M月活跃用户位列第6名"
+          ],
+          "risks": [
+            "Manus尚未披露本轮融资后的具体估值，40亿美元估值来自媒体报道，未经公司确认",
+            "Cascade框架的成本优化数据反映的是特定测试配置下的改进，并不等同于公司整体成本已经同比下降32%",
+            "Manus此前增长在多大程度上受益于Meta的广告平台和流量分发，缺乏明确数据，独立后获客和收入增长需要重新验证",
+            "Manus依赖第三方模型API，模型调用成本是一笔真实的、难以压缩的外部支出，单位成本能否持续下降部分取决于上游模型厂商的定价策略",
+            "OpenAI、Anthropic等巨头将Agent能力内置进主力产品，开源Agent项目持续迭代，Manus需要在全球市场和巨头正面竞争"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Manus",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Cue",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "肖弘",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "季逸超",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "张涛",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "博裕投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IDG资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "腾讯",
+          "canonical_entity_id": "EN-9c8ae69b84f21a2e",
+          "canonical_name": "腾讯"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "红杉中国",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "真格基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Benchmark",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "HSG",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Meta Muse",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Cognition Devin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anysphere Cursor",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-3d81a794527a5e14",
+          "date": "2026-10-08",
+          "title": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
+          "amount": "超过5 亿美元",
+          "source_refs": [
+            "SA-1ab026e96bd806f8"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-b143f42cd2d50743",
+          "source_url": "https://www.rfi.fr/cn/%E4%BA%9A%E6%B4%B2/20261008-manus-%E6%AF%8D%E5%85%AC%E5%8F%B8%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94%E5%AE%A3%E5%B8%83%E8%9E%8D%E8%B5%84%E8%B6%85%E8%BF%875-%E4%BA%BF%E7%BE%8E%E5%85%83",
+          "title": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
+          "publisher": "www.rfi.fr",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-13T00:18:42.118Z",
+          "content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+          "source_artifact_id": "SA-1ab026e96bd806f8",
+          "raw_id": "RAW-5364cfe891753fa4"
+        },
+        {
+          "source_id": "FISRC-fa1b68e4f1bdb348",
+          "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "Manus融资5亿美元回归国内市场，还有机会吗？",
+          "publisher": "m.sohu.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:08.097Z",
+          "content_hash": "092b22b325c27f3c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-76e356978db85d8f",
+          "source_url": "https://finance.sina.com.cn/stock/hkstock/hkzmt/2026-10-09/doc-iniuqywm6978794.shtml",
+          "title": "Manus融资5亿美元，一天收到上千份简历，ARR一年翻4倍",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:10.713Z",
+          "content_hash": "f948181f546c63b3",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4c2a1e9d10eaefd8",
+          "source_url": "https://finance.eastmoney.com/a/202610083889758595.html",
+          "title": "Manus获超5亿美元融资 AI Agent赛道再升温 _ 东方财富网",
+          "publisher": "finance.eastmoney.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:14.062Z",
+          "content_hash": "6c3dfdc77fa6a5b3",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-a15374491d9b1f9b",
+          "source_url": "https://jx.ifeng.com/c/8x3djeaZVMj",
+          "title": "Manus母公司官宣完成超5亿美元融资，江西籍创始人重启国内布局",
+          "publisher": "jx.ifeng.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:16.775Z",
+          "content_hash": "015c9dfda0de99b0",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-290d3d243074ee0d",
+          "source_url": "https://www.chnfund.com/article/AR812d6cdb-4f53-c020-2f32-3a242cda75bf",
+          "title": "Manus母公司蝴蝶效应10月8日宣布，完成超5亿美元新一轮融资",
+          "publisher": "chnfund.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:19.450Z",
+          "content_hash": "8348d998fc2c79cd",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-13T00:28:39.541Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-13T00:28:39.541Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Cue",
+            "Manus"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "季逸超",
+            "张涛",
+            "肖弘"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-3d81a794527a5e14"
+      ],
+      "aggregation": {
+        "key": "EN-8547a3fca97a330d|series_b_plus",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-c978b9c98e24e3ff",
+      "triggered_by_event_id": "EV-64d88a6be3258064",
+      "as_of_date": "2026-10-13",
+      "company": {
+        "entity_id": "EN-2a5cec351194b94a",
+        "name": "上海模思智能科技有限公司",
+        "full_name": "上海模思智能科技有限公司",
+        "website": "",
+        "summary": "模思智能成立于2024年11月，孵化于复旦大学教授邱锡鹏带领的OpenMOSS团队，以“全模态实时交互智能”为核心方向，致力于让语言、声音、画面与环境信息进入同一交互过程，推动AI走出屏幕，在真实情境中持续理解人并及时作出反馈与行动。",
+        "headquarters": "上海市徐汇区",
+        "founders": [
+          {
+            "name": "邱锡鹏",
+            "role": "创始人兼首席科学家",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "模思智能创始人兼首席科学家邱锡鹏是复旦大学教授、国家杰出青年科学基金获得者",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "dfa693f9de9c18026a4a65c882d175a34a23edba87d4d6f31320c2d9b75d4a60"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "李世民",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-488b21c2be24fbcc",
+                "quote": "联合创始人兼CEO李世民是其在复旦指导的2022级硕博连读生",
+                "source_content_hash": "c32a750c96f4189b",
+                "quote_hash": "8ceb400039ad75ba1bf65702f24a0122991b222ca87c950e26c41c80ebaed91a"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "200多人",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0f12437c38f51b4c",
+              "quote": "模思智能现在200多人，大概3/4是研发人员",
+              "source_content_hash": "ca22a9b76e24c010",
+              "quote_hash": "c0229224e10da73490eb4098abc34c2711edb3d3f4b63dd1052841bce1280231"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-24cb407ea35d1b9d",
+            "quote": "模思智能成立于2024年11月，孵化于复旦大学特聘教授、上海创智学院副院长邱锡鹏带领的OpenMOSS团队",
+            "source_content_hash": "2e81aeb7cd5e0c36",
+            "quote_hash": "48fc9684301083d3fa128d257143d6106d63b648762f16369ed6c3f38f13017c"
+          },
+          {
+            "source_id": "FISRC-a215d1d1de7e7c7f",
+            "quote": "模思智能成立于2024年，总部位于上海市徐汇区，是一家面向下一代情境交互智能的大模型创新企业",
+            "source_content_hash": "cc2831e335b4fdff",
+            "quote_hash": "a695c5320b57b21c52181abf70ad4693574cb47d01aa9fc5e83706c1ed843ba2"
+          }
+        ],
+        "application_entity_id": "EN-2a5cec351194b94a",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "Pre-A轮",
+        "amount": "超10亿元",
+        "total_raised": "",
+        "announced_at": "2026-10-12",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "华控基金",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "由华控基金领投",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "dddf43e430eba261cb2dab9a9da7b9d078ee88d475d5bd3b09e6574c69249f6a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "国开科创",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "上海科创基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "新微资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "徐汇资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "追光硬科技创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "临港策源基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "元禾控股",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "上海科创集团",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "星连资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "IDG资本",
+            "role": "天使轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "今年3月，模思智能完成数亿元天使轮融资，由IDG资本领投",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "3febe998bb9af1d0e279a8628d74118a9c0f64a10a09e52d13cd066e75602fef"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "上海未来产业基金",
+            "role": "天使轮联合投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "元禾控股、上海国投旗下上海科创及上海未来产业基金、奇绩创坛、智谱系基金星连资本及某头部产业投资方联合投资",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "628b21d90a2a2601b5c0f60c12a4d3d6b9876338391c8d283efd6067d543edd7"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "奇绩创坛",
+            "role": "天使轮联合投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "元禾控股、上海国投旗下上海科创及上海未来产业基金、奇绩创坛、智谱系基金星连资本及某头部产业投资方联合投资",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "628b21d90a2a2601b5c0f60c12a4d3d6b9876338391c8d283efd6067d543edd7"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2b099c2278c91b1d",
+            "quote": "智东西10月12日报道，今日，上海大模型公司模思智能（MOSI）宣布完成超10亿元Pre-A轮融资，由华控基金领投，主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等，元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资。",
+            "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+            "quote_hash": "6398743ff59f4bf3229939dd6c25b7ae81b986f9bcc2cd286b78d0b944408aec"
+          },
+          {
+            "source_id": "FISRC-2b099c2278c91b1d",
+            "quote": "今日，上海大模型公司模思智能（MOSI）宣布完成超10亿元Pre-A轮融资，由华控基金领投，主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等，元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+            "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+            "quote_hash": "5d3382a556e6294bdf1a347eb8eeb6e19b2d37a5546b84ebb6068d7358969dac"
+          },
+          {
+            "source_id": "FISRC-24cb407ea35d1b9d",
+            "quote": "本轮投资由华控基金领投，主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等，涵盖央企、地方国资、产业方投资人，前轮投资方元禾控股、上海国投旗下上海科创集团、星连资本等亦追加投资",
+            "source_content_hash": "2e81aeb7cd5e0c36",
+            "quote_hash": "a7acf8a90b3076b2f2face7d36712bfc1114fc22fd972afbc89a3bcd965045bb"
+          }
+        ],
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-64d88a6be3258064",
+            "round_original": "Pre-A轮",
+            "amount": "超10亿元",
+            "announced_at": "2026-10-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "智东西10月12日报道，今日，上海大模型公司模思智能（MOSI）宣布完成超10亿元Pre-A轮融资，由华控基金领投，主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等，元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资。",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "6398743ff59f4bf3229939dd6c25b7ae81b986f9bcc2cd286b78d0b944408aec"
+              },
+              {
+                "source_id": "FISRC-2b099c2278c91b1d",
+                "quote": "今日，上海大模型公司模思智能（MOSI）宣布完成超10亿元Pre-A轮融资，由华控基金领投，主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等，元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+                "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+                "quote_hash": "5d3382a556e6294bdf1a347eb8eeb6e19b2d37a5546b84ebb6068d7358969dac"
+              },
+              {
+                "source_id": "FISRC-24cb407ea35d1b9d",
+                "quote": "本轮投资由华控基金领投，主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等，涵盖央企、地方国资、产业方投资人，前轮投资方元禾控股、上海国投旗下上海科创集团、星连资本等亦追加投资",
+                "source_content_hash": "2e81aeb7cd5e0c36",
+                "quote_hash": "a7acf8a90b3076b2f2face7d36712bfc1114fc22fd972afbc89a3bcd965045bb"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "MOSS系列模型",
+          "description": "覆盖语音生成、音频理解、语音识别、视觉理解及内容生成等领域的模型矩阵，包括MOSS-TTS、MOSS-Audio、MOSS-Transcribe-Diarize、MOSS-VL、MOVA等系列模型，并持续推进开源。",
+          "target_customers": "开发者和企业",
+          "features": [
+            "覆盖语音生成、音频理解、语音识别、视觉理解及内容生成",
+            "半年多时间发布20多个模型",
+            "持续推进开源"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2b099c2278c91b1d",
+              "quote": "其已陆续推出MOSS-TTS、MOSS-Audio、MOSS-Transcribe-Diarize、MOSS-VL、MOVA等系列模型，覆盖语音生成、音频理解、语音识别、视觉理解及内容生成等领域。",
+              "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+              "quote_hash": "621ce2c08da408bf60e634846e03dbec05a992e2876511f85e08b0402a3c8a50"
+            },
+            {
+              "source_id": "FISRC-0995b2807e2f1dc5",
+              "quote": "近半年时间，模思围绕语音、视觉和实时多模态发布MOSS-TTS、MOSS-Audio等20多个模型，覆盖语音生成、音频理解、语音识别、视觉理解与内容生成等环节，并持续开源。",
+              "source_content_hash": "8b329a64995b852b",
+              "quote_hash": "f548ad61e021a5d588c4d7cb2ac625a2bd29f4db5d5dbab9e7f9143e00a648bf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "MOSS API开放平台",
+          "description": "通过开放平台向开发者和企业输出语音合成、转写及视频理解等API能力。",
+          "target_customers": "开发者和企业",
+          "features": [
+            "输出语音合成、转写及视频理解等API能力",
+            "面向开发者和企业"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a215d1d1de7e7c7f",
+              "quote": "公司已通过开放平台向开发者和企业输出语音合成、转写及视频理解等API能力",
+              "source_content_hash": "cc2831e335b4fdff",
+              "quote_hash": "fde6c1a2e4c45660bf972302c22a971352061046cdd707f7c7ba5951cae9c428"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "AI玩具厂商",
+          "industry": "消费电子",
+          "use_case": "AI玩具终端交互能力验证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a76ab800e7f67191",
+              "quote": "商业化方面，公司与AI玩具、智能硬件及车企客户做早期验证",
+              "source_content_hash": "b168a32f61f6d49c",
+              "quote_hash": "d813d52bcd24d623f505ae9e565c1fda6657377f365d8780f2432c13c9536d4c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "智能硬件厂商",
+          "industry": "消费电子",
+          "use_case": "智能硬件终端交互能力验证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a76ab800e7f67191",
+              "quote": "商业化方面，公司与AI玩具、智能硬件及车企客户做早期验证",
+              "source_content_hash": "b168a32f61f6d49c",
+              "quote_hash": "d813d52bcd24d623f505ae9e565c1fda6657377f365d8780f2432c13c9536d4c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "车企客户",
+          "industry": "汽车",
+          "use_case": "智能座舱交互能力验证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a76ab800e7f67191",
+              "quote": "商业化方面，公司与AI玩具、智能硬件及车企客户做早期验证",
+              "source_content_hash": "b168a32f61f6d49c",
+              "quote_hash": "d813d52bcd24d623f505ae9e565c1fda6657377f365d8780f2432c13c9536d4c"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "DaxAI",
+          "product": "DaxBrain-WM系统级全栈产品",
+          "scenario": "物流仓储、零售门店等客户现场真实部署",
+          "target_customer": "物流仓储、零售门店等客户",
+          "funding_summary": "",
+          "core_difference": "DaxAI的DaxBrain-WM系统级全栈产品已完成商用落地，在物流仓储、零售门店等客户现场完成真实部署验证，并与神州数码等行业龙头签署深度战略合作协议，累计锁定5亿元年度落地订单；模思智能聚焦全模态实时交互智能，面向AI眼镜、智能汽车、家庭终端及机器人等终端场景，尚未披露具名客户及收入数据。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a215d1d1de7e7c7f",
+              "quote": "DaxAI大咖机器人DaxBrain-WM系统级全栈产品完成商用落地，已在物流仓储、零售门店等客户现场完成真实部署验证，并与神州数码等行业龙头签署深度战略合作协议，累计锁定5亿元年度落地订单。",
+              "source_content_hash": "cc2831e335b4fdff",
+              "quote_hash": "93e9c4363e7252395ac74490fadc142b92643bdf8d37007c74542d6d44b1175b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "星源智",
+          "product": "软硬一体化解决方案",
+          "scenario": "电力巡检、能源设施运维等高价值场景",
+          "target_customer": "国内头部具身公司",
+          "funding_summary": "",
+          "core_difference": "星源智软硬一体化解决方案已赋能头部本体厂商，客户覆盖70%以上国内头部具身公司，并在电力巡检、能源设施运维等高价值场景中实现落地部署；模思智能聚焦全模态实时交互智能，面向AI眼镜、智能汽车、家庭终端及机器人等终端场景，尚未披露具名客户及收入数据。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a215d1d1de7e7c7f",
+              "quote": "星源智软硬一体化解决方案已赋能头部本体厂商，客户覆盖70%以上国内头部具身公司，并在电力巡检、能源设施运维等高价值场景中实现落地部署。",
+              "source_content_hash": "cc2831e335b4fdff",
+              "quote_hash": "f3a8b4e7f1d1f8625e028b560a56615c0af478d217d1046f8a04791d98bfff1a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "LiberAI",
+          "product": "全球首个高自由度灵巧操作具身基础模型",
+          "scenario": "搭载五指灵巧手完成精细操作",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "LiberAI已跑通UMI硬件-数据采集-大模型训练全流程闭环，推出全球首个高自由度灵巧操作具身基础模型，能够搭载五指灵巧手完成精细操作；模思智能聚焦全模态实时交互智能，面向AI眼镜、智能汽车、家庭终端及机器人等终端场景，尚未披露具名客户及收入数据。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a215d1d1de7e7c7f",
+              "quote": "LiberAI已跑通UMI硬件-数据采集-大模型训练全流程闭环，推出全球首个高自由度灵巧操作具身基础模型，能够搭载五指灵巧手完成精细操作。",
+              "source_content_hash": "cc2831e335b4fdff",
+              "quote_hash": "934d979bec5b4c299d01f196836af3c24b02b39b09f427c7ae98aad8b6494f1f"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "超10亿元",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2b099c2278c91b1d",
+              "quote": "今日，上海大模型公司模思智能（MOSI）宣布完成超10亿元Pre-A轮融资",
+              "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+              "quote_hash": "84be54fb9585a9ad1b03fd3552dbd062e4fc4dbb3864f2f2fe4061cf59a0aac9"
+            }
+          ]
+        },
+        {
+          "label": "半年多发布模型数量",
+          "value": "20多个",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2b099c2278c91b1d",
+              "quote": "2026年以来，模思智能进一步加快模型迭代，在半年多时间里发布了20多个模型",
+              "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+              "quote_hash": "d7a899eb281e846891f74d700e9a5e24ebea98506d56c25cbb3bc634783a1885"
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "200多人",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0f12437c38f51b4c",
+              "quote": "模思智能现在200多人，大概3/4是研发人员",
+              "source_content_hash": "ca22a9b76e24c010",
+              "quote_hash": "c0229224e10da73490eb4098abc34c2711edb3d3f4b63dd1052841bce1280231"
+            }
+          ]
+        },
+        {
+          "label": "研发人员占比",
+          "value": "约3/4",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0f12437c38f51b4c",
+              "quote": "模思智能现在200多人，大概3/4是研发人员",
+              "source_content_hash": "ca22a9b76e24c010",
+              "quote_hash": "c0229224e10da73490eb4098abc34c2711edb3d3f4b63dd1052841bce1280231"
+            }
+          ]
+        },
+        {
+          "label": "博士占比",
+          "value": "约50%",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-488b21c2be24fbcc",
+              "quote": "据公司官网信息，团队博士占比约50%",
+              "source_content_hash": "c32a750c96f4189b",
+              "quote_hash": "e6307a8d9ad822930fa4b71cf1db786a02a77de6f145675f714428deb894143c"
+            }
+          ]
+        },
+        {
+          "label": "MOSS-Transcribe-Diarize Hugging Face下载量",
+          "value": "十万级",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-488b21c2be24fbcc",
+              "quote": "语音识别模型MOSS-Transcribe-Diarize目前在Hugging Face已有十万级下载",
+              "source_content_hash": "c32a750c96f4189b",
+              "quote_hash": "ff107312573a32e18b41d0f27b69dddeefddf112911cfc32cdb6c2a63943c1d7"
+            }
+          ]
+        },
+        {
+          "label": "MOSS-VL-Realtime PA@OmniMMI测试得分",
+          "value": "66.0分",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-488b21c2be24fbcc",
+              "quote": "MOSS-VL-Realtime公开披露在PA@OmniMMI测试中取得66.0分",
+              "source_content_hash": "c32a750c96f4189b",
+              "quote_hash": "0c357672cd959dfdc03e81f0e3d42d3b6fae82061dea3a3acc91ad04000ed743"
+            }
+          ]
+        },
+        {
+          "label": "数据处理管线效率提升",
+          "value": "比市面上常见的多模态或音频数据处理管线提高了两到三倍",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0f12437c38f51b4c",
+              "quote": "效率方面，我们比市面上常见的多模态或音频数据处理管线提高了两到三倍",
+              "source_content_hash": "ca22a9b76e24c010",
+              "quote_hash": "824a80b06d83a38f437b34d8fff3b28cbc0910bd371c49ed803267153f87eef2"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "李世民",
+          "quote": "我们想做的，还是AI和真实物理世界交互的基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0f12437c38f51b4c",
+              "quote": "我们想做的，还是AI和真实物理世界交互的基础设施。",
+              "source_content_hash": "ca22a9b76e24c010",
+              "quote_hash": "b1954767b57f86c522fd5346eae12fba8e5bb4407a3e387265db5011a8015c3a"
+            }
+          ]
+        },
+        {
+          "speaker": "李世民",
+          "quote": "真正的情境智能，需要双工交互，输入和输出是并行的，模型能够边看、边听，接收信息的同时也能给出反馈。所以，下一代AI会从“回答问题”走向“持续在场”，能持续理解人和环境，并在合适的时候回应、行动。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0f12437c38f51b4c",
+              "quote": "真正的情境智能，需要双工交互，输入和输出是并行的，模型能够边看、边听，接收信息的同时也能给出反馈。所以，下一代AI会从“回答问题”走向“持续在场”，能持续理解人和环境，并在合适的时候回应、行动。",
+              "source_content_hash": "ca22a9b76e24c010",
+              "quote_hash": "70171854ece7693fec17b05268070bffb2564f3508d21bfc74b08bcdd706b489"
+            }
+          ]
+        },
+        {
+          "speaker": "李世民",
+          "quote": "单点模型今天领先，过一段时间很可能就会被追上。实时多模态交互不一样，它需要语音、视觉、视频、理解、生成、推理系统、真实场景和数据管线一起往前走。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0f12437c38f51b4c",
+              "quote": "单点模型今天领先，过一段时间很可能就会被追上。实时多模态交互不一样，它需要语音、视觉、视频、理解、生成、推理系统、真实场景和数据管线一起往前走。",
+              "source_content_hash": "ca22a9b76e24c010",
+              "quote_hash": "a15b678313d08e51ec865796cb8a27778851854e4596a1fbbcbc01b8ca2698fe"
+            }
+          ]
+        },
+        {
+          "speaker": "李世民",
+          "quote": "下一步真正要证明的，是产品和客户场景产生的数据，能不能持续回到模型训练。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0f12437c38f51b4c",
+              "quote": "下一步真正要证明的，是产品和客户场景产生的数据，能不能持续回到模型训练。",
+              "source_content_hash": "ca22a9b76e24c010",
+              "quote_hash": "f5d94e552d2dd25d36d015e21fe45aefd665c2d115db368291a7bc7fae168751"
+            }
+          ]
+        },
+        {
+          "speaker": "李世民",
+          "quote": "目前B端业务逐渐成熟，我们已经做了一些交付。这轮融资完成后，C端业务预计也会有比较大的起色。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0f12437c38f51b4c",
+              "quote": "目前B端业务逐渐成熟，我们已经做了一些交付。这轮融资完成后，C端业务预计也会有比较大的起色。",
+              "source_content_hash": "ca22a9b76e24c010",
+              "quote_hash": "36d608c37e488797e384161613a035dd6640336c3356acfc27e64063ac658ede"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是模思智能能否将全模态实时交互智能从模型能力转化为可规模化的商业闭环。当前融资所依赖的已验证信号包括：公司半年多发布20多个模型并持续推进开源，MOSS-Transcribe-Diarize在Hugging Face已有十万级下载并在第二届MLC-SLM语音挑战赛中获得第一，MOSS-VL-Realtime在PA@OmniMMI测试中取得66.0分，以及公司已通过开放平台向开发者和企业输出API能力并开展To B合作。但判断的证据边界在于：公司未披露本轮估值、融资对应股比及董事会安排，仅凭融资金额无法推断具体估值；未公布具名客户，也未披露收入、订单或付费客户等商业化数据；MOSS Live尚未正式发布，其实际交互表现及API平台能否形成付费客户和收入仍待验证。",
+        "validated_signals": [
+          "模思智能完成超10亿元Pre-A轮融资，由华控基金领投，国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等参与投资，元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+          "公司半年多时间发布20多个模型并持续推进开源",
+          "MOSS-Transcribe-Diarize在Hugging Face已有十万级下载，并在第二届MLC-SLM语音挑战赛中获得第一",
+          "MOSS-VL-Realtime在PA@OmniMMI测试中取得66.0分",
+          "公司已通过开放平台向开发者和企业输出语音合成、转写及视频理解等API能力",
+          "公司已与AI玩具、智能硬件及车企客户做早期验证",
+          "团队规模200多人，约3/4为研发人员，博士占比约50%"
+        ],
+        "risks": [
+          "公司未披露本轮估值、融资对应股比及董事会安排，仅凭融资金额无法推断公司的具体估值",
+          "公司未公布具名客户，也未披露收入、订单或付费客户等商业化数据，开源社区的活跃度与商业转化仍是两回事",
+          "MOSS Live尚未正式发布，其实际交互表现及API平台能否形成付费客户和收入仍待验证",
+          "目前公开信息中，尚未见MOSS-VL-Realtime与GPT-4o、Gemini等主流实时多模态模型在统一测试条件下的直接横向比较",
+          "具身智能合作尚未规模化，收入未对外披露"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "software_development",
+          "content_creation",
+          "knowledge_search"
+        ],
+        "industry_ids": [
+          "automotive_transportation"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "全模态实时交互智能大模型平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是模思智能能否将全模态实时交互智能从模型能力转化为可规模化的商业闭环。当前融资所依赖的已验证信号包括：公司半年多发布20多个模型并持续推进开源，MOSS-Transcribe-Diarize在Hugging Face已有十万级下载并在第二届MLC-SLM语音挑战赛中获得第一，MOSS-VL-Realtime在PA@OmniMMI测试中取得66.0分，以及公司已通过开放平台向开发者和企业输出API能力并开展To B合作。但判断的证据边界在于：公司未披露本轮估值、融资对应股比及董事会安排，仅凭融资金额无法推断具体估值；未公布具名客户，也未披露收入、订单或付费客户等商业化数据；MOSS Live尚未正式发布，其实际交互表现及API平台能否形成付费客户和收入仍待验证。",
+          "evidence_signals": [
+            "模思智能完成超10亿元Pre-A轮融资，由华控基金领投，国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等参与投资，元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+            "公司半年多时间发布20多个模型并持续推进开源",
+            "MOSS-Transcribe-Diarize在Hugging Face已有十万级下载，并在第二届MLC-SLM语音挑战赛中获得第一",
+            "MOSS-VL-Realtime在PA@OmniMMI测试中取得66.0分",
+            "公司已通过开放平台向开发者和企业输出语音合成、转写及视频理解等API能力",
+            "公司已与AI玩具、智能硬件及车企客户做早期验证",
+            "团队规模200多人，约3/4为研发人员，博士占比约50%"
+          ],
+          "risks": [
+            "公司未披露本轮估值、融资对应股比及董事会安排，仅凭融资金额无法推断公司的具体估值",
+            "公司未公布具名客户，也未披露收入、订单或付费客户等商业化数据，开源社区的活跃度与商业转化仍是两回事",
+            "MOSS Live尚未正式发布，其实际交互表现及API平台能否形成付费客户和收入仍待验证",
+            "目前公开信息中，尚未见MOSS-VL-Realtime与GPT-4o、Gemini等主流实时多模态模型在统一测试条件下的直接横向比较",
+            "具身智能合作尚未规模化，收入未对外披露"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "MOSS系列模型",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "MOSS API开放平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "邱锡鹏",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "李世民",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "华控基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "国开科创",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海科创基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "新微资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "徐汇资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "追光硬科技创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "临港策源基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "元禾控股",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海科创集团",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "星连资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "IDG资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "上海未来产业基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "奇绩创坛",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "AI玩具厂商",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "智能硬件厂商",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "车企客户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "DaxAI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "星源智",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "LiberAI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2b099c2278c91b1d",
+          "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+          "title": "10亿！上海大模型创企拿下新融资",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-13T00:18:36.158Z",
+          "content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+          "source_artifact_id": "SA-9496d19e747b8c65",
+          "raw_id": "RAW-645f05b6f171298a"
+        },
+        {
+          "source_id": "FISRC-0995b2807e2f1dc5",
+          "source_url": "https://www.stdaily.com/web/gdxw/2026-10/12/content_594897.html",
+          "title": "模思智能探索下一代AI实时交互入口",
+          "publisher": "stdaily.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:27:41.751Z",
+          "content_hash": "8b329a64995b852b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-24cb407ea35d1b9d",
+          "source_url": "https://www.junhe.com/deals/1051",
+          "title": "君合襄助模思智能完成Pre-A轮融资",
+          "publisher": "junhe.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:27:44.220Z",
+          "content_hash": "2e81aeb7cd5e0c36",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-a76ab800e7f67191",
+          "source_url": "https://www.huxiu.com/article/4876402.html",
+          "title": "模思智能从MOSS起步转向语音多模态，专注情境智能",
+          "publisher": "huxiu.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:05.639Z",
+          "content_hash": "b168a32f61f6d49c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-a215d1d1de7e7c7f",
+          "source_url": "https://www.chinastarmarket.cn/detail/2502733",
+          "title": "模思智能完成超10亿元Pre-A轮融资 华控基金领投",
+          "publisher": "chinastarmarket.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:07.569Z",
+          "content_hash": "cc2831e335b4fdff",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0f12437c38f51b4c",
+          "source_url": "https://k.sina.com.cn/article_5953466437_162dab0450670beocc.html?from=tech",
+          "title": "复旦师生Pre-A轮融资超10亿，想让AI懂人的情绪与处境",
+          "publisher": "k.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:11.569Z",
+          "content_hash": "ca22a9b76e24c010",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-488b21c2be24fbcc",
+          "source_url": "https://k.sina.com.cn/article_5953740931_162dee083067041leo.html",
+          "title": "押注全模态实时交互，模思智能完成超10亿元Pre-A轮融资",
+          "publisher": "k.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:28:14.490Z",
+          "content_hash": "c32a750c96f4189b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-13T00:28:34.830Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-13T00:28:34.830Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 7
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "MOSS API开放平台",
+            "MOSS系列模型"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "李世民",
+            "邱锡鹏"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-64d88a6be3258064"
+      ],
+      "aggregation": {
+        "key": "EN-2a5cec351194b94a|pre_series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-465ead2a916b8b88",
+      "triggered_by_event_id": "EV-439079c4d9694407",
+      "as_of_date": "2026-10-13",
+      "company": {
+        "entity_id": "EN-db36e7bd45191ce4",
+        "name": "Ambi",
+        "full_name": "Ambi",
+        "website": "",
+        "summary": "Ambi 是一家由前 Plaud 高管 Peter Mo 创立的公司，正在开发一款能够持续在后台聆听用户、提供实时智能与洞察的 AI 应用。",
+        "headquarters": "San Francisco, Beijing, Shanghai, Shenzhen",
+        "founders": [
+          {
+            "name": "Peter Mo",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-84410a602fe52654",
+                "quote": "Former Plaud exec Peter Mo is building Ambi to do something similar.",
+                "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+                "quote_hash": "2ef90331d88664e837483aa9264062f8abb859ddeb6e7fd04e8f8908661d59e9"
+              },
+              {
+                "source_id": "FISRC-84410a602fe52654",
+                "quote": "Mo, the company’s co-founder and CEO, told TechCrunch",
+                "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+                "quote_hash": "7c16190c0b60229b1c155b9f4f8e6b6fdf5a5b43bf1a1c8d169135e3a37949fb"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "超过50人",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-84410a602fe52654",
+              "quote": "Ambi currently has over 50 staff across offices in San Francisco, Beijing, Shanghai, and Shenzhen.",
+              "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+              "quote_hash": "177f6cc8f49db78fc4f3bd4bb0d61a7b9c497b524e57a0944e9461fabe0eaa63"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-84410a602fe52654",
+            "quote": "Former Plaud exec Peter Mo is building Ambi to do something similar.",
+            "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+            "quote_hash": "2ef90331d88664e837483aa9264062f8abb859ddeb6e7fd04e8f8908661d59e9"
+          },
+          {
+            "source_id": "FISRC-84410a602fe52654",
+            "quote": "The company said on Monday that it has raised $26 million across multiple funding rounds led by Luminous Ventures",
+            "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+            "quote_hash": "248d3ff56ae1b7bb5880cf82f1da422cfe9aee8f635683e4de077aeeb7f8c597"
+          }
+        ],
+        "application_entity_id": "EN-db36e7bd45191ce4",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "多轮融资",
+        "amount": "$26 million",
+        "total_raised": "$26 million",
+        "announced_at": "2026-10-12",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Luminous Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-84410a602fe52654",
+                "quote": "it has raised $26 million across multiple funding rounds led by Luminous Ventures",
+                "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+                "quote_hash": "3cc2a9f87717a877904f44ba60be5dfc5caf6704c378379f8a93e49c1ceac1fc"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Huaqin",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-84410a602fe52654",
+                "quote": "led by Luminous Ventures, which has backed companies like Meituan and Unitree Robotics, and original design manufacturer (ODM) Huaqin.",
+                "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+                "quote_hash": "1fe34ba1a2faf1d8054bbce97ae41a4a550917cad194f54eca664492add46a89"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-84410a602fe52654",
+            "quote": "The company said on Monday that it has raised $26 million across multiple funding rounds led by Luminous Ventures, which has backed companies like Meituan and Unitree Robotics, and original design manufacturer (ODM) Huaqin.",
+            "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+            "quote_hash": "5a0862e809c2ff9caff64c85c86a6409e571a7f4b00f2b07b19c88aa7f265ded"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$26 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 26000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2600 万美元"
+        },
+        "total_raised_original": "$26 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 26000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2600 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-439079c4d9694407",
+            "round_original": "多轮融资",
+            "amount": "$26 million",
+            "announced_at": "2026-10-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-84410a602fe52654",
+                "quote": "The company said on Monday that it has raised $26 million across multiple funding rounds led by Luminous Ventures, which has backed companies like Meituan and Unitree Robotics, and original design manufacturer (ODM) Huaqin.",
+                "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+                "quote_hash": "5a0862e809c2ff9caff64c85c86a6409e571a7f4b00f2b07b19c88aa7f265ded"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Ambi",
+          "description": "一款能够持续在后台聆听用户、提供实时智能与洞察的 AI 应用，可作为会议记录工具，并能在会议进行中主动提供建议或呈现相关知识。",
+          "target_customers": "个人用户、专业人士",
+          "features": [
+            "持续后台聆听",
+            "实时智能与洞察",
+            "会议记录",
+            "会议中主动建议",
+            "跨设备任务延续",
+            "基于日历、会议、知识库和网络数据"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-84410a602fe52654",
+              "quote": "The app aims to provide real-time intelligence and insights to people by listening to them all the time.",
+              "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+              "quote_hash": "04fee2d55660fc2621b035ebae09f9eb5cea7723cef4b53a470dbc47c284f1a7"
+            },
+            {
+              "source_id": "FISRC-84410a602fe52654",
+              "quote": "These apps act like meeting notetakers, but users can choose to have them listening so they can capture context all day.",
+              "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+              "quote_hash": "fc58831b27d9396ac81c78b3bb91091ecde5d59129222e5de8e69a38781fe83e"
+            },
+            {
+              "source_id": "FISRC-84410a602fe52654",
+              "quote": "Ambi wants to take this a step further by having its agent start the work during the meeting itself.",
+              "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+              "quote_hash": "0088101b1dcc3c30f1c5f4c47e9be2ec6e0cb1d7bd5a72df1e996e5582f5d3e4"
+            },
+            {
+              "source_id": "FISRC-84410a602fe52654",
+              "quote": "Users can also start a task on one device and continue it on another.",
+              "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+              "quote_hash": "0030994e5dcd6401b5665b5476b26fe280525b148239a15cad69adbeac3dd88a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Littlebird",
+          "product": "AI 应用",
+          "scenario": "查看用户工作内容并存储重要部分以提供个性化建议",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Ambi 的桌面应用将能够查看用户的工作内容并将重要部分存储在记忆中，以提供更个性化的建议；Littlebird 已经做类似的事情。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-84410a602fe52654",
+              "quote": "Its upcoming desktop app will be able to look at the work that users do and store important parts in its memory to give more personalized suggestions. Apps like Littlebird or Minimi already do something similar.",
+              "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+              "quote_hash": "25dcfc61f8ac4fcbf20ad2e866ace1feef66fa962e28ac13333168c69d084679"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Minimi",
+          "product": "AI 应用",
+          "scenario": "查看用户工作内容并存储重要部分以提供个性化建议",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Ambi 的桌面应用将能够查看用户的工作内容并将重要部分存储在记忆中，以提供更个性化的建议；Minimi 已经做类似的事情。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-84410a602fe52654",
+              "quote": "Its upcoming desktop app will be able to look at the work that users do and store important parts in its memory to give more personalized suggestions. Apps like Littlebird or Minimi already do something similar.",
+              "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+              "quote_hash": "25dcfc61f8ac4fcbf20ad2e866ace1feef66fa962e28ac13333168c69d084679"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "融资总额",
+          "value": "$26 million",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-84410a602fe52654",
+              "quote": "it has raised $26 million across multiple funding rounds",
+              "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+              "quote_hash": "4ce367b9b0d02afcc9986b915b918034a95732505772fdc85a00b54852317dfb"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "超过50人",
+          "observed_at": "2026-10-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-84410a602fe52654",
+              "quote": "Ambi currently has over 50 staff across offices in San Francisco, Beijing, Shanghai, and Shenzhen.",
+              "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+              "quote_hash": "177f6cc8f49db78fc4f3bd4bb0d61a7b9c497b524e57a0944e9461fabe0eaa63"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Peter Mo",
+          "quote": "The way we interact with intelligence is limited. Often the intelligence is trapped on the screen, and if you use hardware like Plaud, you need to wait for recording to transfer to the phone, upload to the cloud, and get intelligence after processing. That’s why we are building Ambi to use AI anytime and anywhere",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-84410a602fe52654",
+              "quote": "“The way we interact with intelligence is limited. Often the intelligence is trapped on the screen, and if you use hardware like Plaud, you need to wait for recording to transfer to the phone, upload to the cloud, and get intelligence after processing. That’s why we are building Ambi to use AI anytime and anywhere,” Mo, the company’s co-founder and CEO, told TechCrunch.",
+              "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+              "quote_hash": "e9b2346c948d008753af4d56f3e772b9559793f4d81d3c47467548ac5e0e16c2"
+            }
+          ]
+        },
+        {
+          "speaker": "Peter Mo",
+          "quote": "We have to inform our users that they have to tell others about ambient capture. We, as an industry, haven’t solved this problem [of disclosure]. We have tried to put the information about disclosure in every place possible, but if users try to hide the capture, we can’t just solve the problem",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-84410a602fe52654",
+              "quote": "“We have to inform our users that they have to tell others about ambient capture. We, as an industry, haven’t solved this problem [of disclosure]. We have tried to put the information about disclosure in every place possible, but if users try to hide the capture, we can’t just solve the problem,” he said.",
+              "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+              "quote_hash": "40ac4ff34d5c63923a0564b4ee393799cf3680de898fcac9e5d65dc444b1979a"
+            }
+          ]
+        },
+        {
+          "speaker": "startupintros.com",
+          "quote": "Meituan operates a leading technology platform connecting consumers with comprehensive local lifestyle services.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-afc46e38a36ed0bc",
+              "quote": "Meituan operates a leading technology platform connecting consumers with comprehensive local lifestyle services.",
+              "source_content_hash": "47ff82cb2a56948d",
+              "quote_hash": "5f31ae61dd2cb34ee0bafb9561a3328bcff1577453e1828af7a1dbcc04a587e1"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 Ambi 能否在持续后台聆听这一高隐私敏感场景中，以实时会议智能体切入并建立用户习惯。当前已验证信号包括：公司已获得 2600 万美元多轮融资，由 Luminous Ventures 领投、ODM 厂商华勤参投；产品已发布 iPhone、Mac 和 Apple Watch 应用，并计划推出自有硬件设备。判断的证据边界在于：来源未披露具体融资金额分配、估值、收入或用户数据，且隐私披露机制仍被创始人称为行业未解问题，因此资本判断主要基于团队背景、产品形态和投资方背书，而非已验证的商业化指标。",
+        "validated_signals": [
+          "公司已获得 2600 万美元多轮融资，由 Luminous Ventures 领投，华勤参投。",
+          "产品已发布 iPhone、Mac 和 Apple Watch 应用。",
+          "公司拥有超过 50 名员工，分布在旧金山、北京、上海和深圳。",
+          "公司正在招聘 go-to-market 职能和从事语音识别模型的 AI 工程师。"
+        ],
+        "risks": [
+          "隐私与数据安全风险：持续后台聆听可能引发第三方对未经同意录音的担忧，创始人承认行业尚未解决披露问题。",
+          "来源未披露具体融资金额分配、估值、收入或用户数据，商业化验证不足。",
+          "来源未说明加密方式，仅称不存储录音并加密数据。",
+          "会议记录类公司曾因未经同意录音而被起诉，存在法律风险。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI 会议记录与实时智能助手",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Ambi 能否在持续后台聆听这一高隐私敏感场景中，以实时会议智能体切入并建立用户习惯。当前已验证信号包括：公司已获得 2600 万美元多轮融资，由 Luminous Ventures 领投、ODM 厂商华勤参投；产品已发布 iPhone、Mac 和 Apple Watch 应用，并计划推出自有硬件设备。判断的证据边界在于：来源未披露具体融资金额分配、估值、收入或用户数据，且隐私披露机制仍被创始人称为行业未解问题，因此资本判断主要基于团队背景、产品形态和投资方背书，而非已验证的商业化指标。",
+          "evidence_signals": [
+            "公司已获得 2600 万美元多轮融资，由 Luminous Ventures 领投，华勤参投。",
+            "产品已发布 iPhone、Mac 和 Apple Watch 应用。",
+            "公司拥有超过 50 名员工，分布在旧金山、北京、上海和深圳。",
+            "公司正在招聘 go-to-market 职能和从事语音识别模型的 AI 工程师。"
+          ],
+          "risks": [
+            "隐私与数据安全风险：持续后台聆听可能引发第三方对未经同意录音的担忧，创始人承认行业尚未解决披露问题。",
+            "来源未披露具体融资金额分配、估值、收入或用户数据，商业化验证不足。",
+            "来源未说明加密方式，仅称不存储录音并加密数据。",
+            "会议记录类公司曾因未经同意录音而被起诉，存在法律风险。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Ambi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Peter Mo",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Luminous Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Huaqin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Littlebird",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Minimi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-84410a602fe52654",
+          "source_url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
+          "title": "前Plaud高管为能在后台聆听你的AI应用融资2600万美元",
+          "publisher": "techcrunch.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-13T00:18:03.825Z",
+          "content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+          "source_artifact_id": "SA-ed0e863151b73a9c",
+          "raw_id": "RAW-8921811d92c4a5e8"
+        },
+        {
+          "source_id": "FISRC-afc46e38a36ed0bc",
+          "source_url": "https://startupintros.com/orgs/meituan",
+          "title": "Meituan: Funding, Team & Investors",
+          "publisher": "startupintros.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-13T00:27:41.423Z",
+          "content_hash": "47ff82cb2a56948d",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-13T00:28:04.156Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-13T00:28:04.156Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Ambi"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Peter Mo"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-439079c4d9694407"
+      ],
+      "aggregation": {
+        "key": "EN-db36e7bd45191ce4|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-439079c4d9694407",
+      "company_name": "Ambi",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Meituan\" 2026 funding round investors",
+        "\"Meituan\" official product customers",
+        "\"Meituan\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Meituan\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://mlq.ai/news/moonshot-ai-raises-2-billion-funding-at-20-billion-valuation-in-meituan-led-round/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Meituan\" $26 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Meituan\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.researchgate.net/publication/369437197_Analysis_of_Customer's_Intention_of_Meituan_Delivery",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Meituan\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Meituan\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Meituan\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-13T03:01:14.620Z"
+    },
+    {
+      "event_id": "EV-69273189e74d62e5",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-289f468a361ec508",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-cdcdea720885d037",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-53d3d485f2b3d64e",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-5b59ff829e596b56",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-187a61fc05451d66",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-64d88a6be3258064",
+      "company_name": "上海模思智能科技有限公司",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"模思智能\" 2026 融资 投资方",
+        "\"模思智能\" 官网 产品 服务",
+        "\"模思智能\" 投资机构 融资用途",
+        "\"模思智能\" 客户 创始人 总部"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"模思智能\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.iyiou.com/data/202610121143099",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"模思智能\" 超10亿元 融资 领投 跟投",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"模思智能\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.tianyancha.com/company/7313059467",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.qcc.com/firm/21909f0ccfa2fb204d804a769b53186b.html",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"模思智能\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"模思智能\" 2026 本轮融资 公告",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"模思智能\" 客户 创始人 总部",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-1ab1592853c9099a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-3d81a794527a5e14",
+      "company_name": "蝴蝶效应（Butterfly Effect）",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Manus 母公司蝴蝶效应\" 2026 融资 投资方",
+        "\"Manus 母公司蝴蝶效应\" 超过5 亿美元 融资 领投 跟投",
+        "\"Manus 母公司蝴蝶效应\" 官网 产品 服务",
+        "\"Manus 母公司蝴蝶效应\" 投资机构 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Manus 母公司蝴蝶效应\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://es.tradingview.com/news/panews:713676788acdf:0/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Manus 母公司蝴蝶效应\" 超过5 亿美元 融资 领投 跟投",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/65463645",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Manus 母公司蝴蝶效应\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Manus 母公司蝴蝶效应\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-03a5e703deae837f",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-02fb30b5a5ffbe8e",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-52e472f000148362",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-366e1027af052b7a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-03938561933f2961",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-215ea259173fa6b4",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-80fce5a60752ce60",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-ce32b416f60cec1d",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-60beaa2e14a34fc9",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-bf7bc9a369a655e3",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-10df3d93ae48e9b4",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-f3ecff6963190b97",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-6bbfb2ce5e89bbda",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-c96f8475f771fe20",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-2eb259fc0b868102",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-6cf399bb27ddd1a5",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.624Z"
+    },
+    {
+      "event_id": "EV-6744aefb738a9a0c",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.624Z"
+    },
+    {
+      "event_id": "EV-33c666ae1aefd87b",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.624Z"
+    },
+    {
+      "event_id": "EV-ebaf045f180333dc",
+      "company_name": "Scarlet",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Scarlet\" 2026 funding round investors",
+        "\"Scarlet\" official product customers",
+        "\"Scarlet\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Scarlet\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://tracxn.com/d/companies/scarlet/__Rey9hpy3VoqIBsNTSjV0eGHoOVMh-fT4t0OLohRqkig/funding-and-investors",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://pitchbook.com/profiles/company/463417-30",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Scarlet\" $50 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Scarlet\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Scarlet\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Scarlet\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Scarlet\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-13T03:01:14.623Z"
+    },
+    {
+      "event_id": "EV-2718aecee127b0fa",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.624Z"
+    },
+    {
+      "event_id": "EV-f7b689602574677a",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-756708b78b427477",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-13T03:01:14.624Z"
+    }
+  ]
+}

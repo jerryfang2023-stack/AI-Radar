@@ -1,0 +1,351 @@
+{
+  "version": "FINANCING-PERSONA-RECOVERY-1",
+  "date": "2026-10-13",
+  "issue": 1257,
+  "status": "gates_passed_awaiting_merge_and_publication",
+  "accepted_artifact_run": 38332958722,
+  "base_commit": "1632aabfd94209f6bf60350104af49fd59ec6530",
+  "accepted_inputs_unchanged": [
+    {
+      "file": "01-SiteV2/content/11-databases/data-center-v4/intake-v1/2026-10-13.json",
+      "hash": "9ac2ad75a957bd7d4020fed857f80cc912bace31a2a9a599a99599e9dd71cc2e"
+    },
+    {
+      "file": "01-SiteV2/content/11-databases/model-assist-v1/2026-10-13.json",
+      "hash": "f52a9825a26f2e3dcb93c1b2942a5ac8c3ca54d3ddc19daa54fbe51af884ead5"
+    },
+    {
+      "file": "agent-workflow/reports/financing/2026-10-13/collection.json",
+      "hash": "fbdc1f268ca4f88468bb133b95dc3f80b0afa9e69b5488f8933c8ccab4db927d"
+    }
+  ],
+  "discovery_repeated": false,
+  "existing_research_retained": [
+    "EV-ebaf045f180333dc",
+    "EV-3d81a794527a5e14",
+    "EV-64d88a6be3258064",
+    "EV-439079c4d9694407"
+  ],
+  "persona_repair": {
+    "raw_id": "RAW-4ac85d7d94d94b97",
+    "source_id": "SA-07ad189e8cb921d1",
+    "source_url": "https://feng.ifeng.com/c/8x5CuXHxCqb",
+    "source_content_hash": "a7ea64e33f25a6c36527a2c83315f1291ec757e22baa320f9ceaa38eaf0a93ff",
+    "old_event_id": "EV-311cb1feaaf97b98",
+    "new_event_id": "EV-02fb30b5a5ffbe8e",
+    "old_inferred_entity": "calai联合",
+    "correct_company": "Persona",
+    "status": "deduplicated",
+    "retained_published_source_events": [
+      "EV-55ed36eee8ffa4bd",
+      "EV-53d3d485f2b3d64e"
+    ],
+    "previous_research_attempt": {
+      "event_id": "EV-311cb1feaaf97b98",
+      "company_name": "calai联合",
+      "status": "blocked",
+      "problems": [
+        "research_sources_insufficient"
+      ],
+      "queries": [
+        "\"calai联合\" 2026 融资 投资方",
+        "\"calai联合\" 1000万美元 融资 领投 跟投",
+        "\"calai联合\" 官网 产品 服务",
+        "\"calai联合\" 投资机构 融资用途",
+        "\"calai联合\" 2026 本轮融资 公告",
+        "\"calai联合\" 客户 创始人 总部"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"calai联合\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://baby.ifeng.com/c/8qHj6SlUPUT",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://feng.ifeng.com/c/8x0J611rtnK",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.ifeng.com/c/8vguX6xAuEC",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.ifeng.com/c/8vaToR1qpVT",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://feng.ifeng.com/c/8weI3y2Di5D",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.ifeng.com/c/8woHzl7dWoZ",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.ifeng.com/c/8pvU81zmyTh",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.ifeng.com/c/8plbGCVWff0",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"calai联合\" 1000万美元 融资 领投 跟投",
+          "status": "empty",
+          "count": 0
+        },
+        {
+          "provider": "tavily",
+          "query": "\"calai联合\" 1000万美元 融资 领投 跟投",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"calai联合\" 1000万美元 融资 领投 跟投",
+          "status": "quota_exhausted",
+          "http_status": 402,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"calai联合\" 1000万美元 融资 领投 跟投",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.calai.app/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://calai.me/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.calai.app/login",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://calai.fit/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://calai.me/blog/what-is-cal-ai-en",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://calai-usa.com/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"calai联合\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://sz.ifeng.com/c/8x6JH8cnFFH",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://feng.ifeng.com/c/8x3wMO1UrHj",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.ifeng.com/c/8tLxBdyTMZZ",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://baby.ifeng.com/c/8wHBnMYW3iZ",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://hainan.ifeng.com/c/8x6c8khiW9D",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://tech.ifeng.com/c/8hKFryWvmdQ",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.ifeng.com/c/8iFoLzoChKp",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"calai联合\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 4
+        },
+        {
+          "provider": "tavily",
+          "query": "\"calai联合\" 投资机构 融资用途",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"calai联合\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://i.ifeng.com/c/8x4gUuGxh71",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://feng.ifeng.com/c/8x6MWsI4mTs",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://news.ifeng.com/c/8t46R4Ygpov",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"calai联合\" 2026 本轮融资 公告",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"calai联合\" 客户 创始人 总部",
+          "status": "completed",
+          "count": 5
+        },
+        {
+          "provider": "tavily",
+          "query": "\"calai联合\" 客户 创始人 总部",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"calai联合\" 客户 创始人 总部",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-13T01:41:04.683Z"
+    },
+    "application_identity_decision": "FICID-PERSONA-20261013",
+    "canonical_person_facts_merged": false
+  },
+  "baseline": {
+    "subjects": 596,
+    "events": 639
+  },
+  "candidate": {
+    "subjects": 599,
+    "events": 642,
+    "china": 136,
+    "last_checked_date": "2026-10-13"
+  },
+  "new_public_events": [
+    {
+      "event_id": "EV-64d88a6be3258064",
+      "company": "模思智能（MOSI）",
+      "amount": "超10亿元",
+      "round": "Pre-A轮",
+      "date": "2026-10-12"
+    },
+    {
+      "event_id": "EV-ebaf045f180333dc",
+      "company": "Scarlet",
+      "amount": "$50 million",
+      "round": "B轮",
+      "date": "2026-10-12"
+    },
+    {
+      "event_id": "EV-3d81a794527a5e14",
+      "company": "蝴蝶效应（Butterfly Effect）",
+      "amount": "超过5 亿美元",
+      "round": "B+轮",
+      "date": "2026-10-08"
+    }
+  ],
+  "pending_publication": [
+    {
+      "event_id": "EV-439079c4d9694407",
+      "company": "Ambi",
+      "reason": "已接受 TechCrunch 报道为2600万美元多轮总额，但既有二次检索错误围绕美团，独立来源 startupintros.com/orgs/meituan 不支持该融资主体。公司2026-10-12官方稿明确主体 Mistlabs、产品Ambi且金额口径为Pre-A，须对齐法名及轮次口径后发布，不把累计额作为单轮金额。",
+      "source_url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/"
+    }
+  ],
+  "lost_published_source_events": [],
+  "current_queue": 119,
+  "tests": {
+    "persona_related_suites": {
+      "passed": 333,
+      "failed": 0
+    },
+    "existing_aihot_retry": {
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "aihot_handoff_patch": "superseded by existing main commit b586c7b9e45; no duplicate patch applied",
+  "open_historical_pr_backlog": 0,
+  "generated_at": "2026-10-13T03:14:04.113Z",
+  "baseline_queue": 119,
+  "latest_private_metadata_preserved": 18,
+  "new_fact_gate_processing_pending": 7,
+  "private_queue_closed": 0
+}

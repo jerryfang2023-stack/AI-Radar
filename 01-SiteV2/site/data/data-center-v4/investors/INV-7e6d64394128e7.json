@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 12,
+    "current_round_count": 13,
     "historical_or_ambiguous_count": 14,
-    "portfolio_company_count": 12,
+    "portfolio_company_count": 13,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 11,
-    "china_market_company_count": 11,
+    "china_market_activity_count": 12,
+    "china_market_company_count": 12,
     "first_disclosed_at": "2026-01-12",
     "latest_disclosed_at": "2026-10-09",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 14,
       "lead": 1,
-      "participant": 9
+      "participant": 10
     },
     "round_codes": [
       "angel",
@@ -86,6 +86,7 @@
       "series_a",
       "series_a_plus_plus",
       "series_b",
+      "series_b_plus",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -93,6 +94,11 @@
         "entity_id": "EN-b3c628b196bfbbe9",
         "canonical_entity_id": "EN-b3c628b196bfbbe9",
         "name": "贝联珠贯"
+      },
+      {
+        "entity_id": "EN-8547a3fca97a330d",
+        "canonical_entity_id": "",
+        "name": "蝴蝶效应（Butterfly Effect）"
       },
       {
         "entity_id": "EN-35aaf7bc032bdcdb",
@@ -196,6 +202,46 @@
             "source_content_hash": "4485c3ef38069f76",
             "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
             "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-11dd11ca0839acff",
+        "funding_insight_id": "FI-b54885fdab524aa5",
+        "event_ids": [
+          "EV-3d81a794527a5e14"
+        ],
+        "company_entity_id": "EN-8547a3fca97a330d",
+        "company_canonical_entity_id": "",
+        "company_name": "蝴蝶效应（Butterfly Effect）",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "超过5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": 500000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fa1b68e4f1bdb348",
+            "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "Manus融资5亿美元回归国内市场，还有机会吗？",
+            "source_content_hash": "092b22b325c27f3c",
+            "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+            "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
           }
         ]
       },
@@ -1132,6 +1178,14 @@
         "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
       },
       {
+        "source_id": "FISRC-fa1b68e4f1bdb348",
+        "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "Manus融资5亿美元回归国内市场，还有机会吗？",
+        "source_content_hash": "092b22b325c27f3c",
+        "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+        "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
+      },
+      {
         "source_id": "FISRC-a2c9854f5230d423",
         "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
         "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
@@ -1401,8 +1455,8 @@
           "source_id": "FISRC-a60cc435d9a05afa"
         },
         {
-          "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a2c9854f5230d423"
+          "description": "融资来源记录：蝴蝶效应（Butterfly Effect） · B+轮 · 2026-10-08 · 本轮参投 · 超过5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fa1b68e4f1bdb348"
         }
       ],
       "contacts": [
@@ -1447,12 +1501,12 @@
           "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
         },
         {
-          "source_id": "FISRC-a2c9854f5230d423",
-          "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
-          "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
-          "source_content_hash": "2bb10add5e428ec5",
-          "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
-          "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
+          "source_id": "FISRC-fa1b68e4f1bdb348",
+          "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "Manus融资5亿美元回归国内市场，还有机会吗？",
+          "source_content_hash": "092b22b325c27f3c",
+          "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+          "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
         }
       ],
       "last_verified_at": "2026-09-25",

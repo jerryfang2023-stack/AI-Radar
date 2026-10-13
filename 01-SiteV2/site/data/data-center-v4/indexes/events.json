@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -156,35 +156,34 @@
   },
   "events": [
     {
-      "id": "EV-1ab1592853c9099a",
-      "dataDate": "2026-10-12",
-      "date": "2026-10-12",
-      "updatedDate": "2026-10-12",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
+      "id": "EV-e9b020a1b5f1af14",
+      "dataDate": "2026-10-13",
+      "date": "2026-10-13",
+      "updatedDate": "2026-10-13",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
       "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
+      "status": "announced",
+      "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "无问芯穹完成23亿元C轮融资，助力AI时代各行各业的智能革命",
+      "title": "马斯克称AI像被枪抵着脑袋，爆火的AI消费级硬件值得买吗？",
       "originalTitle": "",
-      "subject": "无问芯穹",
-      "action": "完成23亿元C轮融资",
-      "object": "，助力AI时代各行各业的智能革命",
+      "subject": "SpaceX",
+      "action": "acquisition",
+      "object": "Cursor",
       "metrics": [
-        "23亿",
-        "43亿"
+        "600亿"
       ],
       "locations": [],
       "marketScope": {
         "market_region": "CN",
         "china_market_match": true,
         "china_market_basis": [
-          "actor_origin"
+          "event_market"
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-8c7bace8f5589a57"
+          "CL-8d5e9d4727d9ae5a"
         ]
       },
       "missingFields": [],
@@ -203,15 +202,126 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-0369c8fcda657a43"
+        "EN-e78bdebae031095b"
       ],
       "entityNames": [
-        "Infinigence AI"
+        "SpaceX"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://news.pedaily.cn/202610/570082.shtml",
-      "publisher": "news.pedaily.cn"
+      "sourceUrl": "https://post.smzdm.com/p/axkogx74/",
+      "publisher": "post.smzdm.com"
+    },
+    {
+      "id": "EV-1ab1592853c9099a",
+      "dataDate": "2026-10-13",
+      "date": "2026-10-12",
+      "updatedDate": "2026-10-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "单轮23亿、累计43亿！无问芯穹创下我国AI原生基础设施赛道融资纪录",
+      "originalTitle": "",
+      "subject": "单轮23亿、累计43亿！无问芯穹创下我国AI原生基础设施赛道",
+      "action": "融资",
+      "object": "纪录",
+      "metrics": [
+        "23亿",
+        "43亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market",
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-16a13202a95c1237",
+          "CL-e15319bb5a09d26e",
+          "CL-eb148aaeb8005564"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0369c8fcda657a43",
+        "EN-dd4299e49ec180a5"
+      ],
+      "entityNames": [
+        "Infinigence AI",
+        "新民晚报记者今天（12日）"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.sohu.com/a/1086658109_121286085?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "publisher": "www.sohu.com"
+    },
+    {
+      "id": "EV-211e8b43741abead",
+      "dataDate": "2026-10-13",
+      "date": "2026-10-12",
+      "updatedDate": "2026-10-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Winverse AI以4亿美元估值完成在种子轮融资，DeepSeek领投",
+      "originalTitle": "",
+      "subject": "Winverse AI以4亿美元估值",
+      "action": "完成在种子轮融资",
+      "object": "，DeepSeek领投",
+      "metrics": [
+        "4亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-a546d362061f1ee1",
+        "EN-6f7ac1823da81d2e"
+      ],
+      "entityNames": [
+        "Winverse AI以4亿美元估值",
+        "DeepSeek"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://es.tradingview.com/news/panews:88b530885e3f9:0/",
+      "publisher": "es.tradingview.com"
     },
     {
       "id": "EV-3fd8a156811bfc12",
@@ -271,8 +381,199 @@
       "publisher": "news.pedaily.cn"
     },
     {
+      "id": "EV-439079c4d9694407",
+      "dataDate": "2026-10-13",
+      "date": "2026-10-12",
+      "updatedDate": "2026-10-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前Plaud高管为能在后台聆听你的AI应用融资2600万美元",
+      "originalTitle": "Former Plaud exec raises $26M for AI app that listens to you in the background",
+      "subject": "Former Plaud exec",
+      "action": "raises",
+      "object": "$26M for AI app that listens to you in the background",
+      "metrics": [
+        "$26 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-751b001aa17db797"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-751b001aa17db797"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-751b001aa17db797"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-751b001aa17db797",
+        "EN-db36e7bd45191ce4"
+      ],
+      "entityNames": [
+        "Former Plaud exec",
+        "Meituan"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-64d88a6be3258064",
+      "dataDate": "2026-10-13",
+      "date": "2026-10-12",
+      "updatedDate": "2026-10-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "10亿！上海大模型创企拿下新融资",
+      "originalTitle": "",
+      "subject": "10亿！上海大模型创企拿下新",
+      "action": "融资",
+      "object": "10亿！上海大模型创企拿下新融资",
+      "metrics": [
+        "10亿"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2a5cec351194b94a",
+        "EN-1d79127e9d90e89b"
+      ],
+      "entityNames": [
+        "模思智能",
+        "智谱AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+      "publisher": "finance.sina.com.cn"
+    },
+    {
+      "id": "EV-6877d20003836022",
+      "dataDate": "2026-10-13",
+      "date": "2026-10-12",
+      "updatedDate": "2026-10-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "蓝芯算力完成B轮系列近20亿融资，用AI重新定义CPU",
+      "originalTitle": "首发| 蓝芯算力完成B轮系列近20亿融资，用AI重新定义CPU",
+      "subject": "首发| 蓝芯算力",
+      "action": "完成B轮系列近20亿融资",
+      "object": "，用AI重新定义CPU",
+      "metrics": [
+        "20亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-58fe90de31824080"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-51d5a6e541984fb9"
+      ],
+      "entityNames": [
+        "首发| 蓝芯算力"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570081.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
       "id": "EV-9faff8c3dc316485",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-12",
       "updatedDate": "2026-10-12",
       "eventType": "funding",
@@ -319,8 +620,54 @@
       "publisher": "www.eu-startups.com"
     },
     {
+      "id": "EV-ebaf045f180333dc",
+      "dataDate": "2026-10-13",
+      "date": "2026-10-12",
+      "updatedDate": "2026-10-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+      "originalTitle": "Scarlet raises $50M Series B to accelerate AI medical device certification",
+      "subject": "Scarlet",
+      "action": "raises",
+      "object": "$50M Series B to accelerate AI medical device certification",
+      "metrics": [
+        "$50 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f763ca7aa9ae2ff2"
+      ],
+      "entityNames": [
+        "Scarlet"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+      "publisher": "tech.eu"
+    },
+    {
       "id": "EV-e1a99aa97c73cc9c",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-11",
       "updatedDate": "2026-10-11",
       "eventType": "funding",
@@ -354,12 +701,12 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-cc1ccca4c550d644",
-          "CL-f6233754e653ff43",
-          "CL-f5f535c6fb352ee1",
-          "CL-534ef87c45bd7112",
-          "CL-9148c8330ba7c8da",
-          "CL-e605003a1e0ffc95"
+          "CL-8930d8d3a6ab350a",
+          "CL-9d21383bf368a585",
+          "CL-b0566e2d91b4b3ab",
+          "CL-90309a2113fc135c",
+          "CL-f4742f68f8575f72",
+          "CL-17536826b2da000e"
         ]
       },
       "missingFields": [],
@@ -403,6 +750,92 @@
       "products": [],
       "sourceUrl": "https://www.recodechinaai.com/p/deepseek-raises-12b-manus-lands-500m",
       "publisher": "www.recodechinaai.com"
+    },
+    {
+      "id": "EV-20b41540e3b24633",
+      "dataDate": "2026-10-13",
+      "date": "2026-10-10",
+      "updatedDate": "2026-10-10",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI芯片融资潮转向私人信贷 博通、甲骨文等采购芯片",
+      "originalTitle": "",
+      "subject": "AI芯片",
+      "action": "融资",
+      "object": "潮转向私人信贷 博通、甲骨文等采购芯片",
+      "metrics": [
+        "500亿"
+      ],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-4b4370843133841f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-4b4370843133841f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-4b4370843133841f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-4b4370843133841f",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "AI芯片",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://m.sohu.com/a/1086104579_115831?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "publisher": "m.sohu.com"
     },
     {
       "id": "EV-3d949aea7b27ced0",
@@ -534,7 +967,7 @@
     },
     {
       "id": "EV-69273189e74d62e5",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-10",
       "updatedDate": "2026-10-10",
       "eventType": "funding",
@@ -547,7 +980,7 @@
       "originalTitle": "",
       "subject": "TypeSafe AI",
       "action": "funding",
-      "object": "约 8.7 亿美元融资，由安德里森 · 霍洛维兹领投",
+      "object": "约 8.7 亿美元融资，由 Andreessen Horowitz 领投",
       "metrics": [
         "8.7 亿",
         "58.42 亿",
@@ -684,8 +1117,101 @@
       "publisher": "news.pedaily.cn"
     },
     {
+      "id": "EV-02fb30b5a5ffbe8e",
+      "dataDate": "2026-10-13",
+      "date": "2026-10-09",
+      "updatedDate": "2026-10-09",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Persona 完成 1000 万美元融资，由 Cal AI 联合创始人 Zach Yadegari 创立",
+      "originalTitle": "calai联合创始人zachyadegari推出ai智能体新公司persona完成1000万美元融资_大风号",
+      "subject": "Persona",
+      "action": "完成 1000 万美元融资",
+      "object": "，由 Cal AI 联合创始人 Zach Yadegari 创立",
+      "metrics": [
+        "1000万"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-fb0d3cddd035dea0"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5e815286bca59445"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5e815286bca59445"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5e815286bca59445"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5e815286bca59445"
+      ],
+      "entityNames": [
+        "Persona"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://feng.ifeng.com/c/8x5CuXHxCqb",
+      "publisher": "feng.ifeng.com"
+    },
+    {
       "id": "EV-10df3d93ae48e9b4",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-09",
       "updatedDate": "2026-10-09",
       "eventType": "funding",
@@ -737,7 +1263,7 @@
     },
     {
       "id": "EV-2718aecee127b0fa",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-09",
       "updatedDate": "2026-10-09",
       "eventType": "funding",
@@ -785,7 +1311,7 @@
     },
     {
       "id": "EV-289f468a361ec508",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-09",
       "updatedDate": "2026-10-09",
       "eventType": "funding",
@@ -993,7 +1519,7 @@
     },
     {
       "id": "EV-bf7bc9a369a655e3",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-09",
       "updatedDate": "2026-10-09",
       "eventType": "funding",
@@ -1222,7 +1748,7 @@
     },
     {
       "id": "EV-f3ecff6963190b97",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-09",
       "updatedDate": "2026-10-09",
       "eventType": "funding",
@@ -1367,7 +1893,7 @@
     },
     {
       "id": "EV-03a5e703deae837f",
-      "dataDate": "2026-10-10",
+      "dataDate": "2026-10-13",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -1388,6 +1914,22 @@
       "locations": [
         "中国"
       ],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-7cccbcecd8e5ada4",
+          "CL-c390a14340a4753c",
+          "CL-83de7730053639fe",
+          "CL-0fe56840ae37dddd",
+          "CL-9cd4b0e286935eb9",
+          "CL-5f2655059b5c71fe"
+        ]
+      },
       "missingFields": [],
       "conflicts": [],
       "tags": [
@@ -1406,6 +1948,17 @@
           "id": "agentic_execution",
           "name": "智能体",
           "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7cdbc9084feb6ac0"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -1429,6 +1982,17 @@
           "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7cdbc9084feb6ac0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1440,22 +2004,35 @@
           "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7cdbc9084feb6ac0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
         "EN-7cdbc9084feb6ac0",
         "EN-ea3bd73e2b506e00",
-        "EN-9c8ae69b84f21a2e"
+        "EN-9c8ae69b84f21a2e",
+        "EN-18236bebc4788506"
       ],
       "entityNames": [
         "Manus",
         "Meta",
-        "Tencent"
+        "Tencent",
+        "通用AI智能体Manus的运营主体蝴蝶效应"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://m.sohu.com/a/1085199956_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-      "publisher": "m.sohu.com"
+      "sourceUrl": "https://finance.sina.com.cn/roll/2026-10-08/doc-iniuphnz4353297.shtml",
+      "publisher": "finance.sina.com.cn"
     },
     {
       "id": "EV-07340a31b47931ee",
@@ -1794,6 +2371,105 @@
       "publisher": "www.eu-startups.com"
     },
     {
+      "id": "EV-3d81a794527a5e14",
+      "dataDate": "2026-10-13",
+      "date": "2026-10-08",
+      "updatedDate": "2026-10-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
+      "originalTitle": "",
+      "subject": "Manus 母公司蝴蝶效应",
+      "action": "宣布融资",
+      "object": "超过5 亿美元",
+      "metrics": [
+        "5 亿",
+        "40 亿"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-87106ecb286f0914",
+          "CL-f08ce96d1850ef2d"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8547a3fca97a330d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8547a3fca97a330d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8547a3fca97a330d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8547a3fca97a330d",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "Manus 母公司蝴蝶效应",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.rfi.fr/cn/%E4%BA%9A%E6%B4%B2/20261008-manus-%E6%AF%8D%E5%85%AC%E5%8F%B8%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94%E5%AE%A3%E5%B8%83%E8%9E%8D%E8%B5%84%E8%B6%85%E8%BF%875-%E4%BA%BF%E7%BE%8E%E5%85%83",
+      "publisher": "www.rfi.fr"
+    },
+    {
       "id": "EV-45559cdee71aaa17",
       "dataDate": "2026-10-11",
       "date": "2026-10-08",
@@ -1927,7 +2603,7 @@
     },
     {
       "id": "EV-53d3d485f2b3d64e",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -2188,7 +2864,7 @@
     },
     {
       "id": "EV-60beaa2e14a34fc9",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -2352,7 +3028,7 @@
     },
     {
       "id": "EV-622c77a021ef08de",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -2502,7 +3178,7 @@
     },
     {
       "id": "EV-7a0dc6ce13dd0c19",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -2749,7 +3425,7 @@
     },
     {
       "id": "EV-cdcdea720885d037",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -2834,7 +3510,7 @@
     },
     {
       "id": "EV-ce32b416f60cec1d",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -2965,7 +3641,7 @@
     },
     {
       "id": "EV-f7b689602574677a",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -3011,7 +3687,7 @@
     },
     {
       "id": "EV-03938561933f2961",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "funding",
@@ -3110,7 +3786,7 @@
     },
     {
       "id": "EV-215ea259173fa6b4",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "funding",
@@ -3248,7 +3924,7 @@
     },
     {
       "id": "EV-5b59ff829e596b56",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "funding",
@@ -3461,7 +4137,7 @@
     },
     {
       "id": "EV-6b668e4655192209",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "acquisition",
@@ -3574,7 +4250,7 @@
     },
     {
       "id": "EV-756708b78b427477",
-      "dataDate": "2026-10-10",
+      "dataDate": "2026-10-13",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "funding",
@@ -3621,7 +4297,7 @@
     },
     {
       "id": "EV-80fce5a60752ce60",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-07",
       "updatedDate": "2026-10-07",
       "eventType": "funding",
@@ -4214,6 +4890,69 @@
       "publisher": "www.prnewswire.com"
     },
     {
+      "id": "EV-01b0f26cf6ff034c",
+      "dataDate": "2026-10-13",
+      "date": "2026-10-06",
+      "updatedDate": "2026-10-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "DeepSeek 冲向 1000 亿融资：要上 16 万颗 AI 芯片",
+      "originalTitle": "",
+      "subject": "DeepSeek 冲向 1000 亿",
+      "action": "融资",
+      "object": "：要上 16 万颗 AI 芯片",
+      "metrics": [
+        "800 亿",
+        "500 亿",
+        "1000 亿",
+        "5000 亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-b2d6aa28e5afbff0",
+          "CL-fc4b0c40ecee765b",
+          "CL-902ea0b181bc38a2",
+          "CL-a16f1a3c53b257e2"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e"
+      ],
+      "entityNames": [
+        "DeepSeek"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.163.com/dy/article/L8IO12KB0511D6RL.html",
+      "publisher": "www.163.com"
+    },
+    {
       "id": "EV-03401b3c382e1088",
       "dataDate": "2026-10-10",
       "date": "2026-10-06",
@@ -4262,7 +5001,7 @@
     },
     {
       "id": "EV-187a61fc05451d66",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -4348,7 +5087,7 @@
     },
     {
       "id": "EV-1c79bd33ccfafec8",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -4399,7 +5138,7 @@
     },
     {
       "id": "EV-2eb259fc0b868102",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -4529,7 +5268,7 @@
     },
     {
       "id": "EV-33c666ae1aefd87b",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -4611,7 +5350,7 @@
     },
     {
       "id": "EV-366e1027af052b7a",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -4708,7 +5447,7 @@
     },
     {
       "id": "EV-52e472f000148362",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -4852,7 +5591,7 @@
     },
     {
       "id": "EV-6744aefb738a9a0c",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -4898,7 +5637,7 @@
     },
     {
       "id": "EV-6bbfb2ce5e89bbda",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -4983,7 +5722,7 @@
     },
     {
       "id": "EV-6cf399bb27ddd1a5",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -5488,7 +6227,7 @@
     },
     {
       "id": "EV-c96f8475f771fe20",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "funding",
@@ -162927,52 +163666,6 @@
       "publisher": "无锡市创新投资集团有限公司"
     },
     {
-      "id": "EV-e9b020a1b5f1af14",
-      "dataDate": "2026-07-13",
-      "date": "2026-06-18",
-      "updatedDate": "2026-07-13",
-      "eventType": "acquisition",
-      "eventTypeLabel": "并购",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI 领域的首次重大退出",
-      "originalTitle": "The first big exit in AI",
-      "subject": "SpaceX",
-      "action": "acquisition",
-      "object": "Cursor",
-      "metrics": [
-        "$60B"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-e78bdebae031095b"
-      ],
-      "entityNames": [
-        "SpaceX"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://bensbites.com/p/the-first-big-exit-in-ai",
-      "publisher": "Ben's Bites AI Newsletter"
-    },
-    {
       "id": "EV-d8ab585446e56beb",
       "dataDate": "2026-06-19",
       "date": "2026-06-18",
@@ -249392,7 +250085,7 @@
     },
     {
       "id": "EV-b117dacb4d262724",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "hardware_deployment",
@@ -249968,7 +250661,9 @@
         {
           "name": "Grok Bot",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "SpaceX"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/1/006/247.htm",
@@ -293642,7 +294337,7 @@
     },
     {
       "id": "EV-b611fec3bb1ed987",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-06",
       "updatedDate": "2026-10-06",
       "eventType": "product_release",
@@ -296783,7 +297478,9 @@
         {
           "name": "GPT-6",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "SpaceX"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/1/007/069.htm",
@@ -341882,12 +342579,16 @@
         {
           "name": "Grok AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "SpaceX"
+          ]
         },
         {
           "name": "Grok Bot",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "SpaceX"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/989/237.htm",
@@ -404945,7 +405646,7 @@
           "name": "Colossus",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "SpaceX"
           ]
         }
       ],
@@ -420705,7 +421406,7 @@
           "name": "Siri AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Huawei"
+            "SpaceX"
           ]
         }
       ],
@@ -438057,7 +438758,7 @@
     },
     {
       "id": "EV-ab09da5ae7b87728",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-09",
       "updatedDate": "2026-10-09",
       "eventType": "organization_people",
@@ -438101,7 +438802,7 @@
     },
     {
       "id": "EV-e4d57e0b654bb2c0",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-09",
       "updatedDate": "2026-10-09",
       "eventType": "capital_investment",
@@ -438145,7 +438846,7 @@
     },
     {
       "id": "EV-a74b50329a01cd04",
-      "dataDate": "2026-10-12",
+      "dataDate": "2026-10-13",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "ipo_listing",
@@ -438244,7 +438945,7 @@
     },
     {
       "id": "EV-c847ccafbb8077eb",
-      "dataDate": "2026-10-11",
+      "dataDate": "2026-10-13",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "capital_investment",

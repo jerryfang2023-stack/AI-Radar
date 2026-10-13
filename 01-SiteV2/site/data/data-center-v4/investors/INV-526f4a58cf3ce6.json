@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,32 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-08-26",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
-      "co_lead": 2
+      "co_lead": 2,
+      "participant": 1
     },
     "round_codes": [
       "angel",
-      "angel_plus"
+      "angel_plus",
+      "pre_series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-2a5cec351194b94a",
+        "canonical_entity_id": "",
+        "name": "上海模思智能科技有限公司"
+      },
       {
         "entity_id": "EN-3ee57b807d91aa43",
         "canonical_entity_id": "EN-3ee57b807d91aa43",
@@ -91,6 +99,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f0843b53d9e48cd7",
+        "funding_insight_id": "FI-24db5bbc2d1045e9",
+        "event_ids": [
+          "EV-64d88a6be3258064"
+        ],
+        "company_entity_id": "EN-2a5cec351194b94a",
+        "company_canonical_entity_id": "",
+        "company_name": "上海模思智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2b099c2278c91b1d",
+            "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+            "source_title": "10亿！上海大模型创企拿下新融资",
+            "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+            "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+            "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a8c4c29d9cdb3d40",
         "funding_insight_id": "FI-cfac6fe1ce40d030",
@@ -174,6 +222,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2b099c2278c91b1d",
+        "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+        "source_title": "10亿！上海大模型创企拿下新融资",
+        "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+        "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+        "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+      },
+      {
         "source_id": "FISRC-642c04894404ccd5",
         "source_url": "https://news.pedaily.cn/202608/568123.shtml",
         "source_title": "AI4Engineering新锐企业「原力引擎」完成天使+轮近5000万元融资",
@@ -251,6 +307,10 @@
           "source_id": "FISRC-e666934339b27e85"
         },
         {
+          "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2b099c2278c91b1d"
+        },
+        {
           "description": "融资来源记录：原力引擎 · 天使+轮 · 2026-08-26 · 本轮联合领投 · 近5000万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-642c04894404ccd5"
         }
@@ -309,6 +369,14 @@
           "source_content_hash": "a3d55e3960392661",
           "quote": "本轮由上海国投旗下上海科创集团、复旦科创联合领投",
           "quote_hash": "a48247a13b3e5d8796103000c085404f8869646a8d4a74f21ef4427981deadea"
+        },
+        {
+          "source_id": "FISRC-2b099c2278c91b1d",
+          "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+          "source_title": "10亿！上海大模型创企拿下新融资",
+          "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+          "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+          "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
         },
         {
           "source_id": "FISRC-642c04894404ccd5",

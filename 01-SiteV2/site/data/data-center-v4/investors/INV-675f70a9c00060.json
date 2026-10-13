@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
+    "current_round_count": 10,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 9,
-    "china_market_company_count": 7,
+    "china_market_activity_count": 10,
+    "china_market_company_count": 8,
     "first_disclosed_at": "2026-01-26",
     "latest_disclosed_at": "2026-10-09",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 5,
-      "participant": 7
+      "participant": 8
     },
     "round_codes": [
       "angel",
@@ -86,6 +86,11 @@
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8547a3fca97a330d",
+        "canonical_entity_id": "",
+        "name": "蝴蝶效应（Butterfly Effect）"
+      },
       {
         "entity_id": "EN-35aaf7bc032bdcdb",
         "canonical_entity_id": "",
@@ -168,6 +173,46 @@
             "source_content_hash": "4485c3ef38069f76",
             "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
             "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-445b1dd2256a8169",
+        "funding_insight_id": "FI-b54885fdab524aa5",
+        "event_ids": [
+          "EV-3d81a794527a5e14"
+        ],
+        "company_entity_id": "EN-8547a3fca97a330d",
+        "company_canonical_entity_id": "",
+        "company_name": "蝴蝶效应（Butterfly Effect）",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "超过5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": 500000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fa1b68e4f1bdb348",
+            "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "Manus融资5亿美元回归国内市场，还有机会吗？",
+            "source_content_hash": "092b22b325c27f3c",
+            "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+            "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
           }
         ]
       },
@@ -681,6 +726,14 @@
         "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
       },
       {
+        "source_id": "FISRC-fa1b68e4f1bdb348",
+        "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "Manus融资5亿美元回归国内市场，还有机会吗？",
+        "source_content_hash": "092b22b325c27f3c",
+        "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+        "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
+      },
+      {
         "source_id": "FISRC-2ea62510cec1d311",
         "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
         "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
@@ -848,8 +901,8 @@
           "source_id": "FISRC-a60cc435d9a05afa"
         },
         {
-          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-09-04 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2ea62510cec1d311"
+          "description": "融资来源记录：蝴蝶效应（Butterfly Effect） · B+轮 · 2026-10-08 · 本轮参投 · 超过5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fa1b68e4f1bdb348"
         }
       ],
       "contacts": [
@@ -933,12 +986,12 @@
           "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
         },
         {
-          "source_id": "FISRC-2ea62510cec1d311",
-          "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
-          "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
-          "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
-          "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
-          "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+          "source_id": "FISRC-fa1b68e4f1bdb348",
+          "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "Manus融资5亿美元回归国内市场，还有机会吗？",
+          "source_content_hash": "092b22b325c27f3c",
+          "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+          "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
         }
       ],
       "last_verified_at": "2026-09-25",
