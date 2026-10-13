@@ -560,6 +560,53 @@ function acceptedModelCandidate(sourceEntry, claims, evidence) {
   };
 }
 
+test('approved mixed-language funding title parses the recipient without changing the original source', async () => {
+  const original = 'calai联合创始人zachyadegari推出ai智能体新公司persona完成1000万美元融资_大风号';
+  const translated = 'Persona 完成 1000 万美元融资，由 Cal AI 联合创始人 Zach Yadegari 创立';
+  const quote = '品玩10月9日讯，据 TechCrunch 报道，Cal AI的少年联合创始人Zach Yadegari已推出新的AI智能体创业公司Persona，并完成1000万美元融资。';
+  const source = entry('persona-mixed-title', original, quote, {
+    title_zh: translated, title_translation_method: 'source_title_translation_db',
+    published_at: '2026-10-09', collected_at: '2026-10-13T00:00:00Z',
+  });
+  const bundle = buildBundle([source], taxonomy, '2026-10-13', '2026-10-13T00:00:00Z');
+  const event = bundle.canonical_events.find(row => row.event_type === 'funding');
+  assert.ok(event);
+  assert.equal(bundle.raw_documents[0].title_original, original);
+  const claim = bundle.claims.find(row => row.claim_type === 'funding');
+  assert.equal(claim.subject, 'Persona');
+  assert.equal(claim.source_quote, quote);
+  assert.equal(quote.slice(claim.source_span.start, claim.source_span.end), claim.source_quote);
+  assert.ok(bundle.entities.some(row => row.canonical_name === 'Persona'));
+  assert.ok(!bundle.entities.some(row => row.canonical_name === 'calai联合'));
+  const {fundingEventAggregationKey, sameFundingDisclosureForReuse, selectFundingEventsForGeneration} = await import('../generate-funding-insights-deepseek.mjs');
+  const company = bundle.entities.find(row => row.canonical_name === 'Persona');
+  const card = {triggered_by_event_id:'EV-already-published', company:{entity_id:company.entity_id,name:'Persona'}, aggregation:{key:`${company.entity_id}|undisclosed|USD:exact:10000000:::|2026-10-08`}, financing:{round:'轮次未披露',amount:'$10M',announced_at:'2026-10-08'}};
+  const selection = selectFundingEventsForGeneration([event], {
+    publishedCards:[card], eventAggregationKey:e=>fundingEventAggregationKey(e,{...bundle,claims:bundle.claims,entities:bundle.entities}),
+    publishedCardMatchesEvent:(e,c)=>sameFundingDisclosureForReuse(e,c,bundle.claims),
+  });
+  assert.equal(selection.pending.length,0);
+  assert.equal(selection.deduplicated[0]?.event_id,event.event_id);
+  for(const financing of [{...card.financing,amount:'$5M'},{...card.financing,announced_at:'2026-09-01'}]){
+    const changed=selectFundingEventsForGeneration([event],{publishedCards:[{...card,financing}],eventAggregationKey:e=>fundingEventAggregationKey(e,bundle),publishedCardMatchesEvent:(e,c)=>sameFundingDisclosureForReuse(e,c,bundle.claims)});
+    assert.equal(changed.pending.length,1);
+  }
+});
+
+test('funding parsing ignores unapproved or amount-changing title translations and strips only known publisher suffixes', () => {
+  const original='calai联合创始人zachyadegari推出ai智能体新公司persona完成1000万美元融资_大风号';
+  const body='Cal AI的联合创始人推出新的AI智能体创业公司Persona，并完成1000万美元融资。';
+  for(const extra of [
+    {title_zh:'Persona 完成 1000 万美元融资',title_translation_method:'provider_guess'},
+    {title_zh:'Persona 完成 2000 万美元融资',title_translation_method:'source_title_translation_db'},
+  ]){
+    const bundle=buildBundle([entry('persona-unapproved',original,body,extra)],taxonomy,date,`${date}T00:00:00Z`);
+    assert.notEqual(bundle.claims.find(row=>row.claim_type==='funding')?.subject,'Persona');
+  }
+  assert.equal(normalizeEventTitle('Persona完成1000万美元融资_大风号'),'Persona完成1000万美元融资');
+  assert.equal(normalizeEventTitle('Persona_AI raises $10M'),'Persona_AI raises $10M');
+});
+
 test('reviewed financing rounds do not merge through a shared investor and amount', () => {
   const inputs = [
     entry('funded-xai', 'xAI raises $20 billion in Series E', 'xAI has raised $20 billion in Series E funding. Nvidia participated. The company builds large language models.'),

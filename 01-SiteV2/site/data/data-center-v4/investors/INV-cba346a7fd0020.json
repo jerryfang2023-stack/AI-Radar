@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,17 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-03-25",
-    "latest_disclosed_at": "2026-03-25",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
@@ -82,9 +84,54 @@
         "entity_id": "EN-be8f311b8bb47e9c",
         "canonical_entity_id": "",
         "name": "华深智药"
+      },
+      {
+        "entity_id": "EN-db36e7bd45191ce4",
+        "canonical_entity_id": "",
+        "name": "Ambi"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5b5508206ed14a33",
+        "funding_insight_id": "FI-0e41ffec7a5a965c",
+        "event_ids": [
+          "EV-439079c4d9694407"
+        ],
+        "company_entity_id": "EN-db36e7bd45191ce4",
+        "company_canonical_entity_id": "",
+        "company_name": "Ambi",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$26 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 26000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2600 万美元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-84410a602fe52654",
+            "source_url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
+            "source_title": "前Plaud高管为能在后台聆听你的AI应用融资2600万美元",
+            "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+            "quote": "it has raised $26 million across multiple funding rounds led by Luminous Ventures",
+            "quote_hash": "3cc2a9f87717a877904f44ba60be5dfc5caf6704c378379f8a93e49c1ceac1fc"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8c5493d90b6537d0",
         "funding_insight_id": "FI-c3bce60cc6406ae5",
@@ -128,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-84410a602fe52654",
+        "source_url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
+        "source_title": "前Plaud高管为能在后台聆听你的AI应用融资2600万美元",
+        "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+        "quote": "it has raised $26 million across multiple funding rounds led by Luminous Ventures",
+        "quote_hash": "3cc2a9f87717a877904f44ba60be5dfc5caf6704c378379f8a93e49c1ceac1fc"
+      },
+      {
         "source_id": "FISRC-972ef11d09af7ec8",
         "source_url": "https://vc.pedaily.cn/company/205217.html",
         "source_title": "华深智药完成7.87亿美元B轮融资",
@@ -161,6 +216,10 @@
         {
           "description": "渶策资本发布的华深智药融资公告将 Luminous Ventures 列为本轮投资方之一；未披露该机构单独出资额。",
           "source_id": "huashen_series_c"
+        },
+        {
+          "description": "融资来源记录：Ambi · 多轮融资 · 2026-10-12 · 本轮领投 · $26 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-84410a602fe52654"
         },
         {
           "description": "融资来源记录：华深智药 · 多轮融资 · 2026-03-25 · 本轮参投 · 7.87亿美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -211,6 +270,14 @@
           "source_content_hash": "8db76bb9b75b6d9bcd340da0f74c6066d5a68e52b36ea779090b7ad623009361",
           "quote": "本轮投资方包括一批全球领先机构，如Dimension Capital、DST Global、INCE Capital、Luminous Ventures",
           "quote_hash": "821922c3bc6ef84b4d0149bf556ed86a87208d29001a24418a0f6a2cc4037dc6"
+        },
+        {
+          "source_id": "FISRC-84410a602fe52654",
+          "source_url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
+          "source_title": "前Plaud高管为能在后台聆听你的AI应用融资2600万美元",
+          "source_content_hash": "d1499bba80f4453b6c498ff4e005a94fbfb817c40afa1d4b169c64bd865a0ed2",
+          "quote": "it has raised $26 million across multiple funding rounds led by Luminous Ventures",
+          "quote_hash": "3cc2a9f87717a877904f44ba60be5dfc5caf6704c378379f8a93e49c1ceac1fc"
         },
         {
           "source_id": "FISRC-972ef11d09af7ec8",

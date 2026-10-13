@@ -1,0 +1,274 @@
+{
+  "event_id": "EV-311cb1feaaf97b98",
+  "company_name": "calai联合",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "Persona 完成 1000 万美元融资，由 Cal AI 联合创始人 Zach Yadegari 创立",
+    "event_source_refs": [
+      "SA-07ad189e8cb921d1"
+    ],
+    "event_claim_refs": [
+      "CL-fb0d3cddd035dea0"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-094041ff443b4d2d",
+        "canonical_name": "calai联合"
+      }
+    ],
+    "event_metrics": [
+      "1000万"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-fb0d3cddd035dea0",
+        "raw_id": "RAW-4ac85d7d94d94b97",
+        "subject": "calai联合创始人zachyadegari推出ai智能体新公司persona",
+        "object": "_大风号",
+        "source_quote_length": 79
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "calai联合"
+  },
+  "queries": [
+    "\"calai联合\" 2026 融资 投资方",
+    "\"calai联合\" 1000万美元 融资 领投 跟投",
+    "\"calai联合\" 官网 产品 服务",
+    "\"calai联合\" 投资机构 融资用途",
+    "\"calai联合\" 2026 本轮融资 公告",
+    "\"calai联合\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"calai联合\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://baby.ifeng.com/c/8qHj6SlUPUT",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://feng.ifeng.com/c/8x0J611rtnK",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://finance.ifeng.com/c/8vguX6xAuEC",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://finance.ifeng.com/c/8vaToR1qpVT",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://feng.ifeng.com/c/8weI3y2Di5D",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://finance.ifeng.com/c/8woHzl7dWoZ",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://finance.ifeng.com/c/8pvU81zmyTh",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://finance.ifeng.com/c/8plbGCVWff0",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"calai联合\" 1000万美元 融资 领投 跟投",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"calai联合\" 1000万美元 融资 领投 跟投",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"calai联合\" 1000万美元 融资 领投 跟投",
+      "status": "quota_exhausted",
+      "http_status": 402,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"calai联合\" 1000万美元 融资 领投 跟投",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.calai.app/",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://calai.me/",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.calai.app/login",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://calai.fit/",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://calai.me/blog/what-is-cal-ai-en",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://calai-usa.com/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"calai联合\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://sz.ifeng.com/c/8x6JH8cnFFH",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://feng.ifeng.com/c/8x3wMO1UrHj",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://finance.ifeng.com/c/8tLxBdyTMZZ",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://baby.ifeng.com/c/8wHBnMYW3iZ",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://hainan.ifeng.com/c/8x6c8khiW9D",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://tech.ifeng.com/c/8hKFryWvmdQ",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://finance.ifeng.com/c/8iFoLzoChKp",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"calai联合\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 4
+    },
+    {
+      "provider": "tavily",
+      "query": "\"calai联合\" 投资机构 融资用途",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"calai联合\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://i.ifeng.com/c/8x4gUuGxh71",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://feng.ifeng.com/c/8x6MWsI4mTs",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://news.ifeng.com/c/8t46R4Ygpov",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"calai联合\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"calai联合\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 5
+    },
+    {
+      "provider": "tavily",
+      "query": "\"calai联合\" 客户 创始人 总部",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"calai联合\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

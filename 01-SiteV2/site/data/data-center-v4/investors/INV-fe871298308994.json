@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,72 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-12",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-2a5cec351194b94a",
+        "canonical_entity_id": "",
+        "name": "上海模思智能科技有限公司"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-d2ea3151814dce0a",
+        "funding_insight_id": "FI-24db5bbc2d1045e9",
+        "event_ids": [
+          "EV-64d88a6be3258064"
+        ],
+        "company_entity_id": "EN-2a5cec351194b94a",
+        "company_canonical_entity_id": "",
+        "company_name": "上海模思智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2b099c2278c91b1d",
+            "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+            "source_title": "10亿！上海大模型创企拿下新融资",
+            "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+            "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+            "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e23519a9fbfb27b3",
         "funding_insight_id": "FI-b9ca2a7fb525fcf8",
@@ -112,6 +162,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2b099c2278c91b1d",
+        "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+        "source_title": "10亿！上海大模型创企拿下新融资",
+        "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+        "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+        "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+      },
       {
         "source_id": "FISRC-a638483ec7304070",
         "source_url": "https://news.pedaily.cn/202607/566169.shtml",
@@ -178,6 +236,10 @@
         {
           "description": "2026年融资报道将上海科创基金列为天鹜科技A++轮的老股东持续加注方之一。披露金额是天鹜科技本轮融资总额，并非基金单笔投资额。",
           "source_id": "FISRC-a638483ec7304070"
+        },
+        {
+          "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2b099c2278c91b1d"
         }
       ],
       "contacts": [
@@ -236,6 +298,14 @@
           "source_content_hash": "06a0df416cf83674",
           "quote": "老股东 启明创投、涌铧投资、金沙江联合资本润璞医疗基金、本草资本、上海科创基金持续加注",
           "quote_hash": "cd2a756f5925f986d0e5a08c4a75bf5644810d1d8e4468c86a2f92d2cb53c7ce"
+        },
+        {
+          "source_id": "FISRC-2b099c2278c91b1d",
+          "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+          "source_title": "10亿！上海大模型创企拿下新融资",
+          "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+          "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+          "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
         }
       ],
       "last_verified_at": "2026-09-27"

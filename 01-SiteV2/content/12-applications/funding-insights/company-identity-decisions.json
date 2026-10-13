@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "FUNDING-COMPANY-IDENTITY-DECISION-V1.0",
-    "updated_at": "2026-10-01",
+    "updated_at": "2026-10-13",
     "rule": "Funding Insights may merge public cards only after an explicit identity review. The decision changes the application projection, preserves every source event, and does not mutate Data Center V4 canonical facts."
   },
   "decisions": [
@@ -4316,6 +4316,36 @@
         "corroborating_quote": "TypeSafe cofounder and CEO Diogo Almeida"
       },
       "rationale": "责任人独立核对已有A轮事实、Diogo Almeida等创始人与Jev产品；DCVC原文与9月种子轮均为同一typesafe.ai公司。只统一应用身份，4000万美元种子轮与8.7亿美元A轮仍是独立融资。"
+    },
+    {
+      "decision_id": "FICID-PERSONA-20261013",
+      "entity_id": "EN-006e39f60f196420",
+      "application_entity_id": "EN-5e815286bca59445",
+      "current": {
+        "name": "Persona",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "Persona"
+      ],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "Persona",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_at": "2026-10-13",
+      "reviewed_by": "Codex responsible financing review",
+      "evidence": {
+        "source_url": "https://ai123.com/news/14790",
+        "quote": "Cal AI联合创始人Zach Yadegari于2026年10月宣布创立AI智能体初创公司Persona，并已完成1000万美元融资。",
+        "source_content_hash": "c1650c27025def761208ae340cb0d4985be9e56e9cf9b2b9c55f12be6760b177",
+        "corroborating_source_url": "https://feng.ifeng.com/c/8x5CuXHxCqb",
+        "corroborating_quote": "Cal AI的少年联合创始人Zach Yadegari已推出新的AI智能体创业公司Persona，并完成1000万美元融资。",
+        "corroborating_content_hash": "a7ea64e33f25a6c36527a2c83315f1291ec757e22baa320f9ceaa38eaf0a93ff"
+      },
+      "rationale": "两份接受原文指向 Zach Yadegari 创立的 Persona、同一笔1000万美元融资和相同投资方。历史应用卡错误借用了创始人规范实体ID；仅纠正 Persona 公司卡的应用身份，不合并或修改创始人的历史规范事实，保留原来源事件、金额、轮次和日期。"
     }
   ]
 }

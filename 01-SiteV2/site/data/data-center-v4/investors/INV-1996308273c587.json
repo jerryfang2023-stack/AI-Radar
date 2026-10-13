@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,7 +64,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 9,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 6,
     "market_regions": [
       "CN",
@@ -72,11 +72,11 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-02-03",
+    "first_disclosed_at": "2025-04",
     "latest_disclosed_at": "2026-10-08",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 2,
       "participant": 5
     },
@@ -487,6 +487,38 @@
         ]
       },
       {
+        "activity_id": "IA-c79379d0731fe189",
+        "funding_insight_id": "FI-b54885fdab524aa5",
+        "event_ids": [
+          "EV-3d81a794527a5e14"
+        ],
+        "company_entity_id": "EN-8547a3fca97a330d",
+        "company_canonical_entity_id": "",
+        "company_name": "蝴蝶效应（Butterfly Effect）",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2025年4月B轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-76e356978db85d8f",
+            "source_url": "https://finance.sina.com.cn/stock/hkstock/hkzmt/2026-10-09/doc-iniuqywm6978794.shtml",
+            "source_title": "Manus融资5亿美元，一天收到上千份简历，ARR一年翻4倍",
+            "source_content_hash": "f948181f546c63b3",
+            "quote": "2025年4月，产品上线仅一个多月，Manus就以5亿美元估值完成了7500万美元融资，由硅谷知名风投Benchmark领投，腾讯、真格基金、HSG等机构跟投",
+            "quote_hash": "dc981085c4bbc79298172a64cc0c1cbef1957efdbc1bc956974b9f59f97c4feb"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-1f35b32f205312ab",
         "funding_insight_id": "FI-bd9d3811bf597d1c",
         "event_ids": [
@@ -659,6 +691,14 @@
         "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
       },
       {
+        "source_id": "FISRC-76e356978db85d8f",
+        "source_url": "https://finance.sina.com.cn/stock/hkstock/hkzmt/2026-10-09/doc-iniuqywm6978794.shtml",
+        "source_title": "Manus融资5亿美元，一天收到上千份简历，ARR一年翻4倍",
+        "source_content_hash": "f948181f546c63b3",
+        "quote": "2025年4月，产品上线仅一个多月，Manus就以5亿美元估值完成了7500万美元融资，由硅谷知名风投Benchmark领投，腾讯、真格基金、HSG等机构跟投",
+        "quote_hash": "dc981085c4bbc79298172a64cc0c1cbef1957efdbc1bc956974b9f59f97c4feb"
+      },
+      {
         "source_id": "FISRC-2c01dfb7ebd1357c",
         "source_url": "https://startupintros.com/orgs/cerebras-systems",
         "source_title": "Cerebras Systems: Funding, Team & Investors",
@@ -821,7 +861,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[9].role": {
+        "activities[10].role": {
           "text": "Venture Round 参投",
           "source_hash": "06c87ef49262ae10ee600994008f183c80d7e1cd9788cd80d3ef49509dceba0e",
           "provider": "deepseek",
@@ -829,7 +869,7 @@
           "translated_at": "2026-10-02T06:25:20.177Z",
           "status": "translated"
         },
-        "activities[10].role": {
+        "activities[11].role": {
           "text": "Series B 联合领投",
           "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
           "provider": "deepseek",

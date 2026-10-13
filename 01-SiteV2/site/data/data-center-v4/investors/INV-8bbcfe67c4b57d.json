@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-05-15",
-    "latest_disclosed_at": "2026-05-15",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "pre_series_a"
@@ -82,9 +83,54 @@
         "entity_id": "EN-0a2f10a137375779",
         "canonical_entity_id": "EN-0a2f10a137375779",
         "name": "博银合创"
+      },
+      {
+        "entity_id": "EN-2a5cec351194b94a",
+        "canonical_entity_id": "",
+        "name": "上海模思智能科技有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0595214ae6638ae7",
+        "funding_insight_id": "FI-24db5bbc2d1045e9",
+        "event_ids": [
+          "EV-64d88a6be3258064"
+        ],
+        "company_entity_id": "EN-2a5cec351194b94a",
+        "company_canonical_entity_id": "",
+        "company_name": "上海模思智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2b099c2278c91b1d",
+            "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+            "source_title": "10亿！上海大模型创企拿下新融资",
+            "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+            "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+            "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b7884fe72380f945",
         "funding_insight_id": "FI-455a4e981dbf0aee",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2b099c2278c91b1d",
+        "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+        "source_title": "10亿！上海大模型创企拿下新融资",
+        "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+        "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+        "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+      },
+      {
         "source_id": "FISRC-957ccf12eb78ad84",
         "source_url": "https://news.pedaily.cn/202605/563918.shtml",
         "source_title": "博银合创完成近3亿元人民币Pre-A轮融资，加速工业具身智能规模化落地",
@@ -160,6 +214,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2b099c2278c91b1d"
+        },
         {
           "description": "融资来源记录：博银合创 · Pre-A轮 · 2026-05-15 · 本轮参投 · 3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-957ccf12eb78ad84"
@@ -198,6 +256,14 @@
           "source_content_hash": "d97589452d7d98e49db4b356d8aa42c86c4c759e452504769447d2ca45b5d7d9",
           "quote": "元禾控股深耕股权投资领域，以服务实体经济、促进产业升级为使命，坚持投早、投小、投长期、投硬科技",
           "quote_hash": "7718d8b66ffce23df6b81d700b02d48d166a8418ebb9d84564d379390012e358"
+        },
+        {
+          "source_id": "FISRC-2b099c2278c91b1d",
+          "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+          "source_title": "10亿！上海大模型创企拿下新融资",
+          "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+          "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+          "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
         },
         {
           "source_id": "FISRC-957ccf12eb78ad84",

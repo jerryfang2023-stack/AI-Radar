@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 2,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_b_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-8547a3fca97a330d",
+        "canonical_entity_id": "",
+        "name": "蝴蝶效应（Butterfly Effect）"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-dd4a971146f8956b",
+        "funding_insight_id": "FI-b54885fdab524aa5",
+        "event_ids": [
+          "EV-3d81a794527a5e14"
+        ],
+        "company_entity_id": "EN-8547a3fca97a330d",
+        "company_canonical_entity_id": "",
+        "company_name": "蝴蝶效应（Butterfly Effect）",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "超过5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": 500000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fa1b68e4f1bdb348",
+            "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "Manus融资5亿美元回归国内市场，还有机会吗？",
+            "source_content_hash": "092b22b325c27f3c",
+            "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+            "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-06f9385e30b8f9c9",
         "funding_insight_id": "FI-a81898de30b8d7c3",
@@ -144,6 +193,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-fa1b68e4f1bdb348",
+        "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "Manus融资5亿美元回归国内市场，还有机会吗？",
+        "source_content_hash": "092b22b325c27f3c",
+        "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+        "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
+      },
+      {
         "source_id": "FISRC-c5b27b074fcae4b4",
         "source_url": "https://www.mg21.com/moonshot.html",
         "source_title": "中国通用人工智能公司：月之暗面 Moonshot AI",
@@ -210,6 +267,10 @@
         {
           "description": "官网人物介绍举出小红书、逸仙电商等例子，并称其作为天使投资人为创业者开出第一张支票；这是机构人物介绍中的自述。",
           "source_id": "zhen_team_cases_20260927"
+        },
+        {
+          "description": "融资来源记录：蝴蝶效应（Butterfly Effect） · B+轮 · 2026-10-08 · 本轮参投 · 超过5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fa1b68e4f1bdb348"
         },
         {
           "description": "融资来源记录：Moonshot AI · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -306,6 +367,14 @@
           "source_content_hash": "c7b29ea070971decaa638d9bd479a4dabb3c39e8973774e17f49575df595b613",
           "quote": "北京 ... 上海 ... 深圳",
           "quote_hash": "9c3dbb757f3eb470e966ed98345a6d6ab91940e1e2766bf6aa9d84fe2eef2a15"
+        },
+        {
+          "source_id": "FISRC-fa1b68e4f1bdb348",
+          "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "Manus融资5亿美元回归国内市场，还有机会吗？",
+          "source_content_hash": "092b22b325c27f3c",
+          "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
+          "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
         },
         {
           "source_id": "FISRC-c5b27b074fcae4b4",

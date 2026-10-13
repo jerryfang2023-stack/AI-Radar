@@ -2454,6 +2454,18 @@ test("a descriptive founder headline resolves only a uniquely named accepted rec
   }
 });
 
+test('accepted same-amount startup appositive resolves Persona across a comma without adopting the founder employer', () => {
+  const entity={entity_id:'EN-bad-title',entity_type:'organization_candidate',canonical_name:'calai联合'};
+  const quote='品玩10月9日讯，据 TechCrunch 报道，Cal AI的少年联合创始人Zach Yadegari已推出新的AI智能体创业公司Persona，并完成1000万美元融资。';
+  const claim={claim_id:'CL-persona',claim_type:'funding',verification_status:'accepted',subject:'calai联合创始人zachyadegari推出ai智能体新公司persona',object:'_大风号',source_quote:quote};
+  const event={entities:[entity.entity_id],claim_refs:[claim.claim_id],object:'_大风号',metrics:['1000万']};
+  const index={companies:[{id:'EN-persona',name:'Persona',sourceType:'organization_candidate'}]};
+  assert.equal(subjectCompanyForEvent(event,[entity],index,[claim],[quote])?.entity_id,'EN-persona');
+  // Resolving a company candidate does not approve a financing transaction.
+  // Amount/date equivalence remains a separate condition for reusing a card.
+  assert.equal(subjectCompanyForEvent(event,[entity],index,[claim],[quote])?.canonical_name,'Persona');
+});
+
 test("Chinese funding titles resolve the company entity instead of a headline fragment", () => {
   const cases = [
     {

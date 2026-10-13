@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,31 +61,85 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-06",
-    "latest_disclosed_at": "2026-05-06",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "pre_seed"
+      "pre_seed",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-4458e908dd9a5440",
         "canonical_entity_id": "",
         "name": "Davis"
+      },
+      {
+        "entity_id": "EN-f763ca7aa9ae2ff2",
+        "canonical_entity_id": "",
+        "name": "Scarlet"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e0ecdc993ada5dca",
+        "funding_insight_id": "FI-2a662caaa655e995",
+        "event_ids": [
+          "EV-ebaf045f180333dc"
+        ],
+        "company_entity_id": "EN-f763ca7aa9ae2ff2",
+        "company_canonical_entity_id": "",
+        "company_name": "Scarlet",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c2bc2be66fddfb8a",
+            "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+            "source_title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+            "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+            "quote": "existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First",
+            "quote_hash": "bffa9902152b3f60a0be14f69d34bb42c32a24166946e206eb46489415c01cf5"
+          },
+          {
+            "source_id": "FISRC-5f20202ab3b889f7",
+            "source_url": "https://techfundingnews.com/scarlet-raises-50m-series-b-headline-ai-medical-device-certification/",
+            "source_title": "Ex-Babylon engineers&#8217; Scarlet raises $50M from Headline to certify AI medical devices faster",
+            "source_content_hash": "e2e353c5cf497e02",
+            "quote": "The existing investors Atomico, Creandum, Kindred Capital and Entrepreneurs First are also participating in this round.",
+            "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
+          }
+        ]
+      },
       {
         "activity_id": "IA-20570c64034bb682",
         "funding_insight_id": "FI-7ba868edc61b3b2a",
@@ -161,6 +215,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c2bc2be66fddfb8a",
+        "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+        "source_title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+        "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+        "quote": "existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First",
+        "quote_hash": "bffa9902152b3f60a0be14f69d34bb42c32a24166946e206eb46489415c01cf5"
+      },
+      {
+        "source_id": "FISRC-5f20202ab3b889f7",
+        "source_url": "https://techfundingnews.com/scarlet-raises-50m-series-b-headline-ai-medical-device-certification/",
+        "source_title": "Ex-Babylon engineers&#8217; Scarlet raises $50M from Headline to certify AI medical devices faster",
+        "source_content_hash": "e2e353c5cf497e02",
+        "quote": "The existing investors Atomico, Creandum, Kindred Capital and Entrepreneurs First are also participating in this round.",
+        "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
+      },
+      {
         "source_id": "FISRC-d5d5c858ca2bcd66",
         "source_url": "https://www.balderton.com/news/davis-raises-5-5-million-pre-seed-to-accelerate-early-stage-real-estate-development-from-months-to-days/",
         "source_title": "Davis 筹集 550 万美元预种子轮 - Balderton",
@@ -196,12 +266,12 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Davis · 预种子轮 · 2026-05-06 · 本轮参投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d5d5c858ca2bcd66"
+          "description": "融资来源记录：Scarlet · B轮 · 2026-10-12 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c2bc2be66fddfb8a"
         },
         {
-          "description": "融资来源记录：OLIX Computing Ltd. · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b8ac45c45da22b49"
+          "description": "融资来源记录：Davis · 预种子轮 · 2026-05-06 · 本轮参投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d5d5c858ca2bcd66"
         }
       ],
       "profile_type": "organization",
@@ -231,20 +301,28 @@
           "quote_hash": "7ba9b6814c21933cc886d0aec355799d096e72de90a29cdcf46185a1f3327a39"
         },
         {
+          "source_id": "FISRC-c2bc2be66fddfb8a",
+          "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+          "source_title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+          "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+          "quote": "existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First",
+          "quote_hash": "bffa9902152b3f60a0be14f69d34bb42c32a24166946e206eb46489415c01cf5"
+        },
+        {
+          "source_id": "FISRC-5f20202ab3b889f7",
+          "source_url": "https://techfundingnews.com/scarlet-raises-50m-series-b-headline-ai-medical-device-certification/",
+          "source_title": "Ex-Babylon engineers&#8217; Scarlet raises $50M from Headline to certify AI medical devices faster",
+          "source_content_hash": "e2e353c5cf497e02",
+          "quote": "The existing investors Atomico, Creandum, Kindred Capital and Entrepreneurs First are also participating in this round.",
+          "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
+        },
+        {
           "source_id": "FISRC-d5d5c858ca2bcd66",
           "source_url": "https://www.balderton.com/news/davis-raises-5-5-million-pre-seed-to-accelerate-early-stage-real-estate-development-from-months-to-days/",
           "source_title": "Davis 筹集 550 万美元预种子轮 - Balderton",
           "source_content_hash": "e0d1baa182929cff",
           "quote": "with participation from Yellow, Evantic and Entrepreneurs First",
           "quote_hash": "c935e5b3d87073d8b068adab229cced4f2d0b39685f471c2b175c6d6ff2d7993"
-        },
-        {
-          "source_id": "FISRC-b8ac45c45da22b49",
-          "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment/",
-          "source_title": "光子AI芯片初创公司OLIX获得2.2亿美元投资",
-          "source_content_hash": "48033349283b73c285686033b79c23c21dc36495571664c01e0ddfd34bd2dab3",
-          "quote": "The company previously raised an undisclosed amount of funding from Plural, Vertex Ventures, LocalGlobe and Entrepreneurs First.",
-          "quote_hash": "d40641b698e2fe5a5d8acdc9e6f890f4c2be6865312d99aa85c5e18e6972b91d"
         }
       ],
       "last_verified_at": "2026-10-03"

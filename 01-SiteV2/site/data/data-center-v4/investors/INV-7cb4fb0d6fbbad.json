@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-21",
-    "latest_disclosed_at": "2026-05-21",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
       "series_b"
@@ -82,9 +83,62 @@
         "entity_id": "EN-d6386c59a6bcfcb1",
         "canonical_entity_id": "",
         "name": "Pivot"
+      },
+      {
+        "entity_id": "EN-f763ca7aa9ae2ff2",
+        "canonical_entity_id": "",
+        "name": "Scarlet"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-450dc7d10bed8f28",
+        "funding_insight_id": "FI-2a662caaa655e995",
+        "event_ids": [
+          "EV-ebaf045f180333dc"
+        ],
+        "company_entity_id": "EN-f763ca7aa9ae2ff2",
+        "company_canonical_entity_id": "",
+        "company_name": "Scarlet",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c2bc2be66fddfb8a",
+            "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+            "source_title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+            "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+            "quote": "with participation from new investor Notion Capital",
+            "quote_hash": "73c97bb42a133874b93204a712f08672900d04e159957fafca03b3f353ccbef5"
+          },
+          {
+            "source_id": "FISRC-5f20202ab3b889f7",
+            "source_url": "https://techfundingnews.com/scarlet-raises-50m-series-b-headline-ai-medical-device-certification/",
+            "source_title": "Ex-Babylon engineers&#8217; Scarlet raises $50M from Headline to certify AI medical devices faster",
+            "source_content_hash": "e2e353c5cf497e02",
+            "quote": "Notion Capital is joining the round as a new investor",
+            "quote_hash": "8fb85b8b7b51bff40ab3fbe595c1d0feaf8db95d9fe87a10c5e4588997a9e863"
+          }
+        ]
+      },
       {
         "activity_id": "IA-07e41b42bf3b8b03",
         "funding_insight_id": "FI-d3ef6c0ebcd62288",
@@ -127,6 +181,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c2bc2be66fddfb8a",
+        "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+        "source_title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+        "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+        "quote": "with participation from new investor Notion Capital",
+        "quote_hash": "73c97bb42a133874b93204a712f08672900d04e159957fafca03b3f353ccbef5"
+      },
+      {
+        "source_id": "FISRC-5f20202ab3b889f7",
+        "source_url": "https://techfundingnews.com/scarlet-raises-50m-series-b-headline-ai-medical-device-certification/",
+        "source_title": "Ex-Babylon engineers&#8217; Scarlet raises $50M from Headline to certify AI medical devices faster",
+        "source_content_hash": "e2e353c5cf497e02",
+        "quote": "Notion Capital is joining the round as a new investor",
+        "quote_hash": "8fb85b8b7b51bff40ab3fbe595c1d0feaf8db95d9fe87a10c5e4588997a9e863"
+      },
       {
         "source_id": "FISRC-58b2708f2adcb70e",
         "source_url": "https://thenextweb.com/news/pivot-40m-series-b-agentic-ai-procurement-operating-system",
@@ -200,6 +270,10 @@
         {
           "description": "官网组合页面列出的代表性公司包括 Mews、GoCardless、Paddle、Currencycloud 与 Quantum Systems；这是选择性展示，不是完整投资清单或回报数据。",
           "source_id": "notion_home"
+        },
+        {
+          "description": "融资来源记录：Scarlet · B轮 · 2026-10-12 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c2bc2be66fddfb8a"
         }
       ],
       "profile_type": "organization",
@@ -269,6 +343,22 @@
           "source_content_hash": "4c1272518f44f483",
           "quote": "has raised $40m in a Series B led by Forestay Capital and Notion Capital",
           "quote_hash": "17b6e623e7eae5e5597b6fbff227feabc152ea69596a740e7b1bfd850e684029"
+        },
+        {
+          "source_id": "FISRC-c2bc2be66fddfb8a",
+          "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+          "source_title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
+          "source_content_hash": "1a39706f1ea77931ddd5a6cad068b17677ae91b8d962963c1089e89bc30f943e",
+          "quote": "with participation from new investor Notion Capital",
+          "quote_hash": "73c97bb42a133874b93204a712f08672900d04e159957fafca03b3f353ccbef5"
+        },
+        {
+          "source_id": "FISRC-5f20202ab3b889f7",
+          "source_url": "https://techfundingnews.com/scarlet-raises-50m-series-b-headline-ai-medical-device-certification/",
+          "source_title": "Ex-Babylon engineers&#8217; Scarlet raises $50M from Headline to certify AI medical devices faster",
+          "source_content_hash": "e2e353c5cf497e02",
+          "quote": "Notion Capital is joining the round as a new investor",
+          "quote_hash": "8fb85b8b7b51bff40ab3fbe595c1d0feaf8db95d9fe87a10c5e4588997a9e863"
         }
       ],
       "last_verified_at": "2026-09-27"

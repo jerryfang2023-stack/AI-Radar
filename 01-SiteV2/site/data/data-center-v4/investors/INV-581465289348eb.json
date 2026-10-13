@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-12",
-    "currentDate": "2026-10-12",
-    "eventCount": 4104,
+    "latestDataDate": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "eventCount": 4113,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,20 +63,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
-    "historical_or_ambiguous_count": 7,
-    "portfolio_company_count": 7,
+    "current_round_count": 10,
+    "historical_or_ambiguous_count": 8,
+    "portfolio_company_count": 8,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 8,
-    "china_market_company_count": 6,
+    "china_market_activity_count": 9,
+    "china_market_company_count": 7,
     "first_disclosed_at": "2026-03-24",
-    "latest_disclosed_at": "2026-09-16",
+    "latest_disclosed_at": "2026-10-08",
     "role_counts": {
-      "historical_or_ambiguous": 7,
-      "lead": 3,
+      "historical_or_ambiguous": 8,
+      "lead": 4,
       "participant": 6
     },
     "round_codes": [
@@ -85,9 +85,15 @@
       "multi_round",
       "other",
       "pre_series_a",
-      "series_b"
+      "series_b",
+      "series_b_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8547a3fca97a330d",
+        "canonical_entity_id": "",
+        "name": "蝴蝶效应（Butterfly Effect）"
+      },
       {
         "entity_id": "EN-a43f157d208b2a63",
         "canonical_entity_id": "EN-a43f157d208b2a63",
@@ -125,6 +131,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-541d5d7a746ec3b8",
+        "funding_insight_id": "FI-b54885fdab524aa5",
+        "event_ids": [
+          "EV-3d81a794527a5e14"
+        ],
+        "company_entity_id": "EN-8547a3fca97a330d",
+        "company_canonical_entity_id": "",
+        "company_name": "蝴蝶效应（Butterfly Effect）",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "超过5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": 500000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5 亿美元"
+        },
+        "announced_at": "2026-10-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b143f42cd2d50743",
+            "source_url": "https://www.rfi.fr/cn/%E4%BA%9A%E6%B4%B2/20261008-manus-%E6%AF%8D%E5%85%AC%E5%8F%B8%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94%E5%AE%A3%E5%B8%83%E8%9E%8D%E8%B5%84%E8%B6%85%E8%BF%875-%E4%BA%BF%E7%BE%8E%E5%85%83",
+            "source_title": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
+            "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+            "quote": "由博裕资本、IDG资本领投，腾讯、红杉中国、真格基金等跟投",
+            "quote_hash": "0a6fac19e94a09bda490b3406dfd2bf3d08fb4f8a0a48466b2eb162ef120ac43"
+          }
+        ]
+      },
       {
         "activity_id": "IA-82561d2e5f450ad3",
         "funding_insight_id": "FI-e81dafc2defecb80",
@@ -589,6 +635,38 @@
         ]
       },
       {
+        "activity_id": "IA-34e71179c1023cac",
+        "funding_insight_id": "FI-24db5bbc2d1045e9",
+        "event_ids": [
+          "EV-64d88a6be3258064"
+        ],
+        "company_entity_id": "EN-2a5cec351194b94a",
+        "company_canonical_entity_id": "",
+        "company_name": "上海模思智能科技有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2b099c2278c91b1d",
+            "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+            "source_title": "10亿！上海大模型创企拿下新融资",
+            "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+            "quote": "今年3月，模思智能完成数亿元天使轮融资，由IDG资本领投",
+            "quote_hash": "3febe998bb9af1d0e279a8628d74118a9c0f64a10a09e52d13cd066e75602fef"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-a50431667f6019fb",
         "funding_insight_id": "FI-2e0a12585d18ffca",
         "event_ids": [
@@ -720,6 +798,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-b143f42cd2d50743",
+        "source_url": "https://www.rfi.fr/cn/%E4%BA%9A%E6%B4%B2/20261008-manus-%E6%AF%8D%E5%85%AC%E5%8F%B8%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94%E5%AE%A3%E5%B8%83%E8%9E%8D%E8%B5%84%E8%B6%85%E8%BF%875-%E4%BA%BF%E7%BE%8E%E5%85%83",
+        "source_title": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
+        "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+        "quote": "由博裕资本、IDG资本领投，腾讯、红杉中国、真格基金等跟投",
+        "quote_hash": "0a6fac19e94a09bda490b3406dfd2bf3d08fb4f8a0a48466b2eb162ef120ac43"
+      },
+      {
         "source_id": "FISRC-a2c9854f5230d423",
         "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
         "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
@@ -816,6 +902,14 @@
         "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
       },
       {
+        "source_id": "FISRC-2b099c2278c91b1d",
+        "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
+        "source_title": "10亿！上海大模型创企拿下新融资",
+        "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
+        "quote": "今年3月，模思智能完成数亿元天使轮融资，由IDG资本领投",
+        "quote_hash": "3febe998bb9af1d0e279a8628d74118a9c0f64a10a09e52d13cd066e75602fef"
+      },
+      {
         "source_id": "FISRC-eff56a0dccad1e36",
         "source_url": "https://www.sohu.com/a/848831543_122074763",
         "source_title": "速递｜张一鸣和王兴又联手投了新项目，抖音创始成员，估值已超1.5亿美元",
@@ -873,16 +967,16 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：蝴蝶效应（Butterfly Effect） · B+轮 · 2026-10-08 · 本轮领投 · 超过5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b143f42cd2d50743"
+        },
+        {
           "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a2c9854f5230d423"
         },
         {
           "description": "融资来源记录：威邦震电 · B轮 · 2026-09-14 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f9c8fdd671d3e193"
-        },
-        {
-          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-09-04 · 本轮领投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2ea62510cec1d311"
         }
       ],
       "contacts": [
@@ -933,6 +1027,14 @@
           "quote_hash": "55dbc765f313dcb1df7f0247e84a136cb6ba8b4e79eec87c4364570aa9ecee7a"
         },
         {
+          "source_id": "FISRC-b143f42cd2d50743",
+          "source_url": "https://www.rfi.fr/cn/%E4%BA%9A%E6%B4%B2/20261008-manus-%E6%AF%8D%E5%85%AC%E5%8F%B8%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94%E5%AE%A3%E5%B8%83%E8%9E%8D%E8%B5%84%E8%B6%85%E8%BF%875-%E4%BA%BF%E7%BE%8E%E5%85%83",
+          "source_title": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
+          "source_content_hash": "52be03ae2a842e86c97470bd59f13dae904613d86e3fbf07e7157b3ca744472a",
+          "quote": "由博裕资本、IDG资本领投，腾讯、红杉中国、真格基金等跟投",
+          "quote_hash": "0a6fac19e94a09bda490b3406dfd2bf3d08fb4f8a0a48466b2eb162ef120ac43"
+        },
+        {
           "source_id": "FISRC-a2c9854f5230d423",
           "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
           "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
@@ -947,14 +1049,6 @@
           "source_content_hash": "b77e2b4e3f147ce2a11962774d610e4452e112a260a22904f82729e47b346c49",
           "quote": "本轮融资由道彤投资领投，IDG资本共同参与。",
           "quote_hash": "54b911518820bd90fc70f3f722879f5450857f2a1a38681d085498cd2a20573f"
-        },
-        {
-          "source_id": "FISRC-2ea62510cec1d311",
-          "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
-          "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
-          "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
-          "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
-          "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
         }
       ],
       "last_verified_at": "2026-09-25",

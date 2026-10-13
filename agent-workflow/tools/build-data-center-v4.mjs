@@ -7,6 +7,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { extractExplicitProductNames } from "../product/product-entity-normalizer.mjs";
 import { buildEventDisplayTitle, isCompletePublicEventTitle } from "./event-public-title.mjs";
+import { sourceTitleFactsPreserved, titleTranslationLooksUsable } from "./source-title-translation-generator.mjs";
 import { loadSourceIntakeEntries, readSourceIntake } from "./lib/source-intake-v1.mjs";
 import {
   availablePrivateEvidenceDates,
@@ -565,6 +566,7 @@ function containsChinese(value = "") {
 
 function normalizeEventTitle(value) {
   return normalizeSpace(value)
+    .replace(/_(?:大风号|凤凰网)\s*$/u, "")
     .replace(/\s*(?:\||<)\s*(?:semiconductor|기사본문)\b.*$/iu, "")
     .replace(/\s+[|—-]\s+(?:techcrunch|the elec inc\.?|reuters|bloomberg)\s*$/iu, "")
     .trim();
@@ -1974,7 +1976,16 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const bodyOriginal = cleanString(raw.clean_text || raw.full_text);
     const bodyClean = trimBoilerplate(bodyOriginal);
     const titleOriginal = cleanString(raw.title || raw.title_zh);
-    const title = normalizeEventTitle(titleOriginal);
+    const originalParsingTitle = normalizeEventTitle(titleOriginal);
+    // Repair mangled mixed-language funding headlines through the approved
+    // title registry. Preserve Raw's original title and all evidence spans.
+    const mangledFundingTitle = /^(?:[a-z0-9]{3,}[\p{Script=Han}])|_(?:大风号|凤凰网)\s*$/u.test(titleOriginal)
+      && findEventRule(originalParsingTitle, bodyClean.slice(0, 1200))?.eventType === "funding";
+    const approvedParsingTitle = mangledFundingTitle
+      && raw.title_translation_method === "source_title_translation_db"
+      && titleTranslationLooksUsable(titleOriginal, raw.title_zh)
+      && sourceTitleFactsPreserved(titleOriginal, raw.title_zh);
+    const title = approvedParsingTitle ? normalizeEventTitle(raw.title_zh) : originalParsingTitle;
     const candidateDeterministicRule = findEventRule(title, bodyClean.slice(0, 1200));
     const modelClaimCandidate = [
       ...(acceptedAssistByRaw.get(rawId) || []),
