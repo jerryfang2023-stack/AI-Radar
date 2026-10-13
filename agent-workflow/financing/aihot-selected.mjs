@@ -1,10 +1,31 @@
 import { aihotCandidate, isFundingDiscovery } from '../tools/lib/aihot-feed.mjs';
 import { read, write } from './state.mjs';
 import { inDiscoveryWindow } from './subscriptions.mjs';
-import {fetchAIHotPage} from './aihot-request.mjs';
 
 const fresh=()=>({version:'AIHOT-SELECTED-STATE-1',items:{},cursor:null,bootstrap:null,review_changes:[]});
-export async function syncAIHotSelected({stateFile,date,fetcher=fetch,baseUrl='https://aihot.news',maxPages=50,save=state=>write(stateFile,state),wait}={}) {
+
+const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+
+// A transient upstream failure (request timeout, 429, or 5xx) used to abort the
+// whole collection phase, because any thrown page fetch leaves `complete` false.
+// Retry those with exponential backoff. Client and contract errors are returned
+// or rethrown unchanged: they need a code change, not another attempt.
+async function fetchPage(fetcher,url,{attempts=4,timeoutMs=20000,baseDelayMs=1000}={}) {
+  for(let attempt=1;attempt<=attempts;attempt++) {
+    try {
+      const response=await fetcher(url,{signal:AbortSignal.timeout(timeoutMs),headers:{accept:'application/json','user-agent':'WaveSightFinancing/1.1'}});
+      const transient=response.status===429||response.status>=500;
+      if(transient&&attempt<attempts){await sleep(baseDelayMs*2**(attempt-1));continue;}
+      return response;
+    } catch(error) {
+      if(attempt<attempts){await sleep(baseDelayMs*2**(attempt-1));continue;}
+      throw error;
+    }
+  }
+  throw new Error('aihot_selected_request_failed');
+}
+
+export async function syncAIHotSelected({stateFile,date,fetcher=fetch,baseUrl='https://aihot.news',maxPages=50,save=state=>write(stateFile,state)}={}) {
   let state=stateFile?read(stateFile,fresh()):fresh();
   if(state.version!=='AIHOT-SELECTED-STATE-1')throw new Error('aihot_selected_state_version_mismatch');
   let pages=0,complete=false,resets=0;const cursors=new Set(),failures=[];
@@ -15,7 +36,7 @@ export async function syncAIHotSelected({stateFile,date,fetcher=fetch,baseUrl='h
       url.searchParams.set('limit',bootstrap?'1000':'100');
       if(bootstrap){url.searchParams.set('fields','default');if(state.bootstrap?.nextPage)url.searchParams.set('page',state.bootstrap.nextPage);}
       else url.searchParams.set('cursor',state.cursor);
-      const response=await fetchAIHotPage(url.href,{signal:AbortSignal.timeout(20000),headers:{accept:'application/json','user-agent':'WaveSightFinancing/1.1'}},{fetcher,wait});
+      const response=await fetchPage(fetcher,url.href);
       if(response.status===409) {
         const error=await response.json();
         if((error.error?.code||error.error||error.code)!=='snapshot_required'||resets++>0)throw new Error('aihot_selected_409_unknown');
