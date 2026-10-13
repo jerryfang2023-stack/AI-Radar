@@ -10,7 +10,7 @@
     "latest_financing_date": "2026-10-12",
     "generated_at": "2026-10-13T03:01:14.631Z",
     "card_count": 774,
-    "china_market_card_count": 232,
+    "china_market_card_count": 233,
     "duplicate_rounds_removed": 81,
     "automatic_publication": true,
     "translation_registry": {
@@ -1345,6 +1345,12 @@
             "quote": "模思智能成立于2024年，总部位于上海市徐汇区，是一家面向下一代情境交互智能的大模型创新企业",
             "source_content_hash": "cc2831e335b4fdff",
             "quote_hash": "a695c5320b57b21c52181abf70ad4693574cb47d01aa9fc5e83706c1ed843ba2"
+          },
+          {
+            "source_id": "FISRC-24cb407ea35d1b9d",
+            "quote": "君合作为上海模思智能科技有限公司（下称“模思智能”或“公司”）的法律顾问，协助公司完成Pre-A轮融资（下称“本项目”）。",
+            "source_content_hash": "2e81aeb7cd5e0c36",
+            "quote_hash": "0d41c7af85bd9f131b297667e0e1a207bc6b4403fdd4ede37a1783ec2514f0fb"
           }
         ],
         "application_entity_id": "EN-2a5cec351194b94a",
@@ -1410,7 +1416,8 @@
                 "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-2d1b066da9f1c5"
           },
           {
             "name": "徐汇资本",
@@ -1437,7 +1444,8 @@
                 "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-a6525342611e7f"
           },
           {
             "name": "临港策源基金",
@@ -1450,7 +1458,8 @@
                 "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-3a9a85b3f092a2"
           },
           {
             "name": "元禾控股",
@@ -2330,9 +2339,11 @@
         }
       ],
       "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "funding_company_evidence:china_legal_entity:君合作为上海模思智能科技有限公司"
+        ],
         "source_registry_ids": []
       },
       "product_form": {
@@ -2490,7 +2501,8 @@
                 "quote_hash": "1fe34ba1a2faf1d8054bbce97ae41a4a550917cad194f54eca664492add46a89"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-365ca5a95be2ee"
           }
         ],
         "other_round_investors": [],
@@ -3029,7 +3041,8 @@
                 "quote_hash": "0a6fac19e94a09bda490b3406dfd2bf3d08fb4f8a0a48466b2eb162ef120ac43"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-35dd68d755daf3"
           },
           {
             "name": "IDG资本",
