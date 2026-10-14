@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-13",
-    "currentDate": "2026-10-13",
-    "eventCount": 4113,
+    "latestDataDate": "2026-10-14",
+    "currentDate": "2026-10-14",
+    "eventCount": 4126,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-06-23",
-    "latest_disclosed_at": "2026-06-23",
+    "latest_disclosed_at": "2026-10-13",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "angel_plus"
+      "angel_plus",
+      "pre_series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-26ef5ed7622bea22",
+        "canonical_entity_id": "",
+        "name": "荆华密算"
+      },
       {
         "entity_id": "EN-fcc9af8dc8c25167",
         "canonical_entity_id": "EN-fcc9af8dc8c25167",
@@ -86,6 +93,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-41d57e82901d6224",
+        "funding_insight_id": "FI-8df649aa1ec82165",
+        "event_ids": [
+          "EV-86aa6c06358dcdae"
+        ],
+        "company_entity_id": "EN-26ef5ed7622bea22",
+        "company_canonical_entity_id": "",
+        "company_name": "荆华密算",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-10-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3ff24c6b7a38b108",
+            "source_url": "https://news.pedaily.cn/202610/570182.shtml",
+            "source_title": "荆华密算获近亿元Pre-A轮融资，半年连融三轮",
+            "source_content_hash": "fdf036f58acf0712802ec94f72536e5fb1a0fa37b939fb4b4cba58c4c8a0d2c6",
+            "quote": "本轮融资由中关村科学城、北创投联合领投，华仓资本、极致投资联合投资，老股东英诺科创基金、盛景嘉成创投持续加注。",
+            "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8956518611a37b22",
         "funding_insight_id": "FI-a3033e661b23b30e",
@@ -161,6 +208,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3ff24c6b7a38b108",
+        "source_url": "https://news.pedaily.cn/202610/570182.shtml",
+        "source_title": "荆华密算获近亿元Pre-A轮融资，半年连融三轮",
+        "source_content_hash": "fdf036f58acf0712802ec94f72536e5fb1a0fa37b939fb4b4cba58c4c8a0d2c6",
+        "quote": "本轮融资由中关村科学城、北创投联合领投，华仓资本、极致投资联合投资，老股东英诺科创基金、盛景嘉成创投持续加注。",
+        "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
+      },
+      {
         "source_id": "FISRC-3f6ac401bc9ed3ed",
         "source_url": "https://news.pedaily.cn/202606/565451.shtml",
         "source_title": "「智子芯元」完成数千万元天使+轮融资，持续深耕 AI for Computing",
@@ -225,6 +280,10 @@
       "experience_summary": "英诺基金强调早期科技投资、数字化基金管理和投后服务。官网列示奖项与组合案例属于机构自述。",
       "track_record": [
         {
+          "description": "融资来源记录：荆华密算 · Pre-A轮 · 2026-10-13 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3ff24c6b7a38b108"
+        },
+        {
           "description": "融资来源记录：智子芯元 · 天使+轮 · 2026-06-23 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3f6ac401bc9ed3ed"
         },
@@ -272,6 +331,14 @@
           "source_content_hash": "7aaa2ca296b62c9f0a5fae4638c46a02ff994e0f394459f00f0a83110cf5be89",
           "quote": "创业项目投递 bp@innoangel.com；北京总部：北京市海淀区中关村梦想实验室7层。",
           "quote_hash": "fb1f256d9b4d25281eef9e9848c8ce4c3cbb8734f09ac059988c9ce74d12648c"
+        },
+        {
+          "source_id": "FISRC-3ff24c6b7a38b108",
+          "source_url": "https://news.pedaily.cn/202610/570182.shtml",
+          "source_title": "荆华密算获近亿元Pre-A轮融资，半年连融三轮",
+          "source_content_hash": "fdf036f58acf0712802ec94f72536e5fb1a0fa37b939fb4b4cba58c4c8a0d2c6",
+          "quote": "本轮融资由中关村科学城、北创投联合领投，华仓资本、极致投资联合投资，老股东英诺科创基金、盛景嘉成创投持续加注。",
+          "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
         },
         {
           "source_id": "FISRC-3f6ac401bc9ed3ed",

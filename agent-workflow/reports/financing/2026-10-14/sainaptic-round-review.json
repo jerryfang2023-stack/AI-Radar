@@ -1,0 +1,21 @@
+{
+  "version": "FINANCING-FACT-CORRECTION-1",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-14T03:42:25.386Z",
+  "event_id": "EV-41a07b2ca684e361",
+  "source_binding": {
+    "source_id": "FISRC-902a1b7134ff242e",
+    "quote": "raised £1 million in fresh funding to expand its AI-assisted assessment marking technology",
+    "source_content_hash": "0f240252f379ccb065e8e0b98be5ae9574c0994bd612521c0543b4709cfe014d",
+    "quote_hash": "ef4259318a1cb8d5a4c024127eab2e1a511bfa6bb954561885db1efccbe23079"
+  },
+  "reason": "接受原文仅称 fresh funding，未披露轮次；£1M 是金额单位，不能推断 M 轮。",
+  "before": {
+    "round": "M轮",
+    "round_code": "series_m"
+  },
+  "after": {
+    "round": "轮次未披露",
+    "round_code": "undisclosed"
+  }
+}

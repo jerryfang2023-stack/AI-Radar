@@ -1,0 +1,787 @@
+{
+  "version": "FINANCING-RECOVERY-REVIEW-1",
+  "date": "2026-10-14",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-14T03:50:10.454Z",
+  "accepted_run": 38492436923,
+  "accepted_artifact": [
+    {
+      "file": "agent-workflow/reports/financing/2026-10-14/collection.json",
+      "sha256": "a06aa9448e661d7da4ce426b7960b592db3558f6797950311db338dc24d01411",
+      "matches_checkpoint": true
+    },
+    {
+      "file": "01-SiteV2/content/11-databases/data-center-v4/intake-v1/2026-10-14.json",
+      "sha256": "32e9c0f1eb3634983a161c7c1e272b7f35f19edec70c6eefaa78ddead88b6c5b",
+      "matches_checkpoint": true
+    },
+    {
+      "file": "01-SiteV2/content/11-databases/model-assist-v1/2026-10-14.json",
+      "sha256": "ad80ce88bb8564be0ca386c326ddd11d6dc7d88caf61898f476f7519b8693ac4",
+      "matches_checkpoint": true
+    }
+  ],
+  "catalog": {
+    "before": {
+      "subjects": 599,
+      "events": 642,
+      "china": 137
+    },
+    "after": {
+      "subjects": 606,
+      "events": 649,
+      "china": 139
+    },
+    "missing": [],
+    "added": [
+      {
+        "id": "EV-41a07b2ca684e361",
+        "company": "Sainaptic",
+        "amount": "£1 million",
+        "round": "轮次未披露"
+      },
+      {
+        "id": "EV-1bdab9eb4433741f",
+        "company": "Alchera Technologies",
+        "amount": "£2.7m",
+        "round": "种子轮"
+      },
+      {
+        "id": "EV-86aa6c06358dcdae",
+        "company": "荆华密算",
+        "amount": "近亿元",
+        "round": "Pre-A轮"
+      },
+      {
+        "id": "EV-beff4b8357bf80b1",
+        "company": "reebuild",
+        "amount": "€3 million",
+        "round": "种子轮"
+      },
+      {
+        "id": "EV-494de9c065e25847",
+        "company": "天序智能",
+        "amount": "数千万元",
+        "round": "Pre-A+轮"
+      },
+      {
+        "id": "EV-9aa73f1620cd333f",
+        "company": "Obsero",
+        "amount": "€1 million",
+        "round": "种子轮"
+      },
+      {
+        "id": "EV-9dfeaeede161baa7",
+        "company": "Pluto Security",
+        "amount": "$34 million",
+        "round": "A轮"
+      }
+    ],
+    "review": {
+      "excluded": [
+        {
+          "event_id": "EV-b51a67353e247022",
+          "company": "广州云蝶科技有限公司",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-7888024e82caf138",
+          "company": "Ubitium",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-eae106e49ba4d429",
+          "company": "星尘智能（Astribot）",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-7c8a2573ab3781e9",
+          "company": "Mecka AI",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-80fce5a60752ce60",
+          "company": "Konsileo",
+          "reason": "not_ai_business"
+        },
+        {
+          "event_id": "EV-215ea259173fa6b4",
+          "company": "Netsec",
+          "reason": "not_ai_business"
+        },
+        {
+          "event_id": "EV-ad34c5b8ae2f5d20",
+          "company": "FieldAI",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-85f63371a81b394b",
+          "company": "SiMa.ai",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-1ef8979f39a2ccc5",
+          "company": "SiMa.ai",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-474ec498c79f0629",
+          "company": "威邦震电",
+          "reason": "not_ai_business"
+        },
+        {
+          "event_id": "EV-f2eb34f231afc8aa",
+          "company": "小鹏机器人业务",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-b9f933fceca9085b",
+          "company": "Ethernovia, Inc.",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-bdd1611cc17c3325",
+          "company": "千觉机器人",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-d959c800774d5d30",
+          "company": "智身科技（GENISOM AI）",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-412f7ce21693dc13",
+          "company": "地瓜机器人",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-1d9cf73bba2debcc",
+          "company": "思博慧医",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-47f16317cc2d62e2",
+          "company": "小鹏机器人业务",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-1c399d2db39c05a3",
+          "company": "上海造父智能科技有限公司",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-6aaa17d9c372e513",
+          "company": "因克斯",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-7326768782ff1e4e",
+          "company": "寅成智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-08612741cfce0bcf",
+          "company": "斜跃",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-b91024c06d8762a4",
+          "company": "工至海洋",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-3bbd2ab8ebda9871",
+          "company": "紫创智械",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-cbec329253108e80",
+          "company": "深朴智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-782e8dcca41fd545",
+          "company": "松应科技",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-4d46806b1522d5f4",
+          "company": "瞬适科技",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-c17a6102aab72f4f",
+          "company": "星际觅元",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-d67dd793fe1f2c04",
+          "company": "灵御智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-ea916006167c6c43",
+          "company": "原力无限",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-381d21544fcdd0c4",
+          "company": "奇点智控",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-7c3e301d345f8c2d",
+          "company": "昆腾动力",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-34a9773ebd5bbc97",
+          "company": "无界智航",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-e85e6fc6d630d56c",
+          "company": "墨奇智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-7d0803a8b72f84ba",
+          "company": "量感智能",
+          "reason": "not_ai_business"
+        },
+        {
+          "event_id": "EV-a16d0d2a76e8d4a6",
+          "company": "星动纪元",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-a121ed73da005180",
+          "company": "如身机器人",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-b4d6c556eadaa272",
+          "company": "求之科技",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-88158ddf272e4731",
+          "company": "欧拉万象",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-94f334e68144c720",
+          "company": "知跃空间智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-bc5bf99bcf3a4484",
+          "company": "正行创新",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-ba46244851f1db2b",
+          "company": "极佳视界",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-784c98f1fde32c73",
+          "company": "千寻智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-71fc51b3d8e89851",
+          "company": "易启未来",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-1a6fbd73eb4eb133",
+          "company": "新智具身",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-0896f0e7b703bed2",
+          "company": "天机",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-6ff97d32bdcc8586",
+          "company": "寅成智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-3b817460afe0d3a6",
+          "company": "中科沌序",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-b0e0458e4ae40f66",
+          "company": "灵御智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-77c286cb5cd15f8e",
+          "company": "鲸跃动力",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-b66e26c3852d5ba3",
+          "company": "博银合创",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-c2b1af9cc8fba608",
+          "company": "极佳视界",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-7620153f4892a0af",
+          "company": "智平方",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-0ff10475efa53e6c",
+          "company": "星海图",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-d79663ef2ee65ca1",
+          "company": "立妙达",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-3632f9193a3f3f28",
+          "company": "光轮智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-77a608db67e742a4",
+          "company": "极佳视界",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-61f07716fd7cb7ee",
+          "company": "千寻智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-565b6c1b10b3cf83",
+          "company": "智平方",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-371bc68f72326c02",
+          "company": "星海图",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-4242ed9f08123c32",
+          "company": "希夕智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-41c54c428d84cc1e",
+          "company": "自变量机器人",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-140ecf4fabe544ba",
+          "company": "Gatik",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-75452672c9976d73",
+          "company": "GitHub",
+          "reason": "not_ai_business"
+        },
+        {
+          "event_id": "EV-d3fcd1ea4d9baf47",
+          "company": "乐享科技",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-e59938ae531af428",
+          "company": "光轮智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-56da7cceeebc8bcf",
+          "company": "穹彻智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-3a591b0f027f66cf",
+          "company": "极佳视界",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-be59d9048dd1b6a0",
+          "company": "小雨智造",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-499a62114b0fd616",
+          "company": "极佳视界",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-1188b1585b835fe1",
+          "company": "它石智航",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-60d58e2a1f5733f8",
+          "company": "千寻智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-a909450a2d1a1fe1",
+          "company": "灵初智能",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-d2409770301edc83",
+          "company": "银河通用",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-876baa523eb93c4f",
+          "company": "无界动力",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-fcf3c464260b6730",
+          "company": "Gritt",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-869c9ea96c58873d",
+          "company": "Mowito",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-52bf48005db3461a",
+          "company": "Robust.AI",
+          "reason": "embodied_robotics"
+        },
+        {
+          "event_id": "EV-9486e14e99499e3b",
+          "company": "Impulse Space",
+          "reason": "not_ai_business"
+        }
+      ],
+      "pending": [
+        {
+          "event_id": "EV-171e2d688f69ebc6",
+          "company": "Humanify（人格智能）",
+          "reason": "公司称开发human-like模型与AI原生操作系统，但证据不足以判定其主营是基础模型还是应用。"
+        },
+        {
+          "event_id": "EV-d6ef2e46d3005d9b",
+          "company": "厘清智能",
+          "reason": "厘清智能以数采设备与 Physical AI Infra 平台为核心，兼具硬件与具身数据基础设施，主营边界不清需人工复核。"
+        },
+        {
+          "event_id": "EV-f11e79a99589efbd",
+          "company": "息壤开物",
+          "reason": "息壤开物主营物理基础模型并配套物理 AI 数据与评测平台，其是否属具身智能边界需人工复核。"
+        },
+        {
+          "event_id": "EV-42b6bbea76f4c8cc",
+          "company": "Kanurra, Inc.",
+          "reason": "融资已核实；公司自述主营为透明药品福利管理，AI审计仍用将来时描述，AI是否构成主营交付需进一步核验。"
+        },
+        {
+          "event_id": "EV-86838cc774b85116",
+          "company": "范博特机器人",
+          "reason": "证据同时描述学生心理陪伴终端与人形、机器狗、便携宠物机器人产品矩阵，尚不足以确认当前融资主体主营交付；补查量产产品与客户用途后判定消费陪伴设备或机器人本体。"
+        },
+        {
+          "event_id": "EV-3ca24f79062a359e",
+          "company": "驰芯半导体",
+          "reason": "公司专注UWB芯片研发，虽提及'物理世界智能化的感知底座'，但证据不足以确认其核心业务属于AI算力与芯片赛道。"
+        },
+        {
+          "event_id": "EV-2470b13ea55496d0",
+          "company": "Horowitz Andreessen Academy",
+          "reason": "证据仅显示这是一个面向高中毕业生的免费教育项目，未体现其主营 AI 业务或产品形态，证据不足需人工复核。"
+        },
+        {
+          "event_id": "EV-06f2bca776e5cee7",
+          "company": "弧光量子",
+          "reason": "证据仅表明公司专注量子软件与量子计算应用，未明确其AI业务属性，需进一步核实。"
+        },
+        {
+          "event_id": "EV-6e22ce671a8a4d82",
+          "company": "大鱼智行",
+          "reason": "证据显示公司主营智能锂电助力车，AI E-Wagon仅为未来探索方向，当前AI业务属性不明确，需进一步核实其AI能力是否已实际交付。"
+        },
+        {
+          "event_id": "EV-2cf2ab399eb05035",
+          "company": "中科欣扬",
+          "reason": "中科欣扬主营生物活性原料开发，虽搭建合成生物学智能计算平台，但证据未明确其AI业务是否构成主营交付产品，需进一步核实。"
+        },
+        {
+          "event_id": "EV-71d7d8bbaa623228",
+          "company": "幻码跃迁",
+          "reason": "公司提供量子计算全栈软件平台，虽包含AI驱动研发工具，但证据不足以确定其主营业务为AI企业，需进一步审核。"
+        },
+        {
+          "event_id": "EV-35fcdb4a96a2f814",
+          "company": "贻如",
+          "reason": "公司以合成生物材料为主营，AI仅作为研发辅助手段，证据不足以确定其AI业务是否构成核心交付产品。"
+        },
+        {
+          "event_id": "EV-fd2ff833db684e40",
+          "company": "华毅瀛飞",
+          "reason": "证据仅说明公司提供激光器与探测器等光通信核心产品，未体现AI业务关联，证据不足待分类。"
+        },
+        {
+          "event_id": "EV-33053abbe1a60b38",
+          "company": "GitHub Secure Open Source Fund",
+          "reason": "GitHub Secure Open Source Fund 是开源项目安全资助计划，证据未表明其主营 AI 业务，需进一步核实。"
+        },
+        {
+          "event_id": "EV-20d762872664fddb",
+          "company": "Engram",
+          "reason": "现有证据仅提及性能优势，未明确 Engram 的主营业务是模型、开发平台还是其他类别，证据不足需保留待分类。"
+        },
+        {
+          "event_id": "EV-83085b0046c7275c",
+          "company": "Ontora",
+          "reason": "证据仅说明 Ontora 部署 AI 智能体访谈员工以映射工作流程，未明确其产品形态和主营赛道，需进一步审核。"
+        },
+        {
+          "event_id": "EV-ef7346378fcf9746",
+          "company": "SpaceX",
+          "reason": "证据仅提及 SpaceX 是火箭、卫星和人工智能公司，未提供 AI 业务的具体产品与主营范围，不足以确定分类。"
+        }
+      ],
+      "publication_pending": [
+        {
+          "event_id": "EV-439079c4d9694407",
+          "company": "Ambi",
+          "reason": "已接受 TechCrunch 报道为2600万美元多轮总额，但既有二次检索错误围绕美团，独立来源 startupintros.com/orgs/meituan 不支持该融资主体。公司2026-10-12官方稿明确主体 Mistlabs、产品Ambi且金额口径为Pre-A，须对齐法名及轮次口径后发布，不把累计额作为单轮金额。",
+          "source_url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/"
+        },
+        {
+          "event_id": "EV-10df3d93ae48e9b4",
+          "company": "Monte Carlo Capital",
+          "reason": "Monte Carlo Capital是VC基金Fund II首关募资，投资AI不等于自身为AI企业，当前不纳入AI企业融资卡。",
+          "source_url": "https://www.eu-startups.com/2026/10/monte-carlo-capital-raises-e13-million-for-fund-ii-to-invest-in-early-stage-deeptech-ai-and-spacetech/"
+        },
+        {
+          "event_id": "EV-289f468a361ec508",
+          "company": "OpenAI",
+          "reason": "新轮300亿美元仍洽谈，1220亿美元是三月旧轮背景；当前卡混用了金额与日期，待同轮事实修正，不发布。",
+          "source_url": "https://the-decoder.com/openai-revenue-keeps-surging-as-company-seeks-30-billion-in-fresh-capital/"
+        },
+        {
+          "event_id": "EV-f7b689602574677a",
+          "company": "Neela Biotech",
+          "reason": "UKTN报道与剑桥大学企业部门的官方披露均指向同一笔2026-10-08的£2.1m pre-seed融资及共同创始人Deepanshu Singh，但当前被分配到不同entity_id。保留官方来源卡EV-6d646383629d5b15，暂缓此重复卡；不据此合并实体，待身份与事件绑定复核。",
+          "source_url": "https://www.uktech.news/biotech/cambridge-biotech-startup-neela-raises-2-1m-to-turn-waste-into-aviation-fuel-20261008"
+        },
+        {
+          "event_id": "EV-1faa33bcf69dcf47",
+          "company": "Safe Superintelligence Inc.",
+          "reason": "季度综述提及 SSI 历史 50 亿美元融资，文章日期不是该轮融资日期。未取得该轮原始公告及准确披露日期，保留待核验，不作为 10 月 5 日新融资。",
+          "source_url": "https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/"
+        },
+        {
+          "event_id": "EV-7bb7b9e293a852ca",
+          "company": "DOD Solution",
+          "reason": "DOD Solution 主营无人平台的机载计算机与自主控制系统，AURA AI 结合 AURA SBC 和 AURA OS，面向无人机导航、感知和控制；属于具身系统核心部件排除范围，保留原文不公开为范围内融资。",
+          "source_url": "https://www.eu-startups.com/2026/09/combat-tested-in-ukraine-dod-solution-raises-e1-8-million-to-scale-ai-autonomy-for-unmanned-systems/"
+        },
+        {
+          "event_id": "EV-7f10b7d013a91292",
+          "company": "GMI Cloud",
+          "reason": "同一10月1日融资已按2.23亿美元B轮收录。原文6.68亿美元包含2.23亿美元股权及4.45亿美元信贷额度；不能把合计额度重复作为新增融资。保留已发布B轮及本次原文。",
+          "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html"
+        },
+        {
+          "event_id": "EV-3a4ba26375b45669",
+          "company": "OpenAI",
+          "reason": "200亿美元为已收录OpenAI 1220亿美元同轮投资的最后分期到账，非新一轮融资。保留原轮融资及日期，当前提取未完成到账披露与原轮关联，不新增事件。",
+          "source_url": "https://www.ithome.com/1/009/270.htm"
+        },
+        {
+          "event_id": "EV-e902cbe8df8a0b41",
+          "company": "Ultrahuman",
+          "reason": "公司官方原文明确融资宣布于2026-09-03；9月30日公司介绍只是回顾这笔7000万美元融资。当前卡错误沿用介绍文章日期，暂缓发布，待按9月3日原始融资事实补录。原文已私有存证并与本次研究哈希核对一致。",
+          "source_url": "https://cyborg.ultrahuman.com/press-releases/ultrahuman-raises-70-million-to-build-the-next-generation-of-human-computer-interface-for-health"
+        },
+        {
+          "event_id": "EV-936ef5bf2539b55a",
+          "company": "ElevenLabs",
+          "reason": "公司官方原文明确本次为300百万美元employee tender offer员工老股交易；500百万美元是February既往D轮背景，当前卡混用旧金额及9月新估值，不能作为9月新增500百万美元企业融资发布。待按交易性质和正确时间归档。",
+          "source_url": "https://elevenlabs.io/blog/tender-22bn"
+        },
+        {
+          "event_id": "EV-1766b4df1b7011d7",
+          "company": "全灵（深圳）网络有限公司",
+          "reason": "来源正文开头明确本文首发于 Founder Park 公众号 2024 年 11 月 18 日，当前是2026年转载；千万美元Pre-A轮不能使用2026-09-28转载日期列为本年新增融资。待按原始披露归档。",
+          "source_url": "https://www.163.com/dy/article/L7UNLELB05119FMA.html"
+        },
+        {
+          "event_id": "EV-6a63fabeceadc42b",
+          "company": "Headline",
+          "reason": "Headline EU VIII为4亿美元风险投资基金募集；Mistral与Black Forest Labs仅是其历史投资对象，不是本次企业融资收款主体。",
+          "source_url": "https://tech.eu/2026/10/01/mistral-and-black-forest-labs-backer-headline-closes-400m-european-fund/"
+        },
+        {
+          "event_id": "EV-3a7e1e2c46daaa76",
+          "company": "DeepSeek",
+          "reason": "原文同时称完成与接近结束、部分审核仍在进行；IPO属于相邻袁记食品新闻，不能作为DeepSeek轮次。待明确交割状态和本轮披露，不发布本条。",
+          "source_url": "https://m.pedaily.cn/news/569663"
+        },
+        {
+          "event_id": "EV-0f7d759e759cfc09",
+          "company": "Vals",
+          "reason": "原文写明 last month，二次原文指向 2026-08-13 的 A 轮；不能用 9 月 19 日产品报道日期重复计作融资，待按原始披露合并。",
+          "source_url": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking"
+        },
+        {
+          "event_id": "EV-cf58eff49a08500d",
+          "company": "瞬原科技",
+          "reason": "原文明确第二轮（种子+轮），不能因为投资方基金名称含天使等字样标成多轮融资，待纠正轮次。",
+          "source_url": "https://elsewhere.news/zh/yunqipartners/yunqi-capital-co-invests-in-suiyuan-technologys-seed-round-t"
+        },
+        {
+          "event_id": "EV-6a5a3f316200d1e3",
+          "company": "Inherent",
+          "reason": "该篇报道发布 Faraday 产品，融资发生在更早的退出隐身阶段；待核实原始融资日，不能按 8 月 23 日重复计入。",
+          "source_url": "https://www.ithome.com/0/993/133.htm"
+        },
+        {
+          "event_id": "EV-a0b76c46462b5e3c",
+          "company": "Starcloud",
+          "reason": "原文明确融资于 March 宣布，本篇是估值交易方式评论；不能使用 8 月 13 日评论日期作为融资日。",
+          "source_url": "https://www.newcomer.co/p/ai-frenzy-brings-dual-valuation-deals"
+        },
+        {
+          "event_id": "EV-8c9c82321c9254d7",
+          "company": "矩阵起源（MatrixOrigin）",
+          "reason": "原文明确 2026 年 8 月 6 日宣布 A 轮，当前用了 8 月 12 日转载日期，待修复事实日期再发布。",
+          "source_url": "https://elsewhere.news/zh/5ycapital/matrixorigina-5y-news"
+        },
+        {
+          "event_id": "EV-ed65f3187aa6aa40",
+          "company": "DeepSeek",
+          "reason": "原文 70 亿美元融资是 late May 已完成的背景，当前叙述为新一轮 early talks；本条不能作为 7 月新完成融资。",
+          "source_url": "https://the-decoder.com/deepseek-needs-more-cash-just-weeks-after-closing-its-first-7-billion-round"
+        },
+        {
+          "event_id": "EV-5e847cd78e657cb5",
+          "company": "PixVerse",
+          "reason": "原文 4.39 亿美元为 C 轮及扩展后的整轮总额，初始 C 轮约 3 亿美元，本次扩展新增金额未明确披露；不能按 4.39 亿美元新增扩展融资重复累计，待与初始 C 轮统一。",
+          "source_url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b"
+        },
+        {
+          "event_id": "EV-9be8f3451675a795",
+          "company": "Kling",
+          "reason": "本次为上市前私募融资，尚在准备香港 IPO，不能标为已完成 IPO；原文还区分约 20 亿与 20.4 亿美元及未来可追加额，待统一。",
+          "source_url": "https://the-decoder.com/chinese-ai-video-maker-kling-raises-2-billion-as-it-gears-up-for-hong-kong-ipo"
+        },
+        {
+          "event_id": "EV-193f535567067d95",
+          "company": "凌川科技",
+          "reason": "原文为 A+ 轮，老股东追加投资不表示 A+ 扩展轮；原始披露为 6 月 23 日，需核正日期和轮次。",
+          "source_url": "https://www.ithome.com/0/968/289.htm"
+        },
+        {
+          "event_id": "EV-8ea9e79f7edcb94f",
+          "company": "DeepSeek",
+          "reason": "原文明确 2026 年 6 月 16 日完成首轮，当前用了 6 月 17 日报道日，待核正并与同一首轮的其他报道归并。",
+          "source_url": "https://www.ithome.com/0/965/686.htm"
+        },
+        {
+          "event_id": "EV-9e88b41977da9588",
+          "company": "NewCore",
+          "reason": "同日原文对 6600 万美元的轮次存在冲突：一篇称种子轮，Globes 拆为 1600 万美元种子轮与 5000 万美元 A 轮，公司公告未拆分。不能直接按单笔种子轮累计，待统一。",
+          "source_url": "https://en.globes.co.il/en/article-israeli-workforce-identity-co-newcore-raises-66m-1001545972"
+        },
+        {
+          "event_id": "EV-838707b8974c3dde",
+          "company": "NVIDIA",
+          "reason": "原文 wants to raise 表述拟发行债券，尚无本条债券完成或明确成交的证据；不能列为已完成 200 亿美元融资。",
+          "source_url": "https://the-decoder.com/nvidia-joins-ai-debt-boom-with-20-billion-bond-sale"
+        },
+        {
+          "event_id": "EV-54f4bd47b09c4dc3",
+          "company": "Trajectory",
+          "reason": "1500万美元种子轮已证实，但现有事实用了5月31日转载日期；原始报道指向5月27日，其他来源为5月29日。日期尚未以可归档原文统一，不作为5月31日新融资发布。",
+          "source_url": "https://pulse2.com/trajectory-raises-15-million-to-build-a-platform-for-continual-learning/"
+        },
+        {
+          "event_id": "EV-2d0d165e866cd770",
+          "company": "Ocean",
+          "reason": "2800 万美元为 total funding 累计融资，缺少本轮金额与轮次拆分，暂不作为单轮计入资本流向。",
+          "source_url": "https://techcrunch.com/2026/05/19/from-teen-hacker-to-iron-dome-researcher-this-founder-raised-28m-to-fight-ai-phishing"
+        },
+        {
+          "event_id": "EV-e94a992d410d6520",
+          "company": "Moonshot AI",
+          "reason": "原文同时涉及既往轮次和正在收尾的 20 亿美元融资，当前卡混入 5 亿美元，金额和完成状态未对应同轮，暂缓发布。",
+          "source_url": "https://www.ithome.com/0/952/336.htm"
+        },
+        {
+          "event_id": "EV-c34ebd1db6227471",
+          "company": "Almanac Health, Inc.",
+          "reason": "1000万美元种子轮融资已证实，但当前事实使用4月24日转载日期，发行方新闻稿指向4月23日。保留原文，待用原始公告日建立事实后发布。",
+          "source_url": "https://www.thesaasnews.com/news/almanac-health-raises-10m-in-seed-round/"
+        },
+        {
+          "event_id": "EV-a72d111131f8de60",
+          "company": "DeepSeek",
+          "reason": "原文为拟开展首次融资，金额提取仅为“亿美元”，不构成已完成融资，暂缓发布。",
+          "source_url": "https://www.ithome.com/0/942/862.htm"
+        },
+        {
+          "event_id": "EV-3b424be9d0d68b87",
+          "company": "Dazzle",
+          "reason": "本篇为产品报道，原文明确 800 万美元种子轮发生在 last December；不可作为 2026-09-29 新融资发布。待按原始融资披露日重新入库。",
+          "source_url": "https://techcrunch.com/2026/09/29/with-dazzle-marissa-mayer-bets-your-camera-roll-has-more-info-on-your-life-than-your-inbox/"
+        },
+        {
+          "event_id": "EV-34f58445170831ae",
+          "company": "Snorkel AI",
+          "reason": "报道原文明确 9 月 22 日完成 3.5 亿美元 E 轮；当前融资日期误用了 9 月 28 日文章日期。待修复事件日期，不能标为当日新融资。",
+          "source_url": "https://news.pedaily.cn/202609/569716.shtml"
+        },
+        {
+          "event_id": "EV-040fc355bc12a750",
+          "company": "Etched",
+          "reason": "原文800M为累计融资总额，不是本次融资；独立500M轮次已有卡片，累计披露留在原始档案，暂不作为新事件发布。",
+          "source_url": "https://www.techtimes.com/articles/319393/20260630/transformer-chip-startup-etched-exits-stealth-800m-raised-1b-contracts.htm"
+        },
+        {
+          "event_id": "EV-8861a42a8679562a",
+          "company": "Anthropic",
+          "reason": "Apollo原文350亿美元融资主体是Broadcom AI XPV基础设施平台，Anthropic是算力使用方，不能当作Anthropic企业自身一轮融资；待核定真正融资主体。",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-06-10/apollo-wraps-up-35b-chip-deal-for-anthropic-video"
+        },
+        {
+          "event_id": "EV-0e4bddfd5c129618",
+          "company": "Moonshot AI",
+          "reason": "原文为寻求新估值/拟融资，未证明完成20亿美元新融资，不能计入已完成融资。",
+          "source_url": "https://the-decoder.com/moonshot-ai-targets-a-30-billion-valuation-more-than-six-times-its-late-2025-worth"
+        }
+      ]
+    }
+  },
+  "fixes": [
+    "Source-bound Obsero recipient excludes location possessive from parsed Claim subject",
+    "Explicit recent Series A amount wins over prior seed summary for Pluto",
+    "Currency amount label cannot manufacture a Series M; Sainaptic round undisclosed",
+    "Retained private evidence/review bindings survive older empty-raw verification receipts"
+  ],
+  "private_queue": {
+    "before": 186,
+    "after": 186,
+    "stage_regressions": 0
+  },
+  "production_gates": "passed",
+  "publication": "pending_ci_main_pages_and_vps_live_readback"
+}

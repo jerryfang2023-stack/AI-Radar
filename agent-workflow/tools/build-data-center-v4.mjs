@@ -2078,6 +2078,18 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       const parsed = deterministicRule
         ? actionMatch(title, rule.pattern)
         : { subject: cleanString(proposedModelClaim.subject), action: proposedModelClaim.event_type, object: cleanString(proposedModelClaim.object) };
+      if (deterministicRule && rule.eventType === "funding") {
+        // A location possessive in a headline is not the recipient. Require
+        // the article to independently name that recipient as raising the same
+        // proceeds; keep the original body and source offsets unchanged.
+        const tail = parsed.subject.match(/(?:&#8217;|’|')s\s+([A-Z][A-Za-z0-9.&'-]*(?:\s+[A-Z][A-Za-z0-9.&'-]*){0,3})$/u)?.[1];
+        if (tail) {
+          const escaped = tail.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+          const recipient = new RegExp(`(?:^|\\n)${escaped},\\s+(?:a|an)\\s+[^.\\n]{0,160}?\\bhas raised\\s+([^\\n]{1,100})`, "u").exec(bodyClean);
+          const expected = metricValues(parsed.object).map(normalizedFundingMetric);
+          if (recipient && expected.length && metricValues(recipient[1]).map(normalizedFundingMetric).some(amount => expected.includes(amount))) parsed.subject = tail;
+        }
+      }
       if (deterministicRule && rule.eventType === "funding" && /宣布$/u.test(parsed.subject)) {
         // The announcement verb precedes the matched funding action, not part
         // of the company name. Keep source quotes/spans unchanged.

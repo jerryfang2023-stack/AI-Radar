@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-13",
-    "currentDate": "2026-10-13",
-    "eventCount": 4113,
+    "latestDataDate": "2026-10-14",
+    "currentDate": "2026-10-14",
+    "eventCount": 4126,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-13",
+    "latest_disclosed_at": "2026-10-13",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c48b4df565b0c96f",
+        "canonical_entity_id": "",
+        "name": "Pluto Security"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-476d161449cdd93a",
+        "funding_insight_id": "FI-f550597ca78b5b4c",
+        "event_ids": [
+          "EV-9dfeaeede161baa7"
+        ],
+        "company_entity_id": "EN-c48b4df565b0c96f",
+        "company_canonical_entity_id": "",
+        "company_name": "Pluto Security",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-10-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-51e3d24adc70a0db",
+            "source_url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
+            "source_title": "Pluto Security 融资 4200 万美元，AI 给企业安全团队带来新难题",
+            "source_content_hash": "49bb357cfdc5c87e82b6fd1f2a6fb708509f2061ae336ec0472f61e9f0738204",
+            "quote": "with Skinos (Check Point co-founder Shlomo Kramer’s venture firm), Ansa Capital, and other angel investors participating",
+            "quote_hash": "465df1ababb58eb6a6b2d6a406a61ecf5fcd61c8e1e3bb8bac3c06afa36bee30"
+          }
+        ]
+      },
       {
         "activity_id": "IA-60b2db65bb14c36f",
         "funding_insight_id": "FI-8c15d4f82acbe6d8",
@@ -111,6 +160,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-51e3d24adc70a0db",
+        "source_url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
+        "source_title": "Pluto Security 融资 4200 万美元，AI 给企业安全团队带来新难题",
+        "source_content_hash": "49bb357cfdc5c87e82b6fd1f2a6fb708509f2061ae336ec0472f61e9f0738204",
+        "quote": "with Skinos (Check Point co-founder Shlomo Kramer’s venture firm), Ansa Capital, and other angel investors participating",
+        "quote_hash": "465df1ababb58eb6a6b2d6a406a61ecf5fcd61c8e1e3bb8bac3c06afa36bee30"
+      },
       {
         "source_id": "FISRC-a6233a9ab76850de",
         "source_url": "https://multiples.vc/private-comps/bland-ai",
@@ -154,6 +211,10 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：Pluto Security · A轮 · 2026-10-13 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51e3d24adc70a0db"
+        },
+        {
           "description": "融资来源记录：Bland · 历史轮次未披露 · Series A 参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6233a9ab76850de"
         }
@@ -185,6 +246,14 @@
           "quote_hash": "2b483d013d27fdb263e85d547ba648c5349cf75027a3fda7da048f7c9260e7e2"
         },
         {
+          "source_id": "FISRC-51e3d24adc70a0db",
+          "source_url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
+          "source_title": "Pluto Security 融资 4200 万美元，AI 给企业安全团队带来新难题",
+          "source_content_hash": "49bb357cfdc5c87e82b6fd1f2a6fb708509f2061ae336ec0472f61e9f0738204",
+          "quote": "with Skinos (Check Point co-founder Shlomo Kramer’s venture firm), Ansa Capital, and other angel investors participating",
+          "quote_hash": "465df1ababb58eb6a6b2d6a406a61ecf5fcd61c8e1e3bb8bac3c06afa36bee30"
+        },
+        {
           "source_id": "FISRC-a6233a9ab76850de",
           "source_url": "https://multiples.vc/private-comps/bland-ai",
           "source_title": "Bland AI Funding, Investors & Competitors | Multiples",
@@ -198,7 +267,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[0].role": {
+        "activities[1].role": {
           "text": "Series A 参投",
           "source_hash": "594415bdfe0982734009cfb0cabab985d97ffe82e705eda46fc59f72accb1091",
           "provider": "deepseek",
