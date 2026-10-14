@@ -3,6 +3,7 @@
 import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { resolvePrivateEvidenceBackupRoot } from "./private-evidence-backup-paths.mjs";
+import { anonymousRepositoryVisibility } from "./lib/private-repository-visibility.mjs";
 
 const root = process.cwd();
 const backupRoot = resolvePrivateEvidenceBackupRoot(root);
@@ -32,17 +33,12 @@ try {
 }
 
 let anonymousStatus = 0;
+let visibilityProbes = [];
 try {
-  const response = await fetch(`https://api.github.com/repos/${repository}`, {
-    headers: {
-      accept: "application/vnd.github+json",
-      "user-agent": "WaveSight-private-evidence-boundary",
-    },
-    redirect: "error",
-    signal: AbortSignal.timeout(15000),
-  });
-  anonymousStatus = response.status;
-  if (anonymousStatus !== 404) {
+  const visibility = await anonymousRepositoryVisibility(repository);
+  anonymousStatus = visibility.status;
+  visibilityProbes = visibility.probes;
+  if (!visibility.private) {
     problems.push(`private evidence repository is anonymously visible or unverifiable: HTTP ${anonymousStatus}`);
   }
 } catch (error) {
@@ -81,6 +77,7 @@ console.log(JSON.stringify({
   repository,
   remoteUrl,
   anonymousStatus,
+  visibilityProbes,
   localHead,
   remoteHead,
   problems,
