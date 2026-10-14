@@ -355,7 +355,7 @@ export function finishVerification({ root, directory, date, backupRoot }) {
       // empty raw_ids; the protection must not depend on action === close.
       const latestDisposition=resolveDisposition?.(row.source_url,collection.captures[row.source_url],privateQueue.entries[row.source_url]);
       const priorEvidence=privateQueue.entries[row.source_url];
-      const preserveBoundEvidence=!row.raw_ids?.length && priorEvidence?.content_hash
+      const preserveBoundEvidence=latestDisposition?.action!=='close' && !row.raw_ids?.length && priorEvidence?.content_hash
         && (!row.content_hash || row.content_hash===priorEvidence.content_hash)
         && priorEvidence.source_binding?.content_hash===priorEvidence.content_hash
         && priorEvidence.source_binding?.reviewed_by
