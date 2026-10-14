@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { spawnSync } from 'node:child_process';
 import { queryPlan } from './discovery.mjs';
-import { acceptedPublicationStatus, pendingReviewStatus,activeProductionRun } from './dispatch-state.mjs';
+import { acceptedPublicationStatus, pendingReviewStatus,activeProductionRun,missingPublicationResponse } from './dispatch-state.mjs';
 import { parseArgs } from './args.mjs';
 import { productionCIState } from '../tools/wait-for-production-code-checks.mjs';
 const args = parseArgs();
@@ -12,7 +12,7 @@ if(preflightRun && (!/^[1-9]\d*$/u.test(preflightRun) || args.get('dry-run')!=='
 const repo = process.env.GH_REPO || 'jerryfang2023-stack/AI-Radar';
 function gh(args, optional = false) {
   const result = spawnSync('gh',args,{ encoding:'utf8',windowsHide:true,timeout:60000,maxBuffer:8*1024*1024 });
-  if (result.status !== 0) { if(optional) return null; throw new Error(`github_request_failed:${args.slice(0,2).join('_')}`); }
+  if (result.status !== 0) { if(optional && missingPublicationResponse(result)) return null; throw new Error(`github_request_failed:${args.slice(0,2).join('_')}`); }
   return result.stdout.trim();
 }
 const report = gh(['api',`repos/${repo}/contents/agent-workflow/reports/financing/${date}/publication.json?ref=main`,'--jq','.content'],true);

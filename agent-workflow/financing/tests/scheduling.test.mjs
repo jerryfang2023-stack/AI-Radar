@@ -3,7 +3,18 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { acceptedPublicationStatus, pendingReviewStatus } from '../dispatch-state.mjs';
+import { acceptedPublicationStatus, pendingReviewStatus, missingPublicationResponse } from '../dispatch-state.mjs';
+
+test('only an explicit missing publication permits discovery after a failed GitHub read',()=>{
+  assert.equal(missingPublicationResponse({status:1,stderr:'gh: Not Found (HTTP 404)'}),true);
+  for(const result of [
+    {status:1,stderr:'gh: API rate limit exceeded (HTTP 403)'},
+    {status:1,stderr:'gh: Bad credentials (HTTP 401)'},
+    {status:1,stderr:'gh: Service Unavailable (HTTP 503)'},
+    {status:null,error:new Error('timeout'),stderr:''},
+    {status:0,stderr:''},
+  ])assert.equal(missingPublicationResponse(result),false);
+});
 import { productionPlan, financingExtractionScope } from '../run.mjs';
 import { allowedCheckpointPath } from '../checkpoint.mjs';
 

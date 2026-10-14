@@ -1,6 +1,35 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {chinaClock, selectRunDate, acceptedReview, assertDataOnly,dispatchAllowed,assertApprovalRun,validPublishedReceipt} from '../vps-supervisor.mjs';
+import {chinaClock, selectRunDate, acceptedReview, assertDataOnly,dispatchAllowed,assertApprovalRun,validPublishedReceipt,completedDispatch,sourceHash} from '../vps-supervisor.mjs';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+import {digest} from '../state.mjs';
+
+test('published receipts never hide a new PR or changed catalog',()=>{
+  const state={status:'published',catalog_hash:'accepted'};
+  assert.equal(completedDispatch(state,{status:'awaiting_portal',accepted_on_main:true},'accepted'),true);
+  assert.equal(completedDispatch(state,{status:'awaiting_portal',accepted_on_main:true},'changed'),false);
+  for(const status of ['checks_pending','awaiting_approval','ready_for_review'])
+    assert.equal(completedDispatch(state,{status,pr_url:'https://github.com/owner/repo/pull/1'},'accepted'),false);
+  assert.equal(completedDispatch({status:'no_new_financing'},{status:'planned'},null),false);
+});
+
+test('catalog hashes preserve the receipt digest above the former 32 MiB subprocess limit',async()=>{
+  const cwd=fs.mkdtempSync(path.join(os.tmpdir(),'financing-hash-'));
+  try {
+    execFileSync('git',['init','--quiet',cwd]);
+    const file='01-SiteV2/site/data/financing-catalog-v1.json';
+    fs.mkdirSync(path.dirname(path.join(cwd,file)),{recursive:true});
+    const body='  {"company":"观澜","padding":"'+'x'.repeat(33*1024*1024)+'"}\n';
+    fs.writeFileSync(path.join(cwd,file),body);
+    execFileSync('git',['add',file],{cwd});
+    const tree=execFileSync('git',['write-tree'],{cwd,encoding:'utf8'}).trim();
+    assert.equal(await sourceHash(tree,cwd),digest(body.trim()));
+    await assert.rejects(sourceHash('missing-ref',cwd),/catalog_hash_git_failed/);
+  } finally {fs.rmSync(cwd,{recursive:true,force:true});}
+});
 test('Shanghai daily start and recovery survive midnight and blocked yesterday',()=>{
   const before=chinaClock(new Date('2026-10-03T00:09:59Z'));
   assert.equal(selectRunDate([],before),null);
