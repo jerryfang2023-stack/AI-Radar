@@ -54,7 +54,7 @@ export function buildFinancingCatalog(root) {
   const cards=subjects.cards;
   const used=(items,get)=>items.filter(row=>cards.some(card=>get(card)===row.id));
   return {
-    meta:{...source.meta,taxonomy_version:taxonomy.version,card_count:cards.length,event_count:subjects.event_cards.length,aggregation_strategy:'reviewed_funding_subject',duplicate_rounds_removed:subjects.duplicate_rounds_removed,china_market_card_count:cards.filter(card=>card.market_scope?.market_region==='CN').length,
+    meta:{...source.meta,latest_financing_date:subjects.event_cards.map(card=>card.financing?.announced_at || '').filter(Boolean).sort().at(-1) || '',taxonomy_version:taxonomy.version,card_count:cards.length,event_count:subjects.event_cards.length,aggregation_strategy:'reviewed_funding_subject',duplicate_rounds_removed:subjects.duplicate_rounds_removed,china_market_card_count:cards.filter(card=>card.market_scope?.market_region==='CN').length,
       scope:'all_ai_financing_except_embodied_and_robotics',excluded_count:excluded.length,pending_classification_count:pending.length,
       pending_publication_count:publicationPending.length,
       market_category_framework:{name:'观澜 AI 融资分类',version:taxonomy.version,sources:taxonomy.sources.map(row=>({name:row.name,url:row.url}))}},
