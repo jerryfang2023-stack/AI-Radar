@@ -1,4 +1,9 @@
 // A migration/republication receipt is not evidence of completed discovery.
+export function missingPublicationResponse(result) {
+  // A transport, rate-limit or authorization error must never start discovery.
+  return !result.error && result.status === 1 && /\(HTTP 404\)/u.test(String(result.stderr || ''));
+}
+
 export function activeProductionRun(matching, preflightRun) {
   return matching.filter(run=>run.status!=='completed' && (!preflightRun || run.databaseId<Number(preflightRun)))
     .sort((a,b)=>a.databaseId-b.databaseId)[0];
