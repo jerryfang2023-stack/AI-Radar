@@ -350,6 +350,23 @@ export function finishVerification({ root, directory, date, backupRoot }) {
   const privateQueue=backupRoot ? read(path.join(backupRoot,'financing-monitor-state/verification-queue.json'),{entries:{}}) : {entries:{}};
   const protectedPrivate=new Set();
   for (const row of Object.values(state.entries)) {
+      // Retained dispositions can also refer to a later responsible review.
+      // Protect that queue entry before deriving a stage from an older run's
+      // empty raw_ids; the protection must not depend on action === close.
+      const latestDisposition=resolveDisposition?.(row.source_url,collection.captures[row.source_url],privateQueue.entries[row.source_url]);
+      const priorEvidence=privateQueue.entries[row.source_url];
+      const preserveBoundEvidence=!row.raw_ids?.length && priorEvidence?.content_hash
+        && (!row.content_hash || row.content_hash===priorEvidence.content_hash)
+        && priorEvidence.source_binding?.content_hash===priorEvidence.content_hash
+        && priorEvidence.source_binding?.reviewed_by
+        && priorEvidence.review_stage && priorEvidence.review_stage!=='needs_original';
+      if (preserveBoundEvidence || (latestDisposition?.action==='retain'
+          && ['newer_private_review_preserved','private_evidence_conflicts_with_collection'].includes(latestDisposition.reason)
+          && privateQueue.entries[row.source_url])) {
+        row.status='pending';row.reason=privateQueue.entries[row.source_url].reason;
+        row.disposition=latestDisposition || {action:'retain',reason:'newer_private_review_preserved'};row.followup=privateQueue.entries[row.source_url];
+        protectedPrivate.add(row.source_url);continue;
+      }
     if(row.disposition?.action==='close') {
       const current=resolveDisposition?.(row.source_url,collection.captures[row.source_url],privateQueue.entries[row.source_url]);
       if(current?.action==='close' && current.proof_hash===row.disposition.proof_hash)continue;

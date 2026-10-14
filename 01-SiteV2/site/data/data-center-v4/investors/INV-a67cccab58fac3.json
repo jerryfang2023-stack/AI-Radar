@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-13",
-    "currentDate": "2026-10-13",
-    "eventCount": 4113,
+    "latestDataDate": "2026-10-14",
+    "currentDate": "2026-10-14",
+    "eventCount": 4126,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-05-19",
-    "latest_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-10-13",
     "role_counts": {
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "angel_plus",
       "multi_round",
+      "pre_series_a",
       "series_b2"
     ],
     "portfolio_companies": [
@@ -86,12 +87,57 @@
         "name": "极佳视界"
       },
       {
+        "entity_id": "EN-26ef5ed7622bea22",
+        "canonical_entity_id": "",
+        "name": "荆华密算"
+      },
+      {
         "entity_id": "EN-5f03b37d8cca57e1",
         "canonical_entity_id": "EN-5f03b37d8cca57e1",
         "name": "灵御智能"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e153400047089a88",
+        "funding_insight_id": "FI-8df649aa1ec82165",
+        "event_ids": [
+          "EV-86aa6c06358dcdae"
+        ],
+        "company_entity_id": "EN-26ef5ed7622bea22",
+        "company_canonical_entity_id": "",
+        "company_name": "荆华密算",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-10-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3ff24c6b7a38b108",
+            "source_url": "https://news.pedaily.cn/202610/570182.shtml",
+            "source_title": "荆华密算获近亿元Pre-A轮融资，半年连融三轮",
+            "source_content_hash": "fdf036f58acf0712802ec94f72536e5fb1a0fa37b939fb4b4cba58c4c8a0d2c6",
+            "quote": "本轮融资由中关村科学城、北创投联合领投，华仓资本、极致投资联合投资，老股东英诺科创基金、盛景嘉成创投持续加注。",
+            "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5e8517e18b3bde7d",
         "funding_insight_id": "FI-60ae9fb62661395b",
@@ -215,6 +261,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3ff24c6b7a38b108",
+        "source_url": "https://news.pedaily.cn/202610/570182.shtml",
+        "source_title": "荆华密算获近亿元Pre-A轮融资，半年连融三轮",
+        "source_content_hash": "fdf036f58acf0712802ec94f72536e5fb1a0fa37b939fb4b4cba58c4c8a0d2c6",
+        "quote": "本轮融资由中关村科学城、北创投联合领投，华仓资本、极致投资联合投资，老股东英诺科创基金、盛景嘉成创投持续加注。",
+        "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
+      },
+      {
         "source_id": "FISRC-ce47b663ca256878",
         "source_url": "https://news.pedaily.cn/202606/565201.shtml",
         "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
@@ -270,6 +324,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：荆华密算 · Pre-A轮 · 2026-10-13 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3ff24c6b7a38b108"
+        },
+        {
           "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce47b663ca256878"
         },
@@ -311,6 +369,14 @@
           "source_content_hash": "aefedd4174c081dfa53911042513b253917b0e76af24af866bab82b63f7b30fe",
           "quote": "VC/PE基金、并购基金、PIPE基金等。",
           "quote_hash": "9a076231109ccca45c98ef741fbb869e248a9ee6c6859e9c5108808aa71373cb"
+        },
+        {
+          "source_id": "FISRC-3ff24c6b7a38b108",
+          "source_url": "https://news.pedaily.cn/202610/570182.shtml",
+          "source_title": "荆华密算获近亿元Pre-A轮融资，半年连融三轮",
+          "source_content_hash": "fdf036f58acf0712802ec94f72536e5fb1a0fa37b939fb4b4cba58c4c8a0d2c6",
+          "quote": "本轮融资由中关村科学城、北创投联合领投，华仓资本、极致投资联合投资，老股东英诺科创基金、盛景嘉成创投持续加注。",
+          "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
         },
         {
           "source_id": "FISRC-ce47b663ca256878",

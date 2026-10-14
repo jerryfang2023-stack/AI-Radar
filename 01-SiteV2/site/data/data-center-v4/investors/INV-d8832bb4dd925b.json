@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-13",
-    "currentDate": "2026-10-13",
-    "eventCount": 4113,
+    "latestDataDate": "2026-10-14",
+    "currentDate": "2026-10-14",
+    "eventCount": 4126,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-03-30",
     "latest_disclosed_at": "2026-03-30",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d3cc26f66f4352d0",
+        "funding_insight_id": "FI-f550597ca78b5b4c",
+        "event_ids": [
+          "EV-9dfeaeede161baa7"
+        ],
+        "company_entity_id": "EN-c48b4df565b0c96f",
+        "company_canonical_entity_id": "",
+        "company_name": "Pluto Security",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-51e3d24adc70a0db",
+            "source_url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
+            "source_title": "Pluto Security 融资 4200 万美元，AI 给企业安全团队带来新难题",
+            "source_content_hash": "49bb357cfdc5c87e82b6fd1f2a6fb708509f2061ae336ec0472f61e9f0738204",
+            "quote": "Pluto’s funding spans an $8.5 million seed round led by TLV Partners",
+            "quote_hash": "9de5b14ca33addda855a42370611a81437df97e3a1a229f6957b4a785568edc1"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "043dbfa14e6bef8c",
         "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
         "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
+      },
+      {
+        "source_id": "FISRC-51e3d24adc70a0db",
+        "source_url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
+        "source_title": "Pluto Security 融资 4200 万美元，AI 给企业安全团队带来新难题",
+        "source_content_hash": "49bb357cfdc5c87e82b6fd1f2a6fb708509f2061ae336ec0472f61e9f0738204",
+        "quote": "Pluto’s funding spans an $8.5 million seed round led by TLV Partners",
+        "quote_hash": "9de5b14ca33addda855a42370611a81437df97e3a1a229f6957b4a785568edc1"
       }
     ],
     "public_profile": {
@@ -165,6 +206,10 @@
         {
           "description": "融资来源记录：Qodo · B轮 · 2026-03-30 · 本轮参投 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f001682a294672d5"
+        },
+        {
+          "description": "融资来源记录：Pluto Security · 历史轮次未披露 · 种子轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51e3d24adc70a0db"
         }
       ],
       "contacts": [
@@ -208,6 +253,14 @@
           "source_content_hash": "043dbfa14e6bef8c",
           "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
           "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
+        },
+        {
+          "source_id": "FISRC-51e3d24adc70a0db",
+          "source_url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
+          "source_title": "Pluto Security 融资 4200 万美元，AI 给企业安全团队带来新难题",
+          "source_content_hash": "49bb357cfdc5c87e82b6fd1f2a6fb708509f2061ae336ec0472f61e9f0738204",
+          "quote": "Pluto’s funding spans an $8.5 million seed round led by TLV Partners",
+          "quote_hash": "9de5b14ca33addda855a42370611a81437df97e3a1a229f6957b4a785568edc1"
         }
       ],
       "last_verified_at": "2026-10-02"

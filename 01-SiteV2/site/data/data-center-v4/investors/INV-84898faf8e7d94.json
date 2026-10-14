@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-13",
-    "currentDate": "2026-10-13",
-    "eventCount": 4113,
+    "latestDataDate": "2026-10-14",
+    "currentDate": "2026-10-14",
+    "eventCount": 4126,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,76 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-02",
-    "latest_disclosed_at": "2026-07-02",
+    "latest_disclosed_at": "2026-10-13",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
-      "pre_seed"
+      "pre_seed",
+      "seed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-64bdeb7efae18e1b",
         "canonical_entity_id": "",
         "name": "BidScript LTD"
+      },
+      {
+        "entity_id": "EN-3416b699209d67ee",
+        "canonical_entity_id": "",
+        "name": "Obsero"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-fc13ba1832edea0a",
+        "funding_insight_id": "FI-f062885886d2946d",
+        "event_ids": [
+          "EV-9aa73f1620cd333f"
+        ],
+        "company_entity_id": "EN-3416b699209d67ee",
+        "company_canonical_entity_id": "",
+        "company_name": "Obsero",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "€1 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "100 万欧元"
+        },
+        "announced_at": "2026-10-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e4d165398d19a4da",
+            "source_url": "https://www.eu-startups.com/2026/10/londons-obsero-raises-e1-million-to-help-brands-improve-visibility-in-ai-powered-search/",
+            "source_title": "伦敦的Obsero融资100万欧元，帮助品牌提升在AI驱动搜索中的可见度",
+            "source_content_hash": "5323335804195fbc7493a6707f9c33f7aa1d6261d115b65b154e1cbdef1d820e",
+            "quote": "The round was led by SFC Capital alongside several of Obsero’s own customers.",
+            "quote_hash": "809d873c85b5d46c877b540af130b51a832e3d917f42742191cf4d56fa29e6d9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5f3d89eba1dd3c6b",
         "funding_insight_id": "FI-1ec7eacc2ec2c926",
@@ -136,6 +182,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e4d165398d19a4da",
+        "source_url": "https://www.eu-startups.com/2026/10/londons-obsero-raises-e1-million-to-help-brands-improve-visibility-in-ai-powered-search/",
+        "source_title": "伦敦的Obsero融资100万欧元，帮助品牌提升在AI驱动搜索中的可见度",
+        "source_content_hash": "5323335804195fbc7493a6707f9c33f7aa1d6261d115b65b154e1cbdef1d820e",
+        "quote": "The round was led by SFC Capital alongside several of Obsero’s own customers.",
+        "quote_hash": "809d873c85b5d46c877b540af130b51a832e3d917f42742191cf4d56fa29e6d9"
+      },
+      {
         "source_id": "FISRC-db39986ef5f46b8d",
         "source_url": "https://www.linkedin.com/posts/henry-brogan_today-bidscript-ltd-crossed-1m-in-funding-activity-7478352587042373632-4BY5",
         "source_title": "BidScript LTD Reaches $1m Funding Milestone with SFC Capital and PXN ...",
@@ -173,6 +227,10 @@
           "source_id": "PFSRC-INV-84898faf8e7d94-2"
         },
         {
+          "description": "融资来源记录：Obsero · 种子轮 · 2026-10-13 · 本轮领投 · €1 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e4d165398d19a4da"
+        },
+        {
           "description": "融资来源记录：BidScript LTD · 预种子轮 · 2026-07-02 · 本轮领投 · $800,000。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-db39986ef5f46b8d"
         }
@@ -202,6 +260,14 @@
           "source_content_hash": "7384dcbecb031873c5e5028f4003d4c65201ec9d5ab68e88e98a9c53a2382043",
           "quote": "BidScript Turning knowledge into winning proposals. www.bidscript.co.uk",
           "quote_hash": "4b8097a77b89ac32d6f930e838443e7807743184c5aaeaa523a76e08ce6fa982"
+        },
+        {
+          "source_id": "FISRC-e4d165398d19a4da",
+          "source_url": "https://www.eu-startups.com/2026/10/londons-obsero-raises-e1-million-to-help-brands-improve-visibility-in-ai-powered-search/",
+          "source_title": "伦敦的Obsero融资100万欧元，帮助品牌提升在AI驱动搜索中的可见度",
+          "source_content_hash": "5323335804195fbc7493a6707f9c33f7aa1d6261d115b65b154e1cbdef1d820e",
+          "quote": "The round was led by SFC Capital alongside several of Obsero’s own customers.",
+          "quote_hash": "809d873c85b5d46c877b540af130b51a832e3d917f42742191cf4d56fa29e6d9"
         },
         {
           "source_id": "FISRC-db39986ef5f46b8d",

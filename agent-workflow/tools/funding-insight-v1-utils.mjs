@@ -311,9 +311,21 @@ function fundingAmountUsesValuation(amount, texts = []) {
 function currentRoundBesideHistoricalDisclosure(event = {}, claims = []) {
   const claimIds = new Set(event.claim_refs || []);
   const rounds = new Map();
+  const accepted = claims.filter(claim => claimIds.has(claim.claim_id)
+    && claim.claim_type === "funding" && claim.verification_status === "accepted");
+  const historicalSummary = accepted.some(claim => /funding spans an?\s+[$€£]\s*\d[\d,.]*\s*(?:million|billion|[MB])?\s+seed round/iu.test(clean(claim.source_quote)));
   for (const claim of claims) {
     if (!claimIds.has(claim.claim_id) || claim.claim_type !== "funding" || claim.verification_status !== "accepted") continue;
     const quote = clean(claim.source_quote);
+    // A disclosure can summarize a seed round before stating a newly closed
+    // Series A. Bind current proceeds to the explicit recent-round sentence,
+    // rather than taking the first amount mentioned in the summary.
+    const recent = historicalSummary && quote.match(/^The company recently (?:raised|closed|secured) a ((?:pre[-\s]?)?Series\s+[A-Z](?![A-Za-z])) of ([$€£]\s*\d[\d,]*(?:\.\d+)?\s*(?:billion|million|thousand|[BMK])?)\b/iu);
+    if (recent) {
+      const amount = clean(recent[2]), round = normalizeFundingRound(recent[1]);
+      const normalized = normalizeFundingAmount(amount);
+      rounds.set(`${normalized.currency}|${normalized.value}|${round.code}`, {amount, round});
+    }
     const historical = quote.search(/\b(?:along with|in addition to|plus)\s+(?:a\s+)?previously\s+(?:undisclosed|announced|raised)\b/iu);
     if (historical < 0) continue;
     // The headline can aggregate both rounds. Only a completed, explicitly
@@ -438,6 +450,11 @@ function roundSeriesToken(value = "") {
 
 export function normalizeFundingRound(value = "") {
   const original = clean(value);
+  // A currency amount followed by 轮 is a malformed amount label, not a
+  // lettered financing round (e.g. £1M轮 must never become Series M).
+  if (/^[$€£¥￥]\s*\d[\d,.]*\s*[BMK]\s*轮$/iu.test(original)) {
+    return { code: "undisclosed", label: FUNDING_ROUND_LABELS.undisclosed, original };
+  }
   // A duration after the series letter is prose, not a numbered sub-round.
   const text = original.normalize("NFKC").toLowerCase().replace(
     /(\b(?:pre[-\s]*)?series\s*[a-z](?![a-z]))\s+(?=\d+(?:\.\d+)?\s*(?:hours?|days?|weeks?|months?|years?)\b)/giu,
@@ -802,7 +819,8 @@ export function normalizeFundingInsightCard(
   const legacyGenericRound = storedRound === "其他融资" && card.financing?.round_code === "other"
     && !["other", "undisclosed"].includes(normalizedOriginalRound.code);
   const round = normalizeFundingRound(
-    storedOriginalRound && (storedRound === normalizedOriginalRound.label || legacyGenericRound)
+    storedOriginalRound && (/^[$€£¥￥]\s*\d[\d,.]*\s*[BMK]\s*轮$/iu.test(storedOriginalRound)
+      || storedRound === normalizedOriginalRound.label || legacyGenericRound)
       ? storedOriginalRound
       : storedRound || storedOriginalRound,
   );
