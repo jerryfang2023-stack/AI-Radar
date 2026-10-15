@@ -29,6 +29,9 @@ export function recoverEvidence({root,backupRoot,directory,date,git}) {
   if(!missing.length && (!sync || sync.status==='confirmed'))return {status:'confirmed',hashes:hashes.length};
   if(sync?.date!==date || !/^[a-f0-9]{40}$/u.test(sync.commit || '') || !new RegExp(`^recovery/financing-${date}-[0-9]+-[0-9]+$`,'u').test(sync.recovery_ref || ''))
     throw new Error('checkpoint_private_evidence_unconfirmed');
+  // CI uses a shallow clone; recover full ancestry before merging a sibling
+  // recovery commit so a legitimate common base is not hidden.
+  if(git(['rev-parse','--is-shallow-repository']).trim()==='true')git(['fetch','--unshallow','origin','main']);
   let alreadyMerged=false;
   try {git(['merge-base','--is-ancestor',sync.commit,'HEAD']);alreadyMerged=true;}catch {}
   if(!alreadyMerged) {
@@ -55,6 +58,7 @@ export function persistEvidence({root,backupRoot,date,runId,attempt='1',execute=
   const diff=call(['diff','--cached','--quiet']);if(diff.status!==0 && diff.status!==1)throw new Error('private_diff_failed');
   if(diff.status===1)required(['commit','-m',`Financing evidence ${date}`]);
   receipt={...receipt,commit:required(['rev-parse','HEAD'])};write(file,receipt);
+  let recoveryCommit=receipt.commit;
   for(let n=0;n<3;n++) {
     if(n)pause(n*2000);
     const pushed=call(['push','origin','HEAD:main']);
@@ -67,12 +71,13 @@ export function persistEvidence({root,backupRoot,date,runId,attempt='1',execute=
         // then preserve the last committed receipts even if abort is unnecessary.
         call(['rebase','--abort']);break;
       }
+      recoveryCommit=required(['rev-parse','HEAD']);
     }
   }
   // A concurrent private queue edit must not erase completed originals. Keep
   // the immutable recovery commit in the same private repo, never public CI.
-  receipt={...receipt,commit:required(['rev-parse','HEAD'])};write(file,receipt);
-  const saved=call(['push','origin',`HEAD:refs/heads/${recovery_ref}`]);
+  receipt={...receipt,commit:recoveryCommit};write(file,receipt);
+  const saved=call(['push','origin',`${recoveryCommit}:refs/heads/${recovery_ref}`]);
   receipt={...receipt,status:!saved.error && saved.status===0?'recovery_branch':'unconfirmed'};write(file,receipt);
   return receipt;
 }

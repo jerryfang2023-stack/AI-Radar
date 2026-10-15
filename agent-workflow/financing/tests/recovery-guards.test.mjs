@@ -48,7 +48,7 @@ test('private push conflicts preserve an immutable private recovery branch and r
   const result=persistEvidence({root,backupRoot:path.join(root,'private'),date,runId:'12',execute,pause:()=>{}});
   assert.equal(result.status,'recovery_branch');assert.equal(result.commit,sha);
   assert.ok(calls.some(a=>a.join(' ')==='rebase --abort'));
-  assert.ok(calls.some(a=>a.at(-1)==='HEAD:refs/heads/recovery/financing-2026-10-16-12-1'));
+  assert.ok(calls.some(a=>a.at(-1)===sha+':refs/heads/recovery/financing-2026-10-16-12-1'));
   assert.equal(read(path.join(root,`agent-workflow/reports/financing/${date}/evidence-sync.json`)).status,'recovery_branch');
   assert.ok(!calls.some(a=>['reset','clean'].includes(a[0])));
 });
@@ -94,8 +94,9 @@ test('private recovery merges the recorded commit and never resolves ledger conf
   const file=`agent-workflow/reports/financing/${date}/evidence-sync.json`,commit='b'.repeat(40),ref=`recovery/financing-${date}-42-1`;
   write(path.join(directory,'files',file),{date,status:'recovery_branch',commit,recovery_ref:ref});
   write(path.join(directory,'manifest.json'),{date,entries:[{file,hash:digest(fs.readFileSync(path.join(directory,'files',file),'utf8'))}]});
-  const calls=[],git=args=>{calls.push(args);if(args[0]==='merge-base')throw Error('not merged');if(args[0]==='rev-parse')return commit;if(args[0]==='merge' && args[1]!=='--abort')throw Error('ledger conflict');return '';};
+  const calls=[],git=args=>{calls.push(args);if(args[0]==='merge-base')throw Error('not merged');if(args[1]==='--is-shallow-repository')return 'true';if(args[0]==='rev-parse')return commit;if(args[0]==='merge' && args[1]!=='--abort')throw Error('ledger conflict');return '';};
   assert.throws(()=>recoverEvidence({root,backupRoot,directory,date,git}),/ledger_conflict_requires_review/);
+  assert.ok(calls.some(a=>a.join(' ')==='fetch --unshallow origin main'));
   assert.ok(calls.some(a=>a.join(' ')==='merge --abort'));
   assert.ok(!calls.some(a=>['reset','checkout','clean'].includes(a[0])));
 });
