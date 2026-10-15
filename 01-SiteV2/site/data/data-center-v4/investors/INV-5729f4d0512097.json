@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,25 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-14",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
+      "lead": 1,
       "participant": 4
     },
     "round_codes": [
       "seed",
       "series_a",
-      "series_c"
+      "series_c",
+      "strategic"
     ],
     "portfolio_companies": [
       {
@@ -96,12 +98,57 @@
         "name": "Harmony"
       },
       {
+        "entity_id": "EN-91c0bae09191ddd3",
+        "canonical_entity_id": "",
+        "name": "Scimplify"
+      },
+      {
         "entity_id": "EN-d5dee8daa2eb5cc5",
         "canonical_entity_id": "",
         "name": "Zenity"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2521eba66d447715",
+        "funding_insight_id": "FI-2a5726399aaa03c7",
+        "event_ids": [
+          "EV-624a5429f93742b9"
+        ],
+        "company_entity_id": "EN-91c0bae09191ddd3",
+        "company_canonical_entity_id": "",
+        "company_name": "Scimplify",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略轮",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1cf1a3388554a4ca",
+            "source_url": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
+            "source_title": "Scimplify 融资 2500 万美元，利用 AI 挑战中国对关键材料的掌控",
+            "source_content_hash": "fb255e0c1a6337736310f8194786f68e353c939e292ed91a7e90b13f682245c9",
+            "quote": "The all-equity strategic round was led by Hitachi Ventures, with customers Henkel and Teknor Apex joining as new investors.",
+            "quote_hash": "d5c95ce8ad8f40efc47b766c8510c34c9ef4ccad03b67bf661ed430da270073d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d2a041e0e9c74f25",
         "funding_insight_id": "FI-9641aad793c547e7",
@@ -266,6 +313,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1cf1a3388554a4ca",
+        "source_url": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
+        "source_title": "Scimplify 融资 2500 万美元，利用 AI 挑战中国对关键材料的掌控",
+        "source_content_hash": "fb255e0c1a6337736310f8194786f68e353c939e292ed91a7e90b13f682245c9",
+        "quote": "The all-equity strategic round was led by Hitachi Ventures, with customers Henkel and Teknor Apex joining as new investors.",
+        "quote_hash": "d5c95ce8ad8f40efc47b766c8510c34c9ef4ccad03b67bf661ed430da270073d"
+      },
+      {
         "source_id": "FISRC-b95b99b7dcaf913b",
         "source_url": "https://www.geekwire.com/2026/pay-i-rebrands-as-ascerta-and-raises-18m-to-help-enterprises-track-ai-business-value/",
         "source_title": "Pay-i 更名为 Ascerta 并融资 1800 万美元，帮助企业追踪 AI 商业价值",
@@ -351,16 +406,16 @@
           "source_id": "hitachi_ventures_press_2025"
         },
         {
+          "description": "融资来源记录：Scimplify · 战略融资 · 2026-10-14 · 本轮领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1cf1a3388554a4ca"
+        },
+        {
           "description": "融资来源记录：Ascerta · A轮 · 2026-09-30 · 本轮参投 · $18 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b95b99b7dcaf913b"
         },
         {
           "description": "融资来源记录：Zenity · C轮 · 2026-08-03 · 本轮参投 · $125 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7bf361b38b905ca3"
-        },
-        {
-          "description": "融资来源记录：Harmony · 种子轮 · 2026-07-28 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fe66d902ece1db68"
         }
       ],
       "contacts": [
@@ -397,6 +452,14 @@
           "quote_hash": "7c097cfa6dfedac13dd10565bc80abf5489fb4c83879c78796ef6b3764a0fbde"
         },
         {
+          "source_id": "FISRC-1cf1a3388554a4ca",
+          "source_url": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
+          "source_title": "Scimplify 融资 2500 万美元，利用 AI 挑战中国对关键材料的掌控",
+          "source_content_hash": "fb255e0c1a6337736310f8194786f68e353c939e292ed91a7e90b13f682245c9",
+          "quote": "The all-equity strategic round was led by Hitachi Ventures, with customers Henkel and Teknor Apex joining as new investors.",
+          "quote_hash": "d5c95ce8ad8f40efc47b766c8510c34c9ef4ccad03b67bf661ed430da270073d"
+        },
+        {
           "source_id": "FISRC-b95b99b7dcaf913b",
           "source_url": "https://www.geekwire.com/2026/pay-i-rebrands-as-ascerta-and-raises-18m-to-help-enterprises-track-ai-business-value/",
           "source_title": "Pay-i 更名为 Ascerta 并融资 1800 万美元，帮助企业追踪 AI 商业价值",
@@ -411,14 +474,6 @@
           "source_content_hash": "1335412447baff3bb277c848e9b44b65104b5c73a088edea02c4483b70164744",
           "quote": "New investors Qumra Capital, SoftBank Vision Fund 2, Hitachi Ventures and LG Technology Ventures joined the round",
           "quote_hash": "d5be7f5cb4019d51ad8e98d3a313040c2d36f4907ad52a8b93520922e8711733"
-        },
-        {
-          "source_id": "FISRC-fe66d902ece1db68",
-          "source_url": "https://www.businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
-          "source_title": "AI 初创公司 Harmony 在创始人离开思科后获得 3400 万美元种子轮融资",
-          "source_content_hash": "dd2e48aec8384eca",
-          "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round.",
-          "quote_hash": "c8cb081b2609863215379438fff46d03b2db5e96296d6ae1a443310805779284"
         }
       ],
       "last_verified_at": "2026-09-26",

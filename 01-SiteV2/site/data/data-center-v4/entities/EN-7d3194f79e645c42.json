@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,6 +65,7 @@
     "eventIds": [
       "EV-b51a67353e247022",
       "EV-20b41540e3b24633",
+      "EV-c7b060541ca00208",
       "EV-289f468a361ec508",
       "EV-2a554429da11d2b8",
       "EV-45559cdee71aaa17",
@@ -691,7 +692,7 @@
       "EN-b9db1ff13ae8496e"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-10-14",
+    "lastSeen": "2026-10-15",
     "relationIds": [
       "REL2-59587a82f0b820bc",
       "REL2-39c721b66f466667",
@@ -759,6 +760,7 @@
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-b51a67353e247022",
+        "EV-c7b060541ca00208",
         "EV-289f468a361ec508",
         "EV-20b41540e3b24633",
         "EV-35c16315e0a2e5a8",
@@ -1332,7 +1334,7 @@
     "timeline": [
       {
         "id": "EV-b51a67353e247022",
-        "dataDate": "2026-10-14",
+        "dataDate": "2026-10-15",
         "date": "2026-10-14",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -1348,8 +1350,37 @@
         ]
       },
       {
+        "id": "EV-c7b060541ca00208",
+        "dataDate": "2026-10-15",
+        "date": "2026-10-10",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AI芯片融资潮转向私人信贷 博通、甲骨文等采购芯片_腾讯新闻",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-4b4370843133841f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-9c8ae69b84f21a2e",
+          "EN-4b4370843133841f",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
         "id": "EV-289f468a361ec508",
-        "dataDate": "2026-10-14",
+        "dataDate": "2026-10-15",
         "date": "2026-10-09",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -18261,7 +18292,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-7839fb10a8f14c70",
@@ -20789,6 +20820,7 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-de11eaf439ccee3f",
         "EV-86aa6c06358dcdae",
         "EV-e8790e3d950ce1c7",
         "EV-cdcdea720885d037",
@@ -21194,6 +21226,7 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
+        "EN-f2ff9021d7cf42b9",
         "EN-26ef5ed7622bea22",
         "EN-fc67129ea8fe8366",
         "EN-572e31f55b6ac1b1",
@@ -21464,7 +21497,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -21473,6 +21506,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-2647001d6f3ed43d",
         "EV-9aa73f1620cd333f",
         "EV-02fb30b5a5ffbe8e",
         "EV-f3ecff6963190b97",
@@ -21481,7 +21515,6 @@
         "EV-45559cdee71aaa17",
         "EV-53d3d485f2b3d64e",
         "EV-55ed36eee8ffa4bd",
-        "EV-60beaa2e14a34fc9",
         "EV-5db7347d93859de3",
         "EV-52e472f000148362",
         "EV-4a6ee188df36e21c",
@@ -22142,6 +22175,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-090b6a7fd8cd8f35",
         "EN-3416b699209d67ee",
         "EN-5e815286bca59445",
         "EN-bab553871438227c",
@@ -22149,7 +22183,6 @@
         "EN-8547a3fca97a330d",
         "EN-6528f84b7b8653d7",
         "EN-006e39f60f196420",
-        "EN-804918e60b0894fa",
         "EN-9fbf261b62c1d7c0",
         "EN-e66d5fd225ed6b0a",
         "EN-1e931b89bd9e0497",
@@ -22840,7 +22873,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-29",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -22850,6 +22883,7 @@
       "valueId": "chip_accelerator",
       "eventIds": [
         "EV-20b41540e3b24633",
+        "EV-c7b060541ca00208",
         "EV-208a98705213d50c",
         "EV-a3de7b1a00fbf8a9",
         "EV-7f10b7d013a91292",
@@ -23145,7 +23179,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-13"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "TX-industry-financial_services",
@@ -23271,7 +23305,6 @@
         "EV-889f518dcce85a8f"
       ],
       "entityIds": [
-        "EN-804918e60b0894fa",
         "EN-e0f4f767ac88a930",
         "EN-5d2848e59fa2ae3c",
         "EN-58f71bec3ce7d747",
@@ -23391,7 +23424,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",

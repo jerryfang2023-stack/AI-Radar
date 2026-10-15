@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,29 +61,35 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-01",
-    "latest_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "strategic"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-28775a3d932436cf",
         "canonical_entity_id": "",
         "name": "Lumio"
+      },
+      {
+        "entity_id": "EN-91c0bae09191ddd3",
+        "canonical_entity_id": "",
+        "name": "Scimplify"
       },
       {
         "entity_id": "EN-65e9e514ecf0d270",
@@ -97,6 +103,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2372934ee2c09e07",
+        "funding_insight_id": "FI-2a5726399aaa03c7",
+        "event_ids": [
+          "EV-624a5429f93742b9"
+        ],
+        "company_entity_id": "EN-91c0bae09191ddd3",
+        "company_canonical_entity_id": "",
+        "company_name": "Scimplify",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略轮",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1cf1a3388554a4ca",
+            "source_url": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
+            "source_title": "Scimplify 融资 2500 万美元，利用 AI 挑战中国对关键材料的掌控",
+            "source_content_hash": "fb255e0c1a6337736310f8194786f68e353c939e292ed91a7e90b13f682245c9",
+            "quote": "Existing backers Accel India, Bertelsmann India Investments, Omnivore, and 3one4 Capital also participated.",
+            "quote_hash": "6e638cfff60136717590706b6844f0b60ef6e505a4af6c1cefc26fdc273fc5f5"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ab3c2357f02540e6",
         "funding_insight_id": "FI-e3c49006517a7a36",
@@ -252,6 +298,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1cf1a3388554a4ca",
+        "source_url": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
+        "source_title": "Scimplify 融资 2500 万美元，利用 AI 挑战中国对关键材料的掌控",
+        "source_content_hash": "fb255e0c1a6337736310f8194786f68e353c939e292ed91a7e90b13f682245c9",
+        "quote": "Existing backers Accel India, Bertelsmann India Investments, Omnivore, and 3one4 Capital also participated.",
+        "quote_hash": "6e638cfff60136717590706b6844f0b60ef6e505a4af6c1cefc26fdc273fc5f5"
+      },
+      {
         "source_id": "FISRC-d4fa6b7ab4e1aa59",
         "source_url": "https://timesofindia.indiatimes.com/technology/appliances/lumio-raises-12-million-led-by-blume-ventures-to-expand-its-smart-tv-projector-and-speaker-business/amp_articleshow/134798715.cms",
         "source_title": "Lumio 获 Blume Ventures 领投 1200 万美元，用于扩展其智能电视、投影仪和音箱业务",
@@ -341,16 +395,16 @@
           "source_id": "3one4_home"
         },
         {
+          "description": "融资来源记录：Scimplify · 战略融资 · 2026-10-14 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1cf1a3388554a4ca"
+        },
+        {
           "description": "融资来源记录：Lumio · A轮 · 2026-10-08 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d4fa6b7ab4e1aa59"
         },
         {
           "description": "融资来源记录：Sunfox Technologies · A轮 · 2026-10-08 · 本轮领投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7386ce9d5540e0e9"
-        },
-        {
-          "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1284a14893cb26a9"
         }
       ],
       "contacts": [
@@ -401,6 +455,14 @@
           "quote_hash": "a0469d1ab14e3aa8296e61c5b5daefba93c0163507d75025cd97f082b8892176"
         },
         {
+          "source_id": "FISRC-1cf1a3388554a4ca",
+          "source_url": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
+          "source_title": "Scimplify 融资 2500 万美元，利用 AI 挑战中国对关键材料的掌控",
+          "source_content_hash": "fb255e0c1a6337736310f8194786f68e353c939e292ed91a7e90b13f682245c9",
+          "quote": "Existing backers Accel India, Bertelsmann India Investments, Omnivore, and 3one4 Capital also participated.",
+          "quote_hash": "6e638cfff60136717590706b6844f0b60ef6e505a4af6c1cefc26fdc273fc5f5"
+        },
+        {
           "source_id": "FISRC-d4fa6b7ab4e1aa59",
           "source_url": "https://timesofindia.indiatimes.com/technology/appliances/lumio-raises-12-million-led-by-blume-ventures-to-expand-its-smart-tv-projector-and-speaker-business/amp_articleshow/134798715.cms",
           "source_title": "Lumio 获 Blume Ventures 领投 1200 万美元，用于扩展其智能电视、投影仪和音箱业务",
@@ -415,14 +477,6 @@
           "source_content_hash": "fa6f1ad6591a64784c906e2caa2da3708821007e7e3d641e5564320c7f182635",
           "quote": "Medtech startup Sunfox Technologies has raised $7 million in a Series A funding round led by investors Ashish Kacholia, Lashit Sanghvi, Alchemy Capital, and 3one4 Capital.",
           "quote_hash": "ecf7db1ebc7c6551fe401575c1c7c07f2140843f0925bb8f4705d76d8e411684"
-        },
-        {
-          "source_id": "FISRC-1284a14893cb26a9",
-          "source_url": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding/",
-          "source_title": "Smallest.ai 获新融资，扩展企业级语音 AI - The Catalyst",
-          "source_content_hash": "6b55dc3b9b331355",
-          "quote": "with participation from Sierra Ventures and 3one4 Capital",
-          "quote_hash": "f7f475c0198484fc0d7ece56d46694f108005522689038285c178d41d041c7e7"
         }
       ],
       "last_verified_at": "2026-09-26",

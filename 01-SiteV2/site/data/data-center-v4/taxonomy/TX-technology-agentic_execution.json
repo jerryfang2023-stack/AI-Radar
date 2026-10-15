@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "技术",
     "valueId": "agentic_execution",
     "eventIds": [
+      "EV-2647001d6f3ed43d",
       "EV-9aa73f1620cd333f",
       "EV-02fb30b5a5ffbe8e",
       "EV-f3ecff6963190b97",
@@ -67,7 +68,6 @@
       "EV-45559cdee71aaa17",
       "EV-53d3d485f2b3d64e",
       "EV-55ed36eee8ffa4bd",
-      "EV-60beaa2e14a34fc9",
       "EV-5db7347d93859de3",
       "EV-52e472f000148362",
       "EV-4a6ee188df36e21c",
@@ -728,6 +728,7 @@
       "EV-c17f5a364ed6a3ac"
     ],
     "entityIds": [
+      "EN-090b6a7fd8cd8f35",
       "EN-3416b699209d67ee",
       "EN-5e815286bca59445",
       "EN-bab553871438227c",
@@ -735,7 +736,6 @@
       "EN-8547a3fca97a330d",
       "EN-6528f84b7b8653d7",
       "EN-006e39f60f196420",
-      "EN-804918e60b0894fa",
       "EN-9fbf261b62c1d7c0",
       "EN-e66d5fd225ed6b0a",
       "EN-1e931b89bd9e0497",
@@ -1207,6 +1207,91 @@
     "lastSeen": "2027-09-30"
   },
   "events": [
+    {
+      "id": "EV-2647001d6f3ed43d",
+      "dataDate": "2026-10-15",
+      "date": "2026-10-13",
+      "updatedDate": "2026-10-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI 智能体视频初创公司 Clueso 在 A 轮融资中筹集 1000 万美元",
+      "originalTitle": "Agentic video startup Clueso raises $10M in Series A funding round",
+      "subject": "Agentic video startup Clueso",
+      "action": "raises",
+      "object": "$10M in Series A funding round",
+      "metrics": [
+        "$10 million",
+        "$12 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-090b6a7fd8cd8f35"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-090b6a7fd8cd8f35"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-090b6a7fd8cd8f35"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-090b6a7fd8cd8f35",
+        "EN-361dc3108087fafc"
+      ],
+      "entityNames": [
+        "Agentic video startup Clueso",
+        "Clueso"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://yourstory.com/2026/10/agentic-video-startup-clueso-raises-series-a-funding",
+      "publisher": "yourstory.com"
+    },
     {
       "id": "EV-9aa73f1620cd333f",
       "dataDate": "2026-10-14",
@@ -1811,7 +1896,7 @@
     },
     {
       "id": "EV-53d3d485f2b3d64e",
-      "dataDate": "2026-10-14",
+      "dataDate": "2026-10-15",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -1987,170 +2072,6 @@
       "products": [],
       "sourceUrl": "https://ai123.com/news/14790",
       "publisher": "ai123.com"
-    },
-    {
-      "id": "EV-60beaa2e14a34fc9",
-      "dataDate": "2026-10-14",
-      "date": "2026-10-08",
-      "updatedDate": "2026-10-08",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "哥本哈根的 TODAY 筹集 280 万欧元，为金融和保险顾问带来合规的 AI 智能体",
-      "originalTitle": "Copenhagen’s TODAY raises €2.8 million to bring compliant AI agents to financial and insurance advisors",
-      "subject": "Copenhagen’s TODAY",
-      "action": "raises",
-      "object": "€2.8 million to bring compliant AI agents to financial and insurance advisors",
-      "metrics": [
-        "€2.8 million",
-        "€2 million",
-        "€2.8\nmillion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-804918e60b0894fa"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-804918e60b0894fa"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "financial_services",
-            "name": "金融服务",
-            "entityIds": [
-              "EN-804918e60b0894fa"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "financial_services",
-            "name": "金融服务",
-            "entityIds": [
-              "EN-e0f4f767ac88a930"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-804918e60b0894fa"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-804918e60b0894fa"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-e0f4f767ac88a930"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-804918e60b0894fa"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-804918e60b0894fa"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-e0f4f767ac88a930"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-e0f4f767ac88a930",
-        "EN-804918e60b0894fa"
-      ],
-      "entityNames": [
-        "TODAY",
-        "Copenhagen’s TODAY"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://www.eu-startups.com/2026/10/copenhagens-today-raises-e2-8-million-to-bring-compliant-ai-agents-to-financial-and-insurance-advisors/",
-      "publisher": "www.eu-startups.com"
     },
     {
       "id": "EV-5db7347d93859de3",
@@ -107442,6 +107363,27 @@
   ],
   "entities": [
     {
+      "id": "EN-090b6a7fd8cd8f35",
+      "name": "Agentic video startup Clueso",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2647001d6f3ed43d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-15"
+    },
+    {
       "id": "EN-3416b699209d67ee",
       "name": "Obsero",
       "entityType": "organization_candidate",
@@ -107524,7 +107466,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-8547a3fca97a330d",
@@ -107588,29 +107530,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-14"
-    },
-    {
-      "id": "EN-804918e60b0894fa",
-      "name": "Copenhagen’s TODAY",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-60beaa2e14a34fc9"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-financial_services"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
@@ -109223,6 +109143,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-70fe379f68abdbe9",
         "EV-471bf7c00cc06c85",
         "EV-a0ca934522418c0b",
         "EV-18223a8aeea7bcdd",
@@ -109283,7 +109204,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-10-06"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-7ebe9a17c4d4c271",
@@ -112868,6 +112789,7 @@
       "eventIds": [
         "EV-b51a67353e247022",
         "EV-20b41540e3b24633",
+        "EV-c7b060541ca00208",
         "EV-289f468a361ec508",
         "EV-2a554429da11d2b8",
         "EV-45559cdee71aaa17",
@@ -113494,7 +113416,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -113563,6 +113485,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c7b060541ca00208",
         "EV-89cbf15ddbd98a05",
         "EV-03a5e703deae837f",
         "EV-2cddd05c747f0ee7",
@@ -113656,7 +113579,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-d3565d297d476f10",
@@ -113981,7 +113904,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -114765,7 +114688,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -115451,7 +115374,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-24",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-5e668f42eb6cf15d",
@@ -117309,7 +117232,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-02-17",
-      "lastSeen": "2026-10-13"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-92df1be3e37c9268",
@@ -117902,7 +117825,7 @@
         "EN-8992f4a61a19a74b"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-8d57f84bd1847b24",

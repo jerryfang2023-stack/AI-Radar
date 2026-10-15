@@ -31741,7 +31741,245 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-14T03:44:11.809Z"
+    },
+    "EV-2647001d6f3ed43d": {
+      "id": "EV-2647001d6f3ed43d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Clueso 是面向企业的智能体视频创作平台，自动化生成营销、培训与运营视频，属企业营销应用。",
+      "input_hash": "6d990dd7485f178857ae832384081ff5f6b8aea293cec424699017fb2fa00cde",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4ee9923e67c28685",
+          "quote": "Clueso, the agentic video platform for business founded by IIT Madras alumni, has raised $10 million in a Series A round of funding"
+        },
+        {
+          "source_id": "FISRC-e505993676201dd7",
+          "quote": "Clueso, based in San Francisco, California, is an agentic video creation platform that enables businesses to automate the production of marketing, training, and operational videos."
+        },
+        {
+          "source_id": "FISRC-4ee9923e67c28685",
+          "quote": "Clueso is building AI agents that understand a company’s products, processes, brand and context, and then use that knowledge to create and maintain video across the organisation."
+        },
+        {
+          "source_id": "FISRC-569278e707bb0d17",
+          "quote": "Clueso plans, creates, edits, and keeps every video up to date."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-15T04:13:10.404Z"
+    },
+    "EV-db5825e75f029641": {
+      "id": "EV-db5825e75f029641",
+      "scope": "review",
+      "exclusion_reason": "",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "证据仅显示融资与面向零售/快消扩张，未说明 Duvo 具体 AI 产品与主营赛道，需人工复核。",
+      "input_hash": "6d9e5bd2d07aaafc124eea93437ac9fc99cbfd6e65d759cdcd6489b9417839ef",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e51821d2f316e450",
+          "quote": "Duvo today announced a $32 million Series A led by Balderton Capital, with participation from existing investors Index Ventures, Northzone, and Credo Ventures."
+        },
+        {
+          "source_id": "FISRC-e51821d2f316e450",
+          "quote": "The round brings Duvo's total funding to $48 million and will support its expansion, initially targeting retailers and consumer packaged goods (CPG) companies."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-15T04:13:10.404Z"
+    },
+    "EV-4825aa01d742cad3": {
+      "id": "EV-4825aa01d742cad3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "content-creation",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Affinity Labs 与创作者合作开发 AI 驱动的消费软件品牌，已上线多款面向个人的应用。",
+      "input_hash": "87f5c728d7ad79ac672ff863305b0e16d3c0975e319acdd18cc9a58d25b1a360",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-bb091527618bffba",
+          "quote": "London-based startup Affinity Labs has raised $2 million in pre-seed funding to expand its portfolio of creator-led software brands and further develop its AI-powered product development technology."
+        },
+        {
+          "source_id": "FISRC-0299f8771fa8c00c",
+          "quote": "London-based startup Affinity Labs, a developer of AI-powered software brands in partnership with content creators, has raised $2 million in pre-seed funding."
+        },
+        {
+          "source_id": "FISRC-eeadeabbde63fe21",
+          "quote": "Its internal product, Foundry, supports this approach with tools that include automated user-generated content systems and payment infrastructure."
+        },
+        {
+          "source_id": "FISRC-eeadeabbde63fe21",
+          "quote": "One of its applications is Archives, an Islamic history app that the company says has attracted more than 75,000 users."
+        },
+        {
+          "source_id": "FISRC-eeadeabbde63fe21",
+          "quote": "Affinity Labs currently operates three live applications, according to Ricci, with another product, Batootah, on a waitlist."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-15T04:13:10.404Z"
+    },
+    "EV-4973399a1e386bb5": {
+      "id": "EV-4973399a1e386bb5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Salience Labs 提供面向 AI 数据中心连接的光子交换芯片与全光交换机，属算力基础设施。",
+      "input_hash": "070f4233058479de80e30267ae1f33672d0f77a08d721df44e7667b797f89443",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2462ab96fd8f12f3",
+          "quote": "Salience Labs is a leader in photonic solutions targeting connectivity for AI datacenter infrastructure. Founded in 2021 and backed by over a decade of research from the University of Oxford in the UK and the University of Münster in Germany"
+        },
+        {
+          "source_id": "FISRC-97b0f9d4658f8414",
+          "quote": "Salience Labs, a developer of photonic chips for AI data centre connectivity"
+        },
+        {
+          "source_id": "FISRC-2462ab96fd8f12f3",
+          "quote": "The financing comes on the heels of Salience Labs’ live demo of its 64-port all-optical photonic switch at ECOC 2026, an industry first for silicon photonics OCS."
+        },
+        {
+          "source_id": "FISRC-2462ab96fd8f12f3",
+          "quote": "The funding will enable future solutions including 128- and 256- port OCS, unlocking new use cases across data-intensive and performance-critical environments."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-15T04:13:10.404Z"
+    },
+    "EV-624a5429f93742b9": {
+      "id": "EV-624a5429f93742b9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Scimplify 以 AI 平台 Scinode 协调特种化学品与先进材料的开发制造，属工业制造行业 AI。",
+      "input_hash": "6d43803027c862d529f499bc6937b14ae084c3cdf54c027be9bc596a0b602d89",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1cf1a3388554a4ca",
+          "quote": "Indian startup Scimplify has raised $25 million to expand its AI-powered approach to producing specialty chemicals and critical materials"
+        },
+        {
+          "source_id": "FISRC-1cf1a3388554a4ca",
+          "quote": "Its proprietary AI platform, Scinode, helps coordinate the work by identifying suitable production routes and manufacturing facilities, while tracking quality and regulatory requirements."
+        },
+        {
+          "source_id": "FISRC-1cf1a3388554a4ca",
+          "quote": "The platform uses specialized AI agents for different functions, including research, manufacturing, and quality control, Santhosh told TechCrunch."
+        },
+        {
+          "source_id": "FISRC-1cf1a3388554a4ca",
+          "quote": "Once it receives an order, Scimplify develops chemical manufacturing processes at its research facilities in Bengaluru and Hyderabad and then transfers them to partner factories for commercial production."
+        },
+        {
+          "source_id": "FISRC-1cf1a3388554a4ca",
+          "quote": "Scimplify’s in-house team of scientists and engineers oversees production across a network of more than 500 manufacturing facilities."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-15T04:13:10.404Z"
+    },
+    "EV-40fcb6b8c3d22d2a": {
+      "id": "EV-40fcb6b8c3d22d2a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "productivity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Zenzap 是面向企业团队的安全通讯平台，集成 AI 智能体与办公应用，属企业办公协作。",
+      "input_hash": "9151004e081f4396740084e71e97d3f42ccb2bb70a6c59d649c3faf63cdd9824",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e4249aa490a6b9a4",
+          "quote": "Guy Weiss is building Zenzap, a private messenger with AI that wants to help companies communicate with their staff and arm them with their organization’s context while staying in line with IT and security rules."
+        },
+        {
+          "source_id": "FISRC-bb48149fa1b574d3",
+          "quote": "Zenzap, a startup developing an enterprise communications platform and AI agents for work teams"
+        },
+        {
+          "source_id": "FISRC-e4249aa490a6b9a4",
+          "quote": "Zenzap offers usual chat features on its free tier, including group chats and direct messages, task management, calendar integration, and schedule management, as well as AI-powered voice chat and search."
+        },
+        {
+          "source_id": "FISRC-bb48149fa1b574d3",
+          "quote": "The platform connects team chats on mobile devices and desktops with AI agents and workplace applications. According to the company, it offers thousands of integrations, known as connectors, alongside prebuilt agents and automations."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-15T04:13:10.404Z"
     }
   },
-  "generated_at": "2026-10-14T03:44:11.809Z"
+  "generated_at": "2026-10-15T04:13:10.404Z"
 }

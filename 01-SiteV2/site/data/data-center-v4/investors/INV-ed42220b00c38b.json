@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 21,
+    "current_round_count": 22,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 18,
+    "portfolio_company_count": 19,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
-      "co_lead": 3,
+      "co_lead": 4,
       "historical_or_ambiguous": 3,
       "lead": 6,
       "participant": 12
@@ -180,9 +180,54 @@
         "entity_id": "EN-08ff6997681fad41",
         "canonical_entity_id": "",
         "name": "Zenskar"
+      },
+      {
+        "entity_id": "EN-1c1952904c4db613",
+        "canonical_entity_id": "",
+        "name": "Zenzap"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-26d26210be500d99",
+        "funding_insight_id": "FI-b760a22310e48317",
+        "event_ids": [
+          "EV-40fcb6b8c3d22d2a"
+        ],
+        "company_entity_id": "EN-1c1952904c4db613",
+        "company_canonical_entity_id": "",
+        "company_name": "Zenzap",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Series A及种子轮合计",
+        "amount_original": "$44 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 44000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4400 万美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-bb48149fa1b574d3",
+            "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
+            "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
+            "source_content_hash": "4cfe12ba60131ea9",
+            "quote": "has raised $33 million in a Series A funding round co-led by Bessemer Venture Partners and Lightspeed Venture Partners, with additional investment from The Garage.",
+            "quote_hash": "8d7648ad5a62c1ad0005ff8d3f38e905cb3818cdc6f18a0ced6816381566c39c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6dc33346002b38fc",
         "funding_insight_id": "FI-5ea7a0e216302168",
@@ -1132,6 +1177,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-bb48149fa1b574d3",
+        "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
+        "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
+        "source_content_hash": "4cfe12ba60131ea9",
+        "quote": "has raised $33 million in a Series A funding round co-led by Bessemer Venture Partners and Lightspeed Venture Partners, with additional investment from The Garage.",
+        "quote_hash": "8d7648ad5a62c1ad0005ff8d3f38e905cb3818cdc6f18a0ced6816381566c39c"
+      },
+      {
         "source_id": "FISRC-fe2eb23658e8b6c7",
         "source_url": "https://www.bvp.com/news/meet-the-founders-of-ampersand-ayan-barua-and-lauren-long",
         "source_title": "认识 Ampersand 的创始人：Ayan Barua 和 Lauren Long",
@@ -1375,16 +1428,16 @@
           "source_id": "bvp_about"
         },
         {
+          "description": "融资来源记录：Zenzap · 多轮融资 · 2026-10-14 · 本轮联合领投 · $44 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bb48149fa1b574d3"
+        },
+        {
           "description": "融资来源记录：Ampersand · A轮 · 2026-10-06 · 本轮领投 · $15M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fe2eb23658e8b6c7"
         },
         {
           "description": "融资来源记录：Miter · B轮 · 2026-09-30 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8b2ed67c1554bee8"
-        },
-        {
-          "description": "融资来源记录：EliseAI · F轮 · 2026-09-29 · 本轮联合领投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-aae3c02b03fe09c9"
         }
       ],
       "contacts": [
@@ -1519,6 +1572,14 @@
           "quote_hash": "ddf8fda04aac1704b9a947e177ed87e25c98846999bbc4fd079ff577261d7391"
         },
         {
+          "source_id": "FISRC-bb48149fa1b574d3",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
+          "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
+          "source_content_hash": "4cfe12ba60131ea9",
+          "quote": "has raised $33 million in a Series A funding round co-led by Bessemer Venture Partners and Lightspeed Venture Partners, with additional investment from The Garage.",
+          "quote_hash": "8d7648ad5a62c1ad0005ff8d3f38e905cb3818cdc6f18a0ced6816381566c39c"
+        },
+        {
           "source_id": "FISRC-fe2eb23658e8b6c7",
           "source_url": "https://www.bvp.com/news/meet-the-founders-of-ampersand-ayan-barua-and-lauren-long",
           "source_title": "认识 Ampersand 的创始人：Ayan Barua 和 Lauren Long",
@@ -1533,14 +1594,6 @@
           "source_content_hash": "c5cd447d1a48bf94d4477d990914f688e2af5271a7ec78a65a70efa9ff0cb39e",
           "quote": "Existing investors Bessemer Venture Partners and Coatue also participated.",
           "quote_hash": "8713cebee26bd9c6917c795b13a4f2d624f7dc4a428239f803c1d96a5380a3ee"
-        },
-        {
-          "source_id": "FISRC-aae3c02b03fe09c9",
-          "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
-          "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
-          "source_content_hash": "33c87e55e143bc09",
-          "quote": "The funding round was co-led by existing investors Andreessen Horowitz (a16z) and Bessemer Venture Partners, as well as new investor Ontario Teachers’ Pension Plan, with participation from existing investors Sapphire Ventures and Navitas Capital.",
-          "quote_hash": "7655e7fc298b7cfdca3c345e6fbbdc6c71541fedb1b9a8cecacf65a1609fe13b"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1551,7 +1604,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[23].role": {
+        "activities[24].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",
