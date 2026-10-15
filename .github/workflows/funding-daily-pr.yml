@@ -78,6 +78,9 @@ jobs:
           set -euo pipefail
           [[ "$RESUME_RUN" =~ ^[0-9]+$ ]]
           gh run download "$RESUME_RUN" --name "financing-$RUN_DATE" --dir "$RUNNER_TEMP/financing-resume"
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.name "github-actions[bot]"
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          node agent-workflow/financing/evidence-sync.mjs recover "$RUN_DATE" "$RUNNER_TEMP/financing-resume"
           node agent-workflow/financing/checkpoint.mjs restore "$RUN_DATE" "$RUNNER_TEMP/financing-resume"
       - name: Discover financing and capture originals
         id: collection
@@ -92,14 +95,7 @@ jobs:
         if: always() && steps.collection.outcome != 'skipped'
         run: |
           set -euo pipefail
-          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.name "github-actions[bot]"
-          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" add -A
-          if ! git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" diff --cached --quiet; then
-            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" commit -m "Financing originals $RUN_DATE"
-            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" pull --rebase origin main
-            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main
-          fi
+          node agent-workflow/financing/evidence-sync.mjs persist "$RUN_DATE"
           npm run assert:private-evidence-remote
       - name: Extract facts, research financing and gate publication
         if: steps.collection.outcome == 'success' && steps.verification.outcome == 'success' && steps.evidence.outcome == 'success'
@@ -110,18 +106,14 @@ jobs:
         if: always() && steps.evidence.outcome == 'success' && steps.produce.outcome != 'skipped'
         run: |
           set -euo pipefail
-          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" add -A
-          if ! git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" diff --cached --quiet; then
-            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" commit -m "Financing research receipts $RUN_DATE"
-            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" pull --rebase origin main
-            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main
-          fi
+          node agent-workflow/financing/evidence-sync.mjs persist "$RUN_DATE"
           npm run assert:private-evidence-remote
       - name: Save resumable body-free checkpoint
-        if: always() && steps.evidence.outcome == 'success' && (steps.research_evidence.outcome == 'success' || steps.research_evidence.outcome == 'skipped')
+        id: checkpoint
+        if: always() && (steps.collection.outcome == 'success' || steps.collection.outcome == 'failure')
         run: node agent-workflow/financing/checkpoint.mjs save "$RUN_DATE" "$RUNNER_TEMP/financing-checkpoint"
       - uses: actions/upload-artifact@v6
-        if: always() && steps.evidence.outcome == 'success' && (steps.research_evidence.outcome == 'success' || steps.research_evidence.outcome == 'skipped')
+        if: always() && steps.checkpoint.outcome == 'success'
         with:
           name: financing-${{ inputs.date }}
           path: ${{ runner.temp }}/financing-checkpoint

@@ -17,6 +17,7 @@ import {reviewStateDirectory} from './review-state.mjs';
 import {valueTriageResolver} from './value-triage.mjs';
 import {fundingEventCardConsistencyProblems} from '../tools/funding-insight-v1-utils.mjs';
 import {validResearchDeferral} from './research-deferral.mjs';
+import {registerPublicationHolds} from './publication-holds.mjs';
 
 const version = 'FINANCING-VERIFICATION-1';
 const semanticReasons = new Set(['ai_relevance_unverified', 'robotics_core_business_review', 'embodied_or_robotics_core_business_review']);
@@ -51,7 +52,9 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
   const historyFile = path.join(privateDir, 'verification-attempts.json');
   const history = read(historyFile, { entries: {} });
   const queueFile = path.join(privateDir, 'verification-queue.json');
+  const holdRegistration=registerPublicationHolds({root,backupRoot,date});
   const queue = read(queueFile, {version:'FINANCING-VERIFICATION-QUEUE-1', entries:{}});
+  state.publication_holds=holdRegistration;
   const budget=createReviewBudget({directory:privateDir,sharedDirectory:sharedState,date,policy:config.secondary_review,collection,verification:state,queue,history});
   const legacy = legacyOriginals(backupRoot, date);
   const leadSearches = new Map();
@@ -332,6 +335,7 @@ export function finishVerification({ root, directory, date, backupRoot }) {
   const file = path.join(directory, 'verification.json'), state = read(file);
   if (!state?.prepared || state.date !== date) throw new Error('prepared_verification_required');
   const research = read(path.join(root, `01-SiteV2/content/12-applications/funding-insights/${date}.json`), {});
+  const holds=new Set((read(path.join(root,'01-SiteV2/content/12-applications/funding-insights/publication-review.json'),{}).holds || []).map(h=>h.event_id));
   const decisions = read(path.join(root, '01-SiteV2/content/12-applications/financing-taxonomy/decisions.json'), {}).decisions || {};
   const factDir = path.join(root, `01-SiteV2/content/11-databases/data-center-v4/${date}`);
   const rawDocuments = read(path.join(factDir, 'raw-documents.json'), []);
@@ -421,7 +425,7 @@ export function finishVerification({ root, directory, date, backupRoot }) {
     row.results = cards.map(card => {
       const input = classificationInput(card), decision = decisions[input.id];
       const classified = decision?.input_hash === input.input_hash && !classificationProblems(decision, input).length;
-      const accepted = card.auto_publish_gate?.passed === true && classified && decision.scope === 'included';
+      const accepted = card.auto_publish_gate?.passed === true && classified && decision.scope === 'included' && !cardEvents(card).some(id=>holds.has(id));
       return { card_id: card.funding_insight_id, event_id: card.triggered_by_event_id, accepted,
         scope: classified ? decision.scope : 'review', reason: accepted ? 'existing_gates_passed' : classified && decision.scope === 'excluded' ? decision.exclusion_reason : 'funding_or_taxonomy_gate_pending',
         company: card.company?.name || '', announced_at: card.financing?.announced_at || '',
@@ -433,6 +437,7 @@ export function finishVerification({ root, directory, date, backupRoot }) {
     const complete = (!row.alternate_source || row.source_identity_reviewed) && !row.unresolved_event_ids.length && row.results.length > 0 && row.results.every(result => result.accepted || result.scope === 'excluded');
     row.status = complete ? row.results.some(result => result.accepted) ? 'verified' : 'excluded' : 'pending';
     row.reason = row.alternate_source && !row.source_identity_reviewed && cards.length ? 'alternate_event_requires_original_lead_identity_review' : complete ? 'existing_gates_reconciled' : cards.length ? 'funding_or_taxonomy_gate_pending' : 'no_accepted_financing_event_manual_review_required';
+    if(cards.some(card=>cardEvents(card).some(id=>holds.has(id))))row.reason='publication_hold_requires_responsible_release';
     row.checks = Object.fromEntries(dimensions.map(key => [key, row.status === 'verified' ? 'accepted_by_existing_gates_not_full_disclosure' : 'pending']));
     row.review_refs = [`01-SiteV2/content/11-databases/data-center-v4/${date}/qa-queue.json`, `01-SiteV2/content/12-applications/funding-insights/${date}.json`];
   }
@@ -451,6 +456,7 @@ export function finishVerification({ root, directory, date, backupRoot }) {
           queue.entries[url]=deferredFollowup({...item,last_fact_review_hash:row.content_hash},date,{attempted:true,reason:row.reason});
         }
         Object.assign(queue.entries[url],{reason:row.reason,fact_review_completed:row.fact_review_completed,review_stage:reviewStage(row)});row.followup=queue.entries[url];
+        if(row.reason==='publication_hold_requires_responsible_release')Object.assign(queue.entries[url],{status:'needs_attention',next_due_date:null,next_action:'review_completed_research_and_resolve_publication_hold'});
       }
       else if(row.reason==='disposition_evidence_changed_restore_review' || row.research_deferral)queue.entries[url]=deferredFollowup({...row,last_processed_date:date,last_fact_review_hash:row.fact_review_completed?row.content_hash:undefined,review_stage:reviewStage(row)},date,{reason:row.reason});
     }
