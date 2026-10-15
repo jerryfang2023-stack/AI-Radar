@@ -732,7 +732,6 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
           status: "translated",
           method: `${item}_title_translation`,
           model: typeof generated === "object" ? generated.model || "" : "",
-          attempts: attempt+1,
         };
       }
       failures.push({provider:item,reason:'title_facts_or_quality_rejected',attempt:attempt+1});
