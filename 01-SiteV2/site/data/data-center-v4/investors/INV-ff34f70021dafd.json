@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-27",
-    "latest_disclosed_at": "2026-07-27",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 1,
+      "lead": 1
     },
     "round_codes": [
+      "series_b",
       "series_c"
     ],
     "portfolio_companies": [
@@ -82,9 +84,54 @@
         "entity_id": "EN-0b01f10e87d13e75",
         "canonical_entity_id": "",
         "name": "Multiverse Computing"
+      },
+      {
+        "entity_id": "EN-e6fabc96f3195450",
+        "canonical_entity_id": "",
+        "name": "Salience Labs"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2c84264e0874b6a2",
+        "funding_insight_id": "FI-949fc79b328dbc2a",
+        "event_ids": [
+          "EV-4973399a1e386bb5"
+        ],
+        "company_entity_id": "EN-e6fabc96f3195450",
+        "company_canonical_entity_id": "",
+        "company_name": "Salience Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$125 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.25 亿美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-97b0f9d4658f8414",
+            "source_url": "https://tech.eu/2026/10/14/salience-labs-secures-125m-to-scale-photonic-chips-for-ai-data-centres/",
+            "source_title": "Salience Labs 获 1.25 亿美元，用于扩展面向 AI 数据中心的光子芯片",
+            "source_content_hash": "bedb53cd1a62b2f0af511f0f7f8ef3b08eee5d8d1eb2f8746fc6f441577bbca8",
+            "quote": "The round was led by Bullhound Capital, with participation from AMD Ventures, Intel Capital, SBI Group, Hudson River Trading and British Business Bank.",
+            "quote_hash": "123e08aa5986480225be3f9cebfd297bf907c60c3b8e5a51135f4e8bb954bd3d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4276fbe06b498488",
         "funding_insight_id": "FI-589fc4d104541b4f",
@@ -127,6 +174,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-97b0f9d4658f8414",
+        "source_url": "https://tech.eu/2026/10/14/salience-labs-secures-125m-to-scale-photonic-chips-for-ai-data-centres/",
+        "source_title": "Salience Labs 获 1.25 亿美元，用于扩展面向 AI 数据中心的光子芯片",
+        "source_content_hash": "bedb53cd1a62b2f0af511f0f7f8ef3b08eee5d8d1eb2f8746fc6f441577bbca8",
+        "quote": "The round was led by Bullhound Capital, with participation from AMD Ventures, Intel Capital, SBI Group, Hudson River Trading and British Business Bank.",
+        "quote_hash": "123e08aa5986480225be3f9cebfd297bf907c60c3b8e5a51135f4e8bb954bd3d"
+      },
       {
         "source_id": "FISRC-fa5aeddf845d651b",
         "source_url": "https://www.globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
@@ -203,6 +258,10 @@
         {
           "description": "Multiverse Computing公告称其5亿欧元C轮融资目标由Bullhound Capital等机构联合领投；轮次总额不是Bullhound单笔投资额。",
           "source_id": "FISRC-fa5aeddf845d651b"
+        },
+        {
+          "description": "融资来源记录：Salience Labs · B轮 · 2026-10-14 · 本轮领投 · $125 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-97b0f9d4658f8414"
         }
       ],
       "contacts": [
@@ -261,6 +320,14 @@
           "source_content_hash": "070cd1b0f627dcdf",
           "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital",
           "quote_hash": "8e85acd628b7f9917626d1564bf68dc436dcb460a29e0a465c331a2feb341ac1"
+        },
+        {
+          "source_id": "FISRC-97b0f9d4658f8414",
+          "source_url": "https://tech.eu/2026/10/14/salience-labs-secures-125m-to-scale-photonic-chips-for-ai-data-centres/",
+          "source_title": "Salience Labs 获 1.25 亿美元，用于扩展面向 AI 数据中心的光子芯片",
+          "source_content_hash": "bedb53cd1a62b2f0af511f0f7f8ef3b08eee5d8d1eb2f8746fc6f441577bbca8",
+          "quote": "The round was led by Bullhound Capital, with participation from AMD Ventures, Intel Capital, SBI Group, Hudson River Trading and British Business Bank.",
+          "quote_hash": "123e08aa5986480225be3f9cebfd297bf907c60c3b8e5a51135f4e8bb954bd3d"
         }
       ],
       "last_verified_at": "2026-09-27"

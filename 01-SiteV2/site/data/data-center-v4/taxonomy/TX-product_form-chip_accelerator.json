@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -60,6 +60,7 @@
     "valueId": "chip_accelerator",
     "eventIds": [
       "EV-20b41540e3b24633",
+      "EV-c7b060541ca00208",
       "EV-208a98705213d50c",
       "EV-a3de7b1a00fbf8a9",
       "EV-7f10b7d013a91292",
@@ -355,7 +356,7 @@
       "HW-4c176e4c40871adc"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-10-13"
+    "lastSeen": "2026-10-15"
   },
   "events": [
     {
@@ -443,6 +444,94 @@
       "products": [],
       "sourceUrl": "https://m.sohu.com/a/1086104579_115831?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
       "publisher": "m.sohu.com"
+    },
+    {
+      "id": "EV-c7b060541ca00208",
+      "dataDate": "2026-10-15",
+      "date": "2026-10-10",
+      "updatedDate": "2026-10-10",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI芯片融资潮转向私人信贷 博通、甲骨文等采购芯片_腾讯新闻",
+      "originalTitle": "",
+      "subject": "AI芯片",
+      "action": "融资",
+      "object": "潮转向私人信贷 博通、甲骨文等采购芯片_腾讯新闻",
+      "metrics": [
+        "500亿"
+      ],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-4b4370843133841f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-4b4370843133841f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-4b4370843133841f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e",
+        "EN-4b4370843133841f",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Tencent",
+        "AI芯片",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.qq.com/rain/a/20261010A0C7RF00",
+      "publisher": "news.qq.com"
     },
     {
       "id": "EV-208a98705213d50c",
@@ -24722,7 +24811,9 @@
         {
           "name": "ESL64-O",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "ZTE"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/978/716.htm",
@@ -28662,7 +28753,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-20b41540e3b24633"
+        "EV-20b41540e3b24633",
+        "EV-c7b060541ca00208"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -28670,7 +28762,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-13"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-dc483de2bd50b2f4",
@@ -29173,6 +29265,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-70fe379f68abdbe9",
         "EV-471bf7c00cc06c85",
         "EV-a0ca934522418c0b",
         "EV-18223a8aeea7bcdd",
@@ -29233,7 +29326,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-10-06"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-adda212f0afa4781",
@@ -30219,7 +30312,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-48bebf25e5bd5aca",
@@ -31914,7 +32007,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-74be4cbf48e647b2",
@@ -32322,6 +32415,7 @@
       "eventIds": [
         "EV-b51a67353e247022",
         "EV-20b41540e3b24633",
+        "EV-c7b060541ca00208",
         "EV-289f468a361ec508",
         "EV-2a554429da11d2b8",
         "EV-45559cdee71aaa17",
@@ -32948,7 +33042,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-b3e3bce83d29e787",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,18 +63,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 28,
+    "current_round_count": 29,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 23,
+    "portfolio_company_count": 24,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "historical_or_ambiguous": 8,
       "lead": 12,
       "participant": 15
@@ -207,9 +207,54 @@
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal Technologies"
+      },
+      {
+        "entity_id": "EN-1c1952904c4db613",
+        "canonical_entity_id": "",
+        "name": "Zenzap"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-68f9e7634013cac0",
+        "funding_insight_id": "FI-b760a22310e48317",
+        "event_ids": [
+          "EV-40fcb6b8c3d22d2a"
+        ],
+        "company_entity_id": "EN-1c1952904c4db613",
+        "company_canonical_entity_id": "",
+        "company_name": "Zenzap",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Series A及种子轮合计",
+        "amount_original": "$44 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 44000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4400 万美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-bb48149fa1b574d3",
+            "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
+            "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
+            "source_content_hash": "4cfe12ba60131ea9",
+            "quote": "has raised $33 million in a Series A funding round co-led by Bessemer Venture Partners and Lightspeed Venture Partners, with additional investment from The Garage.",
+            "quote_hash": "8d7648ad5a62c1ad0005ff8d3f38e905cb3818cdc6f18a0ced6816381566c39c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-550874b095a97c4f",
         "funding_insight_id": "FI-de00acfd7c8d76c8",
@@ -1605,6 +1650,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-bb48149fa1b574d3",
+        "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
+        "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
+        "source_content_hash": "4cfe12ba60131ea9",
+        "quote": "has raised $33 million in a Series A funding round co-led by Bessemer Venture Partners and Lightspeed Venture Partners, with additional investment from The Garage.",
+        "quote_hash": "8d7648ad5a62c1ad0005ff8d3f38e905cb3818cdc6f18a0ced6816381566c39c"
+      },
+      {
         "source_id": "FISRC-99134731fc9bfd4f",
         "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
         "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
@@ -1935,16 +1988,16 @@
           "source_id": "lightspeed_us"
         },
         {
+          "description": "融资来源记录：Zenzap · 多轮融资 · 2026-10-14 · 本轮联合领投 · $44 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bb48149fa1b574d3"
+        },
+        {
           "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮领投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-99134731fc9bfd4f"
         },
         {
           "description": "融资来源记录：Avarra · A轮 · 2026-10-06 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-93b0fab07c02a054"
-        },
-        {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-852df50f4128c47b"
         }
       ],
       "contacts": [
@@ -1995,6 +2048,14 @@
           "quote_hash": "d2bbae37840bb25a103173bf141ecae89a192e7fedcd89323366cf9032983442"
         },
         {
+          "source_id": "FISRC-bb48149fa1b574d3",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
+          "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
+          "source_content_hash": "4cfe12ba60131ea9",
+          "quote": "has raised $33 million in a Series A funding round co-led by Bessemer Venture Partners and Lightspeed Venture Partners, with additional investment from The Garage.",
+          "quote_hash": "8d7648ad5a62c1ad0005ff8d3f38e905cb3818cdc6f18a0ced6816381566c39c"
+        },
+        {
           "source_id": "FISRC-99134731fc9bfd4f",
           "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
           "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
@@ -2009,14 +2070,6 @@
           "source_content_hash": "418bc4a92b5032ef693633ec382d6afb613da450d956de4564e7d5539a5226ca",
           "quote": "The round is led by Duration Ventures, with participation from Lightspeed Venture Partners, Draper Associates, the GTMfund, Alumni Ventures, and strategic investment from Zoom.",
           "quote_hash": "d511ddc9dcf424cba53315b2eb98d2f0a40b8b34a7e5361e15b0336577d96d14"
-        },
-        {
-          "source_id": "FISRC-852df50f4128c47b",
-          "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
-          "source_title": "Enveda's $311m Series E to fund AI-driven drug discovery",
-          "source_content_hash": "e6486e5f995e038e",
-          "quote": "The funding was led by Catalio Capital Management, with participation from new investors including Durable Capital Partners, ICONIQ, Lightspeed, Surveyor Capital (a Citadel company), accounts advised by T. Rowe Price Investment Management, Digitalis Ventures, a notable Sovereign Wealth Fund, and Alderline Group.",
-          "quote_hash": "3cbfe761b6de0bfc87604c270fdc50a1ccdfe84427307a732532acbdb8ace223"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2027,7 +2080,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[27].role": {
+        "activities[28].role": {
           "text": "Series B 参投（2025年4月）",
           "source_hash": "4170bf75c97ec9f7cd65f42d8ca30a3c3546dd4ade04c117870543b20203c333",
           "provider": "deepseek",
@@ -2035,7 +2088,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[31].role": {
+        "activities[32].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

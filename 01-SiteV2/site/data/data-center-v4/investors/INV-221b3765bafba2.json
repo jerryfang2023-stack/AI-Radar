@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-14",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-1c1952904c4db613",
+        "canonical_entity_id": "",
+        "name": "Zenzap"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-5610f18e3ffe03b1",
+        "funding_insight_id": "FI-b760a22310e48317",
+        "event_ids": [
+          "EV-40fcb6b8c3d22d2a"
+        ],
+        "company_entity_id": "EN-1c1952904c4db613",
+        "company_canonical_entity_id": "",
+        "company_name": "Zenzap",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Series A及种子轮合计",
+        "amount_original": "$44 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 44000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4400 万美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e4249aa490a6b9a4",
+            "source_url": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/",
+            "source_title": "Zenzap为其AI聊天应用融资4400万美元，旨在职场取代WhatsApp",
+            "source_content_hash": "ca28139787e38c10b3353731913b3f24fee1546f4801d974e9512b05b872810c",
+            "quote": "The company has raised $44 million in funding from investors including Bessemer, Lightspeed, and The Garage, as well as individual investors Wix president Nir Zohar and former GM of EY, Yoram Tietz.",
+            "quote_hash": "48ff07c08399368e3c40df8ac502de958b878b0ea0a691e931b755ce37f50874"
+          }
+        ]
+      },
       {
         "activity_id": "IA-48200cda0ac7b86f",
         "funding_insight_id": "FI-aa2c2e5478c70fd9",
@@ -111,6 +160,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-e4249aa490a6b9a4",
+        "source_url": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/",
+        "source_title": "Zenzap为其AI聊天应用融资4400万美元，旨在职场取代WhatsApp",
+        "source_content_hash": "ca28139787e38c10b3353731913b3f24fee1546f4801d974e9512b05b872810c",
+        "quote": "The company has raised $44 million in funding from investors including Bessemer, Lightspeed, and The Garage, as well as individual investors Wix president Nir Zohar and former GM of EY, Yoram Tietz.",
+        "quote_hash": "48ff07c08399368e3c40df8ac502de958b878b0ea0a691e931b755ce37f50874"
+      },
       {
         "source_id": "FISRC-f6d49c20866c811c",
         "source_url": "https://www.finsmes.com/2026/06/willow-raises-7m-in-seed-funding.html",
@@ -156,6 +213,10 @@
           "source_id": "nir_willow"
         },
         {
+          "description": "融资来源记录：Zenzap · 多轮融资 · 2026-10-14 · 本轮参投 · $44 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e4249aa490a6b9a4"
+        },
+        {
           "description": "融资来源记录：Willow · 天使轮 · 早期天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f6d49c20866c811c"
         }
@@ -185,6 +246,14 @@
           "source_title": "Nir Zohar - Wix President &amp; COO",
           "source_content_hash": "aa44a3239bb987a2c06f9db52a8ed65868445f2bd687afba1d44fee90399a66b",
           "quote_hash": "fff5ae7f9a1983c6a534db57add88a8a6902b1a228b0968ac99c2dfef8d75537"
+        },
+        {
+          "source_id": "FISRC-e4249aa490a6b9a4",
+          "source_url": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/",
+          "source_title": "Zenzap为其AI聊天应用融资4400万美元，旨在职场取代WhatsApp",
+          "source_content_hash": "ca28139787e38c10b3353731913b3f24fee1546f4801d974e9512b05b872810c",
+          "quote": "The company has raised $44 million in funding from investors including Bessemer, Lightspeed, and The Garage, as well as individual investors Wix president Nir Zohar and former GM of EY, Yoram Tietz.",
+          "quote_hash": "48ff07c08399368e3c40df8ac502de958b878b0ea0a691e931b755ce37f50874"
         },
         {
           "source_id": "FISRC-f6d49c20866c811c",

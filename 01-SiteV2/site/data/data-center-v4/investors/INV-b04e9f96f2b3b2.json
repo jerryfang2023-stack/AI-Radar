@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-10",
-    "latest_disclosed_at": "2026-09-19",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
@@ -99,12 +99,57 @@
         "name": "Olix Computing Ltd."
       },
       {
+        "entity_id": "EN-e6fabc96f3195450",
+        "canonical_entity_id": "",
+        "name": "Salience Labs"
+      },
+      {
         "entity_id": "EN-162103694fa33e7b",
         "canonical_entity_id": "",
         "name": "Vals"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-64216ed536d3a4a5",
+        "funding_insight_id": "FI-949fc79b328dbc2a",
+        "event_ids": [
+          "EV-4973399a1e386bb5"
+        ],
+        "company_entity_id": "EN-e6fabc96f3195450",
+        "company_canonical_entity_id": "",
+        "company_name": "Salience Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$125 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.25 亿美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-97b0f9d4658f8414",
+            "source_url": "https://tech.eu/2026/10/14/salience-labs-secures-125m-to-scale-photonic-chips-for-ai-data-centres/",
+            "source_title": "Salience Labs 获 1.25 亿美元，用于扩展面向 AI 数据中心的光子芯片",
+            "source_content_hash": "bedb53cd1a62b2f0af511f0f7f8ef3b08eee5d8d1eb2f8746fc6f441577bbca8",
+            "quote": "The round was led by Bullhound Capital, with participation from AMD Ventures, Intel Capital, SBI Group, Hudson River Trading and British Business Bank.",
+            "quote_hash": "123e08aa5986480225be3f9cebfd297bf907c60c3b8e5a51135f4e8bb954bd3d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b10b09701c74afce",
         "funding_insight_id": "FI-05640b3db4ac3921",
@@ -341,6 +386,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-97b0f9d4658f8414",
+        "source_url": "https://tech.eu/2026/10/14/salience-labs-secures-125m-to-scale-photonic-chips-for-ai-data-centres/",
+        "source_title": "Salience Labs 获 1.25 亿美元，用于扩展面向 AI 数据中心的光子芯片",
+        "source_content_hash": "bedb53cd1a62b2f0af511f0f7f8ef3b08eee5d8d1eb2f8746fc6f441577bbca8",
+        "quote": "The round was led by Bullhound Capital, with participation from AMD Ventures, Intel Capital, SBI Group, Hudson River Trading and British Business Bank.",
+        "quote_hash": "123e08aa5986480225be3f9cebfd297bf907c60c3b8e5a51135f4e8bb954bd3d"
+      },
+      {
         "source_id": "FISRC-404aba285b240b86",
         "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
         "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
@@ -406,16 +459,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Salience Labs · B轮 · 2026-10-14 · 本轮参投 · $125 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-97b0f9d4658f8414"
+        },
+        {
           "description": "融资来源记录：Vals · A轮 · 2026-09-19 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-404aba285b240b86"
         },
         {
           "description": "融资来源记录：Olix Computing Ltd. · B轮 · 2026-08-03 · 本轮参投 · $312 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6c18c7d2adec363"
-        },
-        {
-          "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮参投（2025年12月5亿美元轮次） · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ec090e2bf0f8f6e9"
         }
       ],
       "contacts": [
@@ -437,6 +490,14 @@
           "quote_hash": "fcc12805a5db80ec3c7936ce8b1d553d157478a2e79d53ce2940608a068cad3f"
         },
         {
+          "source_id": "FISRC-97b0f9d4658f8414",
+          "source_url": "https://tech.eu/2026/10/14/salience-labs-secures-125m-to-scale-photonic-chips-for-ai-data-centres/",
+          "source_title": "Salience Labs 获 1.25 亿美元，用于扩展面向 AI 数据中心的光子芯片",
+          "source_content_hash": "bedb53cd1a62b2f0af511f0f7f8ef3b08eee5d8d1eb2f8746fc6f441577bbca8",
+          "quote": "The round was led by Bullhound Capital, with participation from AMD Ventures, Intel Capital, SBI Group, Hudson River Trading and British Business Bank.",
+          "quote_hash": "123e08aa5986480225be3f9cebfd297bf907c60c3b8e5a51135f4e8bb954bd3d"
+        },
+        {
           "source_id": "FISRC-404aba285b240b86",
           "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
           "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
@@ -451,14 +512,6 @@
           "source_content_hash": "5a13ee222d9a2ed6",
           "quote": "The round was led by New York venture firm Fundomo and drew in Arm, Hudson River Trading, and Netflix co-founder Reed Hastings",
           "quote_hash": "a7fa871888210b71435b8557a41984a31510b8aa1ed30c0033b5014e5149109b"
-        },
-        {
-          "source_id": "FISRC-ec090e2bf0f8f6e9",
-          "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
-          "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
-          "source_content_hash": "fa74de6f9a9e3ef8",
-          "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma.",
-          "quote_hash": "1dfff416174e07a43db5f6f5b53190faadafe8a50e93dc41fbc1bf09edb62f85"
         }
       ],
       "last_verified_at": "2026-10-05"

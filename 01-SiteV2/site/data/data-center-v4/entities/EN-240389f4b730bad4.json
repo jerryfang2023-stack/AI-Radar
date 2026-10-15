@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-70fe379f68abdbe9",
       "EV-471bf7c00cc06c85",
       "EV-a0ca934522418c0b",
       "EV-18223a8aeea7bcdd",
@@ -123,7 +124,7 @@
       "EN-630d75372b4d1eb5"
     ],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-10-06",
+    "lastSeen": "2026-10-15",
     "relationIds": [
       "REL2-4d903d795699d1b0",
       "REL2-02bdd133e9353ff7",
@@ -138,6 +139,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-70fe379f68abdbe9",
         "EV-471bf7c00cc06c85",
         "EV-a0ca934522418c0b",
         "EV-18223a8aeea7bcdd",
@@ -188,6 +190,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-70fe379f68abdbe9",
+        "dataDate": "2026-10-15",
+        "date": "2026-10-11",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "千亿级资金涌入大模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-240389f4b730bad4"
+        ]
+      },
       {
         "id": "EV-471bf7c00cc06c85",
         "dataDate": "2026-10-06",
@@ -1701,7 +1718,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -2564,6 +2581,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-2647001d6f3ed43d",
         "EV-9aa73f1620cd333f",
         "EV-02fb30b5a5ffbe8e",
         "EV-f3ecff6963190b97",
@@ -2572,7 +2590,6 @@
         "EV-45559cdee71aaa17",
         "EV-53d3d485f2b3d64e",
         "EV-55ed36eee8ffa4bd",
-        "EV-60beaa2e14a34fc9",
         "EV-5db7347d93859de3",
         "EV-52e472f000148362",
         "EV-4a6ee188df36e21c",
@@ -3233,6 +3250,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-090b6a7fd8cd8f35",
         "EN-3416b699209d67ee",
         "EN-5e815286bca59445",
         "EN-bab553871438227c",
@@ -3240,7 +3258,6 @@
         "EN-8547a3fca97a330d",
         "EN-6528f84b7b8653d7",
         "EN-006e39f60f196420",
-        "EN-804918e60b0894fa",
         "EN-9fbf261b62c1d7c0",
         "EN-e66d5fd225ed6b0a",
         "EN-1e931b89bd9e0497",
@@ -4158,7 +4175,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -4168,6 +4185,7 @@
       "valueId": "chip_accelerator",
       "eventIds": [
         "EV-20b41540e3b24633",
+        "EV-c7b060541ca00208",
         "EV-208a98705213d50c",
         "EV-a3de7b1a00fbf8a9",
         "EV-7f10b7d013a91292",
@@ -4463,7 +4481,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-13"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "TX-technology-embodied_ai",

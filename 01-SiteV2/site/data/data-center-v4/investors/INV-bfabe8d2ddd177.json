@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-01-22",
     "latest_disclosed_at": "2026-01-22",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 1
     },
     "round_codes": [
@@ -157,6 +157,38 @@
             "quote_hash": "f5ce2d621f9ac250a9e41b51b95dc8f6aa163663e165009067632e538ad62da8"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d48a261333455d2d",
+        "funding_insight_id": "FI-949fc79b328dbc2a",
+        "event_ids": [
+          "EV-4973399a1e386bb5"
+        ],
+        "company_entity_id": "EN-e6fabc96f3195450",
+        "company_canonical_entity_id": "",
+        "company_name": "Salience Labs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有股东，本轮继续支持",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2462ab96fd8f12f3",
+            "source_url": "https://www.saliencelabs.ai/salience-labs-125-million-series-b-funding/",
+            "source_title": "Salience Labs Secures $125 Million in Series B Funding",
+            "source_content_hash": "6a539bf33ae0d9e8",
+            "quote": "as well as continued support from existing shareholders including Applied Ventures LLC, Oxford Science Enterprises, Cambridge Innovation Capital and Silicon Catalyst Ventures",
+            "quote_hash": "e9fa8e4c4fdb42dd155b97aa2d23ac3a477f7b6ebc0f510e2fc463021fa84d12"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -175,6 +207,14 @@
         "source_content_hash": "33c6c487777f825f02390228868b381f7ab7c7162c3d50d4673b5c1026c8eaa4",
         "quote": "New investors include Volta, Gentree, Wanxiang America, Pivotal, and Silicon Catalyst Ventures.",
         "quote_hash": "f5ce2d621f9ac250a9e41b51b95dc8f6aa163663e165009067632e538ad62da8"
+      },
+      {
+        "source_id": "FISRC-2462ab96fd8f12f3",
+        "source_url": "https://www.saliencelabs.ai/salience-labs-125-million-series-b-funding/",
+        "source_title": "Salience Labs Secures $125 Million in Series B Funding",
+        "source_content_hash": "6a539bf33ae0d9e8",
+        "quote": "as well as continued support from existing shareholders including Applied Ventures LLC, Oxford Science Enterprises, Cambridge Innovation Capital and Silicon Catalyst Ventures",
+        "quote_hash": "e9fa8e4c4fdb42dd155b97aa2d23ac3a477f7b6ebc0f510e2fc463021fa84d12"
       }
     ],
     "public_profile": {
@@ -216,6 +256,10 @@
         {
           "description": "融资来源记录：Quadric · 历史轮次未披露 · C轮首关新投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9f9b41abcfe2abd0"
+        },
+        {
+          "description": "融资来源记录：Salience Labs · 历史轮次未披露 · 既有股东，本轮继续支持。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2462ab96fd8f12f3"
         }
       ],
       "contacts": [
@@ -259,6 +303,14 @@
           "source_content_hash": "33c6c487777f825f02390228868b381f7ab7c7162c3d50d4673b5c1026c8eaa4",
           "quote": "New investors include Volta, Gentree, Wanxiang America, Pivotal, and Silicon Catalyst Ventures.",
           "quote_hash": "f5ce2d621f9ac250a9e41b51b95dc8f6aa163663e165009067632e538ad62da8"
+        },
+        {
+          "source_id": "FISRC-2462ab96fd8f12f3",
+          "source_url": "https://www.saliencelabs.ai/salience-labs-125-million-series-b-funding/",
+          "source_title": "Salience Labs Secures $125 Million in Series B Funding",
+          "source_content_hash": "6a539bf33ae0d9e8",
+          "quote": "as well as continued support from existing shareholders including Applied Ventures LLC, Oxford Science Enterprises, Cambridge Innovation Capital and Silicon Catalyst Ventures",
+          "quote_hash": "e9fa8e4c4fdb42dd155b97aa2d23ac3a477f7b6ebc0f510e2fc463021fa84d12"
         }
       ],
       "last_verified_at": "2026-10-02"

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "产品形态",
     "valueId": "model",
     "eventIds": [
+      "EV-de11eaf439ccee3f",
       "EV-86aa6c06358dcdae",
       "EV-e8790e3d950ce1c7",
       "EV-cdcdea720885d037",
@@ -464,6 +465,7 @@
       "EV-5208aa6dcd06cecb"
     ],
     "entityIds": [
+      "EN-f2ff9021d7cf42b9",
       "EN-26ef5ed7622bea22",
       "EN-fc67129ea8fe8366",
       "EN-572e31f55b6ac1b1",
@@ -734,12 +736,96 @@
       "HW-19692cd9428f2e0f"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-10-14"
+    "lastSeen": "2026-10-15"
   },
   "events": [
     {
+      "id": "EV-de11eaf439ccee3f",
+      "dataDate": "2026-10-15",
+      "date": "2026-10-14",
+      "updatedDate": "2026-10-14",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "算苗科技完成Pre-A2轮（含其加入轮）及A轮两轮融资",
+      "originalTitle": "",
+      "subject": "算苗科技",
+      "action": "完成Pre-A2轮（含其加入轮）及A轮两轮融资",
+      "object": "算苗科技完成Pre-A2轮（含其加入轮）及A轮两轮融资",
+      "metrics": [
+        "20亿"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-f2ff9021d7cf42b9"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-f2ff9021d7cf42b9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-f2ff9021d7cf42b9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f2ff9021d7cf42b9"
+      ],
+      "entityNames": [
+        "算苗科技"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570273.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
       "id": "EV-86aa6c06358dcdae",
-      "dataDate": "2026-10-14",
+      "dataDate": "2026-10-15",
       "date": "2026-10-13",
       "updatedDate": "2026-10-13",
       "eventType": "funding",
@@ -763,9 +849,9 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-3118f4bc977bcbb1",
-          "CL-129614b2a623f1ad",
-          "CL-0e0f5b65fbb6b565"
+          "CL-af356a5caa515a14",
+          "CL-5bf73705a7ce0bc7",
+          "CL-cfd6c6e8972483f8"
         ]
       },
       "missingFields": [],
@@ -917,7 +1003,7 @@
     },
     {
       "id": "EV-cdcdea720885d037",
-      "dataDate": "2026-10-14",
+      "dataDate": "2026-10-15",
       "date": "2026-10-08",
       "updatedDate": "2026-10-08",
       "eventType": "funding",
@@ -73884,6 +73970,27 @@
   ],
   "entities": [
     {
+      "id": "EN-f2ff9021d7cf42b9",
+      "name": "算苗科技",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-de11eaf439ccee3f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-15"
+    },
+    {
       "id": "EN-26ef5ed7622bea22",
       "name": "荆华密算获近亿元Pre-A轮",
       "entityType": "organization_candidate",
@@ -73902,7 +74009,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-fc67129ea8fe8366",
@@ -73926,7 +74033,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-20",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-572e31f55b6ac1b1",
@@ -73949,7 +74056,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-07",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-7f871cbf905f6e0c",
@@ -74305,7 +74412,7 @@
         "EN-993599624a199fe0"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-10-13"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-fba6bdd504fa7aff",
@@ -75201,7 +75308,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-7dd2a89f628d7525",
@@ -76952,7 +77059,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-24",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-dc8a5a5bf80909de",
@@ -77666,6 +77773,7 @@
       "eventIds": [
         "EV-1ab1592853c9099a",
         "EV-5d53cd5ef937f1ca",
+        "EV-eeb9ea45a172110e",
         "EV-7baf4ab86798fef5",
         "EV-23bba84b34c5834d",
         "EV-81b7cd5d6a37912c",
@@ -77685,7 +77793,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-07",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-713589016b2361a3",
@@ -78843,6 +78951,7 @@
       "eventIds": [
         "EV-b51a67353e247022",
         "EV-20b41540e3b24633",
+        "EV-c7b060541ca00208",
         "EV-289f468a361ec508",
         "EV-2a554429da11d2b8",
         "EV-45559cdee71aaa17",
@@ -79469,7 +79578,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-22152786a70738a1",
@@ -80140,6 +80249,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c7b060541ca00208",
         "EV-89cbf15ddbd98a05",
         "EV-03a5e703deae837f",
         "EV-2cddd05c747f0ee7",
@@ -80233,7 +80343,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-bae152c4560df38c",
@@ -81130,7 +81240,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-b93006774cbdd4b2",
@@ -81952,7 +82062,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-02-17",
-      "lastSeen": "2026-10-13"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-cd6362472aea60ef",
@@ -81988,7 +82098,7 @@
         "EN-8992f4a61a19a74b"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "EN-03b974cdbd22fe32",

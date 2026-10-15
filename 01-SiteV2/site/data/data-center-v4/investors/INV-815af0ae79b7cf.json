@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
+    "current_round_count": 10,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 9,
+    "portfolio_company_count": 10,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-21",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 9
+      "participant": 10
     },
     "round_codes": [
       "series_a",
@@ -114,6 +114,11 @@
         "name": "Prime Intellect"
       },
       {
+        "entity_id": "EN-e6fabc96f3195450",
+        "canonical_entity_id": "",
+        "name": "Salience Labs"
+      },
+      {
         "entity_id": "EN-dfc0fdff7af68ed2",
         "canonical_entity_id": "EN-dfc0fdff7af68ed2",
         "name": "SambaNova"
@@ -130,6 +135,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b21e3eba584031ed",
+        "funding_insight_id": "FI-949fc79b328dbc2a",
+        "event_ids": [
+          "EV-4973399a1e386bb5"
+        ],
+        "company_entity_id": "EN-e6fabc96f3195450",
+        "company_canonical_entity_id": "",
+        "company_name": "Salience Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$125 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.25 亿美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-97b0f9d4658f8414",
+            "source_url": "https://tech.eu/2026/10/14/salience-labs-secures-125m-to-scale-photonic-chips-for-ai-data-centres/",
+            "source_title": "Salience Labs 获 1.25 亿美元，用于扩展面向 AI 数据中心的光子芯片",
+            "source_content_hash": "bedb53cd1a62b2f0af511f0f7f8ef3b08eee5d8d1eb2f8746fc6f441577bbca8",
+            "quote": "The round was led by Bullhound Capital, with participation from AMD Ventures, Intel Capital, SBI Group, Hudson River Trading and British Business Bank.",
+            "quote_hash": "123e08aa5986480225be3f9cebfd297bf907c60c3b8e5a51135f4e8bb954bd3d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3c1cc75d2d5b8bac",
         "funding_insight_id": "FI-07d1ab9787e1c9dd",
@@ -532,6 +577,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-97b0f9d4658f8414",
+        "source_url": "https://tech.eu/2026/10/14/salience-labs-secures-125m-to-scale-photonic-chips-for-ai-data-centres/",
+        "source_title": "Salience Labs 获 1.25 亿美元，用于扩展面向 AI 数据中心的光子芯片",
+        "source_content_hash": "bedb53cd1a62b2f0af511f0f7f8ef3b08eee5d8d1eb2f8746fc6f441577bbca8",
+        "quote": "The round was led by Bullhound Capital, with participation from AMD Ventures, Intel Capital, SBI Group, Hudson River Trading and British Business Bank.",
+        "quote_hash": "123e08aa5986480225be3f9cebfd297bf907c60c3b8e5a51135f4e8bb954bd3d"
+      },
+      {
         "source_id": "FISRC-98f84ad840508b39",
         "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
         "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
@@ -668,16 +721,16 @@
           "source_id": "intel_capital_impact"
         },
         {
+          "description": "融资来源记录：Salience Labs · B轮 · 2026-10-14 · 本轮参投 · $125 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-97b0f9d4658f8414"
+        },
+        {
           "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮参投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f84ad840508b39"
         },
         {
           "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b235ace767812393"
-        },
-        {
-          "description": "融资来源记录：Zenity · C轮 · 2026-08-03 · 本轮参投 · $125 Million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7bf361b38b905ca3"
         }
       ],
       "contacts": [
@@ -738,6 +791,14 @@
           "quote_hash": "024caaeace6f7f1f2651d5257e90c4c8e986770dc72a59954463dde23b79b1aa"
         },
         {
+          "source_id": "FISRC-97b0f9d4658f8414",
+          "source_url": "https://tech.eu/2026/10/14/salience-labs-secures-125m-to-scale-photonic-chips-for-ai-data-centres/",
+          "source_title": "Salience Labs 获 1.25 亿美元，用于扩展面向 AI 数据中心的光子芯片",
+          "source_content_hash": "bedb53cd1a62b2f0af511f0f7f8ef3b08eee5d8d1eb2f8746fc6f441577bbca8",
+          "quote": "The round was led by Bullhound Capital, with participation from AMD Ventures, Intel Capital, SBI Group, Hudson River Trading and British Business Bank.",
+          "quote_hash": "123e08aa5986480225be3f9cebfd297bf907c60c3b8e5a51135f4e8bb954bd3d"
+        },
+        {
           "source_id": "FISRC-98f84ad840508b39",
           "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
           "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
@@ -752,14 +813,6 @@
           "source_content_hash": "06ecfd55822882e3",
           "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
           "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
-        },
-        {
-          "source_id": "FISRC-7bf361b38b905ca3",
-          "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
-          "source_title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
-          "source_content_hash": "1335412447baff3bb277c848e9b44b65104b5c73a088edea02c4483b70164744",
-          "quote": "alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital",
-          "quote_hash": "3f04ae6390a8470ee7784d445965e2efd5568199fcb106ebc6ca971196da7664"
         }
       ],
       "coverage_status": "researched",

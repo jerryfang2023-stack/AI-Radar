@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-14",
-    "currentDate": "2026-10-14",
-    "eventCount": 4126,
+    "latestDataDate": "2026-10-15",
+    "currentDate": "2026-10-15",
+    "eventCount": 4138,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-13",
     "role_counts": {
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "seed",
@@ -83,6 +83,11 @@
         "entity_id": "EN-a83a3af1a4866fd5",
         "canonical_entity_id": "",
         "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-361dc3108087fafc",
+        "canonical_entity_id": "",
+        "name": "Clueso"
       },
       {
         "entity_id": "EN-cfb378a90039f2d3",
@@ -101,6 +106,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-dfc095089f8e70f1",
+        "funding_insight_id": "FI-78f8b7962d42b13c",
+        "event_ids": [
+          "EV-2647001d6f3ed43d"
+        ],
+        "company_entity_id": "EN-361dc3108087fafc",
+        "company_canonical_entity_id": "",
+        "company_name": "Clueso",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-10-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ee9923e67c28685",
+            "source_url": "https://yourstory.com/2026/10/agentic-video-startup-clueso-raises-series-a-funding",
+            "source_title": "AI 智能体视频初创公司 Clueso 在 A 轮融资中筹集 1000 万美元",
+            "source_content_hash": "5da6e8dca2222da443f043940ec3373b0413761024bcfa093b36467089a15e81",
+            "quote": "with Founders Future and Neotribe Ventures joining as new investors",
+            "quote_hash": "61cb8d8d6184788117f350e7f5b72f597a105e0db8c5b7f50a95e546afc11e57"
+          }
+        ]
+      },
       {
         "activity_id": "IA-47634b082eddab00",
         "funding_insight_id": "FI-5fd5533b14de7850",
@@ -264,6 +309,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4ee9923e67c28685",
+        "source_url": "https://yourstory.com/2026/10/agentic-video-startup-clueso-raises-series-a-funding",
+        "source_title": "AI 智能体视频初创公司 Clueso 在 A 轮融资中筹集 1000 万美元",
+        "source_content_hash": "5da6e8dca2222da443f043940ec3373b0413761024bcfa093b36467089a15e81",
+        "quote": "with Founders Future and Neotribe Ventures joining as new investors",
+        "quote_hash": "61cb8d8d6184788117f350e7f5b72f597a105e0db8c5b7f50a95e546afc11e57"
+      },
+      {
         "source_id": "FISRC-98f77610cfcfab94",
         "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
         "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
@@ -324,16 +377,16 @@
       "experience_summary": "",
       "track_record": [
         {
+          "description": "融资来源记录：Clueso · A轮 · 2026-10-13 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ee9923e67c28685"
+        },
+        {
           "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮参投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f77610cfcfab94"
         },
         {
           "description": "融资来源记录：Delos · A轮 · 2026-09-16 · 本轮参投 · €10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6d8407107e870ebc"
-        },
-        {
-          "description": "融资来源记录：ZeroDrift · 种子轮 · 2026-06-02 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5827c25c8bbe0d20"
         }
       ],
       "sources": [
@@ -354,6 +407,14 @@
           "quote_hash": "aada0988303a904d974e1aebcc204efe27c2f37711dcfeb0fcb3be5f113cc8bc"
         },
         {
+          "source_id": "FISRC-4ee9923e67c28685",
+          "source_url": "https://yourstory.com/2026/10/agentic-video-startup-clueso-raises-series-a-funding",
+          "source_title": "AI 智能体视频初创公司 Clueso 在 A 轮融资中筹集 1000 万美元",
+          "source_content_hash": "5da6e8dca2222da443f043940ec3373b0413761024bcfa093b36467089a15e81",
+          "quote": "with Founders Future and Neotribe Ventures joining as new investors",
+          "quote_hash": "61cb8d8d6184788117f350e7f5b72f597a105e0db8c5b7f50a95e546afc11e57"
+        },
+        {
           "source_id": "FISRC-98f77610cfcfab94",
           "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
           "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
@@ -368,14 +429,6 @@
           "source_content_hash": "8ca0a2bad794b0b5",
           "quote": "La start-up Delos, qui développe des employés IA autonomes, annonce ce mercredi une levée de fonds de 10 millions d’euros en série A auprès de Bpifrance, C4 Ventures et Founders Future.",
           "quote_hash": "e84015f18d180201ae57e28b0feb9e210a437c8f6be07a8718d935ed4f319015"
-        },
-        {
-          "source_id": "FISRC-5827c25c8bbe0d20",
-          "source_url": "https://www.globenewswire.com/news-release/2026/06/02/3305264/0/en/zerodrift-raises-10m-seed-round-to-build-the-compliance-firewall-for-ai.html",
-          "source_title": "ZeroDrift Raises $10M Seed Round to Build the Compliance Firewall for AI",
-          "source_content_hash": "9d95b1327146185c",
-          "quote": "Investors include a16z speedrun, Reign Ventures, PitchDrive Ventures, U&I Ventures, Active Capital, Geek Ventures, Converge Ventures, Atlas SGR, Founders Future, and others.",
-          "quote_hash": "22c9303e353466cccbd29cc3afb3f0d00a300b56627951c3b941581be21673de"
         }
       ],
       "last_verified_at": "2026-10-04"
