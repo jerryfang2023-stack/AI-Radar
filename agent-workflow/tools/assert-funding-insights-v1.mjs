@@ -5,6 +5,7 @@ import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import { chinaFundingPublicationScope } from "./lib/china-funding-publication-scope.mjs";
 import { publicationHold } from "../financing/catalog.mjs";
+import {validResearchDeferral} from '../financing/research-deferral.mjs';
 import {
   FUNDING_INSIGHT_FRONTSTAGE_VERSION,
   FUNDING_INSIGHT_GATE_VERSION,
@@ -283,14 +284,21 @@ function main() {
     : fs.readdirSync(path.dirname(input))
       .filter((file) => /^\d{4}-\d{2}-\d{2}\.json$/u.test(file))
       .flatMap((file) => readJson(path.join(path.dirname(input), file), { cards: [] }).cards || []);
-  const currentEvents = loadDailyBundle(root, date).events;
+  const currentBundle=loadDailyBundle(root,date);
+  const currentEvents = currentBundle.events;
   const currentQueue = results.find((result) => result.data?.meta?.date === date)?.data?.queue || [];
   const historyPolicy = readJson(path.join(root, "01-SiteV2/content/11-databases/data-center-v4", date, "historical-funding-authorization.json"), {});
   const coverage = chinaFundingPublicationScope(currentEvents, historyPolicy);
   const publicationReview = readJson(path.join(root, "01-SiteV2/content/12-applications/funding-insights/publication-review.json"), null);
   // A documented hold excludes the same event from the public catalog. Missing
   // cards without a reviewed hold still fail; every existing card is validated.
-  const publishableEvents = coverage.events.filter(event => !publicationHold({ triggered_by_event_id: event.event_id }, publicationReview));
+  const deferredEvents=new Set();
+  for(const row of currentQueue.filter(row=>row.deferral)) {
+    const event=currentEvents.find(event=>event.event_id===row.event_id);
+    if(validResearchDeferral(event,currentBundle,row,persistedCards))deferredEvents.add(row.event_id);
+    else problems.push(`${row.event_id}:research_deferral_invalid_or_stale`);
+  }
+  const publishableEvents = coverage.events.filter(event => !publicationHold({ triggered_by_event_id: event.event_id }, publicationReview) && !deferredEvents.has(event.event_id));
   problems.push(...verifiedFundingEventCardCoverageProblems(publishableEvents, persistedCards, currentQueue, loadDailyBundle(root, date).claims)
     .map((problem) => `${date}:${problem}`));
   if (all) {
@@ -314,6 +322,7 @@ function main() {
     entity_review_queue_checked: all,
     frontstage_checked: assertFrontstage,
     historical_coverage: { outside_or_unverified_china_market: coverage.outside_market.length },
+    deferred_for_evidence: deferredEvents.size,
   }, null, 2));
 }
 

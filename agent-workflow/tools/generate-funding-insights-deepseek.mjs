@@ -6,6 +6,7 @@ import { planFundingResearch, fundingResearchCoverage, independentResearchSource
 import path from "node:path";
 import { readOriginalPage } from '../financing/original-page.mjs';
 import { publicationHold } from '../financing/catalog.mjs';
+import {researchDeferral} from '../financing/research-deferral.mjs';
 import { createOriginalReader } from '../financing/original-reader.mjs';
 import { config as financingConfig } from '../financing/discovery.mjs';
 import { execFileSync } from "node:child_process";
@@ -1187,6 +1188,12 @@ async function main() {
       attempts: [],
       updated_at: "",
     });
+  const retainedCards=[...cards,...publishedFundingCards(root,output)];
+  for(const row of queue) {
+    const deferral=researchDeferral(eventById.get(row.event_id),bundle,row,retainedCards);
+    if(deferral)row.deferral=deferral;
+    else delete row.deferral;
+  }
   // Keep the audit reason after a factual rebuild withdraws a former candidate.
   for (const event of bundle.events.filter((item) => fundingTrancheDisclosureNeedsReview(item, bundle.claims) || fundingCombinedRoundsNeedReview(item, bundle.claims))) {
     queue.push({
@@ -1217,6 +1224,7 @@ async function main() {
         blocked: queue.filter((item) => item.status === "blocked").length,
         pending: queue.filter((item) => item.status === "pending").length,
         deduplicated: queue.filter((item) => item.status === "deduplicated").length,
+        deferred_for_evidence: queue.filter(item=>item.deferral).length,
       },
     },
     cards,

@@ -118,7 +118,7 @@ function buildJobs(date) {
         .filter((item) => item.entity_id !== entity.entity_id && item.entity_type === entity.entity_type)
         .filter((item) => [item.canonical_name, ...(item.aliases || [])].some((name) => name && lookupText.includes(String(name).toLocaleLowerCase())))
         .map((item) => ({ entity_id: item.entity_id, canonical_name: item.canonical_name, aliases: item.aliases || [] }));
-      if (raw) jobs.push({ date, taskType: "entity_resolution", assetId: entity.entity_id, raw, sourceRef: raw.source_artifact_id, context: { entity, mention, alternatives } });
+      if (raw && raw.extraction_status !== 'quarantined' && String(raw.body_clean || '').trim().length >= 300) jobs.push({ date, taskType: "entity_resolution", assetId: entity.entity_id, raw, sourceRef: raw.source_artifact_id, context: { entity, mention, alternatives } });
     }
   }
   return [...new Map(jobs.map((job) => [jobKey(job), job])).values()];
@@ -234,15 +234,15 @@ async function generate(job) {
     generated_at: result.generatedAt,
   };
   const gated = withGateResult(candidate, body);
-  if (write && process.env.MODEL_ASSIST_MODEL === TERRA_EXTRACTION_MODEL) {
-    // Preserve each completed local call so interruption never discards a whole batch.
+  if (write) {
+    // Preserve each gated call for every provider, including cloud DeepSeek.
     const file = path.join(outputRoot, `${job.date}.json`);
     const previous = readJson(file, candidateStore(job.date));
     const key = candidateJobKey(job.date, gated);
     const existing = (previous.candidates || []).find((item) => candidateJobKey(job.date, item) === key);
     const saved = existing?.review && !regenerateStatuses.has(existing.status) ? existing : gated;
     writeJson(file, candidateStore(job.date, [...(previous.candidates || []).filter((item) => candidateJobKey(job.date, item) !== key), saved], { sourceCount: bundle(job.date, "raw-documents").length }));
-    console.log(`Terra extraction checkpoint: ${job.taskType} ${gated.status}`);
+    console.log(`Model extraction checkpoint: ${job.taskType} ${gated.status}`);
   }
   return gated;
 }
@@ -306,6 +306,7 @@ async function main() {
   for (let retry = 0; retry < 2; retry += 1) {
     const failedIndexes = results.map((result, index) => result?.error ? index : -1).filter((index) => index >= 0);
     if (!failedIndexes.length) break;
+    await new Promise(resolve=>setTimeout(resolve,1000*(retry+1)));
     const retried = await mapConcurrent(failedIndexes.map((index) => jobs[index]), generate, Math.max(1, Math.floor(concurrency / 2)));
     for (const [position, result] of retried.entries()) results[failedIndexes[position]] = result;
   }

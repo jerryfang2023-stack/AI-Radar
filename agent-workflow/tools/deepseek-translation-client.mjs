@@ -30,6 +30,7 @@ export async function deepSeekChatCompletion({
   apiKey = process.env.DEEPSEEK_API_KEY || "",
   baseUrl = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com",
   fetchImpl = globalThis.fetch,
+  throwOnHttpError = false,
 } = {}) {
   if (!apiKey || !baseUrl || !model || typeof fetchImpl !== "function") return "";
   const response = await fetchImpl(`${baseUrl.replace(/\/+$/u, "")}/chat/completions`, {
@@ -47,9 +48,18 @@ export async function deepSeekChatCompletion({
     }),
     signal: AbortSignal.timeout(timeoutMs),
   });
-  if (!response.ok) return "";
+  if (!response.ok) {
+    await response.body?.cancel();
+    if (throwOnHttpError) throw new Error(`deepseek_http_${response.status}`);
+    return "";
+  }
   const data = await response.json();
   return String(data?.choices?.[0]?.message?.content || "").trim();
+}
+
+export function retryableDeepSeekFailure(error) {
+  return ['TimeoutError','AbortError','TypeError'].includes(error?.name)
+    || /^deepseek_http_(?:408|429|5\d\d)$/u.test(error?.message || '');
 }
 
 export function parseDeepSeekJson(value = "") {
@@ -86,14 +96,21 @@ export async function deepSeekJsonCompletion({
     const retry = attempt
       ? [{ role: "user", content: `The previous JSON failed validation: ${lastProblems.join(", ")}. Return one corrected JSON value only.` }]
       : [];
-    const raw = await deepSeekChatCompletion({
+    let raw;
+    try { raw = await deepSeekChatCompletion({
       messages: [...messages, ...retry],
       model: attempt ? fallbackModel : model,
       maxTokens,
       temperature,
       timeoutMs: attempt ? Math.max(timeoutMs, 90000) : timeoutMs,
       fetchImpl,
-    });
+      throwOnHttpError: true,
+    }); } catch(error) {
+      if(attempt || !retryableDeepSeekFailure(error))throw error;
+      lastProblems=[error.name==='Error'?error.message:error.name];
+      await new Promise(resolve=>setTimeout(resolve,1000));
+      continue;
+    }
     let payload;
     try {
       payload = parseDeepSeekJson(raw);
