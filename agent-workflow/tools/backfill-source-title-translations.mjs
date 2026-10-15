@@ -185,6 +185,10 @@ async function main() {
         timeoutMs: Number(process.env.TITLE_TRANSLATION_TIMEOUT_MS || 30000),
         allowNetwork: true,
       });
+      if(result.status==='translated' && generatedTitleTranslationLooksUsable(job.sourceTitle,result.titleZh)) {
+        upsertSourceTitleTranslations(translationFile,[{sourceTitle:job.sourceTitle,zhTitle:result.titleZh,
+          method:result.method,model:result.model || '',sourceUrl:job.sourceUrl}]);
+      }
       return { job, result };
     }, concurrency)
     : missingJobs.map((job) => ({ job, result: { status: "needs_ingestion_translation", titleZh: "", method: "dry_run_missing" } }));
@@ -192,7 +196,7 @@ async function main() {
   const failures = [];
   for (const { job, result } of generated) {
     if (result.status !== "translated" || !generatedTitleTranslationLooksUsable(job.sourceTitle, result.titleZh)) {
-      failures.push({ raw_id: job.rawId, path: job.relativePath, title: job.sourceTitle, method: result.method });
+      failures.push({ raw_id: job.rawId, path: job.relativePath, title: job.sourceTitle, method: result.method, failures:result.failures || [{reason:'title_facts_or_quality_rejected'}] });
       continue;
     }
     translationResults.set(titleTranslationKey(job.sourceTitle), result);

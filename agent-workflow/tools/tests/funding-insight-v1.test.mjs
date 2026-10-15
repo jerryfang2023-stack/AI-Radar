@@ -1871,6 +1871,7 @@ test("没有融资事件时生成器无需搜索或模型密钥也会写出可�
       blocked: 0,
       pending: 0,
       deduplicated: 0,
+      deferred_for_evidence: 0,
     });
     assert.deepEqual(output.cards, []);
     assert.deepEqual(output.queue, []);

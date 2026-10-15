@@ -135,7 +135,17 @@ async function main() {
           const env = command[0] === script('generate-data-center-model-assist')
             ? { ...process.env, MODEL_ASSIST_SOURCE_REFS_FILE: scopeFile } : process.env;
           const result = spawnSync(process.execPath, command, { cwd: root, env, windowsHide: true, stdio: ['ignore', fd, fd], timeout: 1800000 });
-          if (result.error || result.status !== 0) throw new Error(`${stage.id}:${path.basename(command[0])}:${result.status ?? result.error?.code}`);
+          if (result.error || result.status !== 0) {
+            const model=read(path.join(root,'01-SiteV2/content/11-databases/model-assist-v1/checkpoint.json'));
+            const titles=read(path.join(root,'agent-workflow/reports/source-title-translation-backfill-write.json'));
+            const diagnostic={date,stage:stage.id,command:path.basename(command[0]),exit_status:result.status,error_code:result.error?.code || null,
+              model:model?.dates?.includes(date)?{selected_jobs:model.selected_jobs,completed:model.completed,failures:model.failures}:null,
+              translation:titles?.selected_date===date?{unresolved:titles.unresolved,blocking_unresolved:titles.blocking_unresolved,
+                failures:(titles.failures || []).map(({raw_id,title,method,failures})=>({raw_id,title,method,failures}))}:null};
+            write(path.join(directory,`${stage.id}-failure.json`),diagnostic);
+            console.error(JSON.stringify(diagnostic));
+            throw new Error(`${stage.id}:${path.basename(command[0])}:${result.status ?? result.error?.code}`);
+          }
         }
       } finally { fs.closeSync(fd); }
     } });

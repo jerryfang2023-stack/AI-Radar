@@ -16,6 +16,7 @@ import {createReviewBudget, reviewStage, reviewQueueSummary} from './review-budg
 import {reviewStateDirectory} from './review-state.mjs';
 import {valueTriageResolver} from './value-triage.mjs';
 import {fundingEventCardConsistencyProblems} from '../tools/funding-insight-v1-utils.mjs';
+import {validResearchDeferral} from './research-deferral.mjs';
 
 const version = 'FINANCING-VERIFICATION-1';
 const semanticReasons = new Set(['ai_relevance_unverified', 'robotics_core_business_review', 'embodied_or_robotics_core_business_review']);
@@ -348,6 +349,26 @@ export function finishVerification({ root, directory, date, backupRoot }) {
   const collection=read(path.join(directory,'collection.json'),{captures:{}});
   const resolveDisposition=backupRoot ? dispositionResolver({root,backupRoot,directory,date}) : null;
   const privateQueue=backupRoot ? read(path.join(backupRoot,'financing-monitor-state/verification-queue.json'),{entries:{}}) : {entries:{}};
+  // New discovery originals can be accepted without previously belonging to the
+  // follow-up queue. Register every explicitly deferred research source here.
+  const researchBundle={events:canonicalEvents,claims,rawDocuments};
+  for(const item of research.queue || []) {
+    if(!item.deferral)continue;
+    const event=canonicalEvents.find(event=>event.event_id===item.event_id);
+    if(!validResearchDeferral(event,researchBundle,item,[...(research.cards || []),...historicalCards]))throw new Error('research_deferral_invalid_or_stale');
+    for(const source of item.deferral.sources) {
+      const url=source.source_url,prior=state.entries[url];
+      const retained=privateQueue.entries[url];
+      // Keep later responsible dispositions and conflicting source bindings.
+      if(prior?.disposition || (prior?.content_hash && prior.content_hash!==source.content_hash)
+        || (retained?.content_hash && retained.content_hash!==source.content_hash)
+        || retained?.source_binding?.reviewed_by)continue;
+      state.entries[url]={...prior,source_url:url,evidence_source_url:url,origin_date:prior?.origin_date || date,
+        title:prior?.title || rawDocuments.find(raw=>raw.raw_id===source.raw_id)?.title_original || '',
+        raw_ids:[...new Set([...(prior?.raw_ids || []),source.raw_id])],content_hash:source.content_hash,
+        status:'pending',reason:item.deferral.reason,research_deferral:item.deferral,checks:pendingChecks(),alternate_source:prior?.alternate_source || false};
+    }
+  }
   const protectedPrivate=new Set();
   for (const row of Object.values(state.entries)) {
       // Retained dispositions can also refer to a later responsible review.
@@ -431,10 +452,11 @@ export function finishVerification({ root, directory, date, backupRoot }) {
         }
         Object.assign(queue.entries[url],{reason:row.reason,fact_review_completed:row.fact_review_completed,review_stage:reviewStage(row)});row.followup=queue.entries[url];
       }
-      else if(row.reason==='disposition_evidence_changed_restore_review')queue.entries[url]=deferredFollowup({...row,last_processed_date:date},date,{reason:row.reason});
+      else if(row.reason==='disposition_evidence_changed_restore_review' || row.research_deferral)queue.entries[url]=deferredFollowup({...row,last_processed_date:date,last_fact_review_hash:row.fact_review_completed?row.content_hash:undefined,review_stage:reviewStage(row)},date,{reason:row.reason});
     }
     write(queueFile,queue);
   }
   write(file, state);
-  return { version, status: state.status, counts: state.counts, ledger: 'verification.json' };
+  return { version, status: state.status, counts: state.counts, ledger: 'verification.json',
+    deferred_research:(research.queue || []).filter(row=>row.deferral).map(row=>({event_id:row.event_id,reason:row.deferral.reason,input_hash:row.deferral.input_hash})) };
 }

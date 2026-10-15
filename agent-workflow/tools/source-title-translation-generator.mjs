@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { deepSeekChatCompletion, deepSeekModels } from "./deepseek-translation-client.mjs";
+import { deepSeekChatCompletion, deepSeekModels, retryableDeepSeekFailure } from "./deepseek-translation-client.mjs";
 
 export function hasCjk(value = "") {
   return /[\u3400-\u9fff]/u.test(String(value || ""));
@@ -443,6 +443,7 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
     },
   ];
   const first = repairProtectedTerms(stripGeneratorNoise(await deepSeekChatCompletion({
+    throwOnHttpError: true,
     apiKey,
     baseUrl,
     model,
@@ -453,6 +454,7 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
   if (generatedTitleTranslationLooksUsable(sourceTitle, first)) return { text: first, model };
   const retryModel = deepSeekModels().pro;
   const retry = repairProtectedTerms(stripGeneratorNoise(await deepSeekChatCompletion({
+    throwOnHttpError: true,
     apiKey,
     baseUrl,
     model: retryModel,
@@ -716,7 +718,9 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
   // Production translation is DeepSeek-only. Deterministic rules remain
   // validators and protected-fact repair helpers, never translation providers.
   const providers = provider === "auto" ? ["deepseek"] : [provider];
+  const failures=[];
   for (const item of providers) {
+    for(let attempt=0;attempt<2;attempt++) {
     try {
       const generated = item === "deepseek"
         ? await translateTitleWithDeepSeek(title, { timeoutMs })
@@ -730,12 +734,17 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
           model: typeof generated === "object" ? generated.model || "" : "",
         };
       }
-    } catch {
-      // Try the next provider. The caller records a failed status only after all providers fail.
+      failures.push({provider:item,reason:'title_facts_or_quality_rejected',attempt:attempt+1});
+      break;
+    } catch(error) {
+      failures.push({provider:item,reason:/^deepseek_http_\d{3}$/u.test(error.message || '')?error.message:error.name,attempt:attempt+1});
+      if(attempt || !retryableDeepSeekFailure(error))break;
+      await new Promise(resolve=>setTimeout(resolve,1000));
+    }
     }
   }
 
-  return { titleZh: "", status: "needs_ingestion_translation", method: "title_translation_generator_failed" };
+  return { titleZh: "", status: "needs_ingestion_translation", method: "title_translation_generator_failed", failures };
 }
 
 export async function resolveSourceTitleTranslation(sourceTitle = "", {
