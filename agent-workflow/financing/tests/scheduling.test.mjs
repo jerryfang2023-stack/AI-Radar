@@ -95,6 +95,8 @@ test('only gated manifest outputs enter a PR for Codex review after current-head
   assert.doesNotMatch(text,/\bgh pr merge\b/u);
   assert.match(text,/review_required/u);
   assert.doesNotMatch(text,/sync-.*to-obsidian|build-guanlan-vault|git add -A/u);
-  const persist=text.indexOf('git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main');
+  const persist=text.indexOf('node agent-workflow/financing/evidence-sync.mjs persist "$RUN_DATE"');
   assert.ok(persist>0 && persist<text.indexOf('Extract facts, research financing'));
+  assert.match(text,/steps\.evidence\.outcome == 'success'/u);
+  assert.match(text,/steps\.produce\.outcome == 'success' && steps\.research_evidence\.outcome == 'success'/u);
 });

@@ -9,6 +9,7 @@ import {parseArgs} from './args.mjs';
 import {allowedCheckpointPath} from './checkpoint.mjs';
 import {productionCIState} from '../tools/wait-for-production-code-checks.mjs';
 import {githubRead} from './github-read.mjs';
+import {reconcileDispatchAttempts,dispatchRecoveryAllowed,completedReview,reviewRetryDue,nextReviewAttempt} from './recovery-policy.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const repo = 'jerryfang2023-stack/AI-Radar';
@@ -39,11 +40,7 @@ export function assertDataOnly(files, date) {
   if (!files.length || files.some(file=>!allowedCheckpointPath(file, date))) throw new Error('financing_pr_changes_executable_or_unapproved_paths');
 }
 export function dispatchAllowed(state, dispatch) {
-  if(dispatch.status!=='planned')return true;
-  const attempts=state.dispatch_attempts || [];
-  // Pre-record attempts; unknown results do not get blindly charged again.
-  if(attempts.some(a=>a.status==='unknown'))return false;
-  return attempts.length<3;
+  return dispatchRecoveryAllowed(state,dispatch);
 }
 export function assertApprovalRun(run,{head,date,workflowId}) {
   if(run.head_sha!==head || run.path!=='.github/workflows/production-code-checks.yml'
@@ -129,7 +126,17 @@ async function cycle(args) {
       return {date,status:state.status,already_complete:true};
     }
     if(dispatch.status==='planned') {
-      if(!dispatchAllowed(state,dispatch))return save({status:'needs_attention',error:'daily_dispatch_budget_or_unknown_attempt',dispatch});
+      if((state.dispatch_attempts || []).some(a=>a.status==='unknown')) {
+        const runs=ghJson(['api',`repos/${repo}/actions/workflows/funding-daily-pr.yml/runs?branch=main&event=workflow_dispatch&created=${encodeURIComponent('>='+date)}&per_page=100`,'--paginate','--slurp']).flatMap(page=>page.workflow_runs || []);
+        save({dispatch_attempts:reconcileDispatchAttempts(state.dispatch_attempts,runs,date)});
+        dispatch=JSON.parse(command(process.execPath,['agent-workflow/financing/dispatch.mjs',`--date=${date}`,'--dry-run=true']));
+      }
+    }
+    if(dispatch.status==='planned') {
+      if(!dispatchAllowed(state,dispatch)) {
+        const waiting=Boolean(dispatch.resume_run_id) || (state.dispatch_attempts || []).some(a=>a.status==='unknown');
+        return save({status:waiting?'dispatch_retry_pending':'needs_attention',error:waiting?null:'daily_discovery_dispatch_budget',dispatch});
+      }
       const attempts=[...(state.dispatch_attempts || []),{status:'unknown',resume_run_id:dispatch.resume_run_id,started_at:new Date().toISOString()}];
       save({dispatch_attempts:attempts});
       dispatch=JSON.parse(command(process.execPath,['agent-workflow/financing/dispatch.mjs',`--date=${date}`]));
@@ -168,14 +175,27 @@ async function cycle(args) {
     const base=command('git',['rev-parse','origin/main']);
     const reviewKey=digest([head,base]);
     let review=state.reviews[reviewKey];
-    if(!review) {
-      if(state.review_calls>=3)throw new Error('daily_review_budget_exhausted');
-      const reviewDir=path.join(directory,`review-${head.slice(0,12)}-${base.slice(0,12)}`),checkout=path.join(reviewDir,'checkout');
+    const reviewRoot=path.join(directory,`review-${head.slice(0,12)}-${base.slice(0,12)}`);
+    const previousAttempt=state.review_attempts?.[reviewKey];
+    if(!completedReview(review,{date,head})) {
+      // A process can finish its immutable receipt just before the supervisor
+      // exits. Recover that result before spending another read-only review.
+      const receiptDir=previousAttempt?.count ? path.join(reviewRoot,`attempt-${previousAttempt.count}`) : reviewRoot;
+      const recovered=read(path.join(receiptDir,'result.json'));
+      const audit=read(path.join(receiptDir,'result.json.audit.json'));
+      if(completedReview(recovered,{date,head}) && audit?.verdict===recovered.verdict && audit.reads?.length) {
+        review=recovered;save({reviews:{...state.reviews,[reviewKey]:review}});
+      }
+    }
+    if(!completedReview(review,{date,head})) {
+      if(!reviewRetryDue(previousAttempt))return save({status:'review_retry_pending',next_retry_at:previousAttempt.next_retry_at,error:null});
+      const attempt=nextReviewAttempt(previousAttempt);
+      const reviewDir=path.join(reviewRoot,`attempt-${attempt.count}`),checkout=path.join(reviewDir,'checkout');
       fs.mkdirSync(reviewDir,{recursive:true});
       if(!fs.existsSync(checkout))command('git',['worktree','add','--detach',checkout,head]);
       const schema={type:'object',additionalProperties:false,required:['date','head_sha','verdict','checks','evidence','issues'],properties:{date:{type:'string'},head_sha:{type:'string'},verdict:{type:'string',enum:['approved','hold']},checks:{type:'object',additionalProperties:false,required:['sources','facts','scope','classification','preservation'],properties:Object.fromEntries(['sources','facts','scope','classification','preservation'].map(key=>[key,{type:'boolean'}]))},evidence:{type:'array',items:{type:'string'}},issues:{type:'array',items:{type:'string'}}}};
       write(path.join(reviewDir,'schema.json'),schema);
-      save({review_calls:state.review_calls+1,reviews:{...state.reviews,[reviewKey]:{date,head_sha:head,verdict:'unknown',issues:['review_attempt_started']}}});
+      save({review_calls:state.review_calls+1,review_attempts:{...state.review_attempts,[reviewKey]:attempt},reviews:{...state.reviews,[reviewKey]:{date,head_sha:head,verdict:'unknown',issues:['review_attempt_started']}}});
       const diff=fs.openSync(path.join(reviewDir,'changes.diff'),'w',0o600);
       try {command('git',['diff',`${base}...${head}`],{stdio:['ignore',diff,'pipe']});}
       finally {fs.closeSync(diff);}

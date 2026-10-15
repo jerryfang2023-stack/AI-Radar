@@ -7,6 +7,7 @@ import path from "node:path";
 import { readOriginalPage } from '../financing/original-page.mjs';
 import { publicationHold } from '../financing/catalog.mjs';
 import {researchDeferral} from '../financing/research-deferral.mjs';
+import {mayResearchHeldEvent} from '../financing/publication-holds.mjs';
 import { createOriginalReader } from '../financing/original-reader.mjs';
 import { config as financingConfig } from '../financing/discovery.mjs';
 import { execFileSync } from "node:child_process";
@@ -1070,7 +1071,11 @@ async function main() {
   if (args.get("market-region") === "CN") selectedEvents = selectedEvents.filter((event) => event.market_scope?.china_market_match === true);
   if (args.get("reuse-only") === "true") selectedEvents = selectedEvents.filter((event) => existingByEvent.has(event.event_id));
   const publicationReview = readJson(path.join(root, "01-SiteV2/content/12-applications/funding-insights/publication-review.json"), null);
-  selectedEvents = selectedEvents.filter(event => !publicationHold({ triggered_by_event_id: event.event_id }, publicationReview));
+  const holdQueue=process.env.GUANLAN_EVIDENCE_BACKUP_ROOT ? readJson(path.join(process.env.GUANLAN_EVIDENCE_BACKUP_ROOT,'financing-monitor-state/verification-queue.json'),{}).entries || {} : {};
+  selectedEvents = selectedEvents.filter(event => {
+    const hold=publicationHold({triggered_by_event_id:event.event_id},publicationReview);
+    return !hold || mayResearchHeldEvent(hold,holdQueue[hold.source_url]);
+  });
   if (limit) {
     selectedEvents = selectedEvents.slice(0, limit);
   }
