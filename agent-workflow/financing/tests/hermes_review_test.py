@@ -8,6 +8,19 @@ spec=importlib.util.spec_from_file_location('hermes_review',Path(__file__).paren
 review=importlib.util.module_from_spec(spec); spec.loader.exec_module(review)
 
 class ReadBoundaryTests(unittest.TestCase):
+    def test_review_budget_covers_actual_publication_changes(self):
+        self.assertGreaterEqual(review.review_iteration_budget({}),96)
+        self.assertEqual(review.review_iteration_budget({'delta':{'subjects':{'added':7,'changed':2}}}),104)
+        self.assertEqual(review.review_iteration_budget({'delta':{'events':{'added':1000}}}),240)
+
+    def test_packet_quotes_cannot_replace_private_original_review(self):
+        context={'required_originals':{'FI-a':[{'path':'objects/a.txt'}],'FI-b':[{'path':'funding-research/b.json'}]}}
+        with self.assertRaisesRegex(RuntimeError,'FI-a,FI-b'):
+            review.assert_original_coverage(context,[{'root':'context','path':'publication-delta/subjects-added-FI-a.json'}])
+        with self.assertRaisesRegex(RuntimeError,'FI-b'):
+            review.assert_original_coverage(context,[{'root':'evidence','path':'objects/a.txt'}])
+        review.assert_original_coverage(context,[{'root':'evidence','path':'objects/a.txt'},{'root':'evidence','path':'funding-research/b.json'}])
+
     @unittest.skipIf(os.name == 'nt', 'VPS symlink boundaries are tested on Linux')
     def test_traversal_credentials_and_symlinks_are_blocked(self):
         with tempfile.TemporaryDirectory() as temp:

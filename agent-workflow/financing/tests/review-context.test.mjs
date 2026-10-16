@@ -4,8 +4,20 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
-import {publicationReviewDelta,writePublicationReviewContext} from '../review-context.mjs';
+import {publicationReviewDelta,writePublicationReviewContext,originalLocators} from '../review-context.mjs';
 const card=(id,amount=10)=>({funding_insight_id:id,company:{name:id},financing:{amount},financing_tags:{sector:'ai'},products:[]});
+test('private original hints bind the exact captured hash and omit stale research cache',()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'financing-original-hints-'));
+ try {
+  fs.mkdirSync(path.join(root,'funding-research'));fs.mkdirSync(path.join(root,'objects'));
+  fs.writeFileSync(path.join(root,'funding-research/FISRC-abc.json'),JSON.stringify({content_hash:'old',body_clean:'Old article'}));
+  fs.writeFileSync(path.join(root,'objects/source.txt'),'Accepted article');
+  const c={research_sources:[{source_id:'FISRC-abc',source_url:'https://example.org',content_hash:'accepted'}]};
+  const rows=[{source_url:'https://example.org',content_hash:'accepted',object_ref:'objects/source.txt'},{source_url:'https://other.org',content_hash:'accepted',object_ref:'objects/source.txt'}];
+  assert.deepEqual(originalLocators(c,root,rows).map(r=>r.path),['objects/source.txt']);
+  assert.deepEqual(originalLocators(c,root,[]),[]);
+ } finally {fs.rmSync(root,{recursive:true,force:true});}
+});
 test('publication comparison separates additions, changes and removals from queue counts',()=>{
  const before={cards:[card('FI-old'),card('FI-removed')],event_cards:[card('FI-old')]};
  const after={cards:[card('FI-old',20),card('FI-new')],event_cards:[card('FI-old'),card('FI-new')]};
