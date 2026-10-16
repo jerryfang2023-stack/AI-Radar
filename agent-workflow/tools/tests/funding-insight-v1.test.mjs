@@ -57,6 +57,15 @@ test("research hierarchy retries distinguish industry IDs from market subcategor
   assert.equal(modelCorrectionProblem("investors_missing"), "investors_missing");
 });
 
+test("ambiguous recipient name retries require canonical original evidence", () => {
+  const issue = "ambiguous_company_full_name_not_in_canonical_source";
+  const guidance = modelCorrectionProblem(issue);
+  assert.ok(guidance.startsWith(issue));
+  assert.ok(guidance.includes("copied verbatim from SOURCE_CLASS=canonical_event_source"));
+  assert.ok(guidance.includes("Do not add a legal suffix"));
+  assert.ok(guidance.includes("unrelated evidence must be removed"));
+});
+
 test("late financing rounds retain their letters without reading prose as a round", () => {
   assert.equal(normalizeFundingRound("Series H").code, "series_h");
   assert.equal(normalizeFundingRound("L轮").code, "series_l");

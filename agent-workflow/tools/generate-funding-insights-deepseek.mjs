@@ -468,6 +468,9 @@ function ensureSecondSourceEvidence(payload, company, sources) {
 }
 
 export function modelCorrectionProblem(problem = "") {
+  if (problem === "ambiguous_company_full_name_not_in_canonical_source") {
+    return `${problem}:company.full_name must be copied verbatim from SOURCE_CLASS=canonical_event_source for this financing recipient. Do not add a legal suffix, translation, or a same-name company's expanded name from secondary search. If no longer full name is stated there, use the exact CANONICAL_FUNDING_EVENT company name. Recheck the company's product, founders and website against that recipient; unrelated evidence must be removed, never used to fill gaps.`;
+  }
   if (["market_subcategory_id_unknown", "market_subcategory_parent_mismatch"].includes(problem)) {
     return `${problem}:analysis.market_subcategory_id must use an exact key in ${JSON.stringify(Object.fromEntries(FUNDING_MARKET_SUBCATEGORY_PARENTS))}; the value is its required market_category_id. Do not copy industry_ids such as legal_services or use_case_ids such as legal_compliance into this field.`;
   }
