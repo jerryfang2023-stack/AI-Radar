@@ -2974,3 +2974,32 @@ test("reviewed AI context establishes scope without adding unrelated funding met
   const unreviewed = evaluateBundle(bundle, taxonomy, { modelAssist: { candidates: [{ ...candidate, review: undefined }] }, hydratedRawDocuments });
   assert.equal(unreviewed.failures.some((failure) => failure.includes("AI industry scope gate")), true);
 });
+
+
+test('malformed funding headlines recover recipients from matching original proceeds', async () => {
+  const {repairFundingHeadlineIdentity}=await import('../build-data-center-v4.mjs');
+  const {subjectCompanyForEvent,canonicalFundingEventAmount}=await import('../funding-insight-v1-utils.mjs');
+  const cases=[
+    ['英伟达支持的AI制药公司Iambic在美国IPO融资1.5亿美元','英伟达支持的AI制药公司Iambic在美国IPO','Iambic','1.5亿美元',
+      '英伟达参股的AI制药公司Iambic Therapeutics以每股16美元发行约938万股，在美国IPO融资1.5亿美元。公司通过人工智能开发抗癌药物。'],
+    ['高维医药获数亿元Pre-A轮融资 聚焦AI制药','高维医药获数亿元Pre-A轮','高维医药','数亿元Pre-A轮',
+      '据报道，高维医药宣布完成数亿元Pre-A轮融资，由东方嘉富领投。高维医药开发人工智能药物设计平台。'],
+    ['AI眼镜赛道近期迎密集融资 比特幻境完成数亿元天使轮融资','AI眼镜赛道近期迎密集融资 比特幻境','比特幻境','数亿元天使轮',
+      '比特幻境于近日宣布完成数亿元天使轮融资，投资方包括博华资本。公司开发AI智能眼镜。除了比特幻境斩获融资外，影目科技完成C+轮融资，融资金额近10亿元。同月，亮亮视野完成超3亿元C+轮融资。'],
+  ];
+  for(const [title,subject,name,amount,body] of cases) {
+    assert.equal(repairFundingHeadlineIdentity(title,body,{subject}).subject,name);
+    const bundle=buildBundle([entry('subject-'+name,title,body)],taxonomy,date,date+'T00:00:00Z',{modelAssist:{candidates:[]}});
+    const event=bundle.canonical_events.find(e=>e.event_type==='funding');assert.ok(event,name);
+    assert.equal(subjectCompanyForEvent(event,bundle.entities,{},bundle.claims,[body])?.canonical_name,name);
+    assert.ok(canonicalFundingEventAmount(event,bundle.claims).startsWith(amount.split('Pre-')[0].split('天使')[0]));
+    for(const c of bundle.claims.filter(c=>event.claim_refs.includes(c.claim_id))) {
+      assert.equal(c.subject,name);assert.equal(body.slice(c.source_span.start,c.source_span.end),c.source_quote);
+      if(name==='比特幻境')assert.doesNotMatch(c.source_quote,/影目科技|亮亮视野/);
+    }
+  }
+  assert.equal(repairFundingHeadlineIdentity(cases[0][0],cases[0][0],{subject:cases[0][1]}),null);
+  assert.equal(repairFundingHeadlineIdentity(cases[1][0],'高维医药宣布完成1000万元Pre-A轮融资。',{subject:cases[1][1]}),null);
+  assert.equal(repairFundingHeadlineIdentity(cases[1][0],'高维医药参与另一家药企数亿元Pre-A轮融资。',{subject:cases[1][1]}),null);
+  assert.equal(repairFundingHeadlineIdentity(cases[1][0],'高维医药否认计划数亿元Pre-A轮融资。',{subject:cases[1][1]}),null);
+});

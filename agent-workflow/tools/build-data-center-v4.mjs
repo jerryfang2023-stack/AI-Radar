@@ -1177,6 +1177,30 @@ function buildModelClaim(rawId, proposed, evidence, index, status) {
   };
 }
 
+// Repair a malformed headline subject only when a named recipient and the
+// same proceeds are independently present in the immutable article body.
+export function repairFundingHeadlineIdentity(title, body, parsed) {
+  if (!/(?:融资|募资|IPO|获|完成|宣布|于近日)/iu.test(parsed.subject || '')) return null;
+  const candidates = [];
+  const proceeds = String.raw`([近约超数\d一二三四五六七八九十百千万亿零点.,]+(?:美元|人民币|元)(?:[A-Za-z+\-\d]*轮|天使轮|种子轮)?(?:融资)?)`;
+  const chinese = new RegExp(String.raw`(?:^|[\s，,：:])([\p{Script=Han}A-Za-z0-9·]{2,30}?)(?:于近日|近日|近期)?(?:宣布)?(完成|获得|获)${proceeds}`, 'gu');
+  const ipo = new RegExp(String.raw`(?:公司|企业)\s*([A-Z][A-Za-z0-9.&'-]*(?:[ \t]+[A-Z][A-Za-z0-9.&'-]*){0,3})(?:在|通过)[^，,。\n]{0,12}?(?:IPO|首次公开发行)(融资|募资)${proceeds}`, 'gu');
+  for (const pattern of [chinese, ipo]) for (const match of String(title).matchAll(pattern)) {
+    const name=match[1], amount=match[3].replace(/融资$/u,'');
+    if (/(?:融资|支持|报道|获悉|据称|计划|拟|欲|未|否认)/u.test(name)) continue;
+    const compact=value=>String(value).normalize('NFKC').toLowerCase().replace(/\s/gu,'');
+    const escaped=name.replace(/[.*+?^${}()|[\]\\]/gu,'\\$&');
+    const recipient=new RegExp(`${escaped}[^。；;\\n]{0,100}?(?:融资|募资)`, 'iu');
+    const independentlyConfirmed=String(body).split(/[。；;\n]/u).some(quote=>
+      compact(quote)!==compact(title) && recipient.test(quote) && compact(quote).includes(compact(amount))
+      && !/(?:投资|领投|跟投|支持|参股|出资|认购|参与)/u.test(quote.match(recipient)?.[0].slice(name.length) || '')
+      && !/(?:尚未|否认|计划|拟|洽谈)[^。]{0,30}(?:融资|募资)/u.test(quote));
+    if(independentlyConfirmed)candidates.push({subject:name,action:match[2],object:amount});
+  }
+  const unique=[...new Map(candidates.map(row=>[JSON.stringify(row),row])).values()];
+  return unique.length===1?unique[0]:null;
+}
+
 export function fundingClaimCandidateRelevant({ start = 0, quote = "" } = {}, title = "", subject = "") {
   const normalizedQuote = normalizeSpace(quote).toLocaleLowerCase();
   if (!normalizedQuote) return false;
@@ -2078,6 +2102,9 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       const parsed = deterministicRule
         ? actionMatch(title, rule.pattern)
         : { subject: cleanString(proposedModelClaim.subject), action: proposedModelClaim.event_type, object: cleanString(proposedModelClaim.object) };
+      const repairedFundingIdentity = deterministicRule && rule.eventType === "funding"
+        ? repairFundingHeadlineIdentity(title, bodyClean, parsed) : null;
+      if (repairedFundingIdentity) Object.assign(parsed, repairedFundingIdentity);
       if (deterministicRule && rule.eventType === "funding") {
         // A location possessive in a headline is not the recipient. Require
         // the article to independently name that recipient as raising the same
@@ -2101,6 +2128,12 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       }
       const status = eventStatus(reviewedRepair ? `${parsed.subject} ${parsed.object}` : title, bodyClean.slice(0, 1600), rule.eventType);
       let spans = deterministicRule ? claimCandidates(bodyClean, title, rule, parsed.subject) : [];
+      if (repairedFundingIdentity) spans = spans.filter(span => {
+        const text=normalizeSpace(span.quote);
+        // A roundup's comparison with other recipients is not this round.
+        if(text.startsWith(`除了${parsed.subject}`))return false;
+        return text.toLowerCase().includes(parsed.subject.toLowerCase());
+      });
       let eventClaimRows = spans.map((span, index) => buildClaim(rawId, rule.eventType, span, parsed, index, status));
       if (!eventClaimRows.length && modelClaimCandidate) {
         eventClaimRows = normalizedModelProposal.claims.flatMap((claim, index) => {
