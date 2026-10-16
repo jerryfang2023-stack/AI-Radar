@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,10 +62,11 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 3,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 3,
     "china_market_company_count": 3,
@@ -73,6 +74,7 @@
     "latest_disclosed_at": "2026-10-12",
     "role_counts": {
       "co_lead": 2,
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -217,6 +219,38 @@
             "quote_hash": "a48247a13b3e5d8796103000c085404f8869646a8d4a74f21ef4427981deadea"
           }
         ]
+      },
+      {
+        "activity_id": "IA-200292a937a5f6bc",
+        "funding_insight_id": "FI-bc8f734fd3f1e216",
+        "event_ids": [
+          "EV-99a8adda510d892e"
+        ],
+        "company_entity_id": "EN-68f07a3cc51325d6",
+        "company_canonical_entity_id": "",
+        "company_name": "模思智能",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东持续投资（上海国投旗下）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cb25587b8eec23eb",
+            "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
+            "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
+            "source_content_hash": "7783bfbf968aee5ae25bff88f5af09ab576699f56e999514defd9feba29d9f1e",
+            "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+            "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -243,6 +277,14 @@
         "source_content_hash": "a3d55e3960392661",
         "quote": "本轮由上海国投旗下上海科创集团、复旦科创联合领投",
         "quote_hash": "a48247a13b3e5d8796103000c085404f8869646a8d4a74f21ef4427981deadea"
+      },
+      {
+        "source_id": "FISRC-cb25587b8eec23eb",
+        "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
+        "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
+        "source_content_hash": "7783bfbf968aee5ae25bff88f5af09ab576699f56e999514defd9feba29d9f1e",
+        "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+        "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
       }
     ],
     "public_profile": {

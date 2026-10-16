@@ -1,0 +1,850 @@
+{
+  "event_id": "EV-9585d406684e9c4a",
+  "company_name": "Uvi",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-e74a0e693d80d64f",
+    "triggered_by_event_id": "EV-9585d406684e9c4a",
+    "as_of_date": "2026-10-16",
+    "company": {
+      "entity_id": "EN-954adfa4d922fa30",
+      "name": "Uvi",
+      "full_name": "Uvi",
+      "website": "https://uvi.io",
+      "summary": "Uvi（正式名称为 Naboo Research Ltd.）是一家以色列初创公司，为企业 AI 智能体提供公司自有的“上下文推理层”，让智能体学习并保留业务上下文，从而降低 token 成本与延迟。",
+      "headquarters": "以色列",
+      "founders": [
+        {
+          "name": "Gilad Salinger",
+          "role": "联合创始人兼首席执行官",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8f60534aa7e0f6bc",
+              "quote": "co-founder and chief executive Gilad Salinger said",
+              "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+              "quote_hash": "15745e0d17d94fa4eec12c0c3f787b27e665a11feb3e98b1a173b971d15ae3f9"
+            },
+            {
+              "source_id": "FISRC-efed3f7e2e505e43",
+              "quote": "Founded by CEO Gilad Salinger and CTO Dror Wolmer",
+              "source_content_hash": "f54abd49fa2b0f46",
+              "quote_hash": "20298899b947f6a6fe6a1ae31d501d4eae1ad4b2c0ec7855cb82545b4387beb1"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Dror Wolmer",
+          "role": "首席技术官",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-efed3f7e2e505e43",
+              "quote": "Founded by CEO Gilad Salinger and CTO Dror Wolmer",
+              "source_content_hash": "f54abd49fa2b0f46",
+              "quote_hash": "20298899b947f6a6fe6a1ae31d501d4eae1ad4b2c0ec7855cb82545b4387beb1"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "11-50 employees",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5291b800d3a03ed1",
+            "quote": "Company size\n 11-50 employees",
+            "source_content_hash": "59282534471c6a4e",
+            "quote_hash": "97b3532eefc16c60dfd2746b432c2e8c1c86d0bc793f825045a9314215ec8267"
+          }
+        ]
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8f60534aa7e0f6bc",
+          "quote": "officially Naboo",
+          "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+          "quote_hash": "e99ac3070419c6830b67d326b5a8d90bf037bbf1498f73c5f33b09741b5c5718"
+        },
+        {
+          "source_id": "FISRC-efed3f7e2e505e43",
+          "quote": "Uvi, a startup that provides company knowledge to AI agents, has emerged from stealth with $7.5 million in seed funding.",
+          "source_content_hash": "f54abd49fa2b0f46",
+          "quote_hash": "486b8bdcad610a606f1323b0eea4264fb54d38468c3d3b6df19cbfffbd1ee14a"
+        }
+      ],
+      "application_entity_id": "EN-954adfa4d922fa30",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "种子轮",
+      "amount": "$7.5M",
+      "total_raised": "",
+      "announced_at": "2026-10-14",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "CT Innovations",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8f60534aa7e0f6bc",
+              "quote": "CT InnovationsDealroom has a profile for this one. Try Dealroom → led the round, with CardumenDealroom has a profile for this one. Try Dealroom →, Mana VC, and 91 VenturesDealroom has a profile for this one. Try Dealroom → participating.",
+              "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+              "quote_hash": "4dba9e76cb98c8f6e40c46a7a05866734a895a596e3cc834f25b773a7a9fa7e6"
+            },
+            {
+              "source_id": "FISRC-efed3f7e2e505e43",
+              "quote": "The funding round was led by CT Innovations and Cardumen, with participation from Mana VC, 91 Ventures, and Gaingles VC.",
+              "source_content_hash": "f54abd49fa2b0f46",
+              "quote_hash": "fb5f407d9ab09f8c07edb832d2189f5f8dd3b8505a76373cf270952b51a929fb"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Cardumen",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-efed3f7e2e505e43",
+              "quote": "The funding round was led by CT Innovations and Cardumen, with participation from Mana VC, 91 Ventures, and Gaingles VC.",
+              "source_content_hash": "f54abd49fa2b0f46",
+              "quote_hash": "fb5f407d9ab09f8c07edb832d2189f5f8dd3b8505a76373cf270952b51a929fb"
+            },
+            {
+              "source_id": "FISRC-9da06b15f2724887",
+              "quote": "CT Innovations led the round, with Cardumen, Mana VC and 91 Ventures participating.",
+              "source_content_hash": "6cbe82bc22966ab5",
+              "quote_hash": "fe0889c7fc7427ed710df6042d90abd64edfe226072ef35207f6d451ef0f5c24"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Mana VC",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8f60534aa7e0f6bc",
+              "quote": "CT InnovationsDealroom has a profile for this one. Try Dealroom → led the round, with CardumenDealroom has a profile for this one. Try Dealroom →, Mana VC, and 91 VenturesDealroom has a profile for this one. Try Dealroom → participating.",
+              "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+              "quote_hash": "4dba9e76cb98c8f6e40c46a7a05866734a895a596e3cc834f25b773a7a9fa7e6"
+            },
+            {
+              "source_id": "FISRC-efed3f7e2e505e43",
+              "quote": "The funding round was led by CT Innovations and Cardumen, with participation from Mana VC, 91 Ventures, and Gaingles VC.",
+              "source_content_hash": "f54abd49fa2b0f46",
+              "quote_hash": "fb5f407d9ab09f8c07edb832d2189f5f8dd3b8505a76373cf270952b51a929fb"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "91 Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8f60534aa7e0f6bc",
+              "quote": "CT InnovationsDealroom has a profile for this one. Try Dealroom → led the round, with CardumenDealroom has a profile for this one. Try Dealroom →, Mana VC, and 91 VenturesDealroom has a profile for this one. Try Dealroom → participating.",
+              "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+              "quote_hash": "4dba9e76cb98c8f6e40c46a7a05866734a895a596e3cc834f25b773a7a9fa7e6"
+            },
+            {
+              "source_id": "FISRC-efed3f7e2e505e43",
+              "quote": "The funding round was led by CT Innovations and Cardumen, with participation from Mana VC, 91 Ventures, and Gaingles VC.",
+              "source_content_hash": "f54abd49fa2b0f46",
+              "quote_hash": "fb5f407d9ab09f8c07edb832d2189f5f8dd3b8505a76373cf270952b51a929fb"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Gaingles VC",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-efed3f7e2e505e43",
+              "quote": "The funding round was led by CT Innovations and Cardumen, with participation from Mana VC, 91 Ventures, and Gaingles VC.",
+              "source_content_hash": "f54abd49fa2b0f46",
+              "quote_hash": "fb5f407d9ab09f8c07edb832d2189f5f8dd3b8505a76373cf270952b51a929fb"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8f60534aa7e0f6bc",
+          "quote": "News › Uvi raises $7.5M to cut AI agent costs eight-fold",
+          "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+          "quote_hash": "c7cdd154b2755efc04b056e317c4c0968faca310b4a5c6bf59910d982a785944"
+        },
+        {
+          "source_id": "FISRC-8f60534aa7e0f6bc",
+          "quote": "has raised $7.5 million in seed funding to help enterprise AI agents learn and retain business context.",
+          "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+          "quote_hash": "f28ea634ec1a46ad457a558ee54e4005b9d7f0293d5519b71832507a412414b4"
+        }
+      ],
+      "round_code": "seed",
+      "round_original": "Seed",
+      "amount_original": "$7.5M",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 7500000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "750 万美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-9585d406684e9c4a",
+          "round_original": "Seed",
+          "amount": "$7.5M",
+          "announced_at": "2026-10-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8f60534aa7e0f6bc",
+              "quote": "News › Uvi raises $7.5M to cut AI agent costs eight-fold",
+              "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+              "quote_hash": "c7cdd154b2755efc04b056e317c4c0968faca310b4a5c6bf59910d982a785944"
+            },
+            {
+              "source_id": "FISRC-8f60534aa7e0f6bc",
+              "quote": "has raised $7.5 million in seed funding to help enterprise AI agents learn and retain business context.",
+              "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+              "quote_hash": "f28ea634ec1a46ad457a558ee54e4005b9d7f0293d5519b71832507a412414b4"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "上下文推理层（context reasoning layer）",
+        "description": "Uvi 构建的公司自有“上下文推理层”，即统一的机构记忆，供每个 AI 工具调用；它把 Slack、Jira、Confluence、Salesforce、代码仓库和会议纪要等系统连接成知识图谱，映射决策如何做出及为何做出。",
+        "target_customers": "企业 AI 智能体部署方",
+        "features": [
+          "连接 Slack、Jira、Confluence、Salesforce、代码仓库与会议纪要",
+          "构建映射决策与依赖关系的知识图谱",
+          "语义层编码公司术语",
+          "访问控制与数据标记保留边界"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8f60534aa7e0f6bc",
+            "quote": "Uvi is building a \"context reasoning layer\" that each company owns, a unified institutional memory every AI tool can tap.",
+            "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+            "quote_hash": "8821b72de751288dd58f4cf04d5f97b49a5a14c72b0c493900554c7c3b4c3c46"
+          },
+          {
+            "source_id": "FISRC-9da06b15f2724887",
+            "quote": "Its platform links Slack, Jira, Confluence, Salesforce, code repositories and meeting notes, building a knowledge graph that maps decisions, dependencies and terminology.",
+            "source_content_hash": "6cbe82bc22966ab5",
+            "quote_hash": "31522d8f82bcfef9d119d582453213bf4ee6002d4ecf8306308977b691a9bcb1"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "企业 AI 智能体上下文软件层",
+        "description": "Uvi 提供软件层，使 AI 智能体能够访问并理解来自 Slack、Jira、Confluence 和代码库等来源的内部公司数据，同时保持现有访问权限并引用原始信息来源。",
+        "target_customers": "使用 AI 智能体的企业",
+        "features": [
+          "访问并理解内部公司数据",
+          "保持现有访问权限",
+          "引用原始信息来源"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-efed3f7e2e505e43",
+            "quote": "Uvi provides a software layer that enables AI agents to access and understand internal company data from sources like Slack, Jira, Confluence, and codebases.",
+            "source_content_hash": "f54abd49fa2b0f46",
+            "quote_hash": "490d757eacd1d9db346ff55ba92819896c13dcca3200b18db22bbb8f3e2c67e5"
+          },
+          {
+            "source_id": "FISRC-efed3f7e2e505e43",
+            "quote": "Its platform ensures agents can make informed decisions while maintaining existing access permissions and citing original information sources.",
+            "source_content_hash": "f54abd49fa2b0f46",
+            "quote_hash": "ec707a6f717ac30071fdcea5ada65f6e1daf7c5de342918ec63d3e2c29ed83ed"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "monday.com",
+        "industry": "",
+        "use_case": "在生产环境中使用 Uvi 的上下文层",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9da06b15f2724887",
+            "quote": "Early traction includes Monday.com, Lemonade and Melio as customers",
+            "source_content_hash": "6cbe82bc22966ab5",
+            "quote_hash": "4492ad9bdddf2481a797b8f6b491b8bcc221ebbdda93a9bc55a1511ad176868d"
+          },
+          {
+            "source_id": "FISRC-5291b800d3a03ed1",
+            "quote": "Uvi runs in production at monday.com, Lemonade, Melio and more.",
+            "source_content_hash": "59282534471c6a4e",
+            "quote_hash": "a1543d0eee6e666c7c0f21d29942d394d61d2559d6bf0fdda44f479968f831b3"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Lemonade",
+        "industry": "",
+        "use_case": "在生产环境中使用 Uvi 的上下文层",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9da06b15f2724887",
+            "quote": "Early traction includes Monday.com, Lemonade and Melio as customers",
+            "source_content_hash": "6cbe82bc22966ab5",
+            "quote_hash": "4492ad9bdddf2481a797b8f6b491b8bcc221ebbdda93a9bc55a1511ad176868d"
+          },
+          {
+            "source_id": "FISRC-5291b800d3a03ed1",
+            "quote": "Uvi runs in production at monday.com, Lemonade, Melio and more.",
+            "source_content_hash": "59282534471c6a4e",
+            "quote_hash": "a1543d0eee6e666c7c0f21d29942d394d61d2559d6bf0fdda44f479968f831b3"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Melio",
+        "industry": "",
+        "use_case": "在生产环境中使用 Uvi 的上下文层",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9da06b15f2724887",
+            "quote": "Early traction includes Monday.com, Lemonade and Melio as customers",
+            "source_content_hash": "6cbe82bc22966ab5",
+            "quote_hash": "4492ad9bdddf2481a797b8f6b491b8bcc221ebbdda93a9bc55a1511ad176868d"
+          },
+          {
+            "source_id": "FISRC-5291b800d3a03ed1",
+            "quote": "Uvi runs in production at monday.com, Lemonade, Melio and more.",
+            "source_content_hash": "59282534471c6a4e",
+            "quote_hash": "a1543d0eee6e666c7c0f21d29942d394d61d2559d6bf0fdda44f479968f831b3"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "种子轮融资金额",
+        "value": "$7.5 million",
+        "observed_at": "2026-10-14",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8f60534aa7e0f6bc",
+            "quote": "has raised $7.5 million in seed funding",
+            "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+            "quote_hash": "28d24bf6a685a6627d572cf4fcee01f93ad4b18cb547dda9645c114333a6b582"
+          },
+          {
+            "source_id": "FISRC-efed3f7e2e505e43",
+            "quote": "Raised: $7.5M",
+            "source_content_hash": "f54abd49fa2b0f46",
+            "quote_hash": "ff01366fa79b818cd2378d1d42bad5d62df3f20687fb84b9206cf61d471b8e24"
+          }
+        ]
+      },
+      {
+        "label": "使用上下文层后平均每次响应成本",
+        "value": "10 至 16 美分",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9da06b15f2724887",
+            "quote": "Uvi says agents using the layer average 10 to 16 cents per response, versus 0.75 to 1.41 dollars without it.",
+            "source_content_hash": "6cbe82bc22966ab5",
+            "quote_hash": "fa8bc843507e425d6becef22a18664bf097c13733730af9357646691924561cf"
+          }
+        ]
+      },
+      {
+        "label": "未使用上下文层时平均每次响应成本",
+        "value": "0.75 至 1.41 美元",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9da06b15f2724887",
+            "quote": "Uvi says agents using the layer average 10 to 16 cents per response, versus 0.75 to 1.41 dollars without it.",
+            "source_content_hash": "6cbe82bc22966ab5",
+            "quote_hash": "fa8bc843507e425d6becef22a18664bf097c13733730af9357646691924561cf"
+          }
+        ]
+      },
+      {
+        "label": "开放式循环成本降低倍数",
+        "value": "46 倍",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9da06b15f2724887",
+            "quote": "For open-ended prompts, it reports 46 times lower cost",
+            "source_content_hash": "6cbe82bc22966ab5",
+            "quote_hash": "fc9ec9843008aa35770d542d74b179db6eba210961224b7ebd32dabbe7795dad"
+          }
+        ]
+      },
+      {
+        "label": "低效导致的成本倍数",
+        "value": "约 8 倍",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8f60534aa7e0f6bc",
+            "quote": "Uvi's benchmark tests show this inefficiency costs the average company roughly eight times more than it should.",
+            "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+            "quote_hash": "eb42aac932133a0978848fb404428efb687bd1080c41aff825ae0e65ed2e138d"
+          }
+        ]
+      },
+      {
+        "label": "基准测试覆盖的真实员工问题数",
+        "value": "超过 900 个",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5291b800d3a03ed1",
+            "quote": "In our benchmark of more than 900 real employee questions",
+            "source_content_hash": "59282534471c6a4e",
+            "quote_hash": "f3bbedb0ca5108f5b8e81ebeb5bdf264e5d2d84bb2156edfd46ebada6e1dc70d"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Gilad Salinger",
+        "quote": "The reason is structural, not about intelligence",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8f60534aa7e0f6bc",
+            "quote": "\"The reason is structural, not about intelligence,\" Salinger said.",
+            "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+            "quote_hash": "b6d25ebd73b428e1ce12ee9bf1fe612247e24d884b264d2a6226626509173bbc"
+          }
+        ]
+      },
+      {
+        "speaker": "Gilad Salinger",
+        "quote": "because it never retained how the work actually gets done",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8f60534aa7e0f6bc",
+            "quote": "He noted that agents often fail the same task twice \"because it never retained how the work actually gets done.\"",
+            "source_content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+            "quote_hash": "284c8b0dbebcf9d446ee33307e200d12cf85f8cef1408345f1f0635d71d61b31"
+          }
+        ]
+      },
+      {
+        "speaker": "Gilad Salinger",
+        "quote": "In three years, the enterprise AI stack will not be organized around chat interfaces or document search. It will be organized around a persistent context layer that every agent, every model and every identity plugs into.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5291b800d3a03ed1",
+            "quote": "“In three years, the enterprise AI stack will not be organized around chat interfaces or document search. It will be organized around a persistent context layer that every agent, every model and every identity plugs into.”",
+            "source_content_hash": "59282534471c6a4e",
+            "quote_hash": "aa751bc348df50a4b840bfbe70a17f6e96c649fec0fda307fe919e1c9ed7e250"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "本轮资本押注的核心变量是：企业 AI 智能体因每次部署都要从零重学业务上下文而产生约 8 倍 token 成本，Uvi 试图用公司自有的上下文推理层把这一成本降下来。已验证信号包括：公司已从 stealth 走出并完成 750 万美元种子轮，CT Innovations 领投、Cardumen、Mana VC、91 Ventures 参投；Uvi 称其上下文层在生产环境中被 monday.com、Lemonade、Melio 使用；内部基准显示使用该层后每次响应成本为 10 至 16 美分，而未使用时为 0.75 至 1.41 美元。证据边界在于：成本节省数据为 Uvi 自报基准，尚无第三方验证或独立 ROI 数据，采购牵引力与生产案例研究仍待观察。",
+      "validated_signals": [
+        "Uvi 完成 750 万美元种子轮融资，CT Innovations 领投，Cardumen、Mana VC、91 Ventures 参投",
+        "Uvi 称其上下文层在生产环境中被 monday.com、Lemonade、Melio 使用",
+        "Uvi 内部基准显示使用上下文层后每次响应成本为 10 至 16 美分，未使用时为 0.75 至 1.41 美元"
+      ],
+      "risks": [
+        "成本节省数据为 Uvi 自报基准，尚无第三方验证或独立 ROI 数据",
+        "跨多个系统拼接细粒度权限复杂，结果取决于数据质量、治理与变更管理",
+        "采购决策仍取决于试点之外的硬性 ROI 证明"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "ai_infrastructure_software",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "use_case_ids": [
+        "knowledge_search",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "sector": "企业 AI 智能体上下文层",
+      "investment_thesis": {
+        "statement": "本轮资本押注的核心变量是：企业 AI 智能体因每次部署都要从零重学业务上下文而产生约 8 倍 token 成本，Uvi 试图用公司自有的上下文推理层把这一成本降下来。已验证信号包括：公司已从 stealth 走出并完成 750 万美元种子轮，CT Innovations 领投、Cardumen、Mana VC、91 Ventures 参投；Uvi 称其上下文层在生产环境中被 monday.com、Lemonade、Melio 使用；内部基准显示使用该层后每次响应成本为 10 至 16 美分，而未使用时为 0.75 至 1.41 美元。证据边界在于：成本节省数据为 Uvi 自报基准，尚无第三方验证或独立 ROI 数据，采购牵引力与生产案例研究仍待观察。",
+        "evidence_signals": [
+          "Uvi 完成 750 万美元种子轮融资，CT Innovations 领投，Cardumen、Mana VC、91 Ventures 参投",
+          "Uvi 称其上下文层在生产环境中被 monday.com、Lemonade、Melio 使用",
+          "Uvi 内部基准显示使用上下文层后每次响应成本为 10 至 16 美分，未使用时为 0.75 至 1.41 美元"
+        ],
+        "risks": [
+          "成本节省数据为 Uvi 自报基准，尚无第三方验证或独立 ROI 数据",
+          "跨多个系统拼接细粒度权限复杂，结果取决于数据质量、治理与变更管理",
+          "采购决策仍取决于试点之外的硬性 ROI 证明"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "上下文推理层（context reasoning layer）",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "企业 AI 智能体上下文软件层",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Gilad Salinger",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Dror Wolmer",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "CT Innovations",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Cardumen",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Mana VC",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "91 Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Gaingles VC",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "monday.com",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Lemonade",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Melio",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-9585d406684e9c4a",
+        "date": "2026-10-14",
+        "title": "Uvi 融资 750 万美元，将 AI 智能体成本降低八倍",
+        "amount": "$7.5M",
+        "source_refs": [
+          "SA-1041277893b946ec"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-8f60534aa7e0f6bc",
+        "source_url": "https://dealroom.co/news/162509-uvi-raises-7-5m-to-cut-ai-agent-costs-eight-fold/",
+        "title": "Uvi 融资 750 万美元，将 AI 智能体成本降低八倍",
+        "publisher": "dealroom.co",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-16T00:19:15.808Z",
+        "content_hash": "f25f56ab87876d0db786dc8ab57df832b41a53a057b4b8280ebcee6d363aad59",
+        "source_artifact_id": "SA-1041277893b946ec",
+        "raw_id": "RAW-139ac9fb15c227b1"
+      },
+      {
+        "source_id": "FISRC-efed3f7e2e505e43",
+        "source_url": "https://www.thesaasnews.com/news/uvi-raises-7-5m-seed/",
+        "title": "Uvi Raises $7.5M Seed",
+        "publisher": "thesaasnews.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-16T00:39:22.189Z",
+        "content_hash": "f54abd49fa2b0f46",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-9da06b15f2724887",
+        "source_url": "https://relvehq.com/blog/noise/uvi-raises-7-5m-agent-context-costs",
+        "title": "Uvi raises $7.5M to cut AI agent context costs",
+        "publisher": "relvehq.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-16T00:39:41.508Z",
+        "content_hash": "6cbe82bc22966ab5",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-5291b800d3a03ed1",
+        "source_url": "https://www.linkedin.com/company/uvi-hq",
+        "title": "Uvi | LinkedIn",
+        "publisher": "linkedin.com",
+        "source_class": "secondary",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-16T00:53:58.273Z",
+        "content_hash": "59282534471c6a4e",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 2,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-16T00:54:25.169Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-16T00:54:25.169Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 3,
+      "searched_source_count": 4
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "上下文推理层（context reasoning layer）",
+          "企业 AI 智能体上下文软件层"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "Dror Wolmer",
+          "Gilad Salinger"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-9585d406684e9c4a"
+    ],
+    "aggregation": {
+      "key": "EN-954adfa4d922fa30|seed",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Uvi\" 2026 funding round investors",
+    "\"Uvi\" official product customers",
+    "\"Uvi\" \"why we invested\"",
+    "\"Uvi\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Uvi\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://tracxn.com/d/companies/uvi/__zdfTy4XKOb4AIrmlnxc7hF8sAAF2GYBAMf0dI_6krX0",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Uvi\" $7.5M funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Uvi\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.facebook.com/UVI.Official/posts/discover-the-new-uvi-portalour-product-manager-just-got-better-sporting-a-brand-/10159806251525941/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.trustpilot.com/review/www.uvi.net",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.youtube.com/watch?v=xtZr-GTFwqM",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://support.uvi.net/hc/en-us/articles/115001260865-EDU-Program-for-Students-and-Teachers",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Uvi\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.facebook.com/groups/746298325395838/posts/39675609578704561/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.tiktok.com/music/d%C5%BAwi%C4%99k-oryginalny-7035624955995884293",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.instagram.com/alwaysklean_/?hl=en",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.turbojet.com.hk/media/583165/horizon_nov_2018_web_version.pdf",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.facebook.com/LawtonPS/posts/crosby-park-elementary-students-participated-in-the-science-museum-of-oklahomas-/577034118328620/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.linkedin.com/posts/chang-institute_some-ventures-stall-at-the-idea-stage-some-activity-7430701585737093120-Nh7R",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://in.linkedin.com/in/munish-p-bagga-41115753",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Uvi\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Uvi\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://yourstory.com/companies/uvi-health",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.facebook.com/UVIRTP/videos/the-usvi-idea-incubator-is-where-businesses-learn-not-only-to-launchbut-to-scale/1129647812053468/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://f.hubspotusercontent10.net/hubfs/19504216/UVI%20RTPark%20Annual%20Report%20FY21.pdf",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    }
+  ]
+}

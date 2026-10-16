@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-01",
-    "latest_disclosed_at": "2026-10-01",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "pre_seed",
       "series_c"
     ],
     "portfolio_companies": [
@@ -82,9 +84,54 @@
         "entity_id": "EN-0aa3069e184a3bce",
         "canonical_entity_id": "",
         "name": "Metaview"
+      },
+      {
+        "entity_id": "EN-6272c1931f96e1a7",
+        "canonical_entity_id": "",
+        "name": "Solvera"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2e64d01dac6f39e2",
+        "funding_insight_id": "FI-e8917ea053bc2f16",
+        "event_ids": [
+          "EV-3a09e2f76f792423"
+        ],
+        "company_entity_id": "EN-6272c1931f96e1a7",
+        "company_canonical_entity_id": "",
+        "company_name": "Solvera",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$6.3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "630 万美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-536d9e1eb424a584",
+            "source_url": "https://tech.eu/2026/10/15/solvera-raises-63m-to-scale-the-ai-native-engineering-firm/",
+            "source_title": "Solvera 融资 630 万美元，以扩展 AI 原生工程公司",
+            "source_content_hash": "e9625fe0ba6820269680860eddac1c4a579668541cd9174731bad54b362711d8",
+            "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures, alongside angel investors including Spacemaker founders Anders Kvåle and Håvard Haukeland.",
+            "quote_hash": "54093e60b4c63af9f503ee1aef5b791cfd7058d1b08eb8ef9495cd04e22faa88"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5b413013f1fd7e6a",
         "funding_insight_id": "FI-568706815472d154",
@@ -128,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-536d9e1eb424a584",
+        "source_url": "https://tech.eu/2026/10/15/solvera-raises-63m-to-scale-the-ai-native-engineering-firm/",
+        "source_title": "Solvera 融资 630 万美元，以扩展 AI 原生工程公司",
+        "source_content_hash": "e9625fe0ba6820269680860eddac1c4a579668541cd9174731bad54b362711d8",
+        "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures, alongside angel investors including Spacemaker founders Anders Kvåle and Håvard Haukeland.",
+        "quote_hash": "54093e60b4c63af9f503ee1aef5b791cfd7058d1b08eb8ef9495cd04e22faa88"
+      },
+      {
         "source_id": "FISRC-62e06e29d2d7be04",
         "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
         "source_title": "Metaview 完成 6000 万美元 C 轮融资",
@@ -161,6 +216,10 @@
         {
           "description": "Metaview 官方公告称其 2026 年 9 月完成 6,000 万美元 Series C，Seedcamp 为参与投资方之一。",
           "source_id": "B24-SEEDCAMP-METAVIEW"
+        },
+        {
+          "description": "融资来源记录：Solvera · 预种子轮 · 2026-10-15 · 本轮领投 · $6.3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-536d9e1eb424a584"
         },
         {
           "description": "融资来源记录：Metaview · C轮 · 2026-10-01 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -200,6 +259,14 @@
           "source_content_hash": "ee908027b705dc03df9928e218f5ca41ae7f8856d88837b785ff17e120be9b83",
           "quote": "Metaview has raised a $60M Series C led by Insight Partners, with participation from GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
           "quote_hash": "e7f36e1b8110c56a5be3639e18e7c38c570f33c5dba0af2f4b0fe94af0e29dba"
+        },
+        {
+          "source_id": "FISRC-536d9e1eb424a584",
+          "source_url": "https://tech.eu/2026/10/15/solvera-raises-63m-to-scale-the-ai-native-engineering-firm/",
+          "source_title": "Solvera 融资 630 万美元，以扩展 AI 原生工程公司",
+          "source_content_hash": "e9625fe0ba6820269680860eddac1c4a579668541cd9174731bad54b362711d8",
+          "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures, alongside angel investors including Spacemaker founders Anders Kvåle and Håvard Haukeland.",
+          "quote_hash": "54093e60b4c63af9f503ee1aef5b791cfd7058d1b08eb8ef9495cd04e22faa88"
         },
         {
           "source_id": "FISRC-62e06e29d2d7be04",

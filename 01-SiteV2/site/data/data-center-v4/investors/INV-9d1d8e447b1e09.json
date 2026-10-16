@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,32 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-05-19",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 2
     },
     "round_codes": [
       "other",
+      "pre_series_a",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-23d04479eff26b31",
+        "canonical_entity_id": "",
+        "name": "高维医药"
+      },
       {
         "entity_id": "EN-1032f7a4df33f629",
         "canonical_entity_id": "EN-1032f7a4df33f629",
@@ -92,6 +99,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c693138ba3319f27",
+        "funding_insight_id": "FI-1087e9c5c571801e",
+        "event_ids": [
+          "EV-6242ce5922918cf2"
+        ],
+        "company_entity_id": "EN-23d04479eff26b31",
+        "company_canonical_entity_id": "",
+        "company_name": "高维医药",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-83560e8d9be875e2",
+            "source_url": "https://feng.ifeng.com/c/8xDfr5FXcWg",
+            "source_title": "高维医药获数亿元Pre-A轮融资 聚焦AI制药_大风号",
+            "source_content_hash": "8c5fd22cdda4d9802083b960c9365a8b98c2b20a91be21fd9efce5767c3d141b",
+            "quote": "由华泰金斯瑞基金、东方嘉富联合领投",
+            "quote_hash": "2aed29959d4834229eadac0881a2157fa9b9f949d50b3bec5c3c3335925dd0a4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-89a7a81bf18d679e",
         "funding_insight_id": "FI-845e8798fb653c28",
@@ -208,6 +255,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-83560e8d9be875e2",
+        "source_url": "https://feng.ifeng.com/c/8xDfr5FXcWg",
+        "source_title": "高维医药获数亿元Pre-A轮融资 聚焦AI制药_大风号",
+        "source_content_hash": "8c5fd22cdda4d9802083b960c9365a8b98c2b20a91be21fd9efce5767c3d141b",
+        "quote": "由华泰金斯瑞基金、东方嘉富联合领投",
+        "quote_hash": "2aed29959d4834229eadac0881a2157fa9b9f949d50b3bec5c3c3335925dd0a4"
+      },
+      {
         "source_id": "FISRC-1b3adf614ab55007",
         "source_url": "https://news.pedaily.cn/202605/564066.shtml",
         "source_title": "拓深科技完成数亿元新一轮融资，深入布局算电协同赛道",
@@ -251,16 +306,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：高维医药 · Pre-A轮 · 2026-10-14 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-83560e8d9be875e2"
+        },
+        {
           "description": "融资来源记录：拓深科技 · 轮次未披露 · 2026-05-19 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1b3adf614ab55007"
         },
         {
           "description": "融资来源记录：千寻智能 · 其他融资 · 2026-02-24 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ee3064edf7c871f4"
-        },
-        {
-          "description": "融资来源记录：微纳核芯 · 历史轮次未披露 · 老股东继续加持。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b96684face6f5223"
         }
       ],
       "profile_type": "organization",
@@ -282,6 +337,14 @@
           "quote_hash": "b68e86a110993498669111638602a4357847a76d34d76958d435956b12d61f93"
         },
         {
+          "source_id": "FISRC-83560e8d9be875e2",
+          "source_url": "https://feng.ifeng.com/c/8xDfr5FXcWg",
+          "source_title": "高维医药获数亿元Pre-A轮融资 聚焦AI制药_大风号",
+          "source_content_hash": "8c5fd22cdda4d9802083b960c9365a8b98c2b20a91be21fd9efce5767c3d141b",
+          "quote": "由华泰金斯瑞基金、东方嘉富联合领投",
+          "quote_hash": "2aed29959d4834229eadac0881a2157fa9b9f949d50b3bec5c3c3335925dd0a4"
+        },
+        {
           "source_id": "FISRC-1b3adf614ab55007",
           "source_url": "https://news.pedaily.cn/202605/564066.shtml",
           "source_title": "拓深科技完成数亿元新一轮融资，深入布局算电协同赛道",
@@ -296,14 +359,6 @@
           "source_content_hash": "0ad2701645471c8d",
           "quote": "顺为资本、Prosperity7、达晨财智、柏睿资本、弘晖基金、华泰紫金、东方嘉富、千乘资本、广发信德等老股东全部选择继续大额认购",
           "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
-        },
-        {
-          "source_id": "FISRC-b96684face6f5223",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
-          "source_title": "微纳核芯完成超10亿元B轮系列融资",
-          "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
-          "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
-          "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
         }
       ],
       "last_verified_at": "2026-10-03"

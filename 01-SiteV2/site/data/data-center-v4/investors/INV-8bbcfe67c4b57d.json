@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,16 +62,18 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-05-15",
     "latest_disclosed_at": "2026-10-12",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 2
     },
     "round_codes": [
@@ -169,6 +171,38 @@
             "quote_hash": "5834c5ba243ef0633917ac76154b2c5b967c085df3dbe6e5017708196318f003"
           }
         ]
+      },
+      {
+        "activity_id": "IA-021fe652eaddacd9",
+        "funding_insight_id": "FI-bc8f734fd3f1e216",
+        "event_ids": [
+          "EV-99a8adda510d892e"
+        ],
+        "company_entity_id": "EN-68f07a3cc51325d6",
+        "company_canonical_entity_id": "",
+        "company_name": "模思智能",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东持续投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cb25587b8eec23eb",
+            "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
+            "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
+            "source_content_hash": "7783bfbf968aee5ae25bff88f5af09ab576699f56e999514defd9feba29d9f1e",
+            "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+            "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -187,6 +221,14 @@
         "source_content_hash": "fbab2d3a3502d2d8",
         "quote": "本轮融资由 元禾辰坤领投，博原资本、博世创投 等老股东追加投资， 元禾控股、金谷资本 等多家机构跟投。",
         "quote_hash": "5834c5ba243ef0633917ac76154b2c5b967c085df3dbe6e5017708196318f003"
+      },
+      {
+        "source_id": "FISRC-cb25587b8eec23eb",
+        "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
+        "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
+        "source_content_hash": "7783bfbf968aee5ae25bff88f5af09ab576699f56e999514defd9feba29d9f1e",
+        "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+        "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
       }
     ],
     "public_profile": {
@@ -220,6 +262,10 @@
         {
           "description": "融资来源记录：博银合创 · Pre-A轮 · 2026-05-15 · 本轮参投 · 3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-957ccf12eb78ad84"
+        },
+        {
+          "description": "融资来源记录：模思智能 · 历史轮次未披露 · 老股东持续投资。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cb25587b8eec23eb"
         }
       ],
       "profile_type": "organization",
@@ -271,6 +317,14 @@
           "source_content_hash": "fbab2d3a3502d2d8",
           "quote": "本轮融资由 元禾辰坤领投，博原资本、博世创投 等老股东追加投资， 元禾控股、金谷资本 等多家机构跟投。",
           "quote_hash": "5834c5ba243ef0633917ac76154b2c5b967c085df3dbe6e5017708196318f003"
+        },
+        {
+          "source_id": "FISRC-cb25587b8eec23eb",
+          "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
+          "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
+          "source_content_hash": "7783bfbf968aee5ae25bff88f5af09ab576699f56e999514defd9feba29d9f1e",
+          "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
+          "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
         }
       ],
       "last_verified_at": "2026-10-03"

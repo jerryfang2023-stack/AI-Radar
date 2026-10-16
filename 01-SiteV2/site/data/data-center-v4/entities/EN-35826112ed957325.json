@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,7 +63,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-66561ec28d8b1fec"
+      "EV-66561ec28d8b1fec",
+      "EV-1bcd99b49e30525b"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -71,10 +72,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-07",
-    "lastSeen": "2026-09-08",
+    "lastSeen": "2026-10-16",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-1bcd99b49e30525b"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
@@ -85,6 +88,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-1bcd99b49e30525b",
+        "dataDate": "2026-10-16",
+        "date": "2026-10-10",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "跑跳不再稀缺，能工作才算本事：2026具身智能机器人十强观察",
+        "displayTags": [],
+        "entityIds": [
+          "EN-35826112ed957325"
+        ]
+      },
       {
         "id": "EV-66561ec28d8b1fec",
         "dataDate": "2026-09-08",
@@ -567,7 +585,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-15"
+      "lastSeen": "2026-10-16"
     }
   ],
   "fde": [],

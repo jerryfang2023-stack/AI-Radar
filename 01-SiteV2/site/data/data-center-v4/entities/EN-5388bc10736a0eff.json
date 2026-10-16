@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c96705c69e11c520",
       "EV-29f2c76eb4f9b2d4",
       "EV-f7c48f02fd8618a2",
       "EV-1043d78cc040ab30",
@@ -109,12 +110,13 @@
       "EN-4f96127fdacbb405"
     ],
     "firstSeen": "2026-02-27",
-    "lastSeen": "2026-10-09",
+    "lastSeen": "2026-10-16",
     "relationIds": [
       "REL2-fc89e0f24571bef8"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-c96705c69e11c520",
         "EV-29f2c76eb4f9b2d4",
         "EV-f7c48f02fd8618a2",
         "EV-a6696955767a209e",
@@ -159,6 +161,122 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c96705c69e11c520",
+        "dataDate": "2026-10-16",
+        "date": "2026-10-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anew Labs：字节分拆AI制药，斩获20亿首轮融资_腾讯新闻",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-bc06be2cba2b2f2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-686a24d8c6122709",
+            "fundingInsightId": "FI-bbf0ff1638dafe21"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-bc06be2cba2b2f2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-db489fd5fe90dba2",
+            "fundingInsightId": "FI-bbf0ff1638dafe21"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-bc06be2cba2b2f2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a852c0f8c9e4b02f",
+            "fundingInsightId": "FI-bbf0ff1638dafe21"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-bc06be2cba2b2f2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e96377f6c1245956",
+            "fundingInsightId": "FI-bbf0ff1638dafe21"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-bc06be2cba2b2f2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ead68576df5c58b7",
+            "fundingInsightId": "FI-bbf0ff1638dafe21"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-bc06be2cba2b2f2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9bc5c418e141bb15",
+            "fundingInsightId": "FI-bbf0ff1638dafe21"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-bc06be2cba2b2f2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ace11858da8dbd65",
+            "fundingInsightId": "FI-bbf0ff1638dafe21"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-bc06be2cba2b2f2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b35ec1d0f3810795",
+            "fundingInsightId": "FI-bbf0ff1638dafe21"
+          }
+        ],
+        "entityIds": [
+          "EN-bc06be2cba2b2f2c",
+          "EN-9c8ae69b84f21a2e",
+          "EN-bbdefa2950f49882",
+          "EN-2b6e51bec93e86c1",
+          "EN-5388bc10736a0eff"
+        ]
+      },
       {
         "id": "EV-29f2c76eb4f9b2d4",
         "dataDate": "2026-10-09",
@@ -1277,6 +1395,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-44261cbca54b2cbb",
+        "EV-9585d406684e9c4a",
         "EV-2647001d6f3ed43d",
         "EV-9aa73f1620cd333f",
         "EV-02fb30b5a5ffbe8e",
@@ -1946,6 +2066,8 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-7c0378479c6745b0",
+        "EN-954adfa4d922fa30",
         "EN-090b6a7fd8cd8f35",
         "EN-3416b699209d67ee",
         "EN-5e815286bca59445",
