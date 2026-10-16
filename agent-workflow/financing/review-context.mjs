@@ -15,7 +15,24 @@ export function publicationReviewDelta(before,after) {
   return {subjects:compare(before.cards,after.cards),events:compare(before.event_cards,after.event_cards)};
 }
 
-export function writePublicationReviewContext({checkout,directory,base,head,date}) {
+export function originalLocators(card,evidenceRoot,catalog) {
+  const locators=[];
+  const inside=relative=>{const resolved=path.resolve(evidenceRoot,relative);return !path.relative(evidenceRoot,resolved).startsWith('..')&&fs.existsSync(resolved);};
+  for(const source of card.research_sources || []) {
+    if(!/^FISRC-[a-f0-9]+$/u.test(source.source_id || '') || !source.content_hash)continue;
+    const cache=`funding-research/${source.source_id}.json`;
+    if(inside(cache)) {
+      const record=JSON.parse(fs.readFileSync(path.join(evidenceRoot,cache),'utf8'));
+      if(record.content_hash===source.content_hash && record.body_clean)locators.push({path:cache,source_url:source.source_url,content_hash:source.content_hash});
+    }
+    for(const row of catalog.filter(row=>row.source_url===source.source_url&&row.content_hash===source.content_hash)) {
+      if(row.object_ref&&inside(row.object_ref))locators.push({path:row.object_ref,source_url:source.source_url,content_hash:source.content_hash});
+    }
+  }
+  return [...new Map(locators.map(row=>[row.path,row])).values()];
+}
+
+export function writePublicationReviewContext({checkout,directory,base,head,date,evidenceRoot}) {
   fs.mkdirSync(directory,{recursive:true});
   const baseFile=path.join(directory,'base-financing-catalog.json'),fd=fs.openSync(baseFile,'w',0o600);
   let result;try {result=spawnSync('git',['show',`${base}:${catalogPath}`],{cwd:checkout,stdio:['ignore',fd,'pipe'],encoding:'utf8',windowsHide:true});}finally{fs.closeSync(fd);}
@@ -29,10 +46,19 @@ export function writePublicationReviewContext({checkout,directory,base,head,date
     emit(`publication-delta/${kind}-${status}-${id}.json`,row);
   }
   const publication=JSON.parse(fs.readFileSync(path.join(checkout,`agent-workflow/reports/financing/${date}/publication.json`),'utf8'));
+  const required_originals={};
+  if(evidenceRoot) {
+    const catalog=fs.readFileSync(path.join(evidenceRoot,'catalog.jsonl'),'utf8').split(/\r?\n/u).filter(Boolean).map(line=>JSON.parse(line));
+    for(const card of [...delta.subjects.added,...delta.subjects.changed.map(row=>row.after)]) {
+      const locators=originalLocators(card,evidenceRoot,catalog);
+      if(!locators.length)throw new Error(`review_private_original_missing:${card.funding_insight_id}`);
+      required_originals[card.funding_insight_id]=locators;
+    }
+  }
   const summary={version:'FINANCING-PUBLICATION-REVIEW-CONTEXT-1',date,base_commit:base,head_commit:head,
     before:{subjects:before.cards.length,events:before.event_cards.length},after:{subjects:after.cards.length,events:after.event_cards.length},
     delta:Object.fromEntries(Object.entries(delta).map(([kind,rows])=>[kind,Object.fromEntries(Object.entries(rows).map(([status,items])=>[status,items.length]))])),
-    files,verification_queue_counts:publication.verification?.counts,
+    files,required_originals,verification_queue_counts:publication.verification?.counts,
     boundary:'Queue verification counts are not publication delta counts. Monitoring date is not financing announcement date. This packet is navigation and comparison metadata, not factual approval. Read captured originals and claims for every admitted addition or factual change. Catalog review exclusions/holds must remain excluded. Raw canonical verified status does not itself establish financing publication eligibility.',
     pending_publication:after.review?.publication_pending || [],excluded_count:after.review?.excluded?.length,pending_classification_count:after.review?.pending?.length};
   fs.writeFileSync(path.join(directory,'publication-review-context.json'),JSON.stringify(summary,null,2)+'\n',{mode:0o600});
