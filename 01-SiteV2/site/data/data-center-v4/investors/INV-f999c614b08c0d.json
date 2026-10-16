@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-04-22",
-    "latest_disclosed_at": "2026-04-22",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-412197ba0a228393",
+        "canonical_entity_id": "",
+        "name": "Ambio"
+      },
       {
         "entity_id": "EN-7d4e02d31a7eb0f8",
         "canonical_entity_id": "",
@@ -85,6 +90,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9277e00582822e46",
+        "funding_insight_id": "FI-1dc0e0f393335ccc",
+        "event_ids": [
+          "EV-67da47378d794e52"
+        ],
+        "company_entity_id": "EN-412197ba0a228393",
+        "company_canonical_entity_id": "",
+        "company_name": "Ambio",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€5.1 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 5100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "510 万欧元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5f0325b3c3ef259",
+            "source_url": "https://tech.eu/2026/10/15/from-slush-to-sustainable-materials-ambio-raises-eur51m-for-ai-powered-plastics-procurement/",
+            "source_title": "从Slush到可持续材料：Ambio为AI驱动的塑料采购筹集€5.1M",
+            "source_content_hash": "5714edc7ad56e13c8cfe94fa66d924a3e76d0246e127d17c0b4b1ef5b6e403b0",
+            "quote": "with participation from Montis and existing investor Lifeline Ventures",
+            "quote_hash": "0ef6baf9a2b6c6a35b8dd816455ffc62f83cd340bf65e7be8524c773ffabd627"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ddf79042cf7de711",
         "funding_insight_id": "FI-53d66d7fc03a96dc",
@@ -127,6 +172,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c5f0325b3c3ef259",
+        "source_url": "https://tech.eu/2026/10/15/from-slush-to-sustainable-materials-ambio-raises-eur51m-for-ai-powered-plastics-procurement/",
+        "source_title": "从Slush到可持续材料：Ambio为AI驱动的塑料采购筹集€5.1M",
+        "source_content_hash": "5714edc7ad56e13c8cfe94fa66d924a3e76d0246e127d17c0b4b1ef5b6e403b0",
+        "quote": "with participation from Montis and existing investor Lifeline Ventures",
+        "quote_hash": "0ef6baf9a2b6c6a35b8dd816455ffc62f83cd340bf65e7be8524c773ffabd627"
+      },
       {
         "source_id": "FISRC-7adc28a1053229b5",
         "source_url": "https://arcticstartup.com/realm-raises-4-5m/",
@@ -178,6 +231,10 @@
         {
           "description": "官网人员履历提及合伙人曾参与Oura、ICEYE、Supercell、Wolt、Sulapac和Solar Foods等企业；该清单不是完整投资组合。",
           "source_id": "lifeline_team"
+        },
+        {
+          "description": "融资来源记录：Ambio · 种子轮 · 2026-10-15 · 本轮参投 · €5.1 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c5f0325b3c3ef259"
         },
         {
           "description": "融资来源记录：Realm Technologies Oy · 种子轮 · 2026-04-22 · 本轮参投 · $4.5 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -292,6 +349,14 @@
           "source_content_hash": "b3599aeec4a9fa1943893a00bf507951e41376e463dba00df5fb87feda7d164d",
           "quote": "Lifeline Ventures is an early-stage venture capital firm founded by serial entrepreneurs.",
           "quote_hash": "6f49936348d0b5d461dc18941fbbe579ff6bd666ede0e8690c4aea22544dbded"
+        },
+        {
+          "source_id": "FISRC-c5f0325b3c3ef259",
+          "source_url": "https://tech.eu/2026/10/15/from-slush-to-sustainable-materials-ambio-raises-eur51m-for-ai-powered-plastics-procurement/",
+          "source_title": "从Slush到可持续材料：Ambio为AI驱动的塑料采购筹集€5.1M",
+          "source_content_hash": "5714edc7ad56e13c8cfe94fa66d924a3e76d0246e127d17c0b4b1ef5b6e403b0",
+          "quote": "with participation from Montis and existing investor Lifeline Ventures",
+          "quote_hash": "0ef6baf9a2b6c6a35b8dd816455ffc62f83cd340bf65e7be8524c773ffabd627"
         },
         {
           "source_id": "FISRC-7adc28a1053229b5",

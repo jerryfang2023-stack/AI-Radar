@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-24",
-    "latest_disclosed_at": "2026-09-24",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "pre_seed",
       "series_c"
     ],
     "portfolio_companies": [
@@ -82,9 +83,54 @@
         "entity_id": "EN-6ecf7f43c6c5a2b0",
         "canonical_entity_id": "",
         "name": "Basecamp Research"
+      },
+      {
+        "entity_id": "EN-6272c1931f96e1a7",
+        "canonical_entity_id": "",
+        "name": "Solvera"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-10caf9895ff415d5",
+        "funding_insight_id": "FI-e8917ea053bc2f16",
+        "event_ids": [
+          "EV-3a09e2f76f792423"
+        ],
+        "company_entity_id": "EN-6272c1931f96e1a7",
+        "company_canonical_entity_id": "",
+        "company_name": "Solvera",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$6.3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "630 万美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-536d9e1eb424a584",
+            "source_url": "https://tech.eu/2026/10/15/solvera-raises-63m-to-scale-the-ai-native-engineering-firm/",
+            "source_title": "Solvera 融资 630 万美元，以扩展 AI 原生工程公司",
+            "source_content_hash": "e9625fe0ba6820269680860eddac1c4a579668541cd9174731bad54b362711d8",
+            "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures, alongside angel investors including Spacemaker founders Anders Kvåle and Håvard Haukeland.",
+            "quote_hash": "54093e60b4c63af9f503ee1aef5b791cfd7058d1b08eb8ef9495cd04e22faa88"
+          }
+        ]
+      },
       {
         "activity_id": "IA-69303285464b2d3d",
         "funding_insight_id": "FI-d00cadc2bcc871e6",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-536d9e1eb424a584",
+        "source_url": "https://tech.eu/2026/10/15/solvera-raises-63m-to-scale-the-ai-native-engineering-firm/",
+        "source_title": "Solvera 融资 630 万美元，以扩展 AI 原生工程公司",
+        "source_content_hash": "e9625fe0ba6820269680860eddac1c4a579668541cd9174731bad54b362711d8",
+        "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures, alongside angel investors including Spacemaker founders Anders Kvåle and Håvard Haukeland.",
+        "quote_hash": "54093e60b4c63af9f503ee1aef5b791cfd7058d1b08eb8ef9495cd04e22faa88"
+      },
+      {
         "source_id": "FISRC-ecd2ea74974f4ff3",
         "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
         "source_title": "更正 -- Basecamp Research",
@@ -161,6 +215,10 @@
         {
           "description": "参与 Basecamp Research 的 1.4 亿美元 C 轮；融资公告列出 Inception Fund 为投资者之一。",
           "source_id": "FISRC-ecd2ea74974f4ff3"
+        },
+        {
+          "description": "融资来源记录：Solvera · 预种子轮 · 2026-10-15 · 本轮参投 · $6.3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-536d9e1eb424a584"
         }
       ],
       "contacts": [
@@ -188,6 +246,14 @@
           "source_content_hash": "4e9c66123d0f871688da11a6f6403edff9d86e25c822636aeda63c774ce1b4d4",
           "quote": "lio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI, and True Ventures. Funding will advance a pipeline of EDEN-designed therapeutics, starti",
           "quote_hash": "c3c8251039a0e0ec146a946ff8ffb69b9a5a4d9a40a8875183c076ef9284e671"
+        },
+        {
+          "source_id": "FISRC-536d9e1eb424a584",
+          "source_url": "https://tech.eu/2026/10/15/solvera-raises-63m-to-scale-the-ai-native-engineering-firm/",
+          "source_title": "Solvera 融资 630 万美元，以扩展 AI 原生工程公司",
+          "source_content_hash": "e9625fe0ba6820269680860eddac1c4a579668541cd9174731bad54b362711d8",
+          "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures, alongside angel investors including Spacemaker founders Anders Kvåle and Håvard Haukeland.",
+          "quote_hash": "54093e60b4c63af9f503ee1aef5b791cfd7058d1b08eb8ef9495cd04e22faa88"
         }
       ],
       "last_verified_at": "2026-10-03"

@@ -1,0 +1,56 @@
+{
+  "event_id": "EV-2ab0ebfbbebcd3e4",
+  "company_name": "NVIDIA",
+  "status": "blocked",
+  "problems": [
+    "deepseek_json_quality_failed:ambiguous_company_full_name_not_in_canonical_source"
+  ],
+  "queries": [
+    "\"NVIDIA\" official product customers",
+    "\"NVIDIA\" \"why we invested\""
+  ],
+  "attempts": [
+    {
+      "provider": "planner",
+      "query": "\"NVIDIA\" 2026 funding round investors",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"英伟达\" 1.5亿美元 funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"NVIDIA\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"NVIDIA\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://milkeninstitute.org/sites/default/files/2026-05/LeadingAgeAIAConversationNVIDIACEOJensenHuang_Transcript_GC26.pdf",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"英伟达\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"NVIDIA\" founders headquarters product",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}

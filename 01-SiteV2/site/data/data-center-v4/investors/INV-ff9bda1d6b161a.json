@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -74,7 +74,7 @@
     "latest_disclosed_at": "2026-10-12",
     "role_counts": {
       "historical_or_ambiguous": 5,
-      "lead": 1,
+      "lead": 2,
       "other_current_round": 1,
       "participant": 4
     },
@@ -102,6 +102,11 @@
         "name": "极佳视界"
       },
       {
+        "entity_id": "EN-68f07a3cc51325d6",
+        "canonical_entity_id": "",
+        "name": "模思智能"
+      },
+      {
         "entity_id": "EN-60d2cc785c19e818",
         "canonical_entity_id": "EN-60d2cc785c19e818",
         "name": "三启万物"
@@ -118,6 +123,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2ff2d99cf3a2bc62",
+        "funding_insight_id": "FI-bc8f734fd3f1e216",
+        "event_ids": [
+          "EV-99a8adda510d892e"
+        ],
+        "company_entity_id": "EN-68f07a3cc51325d6",
+        "company_canonical_entity_id": "",
+        "company_name": "模思智能",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-cb25587b8eec23eb",
+            "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
+            "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
+            "source_content_hash": "7783bfbf968aee5ae25bff88f5af09ab576699f56e999514defd9feba29d9f1e",
+            "quote": "由华控基金领投",
+            "quote_hash": "dddf43e430eba261cb2dab9a9da7b9d078ee88d475d5bd3b09e6574c69249f6a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-808d5076a0061006",
         "funding_insight_id": "FI-24db5bbc2d1045e9",
@@ -532,6 +577,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cb25587b8eec23eb",
+        "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
+        "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
+        "source_content_hash": "7783bfbf968aee5ae25bff88f5af09ab576699f56e999514defd9feba29d9f1e",
+        "quote": "由华控基金领投",
+        "quote_hash": "dddf43e430eba261cb2dab9a9da7b9d078ee88d475d5bd3b09e6574c69249f6a"
+      },
+      {
         "source_id": "FISRC-2b099c2278c91b1d",
         "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
         "source_title": "10亿！上海大模型创企拿下新融资",
@@ -704,16 +757,16 @@
           "source_id": "tcapital_award"
         },
         {
+          "description": "融资来源记录：模思智能 · Pre-A轮 · 2026-10-12 · 本轮领投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cb25587b8eec23eb"
+        },
+        {
           "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮领投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2b099c2278c91b1d"
         },
         {
           "description": "融资来源记录：息壤开物 · 多轮融资 · 2026-09-23 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-41f074703465b30a"
-        },
-        {
-          "description": "融资来源记录：北京词元无限科技有限公司 · 天使++轮 · 2026-07-27 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b6fa3ffcb3824907"
         }
       ],
       "contacts": [
@@ -796,6 +849,14 @@
           "quote_hash": "ae12d66b5c3cb38e140f5523646ded4a8e8275d0fa34ef15692dc2fa995c89d1"
         },
         {
+          "source_id": "FISRC-cb25587b8eec23eb",
+          "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
+          "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
+          "source_content_hash": "7783bfbf968aee5ae25bff88f5af09ab576699f56e999514defd9feba29d9f1e",
+          "quote": "由华控基金领投",
+          "quote_hash": "dddf43e430eba261cb2dab9a9da7b9d078ee88d475d5bd3b09e6574c69249f6a"
+        },
+        {
           "source_id": "FISRC-2b099c2278c91b1d",
           "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
           "source_title": "10亿！上海大模型创企拿下新融资",
@@ -810,14 +871,6 @@
           "source_content_hash": "5f3fdf302b68696b",
           "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
           "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
-        },
-        {
-          "source_id": "FISRC-b6fa3ffcb3824907",
-          "source_url": "https://finance.sina.com.cn/tech/roll/2026-07-27/doc-inikfhfi3135189.shtml",
-          "source_title": "词元无限完成天使++轮融资",
-          "source_content_hash": "66b21fb62de9e3a0d1216e38ebb67b4f3612f9bdceb36e29aafcad70a581b8a5",
-          "quote": "本轮融资由临芯投资领投，华控基金跟投。",
-          "quote_hash": "658b02692bcf24193cf84b4e395622cdb5b5d333505d4f30fee997cfe447212c"
         }
       ],
       "coverage_status": "researched",

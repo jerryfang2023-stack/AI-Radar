@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-06-30",
-    "latest_disclosed_at": "2026-06-30",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "pre_series_a",
       "series_a_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-23d04479eff26b31",
+        "canonical_entity_id": "",
+        "name": "高维医药"
+      },
       {
         "entity_id": "EN-7753b0382f29e6a8",
         "canonical_entity_id": "",
@@ -86,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-568a5fdb6b2f2290",
+        "funding_insight_id": "FI-1087e9c5c571801e",
+        "event_ids": [
+          "EV-6242ce5922918cf2"
+        ],
+        "company_entity_id": "EN-23d04479eff26b31",
+        "company_canonical_entity_id": "",
+        "company_name": "高维医药",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-83560e8d9be875e2",
+            "source_url": "https://feng.ifeng.com/c/8xDfr5FXcWg",
+            "source_title": "高维医药获数亿元Pre-A轮融资 聚焦AI制药_大风号",
+            "source_content_hash": "8c5fd22cdda4d9802083b960c9365a8b98c2b20a91be21fd9efce5767c3d141b",
+            "quote": "国方创投、瑞力投资、楚昌基金参与投资",
+            "quote_hash": "1f912bcd0909b23e54ef38a07c0889648fc47757056f20b92e0db5b7cdfaa034"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c19d185e7e9ed6bf",
         "funding_insight_id": "FI-ec899db298fe1efb",
@@ -161,6 +207,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-83560e8d9be875e2",
+        "source_url": "https://feng.ifeng.com/c/8xDfr5FXcWg",
+        "source_title": "高维医药获数亿元Pre-A轮融资 聚焦AI制药_大风号",
+        "source_content_hash": "8c5fd22cdda4d9802083b960c9365a8b98c2b20a91be21fd9efce5767c3d141b",
+        "quote": "国方创投、瑞力投资、楚昌基金参与投资",
+        "quote_hash": "1f912bcd0909b23e54ef38a07c0889648fc47757056f20b92e0db5b7cdfaa034"
+      },
+      {
         "source_id": "FISRC-137a48f19e1119b4",
         "source_url": "https://news.pedaily.cn/202606/565703.shtml",
         "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
@@ -226,6 +280,10 @@
           "source_id": "track-record"
         },
         {
+          "description": "融资来源记录：高维医药 · Pre-A轮 · 2026-10-14 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-83560e8d9be875e2"
+        },
+        {
           "description": "融资来源记录：耀速科技 · A+轮 · 2026-06-30 · 本轮参投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-137a48f19e1119b4"
         }
@@ -279,6 +337,14 @@
           "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
           "quote": "截至2025年末，国际国方累计管理规模超330亿元",
           "quote_hash": "cec81cbf782f3b0df54033aae2f33cc8a9d2931f3fac67a8c3cbe4f9ddc51cb8"
+        },
+        {
+          "source_id": "FISRC-83560e8d9be875e2",
+          "source_url": "https://feng.ifeng.com/c/8xDfr5FXcWg",
+          "source_title": "高维医药获数亿元Pre-A轮融资 聚焦AI制药_大风号",
+          "source_content_hash": "8c5fd22cdda4d9802083b960c9365a8b98c2b20a91be21fd9efce5767c3d141b",
+          "quote": "国方创投、瑞力投资、楚昌基金参与投资",
+          "quote_hash": "1f912bcd0909b23e54ef38a07c0889648fc47757056f20b92e0db5b7cdfaa034"
         },
         {
           "source_id": "FISRC-137a48f19e1119b4",

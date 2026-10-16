@@ -31979,7 +31979,339 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-15T04:13:10.404Z"
+    },
+    "EV-e260188a14619627": {
+      "id": "EV-e260188a14619627",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Holo 为小企业提供 AI 营销自动化平台，属企业通用 AI 的销售与营销应用。",
+      "input_hash": "77d0c834568b6e0f90b17260dd73a55db681773ecb2a6b62e5d3dec69f843775",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4e67a1c942c9027d",
+          "quote": "AI marketing platform Holo has raised €5 million in a seed funding round to further develop its marketing automation technology and reach more small businesses."
+        },
+        {
+          "source_id": "FISRC-1e7e3d8e53cc437b",
+          "quote": "Holo, the AI platform that plans and runs marketing for small businesses, has raised €5 million in a seed round led by Market One Capital"
+        },
+        {
+          "source_id": "FISRC-1e7e3d8e53cc437b",
+          "quote": "Holo plans and runs marketing for small businesses, from choosing channels to creating ads, social media posts, emails and SEO content in each business’s own voice."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-16T03:06:13.171Z"
+    },
+    "EV-44261cbca54b2cbb": {
+      "id": "EV-44261cbca54b2cbb",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Tamr 提供 AI 原生主数据管理平台，统一清洗企业数据，属数据平台与检索。",
+      "input_hash": "12d5c60e5397414676a554d1aaa9cb84612245626fdcc9eacc6ae2a7b3c5ad09",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-37e19e2fe69b962c",
+          "quote": "Tamr, a Boston-based master data management (MDM) platform"
+        },
+        {
+          "source_id": "FISRC-280e19e435c2cb5b",
+          "quote": "Tamr, the AI-native master data management platform"
+        },
+        {
+          "source_id": "FISRC-37e19e2fe69b962c",
+          "quote": "Tamr unifies, cleans, and enriches fragmented enterprise data scattered across CRM, ERP, and procurement systems, giving organisations a single source of truth."
+        },
+        {
+          "source_id": "FISRC-280e19e435c2cb5b",
+          "quote": "Recent updates include a Bring Your Own Agent architecture for low-code integration of custom AI agents, multi-domain mastering across products and locations, and enterprise knowledge graph functionality to surface cross-entity relationships."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-16T03:06:13.171Z"
+    },
+    "EV-93c28c0d26f7c393": {
+      "id": "EV-93c28c0d26f7c393",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "glasses",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "NIMO 主营面向消费者的 AI 眼镜，属消费 AI 硬件中的 AI 眼镜。",
+      "input_hash": "2cbf8d7e1c24217345d3e9d113d9278df3ab7df62d18e4fba0976cb6dcc04abb",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b01afd2bdbb2cc5f",
+          "quote": "NIMO去年7月才启动项目，今年4月就推出了首款AI眼镜。"
+        },
+        {
+          "source_id": "FISRC-b01afd2bdbb2cc5f",
+          "quote": "定价2499元，重量压到29克——号称业内首款不到30克的显示类AI眼镜。翻译、导航、微信消息提醒这些功能一个不少，关键是戴起来真能像普通眼镜那么轻。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-16T03:06:13.171Z"
+    },
+    "EV-99a8adda510d892e": {
+      "id": "EV-99a8adda510d892e",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business",
+        "consumer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "模思智能构建 MOSS 系列多模态基础模型并以 MaaS 开放 API，属通用与多模态基础模型。",
+      "input_hash": "2930b9f6ee3838f30be98dc321f30bd26b15d6bbb37c22678303a7bf5aa06766",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c973d741d7df1390",
+          "quote": "模思智能成立于2024年11月，是一家聚焦情境智能 (Context Intelligence)的多模态基础模型公司"
+        },
+        {
+          "source_id": "FISRC-c973d741d7df1390",
+          "quote": "这些现场体验背后，是模思智能正在构建的MOSS系列多模态基础模型。此次WAIC，模思智能将MOSS-TTS语音合成模型、MOSS-Transcribe-Diarize多说话人转写模型，以及最新发布的MOSS-VL-Realtime实时视觉理解模型集中带到现场。"
+        },
+        {
+          "source_id": "FISRC-c973d741d7df1390",
+          "quote": "在面向B端（企业）客户方面采用MaaS（模型即服务）模式，向企业客户开放模型API，输出语音、多模态底层原子能力，支持企业批量调用"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-16T03:06:13.171Z"
+    },
+    "EV-65154e5eb49c218b": {
+      "id": "EV-65154e5eb49c218b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "该公司运用AI与机器学习研发抗癌新疗法，主营药物研发，属生命科学行业AI。",
+      "input_hash": "e834b4894521557f8c54ebe99d226b648aa2992722d6dcbaa5e3e0707635a39f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3fd997e392fb69c1",
+          "quote": "临床阶段抗癌药物研发及技术企业IambicTherapeuticsInc．完成美国首次公开发行，融资1.5亿美元，发行价定在推介区间中点。"
+        },
+        {
+          "source_id": "FISRC-3fd997e392fb69c1",
+          "quote": "申报文件显示，Iambic运用人工智能与机器学习技术研发新疗法。公司将把本次IPO募集资金用于推进三款处于早期阶段的抗癌候选药物。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-16T03:06:13.889Z"
+    },
+    "EV-6242ce5922918cf2": {
+      "id": "EV-6242ce5922918cf2",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "公司以高维生物学加AI药物设计平台发现靶点并推进自研管线，主营药物研发。",
+      "input_hash": "91770c95cd5c4ac7d3e2345d197a0c7e68d02e064057986ce9264a2d2a9e1b1f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-83560e8d9be875e2",
+          "quote": "高维医药（杭州）有限公司成立于2022年，致力于打造“高维生物学＋AI药物设计”平台，为神经退行性疾病、肿瘤等重大疾病提供创新解决方案。"
+        },
+        {
+          "source_id": "FISRC-83560e8d9be875e2",
+          "quote": "依托自建的GROOVY平台发现全新靶点与作用机制"
+        },
+        {
+          "source_id": "FISRC-83560e8d9be875e2",
+          "quote": "其核心管线GW-01是公司AI靶点发现平台首个进入临床的全球首创小分子药物，靶向Notch通路激活的癌症"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-16T03:06:13.889Z"
+    },
+    "EV-9585d406684e9c4a": {
+      "id": "EV-9585d406684e9c4a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Uvi为企业AI智能体提供连接内部数据源的上下文推理层与知识图谱，属数据平台。",
+      "input_hash": "f1429063931432159cf391ef2e805a8525488262759cd97436c0522a23ee0162",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-efed3f7e2e505e43",
+          "quote": "Uvi, a startup that provides company knowledge to AI agents, has emerged from stealth with $7.5 million in seed funding."
+        },
+        {
+          "source_id": "FISRC-8f60534aa7e0f6bc",
+          "quote": "Uvi is building a \"context reasoning layer\" that each company owns, a unified institutional memory every AI tool can tap."
+        },
+        {
+          "source_id": "FISRC-9da06b15f2724887",
+          "quote": "Its platform links Slack, Jira, Confluence, Salesforce, code repositories and meeting notes, building a knowledge graph that maps decisions, dependencies and terminology."
+        },
+        {
+          "source_id": "FISRC-efed3f7e2e505e43",
+          "quote": "Uvi provides a software layer that enables AI agents to access and understand internal company data from sources like Slack, Jira, Confluence, and codebases."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-16T03:06:13.889Z"
+    },
+    "EV-3a09e2f76f792423": {
+      "id": "EV-3a09e2f76f792423",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "property",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Solvera以AI智能体自动化建筑机电设计并作为工程责任方交付设计服务，属建筑行业AI。",
+      "input_hash": "9ed221c7a353875c6d00c4aae92c1f4450439fd700457b8c5424b297eb405ffb",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-342783e341e84ea5",
+          "quote": "Solvera, an Oslo-based AI-native engineering firm for the construction industry, has raised $6.3 million in a pre-seed funding round."
+        },
+        {
+          "source_id": "FISRC-342783e341e84ea5",
+          "quote": "The startup, which operates as an engineering firm of record rather than a software vendor, aims to automate mechanical, electrical, and plumbing (MEP) design processes using proprietary AI agents."
+        },
+        {
+          "source_id": "FISRC-ccd8e12baa5374e7",
+          "quote": "Rather than sell software licences or bill consulting hours, Solvera acts as the engineering firm of record. It provides end-to-end services — from initial requirements through to construction-ready designs — using purpose-built AI agents to automate a growing share of the work while human engineers handle judgement."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-16T03:06:13.889Z"
+    },
+    "EV-67da47378d794e52": {
+      "id": "EV-67da47378d794e52",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Ambio提供AI原生的再生塑料端到端采购平台，属电商零售与供应链行业AI。",
+      "input_hash": "54935c96140ab8ca44c87d5a41ccb99b06ebc20661a23e9fac8b653ac1f697b1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e8d2340792a76c2f",
+          "quote": "Ambio is an AI-native, end-to-end procurement solution covering the entire purchasing cycle for recycled plastics — from material sourcing to long-term supply."
+        },
+        {
+          "source_id": "FISRC-fe67225d32eafb35",
+          "quote": "To meet this demand, the team built an AI-native, end-to-end procurement solution: verified materials, structured quality data, and one accountable partner from the first sample to long-term deliveries."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-16T03:06:13.889Z"
+    },
+    "EV-0c6afd346f19b0a6": {
+      "id": "EV-0c6afd346f19b0a6",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "wellness",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0
+      ],
+      "rationale": "Matters面向个人消费者提供AI驱动的消费银行与储蓄管理平台，属个人生活管理。",
+      "input_hash": "9ba8ff13cb19fa260b8d03c11734ab6f10a13c323d0e6e45dad660986cd00dee",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-14492dfd96882b8b",
+          "quote": "AI-powered personal finance startup Matters has emerged from stealth with $5 million in pre-seed funding to develop a consumer banking platform focused on helping users manage their spending and increase their savings."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-16T03:06:13.889Z"
     }
   },
-  "generated_at": "2026-10-15T04:13:10.404Z"
+  "generated_at": "2026-10-16T03:06:13.889Z"
 }

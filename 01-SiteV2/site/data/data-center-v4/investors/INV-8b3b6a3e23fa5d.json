@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-06",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "seed",
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-412197ba0a228393",
+        "canonical_entity_id": "",
+        "name": "Ambio"
+      },
       {
         "entity_id": "EN-8744077cb9056031",
         "canonical_entity_id": "",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-262d79ed012659cc",
+        "funding_insight_id": "FI-1dc0e0f393335ccc",
+        "event_ids": [
+          "EV-67da47378d794e52"
+        ],
+        "company_entity_id": "EN-412197ba0a228393",
+        "company_canonical_entity_id": "",
+        "company_name": "Ambio",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€5.1 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 5100000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "510 万欧元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5f0325b3c3ef259",
+            "source_url": "https://tech.eu/2026/10/15/from-slush-to-sustainable-materials-ambio-raises-eur51m-for-ai-powered-plastics-procurement/",
+            "source_title": "从Slush到可持续材料：Ambio为AI驱动的塑料采购筹集€5.1M",
+            "source_content_hash": "5714edc7ad56e13c8cfe94fa66d924a3e76d0246e127d17c0b4b1ef5b6e403b0",
+            "quote": "has raised a €5.1 million seed round led by b2venture",
+            "quote_hash": "a04ace2ca240a9221578046e572b0087fc18d79cc87239413b655cfbd1536879"
+          }
+        ]
+      },
       {
         "activity_id": "IA-24cc27a9c6be123c",
         "funding_insight_id": "FI-f0a9463c47929218",
@@ -128,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c5f0325b3c3ef259",
+        "source_url": "https://tech.eu/2026/10/15/from-slush-to-sustainable-materials-ambio-raises-eur51m-for-ai-powered-plastics-procurement/",
+        "source_title": "从Slush到可持续材料：Ambio为AI驱动的塑料采购筹集€5.1M",
+        "source_content_hash": "5714edc7ad56e13c8cfe94fa66d924a3e76d0246e127d17c0b4b1ef5b6e403b0",
+        "quote": "has raised a €5.1 million seed round led by b2venture",
+        "quote_hash": "a04ace2ca240a9221578046e572b0087fc18d79cc87239413b655cfbd1536879"
+      },
+      {
         "source_id": "FISRC-360cd6e723b3bc05",
         "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",
         "source_title": "自主B2B贸易获提振，Procuros融资€20M",
@@ -141,10 +196,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "b2venture 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "b2venture 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Ambio · 种子轮 · 2026-10-15 · 本轮领投 · €5.1 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c5f0325b3c3ef259"
+        },
         {
           "description": "融资来源记录：Procuros · A轮 · 2026-10-06 · 本轮参投 · €20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-360cd6e723b3bc05"
@@ -152,6 +211,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-c5f0325b3c3ef259",
+          "source_url": "https://tech.eu/2026/10/15/from-slush-to-sustainable-materials-ambio-raises-eur51m-for-ai-powered-plastics-procurement/",
+          "source_title": "从Slush到可持续材料：Ambio为AI驱动的塑料采购筹集€5.1M",
+          "source_content_hash": "5714edc7ad56e13c8cfe94fa66d924a3e76d0246e127d17c0b4b1ef5b6e403b0",
+          "quote": "has raised a €5.1 million seed round led by b2venture",
+          "quote_hash": "a04ace2ca240a9221578046e572b0087fc18d79cc87239413b655cfbd1536879"
+        },
         {
           "source_id": "FISRC-360cd6e723b3bc05",
           "source_url": "https://tech.eu/2026/10/06/autonomous-b2b-trade-gets-a-boost-as-procuros-raises-eur20m/",

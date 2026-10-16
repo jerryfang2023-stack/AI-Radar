@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-15",
-    "currentDate": "2026-10-15",
-    "eventCount": 4138,
+    "latestDataDate": "2026-10-16",
+    "currentDate": "2026-10-16",
+    "eventCount": 4153,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -75,7 +75,7 @@
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "multi_round",
@@ -94,6 +94,11 @@
         "entity_id": "EN-55c37c5c0b75471a",
         "canonical_entity_id": "",
         "name": "开放传神（OpenCSG）"
+      },
+      {
+        "entity_id": "EN-68f07a3cc51325d6",
+        "canonical_entity_id": "",
+        "name": "模思智能"
       },
       {
         "entity_id": "EN-2a5cec351194b94a",
@@ -117,6 +122,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-30f9fad61e8c9548",
+        "funding_insight_id": "FI-bc8f734fd3f1e216",
+        "event_ids": [
+          "EV-99a8adda510d892e"
+        ],
+        "company_entity_id": "EN-68f07a3cc51325d6",
+        "company_canonical_entity_id": "",
+        "company_name": "模思智能",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cb25587b8eec23eb",
+            "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
+            "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
+            "source_content_hash": "7783bfbf968aee5ae25bff88f5af09ab576699f56e999514defd9feba29d9f1e",
+            "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+            "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1041160dab05b92e",
         "funding_insight_id": "FI-24db5bbc2d1045e9",
@@ -410,6 +455,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cb25587b8eec23eb",
+        "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
+        "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
+        "source_content_hash": "7783bfbf968aee5ae25bff88f5af09ab576699f56e999514defd9feba29d9f1e",
+        "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+        "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+      },
+      {
         "source_id": "FISRC-2b099c2278c91b1d",
         "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
         "source_title": "10亿！上海大模型创企拿下新融资",
@@ -511,16 +564,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：模思智能 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cb25587b8eec23eb"
+        },
+        {
           "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2b099c2278c91b1d"
         },
         {
           "description": "融资来源记录：北京清醒异构科技有限公司 · A+轮 · 2026-09-24 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-735024582f88eccf"
-        },
-        {
-          "description": "融资来源记录：开放传神（OpenCSG） · Pre-A轮 · 2026-08-31 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ed4f088f02c38455"
         }
       ],
       "contacts": [],
@@ -550,6 +603,14 @@
           "quote_hash": "31b528afc720d8943b4421f2618cdec97169b6b00e81a8704e594abd40f5f39e"
         },
         {
+          "source_id": "FISRC-cb25587b8eec23eb",
+          "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
+          "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
+          "source_content_hash": "7783bfbf968aee5ae25bff88f5af09ab576699f56e999514defd9feba29d9f1e",
+          "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
+          "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
+        },
+        {
           "source_id": "FISRC-2b099c2278c91b1d",
           "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
           "source_title": "10亿！上海大模型创企拿下新融资",
@@ -564,14 +625,6 @@
           "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
           "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
           "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
-        },
-        {
-          "source_id": "FISRC-ed4f088f02c38455",
-          "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
-          "source_title": "OpenCSG完成数亿元Pre-A轮融资",
-          "source_content_hash": "4fa5b4b2071cbe25f6578f34ac0b632b0cd5ffb051655b692b67b3d70070ee5c",
-          "quote": "本轮融资由静安资本、市北高新、徐汇资本、黄海金控等共同参与。",
-          "quote_hash": "3a3539b13795473cf4cac7e484583e146dd047dd522351c629ff4d34202bc86f"
         }
       ],
       "last_verified_at": "2026-10-03",
