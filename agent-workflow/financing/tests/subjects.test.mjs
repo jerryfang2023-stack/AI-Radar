@@ -38,6 +38,20 @@ test('explicit subject aliases join old identities; unrelated businesses sharing
  assert.deepEqual(out.event_cards.filter(c=>c.company.application_entity_id==='new-app').map(c=>c.company.name),['Brand','Brand']);
 });
 
+test('reviewed event bindings survive regenerated card IDs without guessing identity',()=>{
+ const first=card('new-first','Acme','2026-01-01','seed',10),copy=card('new-copy','Acme','2026-02-01','seed',10);
+ first.triggered_by_event_id='EV-stable-first';copy.triggered_by_event_id='EV-stable-copy';
+ const review={duplicate_rounds:[{canonical_id:'old-first',duplicate_ids:['old-copy'],canonical_event_id:'EV-stable-first',duplicate_event_ids:['EV-stable-copy'],reason:'Same original round, reviewed before identity projection regenerated IDs',source_url:'https://example.org/first'}]};
+ const out=buildFundingSubjects([first,copy],review);
+ assert.equal(out.cards.length,1);assert.equal(out.event_cards.length,1);
+ assert.equal(out.cards[0].financing.cumulative_amount.known_round_totals[0].value,10);
+ assert.equal(out.aliases['new-copy'],'new-first');
+ assert.deepEqual(new Set(out.cards[0].source_event_ids),new Set(['EV-stable-first','EV-stable-copy']));
+ assert.throws(()=>buildFundingSubjects([first,{...copy,company:{...copy.company,application_entity_id:'Other'}}],review),/subject_mismatch/);
+ assert.throws(()=>buildFundingSubjects([first,copy,{...copy,funding_insight_id:'ambiguous'}],review),/event_ambiguous/);
+ assert.throws(()=>buildFundingSubjects([first,copy],{duplicate_rounds:[{...review.duplicate_rounds[0],canonical_id:'new-copy'}]}),/binding_conflict/);
+});
+
 // Real duplicate identities found in the 2026-10-06 public catalog.
 test('reviewed financing duplicates collapse subjects without dropping distinct rounds or old links',()=>{
  const source=JSON.parse(fs.readFileSync(new URL('../../../01-SiteV2/site/data/funding-insights-v1.json',import.meta.url))).cards;

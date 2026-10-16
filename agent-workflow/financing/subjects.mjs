@@ -16,12 +16,23 @@ export function buildFundingSubjects(input, review = {}) {
   const originals = new Map(input.map(c => [c.funding_insight_id, c]));
   const duplicateIds = new Set();
   const events = new Map(input.map(c => [c.funding_insight_id, structuredClone(c)]));
+  const reviewedEventCard = eventId => {
+    if (!eventId) return null;
+    const matches = input.filter(card => card.triggered_by_event_id === eventId);
+    if (matches.length > 1) throw new Error('reviewed_duplicate_event_ambiguous');
+    return matches[0] || null;
+  };
   for (const row of review.duplicate_rounds || []) {
     if (!row.reason || !row.source_url || !row.canonical_id || !row.duplicate_ids?.length) throw new Error('invalid_reviewed_duplicate_round');
-    const canonical = events.get(row.canonical_id);
+    const boundCanonical = reviewedEventCard(row.canonical_event_id);
+    if (events.has(row.canonical_id) && boundCanonical && boundCanonical.funding_insight_id !== row.canonical_id) throw new Error('reviewed_duplicate_canonical_binding_conflict');
+    const canonical = events.get(boundCanonical?.funding_insight_id || row.canonical_id);
     if (!canonical) continue;
-    for (const id of row.duplicate_ids) {
+    if (row.duplicate_event_ids && !Array.isArray(row.duplicate_event_ids)) throw new Error('invalid_reviewed_duplicate_events');
+    const duplicateIdsForRow = new Set([...row.duplicate_ids, ...(row.duplicate_event_ids || []).map(id => reviewedEventCard(id)?.funding_insight_id).filter(Boolean)]);
+    for (const id of duplicateIdsForRow) {
       const duplicate = originals.get(id);if (!duplicate) continue;
+      if (id === canonical.funding_insight_id) throw new Error('reviewed_duplicate_points_to_canonical');
       if (fundingSubjectKey(duplicate,review) !== fundingSubjectKey(canonical,review)) throw new Error('duplicate_round_subject_mismatch');
       canonical.source_event_ids = [...new Set([canonical.triggered_by_event_id,...canonical.source_event_ids||[],duplicate.triggered_by_event_id,...duplicate.source_event_ids||[]])];
       canonical.source_card_ids = [...new Set([canonical.funding_insight_id,...canonical.source_card_ids||[],id])];
