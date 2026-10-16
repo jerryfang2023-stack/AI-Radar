@@ -94,11 +94,11 @@ test("writes invalidate snapshots and full archives are always permission-checke
 test("home prefetch warms common lists without duplicate network calls", async () => {
   const f = fixture();
   const pending = f.api.prefetchCommunity();
-  assert.equal(f.requests.length, 4);
-  for (let index = 0; index < 4; index += 1) f.reply(index, { value: index });
+  assert.equal(f.requests.length, 3);
+  for (let index = 0; index < 3; index += 1) f.reply(index, { value: index });
   await pending;
   await f.api.prefetchCommunity();
-  assert.equal(f.requests.length, 4);
+  assert.equal(f.requests.length, 3);
 });
 
 test("a read racing a write cannot restore the pre-write cache", async () => {

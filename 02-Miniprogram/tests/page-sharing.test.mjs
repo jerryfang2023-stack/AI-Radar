@@ -21,7 +21,7 @@ test("builds deep links for every community child page without leaking unknown o
     ["pages/community-program/index", { type: "archive", id: "issue-14", token: "secret" }, "/pages/community-program/index?type=archive&id=issue-14"],
     ["pages/community-points/index", { mode: "rules" }, "/pages/community-points/index?mode=rules"],
     ["pages/community-points/index", { season: "season-2", memberId: 99 }, "/pages/community-points/index?season=season-2"],
-    ["pages/community-token/index", { token: "secret" }, "/pages/community-token/index"],
+    ["pages/community-token/index", { token: "secret" }, "/pages/community/index"],
     ["pages/community-graph/index", { mode: "member", id: 42 }, "/pages/community-graph/index?mode=member&id=42"],
   ];
   for (const [route, options, path] of cases) {

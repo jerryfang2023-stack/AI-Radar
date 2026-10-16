@@ -146,7 +146,7 @@ test("homepage ignores retired bounty fields from historical service responses",
   const template = fs.readFileSync("miniprogram/pages/community/index.wxml", "utf8");
   assert.doesNotMatch(template, /bounty-feature|community-bounty/);
   assert.doesNotMatch(template, /发起问题，与成员一起寻找答案/);
-  assert.match(template, /data-url="\/pages\/community-token\/index" bindtap="openProtected">Token 权益/);
+  assert.doesNotMatch(template, /community-token|Token 权益/);
 });
 
 test("protected reader renders server sections and clears them when access is revoked", async () => {

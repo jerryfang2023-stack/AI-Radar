@@ -7,7 +7,7 @@ const PAGE_SHARES = {
   "pages/community/index": { title: "观澜 AI 社群" },
   "pages/community-program/index": { title: "观澜 AI 分享实录", keys: ["type", "id", "speaker", "tab"] },
   "pages/community-points/index": { title: "观澜 AI 积分榜", keys: ["mode", "season"] },
-  "pages/community-token/index": { title: "观澜 AI Token 权益" },
+  "pages/community-token/index": { title: "观澜 AI 社群", target: "pages/community/index" },
   "pages/community-graph/index": { title: "观澜 AI 角色图谱", keys: ["mode", "tab", "id"] },
   "pages/invite/index": { title: "邀请你加入观澜 AI", keys: ["inviter"] },
 };
@@ -22,7 +22,7 @@ function sharePayload(page = {}) {
   const configured = PAGE_SHARES[route];
   // Private/settings screens remain share-capable, but share the public front door
   // rather than account state, drafts, authorization codes or edit parameters.
-  const target = configured ? route : "pages/terminal/index";
+  const target = configured ? (configured.target || route) : "pages/terminal/index";
   const query = configured ? shareQuery(page.__shareOptions, configured.keys) : "";
   return {
     title: configured?.title || DEFAULT_TITLE,

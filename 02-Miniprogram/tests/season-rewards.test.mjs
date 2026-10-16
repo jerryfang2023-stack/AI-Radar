@@ -47,28 +47,22 @@ test("season tabs discard stale responses and preserve the selected detail/share
   assert.equal(navigation.at(-1), "stopped");
 });
 
-test("season and Token pages require membership and never invent granted rewards", async () => {
-  for (const name of ["community-points", "community-token"]) {
-    let calls = 0;
-    const { page } = harness(name, () => { calls++; }, false);
-    await page.onLoad(); assert.equal(calls, 0);
-  }
-  let fail = false;
-  const { page } = harness("community-token", async () => {
-    if (fail) throw new Error("Revoked");
-    return { pool: { amount: null, status: "draft" }, reward: { amount: null, status: "pending", issuedAt: "" }, myPoints: 0 };
-  });
-  await page.onLoad(); assert.equal(page.data.reward.amount, null);
-  assert.equal(page.data.rulesOpen, true);
-  page.toggleRules(); assert.equal(page.data.rulesOpen, false);
-  fail = true; await page.refresh(); assert.equal(page.data.pool, null);
-  const template = fs.readFileSync("miniprogram/pages/community-token/index.wxml", "utf8");
-  assert.doesNotMatch(template, /兑换|折扣|bindtap="claim/);
+test("season points require membership", async () => {
+  let calls = 0;
+  const { page } = harness("community-points", () => { calls++; }, false);
+  await page.onLoad(); assert.equal(calls, 0);
 });
 
-test("Token amounts use thousands separators and preserve missing values", async () => {
-  const { page } = harness("community-token", async () => ({ pool: { amount: 1000000000, start: "2026-09-14", end: "2026-10-10" }, reward: { amount: 1234567, issuedAt: "" } }));
-  await page.onLoad();
-  assert.equal(page.data.poolAmount, "1,000,000,000");
-  assert.equal(page.data.rewardAmount, "1,234,567");
+test("retired Token links return to community without requesting benefits", () => {
+  let page;
+  const navigations = [];
+  vm.runInNewContext(fs.readFileSync("miniprogram/pages/community-token/index.js", "utf8"), {
+    Page(config) { page = config; },
+    require() { throw new Error("Retired page must not load protected data"); },
+    wx: { switchTab({ url }) { navigations.push(url); } },
+  });
+  page.onLoad();
+  assert.deepEqual(navigations, ["/pages/community/index"]);
+  assert.doesNotMatch(fs.readFileSync("miniprogram/pages/community/index.wxml", "utf8"), /community-token|Token 权益/);
+  assert.doesNotMatch(fs.readFileSync("miniprogram/utils/payment.js", "utf8"), /token-benefits/);
 });
