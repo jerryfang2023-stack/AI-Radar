@@ -2,6 +2,10 @@
 set -euo pipefail
 umask 077
 export PATH=/opt/guanlan-financing-tools/node/bin:/usr/bin:/bin
+case "$(gh api --help)" in
+  *--slurp*) ;;
+  *) printf '%s\n' 'Financing runtime requires a GitHub CLI supporting gh api --paginate --slurp; install the verified task CLI before running.' >&2; exit 1 ;;
+esac
 export GUANLAN_FINANCING_RUNTIME=/srv/guanlan-financing/runtime
 export GUANLAN_EVIDENCE_BACKUP_ROOT=/srv/guanlan-financing/private-evidence/store
 export HERMES_HOME=/srv/guanlan-financing/hermes-home
