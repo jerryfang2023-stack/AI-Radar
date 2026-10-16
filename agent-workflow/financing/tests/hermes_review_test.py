@@ -8,6 +8,26 @@ spec=importlib.util.spec_from_file_location('hermes_review',Path(__file__).paren
 review=importlib.util.module_from_spec(spec); spec.loader.exec_module(review)
 
 class ReadBoundaryTests(unittest.TestCase):
+    def test_catalog_search_reads_beyond_the_old_prefix_limit(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            (root/'catalog.json').write_text('padding\n'*30000+'Uvi 模思智能 Tamr\n',encoding='utf-8')
+            found=review.find_files({'repo':root.resolve()},{'glob':'catalog.json','contains':'模思智能'})
+            self.assertEqual(found['matches'],['catalog.json'])
+            self.assertEqual(found['match_locations'],[{'path':'catalog.json','line':30001}])
+            self.assertTrue(found['search_complete'])
+            excerpt=review.read_file({'repo':root.resolve()},{'path':'catalog.json','offset':30001,'limit':1})
+            self.assertIn('Uvi 模思智能 Tamr',excerpt['lines'][0])
+            self.assertTrue(review.find_files({'repo':root.resolve()},{'glob':'catalog.json','contains':'absent'})['search_complete'])
+
+    def test_incomplete_search_cannot_prove_absence(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            (root/'broken.json').write_bytes(bytes([255]))
+            result=review.find_files({'repo':root.resolve()},{'glob':'*.json','contains':'Uvi'})
+            self.assertFalse(result['search_complete'])
+            self.assertEqual(result['unreadable'],['broken.json'])
+
     def test_review_budget_covers_actual_publication_changes(self):
         self.assertGreaterEqual(review.review_iteration_budget({}),96)
         self.assertEqual(review.review_iteration_budget({'delta':{'subjects':{'added':7,'changed':2}}}),104)
