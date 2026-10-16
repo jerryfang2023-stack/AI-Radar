@@ -3,11 +3,44 @@ from pathlib import Path
 import tempfile
 import unittest
 import os
+import json
 
 spec=importlib.util.spec_from_file_location('hermes_review',Path(__file__).parents[1]/'hermes-review.py')
 review=importlib.util.module_from_spec(spec); spec.loader.exec_module(review)
 
 class ReadBoundaryTests(unittest.TestCase):
+    def test_single_final_json_can_follow_explanation_or_fence(self):
+        expected={'verdict':'approved','checks':{'sources':True}}
+        body=json.dumps(expected)
+        for text in [body,'Review complete.\n'+body,'```json\n'+body+'\n```','Review complete.\n```json\n'+body+'\n```']:
+            self.assertEqual(review.parse_review_response(text),expected)
+
+    def test_multiple_incomplete_or_trailing_decisions_are_rejected(self):
+        for text in ['{"verdict":"hold"}\n{"verdict":"approved"}', '{"verdict":"approved"', '{"verdict":"approved"}\nActually hold', 'approved']:
+            with self.assertRaises(ValueError):
+                review.parse_review_response(text)
+
+    def test_recovered_output_preserves_identity_completion_and_read_gates(self):
+        decision={'date':'2026-10-16','head_sha':'abc','verdict':'approved','checks':{'sources':True}}
+        result={'completed':True,'final_response':'Review complete.\n'+json.dumps(decision)}
+        context={'date':'2026-10-16','head_commit':'abc','required_originals':{'FI-a':[{'path':'objects/a.txt'}]}}
+        audit={'verdict':'unknown','reads':[{'root':'evidence','path':'objects/a.txt'}]}
+        with tempfile.TemporaryDirectory() as temp:
+            target=Path(temp)/'result.json'
+            for patch in [{'completed':False},{'partial':True},{'failed':True},{'interrupted':True}]:
+                with self.assertRaisesRegex(RuntimeError,'incomplete'):
+                    review.finalize_review({**result,**patch},{},context,dict(audit),target)
+            with self.assertRaisesRegex(RuntimeError,'identity_mismatch'):
+                review.finalize_review(result,{}, {**context,'head_commit':'different'},dict(audit),target)
+            with self.assertRaisesRegex(RuntimeError,'without_reading'):
+                review.finalize_review(result,{},context,{'reads':[]},target)
+            with self.assertRaisesRegex(RuntimeError,'required_originals'):
+                review.finalize_review(result,{},context,{'reads':[{'root':'repo','path':'packet.json'}]},target)
+            self.assertFalse(target.exists())
+            self.assertEqual(review.finalize_review(result,{},context,dict(audit),target),decision)
+            with self.assertRaises(FileExistsError):
+                review.finalize_review(result,{},context,dict(audit),target)
+
     def test_catalog_search_reads_beyond_the_old_prefix_limit(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp)
