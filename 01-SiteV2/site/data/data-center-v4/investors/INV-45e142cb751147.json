@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "",
     "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
@@ -108,6 +108,38 @@
             "quote_hash": "5f9d69b580b211e93300cc2c334160b1e5b55bf816b913072d04c40f9a51e303"
           }
         ]
+      },
+      {
+        "activity_id": "IA-99b33f77aa255421",
+        "funding_insight_id": "FI-858f454daf4ee906",
+        "event_ids": [
+          "EV-61c9891d791417be"
+        ],
+        "company_entity_id": "EN-79648183530ff7c5",
+        "company_canonical_entity_id": "",
+        "company_name": "Othello",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a6e1e76d3e6bb0dc",
+            "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+            "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+            "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+            "quote": "Sentry co-founder David Cramer",
+            "quote_hash": "011900067682290b6582f18edfa6f4e41e7203ae85611b9bc33f10e36e7f305c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -118,6 +150,14 @@
         "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
         "quote": "a group of incredible angels behind foundational developer tools and AI products: David Cramer and Chris Jennings (Sentry)",
         "quote_hash": "5f9d69b580b211e93300cc2c334160b1e5b55bf816b913072d04c40f9a51e303"
+      },
+      {
+        "source_id": "FISRC-a6e1e76d3e6bb0dc",
+        "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+        "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+        "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+        "quote": "Sentry co-founder David Cramer",
+        "quote_hash": "011900067682290b6582f18edfa6f4e41e7203ae85611b9bc33f10e36e7f305c"
       }
     ],
     "public_profile": {
@@ -152,6 +192,10 @@
         {
           "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（Sentry）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9fd6ba5210b37fed"
+        },
+        {
+          "description": "融资来源记录：Othello · 历史轮次未披露 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a6e1e76d3e6bb0dc"
         }
       ],
       "sources": [
@@ -186,6 +230,14 @@
           "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
           "quote": "a group of incredible angels behind foundational developer tools and AI products: David Cramer and Chris Jennings (Sentry)",
           "quote_hash": "5f9d69b580b211e93300cc2c334160b1e5b55bf816b913072d04c40f9a51e303"
+        },
+        {
+          "source_id": "FISRC-a6e1e76d3e6bb0dc",
+          "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+          "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+          "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+          "quote": "Sentry co-founder David Cramer",
+          "quote_hash": "011900067682290b6582f18edfa6f4e41e7203ae85611b9bc33f10e36e7f305c"
         }
       ],
       "last_verified_at": "2026-10-02",

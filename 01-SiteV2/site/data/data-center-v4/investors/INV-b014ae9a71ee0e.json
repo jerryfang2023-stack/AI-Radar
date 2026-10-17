@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -72,11 +72,44 @@
     "first_disclosed_at": "",
     "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 3
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-06cf3169532a2d2c",
+        "funding_insight_id": "FI-9f56d9e17ea9cdbd",
+        "event_ids": [
+          "EV-1ab1592853c9099a",
+          "EV-78ed82b05ec5fbf1"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "EN-0369c8fcda657a43",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4c6ce43023356543",
+            "source_url": "https://m.sohu.com/a/1087729129_115865?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "无问芯穹完成23亿元C轮融资",
+            "source_content_hash": "f1b7f46c2b104bdc",
+            "quote": "产业投资方包括Dabanc Holding、联想、九坤创投、同歌创投、腾讯、百度等",
+            "quote_hash": "4738dcddac942c38ac26e351ff7ac0e2acbf479969c598c478db3c6f799140e0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e4f560250306bfcd",
         "funding_insight_id": "FI-66e7dd713fc6bab5",
@@ -144,6 +177,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4c6ce43023356543",
+        "source_url": "https://m.sohu.com/a/1087729129_115865?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "无问芯穹完成23亿元C轮融资",
+        "source_content_hash": "f1b7f46c2b104bdc",
+        "quote": "产业投资方包括Dabanc Holding、联想、九坤创投、同歌创投、腾讯、百度等",
+        "quote_hash": "4738dcddac942c38ac26e351ff7ac0e2acbf479969c598c478db3c6f799140e0"
+      },
       {
         "source_id": "FISRC-7a614400d44a7041",
         "source_url": "https://news.pedaily.cn/202604/562366.shtml",
@@ -220,6 +261,10 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：上海无问芯穹智能科技股份有限公司 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4c6ce43023356543"
+        },
+        {
           "description": "融资来源记录：星海图 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a614400d44a7041"
         },
@@ -247,6 +292,14 @@
           "quote_hash": "81a7e9d3706dd17f436859199a633fb365360b55d0799e9b095c1dbd41f88d02"
         },
         {
+          "source_id": "FISRC-4c6ce43023356543",
+          "source_url": "https://m.sohu.com/a/1087729129_115865?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "无问芯穹完成23亿元C轮融资",
+          "source_content_hash": "f1b7f46c2b104bdc",
+          "quote": "产业投资方包括Dabanc Holding、联想、九坤创投、同歌创投、腾讯、百度等",
+          "quote_hash": "4738dcddac942c38ac26e351ff7ac0e2acbf479969c598c478db3c6f799140e0"
+        },
+        {
           "source_id": "FISRC-7a614400d44a7041",
           "source_url": "https://news.pedaily.cn/202604/562366.shtml",
           "source_title": "星海图又融资20亿，估值200亿",
@@ -271,7 +324,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[1].role": {
+        "activities[2].role": {
           "text": "Pre-A轮跟投",
           "source_hash": "9306282e5fd3ce623e009065f8fbf0fd8c2acd50b228ea756806f4b558632a17",
           "provider": "deepseek",

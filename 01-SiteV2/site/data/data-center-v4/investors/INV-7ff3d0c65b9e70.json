@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-06-15",
     "latest_disclosed_at": "2026-07-24",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 3
     },
     "round_codes": [
@@ -218,6 +219,39 @@
             "quote_hash": "2c7a017683a1b0f38e874bdd012938f92c6ee4e7adca7b335d3537ae2cd74b61"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d737785d8939ac11",
+        "funding_insight_id": "FI-9f56d9e17ea9cdbd",
+        "event_ids": [
+          "EV-1ab1592853c9099a",
+          "EV-78ed82b05ec5fbf1"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "EN-0369c8fcda657a43",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4c6ce43023356543",
+            "source_url": "https://m.sohu.com/a/1087729129_115865?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "无问芯穹完成23亿元C轮融资",
+            "source_content_hash": "f1b7f46c2b104bdc",
+            "quote": "产业投资方包括Dabanc Holding、联想、九坤创投、同歌创投、腾讯、百度等",
+            "quote_hash": "4738dcddac942c38ac26e351ff7ac0e2acbf479969c598c478db3c6f799140e0"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -244,6 +278,14 @@
         "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
         "quote": "两轮融资聚集央企产业资本 中国移动 链长基金、 超越摩尔 、 江城基金 、 佰维存储 、九坤创投、知名大模型公司等头部产业投资方",
         "quote_hash": "2c7a017683a1b0f38e874bdd012938f92c6ee4e7adca7b335d3537ae2cd74b61"
+      },
+      {
+        "source_id": "FISRC-4c6ce43023356543",
+        "source_url": "https://m.sohu.com/a/1087729129_115865?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "无问芯穹完成23亿元C轮融资",
+        "source_content_hash": "f1b7f46c2b104bdc",
+        "quote": "产业投资方包括Dabanc Holding、联想、九坤创投、同歌创投、腾讯、百度等",
+        "quote_hash": "4738dcddac942c38ac26e351ff7ac0e2acbf479969c598c478db3c6f799140e0"
       }
     ],
     "public_profile": {

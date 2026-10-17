@@ -1,0 +1,37 @@
+{
+  "verification": {
+    "version": "FINANCING-VERIFICATION-1",
+    "status": "completed",
+    "counts": {
+      "total": 389,
+      "verified": 4,
+      "excluded": 121,
+      "reviewed": 0,
+      "pending": 264
+    },
+    "ledger": "verification.json",
+    "deferred_research": []
+  },
+  "version": "FINANCING-MONITOR-1",
+  "date": "2026-10-17",
+  "status": "ready_for_review",
+  "counts": {
+    "leads": 492,
+    "accepted_originals": 107,
+    "pending": 169,
+    "excluded": 216
+  },
+  "next": "merge_pages_portal_and_live_parity",
+  "generated_at": "2026-10-17T02:58:26.391Z",
+  "date_reconciliations": [
+    {
+      "event_id": "EV-66193b4f82571d48",
+      "company": "Sonilo",
+      "public_date": "2026-10-14",
+      "conflicting_source_url": "https://www.thesaasnews.com/news/sonilo-raises-11m-other/",
+      "conflicting_field": "Funding Date",
+      "conflicting_date": "2026-10-08",
+      "basis": "公司 PRNewswire 稿于 2026-10-14 明确 \"today announced\" 该 $11M 轮；公开卡采用公告日 2026-10-14。SaaS News 的 Funding Date 字段作为独立数据库交易日期保留，不据此改公告日。"
+    }
+  ]
+}

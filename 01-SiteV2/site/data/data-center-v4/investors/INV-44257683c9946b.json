@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 6,
-    "china_market_company_count": 6,
+    "china_market_activity_count": 7,
+    "china_market_company_count": 7,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-09-14",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
       "historical_or_ambiguous": 8,
       "lead": 1,
       "other_current_round": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "angel",
@@ -83,13 +83,19 @@
       "pre_series_a",
       "series_a_plus",
       "series_b",
-      "series_b_plus"
+      "series_b_plus",
+      "series_c"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-b733f8c3adeccf85",
         "canonical_entity_id": "",
         "name": "佳量脑科学"
+      },
+      {
+        "entity_id": "EN-0369c8fcda657a43",
+        "canonical_entity_id": "EN-0369c8fcda657a43",
+        "name": "上海无问芯穹智能科技股份有限公司"
       },
       {
         "entity_id": "EN-9b21c9bf3305c0d6",
@@ -118,6 +124,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2549eb4e87abafee",
+        "funding_insight_id": "FI-9f56d9e17ea9cdbd",
+        "event_ids": [
+          "EV-1ab1592853c9099a",
+          "EV-78ed82b05ec5fbf1"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "EN-0369c8fcda657a43",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "23亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "23 亿元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9d1b02904aa21475",
+            "source_url": "https://finance.eastmoney.com/a/202610123892552169.html",
+            "source_title": "创行业单次融资纪录，无问芯穹完成23亿元C轮融资 _ 东方财富网",
+            "source_content_hash": "c76ec87fa55c86fe",
+            "quote": "财务投资机构包括红杉中国、启明创投、达晨财智、顺为资本等知名机构",
+            "quote_hash": "36b97ec701f4c46e31460df0ab0fbafbbc69085569dc4cc899e9612a4f784954"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b6caf632dcf14594",
         "funding_insight_id": "FI-257e4f42c36415ea",
@@ -628,6 +675,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9d1b02904aa21475",
+        "source_url": "https://finance.eastmoney.com/a/202610123892552169.html",
+        "source_title": "创行业单次融资纪录，无问芯穹完成23亿元C轮融资 _ 东方财富网",
+        "source_content_hash": "c76ec87fa55c86fe",
+        "quote": "财务投资机构包括红杉中国、启明创投、达晨财智、顺为资本等知名机构",
+        "quote_hash": "36b97ec701f4c46e31460df0ab0fbafbbc69085569dc4cc899e9612a4f784954"
+      },
+      {
         "source_id": "FISRC-9cb02e3c79eee3a9",
         "source_url": "https://www.chinaventure.com.cn/news/113-20260914-393253.html",
         "source_title": "讯兔科技（Alpha派）完成超3亿元B轮融资 - 投中网",
@@ -787,16 +842,16 @@
           "source_id": "qiming_about"
         },
         {
+          "description": "融资来源记录：上海无问芯穹智能科技股份有限公司 · C轮 · 2026-10-12 · 本轮参投 · 23亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9d1b02904aa21475"
+        },
+        {
           "description": "融资来源记录：讯兔科技 · B轮 · 2026-09-14 · 本轮参投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9cb02e3c79eee3a9"
         },
         {
           "description": "融资来源记录：佳量脑科学 · 多轮融资 · 2026-09-08 · 本轮领投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0fc87012f374b083"
-        },
-        {
-          "description": "融资来源记录：芯光界 · 天使轮 · 2026-08-25 · 本轮独家投资 · 亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7b5da7a1fb11c00b"
         }
       ],
       "contacts": [
@@ -847,6 +902,14 @@
           "quote_hash": "fef70ce02691f8382cf792462fbe4a833c4aa4594a0b72e9402c9fab2f0d8950"
         },
         {
+          "source_id": "FISRC-9d1b02904aa21475",
+          "source_url": "https://finance.eastmoney.com/a/202610123892552169.html",
+          "source_title": "创行业单次融资纪录，无问芯穹完成23亿元C轮融资 _ 东方财富网",
+          "source_content_hash": "c76ec87fa55c86fe",
+          "quote": "财务投资机构包括红杉中国、启明创投、达晨财智、顺为资本等知名机构",
+          "quote_hash": "36b97ec701f4c46e31460df0ab0fbafbbc69085569dc4cc899e9612a4f784954"
+        },
+        {
           "source_id": "FISRC-9cb02e3c79eee3a9",
           "source_url": "https://www.chinaventure.com.cn/news/113-20260914-393253.html",
           "source_title": "讯兔科技（Alpha派）完成超3亿元B轮融资 - 投中网",
@@ -861,14 +924,6 @@
           "source_content_hash": "421f431cbb5e84018cc04f18b116bd58447a3aa7183a44bd69dd78d338481f66",
           "quote": "其中C轮融资由启明创投领投。",
           "quote_hash": "c78354511a3557825c1e9596f927139cd7ddfe0c622fa66c2c2340c0362dc2f1"
-        },
-        {
-          "source_id": "FISRC-7b5da7a1fb11c00b",
-          "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E8%8A%AF%E5%85%89%E7%95%8C%E5%AE%8C%E6%88%90%E4%BA%BF%E5%85%83%E5%A4%A9%E4%BD%BF%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E7%8B%AC%E5%AE%B6%E6%8A%95%E8%B5%84",
-          "source_title": "启明星 | 芯光界完成亿元天使轮融资，启明创投独家投资 | 启明创投",
-          "source_content_hash": "f90746ccdb00966b057d3567e659b1f59d743f0de09669694fb47cf0765bed93",
-          "quote": "本轮由创投行业头部机构启明创投独家投资，融资总额达亿元人民币",
-          "quote_hash": "1049f558bcce7e22c34732e5cfcf5d34f11862664504061802cd8efff24258f0"
         }
       ],
       "last_verified_at": "2026-09-25",

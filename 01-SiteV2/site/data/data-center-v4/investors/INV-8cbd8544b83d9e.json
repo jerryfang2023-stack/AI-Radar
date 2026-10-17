@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -57,12 +57,12 @@
     "name": "Thomas Wolf",
     "aliases": [],
     "canonical_entity_id": null,
-    "investor_kind": "unverified_investor",
-    "investor_kind_label": "投资方（类型待核验）",
-    "classification_confidence": "unverified",
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-09-30",
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "5c36bdef248998ba184ff7bb0e79f5b157b27697426afa3ff7dbb47ccead4316"
           }
         ]
+      },
+      {
+        "activity_id": "IA-4f4504637ea96598",
+        "funding_insight_id": "FI-858f454daf4ee906",
+        "event_ids": [
+          "EV-61c9891d791417be"
+        ],
+        "company_entity_id": "EN-79648183530ff7c5",
+        "company_canonical_entity_id": "",
+        "company_name": "Othello",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a6e1e76d3e6bb0dc",
+            "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+            "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+            "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+            "quote": "Hugging Face co-founder Thomas Wolf",
+            "quote_hash": "7b1728db8b27bb2a00fa15c0e535a9fd138fa489950f3c48638897c56a38974f"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "1ada124c6217cee1",
         "quote": "with contributions from Hugging Face co-founder Thomas Wolf, Mercedes-Benz CIO Jonas von Malottki, and Formula 1 world champion Nico Rosberg",
         "quote_hash": "5c36bdef248998ba184ff7bb0e79f5b157b27697426afa3ff7dbb47ccead4316"
+      },
+      {
+        "source_id": "FISRC-a6e1e76d3e6bb0dc",
+        "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+        "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+        "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+        "quote": "Hugging Face co-founder Thomas Wolf",
+        "quote_hash": "7b1728db8b27bb2a00fa15c0e535a9fd138fa489950f3c48638897c56a38974f"
       }
     ],
     "public_profile": {
@@ -159,6 +200,10 @@
         {
           "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3511f7baf76701e3"
+        },
+        {
+          "description": "融资来源记录：Othello · 历史轮次未披露 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a6e1e76d3e6bb0dc"
         }
       ],
       "contacts": [],
@@ -178,6 +223,14 @@
           "source_content_hash": "1ada124c6217cee1",
           "quote": "with contributions from Hugging Face co-founder Thomas Wolf, Mercedes-Benz CIO Jonas von Malottki, and Formula 1 world champion Nico Rosberg",
           "quote_hash": "5c36bdef248998ba184ff7bb0e79f5b157b27697426afa3ff7dbb47ccead4316"
+        },
+        {
+          "source_id": "FISRC-a6e1e76d3e6bb0dc",
+          "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+          "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+          "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+          "quote": "Hugging Face co-founder Thomas Wolf",
+          "quote_hash": "7b1728db8b27bb2a00fa15c0e535a9fd138fa489950f3c48638897c56a38974f"
         }
       ],
       "last_verified_at": "2026-10-04",

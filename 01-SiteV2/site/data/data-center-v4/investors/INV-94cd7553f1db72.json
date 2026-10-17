@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,28 +54,29 @@
   },
   "institution": {
     "id": "INV-94cd7553f1db72",
-    "name": "a16z Speedrun",
+    "name": "a16z speedrun",
     "aliases": [
-      "a16z speedrun"
+      "a16z Speedrun"
     ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 3
     },
     "round_codes": [
@@ -86,6 +87,11 @@
         "entity_id": "EN-02d6646fb8486fbd",
         "canonical_entity_id": "",
         "name": "Kanu AI"
+      },
+      {
+        "entity_id": "EN-79648183530ff7c5",
+        "canonical_entity_id": "",
+        "name": "Othello"
       },
       {
         "entity_id": "EN-40cd17bb16c8fec1",
@@ -104,6 +110,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9d8cc12799931bda",
+        "funding_insight_id": "FI-858f454daf4ee906",
+        "event_ids": [
+          "EV-61c9891d791417be"
+        ],
+        "company_entity_id": "EN-79648183530ff7c5",
+        "company_canonical_entity_id": "",
+        "company_name": "Othello",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-a6e1e76d3e6bb0dc",
+            "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+            "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+            "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+            "quote": "today announced $8 million in seed funding from a16z speedrun, Owl Capital and Long Journey Ventures.",
+            "quote_hash": "16578cc958d2acb1c9ae0bcc05674f94a53835eab4d44cbaeae9ed150d84dcc6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-270a5bebee05a812",
         "funding_insight_id": "FI-5fd5533b14de7850",
@@ -300,6 +346,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a6e1e76d3e6bb0dc",
+        "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+        "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+        "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+        "quote": "today announced $8 million in seed funding from a16z speedrun, Owl Capital and Long Journey Ventures.",
+        "quote_hash": "16578cc958d2acb1c9ae0bcc05674f94a53835eab4d44cbaeae9ed150d84dcc6"
+      },
+      {
         "source_id": "FISRC-98f77610cfcfab94",
         "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
         "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
@@ -363,16 +417,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Othello · 种子轮 · 2026-10-14 · 本轮领投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a6e1e76d3e6bb0dc"
+        },
+        {
           "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮联合领投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f77610cfcfab94"
         },
         {
           "description": "融资来源记录：Kanu AI · 种子轮 · 2026-09-30 · 本轮参投 · $11.7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2600408f2e0d32d7"
-        },
-        {
-          "description": "融资来源记录：ZeroDrift · 种子轮 · 2026-06-02 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dffcc55088dd6fc6"
         }
       ],
       "contacts": [],
@@ -394,6 +448,14 @@
           "quote_hash": "7fee6a0edebe2231c554ef065c4fee08177fe5941032ad2ce9fd125bf8c1bca1"
         },
         {
+          "source_id": "FISRC-a6e1e76d3e6bb0dc",
+          "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+          "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+          "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+          "quote": "today announced $8 million in seed funding from a16z speedrun, Owl Capital and Long Journey Ventures.",
+          "quote_hash": "16578cc958d2acb1c9ae0bcc05674f94a53835eab4d44cbaeae9ed150d84dcc6"
+        },
+        {
           "source_id": "FISRC-98f77610cfcfab94",
           "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
           "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
@@ -408,14 +470,6 @@
           "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
           "quote": "Trilogy Equity Partners led the round, with participation from Andreessen Horowitz’s a16z speedrun, BMW i Ventures, and Accel.",
           "quote_hash": "b8e2a52ffb09045701fa83a2302679430bd9f2fc61890479b80241c7a7572dfe"
-        },
-        {
-          "source_id": "FISRC-dffcc55088dd6fc6",
-          "source_url": "https://techcrunch.com/2026/06/02/zerodrift-raises-10-million-to-protect-ai-models-from-themselves",
-          "source_title": "ZeroDrift 融资 1000 万美元，保护 AI 模型免受自身影响",
-          "source_content_hash": "d562dbffac1e2d9fee62fbabbd1ba5c517a035d9e1c4da81a7af06ed2c1e41cb",
-          "quote": "it had raised $10 million in a seed funding round that saw investments from a16z Speedrun, Reign Ventures, Pitchdrive, and U&I Ventures, among others.",
-          "quote_hash": "b215777c949ba082207bfc3f75c4369a1e3c063d802a02c2b550b33d37bcc681"
         }
       ],
       "last_verified_at": "2026-10-04",

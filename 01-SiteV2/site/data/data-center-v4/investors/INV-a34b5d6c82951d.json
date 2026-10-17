@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,7 +64,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 5,
     "market_regions": [
       "CN"
@@ -74,7 +74,7 @@
     "first_disclosed_at": "2026-04-16",
     "latest_disclosed_at": "2026-07-24",
     "role_counts": {
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 1,
       "participant": 4
     },
@@ -379,6 +379,39 @@
         ]
       },
       {
+        "activity_id": "IA-6ad5756d7c91d068",
+        "funding_insight_id": "FI-9f56d9e17ea9cdbd",
+        "event_ids": [
+          "EV-1ab1592853c9099a",
+          "EV-78ed82b05ec5fbf1"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "EN-0369c8fcda657a43",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4c6ce43023356543",
+            "source_url": "https://m.sohu.com/a/1087729129_115865?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "无问芯穹完成23亿元C轮融资",
+            "source_content_hash": "f1b7f46c2b104bdc",
+            "quote": "国资机构包括杭州高新金投、社保中关村基金（君联资本管理）、珠海科技产业集团、厦门国兴投资、徐汇资本、孚腾资本、中保投资、国开科创等",
+            "quote_hash": "38c75545648449541e8f50f99e6fab9d3b553d97c5ae4f7a4909f0be76741bda"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-024584c42a69b5b4",
         "funding_insight_id": "FI-74076c9ab29354a8",
         "event_ids": [
@@ -468,6 +501,14 @@
         "source_content_hash": "3943ea5191d9c7eb",
         "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
         "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
+      },
+      {
+        "source_id": "FISRC-4c6ce43023356543",
+        "source_url": "https://m.sohu.com/a/1087729129_115865?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "无问芯穹完成23亿元C轮融资",
+        "source_content_hash": "f1b7f46c2b104bdc",
+        "quote": "国资机构包括杭州高新金投、社保中关村基金（君联资本管理）、珠海科技产业集团、厦门国兴投资、徐汇资本、孚腾资本、中保投资、国开科创等",
+        "quote_hash": "38c75545648449541e8f50f99e6fab9d3b553d97c5ae4f7a4909f0be76741bda"
       },
       {
         "source_id": "FISRC-2a290bc55630db75",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,76 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-22",
-    "latest_disclosed_at": "2026-01-22",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-bac6d661867571f7",
         "canonical_entity_id": "",
         "name": "Neurophos Inc."
+      },
+      {
+        "entity_id": "EN-82976c763031a3fb",
+        "canonical_entity_id": "",
+        "name": "North.cloud"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c7af434b4cbb9042",
+        "funding_insight_id": "FI-c22ff1ce73d25632",
+        "event_ids": [
+          "EV-fda5813917618b8a"
+        ],
+        "company_entity_id": "EN-82976c763031a3fb",
+        "company_canonical_entity_id": "",
+        "company_name": "North.cloud",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d44602a17801a99d",
+            "source_url": "https://www.prnewswire.com/news-releases/northcloud-raises-60m-series-b-to-unify-spend-intelligence-and-enable-full-automation-across-cloud-ai-and-data-302909322.html",
+            "source_title": "North.cloud 完成 6000 万美元 B 轮融资，统一支出智能并实现跨云、AI 和数据的全面自动化",
+            "source_content_hash": "1cd50eb9dd50f4d5d0618d28986ba1cb1b7b48f131e77dc028ca7e63a8a2f582",
+            "quote": "with participation from Litquidity Ventures, Companyon Ventures, Alpaca, Uncommon Denominator, Gaingels, and Mana Ventures",
+            "quote_hash": "22b571a2e4d9f55f1a337bd3a5e43d3e72d23afe785beff7ecc9ac53e61c88ce"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6d4a8318b1f649c3",
         "funding_insight_id": "FI-80adb2a2349a9a03",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-d44602a17801a99d",
+        "source_url": "https://www.prnewswire.com/news-releases/northcloud-raises-60m-series-b-to-unify-spend-intelligence-and-enable-full-automation-across-cloud-ai-and-data-302909322.html",
+        "source_title": "North.cloud 完成 6000 万美元 B 轮融资，统一支出智能并实现跨云、AI 和数据的全面自动化",
+        "source_content_hash": "1cd50eb9dd50f4d5d0618d28986ba1cb1b7b48f131e77dc028ca7e63a8a2f582",
+        "quote": "with participation from Litquidity Ventures, Companyon Ventures, Alpaca, Uncommon Denominator, Gaingels, and Mana Ventures",
+        "quote_hash": "22b571a2e4d9f55f1a337bd3a5e43d3e72d23afe785beff7ecc9ac53e61c88ce"
+      },
+      {
         "source_id": "FISRC-d542f1ad9da7e0ac",
         "source_url": "https://dukecapitalpartners.duke.edu/news/neurophos-secures-110-million-series-a-to-launch-exaflop-scale-photonic-ai-chips/",
         "source_title": "Neurophos 获 1.1 亿美元 A 轮融资，将推出百亿亿次规模光子 AI 芯片",
@@ -164,6 +218,10 @@
           "source_id": "mana_home"
         },
         {
+          "description": "融资来源记录：North.cloud · B轮 · 2026-10-15 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d44602a17801a99d"
+        },
+        {
           "description": "融资来源记录：Neurophos Inc. · A轮 · 2026-01-22 · 本轮参投 · $110 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d542f1ad9da7e0ac"
         }
@@ -185,6 +243,14 @@
           "source_content_hash": "839f9bdc00bbfacfd1d15e836a1db4c46041bfaabb1294948f68ede1eb5fadd2",
           "quote": "Artificial Intelligence, Software, Space, HealthTech, BioTech, Robotics, Autonomy.",
           "quote_hash": "f16d55d156b68345a04b5e36f7bfef8fec73dccf455f3e3ea3aa7df09ad8b45c"
+        },
+        {
+          "source_id": "FISRC-d44602a17801a99d",
+          "source_url": "https://www.prnewswire.com/news-releases/northcloud-raises-60m-series-b-to-unify-spend-intelligence-and-enable-full-automation-across-cloud-ai-and-data-302909322.html",
+          "source_title": "North.cloud 完成 6000 万美元 B 轮融资，统一支出智能并实现跨云、AI 和数据的全面自动化",
+          "source_content_hash": "1cd50eb9dd50f4d5d0618d28986ba1cb1b7b48f131e77dc028ca7e63a8a2f582",
+          "quote": "with participation from Litquidity Ventures, Companyon Ventures, Alpaca, Uncommon Denominator, Gaingels, and Mana Ventures",
+          "quote_hash": "22b571a2e4d9f55f1a337bd3a5e43d3e72d23afe785beff7ecc9ac53e61c88ce"
         },
         {
           "source_id": "FISRC-d542f1ad9da7e0ac",
