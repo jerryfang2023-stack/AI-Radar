@@ -5,6 +5,7 @@ import { acceptedPublicationStatus, pendingReviewStatus,activeProductionRun,miss
 import { parseArgs } from './args.mjs';
 import { productionCIState } from '../tools/wait-for-production-code-checks.mjs';
 import {githubRead} from './github-read.mjs';
+import {deterministicProductionFailure} from './failure-diagnostics.mjs';
 const args = parseArgs();
 const date = args.get('date') || new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 queryPlan(date);
@@ -33,7 +34,7 @@ if (acceptedStatus && !review) {
     const ci = productionCIState(pages.flatMap(page => page.check_runs || []),runs.workflow_runs || [],review.head_sha);
     console.log(JSON.stringify(pendingReviewStatus(prs, date, ci.status, ci)));
   } else {
-    const runs = JSON.parse(gh(['run','list','--repo',repo,'--workflow','funding-daily-pr.yml','--branch','main','--limit','60','--json','databaseId,displayTitle,status,conclusion']));
+    const runs = JSON.parse(gh(['run','list','--repo',repo,'--workflow','funding-daily-pr.yml','--branch','main','--limit','60','--json','databaseId,displayTitle,status,conclusion,headSha']));
     const matching = runs.filter(run => run.displayTitle === `Financing ${date}`);
     const active = activeProductionRun(matching,preflightRun);
     if (active) console.log(JSON.stringify({date,status:'running',run_id:active.databaseId}));
@@ -44,8 +45,18 @@ if (acceptedStatus && !review) {
         const artifacts = JSON.parse(gh(['api',`repos/${repo}/actions/runs/${run.databaseId}/artifacts`]));
         if(artifacts.artifacts.some(row => row.name === `financing-${date}` && !row.expired)) { resume=run.databaseId; break; }
       }
-      if(args.get('dry-run') !== 'true') gh(['workflow','run','funding-daily-pr.yml','--repo',repo,'--ref','main','-f',`date=${date}`,...(resume?['-f',`resume_run_id=${resume}`]:[])]);
-      console.log(JSON.stringify({date,status:args.get('dry-run') === 'true' ? 'planned' : 'dispatched',resume_run_id:resume || null}));
+      let failure=null;
+      const failed=matching.find(run=>run.databaseId===resume && run.conclusion==='failure');
+      if(failed && !preflightRun) {
+        const head=gh(['api',`repos/${repo}/git/ref/heads/main`,'--jq','.object.sha']);
+        if(head===failed.headSha) failure=deterministicProductionFailure(
+          gh(['run','view',String(failed.databaseId),'--repo',repo,'--log-failed']),{date,head,runHead:failed.headSha});
+      }
+      if(failure) console.log(JSON.stringify({date,status:'needs_attention',reason:'deterministic_production_failure',resume_run_id:resume,failure}));
+      else {
+        if(args.get('dry-run') !== 'true') gh(['workflow','run','funding-daily-pr.yml','--repo',repo,'--ref','main','-f',`date=${date}`,...(resume?['-f',`resume_run_id=${resume}`]:[])]);
+        console.log(JSON.stringify({date,status:args.get('dry-run') === 'true' ? 'planned' : 'dispatched',resume_run_id:resume || null}));
+      }
     }
   }
 }
