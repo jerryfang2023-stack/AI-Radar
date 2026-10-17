@@ -31,11 +31,19 @@ export function selectRunDate(states, clock, requested) {
     && !(s.date < clock.date && ['needs_attention','review_held','ci_failed','awaiting_approval','checks_pending'].includes(s.status))).sort((a,b)=>a.date.localeCompare(b.date));
   return unfinished[0]?.date || (clock.minute >= 490 ? clock.date : null);
 }
+// The review contract makes the five checks authoritative: a verdict is
+// approved only when every check is true. The model also records confirmed
+// non-blocking observations in the issues array (stale profile fields,
+// reconciled source-date notes). Those notes must not deadlock publication,
+// while an unlabelled or blocking finding still requires a hold.
+export function nonBlockingReviewIssue(issue) {
+  return typeof issue === 'string' && /^\s*(?:non-blocking|observation|note)\b/iu.test(issue);
+}
 export function acceptedReview(review, {date, head}) {
   return review?.date === date && review.head_sha === head && review.verdict === 'approved'
     && ['sources','facts','scope','classification','preservation'].every(key=>review.checks?.[key] === true)
     && Array.isArray(review.evidence) && review.evidence.length > 0 && review.evidence.every(item=>typeof item==='string' && item.trim())
-    && Array.isArray(review.issues) && review.issues.length === 0;
+    && Array.isArray(review.issues) && review.issues.every(nonBlockingReviewIssue);
 }
 export function assertDataOnly(files, date) {
   if (!files.length || files.some(file=>!allowedCheckpointPath(file, date))) throw new Error('financing_pr_changes_executable_or_unapproved_paths');

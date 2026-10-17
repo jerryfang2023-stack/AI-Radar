@@ -63,11 +63,12 @@ test('published receipts require website and Mini dates and full accepted SHA',(
   assert.equal(validPublishedReceipt({...receipt,website_date:'2026-10-13',mini_date:'2026-10-13'},'2026-10-12'),true);
   assert.equal(validPublishedReceipt({...receipt,website_date:'bad',mini_date:'bad'},'2026-10-12'),false);
 });
-test('acceptance binds reviewed date and SHA, all checks, actual evidence and no open issues',()=>{
+test('acceptance binds reviewed date and SHA, all checks, actual evidence and only non-blocking notes',()=>{
   const identity={date:'2026-10-03',head:'a'.repeat(40)};
   const approved={date:identity.date,head_sha:identity.head,verdict:'approved',checks:{sources:true,facts:true,scope:true,classification:true,preservation:true},evidence:['source: confirmed round'],issues:[]};
   assert.equal(acceptedReview(approved,identity),true);
-  for(const bad of [{head_sha:'b'.repeat(40)},{date:'2026-10-02'},{verdict:'unknown'},{evidence:[]},{issues:['unverified investor']},{checks:{...approved.checks,preservation:false}}])assert.equal(acceptedReview({...approved,...bad},identity),false);
+  for(const note of ['Non-blocking: stale team-size profile field','Observation: source date reconciled in publication.json','Note: profile role label needs a later refresh'])assert.equal(acceptedReview({...approved,issues:[note]},identity),true);
+  for(const bad of [{head_sha:'b'.repeat(40)},{date:'2026-10-02'},{verdict:'unknown'},{evidence:[]},{issues:['unverified investor']},{issues:['Scope violation: robotics company published']},{issues:['Non-blocking: stale profile','Fact inconsistency: malformed amount']},{checks:{...approved.checks,preservation:false}}])assert.equal(acceptedReview({...approved,...bad},identity),false);
 });
 test('financing reviewer never auto-merges executable or workflow changes',()=>{
   const date='2026-10-03';
