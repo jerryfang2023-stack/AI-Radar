@@ -69,33 +69,8 @@
               }
             ],
             "entity_id": null
-          },
-          {
-            "name": "Sarah Jaouani",
-            "role": "COO and co-founder",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-50cea1bd8ac144c3",
-                "quote": "The pair was joined by two other partners: DAF Véronique Maurice, Patrick’s wife and long-time business partner, and COO Sarah Jaouani.",
-                "source_content_hash": "7199c94e57dcb085",
-                "quote_hash": "338e95ba0cb4386f1c131a683fe5b2bd3d6c840c206dc8cfcb485ac78f32c7e2"
-              }
-            ],
-            "entity_id": null
           }
         ],
-        "team_size": {
-          "value": "over 100 engineers",
-          "observed_at": "2026-10-15",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9b78523a72b4ef0e",
-              "quote": "employs over 100 engineers",
-              "source_content_hash": "20e9017252d6aaed38204988a87120b19681f3131de48cf00a7df4f5eaf260af",
-              "quote_hash": "b00b72743fd28127a53abc3b300f2aca0f242854f1ba1a12904b3847b69ff10a"
-            }
-          ]
-        },
         "evidence_refs": [
           {
             "source_id": "FISRC-9b78523a72b4ef0e",
@@ -111,7 +86,12 @@
           }
         ],
         "application_entity_id": "EN-49cf97a820220e0f",
-        "canonical_entity_consistent": false
+        "canonical_entity_consistent": false,
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        }
       },
       "financing": {
         "round": "其他融资",
@@ -269,28 +249,6 @@
               "quote": "The next milestone is agentically produced financial statements, checked and signed by a chartered accountant.",
               "source_content_hash": "7b42f79224ed7c5d",
               "quote_hash": "cb29d8f3efc44132a5043fa5f15ec6a58546a4588a28aa84676095a9c7671a48"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [
-        {
-          "name": "50,000+ businesses",
-          "industry": "",
-          "use_case": "会计、法律与财务管理服务",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9b78523a72b4ef0e",
-              "quote": "It now serves more than 50,000 businesses",
-              "source_content_hash": "20e9017252d6aaed38204988a87120b19681f3131de48cf00a7df4f5eaf260af",
-              "quote_hash": "f9ad61ba658d0f92c3f6d9b51374adfb5e4dba85730f7564e893977b9376da7e"
-            },
-            {
-              "source_id": "FISRC-cc867baeed6eb2f9",
-              "quote": "Dougs serves more than 50,000 businesses",
-              "source_content_hash": "7b42f79224ed7c5d",
-              "quote_hash": "f500febfb7b9f6c075c3740e678868557a8030be149d5c28ccee9732b8830bc4"
             }
           ],
           "entity_id": null
@@ -724,7 +682,29 @@
         "key": "EN-49cf97a820220e0f|other",
         "event_count": 1,
         "strategy": "company_and_normalized_round"
-      }
+      },
+      "customers": [
+        {
+          "name": "50,000+ businesses",
+          "industry": "",
+          "use_case": "会计、法律与财务管理服务",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b78523a72b4ef0e",
+              "quote": "It now serves more than 50,000 businesses",
+              "source_content_hash": "20e9017252d6aaed38204988a87120b19681f3131de48cf00a7df4f5eaf260af",
+              "quote_hash": "f9ad61ba658d0f92c3f6d9b51374adfb5e4dba85730f7564e893977b9376da7e"
+            },
+            {
+              "source_id": "FISRC-cc867baeed6eb2f9",
+              "quote": "Dougs serves more than 50,000 businesses",
+              "source_content_hash": "7b42f79224ed7c5d",
+              "quote_hash": "f500febfb7b9f6c075c3740e678868557a8030be149d5c28ccee9732b8830bc4"
+            }
+          ],
+          "entity_id": null
+        }
+      ]
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
@@ -3075,18 +3055,6 @@
             "entity_id": null
           }
         ],
-        "team_size": {
-          "value": "101-250",
-          "observed_at": "2025-02-24",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3c48daa475cbf680",
-              "quote": "the company has grown to employ between 101-250 people",
-              "source_content_hash": "d6a9c7e3a846849f",
-              "quote_hash": "c5f357d8ada9fc3c6af76e4f355c8e2d8bc69e60272d09ec48298361b9af40d6"
-            }
-          ]
-        },
         "evidence_refs": [
           {
             "source_id": "FISRC-31a53dcde47855a0",
@@ -3102,7 +3070,12 @@
           }
         ],
         "application_entity_id": "EN-ce084d4801691907",
-        "canonical_entity_consistent": false
+        "canonical_entity_consistent": false,
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        }
       },
       "financing": {
         "round": "E轮",
