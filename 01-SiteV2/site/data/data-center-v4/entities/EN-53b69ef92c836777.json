@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -69,8 +69,8 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-target_user-developer",
-      "TX-target_user-student",
       "TX-target_user-business_user",
+      "TX-target_user-student",
       "TX-product_form-end_user_application",
       "TX-ai_market_category-enterprise_applications",
       "TX-target_user-educator",
@@ -295,6 +295,7 @@
       "typeLabel": "目标用户",
       "valueId": "developer",
       "eventIds": [
+        "EV-1043d78cc040ab30",
         "EV-c96705c69e11c520",
         "EV-657176fd0dff6209",
         "EV-f2950d2104e97163",
@@ -308,7 +309,6 @@
         "EV-b9be18b12b1714f3",
         "EV-bdd1611cc17c3325",
         "EV-06f2bca776e5cee7",
-        "EV-1043d78cc040ab30",
         "EV-40d4ce6d936d4d49",
         "EV-b0637e99e328479b",
         "EV-412f7ce21693dc13",
@@ -570,6 +570,7 @@
         "EV-a9fe726c4ea2a17b"
       ],
       "entityIds": [
+        "EN-295219ea74639f0b",
         "EN-bc06be2cba2b2f2c",
         "EN-336ab1deb42d6284",
         "EN-50d7f4250bdd8888",
@@ -581,7 +582,6 @@
         "EN-92d14efa2f3f44b1",
         "EN-c386ba3b954748fa",
         "EN-34bc69b5df00e2d3",
-        "EN-295219ea74639f0b",
         "EN-d41ebd9f02722fc8",
         "EN-cfec5bef40cbf3ae",
         "EN-c5146e8a5659ab7e",
@@ -804,46 +804,7 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-10-16"
-    },
-    {
-      "id": "TX-target_user-student",
-      "name": "学生",
-      "nodeType": "target_user",
-      "typeLabel": "目标用户",
-      "valueId": "student",
-      "eventIds": [
-        "EV-d3ecfba50801f33e",
-        "EV-2470b13ea55496d0",
-        "EV-86838cc774b85116",
-        "EV-ef669a52c9a3f94f",
-        "EV-41c54c428d84cc1e",
-        "EV-8eb0acb180b7ad9d",
-        "EV-e2a94eb223c11a66",
-        "EV-2975bb5b57ce53d9",
-        "EV-435d7e7878b0c326",
-        "EV-09b8a8e4ed03dd7f",
-        "EV-390a082fa13fe0a6",
-        "EV-26439e34295a0519",
-        "EV-58268b12aa406620"
-      ],
-      "entityIds": [
-        "EN-9c304d6d50bdb5a8",
-        "EN-0830e0bf8e8fa471",
-        "EN-573b998925ae7499",
-        "EN-1d79127e9d90e89b",
-        "EN-8dc72a4672894e0f",
-        "EN-53b69ef92c836777",
-        "EN-bd86ebd32193b381",
-        "EN-7dfadeb219464a45",
-        "EN-a6e5382c05dd0d16",
-        "EN-04bd675006a7a1ed",
-        "EN-ff8999faeaba6861"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-12"
+      "lastSeen": "2026-10-17"
     },
     {
       "id": "TX-target_user-business_user",
@@ -852,6 +813,7 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-858cec7fa8f4c87b",
         "EV-657176fd0dff6209",
         "EV-f2950d2104e97163",
         "EV-35fa913e4709b4d6",
@@ -1243,6 +1205,7 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "EN-ce084d4801691907",
         "EN-336ab1deb42d6284",
         "EN-50d7f4250bdd8888",
         "EN-b4c73396844f7d05",
@@ -1567,7 +1530,46 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-10-07"
+      "lastSeen": "2026-10-17"
+    },
+    {
+      "id": "TX-target_user-student",
+      "name": "学生",
+      "nodeType": "target_user",
+      "typeLabel": "目标用户",
+      "valueId": "student",
+      "eventIds": [
+        "EV-d3ecfba50801f33e",
+        "EV-2470b13ea55496d0",
+        "EV-86838cc774b85116",
+        "EV-ef669a52c9a3f94f",
+        "EV-41c54c428d84cc1e",
+        "EV-8eb0acb180b7ad9d",
+        "EV-e2a94eb223c11a66",
+        "EV-2975bb5b57ce53d9",
+        "EV-435d7e7878b0c326",
+        "EV-09b8a8e4ed03dd7f",
+        "EV-390a082fa13fe0a6",
+        "EV-26439e34295a0519",
+        "EV-58268b12aa406620"
+      ],
+      "entityIds": [
+        "EN-9c304d6d50bdb5a8",
+        "EN-0830e0bf8e8fa471",
+        "EN-573b998925ae7499",
+        "EN-1d79127e9d90e89b",
+        "EN-8dc72a4672894e0f",
+        "EN-53b69ef92c836777",
+        "EN-bd86ebd32193b381",
+        "EN-7dfadeb219464a45",
+        "EN-a6e5382c05dd0d16",
+        "EN-04bd675006a7a1ed",
+        "EN-ff8999faeaba6861"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-10-12"
     },
     {
       "id": "TX-product_form-end_user_application",

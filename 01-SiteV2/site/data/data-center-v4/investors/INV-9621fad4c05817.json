@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -71,14 +71,15 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-01-22",
-    "latest_disclosed_at": "2026-10-01",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
+      "other",
       "series_b",
       "series_c"
     ],
@@ -102,9 +103,54 @@
         "entity_id": "EN-e34d1c9011e06204",
         "canonical_entity_id": "",
         "name": "Railway"
+      },
+      {
+        "entity_id": "EN-3edab31749f38347",
+        "canonical_entity_id": "",
+        "name": "Sonilo"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1fc396d173070313",
+        "funding_insight_id": "FI-c8168a9929e94104",
+        "event_ids": [
+          "EV-66193b4f82571d48"
+        ],
+        "company_entity_id": "EN-3edab31749f38347",
+        "company_canonical_entity_id": "",
+        "company_name": "Sonilo",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "Funding Round",
+        "amount_original": "$11 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1100 万美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fa27e646262b9440",
+            "source_url": "https://www.prnewswire.com/news-releases/sonilo-raises-11m-to-build-the-ai-native-audio-stack-for-video-302908461.html",
+            "source_title": "Sonilo 融资 1100 万美元，为视频构建 AI 原生音频栈",
+            "source_content_hash": "1d93f371b2cc8122882f00c3311bf6a27b443818f8bb2adbf3719bb2dc278400",
+            "quote": "an $11 million funding round led by B Capital, with participation from Redpoint",
+            "quote_hash": "f3ead6b535cc5a338e962324b6a7c728f82cf55c246190d44f2f0ab6d94c1d46"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a2cb4dc218fd9b1f",
         "funding_insight_id": "FI-e7151a217bf0631d",
@@ -301,6 +347,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-fa27e646262b9440",
+        "source_url": "https://www.prnewswire.com/news-releases/sonilo-raises-11m-to-build-the-ai-native-audio-stack-for-video-302908461.html",
+        "source_title": "Sonilo 融资 1100 万美元，为视频构建 AI 原生音频栈",
+        "source_content_hash": "1d93f371b2cc8122882f00c3311bf6a27b443818f8bb2adbf3719bb2dc278400",
+        "quote": "an $11 million funding round led by B Capital, with participation from Redpoint",
+        "quote_hash": "f3ead6b535cc5a338e962324b6a7c728f82cf55c246190d44f2f0ab6d94c1d46"
+      },
+      {
         "source_id": "FISRC-dc8fb918b056c843",
         "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
         "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
@@ -364,16 +418,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Sonilo · 其他融资 · 2026-10-14 · 本轮参投 · $11 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fa27e646262b9440"
+        },
+        {
           "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dc8fb918b056c843"
         },
         {
           "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-09a0a8d8826c2cfe"
-        },
-        {
-          "description": "融资来源记录：Modal · C轮 · 2026-05-21 · 本轮联合领投 · $355 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-733016c3a34668d3"
         }
       ],
       "contacts": [],
@@ -403,6 +457,14 @@
           "quote_hash": "0450d404b7d4986faea8c1e25c09c9c9cae769c488fb05dd3b569c25f40e30b0"
         },
         {
+          "source_id": "FISRC-fa27e646262b9440",
+          "source_url": "https://www.prnewswire.com/news-releases/sonilo-raises-11m-to-build-the-ai-native-audio-stack-for-video-302908461.html",
+          "source_title": "Sonilo 融资 1100 万美元，为视频构建 AI 原生音频栈",
+          "source_content_hash": "1d93f371b2cc8122882f00c3311bf6a27b443818f8bb2adbf3719bb2dc278400",
+          "quote": "an $11 million funding round led by B Capital, with participation from Redpoint",
+          "quote_hash": "f3ead6b535cc5a338e962324b6a7c728f82cf55c246190d44f2f0ab6d94c1d46"
+        },
+        {
           "source_id": "FISRC-dc8fb918b056c843",
           "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
           "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
@@ -417,14 +479,6 @@
           "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
           "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
           "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
-        },
-        {
-          "source_id": "FISRC-733016c3a34668d3",
-          "source_url": "https://modal.com/blog/modal-series-c",
-          "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
-          "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
-          "quote": "a round led by General Catalyst and Redpoint",
-          "quote_hash": "eb1d354d77b77301b97269301f89be55e3aa7bd2f5428bd46a0423b8d83ed7e9"
         }
       ],
       "last_verified_at": "2026-10-04",

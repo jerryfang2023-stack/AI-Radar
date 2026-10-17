@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-66193b4f82571d48",
+      "EV-858cec7fa8f4c87b",
       "EV-3798871486ef5a26",
       "EV-4a6ee188df36e21c",
       "EV-d77f6cbbacf2a53b",
@@ -80,10 +82,12 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-01-14",
-    "lastSeen": "2026-10-12",
+    "lastSeen": "2026-10-17",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-66193b4f82571d48",
+        "EV-858cec7fa8f4c87b",
         "EV-3798871486ef5a26",
         "EV-d77f6cbbacf2a53b",
         "EV-ffe023b6919230e0",
@@ -105,6 +109,83 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-66193b4f82571d48",
+        "dataDate": "2026-10-17",
+        "date": "2026-10-14",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Sonilo 融资 1100 万美元，打造面向视频的 AI 原生音频技术栈",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-3edab31749f38347"
+        ]
+      },
+      {
+        "id": "EV-858cec7fa8f4c87b",
+        "dataDate": "2026-10-17",
+        "date": "2026-10-14",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Labelbox 完成超1亿美元 E 轮融资，以推进强化学习和企业 AI 智能体",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-ce084d4801691907"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-ce084d4801691907"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-ce084d4801691907"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-ce084d4801691907"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-ce084d4801691907"
+        ]
+      },
       {
         "id": "EV-3798871486ef5a26",
         "dataDate": "2026-10-12",

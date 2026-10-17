@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-01",
-    "latest_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
       "series_b"
@@ -82,9 +82,54 @@
         "entity_id": "EN-b0a914ead94a88da",
         "canonical_entity_id": "EN-b0a914ead94a88da",
         "name": "Aligned"
+      },
+      {
+        "entity_id": "EN-82976c763031a3fb",
+        "canonical_entity_id": "",
+        "name": "North.cloud"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-127ef5ed27ff1bfc",
+        "funding_insight_id": "FI-c22ff1ce73d25632",
+        "event_ids": [
+          "EV-fda5813917618b8a"
+        ],
+        "company_entity_id": "EN-82976c763031a3fb",
+        "company_canonical_entity_id": "",
+        "company_name": "North.cloud",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d44602a17801a99d",
+            "source_url": "https://www.prnewswire.com/news-releases/northcloud-raises-60m-series-b-to-unify-spend-intelligence-and-enable-full-automation-across-cloud-ai-and-data-302909322.html",
+            "source_title": "North.cloud 完成 6000 万美元 B 轮融资，统一支出智能并实现跨云、AI 和数据的全面自动化",
+            "source_content_hash": "1cd50eb9dd50f4d5d0618d28986ba1cb1b7b48f131e77dc028ca7e63a8a2f582",
+            "quote": "The round was led by PeakSpan Capital",
+            "quote_hash": "99e544a5ef0d8b60faaee8c71168864c9790e9a7bdd51e0b8ad036701ec0c50e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7d62adcc51d32d4c",
         "funding_insight_id": "FI-2ad50155bcf1e72d",
@@ -129,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-d44602a17801a99d",
+        "source_url": "https://www.prnewswire.com/news-releases/northcloud-raises-60m-series-b-to-unify-spend-intelligence-and-enable-full-automation-across-cloud-ai-and-data-302909322.html",
+        "source_title": "North.cloud 完成 6000 万美元 B 轮融资，统一支出智能并实现跨云、AI 和数据的全面自动化",
+        "source_content_hash": "1cd50eb9dd50f4d5d0618d28986ba1cb1b7b48f131e77dc028ca7e63a8a2f582",
+        "quote": "The round was led by PeakSpan Capital",
+        "quote_hash": "99e544a5ef0d8b60faaee8c71168864c9790e9a7bdd51e0b8ad036701ec0c50e"
+      },
+      {
         "source_id": "FISRC-7c7a5a66361dc784",
         "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
         "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
@@ -153,6 +206,10 @@
         {
           "description": "Aligned 于 2026 年宣布完成 6000 万美元 B 轮融资，公告称该轮由 PeakSpan Capital 领投。",
           "source_id": "peakspan_aligned"
+        },
+        {
+          "description": "融资来源记录：North.cloud · B轮 · 2026-10-15 · 本轮领投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d44602a17801a99d"
         },
         {
           "description": "融资来源记录：Aligned · B轮 · 2026-07-01 · 本轮领投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -192,6 +249,14 @@
           "source_content_hash": "9adeb9001673b47033c79400d4a4f718c1153e9de2d6f98a08000fd810a0df4a",
           "quote": "The round was led by PeakSpan Capital, with participation from all existing investors, Hetz Ventures, JAL Ventures and NFX.",
           "quote_hash": "b5389d78f12080354888ab4cd27738808932d8274b40ad1c5e2b09c57ea71058"
+        },
+        {
+          "source_id": "FISRC-d44602a17801a99d",
+          "source_url": "https://www.prnewswire.com/news-releases/northcloud-raises-60m-series-b-to-unify-spend-intelligence-and-enable-full-automation-across-cloud-ai-and-data-302909322.html",
+          "source_title": "North.cloud 完成 6000 万美元 B 轮融资，统一支出智能并实现跨云、AI 和数据的全面自动化",
+          "source_content_hash": "1cd50eb9dd50f4d5d0618d28986ba1cb1b7b48f131e77dc028ca7e63a8a2f582",
+          "quote": "The round was led by PeakSpan Capital",
+          "quote_hash": "99e544a5ef0d8b60faaee8c71168864c9790e9a7bdd51e0b8ad036701ec0c50e"
         },
         {
           "source_id": "FISRC-7c7a5a66361dc784",

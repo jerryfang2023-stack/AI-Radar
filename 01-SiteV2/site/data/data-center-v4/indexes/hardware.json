@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -3654,6 +3654,66 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-6599f6a0f16fa103",
+      "snapshotKey": "6599f6a0f16fa103",
+      "snapshotId": "HWS-0c950fb62d0c96da",
+      "eventId": "EV-e100f5876a4f8e36",
+      "eventIds": [
+        "EV-e100f5876a4f8e36"
+      ],
+      "dataDate": "2026-10-17",
+      "date": "2026-10-17",
+      "title": "SpaceX",
+      "subject": "SpaceX",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-9bb9f95b22a00b72"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-17",
+          "hardware_fact_id": "HWF-9bb9f95b22a00b72",
+          "fact_type": "product",
+          "observed_at": "2026-10-17",
+          "subject_entity_id": "EN-e78bdebae031095b",
+          "subject_name": "SpaceX",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "近日，据外媒报道，明星AI数据中心公司Firmus，正式发布IPO撤单公告。",
+          "event_refs": [
+            "EV-e100f5876a4f8e36"
+          ],
+          "claim_ref": "CL-958e62cba9f9a0d9",
+          "source_refs": [
+            "SA-001b46dbf9a0f9dc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-17/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.36kr.com/p/4028463605043845",
+      "entityIds": [
+        "EN-e78bdebae031095b"
+      ]
+    },
     {
       "id": "HWC-44203d15d2d13a56",
       "snapshotKey": "44203d15d2d13a56",
@@ -21869,30 +21929,29 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-10-16",
-      "funnel_id": "LF-c479d3daa91b0c22",
+      "data_date": "2026-10-17",
+      "funnel_id": "LF-7af195e26b092a5d",
       "lens": "hardware",
-      "date": "2026-10-16",
+      "date": "2026-10-17",
       "monitoring_paths": [],
-      "raw_documents": 12,
-      "original_sources": 12,
-      "valid_claims": 6,
-      "observations": 0,
-      "canonical_events": 5,
+      "raw_documents": 13,
+      "original_sources": 13,
+      "valid_claims": 9,
+      "observations": 1,
+      "canonical_events": 7,
       "blocker_counts": {
-        "no_source_bounded_event": 3,
+        "no_source_bounded_event": 2,
         "rumor_requires_primary_confirmation": 1,
-        "event_not_ai_relevant": 1,
-        "multiple_funding_recipients_require_separate_sources": 1,
+        "event_not_ai_relevant": 2,
         "multi_event_roundup_not_single_event_source": 1
       },
       "rates": {
         "original_source_rate": 1,
-        "valid_claim_rate": 0.5,
-        "observation_rate": 0,
-        "event_conversion_rate": 0.8333333333333334
+        "valid_claim_rate": 0.6923076923076923,
+        "observation_rate": 0.1111111111111111,
+        "event_conversion_rate": 0.7777777777777778
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-16/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-17/monitoring-funnel.json"
     }
   ]
 }

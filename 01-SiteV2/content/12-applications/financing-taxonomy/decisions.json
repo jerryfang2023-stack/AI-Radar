@@ -32311,7 +32311,335 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-16T03:06:13.889Z"
+    },
+    "EV-66193b4f82571d48": {
+      "id": "EV-66193b4f82571d48",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "media-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "Sonilo 自研视频原生音乐与音效生成模型，并通过 API 向开发者与内容平台提供音频生成能力。",
+      "input_hash": "7ba2346007c0fff5ef362e9b557a018eba0d8787ef1b1f436985b3964d70d317",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fa27e646262b9440",
+          "quote": "Sonilo, a generative audio company building proprietary video-native music and sound models"
+        },
+        {
+          "source_id": "FISRC-fa27e646262b9440",
+          "quote": "At the core of Sonilo's platform is its Sound World Model, a proprietary multimodal AI system that connects video understanding, audio generation, and temporal alignment."
+        },
+        {
+          "source_id": "FISRC-fa27e646262b9440",
+          "quote": "Sonilo's platform generates music and sound effects directly from footage or text for short-form and short-drama creators, developer platforms building AI video workflows, and enterprise production teams."
+        },
+        {
+          "source_id": "FISRC-5dc1d5d797243dcc",
+          "quote": "Sonilo has developer docs at https://platform.sonilo.com/docs for video-to-music, text-to-music, video-to-sound-effects, text-to-sound-effects, audio ducking, task polling, and account usage endpoints."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-17T02:56:57.574Z"
+    },
+    "EV-858cec7fa8f4c87b": {
+      "id": "EV-858cec7fa8f4c87b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "evaluation",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "Labelbox 以 Horizon 为前沿模型实验室提供强化学习环境与评测基础设施，并为企业提供智能体部署。",
+      "input_hash": "717263fd87dbce88df5e3e94668c5fda3131622366cc91ddfa922d31022ba918",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-31a53dcde47855a0",
+          "quote": "Labelbox, the AI platform powering reinforcement learning for frontier models and managed agents for enterprises"
+        },
+        {
+          "source_id": "FISRC-31a53dcde47855a0",
+          "quote": "Horizon, which provides reinforcement learning environments and evaluation infrastructure for frontier AI labs"
+        },
+        {
+          "source_id": "FISRC-31a53dcde47855a0",
+          "quote": "Recursion Managed Agents, which enables enterprises to deploy fleets of agents that work inside existing business applications and improve with every run."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-17T02:56:57.574Z"
+    },
+    "EV-78ed82b05ec5fbf1": {
+      "id": "EV-78ed82b05ec5fbf1",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "无问芯穹以 Agentic Infra 平台统一调度多元异构算力并提供大模型 MaaS 服务，主营 AI 算力与云服务。",
+      "input_hash": "49f9331fd9c9ebc65525736210c32cad942f4400589010a81b49eb50e47df88b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ac6f8ef26f3ff424",
+          "quote": "清华系AI原生基础设施企业无问芯穹完成23亿元C轮融资，累计融资43亿元，创下中国AI原生基础设施赛道最高纪录"
+        },
+        {
+          "source_id": "FISRC-7ba4f7b0de081cf3",
+          "quote": "截至今年7月，其Agentic MaaS大模型服务平台单日Token调用量较去年12月实现了40倍的爆发增长。"
+        },
+        {
+          "source_id": "FISRC-7ba4f7b0de081cf3",
+          "quote": "无问芯穹构建了由平台管家智能体、智算运维智能体和算子生成智能体KernelMind组成的基础设施智能体蜂群"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-17T02:56:57.574Z"
+    },
+    "EV-1a8680342a138dd5": {
+      "id": "EV-1a8680342a138dd5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Ambio 为再生塑料采购提供 AI 原生端到端采购平台，属电商零售与供应链行业软件。",
+      "input_hash": "9997db739b015afd83db0110dd280df7f9b3163b016975c1d739ff894b7ef79b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3ffe20a27f770579",
+          "quote": "Ambio, a Helsinki-based startup building an AI-native end-to-end procurement solution for recycled plastics"
+        },
+        {
+          "source_id": "FISRC-3ffe20a27f770579",
+          "quote": "Ambio is building an AI-native, end-to-end procurement solution for recycled plastics that covers the full purchasing cycle, from material discovery to long-term deliveries."
+        },
+        {
+          "source_id": "FISRC-fe67225d32eafb35",
+          "quote": "verified materials, structured quality data, and one accountable partner from the first sample to long-term deliveries"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-17T02:56:58.516Z"
+    },
+    "EV-098ca67709c1bd31": {
+      "id": "EV-098ca67709c1bd31",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "Skeleton 以超级电容器与储能系统为 AI 数据中心提供高功率供电基础设施，属算力基础设施。",
+      "input_hash": "de396d40e1c613e205494825c56ecc571a897e7aa7b3790a91e25e3ba14328de",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c7331e805a3a691b",
+          "quote": "Tallinn-based Skeleton Technologies, a developer high-power systems for AI infrastructure"
+        },
+        {
+          "source_id": "FISRC-b054b4d0256a32ae",
+          "quote": "Skeleton Technologies, a global AI infrastructure and grid power systems provider"
+        },
+        {
+          "source_id": "FISRC-c7331e805a3a691b",
+          "quote": "Their power systems protect GPU clusters from millisecond-level spikes, enable hyperscalers to run at higher rack densities without grid compromise, and reportedly make AI data centers up to 40% more energy efficient."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-17T02:56:58.516Z"
+    },
+    "EV-8a00f1d262b695e8": {
+      "id": "EV-8a00f1d262b695e8",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "Dougs 以自研代理式平台向小企业交付会计与财务管理服务，属企业财务应用。",
+      "input_hash": "70dbe616b64199cfcc070e6cdf2b1ad8cdef01fc37f7832cf4cf5b5bc1fe1ea6",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9b78523a72b4ef0e",
+          "quote": "Dougs, a Lyon-based technology company delivering regulated accounting and financial management services to small businesses"
+        },
+        {
+          "source_id": "FISRC-9b78523a72b4ef0e",
+          "quote": "Its platform covers company formation, accounting, legal, payroll, invoicing through a certified e-invoicing platform, a business account, and wealth management via a dedicated subsidiary."
+        },
+        {
+          "source_id": "FISRC-9b78523a72b4ef0e",
+          "quote": "We built our own agentic platform, with a harness that plugs straight into our tools and encodes our accounting expertise."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-17T02:56:58.516Z"
+    },
+    "EV-61c9891d791417be": {
+      "id": "EV-61c9891d791417be",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Othello 基于自研模型为实时销售通话提供桌面辅助，属企业销售应用。",
+      "input_hash": "292b823fb6cc204877c5c15ad2a34b9cb4c29b0f4e37d7a3ab2a32632ecc37c1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a6e1e76d3e6bb0dc",
+          "quote": "Othello, an applied AI lab building AI models for live sales calls"
+        },
+        {
+          "source_id": "FISRC-a6e1e76d3e6bb0dc",
+          "quote": "Othello runs on Hamlet, a proprietary model built for live sales calls. A desktop app starts when a call begins and shows live pop-ups in any online meeting, without joining as a participant."
+        },
+        {
+          "source_id": "FISRC-6667915df1c0d6a4",
+          "quote": "Othello listens in on video calls and uses AI trained on a company's uploaded sales and product materials to suggest questions to ask, answer tricky queries, and flag missed opportunities in real time through an on-screen overlay."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-17T02:56:58.516Z"
+    },
+    "EV-fda5813917618b8a": {
+      "id": "EV-fda5813917618b8a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "rationale": "North.cloud 提供云与 AI 支出智能及自动化财务管控平台，属企业财务管理软件。",
+      "input_hash": "5930a650cfe60f1771b122a2ea20daeeaf7ffa6d3f58a9ce7e6184681075bc9e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d44602a17801a99d",
+          "quote": "North.cloud, the financial operating system for cloud, AI and data"
+        },
+        {
+          "source_id": "FISRC-5b13f8aa9150088a",
+          "quote": "North.cloud is the infrastructure spend intelligence and automation platform for modern businesses"
+        },
+        {
+          "source_id": "FISRC-d44602a17801a99d",
+          "quote": "TokenFlow brings model usage, attribution, budgets, and financial controls into the same system companies use to manage cloud infrastructure"
+        },
+        {
+          "source_id": "FISRC-d44602a17801a99d",
+          "quote": "extended Autobot, North's automated commitment laddering engine"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-17T02:56:58.516Z"
+    },
+    "EV-5c218a168bdb6617": {
+      "id": "EV-5c218a168bdb6617",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "home-devices",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "SUAVE 核心产品为面向消费者的 AI 音乐生成创作主机硬件，属消费 AI 终端。",
+      "input_hash": "5d4c94917c39cb8167c53a280dd11e7674c6a8b639f6376a0b7913b26c1ac79b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dec4a9ab55eb22c8",
+          "quote": "AI 音乐生成创作硬件公司 SUAVE 已完成千万级种子轮融资"
+        },
+        {
+          "source_id": "FISRC-dec4a9ab55eb22c8",
+          "quote": "SUAVE 的核心产品是一台 AI 音乐主机——搭配不同配件，可组合成吉他、键盘、碟机、电吹管等形态，覆盖弹拨、键盘、打击、吹奏和跳舞等场景"
+        },
+        {
+          "source_id": "FISRC-d4e068e34852732b",
+          "quote": "SUAVE 的核心产品是一台 AI 音乐主机，采用类似任天堂 Switch 的“1+N+X”创作系统理念"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-17T02:56:58.516Z"
     }
   },
-  "generated_at": "2026-10-16T03:06:13.889Z"
+  "generated_at": "2026-10-17T02:56:58.516Z"
 }

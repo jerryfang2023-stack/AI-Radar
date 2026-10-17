@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,30 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-10-04",
-    "latest_disclosed_at": "2026-10-04",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "other"
+      "other",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-0369c8fcda657a43",
+        "canonical_entity_id": "EN-0369c8fcda657a43",
+        "name": "上海无问芯穹智能科技股份有限公司"
+      },
       {
         "entity_id": "EN-d5cffd7a93040807",
         "canonical_entity_id": "",
@@ -86,6 +92,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a7b7cc14bc7ebe7a",
+        "funding_insight_id": "FI-9f56d9e17ea9cdbd",
+        "event_ids": [
+          "EV-1ab1592853c9099a",
+          "EV-78ed82b05ec5fbf1"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "EN-0369c8fcda657a43",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "23亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "23 亿元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9d1b02904aa21475",
+            "source_url": "https://finance.eastmoney.com/a/202610123892552169.html",
+            "source_title": "创行业单次融资纪录，无问芯穹完成23亿元C轮融资 _ 东方财富网",
+            "source_content_hash": "c76ec87fa55c86fe",
+            "quote": "产业投资方包括Dabanc Holding、联想、腾讯、百度等",
+            "quote_hash": "b627064c62c0a03ed9a777ec8199bf2b5503b497ddd9f89832c181e15d77d647"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ea7ab11f8f479cac",
         "funding_insight_id": "FI-c806d69a64a22c80",
@@ -130,7 +177,8 @@
         "activity_id": "IA-9f724eab16cbe62c",
         "funding_insight_id": "FI-9f56d9e17ea9cdbd",
         "event_ids": [
-          "EV-1ab1592853c9099a"
+          "EV-1ab1592853c9099a",
+          "EV-78ed82b05ec5fbf1"
         ],
         "company_entity_id": "EN-0369c8fcda657a43",
         "company_canonical_entity_id": "EN-0369c8fcda657a43",
@@ -192,6 +240,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-9d1b02904aa21475",
+        "source_url": "https://finance.eastmoney.com/a/202610123892552169.html",
+        "source_title": "创行业单次融资纪录，无问芯穹完成23亿元C轮融资 _ 东方财富网",
+        "source_content_hash": "c76ec87fa55c86fe",
+        "quote": "产业投资方包括Dabanc Holding、联想、腾讯、百度等",
+        "quote_hash": "b627064c62c0a03ed9a777ec8199bf2b5503b497ddd9f89832c181e15d77d647"
+      },
       {
         "source_id": "FISRC-f5aa056fbd5702b8",
         "source_url": "https://www.sohu.com/a/1083931138_115479",
@@ -298,16 +354,16 @@
           "source_id": "baidu_company_overview"
         },
         {
+          "description": "融资来源记录：上海无问芯穹智能科技股份有限公司 · C轮 · 2026-10-12 · 本轮参投 · 23亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9d1b02904aa21475"
+        },
+        {
           "description": "融资来源记录：上海无问芯穹智能科技股份有限公司 · 其他融资 · 2026-10-04 · 本轮参投 · 数亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f5aa056fbd5702b8"
         },
         {
           "description": "融资来源记录：上海无问芯穹智能科技股份有限公司 · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b3271ee3d3c2de4d"
-        },
-        {
-          "description": "融资来源记录：无问芯穹 · 历史轮次未披露 · 早期投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-67d072b1aca37b5d"
         }
       ],
       "contacts": [
@@ -373,6 +429,14 @@
           "quote_hash": "76f702d3e614f608737b7576dd7e66d3ecea08ac4fc70b1062ae9f8ac05e0e5c"
         },
         {
+          "source_id": "FISRC-9d1b02904aa21475",
+          "source_url": "https://finance.eastmoney.com/a/202610123892552169.html",
+          "source_title": "创行业单次融资纪录，无问芯穹完成23亿元C轮融资 _ 东方财富网",
+          "source_content_hash": "c76ec87fa55c86fe",
+          "quote": "产业投资方包括Dabanc Holding、联想、腾讯、百度等",
+          "quote_hash": "b627064c62c0a03ed9a777ec8199bf2b5503b497ddd9f89832c181e15d77d647"
+        },
+        {
           "source_id": "FISRC-f5aa056fbd5702b8",
           "source_url": "https://www.sohu.com/a/1083931138_115479",
           "source_title": "无问芯穹秘密递表港交所：已融资43亿，腾讯、百度、智谱等押注",
@@ -387,14 +451,6 @@
           "source_content_hash": "30d4d6c98bdee9b0",
           "quote": "公司历史投资方包括联想创投、小米、百度、腾讯、智谱等产业资本",
           "quote_hash": "20631f8db02a325a5c1e21e54ad0435a82e65336095ff63ad1b0b9320bbae68d"
-        },
-        {
-          "source_id": "FISRC-67d072b1aca37b5d",
-          "source_url": "https://www.tmtpost.com/7235681.html",
-          "source_title": "Infinigence AI Raises US$ 70.2 Million in Series A Funding Round-钛媒体官方网站",
-          "source_content_hash": "56a87e89ab6a1ab2",
-          "quote": "with support from major investors, including Chinese tech giant Baidu, Zhipu AI, and Sequoia China",
-          "quote_hash": "5838c5af42c09dfd74a2b6534fd65b82678314880b4881423006371a77cb44bf"
         }
       ],
       "profile_type": "organization",

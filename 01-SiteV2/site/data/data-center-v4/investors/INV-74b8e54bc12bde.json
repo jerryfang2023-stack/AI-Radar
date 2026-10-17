@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-06",
-    "latest_disclosed_at": "2026-08-06",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
+      "other",
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-49cf97a820220e0f",
+        "canonical_entity_id": "",
+        "name": "Dougs"
+      },
       {
         "entity_id": "EN-2e1af44b18f15a1f",
         "canonical_entity_id": "",
@@ -85,6 +91,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-35b66f2c95ee411e",
+        "funding_insight_id": "FI-e0a3631669f7d051",
+        "event_ids": [
+          "EV-8a00f1d262b695e8"
+        ],
+        "company_entity_id": "EN-49cf97a820220e0f",
+        "company_canonical_entity_id": "",
+        "company_name": "Dougs",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "Growth Capital",
+        "amount_original": "€50 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万欧元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-cc867baeed6eb2f9",
+            "source_url": "https://expedition.capital/dougs-raises-e50-million-to-accelerate-its-full-stack-ai-powered-accounting-platform/",
+            "source_title": "Dougs raises €50 million to accelerate its full-stack, AI-powered accounting platform",
+            "source_content_hash": "7b42f79224ed7c5d",
+            "quote": "Dougs today announced a €50 million funding round led by existing investor Expedition Growth Capital.",
+            "quote_hash": "ddcf6c8e2b9fdcff657967f74319e6a10f6f541af945439ab7d92081a2d676ea"
+          },
+          {
+            "source_id": "FISRC-8b82502d6fd06575",
+            "source_url": "https://www.thesaasnews.com/news/dougs-raises-50m-growth-capital/",
+            "source_title": "Dougs Raises €50M Growth Capital",
+            "source_content_hash": "f3719625dfcb275b",
+            "quote": "This round was led by Expedition Growth Capital, an existing investor in the company.",
+            "quote_hash": "7a930533268d787b09e96c3e46930d28b8239dff53ba8d17bc6182759469fe68"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f339b42d06629bec",
         "funding_insight_id": "FI-ac72092425b5caf2",
@@ -128,6 +182,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cc867baeed6eb2f9",
+        "source_url": "https://expedition.capital/dougs-raises-e50-million-to-accelerate-its-full-stack-ai-powered-accounting-platform/",
+        "source_title": "Dougs raises €50 million to accelerate its full-stack, AI-powered accounting platform",
+        "source_content_hash": "7b42f79224ed7c5d",
+        "quote": "Dougs today announced a €50 million funding round led by existing investor Expedition Growth Capital.",
+        "quote_hash": "ddcf6c8e2b9fdcff657967f74319e6a10f6f541af945439ab7d92081a2d676ea"
+      },
+      {
+        "source_id": "FISRC-8b82502d6fd06575",
+        "source_url": "https://www.thesaasnews.com/news/dougs-raises-50m-growth-capital/",
+        "source_title": "Dougs Raises €50M Growth Capital",
+        "source_content_hash": "f3719625dfcb275b",
+        "quote": "This round was led by Expedition Growth Capital, an existing investor in the company.",
+        "quote_hash": "7a930533268d787b09e96c3e46930d28b8239dff53ba8d17bc6182759469fe68"
+      },
+      {
         "source_id": "FISRC-65466476b02403ef",
         "source_url": "https://techcrunch.com/2026/08/06/omilia-raises-67m-to-scale-its-customer-support-platform",
         "source_title": "Omilia 融资 6700 万美元，以扩展其客户支持平台",
@@ -169,6 +239,10 @@
         }
       ],
       "track_record": [
+        {
+          "description": "融资来源记录：Dougs · 其他融资 · 2026-10-15 · 本轮领投 · €50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cc867baeed6eb2f9"
+        },
         {
           "description": "融资来源记录：Omilia · B轮 · 2026-08-06 · 本轮领投 · $67 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-65466476b02403ef"
@@ -215,6 +289,22 @@
           "source_content_hash": "121734ee6f4ef1bc8048ad7107330fa06b28532549b018e8d3866c891a1b0b4c",
           "quote": "We partner respectfully with founders and support their companies’ paths to category leadership. $ 10 – 30 million+ investment size Minority ownership positions",
           "quote_hash": "5577ccda44550972caeb62012a8faaabadc954c0d003a4c7bd166238501c6f56"
+        },
+        {
+          "source_id": "FISRC-cc867baeed6eb2f9",
+          "source_url": "https://expedition.capital/dougs-raises-e50-million-to-accelerate-its-full-stack-ai-powered-accounting-platform/",
+          "source_title": "Dougs raises €50 million to accelerate its full-stack, AI-powered accounting platform",
+          "source_content_hash": "7b42f79224ed7c5d",
+          "quote": "Dougs today announced a €50 million funding round led by existing investor Expedition Growth Capital.",
+          "quote_hash": "ddcf6c8e2b9fdcff657967f74319e6a10f6f541af945439ab7d92081a2d676ea"
+        },
+        {
+          "source_id": "FISRC-8b82502d6fd06575",
+          "source_url": "https://www.thesaasnews.com/news/dougs-raises-50m-growth-capital/",
+          "source_title": "Dougs Raises €50M Growth Capital",
+          "source_content_hash": "f3719625dfcb275b",
+          "quote": "This round was led by Expedition Growth Capital, an existing investor in the company.",
+          "quote_hash": "7a930533268d787b09e96c3e46930d28b8239dff53ba8d17bc6182759469fe68"
         },
         {
           "source_id": "FISRC-65466476b02403ef",

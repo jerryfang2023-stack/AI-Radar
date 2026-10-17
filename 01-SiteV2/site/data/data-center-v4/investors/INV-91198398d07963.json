@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,26 +61,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-05",
-    "latest_disclosed_at": "2026-10-01",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 3,
-      "participant": 2
+      "lead": 4,
+      "participant": 3
     },
     "round_codes": [
+      "other",
       "seed",
       "series_a2",
       "series_b",
-      "series_c"
+      "series_c",
+      "series_e"
     ],
     "portfolio_companies": [
       {
@@ -92,6 +94,11 @@
         "entity_id": "EN-641a309108850fc9",
         "canonical_entity_id": "",
         "name": "Goodfire AI"
+      },
+      {
+        "entity_id": "EN-ce084d4801691907",
+        "canonical_entity_id": "",
+        "name": "Labelbox"
       },
       {
         "entity_id": "EN-80f681ea74fb8ccc",
@@ -107,9 +114,94 @@
         "entity_id": "EN-e23228440ca5340f",
         "canonical_entity_id": "",
         "name": "Seltz"
+      },
+      {
+        "entity_id": "EN-3edab31749f38347",
+        "canonical_entity_id": "",
+        "name": "Sonilo"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c241288d78e74b1e",
+        "funding_insight_id": "FI-0c6b560baefe49e0",
+        "event_ids": [
+          "EV-858cec7fa8f4c87b"
+        ],
+        "company_entity_id": "EN-ce084d4801691907",
+        "company_canonical_entity_id": "",
+        "company_name": "Labelbox",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "more than $100 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-31a53dcde47855a0",
+            "source_url": "https://www.prnewswire.com/news-releases/labelbox-raises-100-million-in-series-e-funding-to-advance-reinforcement-learning-and-enterprise-ai-agents-302909147.html",
+            "source_title": "Labelbox 在 E 轮融资中筹集超 1 亿美元，以推进强化学习和企业 AI 智能体",
+            "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
+            "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
+            "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-795f5080385f2cb5",
+        "funding_insight_id": "FI-c8168a9929e94104",
+        "event_ids": [
+          "EV-66193b4f82571d48"
+        ],
+        "company_entity_id": "EN-3edab31749f38347",
+        "company_canonical_entity_id": "",
+        "company_name": "Sonilo",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "Funding Round",
+        "amount_original": "$11 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1100 万美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-fa27e646262b9440",
+            "source_url": "https://www.prnewswire.com/news-releases/sonilo-raises-11m-to-build-the-ai-native-audio-stack-for-video-302908461.html",
+            "source_title": "Sonilo 融资 1100 万美元，为视频构建 AI 原生音频栈",
+            "source_content_hash": "1d93f371b2cc8122882f00c3311bf6a27b443818f8bb2adbf3719bb2dc278400",
+            "quote": "an $11 million funding round led by B Capital, with participation from Redpoint",
+            "quote_hash": "f3ead6b535cc5a338e962324b6a7c728f82cf55c246190d44f2f0ab6d94c1d46"
+          }
+        ]
+      },
       {
         "activity_id": "IA-aae55c071c1092b2",
         "funding_insight_id": "FI-7a68c3471af400da",
@@ -354,6 +446,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-31a53dcde47855a0",
+        "source_url": "https://www.prnewswire.com/news-releases/labelbox-raises-100-million-in-series-e-funding-to-advance-reinforcement-learning-and-enterprise-ai-agents-302909147.html",
+        "source_title": "Labelbox 在 E 轮融资中筹集超 1 亿美元，以推进强化学习和企业 AI 智能体",
+        "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
+        "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
+        "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
+      },
+      {
+        "source_id": "FISRC-fa27e646262b9440",
+        "source_url": "https://www.prnewswire.com/news-releases/sonilo-raises-11m-to-build-the-ai-native-audio-stack-for-video-302908461.html",
+        "source_title": "Sonilo 融资 1100 万美元，为视频构建 AI 原生音频栈",
+        "source_content_hash": "1d93f371b2cc8122882f00c3311bf6a27b443818f8bb2adbf3719bb2dc278400",
+        "quote": "an $11 million funding round led by B Capital, with participation from Redpoint",
+        "quote_hash": "f3ead6b535cc5a338e962324b6a7c728f82cf55c246190d44f2f0ab6d94c1d46"
+      },
+      {
         "source_id": "FISRC-05cde27c80650d6f",
         "source_url": "https://www.prnewswire.com/news-releases/palebluedot-ai-raises-200m-series-c-round-to-scale-super-intelligence-infrastructure-platform-302896601.html",
         "source_title": "PaleBlueDot AI 完成 2 亿美元 C 轮融资，以扩展超级智能基础设施平台",
@@ -458,12 +566,16 @@
           "source_id": "bcapital_home"
         },
         {
-          "description": "融资来源记录：PaleBlueDot AI · C轮 · 2026-10-01 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-05cde27c80650d6f"
+          "description": "融资来源记录：Labelbox · E轮 · 2026-10-14 · 本轮参投 · more than $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-31a53dcde47855a0"
         },
         {
-          "description": "融资来源记录：ChipAgents · A2轮 · 2026-07-29 · 本轮领投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cd04c9b2d1340164"
+          "description": "融资来源记录：Sonilo · 其他融资 · 2026-10-14 · 本轮领投 · $11 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fa27e646262b9440"
+        },
+        {
+          "description": "融资来源记录：PaleBlueDot AI · C轮 · 2026-10-01 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-05cde27c80650d6f"
         }
       ],
       "contacts": [
@@ -501,28 +613,28 @@
           "quote_hash": "5a44a49f589dddc7f986598627306800a43e0491082d1a7b737f0a0036bc2f08"
         },
         {
+          "source_id": "FISRC-31a53dcde47855a0",
+          "source_url": "https://www.prnewswire.com/news-releases/labelbox-raises-100-million-in-series-e-funding-to-advance-reinforcement-learning-and-enterprise-ai-agents-302909147.html",
+          "source_title": "Labelbox 在 E 轮融资中筹集超 1 亿美元，以推进强化学习和企业 AI 智能体",
+          "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
+          "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
+          "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
+        },
+        {
+          "source_id": "FISRC-fa27e646262b9440",
+          "source_url": "https://www.prnewswire.com/news-releases/sonilo-raises-11m-to-build-the-ai-native-audio-stack-for-video-302908461.html",
+          "source_title": "Sonilo 融资 1100 万美元，为视频构建 AI 原生音频栈",
+          "source_content_hash": "1d93f371b2cc8122882f00c3311bf6a27b443818f8bb2adbf3719bb2dc278400",
+          "quote": "an $11 million funding round led by B Capital, with participation from Redpoint",
+          "quote_hash": "f3ead6b535cc5a338e962324b6a7c728f82cf55c246190d44f2f0ab6d94c1d46"
+        },
+        {
           "source_id": "FISRC-05cde27c80650d6f",
           "source_url": "https://www.prnewswire.com/news-releases/palebluedot-ai-raises-200m-series-c-round-to-scale-super-intelligence-infrastructure-platform-302896601.html",
           "source_title": "PaleBlueDot AI 完成 2 亿美元 C 轮融资，以扩展超级智能基础设施平台",
           "source_content_hash": "6e420312a93cf1d9fb0c5dc88ec2b95cb97f03a273ccf1896a5f466aad867989",
           "quote": "B Capital, an existing shareholder, participated in the Series C along with other global investors.",
           "quote_hash": "1043fc03f0085f30abd22fdd944799f6255d995bcbb6d45705a95d31f851a03d"
-        },
-        {
-          "source_id": "FISRC-cd04c9b2d1340164",
-          "source_url": "https://www.businesswire.com/news/home/20260729819576/en/ChipAgents-Expands-Series-A-Funding-to-%24134-Million-as-Demand-Grows-for-Agentic-AI-in-Semiconductor-Design",
-          "source_title": "ChipAgents 将 A 轮融资扩大至 13400 万美元，半导体设计对智能体 AI 的需求日益增长",
-          "source_content_hash": "c4c1856ea78e70706a7dad6982ee3f116a9a0d69cacfc9abdf153799bdc32118",
-          "quote": "new investor B Capital joining Bessemer Venture Partners, Micron, MediaTek, Ericsson, ScOp, and other existing investors.",
-          "quote_hash": "15ca66efc054a9b1d989df055e9764043657c53d027c285dbc934bdeaf2f9961"
-        },
-        {
-          "source_id": "FISRC-762232331bf847c3",
-          "source_url": "https://chipagents.ai/newsroom",
-          "source_title": "Newsroom | ChipAgents",
-          "source_content_hash": "a785ef14f4e73e9e",
-          "quote": "VMblog covers ChipAgents' $60 million Series A2 financing, led by new investor B Capital",
-          "quote_hash": "63f81caf7553f7371b7b9201335029726cb7150e3fcfd8fe54feb198696478e6"
         }
       ],
       "last_verified_at": "2026-09-25",

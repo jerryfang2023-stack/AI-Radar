@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 13,
+    "current_round_count": 14,
     "historical_or_ambiguous_count": 14,
-    "portfolio_company_count": 13,
+    "portfolio_company_count": 14,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 12,
-    "china_market_company_count": 12,
+    "china_market_activity_count": 13,
+    "china_market_company_count": 13,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-10-09",
+    "latest_disclosed_at": "2026-10-12",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 14,
       "lead": 1,
-      "participant": 10
+      "participant": 11
     },
     "round_codes": [
       "angel",
@@ -87,6 +87,7 @@
       "series_a_plus_plus",
       "series_b",
       "series_b_plus",
+      "series_c",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -114,6 +115,11 @@
         "entity_id": "EN-1032f7a4df33f629",
         "canonical_entity_id": "EN-1032f7a4df33f629",
         "name": "千寻智能"
+      },
+      {
+        "entity_id": "EN-0369c8fcda657a43",
+        "canonical_entity_id": "EN-0369c8fcda657a43",
+        "name": "上海无问芯穹智能科技股份有限公司"
       },
       {
         "entity_id": "EN-4e781f6e9e5a49bc",
@@ -157,6 +163,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d99a3ade4c730e07",
+        "funding_insight_id": "FI-9f56d9e17ea9cdbd",
+        "event_ids": [
+          "EV-1ab1592853c9099a",
+          "EV-78ed82b05ec5fbf1"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "EN-0369c8fcda657a43",
+        "company_name": "上海无问芯穹智能科技股份有限公司",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "23亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "23 亿元"
+        },
+        "announced_at": "2026-10-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9d1b02904aa21475",
+            "source_url": "https://finance.eastmoney.com/a/202610123892552169.html",
+            "source_title": "创行业单次融资纪录，无问芯穹完成23亿元C轮融资 _ 东方财富网",
+            "source_content_hash": "c76ec87fa55c86fe",
+            "quote": "财务投资机构包括红杉中国、启明创投、达晨财智、顺为资本等知名机构",
+            "quote_hash": "36b97ec701f4c46e31460df0ab0fbafbbc69085569dc4cc899e9612a4f784954"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b378e35d32d7c783",
         "funding_insight_id": "FI-55c412cc6616d862",
@@ -761,7 +808,8 @@
         "funding_insight_id": "FI-c806d69a64a22c80",
         "event_ids": [
           "EV-7baf4ab86798fef5",
-          "EV-1ab1592853c9099a"
+          "EV-1ab1592853c9099a",
+          "EV-78ed82b05ec5fbf1"
         ],
         "company_entity_id": "EN-d5cffd7a93040807",
         "company_canonical_entity_id": "",
@@ -1162,6 +1210,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9d1b02904aa21475",
+        "source_url": "https://finance.eastmoney.com/a/202610123892552169.html",
+        "source_title": "创行业单次融资纪录，无问芯穹完成23亿元C轮融资 _ 东方财富网",
+        "source_content_hash": "c76ec87fa55c86fe",
+        "quote": "财务投资机构包括红杉中国、启明创投、达晨财智、顺为资本等知名机构",
+        "quote_hash": "36b97ec701f4c46e31460df0ab0fbafbbc69085569dc4cc899e9612a4f784954"
+      },
+      {
         "source_id": "FISRC-a60cc435d9a05afa",
         "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
         "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
@@ -1451,12 +1507,12 @@
           "source_id": "hongshan_about"
         },
         {
-          "description": "融资来源记录：鲲为科技 · 轮次未披露 · 2026-10-09 · 本轮参投 · 4 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a60cc435d9a05afa"
+          "description": "融资来源记录：上海无问芯穹智能科技股份有限公司 · C轮 · 2026-10-12 · 本轮参投 · 23亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9d1b02904aa21475"
         },
         {
-          "description": "融资来源记录：蝴蝶效应（Butterfly Effect） · B+轮 · 2026-10-08 · 本轮参投 · 超过5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fa1b68e4f1bdb348"
+          "description": "融资来源记录：鲲为科技 · 轮次未披露 · 2026-10-09 · 本轮参投 · 4 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a60cc435d9a05afa"
         }
       ],
       "contacts": [
@@ -1485,6 +1541,14 @@
           "quote_hash": "f4d15ec4b3e8343bd9c848911b95fbf6648ba3eaa4b2a17ef1b4616f96e8143f"
         },
         {
+          "source_id": "FISRC-9d1b02904aa21475",
+          "source_url": "https://finance.eastmoney.com/a/202610123892552169.html",
+          "source_title": "创行业单次融资纪录，无问芯穹完成23亿元C轮融资 _ 东方财富网",
+          "source_content_hash": "c76ec87fa55c86fe",
+          "quote": "财务投资机构包括红杉中国、启明创投、达晨财智、顺为资本等知名机构",
+          "quote_hash": "36b97ec701f4c46e31460df0ab0fbafbbc69085569dc4cc899e9612a4f784954"
+        },
+        {
           "source_id": "FISRC-a60cc435d9a05afa",
           "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
           "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
@@ -1499,14 +1563,6 @@
           "source_content_hash": "4485c3ef38069f76",
           "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
           "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
-        },
-        {
-          "source_id": "FISRC-fa1b68e4f1bdb348",
-          "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "source_title": "Manus融资5亿美元回归国内市场，还有机会吗？",
-          "source_content_hash": "092b22b325c27f3c",
-          "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
-          "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
         }
       ],
       "last_verified_at": "2026-09-25",

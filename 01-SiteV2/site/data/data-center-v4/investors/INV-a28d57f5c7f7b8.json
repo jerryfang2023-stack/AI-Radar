@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-14",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 2,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-79648183530ff7c5",
+        "canonical_entity_id": "",
+        "name": "Othello"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-0b2ac9060ce9210c",
+        "funding_insight_id": "FI-858f454daf4ee906",
+        "event_ids": [
+          "EV-61c9891d791417be"
+        ],
+        "company_entity_id": "EN-79648183530ff7c5",
+        "company_canonical_entity_id": "",
+        "company_name": "Othello",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a6e1e76d3e6bb0dc",
+            "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+            "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+            "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+            "quote": "today announced $8 million in seed funding from a16z speedrun, Owl Capital and Long Journey Ventures.",
+            "quote_hash": "16578cc958d2acb1c9ae0bcc05674f94a53835eab4d44cbaeae9ed150d84dcc6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-73e7742f1b14a9bd",
         "funding_insight_id": "FI-bd9d3811bf597d1c",
@@ -144,6 +193,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a6e1e76d3e6bb0dc",
+        "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+        "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+        "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+        "quote": "today announced $8 million in seed funding from a16z speedrun, Owl Capital and Long Journey Ventures.",
+        "quote_hash": "16578cc958d2acb1c9ae0bcc05674f94a53835eab4d44cbaeae9ed150d84dcc6"
+      },
       {
         "source_id": "FISRC-2c01dfb7ebd1357c",
         "source_url": "https://startupintros.com/orgs/cerebras-systems",
@@ -224,6 +281,10 @@
         {
           "description": "第三方融资资料将 Long Journey Ventures 列为 Crusoe 的知名历史投资方之一，并明确说该名单不属于 Series D 参与方。不能据此认定其参与 Crusoe 2026 年 Series F 或将该轮金额归属于 Long Journey。",
           "source_id": "FISRC-4afc17abd0ce2781"
+        },
+        {
+          "description": "融资来源记录：Othello · 种子轮 · 2026-10-14 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a6e1e76d3e6bb0dc"
         },
         {
           "description": "融资来源记录：Cerebras Systems · 历史轮次未披露 · Series C 参投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -328,6 +389,14 @@
           "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
         },
         {
+          "source_id": "FISRC-a6e1e76d3e6bb0dc",
+          "source_url": "https://www.prnewswire.com/news-releases/othello-raises-8-million-for-real-time-ai-sales-coaching-during-live-calls-302908716.html",
+          "source_title": "Othello 融资 800 万美元，用于实时通话中的 AI 销售辅导",
+          "source_content_hash": "c18df6763da17100e551d4d546c4e6b8c78f71eee89b64bcd7b5029c3600b3e4",
+          "quote": "today announced $8 million in seed funding from a16z speedrun, Owl Capital and Long Journey Ventures.",
+          "quote_hash": "16578cc958d2acb1c9ae0bcc05674f94a53835eab4d44cbaeae9ed150d84dcc6"
+        },
+        {
           "source_id": "FISRC-2c01dfb7ebd1357c",
           "source_url": "https://startupintros.com/orgs/cerebras-systems",
           "source_title": "Cerebras Systems: Funding, Team & Investors",
@@ -340,7 +409,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[0].role": {
+        "activities[1].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

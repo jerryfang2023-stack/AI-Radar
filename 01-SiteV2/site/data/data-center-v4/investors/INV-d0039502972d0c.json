@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-16",
-    "currentDate": "2026-10-16",
-    "eventCount": 4153,
+    "latestDataDate": "2026-10-17",
+    "currentDate": "2026-10-17",
+    "eventCount": 4167,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,76 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-30",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_e"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-70729a266daea738",
         "canonical_entity_id": "",
         "name": "Ascerta"
+      },
+      {
+        "entity_id": "EN-ce084d4801691907",
+        "canonical_entity_id": "",
+        "name": "Labelbox"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cfeefbefbf293269",
+        "funding_insight_id": "FI-0c6b560baefe49e0",
+        "event_ids": [
+          "EV-858cec7fa8f4c87b"
+        ],
+        "company_entity_id": "EN-ce084d4801691907",
+        "company_canonical_entity_id": "",
+        "company_name": "Labelbox",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "more than $100 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-31a53dcde47855a0",
+            "source_url": "https://www.prnewswire.com/news-releases/labelbox-raises-100-million-in-series-e-funding-to-advance-reinforcement-learning-and-enterprise-ai-agents-302909147.html",
+            "source_title": "Labelbox 在 E 轮融资中筹集超 1 亿美元，以推进强化学习和企业 AI 智能体",
+            "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
+            "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
+            "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a10f4e11f0dea1b7",
         "funding_insight_id": "FI-9641aad793c547e7",
@@ -129,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-31a53dcde47855a0",
+        "source_url": "https://www.prnewswire.com/news-releases/labelbox-raises-100-million-in-series-e-funding-to-advance-reinforcement-learning-and-enterprise-ai-agents-302909147.html",
+        "source_title": "Labelbox 在 E 轮融资中筹集超 1 亿美元，以推进强化学习和企业 AI 智能体",
+        "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
+        "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
+        "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
+      },
+      {
         "source_id": "FISRC-b95b99b7dcaf913b",
         "source_url": "https://www.geekwire.com/2026/pay-i-rebrands-as-ascerta-and-raises-18m-to-help-enterprises-track-ai-business-value/",
         "source_title": "Pay-i 更名为 Ascerta 并融资 1800 万美元，帮助企业追踪 AI 商业价值",
@@ -171,6 +225,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Labelbox · E轮 · 2026-10-14 · 本轮参投 · more than $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-31a53dcde47855a0"
+        },
+        {
           "description": "融资来源记录：Ascerta · A轮 · 2026-09-30 · 本轮参投 · $18 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b95b99b7dcaf913b"
         }
@@ -192,6 +250,14 @@
           "source_content_hash": "94c4d9bbd7303e136c2c7409ed083f54fb75fc83c4cbe9f82f4e85f546849784",
           "quote": "Established in 2015 as the strategic investment arm of Wipro Limited, we invest in early to mid-stage companies building innovative enterprise software solutions.",
           "quote_hash": "d18f637373a092ef40ef6cf83e30d07c15ae226bfedf9d0ab711961c89742a6b"
+        },
+        {
+          "source_id": "FISRC-31a53dcde47855a0",
+          "source_url": "https://www.prnewswire.com/news-releases/labelbox-raises-100-million-in-series-e-funding-to-advance-reinforcement-learning-and-enterprise-ai-agents-302909147.html",
+          "source_title": "Labelbox 在 E 轮融资中筹集超 1 亿美元，以推进强化学习和企业 AI 智能体",
+          "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
+          "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
+          "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
         },
         {
           "source_id": "FISRC-b95b99b7dcaf913b",
