@@ -3003,3 +3003,19 @@ test('malformed funding headlines recover recipients from matching original proc
   assert.equal(repairFundingHeadlineIdentity(cases[1][0],'高维医药参与另一家药企数亿元Pre-A轮融资。',{subject:cases[1][1]}),null);
   assert.equal(repairFundingHeadlineIdentity(cases[1][0],'高维医药否认计划数亿元Pre-A轮融资。',{subject:cases[1][1]}),null);
 });
+
+test('Chinese startup prefixes resolve from original identity while combined proceeds stay out of a single round', async () => {
+  const {repairFundingHeadlineIdentity}=await import('../build-data-center-v4.mjs');
+  const {subjectCompanyForEvent,fundingCombinedRoundsNeedReview,isEligibleFundingInsightEvent}=await import('../funding-insight-v1-utils.mjs');
+  const title='成立4个月，AI创企元环智能获数亿元融资，顺为资本领投';
+  const body='近日，仅成立4个月的元环智能（MetaCircle）宣布完成连续两轮共计数亿元融资。元环智能开发人工智能元模型。种子轮融资由顺为资本领投；种子+轮吸引BV百度风投等机构。';
+  const parsed={subject:'成立4个月，AI创企元环智能获数亿元'};
+  assert.equal(repairFundingHeadlineIdentity(title,body,parsed)?.subject,'元环智能');
+  assert.equal(repairFundingHeadlineIdentity(title,'AI创企元环智能参与另一家公司数亿元融资。',parsed),null);
+  const bundle=buildBundle([entry('metacircle',title,body)],taxonomy,date,date+'T00:00:00Z',{modelAssist:{candidates:[]}});
+  const event=bundle.canonical_events.find(e=>e.event_type==='funding');assert.ok(event);
+  assert.equal(subjectCompanyForEvent(event,bundle.entities,{},bundle.claims,[body])?.canonical_name,'元环智能');
+  assert.equal(fundingCombinedRoundsNeedReview(event,bundle.claims),true);
+  assert.equal(isEligibleFundingInsightEvent(event,bundle.claims),false);
+  assert.equal(fundingCombinedRoundsNeedReview({...event,claim_refs:['single']},[{claim_id:'single',claim_type:'funding',verification_status:'accepted',source_quote:'元环智能完成种子轮融资共计数亿元。'}]),false);
+});

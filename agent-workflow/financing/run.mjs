@@ -11,6 +11,7 @@ import { resolvePrivateEvidenceBackupRoot } from '../tools/private-evidence-back
 import { indexFinancingEvidence } from './evidence-index.mjs';
 import { parseArgs } from './args.mjs';
 import {reviewStateDirectory} from './review-state.mjs';
+import {commandAssertionProblems} from './failure-diagnostics.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const script = name => `agent-workflow/tools/${name}.mjs`;
@@ -131,14 +132,18 @@ async function main() {
       const fd = fs.openSync(path.join(directory, `${stage.id}.log`), 'a');
       try {
         for (const command of stage.commands) {
+          const commandStart=fs.fstatSync(fd).size;
           fs.writeSync(fd, `\n${new Date().toISOString()} node ${command.join(' ')}\n`);
           const env = command[0] === script('generate-data-center-model-assist')
             ? { ...process.env, MODEL_ASSIST_SOURCE_REFS_FILE: scopeFile } : process.env;
           const result = spawnSync(process.execPath, command, { cwd: root, env, windowsHide: true, stdio: ['ignore', fd, fd], timeout: 1800000 });
           if (result.error || result.status !== 0) {
+            const problems=path.basename(command[0]).startsWith('assert-')
+              ? commandAssertionProblems(path.join(directory,`${stage.id}.log`),commandStart) : [];
             const model=read(path.join(root,'01-SiteV2/content/11-databases/model-assist-v1/checkpoint.json'));
             const titles=read(path.join(root,'agent-workflow/reports/source-title-translation-backfill-write.json'));
             const diagnostic={date,stage:stage.id,command:path.basename(command[0]),exit_status:result.status,error_code:result.error?.code || null,
+              failure_kind:problems.length?'quality_gate':'execution',problems,
               model:model?.dates?.includes(date)?{selected_jobs:model.selected_jobs,completed:model.completed,failures:model.failures}:null,
               translation:titles?.selected_date===date?{unresolved:titles.unresolved,blocking_unresolved:titles.blocking_unresolved,
                 failures:(titles.failures || []).map(({raw_id,title,method,failures})=>({raw_id,title,method,failures}))}:null};

@@ -1186,7 +1186,7 @@ export function repairFundingHeadlineIdentity(title, body, parsed) {
   const chinese = new RegExp(String.raw`(?:^|[\s，,：:])([\p{Script=Han}A-Za-z0-9·]{2,30}?)(?:于近日|近日|近期)?(?:宣布)?(完成|获得|获)${proceeds}`, 'gu');
   const ipo = new RegExp(String.raw`(?:公司|企业)\s*([A-Z][A-Za-z0-9.&'-]*(?:[ \t]+[A-Z][A-Za-z0-9.&'-]*){0,3})(?:在|通过)[^，,。\n]{0,12}?(?:IPO|首次公开发行)(融资|募资)${proceeds}`, 'gu');
   for (const pattern of [chinese, ipo]) for (const match of String(title).matchAll(pattern)) {
-    const name=match[1], amount=match[3].replace(/融资$/u,'');
+    const name=match[1].replace(/^(?:AI|人工智能)?(?:创企|初创企业|初创公司)/u,''), amount=match[3].replace(/融资$/u,'');
     if (/(?:融资|支持|报道|获悉|据称|计划|拟|欲|未|否认)/u.test(name)) continue;
     const compact=value=>String(value).normalize('NFKC').toLowerCase().replace(/\s/gu,'');
     const escaped=name.replace(/[.*+?^${}()|[\]\\]/gu,'\\$&');

@@ -1164,7 +1164,9 @@ function fundingAmountsEquivalent(left = "", right = "") {
 export function fundingCombinedRoundsNeedReview(event = {}, claims = []) {
   return claims.some((claim) => (event.claim_refs || []).includes(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted"
-    && /天使轮(?:及|和|与)天使\+轮融资[，,、\s]*(?:累计|合计)融资金额/u.test(claim.source_quote || ""));
+    && (/天使轮(?:及|和|与)天使\+轮融资[，,、\s]*(?:累计|合计)融资金额/u.test(claim.source_quote || "")
+      || (claim.qualifiers?.funding_amount_scope !== 'combined_rounds'
+        && /(?:完成|获得|获)(?:连续)?(?:两|三|多|[2-9])轮(?:融资)?[，,、\s]*(?:共计|累计|合计)/u.test(claim.source_quote || ""))));
 }
 
 export function fundingTrancheDisclosureNeedsReview(event = {}, claims = []) {
