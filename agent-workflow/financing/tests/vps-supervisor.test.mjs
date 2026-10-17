@@ -67,7 +67,7 @@ test('acceptance binds reviewed date and SHA, all checks, actual evidence and on
   const identity={date:'2026-10-03',head:'a'.repeat(40)};
   const approved={date:identity.date,head_sha:identity.head,verdict:'approved',checks:{sources:true,facts:true,scope:true,classification:true,preservation:true},evidence:['source: confirmed round'],issues:[]};
   assert.equal(acceptedReview(approved,identity),true);
-  for(const note of ['Non-blocking: stale team-size profile field','Observation: source date reconciled in publication.json','Note: profile role label needs a later refresh'])assert.equal(acceptedReview({...approved,issues:[note]},identity),true);
+  for(const note of ['Non-blocking: stale team-size profile field','Observation: source date reconciled in publication.json','Note: profile role label needs a later refresh','非准入批次问题（不影响本次五张卡）：研究卡与公开卡不一致','数据质量提示（不阻断发布）：待核验队列仍在运行','Sonilo 的日期冲突已按公告日处置并留档，不属于未解决的事实冲突'])assert.equal(acceptedReview({...approved,issues:[note]},identity),true);
   for(const bad of [{head_sha:'b'.repeat(40)},{date:'2026-10-02'},{verdict:'unknown'},{evidence:[]},{issues:['unverified investor']},{issues:['Scope violation: robotics company published']},{issues:['Non-blocking: stale profile','Fact inconsistency: malformed amount']},{checks:{...approved.checks,preservation:false}}])assert.equal(acceptedReview({...approved,...bad},identity),false);
 });
 test('financing reviewer never auto-merges executable or workflow changes',()=>{

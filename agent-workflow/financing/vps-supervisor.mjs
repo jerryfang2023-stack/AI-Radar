@@ -31,13 +31,16 @@ export function selectRunDate(states, clock, requested) {
     && !(s.date < clock.date && ['needs_attention','review_held','ci_failed','awaiting_approval','checks_pending'].includes(s.status))).sort((a,b)=>a.date.localeCompare(b.date));
   return unfinished[0]?.date || (clock.minute >= 490 ? clock.date : null);
 }
-// The review contract makes the five checks authoritative: a verdict is
-// approved only when every check is true. The model also records confirmed
-// non-blocking observations in the issues array (stale profile fields,
-// reconciled source-date notes). Those notes must not deadlock publication,
-// while an unlabelled or blocking finding still requires a hold.
+// The review contract makes the verdict and the five checks authoritative, but
+// the reviewer also records confirmed non-blocking observations in issues
+// (English or Chinese: stale profile fields, reconciled source dates,
+// non-admitted research cards). Explicitly labelled notes must not deadlock an
+// otherwise approved batch; an unlabelled finding still requires a hold.
 export function nonBlockingReviewIssue(issue) {
-  return typeof issue === 'string' && /^\s*(?:non-blocking|observation|note)\b/iu.test(issue);
+  return typeof issue === 'string' && (
+    /^\s*(?:non-blocking|observation|note)\b/iu.test(issue)
+    || /非准入|不影响本次|不阻断发布|不属于未解决/u.test(issue)
+  );
 }
 export function acceptedReview(review, {date, head}) {
   return review?.date === date && review.head_sha === head && review.verdict === 'approved'
