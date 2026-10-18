@@ -1,0 +1,4409 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-10-18",
+    "generated_at": "2026-10-18T00:41:21.037Z",
+    "trigger": "accepted_financing_event_research",
+    "research_provider": "search-gateway+direct-original+deepseek",
+    "model": "deepseek-flash",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 28,
+      "auto_published": 5,
+      "blocked": 3,
+      "pending": 3,
+      "deduplicated": 17,
+      "deferred_for_evidence": 2
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-d784d0391cc201af",
+      "triggered_by_event_id": "EV-7ee91391ace42994",
+      "as_of_date": "2026-10-18",
+      "company": {
+        "entity_id": "EN-7587669ca42e19e8",
+        "name": "Fragment",
+        "full_name": "Fragment",
+        "website": "https://fragment.dev/",
+        "summary": "总部位于纽约的初创公司，开发让AI智能体安全处理账单、会计和支付对账的软件，以复式记账为底层机制，在资金移动前校验账目平衡。",
+        "headquarters": "纽约",
+        "founders": [
+          {
+            "name": "Thomas Neckel",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-190cf7761da55954",
+                "quote": "Founded by serial entrepreneur and CEO Thomas Neckel and CTO Varun Mohan, a former Robinhood engineer",
+                "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+                "quote_hash": "245af575087ed456278ddd2d2fe820c2aaee36269031e5dc13aae4cb5fd11269"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Varun Mohan",
+            "role": "CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-190cf7761da55954",
+                "quote": "Founded by serial entrepreneur and CEO Thomas Neckel and CTO Varun Mohan, a former Robinhood engineer",
+                "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+                "quote_hash": "245af575087ed456278ddd2d2fe820c2aaee36269031e5dc13aae4cb5fd11269"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-190cf7761da55954",
+            "quote": "Fragment, a New York-based startup, is developing software designed to reduce costly accounting errors.",
+            "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+            "quote_hash": "ab17da8c46ea740876dccb47283438b618af48042adae78fc151c1e8c545c30e"
+          },
+          {
+            "source_id": "FISRC-3523513f409fb1f8",
+            "quote": "FRAGMENT is the financial system for agents.",
+            "source_content_hash": "2b480fc1b096c03f",
+            "quote_hash": "8eb31334f2f964fdffc6834d7ec44962b6a00cde2528e3a93c0c8a118dc3dfa4"
+          }
+        ],
+        "application_entity_id": "EN-7587669ca42e19e8",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$12 million",
+        "total_raised": "$23 million",
+        "announced_at": "2026-10-14",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "FirstMark",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-190cf7761da55954",
+                "quote": "Early-stage venture capital firms FirstMark and BoxGroup co-led the financing.",
+                "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+                "quote_hash": "4d0d7469024c86283bfbd39cba13c2a05f29120c101155f5442175a1a421d677"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BoxGroup",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-190cf7761da55954",
+                "quote": "Early-stage venture capital firms FirstMark and BoxGroup co-led the financing.",
+                "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+                "quote_hash": "4d0d7469024c86283bfbd39cba13c2a05f29120c101155f5442175a1a421d677"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Stripe",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-190cf7761da55954",
+                "quote": "The round follows an $11 million seed round led by payments company Stripe, with participation from BoxGroup and tech executives including Uber CEO Dara Khosrowshahi and Plaid CEO Zach Perret.",
+                "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+                "quote_hash": "32960f48a44099f58f5a92eeb21a55982c1ad4d2e5c608c55c1d7594746c3b6e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BoxGroup",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-190cf7761da55954",
+                "quote": "The round follows an $11 million seed round led by payments company Stripe, with participation from BoxGroup and tech executives including Uber CEO Dara Khosrowshahi and Plaid CEO Zach Perret.",
+                "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+                "quote_hash": "32960f48a44099f58f5a92eeb21a55982c1ad4d2e5c608c55c1d7594746c3b6e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dara Khosrowshahi",
+            "role": "种子轮参投（技术高管个人）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-190cf7761da55954",
+                "quote": "with participation from BoxGroup and tech executives including Uber CEO Dara Khosrowshahi and Plaid CEO Zach Perret",
+                "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+                "quote_hash": "54cd8bd9d98019c09f292353f9ea16022501c1b7371b77b1f109db385888f9a4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Zach Perret",
+            "role": "种子轮参投（技术高管个人）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-190cf7761da55954",
+                "quote": "with participation from BoxGroup and tech executives including Uber CEO Dara Khosrowshahi and Plaid CEO Zach Perret",
+                "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+                "quote_hash": "54cd8bd9d98019c09f292353f9ea16022501c1b7371b77b1f109db385888f9a4"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-190cf7761da55954",
+            "quote": "Fragment raises $12 million to help keep AI agents from going rogue with company money",
+            "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+            "quote_hash": "61123e42a6fafdb22feb3b2d40db570880c1d6b027da21f6202b1cb0ced83537"
+          },
+          {
+            "source_id": "FISRC-190cf7761da55954",
+            "quote": "Fragment announced on Wednesday that it raised a $12 million Series A round that closed in mid-2025 to build software that lets AI agents safely handle billing and accounting.",
+            "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+            "quote_hash": "b9968e72b2d21f4a84900793b123a591c2990facad1015e11231a0f2404aa97d"
+          },
+          {
+            "source_id": "FISRC-5d89174fca575eb0",
+            "quote": "This latest financing brings the company’s total funding to $23 million.",
+            "source_content_hash": "48fb50e678474f59",
+            "quote_hash": "76a41f312bff8c8323d0a4ff6d08ca08d76bc20261f74043f1f16d34e25456b8"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$12 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "total_raised_original": "$23 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 23000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2300 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-7ee91391ace42994",
+            "round_original": "Series A",
+            "amount": "$12 million",
+            "announced_at": "2026-10-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-190cf7761da55954",
+                "quote": "Fragment raises $12 million to help keep AI agents from going rogue with company money",
+                "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+                "quote_hash": "61123e42a6fafdb22feb3b2d40db570880c1d6b027da21f6202b1cb0ced83537"
+              },
+              {
+                "source_id": "FISRC-190cf7761da55954",
+                "quote": "Fragment announced on Wednesday that it raised a $12 million Series A round that closed in mid-2025 to build software that lets AI agents safely handle billing and accounting.",
+                "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+                "quote_hash": "b9968e72b2d21f4a84900793b123a591c2990facad1015e11231a0f2404aa97d"
+              },
+              {
+                "source_id": "FISRC-5d89174fca575eb0",
+                "quote": "This latest financing brings the company’s total funding to $23 million.",
+                "source_content_hash": "48fb50e678474f59",
+                "quote_hash": "76a41f312bff8c8323d0a4ff6d08ca08d76bc20261f74043f1f16d34e25456b8"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Fragment 财务原语与复式记账工具",
+          "description": "面向开发者的财务构建模块，将复式记账嵌入AI智能体的支付流程，在资金移动前校验账目是否平衡。",
+          "target_customers": "将AI智能体接入支付、账单与会计流程的软件公司及企业开发团队",
+          "features": [
+            "复式记账校验",
+            "可编程账本与支付",
+            "对账与异常处理",
+            "MCP读写支付"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-190cf7761da55954",
+              "quote": "The system uses double-entry accounting, a centuries-old method that records where money comes from and where it goes, to check that the numbers balance before money moves.",
+              "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+              "quote_hash": "d8a672e9b64c2d457d7f9fd9a2a8419771ac585d130130a32ead0311598ba037"
+            },
+            {
+              "source_id": "FISRC-3523513f409fb1f8",
+              "quote": "Programmable money that bills, pays, and accounts for itself.",
+              "source_content_hash": "2b480fc1b096c03f",
+              "quote_hash": "9867ad671a6b44825998b04a831a20a1eff192159e7310cde9a1d9dc9a79a76e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Ramp",
+          "industry": "金融科技",
+          "use_case": "作为共享交易记录，减少人工跨系统核对数字",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-190cf7761da55954",
+              "quote": "It has roughly 50 to 60 paying customers, including corporate card startup Ramp, financial software company BILL, and digital marketplace Whop.",
+              "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+              "quote_hash": "e049876b3f391e5828c746f6828dbb356488d759c19f766d1522611f34ce5a46"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "BILL",
+          "industry": "财务软件",
+          "use_case": "作为共享交易记录，减少人工跨系统核对数字",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-190cf7761da55954",
+              "quote": "It has roughly 50 to 60 paying customers, including corporate card startup Ramp, financial software company BILL, and digital marketplace Whop.",
+              "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+              "quote_hash": "e049876b3f391e5828c746f6828dbb356488d759c19f766d1522611f34ce5a46"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Whop",
+          "industry": "数字市场",
+          "use_case": "作为共享交易记录，减少人工跨系统核对数字",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-190cf7761da55954",
+              "quote": "It has roughly 50 to 60 paying customers, including corporate card startup Ramp, financial software company BILL, and digital marketplace Whop.",
+              "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+              "quote_hash": "e049876b3f391e5828c746f6828dbb356488d759c19f766d1522611f34ce5a46"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$12 million",
+          "observed_at": "2026-10-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-190cf7761da55954",
+              "quote": "raised a $12 million Series A round",
+              "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+              "quote_hash": "a2ad64308ae9c8925f399c8e9f0fc4930bbc9d4a8990e7f6bd26f6912a924ad7"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$23 million",
+          "observed_at": "2026-10-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d89174fca575eb0",
+              "quote": "This latest financing brings the company’s total funding to $23 million.",
+              "source_content_hash": "48fb50e678474f59",
+              "quote_hash": "76a41f312bff8c8323d0a4ff6d08ca08d76bc20261f74043f1f16d34e25456b8"
+            }
+          ]
+        },
+        {
+          "label": "付费客户数",
+          "value": "约50至60家",
+          "observed_at": "2026-10-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-190cf7761da55954",
+              "quote": "It has roughly 50 to 60 paying customers",
+              "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+              "quote_hash": "bbe6e1a2ca9baa7e37604307ac54a4545fa403d0db73ee52778e7ae099ac921c"
+            }
+          ]
+        },
+        {
+          "label": "种子轮金额",
+          "value": "$11 million",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-190cf7761da55954",
+              "quote": "The round follows an $11 million seed round led by payments company Stripe",
+              "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+              "quote_hash": "3dfd2964c972614206d0f1dc6a5be7a38f3dade74c40357c6029550187fb7a55"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Thomas Neckel",
+          "quote": "Just like Claude Code or Cursor is a set of software blocks for agents to automate coding, we are a set of financial building blocks or financial primitives to automate commerce",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-190cf7761da55954",
+              "quote": "Just like Claude Code or Cursor is a set of software blocks for agents to automate coding, we are a set of financial building blocks or financial primitives to automate commerce",
+              "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+              "quote_hash": "a477afe9b414a15b3ae175b433d38fcc20134cd91712b28ae5aa993699e5e886"
+            }
+          ]
+        },
+        {
+          "speaker": "Adam Nelson",
+          "quote": "We think that this ecosystem is about to explode, and so that’s really the goal: becoming the standard toolkit that anybody uses for bringing financial capabilities to their agents",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-190cf7761da55954",
+              "quote": "We think that this ecosystem is about to explode, and so that’s really the goal: becoming the standard toolkit that anybody uses for bringing financial capabilities to their agents",
+              "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+              "quote_hash": "1634a27819e8dc9e9b13071544b795917aaad9519b85872522059ea2c89377d9"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "FirstMark",
+            "speaker": "Adam Nelson",
+            "speaker_role": "管理合伙人",
+            "rationale": "认为智能体商业生态即将爆发，Fragment有机会成为为智能体提供金融能力的标准工具包。",
+            "quote": "We think that this ecosystem is about to explode, and so that’s really the goal: becoming the standard toolkit that anybody uses for bringing financial capabilities to their agents",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-190cf7761da55954",
+                "quote": "We think that this ecosystem is about to explode, and so that’s really the goal: becoming the standard toolkit that anybody uses for bringing financial capabilities to their agents",
+                "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+                "quote_hash": "1634a27819e8dc9e9b13071544b795917aaad9519b85872522059ea2c89377d9"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：智能体商业扩张后，谁来为AI智能体提供可审计、可校验的资金流转基础设施。当前已验证信号包括：约50至60家付费客户、Ramp/BILL/Whop等具名客户使用其共享交易记录、复式记账在资金移动前校验的产品机制，以及FirstMark与BoxGroup联合领投的1200万美元A轮。证据边界在于：公司未披露估值，客户留存、收入规模与“零错误”财务流均无公开数据支撑，投资逻辑主要建立在生态扩张预期而非已披露财务指标上。",
+        "validated_signals": [
+          "约50至60家付费客户",
+          "Ramp、BILL、Whop为具名客户",
+          "FirstMark与BoxGroup联合领投1200万美元A轮",
+          "产品以复式记账在资金移动前校验账目平衡"
+        ],
+        "risks": [
+          "公司拒绝披露A轮后估值，资本定价缺乏公开参照",
+          "客户数量与留存质量未披露，约50至60家付费客户的具体收入贡献不明",
+          "智能体商业市场规模的预期（如2028年百亿美元）来自投资方或媒体表述，尚待验证",
+          "大型云厂商可能将类似财务安全能力内嵌至其AI平台，形成间接竞争"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "finance_accounting"
+        ],
+        "industry_ids": [
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "面向AI智能体的财务记账与支付对账基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：智能体商业扩张后，谁来为AI智能体提供可审计、可校验的资金流转基础设施。当前已验证信号包括：约50至60家付费客户、Ramp/BILL/Whop等具名客户使用其共享交易记录、复式记账在资金移动前校验的产品机制，以及FirstMark与BoxGroup联合领投的1200万美元A轮。证据边界在于：公司未披露估值，客户留存、收入规模与“零错误”财务流均无公开数据支撑，投资逻辑主要建立在生态扩张预期而非已披露财务指标上。",
+          "evidence_signals": [
+            "约50至60家付费客户",
+            "Ramp、BILL、Whop为具名客户",
+            "FirstMark与BoxGroup联合领投1200万美元A轮",
+            "产品以复式记账在资金移动前校验账目平衡"
+          ],
+          "risks": [
+            "公司拒绝披露A轮后估值，资本定价缺乏公开参照",
+            "客户数量与留存质量未披露，约50至60家付费客户的具体收入贡献不明",
+            "智能体商业市场规模的预期（如2028年百亿美元）来自投资方或媒体表述，尚待验证",
+            "大型云厂商可能将类似财务安全能力内嵌至其AI平台，形成间接竞争"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Fragment 财务原语与复式记账工具",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Thomas Neckel",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Varun Mohan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "FirstMark",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BoxGroup",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Stripe",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "BoxGroup",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Dara Khosrowshahi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Zach Perret",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Ramp",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "BILL",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Whop",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-7ee91391ace42994",
+          "date": "2026-10-14",
+          "title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+          "amount": "$12 million",
+          "source_refs": [
+            "SA-7100a309f4bd9ed6"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-190cf7761da55954",
+          "source_url": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/",
+          "title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+          "publisher": "fortune.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-18T00:18:44.273Z",
+          "content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+          "source_artifact_id": "SA-7100a309f4bd9ed6",
+          "raw_id": "RAW-7bea7ae18cdaaacf"
+        },
+        {
+          "source_id": "FISRC-5d89174fca575eb0",
+          "source_url": "https://af.net/realtime/fragment-raises-12m-to-prevent-ai-agents-from-making-financial-errors/",
+          "title": "Fragment Raises $12M to Prevent AI Agents From Making Financial Errors",
+          "publisher": "af.net",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:41:05.522Z",
+          "content_hash": "48fb50e678474f59",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-3523513f409fb1f8",
+          "source_url": "https://fragment.dev/",
+          "title": "Fragment is the financial system for agents",
+          "publisher": "fragment.dev",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:41:09.647Z",
+          "content_hash": "2b480fc1b096c03f",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-18T00:41:20.692Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-18T00:41:20.692Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Fragment 财务原语与复式记账工具"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Thomas Neckel",
+            "Varun Mohan"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7ee91391ace42994"
+      ],
+      "aggregation": {
+        "key": "EN-7587669ca42e19e8|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-214cc4570824d860",
+      "triggered_by_event_id": "EV-d083659c3a654b8d",
+      "as_of_date": "2026-10-18",
+      "company": {
+        "entity_id": "EN-0c0602512d9cddaa",
+        "name": "Mueon Corp.",
+        "full_name": "Mueon Corp.",
+        "website": "mueon.com",
+        "summary": "Mueon 开发面向 AI 与超大规模计算的半导体系统，核心为 Cubelets 模块化三维计算与内存构建单元，将计算、内存、供电与散热集成，以减少数据在系统内的传输距离。",
+        "headquarters": "Portland, Oregon, US",
+        "founders": [
+          {
+            "name": "Wilfred Gomes",
+            "role": "co-founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "Founders: Wilfred Gomes, Jack Hwang",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "59acb13824b0f41ed3ebff378dc190866248fd2a6f0e3c8c9e5094f5da11e643"
+              },
+              {
+                "source_id": "FISRC-eff567d3bcae4817",
+                "quote": "Wilfred Gomesco-founder and CEO3",
+                "source_content_hash": "6d5449d15c6a34ea",
+                "quote_hash": "1b4044f6901570fe6601538b67ea834dadcd1f3f68b6bf632cf8ecdd343a3148"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jack Hwang",
+            "role": "co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "Founders: Wilfred Gomes, Jack Hwang",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "59acb13824b0f41ed3ebff378dc190866248fd2a6f0e3c8c9e5094f5da11e643"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9f86360bad5cbe27",
+            "quote": "Portland, Ore.-based Mueon Corp. closed a $65 million Series A funding round",
+            "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+            "quote_hash": "374f59b0eb1067ab040dfaf81de2207c2b6ce79beb4d375226afb7fd509a21bd"
+          },
+          {
+            "source_id": "FISRC-eff567d3bcae4817",
+            "quote": "HeadquartersPortland, Oregon3",
+            "source_content_hash": "6d5449d15c6a34ea",
+            "quote_hash": "03e2d40cccd853b5ea962f480e51446fb5e9c379949a2cb769b510377cf2214b"
+          }
+        ],
+        "application_entity_id": "EN-0c0602512d9cddaa",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$65 million",
+        "total_raised": "over $80M",
+        "announced_at": "2026-10-16",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Maverick Silicon",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "Maverick Silicon led the round, with participation from Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, and Defined.",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "e9799947030e238b39b15091b343577b0f2d9ab0007170d2dfea28cd7981aa1b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Intel Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "Maverick Silicon led the round, with participation from Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, and Defined.",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "e9799947030e238b39b15091b343577b0f2d9ab0007170d2dfea28cd7981aa1b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Geodesic Alliances Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "Maverick Silicon led the round, with participation from Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, and Defined.",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "e9799947030e238b39b15091b343577b0f2d9ab0007170d2dfea28cd7981aa1b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Oregon Venture Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "Maverick Silicon led the round, with participation from Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, and Defined.",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "e9799947030e238b39b15091b343577b0f2d9ab0007170d2dfea28cd7981aa1b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "M-Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "Maverick Silicon led the round, with participation from Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, and Defined.",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "e9799947030e238b39b15091b343577b0f2d9ab0007170d2dfea28cd7981aa1b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Wellington Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "Maverick Silicon led the round, with participation from Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, and Defined.",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "e9799947030e238b39b15091b343577b0f2d9ab0007170d2dfea28cd7981aa1b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IQT",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "Maverick Silicon led the round, with participation from Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, and Defined.",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "e9799947030e238b39b15091b343577b0f2d9ab0007170d2dfea28cd7981aa1b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Defined",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "Maverick Silicon led the round, with participation from Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, and Defined.",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "e9799947030e238b39b15091b343577b0f2d9ab0007170d2dfea28cd7981aa1b"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Geodesic Alliance Fund",
+            "role": "2025-09-17 Seed 参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eeb31e06bb06ca09",
+                "quote": "Intel Capital led the round with participation from Geodesic Alliance Fund and Oregon Venture Fund.",
+                "source_content_hash": "a4a7f2dbd312b54e",
+                "quote_hash": "9f893a09d8370d321d77bc1f7e44ae4255c0b32922eddec272f2b87809e22964"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Oregon Venture Fund",
+            "role": "2025-09-17 Seed 参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eeb31e06bb06ca09",
+                "quote": "Intel Capital led the round with participation from Geodesic Alliance Fund and Oregon Venture Fund.",
+                "source_content_hash": "a4a7f2dbd312b54e",
+                "quote_hash": "9f893a09d8370d321d77bc1f7e44ae4255c0b32922eddec272f2b87809e22964"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9f86360bad5cbe27",
+            "quote": "The big picture: Portland, Ore.-based Mueon Corp. closed a $65 million Series A funding round to advance its semiconductor systems designed for cost efficiencies in AI and hyperscale computing.",
+            "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+            "quote_hash": "19ae3f28fed32f7b2cae0d65a31e873f5f0d3b4581f760acbd6a675f7bde6275"
+          },
+          {
+            "source_id": "FISRC-9f86360bad5cbe27",
+            "quote": "Amount: $65M\nRound: Series A\nInvestors: Maverick Silicon (lead), Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, Defined",
+            "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+            "quote_hash": "e1251792dbb38cf84c120c72ca0af025cde201ac74cd9ee5dcf4a31eb55765b9"
+          },
+          {
+            "source_id": "FISRC-eff567d3bcae4817",
+            "quote": "Total raisedover $80M3",
+            "source_content_hash": "6d5449d15c6a34ea",
+            "quote_hash": "92042e9ce81df4b543de63be85d2c50e81fd426d3cd50bee8c15ec7ee05d76ce"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$65 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "total_raised_original": "over $80M",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 80000000,
+          "min_value": 80000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 8000 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-d083659c3a654b8d",
+            "round_original": "A轮",
+            "amount": "$65 million",
+            "announced_at": "2026-10-16",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "The big picture: Portland, Ore.-based Mueon Corp. closed a $65 million Series A funding round to advance its semiconductor systems designed for cost efficiencies in AI and hyperscale computing.",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "19ae3f28fed32f7b2cae0d65a31e873f5f0d3b4581f760acbd6a675f7bde6275"
+              },
+              {
+                "source_id": "FISRC-9f86360bad5cbe27",
+                "quote": "Amount: $65M\nRound: Series A\nInvestors: Maverick Silicon (lead), Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, Defined",
+                "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+                "quote_hash": "e1251792dbb38cf84c120c72ca0af025cde201ac74cd9ee5dcf4a31eb55765b9"
+              },
+              {
+                "source_id": "FISRC-eff567d3bcae4817",
+                "quote": "Total raisedover $80M3",
+                "source_content_hash": "6d5449d15c6a34ea",
+                "quote_hash": "92042e9ce81df4b543de63be85d2c50e81fd426d3cd50bee8c15ec7ee05d76ce"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Cubelets",
+          "description": "模块化三维计算与内存构建单元，集成计算、内存、供电与散热，通过缩短数据在系统内的传输距离来降低功耗与占地。",
+          "target_customers": "云服务商、企业及研究机构",
+          "features": [
+            "计算、内存、供电与散热一体化",
+            "模块化三维堆叠",
+            "降低数据传输距离",
+            "目标实现每机架最高10倍能效与成本收益"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9f86360bad5cbe27",
+              "quote": "Mueon’s core innovation, Cubelets, are modular, three-dimensional compute and memory building blocks that integrate compute, memory, power delivery, and thermals.",
+              "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+              "quote_hash": "21ad1047ca4c5ed070e095fce6d2cb1e2bc016d188e8f58e4faa9edb4bf1a843"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Cubelets 软件层",
+          "description": "正在开发的软件层，使模块化硬件兼容常见 AI 框架与部署工作流。",
+          "target_customers": "AI 框架与部署工作流用户",
+          "features": [
+            "兼容常见 AI 框架",
+            "适配部署工作流"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9f86360bad5cbe27",
+              "quote": "The company is developing a software layer to make its modular hardware compatible with familiar AI frameworks and deployment workflows",
+              "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+              "quote_hash": "b17730248201a108f5bb9599ed239830aa1ff49627ad7bf360badb1dd9796e4f"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "d-Matrix",
+          "industry": "",
+          "use_case": "结合 d-Matrix 的数字存内计算技术构建更小、更密集、面向超低延迟 AI 负载的基础设施",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eeb31e06bb06ca09",
+              "quote": "Mueon’s Cubelets™ architecture has unlocked new possibilities for d-Matrix.",
+              "source_content_hash": "a4a7f2dbd312b54e",
+              "quote_hash": "b0977672aed3dcf608acf702dde1e04491e13fc3b1cc695089fb0e93fd433be1"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "Series A 融资金额",
+          "value": "$65 million",
+          "observed_at": "2026-10-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9f86360bad5cbe27",
+              "quote": "closed a $65 million Series A funding round",
+              "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+              "quote_hash": "217d376e2c50b885a0289db64cb7bb83e4df3654d5691c44a2675674aa9044eb"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "over $80M",
+          "observed_at": "2026-10-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eff567d3bcae4817",
+              "quote": "Total raisedover $80M3",
+              "source_content_hash": "6d5449d15c6a34ea",
+              "quote_hash": "92042e9ce81df4b543de63be85d2c50e81fd426d3cd50bee8c15ec7ee05d76ce"
+            }
+          ]
+        },
+        {
+          "label": "Seed 轮融资金额",
+          "value": "$15.5M",
+          "observed_at": "2025-09-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eeb31e06bb06ca09",
+              "quote": "launch from stealth with $15.5M in seed funding",
+              "source_content_hash": "a4a7f2dbd312b54e",
+              "quote_hash": "925deb114fff0cefe18e45c766092539ca76c98ae266cc96ed7307c3db4ad2a7"
+            }
+          ]
+        },
+        {
+          "label": "公司宣称的每机架能效与成本提升",
+          "value": "up to 10x",
+          "observed_at": "2026-10-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9f86360bad5cbe27",
+              "quote": "aiming for up to 10x gains in power and cost efficiency per rack",
+              "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+              "quote_hash": "c455d7e292d52886fae3a4ca9be0749e7d22282f4d7ef10a949b38290653c653"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Wilfred Gomes",
+          "quote": "Mueon was founded to rethink the system building blocks of the data center from the ground up",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eeb31e06bb06ca09",
+              "quote": "Mueon was founded to rethink the system building blocks of the data center from the ground up",
+              "source_content_hash": "a4a7f2dbd312b54e",
+              "quote_hash": "b79169ee804d3eb02bfa169d9556f05d5cd50753d334c67d104522861b613e15"
+            }
+          ]
+        },
+        {
+          "speaker": "Sudeep Bhoja",
+          "quote": "Mueon’s Cubelets™ architecture has unlocked new possibilities for d-Matrix.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eeb31e06bb06ca09",
+              "quote": "Mueon’s Cubelets™ architecture has unlocked new possibilities for d-Matrix.",
+              "source_content_hash": "a4a7f2dbd312b54e",
+              "quote_hash": "b0977672aed3dcf608acf702dde1e04491e13fc3b1cc695089fb0e93fd433be1"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Intel Capital",
+            "speaker": "Srini Ananth",
+            "speaker_role": "Managing Director at Intel Capital",
+            "rationale": "Intel Capital 认为 Mueon 的模块化方案为客户提供了以更优经济性和可持续性扩展 AI 系统的可行路径，并认可其技术专长与数据中心效率愿景。",
+            "quote": "Their modular approach offers customers a practical path to scale AI systems with better economics and sustainability, while Mueon’s deep technical expertise and vision for data center efficiency could redefine how AI infrastructure is built globally.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eeb31e06bb06ca09",
+                "quote": "Their modular approach offers customers a practical path to scale AI systems with better economics and sustainability, while Mueon’s deep technical expertise and vision for data center efficiency could redefine how AI infrastructure is built globally.",
+                "source_content_hash": "a4a7f2dbd312b54e",
+                "quote_hash": "c733e2a7e7fba7d32f33f12b194feb12959ef762ad9d08c6032ce2b895b9caa6"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 Cubelets 能否从平台开发推进到广泛的系统验证与量产就绪，并在既有架构与快速演进的 AI 需求下按规模兑现其宣称的能效收益。当前融资所依赖的已验证信号包括：公司已完成 6500 万美元 A 轮、累计融资超过 8000 万美元，投资方包含 Maverick Silicon 领投及 Intel Capital 等具名机构，且已有 d-Matrix 公开评价其架构。证据边界在于：10 倍能效与成本提升是公司目标/宣称，公司尚无收入且未披露估值，量产与规模化验证尚未被来源证实。",
+        "validated_signals": [
+          "完成 6500 万美元 Series A，由 Maverick Silicon 领投，Intel Capital 等具名机构参投",
+          "累计融资超过 8000 万美元",
+          "d-Matrix 创始人兼 CTO 公开评价 Cubelets 架构对其基础设施的帮助",
+          "公司正在开发兼容常见 AI 框架与部署工作流的软件层"
+        ],
+        "risks": [
+          "半导体与 AI 计算市场竞争激烈，既有巨头与众多初创公司都在争夺效率提升空间",
+          "Cubelets 仍需从平台开发走向广泛的系统验证与量产就绪",
+          "10 倍能效与成本提升为公司宣称/目标，尚待规模化验证",
+          "公司目前没有收入，且未披露估值"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_compute_system",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "servers",
+        "use_case_ids": [
+          "data_analysis"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user",
+          "researcher"
+        ],
+        "sector": "AI 半导体系统与模块化数据中心计算平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Cubelets 能否从平台开发推进到广泛的系统验证与量产就绪，并在既有架构与快速演进的 AI 需求下按规模兑现其宣称的能效收益。当前融资所依赖的已验证信号包括：公司已完成 6500 万美元 A 轮、累计融资超过 8000 万美元，投资方包含 Maverick Silicon 领投及 Intel Capital 等具名机构，且已有 d-Matrix 公开评价其架构。证据边界在于：10 倍能效与成本提升是公司目标/宣称，公司尚无收入且未披露估值，量产与规模化验证尚未被来源证实。",
+          "evidence_signals": [
+            "完成 6500 万美元 Series A，由 Maverick Silicon 领投，Intel Capital 等具名机构参投",
+            "累计融资超过 8000 万美元",
+            "d-Matrix 创始人兼 CTO 公开评价 Cubelets 架构对其基础设施的帮助",
+            "公司正在开发兼容常见 AI 框架与部署工作流的软件层"
+          ],
+          "risks": [
+            "半导体与 AI 计算市场竞争激烈，既有巨头与众多初创公司都在争夺效率提升空间",
+            "Cubelets 仍需从平台开发走向广泛的系统验证与量产就绪",
+            "10 倍能效与成本提升为公司宣称/目标，尚待规模化验证",
+            "公司目前没有收入，且未披露估值"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Cubelets",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Cubelets 软件层",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Wilfred Gomes",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jack Hwang",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Maverick Silicon",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Intel Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Geodesic Alliances Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Oregon Venture Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "M-Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Wellington Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IQT",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Defined",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Geodesic Alliance Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Oregon Venture Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "d-Matrix",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d083659c3a654b8d",
+          "date": "2026-10-16",
+          "title": "Mueon完成6500万美元融资，用于优化AI半导体",
+          "amount": "$65 million",
+          "source_refs": [
+            "SA-befed2955f11de0a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-9f86360bad5cbe27",
+          "source_url": "https://aipressroom.com/mueon-65m-ai-semiconductors/",
+          "title": "Mueon完成6500万美元融资，用于优化AI半导体",
+          "publisher": "aipressroom.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-18T00:18:42.317Z",
+          "content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+          "source_artifact_id": "SA-befed2955f11de0a",
+          "raw_id": "RAW-81a90c5021c60f47"
+        },
+        {
+          "source_id": "FISRC-eff567d3bcae4817",
+          "source_url": "https://www.alphaneo.ai/companies/mueon",
+          "title": "Mueon: funding, investors and team | Alphaneo",
+          "publisher": "alphaneo.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:54.924Z",
+          "content_hash": "6d5449d15c6a34ea",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-eeb31e06bb06ca09",
+          "source_url": "https://www.intelcapital.com/mueon-emerges-from-stealth-with-15-5m-seed-to-redefine-data-centers-for-the-ai-era/",
+          "title": "Mueon Emerges From Stealth with $15.5M Seed to Redefine Data Centers for the AI Era",
+          "publisher": "intelcapital.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:41:00.614Z",
+          "content_hash": "a4a7f2dbd312b54e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-18T00:41:10.230Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-18T00:41:10.230Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Cubelets",
+            "Cubelets 软件层"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Jack Hwang",
+            "Wilfred Gomes"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-d083659c3a654b8d"
+      ],
+      "aggregation": {
+        "key": "EN-0c0602512d9cddaa|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-f062f66904e277cd",
+      "triggered_by_event_id": "EV-bdf01e0aa51360b3",
+      "as_of_date": "2026-10-18",
+      "company": {
+        "entity_id": "EN-6ec81821068b9e26",
+        "name": "荆华密算（北京）科技有限公司",
+        "full_name": "荆华密算（北京）科技有限公司",
+        "website": "",
+        "summary": "AI密态计算技术服务商，成立于2024年，专注提升人工智能密态计算的性能与训练效率，独创“线性与非线性计算分离”架构，将密态计算性能损耗压缩至可商用水平并实现精度还原。",
+        "headquarters": "北京市海淀区",
+        "founders": [
+          {
+            "name": "林修醇",
+            "role": "创始人、CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-216777b85f8ceff7",
+                "quote": "创始人林修醇本科期间获国家奖学金并以第一作者发表顶刊",
+                "source_content_hash": "60623b7ff0a8912e",
+                "quote_hash": "56dc55c1f16990b7d1170e193bff991bff90354b8026b24f9dcafc9b940f5ba5"
+              },
+              {
+                "source_id": "FISRC-1722ea030c12f750",
+                "quote": "荆华密算创始人、CEO 林修醇表示",
+                "source_content_hash": "a6a01dbcd6cc6993",
+                "quote_hash": "f27f2799daf6765136b5fc53ae4830ca111fb3e458c2a9afc27fd03612de8136"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1bbbc496210c4b3a",
+            "quote": "AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资",
+            "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+            "quote_hash": "3bc66735fcd6435bc7f2a15e3ad20e1cde12fdbbac10cdc6ea62867bbd905031"
+          },
+          {
+            "source_id": "FISRC-216777b85f8ceff7",
+            "quote": "荆华密算成立于2024年，总部位于北京市海淀区，是一家AI密态计算技术服务商",
+            "source_content_hash": "60623b7ff0a8912e",
+            "quote_hash": "e1b8317370e4825bc528548266061be8a67a2def2dc0a86ff3277d385f76b59f"
+          }
+        ],
+        "application_entity_id": "EN-6ec81821068b9e26",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "Pre-A轮",
+        "amount": "近亿元",
+        "total_raised": "",
+        "announced_at": "2026-10-13",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "中关村科学城",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bbbc496210c4b3a",
+                "quote": "本轮由中关村科学城、北创投联合领投",
+                "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+                "quote_hash": "b777642bd2949386face3a7808fc34a31109e63f7b54ed87ca8e2a1a056aab9e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "北创投",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bbbc496210c4b3a",
+                "quote": "本轮由中关村科学城、北创投联合领投",
+                "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+                "quote_hash": "b777642bd2949386face3a7808fc34a31109e63f7b54ed87ca8e2a1a056aab9e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "华仓资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bbbc496210c4b3a",
+                "quote": "华仓资本、极致投资、英诺基金、盛景嘉成基金跟投",
+                "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+                "quote_hash": "3dadce219c90af60f274581a84bfa01b31b907ef5e2636c16962820883e9d8bd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "极致投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bbbc496210c4b3a",
+                "quote": "华仓资本、极致投资、英诺基金、盛景嘉成基金跟投",
+                "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+                "quote_hash": "3dadce219c90af60f274581a84bfa01b31b907ef5e2636c16962820883e9d8bd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "英诺基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bbbc496210c4b3a",
+                "quote": "华仓资本、极致投资、英诺基金、盛景嘉成基金跟投",
+                "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+                "quote_hash": "3dadce219c90af60f274581a84bfa01b31b907ef5e2636c16962820883e9d8bd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "盛景嘉成基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bbbc496210c4b3a",
+                "quote": "华仓资本、极致投资、英诺基金、盛景嘉成基金跟投",
+                "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+                "quote_hash": "3dadce219c90af60f274581a84bfa01b31b907ef5e2636c16962820883e9d8bd"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "国联股份",
+            "role": "天使轮跟投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-20ad4764f92891e9",
+                "quote": "本轮融资由盛景嘉成创投领投，上市公司国联股份（603613）、博彦科技（002649）以及老股东英诺科创基金跟投",
+                "source_content_hash": "cc951bb654cd28d5",
+                "quote_hash": "68ef4184d5aa500b9a4fba40e2865c8208003746735955052ea1295e73cabbe7"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "博彦科技",
+            "role": "天使轮跟投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-20ad4764f92891e9",
+                "quote": "本轮融资由盛景嘉成创投领投，上市公司国联股份（603613）、博彦科技（002649）以及老股东英诺科创基金跟投",
+                "source_content_hash": "cc951bb654cd28d5",
+                "quote_hash": "68ef4184d5aa500b9a4fba40e2865c8208003746735955052ea1295e73cabbe7"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "盛景嘉成创投",
+            "role": "天使轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-20ad4764f92891e9",
+                "quote": "本轮融资由盛景嘉成创投领投",
+                "source_content_hash": "cc951bb654cd28d5",
+                "quote_hash": "8de7709b21a247b49e3ceb461c349830f54ca34e72aa273adf0cc50f44a8b8e8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "英诺科创基金",
+            "role": "种子轮领投、天使轮跟投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-791de517dc5ddf49",
+                "quote": "本轮融资由英诺科创基金领投，光源资本担任孵化方及独家财务顾问",
+                "source_content_hash": "11979c63a992bb87",
+                "quote_hash": "f32804c678a809e236605d1c5b094e44f0186a561ec8b909e987b82510db55b6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1bbbc496210c4b3a",
+            "quote": "【荆华密算完成近亿元Pre-A轮融资】《科创板日报》13日讯，近日，AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资，本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投。",
+            "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+            "quote_hash": "433633c1eb22e6e8cc91c2aa855bb74f41972ec52f7ae3e2f72c09aa3e2aba43"
+          },
+          {
+            "source_id": "FISRC-1bbbc496210c4b3a",
+            "quote": "近日，AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资，本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投。",
+            "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+            "quote_hash": "b62a3f1d4516548a81bbc7445dee7f9d4849c16437219b75521a8fce7c13ee87"
+          },
+          {
+            "source_id": "FISRC-1722ea030c12f750",
+            "quote": "本轮融资由中关村科学城、北创投联合领投，华仓资本、极致投资联合投资，老股东英诺科创基金、盛景嘉成创投持续加注。",
+            "source_content_hash": "a6a01dbcd6cc6993",
+            "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
+          }
+        ],
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-bdf01e0aa51360b3",
+            "round_original": "Pre-A轮",
+            "amount": "近亿元",
+            "announced_at": "2026-10-13",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bbbc496210c4b3a",
+                "quote": "【荆华密算完成近亿元Pre-A轮融资】《科创板日报》13日讯，近日，AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资，本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投。",
+                "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+                "quote_hash": "433633c1eb22e6e8cc91c2aa855bb74f41972ec52f7ae3e2f72c09aa3e2aba43"
+              },
+              {
+                "source_id": "FISRC-1bbbc496210c4b3a",
+                "quote": "近日，AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资，本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投。",
+                "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+                "quote_hash": "b62a3f1d4516548a81bbc7445dee7f9d4849c16437219b75521a8fce7c13ee87"
+              },
+              {
+                "source_id": "FISRC-1722ea030c12f750",
+                "quote": "本轮融资由中关村科学城、北创投联合领投，华仓资本、极致投资联合投资，老股东英诺科创基金、盛景嘉成创投持续加注。",
+                "source_content_hash": "a6a01dbcd6cc6993",
+                "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "可信Token",
+          "description": "让用户通过调用加密大模型API快速拥有全模态计算推理能力的密态推理产品，面向API开发者提供“零改动”接入。",
+          "target_customers": "API开发者",
+          "features": [
+            "加密大模型API调用",
+            "零改动接入",
+            "单周Token消耗量突破100亿"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1722ea030c12f750",
+              "quote": "让用户通过调用加密大模型 API 快速拥有全模态计算推理能力的可信 Token 产品",
+              "source_content_hash": "a6a01dbcd6cc6993",
+              "quote_hash": "91753eaa0658bdb5fba324807fcd26cc724dd8087225ab7f12fb590e175a00bf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "密态MaaS",
+          "description": "一站式密态智能体开发平台，面向政企客户提供低门槛的大模型密态推理路径。",
+          "target_customers": "政企客户",
+          "features": [
+            "一站式密态智能体开发",
+            "低门槛接入"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1722ea030c12f750",
+              "quote": "一站式密态智能体开发平台“密态 MaaS”",
+              "source_content_hash": "a6a01dbcd6cc6993",
+              "quote_hash": "e42273321a1568b75df21f39e871eef20bbc481f8cfc23ffcbabbfc1a2ef368f"
+            },
+            {
+              "source_id": "FISRC-fd0fac775fc9770b",
+              "quote": "面向政企客户推出低门槛的密态MaaS",
+              "source_content_hash": "f1d46635993a6e8e",
+              "quote_hash": "a85f6979d16d4f8c3d0a24f2ff0f168fe63940eb815675ad1ed291c4c2409b9e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "密态大模型基础设施平台",
+          "description": "提供密态运行空间、多机密态互联、高性能密态计算、透明密态存储和持续密态安全服务，全面兼容昇腾、海光等国产算力。",
+          "target_customers": "高敏感数据行业客户",
+          "features": [
+            "密态运行空间",
+            "多机密态互联",
+            "高性能密态计算",
+            "透明密态存储",
+            "持续密态安全服务"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1722ea030c12f750",
+              "quote": "荆华密算正式发布“密态大模型基础设施平台”，提供密态运行空间、多机密态互联、高性能密态计算、透明密态存储和持续密态安全服务",
+              "source_content_hash": "a6a01dbcd6cc6993",
+              "quote_hash": "0f56f37bfe332e8fd3e1ed95cac62d9565405dfc8060119b8af94061d255c7f6"
+            },
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "当前已发布密态大模型基础设施平台，全面兼容昇腾、海光等国产算力",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "7b212ec59c4d96e60a1d38b9b81aab279d57be0786efa8c36bee3605c09b82c4"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "某跨国企业",
+          "industry": "",
+          "use_case": "密态计算方案落地17个国家和地区，服务近1亿用户",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1722ea030c12f750",
+              "quote": "曾经随某跨国企业落地 17 个国家和地区，服务近 1 亿用户",
+              "source_content_hash": "a6a01dbcd6cc6993",
+              "quote_hash": "08901648dbb3dd7372541f607451cf9fd1ba0ab5e93e3f68ce7098ea2ac987f7"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "多家算力云厂商",
+          "industry": "",
+          "use_case": "签订战略合作框架并完成部分产品接入",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "已与多家算力云厂商签订战略合作框架并完成部分产品接入",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "b7cee65e3374b63c9829e6f99fde4460ef88a6aa1d05b97a02e7742eca8f625e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "可信Token单周消耗量",
+          "value": "突破100亿",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "可信Token产品单周消耗量突破100亿",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "8355f5baf51ba8341ae40afbbb9b06f77fbd4fdf2f7e125c2342ee265e9c8a4e"
+            }
+          ]
+        },
+        {
+          "label": "密态计算性能损耗压缩幅度",
+          "value": "从千倍量级压缩至可商用水平",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "将密态计算性能损耗从千倍量级压缩至可商用水平并实现100%精度还原",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "08b1dc3ef81fb3f4071a7d3df64171d558bd344b70543d971027096f451fabf2"
+            }
+          ]
+        },
+        {
+          "label": "AI数据保险赔付上限",
+          "value": "200万元",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "公司联合中国人民保险首创全球首个AI数据保险，赔付上限达200万元",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "92674f8f82442a7f69b51983bc1dcf519731feb8d16ad13f63198995f42becca"
+            }
+          ]
+        },
+        {
+          "label": "方案落地国家和地区数",
+          "value": "17个",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "相关方案曾随跨国企业落地17个国家和地区",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "23e82b620e00335d2a5276235be6f9151bd6a21b2e262b9586bb5be44546a6fe"
+            }
+          ]
+        },
+        {
+          "label": "方案服务用户数",
+          "value": "近1亿",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "服务近1亿用户",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "0149326e02a1d847469b522a112b5ac7b233beeaefca9e9245472f747378655b"
+            }
+          ]
+        },
+        {
+          "label": "半年内连续融资轮数",
+          "value": "三轮",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "荆华密算在半年内已连续完成三轮融资",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "e9b38ff94f601517ab883e5ccc6197c0f546627152ac1477bc6f2499d6982413"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "林修醇",
+          "quote": "我们要解决高敏场景‘AI 不敢用’难题，把密态计算打造成支撑大模型与 Agent 时代规模化落地的数字基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1722ea030c12f750",
+              "quote": "我们要解决高敏场景‘AI 不敢用’难题，把密态计算打造成支撑大模型与 Agent 时代规模化落地的数字基础设施。",
+              "source_content_hash": "a6a01dbcd6cc6993",
+              "quote_hash": "cc6abea2e1ea55def77ae0b1f0470899ceeb50c417c833568f8567f36ac459a0"
+            }
+          ]
+        },
+        {
+          "speaker": "林修醇",
+          "quote": "加密理论在 20 年前就有了，加密情况下的 INFRA 才是关键",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1722ea030c12f750",
+              "quote": "加密理论在 20 年前就有了，加密情况下的 INFRA 才是关键",
+              "source_content_hash": "a6a01dbcd6cc6993",
+              "quote_hash": "c640908f417b86b2512a49f5658ff56bcbef90d47c8e428eb5f9da4354fd5b5d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "中关村科学城",
+            "speaker": "中关村科学城",
+            "speaker_role": "本轮领投机构",
+            "rationale": "认为荆华密算用密码学重构AI计算底层，在不依赖海外硬件前提下把密态计算从理论可行推进到商业可用，为高敏感场景提供可信基础设施。",
+            "quote": "用密码学重构 AI 计算底层，在不依赖海外硬件的前提下，将密态计算从‘理论可行’推进到‘商业可用’",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1722ea030c12f750",
+                "quote": "用密码学重构 AI 计算底层，在不依赖海外硬件的前提下，将密态计算从‘理论可行’推进到‘商业可用’",
+                "source_content_hash": "a6a01dbcd6cc6993",
+                "quote_hash": "2557af0b0e86b9e54c6ca2f19745522b545c836898ed543546114d862a8dcded"
+              }
+            ]
+          },
+          {
+            "institution": "北创投",
+            "speaker": "北创投",
+            "speaker_role": "本轮领投机构",
+            "rationale": "认为AI渗透率提升使数据安全底座价值凸显，荆华密算让可用不可见具备规模化商用条件，并引入金融级兜底机制重构信任标准。",
+            "quote": "荆华密算不仅让‘可用不可见’首次具备了规模化商用条件，更通过引入金融级兜底机制，重构了行业的信任标准。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1722ea030c12f750",
+                "quote": "荆华密算不仅让‘可用不可见’首次具备了规模化商用条件，更通过引入金融级兜底机制，重构了行业的信任标准。",
+                "source_content_hash": "a6a01dbcd6cc6993",
+                "quote_hash": "8d9acf606605164b5b783a063031f1616ee4c078363959fec8870d17c5fd5637"
+              }
+            ]
+          },
+          {
+            "institution": "英诺基金",
+            "speaker": "英诺科创基金",
+            "speaker_role": "本轮参投机构",
+            "rationale": "认为大模型本身正成为隐私泄露环节，模型全过程加密将成刚需，荆华密算让安全与可用同时成立并适配大部分国产模型和芯片。",
+            "quote": "荆华密算让‘安全’和‘可用’第一次同时成立，并且已经适配大部分国产模型和芯片。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1722ea030c12f750",
+                "quote": "荆华密算让‘安全’和‘可用’第一次同时成立，并且已经适配大部分国产模型和芯片。",
+                "source_content_hash": "a6a01dbcd6cc6993",
+                "quote_hash": "e24ab3044ab54b113ca6a5966528360ceffacc37bfc4aab27b1ae99624899b5a"
+              }
+            ]
+          },
+          {
+            "institution": "盛景嘉成基金",
+            "speaker": "盛景嘉成创投",
+            "speaker_role": "本轮参投机构",
+            "rationale": "认为Token工厂需同时解决生产效率与可信生产，荆华密算正建设面向企业核心业务的可信Token工厂。",
+            "quote": "荆华密算正在建设面向企业核心业务的可信 Token 工厂，将高性能密态计算与模型服务打通",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1722ea030c12f750",
+                "quote": "荆华密算正在建设面向企业核心业务的可信 Token 工厂，将高性能密态计算与模型服务打通",
+                "source_content_hash": "a6a01dbcd6cc6993",
+                "quote_hash": "6b44851e7a19aa23b9d3cebbab7cad80c227dd46ea5b00ca0260f6f8cb3ffaec"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是密态计算能否在保持安全的同时把性能损耗压到商用可接受水平，并由此形成可规模化的Token供给与高敏感行业付费。已验证信号包括：可信Token单周消耗量突破100亿、与多家算力云厂商签订战略合作框架并完成部分产品接入、方案曾随跨国企业落地17个国家和地区并服务近1亿用户、联合中国人民保险推出赔付上限200万元的AI数据保险。证据边界在于：来源未披露本轮具体估值、收入、合同金额与客户付费规模，性能损耗“可商用水平”与“100%精度还原”为公司及媒体表述，尚缺第三方独立评测。",
+        "validated_signals": [
+          "可信Token单周消耗量突破100亿",
+          "与多家算力云厂商签订战略合作框架并完成部分产品接入",
+          "方案曾随跨国企业落地17个国家和地区、服务近1亿用户",
+          "联合中国人民保险推出AI数据保险，赔付上限200万元",
+          "半年内连续完成三轮融资"
+        ],
+        "risks": [
+          "来源未披露本轮估值、收入与合同金额，商业化收入规模仍待验证",
+          "密态计算性能损耗压缩至可商用水平及100%精度还原为公司表述，缺第三方独立评测",
+          "AI数据保险赔付上限200万元为合作条款，不等于公司已实现同等收入或订单",
+          "高敏感行业客户采购周期与合规要求可能拉长商业化落地节奏"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "security_operations",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "government_public_sector",
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "AI密态计算基础设施与密态大模型推理平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是密态计算能否在保持安全的同时把性能损耗压到商用可接受水平，并由此形成可规模化的Token供给与高敏感行业付费。已验证信号包括：可信Token单周消耗量突破100亿、与多家算力云厂商签订战略合作框架并完成部分产品接入、方案曾随跨国企业落地17个国家和地区并服务近1亿用户、联合中国人民保险推出赔付上限200万元的AI数据保险。证据边界在于：来源未披露本轮具体估值、收入、合同金额与客户付费规模，性能损耗“可商用水平”与“100%精度还原”为公司及媒体表述，尚缺第三方独立评测。",
+          "evidence_signals": [
+            "可信Token单周消耗量突破100亿",
+            "与多家算力云厂商签订战略合作框架并完成部分产品接入",
+            "方案曾随跨国企业落地17个国家和地区、服务近1亿用户",
+            "联合中国人民保险推出AI数据保险，赔付上限200万元",
+            "半年内连续完成三轮融资"
+          ],
+          "risks": [
+            "来源未披露本轮估值、收入与合同金额，商业化收入规模仍待验证",
+            "密态计算性能损耗压缩至可商用水平及100%精度还原为公司表述，缺第三方独立评测",
+            "AI数据保险赔付上限200万元为合作条款，不等于公司已实现同等收入或订单",
+            "高敏感行业客户采购周期与合规要求可能拉长商业化落地节奏"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "可信Token",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "密态MaaS",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "密态大模型基础设施平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "林修醇",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中关村科学城",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "北创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "华仓资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "极致投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "英诺基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "盛景嘉成基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "国联股份",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "博彦科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "盛景嘉成创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "英诺科创基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "某跨国企业",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "多家算力云厂商",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d996f29cab26d8b8",
+          "date": "2026-10-13",
+          "title": "荆华密算完成近亿元Pre-A轮融资",
+          "amount": "近亿元",
+          "source_refs": [
+            "SA-dcfe7b52b1f73a11"
+          ]
+        },
+        {
+          "event_id": "EV-bdf01e0aa51360b3",
+          "date": "2026-10-13",
+          "title": "荆华密算完成近亿元Pre-A轮融资_腾讯新闻",
+          "amount": "近亿元",
+          "source_refs": [
+            "SA-cd2abb5dfb7b1c5b"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-1bbbc496210c4b3a",
+          "source_url": "https://news.qq.com/rain/a/20261013A0C6VW00",
+          "title": "荆华密算完成近亿元Pre-A轮融资_腾讯新闻",
+          "publisher": "news.qq.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-18T00:18:20.579Z",
+          "content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+          "source_artifact_id": "SA-cd2abb5dfb7b1c5b",
+          "raw_id": "RAW-1619f351cbd2cd07"
+        },
+        {
+          "source_id": "FISRC-216777b85f8ceff7",
+          "source_url": "http://finance.eastmoney.com/a/202610143895173769.html",
+          "title": "荆华密算完成近亿元Pre-A轮融资，资金投向国产算力适配及密态芯片研发 _ 东方财富网",
+          "publisher": "finance.eastmoney.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:06.845Z",
+          "content_hash": "60623b7ff0a8912e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-20ad4764f92891e9",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-03-27/doc-inhsmxrq1916084.shtml",
+          "title": "用密算解决“龙虾”安全的“最后一公里”，清华系团队荆华密算完成数千万元天使轮融资",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:09.642Z",
+          "content_hash": "cc951bb654cd28d5",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1722ea030c12f750",
+          "source_url": "https://news.qq.com/rain/a/20261013A06JJE00?ptag=ima",
+          "title": "「荆华密算」完成近亿元 Pre-A 轮融资，全面解决高敏场景 “AI 不敢用” 难题 | 光源伙伴_腾讯新闻",
+          "publisher": "news.qq.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:14.467Z",
+          "content_hash": "a6a01dbcd6cc6993",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-791de517dc5ddf49",
+          "source_url": "https://www.163.com/dy/article/KBTM9BC905118RLD.html",
+          "title": "清华团队出手！荆华密算获千万融资，用密码级安全守护AI训练，精度损耗仅0.5%！| 每日速递",
+          "publisher": "163.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:15.618Z",
+          "content_hash": "11979c63a992bb87",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-fd0fac775fc9770b",
+          "source_url": "https://www.doit.com.cn/itnews/859123224883269.html",
+          "title": "荆华密算完成近亿元Pre-A轮融资",
+          "publisher": "doit.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:17.572Z",
+          "content_hash": "f1d46635993a6e8e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-18T00:40:57.038Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-18T00:40:57.038Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "可信Token",
+            "密态MaaS",
+            "密态大模型基础设施平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "林修醇"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-bdf01e0aa51360b3"
+      ],
+      "aggregation": {
+        "key": "EN-6ec81821068b9e26|pre_series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-6247a7c80b466663",
+      "triggered_by_event_id": "EV-d996f29cab26d8b8",
+      "as_of_date": "2026-10-18",
+      "company": {
+        "entity_id": "EN-6ec81821068b9e26",
+        "name": "荆华密算（北京）科技有限公司",
+        "full_name": "荆华密算（北京）科技有限公司",
+        "website": "",
+        "summary": "AI密态计算技术服务商，专注提升人工智能密态计算的性能与训练效率，独创“线性与非线性计算分离”架构，将密态计算性能损耗压缩至可商用水平并实现精度还原。",
+        "headquarters": "北京市海淀区",
+        "founders": [
+          {
+            "name": "林修醇",
+            "role": "创始人、CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-216777b85f8ceff7",
+                "quote": "创始人林修醇本科期间获国家奖学金并以第一作者发表顶刊",
+                "source_content_hash": "60623b7ff0a8912e",
+                "quote_hash": "56dc55c1f16990b7d1170e193bff991bff90354b8026b24f9dcafc9b940f5ba5"
+              },
+              {
+                "source_id": "FISRC-1722ea030c12f750",
+                "quote": "荆华密算创始人、CEO 林修醇表示",
+                "source_content_hash": "a6a01dbcd6cc6993",
+                "quote_hash": "f27f2799daf6765136b5fc53ae4830ca111fb3e458c2a9afc27fd03612de8136"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5bb753a530071ce6",
+            "quote": "AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资",
+            "source_content_hash": "cce3fa9e4a0d5f61fdb8880cee5b9cd46d8deeccf9fb9212dff6362d95ff4eb4",
+            "quote_hash": "3bc66735fcd6435bc7f2a15e3ad20e1cde12fdbbac10cdc6ea62867bbd905031"
+          },
+          {
+            "source_id": "FISRC-216777b85f8ceff7",
+            "quote": "荆华密算成立于2024年，总部位于北京市海淀区，是一家AI密态计算技术服务商",
+            "source_content_hash": "60623b7ff0a8912e",
+            "quote_hash": "e1b8317370e4825bc528548266061be8a67a2def2dc0a86ff3277d385f76b59f"
+          }
+        ],
+        "application_entity_id": "EN-6ec81821068b9e26",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "Pre-A轮",
+        "amount": "近亿元",
+        "total_raised": "",
+        "announced_at": "2026-10-13",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "中关村科学城",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5bb753a530071ce6",
+                "quote": "本轮由中关村科学城、北创投联合领投",
+                "source_content_hash": "cce3fa9e4a0d5f61fdb8880cee5b9cd46d8deeccf9fb9212dff6362d95ff4eb4",
+                "quote_hash": "b777642bd2949386face3a7808fc34a31109e63f7b54ed87ca8e2a1a056aab9e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "北创投",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5bb753a530071ce6",
+                "quote": "本轮由中关村科学城、北创投联合领投",
+                "source_content_hash": "cce3fa9e4a0d5f61fdb8880cee5b9cd46d8deeccf9fb9212dff6362d95ff4eb4",
+                "quote_hash": "b777642bd2949386face3a7808fc34a31109e63f7b54ed87ca8e2a1a056aab9e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "华仓资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5bb753a530071ce6",
+                "quote": "华仓资本、极致投资、英诺基金、盛景嘉成基金跟投",
+                "source_content_hash": "cce3fa9e4a0d5f61fdb8880cee5b9cd46d8deeccf9fb9212dff6362d95ff4eb4",
+                "quote_hash": "3dadce219c90af60f274581a84bfa01b31b907ef5e2636c16962820883e9d8bd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "极致投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5bb753a530071ce6",
+                "quote": "华仓资本、极致投资、英诺基金、盛景嘉成基金跟投",
+                "source_content_hash": "cce3fa9e4a0d5f61fdb8880cee5b9cd46d8deeccf9fb9212dff6362d95ff4eb4",
+                "quote_hash": "3dadce219c90af60f274581a84bfa01b31b907ef5e2636c16962820883e9d8bd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "英诺科创基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-216777b85f8ceff7",
+                "quote": "老股东英诺科创基金、盛景嘉成创投持续加注",
+                "source_content_hash": "60623b7ff0a8912e",
+                "quote_hash": "69b76cf821ac6c346e48bf3aacd8964c1c67c842b197f88744fc014b7b7173e0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "盛景嘉成创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-216777b85f8ceff7",
+                "quote": "老股东英诺科创基金、盛景嘉成创投持续加注",
+                "source_content_hash": "60623b7ff0a8912e",
+                "quote_hash": "69b76cf821ac6c346e48bf3aacd8964c1c67c842b197f88744fc014b7b7173e0"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "国联股份",
+            "role": "天使轮跟投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-20ad4764f92891e9",
+                "quote": "本轮融资由盛景嘉成创投领投，上市公司国联股份（603613）、博彦科技（002649）以及老股东英诺科创基金跟投",
+                "source_content_hash": "cc951bb654cd28d5",
+                "quote_hash": "68ef4184d5aa500b9a4fba40e2865c8208003746735955052ea1295e73cabbe7"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "博彦科技",
+            "role": "天使轮跟投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-20ad4764f92891e9",
+                "quote": "本轮融资由盛景嘉成创投领投，上市公司国联股份（603613）、博彦科技（002649）以及老股东英诺科创基金跟投",
+                "source_content_hash": "cc951bb654cd28d5",
+                "quote_hash": "68ef4184d5aa500b9a4fba40e2865c8208003746735955052ea1295e73cabbe7"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "英诺科创基金",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-791de517dc5ddf49",
+                "quote": "本轮融资由英诺科创基金领投，光源资本担任孵化方及独家财务顾问",
+                "source_content_hash": "11979c63a992bb87",
+                "quote_hash": "f32804c678a809e236605d1c5b094e44f0186a561ec8b909e987b82510db55b6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5bb753a530071ce6",
+            "quote": "【荆华密算完成近亿元Pre-A轮融资】《科创板日报》13日讯，近日，AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资，本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投。",
+            "source_content_hash": "cce3fa9e4a0d5f61fdb8880cee5b9cd46d8deeccf9fb9212dff6362d95ff4eb4",
+            "quote_hash": "433633c1eb22e6e8cc91c2aa855bb74f41972ec52f7ae3e2f72c09aa3e2aba43"
+          },
+          {
+            "source_id": "FISRC-5bb753a530071ce6",
+            "quote": "本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投",
+            "source_content_hash": "cce3fa9e4a0d5f61fdb8880cee5b9cd46d8deeccf9fb9212dff6362d95ff4eb4",
+            "quote_hash": "476fe28cb5e3936234c9ae0e1fa0033b9754d4f27186d02ec394018bf8a8890a"
+          },
+          {
+            "source_id": "FISRC-216777b85f8ceff7",
+            "quote": "本轮融资由中关村科学城、北创投联合领投，华仓资本、极致投资联合投资，老股东英诺科创基金、盛景嘉成创投持续加注",
+            "source_content_hash": "60623b7ff0a8912e",
+            "quote_hash": "192511df26c34c2867345a060c64516f5558e89fe87c6f3d38b5cc0e0ab0b3f2"
+          }
+        ],
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-d996f29cab26d8b8",
+            "round_original": "Pre-A轮",
+            "amount": "近亿元",
+            "announced_at": "2026-10-13",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5bb753a530071ce6",
+                "quote": "【荆华密算完成近亿元Pre-A轮融资】《科创板日报》13日讯，近日，AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资，本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投。",
+                "source_content_hash": "cce3fa9e4a0d5f61fdb8880cee5b9cd46d8deeccf9fb9212dff6362d95ff4eb4",
+                "quote_hash": "433633c1eb22e6e8cc91c2aa855bb74f41972ec52f7ae3e2f72c09aa3e2aba43"
+              },
+              {
+                "source_id": "FISRC-5bb753a530071ce6",
+                "quote": "本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投",
+                "source_content_hash": "cce3fa9e4a0d5f61fdb8880cee5b9cd46d8deeccf9fb9212dff6362d95ff4eb4",
+                "quote_hash": "476fe28cb5e3936234c9ae0e1fa0033b9754d4f27186d02ec394018bf8a8890a"
+              },
+              {
+                "source_id": "FISRC-216777b85f8ceff7",
+                "quote": "本轮融资由中关村科学城、北创投联合领投，华仓资本、极致投资联合投资，老股东英诺科创基金、盛景嘉成创投持续加注",
+                "source_content_hash": "60623b7ff0a8912e",
+                "quote_hash": "192511df26c34c2867345a060c64516f5558e89fe87c6f3d38b5cc0e0ab0b3f2"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "密态大模型基础设施平台",
+          "description": "提供密态运行空间、多机密态互联、高性能密态计算、透明密态存储和持续密态安全服务，为行业提供低门槛、高可信的大模型密态推理路径。",
+          "target_customers": "政企、金融、医疗、法律等高敏感数据场景客户",
+          "features": [
+            "全面兼容昇腾、海光等国产算力",
+            "摆脱对海外GPU-TEE依赖",
+            "数据可用不可见全链路工程化落地"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "当前已发布密态大模型基础设施平台，全面兼容昇腾、海光等国产算力，摆脱对海外GPU-TEE依赖",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "0940edcf373d3dc2fc165bf169543c2236fc8566f76b395646df0543f6e82f92"
+            },
+            {
+              "source_id": "FISRC-1722ea030c12f750",
+              "quote": "荆华密算正式发布“密态大模型基础设施平台”，提供密态运行空间、多机密态互联、高性能密态计算、透明密态存储和持续密态安全服务",
+              "source_content_hash": "a6a01dbcd6cc6993",
+              "quote_hash": "0f56f37bfe332e8fd3e1ed95cac62d9565405dfc8060119b8af94061d255c7f6"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "可信Token",
+          "description": "让用户通过调用加密大模型API快速拥有全模态计算推理能力，面向API开发者提供“零改动”接入。",
+          "target_customers": "API开发者、算力云厂商",
+          "features": [
+            "加密大模型API调用",
+            "零改动接入",
+            "单周Token消耗量突破100亿"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1722ea030c12f750",
+              "quote": "让用户通过调用加密大模型 API 快速拥有全模态计算推理能力的可信 Token 产品",
+              "source_content_hash": "a6a01dbcd6cc6993",
+              "quote_hash": "91753eaa0658bdb5fba324807fcd26cc724dd8087225ab7f12fb590e175a00bf"
+            },
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "可信Token产品单周消耗量突破100亿，已与多家算力云厂商签订战略合作框架并完成部分产品接入",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "d8042e2f48a3d30acd468b25f882aaecd89ad551c6d363e17fe51aa975f5412e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "密态MaaS",
+          "description": "一站式密态智能体开发平台，面向政企客户提供低门槛的密态模型服务。",
+          "target_customers": "政企客户",
+          "features": [
+            "一站式密态智能体开发",
+            "低门槛接入"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1722ea030c12f750",
+              "quote": "一站式密态智能体开发平台“密态 MaaS”",
+              "source_content_hash": "a6a01dbcd6cc6993",
+              "quote_hash": "e42273321a1568b75df21f39e871eef20bbc481f8cfc23ffcbabbfc1a2ef368f"
+            },
+            {
+              "source_id": "FISRC-fd0fac775fc9770b",
+              "quote": "面向政企客户推出低门槛的密态MaaS",
+              "source_content_hash": "f1d46635993a6e8e",
+              "quote_hash": "a85f6979d16d4f8c3d0a24f2ff0f168fe63940eb815675ad1ed291c4c2409b9e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "某跨国企业",
+          "industry": "",
+          "use_case": "密态计算方案随其落地17个国家和地区，服务近1亿用户",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "相关方案曾随跨国企业落地17个国家和地区，服务近1亿用户",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "c8631cb2c7b4f9236c8d04d0d73e075c4631375b2ef5c122efed385b3ff95b7f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "多家算力云厂商",
+          "industry": "",
+          "use_case": "签订战略合作框架并完成部分产品接入",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "已与多家算力云厂商签订战略合作框架并完成部分产品接入",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "b7cee65e3374b63c9829e6f99fde4460ef88a6aa1d05b97a02e7742eca8f625e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "可信Token单周消耗量",
+          "value": "突破100亿",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "可信Token产品单周消耗量突破100亿",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "8355f5baf51ba8341ae40afbbb9b06f77fbd4fdf2f7e125c2342ee265e9c8a4e"
+            }
+          ]
+        },
+        {
+          "label": "密态计算性能损耗压缩幅度",
+          "value": "从千倍量级压缩至可商用水平",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "将密态计算性能损耗从千倍量级压缩至可商用水平并实现100%精度还原",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "08b1dc3ef81fb3f4071a7d3df64171d558bd344b70543d971027096f451fabf2"
+            }
+          ]
+        },
+        {
+          "label": "AI数据保险赔付上限",
+          "value": "200万元",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "公司联合中国人民保险首创全球首个AI数据保险，赔付上限达200万元",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "92674f8f82442a7f69b51983bc1dcf519731feb8d16ad13f63198995f42becca"
+            }
+          ]
+        },
+        {
+          "label": "方案落地国家和地区数",
+          "value": "17个",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "相关方案曾随跨国企业落地17个国家和地区",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "23e82b620e00335d2a5276235be6f9151bd6a21b2e262b9586bb5be44546a6fe"
+            }
+          ]
+        },
+        {
+          "label": "方案服务用户数",
+          "value": "近1亿",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "服务近1亿用户",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "0149326e02a1d847469b522a112b5ac7b233beeaefca9e9245472f747378655b"
+            }
+          ]
+        },
+        {
+          "label": "半年内连续完成融资轮数",
+          "value": "三轮",
+          "observed_at": "2026-10-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-216777b85f8ceff7",
+              "quote": "荆华密算在半年内已连续完成三轮融资",
+              "source_content_hash": "60623b7ff0a8912e",
+              "quote_hash": "e9b38ff94f601517ab883e5ccc6197c0f546627152ac1477bc6f2499d6982413"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "林修醇",
+          "quote": "荆华密算的战略目标非常明确，我们要解决高敏场景‘AI 不敢用’难题，把密态计算打造成支撑大模型与 Agent 时代规模化落地的数字基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1722ea030c12f750",
+              "quote": "荆华密算的战略目标非常明确，我们要解决高敏场景‘AI 不敢用’难题，把密态计算打造成支撑大模型与 Agent 时代规模化落地的数字基础设施。",
+              "source_content_hash": "a6a01dbcd6cc6993",
+              "quote_hash": "a649a4359a23f4e1b4cb3d2c0a4bc8a2ab28acf1dd337ab0661eb304d494a372"
+            }
+          ]
+        },
+        {
+          "speaker": "林修醇",
+          "quote": "加密理论在 20 年前就有了，加密情况下的 INFRA 才是关键，世界上几乎没有团队专门针对加密智算优化模型计算效率，但是效率才是加密技术从少数单位的专属迈向普世化的关键。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1722ea030c12f750",
+              "quote": "加密理论在 20 年前就有了，加密情况下的 INFRA 才是关键，世界上几乎没有团队专门针对加密智算优化模型计算效率，但是效率才是加密技术从少数单位的专属迈向普世化的关键。",
+              "source_content_hash": "a6a01dbcd6cc6993",
+              "quote_hash": "83c43e44d91fad48cd626412d7dfd5ea9034e69832f39d3848d5b9ed48706b79"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "中关村科学城",
+            "speaker": "中关村科学城",
+            "speaker_role": "本轮领投方",
+            "rationale": "认为荆华密算用密码学重构AI计算底层，在不依赖海外硬件前提下将密态计算从理论可行推进到商业可用，为高敏感场景提供可信基础设施。",
+            "quote": "荆华密算源自清华、扎根中关村科学城，用密码学重构 AI 计算底层，在不依赖海外硬件的前提下，将密态计算从‘理论可行’推进到‘商业可用’，为 AI 大模型在高敏感场景的落地提供了可信基础设施",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1722ea030c12f750",
+                "quote": "荆华密算源自清华、扎根中关村科学城，用密码学重构 AI 计算底层，在不依赖海外硬件的前提下，将密态计算从‘理论可行’推进到‘商业可用’，为 AI 大模型在高敏感场景的落地提供了可信基础设施",
+                "source_content_hash": "a6a01dbcd6cc6993",
+                "quote_hash": "bd1479113c2040bf01b3e76b2764f531bc04263204267cc10053b518c15fb85b"
+              }
+            ]
+          },
+          {
+            "institution": "北创投",
+            "speaker": "北创投",
+            "speaker_role": "本轮领投方",
+            "rationale": "认为荆华密算让可用不可见具备规模化商用条件，并通过金融级兜底机制重构行业信任标准，已跨越商业化拐点。",
+            "quote": "荆华密算不仅让‘可用不可见’首次具备了规模化商用条件，更通过引入金融级兜底机制，重构了行业的信任标准。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1722ea030c12f750",
+                "quote": "荆华密算不仅让‘可用不可见’首次具备了规模化商用条件，更通过引入金融级兜底机制，重构了行业的信任标准。",
+                "source_content_hash": "a6a01dbcd6cc6993",
+                "quote_hash": "8d9acf606605164b5b783a063031f1616ee4c078363959fec8870d17c5fd5637"
+              }
+            ]
+          },
+          {
+            "institution": "英诺科创基金",
+            "speaker": "英诺科创基金",
+            "speaker_role": "本轮参投方、老股东",
+            "rationale": "认为大模型本身正成为隐私泄露环节，模型全过程加密将成刚需，荆华密算让安全与可用同时成立并适配大部分国产模型和芯片。",
+            "quote": "荆华密算让‘安全’和‘可用’第一次同时成立，并且已经适配大部分国产模型和芯片。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1722ea030c12f750",
+                "quote": "荆华密算让‘安全’和‘可用’第一次同时成立，并且已经适配大部分国产模型和芯片。",
+                "source_content_hash": "a6a01dbcd6cc6993",
+                "quote_hash": "e24ab3044ab54b113ca6a5966528360ceffacc37bfc4aab27b1ae99624899b5a"
+              }
+            ]
+          },
+          {
+            "institution": "盛景嘉成创投",
+            "speaker": "盛景嘉成创投",
+            "speaker_role": "本轮参投方、老股东",
+            "rationale": "认为Token工厂需同时解决生产效率与可信生产，荆华密算正建设面向企业核心业务的可信Token工厂。",
+            "quote": "荆华密算正在建设面向企业核心业务的可信 Token 工厂，将高性能密态计算与模型服务打通，使敏感数据能够在安全边界内持续参与推理，并按 Token 实现规模化供给。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1722ea030c12f750",
+                "quote": "荆华密算正在建设面向企业核心业务的可信 Token 工厂，将高性能密态计算与模型服务打通，使敏感数据能够在安全边界内持续参与推理，并按 Token 实现规模化供给。",
+                "source_content_hash": "a6a01dbcd6cc6993",
+                "quote_hash": "111d3ee1e6aa1dab0379fa084f2864721db51e494c1e99342c35eb668e3a39eb"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是密态计算能否在保持安全的前提下把性能损耗压到商用水平，并由此形成可规模化的Token供给与云服务收入。当前已验证信号包括：可信Token单周消耗量突破100亿、与多家算力云厂商签订战略合作框架并完成部分产品接入、方案曾随跨国企业落地17个国家和地区并服务近1亿用户、与中国人民保险合作推出赔付上限200万元的AI数据保险。证据边界在于：来源未披露本轮具体估值、收入、合同金额与客户付费规模，商业化拐点判断来自投资方表述而非财务数据。",
+        "validated_signals": [
+          "可信Token单周消耗量突破100亿",
+          "已与多家算力云厂商签订战略合作框架并完成部分产品接入",
+          "方案曾随跨国企业落地17个国家和地区，服务近1亿用户",
+          "与中国人民保险合作首创AI数据保险，赔付上限达200万元",
+          "半年内连续完成三轮融资"
+        ],
+        "risks": [
+          "来源未披露本轮估值、收入与合同金额，商业化拐点缺乏财务数据验证",
+          "密态计算性能损耗压缩与100%精度还原为公司自述技术指标，缺少第三方基准测试",
+          "AI数据保险赔付上限200万元相对企业级数据泄露损失可能有限，实际理赔覆盖范围未披露",
+          "加密云服务收入增量属创始人判断，尚待验证",
+          "行业安全标准与监管要求仍在演进，可能影响产品适配与客户采购节奏"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "security_operations",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "government_public_sector",
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "AI密态计算基础设施与可信Token服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是密态计算能否在保持安全的前提下把性能损耗压到商用水平，并由此形成可规模化的Token供给与云服务收入。当前已验证信号包括：可信Token单周消耗量突破100亿、与多家算力云厂商签订战略合作框架并完成部分产品接入、方案曾随跨国企业落地17个国家和地区并服务近1亿用户、与中国人民保险合作推出赔付上限200万元的AI数据保险。证据边界在于：来源未披露本轮具体估值、收入、合同金额与客户付费规模，商业化拐点判断来自投资方表述而非财务数据。",
+          "evidence_signals": [
+            "可信Token单周消耗量突破100亿",
+            "已与多家算力云厂商签订战略合作框架并完成部分产品接入",
+            "方案曾随跨国企业落地17个国家和地区，服务近1亿用户",
+            "与中国人民保险合作首创AI数据保险，赔付上限达200万元",
+            "半年内连续完成三轮融资"
+          ],
+          "risks": [
+            "来源未披露本轮估值、收入与合同金额，商业化拐点缺乏财务数据验证",
+            "密态计算性能损耗压缩与100%精度还原为公司自述技术指标，缺少第三方基准测试",
+            "AI数据保险赔付上限200万元相对企业级数据泄露损失可能有限，实际理赔覆盖范围未披露",
+            "加密云服务收入增量属创始人判断，尚待验证",
+            "行业安全标准与监管要求仍在演进，可能影响产品适配与客户采购节奏"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "密态大模型基础设施平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "可信Token",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "密态MaaS",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "林修醇",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中关村科学城",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "北创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "华仓资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "极致投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "英诺科创基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "盛景嘉成创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "国联股份",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "博彦科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "英诺科创基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "某跨国企业",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "多家算力云厂商",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d996f29cab26d8b8",
+          "date": "2026-10-13",
+          "title": "荆华密算完成近亿元Pre-A轮融资",
+          "amount": "近亿元",
+          "source_refs": [
+            "SA-dcfe7b52b1f73a11"
+          ]
+        },
+        {
+          "event_id": "EV-bdf01e0aa51360b3",
+          "date": "2026-10-13",
+          "title": "荆华密算完成近亿元Pre-A轮融资_腾讯新闻",
+          "amount": "近亿元",
+          "source_refs": [
+            "SA-cd2abb5dfb7b1c5b"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-5bb753a530071ce6",
+          "source_url": "https://www.sohu.com/a/1087312214_122029351",
+          "title": "荆华密算完成近亿元Pre-A轮融资",
+          "publisher": "www.sohu.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-18T00:18:21.106Z",
+          "content_hash": "cce3fa9e4a0d5f61fdb8880cee5b9cd46d8deeccf9fb9212dff6362d95ff4eb4",
+          "source_artifact_id": "SA-dcfe7b52b1f73a11",
+          "raw_id": "RAW-2dc6a8542860f712"
+        },
+        {
+          "source_id": "FISRC-216777b85f8ceff7",
+          "source_url": "http://finance.eastmoney.com/a/202610143895173769.html",
+          "title": "荆华密算完成近亿元Pre-A轮融资，资金投向国产算力适配及密态芯片研发 _ 东方财富网",
+          "publisher": "finance.eastmoney.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:06.845Z",
+          "content_hash": "60623b7ff0a8912e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-20ad4764f92891e9",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-03-27/doc-inhsmxrq1916084.shtml",
+          "title": "用密算解决“龙虾”安全的“最后一公里”，清华系团队荆华密算完成数千万元天使轮融资",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:09.642Z",
+          "content_hash": "cc951bb654cd28d5",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1722ea030c12f750",
+          "source_url": "https://news.qq.com/rain/a/20261013A06JJE00?ptag=ima",
+          "title": "「荆华密算」完成近亿元 Pre-A 轮融资，全面解决高敏场景 “AI 不敢用” 难题 | 光源伙伴_腾讯新闻",
+          "publisher": "news.qq.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:14.467Z",
+          "content_hash": "a6a01dbcd6cc6993",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-791de517dc5ddf49",
+          "source_url": "https://www.163.com/dy/article/KBTM9BC905118RLD.html",
+          "title": "清华团队出手！荆华密算获千万融资，用密码级安全守护AI训练，精度损耗仅0.5%！| 每日速递",
+          "publisher": "163.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:15.618Z",
+          "content_hash": "11979c63a992bb87",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-fd0fac775fc9770b",
+          "source_url": "https://www.doit.com.cn/itnews/859123224883269.html",
+          "title": "荆华密算完成近亿元Pre-A轮融资",
+          "publisher": "doit.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:17.572Z",
+          "content_hash": "f1d46635993a6e8e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-18T00:40:33.755Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-18T00:40:33.755Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "可信Token",
+            "密态MaaS",
+            "密态大模型基础设施平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "林修醇"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-d996f29cab26d8b8"
+      ],
+      "aggregation": {
+        "key": "EN-6ec81821068b9e26|pre_series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-8e38ca61cce646ed",
+      "triggered_by_event_id": "EV-745ef35fd5483754",
+      "as_of_date": "2026-10-18",
+      "company": {
+        "entity_id": "EN-1d79127e9d90e89b",
+        "name": "北京智谱华章科技股份有限公司",
+        "full_name": "北京智谱华章科技股份有限公司",
+        "website": "https://www.zhipuai.cn/zh",
+        "summary": "智谱AI是清华大学知识工程实验室技术成果转化而来的AI大模型企业，打造了对标国际领先水平的国产模型产品矩阵，包括AI提效助手智谱清言、高效率代码模型CodeGeeX、多模态理解模型CogVLM、生成图片模型CogView等。",
+        "headquarters": "北京",
+        "founders": [
+          {
+            "name": "张鹏",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5677bbee2d59885e",
+                "quote": "CEO张鹏毕业于清华计算机系",
+                "source_content_hash": "75c7a1308bff9e51",
+                "quote_hash": "41098325215c5ab237da4bf13059c46ca2eb7fecbd43d92e98346e7ac1f38b55"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "刘德兵",
+            "role": "董事长",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fc716bc175e8f4a0",
+                "quote": "董事长刘德兵师从高文院士",
+                "source_content_hash": "cee95813810a587a",
+                "quote_hash": "f86357ac3217c40decb438a12a13610eb42001cd99dc5446c4d4d89068f4c1fa"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "王绍兰",
+            "role": "总裁",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fc716bc175e8f4a0",
+                "quote": "总裁王绍兰为清华创新领军博士",
+                "source_content_hash": "cee95813810a587a",
+                "quote_hash": "22563fbdf0ed70cf59dc3c37dfd6a366963cffd014021cdfc0e70b4abde4aae0"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5677bbee2d59885e",
+            "quote": "智谱AI是一家AI知识智能技术开发商，由清华大学计算机系知识工程实验室的技术成果转化而来。",
+            "source_content_hash": "75c7a1308bff9e51",
+            "quote_hash": "e2bea06696d18d385508e5e6331abad2728857a8ba434d580aeb649c5c60d98b"
+          },
+          {
+            "source_id": "FISRC-cf9ee82e297818c2",
+            "quote": "北京智谱华章科技股份有限公司",
+            "source_content_hash": "52509c59515d11fa",
+            "quote_hash": "a797dd8a29ef0fd70883927a5b82f9e6f253393681f3c38c68356ad8dbd7a18c"
+          }
+        ],
+        "application_entity_id": "FICO-a797dd8a29ef0fd7",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "Pre-A轮",
+        "amount": "超10亿元",
+        "total_raised": "",
+        "announced_at": "2026-10-13",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-bcf75fcd5c450422",
+            "quote": "10月12日，上海AI初创企业模思智能宣布完成超10亿元Pre-A轮融资。",
+            "source_content_hash": "33388578d195ace98debabc013a5d723f1f53325f6304eac826d9ea8acdb8c1e",
+            "quote_hash": "27e3964658e6195d50aa0bbbf28ae608d0fd3070c3cc75b0146f3929168eb394"
+          },
+          {
+            "source_id": "FISRC-bb752ef1eefff903",
+            "quote": "最新一轮B6轮融资后，其投后估值达到约244亿元。",
+            "source_content_hash": "8514af9c5c5d979a",
+            "quote_hash": "96629f93ba4f094e4c18c2639647b374cb844478b4f8ff1ff410cc9efcee3a16"
+          }
+        ],
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-745ef35fd5483754",
+            "round_original": "Pre-A轮",
+            "amount": "超10亿元",
+            "announced_at": "2026-10-13",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf75fcd5c450422",
+                "quote": "10月12日，上海AI初创企业模思智能宣布完成超10亿元Pre-A轮融资。",
+                "source_content_hash": "33388578d195ace98debabc013a5d723f1f53325f6304eac826d9ea8acdb8c1e",
+                "quote_hash": "27e3964658e6195d50aa0bbbf28ae608d0fd3070c3cc75b0146f3929168eb394"
+              },
+              {
+                "source_id": "FISRC-bb752ef1eefff903",
+                "quote": "最新一轮B6轮融资后，其投后估值达到约244亿元。",
+                "source_content_hash": "8514af9c5c5d979a",
+                "quote_hash": "96629f93ba4f094e4c18c2639647b374cb844478b4f8ff1ff410cc9efcee3a16"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "智谱清言",
+          "description": "AI提效助手，支持文生视频、图生视频等能力。",
+          "target_customers": "C端用户及企业客户",
+          "features": [
+            "AI提效助手",
+            "文生视频",
+            "图生视频"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5677bbee2d59885e",
+              "quote": "AI提效助手智谱清言",
+              "source_content_hash": "75c7a1308bff9e51",
+              "quote_hash": "95e3bbafb4a7ca6ddc4fd8d6f391c56f834ce2796cd30f17828cd89c8f0dc140"
+            },
+            {
+              "source_id": "FISRC-5677bbee2d59885e",
+              "quote": "AI生成视频模型清影（Ying）正式上线智谱清言",
+              "source_content_hash": "75c7a1308bff9e51",
+              "quote_hash": "a4088f66ca0e4068a135018aead5d2833f689f12e98ebd1891d775e5af98f558"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CodeGeeX",
+          "description": "高效率代码模型。",
+          "target_customers": "开发者",
+          "features": [
+            "代码生成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5677bbee2d59885e",
+              "quote": "高效率代码模型CodeGeeX",
+              "source_content_hash": "75c7a1308bff9e51",
+              "quote_hash": "00a8f536d7d928ddc02e20b3fcb7ec2aca01d36a7a29d11c69d85eb7f84263fa"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "GLM-4-Plus",
+          "description": "新一代基座大模型最新版本，主要更新了图像/视频理解模型GLM-4V-Plus，具备图像理解能力、视频理解能力。",
+          "target_customers": "企业及开发者",
+          "features": [
+            "图像理解",
+            "视频理解"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5677bbee2d59885e",
+              "quote": "智谱AI GLM团队发布了新一代基座大模型最新版本GLM-4-Plus，主要更新了图像/视频理解模型 GLM-4V-Plus，具备图像理解能力、视频理解能力。",
+              "source_content_hash": "75c7a1308bff9e51",
+              "quote_hash": "1411db67bc29b6e51561b4fdf2c0a4b27dd39d38ae9d0201ad052d90e51dc7a4"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "线上电商营销客户",
+          "industry": "电商",
+          "use_case": "AI文生视频、图生视频用于营销内容制作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5677bbee2d59885e",
+              "quote": "具体客户方面，线上电商营销、媒体需求、社交平台的短视频需求比较旺盛",
+              "source_content_hash": "75c7a1308bff9e51",
+              "quote_hash": "158914f175b7eaed89003638ff530ff69c51ba0d33145ab709e8032d8b4ce629"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "媒体客户",
+          "industry": "媒体",
+          "use_case": "AI文生视频、图生视频用于内容生产",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5677bbee2d59885e",
+              "quote": "具体客户方面，线上电商营销、媒体需求、社交平台的短视频需求比较旺盛",
+              "source_content_hash": "75c7a1308bff9e51",
+              "quote_hash": "158914f175b7eaed89003638ff530ff69c51ba0d33145ab709e8032d8b4ce629"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "社交平台客户",
+          "industry": "社交平台",
+          "use_case": "短视频内容生成",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5677bbee2d59885e",
+              "quote": "具体客户方面，线上电商营销、媒体需求、社交平台的短视频需求比较旺盛",
+              "source_content_hash": "75c7a1308bff9e51",
+              "quote_hash": "158914f175b7eaed89003638ff530ff69c51ba0d33145ab709e8032d8b4ce629"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "投后估值",
+          "value": "约244亿元",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bb752ef1eefff903",
+              "quote": "最新一轮B6轮融资后，其投后估值达到约244亿元。",
+              "source_content_hash": "8514af9c5c5d979a",
+              "quote_hash": "96629f93ba4f094e4c18c2639647b374cb844478b4f8ff1ff410cc9efcee3a16"
+            }
+          ]
+        },
+        {
+          "label": "2022年营收",
+          "value": "0.57亿元",
+          "observed_at": "2022",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bb752ef1eefff903",
+              "quote": "2022年至2024年，智谱的营收分别为0.57亿元、1.25亿元和3.12亿元",
+              "source_content_hash": "8514af9c5c5d979a",
+              "quote_hash": "1c8974db6236b0ebac3b5cc2ee5ea5637fc4284fe8057ea775613398ddc8bb4a"
+            }
+          ]
+        },
+        {
+          "label": "2023年营收",
+          "value": "1.25亿元",
+          "observed_at": "2023",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bb752ef1eefff903",
+              "quote": "2022年至2024年，智谱的营收分别为0.57亿元、1.25亿元和3.12亿元",
+              "source_content_hash": "8514af9c5c5d979a",
+              "quote_hash": "1c8974db6236b0ebac3b5cc2ee5ea5637fc4284fe8057ea775613398ddc8bb4a"
+            }
+          ]
+        },
+        {
+          "label": "2024年营收",
+          "value": "3.12亿元",
+          "observed_at": "2024",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bb752ef1eefff903",
+              "quote": "2022年至2024年，智谱的营收分别为0.57亿元、1.25亿元和3.12亿元",
+              "source_content_hash": "8514af9c5c5d979a",
+              "quote_hash": "1c8974db6236b0ebac3b5cc2ee5ea5637fc4284fe8057ea775613398ddc8bb4a"
+            }
+          ]
+        },
+        {
+          "label": "2024年研发费用",
+          "value": "21.95亿元",
+          "observed_at": "2024",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bb752ef1eefff903",
+              "quote": "2024年研发费用达到21.95亿元，占营收的703%。",
+              "source_content_hash": "8514af9c5c5d979a",
+              "quote_hash": "5523200c89a3ccb90a4b44b9d482b49ac2f7ba06740f546477a9e522f1073d4d"
+            }
+          ]
+        },
+        {
+          "label": "2024年经调整净亏损",
+          "value": "24.66亿元",
+          "observed_at": "2024",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bb752ef1eefff903",
+              "quote": "同期经调整净亏损分别为0.97亿、6.21亿以及24.66亿元",
+              "source_content_hash": "8514af9c5c5d979a",
+              "quote_hash": "c317418591ac56bc12a9e2c30e5686b3e76c4c485575dc7596c17954a39cdd06"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "张鹏",
+          "quote": "具体客户方面，线上电商营销、媒体需求、社交平台的短视频需求比较旺盛",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5677bbee2d59885e",
+              "quote": "具体客户方面，线上电商营销、媒体需求、社交平台的短视频需求比较旺盛",
+              "source_content_hash": "75c7a1308bff9e51",
+              "quote_hash": "158914f175b7eaed89003638ff530ff69c51ba0d33145ab709e8032d8b4ce629"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是智谱AI能否在B6轮融资后以约244亿元投后估值持续验证其MaaS商业化能力与独立第三方定位。已验证信号包括2022-2024年营收从0.57亿元增长至3.12亿元，以及GLM系列模型和智谱清言等产品矩阵的落地。但证据边界在于：本轮B6轮融资的具体金额、投资方及宣布时间未在来源中披露，且公司2024年经调整净亏损达24.66亿元，研发费用占营收703%，商业化盈利路径仍待验证。",
+        "validated_signals": [
+          "2022年至2024年营收分别为0.57亿元、1.25亿元和3.12亿元",
+          "B6轮融资后投后估值约244亿元",
+          "已推出智谱清言、CodeGeeX、CogVLM、CogView等产品矩阵",
+          "GLM-4-Plus发布，具备图像/视频理解能力"
+        ],
+        "risks": [
+          "B6轮融资的具体金额、投资方及宣布时间未在来源中披露，融资细节不完整",
+          "2024年经调整净亏损24.66亿元，研发费用占营收703%，盈利压力显著",
+          "前五大客户收入占比虽下降但仍存在波动，定制化项目制客户粘性不足",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "content_creation",
+          "software_development"
+        ],
+        "industry_ids": [
+          "media_entertainment",
+          "retail_ecommerce"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "AI大模型研发与MaaS服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是智谱AI能否在B6轮融资后以约244亿元投后估值持续验证其MaaS商业化能力与独立第三方定位。已验证信号包括2022-2024年营收从0.57亿元增长至3.12亿元，以及GLM系列模型和智谱清言等产品矩阵的落地。但证据边界在于：本轮B6轮融资的具体金额、投资方及宣布时间未在来源中披露，且公司2024年经调整净亏损达24.66亿元，研发费用占营收703%，商业化盈利路径仍待验证。",
+          "evidence_signals": [
+            "2022年至2024年营收分别为0.57亿元、1.25亿元和3.12亿元",
+            "B6轮融资后投后估值约244亿元",
+            "已推出智谱清言、CodeGeeX、CogVLM、CogView等产品矩阵",
+            "GLM-4-Plus发布，具备图像/视频理解能力"
+          ],
+          "risks": [
+            "B6轮融资的具体金额、投资方及宣布时间未在来源中披露，融资细节不完整",
+            "2024年经调整净亏损24.66亿元，研发费用占营收703%，盈利压力显著",
+            "前五大客户收入占比虽下降但仍存在波动，定制化项目制客户粘性不足"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "智谱清言",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CodeGeeX",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "GLM-4-Plus",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "张鹏",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "刘德兵",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "王绍兰",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "线上电商营销客户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "媒体客户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "社交平台客户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-ef669a52c9a3f94f",
+          "date": "2026-09-13",
+          "title": "AI 新闻日报·今日人工智能资讯热点汇总 · 读懂AI时代 2026年9月13日",
+          "amount": "约50亿美元",
+          "source_refs": [
+            "SA-d393714c8031dfe9"
+          ]
+        },
+        {
+          "event_id": "EV-7eead74c2baae511",
+          "date": "2026-09-13",
+          "title": "智谱宣布完成约 50 亿美元融资，用于下一代 GLM 基础模型研发",
+          "amount": "约 50 亿美元",
+          "source_refs": [
+            "SA-3c7b3c2e7bf47e19"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-bcf75fcd5c450422",
+          "source_url": "https://www.163.com/dy/article/L94MC5P60552JPSX.html",
+          "title": "上海AI大模型企业，又融资10亿",
+          "publisher": "www.163.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-18T00:18:15.404Z",
+          "content_hash": "33388578d195ace98debabc013a5d723f1f53325f6304eac826d9ea8acdb8c1e",
+          "source_artifact_id": "SA-ff9e25cda6946aae",
+          "raw_id": "RAW-d0f9f4afd2c2a487"
+        },
+        {
+          "source_id": "FISRC-fc716bc175e8f4a0",
+          "source_url": "https://www.eet-china.com/mp/a275894.html",
+          "title": "科创丨清华系学霸掌舵的智谱AI融资25亿",
+          "publisher": "eet-china.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:39:52.629Z",
+          "content_hash": "cee95813810a587a",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5677bbee2d59885e",
+          "source_url": "https://www.cls.cn/detail/1789984",
+          "title": "北京国资领投、投前估值200亿 这家AI独角兽完成新一轮融资",
+          "publisher": "cls.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:39:53.277Z",
+          "content_hash": "75c7a1308bff9e51",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-cf9ee82e297818c2",
+          "source_url": "https://www.zhipuai.cn/zh",
+          "title": "你好 我是 ZCode",
+          "publisher": "zhipuai.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:39:56.424Z",
+          "content_hash": "52509c59515d11fa",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-bb752ef1eefff903",
+          "source_url": "https://www.cyzone.cn/article/821069.html",
+          "title": "超500亿，清华系智谱敲钟，\"大模型第一股\" 诞生",
+          "publisher": "cyzone.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-18T00:40:13.718Z",
+          "content_hash": "8514af9c5c5d979a",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-18T00:40:22.134Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-18T00:40:22.134Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "CodeGeeX",
+            "GLM-4-Plus",
+            "智谱清言"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "刘德兵",
+            "张鹏",
+            "王绍兰"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-745ef35fd5483754"
+      ],
+      "aggregation": {
+        "key": "EN-1d79127e9d90e89b|pre_series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-40fcb6b8c3d22d2a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-624a5429f93742b9",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-9dfeaeede161baa7",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-439079c4d9694407",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-0aa4975339dd75c5",
+      "company_name": "思敏威集成电路有限公司",
+      "status": "blocked",
+      "problems": [
+        "research_independent_sources_insufficient"
+      ],
+      "queries": [
+        "\"思敏威集成电路有限公司\" 2026 融资 投资方",
+        "\"思敏威集成电路\" 约亿元 融资 领投 跟投",
+        "\"思敏威集成电路有限公司\" 官网 产品 服务",
+        "\"思敏威集成电路有限公司\" 投资机构 融资用途",
+        "\"思敏威集成电路\" 2026 本轮融资 公告",
+        "\"思敏威集成电路有限公司\" 客户 创始人 总部"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"思敏威集成电路有限公司\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.tianyancha.com/organize/bc8ea2986",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"思敏威集成电路\" 约亿元 融资 领投 跟投",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"思敏威集成电路有限公司\" 官网 产品 服务",
+          "status": "completed",
+          "count": 2
+        },
+        {
+          "provider": "tavily",
+          "query": "\"思敏威集成电路有限公司\" 官网 产品 服务",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"思敏威集成电路有限公司\" 官网 产品 服务",
+          "status": "quota_exhausted",
+          "http_status": 402,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"思敏威集成电路有限公司\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.sourl.net/tags/llm",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"思敏威集成电路有限公司\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 1
+        },
+        {
+          "provider": "tavily",
+          "query": "\"思敏威集成电路有限公司\" 投资机构 融资用途",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"思敏威集成电路有限公司\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"思敏威集成电路\" 2026 本轮融资 公告",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"思敏威集成电路有限公司\" 客户 创始人 总部",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-18T00:41:20.831Z",
+      "deferral": {
+        "version": "FINANCING-RESEARCH-DEFERRAL-1",
+        "event_id": "EV-0aa4975339dd75c5",
+        "status": "pending_verification",
+        "reason": "research_independent_sources_insufficient",
+        "sources": [
+          {
+            "raw_id": "RAW-4996b4d6e6d3eee7",
+            "source_ref": "SA-3af583d5635e80de",
+            "content_hash": "671f9bd90629b29138d5c8ca76244612913186914c0e0f4be185193e4cdc746b",
+            "source_url": "https://feng.ifeng.com/c/8xDJBysBvyj"
+          }
+        ],
+        "input_hash": "37c073a1bf6e2df746d901707e42f63e3966829748c3829ca80e035e0cce686e",
+        "next_action": "recover_existing_originals_and_complete_independent_research",
+        "fact_approval": false
+      }
+    },
+    {
+      "event_id": "EV-745ef35fd5483754",
+      "company_name": "智谱AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"智谱AI\" 2026 融资 投资方",
+        "\"智谱AI\" 官网 产品 服务",
+        "\"智谱AI\" 客户 创始人 总部"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"智谱AI\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"智谱\" 超10亿元 融资 领投 跟投",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"智谱AI\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"智谱AI\" 投资机构 融资用途",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"智谱\" 2026 本轮融资 公告",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"智谱AI\" 客户 创始人 总部",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://zhuanlan.zhihu.com/p/665731540",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E6%99%BA%E8%B0%B1%E5%8D%8E%E7%AB%A0%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/65533755",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        }
+      ],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-78ed82b05ec5fbf1",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-1ab1592853c9099a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-d996f29cab26d8b8",
+      "company_name": "荆华密算",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"荆华密算\" 2026 融资 投资方",
+        "\"荆华密算\" 官网 产品 服务",
+        "\"荆华密算\" 投资机构 融资用途",
+        "\"荆华密算\" 客户 创始人 总部"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"荆华密算\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.iyiou.com/company/jinghuamisuan",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"荆华密算\" 近亿元 融资 领投 跟投",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"荆华密算\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://m.qcc.com/firm/85dc1e7c15434d92c8eb1bf75185f41a.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://m.zhipin.com/gongsi/68518f5bfab69bcf03R-3t-_ElM~.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"荆华密算\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"荆华密算\" 2026 本轮融资 公告",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"荆华密算\" 客户 创始人 总部",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-bdf01e0aa51360b3",
+      "company_name": "荆华密算",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"荆华密算\" 2026 融资 投资方",
+        "\"荆华密算\" 官网 产品 服务",
+        "\"荆华密算\" 投资机构 融资用途",
+        "\"荆华密算\" 客户 创始人 总部"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"荆华密算\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.iyiou.com/company/jinghuamisuan",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"荆华密算\" 近亿元 融资 领投 跟投",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"荆华密算\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://m.qcc.com/firm/85dc1e7c15434d92c8eb1bf75185f41a.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.zhipin.com/gongsi/68518f5bfab69bcf03R-3t-_ElM~.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"荆华密算\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"荆华密算\" 2026 本轮融资 公告",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"荆华密算\" 客户 创始人 总部",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-ebc48cb526ad4263",
+      "company_name": "探针AI医疗周报：General Medicine",
+      "status": "blocked",
+      "problems": [
+        "research_sources_insufficient"
+      ],
+      "queries": [
+        "\"探针AI医疗周报：General Medicine\" 2026 融资 投资方",
+        "\"探针AI医疗周报：General Medicine\" 1.2亿美元 融资 领投 跟投",
+        "\"探针AI医疗周报：General Medicine\" 官网 产品 服务",
+        "\"探针AI医疗周报：General Medicine\" 投资机构 融资用途",
+        "\"探针AI医疗周报：General Medicine\" 2026 本轮融资 公告",
+        "\"探针AI医疗周报：General Medicine\" 客户 创始人 总部"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"探针AI医疗周报：General Medicine\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 1
+        },
+        {
+          "provider": "tavily",
+          "query": "\"探针AI医疗周报：General Medicine\" 2026 融资 投资方",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"探针AI医疗周报：General Medicine\" 2026 融资 投资方",
+          "status": "quota_exhausted",
+          "http_status": 402,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"探针AI医疗周报：General Medicine\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"探针AI医疗周报：General Medicine\" 1.2亿美元 融资 领投 跟投",
+          "status": "completed",
+          "count": 1
+        },
+        {
+          "provider": "tavily",
+          "query": "\"探针AI医疗周报：General Medicine\" 1.2亿美元 融资 领投 跟投",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"探针AI医疗周报：General Medicine\" 1.2亿美元 融资 领投 跟投",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"探针AI医疗周报：General Medicine\" 官网 产品 服务",
+          "status": "completed",
+          "count": 1
+        },
+        {
+          "provider": "tavily",
+          "query": "\"探针AI医疗周报：General Medicine\" 官网 产品 服务",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"探针AI医疗周报：General Medicine\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"探针AI医疗周报：General Medicine\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 1
+        },
+        {
+          "provider": "tavily",
+          "query": "\"探针AI医疗周报：General Medicine\" 投资机构 融资用途",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"探针AI医疗周报：General Medicine\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"探针AI医疗周报：General Medicine\" 2026 本轮融资 公告",
+          "status": "completed",
+          "count": 1
+        },
+        {
+          "provider": "tavily",
+          "query": "\"探针AI医疗周报：General Medicine\" 2026 本轮融资 公告",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"探针AI医疗周报：General Medicine\" 2026 本轮融资 公告",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"探针AI医疗周报：General Medicine\" 客户 创始人 总部",
+          "status": "completed",
+          "count": 1
+        },
+        {
+          "provider": "tavily",
+          "query": "\"探针AI医疗周报：General Medicine\" 客户 创始人 总部",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"探针AI医疗周报：General Medicine\" 客户 创始人 总部",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-18T00:41:20.831Z",
+      "deferral": {
+        "version": "FINANCING-RESEARCH-DEFERRAL-1",
+        "event_id": "EV-ebc48cb526ad4263",
+        "status": "pending_verification",
+        "reason": "research_sources_insufficient",
+        "sources": [
+          {
+            "raw_id": "RAW-235daa227b6dbc3b",
+            "source_ref": "SA-409bc3e8b4d5383b",
+            "content_hash": "a3cf93b4c809a4939c8108fd530ea5585e6629182494923485987972d37d3c5c",
+            "source_url": "https://www.sohu.com/a/1086957464_121124378"
+          }
+        ],
+        "input_hash": "5b49a47fcdb175717a95870fabaaf57a2bca72c5933742627a282d27c5746a98",
+        "next_action": "recover_existing_originals_and_complete_independent_research",
+        "fact_approval": false
+      }
+    },
+    {
+      "event_id": "EV-d083659c3a654b8d",
+      "company_name": "Mueon",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Mueon\" 2026 funding round investors",
+        "\"Mueon\" official product customers"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Mueon\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Mueon\" $65 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Mueon\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Mueon\" \"why we invested\"",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Mueon\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Mueon\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-7ee91391ace42994",
+      "company_name": "Fragment",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Fragment\" 2026 funding round investors",
+        "\"Fragment\" $12 million funding announcement",
+        "\"Fragment\" official product customers",
+        "\"Fragment\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Fragment\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://finance.yahoo.com/technology/ai/articles/fragment-raises-12-million-series-221500073.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://tracxn.com/d/companies/fragment/__rMcdCWwJ8xMg9swH0qdoEI4qlMweMlIVh_5vaOSU640",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://wefunder.com/fragment",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.fintechfutures.com/venture-capital-funding/icymi-fintech-funding-round-up-carry-fragment-powder-and-more",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://seedtable.com/companies/fragment-2",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://ffnews.com/news/fragment-raises-12-million-series-a-to-turn-agents-into-financial-operators-21dceeeb",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.instagram.com/p/DXhReZWkVsy/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Fragment\" $12 million funding announcement",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/financialit.net/posts/fragment-raises-12-million-series-a-to-turn-agents-into-financial-operators-frag/1753675793432308/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Fragment\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Fragment\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Fragment\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Fragment\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-b51a67353e247022",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-86aa6c06358dcdae",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-eae106e49ba4d429",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-a0f070acd36db2ad",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-1bdab9eb4433741f",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-7888024e82caf138",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-ebaf045f180333dc",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-4825aa01d742cad3",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-e260188a14619627",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-0c6afd346f19b0a6",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-67da47378d794e52",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-3a09e2f76f792423",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-4973399a1e386bb5",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-db5825e75f029641",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-18T00:41:20.831Z"
+    },
+    {
+      "event_id": "EV-de11eaf439ccee3f",
+      "status": "blocked",
+      "problems": [
+        "funding_combined_rounds_requires_review"
+      ]
+    }
+  ]
+}

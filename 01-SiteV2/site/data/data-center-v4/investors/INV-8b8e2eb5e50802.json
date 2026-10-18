@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-17",
-    "currentDate": "2026-10-17",
-    "eventCount": 4167,
+    "latestDataDate": "2026-10-18",
+    "currentDate": "2026-10-18",
+    "eventCount": 4176,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-06-23",
     "latest_disclosed_at": "2026-10-13",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "angel_plus",
@@ -85,6 +85,11 @@
         "entity_id": "EN-26ef5ed7622bea22",
         "canonical_entity_id": "",
         "name": "荆华密算"
+      },
+      {
+        "entity_id": "EN-6ec81821068b9e26",
+        "canonical_entity_id": "",
+        "name": "荆华密算（北京）科技有限公司"
       },
       {
         "entity_id": "EN-fcc9af8dc8c25167",
@@ -134,6 +139,47 @@
         ]
       },
       {
+        "activity_id": "IA-cbd8fe4770a7fd6c",
+        "funding_insight_id": "FI-a5caba06fd035d65",
+        "event_ids": [
+          "EV-bdf01e0aa51360b3",
+          "EV-d996f29cab26d8b8"
+        ],
+        "company_entity_id": "EN-6ec81821068b9e26",
+        "company_canonical_entity_id": "",
+        "company_name": "荆华密算（北京）科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-10-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-216777b85f8ceff7",
+            "source_url": "http://finance.eastmoney.com/a/202610143895173769.html",
+            "source_title": "荆华密算完成近亿元Pre-A轮融资，资金投向国产算力适配及密态芯片研发 _ 东方财富网",
+            "source_content_hash": "60623b7ff0a8912e",
+            "quote": "老股东英诺科创基金、盛景嘉成创投持续加注",
+            "quote_hash": "69b76cf821ac6c346e48bf3aacd8964c1c67c842b197f88744fc014b7b7173e0"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-8956518611a37b22",
         "funding_insight_id": "FI-a3033e661b23b30e",
         "event_ids": [
@@ -170,6 +216,39 @@
             "source_content_hash": "779e2de6f300c4a2",
             "quote": "本轮融资由 鼎峰科创（武岳峰创投）、英诺科创基金、首程资本领投",
             "quote_hash": "9f6a65c41587a8b84baba8e3267a4d98eb0b2548e50d5ad9335a37bf49fec49b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5d1b3dbb9cececc9",
+        "funding_insight_id": "FI-a5caba06fd035d65",
+        "event_ids": [
+          "EV-bdf01e0aa51360b3",
+          "EV-d996f29cab26d8b8"
+        ],
+        "company_entity_id": "EN-6ec81821068b9e26",
+        "company_canonical_entity_id": "",
+        "company_name": "荆华密算（北京）科技有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投、天使轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-791de517dc5ddf49",
+            "source_url": "https://www.163.com/dy/article/KBTM9BC905118RLD.html",
+            "source_title": "清华团队出手！荆华密算获千万融资，用密码级安全守护AI训练，精度损耗仅0.5%！| 每日速递",
+            "source_content_hash": "11979c63a992bb87",
+            "quote": "本轮融资由英诺科创基金领投，光源资本担任孵化方及独家财务顾问",
+            "quote_hash": "f32804c678a809e236605d1c5b094e44f0186a561ec8b909e987b82510db55b6"
           }
         ]
       },
@@ -216,12 +295,28 @@
         "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
       },
       {
+        "source_id": "FISRC-216777b85f8ceff7",
+        "source_url": "http://finance.eastmoney.com/a/202610143895173769.html",
+        "source_title": "荆华密算完成近亿元Pre-A轮融资，资金投向国产算力适配及密态芯片研发 _ 东方财富网",
+        "source_content_hash": "60623b7ff0a8912e",
+        "quote": "老股东英诺科创基金、盛景嘉成创投持续加注",
+        "quote_hash": "69b76cf821ac6c346e48bf3aacd8964c1c67c842b197f88744fc014b7b7173e0"
+      },
+      {
         "source_id": "FISRC-3f6ac401bc9ed3ed",
         "source_url": "https://news.pedaily.cn/202606/565451.shtml",
         "source_title": "「智子芯元」完成数千万元天使+轮融资，持续深耕 AI for Computing",
         "source_content_hash": "779e2de6f300c4a2",
         "quote": "本轮融资由 鼎峰科创（武岳峰创投）、英诺科创基金、首程资本领投",
         "quote_hash": "9f6a65c41587a8b84baba8e3267a4d98eb0b2548e50d5ad9335a37bf49fec49b"
+      },
+      {
+        "source_id": "FISRC-791de517dc5ddf49",
+        "source_url": "https://www.163.com/dy/article/KBTM9BC905118RLD.html",
+        "source_title": "清华团队出手！荆华密算获千万融资，用密码级安全守护AI训练，精度损耗仅0.5%！| 每日速递",
+        "source_content_hash": "11979c63a992bb87",
+        "quote": "本轮融资由英诺科创基金领投，光源资本担任孵化方及独家财务顾问",
+        "quote_hash": "f32804c678a809e236605d1c5b094e44f0186a561ec8b909e987b82510db55b6"
       },
       {
         "source_id": "FISRC-3277bcd28ace0609",
@@ -288,8 +383,8 @@
           "source_id": "FISRC-3f6ac401bc9ed3ed"
         },
         {
-          "description": "融资来源记录：智子芯元(深圳)科技有限公司 · 历史轮次未披露 · 天使+轮领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3277bcd28ace0609"
+          "description": "融资来源记录：荆华密算（北京）科技有限公司 · 历史轮次未披露 · 种子轮领投、天使轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-791de517dc5ddf49"
         }
       ],
       "contacts": [
@@ -349,12 +444,12 @@
           "quote_hash": "9f6a65c41587a8b84baba8e3267a4d98eb0b2548e50d5ad9335a37bf49fec49b"
         },
         {
-          "source_id": "FISRC-3277bcd28ace0609",
-          "source_url": "https://m.36kr.com/p/3867016514524416",
-          "source_title": "独家专访丁添：两个月连融两轮，AI for Computing赛道黑马智子芯元做对了什么？-36氪",
-          "source_content_hash": "6a9655f58dbceea1",
-          "quote": "本轮融资由鼎峰科创（武岳峰创投）、英诺科创基金、首程资本领投，老股东同创伟业等机构超额跟投。",
-          "quote_hash": "e560c5524bf33f5a62a0b4b4e13679cc1a924f530bba6a2f4427c9257f5fe203"
+          "source_id": "FISRC-791de517dc5ddf49",
+          "source_url": "https://www.163.com/dy/article/KBTM9BC905118RLD.html",
+          "source_title": "清华团队出手！荆华密算获千万融资，用密码级安全守护AI训练，精度损耗仅0.5%！| 每日速递",
+          "source_content_hash": "11979c63a992bb87",
+          "quote": "本轮融资由英诺科创基金领投，光源资本担任孵化方及独家财务顾问",
+          "quote_hash": "f32804c678a809e236605d1c5b094e44f0186a561ec8b909e987b82510db55b6"
         }
       ],
       "last_verified_at": "2026-09-26",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-17",
-    "currentDate": "2026-10-17",
-    "eventCount": 4167,
+    "latestDataDate": "2026-10-18",
+    "currentDate": "2026-10-18",
+    "eventCount": 4176,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-06",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-16",
     "role_counts": {
-      "lead": 3,
+      "lead": 4,
       "participant": 4
     },
     "round_codes": [
@@ -105,6 +105,11 @@
         "name": "Kandou AI"
       },
       {
+        "entity_id": "EN-0c0602512d9cddaa",
+        "canonical_entity_id": "",
+        "name": "Mueon Corp."
+      },
+      {
         "entity_id": "EN-3c1ae4e6276005e7",
         "canonical_entity_id": "EN-3c1ae4e6276005e7",
         "name": "TensorWave Inc."
@@ -121,6 +126,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5ccb6be632384299",
+        "funding_insight_id": "FI-5138928a5c38a2d0",
+        "event_ids": [
+          "EV-d083659c3a654b8d"
+        ],
+        "company_entity_id": "EN-0c0602512d9cddaa",
+        "company_canonical_entity_id": "",
+        "company_name": "Mueon Corp.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$65 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "announced_at": "2026-10-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9f86360bad5cbe27",
+            "source_url": "https://aipressroom.com/mueon-65m-ai-semiconductors/",
+            "source_title": "Mueon完成6500万美元融资，用于优化AI半导体",
+            "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+            "quote": "Maverick Silicon led the round, with participation from Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, and Defined.",
+            "quote_hash": "e9799947030e238b39b15091b343577b0f2d9ab0007170d2dfea28cd7981aa1b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9d4c19ef4b95d128",
         "funding_insight_id": "FI-07d1ab9787e1c9dd",
@@ -404,6 +449,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9f86360bad5cbe27",
+        "source_url": "https://aipressroom.com/mueon-65m-ai-semiconductors/",
+        "source_title": "Mueon完成6500万美元融资，用于优化AI半导体",
+        "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+        "quote": "Maverick Silicon led the round, with participation from Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, and Defined.",
+        "quote_hash": "e9799947030e238b39b15091b343577b0f2d9ab0007170d2dfea28cd7981aa1b"
+      },
+      {
         "source_id": "FISRC-98f84ad840508b39",
         "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
         "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
@@ -474,16 +527,16 @@
           "source_id": "maverick-silicon-point2-seriesb-2026"
         },
         {
+          "description": "融资来源记录：Mueon Corp. · A轮 · 2026-10-16 · 本轮领投 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9f86360bad5cbe27"
+        },
+        {
           "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮参投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f84ad840508b39"
         },
         {
           "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7dcdc22c0b1702bf"
-        },
-        {
-          "description": "融资来源记录：TensorWave Inc. · B轮 · 2026-06-10 · 本轮参投 · 3.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e98aedbd2eaa6410"
         }
       ],
       "contacts": [],
@@ -509,6 +562,14 @@
           "quote_hash": "10368b42e68c635906e0fcea9b82e16ab1eb5031983e5fa6960a0112bb32500a"
         },
         {
+          "source_id": "FISRC-9f86360bad5cbe27",
+          "source_url": "https://aipressroom.com/mueon-65m-ai-semiconductors/",
+          "source_title": "Mueon完成6500万美元融资，用于优化AI半导体",
+          "source_content_hash": "af2359d72184f8b10b191fe44f53a5c5d4e13a1131eed58a01206ecf2c27e219",
+          "quote": "Maverick Silicon led the round, with participation from Intel Capital, Geodesic Alliances Fund, Oregon Venture Fund, M-Ventures, Wellington Capital, IQT, and Defined.",
+          "quote_hash": "e9799947030e238b39b15091b343577b0f2d9ab0007170d2dfea28cd7981aa1b"
+        },
+        {
           "source_id": "FISRC-98f84ad840508b39",
           "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
           "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
@@ -523,14 +584,6 @@
           "source_content_hash": "23145edb5fdd8d69",
           "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
           "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
-        },
-        {
-          "source_id": "FISRC-e98aedbd2eaa6410",
-          "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
-          "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
-          "source_content_hash": "1d75cf39c1185f55",
-          "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round",
-          "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
         }
       ],
       "last_verified_at": "2026-10-04"

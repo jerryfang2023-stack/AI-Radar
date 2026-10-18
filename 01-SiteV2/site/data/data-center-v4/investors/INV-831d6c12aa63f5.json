@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-17",
-    "currentDate": "2026-10-17",
-    "eventCount": 4167,
+    "latestDataDate": "2026-10-18",
+    "currentDate": "2026-10-18",
+    "eventCount": 4176,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-05-19",
-    "latest_disclosed_at": "2026-08-27",
+    "latest_disclosed_at": "2026-10-13",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "angel_plus",
-      "multi_round"
+      "multi_round",
+      "pre_series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-6ec81821068b9e26",
+        "canonical_entity_id": "",
+        "name": "荆华密算（北京）科技有限公司"
+      },
       {
         "entity_id": "EN-5f03b37d8cca57e1",
         "canonical_entity_id": "EN-5f03b37d8cca57e1",
@@ -92,6 +98,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-885010bb0e49b325",
+        "funding_insight_id": "FI-a5caba06fd035d65",
+        "event_ids": [
+          "EV-bdf01e0aa51360b3",
+          "EV-d996f29cab26d8b8"
+        ],
+        "company_entity_id": "EN-6ec81821068b9e26",
+        "company_canonical_entity_id": "",
+        "company_name": "荆华密算（北京）科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-10-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1bbbc496210c4b3a",
+            "source_url": "https://news.qq.com/rain/a/20261013A0C6VW00",
+            "source_title": "荆华密算完成近亿元Pre-A轮融资_腾讯新闻",
+            "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+            "quote": "华仓资本、极致投资、英诺基金、盛景嘉成基金跟投",
+            "quote_hash": "3dadce219c90af60f274581a84bfa01b31b907ef5e2636c16962820883e9d8bd"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d392f61d4146901d",
         "funding_insight_id": "FI-cb3399f8c90eec40",
@@ -247,6 +294,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1bbbc496210c4b3a",
+        "source_url": "https://news.qq.com/rain/a/20261013A0C6VW00",
+        "source_title": "荆华密算完成近亿元Pre-A轮融资_腾讯新闻",
+        "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+        "quote": "华仓资本、极致投资、英诺基金、盛景嘉成基金跟投",
+        "quote_hash": "3dadce219c90af60f274581a84bfa01b31b907ef5e2636c16962820883e9d8bd"
+      },
+      {
         "source_id": "FISRC-7ae3651fb91fc1f1",
         "source_url": "https://news.pedaily.cn/202608/568184.shtml",
         "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
@@ -333,12 +388,12 @@
           "source_id": "inno_home"
         },
         {
-          "description": "融资来源记录：晰见科技 · 多轮融资 · 2026-08-27 · 本轮参投 · 近5亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7ae3651fb91fc1f1"
+          "description": "融资来源记录：荆华密算（北京）科技有限公司 · Pre-A轮 · 2026-10-13 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1bbbc496210c4b3a"
         },
         {
-          "description": "融资来源记录：灵御智能 · 天使+轮 · 2026-05-19 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0b807b7fa8b0845a"
+          "description": "融资来源记录：晰见科技 · 多轮融资 · 2026-08-27 · 本轮参投 · 近5亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7ae3651fb91fc1f1"
         }
       ],
       "contacts": [
@@ -382,6 +437,14 @@
           "quote_hash": "fb1f256d9b4d25281eef9e9848c8ce4c3cbb8734f09ac059988c9ce74d12648c"
         },
         {
+          "source_id": "FISRC-1bbbc496210c4b3a",
+          "source_url": "https://news.qq.com/rain/a/20261013A0C6VW00",
+          "source_title": "荆华密算完成近亿元Pre-A轮融资_腾讯新闻",
+          "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+          "quote": "华仓资本、极致投资、英诺基金、盛景嘉成基金跟投",
+          "quote_hash": "3dadce219c90af60f274581a84bfa01b31b907ef5e2636c16962820883e9d8bd"
+        },
+        {
           "source_id": "FISRC-7ae3651fb91fc1f1",
           "source_url": "https://news.pedaily.cn/202608/568184.shtml",
           "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
@@ -396,14 +459,6 @@
           "source_content_hash": "addd4b9820ad617a",
           "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
           "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
-        },
-        {
-          "source_id": "FISRC-0b807b7fa8b0845a",
-          "source_url": "https://finance.sina.com.cn/roll/2026-05-19/doc-inhymumf2211979.shtml",
-          "source_title": "灵御智能完成近亿元天使+轮融资，加速具身智能基础设施布局",
-          "source_content_hash": "4d7c1e7d0cd742c0",
-          "quote": "本轮融资由福田资本领投，力合创投、金沙江联合资本、复利多、楹辉创投、华仓资本跟投，老股东英诺基金、天鹰资本持续加注",
-          "quote_hash": "7e2eccb466a27ee65bf5e6dc9ba46669e8e2d59ae9cf4f59452db9847e45e152"
         }
       ],
       "last_verified_at": "2026-09-26",

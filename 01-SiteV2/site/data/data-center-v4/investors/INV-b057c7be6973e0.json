@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-17",
-    "currentDate": "2026-10-17",
-    "eventCount": 4167,
+    "latestDataDate": "2026-10-18",
+    "currentDate": "2026-10-18",
+    "eventCount": 4176,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -53,8 +53,8 @@
     ]
   },
   "institution": {
-    "id": "INV-bf45f4bcee5b5f",
-    "name": "SmartCap",
+    "id": "INV-b057c7be6973e0",
+    "name": "国联股份",
     "aliases": [],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
@@ -65,12 +65,12 @@
     "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 0,
     "market_regions": [
-      "GLOBAL"
+      "CN"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05",
-    "latest_disclosed_at": "2026-05",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,46 +78,47 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-230516643d1f7fca",
-        "funding_insight_id": "FI-c1d9a18d632b1fc7",
+        "activity_id": "IA-43e863440e630350",
+        "funding_insight_id": "FI-a5caba06fd035d65",
         "event_ids": [
-          "EV-098ca67709c1bd31"
+          "EV-bdf01e0aa51360b3",
+          "EV-d996f29cab26d8b8"
         ],
-        "company_entity_id": "EN-aa1f8f85c881987e",
+        "company_entity_id": "EN-6ec81821068b9e26",
         "company_canonical_entity_id": "",
-        "company_name": "Skeleton Technologies",
+        "company_name": "荆华密算（北京）科技有限公司",
         "round": "历史轮次未披露",
         "round_code": "undisclosed",
         "round_original": "",
         "amount_original": "",
         "amount_normalized": null,
-        "announced_at": "2026-05",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
-        "role": "2026年5月首轮关账参投",
+        "role": "天使轮跟投",
         "role_code": "historical_or_ambiguous",
         "evidence": [
           {
-            "source_id": "FISRC-b054b4d0256a32ae",
-            "source_url": "https://www.skeletontech.com/news/skeleton-announces-first-close-of-pre-ipo-funding-round",
-            "source_title": "Skeleton Technologies Announces First Close of Pre-IPO Funding Round with Initial €33 Million Investment",
-            "source_content_hash": "f6e5c348ef8a764e",
-            "quote": "The new round expands Skeleton’s investor base with the addition of Axon Partners Group, SmartCap, and Taiwania Capital",
-            "quote_hash": "3c27faf7944fc7dbf1498dc09a0a19445fcadec76c8598b63703404d9d75cf8b"
+            "source_id": "FISRC-20ad4764f92891e9",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-03-27/doc-inhsmxrq1916084.shtml",
+            "source_title": "用密算解决“龙虾”安全的“最后一公里”，清华系团队荆华密算完成数千万元天使轮融资",
+            "source_content_hash": "cc951bb654cd28d5",
+            "quote": "本轮融资由盛景嘉成创投领投，上市公司国联股份（603613）、博彦科技（002649）以及老股东英诺科创基金跟投",
+            "quote_hash": "68ef4184d5aa500b9a4fba40e2865c8208003746735955052ea1295e73cabbe7"
           }
         ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-b054b4d0256a32ae",
-        "source_url": "https://www.skeletontech.com/news/skeleton-announces-first-close-of-pre-ipo-funding-round",
-        "source_title": "Skeleton Technologies Announces First Close of Pre-IPO Funding Round with Initial €33 Million Investment",
-        "source_content_hash": "f6e5c348ef8a764e",
-        "quote": "The new round expands Skeleton’s investor base with the addition of Axon Partners Group, SmartCap, and Taiwania Capital",
-        "quote_hash": "3c27faf7944fc7dbf1498dc09a0a19445fcadec76c8598b63703404d9d75cf8b"
+        "source_id": "FISRC-20ad4764f92891e9",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-03-27/doc-inhsmxrq1916084.shtml",
+        "source_title": "用密算解决“龙虾”安全的“最后一公里”，清华系团队荆华密算完成数千万元天使轮融资",
+        "source_content_hash": "cc951bb654cd28d5",
+        "quote": "本轮融资由盛景嘉成创投领投，上市公司国联股份（603613）、博彦科技（002649）以及老股东英诺科创基金跟投",
+        "quote_hash": "68ef4184d5aa500b9a4fba40e2865c8208003746735955052ea1295e73cabbe7"
       }
     ],
     "public_profile": {
@@ -125,24 +126,24 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "SmartCap 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "国联股份 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Skeleton Technologies · 历史轮次未披露 · 2026-05 · 2026年5月首轮关账参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b054b4d0256a32ae"
+          "description": "融资来源记录：荆华密算（北京）科技有限公司 · 历史轮次未披露 · 天使轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-20ad4764f92891e9"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-b054b4d0256a32ae",
-          "source_url": "https://www.skeletontech.com/news/skeleton-announces-first-close-of-pre-ipo-funding-round",
-          "source_title": "Skeleton Technologies Announces First Close of Pre-IPO Funding Round with Initial €33 Million Investment",
-          "source_content_hash": "f6e5c348ef8a764e",
-          "quote": "The new round expands Skeleton’s investor base with the addition of Axon Partners Group, SmartCap, and Taiwania Capital",
-          "quote_hash": "3c27faf7944fc7dbf1498dc09a0a19445fcadec76c8598b63703404d9d75cf8b"
+          "source_id": "FISRC-20ad4764f92891e9",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-03-27/doc-inhsmxrq1916084.shtml",
+          "source_title": "用密算解决“龙虾”安全的“最后一公里”，清华系团队荆华密算完成数千万元天使轮融资",
+          "source_content_hash": "cc951bb654cd28d5",
+          "quote": "本轮融资由盛景嘉成创投领投，上市公司国联股份（603613）、博彦科技（002649）以及老股东英诺科创基金跟投",
+          "quote_hash": "68ef4184d5aa500b9a4fba40e2865c8208003746735955052ea1295e73cabbe7"
         }
       ],
       "last_verified_at": "2026-10-06"
