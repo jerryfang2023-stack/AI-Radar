@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-17",
-    "currentDate": "2026-10-17",
-    "eventCount": 4167,
+    "latestDataDate": "2026-10-18",
+    "currentDate": "2026-10-18",
+    "eventCount": 4176,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -66,6 +66,7 @@
     ],
     "eventIds": [
       "EV-6ca561d3a3b8cb93",
+      "EV-bdf01e0aa51360b3",
       "EV-5d53cd5ef937f1ca",
       "EV-78ed82b05ec5fbf1",
       "EV-c7b060541ca00208",
@@ -163,7 +164,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-01-26",
-    "lastSeen": "2026-10-17",
+    "lastSeen": "2026-10-18",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -173,6 +174,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-bdf01e0aa51360b3",
         "EV-78ed82b05ec5fbf1",
         "EV-c7b060541ca00208",
         "EV-6ca561d3a3b8cb93",
@@ -269,8 +271,24 @@
     },
     "timeline": [
       {
+        "id": "EV-bdf01e0aa51360b3",
+        "dataDate": "2026-10-18",
+        "date": "2026-10-13",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "荆华密算完成近亿元Pre-A轮融资_腾讯新闻",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6ec81821068b9e26",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
+      {
         "id": "EV-78ed82b05ec5fbf1",
-        "dataDate": "2026-10-17",
+        "dataDate": "2026-10-18",
         "date": "2026-10-12",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -282,7 +300,8 @@
         "entityIds": [
           "EN-9dd6dfc5a0a9d316",
           "EN-08c2a5dfaa3cbde6",
-          "EN-9c8ae69b84f21a2e"
+          "EN-9c8ae69b84f21a2e",
+          "EN-0369c8fcda657a43"
         ]
       },
       {
@@ -3170,6 +3189,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-b86890a5d3330971",
         "EV-d1e3dd4ecf7bf9dc",
         "EV-a171d2ec6b5982e9",
         "EV-25af07a982e78cb0",
@@ -3309,7 +3329,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-17"
+      "lastSeen": "2026-10-18"
     },
     {
       "id": "EN-be1a3c9420d88ea5",
@@ -3465,6 +3485,7 @@
       "valueId": "agentic_execution",
       "eventIds": [
         "EV-44261cbca54b2cbb",
+        "EV-7ee91391ace42994",
         "EV-858cec7fa8f4c87b",
         "EV-9585d406684e9c4a",
         "EV-2647001d6f3ed43d",
@@ -4137,6 +4158,7 @@
       ],
       "entityIds": [
         "EN-7c0378479c6745b0",
+        "EN-7587669ca42e19e8",
         "EN-ce084d4801691907",
         "EN-954adfa4d922fa30",
         "EN-090b6a7fd8cd8f35",
@@ -5305,7 +5327,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-17"
+      "lastSeen": "2026-10-18"
     },
     {
       "id": "TX-use_case-content_creation",

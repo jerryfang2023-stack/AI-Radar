@@ -32639,7 +32639,196 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-17T02:56:58.516Z"
+    },
+    "EV-7ee91391ace42994": {
+      "id": "EV-7ee91391ace42994",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Fragment 为智能体提供复式记账与可编程支付财务系统，属企业财务软件。",
+      "input_hash": "bc9265063596a160972ac5c2c68f0a44575444141a95b77ca2587a2c50952915",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-190cf7761da55954",
+          "quote": "Fragment, a New York-based startup, is developing software designed to reduce costly accounting errors."
+        },
+        {
+          "source_id": "FISRC-3523513f409fb1f8",
+          "quote": "FRAGMENT is the financial system for agents."
+        },
+        {
+          "source_id": "FISRC-190cf7761da55954",
+          "quote": "The system uses double-entry accounting, a centuries-old method that records where money comes from and where it goes, to check that the numbers balance before money moves."
+        },
+        {
+          "source_id": "FISRC-3523513f409fb1f8",
+          "quote": "Programmable money that bills, pays, and accounts for itself."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-18T00:43:25.475Z"
+    },
+    "EV-d083659c3a654b8d": {
+      "id": "EV-d083659c3a654b8d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-systems",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "Cubelets 为集成计算、内存与供电的模块化三维计算构建块，属 AI 计算系统。",
+      "input_hash": "dbc76712c9141a71e56a2f18eb16f697f0fe154bfd8f3465eac6825e7de43100",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9f86360bad5cbe27",
+          "quote": "Mueon’s core innovation, Cubelets, are modular, three-dimensional compute and memory building blocks that integrate compute, memory, power delivery, and thermals."
+        },
+        {
+          "source_id": "FISRC-9f86360bad5cbe27",
+          "quote": "The company is developing a software layer to make its modular hardware compatible with familiar AI frameworks and deployment workflows"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-18T00:43:25.475Z"
+    },
+    "EV-bdf01e0aa51360b3": {
+      "id": "EV-bdf01e0aa51360b3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "荆华密算提供密态大模型基础设施、加密 API 与密态智能体开发平台，属模型与智能体安全。",
+      "input_hash": "a18890d84c73fe1094643ddf840e5becb0404830349e221f55fe858bbdde8dfb",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1722ea030c12f750",
+          "quote": "让用户通过调用加密大模型 API 快速拥有全模态计算推理能力的可信 Token 产品"
+        },
+        {
+          "source_id": "FISRC-1722ea030c12f750",
+          "quote": "一站式密态智能体开发平台“密态 MaaS”"
+        },
+        {
+          "source_id": "FISRC-fd0fac775fc9770b",
+          "quote": "面向政企客户推出低门槛的密态MaaS"
+        },
+        {
+          "source_id": "FISRC-1722ea030c12f750",
+          "quote": "荆华密算正式发布“密态大模型基础设施平台”，提供密态运行空间、多机密态互联、高性能密态计算、透明密态存储和持续密态安全服务"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-18T00:43:25.475Z"
+    },
+    "EV-d996f29cab26d8b8": {
+      "id": "EV-d996f29cab26d8b8",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "rationale": "荆华密算以密态大模型基础设施与密态 MaaS 提供模型安全与开发能力。",
+      "input_hash": "5a858542217c9173d7b94f6ce9f8f707b20e28ab39395461f1f4b8e9cbab098f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1722ea030c12f750",
+          "quote": "荆华密算正式发布“密态大模型基础设施平台”，提供密态运行空间、多机密态互联、高性能密态计算、透明密态存储和持续密态安全服务"
+        },
+        {
+          "source_id": "FISRC-1722ea030c12f750",
+          "quote": "让用户通过调用加密大模型 API 快速拥有全模态计算推理能力的可信 Token 产品"
+        },
+        {
+          "source_id": "FISRC-1722ea030c12f750",
+          "quote": "一站式密态智能体开发平台“密态 MaaS”"
+        },
+        {
+          "source_id": "FISRC-fd0fac775fc9770b",
+          "quote": "面向政企客户推出低门槛的密态MaaS"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-18T00:43:25.475Z"
+    },
+    "EV-745ef35fd5483754": {
+      "id": "EV-745ef35fd5483754",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business",
+        "consumer",
+        "developer"
+      ],
+      "evidence_indices": [
+        3,
+        4,
+        5
+      ],
+      "rationale": "智谱发布 GLM-4-Plus 基座大模型及多模态模型，属通用与多模态基础模型。",
+      "input_hash": "ea88a345248585b4f00344b2a3789cc4a85e280e2d63b3dd10db16db261106c1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5677bbee2d59885e",
+          "quote": "AI生成视频模型清影（Ying）正式上线智谱清言"
+        },
+        {
+          "source_id": "FISRC-5677bbee2d59885e",
+          "quote": "高效率代码模型CodeGeeX"
+        },
+        {
+          "source_id": "FISRC-5677bbee2d59885e",
+          "quote": "智谱AI GLM团队发布了新一代基座大模型最新版本GLM-4-Plus，主要更新了图像/视频理解模型 GLM-4V-Plus，具备图像理解能力、视频理解能力。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-18T00:43:25.475Z"
     }
   },
-  "generated_at": "2026-10-17T02:56:58.516Z"
+  "generated_at": "2026-10-18T00:43:25.475Z"
 }

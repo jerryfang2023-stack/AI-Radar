@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-17",
-    "currentDate": "2026-10-17",
-    "eventCount": 4167,
+    "latestDataDate": "2026-10-18",
+    "currentDate": "2026-10-18",
+    "eventCount": 4176,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,19 +63,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 7,
+    "current_round_count": 8,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-18",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
-      "co_lead": 1,
-      "historical_or_ambiguous": 1,
+      "co_lead": 2,
+      "historical_or_ambiguous": 2,
       "participant": 6
     },
     "round_codes": [
@@ -100,6 +100,11 @@
         "name": "Foundational Industries"
       },
       {
+        "entity_id": "EN-7587669ca42e19e8",
+        "canonical_entity_id": "",
+        "name": "Fragment"
+      },
+      {
         "entity_id": "EN-a7dd4a797cf9990b",
         "canonical_entity_id": "",
         "name": "Niteshift"
@@ -121,6 +126,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-05028dfe00df43c8",
+        "funding_insight_id": "FI-6f9631c3b629edaa",
+        "event_ids": [
+          "EV-7ee91391ace42994"
+        ],
+        "company_entity_id": "EN-7587669ca42e19e8",
+        "company_canonical_entity_id": "",
+        "company_name": "Fragment",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$12 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-190cf7761da55954",
+            "source_url": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/",
+            "source_title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+            "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+            "quote": "Early-stage venture capital firms FirstMark and BoxGroup co-led the financing.",
+            "quote_hash": "4d0d7469024c86283bfbd39cba13c2a05f29120c101155f5442175a1a421d677"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4235bf560760ed5d",
         "funding_insight_id": "FI-5fd5533b14de7850",
@@ -432,9 +477,49 @@
             "quote_hash": "e84b03f393c38dc09e6204f4be07c6323ea45791cffe4d24f999879fa1ed39c5"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b4d3a36702424aa1",
+        "funding_insight_id": "FI-6f9631c3b629edaa",
+        "event_ids": [
+          "EV-7ee91391ace42994"
+        ],
+        "company_entity_id": "EN-7587669ca42e19e8",
+        "company_canonical_entity_id": "",
+        "company_name": "Fragment",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-190cf7761da55954",
+            "source_url": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/",
+            "source_title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+            "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+            "quote": "The round follows an $11 million seed round led by payments company Stripe, with participation from BoxGroup and tech executives including Uber CEO Dara Khosrowshahi and Plaid CEO Zach Perret.",
+            "quote_hash": "32960f48a44099f58f5a92eeb21a55982c1ad4d2e5c608c55c1d7594746c3b6e"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-190cf7761da55954",
+        "source_url": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/",
+        "source_title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+        "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+        "quote": "Early-stage venture capital firms FirstMark and BoxGroup co-led the financing.",
+        "quote_hash": "4d0d7469024c86283bfbd39cba13c2a05f29120c101155f5442175a1a421d677"
+      },
       {
         "source_id": "FISRC-98f77610cfcfab94",
         "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
@@ -498,6 +583,14 @@
         "source_content_hash": "0eedb637d7c86cdc",
         "quote": "Gregory R. from BoxGroup",
         "quote_hash": "e84b03f393c38dc09e6204f4be07c6323ea45791cffe4d24f999879fa1ed39c5"
+      },
+      {
+        "source_id": "FISRC-190cf7761da55954",
+        "source_url": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/",
+        "source_title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+        "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+        "quote": "The round follows an $11 million seed round led by payments company Stripe, with participation from BoxGroup and tech executives including Uber CEO Dara Khosrowshahi and Plaid CEO Zach Perret.",
+        "quote_hash": "32960f48a44099f58f5a92eeb21a55982c1ad4d2e5c608c55c1d7594746c3b6e"
       }
     ],
     "public_profile": {
@@ -562,16 +655,16 @@
           "source_id": "boxgroup_about"
         },
         {
+          "description": "融资来源记录：Fragment · A轮 · 2026-10-14 · 本轮联合领投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-190cf7761da55954"
+        },
+        {
           "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮参投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f77610cfcfab94"
         },
         {
           "description": "融资来源记录：Arga Labs · 种子轮 · 2026-08-26 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b6920185a5e7fa72"
-        },
-        {
-          "description": "融资来源记录：Foundational Industries · 种子轮 · 2026-08-01 · 本轮联合领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e6ee0cd472bfb792"
         }
       ],
       "contacts": [
@@ -623,6 +716,14 @@
           "quote_hash": "060e2785780b531d4e0c206450259d550d2d8079f2aeb507dd84aea0207971ca"
         },
         {
+          "source_id": "FISRC-190cf7761da55954",
+          "source_url": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/",
+          "source_title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+          "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+          "quote": "Early-stage venture capital firms FirstMark and BoxGroup co-led the financing.",
+          "quote_hash": "4d0d7469024c86283bfbd39cba13c2a05f29120c101155f5442175a1a421d677"
+        },
+        {
           "source_id": "FISRC-98f77610cfcfab94",
           "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
           "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
@@ -637,14 +738,6 @@
           "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
           "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
           "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
-        },
-        {
-          "source_id": "FISRC-e6ee0cd472bfb792",
-          "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
-          "source_title": "Foundational Industries 筹集 2500 万美元，打造 AI 运营工厂",
-          "source_content_hash": "ad03bbee3088b0fc",
-          "quote": "The round was led by BoxGroup and Zigg Ventures",
-          "quote_hash": "603f65c4354e79487ebff6657abc1acb3c8db7111baaf6bb4c0e4eab80efc8a1"
         }
       ],
       "identity_status": "verified"

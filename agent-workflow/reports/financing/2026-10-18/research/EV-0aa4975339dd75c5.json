@@ -1,0 +1,127 @@
+{
+  "event_id": "EV-0aa4975339dd75c5",
+  "company_name": "思敏威集成电路有限公司",
+  "status": "blocked",
+  "problems": [
+    "research_independent_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "上海大模型芯片创企，融资近亿元_大风号",
+    "event_source_refs": [
+      "SA-3af583d5635e80de"
+    ],
+    "event_claim_refs": [
+      "CL-a8a434f19fe90306"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-e0b1be7cff05cbb5",
+        "canonical_name": "思敏威集成电路有限公司"
+      }
+    ],
+    "event_metrics": [],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-a8a434f19fe90306",
+        "raw_id": "RAW-4996b4d6e6d3eee7",
+        "subject": "思敏威集成电路有限公司",
+        "object": "约亿元天使轮融资",
+        "source_quote_length": 37
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "思敏威集成电路有限公司"
+  },
+  "queries": [
+    "\"思敏威集成电路有限公司\" 2026 融资 投资方",
+    "\"思敏威集成电路\" 约亿元 融资 领投 跟投",
+    "\"思敏威集成电路有限公司\" 官网 产品 服务",
+    "\"思敏威集成电路有限公司\" 投资机构 融资用途",
+    "\"思敏威集成电路\" 2026 本轮融资 公告",
+    "\"思敏威集成电路有限公司\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"思敏威集成电路有限公司\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.tianyancha.com/organize/bc8ea2986",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"思敏威集成电路\" 约亿元 融资 领投 跟投",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"思敏威集成电路有限公司\" 官网 产品 服务",
+      "status": "completed",
+      "count": 2
+    },
+    {
+      "provider": "tavily",
+      "query": "\"思敏威集成电路有限公司\" 官网 产品 服务",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"思敏威集成电路有限公司\" 官网 产品 服务",
+      "status": "quota_exhausted",
+      "http_status": 402,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"思敏威集成电路有限公司\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.sourl.net/tags/llm",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"思敏威集成电路有限公司\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "provider": "tavily",
+      "query": "\"思敏威集成电路有限公司\" 投资机构 融资用途",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"思敏威集成电路有限公司\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"思敏威集成电路\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"思敏威集成电路有限公司\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

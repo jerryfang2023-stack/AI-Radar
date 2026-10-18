@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-17",
-    "currentDate": "2026-10-17",
-    "eventCount": 4167,
+    "latestDataDate": "2026-10-18",
+    "currentDate": "2026-10-18",
+    "eventCount": 4176,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-06-16",
     "latest_disclosed_at": "2026-10-13",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1,
+      "lead": 2,
       "other_current_round": 1,
       "participant": 1
     },
@@ -92,6 +92,11 @@
         "entity_id": "EN-26ef5ed7622bea22",
         "canonical_entity_id": "",
         "name": "荆华密算"
+      },
+      {
+        "entity_id": "EN-6ec81821068b9e26",
+        "canonical_entity_id": "",
+        "name": "荆华密算（北京）科技有限公司"
       },
       {
         "entity_id": "EN-e7d56af70143fcd7",
@@ -137,6 +142,47 @@
             "source_content_hash": "fdf036f58acf0712802ec94f72536e5fb1a0fa37b939fb4b4cba58c4c8a0d2c6",
             "quote": "本轮融资由中关村科学城、北创投联合领投，华仓资本、极致投资联合投资，老股东英诺科创基金、盛景嘉成创投持续加注。",
             "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a3de6b0edb4c219c",
+        "funding_insight_id": "FI-a5caba06fd035d65",
+        "event_ids": [
+          "EV-bdf01e0aa51360b3",
+          "EV-d996f29cab26d8b8"
+        ],
+        "company_entity_id": "EN-6ec81821068b9e26",
+        "company_canonical_entity_id": "",
+        "company_name": "荆华密算（北京）科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-10-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1bbbc496210c4b3a",
+            "source_url": "https://news.qq.com/rain/a/20261013A0C6VW00",
+            "source_title": "荆华密算完成近亿元Pre-A轮融资_腾讯新闻",
+            "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+            "quote": "本轮由中关村科学城、北创投联合领投",
+            "quote_hash": "b777642bd2949386face3a7808fc34a31109e63f7b54ed87ca8e2a1a056aab9e"
           }
         ]
       },
@@ -264,6 +310,14 @@
         "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
       },
       {
+        "source_id": "FISRC-1bbbc496210c4b3a",
+        "source_url": "https://news.qq.com/rain/a/20261013A0C6VW00",
+        "source_title": "荆华密算完成近亿元Pre-A轮融资_腾讯新闻",
+        "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+        "quote": "本轮由中关村科学城、北创投联合领投",
+        "quote_hash": "b777642bd2949386face3a7808fc34a31109e63f7b54ed87ca8e2a1a056aab9e"
+      },
+      {
         "source_id": "FISRC-f5fa738edf400dda",
         "source_url": "https://news.pedaily.cn/202609/569430.shtml",
         "source_title": "数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化",
@@ -306,8 +360,8 @@
           "source_id": "FISRC-3ff24c6b7a38b108"
         },
         {
-          "description": "融资来源记录：硅基流动 · B轮 · 2026-06-16 · 本轮联合投资 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-879cc82306af58a1"
+          "description": "融资来源记录：荆华密算（北京）科技有限公司 · Pre-A轮 · 2026-10-13 · 本轮领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1bbbc496210c4b3a"
         }
       ],
       "contacts": [],
@@ -329,12 +383,12 @@
           "quote_hash": "377242daacfcfd50ccf393c96904f24145b2f7b7ea0a57b64cb101bea9318f36"
         },
         {
-          "source_id": "FISRC-879cc82306af58a1",
-          "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
-          "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”",
-          "source_content_hash": "f1654d9235cc7fa8",
-          "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
-          "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
+          "source_id": "FISRC-1bbbc496210c4b3a",
+          "source_url": "https://news.qq.com/rain/a/20261013A0C6VW00",
+          "source_title": "荆华密算完成近亿元Pre-A轮融资_腾讯新闻",
+          "source_content_hash": "6124d291bb3c256084b0b93f7a8e8f7fc40f05f742e1a2d29461cef9e8808e92",
+          "quote": "本轮由中关村科学城、北创投联合领投",
+          "quote_hash": "b777642bd2949386face3a7808fc34a31109e63f7b54ed87ca8e2a1a056aab9e"
         }
       ],
       "last_verified_at": "2026-10-02",

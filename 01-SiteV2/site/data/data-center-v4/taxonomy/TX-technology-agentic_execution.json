@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-17",
-    "currentDate": "2026-10-17",
-    "eventCount": 4167,
+    "latestDataDate": "2026-10-18",
+    "currentDate": "2026-10-18",
+    "eventCount": 4176,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -60,6 +60,7 @@
     "valueId": "agentic_execution",
     "eventIds": [
       "EV-44261cbca54b2cbb",
+      "EV-7ee91391ace42994",
       "EV-858cec7fa8f4c87b",
       "EV-9585d406684e9c4a",
       "EV-2647001d6f3ed43d",
@@ -732,6 +733,7 @@
     ],
     "entityIds": [
       "EN-7c0378479c6745b0",
+      "EN-7587669ca42e19e8",
       "EN-ce084d4801691907",
       "EN-954adfa4d922fa30",
       "EN-090b6a7fd8cd8f35",
@@ -1297,6 +1299,102 @@
       "products": [],
       "sourceUrl": "https://dealroom.co/news/162505-tamr-raises-21m-to-build-ai-native-data-management/",
       "publisher": "dealroom.co"
+    },
+    {
+      "id": "EV-7ee91391ace42994",
+      "dataDate": "2026-10-18",
+      "date": "2026-10-14",
+      "updatedDate": "2026-10-14",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+      "originalTitle": "Fragment raises $12 million to help keep AI agents from going rogue with company money",
+      "subject": "Fragment",
+      "action": "raises",
+      "object": "$12 million to help keep AI agents from going rogue with company money",
+      "metrics": [
+        "$12 million",
+        "$82 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7587669ca42e19e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7587669ca42e19e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7587669ca42e19e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7587669ca42e19e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7587669ca42e19e8",
+        "EN-ab572f7f3ce3c737"
+      ],
+      "entityNames": [
+        "Fragment",
+        "Startup Abby Care"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/",
+      "publisher": "fortune.com"
     },
     {
       "id": "EV-858cec7fa8f4c87b",
@@ -59304,9 +59402,7 @@
         {
           "name": "GPT-6.1 Sol",
           "type": "AI 硬件",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/09/30/openai-releases-gpt-6-1-sol-near-astra-coding-and-computer-use-at-one-fifth-of-astras-token-price",
@@ -59475,7 +59571,7 @@
           "name": "Dot",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Apple"
           ]
         }
       ],
@@ -61604,16 +61700,12 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Codex",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/unity-launches-official-plugins-for-claude-code-and-openai-codex-to-stop-ai-agents-from-using-outdated-tutorials",
@@ -63265,9 +63357,7 @@
         {
           "name": "Agents API",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/1/001/072.htm",
@@ -63410,9 +63500,7 @@
         {
           "name": "GPT-Live-1",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/1/001/091.htm",
@@ -64883,23 +64971,17 @@
         {
           "name": "CyberAgents Exchange AI Inspector",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI Inspector",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI Agents News",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://aiagentstore.ai/ai-agent-news/this-week",
@@ -66535,9 +66617,7 @@
         {
           "name": "Always-on",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/always-on-and-self-starting-ai-agents-might-be-openais-next-big-play",
@@ -68382,9 +68462,7 @@
         {
           "name": "Codex Harness",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/992/656.htm",
@@ -68813,7 +68891,7 @@
           "name": "Agent OS",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -69278,7 +69356,7 @@
           "name": "MatrAIx",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Google DeepMind"
           ]
         }
       ],
@@ -71901,16 +71979,12 @@
         {
           "name": "ChatGPT Business",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Premium Seats for ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-introduces-125-premium-seats-for-chatgpt-business-as-agentic-ai-burns-through-more-tokens",
@@ -72217,14 +72291,14 @@
           "name": "AI-led",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "As AI-led",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -73191,14 +73265,14 @@
           "name": "Pokee-Isaac",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "SGLang"
           ]
         },
         {
           "name": "Pokee-Isaac 28",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "SGLang"
           ]
         }
       ],
@@ -76169,9 +76243,7 @@
         {
           "name": "Modal Labs",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/800.htm",
@@ -79791,7 +79863,7 @@
           "name": "Presence",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -87273,9 +87345,7 @@
         {
           "name": "ChatGPT Work",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-admits-it-didnt-get-everything-quite-right-with-chatgpt-work-launch-and-scrambles-to-fix-ux-and-costs",
@@ -87470,9 +87540,7 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/974/792.htm",
@@ -87777,9 +87845,7 @@
         {
           "name": "ChatGPT Work",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/974/789.htm",
@@ -88314,9 +88380,7 @@
         {
           "name": "SWE-Bench Pro",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/974/531.htm",
@@ -92299,23 +92363,17 @@
         {
           "name": "GPT-5.6",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "US AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-5.6 amid US AI regulatory drama",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview",
@@ -95586,9 +95644,7 @@
         {
           "name": "AgentKit",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2025/10/06/openai-launches-agentkit-to-help-developers-build-and-ship-ai-agents",
@@ -100558,9 +100614,7 @@
         {
           "name": "Codex",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/959/028.htm",
@@ -101102,7 +101156,7 @@
           "name": "Vera",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "NVIDIA"
           ]
         }
       ],
@@ -101669,7 +101723,7 @@
           "name": "Fara1.5",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Microsoft"
           ]
         }
       ],
@@ -101762,16 +101816,12 @@
         {
           "name": "Frontier",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Frontier on February 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://www.digitalapplied.com/blog/openai-frontier-enterprise-ai-agent-platform-guide",
@@ -102254,23 +102304,17 @@
         {
           "name": "Becomes First Business",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Automation",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Native Integration for Coding",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605120830BIZWIRE_USPRX____20260512_BW960969-1",
@@ -102769,14 +102813,14 @@
           "name": "Open Source Distribution",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "Distribution",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -107803,6 +107847,27 @@
       "lastSeen": "2026-10-16"
     },
     {
+      "id": "EN-7587669ca42e19e8",
+      "name": "Fragment",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7ee91391ace42994"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-18"
+    },
+    {
       "id": "EN-ce084d4801691907",
       "name": "Labelbox",
       "entityType": "organization_candidate",
@@ -107951,7 +108016,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-17"
+      "lastSeen": "2026-10-18"
     },
     {
       "id": "EN-8547a3fca97a330d",
@@ -108776,6 +108841,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
@@ -108785,7 +108851,6 @@
         "TX-target_user-business_user",
         "TX-technology-speech_audio",
         "TX-use_case-security_operations",
-        "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
@@ -109041,11 +109106,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-financial_services"
       ],
@@ -109850,11 +109915,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-use_case-finance_accounting",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-data_analysis",
@@ -109901,9 +109966,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-use_case-sales",
         "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
@@ -110037,11 +110102,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-use_case-legal_compliance",
         "TX-ai_market_subcategory-financial_services"
       ],
@@ -110418,10 +110483,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
-        "TX-target_user-business_user",
-        "TX-industry-financial_services"
+        "TX-target_user-business_user"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -110514,11 +110579,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-industry-legal_services",
         "TX-use_case-legal_compliance",
         "TX-ai_market_subcategory-legal"
@@ -110542,11 +110607,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-industry-legal_services",
         "TX-use_case-legal_compliance",
         "TX-ai_market_subcategory-legal"
@@ -110730,12 +110795,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
-        "TX-industry-financial_services",
         "TX-use_case-finance_accounting",
         "TX-ai_market_subcategory-financial_services"
       ],
@@ -110865,12 +110930,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-manufacturing",
@@ -110950,6 +111015,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
@@ -110958,7 +111024,6 @@
         "TX-use_case-security_operations",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-manufacturing",
@@ -111047,6 +111112,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
@@ -111054,7 +111120,6 @@
         "TX-use_case-security_operations",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -111345,10 +111410,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -111406,11 +111471,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-use_case-finance_accounting",
         "TX-use_case-legal_compliance",
         "TX-ai_market_subcategory-financial_services"
@@ -111462,11 +111527,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
-        "TX-industry-financial_services",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-industry-retail_ecommerce",
@@ -111670,11 +111735,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows"
@@ -111878,10 +111943,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -111956,12 +112021,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-research_discovery",
         "TX-technology-agentic_execution",
         "TX-product_form-model",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-target_user-consumer",
         "TX-product_form-end_user_application",
         "TX-use_case-data_analysis",
@@ -112137,9 +112202,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-use_case-finance_accounting",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
@@ -112187,12 +112252,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -112232,12 +112297,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-use_case-sales",
         "TX-use_case-productivity_enterprise_workflows",
@@ -112269,12 +112334,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-industry-manufacturing",
         "TX-industry-legal_services",
@@ -113025,9 +113090,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
-        "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-product_form-ai_compute_system"
       ],
@@ -113834,6 +113899,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
@@ -113846,7 +113912,6 @@
         "TX-use_case-content_creation",
         "TX-use_case-security_operations",
         "TX-product_form-chip_accelerator",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-target_user-consumer",
         "TX-technology-code_generation",
@@ -113902,7 +113967,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-17"
+      "lastSeen": "2026-10-18"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -113972,6 +114037,7 @@
       ],
       "eventIds": [
         "EV-6ca561d3a3b8cb93",
+        "EV-bdf01e0aa51360b3",
         "EV-5d53cd5ef937f1ca",
         "EV-78ed82b05ec5fbf1",
         "EV-c7b060541ca00208",
@@ -114069,7 +114135,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-17"
+      "lastSeen": "2026-10-18"
     },
     {
       "id": "EN-d3565d297d476f10",
@@ -114086,9 +114152,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
-        "TX-industry-financial_services",
         "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
@@ -114255,6 +114321,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-b86890a5d3330971",
         "EV-d1e3dd4ecf7bf9dc",
         "EV-a171d2ec6b5982e9",
         "EV-25af07a982e78cb0",
@@ -114394,7 +114461,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-17"
+      "lastSeen": "2026-10-18"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -115097,6 +115164,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
@@ -115111,7 +115179,6 @@
         "TX-use_case-physical_automation",
         "TX-product_form-chip_accelerator",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-product_form-robotic_system",
         "TX-industry-media_entertainment",
@@ -115262,12 +115329,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-product_form-model",
         "TX-technology-speech_audio",
         "TX-use_case-security_operations",
-        "TX-industry-financial_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
         "TX-use_case-software_development",
@@ -115866,7 +115933,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-24",
-      "lastSeen": "2026-10-17"
+      "lastSeen": "2026-10-18"
     },
     {
       "id": "EN-5e668f42eb6cf15d",
@@ -116446,6 +116513,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
@@ -116456,7 +116524,6 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-product_form-chip_accelerator",
-        "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
@@ -116929,9 +116996,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-technology-agentic_execution",
         "TX-product_form-model",
-        "TX-industry-financial_services",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
@@ -117841,11 +117908,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-product_form-model",
         "TX-product_form-chip_accelerator",
-        "TX-industry-financial_services",
         "TX-deployment_model-cloud",
         "TX-industry-government_public_sector",
         "TX-technology-on_device",
@@ -118319,7 +118386,7 @@
         "EN-8992f4a61a19a74b"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-17"
+      "lastSeen": "2026-10-18"
     },
     {
       "id": "EN-8d57f84bd1847b24",
@@ -119106,8 +119173,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-financial_services"
+        "TX-industry-financial_services",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-14",
@@ -121012,10 +121079,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-product_form-model",
-        "TX-industry-financial_services",
         "TX-technology-multimodal",
         "TX-technology-vision_language"
       ],
@@ -121059,8 +121126,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
+        "TX-technology-agentic_execution",
         "TX-technology-model_context_protocol"
       ],
       "relatedEntityIds": [],

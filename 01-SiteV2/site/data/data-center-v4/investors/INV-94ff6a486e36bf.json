@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-17",
-    "currentDate": "2026-10-17",
-    "eventCount": 4167,
+    "latestDataDate": "2026-10-18",
+    "currentDate": "2026-10-18",
+    "eventCount": 4176,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-06-04",
     "latest_disclosed_at": "2026-08-13",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 2
     },
     "round_codes": [
@@ -173,6 +173,38 @@
         ]
       },
       {
+        "activity_id": "IA-29861f7d1dd046f3",
+        "funding_insight_id": "FI-6f9631c3b629edaa",
+        "event_ids": [
+          "EV-7ee91391ace42994"
+        ],
+        "company_entity_id": "EN-7587669ca42e19e8",
+        "company_canonical_entity_id": "",
+        "company_name": "Fragment",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-190cf7761da55954",
+            "source_url": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/",
+            "source_title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+            "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+            "quote": "The round follows an $11 million seed round led by payments company Stripe, with participation from BoxGroup and tech executives including Uber CEO Dara Khosrowshahi and Plaid CEO Zach Perret.",
+            "quote_hash": "32960f48a44099f58f5a92eeb21a55982c1ad4d2e5c608c55c1d7594746c3b6e"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-118def9de5cd281d",
         "funding_insight_id": "FI-847970f93a915359",
         "event_ids": [
@@ -223,6 +255,14 @@
         "quote_hash": "8be25adc6e8f88a2c0526f2856bc88ce678f6d7dd89dafe39a1f9e7ff78af7cc"
       },
       {
+        "source_id": "FISRC-190cf7761da55954",
+        "source_url": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/",
+        "source_title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+        "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+        "quote": "The round follows an $11 million seed round led by payments company Stripe, with participation from BoxGroup and tech executives including Uber CEO Dara Khosrowshahi and Plaid CEO Zach Perret.",
+        "quote_hash": "32960f48a44099f58f5a92eeb21a55982c1ad4d2e5c608c55c1d7594746c3b6e"
+      },
+      {
         "source_id": "FISRC-329a0525efb0e1f9",
         "source_url": "https://supabase.com/blog/supabase-series-f",
         "source_title": "Supabase Series F",
@@ -260,6 +300,10 @@
         {
           "description": "融资来源记录：Supabase · F轮 · 2026-06-04 · 本轮参投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-329a0525efb0e1f9"
+        },
+        {
+          "description": "融资来源记录：Fragment · 历史轮次未披露 · 种子轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-190cf7761da55954"
         }
       ],
       "contacts": [],
@@ -295,6 +339,14 @@
           "source_content_hash": "f3319ceed36321e9026dd5f3453e90e2253fd2da7b9bc8ff0d6a6dbf703f7f14",
           "quote": "Stripe made a second investment.",
           "quote_hash": "8be25adc6e8f88a2c0526f2856bc88ce678f6d7dd89dafe39a1f9e7ff78af7cc"
+        },
+        {
+          "source_id": "FISRC-190cf7761da55954",
+          "source_url": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/",
+          "source_title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+          "source_content_hash": "b1836148704c875d73c39ecb882c1bb3e5cf4d4bb1e590b53934960582f0b1e9",
+          "quote": "The round follows an $11 million seed round led by payments company Stripe, with participation from BoxGroup and tech executives including Uber CEO Dara Khosrowshahi and Plaid CEO Zach Perret.",
+          "quote_hash": "32960f48a44099f58f5a92eeb21a55982c1ad4d2e5c608c55c1d7594746c3b6e"
         }
       ],
       "last_verified_at": "2026-10-04",

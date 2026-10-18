@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-17",
-    "currentDate": "2026-10-17",
-    "eventCount": 4167,
+    "latestDataDate": "2026-10-18",
+    "currentDate": "2026-10-18",
+    "eventCount": 4176,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,8 +54,72 @@
   },
   "events": [
     {
+      "id": "EV-d083659c3a654b8d",
+      "dataDate": "2026-10-18",
+      "date": "2026-10-16",
+      "updatedDate": "2026-10-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Mueon完成6500万美元融资，用于优化AI半导体",
+      "originalTitle": "Mueon Closes $65M to Optimize AI Semiconductors",
+      "subject": "Mueon",
+      "action": "Closes",
+      "object": "$65M to Optimize AI Semiconductors",
+      "metrics": [
+        "$65 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0c0602512d9cddaa",
+        "EN-616c63e6c9d0f518"
+      ],
+      "entityNames": [
+        "Mueon",
+        "Ore.-based Mueon"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-4ac7430b1864b871",
+          "subject": "Mueon",
+          "object": "$65M to Optimize AI Semiconductors",
+          "quote": "The big picture: Portland, Ore.-based Mueon Corp. closed a $65 million Series A funding round to advance its semiconductor systems designed for cost efficiencies in AI and hyperscale computing."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-befed2955f11de0a",
+          "publisher": "aipressroom.com",
+          "url": "https://aipressroom.com/mueon-65m-ai-semiconductors/"
+        }
+      ],
+      "sourceUrl": "https://aipressroom.com/mueon-65m-ai-semiconductors/",
+      "publisher": "aipressroom.com",
+      "sourceExcerpt": "The big picture: Portland, Ore.-based Mueon Corp. closed a $65 million Series A funding round to advance its semiconductor systems designed for cost efficiencies in AI and hyperscale computing."
+    },
+    {
       "id": "EV-0c6afd346f19b0a6",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-15",
       "updatedDate": "2026-10-15",
       "eventType": "funding",
@@ -82,12 +146,48 @@
         "ai_market_application": [],
         "product_form": [],
         "use_case": [],
-        "industry": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-3e9ae4c1660ed4da"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
         "deployment_model": [],
         "target_user": []
       },
-      "classifications": [],
-      "displayTags": [],
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-3e9ae4c1660ed4da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-3e9ae4c1660ed4da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
       "entityIds": [
         "EN-3e9ae4c1660ed4da"
       ],
@@ -98,10 +198,10 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-558913001d919c20",
+          "id": "CL-a9a3bff26148d3c4",
           "subject": "Matters",
           "object": "$5 million in pre-seed funding",
-          "quote": "Matters has emerged from stealth with $5 million in pre-seed funding"
+          "quote": "AI-powered personal finance startup Matters has emerged from stealth with $5 million in pre-seed funding to develop a consumer banking platform focused on helping users manage their spending and increase their savings."
         }
       ],
       "sources": [
@@ -113,7 +213,7 @@
       ],
       "sourceUrl": "https://tech.eu/2026/10/15/matters-emerges-from-stealth-with-5m-in-pre-seed-funding-to-build-ai-native-consumer-bank/",
       "publisher": "tech.eu",
-      "sourceExcerpt": "Matters has emerged from stealth with $5 million in pre-seed funding"
+      "sourceExcerpt": "AI-powered personal finance startup Matters has emerged from stealth with $5 million in pre-seed funding to develop a consumer banking platform focused on helping users manage their spending and increase their savings."
     },
     {
       "id": "EV-1043d78cc040ab30",
@@ -581,7 +681,7 @@
     },
     {
       "id": "EV-3a09e2f76f792423",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-15",
       "updatedDate": "2026-10-15",
       "eventType": "funding",
@@ -624,7 +724,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-2739e1fc4b320e05",
+          "id": "CL-480609f711fd5ae9",
           "subject": "Solvera",
           "object": "$6.3M to scale the AI-native engineering firm",
           "quote": "has raised $6.3 million in a pre-seed funding round to develop its AI-native"
@@ -770,7 +870,7 @@
     },
     {
       "id": "EV-67da47378d794e52",
-      "dataDate": "2026-10-16",
+      "dataDate": "2026-10-18",
       "date": "2026-10-15",
       "updatedDate": "2026-10-15",
       "eventType": "funding",
@@ -815,7 +915,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-b0d86d2f51712f6f",
+          "id": "CL-d72ed47d7b259f8d",
           "subject": "From Slush to sustainable materials: Ambio",
           "object": "€5.1M for AI-powered plastics procurement",
           "quote": "Helsinki-based startup Ambio has raised a €5.1 million seed round led by b2venture, with participation from Montis and existing investor Lifeline Ventures, to bring greater trust, reliability, and speed to recycled plastics procurement."
@@ -982,7 +1082,7 @@
     },
     {
       "id": "EV-e260188a14619627",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-15",
       "updatedDate": "2026-10-15",
       "eventType": "funding",
@@ -1025,7 +1125,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-e5642ca45c61d7d4",
+          "id": "CL-74b4e41a61b12419",
           "subject": "Vilnius-based Holo",
           "object": "€5M to bring AI-powered marketing to small businesses",
           "quote": "AI marketing platform Holo has raised €5 million in a seed funding"
@@ -1172,6 +1272,77 @@
       "sourceExcerpt": "Tallinn-based Skeleton Technologies, a developer high-power systems for AI infrastructure, today announced a “9-digit investment” from Siemens, bringing Skeleton’s valuation to more than €899 million ($1 billion)."
     },
     {
+      "id": "EV-0aa4975339dd75c5",
+      "dataDate": "2026-10-18",
+      "date": "2026-10-14",
+      "updatedDate": "2026-10-14",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "上海大模型芯片创企，融资近亿元_大风号",
+      "originalTitle": "",
+      "subject": "思敏威集成电路有限公司",
+      "action": "融资",
+      "object": "近亿元",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-a8a434f19fe90306"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e0b1be7cff05cbb5"
+      ],
+      "entityNames": [
+        "思敏威集成电路有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-a8a434f19fe90306",
+          "subject": "思敏威集成电路有限公司",
+          "object": "约亿元天使轮融资",
+          "quote": "上海3D存算一体AI芯片公司思敏威集成电路有限公司宣布完成约亿元天使轮融资"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-3af583d5635e80de",
+          "publisher": "feng.ifeng.com",
+          "url": "https://feng.ifeng.com/c/8xDJBysBvyj"
+        }
+      ],
+      "sourceUrl": "https://feng.ifeng.com/c/8xDJBysBvyj",
+      "publisher": "feng.ifeng.com",
+      "sourceExcerpt": "上海3D存算一体AI芯片公司思敏威集成电路有限公司宣布完成约亿元天使轮融资"
+    },
+    {
       "id": "EV-1a8680342a138dd5",
       "dataDate": "2026-10-17",
       "date": "2026-10-14",
@@ -1260,7 +1431,7 @@
     },
     {
       "id": "EV-40fcb6b8c3d22d2a",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -1303,7 +1474,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-62323f5fe9477d94",
+          "id": "CL-d9c7dabd71c620a9",
           "subject": "Zenzap",
           "object": "$44M for its AI chat app that aims to replace WhatsApp in the workplace",
           "quote": "The company has raised $44 million in funding from investors including Bessemer, Lightspeed, and The Garage, as well as individual investors Wix president Nir Zohar and former GM of EY, Yoram Tietz."
@@ -1311,7 +1482,7 @@
       ],
       "sources": [
         {
-          "id": "SA-9a6a081e4eb250a1",
+          "id": "SA-5304827e18348efa",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/"
         }
@@ -1435,7 +1606,7 @@
     },
     {
       "id": "EV-4825aa01d742cad3",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -1478,7 +1649,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-479a8640444d18fc",
+          "id": "CL-6d3964773ba716ab",
           "subject": "Affinity Labs",
           "object": "$2M to build AI-powered software brands with creators",
           "quote": "startup Affinity Labs has raised $2 million in pre-seed funding to expand its"
@@ -1497,7 +1668,7 @@
     },
     {
       "id": "EV-4973399a1e386bb5",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -1540,7 +1711,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-e0730f6bda32b2b0",
+          "id": "CL-6f93a10e7a1db628",
           "subject": "Salience Labs",
           "object": "$125M to scale photonic chips for AI data centres",
           "quote": "developer of photonic chips for AI data centre connectivity, has raised $125 million in an oversubscribed Series B funding round to accelerate the"
@@ -1728,7 +1899,7 @@
     },
     {
       "id": "EV-624a5429f93742b9",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -1771,7 +1942,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-216e3bb32f0b60e7",
+          "id": "CL-cb43b0605bfbeefd",
           "subject": "Scimplify",
           "object": "$25M to challenge China&#8217;s grip on critical materials with AI",
           "quote": "As manufacturers across industries strive to reduce their reliance on Chinese suppliers, Indian startup Scimplify has raised $25 million to expand its AI-powered approach to producing specialty chemicals and critical materials, with semiconductors, defense, and energy emerging as key growth markets."
@@ -1779,7 +1950,7 @@
       ],
       "sources": [
         {
-          "id": "SA-59a1f1510f605bd6",
+          "id": "SA-5c324fd1a1a070eb",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/"
         }
@@ -1851,6 +2022,136 @@
       "sourceUrl": "https://www.prnewswire.com/news-releases/sonilo-raises-11m-to-build-the-ai-native-audio-stack-for-video-302908461.html",
       "publisher": "www.prnewswire.com",
       "sourceExcerpt": "SAN FRANCISCO, Oct. 14, 2026 /PRNewswire/ -- Sonilo, a generative audio company building proprietary video-native music and sound models, today announced an $11 million funding round led by B Capital, with participation from Redpoint."
+    },
+    {
+      "id": "EV-7ee91391ace42994",
+      "dataDate": "2026-10-18",
+      "date": "2026-10-14",
+      "updatedDate": "2026-10-14",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Fragment 融资 1200 万美元，用于防止 AI 智能体擅自动用公司资金",
+      "originalTitle": "Fragment raises $12 million to help keep AI agents from going rogue with company money",
+      "subject": "Fragment",
+      "action": "raises",
+      "object": "$12 million to help keep AI agents from going rogue with company money",
+      "metrics": [
+        "$12 million",
+        "$82 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7587669ca42e19e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7587669ca42e19e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7587669ca42e19e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7587669ca42e19e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7587669ca42e19e8",
+        "EN-ab572f7f3ce3c737"
+      ],
+      "entityNames": [
+        "Fragment",
+        "Startup Abby Care"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-af9214e2704c47f1",
+          "subject": "Fragment",
+          "object": "$12 million to help keep AI agents from going rogue with company money",
+          "quote": "Fragment raises $12 million to help keep AI agents from going rogue with company money"
+        },
+        {
+          "id": "CL-87b500bbb19ca9fc",
+          "subject": "Fragment",
+          "object": "$12 million to help keep AI agents from going rogue with company money",
+          "quote": "Founded by serial entrepreneur and CEO Thomas Neckel and CTO Varun Mohan, a former Robinhood engineer, Fragment announced on Wednesday that it raised a $12 million Series A round that closed in mid-2025 to build software that lets AI agents safely handle billing and accounting."
+        },
+        {
+          "id": "CL-b1f75e6c17b3a928",
+          "subject": "Fragment",
+          "object": "$12 million to help keep AI agents from going rogue with company money",
+          "quote": "Startup Abby Care raises $82 million to turn family members into paid caregivers"
+        },
+        {
+          "id": "CL-30a4e4e7c324f966",
+          "subject": "Fragment",
+          "object": "$12 million to help keep AI agents from going rogue with company money",
+          "quote": "Startup Abby Care raises $82 million to turn family members into paid caregivers"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7100a309f4bd9ed6",
+          "publisher": "fortune.com",
+          "url": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/"
+        }
+      ],
+      "sourceUrl": "https://fortune.com/2026/10/14/fragment-raises-12-million-to-help-keep-ai-agents-from-going-rogue-with-company-money/",
+      "publisher": "fortune.com",
+      "sourceExcerpt": "Fragment raises $12 million to help keep AI agents from going rogue with company money"
     },
     {
       "id": "EV-858cec7fa8f4c87b",
@@ -2204,7 +2505,7 @@
     },
     {
       "id": "EV-a0f070acd36db2ad",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -2215,7 +2516,7 @@
       "publicationStatus": "verified",
       "title": "思敏威集成电路完成亿元天使轮融资，加速3D存算产业化",
       "originalTitle": "",
-      "subject": "思敏威集成电路CiMicro.Ai",
+      "subject": "思敏威集成电路",
       "action": "完成亿元天使轮融资",
       "object": "，加速3D存算产业化",
       "metrics": [],
@@ -2249,8 +2550,8 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-de7209499bdba045",
-          "subject": "思敏威集成电路CiMicro.Ai",
+          "id": "CL-6bf62f8747188c1d",
+          "subject": "思敏威集成电路",
           "object": "亿元天使轮融资",
           "quote": "思敏威集成电路CiMicro.Ai宣布完成亿元天使轮融资，本轮融资由中兴通讯战略投资，博华产投、松青资本、建信信托、合创资本等机构联合投资，老股东德同资本持续重磅加码。"
         }
@@ -2268,7 +2569,7 @@
     },
     {
       "id": "EV-b51a67353e247022",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -2313,7 +2614,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-e701176bd9eb252f",
+          "id": "CL-aeb45d9cb98ec739",
           "subject": "云蝶科技",
           "object": "，OpenAI投资人投了一位广州博士",
           "quote": "投资界AI获悉，近日广州云蝶科技宣布完成数亿元B+轮系列融资，由StellarS Capital、亚洲联合基建（00711.HK）、长浙投资等知名机构和个人联合投资。"
@@ -2332,7 +2633,7 @@
     },
     {
       "id": "EV-db5825e75f029641",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -2375,7 +2676,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-57b9826b14101b17",
+          "id": "CL-3a0f07430ccca9b3",
           "subject": "From Rohlik to enterprise AI: Tomáš Čupr's Duvo",
           "object": "$32M Series A",
           "quote": "Duvo today announced a $32 million Series A led by Balderton Capital, with participation from existing investors Index Ventures, Northzone, and Credo Ventures."
@@ -2394,7 +2695,7 @@
     },
     {
       "id": "EV-de11eaf439ccee3f",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -2475,13 +2776,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-aa6b2219276ca880",
+          "id": "CL-66c64673911236f0",
           "subject": "算苗科技",
           "object": "投资界（ID：pedaily2012）10月14日消息，算苗科技已于近日完成了Pre-A2轮（含其加入轮）及A轮两轮融资，由亦庄国投等北京市区两级国资平台领投，资金将主要用于扩充研发人才、加码核心技术迭代，加速自研3D TokenPU大模型算力芯片量产落地等。",
           "quote": "投资界（ID：pedaily2012）10月14日消息，算苗科技已于近日完成了Pre-A2轮（含其加入轮）及A轮两轮融资，由亦庄国投等北京市区两级国资平台领投，资金将主要用于扩充研发人才、加码核心技术迭代，加速自研3D TokenPU大模型算力芯片量产落地等。"
         },
         {
-          "id": "CL-02fa936e58acf928",
+          "id": "CL-052099058a3b299a",
           "subject": "算苗科技",
           "object": "过去一年，算苗科技已经完成多轮融资，累计融资近20亿元。",
           "quote": "过去一年，算苗科技已经完成多轮融资，累计融资近20亿元。"
@@ -2500,7 +2801,7 @@
     },
     {
       "id": "EV-1bdab9eb4433741f",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-13",
       "updatedDate": "2026-10-13",
       "eventType": "funding",
@@ -2543,7 +2844,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-d70603b8b567f599",
+          "id": "CL-78ade27302616805",
           "subject": "Transport data specialist Alchera",
           "object": "£2.7M",
           "quote": "A Cambridge-founded startup that leverages AI to help cities manage roads and public transport more efficiently has raised £2.7m in seed funding, it said today."
@@ -2807,7 +3108,7 @@
     },
     {
       "id": "EV-558bb271d19ca3be",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-13",
       "updatedDate": "2026-10-13",
       "eventType": "funding",
@@ -2850,7 +3151,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-c26dd977afa48b95",
+          "id": "CL-5163d281b9830803",
           "subject": "首发|金珵科技",
           "object": "，上海交大教授李金金重新定义工业AI",
           "quote": "投资界获悉，金珵科技刚刚完成A轮融资，集结了上海国资、产业资本以及头部市场化基金。"
@@ -3084,8 +3385,82 @@
       "sourceExcerpt": "比特幻境于近日宣布完成数亿元天使轮融资，投资方包括博华资本、戈壁创投、元禾璞华、尚势资本等相关投资机构。"
     },
     {
+      "id": "EV-745ef35fd5483754",
+      "dataDate": "2026-10-18",
+      "date": "2026-10-13",
+      "updatedDate": "2026-10-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "上海AI大模型企业，又融资10亿",
+      "originalTitle": "",
+      "subject": "上海AI大模型企业，又",
+      "action": "融资",
+      "object": "10亿",
+      "metrics": [
+        "10亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1d79127e9d90e89b"
+      ],
+      "entityNames": [
+        "智谱AI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-7294eb7d0cc9b727",
+          "subject": "上海AI大模型企业，又",
+          "object": "10亿",
+          "quote": "10月12日，上海AI初创企业模思智能宣布完成超10亿元Pre-A轮融资。"
+        },
+        {
+          "id": "CL-3b750f64981c6b9b",
+          "subject": "上海AI大模型企业，又",
+          "object": "10亿",
+          "quote": "本次融资由华控基金领投，国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等机构参与投资；元禾控股、上海科创集团、星连资本等老股东持续加注，多维资本作为独家财务顾问长期为公司提供服务。"
+        },
+        {
+          "id": "CL-d78c7012de18db8e",
+          "subject": "上海AI大模型企业，又",
+          "object": "10亿",
+          "quote": "早在2026年3月，公司就完成数亿元天使轮融资，该轮由IDG资本领投，元禾控股、上海国投旗下上海科创及上海未来产业基金、奇绩创坛、智谱系基金星连资本以及某头部产业投资方联合投资。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ff9e25cda6946aae",
+          "publisher": "www.163.com",
+          "url": "https://www.163.com/dy/article/L94MC5P60552JPSX.html"
+        }
+      ],
+      "sourceUrl": "https://www.163.com/dy/article/L94MC5P60552JPSX.html",
+      "publisher": "www.163.com",
+      "sourceExcerpt": "10月12日，上海AI初创企业模思智能宣布完成超10亿元Pre-A轮融资。"
+    },
+    {
       "id": "EV-7888024e82caf138",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-13",
       "updatedDate": "2026-10-13",
       "eventType": "funding",
@@ -3128,7 +3503,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-c6fb6cd29bd07fd8",
+          "id": "CL-6a33c8be6e410be1",
           "subject": "Ubitium",
           "object": "$14M to bring universal computing to physical AI",
           "quote": "Ubitium has raised $14 million in new seed funding to develop its universal"
@@ -3147,7 +3522,7 @@
     },
     {
       "id": "EV-86aa6c06358dcdae",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-13",
       "updatedDate": "2026-10-13",
       "eventType": "funding",
@@ -3171,9 +3546,9 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-91f3182209c54ac9",
-          "CL-7f23b427c05bbf99",
-          "CL-aee3f96b9d992a16"
+          "CL-835e7b824065a6b0",
+          "CL-4a5164976a2bcdf1",
+          "CL-0fa87e00992325e7"
         ]
       },
       "missingFields": [],
@@ -3239,19 +3614,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-91f3182209c54ac9",
+          "id": "CL-835e7b824065a6b0",
           "subject": "荆华密算获近亿元Pre-A轮",
           "object": "，半年连融三轮",
           "quote": "「荆华密算」正式宣布完成 Pre-A 轮融资。"
         },
         {
-          "id": "CL-7f23b427c05bbf99",
+          "id": "CL-4a5164976a2bcdf1",
           "subject": "荆华密算获近亿元Pre-A轮",
           "object": "，半年连融三轮",
           "quote": "荆华密算在半年内已连续完成三轮融资，本轮融资金额近亿元，资金将重点投向国产算力深度适配、底层密态计算技术迭代以及密态专用芯片研发。"
         },
         {
-          "id": "CL-aee3f96b9d992a16",
+          "id": "CL-0fa87e00992325e7",
           "subject": "荆华密算获近亿元Pre-A轮",
           "object": "，半年连融三轮",
           "quote": "谈及本轮融资，荆华密算创始人、CEO 林修醇表示：“荆华密算的战略目标非常明确，我们要解决高敏场景‘AI 不敢用’难题，把密态计算打造成支撑大模型与 Agent 时代规模化落地的数字基础设施。"
@@ -3391,7 +3766,7 @@
     },
     {
       "id": "EV-9dfeaeede161baa7",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-13",
       "updatedDate": "2026-10-13",
       "eventType": "funding",
@@ -3474,34 +3849,107 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-cdd02ae9b3dd8cda",
+          "id": "CL-94d7d788f8e5e341",
           "subject": "Pluto Security",
           "object": "$42 million in funding",
-          "quote": "Pluto, fresh out of stealth with $42 million in funding, is the latest in a new crop of security startups"
+          "quote": "Pluto, fresh out of stealth with $42 million in funding"
         },
         {
-          "id": "CL-934fdad0e726a8a7",
+          "id": "CL-b81f2b2b526e21bd",
           "subject": "Pluto Security",
           "object": "$8.5 million seed round led by TLV Partners",
           "quote": "Pluto’s funding spans an $8.5 million seed round led by TLV Partners, with cybersecurity firm Armis’ founders also investing."
         },
         {
-          "id": "CL-3759f7afd8d2a021",
+          "id": "CL-a828be9c95f4a8eb",
           "subject": "Pluto Security",
-          "object": "$34 million Series A led by Jump Capital",
+          "object": "Series A of $34 million led by Jump Capital",
           "quote": "The company recently raised a Series A of $34 million led by Jump Capital, with Skinos (Check Point co-founder Shlomo Kramer’s venture firm), Ansa Capital, and other angel investors participating."
         }
       ],
       "sources": [
         {
-          "id": "SA-010ccaf79ff35d7c",
+          "id": "SA-75be1095965186e3",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/"
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
       "publisher": "techcrunch.com",
-      "sourceExcerpt": "Pluto, fresh out of stealth with $42 million in funding, is the latest in a new crop of security startups"
+      "sourceExcerpt": "Pluto, fresh out of stealth with $42 million in funding"
+    },
+    {
+      "id": "EV-bdf01e0aa51360b3",
+      "dataDate": "2026-10-18",
+      "date": "2026-10-13",
+      "updatedDate": "2026-10-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "荆华密算完成近亿元Pre-A轮融资_腾讯新闻",
+      "originalTitle": "",
+      "subject": "荆华密算",
+      "action": "完成近亿元Pre-A轮融资",
+      "object": "_腾讯新闻",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-40f956dc778ea682"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6ec81821068b9e26",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "荆华密算",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-40f956dc778ea682",
+          "subject": "荆华密算",
+          "object": "_腾讯新闻",
+          "quote": "【荆华密算完成近亿元Pre-A轮融资】《科创板日报》13日讯，近日，AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资，本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-cd2abb5dfb7b1c5b",
+          "publisher": "news.qq.com",
+          "url": "https://news.qq.com/rain/a/20261013A0C6VW00"
+        }
+      ],
+      "sourceUrl": "https://news.qq.com/rain/a/20261013A0C6VW00",
+      "publisher": "news.qq.com",
+      "sourceExcerpt": "【荆华密算完成近亿元Pre-A轮融资】《科创板日报》13日讯，近日，AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资，本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投。"
     },
     {
       "id": "EV-beff4b8357bf80b1",
@@ -3621,6 +4069,79 @@
       "sourceExcerpt": "HomeAustria-StartupsVienna-based reebuild raises €3 million to build the AI operating system for..."
     },
     {
+      "id": "EV-d996f29cab26d8b8",
+      "dataDate": "2026-10-18",
+      "date": "2026-10-13",
+      "updatedDate": "2026-10-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "荆华密算完成近亿元Pre-A轮融资",
+      "originalTitle": "",
+      "subject": "荆华密算",
+      "action": "完成近亿元Pre-A轮融资",
+      "object": "荆华密算完成近亿元Pre-A轮融资",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-fbab3f9b4c835bb5"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6ec81821068b9e26"
+      ],
+      "entityNames": [
+        "荆华密算"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-fbab3f9b4c835bb5",
+          "subject": "荆华密算",
+          "object": "【荆华密算完成近亿元Pre-A轮融资】《科创板日报》13日讯，近日，AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资，本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投。",
+          "quote": "【荆华密算完成近亿元Pre-A轮融资】《科创板日报》13日讯，近日，AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资，本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-dcfe7b52b1f73a11",
+          "publisher": "www.sohu.com",
+          "url": "https://www.sohu.com/a/1087312214_122029351"
+        }
+      ],
+      "sourceUrl": "https://www.sohu.com/a/1087312214_122029351",
+      "publisher": "www.sohu.com",
+      "sourceExcerpt": "【荆华密算完成近亿元Pre-A轮融资】《科创板日报》13日讯，近日，AI密态计算技术服务商荆华密算（北京）科技有限公司完成近亿元Pre-A轮融资，本轮由中关村科学城、北创投联合领投，华仓资本、极致投资、英诺基金、盛景嘉成基金跟投。"
+    },
+    {
       "id": "EV-e9b020a1b5f1af14",
       "dataDate": "2026-10-17",
       "date": "2026-10-13",
@@ -3695,7 +4216,7 @@
     },
     {
       "id": "EV-eae106e49ba4d429",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-13",
       "updatedDate": "2026-10-13",
       "eventType": "funding",
@@ -3742,25 +4263,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-753324f6b0dea670",
+          "id": "CL-642e217a9f74602f",
           "subject": "星尘智能",
           "object": "，深圳150亿具身独角兽诞生",
           "quote": "今天（10月13日），深圳具身公司星尘智能（Astribot）宣布完成10亿元规模新一轮融资，估值达到150亿元，跻身国内具身公司第 一梯队阵型。"
         },
         {
-          "id": "CL-fa7a58d9b7dd6158",
+          "id": "CL-b19990897d77e72f",
           "subject": "星尘智能",
           "object": "，深圳150亿具身独角兽诞生",
           "quote": "此时，距离公司完成超10亿元的B轮融资仅过去了三个月。"
         },
         {
-          "id": "CL-6419dc94fc5a755f",
+          "id": "CL-6a1b7aa6abcde548",
           "subject": "星尘智能",
           "object": "，深圳150亿具身独角兽诞生",
           "quote": "算下来，星尘智能在近半年内已连续完成4轮融资，仅最近两轮累计融资规模就超过20亿元。"
         },
         {
-          "id": "CL-484135cd75085c5a",
+          "id": "CL-07ed83f4c3879ce0",
           "subject": "星尘智能",
           "object": "，深圳150亿具身独角兽诞生",
           "quote": "外界通常认为，多元战略股东格局能够在“政策引导＋产业场景＋资金支持”等方面提供系统性赋能——这也解释了为什么星尘智能能在短短几个月内连续完成大体量融资：这是一个能够跑通从原型验证，到规模量产完整路径的投资标的。"
@@ -3779,7 +4300,7 @@
     },
     {
       "id": "EV-1ab1592853c9099a",
-      "dataDate": "2026-10-13",
+      "dataDate": "2026-10-18",
       "date": "2026-10-12",
       "updatedDate": "2026-10-12",
       "eventType": "funding",
@@ -3788,28 +4309,24 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "单轮23亿、累计43亿！无问芯穹创下我国AI原生基础设施赛道融资纪录",
+      "title": "无问芯穹完成23亿C轮融资：创中国AI原生基础设施赛道最高",
       "originalTitle": "",
-      "subject": "单轮23亿、累计43亿！无问芯穹创下我国AI原生基础设施赛道",
-      "action": "融资",
-      "object": "纪录",
+      "subject": "无问芯穹",
+      "action": "完成23亿C轮融资",
+      "object": "：创中国AI原生基础设施赛道最高",
       "metrics": [
-        "23亿",
-        "43亿"
+        "23亿"
       ],
       "locations": [],
       "marketScope": {
         "market_region": "CN",
         "china_market_match": true,
         "china_market_basis": [
-          "event_market",
-          "actor_origin"
+          "event_market"
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-16a13202a95c1237",
-          "CL-e15319bb5a09d26e",
-          "CL-eb148aaeb8005564"
+          "CL-4a74d9bcae6fd589"
         ]
       },
       "missingFields": [],
@@ -3828,50 +4345,31 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-0369c8fcda657a43",
-        "EN-dd4299e49ec180a5"
+        "EN-0369c8fcda657a43"
       ],
       "entityNames": [
-        "Infinigence AI",
-        "新民晚报记者今天（12日）"
+        "Infinigence AI"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-16a13202a95c1237",
-          "subject": "单轮23亿、累计43亿！无问芯穹创下我国AI原生基础设施赛道",
-          "object": "纪录",
-          "quote": "无问芯穹创下我国AI原生基础设施赛道融资纪录"
-        },
-        {
-          "id": "CL-e15319bb5a09d26e",
-          "subject": "单轮23亿、累计43亿！无问芯穹创下我国AI原生基础设施赛道",
-          "object": "纪录",
-          "quote": "新民晚报记者今天（12日）获悉，AI原生基础设施企业无问芯穹已完成C轮融资，本轮融资金额23亿元，公司创立以来累计融资额达43亿元，单轮及累计融资额均创下中国AI原生基础设施赛道最高纪录。"
-        },
-        {
-          "id": "CL-eb148aaeb8005564",
+          "id": "CL-4a74d9bcae6fd589",
           "subject": "无问芯穹",
-          "object": "，助力AI时代各行各业的智能革命",
-          "quote": "投资界（ID：pedaily2012）10月12日消息，清华系AI原生基础设施企业无问芯穹已完成23亿元C轮融资，其成立以来的累计融资额达43亿元。"
+          "object": "：创中国AI原生基础设施赛道最高",
+          "quote": "「IPO早知道」从知情人士处获悉，无问芯穹稍早前已完成23亿元C轮融资并已全部交割，创下中国AI原生基础设施赛道最高单笔融资纪录"
         }
       ],
       "sources": [
         {
-          "id": "SA-0507574a1af6bff6",
-          "publisher": "www.sohu.com",
-          "url": "https://www.sohu.com/a/1086658109_121286085?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334"
-        },
-        {
-          "id": "SA-54cbeac7986bb95a",
-          "publisher": "news.pedaily.cn",
-          "url": "https://news.pedaily.cn/202610/570082.shtml"
+          "id": "SA-a0d7314ef5b35362",
+          "publisher": "www.163.com",
+          "url": "https://www.163.com/dy/article/L91JQ473053900WX.html"
         }
       ],
-      "sourceUrl": "https://www.sohu.com/a/1086658109_121286085?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-      "publisher": "www.sohu.com",
-      "sourceExcerpt": "无问芯穹创下我国AI原生基础设施赛道融资纪录"
+      "sourceUrl": "https://www.163.com/dy/article/L91JQ473053900WX.html",
+      "publisher": "www.163.com",
+      "sourceExcerpt": "「IPO早知道」从知情人士处获悉，无问芯穹稍早前已完成23亿元C轮融资并已全部交割，创下中国AI原生基础设施赛道最高单笔融资纪录"
     },
     {
       "id": "EV-211e8b43741abead",
@@ -4101,7 +4599,7 @@
     },
     {
       "id": "EV-439079c4d9694407",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-12",
       "updatedDate": "2026-10-12",
       "eventType": "funding",
@@ -4182,7 +4680,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-f09db8a0558e44b3",
+          "id": "CL-f744a2dde5587c5b",
           "subject": "Former Plaud exec",
           "object": "$26M for AI app that listens to you in the background",
           "quote": "The company said on Monday that it has raised $26 million across multiple funding rounds led by Luminous Ventures, which has backed companies like Meituan and Unitree Robotics, and original design manufacturer (ODM) Huaqin."
@@ -4190,7 +4688,7 @@
       ],
       "sources": [
         {
-          "id": "SA-ee9e6ab583775482",
+          "id": "SA-fdb708db41411d1f",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/"
         }
@@ -4410,7 +4908,7 @@
     },
     {
       "id": "EV-6877d20003836022",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-12",
       "updatedDate": "2026-10-12",
       "eventType": "funding",
@@ -4436,7 +4934,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-fe565000ee779d31"
+          "CL-68eff3dd530bcb65"
         ]
       },
       "missingFields": [],
@@ -4464,7 +4962,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-fe565000ee779d31",
+          "id": "CL-68eff3dd530bcb65",
           "subject": "首发| 蓝芯算力",
           "object": "，用AI重新定义CPU",
           "quote": "投资界获悉，行业领 先的RISC-V CPU+AI芯片公司蓝芯算力（深圳）科技有限公司（简称“蓝芯算力”）已于近日完成B轮系列融资，合计融资规模近20亿元人民币。"
@@ -4483,7 +4981,7 @@
     },
     {
       "id": "EV-78ed82b05ec5fbf1",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-12",
       "updatedDate": "2026-10-12",
       "eventType": "funding",
@@ -4506,11 +5004,14 @@
         "market_region": "CN",
         "china_market_match": true,
         "china_market_basis": [
-          "event_market"
+          "event_market",
+          "actor_origin"
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-45f79207067e61e9"
+          "CL-3f209c83ad34ac99",
+          "CL-4391a4cd746216a8",
+          "CL-6c265bd250669919"
         ]
       },
       "missingFields": [],
@@ -4531,21 +5032,35 @@
       "entityIds": [
         "EN-9dd6dfc5a0a9d316",
         "EN-08c2a5dfaa3cbde6",
-        "EN-9c8ae69b84f21a2e"
+        "EN-9c8ae69b84f21a2e",
+        "EN-0369c8fcda657a43"
       ],
       "entityNames": [
         "清华系AI原生基础设施企业无问芯穹",
         "AI基础设施独角兽",
-        "Tencent"
+        "Tencent",
+        "Infinigence AI"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-45f79207067e61e9",
+          "id": "CL-3f209c83ad34ac99",
           "subject": "无问芯穹",
           "object": "23亿元C轮融资",
           "quote": "清华系AI原生基础设施企业无问芯穹完成23亿元C轮融资，累计融资43亿元，创下中国AI原生基础设施赛道最高纪录"
+        },
+        {
+          "id": "CL-4391a4cd746216a8",
+          "subject": "无问芯穹",
+          "object": "23亿元C轮融资",
+          "quote": "国内AI原生基础设施企业无问芯穹完成23亿元C轮融资，累计融资43亿元，创国内AIInfra行业新高。"
+        },
+        {
+          "id": "CL-6c265bd250669919",
+          "subject": "无问芯穹",
+          "object": "，助力AI时代各行各业的智能革命",
+          "quote": "投资界（ID：pedaily2012）10月12日消息，清华系AI原生基础设施企业无问芯穹已完成23亿元C轮融资，其成立以来的累计融资额达43亿元。"
         }
       ],
       "sources": [
@@ -4553,6 +5068,16 @@
           "id": "SA-1543950dfcac7e93",
           "publisher": "news.qq.com",
           "url": "https://news.qq.com/rain/a/20261012A06QC200"
+        },
+        {
+          "id": "SA-7c4d0f407b8a3ce6",
+          "publisher": "news.qq.com",
+          "url": "https://news.qq.com/rain/a/20261013A05YS200"
+        },
+        {
+          "id": "SA-54cbeac7986bb95a",
+          "publisher": "news.pedaily.cn",
+          "url": "https://news.pedaily.cn/202610/570082.shtml"
         }
       ],
       "sourceUrl": "https://news.qq.com/rain/a/20261012A06QC200",
@@ -4701,7 +5226,7 @@
     },
     {
       "id": "EV-ebaf045f180333dc",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-12",
       "updatedDate": "2026-10-12",
       "eventType": "funding",
@@ -4744,7 +5269,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-ab9d9a3f6c4ea34d",
+          "id": "CL-f5ddd62d7d9b868e",
           "subject": "Scarlet",
           "object": "$50M Series B to accelerate AI medical device certification",
           "quote": "Scarlet, the certification body for AI and software medical devices, today announced a $50 million Series B led by Headline, with participation from new investor Notion Capital and existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First."
@@ -4760,6 +5285,121 @@
       "sourceUrl": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
       "publisher": "tech.eu",
       "sourceExcerpt": "Scarlet, the certification body for AI and software medical devices, today announced a $50 million Series B led by Headline, with participation from new investor Notion Capital and existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First."
+    },
+    {
+      "id": "EV-ebc48cb526ad4263",
+      "dataDate": "2026-10-18",
+      "date": "2026-10-12",
+      "updatedDate": "2026-10-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "探针AI医疗周报：General Medicine融资1.2亿美元，AI走向医疗交付与生物制造【261012】",
+      "originalTitle": "",
+      "subject": "探针AI医疗周报：General Medicine",
+      "action": "融资",
+      "object": "1.2亿美元，AI走向医疗交付与生物制造【261012】",
+      "metrics": [
+        "1.2亿",
+        "7500万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-376e4e2531b38384"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-376e4e2531b38384"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-376e4e2531b38384"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-376e4e2531b38384",
+        "EN-dc379efdc8598236",
+        "EN-c215bee2c6320ad4"
+      ],
+      "entityNames": [
+        "探针AI医疗周报：General Medicine",
+        "探针AI医疗周报",
+        "宣布"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-8feb90232477aae4",
+          "subject": "探针AI医疗周报：General Medicine",
+          "object": "1.2亿美元，AI走向医疗交付与生物制造【261012】",
+          "quote": "探针AI医疗周报：General Medicine融资1.2亿美元，AI走向医疗交付与生物制造【261012】"
+        },
+        {
+          "id": "CL-b8da0fea231cd8d0",
+          "subject": "探针AI医疗周报：General Medicine",
+          "object": "1.2亿美元，AI走向医疗交付与生物制造【261012】",
+          "quote": "General Medicine以1.2亿美元融资扩展可搜索、比价和购买的医疗服务平台，Multiply Labs获得7500万美元以扩大生物药自动化制造。"
+        },
+        {
+          "id": "CL-bb33dc88dcc492d1",
+          "subject": "探针AI医疗周报：General Medicine",
+          "object": "1.2亿美元，AI走向医疗交付与生物制造【261012】",
+          "quote": "2026年10月6日，公司宣布完成1.2亿美元B轮融资，由Andreessen Horowitz领投，Matrix、VXI Capital、礼来、Mercy Health旗下Granger Management及BoxGroup参与。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-409bc3e8b4d5383b",
+          "publisher": "www.sohu.com",
+          "url": "https://www.sohu.com/a/1086957464_121124378"
+        }
+      ],
+      "sourceUrl": "https://www.sohu.com/a/1086957464_121124378",
+      "publisher": "www.sohu.com",
+      "sourceExcerpt": "探针AI医疗周报：General Medicine融资1.2亿美元，AI走向医疗交付与生物制造【261012】"
     },
     {
       "id": "EV-eeb9ea45a172110e",
@@ -4944,7 +5584,7 @@
     },
     {
       "id": "EV-e1a99aa97c73cc9c",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-11",
       "updatedDate": "2026-10-11",
       "eventType": "funding",
@@ -4973,8 +5613,8 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-f33e41b4d31d5f8b",
-          "CL-61263c63a90cdfa8"
+          "CL-21c303584c3d6782",
+          "CL-35e793e62692a1fe"
         ]
       },
       "missingFields": [],
@@ -5008,13 +5648,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-f33e41b4d31d5f8b",
+          "id": "CL-21c303584c3d6782",
           "subject": "🗞️DeepSeek",
           "object": "$12B+, Manus Lands $500M After Its Meta Split, and Kling Eyes $1B IPO",
           "quote": "🗞️DeepSeek Raises $12B+, Manus Lands $500M After Its Meta Split, and Kling Eyes $1B IPO"
         },
         {
-          "id": "CL-61263c63a90cdfa8",
+          "id": "CL-35e793e62692a1fe",
           "subject": "🗞️DeepSeek",
           "object": "$12B+, Manus Lands $500M After Its Meta Split, and Kling Eyes $1B IPO",
           "quote": "Manus raises more than $500 million in its first round since splitting from Meta."
@@ -227035,7 +227675,7 @@
           "name": "Featherless.ai",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -292233,9 +292873,7 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -345086,8 +345724,86 @@
       "sourceExcerpt": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
     },
     {
+      "id": "EV-b86890a5d3330971",
+      "dataDate": "2026-10-18",
+      "date": "2026-10-17",
+      "updatedDate": "2026-10-17",
+      "eventType": "service_change",
+      "eventTypeLabel": "服务变更",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Meta 删除了引发抓取和 AI 训练担忧的措辞",
+      "originalTitle": "Meta removes language that raised scraping and AI training concerns",
+      "subject": "Meta",
+      "action": "removes",
+      "object": "language that raised scraping and AI training concerns",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-66e9865b2bdb3a0b",
+          "subject": "Meta",
+          "object": "language that raised scraping and AI training concerns",
+          "quote": "Meta removes language that raised scraping and AI training concerns"
+        },
+        {
+          "id": "CL-f944c2fafa2bad7d",
+          "subject": "Meta",
+          "object": "language that raised scraping and AI training concerns",
+          "quote": "Meta recently updated its commercial terms of use, declaring that the company can “use any content from [a business account’s] domains, web pages, or URLs to provide, develop, improve, research, train, and maintain the integrity of” Meta products and services."
+        },
+        {
+          "id": "CL-dcfcd158966d6722",
+          "subject": "Meta",
+          "object": "language that raised scraping and AI training concerns",
+          "quote": "According to legal experts interviewed by Nieman Lab, this looked like a “remarkable provision” that could give Meta permission to scrape the website of any publisher with a Meta business account and use the content to train the company’s AI models. (While Meta defeated a high-profile lawsuit over alleged copyright infringement last year, other cases against AI companies, including Meta, continue.)"
+        },
+        {
+          "id": "CL-6248c17cd30376c0",
+          "subject": "Meta",
+          "object": "language that raised scraping and AI training concerns",
+          "quote": "However, a Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-3caed3cc81aee02c",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Meta removes language that raised scraping and AI training concerns"
+    },
+    {
       "id": "EV-131ba54baeef4a0a",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-16",
       "updatedDate": "2026-10-16",
       "eventType": "model_release",
@@ -345101,10 +345817,7 @@
       "subject": "Elorian",
       "action": "model_release",
       "object": "Glimpse",
-      "metrics": [
-        "$55 million",
-        "$300 million"
-      ],
+      "metrics": [],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
@@ -345131,26 +345844,26 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-d7b9be8997131dc5",
+          "id": "CL-7ce0b1f4512a0bd8",
           "subject": "Elorian",
           "object": "Glimpse",
-          "quote": "Elorian, the Palo Alto AI startup that raised a $55 million seed round at a $300 million valuation before it launched a product, released its first model on Friday, TechCrunch has exclusively learned."
+          "quote": "released its first model on Friday, TechCrunch has exclusively learned."
         }
       ],
       "sources": [
         {
-          "id": "SA-378f86b47c3d053f",
+          "id": "SA-eee20cb36724376c",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/"
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
       "publisher": "techcrunch.com",
-      "sourceExcerpt": "Elorian, the Palo Alto AI startup that raised a $55 million seed round at a $300 million valuation before it launched a product, released its first model on Friday, TechCrunch has exclusively learned."
+      "sourceExcerpt": "released its first model on Friday, TechCrunch has exclusively learned."
     },
     {
       "id": "EV-fc95a34161565286",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-16",
       "updatedDate": "2026-10-16",
       "eventType": "product_release",
@@ -345208,19 +345921,19 @@
       ],
       "claims": [
         {
-          "id": "CL-549ff0c8e63ae228",
+          "id": "CL-a342e55694c35512",
           "subject": "DJ Reinier Zonneveld",
           "object": "AI music startup GasLab with $1M pre-seed funding",
           "quote": "GasLab (Generative AI Solutions Lab), a GenAI music platform created by DJ and producer Reinier Zonneveld, is launched this week, backed by $1 million in pre-seed funding."
         },
         {
-          "id": "CL-a0769eee392925b2",
+          "id": "CL-5d159ceadcd278a2",
           "subject": "DJ Reinier Zonneveld",
           "object": "AI music startup GasLab with $1M pre-seed funding",
           "quote": "GasLab is on a mission to keep creatives in business in the age of generative AI, protecting the future of the creative industry by ensuring the artists whose music shapes AI-generated tracks are recognised, credited and able to share in the value created."
         },
         {
-          "id": "CL-1f48ad908007fe6a",
+          "id": "CL-162652b56f01c48a",
           "subject": "DJ Reinier Zonneveld",
           "object": "AI music startup GasLab with $1M pre-seed funding",
           "quote": "Investors in this round include Eric Demuth, co-founder and executive…"
@@ -346328,7 +347041,7 @@
           "name": "TypeSafe",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Databricks"
           ]
         }
       ],
@@ -346916,9 +347629,7 @@
         {
           "name": "GPT-6.1 Sol",
           "type": "AI 硬件",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -347009,7 +347720,7 @@
           "name": "AI Tamagotchis",
           "type": "AI 硬件",
           "ownerNames": [
-            "OpenAI"
+            "Apple"
           ]
         }
       ],
@@ -347672,7 +348383,7 @@
           "name": "Dot",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Apple"
           ]
         }
       ],
@@ -347919,9 +348630,7 @@
         {
           "name": "Decisions API",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -348029,23 +348738,17 @@
         {
           "name": "Decisions API",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Why Dwarkesh",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Computer Use",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -350622,9 +351325,7 @@
         {
           "name": "GPT-6 Astra",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -353052,16 +353753,12 @@
         {
           "name": "GPT-6 Sol",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-6 Luna",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -353555,7 +354252,7 @@
           "name": "GPT-6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -354258,16 +354955,12 @@
         {
           "name": "GPT-6 Sol",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-6 Sol and Luna",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -354652,9 +355345,7 @@
         {
           "name": "System One",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -355971,16 +356662,12 @@
         {
           "name": "AI Agents News",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI operations hub",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -358608,16 +359295,12 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Codex",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -360209,16 +360892,12 @@
         {
           "name": "Astra for Law",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Astra",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -360386,16 +361065,12 @@
         {
           "name": "Astra for Law",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Astra",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -361551,9 +362226,7 @@
         {
           "name": "EOS R8 Mark II",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -361706,23 +362379,17 @@
         {
           "name": "TypeSafe AI",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Diogo Almeida",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Jev",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -363382,14 +364049,14 @@
           "name": "GPT-Live-1",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Google"
           ]
         },
         {
           "name": "Gemini 3.8 Live",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Google"
           ]
         }
       ],
@@ -366362,16 +367029,12 @@
         {
           "name": "GPT-6 Astra",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Altmans Critical Warning",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -367165,16 +367828,12 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ChatGPT for Financial",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -367798,16 +368457,12 @@
         {
           "name": "Agents API",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -368457,9 +369112,7 @@
         {
           "name": "Agents API",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -368617,16 +369270,12 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ChatGPT for Financial",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -368712,9 +369361,7 @@
         {
           "name": "Agents API",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -369195,9 +369842,7 @@
         {
           "name": "GPT-Live-1",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -369377,23 +370022,17 @@
         {
           "name": "GPT-Live-1",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-Live-1 API",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-Live-1 as a developer API.",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -369497,9 +370136,7 @@
         {
           "name": "ChatGPT Images 2.5",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -370651,16 +371288,12 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Pro",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -371453,16 +372086,12 @@
         {
           "name": "ChatGPT Images 2.5",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Sketch",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -372466,9 +373095,7 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -374413,7 +375040,7 @@
           "name": "Astra",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "NVIDIA"
           ]
         }
       ],
@@ -375531,9 +376158,7 @@
         {
           "name": "GPT-6 Astra",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -376393,9 +377018,7 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -376751,16 +377374,12 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ChatGPT Work",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -377018,9 +377637,7 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -377970,7 +378587,7 @@
           "name": "GPT-6 Astra",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "OpenRouter"
           ]
         }
       ],
@@ -378257,7 +378874,7 @@
           "name": "GPT-6 Astra",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -378727,9 +379344,7 @@
         {
           "name": "GPT-6 Astra",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -378857,23 +379472,17 @@
         {
           "name": "CyberAgents Exchange AI Inspector",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI Inspector",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI Agents News",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -379292,16 +379901,12 @@
         {
           "name": "Daybreak for Frontline Defenders",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Daybreak",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -379671,9 +380276,7 @@
         {
           "name": "Astra",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -381058,7 +381661,7 @@
           "name": "TechRadar",
           "type": "AI 硬件",
           "ownerNames": [
-            "OpenAI"
+            "NVIDIA"
           ]
         }
       ],
@@ -381236,7 +381839,7 @@
           "name": "GPT-6 Astra",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Amazon"
           ]
         }
       ],
@@ -381935,21 +382538,21 @@
           "name": "ChatGPT",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "xAI"
           ]
         },
         {
           "name": "GenAI.mil",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "xAI"
           ]
         },
         {
           "name": "ChatGPT and Grok",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "xAI"
           ]
         }
       ],
@@ -386149,9 +386752,7 @@
         {
           "name": "GPT-6",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -387814,9 +388415,7 @@
         {
           "name": "Always-on",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -392880,9 +393479,7 @@
         {
           "name": "ChatGPT Work",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -393237,9 +393834,7 @@
         {
           "name": "ChatGPT Plus",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -393717,7 +394312,7 @@
           "name": "Jalape",
           "type": "AI 硬件",
           "ownerNames": [
-            "OpenAI"
+            "NVIDIA"
           ]
         }
       ],
@@ -393812,7 +394407,7 @@
           "name": "GPT-3",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "智谱AI"
           ]
         }
       ],
@@ -396494,9 +397089,7 @@
         {
           "name": "Python",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -396640,9 +397233,7 @@
         {
           "name": "Python",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -396948,9 +397539,7 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -397555,9 +398144,7 @@
         {
           "name": "Codex",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -398954,9 +399541,7 @@
         {
           "name": "Codex Harness",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -399201,7 +399786,7 @@
           "name": "ChatGPT",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Apple"
           ]
         }
       ],
@@ -400351,7 +400936,7 @@
           "name": "Agent OS",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -400438,9 +401023,7 @@
         {
           "name": "Private Safety Processing",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -402916,7 +403499,7 @@
           "name": "Private Safety Processing",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -403664,9 +404247,7 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -403752,9 +404333,7 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -404055,7 +404634,7 @@
           "name": "MatrAIx",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Google DeepMind"
           ]
         }
       ],
@@ -404263,14 +404842,14 @@
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "OpenRouter"
           ]
         },
         {
           "name": "GPT-5.6",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "OpenRouter"
           ]
         }
       ],
@@ -407158,16 +407737,12 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Ultrafast mode powered by Cerebras",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -407984,16 +408559,12 @@
         {
           "name": "GPT-5.6 Sol Ultrafast",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Ultrafast",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -409658,7 +410229,7 @@
           "name": "Ultrafast",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -412195,16 +412766,12 @@
         {
           "name": "ChatGPT Linux",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ChatGPT desktop",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -412865,16 +413432,12 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ChatGPT for Linux",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -414637,16 +415200,12 @@
         {
           "name": "ChatGPT Business",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Premium Seats for ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -415419,7 +415978,7 @@
           "name": "GPT-5.6-Cyber",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -415573,14 +416132,14 @@
           "name": "AI-led",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "As AI-led",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -416624,9 +417183,7 @@
         {
           "name": "GPT-5.6-Cyber",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -417089,9 +417646,7 @@
         {
           "name": "August 2026 Latest Updates",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -417756,14 +418311,14 @@
           "name": "Pokee-Isaac",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "SGLang"
           ]
         },
         {
           "name": "Pokee-Isaac 28",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "SGLang"
           ]
         }
       ],
@@ -420786,9 +421341,7 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -421005,16 +421558,12 @@
         {
           "name": "GPT-4.5",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Astra AI",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -421102,16 +421651,12 @@
         {
           "name": "GPT-5.6 Luna",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ChatGPT",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -428317,9 +428862,7 @@
         {
           "name": "July 2026 Latest Updates",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -428711,16 +429254,12 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ARC-AGI-3",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -429773,7 +430312,7 @@
           "name": "GPT-5.6",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Google"
           ]
         }
       ],
@@ -430650,16 +431189,12 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ChatGPT for Academic Researchers",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -431065,7 +431600,7 @@
           "name": "Codex Security CLI",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -431485,16 +432020,12 @@
         {
           "name": "GPT-Live-Transcribe",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-Transcribe",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -431780,9 +432311,7 @@
         {
           "name": "Modal Labs",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -431868,9 +432397,7 @@
         {
           "name": "Codex Security CLI",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -434721,7 +435248,7 @@
           "name": "Claude Opus 5",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "NVIDIA"
           ]
         }
       ],
@@ -436953,7 +437480,7 @@
           "name": "Presence",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Google"
           ]
         }
       ],
@@ -438471,9 +438998,7 @@
         {
           "name": "Presence",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -441798,7 +442323,7 @@
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -443888,16 +444413,12 @@
         {
           "name": "Hugging Face",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GLM-5.2",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -444830,7 +445351,7 @@
           "name": "Presence",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -445400,7 +445921,7 @@
           "name": "Gemini 3.6 Flash",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Google"
           ]
         }
       ],
@@ -446014,9 +446535,7 @@
         {
           "name": "GPT-6",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -446873,9 +447392,7 @@
         {
           "name": "Hugging Face",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -449948,9 +450465,7 @@
         {
           "name": "Hugging Face",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -452435,9 +452950,7 @@
         {
           "name": "Codex",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -455807,7 +456320,7 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
@@ -458166,9 +458679,7 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -458409,7 +458920,7 @@
           "name": "ChatGPT",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Apple"
           ]
         }
       ],
@@ -466374,9 +466885,7 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -467804,7 +468313,7 @@
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Amazon"
           ]
         }
       ],
@@ -470940,16 +471449,12 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Opus 4.8",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -471391,7 +471896,7 @@
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -473001,9 +473506,7 @@
         {
           "name": "GPT-5.6 Sol Ultra",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -473331,9 +473834,7 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -473655,9 +474156,7 @@
         {
           "name": "ChatGPT Work",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -474178,7 +474677,7 @@
           "name": "GPT-5.6",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Intel"
           ]
         }
       ],
@@ -474595,9 +475094,7 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -474721,9 +475218,7 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -475533,7 +476028,7 @@
           "name": "GPT-5.6",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "xAI"
           ]
         }
       ],
@@ -475758,9 +476253,7 @@
         {
           "name": "ChatGPT Work",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -476323,16 +476816,12 @@
         {
           "name": "ChatGPT Atlas",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -476673,9 +477162,7 @@
         {
           "name": "SWE-Bench Pro",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -477326,9 +477813,7 @@
         {
           "name": "Introducing GPT",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -478585,7 +479070,7 @@
           "name": "U.S",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -478904,16 +479389,12 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-5.6 Thursday",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -493420,14 +493901,14 @@
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Aina"
           ]
         },
         {
           "name": "Claude Mythos",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Aina"
           ]
         }
       ],
@@ -493514,9 +493995,7 @@
         {
           "name": "Quoting OpenAI",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -493746,23 +494225,17 @@
         {
           "name": "GPT-5.6",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "US AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-5.6 amid US AI regulatory drama",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -495484,16 +495957,12 @@
         {
           "name": "AI Workflow Automation",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Agent Builder",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -495732,7 +496201,7 @@
           "name": "DevDay 2025",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Canva"
           ]
         }
       ],
@@ -498701,7 +499170,7 @@
           "name": "Claude Mythos 5",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -500714,7 +501183,7 @@
           "name": "Baichuan-M4",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -503035,7 +503504,7 @@
           "name": "GPT-5.6",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -503535,9 +504004,7 @@
         {
           "name": "GPT-5.6",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -506345,9 +506812,7 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -507016,9 +507481,7 @@
         {
           "name": "AgentKit",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -507763,23 +508226,17 @@
         {
           "name": "ChatGPT",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-Bidi-1",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-Bidi-1 AI",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -517856,9 +518313,7 @@
         {
           "name": "Oasis 3",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -519049,9 +519504,7 @@
         {
           "name": "GPT-2",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -523278,7 +523731,7 @@
           "name": "Clive Chan",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -524022,16 +524475,12 @@
         {
           "name": "GPT-5 API",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-5",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -524609,9 +525058,7 @@
         {
           "name": "Lockdown Mode",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -527649,16 +528096,12 @@
         {
           "name": "Codex Sites",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Sites",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -528276,9 +528719,7 @@
         {
           "name": "Codex",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -528786,9 +529227,7 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -529340,7 +529779,7 @@
           "name": "Vera",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "NVIDIA"
           ]
         }
       ],
@@ -532109,7 +532548,7 @@
           "name": "Fara1.5",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Microsoft"
           ]
         }
       ],
@@ -532326,16 +532765,12 @@
         {
           "name": "Frontier",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Frontier on February 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -532444,9 +532879,7 @@
         {
           "name": "Frontier in bid",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -533702,23 +534135,17 @@
         {
           "name": "Becomes First Business",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Automation",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Native Integration for Coding",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -534785,14 +535212,14 @@
           "name": "Open Source Distribution",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "Distribution",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -536283,9 +536710,7 @@
         {
           "name": "Sam Altman 2022",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -536391,7 +536816,7 @@
     },
     {
       "id": "EV-3b5b6781c5cade6b",
-      "dataDate": "2026-10-17",
+      "dataDate": "2026-10-18",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "capital_investment",
@@ -536432,7 +536857,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-62641fb03eb23351",
+          "id": "CL-e4c58369802c44b1",
           "subject": "The Sovereign AI Fund",
           "object": "Augur",
           "quote": "The Sovereign AI Fund is investing in Augur"
@@ -536448,6 +536873,85 @@
       "sourceUrl": "https://tech.eu/2026/10/14/the-uk-governments-ps500m-vc-fund-backs-uk-security-startup-augur/",
       "publisher": "tech.eu",
       "sourceExcerpt": "The Sovereign AI Fund is investing in Augur"
+    },
+    {
+      "id": "EV-133d09b5672ccb3c",
+      "dataDate": "2026-10-18",
+      "date": "2026-10-13",
+      "updatedDate": "2026-10-13",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI资金强力助推半导体研究实验室",
+      "originalTitle": "AI Money Supercharges Semiconductor Research Labs",
+      "subject": "Applied Materials",
+      "action": "capital_investment",
+      "object": "EPIC research facility",
+      "metrics": [
+        "$10 billion",
+        "$4 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e1f279a6a033350e",
+        "EN-37b5fecebce720fd",
+        "EN-026836921a4d049c"
+      ],
+      "entityNames": [
+        "Applied Materials",
+        "Micron",
+        "SK Hynix"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-373b6cafc3063a14",
+          "subject": "Applied Materials",
+          "object": "EPIC research facility",
+          "quote": "On 12 October, Applied Materials unveiled a multibillion-dollar research facility in Sunnyvale, Calif., in the heart of Silicon Valley."
+        },
+        {
+          "id": "CL-df74b6338e527693",
+          "subject": "Micron",
+          "object": "Boise, Idaho, memory research lab",
+          "quote": "Memory chipmaker Micron disclosed that it would invest $10 billion over 10 years at its Boise, Idaho, memory research lab"
+        },
+        {
+          "id": "CL-c096e066141b7cd8",
+          "subject": "SK Hynix",
+          "object": "advanced packaging facility in West Lafayette, Ind.",
+          "quote": "SK Hynix said it will spend $4 billion on an advanced packaging facility in West Lafayette, Ind."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-84ffe3ab39af295e",
+          "publisher": "spectrum.ieee.org",
+          "url": "https://spectrum.ieee.org/semiconductor-research"
+        }
+      ],
+      "sourceUrl": "https://spectrum.ieee.org/semiconductor-research",
+      "publisher": "spectrum.ieee.org",
+      "sourceExcerpt": "On 12 October, Applied Materials unveiled a multibillion-dollar research facility in Sunnyvale, Calif., in the heart of Silicon Valley."
     },
     {
       "id": "EV-48cb223d8fa56442",
@@ -543899,9 +544403,7 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -548599,7 +549101,7 @@
           "name": "Navier-Stokes",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -548907,14 +549409,14 @@
           "name": "Navier-Stokes",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "GPT-6 Astra alongside 10",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -549862,9 +550364,7 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -556286,7 +556786,7 @@
           "name": "Jalape",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "NVIDIA"
           ]
         }
       ],
@@ -579349,9 +579849,7 @@
         {
           "name": "GeneBench-Pro",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -580572,16 +581070,12 @@
         {
           "name": "AA-Omniscience",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GPT-5.5",
           "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-17",
-    "currentDate": "2026-10-17",
-    "eventCount": 4167,
+    "latestDataDate": "2026-10-18",
+    "currentDate": "2026-10-18",
+    "eventCount": 4176,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-ebc48cb526ad4263",
       "EV-7b11bc49074dd56a",
       "EV-c9a11db49e1afbe5",
       "EV-7e46fa1f034a8ca8",
@@ -84,10 +85,11 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-02-02",
-    "lastSeen": "2026-10-06",
+    "lastSeen": "2026-10-18",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-ebc48cb526ad4263",
         "EV-cfe820a452effc2f",
         "EV-7b11bc49074dd56a",
         "EV-c9a11db49e1afbe5",
@@ -113,6 +115,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-ebc48cb526ad4263",
+        "dataDate": "2026-10-18",
+        "date": "2026-10-12",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "探针AI医疗周报：General Medicine融资1.2亿美元，AI走向医疗交付与生物制造【261012】",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-376e4e2531b38384"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-376e4e2531b38384",
+          "EN-dc379efdc8598236",
+          "EN-c215bee2c6320ad4"
+        ]
+      },
       {
         "id": "EV-cfe820a452effc2f",
         "dataDate": "2026-10-06",
