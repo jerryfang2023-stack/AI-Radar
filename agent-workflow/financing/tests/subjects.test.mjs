@@ -66,6 +66,7 @@ test('reviewed financing duplicates collapse subjects without dropping distinct 
   ['FI-14e0e8c9316c6d70','FI-ffc8edb1c916c028',2],
   ['FI-3bd982e429974930','FI-9fd39f44b35d940c',1],
   ['FI-b69210c5435600e7','FI-be6c288b08346194',1],
+  ['FI-8df649aa1ec82165','FI-a5caba06fd035d65',1],
  ];
  for(const [a,b,rounds]of groups){
   const input=source.filter(c=>[a,b].includes(c.funding_insight_id));assert.equal(input.length,2,a);
@@ -77,6 +78,11 @@ test('reviewed financing duplicates collapse subjects without dropping distinct 
    assert.equal(subject.financing.cumulative_amount.known_round_totals[0].value,700000000);
   }
   if(a==='FI-5b5e0489474500cb')assert.equal(subject.financing.round_code,'multi_round');
+  if(a==='FI-8df649aa1ec82165'){
+   assert.equal(subject.company.name,'荆华密算');
+   assert.equal(subject.company.full_name,'荆华密算（北京）科技有限公司');
+   assert.equal(out.company_aliases['EN-6ec81821068b9e26'],'EN-26ef5ed7622bea22');
+  }
   for(const c of input){assert.ok(subject.source_event_ids.includes(c.triggered_by_event_id));assert.equal(c.funding_insight_id===subject.funding_insight_id?subject.funding_insight_id:out.aliases[c.funding_insight_id],subject.funding_insight_id);}
   for(const c of input)for(const ref of c.research_sources||[])assert.ok(subject.research_sources.some(s=>s.source_id===ref.source_id));
  }
