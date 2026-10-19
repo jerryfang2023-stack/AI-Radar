@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-18",
-    "currentDate": "2026-10-18",
-    "eventCount": 4176,
+    "latestDataDate": "2026-10-19",
+    "currentDate": "2026-10-19",
+    "eventCount": 4184,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-16",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "first_external",
@@ -93,6 +93,11 @@
         "name": "Delos"
       },
       {
+        "entity_id": "EN-8314a4a5fe871369",
+        "canonical_entity_id": "",
+        "name": "Goodweek"
+      },
+      {
         "entity_id": "EN-c04bd5ebd10ab696",
         "canonical_entity_id": "EN-c04bd5ebd10ab696",
         "name": "Mistral AI"
@@ -104,6 +109,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a4f60435e5ae5151",
+        "funding_insight_id": "FI-45b4cdef46ead50c",
+        "event_ids": [
+          "EV-4348abc8b4ec6f78"
+        ],
+        "company_entity_id": "EN-8314a4a5fe871369",
+        "company_canonical_entity_id": "",
+        "company_name": "Goodweek",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "€10.69 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 10690000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1069 万欧元"
+        },
+        "announced_at": "2026-10-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "source_url": "https://www.eu-startups.com/2026/10/strasbourg-founded-goodweek-raises-e10-69-million-to-become-the-ai-manager-for-smbs/",
+            "source_title": "总部位于斯特拉斯堡的Goodweek融资1069万欧元，致力于成为中小企业的AI管理者",
+            "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+            "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+            "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+          }
+        ]
+      },
       {
         "activity_id": "IA-cbcf21c291ceeedd",
         "funding_insight_id": "FI-5991166da210e374",
@@ -309,6 +354,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7c72ba0a0a31cafe",
+        "source_url": "https://www.eu-startups.com/2026/10/strasbourg-founded-goodweek-raises-e10-69-million-to-become-the-ai-manager-for-smbs/",
+        "source_title": "总部位于斯特拉斯堡的Goodweek融资1069万欧元，致力于成为中小企业的AI管理者",
+        "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+        "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+        "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+      },
+      {
         "source_id": "FISRC-45fd6ee701d8b9ca",
         "source_url": "https://pulse2.com/wiremind-raises-e35-million-in-first-ever-funding-round-to-accelerate-international-expansion-and-ai-development",
         "source_title": "Wiremind 融资 3500 万欧元，以加速国际扩张和 AI 开发",
@@ -380,16 +433,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Goodweek · 种子轮 · 2026-10-16 · 本轮参投 · €10.69 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7c72ba0a0a31cafe"
+        },
+        {
           "description": "融资来源记录：Wiremind · 首次外部融资 · 2026-10-06 · 本轮参投 · €35 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-45fd6ee701d8b9ca"
         },
         {
           "description": "融资来源记录：Delos · A轮 · 2026-09-16 · 本轮参投 · €10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6d8407107e870ebc"
-        },
-        {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4d11ed62a144a3f4"
         }
       ],
       "contacts": [],
@@ -423,6 +476,14 @@
           "quote_hash": "8e08bd4f4323fa9864571a9fa1076c7c4d2b047e0335838f6488c066dc8f1904"
         },
         {
+          "source_id": "FISRC-7c72ba0a0a31cafe",
+          "source_url": "https://www.eu-startups.com/2026/10/strasbourg-founded-goodweek-raises-e10-69-million-to-become-the-ai-manager-for-smbs/",
+          "source_title": "总部位于斯特拉斯堡的Goodweek融资1069万欧元，致力于成为中小企业的AI管理者",
+          "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+          "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+          "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+        },
+        {
           "source_id": "FISRC-45fd6ee701d8b9ca",
           "source_url": "https://pulse2.com/wiremind-raises-e35-million-in-first-ever-funding-round-to-accelerate-international-expansion-and-ai-development",
           "source_title": "Wiremind 融资 3500 万欧元，以加速国际扩张和 AI 开发",
@@ -437,14 +498,6 @@
           "source_content_hash": "8ca0a2bad794b0b5",
           "quote": "La start-up Delos, qui développe des employés IA autonomes, annonce ce mercredi une levée de fonds de 10 millions d’euros en série A auprès de Bpifrance, C4 Ventures et Founders Future.",
           "quote_hash": "e84015f18d180201ae57e28b0feb9e210a437c8f6be07a8718d935ed4f319015"
-        },
-        {
-          "source_id": "FISRC-4d11ed62a144a3f4",
-          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-          "source_content_hash": "714c413ab36c1848",
-          "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
-          "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
         }
       ],
       "last_verified_at": "2026-10-02"

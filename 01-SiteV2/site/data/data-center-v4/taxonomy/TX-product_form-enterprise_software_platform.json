@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-18",
-    "currentDate": "2026-10-18",
-    "eventCount": 4176,
+    "latestDataDate": "2026-10-19",
+    "currentDate": "2026-10-19",
+    "eventCount": 4184,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -60,6 +60,7 @@
     "valueId": "enterprise_software_platform",
     "eventIds": [
       "EV-1043d78cc040ab30",
+      "EV-48d766e4f0dc51db",
       "EV-858cec7fa8f4c87b",
       "EV-5b59ff829e596b56",
       "EV-c35972d334bcee48",
@@ -280,6 +281,7 @@
     ],
     "entityIds": [
       "EN-295219ea74639f0b",
+      "EN-898a1b0594c8047b",
       "EN-ce084d4801691907",
       "EN-2cfcb7f8e397348b",
       "EN-07249e5c4d3d02e2",
@@ -475,7 +477,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2019-03-11",
-    "lastSeen": "2026-10-17"
+    "lastSeen": "2026-10-19"
   },
   "events": [
     {
@@ -857,6 +859,91 @@
       "products": [],
       "sourceUrl": "https://m.sohu.com/a/1088244835_122066679?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
       "publisher": "m.sohu.com"
+    },
+    {
+      "id": "EV-48d766e4f0dc51db",
+      "dataDate": "2026-10-19",
+      "date": "2026-10-15",
+      "updatedDate": "2026-10-15",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "维尔纽斯的Holo融资500万欧元，为小企业提供营销自动化服务",
+      "originalTitle": "Vilnius-based Holo raises €5 million to put marketing on autopilot for small businesses",
+      "subject": "Vilnius-based Holo",
+      "action": "raises",
+      "object": "€5 million to put marketing on autopilot for small businesses",
+      "metrics": [
+        "€5 million",
+        "€5.62 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-898a1b0594c8047b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-898a1b0594c8047b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-898a1b0594c8047b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-cbf6340cadd10a4a",
+        "EN-898a1b0594c8047b"
+      ],
+      "entityNames": [
+        "HomeLithuania-StartupsVilnius-based Holo",
+        "Vilnius-based Holo"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/vilnius-based-holo-raises-e5-million-to-put-marketing-on-autopilot-for-small-businesses/",
+      "publisher": "www.eu-startups.com"
     },
     {
       "id": "EV-858cec7fa8f4c87b",
@@ -60179,6 +60266,28 @@
       "lastSeen": "2026-10-17"
     },
     {
+      "id": "EN-898a1b0594c8047b",
+      "name": "Vilnius-based Holo",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-48d766e4f0dc51db",
+        "EV-e260188a14619627"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-enterprise_software_platform"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-19"
+    },
+    {
       "id": "EN-ce084d4801691907",
       "name": "Labelbox",
       "entityType": "organization_candidate",
@@ -61611,7 +61720,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-16"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-3b3ed571bbb19504",
@@ -62299,7 +62408,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-1b636bc7ad667158",
@@ -65636,7 +65745,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-c890cfa67d1da908",
@@ -66554,6 +66663,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-79fbe4ea3a11c695",
         "EV-1c79bd33ccfafec8",
         "EV-32a04f2071b7aa24",
         "EV-4495851ddb7439c8",
@@ -66904,6 +67014,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-d35419bc2f596bce",
         "EV-a74b50329a01cd04",
         "EV-67fd80c953bff90d",
         "EV-82cccfa64edb2c09",
@@ -67100,7 +67211,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-1da46c494dfdd8d3",

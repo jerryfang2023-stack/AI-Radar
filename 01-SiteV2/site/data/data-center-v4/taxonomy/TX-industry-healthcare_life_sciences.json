@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-18",
-    "currentDate": "2026-10-18",
-    "eventCount": 4176,
+    "latestDataDate": "2026-10-19",
+    "currentDate": "2026-10-19",
+    "eventCount": 4184,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,6 +61,7 @@
     "eventIds": [
       "EV-1043d78cc040ab30",
       "EV-65154e5eb49c218b",
+      "EV-960e6f1e98cbfa60",
       "EV-ebc48cb526ad4263",
       "EV-c96705c69e11c520",
       "EV-de8561e258a6f559",
@@ -191,6 +192,7 @@
       "EN-295219ea74639f0b",
       "EN-e5fefbfe478b5d1c",
       "EN-44ec15e31baddfe9",
+      "EN-230195e335c2d374",
       "EN-376e4e2531b38384",
       "EN-bc06be2cba2b2f2c",
       "EN-37799d436602eaf1",
@@ -316,7 +318,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-01-20",
-    "lastSeen": "2026-10-18"
+    "lastSeen": "2026-10-19"
   },
   "events": [
     {
@@ -701,16 +703,16 @@
     },
     {
       "id": "EV-65154e5eb49c218b",
-      "dataDate": "2026-10-16",
-      "date": "2026-10-15",
-      "updatedDate": "2026-10-15",
+      "dataDate": "2026-10-19",
+      "date": "2026-10-14",
+      "updatedDate": "2026-10-14",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "英伟达支持的AI制药公司Iambic在美国IPO融资1.5亿美元",
+      "title": "英伟达支持的AI制药企业Iambic通过美国IPO融资1.5亿美元",
       "originalTitle": "",
       "subject": "Iambic",
       "action": "融资",
@@ -723,6 +725,17 @@
       "locations": [
         "美国"
       ],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-79cb7cca952611bd"
+        ]
+      },
       "missingFields": [],
       "conflicts": [],
       "tags": [],
@@ -784,12 +797,96 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://es.tradingview.com/news/panews:ba18e8fe5acdf:0/",
+      "sourceUrl": "https://es.tradingview.com/news/gelonghui:fd4ddabafe3f9:0/",
       "publisher": "es.tradingview.com"
     },
     {
+      "id": "EV-960e6f1e98cbfa60",
+      "dataDate": "2026-10-19",
+      "date": "2026-10-13",
+      "updatedDate": "2026-10-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "AI制药赛道前9月融资157.65亿元；BMS玛伐凯泰拟纳入优先审评_腾讯新闻",
+      "originalTitle": "",
+      "subject": "AI制药赛道前9月",
+      "action": "融资",
+      "object": "157.65亿元；BMS玛伐凯泰拟纳入优先审评_腾讯新闻",
+      "metrics": [
+        "157.65亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-230195e335c2d374"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-230195e335c2d374"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-230195e335c2d374"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-230195e335c2d374",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "AI制药赛道前9月",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.qq.com/rain/a/20261013A04M2T00",
+      "publisher": "news.qq.com"
+    },
+    {
       "id": "EV-ebc48cb526ad4263",
-      "dataDate": "2026-10-18",
+      "dataDate": "2026-10-19",
       "date": "2026-10-12",
       "updatedDate": "2026-10-12",
       "eventType": "funding",
@@ -40272,8 +40369,29 @@
         "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-16"
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-19"
+    },
+    {
+      "id": "EN-230195e335c2d374",
+      "name": "AI制药赛道前9月",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-960e6f1e98cbfa60"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-healthcare_life_sciences"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-376e4e2531b38384",
@@ -40294,7 +40412,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-bc06be2cba2b2f2c",
@@ -40749,7 +40867,7 @@
         "EN-993599624a199fe0"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-ecf226574e481ea7",
@@ -40914,6 +41032,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-79fbe4ea3a11c695",
         "EV-1c79bd33ccfafec8",
         "EV-32a04f2071b7aa24",
         "EV-4495851ddb7439c8",
@@ -41264,6 +41383,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-d35419bc2f596bce",
         "EV-a74b50329a01cd04",
         "EV-67fd80c953bff90d",
         "EV-82cccfa64edb2c09",
@@ -41460,7 +41580,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-a560e8c7ca78f72c",
@@ -41891,7 +42011,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-16"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-6fae0bc5a895aab8",
@@ -44795,7 +44915,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -45437,7 +45557,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-a19ad969c84178e9",

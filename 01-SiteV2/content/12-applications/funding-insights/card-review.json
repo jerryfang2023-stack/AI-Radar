@@ -1058,6 +1058,25 @@
       "reviewed_by": "Codex responsible financing review",
       "reviewed_at": "2026-10-16"
     },
+    "EN-6272c1931f96e1a7": {
+      "application_ids": [
+        "EN-6272c1931f96e1a7",
+        "EN-26e35b6423a9c420"
+      ],
+      "display_name": "Solvera",
+      "source_url": "https://www.eu-startups.com/2026/10/oslo-based-ai-native-engineering-firm-solvera-raises-e5-62-million-pre-seed-after-july-2026-launch/",
+      "quote": "Solvera, an Oslo-based company building an AI-native engineering firm for the construction industry, today announced a €5.62 million ($6.3 million) pre-Seed round.",
+      "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+      "reviewed_by": "Codex responsible financing review",
+      "reviewed_at": "2026-10-19",
+      "identity_review": {
+        "source_url": "https://www.eu-startups.com/2026/10/oslo-based-ai-native-engineering-firm-solvera-raises-e5-62-million-pre-seed-after-july-2026-launch/",
+        "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+        "reason": "同为奥斯陆 Solvera，创始人 Arif Mirza、Pål Rasmussen、Thorvald Thorsnes，Seedcamp 领投，同日同轮；562万欧元与630万美元是原文明确列出的同轮金额表述。",
+        "reviewed_by": "Codex responsible financing review",
+        "reviewed_at": "2026-10-19"
+      }
+    },
     "EN-26ef5ed7622bea22": {
       "application_ids": [
         "EN-26ef5ed7622bea22",
@@ -1069,6 +1088,25 @@
       "source_id": "FISRC-3ff24c6b7a38b108",
       "reviewed_at": "2026-10-19",
       "reason": "原文明确法律主体与简称；两组研究对应同一公司，统一展示简称，保留法律全称。"
+    },
+    "EN-8314a4a5fe871369": {
+      "application_ids": [
+        "EN-8314a4a5fe871369",
+        "EN-1359e04074eccfef"
+      ],
+      "display_name": "Goodweek",
+      "source_url": "https://www.eu-startups.com/2026/10/strasbourg-founded-goodweek-raises-e10-69-million-to-become-the-ai-manager-for-smbs/",
+      "quote": "Goodweek, a Los Angeles-headquartered French startup positioning itself as a one-stop AI management platform for small and medium-sized businesses",
+      "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+      "reviewed_by": "Codex responsible financing review",
+      "reviewed_at": "2026-10-19",
+      "identity_review": {
+        "source_url": "https://www.eu-startups.com/2026/10/strasbourg-founded-goodweek-raises-e10-69-million-to-become-the-ai-manager-for-smbs/",
+        "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+        "reason": "原文首行导航HomeFrance-Startups与标题Strasbourg-founded Goodweek被抽取为两个organization_candidate名称，均指正文公司Goodweek，不是第三家公司。仅审核此融资应用的名称与候选对应关系，保留当前已研究的EN-8314a4a5fe871369应用主体；EN-1359e04074eccfef为同篇导航污染候选，不独立准入融资。未将canonical_entity_consistent改成true，不批准事实层实体合并。",
+        "reviewed_by": "Codex responsible financing review",
+        "reviewed_at": "2026-10-19"
+      }
     }
   },
   "duplicate_rounds": [
@@ -1290,6 +1328,21 @@
       "duplicate_event_ids": [
         "EV-93c28c0d26f7c393"
       ]
+    },
+    {
+      "canonical_id": "FI-e8917ea053bc2f16",
+      "duplicate_ids": [
+        "FI-e9444b6af8d7b14d"
+      ],
+      "canonical_event_id": "EV-3a09e2f76f792423",
+      "duplicate_event_ids": [
+        "EV-6f076ff496f7652e"
+      ],
+      "source_url": "https://www.eu-startups.com/2026/10/oslo-based-ai-native-engineering-firm-solvera-raises-e5-62-million-pre-seed-after-july-2026-launch/",
+      "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+      "reason": "责任审核：同为2026-10-15由Seedcamp领投的Solvera预种子轮；原文同时列示€5.62 million ($6.3 million)，投资方及三位创始人一致。保留既有已发布卡、630万美元金额和原融资日期，合并本次重复报道及证据，不新增主体或融资事件。",
+      "reviewed_by": "Codex responsible financing review",
+      "reviewed_at": "2026-10-19"
     },
     {
       "canonical_id": "FI-8df649aa1ec82165",

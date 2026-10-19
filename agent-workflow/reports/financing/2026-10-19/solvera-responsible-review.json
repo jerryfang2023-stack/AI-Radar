@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-19",
+  "reviewed_by": "Codex responsible financing review",
+  "accepted_run_reused": 39179581785,
+  "recollected": false,
+  "subject_and_round_decision": "reviewed same company and same financing round; preserve existing published card and USD amount",
+  "classification_review": {
+    "result": "already_correct",
+    "sector_id": "industry",
+    "subsector_id": "property",
+    "product_form_id": "ai-service",
+    "note": "Both public catalog entries already use AI-FUNDING-TAGS-1.0 industry/property/ai-service. Legacy factual archive labels do not control public financing filters."
+  },
+  "source_bindings": [
+    {
+      "source_id": "FISRC-1ee2a6c02fee9db7",
+      "source_url": "https://cphaihub.com/news/1671-oslobased-ainative-engineering-firm-solvera-raises-562-million",
+      "private_path": "funding-research/FISRC-1ee2a6c02fee9db7.json",
+      "legacy_content_hash": "bdd7353bae8fe8b8",
+      "body_sha256": "bdd7353bae8fe8b896809cfd7eb0e0edf130d59210ba12cfba4d93b94340c3fc",
+      "hash_basis": "SHA256 of exact UTF-8 body_clean, no normalization",
+      "original_cache_preserved": true
+    },
+    {
+      "source_id": "FISRC-342783e341e84ea5",
+      "source_url": "https://www.thesaasnews.com/news/solvera-raises-6-3m-pre-seed/",
+      "private_path": "funding-research/FISRC-342783e341e84ea5.json",
+      "legacy_content_hash": "8683c5c58c982aba",
+      "body_sha256": "8683c5c58c982aba2ca81ae484f26436340dea1fde5471217318c62219eae259",
+      "hash_basis": "SHA256 of exact UTF-8 body_clean, no normalization",
+      "original_cache_preserved": true
+    },
+    {
+      "source_id": "FISRC-ccd8e12baa5374e7",
+      "source_url": "https://dealroom.co/news/162810-oslos-solvera-raises-6-3m-to-become-an-ai-native-engineering-firm/",
+      "private_path": "funding-research/FISRC-ccd8e12baa5374e7.json",
+      "legacy_content_hash": "355c348d7b190131",
+      "body_sha256": "355c348d7b1901315bbb1b412fdb85443cf17ee12fbe471fd0c446b30188b87b",
+      "hash_basis": "SHA256 of exact UTF-8 body_clean, no normalization",
+      "original_cache_preserved": true
+    }
+  ],
+  "changed_sources": [
+    "01-SiteV2/content/12-applications/funding-insights/2026-10-16.json",
+    "01-SiteV2/content/12-applications/funding-insights/2026-10-19.json",
+    "agent-workflow/reports/financing/2026-10-19/research/EV-6f076ff496f7652e.json"
+  ],
+  "production_recovery": {
+    "stages": [
+      "projections",
+      "financing_tags",
+      "release_gate"
+    ],
+    "status": "passed",
+    "reused_research": true,
+    "recollected": false,
+    "finished_at": "2026-10-19T03:27:51.528Z",
+    "wrapper_note": "All production commands passed and receipt was saved; shell heredoc terminator was forwarded as trailing JS identifier afterwards. No production command failed; completion receipt and final regression report rechecked."
+  },
+  "publication_delta": {
+    "added_subjects": 1,
+    "added_events": 1,
+    "added_companies": [
+      "Goodweek"
+    ],
+    "removed_published_subjects": 0,
+    "final_subjects": 627,
+    "final_events": 670,
+    "solvera_subjects": 1,
+    "solvera_events": 1
+  },
+  "merged_main": "c7f97b9a30676485883a5e53f9550d36cfb6448d",
+  "merged_release_gates": "passed"
+}

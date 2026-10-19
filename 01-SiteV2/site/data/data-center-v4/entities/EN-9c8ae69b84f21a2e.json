@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-18",
-    "currentDate": "2026-10-18",
-    "eventCount": 4176,
+    "latestDataDate": "2026-10-19",
+    "currentDate": "2026-10-19",
+    "eventCount": 4184,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -66,6 +66,7 @@
     ],
     "eventIds": [
       "EV-6ca561d3a3b8cb93",
+      "EV-960e6f1e98cbfa60",
       "EV-bdf01e0aa51360b3",
       "EV-5d53cd5ef937f1ca",
       "EV-78ed82b05ec5fbf1",
@@ -164,7 +165,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-01-26",
-    "lastSeen": "2026-10-18",
+    "lastSeen": "2026-10-19",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -174,11 +175,12 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-960e6f1e98cbfa60",
+        "EV-5d53cd5ef937f1ca",
         "EV-bdf01e0aa51360b3",
         "EV-78ed82b05ec5fbf1",
         "EV-c7b060541ca00208",
         "EV-6ca561d3a3b8cb93",
-        "EV-5d53cd5ef937f1ca",
         "EV-c96705c69e11c520",
         "EV-622c77a021ef08de",
         "EV-03a5e703deae837f",
@@ -271,6 +273,52 @@
     },
     "timeline": [
       {
+        "id": "EV-960e6f1e98cbfa60",
+        "dataDate": "2026-10-19",
+        "date": "2026-10-13",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "AI制药赛道前9月融资157.65亿元；BMS玛伐凯泰拟纳入优先审评_腾讯新闻",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-230195e335c2d374"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-230195e335c2d374",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
+      {
+        "id": "EV-5d53cd5ef937f1ca",
+        "dataDate": "2026-10-19",
+        "date": "2026-10-12",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AI基础设施厂商无问芯穹又融资23亿元，此前传出要IPO_腾讯新闻",
+        "displayTags": [],
+        "entityIds": [
+          "EN-fd10a09c42287873",
+          "EN-0369c8fcda657a43",
+          "EN-9c8ae69b84f21a2e",
+          "EN-dd4299e49ec180a5"
+        ]
+      },
+      {
         "id": "EV-bdf01e0aa51360b3",
         "dataDate": "2026-10-18",
         "date": "2026-10-13",
@@ -348,24 +396,6 @@
           "EN-d7715b939efefc13",
           "EN-4fb73fd4a920dee7",
           "EN-9c8ae69b84f21a2e"
-        ]
-      },
-      {
-        "id": "EV-5d53cd5ef937f1ca",
-        "dataDate": "2026-10-16",
-        "date": "2026-10-12",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "AI基础设施厂商无问芯穹又融资23亿元，此前传出要IPO_腾讯新闻",
-        "displayTags": [],
-        "entityIds": [
-          "EN-fd10a09c42287873",
-          "EN-0369c8fcda657a43",
-          "EN-9c8ae69b84f21a2e",
-          "EN-dd4299e49ec180a5"
         ]
       },
       {
@@ -3329,7 +3359,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-be1a3c9420d88ea5",
@@ -5327,7 +5357,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "TX-use_case-content_creation",

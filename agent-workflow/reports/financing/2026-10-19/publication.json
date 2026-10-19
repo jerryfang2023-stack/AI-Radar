@@ -1,0 +1,50 @@
+{
+  "verification": {
+    "version": "FINANCING-VERIFICATION-1",
+    "status": "completed",
+    "counts": {
+      "total": 398,
+      "verified": 6,
+      "excluded": 81,
+      "reviewed": 0,
+      "pending": 311
+    },
+    "ledger": "verification.json",
+    "deferred_research": [
+      {
+        "event_id": "EV-ebc48cb526ad4263",
+        "reason": "research_sources_insufficient",
+        "input_hash": "e061cf48f5c7dc76be8c77671f782b4a203c58f1fff03cc8fd5c1a6ae53dc7de"
+      },
+      {
+        "event_id": "EV-2cd70795b6561438",
+        "reason": "research_sources_insufficient",
+        "input_hash": "b41fc519dd778da782f50643c988519764758b7bba718e5f37f67104fd9b2754"
+      }
+    ]
+  },
+  "version": "FINANCING-MONITOR-1",
+  "date": "2026-10-19",
+  "status": "ready_for_review",
+  "counts": {
+    "leads": 472,
+    "accepted_originals": 112,
+    "pending": 192,
+    "excluded": 168
+  },
+  "next": "merge_pages_portal_and_live_parity",
+  "generated_at": "2026-10-19T00:44:05.153Z",
+  "responsible_repair": {
+    "review_path": "agent-workflow/reports/financing/2026-10-19/solvera-responsible-review.json",
+    "accepted_run_reused": 39179581785,
+    "recollected": false,
+    "summary": "Solvera identity and same-round duplicate reviewed against captured originals; canonical card and date preserved. Three supplemental references now carry full SHA256, with legacy cache hash mappings in the review receipt. Actual public taxonomy was already industry/property/ai-service; canonical_entity_consistent is not asserted true by this application-level identity review.",
+    "followup_review_path": "agent-workflow/reports/financing/2026-10-19/review-followup.json",
+    "active_read_model_gate": {
+      "release_id": "66d0bd1ffe9d2db24ed980ac3790fcf4",
+      "subjects": 627,
+      "events": 670,
+      "path": "agent-workflow/reports/financing/2026-10-19/read-model-gate/current.json"
+    }
+  }
+}

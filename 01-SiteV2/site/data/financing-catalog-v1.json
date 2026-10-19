@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "AI-FUNDING-TAGS-1.0",
-    "latest_date": "2026-10-18",
-    "last_checked_date": "2026-10-18",
+    "latest_date": "2026-10-19",
+    "last_checked_date": "2026-10-19",
     "latest_financing_date": "2026-10-16",
-    "generated_at": "2026-10-18T00:41:21.037Z",
-    "card_count": 626,
-    "china_market_card_count": 141,
-    "duplicate_rounds_removed": 19,
+    "generated_at": "2026-10-19T00:41:47.818Z",
+    "card_count": 627,
+    "china_market_card_count": 142,
+    "duplicate_rounds_removed": 20,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-10-18T00:42:24.595Z"
+      "generated_at": "2026-10-19T00:42:27.209Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -35,7 +35,7 @@
         }
       ]
     },
-    "event_count": 669,
+    "event_count": 670,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
     "excluded_count": 78,
@@ -735,6 +735,930 @@
     ]
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-45b4cdef46ead50c",
+      "triggered_by_event_id": "EV-4348abc8b4ec6f78",
+      "as_of_date": "2026-10-19",
+      "company": {
+        "entity_id": "EN-8314a4a5fe871369",
+        "name": "Goodweek",
+        "full_name": "Goodweek",
+        "website": "",
+        "summary": "总部位于洛杉矶的法国初创公司，定位为面向中小企业的一站式AI管理平台，将多家主流AI模型整合到单一平台，并保持公司数据隔离。",
+        "headquarters": "洛杉矶",
+        "founders": [
+          {
+            "name": "Guillaume Nominé",
+            "role": "CEO兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "incubated at Station F in Paris by Guillaume Nominé and Stehle",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "d925f00a07cd84916848e027ff91c7a770a7399d95f61dc19249d6aa8a01b015"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nicolas Stehle",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "incubated at Station F in Paris by Guillaume Nominé and Stehle",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "d925f00a07cd84916848e027ff91c7a770a7399d95f61dc19249d6aa8a01b015"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "50",
+          "observed_at": "2026-10-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "the company has grown to 50 employees across three countries",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "a71f00cd3e0613b2e90f0db83f06b2d94e79105ee72b3c0d034065b7de304c51"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "quote": "Goodweek, a Los Angeles-headquartered French startup positioning itself as a one-stop AI management platform for small and medium-sized businesses",
+            "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+            "quote_hash": "72bf43e9ac1c4efb6afc6c14e5cb8d1538cc6ca96bc9309b81674c993b146103"
+          },
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "quote": "Founded in Strasbourg and incubated at Station F in Paris",
+            "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+            "quote_hash": "1fc562cafdfb1dbb007b9ac8d3377bea3dda0abdd4a2e3120090e468801ccc82"
+          }
+        ],
+        "application_entity_id": "EN-8314a4a5fe871369",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "€10.69 million",
+        "total_raised": "",
+        "announced_at": "2026-10-16",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Adara Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The funding round was led by Spanish venture capital firm Adara Ventures",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "0fc2a0eadbf8fb4d86b80fc7cdfbd4f66db5236d8de751822586a7afd43407eb"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b05841937c64d4"
+          },
+          {
+            "name": "Anamcara Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b1bdbf97f09f5f"
+          },
+          {
+            "name": "BGV",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-449e1722992fee"
+          },
+          {
+            "name": "BY Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-3fc8077637ea15"
+          },
+          {
+            "name": "CentraleSupélec Venture",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-dcc2b36e390a47"
+          },
+          {
+            "name": "FJ Labs",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a49dd885e94cf5"
+          },
+          {
+            "name": "Interlace Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1a7feae41381cd"
+          },
+          {
+            "name": "True Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6cde7dbe685bf3"
+          },
+          {
+            "name": "Bpifrance",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2ba33b323b57a5"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "quote": "HomeFrance-StartupsStrasbourg-founded Goodweek raises €10.69 million to become the AI Manager for SMBs",
+            "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+            "quote_hash": "d31820068f6b6b875058d38581067bf65af344eea29c2c2df29461117fb01d0f"
+          },
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "quote": "has raised a €10.69 million ($12 million) Seed round",
+            "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+            "quote_hash": "c36cf94bf0e3f182b4a9eda8aae40587b85aeb7ab8ae2653c2a366efa2eea581"
+          },
+          {
+            "source_id": "FISRC-24783f6b585ad8f9",
+            "quote": "Goodweek: Strasbourg-founded Goodweek Raises €10.69 Million to Become the AI Manager for SMBs.",
+            "source_content_hash": "122b63ec84667e4a",
+            "quote_hash": "6bf73c15cefa60d4ef92bcad4e8378606e23efc6b98c63390e2b23bb39115864"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "€10.69 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 10690000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1069 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-4348abc8b4ec6f78",
+            "round_original": "Seed",
+            "amount": "€10.69 million",
+            "announced_at": "2026-10-16",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "HomeFrance-StartupsStrasbourg-founded Goodweek raises €10.69 million to become the AI Manager for SMBs",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "d31820068f6b6b875058d38581067bf65af344eea29c2c2df29461117fb01d0f"
+              },
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "has raised a €10.69 million ($12 million) Seed round",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "c36cf94bf0e3f182b4a9eda8aae40587b85aeb7ab8ae2653c2a366efa2eea581"
+              },
+              {
+                "source_id": "FISRC-24783f6b585ad8f9",
+                "quote": "Goodweek: Strasbourg-founded Goodweek Raises €10.69 Million to Become the AI Manager for SMBs.",
+                "source_content_hash": "122b63ec84667e4a",
+                "quote_hash": "6bf73c15cefa60d4ef92bcad4e8378606e23efc6b98c63390e2b23bb39115864"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "EUR",
+              "value": 10690000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "1069 万欧元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "Goodweek AI管理平台",
+          "description": "面向中小企业的单一统一平台，整合Anthropic Claude、OpenAI ChatGPT、Google Gemini和Mistral等主流AI模型，保持公司数据隔离且不用于训练第三方模型，并为管理层提供谁在使用哪些AI工具及成本的可见性。",
+          "target_customers": "中小企业及其员工与业务负责人",
+          "features": [
+            "整合多家主流AI模型",
+            "公司数据隔离，不用于训练第三方模型",
+            "AI工具使用与成本可见性"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "Goodweek solves this problem with a single unified platform bringing together leading AI models, including Anthropic’s Claude, OpenAI’s ChatGPT, Google Gemini, and Mistral, while keeping company data isolated and never using it to train third-party models.",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "b63f65f0f7541abe4b7a9a91bbc9e7c7db78c5d9630eb37a44273704759ae5e7"
+            },
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "The company says its platform gives business leaders visibility into who is using which AI tools and at what cost",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "f6fc200753b1a48dcd20a275d13d3ab115d8de59618fc5fba7b2c73dd6caaaa9"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "近150家客户（法国、西班牙、英国、比荷卢和北美）",
+          "industry": "",
+          "use_case": "中小企业员工使用统一AI平台并管控AI工具使用与成本",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "counts nearly 150 customers in France, Spain, the United Kingdom, the Benelux, and North America",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "f7e4974512ef6d03c3460ed7a882bedca6d5319473cfb4d8c5049ccfc55dd3f3"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "€10.69 million ($12 million)",
+          "observed_at": "2026-10-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "has raised a €10.69 million ($12 million) Seed round",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "c36cf94bf0e3f182b4a9eda8aae40587b85aeb7ab8ae2653c2a366efa2eea581"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "50",
+          "observed_at": "2026-10-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "the company has grown to 50 employees across three countries",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "a71f00cd3e0613b2e90f0db83f06b2d94e79105ee72b3c0d034065b7de304c51"
+            }
+          ]
+        },
+        {
+          "label": "客户数量",
+          "value": "nearly 150",
+          "observed_at": "2026-10-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "counts nearly 150 customers in France, Spain, the United Kingdom, the Benelux, and North America",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "f7e4974512ef6d03c3460ed7a882bedca6d5319473cfb4d8c5049ccfc55dd3f3"
+            }
+          ]
+        },
+        {
+          "label": "成立时长",
+          "value": "just days after the company turned one",
+          "observed_at": "2026-10-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "The funding comes just days after the company turned one.",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "1f033adfa6facf41079c2debdc48f6e3ae7270a28e0f569c26a487d9bac34891"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Nico Goulet",
+          "quote": "For us, this investment is also a reunion. We backed Nicolas at Scalefast and have seen first-hand how he executes. Backing a founder a second time is one of the clearest signals of conviction an investor can give, and it is not one we give lightly",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "“For us, this investment is also a reunion. We backed Nicolas at Scalefast and have seen first-hand how he executes. Backing a founder a second time is one of the clearest signals of conviction an investor can give, and it is not one we give lightly,” said Nico Goulet, Founding Partner, Adara Ventures.",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "b3957b44a70c50bef8a94c771879a068293849960a4213afec01a6bd746e4420"
+            }
+          ]
+        },
+        {
+          "speaker": "Guillaume Nominé",
+          "quote": "We want everyone to have a good week at work, powered by AI that’s more accessible, more secure, and genuinely useful day to day. Because AI should be an ally for every employee — not a risk for the company",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "“We want everyone to have a good week at work, powered by AI that’s more accessible, more secure, and genuinely useful day to day. Because AI should be an ally for every employee — not a risk for the company,” said Nominé, CEO and co-founder of Goodweek.",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "26c4ff739f4a9121a2ac221b6f61eb540cd411f4cf9dbdd612b29f9d1d66cf8d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Adara Ventures",
+            "speaker": "Nico Goulet",
+            "speaker_role": "Founding Partner, Adara Ventures",
+            "rationale": "Adara Ventures此前投资过联合创始人Nicolas Stehle的前一家公司Scalefast，基于对其执行力的直接观察，第二次押注同一创始人。",
+            "quote": "For us, this investment is also a reunion. We backed Nicolas at Scalefast and have seen first-hand how he executes. Backing a founder a second time is one of the clearest signals of conviction an investor can give, and it is not one we give lightly",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "“For us, this investment is also a reunion. We backed Nicolas at Scalefast and have seen first-hand how he executes. Backing a founder a second time is one of the clearest signals of conviction an investor can give, and it is not one we give lightly,” said Nico Goulet, Founding Partner, Adara Ventures.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b3957b44a70c50bef8a94c771879a068293849960a4213afec01a6bd746e4420"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：中小企业员工自发使用AI带来的数据外泄、重复订阅与成本失控问题，能否被一个统一的多模型管理平台承接，并转化为可规模化的销售。已验证信号包括：成立约一年即拥有50名员工、覆盖三个国家、近150家客户，以及本轮由Adara Ventures领投、多家机构参投的1069万欧元种子轮。证据边界在于：来源未披露收入、付费转化率、留存或客单价，也未披露本轮估值，因此无法判断增长质量与单位经济性。",
+        "validated_signals": [
+          "完成€10.69 million（$12 million）种子轮融资",
+          "成立约一年，员工50人，分布于三个国家",
+          "在法国、西班牙、英国、比荷卢和北美拥有近150家客户",
+          "平台整合Anthropic Claude、OpenAI ChatGPT、Google Gemini和Mistral"
+        ],
+        "risks": [
+          "来源未披露收入、付费转化、留存与客单价，客户数量不等于商业化质量",
+          "多模型聚合平台面临模型厂商原生企业管控功能与AI支出治理工具的竞争，来源未提供竞争对比数据",
+          "国际化扩张至拉美与亚洲的执行风险，来源仅说明资金用途，未给出落地验证",
+          "员工自带AI工具的使用行为可能随模型厂商企业版渗透而改变，平台价值假设仍待验证"
+        ],
+        "sector": "业务流程与企业智能体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：中小企业员工自发使用AI带来的数据外泄、重复订阅与成本失控问题，能否被一个统一的多模型管理平台承接，并转化为可规模化的销售。已验证信号包括：成立约一年即拥有50名员工、覆盖三个国家、近150家客户，以及本轮由Adara Ventures领投、多家机构参投的1069万欧元种子轮。证据边界在于：来源未披露收入、付费转化率、留存或客单价，也未披露本轮估值，因此无法判断增长质量与单位经济性。",
+          "evidence_signals": [
+            "完成€10.69 million（$12 million）种子轮融资",
+            "成立约一年，员工50人，分布于三个国家",
+            "在法国、西班牙、英国、比荷卢和北美拥有近150家客户",
+            "平台整合Anthropic Claude、OpenAI ChatGPT、Google Gemini和Mistral"
+          ],
+          "risks": [
+            "来源未披露收入、付费转化、留存与客单价，客户数量不等于商业化质量",
+            "多模型聚合平台面临模型厂商原生企业管控功能与AI支出治理工具的竞争，来源未提供竞争对比数据",
+            "国际化扩张至拉美与亚洲的执行风险，来源仅说明资金用途，未给出落地验证",
+            "员工自带AI工具的使用行为可能随模型厂商企业版渗透而改变，平台价值假设仍待验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Goodweek AI管理平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Guillaume Nominé",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Nicolas Stehle",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Adara Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Anamcara Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BGV",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BY Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "CentraleSupélec Venture",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "FJ Labs",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Interlace Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "True Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bpifrance",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "近150家客户（法国、西班牙、英国、比荷卢和北美）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-4348abc8b4ec6f78",
+          "date": "2026-10-16",
+          "title": "总部位于斯特拉斯堡的Goodweek融资1069万欧元，致力于成为中小企业的AI管理者",
+          "amount": "€10.69 million",
+          "source_refs": [
+            "SA-98c607f2737c680c"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-7c72ba0a0a31cafe",
+          "source_url": "https://www.eu-startups.com/2026/10/strasbourg-founded-goodweek-raises-e10-69-million-to-become-the-ai-manager-for-smbs/",
+          "title": "总部位于斯特拉斯堡的Goodweek融资1069万欧元，致力于成为中小企业的AI管理者",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-19T00:18:03.963Z",
+          "content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+          "source_artifact_id": "SA-98c607f2737c680c",
+          "raw_id": "RAW-fa810e372d5fa496"
+        },
+        {
+          "source_id": "FISRC-24783f6b585ad8f9",
+          "source_url": "https://in.linkedin.com/company/menlo-times",
+          "title": "Menlo Times | LinkedIn",
+          "publisher": "in.linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-19T00:41:27.966Z",
+          "content_hash": "122b63ec84667e4a",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-19T00:41:37.828Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-19T00:41:37.828Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Goodweek AI管理平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Guillaume Nominé",
+            "Nicolas Stehle"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-4348abc8b4ec6f78"
+      ],
+      "aggregation": {
+        "key": "EN-8314a4a5fe871369|seed|EUR:exact:10690000:::|2026-10-16",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-8314a4a5fe871369",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-45b4cdef46ead50c",
+          "event_ids": [
+            "EV-4348abc8b4ec6f78",
+            "EV-4348abc8b4ec6f78"
+          ],
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "Seed",
+          "amount_original": "€10.69 million",
+          "amount_normalized": {
+            "currency": "EUR",
+            "value": 10690000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1069 万欧元"
+          },
+          "announced_at": "2026-10-16",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "Adara Ventures",
+              "role": "本轮领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-7c72ba0a0a31cafe",
+                  "quote": "The funding round was led by Spanish venture capital firm Adara Ventures",
+                  "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                  "quote_hash": "0fc2a0eadbf8fb4d86b80fc7cdfbd4f66db5236d8de751822586a7afd43407eb"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-b05841937c64d4"
+            },
+            {
+              "name": "Anamcara Capital",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-7c72ba0a0a31cafe",
+                  "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                  "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                  "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-b1bdbf97f09f5f"
+            },
+            {
+              "name": "BGV",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-7c72ba0a0a31cafe",
+                  "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                  "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                  "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-449e1722992fee"
+            },
+            {
+              "name": "BY Venture Partners",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-7c72ba0a0a31cafe",
+                  "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                  "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                  "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-3fc8077637ea15"
+            },
+            {
+              "name": "CentraleSupélec Venture",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-7c72ba0a0a31cafe",
+                  "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                  "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                  "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-dcc2b36e390a47"
+            },
+            {
+              "name": "FJ Labs",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-7c72ba0a0a31cafe",
+                  "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                  "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                  "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-a49dd885e94cf5"
+            },
+            {
+              "name": "Interlace Ventures",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-7c72ba0a0a31cafe",
+                  "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                  "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                  "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-1a7feae41381cd"
+            },
+            {
+              "name": "True Ventures",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-7c72ba0a0a31cafe",
+                  "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                  "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                  "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-6cde7dbe685bf3"
+            },
+            {
+              "name": "Bpifrance",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-7c72ba0a0a31cafe",
+                  "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                  "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                  "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-2ba33b323b57a5"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "HomeFrance-StartupsStrasbourg-founded Goodweek raises €10.69 million to become the AI Manager for SMBs",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "d31820068f6b6b875058d38581067bf65af344eea29c2c2df29461117fb01d0f"
+            },
+            {
+              "source_id": "FISRC-7c72ba0a0a31cafe",
+              "quote": "has raised a €10.69 million ($12 million) Seed round",
+              "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+              "quote_hash": "c36cf94bf0e3f182b4a9eda8aae40587b85aeb7ab8ae2653c2a366efa2eea581"
+            },
+            {
+              "source_id": "FISRC-24783f6b585ad8f9",
+              "quote": "Goodweek: Strasbourg-founded Goodweek Raises €10.69 Million to Become the AI Manager for SMBs.",
+              "source_content_hash": "122b63ec84667e4a",
+              "quote_hash": "6bf73c15cefa60d4ef92bcad4e8378606e23efc6b98c63390e2b23bb39115864"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "enterprise",
+        "name": "企业通用 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "operations",
+        "name": "业务流程与企业智能体",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-4348abc8b4ec6f78"
+      },
+      "translations": {
+        "zh-CN": {
+          "company.headquarters": {
+            "text": "洛杉矶",
+            "source_hash": "8b6e04947230473368190a71c95399a7e9a0c12faa28b04a2dd5a1cc4350a9a9",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-10-19T00:42:27.209Z",
+            "status": "translated"
+          },
+          "company.founders[0].role": {
+            "text": "CEO兼联合创始人",
+            "source_hash": "643450adfb2f70504069225a5f37f34f82d5c523becfb2062bf4d3ad0b5b91ff",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:24.870Z",
+            "status": "translated"
+          },
+          "company.founders[1].role": {
+            "text": "联合创始人",
+            "source_hash": "b7b853598fcc9595a977e24b8fa123e164d52f46634307c6fe6fc7b88193d379",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:27.419Z",
+            "status": "translated"
+          }
+        }
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "enterprise",
+          "name": "企业通用 AI"
+        },
+        "subsector": {
+          "id": "operations",
+          "name": "业务流程与企业智能体"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "quote": "Goodweek, a Los Angeles-headquartered French startup positioning itself as a one-stop AI management platform for small and medium-sized businesses"
+          },
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "quote": "Goodweek solves this problem with a single unified platform bringing together leading AI models, including Anthropic’s Claude, OpenAI’s ChatGPT, Google Gemini, and Mistral, while keeping company data isolated and never using it to train third-party models."
+          },
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "quote": "The company says its platform gives business leaders visibility into who is using which AI tools and at what cost"
+          }
+        ],
+        "rationale": "Goodweek为企业提供统一AI管理平台，聚合多模型并管控使用与成本，属企业通用AI业务流程。"
+      },
+      "source_card_ids": [
+        "FI-45b4cdef46ead50c"
+      ]
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-5138928a5c38a2d0",
@@ -2349,14 +3273,14 @@
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-72590b8edc4fc559",
-      "triggered_by_event_id": "EV-e260188a14619627",
-      "as_of_date": "2026-10-16",
+      "triggered_by_event_id": "EV-48d766e4f0dc51db",
+      "as_of_date": "2026-10-19",
       "company": {
         "entity_id": "EN-898a1b0594c8047b",
         "name": "Holo",
         "full_name": "Holo",
         "website": "",
-        "summary": "Holo是一家位于维尔纽斯的AI营销平台，为小企业规划并执行营销，涵盖广告、社交媒体、邮件和SEO内容。",
+        "summary": "总部位于维尔纽斯的AI营销平台，为小企业规划并执行营销工作，从选择渠道到生成广告、社交媒体帖子、邮件和SEO内容。",
         "headquarters": "Vilnius, Lithuania",
         "founders": [
           {
@@ -2364,10 +3288,10 @@
             "role": "联合创始人，负责产品",
             "evidence_refs": [
               {
-                "source_id": "FISRC-1e7e3d8e53cc437b",
-                "quote": "Holo was founded in Vilnius by Deividas Kovger, who leads product, and Aleksandras Urbanavicius, who leads growth.",
-                "source_content_hash": "554c5b61db955f1c",
-                "quote_hash": "2599db279d58716bd9b8bcb662f714d5e682e0b3867319d4af107d57071fb672"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "Holo was founded in 2025 by Deividas Kovger, who leads product, and Aleksandras Urbanavicius, who leads growth.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "a0274c12710922ab01831c0883c09aa2b7d063f023d9c9c873b685216eba5b30"
               }
             ],
             "entity_id": null
@@ -2377,10 +3301,10 @@
             "role": "联合创始人，负责增长",
             "evidence_refs": [
               {
-                "source_id": "FISRC-1e7e3d8e53cc437b",
-                "quote": "Holo was founded in Vilnius by Deividas Kovger, who leads product, and Aleksandras Urbanavicius, who leads growth.",
-                "source_content_hash": "554c5b61db955f1c",
-                "quote_hash": "2599db279d58716bd9b8bcb662f714d5e682e0b3867319d4af107d57071fb672"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "Holo was founded in 2025 by Deividas Kovger, who leads product, and Aleksandras Urbanavicius, who leads growth.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "a0274c12710922ab01831c0883c09aa2b7d063f023d9c9c873b685216eba5b30"
               }
             ],
             "entity_id": null
@@ -2390,9 +3314,9 @@
             "role": "创始团队成员，负责设计",
             "evidence_refs": [
               {
-                "source_id": "FISRC-1e7e3d8e53cc437b",
+                "source_id": "FISRC-964061dbde0b373c",
                 "quote": "The founding team also includes Karolis Vaiginis, who leads design, and Arnas Puidokas, the CTO.",
-                "source_content_hash": "554c5b61db955f1c",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
                 "quote_hash": "3738b6c37c98453d00a8230aa689333f651e0e247d918a009d9988bd947aceb8"
               }
             ],
@@ -2400,12 +3324,12 @@
           },
           {
             "name": "Arnas Puidokas",
-            "role": "创始团队成员，CTO",
+            "role": "首席技术官",
             "evidence_refs": [
               {
-                "source_id": "FISRC-1e7e3d8e53cc437b",
+                "source_id": "FISRC-964061dbde0b373c",
                 "quote": "The founding team also includes Karolis Vaiginis, who leads design, and Arnas Puidokas, the CTO.",
-                "source_content_hash": "554c5b61db955f1c",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
                 "quote_hash": "3738b6c37c98453d00a8230aa689333f651e0e247d918a009d9988bd947aceb8"
               }
             ],
@@ -2419,16 +3343,16 @@
         },
         "evidence_refs": [
           {
-            "source_id": "FISRC-4e67a1c942c9027d",
-            "quote": "AI marketing platform Holo has raised €5 million in a seed funding round to further develop its marketing automation technology and reach more small businesses.",
-            "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-            "quote_hash": "e7f961d366c952ddea8636ad732fb7098f1e46d015f48c1fbd1f192488191b1f"
+            "source_id": "FISRC-964061dbde0b373c",
+            "quote": "Holo, a Vilnius-based AI platform that plans and runs marketing for small businesses",
+            "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+            "quote_hash": "3df32a3e2f30abb004d5ed422dbad90f38722c2336c0dfd9caa1c1c02fcfdb5d"
           },
           {
             "source_id": "FISRC-1e7e3d8e53cc437b",
-            "quote": "Holo, the AI platform that plans and runs marketing for small businesses, has raised €5 million in a seed round led by Market One Capital",
+            "quote": "Holo was founded in Vilnius by Deividas Kovger, who leads product, and Aleksandras Urbanavicius, who leads growth.",
             "source_content_hash": "554c5b61db955f1c",
-            "quote_hash": "be5e77dc849175bcb1fce5c7049f1664b22c8488b2ed28701cf0f6a50c6909cb"
+            "quote_hash": "2599db279d58716bd9b8bcb662f714d5e682e0b3867319d4af107d57071fb672"
           }
         ],
         "application_entity_id": "EN-898a1b0594c8047b",
@@ -2446,10 +3370,10 @@
             "role": "本轮领投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -2460,10 +3384,10 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -2474,10 +3398,10 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -2488,10 +3412,10 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -2502,10 +3426,10 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -2516,10 +3440,10 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -2529,26 +3453,26 @@
         "other_round_investors": [],
         "evidence_refs": [
           {
-            "source_id": "FISRC-4e67a1c942c9027d",
-            "quote": "AI marketing platform Holo has raised €5 million in a seed funding",
-            "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-            "quote_hash": "22e1941da08c4364e4bcda152e26bfadaf41fc754b733fc60f7128241cf5043b"
+            "source_id": "FISRC-964061dbde0b373c",
+            "quote": "HomeLithuania-StartupsVilnius-based Holo raises €5 million to put marketing on autopilot for small...",
+            "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+            "quote_hash": "0ba41b267a829ec807f2689b8d959f39a71df2ac9c78f79bf04e82fbcc3dc856"
+          },
+          {
+            "source_id": "FISRC-964061dbde0b373c",
+            "quote": "has raised €5 million in a Seed round",
+            "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+            "quote_hash": "cc301b0f01dbc659453dee4c10e27c092dd134e35a1c5e4a3a6c5570b97a2f6f"
           },
           {
             "source_id": "FISRC-4e67a1c942c9027d",
-            "quote": "AI marketing platform Holo has raised €5 million in a seed funding round to further develop its marketing automation technology and reach more small businesses.",
+            "quote": "Holo has raised €5 million in a seed funding round",
             "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-            "quote_hash": "e7f961d366c952ddea8636ad732fb7098f1e46d015f48c1fbd1f192488191b1f"
-          },
-          {
-            "source_id": "FISRC-112be79003c8459f",
-            "quote": "Vilnius-based Holo, which develops an AI-powered platform that plans and executes marketing for small businesses, has raised €5 million in a seed funding round led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels, as Vestbee was informed.",
-            "source_content_hash": "b06b466425628cce",
-            "quote_hash": "6765b9ce60511f0437e148b56b7b88d1eb3671098d62fa53b232e798ad85430c"
+            "quote_hash": "74eb3441d117493faa99281643cd2635da43c9a7fdbf3db6e3fda0614ddeb5a9"
           }
         ],
         "round_code": "seed",
-        "round_original": "种子轮",
+        "round_original": "Seed",
         "amount_original": "€5 million",
         "amount_normalized": {
           "currency": "EUR",
@@ -2571,6 +3495,32 @@
         },
         "risk_markers": [],
         "disclosures": [
+          {
+            "event_id": "EV-48d766e4f0dc51db",
+            "round_original": "Seed",
+            "amount": "€5 million",
+            "announced_at": "2026-10-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "HomeLithuania-StartupsVilnius-based Holo raises €5 million to put marketing on autopilot for small...",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "0ba41b267a829ec807f2689b8d959f39a71df2ac9c78f79bf04e82fbcc3dc856"
+              },
+              {
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "has raised €5 million in a Seed round",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "cc301b0f01dbc659453dee4c10e27c092dd134e35a1c5e4a3a6c5570b97a2f6f"
+              },
+              {
+                "source_id": "FISRC-4e67a1c942c9027d",
+                "quote": "Holo has raised €5 million in a seed funding round",
+                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
+                "quote_hash": "74eb3441d117493faa99281643cd2635da43c9a7fdbf3db6e3fda0614ddeb5a9"
+              }
+            ]
+          },
           {
             "event_id": "EV-e260188a14619627",
             "round_original": "种子轮",
@@ -2628,6 +3578,33 @@
       },
       "products": [
         {
+          "name": "Holo营销自动驾驶平台",
+          "description": "用户输入公司网站后，Holo学习企业销售内容与品牌风格，结合业主目标提出营销计划，并生成广告、社交媒体帖子、邮件和SEO内容，组织在日历中供审核、修改或批准发布；选定任务可切换为自动执行。",
+          "target_customers": "小企业主",
+          "features": [
+            "输入网站自动生成营销计划",
+            "以品牌自身语气生成广告、社交帖子、邮件和SEO内容",
+            "内容日历审核与批准",
+            "选定任务自动驾驶",
+            "跟踪结果并建议调整预算或内容形式"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "To get started, the business owner enters the company’s website. Holo learns what the business sells and how the brand looks and communicates, then uses that information, along with the owner’s goals, to suggest a marketing plan.",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "3adc19e7b80bd0883794e612b2eed88b2ba659b5cfc8c363288a04aceca1ebab"
+            },
+            {
+              "source_id": "FISRC-fd7c98a3f90f7292",
+              "quote": "The platform produces ads, social posts, emails, and SEO content, organising them in a content calendar for review and approval.",
+              "source_content_hash": "c5c4e9ef6673ae7d",
+              "quote_hash": "0771381e2432fa601577f28dee5011dd68b23861a7c6b31dd8b53e14da333394"
+            }
+          ],
+          "entity_id": null
+        },
+        {
           "name": "Holo AI营销平台",
           "description": "Holo是一个AI营销平台，为小企业规划并执行营销，涵盖广告、社交媒体、邮件和SEO内容。平台结合第三方AI模型与自有技术，包括品牌记忆、策略引擎和创意系统。",
           "target_customers": "小企业",
@@ -2671,8 +3648,104 @@
           "entity_id": null
         }
       ],
-      "comparisons": [],
+      "comparisons": [
+        {
+          "name": "Sintra",
+          "product": "面向小企业的AI助手，处理社交媒体、客户支持和行政工作",
+          "scenario": "小企业社交媒体、客户支持与行政事务",
+          "target_customer": "小企业",
+          "funding_summary": "2025年6月完成1700万美元种子轮",
+          "core_difference": "Sintra覆盖社交媒体、客户支持和行政工作，Holo聚焦营销计划、内容生成与投放自动化；来源称两者面向同类客户且同在维尔纽斯。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9f310bba67cced96",
+              "quote": "Sintra, another Vilnius startup and one Holo’s team has worked with, sells AI helpers that handle social media, customer support and admin work for small firms. It raised a $17M seed round in June 2025, when it said it had more than 40,000 paying customers.",
+              "source_content_hash": "f7ac8f2fb27f0474",
+              "quote_hash": "b2ad246f8c991e5345e72f81f534853378b34fcbb928faeeeb691cc30e3608cc"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
       "metrics": [
+        {
+          "label": "种子轮融资额",
+          "value": "€5 million",
+          "observed_at": "2026-10-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "has raised €5 million in a Seed round",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "cc301b0f01dbc659453dee4c10e27c092dd134e35a1c5e4a3a6c5570b97a2f6f"
+            }
+          ]
+        },
+        {
+          "label": "年化经常性收入",
+          "value": "$5 million",
+          "observed_at": "2026-10-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "reported reaching $5 million in annual recurring revenue within 252 days",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "5b898f7611d7124c161409597d31c65d33e5219a1ec7029320993b8fcd64e133"
+            }
+          ]
+        },
+        {
+          "label": "达到500万美元ARR所用天数",
+          "value": "252天",
+          "observed_at": "2026-10-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "reported reaching $5 million in annual recurring revenue within 252 days",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "5b898f7611d7124c161409597d31c65d33e5219a1ec7029320993b8fcd64e133"
+            }
+          ]
+        },
+        {
+          "label": "本轮前累计融资",
+          "value": "少于€1 million",
+          "observed_at": "2026-10-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "on less than €1 million raised before this round",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "3c282552fc4a35adffed1bfe09cf14903614cc1230dd2c412f1b8a3d9dc8c885"
+            }
+          ]
+        },
+        {
+          "label": "付费企业数量",
+          "value": "超过20,000家",
+          "observed_at": "2026-10-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "More than 20,000 businesses across over 100 countries now pay for it.",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "bb2033d65580656e77aac289278cfdb7bfc525d48b754b0de9f9a814459eb8da"
+            }
+          ]
+        },
+        {
+          "label": "覆盖国家数量",
+          "value": "超过100个",
+          "observed_at": "2026-10-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "More than 20,000 businesses across over 100 countries now pay for it.",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "bb2033d65580656e77aac289278cfdb7bfc525d48b754b0de9f9a814459eb8da"
+            }
+          ]
+        },
         {
           "label": "种子轮融资金额",
           "value": "€5 million",
@@ -2724,35 +3797,45 @@
               "quote_hash": "919b4e92d7600a958c3478fd34ede0ce3e196576038c6f9bd2886e0ea4ec32c3"
             }
           ]
-        },
-        {
-          "label": "付费企业数量",
-          "value": "超过20,000家",
-          "observed_at": "2026-10-15",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e7e3d8e53cc437b",
-              "quote": "More than 20,000 businesses across over 100 countries now pay for Holo.",
-              "source_content_hash": "554c5b61db955f1c",
-              "quote_hash": "4a9c32f3d3b22c7a0886a7f38978c08dd0c959189623c4023de4aed027575337"
-            }
-          ]
-        },
-        {
-          "label": "覆盖国家数量",
-          "value": "超过100个",
-          "observed_at": "2026-10-15",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e7e3d8e53cc437b",
-              "quote": "More than 20,000 businesses across over 100 countries now pay for Holo.",
-              "source_content_hash": "554c5b61db955f1c",
-              "quote_hash": "4a9c32f3d3b22c7a0886a7f38978c08dd0c959189623c4023de4aed027575337"
-            }
-          ]
         }
       ],
       "quotes": [
+        {
+          "speaker": "Michał Mroczkowski",
+          "quote": "Great products usually come from people who’ve lived through the problem themselves. Content is basically free to produce now, but knowing what actually converts takes context and hands-on experience. Holo’s founders have both, and it’s what sets them apart. We already see it in their early traction and are glad to back them",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "Great products usually come from people who’ve lived through the problem themselves. Content is basically free to produce now, but knowing what actually converts takes context and hands-on experience. Holo’s founders have both, and it’s what sets them apart. We already see it in their early traction and are glad to back them",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "ed5aae324e950cc67334874dc5805fbe5a3b9cdaa65eeaf1510f9701a4e845f2"
+            }
+          ]
+        },
+        {
+          "speaker": "Deividas Kovger",
+          "quote": "Every business on Holo teaches the platform something about what works, from which email subject lines get opened to which ad formats get the most reach. An owner gets a plan built around their business, and that plan keeps changing based on what actually happened. This round lets us push that further, so more of the work can run on autopilot and the owner only steps in when they want to",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "Every business on Holo teaches the platform something about what works, from which email subject lines get opened to which ad formats get the most reach. An owner gets a plan built around their business, and that plan keeps changing based on what actually happened. This round lets us push that further, so more of the work can run on autopilot and the owner only steps in when they want to",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "f67dc36f9daabc60dc00d42e74339f5dcb2821cc8fe242e04a6e4084f5c50075"
+            }
+          ]
+        },
+        {
+          "speaker": "Aleksandras Urbanavicius",
+          "quote": "Most small business owners we talk to are great at what they do, and almost none of them started a business to do marketing. We think that within a few years a small business will be able to market the way the biggest brands do, with a real plan, constant testing and a clear decision every week about what to do next, and the owner won’t have to think about it any more than they think about how their bank processes payments. More than 20,000 businesses already pay for Holo, which tells us owners are ready for that, and this round is about getting them there faster",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "Most small business owners we talk to are great at what they do, and almost none of them started a business to do marketing. We think that within a few years a small business will be able to market the way the biggest brands do, with a real plan, constant testing and a clear decision every week about what to do next, and the owner won’t have to think about it any more than they think about how their bank processes payments. More than 20,000 businesses already pay for Holo, which tells us owners are ready for that, and this round is about getting them there faster",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "e96caeff2c56de64c7a04ee11dd748bcbaf086d467e87ccb88d5759f7be6d788"
+            }
+          ]
+        },
         {
           "speaker": "Michał Mroczkowski",
           "quote": "Content is basically free to produce now, but knowing what actually converts takes context and hands-on experience. Holo's founders have both, and it's what sets them apart. We already see it in their early traction and are glad to back them.",
@@ -2764,42 +3847,42 @@
               "quote_hash": "018d1ea787ba6c5d0085274dc47bd3eae833c4e7c3203ea4b0d2bb55237bdc5a"
             }
           ]
-        },
-        {
-          "speaker": "Aleksandras Urbanavicius",
-          "quote": "Most small business owners we talk to are great at what they do, and almost none of them started a business to do marketing. We think that within a few years a small business will be able to market the way the biggest brands do, with a real plan, constant testing and a clear decision every week about what to do next, and the owner won't have to think about it any more than they think about how their bank processes payments. More than 20,000 businesses already pay for Holo, which tells us owners are ready for that, and this round is about getting them there faster.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e7e3d8e53cc437b",
-              "quote": "\"Most small business owners we talk to are great at what they do, and almost none of them started a business to do marketing. We think that within a few years a small business will be able to market the way the biggest brands do, with a real plan, constant testing and a clear decision every week about what to do next, and the owner won't have to think about it any more than they think about how their bank processes payments. More than 20,000 businesses already pay for Holo, which tells us owners are ready for that, and this round is about getting them there faster,\" says Aleksandras Urbanavicius, co-founder of Holo.",
-              "source_content_hash": "554c5b61db955f1c",
-              "quote_hash": "c060bfa321d2e3f1b0051f34a91dfb416bac792b169acb9439377d0ffe2d42a5"
-            }
-          ]
-        },
-        {
-          "speaker": "Deividas Kovger",
-          "quote": "Every business on Holo teaches the platform something about what works, from which email subject lines get opened to which ad formats get the most reach. An owner gets a plan built around their business, and that plan keeps changing based on what actually happened. This round lets us push that further, so more of the work can run on autopilot and the owner only steps in when they want to.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e7e3d8e53cc437b",
-              "quote": "\"Every business on Holo teaches the platform something about what works, from which email subject lines get opened to which ad formats get the most reach. An owner gets a plan built around their business, and that plan keeps changing based on what actually happened. This round lets us push that further, so more of the work can run on autopilot and the owner only steps in when they want to,\" says Deividas Kovger, co-founder of Holo.",
-              "source_content_hash": "554c5b61db955f1c",
-              "quote_hash": "d8048b7bf4854ab76238d08ab5139f9da3b267c8a3558093ebd87cff0214d55d"
-            }
-          ]
         }
       ],
       "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "本轮资本押注的核心变量是Holo能否将已验证的早期增长转化为可规模化的营销自动驾驶能力。已验证信号包括：在252天内达到$5M ARR，本轮前融资不足€1M，超过20,000家付费企业覆盖100多个国家。这些信号表明产品已获得初步市场验证，但资本判断的证据边界在于：ARR和付费企业数来自公司披露，未经独立审计；营销自动驾驶的自动化程度和留存率尚未披露；本轮资金将用于开发营销自动驾驶、触达更多小企业和扩充维尔纽斯团队，其执行效果有待观察。",
+        "investment_rationale": [
+          {
+            "institution": "Market One Capital",
+            "speaker": "Michał Mroczkowski",
+            "speaker_role": "合伙人",
+            "rationale": "认为Holo创始人亲身经历过营销问题，在内容生产成本趋近于零的环境下具备判断什么真正能转化的经验，并已从早期增长中看到验证。",
+            "quote": "Great products usually come from people who’ve lived through the problem themselves. Content is basically free to produce now, but knowing what actually converts takes context and hands-on experience. Holo’s founders have both, and it’s what sets them apart. We already see it in their early traction and are glad to back them",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "Great products usually come from people who’ve lived through the problem themselves. Content is basically free to produce now, but knowing what actually converts takes context and hands-on experience. Holo’s founders have both, and it’s what sets them apart. We already see it in their early traction and are glad to back them",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "ed5aae324e950cc67334874dc5805fbe5a3b9cdaa65eeaf1510f9701a4e845f2"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "本轮资本押注的核心变量是：Holo能否把面向小企业的营销计划、内容生成与投放自动化做成可规模化的“营销自动驾驶”，并延续其披露的快速增长。已验证信号包括：公司自报在252天内达到500万美元ARR、本轮前融资不足100万欧元、超过100个国家的20,000多家企业付费。证据边界在于：上述增长与客户数据均由公司自行披露，未经独立核验；有报道指出其官网显示的客户数（4,268）明显低于创始人口径，因此ARR与付费客户规模仍需后续验证。",
         "validated_signals": [
+          "公司自报在252天内达到500万美元年化经常性收入",
+          "本轮前累计融资少于100万欧元",
+          "公司自报超过100个国家的20,000多家企业付费",
+          "平台已上线网站输入、营销计划生成、内容日历审核与选定任务自动驾驶功能",
           "在252天内达到$5M ARR",
           "本轮前融资不足€1M",
           "超过20,000家付费企业覆盖100多个国家",
           "平台结合第三方AI模型与自有品牌记忆、策略引擎和创意系统"
         ],
         "risks": [
+          "ARR与20,000多家付费企业数据均为公司自报，未经独立核验；有报道指出其官网客户数显示为4,268，与创始人口径存在明显差距",
+          "营销内容由第三方AI模型生成，输出质量与合规性（如AI生成搜索内容的准确性）仍需持续验证",
+          "小企业营销自动化赛道已有同城竞品Sintra等，客户获取与留存面临竞争",
+          "本轮资金用于扩展自动驾驶能力，自动执行比例提升后内容失误与品牌风险可能上升",
           "ARR和付费企业数来自公司披露，未经独立审计",
           "营销自动驾驶的自动化程度和客户留存率尚未披露",
           "小企业营销市场竞争激烈，产品差异化需持续验证",
@@ -2807,23 +3890,38 @@
         ],
         "sector": "销售与营销",
         "investment_thesis": {
-          "statement": "本轮资本押注的核心变量是Holo能否将已验证的早期增长转化为可规模化的营销自动驾驶能力。已验证信号包括：在252天内达到$5M ARR，本轮前融资不足€1M，超过20,000家付费企业覆盖100多个国家。这些信号表明产品已获得初步市场验证，但资本判断的证据边界在于：ARR和付费企业数来自公司披露，未经独立审计；营销自动驾驶的自动化程度和留存率尚未披露；本轮资金将用于开发营销自动驾驶、触达更多小企业和扩充维尔纽斯团队，其执行效果有待观察。",
+          "statement": "本轮资本押注的核心变量是：Holo能否把面向小企业的营销计划、内容生成与投放自动化做成可规模化的“营销自动驾驶”，并延续其披露的快速增长。已验证信号包括：公司自报在252天内达到500万美元ARR、本轮前融资不足100万欧元、超过100个国家的20,000多家企业付费。证据边界在于：上述增长与客户数据均由公司自行披露，未经独立核验；有报道指出其官网显示的客户数（4,268）明显低于创始人口径，因此ARR与付费客户规模仍需后续验证。",
           "evidence_signals": [
+            "公司自报在252天内达到500万美元年化经常性收入",
+            "本轮前累计融资少于100万欧元",
+            "公司自报超过100个国家的20,000多家企业付费",
+            "平台已上线网站输入、营销计划生成、内容日历审核与选定任务自动驾驶功能",
             "在252天内达到$5M ARR",
             "本轮前融资不足€1M",
             "超过20,000家付费企业覆盖100多个国家",
             "平台结合第三方AI模型与自有品牌记忆、策略引擎和创意系统"
           ],
           "risks": [
+            "ARR与20,000多家付费企业数据均为公司自报，未经独立核验；有报道指出其官网客户数显示为4,268，与创始人口径存在明显差距",
+            "营销内容由第三方AI模型生成，输出质量与合规性（如AI生成搜索内容的准确性）仍需持续验证",
+            "小企业营销自动化赛道已有同城竞品Sintra等，客户获取与留存面临竞争",
+            "本轮资金用于扩展自动驾驶能力，自动执行比例提升后内容失误与品牌风险可能上升",
             "ARR和付费企业数来自公司披露，未经独立审计",
             "营销自动驾驶的自动化程度和客户留存率尚未披露",
             "小企业营销市场竞争激烈，产品差异化需持续验证",
             "本轮资金用于团队扩张和产品开发，执行效果有待观察"
           ],
-          "institutional_rationale_status": "not_disclosed"
+          "institutional_rationale_status": "disclosed"
         }
       },
       "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Holo营销自动驾驶平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
         {
           "relation_type": "product_of",
           "target_kind": "product",
@@ -2907,9 +4005,26 @@
           "research_name": "超过20,000家付费企业",
           "canonical_entity_id": null,
           "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Sintra",
+          "canonical_entity_id": null,
+          "canonical_name": ""
         }
       ],
       "funding_history": [
+        {
+          "event_id": "EV-48d766e4f0dc51db",
+          "date": "2026-10-15",
+          "title": "维尔纽斯的Holo融资500万欧元，为小企业提供营销自动化服务",
+          "amount": "€5 million",
+          "source_refs": [
+            "SA-faae19924127a4eb",
+            "SA-a27ff120a917b18b"
+          ]
+        },
         {
           "event_id": "EV-e260188a14619627",
           "date": "2026-10-15",
@@ -2922,26 +4037,38 @@
       ],
       "research_sources": [
         {
+          "source_id": "FISRC-964061dbde0b373c",
+          "source_url": "https://www.eu-startups.com/2026/10/vilnius-based-holo-raises-e5-million-to-put-marketing-on-autopilot-for-small-businesses/",
+          "title": "维尔纽斯的Holo融资500万欧元，为小企业提供营销自动化服务",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-19T00:18:03.183Z",
+          "content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+          "source_artifact_id": "SA-faae19924127a4eb",
+          "raw_id": "RAW-a921dae91b12a58c"
+        },
+        {
           "source_id": "FISRC-4e67a1c942c9027d",
           "source_url": "https://tech.eu/2026/10/15/vilnius-based-holo-raises-eur5m-to-bring-ai-powered-marketing-to-small-businesses/",
           "title": "维尔纽斯的Holo融资€5M，将AI驱动的营销带给小企业",
           "publisher": "tech.eu",
           "source_class": "canonical_event_source",
           "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-16T00:19:43.323Z",
+          "captured_at": "2026-10-19T00:18:43.971Z",
           "content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
           "source_artifact_id": "SA-a27ff120a917b18b",
-          "raw_id": "RAW-36195e53ef807950"
+          "raw_id": "RAW-75045ebd083562c3"
         },
         {
-          "source_id": "FISRC-112be79003c8459f",
-          "source_url": "https://www.vestbee.com/insights/articles/holo-raises-5-m",
-          "title": "Vilnius-based Holo raises €5M seed to automate marketing for small businesses",
-          "publisher": "vestbee.com",
+          "source_id": "FISRC-fd7c98a3f90f7292",
+          "source_url": "https://dealroom.co/news/162819-lithuanias-holo-raises-5m-seed-after-hitting-5m-arr-in-252-days/",
+          "title": "Lithuania's Holo raises €5M seed after hitting $5M ARR in 252 days",
+          "publisher": "dealroom.co",
           "source_class": "independent",
           "capture_method": "direct_fetch",
-          "captured_at": "2026-10-16T00:39:45.559Z",
-          "content_hash": "b06b466425628cce",
+          "captured_at": "2026-10-19T00:40:29.436Z",
+          "content_hash": "c5c4e9ef6673ae7d",
           "source_artifact_id": null,
           "raw_id": null
         },
@@ -2956,6 +4083,30 @@
           "content_hash": "554c5b61db955f1c",
           "source_artifact_id": null,
           "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9f310bba67cced96",
+          "source_url": "https://morningtick.com/post/holo-lands-eur5m-ai-runs-small-business-marketing/",
+          "title": "Holo Lands €5M For AI That Runs Small Business Marketing",
+          "publisher": "morningtick.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-19T00:40:43.906Z",
+          "content_hash": "f7ac8f2fb27f0474",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-112be79003c8459f",
+          "source_url": "https://www.vestbee.com/insights/articles/holo-raises-5-m",
+          "title": "Vilnius-based Holo raises €5M seed to automate marketing for small businesses",
+          "publisher": "vestbee.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-16T00:39:45.559Z",
+          "content_hash": "b06b466425628cce",
+          "source_artifact_id": null,
+          "raw_id": null
         }
       ],
       "model_provenance": {
@@ -2963,7 +4114,7 @@
         "model": "deepseek-flash",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-10-16T00:40:16.998Z"
+        "generated_at": "2026-10-19T00:40:55.172Z"
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2971,18 +4122,19 @@
         "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-10-16T00:40:16.998Z",
+      "published_at": "2026-10-19T00:40:55.172Z",
       "customer_research": {
         "status": "verified_customers_found",
         "verified_customer_count": 1,
-        "searched_source_count": 3
+        "searched_source_count": 6
       },
       "entity_link_coverage": {
         "products": {
           "linked": 0,
-          "total": 1,
+          "total": 2,
           "unresolved_names": [
-            "Holo AI营销平台"
+            "Holo AI营销平台",
+            "Holo营销自动驾驶平台"
           ]
         },
         "founders": {
@@ -2997,6 +4149,7 @@
         }
       },
       "source_event_ids": [
+        "EV-48d766e4f0dc51db",
         "EV-e260188a14619627"
       ],
       "aggregation": {
@@ -3010,12 +4163,13 @@
         {
           "funding_insight_id": "FI-72590b8edc4fc559",
           "event_ids": [
-            "EV-e260188a14619627",
+            "EV-48d766e4f0dc51db",
+            "EV-48d766e4f0dc51db",
             "EV-e260188a14619627"
           ],
           "round": "种子轮",
           "round_code": "seed",
-          "round_original": "种子轮",
+          "round_original": "Seed",
           "amount_original": "€5 million",
           "amount_normalized": {
             "currency": "EUR",
@@ -3037,10 +4191,10 @@
               "role": "本轮领投",
               "evidence_refs": [
                 {
-                  "source_id": "FISRC-4e67a1c942c9027d",
-                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                  "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                  "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                  "source_id": "FISRC-964061dbde0b373c",
+                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                  "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                  "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
                 }
               ],
               "entity_id": null,
@@ -3051,10 +4205,10 @@
               "role": "本轮参投",
               "evidence_refs": [
                 {
-                  "source_id": "FISRC-4e67a1c942c9027d",
-                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                  "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                  "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                  "source_id": "FISRC-964061dbde0b373c",
+                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                  "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                  "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
                 }
               ],
               "entity_id": null,
@@ -3065,10 +4219,10 @@
               "role": "本轮参投",
               "evidence_refs": [
                 {
-                  "source_id": "FISRC-4e67a1c942c9027d",
-                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                  "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                  "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                  "source_id": "FISRC-964061dbde0b373c",
+                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                  "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                  "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
                 }
               ],
               "entity_id": null,
@@ -3079,10 +4233,10 @@
               "role": "本轮参投",
               "evidence_refs": [
                 {
-                  "source_id": "FISRC-4e67a1c942c9027d",
-                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                  "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                  "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                  "source_id": "FISRC-964061dbde0b373c",
+                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                  "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                  "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
                 }
               ],
               "entity_id": null,
@@ -3093,10 +4247,10 @@
               "role": "本轮参投",
               "evidence_refs": [
                 {
-                  "source_id": "FISRC-4e67a1c942c9027d",
-                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                  "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                  "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                  "source_id": "FISRC-964061dbde0b373c",
+                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                  "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                  "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
                 }
               ],
               "entity_id": null,
@@ -3107,10 +4261,10 @@
               "role": "本轮参投",
               "evidence_refs": [
                 {
-                  "source_id": "FISRC-4e67a1c942c9027d",
-                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                  "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                  "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                  "source_id": "FISRC-964061dbde0b373c",
+                  "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                  "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                  "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
                 }
               ],
               "entity_id": null,
@@ -3119,22 +4273,22 @@
           ],
           "evidence_refs": [
             {
-              "source_id": "FISRC-4e67a1c942c9027d",
-              "quote": "AI marketing platform Holo has raised €5 million in a seed funding",
-              "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-              "quote_hash": "22e1941da08c4364e4bcda152e26bfadaf41fc754b733fc60f7128241cf5043b"
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "HomeLithuania-StartupsVilnius-based Holo raises €5 million to put marketing on autopilot for small...",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "0ba41b267a829ec807f2689b8d959f39a71df2ac9c78f79bf04e82fbcc3dc856"
+            },
+            {
+              "source_id": "FISRC-964061dbde0b373c",
+              "quote": "has raised €5 million in a Seed round",
+              "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+              "quote_hash": "cc301b0f01dbc659453dee4c10e27c092dd134e35a1c5e4a3a6c5570b97a2f6f"
             },
             {
               "source_id": "FISRC-4e67a1c942c9027d",
-              "quote": "AI marketing platform Holo has raised €5 million in a seed funding round to further develop its marketing automation technology and reach more small businesses.",
+              "quote": "Holo has raised €5 million in a seed funding round",
               "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-              "quote_hash": "e7f961d366c952ddea8636ad732fb7098f1e46d015f48c1fbd1f192488191b1f"
-            },
-            {
-              "source_id": "FISRC-112be79003c8459f",
-              "quote": "Vilnius-based Holo, which develops an AI-powered platform that plans and executes marketing for small businesses, has raised €5 million in a seed funding round led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels, as Vestbee was informed.",
-              "source_content_hash": "b06b466425628cce",
-              "quote_hash": "6765b9ce60511f0437e148b56b7b88d1eb3671098d62fa53b232e798ad85430c"
+              "quote_hash": "74eb3441d117493faa99281643cd2635da43c9a7fdbf3db6e3fda0614ddeb5a9"
             }
           ]
         }
@@ -3164,7 +4318,7 @@
       "links": {
         "company": "",
         "relation_map": "",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-e260188a14619627"
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-48d766e4f0dc51db"
       },
       "financing_tags": {
         "version": "AI-FUNDING-TAGS-1.0",
@@ -3190,19 +4344,19 @@
         ],
         "evidence_refs": [
           {
-            "source_id": "FISRC-4e67a1c942c9027d",
-            "quote": "AI marketing platform Holo has raised €5 million in a seed funding round to further develop its marketing automation technology and reach more small businesses."
+            "source_id": "FISRC-964061dbde0b373c",
+            "quote": "Holo, a Vilnius-based AI platform that plans and runs marketing for small businesses"
           },
           {
-            "source_id": "FISRC-1e7e3d8e53cc437b",
-            "quote": "Holo, the AI platform that plans and runs marketing for small businesses, has raised €5 million in a seed round led by Market One Capital"
+            "source_id": "FISRC-964061dbde0b373c",
+            "quote": "To get started, the business owner enters the company’s website. Holo learns what the business sells and how the brand looks and communicates, then uses that information, along with the owner’s goals, to suggest a marketing plan."
           },
           {
-            "source_id": "FISRC-1e7e3d8e53cc437b",
-            "quote": "Holo plans and runs marketing for small businesses, from choosing channels to creating ads, social media posts, emails and SEO content in each business’s own voice."
+            "source_id": "FISRC-fd7c98a3f90f7292",
+            "quote": "The platform produces ads, social posts, emails, and SEO content, organising them in a content calendar for review and approval."
           }
         ],
-        "rationale": "Holo 为小企业提供 AI 营销自动化平台，属企业通用 AI 的销售与营销应用。"
+        "rationale": "Holo为小企业自动规划并执行营销内容，属企业销售与营销AI。"
       },
       "source_card_ids": [
         "FI-72590b8edc4fc559"
@@ -3631,9 +4785,11 @@
         }
       ],
       "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
         "source_registry_ids": []
       },
       "product_form": null,
@@ -5765,7 +6921,7 @@
           {
             "source_id": "FISRC-342783e341e84ea5",
             "quote": "Solvera, an Oslo-based AI-native engineering firm for the construction industry, has raised $6.3 million in a pre-seed funding round.",
-            "source_content_hash": "8683c5c58c982aba",
+            "source_content_hash": "8683c5c58c982aba2ca81ae484f26436340dea1fde5471217318c62219eae259",
             "quote_hash": "565a87f357bef3ce8b36917fb8e0a3fa754d41c02d3c81905d335f8debb5939e"
           }
         ],
@@ -5909,8 +7065,26 @@
           {
             "source_id": "FISRC-342783e341e84ea5",
             "quote": "Solvera, an Oslo-based AI-native engineering firm for the construction industry, has raised $6.3 million in a pre-seed funding round.",
-            "source_content_hash": "8683c5c58c982aba",
+            "source_content_hash": "8683c5c58c982aba2ca81ae484f26436340dea1fde5471217318c62219eae259",
             "quote_hash": "565a87f357bef3ce8b36917fb8e0a3fa754d41c02d3c81905d335f8debb5939e"
+          },
+          {
+            "source_id": "FISRC-cb72aaeb2be8d4ae",
+            "quote": "HomeNorway-StartupsOslo-based AI-native engineering firm Solvera raises €5.62 million pre-Seed after July 2026...",
+            "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+            "quote_hash": "37eff19e9bf8acf6a3f9cc9e148166933d4e61ea8523678fa8089c549e0933fa"
+          },
+          {
+            "source_id": "FISRC-cb72aaeb2be8d4ae",
+            "quote": "today announced a €5.62 million ($6.3 million) pre-Seed round",
+            "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+            "quote_hash": "ce645754ae63042f80637b2d423ecc944cb92f903e34fec28cc0d8fa2123d3a9"
+          },
+          {
+            "source_id": "FISRC-1ee2a6c02fee9db7",
+            "quote": "has raised a €5.62 million ($6.3 million) pre-Seed round",
+            "source_content_hash": "bdd7353bae8fe8b896809cfd7eb0e0edf130d59210ba12cfba4d93b94340c3fc",
+            "quote_hash": "eb9c2b8cf03915a27095b5c376a3c7231353a527a7aed3ecbdf04a300785152b"
           }
         ],
         "round_code": "pre_seed",
@@ -5958,8 +7132,34 @@
               {
                 "source_id": "FISRC-342783e341e84ea5",
                 "quote": "Solvera, an Oslo-based AI-native engineering firm for the construction industry, has raised $6.3 million in a pre-seed funding round.",
-                "source_content_hash": "8683c5c58c982aba",
+                "source_content_hash": "8683c5c58c982aba2ca81ae484f26436340dea1fde5471217318c62219eae259",
                 "quote_hash": "565a87f357bef3ce8b36917fb8e0a3fa754d41c02d3c81905d335f8debb5939e"
+              }
+            ]
+          },
+          {
+            "event_id": "EV-6f076ff496f7652e",
+            "round_original": "预种子轮",
+            "amount": "€5.62 million",
+            "announced_at": "2026-10-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cb72aaeb2be8d4ae",
+                "quote": "HomeNorway-StartupsOslo-based AI-native engineering firm Solvera raises €5.62 million pre-Seed after July 2026...",
+                "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+                "quote_hash": "37eff19e9bf8acf6a3f9cc9e148166933d4e61ea8523678fa8089c549e0933fa"
+              },
+              {
+                "source_id": "FISRC-cb72aaeb2be8d4ae",
+                "quote": "today announced a €5.62 million ($6.3 million) pre-Seed round",
+                "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+                "quote_hash": "ce645754ae63042f80637b2d423ecc944cb92f903e34fec28cc0d8fa2123d3a9"
+              },
+              {
+                "source_id": "FISRC-1ee2a6c02fee9db7",
+                "quote": "has raised a €5.62 million ($6.3 million) pre-Seed round",
+                "source_content_hash": "bdd7353bae8fe8b896809cfd7eb0e0edf130d59210ba12cfba4d93b94340c3fc",
+                "quote_hash": "eb9c2b8cf03915a27095b5c376a3c7231353a527a7aed3ecbdf04a300785152b"
               }
             ]
           }
@@ -6007,14 +7207,65 @@
             {
               "source_id": "FISRC-342783e341e84ea5",
               "quote": "The startup, which operates as an engineering firm of record rather than a software vendor, aims to automate mechanical, electrical, and plumbing (MEP) design processes using proprietary AI agents.",
-              "source_content_hash": "8683c5c58c982aba",
+              "source_content_hash": "8683c5c58c982aba2ca81ae484f26436340dea1fde5471217318c62219eae259",
               "quote_hash": "f4dbd6758d2a2a631af0b56d565623bdf56d8be2228378b7eaa54a6fa12af5d0"
             },
             {
               "source_id": "FISRC-ccd8e12baa5374e7",
               "quote": "Rather than sell software licences or bill consulting hours, Solvera acts as the engineering firm of record. It provides end-to-end services — from initial requirements through to construction-ready designs — using purpose-built AI agents to automate a growing share of the work while human engineers handle judgement.",
-              "source_content_hash": "355c348d7b190131",
+              "source_content_hash": "355c348d7b1901315bbb1b412fdb85443cf17ee12fbe471fd0c446b30188b87b",
               "quote_hash": "a1ba05115953c5dc55249ff9cfb89ad79f9902c7871b73a760dd39ceab8691a9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Solvera operating system",
+          "description": "专为建筑工程设计的自研操作系统，AI智能体承担测试替代方案、协调与生产性工作，工程师提供判断，系统随项目积累可复用智能。",
+          "target_customers": "建筑行业客户，从机电（MEP）工程起步",
+          "features": [
+            "AI智能体承担大量工程设计工作",
+            "工程师提供专业判断",
+            "从需求约束到可施工协调设计的端到端交付",
+            "按成果收费而非软件许可或咨询工时"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cb72aaeb2be8d4ae",
+              "quote": "The company says it uses its purpose-built operating system to deliver end-to-end service as the engineering firm of record",
+              "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+              "quote_hash": "e903faabc521ae4dbaab9358f43a8e342eb156ecee3b1c425b20c45ebe3f6f92"
+            },
+            {
+              "source_id": "FISRC-cb72aaeb2be8d4ae",
+              "quote": "with AI agents handling a major chunk of the engineering work and building engineers providing judgement",
+              "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+              "quote_hash": "8139d61d83020c8628e1083e7ca9b1db265e468c799f020ddb08e40232bfa56e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI原生MEP工程服务",
+          "description": "以工程记录责任方身份提供机械、电气和管道系统工程设计与协调服务，覆盖从早期阶段工程到详细设计。",
+          "target_customers": "建筑承包商与建筑项目业主",
+          "features": [
+            "MEP系统工程设计与协调",
+            "覆盖早期工程到详细设计",
+            "按项目成果收费"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cb72aaeb2be8d4ae",
+              "quote": "starting with mechanical, electrical, and plumbing systems",
+              "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+              "quote_hash": "ef479284aef9ecaa79d1bf346dd4333457b91cbeda03421840fe79e46388804f"
+            },
+            {
+              "source_id": "FISRC-1ee2a6c02fee9db7",
+              "quote": "It has worked on several Norwegian building projects, from early-phase engineering to detailed design",
+              "source_content_hash": "bdd7353bae8fe8b896809cfd7eb0e0edf130d59210ba12cfba4d93b94340c3fc",
+              "quote_hash": "062ca008c209457e0e5f734c54d18334e84a6425e5619b0c9e6672505838b54a"
             }
           ],
           "entity_id": null
@@ -6029,7 +7280,7 @@
             {
               "source_id": "FISRC-ccd8e12baa5374e7",
               "quote": "It is already working on several building projects in Norway, including commercial work with contractor Betonmast",
-              "source_content_hash": "355c348d7b190131",
+              "source_content_hash": "355c348d7b1901315bbb1b412fdb85443cf17ee12fbe471fd0c446b30188b87b",
               "quote_hash": "9468d647401169f43eae70955edec0661b4e886ab4f3f4c31488ec7c51e4583a"
             }
           ],
@@ -6060,7 +7311,7 @@
             {
               "source_id": "FISRC-ccd8e12baa5374e7",
               "quote": "We've had twenty years of better building engineering software, and now AI, but productivity and the fundamental way engineering gets delivered has barely changed",
-              "source_content_hash": "355c348d7b190131",
+              "source_content_hash": "355c348d7b1901315bbb1b412fdb85443cf17ee12fbe471fd0c446b30188b87b",
               "quote_hash": "76cc7e55acba2d41e4599a5e4efac270ecbb7f119a57cabe67578d5ed81e58c1"
             }
           ]
@@ -6220,7 +7471,7 @@
           "source_class": "independent",
           "capture_method": "direct_fetch",
           "captured_at": "2026-10-16T00:40:30.533Z",
-          "content_hash": "8683c5c58c982aba",
+          "content_hash": "8683c5c58c982aba2ca81ae484f26436340dea1fde5471217318c62219eae259",
           "source_artifact_id": null,
           "raw_id": null
         },
@@ -6232,7 +7483,31 @@
           "source_class": "independent",
           "capture_method": "direct_fetch",
           "captured_at": "2026-10-16T00:40:37.813Z",
-          "content_hash": "355c348d7b190131",
+          "content_hash": "355c348d7b1901315bbb1b412fdb85443cf17ee12fbe471fd0c446b30188b87b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-cb72aaeb2be8d4ae",
+          "source_url": "https://www.eu-startups.com/2026/10/oslo-based-ai-native-engineering-firm-solvera-raises-e5-62-million-pre-seed-after-july-2026-launch/",
+          "title": "奥斯陆 AI 原生工程公司 Solvera 在 2026 年 7 月成立后完成 562 万欧元 pre-Seed 轮融资",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-19T00:18:03.205Z",
+          "content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+          "source_artifact_id": "SA-d3b7f4cadcd436ae",
+          "raw_id": "RAW-9047aee94871b191"
+        },
+        {
+          "source_id": "FISRC-1ee2a6c02fee9db7",
+          "source_url": "https://cphaihub.com/news/1671-oslobased-ainative-engineering-firm-solvera-raises-562-million",
+          "title": "Oslo-based AI-native engineering firm Solvera raises €5.62 million pre-Seed after July 2026 launch",
+          "publisher": "cphaihub.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-19T00:40:54.454Z",
+          "content_hash": "bdd7353bae8fe8b896809cfd7eb0e0edf130d59210ba12cfba4d93b94340c3fc",
           "source_artifact_id": null,
           "raw_id": null
         }
@@ -6275,21 +7550,23 @@
         }
       },
       "source_event_ids": [
-        "EV-3a09e2f76f792423"
+        "EV-3a09e2f76f792423",
+        "EV-6f076ff496f7652e"
       ],
       "aggregation": {
         "key": "EN-6272c1931f96e1a7|pre_seed|USD:exact:6300000:::|2026-10-15",
         "event_count": 1,
         "strategy": "reviewed_funding_subject",
         "subject_id": "EN-6272c1931f96e1a7",
-        "source_card_count": 1
+        "source_card_count": 2
       },
       "historical_rounds": [
         {
           "funding_insight_id": "FI-e8917ea053bc2f16",
           "event_ids": [
             "EV-3a09e2f76f792423",
-            "EV-3a09e2f76f792423"
+            "EV-3a09e2f76f792423",
+            "EV-6f076ff496f7652e"
           ],
           "round": "预种子轮",
           "round_code": "pre_seed",
@@ -6439,8 +7716,26 @@
             {
               "source_id": "FISRC-342783e341e84ea5",
               "quote": "Solvera, an Oslo-based AI-native engineering firm for the construction industry, has raised $6.3 million in a pre-seed funding round.",
-              "source_content_hash": "8683c5c58c982aba",
+              "source_content_hash": "8683c5c58c982aba2ca81ae484f26436340dea1fde5471217318c62219eae259",
               "quote_hash": "565a87f357bef3ce8b36917fb8e0a3fa754d41c02d3c81905d335f8debb5939e"
+            },
+            {
+              "source_id": "FISRC-cb72aaeb2be8d4ae",
+              "quote": "HomeNorway-StartupsOslo-based AI-native engineering firm Solvera raises €5.62 million pre-Seed after July 2026...",
+              "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+              "quote_hash": "37eff19e9bf8acf6a3f9cc9e148166933d4e61ea8523678fa8089c549e0933fa"
+            },
+            {
+              "source_id": "FISRC-cb72aaeb2be8d4ae",
+              "quote": "today announced a €5.62 million ($6.3 million) pre-Seed round",
+              "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+              "quote_hash": "ce645754ae63042f80637b2d423ecc944cb92f903e34fec28cc0d8fa2123d3a9"
+            },
+            {
+              "source_id": "FISRC-1ee2a6c02fee9db7",
+              "quote": "has raised a €5.62 million ($6.3 million) pre-Seed round",
+              "source_content_hash": "bdd7353bae8fe8b896809cfd7eb0e0edf130d59210ba12cfba4d93b94340c3fc",
+              "quote_hash": "eb9c2b8cf03915a27095b5c376a3c7231353a527a7aed3ecbdf04a300785152b"
             }
           ]
         }
@@ -6539,7 +7834,8 @@
         "rationale": "Solvera以AI智能体自动化建筑机电设计并作为工程责任方交付设计服务，属建筑行业AI。"
       },
       "source_card_ids": [
-        "FI-e8917ea053bc2f16"
+        "FI-e8917ea053bc2f16",
+        "FI-e9444b6af8d7b14d"
       ]
     },
     {
@@ -579235,6 +580531,263 @@
   ],
   "event_cards": [
     {
+      "funding_insight_id": "FI-45b4cdef46ead50c",
+      "triggered_by_event_id": "EV-4348abc8b4ec6f78",
+      "source_event_ids": [
+        "EV-4348abc8b4ec6f78"
+      ],
+      "subject_card_id": "FI-45b4cdef46ead50c",
+      "as_of_date": "2026-10-19",
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-8314a4a5fe871369",
+        "application_entity_id": "EN-8314a4a5fe871369",
+        "name": "Goodweek",
+        "full_name": "Goodweek",
+        "summary": "总部位于洛杉矶的法国初创公司，定位为面向中小企业的一站式AI管理平台，将多家主流AI模型整合到单一平台，并保持公司数据隔离。",
+        "website": "",
+        "headquarters": "洛杉矶",
+        "founders": [
+          {
+            "name": "Guillaume Nominé",
+            "role": "CEO兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "incubated at Station F in Paris by Guillaume Nominé and Stehle",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "d925f00a07cd84916848e027ff91c7a770a7399d95f61dc19249d6aa8a01b015"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nicolas Stehle",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "incubated at Station F in Paris by Guillaume Nominé and Stehle",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "d925f00a07cd84916848e027ff91c7a770a7399d95f61dc19249d6aa8a01b015"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount": "€10.69 million",
+        "amount_original": "€10.69 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 10690000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1069 万欧元"
+        },
+        "announced_at": "2026-10-16",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Adara Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The funding round was led by Spanish venture capital firm Adara Ventures",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "0fc2a0eadbf8fb4d86b80fc7cdfbd4f66db5236d8de751822586a7afd43407eb"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b05841937c64d4"
+          },
+          {
+            "name": "Anamcara Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b1bdbf97f09f5f"
+          },
+          {
+            "name": "BGV",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-449e1722992fee"
+          },
+          {
+            "name": "BY Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-3fc8077637ea15"
+          },
+          {
+            "name": "CentraleSupélec Venture",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-dcc2b36e390a47"
+          },
+          {
+            "name": "FJ Labs",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a49dd885e94cf5"
+          },
+          {
+            "name": "Interlace Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1a7feae41381cd"
+          },
+          {
+            "name": "True Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6cde7dbe685bf3"
+          },
+          {
+            "name": "Bpifrance",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c72ba0a0a31cafe",
+                "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+                "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+                "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2ba33b323b57a5"
+          }
+        ]
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "enterprise",
+          "name": "企业通用 AI"
+        },
+        "subsector": {
+          "id": "operations",
+          "name": "业务流程与企业智能体"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "quote": "Goodweek, a Los Angeles-headquartered French startup positioning itself as a one-stop AI management platform for small and medium-sized businesses"
+          },
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "quote": "Goodweek solves this problem with a single unified platform bringing together leading AI models, including Anthropic’s Claude, OpenAI’s ChatGPT, Google Gemini, and Mistral, while keeping company data isolated and never using it to train third-party models."
+          },
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "quote": "The company says its platform gives business leaders visibility into who is using which AI tools and at what cost"
+          }
+        ],
+        "rationale": "Goodweek为企业提供统一AI管理平台，聚合多模型并管控使用与成本，属企业通用AI业务流程。"
+      },
+      "market_category": {
+        "id": "enterprise",
+        "name": "企业通用 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "operations",
+        "name": "业务流程与企业智能体",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "Goodweek AI管理平台"
+        }
+      ]
+    },
+    {
       "funding_insight_id": "FI-5138928a5c38a2d0",
       "triggered_by_event_id": "EV-d083659c3a654b8d",
       "source_event_ids": [
@@ -579653,12 +581206,13 @@
     },
     {
       "funding_insight_id": "FI-72590b8edc4fc559",
-      "triggered_by_event_id": "EV-e260188a14619627",
+      "triggered_by_event_id": "EV-48d766e4f0dc51db",
       "source_event_ids": [
+        "EV-48d766e4f0dc51db",
         "EV-e260188a14619627"
       ],
       "subject_card_id": "FI-72590b8edc4fc559",
-      "as_of_date": "2026-10-16",
+      "as_of_date": "2026-10-19",
       "market_scope": {
         "market_region": "GLOBAL",
         "china_market_match": false,
@@ -579670,7 +581224,7 @@
         "application_entity_id": "EN-898a1b0594c8047b",
         "name": "Holo",
         "full_name": "Holo",
-        "summary": "Holo是一家位于维尔纽斯的AI营销平台，为小企业规划并执行营销，涵盖广告、社交媒体、邮件和SEO内容。",
+        "summary": "总部位于维尔纽斯的AI营销平台，为小企业规划并执行营销工作，从选择渠道到生成广告、社交媒体帖子、邮件和SEO内容。",
         "website": "",
         "headquarters": "Vilnius, Lithuania",
         "founders": [
@@ -579679,10 +581233,10 @@
             "role": "联合创始人，负责产品",
             "evidence_refs": [
               {
-                "source_id": "FISRC-1e7e3d8e53cc437b",
-                "quote": "Holo was founded in Vilnius by Deividas Kovger, who leads product, and Aleksandras Urbanavicius, who leads growth.",
-                "source_content_hash": "554c5b61db955f1c",
-                "quote_hash": "2599db279d58716bd9b8bcb662f714d5e682e0b3867319d4af107d57071fb672"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "Holo was founded in 2025 by Deividas Kovger, who leads product, and Aleksandras Urbanavicius, who leads growth.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "a0274c12710922ab01831c0883c09aa2b7d063f023d9c9c873b685216eba5b30"
               }
             ],
             "entity_id": null
@@ -579692,10 +581246,10 @@
             "role": "联合创始人，负责增长",
             "evidence_refs": [
               {
-                "source_id": "FISRC-1e7e3d8e53cc437b",
-                "quote": "Holo was founded in Vilnius by Deividas Kovger, who leads product, and Aleksandras Urbanavicius, who leads growth.",
-                "source_content_hash": "554c5b61db955f1c",
-                "quote_hash": "2599db279d58716bd9b8bcb662f714d5e682e0b3867319d4af107d57071fb672"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "Holo was founded in 2025 by Deividas Kovger, who leads product, and Aleksandras Urbanavicius, who leads growth.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "a0274c12710922ab01831c0883c09aa2b7d063f023d9c9c873b685216eba5b30"
               }
             ],
             "entity_id": null
@@ -579705,9 +581259,9 @@
             "role": "创始团队成员，负责设计",
             "evidence_refs": [
               {
-                "source_id": "FISRC-1e7e3d8e53cc437b",
+                "source_id": "FISRC-964061dbde0b373c",
                 "quote": "The founding team also includes Karolis Vaiginis, who leads design, and Arnas Puidokas, the CTO.",
-                "source_content_hash": "554c5b61db955f1c",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
                 "quote_hash": "3738b6c37c98453d00a8230aa689333f651e0e247d918a009d9988bd947aceb8"
               }
             ],
@@ -579715,12 +581269,12 @@
           },
           {
             "name": "Arnas Puidokas",
-            "role": "创始团队成员，CTO",
+            "role": "首席技术官",
             "evidence_refs": [
               {
-                "source_id": "FISRC-1e7e3d8e53cc437b",
+                "source_id": "FISRC-964061dbde0b373c",
                 "quote": "The founding team also includes Karolis Vaiginis, who leads design, and Arnas Puidokas, the CTO.",
-                "source_content_hash": "554c5b61db955f1c",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
                 "quote_hash": "3738b6c37c98453d00a8230aa689333f651e0e247d918a009d9988bd947aceb8"
               }
             ],
@@ -579731,7 +581285,7 @@
       "financing": {
         "round": "种子轮",
         "round_code": "seed",
-        "round_original": "种子轮",
+        "round_original": "Seed",
         "amount": "€5 million",
         "amount_original": "€5 million",
         "amount_normalized": {
@@ -579752,10 +581306,10 @@
             "role": "本轮领投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -579766,10 +581320,10 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -579780,10 +581334,10 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -579794,10 +581348,10 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -579808,10 +581362,10 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -579822,10 +581376,10 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-4e67a1c942c9027d",
-                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures and business angels.",
-                "source_content_hash": "d78e6461a3c6c4191c327dfd7c4918ed79157f059161385f2f584fa44e9a93b9",
-                "quote_hash": "47caf44cb0655eca971ec0d34466253b37b97fa1ea42b7a54522708da4284230"
+                "source_id": "FISRC-964061dbde0b373c",
+                "quote": "The round was led by Market One Capital, with participation from Silicon Gardens, FirstPick, Leonis Capital, NGL, Tekton Ventures, and business angels.",
+                "source_content_hash": "4f038f57b55b1e7f623f35e4c17f3b6478081716e3ed4a0860aff12696fa58dc",
+                "quote_hash": "987cea8d1ca756447e30d3ae055bce0571d611cd179188ce8157de4c673abcdb"
               }
             ],
             "entity_id": null,
@@ -579857,19 +581411,19 @@
         ],
         "evidence_refs": [
           {
-            "source_id": "FISRC-4e67a1c942c9027d",
-            "quote": "AI marketing platform Holo has raised €5 million in a seed funding round to further develop its marketing automation technology and reach more small businesses."
+            "source_id": "FISRC-964061dbde0b373c",
+            "quote": "Holo, a Vilnius-based AI platform that plans and runs marketing for small businesses"
           },
           {
-            "source_id": "FISRC-1e7e3d8e53cc437b",
-            "quote": "Holo, the AI platform that plans and runs marketing for small businesses, has raised €5 million in a seed round led by Market One Capital"
+            "source_id": "FISRC-964061dbde0b373c",
+            "quote": "To get started, the business owner enters the company’s website. Holo learns what the business sells and how the brand looks and communicates, then uses that information, along with the owner’s goals, to suggest a marketing plan."
           },
           {
-            "source_id": "FISRC-1e7e3d8e53cc437b",
-            "quote": "Holo plans and runs marketing for small businesses, from choosing channels to creating ads, social media posts, emails and SEO content in each business’s own voice."
+            "source_id": "FISRC-fd7c98a3f90f7292",
+            "quote": "The platform produces ads, social posts, emails, and SEO content, organising them in a content calendar for review and approval."
           }
         ],
-        "rationale": "Holo 为小企业提供 AI 营销自动化平台，属企业通用 AI 的销售与营销应用。"
+        "rationale": "Holo为小企业自动规划并执行营销内容，属企业销售与营销AI。"
       },
       "market_category": {
         "id": "enterprise",
@@ -579888,6 +581442,9 @@
       },
       "products": [
         {
+          "name": "Holo营销自动驾驶平台"
+        },
+        {
           "name": "Holo AI营销平台"
         }
       ]
@@ -579901,9 +581458,11 @@
       "subject_card_id": "FI-80c0f0183753c0a4",
       "as_of_date": "2026-10-16",
       "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
         "source_registry_ids": []
       },
       "company": {
@@ -580389,7 +581948,8 @@
       "funding_insight_id": "FI-e8917ea053bc2f16",
       "triggered_by_event_id": "EV-3a09e2f76f792423",
       "source_event_ids": [
-        "EV-3a09e2f76f792423"
+        "EV-3a09e2f76f792423",
+        "EV-6f076ff496f7652e"
       ],
       "subject_card_id": "FI-e8917ea053bc2f16",
       "as_of_date": "2026-10-16",
@@ -580638,6 +582198,12 @@
       "products": [
         {
           "name": "AI-native engineering firm"
+        },
+        {
+          "name": "Solvera operating system"
+        },
+        {
+          "name": "AI原生MEP工程服务"
         }
       ]
     },
@@ -716741,6 +718307,7 @@
     }
   ],
   "card_aliases": {
+    "FI-e9444b6af8d7b14d": "FI-e8917ea053bc2f16",
     "FI-a5caba06fd035d65": "FI-8df649aa1ec82165",
     "FI-bc8f734fd3f1e216": "FI-24db5bbc2d1045e9",
     "FI-45331063d95f5f57": "FI-9f56d9e17ea9cdbd",
@@ -716812,6 +718379,7 @@
     "FI-02605810b7e6371d": "FI-c6666211cc9c953f"
   },
   "company_aliases": {
+    "EN-26e35b6423a9c420": "EN-6272c1931f96e1a7",
     "EN-6ec81821068b9e26": "EN-26ef5ed7622bea22",
     "EN-68f07a3cc51325d6": "EN-2a5cec351194b94a",
     "EN-c4fb44981a7b6ff5": "EN-4fb73fd4a920dee7",

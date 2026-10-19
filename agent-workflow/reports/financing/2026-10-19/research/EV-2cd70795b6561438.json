@@ -1,0 +1,214 @@
+{
+  "event_id": "EV-2cd70795b6561438",
+  "company_name": "AI execution company RapidCanvas",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "AI执行公司RapidCanvas在B轮融资中筹集2900万美元",
+    "event_source_refs": [
+      "SA-0f45d48a1e00d28e"
+    ],
+    "event_claim_refs": [
+      "CL-b11e4c02d9a5c6b3",
+      "CL-af1cbd8e050f1a8e",
+      "CL-2d9dece5e7e0edf3"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-d4eadfa354c7505c",
+        "canonical_name": "AI execution company RapidCanvas"
+      }
+    ],
+    "event_metrics": [
+      "$29 million",
+      "$52.5 million"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-b11e4c02d9a5c6b3",
+        "raw_id": "RAW-3f212520cf6041dd",
+        "subject": "AI execution company RapidCanvas",
+        "object": "$29M in Series B",
+        "source_quote_length": 90
+      },
+      {
+        "claim_id": "CL-af1cbd8e050f1a8e",
+        "raw_id": "RAW-3f212520cf6041dd",
+        "subject": "AI execution company RapidCanvas",
+        "object": "$29M in Series B",
+        "source_quote_length": 173
+      },
+      {
+        "claim_id": "CL-2d9dece5e7e0edf3",
+        "raw_id": "RAW-3f212520cf6041dd",
+        "subject": "AI execution company RapidCanvas",
+        "object": "$29M in Series B",
+        "source_quote_length": 44
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "AI execution company RapidCanvas"
+  },
+  "queries": [
+    "\"AI execution company RapidCanvas\" 2026 funding round investors",
+    "\"AI execution company RapidCanvas\" $29 million funding announcement",
+    "\"AI execution company RapidCanvas\" official product customers",
+    "\"AI execution company RapidCanvas\" \"why we invested\"",
+    "\"AI execution company RapidCanvas\" 2026 raises led by",
+    "\"AI execution company RapidCanvas\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"AI execution company RapidCanvas\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://timesindia.in/business/ai-execution-company-rapidcanvas-raises-29m-in-series-b-43njxc",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"AI execution company RapidCanvas\" $29 million funding announcement",
+      "status": "completed",
+      "count": 7
+    },
+    {
+      "provider": "tavily",
+      "query": "\"AI execution company RapidCanvas\" $29 million funding announcement",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"AI execution company RapidCanvas\" $29 million funding announcement",
+      "status": "quota_exhausted",
+      "http_status": 402,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"AI execution company RapidCanvas\" $29 million funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.rapidcanvas.ai/newsroom/rapidcanvas-raises-29m-series-b-to-bring-fortune-100-grade-ai-to-every-enterprise",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"AI execution company RapidCanvas\" official product customers",
+      "status": "completed",
+      "count": 7
+    },
+    {
+      "provider": "tavily",
+      "query": "\"AI execution company RapidCanvas\" official product customers",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"AI execution company RapidCanvas\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://thestartupmitra.com/",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.gigadatacom.com/services/data-enrichment",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://talentdesi.com/company/founder-stories",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://startupinbrief.com/",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://yourstory.com/2026/10/startup-news-and-updates-daily-roundup-october-16-2026",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"AI execution company RapidCanvas\" \"why we invested\"",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"AI execution company RapidCanvas\" \"why we invested\"",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"AI execution company RapidCanvas\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"AI execution company RapidCanvas\" 2026 raises led by",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"AI execution company RapidCanvas\" founders headquarters product",
+      "status": "completed",
+      "count": 7
+    },
+    {
+      "provider": "tavily",
+      "query": "\"AI execution company RapidCanvas\" founders headquarters product",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"AI execution company RapidCanvas\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.rapidcanvas.ai/company",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.rapidcanvas.ai/",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    }
+  ]
+}
