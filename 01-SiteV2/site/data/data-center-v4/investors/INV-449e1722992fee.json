@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-18",
-    "currentDate": "2026-10-18",
-    "eventCount": 4176,
+    "latestDataDate": "2026-10-19",
+    "currentDate": "2026-10-19",
+    "eventCount": 4184,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-30",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-16",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "seed",
       "series_a"
     ],
     "portfolio_companies": [
@@ -82,9 +83,54 @@
         "entity_id": "EN-70729a266daea738",
         "canonical_entity_id": "",
         "name": "Ascerta"
+      },
+      {
+        "entity_id": "EN-8314a4a5fe871369",
+        "canonical_entity_id": "",
+        "name": "Goodweek"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4d01d11df4133ad2",
+        "funding_insight_id": "FI-45b4cdef46ead50c",
+        "event_ids": [
+          "EV-4348abc8b4ec6f78"
+        ],
+        "company_entity_id": "EN-8314a4a5fe871369",
+        "company_canonical_entity_id": "",
+        "company_name": "Goodweek",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "€10.69 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 10690000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1069 万欧元"
+        },
+        "announced_at": "2026-10-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7c72ba0a0a31cafe",
+            "source_url": "https://www.eu-startups.com/2026/10/strasbourg-founded-goodweek-raises-e10-69-million-to-become-the-ai-manager-for-smbs/",
+            "source_title": "总部位于斯特拉斯堡的Goodweek融资1069万欧元，致力于成为中小企业的AI管理者",
+            "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+            "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+            "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f20a19ec68a82047",
         "funding_insight_id": "FI-9641aad793c547e7",
@@ -129,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7c72ba0a0a31cafe",
+        "source_url": "https://www.eu-startups.com/2026/10/strasbourg-founded-goodweek-raises-e10-69-million-to-become-the-ai-manager-for-smbs/",
+        "source_title": "总部位于斯特拉斯堡的Goodweek融资1069万欧元，致力于成为中小企业的AI管理者",
+        "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+        "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+        "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+      },
+      {
         "source_id": "FISRC-b95b99b7dcaf913b",
         "source_url": "https://www.geekwire.com/2026/pay-i-rebrands-as-ascerta-and-raises-18m-to-help-enterprises-track-ai-business-value/",
         "source_title": "Pay-i 更名为 Ascerta 并融资 1800 万美元，帮助企业追踪 AI 商业价值",
@@ -142,10 +196,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BGV 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "BGV 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Goodweek · 种子轮 · 2026-10-16 · 本轮参投 · €10.69 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7c72ba0a0a31cafe"
+        },
         {
           "description": "融资来源记录：Ascerta · A轮 · 2026-09-30 · 本轮参投 · $18 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b95b99b7dcaf913b"
@@ -153,6 +211,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-7c72ba0a0a31cafe",
+          "source_url": "https://www.eu-startups.com/2026/10/strasbourg-founded-goodweek-raises-e10-69-million-to-become-the-ai-manager-for-smbs/",
+          "source_title": "总部位于斯特拉斯堡的Goodweek融资1069万欧元，致力于成为中小企业的AI管理者",
+          "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+          "quote": "The round also saw participation from Anamcara Capital, BGV, BY Venture Partners, CentraleSupélec Venture, FJ Labs, Interlace Ventures, True Ventures, and Bpifrance.",
+          "quote_hash": "b02b855e944a2ee5cca51f99f69e214e51c728d4cfcd5ece73576d05ad592584"
+        },
         {
           "source_id": "FISRC-b95b99b7dcaf913b",
           "source_url": "https://www.geekwire.com/2026/pay-i-rebrands-as-ascerta-and-raises-18m-to-help-enterprises-track-ai-business-value/",

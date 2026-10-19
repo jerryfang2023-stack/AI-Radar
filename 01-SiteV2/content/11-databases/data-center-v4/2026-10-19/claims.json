@@ -1,0 +1,2011 @@
+[
+  {
+    "claim_id": "CL-30b417862c9ddcdb",
+    "raw_id": "RAW-63405b97d174d40a",
+    "claim_type": "funding",
+    "subject": "海外 AI 基建烧钱",
+    "predicate": "funding",
+    "object": "溢价飙升，Anthropic 借钱买芯片利息超 10%",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-63405b97d174d40a",
+      "start": 22,
+      "end": 112
+    },
+    "source_quote": "IT之家 10 月 19 日消息，据央视财经援引英国《金融时报》16 日报道，美国人工智能企业 Anthropic 正在以超过 10% 的收益率，吸引黑石集团为其芯片交易提供融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-939c13871eeb7353",
+    "raw_id": "RAW-63405b97d174d40a",
+    "claim_type": "funding",
+    "subject": "海外 AI 基建烧钱",
+    "predicate": "funding",
+    "object": "溢价飙升，Anthropic 借钱买芯片利息超 10%",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-63405b97d174d40a",
+      "start": 113,
+      "end": 217
+    },
+    "source_quote": "这笔总额为 600 亿美元（IT之家注：现汇率约合 4,021.75 亿元人民币）的债务融资分为两部分：一是约 420 亿美元（现汇率约合 2,815.22 亿元人民币）优先级债务，由半导体企业博通提供担保。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-310e2f2df8f89205",
+    "raw_id": "RAW-af97565b5d178f3c",
+    "claim_type": "capital_investment",
+    "subject": "Anthropic",
+    "predicate": "capital_investment",
+    "object": "Anthropic Public Benefit Fund",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7eadd2f85702b5c1"
+    },
+    "source_span": {
+      "raw_id": "RAW-af97565b5d178f3c",
+      "start": 59,
+      "end": 229
+    },
+    "source_quote": "Today, we’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3941983fcc66fd30",
+    "raw_id": "RAW-af97565b5d178f3c",
+    "claim_type": "capital_investment",
+    "subject": "Anthropic",
+    "predicate": "capital_investment",
+    "object": "labor market impacts research",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-7eadd2f85702b5c1"
+    },
+    "source_span": {
+      "raw_id": "RAW-af97565b5d178f3c",
+      "start": 1184,
+      "end": 1266
+    },
+    "source_quote": "Anthropic has already committed $200 million to studying and addressing this issue",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-be8fd0d0c5c054f8",
+    "raw_id": "RAW-bcc3fac96ee8d32f",
+    "claim_type": "financial_performance",
+    "subject": "AWS",
+    "predicate": "financial_performance",
+    "object": "近5,000亿美元在手订单储备",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ce79223528c9517e"
+    },
+    "source_span": {
+      "raw_id": "RAW-bcc3fac96ee8d32f",
+      "start": 292,
+      "end": 346
+    },
+    "source_quote": "截至第二季度，公司拥有近 5,000 亿美元（IT之家注：现汇率约合 3.35 万亿元人民币）的在手订单储备",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-13979522defbcd44",
+    "raw_id": "RAW-bcc3fac96ee8d32f",
+    "claim_type": "financial_performance",
+    "subject": "AWS",
+    "predicate": "financial_performance",
+    "object": "第二季度营收422亿美元，同比增长36.7%",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-ce79223528c9517e"
+    },
+    "source_span": {
+      "raw_id": "RAW-bcc3fac96ee8d32f",
+      "start": 472,
+      "end": 525
+    },
+    "source_quote": "AWS 第二季度实现营收 422 亿美元（现汇率约合 2,828.63 亿元人民币），同比增长 36.7%",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9b798f24252a6fb7",
+    "raw_id": "RAW-bcc3fac96ee8d32f",
+    "claim_type": "financial_performance",
+    "subject": "AWS AI业务",
+    "predicate": "financial_performance",
+    "object": "年化营收运行率突破250亿美元",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-ce79223528c9517e"
+    },
+    "source_span": {
+      "raw_id": "RAW-bcc3fac96ee8d32f",
+      "start": 526,
+      "end": 592
+    },
+    "source_quote": "该业务部门的 AI 业务年化营收运行率已突破 250 亿美元（现汇率约合 1,675.73 亿元人民币），且同比增速高达三位数百分比",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-18c98e19c1cf9a69",
+    "raw_id": "RAW-6296ba7ae276cda1",
+    "claim_type": "service_change",
+    "subject": "Meta",
+    "predicate": "service_change",
+    "object": "language that raised scraping and AI training concerns",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-6296ba7ae276cda1",
+      "start": 60,
+      "end": 127
+    },
+    "source_quote": "Meta removes language that raised scraping and AI training concerns",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d123febba8948818",
+    "raw_id": "RAW-6296ba7ae276cda1",
+    "claim_type": "service_change",
+    "subject": "Meta",
+    "predicate": "service_change",
+    "object": "language that raised scraping and AI training concerns",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-6296ba7ae276cda1",
+      "start": 128,
+      "end": 388
+    },
+    "source_quote": "Meta recently updated its commercial terms of use, declaring that the company can “use any content from [a business account’s] domains, web pages, or URLs to provide, develop, improve, research, train, and maintain the integrity of” Meta products and services.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-58b73286c6afd39e",
+    "raw_id": "RAW-6296ba7ae276cda1",
+    "claim_type": "service_change",
+    "subject": "Meta",
+    "predicate": "service_change",
+    "object": "language that raised scraping and AI training concerns",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-6296ba7ae276cda1",
+      "start": 389,
+      "end": 790
+    },
+    "source_quote": "According to legal experts interviewed by Nieman Lab, this looked like a “remarkable provision” that could give Meta permission to scrape the website of any publisher with a Meta business account and use the content to train the company’s AI models. (While Meta defeated a high-profile lawsuit over alleged copyright infringement last year, other cases against AI companies, including Meta, continue.)",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d7bf9365046702a7",
+    "raw_id": "RAW-6296ba7ae276cda1",
+    "claim_type": "service_change",
+    "subject": "Meta",
+    "predicate": "service_change",
+    "object": "language that raised scraping and AI training concerns",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-6296ba7ae276cda1",
+      "start": 791,
+      "end": 908
+    },
+    "source_quote": "However, a Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5a067e72f885f7f0",
+    "raw_id": "RAW-3ae929f204a1764f",
+    "claim_type": "model_release",
+    "subject": "Elorian",
+    "predicate": "model_release",
+    "object": "Glimpse",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-289c45eee86c0e8e"
+    },
+    "source_span": {
+      "raw_id": "RAW-3ae929f204a1764f",
+      "start": 129,
+      "end": 200
+    },
+    "source_quote": "released its first model on Friday, TechCrunch has exclusively learned.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e28e848ebd660f9d",
+    "raw_id": "RAW-c6d8258cc180fa0f",
+    "claim_type": "funding",
+    "subject": "Zenzap",
+    "predicate": "funding",
+    "object": "$44M for its AI chat app that aims to replace WhatsApp in the workplace",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c6d8258cc180fa0f",
+      "start": 389,
+      "end": 587
+    },
+    "source_quote": "The company has raised $44 million in funding from investors including Bessemer, Lightspeed, and The Garage, as well as individual investors Wix president Nir Zohar and former GM of EY, Yoram Tietz.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0d1f5c1498b3624d",
+    "raw_id": "RAW-2b0eea5671c3c176",
+    "claim_type": "funding",
+    "subject": "Scimplify",
+    "predicate": "funding",
+    "object": "$25M to challenge China&#8217;s grip on critical materials with AI",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2b0eea5671c3c176",
+      "start": 0,
+      "end": 300
+    },
+    "source_quote": "As manufacturers across industries strive to reduce their reliance on Chinese suppliers, Indian startup Scimplify has raised $25 million to expand its AI-powered approach to producing specialty chemicals and critical materials, with semiconductors, defense, and energy emerging as key growth markets.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-49a467d64107f165",
+    "raw_id": "RAW-f72c36c1e6b15310",
+    "claim_type": "funding",
+    "subject": "Pluto Security",
+    "predicate": "funding",
+    "object": "$42 million in funding",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-dcf8fcb314ee81c4"
+    },
+    "source_span": {
+      "raw_id": "RAW-f72c36c1e6b15310",
+      "start": 954,
+      "end": 1009
+    },
+    "source_quote": "Pluto, fresh out of stealth with $42 million in funding",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2033bf6ef4ddbd53",
+    "raw_id": "RAW-f72c36c1e6b15310",
+    "claim_type": "funding",
+    "subject": "Pluto Security",
+    "predicate": "funding",
+    "object": "$8.5 million seed round led by TLV Partners",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2,
+      "model_candidate_id": "MAC-dcf8fcb314ee81c4"
+    },
+    "source_span": {
+      "raw_id": "RAW-f72c36c1e6b15310",
+      "start": 1774,
+      "end": 1899
+    },
+    "source_quote": "Pluto’s funding spans an $8.5 million seed round led by TLV Partners, with cybersecurity firm Armis’ founders also investing.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-877c5cfc40a8335a",
+    "raw_id": "RAW-f72c36c1e6b15310",
+    "claim_type": "funding",
+    "subject": "Pluto Security",
+    "predicate": "funding",
+    "object": "Series A of $34 million led by Jump Capital",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3,
+      "model_candidate_id": "MAC-dcf8fcb314ee81c4"
+    },
+    "source_span": {
+      "raw_id": "RAW-f72c36c1e6b15310",
+      "start": 1900,
+      "end": 2096
+    },
+    "source_quote": "The company recently raised a Series A of $34 million led by Jump Capital, with Skinos (Check Point co-founder Shlomo Kramer’s venture firm), Ansa Capital, and other angel investors participating.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-471a996244eccecb",
+    "raw_id": "RAW-f86f10cff609952b",
+    "claim_type": "funding",
+    "subject": "Former Plaud exec",
+    "predicate": "funding",
+    "object": "$26M for AI app that listens to you in the background",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f86f10cff609952b",
+      "start": 782,
+      "end": 1005
+    },
+    "source_quote": "The company said on Monday that it has raised $26 million across multiple funding rounds led by Luminous Ventures, which has backed companies like Meituan and Unitree Robotics, and original design manufacturer (ODM) Huaqin.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6008abddacf6fbd6",
+    "raw_id": "RAW-7c54fa70ca1ef8d4",
+    "claim_type": "funding",
+    "subject": "元环智能",
+    "predicate": "funding",
+    "object": "数亿元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-7c54fa70ca1ef8d4",
+      "start": 39,
+      "end": 98
+    },
+    "source_quote": "新浪科技讯 10月15日上午消息，近日，仅成立4个月的元环智能（MetaCircle）宣布完成连续两轮共计数亿元融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7f250662ad15a4ee",
+    "raw_id": "RAW-7c54fa70ca1ef8d4",
+    "claim_type": "funding",
+    "subject": "元环智能",
+    "predicate": "funding",
+    "object": "数亿元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7c54fa70ca1ef8d4",
+      "start": 152,
+      "end": 285
+    },
+    "source_quote": "其中，种子轮融资由顺为资本领投，上海未来产业基金、星连资本、君礼资本等机构跟投；种子+轮吸引了上海半导体产投、360战投、首程资本、上海人工智能产业系列基金等产业方及国资背景机构，以及BV百度风投、山行资本、云时资本等知名双币基金，启观资本担任元环智能长期财务顾问。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-69d5ea3ca0a809f1",
+    "raw_id": "RAW-20cc96df2d861a5a",
+    "claim_type": "funding",
+    "subject": "10亿！上海大模型创企拿下新",
+    "predicate": "funding",
+    "object": "智东西10月12日报道，今日，上海大模型公司模思智能（MOSI）宣布完成超10亿元Pre-A轮融资，由华控基金领投，主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等，元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-20cc96df2d861a5a",
+      "start": 64,
+      "end": 198
+    },
+    "source_quote": "智东西10月12日报道，今日，上海大模型公司模思智能（MOSI）宣布完成超10亿元Pre-A轮融资，由华控基金领投，主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等，元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2fbc266351f778c2",
+    "raw_id": "RAW-20cc96df2d861a5a",
+    "claim_type": "funding",
+    "subject": "10亿！上海大模型创企拿下新",
+    "predicate": "funding",
+    "object": "今年3月，模思智能完成数亿元天使轮融资，由IDG资本领投，元禾控股、上海国投旗下上海科创及上海未来产业基金、奇绩创坛、智谱系基金星连资本及某头部产业投资方联合投资。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-20cc96df2d861a5a",
+      "start": 233,
+      "end": 315
+    },
+    "source_quote": "今年3月，模思智能完成数亿元天使轮融资，由IDG资本领投，元禾控股、上海国投旗下上海科创及上海未来产业基金、奇绩创坛、智谱系基金星连资本及某头部产业投资方联合投资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-de7bb7981c354a99",
+    "raw_id": "RAW-20cc96df2d861a5a",
+    "claim_type": "funding",
+    "subject": "10亿！上海大模型创企拿下新",
+    "predicate": "funding",
+    "object": "据官方披露，本轮融资资金将主要用于全模态实时交互智能的研发与能力建设，以及全球商业化落地。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-20cc96df2d861a5a",
+      "start": 316,
+      "end": 361
+    },
+    "source_quote": "据官方披露，本轮融资资金将主要用于全模态实时交互智能的研发与能力建设，以及全球商业化落地。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3a9c658337e27be1",
+    "raw_id": "RAW-03ae291e273507c6",
+    "claim_type": "funding",
+    "subject": "AI基础设施厂商无问芯穹又",
+    "predicate": "funding",
+    "object": "23亿元，此前传出要IPO_腾讯新闻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-03ae291e273507c6",
+      "start": 26,
+      "end": 109
+    },
+    "source_quote": "10月12日，AI基础设施厂商无问芯穹宣布已完成C轮融资，本轮融资金额23亿元，创立以来累计融资额达43亿元，单轮及累计融资额均创下中国AI原生基础设施赛道最高纪录。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-feb201cf47ef7e78",
+    "raw_id": "RAW-03ae291e273507c6",
+    "claim_type": "funding",
+    "subject": "AI基础设施厂商无问芯穹又",
+    "predicate": "funding",
+    "object": "23亿元，此前传出要IPO_腾讯新闻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-03ae291e273507c6",
+      "start": 398,
+      "end": 421
+    },
+    "source_quote": "此次C轮一轮便达到23亿元，融资节奏不断加快。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8ec60544090fbf7f",
+    "raw_id": "RAW-03ae291e273507c6",
+    "claim_type": "funding",
+    "subject": "AI基础设施厂商无问芯穹又",
+    "predicate": "funding",
+    "object": "23亿元，此前传出要IPO_腾讯新闻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-03ae291e273507c6",
+      "start": 196,
+      "end": 220
+    },
+    "source_quote": "平台Token调用量爆发式增长，融资节奏不断加快",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-768475dda1af4516",
+    "raw_id": "RAW-7f78d2f9cb061eac",
+    "claim_type": "funding",
+    "subject": "单轮23亿、累计43亿！无问芯穹创下我国AI原生基础设施赛道",
+    "predicate": "funding",
+    "object": "纪录",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-7f78d2f9cb061eac",
+      "start": 0,
+      "end": 94
+    },
+    "source_quote": "新民晚报记者今天（12日）获悉，AI原生基础设施企业无问芯穹已完成C轮融资，本轮融资金额23亿元，公司创立以来累计融资额达43亿元，单轮及累计融资额均创下中国AI原生基础设施赛道最高纪录。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ce9a1339120aab77",
+    "raw_id": "RAW-957604eb8c0568d0",
+    "claim_type": "funding",
+    "subject": "无问芯穹",
+    "predicate": "funding",
+    "object": "：创中国AI原生基础设施赛道最高",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-957604eb8c0568d0",
+      "start": 85,
+      "end": 149
+    },
+    "source_quote": "「IPO早知道」从知情人士处获悉，无问芯穹稍早前已完成23亿元C轮融资并已全部交割，创下中国AI原生基础设施赛道最高单笔融资纪录",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a94ab2d147acc4e4",
+    "raw_id": "RAW-740d72de57ca9631",
+    "claim_type": "funding",
+    "subject": "Iambic",
+    "predicate": "funding",
+    "object": "1.5亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-740d72de57ca9631",
+      "start": 6,
+      "end": 39
+    },
+    "source_quote": "英伟达支持的AI制药企业Iambic通过美国IPO融资1.5亿美元",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6d1dd714c618e9fd",
+    "raw_id": "RAW-740d72de57ca9631",
+    "claim_type": "funding",
+    "subject": "Iambic",
+    "predicate": "funding",
+    "object": "1.5亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-740d72de57ca9631",
+      "start": 45,
+      "end": 124
+    },
+    "source_quote": "格隆汇10月15日｜临床阶段抗癌药物研发及技术企业IambicTherapeuticsInc.完成美国首次公开发行，融资1.5亿美元，发行价定在推介区间中点。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-79cb7cca952611bd",
+    "raw_id": "RAW-b8bafbf280e8168f",
+    "claim_type": "funding",
+    "subject": "Iambic",
+    "predicate": "funding",
+    "object": "1.5亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b8bafbf280e8168f",
+      "start": 0,
+      "end": 69
+    },
+    "source_quote": "临床阶段抗癌药物研发及技术企业IambicTherapeuticsInc.完成美国首次公开发行，融资1.5亿美元，发行价定在推介区间中点。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8a1623aff9a2765c",
+    "raw_id": "RAW-f7ae06de60051ab2",
+    "claim_type": "funding",
+    "subject": "探针AI医疗周报：General Medicine",
+    "predicate": "funding",
+    "object": "1.2亿美元，AI走向医疗交付与生物制造【261012】",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f7ae06de60051ab2",
+      "start": 0,
+      "end": 55
+    },
+    "source_quote": "探针AI医疗周报：General Medicine融资1.2亿美元，AI走向医疗交付与生物制造【261012】",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c54a4563e82d435a",
+    "raw_id": "RAW-f7ae06de60051ab2",
+    "claim_type": "funding",
+    "subject": "探针AI医疗周报：General Medicine",
+    "predicate": "funding",
+    "object": "1.2亿美元，AI走向医疗交付与生物制造【261012】",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f7ae06de60051ab2",
+      "start": 281,
+      "end": 359
+    },
+    "source_quote": "General Medicine以1.2亿美元融资扩展可搜索、比价和购买的医疗服务平台，Multiply Labs获得7500万美元以扩大生物药自动化制造。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-aeed82a5be4bf514",
+    "raw_id": "RAW-f7ae06de60051ab2",
+    "claim_type": "funding",
+    "subject": "探针AI医疗周报：General Medicine",
+    "predicate": "funding",
+    "object": "1.2亿美元，AI走向医疗交付与生物制造【261012】",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f7ae06de60051ab2",
+      "start": 630,
+      "end": 747
+    },
+    "source_quote": "2026年10月6日，公司宣布完成1.2亿美元B轮融资，由Andreessen Horowitz领投，Matrix、VXI Capital、礼来、Mercy Health旗下Granger Management及BoxGroup参与。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-64da2b7f231b326b",
+    "raw_id": "RAW-20097e2c45bcfd17",
+    "claim_type": "funding",
+    "subject": "AI制药赛道前9月",
+    "predicate": "funding",
+    "object": "157.65亿元；BMS玛伐凯泰拟纳入优先审评_腾讯新闻",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-20097e2c45bcfd17",
+      "start": 0,
+      "end": 249
+    },
+    "source_quote": "今天聚焦的医药产业核心事件包括：AI制药赛道前9月融资157.65亿元超三年总和、臻亿医疗完成IPO辅导备案；甘李药业GLR1075完成I期首例给药布局重组人白蛋白、诺诚健华TL1A/IL-23p19双抗ICP-B161获批临床用于IBD、BMS玛伐凯泰拟纳入优先审评用于儿童oHCM、百利天恒BL-B01D1联合放疗获NMPA临床批准、恒瑞吡咯替尼HER2阳性乳腺癌一线NDA获受理；默沙东眼科三抗Remigromig披露II/III期数据、FDA批准Hovilpri用于免疫低下难治性HSV等。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-05b85625181fb0c3",
+    "raw_id": "RAW-20097e2c45bcfd17",
+    "claim_type": "funding",
+    "subject": "AI制药赛道前9月",
+    "predicate": "funding",
+    "object": "157.65亿元；BMS玛伐凯泰拟纳入优先审评_腾讯新闻",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-20097e2c45bcfd17",
+      "start": 284,
+      "end": 323
+    },
+    "source_quote": "10/12AI制药赛道前9月融资157.65亿元：超2023—2025三年总和",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7d4a18df56accec1",
+    "raw_id": "RAW-20097e2c45bcfd17",
+    "claim_type": "funding",
+    "subject": "AI制药赛道前9月",
+    "predicate": "funding",
+    "object": "157.65亿元；BMS玛伐凯泰拟纳入优先审评_腾讯新闻",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-20097e2c45bcfd17",
+      "start": 324,
+      "end": 412
+    },
+    "source_quote": "10月12日，东方财富数据显示，今年前9个月国内AI制药赛道共完成57笔投资、44家企业获得融资，披露融资总额达157.65亿元，超过2023年、2024年、2025三年总和。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-09c335c4d8d28053",
+    "raw_id": "RAW-21ef97f0637553e9",
+    "claim_type": "funding",
+    "subject": "Iambic",
+    "predicate": "funding",
+    "object": "1.5亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-21ef97f0637553e9",
+      "start": 19,
+      "end": 51
+    },
+    "source_quote": "英伟达支持的AI制药公司Iambic在美国IPO融资1.5亿美元",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6a2001eb19d98bc2",
+    "raw_id": "RAW-21ef97f0637553e9",
+    "claim_type": "funding",
+    "subject": "Iambic",
+    "predicate": "funding",
+    "object": "1.5亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-21ef97f0637553e9",
+      "start": 52,
+      "end": 166
+    },
+    "source_quote": "PANews 10月15日消息，据彭博社报道，英伟达参股的AI制药公司Iambic Therapeutics以每股16美元发行约938万股，在美国IPO融资1.5亿美元，定价位于15至17美元区间中值，对应市值约7.58亿美元。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8663b9cfc712737e",
+    "raw_id": "RAW-090a5607b9d67a43",
+    "claim_type": "funding",
+    "subject": "无问芯穹",
+    "predicate": "funding",
+    "object": "23亿元C轮融资",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c6d1693c6fe38abb"
+    },
+    "source_span": {
+      "raw_id": "RAW-090a5607b9d67a43",
+      "start": 42,
+      "end": 93
+    },
+    "source_quote": "国内AI原生基础设施企业无问芯穹完成23亿元C轮融资，累计融资43亿元，创国内AIInfra行业新高。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-32c6a87e7e53054a",
+    "raw_id": "RAW-3a87c481544e44c7",
+    "claim_type": "funding",
+    "subject": "Uvi",
+    "predicate": "funding",
+    "object": "$7.5M to cut AI agent costs eight-fold",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3a87c481544e44c7",
+      "start": 0,
+      "end": 56
+    },
+    "source_quote": "News › Uvi raises $7.5M to cut AI agent costs eight-fold",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7e56bbb866b32d9d",
+    "raw_id": "RAW-3a87c481544e44c7",
+    "claim_type": "funding",
+    "subject": "Uvi",
+    "predicate": "funding",
+    "object": "$7.5M to cut AI agent costs eight-fold",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3a87c481544e44c7",
+      "start": 200,
+      "end": 333
+    },
+    "source_quote": "Try Dealroom → Research Ltd., has raised $7.5 million in seed funding to help enterprise AI agents learn and retain business context.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b2288148f043ef0b",
+    "raw_id": "RAW-f09622e180f0091d",
+    "claim_type": "funding",
+    "subject": "无问芯穹",
+    "predicate": "funding",
+    "object": "，助力AI时代各行各业的智能革命",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f09622e180f0091d",
+      "start": 168,
+      "end": 242
+    },
+    "source_quote": "投资界（ID：pedaily2012）10月12日消息，清华系AI原生基础设施企业无问芯穹已完成23亿元C轮融资，其成立以来的累计融资额达43亿元。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9fd3262951127577",
+    "raw_id": "RAW-5cdad2666f5fcf41",
+    "claim_type": "funding",
+    "subject": "首发| 蓝芯算力",
+    "predicate": "funding",
+    "object": "，用AI重新定义CPU",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-5cdad2666f5fcf41",
+      "start": 13,
+      "end": 94
+    },
+    "source_quote": "投资界获悉，行业领 先的RISC-V CPU+AI芯片公司蓝芯算力（深圳）科技有限公司（简称“蓝芯算力”）已于近日完成B轮系列融资，合计融资规模近20亿元人民币。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e4ccbce95c594c00",
+    "raw_id": "RAW-2d9e79246539f470",
+    "claim_type": "funding",
+    "subject": "首发|金珵科技",
+    "predicate": "funding",
+    "object": "，上海交大教授李金金重新定义工业AI",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2d9e79246539f470",
+      "start": 341,
+      "end": 382
+    },
+    "source_quote": "投资界获悉，金珵科技刚刚完成A轮融资，集结了上海国资、产业资本以及头部市场化基金。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ff6d9d76767f0943",
+    "raw_id": "RAW-c0b8a68788bfbbd2",
+    "claim_type": "funding",
+    "subject": "云蝶科技",
+    "predicate": "funding",
+    "object": "，OpenAI投资人投了一位广州博士",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c0b8a68788bfbbd2",
+      "start": 0,
+      "end": 83
+    },
+    "source_quote": "投资界AI获悉，近日广州云蝶科技宣布完成数亿元B+轮系列融资，由StellarS Capital、亚洲联合基建（00711.HK）、长浙投资等知名机构和个人联合投资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-15133893337ed780",
+    "raw_id": "RAW-e83f6fbf7acbf2f1",
+    "claim_type": "funding",
+    "subject": "荆华密算获近亿元Pre-A轮",
+    "predicate": "funding",
+    "object": "，半年连融三轮",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-e83f6fbf7acbf2f1",
+      "start": 83,
+      "end": 106
+    },
+    "source_quote": "「荆华密算」正式宣布完成 Pre-A 轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fdd00e4bedd8f76a",
+    "raw_id": "RAW-e83f6fbf7acbf2f1",
+    "claim_type": "funding",
+    "subject": "荆华密算获近亿元Pre-A轮",
+    "predicate": "funding",
+    "object": "，半年连融三轮",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-e83f6fbf7acbf2f1",
+      "start": 162,
+      "end": 227
+    },
+    "source_quote": "荆华密算在半年内已连续完成三轮融资，本轮融资金额近亿元，资金将重点投向国产算力深度适配、底层密态计算技术迭代以及密态专用芯片研发。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4358a7bc049ef2ce",
+    "raw_id": "RAW-e83f6fbf7acbf2f1",
+    "claim_type": "funding",
+    "subject": "荆华密算获近亿元Pre-A轮",
+    "predicate": "funding",
+    "object": "，半年连融三轮",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-e83f6fbf7acbf2f1",
+      "start": 322,
+      "end": 418
+    },
+    "source_quote": "谈及本轮融资，荆华密算创始人、CEO 林修醇表示：“荆华密算的战略目标非常明确，我们要解决高敏场景‘AI 不敢用’难题，把密态计算打造成支撑大模型与 Agent 时代规模化落地的数字基础设施。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bf4d3e55b300328e",
+    "raw_id": "RAW-b0d0d29cbdcde9d3",
+    "claim_type": "funding",
+    "subject": "星尘智能",
+    "predicate": "funding",
+    "object": "，深圳150亿具身独角兽诞生",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b0d0d29cbdcde9d3",
+      "start": 21,
+      "end": 94
+    },
+    "source_quote": "今天（10月13日），深圳具身公司星尘智能（Astribot）宣布完成10亿元规模新一轮融资，估值达到150亿元，跻身国内具身公司第 一梯队阵型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b682ce78439249c6",
+    "raw_id": "RAW-b0d0d29cbdcde9d3",
+    "claim_type": "funding",
+    "subject": "星尘智能",
+    "predicate": "funding",
+    "object": "，深圳150亿具身独角兽诞生",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b0d0d29cbdcde9d3",
+      "start": 94,
+      "end": 121
+    },
+    "source_quote": "此时，距离公司完成超10亿元的B轮融资仅过去了三个月。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6dab9048ea942744",
+    "raw_id": "RAW-b0d0d29cbdcde9d3",
+    "claim_type": "funding",
+    "subject": "星尘智能",
+    "predicate": "funding",
+    "object": "，深圳150亿具身独角兽诞生",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b0d0d29cbdcde9d3",
+      "start": 122,
+      "end": 164
+    },
+    "source_quote": "算下来，星尘智能在近半年内已连续完成4轮融资，仅最近两轮累计融资规模就超过20亿元。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-21c81c53e9d9652d",
+    "raw_id": "RAW-b0d0d29cbdcde9d3",
+    "claim_type": "funding",
+    "subject": "星尘智能",
+    "predicate": "funding",
+    "object": "，深圳150亿具身独角兽诞生",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b0d0d29cbdcde9d3",
+      "start": 714,
+      "end": 819
+    },
+    "source_quote": "外界通常认为，多元战略股东格局能够在“政策引导＋产业场景＋资金支持”等方面提供系统性赋能——这也解释了为什么星尘智能能在短短几个月内连续完成大体量融资：这是一个能够跑通从原型验证，到规模量产完整路径的投资标的。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ae8b614f92729eb6",
+    "raw_id": "RAW-936d979a0be1536d",
+    "claim_type": "funding",
+    "subject": "算苗科技",
+    "predicate": "funding",
+    "object": "投资界（ID：pedaily2012）10月14日消息，算苗科技已于近日完成了Pre-A2轮（含其加入轮）及A轮两轮融资，由亦庄国投等北京市区两级国资平台领投，资金将主要用于扩充研发人才、加码核心技术迭代，加速自研3D TokenPU大模型算力芯片量产落地等。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-936d979a0be1536d",
+      "start": 85,
+      "end": 215
+    },
+    "source_quote": "投资界（ID：pedaily2012）10月14日消息，算苗科技已于近日完成了Pre-A2轮（含其加入轮）及A轮两轮融资，由亦庄国投等北京市区两级国资平台领投，资金将主要用于扩充研发人才、加码核心技术迭代，加速自研3D TokenPU大模型算力芯片量产落地等。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ad4738348d49da37",
+    "raw_id": "RAW-936d979a0be1536d",
+    "claim_type": "funding",
+    "subject": "算苗科技",
+    "predicate": "funding",
+    "object": "过去一年，算苗科技已经完成多轮融资，累计融资近20亿元。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-936d979a0be1536d",
+      "start": 216,
+      "end": 244
+    },
+    "source_quote": "过去一年，算苗科技已经完成多轮融资，累计融资近20亿元。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0bcb2064d14df5cf",
+    "raw_id": "RAW-0f3ec5583595d073",
+    "claim_type": "funding",
+    "subject": "思敏威集成电路CiMicro.Ai",
+    "predicate": "funding",
+    "object": "亿元天使轮融资",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f53c8e54cd14f787"
+    },
+    "source_span": {
+      "raw_id": "RAW-0f3ec5583595d073",
+      "start": 157,
+      "end": 241
+    },
+    "source_quote": "思敏威集成电路CiMicro.Ai宣布完成亿元天使轮融资，本轮融资由中兴通讯战略投资，博华产投、松青资本、建信信托、合创资本等机构联合投资，老股东德同资本持续重磅加码。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cc1b9b9a216ccf36",
+    "raw_id": "RAW-75df9975d601e9b2",
+    "claim_type": "funding",
+    "subject": "Vienna-based reebuild",
+    "predicate": "funding",
+    "object": "€3 million to build the AI operating system for construction and real estate",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-75df9975d601e9b2",
+      "start": 0,
+      "end": 99
+    },
+    "source_quote": "HomeAustria-StartupsVienna-based reebuild raises €3 million to build the AI operating system for...",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cdc54c8a2fcad906",
+    "raw_id": "RAW-75df9975d601e9b2",
+    "claim_type": "funding",
+    "subject": "Vienna-based reebuild",
+    "predicate": "funding",
+    "object": "€3 million to build the AI operating system for construction and real estate",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-75df9975d601e9b2",
+      "start": 124,
+      "end": 229
+    },
+    "source_quote": "Vienna-based reebuild raises €3 million to build the AI operating system for construction and real estate",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5f9ebab40b95f477",
+    "raw_id": "RAW-75df9975d601e9b2",
+    "claim_type": "funding",
+    "subject": "Vienna-based reebuild",
+    "predicate": "funding",
+    "object": "€3 million to build the AI operating system for construction and real estate",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-75df9975d601e9b2",
+      "start": 302,
+      "end": 440
+    },
+    "source_quote": "reebuild, the Vienna-based AI-native back-office automation platform for construction and real estate, has raised a €3 million Seed round.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bf451c7394d67275",
+    "raw_id": "RAW-75df9975d601e9b2",
+    "claim_type": "funding",
+    "subject": "Vienna-based reebuild",
+    "predicate": "funding",
+    "object": "€3 million to build the AI operating system for construction and real estate",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-75df9975d601e9b2",
+      "start": 4197,
+      "end": 4299
+    },
+    "source_quote": "Previous articleParis-based CarbonFarm raises €7 million to tackle methane emissions from rice farming",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-db9c014601e4877b",
+    "raw_id": "RAW-4c46473103d86aa5",
+    "claim_type": "funding",
+    "subject": "Skeleton Technologies",
+    "predicate": "funding",
+    "object": "9-digit investment from Siemens",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-23c0b8e571e6b881"
+    },
+    "source_span": {
+      "raw_id": "RAW-4c46473103d86aa5",
+      "start": 333,
+      "end": 546
+    },
+    "source_quote": "Tallinn-based Skeleton Technologies, a developer high-power systems for AI infrastructure, today announced a “9-digit investment” from Siemens, bringing Skeleton’s valuation to more than €899 million ($1 billion).",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-640a30aee2adb58e",
+    "raw_id": "RAW-df0275ae70069ad6",
+    "claim_type": "funding",
+    "subject": "Obsero",
+    "predicate": "funding",
+    "object": "€1 million to help brands improve visibility in AI-powered search",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-df0275ae70069ad6",
+      "start": 0,
+      "end": 95
+    },
+    "source_quote": "HomeFundingLondon's Obsero raises €1 million to help brands improve visibility in AI-powered...",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d533c2bfb13211f7",
+    "raw_id": "RAW-df0275ae70069ad6",
+    "claim_type": "funding",
+    "subject": "Obsero",
+    "predicate": "funding",
+    "object": "€1 million to help brands improve visibility in AI-powered search",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-df0275ae70069ad6",
+      "start": 115,
+      "end": 203
+    },
+    "source_quote": "London’s Obsero raises €1 million to help brands improve visibility in AI-powered search",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-de4fd9145393106f",
+    "raw_id": "RAW-df0275ae70069ad6",
+    "claim_type": "funding",
+    "subject": "Obsero",
+    "predicate": "funding",
+    "object": "€1 million to help brands improve visibility in AI-powered search",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-df0275ae70069ad6",
+      "start": 286,
+      "end": 518
+    },
+    "source_quote": "Obsero, a British AI Search platform and consultancy, has raised €1 million ($1.2 million) in Seed funding to develop their first specialist AI agents (trained on their GEO playbook), double its engineering team, and accelerate GTM.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-347da0d8f962e8ea",
+    "raw_id": "RAW-df0275ae70069ad6",
+    "claim_type": "funding",
+    "subject": "Obsero",
+    "predicate": "funding",
+    "object": "€1 million to help brands improve visibility in AI-powered search",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-df0275ae70069ad6",
+      "start": 1138,
+      "end": 1415
+    },
+    "source_quote": "In 2026, EU-Startups reported that fellow British company Searchable raised €11.9 million to expand its AI-led search performance platform, while London-based geoSurge secured €10 million to develop technology addressing how brands are represented within generative AI systems.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-318be872782caa3b",
+    "raw_id": "RAW-a921dae91b12a58c",
+    "claim_type": "funding",
+    "subject": "Vilnius-based Holo",
+    "predicate": "funding",
+    "object": "€5 million to put marketing on autopilot for small businesses",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-a921dae91b12a58c",
+      "start": 0,
+      "end": 101
+    },
+    "source_quote": "HomeLithuania-StartupsVilnius-based Holo raises €5 million to put marketing on autopilot for small...",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f0f2a87fa63fc991",
+    "raw_id": "RAW-a921dae91b12a58c",
+    "claim_type": "funding",
+    "subject": "Vilnius-based Holo",
+    "predicate": "funding",
+    "object": "€5 million to put marketing on autopilot for small businesses",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-a921dae91b12a58c",
+      "start": 128,
+      "end": 215
+    },
+    "source_quote": "Vilnius-based Holo raises €5 million to put marketing on autopilot for small businesses",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b5b15ab98c637146",
+    "raw_id": "RAW-a921dae91b12a58c",
+    "claim_type": "funding",
+    "subject": "Vilnius-based Holo",
+    "predicate": "funding",
+    "object": "€5 million to put marketing on autopilot for small businesses",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-a921dae91b12a58c",
+      "start": 288,
+      "end": 505
+    },
+    "source_quote": "Holo, a Vilnius-based AI platform that plans and runs marketing for small businesses, has raised €5 million in a Seed round to develop its marketing autopilot, reach more small businesses, and expand its Vilnius team.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3bdee02956792409",
+    "raw_id": "RAW-a921dae91b12a58c",
+    "claim_type": "funding",
+    "subject": "Vilnius-based Holo",
+    "predicate": "funding",
+    "object": "€5 million to put marketing on autopilot for small businesses",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-a921dae91b12a58c",
+      "start": 3748,
+      "end": 3862
+    },
+    "source_quote": "Previous articleOslo-based AI-native engineering firm Solvera raises €5.62 million pre-Seed after July 2026 launch",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-776ac37487d23957",
+    "raw_id": "RAW-9047aee94871b191",
+    "claim_type": "funding",
+    "subject": "Oslo-based AI-native engineering firm Solvera",
+    "predicate": "funding",
+    "object": "€5.62 million pre-Seed after July 2026 launch",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-9047aee94871b191",
+      "start": 0,
+      "end": 113
+    },
+    "source_quote": "HomeNorway-StartupsOslo-based AI-native engineering firm Solvera raises €5.62 million pre-Seed after July 2026...",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-75ced4a0e399d972",
+    "raw_id": "RAW-9047aee94871b191",
+    "claim_type": "funding",
+    "subject": "Oslo-based AI-native engineering firm Solvera",
+    "predicate": "funding",
+    "object": "€5.62 million pre-Seed after July 2026 launch",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-9047aee94871b191",
+      "start": 137,
+      "end": 235
+    },
+    "source_quote": "Oslo-based AI-native engineering firm Solvera raises €5.62 million pre-Seed after July 2026 launch",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b1752864df67f1b5",
+    "raw_id": "RAW-9047aee94871b191",
+    "claim_type": "funding",
+    "subject": "Oslo-based AI-native engineering firm Solvera",
+    "predicate": "funding",
+    "object": "€5.62 million pre-Seed after July 2026 launch",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-9047aee94871b191",
+      "start": 4662,
+      "end": 4767
+    },
+    "source_quote": "Previous articleProfitable French accounting company Dougs raises €50 million to accelerate AI automation",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c273be6c3e8cf076",
+    "raw_id": "RAW-fa810e372d5fa496",
+    "claim_type": "funding",
+    "subject": "Strasbourg-founded Goodweek",
+    "predicate": "funding",
+    "object": "€10.69 million to become the AI Manager for SMBs",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-fa810e372d5fa496",
+      "start": 0,
+      "end": 102
+    },
+    "source_quote": "HomeFrance-StartupsStrasbourg-founded Goodweek raises €10.69 million to become the AI Manager for SMBs",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dfc1a42b401e2da2",
+    "raw_id": "RAW-fa810e372d5fa496",
+    "claim_type": "funding",
+    "subject": "Strasbourg-founded Goodweek",
+    "predicate": "funding",
+    "object": "€10.69 million to become the AI Manager for SMBs",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-fa810e372d5fa496",
+      "start": 126,
+      "end": 209
+    },
+    "source_quote": "Strasbourg-founded Goodweek raises €10.69 million to become the AI Manager for SMBs",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a20804af1c20165e",
+    "raw_id": "RAW-fa810e372d5fa496",
+    "claim_type": "funding",
+    "subject": "Strasbourg-founded Goodweek",
+    "predicate": "funding",
+    "object": "€10.69 million to become the AI Manager for SMBs",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-fa810e372d5fa496",
+      "start": 282,
+      "end": 483
+    },
+    "source_quote": "Goodweek, a Los Angeles-headquartered French startup positioning itself as a one-stop AI management platform for small and medium-sized businesses, has raised a €10.69 million ($12 million) Seed round.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fe727ef71edd2d62",
+    "raw_id": "RAW-fa810e372d5fa496",
+    "claim_type": "funding",
+    "subject": "Strasbourg-founded Goodweek",
+    "predicate": "funding",
+    "object": "€10.69 million to become the AI Manager for SMBs",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-fa810e372d5fa496",
+      "start": 484,
+      "end": 665
+    },
+    "source_quote": "The funding round was led by Spanish venture capital firm Adara Ventures, which previously backed Goodweek co-founder Nicolas Stehle at his earlier venture, Scalefast, sold in 2022.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b1a6fe52fe55fb32",
+    "raw_id": "RAW-54595125fd026e7c",
+    "claim_type": "funding",
+    "subject": "Transport data specialist Alchera",
+    "predicate": "funding",
+    "object": "£2.7M",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-54595125fd026e7c",
+      "start": 0,
+      "end": 160
+    },
+    "source_quote": "A Cambridge-founded startup that leverages AI to help cities manage roads and public transport more efficiently has raised £2.7m in seed funding, it said today.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-03307ed9ce3585da",
+    "raw_id": "RAW-66ea9e04f0a41935",
+    "claim_type": "funding",
+    "subject": "Ubitium",
+    "predicate": "funding",
+    "object": "$14M to bring universal computing to physical AI",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-66ea9e04f0a41935",
+      "start": 22,
+      "end": 97
+    },
+    "source_quote": "Ubitium has raised $14 million in new seed funding to develop its universal",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a8caeae1dd449359",
+    "raw_id": "RAW-3a3788fec32dd3dd",
+    "claim_type": "funding",
+    "subject": "Scarlet",
+    "predicate": "funding",
+    "object": "$50M Series B to accelerate AI medical device certification",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3a3788fec32dd3dd",
+      "start": 0,
+      "end": 260
+    },
+    "source_quote": "Scarlet, the certification body for AI and software medical devices, today announced a $50 million Series B led by Headline, with participation from new investor Notion Capital and existing investors Atomico, Creandum, Kindred Capital, and Entrepreneurs First.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-68921d97c1f52b6c",
+    "raw_id": "RAW-e121ccb102e3241b",
+    "claim_type": "funding",
+    "subject": "Affinity Labs",
+    "predicate": "funding",
+    "object": "$2M to build AI-powered software brands with creators",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-e121ccb102e3241b",
+      "start": 13,
+      "end": 90
+    },
+    "source_quote": "startup Affinity Labs has raised $2 million in pre-seed funding to expand its",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1b2c28389b7f592b",
+    "raw_id": "RAW-1cb4f6e90652b698",
+    "claim_type": "capital_investment",
+    "subject": "The Sovereign AI Fund",
+    "predicate": "capital_investment",
+    "object": "Augur",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-488f95808618b16a"
+    },
+    "source_span": {
+      "raw_id": "RAW-1cb4f6e90652b698",
+      "start": 189,
+      "end": 232
+    },
+    "source_quote": "The Sovereign AI Fund is investing in Augur",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-27544ec64ec4cb05",
+    "raw_id": "RAW-d6d845f70ee9b27e",
+    "claim_type": "product_release",
+    "subject": "DJ Reinier Zonneveld",
+    "predicate": "product_release",
+    "object": "AI music startup GasLab with $1M pre-seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-d6d845f70ee9b27e",
+      "start": 0,
+      "end": 171
+    },
+    "source_quote": "GasLab (Generative AI Solutions Lab), a GenAI music platform created by DJ and producer Reinier Zonneveld, is launched this week, backed by $1 million in pre-seed funding.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0dd960ca0eca76a3",
+    "raw_id": "RAW-d6d845f70ee9b27e",
+    "claim_type": "product_release",
+    "subject": "DJ Reinier Zonneveld",
+    "predicate": "product_release",
+    "object": "AI music startup GasLab with $1M pre-seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-d6d845f70ee9b27e",
+      "start": 172,
+      "end": 428
+    },
+    "source_quote": "GasLab is on a mission to keep creatives in business in the age of generative AI, protecting the future of the creative industry by ensuring the artists whose music shapes AI-generated tracks are recognised, credited and able to share in the value created.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6110ca73fc11f6a1",
+    "raw_id": "RAW-d6d845f70ee9b27e",
+    "claim_type": "product_release",
+    "subject": "DJ Reinier Zonneveld",
+    "predicate": "product_release",
+    "object": "AI music startup GasLab with $1M pre-seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-d6d845f70ee9b27e",
+      "start": 429,
+      "end": 499
+    },
+    "source_quote": "Investors in this round include Eric Demuth, co-founder and executive…",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d1846ffbb7a3843c",
+    "raw_id": "RAW-75045ebd083562c3",
+    "claim_type": "funding",
+    "subject": "Vilnius-based Holo",
+    "predicate": "funding",
+    "object": "€5M to bring AI-powered marketing to small businesses",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-75045ebd083562c3",
+      "start": 0,
+      "end": 66
+    },
+    "source_quote": "AI marketing platform Holo has raised €5 million in a seed funding",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0f611a246d5f06b9",
+    "raw_id": "RAW-7fd9f08a58927d11",
+    "claim_type": "funding",
+    "subject": "Matters",
+    "predicate": "funding",
+    "object": "$5 million in pre-seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-aab665dad52b95ee"
+    },
+    "source_span": {
+      "raw_id": "RAW-7fd9f08a58927d11",
+      "start": 0,
+      "end": 218
+    },
+    "source_quote": "AI-powered personal\nfinance startup Matters has emerged from stealth with $5 million in pre-seed\nfunding to develop a consumer banking platform focused on helping users manage\ntheir spending and increase their savings.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-31bf6005aa2a70ca",
+    "raw_id": "RAW-ae3a7709f5a93d08",
+    "claim_type": "funding",
+    "subject": "From Slush to sustainable materials: Ambio",
+    "predicate": "funding",
+    "object": "€5.1M for AI-powered plastics procurement",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ae3a7709f5a93d08",
+      "start": 0,
+      "end": 236
+    },
+    "source_quote": "Helsinki-based startup Ambio has raised a €5.1 million seed round led by b2venture, with participation from Montis and existing investor Lifeline Ventures, to bring greater trust, reliability, and speed to recycled plastics procurement.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-864b8fea1582f5da",
+    "raw_id": "RAW-05ed448ed6a06547",
+    "claim_type": "funding",
+    "subject": "Solvera",
+    "predicate": "funding",
+    "object": "$6.3M to scale the AI-native engineering firm",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-05ed448ed6a06547",
+      "start": 19,
+      "end": 95
+    },
+    "source_quote": "has raised $6.3 million in a pre-seed funding round to develop its AI-native",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f13f433ac87a54e6",
+    "raw_id": "RAW-fee542825d4f1751",
+    "claim_type": "funding",
+    "subject": "Salience Labs",
+    "predicate": "funding",
+    "object": "$125M to scale photonic chips for AI data centres",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-fee542825d4f1751",
+      "start": 17,
+      "end": 163
+    },
+    "source_quote": "developer of photonic chips for AI data centre connectivity, has raised $125 million in an oversubscribed Series B funding round to accelerate the",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7e832f4d72af904c",
+    "raw_id": "RAW-979c4c7cc82e4085",
+    "claim_type": "funding",
+    "subject": "From Rohlik to enterprise AI: Tomáš Čupr's Duvo",
+    "predicate": "funding",
+    "object": "$32M Series A",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-979c4c7cc82e4085",
+      "start": 0,
+      "end": 159
+    },
+    "source_quote": "Duvo today announced a $32 million Series A led by Balderton Capital, with participation from existing investors Index Ventures, Northzone, and Credo Ventures.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b0ea3a4500028b6c",
+    "raw_id": "RAW-08796b1b208ddef1",
+    "claim_type": "funding",
+    "subject": "Agentic video startup Clueso",
+    "predicate": "funding",
+    "object": "$10M in Series A funding round",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-08796b1b208ddef1",
+      "start": 0,
+      "end": 224
+    },
+    "source_quote": "Clueso, the agentic video platform for business founded by IIT Madras alumni, has raised $10 million in a Series A round of funding led by Dharana Capital, with Founders Future and Neotribe Ventures joining as new investors.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a1a6d23d38de13dd",
+    "raw_id": "RAW-08796b1b208ddef1",
+    "claim_type": "funding",
+    "subject": "Agentic video startup Clueso",
+    "predicate": "funding",
+    "object": "$10M in Series A funding round",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-08796b1b208ddef1",
+      "start": 293,
+      "end": 348
+    },
+    "source_quote": "This round brings the total fund raised to $12 million.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b11e4c02d9a5c6b3",
+    "raw_id": "RAW-3f212520cf6041dd",
+    "claim_type": "funding",
+    "subject": "AI execution company RapidCanvas",
+    "predicate": "funding",
+    "object": "$29M in Series B",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3f212520cf6041dd",
+      "start": 0,
+      "end": 111
+    },
+    "source_quote": "AI execution company RapidCanvas has raised $29 million in Series B funding led by Vertex Ventures SEA & India.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-af1cbd8e050f1a8e",
+    "raw_id": "RAW-3f212520cf6041dd",
+    "claim_type": "funding",
+    "subject": "AI execution company RapidCanvas",
+    "predicate": "funding",
+    "object": "$29M in Series B",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3f212520cf6041dd",
+      "start": 330,
+      "end": 539
+    },
+    "source_quote": "RapidCanvas will use the Series B funding to grow its go-to-market teams and expand its network of private equity and advisory partners, who bring managed AI execution to their portfolio companies and clients.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2d9dece5e7e0edf3",
+    "raw_id": "RAW-3f212520cf6041dd",
+    "claim_type": "funding",
+    "subject": "AI execution company RapidCanvas",
+    "predicate": "funding",
+    "object": "$29M in Series B",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3f212520cf6041dd",
+      "start": 273,
+      "end": 329
+    },
+    "source_quote": "The startup has raised a total funding to $52.5 million.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  }
+]

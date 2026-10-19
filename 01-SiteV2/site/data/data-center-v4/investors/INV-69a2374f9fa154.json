@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-18",
-    "currentDate": "2026-10-18",
-    "eventCount": 4176,
+    "latestDataDate": "2026-10-19",
+    "currentDate": "2026-10-19",
+    "eventCount": 4184,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-09-24",
     "latest_disclosed_at": "2026-10-15",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "pre_seed",
@@ -85,12 +85,57 @@
         "name": "Basecamp Research"
       },
       {
+        "entity_id": "EN-26e35b6423a9c420",
+        "canonical_entity_id": "",
+        "name": "Solvera"
+      },
+      {
         "entity_id": "EN-6272c1931f96e1a7",
         "canonical_entity_id": "",
         "name": "Solvera"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2403cc516208ab1f",
+        "funding_insight_id": "FI-e9444b6af8d7b14d",
+        "event_ids": [
+          "EV-6f076ff496f7652e"
+        ],
+        "company_entity_id": "EN-26e35b6423a9c420",
+        "company_canonical_entity_id": "",
+        "company_name": "Solvera",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "€5.62 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 5620000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "562 万欧元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cb72aaeb2be8d4ae",
+            "source_url": "https://www.eu-startups.com/2026/10/oslo-based-ai-native-engineering-firm-solvera-raises-e5-62-million-pre-seed-after-july-2026-launch/",
+            "source_title": "奥斯陆 AI 原生工程公司 Solvera 在 2026 年 7 月成立后完成 562 万欧元 pre-Seed 轮融资",
+            "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+            "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures",
+            "quote_hash": "1051394e86c7f6047f44988bf049ad2633b024d2d4a7897cbd68e15440f11e52"
+          }
+        ]
+      },
       {
         "activity_id": "IA-10caf9895ff415d5",
         "funding_insight_id": "FI-e8917ea053bc2f16",
@@ -174,6 +219,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cb72aaeb2be8d4ae",
+        "source_url": "https://www.eu-startups.com/2026/10/oslo-based-ai-native-engineering-firm-solvera-raises-e5-62-million-pre-seed-after-july-2026-launch/",
+        "source_title": "奥斯陆 AI 原生工程公司 Solvera 在 2026 年 7 月成立后完成 562 万欧元 pre-Seed 轮融资",
+        "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+        "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures",
+        "quote_hash": "1051394e86c7f6047f44988bf049ad2633b024d2d4a7897cbd68e15440f11e52"
+      },
+      {
         "source_id": "FISRC-536d9e1eb424a584",
         "source_url": "https://tech.eu/2026/10/15/solvera-raises-63m-to-scale-the-ai-native-engineering-firm/",
         "source_title": "Solvera 融资 630 万美元，以扩展 AI 原生工程公司",
@@ -217,6 +270,10 @@
           "source_id": "FISRC-ecd2ea74974f4ff3"
         },
         {
+          "description": "融资来源记录：Solvera · 预种子轮 · 2026-10-15 · 本轮参投 · €5.62 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cb72aaeb2be8d4ae"
+        },
+        {
           "description": "融资来源记录：Solvera · 预种子轮 · 2026-10-15 · 本轮参投 · $6.3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-536d9e1eb424a584"
         }
@@ -246,6 +303,14 @@
           "source_content_hash": "4e9c66123d0f871688da11a6f6403edff9d86e25c822636aeda63c774ce1b4d4",
           "quote": "lio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI, and True Ventures. Funding will advance a pipeline of EDEN-designed therapeutics, starti",
           "quote_hash": "c3c8251039a0e0ec146a946ff8ffb69b9a5a4d9a40a8875183c076ef9284e671"
+        },
+        {
+          "source_id": "FISRC-cb72aaeb2be8d4ae",
+          "source_url": "https://www.eu-startups.com/2026/10/oslo-based-ai-native-engineering-firm-solvera-raises-e5-62-million-pre-seed-after-july-2026-launch/",
+          "source_title": "奥斯陆 AI 原生工程公司 Solvera 在 2026 年 7 月成立后完成 562 万欧元 pre-Seed 轮融资",
+          "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
+          "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures",
+          "quote_hash": "1051394e86c7f6047f44988bf049ad2633b024d2d4a7897cbd68e15440f11e52"
         },
         {
           "source_id": "FISRC-536d9e1eb424a584",

@@ -1,0 +1,194 @@
+{
+  "event_id": "EV-ebc48cb526ad4263",
+  "company_name": "探针AI医疗周报：General Medicine",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "探针AI医疗周报：General Medicine融资1.2亿美元，AI走向医疗交付与生物制造【261012】",
+    "event_source_refs": [
+      "SA-409bc3e8b4d5383b"
+    ],
+    "event_claim_refs": [
+      "CL-8a1623aff9a2765c",
+      "CL-c54a4563e82d435a",
+      "CL-aeed82a5be4bf514"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-376e4e2531b38384",
+        "canonical_name": "探针AI医疗周报：General Medicine"
+      },
+      {
+        "entity_id": "EN-dc379efdc8598236",
+        "canonical_name": "探针AI医疗周报"
+      },
+      {
+        "entity_id": "EN-c215bee2c6320ad4",
+        "canonical_name": "宣布"
+      }
+    ],
+    "event_metrics": [
+      "1.2亿",
+      "7500万"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-8a1623aff9a2765c",
+        "raw_id": "RAW-f7ae06de60051ab2",
+        "subject": "探针AI医疗周报：General Medicine",
+        "object": "1.2亿美元，AI走向医疗交付与生物制造【261012】",
+        "source_quote_length": 49
+      },
+      {
+        "claim_id": "CL-c54a4563e82d435a",
+        "raw_id": "RAW-f7ae06de60051ab2",
+        "subject": "探针AI医疗周报：General Medicine",
+        "object": "1.2亿美元，AI走向医疗交付与生物制造【261012】",
+        "source_quote_length": 72
+      },
+      {
+        "claim_id": "CL-aeed82a5be4bf514",
+        "raw_id": "RAW-f7ae06de60051ab2",
+        "subject": "探针AI医疗周报：General Medicine",
+        "object": "1.2亿美元，AI走向医疗交付与生物制造【261012】",
+        "source_quote_length": 105
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "探针AI医疗周报：General Medicine"
+  },
+  "queries": [
+    "\"探针AI医疗周报：General Medicine\" 2026 融资 投资方",
+    "\"探针AI医疗周报：General Medicine\" 1.2亿美元 融资 领投 跟投",
+    "\"探针AI医疗周报：General Medicine\" 官网 产品 服务",
+    "\"探针AI医疗周报：General Medicine\" 投资机构 融资用途",
+    "\"探针AI医疗周报：General Medicine\" 2026 本轮融资 公告",
+    "\"探针AI医疗周报：General Medicine\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"探针AI医疗周报：General Medicine\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "provider": "tavily",
+      "query": "\"探针AI医疗周报：General Medicine\" 2026 融资 投资方",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"探针AI医疗周报：General Medicine\" 2026 融资 投资方",
+      "status": "quota_exhausted",
+      "http_status": 402,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"探针AI医疗周报：General Medicine\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"探针AI医疗周报：General Medicine\" 1.2亿美元 融资 领投 跟投",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "provider": "tavily",
+      "query": "\"探针AI医疗周报：General Medicine\" 1.2亿美元 融资 领投 跟投",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"探针AI医疗周报：General Medicine\" 1.2亿美元 融资 领投 跟投",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"探针AI医疗周报：General Medicine\" 官网 产品 服务",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "provider": "tavily",
+      "query": "\"探针AI医疗周报：General Medicine\" 官网 产品 服务",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"探针AI医疗周报：General Medicine\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"探针AI医疗周报：General Medicine\" 投资机构 融资用途",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"探针AI医疗周报：General Medicine\" 投资机构 融资用途",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"探针AI医疗周报：General Medicine\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"探针AI医疗周报：General Medicine\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "provider": "tavily",
+      "query": "\"探针AI医疗周报：General Medicine\" 2026 本轮融资 公告",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"探针AI医疗周报：General Medicine\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"探针AI医疗周报：General Medicine\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "provider": "tavily",
+      "query": "\"探针AI医疗周报：General Medicine\" 客户 创始人 总部",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"探针AI医疗周报：General Medicine\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

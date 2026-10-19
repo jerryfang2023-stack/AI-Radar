@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-18",
-    "currentDate": "2026-10-18",
-    "eventCount": 4176,
+    "latestDataDate": "2026-10-19",
+    "currentDate": "2026-10-19",
+    "eventCount": 4184,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-79fbe4ea3a11c695",
       "EV-1c79bd33ccfafec8",
       "EV-32a04f2071b7aa24",
       "EV-4495851ddb7439c8",
@@ -413,6 +414,7 @@
       "EV-8115dd18f2812a29",
       "EV-cf496e0f8a56ca97",
       "EV-8cb5b0ed18c7cdd8",
+      "EV-d35419bc2f596bce",
       "EV-a74b50329a01cd04",
       "EV-67fd80c953bff90d",
       "EV-82cccfa64edb2c09",
@@ -609,7 +611,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-10-14",
+    "lastSeen": "2026-10-19",
     "relationIds": [
       "REL2-6460871b6d621283",
       "REL2-02bdd133e9353ff7",
@@ -670,6 +672,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-79fbe4ea3a11c695",
         "EV-a74b50329a01cd04",
         "EV-1c79bd33ccfafec8",
         "EV-4495851ddb7439c8",
@@ -748,6 +751,7 @@
         "EV-ed8260ee9a7a80af"
       ],
       "deployments": [
+        "EV-d35419bc2f596bce",
         "EV-67fd80c953bff90d",
         "EV-78758ccb5d45f4f9",
         "EV-ffe9a66690dc8b19",
@@ -1161,6 +1165,37 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-79fbe4ea3a11c695",
+        "dataDate": "2026-10-19",
+        "date": "2026-10-19",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "海外 AI 基建烧钱融资溢价飙升，Anthropic 借钱买芯片利息超 10%",
+        "displayTags": [],
+        "entityIds": [
+          "EN-dcf934033d9b04ad",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-d35419bc2f596bce",
+        "dataDate": "2026-10-19",
+        "date": "2026-10-18",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "投资于公共利益",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-a74b50329a01cd04",
         "dataDate": "2026-10-14",
@@ -15084,7 +15119,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-16"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -15726,7 +15761,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "EN-729324072d368379",
@@ -17704,7 +17739,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -17715,6 +17750,7 @@
       "eventIds": [
         "EV-1043d78cc040ab30",
         "EV-65154e5eb49c218b",
+        "EV-960e6f1e98cbfa60",
         "EV-ebc48cb526ad4263",
         "EV-c96705c69e11c520",
         "EV-de8561e258a6f559",
@@ -17845,6 +17881,7 @@
         "EN-295219ea74639f0b",
         "EN-e5fefbfe478b5d1c",
         "EN-44ec15e31baddfe9",
+        "EN-230195e335c2d374",
         "EN-376e4e2531b38384",
         "EN-bc06be2cba2b2f2c",
         "EN-37799d436602eaf1",
@@ -17970,7 +18007,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -17980,6 +18017,7 @@
       "valueId": "enterprise_software_platform",
       "eventIds": [
         "EV-1043d78cc040ab30",
+        "EV-48d766e4f0dc51db",
         "EV-858cec7fa8f4c87b",
         "EV-5b59ff829e596b56",
         "EV-c35972d334bcee48",
@@ -18200,6 +18238,7 @@
       ],
       "entityIds": [
         "EN-295219ea74639f0b",
+        "EN-898a1b0594c8047b",
         "EN-ce084d4801691907",
         "EN-2cfcb7f8e397348b",
         "EN-07249e5c4d3d02e2",
@@ -18395,7 +18434,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-10-17"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "TX-target_user-developer",
@@ -21026,7 +21065,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "TX-target_user-business_user",
@@ -21974,7 +22013,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-29",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-10-19"
     },
     {
       "id": "TX-product_form-chip_accelerator",
