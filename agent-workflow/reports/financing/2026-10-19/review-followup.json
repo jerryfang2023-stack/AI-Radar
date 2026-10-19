@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-19",
+  "reviewed_by": "Codex responsible financing review",
+  "goodweek_identity_disposition": {
+    "source_url": "https://www.eu-startups.com/2026/10/strasbourg-founded-goodweek-raises-e10-69-million-to-become-the-ai-manager-for-smbs/",
+    "source_content_hash": "a83c36086fe5ac6ae81e6cbfc56c018afe044bac67f0222803cf0bf0b27f336a",
+    "reason": "原文首行导航HomeFrance-Startups与标题Strasbourg-founded Goodweek被抽取为两个organization_candidate名称，均指正文公司Goodweek，不是第三家公司。仅审核此融资应用的名称与候选对应关系，保留当前已研究的EN-8314a4a5fe871369应用主体；EN-1359e04074eccfef为同篇导航污染候选，不独立准入融资。未将canonical_entity_consistent改成true，不批准事实层实体合并。",
+    "reviewed_by": "Codex responsible financing review",
+    "reviewed_at": "2026-10-19"
+  },
+  "active_read_model_gate": {
+    "version": "FINANCING-READ-MODEL-1",
+    "releaseId": "66d0bd1ffe9d2db24ed980ac3790fcf4",
+    "inputHash": "dcb1fab038f80966240930608a55bc5d6555d0502ba6e77e519e93ee07872999"
+  },
+  "release_history": [
+    {
+      "release_id": "ed9c1c24337d5ae3e04c93ec691fa3b3",
+      "source_commit_at_build": "b1a99ef32da5c5dab1d39139feba3bd2aacd4259",
+      "subjects": 629,
+      "events": 672,
+      "active": false
+    },
+    {
+      "release_id": "4c574f6063d95e1e2a25d346a0972153",
+      "source_commit_at_build": "948cbc0aaeb3a2f443e6e5ec42d7a6180b1e926e",
+      "subjects": 628,
+      "events": 671,
+      "active": false
+    },
+    {
+      "release_id": "66d0bd1ffe9d2db24ed980ac3790fcf4",
+      "source_commit_at_build": "51c3c79f55620eb76b983ccea21fb5c531faf918",
+      "subjects": 627,
+      "events": 670,
+      "active": true
+    }
+  ],
+  "reconciliation": "629/672 was the original candidate catalog with Solvera and Jinghua duplicates. 628/671 removed the Solvera duplicate before concurrent main c7f97b9a merged Jinghua deduplication. Active current.json now points to 66d0bd1ffe9d2db24ed980ac3790fcf4 (627/670), which preserves both reviewed deduplications. Old immutable manifests are audit history, not active publication targets. sourceCommit records the checkout parent at pre-commit generation, not a different admitted dataset. Final production read model is rebuilt from accepted main after merge.",
+  "current_admission": "one newly admitted Goodweek event relative to c7f97b9a, no omitted accepted subjects; Solvera and Jinghua remain one subject/one same round each",
+  "classification_pending_disposition": "catalog.review.pending contains 18 excluded-from-public classification-review rows; excluded contains 78 rows. Neither collection belongs to cards/event_cards. Existing publication holds remain applied by catalog generator.",
+  "holo_metrics_boundary": "The 20,000 paying-business and $5M ARR statements are company-reported in the captured EU-Startups original, not independently audited customer counts. This batch does not promote those metrics to canonical facts.",
+  "actual_catalog_review_counts": {
+    "excluded": 78,
+    "pending_classification": 18,
+    "publication_pending": 36
+  },
+  "catalog_rebuild": {
+    "status": "passed",
+    "subjects": 627,
+    "events": 670,
+    "public_catalog_unchanged": true
+  }
+}
