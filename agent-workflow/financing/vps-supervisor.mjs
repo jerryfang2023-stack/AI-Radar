@@ -33,12 +33,12 @@ export function selectRunDate(states, clock, requested) {
 }
 // The review contract makes the verdict and the five checks authoritative, but
 // the reviewer also records confirmed non-blocking observations in issues
-// (English or Chinese: stale profile fields, reconciled source dates,
+// (English or Chinese, including Informational: reconciled source dates,
 // non-admitted research cards). Explicitly labelled notes must not deadlock an
 // otherwise approved batch; an unlabelled finding still requires a hold.
 export function nonBlockingReviewIssue(issue) {
   return typeof issue === 'string' && (
-    /^\s*(?:non-blocking|observation|note)\b/iu.test(issue)
+    /^\s*(?:non-blocking|informational|observation|note)\b/iu.test(issue)
     || /非准入|不影响本次|不阻断发布|不属于未解决/u.test(issue)
   );
 }
