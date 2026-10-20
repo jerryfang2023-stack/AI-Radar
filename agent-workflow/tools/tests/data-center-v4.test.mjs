@@ -602,10 +602,35 @@ test('funding parsing ignores unapproved or amount-changing title translations a
     {title_zh:'Persona 完成 2000 万美元融资',title_translation_method:'source_title_translation_db'},
   ]){
     const bundle=buildBundle([entry('persona-unapproved',original,body,extra)],taxonomy,date,`${date}T00:00:00Z`);
-    assert.notEqual(bundle.claims.find(row=>row.claim_type==='funding')?.subject,'Persona');
+    // The translation is ignored; the independent body now identifies Persona.
+    assert.equal(bundle.claims.find(row=>row.claim_type==='funding')?.subject,'Persona');
+    assert.ok(!bundle.claims.some(row=>/2000/u.test(row.object)));
   }
   assert.equal(normalizeEventTitle('Persona完成1000万美元融资_大风号'),'Persona完成1000万美元融资');
   assert.equal(normalizeEventTitle('Persona_AI raises $10M'),'Persona_AI raises $10M');
+});
+
+test('mangled founder headline recovers the startup from an original body without a manual translation', async () => {
+  const original='calai联合创始人zachyadegari推出ai智能体新公司persona完成1000万美元融资_大风号';
+  const body='品玩10月9日讯，据TechCrunch报道，Cal AI的少年联合创始人Zach Yadegari已推出新的AI智能体创业公司Persona，并完成1000万美元融资。';
+  const bundle=buildBundle([entry('persona-original-only',original,body)],taxonomy,date,date+'T00:00:00Z');
+  const claim=bundle.claims.find(row=>row.claim_type==='funding');
+  assert.equal(claim.subject,'Persona');
+  assert.equal(claim.object,'1000万美元');
+  assert.equal(bundle.raw_documents[0].title_original,original);
+  assert.equal(body.slice(claim.source_span.start,claim.source_span.end),claim.source_quote);
+  assert.ok(!bundle.entities.some(row=>row.canonical_name==='calai联合'));
+  const {subjectCompanyForEvent}=await import('../funding-insight-v1-utils.mjs');
+  const event=bundle.canonical_events.find(row=>row.event_type==='funding');
+  assert.equal(subjectCompanyForEvent(event,bundle.entities,{},bundle.claims)?.canonical_name,'Persona');
+  const {repairFundingHeadlineIdentity}=await import('../build-data-center-v4.mjs');
+  for(const unsupported of [
+    body.replace('1000万','2000万'),
+    body.replace('万美元','万欧元'),
+    body.replace('并完成','并未完成'),
+    body.replace('并完成','参与另一家公司完成'),
+    original,
+  ])assert.equal(repairFundingHeadlineIdentity(original,unsupported,{subject:original}),null);
 });
 
 test('reviewed financing rounds do not merge through a shared investor and amount', () => {

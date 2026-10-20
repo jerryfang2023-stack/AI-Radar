@@ -35,6 +35,27 @@ import {
   translateOpinionWithDeepSeek,
 } from "../deepseek-translation-client.mjs";
 import { translateOpinionText } from "../opinion-translation-utils.mjs";
+test("title translation survives four transient timeouts, but stops on auth or invalid facts", async context => {
+  const oldKey=process.env.DEEPSEEK_API_KEY;
+  process.env.DEEPSEEK_API_KEY='test-key';
+  context.after(()=>{if(oldKey===undefined)delete process.env.DEEPSEEK_API_KEY;else process.env.DEEPSEEK_API_KEY=oldKey;});
+  let calls=0,mode='timeout';
+  context.mock.method(globalThis,'fetch',async()=>{
+    calls++;
+    if(mode==='auth')return new Response('',{status:401});
+    if(mode==='timeout' && calls<5)throw new DOMException('request timed out','TimeoutError');
+    return Response.json({choices:[{message:{content:mode==='bad'?'Acme完成2000万美元融资':'Acme完成1000万美元融资'}}]});
+  });
+  const waits=[];
+  const recovered=await generateSourceTitleTranslation('Acme raises $10 million',{provider:'deepseek',wait:async ms=>waits.push(ms)});
+  assert.equal(recovered.status,'translated');assert.equal(calls,5);assert.deepEqual(waits,[1000,2000,4000,4000]);
+  mode='auth';calls=0;
+  const auth=await generateSourceTitleTranslation('Acme raises $10 million',{provider:'deepseek',wait:async()=>assert.fail('auth must not retry')});
+  assert.equal(auth.status,'needs_ingestion_translation');assert.equal(calls,1);
+  mode='bad';calls=0;
+  const rejected=await generateSourceTitleTranslation('Acme raises $10 million',{provider:'deepseek',wait:async()=>assert.fail('facts must not be retried as a timeout')});
+  assert.equal(rejected.status,'needs_ingestion_translation');assert.equal(calls,2);
+});
 import {
   generateSourceTitleTranslation,
   generatedTitleTranslationLooksUsable,

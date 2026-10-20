@@ -706,6 +706,7 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
   provider = process.env.TITLE_TRANSLATION_PROVIDER || "auto",
   timeoutMs = Number(process.env.TITLE_TRANSLATION_TIMEOUT_MS || 12000),
   allowNetwork = true,
+  wait = ms => new Promise(resolve => setTimeout(resolve, ms)),
 } = {}) {
   const title = decodeHtmlEntities(sourceTitle).replace(/\s+/gu, " ").trim();
   if (!sourceTitleNeedsChineseTranslation(title)) {
@@ -720,7 +721,7 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
   const providers = provider === "auto" ? ["deepseek"] : [provider];
   const failures=[];
   for (const item of providers) {
-    for(let attempt=0;attempt<2;attempt++) {
+    for(let attempt=0;attempt<5;attempt++) {
     try {
       const generated = item === "deepseek"
         ? await translateTitleWithDeepSeek(title, { timeoutMs })
@@ -738,8 +739,8 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
       break;
     } catch(error) {
       failures.push({provider:item,reason:/^deepseek_http_\d{3}$/u.test(error.message || '')?error.message:error.name,attempt:attempt+1});
-      if(attempt || !retryableDeepSeekFailure(error))break;
-      await new Promise(resolve=>setTimeout(resolve,1000));
+      if(attempt===4 || !retryableDeepSeekFailure(error))break;
+      await wait(Math.min(4000,1000*2**attempt));
     }
     }
   }

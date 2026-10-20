@@ -10,6 +10,35 @@ test('reviewed product alias excerpts retain matching quote hashes',()=>{
  }
 });
 function card(id,subject,date,round,value){return {funding_insight_id:id,triggered_by_event_id:`EV-${id}`,company:{name:subject,full_name:`${subject} Inc.`,application_entity_id:subject,entity_id:'stale-shared-id'},financing:{round,round_code:round,announced_at:date,amount_original:`$${value}`,amount_normalized:{currency:'USD',value,status:'exact'},investors:[{name:`Investor-${id}`}],evidence_refs:[{source_id:id,quote:'Financing announcement'}]},products:[{name:'Product',evidence_refs:[{source_id:id,quote:'Product description'}]}],research_sources:[{source_id:id,source_url:`https://example.org/${id}`} ]};}
+test('same round in two currencies requires exact captured equivalence and retains both disclosures',()=>{
+ const eur=card('a-eur','Vessla','2026-10-19','pre_seed',2940000),usd=card('b-usd','Vessla','2026-10-19','pre_seed',3300000);
+ eur.financing.amount_original='€2.94 million';eur.financing.amount_normalized.currency='EUR';
+ eur.financing.investors=usd.financing.investors=[{name:'Seedcamp'},{name:'Tiny VC'}];
+ const quote='Vessla has emerged from stealth with €2.94 million ($3.3 million) pre-Seed funding.';
+ const bind=text=>({source_id:'a-eur',quote:text,source_content_hash:'a'.repeat(64),quote_hash:crypto.createHash('sha256').update(text).digest('hex')});
+ eur.financing.evidence_refs=[bind(quote)];eur.research_sources[0].content_hash='a'.repeat(64);
+ const snapshot=structuredClone([eur,usd]),out=buildFundingSubjects([eur,usd]);
+ assert.equal(out.cards.length,1);assert.equal(out.event_cards.length,1);
+ assert.equal(out.cards[0].financing.disclosures.length,2);
+ assert.equal(out.cards[0].financing.amount_original,'€2.94 million');
+ assert.equal(out.aliases['b-usd'],'a-eur');assert.equal(out.cross_currency_duplicates.length,1);
+ assert.deepEqual([eur,usd],snapshot);
+ for(const alter of [
+  row=>row.financing.announced_at='2026-10-20',
+  row=>row.financing.round=row.financing.round_code='seed',
+  row=>row.financing.investors=[{name:'Different investor'}],
+  row=>row.company.application_entity_id='Other',
+  row=>row.financing.amount_original='$3.4 million',
+ ]){const other=structuredClone(usd);alter(other);assert.equal(buildFundingSubjects([eur,other]).event_cards.length,2);}
+ for(const text of [
+  quote.replace('pre-Seed funding','total funding'),
+  quote.replace('pre-Seed funding','valuation'),
+  quote.replace('Vessla','Another startup'),
+  'Vessla raised €2.94 million in seed funding and $3.3 million in a different round.',
+ ]){const other=structuredClone(eur);other.financing.evidence_refs=[bind(text)];assert.equal(buildFundingSubjects([other,usd]).event_cards.length,2);}
+ const tampered=structuredClone(eur);tampered.financing.evidence_refs[0].quote_hash='b'.repeat(64);
+ assert.equal(buildFundingSubjects([tampered,usd]).event_cards.length,2);
+});
 test('one subject card preserves separate rounds, sources, products, investors and event statistics',()=>{
  const old=card('old','Acme','2026-01-01','seed',10),latest=card('latest','Acme','2026-03-01','series_a',20),other=card('other','Different','2026-02-01','seed',8);
  const input=[old,latest,other],snapshot=structuredClone(input),out=buildFundingSubjects(input);

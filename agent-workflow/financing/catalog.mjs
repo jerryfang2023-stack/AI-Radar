@@ -63,7 +63,7 @@ export function buildFinancingCatalog(root) {
       market_categories:used(taxonomy.sectors,card=>card.financing_tags.sector.id).map(({id,name})=>({id,name})),
       market_subcategories:taxonomy.sectors.flatMap(sector=>used(sector.subsectors,card=>card.financing_tags.subsector.id).map(row=>({...row,parent_id:sector.id}))),
       product_forms:used(taxonomy.product_forms,card=>card.financing_tags.product_form?.id),customers:taxonomy.customers},
-    cards,event_cards:subjects.event_cards,card_aliases:subjects.aliases,company_aliases:subjects.company_aliases,review:{excluded,pending,publication_pending:publicationPending},
+    cards,event_cards:subjects.event_cards,card_aliases:subjects.aliases,company_aliases:subjects.company_aliases,review:{excluded,pending,publication_pending:publicationPending,cross_currency_duplicates:subjects.cross_currency_duplicates},
   };
 }
 if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
