@@ -54,6 +54,33 @@ export function inheritConfirmedCompanyMarkets(cards) {
   });
 }
 
+export function applyReviewedFundingMarkets(cards, review = {}) {
+  const decisions = review.market_corrections || [];
+  if (!Array.isArray(decisions) || (decisions.length && review.version !== "FINANCING-PUBLICATION-REVIEW-1")) {
+    throw new Error("invalid_financing_market_review");
+  }
+  const byEvent = new Map();
+  for (const decision of decisions) {
+    if (!decision.event_id || !decision.company_name || !["CN", "GLOBAL"].includes(decision.market_region)
+      || !decision.reason || !decision.reviewed_at || !decision.source_url || !decision.source_quote
+      || byEvent.has(decision.event_id)) throw new Error("invalid_financing_market_review");
+    byEvent.set(decision.event_id, decision);
+  }
+  return cards.map(card => {
+    const decisions = [...new Set([card.triggered_by_event_id, ...(card.source_event_ids || [])])]
+      .map(id => byEvent.get(id)).filter(Boolean);
+    if (!decisions.length) return card;
+    if (decisions.some(row => row.company_name !== card.company?.name
+      || row.market_region !== decisions[0].market_region)) throw new Error("financing_market_review_binding_conflict");
+    const region = decisions[0].market_region;
+    return { ...card, market_scope: {
+      ...card.market_scope, market_region: region, china_market_match: region === "CN",
+      china_market_basis: region === "CN" ? decisions.map(row => `reviewed_company_market:${row.event_id}`) : [],
+      market_review_event_ids: decisions.map(row => row.event_id),
+    } };
+  });
+}
+
 export function fundingProductFormDecision(card) {
   const explicitId = String(card.analysis?.product_form_id || "").trim();
   if (explicitId) return { id: explicitId, method: "card_explicit", decision_id: "" };
@@ -599,7 +626,9 @@ export function buildFundingInsightsFrontstage(projectRoot = root, { publicScope
       };
     });
   const translationRegistry = readPublicTranslationRegistry(projectRoot);
-  const cards = inheritConfirmedCompanyMarkets(rawCards).map((card) => applyPublicZhTranslations(card, translationRegistry, {
+  const publicationReview = readJson(path.join(projectRoot,
+    "01-SiteV2/content/12-applications/funding-insights/publication-review.json"), {});
+  const cards = applyReviewedFundingMarkets(inheritConfirmedCompanyMarkets(rawCards), publicationReview).map((card) => applyPublicZhTranslations(card, translationRegistry, {
     entityType: "funding_card",
   }));
   const latestDate = bundles.map((bundle) => bundle.meta?.date || "").sort().at(-1) || "";

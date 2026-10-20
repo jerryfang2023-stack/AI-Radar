@@ -1,7 +1,26 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-10-15",
+  "reviewed_at": "2026-10-20",
+  "market_corrections": [
+    {
+      "event_id": "EV-65154e5eb49c218b",
+      "company_name": "Iambic",
+      "market_region": "GLOBAL",
+      "reviewed_at": "2026-10-20",
+      "source_url": "https://ir.iambic.ai/shareholder-services/investor-faqs",
+      "source_quote": "Our corporate headquarters is located at 5627 Oberlin Drive, Suite 120, San Diego, CA 92121.",
+      "reason": "Iambic 总部位于美国圣地亚哥，官方公告为美国 IPO；不能继承 2026-10-19 采集事件误标的中国市场。现有融资证据 FISRC-3fd997e392fb69c1 同样明确总部位于圣地亚哥。",
+      "supporting_source_url": "https://ir.iambic.ai/news-releases/news-release-details/iambic-announces-pricing-initial-public-offering"
+    }
+  ],
   "holds": [
+    {
+      "event_id": "EV-745ef35fd5483754",
+      "status": "pending",
+      "source_url": "https://www.163.com/dy/article/L94MC5P60552JPSX.html",
+      "reason": "公司与融资证据错配：FISRC-bcf75fcd5c450422 原文为“10月12日，上海AI初创企业模思智能宣布完成超10亿元Pre-A轮融资。”，不能挂在智谱AI名下。模思智能正确事件 EV-64d88a6be3258064 已保留，撤下本条重复且错挂的融资，等待上游主体归并审核。",
+      "reviewed_at": "2026-10-20"
+    },
     {
       "event_id": "EV-3b424be9d0d68b87",
       "status": "pending",
