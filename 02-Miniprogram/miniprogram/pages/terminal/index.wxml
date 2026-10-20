@@ -39,7 +39,6 @@
           <text>中国</text><text class="market-scope-count">{{scopeCounts.china}}</text>
         </button>
       </view>
-      <view class="result-summary"><text>今日 {{todayCount}} 条融资动态</text></view>
     </view>
 
     <view wx:if="{{selectedIds.length}}" class="list-heading compare-heading">

@@ -31,7 +31,6 @@ Page({
     meta: bundledFundingIndex.meta,
     watchCount: 0,
     selectedIds: [],
-    todayCount: 0,
     weekCount: 0,
     latestDateShort: "",
     scopeCardCount: 0,
@@ -112,7 +111,6 @@ Page({
       global: index.cards.filter((card) => card.marketRegion === "global").length,
     };
     const scopeCards = index.cards.filter((card) => card.marketRegion === this.data.selectedMarketRegion);
-    const todayCount = scopeCards.filter((card) => card.date === chinaDate()).length;
     const weekCount = scopeCards.filter((card) => {
       const current = new Date(`${card.date}T00:00:00`);
       return Number.isFinite(current.getTime()) && latest.getTime() - current.getTime() <= 6 * 86400000;
@@ -123,7 +121,6 @@ Page({
       featuredCards: featured.cards,
       featuredCurrent: Math.max(0, featured.cards.findIndex(card => card.id === this.data.featuredCards[this.data.featuredCurrent]?.id)),
       featuredLabel: featured.label,
-      todayCount,
       weekCount,
       scopeCardCount: scopeCards.length,
       scopeCounts,
