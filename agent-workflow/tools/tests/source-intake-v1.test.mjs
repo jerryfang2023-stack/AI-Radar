@@ -550,7 +550,9 @@ test("source-title backfill defers unresolved non-event discovery titles", () =>
         TITLE_TRANSLATION_TIMEOUT_MS: "50",
       },
       encoding: "utf8",
-      timeout: 10_000,
+      // The unavailable-provider fixture exercises all five bounded attempts
+      // including 1/2/4/4-second backoff before checking defer vs block.
+      timeout: 25_000,
     };
     const output = execFileSync(process.execPath, args, options);
     const result = JSON.parse(output);

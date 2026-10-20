@@ -1473,7 +1473,7 @@ function canonicalSourceRecipient(event, entities, entityIndex, claims, sourceQu
     && claim?.verification_status === "accepted");
   if (!acceptedClaims.length) return null;
   const names = new Set();
-  for (const quote of sourceQuotes.map(clean).filter(Boolean)) {
+  for (const quote of [...sourceQuotes, ...acceptedClaims.map(claim => claim.source_quote)].map(clean).filter(Boolean)) {
     for (const clause of quoteClauses(quote)) {
       if (!/(?:融资|募资|筹集|完成|获得|获|raised|funding|financing|round)/iu.test(clause)
         || !acceptedClaims.some((claim) => clauseHasEventFundingAmount(clause, claim, event))) continue;

@@ -1,4 +1,5 @@
 import { enrichFundingHistory } from '../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs';
+import {crossCurrencyRoundEvidence} from './cross-currency-round.mjs';
 // The public list is one card per reviewed funding subject. Event records remain
 // independent inputs for histories and capital-flow statistics.
 const normalized = value => String(value || '').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
@@ -41,6 +42,30 @@ export function buildFundingSubjects(input, review = {}) {
       canonical.financing.disclosures = unique([...canonical.financing.disclosures||[],...duplicate.financing.disclosures||[]],r=>r.event_id);
       canonical.financing.evidence_refs = unique([...canonical.financing.evidence_refs||[],...duplicate.financing.evidence_refs||[]],r=>`${r.source_id}:${r.quote}`);
       duplicateIds.add(id);
+    }
+  }
+  const currencyDuplicates=[];
+  const retained=[...events.values()].filter(card=>!duplicateIds.has(card.funding_insight_id)).sort(latestFirst);
+  for(let i=0;i<retained.length;i++) {
+    const canonical=retained[i];
+    if(duplicateIds.has(canonical.funding_insight_id))continue;
+    for(const duplicate of retained.slice(i+1)) {
+      if(duplicateIds.has(duplicate.funding_insight_id)
+        || fundingSubjectKey(canonical,review)!==fundingSubjectKey(duplicate,review))continue;
+      const evidence=crossCurrencyRoundEvidence(canonical,duplicate);
+      if(!evidence)continue;
+      const disclosure=card=>({event_id:card.triggered_by_event_id,round_original:card.financing.round_original || card.financing.round,
+        amount:card.financing.amount_original || card.financing.amount,announced_at:card.financing.announced_at,evidence_refs:card.financing.evidence_refs || []});
+      canonical.financing.disclosures=unique([...(canonical.financing.disclosures || [disclosure(canonical)]),
+        ...(duplicate.financing.disclosures || [disclosure(duplicate)])],row=>row.event_id);
+      canonical.source_event_ids=[...new Set([canonical.triggered_by_event_id,...canonical.source_event_ids || [],duplicate.triggered_by_event_id,...duplicate.source_event_ids || []])];
+      canonical.source_card_ids=[...new Set([canonical.funding_insight_id,...canonical.source_card_ids || [],duplicate.funding_insight_id,...duplicate.source_card_ids || []])];
+      canonical.research_sources=unique([...canonical.research_sources || [],...duplicate.research_sources || []],row=>row.source_id);
+      canonical.products=[...canonical.products || [],...duplicate.products || []];
+      canonical.financing.evidence_refs=unique([...canonical.financing.evidence_refs || [],...duplicate.financing.evidence_refs || []],row=>`${row.source_id}:${row.quote}`);
+      duplicateIds.add(duplicate.funding_insight_id);
+      currencyDuplicates.push({canonical_id:canonical.funding_insight_id,duplicate_id:duplicate.funding_insight_id,
+        reason:'same_round_explicit_source_currency_equivalence',evidence});
     }
   }
   const eventCards = [...events.values()].filter(c=>!duplicateIds.has(c.funding_insight_id));
@@ -113,5 +138,5 @@ export function buildFundingSubjects(input, review = {}) {
     if(subjects.some(card=>card.funding_insight_id===row.old_id && card.funding_insight_id!==target))throw new Error('reviewed_card_alias_conflict');
     if(row.old_id!==target)aliases[row.old_id]=target;
   }
-  return {cards:subjects,event_cards:compactEvents,company_aliases:companyAliases,aliases,duplicate_rounds_removed:duplicateIds.size};
+  return {cards:subjects,event_cards:compactEvents,company_aliases:companyAliases,aliases,duplicate_rounds_removed:duplicateIds.size,cross_currency_duplicates:currencyDuplicates};
 }

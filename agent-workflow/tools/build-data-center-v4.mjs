@@ -1079,7 +1079,8 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "", even
   }
 
   if (eventType !== "organization_people") {
-    const leadingActionSubject = title.match(/^(.{2,40}?)(?=\s*(?:发布|推出|上线|宣布|开源))/u)?.[1] || "";
+    const leadingActionSubject = context.repairedFundingIdentity ? ""
+      : title.match(/^(.{2,40}?)(?=\s*(?:发布|推出|上线|宣布|开源))/u)?.[1] || "";
     const resolvedMentionAliases = new Set(selected.map((item) => item.mentionText.toLocaleLowerCase()));
     for (const rawCandidate of [...splitEntityNames(parsed.subject), leadingActionSubject]) {
       const candidate = cleanOrganizationCandidate(rawCandidate);
@@ -1180,8 +1181,25 @@ function buildModelClaim(rawId, proposed, evidence, index, status) {
 // Repair a malformed headline subject only when a named recipient and the
 // same proceeds are independently present in the immutable article body.
 export function repairFundingHeadlineIdentity(title, body, parsed) {
-  if (!/(?:融资|募资|IPO|获|完成|宣布|于近日)/iu.test(parsed.subject || '')) return null;
+  if (!/(?:融资|募资|IPO|获|完成|宣布|于近日|创始人|创业公司|新公司)/iu.test(parsed.subject || '')) return null;
   const candidates = [];
+  // A damaged headline may concatenate the founder's former employer with the
+  // actual recipient. Recover a named startup only from an independent body
+  // sentence that explicitly binds it to the headline's funding proceeds.
+  const startup = /(?:创业|初创|新)公司\s*([A-Z][A-Za-z0-9.&'-]*(?:[ \t]+[A-Z][A-Za-z0-9.&'-]*){0,3})\s*[，,]?\s*(?:并|且)?(?:已|宣布)?(完成|获得|获|筹集|募得)\s*([^。；;\n]{1,80}?(?:融资|募资))/gu;
+  const moneyPattern = /[\d,.]+(?:万|亿)?(?:美元|人民币|欧元|英镑|元)/gu;
+  const titleMetrics = [...String(title).matchAll(moneyPattern)].map(match => normalizedFundingMetric(match[0]));
+  for (const sentence of String(body).split(/[。；;\n]/u)) {
+    if (normalizeSpace(sentence) === normalizeSpace(title)
+      || /(?:尚未|否认|计划|拟|洽谈)[^。]{0,40}(?:融资|募资)/u.test(sentence)) continue;
+    for (const match of sentence.matchAll(startup)) {
+      const amount = [...match[3].matchAll(moneyPattern)][0]?.[0];
+      const matchesTitle = amount && titleMetrics.includes(normalizedFundingMetric(amount));
+      if (matchesTitle && String(title).toLowerCase().includes(match[1].toLowerCase())) {
+        candidates.push({subject:match[1],action:match[2],object:amount});
+      }
+    }
+  }
   const proceeds = String.raw`([近约超数\d一二三四五六七八九十百千万亿零点.,]+(?:美元|人民币|元)(?:[A-Za-z+\-\d]*轮|天使轮|种子轮)?(?:融资)?)`;
   const chinese = new RegExp(String.raw`(?:^|[\s，,：:])([\p{Script=Han}A-Za-z0-9·]{2,30}?)(?:于近日|近日|近期)?(?:宣布)?(完成|获得|获)${proceeds}`, 'gu');
   const ipo = new RegExp(String.raw`(?:公司|企业)\s*([A-Z][A-Za-z0-9.&'-]*(?:[ \t]+[A-Z][A-Za-z0-9.&'-]*){0,3})(?:在|通过)[^，,。\n]{0,12}?(?:IPO|首次公开发行)(融资|募资)${proceeds}`, 'gu');
@@ -2171,7 +2189,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         rule.eventType,
         eventClaimRows.map((claim) => claim.source_quote).join("\n"),
         eventClaimRows,
-        { sourceUrl: artifact.source_url, documentEvidence: bodyClean }
+        { sourceUrl: artifact.source_url, documentEvidence: bodyClean, repairedFundingIdentity: Boolean(repairedFundingIdentity) }
       ).map((entityMatch) => {
         const reviewedName = reviewedEntityAliases.get(entityMatch.canonicalName.toLocaleLowerCase());
         return reviewedName ? { ...entityMatch, canonicalName: reviewedName, verified: true } : entityMatch;
