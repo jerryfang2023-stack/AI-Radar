@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
@@ -73,7 +73,7 @@
     "latest_disclosed_at": "2026-07-01",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 1,
       "participant": 1
     },
@@ -255,6 +255,39 @@
             "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
           }
         ]
+      },
+      {
+        "activity_id": "IA-f1ddb2a11676547b",
+        "funding_insight_id": "FI-894806f6afae1cc3",
+        "event_ids": [
+          "EV-51f0958b144e699a",
+          "EV-781ee2c31f86be37"
+        ],
+        "company_entity_id": "EN-2301cf6444526934",
+        "company_canonical_entity_id": "",
+        "company_name": "Tenstorrent",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2023 年 1 亿美元战略融资领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7d4cf545749ed300",
+            "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-raises-a-strategic-up-round",
+            "source_title": "Tenstorrent Raises a $100M Strategic Up-round Co-led by Hyundai Motor Group and the Samsung Catalyst Fund | Tenstorrent",
+            "source_content_hash": "b49b3129cb7cab12",
+            "quote": "closed a $100M strategic financing up-round led by Hyundai Motor Group and Samsung Catalyst Fund",
+            "quote_hash": "43e3fb9b519ffb64386391c175e1cbe0ea319b6c69be1fb3bc95b9154268c2ee"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -289,6 +322,14 @@
         "source_content_hash": "49d31e2d6afab8b0",
         "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion.",
         "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
+      },
+      {
+        "source_id": "FISRC-7d4cf545749ed300",
+        "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-raises-a-strategic-up-round",
+        "source_title": "Tenstorrent Raises a $100M Strategic Up-round Co-led by Hyundai Motor Group and the Samsung Catalyst Fund | Tenstorrent",
+        "source_content_hash": "b49b3129cb7cab12",
+        "quote": "closed a $100M strategic financing up-round led by Hyundai Motor Group and Samsung Catalyst Fund",
+        "quote_hash": "43e3fb9b519ffb64386391c175e1cbe0ea319b6c69be1fb3bc95b9154268c2ee"
       }
     ],
     "public_profile": {

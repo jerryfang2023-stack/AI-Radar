@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-cc272c08ca12639d",
       "EV-b33e250220b91f9c"
     ],
     "viewpointIds": [],
@@ -71,10 +72,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-21",
+    "lastSeen": "2026-10-20",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-cc272c08ca12639d"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
@@ -85,6 +88,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-cc272c08ca12639d",
+        "dataDate": "2026-10-20",
+        "date": "2026-10-15",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Ramp估值达600亿美元，深入布局AI",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f7d9f5a90479d632"
+        ]
+      },
       {
         "id": "EV-b33e250220b91f9c",
         "dataDate": "2026-08-21",
@@ -312,6 +330,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-30f226e60b20de03",
         "EV-44b4a5564faf8106",
         "EV-b611fec3bb1ed987",
         "EV-72a9b0250c1c9435",
@@ -807,7 +826,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-19"
+      "lastSeen": "2026-10-20"
     }
   ],
   "fde": [],

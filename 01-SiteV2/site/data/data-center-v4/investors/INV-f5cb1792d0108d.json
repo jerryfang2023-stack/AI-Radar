@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,23 +63,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-05-21",
-    "latest_disclosed_at": "2026-06-30",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
-      "series_d"
+      "series_d",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -93,12 +94,57 @@
         "name": "Monogram AI, Inc."
       },
       {
+        "entity_id": "EN-f7d9f5a90479d632",
+        "canonical_entity_id": "",
+        "name": "Ramp"
+      },
+      {
         "entity_id": "EN-a2183526e5130b45",
         "canonical_entity_id": "",
         "name": "Stack AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5e1ceffbc11cfcf1",
+        "funding_insight_id": "FI-49e5e02e3f1e2d52",
+        "event_ids": [
+          "EV-cc272c08ca12639d"
+        ],
+        "company_entity_id": "EN-f7d9f5a90479d632",
+        "company_canonical_entity_id": "",
+        "company_name": "Ramp",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "$1.85 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1850000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "18.5 亿美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f581afce52cf5bef",
+            "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+            "source_title": "Ramp估值达600亿美元，深入布局AI",
+            "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+            "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+            "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1811ff54afaca631",
         "funding_insight_id": "FI-12131c1300a2d205",
@@ -286,6 +332,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f581afce52cf5bef",
+        "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+        "source_title": "Ramp估值达600亿美元，深入布局AI",
+        "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+        "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+        "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+      },
+      {
         "source_id": "FISRC-907e4297862ddd8c",
         "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
         "source_title": "Monogram 获 4000 万美元种子轮融资",
@@ -367,16 +421,16 @@
           "source_id": "somacap_portfolio"
         },
         {
+          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f581afce52cf5bef"
+        },
+        {
           "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-907e4297862ddd8c"
         },
         {
           "description": "融资来源记录：Cognition · D轮 · 2026-05-27 · 既有投资方，本轮参投 · 超过 10 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c7d89f6e73a6fe5b"
-        },
-        {
-          "description": "融资来源记录：Stack AI · 种子轮 · 2024-05-21 · 种子轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3bb261b30faf2efa"
         }
       ],
       "profile_type": "organization",
@@ -410,6 +464,14 @@
           "quote_hash": "8cf5bbb1cb76fe339b48a81123e8251e2e9856c2bc710b8e91ff341a2e041b9f"
         },
         {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+          "source_title": "Ramp估值达600亿美元，深入布局AI",
+          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+        },
+        {
           "source_id": "FISRC-907e4297862ddd8c",
           "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
           "source_title": "Monogram 获 4000 万美元种子轮融资",
@@ -424,21 +486,13 @@
           "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
           "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others",
           "quote_hash": "32a689c79ede37eda5c607e1327b2f71b761bb7b8abe6ff5a893009360891e98"
-        },
-        {
-          "source_id": "FISRC-3bb261b30faf2efa",
-          "source_url": "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows/",
-          "source_title": "Stack AI 旨在简化构建 AI 驱动的工作流",
-          "source_content_hash": "13e16154329e1e7e",
-          "quote": "Investors include Gradient Ventures, Beat Ventures and True Capital along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital.",
-          "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
         }
       ],
       "last_verified_at": "2026-09-26"
     },
     "translations": {
       "zh-CN": {
-        "activities[3].role": {
+        "activities[4].role": {
           "text": "Pre-Seed 轮参投",
           "source_hash": "f5cb988c26f629ab8de6db933918a11722e78ee826e2af40ebf57b1b01cc710d",
           "provider": "deepseek",

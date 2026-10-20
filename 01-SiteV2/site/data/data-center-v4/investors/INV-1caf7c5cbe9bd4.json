@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,19 +63,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-03",
-    "latest_disclosed_at": "2026-08-26",
+    "latest_disclosed_at": "2026-10-19",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "series_a",
@@ -103,9 +103,55 @@
         "entity_id": "EN-7d3194f79e645c42",
         "canonical_entity_id": "EN-7d3194f79e645c42",
         "name": "OpenAI"
+      },
+      {
+        "entity_id": "EN-2301cf6444526934",
+        "canonical_entity_id": "",
+        "name": "Tenstorrent"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1e80b4f1d5ec2b43",
+        "funding_insight_id": "FI-894806f6afae1cc3",
+        "event_ids": [
+          "EV-51f0958b144e699a",
+          "EV-781ee2c31f86be37"
+        ],
+        "company_entity_id": "EN-2301cf6444526934",
+        "company_canonical_entity_id": "",
+        "company_name": "Tenstorrent",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "15亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿美元"
+        },
+        "announced_at": "2026-10-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c79323219068494a",
+            "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+            "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+            "source_content_hash": "0f9b3358bba4cf36",
+            "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+            "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8a90bd2e4d84b16e",
         "funding_insight_id": "FI-9e3ed4fa47d92efa",
@@ -302,6 +348,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c79323219068494a",
+        "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+        "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+        "source_content_hash": "0f9b3358bba4cf36",
+        "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+        "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+      },
+      {
         "source_id": "FISRC-36551c55b72c6244",
         "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
         "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
@@ -400,16 +454,16 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：Tenstorrent · E轮 · 2026-10-19 · 本轮参投 · 15亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c79323219068494a"
+        },
+        {
           "description": "融资来源记录：Gatik · D轮 · 2026-08-26 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-36551c55b72c6244"
         },
         {
           "description": "融资来源记录：Hark · A轮 · 2026-05-21 · 本轮参投 · $700M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b94f245fa27a161"
-        },
-        {
-          "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮参投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1e2b3bad243bd066"
         }
       ],
       "contacts": [
@@ -439,6 +493,14 @@
           "quote_hash": "b554e50358ba4e8ec30352320bc11b530eb87bf4b2445b2d85b589b2e0dfb80e"
         },
         {
+          "source_id": "FISRC-c79323219068494a",
+          "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+          "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+          "source_content_hash": "0f9b3358bba4cf36",
+          "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+          "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+        },
+        {
           "source_id": "FISRC-36551c55b72c6244",
           "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
           "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
@@ -453,14 +515,6 @@
           "source_content_hash": "e91739ca23d21469",
           "quote": "ARK Invest",
           "quote_hash": "06913ee1095cff235ab418e7e5dcd289488940faa527a20dce51001adc74dcbf"
-        },
-        {
-          "source_id": "FISRC-1e2b3bad243bd066",
-          "source_url": "https://yespress.io/openais-122-b-megaround",
-          "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
-          "source_content_hash": "494969b64dc816f3",
-          "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-          "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
         }
       ],
       "last_verified_at": "2026-09-26",

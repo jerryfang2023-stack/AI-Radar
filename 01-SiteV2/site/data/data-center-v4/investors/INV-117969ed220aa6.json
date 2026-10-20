@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,26 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-21",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-19",
     "role_counts": {
       "co_lead": 1,
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
       "series_a",
-      "series_b"
+      "series_b",
+      "series_e"
     ],
     "portfolio_companies": [
       {
@@ -98,12 +99,58 @@
         "name": "Efficient Computer"
       },
       {
+        "entity_id": "EN-2301cf6444526934",
+        "canonical_entity_id": "",
+        "name": "Tenstorrent"
+      },
+      {
         "entity_id": "EN-5a36b0948fb336a7",
         "canonical_entity_id": "",
         "name": "Vinci"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c4288a815668e466",
+        "funding_insight_id": "FI-894806f6afae1cc3",
+        "event_ids": [
+          "EV-51f0958b144e699a",
+          "EV-781ee2c31f86be37"
+        ],
+        "company_entity_id": "EN-2301cf6444526934",
+        "company_canonical_entity_id": "",
+        "company_name": "Tenstorrent",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "15亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿美元"
+        },
+        "announced_at": "2026-10-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c79323219068494a",
+            "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+            "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+            "source_content_hash": "0f9b3358bba4cf36",
+            "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+            "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-93a8bcfc4f19bb31",
         "funding_insight_id": "FI-18e35dfffb4a703f",
@@ -267,6 +314,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c79323219068494a",
+        "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+        "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+        "source_content_hash": "0f9b3358bba4cf36",
+        "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+        "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+      },
+      {
         "source_id": "FISRC-cf38198e12772dce",
         "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
         "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
@@ -327,16 +382,16 @@
       "experience_summary": "",
       "track_record": [
         {
+          "description": "融资来源记录：Tenstorrent · E轮 · 2026-10-19 · 本轮参投 · 15亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c79323219068494a"
+        },
+        {
           "description": "融资来源记录：Vinci · B轮 · 2026-10-06 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cf38198e12772dce"
         },
         {
           "description": "融资来源记录：Auger · B轮 · 2026-07-12 · 本轮领投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-51325930dfe170dc"
-        },
-        {
-          "description": "融资来源记录：Efficient Computer · A轮 · 2026-02-18 · 本轮参投 · $60 Million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-840402012d166d60"
         }
       ],
       "sources": [
@@ -357,6 +412,14 @@
           "quote_hash": "fd2b43d837342ade0def2eb0089b3c71e743dd4accccee36d17ec508b585a6d0"
         },
         {
+          "source_id": "FISRC-c79323219068494a",
+          "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+          "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+          "source_content_hash": "0f9b3358bba4cf36",
+          "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+          "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+        },
+        {
           "source_id": "FISRC-cf38198e12772dce",
           "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
           "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
@@ -371,14 +434,6 @@
           "source_content_hash": "f94f8192e35d26b7",
           "quote": "The round was led by Eclipse",
           "quote_hash": "0ac26774df35088dce4aa1be2a79af8452c0d2a0b144d077d7ac2adbfe1a190a"
-        },
-        {
-          "source_id": "FISRC-840402012d166d60",
-          "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
-          "source_title": "Efficient Computer 融资 6000 万美元，推进面向 AI 的节能通用处理器",
-          "source_content_hash": "a0edd68c5374470f0638aa5079a21a7e544f8a8370e4030847e40a96e98a5654",
-          "quote": "a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others.",
-          "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
         }
       ],
       "last_verified_at": "2026-10-04"

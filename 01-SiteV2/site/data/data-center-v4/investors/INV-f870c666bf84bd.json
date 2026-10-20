@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-06",
-    "latest_disclosed_at": "2026-10-16",
+    "latest_disclosed_at": "2026-10-19",
     "role_counts": {
       "lead": 4,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "growth",
@@ -81,6 +81,7 @@
       "series_a",
       "series_b",
       "series_c",
+      "series_e",
       "strategic"
     ],
     "portfolio_companies": [
@@ -115,6 +116,11 @@
         "name": "TensorWave Inc."
       },
       {
+        "entity_id": "EN-2301cf6444526934",
+        "canonical_entity_id": "",
+        "name": "Tenstorrent"
+      },
+      {
         "entity_id": "FICO-upscale-ai",
         "canonical_entity_id": "",
         "name": "Upscale AI"
@@ -126,6 +132,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4c462e7c2f8e96b3",
+        "funding_insight_id": "FI-894806f6afae1cc3",
+        "event_ids": [
+          "EV-51f0958b144e699a",
+          "EV-781ee2c31f86be37"
+        ],
+        "company_entity_id": "EN-2301cf6444526934",
+        "company_canonical_entity_id": "",
+        "company_name": "Tenstorrent",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "15亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿美元"
+        },
+        "announced_at": "2026-10-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c79323219068494a",
+            "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+            "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+            "source_content_hash": "0f9b3358bba4cf36",
+            "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+            "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5ccb6be632384299",
         "funding_insight_id": "FI-5138928a5c38a2d0",
@@ -449,6 +496,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c79323219068494a",
+        "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+        "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+        "source_content_hash": "0f9b3358bba4cf36",
+        "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+        "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+      },
+      {
         "source_id": "FISRC-9f86360bad5cbe27",
         "source_url": "https://aipressroom.com/mueon-65m-ai-semiconductors/",
         "source_title": "Mueon完成6500万美元融资，用于优化AI半导体",
@@ -527,16 +582,16 @@
           "source_id": "maverick-silicon-point2-seriesb-2026"
         },
         {
+          "description": "融资来源记录：Tenstorrent · E轮 · 2026-10-19 · 本轮参投 · 15亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c79323219068494a"
+        },
+        {
           "description": "融资来源记录：Mueon Corp. · A轮 · 2026-10-16 · 本轮领投 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9f86360bad5cbe27"
         },
         {
           "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮参投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f84ad840508b39"
-        },
-        {
-          "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7dcdc22c0b1702bf"
         }
       ],
       "contacts": [],
@@ -562,6 +617,14 @@
           "quote_hash": "10368b42e68c635906e0fcea9b82e16ab1eb5031983e5fa6960a0112bb32500a"
         },
         {
+          "source_id": "FISRC-c79323219068494a",
+          "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+          "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+          "source_content_hash": "0f9b3358bba4cf36",
+          "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+          "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+        },
+        {
           "source_id": "FISRC-9f86360bad5cbe27",
           "source_url": "https://aipressroom.com/mueon-65m-ai-semiconductors/",
           "source_title": "Mueon完成6500万美元融资，用于优化AI半导体",
@@ -576,14 +639,6 @@
           "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
           "quote": "Sutter Hill Ventures, which has backed CScale since its inception, continued its support alongside existing investor Maverick Silicon.",
           "quote_hash": "b24f4febcc9397478bcc6d9a518ee03fd847623529708cf4c467126a6cc7cf44"
-        },
-        {
-          "source_id": "FISRC-7dcdc22c0b1702bf",
-          "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
-          "source_title": "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元",
-          "source_content_hash": "23145edb5fdd8d69",
-          "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
-          "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
         }
       ],
       "last_verified_at": "2026-10-04"

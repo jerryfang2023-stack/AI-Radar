@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-01",
-    "latest_disclosed_at": "2026-10-15",
+    "latest_disclosed_at": "2026-10-19",
     "role_counts": {
-      "lead": 2,
+      "lead": 4,
       "participant": 1
     },
     "round_codes": [
@@ -94,9 +94,94 @@
         "entity_id": "EN-6272c1931f96e1a7",
         "canonical_entity_id": "",
         "name": "Solvera"
+      },
+      {
+        "entity_id": "EN-54856813e7170b52",
+        "canonical_entity_id": "",
+        "name": "Vessla"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c522c295a2bec616",
+        "funding_insight_id": "FI-b0bdfe9f65e2108a",
+        "event_ids": [
+          "EV-064c7e0a79e6f4e1"
+        ],
+        "company_entity_id": "EN-54856813e7170b52",
+        "company_canonical_entity_id": "",
+        "company_name": "Vessla",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$3.3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "330 万美元"
+        },
+        "announced_at": "2026-10-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-333dfdc93dda00c9",
+            "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
+            "source_title": "Vessla结束隐身模式，获330万美元融资，将AI智能体引入物业管理",
+            "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
+            "quote": "led by Seedcamp",
+            "quote_hash": "7ae36abbc58d21fe37b71caa9c3d6316e3a8b8d4bd63f2769abab90d99edebdd"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3c35c03db73b6d12",
+        "funding_insight_id": "FI-2a19fdf0e999a70c",
+        "event_ids": [
+          "EV-87beb0ebdfa293de"
+        ],
+        "company_entity_id": "EN-54856813e7170b52",
+        "company_canonical_entity_id": "",
+        "company_name": "Vessla",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "€2.94 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2940000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "294 万欧元"
+        },
+        "announced_at": "2026-10-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-03408b6d796d3c48",
+            "source_url": "https://www.eu-startups.com/2026/10/stockholms-vessla-exits-stealth-with-e2-94-million-to-bring-ai-agents-to-property-management/",
+            "source_title": "斯德哥尔摩的Vessla结束隐身模式，获294万欧元，将AI智能体引入物业管理",
+            "source_content_hash": "26d128952369a51ff8ea80cf41b04bb3bcca39a639bb2a0a43bd58d4071584a9",
+            "quote": "The funding round was more than 2× oversubscribed and was led by Seedcamp.",
+            "quote_hash": "8490852db4a0b16c34c3246735ca4299942dc2667b138ea053b1fede6be427de"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f0b69f52a822abc7",
         "funding_insight_id": "FI-e9444b6af8d7b14d",
@@ -220,6 +305,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-333dfdc93dda00c9",
+        "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
+        "source_title": "Vessla结束隐身模式，获330万美元融资，将AI智能体引入物业管理",
+        "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
+        "quote": "led by Seedcamp",
+        "quote_hash": "7ae36abbc58d21fe37b71caa9c3d6316e3a8b8d4bd63f2769abab90d99edebdd"
+      },
+      {
+        "source_id": "FISRC-03408b6d796d3c48",
+        "source_url": "https://www.eu-startups.com/2026/10/stockholms-vessla-exits-stealth-with-e2-94-million-to-bring-ai-agents-to-property-management/",
+        "source_title": "斯德哥尔摩的Vessla结束隐身模式，获294万欧元，将AI智能体引入物业管理",
+        "source_content_hash": "26d128952369a51ff8ea80cf41b04bb3bcca39a639bb2a0a43bd58d4071584a9",
+        "quote": "The funding round was more than 2× oversubscribed and was led by Seedcamp.",
+        "quote_hash": "8490852db4a0b16c34c3246735ca4299942dc2667b138ea053b1fede6be427de"
+      },
+      {
         "source_id": "FISRC-cb72aaeb2be8d4ae",
         "source_url": "https://www.eu-startups.com/2026/10/oslo-based-ai-native-engineering-firm-solvera-raises-e5-62-million-pre-seed-after-july-2026-launch/",
         "source_title": "奥斯陆 AI 原生工程公司 Solvera 在 2026 年 7 月成立后完成 562 万欧元 pre-Seed 轮融资",
@@ -271,16 +372,16 @@
           "source_id": "B24-SEEDCAMP-METAVIEW"
         },
         {
+          "description": "融资来源记录：Vessla · 预种子轮 · 2026-10-19 · 本轮领投 · $3.3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-333dfdc93dda00c9"
+        },
+        {
+          "description": "融资来源记录：Vessla · 预种子轮 · 2026-10-19 · 本轮领投 · €2.94 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-03408b6d796d3c48"
+        },
+        {
           "description": "融资来源记录：Solvera · 预种子轮 · 2026-10-15 · 本轮领投 · €5.62 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cb72aaeb2be8d4ae"
-        },
-        {
-          "description": "融资来源记录：Solvera · 预种子轮 · 2026-10-15 · 本轮领投 · $6.3 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-536d9e1eb424a584"
-        },
-        {
-          "description": "融资来源记录：Metaview · C轮 · 2026-10-01 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-62e06e29d2d7be04"
         }
       ],
       "contacts": [
@@ -318,28 +419,28 @@
           "quote_hash": "e7f36e1b8110c56a5be3639e18e7c38c570f33c5dba0af2f4b0fe94af0e29dba"
         },
         {
+          "source_id": "FISRC-333dfdc93dda00c9",
+          "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
+          "source_title": "Vessla结束隐身模式，获330万美元融资，将AI智能体引入物业管理",
+          "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
+          "quote": "led by Seedcamp",
+          "quote_hash": "7ae36abbc58d21fe37b71caa9c3d6316e3a8b8d4bd63f2769abab90d99edebdd"
+        },
+        {
+          "source_id": "FISRC-03408b6d796d3c48",
+          "source_url": "https://www.eu-startups.com/2026/10/stockholms-vessla-exits-stealth-with-e2-94-million-to-bring-ai-agents-to-property-management/",
+          "source_title": "斯德哥尔摩的Vessla结束隐身模式，获294万欧元，将AI智能体引入物业管理",
+          "source_content_hash": "26d128952369a51ff8ea80cf41b04bb3bcca39a639bb2a0a43bd58d4071584a9",
+          "quote": "The funding round was more than 2× oversubscribed and was led by Seedcamp.",
+          "quote_hash": "8490852db4a0b16c34c3246735ca4299942dc2667b138ea053b1fede6be427de"
+        },
+        {
           "source_id": "FISRC-cb72aaeb2be8d4ae",
           "source_url": "https://www.eu-startups.com/2026/10/oslo-based-ai-native-engineering-firm-solvera-raises-e5-62-million-pre-seed-after-july-2026-launch/",
           "source_title": "奥斯陆 AI 原生工程公司 Solvera 在 2026 年 7 月成立后完成 562 万欧元 pre-Seed 轮融资",
           "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
           "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures",
           "quote_hash": "1051394e86c7f6047f44988bf049ad2633b024d2d4a7897cbd68e15440f11e52"
-        },
-        {
-          "source_id": "FISRC-536d9e1eb424a584",
-          "source_url": "https://tech.eu/2026/10/15/solvera-raises-63m-to-scale-the-ai-native-engineering-firm/",
-          "source_title": "Solvera 融资 630 万美元，以扩展 AI 原生工程公司",
-          "source_content_hash": "e9625fe0ba6820269680860eddac1c4a579668541cd9174731bad54b362711d8",
-          "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures, alongside angel investors including Spacemaker founders Anders Kvåle and Håvard Haukeland.",
-          "quote_hash": "54093e60b4c63af9f503ee1aef5b791cfd7058d1b08eb8ef9495cd04e22faa88"
-        },
-        {
-          "source_id": "FISRC-62e06e29d2d7be04",
-          "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
-          "source_title": "Metaview 完成 6000 万美元 C 轮融资",
-          "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
-          "quote": "Additional investors participating in the round include GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
-          "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
         }
       ],
       "last_verified_at": "2026-10-05",

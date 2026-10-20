@@ -32938,7 +32938,295 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-19T00:43:07.189Z"
+    },
+    "EV-59841d8e9da58cd4": {
+      "id": "EV-59841d8e9da58cd4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "companionship",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "Tolan 是面向个人消费者的 AI 情感陪伴应用，通过卡通角色提供日常支持。",
+      "input_hash": "a55ffdcd1866e1d4c09c7b08ccbe5f8e9a206c306680e129d7d902e7542ae6d2",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7ab42e04cf3b71a3",
+          "quote": "Tolan, the AI companion designed to help people manage their daily lives, navigate relationships and emotions, and accomplish their goals"
+        },
+        {
+          "source_id": "FISRC-7ab42e04cf3b71a3",
+          "quote": "Users engage with Tolan’s app through a cartoonish character that’s meant to offer support and help them get through their to-dos."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-20T00:48:39.612Z"
+    },
+    "EV-781ee2c31f86be37": {
+      "id": "EV-781ee2c31f86be37",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        4,
+        6
+      ],
+      "rationale": "Tenstorrent 主营 AI 芯片并配套计算机与软件，属 AI 算力与芯片。",
+      "input_hash": "cf81bb74bd85a346b30b3ba4c24c79b83f2cf27d5a8eef2809bd596b6c1c8943",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ddff64464415f889",
+          "quote": "AI芯片初创公司Tenstorrent宣布完成15亿美元E轮融资，投后估值62亿美元"
+        },
+        {
+          "source_id": "FISRC-dcaf7ce3ffe72997",
+          "quote": "Tenstorrent提供的不只是单一芯片，产品还涵盖计算机和软件"
+        },
+        {
+          "source_id": "FISRC-9114d94032731457",
+          "quote": "Whisper-quiet, liquid cooled - run models up to 120b parameters from your desk."
+        },
+        {
+          "source_id": "FISRC-9114d94032731457",
+          "quote": "Sovereign, scale-out servers for production AI."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-20T00:48:39.612Z"
+    },
+    "EV-51f0958b144e699a": {
+      "id": "EV-51f0958b144e699a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "Tenstorrent 研发并销售 RISC-V AI 处理器、系统与 IP，属于 AI 芯片与加速器。",
+      "input_hash": "39b1a714ee427cf2988c464ff5b045952175c4dbea0b76f265b7a7af05eaf700",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-92f3194d1a21ddd2",
+          "quote": "RISC-V AI 计算企业 Tenstorrent 美国当地时间今日宣布完成总额达 15 亿美元"
+        },
+        {
+          "source_id": "FISRC-c79323219068494a",
+          "quote": "Tenstorrent sells AI compute at every level of the stack — from a single card or workstation to racks, superclusters, and custom IP."
+        },
+        {
+          "source_id": "FISRC-c79323219068494a",
+          "quote": "The company builds RISC-V-based AI processors and systems for developers, enterprises, and sovereign infrastructure worldwide."
+        },
+        {
+          "source_id": "FISRC-c79323219068494a",
+          "quote": "Tenstorrent licenses its TT-Ascalon RISC-V CPU and Tensix AI cores to chip designers including Samsung and LG."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-20T00:48:41.227Z"
+    },
+    "EV-064c7e0a79e6f4e1": {
+      "id": "EV-064c7e0a79e6f4e1",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "property",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        4
+      ],
+      "rationale": "Vessla 为物业业主与管理者提供连接物业系统的 AI 运营智能体平台，属建筑与房地产行业软件。",
+      "input_hash": "2fbce3216e32ee16608bfb13b27f3c56ccb150f3f7b3e8e64b19aa93cf1abfcf",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c8138f1a8ee7650a",
+          "quote": "Vessla builds an AI operating layer that connects the software used by property owners and managers so agents and people can run work together across their portfolios."
+        },
+        {
+          "source_id": "FISRC-a352bbed9f4dc95a",
+          "quote": "One operating layer for every property system"
+        },
+        {
+          "source_id": "FISRC-333dfdc93dda00c9",
+          "quote": "Vessla is building an AI-powered platform designed to automate workflows across the systems used by residential and commercial"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-20T00:48:41.227Z"
+    },
+    "EV-87beb0ebdfa293de": {
+      "id": "EV-87beb0ebdfa293de",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "property",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        4
+      ],
+      "rationale": "Vessla 面向房地产物业运营交付智能体操作系统，属建筑与房地产行业软件。",
+      "input_hash": "6fc27faf987be318241459832a164987a92ce22da0b79c12da492843a26cccf1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-03408b6d796d3c48",
+          "quote": "Vessla, a Stockholm-based AI startup building an agentic operating system for real estate"
+        },
+        {
+          "source_id": "FISRC-a352bbed9f4dc95a",
+          "quote": "Vessla is the agentic operating system for property operations."
+        },
+        {
+          "source_id": "FISRC-03408b6d796d3c48",
+          "quote": "Vessla layers its AI agents across those existing systems, equipping them with the relevant context and operating rules to carry out tasks reliably."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-20T00:48:41.227Z"
+    },
+    "EV-6ef251e4d28b517c": {
+      "id": "EV-6ef251e4d28b517c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "mobility",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "FLÆ Robotics 的 BE-A 是酒店前台与预订沟通的 AI 智能体，属酒店服务行业软件，非机器人本体。",
+      "input_hash": "4b8b6a4e3ee1b7acd25cbcb8d0c6929da830426d450eb0b25160fefb3421868e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e9b524529c6b8433",
+          "quote": "BE-A, an AI hospitality agent that handles routine guest communication, reservations and front-office tasks 24/7 across WhatsApp, email, web chat and phone"
+        },
+        {
+          "source_id": "FISRC-0993ac262966fde7",
+          "quote": "We are developing BE-A to go beyond answering questions and carry out the next step within hotel systems."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-20T00:48:41.227Z"
+    },
+    "EV-cc272c08ca12639d": {
+      "id": "EV-cc272c08ca12639d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Ramp 主营企业支出与费用管理平台并嵌入 AI 智能体，属财务与企业管理。",
+      "input_hash": "2ae8ab314021ffde350e0d008d7713c0054afe6d89210ba7e8dedbdb9097181b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-95b2329d85aecb37",
+          "quote": "Ramp is how companies save time and money on every dollar they spend."
+        },
+        {
+          "source_id": "FISRC-2f03eba6cdfd2f7d",
+          "quote": "Ramp brings your company’s spending into one platform—giving you clear visibility and control across your business."
+        },
+        {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "quote": "embedding AI agents into its procurement, expense management, accounting, budgeting, and other products"
+        },
+        {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "quote": "including AI token usage monitoring and token spend management"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-20T00:48:41.227Z"
+    },
+    "EV-d89d39700e57f476": {
+      "id": "EV-d89d39700e57f476",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Nous Research 开发开源 Hermes 智能体模型并提供企业版部署，属通用模型。",
+      "input_hash": "e57effec1e75f24fecef66661345d57276bbfd283a555110a675240471d1d641",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c0e764cbefe9c1e7",
+          "quote": "Nous Research是一家开发开源Hermes智能体的初创公司，该公司已完成9000万美元的B轮融资，估值达到15亿美元"
+        },
+        {
+          "source_id": "FISRC-c0e764cbefe9c1e7",
+          "quote": "开源的Hermes智能体在开发者和个人用户中颇受欢迎，根据该初创公司的估算，Hermes已被克隆超过2400万次"
+        },
+        {
+          "source_id": "FISRC-c0e764cbefe9c1e7",
+          "quote": "推出\"企业版Hermes\"，使企业能够部署定制化的AI智能体，处理多步骤工作流程，同时确保数据的私密性与安全性。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-20T00:48:41.227Z"
     }
   },
-  "generated_at": "2026-10-19T00:43:07.189Z"
+  "generated_at": "2026-10-20T00:48:41.227Z"
 }

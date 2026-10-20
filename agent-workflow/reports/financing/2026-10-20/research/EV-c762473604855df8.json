@@ -1,0 +1,156 @@
+{
+  "event_id": "EV-c762473604855df8",
+  "company_name": "Valencia-based Linkener",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "瓦伦西亚的Linkener融资750万欧元，用于为企业数字化和优化能源管理",
+    "event_source_refs": [
+      "SA-1b9be6a88409c2f8"
+    ],
+    "event_claim_refs": [
+      "CL-aa86dbdb72cbb635",
+      "CL-78cd792e0b88673e",
+      "CL-f142e60c1edd7a7c",
+      "CL-8fc96614cda2e768"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-09c147dbbcc999b1",
+        "canonical_name": "HomeSpain-StartupsValencia-based Linkener"
+      },
+      {
+        "entity_id": "EN-47656040fe602fa7",
+        "canonical_name": "Valencia-based Linkener"
+      }
+    ],
+    "event_metrics": [
+      "€7.5 million"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-aa86dbdb72cbb635",
+        "raw_id": "RAW-cc36c62c0e4d5e17",
+        "subject": "Valencia-based Linkener",
+        "object": "€7.5 million to digitise and optimise energy management for businesses",
+        "source_quote_length": 93
+      },
+      {
+        "claim_id": "CL-78cd792e0b88673e",
+        "raw_id": "RAW-cc36c62c0e4d5e17",
+        "subject": "Valencia-based Linkener",
+        "object": "€7.5 million to digitise and optimise energy management for businesses",
+        "source_quote_length": 86
+      },
+      {
+        "claim_id": "CL-f142e60c1edd7a7c",
+        "raw_id": "RAW-cc36c62c0e4d5e17",
+        "subject": "Valencia-based Linkener",
+        "object": "€7.5 million to digitise and optimise energy management for businesses",
+        "source_quote_length": 186
+      },
+      {
+        "claim_id": "CL-8fc96614cda2e768",
+        "raw_id": "RAW-cc36c62c0e4d5e17",
+        "subject": "Valencia-based Linkener",
+        "object": "€7.5 million to digitise and optimise energy management for businesses",
+        "source_quote_length": 172
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "Valencia-based Linkener"
+  },
+  "queries": [
+    "\"Valencia-based Linkener\" 2026 funding round investors",
+    "\"Valencia-based Linkener\" €7.5 million funding announcement",
+    "\"Valencia-based Linkener\" official product customers",
+    "\"Valencia-based Linkener\" \"why we invested\"",
+    "\"Valencia-based Linkener\" 2026 raises led by",
+    "\"Valencia-based Linkener\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Valencia-based Linkener\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.todaysstartupnews.com/startups/linkener-raises-7-5-million-klima-energy-transition-fund-ai-energy-management",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://daily.bg/category/vc",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Valencia-based Linkener\" €7.5 million funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://energy.einnews.com/news/energy-management",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Valencia-based Linkener\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Valencia-based Linkener\" \"why we invested\"",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"Valencia-based Linkener\" \"why we invested\"",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"Valencia-based Linkener\" \"why we invested\"",
+      "status": "quota_exhausted",
+      "http_status": 402,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Valencia-based Linkener\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Valencia-based Linkener\" 2026 raises led by",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Valencia-based Linkener\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://linkener.com/aviso-legal/",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    }
+  ]
+}

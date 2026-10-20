@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,26 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-17",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-19",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 4
     },
     "round_codes": [
       "other",
       "series_e",
-      "strategic"
+      "strategic",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -98,12 +99,103 @@
         "name": "ElevenLabs"
       },
       {
+        "entity_id": "EN-f7d9f5a90479d632",
+        "canonical_entity_id": "",
+        "name": "Ramp"
+      },
+      {
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal"
+      },
+      {
+        "entity_id": "EN-2301cf6444526934",
+        "canonical_entity_id": "",
+        "name": "Tenstorrent"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-537906bc0e765fb1",
+        "funding_insight_id": "FI-894806f6afae1cc3",
+        "event_ids": [
+          "EV-51f0958b144e699a",
+          "EV-781ee2c31f86be37"
+        ],
+        "company_entity_id": "EN-2301cf6444526934",
+        "company_canonical_entity_id": "",
+        "company_name": "Tenstorrent",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "15亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿美元"
+        },
+        "announced_at": "2026-10-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c79323219068494a",
+            "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+            "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+            "source_content_hash": "0f9b3358bba4cf36",
+            "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+            "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-400563c26cfe7115",
+        "funding_insight_id": "FI-49e5e02e3f1e2d52",
+        "event_ids": [
+          "EV-cc272c08ca12639d"
+        ],
+        "company_entity_id": "EN-f7d9f5a90479d632",
+        "company_canonical_entity_id": "",
+        "company_name": "Ramp",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "$1.85 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1850000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "18.5 亿美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f581afce52cf5bef",
+            "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+            "source_title": "Ramp估值达600亿美元，深入布局AI",
+            "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+            "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+            "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3d7dc4f57b6e91d2",
         "funding_insight_id": "FI-890ae16f28de5d25",
@@ -301,6 +393,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c79323219068494a",
+        "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+        "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+        "source_content_hash": "0f9b3358bba4cf36",
+        "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+        "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+      },
+      {
+        "source_id": "FISRC-f581afce52cf5bef",
+        "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+        "source_title": "Ramp估值达600亿美元，深入布局AI",
+        "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+        "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+        "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+      },
+      {
         "source_id": "FISRC-ecee7b20064e2761",
         "source_url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/",
         "source_title": "AI 语音初创公司 ElevenLabs 估值翻倍至 220 亿美元",
@@ -366,16 +474,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Tenstorrent · E轮 · 2026-10-19 · 本轮参投 · 15亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c79323219068494a"
+        },
+        {
+          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f581afce52cf5bef"
+        },
+        {
           "description": "融资来源记录：ElevenLabs · 其他融资 · 2026-09-30 · 本轮联合领投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ecee7b20064e2761"
-        },
-        {
-          "description": "融资来源记录：Temporal · E轮 · 2026-09-14 · 本轮参投 · $550M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cf83d78a216a5edf"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
         }
       ],
       "profile_type": "organization",
@@ -413,35 +521,35 @@
           "quote_hash": "3a4b03036beed2d4ef2c38cdcc363784f84038a346846ea4fa9c36465ce30bcf"
         },
         {
+          "source_id": "FISRC-c79323219068494a",
+          "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+          "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+          "source_content_hash": "0f9b3358bba4cf36",
+          "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+          "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+        },
+        {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+          "source_title": "Ramp估值达600亿美元，深入布局AI",
+          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+        },
+        {
           "source_id": "FISRC-ecee7b20064e2761",
           "source_url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/",
           "source_title": "AI 语音初创公司 ElevenLabs 估值翻倍至 220 亿美元",
           "source_content_hash": "dd3e10922461795d4777276c5a460ff3cb037897bb89a3344010bd9f3aad81c7",
           "quote": "The transaction was co-led by Wellington and T. Rowe Price, large institutional investors that back private companies with the intention of retaining the stock after the company goes public.",
           "quote_hash": "f1068a67415b7a8ea1208ce62fdaa1043b3a6f240198794c5644c18d0ae7e74c"
-        },
-        {
-          "source_id": "FISRC-cf83d78a216a5edf",
-          "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
-          "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
-          "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
-          "quote": "with strong participation from T. Rowe Price and SV Angel",
-          "quote_hash": "5e76a7301ffb8df6121234761c9e5cbe30e445cda9462229951405b9ece208e7"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
         }
       ],
       "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {
-        "activities[4].role": {
+        "activities[6].role": {
           "text": "Series E 参投方",
           "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
           "provider": "deepseek",

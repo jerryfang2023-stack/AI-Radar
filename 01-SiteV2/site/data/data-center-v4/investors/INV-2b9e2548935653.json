@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,28 +54,28 @@
   },
   "institution": {
     "id": "INV-2b9e2548935653",
-    "name": "Ontario Teachers' Pension Plan",
+    "name": "Ontario Teachers’ Pension Plan",
     "aliases": [
-      "Ontario Teachers’ Pension Plan"
+      "Ontario Teachers' Pension Plan"
     ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-16",
-    "latest_disclosed_at": "2026-09-29",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "series_d",
@@ -92,9 +92,54 @@
         "entity_id": "EN-0caee180da9d0f3f",
         "canonical_entity_id": "",
         "name": "Fireworks AI Inc."
+      },
+      {
+        "entity_id": "EN-f7d9f5a90479d632",
+        "canonical_entity_id": "",
+        "name": "Ramp"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8c8b9bdb5599bb2c",
+        "funding_insight_id": "FI-49e5e02e3f1e2d52",
+        "event_ids": [
+          "EV-cc272c08ca12639d"
+        ],
+        "company_entity_id": "EN-f7d9f5a90479d632",
+        "company_canonical_entity_id": "",
+        "company_name": "Ramp",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "$1.85 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1850000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "18.5 亿美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f581afce52cf5bef",
+            "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+            "source_title": "Ramp估值达600亿美元，深入布局AI",
+            "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+            "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+            "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2b36fae5a3c3a56d",
         "funding_insight_id": "FI-8e89642c05a4fbe4",
@@ -282,6 +327,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f581afce52cf5bef",
+        "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+        "source_title": "Ramp估值达600亿美元，深入布局AI",
+        "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+        "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+        "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+      },
+      {
         "source_id": "FISRC-aae3c02b03fe09c9",
         "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
         "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
@@ -339,16 +392,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f581afce52cf5bef"
+        },
+        {
           "description": "融资来源记录：EliseAI · F轮 · 2026-09-29 · 本轮参投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-aae3c02b03fe09c9"
         },
         {
           "description": "融资来源记录：EliseAI · 轮次未披露 · 2026-09-29 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4f44cd6d16442bdc"
-        },
-        {
-          "description": "融资来源记录：Fireworks AI Inc. · D轮 · 2026-07-16 · 本轮参投 · $1.505 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-80d6b020dd75ac09"
         }
       ],
       "contacts": [],
@@ -366,6 +419,14 @@
           "quote_hash": "6696e6b979f79a2b63068c6e0d59ed86bd9156f4b66183266c5f9c2e153ae36a"
         },
         {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+          "source_title": "Ramp估值达600亿美元，深入布局AI",
+          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+        },
+        {
           "source_id": "FISRC-aae3c02b03fe09c9",
           "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
           "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
@@ -380,14 +441,6 @@
           "source_content_hash": "c4be8294b9475931eab4f291e805900850ae28a25cfeb6c54a03811033dccc00",
           "quote": "The financing was led by Andreessen Horowitz (a16z) and Bessemer Venture Partners, with participation from Ontario Teachers' Pension Plan, Sapphire Ventures, and Navitas Capital.",
           "quote_hash": "4351258f1b60a0bebd8d3c4264542973ef33354112aca6497c979fcf32c61458"
-        },
-        {
-          "source_id": "FISRC-80d6b020dd75ac09",
-          "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
-          "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
-          "source_content_hash": "2ac54d2d554e9655",
-          "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
-          "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
         }
       ],
       "last_verified_at": "2026-10-02"
